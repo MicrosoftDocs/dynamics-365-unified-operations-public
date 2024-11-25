@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create a work class
-description: This procedure shows you how to set up a work class. 
+description: Learn how to set up a work class, which are used to direct work order line types, including a step-by-step process using the USMF demo data company. 
 author: Mirzaab
-ms.date: 11/14/2016
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WHSWorkClass
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 11/14/2016
+ms.custom: 
+ms.reviewer: kamaybac 
+ms.search.form: WHSWorkClass
 ---
+
 # Create a work class
 
 [!include [banner](../../includes/banner.md)]

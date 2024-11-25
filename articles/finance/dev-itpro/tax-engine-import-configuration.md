@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Tax engine import configuration
-description: This article provides information about import tax engine configuration.
-author: kailiang
-ms.date: 10/15/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# ms.search.industry: 
+description: Learn about import tax engine configuration, including a step-by-step process for creating a Lifecycle Services configuration repository.
+author: Kai-Cloud
 ms.author: kailiang
+ms.topic: article
+ms.date: 10/15/2018
+ms.reviewer: kfend
+audience: IT Pro 
+ms.search.region: India
 ms.search.validFrom: 2017-12-31
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Tax engine import configuration

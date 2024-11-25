@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Finance version 10.0.7.
+description: Learn about features that are either new or changed in Dynamics 365 Finance version 10.0.7, including an outline on mudget register entry enhancements.
 author: kfend
-ms.date: 12/05/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2019-10-31 
+ms.topic: whats-new
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
+ms.reviewer: kfend
+ms.search.region: Global
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-
 ---
 # What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020)
 

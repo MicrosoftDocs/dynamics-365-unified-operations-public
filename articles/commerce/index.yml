@@ -233,6 +233,18 @@ additionalContent:
         text: POS user interface visual configurations
   - title: Use
     items:
+    - title: Enable Copilot experiences
+      links:
+      - url: /dynamics365/commerce/copilot-pos-customer-insights
+        text: Customer insights by Copilot
+      - url: /dynamics365/commerce/copilot-pos-report-insights
+        text: Store report insights by Copilot
+      - url: /dynamics365/commerce/copilot-statement-summaries
+        text: Enable Copilot statement posting summaries
+      - url: /dynamics365/commerce/copilot-based-merch-insights
+        text: Streamline your merchandising process with Copilot-based insights
+      - url: /dynamics365/commerce/copilot-site-builder
+        text: Use Copilot in site builder to enrich product detail pages
     - title: Merchandise products and services
       links:
       - url: /dynamics365/supply-chain/pim/product-information?context=%2Fdynamics365%2Fcontext%2Fcommerce

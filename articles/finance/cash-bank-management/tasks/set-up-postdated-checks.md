@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up postdated checks
-description: This article explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. 
+description: Learn how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankParameters, VendPaymMode, CustPaymMode   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up postdated checks
 
 [!include [banner](../../includes/banner.md)]

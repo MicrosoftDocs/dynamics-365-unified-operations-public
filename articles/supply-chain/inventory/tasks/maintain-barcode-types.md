@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Maintain bar code types
-description: This procedure shows you how to set up a new bar code definition which can then be used as part of the picking list report. 
-author: yufeihuang
+description: Learn how to set up a new bar code definition which can then be used as part of the picking list report, including a step-by-step process. 
+author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BarcodeSetup, InventParameters   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac    
+ms.search.form: BarcodeSetup, InventParameters
 ---
+
 # Maintain bar code types
 
 [!include [banner](../../includes/banner.md)]

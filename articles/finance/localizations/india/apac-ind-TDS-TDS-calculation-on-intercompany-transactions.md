@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: TDS calculation on intercompany transactions
-description: This article describes the process that is used to calculate Tax Deducted at Source (TDS) on intercompany transactions in phases.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn about the process that is used to calculate Tax Deducted at Source (TDS) on intercompany transactions in phases and where it is posted.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # TDS calculation on intercompany transactions

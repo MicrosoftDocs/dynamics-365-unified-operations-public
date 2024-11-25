@@ -4,18 +4,13 @@ description: This article provides an overview of the cash out gift card feature
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.custom: 
-ms.assetid: 
 ms.search.industry: retail
-ms.devlang: 
 ---
 
 # Cash out gift card balance for a retail customer

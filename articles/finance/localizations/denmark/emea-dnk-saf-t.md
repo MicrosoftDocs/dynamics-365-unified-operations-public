@@ -1,15 +1,15 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Denmark
-description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have a primary address in Denmark.
+description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have a primary address in Denmark.
 author: liza-golub
-ms.date: 05/22/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Denmark
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Denmark
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -73,7 +73,7 @@ The **SAF-T General model mapping** configuration provides general data source m
 - **AnalysisTypeTable** – Data tables for analytical accounting. This data is used to provide details of transaction data. Examples include unit costs, additional costs, a cost center, or a project.
 - **MovementTypeTable** – Stock movement types.
 - **Products** – Products and services.
-- **PhysicalStock** – Data about the stock that is contained in the file.
+- **PhysicalStock** – Data about the stock that's contained in the file.
 
 The **SAF-T General model mapping** configuration also provides general data source mapping for the following transactional data:
 
@@ -81,7 +81,7 @@ The **SAF-T General model mapping** configuration also provides general data sou
 - **Sales invoices** – Initial sales documents.
 - **PurchaseInvoices** – Accounting documents for purchases and acquisitions.
 - **Payments** – Payments.
-- **MovementOfGoods** – Information about the movement of goods. For example, movement occurs when goods are recorded, when goods are written off after they are sold or used in production, and when finished products, determined loss, and defective goods are recorded.
+- **MovementOfGoods** – Information about the movement of goods. For example, movement occurs when goods are recorded, when goods are written off after they're sold or used in production, and when finished products, determined loss, and defective goods are recorded.
 - **AssetTransactions** – Economic transactions or events for tangible or intangible economic assets, and for financial assets.
 
 ### <a name="application"></a>Set up application-specific parameters for the SAF-T Format (DK) configuration
@@ -122,7 +122,7 @@ To generate a SAF-T, you must configure the registration number.
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Denmark, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Denmark, and that uses the **VAT Id** registration category.
+4. In the **Registration type** field, select the registration type that's dedicated to Denmark, and that uses the **VAT Id** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
@@ -132,7 +132,7 @@ For more information about how to set up registration categories and registratio
 
 In the Danish SAF-T report, main accounts that are used in Finance must be associated with Danish standard accounts. Use the [consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create this association.
 
-1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). For example, create a group that is named **Standardkontoplan**.
+1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). For example, create a group that's named **Standardkontoplan**.
 2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the **StandardAccountID** element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node. In the **Consolidation account name** field, optionally specify the standard account name or description. This value isn't used in SAF-T.
 
 ## Generate the SAF-T report
@@ -143,12 +143,12 @@ In the Danish SAF-T report, main accounts that are used in Finance must be assoc
     | Field name | Description |
     |------------|-------------|
     | **From date** and **To date** | Specify the start and end dates of the period that the report should include data for. The start date is reflected in the **Header** \> **SelectionCriteria** \> **PeriodStart** node of the SAF-T. The end date is reflected in the **Header** \> **SelectionCriteria** \> **PeriodEnd** node. The period for one file or one part of a file can't be shorter than one month or longer than a reporting period. |
-    | **Print zero balance** | This checkbox affects the data that is reported in the **MasterFiles** \> **GeneralLedgerAccounts** node of the SAF-T. Select this checkbox to include all the main accounts of your company, including main accounts that have a zero balance during the specified period. Clear the checkbox to include only main accounts that have a non-zero balance or transactions during the specified period. |
-    | **Export all Customers** | This checkbox affects the data that is reported in the **MasterFiles** \> **Customers** node of the SAF-T. Select this checkbox to include all the customers of your company, including customers that have a zero balance during the specified period. Clear the checkbox to include only customers that have a non-zero balance or transactions during the specified period. |
-    | **Export all Suppliers** | This checkbox affects the data that is reported in the **MasterFiles** \> **Suppliers** node of the SAF-T. Select this checkbox to include all the suppliers of your company, including suppliers that have a zero balance during the specified period. Clear the checkbox to include only suppliers that have a non-zero balance or transactions during the specified period. |
-    | **Export all Analysis types** | This checkbox affects the data that is reported in the **MasterFiles** \> **AnalysisTypeTable** node of the SAF-T. Select this checkbox to include all the dimensions of your company. Clear the checkbox to include only dimensions that are used in transactions that are reported during the specified period. |
-    | **Export all Products** | This checkbox affects the data that is reported in the **MasterFiles** \> **Products** node of the SAF-T. Select this checkbox to include all the products of your company, including products that have zero physical stock during the specified period. Clear the checkbox to include only products that have non-zero physical stock or transactions during the specified period. |
-    | **Export all Sales tax codes** | This checkbox affects the data that is reported in the **MasterFiles** \> **TaxTable** node of the SAF-T. Select this checkbox to include all the sales tax codes of your company. Clear the checkbox to include only sales tax codes that are used in transactions that are reported during the specified period. |
+    | **Print zero balance** | This checkbox affects the data that's reported in the **MasterFiles** \> **GeneralLedgerAccounts** node of the SAF-T. Select this checkbox to include all the main accounts of your company, including main accounts that have a zero balance during the specified period. Clear the checkbox to include only main accounts that have a non-zero balance or transactions during the specified period. |
+    | **Export all Customers** | This checkbox affects the data that's reported in the **MasterFiles** \> **Customers** node of the SAF-T. Select this checkbox to include all the customers of your company, including customers that have a zero balance during the specified period. Clear the checkbox to include only customers that have a non-zero balance or transactions during the specified period. |
+    | **Export all Suppliers** | This checkbox affects the data that's reported in the **MasterFiles** \> **Suppliers** node of the SAF-T. Select this checkbox to include all the suppliers of your company, including suppliers that have a zero balance during the specified period. Clear the checkbox to include only suppliers that have a non-zero balance or transactions during the specified period. |
+    | **Export all Analysis types** | This checkbox affects the data that's reported in the **MasterFiles** \> **AnalysisTypeTable** node of the SAF-T. Select this checkbox to include all the dimensions of your company. Clear the checkbox to include only dimensions that are used in transactions that are reported during the specified period. |
+    | **Export all Products** | This checkbox affects the data that's reported in the **MasterFiles** \> **Products** node of the SAF-T. Select this checkbox to include all the products of your company, including products that have zero physical stock during the specified period. Clear the checkbox to include only products that have non-zero physical stock or transactions during the specified period. |
+    | **Export all Sales tax codes** | This checkbox affects the data that's reported in the **MasterFiles** \> **TaxTable** node of the SAF-T. Select this checkbox to include all the sales tax codes of your company. Clear the checkbox to include only sales tax codes that are used in transactions that are reported during the specified period. |
     | **Consolidation account group** | Select the consolidation account group that you [set up earlier](#coa) to configure the standard chart of accounts (**Standardkontoplan**). |
     | **Header Comment** | Specify your comment to SAF-T. The value of this field is reported in the **HeaderComment** element of SAF-T under the **AuditFile** \> **Header** node. The element can contain any additional generic comments about the audit file. The maximum length is 256 characters. |
     | **Tax Accounting Basis** | <p>The value of this field is reported in the **TaxAccountingBasis** element of SAF-T under the **AuditFile** \> **Header** node. Select one of the following values:</p><ul><li>Invoice Accounting</li><li>Cash Accounting</li><li>Delivery</li><li>Other</li></ul> |
@@ -159,3 +159,66 @@ In the Danish SAF-T report, main accounts that are used in Finance must be assoc
     When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 4. Select **OK** to generate the report.
+
+## Export attachments
+
+As of Finance version 10.0.40, the **Export attachments** feature is available in Document management. Use this feature to export files that are attached to records of tables in Finance to supplement your SAF-T file as required. For more information, see [Export attachments](../../../fin-ops-core/dev-itpro/organization-administration/configure-document-management.md#export-attachments).
+
+Selection of tables to export attachments for is company-specific and might depend on the particular request. For example, to supplement sections of source documents that are reported in SAF-T, select the following set of tables in Finance to export attachments.
+
+<table>
+<thead>
+<tr>
+<th>Table name</th>
+<th>Table label</th>
+<th>SAF-T source document section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CustInvoiceJour</td>
+<td>Customer invoice journal</td>
+<td rowspan="2">SalesInvoices</td>
+</tr>
+<tr>
+<td>ProjInvoiceJour</td>
+<td>Project invoice</td>
+</tr>
+<tr>
+<td>VendInvoiceJour</td>
+<td>Vendor invoice journal</td>
+<td>PurchaseInvoices</td>
+</tr>
+<tr>
+<td>CustTrans</td>
+<td>Customer transactions</td>
+<td rowspan="3">Payments</td>
+</tr>
+<tr>
+<td>VendTrans</td>
+<td>Vendor transactions</td>
+</tr>
+<tr>
+<td>BankAccountTrans</td>
+<td>Bank transactions</td>
+</tr>
+<tr>
+<td>InventTrans</td>
+<td>Inventory transactions</td>
+<td rowspan="3">MovementOfGoods</td>
+</tr>
+<tr>
+<td>CustTrans</td>
+<td>Customer transactions</td>
+</tr>
+<tr>
+<td>VendTrans</td>
+<td>Vendor transactions</td>
+</tr>
+<tr>
+<td>AssetTrans</td>
+<td>Fixed asset transactions</td>
+<td>AssetTransactions</td>
+</tr>
+</tbody>
+</table>

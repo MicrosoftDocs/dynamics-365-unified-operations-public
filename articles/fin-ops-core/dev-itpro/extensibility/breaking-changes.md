@@ -1,19 +1,15 @@
 ---
 title: Breaking changes
-description: This article provides information about breaking changes.
+description: Learn about breaking changes, including various changes that can break your code, including data model changes and code changes.
 author: smithanataraj
-ms.date: 09/09/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: smnatara
+ms.topic: article
+ms.date: 09/09/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Breaking changes

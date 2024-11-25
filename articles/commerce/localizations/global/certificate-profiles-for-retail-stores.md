@@ -2,18 +2,16 @@
 title: User-defined certificate profiles for retail stores
 description: This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/03/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: v-chgriffin
+ms.author: asharchw
 ms.search.validFrom: 2020-10-09
-ms.dyn365.ops.version: 10.0.15
-ms.search.industry: Retail
 ms.search.form: RetailFormLayout, RetailParameters
+ms.custom: 
+  - bap-template
 ---
 # User-defined certificate profiles for retail stores
 
@@ -72,8 +70,8 @@ On the **Key Vault parameters** page, you must specify the following parameters 
 
 - **Name** and **Description** – The name and description of the Key Vault storage account.
 - **Key Vault URL** – The URL of the Key Vault storage account.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage account for authentication purposes. This client should have access to read secrets from the storage account.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage account.
+- **Key Vault client** – An interactive client ID of the Microsoft Entra application that is associated with the Key Vault storage account for authentication purposes. This client should have access to read secrets from the storage account.
+- **Key Vault secret key** – A secret key that is associated with the Microsoft Entra application that is used for authentication in the Key Vault storage account.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
 For more information, see [Set up the Azure Key Vault client](../../../finance/localizations/global/setting-up-azure-key-vault-client.md).
@@ -107,7 +105,7 @@ To configure a certificate profile in Commerce headquarters, follow these steps.
     - **Store location** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store location that should be used to search local certificates.
 
         > [!NOTE]
-        > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders in its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](//dotnet/api/system.security.cryptography.x509certificates.storelocation).
+        > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders in its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](/dotnet/api/system.security.cryptography.x509certificates.storelocation).
 
     - **Thumbprint** – This field is required and is available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
 

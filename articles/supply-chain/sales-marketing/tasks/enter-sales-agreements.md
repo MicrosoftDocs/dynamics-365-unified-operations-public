@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Enter sales agreements
-description: This article explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
-author: Henrikan
+description: Learn how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: how-to
 ms.date: 08/08/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Service industries
-ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
 ---
+
 # Enter sales agreements
 
 [!include [banner](../../includes/banner.md)]

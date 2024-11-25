@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Extend inventory on-hand data entities
-description: This article provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entities can work with the extensions.
-author: yufeihuang
-ms.date: 07/27/2020
+description: Learn how to add fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that inventory on-hand data entities work with extensions.
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 07/27/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: yufeihuang
-ms.search.validFrom: 2020-07-27
-ms.dyn365.ops.version: 10.0.13
+ms.search.form:
 ---
 
 # Extend inventory on-hand data entities
@@ -51,7 +37,7 @@ For example, you've added the following four fields to the `InventTable` table t
 - Custom field 3
 - Custom field 4
 
-In the case, you must modify the `getExtensionFields()` method in the following way.
+In this case, you must modify the `getExtensionFields()` method in the following way.
 
 ```xpp
 [ExtensionOf(classStr(InventSiteOnHandAggregatedViewBuilder))]

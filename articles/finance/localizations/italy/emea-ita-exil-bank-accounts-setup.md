@@ -1,18 +1,16 @@
 ---
 title: Bank data usability enhancement
-description: This article explains how you can help save time and simplify bank data registration for customers and vendors.
+description: Learn how you can help save time and simplify bank data registration for customers and vendors, including an outline on import bank groups.
 author: mrolecki
-ms.date: 11/12/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 11/12/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2019-11-29
+ms.search.form:
 ms.dyn365.ops.version: 10.0.7
-ms.search.form: 
 ---
 
 # Bank data usability enhancement

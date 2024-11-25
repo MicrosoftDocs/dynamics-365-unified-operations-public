@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Sales to registered customers
-description: This article provides information about sales to registered customers.
-author: EricWangChen
+description: Learn about sales to registered customers, including step-by-step processes for creating sales quotations, creating sales orders, and posting invoices.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: johnmichalak 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Sales to registered customers

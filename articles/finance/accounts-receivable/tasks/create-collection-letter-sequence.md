@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a collection letter sequence
-description: Use this procedure to create a collection letter sequence. 
+description: Learn about how to create a collection letter sequence, including a step-by-step process that outlines setting up collection letter sequences. 
 author: JodiChristiansen
-ms.date: 02/22/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CollectionLetterCourse   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 02/22/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CollectionLetterCourse
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a collection letter sequence
 
 [!include [banner](../../includes/banner.md)]
@@ -56,7 +47,7 @@ Use this procedure to create a collection letter sequence. This task uses the US
 23. In the **Minimum overdue balance** field, enter a number.
 24. In the **Days** field, enter a number.
 25. Select the **Block** check box to stop the customer from additional deliveries and invoicing. To unblock the account, select **No** in the **Invoicing and delivery on hold** field on the **Customers** page.  
-26. Expand the **Note** fastTab.
+26. Expand the **Note** FastTab.
 27. Enter the text to appear on the collection letter for the selected collection letter code. You can translate this text in to multiple languages using the **Translations** menu above the note box.  
 
 

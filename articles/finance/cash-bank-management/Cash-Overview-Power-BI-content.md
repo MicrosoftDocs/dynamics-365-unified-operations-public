@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Cash overview Power BI content
-description: This article describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
+description: Learn about the Cash overview Power BI content, including outlines on how to access the reports that are included in the content and entities used to build the content.
 author: ericwangchen
-ms.date: 08/24/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankTreasurerWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
-ms.search.validFrom: 2017-06-30 
+ms.topic: overview
+ms.date: 08/24/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2017-06-30
+ms.search.form: BankTreasurerWorkspace
 ms.dyn365.ops.version: July 2017 update 
 ---
 

@@ -4,8 +4,6 @@ description: This article explains how extensions can consume the point of sale 
 author: josaw1
 ms.date: 02/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

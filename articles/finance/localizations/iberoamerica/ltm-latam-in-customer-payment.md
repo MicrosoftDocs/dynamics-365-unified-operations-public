@@ -1,12 +1,12 @@
 ---
 title: Use the LATAM extension in customer payments journals
-description: This article explains how to use payment methods in customer payments.
-author: Cpicon85 
-ms.date: 10/23/2023 
-ms.topic: Article
-ms.reviewer: kfend
-ms.author: v-cpicon 
+description: Learn how to use payment methods in customer payments, including prerequisites and a process for adding LATAM information to customer payment journal lines.
+author: Cpicon85
+ms.author: v-cpicon
+ms.date: 10/23/2023
+ms.topic: article
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Use the LATAM extension in customer payments journals

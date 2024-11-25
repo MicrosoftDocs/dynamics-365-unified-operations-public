@@ -1,18 +1,15 @@
 ---
 title: Single-user testing using the Performance SDK and Task recorder
-description: This article explains how to do single-user testing by using Microsoft Visual Studio, the Performance SDK, and a Task recorder performance test script.
+description: Learn about how to do single-user testing by using Microsoft Visual Studio, the Performance SDK, and a Task recorder performance test script.
 author: josaw1
-ms.date: 05/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 05/28/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ---
 
@@ -98,8 +95,6 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
     - Verify that the **UserName** for **SelfMintingAdminUser** matches the admin account of your development environment.
     - In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **AadAuthenticator** with **SelfMintedTokenAuthenticator**.
     - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
-
-    [![Updated and commented code sample.](./media/single-user-test-10.png)](./media/single-user-test-10.png)
 
 2. In Visual Studio, on the **Test** menu, point to **Windows**, and then select **Test Explorer**.
 3. Right-click your test case, and then select **Run selected tests**.

@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Set up hazardous materials
-description: This article explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
-author: t-benebo
-ms.date: 06/10/2020
+description: Learn how to set up the data that is required to classify items as hazardous materials, including an outline on hazardous material regulations.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 06/10/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
+ms.search.form:
 ---
 
 # Set up hazardous materials
@@ -118,7 +104,7 @@ To manage your hazardous material definitions, follow these steps.
 
     The **Regulation code** field is read-only and shows the regulation that you selected in step 2.
 
-5. Use the remaining fields on this page to create and set up each hazardous material that applies to your selected regulation. The fields that are available are a subset of the hazardous material fields that are available for individual released products. For more information, see [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md).
+5. Use the remaining fields on this page to create and set up each hazardous material that applies to your selected regulation. The fields that are available are a subset of the hazardous material fields that are available for individual released products. Learn more in [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md).
 
 ## <a name="classification-groups"></a>Hazardous material classification groups
 

@@ -2,18 +2,15 @@
 title: Order lookup module
 description: This article covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 09/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2021-08-15
-ms.dyn365.ops.version: Release 10.0.22
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Order lookup module

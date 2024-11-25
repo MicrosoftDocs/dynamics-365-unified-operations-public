@@ -1,18 +1,16 @@
 ---
 title: Modello 770 report
-description: This article provides information about the Modello 770 report for Italy.
+description: Learn about the Modello 770 report for Italy, including outlines on general settings required for Modello 770 reports and setting up address information.
 author: mrolecki
-ms.date: 07/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 07/19/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
 ms.search.form: Taxreport770Table_IT
+ms.dyn365.ops.version: 7.3
 ---
 
 # Modello 770 report

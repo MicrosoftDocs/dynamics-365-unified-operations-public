@@ -1,27 +1,14 @@
 ---
-# required metadata
-
 title: Document routing label layouts
-description: This article describes how to use formatting methods to print values on labels.
-author: perlynne
-ms.date: 04/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
-audience: Application User
-# ms.devlang: 
+description: Learn how to use formatting methods to print values on labels with outlines on turn this feature on or off and custom number formats.
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: perlynne
-ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: 10.0.10
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 ---
 
 # Document routing label layouts
@@ -56,7 +43,7 @@ To see the values that will be printed, go to **Warehouse management \> Enquirie
 
 ## Turn this feature on or off
 
-If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
+If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.
 
 ## Custom number formats
 
@@ -138,7 +125,7 @@ You can combine this format with other types that were described earlier in this
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## Additional resources
+## Related information
 
 For more information about how to set up and print labels, see the following articles:
 

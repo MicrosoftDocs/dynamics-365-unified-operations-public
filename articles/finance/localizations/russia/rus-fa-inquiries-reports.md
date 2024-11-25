@@ -1,19 +1,19 @@
 ---
 title: Fixed asset inquiries and reports
-description: This article provides information about the inquiries and reports for fixed asset acquisitions for Russia.
-author: AdamTrukawka
-ms.date: 08/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: 
+description: Learn about the inquiries and reports for fixed asset acquisitions for Russia, including outlines on inquiries, types of transactions, and types of documents.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2021-07-26
-ms.dyn365.ops.version: 8.1
 ms.search.form: Inquiries, Reports
+ms.dyn365.ops.version: 8.1
 ---
+
 # Fixed asset inquiries and reports
 
 This article provides information about the inquiries and reports for fixed asset acquisitions for Russia.

@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Workflow FAQ
-description: This article answers frequently asked questions about the workflow system.
-author: ChrisGarty 
-ms.date: 06/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Access frequently asked questions about the workflow system, including questions about notifications and workflow approval.
+author: ChrisGarty
 ms.author: cgarty
+ms.topic: article 
+ms.date: 09/19/2024
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Workflow FAQ
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article answers frequently asked questions about the workflow system.
 
@@ -43,8 +27,8 @@ Each notification is for a different work item, but the similarity can cause con
 ## Why are my workflow exports failing?
 There's currently a limitation in the workflow export feature that prevents workflow names longer than 48 characters. Using a name that is longer than 48 characters can result in a "Server failed to authenticate the request" error or prevent a file to be exported without a file type. For more information, see [Workflow export troubleshooting](https://community.dynamics.com/365/financeandoperations/b/elandaxdynamicsaxupgradesanddevelopment/posts/workflow-export-troubleshooting).
 
-## Can the submitter of a workflow also approve the workflow?
-Yes, a submitter of a workflow can also approve the workflow if configured that way. To prevent this behavior, go to **System administration > Workflow > Workflow parameters > General > Approver** and set **Disallow approval by submitter** to **Yes**.
+## Can the submitter of a workflow approve the workflow?
+Yes, a submitter of a workflow can approve the workflow unless the setting **Disallow approval by submitter** is enabled for the workflow under **System administration > Workflow > Workflow parameters > General > Approver**.
 
 ## Can I add alerts to workflows to provide notifications to users?
 Here are a few key areas to note about adding alerts to workflows to provide notifications:
@@ -62,7 +46,7 @@ If a user doesn't get the proper notification from the Action Center when they'r
 There's some overlap between workflow and Microsoft Power Automate. 
  - Workflows that are created in Dynamics 365 Finance are restricted to run inside Dynamics 365 Finance. 
      - Use Dynamics 365 Finance to set up workflows that are specific to your Dynamics 365 Finance.
- - Power Automate allows users to set up workflows that run outside of Dynamics 365 Finance. For more information, see [Power Automate](https://learn.microsoft.com/power-automate/getting-started)
+ - Power Automate allows users to set up workflows that run outside of Dynamics 365 Finance. For more information, see [Power Automate](/power-automate/getting-started)
     - Use Power Automate to set up flows that involve information that flows through your company. 
 
 ## Why is workflow editor not able to start under AD FS?
@@ -74,5 +58,9 @@ The default field value for the **Number of workflow items per batch** on the **
 ## What is the Workflow Enhanced Error feature?
 The Workflow Enhanced Error feature in version 10.0.13 adds error codes to differentiate different classes of workflow errors. The error messages reported will be mostly similar with minor differences to make them clearer.
 
+## What should I do if I encounter error code CAAC000E when signing in to the workflow editor? 
+The error code CAAC000E ("**Something went wrong. User is not eligible to enroll a device. Reason: DeviceCapReached**") can appear when you sign in to the workflow editor if your account has reached the Microsoft Intune device registration cap configured for your organization. To ignore this error, select **Continue** to proceed to use the workflow editor to create or edit workflows. 
+
+To avoid this error in the future, select **No, sign in to this app only** the next time you sign in to the workflow editor, or contact your IT administrator to raise your device cap. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

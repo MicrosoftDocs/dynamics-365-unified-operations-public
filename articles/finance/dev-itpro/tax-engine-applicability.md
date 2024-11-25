@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Tax engine applicability
-description: This article provides information about Tax engine applicability.
+description: Learn about Tax engine applicability, including prerequisites and outlines on conditions and lookup, with various code examples.
 author: EricWangChen
-ms.date: 10/07/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 10/07/2018
+ms.reviewer: kfend
+audience: IT Pro 
+ms.search.region: India
 ms.search.validFrom: 2018-10-07
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Tax engine applicability

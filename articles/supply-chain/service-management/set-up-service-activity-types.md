@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Set up service activity types 
-description: Set up service activity types. 
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to set up service activity types, including a step-by-step process for setting up service activity types and additional resources. 
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: smmActivityTypeGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: smmActivityTypeGroup
 ---
 
 
@@ -46,9 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 5.  Close the form to save your changes.
 
-## See also
-
-[Activity types (form)](https://technet.microsoft.com/library/aa583718\(v=ax.60\))
+## Related information
 
 [Dispatch board](dispatch-board.md)
 

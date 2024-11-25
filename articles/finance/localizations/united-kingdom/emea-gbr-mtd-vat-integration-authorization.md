@@ -1,15 +1,14 @@
 ---
 title: Authorize your Finance environment to interoperate with HMRC's MTD web service
-description: This article explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
-author: AdamTrukawka
-ms.date: 08/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with the Making Tax Digital web service of Her Majesty's Revenue and Customs.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2021-08-07
 ---
 

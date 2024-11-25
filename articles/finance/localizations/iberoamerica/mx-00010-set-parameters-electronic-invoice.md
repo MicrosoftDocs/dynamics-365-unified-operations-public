@@ -1,19 +1,19 @@
 ---
 title: MX-00010 Set parameters for an electronic invoice
-description: This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp.
-author: AdamTrukawka
-ms.date: 08/29/2018
+description: Learn about setting up an electronic invoice and the PAC account to get the approval and the digital stamp with a process on setting up PAC accounts.
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Mexico
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: EInvoiceCFDIPACTable_MX, EInvoiceParameters_MX, DigitalCertificateLookup
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # MX-00010 Set parameters for an electronic invoice
 
 [!include [banner](../../includes/banner.md)]

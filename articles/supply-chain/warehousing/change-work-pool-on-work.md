@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Change work pool on work
-description: This article explains how you can use the Change work pool button for work items to change the work pool of existing work.
+description: Learn how you can use the Change work pool button for work items to change the work pool of existing work, with an outline on setting up Change work pools.
 author: Mirzaab
-ms.date: 07/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSWorkPool,WHSWorkTemplateTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: global
-# ms.search.industry:
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 07/16/2020
+ms.custom: 
+ms.reviewer: kamaybac
+ms.search.form:  WHSWorkPool,WHSWorkTemplateTable
 ---
 
 # Change work pool on work

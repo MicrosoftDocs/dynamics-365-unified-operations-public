@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.10. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.10 with an outline on features included in this release. 
 author: kamaybac
-ms.date: 04/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-03-21 
-ms.dyn365.ops.version: 10.0.10
-
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
+
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 
 [!include [banner](../../finance/includes/banner.md)]
@@ -42,21 +28,21 @@ The following features are included in this release. The feature titles link to 
 
 - [Enhancement to use existing catch weight tags with warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
 
-- [Inbound load management enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For more information, see [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
+- [Inbound load management enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Learn more in [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
 
-- [Label printing enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
+- [Label printing enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Learn more in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 - [Master planning includes items with on-hand inventory when pre-processing filters are enabled](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 
 - [New data entities for the manufacturing area](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Quality management for warehouse processes](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - For more information, see [Quality management for warehouse processes](../inventory/quality-management-for-warehouses-processes.md).
+- [Quality management for warehouse processes](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Learn more in [Quality management for warehouse processes](../inventory/quality-management-for-warehouses-processes.md).
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Supply Chain Management 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-34.md).
+Dynamics 365 Supply Chain Management 10.0.10 includes platform updates. Learn more in [Platform updates for version 10.0.10 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-34.md).
 
 ### Bug fixes
 

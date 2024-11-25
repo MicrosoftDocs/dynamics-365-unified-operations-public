@@ -1,16 +1,15 @@
 ---
 title: Inventory transaction details
-description: This article provides an overview of the Transactions details page that shows details of a selected inventory transaction. 
+description: Learn about the Transactions details page that shows details of a selected inventory transaction, including a table defining various FastTabs. 
 author: rachel-profitt
-ms.date: 04/25/2022
-ms.topic: article
-ms.search.form: InventTrans, InventTransDetails
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: raprofit
-ms.search.validFrom: 2022-04-25
-ms.dyn365.ops.version: 10.0.27
+ms.reviewer: kamaybac
+ms.search.form: InventTrans, InventTransDetails
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Inventory transaction details

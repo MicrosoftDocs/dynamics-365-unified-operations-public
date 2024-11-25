@@ -1,20 +1,18 @@
 ---
 title: ER migration cleanup
-description: This article explains how you can use the ER migration cleanup function to resolve issues with ER templates.
+description: Learn how you can use the ER migration cleanup function to resolve issues with ER templates, including an outline on applicability.
 author: kfend
-ms.date: 04/29/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2018-01-01
-ms.dyn365.ops.version: AX 8.0.0
+ms.topic: article
+ms.date: 04/29/2020
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2018-01-01
 ms.search.form: ERSolutionTable, ERWorkspace, ERParameters, ERMigrationCleanup
+ms.dyn365.ops.version: AX 8.0.0
+ms.assetid: 
 ---
 
 # ER migration cleanup 

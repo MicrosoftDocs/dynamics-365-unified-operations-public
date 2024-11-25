@@ -1,20 +1,17 @@
 ---
 title: Workforce metrics Power BI content
-description: This article describes the Workforce metrics Power BI content.
+description: Learn about the Workforce metrics Power BI content, how to access Bower BI content, and understand the metrics that are included in Power BI content.
 author: jcart1106
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jcart
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 264084
-ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.form: HcmWorkforceWorkspace
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ---
 
 # Workforce metrics Power BI content
@@ -24,12 +21,14 @@ ms.search.form: HcmWorkforceWorkspace
 This article describes the **Workforce metrics** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
+
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
 - Microsoft Dynamics 365 Finance
 - Microsoft Dynamics 365 Human Resources
 
 ## Metrics that are included in the Power BI content
+
 The following table lists the metrics that are shown on each report.
 
 | Report                                           | Metrics |
@@ -56,6 +55,7 @@ Be sure to download the **Workforce metrics** Power BI content that applies to t
 > The .pbix files available in Lifecycle Services apply to finance and operations apps only.
 
 ## Understanding the data model and entities
+
 The following table shows the entities that the content was based on.
 
 | Entity                   | Contents                                                                            | Relationships with other entities |

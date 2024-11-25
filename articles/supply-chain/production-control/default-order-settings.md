@@ -1,15 +1,15 @@
 ---
 title: Default order settings for dimensions and product variants
-description: Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored; the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management; the lead times; the stop flag; and the order promising method.
+description: Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored.
 author: johanhoffmann
 ms.author: johanho
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
-ms.topic: how-to
-ms.date: 02/02/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Default order settings for dimensions and product variants

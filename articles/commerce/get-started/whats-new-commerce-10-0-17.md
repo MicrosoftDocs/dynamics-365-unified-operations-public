@@ -4,23 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.17 (April 2021)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.17. 
 author: josaw1
-ms.date: 02/01/2021
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2021-02-28 
 ms.dyn365.ops.version: 10.0.17
@@ -52,7 +43,7 @@ The following features are included in this release. The feature titles link to 
 - [Omnichannel support for incremental payment capture](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/omni-channel-support-incremental-payment-capture)<br> - For more information, see [Incremental capture for back-office invoicing](../dev-itpro/incremental-capture.md).
 - [Refactored payment processing in storefront checkout](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)
 - [Email receipt improvements and new features](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)
-- [Exclusive threshold discounts compete with exclusive non-threshold periodic discounts](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
+- [Exclusive threshold discounts compete with exclusive nonthreshold periodic discounts](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
 - [Improved user experience for pickup order processing in point of sale](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-user-experience-pick-up-order-processing-point-sale)<br> - For more information, see [Process customer order pickups in POS](../process-order-pickup-POS.md).
 - [Independent deployment and installation packages for MPOS, CPOS, HWS, and CSU extensions](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/independent-deployment-installation-packages-modern-pos-cloud-pos-hardware-station-cloud-scale-unit-extensions)
 - [Simplified Commerce SDK update and developer experience](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)
@@ -78,14 +69,14 @@ Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that have been removed or deprecated for Commerce.
+The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that are removed or deprecated for Commerce.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months before the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these breaking changes are functional updates that need to be made to the compiler.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

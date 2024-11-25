@@ -1,19 +1,19 @@
 ---
 title: Set up the transfer documents for goods movement inside a company
-description: This procedure shows how to set up transfer documents for goods movement inside a company.
+description: Learn how to set up transfer documents for goods movement inside a company, including a step-by-step process detailing how to create a transfer order.
 author: AdamTrukawka
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Set up the transfer documents for goods movement inside a company
 
 [!include [banner](../../includes/banner.md)]

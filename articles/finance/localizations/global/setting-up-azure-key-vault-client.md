@@ -1,15 +1,13 @@
 ---
 title: Set up the Azure Key Vault client
-description: This article provides information about storing advanced certificates and defining the certificate storage type.
+description: Learn about storing advanced certificates and defining the certificate storage type, including overviews on local storage and Azure Key Vault storage.
 author: AdamTrukawka
-ms.date: 04/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: kfend
+ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.10
 ---
@@ -35,8 +33,8 @@ After the certificate is installed in Key Vault, it must be set up in the applic
 3. Enter a name and description, and then, on the **General** FastTab, set the fields that are required for the integration with Key Vault storage:
 
 - **Key Vault URL** – Enter the default Key Vault URL if it isn't already defined by the secret reference.
-- **Key Vault client** – Enter the interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication.
-- **Key Vault secret key** – Enter the secret key that is associated with the Azure AD application that is used for authentication with the Key Vault storage.
+- **Key Vault client** – Enter the interactive client ID of the Microsoft Entra application that is associated with the Key Vault storage for authentication.
+- **Key Vault secret key** – Enter the secret key that is associated with the Microsoft Entra application that is used for authentication with the Key Vault storage.
 
    > [!NOTE]
    > If several Key Vault storages are used, you should set up a separate instance for each instance on the **Key Vault parameters** page.

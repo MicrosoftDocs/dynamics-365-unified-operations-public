@@ -1,20 +1,18 @@
 ---
 title: ISR declaration report and supporting processes for Mexico
-description: In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This article provides information about generating this report.
+description: In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report, with an outline on generating this report.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 270644
-ms.assetid: bcc395db-7c00-4151-9340-e83415cb0882
 ms.search.form: ISRConcept_MX, ISRConceptMainAccount_MX, ISRRateTable_MX
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: bcc395db-7c00-4151-9340-e83415cb0882
 ---
 
 # ISR declaration report and supporting processes for Mexico

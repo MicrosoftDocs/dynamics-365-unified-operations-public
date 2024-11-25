@@ -1,16 +1,12 @@
 ---
 title: Turn on the DDMRP feature for your system
-description: This article describes how to turn on the DDMRP feature and its prerequisites for your system.
+description: Learn how to turn on the DDMRP feature and its prerequisites for your system, including definitions of various features.
 author: t-benebo
-ms.date: 06/30/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2022-06-30
-ms.dyn365.ops.version: 10.0.28
+ms.topic: article
+ms.date: 06/30/2022
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Turn on the DDMRP feature for your system
@@ -22,4 +18,4 @@ Before you can use Demand Driven Material Requirements Planning (DDMRP) function
 1. **Feature name:** *Priority driven MRP support for Planning Optimization* (On by default as of Supply Chain Management version 10.0.32. Mandatory as of Supply Chain Management version 10.0.36.)
 1. **Feature name:** *DDMRP for Planning Optimization* (On by default as of Supply Chain Management version 10.0.36.)
 
-For more information, see [Priority-based planning](priority-based-planning.md).
+Learn more in [Priority-based planning](priority-based-planning.md).

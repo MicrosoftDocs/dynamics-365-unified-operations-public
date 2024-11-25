@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Credit limit scenarios
-description: This article describes how the customer credit limit is checked when the customer belongs to a customer credit limit group.
+description: Learn about how the customer credit limit is checked when the customer belongs to a customer credit limit group.
 author: JodiChristiansen
-ms.date: 06/28/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 06/28/2022
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2022-06-28
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.21
-
 ---
+
 # Credit limit scenarios
 
 In Credit management, a credit limit can be assigned to customers at the customer level. Each customer can be assigned to a *customer credit limit group*, and each group has a credit limit. Therefore, a credit limit can also be assigned to customers at the group level. All customers that are assigned to the same customer credit group have the same credit limit.

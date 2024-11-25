@@ -1,25 +1,16 @@
 ---
 title: Project onboarding
-description: This article provides information about the Project onboarding wizard in Microsoft Dynamics 365 Lifecycle Services.
-author: vetrivicky
-ms.date: 06/20/2022
+description: Learn about the Project onboarding wizard in Microsoft Dynamics 365 Lifecycle Services, including outlines on onboarding steps and project overviews.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/20/2022
+ms.custom:
+ms.reviewer: johnmichalak 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: vetric
-ms.search.validFrom: 2020-5-12 
+ms.search.validFrom: 2020-5-12
+ms.search.form: 
 ms.dyn365.ops.version:  
 ---
 

@@ -1,22 +1,20 @@
 ---
 title: Customer electronic invoices
-description: This article provides information about the management of customer electronic invoices for Italy.
+description: Learn about the management of customer electronic invoices for Italy, including prerequisites and an outline on setting up electronic invoices.
 author: AdamTrukawka
-ms.date: 05/06/2021
-ms.topic: article
-ms.technology: 
-audience: Application User
-ms.reviewer: 
-ms.search.region: Italy
 ms.author: atrukawk
-ms.: 
+ms.topic: article
+ms.date: 02/28/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ---
 
 # Customer electronic invoices
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
+This article describes how to set up and work with the functionality that generates electronic invoices for sales, projects, and credit notes in the Italy-specific **FatturaPA** ordinary format. <a id="simplified"></a>Generation of electronic invoices in the simplified **FatturaPA** format is out of scope for the standard Microsoft Dynamics 365 Finance functionality.
 
 As of version 1.2 of the FatturaPA format, electronic invoices can be used for all types of businesses. These types include public administrations, private companies, and professionals.
 
@@ -241,6 +239,9 @@ If a required document type isn't listed, you can manually adjust the document t
 - Invoice document type registration
 
 For more information, see the "Invoice types configuration" section in [A country/region-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+> [!NOTE]
+> The system allows you to configure any Invoice type for a specific electronic invoice. The user that manually assigns the Invoice Type is responsible to ensure it in line with the rest of the electronic invoice content. Not all possible electronic invoicing [scenarios](#simplified) are covered out-of-the-box.
 
 ### <a id="digitalcert"></a>Digital certificates
 

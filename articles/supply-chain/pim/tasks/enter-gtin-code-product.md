@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Enter the GTIN code for a product
-description: GTIN codes are assigned by the GS1 organization. 
-author: t-benebo
+description: Global Trade Item Number (GTIN) codes are assigned by the GS1 organization, including a step-by-step process for assigning GTIN codes. 
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 07/20/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup 
 ---
+
 # Enter the GTIN code for a product
 
 [!include [banner](../../includes/banner.md)]

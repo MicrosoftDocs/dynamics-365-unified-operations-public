@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Product owners
-description: This article provides information about product owners. A product owner is a group of users who are responsible for specific products. Only members of the group can release those products. The product owner can also be used in the approval workflow.
-author: t-benebo
-ms.date: 09/28/2020
+description: Learn about product owner, including overviews and step-by-step processes for creating product owner groups and assigning a product owner to a product.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EngChgProductOwner
-audience: Application User
-# ms.devlang: 
+ms.date: 09/28/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
+ms.search.form: EngChgProductOwner
 ---
 
 # Product owners
@@ -61,7 +47,7 @@ For example, product X is assigned to the *Design cabinets* product owner group.
 
 ## Product owners and approvals
 
-Because product owners know whether specific engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this approach by setting up the product owners as participant providers in the workflows that are used for engineering change management. The system will then assign approval tasks in the workflows, based on the products that are in engineering change requests and engineering change orders. For more information, see [Manage changes to engineering products](engineering-change-management.md).
+Because product owners know whether specific engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this approach by setting up the product owners as participant providers in the workflows that are used for engineering change management. The system will then assign approval tasks in the workflows, based on the products that are in engineering change requests and engineering change orders. Learn more in [Manage changes to engineering products](engineering-change-management.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,19 +1,16 @@
 ---
 title: Declaration 347 report
-description: This article provides information about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
-author: AdamTrukawka
-ms.date: 07/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
 ms.search.region: Spain
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 271523
-ms.search.form: 
 ---
 
 # Declaration 347 report

@@ -4,11 +4,8 @@
 title: Distribute and schedule questionnaires
 description: This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/02/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
@@ -20,7 +17,7 @@ audience: Application User
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Distribute and schedule questionnaires
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

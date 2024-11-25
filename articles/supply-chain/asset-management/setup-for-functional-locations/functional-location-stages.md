@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Functional location lifecycle states
-description: This article describes how to set up functional location states and lifecycle models in Asset Management.
-author: johanhoffmann
-ms.date: 06/24/2019
+description: Learn how to set up functional location states and lifecycle models in Asset Management, including a process for setting up functional location lifecycle states.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/24/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2214
+ms.search.form: EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Functional location lifecycle states

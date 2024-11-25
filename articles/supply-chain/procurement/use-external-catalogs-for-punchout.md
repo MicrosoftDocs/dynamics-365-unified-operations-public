@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Use external catalogs for PunchOut e-procurement
-description: This article explains how you can use external catalogs to create and submit requisitions.
-author: GalynaFedorova
-ms.date: 06/20/2017
+description: Learn how you can use external catalogs to create and submit requisitions, including an outline on creating a requisition to use external catalogs.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchVendorPortalRequests, CatExternalCatalogBasketWizard, CatExternalCatalogPunchoutDialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: PurchVendorPortalRequests, CatExternalCatalogBasketWizard, CatExternalCatalogPunchoutDialog
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Use external catalogs for PunchOut e-procurement
@@ -53,7 +37,7 @@ After lines have been added to a requisition, you can add more lines without usi
 
 When the requisition is ready, use the **Workflow** > **Submit** action to submit it for approval.
 
-### Additional resources
+### Related information
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)

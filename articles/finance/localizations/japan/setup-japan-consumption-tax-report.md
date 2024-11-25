@@ -1,19 +1,18 @@
 ---
 title: Setup Japan consumption tax report
-description: This task walks you through setting up the system to support the Japan consumption tax report.
+description: Learn about setting up the system to support the Japan consumption tax report, including a step-by-step process for enabling consumption tax reports.
 author: kfend
-ms.date: 12/02/2019
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 12/02/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Setup Japan consumption tax report
 
 [!include [banner](../../includes/banner.md)]

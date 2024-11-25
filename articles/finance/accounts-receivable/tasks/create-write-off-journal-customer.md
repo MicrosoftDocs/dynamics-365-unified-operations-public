@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a write-off journal for a customer
-description: This task guide will show you how to set up the parameters for write-offs and then write off transactions. 
-author: ShivamPandey-msft
-ms.date: 05/23/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable   
-audience: Application User 
-# ms.devlang:  
+description: Learn about how to create a write-off journal for customers, including how to set up the parameters for write-offs and then write off transactions.
+author: JodiChristiansen
+ms.author: jchrist
+ms.topic: how-to
+ms.date: 05/23/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a write-off journal for a customer
 
 [!include [banner](../../includes/banner.md)]

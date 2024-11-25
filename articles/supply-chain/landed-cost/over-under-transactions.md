@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Over/under transactions
-description: This article provides information that will help you set up the details of policies for over/under transactions, so that the system can determine how to manage the over-processing and under-processing of goods at the time of receipt.
-author: Weijiesa
-ms.date: 01/13/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
-audience: Application User
-# ms.devlang: 
+description: Learn how to set up the details of policies for over/under transactions, so that the system can determine how to manage over-processing of goods.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
 ---
 
 # Over/under transactions
@@ -136,7 +122,7 @@ To view the document type for the row that is selected on the upper **Overview**
 
 ### Lower General tab
 
-To view the over/under transaction number, lot ID, and dimension number that are associated with the selected over/under transaction line, select the **General** tab in the lower part of the **Over/under transactions** page. 
+To view the over/under transaction number, lot ID, and dimension number that are associated with the selected over/under transaction line, select the **General** tab in the lower part of the **Over/under transactions** page.
 
 ### Process over/under transactions
 

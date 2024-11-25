@@ -1,15 +1,14 @@
 ---
 title: Set up depreciation (Russia)
-description: This article explains how to set up depreciation for Russian fixed assets.
-author: AdamTrukawka
-ms.date: 05/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up depreciation for Russian fixed assets, including an outline and step-by-step process for setting up depreciation methods.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ms.search.industry: 

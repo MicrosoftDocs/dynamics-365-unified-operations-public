@@ -4,8 +4,6 @@ description: This article describes the Commerce runtime (CRT) services, the lib
 author: josaw1
 ms.date: 02/17/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: global

@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Sales and marketing overview
-description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
-author: Henrikan
-ms.date: 07/25/2019
+description: Learn how to use sales and marketing to obtain, store, and use various types of data in the sales flow, including original sales initiative and additional sales.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/02/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: henrikan
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form:
 ---
 
 # Sales and marketing overview
@@ -46,6 +30,7 @@ In sales and marketing, the initial interactions that you have with potential cu
 A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Supply Chain Management, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
 
 ## Sales
+
 You use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. [![Business process for sales.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### Sales quotations
@@ -80,9 +65,9 @@ When you enter and validate orders, you might have to manage backorders and exce
 
 When you view backorders by item, you can follow up on the expected future flow of transactions for a specific item. For example, you can check the following information:
 
--   The number of sales orders that are placed for an item
--   Whether deliveries of the item from vendors are still missing
--   Whether more items should be ordered, so that you can deliver all sales orders in a timely manner
+- The number of sales orders that are placed for an item
+- Whether deliveries of the item from vendors are still missing
+- Whether more items should be ordered, so that you can deliver all sales orders in a timely manner
 
 By doing this check, you can respond to requests from customers about the timing of the item delivery. In addition, you can prioritize the sales backorders and split the items that are on-hand between the orders.
 
@@ -98,9 +83,9 @@ When you view backorders by vendor, you can follow up on missing deliveries and 
 
 You can create three types of invoices during the sales process:
 
--   Customer invoice
--   Free text invoice
--   Pro forma invoice
+- Customer invoice
+- Free text invoice
+- Pro forma invoice
 
 #### Customer invoice
 
@@ -122,12 +107,18 @@ A free text invoice is an invoice that isn't related to a sales order. It contai
 
 A pro forma invoice is an invoice that is prepared as an estimate of the actual invoice amount before the invoice is posted. You can print a pro forma invoice for either a customer invoice or a free text invoice.
 
-### Additional resources
+## Related information
 
-#### Blogs
+### Blogs
 
 You can find an overview of a sales process in the post
 [How sales work in Dynamics 365 Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+### White papers
+
+The following white papers explore various aspects of sales and marketing in Dynamics 365 Supply Chain Management:
+
+- [Trade agreements](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

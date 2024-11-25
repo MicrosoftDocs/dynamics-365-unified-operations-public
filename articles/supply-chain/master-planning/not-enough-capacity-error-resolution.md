@@ -1,16 +1,12 @@
 ---
 title: "Fix the 'Not enough capacity could be found' scheduling engine error and finite capacity"
-description: "This article provides information about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error."
+description: Learn about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error.
 author: t-benebo
-ms.date: 7/29/2021
-ms.topic: article
-ms.search.form: ProdTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-07-19
-ms.dyn365.ops.version: 10.0.20
+ms.topic: article
+ms.date: 7/29/2021
+ms.reviewer: kamaybac
+ms.search.form: ProdTable
 ---
 
 # Fix the "Not enough capacity could be found" scheduling engine error

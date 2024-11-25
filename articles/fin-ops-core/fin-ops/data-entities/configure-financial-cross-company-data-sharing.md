@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Configure financial cross-company data sharing
-description: This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies. 
+description: Learn about how to configure, enable, validate, and resolve conflicts when sharing data between companies, including a step-by-step process. 
 author: aprilolson
-ms.date: 06/26/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr, DMFExecutionHistoryWorkspace, DMFExecutionHistorySummary, DMFExecutionHistoryEntities,  SysDataSharingConfiguration, SysDataSharingDiscrepencies   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 06/26/2019
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr, DMFExecutionHistoryWorkspace, DMFExecutionHistorySummary, DMFExecutionHistoryEntities,  SysDataSharingConfiguration, SysDataSharingDiscrepencies  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Configure financial cross-company data sharing
 
 [!include [banner](../../../finance/includes/banner.md)]

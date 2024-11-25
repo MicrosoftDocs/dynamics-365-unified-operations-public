@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Data maintenance
-description: This article provides details about how to use simple scheduling processes to find and correct data inconsistencies in your environment.
+description: Learn about how to use simple scheduling processes to find and correct data inconsistencies in your environment.
 author: RyanCCarlson2
-ms.date: 03/02/2021
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DataMaintenance
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry:
 ms.author: rcarlson
+ms.topic: article
+ms.date: 06/10/2024
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-03-31
+ms.search.form: DataMaintenance
 ms.dyn365.ops.version: AX 10.0.18
 ---
 

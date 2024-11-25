@@ -1,18 +1,15 @@
 ---
 title: Troubleshooting guide for testing with the Performance SDK
-description: This article provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
+description: Learn about how to troubleshoot for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: josaw1
-ms.date: 05/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 05/28/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ---
 
@@ -122,7 +119,7 @@ Three scenarios can cause this error:
 
 - If your finance and operations apps were deployed in 21Vianet, make sure that you have specified **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
-To work around this issue, create a user who has any name and email address. Assign the **System Administrator** role to the new user. You don't have to link the user to a real Microsoft Azure Active Directory (Azure AD) user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
+To work around this issue, create a user who has any name and email address. Assign the **System Administrator** role to the new user. You don't have to link the user to a real Microsoft Microsoft Entra user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
 
 ## The HTTP request was forbidden with client authentication scheme 'Anonymous'
 
@@ -333,4 +330,3 @@ Change the **Target framework** property in the properties window of PerfSDKSamp
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

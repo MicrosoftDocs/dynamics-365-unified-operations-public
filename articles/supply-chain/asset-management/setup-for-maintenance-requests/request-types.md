@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Maintenance request types
-description: This article explains how to set up a maintenance request types in Asset Management.
-author: johanhoffmann
-ms.date: 07/26/2019
+description: Learn how to set up a maintenance request types in Asset Management, including a step-by-step process for navigating to maintain request types.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-07-30
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.date: 07/26/2019
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form:
 ---
 
 # Maintenance request types

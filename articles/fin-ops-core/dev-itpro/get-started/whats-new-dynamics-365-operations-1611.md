@@ -1,18 +1,17 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
-description: This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
+description: Learn about new or changed features in Dynamics 365 for Operations version 1611. This version was released in November 2016.
 author: sericks007
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -811,7 +810,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 | As a vendor, get information about the amount of consigned inventory that is transferred to the customer. | To bill a customer, the vendor requires information about the raw materials that were purchased from the consignment inventory and the date of purchase. The vendor can also monitor the on-hand inventory at the customer site by using the vendor collaboration interface. |
 | Move vendor-owned inventory by using a transfer journal. | To track the physical position of the vendor-owned inventory, you must be able to record the position in the system. By using use a transfer journal, you can record the physical movement of inventory, such as the movement from one location in a warehouse to another location in that warehouse. |
 | Adjust vendor-owned inventory by using a counting journal. | It's important that you keep the system on-hand inventory in sync with the actual physical inventory. The vendor-owned inventory can be adjusted in and out by using counting processes such as quantity adjustment and counting journal processes. |
-| Find out more about consignment support in Dynamics 365 for Operations | For more information about the support for consignment processes, see [Consignment](../../../supply-chain/inventory/consignment.md), [Setting up consignment](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Create a consignment replenishment order (Task guide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md), and [Change the ownership of consignment inventory based on production demand (Task guide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Find out more about consignment support in Dynamics 365 for Operations | For more information about the support for consignment processes, see [Consignment](../../../supply-chain/inventory/consignment.md), [Create a consignment replenishment order (Task guide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md), and [Change the ownership of consignment inventory based on production demand (Task guide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### Vendor collaboration
 
@@ -820,7 +819,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 | Enable vendors to respond to each purchase order line and suggest changes. | In some cases, vendors want to accept some purchase order lines but reject others. Vendors can now individually manage purchase order lines. Each line can be rejected, accepted, or accepted with changes. For example, vendors can change the delivery date, split the delivery and quantity, or suggest an alternative item. |
 | Enable vendors to manage contact person information. | Vendors can maintain contact person information for their company. This information includes names, email addresses, and phone numbers. Access to this feature is granted through a dedicated security role. |
 | Share documents that are related to purchase orders with vendors. | When you must share a document with a vendor, such as a document about requirements, it's convenient to link the document to the relevant purchase order. The vendor can then share notes and attachments with the customer by linking the document to their response to the purchase order. Document management is the underlying supporting framework, and only notes and attachments that are classified as "external" can be shared with vendors. |
-| Provision new vendor users. | If your vendors use the vendor collaboration interface, they have a seamless way to request new user accounts when new contacts require access to vendor collaboration. Procurement professionals can submit a request for a user account for a contact person at the vendor organization. A vendor contact person who is already a vendor collaboration user can also submit this type of request. This request eventually creates a new user in Dynamics 365 for Operations that has vendor-specific security roles. It also facilitates a request to the Microsoft Azure B2B portal to provision the user with a new Azure Active Directory (Azure AD) user account. Vendors can also request that specific vendor user accounts be inactivated, or that security roles be modified. |
+| Provision new vendor users. | If your vendors use the vendor collaboration interface, they have a seamless way to request new user accounts when new contacts require access to vendor collaboration. Procurement professionals can submit a request for a user account for a contact person at the vendor organization. A vendor contact person who is already a vendor collaboration user can also submit this type of request. This request eventually creates a new user in Dynamics 365 for Operations that has vendor-specific security roles. It also facilitates a request to the Microsoft Azure B2B portal to provision the user with a new Microsoft Entra user account. Vendors can also request that specific vendor user accounts be inactivated, or that security roles be modified. |
 | Find out more about support for vendor collaboration in Dynamics 365 for Operations. | For more information about vendor collaboration, see [Vendor collaboration with external vendors](../../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Vendor collaboration with customers](../../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Manage vendor collaboration users](../../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md), and [Vendor collaboration invoicing workspace](../../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### Intercompany order processing

@@ -1,12 +1,13 @@
 ---
 title: PageLinkDesign type
-description: Pagelink design object type.
+description: Learn about the pagelink design object type, which includes the alignItems, alignSelf, background, bindings, border, color, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PageLinkDesign type

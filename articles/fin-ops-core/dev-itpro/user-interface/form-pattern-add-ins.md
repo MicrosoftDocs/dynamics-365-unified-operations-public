@@ -1,15 +1,13 @@
 ---
 title: Visual Studio add-ins that support form patterns
-description: The tools for Visual Studio include a number of add-ins that support pattern usage.
+description: Learn about Visual Studio add-ins that support form patterns, with outlines of the form statistics add-in and Form Pattern report.
 author: jasongre
-ms.date: 08/17/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 08/17/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

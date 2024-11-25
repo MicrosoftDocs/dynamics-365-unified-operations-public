@@ -1,15 +1,14 @@
 ---
 title: Issue ICMS tax credit transfer fiscal documents (Brazil)
-description: This article explains how to create and issue a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e).
-author: AdamTrukawka
-ms.date: 06/24/2017
+description: Learn how to create and issue a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e), including a step-by-step process.
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries

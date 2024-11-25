@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Standard payroll reports
-description: This article describes the standard payroll reports that are provided to help you with payroll processing and government reporting. 
+description: Learn about the standard payroll reports that are provided to help you with payroll processing and government reporting. 
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: PayrollEarningStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 220994
-ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollEarningStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3
 ---
 
 # Standard payroll reports

@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Reconcile freight in transportation management
-description: This article describes the freight reconciliation process.
-author: Weijiesa
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn about the freight reconciliation process, including outlines on manual reconciliation and automatic reconciliation.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: bc34a9b1-0c11-4797-b463-25409cf98ca8
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 ---
 
 # Reconcile freight in transportation management
@@ -41,7 +27,7 @@ Freight rates are calculated by the rate engine that is associated with the rele
 
 ## Manual reconciliation
 
-If you're reconciling freight manually, you must match each invoice line with the freight bill line or lines for the load that is being invoiced. You do this matching on the **Freight bill and invoice matching** page. If the amount on the invoice line doesn’t match the freight bill amount, you must select a reconciliation reason for the difference. If there are multiple reasons for reconciliation, you can split the unmatched amount across them. The reconciliation reason determines how the difference amounts are posted in the general ledger. When the reconciliation of the whole invoice amount is accounted for, it's submitted for approval, and then the journal is posted. The following illustration shows how to generate a freight invoice and do freight reconciliation.
+If you're reconciling freight manually, you must match each invoice line with the freight bill line or lines for the load that is being invoiced. You do this matching on the **Freight bill and invoice matching** page. If the amount on the invoice line doesn't match the freight bill amount, you must select a reconciliation reason for the difference. If there are multiple reasons for reconciliation, you can split the unmatched amount across them. The reconciliation reason determines how the difference amounts are posted in the general ledger. When the reconciliation of the whole invoice amount is accounted for, it's submitted for approval, and then the journal is posted. The following illustration shows how to generate a freight invoice and do freight reconciliation.
 
 [![Freight reconciliation tasks.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
@@ -51,7 +37,7 @@ To use automatic reconciliation, you must specify the schedule for reconciliatio
 
 ## Match freight bills with freight invoices using automatic or manual reconciliation
 
-*Matching* is the process of finding the freight bills that correspond to each freight invoice. This can be done by matching the invoice lines one-by-one (manual matching), or by matching all available invoices at once (auto matching).
+*Matching* is the process of finding the freight bills that correspond to each freight invoice. You can match the invoice lines one-by-one (manual matching), or match all available invoices at once (auto matching).
 
 ### Auto matching
 
@@ -104,7 +90,6 @@ Another way to do manual matching for this example is to proceed as follows:
 1. Match Inv3 with FB. Now FB has amount remaining 1600, which is the same as subtracting negative 100 on top of 1500. Both FB and Inv3 have a matched quantity of -100.
 1. Match Inv1 and Inv 2 with FB one after another. FB is fully matched.
 
-As this example shows, matching freight invoices with negative amounts should only be done manually. This will ensure that it is always possible to match the freight invoices with negative amounts to a freight bill not fully matched because that enables you to control the matching sequence.
-
+As this example shows, matching freight invoices with negative amounts should only be done manually. This will ensure that it's always possible to match the freight invoices with negative amounts to a freight bill not fully matched because that enables you to control the matching sequence.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

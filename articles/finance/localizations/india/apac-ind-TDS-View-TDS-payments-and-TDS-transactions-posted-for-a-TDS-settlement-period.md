@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: View posted TDS payments and transactions for a TDS settlement period
-description: This article explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
-author: kailiang
-ms.date: 03/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period, including a step-by-step process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # View posted TDS payments and transactions for a TDS settlement period
@@ -36,7 +22,7 @@ This article explains how to view the Tax Deducted at Source (TDS) payments and 
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 
-    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-50.png)](/media/apac-ind-TDS-50.png)
+    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-50.png)]
 
 2. On the **Withholding tax settlement periods** page, select **Withholding tax payments** to open the **Withholding tax payments** page, where you can view the TDS settlements that were made for a specific TDS settlement period.
 

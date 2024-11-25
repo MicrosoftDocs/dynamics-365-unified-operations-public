@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Create exchange rate providers
-description: This article describes how to set up an exchange rate provider. 
+description: Learn how to create and set up an exchange rate provider, including terminology, conceptual and class models, and an overview on writing rate providers.
 author: RyanCCarlson2
-ms.date: 03/09/2022
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create exchange rate providers

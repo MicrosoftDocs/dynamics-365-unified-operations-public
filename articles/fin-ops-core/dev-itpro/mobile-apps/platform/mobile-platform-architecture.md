@@ -1,13 +1,13 @@
 ---
 title: Architecture and design considerations for the mobile platform
-description: This article provides architecture and design considerations for the mobile platform.
+description: Learn about architecture and design considerations for the mobile platform, including an overview on understanding navigation in the mobile app.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: overview
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: overview
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---

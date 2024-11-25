@@ -2,24 +2,20 @@
 title: Cookie compliance
 description: This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Cookie compliance
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 
@@ -31,7 +27,7 @@ The following table shows the current reference list of cookies placed by Dynami
 
 | Cookie name                               | Usage                                                        | Lifetime |
 | ------------------------------------------- | ------------------------------------------------------------ |  ------- |
-| `.AspNet.Cookies`                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
+| `.AspNet.Cookies`                             | Store Microsoft Microsoft Entra authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
 | `_msdyn365___cart_`                           | Store cart ID used to obtain list of products added to cart instance. | Session |
 | `_msdyn365___checkout_cart_`                           | Store checkout cart ID used to obtain list of products added to the checkout cart instance. | Session |
 | `_msdyn365___ucc_`                            | Cookie compliance consent tracking.                          | One year |

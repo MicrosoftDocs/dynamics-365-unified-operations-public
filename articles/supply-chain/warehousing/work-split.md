@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Work split
-description: This article provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
+description: Learn about work split functionality. This functionality lets you split large work orders into several work orders that you can then assign to multiple workers.
 author: Mirzaab
-ms.date: 10/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
-ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 10/15/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Work split

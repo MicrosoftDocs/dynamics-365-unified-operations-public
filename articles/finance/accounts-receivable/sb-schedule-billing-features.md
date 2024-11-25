@@ -1,29 +1,16 @@
 ---
-# required metadata
 title: Billing schedule features
-description: This article explains the features of billing schedules, such as pricing methods, escalations and discounts, alignment dates, proration, reverse billing, and split item groups. 
+description: Learn about the features of billing schedules, such as pricing methods, escalations and discounts, alignment dates, proration, reverse billing, and split item groups. 
 author: JodiChristiansen
-ms.date: 11/04/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 11/04/2021
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-11-05
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Billing schedule features

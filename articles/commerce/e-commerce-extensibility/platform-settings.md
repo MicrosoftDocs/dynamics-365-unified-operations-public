@@ -2,18 +2,15 @@
 title: Platform settings file
 description: This article covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 author: samjarawan
-ms.date: 12/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/02/2024
+ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.13
 ms.custom: 
-ms.assetid: 
+  - bap-template 
 ---
 
 # Platform settings file
@@ -26,7 +23,8 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
 
 ```json
 {
-    "dataActionTimeoutInMs": 4000,
+    "serverSideDataActionTimeoutInMs": 4000,
+    "clientSideDataActionTimeoutInMs": 4000,
     "minClientChunkSize": 30000,
     "excludeModules": [ ],
     "namespaceExtensions" : [ ],
@@ -36,17 +34,21 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
 
 ## Properties
 
-### dataActionTimeoutInMs
+### serverSideDataActionTimeoutInMs
 
-The **dataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that data actions will wait for a response before they time out. The time-out represents a lower bound for page response, because the action framework will wait as long as the defined time-out before it times out and returns the page. The default value is 4,000 milliseconds (4 seconds).
+The **serverSideDataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that the server side data actions wait for a response before they time out. The timeout value represents a lower bound for page response because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4000 milliseconds (4 seconds). If this value is set too high, it could potentially overload the Commerce Scale Unit (CSU).
+
+### clientSideDataActionTimeoutInMs
+
+The **clientSideDataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that the client side data actions wait for a response before they time out. The timeout value represents a lower bound for page response because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4000 milliseconds (4 seconds). If this value is set too high, it could potentially overload the CSU.
 
 ### minClientChunkSize
 
-The **minClientChunkSize** property defines the minimum size, in bytes, of webpack JavaScript chunks that will be sent to the browser. JavaScript chunks that are smaller than the minimum size will be grouped together to form chunks that are larger than the minimum size. The smaller the minimum size is, the more chunks will be generated. In this case, more code splitting will occur, and less unused JavaScript code will be included. However, many smaller chunks must be downloaded. By contrast, the larger the minimum size is, the fewer overall chunks will be generated. In this case, fewer JavaScript files must be downloaded, but some unused JavaScript code might be included. The default value is 30,000 bytes (30 KB).
+The **minClientChunkSize** property defines the minimum size, in bytes, of webpack JavaScript chunks that are sent to the browser. JavaScript chunks that are smaller than the minimum size are grouped together to form chunks that are larger than the minimum size. The smaller the minimum size is, the more chunks are generated. In this case, more code splitting occurs, and less unused JavaScript code is included. However, many smaller chunks must be downloaded. By contrast, the larger the minimum size is, the fewer overall chunks are generated. In this case, fewer JavaScript files must be downloaded, but some unused JavaScript code might be included. The default value is 30,000 bytes (30 KB).
 
 ### excludedModules
 
-The **excludedModules** property defines a set of modules that will be excluded from webpack JavaScript chunks. Commerce modules are bundled into JavaScript chunks and sent to the browser on the client side. However, if modules aren't required on a site, they can be excluded to help reduce the size of JavaScript chunks and help increase the speed of page loads.
+The **excludedModules** property defines a set of modules that are excluded from webpack JavaScript chunks. Commerce modules are bundled into JavaScript chunks and sent to the browser on the client side. However, if modules aren't required on a site, they can be excluded to help reduce the size of JavaScript chunks and help increase the speed of page loads.
 
 ### namespaceExtensions
 
@@ -72,15 +74,23 @@ To generate JavaScript bundles per module, add the following platform setting in
 
 ### build
 
-For complex applications that have more modules and/or more customization, the **build** platform setting can cause the webpack to use more memory. In these cases, the default node heap memory size won't be sufficient and can cause heap "out of memory" errors. To increase the heap memory, update the build target in the **package.json** file by setting **NODE_OPTIONS** to increase the heap memory limit, as shown in the following example.
+For complex applications that have more modules and/or more customization, the **build** platform setting can cause the webpack to use more memory. In these cases, the default node heap memory size isn't sufficient and can cause heap "out of memory" errors. To increase the heap memory, update the build target in the **package.json** file by setting **NODE_OPTIONS** to increase the heap memory limit, as shown in the following example.
 
 `"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && ..."`
 
 ### maxClientChunkSize
 
-Smaller JavaScript bundles put less pressure on the main thread by causing the browser to process and run the script faster. Therefore, there is a direct correlation between the size of bundles and the total blocking time performance. The **maxClientChunkSize** platform setting helps control the bundle size by splitting the larger JavaScript bundles into multiple parts, as shown in the following example.  
+Smaller JavaScript bundles put less pressure on the main thread by causing the browser to process and run the script faster. Therefore, there's a direct correlation between the size of bundles and the total blocking time performance. The **maxClientChunkSize** platform setting helps control the bundle size by splitting the larger JavaScript bundles into multiple parts, as shown in the following example.  
 
 `"maxClientChunkSize": 500000 // 500KB unzipped size`
+
+### secondaryInstrumentationKey
+
+This setting specifies the instrumentation key from your Azure Application Insights subscription that's used to connect and log telemetry events to your own Application Insights subscription, as shown in the following example.
+
+`"secondaryInstrumentationKey": "00000000-0000-0000-0000-000000000000" // Instrumentation Key GUID from your Azure Application Insights subscription`
+
+For more information, see [Telemetry logger](telemetry-logger.md).
 
 ## Additional resources
 

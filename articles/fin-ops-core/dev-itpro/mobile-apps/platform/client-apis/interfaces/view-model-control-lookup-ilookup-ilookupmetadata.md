@@ -1,12 +1,13 @@
 ---
 title: LookupMetadata type
-description: Lookup metadata type.
+description: Learn about the lookup metadata type, which includes the BoundEntity, BoundField, Description, DisplayField, DisplayKey, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # LookupMetadata type

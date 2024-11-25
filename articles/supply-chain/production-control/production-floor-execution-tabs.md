@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Design the production floor execution interface
-description: This article describes how to design the content of the user interface for each configuration.
+description: Learn how to design the content of the user interface for each configuration, including an outline and step-by-step process on designing a tab.
 author: johanhoffmann
-ms.date: 12/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
-ms.search.validFrom: 2020-12-01
-ms.dyn365.ops.version: 10.0.16
+ms.topic: article
+ms.date: 12/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 ---
 
 # Design the production floor execution interface

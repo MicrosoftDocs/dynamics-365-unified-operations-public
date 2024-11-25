@@ -1,15 +1,13 @@
 ---
 title: Asset Management mobile app overview
-description: This article introduces the Asset Management mobile app.
-author: johanhoffmann
-ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn about the Asset Management mobile app, including outlines on managing work orders, creating maintenance requests, and creating work orders.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: overview
 ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Asset Management mobile app overview
@@ -33,7 +31,9 @@ The following illustration shows an example of a list of jobs for a work order i
 [<img src="media/mobile-app-in-phone.png" alt="Job list for a work order in the Asset Management mobile app." title="Job list for a work order in the Asset Management mobile app" width="250" />](media/mobile-app-in-phone.png#lightbox)
 
 > [!NOTE]
-> The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
+> Use of the Asset Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app for maintenance requests requires a *Dynamics 365 Team Members* license. Using the app for processing work orders requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
 
 ## Next steps
 

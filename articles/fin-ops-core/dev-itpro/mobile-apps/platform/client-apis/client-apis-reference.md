@@ -1,14 +1,15 @@
 ---
 title: Client APIs home page
-description: Mobile platform client APIs
+description: Access the Client APIs home page, which includes various links to references for various APIs, including the Application and Control APIs.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2017-08-09
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
 ms.collection: get-started
+audience: Developer
+ms.search.region: Global
+ms.search.validFrom: 2017-08-09
 ---
 
 # Client APIs home page

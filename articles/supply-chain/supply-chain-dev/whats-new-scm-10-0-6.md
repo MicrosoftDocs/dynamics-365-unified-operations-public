@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (November 2019)
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.6. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.6, including an outline on product configuration models. 
 author: kamaybac
-ms.date: 10/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2019-10-31 
-ms.dyn365.ops.version: 10.0.6
-
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
+
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (November 2019)
 
 [!include [banner](../../finance/includes/banner.md)]
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](#additional-resources).
+This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Related information](#related-information).
 
 ## Product configuration models V2 data entity
 
@@ -52,7 +37,7 @@ You now have the ability to define primary and secondary responsible parties on 
 ## RFQ link on the Purchase order line
 You can add a reference link from the Purchase order lines back to the corresponding RFQ lines they originated from, allowing the user to easily be provided with the supporting request for quotation document.
 
-## Additional resources
+## Related information
 
 ### Bug fixes
 For information about the bug fixes included in each of the updates that are part of 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).

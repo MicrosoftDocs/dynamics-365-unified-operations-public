@@ -1,22 +1,18 @@
 ---
-title: Asset maintenance scenario
-description: This article describes the asset maintenance scenario, which lets you use sensor data to create counter records that track the use of a machine asset.
+title: Asset maintenance scenario (preview)
+description: Learn about the asset maintenance scenario, which lets you use sensor data to create counter records that track the use of a machine asset.
 author: johanhoffmann
-ms.date: 09/02/2022
-ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2022-09-02
-ms.dyn365.ops.version: 10.0.30
+ms.topic: article
+ms.date: 09/02/2022
+ms.reviewer: kamaybac
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
 ---
 
-# Asset maintenance scenario
+# Asset maintenance scenario (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The *asset maintenance* scenario lets you use sensor data to create counter records. Counter records track the use of a machine asset and are used as input to generate the maintenance schedule for machine assets.
@@ -35,7 +31,7 @@ In this section, you will set up the *AK-101, Air knife* asset in demo data as a
 
 ### Set up a sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Create an asset counter to track production hours
 

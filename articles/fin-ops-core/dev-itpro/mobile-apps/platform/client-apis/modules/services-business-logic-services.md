@@ -1,12 +1,13 @@
 ---
 title: Services module
-description: Various services that are available to the application in client runtime.
+description: Learn about the Services moduel, which includes the AsyncService, CacheService, DataService, MetadataService, and PageData types.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Services module

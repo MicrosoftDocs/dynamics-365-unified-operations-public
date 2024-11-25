@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Automatic update of asset counters
-description: This article describes automatic update of asset counters in Asset Management.
-author: johanhoffmann
-ms.date: 10/15/2019
+description: Learn about the automatic update of asset counters in Asset Management, including a step-by-step process on updating the related asset counters.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/15/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.search.form: 
 ---
 
 # Automatic update of asset counters
@@ -68,7 +51,7 @@ The illustration below shows an example of the **Asset aggregated value** page.
 
 Note the following points:
 
-- You can still create manual counter value registrations for counter types that are automatically updated. For more information, see [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md).
+- You can still create manual counter value registrations for counter types that are automatically updated. Learn more in [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md).
 
 - You can set up counters that are related to another counter. In this case, when a counter is updated, related counters are automatically updated at the same time. For more information about how to set up related counters, see [Counters](../setup-for-objects/counters.md).
 

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up payroll calculation frequencies
-description: This article describes how to set up payroll calculation frequencies.
+description: Learn about how to set up payroll calculation frequencies, including an outline on how to assign pay periods to payroll calculation frequencies.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollCalculationFrequency
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 222594
-ms.assetid: 708d3b20-27cc-4f6a-b2d5-ecc328864670
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollCalculationFrequency
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 708d3b20-27cc-4f6a-b2d5-ecc328864670
 ---
 
 # Set up payroll calculation frequencies

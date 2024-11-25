@@ -11,7 +11,8 @@ metadata:
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
   ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/05/2023 #Required; mm/dd/yyyy format.
+  ms.date: 11/10/2024 #Required; mm/dd/yyyy format.
+  ms.custom: evergreen
   hide_bc: true
 
 # highlightedContent section (optional)
@@ -33,8 +34,8 @@ highlightedContent:
       url: /training/dynamics365/finance
     # Card
     - title: Troubleshoot
-      itemType: reference
-      url: /dynamics365/finance/finance-troubleshooting
+      itemType: concept
+      url: /troubleshoot/dynamics-365/finance/welcome-finance
 additionalContent:
   sections:
   - title: Implement 
@@ -188,7 +189,17 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
         text: General form guidelines
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
-        text: Build extensible controls    
+        text: Build extensible controls  
+    - title: Translation Service  
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview
+        text: Dynamics 365 Translation Service overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-api-info
+        text: Dynamics 365 Translation Service API
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-aad-app-reg
+        text: Dynamics 365 Translation Service Visual Studio extension (Public preview)
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-visual-studio
+        text: Translate user interface files
   - title: Use 
     items:
     - title: General ledger
@@ -293,7 +304,7 @@ additionalContent:
         text: Globalization services
       - url: /dynamics365/finance/localizations/rcs-overview
         text: Regulatory configuration service
-      - url: /dynamics365/finance/localizations/e-invoicing-service-overview
+      - url: /dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Electronic invoicing
       - url: /dynamics365/finance/localizations/global-tax-calcuation-service-overview
         text: Tax Calculation 
@@ -311,6 +322,9 @@ additionalContent:
         - title: Dynamics 365 Commerce
           summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
           url: /dynamics365/commerce/
+        - title: Microsoft Copilot for Finance
+          summary: Copilot for Finance helps you surface insights that support strategic decision-making and reduce the time spent on manual, repetitive work.
+          url: /copilot/finance/
         - title: Dynamics 365 Project Operations
           summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
           url: /dynamics365/project-operations/

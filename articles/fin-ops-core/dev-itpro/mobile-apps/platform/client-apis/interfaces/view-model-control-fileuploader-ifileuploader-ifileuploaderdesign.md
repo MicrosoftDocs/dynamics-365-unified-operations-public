@@ -1,12 +1,13 @@
 ---
 title: FileUploaderDesign type
-description: File uploader design object type.
+description: Learn about the FileUploaderDesign type, a file uploader design object type that include the alignItems, alignSelf, bindings, border, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # FileUploaderDesign type

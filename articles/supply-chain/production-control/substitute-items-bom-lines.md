@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Material substitution in manufacturing
-description: This article describes how to substitute materials during the production process. 
+description: Learn how to substitute materials during the production process, including outlines on substituting material by date and substituting material by planning. 
 author: johanhoffmann
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProdBOM
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+ms.search.form: ProdBOM
+ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c
 ---
 
 # Material substitution in manufacturing

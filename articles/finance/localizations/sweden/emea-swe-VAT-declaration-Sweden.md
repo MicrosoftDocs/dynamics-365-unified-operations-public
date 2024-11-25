@@ -1,24 +1,21 @@
 ---
 title: VAT declaration (Sweden)
-description: This article describes how to set up and generate a value-added tax (VAT) declaration for Sweden.
-author: AdamTrukawka
-ms.date: 09/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up and generate a value-added tax (VAT) declaration for Sweden, including an outline on setting up VAT declarations for Sweden.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/17/2024
+ms.reviewer: johnmichalak
 ms.search.region: Sweden
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # VAT declaration (Sweden)
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and generate a value-added tax (VAT) declaration for Sweden. You can generate a preview VAT declaration in Microsoft Excel. You can also generate a VAT declaration in [Document Type Definition (DTD) format](https://www.skatteverket.se/omoss/samverkan/forprogramkonstruktorer/dtdfil.4.65fc817e1077c25b83280000.html?q=dtd) and upload it to the [Skatteverket offical portal](https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html).
+This article describes how to set up and generate a value-added tax (VAT) declaration for Sweden. You can generate a preview VAT declaration in Microsoft Excel. You can also generate a VAT declaration in Document Type Definition (DTD) format and upload it to the [Skatteverket offical portal](https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html).
 
 To automatically generate the report, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, you must associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
@@ -96,7 +93,7 @@ The VAT declaration in Sweden contains the following information.
 
 | Line | Description         | DTD file element | Lookup result    |
 |------|---------------------|------------------|------------------|
-| 48   | Input VAT to deduct | MomsIngAvdr      | InputVAT EUPurchaseGoodsStandardUseTax (20/30/48)</br>EUPurchaseGoodsReducedUseTax (20/31/48)</br>EUPurchaseGoodsReduced2UseTax (20/32/48)</br>EUPurchaseServicesStandardUseTax (21/30/48)</br>EUPurchaseServicesReducedUseTax (21/31/48)</br>EUPurchaseServicesReduced2UseTax (21/32/48) </br>PurchaseServicesOutsideEUStandardUseTax (22/30/48)</br>PurchaseServicesOutsideEUReducedUseTax (22/31/48)</br>PurchaseServicesOutsideEUReduced2UseTax (22/32/48) </br>PurchaseGoodsDomesticRCStandardUseTax (23/30/48)</br>PurchaseGoodsDomesticRCReducedUseTax (23/31/48)</br>PurchaseGoodsDomesticRCReduced2UseTax (23/32/48) </br>OtherPurchaseGoodsRCStandardUseTax (24/30/48)</br>OtherPurchaseGoodsRCReducedUseTax (24/31/48)</br>OtherPurchaseGoodsRCReduced2UseTax (24/32/48)</br>ImportStandardUseTax (50/60/48)</br>ImportReducedUseTax (50/61/48)</br>ImportReduced2UseTax (50/62/48) |
+| 48   | Input VAT to deduct | MomsIngAvdr      | EUPurchaseGoodsStandardUseTax (20/30/48)</br>EUPurchaseGoodsReducedUseTax (20/31/48)</br>EUPurchaseGoodsReduced2UseTax (20/32/48)</br>EUPurchaseServicesStandardUseTax (21/30/48)</br>EUPurchaseServicesReducedUseTax (21/31/48)</br>EUPurchaseServicesReduced2UseTax (21/32/48) </br>PurchaseServicesOutsideEUStandardUseTax (22/30/48)</br>PurchaseServicesOutsideEUReducedUseTax (22/31/48)</br>PurchaseServicesOutsideEUReduced2UseTax (22/32/48) </br>PurchaseGoodsDomesticRCStandardUseTax (23/30/48)</br>PurchaseGoodsDomesticRCReducedUseTax (23/31/48)</br>PurchaseGoodsDomesticRCReduced2UseTax (23/32/48) </br>OtherPurchaseGoodsRCStandardUseTax (24/30/48)</br>OtherPurchaseGoodsRCReducedUseTax (24/31/48)</br>OtherPurchaseGoodsRCReduced2UseTax (24/32/48)</br>ImportStandardUseTax (50/60/48)</br>ImportReducedUseTax (50/61/48)</br>ImportReduced2UseTax (50/62/48) |
 
 ### Purchase reverse charge VAT
 
@@ -284,8 +281,9 @@ The following procedure applies to the example electronic message processing tha
     > [!NOTE]
     > You may need to manually add the following line to the generated file before you upload the file to the government portal. It should be the second line in the file: 
     >
-    >  &lt;!DOCTYPE eSKDUpload PUBLIC "-//Skatteverket, Sweden//DTD Skatteverket eSKDUpload-DTD Version 6.0//SV" https://www1.skatteverket.se/demoeskd/eSKDUpload_6p0.dtd&gt;
-    
+    >  ``` text
+    > &lt;!DOCTYPE eSKDUpload PUBLIC "-//Skatteverket, Sweden//DTD Skatteverket eSKDUpload-DTD Version 6.0//SV" https://www1.skatteverket.se/demoeskd/eSKDUpload_6p0.dtd&gt;
+    >  ```
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a>Run a VAT declaration for multiple legal entities
 

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up work cycles and work periods
-description: This article explains how to set up work cycles and work periods.
+description: Learn about how to set up work cycles and work periods, including prerequisites and an outline on how to assign work cycles to positions.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollWorkCycle
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 222654
-ms.assetid: 0411cb4d-f83a-4c0f-b8a3-9ba152b66e0d
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollWorkCycle
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 0411cb4d-f83a-4c0f-b8a3-9ba152b66e0d
 ---
 
 # Set up work cycles and work periods

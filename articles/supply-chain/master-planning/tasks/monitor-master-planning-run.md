@@ -1,27 +1,12 @@
 --- 
-# required metadata 
- 
 title: Monitor a master planning run
 description: This article explains how the production planner can see whether a master planning run is in progress. 
 author: t-benebo
 ms.date: 11/04/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
-audience: Application User 
-# ms.devlang:  
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Monitor a master planning run

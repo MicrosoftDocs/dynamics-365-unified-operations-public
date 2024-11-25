@@ -1,13 +1,13 @@
 ---
 title: SysSetupConfigAttribute attribute
-description: This article describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
+description: Learn about how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
 author: josaw1
-ms.date: 06/03/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: najaidee
+ms.topic: article
+ms.date: 06/03/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: AX 10.0.0
 ---

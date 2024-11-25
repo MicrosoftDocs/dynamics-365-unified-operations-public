@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00006 01 Set up GST relief clauses
-description: After you complete these procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. 
+description: Learn about setting up GST relief causes, including step-by-step processes for creating relief categories using the MYMF demo data company.
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak    
+audience: Application User  
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00006 01 Set up GST relief clauses
 
 [!include [banner](../../includes/banner.md)]

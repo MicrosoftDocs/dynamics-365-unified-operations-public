@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Qualified Invoice System in Japan
-description: This article provides information about the Qualified Invoice System, which will be required in Japan as of October 1, 2023.
-author: ankviklis
-ms.date: 08/28/2023
+description: Learn about the Qualified Invoice System, which will be required in Japan as of October 1, 2023, including a process for setting up a QII registration number.
+author: prabhatb
+ms.author: prabhatb
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
+ms.date: 08/28/2023
+ms.reviewer: johnmichalak
+audience: Application User 
 ms.search.region: Japan
-# ms.search.industry: 
-ms.author: ankviklis 
 ms.search.validFrom: 2023-08-11
+ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 ms.dyn365.ops.version: 10.0.34
-
+ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 ---
 
 # Qualified Invoice System in Japan

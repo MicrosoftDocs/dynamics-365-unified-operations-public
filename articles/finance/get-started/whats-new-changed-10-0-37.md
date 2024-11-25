@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.37 (November 2023)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.37 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.37 preview release distributed in November 2023.
 author: twheeloc
-ms.date: 08/28/2023
-ms.topic: faq
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: faq
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 07/22/2024
+ms.reviewer: twheeloc
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.37
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.37 (November 2023)
@@ -67,7 +54,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md)
+Dynamics 365 Finance version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md)
 
 ### Bug fixes
 

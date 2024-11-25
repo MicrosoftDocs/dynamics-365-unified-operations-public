@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Reassign activities 
-description: This article describes how to reassign service activities from one worker to another worker.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to reassign service activities from one worker to another worker, including a step-by-step process for reassigning activities.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMADispatchBoard
 ---
 
 
@@ -52,7 +36,7 @@ Use the following steps to reassign an activity to another worker:
     
       - On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.
 
-## See also
+## Related information
 
 [Service activities](service-activities.md)
 

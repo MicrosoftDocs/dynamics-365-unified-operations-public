@@ -2,12 +2,12 @@
 title: Dynamics 365 Commerce troubleshooting and FAQs
 description: This article provides links to troubleshooting resources and frequently asked question articles for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/15/2023
+ms.date: 09/11/2024
 ms.topic: overview
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2022-07-12
 
 ---
@@ -52,13 +52,13 @@ The following FAQ articles discuss issues related to the platform shared by all 
 - [Go-live for implementation projects FAQ](../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md)
 - [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
 - [Open in Excel experiences FAQ](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md)
-- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md)
+- [Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md)
 - [Workflow FAQ](../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md)
 
 ## Other support resources
 
 The following Microsoft support and community resources are also available, where you can discuss and solve issues, browse Blogs, request features, and more:
 
-- [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
-- [Dynamics 365 Community](https://community.dynamics.com/)
-- [Dynamics 365 support](https://dynamics-int.microsoft.com/support/)
+[Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
+
+[Dynamics 365 Community](https://community.dynamics.com/)

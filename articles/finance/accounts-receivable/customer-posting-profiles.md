@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Customer posting profiles
-description: This article describes customer posting profiles, which control the posting of customer transactions to the general ledger.
+description: Learn about customer posting profiles, which control the posting of customer transactions to the general ledger.
 author: JodiChristiansen
-ms.date: 11/21/2022
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPosting, CustVendExternalItem
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/21/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustPosting, CustVendExternalItem
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
 # Customer posting profiles

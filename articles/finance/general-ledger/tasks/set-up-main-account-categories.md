@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up main account categories
-description: This article explains how to set up main account categories in Dynamics 365 Finance. 
+description: Learn how to set up main account categories in Dynamics 365 Finance, including outlines on creating a main account category and link main accounts. 
 author: aprilolson
-ms.date: 03/23/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: MainAccountCategory, MainAccountCategoryLink   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/18/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: MainAccountCategory, MainAccountCategoryLink
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up main account categories
 
 [!include [banner](../../includes/banner.md)]
@@ -35,7 +26,7 @@ When defining the main account category, consider the most detailed grouping lev
 >The **Main account type** determines the general classification of an account, such as Balance Sheet, Profit & Loss, Asset, or Liability. In contrast, the **Main account category** provides a more detailed grouping for accounts within these classifications.
 
 ## Create a main account category
-1. In the navigation pane, go to **Modules > General Ledger > Chart of accounts > Accounts > Main account categories**.
+1. Go to **General Ledger > Chart of accounts > Accounts > Main account categories**.
 2. Select **New**.
 3. In the **Main account category** field, enter a unique name.
 4. In the **Description field**, enter a description for the main account category.

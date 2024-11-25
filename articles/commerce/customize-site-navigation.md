@@ -2,19 +2,15 @@
 title: Customize site navigation
 description: This article describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
-ms.date: 01/03/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: StuHarg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
-
+  - bap-template
 ---
 # Customize site navigation
 

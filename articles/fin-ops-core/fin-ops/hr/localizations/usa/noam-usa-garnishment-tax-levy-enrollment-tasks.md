@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Enroll workers in garnishments or tax levies
-description: This article describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
+description: Learn about the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
 author: twheeloc
-ms.date: 04/01/2020
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/01/2020
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221194
-ms.assetid: f734d55a-304c-4e49-b437-6fa34c30b5ca
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: f734d55a-304c-4e49-b437-6fa34c30b5ca
 ---
 
 # Enroll workers in garnishments or tax levies

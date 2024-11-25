@@ -4,21 +4,23 @@
 title: POS user interface visual configurations
 description: This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
-ms.date: 02/03/2023
-ms.topic: article
+ms.date: 10/29/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: Global
-ms.author: boycez
+ms.author: chuzheng
 ms.search.validFrom: 2016-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # POS user interface visual configurations
 
 [!include [banner](includes/banner.md)]
 
+This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 
 The user interface (UI) of the Microsoft Dynamics 365 Commerce point of sale (POS) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This article provides information about those configuration options.
 
@@ -90,6 +92,9 @@ At startup, the POS application automatically selects the closest layout size th
     - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels. Certain operations that need higher screen resolutions such as reports and inventory management aren't supported in the compact layout. 
 
 - **Width/Height** – These values represent the effective screen size, in pixels, that is expected for the layout. Remember that some operating systems use scaling for high-resolution displays.
+
+> [!NOTE]
+> The minimum resolution supported for full-size layouts is 1024x768. Any layout using a resolution below that threshold generates a compact layout.
 
 > [!TIP]
 > You can learn the layout size that is required for a POS screen by viewing the resolution in the app. Start the POS, and go to **Settings \> Session information**. POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Set up a preferred technician   
-description: You can select any worker as a preferred technician for a service agreement or service order. 
-author: sorenva
-ms.date: 05/01/2018
+description: You can select any worker as a preferred technician for a service agreement or service order. Learn how to set up preferred technicians. 
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable, SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAAgreementTable, SMADispatchBoard
 ---
 
 
@@ -60,13 +44,12 @@ You can select any worker as a preferred technician for a service agreement or s
 
 3.  On the **Related** tab, use the **Worker** list to assign a member of the appropriate dispatch team as the preferred technician for the service call.
 
-## See also
+## Related information
 
 [Develop and establish service agreements overview](service-agreements.md)
 
 [Create service orders manually](create-service-orders-manually.md)
 
-[Service agreements (form)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))
   
 
 

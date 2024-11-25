@@ -1,18 +1,15 @@
 ---
 title: Compatibility checker tool
-description: This article provides information about the compatibility checker tool, which finds and reports metadata breaking changes.
+description: Learn about the compatibility checker tool, which finds and reports metadata breaking changes, including an overview of what the tool detects.
 author: smithanataraj
-ms.date: 03/26/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: smnatara
+ms.topic: article
+ms.date: 03/26/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.assetid: 
 ---
 
 # Compatibility checker tool

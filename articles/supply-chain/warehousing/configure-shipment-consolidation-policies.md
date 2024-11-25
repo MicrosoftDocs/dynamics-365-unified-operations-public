@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Configure shipment consolidation policies
-description: This article explains how to set up default and custom shipment consolidation policies.
+description: Learn how to set up default and custom shipment consolidation policies with an outline on turning on the Shipment consolidation policies feature.
 author: Mirzaab
-ms.date: 09/07/2022
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
-ms.search.validFrom: 2020-05-01
-ms.dyn365.ops.version: 10.0.3
+ms.topic: article
+ms.date: 09/07/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSOutboundLoadPlanningWorkbench
 ---
 
 # Configure shipment consolidation policies
@@ -317,12 +302,12 @@ The following scenarios illustrate how you could use the shipment consolidation 
 
 - Scenario 1: [Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders](../warehousing/consolidate-shipments-automatic.md)
 - Scenario 2: [Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page](../warehousing/consolidate-shipments-release-to-warehouse-override.md)
-- Scenario 3: [Consolidate shipments by using Release to warehouse from the load planning workbench](../warehousing/consolidate-shipments-load-planning-workbench.md)
+- Scenario 3: [Consolidate shipments by releasing to warehouse from the outbound load planning workbench](../warehousing/consolidate-shipments-load-planning-workbench.md)
 - Scenario 4: [Consolidate shipments by using the shipment consolidation workbench](../warehousing/consolidate-shipments-manual-workbench.md)
 - Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
 
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 

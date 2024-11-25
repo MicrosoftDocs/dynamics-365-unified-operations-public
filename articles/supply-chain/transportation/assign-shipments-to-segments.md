@@ -1,29 +1,29 @@
 ---
 title: Assign shipments to related route segments
-description: This article describes how the system apportions freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process.
-author: Weijiesa
-ms.author: weijiesa
+description: Learnhow to configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 01/17/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
-ms.date: 04/20/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Assign shipments to related route segments
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how the system apportions freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process.
+This article describes how to configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process. It also describes how this feature works.
 
-## Prerequisites
+## Enable the feature
 
-To use this feature, your system must meet the following requirements:
+To configure the system to apportion freight costs for multi-segment scheduled routes, follow these steps:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.33 or later.
-- The feature that's named *Assign shipments to related route segments* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Go to **Transportation management \> Setup \> Transportation management parameters**.
+1. Open the **General** tab.
+1. On the **Shipment** FastTab, set **Assign shipment to related route segments** to *Yes*.
+1. On the Action Pane, select **Save**.
 
 ## How shipments are assigned to route segments
 

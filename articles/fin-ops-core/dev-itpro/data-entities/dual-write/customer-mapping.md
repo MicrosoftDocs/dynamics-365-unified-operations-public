@@ -1,13 +1,13 @@
 ---
 title: Integrated customer master
-description: This article describes the integration of customer data between finance and operations and Dataverse.
+description: Learn about the integration of customer data between finance and operations and Dataverse, including a table providing various templates.
 author: RamaKrishnamoorthy
-ms.date: 07/15/2019
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 07/15/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2019-07-15
 ---
 

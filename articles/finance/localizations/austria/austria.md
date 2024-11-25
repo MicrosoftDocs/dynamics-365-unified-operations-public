@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Austria overview
-description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Austria.
+description: Access an overview of Dynamics 365 Finance functionality that is specific to Austria, including overviews on depreciation, material fees, and purchase duties.
 author: kfend
-ms.date: 03/04/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: Austria
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 03/04/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Austria overview
@@ -69,7 +58,7 @@ Find more details about new design of VAT declaration U30 for Austria in [VAT de
 
 ## Additional resources
 
-- [Microsoft Dynamics Localization Portal: Austria report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Austria.html)
+<!-- - [Microsoft Dynamics Localization Portal: Austria report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Austria.html) -->
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

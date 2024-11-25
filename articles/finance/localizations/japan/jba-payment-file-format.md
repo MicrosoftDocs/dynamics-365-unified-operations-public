@@ -1,21 +1,20 @@
 ---
 title: Enable the JBA payment file format
-description: In Japan, the Japanese Bankers Association (JBA) has specified a file format for electronic fund transfers (EFT).
+description: Learn about enabling the Japanese Bankers Association payment file format, with a step-by-step process for importing JBA payment models.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
   - VendPaymMode
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Enable the JBA payment file format
 
 [!include [banner](../../includes/banner.md)]

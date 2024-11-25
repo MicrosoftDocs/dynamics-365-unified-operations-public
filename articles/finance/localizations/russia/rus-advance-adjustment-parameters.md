@@ -1,20 +1,16 @@
 ---
 title: Revaluate foreign currency for advance holders (Russia)
-description: This article provides information about foreign currency revaluation for advance holders in Russia.
-author: mrolecki
-ms.date: 09/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about foreign currency revaluation for advance holders in Russia, including a step-by-step process for setting up advance adjustment parameters.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: mrolecki
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
 # Revaluate foreign currency for advance holders (Russia)

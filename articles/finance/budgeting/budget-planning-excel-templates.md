@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Budget planning templates for Excel
-description: This article describes how to create Microsoft Excel templates that can be used with budget plans.
-author: panolte
-ms.date: 01/12/2018
+description: Learn how to create Microsoft Excel templates that can be used with budget plans, including outlines on creating document layouts and template tables.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetPlanSetLayout
-# ROBOTS: 
+ms.date: 03/12/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261794
-ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: BudgetPlanSetLayout
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ---
 
 # Budget planning templates for Excel
@@ -112,7 +100,6 @@ Yes, open the **Data Connector** options to hide the **Design** option from othe
 
 Expand **Data connector options** and clear the **Enable design** check box. This will hide the **Design** option from the **Data connector**.
 
-[![Hide Design option from Data connector.](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
 ### Can I prevent users from accidently closing the Data connector while working with data?
 

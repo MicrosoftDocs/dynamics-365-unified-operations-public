@@ -1,15 +1,14 @@
 ---
 title: Cash - Local primary forms and unified reports
-description: This article provides information about cash transaction reports that are available for companies with Russian context.
-author: AdamTrukawka
-ms.date: 11/13/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about cash transaction reports that are available for companies with Russian context, including an outline on preliminary setup.
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 ---

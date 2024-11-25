@@ -1,12 +1,13 @@
 ---
 title: Lookup module
-description: A lookup is an input control that is used to select an input from a list of options.
+description: Learn about the Lookup module, a lookup is an input control that is used to select an input from a list of options.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Lookup module

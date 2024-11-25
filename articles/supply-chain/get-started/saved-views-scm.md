@@ -1,29 +1,14 @@
 ---
-# required metadata
-
 title: Standard saved views for Supply Chain Management
-description: This article describes the standard saved views that are available and explains how to enable them.
+description: Learn about the standard saved views that are available and explains how to enable them with an outline on customizing the standard saved views.
 author: kamaybac
-ms.date: 08/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2021-02-03 
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Standard saved views for Supply Chain Management
@@ -77,10 +62,10 @@ The following table describes the saved views available for the Procurement and 
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Purchase order details | Order creation | This simplified view is optimized for creating new purchase orders. | Saved views for purchase orders<br><br>On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
-| Purchase order details | Inventory management | This simplified view is optimized for performing inventory-related activities, such as following up on inventory that has been received, receiving inventory, checking net requirements, and adjusting order quantities. | Saved views for purchase orders<br><br>On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
-| Purchase order details | Financial management | This simplified view is optimized for performing finance-related activities, such as invoicing and checking prices, totals, and charges. | Saved views for purchase orders<br><br>On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
-| Purchase order details | Order approval | This simplified view is optimized for approving purchase orders. | Saved views for purchase orders<br><br>On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| Purchase order details | Order creation | This simplified view is optimized for creating new purchase orders. | Saved views for purchase orders<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| Purchase order details | Inventory management | This simplified view is optimized for performing inventory-related activities, such as following up on inventory that has been received, receiving inventory, checking net requirements, and adjusting order quantities. | Saved views for purchase orders<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| Purchase order details | Financial management | This simplified view is optimized for performing finance-related activities, such as invoicing and checking prices, totals, and charges. | Saved views for purchase orders<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| Purchase order details | Order approval | This simplified view is optimized for approving purchase orders. | Saved views for purchase orders<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
 
 ## Saved views for the Product information management module
 
@@ -129,6 +114,5 @@ The following table describes the saved views available for the Warehouse manage
 | All waves | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for wave processing<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
 | Load planning workbench | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the load planning workbench<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
 | Work details | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work details page<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

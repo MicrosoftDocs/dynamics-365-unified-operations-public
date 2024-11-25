@@ -1,13 +1,14 @@
 ---
 title: Custom label layouts and printing
-description: This article describes how to set up and print custom labels.
-author: GalynaFedorova
-ms.author: gfedorova
+description: Learn how to set up and print custom labels, including prerequisites and an outline on setting up your system to show print buttons for custom labels.
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
+ms.date: 07/23/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
-ms.topic: how-to
-ms.date: 03/03/2023
-ms.custom: bap-template
 ---
 
 # Custom label layouts and printing
@@ -44,6 +45,9 @@ Follow these steps to define the data source that's used for a custom label and 
     - **Description** – Enter a short description of the data source (for example, *Locations*).
     - **Label layout type** – Select *Custom label*.
     - **Custom label root table** – Select the table that should be used as the main data source for the label (for example, *WMSLocation* to print labels for locations, *InventTable* to print labels for products, or *CustTable* to print labels for customers).
+    - **Join type** – Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there is no data in the related table.
+
+1. On the Action Pane, select **Save**.
 
 1. If you want the custom label to include information from related tables, follow these steps to set up the required joins:
 
@@ -51,7 +55,18 @@ Follow these steps to define the data source that's used for a custom label and 
     1. A standard query editor dialog box appears. On the **Joins** tab, add the required joins to the required tables.
     1. Select **OK** to apply your settings and close the dialog box.
 
-1. On the Action Pane, select **Save**.
+1. If you want to use parameters specified at printing time, follow these steps to set up the parameters:
+
+    1. On the Action Pane, select **Parameters**.
+    1. The **Label layout data source parameters** page opens. Use the Action Pane buttons to add or delete rows as needed. For each parameter, specify the following fields:
+
+        - **Name** – Enter the name of the parameter. This name is used in the label layout to refer to the parameter (for example, *label_quantity*). It can only include letters A-Z (upper and lower case), numbers, and the underscore (_) character.
+        - **Data types** – Specify the type of data the parameter can hold. Currently, only *String* is supported, which means that no special number or date formatting will be available in label layouts when replacing the placeholder with the value. Using the *String* value should not pose any issues with whole numbers, such as quantity of labels printed.
+        - **Display name** – Enter the name that will be shown to the user on the custom label printing dialog (for example, *Quantity of labels*).
+        - **Mandatory** – Specify whether a value must be given for the parameter on the custom label printing dialog.
+        - **Default value** – Enter the value that will be initially presented to the user on the custom label printing dialog (for example, *1*).
+
+    1. Close the page.
 
 ## Create and manage custom label layouts
 
@@ -88,8 +103,11 @@ Follow these steps to create a custom label layout that uses data from a label l
     ^FT230,148^A0N,42,43^FH\^CI28^FD$WMSLocation_1.wMSLocationId$ ^FS^CI27
     ^BY3,3,180^FT116,525^BCN,,Y,N
     ^FH\^FD^FS
-    ^PQ1,0,1,Y^XZ
+    ^PQ$dsparams.label_quantity$^XZ
     ```
+
+    > [!NOTE]
+    > Use `dsparams.parameter-name` to refer to label layout data source parameters.
 
 1. On the Action Pane, select **Save**.
 
@@ -109,10 +127,11 @@ Follow these steps to print a custom label.
 
     - **Label layout ID** – Select the layout that you want to use (for example, *Locations*).
     - **Printer name** – Select the printer that you want to print from.
+    - **Label layout data source parameters** - Specify any parameters defined on the label layout data source (for example, *Quantity of labels*).
 
 1. Select **OK**.
 
-## Additional resources
+## Related information
 
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
 

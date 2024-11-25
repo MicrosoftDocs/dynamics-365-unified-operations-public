@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Use Customer payment predictions
-description: This article walks through the prerequisites and the broad steps that are required to use a trial version of Finance insights.
-author: ShivamPandey-msft
-ms.date: 11/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Access a walkthrough of the prerequisites and the broad steps that are required to use a trial version of Finance insights.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 11/03/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-11-16
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.14
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Use Customer payment predictions
 
 [!include [banner](../includes/banner.md)]

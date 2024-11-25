@@ -1,12 +1,12 @@
 ---
 title: Create customer and vendor records with an address in Costa Rica
-description: This article explains how to set up records for customers and vendors in Costa Rica.
+description: Learn how to set up records for customers and vendors in Costa Rica, including prerequisites and an outline on creating records for customers.
 author: Cpicon85
-ms.date: 10/09/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-cpicon
+ms.topic: article
+ms.date: 10/09/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Create customer and vendor records with an address in Costa Rica

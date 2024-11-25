@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Synchronize products directly from Supply Chain Management to products in Sales
-description: This article discusses the templates and underlying tasks that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
-author: Henrikan
-ms.date: 06/10/2019
+description: Learn about the templates and underlying tasks that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 06/10/2024
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: IT Pro
 ms.search.region: global
-ms.search.industry: 
-ms.author: henrikan
-ms.dyn365.ops.version: July 2017 update 
+ms.dyn365.ops.version: July 2017 update
+ms.search.form: 
 ms.search.validFrom: 2017-07-8
-
 ---
 
 # Synchronize products directly from Supply Chain Management to products in Sales
@@ -41,7 +28,7 @@ This article discusses the templates and underlying tasks that are used to synch
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)](/media/prospect-to-cash-data-flow.png)
+![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 
@@ -107,7 +94,7 @@ The following illustration shows an example of a template mapping in Data integr
 > [!NOTE]
 > The mapping shows which field information will be synchronized from Sales to Supply Chain Management.
 
-![Template mapping in Data integrator.](../../../supply-chain/sales-marketing/media/products-direct-template-mapping-data-integrator-1.png)
+[Template mapping in Data integrator.](../../../supply-chain/sales-marketing/media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## Related articles

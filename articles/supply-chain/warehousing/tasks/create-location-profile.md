@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create a location profile
-description: This article explains how to create a location profile in Dynamics 365 Supply Chain Management. 
+description: Learn how to create a location profile in Dynamics 365 Supply Chain Management, including a step-by-step process using the USMF demo data company. 
 author: Mirzaab
-ms.date: 07/29/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WHSLocationProfile   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 07/29/2019
+ms.custom: 
+ms.reviewer: kamaybac 
+ms.search.form: WHSLocationProfile
 ---
+
 # Create a location profile
 
 [!include [banner](../../includes/banner.md)]

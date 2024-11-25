@@ -1,13 +1,13 @@
 ---
 title: Considerations for initial synchronization
-description: This article provides information about constraints, known issues, and guidance for the initial synchronization of dual-write.
+description: Learn about cosniderations, constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 10/10/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 10/10/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,52 +1,40 @@
 ---
-# required metadata
-
 title: Accounting distributions and journal entries for vendor invoices
-description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
+description: Learn about accounting distributions, which are used to define how an amount will be accounted for on vendor invoices.
 author: sunfzam
-ms.date: 08/15/2023
+ms.author: Raynezou
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendEditInvoice
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 12/15/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendEditInvoice
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ---
 
 # Accounting distributions and journal entries for vendor invoices
 
 [!include [banner](../includes/banner.md)]
 
-Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
+Accounting distributions are used to define how an amount, the expense, tax, or charges are accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized has one or more accounting distributions. 
 
 ## Accounting distributions 
 
 You can use the following buttons in the Vendor invoice page to view, and possibly modify, the accounting distributions for each amount on the vendor invoice.
--   **Distribute amounts** – View and modify the accounting distributions for an individual line and any child lines, such as taxes or charges. You can also view and modify the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
+-   **Distribute amounts** – View and modify the accounting distributions for an individual line and any child lines. You can view and modify the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
     -   Modify vendor invoice header amounts, such as charges or currency rounding amounts.
     -   Modify vendor invoice line amounts.
--   **View distributions** – View the accounting distributions for all lines on the document. You cannot modify the accounting distributions from this view.
+-   **View distributions** – View the accounting distributions for all lines on the document. You can't modify the accounting distributions from this view.
     -   View header and line amounts.
 
-If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that is not stocked. If the vendor invoice line does not reference a purchase order line, you can also delete an accounting distribution. You cannot split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you cannot change the amounts or percentages.
+If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that's not stocked. If the vendor invoice line doesn't reference a purchase order line, you can delete an accounting distribution. You can't split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you can't change the amounts or percentages.
 > [!NOTE]                                                                                                                                 
-> If the parent line contains an item that is not stocked and the accounting distributions are split, the child line will be split automatically to match the financial dimensions of the parent line. The accounting distributions for the child line cannot be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
+> If the parent line contains an item that's not stocked and the accounting distributions are split, the child line is automatically split to match the financial dimensions of the parent line. The accounting distributions for the child line can't be additionally split or deleted. Depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
 
 ## Distributing amounts
-When you enter a vendor invoice, each amount will be distributed as follows.
+When you enter a vendor invoice, each amount is distributed as follows.
 
 <table>
 <colgroup>
@@ -232,7 +220,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 
 ## Distributing taxes
 
-Accounting distributions for taxes cannot be created until taxes are calculated. To calculate sales taxes, you must complete one of the following tasks on the **Vendor invoice** page:
+Accounting distributions for taxes can't be created until taxes are calculated. To calculate sales taxes, complete one of the following tasks on the **Vendor invoice** page:
 -   View the invoice total.
 -   View the sales tax.
 -   View the subledger journal.
@@ -240,12 +228,30 @@ Accounting distributions for taxes cannot be created until taxes are calculated.
 -   Place the vendor invoice on hold.
 -   Post the vendor invoice.
 
+## Post document with distribution process splitting
+When processing long invoice documents, memory usage can be optimized by activating the **Batch processing** feature. 
+1. To enable this feature, go to **Pending vendor invoice list**.
+2. Select **Process > Setup > Batch**.
+3. After clicking **"Post"**, the **"Post document with distribution process splitting"** post job is triggered. This process is enabled when the **Enable vendor invoice posting to split distribution steps** feature is activated.
+
 ## Subledger journals for vendor invoices
-Before you post a vendor invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. 
+Before you post a vendor invoice, view the full accounting entry of the invoice, which includes debits, and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. 
 
-If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you cannot modify the subledger journal entry. Instead, you must modify the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit or the credit. The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.
+If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you can't modify the subledger journal entry. Instead, modify the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit, or the credit. The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.
 
+## Split vendor invoice posting 
 
+During the posting of pending vendor invoices, the posting process involves a substantial transaction flowing into the source document account framework first and the General ledger subsequently. When the invoice data flows into the source document account framework, massive derivations and validations are applied before the subledger is updated. A performance and memory overflow issue might occur with invoices that contain a lot of lines.
+
+The **Enable the vendor invoice to be posted in two stages** feature creates two batches for pending vendor invoice posting. The first batch posts uses the original invoice posting except creating the subledger journals. The second batch posting creates subledger journals to generate accounting. After the second batch is posted, transferring the subledger to general ledger can be done. This reduces the likelihood of memory overflow and enhance overall performance when the invoice contains thousands of lines. When posting pending vendor invoices has dependencies on other modules or subsequent processes, the original invoice posting process is used.
+
+The following situations use the original posting process:
+- Prepayment invoice posting
+- Invoice posting with prepayment application
+- Invoice posting with budget control enabled
+- Project invoice posting
+- PO/invoice with Terms of payment of Cash (Beginning in Dynamics 365 Finance version 10.0.39)
+- Invoice posting with Accounts payable parameter auto-settlement enabled (Beginning in Dynamics 365 Finance version 10.0.39)
 
 
 

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Database movement API - Reference - v1 - Overview
-description: This article provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
+description: Learn about a reference for version 1 (v1) of the Database Movement application programming interface (API) via an overview.
 author: laneswenka
-ms.date: 09/30/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: overview
+ms.date: 09/30/2020
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.0
-
 ---
 
 # API v1 reference overview

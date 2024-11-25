@@ -1,15 +1,13 @@
 ---
 title: Egypt overview
-description: This article provides an overview of functionality specific to Egypt.
+description: Learn about functionality specific to Egypt and access information and links to documentation resources for Egypt, incluing resources about invoices.
 author: mrolecki
-ms.date: 09/15/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Egypt
 ms.author: mrolecki
+ms.topic: overview
+ms.date: 09/15/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Egypt
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
 ---

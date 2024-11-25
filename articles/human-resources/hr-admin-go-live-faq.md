@@ -7,9 +7,6 @@ description: This article lists frequently asked questions about how to go live 
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -18,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Go-live FAQ 
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

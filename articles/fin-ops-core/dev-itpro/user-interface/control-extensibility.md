@@ -1,15 +1,13 @@
 ---
 title: Control extensibility
-description: This article describes the architecture that lets developers extend the user interface and also define new user interface patterns.
+description: Learn about control extensibility, an architecture that lets developers extend the user interface and define new interface patterns.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413

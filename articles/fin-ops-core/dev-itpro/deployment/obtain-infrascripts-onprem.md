@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment
-description: This article explains how to download or update the infrastructure scripts from one version to another.
+description: Learn about optaining, downloading, or updating infrastructure scripts for finance and operations apps for on-premises deployment.
 author: faix
-ms.date: 1/11/2023
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024 
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom:
 ms.dyn365.ops.version: 
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment

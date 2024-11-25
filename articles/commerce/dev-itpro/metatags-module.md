@@ -2,18 +2,15 @@
 title: Metatags module
 description: This article covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Metatags module

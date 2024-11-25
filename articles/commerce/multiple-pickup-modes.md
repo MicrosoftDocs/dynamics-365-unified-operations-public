@@ -4,30 +4,18 @@
 title: Enable multiple pickup delivery modes for customer orders
 description: This article explains the functionality in Microsoft Dynamics 365 Commerce that lets you create customer orders for pickup at a store.
 author: hhainesms
-ms.date: 12/06/2022
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom:
-ms.search.region: global
-# ms.search.industry:
-ms.author: hhaines
-ms.search.validFrom:
-ms.dyn365.ops.version: 10.0.16
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
+ms.search.validFrom: 2019-06-30
 ---
 
 # Enable multiple pickup delivery modes for customer orders
 
 [!include [banner](includes/banner.md)]
-
 
 In Microsoft Dynamics 365 Commerce, organizations can define multiple modes of delivery that shoppers or sales associates can choose among when they create an order that will be picked up at a store. In this way, organizations can provide multiple pickup options to their shoppers. For example, many retailers now offer shoppers the choice of in-store pickup or curbside pickup for their orders. Commerce supports the configuration of these different pickup delivery modes. Users can then take advantage of them when they create customer orders in any supported Commerce channel (e-commerce, call center, or store).
 

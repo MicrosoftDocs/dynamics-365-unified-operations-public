@@ -1,23 +1,22 @@
 ---
-title: Cash register functionality for France
+title: Cash register functionality for France (preview)
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 06/11/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 10/25/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: France
-ms.author: josaw
+ms.author: ritakimani
 ms.search.validFrom: 2018-02-28
-ms.dyn365.ops.version: 7.3.2
-ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+ms.custom: 
+  - bap-template
 ---
-# Cash register functionality for France
+# Cash register functionality for France (preview)
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [banner](../../../finance/includes/preview-banner.md)]
 
 This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
@@ -25,7 +24,7 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.27**):
+- **Microsoft Dynamics 365 Commerce, version 10.0** (the most recent audited version is **10.0.40**):
 
     - Certificate category: B
     - Certificate number: 0498
@@ -116,9 +115,8 @@ The signature is created and recorded in the channel database at the same time t
 1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Commerce headquarters, together with the transaction or event.
 
 > [!NOTE]
-> The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
->
-> You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
+> - The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
+> - You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 256-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
 ### Digital signing of sales and return transactions
 
@@ -208,18 +206,18 @@ You can view the event signature, together with the event data that was used to 
 
 Receipts for France can include additional information that was implemented by using custom fields:
 
-- **Transaction type** – You can add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
-- **Sequential number of signed sales transaction** – A receipt can include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
-- **Extract from digital signature** – A receipt can include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+- **Transaction type** – You should add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
+- **Sequential number of signed sales transaction** – A receipt should include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
+- **Extract from digital signature** – A receipt should include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
 - Information about a receipt copy:
 
-    - **Reprint message** – A receipt copy can include a "Copy" caption.
+    - **Reprint message** – A receipt copy should include a "Copy" caption.
     - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
     - **Reprint date** – A receipt copy can include the date of the copy.
     - **Reprint time** – A receipt copy can include the time of the copy in either the 12-hour format or the 24-hour format.
     - **Reprint signature** – A receipt copy can include an extract from the digital signature of the copy.
 
-- **Line count** – A receipt can include the number of printed item lines on the receipt.
+- **Line count** – A receipt should include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
 
     - Prepayments (customer account deposits)
@@ -227,8 +225,8 @@ Receipts for France can include additional information that was implemented by u
     - Issuing a gift card
     - Adding funds to a gift card
 
-- **Certification data** – A receipt can include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-- **Software version** – A receipt can include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
+- **Certification data** – A receipt should include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+- **Software version** – A receipt should include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
 
 ### Restricting the duration of shifts
 
@@ -393,6 +391,7 @@ On the **Language text** page, add the following records for the labels of the c
 | en-US       | 900013  | Reprint time 12H          |
 | en-US       | 900014  | Reprint time 24H          |
 | en-US       | 900015  | Reprint digital signature |
+| en-US       | 900016  | Software version          |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
@@ -413,10 +412,11 @@ On the **Custom fields** page, add the following records for the custom fields f
 | REPRINTTIME12H_FR               | Receipt | 900013          |
 | REPRINTTIME24H_FR               | Receipt | 900014          |
 | REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
+| SOFTWAREVERSION_FR              | Receipt | 900016          |
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+NF 525 compliance requires that receipts shouldn't be printed by default and should only be printed by customer request. To comply with this requirement, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -434,6 +434,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Footer:** Add the following fields:
 
     - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+    - **Sum All Discounts** – This field prints the receipt's total discount.
     - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
     - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
     - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
@@ -446,7 +447,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
     - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
-    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
+    - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
@@ -524,15 +525,15 @@ Depending on your purposes, you can download the ER configurations for the Z rep
 
 You must download the following versions (or later versions) of the configurations:
 
-- **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.3** data model mapping
-- **Retail Z-Report (FR).version.24.23.3** format
-- **Retail data archive (FR).version.2.5** format
+- **Retail channel data.version.24** data model
+- **Archiving DMM.version.24.97** data model mapping
+- **Retail Z-Report (FR).version.24.24.4** format
+- **Retail data archive (FR).version.24.24** format
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
-- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
+- **Z-Report export format** – Select the **Retail Z-Report (FR)** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR)** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 

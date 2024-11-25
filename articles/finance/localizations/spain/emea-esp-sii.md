@@ -1,17 +1,14 @@
 ---
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
-description: This article describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
-author: AdamTrukawka
-ms.date: 11/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Spain
-ms.author: atrukawk
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+description: Learn about how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain, including an outline on importing ER configurations.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 11/19/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
@@ -20,7 +17,7 @@ ms.dyn365.ops.version: 7.3
 
 According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this article, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
 
-For more information about the SII system of Spain, see the [Immediate Supply of Information on VAT (SII) official website](https://www.agenciatributaria.es/AEAT.internet/en_gb/Inicio/La_Agencia_Tributaria/Campanas/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_.shtml).
+For more information about the SII system of Spain, see the [Immediate Supply of Information on VAT (SII) official website](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html).
 
 ## Overview
 
@@ -78,7 +75,7 @@ Electronic message functionality is provided to maintain the different processes
 The process of setting up the electronic message functionality to interoperate with the SII system has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables, and that you import the ER configurations before you import the data entities.
 
 1.  In [Microsoft Dynamics Lifecycle Service (LCS)](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type.
-2.  In the list of data package files, find and download **ES SII setup.zip**.
+2.  In the list of data package files, find and download the latest version of the **ES SII setup** zip archive. For example, it's titled **ES SII setup v13 ID671842** as of November, 2024.
 
 ![LCS Shared asset library.](../media/emea-esp-sii-data-package-file.png)
 
@@ -148,7 +145,7 @@ For more information about how to set up Key Vault, see [Setting up Azure Key Va
 | Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
 | CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
 
-Internet addresses are subject to change by AEAT. Therefore, we recommend that you check for actual internet addresses on the [official website of the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html). The official documentation also has information about the actual *production* internet addresses that you should set up.
+Internet addresses are subject to change by AEAT. Therefore, we recommend that you check for actual internet addresses on the [official website of the SII system](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html). The official documentation also has information about the actual *production* internet addresses that you should set up.
 
 6.  On the **General** tab, in the **Key vault certificate** field, select the security certificate that you set up for all web services that you will use for interoperation with the SII system: **Cust invoice**, **Vend invoice**, **Intra-community**, **Cust payment**, **Vend payment**, and **CollectionInCash**.
 
@@ -211,7 +208,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](../global/g
    | CUSTOMER INVOICE JOURNAL      | This datasource populates data from the **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
    | VENDOR INVOICE JOURNAL        | This datasource populates data from the **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to the SII system of Spain. |
    | PROJECT INVOICE               | This datasource populates data from the **Project invoice** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
-   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this article. |
+   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) service and enabled the **Support multiple VAT registration numbers** parameter in the **Tax calculation parameters** page. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this article. |
 
 5.  Select **OK** to initiate the executable class.
 
@@ -250,7 +247,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](../global/g
 
 ## Set up additional fields and automatically defined rules
 
-EM items have additional fields that are included in the two types of electronic message processing (**SII** and **CollectionInCash**) that are used to interoperate with the SII system and imported into the system by using a package of data entities. Additional fields are associated with EM items and are required for their processing. The system automatically sets values for additional fields when actions are run, but you can manually set and adjust the values of additional fields before you submit the information to the SII system. Additional fields are named according to related elements of the report. For more information about what each related report element is, see the [official documentation for the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+EM items have additional fields that are included in the two types of electronic message processing (**SII** and **CollectionInCash**) that are used to interoperate with the SII system and imported into the system by using a package of data entities. Additional fields are associated with EM items and are required for their processing. The system automatically sets values for additional fields when actions are run, but you can manually set and adjust the values of additional fields before you submit the information to the SII system. Additional fields are named according to related elements of the report. For more information about what each related report element is, see the [official documentation for the SII system](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html).
 
 | **Additional field**               | **Description**                | **Type of processing where the field is used**                                                                                                                                                 | **Action/executable class that the field is set by**                                                                                                                                                                                                                                                               |
 |------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -270,7 +267,7 @@ EM items have additional fields that are included in the two types of electronic
 
 ### Algorithm to define the value of the TipoComunicacion (Communication type) additional field
 
-The **TipoComunicacion** (**Communication type**) additional field is automatically defined by the system for message items of the **FacturasСliente**, **FacturasProveedores**, **OperacionesIntracomunitarias**, and **CobrosEnMetálico** types. For a list of values that can be assigned to **TipoComunicacion**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **TipoComunicacion** (**Communication type**) additional field is automatically defined by the system for message items of the **FacturasСliente**, **FacturasProveedores**, **OperacionesIntracomunitarias**, and **CobrosEnMetálico** types. For a list of values that can be assigned to **TipoComunicacion**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 The following values are available for the **TipoComunicacion** additional field as part of the predefined setup for electronic messages.
 
@@ -291,7 +288,7 @@ For counterparties from EU or outside of the EU, **ID** additionally field will 
 
 ### Algorithm to define the IDType (Counterparty ID type) additional field
 
-The **IDType** (**Counterparty ID type**) additional field is automatically defined by the system for EM items of all types during the evaluation of additional fields. For the list of values that can be set for **IDType**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **IDType** (**Counterparty ID type**) additional field is automatically defined by the system for EM items of all types during the evaluation of additional fields. For the list of values that can be set for **IDType**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 The following values are available for the **IDType** additional field as part of the predefined setup for electronic messages.
 
@@ -368,7 +365,7 @@ The **NumSerieFactura** (**Summary reference**) additional field is automaticall
 
 ### Algorithm to define the TipoFactura (Invoice type) additional field
 
-The **TipoFactura** (**Invoice type**) additional field is automatically defined by the system for EM items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **TipoFactura**, see the [official documentation for the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+The **TipoFactura** (**Invoice type**) additional field is automatically defined by the system for EM items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **TipoFactura**, see the [official documentation for the SII system](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html).
 
 The following values are available for the **TipoFactura** additional field as part of the predefined setup for electronic messages.
 
@@ -449,7 +446,7 @@ To report a credit note with an **I** value in the **TipoRectificativa** tag, be
 
 ### Algorithm to define the TipoOperacion (Intra-community operation type) additional field
 
-The **TipoOperacion** (**Intra-community operation type**) additional field is automatically defined by the system for EM items of the **OperacionesIntracomunitarias** type. For the list of values that can be set for **TipoOperacion**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **TipoOperacion** (**Intra-community operation type**) additional field is automatically defined by the system for EM items of the **OperacionesIntracomunitarias** type. For the list of values that can be set for **TipoOperacion**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 The following values are available for the **TipoOperacion** additional field as a part of the predefined setup of electronic messages.
 
@@ -476,7 +473,7 @@ To enable the system to define the intra-community operation type based on the s
 
 ### Set up automatically defined rules for the ClaveRegimenEspecialOTrascendencia (Special scheme code) additional field
 
-The **ClaveRegimenEspecialOTrascendencia** (**Special scheme code**) additional field is automatically defined by the system for message items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **ClaveRegimenEspecialOTrascendencia**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **ClaveRegimenEspecialOTrascendencia** (**Special scheme code**) additional field is automatically defined by the system for message items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **ClaveRegimenEspecialOTrascendencia**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 According to the official documentation for the SII system, the following values are available for the **ClaveRegimenEspecialOTrascendencia** additional field as part of the predefined setup of electronic messages.
 

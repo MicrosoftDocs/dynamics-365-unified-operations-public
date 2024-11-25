@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create an operating unit
-description: An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business. 
+description: Learn how to create an operating unit, an organization that is used to divide the control of economic resources and operational processes in a business. 
 author: sericks007
-ms.date: 08/14/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: OMOperatingUnit, OMInternalOrganizationSelector   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/14/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: OMOperatingUnit, OMInternalOrganizationSelector   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create an operating unit
 
 [!include [banner](../../includes/banner.md)]

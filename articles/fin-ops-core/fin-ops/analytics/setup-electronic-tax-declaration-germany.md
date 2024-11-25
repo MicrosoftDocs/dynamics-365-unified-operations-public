@@ -1,18 +1,16 @@
 ---
 title: Set up electronic Tax declaration for Germany
-description: This article explains how to set up electronic tax declaration.
+description: Learn about how to set up electronic tax declaration for Germany, including a step-by-step procedure that outlines the process.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Germany
 ms.author: filatovm
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Germany
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up electronic Tax declaration for Germany
 

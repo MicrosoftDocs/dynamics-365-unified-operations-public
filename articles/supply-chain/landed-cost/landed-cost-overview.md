@@ -1,15 +1,14 @@
 ---
 title: Landed cost module
-description: The Landed cost module helps businesses streamline inbound shipping operations by giving users complete financial and logistical control over imported freight, from the manufacturer to the warehouse.
-author: Weijiesa
-ms.author: weijiesa
+description: The Landed cost module helps businesses streamline inbound shipping operations by giving users financial and logistical control over imported freight.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: overview
+ms.date: 05/22/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: overview
-ms.date: 01/05/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Landed cost module

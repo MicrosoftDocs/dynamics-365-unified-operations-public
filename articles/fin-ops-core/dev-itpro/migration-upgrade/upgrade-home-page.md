@@ -1,18 +1,16 @@
 ---
 title: Upgrades, updates, and hotfixes resources
-description: This article shows where to find information about upgrading, updating, and applying hotfixes to your finance and operations environment and data.
+description: Learn about where to find information about upgrading, updating, and applying hotfixes to your finance and operations environment and data.
 author: LaneSwenka
-ms.date: 07/23/2019
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: conceptual
+ms.date: 07/23/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Upgrades, updates, and hotfixes resources

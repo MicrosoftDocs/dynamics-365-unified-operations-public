@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Fixed assets in the public sector
-description: This article describes the fixed assets functionality that is available for entities in the public sector. 
+description: Learn about the fixed assets functionality that is available for entities in the public sector, including answers to various questions.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetTransfer
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
+ms.search.form: AssetTransfer
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
 ---
 
 # Fixed assets in the public sector

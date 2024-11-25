@@ -2,14 +2,15 @@
 title: Add social identity providers
 description: This article describes how to add social identity providers in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Add social identity providers
@@ -20,17 +21,17 @@ This article describes how to add social identity providers in the Microsoft Azu
 
 Social identity providers allow users to use their social accounts for authentication. Adding social identity provider authentication is optional in Dynamics 365 Commerce. 
 
-If social identity provider authentication isn't added, the default Azure Active Directory (Azure AD) B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
+If social identity provider authentication isn't added, the default Microsoft Entra B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Microsoft Entra ID B2C will authenticate users directly. 
 
-If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Azure AD B2C tenant. Azure AD B2C will then authenticate the user's credentials with the social identity provider.
+If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Microsoft Entra B2C tenant. Microsoft Entra ID B2C will then authenticate the user's credentials with the social identity provider.
 
 > [!NOTE]
-> The identity provider sign in creates a record in the B2C tenant, but in a different format than local accounts since it will call the external social identity provider reference for authentication. The user can use the same email address across social identity providers, meaning that the email username used for authentication may not be unique to the tenant. Azure AD B2C will only enforce that users have a unique email address on local B2C accounts.
+> The identity provider sign in creates a record in the B2C tenant, but in a different format than local accounts since it will call the external social identity provider reference for authentication. The user can use the same email address across social identity providers, meaning that the email username used for authentication may not be unique to the tenant. Microsoft Entra ID B2C will only enforce that users have a unique email address on local B2C accounts.
 
-Before you can add a social identity provider for authentication, you must go to the identity provider's portal and set up an identity provider application as instructed in the Azure AD B2C documentation. A list of links to the documentation is provided below.
+Before you can add a social identity provider for authentication, you must go to the identity provider's portal and set up an identity provider application as instructed in the Microsoft Entra B2C documentation. A list of links to the documentation is provided below.
 
 - [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (Single Tenant)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft Entra ID (Single Tenant)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
 - [Microsoft Account](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
 - [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
 - [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
@@ -55,14 +56,14 @@ To add and set up a social identity provider, follow these steps.
 1. Under **Client ID**, enter the client ID as obtained from the identity provider application setup.
 1. Under **Client secret**, enter the client secret as obtained from the identity provider application setup.
 1. Attach user flow for sign-in/sign-up policies:
-1. Go to **Azure AD B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**.
+1. Go to **Microsoft Entra B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**.
 1. To attach the sign-in/sign-up user flow policy, select each identity provider you have set up for your account. To test the flows, select **Run user flow** for each identity provider. A new tab displays the sign-in page displaying the new identity provider selection box.
 
-The following image shows examples of the **Add identity provider** and **Set up the social identity provider** screens in Azure AD B2C.
+The following image shows examples of the **Add identity provider** and **Set up the social identity provider** screens in Microsoft Entra ID B2C.
 
 ![Adding a Social Identity Provider to your application.](../media/B2CImage_14.png)
 
-The following image shows an example of how to select identity providers on the Azure AD B2C **Identity Providers** page.
+The following image shows an example of how to select identity providers on the Microsoft Entra B2C **Identity Providers** page.
 
 ![Select each Social Identity Provider to enable for your policy.](../media/B2CImage_16.png)
 
@@ -75,19 +76,19 @@ The following image shows an example of a default sign-in screen with a social i
 
 ## Next steps
 
-To continue the process of setting up a B2C tenant in Commerce, proceed to [Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md).
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Update Commerce headquarters with the new Microsoft Entra B2C information](update-hq-aad-b2c-info.md).
 
 ## Additional resources
 
 [Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
 
-[Create or link to an existing Azure AD B2C tenant in the Azure portal](create-link-aad-b2c-tenant.md)
+[Create or link to an existing Microsoft Entra B2C tenant in the Azure portal](create-link-aad-b2c-tenant.md)
 
 [Create the B2C application](create-b2c-app.md)
 
 [Create user flow policies](create-user-flow-policies.md)
 
-[Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
+[Update Commerce headquarters with the new Microsoft Entra B2C information](update-hq-aad-b2c-info.md)
 
 [Configure your B2C tenant in Commerce site builder](config-b2c-tenant-site-builder.md)
 

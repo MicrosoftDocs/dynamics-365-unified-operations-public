@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Create and assign advanced rule structures
-description: This article explains how to create and assign an advanced rule structure to an account structure. 
+description: Learn how to create and assign an advanced rule structure to an account structure with an outline on applying advanced rule structures to account structures. 
 author: aprilolson
-ms.date: 05/19/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 05/19/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create and assign advanced rule structures

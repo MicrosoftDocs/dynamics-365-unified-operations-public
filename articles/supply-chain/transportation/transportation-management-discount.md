@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Transportation management discounts
-description: This article describes the options for setting up discounts for transportation charges.
-author: Weijiesa
-ms.date: 10/16/2020
+description: Learn about the options for setting up discounts for transportation charges and management, with more information on setting up multiple qualifiers.
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 10/16/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: 10.0.14
+ms.search.form:
 ---
 
 # Transportation management discounts

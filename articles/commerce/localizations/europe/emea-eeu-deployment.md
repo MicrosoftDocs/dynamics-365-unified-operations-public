@@ -4,8 +4,6 @@ description: This article describes how to build extensions of the Commerce comp
 author: josaw1
 ms.date: 07/05/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Eastern Europe

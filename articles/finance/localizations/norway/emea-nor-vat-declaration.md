@@ -1,15 +1,14 @@
 ---
 title: Support for multiple VAT registration numbers in the VAT return of Norway
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of Norway.
-author: AdamTrukawka
-ms.date: 01/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to support multiple value-added tax (VAT) registration numbers in a VAT return of Norway, including an outline on reporting VAT returns.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Norway
-ms.author: atrukawk
 ms.search.validFrom: 2021-22-12
 ms.dyn365.ops.version: AX 10.0.21
 ---

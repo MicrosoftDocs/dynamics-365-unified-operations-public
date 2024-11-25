@@ -4,8 +4,6 @@ description: This article explains how to package a payment connector for financ
 author: josaw1
 ms.date: 12/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

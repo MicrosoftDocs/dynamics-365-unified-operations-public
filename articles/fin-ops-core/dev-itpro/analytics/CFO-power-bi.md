@@ -1,26 +1,19 @@
 ---
-# required metadata
-
 title: CFO overview Power BI content
 description: This article describes the CFO overview Microsoft Power BI content. 
 author: kweekley
-ms.date: 08/24/2021
+ms.author: jiwo
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.date: 08/24/2021
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kweekley
-ms.search.validFrom: 2017-06-30 
+ms.search.validFrom: 2017-06-30
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: July 2017 update 
 ---
 

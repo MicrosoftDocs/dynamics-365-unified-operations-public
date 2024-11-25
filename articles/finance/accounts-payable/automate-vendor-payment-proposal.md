@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Automate vendor payment proposals
-description: This article explains how organizations that pay vendors on a recurring schedule can automate the process of generating vendor payment proposals.
+description: Learn about how organizations that pay vendors on a recurring schedule can automate the process of generating vendor payment proposals.
 author: kweekley
-ms.date: 06/08/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 262034
-ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 06/08/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-
+ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ---
 
 # Automate vendor payment proposals

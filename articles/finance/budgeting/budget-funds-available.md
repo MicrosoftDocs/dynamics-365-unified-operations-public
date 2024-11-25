@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Budget funds available
-description: This article introduces the budget funds available feature and provides information that can help you configure budget control to optimize management of your organization's financial resources.
+description: Learn about the budget funds available feature and how to configure budget control to optimize management of your organization's financial resources.
 author: RyanCCarlson2
-ms.date: 11/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetControlConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 11/22/2021
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-11-28
+ms.search.form: BudgetControlConfiguration
 ms.dyn365.ops.version: AX 10.0.24
-
+ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ---
 
 # Budget funds available

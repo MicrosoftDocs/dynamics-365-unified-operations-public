@@ -1,19 +1,16 @@
 ---
 title: Chinese tax integration modification for VAT customer invoices FAQ
-description: You can generate value-added tax (VAT) customer invoices, and then export them as text files. You can then import reference numbers for the VAT customer invoices that can be linked to the original invoices.
+description: You can generate value-added tax (VAT) customer invoices, and then export them as text files, then import reference numbers for the VAT customer invoices.
 author: mrolecki
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: mrolecki
+ms.topic: article
+ms.date: 05/23/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 264894
 ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Chinese tax integration modification for VAT customer invoices FAQ

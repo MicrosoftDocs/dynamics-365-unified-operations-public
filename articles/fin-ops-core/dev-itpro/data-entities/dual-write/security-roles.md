@@ -1,13 +1,13 @@
 ---
 title: Set up dual-write security roles and permissions
-description: This article describes the special security roles and permissions that are required for dual-write to work as expected.
+description: Learn about the special security roles and permissions that are required for dual-write to work as expected, including a table that outlines security roles for users.
 author: ramasri
-ms.date: 02/21/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 02/21/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2023-01-03
 ms.dyn365.ops.version: F&O 10.0.30 PU54
 ms.collection: get-started

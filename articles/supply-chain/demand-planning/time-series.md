@@ -1,23 +1,18 @@
 ---
 title: Time series and planning data
-description: This article provides information about time series, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn about time series, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Time series and planning data
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Time series represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 
@@ -51,7 +46,7 @@ Legend:
     - **Group by** – Select which of the available dimensions to use to group the data. For example, if you have dimensions for warehouses and product variants, you can group by both warehouse and variant (to show each warehouse, with each product variant listed under it), group by variant only (to show the variants but not the warehouses), or group by warehouse only (to show the warehouses but not the variants). Totals values are aggregated to match the group selection.
     - **Filter totals** – Set up a logical expression to filter the selection of rows that are shown in the table. For example, you can view only rows that have totals above 100,000 units. This setting doesn't affect the chart or KPIs.
     - **Select data** – Add another time series to the chart and/or data table, so that you can compare them. This button opens the same dialog box that the **Select data** button above the chart opens. Therefore, you can also adjust chart options (such as color, style, and grid options).
-    - **Edit** – Edit values directly in the data table. If an edited value is aggregated because of the **Group by** settings, the value of your edit will be divided proportionally among the aggregated data rows.
+    - **Edit** – Edit values directly in the data table. If an edited value is aggregated because of the **Group by** settings, the value of your edit will be divided proportionally among the aggregated data rows. If a cell shows a lock symbol, it's currently locked by a time fence and therefore can't be edited. Learn more about time fences in [Limit time series edits with time fences](time-fences.md).
 
 Select the **General** tab of the time series details page to view and adjust the following basic settings. Many of these settings affect the way that the time series is shown on the list page.
 
@@ -79,7 +74,7 @@ The row for each time series that's listed in the **Select data** dialog box pro
 - **Show in grid** – Enable this option for each time series that you want to include in the data table.
 - **Grid formatting** – Select the **Customize** link in this column to open a dialog box where you can specify logic to highlight cells in the data table. You can highlight cells for the selected series according to either their own values or values from another time series for the same time bucket. (If you want to compare the selected series to another series, set the **Use values from another time series** option to *Yes*, and then specify a series and version.) You can add as many rules as you need. For each rule, specify the logic (for example, find values that are less than 4,000,000) and the style (color and symbol) that are applied to cells that match that rule.
 
-After you've spent time customizing and formatting your time series, you'll probably want to save your settings as a new data view that you can return to later. To save the current settings as a data view, select **Save as new dataview** on the dropdown menu in the upper left of the page. (For more information, see the [Explore time series](#explore) section.) You can save as many data views as you need for each time series.
+After you've spent time customizing and formatting your time series, you'll probably want to save your settings as a new data view that you can return to later. To save the current settings as a data view, select **Save as new dataview** on the dropdown menu in the upper left of the page. (Learn more in the [Explore time series](#explore) section.) You can save as many data views as you need for each time series.
 
 ## Time series versions, version control, and change log
 

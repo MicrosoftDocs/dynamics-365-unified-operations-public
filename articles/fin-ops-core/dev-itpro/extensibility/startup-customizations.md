@@ -1,13 +1,13 @@
 ---
 title: Customize application startup by using delegates
-description: This article explains how to customize application startup by using delegates.
-author: gianugo
-ms.date: 11/03/2017
+description: Learn about how to customize application startup by using delegates, including overviews of various event types.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 11/03/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ---

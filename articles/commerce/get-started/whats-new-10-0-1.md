@@ -2,25 +2,22 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Retail version 10.0.1
-description: This article describes features that are in preview in Dynamics 365 Retail. 
+description: This article describes features that are in preview in Dynamics 365 Retail version 10.0.1. 
 author: josaw1
-ms.date: 03/08/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/12/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-02-15 
 ms.dyn365.ops.version: Release 10
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes features that are new or changed in Dynamics 365 Retail. 
+This article describes features that are new or changed in Dynamics 365 Retail version 10.0.1. 
 
 To learn about the features in Microsoft Dynamics 365 Finance, see [What's new or changed in finance and operations version 10.0.1 (April 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1).
 

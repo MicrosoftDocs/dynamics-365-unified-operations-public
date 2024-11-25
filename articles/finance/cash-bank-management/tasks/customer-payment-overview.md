@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Customer payment overview
-description: This procedure walks through the various methods used to enter customer payments. 
+description: Learn about the various methods used to enter customer payments, including a detailed step-by-step process for this task, which uses the USMF demo company. 
 author: kweekley
-ms.date: 05/23/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-ms.collection: get-started
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 05/23/2023 
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Customer payment overview
 
 [!include [banner](../../includes/banner.md)]

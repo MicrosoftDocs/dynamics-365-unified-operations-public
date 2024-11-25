@@ -1,15 +1,13 @@
 ---
 title: Upgrade from AX 2012 - Prepare for go-live
-description: This article describes how you can help ensure that the source Dynamics AX 2012 system and the upgrade process remain stable and consistent for go-live.
+description: Learn about how you can help ensure that the source Dynamics AX 2012 system and the upgrade process remain stable and consistent for go-live.
 author: LaneSwenka
-ms.date: 02/17/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/17/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---

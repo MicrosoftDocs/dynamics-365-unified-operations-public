@@ -1,13 +1,13 @@
 ---
 title: X++ data selection and manipulation overview
-description: This article provides links to topics about X++ data selection and manipulation.
+description: Access links to topics about X++ data selection and manipulation, including information about SQL statement timeouts.
 author: josaw1
-ms.date: 09/28/2022
-ms.topic: overview
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: overview
+ms.date: 09/28/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Define an expiry date for a production flow version
-description: To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version. 
+description: To end the validity and the processing of a production flow version on a given date, you have to set an expiry date on the version.
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LeanProductionFlow   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: LeanProductionFlow 
 ---
+
 # Define an expiry date for a production flow version
 
 [!include [banner](../../includes/banner.md)]

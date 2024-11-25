@@ -1,19 +1,17 @@
 ---
 title: Bank statement and payment reconciliation for the EU
-description: This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries/regions.
+description: Learn about the functionality that you can use to reconcile payment information from banks in formats that are used by European countries/regions.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 267994
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Bank statement and payment reconciliation for the EU

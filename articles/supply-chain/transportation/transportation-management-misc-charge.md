@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Transportation management miscellaneous charges
-description: This article explains how transportation-generated charges must be associated with a charge code.
-author: Weijiesa
-ms.date: 10/16/2020
+description: Learn how transportation-generated charges must be associated with a charge code and that you should have one setup for each relevant charges module setting.
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:TMSMiscellaneousCharge
-audience: Application User
-# ms.devlang: 
+ms.date: 10/16/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: 10.0.14
+ms.search.form: TMSMiscellaneousCharge
 ---
 
 # Transportation management miscellaneous charges

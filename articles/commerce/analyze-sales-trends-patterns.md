@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Analyze sales trends and patterns
 description: You can study sales trends and patterns in real time in Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 07/30/2024
+ms.topic: how-to
 ms.search.form: RetailChannelReport, SysReportViewerForm, RetailStoreManagementWorkspace
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: asharchw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+  - bap-template
 ---
 
 # Analyze sales trends and patterns

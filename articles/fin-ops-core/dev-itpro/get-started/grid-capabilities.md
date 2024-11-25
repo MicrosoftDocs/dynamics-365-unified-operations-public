@@ -1,33 +1,22 @@
 ---
-# required metadata
-
 title: Grid capabilities
-description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
+description: Learn about several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 08/29/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  DefaultDashboard
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
+ms.topic: article
+ms.date: 1/17/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
+ms.search.form:  DefaultDashboard
 ms.dyn365.ops.version: Platform update 33
 ---
 
 # Grid capabilities
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!include [preview banner](../../../finance/includes/preview-banner.md)]
 
 The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
@@ -42,7 +31,7 @@ The new grid control provides several useful and powerful capabilities that you 
 ## Showing calculated values
 In finance and operations apps, users can view a calculated value for each numeric column in a grid. A footer section at the bottom of the grid shows these calculated values.
 
-[![Showing calculated values in grids.](../../fin-ops/get-started/media/grids-aggregation.png)](/media/grids-aggregation.png)
+[![Showing calculated values in grids.](../../fin-ops/get-started/media/grids-aggregation.png)]
 
 In versions before 10.0.29, the total is the only supported calculated value. However, as of version 10.0.29, if your organization has enabled the **Extended grid aggregation capabilities** feature, users can select among the following four calculated values:
 
@@ -53,7 +42,7 @@ In versions before 10.0.29, the total is the only supported calculated value. Ho
 
 A single column can show only one type of calculated value. However, each column in the grid can be configured to show a different type of calculated value. 
 
-In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be shown in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later, where the calculated value for the column is updated based on the values in the selected row.   
+If more than one row is selected in the grid, the calculated value for the column is updated based on the values in the selected rows.   
 
 ### Showing the grid footer
 There is a footer area at the bottom of every tabular grid in finance and operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
@@ -94,7 +83,7 @@ Calculated values will be automatically updated as you update, delete, or create
 ## Typing ahead of the system
 In many business scenarios, the ability to quickly enter data into the system is very important. Before the introduction of the new grid control, users could change data only in the current row. Therefore, after they made changes in a row, users could not switch to a different row or create a new row until the system successfully validated the changes in the current row and (in the case of row creation) ran all the logic that is associated with the creation of a new row. To help reduce the time that users spend waiting for these operations to be completed, and to help improve user productivity, the new grid adjusts these actions so that they are asynchronous. Users can create new rows or move to other rows to make changes while previous row validations and row creation logic are pending. 
 
-[![Typing ahead of the system.](../../fin-ops/get-started/media/gridFastEntry-07-25-2022.gif)](/media/gridFastEntry-07-25-2022.gif)
+[![Typing ahead of the system.](../../fin-ops/get-started/media/gridFastEntry-07-25-2022.gif)]
 
 To support this new behavior, a new column for the row status has been added to the right of the row selection column when the grid is in edit mode. This column indicates one of the following statuses:
 
@@ -109,30 +98,46 @@ When you enter data ahead of the place where the system is processing, you can e
 - You will notice that there are no lookup drop-down lists, field values aren't validated after you move to a different column in the same row, and columns don't initially show default values. This behavior occurs when you create or update ahead of the system. However, after the system catches up to the place where you're currently editing, the standard experience will resume. If you made changes to a field that typically receives a default value, your changes override the default field value when the server starts to process the row.
 - If you create a new row by using the **Down arrow** key, all columns in the grid will appear as editable. By default, the focus will be put in the first column in the new row. This column might not be the same column that received the initial focus in the legacy grid, or the same column that receives focus after you select a **New** button. Your organization can customize the system and change the column that receives the initial focus when the **Down arrow** key is selected. For more information, see the [Specifying the column that receives the initial focus when new rows are created by using the Down arrow key](#developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key) section. Regardless, you can use personalization to optimize each grid for data entry. Specifically, you can reorder fields so that the first column is the column that you want to start to enter data in. You might also want to reorder fields in general for data entry, to reduce tab stops and hide any fields that aren't required for data entry in this particular view.
 
+### Editing multiple rows simultaneously (bulk edit)
+
+In version 10.0.38 and later, users can update multiple selected rows in a single action by using the **Bulk editing in grids** feature, which can be enabled through Feature management.
+
+To use this feature, follow these steps.
+
+1. In the grid, select the rows that you want to update.
+2. Select **Grid options** \> **Edit selected rows**.
+3. In the **Edit rows** dialog box that appears, select the columns that you want to update, and provide the new values. Only columns that are backed by editable fields in the grid can be selected for update. The **Edit rows** dialog box defines the order that columns will be updated in (from top to bottom). This order can affect field-level validations that are triggered during the save process. After you've finished specifying the columns and values that you want to update, select **Apply**.
+
+As when you paste from Excel (as described in the next section), the grid shows the updated contents in italic as a preview of the data changes. Select **Discard** to cancel the bulk editing or **Save** to initiate the save process. During the save process, the system uses the **Typing ahead of the system** save model to submit the updates one row at a time. This approach ensures that all form and field validations are run for each row. Monitor the progress and results of each validation by checking the row status at the beginning of the row.
+
 ### Pasting from Excel
 Users have always been able to export data from grids in finance and operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in finance and operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
 
 - If the number of columns in the copied table exceeds the number of columns that remain in the grid, starting from the paste location, the user is notified that the extra columns have been ignored. 
-- If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
+- If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid.
+
+> [!NOTE]
+> Currently, this functionality can't be used in specific situations. For example, in grids using the segmented entry control like General journal lines.  
 
 ### Copying from a grid in the product
-As of version 10.0.32, grids in finance and operations apps support range selection capability that resembles the capability in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns). That range can then be copied and pasted as required.  
+Grids in finance and operations apps support a range selection capability that resembles the corresponding feature in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns), which can then be copied and pasted as required.  
 
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
 
-[![Evaluating math expressions.](../../fin-ops/get-started/media/gridMathExpression-07-25-2022.gif)](/media/gridMathExpression-07-25-2022.gif)
+[![Evaluating math expressions.](../../fin-ops/get-started/media/gridMathExpression-07-25-2022.gif)]
 
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
-As of version 10.0.29, the ability to evaluate math expressions in numeric controls has been extended and is now available outside the grid too.
+> [!NOTE]
+> The ability to evaluate math expressions in numeric controls is available outside the grid. 
 
 ## Grouping tabular data
-Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, lets users organize their tabular data in interesting ways within finance and operations apps. Because this feature extends the **Calculated values** feature, **Grouping** lets you gain meaningful insights into the data by providing calculated values (for example, subtotals) at the group level.
+Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** capability lets users organize their tabular data in interesting ways within finance and operations apps. Grouping works together with the **Calculated values** capability to let you gain meaningful insights into the data by showing calculated values (for example, subtotals) at the group level.
 
-[![Grouping data in a grid.](../../fin-ops/get-started/media/grids-groupingWithTotals.png)](/media/grids-groupingWithTotals.png)
+[![Grouping data in a grid.](../../fin-ops/get-started/media/grids-groupingWithTotals.png)]
 
-To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group:
+To use this capability, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group:
 
 - Data value for the group 
 - Column name (this information is especially useful when you have multiple levels of grouping)
@@ -167,9 +172,9 @@ When you group on Date or DateTime fields, you have the option to group by year,
 > Users can't currently add a grouping column after they group on a segment of a date or time column.
 
 ## Freezing columns
-Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you might want the values in those columns to always be visible. The **Freezing columns in grid** feature provides this flexibility to users. 
+Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you might want the values in those columns to always be visible. The **Freezing columns in grid** capability provides this flexibility to users. 
 
-[![Freezing columns in a grid.](../../fin-ops/get-started/media/gridFreezingColumns-07-25-2022.gif)](/media/gridFreezingColumns-07-25-2022.gif)
+[![Freezing columns in a grid.](../../fin-ops/get-started/media/gridFreezingColumns-07-25-2022.gif)]
 
 To freeze a column, right-click in the column's header, and then select **Freeze column**. The first time that you complete this step, the selected column becomes the first column and will no longer scroll out of view. Any subsequent column that you freeze will be added to the right of the last frozen column. You can use the standard Move functionality to reorder frozen columns as you require. However, frozen columns can't be moved so that they appear among the set of unfrozen columns. Likewise, unfrozen columns can't be moved so that they appear among the set of frozen columns.
 

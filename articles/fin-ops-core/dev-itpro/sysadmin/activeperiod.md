@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Active batch periods
-description: This article provides information about setting up and working with active batch periods.
+description: Learn about setting up and working with active batch periods, including a step-by-step process on how to set up active periods for batch jobs.
 author: hasaid
-ms.date: 10/25/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: hasaid
+ms.topic: article
+ms.date: 10/25/2018
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 21
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Active batch periods

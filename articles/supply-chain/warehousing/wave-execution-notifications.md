@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Wave execution notifications 
-description: This article describes wave execution notifications and explains how to set them up.
+description: Learn about wave execution notifications and explains how to set them up, including an outline on toggling the Wave execution notifications feature.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WhsWaveNotificationPolicy, WHSParameters, WHSWaveTemplateTable, BusinessEventsWorkspace
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-04-01
-ms.dyn365.ops.version: 10.0.0
-
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WhsWaveNotificationPolicy, WHSParameters, WHSWaveTemplateTable, BusinessEventsWorkspace
 ---
 
 # Wave execution notifications
@@ -34,7 +18,7 @@ The *Wave execution notifications* feature uses business events and the Action c
 
 The **Show messages** button (bell symbol) on the right side of the navigation bar indicates when an Action center message is available for the current user. The user can select the **Show messages** button to open the Action center and review the messages.
 
-Business events occur when business processes are run. Business processes are made up of tasks. During a business process, the users who participate in it perform business actions to complete those tasks. Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Business events occur when business processes are run. Business processes are made up of tasks. During a business process, the users who participate in it perform business actions to complete those tasks. Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events. Learn more in [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## Turn the Wave execution notifications feature on or off
 

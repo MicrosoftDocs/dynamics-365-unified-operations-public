@@ -1,12 +1,13 @@
 ---
 title: File Uploader module
-description: A control for uploading images.
+description: Learn about the File Uploader module, a control for uploading images that includes the FileUploader, FileUploaderDesign, and FileUploaderMetadata types.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # File Uploader module

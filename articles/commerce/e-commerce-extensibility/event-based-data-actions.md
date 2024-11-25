@@ -2,18 +2,15 @@
 title: Use event-based data actions
 description: This article describes how to use event-based data actions.
 author: samjarawan
-ms.date: 10/01/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Use event-based data actions
 

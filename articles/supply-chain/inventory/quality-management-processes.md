@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Quality and nonconformance management overview
-description: This article introduces the quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management and explains how they can help improve product quality in your supply chain.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn about the quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management and how they help improve product quality.
+author: johanhoffmann
+ms.author: johanho
 ms.topic: overview
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.collection: get-started
-ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
-ms.search.region: Global
-# ms.search.industry:
-ms.author: yufeihuang
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 ---
 
 # Quality and nonconformance management overview
@@ -103,7 +87,7 @@ The nonconformance report displays the nonconformance number, item, and problem 
 
 ## Approved nonconformance
 
-You can optionally define one or more related operations for an approved nonconformance. A related operation describes the work that should be performed, and contains a list of the quality operations that you've defined and descriptive text about the reason for the work. After you define an operation, you can optionally define the miscellaneous charges, items, and timesheet labor hours that are required in order to perform the work. The calculated costs are shown for the related operation, and the total calculated costs are shown for the nonconformance. The calculated costs and the underlying details (about items, labor hours, and miscellaneous charges) represent reference information, and they are used only in the quality management function.
+You can optionally define one or more related operations for an approved nonconformance. A related operation describes the work that should be performed, and contains a list of the quality operations that you've defined and descriptive text about the reason for the work. After you define an operation, you can optionally define the miscellaneous charges, items, and timesheet labor hours that are required in order to perform the work. The calculated costs are shown for the related operation, and the total calculated costs are shown for the nonconformance. The calculated costs and the underlying details (about items, labor hours, and miscellaneous charges) represent reference information, and they're used only in the quality management function.
 
 You can optionally create a quality order from a nonconformance by first performing an inquiry for quality orders and then creating the new quality order. For example, a quality order might identify the need to test (or retest) the defective material. The newly created quality order displays the link to the originating nonconformance.
 
@@ -115,7 +99,7 @@ The **Corrections** page lets you create a list of nonconformances that must be 
 
 It's a good idea to define a unique document type for corrections by using the **Document type** page. You can then use the **Report setup** page to define whether comments for this document type are printed on the correction report. A printed correction report displays information about the nonconformance and the related nonconformance notes. The report also includes correction information, such as the diagnostic type, and the related correction notes.
 
-## Additional resources
+## Next steps
 
 - [Enable quality and nonconformance management](enable-quality-management.md)
 - [Inventory blocking](inventory-blocking.md)

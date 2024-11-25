@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Production order lifecycle overview
-description: When a production order is created, a request is initiated to start producing an item. The production order contains information about what will be produced, the quantity to produce, and the planned finish date. It also contains information about which materials to consume and which process to follow to produce the item.
+description: When a production order is created, a request is initiated to start producing an item. Learn about what will be produced and the planned finish date.
 author: johanhoffmann
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProdTable, ProdTableCreate
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: bbb6e69d-479c-45fc-a0a8-66da5df16c7f
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: kamaybac
+ms.collection: get-started
+ms.search.form: ProdTable, ProdTableCreate
+ms.assetid: bbb6e69d-479c-45fc-a0a8-66da5df16c7f
 ---
 
 # Production order lifecycle overview

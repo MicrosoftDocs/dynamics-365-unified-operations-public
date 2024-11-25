@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Sweden overview
-description: This article provides links to documentation resources for Sweden. 
+description: Access links to documentation resources for Sweden, including links to resources about declarations, functionality, statistics, and sales lists. 
 author: kfend
-ms.date: 03/04/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.search.region: Sweden
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 03/04/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Sweden
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Sweden overview

@@ -1,22 +1,17 @@
 ---
 title: On-premises deployment overview
-description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers.
+description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers, including overviews of architecture and data storage.
 author: faix
-ms.date: 11/30/2021
-ms.topic: overview
-ms.prod: dynamics-365
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: osfaixat
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.collection: get-started
-ms.assetid: 
-ms.service: 
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 # On-premises deployment overview
 
@@ -47,7 +42,7 @@ Application lifecycle management for on-premises deployments is orchestrated thr
 [![Application lifecycle management for Local Business Data deployments.](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
 
 ## Data storage 
-The on-premises deployment option stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data). Table 1 outlines the categories of customer data that are stored in Microsoft Azure data centers located in the United States by services such as LCS, Azure Active Directory, and Microsoft Office signup portal. All other customer data, referred to as core customer data, is stored on-premises.  
+The on-premises deployment option stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data). Table 1 outlines the categories of customer data that are stored in Microsoft Azure data centers located in the United States by services such as LCS, Microsoft Entra ID, and Microsoft Office signup portal. All other customer data, referred to as core customer data, is stored on-premises.  
 
 Table 1: Customer data stored in Microsoft Azure data centers located in the United States by services supporting on-premises environments. These services enable initial onboarding, initiation, and tracking of support incidents, and service updates and upgrades.  
 
@@ -56,7 +51,7 @@ Table 1: Customer data stored in Microsoft Azure data centers located in the Uni
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft Dynamics Lifecycle Services | Project content and files are stored in a project. This includes application configuration data, code, metadata, and data assets that comprise the application and business process models. Also included is anonymized user activity logs and information that is collected during the onboarding process. |
 | Microsoft Office signup portal        | Customer information that is collected during the onboarding process.                                                                                                                                                                                                                                 |
-| Microsoft Azure Active Directory      | Authentication for LCS and Azure DevOps.                                                                                                                                                                                                               |
+| Microsoft Entra ID      | Authentication for LCS and Azure DevOps.                                                                                                                                                                                                               |
   
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment. 

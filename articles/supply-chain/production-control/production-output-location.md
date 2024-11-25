@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Production output location
-description: This article describes the hierarchy that is used to identify the production output location.
+description: Learn about the hierarchy that is used to identify the production output location, including a step-by-step process on identifying output locations.
 author: johanhoffmann
-ms.date: 04/04/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 221264
-ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.topic: article
+ms.date: 04/04/2017
+ms.reviewer: kamaybac
+ms.search.form:
+ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ---
 
 # Production output location

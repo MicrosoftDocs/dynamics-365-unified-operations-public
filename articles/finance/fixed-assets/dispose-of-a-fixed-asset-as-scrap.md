@@ -1,31 +1,18 @@
 ---
-# required metadata
-
 title: Dispose of a fixed asset as scrap
-description: The article describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
+description: Learn about the process of eliminating transactions for a fixed asset that was disposed of as scrap, including a table defining transaction types.
 author: moaamer
-ms.date: 01/19/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 01/19/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-14
+ms.search.form: TaxTable
 ms.dyn365.ops.version: 10.0.6
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Dispose of a fixed asset as scrap
@@ -58,8 +45,8 @@ The fixed asset transaction types are listed on the **Fixed assets posting profi
 [![Disposing of an asset as scap, Fig. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 The disposal posting profile has two ways to account for the acquisition values during the disposal process:
- - The lump sum of all acquisitions that has a **Acquisition value** posting type
- - Differentiate between acquisitions this or prior years that have the **Acquisitions this** and **Acquisition prior years** posting types
+ - The lump sum of all acquisitions that has a **Acquisition value** posting type.
+ - Differentiate between acquisitions this or prior years that have the **Acquisitions this** and **Acquisition prior years** posting types.
 
 -	**Acquisition value** combines all acquisition transactions in all times in one transaction line and disposal transaction post it to the corresponding account to acquisition value in the posting profile. This could be used if you don't want to break down the acquisitions of this year and prior years. In this case, set the **Post disposal transactions in detail** option on the **Fixed assets parameters** page to **No**.  
 -	**Acquisition this year** and **Acquisition prior years** break down the acquisition values when there are different acquisitions posted to the disposed asset this year or prior years. Set the **Post disposal transactions in detail** option on the **Fixed assets parameters** page to **Yes**, to validate against detailed posting types in the posting profile.
@@ -67,7 +54,7 @@ The disposal posting profile has two ways to account for the acquisition values 
 > [!NOTE]
 >You can’t define the both options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting. 
 
-For the following example, a fixed asset was acquired on January 1, 2018, and it will be scrapped on March 31, 2019.
+For the following example, a fixed asset was acquired on January 1, 2024, and it will be scrapped on March 31, 2025.
 
 - **Acquisition price:** 24,000.00 US dollars (USD)
 - **Service life:** Two years
@@ -78,7 +65,7 @@ The NBV of a fixed asset is calculated by using the following formula:
 
 Net book value = Acquisition price – Depreciation
 
-In this example, the fixed asset was acquired and was depreciated for 15 months, from January 2018 through March 2019. Therefore, the asset's NBV is 9,000.00 USD (24,000.00 USD – 15,000.00 USD).
+In this example, the fixed asset was acquired and was depreciated for 15 months, from January 2024 through March 2025. Therefore, the asset's NBV is 9,000.00 USD (24,000.00 USD – 15,000.00 USD).
 
 [![Fixed asset depreciation example.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 

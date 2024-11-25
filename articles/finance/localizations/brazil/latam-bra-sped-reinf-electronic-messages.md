@@ -1,18 +1,16 @@
 ---
 title: Set up electronic messages for SPED-Reinf events
-description: This article explains how to set up electronic messages for SPED-Reinf events for Brazil.
+description: Learn how to set up electronic messages for SPED-Reinf events for Brazil, including an outline on importing the configuration from data entries.
 author: AdamTrukawka
-ms.date: 04/09/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
-ms.search.form: 
 ---
 
 # Set up electronic messages for SPED-Reinf events
@@ -44,8 +42,6 @@ To set up electronic message functionality for communication of SPED-Reinf event
 ## Structure of electronic messages
 
 Every event that is created, delivered, and received is represented by a message and a message item.
-
-![Electronic messages structure.](../media/bra-electronic-messages-structure21.png)
 
 The message item is represented by the XML event message. It includes the following information that is stored in the message or updated in Finance:
 
@@ -143,4 +139,3 @@ Before a message is delivered, set up XML schema validation to help prevent reje
 
 7. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates to issue and inquire about events.
 
-    ![Web services connection and certificates set up on the Web services settings page.](../media/bra-web-service-settings21.png)

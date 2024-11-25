@@ -3,11 +3,8 @@
 title: Employees select plans by using Employee self service (optional)
 description: This article describes how employees can select or update their benefits.
 author: twheeloc
-ms.date: 12/06/2021
+ms.date: 07/02/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: EssWorkspace, 
@@ -16,11 +13,10 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -32,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 When a new employee is hired, or a life event occurs, the employee can use **Employee self service** to select or update their benefits during open enrollment.
 
-To access their benefits for enrollment, the employee goes to **Employee self service** and then selects **Benefits self-service** on the **Benefits** tile.
+To access their benefits for enrollment, the employee goes to **Employee self service**, select **Benefits self-service** on the **Benefits** tile.
 
 On the **Benefits self-service** page, benefit plans are grouped by plan type. To view the benefit plans in a plan type, the employee selects a tile on the **Employee benefits** page. The employee will see only the benefits that they are eligible for.
 
@@ -53,7 +49,6 @@ After the employee has selected their plans, the status of the benefits is shown
 
 > [!IMPORTANT]
 > To complete enrollment, the benefits administrator must select **Confirm** for each employee benefit that is selected. Confirmation can be completed on the **Worker benefits plan** or **Worker benefit plans bulk update** page.
->
 
 Employees aren't required to select benefits by using **Employee self service**. Benefits can be selected on behalf of an employee on the **Worker benefits plan** or **Worker benefit plans bulk update** page. The employee won't be enrolled in those benefits until the benefits administrator confirms them.
 

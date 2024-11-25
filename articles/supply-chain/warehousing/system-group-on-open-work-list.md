@@ -1,28 +1,12 @@
 ---
-# required metadata
-
 title: System grouping on an open work list
-description: This article describes how to filter the open work list on a mobile device.
+description: Learn how to filter the open work list on a mobile device with an outline on setting up system grouping on an open work list with a table defining options.
 author: Mirzaab
-ms.date: 05/26/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSRFMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 05/26/2017
+ms.reviewer: kamaybac
+ms.search.form:  WHSRFMenuItem
 ---
 
 # System grouping on an open work list

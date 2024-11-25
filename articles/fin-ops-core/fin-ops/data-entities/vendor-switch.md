@@ -1,13 +1,13 @@
 ---
 title: Switch between vendor designs
-description: This article describes how to switch vendor data integration between finance and operations apps and Dataverse.
-author: RamaKrishnamoorthy 
-ms.date: 09/20/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: tfehr
-ms.search.region: global
+description: Learn about how to switch vendor data integration between finance and operations apps and Dataverse, including an outline on using an extended vendor design.
+author: RamaKrishnamoorthy
 ms.author: ramasri
+ms.topic: article
+ms.date: 09/20/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 

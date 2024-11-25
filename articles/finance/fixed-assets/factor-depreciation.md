@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Factor depreciation
-description: This article gives an overview of the factor depreciation method.
+description: Learn about the factor depreciation method, which are the percentages used to depreciate assets, including an outline on progressive depreciation with examples.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ---
 
 # Factor depreciation

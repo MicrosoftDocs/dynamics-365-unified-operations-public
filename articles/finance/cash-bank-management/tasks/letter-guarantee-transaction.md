@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Letter of guarantee transaction
-description: This procedure walks through the Letter of guarantee process. 
+description: Learn about the procedure of creating a letter of gurantee transaction, including a step-by-step process of creating sales orders with a letter of guarantee.
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Letter of guarantee transaction
 
 [!include [banner](../../includes/banner.md)]
@@ -34,15 +25,12 @@ This procedure walks through the Letter of guarantee process.
 The following tasks must be complete before completing this procedure:
 
 - Set up bank facilities and posting profiles for a letter of guarantee.
-
 - Create a bank facility agreement for a letter of guarantee.
-
-
 
 This procedure uses the USMF demo company.
 
 
-## Create Sales Order with Letter of Guarantee
+## Create Sales Order with letter of guarantee
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Click **New**.
 3. In the **Customer account** field, enter or select a value.
@@ -64,7 +52,7 @@ This procedure uses the USMF demo company.
 15. In the **Requested ship date** field, enter a date.
 16. In the **Confirmed ship date** field, enter a date.
 
-## Process letter of guarantee_Request
+## Process letter of guarantee - request
 1. On the Action Pane, click **Manage**.
 2. Click **Letter of guarantee**.
 3. On the Action Pane, click **Letter of guarantee**.
@@ -76,7 +64,7 @@ This procedure uses the USMF demo company.
 9. Click **OK**.
 10. Close the page.
 
-## Process letter of guarantee_Submit to bank
+## Process letter of guarantee - submit to bank
 1. Go to **Cash and bank management > Letters of guarantee > Letters of guarantee**.
 2. In the list, find and select the desired record.
 3. Click **Submit to bank** to open the drop dialog.
@@ -84,7 +72,7 @@ This procedure uses the USMF demo company.
 5. In the list, click the link in the selected row.
 6. Click **OK**.
 
-## Process letter of guarantee_Receive from bank
+## Process letter of guarantee - receive from bank
 1. Click **Receive from bank** to open the drop dialog.
 2. In the **Bank number** field, type a value.
     * Verify the values in the calculated **Margin** and **Expense** fields.  
@@ -96,7 +84,7 @@ This procedure uses the USMF demo company.
     * Verify the posting of journal entries.  
 7. Close the page.
 
-## Process letter of guarantee_Give to beneficiary
+## Process letter of guarantee - give to beneficiary
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. In the list, click the link in the selected row.
 3. On the Action Pane, click **Manage**.
@@ -111,7 +99,7 @@ This procedure uses the USMF demo company.
 12. Expand the **Actions** section.
     * Validate the 'Give to beneficiary' record.  
 
-## Process letter of guarantee_Increase value
+## Process letter of guarantee - increase value
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. In the list, click the link in the selected row.
 3. On the Action Pane, click **Manage**.
@@ -131,7 +119,7 @@ This procedure uses the USMF demo company.
 16. Click **Lines**.
     * Verify the posted journal entries.  
 
-## Process letter of guarantee_Liquidate
+## Process letter of guarantee - liquidate
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. In the list, click the link in the selected row.
 3. On the Action Pane, click **Manage**.

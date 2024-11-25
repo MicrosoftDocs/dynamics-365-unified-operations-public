@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Maintain general budget reservations
-description: This article provides steps for working with general budget reservations for Public sector in Microsoft Dynamics 365 Finance.
+description: Learn how to complete typical tasks for general budget reservations, including a step-by-step process on creating and encumbering a general budget reservation.
 author: AlexRenney
-ms.date: 04/25/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetReservation_PSN, BudgetReservationYearEndClose_PSN
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/25/2019
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
 ms.search.validFrom: 2018-10-31
+ms.search.form: BudgetReservation_PSN, BudgetReservationYearEndClose_PSN
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Maintain general budget reservations

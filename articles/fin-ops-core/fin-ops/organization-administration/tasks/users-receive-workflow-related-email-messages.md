@@ -1,34 +1,23 @@
 --- 
-# required metadata 
- 
 title: Enable users to receive workflow-related email messages
-description: You can configure the system to send email messages to users when workflow-related events occur. 
+description: Learn about how to send workflow-related emails and enable users to receive workflow-related email messages, including a step-by-step process.
 author: jasongre
-ms.date: 06/01/2020
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysUserManagement, SysUserSetup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 06/01/2020
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysUserManagement, SysUserSetup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Enable users to receive workflow-related email messages
 
 [!include [banner](../../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 You can configure the system to send email messages to users when workflow-related events occur. For example, email messages can be sent to users when documents are assigned to them for approval. The demo data company used to create this procedure is USMF.
 

@@ -1,15 +1,14 @@
 ---
 title: Set up, create, and manage absorption costs
-description: This article provides information on how to set up, create, and manage absorption costs for Brazil.
+description: Learn how to set up, create, and manage absorption costs for Brazil, including overviews for setting up a number sequence for absorption costs and cost centers.
 author: AdamTrukawka
-ms.date: 09/13/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

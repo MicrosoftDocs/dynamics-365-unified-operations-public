@@ -1,18 +1,17 @@
 ---
 title: GETLABELTEXT ER function
-description: This article provides information about how the GETLABELTEXT Electronic reporting (ER) function is used.
+description: Learn about how the GETLABELTEXT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: kfend
-ms.date: 03/18/2022
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: conceptual
+ms.date: 03/18/2022
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2022-01-01
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 10.0.25
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # GETLABELTEXT ER function

@@ -1,18 +1,15 @@
 ---
 title: Apply the latest platform update to environments
-description: This article explains how to apply the latest platform update to your finance and operations environment.
+description: Learn about how to apply the latest platform update to your finance and operations environment and update packages.
 author: LaneSwenka
-ms.date: 08/16/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 08/16/2019
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom: 253274
 ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ---
 

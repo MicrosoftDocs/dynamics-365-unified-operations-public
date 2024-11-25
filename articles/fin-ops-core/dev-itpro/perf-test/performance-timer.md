@@ -1,15 +1,13 @@
 ---
 title: Performance timer
-description: This article provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow.
+description: Access an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow.
 author: josaw1
-ms.date: 06/20/2017
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7

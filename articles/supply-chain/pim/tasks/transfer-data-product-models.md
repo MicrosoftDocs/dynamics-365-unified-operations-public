@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Transfer data for product models
-description: Exporting data for a product configuration model requires that you have at least one product model available. 
-author: t-benebo
+description: Learn about exporting data for a product configuration model requires that you have at least one product model available with a step-by-step process. 
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCImport
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Transfer data for product models
 
 [!include [banner](../../includes/banner.md)]

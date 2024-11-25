@@ -1,18 +1,16 @@
 ---
 title: Tax invoice for goods delivered for free
-description: This article provides information about tax invoices for goods that were delivered for free.
+description: Learn about tax invoices for goods that were delivered for free, including a step-by-step process for setting up the summary update parameters.
 author: mrolecki
-ms.date: 09/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 09/15/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2019-11-01
-ms.dyn365.ops.version: 10.0.8
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Tax invoice for goods delivered for free

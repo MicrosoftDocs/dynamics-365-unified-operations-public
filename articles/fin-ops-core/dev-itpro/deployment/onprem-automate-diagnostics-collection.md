@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) automated diagnostics collection
-description: This article explains how to quickly collect information that is required to troubleshoot issues in your environment.
+description: Learn how to quickly collect information that is required to troubleshoot issues in your Dynamics 365 finance and operations environment.
 author: faix
-ms.date: 9/28/2023
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2023-09-28 
+ms.topic: article
+ms.date: 9/28/2023
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2023-09-28
+# ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 62
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises) automated diagnostics collection

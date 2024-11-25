@@ -1,16 +1,14 @@
 ---
 title: Running average cost price
-description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.
-author: JennySong-SH
-ms.date: 02/02/2022
-ms.topic: article
-ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
-audience: Application User
+description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected.
+author: prasungoel
+ms.author: prasungoel
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 ---
 
 # Running average cost price
@@ -48,7 +46,7 @@ The following table shows when the system posts inventory transactions by using 
 \*\* Denominator = (Physical quantity + Financial quantity)
 
 > [!NOTE]
-> If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Include physical value](include-physical-value.md).
+> If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Options for including physical value in cost calculations](include-physical-value.md).
 
 ## Avoiding pricing amplification
 
@@ -81,7 +79,7 @@ However, if your business model allows for the following practices, they can hel
 - If you select the **Include physical value** option for an item, clear the **Physical negative inventory** checkbox on the **Item model groups** page.
 - If you do **not** select the **Include physical value** option for an item, clear the **Financial negative inventory** option on the **Item model groups** page.
 
-Additionally, consider that the maximum offset in your physical inventory value is limited by the number of physical transactions, and the difference between physical and financial prices. Provided that all physical transactions are eventually updated financially, the physical value can't rise to extreme levels. Finally, note that the amplification effect decreases significantly when the accumulated offset is spread out over several on-hand pieces instead of just one.
+Additionally, consider that the maximum offset in your physical inventory value is limited by the number of physical transactions, and the difference between physical and financial prices. If all physical transactions are eventually updated financially, the physical value can't rise to extreme levels. Finally, note that the amplification effect decreases significantly when the accumulated offset is spread out over several on-hand pieces instead of just one.
 
 ## Avoid a zero cost price on issues
 

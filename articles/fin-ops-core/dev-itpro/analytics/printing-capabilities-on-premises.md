@@ -1,19 +1,17 @@
 ---
 title: Document generation, publishing, and printing in on-premises deployments
-description: This article describes the capabilities for generating, publishing, and printing documents in on-premises deployments.
-author: RichdiMSFT
-ms.date: 06/16/2017
+description: Learn about the capabilities for generating, publishing services, and printing documents in on-premises deployments.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: dynamics-365
-ms.technology: 
+ms.date: 06/16/2017
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8
 ms.search.form: SysCorpNetPrinterList
-ms.service: 
+ms.dyn365.ops.version: Platform update 8
+ms.service: dynamics-365-op
 search.app:
   - financeandoperationsonprem-docs
 ---
@@ -27,6 +25,7 @@ This article describes the capabilities for generating, publishing, and printing
 You can upgrade solutions that are built on the Microsoft Dynamics AX 2012 SQL Reporting Services framework, or you can take advantage of the modern solutions that are available in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com).
 
 ## Document publishing services: secure, reliable, and convenient
+
 Employees spend lots of time on the go. Therefore, businesses depend on their employees' ability to stay productive while they work remotely. However, even today, documents remain critical for business transactions and record keeping.
 
 From their mobile devices, users can print documents on network printers. Users can also automate the creation of business documents and use built-in tools to configure instructions for routing documents to multiple recipients.

@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.31. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.31 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
+ms.topic: conceptual
+ms.date: 04/19/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
-ms.date: 11/07/2022
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
@@ -53,7 +53,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Production control | Enable use of a numpad in the sign-in page | This feature lets admins add a numpad control to the sign-in page for production floor execution. Workers can then sign in by using the numpad to enter their badge ID or personal number. |
 | Sales and marketing | Settle customer payment deductions using the matching invoice | <p>This feature adds an option that lets you settle customer payment deductions by using the invoice that is selected for each deduction. When you use this option, the system automatically settles deduction transactions by using the matching invoice, if an open balance exists for that invoice. Otherwise, the deduction isn't automatically settled. If you don't use this option, the system settles deduction transactions by using the open amount for payment invoices, as was the standard behavior in Supply Chain Management version 10.0.24 and earlier.</p><p>This feature adds a new **Settle customer payment deductions** field to the **Accounts receivable parameters** page. Set this field to *Match to invoice* to use the new functionality. Set it to *Match to open payments* to use the previous behavior.</p><p>By default, when you first enable this feature, the **Settle customer payment deductions** field is set to *Match to invoice* (that is, the new behavior is used). The *Match to open payments* option is provided mainly to support legacy integration scenarios. |
 | Transportation management | Generate data manually on voyage editor | This feature lets you manually generate data for the **Voyage editor** page as it's required. Because data is no longer generated each time that a filter value is changed, this feature helps improve system performance and the user experience. |
-| Warehouse management | Location directive scopes | <p>This feature gives you more flexibility when you design location directives, and it helps reduce redundant configurations. It adds a **Scopes** option to the **Location directives** page. This option replaces the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values).</p><p>For more information, see [Work with location directives](../warehousing/create-location-directive.md).</p> |
+| Warehouse management | Location directive scopes | <p>This feature gives you more flexibility when you design location directives, and it helps reduce redundant configurations. It adds a **Scopes** option to the **Location directives** page. This option replaces the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values).</p><p>Learn more in [Work with location directives](../warehousing/create-location-directive.md).</p> |
 
 ## New and updated documentation resources
 
@@ -64,11 +64,11 @@ We have recently added or significantly updated the following help articles. The
 | Master planning | [Master planning for products with limited shelf life](../master-planning/planning-optimization/shelf-life.md)<br>[Run planning for a subset of items](../master-planning/planning-optimization/plan-filters.md) |
 | Warehouse management | [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.31 includes platform updates. Learn more in [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md).
 
 ### Bug fixes
 

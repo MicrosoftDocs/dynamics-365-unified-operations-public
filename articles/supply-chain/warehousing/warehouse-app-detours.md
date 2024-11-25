@@ -1,16 +1,14 @@
 ---
 title: Configure detours for steps in mobile device menu items
-description: This article describes how to configure detours for menu items so that workers can park the current task, perform another task, and then return to the original task without losing any information.
+description: Learn how to configure detours for menu items so that workers can park the current task, perform another task, and return to the original task without data loss.
 author: Mirzaab
-ms.date: 09/01/2022
-ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.30
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 ---
 
 # Configure detours for steps in mobile device menu items
@@ -34,7 +32,7 @@ Before you can configure detours for steps in mobile device menu items, you must
     - *Warehouse management app detours*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
     - *Multi-level detours for the Warehouse Management mobile app*<br>(As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
     - *Auto-submit detour steps for the Warehouse Management mobile app*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
-1. If the *Warehouse management app detours* and/or *Multi-level detours for the Warehouse Management mobile app* features were't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. If the *Warehouse management app detours* and/or *Multi-level detours for the Warehouse Management mobile app* features were't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
 
 ## Configure a detour from a menu-specific override
@@ -45,9 +43,12 @@ Use the following procedure to set up a detour from a menu-specific override.
 1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and then select the value in the **Step ID** column.
 1. On the page that appears, on the **Available detours (menu items)** FastTab, you can specify the menu item that should act as a detour. You can also select which field values from the main task should automatically be copied to and from the detour. For examples that show how to use these settings, see the scenarios later in this article.
 
+> [!IMPORTANT]
+> Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. For details about how to hide menu items, see [Mobile device menu](configure-mobile-devices-warehouse.md#mobile-device-menu)
+
 ## <a name="scenario-1"></a>Sample scenario 1: Sales picking where a location inquiry acts as a detour
 
-This scenario shows how to configure a location inquiry as a detour in a worker-directed sales picking task flow. This detour will enable workers to look up all the license plates in the location that they are picking from and pick the license plate that they want to use to complete the pick. This type of detour might be useful if the bar code is damaged and therefore unreadable by the scanner device. Alternatively, it might be useful if a worker must learn what is actually on hand in the system. Note that this scenario works only if you're picking from license plate–controlled locations.
+This scenario shows how to configure a location inquiry as a detour in a worker-directed sales picking task flow. This detour will enable workers to look up all the license plates in the location that they are picking from and pick the license plate that they want to use to complete the pick. This type of detour might be useful if the bar code is damaged and therefore unreadable by the scanner device. Alternatively, it might be useful if a worker must learn what is actually on hand in the system. This scenario works only if you're picking from license plate–controlled locations.
 
 ### Enable sample data
 
@@ -148,7 +149,7 @@ In this procedure, you'll do a location inquiry by using the Warehouse Managemen
 1. Select **Movement**.
 1. Notice that the license plate has been copied from the card that you selected. Confirm the value.
 1. You can now follow the standard task flow to complete the movement. After the work is completed, open the actions menu, and select **Cancel**.
-1. You're returned to the **Location inquiry** page. Note that the values aren't automatically updated. Therefore, you must manually refresh the page to see the changes from the movement detour.
+1. You're returned to the **Location inquiry** page. The values aren't automatically updated. Therefore, you must manually refresh the page to see the changes from the movement detour.
 
 > [!NOTE]
 > The *Multi-level detours for the Warehouse Management mobile app* feature enables you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table. (As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)

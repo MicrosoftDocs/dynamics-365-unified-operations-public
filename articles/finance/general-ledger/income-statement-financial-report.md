@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Income statement financial report
-description: This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
+description: Learn about the default report for income statements. It also describes the building blocks that are associated with this report.
 author: jcart1106
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jcart
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
 ---
 
 # Income statement financial report

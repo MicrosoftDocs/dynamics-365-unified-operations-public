@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Procurement
-description: This article explains procurement in Asset Management.
-author: johanhoffmann
-ms.date: 10/15/2019
+description: Learn about procurement in Asset Management, which lets you create a purchase order or a purchase requisition from a work order.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 10/15/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac 
+ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage 
 ---
 
 # Procurement

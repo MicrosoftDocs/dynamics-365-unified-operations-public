@@ -4,22 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.26 (May 2022)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.26. 
 author: josaw1
-ms.date: 04/22/2022
+ms.date: 04/12/2024
 ms.topic: article
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2022-03-31 
 ms.dyn365.ops.version: 10.0.26

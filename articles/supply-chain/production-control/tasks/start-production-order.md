@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Start a production order
-description: This procedure shows how to start a production order on the shop floor.
+description: Learn how to start a production order on the shop floor, including a step-by-step process for starting production orders using the USMF demo data company.
 author: johanhoffmann
-ms.date: 11/11/2016
-ms.topic: how-to
-ms.prod:  
-ms.technology:  
-
-# optional metadata
-
-ms.search.form: JmgRegistrationStartJob
-audience: Application User
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: how-to
+ms.date: 11/11/2016
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form: JmgRegistrationStartJob
 ---
+
 # Start a production order
 
 [!include [banner](../../includes/banner.md)]

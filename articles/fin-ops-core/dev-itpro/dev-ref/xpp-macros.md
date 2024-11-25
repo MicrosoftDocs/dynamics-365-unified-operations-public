@@ -1,12 +1,13 @@
 ---
 title: Macros in X++
-description: This article describes how to create and use macros in X++.
+description: Learn how to create and use macros in X++, including outlines of define and if directives, including using and testing Macro values.
 author: josaw1
-ms.date: 08/27/2021
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/27/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

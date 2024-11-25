@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00010 GST - Generate GAF files in the required format
-description: This procedure walks you through generating the Malaysia GAF file. 
+description: Learn about generating the Malaysia GAF file, including a step-by-step process for specifying file formats to use in the general ledger parameters. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, DefaultDashboard, LedgerParameters, EnumLookupForm_RU   
+ms.custom:
+ms.reviewer: johnmichalak    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ERWorkspace, ERSolutionTable, DefaultDashboard, LedgerParameters, EnumLookupForm_RU
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00010 GST - Generate GAF files in the required format
 
 [!include [banner](../../includes/banner.md)]
@@ -51,7 +42,7 @@ This procedure walks you through generating the Malaysia GAF file. You must be i
     * Save the GAF xml report.  
     * Click Save as and navigate to the location to save the file.    
     * Open and validate the GAF xml file.  
-    * Click Open and select Internet explorer'.  Validate the GAF xml file and then close the xml file.    
+    * Click Open and select Microsoft Edge.  Validate the GAF xml file and then close the xml file.    
 
 
 

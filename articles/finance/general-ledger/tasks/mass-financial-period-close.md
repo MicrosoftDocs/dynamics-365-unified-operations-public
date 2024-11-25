@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Mass financial period close
-description: This article shows how to place a period on hold or permanently close a period or more than one legal entity at a time. 
+description: Learn how to place a period on hold or permanently close a period or more than one legal entity at a time with a step-by-step process. 
 author: aprilolson
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc    
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Mass financial period close
 
 [!include [banner](../../includes/banner.md)]

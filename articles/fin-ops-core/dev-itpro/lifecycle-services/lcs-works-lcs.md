@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Lifecycle Services for finance and operations apps customers
-description: This article describes Microsoft Dynamics 365 Lifecycle Services for finance and operations apps customers.
+description: Learn about Microsoft Dynamics 365 Lifecycle Services for finance and operations apps customers, including methodologies and milestones.
 author: angelmarshall
-ms.date: 02/08/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: overview
+ms.date: 02/08/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
 ---
 
 # Lifecycle Services for finance and operations apps customers
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article is intended for customers who have signed up for the current versions of finance and operations apps. Partners who are working with customers to help them move through the lifecycle of their Microsoft Dynamics 365 Lifecycle Services project will also find this information useful. 
 

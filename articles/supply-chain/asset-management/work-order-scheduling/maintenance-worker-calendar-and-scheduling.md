@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Maintenance worker calendar and scheduling
-description: This article explains the maintenance worker calendar in relation to scheduling in Asset Management.
-author: johanhoffmann
-ms.date: 08/19/2019
+description: Learn about the maintenance worker calendar in relation to scheduling in Asset Management, including an example of a maintenance worker relating to a resource.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 08/19/2019
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: EntAssetWorker 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Maintenance worker calendar and scheduling

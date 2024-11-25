@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Look up applicable prices and discounts
-description: This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. 
-author: Henrikan
+description: Learn how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order.
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: how-to
 ms.date: 11/10/2016
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form:
 ---
+
 # Look up applicable prices and discounts
 
 [!include [banner](../../includes/banner.md)]

@@ -1,16 +1,16 @@
 ---
 title: Action design guidelines
-description: This article provides action design guidelines for mobile apps.
+description: Learn about action design guidelines for mobile apps, including code examples and answers to various questions.
 author: jasongre
-ms.date: 05/24/2022
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.collection: get-started
 ---
 
 # Action design guidelines

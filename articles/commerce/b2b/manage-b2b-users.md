@@ -1,19 +1,16 @@
 ---
 title: Manage business partner users on B2B e-commerce websites
 description: This article describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
-author: josaw1
-ms.date: 04/19/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+author: BrianShook
+ms.date: 11/02/2023
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.14
-ms.search.industry: retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Manage business partner users on B2B e-commerce websites
@@ -50,7 +47,7 @@ To approve a business partner request in Commerce headquarters, follow these ste
 > [!NOTE]
 > To ensure that the new customer records are sent to the channel database, at least one of the address books that are associated with the customer should be included in the customer address book that is associated with the online store. You can automate this process by configuring the address book on the default customer of the online store so that the system copies the address book value to every new customer.
 
-After the customer hierarchy records are synchronized to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. For information about how to enable the Azure Active Directory (Azure AD) B2C identity provider record to be linked to the B2B customer record that was created on prospect approval, see [Enable automatic linking](../identity-record-linking.md).
+After the customer hierarchy records are synchronized to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. For information about how to enable the Microsoft Entra B2C identity provider record to be linked to the B2B customer record that was created on prospect approval, see [Enable automatic linking](../identity-record-linking.md).
 
 ## Notify B2B prospects when they are approved or rejected
 
@@ -75,7 +72,7 @@ After the **P-0001** and **Synchronize customers and channel requests** jobs hav
 
 Next, run the **1010 (Customers)** job to synchronize the new business partner user to the channel database.
 
-After the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. For information about how to enable the Azure AD B2C identity provider record to be linked to the B2B customer record that was created in Commerce headquarters, see [Enable automatic linking](/dynamics365/commerce/identity-record-linking.md).
+After the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. For information about how to enable the Microsoft Entra B2C identity provider record to be linked to the B2B customer record that was created in Commerce headquarters, see [Enable automatic linking](/dynamics365/commerce/identity-record-linking).
 
 ## Edit business partner user details
 
@@ -92,7 +89,7 @@ To remove a business partner user, follow these steps.
 - Go to **My Account > Organization users \> View details**, and select the **Remove** button ("X" symbol). When a confirmation message appears, confirm that you want to remove the user. The change takes effect only after the **P-0001**, **Synchronize customers and channel requests**, and **1010 (Customers)** jobs have been run.
 
 > [!NOTE]
-> When you remove a user from the list of users who can access the B2B e-commerce website, the corresponding customer record is removed from the business partner's customer hierarchy record. However, the customer record itself isn't deleted from Commerce headquarters.
+> When you remove a user from the list of users who can access the B2B e-commerce website, the corresponding customer record is removed from the business partner's customer hierarchy record. However, the customer record itself isn't deleted from Commerce headquarters, and the customer can still sign in to the B2B site.
 
 ## Onboard existing customers as business partners on the B2B e-commerce website
 
@@ -114,7 +111,7 @@ To onboard business partners and users in Commerce headquarters, follow these st
 1. Select the **Admin** role for the customer that should be designated as the administrator.
 1. Repeat this process to add more customers to the hierarchy.
 
-## Additional information
+## Related information
 
 - All the jobs that are mentioned in this article can be configured to run on a schedule in a batch format. The expectation is that business partners will configure batch jobs as required.
 - Currently, only one user/customer record can be designated as an administrator user, and that role can be changed only in Commerce headquarters. There is no support for self-service capabilities that let business partners to designate multiple administrators or change administrators from B2B e-commerce websites.

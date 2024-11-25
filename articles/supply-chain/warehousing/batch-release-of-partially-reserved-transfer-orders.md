@@ -1,28 +1,12 @@
 ---
-# required metadata
-
 title: Batch release of partially reserved transfer orders
-description: This article describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
-author: perlynne
-ms.date: 05/26/2017
+description: Learn how to set up and apply batch release of partially reserved transfer orders from a mobile device with an outline on where batch releases apply.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
-audience: Application User
-# ms.devlang: 
+ms.date: 05/26/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: perlynne
-ms.search.validFrom: 2017-09-20
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 ---
 
 # Batch release of partially reserved transfer orders
@@ -75,6 +59,7 @@ The **Quantity** parameter specifies whether the whole quantity or the physicall
 
 - To set the **Quantity** and **Allow release of partially released orders** parameters for transfer orders, go to **Warehouse management \> Release to warehouse \> Automatic release of transfer orders**.
 - To set the **Quantity** and **Allow release of partially released orders** parameters for sales orders, go to **Warehouse management \> Release to warehouse \> Automatic release of sales orders**.
+- To set the **Quantity** and **Allow release of partially released orders** parameters for outbound shipment orders, go to **Warehouse management \> Release to warehouse \> Automatic release of outbound shipment orders**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,13 +1,13 @@
 ---
 title: List Panel subpattern
-description: This article provides information about the List Panel form subpattern, which manages two lists that move data between each other.
+description: Learn about the List Panel form subpattern, which manages two lists that move data between each other, including overviews on usage, wireframes, and pattern changes.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

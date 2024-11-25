@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Define audit policies for source documents
-description: This article explains how to set up and run audit policy rules. 
+description: Learn how to set up and run audit policy rules and define audit policies for source documents, including a step-by-step process using the USMF demo company.
 author: panolte
-ms.date: 08/20/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 04/05/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Define audit policies for source documents
@@ -29,16 +19,16 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article explains how to set up and run audit policy rules. The example uses expense reports with the hotel expense type. This procedure uses the USMF demo company. The auditor role contains the correct permissions in order to perform these tasks.
 
-1. In the navigation pane, go to **Modules > Audit workbench > Setup > Policy rule type**.
+1. Go to **Audit workbench > Setup > Policy rule type**.
 2. Select **New**.
 3. In the **Rule name** field, type a value.
 4. In the **Description** field, type a value.
-5. In the **Query name** field, select **Expense report line**
-6. In the **query type** field, select **Aggregate**
-7. In the **Legal entity** field, select **Legal entity**
-8. In the **Document date reference** field, select **Modified date and time**
+5. In the **Query name** field, select **Expense report line**.
+6. In the **Query type** field, select **Aggregate**.
+7. In the **Legal entity** field, select **Legal entity**.
+8. In the **Document date reference** field, select **Modified date and time**.
 9. Select **Save**.
-10. In the navigation pane, go to **Modules > Audit workbench > Setup > Audit policies**.
+10. In the navigation pane, go to **Audit workbench > Setup > Audit policies**.
 11. Select **New**.
 12. In the **Name** field, type a value.
 13. Expand the **Policy organizations** section.
@@ -47,7 +37,7 @@ This article explains how to set up and run audit policy rules. The example uses
 16. In the tree, select **Contoso Retail USA**, then select **Add**.
 17. Collapse the **Policy organizations** section.
 18. Expand the **Policy rules** section.
-19. In the list, find and select the Policy Rule that was created previously.
+19. In the list, find and select the **Policy rule** that was created previously.
 20. Select **Create policy rule**.
 21. In the **Effective date** field, enter a date and time.
 22. Select **Filter**.
@@ -75,7 +65,7 @@ This article explains how to set up and run audit policy rules. The example uses
 44. In the **Document selection starting date** field, enter a date and time.
 45. In the **Document selection ending date** field, enter a date and time.
 46. Select **Run test**.
-47. On the Action Pane, select **Audit policy**.
+47. On the Action pane, select **Audit policy**.
 48. Select **Additional options**.
 49. In the **Starting date** field, enter a date and time.
 50. In the **Ending date** field, enter a date and time.
@@ -83,7 +73,7 @@ This article explains how to set up and run audit policy rules. The example uses
 52. Expand the **Run in the background** section.
 53. Select **Yes** in the **Batch processing** field.
 54. Select **OK**.
-55. In the navigation pane, go to **Modules > Audit workbench > Audit cases**.
+55. In the navigation pane, go to **Audit workbench > Audit cases**.
 56. In the list, find and select the desired record.
 57. Expand the **Associations** section.
 58. In the list, find and select the desired record.

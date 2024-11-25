@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Whole amount and Interval calculation options for sales tax codes
-description: This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
+description: Learn about the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 author: kailiang
-ms.date: 10/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxData, TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 5624
-ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 10/24/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: TaxData, TaxTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ---
 
 # Whole amount and Interval calculation options for sales tax codes

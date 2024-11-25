@@ -1,24 +1,22 @@
 ---
 title: Share ER configurations in RCS/the Global repository with external organizations
-description: This article explains how to share Electronic reporting (ER) configurations in Microsoft Regulatory Configuration Services (RCS)/the Global repository directly with external organizations.
+description: Learn how to share Electronic reporting (ER) configurations in Microsoft Regulatory Configuration Services (RCS)/the Global repository with external organizations.
 author: kfend
-ms.date: 05/04/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 05/04/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: AX 10.0.9
-ms.assetid: 
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
+ms.dyn365.ops.version: AX 10.0.9
 ---
 
 # Share Electronic reporting (ER) configurations in Regulatory Configuration Services (RCS) Global repository with external organizations
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to share Electronic reporting (ER) configurations and then publish them to external organizations.
 

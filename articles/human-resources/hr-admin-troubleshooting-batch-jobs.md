@@ -6,9 +6,6 @@ description: This article explains how to resolve performance issues with Micros
 author: twheeloc
 ms.date: 06/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BatchJob, BatchJobEnhanced
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: Platform update 24
 
 
 # Optimize performance by scheduling batch jobs after hours
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

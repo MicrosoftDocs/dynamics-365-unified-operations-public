@@ -1,15 +1,15 @@
 ---
 title: Routes and operations
-description: This article provides information about routes and operations. 
+description: Learn about routes and operations, including definitions for routes and outlines on routes, parallel operations, and operation relations. 
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart, 
 ms.topic: conceptual
-ms.date: 01/09/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 04/19/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart
 ---
 
 # Routes and operations
@@ -237,7 +237,7 @@ Therefore, when **Activation** is selected for the row with a **Route/job type**
 > [!NOTE]
 > When you upgrade versions, you might encounter the following error: *CRL Error occurred while invoking the scheduling engine*. If you receive this error, go to the **Route groups** page and for all the routes where you have activated the **Route/job type** *Overlap*, clear the **Job management**, **Working time**, and **Capacity** check boxes.
 
-## Additional resources
+## Related information
 
 - [Bills of materials and formulas](bill-of-material-bom.md)
 - [Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)

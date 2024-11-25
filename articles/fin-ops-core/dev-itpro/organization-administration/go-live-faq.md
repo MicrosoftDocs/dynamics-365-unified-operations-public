@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Go-live for implementation projects FAQ
-description: This article lists frequently asked questions about how to go live with an implementation project.
+description: Access frequently asked questions about how to go live with an implementation project and how to configure and request production environments.
 author: alejandra-cabrales
-ms.date: 06/22/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: alcabral
+ms.topic: article
+ms.date: 06/22/2022
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-01-31
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Go-live for implementation projects FAQ

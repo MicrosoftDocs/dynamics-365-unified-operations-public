@@ -1,16 +1,12 @@
 ---
 title: Procurement FAQ
-description: This article provides answers to frequently asked questions (FAQs) about the procurement functionality of Supply Chain Management
-author: GalynaFedorova
-ms.date: 05/31/2021
+description: Access answers to frequently asked questions (FAQs) about the procurement functionality of Supply Chain Management, including questions about describing issues.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
-ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
-audience: Application User
+ms.date: 05/31/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yanansong
-ms.search.validFrom: 2021-05-31
-ms.dyn365.ops.version: 10.0.13
+ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 ---
 
 # Procurement FAQ

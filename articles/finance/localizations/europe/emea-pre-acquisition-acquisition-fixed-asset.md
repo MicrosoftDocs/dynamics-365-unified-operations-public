@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Post the pre-acquisition of a fixed asset
-description: This article explains how to set up and post fixed asset pre-acquisitions.
+description: Learn how to set up and post fixed asset pre-acquisitions, including a step-by-step processes on posting a pre-acquisition of a fixed asset.
 author: EvgenyPopovMBS
-ms.date: 10/31/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/31/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: 
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Post the pre-acquisition of a fixed asset

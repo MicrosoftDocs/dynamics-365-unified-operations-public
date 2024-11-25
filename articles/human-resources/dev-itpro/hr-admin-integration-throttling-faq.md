@@ -6,9 +6,6 @@ description: This article provides answers to some frequently asked questions (F
 author: twheeloc
 ms.date: 01/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -18,7 +15,6 @@ audience: IT Pro
 # 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

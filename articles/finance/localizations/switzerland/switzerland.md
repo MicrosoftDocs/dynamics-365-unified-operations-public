@@ -1,15 +1,13 @@
 ---
 title: Switzerland overview
-description: This article provides links to documentation resources for Switzerland.
+description: Access links to documentation resources for Switzerland, including links directing to resources about ESR customer payments import and VAT declarations.
 author: kfend
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Switzerland
 ms.author: kfend
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Switzerland
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

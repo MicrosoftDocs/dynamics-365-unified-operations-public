@@ -1,30 +1,27 @@
 ---
 title: Configure multiple B2C tenants in a Commerce environment
-description: This article describes when and how to set up multiple per-channel Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user authentication in a dedicated Dynamics 365 Commerce environment.
+description: This article describes when and how to set up multiple per-channel Microsoft Microsoft Entra business-to-consumer (B2C) tenants for user authentication in a dedicated Dynamics 365 Commerce environment.
 author: BrianShook
-ms.date: 03/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-12
-ms.dyn365.ops.version: 
-ms.search.industry: retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Configure multiple B2C tenants in a Commerce environment
 
 [!include [banner](includes/banner.md)]
 
-This article describes when and how to set up multiple Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants per channel for user authentication in a dedicated Dynamics 365 Commerce environment.
+This article describes when and how to set up multiple Microsoft Microsoft Entra business-to-consumer (B2C) tenants per channel for user authentication in a dedicated Dynamics 365 Commerce environment.
 
-Dynamics 365 Commerce uses the Azure AD B2C cloud identity service to support user credentials and authentication flows. Users can use the authentication flows to sign up, sign in, and reset their password. Azure AD B2C stores a user's sensitive authentication information, such as the user name and password. The user record is unique to each B2C tenant, and it uses either user name (email address) credentials or social identity provider credentials.
+Dynamics 365 Commerce uses the Microsoft Entra B2C cloud identity service to support user credentials and authentication flows. Users can use the authentication flows to sign up, sign in, and reset their password. Microsoft Entra B2C stores a user's sensitive authentication information, such as the user name and password. The user record is unique to each B2C tenant, and it uses either user name (email address) credentials or social identity provider credentials.
 
-In most cases, a single Azure AD B2C tenant is used in a Commerce environment. Commerce customers can then create and publish multiple sites in the same Commerce environment, and the same customer credentials will be used across these sites. However, if the sites in the environment should be treated as different brands and appear to users as separate businesses, a B2C tenant can be configured for the channel that is used for the site/brand separation.
+In most cases, a single Microsoft Entra B2C tenant is used in a Commerce environment. Commerce customers can then create and publish multiple sites in the same Commerce environment, and the same customer credentials will be used across these sites. However, if the sites in the environment should be treated as different brands and appear to users as separate businesses, a B2C tenant can be configured for the channel that is used for the site/brand separation.
 
 ## Considerations when multiple B2C tenants are set up per channel
 
@@ -52,31 +49,31 @@ If you decide that your business requires distinct B2C tenants per channel in th
 
 To configure B2C tenants in your environment, complete the relevant procedures in this section.
 
-### Add an Azure AD B2C tenant
+### Add a Microsoft Entra B2C tenant
 
-To add an Azure AD B2C tenant to your environment, follow these steps.
+To add a Microsoft Entra B2C tenant to your environment, follow these steps.
 
-1. Sign in to Commerce site builder for your environment as a system admin. To configure Azure AD B2C tenants, you must be a system admin for the Commerce environment.
+1. Sign in to Commerce site builder for your environment as a system admin. To configure Microsoft Entra B2C tenants, you must be a system admin for the Commerce environment.
 1. In the left navigation pane, select **Tenant Settings** to expand it.
 1. Select **B2C Settings**, and then select **Manage**.
 1. Select **Add B2C Application**, and then enter the following information:
 
-    - **Application Name**: Enter the name that should be used for the application in the context of managing it in Commerce. We recommend that you use the application name that you chose when you set up the Azure AD B2C application in the Azure portal. In this way, you can help reduce confusion when you manage B2C tenants in Commerce.
+    - **Application Name**: Enter the name that should be used for the application in the context of managing it in Commerce. We recommend that you use the application name that you chose when you set up the Microsoft Entra B2C application in the Azure portal. In this way, you can help reduce confusion when you manage B2C tenants in Commerce.
     - **Tenant Name**: Enter the B2C tenant name as it appears in the Azure portal.
     - **Forget Password Policy ID**: Enter the policy ID (the name of the policy in the Azure portal).
     - **Signup Signin Policy ID**: Enter the policy ID (the name of the policy in the Azure portal).
-    - **Client GUID**: Enter the Azure AD B2C tenant ID as it appears in the Azure portal (not the application ID for the B2C tenant).
+    - **Client GUID**: Enter the Microsoft Entra B2C tenant ID as it appears in the Azure portal (not the application ID for the B2C tenant).
     - **Edit Profile Policy ID**: Enter the policy ID (the name of the policy in the Azure portal).
 
-1. When you've finished entering this information, select **OK** to save your changes. Your new Azure AD B2C tenant should now appear in the list under **Manage B2C Applications**.
+1. When you've finished entering this information, select **OK** to save your changes. Your new Microsoft Entra B2C tenant should now appear in the list under **Manage B2C Applications**.
 
 > [!NOTE]
 > You should leave fields such as **Scope**, **Non Interactive Policy ID**, **Non Interactive Client ID**, **Login Custom Domain**, and **Sign Up Policy ID** blank unless the Dynamics 365 Commerce team instructs you to set them.
 
 
-### Manage or delete an Azure AD B2C tenant
+### Manage or delete a Microsoft Entra B2C tenant
 
-1. Sign in to Commerce site builder for your environment as a system admin. To configure Azure AD B2C tenants, you must be a system admin for the Commerce environment.
+1. Sign in to Commerce site builder for your environment as a system admin. To configure Microsoft Entra B2C tenants, you must be a system admin for the Commerce environment.
 1. In the left navigation pane, select **Tenant Settings** to expand it.
 1. Select **B2C Settings**, and then select **Manage**.
 1. To edit a B2C tenant, select the pencil symbol next to it. To delete a B2C tenant, select the trash can symbol next to it.
@@ -89,14 +86,14 @@ To add an Azure AD B2C tenant to your environment, follow these steps.
 
 ## Configure your channel with a B2C tenant
 
-1. Sign in to Commerce site builder for your environment as a system admin. To configure Azure AD B2C tenants, you must be a system admin for the Commerce environment.
+1. Sign in to Commerce site builder for your environment as a system admin. To configure Microsoft Entra B2C tenants, you must be a system admin for the Commerce environment.
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Select **Channels**, and then select the channel to configure.
-1. In the properties pane on the right, in the **Select B2C Application** field, select the configured Azure AD B2C tenant to use for this channel.
+1. In the properties pane on the right, in the **Select B2C Application** field, select the configured Microsoft Entra B2C tenant to use for this channel.
 1. On the command bar, select **Save and Publish** to commit the new or updated configuration.
 
 > [!WARNING]
-> If you change the B2C application that is assigned to the channel, you remove the current references that have been established for any users who have already signed up in the environment. In this case, any credentials that are associated with the currently assigned B2C application won't be available to users. Therefore, change a channel Azure AD B2C configuration only if you're setting up the channel for the first time, and no users have been able to sign up. Otherwise, users might have to sign up again to establish a record in the new Azure AD B2C tenant.
+> If you change the B2C application that is assigned to the channel, you remove the current references that have been established for any users who have already signed up in the environment. In this case, any credentials that are associated with the currently assigned B2C application won't be available to users. Therefore, change a channel Microsoft Entra B2C configuration only if you're setting up the channel for the first time, and no users have been able to sign up. Otherwise, users might have to sign up again to establish a record in the new Microsoft Entra B2C tenant.
 ## Additional resources
 
 [Configure your domain name](configure-your-domain-name.md)

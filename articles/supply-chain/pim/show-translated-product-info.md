@@ -1,15 +1,13 @@
 ---
 title: Show translated product names and descriptions in the UI
-description: This article describes how to translate product names and descriptions, and how to set up the UI to show product information in each user's preferred language.
-author: johanhoffmann
-ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductParameters, EcoResProductDetailsExtended, SysTranslationDetail, SysUserSetup
+description: Learn how to translate product names and descriptions, and how to set up the UI to show product information in each user's preferred language.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 10/14/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductParameters, EcoResProductDetailsExtended, SysTranslationDetail, SysUserSetup
 ---
 
 # Show translated product names and descriptions in the UI

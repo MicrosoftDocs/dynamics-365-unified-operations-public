@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16 with an outline on included features. 
 author: kamaybac
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-30
-ms.dyn365.ops.version: 10.0.16
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
@@ -40,15 +26,15 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- [Customizable shop floor execution interface](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
+- [Customizable shop floor execution interface](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Learn more in [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
 
-- [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
+- [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Learn more in [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
 
-- Unified number sequence for job IDs<br> - For more information, see [Unified number sequence for job IDs](../production-control/unified-job-ids.md).
+- Unified number sequence for job IDs<br> - Learn more in [Unified number sequence for job IDs](../production-control/unified-job-ids.md).
 
-- [Validate license plates on source document lines](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
+- [Validate license plates on source document lines](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Learn more in [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
 
-- [Warehouse management outbound workload visualization](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - For more information, see [Outbound workload visualization](../warehousing/outbound-workload-visualization.md)
+- [Warehouse management outbound workload visualization](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Learn more in [Outbound workload visualization](../warehousing/outbound-workload-visualization.md)
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
@@ -57,7 +43,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 We have recently added or significantly updated the following help articles. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
 - [Attribute-based sales prices for constraint-based product configuration](../pim/attribute-based-product-configurator.md)
-- [Automatic allocation of charges](../procurement/automatic-charges-allocation.md)
+- [Automatic application of charges](../procurement/automatic-charges-allocation.md)
 - [Hazardous materials overview](../pim/hazmat-overview.md) (and related articles)
 - [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md)
 - [Purchasing cXML Enhancements](../procurement/purchasing-cxml-enhancements.md)
@@ -66,11 +52,11 @@ We have recently added or significantly updated the following help articles. The
 - [Work split](../warehousing/work-split.md)
 - [Work with location directives](../warehousing/create-location-directive.md)
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 includes platform updates. To learn more, see [Platform updates for version 10.0.16 of finance and operations apps (February 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 includes platform updates. Learn more in [Platform updates for version 10.0.16 of finance and operations apps (February 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### Bug fixes
 

@@ -1,15 +1,13 @@
 ---
 title: View independent software vendor license status
-description: The article explains how to view the status of an independent software vendor in finance and operations apps.
+description: Learn about how to view the status of an independent software vendor in finance and operations apps, including additional resources.
 author: Peakerbl
-ms.date: 04/20/2021
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/20/2021
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.17
 ---

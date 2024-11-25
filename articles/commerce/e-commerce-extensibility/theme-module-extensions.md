@@ -2,19 +2,17 @@
 title: Extend a theme to add module extensions
 description: This article describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 05/28/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
+
 # Extend a theme to add module extensions
 
 [!include [banner](../includes/banner.md)]

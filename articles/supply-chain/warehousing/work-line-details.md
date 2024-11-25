@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Work line details
-description: This article provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
+description: Learn about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 07/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
 ---
 
 # Work line details
@@ -68,7 +55,7 @@ If you're working with the **USMF** demo data, you should first make sure that y
 
 Follow these steps to verify that enough inventory is available and to make any adjustments that are required.
 
-1. Go to **Warehouse management \> Setup \> Location directives**, and determine which picking locations are used for sales order picking at warehouse 51. (For more information, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).)
+1. Go to **Warehouse management \> Setup \> Location directives**, and determine which picking locations are used for sales order picking at warehouse 51. (Learn more in [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).)
 1. Check the inventory levels at the relevant locations.
 1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow to adjust the inventory.
 

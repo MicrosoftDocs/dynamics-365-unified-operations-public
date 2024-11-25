@@ -1,18 +1,16 @@
 ---
 title: Invoice factures processing and printing
-description: This article provides information about working with invoice factures.
-author: AdamTrukawka
-ms.date: 08/12/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about working with invoice factures, including outlines on setting up number sequences for factures and processsing and printing invoice-factures.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.0
-ms.search.form: 
 ---
 
 # Invoice factures processing and printing

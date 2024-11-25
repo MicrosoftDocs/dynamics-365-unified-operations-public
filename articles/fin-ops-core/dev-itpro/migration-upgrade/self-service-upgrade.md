@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Self-service upgrade to the latest version
-description: This article describes the process for moving to the latest update of finance and operations.
+description: Learn about the process for moving to the latest update of finance and operations, including understanding which version to select for upgrade.
 author: laneswenka
-ms.date: 11/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 08/09/2024
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-04-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # Self-service upgrade to the latest version
@@ -110,8 +98,6 @@ Before you begin your upgrade, we highly recommend that you make sure that your 
 ### Begin the upgrade
 
 In your sandbox environment, on the **Maintain** menu, select **Upgrade**.
-
-<img src="media/UpgradeAutomation/01_Select.png" width="700px" alt="Maintain menu" />
 
 A dialog box appears, where you can select the latest combination of an application version and a platform update.
 

@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.11 of finance and operations apps (July 2020)
-description: This article lists the features are included in the platform updates for version 10.0.11 of finance and operations apps.
+description: Learn the features are included in the platform updates for version 10.0.11 of finance and operations apps released in July 2020.
 author: sericks007
-ms.date: 05/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: whats-new
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 04/12/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 35
-
 ---
+
 # Platform updates for version 10.0.11 of finance and operations apps (July 2020)
 
 [!include [banner](../../../finance/includes/banner.md)]

@@ -1,38 +1,22 @@
 ---
-# required metadata
-
 title: Workflow types report
-description: This article points you to a report that lists the available workflow types.
+description: Access links that point you to a report that lists the available workflow types, with an overview on how to create a workflow.
 author: ChrisGarty
-ms.date: 02/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 202694
-ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 02/16/2021
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 1
-
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ---
 
 # Workflow types report
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article points you to a report that lists the available workflow types.
 

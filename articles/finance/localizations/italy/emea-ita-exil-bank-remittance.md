@@ -1,18 +1,16 @@
 ---
 title: Configurable posting profiles for banks and remittance types
-description: This article provides information about how to configure posting profiles for banks and remittance types.
+description: Learn about how to configure posting profiles for banks and remittance types, including an outline on setting up a posting profile for a remittance journal.
 author: mrolecki
-ms.date: 03/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 03/09/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2020-06-01
-ms.dyn365.ops.version: 10.0.10
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.10
 ---
 
 # Configurable posting profiles for banks and remittance types

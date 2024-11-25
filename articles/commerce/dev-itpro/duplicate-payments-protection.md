@@ -4,8 +4,6 @@ description: This article describes how to enable duplicate payment protection f
 author: Reza-Assadi
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

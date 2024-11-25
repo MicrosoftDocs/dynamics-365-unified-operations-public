@@ -1,20 +1,16 @@
 ---
 title: Vendor electronic invoice import in Denmark
-description: This article explains how to configure and use vendor electronic invoice import for Denmark in Microsoft Dynamics 365 Finance.
+description: Learn how to configure and use vendor electronic invoice import for Denmark in Microsoft Dynamics 365 Finance, including prerequisites.
 author: ilikond
-ms.date: 10/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Denmark
 ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/06/2024
+ms.reviewer: johnmichalak
+ms.search.region: Denmark
 ms.search.validFrom: 2023-11-03
 ms.dyn365.ops.version: AX 10.0.38
-ms.custom: 853863
-ms.assetid: 
-ms.search.form: 
 ---
 
 # Vendor electronic invoice import in Denmark
@@ -28,7 +24,7 @@ This article explains how to configure and use vendor electronic invoice import 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Denmark.
-- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import (DK)** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest version of the Electronic reporting (ER) format configuration, named **Vendor Invoice Import (DK)**, must be imported. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
 > The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
@@ -90,7 +86,7 @@ You can optionally configure external codes for units of measure, if specific un
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external unit code that's expected in import files.
+4. In the **Value** section, in the **Value** field, enter the external unit code that's expected in import files.
 
 ## Import vendor electronic invoices
 

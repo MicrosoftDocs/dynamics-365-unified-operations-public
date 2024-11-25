@@ -1,12 +1,13 @@
 ---
 title: X++ compile-time functions
-description: This article lists the compile-time functions and describes their syntax, parameters, and return values.
+description: Learn about and access compile-time functions and describes their syntax, parameters, and return values. via an overview.
 author: josaw1
-ms.date: 11/03/2017
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 11/03/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

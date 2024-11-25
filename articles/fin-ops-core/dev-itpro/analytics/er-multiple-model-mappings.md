@@ -1,18 +1,16 @@
 ---
 title: Manage several derived mappings for a single model root
-description: This article explains how to manage several derived mappings that were configured for a single model root.
+description: Learn how to manage several derived mappings that were configured for a single model root and how to configure electronic reporting frameworks.
 author: kfend
-ms.date: 01/04/2021
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: how-to
+ms.date: 01/04/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Manage several derived mappings for a single model root

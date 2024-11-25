@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Install Export to Azure Data Lake add-in
-description: This article provides information about configuring the export to Azure Data Lake.
+description: Learn about configuring the export to Azure Data Lake and configuring various add-ins and Azure resources, including how to create an application in Microsoft Entra ID.
 author: MilindaV2
-ms.date: 10/16/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
+ms.topic: article
+ms.date: 08/19/2023
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-03-03
+ms.search.form:
 ms.dyn365.ops.version: Platform Update 33
 
 ---
@@ -47,14 +35,11 @@ The following step-by-step instructions guide you through the process.
 
 ## <a name="createServicePrincipal"></a> Create Service Principal for Microsoft Dynamics ERP Microservices
 
-The **Export to Azure Data Lake** feature is built using a microservice that exports finance and operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principal, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the **Microsoft Dynamics ERP Microservices** service principal to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
-
-> [!NOTE]
-> You need **Azure Active Directory global administrator** rights to perform these steps.
+The **Export to Azure Data Lake** feature is built using a microservice that exports finance and operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principal, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the **Microsoft Dynamics ERP Microservices** service principal to your Microsoft Entra. This step enables Microsoft Entra to authenticate the microservice. 
 
 To add the service principal, complete the following steps.
 
-1. Launch the Azure portal and go to the Azure Active Directory.
+1. Launch the Azure portal and go to the Microsoft Entra.
 2. On the left menu, select **Manage** > **Enterprise Applications**, and search for the following applications.
 
     | Application                          | App ID |
@@ -74,7 +59,7 @@ To add the service principal, complete the following steps.
     - If NuGet provider is required to continue, select **Y** to install it.
     - If an **Untrusted repository** message appears, select **Y** to continue.
 
-6. Run the following commands to add the application to the Azure Active Directory.
+6. Run the following commands to add the application to the Microsoft Entra.
 
     ```powershell
     Connect-AzureAD
@@ -84,18 +69,18 @@ To add the service principal, complete the following steps.
     New-AzureADServicePrincipal –AppId '0cdb527f-a8d1-4bf8-9436-b352c68682b2'
     ```
 
-7. Sign in as the Azure Active Directory administrator when prompted.
+7. Sign in as the Microsoft Entra administrator when prompted.
 
 ## <a name="ConfigureAzureResources"></a>Configure Azure Resources 
 
-To configure the export to Data Lake, create a storage account in your own Azure subscription. This storage account is used to store data. Next, create an Azure AD application ID that grants access to the root of your storage account. Your finance or operations apps use the Azure AD application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the name of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you need assistance from someone in your organization with the required permissions.
+To configure the export to Data Lake, create a storage account in your own Azure subscription. This storage account is used to store data. Next, create a Microsoft Entra application ID that grants access to the root of your storage account. Your finance or operations apps use the Microsoft Entra application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the name of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you need assistance from someone in your organization with the required permissions.
 
 The steps, which take place in the Azure portal, are as follows:
 
 > [!NOTE]
 > When you're working in the Azure portal, you're instructed to save several values for subsequent steps. You also provide some of these values to your finance and operations apps by using Lifecycle Services. You need Administrator access to Lifecycle Services in order to do this.
 
-1. [Create an application in Azure Active Directory](#createapplication)
+1. [Create an application in Microsoft Entra ID](#createapplication)
 2. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
 3. [Grant access control roles to applications](#grantaccess)
 4. [Create a key vault](#createkeyvault)
@@ -104,9 +89,9 @@ The steps, which take place in the Azure portal, are as follows:
 7. [Power Platform integration](#powerplatformintegration)
 8. [Install the Export to Data Lake add-in in Lifecycle Services](#installaddin)
 
-## <a name="createapplication"></a>Create an application in Azure Active Directory
+## <a name="createapplication"></a>Create an application in Microsoft Entra ID
 
-1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
+1. In the Azure portal, select **Microsoft Entra**, and then select **App registrations**.
 2. Select **New registration**, and enter the following information: 
 
     - **Name:** Enter a name for the app.
@@ -135,7 +120,7 @@ The Data Lake Storage account is used to store data from your finance and operat
 
 ## <a name="grantaccess"></a>Grant access control roles to applications 
 
-You need to grant your application permissions to read and write to the storage account. These permissions are granted by using Roles in Azure AD.
+You need to grant your application permissions to read and write to the storage account. These permissions are granted by using Roles in Microsoft Entra ID.
 
 1. In **Azure portal**, open the storage account that you created earlier.
 2. Select **Access Control (IAM)** in the left navigation. 
@@ -145,7 +130,7 @@ You need to grant your application permissions to read and write to the storage 
 6. In the **Select** field, select the application that you registered earlier.
 
     > [!NOTE]
-    > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
+    > Don't make any changes to the fields, **Assign access to** and **Microsoft Entra user, group, or service principal**.
 
 7. Select **Save**.
 8. Validate the storage account role assignment for [the application](#appid) you created earlier. 
@@ -216,7 +201,7 @@ You need the following information before you start. Keep the information handy 
 
 | Information you need for Export to Data lake add-in       | Where you can find it | Example |
 |-----------------------------------------------------------|-----------------------|---------|
-| Your environment Azure AD Tenant ID                       | Your Azure AD tenant ID in the Azure portal. Sign in to the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field. | 72f988bf-0000-0000-00000-2d7cd011db47 |
+| Your environment Microsoft Entra Tenant ID                       | Your Microsoft Entra tenant ID in the Azure portal. Sign in to the **Azure portal** and open the **Microsoft Entra** service. Open the **Properties** page and copy the value in the **Directory ID** field. | 72f988bf-0000-0000-00000-2d7cd011db47 |
 | DNS name of your key vault                                | This name should have been previously saved. Enter the [DNS name](#dnsname) of your key vault | `https://contosod365datafeedpoc.vault.azure.net/` |
 | The secret that contains the name of your storage account | If you used the suggested name, enter **storage-account-name**. If not, enter the [secret name](#suggest) you defined. | storage-account-name |
 | Secret that contains the Application ID                   | If you used the suggested name, enter **app-id**. If not, enter the [secret name](#suggest) you defined. | app-id |
@@ -242,11 +227,10 @@ In some cases, add-in installation might show a status of **Installation failed*
 
 | Error code and message | Resolution |
 |------------------------|------------|
-| **AppidUserError**: Failed to find Application ID to access the data lake. Application ID provided is incorrect or can't be found. | The application ID (**app-id**) that is provided in the key vault can't be found in Azure AD. Validate the application ID by following the steps in [Configure export to Azure Data Lake - Create Application](#createapplication). You might have to contact the system administrator or the administrator who configured Azure resources. |
+| **AppidUserError**: Failed to find Application ID to access the data lake. Application ID provided is incorrect or can't be found. | The application ID (**app-id**) that is provided in the key vault can't be found in Microsoft Entra ID. Validate the application ID by following the steps in [Configure export to Azure Data Lake - Create Application](#createapplication). You might have to contact the system administrator or the administrator who configured Azure resources. |
 | **AppSecretUserError**: Failed to access data lake with given Application ID and Application secret. | The application ID (**app-id**) and application secret (**app-secret**) that are provided can't be used to access the storage account. Validate the application ID and application secret by following the steps in [Configure export to Azure Data Lake - Create Application](#createapplication). Next, verify that the application has the required access to the storage account. For more information, see [Configure export to Azure Data Lake - Grant access](#grantaccess). You might have to contact the system administrator or the administrator who configured Azure resources. |
 | **StorageNameUserError**: Failed to access the storage account using the storage name provided in the key vault. | The storage account that is provided in the key vault can't be found, or it isn't valid. Verify that the correct storage account name is entered in the key vault by following the steps in [Configure export to Azure Data Lake - Add secrets](#addsecrets). Verify that you've provided the correct secret name for the storage account by following the steps in [Configure export to Azure Data Lake Add secrets](#addsecrets). |
 | **KeyVaultUserError**: Failed to access the key vault or the key vault secrets. | The service can't access the key vault or the secrets in it. Verify that your Azure subscription hasn't expired. Verify that you've created the service principal by following the steps in [Configure export to Azure Data Lake - Create service principal](#createServicePrincipal). Verify that the key vault contains all the required secrets by following the steps in [Configure export to Azure Data Lake - Add secrets](#addsecrets). Verify that you've provided the correct key vault URI in the configuration steps in [Configure export to Azure Data Lake - Install add-in](#installaddin). Also ensure you have granted Get Key permissions as per [Authorize the application to read secrets in the key vault](#authorize).
 | **TenantIdUserError**: Failed to locate the Azure Tenant ID for the environment. | Verify that you've provided the correct Azure tenant ID by following the steps in [Configure export to Azure Data Lake - Install add-in](#installaddin). |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

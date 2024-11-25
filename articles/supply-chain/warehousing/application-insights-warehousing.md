@@ -1,15 +1,13 @@
 ---
 title: Enable warehousing telemetry with Application Insights
-description: This article describes how to set up Microsoft Dynamics 365 Supply Chain Management to send warehousing telemetry data to Application Insights.
+description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management to send warehousing telemetry data to Application Insights.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: OperationalInsightsProvisioningForm
 ms.topic: how-to
-ms.date: 10/18/2022
-audience: Application User
-ms.search.region: Global
+ms.date: 03/19/2024
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: SysIntParameters
 ---
 
 # Enable warehousing telemetry with Application Insights
@@ -23,7 +21,7 @@ This article describes how to set up Microsoft Dynamics 365 Supply Chain Managem
 Before you can use the telemetry feature in Supply Chain Management, you must turn it on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *System administration*
-- **Feature name:** *Operational insights*
+- **Feature name:** *Monitoring and telemetry*
 
 ## Set up Application Insights
 
@@ -36,17 +34,17 @@ Start by setting up Application Insights on your Azure subscription.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) for the account where you want to install Application Insights.
 1. Create an Application Insights resource by following the instructions in [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
-1. Keep a copy of the **Instrumentation key** value for your Application Insights resource. (For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).) You will need this value later, when you set up Supply Chain Management to submit the data.
+1. Keep a copy of the **Instrumentation key** or **Connection string** value for your Application Insights resource. (For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).) You will need this value later, when you set up Supply Chain Management to submit the data.
 
 ## Set up your apps to send telemetry data to Application Insights
 
 After you've set up Application Insights and have a copy of its instrumentation key, you're ready to enable Supply Chain Management to send telemetry data.
 
 1. Sign in to Supply Chain Management as a user who has system admin privileges.
-1. Go to **System administration \> Setup \> Operational insights**.
+1. Go to **System administration \> Setup \> Monitoring and telemetry parameters**.
 1. On the **Configure** tab, set the following fields:
 
-    - **Commerce channel events** – Specify whether you want to send commerce channel telemetry data to Application Insights. This option isn't relevant to warehousing. Therefore, if you aren't using Dynamics 365 Commerce and/or don't want to collect telemetry about it, you should set this option to *No*.
+    - **User sessions (custom events)** - This must be enabled to capture warehouse events. You should set this option to *Yes*.
     - **Warehouse events** – Specify whether you want to send warehousing telemetry data to Application Insights. You should set this option to *Yes*.
 
 1. On the **Environments** tab, set the following fields:
@@ -57,7 +55,7 @@ After you've set up Application Insights and have a copy of its instrumentation 
 1. On the **Application Insights registry** tab, set the following fields:
 
     - **Environment mode** – Specify the mode of your selected environment. The value must match the value that you specified on the **Environments** tab.
-    - **Instrumentation key** – Enter the **Instrumentation key** value that you copied when you set up Application Insights in Azure.
+    - **Connection string** or **Instrumentation key** – Enter the value that you copied when you set up Application Insights in Azure.
 
     > [!NOTE]
     > You can use the same instrumentation key for different environment modes.

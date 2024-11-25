@@ -1,51 +1,51 @@
 ---
 title: Submit a VAT return in XML format to the Danish Tax Agency
-description: This article describes how to set up, generate, and submit a value-added tax (VAT) declaration for Denmark in XML format.
+description: Learn how to set up, generate, and submit a value-added tax (VAT) declaration for Denmark in XML format, including prerequisites.
 author: liza-golub
-ms.date: 08/22/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: egolub
+ms.topic: article
+ms.date: 01/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 
 # Submit a VAT return in XML format to the Danish Tax Agency
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to prepare your Microsoft Dynamics 365 Finance environment to generate a value-added tax (VAT) return in XML format and submit it to the Danish Tax Agency (Skattestyrelsen).
 
 ## Prerequisites
 
+### Set up application-specific parameters of the ER format for the VAT declaration
+
 To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](emea-dnk-vat-declaration-denmark.md).
 
 Before you start to prepare your Finance environment for direct submission of VAT returns in XML format to the Danish Tax Agency, complete the required setup in [Preview a VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
 
-To submit your VAT return directly to the Danish Tax Agency, contact the Danish Tax Agency at <momsapi@sktst.dk>, and provide your Central Business Register (CVR) number. You can also learn more at [Skat.dk/momsapi](https://skat.dk/data.aspx?oid=2234574) (in Danish). The Danish Tax Agency will give you access to the test environment (endpoints and certificates) and provide a short guide about what you must do to gain access to the production environment.
+### Delegate rights to an accounting system provider at skat.dk
 
-## Set up Azure Key Vault for certificate storage
+To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to an accounting system provider (Regnskabssystemsudbyder \[RSU\]) at skat.dk. A guide that explains how to delegate rights to an RSU is published in the [skat.dk portal](https://skat.dk/erhverv/moms/momsregnskab). You can also access it at [https://info.skat.dk/data.aspx?oid=2339573&chk=219318](https://info.skat.dk/data.aspx?oid=2339573&chk=219318). To submit your VAT returns directly from Dynamics 365 Finance to NemVirksomhed APIs, delegate the **NemVirksomhed - adgang for regnskabssystemudbyder** RSU to the following Danish Central Business Register (Centrale Virksomhedsregister \[CVR\]) number: **13612870**.
 
-To submit your VAT return, you must obtain certificates from the Danish Tax Agency. These certificates must be stored in your Azure Key Vault storage. Follow these steps to set up Key Vault for certificate storage.
+### Set up Power Platform Integration for the environment in Lifecycle Services and install the Electronic Invoicing add-in
 
-1. Go to **System administration** \> **Setup** \> **System parameters**.
-2. On the **General** tab, set the **Use advanced certificate store** option to **Yes**.
-3. Upload the certificate to Key Vault.
-4. Go to **System administration** \> **Setup** \> **Key Vault parameters**.
-5. Select **New**, and enter values in the **Name** and **Description** fields.
-6. On the **General** FastTab, set the following fields:
+Before you start to prepare your Finance environment for direct submission of VAT returns, you must set up Power Platform Integration for the environment in Microsoft Dynamics Lifecycle Services and install the Electronic Invoicing add-in.
 
-    - **Key Vault URL** – Enter the default Key Vault URL.
-    - **Key Vault client** – Enter the interactive client ID of the Azure Active Directory (Azure AD) application that's associated with Key Vault storage for authentication.
-    - **Key Vault secret key** – Enter a secret key that's associated with the Azure AD application that's used for authentication with Key Vault storage.
+For information about how to set up Power Platform Integration for your Finance environment, see [Connect finance and operations apps with a new Microsoft Dataverse instance](../../..//fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md). 
 
-7. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Danish Tax Agency server and client certificates.
+For information about how to install the Electronic Invoicing add-in, see [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md).
 
-![Key Vault parameters.](../media/Key-vault-parameters-dk.png)
+### Upgrade Finance
 
-For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](../global/setting-up-azure-key-vault-client.md).
+Before you start to prepare your Finance environment for direct submission of VAT returns, make sure that your Finance environment has the required application build number or later, as shown in the following table.
+
+| Finance version | Build |
+|-----------------|-------|
+| 10.0.39 | 10.0.1848.0   |
+| 10.0.38 | 10.0.1777.91  |
+| 10.0.37 | 10.0.1725.136 |
 
 ## Set up electronic messages
 
@@ -140,13 +140,19 @@ Before you use these classes for the first time, you must save the parameters.
 
     | Executable class | Description | Parameters |
     |------------------|-------------|------------|
-    | <a id="calendar-request"></a>DK VAT calendar request | This class retrieves company calendar information. | <ul><li>**Service url** – Specify the HTTPS address of an endpoint of the `VirksomhedKalenderHent` web service, as provided by the Danish Tax Agency.</li><li>**Client certificate** – Select a client certificate that's stored in your key vault.</li><li>**Server certificate** – Select a server certificate that's stored in your key vault.</li><li>**Request timeout** – Enter a suitable request time-out value, in seconds. If you leave the value set to **0** (zero), the default time-out of 60 seconds is used.</li><li>**Transaction identifier additional field** – Select **DK VAT transaction identifier**.</li><li>**Tax registration number additional field** – Select **Tax registration number**.</li></ul> |
-    | <a id="return-submission"></a>DK VAT return submission | This class sends the VAT return to the Danish VAT return APIs. | <ul><li>**Service url** – Specify the HTTPS address of an endpoint of the `ModtagMomsangivelseForeloebig` web service, as provided by the Danish Tax Agency.</li><li>**Client certificate** – Select a client certificate that's stored in your key vault.</li><li>**Server certificate** – Select a server certificate that's stored in your key vault.</li><li>**Request timeout** – Enter a suitable request time-out value, in seconds. If you leave the value set to **0** (zero), the default time-out of 60 seconds is used.</li><li>**Transaction identifier additional field** – Select **DK VAT transaction identifier**.</li><li>**Tax registration number additional field** – Select **Tax registration number**.</li></ul> |
-    | <a id="receipt-request"></a>DK VAT return receipt request | This class retrieves VAT receipt information from the Danish Tax Agency. | <ul><li>**Service url** – Specify the HTTPS address of an endpoint of the `MomsangivelseKvitteringHent` web service, as provided by the Danish Tax Agency.</li><li>**Client certificate** – Select a client certificate that's stored in your key vault.</li><li>**Server certificate** – Select a server certificate that's stored in your key vault.</li><li>**Request timeout** – Enter a suitable request time-out value in seconds. If you leave the value set to **0** (zero), the default time-out of 60 seconds is used.</li><li>**Transaction identifier additional field** – Select **DK VAT transaction identifier**.</li><li>**Tax registration number additional field** – Select **Tax registration number**.</li></ul> |
+    | <a id="calendar-request"></a>DK VAT calendar request | This class retrieves company calendar information. | <ul><li>**Transaction identifier additional field** – Select **DK VAT transaction identifier**.</li><li>**Tax registration number additional field** – Select **Tax registration number**.</li></ul> |
+    | <a id="return-submission"></a>DK VAT return submission | This class sends the VAT return to the Danish VAT return APIs. | <ul><li>**Transaction identifier additional field** – Select **DK VAT transaction identifier**.</li><li>**Tax registration number additional field** – Select **Tax registration number**.</li></ul> |
+    | <a id="receipt-request"></a>DK VAT return receipt request | This class retrieves VAT receipt information from the Danish Tax Agency. | <ul><li>**Transaction identifier additional field** – Select **DK VAT transaction identifier**.</li><li>**Tax registration number additional field** – Select **Tax registration number**.</li></ul> |
 
 3. Select **OK** in the dialog box for each executable class to save the specified parameters.
 
-![Saving the executable class parameters for Electronic messaging.](../media/exec-class-parameters-dk.png)
+> [!IMPORTANT]
+> By selecting **OK**, you access a third-party service and agree to the following terms:
+>
+> 1. You will be sharing your data with an external system that's governed by the third party's terms and privacy policy with you.
+> 2. Any data that's imported from the external system into Dynamics 365 is subject to Microsoft's privacy statement.
+>
+> For more information about this feature, consult the technical documentation for it.
 
 ### <a id="security-roles"></a>Set up security roles for electronic message processing
 

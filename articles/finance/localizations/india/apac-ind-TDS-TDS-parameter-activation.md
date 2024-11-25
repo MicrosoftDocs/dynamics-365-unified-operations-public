@@ -1,32 +1,19 @@
 ---
-# required metadata
-
 title: Set the TDS parameters
-description: This article explains how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions. This is a necessary step to use the Tax Deducted at Source TDS feature.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions, including a step-by-step process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
+
 # Set the TDS parameters
 
 [!include [banner](../../includes/banner.md)]
@@ -38,13 +25,13 @@ This article explains how to set parameters to activate Tax Deducted at Source (
 3. Set the **Invoice** option to **Yes** to activate the fields that are used to calculate and deduct TDS at the invoice level.
 4. Set the **Payment** option to **Yes** to activate the fields that are used to calculate and deduct TDS at the payment level.
 
-    [![Direct taxes tab.](../media/apac-ind-TDS-1.png)](/media/apac-ind-TDS-1.png)
+    [![Direct taxes tab.](../media/apac-ind-TDS-1.png)]
 
 5. On the **Number sequences** tab, find the row where the **Reference** field is set to **Withholding tax payment**. In the **Number sequence code** field for the row, select the number sequence code. The number sequence code is used to generate voucher numbers for the periodic TDS settlement process.
 
     > [!NOTE]
     > To run the periodic TDS settlement process, go to **Tax \> Declarations \> Withholding tax \> Withholding tax payment**.
 
-    [![Number sequences tab.](../media/apac-ind-TDS-2.png)](/media/apac-ind-TDS-2.png)
+    [![Number sequences tab.](../media/apac-ind-TDS-2.png)]
 
 6. Close the page.

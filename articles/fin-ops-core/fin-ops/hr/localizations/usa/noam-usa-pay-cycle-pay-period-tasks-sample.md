@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up pay cycles and pay periods
-description: This article explains setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
+description: Learn about setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollPayCycle
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 222624
-ms.assetid: d635184b-0905-43ab-841d-9f6cc95ab861
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollPayCycle
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: d635184b-0905-43ab-841d-9f6cc95ab861
 ---
 
 # Set up pay cycles and pay periods

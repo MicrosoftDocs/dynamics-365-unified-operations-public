@@ -1,20 +1,17 @@
 ---
 title: Use Barcode data sources to generate bar code images
-description: This article explains how to use Barcode data sources to generate bar code images.
+description: Learn about how to use Barcode data sources to generate bar code images, including an example of generating a payment check.
 author: kfend
-ms.date: 10/21/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 10/21/2020
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
-ms.dyn365.ops.version: Version 10.0.13
-ms.custom: 220314
-ms.assetid: 
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
+ms.dyn365.ops.version: Version 10.0.13
+ms.assetid: 
 ---
 
 # Use Barcode data sources to generate bar code images

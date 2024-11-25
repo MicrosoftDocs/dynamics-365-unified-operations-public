@@ -1,12 +1,13 @@
 ---
 title: Select data
-description: This article describes select statements in the X++ language.
+description: Learn about how select statements fetch or manipulate data from databases with examples in the X++ language for the AccountNum column.
 author: josaw1
-ms.date: 08/27/2021
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/27/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

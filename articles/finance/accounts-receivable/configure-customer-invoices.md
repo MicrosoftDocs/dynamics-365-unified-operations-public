@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Create a customer invoice
 description: A customer invoice for a sales order is a bill that is related to a sale, and that an organization gives to a customer.
-author: ShivamPandey-msft
-ms.date: 03/04/2022
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustFreeInvoice
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 03/04/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustFreeInvoice
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ---
 
 # Create a customer invoice

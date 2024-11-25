@@ -1,18 +1,16 @@
 ---
 title: Daylight saving time support for active batch periods
-description: This article provides information about daylight saving time support for active batch periods.
+description: Learn about daylight saving time support for active batch periods, which lets users associate their active periods with different time zones.
 author: Peakerbl
-ms.date: 07/08/2020
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/08/2020
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Platform update 36
-ms.custom: NotInToc
 ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
 ---
 

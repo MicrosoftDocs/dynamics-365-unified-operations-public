@@ -1,16 +1,16 @@
 ---
 title: Continuous delivery home page
-description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
+description: Learn about tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: josaw1
-ms.date: 10/16/2019
-ms.topic: index-page
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: conceptual
+ms.date: 10/16/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ---
 

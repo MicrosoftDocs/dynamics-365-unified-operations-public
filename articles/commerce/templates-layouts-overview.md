@@ -1,25 +1,23 @@
 ---
 title: Templates and layouts overview
-description: This article covers templates and layouts in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of templates and layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/26/2022
+ms.date: 05/28/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.search.industry: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Templates and layouts overview
 
-
 [!include [banner](includes/banner.md)]
+
+This article provides an overview of templates and layouts in Microsoft Dynamics 365 Commerce.
 
 Templates are a foundational element of the Microsoft Dynamics 365 Commerce page model. If your goal is to maximize efficiency and consistency for site authoring workflows, it's important that you learn how to take advantages of templates for your website. Early decisions about template structure are important, and can significantly affect cost and agility for daily, seasonal, and site-wide brand updates. Well-structured templates have other benefits too. For example, they help improve site-wide search engine optimization (SEO) scores and minimize bug counts.
 

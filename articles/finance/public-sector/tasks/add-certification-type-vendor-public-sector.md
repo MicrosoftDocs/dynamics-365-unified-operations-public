@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Add a certification type to a vendor in the public sector
-description: You can create and assign to vendors any type of certification that they may hold. 
+description: Learn how you can create and assign to vendors any type of certification that they may hold, including a step-by-step process.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendTable, VendCertification, DirPartyLookup   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendTable, VendCertification, DirPartyLookup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Add a certification type to a vendor in the public sector
 
 [!include [banner](../../includes/banner.md)]

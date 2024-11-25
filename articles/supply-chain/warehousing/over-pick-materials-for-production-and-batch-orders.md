@@ -1,15 +1,13 @@
 ---
 title: Over-pick materials for production and batch orders
-description: This article explains how to enable and use over-picking for production and batch orders.
+description: Learn how to enable and use over-picking for production and batch orders, including prerequisites and an outline on setting up over-picking for production.
 author: JohanHoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: WHSRFMenuItem
 ms.topic: how-to
 ms.date: 09/01/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSRFMenuItem
 ---
 
 # Over-pick materials for production and batch orders

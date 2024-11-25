@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Manage warehouse workers
-description: This article describes how you can use the Warehouse Management mobile app to help control and monitor the work that's carried out by employees in your warehouses.
-author: perlynne
-ms.date: 06/20/2017
+description: Learn how you can use the Warehouse Management mobile app to help control and monitor the work that's carried out by employees in your warehouses.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: perlynne
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Manage warehouse workers

@@ -1,20 +1,17 @@
 ---
 title: Budget analysis in the public sector
-description: This article describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page.
-author: v-kiarnd
-ms.date: 06/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Learn how to use the Budget analysis page to view revenues and expenditures by financial dimension, with answers to frequently asked questions.
+author: music727 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 06/07/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
-ms.search.industry: Public sector
-ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 ---
 
 # Budget analysis in the public sector
@@ -63,7 +60,7 @@ The following table explains the differences between these pages.
 |---|---|
 | Shows the budget balances for a budget cycle and a budget model for a single financial dimension value or budget group. | Shows the combined budget amounts for multiple financial dimension values at the same time. |
 | Includes data from both confirmed and unconfirmed encumbrances.                               | Includes data from confirmed encumbrances only.                                             |
-| Includes data from expense accounts only.                                                 | Includes data from both revenue and expense accounts.                                       |
+| Includes data from expense accounts only.                                      | Includes data from both revenue and expense accounts, and details for revenue accounts that aren't budget controlled.      |
 
 > [!NOTE] 
 > If you want the available or remaining budget amounts to include draft transactions, use the **Budget control statistics** page. The **Budget analysis** page displays only posted transactions.

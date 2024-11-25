@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: FR-00002 Customer and vendor account statements
-description: You can print accounts statements for customers and vendors that display information for a time period that you select. 
+description: You can print accounts statements for customers and vendors that display information for a time period that you select.
 author: kfend
-ms.date: 08/01/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SrsReportViewerForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: France
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: France
+ms.search.validFrom: 2016-06-30
+ms.search.form: SrsReportViewerForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # FR-00002 Customer and vendor account statements
 
 [!include [banner](../../includes/banner.md)]

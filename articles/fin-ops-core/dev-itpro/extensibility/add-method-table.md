@@ -1,19 +1,15 @@
 ---
 title: Add methods to tables through extension
-description: This article describes how to add a method to a table by using an extension.
+description: Learn how to add a method to a table by using an extension, including code examples for adding methods to tables.
 author: ivanv-microsoft
-ms.date: 10/22/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 10/22/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Add methods to tables through extension

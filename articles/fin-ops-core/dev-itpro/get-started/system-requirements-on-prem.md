@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: System requirements for on-premises deployments
-description: This article lists the system requirements for on-premises deployments.
+description: Learn about the system requirements for on-premises deployments, including network requirements and domain requirements.
 author: PeterRFriis
-ms.date: 02/08/2022
-ms.topic: article
-ms.prod: dynamics-365
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: peterfriis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # System requirements for on-premises deployments
@@ -132,7 +120,7 @@ SQL Server must have a high-availability HADRON setup that has at least two node
 
 The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.
 
-[![Recommended number of nodes for the Service Fabric cluster.](../../fin-ops/get-started/media/Minimum-infrastructure-Jan2017.png)](/media/Minimum-infrastructure-Jan2017.png)
+[![Recommended number of nodes for the Service Fabric cluster.](../../fin-ops/get-started/media/Minimum-infrastructure-Jan2017.png)]
 
 ## Processor and RAM requirements
 

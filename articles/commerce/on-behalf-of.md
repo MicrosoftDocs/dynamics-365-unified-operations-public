@@ -4,14 +4,15 @@
 title: Enable on behalf of (OBO) functionality
 description: This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: mariash529
-ms.date: 08/09/2023
-ms.topic: article
+ms.date: 09/20/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2023-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Enable on behalf of (OBO) functionality
@@ -29,7 +30,7 @@ OBO functionality enables a retailer representative such an account manager to s
 
 To enable the OBO functionality, you must complete the following prerequisites:
 
-- Create an Azure Active Directory (Azure AD) B2B application. For instructions, see [Create and configure an Azure AD application for account manager sign-in](dev-itpro/obo-create-aad-application.md).
+- Create a Microsoft Entra B2B application. For instructions, see [Create and configure a Microsoft Entra application for account manager sign-in](dev-itpro/obo-create-aad-application.md).
 - Modify the B2B site's sign-in page in Commerce site builder so that it includes an employee sign-in button. For instructions, see [Create and modify pages for on behalf of (OBO) functionality](dev-itpro/obo-add-pages-site-builder.md).
 - Set up and configure OBO functionality for your environment in Commerce headquarters. For more information, see [Set up on behalf of (OBO) functionality](dev-itpro/obo-configure-hq.md).
 
@@ -50,8 +51,6 @@ To sign in to a B2B site by using OBO functionality, follow these steps.
 
 1. On the next page, search for and select the buyer that you want to work on behalf of.
 
-     ![Example of the Select a Business Partner User page.](media/obo-select-business-partners-users4.png).
-
 After this procedure is completed, you (as the account manager) now represent the buyer that you selected, and have full access to their account information, pricing, catalog information, and discounts. You can add items to the cart and create an order. Completed orders are easily distinguished from regular orders, because they're prefixed with the account manager's name.
 
 You can also create a template for the buyer to use later. We recommend that you give the template a distinctive name that includes the account manager's name and the purpose of the template.
@@ -66,7 +65,7 @@ You can also create a template for the buyer to use later. We recommend that you
 
 ## Additional resources
 
-[Create and configure an Azure AD application for account manager sign-in](dev-itpro/obo-create-aad-application.md)
+[Create and configure a Microsoft Entra application for account manager sign-in](dev-itpro/obo-create-aad-application.md)
 
 [Create and modify pages for on behalf of (OBO) functionality](dev-itpro/obo-add-pages-site-builder.md)
 

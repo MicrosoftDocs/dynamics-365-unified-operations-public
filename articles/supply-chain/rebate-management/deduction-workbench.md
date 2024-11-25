@@ -1,16 +1,14 @@
 ---
 title: Manage deductions using the deduction workbench
-description: This article describes how to use the deduction workbench to process customer payments that include deductions.
+description: Learn how to use the deduction workbench to process customer payments that include deductions, including prerequisites.
 author: sherry-zheng
-ms.date: 08/02/2021
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: chuzheng
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.topic: how-to
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: TAMDeduction
 ---
 
 # Manage deductions using the deduction workbench
@@ -22,7 +20,7 @@ This article describes how to use the deduction workbench to process customer pa
 A customer who is owed a rebate can decide not to wait for a rebate payout. Instead, the customer can send a payment that includes a deduction for the amount of the rebate. To handle this type of transaction, you can use the deduction workbench to match deductions to open credit transactions, split deductions, deny deductions, and write off deductions.
 
 > [!NOTE]
-> The deduction workbench has been part of the sales and marketing functionality in Microsoft Dynamics 365 Supply Chain Management for a long time. However, it has now been enhanced so that it also works with the newer **Rebate management** module. This article describes how to use both older features and Rebate management features of the deduction workbench. However, if you haven't [turned on the **Rebate management** module for your system](rebate-management-enable.md), some of the functionality that is described here won't be available to you.
+> The deduction workbench has been part of the sales and marketing functionality in Microsoft Dynamics 365 Supply Chain Management for a long time. However, it has now been enhanced so that it also works with the newer **Rebate management** module. This article describes how to use both older features and Rebate management features of the deduction workbench.
 
 ## Prerequisites
 
@@ -158,7 +156,7 @@ The create a new deduction on the deduction workbench, follow these steps.
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Set this option to specify whether the claim journal should be created when the claim or deduction is created:
 
-        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
+        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (Learn more in the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
         - *No* – No claim journal is created at this time. It will be created when the claim is approved. An invoice can still be attached to the new claim, even though a claim journal isn't created. However, settlement can't be done without the claim journal.
 
 1. Select **OK**.
@@ -196,7 +194,7 @@ The process of creating a deduction from a customer settlement resembles the pro
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Set this option to specify whether the claim journal should be created when the claim or deduction is created:
 
-        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
+        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (Learn more in the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
         - *No* – No claim journal is created at this time. It will be created when the claim is approved. An invoice can still be attached to the new claim, even though a claim journal isn't created. However, settlement can't be done without the claim journal.
 
 1. Select **OK**.
@@ -234,7 +232,7 @@ The process of creating a deduction from a customer page resembles the process o
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Set this option to specify whether the claim journal should be created when the claim or deduction is created:
 
-        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
+        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (Learn more in the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
         - *No* – No claim journal is created at this time. It will be created when the claim is approved. An invoice can still be attached to the new claim, even though a claim journal isn't created. However, settlement can't be done without the claim journal.
 
 1. Select **OK**.

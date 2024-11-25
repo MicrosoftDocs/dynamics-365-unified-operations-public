@@ -2,18 +2,15 @@
 title: Test data actions with mocks
 description: This article describes how to test data actions with mock data.
 author: samjarawan
-ms.date: 07/23/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Test data actions with mocks
 

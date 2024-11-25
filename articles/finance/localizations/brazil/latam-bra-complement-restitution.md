@@ -1,20 +1,15 @@
 ---
 title: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
-description: This article provides information about the process for calculating and reporting the compensation and restitution of ICMS-ST tax amounts in internal operations to final consumers when goods are acquired under the Tax substitution regime (ICMS-ST). .
+description: Learn about the process for calculating and reporting the compensation and restitution of ICMS-ST tax amounts in internal operations to final consumers.
 author: AdamTrukawka
-ms.date: 08/30/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: conceptual
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.custom: 270254
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
-ms.search.form: 
 ---
 
 # ICMS-ST complement and restitution process and declaration for RS, SC, and SP states

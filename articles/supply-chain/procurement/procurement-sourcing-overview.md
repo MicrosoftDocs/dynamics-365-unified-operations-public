@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Procurement and sourcing overview
-description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
-author: GalynaFedorova
-ms.date: 05/06/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Access an overview of the functionality that's available in the Procurement and sourcing module, including an outline on needs for products and services.
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 ---
 
 # Procurement and sourcing overview
@@ -37,7 +21,7 @@ Procurement and sourcing covers all the steps from identifying a need for produc
 
 ## Identifying a need for product and services
 
-The need for products or services may arise from *requisitions*, for example, when an employee requires a product. *Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that aren't yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.  
+The need for products or services can arise from *requisitions*, for example, when an employee requires a product. *Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that aren't yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.  
 
 *Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen. It's also possible to specify budget fund allocation if necessary.  
 
@@ -64,7 +48,7 @@ When you create a purchase order, many of the fields are prepopulated with value
 
 ### Prices and discounts
 
-Prices and discounts include information about the prices, discounts, and rebate terms that they offer. Prices and discounts can be represented as *trade agreements*. Trade agreements represent vendor price lists with prices or discounts, and have a specific set of dates for which the agreement is valid. Prices and discounts can be negotiated and represented through *purchase agreements* with conditions like commitments to buy certain volumes or monetary amounts as a precondition for the negotiated terms. *Rebate agreements* can be created with vendors where the procurement of specific products or groups of products may trigger a rebate from the vendor depending on the purchase amount or volume.
+Prices and discounts include information about the prices, discounts, and rebate terms that they offer. Prices and discounts can be represented as *trade agreements*. Trade agreements represent vendor price lists with prices or discounts, and have a specific set of dates for which the agreement is valid. Prices and discounts can be negotiated and represented through *purchase agreements* with conditions like commitments to buy certain volumes or monetary amounts as a precondition for the negotiated terms. *Rebate agreements* can be created with vendors where the procurement of specific products or groups of products might trigger a rebate from the vendor depending on the purchase amount or volume.
 
 ### Delivery options
 
@@ -72,7 +56,7 @@ There are different options for the delivery process associated with a purchase 
 
 ### Supplementary items
 
-Products can be set up to include *supplementary items*. This is to propose products that are related to the product that's being ordered. The additional products may be required, or may be optional. In some cases, supplementary items may be added as free products that accompany the purchase of other products.
+Products can be set up to include *supplementary items*. This is to propose products that are related to the product that's being ordered. The additional products might be required, or might be optional. In some cases, supplementary items might be added as free products that accompany the purchase of other products.
 
 ### Purchase order charges
 
@@ -80,13 +64,13 @@ Charges can be assigned to the purchase order. This can happen automatically thr
 
 ## Product receipt and invoicing
 
-Purchase orders that include physical products commonly require *arrival registration* to happen within a warehouse, and after this a *product receipt* is registered for the order. Purchase orders with products that fulfill requisitions may be configured so that the employee who has requested the products also needs to provide a *confirmation of receipt*.  
+Purchase orders that include physical products commonly require *arrival registration* to happen within a warehouse, and after this a *product receipt* is registered for the order.
 
 Some purchase orders include products that are services or other nonphysical products where receipt in a warehouse isn't needed. Products can be created as services or *procurement categories* can be used directly on the purchase order for such orders. With these orders, accounting of product receipt is sometimes skipped and the order is invoiced directly, or alternatively product receipt registration is done on the purchase order without any prior arrival registration.  
 
-Receipt of products may result in automatic consumption for a specific purpose. This includes implied consumption with direct delivery, consumption towards a project, or accounting the product as a fixed asset.  
+Receipt of products can result in automatic consumption for a specific purpose. This includes implied consumption with direct delivery, consumption towards a project, or accounting the product as a fixed asset.  
 
-When *vendor invoices* arrive from the vendor, they may first be recorded in the *invoice register* independent of the purchase order, and then later approved as a record against the purchase order. Recording the vendor invoice with the purchase order includes matching of the product receipt toward the invoice.  
+When *vendor invoices* arrive from the vendor, they can first be recorded in the *invoice register* independent of the purchase order, and then later approved as a record against the purchase order. Recording the vendor invoice with the purchase order includes matching of the product receipt toward the invoice.  
 
 *Accounting distributions* can be specified on the purchase order to describe how accounting should be done within the ledger, and can also define how budget fund allocation is obtained when this is included in your configuration.  
 
@@ -96,5 +80,24 @@ Invoiced purchase orders will record the liability into the vendor account withi
 
 Performance and review of purchasing is supported through *procurement and account payable reports*, which include spend analysis and vendor performance analysis.
 
+## Related information
+
+### Documentation resources
+
+- [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
+- [Create a purchase order from a sales order](../sales-marketing/tasks/create-purchase-order-sales-order.md)
+- [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
+- [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+- [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)
+- [Importing vendor catalogs](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blog post)
+
+### White papers
+
+The following white papers explore various aspects of procurement in Dynamics 365 Supply Chain Management:
+
+- [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
+- [Inbound consignment inventory demo script](https://www.microsoft.com/download/details.aspx?id=101945)
+- [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
+- [Trade agreements](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.14 (October 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.14. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.14 with an outline on included features. 
 author: kamaybac
-ms.date: 08/31/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-07-31 
-ms.dyn365.ops.version: 10.0.14
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.14 (November 2020)
@@ -40,11 +26,11 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 This release includes an updated platform and general improvements, but doesn't include any new features specific to Supply Chain Management. For more information about upcoming features, see the [Release plans](/dynamics365/release-plans/) site.
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of finance and operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.14 includes platform updates. Learn more in [Platform updates for version 10.0.14 of finance and operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
 
 ### Bug fixes
 

@@ -1,19 +1,17 @@
 ---
 title: Manage the Electronic reporting (ER) configuration lifecycle
-description: This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
+description: Learn how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance, including a table of various concepts.
 author: kfend
-ms.date: 07/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 07/23/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 
 # Manage the Electronic reporting (ER) configuration lifecycle

@@ -1,12 +1,13 @@
 ---
 title: FieldDesign type
-description: Design object interface for a field control.
+description: Learn about the FieldDesign type, a design object interface for a field control that includes the alignItems, alignSelf, bindings, border, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # FieldDesign type

@@ -1,16 +1,12 @@
 ---
 title: Creating intercompany purchase and sales orders in several companies
-description: This article explains how to create intercompany purchase orders or sales orders in several companies
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn how to create intercompany purchase orders or sales orders in several companies for both trading companies and production companies.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ---
 
 # Creating intercompany purchase and sales orders in several companies

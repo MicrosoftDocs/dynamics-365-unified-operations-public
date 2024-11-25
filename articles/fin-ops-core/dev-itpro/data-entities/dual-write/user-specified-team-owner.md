@@ -1,13 +1,13 @@
 ---
 title: User-specified team owner
-description: This article explains how set a user-specified team owner instead of using the default team owner.  
+description: Learn how to set a user-specified team owner and how to view the owning team after initial sync instead of using the default team owner.  
 author: nhelgren
-ms.date: 04/26/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: tfehr
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 04/26/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
 ---

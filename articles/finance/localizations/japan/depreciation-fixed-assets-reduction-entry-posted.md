@@ -1,19 +1,18 @@
 ---
 title: Depreciation of fixed assets with reduction entry posted
-description: Use this task to learn how to run fixed asset depreciation with reduction entries. In order to complete this task, the Fixed Asset configuration key must be selected.
+description: Learn how to run fixed asset depreciation with reduction entries. In order to complete this task, the Fixed Asset configuration key must be selected.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Depreciation of fixed assets with reduction entry posted
 
 [!include [banner](../../includes/banner.md)]

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Lifecycle Services for finance and operations apps partners
-description: This article explains how partners can get started with Microsoft Dynamics Lifecycle Services. 
+description: Learn about how partners can get started with Microsoft Dynamics Lifecycle Services, including an outline on projects for customers in Lifecycle Services.
 author: angelmarshall
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 ---
 
 # Lifecycle Services for finance and operations apps partners

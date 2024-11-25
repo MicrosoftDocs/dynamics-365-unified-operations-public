@@ -1,30 +1,29 @@
 ---
 title: Define and set order attributes
-description: This article explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
+description: This article explains how to edit and set attributes values for orders directly in Microsoft Dynamics 365 Commerce headquarters, the POS, and CRT.
 author: josaw1
-ms.date: 09/25/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 05/28/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2017-10-24
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 # Define and set order attributes
 
 [!include [banner](../../includes/banner.md)]
 
-Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Commerce Headquarters, the point of sale (POS), and the Commerce runtime (CRT). 
+Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Commerce headquarters, the point of sale (POS), and the Commerce runtime (CRT). 
 
-Headquarters now includes pages for editing and updating attribute values, which means that you can set the values for call center orders in Headquarters. In POS, use the Attributes panel to set or update the attribute value in POS. If you don't need to use a user interface and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
+Headquarters now includes pages for editing and updating attribute values, which means that you can set the values for call center orders in headquarters. In POS, use the Attributes panel to set or update the attribute value in POS. If you don't need to use a user interface and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the headquarters configurations. No database changes are required. Previously, you had to create new tables in headquarters and the channel database, and then modify those tables.
 
 ## Why and when you should add order attributes
 
-If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Headquarters, use order attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Headquarters. However, order attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
+If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or headquarters, use order attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and headquarters. However, order attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
 
 This first version supports only the **String** attribute type, but future versions will support other attribute types. If you want the data to come from the master table, and that data involves complex search logic and core business logic in X++, you should use extension properties.
 
@@ -117,9 +116,9 @@ After you configure the order attributes for the channel, go to **Customer servi
 3. To set attribute values at the line level, on the **Sales order** page, select the **Lines** view, and then select the line to set the attribute value for. Under **Sales order lines group**, select **Retail and Commerce** > **Attributes**.
 4. Repeat step 3 for all the sales lines that you want to set the values for.
 
-## View the attributes values for cash-and-carry transactions in Headquarters
+## View the attributes values for cash-and-carry transactions in headquarters
 
-After you've run the distribution job and pulled a cash-and-carry transaction into Headquarters, you can view the attribute values for that transaction. The POS doesn't provide a UI for viewing order attributes. Therefore, to view the order attribute values, you must extend the POS.
+After you've run the distribution job and pulled a cash-and-carry transaction into headquarters, you can view the attribute values for that transaction. The POS doesn't provide a UI for viewing order attributes. Therefore, to view the order attribute values, you must extend the POS.
 
 1. Go to **Retail and Commerce** > **Inquires and reports** > **Store transactions**.
 2. To view the transaction header attributes, on the Action Pane, select **Attributes**.
@@ -127,7 +126,7 @@ After you've run the distribution job and pulled a cash-and-carry transaction in
 4. On the **Sales transactions** page, select any line, and then, on the Action Pane, select **Attributes** to view the line attributes.
 
 > [!NOTE]
-> Only the attributes that are configured as part of your attribute group and linked to the channel will appear in the Headquarters UI.
+> Only the attributes that are configured as part of your attribute group and linked to the channel will appear in the headquarters UI.
 
 ## Extend attributes to add business logic in CRT
 
@@ -285,7 +284,7 @@ The sample implements the following scenario: You create a business-to-business 
 You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensions\\B2BSample.
 
 > [!NOTE]
-> Only the configured attributes will appear in the Headquarters UI, even if you set or add attributes and attribute values in the code. If an attribute isn't part of the attribute group that you linked to the channel, it won't appear in the Headquarters UI.
+> Only the configured attributes will appear in the headquarters UI, even if you set or add attributes and attribute values in the code. If an attribute isn't part of the attribute group that you linked to the channel, it won't appear in the headquarters UI.
 
 1. From the Retail SDK, open **ModernPOS.sln\\CloudPos.sln**.
 2. In the Retail SDK, create a new extension folder under the **POS.Extension** project.

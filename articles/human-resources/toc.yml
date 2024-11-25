@@ -1,10 +1,10 @@
 items:
 - name: Dynamics 365 Human Resources
   items:
-  - name: Dynamics 365 Human Resources
+  - name: Dynamics 365 Human Resources  
     items:
     - name: Dynamics 365 Human Resources documentation
-      href: index.yml
+      href: index.yml 
     - name: Welcome to Dynamics 365 Human Resources 
       href: welcome.md  
     - name: Human Resources infrastructure merge
@@ -13,14 +13,14 @@ items:
         href: hr-infrastructure-merge.md
       - name: Human Resources infrastructure customer migration
         href: hr-cust-migration.md  
-      - name: Human Resources infrastructure merge FAQ
-        href: hr-infrastructure-merge-faq.md
       - name: Human Resources customer migration FAQ
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
         href: hr-migration-issues.md
-      - name: Human Resources customer merge 
+      - name: Human Resources customer merge overview  
         href: hr-customer-merge.md 
+      - name: Human Resources customer merge FAQ
+        href: customer-merge.md
       - name: Human Resources migration go-live readiness review 
         href: hr-migration-admin-go-live-readiness-review.md
     - name: What's new or changed
@@ -31,56 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
-        - name: Human Resources 10.0.38 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-38.md   
-        - name: Human Resources 10.0.37 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-37.md  
-        - name: Human Resources 10.0.36 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-36.md   
-        - name: Human Resources 10.0.35 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-35.md                            
-        - name: What's new in Dynamics 365 Human Resources (stand-alone)
-          items: 
-          - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
-            href: hr-whats-new-2022-12-12.md         
-          - name: What's new in Dynamics 365 Human Resources (stand-alone) archives 2021
-            href: hr-admin-whats-new.md    
-          - name: November 29, 2021
-            href: hr-whats-new-2021-11-29.md
-          - name: October 5, 2021
-            href: hr-whats-new-2021-10-04.md
-          - name: September 20, 2021
-            href: hr-whats-new-2021-09-20.md
-          - name: September 6, 2021
-            href: hr-whats-new-2021-09-06.md
-          - name: August 23, 2021
-            href: hr-whats-new-2021-08-23.md
-          - name: August 9, 2021
-            href: hr-whats-new-2021-08-09.md
-          - name: July 26, 2021
-            href: hr-whats-new-2021-07-26.md
-          - name: July 12, 2021
-            href: hr-whats-new-2021-07-12.md
-          - name: June 22, 2021
-            href: hr-whats-new-2021-06-22.md
-          - name: May 20, 2021
-            href: hr-whats-new-2021-05-20.md
-          - name: May 3, 2021
-            href: hr-whats-new-2021-05-03.md
-          - name: April 19, 2021
-            href: hr-whats-new-2021-04-19.md
-          - name: April 5, 2021
-            href: hr-whats-new-2021-04-05.md
-          - name: March 22, 2021
-            href: hr-whats-new-2021-03-22.md
-          - name: March 8, 2021 
-            href: hr-whats-new-2021-03-08.md
-          - name: February 22, 2021
-            href: hr-whats-new-2021-02-22.md
-          - name: January 28, 2021
-            href: hr-whats-new-2021-01-28.md
-          - name: January 21, 2021
-            href: hr-whats-new-2021-01-21.md
+        - name: Human Resources 10.0.42
+          href: ./get-started/hr-whats-new-10-0-42.md
+        - name: Human Resources 10.0.41
+          href: ./get-started/hr-whats-new-10-0-41.md
+        - name: Human Resources 10.0.40
+          href: ./get-started/hr-whats-new-10-0-40.md
+        - name: Human Resources 10.0.39 
+          href: ./get-started/hr-whats-new-10-0-39.md  
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -93,20 +51,50 @@ items:
         href: hr-admin-overview.md
       - name: System requirements
         href: hr-admin-system-requirements.md
+      - name: One Version service updates 
+        items:
+        - name: One Version service updates overview
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/human-resources
+        - name: One Version service updates FAQ
+          href: ../fin-ops-core/dev-itpro/get-started/one-version.md?context=/dynamics365/context/human-resources
+        - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?context=/dynamics365/context/human-resources
+        - name: Software lifecycle policy - Cloud
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?context=/dynamics365/context/human-resources
+        - name: Software lifecycle policy - On-premises
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?context=/dynamics365/context/human-resources
+        - name: Service update availability
+          href: ../fin-ops-core/dev-itpro/get-started/public-preview-releases.md?context=/dynamics365/context/human-resources
+        - name: Apply updates to cloud environments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/human-resources
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?context=/dynamics365/context/human-resources
+        - name: Configure service updates
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/human-resources
+        - name: Pre-servicing and post-servicing
+          href: ../fin-ops-core/fin-ops/lcs/pre-post-servicing.md?context=/dynamics365/context/human-resources
+        - name: Pause service updates
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/human-resources
+        - name: Get notified about service updates
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/human-resources
+        - name: Proactive quality updates
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates.md?context=/dynamics365/context/human-resources
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-schedule.md?context=/dynamics365/context/human-resources
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-faq.md?context=/dynamics365/context/human-resources
+        - name: Data task automation
+          href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/human-resources
+        - name: Delivering ISV solutions using One Version
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/human-resources
+        - name: Create and automate user acceptance tests
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/human-resources        
       - name: Set up and manage instances
         items:
-        - name: Provision Human Resources in the finance and operations infrastructure
+        - name: Provision Dynamics 365 Human Resources 
           href: hr-admin-setup-provision-fo.md
-        - name: Provision Human Resources in the stand-alone infrastructure
-          items:
-          - name: Provision Human Resources
-            href: hr-admin-setup-provision.md
-          - name: Copy an instance
-            href: hr-admin-setup-copy-instance.md
-          - name: Remove an instance
-            href: hr-admin-setup-remove-instance.md
-          - name: Update process
-            href: hr-admin-setup-update-process.md
       - name: Set up data integration
         items:
         - name: Choose a data integration technology
@@ -125,8 +113,6 @@ items:
           href: dev-itpro/hr-admin-virtual-entity-faq.md
         - name: Configure integration with Dataverse  
           href: hr-dataverse-integration.md
-        - name: Configure integration with Finance
-          href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
           href: hr-admin-integration-dayforce.md
         - name: Create a recurring data export app
@@ -204,8 +190,6 @@ items:
             - name: Security and data entities
               href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?context=/dynamics365/context/human-resources
             - name: Use third-party service testing utilities
-              href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?context=/dynamics365/context/human-resources
-            - name: Create read-only entities that expose financial dimensions
               href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?context=/dynamics365/context/human-resources
           - name: Bring your own database
             href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/human-resources
@@ -310,9 +294,7 @@ items:
           - name: Human Resources doesn't appear in Dynamics 365 apps
             href: hr-admin-troubleshooting-not-in-apps.md
           - name: Reporting options
-            href: hr-admin-troubleshooting-reporting.md
-          - name: Integration FAQ
-            href: hr-admin-troubleshooting-integration.md      
+            href: hr-admin-troubleshooting-reporting.md    
       - name: Set up Human Resources
         items:
         - name: Configure Human resources parameters
@@ -477,6 +459,8 @@ items:
       items:
       - name: Employee self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Employee self service workspace summary
+        href: ess-workspace-summary.md
       - name: Manager self service overview  
         href: mss-overview.md
       - name: Create custom links in Manager self service
@@ -567,10 +551,52 @@ items:
             href: ../human-resources/hr-personnel-mass-hire-projects.md
           - name: Create mass hire projects
             href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Recruiting requests (merged infrastructure)
+        - name: Recruiting requests 
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+        - name: Human Resources Recruiting app (preview)
+          items:
+          - name: Configure the Human Resources recruiting app
+            items:
+            - name: Set up the HR Recruiting app 
+              href: hr-recruit-setup.md 
+            - name: Onboard users to use the HR Recruiting app 
+              href: hr-recruit-onboard.md 
+            - name: Configuration in the HR Recruiting app   
+              href: hr-recruit-configuration.md
+            - name: Configure the careers site in the HR Recruiting app
+              href: hr-recruit-career.md 
+          - name: Use the Human Resources recruiting app
+            items: 
+            - name: Use the dashboard in the HR Recruiting app 
+              href: hr-recruit-dashboard.md 
+            - name: Set up job ads in the HR Recruiting app
+              href: hr-recruit-job-ad.md
+            - name: Use the careers site in the HR Recruiting app
+              href: hr-recruit-career-site.md 
+            - name: Set up prospects in the HR Recruiting app
+              href: hr-recruit-prospect.md 
+            - name: Applicants in HR recruiting app 
+              href: hr-recruit-applicant.md 
+            - name: Set up panel members in the HR Recruiting app
+              href: hr-recruit-panel.md
+    - name: Time and attendance
+      items:
+      - name: Time and attendance information
+        href: hr-about-time-and-attendance-information.md
+      - name: Set up time and attendance information
+        href: hr-set-up-time-and-attendance-information.md
+      - name: Register time for workers
+        href: hr-register-time.md
+      - name: Communicate with and deploy assignments to workers
+        href: hr-communicate-and-deploy-assignments.md
+      - name: Calculate, approve, and transfer registrations
+        href: hr-about-calculate-approve-transfer-registrations.md
+      - name: Work planner and time profiles
+        href: hr-about-work-planner-time-profiles.md
+      - name: Update time and attendance information
+        href: hr-update-time-and-attendance-information.md
     - name: Task management
       items:
       - name: Overview
@@ -602,7 +628,7 @@ items:
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage leave requests in Teams  
-        href: hr-teams-leave-app.md
+        href: hr-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
@@ -689,8 +715,6 @@ items:
           href: hr-benefits-setup-rounding-rules.md
         - name: Create employment categories
           href: hr-benefits-setup-employment-categories.md
-        - name: Set up employment types
-          href: hr-benefits-setup-employment-types.md
         - name: Configure employee self service
           href: hr-benefits-setup-employee-self-service.md
         - name: Create benefit plans
@@ -749,6 +773,8 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
+      - name: Set up electronic reporting to print preformance reviews
+        href: perf-mgmt-print.md
       - name: Skills
         items:
         - name: Configure skills
@@ -791,6 +817,10 @@ items:
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
+    - name: Human Resources app for leave and absence
+      items:
+        - name: Human Resources app for leave and absence
+          href: hr-app.md
     - name: Use the Workflow system
       items:
         - name: Workflow system overview
@@ -893,8 +923,8 @@ items:
         href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Security for virtual table integrations  
         href: hr-security-config.md
-      - name: Configure integration with Finance
-        href: hr-admin-integration-finance.md
+      - name: Human resources to resource integration
+        href: hr-admin-integration-hr-rm.md
       - name: Create links from Human resources to another environment
         href: configure-links.md
       - name: Configure integration with Dayforce
@@ -1043,6 +1073,72 @@ items:
           href: hr-admin-integration-payroll-api-payroll-position.md
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
+        - name: Worker 
+          href: hr-worker.md
+        - name: Bank account disbursement
+          href: hr-bank-disburse.md
+        - name: Worker contact
+          href: hr-worker-contact.md 
+        - name: HCM Compensation fixed plan 
+          href: hr-hcm-comp-fix.md
+        - name: HCM position type entity
+          href: hcm-position-type.md
+        - name: HCM unions entity
+          href: hcm-union.md
+        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity        
+          href: variable-comp.md
+        - name: Leave bank transaction entity
+          href: hr-leave-bank-trans.md
+        - name: Payroll position details entity
+          href: hr-payroll-position.md
+        - name: HCM Position hierachy type entity
+          href: hcm-position-hierachy-type.md
+        - name: Job task 
+          href: hr-admin-integration-job-task.md
+        - name: Payroll job type 
+          href: hr-payroll-job-type.md
+        - name: Payroll historical person name 
+          href: hr-payroll-history-person.md
+        - name: HCM fixed compensation employee entity
+          href: hcm-fixed-comp-empl.md
+        - name: HCM compensation fixed plan entity
+          href: hcm-comp-fixed-plan.md
+        - name: HCM employment V2 entity
+          href: hr-employ-v2.md
+        - name: Employee detail entity
+          href: hr-employ-detail.md
+        - name: HCM identification type entity
+          href: hcm-id-type.md
+        - name: HCM Labor union entity
+          href: hcm-labor-union.md
+        - name: HCM position base entity
+          href: hcm-position-base.md
+        - name: HCM position detail entity
+          href: hcm-position-detail.md
+        - name: Payroll job base 
+          href: hr-payroll-job-base.md
+        - name: Payroll job family 
+          href: hr-payroll-job-family.md
+        - name: Payroll job function 
+          href: hr-payroll-job-function.md
+        - name: Payroll employment employee 
+          href: hr-employ-employee.md
+        - name: Payroll compensation fixed plan  
+          href: hr-comp-fixed.md
       - name: Leave and absence related entities
         items:
           - name: Leave balance
@@ -1079,6 +1175,12 @@ items:
         items:
           - name: API payroll integration with Dayforce
             href: hr-admin-payroll-api-integration-dayforce.md
+  - name: Responsible AI
+    items:
+    - name: Overview 
+      href: transpar-note-hr.md
+    - name: Employee self service workspace summary
+      href: ess-workspace-summary.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

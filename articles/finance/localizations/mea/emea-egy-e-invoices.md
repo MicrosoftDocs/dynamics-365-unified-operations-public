@@ -1,19 +1,16 @@
 ---
 title: Customer electronic invoices in Egypt
-description: This article explains how to configure and submit customer electronic invoices in Egypt.
-author: mrolecki
-ms.date: 02/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to configure and submit customer electronic invoices in Egypt, including prerequisites and an outline on configuring registration numbers.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/30/2024
+ms.reviewer: johnmichalak
 ms.search.region: Egypt
-ms.author: mrolecki
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.custom: 547940
-ms.search.form: 
 ---
 
 # Customer electronic invoices in Egypt
@@ -23,7 +20,7 @@ ms.search.form:
 
 According to Egyptian legal requirements, invoices that are issued for customers must be submitted to the Tax authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
 
-1. **Electronic invoicing add-in** configuration. For more information, see [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md).
+1. **Electronic invoicing add-in** configuration. For more information, see [Electronic invoicing in Egypt](gs-e-invoicing-eg-get-started.md).
 2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
@@ -105,8 +102,8 @@ Follow these steps to configure the electronic document property type that is re
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-3. In **Overview** section, create a line for the selected sales tax code.
-4. In **Value** section, in **Value** field, enter an external code to use for the selected sales tax code, according to the official codification for [tax types](https://sdk.sit.invoicing.eta.gov.eg/codes/tax-types/).
+3. In the **Overview** section, create a line for the selected sales tax code.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification for [tax types](https://sdk.sit.invoicing.eta.gov.eg/codes/tax-types/).
 5. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
 6. Define exempt codes that will be used as tax subtypes in the event of non-taxable operations.
 
@@ -114,8 +111,8 @@ Follow these steps to configure the electronic document property type that is re
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit, and then, on the Action Pane, select **External codes**.
-3. In **Overview** section, create a line for the selected unit.
-4. In the **Value** section, in **Value** field, enter an external code to use for the selected unit, according to the official codification for [unit types](https://sdk.sit.invoicing.eta.gov.eg/codes/unit-types/).
+3. In the **Overview** section, create a line for the selected unit.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected unit, according to the official codification for [unit types](https://sdk.sit.invoicing.eta.gov.eg/codes/unit-types/).
 
 ## Configure products
 
@@ -140,13 +137,15 @@ According to Egyptian legal requirements, products on electronic invoices must u
 > [!NOTE]
 > If neither GTIN codes nor GPC codes are defined for products, internal product numbers will be used on electronic invoices. If no products or services are involved in invoicing, for example, free text invoices, or various operations in project invoices, line descriptions will be used.
 
-## Submit electronic invoices
+## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can submit electronic invoices. For more information about how to submit electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 ## Related topics
 
-- [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md)
+- [Electronic invoicing in Egypt](gs-e-invoicing-eg-get-started.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

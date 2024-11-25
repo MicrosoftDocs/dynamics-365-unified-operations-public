@@ -1,18 +1,14 @@
 ---
 title: Tax branch dimensions
-description: This article provides information about tax branches for Thailand.
-author: AdamTrukawka
-ms.date: 01/25/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: 
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: atrukawk
+description: Learn about tax branches for Thailand, including outlines and step-by-step processes for setting up tax branches and assigning tax branches to sites.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
 ms.search.validFrom: 1900-01-02
-ms.dyn365.ops.version: 
-ms.search.scope: 
 ---
 
 # Tax branch dimensions

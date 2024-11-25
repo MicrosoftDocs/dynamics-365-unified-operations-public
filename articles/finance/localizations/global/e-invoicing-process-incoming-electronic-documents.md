@@ -1,23 +1,20 @@
 ---
-title: Processing of incoming electronic documents
-description: This article provides an overview of the processing for incoming electronic documents.
-author: gionoder
-ms.date: 02/28/2022
+title: Process incoming electronic documents
+description: Learn about the processing for incoming electronic documents, which can be processed via being imported or preprocessign when passing applications.
+author: ilikond
+ms.author: ikondratenko
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.date: 02/12/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
-# Processing of incoming electronic documents
+# Process incoming electronic documents
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,9 +25,9 @@ Incoming electronic documents, such as vendor electronic invoices, can be import
 
 Electronic invoicing supports two channels for incoming documents: e-mail and Microsoft SharePoint folders.
 
-There are twp setup types to specify whether documents undergo preprocessing or are passed directly to your connected application:
+There are two setup types to specify whether documents undergo preprocessing or are passed directly to your connected application:
 
-- **Data channel** – The system will pass the document directly to the connected application.
-- **Data channel with processing pipeline** – You can set up additional actions that will be run before the document is passed to the connected application.
+- **Import channel** – The system will pass the document directly to the connected application.
+- **Import channel with processing pipeline** – You can set up additional actions that will be run before the document is passed to the connected application.
 
 For information about how to set up the scenarios for processing incoming electronic documents for the different channels, see [Configure an email channel](e-invoicing-configure-email.md) and [Configure a SharePoint channel](e-invoicing-configure-sharepoint-channel.md).

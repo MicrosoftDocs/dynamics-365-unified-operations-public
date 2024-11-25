@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Authentication in Dynamics 365 Finance + Operations (on-premises) environments
-description: This article provides background information about how the authentication process works so that if you have issues you can work to resolve them.
+description: Learn about how the authentication process works for Dynamics 365 finance and operations apps so that if you have issues you can work to resolve them.
 author: faix
-ms.date: 11/18/2020
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology:
-
-
-# optional metadata
-
-# ms.search.form:
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry:
 ms.author: osfaixat
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments
@@ -49,11 +35,11 @@ Within this configuration file (which is on each AOS machine), you'll find some 
 
 ```xml
 <Section Name="Aad">
-    <Parameter Name="AADIssuerNameFormat" Value="http://ADFS.contoso.com/{0}/services/trust" />
-    <Parameter Name="AADLoginWsfedEndpointFormat" Value="https://ADFS.contoso.com/{0}/wsfed" />
-    <Parameter Name="AADMetadataLocationFormat" Value="https://ADFS.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml" />
-    <Parameter Name="AADTenantId" Value="adfs" />
-    <Parameter Name="AADValidAudience" Value="https://ax.contoso.com/" />
+    <Parameter Name="Microsoft Entra IDIssuerNameFormat" Value="http://ADFS.contoso.com/{0}/services/trust" />
+    <Parameter Name="Microsoft Entra IDLoginWsfedEndpointFormat" Value="https://ADFS.contoso.com/{0}/wsfed" />
+    <Parameter Name="Microsoft Entra IDMetadataLocationFormat" Value="https://ADFS.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml" />
+    <Parameter Name="Microsoft Entra IDTenantId" Value="adfs" />
+    <Parameter Name="Microsoft Entra IDValidAudience" Value="https://ax.contoso.com/" />
     <Parameter Name="ACSServiceEndpoint" Value="https://accounts.accesscontrol.windows-ppe.net/tokens/OAuth/2" />
     <Parameter Name="ACSServicePrincipal" Value="00000001-0001-0000-c000-000000000000" />
     <Parameter Name="ADFSEndpoint" Value="https://ADFS.contoso.com/adfs" />
@@ -114,4 +100,3 @@ If any of the AD FS application group setup is incorrect, you're likely see an e
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

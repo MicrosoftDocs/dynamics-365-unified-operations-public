@@ -1,18 +1,16 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations platform update 7 (May 2017)
-description: This article describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
+description: Learn about new or changed features in Dynamics 365 for Operations platform update 7. This version was released in May 2017.
 author: sericks007
-ms.date: 05/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 
-ms.dyn365.ops.version: Platform update 7
+ms.topic: whats-new
+ms.date: 07/12/2024
 ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.dyn365.ops.version: Platform update 7 
 ms.assetid: 54cfeac5-e977-4c02-8e7a-4ddb4b336713
 ROBOTS: NOINDEX, NOFOLLOW
 ---

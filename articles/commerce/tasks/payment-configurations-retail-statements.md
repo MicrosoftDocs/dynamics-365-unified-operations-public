@@ -1,27 +1,17 @@
 --- 
-# required metadata 
- 
 title: Payment configurations for Retail statements
 description: This procedure demonstrates configurations for Commerce store payment methods, which affect how statements get created and posted. 
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
 ms.search.form: RetailStoreTable, RetailStoreTenderTypeTable   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.author: shajain
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 # Payment configurations for Retail statements
 

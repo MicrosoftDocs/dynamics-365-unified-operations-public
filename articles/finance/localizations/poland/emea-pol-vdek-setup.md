@@ -1,15 +1,15 @@
 ---
 title: Prepare for JPK-V7 reporting
-description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
+description: Learn about how to set up a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland, with an outline on import and setting up ER configurations.
 author: liza-golub
-ms.date: 07/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Poland
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 

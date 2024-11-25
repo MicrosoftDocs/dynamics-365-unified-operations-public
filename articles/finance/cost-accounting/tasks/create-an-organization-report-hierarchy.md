@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create an organization report hierarchy
-description: Use this procedure to create a report hierarchy for organization reporting. 
+description: Use this procedure to create a report hierarchy for organization reporting, including a step-by-step process for creating the hierarchy.
 author: twheeloc
-ms.date: 10/30/2017
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/30/2017
+ms.custom: 
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create an organization report hierarchy
 
 [!include [banner](../../includes/banner.md)]

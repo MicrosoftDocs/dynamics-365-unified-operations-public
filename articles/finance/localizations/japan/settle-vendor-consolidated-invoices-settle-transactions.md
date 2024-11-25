@@ -1,19 +1,18 @@
 ---
 title: Settle vendor consolidated invoices by using settle transactions
-description: In Japan, payments are made and settled against consolidated invoice.
+description: Learn about settling vendor consolidated invoices by using settle transactions, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Settle vendor consolidated invoices by using settle transactions
 
 [!include [banner](../../includes/banner.md)]

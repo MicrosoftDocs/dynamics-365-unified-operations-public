@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: NO-00002 Customer payment based on payment ID
-description: This article explains how to set up and maintain Norwegian payment IDs. 
+description: Learn how to set up and maintain Norwegian payment IDs, including an outline and step-by-step process on setting up payment IDs.
 author: kfend
-ms.date: 08/01/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Norway
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
+ms.search.region: Norway
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # NO-00002 Customer payment based on payment ID
 
 [!include [banner](../../includes/banner.md)]
@@ -47,7 +38,8 @@ A payment identification (ID) is a unique identifier for customer payments that 
 
    - **Modulo 10** – The total length of the payment ID is divided by 10. The remainder is the check number.
    - **Modulo 11** – The total length of the payment ID is divided by 11. The remainder is the check number.
-   - **(None)** – No check number is calculated.  
+   - **(None)** – No check number is calculated.
+   - **Modulo 731** - The check number is calculated using the 7-3-1 method specified by the Estonian Bank Association for reference numbers.
 
 4. Select **Save**. After the record is saved, you can preview the selected payment ID in the **Payment ID test** field.
 5. Go to **Accounts receivable** > **Payments setup** > **Payment ID per country/region** and select **New**.

@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: GST TDS on payment of goods and services
-description: This article provides information about how to deduct GST-TDS on payments of goods and services.
-author: EricWangChen
+description: Learn about how to deduct GST-TDS on payments of goods and services, including an outline on when TDS deduction isn't required.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 07/07/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: johnmichalak 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-
 ---
 
 # GST TDS on payment of goods and services

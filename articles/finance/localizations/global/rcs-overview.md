@@ -1,24 +1,22 @@
 ---
 title: Regulatory Configuration Service
-description: This article provides an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
+description: Access an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
 author: kfend
-ms.date: 06/04/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: AX 10.0.9
+ms.topic: overview
+ms.date: 06/04/2021
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-02-01
 ms.search.form: RCS, Regulatory Configuration Services, Localization
+ms.dyn365.ops.version: AX 10.0.9
 ---
 # Regulatory Configuration Service
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 Regulatory Configuration Service (RCS) is a standalone designer and lifecycle management service for no-code/low-code globalization functionality. RCS lets globalization stakeholders extend and customize key globalization areas of tax, e-invoicing, regulatory reporting, banking, and business documents without having to involve developers. This no-code/low-code globalization approach makes globalization easier, faster, and more cost effective to create or extend.
 
@@ -89,11 +87,11 @@ For more information about related components, see the following topics:
 
 ## Troubleshooting RCS sign-up
 
-When you sign up for RCS from the service page, you might encounter an issue that is related to Azure Active Directory (Azure AD). The error message that you receive indicates that sign-up for RCS is currently turned off and must be turned on before you can complete the sign-up process.
+When you sign up for RCS from the service page, you might encounter an issue that is related to Microsoft Entra ID. The error message that you receive indicates that sign-up for RCS is currently turned off and must be turned on before you can complete the sign-up process.
 
 ![RCS sign-up error message.](../media/01_RCSSignUpError.jpg)
 
 The issue occurs because you're blocked from signing up for ad-hoc subscriptions, and the `AllowAdHocSubscriptions` property must be enabled in your tenant. 
 
 - If your IT department manages your organization's Azure tenants, contact that department to report the issue.
-- If you're responsible for managing your Azure tenants, you can fix the issues by following the steps in [What is self-service sign-up for Azure Active Directory](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).
+- If you're responsible for managing your Azure tenants, you can fix the issues by following the steps in [What is self-service sign-up for Microsoft Entra ID](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).

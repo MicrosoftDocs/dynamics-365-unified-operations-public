@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Create read-only entities that expose financial dimensions
-description: In this article, we describe how to build an entity for registered transactions. 
+description: Learn about how to build an entity for registered transactions, including outlines on creating a basic entity and customizing the basic entity. 
 author: RyanCCarlson2
-ms.date: 04/10/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.author: rcarlson
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-
 ---
 
 # Create read-only entities that expose financial dimensions
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 
 In this article, we describe how to build an entity for registered transactions that are registered. 

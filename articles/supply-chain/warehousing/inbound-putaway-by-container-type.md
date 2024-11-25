@@ -1,15 +1,13 @@
 ---
 title: Manage inbound putaway based on container types
-description: This article describes how to use container types to drive the putaway process.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSContainerType, WHSAllowedContainerTypeGroup, WHSLocationProfile, WHSLocationLimit, WHSParameters, InventLocation, WHSUOMSeqGroupTable, WHSRFMenuItem, UnitOfMeasureLookup, UnitOfMeasureConversion 
+description: Learn how to use container types to drive the putaway process, including an outline and step-by-step process on setting up container types.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 12/12/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSContainerType, WHSAllowedContainerTypeGroup, WHSLocationProfile, WHSLocationLimit, WHSParameters, InventLocation, WHSUOMSeqGroupTable, WHSRFMenuItem, UnitOfMeasureLookup, UnitOfMeasureConversion 
 ---
 
 # Manage inbound putaway based on container types
@@ -43,7 +41,7 @@ Follow these steps to set up a container type.
     - **Flexible volume dimensions** – Set this option to *Yes* if the volume depends on the container volume plus the inventory that's put into the container. Set it to *No* if the volume is considered fixed and doesn't depend on the inventory that's put into the container. This setting doesn't affect existing containerization processes.
     - **Unit** – Specify the handling unit for the container, such as *Euro-pallet* or *Octabin*. This unit applies to the container standard itself, not to its dimensions (such as height and length). If you'll configure your system to use this container type to calculate [location stocking limits](#stocking-limits), you must specify a unit here. When the system calculates location stocking limits, it can, as required, convert between the handling units that are used by different container types.
     - **Length**, **Width**, **Height**, and **Volume** (in the **Maximums** section) – Enter the maximum physical dimensions that the container can handle.
-    - **Attributes** – You can define additional attributes for container types that are associated with other operations that use containers. For more information, see [Containerization](wave-containerization.md).
+    - **Attributes** – You can define additional attributes for container types that are associated with other operations that use containers. Learn more in [Containerization](wave-containerization.md).
 
 1. On the Action Pane, select **Save**.
 

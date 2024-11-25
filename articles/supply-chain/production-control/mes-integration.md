@@ -1,16 +1,14 @@
 ---
 title: Integrate with third-party manufacturing execution systems
-description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
+description: Learn how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: johanhoffmann
-ms.date: 08/09/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2021-10-01
-ms.dyn365.ops.version: 10.0.23
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Integrate with third-party manufacturing execution systems
@@ -95,6 +93,7 @@ For the *start production order* message, the `_messageType` value is `ProdProdu
 | `StartedQuantity` | Optional | Real |
 | `StartedDate` | Optional | Date |
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
+| `AutomaticRouteConsumptionRule` | Optional | Enum (RouteDependent \| Always \| Never) |
 
 ### Report as finished message
 
@@ -123,9 +122,9 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
 | `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes \| No) |
-| `ProductionJournalNameId` | Optional | String |
-| `PickingListProductionJournalNameId` | Optional | String|
-| `RouteCardProductionJournalNameId` | Optional | String |
+| `JournalNameId` | Optional | String |
+| `PickingListJournalNameId` | Optional | String|
+| `RouteCardJournalNameId` | Optional | String |
 | `FromOperationNumber` | Optional | Integer|
 | `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |
@@ -181,6 +180,19 @@ The following table shows the fields that each line in the `PickingListLines` se
 | `IsConsumptionEnded` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `InventoryLotId` | Optional | String |
+| `ProductColorId` | Optional | String|
+| `ProductConfigurationId` | Optional | String |
+| `ProductSizeId` | Optional | String |
+| `ProductStyleId` | Optional | String |
+| `ProductVersionId` | Optional | String |
+| `ItemBatchNumber` | Optional | String |
+| `ProductSerialNumber` | Optional | String |
+| `LicensePlateNumber` | Optional | String |
+| `InventoryStatusId` | Optional | String |
+| `ProductionWarehouseId` | Optional | String |
+| `ProductionSiteId` | Optional | String |
+| `ProductionWarehouseLocationId` | Optional | String |
+| `InventoryDimension1` to `InventoryDimension12` | Optional | String |
 
 ### Time used for operation (route card) message
 

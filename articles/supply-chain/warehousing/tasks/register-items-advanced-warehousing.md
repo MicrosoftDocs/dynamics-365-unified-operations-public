@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Register items enabled for warehouse management processes using an item arrival journal
-description: This article presents a scenario that shows how to register items using the item arrival journal when you are using warehouse management processes (WMS). 
+description: Learn about a scenario that shows how to register items using the item arrival journal when you are using warehouse management processes (WMS). 
 author: Mirzaab
-ms.date: 03/24/2021
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 03/24/2021
+ms.custom: 
+ms.reviewer: kamaybac  
+ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate  
 ---
+
 # Register items enabled for warehouse management processes using an item arrival journal
 
 [!include [banner](../../includes/banner.md)]

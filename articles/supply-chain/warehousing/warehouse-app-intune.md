@@ -1,27 +1,26 @@
 ---
-title: Mass deploy the mobile app for service-based authentication
-description: This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
+title: Mass deploy the mobile app with service-based authentication
+description: Learn how to mass deploy the Warehouse Management app with service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
+ms.topic: how-to
+ms.date: 02/20/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
-ms.date: 03/09/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
-# Mass deploy the mobile app for service-based authentication
+# Mass deploy the mobile app with service-based authentication
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
-> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md).
+> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 
-This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using Microsoft Intune.
+This article explains how to mass deploy the Warehouse Management mobile app with service-based authentication by using Microsoft Intune.
 
 ## Prerequisites
 
@@ -105,7 +104,7 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 
 The Warehouse Management mobile app (version 2.0.41.0 and later) lets you import connection settings as a managed configuration through an MDM solution. The same **ConnectionsJson** configuration key is shared across all platforms.
 
-The following subsections provide examples that show how to set up Intune to provide managed configuration for each of the supported mobile platforms. For more information, see [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview).
+The following subsections provide examples that show how to set up Intune to provide managed configuration for each of the supported mobile platforms. Learn more in [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview).
 
 ### Create a connection JSON file
 
@@ -156,7 +155,12 @@ Follow these steps to set up Intune to support managed configuration for Windows
 1. In the **Add Row** dialog box, set the following fields:
     - **Name** – Enter a name for the new row.
     - **Description** – Enter a short description for the new row.
-    - **OMA-URI** – Enter the following value:<br/>*./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson*
+    - **OMA-URI** – Enter the following value:
+
+        ```txt
+        ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson
+        ```
+
     - **Data type** – Select *String*.
     - **Configuration value** – Paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
 1. Select **Save** to apply your settings and close the dialog box.
@@ -211,7 +215,7 @@ Obtain a self-signed PFX certificate (.pfx file) either through the Windows Serv
 Follow these steps to create an app registration for PFXImport PowerShell in Microsoft Entra ID.
 
 1. Sign in to Azure.
-1. From the **Home** page, go to **Manage Azure Active Directory**.
+1. From the **Home** page, go to **Manage Microsoft Entra ID**.
 1. In the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:
@@ -229,12 +233,12 @@ Follow these steps to create an app registration for PFXImport PowerShell in Mic
 
 #### Download and build the PFXImport project
 
-The PFXImport project consists of PowerShell cmdlets that will help you import PFX certificates into Intune. You can modify and adapt these cmdlets to fit your workflow. For more information, see [S/MIME overview to sign and encrypt email in Intune](/mem/intune/protect/certificates-s-mime-encryption-sign).
+The PFXImport project consists of PowerShell cmdlets that will help you import PFX certificates into Intune. You can modify and adapt these cmdlets to fit your workflow. Learn more in [S/MIME overview to sign and encrypt email in Intune](/mem/intune/protect/certificates-s-mime-encryption-sign).
 
 Follow these steps to download and build the PFXImport project.
 
 1. Go to the [PFXImport PowerShell Project on GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell), and download the project.
-1. Open Visual Studio 2022, and open the *PFXImportPS.sln* file that you downloaded from GitHub. Switch to *Release* mode, and build (or rebuild) the project. For more information, see [Configure and use imported PKCS certificates with Intune](/mem/intune/protect/certificates-imported-pfx-configure).
+1. Open Visual Studio 2022, and open the *PFXImportPS.sln* file that you downloaded from GitHub. Switch to *Release* mode, and build (or rebuild) the project. Learn more in [Configure and use imported PKCS certificates with Intune](/mem/intune/protect/certificates-imported-pfx-configure).
 
     [<img src="media/intune-vs-rebuild.png" alt="Changing to Release mode and building the project in Visual Studio." title="Changing to Release mode and building the project in Visual Studio" width="720" />](media/intune-vs-rebuild.png#lightbox)
 
@@ -261,7 +265,7 @@ Follow these steps to set up your dedicated Certificate Connector machine.
 1. On the **Certificate connectors** tab, on the toolbar, select **Add**.
 1. In the **Install the certificate connector** dialog box, select the certificate connector link to download the *IntuneCertificateConnector.exe* file. This file is an installer for the Certificate Connector.
 1. Transfer the *IntuneCertificateConnector.exe* file to the designated Certificate Connector machine. Then run the file, and follow the on-screen instructions. During the installation process, be sure to select the **PKCS imported certificates** checkbox.
-1. Sign in to your Microsoft Entra ID account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. For more information, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
+1. Sign in to your Microsoft Entra ID account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. Learn more in [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
 
 #### Import your PFX certificate into the Certificate Connector
 
@@ -307,7 +311,7 @@ To troubleshoot this setup, follow these steps to use the Windows Event Viewer t
 
 ### Create configuration profiles to push certificates to end devices
 
-Configuration profiles enable Microsoft Endpoint Manager to push certificates and other settings to devices in your organization. (For more information, see [Create a device profile in Microsoft Intune](/mem/intune/configuration/device-profile-create).)
+Configuration profiles enable Microsoft Endpoint Manager to push certificates and other settings to devices in your organization. (Learn more in [Create a device profile in Microsoft Intune](/mem/intune/configuration/device-profile-create).)
 
 > [!IMPORTANT]
 > Unfortunately, the Warehouse Management mobile app for iOS can't currently accept certificates that are delivered through Intune. Therefore, you must manually transfer certificates to iOS devices (for example, through [iCloud](https://www.icloud.com/iclouddrive/)) and then [import them by using the Warehouse Management app](/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app#import-the-connection-settings). If you support only iOS devices, you can skip the following procedure.

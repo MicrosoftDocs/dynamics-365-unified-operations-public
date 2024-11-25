@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: BOM designer functionality
-description: This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs).
+description: Learn how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs) with an outline on analyzing BOM structures.
 author: johanhoffmann
-ms.date: 11/03/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BOMDesigner, BOMDesignerSetup, BOMDesignerFilterDialog, BOMDesignerBOMVersion, BOMChangeLine
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 11/03/2017
+ms.reviewer: kamaybac
+ms.search.form: BOMDesigner, BOMDesignerSetup, BOMDesignerFilterDialog, BOMDesignerBOMVersion, BOMChangeLine
+ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ---
 
 # BOM designer functionality

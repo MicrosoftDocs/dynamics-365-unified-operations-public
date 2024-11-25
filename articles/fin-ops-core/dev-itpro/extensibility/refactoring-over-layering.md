@@ -1,19 +1,15 @@
 ---
 title: Relax model restrictions to refactor overlayering into extensions
-description: This article provides information about relaxing model restrictions to enable the refactoring of over-layering into extensions.
+description: Learn about relaxing model restrictions to enable the refactoring of over-layering into extensions, including a detailed process.
 author: CGarty
-ms.date: 05/01/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: CGarty
+ms.topic: article
+ms.date: 05/01/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Relax model restrictions to refactor overlayering into extensions

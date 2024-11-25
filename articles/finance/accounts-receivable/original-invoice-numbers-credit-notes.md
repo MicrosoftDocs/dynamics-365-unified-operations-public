@@ -1,18 +1,16 @@
 ---
 title: References to original invoices in credit notes
-description: This article explains how to set up and print the original invoice numbers in related credit notes.
+description: Learn about how to set up and print the original invoice numbers in related credit notes, including prerequisites and an outline on configuring parameters.
 author: mrolecki
-ms.date: 10/26/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: mrolecki
+ms.topic: article
+ms.date: 10/26/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-19
-ms.dyn365.ops.version: 10.0.17
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # References to original invoices in credit notes

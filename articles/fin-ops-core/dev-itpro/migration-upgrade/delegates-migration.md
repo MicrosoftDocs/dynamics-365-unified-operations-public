@@ -1,15 +1,13 @@
 ---
 title: Solve dependencies among models by using delegates during code migration
-description: This article explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
+description: Learn about how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d

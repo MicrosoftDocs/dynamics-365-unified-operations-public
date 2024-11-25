@@ -1,19 +1,16 @@
 ---
 title: Build custom response pages for 4xx/5xx status code errors
 description: This article describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
-author: v-chgri
-ms.date: 04/14/2020
+author: brianshook
+ms.date: 07/30/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Build custom response pages for 4xx/5xx status code errors

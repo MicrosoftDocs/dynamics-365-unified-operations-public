@@ -1,15 +1,16 @@
 ---
 title: Supported primitive data types for Electronic reporting formulas
-description: This article provides information about the primitive data types that are supported in Electronic reporting (ER) formulas.
+description: Learn about the primitive data types that are supported in Electronic reporting (ER) formulas, including a list of various primitive data types.
 author: kfend
-ms.date: 06/02/2021
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 06/02/2021
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Supported primitive data types for Electronic reporting formulas

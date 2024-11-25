@@ -1,19 +1,18 @@
 ---
 title: Generate Japan consumption tax report
-description: This procedure walks you through generating the Japan consumption tax report.
+description: Learn about generating the Japan consumption tax report, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerConsumptionTaxCalcTrans_JP, LedgerConsumptionTaxReportTrans_JP
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Generate Japan consumption tax report
 
 [!include [banner](../../includes/banner.md)]

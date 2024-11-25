@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Revenue split templates in Subscription billing
-description: This article explains how to set up revenue split templates for items that are sold as bundles.
+description: Learn how to set up revenue split templates for items that are sold as bundles, including a table that defines various fields.
 author: JodiChristiansen
-ms.date: 01/30/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 01/30/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2021-11-05
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.24
-
 ---
+
 # Revenue split templates in Subscription billing
 
 Use the **Revenue split template** page to set up templates for revenue split. Revenue split consists of a parent item that has child items. This type of item is often sold to customers as a single item or bundle.

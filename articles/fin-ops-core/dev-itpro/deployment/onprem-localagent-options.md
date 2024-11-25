@@ -1,20 +1,16 @@
 ---
-# required metadata
-
 title: Deployment configurations for the local agent
-description: This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
+description: Learn about which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 author: faix
-ms.date: 06/07/2022
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: osfaixat
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2021-08-03
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Deployment configurations for the local agent

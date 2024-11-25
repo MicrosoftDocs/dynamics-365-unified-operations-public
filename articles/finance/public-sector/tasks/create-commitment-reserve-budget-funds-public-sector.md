@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a commitment to reserve budget funds for the public sector
-description: Commitments are budget control source documents used by public sector entities in France. 
+description: Learn about commitments are budget control source documents used by public sector entities in France, including a step-by-step process.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchCommitment_PSN   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc    
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchCommitment_PSN
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a commitment to reserve budget funds for the public sector
 
 [!include [banner](../../includes/banner.md)]

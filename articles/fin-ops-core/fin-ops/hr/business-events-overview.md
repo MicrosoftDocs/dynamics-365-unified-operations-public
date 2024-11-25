@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Human resources business events overview
-description: This article provides an overview of business events.
+description: Learn about human resources business events, including prerequisites and overviews on HR business event catalogs.
 author: twheeloc
-ms.date: 05/06/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HRMParameters, EssWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: overview
+ms.date: 05/06/2023
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-03-19
+ms.search.form: HRMParameters, EssWorkspace
 ms.dyn365.ops.version: Human Resources
-
+ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ---
 
 # Human resources business events overview

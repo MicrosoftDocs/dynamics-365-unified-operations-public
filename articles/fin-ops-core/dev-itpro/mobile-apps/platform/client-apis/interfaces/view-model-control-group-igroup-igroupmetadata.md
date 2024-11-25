@@ -1,12 +1,13 @@
 ---
 title: GroupMetadata type
-description: Group metadata type.
+description: Learn about the GroupMetadata type, which includes the BoundEntity, BoundField, Children, Description, Editable, ExtType, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # GroupMetadata type

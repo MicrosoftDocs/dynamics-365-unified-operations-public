@@ -1,12 +1,12 @@
 ---
 title: Latin America parameters 
-description: This article provides information about the parameter configuration for Latin America. 
+description: Learn about the parameter configuration for Latin America, including prerequisites and a step-by-step process on setting up previous LATAM configurations.
 author: Fhernandez0088
-ms.date: 04/28/2023
-ms.topic: Article
-ms.reviewer: kfend
-ms.author: v-federicohe 	
+ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak	
 ---
 
 # Latin America parameters

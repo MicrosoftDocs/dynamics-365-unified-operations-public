@@ -1,16 +1,12 @@
 ---
 title: Add an address to a service order   
-description: This article describes how to add a customer address to a service order.
-author: sorenva
-ms.date: 06/15/2020
+description: Learn how to add a customer address to a service order, including a step-by-step process for creating a customer address for a service order.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.search.form: SMAServiceOrderTable
-audience: Application User
+ms.date: 06/15/2020
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable
 ---
 
 # Add an address to a service order

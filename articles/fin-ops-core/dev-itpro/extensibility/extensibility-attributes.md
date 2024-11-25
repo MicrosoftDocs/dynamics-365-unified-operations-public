@@ -1,19 +1,15 @@
 ---
 title: Attributes that make methods extensible
-description: This article provides information about attributes that make methods extensible.
+description: Learn about attributes that make methods extensible, including a table that outlines multiple statuses for various attributes.
 author: MichaelFruergaardPontoppidan
-ms.date: 03/11/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 03/11/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Attributes that make methods extensible

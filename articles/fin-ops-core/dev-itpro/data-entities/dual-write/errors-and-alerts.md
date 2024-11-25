@@ -1,13 +1,13 @@
 ---
 title: Error management and alert notifications
-description: This article explains error logs and alert notifications that can help you troubleshoot issues.
+description: Learn error logs and alert notifications that can help you troubleshoot issues, including an overview of consolidated error management.
 author: nhelgren
-ms.date: 06/24/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 06/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

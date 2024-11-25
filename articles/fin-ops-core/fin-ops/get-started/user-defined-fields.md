@@ -1,35 +1,22 @@
 ---
-# required metadata
-
 title: Create and work with custom fields
-description: This article shows you how to create custom fields through the user interface to tailor the application to fit your business.
+description: Learn about how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
-ms.date: 09/15/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysCustomFieldManageFields
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
+ms.topic: article
+ms.date: 09/15/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-1-31
+ms.search.form: SysCustomFieldManageFields
 ms.dyn365.ops.version: Platform update 13
 ---
 
 # Create and work with custom fields
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 While there's an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there's a need for a company to track additional information in the system. While programmers can be used to add those fields as extensions in the developer tools, the custom fields feature allows fields to be added directly from the user interface, allowing you to tailor the application to fit your business using your web browser.
 

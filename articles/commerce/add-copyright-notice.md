@@ -2,18 +2,15 @@
 title: Add a copyright notice
 description: This article describes how to add a copyright notice to your e-Commerce website.
 author: josaw1
-ms.date: 10/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Add a copyright notice

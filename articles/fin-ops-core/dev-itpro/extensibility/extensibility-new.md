@@ -1,20 +1,17 @@
 ---
 title: What's new or changed for extensibility
-description: This article provides links to topics about extensibility updates.
+description: Access links to topics about extensibility updates to see what's new and changes for various versions for extensibility.
 author: josaw1
-ms.date: 05/14/2019
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: conceptual
+ms.date: 05/14/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
+
 # What's new or changed for extensibility
 
 [!include [banner](../includes/banner.md)]

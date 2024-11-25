@@ -1,15 +1,13 @@
 ---
 title: Product receipt against purchase orders
-description: This article describes the various options for registering products as received.
-author: GalynaFedorova
-ms.author: gfedorova
+description: Learn about the various options for registering products as received, including an outline on preregistration and registration.
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: conceptual
+ms.date: 05/02/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
-ms.topic: conceptual
-ms.date: 01/06/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Product receipt against purchase orders
@@ -46,8 +44,9 @@ After the product receipt has been processed on the PO, the PO status is set to 
 
 You can access this page from the **Receipt** action group on the **Purchase order** page. The information in the journals includes details about the quantities, dates, and dimensions.
 
-## Additional resources
+## Related information
 
+- [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md)
 - [Purchase order overview](purchase-order-overview.md)
 - [Create purchase orders](purchase-order-creation.md)
 - [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)

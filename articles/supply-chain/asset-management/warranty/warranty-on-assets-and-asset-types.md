@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Warranties on assets and asset types
-description: This article explains how to set up warranties on assets and asset types in Asset Management.
-author: johanhoffmann
-ms.date: 08/30/2019
+description: Learn how to set up warranties on assets and asset types in Asset Management, including processes for setting up warranties on assets and asset types.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 08/30/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.search.form: 
 ---
 
 # Warranties on assets and asset types

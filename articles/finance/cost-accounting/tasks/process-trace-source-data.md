@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Process and trace source data
-description: All data processing is run by jobs. 
+description: Learn about how you can process and trace source data and the origin of a specific cost entry, including a step-by-step process detailing how to process data.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 03/27/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Process and trace source data
 
 [!include [banner](../../includes/banner.md)]

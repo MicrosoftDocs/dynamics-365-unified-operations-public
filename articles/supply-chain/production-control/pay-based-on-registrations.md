@@ -1,29 +1,14 @@
 ---
-# required metadata
-
 title: Pay based on registrations
-description: This article explains how pay is calculated based on worker registrations.
+description: Learn how pay is calculated based on worker registrations, including outlines on flex time and scenarios based on flex periods.
 author: johanhoffmann
-ms.date: 03/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 1705903
-ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2018-03-20
-ms.dyn365.ops.version: AX 8.0.0
+ms.reviewer: kamaybac
+ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
+ms.topic: conceptual
+ms.date: 03/20/2017
+ms.custom: 
+  - bap-template
 ---
 
 # Pay based on registrations
@@ -247,11 +232,11 @@ Breaks from work affect the calculation of worker pay. Breaks are defined as a t
 
 #### Planned breaks
 
-If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the job card pages. Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
+If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the [production floor execution interface](production-floor-execution-use.md). Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
 
 #### Registered breaks
 
-If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the **Job card** terminal page or on the **Job card** device page. On both these pages, the user can select the type of break in a list of predefined break activities.
+If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the [production floor execution interface](production-floor-execution-use.md). Here, the worker can select the type of break in a list of predefined break activities.
 
 #### Paid and unpaid breaks
 

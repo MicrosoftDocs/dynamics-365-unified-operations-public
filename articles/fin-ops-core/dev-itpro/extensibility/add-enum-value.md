@@ -1,18 +1,15 @@
 ---
 title: Add values to enums through extension
-description: This article explains how to add new values to an enum by extending the enum.
-author: smithanataraj
-ms.date: 06/20/2017
+description: Learn about how to add new values to an enum by extending the enum, including an outline on extending an enum value.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.assetid: 
 ---
 
 # Add values to enums through extension

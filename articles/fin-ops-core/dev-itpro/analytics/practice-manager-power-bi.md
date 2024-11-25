@@ -1,19 +1,17 @@
 ---
 title: Practice manager Power BI content
-description: This article describes what is included in the Practice manager Power BI content.
+description: Learn about what is included in the Practice manager Power BI content, including a table outlining reports that are included in the Power BI content.
 author: sericks007
-ms.date: 12/18/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: kfend
+ms.topic: article
+ms.date: 12/18/2017
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
+ms.search.form: ProjManagementWorkspace
 ms.dyn365.ops.version: July 2017 update
 ms.assetid: 
-ms.search.form: ProjManagementWorkspace
 ---
 
 # Practice manager Power BI content

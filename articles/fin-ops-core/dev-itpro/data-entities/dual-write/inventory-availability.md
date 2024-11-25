@@ -1,13 +1,13 @@
 ---
 title: Inventory availability in dual-write
-description: This article provides information about how to check inventory availability in dual-write.
+description: Learn about how to check inventory availability in dual-write, including available templates for exposing on-hand inventory data.
 author: RamaKrishnamoorthy
-ms.date: 05/26/2020
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 05/26/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-05-26
 ---
 

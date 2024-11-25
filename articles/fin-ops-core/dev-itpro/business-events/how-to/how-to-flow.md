@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Business events and Microsoft Power Automate
 description: This article provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
 author: Sunil-Garg
-ms.date: 10/18/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 10/18/2021
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global for most topics. Set Country/Region name for localizations 
 ms.search.validFrom: Platform update 27
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-6-30 
 
 ---

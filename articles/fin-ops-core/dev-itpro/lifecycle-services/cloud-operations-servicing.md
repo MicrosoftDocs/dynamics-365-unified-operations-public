@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Cloud operations and servicing
-description: This article describes cloud operations and servicing.
+description: Learn about cloud operations and servicing, including an overview on monitoring and troubleshooting the health of your environment.
 author: laneswenka
-ms.date: 04/27/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 04/27/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 # Cloud operations and servicing
 

@@ -4,11 +4,8 @@
 title: Positions
 description: This article describes the conceptual elements that a position can include. It also provides examples that show how you can use those elements in your organization.
 author: twheeloc
-ms.date: 06/24/2021
+ms.date: 05/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
@@ -19,7 +16,6 @@ ms.author: twheeloc
 ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
-ms.custom: 269054
 ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2016-11-30
@@ -28,9 +24,6 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Positions
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

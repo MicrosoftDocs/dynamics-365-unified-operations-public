@@ -1,16 +1,13 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.24 (February 2022)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.24. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.24, including a table outlining feature areas. 
 author: kamaybac
-ms.date: 12/03/2021
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2021-12-03
-ms.dyn365.ops.version: 10.0.24
+ms.topic: article
+ms.date: 04/19/2024
+ms.custom: evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.24 (February 2022)
@@ -43,7 +40,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 |---|---|---|
 | Production control | On-demand material availability check for production orders | This feature makes it faster to open the **Production orders to release** page, which is available from the **Production floor management** workspace. Without this feature, the system automatically checks whether materials are available for all listed production orders as soon as you open the page, which can take significant time if you have a large number of orders. When this feature is enabled, the system instead provides a toolbar button, which you can use to initiate the materials check only for selected orders and when needed. |
 | Production control | Register material consumption on the production floor execution interface (non-WMS) | This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. This feature only supports items that are not enabled to use warehouse management processes (WMS). Support for WMS-enabled items is scheduled for a future release.<p>Some manufacturers, especially those within the process industries, need to explicitly register the amount of material consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material consumed as they work. To ensure full material traceability, these organizations also need to register which batch numbers were consumed when producing each product. |
-| Production control | Report as finished on warehouse management workload for the cloud and edge scale unit | This feature lets workers use the Warehouse Management mobile app to report a production or batch order as finished when the app is running against a warehouse management workload on a cloud or edge scale unit. For more information, see [Report as finished and putaway on a scale unit](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
+| Production control | Report as finished on warehouse management workload for the cloud and edge scale unit | This feature lets workers use the Warehouse Management mobile app to report a production or batch order as finished when the app is running against a warehouse management workload on a cloud or edge scale unit. Learn more in [Report as finished and putaway on a scale unit](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Warehouse management | New load planning workbench pages | Adds two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. |
 
 ## New and updated documentation resources
@@ -62,11 +59,11 @@ We have recently added or significantly updated the following help articles. The
 | Sales and marketing | [Schedule sales history data cleanup](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Warehouse management | [Mobile device user accounts](../warehousing/mobile-device-work-users.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of finance and operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. Learn more in [Platform updates for version 10.0.24 of finance and operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes
 

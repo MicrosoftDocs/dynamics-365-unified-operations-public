@@ -1,20 +1,16 @@
 ---
 title: Customer electronic invoices in Germany
-description: This article explains how to get started with Electronic invoicing for Germany in Microsoft Dynamics 365 Finance.
+description: Learn how to get started with Electronic invoicing for Germany in Microsoft Dynamics 365 Finance, including prerequisites and an outline on configure parameters.
 author: ilikond
-ms.date: 10/30/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Germany
 ms.author: ikondratenko
+ms.topic: article
+ms.date: 10/30/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Germany
 ms.search.validFrom: 2022-11-03
-ms.dyn365.ops.version: AX 10.0.37
-ms.custom: 843238
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.37
 ---
 
 # Customer electronic invoices in Germany

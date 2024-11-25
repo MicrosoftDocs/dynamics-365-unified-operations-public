@@ -1,70 +1,60 @@
 ---
-
 title: Business performance analytics data model
-description: This article provides information about the business performance analytics data model.
+description: Learn about the Business performance analytics data model, including tables assigning facts, grains, and other info to various business processes.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 08/31/2023
-ms.topic: data model
-ms.prod: 
-ms.technology:
+ms.topic: article
+ms.date: 05/20/2024
 ms.custom:
-ms.search.form: business-performance-analytics
+ms.reviewer: twheeloc 
 audience: Application User
+ms.search.form: business-performance-analytics
 ---
 
-# Business performance analytics data model
+# Business performance analytics data model 
 
-A business matrix is a roadmap for business data. Business data can be defined by value chains such as *record to report* or *order to cash*. The business matrix organizes, connects, and simplifies data. In this way, it helps users efficiently navigate and understand their data.
+## Dimensional data model
 
-## Record to report
+A dimensional data model is a framework designed to optimize the performance of complex queries in a data warehouse. It organizes data into fact tables and dimension tables to facilitate easy and intuitive data analysis.
 
-*Record to report* covers the process from data collection through the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
+#### Key Components
 
-| Business process | Fact | Grain | Accounting Date Dim | CalendarDateDim | Reporting dimensions | Ledger | Reference Number | General ledger account | SubledgerNumber |
-|---|---|---|---|---|---|---|---|---|---|
-| General Ledger transactions | GeneralLedgerFact| One row per account entry per ledger account | X | X | X | X | X | X | X |
-| Budget transactions | BudgetFact | One row per account entry per ledger account | | X | X | X | X | X | |
-| Budget reservation transactions | BudgetReservationFact | One row per reservation transaction | X | | X | X | X | X | |
+1. **Fact Table**:
+   - **Definition** - The central table in a dimensional model, containing quantitative data for analysis.
+   - **Characteristics**:
+     - Contains metrics or measures, such as sales revenue, quantity sold, etc.
+     - Stores foreign keys that reference dimension tables.
+     - Typically has a large number of records.
+   - **Example Columns**:
+     - `Sales_Amount`
+     - `Quantity_Sold`
+     - `Date_Key` (Foreign Key)
+     - `Product_Key` (Foreign Key)
+     - `Customer_Key` (Foreign Key)
 
-## Procure to pay
+2. **Dimension Tables**:
+   - **Definition** - Tables that store descriptive attributes related to the facts.
+   - **Characteristics**:
+     - Contain textual or categorical data, such as product names, dates, and customer information.
+     - Provide context for the facts in the fact table.
+     - Usually have fewer records compared to fact tables but more columns.
+   - **Example Columns for a Product Dimension**:
+     - `Product_Key` (Primary Key)
+     - `Product_Name`
+     - `Category`
+     - `Brand`
+     - `Price`
 
-*Procure to pay* covers the complete cycle from the procurement of goods and services through the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
+#### Why did we use a dimensional model?
 
-| Business process | Fact | Grain | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Purchase requisition | PurchaseRequisitionFact | One row per requisition line | X | X | | X | X | X | X | | X | X | X | X | | | |
-| Purchase order | | | | | | | | | | | | | | | | | |
-| | PurchaseOrderFact | One row per purchase order (PO) line | X | X | | X | X | X | X | | X | X | X | X | | X | |
-| Product receipt | ProductReceiptFact | One row per receipt line | X | X | | X | X | X | X | | X | | X | X | | | |
-| Purchase invoices | | | | | | | | | | | | | | | | | |
-| | PurchaseInvoiceFact | One row per invoice line item | X | X | X | X | X | X | X | | X | X | X | X | | X | |
-| Purchase invoice matching | PurchaseInvoiceMatchingFact | One row per invoice line that's matched to a PO | X | X | X | X | X | X | | | X | | X | X | | | |
-| Purchase payments | PurchasePaymentFact | One row per payment | X | X | X | | | | X | | X | | X | X | | X | X |
-| Purchase payment matching | PurchasePaymentMatchingFact | One row per payment that's matched to an invoice | X | X | | | | | X | | X | | X | X | | X | |
-| Expense requisition | ExpenseRequisitionFact | One row per requisition line | X | X | | | | | X | | X | X | X | | | | |
-| Expense report | ExpenseReportFact | One row per expense | X | X | | | | | X | | X | X | X | X | | X | |
-| Purchase distribution | PurchaseDistributionFact | One row per term | X | X | | | | | | | | | X | X | | X | |
-| Purchase subledger | PurchaseSubledgerFact | One line per posted accounting event (voucher) | X | X | X | | | | X | X | X | X | | X | | X | |
+- Improved query performance - Designed for fast data retrieval and efficient querying.
+- Ease of use - Intuitive structure makes it easy for users to understand and navigate the data.
+- Scalability - Can handle large volumes of data and complex queries.
 
-## Order to cash
+#### How did we model for Business performance analytics?
 
-*Order to cash* covers the process from the receipt of a customer order through payment collection. It's crucial for managing revenue, ensuring customer satisfaction, and optimizing cash flow.
+  1. We modeled by business process (e.g., an invoice entered, or a payment are business processes).
+  2. We modeled at the lowest grain (e.g., every line on an invoice is represented in the facts).
+  3. We grouped each business process into a value chain for reference (Record to Report, Procure to Pay, etc.).
+  4. We created a Bus Matrix to represent the facts and dimensions for your reference. For more information, see the Bus Matrix report in Business Performance Analytics.
 
-| Business process | Fact | Grain | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Sales order | SalesOrderFact | One row per sales order line | | | X | | X | X | X | X | X | X | X | X | X | | | |
-| Service order | ServiceOrderFact | One row per sales order line | | | X | | X | | X | X | X | X | X | | X | | X | |
-| Picking slip | PickingSlipFact | One row per picked item | | | X | | X | | X | X | | | | X | | | X | X |
-| Packing slip | PackingSlipFact | One row per item on a packing slip | X | | X | | X | | X | X | | X | | X | X | X | | X |
-| Sales contract billing | SalesContractBillingFact| One row per sales billing line per contract period | | | X | | X | | X | X | X | | X | X | | | | |
-| Deferred revenue| DeferredRevenueFact | One row per billed revenue line per contract period | X | | X | | | | | | | | | | | | | |
-| Sales invoice | SalesInvoiceFact | One row per sales invoice line | X | | X | | X | | X | X | X | X | | X | X | X | | |
-| Sales returns | SalesReturnsFact | One row per returned order line | | | X | | X | | X | X | | X | | X | | X | | |
-| Sales payments| SalesPaymentFact | One row per payment | X | X | X | | X | X | X | | | X | X | | X | | | |
-| Sales payments matching | SalesPaymentMatchingFact | One row per payment that's matched to an invoice | X | | X | | X | | X | | | X | | | X | | | |
-| Sales subledger| SalesSubledgerFact| One row per posted accounting event (voucher) | X | | X | | | | X | | | X | X | | X | | | |
-| Sales distribution| SalesDistributionFact | One row per term | | | | | | | | | | | | | | | | |
-| Bank reconciliation | BankRegisterFact | One row per bank transaction | X | X | X | | X | | | | | | | | X | | | |
-| Bank reconciliation| BankStatementFact | One row per bank statement transaction | | X | X | | X | | | | | | | | X | | | |

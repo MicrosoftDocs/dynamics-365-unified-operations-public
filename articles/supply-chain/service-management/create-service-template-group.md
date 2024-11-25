@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Create a service template group 
-description: You can use service template groups to sort and filter service templates.
-author: sorenva
-ms.date: 02/20/2018
+description: Learn how you can use service template groups to sort and filter service templates, including a step-by-step process for creating service template groups.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: smatemplategroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/20/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: smatemplategroup
 ---
 
 # Create a service template group  

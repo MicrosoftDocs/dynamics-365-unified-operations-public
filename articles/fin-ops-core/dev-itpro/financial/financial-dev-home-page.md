@@ -1,18 +1,16 @@
 ---
 title: Financials development home page
-description: This article provides links to topics about financials development.
+description: Access links to topics about financials development, including resources about financial dimension framework, segmented entry control, and more.
 author: josaw1
-ms.date: 09/12/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 09/12/2020
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Financials development home page
@@ -27,7 +25,6 @@ This article provides links to topics about financials development.
     + [Default financial dimensions](../financial/dimension-defaulting.md)
     + [Support for different dimension patterns](../financial/dimensions.md)
     + [Add dimensions to Excel templates](../financial/dimensions-overview.md)
-    + [Support for Dimension Entry controls on dialogs](../financial/dimension-entry-control-dialog-support.md)
     + [Migrate default dimensions controls to Dimension Entry controls](../financial/dimension-entry-control-migration.md)
     + [Uptake of Dimension Entry controls](../financial/dimension-entry-control-uptake.md)
     + [Dimension Expression Builder subpattern](../financial/dimension-expression-builder-subpattern.md)

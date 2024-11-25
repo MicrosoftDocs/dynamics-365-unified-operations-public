@@ -4,8 +4,6 @@ description: With Dynamics 365 Commerce, you can sell and return products outsid
 author: josaw1
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

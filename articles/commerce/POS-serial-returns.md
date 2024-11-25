@@ -3,15 +3,14 @@ title: Return serial number-controlled products in POS
 description: This article describes the capabilities for validating serialized items as part of the return process in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 author: hhainesms
 ms.date: 06/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
-ms.search.region: global
-ms.author: hhaines
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.20
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
+ms.search.validFrom: 2019-02-11 
+ms.custom: 
+  - bap-template
 ---
 
 # Return serial number–controlled products in POS

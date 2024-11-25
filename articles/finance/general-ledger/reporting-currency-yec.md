@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Reporting currency out of balance when the year-end close is run
-description: This article explains how the reporting currency can be out of balance when the year-end close is run.
-author: kweekley
-ms.date: 12/12/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how the reporting currency can be out of balance when the year-end close is run, including an outline on posting reporting currency gain/loss.
+author: moaamer
 ms.author: kweekley
+ms.topic: article
+ms.date: 11/08/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # Reporting currency out of balance when the year-end close is run
 
-After you enable the **Awareness between ledger settlement and year end close** feature (the **Awareness** feature), ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when the general ledger year-end close is run. The exclusion of ledger transactions that are settled might present a challenge for customers at year-end close if a reporting currency is defined for the ledger.
+> [!Note]
+> Beginning in Dynamics 365 Finance version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters**, specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively.
+
+After you select the **Enable advanced awareness options** parameter, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when the general ledger year-end close is run. The exclusion of ledger transactions that are settled might present a challenge for customers at year-end close if a reporting currency is defined for the ledger.
 
 Ledger settlement is done only for the accounting currency. When ledger transactions are settled, validation confirms only that the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren't validated, and debits might not equal credits for them. In addition, ledger settlement doesn't automatically calculate and post a gain/loss in the reporting currency.
 
@@ -38,7 +29,7 @@ The following example goes through the steps for addressing this issue before th
 
 ## Example setup
 
-To set up this example, enable the **Awareness** feature, and set up main account 110180 for ledger settlement. The following illustration shows the ledger transactions that were posted in the DEMF legal entity. The accounting currency for DEMF is US dollars (USD), and the reporting currency is euros (EUR).
+To set up this example, select the **Enable advanced awareness options** parameter, and set up main account 110180 for ledger settlement. The following illustration shows the ledger transactions that were posted in the DEMF legal entity. The accounting currency for DEMF is US dollars (USD), and the reporting currency is euros (EUR).
 
 ![Posted ledger transactions in the reporting currency.](./media/reporting-currency-1.png)
 

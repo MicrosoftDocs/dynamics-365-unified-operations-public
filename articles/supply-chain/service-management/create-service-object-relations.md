@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Create service object relations   
-description: This article describes how to create service object relations for a service agreement and a service order.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to create service object relations for a service agreement and a service order, including a step-by-step process.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable, SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 ---
 
 # Create service object relations 
@@ -62,7 +46,7 @@ Use the following steps to create a service object relation for a service order:
 5.  To assign a template BOM to the service agreement, click **Functions**, and then select **Attach template BOM**. In the **Select template BOM** form, in the **Template BOM** field, select a template. 
 
 
-## See also
+## Related information
 
 [Service objects overview](service-objects.md)
 

@@ -1,16 +1,16 @@
 ---
 title: Fleet Management sample application
-description: This article is an overview of the Fleet Management sample application.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about the Fleet Management sample application, which is a Visual Studio solution that showcases development and foundation capabilities.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+ms.collection: get-started
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
 ---
 

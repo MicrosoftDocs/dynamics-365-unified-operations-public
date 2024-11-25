@@ -1,28 +1,12 @@
 ---
-# required metadata
-
 title: Piece picking confirmation
-description: Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.
+description: Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device, including a table that defines options.
 author: Mirzaab
-ms.date: 05/26/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 05/26/2017
+ms.reviewer: kamaybac
+ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
 ---
 
 # Piece picking confirmation

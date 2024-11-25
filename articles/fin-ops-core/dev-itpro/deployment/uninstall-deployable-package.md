@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Uninstall a package
-description: This article explains how to remove a deployable package from your environment.
+description: Learn how to remove a deployable package from your environment, including prerequisites and a step-by-step process of uninstalling packages.
 author: laneswenka
-ms.date: 09/22/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 09/22/2020 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Uninstall a package

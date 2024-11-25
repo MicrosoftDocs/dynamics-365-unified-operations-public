@@ -1,22 +1,20 @@
 ---
 title: Dual-write overview
-description: This article provides an overview dual-write, which provides near-real-time interaction between customer engagement apps and finance and operations apps.
+description: Learn about dual-write, which provides near-real-time interaction between customer engagement apps and finance and operations apps.
 author: RamaKrishnamoorthy
-ms.date: 02/06/2020
-ms.topic: overview
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: overview
+ms.date: 06/06/2024
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
+ms.custom: evergreen
 ---
 
 # Dual-write overview
 
 [!include [banner](../../includes/banner.md)]
-
-
-
 
 
 ## What is dual-write?

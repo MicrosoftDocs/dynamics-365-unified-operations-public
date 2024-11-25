@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Add an expression constraint to a product configuration model
-description: This procedure shows how you can add a new constraint expression to a product configuration model. 
-author: t-benebo
+description: Learn how you can add a new constraint expression to a product configuration model, including a step-by-step process for creating expression constraints. 
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom: 
+ms.reviewer: kamaybac   
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate 
 ---
+
 # Add an expression constraint to a product configuration model
 
 [!include [banner](../../includes/banner.md)]

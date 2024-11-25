@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: What's new and changed in Dynamics 365 Finance 10.0.16 (February 2021)
-description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.16 preview release.
+description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.16 preview release distributed in February 2021.
 author: kfend
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2020-11-20 
+ms.topic: whats-new
+ms.date: 07/15/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.search.validFrom: 2020-11-20
 ms.dyn365.ops.version: 10.0.16
 
 ---

@@ -1,27 +1,16 @@
---- 
-# required metadata 
- 
-title: Set up shipping carriers
-description: This article shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate. 
-author: Weijiesa
-ms.date: 07/19/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
-ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
+title: Set up shipping carriers
+description: Learn how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
+---
+
 # Set up shipping carriers
 
 [!include [banner](../../includes/banner.md)]
@@ -75,7 +64,5 @@ This article shows how to set up a shipping carrier and define details such as s
 8. In the **Rate master** field, select an option from the drop-down menu.
 9. In the **Transit time engine** field, select an option from the drop-down menu.
 10. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

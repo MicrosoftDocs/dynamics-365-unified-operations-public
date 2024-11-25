@@ -1,20 +1,17 @@
 ---
 title: Warehouse performance Power BI content
-description: This article describes what's included in the Warehouse performance Power BI content.
+description: Learn about what's included in the Warehouse performance Power BI content, including a table that details metrics that are included in the Power BI content.
 author: Mirzaab
-ms.date: 12/18/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
+ms.topic: article
+ms.date: 12/18/2017
+ms.reviewer: kamaybac
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 272953
-ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.form: WHSWarehousePerformancePowerBI
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ---
 
 # Warehouse performance Power BI content
@@ -32,6 +29,9 @@ Warehouse managers can use the **Warehouse performance** Power BI content to mea
 - **Inbound performance** – Measure how well a vendor is performing against customer requirements (in other words, measure delivery performance), and measure put-away performance, so that you can identify issues that involve workers or items over a period. It's important that you know whether vendors are delivering on time, early, or late, so that you can determine how vendor performance is affecting overall put-away performance. A vendor that delivers outside the dates that were agreed on can put extra pressure on the warehouse because of unexpected work, and can increase the average put-away time.
 - **Shipping performance** – Measure whether your warehouse is shipping in full and on time to customers (in other words, measure outbound shipping and delivery performance), so that you can identify any issues that involve products, sites or warehouses, or dedicated customers. If you find that you're shipping late to specific areas or towns, you might have to pay more attention to transportation or account management.
 - **Location inventory accuracy** – Inventory accuracy is important internal warehouse business intelligence (BI). It's very important that you determine how accurately you're counting in general. However, it's also important that you determine how accurate you are at storing items in the correct locations, and that you highlight discrepancy data, so that you can find better positions for items or initiate total counting on specific items. (Currently, the new item-based counting functionality is delivered as a hotfix.) If you're using this Power BI content to determine the correctness of on-hand inventory data per location, you can also identify theft in your shops. You can also determine whether any locations have on-hand quantities that differ from enterprise resource planning (ERP) data. Those locations might be too large, or they might be impossible to count. Alternatively, some of the physical positioning might be bad, so that it's difficult to keep a single type of item in sync with on-hand data.
+
+## Prerequisites
+The **Warehouse performance** Power BI content only shows data for the dates defined on the **Date dimensions** page (**Organization administration** \> **Setup** \> **Calendars** \> **Date dimensions**).
 
 ## Accessing the Power BI content pack
 The **Warehouse performance** Power BI content is shown on the **Warehouse performance** page (**Warehouse management** \> **Inquiries and reports** \> **Warehouse performance analysis** \> **Warehouse performance**).

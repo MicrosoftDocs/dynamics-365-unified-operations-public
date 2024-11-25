@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Stock transfer orders for India
-description:  This article provides information about the stock transfer functionality that is available for India in Microsoft Dynamics 365 Finance.
-author: EvgenyPopovMBS
-ms.date: 06/29/2022
+description: Learn about the stock transfer functionality that is available for India in Microsoft Dynamics 365 Finance, including an outline on setting up stock transfers.
+author: chuzheng
+ms.author: chuzheng
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventTransferOrders, ReqParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.date: 06/29/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2019-08-04
+ms.search.form: InventTransferOrders, ReqParameters
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Stock transfer orders for India

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Garnishments, tax levies, and administrative fees FAQ
-description: This article lists frequently asked questions and answers about garnishments and tax levies.
+description: Access frequently asked questions and answers about garnishments and tax levies, including questions about deducted amounts and sums.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221144
-ms.assetid: e87ff0bd-0594-45a6-bd54-5f8d085e1894
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: e87ff0bd-0594-45a6-bd54-5f8d085e1894
 ---
 
 # Garnishments, tax levies, and administrative fees FAQ

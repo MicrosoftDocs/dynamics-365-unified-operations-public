@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Hiring candidate through recruiting
-description: This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. 
+description: Learn about the recruiting procedure that enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. 
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: how-to
+ms.date: 01/10/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30 
+ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Hiring candidate through recruiting
 
 [!include [banner](../../includes/banner.md)]

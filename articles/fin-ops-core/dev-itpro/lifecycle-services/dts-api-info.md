@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Dynamics 365 Translation Service API 
-description: This article explains how to access and use the Dynamics 365 Translation Service API
+description: Learn about how to access and use the Dynamics 365 Translation Service API and access documentation for the API.
 author: joshsantana
-ms.date: 04/03/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: joshsantana
+ms.topic: article
+ms.date: 04/03/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2023-03-22
 ---
 

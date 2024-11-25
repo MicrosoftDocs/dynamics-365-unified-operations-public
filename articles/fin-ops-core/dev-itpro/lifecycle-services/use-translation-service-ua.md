@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Translate documentation files
-description: This article explains how to translate a documentation file for a Microsoft Dynamics product or solution.
-author: abmotgi 
-ms.date: 10/25/2021
+description: Learn about how to translate a documentation file for a Microsoft Dynamics product or solution and how to create translation requests.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/25/2021
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 6154
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.3.0
-
+ms.assetid: 
 ---
 
 # Translate documentation files

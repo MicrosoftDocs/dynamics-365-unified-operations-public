@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Sales tax calculation methods in the Origin field
-description: This article explains the options in the Origin field on the Sales tax codes page and how sales tax is calculated based on the selected sales tax code option.
+description: Learn about the options in the Origin field on the Sales tax codes page and how sales tax is calculated based on the selected sales tax code option.
 author: kailiang
-ms.date: 01/11/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 01/11/2023
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: TaxTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Sales tax calculation methods in the Origin field

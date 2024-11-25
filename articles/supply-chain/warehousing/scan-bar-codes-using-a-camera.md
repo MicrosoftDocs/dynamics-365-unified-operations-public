@@ -1,28 +1,12 @@
 ---
-# required metadata
-
 title: Scan bar codes using a camera in the Warehouse Management mobile app
-description: This article explains how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device. 
+description: Learn how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device, including an outline on supported bar code formats. 
 author: Mirzaab
-ms.date: 01/03/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSMobileAppField
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2017-01-03
-ms.dyn365.ops.version: AX 8.0.0
-
+ms.topic: article
+ms.date: 01/03/2018
+ms.reviewer: kamaybac
+ms.search.form: WHSMobileAppField
 ---
 
 # Scan bar codes using a camera in the Warehouse Management mobile app
@@ -35,7 +19,7 @@ This article explains how to set up the Warehouse Management mobile app to scan 
 
 In the display settings of the Warehouse Management mobile app, you can select if the camera should be used for bar code scanning. If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**.
 
-To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**. When this option is selected, a camera can be used for scanning in the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**. When this option is selected, a camera can be used for scanning in the Warehouse Management mobile app. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
 ## Supported bar code formats
 

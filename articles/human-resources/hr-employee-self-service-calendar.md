@@ -4,11 +4,8 @@
 title: Create a team calendar
 description: View and create team calendars in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 07/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace
@@ -17,20 +14,16 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # View team and company calendars
-
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -43,7 +36,6 @@ You can view team and company calendars in Dynamics 365 Human Resources. Team ca
 ## View your team calendar as a manager
 
 1. In the **Employee self service** workspace, select **My team**.
-
 2. Select **Leave and absence**, and then select **View manager absence calendar**.
 
 Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**. 
@@ -56,9 +48,7 @@ Managers can also access the team calendar from **Pending time off requests from
 Users in the Absence manager role can view time-off requests in their calendar. Follow these steps to access the leave calendar.
 
 1. In the **Employee self service** workspace, select **Leave management** and then **Absence manager calendar**.
-
 2. In the **Date** field, enter the desired dates.
-
 3. Update the view options as required.
 
 The absence manager calendar shows all the records for the employees who report to the absence manager in the Leave hierarchy.
@@ -68,7 +58,6 @@ The absence manager calendar shows all the records for the employees who report 
 People who are in human resources roles can view company calendars. Company calendars display all employees. By default, the calendar displays today's date plus 28 days, but you can change the date range. You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.
 
 1. In the **Leave and absence** workspace, select **Links**.
-
 2. Select **Leave and absence calendar**.
 
 Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**. 

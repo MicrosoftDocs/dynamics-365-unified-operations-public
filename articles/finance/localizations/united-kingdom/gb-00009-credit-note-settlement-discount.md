@@ -2,18 +2,17 @@
 title: GB-00009 Create a credit note on the settlement discount
 description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR).
 author: EricWangChen
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: United Kingdom
 ms.author: wangchen
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans, CustTable, CustInvoiceJournal
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # GB-00009 Create a credit note on the settlement discount
 
 [!include [banner](../../includes/banner.md)]

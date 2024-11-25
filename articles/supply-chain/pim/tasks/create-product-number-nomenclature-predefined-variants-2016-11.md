@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create a product number nomenclature for predefined product variants
-description: This article explains how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. 
-author: t-benebo
+description: Learn how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 08/20/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup 
 ---
+
 # Create a product number nomenclature for predefined product variants
 
 [!include [banner](../../includes/banner.md)]

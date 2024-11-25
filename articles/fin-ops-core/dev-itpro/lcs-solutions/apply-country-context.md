@@ -1,15 +1,13 @@
 ---
 title: Apply country/region context
-description: This article provides information about how to apply country/region context to meet localization and translation requirements.
+description: Learn about how to apply country/region context to meet localization and translation requirements, including a table that defines various elements.
 author: sericks007
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da

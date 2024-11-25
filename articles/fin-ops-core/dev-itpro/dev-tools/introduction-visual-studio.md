@@ -1,16 +1,16 @@
 ---
 title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools.
-author: gianugo
-ms.date: 06/14/2023
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 06/14/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ---
 
@@ -74,7 +74,7 @@ This section of the tutorial describes the Fleet management projects and solutio
 
 ## View the source file for a model element
 
-The code in a solution is stored as XML. The following instructions show you how to view the code in Visual Studio and the source XML in Internet Explorer.
+The code in a solution is stored as XML. The following instructions show you how to view the code in Visual Studio and the source XML in Microsoft Edge.
 
 1. In **Solution Explorer**, be sure that the **Fleet Management Migrated** project node is expanded.
 2. Double-click **Code**, and then double-click **Classes**, to open the folder that contains the list of classes for the **Fleet Management Migrated** project.
@@ -88,7 +88,7 @@ The code in a solution is stored as XML. The following instructions show you how
     [![Source code for FmDataHelper.](./media/fmdatahelper_introvisualstudio.png)](./media/fmdatahelper_introvisualstudio.png)
 
 5. In Windows, open **File Explorer**, and then browse to the following folder: C:\\Packages\\FleetManagement\\FleetManagement\\AxClass
-6. Double-click the file named FMDataHelper.xml. If you're prompted to choose a program to open the file with, click **More options**, and then click **Internet Explorer**. Otherwise, open it in Notepad.
+6. Double-click the file named FMDataHelper.xml. If you're prompted to choose a program to open the file with, click **More options**, and then click **Microsoft Edge**. Otherwise, open it in Notepad.
 
     [![Browser view of source code.](./media/notepad_introvisualstudio.png)](./media/notepad_introvisualstudio.png)
 

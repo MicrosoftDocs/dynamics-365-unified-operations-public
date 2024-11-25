@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Main account types
-description: The main account types determine how a main account is used in the chart of accounts.
-author: aprilolson
-ms.date: 11/21/2022
+description: The main account types determine how a main account is used in the chart of accounts. Learn about different aspects of main accounts.
+author: jchrist
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MainAccount
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/13/2024
+ms.custom: evergreen
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 3381
-ms.assetid: e55b9c0e-597b-46d4-b453-81c780939b6d
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
 ms.search.validFrom: 2016-02-28
+ms.search.form: MainAccount
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e55b9c0e-597b-46d4-b453-81c780939b6d
 ---
 
 # Main account types

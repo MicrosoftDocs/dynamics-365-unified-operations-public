@@ -1,17 +1,14 @@
 ---
 title: Sales tax report for Finland
-description: This article provides information about how to set up and generate the sales tax report for legal entities in Finland.
-author: AdamTrukawka
-ms.date: 03/16/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up and generate the sales tax report for legal entities in Finland, including an outline on setting report layouts for sales tax authorities.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
 ms.search.region: Norway
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # Sales tax report for Finland
@@ -62,7 +59,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
+Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-tax-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
 ## <a name="generate-print-finnish"></a>Generate a sales tax payment and print the Finnish sales tax report
 
@@ -186,7 +183,7 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 
 ![Total list of sales tax payment versions in the settlement period.](../media/3_Sales_tax_reporting.png)
 
-## Additional information
+## Related information
 
 If you set up reverse charges according to [Reverse charge VAT](../global/emea-reverse-charge.md), you can get data about the reporting codes on the **Sales tax payment by code** report.
 

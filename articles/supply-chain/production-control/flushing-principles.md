@@ -1,15 +1,15 @@
 ---
 title: Control raw material consumption by using flushing principles
-description: This article describes the four flushing principles that are used for raw material consumption.
+description: Learn about the four flushing principles that are used for raw material consumption, including a description of the flushing principles.
 author: johanhoffmann
 ms.author: johanho
+ms.topic: conceptual
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form: JmgShopSupervisorReleaseOrders
-ms.topic: how-to
-ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Control raw material consumption by using flushing principles
@@ -58,7 +58,7 @@ The *Finish* flushing principle indicates that material will be automatically co
 
 ### Available at location
 
-The *Available at location* flushing principle indicates that the material will be automatically consumed when it's registered as picked for production. The material is registered as picked from location when work for the raw material picking is completed, or when material is available on the production input location and the material line is released to the warehouse. The picking list that is generated during the process is posted in a batch job. This principle is relevant if, for example, you have many picking activities against one production order. In this case, you don't have to update the picking list manually, and you can get a current view of the WIP balance. 
+The *Available at location* flushing principle indicates that the material will be automatically consumed when it's registered as picked for production. The material is registered as picked from location when work for the raw material picking is completed, or when material is available on the production input location and the material line is released to the warehouse. The picking list that is generated during the process is posted in a batch job. This principle is relevant if, for example, you have many picking activities against one production order. In this case, you don't have to update the picking list manually, and you can get a current view of the WIP balance.
 
 > [!NOTE]
 > The *Available at location* flushing principle only applies for products that are enabled for warehouse management processes (WMS).

@@ -1,20 +1,19 @@
 ---
 title: File maintenance requests using the Asset Management mobile app
-description: This article describes how to use the Asset Management mobile app to file maintenance requests.
-author: johanhoffmann
-ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn how to use the Asset Management mobile app to file maintenance requests, including outlines on user requirements and identifying assets.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: how-to
 ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # File maintenance requests using the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 You can use the Asset Management mobile app to file maintenance requests.
 

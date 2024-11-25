@@ -1,19 +1,16 @@
 ---
 title: Split periods in periodic journals
-description: This article provides information about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
+description: Learn about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 261354
 ms.search.form: LedgerJournalTable
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Split periods in periodic journals

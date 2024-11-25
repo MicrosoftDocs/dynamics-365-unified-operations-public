@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Finance 10.0.10.
+description: Learn about features that are either new or changed in Dynamics 365 Finance 10.0.10 released in May 2020, including an outline on included features.
 author: kfend
-ms.date: 04/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2020-03-05 
+ms.topic: whats-new
+ms.date: 07/15/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: kfend
+ms.search.region: Global
+ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: 10.0.10
-
 ---
+
 # What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
 
 [!include [banner](../includes/banner.md)]

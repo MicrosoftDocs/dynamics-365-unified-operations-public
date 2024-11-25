@@ -4,14 +4,15 @@
 title: Commerce Chat with Power Virtual Agents module
 description: This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
 author: josaw1
-ms.date: 04/04/2023
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2022-09-07
-
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce Chat with Power Virtual Agents module
@@ -96,7 +97,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 For a complete list of proactive chat configuration parameters, see [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md).
 
 > [!NOTE]
-> Currently, Power Virtual Agents doesn't support Azure Active Directory B2C (Azure AD B2C) authentication. It supports only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs. Calls to authenticated APIs via Power Virtual Agents chatbots require an explicit customer sign-in.
+> Currently, Power Virtual Agents doesn't support Microsoft Entra ID B2C (Microsoft Entra B2C) authentication. It supports only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs. Calls to authenticated APIs via Power Virtual Agents chatbots require an explicit customer sign-in.
 
 ## Additional resources
 

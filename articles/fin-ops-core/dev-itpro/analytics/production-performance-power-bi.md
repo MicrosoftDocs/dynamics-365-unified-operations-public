@@ -1,18 +1,16 @@
 ---
 title: Production performance Power BI content
-description: This article describes what is included in the Production performance Power BI content.
-author: AndersGirke
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Learn about what is included in the Production performance Power BI content, including a table that outlines metrics that are included in the Power BI content.
+author: AndersEvenGirke
 ms.author: aevengir
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: kamaybac
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: ProductionPerformancePowerBI
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Production performance Power BI content

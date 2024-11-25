@@ -1,31 +1,15 @@
 ---
-# required metadata
-
 title: Inventory marking
-description: This article provides information about the options that are available for marking inventory in firmed orders.
+description: Learn about the options that are available for marking inventory in firmed orders, including outlines on marking and pegging.
 author: t-benebo
-ms.date: 12/02/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2020-12-02
-ms.dyn365.ops.version: AX 10.0.13
-
+ms.topic: article
+ms.date: 12/02/2020
+ms.custom: 
+ms.reviewer: kamaybac
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ---
+
 # Inventory marking
 
 [!include [banner](../../includes/banner.md)]

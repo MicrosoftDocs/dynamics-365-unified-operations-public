@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up premium earnings
-description: This article provides information about premium earnings and how to set them up.
+description: Learn about premium earnings and how to set them up, including prerequisites and outlines and types of premiums.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarningCode, PayrollPremiumEarningGenerationPolicy, SysPolicySourceDocumentRuleType
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221084
-ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarningCode, PayrollPremiumEarningGenerationPolicy, SysPolicySourceDocumentRuleType
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f
 ---
 
 # Set up premium earnings

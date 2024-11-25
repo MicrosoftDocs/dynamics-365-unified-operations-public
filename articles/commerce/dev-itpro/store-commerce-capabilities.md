@@ -2,14 +2,15 @@
 title: Store Commerce app capabilities
 description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/26/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2022-09-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Store Commerce app capabilities
@@ -47,7 +48,7 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Sign-in | Each store employee can have a dedicated sign-in. Sign-in types include user name, bar code, magnetic stripe reader (MSR), biometrics, and Azure Active Directory (Azure AD). | <p>[Azure AD](../aad-pos-logon.md)</p><p>[Extended logon](../extended-logon.md)</p> | |
+| Sign-in | Each store employee can have a dedicated sign-in. Sign-in types include user name, bar code, magnetic stripe reader (MSR), biometrics, and Microsoft Entra ID. | <p>[Microsoft Entra ID](../aad-pos-logon.md)</p><p>[Extended logon](../extended-logon.md)</p> | |
 | Permissions | Different levels of permissions are supported for employees, such as permission to create orders and permission to edit orders. | [Permissions](../tasks/create-pos-permission-groups.md) | |
 | Time and attendance management | Attendance can be managed by using the Time Clock function. Attendance data can be processed into payroll by using the Dynamics 365 Human Resources app. | [Time management](../retail-time-attendance.md) | |
 | Sales commission | Sales can be tracked by sales representative to calculate commissions or other incentives. | [Commission](../pos-sales-groups-track-commissions.md) | |

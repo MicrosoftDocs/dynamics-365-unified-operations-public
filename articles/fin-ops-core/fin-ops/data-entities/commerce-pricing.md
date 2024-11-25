@@ -1,13 +1,13 @@
 ---
 title: Use the Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
-description: This article describes how to use the Microsoft Dynamics 365 Commerce pricing engine to create sales quotations in Dynamics 365 Sales.
+description: Learn about how to use the Microsoft Dynamics 365 Commerce pricing engine to create sales quotations in Dynamics 365 Sales.
 author: ShalabhjainMSFT
-ms.date: 11/19/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: v-chgri
-ms.search.region: global
 ms.author: shajain
+ms.topic: article
+ms.date: 11/19/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Out-of-box security reports
-description: This article describes the security reports that help you understand the set of security roles running in your environment and the users assigned to each role.
-author:  peakerbl
-ms.date: 08/14/2019
+description: Learn about the security reports that help you understand the set of security roles running in your environment and the users assigned to each role.
+author: pnghub
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SysSecConfiguration, SrsReportViewerForm
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: 
+ms.date: 08/14/2019
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2017-06-30
+ms.search.form:  SysSecConfiguration, SrsReportViewerForm
 ms.dyn365.ops.version: Platform update 8
 ---
 

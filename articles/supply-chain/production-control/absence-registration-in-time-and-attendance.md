@@ -1,28 +1,12 @@
 ---
-# required metadata
-
 title: Absence registration in Time and attendance
-description: This article explains how to handle absence registrations in Time and attendance.
+description: Learn how to handle absence registrations in Time and attendance, including an outline on absences that are based on regular work hours.
 author: johanhoffmann
-ms.date: 05/26/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JMGParameters, JmgAbsenceCalendar
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2017-09-20
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 05/26/2017
+ms.reviewer: kamaybac
+ms.search.form: JMGParameters, JmgAbsenceCalendar
 ---
 
 # Absence registration in Time and attendance

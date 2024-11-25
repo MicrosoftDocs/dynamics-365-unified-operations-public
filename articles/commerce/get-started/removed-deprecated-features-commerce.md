@@ -2,16 +2,15 @@
 title: Removed or deprecated features in Dynamics 365 Commerce
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/10/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 10/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2020-04-30
-ms.dyn365.ops.version: Platform update 33
+ms.custom: 
+  - bap-template
 ---
 
 # Removed or deprecated features in Dynamics 365 Commerce
@@ -29,6 +28,28 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Commerce 10.0.39 release
+
+### (Italy) Customer information management for Retail POS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The functionalities of this feature are now available by default, so a feature flag is unnecessary. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Commerce headquarters Italy localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39. |
+
+### (Poland) Customer information management for Retail POS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The functionalities of this feature are now available by default, so a feature flag is unnecessary. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Commerce headquarters Poland localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39. |
+
 ## Features removed or deprecated in the Commerce 10.0.33 release
 
 ### Accessibility Insights integration within site builder
@@ -39,7 +60,17 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Site builder |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plug-in. |
+| **Status**                         | Deprecated: Functionality was removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plug-in. |
+
+### You can no longer download packages from within HQ
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We no longer support maintaining packages within HQ directly. Users are encouraged to use Lifecycle Services or other means to download these packages.
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | HQ |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The UI may still be available but isn't supported |
 
 ## Features removed or deprecated in the Commerce 10.0.29 release
 
@@ -47,21 +78,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We had this setting to control whether the price adjustment function allows increasing the product price. When this parameter is turned off, when using the price adjustment function organizations can only set a product's unit price lower than its base price and trade agreement sales price. We deprecate this setting because the price adjustment function has been updated to support two-way adjustments (increase or decrease) out of the box. |
+| **Reason for deprecation/removal** | We had this setting to control whether the price adjustment function allows increasing the product price. When this parameter is turned off, when using the price adjustment function organizations can only set a product's unit price lower than its base price and trade agreement sales price. We deprecate this setting because the price adjustment function was updated to support two-way adjustments (increase or decrease) out of the box. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and will be removed in October 2023. |
+| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and was removed in October 2023. |
 
 ### Commerce parameters setting - Enable price report for retail store
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We had this setting to control whether the price report function is available for use on the store configuration form. We deprecate this setting because the store configuration form has been updated to always provide the price report function as standard function. |
+| **Reason for deprecation/removal** | We had this setting to control whether the price report function is available for use on the store configuration form. We deprecate this setting because the store configuration form was updated to always provide the price report function as standard function. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This setting will be removed in October 2023. |
+| **Status**                         | Deprecated: This setting was removed in October 2023. |
 
 ### Commerce parameters setting - Use today’s date to calculate prices
 
@@ -71,7 +102,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and will be removed in October 2023. |
+| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and was removed in October 2023. |
 
 ## Feature deprecation effective July 2022
 
@@ -83,7 +114,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | At this time, Commerce analytics (Preview) won't be replaced by another feature or solution. The export of raw transactions and master data from finance and operations apps to Azure Data Lake continues to be available, as explained in [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partners and customers can leverage that data stream to author any intended analytics reports for their business needs.
 | **Product areas affected**         | Commerce analytics (Preview) |
 | **Deployment option**              | All |
-| **Status**                         | We'll be looking at disabling this feature by August 30, 2022.  From this date forward, no refreshing will occur in the current Power BI reports provided by Commerce analytics (Preview).     |
+| **Status**                         | We'll be looking at disabling this feature by August 30, 2022. From this date forward, no refreshing occurs in the current Power BI reports provided by Commerce analytics (Preview).     |
 
 ## Features removed or deprecated in the Commerce 10.0.21 release
 
@@ -91,7 +122,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Overlapping discounts handling setting in Commerce parameters
 
-The **Overlapping discounts handling** setting on the **Commerce parameters** page is deprecated in the Commerce version 10.0.21 release. Going forward, the Commerce pricing engine will use a single algorithm to determine the optimal combination of overlapping discounts.
+The **Overlapping discounts handling** setting on the **Commerce parameters** page is deprecated in the Commerce version 10.0.21 release. In the future, the Commerce pricing engine uses a single algorithm to determine the optimal combination of overlapping discounts.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -99,23 +130,23 @@ The **Overlapping discounts handling** setting on the **Commerce parameters** pa
 | **Replaced by another feature?**   | No. We recommend that organizations that use the **Balanced calculation** or **Exhaustive calculation** option switch to the **Best performance** option before this feature is removed. |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | As of the 10.0.21 release, the **Overlapping discounts handling** setting will be removed from Commerce parameters in October 2022. |
+| **Status**                         | As of the 10.0.21 release, the **Overlapping discounts handling** setting was removed from Commerce parameters in October 2022. |
 
 ### Retail SDK distributed by using Lifecycle Services
 
-The Retail SDK ships in Lifecycle Services (LCS). This mode of distribution is deprecated in release 10.0.21. Going forward, Retail SDK reference packages, libraries, and samples will be published in public repositories on GitHub.
+The Retail SDK ships in Lifecycle Services. This mode of distribution is deprecated in release 10.0.21. In the future, Retail SDK reference packages, libraries, and samples are published in public repositories on GitHub.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The Retail SDK ships in LCS. The LCS process takes a few hours to finish, and the process has to be repeated for every update. Going forward, Retail SDK reference packages, libraries, and samples will be published in public repositories on GitHub. Extension samples and reference packages can be consumed easily, and the updates finish in a few minutes. |
+| **Reason for deprecation/removal** | The Retail SDK ships in Lifecycle Services. The Lifecycle Services process takes a few hours to finish, and the process has to be repeated for every update. In the future, Retail SDK reference packages, libraries, and samples are published in public repositories on GitHub. Extension samples and reference packages can be consumed easily, and the updates finish in a few minutes. |
 | **Replaced by another feature?**   |  [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Product areas affected**         | Retail SDK |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.21, the SDK shipped via the LCS VMs will be removed in October 2023. |
+| **Status**                         | Deprecated: As of release 10.0.21, the SDK shipped via the Lifecycle Services VMs was removed in October 2023. |
 
 ### Retail deployable package and combined POS, Hardware station, and Cloud Scale unit installers
 
-Retail deployable packages generated using the Retail SDK MSBuild is deprecated in 10.0.21. Going forward, use the Cloud Scale Unit (CSU) package for Cloud Scale unit extensions (Commerce Runtime, channel database, Headless commerce APIs, Payments, and Cloud Point of Sale (POS)). Use extension-only installers for POS, Hardware station, and Cloud scale unit self-hosted.
+Retail deployable packages generated using the Retail SDK MSBuild is deprecated in 10.0.21. In the future, use the Cloud Scale Unit (CSU) package for Cloud Scale unit extensions (Commerce Runtime, channel database, Headless commerce APIs, Payments, and Cloud Point of Sale (POS)). Use extension-only installers for POS, Hardware station, and Cloud scale unit self-hosted.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -123,7 +154,7 @@ Retail deployable packages generated using the Retail SDK MSBuild is deprecated 
 | **Replaced by another feature?**   | CSU extensions, POS extension installers, Hardware station extension installers |
 | **Product areas affected**         | Dynamics 365 Commerce extension and deployment |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.21, support for deploying RetailDeployablePackage in LCS will be removed in October 2022. |
+| **Status**                         | Deprecated: As of release 10.0.21, support for deploying RetailDeployablePackage in Lifecycle Services was removed in October 2022. |
 
 For more information, see:
 
@@ -132,11 +163,11 @@ For more information, see:
 + [Integrate the POS with a new hardware device](../dev-itpro/hardware-device-extension.md)
 + Code samples
     + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
-    + [POS, CSU and Hardware station](https://github.com/microsoft/Dynamics365Commerce.InStore)
+    + [POS, CSU, and Hardware station](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
 ### ModernPos.Sln and CloudPos.sln in the Retail SDK
 
-POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.csproj, and the POS folder is deprecated in release 10.0.21. Going forward, use the POS-independent packaging SDK for POS extensions.
+POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.csproj, and the POS folder is deprecated in release 10.0.21. In the future, use the POS-independent packaging SDK for POS extensions.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -144,7 +175,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 | **Replaced by another feature?**   | [POS-independent packaging SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Product areas affected**         | Dynamics 365 Commerce POS extension and deployment |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensons.csproj in Retail SDK will be removed in October 2023. |
+| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensons.csproj in Retail SDK was removed in October 2023. |
 
 ## Features removed or deprecated in the Commerce 10.0.17 release
 
@@ -152,7 +183,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the **Full dataset generation interval in days** field will be deprecated. Also starting in this release, the field will be visually removed so that the value can't be edited. This will stay as the value **0**. |
+| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the **Full dataset generation interval in days** field is deprecated. In this release, the field is visually removed so that the value can't be edited. This stays as the value **0**. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Dynamics 365 Commerce |
 | **Deployment option**              | All|
@@ -164,7 +195,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won't be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won't be supported after August 2021.<br><br>This impacts customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
 | **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
@@ -174,7 +205,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 ### Data action hooks
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The data action hooks feature has been deprecated due to performance issues. |
+| **Reason for deprecation/removal** | The data action hooks feature was deprecated due to performance issues. |
 | **Replaced by another feature?**   | We recommend using [data action overrides](../e-commerce-extensibility/data-action-overrides.md) to modify business logic in the data action layer.|
 | **Product areas affected**         | e-Commerce extensibility data actions |
 | **Deployment option**              | All |
@@ -183,7 +214,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 ### Retail SDK support for Visual Studio 2015, msbuild 14.0, and Retail SDK\Reference libraries and tools
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Retail SDK support for Visual Studio 2015 has been deprecated and updated to support VS 2017, msbuild 15.0 and all the reference libraries and commerce proxy generator tools in the RetailSDK\References folder moved to NuGet packages to simplify the extension model and SDK upgrade process.|
+| **Reason for deprecation/removal** | Retail SDK support for Visual Studio 2015 was deprecated and updated to support VS 2017, msbuild 15.0 and all the reference libraries and commerce proxy generator tools in the RetailSDK\References folder moved to NuGet packages to simplify the extension model and SDK upgrade process.|
 | **Replaced by another feature?**   | We recommend that you follow the information in [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) to update your system. |
 | **Product areas affected**         | Retail SDK extensions |
 | **Deployment option**              | All |
@@ -192,7 +223,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 ### Retail Server Extension using IEdmModelExtender and CommerceController
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Retail server extension using IEdmModelExtender and CommerceController has been deprecated to provide simplified extension model. The new implementation will have only the controller class without any additional IEdmModelExtender class implementation. This also avoids the dependency with a particular OData version (if the OData version is updated it may break extensions.) |
+| **Reason for deprecation/removal** | Retail server extension using IEdmModelExtender and CommerceController was deprecated to provide simplified extension model. The new implementation only has the controller class without any additional IEdmModelExtender class implementation. This also avoids the dependency with a particular OData version (if the OData version is updated it may break extensions.) |
 | **Replaced by another feature?**   |  We recommend that you use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
 | **Product areas affected**         | Retail server extensions |
 | **Deployment option**              | All |
@@ -201,7 +232,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 ### Hardware station Extension using IHardwareStationController
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Hardware station extension using IHardwareStationController has been deprecated to provide simplified extension model. The new implementation will have only the IController class without any additional class implementation and to avoid the dependency with core hardware station libraries, previously extension need to refer multiple libraries.) |
+| **Reason for deprecation/removal** | Hardware station extension using IHardwareStationController was deprecated to provide simplified extension model. The new implementation only has the IController class without any more class implementation and to avoid the dependency with core hardware station libraries, previously extension need to refer multiple libraries.) |
 | **Replaced by another feature?**   | It's recommended to use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
 | **Product areas affected**         | Hardware station extensions |
 | **Deployment option**              | All |
@@ -215,7 +246,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 | **Replaced by another feature?**   | Yes. It's replaced by two new POS operations: inbound operation (804) and outbound operation (805).|
 | **Product areas affected**         | Point of sale (POS) application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.10, the picking and receiving operation will no longer receive any new feature updates. Only critical bug fixes will be done for this operation in future releases. All customers are encouraged to move to the new [Inbound operations](../pos-inbound-inventory-operation.md) and [Outbound operations](../pos-outbound-inventory-operation.md), which will continue to be part of our long-term product roadmap. |
+| **Status**                         | Deprecated: As of release 10.0.10, the picking and receiving operation will no longer receive any new feature updates. Only critical bug fixes are done for this operation in future releases. All customers are encouraged to move to the new [Inbound operations](../pos-inbound-inventory-operation.md) and [Outbound operations](../pos-outbound-inventory-operation.md), which continues to be part of our long-term product roadmap. |
 
 
 ## Features removed or deprecated in the Commerce 10.0.7 release
@@ -226,10 +257,10 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 | **Replaced by another feature?**   | Yes: It's replaced by GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs. |
 | **Product areas affected**         | e-Commerce application SDK |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.7, there will no longer be engineering investments made for GetProductAvailabilities and GetAvailableInventoryNearby. Organizations that use these APIs in their e-Commerce deployments should convert to the new GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs and enable the [Optimized product availability calculation feature](../calculated-inventory-retail-channels.md).  |
+| **Status**                         | Deprecated: As of release 10.0.7, no engineering investments are made for GetProductAvailabilities and GetAvailableInventoryNearby. Organizations that use these APIs in their e-Commerce deployments should convert to the new GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs and enable the [Optimized product availability calculation feature](../calculated-inventory-retail-channels.md).  |
 
 ## Previous announcements about removed or deprecated features
-To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json).
+To learn more about features that are removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

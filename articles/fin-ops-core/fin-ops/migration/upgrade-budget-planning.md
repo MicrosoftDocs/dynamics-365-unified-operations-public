@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Upgrade budget planning
-description: This article explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
-author: panolte
-ms.date: 04/10/2017
+description: Learn about what must be reconfigured and also describes new features that should be considered after the upgrade is completed.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 04/10/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 272923
-ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.dyn365.ops.version: Version 1611
+ms.search.form: 
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ---
 
 # Upgrade budget planning

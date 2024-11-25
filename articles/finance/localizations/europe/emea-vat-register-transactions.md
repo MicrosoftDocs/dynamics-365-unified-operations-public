@@ -1,19 +1,17 @@
 ---
 title: VAT register transactions for Eastern Europe
-description: This article provides information about VAT register transactions for Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland.
-author: mrolecki
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about VAT register transactions for legal entities with a primary address Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 270434
 ms.search.form: RegisterVAT_W, TaxTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # VAT register transactions for Eastern Europe

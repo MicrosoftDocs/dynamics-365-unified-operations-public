@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Create service orders automatically   
-description: You can create service orders for one service agreement or for several service agreements.
-author: sorenva
-ms.date: 01/19/2023
+description: Learn how you can create service orders for one service agreement or for several service agreements, including a step-by-step process.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/19/2023
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable
 ---
 
 # Create service orders automatically
@@ -53,7 +37,7 @@ When you create service orders manually or automatically from the service agreem
 1. Select **Select** to make selections to add or remove criteria to use to create service orders.
 1. Select **OK**.
 
-## Additional resources
+## Related information
 
 - [Service orders](service-orders.md)
 - [Automatically create service orders](auto-create-service-orders.md)

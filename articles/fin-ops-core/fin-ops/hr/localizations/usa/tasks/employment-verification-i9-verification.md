@@ -1,35 +1,22 @@
 --- 
-# required metadata 
- 
 title: Employment verification i9 verification
-description: The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. 
+description: Learn about the Immigration Reform and Control Act, which requires US employers to verify the employment eligibility status of newly hired employees. 
 author: ShielaSogge
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
-
-# optional metadata 
-
-ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shielas
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 01/10/2022
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document  
 ms.dyn365.ops.version: Version 7.0.0
-
 ---
+
 # Employment verification i9 verification
 
 [!include [banner](../../../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../../../includes/peap-1.md)]
 
 The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. This procedure will walk you through the steps of recording the necessary documents for I-9 verification. Use the USMF company for this procedure.
 

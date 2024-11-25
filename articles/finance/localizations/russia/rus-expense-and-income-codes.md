@@ -1,15 +1,14 @@
 ---
 title: Expense and income codes
-description: This article provides information about the expense and income codes available for Russia.
-author: AdamTrukawka
-ms.date: 08/05/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the expense and income codes available for Russia, including a step-by-step process for creating an expense or income code.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: kfend
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 ---

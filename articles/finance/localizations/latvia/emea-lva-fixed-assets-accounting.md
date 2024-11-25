@@ -1,20 +1,18 @@
 ---
 title: Fixed assets accounting for tax purposes
-description: This article provides information about the tax Depreciation functionality for Latvia.
-author: AdamTrukawka
+description: Learn about the tax Depreciation functionality for Latvia, including fields to consider when setting up a depreciation profile.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Latvia
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 264374
-ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
 ms.search.form: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDepreciation
+ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
 ---
 
 # Fixed assets accounting for tax purposes

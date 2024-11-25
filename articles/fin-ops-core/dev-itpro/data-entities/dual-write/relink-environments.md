@@ -1,66 +1,53 @@
 ---
 title: Unlink and relink dual-write environments
-description: This article describes how to unlink, clear the key tables, and then relink dual-write environments.
+description: Learn how to unlink, clear the key tables, and then relink dual-write environments, including various scenarios and known issues.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2021-04-07
-ms.dyn365.ops.version: 
+
 ---
 
 # Unlink and relink dual-write environments
 
 [!include [banner](../../includes/banner.md)]
 
+When you unlink and relink Dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and how to delete the data in the key tables.
 
+## Scenario: Reset linking
 
-When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
+If you want to reset your existing sandbox Dataverse instance that is linked for Dual-write or you want to change the linking to the Dataverse instance currently targeted in Lifecycle Services, follow these steps:
 
-The mappings are preserved when you unlink and relink, because the mappings are stored in Dataverse.
-
-## Scenario: Dual-write is enabled between production environments
-
-In this scenario, dual-write is enabled between finance and operations and Dataverse production environments. You want to back up the finance and operations production environment (source) and restore it to finance and operations UAT environment (destination). Once you restore, follow these steps on the finance and operations UAT environment:
-
-1. Stop all table maps.
-2. Unlink the dual-write connection as the finance and operations UAT environment will be pointing towards Dataverse production environment.
-3. Delete the data from the key tables.
-
-    - **DualWriteProjectConfiguration**
-    - **DualWriteProjectFieldConfiguration**
-    - **BusinessEventsDefinition**
-
-4. You may want to relink finance and operations UAT environment against Dataverse UAT environment. 
-5. Enable the maps.
-
-If the backup and restore processes are running on Dataverse, then follow these steps:
-
-1. Sign in to finance and operations UAT environment.
-2. Stop all table maps.
-3. Unlink the dual-write connection as the Dataverse UAT environment will be pointing towards finance and operations production environment.
-4. Delete the data from the **Dual Write Runtime Configurations** table on Dataverse.
-5. You may want to relink finance and operations UAT environment against Dataverse UAT environment.
-6. Enable the maps.
-
-## Scenario: Reset or change linking
-
-If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a different Dataverse instance, then follow these steps:
+> [!NOTE]
+> If you receive a message in Lifecycle Services that states "Microsoft has detected that your environment is linked via Dual-write to a different Power Platform environment" the following steps will help you resolve the issue when a previous link has been established.
 
 1. Sign in to the finance and operations app.
-2. Stop all entity maps.
-3. Unlink the dual-write connection between finance and operations app and Dataverse.
-5. Reset the Dataverse environment.
-6. Delete the data from the key tables in the finance and operations app.
+2. Navigate to **Data management** > **Dual-write**.
+3. Stop all entity maps.
+4. Ensure the environment targeted via Lifecycle Services is properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
+5. To reset all Dual-write connections and configurations, select **Reset**. For more information about the reset process, see [Reset dual-write connections](reset.md).
+
+## Scenario: Back up and restore
+
+When you back up and restore an environment, you may see unexpected data movement or errors. These errors happen if a previous Dual-write connection was established with the backup/restore environment and table maps weren't stopped. This causes data in key tables not to be cleared. 
+
+To mitigate this issue, follow these steps.
+
+1. Sign in to the targeted Finance and Operations app.
+2. Delete the data from the following tables:
 
     - **DualWriteProjectConfiguration**
     - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
-7. Set up dual-write on the environment that you want to reset. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
+3. Sign in to the targeted Dataverse environment.
+4. Delete the data from the **Dual Write Runtime Configurations** table.
+5. To re-establish applicable connections, reset the connection as detailed in the "Reset linking" section.
 
 ## Known issues
 
@@ -68,13 +55,12 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 
 When you try to copy, update, or delete records after copying the environment, the following error appears: **SecureConfig Organization (ProjOpsTest4) does not match actual CRM Organization (org6459f7a8_195867911_20200717T174709)**.
 
-Follow these steps to mitigate the error:
+To mitigate the error, follow these steps.
 
 1. In the customer engagement app, select **Advanced find**.
 2. In the **Look for** field, select **Dual Write Runtime Configurations**.
 3. Select **Results**.
-4. Rows will be displayed. Select all the rows.
+4. Rows are displayed. Select all the rows.
 5. Select the **Delete** icon.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

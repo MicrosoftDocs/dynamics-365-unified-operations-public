@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: On-premises disaster recovery configuration
-description: This article describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery.
+description: Learn how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery, including limitations and recommendations.
 author: faix
-ms.date: 09/11/2020
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2020-06-30 
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # On-premises disaster recovery configuration

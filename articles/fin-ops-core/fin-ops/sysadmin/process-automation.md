@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Process automation
-description: This article provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
+description: Learn about how process automation allows simple scheduling of processes that will be run by the batch server.
 author: RyanCCarlson2
-ms.date: 06/29/2022
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProcessScheduleSeries
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry:
 ms.author: rcarlson
+ms.topic: article
+ms.date: 06/10/2024
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-06-30
+ms.search.form: ProcessScheduleSeries
 ms.dyn365.ops.version: AX 10.0.11
 ---
 
@@ -42,7 +32,7 @@ Any processes that are disabled in feature management won't show when the featur
 
 One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You'll see this view on the right side of the **Process automation** page. It will be populated with the scheduled work for the selected series.
 
-[![Process automation calendar.](../../dev-itpro/sysadmin/media/CalendarView2.png)](/media/CalendarView2.png)
+[![Process automation calendar.](../../dev-itpro/sysadmin/media/CalendarView2.png)]
 
 ## Occurrence changes
 

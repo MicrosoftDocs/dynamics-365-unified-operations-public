@@ -1,22 +1,14 @@
 ---
-# required metadata
-
 title: Cloud-hosted environments can't use business events or virtual entities and receive a 400 error
-description: This article provides information that can help you troubleshoot business events in cloud-hosted environments.
+description: Learn about how you can troubleshoot business events in cloud-hosted environments, including a PowerShell script.
 author: ramasri
-ms.date: 06/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
 ms.author: ramasri
+ms.topic: article
+ms.date: 06/26/2023
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ---
 
 # Cloud-hosted environments can't use business events or virtual entities and receive a 400 error
@@ -27,10 +19,10 @@ When you set up business events or virtual entities in a cloud-hosted environmen
 
 The error occurs because cloud-hosted environments and on-premises environments (also known as local business data \[LBD\] environments) don't use Security Service. Follow these steps to manually complete the setup.
 
-1. Create a new app registration in Azure Active Directory (Azure AD). Save the **Application client ID** value.
+1. Create a new app registration in Microsoft Entra ID. Save the **Application client ID** value.
 1. In the new app registration, create a new secret. Save the **Secret** value.
 1. In Power Platform admin center, go to **Environments** \> **Settings** \> **Users \+ Permissions** \> **Application users** \> **New App User**, create an app user for the application client ID that you saved in step 1, and assign the appropriate role.
-1. Go to **Dynamics 365 Finance and Operations System Administration** \> **Azure Active Directory Application**, and add the application client ID that you saved in step 1.
+1. Go to **Dynamics 365 Finance and Operations System Administration** \> **Microsoft Entra Application**, and add the application client ID that you saved in step 1.
 1. In the Admin PowerShell console, run the following PowerShell script to refresh the integration of Dataverse via PowerShell in remote desktop in the cloud-hosted or LBD environment.
 
     ```powershell
@@ -267,9 +259,9 @@ The error occurs because cloud-hosted environments and on-premises environments 
     {
         Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Dataverse Organization URL" -Type "Uri"
         Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Dataverse Organization id" -Type "Guid"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Dataverse AAD Tenant domain (e.g. Contoso.OnMicrosoft.com)" -Type "String"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Dataverse AAD App id" -Type "Guid"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecretEncrypted" -Prompt "Dataverse AAD App secret" -Type "Secret"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Dataverse Microsoft Entra Tenant domain (e.g. Contoso.OnMicrosoft.com)" -Type "String"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Dataverse Microsoft Entra App id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecretEncrypted" -Prompt "Dataverse Microsoft Entra App secret" -Type "Secret"
     
         Enable-Flight -FlightName "BusinessEventsCDSIntegration"
     

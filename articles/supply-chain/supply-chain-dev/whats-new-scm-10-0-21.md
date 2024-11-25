@@ -1,16 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.21 (October 2021) 
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.21. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.21 with an outline on included features. 
 author: kamaybac
-ms.date: 10/28/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer, IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.21 (October 2021)
@@ -131,11 +130,11 @@ We have recently added or significantly updated the following help articles. The
 | Warehouse management | [Schedule wave label printing during wave](../warehousing/configure-task-based-wave-label-printing.md) |
 | Warehouse management | [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 includes platform updates. To learn more, see [Platform updates for version 10.0.21 of finance and operations apps (October 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 includes platform updates. Learn more in [Platform updates for version 10.0.21 of finance and operations apps (October 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### Bug fixes
 

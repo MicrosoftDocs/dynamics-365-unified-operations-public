@@ -1,19 +1,17 @@
 ---
 title: Manual depreciation of fixed assets for Italy
-description: This article provides information about fixed assets depreciation for legal entities in Italy.
-author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about fixed assets depreciation for legal entities in Italy, including outlines on the calculation basis and depreciation run date fields.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 ms.search.region: Italy
-ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 264294
 ms.search.form: AssetDepreciationProfile, LedgerJournalTransApprove, LedgerJournalTransAsset, LedgerJournalTransDaily, LedgerJournalTransVendInvoice, PurchTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Manual depreciation of fixed assets for Italy

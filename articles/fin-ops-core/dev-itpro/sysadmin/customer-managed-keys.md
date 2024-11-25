@@ -1,14 +1,13 @@
 ---
 title: Use customer-managed keys to control encryption keys for data at rest
-description: This article explains how to set up customer-managed keys for finance and operations environments to control encryption keys for data at rest.
+description: Learn about how to set up customer-managed keys for finance and operations environments to control encryption keys for data at rest.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 07/19/2023
 ms.custom: bap-template
-
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Use customer-managed keys to control encryption keys for data at rest
@@ -70,4 +69,4 @@ Not all finance and operations apps support CMK policies. The following table de
 | Dynamics 365 Finance | <p>Finance and operations environments that are provisioned under Dynamics 365 Finance support CMKs for all environment-specific resources.</p><p>**Note:** If you use [RCS](../../../finance/localizations/rcs-overview.md) to complement your Dynamics 365 Finance environment, data that's managed under RCS environments doesn't currently support CMKs. Support for CMKs is expected in late 2023, when RCS functionality becomes available for finance and operations apps.</p> |
 | Dynamics 365 Commerce | <p>Finance and operations environments that are provisioned under Dynamics 365 Commerce support CMKs for all environment-specific resources except the e-commerce content management system (CMS) and recommendations. CMK support for the e-commerce CMS is expected to be enabled in the future.</p><p>CMKs can't be applied to [Commerce Scale Units](../deployment/Initialize-Retail-Channels.md), [e-commerce](../../../commerce/deploy-ecommerce-site.md), and [ratings and reviews](../../../commerce/ratings-reviews-overview.md) components that are located in a different geo than the finance and operations environment that CMKs are enabled for.</p> |
 | Microsoft Dynamics Lifecycle Services | <p>Data that you store in Lifecycle Services (such as file assets, methodologies, task recorder data, and any other project metadata) won't be encrypted by using CMKs.</p><p>CMK support for Lifecycle Services metadata is expected sometime in the future.</p> |
-| Demand planning app (preview) | The preview version of the Demand planning app for Dynamics 365 Supply Chain Management doesn't fully support CMKs. Full CMK support is expected when the app becomes generally available. |
+| Demand planning app | Demand planning app for Dynamics 365 Supply Chain Management doesn't fully support CMKs. Full CMK support is expected sometime in the future. |

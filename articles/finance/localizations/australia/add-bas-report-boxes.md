@@ -1,18 +1,16 @@
 ---
 title: Add BAS report boxes and generate the Australia Business Activity Statement BAS
-description: This procedure walks you through adding BAS report boxes and generating the BAS.
+description: Learn about adding BAS report boxes and generating the BAS, including a step-by-step process for adding reports using the USMF demo data compnay.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Australia
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Australia
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, DefaultDashboard, LedgerJournalTransVendPaym, VendOpenTrans, TaxGroupLookup, TaxItemGroupLookup, CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, TaxReportExtraFields, SrsReportViewerForm
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # Add BAS report boxes and generate the Australia Business Activity Statement BAS
 

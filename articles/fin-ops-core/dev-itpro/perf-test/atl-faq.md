@@ -1,19 +1,16 @@
 ---
 title: Acceptance test library FAQ
-description: This article provides answers to frequently asked questions about the Acceptance test library.
+description: Acccess answers to frequently asked questions about the Acceptance test library, including whether entities or creator classes should be implemented.
 author: MichaelFruergaardPontoppidan
-ms.date: 03/27/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 03/27/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.custom: 
-ms.assetid: 
 ---
 
 # Acceptance test library FAQ

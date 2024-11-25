@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Depreciation effects with reversals
-description: This article discusses potential implications of reversing a fixed asset transaction. 
+description: Learn about potential implications of reversing a fixed asset transaction, including various examples that illustrate different depreciations. 
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 2961
-ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ---
 
 # Depreciation effects with reversals

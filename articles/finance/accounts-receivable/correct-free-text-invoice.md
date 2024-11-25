@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Correct a free text invoice
-description: This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
-author: abruer
-ms.date: 10/24/2022
+description: Learn how to correct a free text invoice that has been posted and reissue it as a corrected invoice, including definitions for different invoice types.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustFreeInvoice
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustFreeInvoice
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ---
 
 # Correct a free text invoice

@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Print lump sum recovery text on a customer invoice
-description: This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices.
+description: Learn about how to print a lump sum recovery text that shows the penalty amount on customer invoices including an overview on setting up parameters.
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustFormletterParameters, CustInvoiceJournal
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.search.region: France
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustFormletterParameters, CustInvoiceJournal
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Print lump sum recovery text on a customer invoice

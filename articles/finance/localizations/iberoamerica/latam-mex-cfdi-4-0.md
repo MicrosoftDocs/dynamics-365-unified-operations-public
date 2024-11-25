@@ -1,15 +1,14 @@
 ---
 title: CFDI layout version 4.0
-description: This article provides information about Comprobante Fiscal Digital por Internet (CFDI) layout version 4.0 for Mexico.
-author: AdamTrukawka
+description: Learn about Comprobante Fiscal Digital por Internet (CFDI) layout version 4.0 for Mexico, including outlines on parameters for working with version 4.0.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 06/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Mexico
-ms.author: atrukawk
 ms.search.validFrom: 2022-04-01
 ms.search.form: CustPosting, VendParameters
 ---

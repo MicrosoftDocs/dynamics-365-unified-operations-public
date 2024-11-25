@@ -1,13 +1,15 @@
 ---
 title: Write best practice rules
-description: This article describes how you can author best practice rules in C#, for both metadata and X++ code.
+description: Learn how you can author best practice rules in C#, for both metadata and X++ code, including various code examples.
 author: pvillads
-ms.date: 11/03/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: pvillads
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7

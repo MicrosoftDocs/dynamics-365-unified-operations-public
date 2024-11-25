@@ -1,12 +1,13 @@
 ---
 title: System tables
-description: This article describes the system tables.
+description: Learn about various System classes with tables that outline descriptions for methods to be implemented in X++ code.
 author: josaw1
-ms.date: 11/06/2017
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 11/06/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

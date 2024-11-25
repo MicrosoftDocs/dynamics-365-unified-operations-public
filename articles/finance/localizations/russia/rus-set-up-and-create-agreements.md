@@ -1,15 +1,14 @@
 ---
 title: Set up and create agreements
-description: This article provides information about creating purchase and sales agreements.
-author: AdamTrukawka
-ms.date: 02/05/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about creating purchase and sales agreements, including a step-by-step process for creating sales agreement classifications.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

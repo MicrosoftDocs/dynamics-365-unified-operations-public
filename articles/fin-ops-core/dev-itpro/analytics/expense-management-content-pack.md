@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Expense management Power BI content
-description: This article describes what is included in the Expense management Power BI content pack.
+description: Learn about what is included in the Expense management Power BI content pack, including a table for metrics that are included in the Power BI content.
 author: panolte
-ms.date: 03/18/2019
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
-# ROBOTS: 
+ms.date: 03/18/2019
+ms.custom:
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kfend
 ms.search.validFrom: 2018-10-31
+ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Expense management Power BI content

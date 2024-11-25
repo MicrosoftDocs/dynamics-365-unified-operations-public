@@ -1,19 +1,18 @@
 ---
 title: Set up consolidated invoices
-description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
+description: Learn how consolidated invoices can be enabled to fit the Japanese business practices, including processes for configuring payments days and terms of payment.
 author: kfend
-ms.date: 08/01/2023
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CustParameters, PaymDay, PaymTerm
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Set up consolidated invoices
 
 [!include [banner](../../includes/banner.md)]

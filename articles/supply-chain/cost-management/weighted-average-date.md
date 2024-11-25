@@ -1,16 +1,12 @@
 ---
 title: Weighted average date with Include physical value and marking
-description: Weighted average date is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory for each separate day in the inventory closing period. 
-author: JennySong-SH
-ms.date: 03/04/2022
+description: Weighted average date is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of received items.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-audience: Application User
+ms.date: 03/04/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ---
 
 # Weighted average date with Include physical value and marking

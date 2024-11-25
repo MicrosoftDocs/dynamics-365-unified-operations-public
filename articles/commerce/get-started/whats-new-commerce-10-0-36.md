@@ -2,10 +2,12 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.36 (October 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.36. 
 author: josaw1
-ms.date: 08/31/2023
+ms.date: 04/12/2024
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
@@ -29,14 +31,27 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory management | [Enable real-time inventory with Inventory Visibility](/dynamics365/release-plan/2023wave2/commerce/dynamics365-commerce/enable-real-time-inventory-commerce-inventory-visibility) |  This feature enables native integration between Commerce and Inventory Visibility (IV), a Dynamics 365 Supply Chain Management microservice. Customers who are licensed for both Supply Chain Management and Commerce will have the option to enable Inventory Visibility as the inventory data provider to serve commerce scenarios. On-hand inventory can be queried, reserved, and adjusted in real-time. Organizations can also configure additional inventory data sources and define custom on-hand inventory calculation formulas to fit specific business needs. | IT Pro opt-in |
+| Inventory management | [Enable real-time inventory with Inventory Visibility](/dynamics365/release-plan/2023wave2/commerce/dynamics365-commerce/enable-real-time-inventory-commerce-inventory-visibility) |  This feature enables native integration between Commerce and Inventory Visibility (IV), a Dynamics 365 Supply Chain Management microservice. Customers who are licensed for both Supply Chain Management and Commerce have the option to enable Inventory Visibility as the inventory data provider to serve commerce scenarios. On-hand inventory can be queried, reserved, and adjusted in real-time. Organizations can also configure other inventory data sources and define custom on-hand inventory calculation formulas to fit specific business needs. | IT Pro opt-in |
 | Loyalty  |  Define loyalty cards   |  Specify loyalty card type and options for loyalty cards.<p>[Define loyalty cards](../tasks/define-loyalty-cards.md)  |  |
 |  Orders  | Prompt customer contact details during asynchronous order cancellation  |  If the asynchronous order cancellation feature is enabled, the store associates can be prompted to verify the customer contact information when canceling an order. This verification ensures that if there are any problems in canceling the order, the customer can be reached using the verified contact details.<p>[Customer orders in point of sale (POS)](../customer-orders-overview.md#enable-customer-orders-to-be-created-in-asynchronous-mode)  |  IT Pro opt-in   |
-|   Payments   |   Google Pay on Adyen (Fix with Standard Google Pay Button)  |  Commerce now offers a dedicated "Google Pay" module to offer an alternate Google Pay solution for regular (non-express) payment in the online cart checkout process. This module uses the direct Google Pay API approach, differing from the Iframe structure used by the common payment module. This new module addresses browser limitations from Google and will support direct express checkout experiences in future iterations.<p>[Configure Google Pay with Adyen](../dev-itpro/google-pay-adyen.md)  |  Developer opt-in   |
+|   Payments   |   Google Pay on Adyen (Fix with Standard Google Pay Button)  |  Commerce now offers a dedicated "Google Pay" module to offer an alternate Google Pay solution for regular (nonexpress) payment in the online cart checkout process. This module uses the direct Google Pay API approach, differing from the Iframe structure used by the common payment module. This new module addresses browser limitations from Google and will support direct express checkout experiences in future iterations.<p>[Configure Google Pay with Adyen](../dev-itpro/google-pay-adyen.md)  |  Developer opt-in   |
 | Point of sale (POS) |  [Reset receipt numbers](../reset_receipt_number_sequence.md#force-synchronization-of-number-sequence-data-at-app-launch) |  Organizations that have strict requirements for unique receipt IDs can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit (CSU) whenever POS is initialized. This action guarantees that the POS will always have the most current number sequence before any transactions are executed.<p>[Reset receipt numbers](../reset_receipt_number_sequence.md)  |  Admin/maker    |
 |  Point of sale (POS) | POS UX improvements  | POS now has improvements to the user interface to match current Microsoft design practices. Updates include rounded corners on tiles and buttons, drop shadows and rollover elevation on product and category cards, and an updated **Logout** screen.   | By default  |
-|  Point of sale (POS) | Bar code scanning performance improvements | Product data is now cached in POS when you add products to the cart, resulting in an a significant performance improvement. POS makes a Commerce Scale Unit (CSU) call in the background for product data older than one hour to ensure that the cache contains the latest data.   | By default<p><p>To disable this functionality for your organization, submit a service request.  |
+|  Point of sale (POS) | Bar code scanning performance improvements | Product data is now cached in POS when you add products to the cart, resulting in a significant performance improvement. POS makes a Commerce Scale Unit (CSU) call in the background for product data older than one hour to ensure that the cache contains the latest data.   | By default<p><p>To disable this functionality for your organization, submit a service request.  |
 
+## Feature state changes in this release
+The following table lists features that became mandatory or on by default in version 10.0.36. All of these features are automatically turned on for your system as soon as you update to version 10.0.36. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Feature | Title | New feature state |
+| --- | --- | --- |
+| RetailShouldDiscountBeAppliedToGiftCardsFeature | Support gift card items in discount calculation. | Mandatory |
+| RetailEInvoiceFeature_SA | KSA Electronic-Invoicing capability for the fiscal integration framework. | On by default |
+
+> [!NOTE]
+> If you have disabled the feature **Support gift card items in discount calculation**, we recommend you to validate your configurations for your gift card items. For example, the default sales unit of measure is mandatory for gift card items, and test those configuration (like issue and redeem gift cards) on a UAT environment with the feature **Support gift card items in discount calculation** enabled before upgrading to 10.0.36 or later.
+
+> [!NOTE]
+> The **KSA Electronic-Invoicing capability for the fiscal integration framework** feature requires you to setup electronic invoices for Saudi Arabia. For more information, see [Generate and submit simplified electronic invoices for Saudi Arabia](../localizations/mea/emea-sau-simplified-e-invoices.md).
 
 
 ## Additional resources
@@ -61,9 +76,9 @@ Check out the [Dynamics 365 and industry clouds: 2023 release wave 2 plan](/dyna
 The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that have been removed or deprecated for Commerce.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
 
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.

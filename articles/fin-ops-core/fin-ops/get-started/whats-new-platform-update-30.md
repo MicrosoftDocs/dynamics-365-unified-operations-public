@@ -1,20 +1,19 @@
 ---
 title: What's new or changed in Platform update 30 for finance and operations apps (November 2019)
-description: This article describes features that are new or changed in Platform update 30 for finance and operations apps.
+description: Learn about features that are new or changed in Platform update 30 for finance and operations apps in the update available as of November 2019.
 author: sericks007
-ms.date: 11/08/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: whats-new
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 04/12/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.custom: 
-ms.assetid: 
 ---
+
 # What's new or changed in Platform update 30 for finance and operations apps (November 2019)
 
 [!include [banner](../includes/banner.md)]

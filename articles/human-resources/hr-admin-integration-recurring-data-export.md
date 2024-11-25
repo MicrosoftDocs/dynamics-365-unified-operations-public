@@ -6,9 +6,6 @@ description: This article describes how to create a Microsoft Azure logic app th
 author: twheeloc    
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,9 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create a recurring data export app
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -52,7 +45,7 @@ This tutorial uses the following technologies:
 
     - **[Connectors](/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
 
-        - [HTTP with Azure AD](/connectors/webcontents/) connector
+        - [HTTP with Microsoft Entra ID](/connectors/webcontents/) connector
         - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) connector
 
 - **[DMF package REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
@@ -97,17 +90,15 @@ The bulk of the exercise involves creating the logic app.
 
 4. Call the [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API to schedule the export of your data package.
 
-    1. Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
+    1. Use the **Invoke an HTTP request** action from the HTTP with Microsoft Entra connector.
 
         - **Base Resource URL:** The URL of your Human Resources environment (Don't include path/namespace information.)
-        - **Azure AD Resource URI:** `http://hr.talent.dynamics.com`
+        - **Microsoft Entra Resource URI:** `http://hr.talent.dynamics.com`
 
         > [!NOTE]
-        > The Human Resources service doesn't yet provide a connector that exposes all the APIs that make up the DMF package REST API, such as **ExportToPackage**. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Human Resources.
+        > The Human Resources service doesn't yet provide a connector that exposes all the APIs that make up the DMF package REST API, such as **ExportToPackage**. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Microsoft Entra connector. This connector uses Microsoft Entra ID for authentication and authorization to Human Resources.
 
-        ![HTTP with Azure AD connector.](media/integration-logic-app-http-aad-connector-step.png)
-
-    2. Sign in to your Human Resources environment through the HTTP with Azure AD connector.
+    2. Sign in to your Human Resources environment through the HTTP with Microsoft Entra connector.
     3. Set up an HTTP **POST** request to call the **ExportToPackage** DMF REST API.
 
         - **Method:** POST

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Attach templates to service objects   
-description: A template bill of materials (BOM) can be attached to a service object relation. 
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how a template bill of materials (BOM) can be attached to a service object relation, including a step-by-step process.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceObjectTable
 ---
 
 # Attach templates to service objects    
@@ -49,7 +33,7 @@ A template bill of materials (BOM) can be attached to a service object relation.
 
 
 
-## See also
+## Related information
 
 [Create service objects](create-service-objects.md)
 

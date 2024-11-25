@@ -1,29 +1,24 @@
 ---
 title: View and customize tables for holding imported data
-description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations. This article describes the predefined tables that the app includes. It also explains how to customize the tables and create new ones.
-author: t-benebo
-ms.author: benebotg
+description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations.
+author: AndersEvenGirke
+ms.author: aevengir
+ms.topic: overview
+ms.date: 02/20/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: overview
-ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # View and customize tables for holding imported data
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Data that's imported into Demand planning must be loaded into tables that are set with the fields and relations that are required to accommodate the incoming data. Demand planning includes a set of predefined tables that support the most useful standard data that you'll probably want to import from Microsoft Dynamics 365 Supply Chain Management. If you've customized your tables in Supply Chain Management, you can use the tools that are provided to reproduce the custom fields. You can also create new custom tables to store data from Supply Chain Management and other sources.
 
 ## View tables
 
-To view the full list of tables that are available to the Demand planning app, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
+To view the full list of tables that are available to Demand planning, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
 
 - The **Name** column shows the name of each table. Select a table name to view and edit details about that table, including column definitions, relationships, and data.
 - The **Is System** column indicates whether each table is a standard table that's provided by the system or a custom table that was added by a user. It shows one of the following values:
@@ -151,3 +146,23 @@ You can easily import data from Supply Chain Management into the standard tables
 You can edit any relationship, unmap fields, or add custom field mappings as you require. Before you can import a custom field, you must add it in the standard table.
 
 When you create an import job, an export data project for the required data entities is created in Supply Chain Management.
+
+## Security configuration for custom entities
+
+To allow data to be read from custom entities, you must configure their security settings in Dynamics 365 Supply Chain Management. To do so, follow these steps:
+
+1. Go to **System Administration \> Security \> Security Configuration**.
+1. Open the **Privileges** tab.
+1. Select **Create new** from the toolbar.
+1. In the dialog, add a **Name** for your new privilege, and then select **OK**.
+1. Your new privilege is added to the list and selected. In the middle column, select **Entities**.
+1. On the toolbar, select **Add references**.
+1. In the dialog, find and select your custom entity. Select the access properties you want to grant and then select **OK**.
+1. In the middle column, select **Duties**.
+1. On the toolbar, select **Add references**.
+1. In the dialog, find and select the duty named *View Document entity data for data management* or *Create data management project and details using entity*. Choose the duty based on the level of access you require.
+    - *View Document entity data for data management* is commonly associated with entities used in the Data Management Framework in Supply Chain Management. It's typically assigned to the role *Data management migration user*, which is a subordinate role to *Demand planning app role*.
+    - *Create data management project and details using entity* is part of the *Demand planning app role* role. *Demand planning app role* is assigned to *DemandPlanAppUser*, which is a user role often employed for integrating the Demand Planning Service with Supply Chain Management.
+
+1. Select **OK** to add the selected duty to your new privilege.
+1. Open the **Unpublished objects** tab. On the toolbar, select **Publish all**.

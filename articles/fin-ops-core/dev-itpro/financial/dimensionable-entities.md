@@ -1,46 +1,32 @@
 ---
-# required metadata
-
 title: Make backing tables consumable as financial dimensions
-description: This article provides the steps that you need to follow to make a backing table usable as a Financial dimension.
+description: Learn about the steps that you need to follow to make a backing table usable as a Financial dimension, including code examples.
 author: RyanCCarlson2
-ms.date: 10/04/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 191363
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 07/09/2024
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Make backing tables consumable as financial dimensions
 
 [!include [banner](../includes/banner.md)]
 
-This article provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
+This article provides the steps to make a backing table usable as a Financial dimension.
 
 > [!IMPORTANT]
-> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. A physical table, and not a view must be used as a source of dimension values for a DimAttribute[BackingTable] view you will create in the following steps. Though using a view as the base data source may seem to work, financial reporting queries will fall back to row-by-row processing to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
+> Don't create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. A physical table, and not a view must be used as a source of dimension values for a DimAttribute[BackingTable] view you will create in the following steps. Though using a view as the base data source may seem to work, financial reporting queries will fall back to row-by-row processing to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
 >
-> The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.
+> The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and isn't used to resolve uniqueness on natural key entry.
      
-Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
+Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Don't select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
-Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
+Examples of highly variable data include timestamps and identifiers that are frequently incremented, such as:
 
  - Documents
  - Sales orders
@@ -51,9 +37,9 @@ Examples of highly volatile data include timestamps and identifiers that are fre
  - Tickets
  - License numbers 
 
-These are considered highly volitile values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
+These are considered highly variable values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
 
-By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
+By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
 
 
 > [!NOTE]
@@ -71,11 +57,11 @@ The first step is to create a view in the same model as your backing table. Befo
       + **Key** – This is the surrogate key, typically the RecID.
       + **Value** - This is the natural key, for example the AccountNum. It is a string up to 30 characters.
       + **Name** – This is the description, which is typically the **Name** or **Description** field. It is a string up to 60 characters.
-1.  You may need to create a **Range** on the view if the backing table removes data. For example, if you are using an Operating unit and only want Department, you will want to use the range for that operating unit.
-1.  Right-click **Indexes** and select **New Index**. Select **Value** as the Data field on the **Properties** pane. You can rename the index if needed, however you need to set **Allow Duplicates** to **No**.
-1. Right-click **Indexes** and select **New Index**. Select **Name** as the Data field on the **Properties** pane. You can rename the index if needed, however you need to set **Allow Duplicates** to **Yes**.
+1.  You may need to create a **Range** on the view if the backing table removes data. For example, if you are using an Operating unit and only want Department, use the range for that operating unit.
+1.  Right-click **Indexes** and select **New Index**. Select **Value** as the Data field on the **Properties** pane. You can rename the index if needed, however, you need to set **Allow Duplicates** to **No**.
+1. Right-click **Indexes** and select **New Index**. Select **Name** as the Data field on the **Properties** pane. You can rename the index if needed, however, you need to set **Allow Duplicates** to **Yes**.
 1. Click **View**, and in the **Properties** pane, set the **Singular label** field to the reference label ID of your choice. This should be the label that indicates a single value, such as Customer.
-1. Set the **Label** field to the reference label ID of your choice. This should be the label that indicates multiple values, such as Customers. This value will show in the drop-down list in the **Use Values from** field on the **Financial dimensions** page.
+1. Set the **Label** field to the reference label ID of your choice. This should be the label that indicates multiple values, such as Customers. This value shows in the drop-down list in the **Use Values from** field on the **Financial dimensions** page.
 1. Enter **Value** in the **TitleField1** field in the **Properties** pane.
 1. Enter **Name** in the **TitleField2** field in the **Properties** pane.
 1. Review the backing table properties and identify the config key it is using. On **View**, enter the same **Configuration key** as the backing table.
@@ -85,7 +71,7 @@ The first step is to create a view in the same model as your backing table. Befo
     > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
     > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.  
        
-14. Right-click **View** and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.
+14. Right-click **View** and select **View Code**. Add the following code to the view. This registers it in the dimension framework. Here's an example using the view created for CustTable.
 
       ```xpp
       [SubscribesTo(classstr(DimensionEnabledType),
@@ -104,7 +90,7 @@ The first step is to create a view in the same model as your backing table. Befo
 
 ## Step 2: Validate that the view returns the correct data in SQL
 
-At this point you should be able to run the following query in SQL Server Management Studio to ensure that it's pulling the correct data. Here is an abbreviated example using the view created for CustTable.
+At this point you should be able to run the following query in SQL Server Management Studio to ensure that it's pulling the correct data. Here's an abbreviated example using the view created for CustTable.
 
 ```sql
 select * from DIMATTRIBUTECUSTTABLE
@@ -119,7 +105,7 @@ select * from DIMATTRIBUTECUSTTABLE
 
 ## Step 3: Override methods on the backing table
 
-To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and on either the update or renamePrimaryKey method. If your table blocks updates of the natural key, you will need to use the renamePrimaryKey override. If it does not, then you can put the code in the update method. Here is an example from CustTable.
+To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and on either the update or renamePrimaryKey method. If your table blocks updates of the natural key, you need to use the renamePrimaryKey override. If it doesn't, then you can put the code in the update method. Here's an example from CustTable.
 
 ```xpp
 public void delete()
@@ -143,15 +129,17 @@ public void update()
    
 public void renamePrimaryKey()
 {
-    Common originalRecord = this.orig();
-    super();
-    DimensionValueRename::syncRenamedValue(this, originalRecord);
+     Common originalRecord = this.orig();
+     DimensionValueRenameV2 rename = DimensionValueRenameV2::construct(this, originalRecord);
+     rename.syncRenamedValuePreSuper();
+     super();
+     rename.syncRenamedValuePostSuper();
 }
 ```
 
 ## Step 4: Clear caches to force detection of the new view
 
-Because the list of entities that can be consumed as a dimension are cached on the server, the creation of a new entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.
+Because the list of entities that can be consumed as a dimension are cached on the server, the creation of a new entity won't appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.
 
 ```xpp
 DimensionCache::clearAllScopes();
@@ -167,15 +155,15 @@ Now that you have completed the steps, navigate to the **Financial dimensions** 
 If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:
 
 1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately, and then adjust all associated labels and help text.
-1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
+1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was added.
 1. Build and synchronize the project.
 1. Follow the steps in this article starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
 
-Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, generic code already exists to handle the delete, update, and **renamePrimaryKey** methods. Therefore, you do not need to update these methods.
+Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, generic code already exists to handle the delete, update, and **renamePrimaryKey** methods. Therefore, you don't need to update these methods.
 
 ## Step 6: Setting a dimension to be self-referenced 
 
-If you also want to create an data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.
+If you also want to create a data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.
 
 ```xpp
 if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)

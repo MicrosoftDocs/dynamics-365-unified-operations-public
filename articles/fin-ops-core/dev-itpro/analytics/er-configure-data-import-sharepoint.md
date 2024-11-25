@@ -1,18 +1,15 @@
 ---
 title: Configure data import from SharePoint
-description: This article explains how to import data from Microsoft SharePoint.
+description: Learn about how to import data from Microsoft SharePoint, including learning about prerequisites and configurations.
 author: kfend
-ms.date: 01/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 01/05/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 # Configure data import from SharePoint

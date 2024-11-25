@@ -4,13 +4,15 @@
 title: Audit synchronization of customer operations in headquarters
 description: This article explains how to audit synchronization of customer operations in Microsoft Dynamics 365 Commerce headquarters to help fix any site user issues.
 author: gvrmohanreddy
-ms.date: 10/18/2022
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2022-09-28
+ms.custom: 
+  - bap-template
 
 ---
 # Audit synchronization of customer operations in headquarters

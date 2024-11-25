@@ -1,15 +1,13 @@
 ---
 title: Create deployable packages of models
-description: This article describes the workflow for creating and applying a deployable package.
-author: gianugo
-ms.date: 05/07/2020
+description: Learn about the workflow for creating and applying a deployable package, including an overview of deployable package creation process.
+author: josaw
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 05/07/2020
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

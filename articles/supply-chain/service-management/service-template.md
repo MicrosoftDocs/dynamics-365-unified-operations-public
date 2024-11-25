@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Service templates
 description: You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.
-author: sorenva
-ms.date: 02/19/2018
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/19/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: SMAAgreementTable
 ---
 
 # Service templates

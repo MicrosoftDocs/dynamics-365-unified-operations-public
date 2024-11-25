@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Post a free text invoice with a payment slip
-description: This article explains how to post a free text invoice with a payment slip attachment in a specified format. 
+description: Learn how to post a free text invoice with a payment slip attachment in a specified format, including a process that uses the DEMF demo data company. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm   
+ms.custom:
+ms.reviewer: johnmichalak  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Denmark
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Post a free text invoice with a payment slip
 
 [!include [banner](../../includes/banner.md)]

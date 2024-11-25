@@ -6,9 +6,6 @@ description: Optimize and troubleshoot performance of Dataverse virtual table qu
 author: twheeloc
 ms.date: 04/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Optimize Dataverse virtual table queries
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

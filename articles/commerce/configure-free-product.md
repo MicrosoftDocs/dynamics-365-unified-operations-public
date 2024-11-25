@@ -2,19 +2,15 @@
 title: Configure a product to be purchased for free
 description: This article describes how to configure a product so that it can be purchased for free in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/27/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Configure a product to be purchased for free

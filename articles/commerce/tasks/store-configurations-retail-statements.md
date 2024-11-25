@@ -1,27 +1,17 @@
 --- 
-# required metadata 
- 
 title: Store configurations for Retail statements
 description: This procedure walks through configurations for the store that affect how Commerce statements get created and posted. 
 author: jashanno
 ms.date: 08/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
 ms.search.form: RetailStoreTable   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.author: shajain
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template 
 ---
 # Store configurations for Retail statements
 

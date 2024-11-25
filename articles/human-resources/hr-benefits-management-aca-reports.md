@@ -6,9 +6,6 @@ description: This article describes how Benefits management tracks information t
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmACACoverageGroup, BenefitWorkspace, HcmBenefitSummaryPart
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
@@ -167,7 +163,7 @@ You can generate ACA 1095-B and 1095-C forms, and then distribute them to each o
 
     ![Opening a file.](./media/hr-benefits-management-aca-open-file.png)
 
-6. From the Notification bar that appears at the bottom of the browser window, open the zip file, and then select the report. You can view or print the PDF file.
+6. From the notification bar that appears at the bottom of the browser window, open the zip file, and then select the report. You can view or print the PDF file.
 
     ![Sample 1095-C form.](./media/hr-benefits-management-aca-1095-c-form.png)
 

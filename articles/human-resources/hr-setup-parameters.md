@@ -4,11 +4,8 @@
 title: Configure Human resources parameters
 description: This article explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 03/23/2023
+ms.date: 06/23/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
@@ -32,14 +29,14 @@ ms.dyn365.ops.version: Human Resources
 
 The settings of some Human resources parameters are shared across companies, while the settings of other parameters are company-specific. This article explains how to set up company-specific Human resources parameters.
 
-Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific, you use the **Human resource parameters** page.
+Two pages are used to set Human resources parameters. For parameters that are shared across companies, use the **Human resources shared parameters** page. For parameters that are company-specific, use the **Human resource parameters** page.
 
 ![Go to Human resources parameters.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 On the **Human resources parameters** page, the settings are divided among six tabs:
 
 - **General**
-- **Recruitment** (this tab isn't included in Dynamics 365 Human Resources)
+- **Recruitment**
 - **Compensation**
 - **Number sequences**
 - **FMLA**
@@ -78,9 +75,6 @@ For more information about recruiting, see [Recruit job candidates](hr-personnel
 In Dynamics 365 Finance, the settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select **Enable save validation**, when users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in Compensation management don't let users delete information. By prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If you clear **Enable save validation**, records save immediately, possibly before the user is ready. If you're using Performance management, the **Compensation** tab also lets you select a rating model to use instead of the model assigned to compensation plans when rating performance.
 
 In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
-
-> [!NOTE]
-> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab of the **Human resources parameters** page has been removed. Moving forward, the currency will be handled by the **Ledger currency** parameter to ensure that there are no conflicts for existing finance and operations functionality and to prevent duplication. For more information about how to use ledger currency functionality, see [Configure ledgers](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
 For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
 

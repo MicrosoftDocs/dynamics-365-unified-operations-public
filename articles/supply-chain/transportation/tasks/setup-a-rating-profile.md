@@ -1,27 +1,13 @@
 --- 
-# required metadata 
- 
 title: Rating profiles
-description: This article describes how to set up data for rating profiles.
-author: Weijiesa
+description: Learn how to set up data for rating profiles, including an outline and process for creating or editing rating profiles on the rating profiles page.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
 ms.date: 10/30/2020
-ms.topic: how-to 
-ms.prod: 
-ms.technology: 
- 
-# optional metadata 
- 
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: TMSRatingProfile
-audience: Application User 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Rating profiles
@@ -47,7 +33,7 @@ On the **Rating profiles** page, you can review all available rating profiles. Y
     - **Shipping carrier** – Select a shipping carrier. The rating profile that you're setting up will also be shown on the **Shipping carriers** page for the selected carrier.
     - **Site** and **Warehouse** – Select a site and warehouse.
     - **Rate engine** – Select the rate engine for the rating profile.
-    - **Rate master** – Select the rate master for the rating profile. You can use the rate master to define a rate base type and a rate base. For more information, see [Set up rate masters](set-up-rate-masters.md).
+    - **Rate master** – Select the rate master for the rating profile. You can use the rate master to define a rate base type and a rate base. Learn more in [Set up rate masters](set-up-rate-masters.md).
     - **Transit time engine** – Select the transit time engine for the rating profile.
     - **Carrier fuel index** – Select the carrier fuel index for the rating profile.
     - **Effect start date and time** and **Effective end date and time** – Define the period when the rating profile should be active.

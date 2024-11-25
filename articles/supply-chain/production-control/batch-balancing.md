@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Batch balancing
-description: This article describes the batch balancing process.
+description: Learn about the batch balancing process, including outlines on products that have an active ingredient, ingredient types, and their interactivity.
 author: johanhoffmann
-ms.date: 01/04/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 1705903
-ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
+ms.topic: article
+ms.date: 01/04/2021
+ms.reviewer: kamaybac
+ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
+ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ---
 
 # Batch balancing

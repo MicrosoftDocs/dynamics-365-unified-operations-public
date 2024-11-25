@@ -1,16 +1,12 @@
 ---
 title: Assign step icons and titles for the Warehouse Management mobile app
-description: This article describes how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
+description: Learn how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app with an outline on toggling this feature.
 author: Mirzaab
-ms.date: 05/17/2021
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-05-17
-ms.dyn365.ops.version: 10.0.17
+ms.topic: article
+ms.date: 05/17/2021
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Assign step icons and titles for the Warehouse Management mobile app
@@ -427,7 +423,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 
 You then construct a `WHSMobileAppStepInfo` object, and set the icon and/or title directly.
 
-## Additional resources
+## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Mobile device user settings](mobile-device-user-settings.md)

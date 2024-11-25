@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Master planning for site and warehouse coverage, warehouse not mandatory
-description: This article describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
+description: Learn how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
 author: t-benebo
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2514
-ms.assetid: 92d47bdd-df68-4f60-ac9a-96aa08236c26
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
+ms.assetid: 92d47bdd-df68-4f60-ac9a-96aa08236c26
 ---
 
 # Master planning for site and warehouse coverage, warehouse not mandatory
@@ -49,7 +32,7 @@ The following graphic illustrates how master planning proceeds. The parameters t
 
 
 
-## Additional resources
+## Related information
 
 - [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
 - [Master planning for site coverage, mandatory warehouse](master-plan-site-warehouse-coverage-warehouse-mandatory.md)

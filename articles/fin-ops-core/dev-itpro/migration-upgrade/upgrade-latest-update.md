@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Process for moving to the latest update of finance and operations
-description: This article explains the process for moving to the latest update of finance and operations.
+description: Learn about the process for moving to the latest update of finance and operations, including definitions and an overview on paths to one version.
 author: laneswenka
-ms.date: 11/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 102343
-ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/01/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 1
-
+ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ---
 
 # Process for moving to the latest update of finance and operations

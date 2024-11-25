@@ -1,29 +1,16 @@
 ---
-# required metadata
 title: Revenue and expense deferrals in Subscription billing
-description: This article explains how to set up revenue and expense deferrals in Subscription billing.
-author: JodiChristiansen
-ms.date: 11/04/2021
+description: Learn how to set up revenue and expense deferrals in Subscription billing, including an overview on revenue and expense deferral parameters.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 539093
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jchrist
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Revenue and expense deferrals in Subscription billing

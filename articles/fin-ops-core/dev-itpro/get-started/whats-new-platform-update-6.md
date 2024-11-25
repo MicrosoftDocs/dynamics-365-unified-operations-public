@@ -1,18 +1,16 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations platform update 6 (April 2017)
-description: This article describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
+description: Learn about new or changed features in Dynamics 365 for Operations platform update 6. This version was released in April 2017.
 author: sericks007
-ms.date: 04/21/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 
-ms.dyn365.ops.version: Platform update 6
+ms.topic: whats-new
+ms.date: 07/12/2024
 ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.dyn365.ops.version: Platform update 6
 ms.assetid: 13d2b8a5-c2e0-4f32-a43b-7726ae20392c
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -61,18 +59,15 @@ You can now extend the number sequence scope through extensions. The scope of a 
 
 Dynamics 365 for Operations Ideas forum is now available on our [Ideas portal](https://experience.dynamics.com/ideas/). With the Ideas portal, all Dynamics 365 for Operations users can submit new ideas, vote on existing ideas, and track status of their ideas in a consistent manner. This can now be achieved from both outside of the product ([https://experience.dynamics.com/ideas](https://experience.dynamics.com/ideas/)) and from within the application. The screenshot shows how to navigate to the Ideas portal from within Dynamics 365 for Operations.
 
-[![ideas-menu.](../../fin-ops/get-started/media/ideas-menu.png)](/media/ideas-menu.png)
+[![ideas-menu.](../../fin-ops/get-started/media/ideas-menu.png)]
 
 Click the **Ideas** link to go to the Dynamics 365 for Operations forum.
-
-
 
 - The forums are pre-populated with existing ideas, so customers and partners can immediately vote or suggest new ideas.
 - You can filter ideas by using status and time. You can also quickly view top, hot, and new ideas.
 - You can either vote up or down on a specific idea (one vote per idea). To vote or suggest a new idea, you need to sign in using a Microsoft account.
 - The **My Feedback** feature allows you to see a detailed view of your submitted ideas, the status of your ideas, and the total votes received.
 
-[![ideas-options.](../../fin-ops/get-started/media/ideas-options.png)](/media/ideas-options.png)
-
+[![ideas-options.](../../fin-ops/get-started/media/ideas-options.png)]
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

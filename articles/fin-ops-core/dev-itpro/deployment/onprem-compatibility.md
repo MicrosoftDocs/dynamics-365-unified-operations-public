@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
-description: This article explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
+description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 9/21/2022
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2021-06-30 
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 09/10/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Platform update 44 
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
@@ -39,14 +26,17 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft Windows Server 2019 | 10.0.17          | Not available |
+| Microsoft Windows Server 2022 | 10.0.38          | Not available |
+| Microsoft Windows Server 2019 | 10.0.17          | 10.0.41       |
 | Microsoft Windows Server 2016 | Original release | 10.0.26       |
 
 > [!NOTE]
 > Only en-US operating system installations are supported.
+> These software requirements are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 
 ## Microsoft SQL Server
 
+### Software
 Both Microsoft SQL Server Standard Edition and Enterprise Edition are supported.
 
 This section covers the following SQL Server components:
@@ -57,12 +47,25 @@ This section covers the following SQL Server components:
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2019     | 10.0.21          | Not available |
+| Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
+| Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
 | Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
+
+### Database Collation
+
+Finance + Operations (on-premises) supports a limited set of collations. The following table lists the supported collations.
+
+> [!IMPORTANT]
+> The Orchestrator database used by the local agent must use the `SQL_Latin1_General_CP1_CI_AS` collation.
+
+| Name                                            | Supported since  | Notes         |
+|-------------------------------------------------|------------------|---------------|
+| Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and later |
+| SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
 
 ## Active Directory Federation Services (AD FS)
 
@@ -70,11 +73,12 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 
 | Version                                                     | Supported since  | End of life   |
 |-------------------------------------------------------------|------------------|---------------|
+| Active Directory Federation Services on Windows Server 2022 | 10.0.38          | Not available |
 | Active Directory Federation Services on Windows Server 2019 | 10.0.17          | Not available |
 | Active Directory Federation Services on Windows Server 2016 | Original release | 10.0.26       |
 
 > [!IMPORTANT]
-> - AD FS on Windows Server 2016 only supports authentication through the Azure Active Directory Authentication Library (ADAL).
+> - AD FS on Windows Server 2016 only supports authentication through the Microsoft Entra Authentication Library (ADAL).
 > - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
 > (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 > - After July 1, 2022, any customers still using AD FS on Windows Server 2016 will no longer be able to use the Office add-ins. This is irrespective of the Microsoft Dynamics 365 Finance + Operations (on-premises) version that they are running.
@@ -83,19 +87,21 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 
 Your Service Fabric cluster should always be on a supported version according to the official documentation, [Service Fabric supported versions](/azure/service-fabric/service-fabric-versions).
 
-| Minimum version            | Required since |
-|----------------------------|----------------|
-| Service Fabric runtime 8.2 | 10.0.30        |
-| Service Fabric runtime 8.0 | 10.0.24        |
-| Service Fabric runtime 7.2 | 10.0.17        |
-| Service Fabric runtime 7.1 | 10.0.14        |
+| Minimum version             | Required since |
+|-----------------------------|----------------|
+| Service Fabric runtime 10.0 | 10.0.41        |
+| Service Fabric runtime 8.2  | 10.0.30        |
+| Service Fabric runtime 8.0  | 10.0.24        |
+| Service Fabric runtime 7.2  | 10.0.17        |
+| Service Fabric runtime 7.1  | 10.0.14        |
 
 ## Minimum Microsoft .NET Framework runtime
 
-The requirements for .NET Framework are specified on a per node basis. For specific features and versions, see [Set up and deploy on-premises environments (Platform update 41 and later)](./setup-deploy-on-premises-pu41.md#prerequisites).
+The requirements for the .NET Framework are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
 
 | Minimum version                        | Required since |
 |----------------------------------------|----------------|
+| Microsoft .NET Framework version 4.8.0 | 10.0.42        |
 | Microsoft .NET Framework version 4.7.2 | 10.0.11        |
 
 ## Microsoft Office Server

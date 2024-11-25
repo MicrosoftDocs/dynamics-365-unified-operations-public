@@ -1,15 +1,13 @@
 ---
 title: Extend the Person search report
-description: This article walks you through the process of extending the Person search report for finance and operations.
+description: Learn about the process of extending the Person search report for finance and operations, including an overview on adding another entity to the default template.
 author: josaw1
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ---

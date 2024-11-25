@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Quality associations
-description: This article describes how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders that are related to your sales, purchase, inbound shipment order, and production processes.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders related to your sales.
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventTestAssociationTable
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 03/23/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
+ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2020-06-18
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Quality associations
@@ -48,7 +32,7 @@ The business process that uses a quality association can be related to various s
 Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order. Alternatively, subsequent processes, such as purchase order invoicing, can be blocked.
 
 > [!NOTE]
-> While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the setting of the **Full blocking** field on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line. For more information, see [Quality management item sampling](quality-item-sampling.md).
+> While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the setting of the **Full blocking** field on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line. Learn more in [Quality management item sampling](quality-item-sampling.md).
 
 For a given business process, the quality association record identifies the event and conditions that a quality order is generated for. The conditions can be specific to either a site or a legal entity. A quality order that involves destructive tests can be generated only when on-hand inventory exists for the event.
 
@@ -241,7 +225,7 @@ To work with quality associations, go to **Inventory management \> Setup \> Qual
 </table>
 
 > [!NOTE]
-> The *Quality management for warehouse processes* feature adds capabilities for quality order processing for production where the **Event type** field is set to *Report as finished* and the **Execution** field is set to *After*, and for purchases where the **Event type** field is set to *Registration*. For more information, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
+> The *Quality management for warehouse processes* feature adds capabilities for quality order processing for production where the **Event type** field is set to *Report as finished* and the **Execution** field is set to *After*, and for purchases where the **Event type** field is set to *Registration*. Learn more in [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
 
 The following table provides more information about how quality orders can be generated for specific types of processes.
 
@@ -449,7 +433,7 @@ In production, if you set the **Event type** field to *Report as finished* and t
 </tbody>
 </table>
 
-## Additional resources
+## Related information
 
 - [Quality management processes](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

@@ -1,20 +1,18 @@
 ---
 title: Import features from the Global repository
-description: This article explains how to import Globalization features from the Global repository.
-author: gionoder
-ms.date: 02/11/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn how to import Globalization features from the Global repository, with a step-by-step process detailing how to import features.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
 ms.custom: 
-ms.assetid: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Import features from the Global repository

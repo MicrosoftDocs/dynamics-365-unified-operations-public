@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Spain overview
-description: This article provides links to documentation resources for Spain. 
+description: Access links to documentation resources for Spain, including links to resources about discounts, invoices, declarations, and sales lists. 
 author: kfend
-ms.date: 05/26/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.search.region: Spain
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: Spain
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Spain overview

@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Mass create sales quotations
-description: This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers. 
-author: Henrikan
+description: Learn how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm, SalesQuickQuote   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm, SalesQuickQuote
 ---
+
 # Mass create sales quotations
 
 [!include [banner](../../includes/banner.md)]

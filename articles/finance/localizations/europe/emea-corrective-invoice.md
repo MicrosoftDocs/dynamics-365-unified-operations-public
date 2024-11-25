@@ -2,17 +2,14 @@
 title: Corrective invoicing
 description: A Credit note or Credit memorandum (memo) is a document that reduces or eliminates the amount that the buyer has to pay.
 author: mrolecki
-ms.date: 06/15/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/15/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 1174003
 ---
 
 # Corrective invoicing

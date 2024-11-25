@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00011 03 Generate Customer Credit note for Project sales
-description: This task walks you through creating and printing a project credit note for GST. 
+description: Learn about creating and printing a project credit note for GST, including a step-by-step process for creating project credit notes. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: article
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ProjProjectsListPage, ProjJournalTable, ProjJournalTransEmpl, ResourceLookup, TaxGroupLookup, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, CustInvoiceJourLookup_MY, TaxTmpWorkTrans, ProjInvoiceEditLines,  SysOperationSandboxForm   
+ms.custom:
+ms.reviewer: johnmichalak
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ProjProjectsListPage, ProjJournalTable, ProjJournalTransEmpl, ResourceLookup, TaxGroupLookup, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, CustInvoiceJourLookup_MY, TaxTmpWorkTrans, ProjInvoiceEditLines,  SysOperationSandboxForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00011 03 Generate Customer Credit note for Project sales
 
 [!include [banner](../../includes/banner.md)]

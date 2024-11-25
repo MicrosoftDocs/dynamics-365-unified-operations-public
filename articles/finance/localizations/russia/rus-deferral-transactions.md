@@ -1,18 +1,16 @@
 ---
 title: Receipt of deferrals
-description: This article explains how to create and post receipt transactions for deferrals that were manually created. It also explains how to reverse receipt transactions.
-author: AdamTrukawka
-ms.date: 06/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to create and post receipt transactions for deferrals that were manually created. Also learn how to reverse receipt transactions.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.1
-ms.search.form: 
 ---
 
 # Receipt of deferrals

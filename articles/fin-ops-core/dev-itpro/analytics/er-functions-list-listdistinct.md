@@ -1,25 +1,23 @@
 ---
 title: LISTDISTINCT ER function
-description: This article provides information about how the LISTDISTINCT Electronic reporting (ER) function is used.
+description: Learn about how the LISTDISTINCT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: kfend
-ms.date: 07/30/2020
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2020-08-01
-ms.dyn365.ops.version: AX 10.0.14
+ms.topic: article
+ms.date: 07/30/2020
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2020-08-01
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.dyn365.ops.version: AX 10.0.14
+ms.assetid: 
 ---
 
 # LISTDISTINCT ER Function
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 The `LISTDISTINCT` function calculates the specified expression as a selector for every record of the specified list. It returns a new *Record list* value that contains a single record for each unique selector value.
 

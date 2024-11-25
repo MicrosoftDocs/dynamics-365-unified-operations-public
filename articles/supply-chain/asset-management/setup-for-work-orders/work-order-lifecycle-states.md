@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Work order lifecycle states
-description: This article explains work order lifecycle states in Asset Management.
-author: johanhoffmann
-ms.date: 08/13/2019
+description: Learn about work order lifecycle states in Asset Management, including a step-by-step process and table that defines various option names.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 08/13/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 ---
 
 # Work order lifecycle states

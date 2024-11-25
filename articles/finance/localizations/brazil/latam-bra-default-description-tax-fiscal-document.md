@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Set up default descriptions for posting of Tax fiscal documents
-description: This article explains how to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
-author: gionoder
-ms.date: 03/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 270254
-ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
+description: Learn how to set up default descriptions for voucher transactions that are posted from Tax fiscal documents, including a step-by-step process.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: gionoder
 ms.search.validFrom: 2022-01-31
+ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
 ms.dyn365.ops.version: 10.0.25
-
+ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 ---
 
 # Set up default descriptions for posting of Tax fiscal documents

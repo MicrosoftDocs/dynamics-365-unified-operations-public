@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Production posting
-description: This article provides information about different types of postings in the production process.
-author: JennySong-SH
-ms.date: 06/20/2017
+description: Learn about different types of postings in the production process, including outlines on material consumption and time consumption.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 ms.assetid: 0917fe64-f643-46ae-98ff-5013b266a067
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Production posting

@@ -1,15 +1,15 @@
 ---
 title: Assets and work orders
-description: This article describes assets and work orders in Asset Management.
-author: johanhoffmann
-ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: 
+description: Learn about assets and work orders in Asset Management, including outlines on asset data, job types, and key data in a work order.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: conceptual
-ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Assets and work orders

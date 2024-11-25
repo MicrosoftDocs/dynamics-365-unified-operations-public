@@ -1,15 +1,13 @@
 ---
 title: Optimize location directive queries
-description: This article describes how to use the Optimize location directive queries tool to identify location directive queries that use a suboptimal query pattern and transform them so that they use the optimal querying approach that the new data model enables.
+description: Learn how to use the Optimize location directive queries tool to identify location directive queries that use a suboptimal query pattern and transform them.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 05/26/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Optimize location directive queries

@@ -2,19 +2,17 @@
 title: Assess customer and product profitability
 description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Dynamics 365 Commerce data.
 author: ashishmsft
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
-ms.search.industry: Retail
 ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace
+ms.custom: 
+  - bap-template
 ---
 
 # Assess customer and product profitability

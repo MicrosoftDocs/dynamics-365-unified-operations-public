@@ -6,9 +6,6 @@ description: This article provides a list of the help topics and other resources
 author: twheeloc
 ms.date: 09/05/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Administration overview
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -120,7 +114,7 @@ Additional help topics and other resources to set up, manage, and troubleshoot D
   - [Access private addresses by security role](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources doesn't appear in Dynamics 365 apps](hr-admin-troubleshooting-not-in-apps.md)
   - [Reporting options](hr-admin-troubleshooting-reporting.md)
-  - [Integration FAQ](hr-admin-troubleshooting-integration.md)
+
 
 ## Additional resources
 

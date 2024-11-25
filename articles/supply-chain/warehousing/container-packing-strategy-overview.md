@@ -1,17 +1,13 @@
 ---
 title: Container packing strategies
-description: This article describes the differences between container packing strategies and provides examples.
-author: GalynaFedorova
-ms.date: 08/09/2022
+description: Learn about the differences between container packing strategies and provides examples with an example of the flow for container packing strategies.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
-audience: Application User
+ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.collection: get-started
-ms.search.region: Global
-ms.author: gfedorova
-ms.search.validFrom: 2021-06-11
-ms.dyn365.ops.version: 10.0.19
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench
 ---
 
 # Container packing strategies
@@ -342,7 +338,7 @@ To create a second sales order, follow these steps.
 
 To create a load for each order that you created for this scenario and then release it to the warehouse, follow these steps.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines from the sales orders that you created for this scenario.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**. The selected order lines are added to a new load.
 1. In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *40' Container*.
@@ -360,6 +356,6 @@ The following procedure lets you verify the shipments that have been created. Us
 1. On the Action Pane, on the **Transportation** tab, select **View containers**.
 1. Confirm that the items from the sales orders were containerized into two different containers.
 
-## Additional resources
+## Related information
 
 - [Containerization](wave-containerization.md)

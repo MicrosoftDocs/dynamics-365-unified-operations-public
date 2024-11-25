@@ -1,19 +1,18 @@
 ---
 title: Create and confirm recognition test
-description: For Japan, impairment is conducted in two main steps.
+description: For Japan, impairment is conducted in two main steps. Learn about creating and confirm recognition tests with a process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_JP
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create and confirm recognition test
 
 [!include [banner](../../includes/banner.md)]

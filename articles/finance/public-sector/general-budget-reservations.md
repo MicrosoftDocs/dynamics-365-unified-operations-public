@@ -1,19 +1,16 @@
 ---
 title: General budget reservations
-description: This article provides information about general budget reservations for Public sector.
+description: Learn about general budget reservations for Public sector. General budget reservations are only available in the outlined conditions.
 author: brpotter
-ms.date: 08/29/2021
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 08/29/2021
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: brpotter
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.search.industry: Public sector
 ms.search.form: BudgetReservation_PSN
+ms.dyn365.ops.version: 8.1
 ---
 
 # General budget reservations

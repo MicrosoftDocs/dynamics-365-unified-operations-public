@@ -1,18 +1,17 @@
 ---
 title: Tax and legal attributes for Latin America
-description: This article explains how to add the tax and legal information that you can use to comply with company and fiscal legislation.
+description: Learn how to add the tax and legal information that you can use to comply with company and fiscal legislation, with an outline on setting up LATAM tax information.
 author: Fhernandez0088
-ms.date: 08/30/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Tax and legal attributes for Latin America
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to add the tax and legal information that you can use to comply with company and fiscal legislation. The attributes that you can configure include the tax identification at different levels, the taxpayer classification per country, and different customizable concepts that can be manually filled. The fields for this information are located on the **LATAM** FastTab of the following pages:
 

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Depreciation suspension (holidays)
-description: This article provides information about the suspension, or postponement, of depreciation for the Czech Republic.
+description: Learn about the suspension or postponement of depreciation for the Czech Republic, including a process for suspending fixed asset depreciation.
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationGroup_W
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265124
 ms.search.region: Czech Republic
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: AssetDepreciationGroup_W
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Depreciation suspension (holidays)

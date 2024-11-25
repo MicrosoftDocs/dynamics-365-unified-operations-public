@@ -1,19 +1,18 @@
 ---
 title: Acquire a fixed asset and claim for the government grant subsidy
-description: Use this task to walk through acquiring a fixed asset and then claiming it for a government grant.
+description: Learn about acquiring a fixed asset and then claiming it for a government grant, including an outline on claiming the fixed asset for a government grant.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Acquire a fixed asset and claim for the government grant subsidy
 
 [!include [banner](../../includes/banner.md)]

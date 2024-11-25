@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Vendor collaboration with external vendors
-description: This article explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
-author: GalynaFedorova
-ms.date: 11/02/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
+ms.date: 05/02/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 221264
-ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
+ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 ---
 
 # Vendor collaboration with external vendors
@@ -95,46 +79,12 @@ After a vendor accepts a PO, the PO can be automatically confirmed, or it might 
 
 The following table shows the typical exchange of information, depending on the vendor's response when you send a PO for confirmation.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr>
-<th>Vendor response</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="even">
-<td>The vendor <strong>accepts</strong> the order, and Supply Chain Management is configured to automatically confirm POs that the vendor accepts.</td>
-<td>The status of the order is updated to <strong>Confirmed</strong>. If the order can&#39;t be updated for some reason, the vendor response is still recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>. 
-
-The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to <strong>Confirmed</strong> status. When the PO is confirmed, it appears in the vendor collaboration interface.</td>
-</tr>
-<tr class="odd">
-<td>The vendor <strong>accepts</strong> the order, but Supply Chain Management isn&#39;t configured to automatically confirm POs that the vendor accepts.</td>
-<td>The vendor response is recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>.
-
-The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to <strong>In External Review</strong> status. You can then manually confirm the PO.</td>
-</tr>
-<tr class="even">
-<td>The vendor <strong>rejects</strong> the order.</td>
-<td>The vendor response is recorded as <strong>Rejected</strong>, and the status of the PO remains <strong>In External Review</strong>. The rejection is received together with the vendor&#39;s note.</td>
-</tr>
-<tr class="odd">
-<td>The vendor <strong>accepts</strong> the order <strong>with changes</strong>. Changes are suggested at the line level. The vendor can accept or reject individual lines. Here are some other changes that the vendor can suggest:
-<ul>
-<li>Change dates or quantities.</li>
-<li>Split lines for different receipt dates or quantities.</li>
-<li>Substitute an item.</li>
-</ul>
-The vendor can&#39;t change price information and charges. However, the vendor can suggest these changes by using notes.</td>
-<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the &quot;Update the PO when a vendor suggests changes&quot; section later in this article. </td>
-</tr>
-</tbody>
-</table>
+| Vendor response | Result |
+|---|---|
+| The vendor **accepts** the order, and Supply Chain Management is configured to automatically confirm POs that the vendor accepts. | The status of the order is updated to **Confirmed**. If the order can't be updated for some reason, the vendor response is still recorded as **Accepted**, but the status of the PO remains **In External Review**. <p>The PO that was sent to the vendor and that has a status of **In External Review** is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to **Confirmed** status. When the PO is confirmed, it appears in the vendor collaboration interface.</p> |
+| The vendor **accepts** the order, but Supply Chain Management isn't configured to automatically confirm POs that the vendor accepts. | The vendor response is recorded as **Accepted**, but the status of the PO remains **In External Review**.<p>The PO that was sent to the vendor and that has a status of **In External Review** is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to **In External Review** status. You can then manually confirm the PO.</p> |
+| The vendor **rejects** the order. | The vendor response is recorded as **Rejected**, and the status of the PO remains **In External Review**. The rejection is received together with the vendor's note. |
+| The vendor **accepts** the order **with changes**. Changes are suggested at the line level. The vendor can accept or reject individual lines. Here are some other changes that the vendor can suggest:<ul><li>Change dates or quantities.</li><li>Split lines for different receipt dates or quantities.</li><li>Substitute an item.</li></ul><p>The vendor can't change price information and charges. However, the vendor can suggest these changes by using notes.</p> | The vendor response is recorded as **Accepted with changes**, and the status of the PO remains **In External Review**. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the "Update the PO when a vendor suggests changes" section later in this article. |
 
 You can use the **Purchase order preparation** workspace to monitor which POs the vendor has responded to. This workspace contains two lists that contain POs that have a status of **In External Review**:
 
@@ -160,7 +110,7 @@ If a vendor has responded to a PO and suggested changes, the next step is to pro
 In the **Purchase order preparation** workspace, in the **In external review requires action** list, you can identify POs that a vendor has accepted with changes. From this list, you can also navigate to the vendor's response.
 
 On a response, a vendor can change the following information on the header:
- 
+
 - Vendor document reference
 - Mode of delivery
 - Delivery terms
@@ -169,7 +119,7 @@ On a response, a vendor can change the following information on the header:
 The vendor can also add a note or attachment.
 
 On the lines, the vendor can change the quantity and the receipt dates, add notes and attachments, reject a line, substitute a line with another product that is entered as text, and split a line into multiple deliveries. The status of a line varies, depending on the changes that the vendor has suggested:
-	
+
 - **Accepted with changes**
 - **Rejected**
 - **Substituted** – In this case, an extra line is added that has a status of **Substitute**.
@@ -188,7 +138,7 @@ Every line that has a status of **Accepted** will have a confirmed receipt date.
 
 ## PO statuses and versions
 
-This section describes the various statuses that a PO can have up to the time when it's confirmed. It also describes when new versions of a PO are made available to the vendor. The behavior varies, depending on whether you use change management for POs. 
+This section describes the various statuses that a PO can have up to the time when it's confirmed. It also describes when new versions of a PO are made available to the vendor. The behavior varies, depending on whether you use change management for POs.
 
 ### Versions and statuses if you don't use change management
 
@@ -217,7 +167,7 @@ The following table shows an example of the changes in status and version that a
 | Action | Status and version |
 |--------|--------------------|
 | The initial version of the PO is created in Supply Chain Management. | The status is **Draft**. |
-| The PO is submitted to the approval process. (The approval process is an internal process that the vendor isn't involved in.) | The status is changed from **Draft** to **In Review** to **Approval** if the PO isn't rejected during the approval process. The approved PO is registered as a version. | 
+| The PO is submitted to the approval process. (The approval process is an internal process that the vendor isn't involved in.) | The status is changed from **Draft** to **In Review** to **Approval** if the PO isn't rejected during the approval process. The approved PO is registered as a version. |
 | The PO is sent to the vendor. | The version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
 | You make some changes that the vendor requested, either manually or by using the **Process PO update** action on the response to update the PO. | The status is changed back to **Draft**. |
 | The PO is submitted to the approval process again. | The status is changed from **Draft** to **In Review** to **Approval** if the PO isn't rejected during the approval process. Alternatively, the system can be configured so that specific field changes don't require re-approval. In this case, the status is first changed to **Draft** and is then automatically updated to **Approved**. The approved PO is registered as a new version. |
@@ -234,7 +184,8 @@ If you're using consignment inventory, vendors can use the vendor collaboration 
 
 ## Working with RFQs when you use vendor collaboration
 
-This section describes the interactions between customers and vendors during the RFQ process. It also explains how information is communicated to the vendors. 
+This section describes the interactions between customers and vendors during the RFQ process. It also explains how information is communicated to the vendors.
+
 For a basic overview of support for the RFQ process, see [Requests for quotation (RFQs) overview](request-quotations.md).
 
 ### Alternates, attachments, amendments, and returns
@@ -243,7 +194,7 @@ For a basic overview of support for the RFQ process, see [Requests for quotation
 - **Attachments** – Attachments can be added at both the header level and the line level of an RFQ case. Attachments can be classified as either internal or external. Internal attachments can be viewed only on the customer side, whereas vendors can view external attachments after they are sent.
 
     Vendors can also add attachments on their bid reply. These attachments can be viewed on the customer side after a vendor submits the bid reply. Attachments that vendors add are always classified as external. To access an attachment that a vendor has submitted together with a bid, select **Bid attachments** or **Bid line attachments**.
-    
+
     To open attachments that were sent together with the RFQ case, use the document handling paper clip symbol on the reply.
 
 - **Amendments** – When an amendment is finalized, the existing bid replies are removed so that they can be replaced by updated values. Information such as the line price and quantity from previous bid replies can be viewed via the journals on the RFQ case.
@@ -260,7 +211,7 @@ For Public sector, the extended functionality enables an RFQ case to be sent to 
 - Published requests for quotations line
 - Published requests for quotations header attachments
 
-These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, they must select the email template to send the required information to the vendors on the RFQ case. 
+These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, they must select the email template to send the required information to the vendors on the RFQ case.
 
 The user who sets up parameters for the RFQ process can create multiple email templates. These email templates can contain both static text and the following replacement tokens. The tokens will be replaced with contextual values when an email is created.
 
@@ -276,6 +227,5 @@ The user who sets up parameters for the RFQ process can create multiple email te
 - %createddate%
 
 If an amendment is required and is sent after the RFQ is sent, the RFQ will be resent to all invited vendors. The published document will also be updated on the **Open published requests for quotations** page.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

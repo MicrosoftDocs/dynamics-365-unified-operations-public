@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Use stage reason codes 
-description: You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.
-author: sorenva
-ms.date: 05/07/2018
+description: You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the defined time limit.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable, SMAParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable, SMAParameters
 ---
 
 
@@ -68,7 +52,7 @@ If you have specified that a reason code is required, you must enter a reason co
 
 2.  In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.
 
-## See also
+## Related information
 
 [Start and stop time recording on a service order](start-and-stop-time-recording-on-a-service-order.md)
 

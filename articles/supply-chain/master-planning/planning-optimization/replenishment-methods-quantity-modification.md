@@ -1,16 +1,12 @@
 ---
 title: Replenishment methods and quantity modification
-description: This article provides information about replenishment methods. It also explains how the multiple order quantity for a product affects the result.
+description: Learn about replenishment methods. It also explains how the multiple order quantity for a product affects the result, including an outline on coverage codes.
 author: t-benebo
-ms.date: 6/1/2021
-ms.topic: article
-ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-06-01
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: article
+ms.date: 6/1/2021
+ms.reviewer: kamaybac
+ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
 ---
 
 # Replenishment methods and quantity modification

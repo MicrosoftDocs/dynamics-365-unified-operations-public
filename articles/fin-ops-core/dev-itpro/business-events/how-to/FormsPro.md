@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Business events and Microsoft Forms Pro
-description: This article goes through a scenario where a survey is sent to users when a product has been shipped.
-author: murrayfife
-ms.date: 08/12/2019
+description: Learn about business events and Microsoft Forms Pro through a scenario where a survey is sent to users when a product has been shipped.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
+ms.date: 08/12/2019
 # ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
-ms.author: mufife
 ms.search.validFrom: Platform update 27
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-6-30 
 
 ---

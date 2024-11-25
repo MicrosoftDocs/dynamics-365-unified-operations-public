@@ -1,12 +1,14 @@
 ---
 title: Entities eligible for copilot
-description: This article contains a list of entities eligible for copilot.
-author: ramasri
+description: Access a list of the entities eligible for copilot, organized by alphabetical order.
+author: RamaKrishnamoorthy 
 ms.author: ramasri
 ms.topic: conceptual
-ms.date: 10/30/2023
-ms.reviewer: johnmichalak
+ms.date: 08/29/2024
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot 
+ms.reviewer: johnmichalak
 ---
 
 # Entities eligible for copilot
@@ -1683,7 +1685,7 @@ This article contains a list of entities eligible for copilot.
 - SVC_ODataViewOverrideWithoutTable_DE
 - SVC_ODataViewOverrideWithTable_DE
 - SVC_ThrowExceptionDataEntity
-- SysAADClientTableEntity
+- SysMicrosoft Entra IDClientTableEntity
 - SysCompositeHeaderTableEntity
 - SysCompositeHeaderTestLineEntity
 - SysCompositeLineChildTableEntity

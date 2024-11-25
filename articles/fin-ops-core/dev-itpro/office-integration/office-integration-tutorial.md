@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Office integration tutorial
 description: In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 author: jasongre
-ms.date: 05/24/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2021
+ms.reviewer: twheeloc 
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
 ---
 
 # Office integration tutorial
@@ -31,9 +19,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 
@@ -332,7 +317,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
     3.  Download and open the document that is generated.
 
 2.  Sign in to the app:
-    1.  Select **Sign In**. The Azure Active Directory sign-in screen should provide a list of credentials. If you encounter an error, force a sign-out (by using the sign-out link), and then sign in again.
+    1.  Select **Sign In**. The Microsoft Entra sign-in screen should provide a list of credentials. If you encounter an error, force a sign-out (by using the sign-out link), and then sign in again.
     2.  Select the appropriate account, or click **Use another account**.
     3.  Enter the credentials for that environment, and then click **Sign in**.
 
@@ -465,4 +450,3 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

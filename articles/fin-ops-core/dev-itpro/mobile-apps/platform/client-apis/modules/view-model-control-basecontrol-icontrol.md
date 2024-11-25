@@ -1,12 +1,13 @@
 ---
 title: Control module
-description: Controls are what make up the content of a page.
+description: Learn about the Control module, which includes the Control and ControlMetadata types, and the ControlType type alias.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Control module

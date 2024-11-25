@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and acquire assets from Accounts payable
-description: This procedure walks through the creation and acquisition of a fixed asset with the purchasing process. 
+description: This procedure walks through the creation and acquisition of a fixed asset with the purchasing process, including multiple step-by-step processes. 
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and acquire assets from Accounts payable
 
 [!include [banner](../../includes/banner.md)]

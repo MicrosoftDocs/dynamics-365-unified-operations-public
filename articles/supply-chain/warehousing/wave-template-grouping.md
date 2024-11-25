@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Wave template grouping
-description: Wave template grouping enables the system to use wave template setups to determine, based on criteria that you define, how it should split released lines and assign them to new or existing waves. This feature can be useful in warehouses where waves are created based on specific criteria, but where managers prefer to create waves automatically instead of manually.
+description: Wave template grouping enables the system to use wave template setups to determine, based on criteria that you define and assign them to new or existing waves.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 07/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 ---
 
 # Wave template grouping

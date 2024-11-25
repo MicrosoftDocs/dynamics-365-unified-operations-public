@@ -1,19 +1,17 @@
 ---
 title: Install modern report design templates
-description: This article explains how to install the modern report design templates in the application suite.
-author: RichdiMSFT
-ms.date: 10/18/2021
+description: Learn how to install the modern report design templates in the application suite and apply modern design templates.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 10/18/2021
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
+ms.search.form: PrintMgmtSetupUIMain
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
-ms.search.form: PrintMgmtSetupUIMain
 ---
 
 # Install modern report design templates

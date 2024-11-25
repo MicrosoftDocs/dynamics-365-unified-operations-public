@@ -1,27 +1,12 @@
 ---
-# required metadata
-
 title: Hazardous materials overview
-description: This article provides an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
-author: t-benebo
-ms.date: 06/10/2020
+description: Access an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 06/10/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
+ms.search.form:
 ---
 
 # Hazardous materials overview

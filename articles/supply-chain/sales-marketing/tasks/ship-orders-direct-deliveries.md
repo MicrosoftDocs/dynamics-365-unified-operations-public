@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Ship orders as direct deliveries
-description: This article demonstrates how to create a direct delivery for a sales order. 
-author: Henrikan  
+description: Learn how to create a direct delivery for a sales order, including a step-by-step process for setting individual orders for direct delivery. 
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: how-to  
 ms.date: 07/11/2019  
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 ---
+
 # Ship orders as direct deliveries
 
 [!include [banner](../../includes/banner.md)]

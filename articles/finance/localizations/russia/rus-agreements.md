@@ -1,15 +1,14 @@
 ---
 title: Agreements
-description: This article provides information about sales and purchase agreements for Russian localization.
-author: mrolecki
-ms.date: 02/06/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about sales and purchase agreements for Russian localization, including a list that outlines the extensions to include in the Russian localization.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: mrolecki
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

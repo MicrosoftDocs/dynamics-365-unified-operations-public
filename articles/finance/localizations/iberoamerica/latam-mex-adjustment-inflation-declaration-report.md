@@ -1,20 +1,18 @@
 ---
 title: Adjustment inflation declaration report
-description: Microsoft Dynamics 365 Finance users can process inflation adjustments by using INPC rates, various methods (such as opening balance, balance, monthly balance, and transaction date), and various dimensions.
+description: Microsoft Dynamics 365 Finance users can process inflation adjustments by using INPC rates, various methods (such as opening balance), and various dimensions.
 author: AdamTrukawka
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
+ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 9391
-ms.assetid: 9076bf16-0021-47ad-a3b9-1bab75c583ec
 ms.search.form: InflationAdjJournal_MX, InpcRateTable_MX, LedgerParameters, MainAccount
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 9076bf16-0021-47ad-a3b9-1bab75c583ec
 ---
 
 # Adjustment inflation declaration report

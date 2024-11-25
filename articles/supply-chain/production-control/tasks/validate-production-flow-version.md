@@ -1,33 +1,20 @@
 --- 
-# required metadata 
- 
 title: Validate a production flow and version
-description: This procedure shows how to create a new production flow and a first version for lean manufacturing. 
+description: Learn how to create a new production flow and a first version for lean manufacturing, including a step-by-step process for creating production flows. 
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LeanProductionFlow   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: LeanProductionFlow
 ---
+
 # Validate a production flow and version
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to create a new production flow and a first version for lean manufacturing. Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined. You need to define a Value stream and a Production group. Refer to the white papers on Lean manufacturing to familiarize yourself with the concepts of production flows and activities. This procedure refers to the legal entity USMF in demo data. However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.
+This procedure shows how to create a new production flow and a first version for lean manufacturing. Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined. You need to define a Value stream and a Production group. This procedure refers to the legal entity USMF in demo data. However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.
 
 
 ## Create a production flow

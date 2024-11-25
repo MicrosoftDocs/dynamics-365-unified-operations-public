@@ -1,16 +1,15 @@
 ---
 title: Exclude test packages from build output
-description: This article explains how to prevent specific packages from being included in the package in the build output that the automated build process generates.
-author: gianugo
-ms.date: 05/15/2017
+description: Learn how to prevent specific packages from being included in the package in the build output that the automated build process generates.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 05/15/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Exclude test packages from build output

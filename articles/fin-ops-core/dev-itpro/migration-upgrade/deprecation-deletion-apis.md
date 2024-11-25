@@ -1,15 +1,13 @@
 ---
 title: Deprecation of methods and metadata elements
-description: This article provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves.
-author: gianugo
-ms.date: 02/19/2021
+description: Learn about the deprecation of methods and metadata elements that become obsolete as the code base evolves, including an overview on the cleanup of deprecated elements.
+author: josaw
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 02/19/2021
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 ---

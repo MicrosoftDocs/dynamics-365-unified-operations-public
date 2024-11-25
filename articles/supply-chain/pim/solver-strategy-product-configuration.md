@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Solver strategy for product configuration
-description: This article describes how you can use the solver strategy to improve the performance of product configuration. 
-author: t-benebo 
-ms.date: 02/19/2019
+description: Learn how you can use the solver strategy to improve the performance of product configuration, including an outline on solver strategies. 
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
+ms.date: 02/19/2019
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Solver strategy for product configuration
@@ -67,7 +50,7 @@ The following table provides recommendations about the solver strategy to use in
 | Top-down             | The **Minimal domains first** and **Top-down** strategies are closely related. Customer implementation studies have shown that the **Top-down** strategy, outperforms the **Minimal domains first** strategy. However, the **Minimal domains first** strategy is kept in the product for backward compatibility. Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used. However, in some cases, the **Default** strategy outperforms these two strategies. Therefore, remember to try each strategy. |
 | Z3                   | We recommend that you use the **Z3** strategy as the default solver strategy. If you're concerned about performance and scalability, you can evaluate the other strategies. |
 
-## Additional resources
+## Related information
 
 [Product configuration overview](build-product-configuration-model.md)
 

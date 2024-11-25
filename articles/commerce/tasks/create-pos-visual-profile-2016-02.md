@@ -1,33 +1,26 @@
 --- 
-# required metadata 
- 
 title: Create point of sale (POS) visual profiles
 description: This procedure walks through creating a new point of sale (POS) visual profile. 
-author: jashanno
-ms.date: 08/24/2021
+author: ritakimani
+ms.date: 10/31/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: 
+  - bap-template
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: jashanno
+ms.author: ritakimani
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create point of sale (POS) visual profiles
 
 [!include [banner](../includes/banner.md)]
 
 This procedure walks through creating a new point of sale (POS) visual profile. A visual profile contains basic information that determines the appearance of POS registers. You can create several visual profiles and assign specific profiles to run on specific registers. This procedure uses the USRT demo data company.
+
+> [!NOTE]
+> - Starting with the Commerce 10.0.42 release, in Commerce headquarters you can set the **Modern transaction grid** option to **Yes** on the **POS visual profiles** form configuration (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> POS visual profiles**). This setting allows you to roll out changes for specific registers. To access this option you must first enable the **Enable modern transaction grid in POS transaction view** feature in the **Feature management** workspace (**System administration \> Workspaces \> Feature management**). This feature includes refreshed transaction, numpad, customer card, and button grids, and also enables retailers to display images in the cart view.
+> - After every configuration change made in headquarters, you must run the **Registers (1090)** job to implement the change in POS.
 
 1. Go to **Retail and Commerce > Channel setup > POS setup > POS profiles > Visual profiles**.
 2. Click **New**.

@@ -1,18 +1,17 @@
 ---
 title: Generate a Traceable goods operation report (Russia)
-description: This article explains how set up and generate a report about operations that involve traceable goods.
-author: AdamTrukawka
-ms.date: 06/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: 
+description: Learn how set up and generate a report about operations that involve traceable goods, including an outline on generating Traceable goods operation reports.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2022-06-04
-ms.dyn365.ops.version: 10.0.27
 ms.search.form: InventTrans, RAssettrans
+ms.dyn365.ops.version: 10.0.27
 ---
 
 # Generate a Traceable goods operation report (Russia)

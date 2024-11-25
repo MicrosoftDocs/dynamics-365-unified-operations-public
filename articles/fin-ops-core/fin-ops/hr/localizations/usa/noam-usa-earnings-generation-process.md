@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Earnings and earnings generation FAQ
-description: This article answers some frequently asked questions about earnings and generating earnings.
+description: Access answers some frequently asked questions about earnings and generating earnings, including questions about earning lines and recurring earnings.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 220904
-ms.assetid: 8eef7aff-5d9a-47aa-b6a2-86958c3694cf
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 8eef7aff-5d9a-47aa-b6a2-86958c3694cf
 ---
 
 # Earnings and earnings generation FAQ

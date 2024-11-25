@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Location stocking limits
-description: This article describes the functionality for location stocking limits.
-author: perlynne
-ms.date: 11/11/2020
+description: Learn about the functionality for location stocking limits, including an outline of an example of purchasing order receiving.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 11/11/2020
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: WHSLocationLimit
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: perlynne
-ms.search.validFrom: 2020-11-11
-ms.dyn365.ops.version: 10.0.16
-
 ---
 
 # Location stocking limits

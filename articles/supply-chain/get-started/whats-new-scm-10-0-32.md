@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (April 2023)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.32. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.32 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
+ms.topic: conceptual
+ms.date: 04/19/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
-ms.date: 01/30/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (April 2023)
@@ -33,7 +33,7 @@ The following table lists the features that are included in this release. We mig
 | Procurement | [Improve security for vendor bank account information updates](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-security-vendor-bank-account-information-updates) |  [Vendor bank account workflow](../../finance/accounts-payable/vendor-bank-account-workflow.md) | Feature management:<br>*Vendor bank account change proposal workflow* |
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
-| Warehouse management | [Optimize performance of internal movements in warehouse](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-performance-internal-movements-warehouse) | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Feature management:<br>*(Preview) Warehouse-specific inventory transactions* |
+| Warehouse management | [Optimize performance of internal movements in warehouse](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-performance-internal-movements-warehouse) | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Feature management:<br>*Warehouse-specific inventory transactions* |
 | Warehouse management | [Pack shipments with speed and resilience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/pack-shipments-speed-resilience) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
 | Warehouse management | Warehouse groups<br><br>(Part of [Optimize warehouse management implementation and maintenance](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-warehouse-management-implementation-maintenance).) | [Warehouse groups](../warehousing/warehouse-groups.md) | Enabled by default |
 
@@ -45,10 +45,9 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Procurement and sourcing | (Preview) Purchase order workflow submission and approval performance enhancement | This feature improves the performance of the purchase order workflow submission dialog and approval dialog which is most noticeable on purchase orders with larger number of lines. When this feature is enabled, purchase order totals and accounting distributions are calculated and validated by a workflow execution. Validation errors surface in the workflow history. This feature is not supported when budget control is enabled. |
+| Procurement and sourcing | Purchase order workflow submission and approval performance enhancement | This feature improves the performance of the purchase order workflow submission dialog and approval dialog which is most noticeable on purchase orders with larger number of lines. When this feature is enabled, purchase order totals and accounting distributions are calculated and validated by a workflow execution. Validation errors surface in the workflow history. This feature is not supported when budget control is enabled. |
 | Production control | Production batch balancing enhanced onhand grid capability | Provides an enhanced on-hand grid capability for the batch balancing process. |
 | Sales and marketing | Prevent updates to intercompany sales order line requested dates in header to lines update scenario when derived. | This feature prevents updating intercompany sales order line requested dates in a header to lines scenario when the intercompany sales order line is created from the purchase order and therefore is derived. Previously, when updating either confirmed or requested dates on the intercompany sales order header, both requested and confirmed sales order line dates would be updated when Transfer settings from the header to the lines ship and receipt dates, update ship and receipt dates, is *Yes*. When this feature is enabled, only the sales order line confirmed dates are updated in such a header to lines update scenario. |
-| Warehouse management | (Preview) Warehouse-specific inventory transactions | Helps optimize the performance of warehouse management processes, especially when processing a large number of SKUs. It also prepares the Supply Chain Management database to support future improvements. The feature adds a new database table that stores inventory transactions specifically for warehouse management processes, which then use this table to drive on-hand inventory changes rather than using the common inventory transaction table (InventTrans). As a result, this feature significantly reduces the load on the InventTrans table, thereby also improving the performance of many other system processes. |
 
 ## Feature state changes in this release
 
@@ -186,13 +185,13 @@ We have recently added or significantly updated the following help articles. The
 | Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
-| Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)
+| Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of Finance and Operations apps (April 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. Learn more in [Platform updates for version 10.0.32 of Finance and Operations apps (April 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
 
 ### Bug fixes
 

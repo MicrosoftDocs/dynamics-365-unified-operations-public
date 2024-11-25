@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Item quality groups
-description: This article describes how to use and create item quality groups to logically group products so that they can be assigned to quality associations for the automatic generation of quality orders.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how to use item quality groups to group products so that they can be assigned to quality associations for the automatic generation of quality orders.
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventTestQualityGroup, InventTestItemQualityGroup
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 03/23/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
+ms.search.form: InventTestQualityGroup, InventTestItemQualityGroup
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2020-06-17
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Item quality groups
@@ -103,7 +87,7 @@ To manually add a quality group from the **Released products** page, follow thes
 1. Repeat the previous step for each additional quality group that you want to assign to the product.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management test instruments](quality-test-instruments.md)
 - [Quality management tests](quality-tests.md)

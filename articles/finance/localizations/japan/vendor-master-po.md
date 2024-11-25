@@ -1,19 +1,18 @@
 ---
 title: Setup vendor master and purchase order to be target of consolidated invoice
-description: In Japan, the vendors usually use consolidated invoice for transactions.
+description: In Japan, the vendors usually use consolidated invoice for transactions. Learn how to set up vendor master and purchases to be targed of consolidated invoices.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: VendTable, PurchTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Setup vendor master and purchase order to be target of consolidated invoice
 
 [!include [banner](../../includes/banner.md)]

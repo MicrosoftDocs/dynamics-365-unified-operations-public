@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Low-cost fixed assets
-description: This article provides information about low-cost fixed assets for Hungary.
+description: Learn about low-cost fixed assets for Hungary, including overviews on setting up low-cost asset thresholds and books for low-cost fixed assets.
 author: EvgenyPopovMBS
-ms.date: 10/31/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetParameters
+ms.date: 10/31/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264684
 ms.search.region: Hungary
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: AssetParameters
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Low-cost fixed assets

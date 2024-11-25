@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Customize and use the Customer portal
-description: This article explains how to customize the Customer portal after it has been added to your system.
-author: Henrikan
-ms.date: 04/22/2020
+description: Learn how to customize the Customer portal after it has been added to your system, including outlines on typical customizations and customizing order creations.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 04/22/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
-ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
+ms.search.form:
 ---
 
 # Customize and use the Customer portal

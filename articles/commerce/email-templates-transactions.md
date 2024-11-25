@@ -2,18 +2,15 @@
 title: Create email templates for transactional events
 description: This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/02/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/18/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Create email templates for transactional events
 
@@ -115,7 +112,7 @@ The *customer created* notification type is triggered when a new customer entity
 
 To enable customer created notifications, in Commerce headquarters go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters \> General**. In the **Email notification profile** drop-down list, select an email notification profile that contains the customer created notification type. 
 
-By default, customer created events are uploaded to headquarters with the **Synchronize customers and channel requests** batch job. If you want to use a real-time service call to send these events, set the email ID of the customer created template to **newCust**. However, this is not recommended because real-time service calls are "fire and forget" calls and do not have the fallback or retry logic that batch jobs provide.
+By default, customer created events are uploaded to headquarters with the **Synchronize customers and channel requests** batch job. If you want to use a real-time service call to send these events, set the email ID of the customer created template to **newCust**. However, this isn't recommended because real-time service calls are "fire and forget" calls and don't have the fallback or retry logic that batch jobs provide.
 
 > [!NOTE] 
 > When you enable customer created notifications, customers that are created in all channels within the legal entity will receive a customer created email. Currently, customer created notifications can't be limited to a single channel.  
@@ -196,7 +193,7 @@ The message body of your email is composed in HTML. You can use any layout, styl
 
 Your email can contain placeholders that are replaced with customer-specific and transaction-specific values when the email is generated. Placeholders are always surrounded by percent signs (%) and are inserted directly into the HTML document.
 
-Here is an example.
+Here's an example.
 
 ```html
 <p>
@@ -277,6 +274,7 @@ The following placeholders retrieve and show data for individual products (lines
 | `giftcardexpiration`             | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
 | `giftcardrecipientname`          | The name of the gift card recipient, for products of the gift card type. |
 | `giftcardbuyername`              | The name of the gift card buyer, for products of the gift card type. |
+| `lineproductvariantinfo`         | The dimensions of the variant for the line. |
 
 ### Format of order line placeholders in the email message body
 
@@ -290,7 +288,7 @@ When you create the HTML for the individual order lines in the email message bod
 <!--%tableend.salesline%-->
 ```
 
-Here is an example.
+Here's an example.
 
 ```HTML
 <table>

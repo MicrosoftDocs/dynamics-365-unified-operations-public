@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Free text invoices
-description: This article explains how to create a free text invoice.
+description: Learn how to create a free text invoice, including step-by-step processes for creating free text invoices and posting invoices.
 author: EricWangChen
-ms.date: 06/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/04/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Free text invoices

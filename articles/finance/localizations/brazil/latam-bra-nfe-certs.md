@@ -1,18 +1,17 @@
 ---
 title: NF-e certificates
-description: This article provides information about NF-e certificates for Microsoft Dynamics 365 Finance and the solution you should use for each state tax authority.
-author: AdamTrukawka
+description: Learn about NF-e certificates for Microsoft Dynamics 365 Finance and the solution you should use for each state tax authority.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 01/31/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
+ms.dyn365.ops.version: Version 1611
 ---
 
 # NF-e certificates

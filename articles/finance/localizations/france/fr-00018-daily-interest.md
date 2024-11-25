@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter
-description: Indicate the interest calculation on an invoice. 
+description: Learn about how to indicate the interest calculation on an invoice, including a step-by-step process using the FRRT demo data company. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesEditLines   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User  
 ms.search.region: France
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesEditLines 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter
 
 [!include [banner](../../includes/banner.md)]

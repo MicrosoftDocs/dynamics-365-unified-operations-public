@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Onboard an implementation project
-description: This article describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS), including an overview of the Microsoft 365 Admin Center.
 author: OlgaPetrovaFT
-ms.date: 06/21/2022
+ms.author: johnmichalak 
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
+ms.date: 08/19/2024
+ms.custom:
+ms.reviewer: johnmichalak 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update
 ---
 
@@ -32,7 +22,7 @@ This article describes how to onboard a finance and operations project by using 
 
 ## Microsoft 365 Admin Center
 
-After your organization has purchased a subscription to a finance and operations app, the service must be activated on your organization's Azure Active Directory (Azure AD) tenant by a tenant administrator. In this article, **tenant administrator** refers to any user of the Azure AD tenant with the **Global Administrator** security role. For more information about Azure AD roles, please see [Understand roles in Azure Active Directory](/azure/active-directory/roles/concept-understand-roles).
+After your organization has purchased a subscription to a finance and operations app, the service must be activated on your organization's Microsoft Entra tenant by a tenant administrator. For more information about Microsoft Entra roles, please see [Understand roles in Microsoft Entra ID](/azure/active-directory/roles/concept-understand-roles).
 
 The tenant administrator must complete the following steps:
 
@@ -40,7 +30,7 @@ The tenant administrator must complete the following steps:
 2. Sign in with your tenant administrator credentials.
 3. Go to **Billing > Products & services** and confirm that there is an active subscription for the application that you want to deploy. 
    > [!NOTE]
-   > If you do not see an active subscription, consult with your licensing partner to confirm the status of the subscription transaction. It is important to confirm that the subscriptions were purchased for the correct Azure AD tenant.  By default, all Microsoft online services should be running on the same Azure AD tenant. The most frequent cause for onboarding delays is that subscriptions are inadvertently placed on an incorrect Azure AD tenant. 
+   > If you do not see an active subscription, consult with your licensing partner to confirm the status of the subscription transaction. It is important to confirm that the subscriptions were purchased for the correct Microsoft Entra tenant.  By default, all Microsoft online services should be running on the same Microsoft Entra tenant. The most frequent cause for onboarding delays is that subscriptions are inadvertently placed on an incorrect Microsoft Entra tenant. 
 4. If the subscription in question is shown as active, proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
 5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current tenant administrator credentials.
    > [!NOTE]

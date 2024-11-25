@@ -1,16 +1,16 @@
 ---
 title: Update LCS Connection authentication tasks to MSAL in Azure Pipelines
-description: This article explains how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
-author: gianugo
-ms.date: 11/30/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
+description: Learn about how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
+author: pathaku
+ms.author: pathaku
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 10/23/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Update LCS Connection authentication tasks to MSAL in Azure Pipelines
@@ -32,13 +32,13 @@ To add the MSAL.PS install task to the build of your YML or Classic pipeline, se
 
 ## Update existing tasks
 
-To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=classic#task-versions). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
+To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
 
 | Task name | Minimum version that uses MSAL |
 | --- | --- |
-| [Dynamics Lifecycle Services (LCS) Asset Download](pipeline-asset-download.md) | 2.\* or later |
+| [Dynamics Lifecycle Services (LCS) Asset Download](pipeline-asset-download.md) | 1.\* or later |
 | [Dynamics Lifecycle Services (LCS) Asset Upload](pipeline-asset-upload.md) | 1.\* or later |
-| [Dynamics Lifecycle Services (LCS) Asset Deployment](pipeline-deploy-asset.md) | 1.\* or later |
+| [Dynamics Lifecycle Services (LCS) Asset Deployment](pipeline-deploy-asset.md) | 2.\* or later |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

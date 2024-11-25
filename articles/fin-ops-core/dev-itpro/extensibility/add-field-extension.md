@@ -1,19 +1,15 @@
 ---
 title: Add fields to tables through extension
-description: This article describes how to use a table extension to add a field to a table.
+description: Learn how to use a table extension to add a field to a table by creating an extension for the InventTable table in your model.
 author: ivanv-microsoft
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Add fields to tables through extension

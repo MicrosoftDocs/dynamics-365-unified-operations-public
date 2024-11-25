@@ -1,15 +1,13 @@
 ---
 title: Initiate data source values of the USER INPUT PARAMETER type from source code
-description: This article describes how the data source values of the USER INPUT PARAMETER type can be initiated from source code.
+description: Learn how the data source values of the USER INPUT PARAMETER type can be initiated from source code, including various format components.
 author: kfend
-ms.date: 04/26/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/26/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 8
 ---

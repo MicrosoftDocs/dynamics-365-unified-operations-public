@@ -1,15 +1,14 @@
 ---
 title: Russian address formats
-description: This article provides information about Russian address formats and importing from the FIAS.
-author: AdamTrukawka
-ms.date: 11/05/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about Russian address formats and importing from the FIAS, including an outline and step-by-step process for setting up Russian address formats.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 ---

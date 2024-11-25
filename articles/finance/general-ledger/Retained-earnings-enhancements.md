@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Retained earnings calculation in Financial reporting
-description: This article describes how the **Retained earnings calculation** enhancement for Financial reporting is used. This enhancement has implications for organizations that use currency translation.
+description: Learn how the Retained earnings calculation enhancement for Financial reporting is used, which has implications for organizations that use currency translation.
 author: jinniew
-ms.date: 09/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261824
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 09/20/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-01-09
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 10.0.8
-
 ---
 
 # Retained earnings calculation in Financial reporting

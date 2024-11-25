@@ -1,19 +1,18 @@
 ---
 title: Create a fixed asset with special depreciation profile
-description: In Japan, you can post a special depreciation amount to a fixed asset, under certain conditions. Use this procedure to learn how to create a fixed asset with special depreciation profile.
+description: In Japan, you can post a special depreciation amount to a fixed asset, under certain conditions. Learn how to create fixed assets with special depreciation profile.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetTable, AssetBook
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create a fixed asset with special depreciation profile
 
 [!include [banner](../../includes/banner.md)]

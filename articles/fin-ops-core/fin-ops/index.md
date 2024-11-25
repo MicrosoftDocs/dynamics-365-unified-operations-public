@@ -1,15 +1,13 @@
 ---
 title: Finance and operations application documentation
 description: Documentation for finance and operations apps.
-author: josaw1
-ms.date: 04/13/2021
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
+author: twheeloc
+ms.date: 06/13/2024
+ms.topic: conceptual
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: josaw
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
@@ -62,7 +60,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="../dev-itpro/data-entities/data-entities.md">Data entities</a></p>
 <p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Power Automate</a></p>
 
-<h3><a href="../../finance/index.yml">Financial management</a></h3>
+<h3><a href="../../finance/index.yml">Finance</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="../../finance/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
 <p><a href="../../finance/budgeting/budgeting-overview.md">Budgeting</a></p>

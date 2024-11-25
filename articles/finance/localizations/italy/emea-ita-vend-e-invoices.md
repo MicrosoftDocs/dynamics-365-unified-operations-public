@@ -1,19 +1,16 @@
 ---
 title: Vendor electronic invoices
-description: This article explains how to configure and submit vendor electronic invoices in Italy.
+description: Learn how to configure and submit vendor electronic invoices in Italy, including prerequisites and an outline on configuring accounts payable parameters.
 author: mrolecki
-ms.date: 09/22/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 09/22/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2021-12-01
-ms.dyn365.ops.version: 10.0.21
-ms.custom: 3984823
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Vendor electronic invoices

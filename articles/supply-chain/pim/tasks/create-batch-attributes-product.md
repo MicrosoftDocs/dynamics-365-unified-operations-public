@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create batch attributes for a product
-description: This procedure shows how to create a batch attribute, assign default value ranges, and include the attribute in a group. 
-author: t-benebo
+description: Learn how to create a batch attribute, assign default value ranges, and include the attribute in a group, including a step-by-step process. 
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 11/14/2016
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PdsBatchAttrib
-audience: Application User 
-# ms.devlang:  
+ms.custom:   
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form: PdsBatchAttrib
 ---
+
 # Create batch attributes for a product
 
 [!include [banner](../../includes/banner.md)]

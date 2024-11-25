@@ -4,11 +4,8 @@
 title: Recruiting request position
 description: This article describes the Recruiting request position entity for Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 07/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -19,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jaredha
+ms.author: ajitchandran
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
 ---
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Recruiting request position
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

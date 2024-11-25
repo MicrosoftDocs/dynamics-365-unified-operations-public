@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Settle partial payment before discount date with final payment after discount date
-description: This article discusses the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
-author: ShivamPandey-msft
-ms.date: 11/15/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 11/15/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
 ---
 
 # Settle partial payment before discount date with final payment after discount date

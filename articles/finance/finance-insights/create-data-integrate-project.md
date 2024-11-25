@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Create a data integration project
-description: This article explains how to create a data integration project.
-author: ShivamPandey-msft
-ms.date: 05/06/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to create a data integration project, including a step-by-step process detailing the creation of data integration projects.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 05/06/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-24
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.13
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Create a data integration project
 
 [!include [banner](../includes/banner.md)]

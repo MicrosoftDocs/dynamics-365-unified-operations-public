@@ -1,16 +1,15 @@
 ---
 title: Develop email experiences by using the SysMailer framework
-description: This article describes how you can use the SysMailer framework to send email.
+description: Learn about how you can use the SysMailer framework to send email, including various scenarios and code examples.
 author: ChrisGarty
-ms.date: 05/23/2018
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: cgarty
+ms.topic: article
+ms.date: 05/23/2018
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 270774
 ---
 
 # Develop email experiences by using the SysMailer framework

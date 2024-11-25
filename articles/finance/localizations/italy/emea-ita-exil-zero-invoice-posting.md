@@ -1,18 +1,16 @@
 ---
 title: Posting invoices with zero amount
-description: This article explains how you can post financial transactions for invoices that have an amount of 0 (zero).
+description: Learn how you can post financial transactions for invoices that have an amount of 0 (zero), including an outline on posting invoices.
 author: mrolecki
-ms.date: 11/21/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 11/21/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2019-11-29
-ms.dyn365.ops.version: 10.0.8
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Posting invoices with zero amount

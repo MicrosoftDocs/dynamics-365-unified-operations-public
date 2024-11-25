@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Moving average
-description: Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed. 
-author: JennySong-SH
-ms.date: 08/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventModelGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does.
+author: prasungoel
+ms.author: prasungoel
+ms.topic: how-to
+ms.date: 03/01/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: InventModelGroup
 ---
 
 # Moving average
@@ -154,7 +138,8 @@ In this moving average example, the inventory value report is printed to support
 |                  | October 31   | Total                      | 2        | 32.00  | 16.00             |
 
 > [!NOTE]
-> You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
-
+> You can't reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
+>
+> As of the release of the [Inventory value report storage](inventory-value-report-storage.md) report in Supply Chain Management version 10.0.29, the older Inventory value report no longer supports transaction-level calculations. As a result, the **Average unit cost** is hidden by default for the older report. However, an extension point is provided that makes it possible to customize the system to add support for calculating cost prices on a transaction level and to make the **Average unit cost** field visible in the Inventory value report.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

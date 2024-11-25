@@ -1,21 +1,17 @@
 ---
 title: Plan and prepare for on-premises deployments
-description: This article will help you plan and prepare for your on-premises deployment.
+description: Learn how you can plan and prepare for your on-premises deployment, including an overview of difference between cloud and on-premises deployments.
 author: faix
-ms.date: 01/26/2022
-ms.topic: article
-ms.prod: dynamics-365
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: osfaixat
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2021
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.assetid: 
-ms.service: 
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Plan and prepare for on-premises deployments
@@ -198,7 +194,7 @@ Mission critical services like the AOS should be hosted on Virtual hosts that ha
 
 The following authentication methods are used with on-premises deployments:
 
-- **Azure Active Directory (Azure AD)** - Azure AD is the authentication method used to log in to LCS. Azure AD is used configure the LCS Local Agent. For more information, see [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
+- **Microsoft Entra ID** - Microsoft Entra ID is the authentication method used to log in to LCS. Microsoft Entra is used configure the LCS Local Agent. For more information, see [What is Microsoft Entra ID?](/azure/active-directory/active-directory-whatis)
 - **Active Directory Domain Services (AD DS)** - The machines that host Finance + Operations components must belong to an Active Directory domain. You must configure Active Directory Domain Services (AD DS) in native mode. For more information, see [Active Directory Domain Services](/windows-server/identity/ad-ds/active-directory-domain-services).
 - **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign on across a wide variety of applications including Microsoft 365, cloud-based SaaS applications, and applications on the corporate network.
   - For the IT organization, it enables you to provide sign on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
@@ -211,13 +207,13 @@ The following authentication methods are used with on-premises deployments:
 
 The on-premises deployment option for Finance + Operations stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data).
 
-The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), Microsoft Office signup portal, and Azure Active Directory. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
+The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), Microsoft Office signup portal, and Microsoft Entra ID. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
 
 | Supporting services               | Customer data definition                      |
 |---------------------------------------|----------------------------------------------------|
 | Microsoft Dynamics Lifecycle Services | Project content and files are stored in a project. This includes application configuration data, code, metadata, and data assets that include the application and business process models. |
 | Microsoft Office signup portal        | Customer information that is collected during the onboarding process.  |
-| Microsoft Azure Active Directory      | Authentication for LCS and Azure DevOps.   |
+| Microsoft Entra ID      | Authentication for LCS and Azure DevOps.   |
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment.
 
@@ -229,4 +225,3 @@ Be sure to refer to the [On-premises deployment home page](on-premises-deploymen
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

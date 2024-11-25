@@ -1,15 +1,13 @@
 ---
 title: Learning Power BI content
-description: This article describes the Learning Power BI content.
+description: Learn about Power BI content, including a table of reports that are included in the Power BI content and how to understand the data model and entities.
 author: jcart1106
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jcart
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---

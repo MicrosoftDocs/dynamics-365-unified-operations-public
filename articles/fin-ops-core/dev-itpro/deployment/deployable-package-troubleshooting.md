@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot package application issues
-description: The article provides troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
+description: Learn about troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
 author: laneswenka
-ms.date: 01/21/2022
+ms.author: laswenka
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 01/21/2022
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: laswenka
 ms.search.validFrom: 2016-05-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 1
-
 ---
 
 # Troubleshoot package application issues

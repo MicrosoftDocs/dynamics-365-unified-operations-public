@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Reduce the days on subscription fees  
-description: To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to reduce the number of days of an existing subscription fee, including a step-by-step process and examples of subscription fee reductions.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMASubscriptionTable
 ---
 
 
@@ -50,7 +34,7 @@ If a subscription transaction period runs from January 1 to January 31, and you 
 
 Also, if the **From date** on the reduction period is January 21 (31 minus 10), you could set the **To date** to any date after January 31, and 10 days will still be removed from the fee transaction period.
 
-## See also
+## Related information
 
 [Reduction days example](reduction-days-example.md)
 

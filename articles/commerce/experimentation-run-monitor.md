@@ -2,33 +2,25 @@
 # required metadata
 
 title: Run and monitor an experiment
-description: This article describes how to run and monitor an experiment in a third-party service. It also describes how to make changes to variations after the experiment started.
-author:  sushma-rao 
-ms.date: 10/21/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+description: This article describes how to run and monitor an experiment in a third-party app and change variations as needed in Microsoft Dynamics 365 Commerce.
+author: sushma-rao 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
 ms.search.industry: Retail
-ms.author: sushmar
+ms.author: asharchw
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
+ms.custom: 
+  - bap-template
 ---
 
 # Run and monitor an experiment
 
-This article describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this article, you'll first need to [publish](experimentation-preview-publish.md) your experiment in Commerce. 
+This article describes how to run and monitor an experiment in a third-party app and change variations as needed in Microsoft Dynamics 365 Commerce. 
+
+Before you complete the steps in this article, you'll first need to [publish](experimentation-preview-publish.md) your experiment in Commerce. 
 
 The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.
 

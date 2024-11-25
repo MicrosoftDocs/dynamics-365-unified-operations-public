@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Update an environment
-description: This article explains how to update an environment that was deployed by using the self-service deployment experience.
+description: Learn how to update an environment that was deployed by using the self-service deployment experience, including an overview of servicing changes.
 author: laneswenka
-ms.date: 04/29/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 04/29/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-12-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Update an environment

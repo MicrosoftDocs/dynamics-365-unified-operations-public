@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Accounts payable in the public sector overview
-description: This article explains the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. T
+description: Learn about the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance, including answers to various questions.
 author: v-kiarnd
-ms.date: 07/25/2019
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEntity, PurchAgreementListPage, PurchTableListPage, SrmParameters, VendCertificationType, VendCoverPageLayout, VendOpenInvoicesListPage, VendParametersVendParameters, VendTableListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEntity, PurchAgreementListPage, PurchTableListPage, SrmParameters, VendCertificationType, VendCoverPageLayout, VendOpenInvoicesListPage, VendParametersVendParameters, VendTableListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
 ---
 
 # Accounts payable in the public sector overview

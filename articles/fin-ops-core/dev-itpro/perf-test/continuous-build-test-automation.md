@@ -1,18 +1,15 @@
 ---
 title: Deploy and use a continuous build and test automation environment
-description: This article describes how to deploy a developer topology that supports continuous build and test automation.
+description: Learn about how to deploy a developer topology that supports continuous build and test automation, including prerequisites and an overview of the workflow.
 author: josaw1
-ms.date: 01/21/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: shailesn
+ms.topic: article
+ms.date: 01/21/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Deploy and use a continuous build and test automation environment

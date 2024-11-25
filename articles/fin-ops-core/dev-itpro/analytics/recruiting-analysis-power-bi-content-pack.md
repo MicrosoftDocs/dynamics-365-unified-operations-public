@@ -1,20 +1,17 @@
 ---
 title: Recruiting Power BI content
-description: This article describes the Recruiting Power BI content.
+description: Learn about recruiting Power BI content, including a table outlining reports and visuals in the recruitment management workspace.
 author: jcart1106
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jcart
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 263934
-ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.form: HcmRecruitmentWorkspace
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ---
 
 # Recruiting Power BI content

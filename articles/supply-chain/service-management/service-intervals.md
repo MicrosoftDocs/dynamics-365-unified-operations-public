@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Service intervals
-description: This article provides an overview of how to work with service intervals. The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
-author: sorenva
-ms.date: 02/20/2018
+description: Learn how to work with service intervals, which indicates the frequency with which service order lines are created for service agreement lines.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/20/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: SMAAgreementTable
 ---
 
 # Service intervals

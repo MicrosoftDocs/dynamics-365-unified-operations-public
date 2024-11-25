@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot live synchronization issues
-description: This article provides troubleshooting information that can help you fix issues with live synchronization.
+description: Learn about how you can fix issues with live synchronization, including issues relating to error messages when creating rows and saving table data.
 author: RamaKrishnamoorthy
-ms.date: 08/01/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/01/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-03-16
 ---
 
@@ -20,7 +20,7 @@ ms.search.validFrom: 2020-03-16
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Microsoft Dataverse. Specifically, it provides information that can help you fix issues with live synchronization.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Azure Active Directory (Azure AD) tenant admin credentials. Each section explains whether a specific role or specific credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Entra tenant admin credentials. Each section explains whether a specific role or specific credentials are required.
 
 ## Live synchronization shows an error when you create a row
 
@@ -28,7 +28,9 @@ You might receive the following error message when you create a row in a finance
 
 *\[{\\"error\\":{\\"code\\":\\"0x80072560\\",\\"message\\":\\"The user is not a member of the organization.\\"}}\], The remote server returned an error: (403) Forbidden."}}".*
 
-To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, dual-write application users who were created in Dataverse must have the system admin role. The default owning team must also have the system admin role.
+This error is caused if dual-write application users and owning teams aren't configured correctly. To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, dual-write application users who were created in Dataverse must have the system admin role. The default owning team must also have the system admin role.
+
+In a cloud-hosted development environment there are also additional required steps to grant the application user configured for the environment with a role and permissions for dual-write. See [Configure app user for one-box environments](lcs-setup.md#configure-app-user-for-one-box-environments) for steps to configure the required permissions.
 
 ## Live synchronization shows an error when you try to save table data
 
@@ -363,4 +365,3 @@ For more information, see [Configuration keys and data entities](../config-key-e
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Location product dimension mixing
-description: This article provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
+description: Learn about location product dimension mixing, including outlines on toggling the location product dimension mixing feature and setting up the feature.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
+ms.topic: article
+ms.date: 07/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 ---
 
 # Location product dimension mixing

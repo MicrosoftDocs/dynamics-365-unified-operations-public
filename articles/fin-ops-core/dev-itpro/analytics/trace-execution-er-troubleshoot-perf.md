@@ -1,18 +1,15 @@
 ---
 title: Trace the execution of ER formats to troubleshoot performance issues
-description: This article provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
+description: Learn about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
 author: kfend
-ms.date: 06/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 06/22/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 

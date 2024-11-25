@@ -1,18 +1,15 @@
 ---
 title: Taxable Payments Annual Report
-description: This article explains how to set up and generate the Taxable Payments Annual Report (TPAR).
-author: AdamTrukawka
-ms.date: 08/29/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up and generate the Taxable Payments Annual Report (TPAR), including outlines on configuration and how to prepare a TPAR.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
 ms.search.region: APAC
-ms.author: atrukawk
 ms.search.validFrom: 2023-08-10
-ms.dyn365.ops.version: 
-ms.search.form: 
 ---
 
 # Taxable Payments Annual Report
@@ -36,8 +33,6 @@ A TPAR requires that you provide information to the company contact person who i
 1. Go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 2. Select **New** to create a contact for your legal entity. Be sure to select a legal entity in the **Contact for** field.
 3. Check by **Party ID** value to make sure that you select the legal entity that Standard Audit File for Tax (SAF-T) will be reported from.
-
-    ![Creating a contact for your company.](../media/apac-au-tpar-contact-person.png)
 
 ### Import Electronic reporting configurations
 

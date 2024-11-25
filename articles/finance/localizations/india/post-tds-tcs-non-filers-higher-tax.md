@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Post TDS/TCS on non-filers at a higher rate of tax
-description: This article explains how to post Tax Deducted at Source (TDS)/Tax Collected at Source (TCS) on non-filers at a higher rate of tax.
+description: Learn how to post Tax Deducted at Source (TDS)/Tax Collected at Source (TCS) on non-filers at a higher rate of tax, including outlines on setting up filers.
 author: kfend
-ms.date: 07/07/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 07/07/2021
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Post TDS/TCS on non-filers at a higher rate of tax

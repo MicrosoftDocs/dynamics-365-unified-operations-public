@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Cluster position full
-description: This article provides information about the Cluster position full feature. This feature offers an alternative to more rigid enforcement of work break rules when cluster picking is used, because it enables a larger margin of error in the volumetric constraints of containers or totes.
+description: Learn about the Cluster position full feature, which offers an alternative to more rigid enforcement of work break rules when cluster picking is used.
 author: Mirzaab
-ms.date: 08/25/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSClusterProfile
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 08/25/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:  WHSClusterProfile
 ---
 
 # Cluster position full

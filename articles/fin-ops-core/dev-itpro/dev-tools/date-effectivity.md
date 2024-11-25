@@ -1,13 +1,13 @@
 ---
 title: Date effectivity
-description: This article provides information about date-effective data entities and data sources, and shows how to create a date-effective entity.
-author: peakerbl
-ms.date: 12/04/2019
+description: Learn about date-effective data entities and data sources, including a table that outlines the nodes and values for various properties.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 12/04/2019
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d

@@ -1,19 +1,16 @@
 ---
 title: E-commerce digital gift cards
-description: This article describes how digital gift cards work in the e-commerce implementation of Microsoft Dynamics 365 Commerce. It also provides an overview of important configuration steps.
+description: This article describes how digital gift cards work in the e-commerce implementation of Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/27/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.15
-ms.search.industry: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # E-commerce digital gift cards

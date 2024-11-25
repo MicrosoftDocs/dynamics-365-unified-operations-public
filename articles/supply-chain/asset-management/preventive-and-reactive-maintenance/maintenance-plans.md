@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Maintenance plans
-description: This article explains maintenance plans in Asset Management.
-author: johanhoffmann
-ms.date: 01/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn about maintenance plans in Asset Management, including an outline and step-by-step process on setting up maintenance plans.
+author: jodahlMSFT
+ms.author: jodahl
+ms.topic: how-to
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 ---
 
 # Maintenance plans
@@ -94,7 +79,7 @@ This section describes how to set up maintenance plan lines and provides example
     >[!NOTE]
     >The example described in this step shows that the most comprehensive job, which contains the largest number of tasks, and which is not done so often, should always be inserted as the first line. The more frequent jobs are then inserted as separate lines in the order of frequency, placing the most frequent job at the bottom of the list.
 
-1. The **Counter** field only relates to counter-based line types. Select the counter type to be used on the line. If a counter type is not active on a related asset, the maintenance plan line is omitted.
+1. The **Counter** field only relates to counter-based line types. Select the counter type to be used on the line. If a counter type isn't active on a related asset, the maintenance plan line is omitted.
 
 1. The **Asset counter time fence in days** field only relates to counter-based line types. Insert a number that defines how many days back counter registrations are checked when maintenance plan scheduling is done. This means how far back are data (existing counter registrations) used as basis for calculating the trend that determines how many maintenance schedule lines are created.
 
@@ -106,7 +91,7 @@ This section describes how to set up maintenance plan lines and provides example
 
 1. Select the **Auto create** check box if you want a work order to be automatically created according to the selected maintenance plan line when scheduling maintenance plans.
 
-1. If you have selected the **Auto create** check box, you can select a work order type for the auto-created work order in the **Work order type** field. If you have selected the **Auto create** check box, and you do not select a work order type in this field, the work order type selected in **Asset management \> Setup \> Asset management parameters \> Work orders** link \> **Preventive work order type** field is used.
+1. If you have selected the **Auto create** check box, you can select a work order type for the autocreated work order in the **Work order type** field. If you have selected the **Auto create** check box, and you don't select a work order type in this field, the work order type selected in **Asset management \> Setup \> Asset management parameters \> Work orders** link \> **Preventive work order type** field is used.
 
 1. Use the **Season from** and **Season to** fields to create a repeated time-based maintenance plan line within a 12-month period. *Example:* Equipment used for maintaining green areas requires service each spring within a predefined period. Insert the start date of the period to be repeated in the **Season from** field.
 
@@ -118,7 +103,7 @@ This section describes how to set up maintenance plan lines and provides example
 
 1. On the **Asset types** FastTab, select the asset types that should be related to the maintenance plan.
 
-1. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance plan. If required, you can make the setup more specific by selecting a related asset type, manufacturer, and model.
+1. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance plan. If necessary, you can make the setup more specific by selecting a related asset type, manufacturer, and model.
 
 1. On the **Functional location types** FastTab, select the functional location types that should be related to the maintenance plan.
 
@@ -133,26 +118,26 @@ This section describes how to set up maintenance plan lines and provides example
 |---|---|---|
 | **Interval type: Repeated from plan date** The count starts from the plan date used. When you schedule maintenance plans, maintenance schedule lines are created when the interval is reached. | The **Plan date** on the maintenance plan line is used. If no plan date is selected on the line, the **Plan date** for the maintenance plan is used. Example: If the number "3" is inserted in the **Period frequency** field, and "Year" is selected in the **Period** field, a new maintenance schedule line will be created once every 3 years. | The **Plan date** for the maintenance plan is used. If the counter has been replaced, the latest replacement date is used as the plan date. |
 | **Interval type: Repeated from start date** The count starts from the start date on the asset relation. The date is selected in the **All asset** details view \> **Asset maintenance plans** FastTab \> **Start date** field, or in the **All functional locations** details view \> **Maintenance plans** FastTab \> **Start date** field. When you schedule maintenance plans, a maintenance schedule line is created when the interval is reached. | The start date of the maintenance plan line on asset or functional location is used. If that field is blank, the **Plan date** for the maintenance plan is used. | The start date of the maintenance plan line on asset or functional location is used. If that field is blank, the **Plan date** for the maintenance plan is used. |
-| **Interval type: Repeated from last work order** The count starts from the actual end date and time of the latest work order that was completed on the asset with that specific maintenance job type / maintenance job type variant / trade combination. That date and time is shown in the **Actual end** field in the **All work order** details view. | The actual end date and time of the work order completed on the asset with that specific maintenance job type / maintenance job type variant / trade combination. If no completed work order is found, one of the dates used in the "Repeated from start date" interval type described above is used instead. | The actual end date and time of the work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. is used. If the end date and time was left blank on the work order, one of the dates used in the "Repeated from start date" interval type described above is used instead. |
-| **Interval type: Once from plan date** See description for the "Repeated from plan date" interval type above. Only difference is that this interval type is to be used only once. | See description for "Repeated from plan date" interval type above. This interval is typically used for a one-time maintenance or service job. | See description for "Repeated from plan date" interval type above. This interval is typically used for a one-time maintenance or service job. **Note 1:** This interval type is only relevant if the counter is replaced every time you carry out a maintenance or service job. If, for some reason, a counter has been replaced before the end of the planned interval, a new time is calculated for the job from the time of the counter replacement. **Note 2:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from plan date" interval type above. |
-| **Interval type: Once from start date** See description for the "Repeated from start date" interval type above. Only difference is that this interval type is to be used only once. | See description for "Repeated from start date" interval type above. This interval is typically used for a one-time maintenance or service job. | See description for "Repeated from start date" interval type above. This interval is typically used for a one-time maintenance or service job. **Note 1** above also applies to this interval type. **Note 3:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from start date" interval type above. |
+| **Interval type: Repeated from last work order** The count starts from the actual end date and time of the latest work order that was completed on the asset with that specific maintenance job type / maintenance job type variant / trade combination. That date and time are shown in the **Actual end** field in the **All work order** details view. | The actual end date and time of the work order completed on the asset with that specific maintenance job type / maintenance job type variant / trade combination. If no completed work order is found, one of the dates used in the "Repeated from start date" interval type is used instead. | The actual end date and time of the work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. is used. If the end date and time was left blank on the work order, one of the dates used in the "Repeated from start date" interval type is used instead. |
+| **Interval type: Once from plan date** See description for the "Repeated from plan date" interval type. Only difference is that this interval type is to be used only once. | See description for "Repeated from plan date" interval type. This interval is typically used for a one-time maintenance or service job. | See description for "Repeated from plan date" interval type above. This interval is typically used for a one-time maintenance or service job. **Note 1:** This interval type is only relevant if the counter is replaced every time you carry out a maintenance or service job. If, for some reason, a counter has been replaced before the end of the planned interval, a new time is calculated for the job from the time of the counter replacement. **Note 2:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from plan date" interval type. |
+| **Interval type: Once from start date** See description for the "Repeated from start date" interval type. Only difference is that this interval type is to be used only once. | See description for "Repeated from start date" interval type. This interval is typically used for a one-time maintenance or service job. | See description for "Repeated from start date" interval type. This interval is typically used for a one-time maintenance or service job. **Note 1** above also applies to this interval type. **Note 3:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from start date" interval type. |
 | **Interval type: Once reached above** This interval type only relates to counters and is used for indicating an upper limit set up on the maintenance plan line. Maintenance schedule entries will have the expected start date and time of the counter registration, meaning these entries will be created with an expected start date equal to or earlier than the system date. | Not applicable | The counter interval indicates an upper limit. If that limit is exceeded when you create a counter registration, a maintenance schedule line is created when you schedule preventive maintenance. |
 | **Interval type: Once reached below** This interval type only relates to counters and is used for indicating a lower limit set up on the maintenance plan line. Maintenance schedule entries will have the expected start date and time of the counter registration, meaning these entries will be created with an expected start date equal to or earlier than the system date. | Not applicable | The counter interval indicates a lower limit. If that limit is passed when you create a counter registration, a maintenance schedule line is created when you schedule preventive maintenance. |
-| **Interval type: Linked from start date** This interval type only creates a maintenance schedule line once. A maintenance plan can contain more maintenance plan lines using this interval type, and those lines are linked. Typically, you will create a maintenance plan that contains lines of only this interval type. Maintenance schedule lines are created by identifying the maintenance plan line that has the first expected start date and time. | See description for "Once from start date" above. Example: You create two lines in a maintenance plan for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. A maintenance schedule line is created for the limit that is reached first. For this line type you create the line with the 1-year period. | See description for "Once from start date" above. Example: You create two lines in a maintenance plan for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. A maintenance schedule line is created for the limit that is reached first. For this line type you create the line with the 25,000 km limit. Example creating two counter lines: You can also set up a maintenance plan with two linked, counter-based lines in which the first line has a limit of 10,000 items quantity produced, and the second line relates to the machine or work center requiring service after running 3,000 hours. |
-| **Interval type: Linked from last work order** This interval type creates new maintenance schedule lines after every completed work order. A maintenance plan can contain more lines using this interval type, and those lines are linked. Typically, you will create a maintenance plan that contains maintenance plan lines of only this interval type. Maintenance schedule lines are created by identifying the maintenance plan line that has the first expected start date and time. | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. |
+| **Interval type: Linked from start date** This interval type only creates a maintenance schedule line once. A maintenance plan can contain more maintenance plan lines using this interval type, and those lines are linked. Typically, you'll create a maintenance plan that contains lines of only this interval type. Maintenance schedule lines are created by identifying the maintenance plan line that has the first expected start date and time. | See description for "Once from start date" above. Example: You create two lines in a maintenance plan for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. A maintenance schedule line is created for the limit that is reached first. For this line type you create the line with the 1-year period. | See description for "Once from start date" above. Example: You create two lines in a maintenance plan for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. A maintenance schedule line is created for the limit that is reached first. For this line type, you create the line with the 25,000 km limit. Example creating two counter lines: You can also set up a maintenance plan with two linked, counter-based lines in which the first line has a limit of 10,000 items quantity produced, and the second line relates to the machine or work center requiring service after running 3,000 hours. |
+| **Interval type: Linked from last work order** This interval type creates new maintenance schedule lines after every completed work order. A maintenance plan can contain more lines using this interval type, and those lines are linked. Typically, you'll create a maintenance plan that contains maintenance plan lines of only this interval type. Maintenance schedule lines are created by identifying the maintenance plan line that has the first expected start date and time. | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. |
 | **Interval type: Repeated on aggregated value (Counter only)** When the maintenance plan is run, a scheduled maintenance line will be created each time that the accumulated value for an asset counter reaches the period frequency or an even multiple of the period frequency. (The period frequency is defined on the maintenance plan line.)<p>For more information about how to enable and use this functionality, see the [Counter-based maintenance enhancements](#counter-based-maintenance) section later in this article. | Not applicable | **Example:** An hour counter is set up for asset AK-101. An asset plan line is also set up for the asset. The interval type of this line is *Repeated on aggregated value (Counter only)*, and the period frequency is *1000*. When the maintenance plan is run, a scheduled maintenance line will be generated when the aggregated value for the counter exceeds 1,000 hours. Then, when the aggregated value for the counter exceeds 2,000 hours, another scheduled maintenance line will be generated, and so on for every additional 1,000 hours. |
 | **Interval type: Once on aggregated value (Counter only)** When the maintenance plan is run, a scheduled maintenance line will be created when the accumulated value for an asset counter reaches the period frequency that is defined on the maintenance plan line.<p>For more information about how to enable and use this functionality, see the [Counter-based maintenance enhancements](#counter-based-maintenance) section. | Not applicable | **Example:** An hour counter is set up for asset AK-101. An asset plan line is also set up for the asset. The interval type of this line is *Once on aggregated value (Counter only)*, and the period frequency is *1000*. When the maintenance plan is run, a scheduled maintenance line will be generated when the aggregated value for the counter exceeds 1,000 hours. |
 
 >[!NOTE]
 >When maintenance schedule lines are created for time-based maintenance plan lines, expected time is always at the start of the day. For counter-based maintenance plan lines, expected time can be anytime during the day.
 
-Below you will find examples of the setup of time-based and counter-based maintenance plan lines:
+Here are some examples of how to set up time-based and counter-based maintenance plan lines:
 
-**Example 1 - Time-based maintenance plan line:** A lubrication job may be set up in a fixed interval, occurring once a week. For that purpose, select "Repeated from plan date" in the **Interval type** field. See an example in the following illustration.
+**Example 1 - Time-based maintenance plan line:** A lubrication job is set up in a fixed interval, occurring once a week. For that purpose, select "Repeated from plan date" in the **Interval type** field. See an example in the following illustration.
 
 ![A service job set up in a fixed interval, occurring once a week.](media/02-preventive-maintenance.png "A service job set up in a fixed interval, occurring once a week")
 
-**Example 2 - Time-based maintenance plan line:** An inspection job may be set up to be carried out approximately once a week. For that purpose, select "Repeated from last work order" in the **Interval type** field. See an example in the following illustration.
+**Example 2 - Time-based maintenance plan line:** An inspection job is set up to be carried out approximately once a week. For that purpose, select "Repeated from last work order" in the **Interval type** field. See an example in the following illustration.
 
 ![An inspection job set up to be done approximately once a week.](media/03-preventive-maintenance.png "An inspection job set up to be done approximately once a week")
 
@@ -160,11 +145,11 @@ Below you will find examples of the setup of time-based and counter-based mainte
 
 ![An hour counter that periodically creates maintenance schedule lines.](media/04-preventive-maintenance.png "An hour counter that periodically creates maintenance schedule lines")
 
-**Example 4 - Counter-based maintenance plan line:** The following graphic illustration shows a decrease in counter value, measuring brake pad wear. A maintenance schedule line is created when a counter registration below 20 mm is created on the brake pad. The interval type for this counter-based line is "Once reached below" or "Once from last start date". This is an example of a *reactive* maintenance plan because the maintenance schedule line is not created until a measurement below 20 mm is registered.
+**Example 4 - Counter-based maintenance plan line:** The following graphic illustration shows a decrease in counter value, measuring brake pad wear. A maintenance schedule line is created when a counter registration below 20 mm is created on the brake pad. The interval type for this counter-based line is "Once reached below" or "Once from last start date". This is an example of a *reactive* maintenance plan because the maintenance schedule line isn't created until a measurement below 20 mm is registered.
 
 ![A decrease in counter value, measuring brake pad wear.](media/05-preventive-maintenance.png "A decrease in counter value, measuring brake pad wear")
 
-**Example 5 - Counter-based maintenance plan line:** The following graphic illustration shows a counter with a threshold of -18° Celsius. A maintenance schedule line is created when a counter registration above -18° Celsius is made. The interval type for this counter-based line is "Once reached above". This is an example of a *reactive* maintenance plan because the maintenance schedule line is not created until a measurement higher than -18° Celsius is registered.
+**Example 5 - Counter-based maintenance plan line:** The following graphic illustration shows a counter with a threshold of -18° Celsius. A maintenance schedule line is created when a counter registration above -18° Celsius is made. The interval type for this counter-based line is "Once reached above". This is an example of a *reactive* maintenance plan because the maintenance schedule line isn't created until a measurement higher than -18° Celsius is registered.
 
 ![A counter with a threshold of -18° Celsius.](media/06-preventive-maintenance.png "A counter with a threshold of -18° Celsius")
 
@@ -186,7 +171,7 @@ The following illustration shows an example of a "Truck service" maintenance pla
 
 1. In the **Maintenance plan** field, select the relevant maintenance plan.
 
-1. In the **Start date** field, select the date from which planning of preventive maintenance jobs can be done. 
+1. In the **Start date** field, select the date from which planning of preventive maintenance jobs can be done.
 
 1. Select **Save**. The **Active** field is automatically updated.
 
@@ -202,8 +187,8 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 
 - The option to automatically insert a counter that has a value of *0* (zero) when an asset is created. This option can be useful when you use predictive maintenance that is based on counters. When the *Counter-based maintenance enhancements* feature isn't used, counters that have a value of *0* (zero) must be manually inserted.
 - The ability to configure a counter so that it's automatically reset when a work order is completed. This functionality is useful when you want to schedule maintenance based on the aggregated value since the last work order was completed.
-- A new type of maintenance plan interval that is named *Repeated on aggregated value (Counter only)*. This type triggers maintenance each time that an aggregated counter reaches a multiple of a specific value. For example, maintenance can be triggered every 10,000 hours. For more information, see the [Interval types overview](#interval-types) section earlier in this article.
-- Another new type of maintenance plan interval that is named *Once on aggregated value (Counter only)*. This type triggers maintenance when an aggregated counter reaches a specific value, such as 8,000 hours. For more information, see the [Interval types overview](#interval-types) section.
+- A new type of maintenance plan interval that is named *Repeated on aggregated value (Counter only)*. This type triggers maintenance each time that an aggregated counter reaches a multiple of a specific value. For example, maintenance can be triggered every 10,000 hours. Learn more in the [Interval types overview](#interval-types) section earlier in this article.
+- Another new type of maintenance plan interval that is named *Once on aggregated value (Counter only)*. This type triggers maintenance when an aggregated counter reaches a specific value, such as 8,000 hours. Learn more in the [Interval types overview](#interval-types) section.
 
 ### Turn the Counter-based maintenance enhancements feature on or off
 
@@ -235,6 +220,5 @@ You can configure the system to automatically reset a counter each time that a r
 1. Go to **Asset management \> Setup \> Work orders \> Lifecycle states**.
 1. In the list pane, select the work order lifecycle state that the relevant counter should be reset at.
 1. On the **General** FastTab, set the **Reset counter** option to *Yes*.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

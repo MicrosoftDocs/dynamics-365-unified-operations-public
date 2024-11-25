@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Dual currency support for tax
-description: This article explains how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting
-author: EricWang
-ms.date: 12/11/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting, including an outline on sales tax conversions.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: article
+ms.date: 12/11/2020
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-01-14
+ms.search.form: TaxTable
 ms.dyn365.ops.version: 10.0.9
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Dual currency support for sales tax

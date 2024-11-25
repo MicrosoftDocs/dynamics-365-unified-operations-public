@@ -1,27 +1,18 @@
 ---
-# required metadata
 title: Global CFDI electronic invoices for Mexico
-description: This article gives an overview of the functionality for Global CFDI electronic invoices for Mexico.
+description: Learn about the functionality for Global CFDI electronic invoices for Mexico, including an outline on processing global CFDI documents.
 author: EvgenyPopovMBS
-ms.date: 06/29/2022
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-
-# optional metadata
-# ms.search.form:  
+ms.date: 06/29/2022
+ms.custom: 
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Mexico
 ms.search.industry: Retail
-ms.author: epopov
 ms.search.validFrom: 2019-06-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.2
-
 ---
 
 # Global CFDI electronic invoices for Mexico 

@@ -1,37 +1,25 @@
 ---
-# required metadata
-
 title: Initialize seed data in new Commerce environments
-description: This article describes the data that's created as part of the initialization process for Dynamics 365 Commerce.
+description: This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 08/02/2024
+ms.topic: how-to
 ms.search.form: RetailParameters
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
+ms.search.region: Global
+ms.author: anvenkat
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
 ---
 
 # Initialize seed data in new Commerce environments
 
 [!include [banner](includes/banner.md)]
 
-This article describes the data that's created as part of the initialization process for Dynamics 365 Commerce.
+This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 Commerce.
 
 After the Commerce solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the Commerce configuration to create the basic configuration data.
 

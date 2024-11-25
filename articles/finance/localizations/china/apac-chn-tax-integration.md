@@ -1,20 +1,17 @@
 ---
 title: Configure tax integration for China
-description: This article describes the process for configuring tax integration for China.
+description: Learn about the process for configuring tax integration for China, including a table that defines various prerequisites.
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 265264
-ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
 ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
+ms.dyn365.ops.version: Version 1611
+ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
 ---
 
 # Configure tax integration for China
@@ -60,7 +57,7 @@ To configure tax integration for China, follow these steps.
 
 The following illustration shows the tax integration process.
 
-[![Tax integration process.](../media/ic666469.gif)](/media/ic666469.gif)
+![Tax integration process.](../media/ic666469.gif)]
 
 ## Additional resources
 

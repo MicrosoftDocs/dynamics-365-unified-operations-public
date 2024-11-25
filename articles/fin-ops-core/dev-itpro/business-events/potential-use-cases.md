@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Use cases for business events
-description: This article lists use cases for business events.
+description: Learn about use cases for business events, including a table that outlines use cases and values for various business processes.
 author: Sunil-Garg
-ms.date: 10/14/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 10/14/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: Platform update 24
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 

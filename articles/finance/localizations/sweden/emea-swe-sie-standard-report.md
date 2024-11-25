@@ -1,15 +1,15 @@
 ---
 title: Export financial information for auditors in Sweden
-description: This article provides information about the SIE standard report for Sweden.
-author: AdamTrukawka
-ms.date: 04/05/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
+description: Learn about the SIE standard report for Sweden, including a step-by-step process for setting up a SRU code for each general ledger account.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.date: 03/20/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Sweden
-ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -27,7 +27,7 @@ You can export financial data using the formats specified by the Standard Import
   - Type 2 – Exports year-end balances and period balances. 
   - Type 3 – Exports dimension balances. 
   - Type 4I – Exports transactions. 
-  - Type 4E – Exports period balances and transactions. 
+  - Type 4E – Exports year-end balances and transactions. 
 8. Click **OK**. 
 
 

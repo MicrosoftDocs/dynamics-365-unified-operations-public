@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Move Lifecycle Services implementation projects from on-premises to the cloud
-description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
+description: Learn about how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: ttreen
-ms.date: 10/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: marwalke
-ms.search.validFrom: 2020-09-30 
+ms.topic: article
+ms.date: 10/28/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2020-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
+ms.service: dynamics-365-op
 ---
 
 # Move Lifecycle Services implementation projects from on-premises to the cloud
@@ -36,11 +27,11 @@ Previous migrations to the cloud used SQLPackage to create and restore a .bacpac
 
 ## Cloud subscription licenses
 
-If you don't already have cloud subscription licenses, work with your cloud service provider or volume license reseller to get and activate the required subscriptions on your Azure Active Directory (Azure AD) tenant. All subscriptions for users and add-on environments must be activated.
+If you don't already have cloud subscription licenses, work with your cloud service provider or volume license reseller to get and activate the required subscriptions on your Microsoft Entra tenant. All subscriptions for users and add-on environments must be activated.
 
 ## Configure Lifecycle Services cloud implementation project
 
-If no finance and operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
+If no finance and operations cloud-named user subscription licenses have previously been activated on the Microsoft Entra tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Microsoft Entra tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
 
 After your Lifecycle Services cloud implementation project has been created, you must fully configure it. As part of this configuration, you must complete the following steps (and others):
 
@@ -157,7 +148,7 @@ You should consider developing your updated interfaces in such a way that they c
 4. Optional: To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value. However, there might be situations where you want to increase the number of publishers, so that you can distribute fewer tables to each publisher. When it's used in conjunction with the manual snapshot start process, an increase in the number of publishers lets you run smaller initial snapshots. This approach can be useful if you have limited maintenance windows and must split the startup of the replication over several publishers.
+    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there might be situations where you want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.
     - **snapshotPostPublication** – This option will add a five-minute delay between starts of the automatic snapshot processes. This delay can help with loads on the source server. The toolkit also allows for manual snapshot starts. If you use that approach, you don't have to set this parameter. 
 
     > [!NOTE]
@@ -214,7 +205,7 @@ After the validation is successful, the application presents a set of menu optio
     >
     > You must use the SQL server (NetBIOS) name, and not the fully qualified domain name (FQDN). If you have a SQL cluster, you must use the server name of the active primary node.
     >
-    > If you have an issue connecting with the SQL Server (NetBIOS) name, ensure that the certificate used for SQL encryption has the server’s name registered as an DNS entry in the Subject Alternative Names property. The SQL encryption certificate should have NetBIOS as well as FQDN entries for all SQL server nodes, and the listener if a cluster.
+    > If you have an issue connecting with the SQL Server (NetBIOS) name, ensure that the certificate used for SQL encryption has the server's name registered as an DNS entry in the Subject Alternative Names property. The SQL encryption certificate should have NetBIOS as well as FQDN entries for all SQL server nodes, and the listener if a cluster.
     > 
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you've used compression in your Dynamics 365 database, more space will be required, because the snapshot is uncompressed. The paths should be on the local disk of the machine. (Avoid using shared paths.)
     > 
@@ -244,51 +235,55 @@ After the validation is successful, the application presents a set of menu optio
 
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. If any **special-table** entries were added, they will be added to additional special tables publications. 
-    
-    You will receive the following prompt: "Do you want the snapshot to start automatically? Continue by giving Y (Yes) for Automatic, else N (No) for manual (If No you have to manually start the snapshots from replication monitor)." If you select **Yes**, the snapshot replication will be started automatically. If you select **No**, you will have to open SQL Server Management Studio (SSMS), open the replication monitor, and manually start each snapshot. The advantage of manually starting snapshots is that you can control the load on the source SQL Server instance. This approach can be useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it lets you split up when you start the snapshot process. 
-
-    **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries that were added, these will be added to additional special tables publications. 
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
+    > Snapshots must be manually started in SQL Management Studio.
+    > 1. Open the replication monitor, and select your SQL Server instance.
+    > 2. On the **Agents** tab, select and hold (or right-click) the publisher that you want to start, and select **Start**.
+    >
+    > Start one snapshot at a time, and wait for the replication of that snapshot to be completed. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
+    >
+    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](../migration-upgrade/monitor-replication.md).
+    >
+    > You must manually start the publisher snapshots for steps 6 and 7.
+    >
+    > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
+
+    **Created publisher names:** AX\_PUB\_PkTable\_\[\*\]
+
+    > [!NOTE]
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job takes some time to complete. You can view the status of the replication by providing the **'rs'** option. For more information about the **'rs'** option, see the [Reporting section of the application](move-on-prem-to-cloud.md#reporting-section-of-the-application) section later in this article.
 
 6. **Replication: Setup Publication for Other Objects (functions)**
 
     This step creates a publication for other objects (functions) and replicates them in the target database. If you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
-    **Created publisher:** AX\_PUB\_OtherObjects
+    **Created publisher names:** AX\_PUB\_OtherObjects
 
-    > [!IMPORTANT]
+    > [!NOTE]
+    > The replication takes some time to be completed. You can view the replication status by providing the **'rs'** option. If there are no functions to replicate, the publication won't be created.
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-    > [!NOTE]
-    > The replication will take some time to be completed. You can view the replication status by providing the **'rs'** option.
-    >
-    > If there are no functions to replicate, the publication won't be created.
+7. **Cutover: Setup Publication for Non PK Tables**
 
-7. **Cutover: Set up publication for non-primary key tables**
-
-    This step creates two publications: 
-
-    - One publication is used to replicate non-primary key tables.
-    - One publication is used to replicate locked tables.
-
-    As in step 5, you will be prompted to specify whether you want the snapshot to be started automatically or manually. 
+    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
     
     > [!NOTE]
-    > If there are no locked tables, the publication won't be created.
+    > If there are no locked tables, then the publication won't be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
-    If the AX service acquires a schema lock during the creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during the creation of the cutover publication.
+    If AX Service acquires a schema lock during creation of the primary key publication, those tables are ignored from the publication. They are added to temporary tables and marked for replication during creation of the cutover publication.
 
     > [IMPORTANT]
-    > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
-
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
+   
     > [!NOTE]
-    > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in the **Data/IgnoreTables.xml** field. Then rerun the app, and use the **'dv'** option. To learn more about the **'dv'** option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
- 
+    > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
+    > 
+    > To learn more about the **'dv'** option, see the [Reporting section of the application](move-on-prem-to-cloud.md#reporting-section-of-the-application) section later in this article.
+
 8. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
@@ -354,7 +349,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Post-migration tasks
 
-1. If necessary, reimport all other users, and assign the appropriate security roles. Users must now be assigned to Azure AD accounts.
+1. If necessary, reimport all other users, and assign the appropriate security roles. Users must now be assigned to Microsoft Entra accounts.
 2. Direct printing in a cloud environment is done by using the Document routing agent (DRA). Set up sandbox DRAs as described in [Install the Document routing agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
 3. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For more information, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section in this article.
 4. Run a complete regression test cycle. This cycle should include testing of integrations.
@@ -365,7 +360,7 @@ You can use the following options to review the reports of the replication valid
 
 Follow all previous steps to migrate data, and then follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
-1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the LCS methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
+1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the Lifecycle Services methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
 2. Apply the final version of the software deployable package to production.
 3. Stop making data changes to the on-premises production environment.
 4. Repeat steps 3 through 6 in the [Do a trial migration and resolve issues](#prerequisites) section to copy the final/up-to-date on-premises production database to the cloud sandbox.
@@ -387,7 +382,7 @@ Follow all previous steps to migrate data, and then follow the instructions in [
 Document handling attachments for Finance + Operations (on-premises) environments are stored in a file share. However, the cloud version doesn't support this file share. You can use the following procedure to copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request that Dynamics Support Engineering copy the attachments from your sandbox to production.
 
 1. Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox instances of Application Object Server (AOS). For example, you can upload a zip file of the attachments and unpack it on the target. If you don't have remote desktop access (for example, for a self-service environment), you can use a different virtual machine (VM) instead. For reasonable conversion performance, this VM should be in the same Azure datacenter as the target sandbox. If you aren't using the AOS instance, you must add the VM to an allow list for access to the sandbox's SQL database instance.
-2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your finance and operations transactional database, by using the environment details in Lifecycle Services.
+2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature (SAS) token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your finance and operations transactional database, by using the environment details in Lifecycle Services.
 3. Run the following Windows PowerShell script on the sandbox AOS instance or other VM to upload the document handling files to the storage account and create the required metadata for each file.
 
     ```powershell

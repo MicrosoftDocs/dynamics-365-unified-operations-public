@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Reduce balance depreciation after a split
-description: This article describes the method that is used in Fixed assets to calculate depreciation after an asset is split by using the reduce balance method.
+description: Learn about the method that is used in Fixed assets to calculate depreciation after an asset is split by using the reduce balance method.
 author: moaamer
-ms.date: 11/17/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 11/17/2020
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-11-17
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Reduce balance depreciation after a split

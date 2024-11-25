@@ -1,40 +1,23 @@
 ---
-# required metadata
-
 title: Number sequences overview
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.
 author: SunilGarg
-ms.date: 05/03/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: overview
+ms.date: 05/03/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 ms.dyn365.ops.version: AX 7.0.0
-contributors: 
-- saurabh-kuchhal
-
+ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ---
 
 # Number sequences overview
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> The 'Enable continuous number sequence performance improvements' feature provides enterprise readiness with continuous number sequence, which was challenging in finance and operations apps. The feature is in Public Preview in 10.0.34 version, and GA in 10.0.36 version.
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*.
 

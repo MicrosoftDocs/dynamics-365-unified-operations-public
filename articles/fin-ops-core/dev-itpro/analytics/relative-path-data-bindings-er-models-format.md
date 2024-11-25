@@ -1,18 +1,16 @@
 ---
 title: Use a relative path in data bindings of ER models and formats
-description: The Electronic reporting tool lets you define electronic format structures and then describe how those structures should be filled.
+description: Learn about how the Electronic reporting tool lets you define electronic format structures and then describe how those structures should be filled.
 author: kfend
-ms.date: 07/03/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience:  Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: global
 ms.author: filatovm
+ms.topic: article
+ms.date: 07/03/2019
+ms.reviewer: johnmichalak
+audience:  Developer, IT Pro
+ms.search.region: global
 ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ms.search.form: ERSolutionTable, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
+ms.dyn365.ops.version: 
 ---
 
 # Use a relative path in data bindings of ER models and formats

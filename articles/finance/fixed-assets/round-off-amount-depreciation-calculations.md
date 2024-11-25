@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Round-off amount for depreciation calculations
-description: This article discusses the Round-off depreciation field that is found on the Book setup pages.
+description: Learn about the Round-off depreciation field that is found on the Book setup pages, including an examples that shows dereciation amounts for rounding methods.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetBookTable, AssetDepBookTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetBookTable, AssetDepBookTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 ---
 
 # Round-off amount for depreciation calculations

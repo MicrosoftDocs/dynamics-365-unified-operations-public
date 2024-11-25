@@ -1,18 +1,17 @@
 ---
 title: CHANGETIMEZONE ER function
-description: This article provides information about how the CHANGETIMEZONE Electronic reporting (ER) function is used.
+description: Learn about how the CHANGETIMEZONE Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: kfend
-ms.date: 09/09/2021
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 09/09/2021
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-09-01
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 10.0.23
 ms.assetid: 
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # CHANGETIMEZONE ER function

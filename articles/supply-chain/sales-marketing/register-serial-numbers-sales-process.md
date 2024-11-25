@@ -1,31 +1,13 @@
 ---
-# required metadata
-
 title: Working with serialized items
-description: This article explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
-author: Henrikan
-ms.date: 10/31/2019
+description: Learn how you can register serial numbers on packing slips or invoices during the sales process, including answers to questions about serial numbers.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/31/2019
 ms.reviewer: kamaybac
-
-
-# ms.tgt_pltfrm: 
+ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: henrikan
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Working with serialized items

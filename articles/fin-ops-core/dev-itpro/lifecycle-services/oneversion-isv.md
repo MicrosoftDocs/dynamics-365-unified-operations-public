@@ -1,15 +1,13 @@
 ---
 title: Delivering ISV solutions using One Version
-description: The article provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
+description: Learn about how independent software vendors (ISVs) can use One Version to deliver their solutions, including overviews of servicing customers and compatibility.
 author: FrankDahl
-ms.date: 05/03/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 05/03/2022
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-04-12
 ms.dyn365.ops.version: Platform update 24
 ---
@@ -26,7 +24,7 @@ The process of servicing current versions is also more seamless and safer than i
 
 Extensibility allows for deployment of side-by-side solutions that give customers more choices about how they configure their solutions.
 
-In the One Version model, customer user acceptance testing (UAT) environments and production environments are updated every month. It's critical that updates not cause issues. However, Microsoft acknowledges that both technical issues and functional issues may arise when environments are updated.
+In the One Version model, customer user acceptance testing (UAT) environments and production environments are updated several times a year. It's critical that updates not cause issues. However, Microsoft acknowledges that both technical issues and functional issues may arise when environments are updated.
 
 + Technical issues include breaking changes in application programming interfaces (APIs) that customizations in your solutions use.
 + Functional issues that customers experience can be caused by the untimely introduction of new features. Microsoft will put any new functionality that might affect existing processes under feature management. In this way, customers can control when new functionality is adopted. Therefore, they have time to validate, document, and train their users about the new features.

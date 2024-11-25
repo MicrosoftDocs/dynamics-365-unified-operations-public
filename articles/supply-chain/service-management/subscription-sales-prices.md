@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Subscription sales prices  
 description: When you create a subscription, the sales price is derived from the sales price setup that was created in the Sales price (subscription) form.
-author: sorenva
-ms.date: 05/01/2018
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASalespriceSubscription
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMASalespriceSubscription
 ---
 
 # Subscription sales prices
@@ -222,7 +206,7 @@ Now you create subscription fees for both subscriptions in the subscription grou
 
 2.  In the **Subscription groups** form, click **Function** \> **Create subscription fee**.
 
-3.  In the **Create subscription fee** form, enter the appropriate information. For more information, see [Create subscription fee transactions](create-subscription-fee-transactions.md).
+3.  In the **Create subscription fee** form, enter the appropriate information. Learn more in [Create subscription fee transactions](create-subscription-fee-transactions.md).
 
 Subscription fees that have a sales price of EUR 500 are created for both subscriptions, as shown in the following table.
 
@@ -370,7 +354,7 @@ You repeat the procedure described above to create subscription fees for both su
 
 In the first transaction for subscription 00020\_135, the sales price of EUR 550 derives from the subscription sales price that is set up for the combination of the specific project and category. In the second transaction for subscription 00021\_135, the sales price of EUR 500 is used as the project subscription sales price because there is no price set up for the combination of project 9030 and category SubCat2.
 
-## See also
+## Related information
 
 [Update and index subscription sales prices](update-and-index-subscription-sales-prices.md)
 

@@ -1,15 +1,13 @@
 ---
 title: GS1 bar codes
-description: This article describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
+description: Learn how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse with an outline on the GS1 bar code format.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
 ms.topic: how-to
 ms.date: 05/26/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
 ---
 
 # GS1 bar codes
@@ -94,11 +92,11 @@ If you use these identifiers, compatibility with non-GS1 bar codes requires that
 
 After the data has been parsed from the bar code, it will be fed into the mobile device flow controls. There are two methods that will be processed in turn:
 
-- **Single field scanning** – This method fills in only the field that the bar code was scanned into. For example, if you scan the bar code `<FNC1>`**`01`**`09521101530001`**`17`**`210119`**`10`**`AB-123` while the cursor is in the **Item** field, the GTIN `09521101530001` from the bar code will be entered in that field. If you scan the same bar code while the cursor is in the **Batch ID** field, the batch number `AB-123` from the bar code will be entered. This mode works for all fields in all flows and requires only that the GS1 generic setup be configured. If a bar code contains multiple elements, it must still be scanned multiple times, because only one piece of the bar code at a time will be entered into the mobile device flow. This behavior is controlled by the GS1 generic setup, as described in the [Establish the generic GS1 setup](#generic-gs1-setup) section.
-- **Multiple field scanning** – This method fills in multiple fields when one bar code is scanned, by pushing additional data into the mobile device flow state. For example, the policy is configured to push application identifier 01 into the `ItemId` control and application identifier 10 into the `InventBatchId` field. In this case, if you scan the bar code `<FNC1>`**`01`**`09521101530001`**`17`**`210119`**`10`**`AB-123`, data for both variables will be pushed at the same time. Therefore, the system won't prompt you for the item and/or batch number in the flow. This behavior is controlled by GS1 policies that are linked to menu items, as described in the [Set up GS1 policies to be to mobile device menu items](#policies-for-menus) section.
+- **Single field scanning** – This method fills in only the field that the bar code was scanned into. For example, if you scan the bar code `<FNC1>`**`01`**`09521101530001`**`17`**`210119`**`10`**`AB-123` while the cursor is in the **Item** field, the GTIN `09521101530001` from the bar code will be entered in that field. If you scan the same bar code while the cursor is in the **Batch ID** field, the batch number `AB-123` from the bar code will be entered. This mode works for all fields in all flows and requires only that the generic bar code data setup be configured. If a bar code contains multiple elements, it must still be scanned multiple times, because only one piece of the bar code at a time will be entered into the mobile device flow. This behavior is controlled by the generic bar code data setup, as described in the [Establish the generic bar code data setup](#generic-gs1-setup) section.
+- **Multiple field scanning** – This method fills in multiple fields when one bar code is scanned, by pushing additional data into the mobile device flow state. For example, the policy is configured to push application identifier 01 into the `ItemId` control and application identifier 10 into the `InventBatchId` field. In this case, if you scan the bar code `<FNC1>`**`01`**`09521101530001`**`17`**`210119`**`10`**`AB-123`, data for both variables will be pushed at the same time. Therefore, the system won't prompt you for the item and/or batch number in the flow. This behavior is controlled by bar code data policies that are linked to menu items, as described in the [Set up bar code data policies for mobile device menu items](#policies-for-menus) section.
 
 > [!WARNING]
-> The default GS1 policies have been tested to work without unexpected behavior. However, customization of GS1 policies that are linked to menu items can cause unexpected behavior, because the flow might not expect some data to be available at a particular time.
+> The default bar code data policies have been tested to work without unexpected behavior. However, customization of bar code data policies that are linked to menu items can cause unexpected behavior, because the flow might not expect some data to be available at a particular time.
 
 ## Turn on GS1 features for your system
 
@@ -132,7 +130,7 @@ To set up global GS1 options, follow these steps.
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.
 
-## GS1 application identifiers
+## Bar code data application identifiers
 
 GS1 formats not only encode the data but also let you use a predefined list of application identifiers to define the meaning of the data. Logistics managers must set up the required list of application identifiers and associate each of them with the appropriate mobile device menu items. The identifiers can then be used across warehouses as a global setting for moving and packing purposes. Therefore, all shipping labels will take a unified form.
 
@@ -148,7 +146,7 @@ To get started quickly, you can load a list of common international application 
 
 To load the standard application identifiers, follow these steps.
 
-1. Go to **Warehouse management \> Setup \> GS1 \> GS1 application identifiers**.
+1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data application identifiers**.
 1. On the Action Pane, select **Create default setup**.
 
 > [!WARNING]
@@ -160,7 +158,7 @@ If some or all application identifiers that your company uses differ from the st
 
 To set up and customize your GS1 own application identifiers, follow these steps.
 
-1. Go to **Warehouse management \> Setup \> GS1 \> GS1 application identifiers**.
+1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data application identifiers**.
 1. Follow one of these steps:
 
     - To create a new identifier: On the Action Pane, select **New**.
@@ -181,28 +179,28 @@ To set up and customize your GS1 own application identifiers, follow these steps
 > [!NOTE]
 > The **Group separator** value that is specified on the **Warehouse management parameters** page is optional if a value that is followed by an application identifier has a fixed length.
 
-## <a name="generic-gs1-setup"></a>Establish the generic GS1 setup
+## <a name="generic-gs1-setup"></a>Establish the generic bar code data setup
 
-The generic GS1 setup establishes a collection of common mappings. These mappings match each relevant input field in the mobile app to the application identifier that controls how values from scanned bar codes should be interpreted and stored in that field. By default, these settings apply to all scans for all mobile device menu items. However, they can be overwritten for one or more specific fields by a GS1 policy that is assigned to a specific menu item.
+The generic bar code data setup establishes a collection of common mappings. These mappings match each relevant input field in the mobile app to the application identifier that controls how values from scanned bar codes should be interpreted and stored in that field. By default, these settings apply to all scans for all mobile device menu items. However, they can be overwritten for one or more specific fields by a bar code data policy that is assigned to a specific menu item.
 
-The generic GS1 setup allows only one value to be scanned at a time. Therefore, if you want to load multiple field values from a single scan, you must set up a GS1 policy for the relevant menu items.
+The generic bar code data setup allows only one value to be scanned at a time. Therefore, if you want to load multiple field values from a single scan, you must set up a bar code data policy for the relevant menu items.
 
-For more information about GS1 policies, see the next section.
+For more information about bar code data policies, see the next section.
 
-### Load the standard generic GS1 setup
+### Load the standard generic bar code data setup
 
-The **GS1 generic setup** page lets you load a standard set of mappings between mobile device fields and standard application identifiers that are created by the default setup.
+The **Barcode data generic setup** page lets you load a standard set of mappings between mobile device fields and standard application identifiers that are created by the default setup.
 
-To establish the generic GS1 setup, go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each field that is typically used by mobile device menu items.
+To establish the generic bar code data setup, go to **Warehouse management \> Setup \> GS1 \> Barcode data generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each field that is typically used by mobile device menu items.
 
 > [!WARNING]
-> If any generic GS1 setup already exists, the **Create default setup** command completely deletes it and loads the standard setup.
+> If any generic bar code data setup already exists, the **Create default setup** command completely deletes it and loads the standard setup.
 
-### Customize the standard generic GS1 setup
+### Customize the standard generic bar code data setup
 
-To customize the generic GS1 setup, follow these steps.
+To customize the generic bar code data setup, follow these steps.
 
-1. Go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**.
+1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data generic setup**.
 1. Follow one of these steps:
 
     - To create a new mapping: On the Action Pane, select **New**.
@@ -211,34 +209,34 @@ To customize the generic GS1 setup, follow these steps.
 1. Set the following fields for the new or selected mapping:
 
     - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
-    - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
+    - **Application identifier** – Select the applicable application identifier, as defined on the **Barcode data application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
 
-## <a name="policies-for-menus"></a>Set up GS1 policies to be to mobile device menu items
+## <a name="policies-for-menus"></a>Set up bar code data policies for mobile device menu items
 
-The purpose of the GS1 standard is to enable workers to load several values when they scan a single bar code one time. To achieve this purpose, logistics managers must set up GS1 policies that tell the system how to interpret multi-value bar codes. Later, you can assign policies to mobile device menu items to control how a bar code will be interpreted when workers scan it while they're using a specific menu item.
+The purpose of the GS1 standard is to enable workers to load several values when they scan a single bar code one time. To achieve this purpose, logistics managers must set up bar code data policies that tell the system how to interpret multi-value bar codes. Later, you can assign policies to mobile device menu items to control how a bar code will be interpreted when workers scan it while they're using a specific menu item.
 
-If no GS1 policy is assigned to a menu item, the system can capture only a single value. This value is applied to the mobile app input that is selected when the worker takes the scan, as specified by the generic GS1 setup. If a GS1 policy is assigned to the menu item, the system still uses the generic GS1 setup to map the first bar code value to the selected field. However, it can then capture additional field values, as specified by the applicable policy.
+If no bar code data policy is assigned to a menu item, the system can capture only a single value. This value is applied to the mobile app input that is selected when the worker takes the scan, as specified by the generic bar code data setup. If a bar code data policy is assigned to the menu item, the system still uses the generic bar code data setup to map the first bar code value to the selected field. However, it can then capture additional field values, as specified by the applicable policy.
 
-### Load the standard specific GS1 policies
+### Load the standard specific bar code data policies
 
-To get started quickly, you can load a set of GS1 policies. You can then extend or edit the policies later, as you require.
+To get started quickly, you can load a set of standard bar code data policies. You can then extend or edit the policies later, as you require.
 
 To load the standard application identifiers, follow these steps.
 
-1. Go to **Warehouse management \> Setup \> GS1 \> GS1 policy**.
+1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data policy**.
 1. On the Action Pane, select **Create default setup**.
 
 > [!WARNING]
 > The **Create default setup** command deletes all currently defined policies and replaces them with the standard set of policies. However, after the default setup is loaded, you can customize the policies as you require.
 
-### Set up custom specific GS1 policies
+### Set up custom specific bar code data policies
 
 > [!WARNING]
-> Some GS1 policies might not work with every mobile flow that you use. When you configure custom GS1 policies, you must test the mobile device flow by using different pieces of information that are scanned at different points in the flow. In this way, you can determine whether the flow behaves as you expect.
+> Some bar code data policies might not work with every mobile flow that you use. When you configure custom bar code data policies, you must test the mobile device flow by using different pieces of information that are scanned at different points in the flow. In this way, you can determine whether the flow behaves as you expect.
 
-To set up and customize your GS1 policies, follow these steps.
+To set up and customize your bar code data policies, follow these steps.
 
-1. Go to **Warehouse management \> Setup \> GS1 \> GS1 policy**.
+1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data policy**.
 1. Follow one of these steps:
 
     - To create a new policy: On the Action Pane, select **New**.
@@ -251,27 +249,27 @@ To set up and customize your GS1 policies, follow these steps.
     - **Field value capturing method** – Select one of the following values to specify how the individual bar code values should be handled as part of the mobile device flow:
 
         - *Process immediately* – The application identifier values will immediately be passed to the next mobile device step, even though the recorded values aren't required for capture as part of a later mobile device step. Depending on the recorded values, this value can cause unexpected mobile device flow processing.
-        - *Save as default* – The application identifier values will be stored throughout the whole mobile device menu item flow and will be used only in mobile device steps that require the defined fields. Therefore, the exact mobile device step field control names must be specified as part of the GS1 policy setup, to link the application identifier values from the bar codes to the Warehouse Management mobile app fields. For more information about how to find the correct field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
+        - *Save as default* – The application identifier values will be stored throughout the whole mobile device menu item flow and will be used only in mobile device steps that require the defined fields. Therefore, the exact mobile device step field control names must be specified as part of the bar code data policy setup, to link the application identifier values from the bar codes to the Warehouse Management mobile app fields. For more information about how to find the correct field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
-    - **Auto submit** – This option is available only when the **Field value capturing method** field is set to *Save as default*. Set it to *Yes* to automatically submit the mobile device step if all the fields are set. 
+    - **Auto submit** – This option is available only when the **Field value capturing method** field is set to *Save as default*. Set it to *Yes* to automatically submit the mobile device step if all the fields are set.
 
 1. On the FastTab below the header, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
 
     - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation. For more information about how to look up field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
-    - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
-    - **Sorting** – This column is available only when the **Field value capturing method** field is set to *Process immediately*. Every multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows should be processed in. The row that has the lowest sorting value will be processed first.
+    - **Application identifier** – Select the applicable application identifier, as defined on the **Barcode data application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
+    - **Sorting** – This column is available only when the **Field value capturing method** field is set to *Process immediately*. Every multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable bar code data policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows should be processed in. The row that has the lowest sorting value will be processed first.
     - **Allow overwriting** – This column is available only when the **Field value capturing method** field is set to *Save as default*. Select the checkbox to save the application identifier value that comes from the bar code, even though a value already exists as part of the mobile device step. Only field values that are enabled for editing will be overwritten.
 
 > [!NOTE]
 > For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
 
-## Assign GS1 policies to mobile device menu items
+## Assign bar code data policies to mobile device menu items
 
-By default, all mobile device menu items provide input fields where workers can scan a single value, according to the generic GS1 setup. If you want workers to be able to scan more than one field value in a single scan for any mobile device menu item, you must assign a GS1 policy by following these steps.
+By default, all mobile device menu items provide input fields where workers can scan a single value, according to the generic bar code data setup. If you want workers to be able to scan more than one field value in a single scan for any mobile device menu item, you must assign a bar code data policy by following these steps.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Create or open a menu item.
-1. On the **General** FastTab, set the **GS1 policy** field to the policy that applies to the menu item.
+1. On the **General** FastTab, set the **Barcode data policy** field to the policy that applies to the menu item.
 
 ## GS1 setup example
 
@@ -282,7 +280,7 @@ This example applies to a system where the GS1 options are set up in the followi
     - **FNC1 character:** *\]C1*
     - **Group separator:** *\~*
 
-- On the **GS1 application identifiers** page, the following application identifiers are relevant to this example.
+- On the **Barcode data application identifiers** page, the following application identifiers are relevant to this example.
 
     | Application identifier | Description | Fixed length | Length | Type | Decimal |
     |---|---|---|---|---|---|
@@ -291,13 +289,13 @@ This example applies to a system where the GS1 options are set up in the followi
     | 17 | Expiry date | Selected | 6 | Date | Cleared |
     | 30 | Receiving quantity | Cleared | 8 | Numeric | Cleared |
 
-- On the **GS1 generic setup** page, the following settings for the generic GS1 policy are relevant to this example.
+- On the **Barcode data generic setup** page, the following settings for the generic bar code data policy are relevant to this example.
 
     | Field | Application identifier | Description |
     |---|---|---|
     | ItemId | 01 | GTIN |
 
-- On the **GS1 policy** page, there's policy where the **Policy name** field is set to *Purchase receiving*. This policy includes the following lines.
+- On the **Barcode data policy** page, there's policy where the **Policy name** field is set to *Purchase receiving*. This policy includes the following lines.
 
     | Field | Application identifier | Description | Sorting |
     |---|---|---|---|
@@ -305,7 +303,7 @@ This example applies to a system where the GS1 options are set up in the followi
     | InventBatchId | 10 | Batch number | 0 |
     | Qty | 30 | Receiving quantity | 0 |
 
-- On the **Mobile device menu items** page, there's a menu item that is named *Purchase receiving*. Its **GS1 policy** field is set to *Purchase receiving*.
+- On the **Mobile device menu items** page, there's a menu item that is named *Purchase receiving*. Its **Barcode data policy** field is set to *Purchase receiving*.
 
 After goods for a purchase order arrive at the warehouse, the worker follows these steps.
 
@@ -317,8 +315,8 @@ Because of the settings that are established for this example, the system parses
 
 | Field key | Application ID | Value | Note |
 |---|---|---|---|
-| ItemId | 01 | 00000012345678 | Because the worker scanned to the **Item** field, the first value in the bar code is mapped to that field. The mapping is taken from the GS1 generic setup. |
-| Qty | 30 | 30 | Because several field values are being captured in a single scan, this mapping and all remaining mappings are taken from the GS1 policy that is assigned to the **Purchase receiving** menu item. This value is the quantity that was received. |
+| ItemId | 01 | 00000012345678 | Because the worker scanned to the **Item** field, the first value in the bar code is mapped to that field. The mapping is taken from the generic bar code data setup. |
+| Qty | 30 | 30 | Because several field values are being captured in a single scan, this mapping and all remaining mappings are taken from the bar code data policy that is assigned to the **Purchase receiving** menu item. This value is the quantity that was received. |
 | InventBatchId | 10 | b1 | This value is the batch ID. |
 | ExpDate | 17 | 220215 | The date format is YYMMDD. Therefore, the expiry date is February 15, 2022. |
 
@@ -327,8 +325,8 @@ The receipt is then registered, and the relevant database values are entered aft
 > [!TIP]
 > If GS1 bar codes that contain multiple values don't work as part of a Warehouse management mobile app flow, check the following settings:
 >
-> - On the **GS1 generic setup** and **GS1 application identifiers** pages, make sure that the settings are aligned with the bar codes that you're using and with the GS1 policy that's assigned on the **Mobile device menu item** page.
-> - On the **GS1 policy** page, select the policy that you're having trouble with, and check the following settings:
+> - On the **Barcode data generic setup** and **Barcode data application identifiers** pages, make sure that the settings are aligned with the bar codes that you're using and with the bar code data policy that's assigned on the **Mobile device menu item** page.
+> - On the **Barcode data policy** page, select the policy that you're having trouble with, and check the following settings:
 >
 >    - Set the **Field value capturing method** field to *Save as default*.
 >    - In the grid, make sure that all the field names are aligned with the step ID input control names for the actual mobile device. For more information about how to look up field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md). For some typical examples, see the table after this list.

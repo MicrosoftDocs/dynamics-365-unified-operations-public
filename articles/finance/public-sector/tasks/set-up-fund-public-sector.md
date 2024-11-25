@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up a fund in the public sector
-description: Fund types must be created before you set up funds. 
+description: Learn about setting up funds in the public sector, including a step-by-step process that uses the PSUS demo data company in the public sector partition.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerFund   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc    
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerFund
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up a fund in the public sector
 
 [!include [banner](../../includes/banner.md)]

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Establish customer method of payment
-description: This article explains how to create a method of payment for customer payments. 
-author: ShivamPandey-msft
-ms.date: 03/23/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustPaymMode, BankAccountTableLookUp   
+description: Learn about how to create a method of payment for customer payments, including a step-by-step process that outlines creating payment methods. 
+author: JodiChristiansen
+ms.author: jchrist
+ms.topic: how-to
+ms.date: 05/23/2024
+ms.custom:
+ms.reviewer: twheeloc
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustPaymMode, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Establish customer method of payment
 
 [!include [banner](../../includes/banner.md)]

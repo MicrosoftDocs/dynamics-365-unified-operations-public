@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Assign a product lifecycle state to a released product master
-description: This procedure shows how to assign a product lifecycle state to a released product master and its variants. 
-author: t-benebo 
+description: Learn how to assign a product lifecycle state to a released product master and its variants, including a process for finding released produce masters. 
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 12/05/2017
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:  
+ms.reviewer: kamaybac  
+ms.search.form: 
 ---
+
 # Assign a product lifecycle state to a released product master
 
 [!include [banner](../../includes/banner.md)]

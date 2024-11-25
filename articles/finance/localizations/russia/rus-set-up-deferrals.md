@@ -1,18 +1,16 @@
 ---
 title: Set up deferrals (Russia)
-description: This article explains how to set up deferrals.
-author: AdamTrukawka
-ms.date: 06/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up deferrals, including outlines and step-by-step processes for write-off methods, value models, and posting profiles.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.1
-ms.search.form: 
 ---
 
 # Set up deferrals (Russia)

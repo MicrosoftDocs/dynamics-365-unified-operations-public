@@ -1,31 +1,15 @@
 ---
-# required metadata
-
 title: Asset attribute overview
-description: This article provides an overview of asset attributes in Asset Management.
-author: johanhoffmann
-ms.date: 06/26/2019
+description: Access an overview of asset attributes in Asset Management, including a step-by-step process for navigating the Asset attribute overview page.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetObjectAttributeOverview
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/26/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: ["2214"]
 ms.collection: get-started
+ms.search.form: EntAssetObjectAttributeOverview
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Asset attribute overview

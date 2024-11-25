@@ -1,15 +1,13 @@
 ---
 title: VAT declaration (Finland)
-description: This article describes how to set up and generate a value-added tax (VAT) declaration for Finland.
+description: Learn how to set up and generate a value-added tax (VAT) declaration for Finland, including a table that defines various field IDs.
 author: AdamTrukawka
-ms.date: 03/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Finland
 ms.author: atrukawk
+ms.topic: article
+ms.date: 11/03/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Finland
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -100,6 +98,16 @@ Follow these steps to define which sales tax codes in your Finance generate whic
 6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
 7. Select the **VAT declaration Excel (FI)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration TXT (FI)**.
 8. In the **State** field, select **Completed**.
+
+In Finland, for ER formats for the VAT declaration that are based on **Tax declaration model mapping**, it's crucial that the tax directions of the tax transactions are posted in the relevant reporting period.
+
+When positive and negative lines are posted in the same document in the general journal, if the document is a customer invoice, the **Sales tax payable** direction is used by default, and both transactions contribute in the same box (for example, box \[303\]). If the negative tax transaction must be reported in box \[307\], the following settings are recommended:
+
+- In the settings of the main account that's used on the negative line, define the **Legal entity overrides** rule for sales tax so that it applies the **Sales tax receivable** tax direction.
+- On the **General** tab of the general journal for the negative line, enable the **Sales tax direction** parameter.
+- Validate that, for this line, the sales tax transaction has the **Sales tax receivable** tax direction.
+
+When the journal line is posted with the **Sales tax receivable** tax direction, if the relevant tax code and **Purchase** transaction classifier are set up for box \[307\] in the application-specific parameters of the format, the amount from the negative line is reported in box \[307\].
 
 ### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
 

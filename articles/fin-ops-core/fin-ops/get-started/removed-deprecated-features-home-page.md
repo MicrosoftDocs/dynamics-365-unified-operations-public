@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Removed or deprecated features home page
-description: This article provides a list of help topics about removed or deprecated features in finance and operations apps.
+description: Learn about a list of help topics about removed or deprecated features in finance and operations apps, including links to various resources.
 author: sericks007
-ms.date: 05/27/2021
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sericks
+ms.topic: article
+ms.date: 05/27/2021
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 

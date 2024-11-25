@@ -6,9 +6,6 @@ description: This article explains how you can use workflows to manage employee 
 author: twheeloc
 ms.date: 07/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: WorkflowParametersAdmin, WorkflowtableListPageRnr, WorkflowStatus
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,8 +24,6 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Use workflows to manage employee information
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

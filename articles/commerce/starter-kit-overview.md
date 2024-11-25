@@ -2,18 +2,15 @@
 title: Module library overview
 description: This article presents an overview of the Microsoft Dynamics 365 Commerce module library.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/25/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
-ms.assetid: 
-ms.search.industry: 
+ms.custom: 
+  - bap-template
 ---
 
 # Module library overview

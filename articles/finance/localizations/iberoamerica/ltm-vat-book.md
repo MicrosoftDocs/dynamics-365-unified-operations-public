@@ -1,12 +1,12 @@
 ---
 title: VAT book printing configuration
-description: The article describes how to set up and use value-added tax (VAT) books.
-author: Cpicon85 
-ms.date: 09/20/2023 
-ms.topic: conceptual
-ms.reviewer: kfend
+description: Learn how to set up and use value-added tax (VAT) books, including an outline on configuring application-specific parameters.
+author: Cpicon85
 ms.author: v-cpicon
+ms.topic: conceptual
+ms.date: 09/20/2023 
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # VAT book printing configuration

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Modeling a lean organization
-description: The article provides information about the key concepts in modeling a lean organization. 
+description: Learn about the key concepts in modeling a lean organization, including an outline on production flows in lean manufacturing. 
 author: johanhoffmann
-ms.date: 09/24/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 09/24/2018
+ms.reviewer: kamaybac
+ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
+ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ---
 
 # Modeling a lean organization

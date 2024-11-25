@@ -1,26 +1,14 @@
 ---
-# required metadata
-
 title: Local agent pre-deployment and post-deployment scripts
-description: This article provides information about local agent pre-deployment and post-deployment scripts.
+description: Learn about local agent pre-deployment and post-deployment scripts, including overviews on customizations and logging.
 author: faix
-ms.date: 08/07/2019
-ms.topic: article
-ms.prod: dynamics-365
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2019-07-31 
 ms.dyn365.ops.version: Platform update 28 
 search.app:

@@ -1,18 +1,16 @@
 ---
 title: Demo data overview
-description: This article provides an overview of the demo data.
+description: Learn about demo data via an overview, including a table that defines various legal entities and an overview of embedded analytics.
 author: sericks007
-ms.date: 09/20/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: overview
+ms.date: 09/20/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ---
 
@@ -107,7 +105,7 @@ In the USMF demo company, there are two purchase orders for INGA to approve. You
 
 The batch transfer rules for subledger journal account entries have been changed to **Scheduled batch** to reflect a best practice. The batches are configured to run every 10 minutes. It is important to understand that accounting entries for all source documents will not be reflected in General ledger until the batch process has run. If you have requirements to see the immediate effect in General ledger, set the **Transfer mode** to **Synchronous** on the **Batch transfer rules** page within **General ledger** parameters. While Synchronous works well for product demos and environments with low transaction volumes, it can cause performance issues in larger transaction volume environments.
 
-[![General ledger paramters.](../../fin-ops/get-started/media/GL-parameters.PNG)](/media/GL-parameters.PNG)
+[![General ledger paramters.](../../fin-ops/get-started/media/GL-parameters.PNG)]
 
 ## Cost accounting
 
@@ -115,7 +113,7 @@ Three Cost accounting ledgers are created in demo data. The Cost accounting ledg
 
 Access level security is configured but not enabled. This is enabled in the **Cost accounting parameters** page.
 
-[![Cost accounting paramters.](../../fin-ops/get-started/media/Cost-accounting-parameters.PNG)](/media/Cost-accounting-parameters.PNG)
+[![Cost accounting paramters.](../../fin-ops/get-started/media/Cost-accounting-parameters.PNG)]
 
 After Access level security has been enabled, you can assign an employee to the role Cost object controller. You can log in as the employee and access the **Cost control** workspace. The employee can now see their Cost center performance and drill into details of how these were calculated.
 

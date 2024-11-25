@@ -1,15 +1,14 @@
 ---
 title: Create a vendor account
-description: This procedure shows how to create a vendor account, and add an address and contact information. 
-author: GalynaFedorova
-ms.author: gfedorova
+description: Learn how to create a vendor account, and add an address and contact information, including step-by-step processes for adding addresses and contact info.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
 ms.topic: how-to
-ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Create a vendor account
@@ -20,7 +19,7 @@ This procedure shows how to create a vendor account, and add an address and cont
 
 ## Create a vendor account
 
-1. Go to **Procurement and sourcing > Vendors > All vendors**.
+1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 2. On the Action Pane, select **New**.
 3. In the **Vendor account** field, enter a value that will uniquely identify the vendor.
     - The value may be populated automatically. If so, you can skip this step.  

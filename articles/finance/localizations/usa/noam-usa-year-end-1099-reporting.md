@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Year-end 1099 reporting
-description: If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the US tax authorities at the end of the calendar year.
+description: If you do business with vendors subject to United States 1099 tax, you must track the amount paid to each vendor and report that information to US tax authorities.
 author: abruer
-ms.date: 10/31/2017
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Tax1099Fields, Tax1099Summary
-# ROBOTS: 
+ms.date: 10/31/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 6861
-ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: Tax1099Fields, Tax1099Summary
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
 ---
 
 # Year-end 1099 reporting

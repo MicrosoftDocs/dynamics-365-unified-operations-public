@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: One voucher 
-description: This article provides information about One voucher for financial journals, which lets you enter multiple subledger transactions in the context of a single voucher.
+description: Learn about One voucher for financial journals, which lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
-ms.date: 04/05/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 10/09/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-03-16
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 ms.dyn365.ops.version: 8.0.2
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # One voucher 
@@ -57,7 +45,7 @@ Use of the One voucher functionality to meet business requirements might cause i
 
 Some scenarios might still work correctly, depending on your organization's setup. Here are areas where you may encounter issues:
 
-- **Settlement** – If more than one vendor or customer exists on a voucher, the accounting that's created during settlement might be incorrectly allocated to financial dimensions. For more information about issues that can occur during settlement, see [Single voucher with multiple customer or vendor records](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).
+- **Settlement** – If more than one vendor or customer exists on a voucher, the accounting that's created during settlement might be incorrectly allocated to financial dimensions. For more information about issues that can occur during settlement, see [Single voucher with multiple customer or vendor records](../accounts-payable/single-voucher-multiple-customer-vendor-records.md). Settlement performance is heavily influenced by the number of invoice journal lines that use One voucher. The amount of time that is required for settlement and payment posting is expected to increase exponentially, the more invoice journal lines use One voucher.
 - **Tax calculation** – If more than one voucher or customer exists on a voucher, the tax calculation might be incorrect.
 - **Transaction reversal** – If more than one subledger account type exists on a voucher, when a single subledger transaction is reversed, an incorrect accounting entry might be posted for the reversal in the general ledger. For example, if you acquire multiple assets in a single voucher and then reverse the acquisition of one of the assets, the general ledger accounting will be incorrect for the reversal.
 - **Reporting and inquiries** – If you include more than one subledger account type (for example, **Vendor** and **Customer**) on a voucher, reports/inquiries will show only the first account value that's found.
@@ -95,7 +83,7 @@ The following business scenarios have been identified as scenarios that customer
 | Customer reimbursement | If the Reimbursement periodic task is run from Accounts receivable, it creates a transaction to move the balance from a customer to a vendor. The vendor is the same party as the customer. | Yes | |
 | Fixed asset maintenance: Catch-up depreciation, splitting an asset, and calculating depreciation on disposal | Catch-up deprecation, splitting of an asset, and calculation of depreciation for asset disposal all used to create a single voucher. | No | As of Finance version 10.0.21, fixed asset transactions that are created for catch-up depreciation, splitting of an asset, and calculation of depreciation for asset disposal use different voucher numbers. |
 | Bills of exchange and promissory notes | Bills of exchange and promissory notes move the customer or vendor balance from one Accounts receivable or Accounts payable ledger account to another, based on the state of the payment. Because the same customer or vendor is always used in the voucher, no reporting issues exist. | Yes | | 
-| Netting | If a customer and vendor are the same party, the balances for the vendor and customer are netted against each other. This approach minimizes the exchange of money between an organization and the customer/vendor party. | Yes/No | Netting can be accomplished by entering the increase and decrease in separate vouchers, and then posting the offset to a clearing ledger account. For some organizations, this approach requires too much overhead. Therefore, they choose to use One voucher instead. |
+| Netting | If a customer and vendor are the same party, the balances for the vendor and customer are netted against each other. This approach minimizes the exchange of money between an organization and the customer/vendor party. | No | As of Microsoft Dynamics 365 Finance version 10.0.40, there's the **Customer and vendor netting** feature. The netting feature automatically creates two separate vouchers for the vendor and customer. For more information, see [Net vendor and customer balances](../cash-bank-management/net-customer-and-vendor-balances.md). |
 | Transfer balances | An organization might have to transfer a balance from one vendor to another, either because of a mistake or because another vendor has taken over the liability. Transfers of this type also occur for account types such as **Customer** and **Bank**. | Yes/No | Balance transfers from one account (vendor, customer, bank, and so on) to another can be done through separate vouchers, and the offset can be posted to a clearing ledger account. For some organizations, this approach requires too much overhead. Therefore, they choose to use One voucher instead. |
 | Settling multiple unposted payments to the same invoice | This scenario is typically found in organizations where customers can use multiple methods of payment to pay for purchases. In this scenario, the organization must be able to record multiple unposted payments and settle them against the customer invoice. | No | A new feature that was added in Finance enables multiple unposted payments to be settled against a single invoice. |
 | Country/region-specific features | The **Single Administrative Document (SAD)** feature for Poland currently requires that transactions be grouped together, and the voucher number is used for this purpose. There might be additional country/region-specific features that require the One voucher functionality. | Yes | |
@@ -113,8 +101,6 @@ Because of the issues that can occur when One voucher is used, the following opt
 - Some transactions might continue to be entered through the journal in a single voucher, but additional data might be tracked to correctly identify transactional details.
 - A combination of new features might be used, but transactions for the business scenarios might continue to be entered in the journal by using a single voucher.
 
-Depending on the approach for each business scenario, only parts of the One voucher functionality might be deprecated.
-
 As new features are introduced, your organization must continuously evaluate whether the **Allow multiple transactions within one voucher** option on the **General ledger parameter** page can be turned off. We recommend that you not use One voucher for integrations unless you require the functionality for one of the documented functional gaps.
 
-After all the functional gaps are filled, Microsoft will communicate what portions of One voucher will be deprecated. If some portions are deprecated, the deprecation won't be effective for at least one year after all features are introduced and communication is provided to all customers.
+As functional gaps are filled, Microsoft will communicate the new features to be used instead of One voucher. For some business scenarios, such as a vendor invoice with multiple lines, One voucher will continue to be used but with enhancements. Those enhancements will be communicated as they are delivered. 

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: View posted sales tax transactions
-description: This article describes some ways to view posted sales tax transactions.
+description: Learn about some ways to view posted sales tax transactions, including outlines on posted sales tax pages and sales tax setlements periods pages.
 author: twheeloc
-ms.date: 08/08/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxTrans, TaxPeriod, TaxTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 04/05/2024
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxTrans, TaxPeriod, TaxTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # View posted sales tax transactions
 
 [!include [banner](../../includes/banner.md)]
@@ -34,6 +25,9 @@ This article describes some ways to view posted sales tax transactions. You can 
 1. In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.
 2. Select **Show filters** to narrow the view to specific transactions.
 3. Close the page.
+
+> [!NOTE]
+> The **Delete** action isn't allowed for posted sales tax transactions.
 
 ## Sales tax settlement periods page
 

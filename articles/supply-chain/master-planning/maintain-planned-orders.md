@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Maintain planned orders
-description: This article provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
+description: Learn how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders.
 author: t-benebo
-ms.date: 12/10/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqTransPo, ReqTransFirmLog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 54123f4c-b4ca-4ce4-9358-b067aa04c968
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 12/10/2019
+ms.reviewer: kamaybac
+ms.search.form: ReqTransPo, ReqTransFirmLog
+ms.assetid: 54123f4c-b4ca-4ce4-9358-b067aa04c968
 ---
 
 # Maintain planned orders
@@ -61,7 +45,7 @@ If you are planning to firm many orders at the same time, parallelizing the run 
 > [!NOTE]
 > The option for **Parallelize firming** is only shown when you have more than one planned order selected for firming.
 
-## Additional resources
+## Related information
 
 - [Master plans overview](master-plans.md)
 

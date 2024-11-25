@@ -1,128 +1,44 @@
 ---
 title: Review and accept changes to confirmed purchase orders
-description: This article describes the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders, based on their downstream impact.
+description: Learn how to use the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ms.topic: how-to
-ms.date: 07/06/2023
-audience: Application User
-ms.search.region: Global
+ms.date: 08/26/2024
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
+ms.search.form: PurchTableChangeReviewWorkspace
 ---
 
 # Review and accept changes to confirmed purchase orders
 
 [!include [banner](../includes/banner.md)]
 
-> [!IMPORTANT]
-> The AI-powered and Copilot functionality that's described in this article is available as part of a preview release. All other functionality is generally available. The content and the functionality related to AI-powered and Copilot functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
->
-> **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
->
-> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
-
-<!--KFM: Preview until further notice -->
-
 During procurement planning, any changes that are made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact. Therefore, procurement managers can focus on high-impact changes to assess downstream order impacts and communicate directly with vendors.
 
-This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
+## Prerequisites
 
-## Enable the feature for your system
-
-This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
-
-- Steps 1 and 2 enable the **Confirmed purchase orders with changes** workspace.
-- Steps 3 through 6 enable the support by Copilot for this workspace that provides, for example, natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
-
-### Step 1: Upgrade Supply Chain Management to the required build
-
-You must be running Supply Chain Management 10.0.34 or later.
-
-This feature was added in builds that came out after the initial release of versions 10.0.34 and 10.0.35. If you're running one of those versions, you must update your version as described here:
-
-- If you're running Supply Chain Management version 10.0.34, you must upgrade the Application Suite to version 10.25.1372 (or later). This version is included in build 10.0.1591.72 (or later) of finance and operations apps.
-- If you're running Supply Chain Management version 10.0.35, you must upgrade the Application Suite to version 10.26.1075 (or later). This version is included in build 10.0.1627.33 (or later) of finance and operations apps.
-
-### Step 2: Enable the workspace feature in Feature management
-
-In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *Review changes to confirmed purchase orders based on downstream impact*. As of Supply Chain Management version 10.0.36, this feature is turned on by default.
-
-### <a name="enable-sql-key"></a>Step 3: Enable the SQL row version change tracking license key
-
-Follow these steps to check the status of the **Sql row version change tracking (Preview)** license key and enable it if necessary. If the key isn't enabled, you'll get an error when you try to install the Copilot application in the Power Platform admin center.
-
-1. Go to **System administration \> Setup \> License configuration**.
-1. On the **Configuration keys** tab, scroll down the **Sql row version change tracking (Preview)** key. If the key is already enabled, then skip the rest of this procedure. If it isn't enabled, then continue to the next step.
-1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Return to the **License configuration** and enable the **Sql row version change tracking (Preview)** key.
-1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-
-### Step 4: Upgrade the Finance and Operations Virtual Entity solution
-
-Follow these steps to upgrade the *Finance and Operations Virtual Entity* solution.
-
-1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the Power Platform environment that's connected to your finance and operations app, and open the detail view.
-1. In the **Resources** field, select **Dynamics 365 apps**.
-1. Find the app that's named *Finance and Operations Virtual Entity*.
-1. If the status is *Installed*, you're already running the latest version. If the status is *Update available*, you must update the solution by following these steps:
-
-    1. Select the ellipsis button (**&hellip;**), and then select **Update**.
-    1. Accept the terms of service, and then select **Update**.
-
-You can follow the status of the update. During the update, the status is *Installing*. After the update is completed, the status changes to *Installed*.
-
-### Step 5: Enable Supply Chain Management to access your Dataverse environment
-
-Follow these steps to enable Supply Chain Management to access your Dataverse environment.
-
-1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the Dataverse environment that's connected to your Supply Chain Management environment, and open the detail view.
-1. Select the **Settings** menu on the menu bar.
-1. Go to **Product \> Features**.
-1. Set the **Finance and Operations in Dataverse** option to *On*.
-
-### Step 6: Install the Copilot application in Supply Chain Management
-
-> [!NOTE]
-> During this preview phase, the Copilot application can only be installed for environments that are hosted in the US.
-
-Follow these steps to install the Copilot application in your Supply Chain Management environment.
-
-1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview) page in the Microsoft commercial marketplace.
-1. Select **Get it now**.
-1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your Supply Chain Management environment to install the Copilot application.
-
-    > [!IMPORTANT]
-    > **Troubleshooting:** You may see the following error message while installing the Copilot application in the Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you see this error, follow the instructions given in [Step 3: Enable the SQL row version change tracking license key](#enable-sql-key).
-
-1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is **Installing**. After the installation is complete, the status changes to **Installed**. If an error occurs, the status changes to **Failed** and you can find details about the error in the **Notifications** field.
-
-### Step 7: Enable the required security roles
-
-Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
-
-In the detail view of the environment, in the **Access** field, select **Users** or **Teams**. Select the users or teams that should have access, and assign the *AIB Roles* and *Finance and Operations AI* security roles to them.
+The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled separately. If you also want to take advantage of the Copilot features, see [Enable Copilot support for managing changes to confirmed purchase orders](../../fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable.md) for the system requirements and information about how to set them up.
 
 ## The Confirmed purchase orders with changes workspace
 
 To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirmed purchase orders with changes**.
 
-[<img src="media/po-change-review-highimpact.png" alt="Screenshot of the Confirmed purchase orders with changes workspace." title="Screenshot of the Confirmed purchase orders with changes workspace" width="720" />](media/po-change-review-highimpact.png#lightbox)
+[<img src="media/po-change-review-highimpact-all-selected.png" alt="Screenshot of the Confirmed purchase orders with changes workspace." title="Screenshot of the Confirmed purchase orders with changes workspace" width="720" />](media/po-change-review-highimpact-all-selected.png#lightbox)
 
-The workspace lists all previously confirmed purchase orders that have been changed since confirmation. It helps the review process by identifying potential impacts on production work, service work orders, and sales orders.
+The workspace lists all previously confirmed supplying purchase orders that have been changed since confirmation. It helps during the review process by identifying potential impacts on demand such as production work, service work orders, and sales orders.
 
-At the top of the workspace, the three tiles summarize groups of changes to confirmed purchase orders and the related downstream impacts. 
+The relations between supplying purchase orders and demand can originate from different sources, such as pegging from master panning, [inventory markings](../master-planning/planning-optimization/marking.md), and purchase orders that are created for demand in projects.
 
-In preview, the grouping is predefined and limited to pegged orders that have been created by planning.
+At the top of the workspace, three tiles summarize groups of changes to confirmed purchase orders and the related impact on downstream demand:
 
-- **Low impact changes** – This tile highlights changes to purchase orders that have no known impact on downstream orders that have been created by planning, also called pegged orders. A summary of changes is generated to help you review and validate the purchase orders.
-- **High impact changes** – This tile highlights purchase orders that have known downstream impacts on pegged orders. These high-risk changes are summarized together with the detected impacts, to help you investigate further and decide what action to take.
-- **Impacted downstream orders** – This tile summarizes impacts on pegged orders by the number and type of orders, and it shows the purchase order changes that cause each impact. This information helps you review potential downstream impacts based on the latest master planning run.
+- **Low impact changes** – This tile highlights changes to purchase orders that have no known impact on downstream demand. No known impact is assumed if changes to the quantity or delivery dates don't affect those requirements from demand. Examples of these changes include an increased quantity or an earlier date. A summary of changes is generated to help you review and validate the purchase orders.
+- **High impact changes** – This tile highlights purchase orders that have known downstream impacts on demand. These changes are summarized together with the detected demand impacts, to help you investigate further and decide what action to take.
+- **Impacted downstream orders** – This tile summarizes impacts on different kinds of downstream demand orders by total per type of order. This information helps you review potential impacts on demand and identify each originating change.
 
-Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list includes columns for the original and new quantities, original and new confirmed receipt dates, and so on.
+Each tile provides a **Show** link. When you select this link, the view beneath shows the changes to supplying purchase orders and the affected demand according to the tile's classification and filter.
 
 ## Review changes to confirmed purchase orders
 
@@ -131,7 +47,7 @@ Purchasers use the workspace to review and accept changes to confirmed purchase 
 1. Study all changes to confirmed purchase orders and their downstream impact.
 1. Focus on changes that have a low risk of downstream impact.
 1. Review changes that have a high risk of downstream impact.
-1. Review the remaining downstream impact.
+1. Review the remaining impact on downstream demand orders.
 
 The following subsections describe these steps in more detail.
 
@@ -172,7 +88,7 @@ From this view, you can reach out to a vendor using email or Microsoft Teams. Us
 
 After you've communicated with the vendor, you can update the order further and then send it back to the vendor for confirmation. Alternatively, you might cancel the order and plan for alternative supply.
 
-### Step 4: Review the remaining downstream impact
+### Step 4: Review the remaining impact on downstream demand orders
 
 After most of the order changes have been addressed, the purchaser can review the overall downstream impact of the remaining open order changes.
 
@@ -184,6 +100,7 @@ In this view, you can analyze the changes from the perspective of downstream imp
 
 A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact (the requested date in the downstream order). You can then take action by communicating with downstream stakeholders. Those stakeholders might, in turn, contact affected customers and replan the downstream orders.
 
-## See also
+## Related information
 
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
+- For administrators: [Enable Copilot support for managing changes to confirmed purchase orders](../../fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable.md)

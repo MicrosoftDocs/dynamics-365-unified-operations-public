@@ -1,35 +1,32 @@
 ---
 title: Configure the Help experience for finance and operations apps
-description: This article provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
+description: Learn about the components of the Help system for finance and operations apps, including an overview of help architecture.
 author: edupont04
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: edupont
-ms.search.region: Global
 ms.author: edupont
+ms.topic: article
+ms.date: 08/11/2021
+ms.reviewer: edupont
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SystemParameters
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
-ms.search.form: SystemParameters
 ---
 
 # Configure the Help experience for finance and operations apps
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
-In this article, you will find an overview of the components of the Help system for finance and operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The article also explains how to connect these components and provides a summary of the process for creating custom Help.
+In this article, you will find an overview of the components of the Help system for solutions with Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Human Resources. The article also explains how to connect these components.
 
 ## Help architecture
 
-Finance and operations apps include conceptual overviews and other topics that are published to the [Microsoft Dynamics 365 documentation](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
+Finance and operations apps include conceptual overviews and other topics that are published to the [Microsoft Learn](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
-[![Help architecture.](../../fin-ops/get-started/media/help-architecture.png)](/media/help-architecture.png)
+![Help architecture.](../../fin-ops/get-started/media/help-architecture.png)
 
 The in-product Help system pulls articles from Microsoft Learn and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -44,7 +41,7 @@ On the **System parameters** page, system admins can configure access to the rel
 > - To configure Help, you must sign in by using an account in the same tenant as the tenant where the app is deployed.
 > - An LCS library can't be connected from an instance of the app that is running on a local virtual hard drive (VHD).
 
-[![System Parameters form with Help settings.](../../fin-ops/get-started/media/system-parameters_ops-1024x437.png)](/media/system-parameters_ops.png)
+![System Parameters form with Help settings.](../../fin-ops/get-started/media/system-parameters_ops-1024x437.png)
 
 To configure task guides for a solution, follow these steps on the **System parameters** page.
 
@@ -83,9 +80,7 @@ If you're a partner, and you promote a library to a corporate library and includ
 
 Finance and operations apps are rarely used in their out-of-box form. Instead, the solution is customized and extended to fit the organization's needs. You can also customize and extend the Help experience. For example, you can add custom Help to the in-product **Help** pane.
 
-Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. For information about how you can set up a custom Help solution that is connected to the **Help** pane, see [Custom Help overview](../../fin-ops/get-started/help-overview.md).
-
-If you want to collaborate with Microsoft on tools and processes for customizing Help, fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
+Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. Learn more at [Custom Help overview](../help/custom-help-overview.md).
 
 ## See also
 

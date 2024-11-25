@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Payroll data updates FAQ
-description: This article lists questions and answers that address changes to payroll data.
+description: Access a list of questions and answers that address changes to payroll data, including questions about preparing payroll for new fiscal years and adjusting balances.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221444
-ms.assetid: 27ccec84-8e9a-465e-9b2a-fbe88d974068
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 27ccec84-8e9a-465e-9b2a-fbe88d974068
 ---
 
 # Payroll data updates FAQ

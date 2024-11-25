@@ -1,19 +1,17 @@
 ---
 title: Extend the list of Electronic reporting (ER) functions
-description: This article includes an overview of key tasks that you must complete to introduce a new function.
+description: Learn about how to extend the list of electronic reporting functions through an overview of key tasks that you must complete to introduce a new function.
 author: kfend
-ms.date: 10/25/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 10/25/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERExpressionDesignerFormula
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
-ms.search.form: ERExpressionDesignerFormula
 ---
 
 # Extend the list of Electronic reporting (ER) functions

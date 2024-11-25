@@ -1,31 +1,17 @@
 ---
-
-# required metadata
-
 title: Synchronize work orders in Field Service to sales orders in Supply Chain Management
-description: This article discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
-author: Henrikan
-ms.date: 04/09/2018
+description: Learn about the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 06/10/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: IT Pro
 ms.search.region: global
-ms.search.industry: 
-ms.author: henrikan
-ms.dyn365.ops.version: July 2017 update 
+ms.dyn365.ops.version: July 2017 update
+ms.search.form: 
 ms.search.validFrom: 2017-07-8
-
 ---
 
 # Synchronize work orders in Field Service to sales orders in Supply Chain Management
@@ -36,7 +22,7 @@ ms.search.validFrom: 2017-07-8
 
 This article discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Dynamics 365 Supply Chain Management.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/field-service-integration.png)](/media/field-service-integration.png)
+![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/field-service-integration.png)
 
 
 ## Templates and tasks
@@ -251,35 +237,35 @@ The following illustrations show the template mapping in Data integration.
 Filter: 
 (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) and (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderHeader.](../../../supply-chain/sales-marketing/media/FSWorkOrder1.png )](../../../supply-chain/sales-marketing/media/FSWorkOrder1.png)
+![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderHeader.](../../../supply-chain/sales-marketing/media/FSWorkOrder1.png )
 
 ### Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: 
 (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
 
-[![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderServiceLineEstimate.](../../../supply-chain/sales-marketing/media/FSWorkOrder2.png )](../../../supply-chain/sales-marketing/media/FSWorkOrder2.png)
+![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderServiceLineEstimate.](../../../supply-chain/sales-marketing/media/FSWorkOrder2.png )
 
 ### Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter:
 (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004))
 
-[![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderServiceLineUsed.](../../../supply-chain/sales-marketing/media/FSWorkOrder3.png )](../../../supply-chain/sales-marketing/media/FSWorkOrder3.png)
+![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderServiceLineUsed.](../../../supply-chain/sales-marketing/media/FSWorkOrder3.png )
 
 ### Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter:
 (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) and (msdyn_allocated eq true)
 
-[![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderProductLineEstimate.](../../../supply-chain/sales-marketing/media/FSWorkOrder4.png )](../../../supply-chain/sales-marketing/media/FSWorkOrder4.png)
+![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderProductLineEstimate.](../../../supply-chain/sales-marketing/media/FSWorkOrder4.png )
 
 ### Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderProductLineUsed
 
 Filter:
 (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004) or (msdyn_allocated ne true))
 
-[![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderProductLineUsed.](../../../supply-chain/sales-marketing/media/FSWorkOrder5.png )](../../../supply-chain/sales-marketing/media/FSWorkOrder5.png)
+![Template mapping in Data integration for Work orders to Sales orders (Field Service to Supply Chain Management): WorkOrderProductLineUsed.](../../../supply-chain/sales-marketing/media/FSWorkOrder5.png )
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

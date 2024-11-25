@@ -6,9 +6,6 @@ description: This article describes the call center–specific functionality for
 author: josaw1
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails

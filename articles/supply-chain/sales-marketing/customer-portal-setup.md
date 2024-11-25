@@ -1,27 +1,14 @@
 ---
-# required metadata
-
 title: Install, set up, and update the Customer portal
-description: This article provides licensing details and setup instructions for the Customer portal.
-author: Henrikan
-ms.date: 06/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+description: Learn about licensing details and setup instructions for the Customer portal, including outlines on licensing requirements and dependencies.
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
-ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
+ms.search.form:
 ---
 
 # Install, set up, and update the Customer portal
@@ -32,8 +19,8 @@ ms.dyn365.ops.version: 10.0.13
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. Learn more in the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. Learn more in the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## Dependencies on dual-write and Power Apps portals
 
@@ -73,9 +60,9 @@ After provisioning is completed, you can access the Customer portal on the **Act
 
 ## Update the Customer portal
 
-More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You will have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
+Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You'll have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
 
-## Additional resources
+## Related information
 
 To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
 

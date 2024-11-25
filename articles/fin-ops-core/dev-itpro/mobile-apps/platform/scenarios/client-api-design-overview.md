@@ -1,18 +1,15 @@
 ---
 title: Client-side design APIs
-description: This article provides an overview of the client-side design APIs and includes recommendations for using them.
+description: Learn about the client-side design APIs and includes recommendations for using them with definitions for various terms.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: overview
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.assetid: 
 ---
 
 # Client-side design APIs

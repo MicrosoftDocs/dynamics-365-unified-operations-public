@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Process existing payroll payments
-description: This article describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged.
+description: Learn about tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged, including step-by-step processes.
 author: twheeloc
-ms.date: 04/24/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/24/2019
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 220934
-ms.assetid: b95ac219-fbea-48e6-b2c8-6f27853a7f6a
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: b95ac219-fbea-48e6-b2c8-6f27853a7f6a
 ---
 
 # Process existing payroll payments

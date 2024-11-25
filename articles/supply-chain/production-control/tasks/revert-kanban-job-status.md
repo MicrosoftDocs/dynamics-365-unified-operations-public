@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Revert kanban job status
-description: This procedure focuses on reverting an incorrect kanban job status. 
+description: Learn about reverting an incorrect kanban job status, including a step-by-step process for opening process boards for work cells. 
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate 
 ---
+
 # Revert kanban job status
 
 [!include [banner](../../includes/banner.md)]

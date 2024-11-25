@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Authentication and authorization
-description: This article describes the authentication and authorization models for user synchronization and permissions between finance and operations apps and Microsoft Power Platform. 
+description: Learn about the authentication and authorization models for user synchronization and permissions between finance and operations apps and Microsoft Power Platform. 
 author: jaredha
-ms.date: 07/26/2022
+ms.author: kamanick
 ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.date: 07/26/2022
+ms.reviewer: johnmichalak
 ms.collection: get-started
+audience: Developer, IT Pro
 ms.search.region: Global
-# ms.search.industry:
-ms.author: jaredha
 ms.search.validFrom: 2021-10-14
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
 # Authentication and authorization
@@ -45,7 +35,7 @@ The creation of finance and operations apps users in linked Microsoft Power Plat
 
 ### Creating Microsoft Power Platform users in finance and operations apps
 
-Administrators can manually import Microsoft Power Platform users into finance and operations apps from Azure Active Directory (Azure AD). To import users from Azure AD, select **Import users** in finance and operations apps. For more information, see [Import new users from Azure AD](../sysadmin/tasks/create-new-users.md#import-new-users-from-azure-ad).
+Administrators can manually import Microsoft Power Platform users into finance and operations apps from Microsoft Entra ID. To import users from Microsoft Entra ID, select **Import users** in finance and operations apps. For more information, see [Import new users from Microsoft Entra ID](../sysadmin/tasks/create-new-users.md#import-new-users-from-azure-ad).
 
 ## Security model
 
@@ -66,4 +56,3 @@ For information about how to manually assign security roles to Microsoft Power P
 The security roles that are assigned to a user in finance and operations apps depend on the system access that the user requires to perform their assigned duties and responsibilities. The security roles in finance and operations apps determine the application data that a user has access to. A user can't access data through the Microsoft Power Platform integration if the user's assigned security roles in finance and operations apps don't grant permissions to the data.
 
 The security role for finance and operations apps must be manually added by the system administrator. Different security roles can be assigned to a user in finance and operations apps.
-

@@ -1,25 +1,25 @@
 ---
 title: Download ER configurations from the Global repository of Configuration service
-description: This article explains how to download Electronic reporting (ER) configurations from the Global repository of Configuration service.
+description: Learn about how to download Electronic reporting (ER) configurations from the Global repository of Configuration service.
 author: kfend
-ms.date: 06/02/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 03/25/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 10.0.5
-ms.custom: 105843
-ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
+ms.dyn365.ops.version: AX 10.0.5
+ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ---
 
 # Download ER configurations from the Global repository of Configuration service
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[banner](../../../finance/includes/rsc-to-gsw-banner.md)]
 
 This article explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the Global repository of configuration service. For more information, see [Microsoft Dynamics 365 Finance - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 

@@ -1,41 +1,25 @@
 ---
-# required metadata
-
 title: Welcome to Dynamics 365 Supply Chain Management
-description: This page provides a list of the help articles and other resources for Supply Chain Management features.   
+description: Access an overview of help articles and other resources for Dynamics 365 Supply Chain Management with an outline on core concepts and tasks.   
 author: kamaybac
-ms.date: 09/15/2021
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
-ms.search.region: global
-ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 11/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Welcome to Dynamics 365 Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-This article provides a list of the help articles and other resources in Dynamics 365 Supply Chain Management.
+This article provides an overview of help articles and other resources for Supply Chain Management.
 
 ## What's new and in development
 
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
+Go to [Release plans for Dynamics 365, Power Platform, and Cloud for Industry](/dynamics365/release-plans/) to see what new features are released and what new features are in development.
 
 ## Core concepts and tasks
 
@@ -45,68 +29,52 @@ Select a feature area to learn more about it.
 - [Cost accounting](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
-- [IoT Intelligence](supply-chain-dev/iot-intelligence-home-page.md)
+- [Sensor Data Intelligence (preview)](sensor-data-intelligence/sdi-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
+- [Demand planning](demand-planning/demand-planning-home-page.md)
+- [Unified pricing management (preview)](unified-pricing-management/upm-pricing-management-overview.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
+- [Engineering change management](engineering-change-management/product-engineering-overview.md)
 - [Production control](production-control/production-process-overview.md)
+- [Rebate management](rebate-management/rebate-management-overview.md)
 - [Sales and marketing](sales-marketing/overview-sales-marketing.md)
 - [Service management](service-management/service-management-home-page.md)
 - [Transportation management](transportation/transportation-management-overview.md)
+- [Landed cost](landed-cost/landed-cost-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
-
-## Dynamics 365 Finance
-
-For information on Dynamics 365 Finance, go to the [Finance home page](../finance/index.yml).
 
 ## Videos
 
-This short video summarize the new supply chain management features added to Microsoft Dynamics 365 Finance version 8.0 (April 2018).
+Check out the following collections of videos to learn more about Supply Chain Management, finance and operations apps, and other related technologies. Topics include feature introductions, event presentations, tech talks, customer stories, and more.
 
-- [Synchronize a work order between Field Service and finance and operations](https://youtu.be/hAB4TDVMjxU)
-
-These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (December 2017).
-
-- [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-- [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
-
-These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 Finance, Enterprise edition (July 2017).
-
-- [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
-- [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
-- [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
-- [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
-- [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
-
-The following tech conference recordings discuss supply chain management functionality from previous versions of finance and operations. This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.
-
-- **Cost management:**
-  - [Overview of Cost management](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
-- **Master planning:**
-  - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-  - [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
-  - [MRP performance tuning](https://youtu.be/RLXybx20B5o)
-- **Product information management:**
-  - [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
-- **Warehouse management:**
-  - [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing](https://www.youtube.com/embed/QUxXUrN-7n4)
-- **Production control videos:**
-  - [Subcontracting operations and activities in manufacturing](https://youtu.be/y1jrd3A_k70)
-- **Transportation management videos:**
-  - [Transportation management (TMS) in the new Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
+- [Supply Chain Management videos on the Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/@MicrosoftDynamics365/search?query=SCM)
+- [Supply Chain Management videos on the Microsoft Dynamics 365 Community YouTube channel](https://www.youtube.com/@MSD365Community/search?query=SCM)
 
 ## Blogs
 
-There are many articles about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
+The following blogs provide information about Supply Chain Management and related technologies:
 
-## White papers
+- [Supply Chain Management blog articles for business decision makers](https://www.microsoft.com/dynamics-365/blog/business-leader/product/dynamics-365-supply-chain-management/)
+- [Supply Chain Management blog articles for IT professionals](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-supply-chain-management/)
+- [Dynamics AX Manufacturing R&D Team Blog (archive)](/archive/blogs/axmfg/)
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling](https://www.microsoft.com/download/details.aspx?id=101948)
-- [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937)
+## E-learning courses and training
 
-## eLearning courses
+Many online training courses for Supply Chain Management are available on the [Microsoft Learn Training site](/training/browse/?expanded=dynamics-365&products=dynamics-scm&resource_type=learning%20path).
 
-For online courses and training, check out [Dynamics 365 Supply Chain Management](/training/browse/?products=dynamics-scm&resource_type=learning+path).
+## Related documentation
+
+### Development and administration for Supply Chain Management and other finance and operations apps
+
+For information about how to develop and administer Supply Chain Management and other finance and operations apps, go to [Development and administration for finance and operations apps](../fin-ops-core/dev-itpro/index.md).
+
+### Other finance and operations apps
+
+For information about other finance and operations apps, see the following documentation:
+
+- [Dynamics 365 Finance](../finance/finance-welcome.md).
+- [Dynamics 365 Commerce](../commerce/welcome.md)
+- [Dynamics 365 Human Resources](../human-resources/welcome.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

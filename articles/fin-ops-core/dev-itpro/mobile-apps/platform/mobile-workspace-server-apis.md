@@ -1,18 +1,15 @@
 ---
 title: Server-side development (workspace X++ APIs)
-description: This article describes the platform that supports the mobile phone app, providing rich offline and mobile interactions, and an easy-to-use designer experience.
+description: Learn about the platform that supports the mobile phone app, providing rich offline and mobile interactions, and an easy-to-use designer experience.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom: 255544
 ---
 # Server-side development (workspace X++ APIs)
 

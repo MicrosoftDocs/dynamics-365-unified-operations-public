@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Develop entities for data migration
-description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
-author: peakerbl
-ms.date: 10/14/2019
+description: Learn how to develop data entities in Microsoft Visual Studio and then use them for data migration through this tutorial.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/14/2019
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Develop entities for data migration
@@ -126,7 +114,7 @@ In this exercise, you will use the **Project Category** entity that you just bui
 
     [![Entering export details.](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
 
-    Use the following file as the sample file format for XML: [ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209).
+    <!--Use the following file as the sample file format for XML: [ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209). -->
 
     Open this file in a text editor, and save it as an XML file. If the sample file mapping isn't valid, there is an incorrect field name in the entity. Fix either the entity or the sample file to continue.
 
@@ -139,7 +127,7 @@ In this exercise, you will use the **Project Category** entity that you just bui
 #### Expected outcome
 
 - Fifteen records are successfully exported.
-- The output is similar to the following file: [ProjectCategoryExport\_Output](https://go.microsoft.com/fwlink/?linkid=845210). (Open the file in a text editor to verify this outcome.)
+<!--- The output is similar to the following file: [ProjectCategoryExport\_Output](https://go.microsoft.com/fwlink/?linkid=845210). (Open the file in a text editor to verify this outcome.) -->
 
 ## Migrating data in multiple files by using the Data Import/Export Framework
 ### Business problem
@@ -154,8 +142,8 @@ In this exercise, you will import two files into the **USRT** company by using t
 
 1. Open the following files in Microsoft Excel, and save them as CSV files in your local directory:
 
-    - [Customers1](https://go.microsoft.com/fwlink/?linkid=845211)
-    - [CustomerGroups1](https://go.microsoft.com/fwlink/?linkid=845212)
+   <!-- - [Customers1](https://go.microsoft.com/fwlink/?linkid=845211)
+    - [CustomerGroups1](https://go.microsoft.com/fwlink/?linkid=845212) -->
 
 2. In the client, change the company to **USRT**.
 3. From the **User** dashboard, open the **Data Management** workspace.
@@ -183,8 +171,8 @@ In this exercise, you will use a new set of files to import data through the exi
 1. In the **Data management** workspace, select the existing data project, and the click **Re-import**. By using the re-import functionality, you can preserve your previous settings for the data project and use new files for the import. However, if you click **Reload data project** and upload new files instead, the previous mappings will be overridden.
 2. Open the following files in Excel, and save them as CSV files in your local directory:
 
-    - [Customers2](https://go.microsoft.com/fwlink/?linkid=845213)
-    - [CustomerGroups2](https://go.microsoft.com/fwlink/?linkid=845214)
+<!-- - [Customers2](https://go.microsoft.com/fwlink/?linkid=845213)
+    - [CustomerGroups2](https://go.microsoft.com/fwlink/?linkid=845214) -->
 
 3. Upload the new files for each entity, and then click **Import now**.
 4. On the **Status** page, click **View execution log** to investigate the errors.

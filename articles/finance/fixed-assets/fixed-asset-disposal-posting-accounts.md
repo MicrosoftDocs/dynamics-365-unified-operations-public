@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Fixed asset disposal posting accounts
-description: This article explains how to set up General ledger posting accounts for disposing of assets.
+description: Learn how to set up General ledger posting accounts for disposing of assets. The ledger account is credited for the disposal value of the fixed assets.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetPosting
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 3461
-ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetPosting
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
 ---
 
 # Fixed asset disposal posting accounts

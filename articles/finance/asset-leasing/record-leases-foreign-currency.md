@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Record leases in foreign currencies
-description: This article explains how to record leases in currencies other than the accounting or reporting currency.
+description: Learn about how to record leases in currencies other than the accounting or reporting currency, including an outline on measurements for foreign currency leases.
 author: moaamer
-ms.date: 04/12/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetLeaseDetail
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/12/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: AssetLeaseDetail
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Record leases in foreign currencies

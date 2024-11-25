@@ -1,18 +1,18 @@
 ---
 title: Set up adjustment codes for PIS and COFINS taxes (Brazil)
-description: You can make manual adjustment transactions to adjust the credit or debit of PIS and COFINS amounts that are reported in records M220, M225, M620, M625, M110, M115, M510, and M515.
+description: You can make manual adjustment transactions to adjust the credit of PIS and COFINS amounts that are reported in various records.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up adjustment codes for PIS and COFINS taxes (Brazil)
 
 [!include [banner](../../includes/banner.md)]

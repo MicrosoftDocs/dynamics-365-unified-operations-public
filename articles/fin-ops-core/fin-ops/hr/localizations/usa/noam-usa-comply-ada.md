@@ -1,38 +1,23 @@
 ---
-# required metadata
-
 title: Comply with the Americans with Disabilities Act (ADA)
-description: This article describes features that can help your organization comply with the Americans with Disabilities Act (ADA).
+description: Learn about features that can help your organization comply with the Americans with Disabilities Act (ADA) including an overview on recording physical requirements.
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmADARequirement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 2741
-ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
-ms.search.region: USA
-# ms.search.industry: 
 ms.author: Anbichse
+ms.topic: article
+ms.date: 01/10/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: USA
 ms.search.validFrom: 2016-02-28
+ms.search.form: HcmADARequirement
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
 ---
 
 # Comply with the Americans with Disabilities Act (ADA)
 
 [!include [banner](../../../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
 
 This article describes features that can help your organization comply with the Americans with Disabilities Act (ADA). This information applies only to legal entities that do business in the United States.
 

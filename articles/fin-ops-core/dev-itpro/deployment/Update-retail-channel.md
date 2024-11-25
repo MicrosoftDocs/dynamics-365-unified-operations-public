@@ -1,19 +1,16 @@
 ---
 title: Apply updates and extensions to Commerce Scale Unit (cloud)
-description: This article shows how to apply updates and extensions to cloud-hosted Commerce channel components.
-author: jashanno
-ms.date: 12/13/2021
+description: Learn how to apply updates and extensions to cloud-hosted Commerce channel components, including prerequisites.
+author: josaw
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 12/13/2021
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jashanno
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
 ---
-
 
 # Apply updates and extensions to Commerce Scale Unit (cloud)
 

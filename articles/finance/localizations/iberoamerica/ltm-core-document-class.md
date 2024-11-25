@@ -1,12 +1,12 @@
 ---
 title: Document classes for Latin America
-description: This article provides information about the document class configuration for Latin America.
+description: Learn about the document class configuration for Latin America, including prerequisites and an outline and process on setting up document classes.
 author: Fhernandez0088
-ms.date: 04/03/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Document classes for Latin America

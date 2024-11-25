@@ -1,19 +1,15 @@
 ---
 title: Modify the properties of form controls through extension
-description: This article explains how you can modify the properties of a control by using an extension.
+description: Learn about how you can modify the properties of a control by using an extension, including a step-by-step example.
 author: ivanv-microsoft
-ms.date: 07/10/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 07/10/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Modify the properties of form controls through extension

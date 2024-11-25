@@ -1,12 +1,13 @@
 ---
 title: PageMetadata type
-description: PageMetadata type
+description: Learn about the PageMetadata type, which includes the Controls, Design, ID, QuickSubmit, SourcepageId, SubmitButtonDesign, Tasks, and Title properties.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PageMetadata type

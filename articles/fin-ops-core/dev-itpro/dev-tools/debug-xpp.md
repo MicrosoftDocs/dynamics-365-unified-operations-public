@@ -1,13 +1,13 @@
 ---
 title: Debug X++ code by using the debugger in Visual Studio
-description: This article reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about how you can debug X++ code by using the debugging feature in Microsoft Visual Studio, including how to add ToString methods to your code.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c

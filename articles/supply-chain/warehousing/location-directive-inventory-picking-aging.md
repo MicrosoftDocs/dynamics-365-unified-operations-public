@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Location directive inventory picking aging
-description: This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
+description: Learn how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 ---
 
 # Location directive inventory picking aging
@@ -38,7 +24,7 @@ When inventory is first received or created in the warehouse, the system updates
 
 To make this functionality available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
 
-1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
+1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. Learn more in [Warehouse location status](warehouse-location-status.md).)
 1. *Location directive inventory picking aging* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 ## Feature requirements

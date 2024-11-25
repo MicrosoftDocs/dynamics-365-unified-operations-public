@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Configure call center delivery modes and charges
-description: This article describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Commerce.
+description: This article describes how to set up modes of delivery and charges for a call center order in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/26/2018
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User 
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Configure call center delivery modes and charges
 
 [!INCLUDE [banner](includes/banner.md)]
+
+This article describes how to set up modes of delivery and charges for a call center order in Microsoft Dynamics 365 Commerce.
 
 When a sales order is placed in Dynamics 365 Commerce, if the person who entered the sales order is linked to a call center channel, logic and rules are used to validate the mode of delivery (delivery mode) and calculate charges for the order.
 

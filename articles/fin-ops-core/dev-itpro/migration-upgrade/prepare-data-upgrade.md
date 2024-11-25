@@ -1,18 +1,15 @@
 ---
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
-description: This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
-author: gianugo
-ms.date: 06/01/2023
+description: Learn about each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/01/2023
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.custom: 106163
 ms.assetid: 
 ---
 
@@ -79,21 +76,21 @@ If the process is successful, the task is marked as completed.
 
 ## Set up user mapping
 
-In AX 2012, users are authenticated against an on-premises Active Directory server. However, in finance and operations apps, users are authenticated against Azure Active Directory (Azure AD). This task provides a form where you can map existing AX 2012 users to equivalent Azure AD users. The AX 2012 users will then be able to access finance and operations apps.
+In AX 2012, users are authenticated against an on-premises Active Directory server. However, in finance and operations apps, users are authenticated against Microsoft Entra ID. This task provides a form where you can map existing AX 2012 users to equivalent Microsoft Entra users. The AX 2012 users will then be able to access finance and operations apps.
 
 1. In the finance and operations data upgrade checklist, select **Set up user mapping**.
 2. The **User info email mapping** form appears. Follow one of these steps to fill in the grid:
 
-    - Import users from AX 2012, and then manually fill in the Azure AD email address:
+    - Import users from AX 2012, and then manually fill in the Microsoft Entra email address:
 
         1. Select **Import from AX**. The grid is filled with existing users.
-        1. For each user, enter the corresponding Azure AD email address, as shown in the following illustration.
+        1. For each user, enter the corresponding Microsoft Entra email address, as shown in the following illustration.
 
-            ![Azure AD email addresses for AX 2012 users.](media/userInfoEmailMapping.png)
+            ![Microsoft Entra email addresses for AX 2012 users.](media/userInfoEmailMapping.png)
 
     - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
 
-        1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services (AD DS). The file should have two columns: **UserId** and **EmailAddress**.
+        1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Microsoft Entra email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services (AD DS). The file should have two columns: **UserId** and **EmailAddress**.
 
             > [!NOTE]
             > The first row in the file is treated as a header row and will be ignored during the import.

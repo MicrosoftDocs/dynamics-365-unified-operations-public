@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Develop composite data entities
-description: A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
-author: peakerbl
-ms.date: 03/27/2020
+description: Learn about composite entities, a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 03/27/2020
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Develop composite data entities

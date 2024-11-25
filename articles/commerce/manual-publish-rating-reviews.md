@@ -2,16 +2,15 @@
 title: Enable manual publishing of ratings and reviews by a moderator
 description: This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 author: gvrmohanreddy
-ms.date: 09/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: anupamar
 ms.search.validFrom: 2021-09-03
-ms.dyn365.ops.version: 10.0.22
+ms.custom: 
+  - bap-template
 ---
 
 # Enable manual publishing of ratings and reviews by a moderator
@@ -22,7 +21,7 @@ This article describes how to enable manual publishing of ratings and reviews by
 
 Dynamics 365 Commerce's ratings and reviews solution uses Azure Cognitive Services to automatically redact profanity in review titles and content, and to publish ratings and reviews. Therefore, manual intervention isn't required to review and publish ratings and reviews to your e-commerce site.
 
-However, some businesses might prefer that moderators manually review and approve reviews before they are published. To enable manual publishing of ratings and reviews by a moderator, you must enable the **Require moderator for ratings and reviews** feature in Commerce site builder.
+However, some businesses might prefer that moderators manually review and approve reviews before they're published. To enable manual publishing of ratings and reviews by a moderator, you must enable the **Require moderator for ratings and reviews** feature in Commerce site builder.
 
 ## Enable the Require moderator for ratings and reviews feature in Commerce site builder
 
@@ -43,8 +42,8 @@ When you enable the **Require moderator for ratings and reviews** feature, a mod
 To review and publish ratings and reviews in Commerce site builder, follow these steps.
 
 1. Go to **Reviews \> Moderation**.
-1. In the grid, if the **Status** field for a row is set to **Unpublished**, the rating and review in that row hasn't been published yet. To view only unpublished ratings and reviews, select **Status: Needs review** in the status filter above the grid.
-1. Select one or more ratings and reviews that have a status of **Unpublished**, and then select **Publish** on the command bar. The selected ratings and reviews are added to the publishing queue and will appear on the e-commerce site after they are published.
+1. In the grid, if the **Status** field for a row is set to **Unpublished**, the rating and review in that row isn't published yet. To view only unpublished ratings and reviews, select **Status: Needs review** in the status filter above the grid.
+1. Select one or more ratings and reviews that have a status of **Unpublished**, and then select **Publish** on the command bar. The selected ratings and reviews are added to the publishing queue and will appear on the e-commerce site after they're published.
 
 > [!NOTE]
 > - After a rating and review are published, the status value changes from **Unpublished** to a null value (blank field).

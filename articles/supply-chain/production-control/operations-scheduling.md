@@ -1,15 +1,15 @@
 ---
 title: Operations scheduling
-description: This article provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
+description: Learn about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: johanhoffmann
 ms.author: johanho
+ms.topic: conceptual
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form: ProdSchedule
-ms.topic: conceptual
-ms.date: 01/09/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Operations scheduling
@@ -59,7 +59,7 @@ The operations schedule also drives master planning and determines calculations 
 - **Capacity availability** – Resources that are required for production
 
 > [!NOTE]
-> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered. 
+> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered.
 
 ## Cancellations
 
@@ -69,7 +69,7 @@ When you run operations scheduling, you can cancel specific parts of the routing
 
 If you're working with finite materials, scheduling also depends on the availability of the materials that are required for production. If there aren't enough available components for the production, production can be delayed. You can base scheduling on the use of materials by specifying the materials that must be available for production. When you optimize on both resource capacity and the availability of materials, production is calculated according to these restrictions. A production order can't be scheduled to start until capacity and materials are available at the same time and in the required quantities.
 
-## Additional resources
+## Related information
 
 - [Operations scheduling options](operation-scheduling-options.md)
 

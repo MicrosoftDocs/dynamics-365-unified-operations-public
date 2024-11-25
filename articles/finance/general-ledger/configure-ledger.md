@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Configure ledgers
-description: This article provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
+description: Learn about how to configure ledgers for each legal entity, including outlines on how to select currencies and the account structures that should be used.
 author: kweekley
-ms.date: 09/24/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Ledger
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 09/24/2020
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-09
+ms.search.form: Ledger
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Configure ledgers

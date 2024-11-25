@@ -4,11 +4,8 @@
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 02/16/2023
+ms.date: 05/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -68,12 +64,12 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 ## Configure leave type rules
 
 1. Set rounding options for the **Leave and absence** type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
-2. Set **Holiday correction** for the leave type. When you select this option, the number of holidays that fall on a work day will be used to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
+2. Set **Holiday correction** for the leave type. When you select this option, the number of holidays that fall on a work day will be used to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources subtracts one day from the leave type when processing accruals.
 
     You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md).
 
-3. Set **Carry-forward leave type** for the leave type. When you select this option, any carry-forward balances will be transferred to the specified leave type. The carry-forward leave type also needs to be included in the leave and absence plan.
-4. Define **Expiration rules** for the leave type. When you configure this option, you can choose the unit of days or months and set the duration for the expiration. The effective date of the expiration rule is used to determine when to start running the batch job that processes the leave expiration, or the date when the rule takes effect. The expiration itself will always occur on the accrual period start date. For example, if the accrual period start date is August 3, 2021, and the expiration rule was set at 6 months, the rule will be processed based on the expiration offset from the accrual period start date, so it would be executed on February 3, 2022. Any leave balances that exist at the time of expiry will be subtracted from the leave type and will be reflected in the leave balance.
+3. Set **Carry-forward leave type** for the leave type. When you select this option, any carry-forward balances are transferred to the specified leave type. The carry-forward leave type also needs to be included in the leave and absence plan.
+4. Define **Expiration rules** for the leave type. When you configure this option, you can choose the unit of days or months and set the duration for the expiration. The effective date of the expiration rule is used to determine when to start running the batch job that processes the leave expiration, or the date when the rule takes effect. The expiration itself will always occur on the accrual period start date. For example, if the accrual period start date is August 3, 2021, and the expiration rule was set at six months, the rule will be processed based on the expiration offset from the accrual period start date, so it would be executed on February 3, 2022. Any leave balances that exist at the time of expiry will be subtracted from the leave type and will be reflected in the leave balance.
 
 ## Configure the required attachment per leave type
 
@@ -82,32 +78,32 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 1. On the **Leave and absence** page, on the **Links** tab, under **Setup**, select **Leave and absence types**.
 2. Select a **Leave and absence type** in the list. In the **General** section, use the **Attachment required** field to specify whether an attachment must be uploaded when an employee submits a new leave request for the selected leave type. 
-3. If the **Attachment required** is selected based on the **Request type**, three additional fields will appear to provide flexibility in attachment requirements:
+3. If the **Attachment required** is selected based on the **Request type**, three additional fields appear to provide flexibility in attachment requirements:
 
     - **On creating a leave request** – Requires users to upload an attachment when creating a leave request.
     - **On updating leave request** – Requires users to upload an attachment when updating a leave request.
-    - **On cancelling leave request** – Requires users to upload an attachment when cancelling a leave request.
+    - **On canceling leave request** – Requires users to upload an attachment when canceling a leave request.
 
     > [!NOTE] 
     > The fields mentioned above are available after Dynamics 365 Human Resources release 10.0.32.
 
-4. If the **Request type** is **Time off**, the **Attachment required** field will have two options: 
+4. If the **Request type** is **Time off**, the **Attachment required** field has two options: 
 
     - **On creating leave request** 
     - **On updating leave request**
 
     > [!NOTE]
-    > For time off requests, attachments can't be required for cancellation. For more information on cancelling time off requests, see Cancel time off requests.
+    > For time off requests, attachments can't be required for cancellation. For more information on canceling time off requests, see Cancel time off requests.
 
 5. If the **Request type** is **Leave of absence**, there will be three options: 
 
     - **On creating leave request**
     - **On updating leave request**
-    - **On cancelling leave request** 
+    - **On canceling leave request** 
 
 6. If attachments are required when updating a time off leave request, and the **Update time off** option selected: If the **Amount** is 0, then an attachment must be uploaded. If an attachment is not required in this case, use **Cancel time off**.
 
-Employees will be required to upload an attachment when they submit a new leave request that has a leave type where the **Attachment required** field is enabled and based on the field values above. To view the attachment that was uploaded as part of a leave request, leave request approvers can use the **Attachments** option for the work items that are assigned to them. If a leave request is accessed by using the Human Resources app in Microsoft Teams, the **View details** option for the leave request can be used to view its details and any attachments.
+Employees are required to upload an attachment when they submit a new leave request that has a leave type where the **Attachment required** field is enabled and based on the field values above. To view the attachment that was uploaded as part of a leave request, leave request approvers can use the **Attachments** option for the work items that are assigned to them. If a leave request is accessed by using the Human Resources app in Microsoft Teams, the **View details** option for the leave request can be used to view its details and any attachments.
 
 ## Configure leave units (hours/days) per leave type
 
@@ -140,7 +136,7 @@ To hide the leave balance for a leave type, follow these steps.
 2. Select a leave and absence type in the list.
 3. In the **General** section, select **Hide leave balance**.
 
-After the **Hide leave balance** option is enabled for a leave type, employees of the organization won't be able to see the leave balance for that leave type. Instead, they'll see a dash (-). However, HR admins, managers, and absence managers will be able to see the leave balance of their employees.
+After the **Hide leave balance** option is enabled for a leave type, employees of the organization won't be able to see the leave balance for that leave type. Instead, they'll see a dash (-). However, HR admins, managers, and absence managers are able to see the leave balance of their employees.
 
 > [!IMPORTANT]
 > When the **Hide leave balance** option is enabled, the value of the **BalanceAvailable** and **TotalThisYear** fields in the **EssLeaveBalanceEntity** entity is set to **0** (zero) for integrations and is represented by a dash (-) in the user interface (UI).

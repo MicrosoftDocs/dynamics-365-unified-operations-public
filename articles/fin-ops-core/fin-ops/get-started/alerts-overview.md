@@ -1,27 +1,15 @@
 ---
-# required metadata
-
-title: Alerts overview (contains video)
-description: This article provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
-author: RichdiMSFT
-ms.date: 09/04/2019
+title: Alerts overview
+description: Learn about about alerts, which you can use to stay informed about events that you want to track during the workday, including various scenarios.
+author: sericks007
+ms.author: sericks
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EventCreateRule
-# ROBOTS:
+ms.date: 09/04/2019
+ms.reviewer: johnmichalak
 audience: Application user
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-
 ms.search.region: Global
-# ms.search.industry:
-ms.author: richdi
 ms.search.validFrom: 2018-3-30
+ms.search.form: EventCreateRule
 ms.dyn365.ops.version: Platform update 15
 ---
 

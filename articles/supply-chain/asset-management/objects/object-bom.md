@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Asset BOMs
-description: This article describes asset bills of materials (BOMs) in Asset Management.
-author: johanhoffmann
-ms.date: 06/26/2019
+description: Learn about asset bills of materials (BOMs) in Asset Management, including outlines on setting up spare parts item groups and viewing and updating asset BOMs.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/26/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2214
+ms.search.form: EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Asset BOMs

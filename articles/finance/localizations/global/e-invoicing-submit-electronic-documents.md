@@ -1,22 +1,20 @@
 ---
-title: Submit electronic documents to Electronic invoicing
-description: This article explains how to submit electronic documents to the Electronic invoicing service.
-author: gionoder
-ms.date: 12/15/2021
+title: Submit electronic documents
+description: Learn how to submit electronic documents to the Electronic invoicing service, including overviews on communication flows during submission events.
+author: ilikond
+ms.author: ikondratenko
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.date: 02/12/2024
 ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
-# Submit electronic documents to Electronic invoicing
+# Submit electronic documents
 
 [!include [banner](../../includes/banner.md)]
 
@@ -33,3 +31,13 @@ The submission process can be run manually or in the background.
 
 - **Manual** – In the **Submit electronic documents** dialog box, on the **Records to include** FastTab, select **Filter** to define the range of documents that must be submitted. In the **Inquiry** dialog box, you can configure your own query to select the posted invoices that must be submitted. After you've made your selection, manually start execution of the processing, and wait for it to finish running. When the processing is completed, a message in the Action center shows the number of electronic documents that have been successfully submitted.
 - **Background** – Background execution doesn't require that you be signed in or keep the **Submit electronic documents** dialog box open. You can schedule the process to run, and you can define the execution frequency.
+
+> [!NOTE]
+> In some specific scenarios, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of electronic invoices requires that you complete the following additional steps.
+
+To submit the generated electronic invoices in batch mode, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+2. In the **Channel** field, select the export channel, and then select **OK**. The export channel must be created in advance.
+
+You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. For more information, see [Work with Electronic document submission log](e-invoicing-submission-log.md).  

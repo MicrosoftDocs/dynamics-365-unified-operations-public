@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot cash flow forecasting setup
-description: This article provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions (FAQ) about the setup for cash flow, updates to cash flow, and cash flow Power BI.
-author: angelad116
-ms.date: 03/23/2021
+description: Access answers to questions that you might have when you configure cash flow forecasting, including questions about setup and cash flow Power BI.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerCovParameters
-audience: Application User
-# ms.devlang: 
+ms.date: 03/23/2021
+ms.custom:
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading 
 ms.search.validFrom: 2020-12-30
+ms.search.form: LedgerCovParameters
 ms.dyn365.ops.version: 10.0.15
-
 ---
 
 # Troubleshoot cash flow forecasting setup

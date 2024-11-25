@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Set up customer and vendor compensation
-description: This article provides information about how to run the vendor and customer account compensation process for legal entities that have their primary address in Hungary or Poland.
+description: Learn about how to run the vendor and customer account compensation process for legal entities that have their primary address in Hungary or Poland.
 author: mrolecki
-ms.date: 05/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-#ms.suite: 
-# ms.tgt_pltfrm: 
-ms.custom: 1691503
-ms.search.region: Hungary, Poland
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: article
+ms.date: 05/19/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Hungary, Poland
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

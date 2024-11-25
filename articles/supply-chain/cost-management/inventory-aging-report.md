@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Inventory aging report examples and logic
-description: This article presents some examples that show how to interpret the results of an Inventory aging report.
-author: JennySong-SH
-ms.date: 5/29/2020
+description: Learn about inventory aging reports and logic, including examples that show how to interpret the results of an Inventory aging report.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
-# ROBOTS:
-audience: Application User
-# ms.devlang: 
+ms.date: 5/29/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2020-5-29
-ms.dyn365.ops.version: 
-
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 ---
 
 # Inventory aging report examples and logic

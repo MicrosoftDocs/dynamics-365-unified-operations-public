@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create an organization hierarchy
-description: Use the following procedure to create an organizational hierarchy. 
+description: Learn how to create an organization hierarchy, including a step-by-step processes, including an outline on adding organizations to hierarchies. 
 author: sericks007
-ms.date: 12/15/2020
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 12/15/2020
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create an organization hierarchy
 
 [!include [banner](../../includes/banner.md)]

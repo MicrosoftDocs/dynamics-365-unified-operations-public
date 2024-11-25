@@ -1,15 +1,13 @@
 ---
 title: Transfer orders (Brazil)
-description: This article provides information about transfer orders for Brazil.
-author: gionoder
-ms.date: 09/13/2018
+description: Learn about transfer orders for Brazil, which let you transfer inventory items between warehouses or other fiscal establishments.
+author: ankviklis
+ms.author: ankviklis
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/13/2018
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Brazil
-ms.author: gionoder
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

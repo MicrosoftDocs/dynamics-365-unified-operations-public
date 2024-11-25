@@ -1,16 +1,13 @@
 ---
 title: Validate applications for finance and operations apps
-description: This article provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
+description: Learn about the requirements used to verify that custom code meets Microsoft guidelines and that a solution package can be deliver in finance and operations apps.
 author: sericks007
-ms.date: 04/13/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.custom: 196913
+ms.topic: article
+ms.date: 04/13/2018
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ---
 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Submit invoices to the workflow system and match product receipt lines
-description: This article explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
-author: abruer
-ms.date: 02/11/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 02/11/2022
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-09-08
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Submit invoices to the workflow system and match product receipt lines

@@ -1,20 +1,17 @@
 ---
 title: Advance holders overview
-description: This article provides information about advance holder functionality.
+description: Learn about advance holder functionality, including a step-by-step process on setting up an advance holder and an outline on employee posting profiles.
 author: AdamTrukawka
-ms.date: 09/15/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: atrukawk
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 262574
-ms.collection: get-started
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Advance holders overview
@@ -24,7 +21,7 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 An *advance holder* is an employee of a company who is accountable for an expense amount that is provided by the organization. Only a company's worker can be an advance holder. When a procurement happens, an advance holder reports to the company about the expenditures that were made. The company reimburses the employee for the expense amount. A company controls a balance for each advance holder. Users in legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia can reflect specific transactions accompanying operations with company’s employees who are accountable for the expense amount that is provided by the organization.
 
 ## Set up an advance holder
-Complete the folloiwng tasks to up an advance holder. Be sure to complete these tasks in the following order.
+Complete the following tasks to up an advance holder. Be sure to complete these tasks in the following order.
 
 1. Create advance holder groups.
 2. Set up an employee posting profile.

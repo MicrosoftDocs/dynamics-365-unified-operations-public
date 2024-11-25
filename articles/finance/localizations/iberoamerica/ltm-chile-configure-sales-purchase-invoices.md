@@ -1,12 +1,12 @@
 ---
 title: Configure sales and purchase invoices
-description: This article explains how to configure sales and purchase invoices for a Chilean company.
+description: Learn how to configure sales and purchase invoices for a Chilean company, including an outline and step-by-step process of sales invoice configurations.
 author: Fhernandez0088
-ms.date: 09/21/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 09/21/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure sales and purchase invoices

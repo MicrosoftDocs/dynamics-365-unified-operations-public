@@ -1,38 +1,24 @@
 ---
-# required metadata
-
 title: Device management implementation guidance
-description: This article is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
+description: This article describes how to implement device management functionality in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-ms.date: 02/03/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 08/02/2024
+ms.topic: how-to
 ms.search.form: RetailTerminalTable, RetailDevice
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2017-10-31
-ms.dyn365.ops.version: Retail July 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 # Device management implementation guidance
 
 [!include [banner](../includes/banner.md)]
 
-This article is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
-
-## Overview
+This article describes how to implement device management functionality in a Microsoft Dynamics 365 Commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 
 A *device* is an instrument on which a point of sale (POS) application can be installed, configured, and used to perform operations that are required in order to run or help run the business that owns that instrument. In other words, a device is a piece of technology that runs a POS application to help run a business. This business doesn't have to be exclusively a commerce operation. For example, a hospital has a gift shop, a warehouse manages inventory, and a law firm generates invoices. What is important is that the application that the device runs makes business operations simpler, more efficient, or just better managed and recorded. Regardless of the scenario that they are used in, devices are critical elements. As the number of devices that are used increases, it becomes more valuable to put processes in place to track and manage those devices. Together, these processes are known as *device management*.
 

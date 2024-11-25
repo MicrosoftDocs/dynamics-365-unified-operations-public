@@ -1,15 +1,13 @@
 ---
 title: Manage units of measure
-description: This article describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
+description: Learn how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
 ---
 
 # Manage units of measure
@@ -114,6 +112,6 @@ To define rules for conversions between units of measure, follow these steps.
 1. Close the page.
 
 > [!TIP]
-> You can also set up unit conversions per product variant. For more information, see [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
+> You can also set up unit conversions per product variant. Learn more in [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

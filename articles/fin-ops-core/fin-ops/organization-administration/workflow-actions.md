@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Actions in workflow approval processes
-description: This article explains the actions that each participant in a workflow approval process can take.
+description: Learn about the actions that each participant in a workflow approval process can take, including an overview on actions that an originator can perform.
 author: ChrisGarty
-ms.date: 08/23/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 08/23/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
 ---
 
 # Actions in workflow approval processes
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains the actions that each participant in a workflow approval process can take.
 

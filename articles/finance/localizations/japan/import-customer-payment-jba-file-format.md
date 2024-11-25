@@ -1,19 +1,18 @@
 ---
 title: Import customer payment with JBA file format
-description: This article explains how to import EFT files with a JBA format.
+description: Learn how to import EFT files with a Japanese Bankers Association file format, including a step-by-step process using the JPMF demo data company.
 author: kfend
+ms.author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: kfend
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerForm
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Import customer payment with JBA file format
 
 [!include [banner](../../includes/banner.md)]

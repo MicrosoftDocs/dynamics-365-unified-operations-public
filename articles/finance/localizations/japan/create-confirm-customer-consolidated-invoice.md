@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and confirm a customer consolidated invoice
-description: This article explains how to consolidate customer invoices each month to calculate the due amount.
+description: Learn how to consolidate customer invoices each month to calculate the due amount, including a step-by-step process using the JPMF demo company data.
 author: kfend
-ms.date: 10/04/2021
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustConsInvoice_JP   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/04/2021
+ms.custom: 
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Japan
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustConsInvoice_JP 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and confirm a customer consolidated invoice
 
 [!include [banner](../../includes/banner.md)]

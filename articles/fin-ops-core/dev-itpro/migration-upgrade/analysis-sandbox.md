@@ -1,19 +1,15 @@
 ---
 title: Upgrade from AX 2012 - Deploy a demo environment for analysis
-description: This article describes how to deploy a demo environment during the Analyze phase of upgrading from Microsoft Dynamics AX 2012 to finance and operations.
+description: Learn how to deploy a demo environment during the Analyze phase of upgrading from Microsoft Dynamics AX 2012 to finance and operations.
 author: sericks007
-ms.date: 01/31/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 01/31/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.custom: 106163
-ms.assetid: 
 ---
 
 # Upgrade from AX 2012 - Deploy a demo environment for analysis
@@ -28,7 +24,7 @@ By deploying a demo finance and operations environment, you gain hands-on experi
 
 If you haven’t yet purchased licenses, and you’re using a free trial, you can follow the steps in [Deploy a demo environment](../deployment/deploy-demo-environment.md) to deploy a demo environment to a Microsoft Azure subscription that you bring yourself.
 
-If you’ve already purchased licenses, you received a link to configure a special type of project in Microsoft Dynamics Lifecycle Services (LCS): an implementation project. The implementation project will let you deploy a dev/test environment and a sandbox environment. For more information about this type of environment deployment, see [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service).
+If you’ve already purchased licenses, you received a link to configure a special type of project in Microsoft Dynamics Lifecycle Services (LCS): an implementation project. The implementation project will let you deploy a dev/test environment and a sandbox environment. For more information about this type of environment deployment, see [Upgrade from AX 2012 - Data upgrade in sandbox environments](data-upgrade-self-service.md).
 
 > [!IMPORTANT]
 > It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.

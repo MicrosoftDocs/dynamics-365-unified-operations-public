@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and assign a cost behavior policy to a cost control unit
-description: Cost behavior is the classification of costs as either fixed or variable. 
+description: Cost behavior is the classification of costs as either fixed or variable, including a step-by-step process on creating a cost behavior hierarchy. 
 author: twheeloc
-ms.date: 06/27/2017
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CAMCostBehaviorRule
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 06/27/2017
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CAMCostBehaviorRule
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create and assign a cost behavior policy to a cost control unit
 
 [!include [banner](../../includes/banner.md)]

@@ -1,18 +1,16 @@
 ---
 title: Customer aging snapshots
-description: This article provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time.
+description: Learn about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time.
 author: JodiChristiansen
-ms.date: 10/10/2022
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 10/10/2022
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
-ms.dyn365.ops.version: 10.0.17
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Customer aging snapshots

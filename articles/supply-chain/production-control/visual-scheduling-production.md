@@ -1,15 +1,15 @@
 ---
 title: Gantt chart for job scheduling 
-description: Production planners can control and optimize productions plans by using Gantt charts.
+description: Production planners can control and optimize productions plans by using Gantt charts, including an outline on Gantt chart views.
 author: johanhoffmann
 ms.author: johanho
+ms.topic: how-to
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
-ms.topic: how-to
-ms.date: 01/27/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Gantt chart for job scheduling
@@ -146,7 +146,7 @@ The Gantt chart can be opened from the following pages.
 | **Job to complete** (List in **Production floor management** workspace) | The **Jobs to complete list in the Production floor management** workspace shows jobs from production and batch orders that are in progress on the selected resources for the workspace. On the **Gantt chart** menu item you can open the Gantt chart, where all the jobs selected in the list will be loaded to the chart. |
 | **Production orders to release** (Opened from the **Production floor management** workspace) | The **Production orders to release** page is opened from the **Production floor management** workspace. This page shows scheduled production and batch orders pending release. On this page, you can open the Gantt chart for selected production orders. |
 
-## Additional resources
+## Related information
 
 - [Visual scheduling with Gantt chart for production and batch orders (Video)](https://youtu.be/BtbuShkGj4I)
 - [Visual scheduling for production (demo script)](/dynamics/s-e/)

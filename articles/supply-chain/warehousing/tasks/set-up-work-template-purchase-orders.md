@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Set up a work template for purchase orders
-description: This article describes how to set up a simple work template to be used when putting away received items. 
+description: Learn how to set up a simple work template to be used when putting away received items, including a step-by-step process for creating work template headers. 
 author: Mirzaab
-ms.date: 08/08/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WHSWorkTemplateTable, SysQueryForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/08/2019
+ms.custom:
+ms.reviewer: kamaybac    
+ms.search.form: WHSWorkTemplateTable, SysQueryForm 
 ---
+
 # Set up a work template for purchase orders
 
 [!include [banner](../../includes/banner.md)]

@@ -2,18 +2,15 @@
 title: Content delivery network implementation options
 description: This article reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
 author: BrianShook
-ms.date: 07/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-11-01
-ms.dyn365.ops.version: 10.0.14
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Content delivery network implementation options

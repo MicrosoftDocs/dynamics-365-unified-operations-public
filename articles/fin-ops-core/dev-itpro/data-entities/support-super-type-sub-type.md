@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Super types and sub types
 description: Describes support for inheritance patterns in data entities.
-author: peakerbl
-ms.date: 06/20/2017
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

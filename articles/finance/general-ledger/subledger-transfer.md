@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Subledger transfer to the general ledger
-description: This article describes capabilities that are related to the subledger transfer process in General ledger.
+description: Learn about capabilities that are related to the subledger transfer process in General ledger, including outlines on the asynchronous and scheduled batch options.
 author: RyanCCarlson2
-ms.date: 02/08/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalSetup, LedgerJournalTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 04/29/2024
+ms.custom: 
+  - bap-template
+  - evergreen 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-01-18
+ms.search.form: LedgerJournalSetup, LedgerJournalTable
 ms.dyn365.ops.version: AX 10.0.8
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Subledger transfer to the general ledger

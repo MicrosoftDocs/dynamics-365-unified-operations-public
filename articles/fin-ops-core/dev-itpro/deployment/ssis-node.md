@@ -1,29 +1,19 @@
 ---
 # required metadata
 title: Add an SSIS node to an existing environment
-description: This article explains how to add a Microsoft SQL Server Integration Services (SSIS) node in an on-premises environment.
+description: Learn how to add a Microsoft SQL Server Integration Services (SSIS) node in an on-premises environment, including installation steps.
 author: ttreen
-ms.date: 08/17/2023
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry:
 ms.author: ttreen
+ms.topic: article
+ms.date: 05/01/2024
+ms.custom:
+ms.reviewer: 
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2023-08-17
+ms.search.form:
 ms.dyn365.ops.version: Platform update 58
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Add an SSIS node to an existing environment
@@ -54,10 +44,18 @@ This article explains how to add a Microsoft SQL Server Integration Services (SS
     ```
 
 1. Create the Data import/export framework (DIXF) group managed service account (gMSA). For more information, see [Step 8. Create gMSAs](./setup-deploy-on-premises-latest.md#setupgMSA). Option 1 creates just the new DIXF gMSA.
-1. Set up and edit a new file share for DIXF. For more information, see [Step 9. Set up file storage](./setup-deploy-on-premises-latest.md#setupfile).
+1. Run the following script to create the file share.
 
-    > [!NOTE]
-    > In the *ConfigTemplate.xml* file, set the `disabled` property to *true* for any existing file shares.
+    ```powershell
+    .\New-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -FileShareReference "dixf"
+    ```
+
+1. Run the following script to apply the required configuration and permissions to each file share.
+
+    ```powershell
+    .\Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -FileShareReference "dixf"
+    .\Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -FileShareReference "aos"
+    ```
 
 1. Install SSIS on the required nodes. For more information, see [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupssis).
 1. Open an Admin PowerShell window, change to the *Infrastructure scripts* folder, and run the following script.
@@ -256,7 +254,7 @@ This article explains how to add a Microsoft SQL Server Integration Services (SS
 
     1. Repeat these step for any additional DIXF nodes.
 
-1. Add in the predeployment script to enable the DIXF service. If you don't have the base predeployment script, set up the script, and enable the *TSG\_EnableGMSAForAOS.ps1* script. In the main predeployment script, uncomment the line for the DIXF script, and confirm that the DIXF share that you created in the previous step is set. For more information, see [Scripts for resolving issues in on-premises environments](../deployment/onprem-tsg-implementations.md).
+1. Add in the predeployment script to enable the DIXF service. If you don't have the base predeployment script, set up the script, and enable the [TSG_EnableDixfService.ps1](./onprem-tsg-implementations.md#enableDixf) script. In the main predeployment script, uncomment the line for the DIXF script, and confirm that the DIXF share that you created in the previous step is set. For more information, see [Scripts for resolving issues in on-premises environments](../deployment/onprem-tsg-implementations.md).
 1. Sign in to Lifecycle Services, and select the project and environment. Select **Maintain** \> **Update settings**, and then select **Prepare**. After the configuration is downloaded, select **Update** in Lifecycle Services to complete the process.
 
 ## <a name="appendix-a"></a>Appendix A

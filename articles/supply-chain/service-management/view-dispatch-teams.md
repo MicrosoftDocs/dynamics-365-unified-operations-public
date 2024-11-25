@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: View dispatch teams  
-description: View dispatch teams.
-author: sorenva
-ms.date: 05/07/2018
+description: Learn how to view dispatch teams, including a step-by-step process for grouping dispatch boards by dispatch teams and additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMADispatchBoard
 ---
 
 # View dispatch teams
@@ -42,12 +26,11 @@ Service orders in the **Dispatch board** form are grouped by dispatch team.
 
 For information about how to assign a worker to a team, see [Set up a preferred technician](set-up-preferred-technician.md).
 
-## See also
+## Related information
 
 - [Prioritize service orders](prioritize-service-orders.md)
 - [View the status of service orders](view-the-status-of-service-orders.md)
 - [Monitor service activities](monitor-service-activities.md)
-- [Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 - [Set up dispatch teams](set-up-dispatch-teams.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

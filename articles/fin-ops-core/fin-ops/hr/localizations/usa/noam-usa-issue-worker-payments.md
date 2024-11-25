@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Issue worker payments
-description: This article explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
+description: Learn about how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: PayrollPayStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 222324
-ms.assetid: 64c9c810-23ff-4af6-a282-a4db4c60c0d5
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollPayStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 64c9c810-23ff-4af6-a282-a4db4c60c0d5
 ---
 
 # Issue worker payments

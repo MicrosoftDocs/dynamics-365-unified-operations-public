@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up and generate positive pay files
-description: This article explains how to set up positive pay and generate positive pay files. 
-author: panolte
-ms.date: 06/13/2023
+description: Learn about how to set up positive pay and generate positive pay files, including outlines on security for positive pay files.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankPositivePayFormat
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/13/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-05-31
+ms.search.form: BankPositivePayFormat
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ---
 
 # Set up and generate positive pay files

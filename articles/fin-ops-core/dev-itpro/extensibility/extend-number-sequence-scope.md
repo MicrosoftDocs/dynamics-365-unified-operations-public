@@ -1,15 +1,13 @@
 ---
 title: Extend the scope of number sequences
-description: This article explains how developers can extend number sequence scope.
+description: Learn about how developers can extend number sequence scope, including a step-by-step process to create a new scope and have it appear in the client.
 author: josaw1
-ms.date: 04/14/2017
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/14/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37

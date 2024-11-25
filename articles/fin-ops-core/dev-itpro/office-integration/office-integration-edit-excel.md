@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Open in Excel experiences FAQ
-description: Learn about creating Open in Office experiences for Excel and Word.
+description: Learn about creating Open in Office experiences for Excel and Word, including learning about what are open in Excel experiences.
 author: jasongre
-ms.date: 03/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/18/2022
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
 ---
 
 # Open in Excel experiences FAQ
@@ -31,9 +19,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 
@@ -70,8 +55,6 @@ When an entity has the same root datasource (table) as a form, it will be added 
 
 ## What fields will be shown in the workbook?
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image shows the Visual Studio view of the AutoReport field group for the FMCustomerEntity.
-
-[![Visual Studio view of AutoReport field group.](./media/off101c.png)](./media/off101c.png)
 
 ## What fields will be shown when an entity is the target of a lookup?
 When a relationship is defined between two entities, if the identifier for one entity is shown on the other entity, then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. The Excel Add-in with an enumeration lookup is shown below.

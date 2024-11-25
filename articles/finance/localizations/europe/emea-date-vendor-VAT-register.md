@@ -1,18 +1,17 @@
 ---
 title: Date of vendor VAT register
-description: This article provides information about a feature for enabling date of vendor VAT register
-author: AdamTrukawka
+description: Learn about a feature for enabling date of vendor VAT register. You can deduct the incoming VAT amount for purchase invoices.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
+ms.collection: get-started
 ms.search.region: global
-ms.author: atrukawk
 ms.search.validFrom: 2022-01-15
 ms.dyn365.ops.version: AX 10.0.24
-ms.collection: get-started
 ---
 
 # Date of vendor VAT register

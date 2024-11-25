@@ -1,13 +1,13 @@
 ---
 title: Language and locale descriptors in Help
-description: This article maps the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
+description: Learn about the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
 author: edupont04
-ms.date: 02/11/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: edupont
+ms.topic: article
+ms.date: 07/17/2024
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
@@ -18,11 +18,11 @@ The client that finance and operations apps use supports multiple languages and 
 
 - The value of the **ms.locale** property in each HTML file matches the locale of the content.
 
-    For example, the German (Germany) content must have a setting of **ms.locale: de-de**.
+    For example, the German (Germany) content must have a setting of `ms.locale: de-de`.
 
 - The content on the Help website is in a folder that has the same name as the locale.
 
-    For example, the German (Germany) content must be in a folder that is named **de-de**.
+    For example, the German (Germany) content must be in a folder that is named `de-de`.
 
 ## Languages and descriptors
 
@@ -30,48 +30,74 @@ The following table lists the languages that the finance and operations Help sup
 
 | Language/locale  | Language/region name |
 |-------------------------------|----------------------|
-| ar | Arabic (Saudi Arabia) | 
-| ar-ae | Arabic (United Arab Emirates) |
-| cs | Czech | 
-| da | Danish | 
-| de | German (Germany) |
-| de-at | German (Austria) |
-| de-ch | German (Switzerland) |
-| en-au | English (Australia) |
-| en-ca | English (Canada) | 
-| en-gb | English (United Kingdom) |
-| en-ie | English (Ireland) |
-| en-in | English (India) |
-| en-my | English (Malaysia) |
-| en-nz | English (New Zealand) |
-| en-sg | English (Singapore) |
-| en-us | English (US) |
-| en-za | English (South Africa) |
-| es | Spanish (Spain) |
-| es-mx | Spanish (Mexico) |
-| et | Estonian |
-| fi | Finnish |
-| fr | French (France) |
-| fr-be | French (Belgium) |
-| fr-ca | French (Canada) |
-| fr-ch | French (Switzerland) |
-| hu | Hungarian |
-| is | Icelandic |
-| it | Italian |
-| it-ch | Italian (Switzerland) |
-| ja | Japanese |
-| lt | Lithuanian |
-| lv | Latvian |
-| nb-no | Norwegian Bokmål |
-| nl | Dutch (Netherlands) |
-| nl-be | Dutch (Belgium) |
-| pl | Polish |
-| pt-br | Portuguese (Brazil) |
-| ru | Russian |
-| sv | Swedish |
-| th | Thai |
-| tr | Turkish |
-| zh-hans | Chinese |
+| `ar` | Arabic (Saudi Arabia) |
+| `ar-ae` | Arabic (United Arab Emirates) |
+| `cs` | Czech |
+| `da` | Danish |
+| `de` | German (Germany) |
+| `de-at` | German (Austria) |
+| `de-ch` | German (Switzerland) |
+| `en-au` | English (Australia) |
+| `en-ca` | English (Canada) |
+| `en-gb` | English (United Kingdom) |
+| `en-ie` | English (Ireland) |
+| `en-in` | English (India) |
+| `en-my` | English (Malaysia) |
+| `en-nz` | English (New Zealand) |
+| `en-sg` | English (Singapore) |
+| `en-us` | English (US) |
+| `en-za` | English (South Africa) |
+| `es` | Spanish (Spain) |
+| `es-mx` | Spanish (Mexico) |
+| `et` | Estonian |
+| `fi` | Finnish |
+| `fr` | French (France) |
+| `fr-be` | French (Belgium) |
+| `fr-ca` | French (Canada) |
+| `fr-ch` | French (Switzerland) |
+| `hu` | Hungarian |
+| `is` | Icelandic |
+| `it` | Italian |
+| `it-ch` | Italian (Switzerland) |
+| `ja` | Japanese |
+| `lt` | Lithuanian |
+| `lv` | Latvian |
+| `nb-no` | Norwegian Bokmål |
+| `nl` | Dutch (Netherlands) |
+| `nl-be` | Dutch (Belgium) |
+| `pl` | Polish |
+| `pt-br` | Portuguese (Brazil) |
+| `ru` | Russian |
+| `sv` | Swedish |
+| `th` | Thai |
+| `tr` | Turkish |
+| `zh-hans` | Chinese |
+
+## Change locales
+
+Microsoft provides a sample tool, **HtmlLocaleChanger**, that can update your HTML files by setting a new value for the **ms.locale** property. For example, you have HTML files for German (Germany), and you want to make the same content available in German (Austria). In this case, you can run the tool to change the setting from `ms.locale: de-de` to `ms.locale:de-at`.
+
+Here's the syntax for running HtmlLocaleChanger.exe.
+
+```cmd
+HtmlLocaleChanger.exe --h <path> --l <locale> --v <true|false>
+```
+
+The following table explains the parameters.
+
+| Parameter | Description |
+|-----------|-------------|
+| h | Specify the path of the HTML files to process. |
+| l | Specify the new locale for the HTML files. |
+| v | Set this parameter to **true** to turn on verbose logging. Otherwise, set it to **false**. |
+
+### Example
+
+The following example changes the locale to `de-at`and switches on verbose logging.
+
+```cmd
+HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --l de-at --v
+```
 
 ## See also
 

@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Correct inventory tracking information
-description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. 
-author: yufeihuang
+description: Learn about the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.
+author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans  
 ---
+
 # Correct inventory tracking information
 
 [!include [banner](../../includes/banner.md)]

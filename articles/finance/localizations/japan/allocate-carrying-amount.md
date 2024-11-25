@@ -1,19 +1,18 @@
 ---
 title: Allocate carrying amount of shared asset and goodwill to cash generating units
-description: This procedure walks you through allocating the carrying amount of shared asset and goodwill to each of the cash generating units.
+description: Learn about allocating the carrying amount of shared asset and goodwill to each of the cash generating units, including a step-by-step process.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetImpairmentSharedAssetAlloc_JP, AssetImpairmentPopulateAllocation_JP
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Allocate carrying amount of shared asset and goodwill to cash generating units
 
 [!include [banner](../../includes/banner.md)]

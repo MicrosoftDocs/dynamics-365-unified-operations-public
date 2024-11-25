@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Scheduled work order maintenance jobs
-description: This article explains scheduled work order maintenance jobs in Asset Management.
-author: johanhoffmann
-ms.date: 08/19/2019
+description: Learn about scheduled work order maintenance jobs in Asset Management, including a step-by-step process for viewing scheduled work order maintenance jobs.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 08/19/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac
+ms.search.form: 
 ---
 
 # Scheduled work order maintenance jobs

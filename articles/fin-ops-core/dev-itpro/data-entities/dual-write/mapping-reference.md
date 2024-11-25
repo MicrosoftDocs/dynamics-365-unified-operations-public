@@ -1,15 +1,14 @@
 ---
 title: Dual-write mapping reference
-description: This article lists the column mappings for each dual-write mapping.
+description: Learn about the column mappings for each dual-write mapping, including a table that defines the map type and customer engagement column for finance and operations fields.
 author: josaw
-ms.date: 10/06/2022
-ms.topic: reference
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: josaw
+ms.topic: reference
+ms.date: 10/06/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-12-22
-
 ---
 
 # Dual-write mapping reference

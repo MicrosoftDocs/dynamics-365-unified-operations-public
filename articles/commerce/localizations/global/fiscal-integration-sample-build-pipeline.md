@@ -2,13 +2,15 @@
 title: Set up a build pipeline for a fiscal integration sample
 description: This article explains how to set up build and release pipelines for a fiscal integration sample from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) so that you can generate and release the Cloud Scale Unit and self-service deployable packages for the sample code.
 author: josaw1
-ms.date: 12/21/2021
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: josaw
-ms.search.validFrom: 
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: anupamar
+ms.search.validFrom: 10/20/2019
+ms.custom: 
+  - bap-template
 ---
 
 # Set up a build pipeline for a fiscal integration sample

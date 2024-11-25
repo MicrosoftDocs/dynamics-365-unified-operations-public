@@ -1,20 +1,17 @@
 ---
 title: Code migration and upgrade home page
-description: This article provides links to topics about code migration.
+description: Access links to topics about code migration, including sections dedicating to key concepts, learning paths, and additional concepts.
 author: jasongre
-ms.date: 03/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/22/2021
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
-
 
 # Code migration and upgrade home page
 

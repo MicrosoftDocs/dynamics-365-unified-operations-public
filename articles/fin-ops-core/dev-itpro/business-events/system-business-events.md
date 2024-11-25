@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Batch business events
-description: This article provides details about batch business events.
+description: Learn about batch business events and how to use them, including a table that outlines the modules for various business events.
 author: matapg007
-ms.date: 02/25/2021
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
-ms.search.region: Global
-# ms.search.industry:
 ms.author: matgupta
+ms.topic: article
+ms.date: 02/25/2021
+# ms.custom: NotInTOC
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-03-31
+# ms.search.form:
 ms.dyn365.ops.version: 10.0.17
 ---
 
@@ -28,7 +18,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include[banner](../includes/banner.md)]
 
-The batch framework emits the following system business events.
+The batch platform emits the following system business events.
 
 | Business event | Description | Module |
 |----------------|-------------|--------|

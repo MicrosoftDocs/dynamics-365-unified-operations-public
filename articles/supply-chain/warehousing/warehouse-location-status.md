@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Warehouse location status
-description: This article provides an overview of the Warehouse location status feature.
+description: Access an overview of the Warehouse location status feature, including an outline on setting up warehouse location status.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLocationProfile,WHSLocation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSLocationProfile,WHSLocation
 ---
 
 # Warehouse location status
@@ -41,7 +25,7 @@ The following four fields on the **Locations** page track information about the 
 - **Location status** – The status of the location. There are four possible values:
 
     - **Undetermined** – The location profile can't track status. Therefore, the current status is unknown.
-    - **Empty** – There is currently no inventory in the location.
+    - **Empty** – There's currently no inventory in the location.
     - **Picking** – Outbound transactions have been performed against the location since it was last empty.
     - **Storage** – Only inbound transactions have been performed against the location since the location was last empty.
 
@@ -57,7 +41,7 @@ Before you start to work through the scenario, you must activate sample data and
 
 #### Use the USMF legal entity
 
-To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
 
 #### Set up location profiles
 
@@ -65,16 +49,16 @@ The example scenario requires that you prepare two location profiles.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. Select **Edit** to put the page into edit mode.
-1. Select the **BULK-06** profile.
+1. Select the *BULK-06* profile.
 1. On the **General** FastTab, set the following values:
 
-    - **Enable item in location:** Set this option to _Yes_.
-    - **Enable location activity date and time:** Set this option to _Yes_.
-    - **Enable location status:** Set this option to _Yes_.
+    - **Enable item in location:** Set this option to *Yes*.
+    - **Enable location activity date and time:** Set this option to *Yes*.
+    - **Enable location status:** Set this option to *Yes*.
 
     These options control whether the reference fields on the location are active.
 
-1. Repeat steps 3 through 4 for the **PICK-06** profile.
+1. Repeat steps 3 through 4 for the *PICK-06* profile.
 
 > [!NOTE]
 > When the parameters on the location profile (**Enable item in location**, **Enable location activity**, **Enable location status**) are set to *Yes*, the system immediately updates the relevant locations by executing the *warehouse location status consistency check* job.
@@ -88,8 +72,8 @@ The example scenario requires that you prepare two location profiles.
 1. Select **OK**.
 1. Your new purchase order (PO) is opened. It includes an empty line in the **Purchase order lines** grid. On this line, set the following values:
 
-    - **Item number:** _A0002_
-    - **Quantity:** _5_
+    - **Item number:** *A0002*
+    - **Quantity:** *5*
 
 1. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm** to confirm the purchase order.
 1. On the mobile device, go to **Inbound \> Purchase Receive**.
@@ -138,8 +122,8 @@ The example scenario requires that you prepare two location profiles.
 1. Select **OK**.
 1. Your new sales order is opened. It includes an empty line in the **Sales order lines** grid. On this line, set the following values:
 
-    - **Item number:** _A0002_
-    - **Quantity:** _1_
+    - **Item number:** *A0002*
+    - **Quantity:** *1*
 
 1. On the **Sales order lines** FastTab, on the **Inventory** menu, select **Reservation**.
 1. On the **Reservation** page, select **Reserve lot** to reserve the order line. Then select the **Close** button (**X**) in the upper-right corner to close the page.
@@ -168,6 +152,5 @@ The example scenario requires that you prepare two location profiles.
 
 > [!NOTE]
 > The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WMS processes, the fields won't be updated.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

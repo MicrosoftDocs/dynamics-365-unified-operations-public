@@ -1,29 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create predefined product variants
-description: This article provides an example scenario that shows how to create predefined product variants for a product master. It also describes how to work with improved variant suggestions and how to assign variant-specific item sales tax groups if needed.
-author: t-benebo 
+description: Learn how to create predefined product variants for a product master, how to work with improved variant suggestions, and assign item sales tax groups.
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 08/09/2022
-
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced 
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: 10.0.19
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 ---
+
 # Predefined product variants
 
 [!include [banner](../../includes/banner.md)]

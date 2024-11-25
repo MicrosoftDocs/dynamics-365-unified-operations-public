@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Create item requirements for service orders 
-description: This article describes how to create item requirements for service orders.  
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to create item requirements for service orders, including a step-by-step process for creating item requirements for service orders.  
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 05/01/2018
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create item requirements for service orders
@@ -41,7 +25,7 @@ Item requirements for service orders are processed through a project. To create 
 1. Go to **Service management** \> **Service orders** \> **Service orders**.
 1. Select the service order that you want to create an item requirement for.
 1. On the **Action Pane**, on the **Dispatch** tab, select **Item requirement**.
-1. In the **Item requirements** form, enter information for the required item. For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
+1. In the **Item requirements** form, enter information for the required item.
 
 ## Create an item requirement for a service agreement
 
@@ -54,7 +38,7 @@ Item requirements for service orders are processed through a project. To create 
 1. On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.
 1. To create a service order from the agreement line, on the **Lines** FastTab, select **Create service orders**, and then enter the relevant information in the **Create service orders** form.
 
-## See also
+## Related information
 
 [Create service orders automatically](create-service-orders-automatically.md).
 

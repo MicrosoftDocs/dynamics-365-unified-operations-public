@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Set up the Asset management mobile workspace
-description: This article describes how to set up Microsoft Dynamics 365 Supply Chain Management and the finance and operations (Dynamics 365) mobile app to run an Asset management mobile workspace that workers can use to perform asset management tasks.
-author: johanhoffmann
-ms.date: 01/15/2021
+description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management and the finance and operations mobile app to run an Asset management mobile workspace.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 01/15/2021
+ms.custom:
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: johanho
-ms.search.validFrom: 2020-12-22
-ms.dyn365.ops.version: 10.0.17
+ms.search.form:
 ---
 
 # Set up the Asset management mobile workspace
@@ -57,12 +42,7 @@ To make asset management features available in the finance and operations (Dynam
 
 1. Select the **Asset Management** tile, and then select **Publish** on the toolbar. After a few seconds, you should receive a notification that states that the workspace has been successfully published. Additionally, the text on the tile should change to "In metadata - published."
 
-## Install and set up the finance and operations (Dynamics 365) mobile app
-
-1. Go to one of the following app stores to install the **Microsoft finance and operations (Dynamics 365)** app on your mobile device:
-
-    - [For Google Android devices](https://go.microsoft.com/fwlink/?linkid=850662)
-    - [For Apple iOS devices](https://go.microsoft.com/fwlink/?linkid=850663)
+## Set up the finance and operations (Dynamics 365) mobile app
 
 1. Open the finance and operations (Dynamics 365) app. The sign-in page should appear. In the **Sign in** field, enter your Supply Chain Management URL, or select a recent URL in the **Recent environments** list, and then tap **Connect**.
 

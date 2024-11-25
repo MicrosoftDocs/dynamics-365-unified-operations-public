@@ -6,9 +6,6 @@ description: You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a M
 author: twheeloc
 ms.date: 07/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,26 +25,18 @@ ms.dyn365.ops.version: Human Resources
 
 # Copy an instance
 
-_**Applies To:** Human Resources on the stand-alone infrastructure_ 
-
-> [!NOTE]
-> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
-> The finance and operations infrastructure doesn't support a copy instance function. You can deploy new environments and use database movements to create copies. For more information about self-service deployments, see [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). For more information about database movements on the finance and operations infrastructure, see [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
+> You can deploy new environments and use database movements to create copies. For more information about self-service deployments, see [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). For more information about database movements on the finance and operations infrastructure, see [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
 To copy an instance, keep the following tips in mind:
 
 - The Human Resources instance you want to overwrite must be a sandbox environment.
-
 - The environments you're copying from and to must be in the same region. You can't copy across regions.
-
 - You must be an Administrator in the target environment so you can sign into it after copying the instance.
-
 - When you copy the Human Resources database, you don't copy the elements (apps or data) that are contained in a Microsoft Power Apps environment. For information about how to copy elements in a Power Apps environment, see [Copy an environment](/power-platform/admin/copy-environment). The Power Apps environment you want to overwrite must be a sandbox environment. You must be a global tenant admin to change a Power Apps production environment to a sandbox environment. For more information about changing a Power Apps environment, see [Switch an instance](/dynamics365/admin/switch-instance).
-
 - If you copy an instance into your sandbox environment and want to integrate your sandbox environment with Dataverse, you must reapply custom fields to Dataverse tables. See [Apply custom fields to Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## Effects of copying a Human Resources database
@@ -59,11 +47,8 @@ To copy an instance, keep the following tips in mind:
 The following events occur when you copy a Human Resources database:
 
 - The copy process erases the existing database in the target environment. After the copy process is completed, you can't recover the existing database.
-
 - The target environment will be unavailable until the copy process is completed.
-
 - All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete data before other users are allowed back into the system.
-
 - Any user with the "System Administrator" security role must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 
 ## Copy the Human Resources database
@@ -74,11 +59,8 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 > When you copy an instance, the database is erased in the target instance. The target instance is unavailable during this process.
 
 1. Sign in to LCS, and select the LCS project that contains the instance that you want to copy.
-
 2. In your LCS project, select the **Human Resources App Management** tile.
-
 3. Select the instance to copy, and then select **Copy**.
-
 4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the **Copy status** field to be updated to **Completed**.
 
    ![[Select instance to overwrite.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
@@ -140,17 +122,11 @@ If you copy an instance into your sandbox environment and want to integrate your
 For each custom field that's exposed on Dataverse tables, do the following steps:
 
 1. Go to the custom field and select **Edit**.
-
 2. Unselect the **Enabled** field for each cdm_* entity that the custom field is enabled on.
-
 3. Select **Apply Changes**.
-
 4. Select **Edit** again.
-
 5. Select the **Enabled** field for each cdm_* entity that the custom field is enabled on.
-
 6. Select **Apply Changes** again.
-
 The process of unselecting, applying changes, reselecting, and reapplying changes prompts the schema to update in Dataverse to include the custom fields.
 
 For more information about custom fields, see [Create and work with custom fields](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).

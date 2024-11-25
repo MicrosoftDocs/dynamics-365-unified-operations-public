@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
-description: This article explains how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services to estimate the tasks and effort that are required in order to upgrade a code base.
+description: Learn how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services to estimate the tasks and effort that are required in order to upgrade a code base.
 author: ttreen
-ms.date: 09/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 106163
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: ttreen
+ms.topic: article
+ms.date: 09/12/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2023-07-23
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 50
-
 ---
 
 # Upgrade from AX 2012 - Estimate effort by using the Code upgrade service

@@ -1,15 +1,14 @@
 ---
 title: Belgium overview
-description: This article provides an overview of functionality specific to Belgium.
+description: Learn about functionality specific to Belgium, including outlines on CODA bank statements, export ledger transactions, and VAT declarations.
 author: AdamTrukawka
-ms.date: 05/27/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: belgium
 ms.author: atrukawk
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: belgium
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -50,7 +49,7 @@ For information about standard reports that can help you with the INTERVAT tax d
 
 ## Additional resources
 
-- [Microsoft Dynamics Localization Portal: Belgium report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Belgium.html) (requires CustomerSource account)
+<!-- - [Microsoft Dynamics Localization Portal: Belgium report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Belgium.html) (requires CustomerSource account) -->
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization and regulatory features](../../../fin-ops-core/fin-ops/lcs/country-region.md?toc=%2ffin-and-ops%2ftoc.json)

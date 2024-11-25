@@ -1,18 +1,17 @@
 ---
 title: WEEKNUM ER function
-description: This article provides information about how the WEEKNUM Electronic reporting (ER) function is used.
+description: Learn about how the WEEKNUM Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.date: 01/15/2022
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 01/15/2022
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-12-03
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 10.0.24
 ms.assetid: 
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # WEEKNUM ER function
@@ -35,7 +34,7 @@ A date value that represents the date to use to calculate the week of the year.
 
 `culture`: *[String](er-formula-supported-data-types-primitive.md#string)*
 
-The culture to use for the calculation. You can use culture codes that are supported in accordance with .NET [standards](/dotnet/api/system.globalization.cultureinfo.getcultures?view=net-5.0).
+The culture to use for the calculation. You can use culture codes that are supported in accordance with .NET [standards](/dotnet/api/system.globalization.cultureinfo.getcultures).
 
 ## Return values
 

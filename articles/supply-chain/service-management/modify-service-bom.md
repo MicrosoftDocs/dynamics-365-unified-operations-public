@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Modify a Service BOM 
-description: Modify a Service BOM. 
-author: sorenva
-ms.date: 05/03/2018
+description: Learn how to modify service BOMs, including step-by-step processes for updating service BOM elements and deleting service BOM lines.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/03/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAAgreementTable
 ---
 
 
@@ -67,7 +51,7 @@ You can record the history of an element in a service BOM. Every time that you u
 
 5.  In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.
 
-## See also
+## Related information
 
 [Template BOMs](template-boms.md)
 

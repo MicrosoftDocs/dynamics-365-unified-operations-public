@@ -4,27 +4,16 @@
 title: E-commerce site overview
 description: This article provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 11/05/2020
+ms.date: 05/28/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: stuharg
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # E-commerce site overview
@@ -75,7 +64,7 @@ You can add new channels by selecting **Add a channel**. To add new languages to
 
 ## Set up an Azure B2C tenant
 
-Dynamics 365 Commerce uses Azure Active Directory (Azure AD) business-to-consumer (B2C) to support user credential and authentication flows. For information about how to set up your Azure B2C tenant, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md), [Set up custom pages for user sign-ins](custom-pages-user-logins.md), and [Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md).
+Dynamics 365 Commerce uses Microsoft Entra business-to-consumer (B2C) to support user credential and authentication flows. For information about how to set up your Azure B2C tenant, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md), [Set up custom pages for user sign-ins](custom-pages-user-logins.md), and [Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md).
 
 ## Overview of the default site pages
 

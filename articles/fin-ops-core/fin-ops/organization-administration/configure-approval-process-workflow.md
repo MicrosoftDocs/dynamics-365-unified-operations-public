@@ -1,38 +1,22 @@
 ---
-# required metadata
-
 title: Configure approval processes in a workflow
-description: Use the following procedure to configure the properties of the approval process.
+description: Learn how to configure the approval processes in a workflow, including outlines on naming the approval process and specifying when notifications are sent.
 author: ChrisGarty
-ms.date: 01/24/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 195643
-ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 02/08/2024
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ---
 
 # Configure approval processes in a workflow
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Use the following procedure to configure the properties of the approval process.
 
@@ -142,14 +126,27 @@ You can send notifications to people when a document has been approved, rejected
 
 10. Repeat steps 3 through 9 for each event that you selected in step 2.
 
+
 ## Specify a final approver
 
-You can designate a final approver for scenarios where the approver is the person who submitted the document for approval and the "disallow approval by submitter" is being used. Follow these steps to specify a final approver.
+To require additional approval if the user that submitted the document also approves it, you can specify a final approver for the approval step.
 
 1. In the workflow editor, right-click the approval element, and then select **Properties** to open the **Properties** form.
 2. In the left pane, click **Advanced settings**.
 3. Select the **Use final approver** check box.
 4. In the list, select a user to be the final approver.
+
+
+## Prevent the submitter from approving steps in the workflow
+
+To prevent users that submit documents for approval from being to approve documents themselves, follow these steps: 
+1. Go to **System administration > Workflow > Workflow parameters > General > Approver**.
+2. Update the **Disallow approval by submitter** setting on the workflow to **Yes**. 
+
+By default, this is set to **No**, and users can approve the document if they are included in the approval step's assignment settings.
+
+If the workflow is set to **Disallow approval by submitter** and includes approval steps with a final approver, confirm that the final approver isn't a user that typically submits documents to workflow, since they won't be able to complete the approval.
+
 
 ## Set a time limit
 

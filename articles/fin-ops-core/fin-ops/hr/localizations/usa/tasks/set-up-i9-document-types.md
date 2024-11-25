@@ -1,34 +1,22 @@
 --- 
-# required metadata 
- 
 title: Set up Form I-9 document types
-description: This procedure shows how to view and set up document types that are used for I-9 verification. 
+description: Access a procedure that shows how to view and set up document types that are used for I-9 verification, including a step-by-step process. 
 author: ShielaSogge
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: USA
-# ms.search.industry: 
 ms.author: shielas
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 01/10/2022
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User 
+ms.search.region: USA
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up Form I-9 document types
 
 [!include [banner](../../../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../../../includes/peap-1.md)]
 
 This procedure shows how to view and set up document types that are used for I-9 verification. Before you set up I-9 document types, you must also set up the issuing agencies and identification types. The demo data company used to create this procedure is USMF, which includes examples of the issue agencies and identification types that are needed to complete the procedure.
 

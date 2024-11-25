@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Ledger settlement inquiry
-description: This article describes the Ledger settlement inquiry window  
+description: Learn about the Ledger settlement inquiry window, including an outline and step-by-step process for viewing ledger settlement transactions.  
 author: kweekley
-ms.date: 05/19/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerClosingSheet
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 05/19/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerClosingSheet
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Ledger settlement inquiry

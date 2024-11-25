@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Payment slip report for Europe
-description: This article provides information about payment slip reports for Europe.
+description: Learn about payment slip reports for Europe, including an outline on setting up a creditor ID number for financial institutions in Denmark.
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: OMLegalEntities, ProjFormletterParameters, CustFormletterParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264604
-ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.search.validFrom: 2016-11-30
+ms.search.form: OMLegalEntities, ProjFormletterParameters, CustFormletterParameters
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Payment slip report for Europe

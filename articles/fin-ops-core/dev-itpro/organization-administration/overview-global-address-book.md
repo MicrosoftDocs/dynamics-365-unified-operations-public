@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Global address book overview
 description: The global address book can help you understand the relationships among people and organizations that are associated with your organization.
 author: msftbrking
-ms.date: 07/25/2019
+ms.author: anisagrawal
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartyTable, DirPartyTableRoles
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.date: 08/05/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: brking
 ms.search.validFrom: 2016-02-28
+ms.search.form: DirPartyTable, DirPartyTableRoles
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
 ---
 
 # Global address book overview
@@ -36,11 +24,13 @@ The global address book is a centralized repository for master data that must be
 - The data shows the relationships that people and organizations have with other areas of the company. The relationship between two organizations changes when one organization has multiple roles, such as vendor and customer. Communication between the two organization also changes. There might be special agreements that can be negotiated to encourage a closer partnership with the other organization.
 - Setup and maintenance are easier. For example, when an address changes, the update must be made in only one place. All the other associated records are updated automatically.
 
+Any party in the global address book that's a legal entity, can't be deleted from the global address book. The **Delete** button is unavailable for these parties. 
+
 ## How the global address book works
 
 The following illustration shows how party records, party roles, locations, and transactions interact and relate to an address book. As the illustration shows, a party record can belong to one or more address books. Each party record can store one or more locations, or addresses, and is assigned a party role. The role that is assigned to the party record can have specific transactions types associated with it. The following sections provide more information about party roles, locations, and transaction types. The following image is a graphical representation of the ways that parties, party roles, locations, and transactions interact in relation to the global address book.
 
-[![Global address book interaction with AX entities and transactions.](../../fin-ops/organization-administration/media/address-book-structure-300x157.png)](/media/address-book-structure.png)
+:::image type="content" source="../../fin-ops/organization-administration/media/address-book-structure.png" alt-text="Global address book interaction with AX entities and transactions." lightbox="../../fin-ops/organization-administration/media/address-book-structure.png":::
 
 ### Party roles
 

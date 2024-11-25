@@ -1,16 +1,12 @@
 ---
 title: Buffer profile and levels
-description: This article provides information about buffer profiles and levels, which determine the minimum and maximum stock levels that should be kept for each decoupling point.
+description: Learn about buffer profiles and levels, which determine the minimum and maximum stock levels that should be kept for each decoupling point.
 author: t-benebo
-ms.date: 06/30/2022
-ms.topic: article
-ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2022-06-30
-ms.dyn365.ops.version: 10.0.28
+ms.topic: article
+ms.date: 06/30/2022
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
 ---
 
 # Buffer profile and levels
@@ -116,7 +112,7 @@ The first factor is the *lead time factor*. The value is a decimal value from 0 
 - **Medium lead time:** 0.41–0.60
 - **Short lead time:** 0.61–1.00
 
-The second factor is the *variability factor*. The value is a decimal value from 0 to 1. The higher the demand variability is, the lower the value should be. The Demand Driven Institute recommends the following ranges:
+The second factor is the *variability factor*. The value is a decimal value from 0 to 1. The higher the demand variability is, the higher the value should be. The Demand Driven Institute recommends the following ranges:
 
 - **Low variability:** 0.20–0.40
 - **Medium variability:** 0.41–0.60
@@ -175,7 +171,7 @@ This section describes how to implement your buffer zone strategy in Microsoft D
 Follow these steps to set up buffer values for a decoupling point.
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Select a released item that is set up as a decoupling point. (For more information, see [Inventory positioning](ddmrp-inventory-positioning.md).)
+1. Select a released item that is set up as a decoupling point. (Learn more in [Inventory positioning](ddmrp-inventory-positioning.md).)
 1. On the Action Pane, on the **Plan** tab, select **Item coverage**.
 1. On the **Item coverage** page, select an item coverage record that creates a decoupling point. (This record will show the name of a coverage group that is set up to create decoupling points.)
 1. Select the **General** tab.
@@ -193,13 +189,13 @@ Follow these steps to set up buffer values for a decoupling point.
 
     - **Order cycle** – Specify the number of days that must pass between purchase orders for the item. Set the value to *0* (zero) if no order restrictions exist. This field affects the maximum quantity buffer, as previously discussed in this article.
     - **Average daily usage** – You can optionally enter an estimated ADU for the item. This field is for informational purposes only. Usually, the value is automatically calculated as part of the buffer calculations.
-    - **Order spike threshold** – Specify the minimum number of daily sales of the item that qualify as a sales spike (unusually high demand). The system uses this field to increase the reorder quantity of planned orders in periods of high demand. For more information, see [Demand-driven planning](ddmrp-planning.md).
+    - **Order spike threshold** – Specify the minimum number of daily sales of the item that qualify as a sales spike (unusually high demand). The system uses this field to increase the reorder quantity of planned orders in periods of high demand. Learn more in [Demand-driven planning](ddmrp-planning.md).
 
 ### <a name="calc-lead-time"></a>Calculate or enter decoupled lead times
 
 For items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers), follow these steps to calculate or enter decoupled lead times for a decoupling point item.
 
-1. Open the **Item coverage** page for your decoupling point item. (For more information, see [Set up buffers for a decoupling point item](#set-up-buffers).)
+1. Open the **Item coverage** page for your decoupling point item. (Learn more in [Set up buffers for a decoupling point item](#set-up-buffers).)
 1. Select an item coverage record that creates a decoupling point.
 1. Select the **Buffer values** tab.
 1. If no time periods are shown in the grid, on the Action Pane, on the **Buffer values** tab, select **Add time periods**. The system fills the grid with rows for each daily or weekly time period, depending on whether the **Min, max, and re-order point period** field for the [coverage group](ddmrp-inventory-positioning.md) is set to *Daily* or *Weekly*. The system will add enough rows to reach the time fence that is specified for the coverage group that is assigned to the item.
@@ -217,7 +213,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 
 For items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers), follow these steps to calculate or enter the ADU for a decoupling point item.
 
-1. Open the **Item coverage** page for your decoupling point item. (For more information, see [Set up buffers for a decoupling point item](#set-up-buffers).)
+1. Open the **Item coverage** page for your decoupling point item. (Learn more in [Set up buffers for a decoupling point item](#set-up-buffers).)
 1. Select an item coverage record that creates a decoupling point.
 1. Select the **Buffer values** tab.
 1. If no time periods are shown in the grid, on the Action Pane, on the **Buffer values** tab, select **Add time periods**. The system fills the grid with rows for each daily or weekly time period, depending on whether the **Min, max, and re-order point period** field for the [coverage group](ddmrp-inventory-positioning.md) is set to *Daily* or *Weekly*. In addition, default values for the **Lead time factor** and **Variability factor** fields are taken from the coverage group. You can edit these values for each row as required.

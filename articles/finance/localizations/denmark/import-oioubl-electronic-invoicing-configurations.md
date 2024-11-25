@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Import OIOUBL electronic invoicing configurations
-description: This procedure shows how to import OIOUBL electronic invoice configurations. 
+description: Learn how to import OIOUBL electronic invoice configurations, including a link to resource that provides more information on electronic invoices. 
 author: mrolecki
-ms.date: 02/02/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Denmark
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 02/02/2022
+ms.custom: 
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Denmark
+ms.search.validFrom: 2016-06-30
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Import OIOUBL electronic invoicing configurations

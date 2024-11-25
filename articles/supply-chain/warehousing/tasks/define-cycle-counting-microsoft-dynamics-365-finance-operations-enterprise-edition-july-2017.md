@@ -1,27 +1,15 @@
 --- 
-# required metadata 
- 
 title: Define cycle counting 
-description: Cycle counting is a warehouse process that you can use to audit on-hand inventory items. 
+description: Learn about cycle counting, which is a warehouse process that you can use to audit on-hand inventory items, including a step-by-step process. 
 author: Mirzaab
-ms.date: 08/12/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
-ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/12/2019
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 ---
+
 # Define cycle counting 
 
 [!include [banner](../../includes/banner.md)]
@@ -44,7 +32,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 5. In the **Mode** field, select 'Work'.
 6. Set the **Use existing work** option to Yes. When you set this option to Yes, the system will look for existing work when the mobile device menu item is used.  
 7. In the **Directed by** field, select 'System directed'. When "System directed" is selected, the warehouse worker will be directed to open work that is in defined work classes. (We will create these work classes next.)  
-8. Expand the **Work classes** fastTab. Next, we will create two work classes that will be used with this mobile device menu item. When the menu item is used, these work classes will be queried, and the work that has the highest priority will be shown to the user.  
+8. Expand the **Work classes** FastTab. Next, we will create two work classes that will be used with this mobile device menu item. When the menu item is used, these work classes will be queried, and the work that has the highest priority will be shown to the user.  
 9. Click **New**.
 10. In the**Work class ID** field, select a value.
 11. Click **New**.

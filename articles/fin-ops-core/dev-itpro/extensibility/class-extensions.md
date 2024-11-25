@@ -1,15 +1,14 @@
 ---
 title: Class extension model in X++
-description: This article describes the new class extension model in X++.
+description: Learn about the new class extension model in X++, including overviews on the effective class concept and extension class variations.
 author: pvillads
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: pvillads
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8

@@ -1,15 +1,13 @@
 ---
 title: Mobile device container packing policies
-description: This article provides information about mobile device container packing policies, which let you control the packing process that's supported by the Warehouse Management mobile app.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn about mobile device container packing policies, which let you control the packing process that's supported by the Warehouse Management mobile app.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 01/30/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Mobile device container packing policies
@@ -87,7 +85,7 @@ For a mobile device container packing policy to take effect, you must assign it 
     - **Activity code** – This field must be set to *Pack inventory into containers*.
     - **Packing policy ID** – Select the mobile device container packing policy to use with the menu item.
 
-## Additional resources
+## Related information
 
 - [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)
 - [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md)

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Update standard costs in a manufacturing environment
-description: This article provides guidance about how to update standard costs in a manufacturing environment. 
-author: JennySong-SH
-ms.date: 06/20/2017
+description: Learn how to update standard costs in a manufacturing environment. The type of update affects the steps that you must complete to update standard costs.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CostingVersion, InventStdCostConv
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: CostingVersion, InventStdCostConv
 ms.assetid: 3a7c3d13-8dbc-442d-a281-ac0ebe99ec83
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Update standard costs in a manufacturing environment

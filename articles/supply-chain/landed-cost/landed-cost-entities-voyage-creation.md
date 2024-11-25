@@ -1,16 +1,12 @@
 ---
 title: Voyage creation entities
-description: This article provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
-author: yufeihuang
-ms.date: 05/27/2022
+description: Learn about voyage creation data entities, which group the data entities that are required to create a working voyage with a table providing mappings for names.
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 05/27/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yufeihuang
-ms.search.validFrom: 2022-05-27
-ms.dyn365.ops.version: 10.0.28
+ms.search.form:
 ---
 
 # Voyage creation entities

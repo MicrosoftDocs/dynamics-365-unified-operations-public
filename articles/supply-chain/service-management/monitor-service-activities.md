@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Monitor service activities  
-description: The Dispatch board form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.
-author: sorenva
-ms.date: 05/04/2018
+description: The Dispatch board form provides a status update for the scheduled service activities, and tools for tracking the general flow of service orders in your company.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/04/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMADispatchBoard
 ---
 
 
@@ -51,13 +35,12 @@ While monitoring the day's service activity, you notice that John, a service tec
 
 Click **Service management** \> **Periodic** \> **Dispatch board**.
 
-## See also
+## Related information
 
 [Prioritize service orders](prioritize-service-orders.md)
 
 [View the status of service orders](view-the-status-of-service-orders.md)
 
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 

@@ -2,18 +2,15 @@
 title: Data action instance cache
 description: This article describes how to use the data action instance cache in Microsoft Dynamics 365 Commerce to increase site performance by reducing the size of data action payloads that are sent to client browsers.
 author: samjarawan
-ms.date: 08/12/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.13
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Data action instance cache

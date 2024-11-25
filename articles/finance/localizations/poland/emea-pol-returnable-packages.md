@@ -1,20 +1,17 @@
 ---
 title: Returnable packaging for Poland
-description: The article describes how to set up and use returnable packaging for Poland.
+description: Learn how to set up and use returnable packaging for Poland, including prerequisites and an outline on setting up returnable packages.
 author: mrolecki
-ms.date: 04/10/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Poland
 ms.author: mrolecki
+ms.topic: article
+ms.date: 04/10/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 273043
-ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
 ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, PlInventPackageTrans
+ms.dyn365.ops.version: Version 1611
+ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
 ---
 
 # Returnable packaging for Poland

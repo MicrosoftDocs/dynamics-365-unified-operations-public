@@ -1,27 +1,13 @@
 ---
-# required metadata
-
-title: Create and manage Customer portal users (contains video)
-description: This article explains how to create Customer portal user accounts and set permissions for them.
-author: Henrikan
-ms.date: 07/31/2020
+title: Create and manage Customer portal users
+description: Learn how to create Customer portal user accounts and set permissions for them, including outlines on the prerequisite setup and the invitation process.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 07/31/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
-ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
+ms.search.form:
 ---
 
 # Create and manage Customer portal users
@@ -59,7 +45,7 @@ Before you invite a customer to join the Customer portal, make sure that the cus
 
 After a contact is created, you should be able to see it in Supply Chain Management.
 
-For more information, see [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
+Learn more in [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
 ## Out-of-box web roles and table permissions
 

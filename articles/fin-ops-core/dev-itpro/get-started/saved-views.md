@@ -1,36 +1,23 @@
 ---
-# required metadata
-
 title: Saved views
-description: This article describes how to use the saved views features.
+description: Learn about how to use the saved views features, including overviews on switching between views, changing default views, and creating and modifying views.
 author: jasongre
-ms.date: 11/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/21/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-07-31
+ms.search.form: DefaultDashboard
 ms.dyn365.ops.version: Platform update 28
-
 ---
 
 # Saved views
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!include [preview banner](../../../finance/includes/preview-banner.md)]
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 ## Introduction
 
@@ -51,12 +38,7 @@ After views have been made available for an environment, the top of any page tha
 There are two size variations to the view selector: 
 
 - **Large view selectors** – Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters and sorts. Because filters and sorts are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types. Grouping in a grid can also be saved to views on a page with large view selectors. 
-    
-    [![Large view selector that supports query modifications on the view.](../../fin-ops/get-started/media/views-largeViewSelector.png)](/media/views-largeViewSelector.png)
-
 - **Small view selectors** – All other full-screen pages (except workspaces and the dashboard) have a smaller view selector that appears next to the page caption. Views on these pages include only personalizations, not user-defined filters. On these pages, the caption or record title is often the most important information at the top of the page. The smaller size of the view selector also reflects the lower frequency of view switching that is expected on these pages. 
-    
-    [![Small view selector that does not support query modifications on the view.](../../fin-ops/get-started/media/views-smallViewSelector.png)](/media/views-smallViewSelector.png)
  
 If you select the view name, the view selector is opened and shows the list of available views for the page.
 
@@ -74,8 +56,6 @@ To switch to a different view, first open the view selector and then select the 
 Unlike traditional personalization, views aren't automatically saved when a user personalizes the page, or when a user applies a filter to a list or sorts it. An explicit action is required to save these changes to a view. This requirement gives users the flexibility to create a view before or after the changes that are associated with that view have been made. It also ensures that view definitions aren't unintentionally changed by one-time filters or personalizations. Note that typical page usage items (for example, column widths, or the expanded or collapsed state of sections) are automatically saved to the current view, even for locked views.
 
 To ensure that the current state of the view is known, when you start to change a view by personalizing or filtering it, an asterisk (\*) appears next to the current view name. This symbol indicates that you're looking at an unsaved, modified version of that view.
-
-[![Unsaved changes on a view.](../../fin-ops/get-started/media/views-unsavedChanges.png)](/media/views-unsavedChanges.png)
 
 If you want to save those changes, follow these steps.
 
@@ -158,7 +138,7 @@ To publish a view, follow these steps:
     >    - ** If the **Improved legal entity support for saved views** feature is turned on, and you publish the view to a subset of legal entities, the default view for those legal entities will be changed for every targeted user.
     >
     > - If a user has roles where multiple views are published as the default view, the last view that was published will be used as the user's default view. 
-    > - Publishing will not work for role assignments made using AAD groups. 
+    > - Publishing will not work for role assignments made using Microsoft Entra groups. 
 
 8. Add the security roles that correspond to the users who are being targeted by this view. 
 9. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
@@ -253,4 +233,3 @@ If you publish a view to a specific legal entity, but you don't publish that vie
 - If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities. This behavior occurs because the feature enables views (including personal views) to be linked to specific legal entities.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

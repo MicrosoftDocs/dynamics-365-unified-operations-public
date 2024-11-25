@@ -1,15 +1,15 @@
 ---
 title: Prerequisites for generating an FEC audit file in France
-description: This article describes the prerequisites that must be set up before you can generate a compliant Fichier des écritures comptables (FEC) audit file in France.
+description: Learn about the prerequisites that must be set up before you can generate a compliant Fichier des écritures comptables (FEC) audit file in France.
 author: liza-golub
-ms.date: 07/27/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: France
 ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: France
 ---
 
 # Prerequisites to generate an FEC audit file in France

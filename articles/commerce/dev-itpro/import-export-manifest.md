@@ -2,14 +2,15 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 09/08/2023
-ms.topic: article
+ms.date: 08/23/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: asharchw
 ms.search.validFrom: 2023-03-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Bulk import and export digital assets using manifests
@@ -20,16 +21,36 @@ This article describes how to bulk import and export digital assets by using man
 
 You can perform manifest-based asset import and export operations in the Commerce site builder media library. Manifest-based operations require (during import) or produce (during export) a manifest file. This file is a tab-delimited .tsv text file that lists all assets that are part of the operation. For export operations, the manifest includes all asset information, including read-only metadata that specifies details such as when assets were created and published. For import operations, the manifest has to include only a subset of asset information for each asset. The remaining fields are optional.
 
-When manifest documents are imported, they are processed row by row. If the processing of any row fails for any reason, a description of the error is included in the resulting manifest. You can download that manifest from the job details view (**Site settings \> Jobs**) in site builder. A failure of one of multiple entries in a manifest won't prevent the rest of the manifest from being processed. If an error requires that you fix something in a manifest (for example, an incorrect source URL), you can use the resulting manifest from the first run to fix and reprocess the assets that generated errors.
+When manifest documents are imported, they're processed row by row. If the processing of any row fails for any reason, a description of the error is included in the resulting manifest. You can download that manifest from the job details view (**Site settings \> Jobs**) in site builder. A failure of one of multiple entries in a manifest doesn't prevent the rest of the manifest from being processed. If an error requires that you fix something in a manifest (for example, an incorrect source URL), you can use the resulting manifest from the first run to fix and reprocess the assets that generated errors.
 
 Here are the main use cases for manifest-driven asset import and export operations:
 
-- Uploading product media and other digital assets to the system during onboarding
-- Modifying asset metadata in bulk (for example, adding specific keywords to a large number of assets)
-- Performing search and replace operations on the metadata (for example, rebranding)
-- Performing actions in bulk (for example, publishing or deleting assets)
+- Uploading product media and other digital assets to the system during onboarding.
+- Modifying asset metadata in bulk (for example, adding specific keywords to a large number of assets).
+- Performing search and replace operations on the metadata (for example, rebranding).
+- Performing actions in bulk (for example, publishing or deleting assets).
+
+## Bulk import and export product media
 
 Manifests can also be used to import and export product media assignments. The schema that's used for product media assignments is an extended version of the plain asset management manifest schema. For information about product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
+
+> [!NOTE]
+> To use bulk import and export product media assignment features for **Omnichannel (Channel) - Neutral (locale)**, you must configure Commerce headquarters with site builder's application ID. This action is a temporary requirement that will be made unnecessary in a future update.
+
+To configure Commerce headquarters with site builder's application ID, follow these steps:
+
+1. Create a new user account in headquarters by following the instructions in [Manually add a new user](/dynamics365/fin-ops-core/fin-ops/sysadmin/create-new-users#manually-add-a-new-user). The new user account is used by the bulk CMS service to access headquarters product data. The account name can be anything (for example, "Bulk operations user").
+1. To assign the quality control manager role to the new user account, follow the instructions in [Manually assign users to roles](/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) .
+
+    > [!NOTE]
+    > The bulk CMS service only requires read-only privileges to access headquarters product data.
+
+1. In headquarters, search for "entra" and select **Microsoft Entra ID applications** from the search results.
+1. On the Action Pane, select **New**.
+1. Copy and paste the following site builder application ID GUID into the new record's **Client Id** field: `3530b95b-aca8-4164-b78e-0c07cbfd0681`.
+1. For **Name**, enter a friendly name (for example, "CMS Bulk Operations").
+1. In the **User Id** field, select the new user.
+1. On the Action Pane, select **Save**.
 
 ## Manifest schema
 
@@ -47,30 +68,30 @@ The following table shows the schema for asset import and export operations.
 | MediaChannel                         | The name of the e-commerce channel from which the asset is exported, or to which the asset is imported. |
 | MediaLocale                          | The locale of the asset. |
 | MediaType                            | The type of the asset. Allowed field values are *Image*, *Video*, or *File*. |
-| MediaVersion                         | The version number of the asset. In combination with the `MediaVersionMismatchAction` field, you can control import behavior in case the media asset has been modified between export and import. |
+| MediaVersion                         | The version number of the asset. In combination with the `MediaVersionMismatchAction` field, you can control import behavior in case the media asset was modified between export and import. |
 | MediaCategory                        | The Commerce media category. Allowed field values are *None* (default), *Products*, *Categories*, *Customers*, *Workers*, *Catalogs*, *Size*, *Color*, or *Style*. |
-| MediaSourceProvider                  | The external system from which the asset is imported. In combination with the `MediaSourceId` field, this field is used to determine if the asset already exists in the system and if it should be updated. If `MediaSourceProvider` and `MediaSourceId` fields are not populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used instead. |
+| MediaSourceProvider                  | The external system from which the asset is imported. In combination with the `MediaSourceId` field, this field is used to determine if the asset already exists in the system and if it should be updated. If `MediaSourceProvider` and `MediaSourceId` fields aren't populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used instead. |
 | MediaSourceId                        | The identifier in the external system. |
 | MediaReferenceUrl                    | The URL of the external provider (instead of `MediaImportPath`). |
 | MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. Allowed field values are *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
 | MediaAction                          | Action that should be applied to the asset during manifest import. Allowed field values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
 | MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. Allowed field values are *UseExisting* or *Overwrite*. |
 | MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. Allowed field values are *UseExisting* or *Overwrite*. |
-| MediaImportPath                      | Either the HTTP source URL or the file name. Media asset(s) will be imported from this location, either via local file upload or the system fetching the media asset binary from a publicly accessible external web location). |
+| MediaImportPath                      | Either the HTTP source URL or the file name. Media assets are imported from this location, either via local file upload or the system fetching the media asset binary from a publicly accessible external web location). |
 | ImageAltText                         | Alt text for an image asset. |
 | MediaSearchTags                      | Keywords that describe the asset (comma separated). |
 | MediaCaption                         | The caption for a video asset. |
 | MediaDisplayName                     | The display name of the asset. The value must be unique within a site. |
 | MediaDescription                     | A description of a video asset. |
 | VideoCaptionImportPath               | Publicly accessible HTTP source URL of the captions for a video asset. |
-| VideoThumbnailImportPath             | Publicly accessible HTTP source URL of the thumbnail for a video asset. If none is specified, it's automatically generated. |
+| VideoThumbnailImportPath             | Publicly accessible HTTP source URL of the thumbnail for a video asset. If none is specified, the source URL is generated automatically. |
 | VideoTranscriptImportPath            | Publicly accessible HTTP source URL of the transcript for a video asset. |
 | VideoAudioTrackImportPath            | Publicly accessible HTTP source URL of the additional audio track for a video asset. |
 | VideoDescriptiveAudioTrackImportPath | Publicly accessible HTTP source URL of the descriptive audio track for a video asset. |
 | VideoPlaytime                        | The playtime of a video asset (in seconds). |
 | MediaCreatedOn                       | The date and time when the asset was created. |
 | MediaLastModifiedOn                  | The date and time when the asset was last modified. |
-| MediaPublished                       | A *true*/*false* value that specifies whether the asset has been published. |
+| MediaPublished                       | A *true*/*false* value that specifies whether the asset is published. |
 | MediaPublishedOn                     | The date and time when the asset was published. |
 | MediaPublishedURL                    | The URL of the published asset. |
 | MediaPreviewURL                      | The preview URL for the asset (requires sign-in). |
@@ -129,7 +150,7 @@ The following table shows the schema extension for product media assignments.
 | EntityAssignmentCurrentPublishState | The publish state of the assignment. |
 | EntityAssignmentAction              | Action that should be applied on the product media assignment during manifest import. Allowed field values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
 | EntityCheckedOutAction              | Import behavior if the product media assignment is checked out for editing. Allowed field values are *UseExisting* or *Overwrite*. |
-| EntityVersionMismatchAction         | Import behavior if the existing product media assignment in the system has been updated (version differs) between the export and import of the manifest. Allowed field values are *UseExisting* or *Overwrite*. |
+| EntityVersionMismatchAction         | Import behavior if the existing product media assignment in the system was updated (version differs) between the export and import of the manifest. Allowed field values are *UseExisting* or *Overwrite*. |
 | MediaGroup                          | The media group of the asset. Allowed field values are *Primary* or *Additional*. |
 | MediaPurpose                        | The purpose of the asset (free text). |
 | MediaDisplayOrder                   | The display order. |
@@ -194,9 +215,10 @@ To bulk export an asset manifest, follow these steps.
 1. In site builder, go to the site or omnichannel that you want to export the manifest from.
 1. Go to **Media library**.
 1. Select the assets that you want to export, and then select **Bulk export**. Alternatively, to export all media assets, select **Export entire library**.
-1. Enter a name and description for the export job, review the selected media, and then select **Export**.
-
-You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. Enter a name and description for the export job, review the selected media, and then select **Export**. You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. When the export job is complete, go to **Job \> Past jobs**.
+1. Select the completed export job.
+1. In the right pane, select **Download manifest** to download the manifest to your local machine.
 
 ### Bulk export a product media assignment manifest
 
@@ -208,9 +230,10 @@ To bulk export a product media assignment manifest, follow these steps.
 1. Select **Export media assignments for all products** or **Export media assignments for specific products**, and then select **Next**.
 1. If you selected **Export media assignments for specific products**, under **All products**, select the products that you want to export the media assignments from, and then select **Next**. If you selected **Export media assignments for all products**, skip ahead to step 6.
 1. If you want to export all locales, not just the currently selected locale, select the **Export all locales** checkbox.
-1. Select **Export product media**.
-
-You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. Select **Export product media**. You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. When the export job is complete, go to **Job \> Past jobs**.
+1. Select the completed export job.
+1. In the right pane, select **Download manifest** to download the manifest to your local machine.
 
 ## Additional resources
 

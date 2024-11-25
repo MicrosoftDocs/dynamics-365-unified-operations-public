@@ -1,15 +1,13 @@
 ---
 title: Configure Supply risk assessment
-description: This article describes how to enable and set up Supply risk assessment.
+description: Learn how to enable and set up Supply risk assessment, including prerequisites and an outline and process on configuring thresholds.
 author: cabeln
 ms.author: cabeln
+ms.topic: how-to 
+ms.date: 05/22/2024 
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: 
-ms.topic: how-to 
-ms.date: 10/27/2022 
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Configure Supply risk assessment
@@ -47,7 +45,7 @@ Use the following procedure to configure the feature by selecting the minimum ra
 
 When you first turn on and set up the feature, the **Supply risk assessment** workspace won't show any data. However, because the system periodically updates the data, the workspace will eventually show data. Alternatively, you can manually initialize or refresh the data as described in the following procedure.
 
-1. Go to **Procurement and sourcing \> Workspaces \> Supply risk assessment**. 
+1. Go to **Procurement and sourcing \> Workspaces \> Supply risk assessment**.
 
     > [!NOTE]
     > You don't have to do anything the **Supply risk assessment** workspace right now. However, you must visit it at least once after you enable the feature, to make the required data cache configuration available.

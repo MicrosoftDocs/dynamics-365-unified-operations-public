@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Physical and financial updates
-description: This article provides an overview of which types of transactions increase or decrease inventory quantities. 
-author: JennySong-SH
-ms.date: 06/20/2017
+description: Access an overview of which types of transactions increase or decrease inventory quantities, including overviews on physical and financial increases. 
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventTrans, InventTransVoucher
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: InventTrans, InventTransVoucher
 ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Physical and financial updates

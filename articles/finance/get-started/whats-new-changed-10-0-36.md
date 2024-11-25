@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.36 (October 2023)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.36 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.36 preview release distributed in October 2023.
 author: twheeloc
-ms.date: 07/28/2023
-ms.topic: faq
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: faq
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 07/22/2024
+ms.reviewer: twheeloc
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.36
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.36 (October 2023)
@@ -65,6 +52,8 @@ The following table lists the feature enhancements that are included in this rel
 |--------------|--------------|------------------|
 | General Ledger | Enhanced main account delete functionality | Main account records along with master records used in a financial journal have improved delete behavior. The enhanced behavior scans to check if the records are used in a transaction or on a setup page. The scan results shows what to clear (if possible) and try the delete action again.| 
 | Tax regulatory reporting | Tax declaration model mapping | This enhancement impacts all VAT declarations that use the Tax declaration model mapping: Austria, Bahrain, Belgium, Czechia, Denmark, Egypt, Finland, France, Germany, Hungary, Indonesia, Malaysia, Netherlands, New Zealand, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom. The new version of the [Tax declaration model mapping - 136.302](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=819950&dbType=3&qc=8f64cac76f77df0328c110150b0ba0875154bb6f6bda44a38c5af33202fb172f) or higher, significantly improves performance and memory consumption of all dependent VAT declarations and covers more credit-note specific scenarios. |
+| Data Management | Job history cleanup | By default, job history entries and related staging table data that are older than 90 days are automatically deleted.[More details.](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md)| 
+| Revenue and expense deferrals | Cost deferrals for stocked service items | Stocked service items will now post with both consumption and revenue deferrals. Previously, only revenue deferrals were created for stocked service items.| 
 
 ## Features turned on by default in this release
 
@@ -83,6 +72,7 @@ The following table lists the features that are turned on by default in version 
 | New voucher and date for new transactions in the advanced bank reconciliation bank statement | On by default | Cash and bank management |
 | Ability to post detailed vendor and customer payments, but summarize amounts to bank account | On by default | Cash and bank management |
 | Time zone for importing bank statements using Electronic reporting | On by default | Cash and bank management |
+| Optimized authorization check for POS user using external identity | Mandatory | Employee management |
 
 ## Features removed from Feature management
 

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Settlement overview
-description: This article provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
-author: angelad116
-ms.date: 07/30/2021
+description: Learn about the settlement process, including outliens about transaction types that can be settled and the timing and process for settling them.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.date: 05/06/2024
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2018-10-31
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 ms.dyn365.ops.version: 8.1
-
+ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ---
 
 # Settlement overview
@@ -79,22 +67,6 @@ Settlements can also generate transactions. For example, the settlement of an in
 
 When you try to settle a transaction, you might notice a symbol that indicates that the transaction is marked in another location. In this case, you can select the transaction on the **Settle transactions** page and then select **Inquiry \> Settlement from the settlement window**. The view for this inquiry shows journals, sales orders, invoices, payment proposals, and customer locations that might be blocking the transaction from settlement. To resolve the issue, you can select the link to go directly from the inquiry to the blocked location. You can then update the document with the adjustments that are required to settle it. You can also use the **Marked** indicator to identify other documents that are included in the same blocking location.
 
-## Resolve issues with transactions that can't be settled
-
-Sometimes, you can't settle transactions because another activity is currently processing the document. If you try to settle the transactions, an error occurs, because those transactions are being used. To fix this issue, you can use the **Marked transaction details** page to find transactions that are marked for settlement and identify any other processes that are accessing them.
-
-Transactions are marked for settlement either when vendor invoices are being paid or when customers pay their open invoices. Occasionally, these invoices might already be marked for settlement. Therefore, users can't select them for payment. The invoices might be marked by another customer payment journal, sales order, vendor payment journal, or purchase order in the current legal entity or another legal entity.
-
-If a transaction is blocked for settlement when you're entering a customer payment, open the **Customer marked transaction details** page (**Accounts receivable \> Periodic tasks \> Customer marked transaction details**). To quickly identify where a transaction is blocked, you can set any of the following selection parameters: **Customer account**, **Voucher**, **Date**, or **Invoice**. If you don't set any selection parameters, the system shows all blocked documents from the current company or another company that you select. After the transaction that has been blocked for settlement is identified, you can select it and then select **Unmark selected transactions**. The selected transaction is then removed from any journal that includes it. However, the document isn't removed from the other location. Only the marking information is removed from that journal.
-
-If a transaction is blocked for settlement when you're entering a vendor payment, open the **Vendor marked transaction details** page (**Accounts payable \> Periodic tasks \> Vendor marked transaction details**). To quickly identify where a transaction is blocked, you can set any of the following selection parameters: **Vendor account**, **Voucher**, **Date**, or **Invoice**. If you don't set any selection parameters, the system shows all blocked documents from the current company or another company that you select. After the transaction is identified, you can select it and then select **Unmark selected transactions** to fix the blocking issue. The selected transaction is then removed from any other journal where it's selected. However, the document isn't removed from the other location. Only the marking information is removed from that journal.
-
-To identify all blocked documents, open the **All marked transaction details** page (**Accounts receivable \> Periodic tasks \> All marked transaction details** or **Accounts payable \> Periodic tasks \> All marked transaction details**). To quickly identify where a transaction is blocked, you can set any of the following selection parameters: **Customer account**, **Vendor account**, **Voucher**, **Date**, or **Invoice**. If you don't set any selection parameters, the system shows all blocked documents from the current company or another company that you select. After the transaction is identified, you can select it and then select **Unmark selected transactions** to fix the blocking issue. The selected transaction is then removed from any other journal where it's selected. However, the document isn't removed from the other location. Only the marking information is removed from that journal.
-
-Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** Cash and bank management
-- **Feature name:** Marked transaction detail form
 
 ## Additional resources
 

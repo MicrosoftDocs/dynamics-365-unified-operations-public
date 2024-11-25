@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Manage standard cost updates
-description: Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach. 
-author: JennySong-SH
-ms.date: 01/15/2021
+description: Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CostingVersion, InventItemPrice, InventParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/15/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 ms.assetid: 468de7af-c7b5-4345-bd5a-ba3aa5a900cc
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Manage standard cost updates

@@ -1,40 +1,30 @@
 ---
 title: Scripts for resolving issues in on-premises environments
-description: This article will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
+description: Learn scripts that you can use to resolve issues in on-premises environments, including PowerShell scripts for script execution preparation.
 author: faix
-ms.date: 01/02/2023
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
+ms.topic: article
+ms.date: 10/07/2024
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-11-30
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 30
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Scripts for resolving issues in on-premises environments
 [!include [banner](../includes/banner.md)]
 
-This article will serve as a central repository for scripts that you can use to fix issues in on-premises environments. These scripts must usually be run as pre-deployment or post-deployment scripts.
+This article serves as a central repository for scripts that you can use to fix issues in on-premises environments. These scripts must usually be run as predeployment or post-deployment scripts.
 
 For more information about how to resolve issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
 
 ## Prepare your environment for script execution
 
-1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
+1. Configure the execution of predeployment and post-deployment scripts. For more information, see [Local agent predeployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
 2. Add the following code to your Predeployment.ps1 script.
 
     ```powershell
@@ -58,6 +48,10 @@ For more information about how to resolve issues in on-premises environments, se
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
+
+    # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
+    # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
+    #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -136,7 +130,7 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG\_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue that occurs when Financial Reporting is deployed in some versions of the platform. For more information about this issue, see [Could not load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
+The following script is used to fix an issue that occurs when Financial Reporting is deployed in some versions of the platform. For more information about this issue, see [Couldn't load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
 
 ```powershell
 param (
@@ -193,7 +187,7 @@ else
 
 ## <a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
 
-The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform. This script should not be used from Application version 10.0.35 or later.
+The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform. This script shouldn't be used from Application version 10.0.35 or later.
 
 ```powershell
 param (
@@ -309,7 +303,7 @@ The following script is used to change the account the AOS runs under from an Ac
 
 > [!NOTE]
 > This script can only be used starting with version 10.0.17.
-> You will need to reinstall the printers on each AOS node as they are not available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
+> You need to reinstall the printers on each AOS node as they are not available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
 > This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
 
 ```powershell
@@ -433,5 +427,103 @@ $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 Write-Output "Successfully updated the configuration and enabled DixfService."
 ```
 
+## <a name="disableMR"></a>TSG\_DisableMRDeployment.ps1
+
+The following script is used to prevent the Financial Reporting service from being deployed.
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [string]
+    $AgentShare
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$modulesJsonPath = "$basePath\SetupModules.json"
+
+$modulesJson = Get-Content $modulesJsonPath | ConvertFrom-Json
+
+Write-Host "Disabling FinancialReporting component..."
+$modulesJson.components = $modulesJson.components | Where-Object name -ne "financialreporting"
+$modulesJson | ConvertTo-Json -Depth 20 | Out-File $modulesJsonPath
+Write-Host "Finished Disabling FinancialReporting component."
+```
+
+## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
+
+The following script can be used for older environments to configure SSRS with HTTPS and enbable the gMSA account that is used in new configurations.
+
+>[!NOTE]
+>If you have used an IP address in LCS for your SSRS server, you'll need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page then Maintain > Update Settings
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+	[Parameter(Mandatory=$true)]
+    [string]
+    $ssrsSslCertificateThumbprint,
+	
+	[Parameter(Mandatory=$true)]
+    [string]
+    $principalUserAccountName
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.biReporting.reportingServers.value = $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value
+        $component.parameters.biReporting.ssrsUseHttps.value = $true
+		$component.parameters.biReporting.ssrsHttpsPort.value = 443
+    }
+
+    if($component.name -eq "ReportingServices")
+    {
+        $component.parameters.enableSecurity.value = $true
+        $component.parameters.ssrsSslCertificateThumbprint.value = $ssrsSslCertificateThumbprint
+		$component.parameters.ssrsHttpsPort.value = 443
+		$component.parameters.reportingServers.value = $component.parameters.ssrsServerFqdn.value
+		$component.parameters.infrastructure.principalUserAccountType = "ManagedServiceAccount"
+		$component.parameters.infrastructure.principalUserAccountName = $principalUserAccountName
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
+Write-Output "Successfully updated the configuration HTTPS (443) for Reporting Services"
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

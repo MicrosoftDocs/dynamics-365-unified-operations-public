@@ -1,21 +1,19 @@
 ---
 title: Design the relationships between organizational units
-description: This procedure walks through how to design the relationship between organizational units.
+description: This procedure describes how to design the relationship between organizational units in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/29/2018
+ms.date: 05/28/2024
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.search.industry: Retail
 ms.search.form: 
   - OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection
   - HierarchyPublishAndCloseForm
+ms.custom: 
+  - bap-template
 ---
 # Design the relationships between organizational units
 

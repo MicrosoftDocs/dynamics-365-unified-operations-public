@@ -1,15 +1,14 @@
 ---
 title: Daily operations for advance holders in Russia
-description: This article provides information about daily operations, such as handling cash and closing balances, for advance holders for Russia.
-author: mrolecki
-ms.date: 10/25/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about daily operations, such as handling cash and closing balances, for advance holders for Russia, including an outline on creating disbursement slips.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: mrolecki
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Invoice subscription transactions 
-description: Invoice subscription transactions 
-author: sorenva
-ms.date: 05/03/2018
+description: Learn how you can invoice subscription transactions, including a step-by-step process for invoicing subscription transactions.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/03/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMASubscriptionTable
 ---
 
 

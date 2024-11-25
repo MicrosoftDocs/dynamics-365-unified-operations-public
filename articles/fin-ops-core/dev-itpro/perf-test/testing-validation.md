@@ -1,15 +1,13 @@
 ---
 title: Testing and validations
-description: This tutorial shows you how to create and run test cases.
-author: gianugo
-ms.date: 04/14/2020
+description: Learn about how to create and run test cases, including prerequisites, key concepts, and a step-by-step process of using the SysTest framework to author test code.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/14/2020
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9

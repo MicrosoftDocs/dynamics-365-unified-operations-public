@@ -1,31 +1,13 @@
 ---
-# required metadata
-
 title: Schedule work creation during wave
-description: This article describes how to set up and use the Schedule work creation wave processing method.
+description: Learn how to set up and use the Schedule work creation wave processing method with an outline on turning on the scheduled work creationm features.
 author: Mirzaab
-ms.date: 01/14/2021
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
-
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-01-14
-ms.dyn365.ops.version: 10.0.17
-
+ms.topic: article
+ms.date: 01/14/2021
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 ---
 
 # Schedule work creation during wave

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Process interest
-description: This procedure shows how to create, print, and post interest notes. 
-author: ShivamPandey-msft
-ms.date: 09/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustPosting, SysQueryForm, CustInterestNote, SrsReportViewerForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to create, print, and post interest notes, including outlines on setting up interest on posting profiles and calculating interest.
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 09/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustPosting, SysQueryForm, CustInterestNote, SrsReportViewerForm 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Process interest
 
 [!include [banner](../../includes/banner.md)]

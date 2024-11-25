@@ -1,15 +1,14 @@
 ---
 title: Personal information requests for Estonia
-description: This article provides information about personal information requests for Estonia.
-author: AdamTrukawka
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about personal information requests for Estonia, including an outline on various reports that are available and additional resources.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 11/06/2024
+ms.reviewer: johnmichalak
 ms.search.region: Estonia
-ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
@@ -21,6 +20,31 @@ ms.dyn365.ops.version: 7.3
 Estonia legally allows people to ask companies for reports that identify the personal information that the companies track. The reports also indicate who has viewed, created, updated, and deleted this information.
 
 All companies must gather data about employees, customers, and vendors, and also other personal data. When the data is gathered about persons, most of the information is considered personal data and must be handled correctly according to the Estonian legislation. All information that comes from logging changes or inquiries on tables that are related to personal data is presented on three defined reports: **Personal chart**, **Access log**, and **Permission changes**.
+
+The following tables are in scope of logging changes or inquiries that are related to personal data:
+
+| Table	| Label |
+|-------|-------|
+| DirPerson |	People |
+| ContactPerson |	Contacts |
+| HcmEmployment |	Employment | 
+| HcmEmploymentContractor |	Employment contractor |
+| HcmEmploymentDetail |	Employment detail |
+| HcmEmploymentEmployee |	Employee detail |
+| HcmEmploymentTerm |	Employment term |
+| HcmEmploymentVacation |	Employment vacation |
+| HcmPersonAccommodation |	Accommodations |
+| HcmPersonDetails |	Person details |
+| HcmPersonEducation |	Education competency |
+| HcmPersonIdentificationNumber |	Identification |
+| HcmPersonPrivateDetails |	Person private details |
+| HcmPersonPrivateCitizenshipDetails |	Private citizenship details |
+| HcmPersonProfessionalExperience |	Professional experience competency |
+| HcmWorkerBankAccount |	Worker bank accounts |
+| PayrollEarningStatement |	Earnings statements |
+| HcmWorkerEnrolledBenefit |	Worker enrolled benefit |
+
+To enable logging changes or inquiries that are related to personal data in the mentioned tables, go to **Organization administration** > **Organizations** > **Legal entities**, for your legal entity with primary address in Estonia expand the **Database read log** FastTab and mark the **Enable** checkbox.
 
 ## Reports that are available
 

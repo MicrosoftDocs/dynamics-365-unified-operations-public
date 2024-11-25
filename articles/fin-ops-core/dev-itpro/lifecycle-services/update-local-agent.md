@@ -1,43 +1,32 @@
 ---
-# required metadata
-
 title: Update the local agent
-description: This article explains how to update the local agent.
+description: Learn about how to update the local agent, including a table that outlines capabilities for various local agent versions.
 author: faix
-ms.date: 08/15/2023
-ms.topic: article
-ms.prod: dynamics-365
-ms.service:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: article
+ms.date: 01/24/2024
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-12-05
+ms.search.form:
 ms.dyn365.ops.version: 7.3
 search.app:
   - financeandoperationsonprem-docs
+ms.assetid: 
 ---
 # Update the local agent
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.2.3, which was released in August 2023.
+This article explains how to update the local agent. The latest version of the local agent is version 3.3.0, which was released in January 2024.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.3.0               | This version adds node tag management capabilities to the local agent. | January 2024 | Not applicable |
 | 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
 | 3.2.2               | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
 | 3.2.1               | This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
@@ -61,6 +50,9 @@ This article explains how to update the local agent. The latest version of the l
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
 
+## What's new in local agent 3.3.0
+- This version adds a new feature to manage Service Fabric dynamic node tags. This requires some additional setup that is provided with version 2.20.0 of the infrastructure scripts.
+
 ## What's new in local agent 3.2.3
 - This version fixes a bug where the topology.xml was being cached and not updated from Lifecycle Services.
 - Removes the need to update the config.json after a certificate rotation.
@@ -79,7 +71,7 @@ This article explains how to update the local agent. The latest version of the l
 - This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We'll consider bringing back checkpoints once the Azure Storage libraries support it again.
 - Artifact management logic has been improved, and downloading existing artifacts again should no longer take place.
 - Filehash validation has been added to ensure artifacts in the artifact store match exactly what is in the Lifecycle Services artifact store.
-- The MSAL libraries are now used to authenticate with Microsoft Azure Active Directory (Azure AD).
+- The MSAL libraries are now used to authenticate with Microsoft Microsoft Entra ID.
 - Detection of the local agent being deprecated with clear messaging in Service Fabric Explorer.
 
 > [!IMPORTANT]
@@ -214,4 +206,3 @@ After the date when a local agent becomes expired, it can no longer communicate 
 > A released local agent version will be supported for at least six months.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

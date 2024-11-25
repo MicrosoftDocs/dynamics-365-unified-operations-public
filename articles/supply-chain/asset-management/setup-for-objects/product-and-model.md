@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Asset manufacturers and models
-description: This article explains how to set up asset manufacturers and related models in Asset Management.
-author: johanhoffmann
-ms.date: 06/26/2019
+description: Learn how to set up asset manufacturers and related models in Asset Management, including a process for setting up product-model relations.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/26/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2214
+ms.search.form: EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Asset manufacturers and models
@@ -47,7 +30,7 @@ This article explains how to set up asset manufacturers and related models in As
 8. In the **Asset type** field, select the asset type that the manufacturer model should be related to.
 
     > [!NOTE]
-    > You can also set up relations for asset types, manufacturers, and models in the **Asset types** lookup. For more information, see [Asset types](../setup-for-objects/object-types.md).
+    > You can also set up relations for asset types, manufacturers, and models in the **Asset types** lookup. Learn more in [Asset types](../setup-for-objects/object-types.md).
 
     In the **Details** FastTab, the **Models** field shows the number of asset models that are set up on the selected asset manufacturer. The **Assets** field shows the number of assets that are using the selected manufacturer.
     

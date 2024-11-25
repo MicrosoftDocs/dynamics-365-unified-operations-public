@@ -1,19 +1,15 @@
 ---
 title: Write extensible code
-description: This article provides information about how to write extensible code.
+description: Learn about how to write extensible code, including overviews on responsibilities, proven principles, and breaking changes.
 author: MichaelFruergaardPontoppidan
-ms.date: 09/18/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 09/18/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Write extensible code
@@ -95,7 +91,6 @@ When you make your solution extensible, you also help guarantee that you won't b
 The following external resources can help you make sure that you're writing clean code:
 
 + [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
-+ [Pluralsight - Clean Code: Writing Code for Humans](https://www.pluralsight.com/courses/writing-clean-code-humans)
 + [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)

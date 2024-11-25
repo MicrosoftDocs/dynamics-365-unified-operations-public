@@ -1,16 +1,12 @@
 ---
 title: Synchronize disposition codes
-description: This article explains synchronization of disposition codes for intercompany commerce
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn about synchronization of disposition codes for intercompany commerce, including an outline on disposition codes for three-legged direct returns.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ---
 
 # Synchronize intercompany disposition codes

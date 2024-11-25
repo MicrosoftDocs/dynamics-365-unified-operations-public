@@ -1,19 +1,16 @@
 ---
 title: Feature callouts
-description: Trigger feature callouts raise awareness of new capabilities to users.
+description: Learn about feature callouts and the APIs that are used to construct them, with overviews on resetting feature callouts and disabling feature callouts.
 author: jasongre
-ms.date: 05/16/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/16/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: Platform update 26
-ms.custom: 
-ms.assetid: 
 ---
 
 # Feature callouts

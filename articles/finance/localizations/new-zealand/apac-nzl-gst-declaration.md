@@ -1,18 +1,16 @@
 ---
 title: GST declaration for New Zealand
-description: This article explains how to configure and generate the GST return form GST101A for New Zealand.
-author: AdamTrukawka
-ms.date: 09/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to configure and generate the GST return form GST101A for New Zealand, including an outline on importing electronic reporting configurations.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: New Zealand
-ms.author: atrukawk
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.22
-ms.search.form: 
 ---
 
 # GST declaration form GST101A for New Zealand (NZ-00003)

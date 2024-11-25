@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Financial dimension configuration
-description: This article describes the Financial dimension configuration for integrating applications page.
+description: Learn about the Financial dimension configuration for integrating applications page, including outlines on financial reporting and data entities.
 author: RyanCCarlson2
-ms.date: 12/01/2017
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-05-31
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Financial dimension configuration

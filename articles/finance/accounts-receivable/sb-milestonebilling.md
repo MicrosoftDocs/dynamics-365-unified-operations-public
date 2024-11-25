@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Milestone templates
-description: This article explains how to set up the milestone billing functionality in Subscription billing. 
+description: Learn how to set up the milestone billing functionality in Subscription billing, including a step-by-step process detailing how to add a template. 
 author: JodiChristiansen
-ms.date: 01/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 01/28/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Milestone billing

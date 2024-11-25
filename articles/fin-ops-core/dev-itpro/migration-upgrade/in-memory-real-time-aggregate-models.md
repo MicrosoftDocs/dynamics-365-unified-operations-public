@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Transition from Analysis Services cubes to aggregate models
-description: This article explains how in-memory, real-time aggregate models are used for analytics, and why we transitioned from using Server Analysis Services (SSAS) cubes.
+description: Learn about how in-memory, real-time aggregate models are used for analytics, and why we transitioned from using Server Analysis Services (SSAS) cubes.
 author: MilindaV2
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 877db646-da4b-48b5-83ab-61ae59d91921
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 877db646-da4b-48b5-83ab-61ae59d91921
 ---
 
 # Transition from Analysis Services cubes to aggregate models

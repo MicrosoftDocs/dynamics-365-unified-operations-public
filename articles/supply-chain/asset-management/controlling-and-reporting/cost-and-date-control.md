@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Cost and date control
-description: This article explains cost and date control in Asset Management.
-author: johanhoffmann
-ms.date: 08/23/2019
+description: Learn about cost and date control in Asset Management, including an outline and process for cost control for assets, functional locations, and work orders.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, EntAssetWorkOrderForecastCostInfoPart, EntAssetMaintenanceCostTrans, EntAssetWorkOrderDateControlCalcDialog, EntAssetCostControl, EntAssetCostObjectCalendar, EntAssetWorkOrderCostInfoPart 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 08/23/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-
+ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, EntAssetWorkOrderForecastCostInfoPart, EntAssetMaintenanceCostTrans, EntAssetWorkOrderDateControlCalcDialog, EntAssetCostControl, EntAssetCostObjectCalendar, EntAssetWorkOrderCostInfoPart 
 ---
 
 # Cost and date control

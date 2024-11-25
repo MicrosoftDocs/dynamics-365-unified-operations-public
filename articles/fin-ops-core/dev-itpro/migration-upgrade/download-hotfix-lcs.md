@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Download updates from Lifecycle Services (LCS)
-description: This article covers what updates you should expect to see, and how you can get the updates from Lifecycle Services.
+description: Learn about what updates you should expect to see, and how you can get the updates from Lifecycle Services, including an overview on types of updates.
 author: AngelMarshall
-ms.date: 09/29/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/24/2024
+ms.reviewer: twheeloc
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
 ---
 
 # Download updates from Lifecycle Services (LCS)

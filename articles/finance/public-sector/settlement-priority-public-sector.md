@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Settlement priority in the public sector
-description: This article provides information about how public sector can automatically or manually prioritize settlements by using billing classifications. 
+description: Learn about how public sector can automatically or manually prioritize settlements by using billing classifications and how to set general ledger parameters. 
 author: angelad116
-ms.date: 10/24/2022
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, CustSettlementPrioritySetup, LedgerParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
+audience: Application User 
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, CustSettlementPrioritySetup, LedgerParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
 ---
 
 # Settlement priority in the public sector

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Intercompany journals and dimension values on multi-line vs single line journal
-description: This article answers some commonly asked questions regarding intercompany journals and dimension values.
+description: Access answers to some commonly asked questions regarding intercompany journals and dimension values, including outlines of various scenarios.
 author: kweekley
-ms.date: 04/05/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: conceptual
+ms.date: 04/05/2023
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global 
 ms.search.validFrom: 2023-03-05
+ms.search.form:
 ms.dyn365.ops.version: 10.0.14
-
-
 ---
 
 # Intercompany journals: Dimension values on multi-line vs single line journal

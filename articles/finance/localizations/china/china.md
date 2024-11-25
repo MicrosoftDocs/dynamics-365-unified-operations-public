@@ -1,15 +1,13 @@
 ---
 title: China overview
-description: This article provides an overview of functionality specific to China.
+description: Learn about functionality specific to China with resources that can help you set up legal entities with a primary address in China.
 author: kfend
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: kfend
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---

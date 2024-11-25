@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: View journal entries or transactions
-description: This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions. 
+description: Learn how to use the Voucher transactions inquiry to search for journal entries or transactions, including a step-by-step process.
 author: aprilolson
-ms.date: 03/01/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocuments   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2023-02-30 
+ms.topic: how-to
+ms.date: 04/01/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2023-02-30
+ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocuments
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # View journal entries or transactions
 
 [!include [banner](../../includes/banner.md)]

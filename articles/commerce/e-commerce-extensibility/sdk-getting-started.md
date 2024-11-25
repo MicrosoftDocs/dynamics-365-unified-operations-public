@@ -1,25 +1,24 @@
 ---
 title: Get started with e-commerce online extensibility development
-description: This article provides an overview that will help you start to develop e-commerce customizations by using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: This article provides an overview to help you get started developing e-commerce customizations using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 05/28/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.collection: get-started
-ms.assetid: 
+ms.custom: 
+  - bap-template
 ---
+
 # Get started with e-commerce online extensibility development
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview that will help you start to develop e-commerce customizations by using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+This article provides an overview to help you get started developing e-commerce customizations using the Microsoft Dynamics 365 Commerce online software development kit (SDK)..
 
 You can use the Commerce online SDK to develop and debug e-commerce [modules](modules-overview.md), [data actions](data-actions.md), and [themes](theming.md). It can be installed and used in any Windows 10 environment, and doesn't require a deployed Commerce environment. However, it can also be useful to connect to a live cloud environment (for example, "Dev," "Test," "UAT," or "Prod"). In this way, you can do deeper debugging and test changes against a cloud environment without having to deploy or destabilize the environment.
 

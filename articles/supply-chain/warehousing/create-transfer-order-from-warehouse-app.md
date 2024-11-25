@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Create transfer orders from the warehouse app
-description: This article describes how to create and process transfer orders from the Warehouse Management mobile app 
-author: perlynne
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSMobileDeviceQueueEvent 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how to create and process transfer orders from the Warehouse Management mobile app, including a step-by-step process.
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: perlynne
-ms.search.validFrom: 2020-10-09
-ms.dyn365.ops.version: 10.0.15
-
+ms.search.form: WHSMobileDeviceQueueEvent 
 ---
 
 # Create transfer orders from the warehouse app
@@ -32,15 +16,6 @@ ms.dyn365.ops.version: 10.0.15
 [!include [banner](../includes/banner.md)]
 
 This feature lets warehouse workers create and process transfer orders directly from the Warehouse Management mobile app. The worker starts by selecting the destination warehouse and then they can scan one or more license plates using the app to add license plates to the transfer order. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates.
-
-## <a name="enable-create-transfer-order-from-warehouse-app"></a>Turn on this feature and its prerequisites
-
-Before you can use this feature, both it and its prerequisites must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed.
-
-1. Enable the following two features (in order) in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. As of Supply Chain Management version 10.0.25, both of these features are turned on by default.
-    1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.)
-    1. *Create and process transfer orders from the warehouse app*<br>(As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.)
-1. To automate the processing of outbound shipments, you must also enable the [*Confirm outbound shipments from batch jobs*](confirm-outbound-shipments-from-batch-jobs.md) feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
 ## <a name="setup-warehouse-app-menu"></a>Set up a mobile device menu item to create transfer orders
 
@@ -89,7 +64,7 @@ This scenario provides an overview of the process for getting transfer orders cr
 
 To work through this scenario using the values suggested, you must work on a system with demo data installed and select the *USMF* legal entity before you begin.
 
-This scenario assumes that you have already enabled both the [Create and process transfer orders from the warehouse app feature](#enable-create-transfer-order-from-warehouse-app), and the [warehouse app event processing](warehouse-app-events.md) capability.
+This scenario assumes that you have already set up the [warehouse app event processing](warehouse-app-events.md) capability.
 
 In addition to setting up the create transfer order in the mobile device menu items, additional templates, location directives, and batch jobs must also be set up and enabled.
 
@@ -226,7 +201,7 @@ This section explains how to set up a scheduled batch job to run the outbound sh
 1. Select **OK** in the main dialog to have the batch job added to the batch queue.
 
 > [!NOTE]
-> For more information, see [Confirm outbound shipments from batch jobs](confirm-outbound-shipments-from-batch-jobs.md).
+> Learn more in [Confirm outbound shipments from batch jobs](confirm-outbound-shipments-from-batch-jobs.md).
 
 ## Processing the example for "Create transfer order from the warehouse app"
 
@@ -270,7 +245,7 @@ Typical issues could be related to missing setup for the process, like a missing
 
 Within production environments, the exceptions would be more process related, such as having a requested license plate, which at the batch job processing time is empty and thereby no transfer order lines are created. This failed event message can either be removed by using the **Delete** option or you can add the needed physical on-hand on the license plate and use the **Reset** option for all the related event messages.
 
-For more information, see [Warehouse app event processing](warehouse-app-events.md).
+Learn more in [Warehouse app event processing](warehouse-app-events.md).
 
 ### Follow up on the example scenario processing
 
@@ -287,12 +262,6 @@ During this scenario, the following occurred:
 1. The timing of all these events is dependent on the **Recurrence** settings for the batch jobs created.
 
 ## Frequently asked questions
-
-### Mobile device menu item setup
-
-#### Why can’t I see "Create transfer order from license plate" in the menu item work activity drop-down list?
-
-The feature *Create and process transfer orders from the warehouse app* must be enabled. For more information, see [Enable the create transfer orders from Warehouse app](#enable-create-transfer-order-from-warehouse-app).
 
 ### Warehouse Management mobile app processes
 
@@ -314,7 +283,7 @@ No, you can't add more license plates to a transfer order that has a **Complete 
 
 #### How can I find existing transfer orders to be used via the "Select transfer order" button in the Warehouse Management mobile app, if the order has not yet been created in the backend system?
 
-You can make it possible for workers to look up transfer order numbers in the Warehouse Management mobile app by using its [data inquiry](warehouse-app-data-inquiry.md) capability. For example, you could create a [detour](warehouse-app-detours.md) mobile device menu item that queries for the data displayed on the web client's **Warehouse app events** page (`WHSMobileDeviceQueueMessageCollection`) as part of the *Select order - MobileDeviceQueueMessageCollectionIdentifierId* step. The transfer order number matches the value shown in the **Identifier** field. See also [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
+You can make it possible for workers to look up transfer order numbers in the Warehouse Management mobile app by using its [data inquiry](warehouse-app-data-inquiry.md) capability. For example, you could create a [detour](warehouse-app-detours.md) mobile device menu item that queries for the data displayed on the web client's **Warehouse app events** page (`WHSMobileDeviceQueueMessageCollection`) as part of the *Select order - MobileDeviceQueueMessageCollectionIdentifierId* step. The transfer order number matches the value shown in the **Identifier** field. Learn more in [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
 
 #### Can I manually select the transfer order number to be used from the Warehouse Management mobile app?
 
@@ -324,7 +293,7 @@ Only autogenerated transfer order numbers via number sequences are supported. Se
 
 #### How should I clean up records in my warehouse app events queue message tables?
 
-You can view and maintain this on the **Warehouse app events** page. For more information, see [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
+You can view and maintain this on the **Warehouse app events** page. Learn more in [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
 
 #### Why is the transfer order "Receipt date" not updated according to my "Delivery date control" setup?
 

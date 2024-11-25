@@ -6,8 +6,6 @@ description: This article describes some examples of extensibility scenarios for
 author: negudava
 ms.date: 02/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology:
 # optional metadata
 
 ms.search.form: 
@@ -20,7 +18,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: negudava
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Human Resources
 # Extend with Power Apps and Power Automate
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

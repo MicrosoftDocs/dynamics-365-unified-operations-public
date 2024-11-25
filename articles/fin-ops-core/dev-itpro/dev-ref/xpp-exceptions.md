@@ -1,12 +1,13 @@
 ---
 title: X++ exception handling
-description: This article describes exception handling in X++.
+description: Learn about exception handling in X++, which are regulated jumps away from sequence of program executions. These include throw statements andg global class methods.
 author: josaw1
-ms.date: 09/28/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 09/28/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -179,7 +180,9 @@ Occasionally, you want to do nothing inside your **catch** block. However, the X
 
 If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception, (unless it is a **UpdateConflict** or a **DuplicateKeyException**). Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
 
-The finally clause will be executed even in transaction scope.
+To catch **UpdateConflict** or **DuplicateKeyException** inside a transaction, the exception must be explicitly specified in the catch statement like this, `catch (Exception::DuplicateKeyException)`. A general **catch-all** statement `catch{}` can't catch **UpdateConflict** or **DuplicateKeyException** inside a transaction.
+
+The finally clause is executed even in transaction scope.
 
 ## Exceptions and `using` statements
 

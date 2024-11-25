@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Installation steps for Retail channel components in an on-premises environment
-description: This article covers the installation steps for Commerce channel components in an on-premises environment. 
-author: jashanno
-ms.date: 08/31/2022
+description: Learn about the installation steps for Commerce channel components in an on-premises environment, including prerequisites and installation steps. 
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.date: 08/31/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: [retail]
-ms.author: jashanno
 ms.search.validFrom: 2018-10-31
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 8.1.1
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Installation steps for Retail channel components in an on-premises environment

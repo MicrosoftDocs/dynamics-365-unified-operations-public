@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Broker contract management
-description: This article describes broker contract management by automating administrative tasks that comprise it.
+description: Learn aboutbroker contract management, which helps companies by automating administrative tasks that comprise it.
 author: t-benebo
-ms.date: 06/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/13/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-01-31
+ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable
 ms.dyn365.ops.version: July 2017 update
 ---
 

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create accrual schemes
-description: This article explains how to create an accrual scheme. 
-author: aprilolson
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerAccrualTable   
-audience: Application User 
-# ms.devlang:  
+description: Learn how to create an accrual scheme, including a step-by-step process for a task that uses the USMF demo company to navigate from general ledger to accrual schemes. 
+author: JodiChristiansen
+ms.author: jchrist
+ms.topic: how-to
+ms.date: 06/17/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User   
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerAccrualTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create accrual schemes
 
 [!include [banner](../../includes/banner.md)]

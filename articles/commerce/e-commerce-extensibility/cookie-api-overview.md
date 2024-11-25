@@ -2,17 +2,15 @@
 title: Cookie API overview
 description: This article provides an overview of the application programming interfaces (APIs) in the Microsoft Dynamics 365 Commerce online software development kit (SDK) that are used to set and get cookie data.
 author: samjarawan
-ms.date: 09/14/2021
+ms.date: 07/26/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: 
+ms.custom: 
+  - bap-template: 
 ---
 # Cookie API overview
 

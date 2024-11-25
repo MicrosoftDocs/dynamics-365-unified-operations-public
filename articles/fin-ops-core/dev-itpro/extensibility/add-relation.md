@@ -1,20 +1,15 @@
 ---
 title: Add relations to tables through extension
-description: This article explains how to add a relation to a table.
+description: Learn how to add a relation to a table to enable secure interactions with data, with a step-by-step example and troubleshooting information.
 author: ivanv-microsoft
-ms.date: 04/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 04/04/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
-ms.search.industry: 
 ---
 
 # Add relations to tables through extension

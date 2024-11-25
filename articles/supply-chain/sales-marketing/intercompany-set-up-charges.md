@@ -1,16 +1,12 @@
 ---
 title: Set up charges on intercompany orders
-description: This article explains how to set up charges on intercompany orders
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn how to set up charges on intercompany orders, including a step-by-step process for setting up charges for intercompany customers.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: CustTable, VendTable, EcoResProductListPage
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: CustTable, VendTable, EcoResProductListPage
 ---
 
 # Set up charges on intercompany orders

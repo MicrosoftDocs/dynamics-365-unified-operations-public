@@ -1,13 +1,13 @@
 ---
 title: Element designers
-description: This article reviews the element designers and explains how to use them.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about the element designers and how to use them. Learn how to open element designers and the organization and descriptions for various node properties.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e

@@ -1,15 +1,13 @@
 ---
 title: Norway overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Norway.
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Norway, including links to resources about payment information.
 author: kfend
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Norway
 ms.author: kfend
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

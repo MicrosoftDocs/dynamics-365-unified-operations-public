@@ -1,15 +1,14 @@
 ---
 title: Inventory profile overview
-description: This article provides information about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
-author: AdamTrukawka
-ms.date: 05/11/2020
+description: Learn about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

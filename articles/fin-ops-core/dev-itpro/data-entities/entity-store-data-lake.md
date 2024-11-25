@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Make Entity store available as a Data Lake
-description: This article explains how to make Entity store available as a Microsoft Azure Data Lake.
+description: Learn how to make Entity store available as a Microsoft Azure Data Lake, including learning how to create storage accounts and and Key Vaults.
 author: MilindaV2
-ms.date: 09/23/2020
+ms.author: milindav
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 09/23/2020
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-
-# ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: milindav
 ms.search.validFrom: 2018-12-03
+ms.search.form:
 ms.dyn365.ops.version: Platform Update 23
-
 ---
 
 # Make Entity store available as a Data Lake
@@ -53,7 +40,7 @@ You need to enable automated Entity store refresh before enabling Data Lake inte
 
 3. Select **Yes** to continue.
 
-You will now see the new experience.
+You now see the new experience.
 
 ![New UI experience.](./media/entity-store-data-lake-03.png)
 
@@ -64,7 +51,7 @@ After the new experience is turned on, you can define the refresh for each aggre
 - Once a day
 - Once a week
 
-In addition, an admin can refresh any aggregate measurement on demand by selecting the **Refresh** button. Additional options will be added in future platform updates. These options will include options for real-time refresh.
+In addition, an admin can refresh any aggregate measurement on demand by selecting the **Refresh** button. Additional options are added in future platform updates. These options include options for real-time refresh.
 
 > [!IMPORTANT]
 > When the automated refresh is enabled, in some cases the system may disable refresh of Aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.
@@ -79,10 +66,10 @@ When this feature is turned on, Entity store data isn't populated in the relatio
 
 Before you start, you must complete these tasks in the Azure portal.
 
-1. **Create storage accounts.** Provision a storage account in the same data center where your environment is provisioned. Make a note of the connection string for the storage account, because you will have to provide it later.
-2. **Create a Key Vault and a secret.** Provision Azure Key Vault in your own subscription. You will need the Domain Name System (DNS) name of the Key Vault entry that you created. Also add a secret to Key Vault. As the value, specify the connection string that you made a note of in the previous task. Make a note of the name of the secret, because you will have to provide it later.
-3. **Register the app.** Create an Azure Active Directory (Azure AD) application, and grant application programming interface (API) access to Key vault. Make a note of the application ID and its application key (secret), because you will have to provide them later.
-4. **Add a service principal to Key Vault.** In Key Vault, use the **Access policies** option to grant the Azure AD application **Get** and **List** permissions. In this way, the application will have access to the secrets in Key Vault.
+1. **Create storage accounts.** Provision a storage account in the same data center where your environment is provisioned. Make a note of the connection string for the storage account, because you have to provide it later.
+2. **Create a Key Vault and a secret.** Provision Azure Key Vault in your own subscription. You need the Domain Name System (DNS) name of the Key Vault entry that you created. Also add a secret to Key Vault. As the value, specify the connection string that you made a note of in the previous task. Make a note of the name of the secret, because you have to provide it later.
+3. **Register the app.** Create a Microsoft Entra application, and grant application programming interface (API) access to Key vault. Make a note of the application ID and its application key (secret), because you have to provide them later.
+4. **Add a service principal to Key Vault.** In Key Vault, use the **Access policies** option to grant the Microsoft Entra application **Get** and **List** permissions. In this way, the application have access to the secrets in Key Vault.
 
 The following sections describe each task in more detail.
 
@@ -91,14 +78,14 @@ The following sections describe each task in more detail.
 1. In the Azure portal, create a new storage account.
 2. In the **Create storage account** dialog box, provide values for the following parameter fields:
 
-    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you will incur additional data movement costs. If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.
+    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you incur additional data movement costs. If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.
     - **Performance:** We recommend that you select **Standard**.
     - **Account kind:** You must select **StorageV2**.
 
-3. In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by finance and operations apps with services such as Power BI data flows. 
-4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
+3. In the **Advanced options** dialog box, you see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by finance and operations apps with services such as Power BI data flows. 
+4. Select **Review and create**. When the deployment is completed, the new resource are shown in the Azure portal.
 5. Select the resource, and then select **Settings** \> **Access keys**.
-6. Make a note of the connection string value, because you will have to provide it later.
+6. Make a note of the connection string value, because you have to provide it later.
 
 ### Create a Key Vault and a secret
 
@@ -107,26 +94,26 @@ The following sections describe each task in more detail.
 3. After Key Vault is created, select it in the list, and then select **Secrets**.
 4. Select **Generate/Import**.
 5. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
-6. Enter a name for the secret. Make a note of the name, because you will have to provide it later.
+6. Enter a name for the secret. Make a note of the name, because you have to provide it later.
 7. In the value field, enter the connection string that you obtained from the storage account in the previous procedure.
 8. Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
 
 ### Register the app
 
-1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
+1. In the Azure portal, select **Microsoft Entra**, and then select **App registrations**.
 2. Select **New registration** at the top of the menu, and enter the following information:
 
     - **Name** - Enter a friendly name for the app.
-    - Select **Accounts in this Organizational directory only** unless your storage account and your Dynamics environment are in different Azure Active Directory domains.
+    - Select **Accounts in this Organizational directory only** unless your storage account and your Dynamics environment are in different Microsoft Entra domains.
 
 3. After the application is created, select **API permissions**.
 4. In the dialog box that appears, select **Add a permission**.
-5. You will see a dialog box with a list of APIs. In the list, select **Azure Key Vault**.
+5. You see a dialog box with a list of APIs. In the list, select **Azure Key Vault**.
 6. Select the **Delegated permissions** box, select **user_impersonation**, and then select **Add permissions** to save your changes.
 7. Select the **Certificates & secrets** menu on the left navigation pane, and then select **New client secret**.
 8. In the **Description** field, enter a name and choose an expiry period. Select **Add**.
 10. A secret is generated and shown in the **Value** field.
-11. Immediately copy the secret to the clipboard, because it will disappear within one or two minutes. You will have to provide this key to the application later.
+11. Immediately copy the secret to the clipboard, because it disappears within one or two minutes. You have to provide this key to the application later.
 
 ### Add a service principal to Key Vault
 
@@ -145,8 +132,8 @@ The following sections describe each task in more detail.
 1. Go to **System administration** \> **Set up** \> **System parameters**.
 2. On the **Data connections** tab, enter the following information that you made a note of earlier in this article:
 
-    - **Application ID:** Enter the application ID of the Azure AD application that you registered earlier.
-    - **Application Secret:** Enter the application key (secret) for the Azure AD application.
+    - **Application ID:** Enter the application ID of the Microsoft Entra application that you registered earlier.
+    - **Application Secret:** Enter the application key (secret) for the Microsoft Entra application.
     - **DNS name:** Enter the DNS name of Key Vault.
     - **Secret name:** Enter the name of the secret that you added to Key Vault together with connection string information.
 

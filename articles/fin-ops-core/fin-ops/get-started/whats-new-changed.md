@@ -1,20 +1,20 @@
 ---
 title: What's new or changed in finance and operations apps home page
-description: This page points you to article that can help you learn about the new features in the latest finance and operations applications.
+description: Access links to resources that can help you learn about the new features in the latest finance and operations applications.
 author: twheeloc
-ms.date: 11/08/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-09-30
-ms.dyn365.ops.version: Platform update 2
+ms.topic: whats-new
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 03/08/2024
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
+ms.search.region: Global
+ms.search.validFrom: 2016-09-30
 ms.search.form: DefaultDashboard
+ms.dyn365.ops.version: Platform update 2
+ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ---
 
 # What's new or changed in finance and operations apps home page
@@ -27,16 +27,10 @@ ms.search.form: DefaultDashboard
 To see what's new or changed in each release of a finance and operations app, see the following topics:
 
 - **Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
-- **Human Resources (merged infrastructure):** [What's new or changed in Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
+- **Human Resources:** [What's new or changed in Microsoft Dynamics 365 Human Resources](../../../human-resources/whats-new-home-page.md)  
 - **Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../commerce/get-started/whats-new-home-page.md)
 
-
-## Stand-alone applications
-
-To see what new or changed in the stand-alone Dynamics 365 Human Resources, see the following article:
-
-- **Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)
 
 ## Platform updates
 

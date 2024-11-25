@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Position forecasting
-description: Expenses that are related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses and include them in the planning of budgets.
-author: panolte
-ms.date: 06/20/2017
+description: Expenses related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmPositionForecast
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: HcmPositionForecast
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ---
 
 # Position forecasting

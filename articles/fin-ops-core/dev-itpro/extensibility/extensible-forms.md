@@ -1,19 +1,15 @@
 ---
 title: Write extensible forms
-description: This article provides information about how to write extensible forms.
+description: Learn about how to write extensible forms, including overviews on methods on forms, field groups, and form controls.
 author: smithanataraj
-ms.date: 09/09/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: smnatara
+ms.topic: article
+ms.date: 09/09/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Write extensible forms

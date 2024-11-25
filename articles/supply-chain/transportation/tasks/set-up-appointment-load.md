@@ -1,51 +1,33 @@
 --- 
-# required metadata 
- 
 title: Set up an appointment for a load
-description: This procedure shows how to set up and plan a dock appointment for a load. 
-author: Weijiesa
+description: Learn how to set up and plan a dock appointment for a load typically done by transportation coordinators, including a step-by-step process. 
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ---
+
 # Set up an appointment for a load
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to set up and plan a dock appointment for a load. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company.
+This procedure shows how to set up and plan a dock appointment for a load. This is typically done by a transportation coordinator.
 
-
-## Select the load
-1. Go to Transportation management > Planning > Load planning workbench.
-2. Clear the Hide shipped and received check box.
-3. In the list, select the load that has a status of Shipped.
-4. Click Transportation.
-5. Click Appointment scheduling.
-
-## Create an appointment
-1. Click New.
-2. In the Appointment rule field, enter or select a value.
-3. Click Save.
-4. Click Update status.
-5. Click Firm.
-6. Click Save.
-7. Close the page.
-
-
+1. Go to one of the following pages, depending on whether you are setting up an appointment for an inbound or outbound load:
+    - **Transportation management > Planning > Inbound load planning workbench**.
+    - **Transportation management > Planning > Outbound load planning workbench**.
+1. Clear the **Hide shipped and received** check box.
+1. In the **Loads** grid, select a load that has a status of *Shipped*.
+1. From the **Loads** toolbar, select **Transportation**  \> **Appointment scheduling**.
+1. On the Action Pane, select **New**.
+1. In the **Appointment rule** field, enter or select a value.
+1. Select **Save**.
+1. Select **Update status**.
+1. Select **Firm**.
+1. Select **Save**.
+1. Close the page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

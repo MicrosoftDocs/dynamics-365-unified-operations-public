@@ -1,19 +1,14 @@
 ---
 title: VAT declaration (Netherlands)
-description: This article provides information about VAT declaration for Netherlands.
-author: AdamTrukawka
-ms.date: 02/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 261354
-ms.search.form: 
+description: Learn about VAT declaration for Netherlands, including outlines on setting up VAT declaration for Netherlands and previewing VAT declarations in Excel.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # VAT declaration for Netherlands

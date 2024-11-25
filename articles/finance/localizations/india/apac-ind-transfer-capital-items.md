@@ -1,28 +1,18 @@
 --- 
-# required metadata 
- 
 title: Transfer capital items to the fixed asset (India)
-description: This procedure walks you through transferring a capital item by issuing inventory items to the Fixed assets journal. 
-author: AdamTrukawka
+description: Learn transferring a capital item by issuing inventory items to the Fixed assets journal, including a process for creating capital fixed assets. 
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 10/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: johnmichalak  
 ms.search.region: India
-# ms.search.industry: 
-ms.author: atrukawk
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Transfer capital items to the fixed asset (India)
 
 [!include [banner](../../includes/banner.md)]

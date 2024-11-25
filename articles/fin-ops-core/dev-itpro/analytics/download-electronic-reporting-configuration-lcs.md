@@ -1,20 +1,17 @@
 ---
 title: Download Electronic reporting configurations from Lifecycle Services
-description: This article explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
-ms.date: 08/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 08/27/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 105843
-ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.form: ERSolutionImport, ERWorkspace
+ms.dyn365.ops.version: AX 7.0.1
+ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ---
 
 # Download Electronic reporting configurations from Lifecycle Services

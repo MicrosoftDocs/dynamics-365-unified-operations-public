@@ -1,31 +1,15 @@
 ---
-# required metadata
-
 title: Exclude products that have specific product lifecycle states
-description: This article explains how to exclude products based on their lifecycle state.
+description: Learn how to exclude products based on their lifecycle state, including an outline on the Is active for planning option being toggled.
 author: t-benebo
-ms.date: 11/13/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2019-11-13
-ms.dyn365.ops.version: 10.0.15
-
+ms.topic: article
+ms.date: 11/13/2020
+ms.custom: 
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
 ---
+
 # Exclude products that have specific product lifecycle states
 
 [!include [banner](../../includes/banner.md)]

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Update and index subscription sales prices 
-description: Update and index subscription sales prices 
-author: sorenva
-ms.date: 05/07/2018
+description: Learn how to update and index subscription sales prices, including a step-by-step processes for updating subscription sales prices and additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMASubscriptionTable
 ---
 
 
@@ -49,10 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 4.  Click **OK**.
 
 The base price or index of the subscription is updated with the specified value.
-
-## See also
-
-[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))
 
   
 

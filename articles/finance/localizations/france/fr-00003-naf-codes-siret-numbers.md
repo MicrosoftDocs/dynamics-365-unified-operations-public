@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: FR-00003 NAF codes and Siret numbers
-description: This article explains how to create and enter NAF codes for legal entities, customers, vendors, and prospects. 
+description: Learn how to create and enter NAF codes for legal entities, customers, vendors, and prospects, including step-by-step processes. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 09/10/2021
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CompanyNAFCode, CustTable, VendTable, smmBusRelTable, OMLegalEntity   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
 ms.search.region: France
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CompanyNAFCode, CustTable, VendTable, smmBusRelTable, OMLegalEntity
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # FR-00003 NAF codes and Siret numbers
 
 [!include [banner](../../includes/banner.md)]

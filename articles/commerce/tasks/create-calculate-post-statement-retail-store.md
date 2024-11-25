@@ -1,27 +1,17 @@
 --- 
-# required metadata 
- 
 title: Create, calculate, and post statements for a retail store
 description: This article describes the manual steps for creating, calculating, and posting a statement for a store. 
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.author: shajain
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 # Create, calculate, and post statements for a retail store
 

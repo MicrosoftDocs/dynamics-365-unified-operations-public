@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Data entities overview
-description: This article describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
-author: peakerbl
-ms.date: 04/28/2023
+description: Learn about data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 05/20/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
+audience: Developer
 ms.assetid: 89ee656f-3a91-42cd-a189-11744cd2415b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -31,8 +20,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 
@@ -92,7 +79,7 @@ Besides integration and business intelligence (BI) scenarios, data entities also
 
 ##### Configuration data provisioning
 
-A system implementer will use both a guided data collection wizard and bulk data input mechanisms to **bootstrap the initial deployment** (or module) with configuration data through Microsoft Dynamics Lifecycle Services (LCS). Configuration primarily targets to cover the following entity categories:
+A system implementer uses both a guided data collection wizard and bulk data input mechanisms to **bootstrap the initial deployment** (or module) with configuration data through Microsoft Dynamics Lifecycle Services (LCS). Configuration primarily targets to cover the following entity categories:
 
 - All of Parameter
 - Reference
@@ -102,7 +89,7 @@ A system implementer will use both a guided data collection wizard and bulk data
 
 ##### Data migration from legacy or external systems
 
-After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into the application, especially the following assets:
+After the initial deployment is up and running, the system implementer should **migrate existing data assets of the customer** into the application, especially the following assets:
 
 - Master data (for example, customers and vendors)
 - Subsets of documents (for example, sales orders)
@@ -155,13 +142,13 @@ Entities are categorized based on their functions and the type of data that they
 ### Document
 
 - Worksheet data that is converted into transactions later.
-- Documents that have complex structures, such a several line items for each header record. Examples include sales orders, purchase orders, open balances, and journals.
+- Documents that have complex structures, such as several line items for each header record. Examples include sales orders, purchase orders, open balances, and journals.
 - The operational data of the business.
 
 ### Transaction
 
 - The operational transaction data of the business.
-- Posted transactions. These are non idempotent items such as posted invoices and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
+- Posted transactions. These are non idempotent items such as posted invoices and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process aren't migrated in detail but in summary.
 - Examples include pending invoices.
 
 ## Building an entity
@@ -180,7 +167,7 @@ The simplest way to build an entity is to use a wizard. This wizard lets you sel
 | Public collection name              | The public resource set name. |
 | Enable public API                   | Select this option to enable the entity for OData services. |
 | Enable data management capabilities | Select this option to enable the entity for asynchronous integrations such as data import/export and connector integration. |
-| Staging table                       | The name of the staging table that will be generated for the entity. The staging table is used in asynchronous integrations and high-volume scenarios. |
+| Staging table                       | The name of the staging table that is generated for the entity. The staging table is used in asynchronous integrations and high-volume scenarios. |
 
 ##### Adding data sources
 
@@ -207,6 +194,8 @@ Entities in an environment must be refreshed using the following guidelines.
 -   When configuration keys are modified, entity list must be refreshed manually from **Data management > Framework parameters > Entity settings > Refresh entity list**.
 
 Refreshing the entity list ensures all entities are available in the environment and that the entities have the latest metadata.
+> [!NOTE]
+> When adding new entities, ensure every entity uses a unique label for the Label property. This includes Independent software vendor (ISV) entities. If there's more than one entity using the same label, entities could be missing after doing entity list refresh. You could also have issues with existing data management projects when a different entity is assigned due to same label usage. Test thoroughly in your pre-production and development environments as this issue cannot be fixed in production. You have to fix the duplicate label usage and redeploy the package.
 
 ## Configuration keys and data entities
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
@@ -225,10 +214,10 @@ The following table summarizes how configuration key values, on the different ar
 
 | Configuration key setting on data entity | Configuration key setting on table | Configuration key setting on table field | Configuration key on data entity field | Expected behavior |
 |------------------------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------|
-| Disabled                                 | Not evaluated                      | Not evaluated                            | Not evaluated                          | If the configuration key for the data entity is disabled, the data entity will not be functional. It does not matter whether the configuration keys in the underlying tables and fields are enabled or disabled. |
-| Enabled                                  | Disabled                           | Not evaluated                            | Not evaluated                          | If the configuration key for a data entity is enabled, the data management framework checks the configuration key on each of the underlying tables. If the configuration key for a table is disabled, that table will not be available in the data entity for functional use. If a table's configuration key is disabled, the table and data entity configuration key settings are not evaluated. If the primary table in the entity has its configuration key disabled, then the system will act as though the entity’s configuration key were disabled. |
-| Enabled                                  | Enabled                            | Disabled                                 | Not evaluated                          | If the configuration key for a data entity is enabled, and the underlying tables configuration keys are enabled, the data management framework will check the configuration key on the fields in the tables. If the configuration key for a field is disabled, that field will not be available in the data entity for functional use even if the corresponding data entity field has the configuration key enabled. |
-| Enabled                                  | Enabled                            | Enabled                                  | Disabled                               | If the configuration key is enabled at all other levels, but the entity field configuration key is not enabled, then the field will not be available for use in the data entity. |
+| Disabled                                 | Not evaluated                      | Not evaluated                            | Not evaluated                          | If the configuration key for the data entity is disabled, the data entity won't be functional. It doesn't matter whether the configuration keys in the underlying tables and fields are enabled or disabled. |
+| Enabled                                  | Disabled                           | Not evaluated                            | Not evaluated                          | If the configuration key for a data entity is enabled, the data management framework checks the configuration key on each of the underlying tables. If the configuration key for a table is disabled, that table won't be available in the data entity for functional use. If a table's configuration key is disabled, the table and data entity configuration key settings aren't evaluated. If the primary table in the entity has its configuration key disabled, then the system acts as though the entity’s configuration key were disabled. |
+| Enabled                                  | Enabled                            | Disabled                                 | Not evaluated                          | If the configuration key for a data entity is enabled, and the underlying tables configuration keys are enabled, the data management framework checks the configuration key on the fields in the tables. If the configuration key for a field is disabled, that field won't be available in the data entity for functional use even if the corresponding data entity field has the configuration key enabled. |
+| Enabled                                  | Enabled                            | Enabled                                  | Disabled                               | If the configuration key is enabled at all other levels, but the entity field configuration key isn't enabled, then the field won't be available for use in the data entity. |
 
 > [!NOTE]
 > If an entity has another entity as a data source, then the above semantics are applied in a recursive manner.
@@ -241,12 +230,12 @@ When the entity list is refreshed, the data management framework builds the conf
 ### Data entity list page
 The data entity list page in the **Data management** workspace shows the configuration key settings for the entities. Start from this page to understand the impact of configuration keys on the data entity.
 
-This information is shown using the metadata that is built during entity refresh. The configuration key column shows the name of the configuration key that is associated with the data entity. If this column is blank it means that there is no configuration key associated with the data entity. The configuration key status column shows the state of the configuration key. If it has a checkmark, it means the key is enabled. If it is blank, it means either the key is disabled or there is no key associated.
+This information is shown using the metadata that is built during entity refresh. The configuration key column shows the name of the configuration key that is associated with the data entity. If this column is blank it means that there isn't a configuration key associated with the data entity. The configuration key status column shows the state of the configuration key. If it has a checkmark, it means the key is enabled. If it's blank, it means either the key is disabled or there isn't a key associated.
 
 ![Entity list page.](./media/Data_entity_list_page.png)
 
 ### Target fields
-The next step is to drill into the data entity to view the impact of configuration keys on tables and fields. The target fields form for a data entity shows the configuration key and the key status information for the related tables and fields in the data entity. If the data entity itself has its configuration key disabled, a warning message is shown informing that the tables and fields in the target fields form for this entity will not be available, regardless of their configuration key status.
+The next step is to drill into the data entity to view the impact of configuration keys on tables and fields. The target fields form for a data entity shows the configuration key and the key status information for the related tables and fields in the data entity. If the data entity itself has its configuration key disabled, a warning message is shown informing that the tables and fields in the target fields form for this entity won't be available, regardless of their configuration key status.
 
 ![Target fields.](./media/Target_fields_1.png)
 
@@ -259,7 +248,7 @@ Certain entities have other entities as data sources, or are composite data enti
 Using the configuration key metadata built during entity refresh list, run time validations are performed in the following use cases.
 
 - When a data entity is added to a job.
-- When user clicks **Validate** on the entity list.
+- When user selects **Validate** on the entity list.
 - When the user loads a data package into a data project.
 - When the user loads a template into a data project.
 - When an existing data project is loaded.
@@ -270,7 +259,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 - When the user adds only 'importable fields'.
 
 ### Managing configuration key changes
-Anytime that you update configuration keys at the entity, table, or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
+Anytime that you update configuration keys at the entity, table, or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning is shown in the entity list page. The updated configuration key changes take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
 
 ![Configuration keys.](./media/Target_fields_3.png)
 

@@ -1,15 +1,13 @@
 ---
 title: Keyboard shortcuts for extensible controls
-description: This article outlines the recommended method for implementing keyboard shortcuts for extensible controls.
+description: Learn about the recommended method for implementing keyboard shortcuts for extensible controls, with an overview on choosing a key combination.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB

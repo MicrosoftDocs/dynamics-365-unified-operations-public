@@ -1,12 +1,13 @@
 ---
 title: DataService type
-description: Provides ability access data under the application workspace.
+description: Learn about the DataService type, which provides ability access data under the application workspace, including the findEntityData and get PageData methods.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # DataService type

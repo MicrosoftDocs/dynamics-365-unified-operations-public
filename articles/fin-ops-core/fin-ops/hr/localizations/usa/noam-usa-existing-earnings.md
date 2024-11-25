@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Process existing earnings
-description: This article describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
+description: Learn about tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollEarningStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 233764
-ms.assetid: 233c40f6-3e9e-4ed4-b42c-4643a68946e1
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollEarningStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 233c40f6-3e9e-4ed4-b42c-4643a68946e1
 ---
 
 # Process existing earnings

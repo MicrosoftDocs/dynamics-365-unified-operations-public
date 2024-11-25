@@ -1,13 +1,14 @@
 ---
 title: X++ in Git
-description: This article introduces the concept of X++ code management in Git and outlines key considerations for teams that want to use Git tools for X++ development.
+description: Learn about the concept of X++ code management in Git and outlines key considerations for teams that want to use Git tools for X++ development.
 author: ianjensenisme
-ms.date: 03/31/2023
-ms.topic: article
-audience: Developer, IT Pro
+ms.author: ianjensen
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: ianjensen
 ms.search.validFrom: 2023-04-01
 ms.dyn365.ops.version: 10.0.31
 ---
@@ -21,7 +22,7 @@ ms.dyn365.ops.version: 10.0.31
 The following list describes known limitations and workarounds that are required to configure a Git repository (repo) for X++ and set up developer environments for X++ development via Git:
 
 - [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) are build tools that are offered exclusively as a Microsoft Azure DevOps extension. Therefore, for full continuous integration and continuous delivery (CI/CD) support, consider using Azure DevOps for your Git repo.
-- More configuration steps are required to successfully map a Git version control system to the PackagesLocalDirectory directory in a development environment, as is also the case with TFVC. The [Microsoft Developer blog](https://devblogs.microsoft.com/cse/2022/06/14/xpp-and-git/) documents one way to do this configuration.
+- More configuration steps are required to successfully map a Git version control system to the PackagesLocalDirectory directory in a development environment, as is also the case with TFVC. The [Microsoft Developer blog](https://devblogs.microsoft.com/ise/xpp-and-git/) documents one way to do this configuration.
 - Dynamics Lifecycle Services checks for a TFVC repo during the deployment of build environments. Therefore, if your team uses build environments, you'll have to initialize a TFVC repo and [connect to it from Lifecycle Services](../perf-test/continuous-build-test-automation.md#azure-devops-credential-setup-and-linking-to-lcs-project), even if you aren't actively using it for code management.
 - [Branching strategies in TFVC](/azure/devops/repos/tfvc/branching-strategies-with-tfvc) often differ from [branching strategies in Git](/azure/devops/repos/git/branch-policies-overview). Common Git-based branching strategies include [trunk-based](/devops/develop/how-microsoft-develops-devops) management and [GitFlow or GitHub Flow](/devops/develop/how-microsoft-develops-devops). [Learn more about branching strategies for X++ development.](branching.md)
 

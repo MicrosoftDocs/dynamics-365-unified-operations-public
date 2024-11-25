@@ -1,12 +1,13 @@
 ---
 title: PageSubmitArgs type
-description: Args supplied to the OnSubmit event of the page.
+description: Learn about the PageSubmitArgs type, which includes the dataValues and sender properties and the addMessage, cancel, getMessages, isCancelled, and wait methods.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PageSubmitArgs type

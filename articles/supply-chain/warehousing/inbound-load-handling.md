@@ -1,15 +1,13 @@
 ---
 title: Warehouse handling of inbound loads for purchase and inbound shipment orders
-description: This article describes the warehouse handling process for inbound loads for purchase and inbound shipment orders.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder
+description: Learn about the warehouse handling process for inbound loads for purchase and inbound shipment orders, including a step-by-step process.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 08/30/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench
 ---
 
 # Warehouse handling of inbound loads for purchase and inbound shipment orders
@@ -28,19 +26,19 @@ The following high-level illustration shows an example flow for handling inbound
 
 1. **The vendor confirms the purchase order.**
 
-    The process begins when a purchase order is entered into the system and then delivered to a vendor, who confirms the order. The purchase order/inbound shipment order must exist before you can create an inbound load record. However, you can create the inbound load even if the order hasn't been confirmed. For more information, see [Approve and confirm purchase orders](../procurement/purchase-order-approval-confirmation.md).
+    The process begins when a purchase order is entered into the system and then delivered to a vendor, who confirms the order. The purchase order/inbound shipment order must exist before you can create an inbound load record. However, you can create the inbound load even if the order hasn't been confirmed. Learn more in [Approve and confirm purchase orders](../procurement/purchase-order-approval-confirmation.md).
 
 1. **An inbound load record is created to plan the arrival and its contents.**
 
-    The inbound load record represents a vendor shipment of one or more orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and putaway work. Loads can be created either automatically or manually. Depending on setup, the automatic creation can be done directly based on the order data or advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](create-or-modify-an-inbound-load.md).
+    The inbound load record represents a vendor shipment of one or more orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and putaway work. Loads can be created either automatically or manually. Depending on setup, the automatic creation can be done directly based on the order data or advanced shipment notice (ASN) from the vendor. Learn more in [Create or modify an inbound load](create-or-modify-an-inbound-load.md).
 
 1. **The vendor confirms load dispatch.**
 
-    When the vendor dispatches the load, the logistics coordinator at the receiving warehouse confirms the load shipment. If the receiving company is using the **Transportation management** module, inbound shipment confirmation will trigger other load management processes that are associated with the inbound loads. For more information, see [Confirm a load for shipping](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    When the vendor dispatches the load, the logistics coordinator at the receiving warehouse confirms the load shipment. If the receiving company is using the **Transportation management** module, inbound shipment confirmation will trigger other load management processes that are associated with the inbound loads. Learn more in [Confirm a load for shipping](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **The load arrives at the warehouse, and workers register quantities.**
 
-    When a truckload arrives at the warehouse receiving dock, warehouse workers register the load quantities. When the **Warehouse management** module is used, workers do the registration by using mobile devices. For more information, see [Product receipt against purchase orders - registration](../procurement/product-receipt-against-purchase-orders.md#registration) and the [Register item quantities that arrive on an inbound load](#register-item-quantities-arriving) section.
+    When a truckload arrives at the warehouse receiving dock, warehouse workers register the load quantities. When the **Warehouse management** module is used, workers do the registration by using mobile devices. Learn more in [Product receipt against purchase orders - registration](../procurement/product-receipt-against-purchase-orders.md#registration) and the [Register item quantities that arrive on an inbound load](#register-item-quantities-arriving) section.
 
 1. **The load is updated as receive completed.**
 
@@ -48,7 +46,7 @@ The following high-level illustration shows an example flow for handling inbound
 
 1. **Registered load quantities are posted against purchase orders.**
 
-    After the load quantities have been registered as arrived, those quantities must be product receipt–posted to the company's inventory ledger to record the physical stock increase. For more information, see [Product receipt against purchase orders - product receipt](../procurement/product-receipt-against-purchase-orders.md#product-receipt) and [Post registered product quantities against purchase orders](#post-registered-quantities).
+    After the load quantities have been registered as arrived, those quantities must be product receipt–posted to the company's inventory ledger to record the physical stock increase. Learn more in [Product receipt against purchase orders - product receipt](../procurement/product-receipt-against-purchase-orders.md#product-receipt) and [Post registered product quantities against purchase orders](#post-registered-quantities).
 
 ## <a name="register-item-quantities-arriving"></a>Register item quantities that arrive on an inbound load
 
@@ -64,7 +62,7 @@ Dynamics 365 Supply Chain Management supports several operational approaches to 
 
     - License plate receiving (and putaway)
     - Load item receiving (and putaway)
-    - Mixed license plate receiving (and putaway), where the **Source document line identification method** field for the mobile device menu item is set to *Load item receiving*. For more information, see [Mixed license plate receiving](mixed-license-plate-receiving.md).
+    - Mixed license plate receiving (and putaway), where the **Source document line identification method** field for the mobile device menu item is set to *Load item receiving*. Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md).
 
     > [!NOTE]
     > In a typical receiving flow, the system generates inbound warehouse work to take quantities that are registered in the receiving location and put them away in the regular storage locations. When mobile device menu item processes with *put away* are used, the device instructs the worker who registered the load quantity to do the putaway work as part of the receiving task. By contrast, for the other flows that are considered "two-step" processes, the movement of the inbound inventory is typically processed by another warehouse worker. However, many different configuration options exist to control the flow. In some cases, it might not make sense to create warehouse work. In these cases, the [work policies](warehouse-work-policies.md) can be configured so that they don't create inbound warehouse work. In other cases, it might make sense to include an [inspection/quality process](../inventory/quality-management-for-warehouses-processes.md).
@@ -192,7 +190,7 @@ The following table summarizes the effects of the **Allow multiple product recei
 | Yes | No updates | *Received*, if the total registered load quantity is equal to or more than the load quantity | |
 | Yes | No updates | *Shipped* or *In process*, if the total registered load quantity is less than the load quantity | |
 
-After the **Load status** field is set to *Received*, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this article.)
+After the **Load status** field is set to *Received*, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (Learn more in the [Load over-receiving](#load-over-receiving) section earlier in this article.)
 
 - The version of Supply Chain Management is older than version 10.0.11.
 - The *Over receipt of load quantities* feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to *Allow*. (As of Supply Chain Management version 10.0.32, the *Over receipt of load quantities* feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
@@ -295,8 +293,8 @@ In this procedure, you will manually create a purchase order and an associated l
     - **Quantity:** *10*
 
 1. On the Action Pane, on the **Purchase** tab, select **Actions \> Confirm**. The order status is now *Confirmed*.
-1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Load planning workbench**.
-1. On the **Load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
+1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Inbound load planning workbench**.
+1. On the **Inbound load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
 1. In the **Load template assignment** dialog box, set the **Load template ID** field to *20' Container*.
 1. Select **OK** to close the dialog box and return to the workbench.
 1. In the **Loads** section, select **Load ID** to open the newly created load.
@@ -397,16 +395,16 @@ You will also learn how to set the purchase order line so that you can receive a
 
 1. On the **Line details** FastTab, on the **Delivery** tab, set the **Overdelivery** field to *20*.
 1. On the Action Pane, on the **Purchase** tab, select **Actions \> Confirm**. The order status is now *Confirmed*.
-1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Load planning workbench**.
-1. On the **Load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
+1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Inbound load planning workbench**.
+1. On the **Inbound load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
 1. In the **Load template assignment** dialog box, set the **Load template ID** field to *20' Container*. On the **Details** tab, change the **Quantity** value from *10* to *5* to partially add the purchase order line quantity.
 1. Select **OK** to apply your settings and close the dialog box.
 1. Repeat steps 8 through 10 to create a second load. This time, the **Quantity** field should already be set to *5*.
-1. On the **Load planning workbench** page, in the **Loads** grid, select the **Load ID** value for the first load that you created. The **Load details** page appears and shows the selected load. Follow these steps:
+1. On the **Inbound load planning workbench** page, in the **Loads** grid, select the **Load ID** value for the first load that you created. The **Load details** page appears and shows the selected load. Follow these steps:
 
     1. On the Action Pane, on the **Ship and receive** tab, select **Confirm \> Inbound shipment**.
     1. Notice that the **Load status** value has changed to *Shipped*.
-    1. Select the close button to return to the **Load planning workbench** page.
+    1. Select the close button to return to the **Inbound load planning workbench** page.
 
 1. Repeat the previous step for the second load that you created.
 1. Make a note of the two **Load ID** values that appear in the **Loads** grid.

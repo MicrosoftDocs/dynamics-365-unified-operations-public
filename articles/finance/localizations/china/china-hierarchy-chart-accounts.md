@@ -1,19 +1,18 @@
 ---
 title: CN-00010 China hierarchy of chart of accounts
-description: This procedure shows how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts.
+description: Learn how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerChartOfAccounts, LedgerChartOfAccountsTreeLevel_CN, LedgerCreateAccount_CN, MainAccount
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # CN-00010 China hierarchy of chart of accounts
 
 [!include [banner](../../includes/banner.md)]

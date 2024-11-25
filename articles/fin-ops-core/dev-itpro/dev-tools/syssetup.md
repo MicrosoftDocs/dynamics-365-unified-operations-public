@@ -1,13 +1,12 @@
 ---
 title: SysSetup
-description: This article describes the SysSetup interface and explains how to onboard classes to use it.
+description: Learn about the SysSetup interface that's used to identify X++ classes that run during database synchronization, with code examples.
 author: najaidee
-ms.date: 04/24/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: 
-ms.search.region: Global
 ms.author: najaidee
+ms.topic: article
+ms.date: 04/24/2023
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: AX 10.0.0
 ---

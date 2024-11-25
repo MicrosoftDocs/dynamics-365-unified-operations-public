@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create an original budget and then reverse preliminary budget entries in the public sector
-description: This article provides information about how to create and reverse an original budget entry using budget model and dimension values that have preliminary budget amounts. 
+description: Learn about how to create and reverse an original budget entry using budget model and dimension values that have preliminary budget amounts.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost   
+ms.custom:
+ms.reviewer: twheeloc    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create an original budget and then reverse preliminary budget entries in the public sector
 
 [!include [banner](../../includes/banner.md)]

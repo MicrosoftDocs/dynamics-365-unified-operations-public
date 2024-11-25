@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Set up payment schedules with TDS allocation
-description: This article explains how to set up payment schedules with Tax Deducted at Source (TDS) allocation.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to set up payment schedules with Tax Deducted at Source (TDS) allocation, including a step-by-step process for setting up payment schedules.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Set up payment schedules with TDS allocation
@@ -36,7 +22,7 @@ This article explains how to set up payment schedules with Tax Deducted at Sourc
 
 1. Go to **Accounts payable \> Payment setup \> Payment schedules**.
 
-    [![Payment schedules page.](../media/apac-ind-TDS-27.png)](/media/apac-ind-TDS-27.png)
+    [![Payment schedules page.](../media/apac-ind-TDS-27.png)]
 
 2. On the Action Pane, select **New** to create a payment schedule, and enter the required details.
 3. In the **Allocation** field, select the method to use to allocate the payment for the payment schedule:

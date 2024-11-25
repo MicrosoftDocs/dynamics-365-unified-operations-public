@@ -1,12 +1,13 @@
 ---
 title: ImageMetadata type
-description: Image metadata type.
+description: Learn about the ImageMetadata type, which includes the BaseUrl, BoundEntity, BoundField, Description, Editable, ExtType, Height, HelpText and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # ImageMetadata type

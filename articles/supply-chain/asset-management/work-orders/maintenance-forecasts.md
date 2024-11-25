@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Maintenance forecasts
-description: This article explains maintenance forecasts in Asset Management.
-author: johanhoffmann
-ms.date: 10/15/2019
+description: Learn about maintenance forecasts in Asset Management, which adds forecast lines and deletes them from work orders, including a step-by-step process.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 10/15/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac 
+ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast 
 ---
 
 # Maintenance forecasts

@@ -4,11 +4,8 @@
 title: Prorate employee contribution amounts
 description: This article describes how to prorate employee contribution amounts.
 author: twheeloc
-ms.date: 01/23/2023
+ms.date: 07/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
@@ -20,7 +17,7 @@ audience: Application User
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

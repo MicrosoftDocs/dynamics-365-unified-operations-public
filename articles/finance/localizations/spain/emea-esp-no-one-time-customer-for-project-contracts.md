@@ -1,19 +1,17 @@
 ---
 title: One-time customers
-description: This article provides information about one-time customers.
+description: Learn about one-time customers, including a step-by-step process for indicating that a customer is a one-time customer.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Spain
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 264394
 ms.search.form: CustTable
+ms.dyn365.ops.version: Version 1611
 ---
 
 # One-time customers

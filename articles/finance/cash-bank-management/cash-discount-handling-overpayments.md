@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Cash discounts for overpayments
-description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about various scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ---
 
 # Cash discounts for overpayments

@@ -1,19 +1,17 @@
 ---
 title: Invoice and packing slip numbering for Latvia and Lithuania
-description: This article explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
+description: Learn how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Latvia, Lithuania
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
+ms.search.region: Latvia, Lithuania
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 268484
 ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, NumberSequenceTableListPage
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Invoice and packing slip numbering for Latvia and Lithuania

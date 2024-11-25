@@ -1,13 +1,13 @@
 ---
 title: Customization guidance for dual-write
-description: This article provides guidance for customizing dual-write.
+description: Learn about customizing dual-write, including various guidances, examples, and best practices for cusotmizations.
 author: RamaKrishnamoorthy
-ms.date: 09/15/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 09/15/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: AX 7.0.0
 ---

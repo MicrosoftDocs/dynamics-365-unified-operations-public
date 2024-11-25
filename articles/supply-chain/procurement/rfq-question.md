@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: Responding to vendor questions on Request for quotations
-description: Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page.
-author: GalynaFedorova
-ms.date: 01/22/2020
+description: Vendors that have questions related to an RFP can submit their questions and read the answers on Vendor collaboration page.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 01/22/2020
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: PurchRFQVendQuestionAnswer
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-ms.search.industry: public sector
-ms.author: gfedorova
-ms.search.validFrom: 2020-1-22
-ms.dyn365.ops.version: 10.0.9
-
 ---
+
 # Responding to vendor questions on Request for quotations
 
 [!include [banner](../includes/banner.md)]

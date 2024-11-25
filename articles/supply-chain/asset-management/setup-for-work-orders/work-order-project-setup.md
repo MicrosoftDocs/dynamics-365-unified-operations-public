@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Work order project setup
-description: This article explains work order project setup in Asset Management.
-author: johanhoffmann
-ms.date: 08/13/2019
+description: Learn about work order project setup in Asset Management, including outlines on project setup for work order jobs and setting up work order projects.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 08/13/2019
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: EntAssetWorkOrderProjectSetup 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Work order project setup

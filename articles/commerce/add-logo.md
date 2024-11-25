@@ -2,20 +2,15 @@
 title: Add a logo
 description: This article describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 09/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
-ms.search.region: global
-ms.author: stuharg
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
-ms.search.form: 
+  - bap-template
 ---
 
 # Add a logo

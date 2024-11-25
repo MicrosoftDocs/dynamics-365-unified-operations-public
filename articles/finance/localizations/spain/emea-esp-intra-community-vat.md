@@ -1,19 +1,17 @@
 ---
 title: Intra-community VAT for Spain
-description: This article provides information about the functionality for intra-community value-added tax (VAT).
+description: Learn about the functionality for intra-community value-added tax (VAT), including an outline on calculating intracommunity VAT for purchase transactions.
 author: AdamTrukawka
-ms.date: 07/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Spain
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
+ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 271523
 ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Intra-community VAT for Spain

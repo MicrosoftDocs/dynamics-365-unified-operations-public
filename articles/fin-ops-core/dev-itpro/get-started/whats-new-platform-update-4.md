@@ -1,18 +1,17 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations platform update 4 (February 2017)
-description: This article describes features that are either new or changed in Dynamics 365 for Operations platform update 4. This version was released in February 2017 and has a build number of 7.0.4425.16161.
+description: Learn about new or changed in Dynamics 365 for Operations platform update 4. This version was released in February 2017.
 author: sericks007
-ms.date: 08/16/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: sericks
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: global
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 271823
 ms.assetid: a98f6291-347c-4616-ad80-84d3eb648cba
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -40,11 +39,11 @@ As you know, the cloud platform is [locked](whats-new-platform-update-3.md) as o
 
 To install the latest monthly platform updates in an existing environment, on [LCS](https://lcs.dynamics.com/), go to the Shared asset library, and select the **Software deployable package** tab. There, you will see that the platform update 4 package is ready for deployment, as shown in the following illustration. You can import this package into the project's asset library and then apply it to a specific environment through the update flows. For more details, see the [Apply the latest platform update to environments](../migration-upgrade/upgrade-latest-platform-update.md) article.
 
-[![Platform update 4 package.](../../fin-ops/get-started/media/1111111-1024x171.png)](/media/1111111.png)
+[![Platform update 4 package.](../../fin-ops/get-started/media/1111111-1024x171.png)]
 
 For new environments, the topology will include update 4.
 
-[![Topology that includes update 4.](../../fin-ops/get-started/media/2222222222.png)](/media/2222222222.png)
+[![Topology that includes update 4.](../../fin-ops/get-started/media/2222222222.png)]
 
 In [Dynamics 365 for Operations version 1611](whats-new-platform-update-3.md), the platform models can't be overlayered. Therefore, because all the updates are binary from this release forward, the **Platform X++ Updates** tile is no longer required. Customers who are on versions that are earlier than Dynamics 365 for Operations version 1611 will continue to see the **Platform X++ Updates** tile for any customizations to the platform models. Because binary updates are cumulative, we recommended that you always apply the latest update. For more details, see the [LCS blog](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/). Here's an overview of some of the other features in Microsoft Dynamics 365 for Operations platform update 4.
 
@@ -58,7 +57,7 @@ Support for the existing [tile pinning experience](/archive/blogs/dynamicsaxbi/p
 
 You can now embed full-page, Power BI driven interactive reports in workspaces. By using the rich infographics and visuals that Power BI supports (even the many controls that are provided by third parties), workspaces can provide a highly visual but interactive experience for the user.
 
-[![Workspaces that has embedded Power BI reports.](../../fin-ops/get-started/media/3333333333-1024x551.png)](/media/3333333333.png)
+[![Workspaces that has embedded Power BI reports.](../../fin-ops/get-started/media/3333333333-1024x551.png)]
 
 If you're a power user or business analyst, you can use Power BI tools to tweak the ready-made reports or create new reports. If you're a developer, you can use the reports that your users develop as workspaces to create rich navigation experiences within the product. If you're in the partner and independent software vendor (ISV) community, you can now build rich workspaces that include Power BI experiences, and you can release these workspaces as part of your solution.
 
@@ -70,7 +69,7 @@ For more details about these features and other Power BI features, see the [BI b
 
 We have made major progress on the mobile framework for Dynamics 365 for Operations that lets partners build workspaces that are unique and fully functional mobile experiences. These new capabilities make it easier for users to interact with Dynamics 365 for Operations both online and offline. The mobile framework now supports iOS and Android devices. For more details, see the upcoming [mobility blog](/archive/blogs/Dynamics365forOperationsMobile/).
 
-[![Workspace that was built by using the mobile framework.](../../fin-ops/get-started/media/444444444444-1024x533.png)](/media/444444444444.png)
+[![Workspace that was built by using the mobile framework.](../../fin-ops/get-started/media/444444444444-1024x533.png)]
 
 ## Visual scheduling
 
@@ -82,5 +81,4 @@ We have made updates to [visual scheduling](../user-interface/gantt-development-
 - You can perform drag-and-drop operations on multiple selected tasks.
 - A resource capacity bar clearly flags time intervals where there is overbooking.
 
-[![Visual scheduling.](../../fin-ops/get-started/media/55555555555-1024x539.png)](/media/55555555555.png)
-
+[![Visual scheduling.](../../fin-ops/get-started/media/55555555555-1024x539.png)]

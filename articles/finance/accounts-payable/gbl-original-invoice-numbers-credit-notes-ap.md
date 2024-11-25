@@ -1,18 +1,16 @@
 ---
 title: Reference original invoices in credit notes (vendor invoices)
-description: This article describes how to create a reference to an original invoice when you create a credit note.
+description: Learn about how to create a reference to an original invoice when you create a credit note, including prerequisites.
 author: AdamTrukawka
-ms.date: 09/28/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/28/2021
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-09-23
+ms.search.form:
 ms.dyn365.ops.version: 10.0.20
-ms.search.form: 
 ---
 
 # Reference original invoices in credit notes (vendor invoices)
@@ -42,7 +40,7 @@ The functionality that is described in this article applies to the following bus
 Defining a reference to an original invoice includes the following high-level steps:
 1. Create and post a vendor invoice.
 2. Create a vendor credit note.
-3. Use the Credit Invoicing fucntion to link the invoice with a credit note.
+3. Use the Credit invoicing function to link the invoice with a credit note.
 4. Post the credit note.
 
 Use the following procedures to define a reference to an original invoice in the specified business document types.
@@ -51,7 +49,7 @@ Use the following procedures to define a reference to an original invoice in the
 
 1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2. Create a new purchase order, or use existing one to create a credit note.
-3. On the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
+3. On the Action pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 4. Enter the reason for the correction and the reference to the original invoice.
 
 ### Vendor credit note (ledger journals)

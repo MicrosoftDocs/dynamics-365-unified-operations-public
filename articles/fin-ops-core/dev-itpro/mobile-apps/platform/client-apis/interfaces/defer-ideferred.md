@@ -1,12 +1,13 @@
 ---
 title: Deferred type<T>
-description: Deferred type
+description: Learn about the Deferred type <T> including the properties, which includes promise, and methods, which include reject and resolve.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Deferred type&lt;T&gt;

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Financial dimension activation
-description: This article contains information about the activating financial dimension process.
+description: Learn about the activating financial dimension process, which involves an overview the messages users receive regarding metadata.
 author: RyanCCarlson2
-ms.date: 10/02/2019
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 191363
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Financial dimension activation

@@ -1,39 +1,36 @@
 ---
 title: Set up custom pages for user sign-ins
-description: This article describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
+description: This article describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Microsoft Entra business-to-consumer (B2C) tenants.
 author: brianshook
-ms.date: 03/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/18/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Set up custom pages for user sign-ins
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
+This article describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Microsoft Entra business-to-consumer (B2C) tenants.
 
-To use custom pages that are authored in Dynamics 365 Commerce to handle user sign-in flows, you must set up the Azure AD policies that will be referenced in the Commerce environment. You can configure the "Sign up and sign in," "Profile editing," and "Password reset" Azure AD B2C policies by using the Azure AD B2C application. The Azure AD B2C tenant and policy names can then be referenced during the provisioning process that is done for the Commerce environment by using Microsoft Dynamics Lifecycle Services (LCS).
+To use custom pages that are authored in Dynamics 365 Commerce to handle user sign-in flows, you must set up the Microsoft Entra policies that will be referenced in the Commerce environment. You can configure the "Sign up and sign in," "Profile editing," and "Password reset" Microsoft Entra B2C policies by using the Microsoft Entra B2C application. The Microsoft Entra B2C tenant and policy names can then be referenced during the provisioning process that is done for the Commerce environment by using Microsoft Dynamics Lifecycle Services (LCS).
 
-The custom Commerce pages can be built by using the sign in, sign up, account profile edit, password reset, or generic AAD modules. The page URLs that are published for these custom pages should then be referenced in Azure AD B2C policy configurations in the Azure portal.
+The custom Commerce pages can be built by using the sign in, sign up, account profile edit, password reset, or generic Microsoft Entra modules. The page URLs that are published for these custom pages should then be referenced in Microsoft Entra B2C policy configurations in the Azure portal.
 
 > [!WARNING] 
-> Azure AD B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
+> Microsoft Entra ID B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. For more information, see [User flows in Microsoft Entra ID B2C](/azure/active-directory-b2c/user-flow-overview).
 
->The module library for Commerce version 10.0.15 or higher should be used with the recommended B2C user flows. The default user policy pages offered in Azure AD B2C can also be used, and allow for added background image, logo, and background color changes related to company branding. Though more limited in design capabilities, the default user policy pages provide Azure AD B2C policy functionality without creating and configuring dedicated custom pages. 
+>The module library for Commerce version 10.0.15 or higher should be used with the recommended B2C user flows. The default user policy pages offered in Microsoft Entra ID B2C can also be used, and allow for added background image, logo, and background color changes related to company branding. Though more limited in design capabilities, the default user policy pages provide Microsoft Entra B2C policy functionality without creating and configuring dedicated custom pages. 
 
 ## Set up B2C policies
 
-After you set up your Azure AD B2C tenant and associate it with your Commerce environment, go to the **Azure AD B2C** page in the Azure portal, and then, on the menu, under **Policies**, select **User flows (policies)**.
+After you set up your Microsoft Entra B2C tenant and associate it with your Commerce environment, go to the **Microsoft Entra B2C** page in the Azure portal, and then, on the menu, under **Policies**, select **User flows (policies)**.
 
 ![User flows (policies) command on the menu.](./media/B2C_CustomPage_PoliciesMenu.png)
 
@@ -93,14 +90,14 @@ You will return to this policy to finish the setup after you've built the custom
 
 ## Build the custom pages
 
-Dedicated Azure AD modules are included in Commerce to build custom pages for Azure AD B2C user policies. Pages can be built specifically for each user policy page's layout using the main Azure AD B2C modules detailed below. Alternatively, the **AAD Generic** module can be used for all page layouts and policies in Azure AD B2C (even for page layout options within policies not listed below). 
+Dedicated Microsoft Entra modules are included in Commerce to build custom pages for Microsoft Entra B2C user policies. Pages can be built specifically for each user policy page's layout using the main Microsoft Entra B2C modules detailed below. Alternatively, the **Microsoft Entra Generic** module can be used for all page layouts and policies in Microsoft Entra ID B2C (even for page layout options within policies not listed below). 
 
-- Page-specific Azure AD modules are bound to data input items rendered by Azure AD B2C. These modules give you more control over the positioning of the elements in your pages. However, more pages and module extensions may need to be built to account for variances beyond the default settings described below.
-- The **AAD Generic** module creates the "div" element for Azure AD B2C to render all elements in the user policy page layout, giving more flexibility to the B2C functions of the page, but less control of the positioning and styling (though CSS can be used to match the look and feel of your site).
+- Page-specific Microsoft Entra modules are bound to data input items rendered by Microsoft Entra ID B2C. These modules give you more control over the positioning of the elements in your pages. However, more pages and module extensions may need to be built to account for variances beyond the default settings described below.
+- The **Microsoft Entra Generic** module creates the "div" element for Microsoft Entra B2C to render all elements in the user policy page layout, giving more flexibility to the B2C functions of the page, but less control of the positioning and styling (though CSS can be used to match the look and feel of your site).
 
-You can create a single page with the **AAD Generic** module and use it for all of your user policy pages, or you can build out specific pages using the individual Azure AD modules for sign-in, sign-up, profile edit, password reset, and password reset verification. You may also use a mix of both, using the specific Azure AD pages for the page layouts noted below, and the generic AAD module page for remaining page layouts within these or other user policies pages.
+You can create a single page with the **Microsoft Entra Generic** module and use it for all of your user policy pages, or you can build out specific pages using the individual Microsoft Entra modules for sign-in, sign-up, profile edit, password reset, and password reset verification. You may also use a mix of both, using the specific Microsoft Entra pages for the page layouts noted below, and the generic Microsoft Entra module page for remaining page layouts within these or other user policies pages.
 
-To learn more about the Azure AD Modules that ship with the module library, read more at [Identity management pages and modules](dev-itpro/identity-mgmt-modules.md).
+To learn more about the Microsoft Entra Modules that ship with the module library, read more at [Identity management pages and modules](dev-itpro/identity-mgmt-modules.md).
 
 To build the custom pages with specific identity modules to handle user sign-ins, follow these steps.
 
@@ -115,15 +112,15 @@ To build the custom pages with specific identity modules to handle user sign-ins
 When you build the pages, follow these guidelines:
 
 - For each page or module, use the layout and style that best suit your business requirements.
-- Publish all pages and URLs that must be used in the Azure AD B2C setup.
-- After the pages and URLs are published, collect the URLs that must be used for the Azure AD B2C policy configurations. A **?preloadscripts=true** suffix will be added to every URL when it's used.
+- Publish all pages and URLs that must be used in the Microsoft Entra B2C setup.
+- After the pages and URLs are published, collect the URLs that must be used for the Microsoft Entra B2C policy configurations. A **?preloadscripts=true** suffix will be added to every URL when it's used.
 
 > [!IMPORTANT]
-> Pages built to be referenced in Azure AD B2C are served directly from the Azure AD B2C tenant's domain. Do not reuse universal headers and footers that have relative links. Because these pages will be hosted in the Azure AD B2C domain when they are used, only absolute URLs should be used for all links. It is recommended to create a specific header and footer with absolute URLs for your Azure AD-related custom pages, with any Commerce-specific modules that require connection to Retail Server removed. For example, the favorites, search bar, sign-in link, and cart modules should not be included in any pages which will be used in Azure AD B2C user flows.
+> Pages built to be referenced in Microsoft Entra B2C are served directly from the Microsoft Entra B2C tenant's domain. Do not reuse universal headers and footers that have relative links. Because these pages will be hosted in the Microsoft Entra B2C domain when they are used, only absolute URLs should be used for all links. It is recommended to create a specific header and footer with absolute URLs for your Microsoft Entra-related custom pages, with any Commerce-specific modules that require connection to Retail Server removed. For example, the favorites, search bar, sign-in link, and cart modules should not be included in any pages which will be used in Microsoft Entra B2C user flows.
 
-## Configure Azure AD B2C policies with custom page information 
+## Configure Microsoft Entra B2C policies with custom page information 
 
-In the Azure portal, return to the **Azure AD B2C** page, and then, on the menu, under **Policies**, select **User flows (policies)**.
+In the Azure portal, return to the **Microsoft Entra B2C** page, and then, on the menu, under **Policies**, select **User flows (policies)**.
 
 ### Update the "Sign up and sign in" policy with custom page information
 
@@ -144,8 +141,6 @@ To update the "Sign up and sign in" policy with custom page information, follow 
     1. For **Email Address** attribute, it is recommended to leave the default value **Yes** selected in the **Requires Verification** column. This option ensures that users signing up with a given email address verify that they own the email address.
     1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Optional** column.
 1. Select **Save**.
-
-    ![Configuration of the local account sign up page policy.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### Update the "Profile editing" policy with custom page information
 

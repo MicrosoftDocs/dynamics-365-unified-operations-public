@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Rebate management posting setup
-description: This article describes how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
+description: Learn how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TAMRebateGroup
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.topic: how-to
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: TAMRebatePosting
 ---
 
 # Rebate management posting setup
@@ -47,7 +33,7 @@ The following table describes the settings that are available in the header sect
 | Description | Enter a description of the profile. |
 | Module | Select the module that the rebates and royalties of the profile are associated with (*Customer* or *Vendor*). |
 | Type | Select the profile type (*Rebate* or *Royalty*). |
-| Payment type | <p>This field determines the format of the posted rebate output.<p><p>When the **Type** field is set to *Rebate*, the following values are available:</p><ul><li>*Pay using accounts payable* – When you post a customer rebate, a vendor invoice for the remittance vendor that is set up on the rebate customer is created. When you post a vendor rebate, a vendor invoice for the rebate vendor account is created.</li><li>*Customer deductions* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li><li>*Tax invoice customer deductions* – When you post the rebate, a free text invoice for the rebate customer is created.</li><li>*Trade spending* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li><li>*Reporting* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li></ul><p>When the **Type** field is set to *Royalty*, the following values are available:</p><ul><li>*Pay using accounts payable* – When you post the rebate, a vendor invoice for the rebate vendor account is created.</li><li>*Reporting* – When you post the rebate, a vendor invoice for the rebate vendor account is created.</li></ul><p>For more information, see the [Payment types](#payment-types) section that follows. |
+| Payment type | <p>This field determines the format of the posted rebate output.<p><p>When the **Type** field is set to *Rebate*, the following values are available:</p><ul><li>*Pay using accounts payable* – When you post a customer rebate, a vendor invoice for the remittance vendor that is set up on the rebate customer is created. When you post a vendor rebate, a vendor invoice for the rebate vendor account is created.</li><li>*Customer deductions* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li><li>*Tax invoice customer deductions* – When you post the rebate, a free text invoice for the rebate customer is created.</li><li>*Trade spending* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li><li>*Reporting* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li></ul><p>When the **Type** field is set to *Royalty*, the following values are available:</p><ul><li>*Pay using accounts payable* – When you post the rebate, a vendor invoice for the rebate vendor account is created.</li><li>*Reporting* – When you post the rebate, a vendor invoice for the rebate vendor account is created.</li></ul><p>Learn more in the [Payment types](#payment-types) section that follows. |
 | Company | Select the company (legal entity) that provisions will be accrued to and that claims will be paid by. |
 
 ### Payment types

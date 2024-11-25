@@ -1,19 +1,15 @@
 ---
 title: Make fields mandatory by using workspace classes
-description: This article explains how to use workspace classes to make a field mandatory.
+description: Learn about how to use workspace classes to make a field mandatory, including an example for specifying that the Name field is mandatory.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.custom: 255544
-ms.assetid: 
 ---
 
 # Make fields mandatory by using workspace classes

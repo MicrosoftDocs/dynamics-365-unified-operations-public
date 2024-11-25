@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot the Office integration
-description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+description: Access answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 04/12/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: OfficeAppParameters, SysEmailParameters
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 04/12/2022
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: OfficeAppParameters, SysEmailParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ---
 
 # Troubleshoot the Office integration
@@ -31,10 +19,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 
 This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
@@ -167,24 +151,24 @@ Skype integration is available for environments in the public cloud. For environ
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
 
 **Issue:** During sign in to the Excel Add-in, a user receives an error similar to the following: 
--  "AADSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
+-  "Microsoft EntraSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
 -  "Selected user account does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant."
 
-**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the finance and operations apps, it can affect customers on any version of the platform or application.  
+**Explanation:** This issue is caused by a change made to Microsoft Entra ID in April 2021 in regard to external users. Because this change was not made to the finance and operations apps, it can affect customers on any version of the platform or application.  
 
-**Fix:** All external users need to be invited to the tenant through Azure AD. For more information, see [Invite users with Azure Active Directory B2B collaboration](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration).
+**Fix:** All external users need to be invited to the tenant through Microsoft Entra ID. For more information, see [Invite users with Microsoft Entra B2B collaboration](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration).
 
-### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
+### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "Microsoft EntraSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
-**Issue:** During sign in to the Excel Add-in, you receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ."
+**Issue:** During sign in to the Excel Add-in, you receive the following error message: "Microsoft EntraSTS65001: The user or administrator has not consented to use the application with ID XYZ."
 
-**Explanation:** Typically, this issue occurs because Microsoft Azure Active Directory (Azure AD) can't find the Azure AD application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](../analytics/configure-power-bi-integration.md), an Azure AD application was added that has the App ID URI set to the environment URL. 
+**Explanation:** Typically, this issue occurs because Microsoft Microsoft Entra ID can't find the Microsoft Entra application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](../analytics/configure-power-bi-integration.md), a Microsoft Entra application was added that has the App ID URI set to the environment URL. 
 
-**Fix:** Make sure that no Azure AD apps have the App ID URI set to the environment URL. App ID URIs should be fabricated, unique URIs, such as `https://contosoAXPowerBI`.
+**Fix:** Make sure that no Microsoft Entra apps have the App ID URI set to the environment URL. App ID URIs should be fabricated, unique URIs, such as `https://contosoAXPowerBI`.
 
-### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS50001: The application named ABC was not found in the tenant named XYZ"
+### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "Microsoft EntraSTS50001: The application named ABC was not found in the tenant named XYZ"
 
-**Issue:** During sign-in to the Excel Add-in, you receive the following error message: "AADSTS50001: The application named ABC was not found in the tenant named XYZ."
+**Issue:** During sign-in to the Excel Add-in, you receive the following error message: "Microsoft EntraSTS50001: The application named ABC was not found in the tenant named XYZ."
 
 **Explanation:** This issue probably occurs because an error in the deployment system caused the environment to get a URL that wasn't added to the configured list of service principals for the tenant. 
 
@@ -215,7 +199,7 @@ Here are some common solutions to VPN issues:
 
 **Issue:** When users try to sign into the Excel Add-in, a blank authentication dialog box appears, or an error message is shown instead of the authentication page. The user can't sign in. 
 
-**Explanation:** The Excel Add-in relies on the Office Web JS Add-in platform and uses Azure AD for authentication. If a proxy is used, several URLs must be accessible for users to run and sign in to the Excel Add-in. Additionally, if AD FS is used, the AD FS URL must use HTTPS. 
+**Explanation:** The Excel Add-in relies on the Office Web JS Add-in platform and uses Microsoft Entra ID authentication. If a proxy is used, several URLs must be accessible for users to run and sign in to the Excel Add-in. Additionally, if AD FS is used, the AD FS URL must use HTTPS. 
 
 **Solution:** Because this issue is a customer-specific network issue, it requires a customer-specific resolution. If AD FS is used, make sure that the AD FS URL uses HTTPS. Additionally, make sure that all the following URLs are accessible from the user's computer.
 
@@ -245,13 +229,13 @@ The following URLs are accessed for authentication.
 - `https://login.microsoftonline.com`
 
 
-**Alternate solution:** If the user is running an older version of Windows 10 (earlier than version 1909), consider upgrading Windows 10 to version 1909 or later. Version 1909 may need KB5003635. For more information, see [May 2021 resolved issues](/windows/release-health/resolved-issues-windows-10-1909#1610msgdesc). 
+**Alternate solution:** If the user is running an older version of Windows 10 (earlier than version 1909), consider upgrading Windows 10 to version 1909 or later. Version 1909 may need KB5003635. For more information, see May 2021 resolved issues. 
 
-### Issue: The Excel Add-in needs an explicit sign out after encountering an AADSTS50058 "silent sign in failed" error
+### Issue: The Excel Add-in needs an explicit sign out after encountering a Microsoft EntraSTS50058 "silent sign in failed" error
 
-**Issue:** When users try to sign in to the Excel Add-in after some period of inactivity, the user encounters the AADSTS50058 "silent sign in failed" error and is forced to sign out before signing back in.
+**Issue:** When users try to sign in to the Excel Add-in after some period of inactivity, the user encounters the Microsoft EntraSTS50058 "silent sign in failed" error and is forced to sign out before signing back in.
 
-**Explanation:** The Excel Add-in uses Azure AD for authentication. When authentication occurs, a token is created for the user. That token has an expiration period. After the token has expired, an AADSTS50058 error will occur indicating that "silent sign in failed".
+**Explanation:** The Excel Add-in uses Microsoft Entra ID authentication. When authentication occurs, a token is created for the user. That token has an expiration period. After the token has expired, a Microsoft EntraSTS50058 error will occur indicating that "silent sign in failed".
 
 **Solution:** The user needs to sign out and sign back in. We will improve this behavior in the future by automatically signing the user out to enable faster sign in.
 
@@ -273,4 +257,3 @@ The following URLs are accessed for authentication.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

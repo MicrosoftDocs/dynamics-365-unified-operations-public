@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Plan for the global address book and other address books
-description: This article describes the considerations and decisions that you must make during the planning process.
-author: msftbrking 
-ms.date: 01/13/2020
+description: Learn about the considerations and decisions for the global address book and other address books, including outlines on default values.
+author: msftbrking
+ms.author: anisagrawal
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
-# ROBOTS: 
+ms.date: 01/13/2020
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: brking
 ms.search.validFrom: 2016-02-28
+ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ---
 
 # Plan for the global address book and other address books

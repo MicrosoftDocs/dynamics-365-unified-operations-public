@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up taxes, tax regions, tax codes, and tax groups
-description: This article describes the configuration of tax data and employer tax regions, including how to create tax regions, and then set up tax codes and tax groups.
+description: Learn about the configuration of tax data and employer tax regions, including how to create tax regions, and then set up tax codes and tax groups.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 222684
-ms.assetid: 5fc7b03b-0a18-4dd5-a717-85e40fbbf357
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 5fc7b03b-0a18-4dd5-a717-85e40fbbf357
 ---
 
 # Set up taxes, tax regions, tax codes, and tax groups

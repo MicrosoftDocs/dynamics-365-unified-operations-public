@@ -1,21 +1,21 @@
 ---
 title: What's new or changed in Dynamics 365 Finance and Operations version 8.1.3 (January 2019)
-description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 8.1.3. This version will be released in January 2019.
+description: Learn about new or changed features in Dynamics 365 Finance and Operations version 8.1.3. This version will be released in January 2019.
 author: sericks007
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2018-12-31
-ms.dyn365.ops.version: Release 8.1.3
+ms.topic: whats-new
+ms.date: 07/12/2024
 ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.search.validFrom: 2018-12-31
+ms.dyn365.ops.version: Release 8.1.3 
 ms.assetid: b364a31d-34de-45c5-b698-64c5262c592e
 ROBOTS: NOINDEX, NOFOLLOW
 ---
+
 # What's new or changed in Dynamics 365 Finance and Operations version 8.1.3 (January 2019)
 
 [!include [banner](../../../finance/includes/banner.md)]

@@ -1,18 +1,16 @@
 ---
 title: Waybill (Carta de Porte) complement
-description: This article explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
+description: Learn how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement with an outline on transportaiton details.
 author: AdamTrukawka
-ms.date: 03/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Mexico
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.23
-ms.search.form: 
 ---
 
 # Waybill (Carta de Porte) complement
@@ -68,6 +66,7 @@ In the **Insurance** section, the following fields are required:
 
 In the **Driver** section, the following fields are required:
 
+- **Driver**
 - **Registration number** or **RFC number**
 - **Driver license**
 - **Country/region**
@@ -78,9 +77,14 @@ In the **Trailer** section, set the following fields if a trailer is used in the
 - **Trailer type**
 
 > [!NOTE]
-> If there is an additional trailer, set the fields in the **Additional trailer** section. If there is an additional driver, set the fields in the **Additional driver** section.
+> If there's an additional trailer, set the fields in the **Additional trailer** section. If there's an additional driver, set the fields in the **Additional driver** section. For an additional driver, the following fields in the **Additional driver** section are required:
+>
+> - **Driver**
+> - **Registration number** or **RFC number**
+> - **Driver license**
+> - **Country/region**
 
-All the fields for a truck, trailer, and driver, except the **Federal motor transport configuration** field, can be filled in either manually or by using information from fixed asset and worker records.
+All the fields for a truck, trailer, and driver, except the **Federal motor transport configuration** field, can be filled in manually or by using information from fixed asset and worker records.
 
 ## Posting packing slips and shipping transfer orders that include the Waybill (Carta de Porte) complement
 
@@ -98,6 +102,9 @@ Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add i
     - For the **Trailer type** field, the SAT catalog is **c\_SubTipoRem**.
     - For the **Permission type** field, the SAT catalog is **c\_TipoPermiso**.
     - For the **Federal motor transport configuration** field, the SAT catalog is **c\_ConfigAutotransporte**.
+    - For the **Customs document type** field, the SAT catalog is **c\_DocumentoAduanero**.
+    - For the **Customs regime** field, the SAT catalog is **c\_RegimenAduanero**.
+    - For the **Customs material type** field, the SAT catalog is **c\_TipoMateria**.	
 
 ### Permission number
 
@@ -109,6 +116,23 @@ Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add i
 1. Go to **Product information management** \> **Products** \> **All released products**.
 2. Select and open the item record that you want to work with.
 3. On the **Manage inventory** FastTab, set the **Net weight** and **Tare weight** fields if they are required. The **Gross weight** field is automatically set.
+
+### Sales orders
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Select an existing sales order that you want to work with, or create a new one.
+3. On the **Header** tab, on the **General** FastTab, in the **Electronic invoices** section, in the **Customs regime** field, select a value. The list of available values should already be defined in the **Customs regime** catalog. The **Customs regime** field is mandatory when the **Foreign trade** option is turned on.
+
+### Sales order lines
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Select an existing sales order that you want to work with, or create a new one.
+3. On the **Lines** tab, on the **Product** FastTab, in the **CFD - Electronic invoices** section, specify the following information:
+
+    - In the **Customs material type** field, select a value. The list of available values should already be defined in the **Customs material type** catalog. The **Customs material type** field is mandatory when the **Foreign trade** option is turned on.
+    - In the **Customs document type** field, select a value. The list of available values should already be defined in the **Customs document type** catalog. The **Customs document type** field is mandatory when the **Foreign trade** option is turned on.
+    - In the **Material description** field, enter a value. The **Material description** field is mandatory when the **Customs material type** attribute contains the value **05** that has the description **Other** (**Otra**).
+    - Set the **Identifier of customs document** field. The **Identifier of customs document** field is mandatory when the **Foreign trade** option is turned on.
 
 ### Distance and time
 
@@ -138,6 +162,9 @@ If your company has implemented the **Fixed assets** module, enter information i
         - **Vehicle type**
         - **Federal motor transport configuration** (for trucks only)
         - **Trailer type**
+
+            - **Registration number**
+            - **Vehicle gross weight**
 
     - In the **Model** section:
 

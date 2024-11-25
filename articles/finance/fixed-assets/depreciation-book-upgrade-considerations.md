@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Depreciation book upgrade overview
-description: This article describes the current book functionality in Fixed assets. 
+description: Learn about the current book functionality in Fixed assets, which is based on the value model functionality, including consideration for before you upgrade. 
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["221624"]
-ms.collection: get-started
-ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
-ms.search.region: global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: overview
+ms.date: 06/20/2017
+ms.custom: ["221624"]
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2016-11-30
+ms.search.form: 
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ---
 
 # Depreciation book upgrade overview

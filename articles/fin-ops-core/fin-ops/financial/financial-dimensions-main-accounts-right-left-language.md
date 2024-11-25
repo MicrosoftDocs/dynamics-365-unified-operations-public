@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Financial dimensions and main accounts in right-to-left languages
-description: This article describes decisions that you need to make when you use a right-to-left language, and you must set up financial dimensions and main accounts.
+description: Learn about decisions that you need to make when you use a right-to-left language, and you must set up financial dimensions and main accounts.
 author: RyanCCarlson2
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 222564
-ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
-ms.search.region: global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
+ms.search.region: global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ---
 
 # Financial dimensions and main accounts in right-to-left languages

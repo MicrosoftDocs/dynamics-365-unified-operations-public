@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Overhead calculation
-description: This article describes the typical processes for calculating and allocating overhead costs.
-author: AndersGirke
-ms.date: 10/04/2018
+description: Learn about the typical processes for calculating and allocating overhead costs, including an overview on calculating and allocating the Electricity overhead cost.
+author: AndersEvenGirke
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/04/2018
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 272163
-ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
+ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ---
 
 # Overhead calculation

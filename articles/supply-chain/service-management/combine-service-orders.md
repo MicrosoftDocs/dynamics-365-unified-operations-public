@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Combine service orders  
-description: You can combine service orders.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn about combining service orders, including examples and a table defining and providing transaction types for various agreement line numbers.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.reviewer: kamaybac
+ms.search.form: SMAServiceOrderTable
 ---
 
 # Combine service orders   
@@ -107,7 +91,7 @@ In total, 10 service orders are created. Because the combined setting that you s
 
 Additional grouping of service order lines into service orders occurs according to any time window that you specify on the service agreement lines.
 
-## See also
+## Related information
 
 [Create service orders automatically](create-service-orders-automatically.md)
 

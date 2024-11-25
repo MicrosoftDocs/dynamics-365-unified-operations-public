@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Enter account and dimension combinations (segmented entry control)
-description: This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
+description: Learn how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 author: aprilolson
-ms.date: 10/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionConfigureAccountStructure
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 10/24/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: DimensionConfigureAccountStructure
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
 ---
 
 # Enter account and dimension combinations (segmented entry control)

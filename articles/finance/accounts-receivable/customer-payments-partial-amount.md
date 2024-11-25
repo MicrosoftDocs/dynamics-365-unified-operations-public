@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Customer payments for a partial amount
-description: Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
-author: ShivamPandey-msft
-ms.date: 01/08/2018
+description: Customers can make payments that are less than the amount of an invoice. The options that are available to you depend on your business requirements and configuration.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPaymEntry
-# ROBOTS: 
+ms.date: 01/08/2018
+ms.reviewer: twheeloc
+ms.custom: evergreen
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustPaymEntry
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ---
 
 # Customer payments for a partial amount
@@ -34,10 +23,10 @@ Sometimes, customers make a payment that is less than the amount of an invoice. 
 
 ## Partial payment with no discount
 
-Customers might make a partial payment because they just don't have enough cash on hand to pay the invoice in full, or because there is a dispute about an item on the invoice. In this situation, the invoice can be partially settled with the payment. The invoice will remain open and will show a balance.
+Customers might make a partial payment. In this situation, the invoice can be partially settled with the payment. The invoice remains open and shows a balance.
 
 ## Discount amounts
-You can offer customers a cash discount for paying an invoice before the due date. For example, you enter an invoice for 100.00 that specifies a 2-percent cash discount if the invoice is paid within 10 days. The due-date terms are 30 days. If you receive a payment of 98.00 within 10 days, you enter the payment for 98.00. Then, when the invoice is marked for settlement, the cash discount it taken automatically.
+You can offer customers a cash discount for paying an invoice before the due date. For example, you enter an invoice for 100.00 that specifies a 2-percent cash discount if the invoice is paid within 10 days. The due-date terms are 30 days. If you receive a payment of 98.00 within 10 days, you enter the payment for 98.00. Then, when the invoice is marked for settlement, the cash discount is taken automatically.
 
 ## Partial payments with cash discounts
 When customers make a partial payment, they might plan to make an additional partial payment to fully settle the invoice. To take a cash discount for a partial payment, you must set the **Calculate cash discounts for partial payments** option to **Yes** on the **Accounts receivable parameters** page. 

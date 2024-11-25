@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.11 (June 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.11. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.11 with an outline on included features. 
 author: kamaybac
-ms.date: 04/17/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-04-17 
-ms.dyn365.ops.version: 10.0.11
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.11 (July 2020)
@@ -42,21 +28,21 @@ The following features are included in this release. The feature titles link to 
 
 - [Inventory on-hand report storage](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [License plate receiving enhancements for the warehouse app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - For more information, see [License plate receiving via the Warehouse Management mobile app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [License plate receiving enhancements for the warehouse app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Learn more in [License plate receiving via the Warehouse Management mobile app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Line reservation enhancements for the batch number reservation form](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - For more information, see [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md).
+- [Line reservation enhancements for the batch number reservation form](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Learn more in [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md).
 
 - [New data entities for the manufacturing area](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Over receipt of load quantities](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For more information, see [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
+- [Over receipt of load quantities](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Learn more in [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
 
-- [Report as finished on batch numbers from the job card device](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md).
+- [Report as finished on batch numbers from the job card device](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Learn more in [Report as finished from the job card device](../production-control/report-finished-job-device.md).
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of finance and operations apps (July 2020)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-35.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. Learn more in [Platform updates for version 10.0.11 of finance and operations apps (July 2020)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-35.md).
 
 ### Bug fixes
 

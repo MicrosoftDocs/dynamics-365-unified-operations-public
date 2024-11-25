@@ -1,16 +1,12 @@
 ---
 title: Use the safety stock journal to update minimum coverage for items
-description: This article describes how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions. 
+description: Learn how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions.
 author: t-benebo
-ms.date: 10/28/2021
-ms.topic: article
-ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, ReqItemTableSetup, ReqItemTable, EcoResProductDetailsExtended
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-10-28
-ms.dyn365.ops.version: 10.0.22
+ms.topic: article
+ms.date: 10/28/2021
+ms.reviewer: kamaybac
+ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, ReqItemTableSetup, ReqItemTable, EcoResProductDetailsExtended
 ---
 
 # Use the safety stock journal to update minimum coverage for items
@@ -23,7 +19,7 @@ This article describes how to use the safety stock journal to calculate minimum 
 
 ## Overview of minimum coverage usage
 
-Safety stock is set up on the **Item coverage** page for each item. Different types of replenishment are represented by different coverage codes. (For more information, see [Safety stock fulfillment for items](safety-stock-replenishment.md).) However, all coverage codes use the value that is set in the **Minimum** field on the **Item coverage** page for each item. There are two major approaches for using the **Minimum** field:
+Safety stock is set up on the **Item coverage** page for each item. Different types of replenishment are represented by different coverage codes. (Learn more in [Safety stock fulfillment for items](safety-stock-replenishment.md).) However, all coverage codes use the value that is set in the **Minimum** field on the **Item coverage** page for each item. There are two major approaches for using the **Minimum** field:
 
 - **Minimum quantity for min/max purposes** – This approach uses the minimum quantity together with min/max logic. It applies when the **Coverage code** field is set to *Min/Max* for the relevant item or coverage group. The **Minimum** quantity represents the average daily usage multiplied by the item's lead time.
 - **Minimum quantity for inventory plan purposes** – This approach uses the minimum quantity to represent an inventory plan in combination with demand forecasts. It applies when the **Coverage code** field is set to *Period* or *Requirement* for the relevant item or coverage group. The **Minimum** quantity represents an inventory plan that reflects the desired customer service level to help reduce stock-outs, partial shipments, and delivery lead times. The minimum quantity reflects a percentage of forecast accuracy for a given item. It doesn't represent a desired inventory position.
@@ -140,7 +136,7 @@ Follow these steps to post the new minimum quantity and validate the result.
     1. On the Action Pane, on the **Plan** tab, in the **Coverage** group, select **Item coverage**.
     1. Notice that the **Minimum** value for the site and warehouse that you adjusted by using the posted safety stock journal has now been updated to match your edit.
 
-## Additional resources
+## Related information
 
 - [Safety stock fulfillment for items](safety-stock-replenishment.md)
 

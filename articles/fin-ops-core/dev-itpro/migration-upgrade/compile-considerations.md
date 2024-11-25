@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Plan and prepare for compiling code against the latest update
-description: This article highlights potential issues that a developer might see when compiling partner code with the latest product updates.
-author: dfroslie
-
-ms.date: 10/15/2019
-
+description: Learn about potential issues that a developer might see when compiling partner code with the latest product updates.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/15/2019
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 102343
-ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dfroslie
 ms.search.validFrom: 2018-10-01
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 1
-
+ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ---
 
 # Plan and prepare for compiling code against the latest update

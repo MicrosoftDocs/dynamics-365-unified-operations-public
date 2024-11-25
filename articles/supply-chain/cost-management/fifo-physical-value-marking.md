@@ -1,22 +1,19 @@
 ---
 title: FIFO with physical value and marking
-description: First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first. Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction. 
-author: JennySong-SH
-ms.date: 02/02/2022
-ms.topic: article
-ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-audience: Application User
+description: Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the date of the transactions.
+author: prasungoel
+ms.author: prasungoel
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ---
 
 # FIFO with physical value and marking
 
 [!include [banner](../includes/banner.md)]
-
 
 First in, first out (FIFO) is an inventory management and valuation method where inventory that is produced or acquired first is sold, used, or disposed of first. During the inventory close process in Microsoft Dynamics 365 Supply Chain Management, the system will create settlements where the first receipt is matched against the first issue, and so on.
 
@@ -44,7 +41,7 @@ In this example, the **Include physical value** checkbox is cleared on the item 
 - 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions)
 - 7\. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b, and the resulting final cost will be USD 10.00.
 
-The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used.
+The new running average cost price reflects the average of the financially updated transactions. The following illustration shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used.
 
 ![FIFO without the Include physical value option.](./media/fifo-without-include-physical-value.png)
 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Posting definitions
-description: This article provides information about posting definitions, and how to define and link them. For supported posting types and documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries.
+description: Learn about posting definitions, and how to define and link them. You can use posting definitions instead of posting profiles to classify main accounts.
 author: kweekley
-ms.date: 09/03/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, LedgerParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 1495e7e0-2e39-464c-8da9-f55b1ca1c6bb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 09/03/2019
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, LedgerParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1495e7e0-2e39-464c-8da9-f55b1ca1c6bb
 ---
 
 # Posting definitions

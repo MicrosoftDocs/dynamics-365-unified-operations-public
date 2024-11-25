@@ -1,18 +1,18 @@
 ---
 title: Set up legal entity parameters (Brazil)
-description: Set up Brazilian legal entity parameters.
+description: Learn how to set up Brazilian legal entity parameters, including a step-by-step process that uses the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up legal entity parameters (Brazil)
 
 [!include [banner](../../includes/banner.md)]

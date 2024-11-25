@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Budget analysis report
-description: This article describes the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify.
+description: Learn about the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity.
 author: v-kiarnd
-ms.date: 07/08/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 07/08/2019
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: twheeloc
 ms.search.validFrom: 2019-6-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Budget analysis report

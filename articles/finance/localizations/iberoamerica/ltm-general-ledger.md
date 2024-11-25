@@ -1,12 +1,12 @@
 ---
 title: Printing configuration for General Ledger LATAM
-description: This article provides information about the configuration that's required to print a general ledger report for Latin America. 
+description: Learn about the configuration that's required to print a general ledger report for Latin America, including a process for printing the general ledger report. 
 author: Fhernandez0088
-ms.date: 10/03/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 10/03/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Printing configuration for General Ledger LATAM

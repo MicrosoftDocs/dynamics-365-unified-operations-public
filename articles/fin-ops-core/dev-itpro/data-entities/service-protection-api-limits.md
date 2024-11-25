@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Service protection API limits
-description: This article provides information about limits for service protection application programming interfaces (APIs) for the finance and operations apps service.
+description: Learn about limits for service protection application programming interfaces (APIs) for the finance and operations apps service.
 author: jaredha
-ms.date: 08/25/2022
+ms.author: sumadhey
 ms.topic: article
+ms.date: 08/25/2022
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: jaredha
 ms.search.validFrom: 2022-04-21
-
 ---
 
 # Service protection API limits
@@ -85,14 +82,14 @@ To track API usage to enforce service protection API limits, each web server in 
 
 - **User** – The user who is making the API request.
 
-    - If the application authenticates by using user authentication, this value is the object ID of the Azure Active Directory (Azure AD) user principal of the user who is making the API request.
-    - If the application authenticates by using app authentication, this value is the object ID of the application in Azure AD.
+    - If the application authenticates by using user authentication, this value is the object ID of the Microsoft Entra user principal of the user who is making the API request.
+    - If the application authenticates by using app authentication, this value is the object ID of the application in Microsoft Entra ID.
 
-- **Application** – The client ID of the application from the app registration in Azure AD.
+- **Application** – The client ID of the application from the app registration in Microsoft Entra ID.
 
 These values are taken from the access token that is used for the API request. For example, a company has an employee portal that is a web application that uses the OData API to connect to finance and operations data. Each employee signs in to the web app by using a company email address and password. In this scenario, the user object ID and the application client ID that are used in the API request are used to track usage against the service protection API limits. Each user of the application has API usage tracked and throttled independently. For more information about the authentication flow for this scenario, see [Authentication](services-home-page.md#authentication).
 
-If the application uses app authentication instead of user authentication, so that there isn't a user who signs in to the application, the user in the throttling key is the object ID of the application in Azure AD. For information about how to find the application object ID, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
+If the application uses app authentication instead of user authentication, so that there isn't a user who signs in to the application, the user in the throttling key is the object ID of the application in Microsoft Entra ID. For information about how to find the application object ID, see [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals).
 
 ### Resource-based service protection API limits
 
@@ -162,7 +159,6 @@ The service protection API limits don't apply to all Microsoft services. The fol
 - [Data Import/Export Framework (DIXF)](../../fin-ops/data-entities/data-import-export-job.md)
 - [Recurring integrations](recurring-integrations.md)
 - [Data Integrator](/power-platform/admin/data-integrator)
-- [Dual-write](dual-write/dual-write-overview.md)
 - [Power Platform virtual tables for finance and operations apps](../power-platform/virtual-entities-overview.md)
 - [Finance and operations apps Connector](fin-ops-connector.md)
 
@@ -174,4 +170,3 @@ Services that don't use finance and operations OData or custom service API endpo
 
 > [!NOTE]
 > When service protection limits are applied to them, these services will implement handlers that use Retry-After logic. However, we still recommend that you have client-side handling for throttling when you use these services. Consider implementing the 429 handler that uses Retry-After logic.
-

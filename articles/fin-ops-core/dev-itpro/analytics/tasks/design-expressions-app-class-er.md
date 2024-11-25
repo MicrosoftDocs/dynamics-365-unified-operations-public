@@ -4,10 +4,8 @@ description: This article describes how to reuse the existing application logic 
 author: kfend
 ms.date: 11/02/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-06-30

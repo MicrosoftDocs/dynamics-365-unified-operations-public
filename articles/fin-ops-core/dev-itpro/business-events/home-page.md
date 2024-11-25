@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Business events overview
-description: This article provides information about business events, which allow external systems to receive notifications from finance and operations apps.
+description: Learn about business events, which allow external systems to receive notifications from finance and operations apps.
 author: jaredha
-ms.date: 03/31/2023
+ms.author: kamanick
+ms.date: 06/19/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
-ms.author: jaredha
 ms.search.validFrom: Platform update 24
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 

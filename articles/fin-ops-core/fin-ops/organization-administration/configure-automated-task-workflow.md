@@ -1,38 +1,23 @@
 ---
-# required metadata
-
 title: Configure automated tasks in a workflow
-description: This article explains how to configure the properties for an automated task.
+description: Learn about how to configure the properties for an automated task, including outlines on naming tasks and specifying when notifications are sent.
 author: ChrisGarty
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 192061
-ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ---
 
 # Configure automated tasks in a workflow
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to configure the properties for an automated task.
 

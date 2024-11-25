@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Split payment for invoices issued to the Public Administration
-description: This article provides information about the split payment accounting schema.
+description: Learn about the split payment accounting schema, including prerequisites and an outline on working with the split payment invoices.
 author: EvgenyPopovMBS
-ms.date: 10/31/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxBookSection, TaxGroup
-# ROBOTS: 
+ms.date: 10/31/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261314
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: TaxBookSection, TaxGroup
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Split payment for invoices issued to the Public Administration

@@ -1,19 +1,17 @@
 ---
 title: Add indexes to tables through extension
-description: This article describes how to add an index to a table.
+description: Learn how to add an index to a table through extension so that you can store additional data for access to data based on the new fields.
 author: ivanv-microsoft
-ms.date: 03/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 03/09/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Add indexes to tables through extension

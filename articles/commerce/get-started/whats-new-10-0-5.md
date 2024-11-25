@@ -5,30 +5,20 @@
 title: What's new or changed in Dynamics 365 for Retail version 10.0.5
 description: This article describes features that are in new or changed in Dynamics 365 for Retail. 
 author: josaw1
-ms.date: 09/16/2019
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-08-02
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # What's new or changed in Dynamics 365 for Retail version 10.0.5
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -49,10 +39,6 @@ Test recorder is a new feature added in POS to significantly reduce the time and
 
 ### Regression suite Automation Tool
 The Regression suite automation tool (RSAT) enables functional power users to execute the test case in Retail POS and update the test execution result back in Azure DevOps for reporting and investigation. RSAT provides options to investigate the test failures. RSAT decouples the test parameters from test steps and stores the parameters in Microsoft Excel files for easy editing of the test parameter values. The RSAT tool is now updated with a Retail POS tab to specify the Retail specific settings to play back Retail POS recordings and generate retail parameters and variable files.
-
-![POS playback environment setting.](../dev-itpro/media/Settings.PNG)
-
-For more information on POS and RSAT, see [Test recorder and Regression suite automation tool for Retail Cloud POS](../dev-itpro/pos-rsat.md).
 
 ## Additional resources
 

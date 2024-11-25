@@ -1,18 +1,16 @@
 ---
 title: Benefits Power BI content
-description: This article describes the Benefits Power BI content.
+description: Learn about the Benefits Power BI content including learning how to access Power BI content and how to understand data models and entities.
 author: jcart1106
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: jcart
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: johnmichalak
+ms.search.form: HcmBenefitWorkspace
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.search.form: HcmBenefitWorkspace
 ---
 
 # Benefits Power BI content

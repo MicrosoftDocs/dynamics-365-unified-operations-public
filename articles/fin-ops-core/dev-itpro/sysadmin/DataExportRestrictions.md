@@ -1,18 +1,13 @@
 ---
-# required metadata
-
 title: Execution restrictions for specific data export projects
-description: This article provides information about execution restrictions for specific data export projects in older, out-of-service environments.
-author: peakerbl
-ms.date: 05/12/2022
+description: Learn about execution restrictions for specific data export projects in older, out-of-service environments, with a link to more information for supported versions.
+author: pnghub
+ms.author: gned
 ms.topic: article
-ROBOTS: NOINDEX, NOFOLLOW
-audience: IT Pro
-ms.reviewer: sericks
+ms.date: 07/12/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: peakerbl
 ms.search.validFrom: 2022-05-12
-
 ---
 
 # Execution restrictions for specific data export projects

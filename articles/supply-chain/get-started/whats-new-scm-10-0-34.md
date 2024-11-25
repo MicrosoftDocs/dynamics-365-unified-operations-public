@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.34. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.34 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
+ms.topic: conceptual
+ms.date: 04/19/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
-ms.date: 06/19/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)
@@ -43,7 +43,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Engineering change management | Release multiple BOMs/formulas for Engineering Change Management | Lets you release all BOMs or formulas that are active for a product when you release the product. This functionality can be relevant, for example, if you have multiple active formulas that apply for various from quantities. You'll be able to view the different BOMs or formulas and their respective routes on the BOM designer when releasing on the **Release product structure** page and when reviewing the release on **Open product releases** page. For more information, see [Release product structures](../engineering-change-management/release-product-structure.md). |
+| Engineering change management | Release multiple BOMs/formulas for Engineering Change Management | Lets you release all BOMs or formulas that are active for a product when you release the product. This functionality can be relevant, for example, if you have multiple active formulas that apply for various from quantities. You'll be able to view the different BOMs or formulas and their respective routes on the BOM designer when releasing on the **Release product structure** page and when reviewing the release on **Open product releases** page. Learn more in [Release product structures](../engineering-change-management/release-product-structure.md). |
 | Inventory and warehouse management | Inventory Visibility integration with inventory adjustment offset | Makes it possible to offset an inventory adjustment that was previously posted in Inventory Visibility. |
 | Inventory and warehouse management | Inventory Visibility integration with inventory adjustment posting | Makes it possible to post inventory adjustments to inventory visibility by batch. |
 | Product information management | User specific product name and description | Lets workers select the language in which product names and descriptions are shown for them in the user interface. |
@@ -54,13 +54,13 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Sales and marketing | Make Supply Chain Management price master when integrated with Dynamics 365 Sales | <p>This feature requires the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature. When it's enabled, Sales won't perform calculations for extended amounts, summary amounts, subtotals, and totals for sales quotations and sales orders. When quotations or sales orders are created in Sales, if a price list exists in Sales, the price from that price list is used, but no other calculations are done. All calculated monetary fields are calculated in and synced from Supply Chain Management.</p><p>In Sales, this feature sets the **Use system price calculation** option to *No* and the **Discount calculation method** field to *Per unit*. The following changes are also made in the Sales user interface (UI) for sales quotation and sales order lines: the **Volume discount** field is hidden, the **Discount** field is expressed as a per-unit discount amount, and the **Manual discount** field is made read-only and relabeled. Afterward, manual discounts can be entered in the **Line discount amount** field.</p><p>**Note:** This feature is a component of the [Add efficiency in prospect-to-cash integration with Sales](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/gain-added-efficiency-prospect-to-cash-integration-dynamics-365-sales) functionality, which requires Supply Chain Management version 10.0.34 and other prerequisites that are listed in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md). Before you enable this feature, make sure that your system meets all the listed prerequisites.</p> |
 | Sales and marketing | Set default ownership for sales quotations when integrated with Dynamics 365 Sales | <p>This feature requires the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature. It adds a field for setting the default ownership of new sales quotations to the **Accounts receivables parameters** page. The default ownership can be set to *Based on origin*, *Dynamics 365 Sales*, or *Supply Chain Management*. If this feature is disabled, ownership is always based on the origin.</p><p>**Note:** This feature is a component of the [Add efficiency in prospect-to-cash integration with Sales](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/gain-added-efficiency-prospect-to-cash-integration-dynamics-365-sales) functionality, which requires Supply Chain Management version 10.0.34 and other prerequisites that are listed in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md). Before you enable this feature, make sure that your system meets all the listed prerequisites.</p> |
 | Shared AP and AR | Rebate management sold-to customers posting | Lets you select sold-to customers as an option for the Rebate management posting account source. With the introduction of this new account source type, you can use *sold-to customers* as an extension type of a deal line account, and use this posting profile on any number of rebate lines. Once *sold-to customers* is set, date transactions will be split and grouped together per account when rebates are processed. Those transactions will also be posted to the same account. |
-| Transportation management | (Preview) Source document and accounting distribution support for Landed Cost | Lets you include landed costs in the accounting distribution of purchased product receipts, which makes it easy to identify and track these costs. This feature lets you associate freight cost from Landed cost with their corresponding source documents, which provides a more accurate and comprehensive view of the total cost of goods received. With this functionality, you can gain greater visibility into the expenses associated with your purchases and transportation, allowing for better cost analysis and management. For more information, see [Show landed costs in the accounting distribution of product receipts](../landed-cost/estimate-manage-landed-costs.md#source-doc-post). |
+| Transportation management | Source document and accounting distribution support for Landed Cost | Lets you include landed costs in the accounting distribution of purchased product receipts, which makes it easy to identify and track these costs. This feature lets you associate freight cost from Landed cost with their corresponding source documents, which provides a more accurate and comprehensive view of the total cost of goods received. With this functionality, you can gain greater visibility into the expenses associated with your purchases and transportation, allowing for better cost analysis and management. Learn more in [Show landed costs in the accounting distribution of product receipts](../landed-cost/estimate-manage-landed-costs.md#source-doc-post). |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of Finance and Operations apps (July 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.34 includes platform updates. Learn more in [Platform updates for version 10.0.34 of Finance and Operations apps (July 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md).
 
 ### Bug fixes
 

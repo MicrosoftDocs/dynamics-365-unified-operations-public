@@ -1,27 +1,13 @@
 --- 
-# required metadata 
- 
 title: Move scheduled kanban jobs
-description: This procedure focuses on moving planned process kanban jobs to a different period. 
+description: Learn about moving planned process kanban jobs to a different period, including a step-by-step process for selecting scheduled kanban jobs. 
 author: johanhoffmann
-ms.date: 11/07/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: KanbanJobSchedulingListPage   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 11/07/2018
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: KanbanJobSchedulingListPage
 ---
 
 # Move scheduled kanban jobs

@@ -1,15 +1,13 @@
 ---
 title: Separation of localization models
-description: This article describes how to split the solution into separate models for each feature type.
+description: Learn about how to split the solution into separate models for each feature type for localization ISV solution providers.
 author: kfend
-ms.date: 06/17/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 06/17/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0

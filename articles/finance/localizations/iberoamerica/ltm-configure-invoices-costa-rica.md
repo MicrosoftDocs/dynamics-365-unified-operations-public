@@ -1,12 +1,12 @@
 ---
 title: Configure sales and purchase invoices for Costa Rica
-description: This topic explains how to configure sales and purchase invoices for a company in Costa Rica.
+description: Learn how to configure sales and purchase invoices for a company in Costa Rica, including an overview and process for sales invoice configuration.
 author: Cpicon85
-ms.date: 10/09/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-cpicon
+ms.topic: article
+ms.date: 10/09/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure sales and purchase invoices for Costa Rica

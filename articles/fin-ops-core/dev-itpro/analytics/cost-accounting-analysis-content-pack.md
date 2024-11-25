@@ -1,18 +1,15 @@
 ---
 title: Cost accounting analysis Power BI content
-description: This article describes what is included in the Cost accounting analysis Power BI content.
+description: Learna bout what is included in the Cost accounting analysis Power BI content, including learning about metrics that are included in the Power BI content.
 author: AndersGirke
-ms.date: 10/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: aevengir
+ms.topic: article
+ms.date: 10/02/2019
+ms.reviewer: kamaybac
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ---
 

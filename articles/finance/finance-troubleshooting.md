@@ -1,17 +1,17 @@
 ---
 title: Finance troubleshooting and FAQs
-description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Finance
-author: Livbjerg
-ms.date: 05/24/2023
+description: Access links to troubleshooting resources and answers to various frequently asked question articles for Dynamics 365 Finance.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
-ms.author: jlivbjerg
-ms.search.validFrom: 2023-02-28
-ms.dyn365.ops.version: 10.0.28
+ms.date: 07/18/2024
 ms.custom: bap-template
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-02-28
+ms.search.form:
+ms.dyn365.ops.version: 10.0.28
 ---
 
 # Finance Troubleshooting and FAQs
@@ -26,56 +26,6 @@ For a collection of troubleshooting articles grouped by topic, please see the fo
 
 These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 Finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
 
-Additionally, the following troubleshooting articles are integrated into the Finance product documentation. These articles document how to troubleshoot a specific topic or subject within the Finance area.
-
-Accounts payable
-
-- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#exception-processing)
-
-Business performance analytics
- - [Business performance analytics self-help overview](business-performance-analytics/BPA-help-overview.md)
- - [Missing fiscal calendar for general ledger](business-performance-analytics/BPA-self-help-1.md)
- - [Missing fiscal calendar for budget](business-performance-analytics/BPA-self-help-2.md)
- - [Missing main account in budget](business-performance-analytics/BPA-self-help-3.md)
- - [Missing journal entries](business-performance-analytics/BPA-self-help-4.md)
- - [Mismatch between debits and credits](business-performance-analytics/BPA-self-help-5.md)
- - [Missing budget data](business-performance-analytics/BPA-self-help-6.md)
- - [Missing budget transaction header](business-performance-analytics/BPA-self-help-7.md)
-
-
-Budgeting
-
-- [Position budgeting troubleshooting](budgeting/position-budgeting-set-up-issues.md)
-
-Cash and bank management
-
-- [Troubleshoot cash flow forecasting setup](cash-bank-management/cash-flow-forecasting-tsg.md)
-- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled)
-
-General ledger
-
-- [Journal posting failure because of imbalance](general-ledger/posting-fail-imbalance.md)
-- [Why can't I reverse this transaction?](general-ledger/cant-reverse-transctns.md)
-- [Change the accounting or reporting currency](general-ledger/add-change-acctg-rprtg-crrncy.md)
-- [Change or reassign a ledger calendar](general-ledger/change-mdfy-clndr-to-ledger.md)
-- [Reverse settings on journals and lines](general-ledger/rvrs-settgs-on-jrnls-lines.md)
-- [Year-end close missing opening balances](general-ledger/yec-mssng-open-blnces.md)
-- [How do I set up balancing financial dimensions?](general-ledger/set-up-balance-dimensions.md)
-- [Open financial journal templates in Office](general-ledger/open-fincl-jrnls-in-office.md)
-- [Default financial dimensions on financial journals](general-ledger/dimension-default-values.md)
-- [General journal posting performance](general-ledger/posting-performance.md)
-
-Finance insights
-
-- [Troubleshoot Finance insights setup issues](finance-insights/finance-insights-troubleshooting-faq.md)
-
-Financial reporting
-
-- [Troubleshooting issues opening Report Designer](general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer)
-- [Troubleshoot report designer issues with Event viewer](general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer)
-- [Troubleshoot issues connecting to Financial reporting](general-ledger/financial-reporting-getting-started.md#troubleshoot-issues-connecting-to-financial-reporting)
-- [Troubleshoot the Office integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/finance)
-
 ## Frequently asked questions
 
 Collections of frequently asked questions (FAQs) are integrated into the finance documentation. Each of these articles include multiple FAQs for a specific feature topic or area.
@@ -88,6 +38,7 @@ The following FAQ articles discuss issues specific to Finance:
 - [Credit statistics FAQ](accounts-receivable/credit-statistics-faq.md)
 - [Financial Reporting Data mart resets FAQ](../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?context=/dynamics365/context/finance)
 - [Financial reporting FAQ](general-ledger/financial-reporting-faq.md)
+- [Intercompany journals: Dimension values on multi-line vs single line journal](general-ledger/intercompany-journal.md)
 
 The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including finance:
 
@@ -97,7 +48,7 @@ The following FAQ articles discuss issues related to the platform shared by all 
 - [Invoice capture FAQ](../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json)
 - [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json)
 - [Open in Excel experiences FAQ](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json)
-- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
+- [Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
 - [Workflow FAQ](../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json)
 
 ## Other support resources
@@ -107,4 +58,7 @@ The following Microsoft support and community resources are also available, wher
 - [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
 - [Dynamics 365 Community](https://community.dynamics.com/)
 - [Finance ideas portal](https://experience.dynamics.com/ideas/categories/?forum=16691718-61e2-e611-8101-5065f38b21f1&forumName=Dynamics%20365%20Finance)
-- [Dynamics 365 support](https://dynamics-int.microsoft.com/support/)
+- [Dynamics 365 support] In <a href="https://lcs.dynamics.com/">LCS</a>, the <strong>Support</strong> tile opens a tool that helps you manage support incidents. To submit issues directly to Microsoft, select the <strong>Support</strong> tile in your LCS project. You can then submit issues in two ways:
+<ul>
+<li>On the <strong>Active issue</strong> tab, select your issue, and then select <strong>Submit to Microsoft</strong>.</li>
+<li>On the <strong>Submitted to Microsoft</strong> tab, select <strong>Submit an incident</strong>, and then follow the on-screen instructions to submit the incident. After you submit an incident, you will receive an email message from the Microsoft Support engineer who is assigned to your case.</li>

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Mobile invoice approvals
-description: This article is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. 
-author: abruer
-ms.date: 08/22/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 262034
-ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 08/22/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: 
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ---
 
 # Mobile invoice approvals

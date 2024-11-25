@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Work order types
-description: This article explains work order types in Asset Management.
-author: johanhoffmann
-ms.date: 08/13/2019
+description: Learn about work order types in Asset Management, which are used to categorize work orders, including a step-by-step process.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetWorkOrderType 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 08/13/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac
+ms.search.form: EntAssetWorkOrderType 
 ---
 
 # Work order types

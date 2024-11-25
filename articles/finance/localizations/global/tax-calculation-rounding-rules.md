@@ -1,42 +1,31 @@
 ---
-# required metadata
-
 title: Tax calculation rounding rules
-description: This article provides information about the rounding rules in the tax calculation parameters of the tax calculation service.
+description: Learn about the rounding rules in the tax calculation parameters, including outlines on rounding precision, the rounding method, and the calculation method.
 author: kailiang
-ms.date: 07/29/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 02/09/2024
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
-
 ---
+
 # Tax calculation rounding rules
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about how the rounding rules work in the tax calculation parameters of the tax calculation service.
+This article provides information about how the rounding rules work on the **Tax calculation parameters** page.
 
 > [!NOTE] 
-> When the tax calculation service is enabled, the rounding rules on the **Sales tax code** and **Sales tax group** pages aren't effective.
+> When the **Enable advanced tax calculation** parameter is enabled, the rounding rules on the **Sales tax code** and **Sales tax group** pages aren't effective.
 
 You can view the configuration of rounding rules for the tax calculation service in the **Sales tax rounding rule** section on the **Calculation** FastTab on the **General** tab of the **Tax calculation parameters** page (**Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**).
 
-[![Rounding rule configuration on the Tax calculation parameters page](../media/tax-calculation-parameters-calculation-1.png)](/media/tax-calculation-parameters-calculation-1.png)
+[![Rounding rule configuration on the Tax calculation parameters page.](../media/tax-calculation-parameters-calculation-1.png)](../media/tax-calculation-parameters-calculation-1.png)
 
 The **Rounding precision** and **Rounding method** fields determine how calculated amounts in the payload from the tax calculation service are rounded.
 

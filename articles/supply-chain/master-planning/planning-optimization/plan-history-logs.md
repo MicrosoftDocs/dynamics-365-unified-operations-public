@@ -1,31 +1,15 @@
 ---
-# required metadata
-
 title: View plan history and planning logs
-description: This article explains how to view the history of planning jobs.
+description: Learn how to view the history of planning jobs, including a step-by-step process for viewing auto-firming errors and other warnings or errors.
 author: t-benebo
-ms.date: 06/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: AX 10.0.5
-
+ms.topic: article
+ms.date: 06/01/2020
+ms.custom: 
+ms.reviewer: kamaybac
+ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 ---
+
 # View plan history and planning logs
 
 [!include [banner](../../includes/banner.md)]

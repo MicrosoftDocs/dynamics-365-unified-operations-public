@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
-author: VStamberg
-ms.date: 01/03/2023
+author: liza-golub
+ms.author: egolub
+ms.date: 09/16/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
-
 ---
 
 # Regulatory updates
@@ -45,6 +33,13 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Japan | September 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | Japan consumption Tax return report layout change - 2024 for periods after October 1, 5th year of Reiwa. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
+| Norway | August 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | [Standard Audit File for Tax (SAF-T) for Norway](../norway/emea-nor-satndard-audit-file-for-tax.md) version 1.30 required from January 1, 2025. |
+| France | March 2024 | 10.0.40 | [VAT declaration](../france/emea-fra-VAT-declaration-preview-France.md) - 2024 |
+| Japan | March 2024 | 10.0.37HF, 10.0.38HF, 10.0.39HF, 10.0.40 | Japan consumption Tax return report layout change - 2024. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
+| Italy | February 2024 | 10.0.40 | [Unique certification](../italy/emea-ita-exil-unique-certification.md) - 2024 |
+| Spain | February 2024 | 10.0.40  | VAT declaration - Modelo 303 - 2023. [VAT declaration](../spain/emea-esp-vat-declaration-spain.md) |
+| Estonia | January 2024 | 10.0.36HF, 10.0.37HF,  10.0.38HF, 10.0.39 | Estonia - VAT return form, structure and specifications change 2024. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Denmark | August 2023 | 10.0.37 | [Accounting basis (Regnskab Basis) electronic report for Denmark](../denmark/emea-dnk-accounting-basis.md) |
 | Switzerland | July 2023 | 10.0.36 | [VAT declaration](../switzerland/emea-che-vat-declaration-switzerland.md) - 2024 |
 | Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](../poland/emea-pol-standard-audit-file-saf.md#jpk-fa) project advance invoice handling |

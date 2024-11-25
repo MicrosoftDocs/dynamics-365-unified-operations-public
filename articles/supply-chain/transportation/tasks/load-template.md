@@ -1,27 +1,14 @@
---- 
-# required metadata 
- 
+---
 title: Load templates
-description: This article describes how to set up load templates, and how to associate a load template with a new load.
-author: Weijiesa
-ms.date: 10/30/2020
-ms.topic: how-to 
-ms.prod: 
-ms.technology: 
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadTemplate 
-audience: Application User 
-# ms.devlang: 
+description: Learn how to set up load templates, and how to associate a load template with a new load, including a step-by-step process.
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-30 
-ms.dyn365.ops.version: 10.0.15
+ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Load templates
@@ -50,12 +37,14 @@ This article describes how to set up load templates, and how to associate a load
 
 ## Associate a load template with a new load
 
-1. Go to **Transportation management \> Planning \> Load planning workbench**.
-1. In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**. 
+1. Go to one of the following pages, depending on whether you're setting up an inbound or outbound load:
+    - **Transportation management > Planning > Inbound load planning workbench**.
+    - **Transportation management > Planning > Outbound load planning workbench**.
+
+1. In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**.
 1. Select the specific document to plan the load for.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.
 1. Select **OK** to apply the template.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

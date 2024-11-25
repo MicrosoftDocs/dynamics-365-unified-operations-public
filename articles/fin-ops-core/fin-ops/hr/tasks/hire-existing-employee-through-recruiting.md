@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Hire existing employees through recruitment
-description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
+description: Learn about the procedure of hiring an existing employee through the recruiting process, including a step-by-step process.
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 01/10/2022
+ms.custom: 
+ms.reviewer: twheeloc  
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Hire existing employees through recruitment
 
 [!include [banner](../../includes/banner.md)]

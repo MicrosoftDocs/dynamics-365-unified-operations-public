@@ -1,38 +1,22 @@
 ---
-# required metadata
-
 title: Configure workflow properties
-description: This article explains how to configure the various properties of a workflow.
+description: Learn about how to configure the various properties of a workflow, including outlines on naming workflows and specifying the workflow owner.
 author: ChrisGarty
-ms.date: 07/07/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 196083
-ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 07/07/2020
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ---
 
 # Configure workflow properties
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to configure the various properties of a workflow.
 

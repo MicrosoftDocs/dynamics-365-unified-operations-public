@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Customize the Open in Microsoft Office menu
-description: This article provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
+description: Learn about the Open in Office menu, and explains how to customize it by adding, removing, and changing options.
 author: jasongre
-ms.date: 05/24/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 270774
-ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-02-28
+ms.search.form:
 ms.dyn365.ops.version: Platform update 4
-
+ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
 ---
 
 # Customize the Open in Microsoft Office menu

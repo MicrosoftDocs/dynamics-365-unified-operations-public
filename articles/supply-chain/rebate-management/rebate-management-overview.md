@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Rebate management module overview
-description: This article provides an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management.
+description: Access an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management with overviews on basis and flexible calculations.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.topic: overview
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Rebate management module overview
@@ -91,7 +77,7 @@ The combination of the associated deals, the frequency of the calculations, the 
 
 Provisions can be managed daily, weekly, monthly, or according to a custom period. However, the functionality can allocate or pay the rebate, or receive payment of it, at any defined frequency that is the same length as or longer than the provision frequency. Write-off uses the same frequency as the rebate. Users can easily adjust a plan or payment amounts at any time during the payout.
 
-Users no longer have to handle deals or provisions in two steps. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there is full integration with accounts payable and accounts receivable. During processing, the calculations can consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
+Users no longer have to handle deals or provisions in two steps. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there's full integration with accounts payable and accounts receivable. During processing, the calculations can consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
 
 When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A separate process posts rebate management transactions. A journal, credit note, or debit transaction can then be created during posting to proposed transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
 
@@ -101,4 +87,10 @@ In Rebate management, automatic payment generation enables royalties to be handl
 
 ## Maximizing spend versus rebates
 
-Vendors and products can be grouped by territory, and different offers can be provided, depending on the country or region of the transaction. When users select products, they can define the items that are included and the number of items that will be used in the rebate settlement.
+Vendors and products can be grouped by territory, and different offers can be provided, depending on the country/region of the transaction. When users select products, they can define the items that are included and the number of items that will be used in the rebate settlement.
+
+## Next steps
+
+- [Rebate management deals](rebate-management-deals.md)
+- [Process, review, and post rebates](process-review-post.md)
+- [Manage deductions using the deduction workbench](deduction-workbench.md)

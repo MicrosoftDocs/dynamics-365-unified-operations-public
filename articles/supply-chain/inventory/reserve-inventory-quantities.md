@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Reserve inventory quantities
-description: This article describes the different options that are available for reserving inventory.
-author: yufeihuang
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventModelGroup
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+description: Learn about the different options that are available for reserving inventory, including an outline on inventory reservation policies.
+author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 207264
-ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
-ms.search.region: Global
-# ms.search.industry:
-ms.author: yufeihuang
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: InventModelGroup
 ---
 
 # Reserve inventory quantities
@@ -59,7 +43,7 @@ The **Inventory policies** section contains the following reservation policies.
 | FIFO date-controlled | If you select the **FIFO date-controlled** option, the inventory reservation is controlled by a sorting date according to the FIFO principle. Batches are reserved based on the earliest date of receipt of items, according to the principle of first in, first out (FIFO). |
 | Backward from ship date | This option becomes available if you've selected the **FIFO date-controlled** option. If you select **Backward from ship date**, and if you're reserving available physical inventory, then the inventory reservation is controlled by the last update physical date according to the FIFO rule. If you're reserving available ordered inventory, the inventory is reserved backward from the desired ship date according to the principle of last in, first out (LIFO). If no receipts are available before the ship date, the reservation will follow the LIFO rule using the transaction ship date. |
 | Item sales reservation | Determines whether item reservation is manual or automatic. If a reservation is automatic, inventory is reserved when order lines are created. It’s possible to make reservations at the item number level for BOMs (**Automatic** option), or for the individual elements of a BOM (**Explosion** option). The default value for **Item sales reservation** may be inherited from **Accounts receivable parameters.** On that page, the value is set in the Reservation field in the **Sales default values** **section** on the **General** tab. |
-| Same batch selection | Same batch reservation lets you reserve inventory for a sales order line against a single batch of inventory. If you want to use this option, you must also set the **Consolidate requirement** option to **Yes**. There are additional settings that are required for the tracking dimension group and storage dimension group. For more information, see [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md). |
+| Same batch selection | Same batch reservation lets you reserve inventory for a sales order line against a single batch of inventory. If you want to use this option, you must also set the **Consolidate requirement** option to **Yes**. There are additional settings that are required for the tracking dimension group and storage dimension group. Learn more in [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md). |
 | Consolidate requirement | This option is similar to the **Same batch selection** option, and it consolidates inventory that’s reserved for sales order lines into a single requirement. |
 | FEFO date-controlled | This option allows you to reserve batches that are close to their expiration date or best before date. You also need to set the **Pick criteria** field to select either **Expiration date** or **Best before date**. |
 

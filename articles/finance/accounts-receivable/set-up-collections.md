@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up collections
-description: This article explains how to set up the collections functionality.
-author: ShivamPandey-msft
-ms.date: 08/22/2017
+description: Learn how to set up the collections functionality, including an overview on setting up aging period definitions.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustCollectionsActivitiesListPage
-# ROBOTS: 
+ms.date: 08/22/2017
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustCollectionsActivitiesListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ---
 
 # Set up collections

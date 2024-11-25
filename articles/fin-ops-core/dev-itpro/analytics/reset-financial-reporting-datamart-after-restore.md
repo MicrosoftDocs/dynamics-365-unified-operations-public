@@ -1,18 +1,15 @@
 ---
 title: Reset the Financial reporting data mart
-description: This article describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
+description: Learn how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance, including definitions for exporting and importing reports.
 author: aprilolson
-ms.date: 09/01/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro, Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: aolson
+ms.topic: article
+ms.date: 11/08/2024
+ms.reviewer: twheeloc
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 261824
 ms.search.form: FinancialReports
 ---
 
@@ -22,7 +19,9 @@ ms.search.form: FinancialReports
 
 This article explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
+Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it's highly recommended you contact support first. The support team can help you properly investigate any underlying product issues that might be prompting the need for a reset. This investigation helps ensure that we're addressing the root cause rather than applying a temporary fix.
+
+You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting is unavailable during the reset process.
 
 > [!NOTE]
 > To confirm that it's necessary to reset your data mart, see [When to reset a data mart](../../fin-ops/analytics/when-to-reset-data-mart.md).
@@ -39,11 +38,11 @@ To reset the data mart, in Report designer, on the **Tools** menu, select **Rese
 
 ##### Integration attempts
 
-The **Integration attempts** grid shows how many times the system has tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You will know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
+The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You know that the data mart must be reset if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
 
 ##### Data status
 
-The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
+The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of versioned records indicate that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
 
 ##### Misaligned main account categories
 
@@ -55,9 +54,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 
 - **Missing or incorrect data** – Based on the statistics, you've determined that data might be missing. Before you continue, we recommend that you work with Support to determine the root cause.
 - **Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.
-- **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
-
-[![Reset data mart.](./media/Integration.png)](./media/Integration.png)
+- **Other** – You're resetting the data mart for another reason. If you're concerned that there's an issue, contact Support to identify it.
 
 > [!NOTE]
 > Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
@@ -66,7 +63,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 
 Select the **Clear users and companies** check box if you restored your database, but then changed users or companies. You should rarely have to select this check box.
 
-When you're ready to start the reset process, select **OK**. You're prompted to confirm that you're ready to start the process. Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.
+When you're ready to start the reset process, select **OK**. You're prompted to confirm that you're ready to start the process. Financial reporting isn't available during the reset and the initial data integration that occurs afterward.
 
 If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.
 
@@ -75,68 +72,7 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 > [!NOTE]
 > The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.
 
-## Reset the Financial reporting data mart through Windows PowerShell
-
-If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
-
-### Stop services
-
-The following Microsoft Windows services will have open connections to the finance and operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
-
-- World wide web publishing service (on all Application Object Servers \[AOS\] computers)
-- Batch Management Service (on non-private AOS computers only)
-- Management Reporter 2012 Process Service (on Business intelligence \[BI\] computers only)
-
-### Reset
-
-#### Download the latest MinorVersionDataUpgrade.zip package
-
-Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments article.
-
-An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that article. You can skip all the other steps in the article.
-
-#### Run prerequisite SQL scripts against the database
-
-Run the following scripts against the database (not against the Financial reporting database):
-
-- DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
-- DataUpgrade.zip\\AosService\\Scripts\\GrantAxViewChangeTracking.sql
-
-These scripts help guarantee that the users, roles, and change tracking settings are correct.
-
-#### Run a Windows PowerShell script to reset the database
-
-On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.
-
-```powershell
-F:
-cd F:\MRApplicationService\MRInstallDirectory
-Import-Module .\Server\MRDeploy\MRDeploy.psd1
-Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
-```
-
-> [!NOTE]
-> - SkipMRTableReset preserves tree unit security if you're using it.
-> - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
-
-Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
-
-- The valid values for **-Reason** are **SERVICING**, **BADDATA**, and **OTHER**.
-- The **-ReasonDetail** parameter is free text.
-- The reason and reason detail will be recorded in telemetry/environment monitoring.
-
-> [!NOTE]
-> After you run the commands, you will be asked to enter **Y** to confirm that you want to reset the database.
-
-#### Restart services
-
-Use services.msc to restart the services that you stopped earlier:
-
-- World wide web publishing service (on all AOS computers)
-- Batch Management Service (on non-private AOS computers only)
-- Management Reporter 2012 Process Service (on BI computers only)
-
-## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (CHE, LBD and VHD) through SQL Server Management Studio 
+## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (CHE, LBD, and VHD) through SQL Server Management Studio 
 
 > [!NOTE]
 > The following steps are designed for Cloud Hosted Environments (CHE Tier 1 Dev), downloadable VHD images, and LBD On-Premises.
@@ -590,7 +526,7 @@ Before getting started, be sure that all users close Report designer and exit th
 	DEALLOCATE removeCompanyCursor
 ```
 
-3. On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt
+3. On the database for Dynamics 365 Finance, which is referred to as AXDB, use the following script to clear the financial reporting related tables. The script was last updated February 25, 2019: Reset Datamart AXDB.txt
 
 ```sql
 IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
@@ -604,7 +540,7 @@ END
 ```
 
 
-4. On the database used for Financial reporting, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt
+4. On the database used for Financial reporting, re-enable the integration and end servicing mode with the following script, that was last updated February 25, 2019: Reset Datamart END.txt
 
 
 
@@ -662,7 +598,7 @@ Confirm that all rows have a **LastRunTime** value, and that **StateType** is se
 
 ## Export and import report definitions
 
-Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment. Exporting report definitions can provide a backup in the event that it becomes necessary to restore your definitions. 
+Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment. Exporting report definitions can provide a backup if it becomes necessary to restore your definitions. 
 
 ### Export report definitions
 
@@ -701,6 +637,10 @@ Next, import your report designs from Report designer by using the file that was
     - To import specific reports, rows, columns, trees, or dimension sets, select them.
 
 5. Select **Import**.
+
+## Other resources
+
+[What are the estimated Data Mart integration intervals?](../../../finance/general-ledger/financial-reporting-faq.md#what-are-the-estimated-data-mart-integration-intervals)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

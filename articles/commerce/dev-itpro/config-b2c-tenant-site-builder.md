@@ -2,14 +2,15 @@
 title: Configure your B2C tenant in Commerce site builder
 description: This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 09/19/2024
+ms.topic: how-to 
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure your B2C tenant in Commerce site builder
@@ -18,38 +19,34 @@ ms.search.validFrom: 2020-02-13
 
 This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 
-Once setup of your Azure AD B2C tenant is completed, you must configure the B2C tenant in Commerce site builder. Configuration steps include collecting B2C application information from the Azure portal, entering that B2C application information into site builder, and then associating the B2C application with your site and channel.
+Once the setup of your Microsoft Entra B2C tenant is completed, you must configure the B2C tenant in Commerce site builder. Configuration steps include collecting B2C application information from the Azure portal, entering that B2C application information into site builder, and then associating the B2C application with your site and channel.
 
 ### Collect the required application information
 
 To collect the required application information, follow these steps.
 
-1. In the Azure portal, go to **Home \> Azure AD B2C - App registrations**.
+1. In the Azure portal, go to **Home \> Microsoft Entra ID B2C - App registrations**.
 1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
-1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
+1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. You will enter this ID later as the **Client GUID** in site builder.
 1. Select **Redirect URIs** and collect the reply URL shown for your site (the reply URL entered at setup).
-1. Go to **Home \> Azure AD B2C – User flows**, and then collect the full names of each user flow policy.
+1. Go to **Home \> Microsoft Entra B2C – User flows**, and then collect the full names of each user flow policy.
 
-The following image shows an example of the **Azure AD B2C - App registrations** overview page.
-
-![Azure AD B2C - App registrations overview page with the Application (client) ID highlighted](../media/ClientGUID_Application_AzurePortal.png)
-
-The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
+The following image shows an example of user flow policies on the **Microsoft Entra B2C – User flows (policies)** page.
 
 ![Collect the names of each B2C policy flow.](../media/B2CImage_22.png)
 
-### Enter your Azure AD B2C tenant application information into Commerce
+### Enter your Microsoft Entra B2C tenant application information into Commerce
 
-You must enter details of the Azure AD B2C tenant into Commerce site builder before associating the B2C tenant with your site(s).
+You must enter details of the Microsoft Entra B2C tenant into Commerce site builder before associating the B2C tenant with your sites.
 
-To add your Azure AD B2C tenant application information to Commerce, follow these steps.
+To add your Microsoft Entra B2C tenant application information to Commerce, follow these steps.
 
 1. Sign in as an administrator to Commerce site builder for your environment.
 1. In the left navigation pane, select **Tenant Settings**  to expand it.
 1. Under **Tenant Settings**, select **Site authentication setup**. 
-1. In the main window next to **Site authentication profiles**, select **Manage**. (If your tenant appears in the site authentication profiles list, then it was already added by an administrator. Verify that the items in step 6 below match those for your intended B2C setup. A new profile can also be created using similar Azure AD B2C tenants or applications to account for minor differences, such as differing user policy IDs).
+1. In the main window next to **Site authentication profiles**, select **Manage**. (If your tenant appears in the site authentication profiles list, it has already added by an administrator. Verify that the items in step 6 below match the items for your intended B2C setup. A new profile can also be created using similar Microsoft Entra B2C tenants or applications to account for minor differences, such as differing user policy IDs).
 1. Select **Add site authentication profile**.
-1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
+1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that aren't required (without an asterisk) may be left blank.
 
     - **Application Name**: The name for your B2C Application, for example "Fabrikam B2C".
     - **Tenant Name**: The name of your B2C tenant (for example, use "fabrikam" if the domain appears as "fabrikam.onmicrosoft.com" for the B2C tenant). 
@@ -61,13 +58,13 @@ To add your Azure AD B2C tenant application information to Commerce, follow thes
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
 1. Select **Save** to save your changes.
 
-The optional **Login custom domain** field should only be used if you are setting up a custom domain for the Azure AD B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](additional-b2c-info.md).
+The optional **Login custom domain** field should only be used if you're setting up a custom domain for the Microsoft Entra B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](additional-b2c-info.md).
 
 ### Associate the B2C application to your site and channel
 
 > [!WARNING]
 > - If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. 
-> - Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
+> - Only update the B2C application if you're setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
 To associate the B2C application to your site and channel, follow these steps.
 
@@ -86,7 +83,7 @@ To continue the process of setting up a B2C tenant in Commerce, proceed to [Addi
 
 [Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
 
-[Create or link to an existing Azure AD B2C tenant in the Azure portal](create-link-aad-b2c-tenant.md)
+[Create or link to an existing Microsoft Entra B2C tenant in the Azure portal](create-link-aad-b2c-tenant.md)
 
 [Create the B2C application](create-b2c-app.md)
 
@@ -94,7 +91,7 @@ To continue the process of setting up a B2C tenant in Commerce, proceed to [Addi
 
 [Add social identity providers (Optional)](add-social-identity-providers.md)
 
-[Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
+[Update Commerce headquarters with the new Microsoft Entra B2C information](update-hq-aad-b2c-info.md)
 
 [Additional B2C information](additional-b2c-info.md)
 

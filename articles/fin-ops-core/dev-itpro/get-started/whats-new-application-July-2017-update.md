@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
+description: Learn about new or changed features in Microsoft Dynamics 365 Finance and Operations, Enterprise edition. This version was released in July 2017.
 author: sericks007
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ROBOTS: NOINDEX, NOFOLLOW
@@ -18,8 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
@@ -694,7 +692,6 @@ For more information, see the following topics:
 - [Upgrade from AX 2012 - Deploy a demo environment for analysis](../migration-upgrade/analysis-sandbox.md)
 - [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](../migration-upgrade/prepare-data-upgrade.md)
 - [Upgrade from AX 2012 - Data upgrade in development environments](../migration-upgrade/data-upgrade-2012.md)
-- [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/fin-ops/get-started/data-upgrade-self-service)
 - [Upgrade from AX 2012 - Post-upgrade tasks](../migration-upgrade/app-validation-process.md)
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](../migration-upgrade/upgrade-cutover-testing.md)
 - [Upgrade from AX 2012 - Functional test passes](../migration-upgrade/upgrade-functional-validation.md)

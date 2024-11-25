@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Configure access rights for a cost object controller
-description: Use this procedure to configure access rights for a cost object controller. 
+description: Use this procedure to configure access rights for a cost object controller, including procedures for assigning cost object controller roles.
 author: twheeloc
-ms.date: 03/27/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/27/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Configure access rights for a cost object controller
 
 [!include [banner](../../includes/banner.md)]

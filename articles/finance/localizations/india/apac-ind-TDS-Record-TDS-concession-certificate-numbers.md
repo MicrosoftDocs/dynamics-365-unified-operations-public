@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Record TDS concession certificate numbers
-description: This article explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors, including a step-by-step process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Record TDS concession certificate numbers
@@ -38,7 +24,7 @@ This article explains how to record the Tax Deducted at Source (TDS) concession 
 2. In the **Tax type** field, select **TDS** to record concession certificates for the TDS tax type.
 3. On the **Overview** tab, select **Alt+N** to create a line.
 
-    [![Header of the new line.](../media/apac-ind-TDS-34.png)](/media/apac-ind-TDS-34.png)
+    [![Header of the new line.](../media/apac-ind-TDS-34.png)]
 
 4. In the **Withholding tax code** field, select the TDS tax code that the vendor concession certificates are issued for. The **Withholding tax code name** field shows the name of the TDS tax code.
 5. In the **From date** and **To date** fields, define the period of validity for the concession certificate that uses the TDS tax code to calculate TDS for the vendor on a concessional basis.
@@ -54,7 +40,5 @@ This article explains how to record the Tax Deducted at Source (TDS) concession 
     The calculation of TDS on a concessional basis is based on the period when the certificate is created for the vendor.
 
 11. In the **Certificate** field, enter the TDS concession certificate number.
-
-    [![Certificate FastTab.](../media/apac-ind-TDS-33.png)](/media/apac-ind-TDS-33.png)
 
 12. Close the page.

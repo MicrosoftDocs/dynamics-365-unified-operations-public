@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Synchronize date and time in import jobs
-description: Use UTC time zones in import jobs to avoid problems with time zone conversions.
-author: peakerbl
-ms.date: 12/01/2020
+description: Learn about how to synchronize date and time in import jobs to Coordinated Universal Time (UTC), including a step-by-step process.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 12/01/2020
+ms.reviewer: johnmichalak
 audience: Application user
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Synchronize date and time in import jobs
@@ -39,7 +27,7 @@ This dual conversion causes dates to change between applications. For example, t
 
 3. Under **Source date format**, select **CSV-Unicode**.
 
-   [![Change source date format to UTC.](../../dev-itpro/data-entities/media/data-source-date-format.png)](/media/data-source-date-format.png)
+   <!-- [![Change source date format to UTC.](../../dev-itpro/data-entities/media/data-source-date-format.png)](/media/data-source-date-format.png) -->
 
 4. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
 

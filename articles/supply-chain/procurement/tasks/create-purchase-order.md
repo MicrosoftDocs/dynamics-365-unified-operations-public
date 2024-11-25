@@ -1,36 +1,24 @@
---- 
-# required metadata 
- 
-title: Create a purchase order
-description: This article shows you how to create a purchase order manually. 
-author: GalynaFedorova
-ms.date: 07/18/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
+title: Create a purchase order
+description: Learn how to create a purchase order manually, including a step-by-step process for creating purchase order headers using the USMF demo data company. 
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
+ms.date: 05/02/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
+---
+
 # Create a purchase order
 
 [!include [banner](../../includes/banner.md)]
 
 This article shows you how to create a purchase order manually. It's more typical for purchase orders to be created automatically as result of master planning, direct delivery, and other processes. Purchase orders are typically created by a purchasing agent. The example shown here can be used in the USMF demo data company using the values that are suggested in the notes for various steps.
 
-
 ## Create the purchase order header
+
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 2. Select **New**.
 3. Select vendor account **US-101**. When you select a vendor, details from the vendor record such as address, invoice account, delivery terms, and delivery mode will be copied as default values into the order header. You can change these values at any time.  
@@ -43,6 +31,7 @@ This article shows you how to create a purchase order manually. It's more typica
 6. Select **OK**. The order header has now been created. When you work with purchase order lines, only a summary of the header information is shown. If you need to view the rest of the information, select **Header**.  
 
 ## Add a purchase order line
+
 1. Select **Purchase order line**.
 2. Select **Dimensions**. Products can be in variants that are differentiated by dimensions, such as color, size, or style. Products can also be set up to use storage dimensions, such as site and warehouse. There are also optional tracking dimensions, such as batch and serial numbers. To improve the efficiency of order entry, you can add the dimension fields that you commonly use directly to the order grid.  
 3. Select the **Color** check box. Optional: If you select the **Save setup** field, the dimensions you have chosen will also be shown on the order line grid the next time you open the purchase order page.  
@@ -66,6 +55,7 @@ This article shows you how to create a purchase order manually. It's more typica
 9. Select the **Delivery** tab. A unique receipt date can be assigned to each order line. The date is inherited from the field on the purchase order header, but you can change this.  
 
 ## Review order totals
+
 1. Select **Totals**.
 
     - If you don't see the **Totals** action, select the **Purchase Order** tab on the Action Pane.  
@@ -73,7 +63,5 @@ This article shows you how to create a purchase order manually. It's more typica
     - The **Selection** field allows you to change the basis of how totals are calculated. For example, you could choose **Product receipt quantity** to show totals that relate to the amount of the product(s) that have been received, or **Ordered quantity** to show the amount of product that was ordered.  
 
 2. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

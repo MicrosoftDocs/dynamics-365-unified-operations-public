@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Organization administration home page
-description: This article points to resources that will help you in your organization.
+description: Access the organization administration home page and resources that will help you in your organization, including resources for number sequences and organizations.
 author: sericks007
-ms.date: 08/18/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 08/18/2017
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ---
 
 # Organization administration home page

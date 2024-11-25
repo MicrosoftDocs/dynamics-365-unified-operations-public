@@ -2,13 +2,15 @@
 title: Deployment guidelines for cash registers for Norway
 description: This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2019-03-01
+ms.custom: 
+  - bap-template
 ---
 # Deployment guidelines for cash registers for Norway
 
@@ -68,8 +70,8 @@ Next, on the **Key Vault parameters** page, you must specify the parameters for 
 
 - **Name** and **Description** – The name and description of the Key Vault storage.
 - **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
+- **Key Vault client** – An interactive client ID of the Microsoft Entra application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
+- **Key Vault secret key** – A secret key that is associated with the Microsoft Entra application that is used for authentication in the Key Vault storage.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
 Next, you must configure a connector for your certificates that are stored in Key Vault or local certificate storage. This connector is used for signing on the channel side.

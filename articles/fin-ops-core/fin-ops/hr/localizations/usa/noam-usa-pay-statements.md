@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Generate and work with pay statements
-description: This article describes the process for generating pay statements.
+description: Learn about the process for generating pay statements, including prerequisites and overviews on how to generate and delete pay statements.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollPayStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 233834
-ms.assetid: b20b94d2-6d5e-45a8-88c3-f8657caaee13
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollPayStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: b20b94d2-6d5e-45a8-88c3-f8657caaee13
 ---
 
 # Generate and work with pay statements

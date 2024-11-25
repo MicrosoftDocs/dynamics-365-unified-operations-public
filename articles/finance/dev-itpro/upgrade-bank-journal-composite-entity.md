@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Update the bank journal composite entity
 description: This article lists the steps needed to add the additional BankTransactionType field to the composite BankJournalEntity.
-author: angelad116
-ms.date: 10/24/2022
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/24/2022
+ms.reviewer: kfend 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 221654
-ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-11-30
+ms.search.form:
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 ---
 
 # Update the bank journal composite entity

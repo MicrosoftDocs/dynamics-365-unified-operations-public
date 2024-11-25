@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Transportation management zone master
-description: This article explains how transport management lets you divide geographic locations into zones.
-author: Weijiesa
-ms.date: 10/16/2020
+description: Learn how transport management lets you divide geographic locations into zones, including definitions for various pricing modules.
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TMSZoneMaster
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/16/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: TMSZoneMaster
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: weijiesa
-ms.search.validFrom: 2020-01-09
-ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Transportation management zone master

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Project accounting with general budget reservations
-description: This article provides information about project accounting that uses general budget reservations for Public sector.
+description: Learn about project accounting used for general budget reservations, including a process for tracking committed costs for general budget reservations.
 author: AlexRenney
-ms.date: 04/25/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetReservation_PSN 
-# ROBOTS: 
+ms.date: 04/25/2019
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
 ms.search.validFrom: 2018-10-31
+ms.search.form: BudgetReservation_PSN 
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Project accounting with general budget reservations

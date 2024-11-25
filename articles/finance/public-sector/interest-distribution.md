@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title:  Set up interest distribution for cash accounts
-description: This article explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
+description: Learn how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
 author: v-kiarnd
-ms.date: 12/03/2021
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults
-audience: Application User
-# ms.devlang: 
+ms.date: 12/03/2021
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-kiarnd
 ms.search.validFrom: 2019-6-30
+ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Set up interest distribution for cash accounts

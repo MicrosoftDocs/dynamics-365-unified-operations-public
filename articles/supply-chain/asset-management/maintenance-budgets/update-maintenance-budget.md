@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Update maintenance budgets
-description: This article explains how to update a maintenance budget in Asset Management.
-author: johanhoffmann
-ms.date: 08/13/2019
+description: Learn how to update a maintenance budget in Asset Management, including an outline and step-by-step process for recalculating maintenance budgets.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 08/13/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac 
+ms.search.form: 
 ---
 
 # Update maintenance budgets
@@ -33,7 +16,7 @@ ms.dyn365.ops.version: 10.0.5
 
  
 
-The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
+The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (Learn more in [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
 
 ## Recalculate a maintenance budget
 

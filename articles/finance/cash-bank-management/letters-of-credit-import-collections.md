@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Letters of credit and import collections
-description: This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankLCImport
-# ROBOTS: 
+ms.date: 06/11/2024
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: BankLCImport
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ---
 
 # Letters of credit and import collections
@@ -53,7 +41,11 @@ An import collection is an agreement between the bank and the exporter (seller),
 An import collection helps guarantee that the seller is paid when the buyer collects the shipping documents to take delivery of the imported goods.
 
 
-
+For more information, see the following topics:
+-   [Import letter of credit](tasks/import-letter-credit.md)
+-   [Export letter of credit](tasks/export-letter-credit.md)
+-   [Set up bank facilities and posting profiles for letter of credit](tasks/set-up-bank-facilities-posting-profiles-letter-credit.md)
+-   [Create a bank facility agreement for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

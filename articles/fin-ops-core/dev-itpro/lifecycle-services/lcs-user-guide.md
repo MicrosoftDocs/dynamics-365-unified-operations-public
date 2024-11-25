@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Lifecycle Services (LCS) user guide
-description: This article provides information about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
+description: Learn about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
 author: angelmarshall
-ms.date: 07/02/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 6034
-ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: overview
+ms.date: 07/02/2019
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 ---
 
 # Lifecycle Services (LCS) user guide
@@ -33,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 
-Microsoft Dynamics Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a customer of the newest version of the Dynamics 365 finance and operations apps, you can sign in by using your Microsoft Azure Active Directory (Azure AD) credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
+Microsoft Dynamics Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a customer of the newest version of the Dynamics 365 finance and operations apps, you can sign in by using your Microsoft Microsoft Entra credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
 
 ## Tools that are provided in LCS
 The following table lists the tools that are provided in LCS and describes the phases that each tool applies to.
@@ -49,7 +36,7 @@ The following table lists the tools that are provided in LCS and describes the p
 | [Customization analysis](/dynamicsax-2012/appuser-itpro/customization-analysis-lcs)                   | Customization analysis validates model files against best practices and provides a report of potential areas for improvement.                                                                                                                                                                                                                                             |
 | [Issue search](issue-search-lcs.md)                             | Issue search helps you find existing solutions and workarounds for known issues in Microsoft Dynamics products. You can see which issues have been fixed, which issues remain open, and which issues have been resolved as "won't fix."                                            |
 | [Asset library](asset-library.md)                             | The Asset library is a storage location for the various assets that are associated with a tenant in LCS.                                                                                                                                                                      |
-| [Get updates](../migration-upgrade/download-hotfix-lcs.md)                            | Get updates is a tool that customers to access the updates that are available for their environments.                            |
+| [Get updates](../migration-upgrade/download-hotfix-lcs.md)                            | Get updates is a tool that customers use to access the updates that are available for their environments.                            |
 | [Environment monitoring](monitoring-diagnostics.md)                            | Environment monitoring is a set of tools that helps you monitor, diagnose, and analyze the health of the environments that you manage.                                               |
 | [Translation service](translation-service-overview.md)                      | The Microsoft Dynamics 365 Translation Service (DTS) is hosted in LCS. It's designed to enhance the experience for partners and independent software vendors (ISVs) when they translate their solutions or add a new language for the supported Dynamics products.                                                                  |
 | [Regulatory updates](../lcs-solutions/regulatory-watch-communication.md)                      | Regulatory updates is a tool that lets customers, partners, and ISV solution providers stay up to date about regulatory updates by setting up alerts through LCS.                                        |

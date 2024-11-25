@@ -4,10 +4,8 @@
 title: Benefit eligibility process
 description: This procedure shows how the benefit eligibility process works. 
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 07/03/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -19,7 +17,7 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
@@ -27,13 +25,12 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 # Benefit eligibility process
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This procedure shows how the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
 
-1. Go to **Human resources \> Benefits \> Benefits**.
+1. Go to **Human resources > Benefits > Benefits**.
 2. In the list, find and select the desired record.
 3. In the list, select the link in the selected row.
 4. Select **Edit**.

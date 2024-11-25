@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Outbound sorting
-description: This article provides information about outbound sorting. This functionality makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
+description: Learn about outbound sorting, which makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
 author: Mirzaab
-ms.date: 07/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.9
+ms.topic: article
+ms.date: 07/15/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 ---
 
 # Outbound sorting

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Data templates with multiple worksheets
-description: This article describes how to import data using Excel data entity templates into finance and operations.
-author: peakerbl
-ms.date: 01/01/2018
+description: Learn about how to import data using Excel data entity templates into finance and operations, including an outline on how to upload a file and map it to all entities.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+ms.date: 01/01/2018
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application user
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 13
-
 ---
 
 # Data templates with multiple worksheets

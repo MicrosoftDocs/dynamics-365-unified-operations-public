@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Engineering change management feature walkthrough
-description: This article provides an end-to-end walkthrough that shows how to work with engineering change management.
-author: t-benebo
-ms.date: 08/05/2022
+description: Learn about an end-to-end walkthrough that shows how to work with engineering change management with an outline on setting up for the sample scenario.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 08/05/2022
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
+ms.search.form:
 ---
 
 # Engineering change management feature walkthrough

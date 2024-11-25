@@ -4,11 +4,8 @@
 title: Payroll integration API introduction
 description: This article describes the Dynamics 365 Human Resources Payroll integration API.
 author: twheeloc
-ms.date: 02/03/2021
+ms.date: 02/03/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,9 @@ ms.dyn365.ops.version: Human Resources
 # Payroll integration API introduction
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+>[!NOTE]
+>For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -54,7 +53,6 @@ This documentation includes details and developer guidance for using the Dataver
 
 - [Authenticate to Microsoft Dataverse with the Web API](/powerapps/developer/data-platform/webapi/authenticate-web-api)
 - [Perform operations using the Web API](/powerapps/developer/data-platform/webapi/perform-operations-web-api)
-- [Use Postman with the Web API](/powerapps/developer/data-platform/webapi/use-postman-web-api)
 - [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
 
 ### Virtual tables for Human Resources in Dataverse

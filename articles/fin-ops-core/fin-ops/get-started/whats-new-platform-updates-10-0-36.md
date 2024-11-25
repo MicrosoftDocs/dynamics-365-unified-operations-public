@@ -1,22 +1,21 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.36 of finance and operations apps (September 2023)
-description: This article lists the features that are included in the platform updates for version 10.0.36 of finance and operations apps.
+description: Learn about the features that are included in the platform updates for version 10.0.36 of finance and operations apps released in September 2023.
 author: johnmichalak
-ms.date: 07/31/2023
-ms.topic: article
-audience: Application User
+ms.author: johnmichalak
+ms.topic: whats-new
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 04/12/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: johnmichalak
 ms.search.validFrom: 2022-10-14
-
 ---
+
 # Platform updates for version 10.0.36 of finance and operations apps (September 2023)
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!include [banner](../../../finance/includes/preview-banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.36 of finance and operations apps. This version has a build number of 7.0.7036 and is available on the following schedule:
 

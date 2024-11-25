@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Apply a purchase agreement when creating a purchase order
-description: This procedure shows how to use a purchase agreement when you create a purchase order. 
-author: GalynaFedorova
+description: Learn how to use a purchase agreement when you create a purchase order, including a step-by-step process for creating a purchase order. 
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
 ms.date: 08/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form:
 ---
+
 # Apply a purchase agreement when creating a purchase order
 
 [!include [banner](../../includes/banner.md)]
@@ -31,7 +18,7 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 
 ## Create a purchase order
 
-1. Go to **Production and sourcing \> Workspaces \> Purchase order preparation**.
+1. Go to **Procurement and sourcing \> Workspaces \> Purchase order preparation**.
 1. On the Action Pane, select **New purchase order**.
 1. The **Create purchase order** dialog opens. Select a **Vendor account**. Inspect and adjust the other address fields as needed.
 1. Expand the **General** FastTab.

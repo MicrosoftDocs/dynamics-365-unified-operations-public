@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Cost groups
-description: Cost groups provide the basis for segmenting and analyzing cost contributions in a manufactured item’s calculated cost, such as the cost contributions for material, labor, and overhead. Cost group segmentation has several synonyms within manufacturing environments, such as cost breakdown, cost decomposition, or cost classification. 
-author: JennySong-SH
-ms.date: 06/20/2017
+description: Learn how cost groups provide the basis for segmenting and analyzing cost contributions in a manufactured item’s calculated cost.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BOMCostGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: BOMCostGroup
 ms.assetid: 1855f744-f73f-4fa8-8290-a7ee126d368b
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Cost groups

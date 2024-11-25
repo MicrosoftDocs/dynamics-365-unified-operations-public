@@ -4,23 +4,14 @@
 title: What's new and changed in Dynamics 365 Commerce 10.0.21 (October 2021)
 description: This article describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.21. 
 author: josaw1
-ms.date: 10/28/2021
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2021-08-31 
 ms.dyn365.ops.version: 10.0.21
@@ -30,13 +21,11 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.21. This version has a build number of 10.0.960 and is available on the following schedule:
 
 - **Preview of release:** August 2021
 - **General availability of release (self-update):** September 2021
 - **General availability of release (auto-update):** October 2021
-
 
 ## Features included in this release
 

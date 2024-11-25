@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up and generate accounts receivable aging information
-description: This guide will help you set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page. 
-author: abruer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page.
+author: twheeloc
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/07/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up and generate accounts receivable aging information
 
 [!include [banner](../../includes/banner.md)]
@@ -38,7 +29,7 @@ This guide will help you set up an aging period definition, age customer balance
 5. Click **Add below** to insert a new aging period.
 6. In the **Period** field, enter the description to show on aging reports.
 7. In the **Unit** field, enter a number.
-8. In the **Interval** field, select an option. Ledger period matches the period to your ledger calendar. Day, week, month, quarter and years define the size of the interval by date type. Unlimited selects all transactions before or after the previous period, depending on whether it is the first or last period.  
+8. In the **Interval** field, select an option. Ledger period matches the period to your ledger calendar. Day, week, month, quarter and years define the size of the interval by date type. Unlimited selects all transactions before or after the previous period, depending on whether it is the first or last period. If using Ledger period intervals, all periods must be ledger period (unlimited can also be used). You can't use ledger period with Days/weeks/months/quarters/years. 
 9. In the **Aging indicator** field, select an option.
 10. Select the period at the top of the grid. Update the description to describe the oldest period in the aging period definition
 11. In the **Period** field, enter the new description of the aging period.

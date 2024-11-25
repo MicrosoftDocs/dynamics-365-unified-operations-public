@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Electronic signatures overview
-description: This article provides an overview of electronic signatures and describes how they can be used.
-author: maertenm
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about electronic signatures and understand how they can be used, including an outline on users who require access to electronic signatures.
+author: sericks007
 ms.author: sericks
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ---
 
 # Electronic signatures overview

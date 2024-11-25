@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: TDS calculation on invoices from the Free text invoice page
-description: This article explains how to calculate Tax Deducted at Source (TDS) on invoices by using the Free text invoice page.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to calculate Tax Deducted at Source (TDS) on invoices by using the Free text invoice page, including a step-by-step process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # TDS calculation on invoices from the Free text invoice page
@@ -36,7 +22,7 @@ This article explains how to calculate Tax Deducted at Source (TDS) on invoices 
 
 1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
 
-    [![Free text invoice page.](../media/apac-ind-TDS-57-1.png)](/media/apac-ind-TDS-57-1.png)
+    [![Free text invoice page.](../media/apac-ind-TDS-57-1.png)]
 
 2. Select **New** to create a free text invoice, and enter the required details.
 3. Select the **Invoice** tab. In the **Withholding tax group** section, the **Nature of assessee** field shows the nature of assessee category of the customer.

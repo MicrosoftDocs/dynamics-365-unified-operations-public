@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Bank management workspace
-description: This article provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
+description: Learn about the Bank management workspace, which is related to company bank accounts, including outlines on the summary view and analytics view.   
 author: music727
-ms.date: 02/15/2023
+ms.author: mibeinar
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankTreasurerWorkspace
-audience: Application User
-# ms.devlang: 
+ms.date: 02/15/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: mbeinary
+audience: Application User 
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
+ms.search.form: BankTreasurerWorkspace
 ms.dyn365.ops.version: July 2017 update
 ---
+
 # Bank management workspace
 
 [!include [banner](../includes/banner.md)]

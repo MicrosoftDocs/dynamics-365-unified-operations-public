@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Import or manually create postal codes
-description: This article explains how to import and manually create postal codes in the correct format. 
-author: EvgenyPopovMBS
-ms.date: 10/31/2017
+description: Learn how to import and manually create postal codes in the correct format. The import process lets you update the ZIP/postal codes for a specific country/region.
+author: AdamTrukawka
+ms.author: anisagrawal
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LogisticsAddressSetup
-# ROBOTS: 
+ms.date: 10/31/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.search.region: Belgium, Netherlands, Sweden
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: LogisticsAddressSetup
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Import or manually create postal codes

@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Set up asset retirement obligation for fixed assets for Japan
-description: This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired for Japan.
+description: Learn how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired for Japan.
 author: EricWangChen
-ms.date: 03/21/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 03/21/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Set up asset retirement obligation for fixed assets for Japan

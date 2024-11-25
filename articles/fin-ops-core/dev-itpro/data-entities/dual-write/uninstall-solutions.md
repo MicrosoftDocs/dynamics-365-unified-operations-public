@@ -1,13 +1,13 @@
 ---
 title: Uninstall dual-write application orchestration solutions
-description: This article describes how to uninstall dual-write application orchestration solutions.
+description: Learn about how to uninstall dual-write application orchestration solutions, including a step-by-step uninstallation process.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2022
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 03/16/2022
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2022-01-21
 ---
 

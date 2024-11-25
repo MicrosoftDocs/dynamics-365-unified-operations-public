@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Automatic settlement and prioritization
-description: This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
-author: ShivamPandey-msft
-ms.date: 01/30/2019
+description: Learn about how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
-# ROBOTS: 
+ms.date: 01/30/2019
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ---
 
 # Automatic settlement and prioritization
@@ -42,11 +30,11 @@ The following sections describe how transactions are settled for each method.
 ## Example transactions
 The examples of settlements later in this article are based on the following transactions. All transactions are for customer 2050.
 
-| Transaction   | Date        | Amount | Cash discount terms | Cash discount date | Comments                                                                                                                                                                                      |
-|---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Invoice 1     | August 15   | 100.00 | 2%14, Net 30        | August 29          |                                                                                                                                                                                               |
-| Invoice 2     | September 1 | 250.00 | 2%14, Net 30        | September 15       |                                                                                                                                                                                               |
-| Invoice 3     | October 15  | 500.00 | 2% 14/Net 30        | October 29         |                                                                                                                                                                                               |
+| Transaction   | Date        | Amount | Cash discount terms | Cash discount date | Comments                                                     |
+|---------------|-------------|--------|---------------------|--------------------|---------------------------------------------------------------------------------|
+| Invoice 1     | August 15   | 100.00 | 2%14, Net 30        | August 29          |                                                                              |
+| Invoice 2     | September 1 | 250.00 | 2%14, Net 30        | September 15       |                                                                                 |
+| Invoice 3     | October 15  | 500.00 | 2% 14/Net 30        | October 29         |                                                                    |
 | Interest note | October 15  | 7.00   |                     |                    | This interest note is for invoice 1 and invoice 2. The amount is calculated as 2-percent interest on amounts that are 30 or more days past due. For example, 0.02 × (100.00 + 250.00) = 7.00. |
 
 ## User-defined settlement priority

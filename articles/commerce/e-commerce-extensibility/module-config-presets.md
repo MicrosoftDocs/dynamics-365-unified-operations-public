@@ -2,18 +2,15 @@
 title: Module configuration presets
 description: This article covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.18
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Module configuration presets
 

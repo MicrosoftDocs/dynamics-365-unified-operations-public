@@ -4,23 +4,20 @@
 title: What's new and changed in Dynamics 365 for Retail version 10.0.2
 description: This article describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
-ms.date: 06/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/12/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen 
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
@@ -28,7 +25,6 @@ ms.dyn365.ops.version: Release 10
 ---
 
 # What's new and changed in Dynamics 365 for Retail version 10.0.2
-
 
 [!include [banner](../../includes/banner.md)]
 

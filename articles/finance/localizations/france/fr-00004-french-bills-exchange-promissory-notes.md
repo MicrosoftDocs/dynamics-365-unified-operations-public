@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: FR-00004 French bills of exchange and promissory notes
-description: The French bill of exchange remittance report displays details about remitted bills of exchange. 
+description: Learn about the French bill of exchange remittance report, which displays details about remitted bills of exchange with a process using the FSRI demo data company.
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustPaymMode, CustVendPaymFormat   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User   
 ms.search.region: France
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustPaymMode, CustVendPaymFormat
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # FR-00004 French bills of exchange and promissory notes
 
 [!include [banner](../../includes/banner.md)]

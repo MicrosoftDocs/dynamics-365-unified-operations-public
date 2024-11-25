@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Synchronize accounts directly from Sales to customers in Supply Chain Management 
-description: This article discusses the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
-author: Henrikan
-ms.date: 10/25/2018
+description: Learn about the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 06/10/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: IT Pro
 ms.search.region: global
-
-ms.search.industry: 
-ms.author: henrikan
-ms.dyn365.ops.version: July 2017 update 
+ms.dyn365.ops.version: July 2017 update
+ms.search.form: 
 ms.search.validFrom: 2017-07-8
-
 ---
 
 # Synchronize accounts directly from Sales to customers in Supply Chain Management
@@ -43,7 +29,7 @@ This article discusses the templates and underlying tasks that are used to synch
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales.  The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)](/media/prospect-to-cash-data-flow.png)
+![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)](/media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 

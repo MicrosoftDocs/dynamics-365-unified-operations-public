@@ -1,15 +1,13 @@
 ---
 title: Safety stock fulfillment for items
-description: This article discusses safety stock fulfillment and how to set up safety stock quantity for items. 
+description: Learn about safety stock fulfillment and how to set up safety stock quantity for items with a process for setting the safety stock level for an item. 
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 ms.topic: how-to
 ms.date: 04/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 ---
 
 # Safety stock fulfillment for items
@@ -148,7 +146,7 @@ During the coverage phase of master planning, safety stock replenishment is no l
 
 If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there is a reserve of on-hand and other available inventory before other demand types.
 
-## Additional resources
+## Related information
 
 - [Use the safety stock journal to update minimum coverage for items](safety-stock-journal.md)
 

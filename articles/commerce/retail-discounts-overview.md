@@ -2,7 +2,7 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 07/26/2023
+ms.date: 02/29/2024
 ms.topic: overview
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -18,7 +18,7 @@ ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 
 [!include [banner](includes/banner.md)]
 
-This article provides an overview of the discount functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this article doesn't cover the various discount types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate articles created for each of these discount types.
+This article provides an overview of the discount functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this article doesn't cover the various discount types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details are covered in separate articles created for each of these discount types.
 
 Because retailers require flexible discounting, and discount styles and types vary by industry, there are many ways to define discounts in Commerce. The discounting functionality was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. As a result, the discount types can be configured for five different entities: customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy.
 
@@ -28,9 +28,9 @@ Each discount type has a dedicated page that you use to create and manage the di
 
 ### Discount headers and discount lines
 
-All discounts have a header and one or more lines. All discount types have properties defined on the header and some discount types have additional properties defined per line. For example, quantity discounts have quantity tiers. People often think about discounts in Commerce only in terms of the discount header and assume that all the lines on the discount are related to each other because they share a discount header. However, this view of discounts is too simplistic. For simple discounts and quantity discounts, it's more accurate to think of each discount line as an independent discount that shares some properties with the other discount lines. In fact, the pricing engine evaluates simple and quantity discounts in just this manner. Each discount line for simple discounts and quantity discounts is independent. For simple discounts, it's easy to understand that each discount line is independent of all other discount lines on the same discount, because there isn't a quantity or amount criterion required to qualify for the discount. For quantity discounts, you might think that the lines can be combined to reach the quantity criterion for a discount, but they don't. The quantity tiers must be reached independently for each line of a quantity discount. If your pricing strategy requires a quantity discount to apply when multiple sales lines combined reach the quantity criterion, Microsoft recommends that you group those items into a supplementary category and then configure that category as the quantity discount line.
+All discounts have a header and one or more lines. All discount types have properties defined on the header and some discount types have additional properties defined per line. For example, quantity discounts have quantity tiers. People often think about discounts in Commerce only in terms of the discount header and assume that all the lines on the discount are related to each other because they share a discount header. However, this view of discounts is too simplistic. For simple discounts and quantity discounts, it's more accurate to think of each discount line as an independent discount that shares some properties with the other discount lines. In fact, the pricing engine evaluates simple and quantity discounts in just this manner. Each discount line for simple discounts and quantity discounts is independent. For simple discounts, it's easy to understand that each discount line is independent of all other discount lines on the same discount, because there isn't a quantity or amount criterion that's required to qualify for the discount. For quantity discounts, you might think that the lines can be combined to reach the quantity criterion for a discount, but they don't. The quantity tiers must be reached independently for each line of a quantity discount. If your pricing strategy requires a quantity discount to apply when multiple sales lines combined reach the quantity criterion, Microsoft recommends that you group those items into a supplementary category and then configure that category as the quantity discount line.
 
-When you create discounts, we recommend that you always avoid or minimize overlapping discount lines. Overlapping discount lines occur when two or more discount lines in the same discount can be applied to the same product. In this case, the pricing engine must treat the discount as two or more independent discounts that must then be evaluated against each other to find the best discount amount. In addition, it can be difficult for a user to know what the discount will be just by looking at the discount definition.
+When you create discounts, we recommend that you always avoid or minimize overlapping discount lines. Overlapping discount lines occur when two or more discount lines in the same discount can be applied to the same product. In this case, the pricing engine must treat the discount as two or more independent discounts that must then be evaluated against each other to find the best discount amount. In addition, it can be difficult for a user to know what the discount is by looking at the discount definition.
 
 > [!NOTE]
 > When the number of lines in a single discount reaches a few thousand, users may experience performance issues when enabling discounts with quantity limits, or enabling discounts with both include and exclude lines. Users may also see performance degradation to a much lesser degree in pricing calculation for call center and POS orders. To avoid these performance issues, you can instead create a single category that contains all of the discounted products, and then create a discount line using the category.
@@ -47,11 +47,11 @@ When you manage discounts, it's important that you understand each discount opti
 
 ### Discount ID
 
-This field is labeled **Discount** and holds a unique ID for each discount. It's set when you first create a discount and can't be changed later. In **Commerce parameters**, you can set up independent number sequences for each type of discount. In this case, make sure that the number sequences won't collide. For example, you can use a unique prefix for each discount type. For example, D for **d**iscount, Q for **q**uantity, MM for **m**ix and **m**atch, and T for **t**hreshold.
+This field is labeled **Discount** and holds a unique ID for each discount that is set when you first create a discount. The discount ID can't be changed later. In **Commerce parameters**, you can set up independent number sequences for each type of discount. In this case, ensure that the number sequences don't collide. For example, you can use a unique prefix for each discount type. For example, D for **d**iscount, Q for **q**uantity, MM for **m**ix and **m**atch, and T for **t**hreshold.
 
 ### Discount name
 
-This field is a short free text field that is used to describe the discount. The string value in this field is shown in the Store Commerce app and Store Commerce for web cart line and printed on the Store Commerce app and Store Commerce for web customer receipts. Therefore, your cashiers and end customers will see this description. It's the primary means for Store Commerce app and Store Commerce for web users and customers to know which discount was applied.
+This field is a short free text field that is used to describe the discount. The string value in this field is shown in the Store Commerce app and Store Commerce for web cart line and printed on the Store Commerce app and Store Commerce for web customer receipts. Cashiers and customers can see this description. It's the primary means for Store Commerce app and Store Commerce for web users and customers to know which discount was applied.
 
 ### Discount type
 
@@ -59,12 +59,12 @@ There are five types of discounts in Commerce: **Discount**, **Discount with qua
 
 ### Status
 
-The status of a discount can be either **Enabled** or **Disabled**. When you first create a discount, the status is **Disabled**. Discounts can only be edited when they're disabled. When discount data is pushed to a channel, disabled discounts aren't pushed if the **Clean up irrelevant master data after sync** parameter in **Commerce scheduler parameters** is enabled. If a discount was previously enabled and pushed to the channel, then this new push will also remove the discount from the channel if the **Clean up irrelevant master data after sync** parameter is enabled. When you change the status to **Enabled**, various validation checks are performed on the discount, depending on the type of discount. The list of validation checks has increased in recent updates of the product to prevent incomplete or poorly defined discounts from being pushed to commerce channels. Here's a partial list of the validations that are performed when you enable a discount:
+The status of a discount can be either **Enabled** or **Disabled**. When you first create a discount, the status is **Disabled**. Discounts can only be edited when they're disabled. When discount data is pushed to a channel, disabled discounts aren't pushed if the **Clean up irrelevant master data after sync** parameter in **Commerce scheduler parameters** is enabled. If a discount was previously enabled and pushed to the channel, then this new push will also remove the discount from the channel if the **Clean up irrelevant master data after sync** parameter is enabled. When you change the status to **Enabled**, various validation checks are performed on the discount, depending on the type of discount. The list of validation checks increased in recent updates of the product to prevent incomplete or poorly defined discounts from being pushed to commerce channels. Here's a partial list of the validations that are performed when you enable a discount:
 
 - A discount must have at least one discount line.
 - The percentage value for a percentage discount must be more than 0 (zero) and less than or equal to 100.
 - The amount value for an amount discount must be more than 0 (zero). Zero and negative amounts aren't valid.
-- A discount must have at least one price group. A discount that doesn't have a price group will never be applied to a transaction.
+- A discount must have at least one price group. A discount that doesn't have a price group is never applied to a transaction.
 - A Unit of measure (UoM) is required for quantity and mix-and-match discount lines.
 - For quantity discounts that have two or more quantity tiers, the discount value is validated to increase as quantities increase.
 - For threshold discounts that have two or more threshold tiers, the discount value for each tier must be equal to or more than the largest discount of the previous tier.
@@ -72,17 +72,17 @@ The status of a discount can be either **Enabled** or **Disabled**. When you fir
 
 ### Currency
 
-The currency of a discount defines the currency of all amount and price fields on the discount. Different discount types have different field options. The currency also acts as a filter during discount calculation. In Commerce, all sales order and Store Commerce app/Store Commerce for web transactions have a currency, and the pricing engine will consider only discounts that have the same currency.
+The currency of a discount defines the currency of all amount and price fields on the discount. Different discount types have different field options. The currency also acts as a filter during discount calculation. In Commerce, all sales order and Store Commerce app/Store Commerce for web transactions have a currency, and the pricing engine only considers discounts that have the same currency.
 
 ### Discount concurrency mode
 
-This determines which discounts compete on a transaction, and which discounts are compounded together. The three values for this option are **Exclusive**, **Best price**, and **Compounded**.
+This mode determines which discounts compete on a transaction, and which discounts are compounded together. The three values for this option are **Exclusive**, **Best price**, and **Compounded**.
 
-**Exclusive** discounts are always evaluated and applied before **Best price** and **Compounded** discounts if all other settings are the same, and will prevent all other discounts to be applied to the same lines where they are applied. Two or more **Exclusive** discounts will compete for the best price.
+**Exclusive** discounts are always evaluated and applied before **Best price** and **Compounded** discounts if all other settings are the same, and prevent all other discounts from being applied to the same lines where they're applied. Two or more **Exclusive** discounts compete for the best price.
 
 When the discount concurrency control is set to **Best price and compound within priority, never compound across priorities**, all **Compounded** discounts within the same pricing priority are combined, and the combined result competes with any **Best price** discounts in the same pricing priority. After the discount is applied to a transaction line, all discounts at lower pricing priorities are ignored.
 
-When the discount concurrency control is set to **Best price only within priority, always compound across priority**, all **Best price** and **Compounded** discounts are treated as a **Best price** discount within a single pricing priority and they compete to determine the best discount for that pricing priority. Only a single discount can be applied to a product per pricing priority, and if that single discount is a **Best price** or **Compounded** discount, then it will compound with the best discount of **Best price** or **Compounded** discounts at lower pricing priorities.
+When the discount concurrency control is set to **Best price only within priority, always compound across priority**, all **Best price** and **Compounded** discounts are treated as a **Best price** discount within a single pricing priority and they compete to determine the best discount for that pricing priority. Only a single discount can be applied to a product per pricing priority, and if that single discount is a **Best price** or **Compounded** discount, it then compounds with the best discount of **Best price** or **Compounded** discounts at lower pricing priorities.
 
 When multiple discounts are applied to a transaction line, they're applied in the following order:
 
@@ -103,7 +103,7 @@ Commerce lets you post discount amounts for a transaction to a separate general 
 
 Starting with version 7.2 of the app, the call center coupons are now merged with discounts. For a discount, when **Coupon code required** is set to **Yes**, the **Status** field and the standard date fields, **Effective date** and **Expiration date**, aren't available. These properties are controlled by equivalent properties that are on the **Coupons** page.
 
-When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon code or bar code is provided by the Store Commerce app or Store Commerce for web. The values of the coupon codes and bar codes are defined and configured in a separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When Coupon code required is set to **No**, a coupon code isn't required, and the discount will always be applied through its price groups.
+When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon code or bar code is provided by the Store Commerce app or Store Commerce for web. The values of the coupon codes and bar codes are defined and configured in a separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When **Coupon code required** is set to **No**, a coupon code isn't required, and the discount is always applied through its price groups.
 
 ### Override priority and Pricing priority
 
@@ -111,7 +111,7 @@ These two fields work together. When **Override priority** is set to **Yes** , t
 
 ### Match all associated price groups
 
-In Commerce version 10.0.16 and later, a configuration called **Match all associated price groups** is available on all discount forms. If the configuration is enabled, the discount will be considered only if all the price groups associated to the discount are applicable to the transaction. For example, if the two price groups named "PG-Student" (price group for student affiliation) and "RP-Houston" (price group for the Houston store) are associated to a discount, and **Match all associated price groups** is enabled, the discount will be considered only for students who are shopping in the Houston store. This configuration provides a way to restrict affiliation and loyalty-based discounts to limited stores.
+In Commerce version 10.0.16 and later, a configuration called **Match all associated price groups** is available on all discount forms. If the configuration is enabled, the discount is only considered if all the price groups associated to the discount are applicable to the transaction. For example, if the two price groups named "PG-Student" (price group for student affiliation) and "RP-Houston" (price group for the Houston store) are associated to a discount, and **Match all associated price groups** is enabled, the discount is only considered for students who are shopping in the Houston store. This configuration provides a way to restrict affiliation and loyalty-based discounts to limited stores.
 
 > [!NOTE]
 > If two or more channel price groups are associated to a discount, and **Match all associated price groups** is enabled, the discount won't apply because a transaction can be associated to only one store. Therefore, all the price groups associated to the discount don't match.
@@ -122,7 +122,7 @@ This field is a free-form text field. It isn't used in the Store Commerce app/St
 
 ### Disclaimer
 
-This is a free-form text field. It isn't used in the Store Commerce app/Store Commerce for web systems or in transactions.
+This field is for free-form text. It isn't used in the Store Commerce app/Store Commerce for web systems or in transactions.
 
 ### Line type
 
@@ -136,13 +136,13 @@ This field is on all discount lines. The possible values are **Include** and **E
 
 **Category**, **Product**, **Variant, and dimensions** are the last discount settings that are common to all discounts. These fields are set on each discount line and specify what is being discounted. They act as a filter when the pricing engine searches for discounts that can be applied to a transaction. These fields are related to each other according to these rules – categories contain products, and products can come in different variations of size, color, style, and configuration.
 
-The pricing engine doesn't use the parent/child relationships of categories, products, and variants to order discounts during discount calculation. This behavior differs from the way that the pricing engine handles sales price trade agreements. For example, both a discount for 10 percent on a category and a discount for 5 percent on a product in the same category will be considered. The larger of the two discount amounts will then be used, provided that all other properties are the same and the discounts aren't set to **Compounded**, in which they both will be combined. If you want to force a product discount to be used over a category discount you can use pricing priority or the discount's concurrence mode to cause one discount to be applied before another.
+The pricing engine doesn't use the parent/child relationships of categories, products, and variants to order discounts during discount calculation. This behavior differs from the way that the pricing engine handles sales price trade agreements. For example, both a discount for 10 percent on a category and a discount for 5 percent on a product in the same category will be considered. The larger of the two discount amounts is then used if all other properties are the same and the discounts aren't set to **Compounded**, in which they're both combined. If you want to force a product discount to be used over a category discount you can use pricing priority or the discount's concurrence mode to cause one discount to be applied before another.
 
 When you edit discounts, the **Category**, **Product**, **Variant**, and **Dimensions** settings act as filters for each other. The **Category** and **Product** fields are automatically set from the *Commerce Category Hierarchy* if a product or variant is entered directly. The following sections provide detailed descriptions of each of these fields.
 
 #### Category
 
-At a minimum, you must set the **Category** field. You can select any category from the product category hierarchy or any category from a supplemental category hierarchy. However, you can't select categories from channel navigation hierarchies or other non-commerce hierarchies. If only a category is specified on a discount line, the discount will be applied to any product in that category, even products that are added to the category after the discount has been created, provided that all other discount criteria are met, such as currency and UoM.
+At a minimum, you must set the **Category** field. You can select any category from the product category hierarchy or any category from a supplemental category hierarchy. However, you can't select categories from channel navigation hierarchies or other noncommerce hierarchies. If only a category is specified on a discount line, the discount will be applied to any product in that category (including products that are added to the category after the discount is created) if all other discount criteria are met, such as currency and UoM.
 
 > [!NOTE]
 > The category that you select on a discount line is hierarchy specific. Therefore, you can't specify a value by typing a partial value in the field, as you can in most Commerce fields. If you type in a full category name, the drop-down list will expand, and that category will be selected. In addition, you can press Alt+Down arrow to expand the selection dialog box and then press Tab to move between the hierarchy selection and hierarchy tree within the drop-down list, so that you can use the field without using a mouse.
@@ -159,7 +159,7 @@ When you select a variant on a discount line, the discount will be applied to ju
 
 #### Dimensions
 
-Starting with the Retail 8.1.1 release, we've added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the merchandising manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
+Starting with the Retail 8.1.1 release, the capability to set up discounts at a dimension level for a product was added. This capability provides the flexibility to choose one or more dimensions of a product as discount lines. This flexibility saves the merchandising manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
 
 > [!NOTE]
 > The capability to set up promotions based on dimensions is not supported for price adjustments. The specific interface for defining the dimensions is removed in Retail versions 10.0.4 and later.
@@ -178,7 +178,9 @@ To enable the improved discount calculation feature, follow these steps.
 1. Run the **1020** (**Prices and discounts**) and **1070** (**Channel configuration**) distribution schedule jobs.
 
 > [!NOTE]
-> Make sure that you test this feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
+> - Ensure that you test the improved discount calculation feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
+> - The improved discount calculation feature is enabled by default for environments running Commerce version 10.0.32 or later. When the feature is enabled, a batch job is scheduled when a discount is enabled or a product master associated with a discount has a new product variant.
+> - The [issue](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=856877&dbType=3) that incorrectly scheduled multiple "Process commerce discounts" batch jobs that blocked other jobs from running has been fixed in the Commerce 10.0.38 release. Until users upgrade to a Commerce version with the fix, they can avoid the issue by disabling the **Improve discount computation performance by using flattened discount tables** feature.
 
 ## Best practices
 
@@ -186,7 +188,7 @@ To enable the improved discount calculation feature, follow these steps.
 - Use independent number sequences for each discount type and configure the number sequences so that the discount ID by itself indicates the discount type. For example, prefix the ID of each discount type with a different alphanumeric constant: **Q** for quantity, **MM** for mix and match, and so on.
 - Test your discount configuration using the price simulator before you enable discounts. The price simulator has an option that lets you treat disabled discounts as enabled. This option was designed specifically for testing discounts before they're enabled.
 - Expire discounts when they're no longer valid. In this way, you prevent the total number of discounts that the pricing engine considers during a transaction from growing unbounded. Otherwise, the performance of discount calculation can be affected over time.
-- Leverage the supplemental categories to group the products, for example clearance products or last season products.
+- Use supplemental categories to group products, for example clearance products or last season products.
 - Always avoid or minimize overlapping discount lines.
 
 

@@ -1,148 +1,289 @@
 ---
-title: Inventory Visibility app
-description: This article describes how to use the Inventory Visibility app.
-author: yufeihuang
-ms.date: 09/15/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+title: Use the Inventory Visibility app UI version 2
+description: Learn how to use the Inventory Visibility app UI version 2, including an process for authenticating with the Inventory Visibility service.
+author: yufei-huang
 ms.author: yufeihuang
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.topic: how-to
+ms.date: 12/04/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
-# Use the Inventory Visibility app
+# Use the Inventory Visibility app UI version 2
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use the Inventory Visibility app.
+This article describes how to use the Inventory Visibility app, which runs in Microsoft Power Apps.
 
-Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features:
-
-- It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
-- It supports real-time on-hand inventory queries on various dimension combinations.
-- It provides a UI for posting reservation requests.
-- It provides a view of the inventory on-hand for products together with all dimensions.
-- It provides a view of an on-hand inventory list for products together with predefined dimensions. The on-hand list view can be either a full summary or a preloaded result from an on-hand query.
+The Inventory Visibility app offers two versions of a model-driven user experience for visualization. Users can now choose between the new user interface (referred to as *UI version 2* in this article) and the old (legacy) user interface (referred to as *UI version 1* in this article).
 
 ## Prerequisites
 
-Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+Before you can use UI version 2 to work with the Inventory Visibility app, the following prerequisites must be in place:
 
-## <a name="open-authenticate"></a>Open and authenticate the Inventory Visibility app
+- [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+- [Turn on Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md). 
 
-To open and authenticate the Inventory Visibility app, follow these steps.
+## Authenticate with the Inventory Visibility service
 
-1. Sign in to your Power Apps environment.
-1. Open the **Inventory Visibility** app.
-1. Open the **Operational Visibility** page from the left pane.
-1. Select the **Settings** button (gear symbol) at the top of the page.
-1. In the **Settings** dialog box, enter the **Client Id**,**Tenant Id**, and **Client Secret** values that you noted when you [installed and set up Inventory Visibility](inventory-visibility-setup.md).
-1. Select the **Refresh** button next to the **Bearer Token** field. The system generates a new bearer token, based on the information that you've entered.
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
+1. On the navigation pane, select **Admin settings**.
+1. On the **Set tokens** tile, select **Manage**.
+1. In the dialog box, enter the **Client ID**, **Tenant ID**, and **Client secret** values. These values were defined when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-add-in).
+1. Select **Login**. The system generates a new bearer token for your sessions. This token expires after one hour.
 
-    ![On-hand query settings.](media/inventory-visibility-query-settings.png "On-hand query settings")
+## <a name="ui-version"></a>Switch between user interface versions
 
-1. When you receive a valid bearer token, close the dialog box. The bearer token will expire after some time. Therefore, you must occasionally refresh it when you have to update the configuration, post data, or query data.
+Regardless of which version of the user interface is active, you can switch to the other version at any time. However, only the settings that you apply in the active version of the UI have any effect. To switch between the two versions, follow these steps.
 
-## <a name="configuration"></a>Configure the Inventory Visibility app
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
+1. On the **Change area** menu at the bottom of the navigation pane, select one of the following options:
 
-The **Configuration** page of the Inventory Visibility app helps you set up the general data management configuration and feature configuration. After the add-in is installed, the default configuration includes a default setup for Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Afterwards, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
+    - **Inventory Visibility** – The navigation pane shows the pages for UI version 2.
+    - **Legacy UI** – The navigation pane shows the pages for UI version 1.
 
-For complete details on how to configure the solution, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
+## <a name="endpoint"></a>Find your service endpoint and read the configuration
 
-## Operational visibility
+The Inventory Visibility service is deployed on Azure Service Fabric in multiple geographies and multiple regions. Currently, there's no central endpoint to automatically redirect your requests to the appropriate geography and region. Therefore, the service endpoint uses the following pattern, which includes the required information:
 
-The **Operational Visibility** page provides the results of a real-time on-hand inventory query, reservation posting, and allocation based on various dimension combinations. When the *OnHandReservation* feature is [turned on](inventory-visibility-configuration.md), you can also post reservation requests from the  **Operational Visibility** page.
+`https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
+
+To obtain your service endpoint and runtime configuration, follow these steps.
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Admin settings**.
+1. On the **Show service details** tile, select **Manage**.
+1. In the dialog box, you can find your service endpoint and configuration details.
+
+## <a name="update-configuration"></a>Update the configuration
+
+Any time that you modify the configuration and save your changes, the system saves the new configuration settings only temporarily. The changes don't take effect until you commit the new settings to the service. Follow these steps to commit new configuration settings to the service.
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Admin settings**.
+1. On the **Update Configuration** tile, select **Manage**.
+1. Review your modifications in the dialog box.
+
+    > [!IMPORTANT]
+    > Be sure to verify all the important modifications that are about to be made to your data sources, physical measures, and dimension mappings.
+
+1. Select **Confirm Update** to apply your configuration change.
+
+## <a name="data-partition"></a>Data partition rule
+
+Inventory Visibility can distribute and store inventory data in either of the following ways:
+
+- *By location* – Choose this option if you always know site and warehouse information when you make on-hand queries, inventory adjustments, inventory reservations or inventory allocations through Inventory Visibility.
+- *By product ID* – Choose this option if you often don't know site or warehouse information when calling Inventory Visibility. For example, when making e-commerce in-basket reservations, the fulfillment warehouse might be unknown when online orders are initially placed. In this case, it's important to be able to call Inventory Visibility to query on-hand inventory and make reservations without providing warehouse information.
+
+To change the data partition rule, follow these steps:
+
+1. Open the Inventory Visibility app
+1. Select **Data partition rule** and choose the rule you want to use.
+1. [Clear all inventory data](#delete-data).
+1. [Update the configuration](#update-configuration) to apply your changes. (The update-configuration operation will fail if you don't clear the data first.)
+
+The data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, we recommend using the *By product ID* option if you often query across different locations. However, we recommend using the *By location* option if you more often query for multiple products at the same location.
+
+When using the *By location* partition rule, the rule in the following table is included in the solution by default and can't be changed (this becomes set 0 of the index hierarchy). When using *By product ID*, the rule has no effect on Inventory Visibility APIs.
+
+| Base dimension | Hierarchy |
+|---|---|
+| *SiteId* | 1 |
+| *LocationId* | 2 |
+
+> [!IMPORTANT]
+> Don't customize the partition configuration. If you delete or change the configuration without official guidance, you're likely to encounter an unexpected error.
+
+## <a name="index"></a>On-hand index configuration
+
+In many cases, on-hand inventory is queried not only at the most detailed level but also at some aggregated levels, based on the inventory dimensions.
+
+For frequently used query patterns, you can help improve query performance by setting up *indexes*.
+
+An index is composed of a *set number*, *dimensions*, and a *hierarchy*.
+
+| Name | Description |
+|---|---|
+| Set number | Dimensions under the same set number belong to the same set (index) and are grouped together. |
+| Dimensions | The dimensions are base dimensions that query results are aggregated on. |
+| Hierarchy | <p>The hierarchy determines the specific combinations of dimensions that can take advantage of an index query. For example, you set up an index that has the following dimensions and hierarchy: *(ColorId, SizeId, StyleId)*. In this case, only queries that use the following four dimension combinations for their filter and group-by fields are enhanced:</p><ul><li><b>First combination:</b> Empty</li><li><b>Second combination:</b> <i>(ColorId)</i></li><li><b>Third combination:</b> <i>(ColorId, SizeId)</i></li><li><b>Fourth combination:</b> <i>(ColorId, SizeId, StyleId)</i></li></ul><p>(The filter field isn't order-restricted.)</p><p>The index doesn't speed up queries that use other dimension combinations.</p> |
+
+The default on-hand index configuration includes a standard set of indexes.
+
+> [!TIP]
+> These tips can help when you set up your on-hand index configuration:
+>
+> - Base dimensions that are reserved in the partition configuration (set number *0*) should not be included in other on-hand index configurations.
+> - If you aren't interested in querying specific dimension combinations, set up an index that has only one base dimension, *Empty*.
+
+### Set up the on-hand index configuration
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Index Configuration**.
+1. Add and remove lines in the grid as you require to define your index. For more information, see the introduction to this section and the [example](#index-configuration-example) in the next subsection.
+1. [Update the configuration](#update-configuration) to apply your changes.
+
+### <a name="index-configuration-example"></a>On-hand index configuration example
+
+This section provides an example that shows how an on-hand index works.
+
+The following table shows a list of available inventory.
+
+| Item | ColorId | SizeId | StyleId | Quantity |
+|---|---|---|---|---|
+| D0002 | Black | Small | Wide | 1 |
+| D0002 | Black | Small | Regular | 2 |
+| D0002 | Black | Large | Wide | 3 |
+| D0002 | Black | Large | Regular | 4 |
+| D0002 | Red | Small | Wide | 5 |
+| D0002 | Red | Small | Regular | 6 |
+| D0002 | Red | Large | Regular | 7 |
+
+The following table shows an on-hand index configuration.
+
+| Set Number | Dimension | Hierarchy |
+|---|---|---|
+| 1 | *ColorId* | 1 |
+| 1 | *SizeId* | 2 |
+| 1 | *StyleId* | 3 |
+
+This index helps improve the performance of the following on-hand inventory queries:
+
+- *()* – Grouped by all
+
+    - D0002, 28
+
+- *(ColorId)* – Grouped by *ColorId*
+
+    - D0002, Black, 10
+    - D0002, Red, 18
+
+- *(ColorId, SizeId)* – Grouped by the combination of *ColorId* and *SizeId*
+
+    - D0002, Black, Small, 3
+    - D0002, Black, Large, 7
+    - D0002, Red, Small, 11
+    - D0002, Red, Large, 7
+
+- *(ColorId, SizeId, StyleId)* – Grouped by the combination of *ColorId*, *SizeId*, and *StyleId*
+
+    - D0002, Black, Small, Wide, 1
+    - D0002, Black, Small, Regular, 2
+    - D0002, Black, Large, Wide, 3
+    - D0002, Black, Large, Regular, 4
+    - D0002, Red, Small, Wide, 5
+    - D0002, Red, Small, Regular, 6
+    - D0002, Red, Large, Regular, 7
+
+## <a name="feature-management"></a>Feature management
+
+The following table shows the features that Inventory Visibility offers. Each of these features can be turned on or off for your environment.
+
+| Feature name | Description |
+|---|---|
+| [Available to promise](inventory-visibility-available-to-promise.md) | Track your available to promise (ATP) across all data sources and channels. |
+| [Inventory allocation](inventory-visibility-allocation.md) | Allocate your valuable on-hand stock to your most important channels, customers, or predefined groups, and track the consumption of each allocated pool. |
+| [Advanced warehouse inventory](inventory-visibility-whs-support.md) | Sync and view advanced warehouse item inventory by using warehouse hierarchies. |
+| [Soft reservation](inventory-visibility-reservations.md) | Post your omnichannel reservations to Inventory Visibility soft reservations for real-time inventory availability checks and updates. |
+| [Inventory log history](inventory-visibility-track-inventory-log-history.md) | Enable Inventory Visibility to store your successful transaction logs. You can query the log history for details about the organization, product, date range, site, and warehouse. |
+| [Inventory summary](inventory-visibility-inventory-summary.md) | Periodically sync your raw inventory summary from the cache to Dataverse. This feature isn't compatible with advanced warehouse items. Enable either this feature or the *Preloaded on-hand* feature. Don't enable both features. |
+| [Preload on-hand](inventory-visibility-preload-on-hand.md) | Periodically preload the inventory summary to Dataverse from a query result. The query result can be configured with the dimensions that are most relevant to your business. This feature is compatible with advanced warehouse items. Enable either this feature or the *Inventory summary* feature. Don't enable both features. |
+
+By default, all these features are disabled. To turn a feature on or off, and to make related configuration settings, follow these steps.
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Feature management**.
+1. Find the tile for the feature that you want to turn on or off, and then select **Manage**.
+1. Turn on and set up the feature as you require. Each feature provides different settings. For more information, see the documentation for the feature that you're setting up.
+1. [Update the configuration](#update-configuration) to commit your changes so that they take effect.
+
+## Delete all configurations
+
+If necessary, you can delete all configurations except those in the *fno* and *@iv* Inventory Visibility data sources. Deleted configurations can't be restored.
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Admin Settings**.
+1. On the **Delete all configurations** tile, select **Manage**.
+1. You're prompted to confirm the deletion. Select **OK** to continue.
+
+## <a name="delete-data"></a> Delete all inventory data
+
+If necessary, you can delete all Inventory Visibility data, except configurations, in both the cache and Dataverse. Deleted data can't be restored, and users are blocked until deletion is completed.
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Admin Settings**.
+1. On the **Delete all inventory data** tile, select **Manage**.
+1. You're prompted to confirm the deletion. Select **OK** to continue.
+
+## Inventory queries and updates
+
+On the navigation pane, the **Operational visibility** group provides access to pages where you can perform real-time on-hand inventory queries and updates. When the [soft reservation](inventory-visibility-reservations.md) feature is [enabled](#feature-management), you can also post reservation requests to the API. For more details about API requests, see [Inventory Visibility public APIs](inventory-visibility-api.md).
+
+The following elements are common to all the pages:
+
+- A **Post** or **Query** button on the toolbar lets you send API requests to the Inventory Visibility service. This button becomes available only after you enter all the content that's required for the API call on the page.
+- A **Product** section lets you enter a product ID, an organization ID, and dimension values for the API request. Select the **Edit Dimensions** button in this section to choose which of the available dimensions to include in the request.
+- A **Settings** section (the exact name varies) lets you enter API-specific settings, such as whether to query ATP contents for an on-hand query.
+- A **Developer reference** button on the toolbar lets you view the raw contents of your API request (read-only).
+- A **Settings** button on the toolbar lets you view and edit the authentication details that are used to access the Inventory Visibility service.
+
+The following subsections provide details about how to set up and use each type of operation.
 
 ### On-hand query
 
-The **Onhand Query** tab of the **Operational Visibility** page lets you query the real-time on-hand inventory. Follow these steps to set up and run a query.
+Use the **On hand query** page in the **Operational visibility** group to query real-time on-hand inventory. Follow these steps to set up and run a query.
 
-1. Open the **Inventory Visibility** app.
-1. Open the **Operational Visibility** page from the left pane.
-1. On the **Onhand query** tab, enter the **Organization ID**, **Site ID**, and **Location ID** values that you want to query.
-1. In the **Product ID** field, enter one or more product IDs to get an exact match for your query. If you leave **Product ID** field blank, the results will include all products at the specified site and location.
-1. To get a more granular result (for example, a view by dimension values such as color and size), select group-by dimensions in the **Group Result By** field.
-1. To find items that have a specific dimension value (such as color = red), select the dimension in the **Filter Dimensions** field, and then enter a dimension value.
-1. Select **Query**. You'll receive either a success (green) message or a failed (red) message. If the query fails, check your query criteria, and make sure that your [bearer token](#open-authenticate) hasn't expired.
+1. On the [UI version 2](#ui-version) navigation pane, select **On hand query**.
+1. In the **Product** section, enter the **Organization ID**, **Site ID**, and **Location ID** values of the products that you want to find.
+1. In the **Product ID** field, enter one or more product IDs to get an exact match for your query. Alternatively, leave the field blank to include all products at the specified site and location.
+1. Select **Edit Dimensions** to choose which dimensions to include in the query body. Then enter values for the selected dimensions in the **Product** section.
 
-Another way to make an on-hand query is to make direct API requests. You can use either `/api/environment/{environmentId}/onhand/indexquery` or `/api/environment/{environmentId}/onhand`. For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
+    > [!NOTE]
+    > If you plan to make an ATP query, ensure that every dimension that is included in the ATP index is also listed in the **Product** section. For example, if your ATP index includes `ColorId` and `SizeId`, both those dimensions must be listed in the **Product** section. If any dimensions are missing, select **Edit Dimensions** to add them. In the search form, you can leave some of the dimension values blank. However, the dimensions must be included in the query body if they are included in the ATP index.
 
-### Reservation posting
+1. For each field that you want to include in the query, but without filtering on any specific value, select **Use all values**.
+1. In the **Query Settings** section, set the following options:
 
-Use the **Reservation Posting** tab of the **Operational Visibility** page to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature and how to turn it on, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+    - **Query ATP** – Select this checkbox to include ATP information.
+    - **Include negative quantities** – Select this checkbox to include negative quantities for calculated measure results.
 
-> [!NOTE]
-> The capability to make a soft reservation through the user interface is intended to let you test the feature. Each soft reservation request should be associated with a transaction order line change (creation, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to a back-end order. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+1. Select **Query** on the toolbar to send the request.
 
-Follow these steps to post a soft reservation request by using the user interface.
+### Inventory adjustment
 
-1. Open the **Inventory Visibility** app.
-1. Open the **Operational Visibility** page from the left pane.
-1. On the **Reservation Posting** tab, in the **Quantity** field, specify the quantity that you want to soft reserve.
-1. Clear the **Enable negative inventory to support oversell** checkbox to prevent the stock from being oversold or over-reserved.
-1. In the **Operator** field, select the data source and physical measure that apply to the soft-reserved quantity.
-1. Enter the **Organization ID**, **Site ID**, **Location ID**, and **Product ID** values that you want to query.
-1. To get a more granular result, select a data source, dimensions, and dimension values.
+Use the **Inventory Adjustment** page in the **Operational visibility** group to make real-time updates to inventory. Follow these steps to set up and submit an update.
 
-Another way to post a soft reservation is to make direct API requests. Use the pattern that is described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show details**. You can also get the `reservationId` value from the response details.
+1. On the [UI version 2](#ui-version) navigation pane, select **Inventory Adjustment**.
+1. In the **Product** section, enter the **Product ID**, **Organization ID**, **Site ID**, and **Location ID** values of the products that you want to update. <!--KFM: I added product ID here. But should we list this separately as optional (as with on-hand query)? -->
+1. Select **Edit Dimensions** to choose which dimensions to include in the request body. Then enter values for the selected dimensions in the **Product** section.
+1. In the **Measures to update** section, select **Add** to add a row for the measure that you want to update. For the new row, select a data source, physical measure, and quantity to update. You must specify at least one measure. You can add multiple measures.
+1. Select **Post** on the toolbar to send the request.
 
-### Allocation
+### Soft reserve
 
-For information about how to manage allocations from the user interface and APIs, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md).
+Use the **Soft reserve** page in the **Operational visibility** group to make soft reservations of inventory.
 
-## <a name="inventory-summary"></a>Inventory summary
+> [!IMPORTANT]
+> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
-The **Inventory summary** page provides an inventory summary for products together with all dimensions. It's a customized view for the *Inventory OnHand Sum* entity. Inventory summary data is synced periodically from Inventory Visibility.
+Follow these steps to set up and submit a soft reservation.
 
-To enable the **Inventory summary** page and set the synchronization frequency, follow these steps:
+1. On the [UI version 2](#ui-version) navigation pane, select **Soft reserve**.
+1. In the **Product** section, enter the **Product ID**, **Organization ID**, **Site ID**, and **Location ID** values of the products that you want to update. <!--KFM: I added product ID here. But should we list this separately as optional (as with on-hand query)? -->
+1. Select **Edit Dimensions** to choose which dimensions to include in the request body. Then enter values for the selected dimensions in the **Product** section.
+1. In the **Reservation settings** section, set the following fields:
 
-1. Open the **Configuration** page.
-1. Open the **Feature Management & Settings** tab.
-1. Set the toggle switch for the *OnHandMostSpecificBackgroundService* feature to *Yes*.
-1. When the feature is enabled, the **Service Configuration** section becomes available and includes a row for configuring the **OnHandMostSpecificBackgroundService** feature. This setting lets you choose the frequency at which inventory summary data is synced. Use the **Up** and **Down** buttons in the **Value** column to change the time between syncs (which can be as low as 5 minutes). Then select **Save**.
+    - **Enable negative inventory to support oversell** – Select this checkbox to skip the available-for-reservation check. Clear it to enforce the check.
+    - **Reserve on measure** – Select the data source and physical measure to perform the soft reservation on.
+    - **Quantity** – Specify the quantity to reserve.
 
-    ![The OnHandMostSpecificBackgroundService Setting](media/inventory-visibility-ohms-freq.png "The OnHandMostSpecificBackgroundService Setting")
+1. Select **Post** on the toolbar to send the request.
 
-1. Select **Update configuration** to save all the changes.
+### Change a schedule
 
-> [!NOTE]
-> The *OnHandMostSpecificBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
->
-> When you change the settings for a calculated measure, data on the **Inventory summary** page won't update automatically until the related product data is modified.
->
-> If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+Use the **Post on hand change schedule** page in the **Operational visibility** group to post inventory changes with dates to the Inventory Visibility service. Follow these steps to set up and submit a schedule change.
 
-## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
+1. On the [UI version 2](#ui-version) navigation pane, select **Change schedule**.
+1. In the **Product** section, enter the dimension values of the products that you want to update.
+1. In the **Change schedule measure, quantity and date** section, sect **Add** to specify the date, data source, physical measure, and quantity for the change.
+1. Select **Post** on the toolbar to send the request.
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+## Search for products in the Inventory Visibility app
 
-Supply Chain Management stores a great deal of information about your current on-hand inventory and makes it available for a wide variety of purposes. However, many everyday operations and third-party integrations require just a small subset of these details, and querying the system for all of them can result in large data sets that take time to assemble and transfer. Therefore, the Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data to make that optimized information continuously available. The stored on-hand inventory details are filtered based on configurable business criteria to ensure that only the most relevant information is included. Because the filtered on-hand inventory lists are stored locally in the Inventory Visibility service and are regularly updated, they support quick access, on-demand data exports, and streamlined integration with external systems.
-
-The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
-
-To view data on the **Preload the Inventory Visibility Summary** tab, you must turn on and configure the *OnHandIndexQueryPreloadBackgroundService* feature. See [Turn on and configure preloaded on-hand queries](inventory-visibility-configuration.md#query-preload-configuration) for instructions.
-
-> [!NOTE]
-> As with the *OnHandMostSpecificBackgroundService* feature, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
->
-> When you change the settings for a calculated measure, data on the **Preload the Inventory Visibility Summary** page won't update automatically until the related product data is modified.
->
-> If your **Preload the Inventory Visibility Summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job, and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
-
-## <a name="additional-tip-for-viewing-data"></a>Filter and browse the inventory summaries
-
-By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the advanced filter, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
-
-The **Inventory summary** page provides three fields above the grid (**Default dimension**, **Custom dimension**, and **Measure**) that you can use to control which columns are visible. You can also select any column header to filter or sort the current result by that column. The following screenshot highlights the dimension, filtering, result count, and "load more" fields available on the **Inventory summary** page.
-
-![The Inventory summary page.](media/inventory-visibility-onhand-list.png "The Inventory summary page")
-
-Because you'll have predefined the dimensions used for loading summary data, the **Preload the Inventory Visibility summary** page displays dimension-related columns. *The dimensions aren't customizable&mdash;the system only supports site and location dimensions for preloaded on-hand lists.* The **Preload the Inventory Visibility summary** page provides filters that are similar to those on the **Inventory summary** page, except the dimensions are already selected. The following screenshot highlights the filtering fields available on the **Preload the Inventory Visibility summary** page.
-
-![The Preload the Inventory Visibility summary page.](media/inventory-visibility-preload-onhand-list.png "The Preload the Inventory Visibility summary page")
-
-At the bottom of the **Preload the Inventory Visibility summary** and  **Inventory summary** pages, you'll find information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There's also a **Load more** button that you can use to load more records from Dataverse. The default number of loaded records is 50. When you select **Load more**, the next 1,000 available records will be loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. For details about how to set up this feature, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md). For details about how to use it in the Inventory Visibility app, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md).

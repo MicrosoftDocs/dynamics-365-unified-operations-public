@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Auto-release shipment for cross-docking 
-description: This article describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished, so that the quantity is moved directly from the production output location to the outbound location.
+description: Learn about cross-docking strategies that let you automatically release a demand order to the warehouse when the production order is reported as finished.
 author: Mirzaab
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSCrossDockingTemplate 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2019-10-1
-ms.dyn365.ops.version: 10.0.6
-
+ms.topic: article
+ms.date: 10/15/2019
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSCrossDockingTemplate
 ---
 
 # Auto-release shipment for cross-docking

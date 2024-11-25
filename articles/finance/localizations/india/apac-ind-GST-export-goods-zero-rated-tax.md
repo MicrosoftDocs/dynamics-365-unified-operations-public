@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Export goods that have zero-rated tax
-description: This article explains how to export goods that have zero-rated tax.
-author: EricWangChen
+description: Learn how to export goods that have zero-rated tax, including step-by-step processes for creating sales orders and validating sales order vouchers.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: johnmichalak
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Export goods that have zero-rated tax

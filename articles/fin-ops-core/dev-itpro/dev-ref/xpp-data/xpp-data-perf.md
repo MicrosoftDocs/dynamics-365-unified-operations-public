@@ -1,12 +1,13 @@
 ---
 title: Conversion of operations from set-based to record-by-record
-description: This article describes how to speed up SQL operations in the X++ language.
+description: Learn how to speed up SQL operations in the X++ language, including a table that defines what to delete, update, and override for various situations.
 author: josaw1
-ms.date: 06/16/2020
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/16/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Monitor API throttling
-description: This article provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
+description: Learn about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
 author: jaredha
-ms.date: 08/25/2022
+ms.author: sumadhey
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 08/25/2022
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jaredha
 ms.search.validFrom: 2022-04-16
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 52
-
 ---
 
 # Monitor API throttling
@@ -52,7 +37,7 @@ To view throttling activity in the monitoring and diagnostics portal, follow the
 
 ## Summarized API requests by application and user
 
-The **Summarized API requests by application and user** query provides a summarized view fo the API requests for an AAD user and application. This report shows the usage, which can then be compared to service protection API limits. For the selected user and application, the query displays:
+The **Summarized API requests by application and user** query provides a summarized view fo the API requests for a Microsoft Entra user and application. This report shows the usage, which can then be compared to service protection API limits. For the selected user and application, the query displays:
 - The total number of API requests in the selected date/time range.
 - The total execution time of the API requests in the selected date/time range.
 
@@ -68,16 +53,16 @@ To view the summarized data:
 6. Enter the following in the query options:
     - **Start date**: The date and time of the beginning of the range for which you want to see the API usage data.
     - **End date**: The date and time of the end of the range for which you want to see the API usage data.
-    - **User object ID**: The Azure Active Directory (AAD) user object ID of the user.
-    - **Application ID**: The AAD application ID of the integrating application using the APIs.
+    - **User object ID**: The Microsoft Entra ID (Microsoft Entra ID) user object ID of the user.
+    - **Application ID**: The Microsoft Entra application ID of the integrating application using the APIs.
 7. Select **Search**.
 
 ## API requests by application and user
 
 The **API requests by application and user** query displays the list of API requests made for a defined user and application with the given date/time range. For each record, the query displays:
 - The timestamp of the request
-- The AAD user ID of the user making the API request
-- The AAD application ID of the request
+- The Microsoft Entra user ID of the user making the API request
+- The Microsoft Entra application ID of the request
 - The AOS node on which the request was made
 - The URL of the API request
 - The total execution time of the request
@@ -95,9 +80,8 @@ To view the data for the query:
       > [!NOTE]
       > The maximum range of time allowed for the query is 20 minutes. Do not set the **End date** value more than 20 minutes from the **Start date** value.
       
-    - **User object ID**: The Azure Active Directory (AAD) user object ID of the user.
-    - **Application ID**: The AAD application ID of the integrating application using the APIs.
+    - **User object ID**: The Microsoft Entra ID (Microsoft Entra ID) user object ID of the user.
+    - **Application ID**: The Microsoft Entra application ID of the integrating application using the APIs.
 7. Select **Search**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

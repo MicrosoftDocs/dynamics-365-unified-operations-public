@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Item consolidation - location utilization
-description: This article provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
+description: Learn about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.7
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 ---
 
 # Item consolidation - location utilization
@@ -33,7 +20,7 @@ This article provides information about functionality that makes it easy for war
 
 Before you can use the features that are described in this article, you must turn them on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the features and turn them on if they are required. Turn on both the following features, in the order that they are listed in. (Both features are for the **Warehouse management** module.)
 
-1. *Warehouse location status*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
+1. *Warehouse location status*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. Learn more in [Warehouse location status](warehouse-location-status.md).)
 2. *Item consolidation location utilization*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ## Warehouse location status

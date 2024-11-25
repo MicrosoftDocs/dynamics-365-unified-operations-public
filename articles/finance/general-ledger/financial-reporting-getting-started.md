@@ -1,38 +1,44 @@
 ---
-# required metadata
-
 title: Financial reporting overview
-description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
+description: Learn about where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 04/04/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 05/20/2024
+ms.reviewer: twheeloc
+ms.collection: get-started 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ---
 
-# Get started with Financial reporting 
+# Get started with financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
-This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
+This article describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
+> [!NOTE]
+> Financial reporting is now available through an add-in. Therefore, the default availability of Financial reporting through Microsoft Dynamics 365 Finance has changed. If you're an existing customer, Microsoft provides the new Financial reporting add-in in your Microsoft Dynamics Lifecycle Services environment. If you're currently using the **Financial reporting** module, there's no impact on your environments or your organization's ability to run financial reports.
+
+## Install the Financial reporting add-in
+
+The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
+	
+1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. For more information, see [Configure Microsoft Power Platform](../business-performance-analytics/configure-bpa.md#configure-microsoft-power-platform) 
+2. Select **Install a new add-in**, and search for **Financial reporting**.
+3. Agree to the terms, and then select **Install**.
+
+## Uninstall the Financial reporting add-in
+
+> [!IMPORTANT]
+> If you uninstall the Financial reporting add-in, you remove resources that have been used for Financial reporting. This action permanently deletes any previously created reports, report designs, and configurations. Recovery isn't supported.
+
+1. In Lifecycle Services, find the Financial reporting add-in in the **Environment add-ins** section under **Power Platform Integration**.
+2. Select **Uninstall** and then **Agree**.
 
 ## Accessing Financial reporting
 
@@ -94,8 +100,8 @@ After a user is added or a role is changed, the user should be able to access Fi
 Users who generate a report can delete their own reports. Users with the **Maintain financial reporting security** duty can delete other's reports. 
 
 In release 10.0.8, the concept of expiration dates was introduced. A new required feature is enabled in the **All** page within the feature management workspace. The **Financial report retention policies** feature contains the following changes:
-* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated.
-* Any existing reports from before the feature was installed will be given a 90-day expiration period. The date may show as blank for a short period of time until the Financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
+* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they're generated.
+* Any existing reports from before the feature was installed will be given a 90-day expiration period. The date might show as blank for a short period of time until the Financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
 * Users with **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available: 
 
     * An expiration of 90 days.
@@ -114,17 +120,17 @@ Financial reporting provides 22 default financial reports. Every report uses the
 | Default report                           | Description                                                         |
 |-------------------------------------------|--------------------------------------------------------------------------------|
 | 12 Month Rolling Single Column Income Statement – Default | View an organization's profitability for the past 12 months in a single column.            |
-| 12 Month Trend Income Statement – Default                 | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.                                                |
-| Actual vs Budget – Default                                | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.                                                                       |
+| 12 Month Trend Income Statement – Default                 | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.                    |
+| Actual vs Budget – Default                                | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.    |
 | Audit Details – Default                                  | View detailed balance information for all accounts. This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID. |
 | Balance List – Default                                   | View detailed balance information for all accounts. This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.                          |
 | Balance Sheet – Default                                   | View the organization's financial position for the year.                      |
 | Balance Sheet and Income Statement Side by Side - Default | View the organization's financial position and profitability for the year side by side.     |
-| Cash Flow – Default                                       | Gain insight into the cash that is coming in to and going out of the organization.                 |
+| Cash Flow – Default                                       | Gain insight into the cash that's coming in to and going out of the organization.                 |
 | Detailed JE and TB Review – Default                      | View opening balance and activity information for all accounts.                      |
 | [Detailed Trial Balance - Default](trial-balance-financial-reports.md)| View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.                                                                                 |
 | Expenses Three Year Quarterly Trend – Default             | Gain insight into expenses for the past 12 quarters over the previous three years.       |
-| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.                                                                              |
+| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.   |
 | [Income Statement – Default](income-statement-financial-report.md)| View the organization's profitability for the current period and the year to date.          |
 | Ledger Transaction List – Default                        | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                |
 | Ratios – Default                                          | View the solvency, profitability, and efficiency ratios for the organization for the year.       |
@@ -146,17 +152,17 @@ From the financial reports list, you can create a new report or modify an existi
 
 ## Reporting tree definitions
 
-One of the components that's used to build financial reports is a reporting tree definition. A reporting tree definition helps define the structure and hierarchy of your organization. It's a cross-dimensional hierarchical structure that is based on the dimensional relationships in your financial data. It provides information at the reporting unit level and at a summary level for all units in the tree.
+One of the components that's used to build financial reports is a reporting tree definition. A reporting tree definition helps define the structure and hierarchy of your organization. It's a cross-dimensional hierarchical structure that's based on the dimensional relationships in your financial data. It provides information at the reporting unit level and at a summary level for all units in the tree.
 
 You can create an unlimited number of reporting trees to display your organization's data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
 
 ## Update the Financial reporting version through slipstreaming
 
-Finance and operations apps are updated every month. However, Financial reporting isn't necessarily updated on that cadence. Moreover, customers have more options about when they implement updates for finance and operations apps. Financial reporting updates are automatically installed. Financial reporting has a designated version that is consumed in a customer environment when a service update is implemented, when downtime is initiated, or when a customer's environment is in Maintenance mode. This process is known as *slipstreaming* or *true-up*, because all customer implementations are set to the same version of Financial reporting.
+Finance and operations apps are updated every month. However, Financial reporting isn't necessarily updated on that cadence. Moreover, customers have more options about when they implement updates for finance and operations apps. Financial reporting updates are automatically installed. Financial reporting has a designated version that's consumed in a customer environment when a service update is implemented, when downtime is initiated, or when a customer's environment is in Maintenance mode. This process is known as *slipstreaming* or *true-up*, because all customer implementations are set to the same version of Financial reporting.
 
 Changes that are released in each version can be found in [What's new or changed in Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platform updates and bug fixes can be found in the "Additional Resources" section at the bottom of the page for each release.
 
-The selected slipstreamed version is a reviewed and validated version of Financial reporting that is ready for production. It's compatible with any previous or future version of Dynamics 365 Finance. For example, Financial reporting can be on the latest 10.0.19 build while the customer is still on application version 10.0.16.
+The selected slipstreamed version is a reviewed and validated version of Financial reporting that's ready for production. It's compatible with any previous or future version of Dynamics 365 Finance. For example, Financial reporting can be on the latest 10.0.19 build while the customer is still on application version 10.0.16.
 
 > [!NOTE]
 > The only circumstance where customers can move to a previous version (a downgrade scenario) occurs if Microsoft stops a true-up rollout because of an issue. As soon as a fix is available, it will be applied automatically.
@@ -171,88 +177,12 @@ The slipstream process is fully automated and doesn't require any customer actio
     - S patching or other infrastructure downtime
     - AOT package deployments
 
-## Troubleshooting issues opening Report Designer
-
-There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
-
-Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
-
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
-* Disable the pop-up blocker in your browser.
-* Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
-* If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
-* If you are using Microsoft Edge with a Chrome browser, you do not need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
-
-    1. Open a new browser in Microsoft Edge.
-    2. Enter **edge://flags** and select **Enter**.
-    3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.
-    4. Set the drop-down menu option to **Enabled**.
-    5. Select **Restart Browser**.
-
-Issue 2: The user hasn't been assigned the required permissions to use Financial reporting. 
-
-* To verify if the user does not have permission, select **Yes** on the error, "Unable to connect to the Financial reporting server. Select Yes if you want to continue and specify a different server address." Then select **Test Connection**. If you don't have permission, you will see a message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator."
-* Required permissions are listed above in [Granting security access to Financial reporting](#granting-security-access-to-financial-reporting). Security in Financial reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
-* The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial reporting. 
-
-    If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial reporting. 
-
-* It may be possible that another error has prevented **Dynamics user to Financial reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
-
-Issue 3: You can proceed past the **ClickOnce Report Designer** sign-in page, but are unable to complete sign in within Report Designer. 
-
-* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
-* If the time on your computer differs from the time on Financial reporting server, we recommend enabling the Windows option to set your computer's time automatically. 
-
-## Troubleshoot report designer issues with Event viewer
-
-You can use the Event viewer to analyze some of the issues that arise when using Financial reporting. 
-
-### What happens when you have connections issues with Financial reporting? 
-
-Here are some steps you can take to make your conversation with Microsoft support more effective and bring you to a quicker resolution. 
- 
-The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event viewer generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
-
-
-1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](//download.microsoft.com/download/3/0/0/3008047d-ff50-45fa-8427-e4eddc517bd7/RegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e%20(3).zip).
-2. Make sure Windows Event viewer is closed.
-3. Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
-4. Run the following command: .\RegisterETW.ps1 
-
-    A successful output in PowerShell will be verified with the message, **Competed RegisterETW script**.
-
-    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**: 
-
-    * MR-Client
-    * MR-DVT
-    * MR-Integration
-    * MR-Logger
-    * MR-Reporting
-    * MR_SchedulerTasks
-    * MR-Sql
-    * MR-TraceManager
-
-5. Reproduce the issue in the report designer.
-6. Export the MR-Logger events using the Event viewer.
-
-## Troubleshoot issues connecting to Financial reporting
-
-Issue: You receive the error "Unable to Connect to the Financial reporting server".
-
-* Determine if the issue occurs in Chrome and Edge internet browsers.
-* If the issue occurs only in one browser, it could be ClickOnce issue. 
-* When you get the connection error message, select **Test** to test the connection to see what message appears. 
-* The issue could be the result of another user not having access to Financial reporting. If a user doesn't have access, they'll receive a message stating they don't have permission.
-* If the issue occurs on multiple browsers, make sure the time clock on your workstation is set to Auto.
-* Work with a user that has security administrator's rights in Dynamics 365 Finance, and admin rights to the network domain, to sign in to your workstation to see if they are able to connect. If they're able to connect, the issue might be related to network permissions.
-* On the workstation, temporarily disable the firewall. If you are then able to connect to Report Designer the issue is with your firewall. Work with your organization's IT department to resolve the issue.
 
 ## Additional resources
 
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+- [Troubleshoot report designer issues with Event Viewer](/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

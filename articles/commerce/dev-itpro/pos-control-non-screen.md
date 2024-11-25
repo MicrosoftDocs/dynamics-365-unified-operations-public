@@ -1,29 +1,31 @@
 ---
-title: Add custom controls to non-screen designer-based POS views
-description: This article demonstrates how to add a custom control to a non-screen layout designer-based view.
+title: Add custom controls to nonscreen designer-based POS views
+description: This article demonstrates how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 12/08/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/14/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 
-# Add custom controls to non-screen designer-based POS views
+# Add custom controls to nonscreen designer-based POS views
 
 [!include [banner](../../includes/banner.md)]
 
-You can enhance the information displayed on a Dynamics 365 Commerce POS view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework. Currently, you cannot place the custom control in the desired location, at runtime, POS will load it in a fixed position.
+You can enhance the information displayed on a Microsoft Dynamics 365 Commerce point of sale (POS) view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. You can implement custom controls by using the POS extension framework. 
+
+> [!NOTE]
+> Currently, you can't place a custom control in a particular location of a POS view. At runtime, the POS loads it in a fixed position.
 
 This article applies to Dynamics 365 Finance, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix. 
 
-The following table lists the non-screen layout designer-based views that support custom controls.
+The following table lists the nonscreen layout designer-based views that support custom controls.
 
 | POS views              | Support custom control | Number of custom controls |
 |------------------------|------------------------|--------------------------|
@@ -371,7 +373,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
     }
     ```
 
-17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so during runtime POS will include the extension.
+17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so that during runtime POS includes the extension.
  
      ```typescript
      {
@@ -404,10 +406,40 @@ A custom control is an HTML page with the custom information to be displayed. A 
     ```
 19. Compile and rebuild the project.
 
+### Access static resources in extensions
+
+To access static resources in extensions to be able to load them in POS, see the following example code that does this using `context.extensionPackageInfo.baseUrl`.
+
+```typescript
+import { IPostProductSaleTriggerOptions, PostProductSaleTrigger } from "PosApi/Extend/Triggers/ProductTriggers";
+
+/**
+ * Example implementation of a PostProductSale trigger that triggers a beep sound.
+ */
+export default class BeepSoundPostProductSaleTrigger extends PostProductSaleTrigger {
+
+    /**
+     * Executes the trigger functionality.
+     * @param {IPostProductSaleTriggerOptions} options The options provided to the trigger.
+     */
+    public execute(options: IPostProductSaleTriggerOptions): Promise<void> {
+        this.context.logger.logInformational("Executing BeepSoundPostProductSaleTrigger with options " + JSON.stringify(options) + ".");
+        // You have to provide a full path to your resource file starting from the root of POS project.
+        let resourcePath: string = "/Resources/audio/beep.wav";
+        // And the apply it to the base URL of the extension package.
+        let filePath: string = this.context.extensionPackageInfo.baseUrl + resourcePath;
+        let beeper: HTMLAudioElement = new Audio(filePath);
+        beeper.play();
+
+        return Promise.resolve();
+    }
+}
+```
+
 ## Validate the customization
 
 1. Press **F5** and deploy the POS to test your customization.
-2. After POS launches, login to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
+2. After POS launches, sign in to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

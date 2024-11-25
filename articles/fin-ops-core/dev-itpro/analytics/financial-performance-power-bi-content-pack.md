@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Financial performance PowerBI.com solution
-description: This article describes the Financial performance PowerBI.com solution. 
+description: Learn about the Financial performance PowerBI.com solution, including an outline on understanding the data model and entities. 
 author: kweekley
-ms.date: 05/09/2018
+ms.author: jiwo
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 05/09/2018
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 106233
-ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kweekley
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ---
 
 # Financial performance PowerBI.com solution

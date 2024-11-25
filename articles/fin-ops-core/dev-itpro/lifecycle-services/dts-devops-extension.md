@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Dynamics 365 Translation Service Azure DevOps extension
-description: This article explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+description: Learn about how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 04/14/2022
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: joshsantana
+ms.topic: article
+ms.date: 04/14/2022
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-11-19
-
 ---
 
 # Dynamics 365 Translation Service Azure DevOps extension (Public Preview)
@@ -140,7 +137,7 @@ To create an LCS service connection to authenticate with DTS, you must first reg
 Now that you have an app that is registered with LCS API connections, you must create a service connection to authenticate with LCS.
 
 > [!NOTE]
-> LCS authentication requires Azure Active Directory (Azure AD) accounts where multifactor authentication (MFA) is turned off, and that aren't backed by federated sign-ins. Microsoft is reviewing options for new authentication features that will enable the API and these tasks to be authenticated in these types of setups.
+> LCS authentication requires Microsoft Entra accounts where multifactor authentication (MFA) is turned off, and that aren't backed by federated sign-ins. Microsoft is reviewing options for new authentication features that will enable the API and these tasks to be authenticated in these types of setups.
 
 The service connection takes the following inputs.
 

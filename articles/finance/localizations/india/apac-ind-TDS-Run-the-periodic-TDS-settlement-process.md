@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Run the periodic TDS settlement process
-description: This article explains how to settle periodic Tax Deducted at Source (TDS).
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to settle periodic Tax Deducted at Source (TDS), including a step-by-step process and an outline on important points.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Run the periodic TDS settlement process
@@ -36,7 +22,7 @@ This article explains how to settle periodic Tax Deducted at Source (TDS).
 
 1. Go to **Tax \> Declarations \> Withholding tax \> Withholding tax payment**.
 
-    [![Withholding tax payment dialog box.](../media/apac-ind-TDS-47.png)](/media/apac-ind-TDS-47.png)
+    [![Withholding tax payment dialog box.](../media/apac-ind-TDS-47.png)]
 
 2. In the **Withholding tax payment** dialog box, in the **Tax type** field, select **TDS**.
 3. In the **Tax Account Number (TAN)** field, select the Tax Account Number (TAN) to run the settlement process for.

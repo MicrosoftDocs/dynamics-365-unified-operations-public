@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: System-defined and user-defined table constraints
-description: This article explains the two types of table constraints for components in a product configuration model -  user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
-author: t-benebo
-ms.date: 06/20/2017
+description: Learn about the two types of table constraints for components in a product configuration model with an outline on user-defined table constraints.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # System-defined and user-defined table constraints
@@ -60,7 +44,7 @@ When you create a system-defined table constraint, you select a table, optionall
 
 Before a table constraint can take effect on a product configuration model, the table constraint must be included in a constraint on one of the model's components. The procedure is to create a new constraint, select the table constraint type, and then select the table constraint definition to use. Finally, all fields in the table constraint must be mapped to attributes in the product configuration model.
 
-## Additional resources
+## Related information
 
 [Product configuration models overview](product-configuration-models.md)
 

@@ -2,18 +2,15 @@
 title: Configure a Dynamics 365 Commerce sandbox environment
 description: This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
 author: josaw1
-ms.date: 01/30/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2019-12-10
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Configure a Dynamics 365 Commerce sandbox environment
@@ -65,7 +62,7 @@ To activate Store Commerce for web, follow these steps in LCS.
 1. In the environment information on the right, select **Log on to Cloud Point of Sale**.
 1. Select **Next** to open the **Before you start** dialog box.
 1. Leave the **Server URL** field as it is. Select **Next**.
-1. Sign in by using your Microsoft Azure Active Directory (Azure AD) account.
+1. Sign in by using your Microsoft Microsoft Entra account.
 1. Under **Store name**, select **San Francisco**, and then select **Next**.
 1. Under **Register and device**, select **SANFRAN-1**.
 1. Select **Activate**. You're signed out and taken to the POS sign-in page.
@@ -145,7 +142,7 @@ After the provisioning and configuration steps are completed, you can start to u
 
 To configure optional features for your Commerce sandbox environment, see [Configure optional features for a Commerce sandbox environment](cpe-optional-features.md).
 
-To enable e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Azure Active Directory business-to-consumer (B2C). For instructions, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md).
+To enable e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Microsoft Entra business-to-consumer (B2C). For instructions, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md).
 
 ## Troubleshooting
 

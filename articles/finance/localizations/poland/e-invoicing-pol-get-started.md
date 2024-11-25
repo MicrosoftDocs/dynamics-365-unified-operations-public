@@ -1,20 +1,16 @@
 ---
-title: Electronic invoicing for Poland
-description: This article provides information that will help you get started with Electronic invoicing for Poland in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: mrolecki
-ms.date: 05/15/2023
+title: Get started with Electronic invoicing for Poland
+description: Learn about what will help you get started with Electronic invoicing for Poland in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+author: ikondratenko
+ms.author: ikondratenko
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 01/02/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: gionoder
 ms.search.validFrom: 2022-07-15
-ms.dyn365.ops.version: AX 10.0.28
-ms.custom: 574537
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.28
 ---
 
 # Get started with Electronic invoicing for Poland
@@ -62,13 +58,14 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 7. Select **Certificate name**, and then select the name of the digital certificate that you created.
 8. Select **Public key**, and then select the name of the secret that you created for the public key.
 9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
-10. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
-11. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
-12. Select **Save**, and close the page.
-13. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
-14. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
-15. Select **Save** (if you made any changes), and close the page.
-16. Repeat steps 13 through 15 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+10. Select the **Archive name** parameter, and then enter the name which must contain at least **5** characters.
+11. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
+12. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
+13. Select **Save**, and close the page.
+14. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
+15. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
+16. Select **Save** (if you made any changes), and close the page.
+17. Repeat steps 14 through 16 for the **Submit project invoice** and **Submit advance invoice** feature setups.
 
 ## Finance configuration
 
@@ -255,7 +252,11 @@ Follow these steps to receive electronic invoices.
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 2. Select **OK**, and then close the page.
 
-During the import process, the system tries to automatically match incoming electronic vendor invoices with existing purchase orders. If no purchase order is found, the system raises a warning but continues to import the products on invoice lines as **Non-stock** items, expecting that the products belong to an item model group where the **Stocked product** checkbox is cleared in the inventory policy. Otherwise, the import process fails, and a related error message is shown.
+During the import process, the system tries to automatically match incoming electronic vendor invoices with existing confirmed purchase orders. 
+
+If no purchase order is found, the system raises a warning but continues to import the products on invoice lines as **Non-stock** items. Therefore, it expects that the products belong to an item model group where the **Stocked product** checkbox is cleared in the inventory policy.
+
+If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared in the inventory policy. If no default item is configured in the system, the import process fails, and a related error message is shown.
 
 To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 

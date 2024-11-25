@@ -1,20 +1,18 @@
 ---
 title: Work with feature setups
-description: This article explains how to set up Electronic invoicing features.
-author: gionoder
-ms.date: 12/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn how to set up Electronic invoicing features (RCS), including step-by-step processes for adding and editing feature setups.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
 ms.custom: 
-ms.assetid: 
+  - bap-template
+ms.date: 06/17/2024 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Work with feature setups

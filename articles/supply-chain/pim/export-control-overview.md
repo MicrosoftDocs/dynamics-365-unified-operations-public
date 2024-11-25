@@ -1,24 +1,22 @@
 ---
-title: Advanced export control overview
-description: This article provides information about the advanced export control solution that lets you manage, track, and check export compliance.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
+title: Advanced export management overview
+description: Learn about the advanced export management solution that lets you manage, track, and check export compliance with an outline on jurisdictions.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 08/29/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
-# Advanced export control overview
+# Advanced export management overview
 
-Companies that trade internationally in goods that are subject to external regulations and internal policies must keep track of many rules and policies. The advanced export control solution lets you express these rules, even complex ones, by using formulas that are similar to the formulas in Microsoft Excel. The system then ensures that the rules are honored throughout the sales and fulfillment process.
+Companies that trade internationally in goods that are subject to external regulations and internal policies must keep track of many rules and policies. The advanced export management solution lets you express these rules, even complex ones, by using formulas that are similar to the formulas in Microsoft Excel. The system then ensures that the rules are honored throughout the sales and fulfillment process.
 
-Dynamics 365 Supply Chain Management lets you manage, track, and verify compliance with export control restrictions before you confirm, pick, pack, ship, and invoice sales orders. You manage your export control policies by using a native Dataverse solution that interfaces directly with your Supply Chain Management instance. Supply Chain Management then enforces compliance with international trade regulations by consulting your export control policies in real time. Because the architecture is based on Dataverse, many other systems that you use can also access your export control rules through the hundreds of connectors that are available for Dataverse. You can also use the rich features of Microsoft Power Platform, such as the [Microsoft Power Fx](/power-platform/power-fx/overview) language, to extend the solution. In this way, your export control administrator can support complex scenarios by using formulas that are similar to the formulas in Excel.
+Dynamics 365 Supply Chain Management lets you manage, track, and verify compliance with export control restrictions before you confirm, pick, pack, ship, and invoice sales orders. It can also check sales quotations. You manage your export control policies by using a native Dataverse solution that interfaces directly with your Supply Chain Management instance. Supply Chain Management then enforces compliance with international trade regulations by consulting your export control policies in real time. Because the architecture is based on Dataverse, many other systems that you use can also access your export control rules through the hundreds of connectors that are available for Dataverse. You can also use the rich features of Microsoft Power Platform, such as the [Microsoft Power Fx](/power-platform/power-fx/overview) language, to extend the solution. In this way, your export control administrator can support complex scenarios by using formulas that are similar to the formulas in Excel.
 
-The advanced export control solution provides the foundation for managing, tracking, and verifying export compliance. You can use it both with and without Supply Chain Management. The solution implements five primary concepts:
+The advanced export management solution provides the foundation for managing, tracking, and verifying export compliance. You can use it both with and without Supply Chain Management. The solution implements five primary concepts:
 
 - Jurisdictions
 - Codes and categories
@@ -55,7 +53,7 @@ Because ECCNs and control categories are defined by export control jurisdictions
 
 Each export control jurisdiction defines a set of restrictions under which export actions should be disallowed unless an exception exists. A restriction is a set of ECCNs and/or control categories, together with a country/region, transaction purpose, and other aspects.
 
-Often, restrictions are defined in terms of a commerce country/region chart, as in [this downloadable example from the US EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file). In the example in the following illustration, a rule for the US EAR restrictions is defined based on the country/region chart. According to this rule, if an order contains any items that have an ECCN in the *MT* or *NS* control category, the system won't allow it to be sold to Angola. If a user tries to confirm an order that contains one of these items for shipment to Angola, they receive the following error message: "Action blocked by US EAR restrictions."
+Often, restrictions are defined in terms of a commerce country/region chart, as in [this downloadable example from the US EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file). In the example in the following illustration, a rule for the US EAR restrictions is defined based on the country/region chart. According to this rule, if an order or quotation contains any items that have an ECCN in the *MT* or *NS* control category, the system won't allow it to be sold to Angola. If a user tries to confirm an order or quotation that contains one of these items for shipment to Angola, they receive the following error message: "Action blocked by US EAR restrictions."
 
 [<img src="media/export-control-restriction.png" alt="Example rule for the US EAR restrictions." title="Example rule for the US EAR restrictions" width="720" />](media/export-control-restriction.png#lightbox)
 
@@ -73,5 +71,5 @@ Authorities issue licenses to give a company specific permission to trade in res
 
 ## Next steps
 
-- [Enable and configure advanced export control](export-control-configure.md)
-- [Work with advanced export control for products and sales orders](export-control-use.md)
+- [Enable and configure advanced export management](export-control-configure.md)
+- [Work with advanced export management for products, sales orders, and sales quotations](export-control-use.md)

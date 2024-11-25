@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Generate earnings for workers
-description: This article describes the various ways that you can generate earnings for workers.
+description: Learn about the various ways that you can generate earnings for workers, including outlines on how to manually enter earnings and generating premium earnings.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 220864
-ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
 ---
 
 # Generate earnings for workers

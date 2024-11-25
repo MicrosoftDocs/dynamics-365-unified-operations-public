@@ -1,12 +1,12 @@
 ---
 title: Entrance code to tax integration
-description: This article introduces the entry point code to tax integration.
+description: Learn about the entry point code to tax integration, including overviews on finding code points and implementing the entrance of tax integration.
 author: Qiuchen-Ren
 ms.author: qire
-ms.reviewer: kfend
 ms.topic: conceptual
 ms.date: 04/12/2022
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Entrance code to tax integration 

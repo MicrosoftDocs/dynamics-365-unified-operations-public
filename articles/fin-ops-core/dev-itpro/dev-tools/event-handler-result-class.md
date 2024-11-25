@@ -1,13 +1,13 @@
 ---
 title: EventHandlerResult classes in request or response scenarios
-description: This article describes how to use EventHandlerResult classes with delegate methods.
+description: Learn about how to use EventHandlerResult classes with delegate methods, including overviews of various interfaces and scenarios.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c

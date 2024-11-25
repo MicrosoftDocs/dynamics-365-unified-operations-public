@@ -1,18 +1,16 @@
 ---
 title: Parse incoming documents
-description: This article provides information about how to set up Electronic reporting formats that can be used to parse incoming documents.
+description: Learn about how to set up Electronic reporting formats that can be used to parse incoming documents in multiple file formats.
 author: kfend
-ms.date: 11/24/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 11/24/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-11-10
-ms.dyn365.ops.version: 7.3
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
+ms.dyn365.ops.version: 7.3
 ---
 
 

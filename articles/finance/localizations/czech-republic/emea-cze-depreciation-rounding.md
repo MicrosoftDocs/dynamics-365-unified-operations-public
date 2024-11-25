@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Depreciation rounding
-description: This article explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
+description: Learn how you can round fixed asset depreciation amounts up or down to the nearest whole number based on the value entered in the round off depreciation field. 
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265204
 ms.search.region: Czech Republic
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Depreciation rounding

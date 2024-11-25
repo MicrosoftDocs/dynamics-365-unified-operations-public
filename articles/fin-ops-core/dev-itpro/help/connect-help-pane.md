@@ -1,15 +1,13 @@
 ---
 title: Connect a custom Help website to the Help pane
-description: You can extend the in-product Help pane with custom Help content.
+description: Learn about how you can extend the in-product Help pane with custom Help content, including an outline on how to customize language fallback.
 author: brentholtorf
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: bholtorf
+ms.topic: article
+ms.date: 07/17/2024
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
@@ -30,6 +28,8 @@ The process for connecting your [custom Help website](custom-help-overview.md#cu
 > The procedures that follow require the development tools for finance and operations apps in Visual Studio. For more information, see [Development tools in Visual Studio](../dev-tools/development-tools-overview.md).
 
 ## <a name="extendhelppane"></a>Extend the Help pane and assign the custom Help indexes to languages
+
+[!INCLUDE [custom-help-toolkit-tools](../includes/custom-help-toolkit-tools.md)]
 
 The **Help Pane extension** folder contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
 
@@ -142,6 +142,7 @@ If the client is set to the **de-AT** locale, but no results are found in the Ge
 ## See also
 
 [Language and locale descriptors in the product and in Help](language-locale.md)  
+[Custom Help overview](custom-help-overview.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
 

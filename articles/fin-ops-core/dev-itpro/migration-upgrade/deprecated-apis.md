@@ -1,15 +1,13 @@
 ---
 title: Deprecated APIs
-description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
+description: Access the list of deprecated APIs and migration guidance for some of the deprecated APIs, including the reason for deprecation for various objects.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d

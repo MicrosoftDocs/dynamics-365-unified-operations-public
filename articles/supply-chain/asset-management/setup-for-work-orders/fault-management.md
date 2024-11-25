@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Fault management
-description: This article explains fault management in Asset Management.
-author: johanhoffmann
-ms.date: 08/13/2019
+description: Learn about fault management in Asset Management, including step-by-step processes for creating fault symptoms, fault areas, and fault types.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 08/13/2019
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner, EntAssetFaultCopyFromObjectType, EntAssetFaultRemedy, EntAssetObjectFaultRelationRequestInfoPart, EntAssetObjectFaultRelationWorkOrderInfoPart, EntAssetFaultCreateCombinations, EntAssetObjectFaultSymptom, EntAssetObjectFaultSymptomListPage, EntAssetFaultType, EntAssetFaultSymptom, EntAssetFaultCause 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2018-08-30
-ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Fault management

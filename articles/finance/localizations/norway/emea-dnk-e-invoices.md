@@ -1,18 +1,16 @@
 ---
 title: Customer electronic invoices in Denmark
-description: This article explains how to set up and process electronic invoices in Denmark.
-author: mrolecki
-ms.date: 12/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up and process electronic invoices in Denmark, including prerequisites and anoutline on importing electronic reporting configurations.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/06/2024
+ms.reviewer: johnmichalak
 ms.search.region: Norway
-ms.author: mrolecki
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.21
-ms.search.form: 
 ---
 
 # Customer electronic invoices in Denmark
@@ -37,7 +35,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > Any other required configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Reference the imported ER format configurations
 
@@ -86,17 +84,17 @@ Follow these steps to configure methods of payment.
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
+4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
 
 ### Configure sales tax codes
 
 When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
 
-The top level of the hierarchy is **Tax Scheme**. For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). 
+The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
 
 The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 
-For some taxes, an additional attribute, **Tax Type Code**, must be also defined.
+For some taxes, an additional attribute, **Tax Type Code**, must also be defined.
 
 You can associate tax schemes, tax categories, and tax type codes with sales tax codes by using application-specific parameters. For information about how to configure application-specific parameters, see the next section.
 

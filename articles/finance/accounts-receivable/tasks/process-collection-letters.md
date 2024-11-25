@@ -1,29 +1,19 @@
 --- 
-# required metadata 
- 
 title: Process collection letters
-description: This article shows how to create, print, and post collection letters. 
-author: ShivamPandey-msft
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustPosting, CustCollectionLetterNote   
+description: Learn about how to create, print, and post collection letters, including outlines on setting up collection letter sequences on posting profiles. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 05/13/2024
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
-ms.search.validFrom: 2018-12-01 
+ms.search.validFrom: 2018-12-01
+ms.search.form: CustPosting, CustCollectionLetterNote  
 ms.dyn365.ops.version: 8.1.3
-
 ---
+
 # Process collection letters
 
 [!include [banner](../../includes/banner.md)]

@@ -1,13 +1,13 @@
 ---
 title: Get evaluation copies
-description: A public preview is available.
-author: gianugo
-ms.date: 11/02/2020
+description: Learn about getting evaluation copies and how you can sign up and deploy cloud instances of the latest builds. Access additional resources.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 11/02/2020
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

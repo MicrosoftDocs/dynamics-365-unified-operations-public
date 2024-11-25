@@ -1,35 +1,22 @@
 ---
-# required metadata
-
 title: Configuration data projects
-description: This article describes configuration data projects and configuration data templates.
+description: Learn about configuration data projects and configuration data templates, including a data management workspace overview.
 author: rcarlson
-ms.date: 09/29/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 09/29/2017
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-07-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 7
-
 ---
+
 # Configuration data projects
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Configuration data projects are used to manage the movement of company configuration data between instances of your application. They are intended to support the following scenarios:
 

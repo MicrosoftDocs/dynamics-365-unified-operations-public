@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
+description: Learn about new or changed features in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: sericks007
-ms.date: 10/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ---
@@ -17,8 +17,6 @@ ms.dyn365.ops.version: 7.3
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 

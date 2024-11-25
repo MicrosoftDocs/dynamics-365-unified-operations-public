@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create account structures
-description: This procedure walks through creating an account structure. 
+description: Learn about the process of creating account structures, including a step-by-step process using the demo data company USMF.
 author: aprilolson
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/01/2024
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create account structures
 
 [!include [banner](../../includes/banner.md)]
@@ -31,8 +22,8 @@ This procedure walks through creating an account structure. The steps use demo d
 
 1. Go to **General ledger > Chart of accounts > Structures > Configure account structures**.
 2. On the **Action pane**, click **New** to open the drop dialog.
-3. In the **Account structure** field, type a name to describe the purpose of the account structure.
-4. In the **Description** field, type a description to specify the purpose of the account structure.
+3. In the **Account structure** field, enter a name to describe the purpose of the account structure.
+4. In the **Description** field, enter a description to specify the purpose of the account structure.
 5. Click **Create**.
 6. In the **Segments and allowed values**, click **Add segment**.
 7. In the dimensions list, select the dimension to add to the account structure.

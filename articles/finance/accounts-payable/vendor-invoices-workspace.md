@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Vendor invoice automation workspace
-description: This article explains how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI.
-author: abruer
-ms.date: 02/14/2022
+description: Learn about how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
+ms.date: 02/14/2022
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2020-09-21
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.14
 ---
 

@@ -1,28 +1,18 @@
 --- 
-# required metadata 
- 
 title: Set up a day-based fiscal calendar (India)
-description: This article provides information about how to create a day-based fiscal calendar for one fiscal year. 
+description: Learn about how to create a day-based fiscal calendar for one fiscal year, including a step-by-step process using the INMF demo data company. 
 author: AdamTrukawka
-ms.date: 10/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: India
-# ms.search.industry: 
 ms.author: atrukawk
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: India
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up a day-based fiscal calendar (India)
 
 [!include [banner](../../includes/banner.md)]

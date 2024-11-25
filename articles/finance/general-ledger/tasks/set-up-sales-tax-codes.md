@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up sales tax codes
-description: This article explains how to set up sales tax codes in Dynamics 365 Finance. 
+description: Learn how to set up sales tax codes in Dynamics 365 Finance, including a step-by-step process using the USMF demo company.
 author: twheeloc
-ms.date: 09/27/2021
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxTable, TaxData   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 04/05/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxTable, TaxData
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up sales tax codes
 
 [!include [banner](../../includes/banner.md)]
@@ -31,7 +22,7 @@ This article explains how to set up sales tax codes. Sales tax codes are created
 
 This task uses the USMF demo company.
 
-1. Go to **Navigation pane > Tax > Indirect taxes > Sales tax > Sales tax codes**.
+1. Go to **Tax > Indirect taxes > Sales tax > Sales tax codes**.
 2. Select **New**.
 3. In the **Sales tax code** field, type a value.
 4. In the **Name** field, type a value.
@@ -40,9 +31,9 @@ This task uses the USMF demo company.
 7. Expand the **Calculation** FastTab. This includes multiple fields that control how sales tax amounts will be calculated. Fill these fields out as needed.  
 8. On the **Action Pane** at the top of the interface, select **Sales tax code**.
 9. Select **Values**.
-10. Enter the value for this tax code in the **value** column.
+10. Enter the value for this tax code in the **Value** column.
 
-    On the **Calculation** FastTab, in the **Origin** field, if **Amount per unit** is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.  If the tax code is not a unit-based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.     
+ On the **Calculation** FastTab, in the **Origin** field, if **Amount per unit** is selected, the value is multiplied by the quantity on the transaction to calculate the sales tax amount. If the tax code isn't a unit-based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.     
 
 11. Select **Save**.
 12. Close the page.

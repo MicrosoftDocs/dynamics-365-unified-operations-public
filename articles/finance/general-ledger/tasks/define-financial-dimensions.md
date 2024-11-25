@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Define financial dimensions
-description: This procedure shows how to add an entity backed financial dimension and a custom financial dimension. 
-author: aprilolson
-ms.date: 05/23/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DimensionDetails, DimensionAttributeTableExtensionActivate, DimensionValueDetails   
-audience: Application User 
-# ms.devlang:  
+description: Learn how to add an entity backed financial dimension, including a step-by-step process for creating an entity backed financial dimension.
+author: JodiChristiansen
+ms.author: jchrist
+ms.topic: how-to
+ms.date: 06/17/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: DimensionDetails, DimensionAttributeTableExtensionActivate, DimensionValueDetails
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Define financial dimensions
 
 [!include [banner](../../includes/banner.md)]

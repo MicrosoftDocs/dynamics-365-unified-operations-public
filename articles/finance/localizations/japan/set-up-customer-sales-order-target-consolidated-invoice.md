@@ -1,19 +1,18 @@
 ---
 title: Set up a customer and sales order to be target of consolidated invoice
-description: In Japan, the customers usually use consolidated invoices for all transactions.
+description: Learn about setting up customers and sales order to be targets of consolidated invoices, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CustTable, SalesTableListPage, SalesTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Set up a customer and sales order to be target of consolidated invoice
 
 [!include [banner](../../includes/banner.md)]

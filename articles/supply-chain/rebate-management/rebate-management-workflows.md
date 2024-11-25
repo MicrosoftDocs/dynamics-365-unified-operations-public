@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Rebate management deal workflows
-description: This article explains how to set up a Rebate management deal workflow to approve and activate deals.
+description: Learn how to set up a Rebate management deal workflow to approve and activate deals with an outline on creating and managing Rebate management deal workflows.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WorkflowTableListPageRnr
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.topic: how-to
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WorkflowTableListPageRnr
 ---
 
 # Rebate management deal workflows
@@ -46,7 +32,7 @@ To work with your Rebate management deal workflows, go to **Rebate management \>
 
 To activate a deal through a workflow, open the deal (for example, on the **All rebate management deals** page). Then, on the Action Pane, select **Workflow \> Submit**. After the new deal has been processed and approved through the workflow, it will be active and ready to use.
 
-After a deal has been activated, you can't change most of its setup. If you must change an active deal, first inactivate it, and then create a new deal. If the new deal will resemble the old deal, you can create it by copying the old deal.
+After a deal has been activated, you can't change most of its setup. If you must change an active deal, first inactivate it, and then create a new deal. If the new deal should resemble the old deal, you can create it by copying the old deal.
 
 You can change the following settings for a deal after it has been activated:
 
@@ -60,4 +46,3 @@ You can change the following settings for a deal after it has been activated:
 - To date
 
 In addition, rebate lines can be removed.
-

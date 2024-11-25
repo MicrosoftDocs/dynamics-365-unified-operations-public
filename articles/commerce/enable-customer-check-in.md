@@ -2,19 +2,15 @@
 title: Enable customer check-in notifications in point of sale (POS)
 description: This article describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: bicyclingfool
-ms.date: 12/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: stuharg
+ms.author: anvenkat
 ms.search.validFrom: 2021-04-01
-ms.dyn365.ops.version: 10.0.19
 ms.custom: 
-ms.assetid: 
-ROBOTS: 
+  - bap-template 
 ---
 
 # Enable customer check-in notifications in point of sale (POS)

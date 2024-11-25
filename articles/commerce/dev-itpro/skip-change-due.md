@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Skip "change due" dialog box in POS
 description: This article describes how to skip the "Change due" dialog box in the point of sale (POS) when a transaction is paid in full and there is no change due.
 author: BrianShook
 ms.date: 10/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.topic: how-to
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
+ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 
+  - bap-template
 ---
 
 # Skip "change due" dialog box in POS

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Credit subscription transactions  
-description: This article shows how to credit subscription transactions.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to credit subscription transactions, including a step-by-step process for creditting subscription transactions.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMASubscriptionTable
 ---
 
 # Credit subscription transactions 
@@ -51,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If the **Reverse accruals on crediting** field in the **Service management parameters** form is set to **Manual**, you have to reverse each accrued revenue transaction individually before you create a credit note proposal for the transaction.
 
-## See also
+## Related information
 
 [Invoice subscription transactions](invoice-subscription-transactions.md)
 

@@ -2,18 +2,16 @@
 title: Process loyalty reward point adjustments
 description: This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points.
 author: josaw1
-ms.date: 08/29/2018
+ms.date: 08/02/2024
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.search.industry: Retail
 ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
+ms.custom: 
+  - bap-template
 ---
 # Process loyalty reward point adjustments
 

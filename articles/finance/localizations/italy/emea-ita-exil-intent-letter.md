@@ -1,18 +1,16 @@
 ---
 title: Intent letters - Invoicing usual exporters
-description: This article provides information about how to set up intent letters and how to use them when you issue invoices.
+description: Learn about how to set up intent letters and how to use them when you issue invoices, including a process for setting up accounts receivable parameters.
 author: mrolecki
-ms.date: 12/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 12/28/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2020-01-01
-ms.dyn365.ops.version: 10.0.9
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.9
 ---
 
 # Intent letters - Invoicing of usual exporters

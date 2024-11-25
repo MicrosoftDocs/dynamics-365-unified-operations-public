@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Alerts as business events
-description: This article describes alerts as business events.
+description: Learn about alerts as business events through understanding the two kinds of alerts that can be configured by users.
 author: Sunil-Garg
-ms.date: 11/12/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 11/12/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: Platform update 25
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 

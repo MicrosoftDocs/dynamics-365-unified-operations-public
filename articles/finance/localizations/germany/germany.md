@@ -1,15 +1,14 @@
 ---
 title: Germany overview
-description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
+description: Access an overview of Dynamics 365 Finance functionality that is specific to Germany with links to resources about audit files, depreciation, and VAT declarations.
 author: AdamTrukawka
-ms.date: 05/09/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Germany
 ms.author: atrukawk
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Germany
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -58,7 +57,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 -   [Intrastat](emea-deu-intrastat.md)
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)
+<!-- - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html) -->
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization and regulatory features](../../../fin-ops-core/fin-ops/lcs/country-region.md?toc=%2ffin-and-ops%2ftoc.json)

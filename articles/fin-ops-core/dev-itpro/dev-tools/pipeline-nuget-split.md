@@ -1,16 +1,15 @@
 ---
 title: Update the hosted Azure Pipeline for new NuGet packages
-description: This article explains how to update an Azure pipeline to use new NuGet packages.
-author: gianugo
-ms.date: 03/04/2021
+description: Learn about how to update an Azure pipeline to use new NuGet packages, including outlines on how to add pipeline variables and updating build solutionss steps.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 03/04/2021
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Update the hosted Azure Pipeline for new NuGet packages

@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Product-related translations FAQ
-description: This article describes how to manage translations for products, product dimension values, and product attributes. 
-author: t-benebo
-ms.date: 08/06/2020
+description: Learn how to manage translations for products, product dimension values, and product attributes with outlines on translating data and information. 
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 08/06/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 201853
+ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
-ms.search.region: global
-ms.search.industry: Product information
-ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Product-related translations FAQ

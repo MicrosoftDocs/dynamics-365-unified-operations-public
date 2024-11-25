@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Bonus depreciation
-description: This article provides an overview of the bonus depreciation functionality.
+description: Learn about the bonus depreciation functionality, which you can calculate using the proposal process or creating manual bonus depreciation transactions.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetBonus
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 3621
-ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetBonus
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
 ---
 
 # Bonus depreciation

@@ -1,13 +1,13 @@
 ---
 title: View party data
-description: This article explains how to view party data by using the Party page.
+description: Learn about how to view party data by using the Party page, including a list of how to add the Party page to your app.
 author: RamaKrishnamoorthy 
-ms.date: 11/23/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: tfehr
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 11/23/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-11-16
 ---
 

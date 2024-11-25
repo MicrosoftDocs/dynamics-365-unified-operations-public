@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Set different dimensions for packing and storage
-description: This article shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
+description: Learn how to specify which process (packing, storage, or nested packing) each specified dimension is used for with an outline of an example scenario.
 author: Mirzaab
-ms.date: 01/28/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-01-28
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 ---
 
 # Set different dimensions for packing and storage
@@ -42,7 +28,7 @@ This article provides a scenario that illustrates how to use this feature.
 
 ## Turn on the packaging product dimensions feature
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Packaging product dimensions* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Packaging product dimensions* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Example scenario
 
@@ -101,11 +87,11 @@ Go to **Warehouse management \> Setup \> Containers \> Container build templates
 
 ### Run the scenario
 
-After you have prepared your system as described in the previous section, you are ready to run the scenario as described in the next section.
+After you have prepared your system as described in the previous section, you're ready to run the scenario as described in the next section.
 
 #### Create a sales order and create a shipment
 
-In this process you will create a shipment based on the item *packing* dimensions, for which the height is less than 3.
+In this process you'll create a shipment based on the item *packing* dimensions, for which the height is less than 3.
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New**.
@@ -131,7 +117,6 @@ In this process you will create a shipment based on the item *packing* dimension
 
 1. Open the mobile device, sign in to warehouse 63 and go to **Inventory \> Adjust In**.
 1. Enter **Loc** = *SHORT-01*. Make a new license plate with **Item** = *A0001* and **Quantity** = *1 pcs*.
-1. Select **OK**. You will receive the error "Location SHORT-01 failed because item A0001 does not fit in location's specified dimensions." This is because the *Storage* type dimensions of the product are larger than the dimensions specified on the location profile.
-
+1. Select **OK**. You'll receive the error "Location SHORT-01 failed because item A0001 doesn't fit in location's specified dimensions." This is because the *Storage* type dimensions of the product are larger than the dimensions specified on the location profile.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

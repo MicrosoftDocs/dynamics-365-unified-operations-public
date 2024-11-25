@@ -1,17 +1,15 @@
 ---
 title: Scope of the Brazilian localization
-description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil.
+description: Learn about the strategy and scope for tax, finance, and accounting laws and regulations in Brazil, including definitions and an outline on localization strategy.
 author: AdamTrukawka
-ms.date: 10/16/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 08/20/2024
+ms.reviewer: johnmichalak
+audience: Application User
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: 8
+ms.custom: 
+  - bap-template
 ---
 
 # Scope of the Brazilian localization
@@ -273,10 +271,6 @@ The following sections list the features that are specific to Brazil.
     - Day book
     - Analytical ledger
     - Trial balance 
-
-### Commerce
-
-For up-to-date information on the scope of Commerce localization for Brazil, see [Availability of Commerce localization features for Brazil](../../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil).
 
 ### Project accounting 
 

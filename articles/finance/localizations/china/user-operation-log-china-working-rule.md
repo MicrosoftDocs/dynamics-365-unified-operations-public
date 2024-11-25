@@ -1,19 +1,18 @@
 ---
 title: CN-00016 User operation log by China working rule
-description: This procedure demonstrates how to generate a user operation log.
+description: Learn how to generate a user operation log, including processes for setting up database logs and creating a new bank account for demonstration purposes.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: SysDatabaseLogSetup, SysDatabaseLogWizard, BankAccountTable, ComplianceUserOperationLogConfig_CN
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # CN-00016 User operation log by China working rule
 
 [!include [banner](../../includes/banner.md)]

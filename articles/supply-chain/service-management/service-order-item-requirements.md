@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Service order item requirements   
-description: This article describes service order item requirements.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn about service order item requirements, including a step-by-step process for viewing item requirements from a service order.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProjSalesItemReq
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: ProjSalesItemReq
 ---
 
 # Service order item requirements
@@ -58,10 +42,6 @@ If an item requirement is created on a service order, you cannot delete the serv
 1. Open the project that has the service order in which an item requirement is created.
 1. In the **Projects** form, in the right pane, select **Item requirements**. The **Item requirements** form lists the item requirements that are associated with the selected project.
 1. Select the item requirement to delete, and then select **Delete**.
-
-## See also
-
-[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
 
 

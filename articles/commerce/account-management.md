@@ -1,20 +1,16 @@
 ---
 title: Account management pages and modules
 description: This article covers account management pages and modules in Microsoft Dynamics 365 Commerce.
-author: v-chgri
-ms.date: 04/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+author: anupamar-ms
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Account management pages and modules

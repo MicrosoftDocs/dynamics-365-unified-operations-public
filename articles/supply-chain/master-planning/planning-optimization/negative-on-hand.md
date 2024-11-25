@@ -1,31 +1,15 @@
 ---
-# required metadata
-
 title: Planning with negative on-hand quantities
-description: This article explains how negative on-hand is handled. 
+description: Learn how negative on-hand is handled, including a step-by-step process describing how functionality works and various examples. 
 author: t-benebo
-ms.date: 07/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2020-02-18
-ms.dyn365.ops.version: AX 10.0.5
-
+ms.topic: article
+ms.date: 07/22/2021
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form: ReqCreatePlanWorkspace
 ---
+
 # Planning with negative on-hand quantities
 
 [!include [banner](../../includes/banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: Info codes and info code groups
-description: This article provides an overview about info codes, info code groups, and how to use them.
+description: This article provides an overview on info codes and info code groups and how to use them in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 05/28/2024
+ms.topic: overview
 audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: josaw
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
-ms.search.industry: Retail
 ms.search.form: RetailInfocodeTable
+ms.custom: 
+  - bap-template
 ---
 
 # Info codes and info code groups
 
 [!include [banner](includes/banner.md)]
 
-This article provides an overview about info codes, info code groups, and how to use them.
+This article provides an overview on info codes and info code groups and how to use them in Microsoft Dynamics 365 Commerce.
 
 Info codes provide a way for you to capture data at a point-of-sale (POS) register. You can use info codes to prompt the cashier to enter information during various actions at the POS, such as item sales, item returns, or selecting customers. Cashiers can select input from a list or enter it as a code, number, date, or text. You can assign info codes to predefined store actions, retail items, payment methods, customers, or specific point-of-sale activities. You can use info codes to do the following:
 

@@ -1,15 +1,14 @@
 ---
 title: Purchase a taxable item from an unregistered vendor (India)
-description: This article walks you through creating a purchase order that includes a taxable item for an unregistered vendor.
-author: EricWangChen
+description: Learn about creating a purchase order that includes a taxable item for an unregistered vendor, including a step-by-step process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 03/20/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: India
-ms.author: wangchen
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

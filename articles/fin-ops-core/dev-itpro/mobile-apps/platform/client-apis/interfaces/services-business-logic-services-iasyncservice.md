@@ -1,12 +1,13 @@
 ---
 title: AsyncService type
-description: Provides ability to perform async operations from business logic code.
+description: Learn about the AsyncService type, which provides ability to perform async operations from business logic code.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # AsyncService type

@@ -1,19 +1,17 @@
 ---
 title: Deferred sales tax calculations
-description: This article describes how to set up deferred sales tax calculations and VAT posting for Hungary.
-author: AdamTrukawka
-ms.date: 09/04/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up deferred sales tax calculations and VAT posting for Hungary, including outlines on setting up deferred VAT posting and ledger accounts.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Hungary
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 10.0.0
-ms.custom: 264684
 ms.search.form: AssetParameters
+ms.dyn365.ops.version: 10.0.0
 ---
 
 # Deferred sales tax calculations

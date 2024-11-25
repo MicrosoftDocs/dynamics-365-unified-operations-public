@@ -1,12 +1,12 @@
 ---
 title: Create customer and vendor records with an address in Chile
-description: This topic explains how to set up records for customers and vendors that are located in Chile.
+description: Learn how to set up records for customers and vendors that are located in Chile, including prerequisites and an outline on customer configuration.
 author: Fhernandez0088
-ms.date: 09/21/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 09/21/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Create customer and vendor records with an address in Chile

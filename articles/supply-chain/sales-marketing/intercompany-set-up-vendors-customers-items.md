@@ -1,16 +1,12 @@
 ---
 title: Set up vendors, customers, and items for intercompany trade
-description: This article explains how to set up vendors, customers, and items for intercompany trade
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn how to set up vendors, customers, and items for intercompany trade, including a step-by-step process for associating vendors and customers.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: CustTable, VendTable, EcoResProductListPage
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: CustTable, VendTable, EcoResProductListPage
 ---
 
 # Set up vendors, customers, and items for intercompany trade

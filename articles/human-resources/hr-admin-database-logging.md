@@ -7,9 +7,6 @@ description: You can track changes to tables and fields in Dynamics 365 Human Re
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -18,20 +15,16 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jaredha
+ms.author: ajitchandran
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Configure and manage database logging
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

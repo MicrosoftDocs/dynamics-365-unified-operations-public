@@ -4,15 +4,16 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 01/30/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
-ms.author: jashanno
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure, install, and activate Modern POS (MPOS)
@@ -34,13 +35,13 @@ This article describes how to configure, download, and install Modern point of s
 The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Headquarters. Here are the main technical functions of this feature:
 
 - Tie a physical device to a business entity (register).
-- Provide enhanced security through Microsoft Azure Active Directory (Azure AD) and a device token/ID.
+- Provide enhanced security through Microsoft Microsoft Entra and a device token/ID.
 - Stop unauthorized remote use of Modern POS. (In other words, deactivate a device remotely.)
 - Initialize settings for easy Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.
 - Comply with payment card industry (PCI) standards, and report on device information from Headquarters.
 
 > [!NOTE]
-> If you are installing Modern POS for use with an on-premises environment, Modern POS does not use Azure Active Directory credentials for device activation.
+> If you are installing Modern POS for use with an on-premises environment, Modern POS does not use Microsoft Entra credentials for device activation.
 
 ## Setup
 
@@ -62,7 +63,7 @@ Before you start the steps that are outlined in this article, follow these steps
 5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
     > [!NOTE]
-    > When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required.
+    > When using Microsoft Entra authentication, POS offline will not function, as online connectivity is always required.
 
 ### Download the Modern POS installer
 
@@ -79,14 +80,14 @@ Before you start the steps that are outlined in this article, follow these steps
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
     - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
 
-5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
+5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 6. Select **Download**, and then select **Retail Modern POS**. Note the following:
 
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
     - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is no longer downloaded. Install SQL Server (and associated prerequisite features, such as Full-text search) and attempt the installer again.
 
-7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
-8. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on your browser.)
+7. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
+8. After the setup installer has been saved, on the notification bar, select **Run**. (This step might differ, depending on your browser.)
 
 ### Before running the Modern POS installer
 
@@ -101,7 +102,7 @@ Before you start the steps that are outlined in this article, follow these steps
 - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 > [!NOTE]
-> When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
+> When using Microsoft Entra authentication, POS offline will not function as online connectivity is always required.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
@@ -182,8 +183,8 @@ You must complete this procedure before you activate Modern POS for a new worker
     To return to the **Worker details** page, select the **Close** button (**X**) on the right side of the Action Pane.
 
 5. On the Action Pane, select **Commerce**, and then select **Associate existing identity**.
-6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Azure AD account has been created, select that account instead.)
-7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in Headquarters is your administrator Azure AD account.
+6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Microsoft Entra account has been created, select that account instead.)
+7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in Headquarters is your administrator Microsoft Entra account.
 8. On the Action Pane, select **Save**, and then refresh the page. The **External identity** section should now be updated with the new information.
 
     Note that the **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
@@ -200,7 +201,7 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 ## Activate a device
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to a Microsoft Entra token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 
 1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.
@@ -330,7 +331,7 @@ The device should now be activated and ready to use.
 
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
-- When using Modern POS on an Android device, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
+- When using Modern POS on an Android device, the device activation and Microsoft Entra ID-based POS sign-in open the Microsoft Entra sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
   
     **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later, and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android device.
 

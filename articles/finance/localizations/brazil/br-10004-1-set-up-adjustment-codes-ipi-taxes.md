@@ -1,18 +1,18 @@
 ---
 title: Set up adjustment codes for IPI taxes (Brazil)
-description: Use this procedure to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes.
+description: Learn how to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes, including a step-by-step process.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up adjustment codes for IPI taxes (Brazil)
 
 [!include [banner](../../includes/banner.md)]

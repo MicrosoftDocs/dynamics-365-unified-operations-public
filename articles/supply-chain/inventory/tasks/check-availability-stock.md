@@ -1,65 +1,45 @@
 --- 
-# required metadata 
- 
 title: Check the availability of stock
-description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
-author: yufeihuang
-ms.date: 06/25/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
-audience: Application User 
-# ms.devlang:  
+description: Learn how to check on-hand and physical on-hand inventory for a specific item number, including a step-by-step process for checking on-hand inventory items.
+author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: kamaybac
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 ---
+
 # Check the availability of stock
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. It also shows you how to get supply information related to an item. Physical on-hand inventory is the on-hand inventory that's available – that is, it's purchased, received and registered. On-hand inventory includes the available on-hand inventory, but also the inventory that's been ordered and is expected, but not yet received or registered. You can walk through this procedure in demo data company USMF, or using your own data. If you are using USMF you can use the example values that are shown. These tasks would typically be carried out by a warehouse worker.
+This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. It also shows you how to get supply information related to an item. Physical on-hand inventory is the on-hand inventory that's available (purchased, received, and registered). On-hand inventory includes the available on-hand inventory, but also the inventory that's been ordered and is expected, but not yet received or registered. 
 
+If you're using USMF [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md) you can use the example values that are shown in this article.
 
 ## Check on-hand inventory for an item
-1. Go to **Inventory management > Inquiries and reports > On-hand inventory**.
-2. Select the **Item number** row. To query the on-hand inventory by item number, select the row where the Table is set to **On-hand inventory** and Field is set to **Item** number.
-3. In the **Criteria** field, select the item you want to query. If you're using the USMF demo data company, you can select 'M9201'.  
-4. Click **OK**.
-5. On the **Action Pane**, click **Dimensions**. The **Dimensions** tab allows you to select how much detail you want to see about your on-hand inventory. If you need data related to reservation, you must display all inventory dimensions for the items that use advanced warehouse (WMS) processes.
-6. Click **OK**.
-7. On the **Action Pane**, click **Related information**. If you don't see this option, you may need to click on the Ellipsis button (…) to see additional Action Pane options.
-8. Click **Supply overview**. The **Supply overview** tab provides supply information for a specific item, such as the quantity on-hand, the lead time, and vendor information.  
-9. Expand the **On-hand** section.
-10. Expand the **Vendors** section.
-11. Close the page.
-12. Close the page.
+
+1. Go to **Inventory management** \> **Inquiries and reports** \> **On-hand list**.
+1. On the **Filters** pane, enter search criteria to find the products and/or locations that you want to look up. For example, if you're using the USMF demo data company, you could set **Item number** to *M9201*.
+1. On the **Filters** pane, select **Apply**.
+1. On-hand inventory is displayed for your selected criteria.
+    - If you'd like to change the set of columns shown in the list, select **Dimensions** on the Action Pane.
+    - To see more information about a listed item, select the item and then choose the type of information you're looking for on the Action Pane.
 
 ## Check physical on-hand inventory
-1. Go to **Warehouse management > Enquiries and reports > Physical on-hand inventory**.
-2. In the **Item number** field, type a value. You can use the Site and Warehouse fields to filter the list of items. 
-3. Refresh the page.
-4. On the **Action Pane**, click **Display Dimensions**. The Dimensions Display tab allows you to select how much detail you want to see about your on-hand inventory.
-5. Click **OK**.
-6. Close the page.
+
+1. Go to **Warehouse management** \> **Inquiries and reports** \> **Physical on-hand inventory**.
+1. In the **Item number** field, specify the item you're looking for. You can also use the **Site** and **Warehouse** fields to filter the list of items.
+1. Select the **Refresh** button at the right side of the Action Pane.
+1. Physical on-hand inventory is displayed. If you'd like to change the set of columns shown in the list, select  **Display Dimensions** on the Action Pane.
 
 ## Check on-hand inventory by location
-1. Go to **Warehouse management > Enquiries and reports > On hand by location**.
-2. In the **Warehouse** field, type a value. If you're using the USMF demo data company, you can use '51'.  
-3. Refresh the page.
-4. Click **Display Dimensions**.
-5. Click **OK**.
-6. Close the page.
 
-
+1. Go to **Warehouse management** \> **Inquiries and reports** \> **On-hand by location**.
+1. Use the fields at the top of the page to define the site, warehouse, and/or location you want to look up. For example, if you're using the USMF demo data company, you could set **Warehouse** to *51*.
+1. Select the **Refresh** button at the right side of the Action Pane.
+1. Select a row in the **Locations** section to see the on-hand inventory for that location in the **On hand** section. To learn more about an item listed in the **On hand** section, select the item and then choose the type of information you're looking for from the **On hand** section toolbar.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

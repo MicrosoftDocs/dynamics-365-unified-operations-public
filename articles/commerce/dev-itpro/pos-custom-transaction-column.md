@@ -2,16 +2,15 @@
 title: Add custom columns to a point of sale (POS) transaction grid
 description: This article explains how to add a new custom column to a POS transaction page using the screen layout designer.
 author: josaw1
-ms.date: 02/01/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2017-01-27
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 # Add custom columns to a point of sale (POS) transaction grid
@@ -27,10 +26,10 @@ This article explains how to add a new custom column to a POS transaction page u
 1. Sign in to Dynamics 365 Commerce.
 2. Navigate to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
 3. Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
-4. Follow the instructions if prompted to install and enter the Azure Active Directory (AAD) credentials to launch the designer.
+4. Follow the instructions if prompted to install and enter the Microsoft Entra (Microsoft Entra ID) credentials to launch the designer.
 5. Select **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.
 6. If prompted, click **Open** and follow the instruction to install the designer tool.
-7. After installing, enter your AAD credentials to launch the designer.
+7. After installing, enter your Microsoft Entra credentials to launch the designer.
 8. In the designer, right-click the transaction grid (receipt grid) and select **Customize**.
 9. In the **Customization – Receipt** window, select the **lines** in the pivot panel drop-down menu.
 

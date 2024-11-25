@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Configure product filters for warehouse transactions
-description: This article describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchase from a particular vendor.
+description: Learnhow to configure product filters and filter codes to categorize inventory items in a warehouse, including instructions for various prerequisites.
 author: Mirzaab
-ms.date: 01/04/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-01-04
-ms.dyn365.ops.version: 10.0.16
+ms.topic: article
+ms.date: 01/04/2021
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
 ---
 
 # Configure product filters for warehouse transactions
@@ -52,7 +38,7 @@ Product filters provide up to 10 **Filter title** characteristics, which are enu
 
     ![Setting up a product filter.](media/Product_Filters10.png "Setting up a product filter")
 
-1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. For more information, see the [Setup vendor filter codes](#vendor-product-filters) section later in this article.
+1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. Learn more in the [Setup vendor filter codes](#vendor-product-filters) section later in this article.
 
     ![Set of product filters.](media/Product_Filters.png "Set of product filters")
 
@@ -162,7 +148,7 @@ To set up vendor filter codes, follow these steps.
 > [!NOTE]
 > The setup of vendor product filters applies to released products where warehouse management processes (WMS) are enabled for the associated storage dimension group. The filter codes are used to determine whether the system will allow users to purchase a given item from a given vendor when they create purchase order lines. Microsoft Dynamics 365 Supply Chain Management has two methods for handling vendor approval. If one or more released products exist where the **Approved vendor check method** field is set to *Warning only* or *Not allowed*, both vendor approval methods could be enabled for those items. This situation might cause issues when users create purchase order lines.
 
-## See also
+## Related information
 
 [For more information see the blog post WMS-Warehouse Filter Codes](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
 

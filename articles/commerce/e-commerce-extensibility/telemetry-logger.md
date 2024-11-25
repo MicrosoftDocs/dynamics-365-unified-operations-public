@@ -2,10 +2,8 @@
 title: Telemetry logger
 description: This article covers the telemetry logger in Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 10/01/2019
+ms.date: 12/05/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -21,13 +19,13 @@ ms.assetid:
 
 This article covers the telemetry logger in Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce online software development kit (SDK) includes a custom telemetry logger that you can use to log to multiple resources at various levels but also maintain a unified context on both the server and the client.
+The Dynamics 365 Commerce online software development kit (SDK) includes a custom telemetry logger that you can use to log to multiple resources at various levels while also maintaining a unified context on both the server and the client.
 
 ## Access the telemetry logger
 
 By default, the telemetry logger is available to all react components. It can be accessed with the **this.props.telemetry** property from the module view code file.
 
-Sometimes you will want to access the telemetry logger in a shared component instead of having to pass it down through the properties of every component in your module. The SDK repository includes a **WithContext()** utility that lets you inject the telemetry logger directly into your component.
+Sometimes you want to access the telemetry logger in a shared component instead of having to pass it down through the properties of every component in your module. The SDK repository includes a **WithContext()** utility that lets you inject the telemetry logger directly into your component.
 
 When the telemetry logger runs in a development environment, all logs are also shown in the console.
 
@@ -59,7 +57,7 @@ telemetry.log(
 )
 ```
 
-The trace logging system uses message templates to enforce a structured logging system for telemetry. Therefore, the logs can be captured and rendered in both human-friendly and machine-friendly formats. The **messageTemplate** argument of the **.log** call uses what are known as *named holes* for any event data. When you're writing trace log messages, you can write human-readable messages that include event data. To include event data, mark the place in the message template by using **{\<name\>}**, where **\<name\>** is the name that you want to use for the event data. The actual value that will fill that named hole is provided in the **logOptions.values** parameter. The **logOptions** parameter contains any optional parameters that should be included for a trace log. Here is an example.
+The trace logging system uses message templates to enforce a structured logging system for telemetry. Therefore, the logs can be captured and rendered in both human-friendly and machine-friendly formats. The **messageTemplate** argument of the **.log** call uses what are known as *named holes* for any event data. When you're writing trace log messages, you can write human-readable messages that include event data. To include event data, mark the place in the message template by using **{\<name\>}**, where **\<name\>** is the name that you want to use for the event data. The actual value that fills that named hole is provided in the **logOptions.values** parameter. The **logOptions** parameter contains any optional parameters that should be included for a trace log. Here's an example.
 
 ``` ts
 type TelemetryLogOptions = {
@@ -69,7 +67,7 @@ type TelemetryLogOptions = {
 };
 ```
 
-The benefit of this structured logging system is that when log messages are rendered so that a human can read them, the system can replace the named holes with the values that have been provided. However, when the messages are sent and stored, or when the telemetry is processed by a machine, the event data can be kept separate. Event data can be used, for example, to aggregate or filter specific messages without requiring any string parsing. For more information about structured logging and message templates, see [Message Templates](https://messagetemplates.org/).
+The benefit of this structured logging system is that when log messages are rendered so that a human can read them, the system can replace the named holes with values that you provide. However, when the messages are sent and stored, or when a machine processes the telemetry, the event data can be kept separate. For example, event data can be used to aggregate or filter specific messages without requiring any string parsing. For more information about structured logging and message templates, see [Message Templates](https://messagetemplates.org/).
 
 The following examples show some trace log calls.
 
@@ -85,7 +83,7 @@ telemetry.log(LogLevel.Debug, "Module {id} threw error {code} while rendering", 
 // The customTags and exception will be attached to the log call, and can be viewed in the telemetry back-end
 ```
 
-There are also wrapper methods that simplify the logging calls. However, these wrapper methods can log only strings. There is one wrapper method for each log level, as the following example shows.
+There are also wrapper methods that simplify the logging calls. However, these wrapper methods can log only strings. There's one wrapper method for each log level, as the following example shows.
 
 ``` ts
 this.props.telemetry.trace("This will log at log level 'trace'");
@@ -96,7 +94,7 @@ this.props.telemetry.error("This will log at log level 'error");
 this.props.telemetry.critical("This will log at log level 'critical");
 ```
 
-If you want to include additional strings or other objects in the wrapper methods, you can add them to the message by passing them as arguments at the end of the call. All additional arguments will be converted to strings, joined to the first string message, and separated by a comma. Here is an example.
+If you want to include additional strings or other objects in the wrapper methods, you can add them to the message by passing them as arguments at the end of the call. All additional arguments are converted to strings that are joined to the first string message and separated by a comma, as shown in the following example.
 
 ```ts
 this.props.telemetry.trace("This is the first message", "This is the second message", {some object})
@@ -104,21 +102,25 @@ this.props.telemetry.trace("This is the first message", "This is the second mess
 // Output will be: "This is the first message,This is the second message,{.toString result of {some object}}"
 ```
 
-The console logs are controlled by the **?debug=true** query string.
+The `?debug=true` query string controls the console logs.
 
 ## Exception logging
 
-Logging of **Error** objects (and classes that inherit from them) can be done through the **.exception(Error)** API. Here is an example.
+Logging of **Error** objects (and classes that inherit from them) can be done through the `.exception(Error)` API, aa shown in the following example.
 
 ```ts
 this.props.telemetry.exception(new Error("Something is broken!"));
 ```
 
-### .error vs. .exception
+### error() API vs. exception() API
 
-You might be confused about when you should use **.error()** to log an error in your application, and when you should use **.exception()**. This confusion can arise because the names are similar, and because you can use **.error()** to log **Error** objects, by passing the **Error** objects as additional parameters.
+You might be confused about when you should use the **error()** API to log an error in your application, and when you should use the **exception()** API. This confusion can arise because the names are similar, and because you can use the **error()** API to log **Error** objects by passing the **Error** objects as additional parameters.
 
-The best guidance is to use **.exception()** to log actual **Error** objects and **.error()** to log string messages that state that an error has occurred in the business logic. Generally, **.exception()** logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from **.error()** are treated as another trace log, and more detailed analysis might be required to find the issue than if you use **.exception()**. Therefore, it can take more time to recognize that an issue has occurred. In addition, **.exception()** allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
+The best guidance is to use the **exception()** API to log actual **Error** objects and the **error()** API to log string messages that state that an error occurred in the business logic. Generally, **exception()** API logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from the **error()** API are treated as another trace log, and more detailed analysis might be required to find the issue than if you use the **exception()** API. Therefore, it can take more time to recognize that an issue occurred. In addition, the **exception()** API allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
+
+## Expose telemetry data in Azure Application Insights
+
+To connect telemetry events to your Azure Application Insights subscription, follow the instructions in [Platform settings file](platform-settings.md). 
 
 ## Additional resources
 

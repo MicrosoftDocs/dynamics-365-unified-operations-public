@@ -1,16 +1,14 @@
 ---
 title: Pack containers for shipment
-description: This article describes the packing process that lets you validate inventory items and pack them into containers.
-author: perlynne
-ms.date: 7/13/2022
+description: Learn about the packing process that lets you validate inventory items and pack them into containers, including a step-by-step process.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
-ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
-audience: Application User
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: perlynne
-ms.search.validFrom: 2022-08-01
-ms.dyn365.ops.version: 10.0.29
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
 ---
 
 # Pack containers for shipment
@@ -90,7 +88,7 @@ Follow these steps to set up a location profile for a packing location.
 
 1. On the **General** FastTab, set the following fields:
 
-    - **Location format** – Select the location format to use for the current location. Location formats are a naming system that is used to create unique and consistent names for the different location bin positions that are used in a warehouse. If you don't already have the format that you need, you can create it by going to **Warehouse management \> Setup \> Warehouse \> Location formats**. For more information, see [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md).
+    - **Location format** – Select the location format to use for the current location. Location formats are a naming system that is used to create unique and consistent names for the different location bin positions that are used in a warehouse. If you don't already have the format that you need, you can create it by going to **Warehouse management \> Setup \> Warehouse \> Location formats**. Learn more in [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md).
     - **Location type** – Select the location type that is set up as the packing location type on the **Warehouse management parameters** page, as described earlier in this article.
     - **Use license plate tracking** – For packing locations, set this option to *Yes*. The system must be able to track license plate IDs at packing locations, so that it can control the packing process.
     - **Allow negative inventory** – For packing locations, set this option to *No*.
@@ -148,7 +146,7 @@ Follow these steps to set up a container packing policy.
 
         In most cases, we recommend that you create work to move containers, because this approach better represents the actual manual processes in the warehouse. However, for simple scenarios, or situations where the packing station is located directly in the bay door area, it might be preferable for the container to be immediately available at the final shipping location.
 
-    - **Work template** – Select the work template that should be applied when work is created for the container. This field is available only when the **Container release policy** field is set to *Create work to move container from packing station* and related to a work order type that is named *Packed container picking*. For more information, see [Work templates and location directives](control-warehouse-location-directives.md).
+    - **Work template** – Select the work template that should be applied when work is created for the container. This field is available only when the **Container release policy** field is set to *Create work to move container from packing station* and related to a work order type that is named *Packed container picking*. Learn more in [Work templates and location directives](control-warehouse-location-directives.md).
 
 1. On the **Warehouse selection** FastTab, set the following fields:
 
@@ -200,7 +198,7 @@ Follow these steps to set up a container packing policy.
 
     - **Print packing slip** – Set this option to *Yes* to automatically print the packing slip as part of the shipment manifest. The packing slip can also be printed on demand.
     - **Print packing slip asynchronously** – This option is available only when the **Print packing slip** option is set to *Yes*. Set this option to *Yes* to process sales packing slips asynchronously by using the message processor. In this case, the system will queue sales packing slip postings to the message processors by using messages of the *Run packing slip for container* type to the *Warehouse* queue. This setting requires that you also set the **Packing slip posting parameters ID** field. For more information about how to set up and use the message processor, and how to schedule the batch job that's required to process the messages, see [Create and process message queues and message types](../supply-chain-dev/message-processor.md).
-    - **Packing slip posting parameters ID** – This setting applies when the **Print packing slip asynchronously** option is set to *Yes*. You must define at least one set of parameter settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Packing \> Packing slip posting parameters**) and select the ID for the set of settings that you want to use here. The parameter settings will be used when the last container for a shipment is closed. Warehouse workers won't be prompted to confirm the values. If you're using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this process will be the only one that's supported for automatic posting of packing slips.
+    - **Packing slip posting parameters ID** – This setting applies when the **Print packing slip asynchronously** option is set to *Yes*. You must define at least one set of parameter settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Inventory \> Packing slip posting parameters**) and select the ID for the set of settings that you want to use here. The parameter settings will be used when the last container for a shipment is closed. Warehouse workers won't be prompted to confirm the values. If you're using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this process will be the only one that's supported for automatic posting of packing slips.
 
 ### Set up container types
 
@@ -219,7 +217,7 @@ Follow these steps to create a container type.
 
 1. In the **Container dimensions** section, in the **Length**, **Width**, **Height**, and **Volume** fields, enter the physical dimensions of the container itself.
 1. In the **Maximums** section, in the **Length**, **Width**, **Height**, and **Volume** fields, enter the maximum physical dimensions that the container can handle.
-1. You can define additional attributes for container types that are associated with other operations that use containers. For more information, see [Containerization](wave-containerization.md).
+1. You can define additional attributes for container types that are associated with other operations that use containers. Learn more in [Containerization](wave-containerization.md).
 
 > [!NOTE]
 > For the manual packing process, the system uses only the value of the **Maximum net weight** field and the value of the **Volume** field in the **Maximums** section.
@@ -236,7 +234,7 @@ Follow these steps to set up a packing profile.
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.
-    - **Container packing policy** – Select the packing policy that applies to the profile. For more information, see the [Set up container packing policies](#packing-policy) section of this article.
+    - **Container packing policy** – Select the packing policy that applies to the profile. Learn more in the [Set up container packing policies](#packing-policy) section of this article.
     - **Container ID mode** – Select whether a container ID should automatically be generated when a container is created, or whether it must be manually created.
     - **Container type** – Select the container type that is used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.
@@ -259,7 +257,7 @@ Follow these steps to set up a *worker/person* record for the packing process.
     - **Packing profile ID** – Select a packing profile ID that defines the packing policy and container settings that should be used. If the selected packing profile ID is associated with a container packing policy, you won't be able to change the setting of the **Container packing policy** field on this page.
 
 1. On the **Default packing station** FastTab, select the default site, warehouse, and location that apply to the worker.
-1. If the worker will use the Warehouse Management mobile app to manage and register their container packing work, on the **Users** FastTab, set up one or more accounts that the worker can use to sign in to the app. For more information, see [Mobile device user accounts](mobile-device-work-users.md).
+1. If the worker will use the Warehouse Management mobile app to manage and register their container packing work, on the **Users** FastTab, set up one or more accounts that the worker can use to sign in to the app. Learn more in [Mobile device user accounts](mobile-device-work-users.md).
 
 ## <a name="scenario"></a>Example scenario
 

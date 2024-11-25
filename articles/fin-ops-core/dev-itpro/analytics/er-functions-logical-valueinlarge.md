@@ -1,18 +1,17 @@
 ---
 title: VALUEINLARGE ER function
-description: This article provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
+description: Learn about how the VALUEINLARGE Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.date: 08/17/2020
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 08/17/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-08-01
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 10.0.14
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # VALUEINLARGE ER function

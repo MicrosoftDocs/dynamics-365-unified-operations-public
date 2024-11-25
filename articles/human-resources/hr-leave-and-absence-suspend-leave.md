@@ -6,9 +6,6 @@ description: You can suspend a leave of absence for an employee in Dynamics 365 
 author: twheeloc
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SuspendLeave, LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Suspend leave
 
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can suspend a leave of absence for an employee to stop accruing leave from being processed for selected leave types.
@@ -39,13 +32,9 @@ You can suspend a leave of absence for an employee to stop accruing leave from b
 ## Suspend leave and absence for an employee
 
 1. On the employee's record, select **Leave**.
-
 2. Select **Suspend leave**.
-
 3. Select **New**.
-
 4. In the **Suspend leave accrual** dialog box, select the **Leave type** along with the **Start date** and **End date** for the suspension.
-
 5. Optionally, you can add a **Comment** for the suspension. 
 
 If accruals are processed while the employee's leave is suspended, no accrual will be made for the suspended leave types.

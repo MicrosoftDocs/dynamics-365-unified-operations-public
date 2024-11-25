@@ -1,12 +1,12 @@
 ---
 title: Document class letter for Latin America
-description: This article provides information about the document class letter configuration for Latin America.
+description: Learn about the document class letter configuration for Latin America, including prerequisites and and outline for setting up a document class letter.
 author: Fhernandez0088
-ms.date: 01/31/2023
-ms.topic: Article
-ms.reviewer: kfend
-ms.author: v-federicohe 
+ms.author: v-federicohe
+ms.topic: article
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak 
 ---
 
 # Document class letter for Latin America

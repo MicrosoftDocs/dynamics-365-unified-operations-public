@@ -1,15 +1,13 @@
 ---
 title: Upgrade from AX 2012 - Functional test passes
-description: This article explains how to perform a functional test pass to validate an upgraded finance and operations environment.
+description: Learn about how to perform a functional test pass to validate an upgraded finance and operations environment, including an overview on old data versus new data.
 author: LaneSwenka
-ms.date: 01/31/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 01/31/2018
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---

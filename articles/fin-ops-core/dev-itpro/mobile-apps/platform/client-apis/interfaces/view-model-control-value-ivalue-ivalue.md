@@ -1,12 +1,13 @@
 ---
 title: Value type
-description: Value control type. This is the base class for single value controls.
+description: Learn about the value control type, which includes the container, generic, getDataSource, and hidden properties and various methods.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Value type

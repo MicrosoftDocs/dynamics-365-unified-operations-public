@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Lifecycle Services (LCS)
-description: This article provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
+description: Access links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
-ms.date: 06/30/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 06/30/2020
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.8
-
 ---
 
 # What's new or changed in Lifecycle Services (LCS)

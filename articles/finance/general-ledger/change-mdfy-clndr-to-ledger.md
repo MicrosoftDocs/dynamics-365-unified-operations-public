@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Change or reassign a ledger calendar
-description: This article explains how to change the calendar that is currently assigned to a ledger, and how to assign a new calendar to the ledger.
+description: Learn how to change the calendar that is currently assigned to a ledger, and how to assign a new calendar to the ledger.
 author: kweekley
-ms.date: 02/07/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: conceptual
+ms.date: 02/07/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-5-07
+ms.search.form:
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Change or reassign a ledger calendar

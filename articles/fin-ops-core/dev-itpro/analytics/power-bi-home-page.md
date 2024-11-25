@@ -1,21 +1,18 @@
 ---
 title: Power BI content home page
-description: This article lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
+description: Learn about PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
 author: sericks007
-ms.date: 10/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 265694
+ms.topic: article
+ms.date: 10/02/2019
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2016-11-30
 ms.search.form: PowerBIPbixDeployForm
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ---
 
 # Power BI content home page

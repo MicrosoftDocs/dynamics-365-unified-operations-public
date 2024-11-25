@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Go-live and update recommendations overview
 description: This article provides information about tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
-ms.date: 07/08/2022
-ms.topic: article
+ms.date: 09/11/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sheaton
+ms.author: anupamar
 ms.search.validFrom: 2021-09-20
+ms.custom: 
+  - bap-template
 ---
 
 # Go-live and update recommendations overview
@@ -21,8 +21,6 @@ This article provides information about the tasks that you should complete to he
 
 > [!NOTE]
 > The list of articles will grow over time. It isn't an exhaustive list of all possible items that should be considered during your release.
-
-Before you begin, download a copy of the [current go-live checklist](https://aka.ms/d365fogolivechecklist).
 
 ## Improve performance
 

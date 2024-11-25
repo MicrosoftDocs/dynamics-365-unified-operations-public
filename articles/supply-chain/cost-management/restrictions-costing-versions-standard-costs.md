@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Restrictions on costing versions for standard costs
-description: This article describes the restrictions that apply to a costing version for standard costs. 
-author: JennySong-SH
-ms.date: 01/17/2018
+description: Learn about the restrictions that apply to a costing version for standard costs, including an outline on restrictions that help guarantee adherence to principles.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CostingVersion
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/17/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
 ms.industry: Manufacturing 
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: CostingVersion
 ---
 
 

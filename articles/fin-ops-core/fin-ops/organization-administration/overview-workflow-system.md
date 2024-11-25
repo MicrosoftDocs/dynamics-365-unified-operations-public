@@ -1,38 +1,24 @@
 ---
-# required metadata
-
 title: Workflow system overview
-description: This article describes the workflow system.
+description: Learn about the workflow system, including overviews on workflows on a business process and the benefits of using the workflow system.
 author: ChrisGarty
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: twheeloc 
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ---
 
 # Workflow system overview
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the workflow system.
 

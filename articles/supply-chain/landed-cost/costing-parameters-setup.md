@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Costing parameter values setup
-description: When you set up the Landed cost module, you can define several sets of common values that will be available when you select specific types of costing parameter values in other parts of the app. This article explains how to set up these sets of values.
-author: Weijiesa
-ms.date: 12/07/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ITMCostTypeTable, ITMCostTypeGroup, ITMCostTransferGroup, ITMCostTemplateTable, ITMVolumetricDivisorTable
-audience: Application User
-# ms.devlang: 
+description: When you set up the Landed cost module, you can define several sets of common values when you select costing parameter values in other parts of the app.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: ITMCostTypeTable, ITMCostTypeGroup, ITMCostTransferGroup, ITMCostTemplateTable, ITMVolumetricDivisorTable
 ---
 
 # Costing parameter values setup
@@ -56,7 +42,7 @@ The following table describes the fields that are available for each cost type c
 | Credit account | If the **Credit type** field is set to *Ledger account*, select the ledger account to use. |
 | Clearing account | Select the clearing account for the cost type. We recommend that you specify a separate clearing account per cost type to help with reconciliation. |
 | Standard cost posting type | If you're using standard costing, select the posting description. |
-| Standard cost variance account | <p>If you're using standard costing, the account that is specified here will be used to post any variance. This account uses the landed cost breakdown on the **Item prices** page. This breakdown is created by using the periodic routine to update prices.</p><p>For example, the standard cost of an item is $15.00, the FOB is $13.00, and the freight is $2.00. When the invoice is received for the stock, the item is received at $15.00, but there is a standard price variance of $2.00 for the item, because the actual FOB is $13.00. This variance is posted to the standard price variance account that is set up in the item posting profile. Because the estimated freight is $2.00, there is no variance when the stock invoice is posted. However, when the invoice for freight is received, the freight is $2.50 per unit. Therefore, a $0.50 variance is posted to the specified cost. |
+| Standard cost variance account | <p>If you're using standard costing, the account that is specified here will be used to post any variance. This account uses the landed cost breakdown on the **Item prices** page. This breakdown is created by using the periodic routine to update prices.</p><p>For example, the standard cost of an item is $15.00, the FOB is $13.00, and the freight is $2.00. When the invoice is received for the stock, the item is received at $15.00, but there's a standard price variance of $2.00 for the item, because the actual FOB is $13.00. This variance is posted to the standard price variance account that is set up in the item posting profile. Because the estimated freight is $2.00, there is no variance when the stock invoice is posted. However, when the invoice for freight is received, the freight is $2.50 per unit. Therefore, a $0.50 variance is posted to the specified cost. |
 | Moving average variance account | <p>If you're using moving average costing, the account that is specified here will be used to post any variance.</p><p>For example, the estimated freight is $2.00. However, when the invoice for freight is received, the freight is $2.50 per unit. Therefore, a $0.50 variance must be posted.</p><p>When the **Post adjustments as variance** option is set to *Yes* on the **Landed cost parameters** page, all variances between estimated and actual shipment costs will be posted to the moving average variance account that is specified here. When the **Post adjustments as variance** option is set to *No*, standard functionality will be used, and the variance will be applied either to inventory or to the moving average variance account that is specified here, depending on stock on hand.</p> |
 | Charge accrual account | Select the account that is used to accrue for cost estimates when the purchase invoice is posted. This field is used only when the **Use cost type charge accrual account** option is set to *Yes* on the **Costing** FastTab on the **General** tab of the **Landed cost parameters** page. |
 | Charge account | Select the account that is used to capture the inbound transportation costs that have been invoiced by a supplier. The amount is posted as a debit. The offset account is the stock variation account. This posting is used only when the **Post to charge account in ledger** option is set to *Yes* on the **Accounts payable parameters** page. |

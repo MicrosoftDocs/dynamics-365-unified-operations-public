@@ -1,15 +1,13 @@
 ---
 title: Customize the company logo shown in the Warehouse Management mobile app
-description: This article explains how to customize the company logo shown in the Warehouse Management mobile app.
-author: Adesypri
-ms.author: Adesypri
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn how to customize the company logo shown in the Warehouse Management mobile app, including a step-by-step process for customizing logos.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 10/12/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Customize the company logo shown in the Warehouse Management mobile app

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Develop and open job requisition
-description: Recruitment projects help manage the recruiting process. 
+description: Learn about how recruitment projects help manage the recruiting process, including a step-by-step job requisition process. 
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 01/10/2022
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Develop and open job requisition
 
 [!include [banner](../../includes/banner.md)]

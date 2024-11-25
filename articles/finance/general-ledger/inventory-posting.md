@@ -1,23 +1,14 @@
 ---
-# required metadata
-
 title: Inventory posting 
-description: This article explains the Inventory posting tab on the Inventory posting profile page.
+description: Learn about the Inventory posting tab on the Inventory posting profile page, including an outline on inventory to fixed asset transfer posting.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup
-# ROBOTS: 
+ms.date: 04/25/2022
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup
 ---
 
 # Inventory posting
@@ -55,7 +46,7 @@ To optionally use a fixed receipt price for a product, you must complete the fol
     - Fixed receipt price profit
     - Fixed receipt price loss
 
-For more information, see [Fixed receipt price](/supply-chain/cost-management/fixed-receipt-price.md).
+For more information, see [Fixed receipt price](../../supply-chain/cost-management/fixed-receipt-price.md).
 
 ## Catch weight posting
 
@@ -78,11 +69,11 @@ The following table shows examples of the default posting types, and includes sa
 | Catch weight loss account | 510520 | Inventory adjustment | Expense | | No | Both | Catch weight profit account | This account is used when you post an inventory transaction where the catch weight amount is lower. |
 | Catch weight profit account | 510520 | Inventory adjustment | Expense | | No | Both | Catch weight loss account | This account is used when you post an inventory transaction where the catch weight amount is higher. |
 
-For more information about catch weight products, see [About catch weight items](/dynamicsax-2012/appuser-itpro/about-catch-weight-items.md) and [Catch weight product processing with warehouse management](/supply-chain/warehousing/catch-weight-processing.md).
+For more information about catch weight products, see <!-- Outdated link [About catch weight items](/dynamicsax-2012/appuser-itpro/about-catch-weight-items.md) and -->[Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
 
 ## Inventory to fixed asset transfer posting
 
-The inventory to fixed asset journal (**Fixed assets** \> **Journals** \> **Inventory to fixed asset journal**) is used to move items out of inventory and convert them to fixed assets. For more information, see [Fixed assets integration](/fixed-assets/fixed-asset-integration.md).
+The inventory to fixed asset journal (**Fixed assets** \> **Journals** \> **Inventory to fixed asset journal**) is used to move items out of inventory and convert them to fixed assets. For more information, see [Fixed assets integration](../fixed-assets/fixed-asset-integration.md).
 
 The following table shows examples of the default posting types, and includes sample main accounts and descriptions.
 

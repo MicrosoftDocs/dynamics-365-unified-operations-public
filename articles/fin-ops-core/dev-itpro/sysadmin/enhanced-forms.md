@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Enhanced batch forms
-description: This article provides information about enhanced batch forms.
+description: Learn about enhanced batch forms, including a step-by-step process on switching to the enhanced form on the action pane.
 author: hasaid
-ms.date: 03/18/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: hasaid
+ms.topic: article
+ms.date: 03/18/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-03-08
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 25
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Enhanced batch forms

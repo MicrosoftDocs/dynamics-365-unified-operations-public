@@ -1,18 +1,14 @@
 ---
 title: Bills of exchange protest import
-description: This article explains how to set up and import Protest information from an electronic Bill of exchange protest file.
-author: AdamTrukawka
-ms.date: 04/15/2020
+description: Learn how to set up Protest information from an electronic Bill of exchange protest file with an outline on importing electronic reporting configurations.
+author: kailiang
+ms.author: kailiang
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.date: 04/15/2020
+ms.reviewer: johnmichalak
 ms.search.region: Italy
-ms.author: atrukawk
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.10
-ms.search.form: 
 ---
 
 # Bills of exchange protest import 

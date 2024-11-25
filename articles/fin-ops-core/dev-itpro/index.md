@@ -3,11 +3,9 @@ title: Development and administration for finance and operations apps
 description: This page helps developers and IT Pros get started with finance and operations.
 author: josaw1
 ms.date: 06/20/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
+ms.topic: conceptual
 audience: IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28

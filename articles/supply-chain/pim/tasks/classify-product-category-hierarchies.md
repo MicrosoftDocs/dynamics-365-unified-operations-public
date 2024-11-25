@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Classify a product using category hierarchies
-description: This article describes how to classify a product using category hierarchies. 
-author: t-benebo
+description: Learn how to classify a product using category hierarchies, including a step-by-step process using the USMF demo data company. 
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
 ms.date: 08/02/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole  
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac    
+ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole
 ---
+
 # Classify a product using category hierarchies
 
 [!include [banner](../../includes/banner.md)]

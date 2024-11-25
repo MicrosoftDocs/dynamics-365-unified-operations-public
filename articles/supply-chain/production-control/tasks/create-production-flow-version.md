@@ -1,33 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a production flow version
-description: This procedure focuses on creating a new production flow version. 
+description: Learn about creating a new production flow version, including a step-by-step process for creating production flows using the USMF demo data company. 
 author: johanhoffmann
-ms.date: 11/03/2017
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 11/03/2017
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:
 ---
+
 # Create a production flow version
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure focuses on creating a new production flow version. For this procedure, the production parameters for lean manufacturing and the units of measurement for class time must be defined. You also need to define a value stream and a production group. To learn more about production flows and activities in lean manufacturing, see the white papers on Lean manufacturing for Microsoft Dynamics AX. The demo data company used to create this procedure is USMF.
+This procedure focuses on creating a new production flow version. For this procedure, the production parameters for lean manufacturing and the units of measurement for class time must be defined. You also need to define a value stream and a production group. The demo data company used to create this procedure is USMF.
 
 
 ## Create a production flow

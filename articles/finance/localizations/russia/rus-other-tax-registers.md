@@ -1,15 +1,13 @@
 ---
 title: Other tax registers
-description: This article provides information about other tax registers.
-author: AdamTrukawka
-ms.date: 08/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: atrukawk
+description: Learn about other tax registers, including an outline on setup and a step-by-step process for setting up taxes that are automatically processed.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

@@ -2,18 +2,15 @@
 title: Create and update store hours
 description: This article describes how to create and update store hours in Commerce Headquarters.
 author: josaw1
-ms.date: 07/30/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-07-30
-ms.dyn365.ops.version: Retail 10.0.1 update
 ms.custom: 
-ms.search.industry: Retail
+  - bap-template
 ---
 
 # Create and update store hours

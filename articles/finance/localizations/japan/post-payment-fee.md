@@ -1,19 +1,18 @@
 ---
 title: Generate and post payment fee
-description: This task walks you through generating and posting a payment fee for Japan.
+description: Learn about generating and posting a payment fee for Japan, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendTableLookup
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Generate and post payment fee
 
 [!include [banner](../../includes/banner.md)]

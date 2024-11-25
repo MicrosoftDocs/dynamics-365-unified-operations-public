@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Documents pending accounting
-description: This article describes how to use the functionality on the Documents pending accounting page.
+description: Learn about how to use the functionality on the Documents pending accounting page, which posts subledger documents when enabled.
 author: ryanCCarlson2
-ms.date: 07/19/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: conceptual
+ms.date: 07/19/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.30
-
 ---
 
 # Documents pending accounting

@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Mobile device user settings
-description: This article explains how to manage mobile device user settings for warehouse workers.
+description: Learn how to manage mobile device user settings for warehouse workers, including an outline on creating and managing user settings.
 author: Mirzaab
-ms.date: 02/09/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2021-02-09
-ms.dyn365.ops.version: 10.0.17
-
+ms.topic: article
+ms.date: 02/09/2021
+ms.custom: 
+ms.reviewer: kamaybac
+ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
 ---
 
 # Mobile device user settings
@@ -97,7 +80,7 @@ Follow these steps to create and manage your mobile device brands and models.
     - **Device model ID** – The device model ID, such as *Surface Book 2*.
     - **Description** – You can enter a description to help distinguish model IDs.
 
-## Additional resources
+## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)

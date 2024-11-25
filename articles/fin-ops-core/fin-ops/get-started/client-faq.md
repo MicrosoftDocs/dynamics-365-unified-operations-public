@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Client FAQ
-description: This article provides answers to frequently asked questions about the finance and operations client.
+description: Access answers to frequently asked questions about the finance and operations client, including questions about symbols, the ribbon, and shortcuts.
 author: jasongre
-ms.date: 09/11/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 09/11/2019
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ---
 
 # Client FAQ
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides answers to frequently asked questions about the finance and operations client.
 

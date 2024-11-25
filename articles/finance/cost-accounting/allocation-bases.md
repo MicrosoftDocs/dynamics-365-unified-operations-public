@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Allocation bases
-description: This article provides information about allocation bases. Allocation bases are key components in Cost accounting and are mostly used to allocate overhead costs. 
-author: AndersGirke
-ms.date: 05/24/2017
+description: Learn about allocation bases. Allocation bases are key components in Cost accounting and are mostly used to allocate overhead costs.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/24/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 223174
-ms.assetid: 
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Allocation bases 

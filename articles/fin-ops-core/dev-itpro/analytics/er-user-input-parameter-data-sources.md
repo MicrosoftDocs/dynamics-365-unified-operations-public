@@ -1,20 +1,17 @@
 ---
 title: Use USER INPUT PARAMETER data sources to specify parameters for a report
-description: This article explains how to use USER INPUT PARAMETER data sources to specify parameters for reports that you generate.
+description: Learn how to use USER INPUT PARAMETER data sources to specify parameters for reports that you generate, including an outline of mandatory and optional properties.
 author: kfend
-ms.date: 04/20/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/20/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
-ms.dyn365.ops.version: Version 10.0.27
-ms.custom: 220314
-ms.assetid: 
 ms.search.form: ERModelMappingDesigner, EROperationDesigner
+ms.dyn365.ops.version: Version 10.0.27
+ms.assetid: 
 ---
 
 # Use USER INPUT PARAMETER data sources to specify parameters for a report

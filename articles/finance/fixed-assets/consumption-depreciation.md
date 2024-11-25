@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Consumption depreciation
-description: This article gives an overview of the Consumption method of depreciation.
+description: Learn about the Consumption method of depreciation, including a step-by-step process detailing how to set up and use consumption depreciation.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: d25a681f-49a5-4bfc-aa76-1c6373e35dd8
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d25a681f-49a5-4bfc-aa76-1c6373e35dd8
 ---
 
 # Consumption depreciation

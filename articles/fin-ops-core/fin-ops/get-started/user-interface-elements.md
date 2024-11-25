@@ -1,23 +1,18 @@
 ---
 title: User interface elements
-description: This article describes the user interface (UI) elements in the app.
+description: Learn about the user interface (UI) elements in the app, including outlines on various types of panes, tabs, fields, and sections.
 author: jasongre
-ms.date: 08/09/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 08/09/2019
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: 7.3
 ---
 
 # User interface elements
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the user interface (UI) elements used in the app. Before users can navigate the interface, it's important to know the names and functions of the elements that make up the interface.
 

@@ -1,27 +1,23 @@
 ---
 title: Debug data sources of an executed ER format to analyze data flow and transformation
-description: This article explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
+description: Learn about you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
 author: kfend
-ms.date: 04/22/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/22/2020
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-04-01
-ms.dyn365.ops.version: Release 10.0.11
-ms.custom: 
-ms.assetid: 
 ms.search.form: ERSolutionTable, EROperationDesigner
+ms.dyn365.ops.version: Release 10.0.11
+ms.assetid: 
 ---
 
 # Debug data sources of an executed ER format to analyze data flow and transformation
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 When you [configure](tasks/er-format-configuration-2016-11.md) an Electronic reporting (ER) solution to generate outbound documents, you define the methods that are used to get data out of the application and enter it in the output that is generated. To make the life cycle support of the ER solution more efficient, your solution should consist of an ER data model and its mapping components, and also an ER format and its mapping components, so that the model mapping is application-specific, whereas other components remain application-agnostic. Therefore, several ER components might affect the process of entering data in the generated output.
 

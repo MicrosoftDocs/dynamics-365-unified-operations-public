@@ -1,13 +1,13 @@
 ---
 title: Metadata search in Visual Studio
-description: This article describes how to use metadata search to search your code and metadata for arbitrary patterns and content.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about how to use metadata search to search your code and metadata for arbitrary patterns and content, including an outline on search query syntax.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7

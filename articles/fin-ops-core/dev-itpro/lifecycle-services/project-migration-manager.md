@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Project migration manager
-description: This article explains how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
+description: Learn about how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
 author: LaneSwenka
-ms.date: 05/10/2023
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:
-ms.custom: 257614
-ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 05/10/2023
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-09-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ---
 
 # Project migration manager

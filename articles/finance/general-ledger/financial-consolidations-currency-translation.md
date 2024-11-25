@@ -1,36 +1,23 @@
 ---
-# required metadata
-
 title: Financial consolidations and currency translation overview
-description: This article describes financial consolidations and currency translation in General ledger.
+description: Learn about financial consolidations and currency translation in General ledger, including outlines on audience, approach, consolidations, and benefits.
 author: jinniew
-ms.date: 10/07/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: overview
+ms.date: 06/17/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-5-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Financial consolidations and currency translation overview
 
 [!include [banner](../includes/banner.md)]
 
-This article takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
+This article describes the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
 This article was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
 
@@ -155,7 +142,7 @@ For more information about currency revaluation in a consolidation company see [
 
 For more information about how currency revaluation works in the **General ledger** module, see [Foreign currency revaluation for General ledger](./foreign-currency-revaluation-general-ledger.md).
 
-### Additional information
+### Related information
 - All posting layers are consolidated when the consolidation is processed.
 - Elimination journals can be posted only to the Current layer.
 - Only operating balances are consolidated. Therefore, to see opening balances, you must still run a year-end close in the consolidation company.

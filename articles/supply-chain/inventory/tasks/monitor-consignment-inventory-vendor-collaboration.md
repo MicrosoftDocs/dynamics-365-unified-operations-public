@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Monitor consignment inventory using vendor collaboration
-description: This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer. 
-author: yufeihuang
+description: Learn how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.
+author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand 
 ---
+
 # Monitor consignment inventory using vendor collaboration
 
 [!include [banner](../../includes/banner.md)]

@@ -1,12 +1,13 @@
 ---
 title: FileUploader type
-description: File uploader control type. A control for uploading files such as images.
+description: Learn about the FileUPloader type, afile uploader control type. A control for uploading files such as images and includes various properties and methods.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # FileUploader type

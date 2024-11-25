@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Currency capabilities in financial reporting
-description: Financial reporting includes features that support complex currency reporting requirements.
-author: panolte
-ms.date: 07/27/2021
+description: Learn about financial reporting includes features that support complex currency reporting requirements, including an outline on filtering by currency.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
+ms.date: 07/27/2021
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261824
+audience: IT Pro, Developer 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2020-01-09
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 10.0.8
-
 ---
 
 # Currency capabilities in financial reporting

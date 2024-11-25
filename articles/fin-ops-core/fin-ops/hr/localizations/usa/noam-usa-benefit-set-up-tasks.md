@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up benefits
-description: This article describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
+description: Learn about how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
 author: twheeloc
-ms.date: 02/28/2023
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRateSetup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/28/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221174
-ms.assetid: eb7d562e-075f-448a-b9c2-0a06e938805b
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRateSetup
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: eb7d562e-075f-448a-b9c2-0a06e938805b
 ---
 
 # Set up benefits

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Publish mobile workspaces
-description: This article describes the steps that system administrators must follow to publish a mobile workspace.
+description: Learn about the steps that system administrators must follow to publish a mobile workspace, including how to publish a mobile workspace.
 author: sericks007
-ms.date: 05/26/2022
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysAppDesignerPane
-# ROBOTS: 
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
+ms.search.form: SysAppDesignerPane
 ms.search.validFrom: 2017-02-28
-
 ---
 
 # Publish mobile workspaces

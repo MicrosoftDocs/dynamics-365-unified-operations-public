@@ -1,36 +1,23 @@
 ---
-# required metadata
-
 title: Planning Optimization extensibility
-description: This article describes the extensibility scenarios that are supported in Planning Optimization. 
+description: Learn about the extensibility scenarios that are supported in Planning Optimization with an outline on custom processing.
 author: t-benebo
-ms.date: 08/05/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2020-07-07
-ms.dyn365.ops.version: 10.0.13
-
+ms.topic: article
+ms.date: 08/05/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
 ---
+
 # Planning Optimization extensibility
 
 [!include [banner](../../finance/includes/banner.md)]
 
 This article describes the extensibility scenarios that are related to master planning and supported in Planning Optimization.
+
+> [!TIP]
+> If you've finished developing an extension and want to set up an end-to-end testing environment, see [Unified developer experience for planning optimization (preview)](planning-optimization-dev.md).
 
 ## Custom processing when master planning is completed
 

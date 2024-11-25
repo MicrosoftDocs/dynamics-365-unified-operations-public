@@ -14,8 +14,6 @@ ms.custom:
 
 # Power Automate template-based business events
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 The following templates are available for Microsoft Dynamics 365 Human Resources:
 
 - Goal due reminder

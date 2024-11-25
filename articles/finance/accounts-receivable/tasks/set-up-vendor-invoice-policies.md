@@ -1,28 +1,19 @@
---- 
-# required metadata 
- 
+---
 title: Set up vendor invoice policies
-description: This article explains how to set up vendor invoice policies. 
-author: ShivamPandey-msft
-ms.date: 02/11/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to set up vendor invoice policies, including outlines on preparing to create vendor invoice policies and defining vendor policies. 
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 02/11/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up vendor invoice policies
 
 [!include [banner](../../includes/banner.md)]
@@ -35,19 +26,19 @@ This article explains how to set up vendor invoice policies. Vendor invoice poli
 
 
 ## Prepare to create vendor invoice policies
-1. Go to **Navigation pane > Modules > Accounts payable > Setup > Accounts payable parameters**.
+1. Go **Accounts payable > Setup > Accounts payable parameters**.
 2. Select the **Invoice validation** tab.
-3. Select or clear the **Automatically update invoice header** status check box.
+3. Select or clear the **Automatically update invoice header** status checkbox.
 4. Select **OK**.
 5. In the **Post invoice with discrepancies** field, select an option.
 6. Close the page.
-7. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
+7. Go to **Accounts payable > Policy setup > Vendor invoice policies**.
 8. Select **Parameters**.
 9. Select **Add**.
 10. Close the page to return to the home page.
 
 ## Create policy rule types for vendor invoices
-1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policy rule types**.
+1. Go to **Accounts payable > Policy setup > Vendor invoice policy rule types**.
 2. Select **New**.
 3. In the **Rule name** and **Description** fields, type values.
 4. In the **Query name** field, select the drop-down button to open the lookup, then select the desired record.
@@ -55,7 +46,7 @@ This article explains how to set up vendor invoice policies. Vendor invoice poli
 6. Close the page to return to the home page.
 
 ## Define a vendor invoice policy
-1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
+1. Go to **Accounts payable > Policy setup > Vendor invoice policies**.
 2. Select **New**.
 3. In the **Name** and **Description** fields, type values.
 4. Expand or collapse the **Policy organizations** section.

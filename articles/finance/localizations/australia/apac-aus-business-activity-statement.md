@@ -1,17 +1,15 @@
 ---
 title: Business activity statement
-description: This article provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
-author: AdamTrukawka
-ms.date: 01/19/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Australia
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 ---
 
 # Business activity statement (BAS)
@@ -845,7 +843,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>Other acquisitions</p>
 </td>
 <td>
-<p>[11] + G13 + G14 + G15</p>
+<p>[11] + [13] + [14] + [15]</p>
 </td>
 <td>
 <p>G11</p>

@@ -1,83 +1,80 @@
 ---
-
-title: Business performance analytics home page
-description: This article provides information about business performance analytics.
-author: jinniew
+title: What is Business performance analytics?
+description: Learn about Business performance analytics, including an outline of the process for turning data into actions to improve business performance.
+author: lizmota
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 10/26/2023
-ms.topic: welcome
-ms.prod: 
-ms.technology:
+ms.topic: article
+ms.date: 10/30/2024
 ms.custom:
-ms.search.form: business-performance-analytics
+ms.reviewer: twheeloc 
 audience: Application User
+ms.search.form: business-performance-analytics
 ---
 
-# About business performance analytics
+# What is Business performance analytics?
 
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+Business performance analytics is a powerful solution that is designed to transform your organization's data into actionable insights. In today's rapidly evolving business environment, the ability to use data for informed decision-making is critical. Business performance analytics enables users to streamline operations, enhance performance, and drive better business outcomes.
 
-## Turn data into action to improve business performance 
+Through its seamless integration with the Microsoft Dynamics 365, Dataverse, and Power BI platforms, Business performance analytics offers a scalable and unified solution for analyzing operational and financial data at an unprecedented level of clarity and efficiency.
 
-Finance departments are grappling with an array of data-related and tool-based difficulties that significantly hinder their productivity, accuracy, and capacity to lead strategic initiatives. They are saddled with outdated data and siloed tools that require slow and laborious manual processes to extract and integrate that data so that business insights can be generated.
+## Value of Business performance analytics
 
-After data is gathered, the analytical tools are often complex and require data science proficiencies. Alternatively, they are too simple and rigid, limited by outdated enterprise resource planning (ERP) interfaces and a lack of modern features such as machine learning and AI. These factors inhibit the discovery of valuable insights and opportunities to improve business performance. 
+Business performance analytics delivers a comprehensive approach for maximizing the value of your business data. By consolidating critical performance metrics, automating reporting processes, and enabling custom analytics, Business performance analytics helps organizations optimize operations and make strategic decisions with ease.
 
-To support agile decision making, finance leaders must solve data challenges and ensure that robust and timely insights are readily available at the point of decision making to drive action. The purpose of business performance analytics is to help them achieve these goals.
+### Benefits
 
-### The transformative power of business performance analytics
+Here are some of the key benefits of Business performance analytics:
 
-Business performance analytics transforms how finance departments manage complex data and use it for informed decision making. Our solution helps Finance lay a foundation for the integration of AI and other advanced capabilities. The goal is to deliver an all-encompassing view of business processes and systems in real time, through easy-to-use tools. Customers can seamlessly consolidate data from Microsoft Dynamics 365, across Finance, Sales, Supply Chain Management, Human Resources, and Project Operations, and also from third-party ERP systems, P2P systems, and contracts. This integrated data model enables faster data updates and more automation. Therefore, it reduces manual tasks and IT dependence at the same time that it optimizes decision making processes.
+- **Data-driven decision-making** – Business performance analytics transforms raw data into actionable insights, so that organizations can make faster, smarter decisions that drive business growth and efficiency.
+- **Comprehensive visibility** – By consolidating financial and operational data across departments, Business performance analytics provides a holistic view of business performance. Therefore, it helps businesses monitor progress and identify areas for improvement.
+- **Security and compliance** – Because it's built on Microsoft's trusted cloud infrastructure, Business performance analytics ensures that your data is protected through advanced security measures. Therefore, it helps you stay compliant with industry standards.
+- **Flexibility for business growth** – Because Business performance analytics is fully customizable and extensible, it adapts to the specific needs of your business and scales as you grow. Therefore, it supports long-term success.
 
-### Impactful outcomes with advanced analytics
+## Business performance analytics as an SaaS solution
 
-Business performance analytics lets finance teams easily access comprehensive and timely data. In this way, it streamlines routine financial reporting and task automation, and significantly reduces cycle times. Through streamlined data management and enhanced accessibility, finance teams can save significant time and unlock opportunities for increased automation, productivity, and accuracy. By taking advantage of their efficiency gains, they can shift their focus from their routine reporting to optimizing business models and planning for the future.
+By using Business performance analytics as a software as a service (SaaS) solution, Dynamics 365 customers can quickly and efficiently take advantage of advanced analytics. Business performance analytics improves decision-making and operational efficiency, and drives better outcomes. At the same time, it avoids the complexity of deep system integrations.
 
-### Prerequisites
+### Key SaaS capabilities
 
-Business performance analytics has the following prerequisites:
+- **Immediate deployment** – Because Business performance analytics can be deployed instantly, businesses can start to analyze data and generate insights without long setup times. In this way, Business performance analytics facilitates faster decision-making and operational improvements.
+- **Comprehensive reporting and dashboards** – Through its built-in reporting and interactive dashboards, Business performance analytics provides access to a wide range of preconfigured reports that cover multiple business functions.
+- **Near-real-time analytics** – Future releases of Business performance analytics will offer frequent data refreshes to enable near-real-time data analysis and reporting. Therefore, businesses will be able to make timely decisions that are based on the most current information.
+- **Predictive insights** – Future releases will introduce predictive analytics capabilities that enable businesses to forecast trends, identify risks, and seize opportunities for improving performance.
+- **User-friendly interface** – Because of its intuitive design, Business performance analytics requires minimal training. Therefore, it fosters broader adoption and enables a data-driven culture across the organization.
+- **Cost-effectiveness** – Business performance analytics is available as part of the Dynamics 365 Finance license. Therefore, it provides advanced analytics without requiring significant investments in IT infrastructure.
 
-- System requirements
-- Version requirements
-- Set up business performance analytics
-- Use business performance analytics
-- FAQs
+### Key SaaS use cases
 
-### System requirements
+- **Finance and accounting** – Generate financial reports, create detailed budgets, and track regulatory compliance.
+- **Supply chain** – Optimize inventory levels, manage suppliers, and improve logistics operations.
+- **Project operations** – Track project milestones, budget adherence, and resource utilization.
+- **Commerce** – Analyze sales performance, customer purchase patterns, and the impact of promotional campaigns.
 
-A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md). Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. Confirm the environment where you plan to install Business performance analytics is in one of the above mentioned regions.
+## Business performance analytics as a DaaS solution with data warehousing
 
-### Version requirements
+Business performance analytics can also be used as a data as a service (DaaS) solution. By using Business performance analytics in this way, organizations can integrate its data models with their existing data warehousing infrastructure in Microsoft Fabric. This approach not only maximizes the value of existing data solutions but also positions businesses for future enhancements.
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.35 and PU59 and later and the selected language to be en-US.
+### Key DaaS capabilities
 
-## Set up business performance analytics
+- **Unified and scalable data models** – By adopting Business performance analytics data models, customers can build custom models on top of a unified framework. This capability ensures consistency and scalability across data sets.
+- **Future-proofing with automatic upgrades** – Business performance analytics data models integrate seamlessly with future Dynamics 365 updates. This integration reduces manual maintenance and ensures access to the latest features.
+- **Consistency and standardization** – Business performance analytics data models provide consistency and standardization across data sources. Therefore, they ensure high data quality and integrity.
+- **Advanced analytics and AI** – By customizing Business performance analytics data models, organizations can take advantage of advanced analytics and AI capabilities. In this way, they can deepen insights without having to develop them from scratch.
+- **Enhanced data governance** – Unified Business performance analytics data models support better data governance by providing standardized data definitions, relationships, and hierarchies. Therefore, they ensure consistency and quality across the organization.
 
-### Set up business performance analytics environment
+### Key DaaS use cases
 
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
+- **Financial services** – Seamlessly integrate Business performance analytics data models to comply with financial regulations and ensure up-to-date reporting.
+- **Retail** – Customize inventory and sales analytics, and benefit from new features in Dynamics 365, without having to do lots of extensive rework.
 
-### Install business performance analytics
+## Included with Dynamics 365 Finance
 
-After business performance analytics is configured, it can be installed. For more information, see [Install business performance analytics](install-bpa.md).
+Business performance analytics is an innovative reporting tool that is included as part of the Dynamics 365 Finance license. In addition to its comprehensive analytics capabilities, Business performance analytics uses shared Dataverse entitlements, including access to the data lake. Therefore, customers can seamlessly integrate and manage their data.
 
-### Set up security 
+## Data reporting capacity
 
-Security in business performance analytics can be set up at the role level and also at the row/dimension level. For more information about how to set up security in business performance analytics, see [Set up security in business performance analytics](set-up-security.md).
+Customers who use Business performance analytics are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A3 SKU for Power BI Embedded. Customers that can't fit their data within the constraints of the Power BI A3 SKU should consider waiting for a future release, where additional data reporting capacity will be available. That future release will expand the data limits, so that larger data sets can be reported and analyzed.
 
-## Use business performance analytics 
+## Data refresh frequency
 
-### Reports in business performance analytics 
-
-Business performance analytics reports can be customized in Power BI. For more information about reports in business performance analytics, see [Reports in business performance analytics](Reports-in-BPA.md).
-
-### How to create and edit reports
-
-Business performance analytics lets user create and edit reports. For more information, see [How to create and edit reports](how-to-create-and-edit-reports.md).
-
-### Business analytics self-help
-
-To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. For more information, see [Business performance analytics self-help](bpa-help-overview.md).
-
+Business performance analytics allows for two data refreshes per day, at 12:00 AM and 12:00 PM (Coordinated Universal Time). More frequent refreshes will be available in the future, to ensure that customers can work with the most up-to-date information to meet their reporting needs.

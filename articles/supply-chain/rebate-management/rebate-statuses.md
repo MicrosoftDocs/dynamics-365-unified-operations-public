@@ -1,35 +1,21 @@
 ---
-# required metadata
-
 title: Rebate statuses
-description: This article describes how to set up rebate statuses. Rebate statuses help you track the status of each deal. You can also use them for reporting and inquiry purposes.
+description: Learnhow to set up rebate statuses. Rebate statuses help you track the status of each deal. You can also use them for reporting and inquiry purposes.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TAMRebateStatusTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.topic: how-to
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: TAMRebateStatusTable
 ---
 
 # Rebate statuses
 
 [!include [banner](../includes/banner.md)]
 
-Rebate statuses help you to track the status of each Rebate management deal. You can also use them for reporting and inquiry purposes. You can set up and name as many rebate status values as you require to support your business process. 
+Rebate statuses help you to track the status of each Rebate management deal. You can also use them for reporting and inquiry purposes. You can set up and name as many rebate status values as you require to support your business process.
 
 To set up rebate statuses, go to **Rebate management \> Setup \> Status \> Status**. Then use the buttons on the Action Pane to add and remove status values as required. For each status, set the following fields:
 

@@ -1,29 +1,24 @@
 ---
 title: Demand planning home page
-description: This article introduces the Demand planning app for Microsoft Dynamics 365 Supply Chain Management, Microsoft's next-generation collaborative demand planning solution.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn about Ddmand planning in Microsoft Dynamics 365 Supply Chain Management, Microsoft's next-generation collaborative demand planning solution.
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: overview
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Demand planning home page
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Inaccurate forecasts and demand plans can lead to lost revenue and inefficiency in the supply chain. However, forecasts that are infused with intelligence lead to more accurate and effective demand plans. Direct impact can be measured in improved revenue and fewer stockouts. Operating expenses are reduced in supply chains that require fewer fire drills.
 
-The Demand planning app for Microsoft Dynamics 365 Supply Chain Management is Microsoft's next-generation collaborative demand-planning solution. This app is powered by best-in-class forecasting algorithms and models, and offers immersive user experiences, intelligent reports, and analytics. It empowers organizations to build an agile, resilient, and sustainable demand planning practice that's fueled by intelligence and collaboration.
+*Demand planning in Microsoft Dynamics 365 Supply Chain Management* is Microsoft's next-generation collaborative demand planning solution. This app is powered by best-in-class forecasting algorithms and models, and offers immersive user experiences, intelligent reports, and analytics. It empowers organizations to build an agile, resilient, and sustainable demand planning practice that's fueled by intelligence and collaboration.
 
-The Demand planning app provides the following capabilities:
+Demand planning provides the following capabilities:
 
 - **A no-code approach** to demand modeling and planning configuration. Flexible building blocks enable the vast majority (over 85 percent) of demand planners who aren't data scientists to do what-if planning and analyze, optimize, and compare scenarios in minutes.
 - **Seamless, on-the-fly aggregation and disaggregation**. Therefore, planners can edit forecasts at the corporate or product group level, and then zoom in and instantly see the impact at the regional and stockkeeping unit (SKU) levels.
@@ -34,7 +29,7 @@ The Demand planning app provides the following capabilities:
 
 ## The demand planning process
 
-The Demand planning app provides functionality for the complete demand planning process. This process has the following steps:
+Demand planning provides functionality for the complete demand planning process. This process has the following steps:
 
 1. **[Import data](import-data.md)** – Import your historical data, products, sites, warehouses, prices, and so on, into the app.
 
@@ -53,6 +48,10 @@ The Demand planning app provides functionality for the complete demand planning 
 
 :::image type="content" source="media/demand-planning-process.png" alt-text="Diagram that shows the steps in the demand planning process.":::
 
+## Deep dive video
+
+For a deep dive into the capabilities of Demand planning, watch the following video on YouTube: [Deep dive into Demand Planning for Supply Chain Management | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=H27SRU1ua-8).
+
 ## Licensing
 
-The Demand planning app is currently in public preview and is free to use for testing and evaluation purposes. When the application becomes generally available, it will be licensed separately, and there will be an added cost to use it in a production environment.
+To use Demand planning in a production environment, each relevant user must have a license for it. Learn more in [Demand planning license requirements](demand-planning-licensing.md).

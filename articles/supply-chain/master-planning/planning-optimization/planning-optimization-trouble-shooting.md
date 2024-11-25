@@ -1,15 +1,13 @@
 ---
 title: Troubleshoot Planning Optimization
-description: This article describes how to fix issues that you might encounter while working with Planning Optimization.
+description: Learn how to fix issues that you might encounter while working with Planning Optimization with an outline on possible errors when installing the add-in.
 author: t-benebo
 ms.author: benebotg
+ms.topic: conceptual
+ms.date: 05/01/2023
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
-ms.topic: faq
-ms.date: 05/01/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Troubleshoot Planning Optimization
@@ -18,13 +16,13 @@ ms.custom: bap-template
 
 This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 
-## Installation of the Planning Optimization Add-in doesn't complete or fails with an error
+## Installation of the Planning Optimization Add-in isn't completed or fails with an error
 
 If you're having trouble installing the Planning Optimization Add-in, consider the advice provided in the following subsections.
 
 ### Make sure your environment meets the prerequisites
 
-Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
+Planning Optimization requires a Microsoft Dynamics Lifecycle Services–enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't be completed.
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
@@ -96,14 +94,16 @@ Follow these steps to review your setup and remove time fences and other options
 
 ### Reduce scheduling time
 
-Reduce the scheduling time by following the instructions in [Improve scheduling engine performance](../scheduling-engine-performance.md).
+It's always beneficial to review your scheduling configuration to optimize run times. To check whether scheduling is the main reason that Planning Optimization is timing out, try disabling finite capacity in the plan settings and then rerun planning to see if the issue is solved.
+
+For more information about how to reduce scheduling times, see [Improve scheduling engine performance](../scheduling-engine-performance.md).
 
 ### Plan only for the products you need
 
 Review the following settings to make sure that you're planning only for the products that you need:
 
 - Use the **Product lifecycle state** field to indicate products or variants that don't have to be fulfilled by master planning. For each such product, select a product lifecycle state where the **Is active for planning** option is set to *No*. You can use the **Change lifecycle state for obsolete products** page to identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
-- For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
+- For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
 - Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
 
 ### Split large planning jobs into several smaller jobs
@@ -233,7 +233,7 @@ Follow these steps to review your setup for time fences and options that you don
 
 Your data export might be able to be completed more quickly if you reduce the number of products that are considered for each planning run. Consider using one or both of the following strategies:
 
-- Identify product and variants that don't have to be fulfilled by master planning, and set their **Product lifecycle state** value to a state where the **Is active for planning** option is set to *No*. (For more information, see [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
+- Identify product and variants that don't have to be fulfilled by master planning, and set their **Product lifecycle state** value to a state where the **Is active for planning** option is set to *No*. (Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
 - Use a [plan filter](plan-filters.md#apply-a-plan-filter) to remove unneeded items from your plan.
 
 ## No planned orders are created
@@ -241,7 +241,7 @@ Your data export might be able to be completed more quickly if you reduce the nu
 If master planning ran by didn't create any orders, check the following settings:
 
 - Make sure the items you're expecting to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
-- If you're running a filtered plan, make sure there aren't any typos in your filter values (see also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter)).
+- If you're running a filtered plan, make sure that there aren't any typos in your filter values. (Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).)
 - Make sure that there's demand for the items you're expecting master planning to create supply for.
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
@@ -254,11 +254,11 @@ When you enable Planning Optimization, the deprecated master planning engine is 
 
 Planning Optimization differs from the deprecated master planning engine design in some areas. This can also be caused by pending features.
 
-**Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+**Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. Learn more in [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
 ## Can't enable Planning Optimization
 
-The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. For more information, see [Get started with Planning Optimization](get-started.md).
+The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. Learn more in [Get started with Planning Optimization](get-started.md).
 
 **Fix**: Make sure that the Planning Optimization Add-in was installed successfully.
 
@@ -270,7 +270,15 @@ This is related to a pending feature that is planned as part of the support for 
 
 **Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
 
-## Additional resources
+## Error message about active planning dimensions not matching
+
+After running a master plan, you might receive the following error:
+
+> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
+
+If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
+
+## Related information
 
 - [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)

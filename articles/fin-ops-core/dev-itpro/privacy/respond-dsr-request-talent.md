@@ -1,15 +1,13 @@
 ---
 title: Respond to requests for personal data in Human Resources
-description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data.
+description: Learn about how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data.
 author: shielasogge
-ms.date: 02/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: shielas
+ms.topic: article
+ms.date: 02/28/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -74,7 +72,7 @@ The following table lists several reasons why personal data modification or dele
 | Financial, tax, GAAP | A current worker's data can't be deleted, but the worker's name can be updated. | 
 | GAAP | Posted or completed transactions can't be modified. |
 
-## Additional information
+## Related information
 
 Only terminated workers can be deleted from Human Resources. Follow these steps to delete terminated workers.
 

@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Asset loans
-description: This article describes how to register loan assets in Asset Management.
-author: johanhoffmann
-ms.date: 10/01/2019
+description: Learn how to register loan assets in Asset Management, including a step-by-step process for registering asset loans on a maintenance request.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 10/01/2019
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Asset loans

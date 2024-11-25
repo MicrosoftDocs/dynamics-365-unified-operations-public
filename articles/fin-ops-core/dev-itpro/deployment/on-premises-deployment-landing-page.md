@@ -1,32 +1,19 @@
 ---
-# required metadata
-
 title: On-premises deployment home page
-description: This article provides information and links to content about on-premises deployments.
-author: sericks007
-ms.date: 07/01/2021
-ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+description: Access information and links to content about on-premises deployments, including resources for getting started, onboarding, commerce, and upgrades.
+author: johnmichalak
+ms.author: johnmichalak
+ms.topic: landing-page
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 06/07/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-search.app:
-  - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 # On-premises deployment home page
 

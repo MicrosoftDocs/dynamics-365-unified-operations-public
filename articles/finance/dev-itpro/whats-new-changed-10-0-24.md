@@ -1,37 +1,23 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.24 
-description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.24 preview release.
+description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.24 preview release distributed in February 2022.
 author: kfend
-ms.date: 12/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2021-12-03 
+ms.topic: whats-new
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Preview of Dynamics 365 Finance 10.0.24 (February 2022)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
 

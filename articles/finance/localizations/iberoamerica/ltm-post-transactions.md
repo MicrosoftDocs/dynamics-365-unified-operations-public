@@ -1,12 +1,12 @@
 ---
 title: Set up transaction posting for Latin America
-description: This article explains how to set up transaction posting for Latin America (LATAM). 
+description: Learn how to set up transaction posting for Latin America (LATAM), including outlines on activating features and setting a company address to the LATAM region.
 author: Fhernandez0088
-ms.date: 10/13/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe 
+ms.topic: article
+ms.date: 07/29/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Set up transaction posting for Latin America 
@@ -54,7 +54,7 @@ To enable the LATAM extension on the **Legal entity** page, set the country/regi
 
 ## Step 8. Create the required journal names
 
-Journal names should represent the transactions that are being used, such as vendor invoices, payments, and collectables. For more information, see [Configure journal names for Latin America](ltm-core-journal-name-configuration..md).
+Journal names should represent the transactions that are being used, such as vendor invoices, payments, and collectables. For more information, see [Configure journal names for Latin America](ltm-core-journal-name-configuration.md).
 
 ## Step 9. Create bank groups
 

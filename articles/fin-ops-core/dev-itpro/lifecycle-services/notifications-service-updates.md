@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Get notified about service updates through Lifecycle Services (LCS)
-description: This article explains the various ways that you can be notified about service updates to your environments.
+description: Learn about the various ways that you can be notified about service updates to your environments the notifications that you receive.
 author: angelmarshall
-ms.date: 07/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
-ms.search.validFrom: 2019-3-31 
+ms.topic: article
+ms.date: 07/02/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2019-3-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 24 
-
 ---
 
 # Get notified about service updates through Lifecycle Services (LCS)

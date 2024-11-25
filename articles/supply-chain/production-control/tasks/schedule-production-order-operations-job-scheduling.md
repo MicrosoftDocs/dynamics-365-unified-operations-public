@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Schedule a production order with operations and job scheduling
-description: This article focuses on scheduling a production order with operations scheduling and job scheduling. 
+description: Learn about scheduling a production order with operations scheduling and job scheduling, including a step-by-step process for creating production orders. 
 author: johanhoffmann
-ms.date: 08/19/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/19/2019
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob
 ---
+
 # Schedule a production order with operations and job scheduling
 
 [!include [banner](../../includes/banner.md)]

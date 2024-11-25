@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Copy customers by using shared number sequences
-description: This article explains how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.
-author: abruer
-ms.date: 08/31/2018
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  CustTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.
+author: twheeloc
 ms.author: twheeloc
+ms.topic: conceptual
+ms.date: 08/31/2018
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: CustTable
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Copy customers by using shared number sequences

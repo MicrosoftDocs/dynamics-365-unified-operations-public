@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Synchronize project list from Supply Chain Management to Field Service
-description: This article discusses the templates and underlying tasks that are used to synchronize projects from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
-author: Henrikan
-ms.date: 03/13/2019
+description: Learn about the templates and underlying tasks used to synchronize projects from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 06/10/2024
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: IT Pro
 ms.search.region: global
-ms.search.industry: 
-ms.author: henrikan
-ms.dyn365.ops.version: 8.1.3 
+ms.dyn365.ops.version: 8.1.3
+ms.search.form: 
 ms.search.validFrom: 2018-12-01
-
 ---
 
 # Synchronize project list from Supply Chain Management to Field Service
@@ -33,7 +19,7 @@ ms.search.validFrom: 2018-12-01
 
 This article discusses the templates and underlying tasks that are used to synchronize projects from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSProjectOW.png)](/media/FSProjectOW.png)
+![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSProjectOW.png)
 
 ## Templates and tasks
 The following template and underlying tasks are used to run synchronization of projects from Supply Chain Management to Field Service.
@@ -67,7 +53,7 @@ Enable change tracking for Data entity projects.
 
 ### Projects (Supply Chain Management to Field Service): Projects
 
-[![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProject1.png)](/media/FSProject1.png)
+![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

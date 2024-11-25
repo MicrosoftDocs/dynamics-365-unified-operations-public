@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Recognize deferred revenue 
-description: This article provides information about how to recognize revenue by using the Revenue recognition feature. 
-author: bking
+description: Learn about how to recognize revenue by using the Revenue recognition feature, including an overview on viewing schedule details. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
 ms.date: 08/16/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Customer
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
 ms.search.validFrom: 2018-08-30
+ms.search.form: Customer
 ms.dyn365.ops.version: 8.0.4
-
 ---
 
 # Recognize deferred revenue

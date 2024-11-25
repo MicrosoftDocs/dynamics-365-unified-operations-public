@@ -1,25 +1,14 @@
 ---
-# required metadata
-
 title: Data events
-description: This article provides an overview of data events.
+description: Data events are based on changes to data in finance and operations apps. Learn more about data events in this overview.
 author: jaredha
-ms.date: 05/03/2022
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
+ms.author: kamanick
+ms.topic: conceptual
+ms.date: 06/19/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry:
-ms.author: jaredha
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.22
 ---
@@ -69,7 +58,7 @@ On the **Data event catalog** tab of the **Business events** page you are able t
 > [!NOTE]
 > Any datetime properties in the payload of a data event that have a NULL value will be removed from the schema of the event sent to subscribed service endpoints. 
 
-The **Data event catalog** doesn't provide the same capability for downloading the event schema that is available for business events on the **Business event catalog** tab of the page. If you need the JavaScript Object Notation (JSON) schema for an event, for example when external integration systems require the schema of the payload for a business event during development, you can construct the schema using the field information provided. The [RemoteExecutionContext Class](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext?view=dataverse-sdk-latest&viewFallbackFrom=dynamics-general-ce-9) defines the contextual information sent to the configured service endpoint at run-time. The entity fields will be included in the schema in the **Target** and **PreImage** properties of the [InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters?view=dataverse-sdk-latest#microsoft-xrm-sdk-remoteexecutioncontext-inputparameters).
+The **Data event catalog** doesn't provide the same capability for downloading the event schema that is available for business events on the **Business event catalog** tab of the page. If you need the JavaScript Object Notation (JSON) schema for an event, for example when external integration systems require the schema of the payload for a business event during development, you can construct the schema using the field information provided. The [RemoteExecutionContext Class](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext) defines the contextual information sent to the configured service endpoint at run-time. The entity fields will be included in the schema in the **Target** and **PreImage** properties of the [InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters).
 
 ## Performance benchmarks
 

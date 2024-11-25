@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Post payroll distributions and generate vendor invoices
-description: This article walks you through the process for posting payroll distributions and generating the required vendor invoices.
+description: Learn about the process for posting payroll distributions and generating the required vendor invoices, including prerequisites.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollPayStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 220964
-ms.assetid: c16043b0-ccdc-4d4d-bf18-67d4c7e3e5f0
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollPayStatement
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: c16043b0-ccdc-4d4d-bf18-67d4c7e3e5f0
 ---
 
 # Post payroll distributions and generate vendor invoices

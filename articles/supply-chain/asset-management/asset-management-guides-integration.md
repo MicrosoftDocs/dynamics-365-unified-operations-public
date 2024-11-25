@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
-description: This article explains how to integrate the Asset management module in Microsoft  Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
-author: johanhoffmann 
-ms.date: 04/28/2020
+description: Learn how to integrate the Asset management module to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 04/28/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: johanho
-ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: 10.0.12
+ms.search.form:
 ---
 
 # Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
@@ -35,8 +21,7 @@ You can integrate the **Asset management** module in Microsoft Dynamics 365 Supp
 Before you can attach guides to Asset management work orders, you must complete these prerequisites:
 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
-- [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
-- [Turn on flight](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for the **MRGuidesFeature** feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
+- [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 - [Turn on the following configuration keys](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the **License configuration** page:
 
     - Asset management \> Asset management mixed reality
@@ -114,7 +99,7 @@ To associate a guide with a maintenance checklist template, follow these steps.
 > [!IMPORTANT]
 > There is a known issue where, when you associate a maintenance checklist template with a default maintenance job type, the guide that is linked to the template doesn't appear on the **Associated guides** FastTab of the **Maintenance job type defaults** page. However, the guide will appear after that job type is applied to a work order on the **Associated guides** FastTab.
 
-## See also
+## Related information
 
 - [Dual-write overview](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Asset management overview](index.md)

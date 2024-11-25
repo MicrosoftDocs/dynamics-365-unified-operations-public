@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up benefit accrual plans
-description: This article describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
+description: Learn about the process for setting up benefit accrual plans, including information about how to gather information and enroll workers.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollAccrual
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221474
-ms.assetid: c6d387ac-91fd-40c0-aaaa-809f2793d28b
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollAccrual
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: c6d387ac-91fd-40c0-aaaa-809f2793d28b
 ---
 
 # Set up benefit accrual plans

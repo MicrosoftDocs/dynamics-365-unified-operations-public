@@ -1,20 +1,18 @@
 ---
 title: Stock card report for Thailand
-description: This article provides information about stock card reports for legal entities in Thailand.
+description: Learn about stock card reports for legal entities in Thailand, including an outline and process for setting up the generation of stock card reports.
 author: AdamTrukawka
-ms.date: 03/21/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Thailand
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
+ms.reviewer: johnmichalak
+ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 265184
-ms.assetid: 1ce8c70b-c6af-4171-98d2-2aa8e9563c5b
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 1ce8c70b-c6af-4171-98d2-2aa8e9563c5b
 ---
 
 # Stock card report for Thailand

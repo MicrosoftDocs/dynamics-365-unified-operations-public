@@ -1,20 +1,20 @@
 ---
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
-description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
+description: Learn about new or changed features in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: sericks007
-ms.date: 01/22/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.custom: 
 ms.assetid: a765a61c-52a3-45c5-b578-68b9249c592a
 ---
+
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
 
 [!include [banner](../../../finance/includes/banner.md)]

@@ -1,15 +1,13 @@
 ---
 title: Continue to use deprecated master planning for some companies
-description: This article explains how to continue using the deprecated master planning engine for some companies until they're ready to be migrated. 
+description: Learn how to continue using the deprecated master planning engine for some companies until they're ready to be migrated.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
 ms.date: 09/18/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ---
 
 # Continue to use deprecated master planning for some companies

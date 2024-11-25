@@ -1,15 +1,13 @@
 ---
 title: Warehouse configuration overview
-description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
-author: perlynne
-ms.author: perlynne
+description: Learn how to configure a warehouse, including information about how to enable a warehouse layout and warehouse processes.
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: conceptual
+ms.date: 04/19/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
-ms.topic: conceptual
-ms.date: 12/02/2022
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Warehouse configuration overview
@@ -83,6 +81,15 @@ Work template definitions play an important role in the definition of warehouse 
 
 If multiple workers must be able to process work for some of your warehouse operations, you might want to use the concept of *staging* for the inventory and separate the work execution into different work classes.
 
+### <a name="warehouse-management-parameters-work"></a>General warehouse work policies
+
+General warehouse work policies let you influence how warehouse work is created and handled. You can set up policies to control options such as default work priority values, deferred work processing, work transaction dates, and more. To view and set these policies, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Open the **General** tab.
+1. Expand the **Work** FastTab.
+1. Select policies and set other work options available on this FastTab. Each field has tooltip help. To see the tooltip for a field, hover your mouse pointer over the relevant field label.
+
 ### Work pools
 
 Work pools are used to organize work into groups. For example, you can create a work pool to classify work that occurs in a particular warehouse location. For all work types except counting, you can assign a work pool to a work template. For cycle counting, you can assign a work pool on the following pages:
@@ -102,7 +109,7 @@ As the name suggests, location directives are used to direct the work transactio
 
 To make it easier and quicker to define the actions that are associated with each location directive line, use one of the predefined strategies. For example, you can use the *Empty location with no incoming work* strategy to search for free locations in a warehouse, or you can use *FEFO batch reservation* strategy for outbound sales picking.
 
-## Additional resources
+## Next steps
 
 - [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md)
 - [Get started with setting up the Warehouse management module](get-started-with-setting-up-module.md)

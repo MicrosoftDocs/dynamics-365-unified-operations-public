@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Transportation management number sequence
-description: This article describes how to set up number sequences for transportation management.
-author: Weijiesa
-ms.date: 10/16/2020
+description: Learn how to set up number sequences for transportation management, including a step-by-step process for creating number sequences for pro numbers.
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: TMSNumberSequence
-audience: Application User
-# ms.devlang: 
+ms.date: 10/16/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: 10.0.14
+ms.search.form: TMSNumberSequence
 ---
 
 # Transportation management number sequence

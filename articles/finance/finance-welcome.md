@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Finance home page
-description: This article provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
+description: Access a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance.
 author: twheeloc
-ms.date: 07/04/2023
-ms.topic: welcome
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.author: twheeloc
+ms.topic: overview
+ms.date: 11/05/2024
+ms.custom: evergreen
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: ["206434"]
 ms.collection: get-started
-ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ---
 
 # Welcome to Dynamics 365 Finance 

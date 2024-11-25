@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up sales tax groups and item sales tax groups
-description: This task recording walks you through the setup of Sales tax and Item sales tax groups. 
+description: Learn about how to set up sales tax and item sales tax groups, including a step-by-step process that outlines setting up tax groups for transactions. 
 author: twheeloc
-ms.date: 05/23/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxGroup,  TaxItemGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 05/23/2023
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxGroup,  TaxItemGroup 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up sales tax groups and item sales tax groups
 
 [!include [banner](../../includes/banner.md)]

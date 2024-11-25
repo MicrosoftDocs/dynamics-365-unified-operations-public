@@ -1,13 +1,13 @@
 ---
 title: Manage finance and operations updates and your custom code lifecycle
-description: This article describes how to manage finance and operations updates and your custom code lifecycle.
+description: Learn about how to manage finance and operations updates and your custom code lifecycle, including overviews on various environments.
 author: josaw1
-ms.date: 02/17/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 02/17/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
 ---
@@ -21,7 +21,7 @@ This article describes application lifecycle use cases for finance and operation
 + Applying the next version of a Microsoft service update
 + Applying a new version of your custom code
 
-This article applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
+This article applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
 
 The main goal is to show how to complete the following tasks:
 

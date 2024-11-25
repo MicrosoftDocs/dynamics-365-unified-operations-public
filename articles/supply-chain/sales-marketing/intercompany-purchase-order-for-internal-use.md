@@ -1,16 +1,12 @@
 ---
 title: Create and invoice an intercompany purchase order for internal use
-description: This article explains how to create and invoice an intercompany purchase order for internal use
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn how to create and invoice an intercompany purchase order for internal use, including a step-by-step process for creating purchase orders.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
 ---
 
 # Create and invoice an intercompany purchase order for internal use

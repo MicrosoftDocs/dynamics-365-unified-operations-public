@@ -1,15 +1,13 @@
 ---
 title: Set up a min-max replenishment process
-description: This article shows how to set up a new replenishment process that uses the minimum/maximum replenishment strategy. 
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
+description: Learn how to set up a new replenishment process that uses the minimum/maximum replenishment strategy, including a step-by-step process. 
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 12/13/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 ---
 
 # Set up a min-max replenishment process

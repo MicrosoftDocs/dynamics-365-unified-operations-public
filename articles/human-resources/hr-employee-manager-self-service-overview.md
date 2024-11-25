@@ -4,11 +4,8 @@
 title: Employee self service overview
 description: This article provides an overview of the Employee self service workspace.
 author: twheeloc
-ms.date: 03/06/2023
+ms.date: 07/09/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -21,7 +18,7 @@ ms.collection: get-started
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
@@ -29,8 +26,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Employee self service overview
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -78,7 +73,7 @@ You can view your current compensation on **Compensation**. Select **Show** to v
 
 View and manage documents with the **Attachments** tile. You can manage all **External** attachments. Both HR and employees can add attachments through **Employee self service** or the **Worker** page. Attachments are set to **External** by default.
 
-### Additional information
+### Related information
 
 This section provides links to other **Employee self service** areas, similar to the **My Career Information** section.
 

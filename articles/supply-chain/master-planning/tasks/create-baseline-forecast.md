@@ -1,31 +1,17 @@
 --- 
-# required metadata 
- 
 title: "Guide: Create a baseline forecast"
 description: A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. 
 author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
 ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer   
-audience: Application User 
-# ms.devlang:  
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Guide: Create a baseline forecast
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../../includes/demand-planning-banner.md)]
 
 A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. This procedure shows how to copy the historical demand to create a baseline forecast for all products using one item allocation key.
 
@@ -78,7 +64,7 @@ A production planner can create a baseline forecast either by using time series 
 ## Visualize the demand forecast
 
 1. Go to **Master planning > Forecasting > Demand forecasting > Adjusted demand forecast**.
-2. In the aggregated view table, select the cell in row 1, column 2. This is the second month for which you have created forecast.
+2. In the aggregated view table, select the cell in row 1, column 2. This is the second month for which you have created a forecast.
 3. Set **QtyCell** to *400*.
     * In the cell, enter a different number than the one that was forecasted, for example, 400.  
 4. You have made a manual adjustment to the forecast. Notice the graphical indication in the next step.

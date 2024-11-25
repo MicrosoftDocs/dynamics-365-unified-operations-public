@@ -1,38 +1,23 @@
 ---
-# required metadata
-
 title: Configure manual decisions in a workflow
-description: This article explains how to configure the properties of a manual decision.
+description: Learn about how to configure the properties of a manual decision, including outlines on naming decisions and specifying possible outcomes of decisions.
 author: ChrisGarty
-ms.date: 06/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 192101
-ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 06/15/2020
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ---
 
 # Configure manual decisions in a workflow
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to configure the properties of a manual decision.
 

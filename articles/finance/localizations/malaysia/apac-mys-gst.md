@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)
-description: This article provides information about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company.
+description: Learn about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company, including an overview on enabling features.
 author: mrolecki
-ms.date: 08/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfiguration_MY
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
-ms.search.region: Malaysia
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: article
+ms.date: 08/03/2021
+ms.reviewer: johnmichalak
+audience: Application User 
+ms.search.region: Malaysia
 ms.search.validFrom: 2016-02-28
+ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfiguration_MY
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
 ---
 
 # Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)

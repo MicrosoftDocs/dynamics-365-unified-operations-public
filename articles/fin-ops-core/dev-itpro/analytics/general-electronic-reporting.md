@@ -1,20 +1,18 @@
 ---
 title: Electronic reporting (ER) overview
-description: This article provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
+description: Learn about the Electronic reporting tool through an overview. It describes key concepts, supported scenarios, and formats that are part of the solution.
 author: kfend
-ms.date: 11/02/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: global
 ms.author: filatovm
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: overview
+ms.date: 11/02/2021
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+audience: Developer, IT Pro
+ms.search.region: global
+ms.search.validFrom: 2016-02-28
 ms.search.form: ERWorkspace
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ---
 
 # Electronic reporting (ER) overview

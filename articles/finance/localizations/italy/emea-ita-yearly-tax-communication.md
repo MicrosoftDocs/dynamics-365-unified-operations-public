@@ -1,19 +1,18 @@
 ---
 title: Yearly tax communication
-description: This article provides information about the yearly tax communication report in Italy.
-author: AdamTrukawka
-ms.date: 05/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+description: Learn about the yearly tax communication report in Italy, including an outline on setting up the Yearly tax communication report.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.date: 03/04/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Italy
-ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 264294
 ms.search.form: 
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Yearly tax communication
@@ -24,67 +23,81 @@ The **Yearly tax communication** report contains annual tax information for Ital
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in [Italian sales tax books](emea-ita-fiscal-books.md#set-up-sales-tax-books).
+Configure Microsoft Dynamics 365 Finance for Italian sales tax books functionality by following the instructions in [Italian sales tax books](emea-ita-sales-tax-books.md).
+
+As of Dynamics 365 Finance version 10.0.38, the **Yearly tax communication** feature supports reporting for [multiple value-added tax (VAT) registrations](../global/emea-multiple-vat-registration-numbers.md).
+
+> [!NOTE]
+> In the **Feature management** workspace, turn on the **Enable Settlement period for Italian Yearly tax communication** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+>
+> The **Enable Settlement period for Italian Yearly tax communication** feature introduces a new reference to the sales tax settlement period in the **Yearly tax communication** table. Therefore, you can now create a **Yearly tax communication** report that has the same ATECOFIN code and year for different sales tax settlement periods, and can report the **Yearly tax communication** report separately for different (multiple) sales tax settlement periods.
+>
+> When you enable the feature, the new tables are used as data sources for the **Yearly tax communication** report, and data from the old `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` data sources is populated in the new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables. If the new tables already contain records that have the same values in the **Years** and **ATECOFIN Code** fields, those records in the new tables are **not** replaced with data from old tables.
 
 ## Set up the Yearly tax communication report
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. On the **Registration numbers** FastTab, in the **Tax registration number** field, enter the tax registration number of your company.
-3. On the **Tax registration** FastTab, in the **Fiscal code** field, enter the fiscal code of your company.
-4. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
+2. Import the following Electronic reporting (ER) configurations.
 
-    - **Italian tax reports model**
-    - **Yearly tax communication (IT)**
-    - **Yearly VAT communication model mapping**
+    | ER configuration name | Type | Description |
+    |-----------------------|------|-------------|
+    | Italian tax reports model | Model | Italian tax reports model configuration. |
+    | Yearly VAT communication model mapping | Model mapping | Model mapping for the Italian **Yearly tax communication** report. |
+    | Yearly tax communication (IT) | Format (exporting) | Yearly tax communication format for Italy. |
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to find the KB article by number.
 
-5. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
-6. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
-7. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
-8. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
+    For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-![Yearly tax communication setup page.](../media/1_Yearly_tax_communication_setup.png)
+    > [!NOTE]
+    > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Yearly VAT communication model mapping** configuration on the **Configurations** page.
 
-> [!NOTE]
-> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni).
+3. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
+4. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
+5. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
+6. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
-9. On the **Field setup** tab, create lines, and set the following fields on them.
+    ![Yearly tax communication setup page.](../media/1_Yearly_tax_communication_setup.png)
+
+    > [!NOTE]
+    > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni).
+
+7. On the **Field setup** tab, create lines, and set the following fields on them.
 
     | Field     | Description                             |
     |-----------|-----------------------------------------|
-    | Field ID                | Enter the identification number   of the field.   |
-    | Description             | Enter   a description of the field. |
-    | Format                  | Select   the required format of the field. For more information about the available   formats, see the [Formats of the fields](#formats) section later in this   article. |
-    | Calculation             | Select a calculation method:   <br>- **Manual** - The value is manually entered. <br>- **Tax   transaction** - The value is collected from the tax transactions. <br>-   **Total** - The value is calculated by using a formula that consists fo the   values of other fields (but only fields where the **Calculation** field isn't   selected). |
-    | Value                   | Enter   a value for the field. You can edit this value only when   the **Calculation** field is set to **Manual**.    |
-    | Tax                     | Select one of the following   values: <br>- **Tax base** - The field should represent a tax base.   <br>- **Tax amount** - The field should represent a tax amount. <br> You can edit this value only when the **Calculation** field is set   to **Tax transactions**.  |
-    | Sign                    | Enter **1** if the value should   be represented as is. Enter **-1** if the value should be inverted.   <br> You can edit this value only when the **Calculation** field is set   to **Tax transactions** or **Total**.  |
-    | Nondeductible sales tax | If   the **Calculation** field is set to **Tax transaction**, and   the **Tax** field is set to **Tax amount**, select this checkbox to   reduce the calculated tax amount on the non-deductible tax amount.    |
+    | Field ID                | Enter the identification number of the field.   |
+    | Description             | Enter a description of the field. |
+    | Format                  | Select the required format of the field. For more information about the available formats, see the [Formats of the fields](#formats) section later in this article. |
+    | Calculation             | <p>Select a calculation method:</p><ul><li><strong>Manual</strong> – The value is manually entered.</li><li><strong>Tax transaction</strong> – The value is collected from the tax transactions.</li><li><strong>Total</strong> – The value is calculated by using a formula that consists of the values of other fields (but only fields where the <strong>Calculation</strong> field isn't selected).</li></ul> |
+    | Value                   | Enter a value for the field. You can edit this value only when the **Calculation** field is set to **Manual**. |
+    | Tax                     | <p>Select one of the following values:</p><ul><li><strong>Tax base</strong> – The field should represent a tax base.</li><li><strong>Tax amount</strong> – The field should represent a tax amount.</li></ul><p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions</strong>.</p> |
+    | Sign                    | <p>Enter <strong>1</strong> if the value should be represented as is. Enter <strong>-1</strong> if the value should be inverted.</p><p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions</strong> or <strong>Total</strong>.</p> |
+    | Nondeductible sales tax | If the **Calculation** field is set to **Tax transaction**, and the **Tax** field is set to **Tax amount**, select this checkbox to reduce the calculated tax amount on the non-deductible tax amount. |
 
-> [!NOTE]
-> If any changes are made in the declaration, you must change the field settings.
+    > [!NOTE]
+    > If any changes are made in the declaration, you must change the field settings.
 
-10. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to a add a line for each sales tax code that should be available as a field value.
+8. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to add a line for each sales tax code that should be available as a field value.
 
     ![Yearly tax communication setup page, Selected tax codes tab.](../media/2_Yearly_tax_communication_setup.png)
 
-11. Select **Exceptions** to set up main accounts that should be excluded from the query.
+9. Select **Exceptions** to set up main accounts that should be excluded from the query.
 
     Create enough unique sales tax codes so that each is linked to a single field in the yearly declaration. This approach helps simplify the setup of the yearly declaration.
 
     However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
 
-12. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
+10. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
 
-You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
+    You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
 
-13. Select the line where the **Calculation** field is set to **Total**.
-14. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
+11. Select the line where the **Calculation** field is set to **Total**.
+12. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
 
     ![Yearly tax communication setup page, Total amount tab.](../media/3_Yearly_tax_communication_setup.png)
 
-15. Set the following fields.
+13. Set the following fields.
 
     | Field name | Description                                                                                                                 |
     |------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +111,7 @@ Usually, fields values can be either numeric (**NU** format) or alphanumeric (**
 - **Numeric (NU)** – These values are amounts. They are right-aligned and have a fixed length of 16 characters. Space characters are used for padding,
 - **Alphanumeric (AN)** – These values are strings. They are left-aligned and have a fixed length of 16 characters. Space characters are used for padding.
 
-In the **Format** column, you can specify a field format. In addition to **NU**and **AN**, the following formats are available for selection.
+In the **Format** column, you can specify a field format. In addition to **NU** and **AN**, the following formats are available for selection.
 
 | Format | Description                                                                                                                                               | Padding character | Example                                    |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------|
@@ -121,7 +134,7 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
 1. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
 2. Select **Create new** to create header information for the **Yearly tax communication** report for the previous year. The number of lines that are created matches the number of Italian sales tax books.
 
-![Yearly tax communication page, Overview tab.](../media/4_Yearly_tax_communication_setup.png)
+    ![Yearly tax communication page, Overview tab.](../media/4_Yearly_tax_communication_setup.png)
 
 3. On the **General** tab, review the following information.
 
@@ -137,219 +150,223 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
 4. Select the required line, and then select **Open** to open the **Yearly tax communication** page, which has the information about the selected declaration.
 5. On the **Header** tab, review the following information.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Tax communication ID</strong>, <strong>ATECOFIN Code</strong>, and <strong>Years</strong></p>
-</td>
-<td>
-<p>These fields are set as described in the previous table.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Company information</strong> section</p>
-</td>
-<td>
-<p>Review the information about the company.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Company name</strong></p>
-</td>
-<td>
-<p>The name of the company that the <strong>Yearly tax communication</strong> report is created for.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Fiscal code</strong></p>
-</td>
-<td>
-<p>The fiscal code of the company.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Company tax registration number</strong></p>
-</td>
-<td>
-<p>The tax registration number of the company.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Declarer</strong> section</p>
-</td>
-<td>
-<p>Enter information about declarer.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Type of declarer</strong></p>
-</td>
-<td>
-<p>Select the type of declarer:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Filing for same legal entity</strong></p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Filing through fiscal assistance center (CAF)</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>CAF fiscal code</strong></p>
-</td>
-<td>
-<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter the fiscal code of the fiscal assistance center.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>CAF obligation</strong></p>
-</td>
-<td>
-<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, select one of the following values:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Declaration prepared by legal entity</strong></p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Declaration prepared by declarer</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>CAF inscription number</strong></p>
-</td>
-<td>
-<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter the inscription number of the fiscal assistance center.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>CAF transmission date</strong></p>
-</td>
-<td>
-<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter transmission date.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Writer</strong> section</p>
-</td>
-<td>
-<p>Specify information about the declarer, if the declarer differs from the taxpayer.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Writer</strong></p>
-</td>
-<td>
-<p>Select the employee's name.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Writer fiscal code</strong></p>
-</td>
-<td>
-<p>Enter the fiscal code of the declarer.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Writer role</strong></p>
-</td>
-<td>
-<p>Select the declarer's role:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Legal representative</strong> &ndash; The declarer is a managing partner.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Administrator of underaged</strong> &ndash; The declarer is an administrator for minors or for people who have disabilities.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Controller of sequestered goods</strong> &ndash; The declarer is an administrator for seized goods.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Fiscal representative</strong> &ndash; The declarer is a tax representative for non-residents.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>General legatee</strong> &ndash; The declarer is an heir to the company.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Liquidator</strong> &ndash; The declarer is an administrator for voluntary liquidation.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Extraordinary operator</strong> &ndash; The declarer is a representative who submits tax declarations on behalf of a company that no longer exists because of a merger, acquisition, or other extraordinary transaction.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Bankruptcy curator</strong> &ndash; The declarer is an administrator for bankruptcy.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Commissioned liquidator</strong> &ndash; The declarer is an administrator for liquidation.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Non-resident</strong> &ndash; The declarer is a tax representative for non-residents. The tax representative transfers items on behalf of a non-resident and doesn't pay VAT. The company or individual who accepts the items is required to pay VAT. For more information, see article 44, paragraph 3, of D.L. No 331/1993.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Legal guardian</strong> &ndash; The declarer is a guardian for a minor who is an heir to the company.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Sole proprietor liquidator</strong> &ndash; The declarer is an administrator who is responsible for disposing of company equipment during a voluntary liquidation.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Property manager</strong> &ndash; The declarer is a manager of the property.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Public representative</strong> &ndash; The declarer is a representative who signs the declarations on behalf of the government.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Public liquidator</strong> &ndash; The declarer is a liquidator who works on behalf of the government.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Appointment date</strong></p>
-</td>
-<td>
-<p>Enter the date of the declarer's nomination.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Fiscal code</strong></p>
-</td>
-<td>
-<p>Enter the fiscal code of the declaring company.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Birth city or foreign country/region</strong>, <strong>Birth county</strong>, <strong>Birth date</strong>, <strong>Gender</strong>, <strong>First name</strong>, <strong>Last name</strong>, and <strong>Telephone</strong></p>
-</td>
-<td>
-<p>Enter additional information about declarer.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Dates</strong></p>
-</td>
-<td>
-<p>Specify information about procedure start and end dates.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Procedure start date</strong></p>
-</td>
-<td>
-<p>Enter the start date of the procedure.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Procedure end date</strong></p>
-</td>
-<td>
-<p>Enter the end date of the procedure.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>Correction</strong></p>
-</td>
-<td>
-<p>Select the type of correction:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Correction</strong></p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Supplementary declaration</strong></p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Additional declarations</strong></p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Additional declarations (2)</strong></p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+    <table>
+    <thead>
+    <tr>
+    <th>Field</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>
+    <p><strong>Tax communication ID</strong>, <strong>ATECOFIN Code</strong>, and <strong>Years</strong></p>
+    </td>
+    <td>
+    <p>These fields are set as described in the previous table.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Company information</strong> section</p>
+    </td>
+    <td>
+    <p>Review the information about the company.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Company name</strong></p>
+    </td>
+    <td>
+    <p>The name of the company that the <strong>Yearly tax communication</strong> report is created for.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Fiscal code</strong></p>
+    </td>
+    <td>
+    <p>The fiscal code of the company.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Company tax registration number</strong></p>
+    </td>
+    <td>
+    <p>The tax registration number of the company.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Declarer</strong> section</p>
+    </td>
+    <td>
+    <p>Enter information about declarer.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Type of declarer</strong></p>
+    </td>
+    <td>
+    <p>Select the type of declarer:</p>
+    <ul>
+    <li><strong>Filing for same legal entity</strong></li>
+    <li><strong>Filing through fiscal assistance center (CAF)</strong></li>
+    </ul>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>CAF fiscal code</strong></p>
+    </td>
+    <td>
+    <p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter the fiscal code of the fiscal assistance center.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>CAF obligation</strong></p>
+    </td>
+    <td>
+    <p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, select one of the following values:</p>
+    <ul>
+    <li><strong>Declaration prepared by legal entity</strong></li>
+    <li><strong>Declaration prepared by declarer</strong></li>
+    </ul>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>CAF inscription number</strong></p>
+    </td>
+    <td>
+    <p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter the inscription number of the fiscal assistance center.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>CAF transmission date</strong></p>
+    </td>
+    <td>
+    <p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter transmission date.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Writer</strong> section</p>
+    </td>
+    <td>
+    <p>Specify information about the declarer, if the declarer differs from the taxpayer.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Writer</strong></p>
+    </td>
+    <td>
+    <p>Select the employee's name.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Writer fiscal code</strong></p>
+    </td>
+    <td>
+    <p>Enter the fiscal code of the declarer.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Writer role</strong></p>
+    </td>
+    <td>
+    <p>Select the declarer's role:</p>
+    <ul>
+    <li><strong>Legal representative</strong> &ndash; The declarer is a managing partner.</li>
+    <li><strong>Administrator of underaged</strong> &ndash; The declarer is an administrator for minors or for people who have disabilities.</li>
+    <li><strong>Controller of sequestered goods</strong> &ndash; The declarer is an administrator for seized goods.</li>
+    <li><strong>Fiscal representative</strong> &ndash; The declarer is a tax representative for non-residents.</li>
+    <li><strong>General legatee</strong> &ndash; The declarer is an heir to the company.</li>
+    <li><strong>Liquidator</strong> &ndash; The declarer is an administrator for voluntary liquidation.</li>
+    <li><strong>Extraordinary operator</strong> &ndash; The declarer is a representative who submits tax declarations on behalf of a company that no longer exists because of a merger, acquisition, or other extraordinary transaction.</li>
+    <li><strong>Bankruptcy curator</strong> &ndash; The declarer is an administrator for bankruptcy.</li>
+    <li><strong>Commissioned liquidator</strong> &ndash; The declarer is an administrator for liquidation.</li>
+    <li><strong>Non-resident</strong> &ndash; The declarer is a tax representative for non-residents. The tax representative transfers items on behalf of a non-resident and doesn't pay VAT. The company or individual who accepts the items is required to pay VAT. For more information, see article 44, paragraph 3, of D.L. No 331/1993.</li>
+    <li><strong>Legal guardian</strong> &ndash; The declarer is a guardian for a minor who is an heir to the company.</li>
+    <li><strong>Sole proprietor liquidator</strong> &ndash; The declarer is an administrator who is responsible for disposing of company equipment during a voluntary liquidation.</li>
+    <li><strong>Property manager</strong> &ndash; The declarer is a manager of the property.</li>
+    <li><strong>Public representative</strong> &ndash; The declarer is a representative who signs the declarations on behalf of the government.</li>
+    <li><strong>Public liquidator</strong> &ndash; The declarer is a liquidator who works on behalf of the government.</li>
+    </ul>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Appointment date</strong></p>
+    </td>
+    <td>
+    <p>Enter the date of the declarer's nomination.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Fiscal code</strong></p>
+    </td>
+    <td>
+    <p>Enter the fiscal code of the declaring company.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Birth city or foreign country/region</strong>, <strong>Birth county</strong>, <strong>Birth date</strong>, <strong>Gender</strong>, <strong>First name</strong>, <strong>Last name</strong>, and <strong>Telephone</strong></p>
+    </td>
+    <td>
+    <p>Enter additional information about declarer.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Dates</strong></p>
+    </td>
+    <td>
+    <p>Specify information about procedure start and end dates.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Procedure start date</strong></p>
+    </td>
+    <td>
+    <p>Enter the start date of the procedure.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Procedure end date</strong></p>
+    </td>
+    <td>
+    <p>Enter the end date of the procedure.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><strong>Correction</strong></p>
+    </td>
+    <td>
+    <p>Select the type of correction:</p>
+    <ul>
+    <li><strong>Correction</strong></li>
+    <li><strong>Supplementary declaration</strong></li>
+    <li><strong>Additional declarations</strong></li>
+    <li><strong>Additional declarations (2)</strong></li>
+    </ul>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 6. On the **Report lines** tab, review or edit the lines and amounts that you previously set up for the **Yearly tax communication** report on the **Yearly tax communication setup** page. For lines where the **Calculation** field is set to **Manual**, manually enter the amounts.
 7. On the **Details** tab, review or edit the details of each line on the **Yearly tax communication** report.
@@ -363,15 +380,13 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
 The following table provides an example of the structure of the yearly VAT declaration. This example is based on the 2020 declaration. Sections that aren't included in the setup example are *italicized*.
 
 <table>
-<tbody>
+<thead>
 <tr>
-<td>
-<p><strong>Section (EN)</strong></p>
-</td>
-<td>
-<p><strong>Fields</strong></p>
-</td>
+<th>Section (EN)</th>
+<th>Fields</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td colspan="2">
 <p><em>PART VA</em></p>
@@ -966,8 +981,8 @@ Here is an example for the **ITCO** legal entity.
     | VL001001 | Output VAT                                                                                                                                               | NU     | Total            |            | 1    |                             | VJ009002, VE023002           |
     | VL002001 | Deductible VAT                                                                                                                                           | NU     | Total            |            | 1    |                             | VF014002                     |
 
-> [!NOTE]
-> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
+    > [!NOTE]
+    > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/infogen-iva-2020).
 
 6. Refresh the page.
 7. Post the following transactions. For example, for customer invoices, go to **Accounts receivable \> Invoices \> All free text invoices**. For vendor invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
@@ -1031,11 +1046,9 @@ To download example setup for the 2020 declaration, see [IVA example setup 2020]
 6. Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
 7. Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:
 
-   - VF037001 VAT admissible for deduction (IVA ammessa in detrazione)
-   - VF071002 VAT admissible for deduction (IVA ammessa in detrazione)
-   - VL032001 VAT payable (IVA a debito)
-   - VL033001 VAT credit (IVA a credito)
-   
-
+    - VF037001 VAT admissible for deduction (IVA ammessa in detrazione)
+    - VF071002 VAT admissible for deduction (IVA ammessa in detrazione)
+    - VL032001 VAT payable (IVA a debito)
+    - VL033001 VAT credit (IVA a credito)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

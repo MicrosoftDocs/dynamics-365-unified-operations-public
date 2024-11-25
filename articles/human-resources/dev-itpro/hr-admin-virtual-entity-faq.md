@@ -6,9 +6,6 @@ description: This article provides answers to some frequently asked questions ab
 author: jaredha
 ms.date: 08/23/2021
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
@@ -25,9 +22,6 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # Human Resources virtual tables FAQ
-
-
-[!INCLUDE [PEAP](../../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../../includes/applies-to-hr.md)]
 

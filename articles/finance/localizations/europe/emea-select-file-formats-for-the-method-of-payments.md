@@ -1,19 +1,17 @@
 ---
 title: File formats for methods of payment
-description: This article describes the two methods for getting file formats that you can use for methods of payment.
-author: AdamTrukawka
+description: Learn about the two methods for getting file formats that you can use for methods of payment, including an outline on electronic reporting file formats.
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 262514
 ms.search.form: CustPaymMode, VendPaymMode
+ms.dyn365.ops.version: Version 1611
 ---
 
 # File formats for methods of payment

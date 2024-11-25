@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Customer prepayments
-description: This article explains how to set up and process customer prepayments (also known as customer deposits).
-author: twheeloc
-ms.date: 11/21/2022
+description: Learn about how to set up and process customer prepayments (also known as customer deposits), including an outline on creating customer posting profiles for prepayments.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/21/2022
 ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
 ms.search.validFrom: 
+ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
 # Customer prepayments

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.25 
-description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.25 preview release.
+description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.25 preview release released in April 2022.
 author: kfend
-ms.date: 01/31/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2022-01-31 
+ms.topic: article
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 07/22/2024
+ms.reviewer: kfend
+ms.search.region: Global
+ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # Preview of Dynamics 365 Finance 10.0.25 (April 2022)

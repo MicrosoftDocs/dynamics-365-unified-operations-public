@@ -1,18 +1,15 @@
 ---
-# required metadata
-
 title: Change the database collation for development environments
-description: This article describes how to change the database collation for development environments.
-author: ttreen 
-ms.date: 08/03/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Learn about how to change the database collation for development environments through a step-by-step process and next steps.
+author: ttreen
 ms.author: ttreen
+ms.topic: article
+ms.date: 08/03/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.search.form: 2022-04-08
-
 ---
 
 # Change the database collation for development environments

@@ -1,15 +1,13 @@
 ---
 title: Class extension - Method wrapping and Chain of Command
-description: This article discusses how to extend the business logic of public and protected methods by using method wrapping.
-author: gianugo
-ms.date: 12/18/2018
+description: Learn about how to extend the business logic of public and protected methods by using method wrapping, with code examples for models.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 12/18/2018
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -421,9 +419,6 @@ In a CoC extension method, the next call must not be called conditionally. Howev
         }
     }
 ```
-
-### Extensions of extensions are not yet supported
-Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
 
 ### Extensions of constructors
 Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public, and it can't have any arguments. For more information, see [Constructors](class-extensions.md#constructors).

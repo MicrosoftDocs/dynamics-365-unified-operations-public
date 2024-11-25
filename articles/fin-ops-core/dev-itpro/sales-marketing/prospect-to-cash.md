@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Prospect to cash
-description: This article provides an overview of the Prospect to cash solution between Dynamics 365 Supply Chain Management and Dynamics 365 Sales. 
-author: Henrikan 
-ms.date: 04/25/2018
+description: Learn about the Prospect to cash solution between Dynamics 365 Supply Chain Management and Dynamics 365 Sales.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustTable, SalesTable, EcoResProductListPage
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 06/10/2024
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: IT Pro
 ms.search.region: global
-ms.search.industry: 
-ms.author: henrikan
-ms.dyn365.ops.version: July 2017 update 
+ms.dyn365.ops.version: July 2017 update
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 ms.search.validFrom: 2017-07-8
-
 ---
 
 # Prospect to cash

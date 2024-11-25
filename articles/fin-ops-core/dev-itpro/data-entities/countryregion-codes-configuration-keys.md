@@ -1,38 +1,22 @@
 ---
-# required metadata
-
 title: Country/region codes and configuration keys
-description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
-author: peakerbl
-ms.date: 06/20/2017
+description: Learn about scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 4644
+audience: Developer, IT Pro
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
+ms.search.region: Global 
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Country/region codes and configuration keys
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 

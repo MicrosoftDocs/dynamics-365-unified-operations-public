@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up number sequences using a wizard
-description: This article explains how to set up all required number sequences at the same time by using a wizard. 
+description: Learn about how to set up all required number sequences at the same time by using a wizard, including a step-by-step process. 
 author: SunilGarg
-ms.date: 07/18/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/18/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up number sequences using a wizard
 
 [!include [banner](../../includes/banner.md)]

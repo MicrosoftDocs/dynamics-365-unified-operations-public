@@ -1,12 +1,12 @@
 ---
 title: Printing configuration for the Chile 8 Columns report
-description: The article describes how to set up and use the Chile 8 Columns report.
-author: Cpicon85 
-ms.date: 9/29/2023 
-ms.topic: article
-ms.reviewer: kfend
+description: Learn how to set up and use the Chile 8 Columns report, including prerequisites and a table that defines various fields.
+author: Cpicon85
 ms.author: v-cpicon 
+ms.topic: article
+ms.date: 9/29/2023 
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Printing configuration for the Chile 8 Columns report

@@ -1,20 +1,18 @@
 ---
 title: Set up the parameters of an ER format per legal entity
-description: This article explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
+description: Learn about how you can set up the parameters of an Electronic reporting (ER) format per legal entity and import ER configurations.
 author: kfend
-ms.date: 03/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 03/25/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: Release 8.1.3
-ms.custom: 
-ms.assetid: 
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
+ms.dyn365.ops.version: Release 8.1.3
+ms.assetid: 
 ---
 
 # Set up the parameters of an ER format per legal entity

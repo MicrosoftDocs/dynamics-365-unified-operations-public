@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Set up and run the Cash position inquiry
-description: This article provides information about the Cash position inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
+description: Learn about the Cash position inquiry, which lets you determine the cash positions for financial dimension sets that contain self-balancing dimensions.
 author: velofog
-ms.date: 10/07/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 10/07/2019
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: twheeloc
 ms.search.validFrom: 2019-10-07
+ms.search.form:
 ms.dyn365.ops.version: 10.0.7
-
 ---
+
 # Set up and run the Cash position inquiry
 [!include [banner](../includes/banner.md)]
 

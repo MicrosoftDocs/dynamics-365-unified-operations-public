@@ -6,9 +6,6 @@ description: This article explains how to make product recommendations that are 
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -37,7 +34,7 @@ This article explains how to make product recommendations that are based on arti
 
 1. Ensure that you have a valid Dynamics 365 Commerce Recommendations license.
 1. Ensure that Entity store is connected to a customer-owned Azure Data Lake Storage Gen2 account. For more information, see [Ensure that Azure Data Lake Storage has been purchased and successfully verified in the environment](enable-ADLS-environment.md).
-1. Confirm that Azure AD Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
+1. Confirm that Microsoft Entra Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
 1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 has been scheduled. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Enable RetailSale measurements for Entity store. For more information about setting up this process, see [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
 1. Ensure that your environment has configured the serving and cooking regions in the currently supported regions, as follows:
@@ -50,13 +47,13 @@ After the steps above have been completed, you will be ready to enable recommend
 > [!NOTE]
 > There is a known issue where recommendations don't appear after the following steps are completed. This issue is caused by data flow issues in the environment. If your environment doesn't show recommendation results, configure the alternative data for the recommendations service by following the steps in [Set up an alternate dataflow for recommendations](dev-itpro/set-up-alternate-data-flow.md). You must have Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
 
-## Azure AD Identity configuration
+## Microsoft Entra Identity configuration
 
-This step is required only for customers who run an infrastructure as a service (IaaS) configuration. Azure AD identity configuration is automatic for customers who run on Azure Service Fabric, but we recommend that you verify that the setting is configured as expected.
+This step is required only for customers who run an infrastructure as a service (IaaS) configuration. Microsoft Entra identity configuration is automatic for customers who run on Azure Service Fabric, but we recommend that you verify that the setting is configured as expected.
 
 ### Setup
 
-1. In Commerce headquarters, search for the **Azure Active Directory applications** page.
+1. In Commerce headquarters, search for the **Microsoft Entra applications** page.
 1. Check that an entry exists for **RecommendationSystemApplication-1**. If an entry does not exist, create one using the following information:
 
     - **Client Id**: d37b07e8-dd1c-4514-835d-8b918e6f9727

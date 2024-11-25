@@ -2,14 +2,15 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: Reza-Assadi
-ms.date: 09/29/2023
-ms.topic: article 
+ms.date: 09/20/2024
+ms.topic: overview 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce component versioning requirements
@@ -20,7 +21,7 @@ This article provides an overview of the component versioning requirements and d
 
 The following illustration shows an overview of Dynamics 365 Commerce components and corresponding versioning requirements and dependencies.
 
-<a href="/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce Component versioning requirements and dependencies.](../media/commerce-component-versioning.jpg)</a>
+![Dynamics 365 Commerce Component versioning requirements and dependencies.](./media/CommerceComponentVersioning_Sep_2024.png)
 
 ## Component dependencies
 
@@ -28,34 +29,39 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- **Commerce headquarters and finance and operations apps must be on the same version as, or a later version than, Commerce Scale Unit (both cloud and self-hosted).**
+- **Commerce Scale Unit (CSU), whether cloud or self-hosted, must always be on a serviceable release version number that is either the same as or lower than the finance and operations apps release. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
-    For example, if Commerce headquarters and finance and operations apps are on version 10.0.30, Commerce Scale Unit must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+  For example, if today's date is September 20, 2024 the following releases are serviceable:
+    - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
+    - *Release Spring (GA: March 15, 2024, End of service: November 15, 2024)*
+    - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
+    - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-- **Commerce Scale Unit must be on the same version as, or an later version than, Store Commerce app, Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that the CSU version must be at least from the *Release Spring* version (the earliest serviceable release). In other words, if Commerce headquarters and finance and operations apps are on the *Release Autumn* version, then the CSU must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. 
 
-    For example, if Commerce Scale Unit is on version 10.0.30, Store Commerce app, Hardware Station, and the Commerce storefront must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+- **The Store Commerce app, Hardware station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release version number should be the same as or lower than the Commerce Scale Unit release version, but it must always be serviceable. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
-- **Extension packages must be compiled against the same version as, or an earlier version than, the target component that the extension applies to.**
+  For example, if today's date is September 20, 2024 the following releases are serviceable:
+    - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
+    - *Release Spring (GA: March 15, 2024, End of service: November 15, 2024)*
+    - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
+    - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-    For example, if the deployed Commerce Scale Unit is on version 10.0.30, the corresponding extension packages must be compiled against version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, so the Store Commerce app, Hardware station, and Commerce SDK versions must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. In other words, if the CSU is on the *Release Autumn* version, then the Store Commerce app, Hardware station, and Commerce SDK versions must be on either the serviceable *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it reached end-of-service.
+
+- **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component to which the extension applies. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
+
+  For example, if today's date is September 20, 2024 the following releases are serviceable:
+     - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
+     - *Release Spring (GA: March 15, 2024, End of service: November 15, 2024)*
+     - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
+     - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
+
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that extension packages must be on the *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it reached end-of-service. In other words, if the target component is on the *Release Autumn* version, the corresponding extension packages must be compiled against one of the serviceable versions (*Release Autumn*, *Release Summer*, or *Release Spring*) but not the *Release Winter* version because it reached end-of-service.
 
 ### Quality updates
 
-During quality updates, no specific versioning requirements must be followed for each Commerce component, besides what is required for service updates.
-
-## Current supported versions
-
-The following table describes the current supported versions of various Commerce components as of **September 15, 2023**.
-
-| Component | Latest available release / component version (first release available in Sandbox) | Earliest supported release / component version |
-|---|---|---|
-| Finance and operations apps | 10.0.36 | 10.0.32 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.36 / 9.46 | 10.0.32 / 9.42 |
-| Commerce module library | 10.0.36 / 9.46 | 10.0.32 / 9.42 |
-| Commerce Scale Unit (self-hosted) | 10.0.36 / 9.46 | 10.0.28 / 9.38 |
-| Modern POS | 10.0.36 / 9.46 | 10.0.28 / 9.38 |
-| Hardware Station | 10.0.36 / 9.46 | 10.0.28 / 9.38 |
+During quality updates, no specific versioning requirements need to be followed for Commerce components other than what is required for service updates.
 
 ## One Version requirements
 
@@ -63,31 +69,26 @@ Commerce components follow the One Version service updates. For more information
 
 ### Cloud components
 
-Customers can pause up to three consecutive updates across the following components. (Three updates correspond to approximately six calendar months.)
+For more information about how to pause service updates for the following cloud components, see [Pause service updates through Lifecycle Services)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
-- Commerce headquarters and finance and operations apps
-- Commerce Scale Unit (cloud-hosted)
-- Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
-
-For example, customers who are currently on version 10.0.30 can pause updates to versions 10.0.31, 10.0.32, and 10.0.33. However, they must then update to version 10.0.34. In this scenario, after version 10.0.35 becomes available, version 10.0.30 is no longer supported.
+- Commerce headquarters and finance and operations apps.
+- CSU (cloud-hosted).
+- Commerce SDK and associated local site configurations (such as modules, data actions, and themes).
 
 ### In-store components
 
-Customers can pause up to three consecutive updates across the following components.
+The following in-store components need to be running serviceable release versions to be supported:
 
-- Store Commerce app for Windows, Android, and iOS
-- Sealed Commerce Scale Unit (self-hosted)
-- Sealed Hardware station
+- Store Commerce app for Windows, Android, and iOS.
+- Sealed CSU (self-hosted).
+- Sealed Hardware station.
 
-### Legacy in-store components
-
-Customers can pause up to seven consecutive updates across the following components.
-
-- Commerce Scale Unit (self-hosted)
-- Modern point of sale (MPOS) and hybrid apps
-- Hardware station
-
-For example, customers who are currently on version 10.0.30 can pause updates for the released versions 10.0.31, 10.0.32, 10.0.33, 10.0.34, 10.0.35, 10.0.36 and 10.0.37. However, they must then update to version 10.0.38. In this scenario, after version 10.0.38 becomes available, version 10.0.30 is no longer supported.
+> [!NOTE]
+> The following legacy in-store components aren't supported:
+> - Commerce Scale Unit (self-hosted)
+> - Modern Point of Sale (MPOS) and hybrid apps
+> - Hardware station (Legacy)
+> - Retail SDK
 
 ## Additional resources
 

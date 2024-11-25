@@ -1,21 +1,20 @@
 ---
 title: Configure depreciation profile and posting profile for additional depreciation
-description: Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
+description: Learn how to configure a depreciation profile and a posting profile for special depreciation, including a step-by-step procdess.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - AssetDepreciationProfile
   - AssetPosting
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Configure depreciation profile and posting profile for additional depreciation
 
 [!include [banner](../../includes/banner.md)]

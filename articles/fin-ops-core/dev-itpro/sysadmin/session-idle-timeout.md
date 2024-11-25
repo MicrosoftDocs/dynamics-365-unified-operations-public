@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Set the session inactivity timeout
-description: This article describes how to set the session inactivity timeout.
+description: Learn about how to set the session inactivity timeout, including an overview on alerting users before sessions end due to inactivity.
 author: paulliew
-ms.date: 11/19/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemAdministrationWorkspaceForm
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: paulliew
+ms.topic: article
+ms.date: 11/19/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-08-30
+ms.search.form: SystemAdministrationWorkspaceForm
 ms.dyn365.ops.version: Platform update 29
-
 ---
 
 # Set the session inactivity timeout

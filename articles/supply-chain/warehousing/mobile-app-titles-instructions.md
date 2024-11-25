@@ -1,16 +1,12 @@
 ---
 title: Customize step titles and instructions for the Warehouse Management mobile app
-description: This article describes how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
+description: Learn how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-08-11
-ms.dyn365.ops.version: 10.0.21
+ms.topic: article
+ms.date: 08/09/2022
+ms.reviewer: kamaybac
+ms.search.form: WHSMobileAppFlowStepListPage
 ---
 
 # Customize step titles and instructions for the Warehouse Management mobile app
@@ -29,7 +25,7 @@ Before you can use this feature, it must be turned on for your system. As of Sup
 
 ## Step titles and step instructions in the app
 
-Every step in a task flow on the Warehouse Management mobile app is identified by a step ID. Additionally, every step has a title, icon, and instruction. (For more information, see [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md).)
+Every step in a task flow on the Warehouse Management mobile app is identified by a step ID. Additionally, every step has a title, icon, and instruction. (Learn more in [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md).)
 
 ### Step titles
 

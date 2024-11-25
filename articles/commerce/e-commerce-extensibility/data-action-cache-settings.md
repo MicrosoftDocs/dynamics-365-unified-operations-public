@@ -2,18 +2,15 @@
 title: Data action cache settings
 description: This article covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/06/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Data action cache settings
 

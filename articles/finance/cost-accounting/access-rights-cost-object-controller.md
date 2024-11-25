@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Access rights for cost object controllers
-description: This article provides information about access rights for cost object controllers. 
-author: AndersGirke
-ms.date: 06/24/2017
+description: Learn about access rights for cost object controllers, including a table that provides available licenses for various role names.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMCostControlWorkspace, CAMParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/24/2017
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMCostControlWorkspace, CAMParameters
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Access rights for cost object controllers

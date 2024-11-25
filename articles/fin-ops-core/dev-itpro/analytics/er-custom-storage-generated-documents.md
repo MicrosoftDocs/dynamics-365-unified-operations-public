@@ -1,15 +1,13 @@
 ---
 title: Specify a custom storage location for generated documents
-description: This article explains how to extend the list of storage locations for documents that Electronic reporting (ER) formats generate.
+description: Learn about how to extend the list of storage locations for documents that Electronic reporting (ER) formats generate.
 author: kfend
-ms.date: 02/22/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 02/22/2019
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: 10
 ---

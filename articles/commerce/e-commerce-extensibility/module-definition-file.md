@@ -2,18 +2,15 @@
 title: Module definition file
 description: This article covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/28/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Module definition file
 

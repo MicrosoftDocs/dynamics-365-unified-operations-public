@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Reason codes for inventory counting
-description: This article describes how to set up and apply reason codes for counting tasks.
-author: perlynne
-ms.date: 08/02/2021
+description: Learn how to set up and apply reason codes for counting tasks, including outlines on toggling the reason code features and recommendations.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 08/02/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 1705903
+ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: perlynne
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Reason codes for inventory counting

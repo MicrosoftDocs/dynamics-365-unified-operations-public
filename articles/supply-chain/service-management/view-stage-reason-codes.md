@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: View stage reason codes 
-description: View and modify the list of stage reasons for a service order.
-author: sorenva
-ms.date: 05/07/2018
+description: Learn how to view and modify the list of stage reasons for a service order, including a step-by-step process and additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable
 ---
 
 
@@ -40,11 +24,6 @@ View and modify the list of stage reasons for a service order. Use stage reasons
 
   - On the **Stage reasons** form, click **New** to create a new stage reason code.
 
-## See also
-
-[Stage reasons (form)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))
-
-  
 
 
 

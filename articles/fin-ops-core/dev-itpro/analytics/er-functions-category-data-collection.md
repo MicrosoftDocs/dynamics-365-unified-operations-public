@@ -1,18 +1,17 @@
 ---
 title: List of ER functions in the data collection category
-description: This article provides information about the data collection functions that are supported in Electronic reporting (ER).
+description: Learn about the data collection functions that are supported in Electronic reporting (ER), including a list of supported functions.
 author: kfend
-ms.date: 12/04/2019
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 12/04/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # List of ER functions in the data collection category

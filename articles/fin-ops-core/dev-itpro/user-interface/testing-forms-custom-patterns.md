@@ -1,15 +1,13 @@
 ---
 title: Test forms that use custom patterns
-description: This article how to test forms using custom patterns.
+description: Learn about how to test forms using custom patterns, including overviews on testing configurations and visual issues you may encounter.
 author: jasongre
-ms.date: 07/08/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 07/08/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec

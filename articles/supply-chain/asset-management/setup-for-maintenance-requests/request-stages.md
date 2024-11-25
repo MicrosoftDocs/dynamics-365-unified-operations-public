@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Maintenance request lifecycle states
-description: This article describes how to set up maintenance request lifecycle states in Asset Management.
-author: johanhoffmann
-ms.date: 04/20/2020
+description: Learn how to set up maintenance request lifecycle states in Asset Management, including a process for setting up maintenance request lifecycle states.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.date: 04/20/2020
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 ---
 
 # Maintenance request lifecycle states

@@ -2,18 +2,15 @@
 title: Chain data actions
 description: This article describes how to chain data actions.
 author: samjarawan
-ms.date: 07/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Chain data actions
 
@@ -21,7 +18,7 @@ ms.assetid:
 
 This article describes how to chain data actions.
 
-To create a maintainable and compact codebase, you will often need a suite of composable data actions that can easily use each another to create more complex code flows. The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) lets you seamlessly chain data actions but still provide all the out-of-box benefits of the data action architecture (caching, batching, and deduplicating).
+To create a maintainable and compact codebase, you often need a suite of composable data actions that can easily use each other to create more complex code flows. The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) lets you seamlessly chain data actions but still provide all the out-of-box benefits of the data action architecture (caching, batching, and deduplicating).
 
 ## Examples
 
@@ -169,7 +166,7 @@ export default createObservableDataAction({
 })
 ```
 
-You can now use the new chain data action wherever you need both the basic product information and the product's current inventory status. In addition, the calls that exist in the chain data action are still run through the cache. They are also batched and deduplicated together with other actions that are run on the same page.
+You can now use the new chain data action wherever you need both the basic product information and the product's current inventory status. In addition, the calls that exist in the chain data action are still run through the cache. They're also batched and deduplicated together with other actions that are run on the same page.
 
 ## Additional resources
 

@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Replenishment strategies
-description: This article provides information about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines to select how replenishment is done.
+description: Learn about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines.
 author: Mirzaab
-ms.date: 10/29/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: 10.0.16
+ms.topic: article
+ms.date: 10/29/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Replenishment strategies

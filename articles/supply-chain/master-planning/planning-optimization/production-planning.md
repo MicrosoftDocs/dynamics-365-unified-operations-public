@@ -1,16 +1,12 @@
 ---
 title: Production planning
-description: This article describes planning for production and explains how to modify planned production orders by using Planning Optimization.
+description: Learn about planning for production and explains how to modify planned production orders by using Planning Optimization.
 author: t-benebo
-ms.date: 08/09/2022
-ms.topic: article
-ms.search.form: ReqCreatePlanWorkspace
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2020-12-15
-ms.dyn365.ops.version: 10.0.13
+ms.topic: article
+ms.date: 08/09/2022
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
 ---
 
 # Production planning
@@ -54,7 +50,7 @@ If you want to change information on a planned order and see the impact on the r
 2. Approve the planned order.
 3. Run master planning.
 
-When you run master planning, you should not use filters if planned production orders are included. For more information, see the [Filters](#filters) section later in this article.
+When you run master planning, you should not use filters if planned production orders are included. Learn more in the [Filters](#filters) section later in this article.
 
 > [!NOTE]
 > If the delivery date of the planned order is changed to a later date, the demand might be pegged against a new planned order. This behavior occurs when the new supply date causes a delay for the pegged demand but, according to the lead time settings, the delay can be avoided.

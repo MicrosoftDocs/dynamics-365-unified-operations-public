@@ -1,12 +1,13 @@
 ---
 title: ContainerControlMetadata type
-description: Container control metadata type.
+description: Learn about the ContainerControlMetadata type, which contains the BoundEntity, BoundField, Description, Editable, ExtType, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # ContainerControlMetadata type

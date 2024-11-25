@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Set up permissions for ordering products on behalf of someone else
-description: This article explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
-author: GalynaFedorova
+description: Learn how to grant workers permission to prepare purchase requisitions on behalf of other workers with a process for granting permission to enter requisitions. 
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
 ms.date: 08/20/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchReqAuthorization, HcmWorkerLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac  
+ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 ---
+
 # Set up permissions for ordering products on behalf of someone else
 
 [!include [banner](../../includes/banner.md)]

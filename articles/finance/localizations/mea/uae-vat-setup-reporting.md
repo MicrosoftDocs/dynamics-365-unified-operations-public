@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Set up and report value-added tax (VAT)
-description: This article explains how to set up and report value-added tax (VAT).
+description: Learn how to set up and report value-added tax (VAT), including outlines on configuring legal entities for VAT and configuring the tax authority.
 author: liza-golub
-ms.date: 06/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 272683
-ms.search.region: UAE
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: UAE
 ms.dyn365.ops.version: Version 1611
+ms.search.form: 
 ms.search.validFrom: 2019-05-29
-
 ---
 
 # Set up and report value-added tax (VAT)
@@ -48,7 +37,7 @@ According to the *Requirements Document for Tax Accounting Software* that the Fe
     - **Profit margin scheme** – Set this option to **Yes** if the company operates in a special business scheme by using the Profit Margin scheme.
     - **VAT on behalf of customer** – Set this option to **Yes** if the company operates as an agent that pays import VAT on behalf of another taxable person.
 
-[![Value added tax FastTab on the Legal entities page.](../media/uae_vat_02.jpg)](/media/uae_vat_02.jpg)
+[![Value added tax FastTab on the Legal entities page.](../media/uae_vat_02.jpg)]
 
 To prepare your legal entity in Finance for VAT accounting and reporting, use the [Sales tax](../../general-ledger/indirect-taxes-overview.md) functionality. For more detailed information, see the following articles:
 
@@ -69,7 +58,7 @@ The FTA must be set up as a sales tax authority. After the vendor account is ass
 
 Go to **Tax** \> **Sales tax** \> **Sales tax authorities**, and set up the address information of your FTA office. Be sure to select **UAE report layout** in the **Report layout** field.
 
-[![Sales tax authorities page.](../media/uae_vat_03.jpg)](/media/uae_vat_03.jpg)
+[![Sales tax authorities page.](../media/uae_vat_03.jpg)]
 
 When you've finished, you can associate sales tax settlement periods with the tax authority that you just configured and with sales tax codes.
 
@@ -160,7 +149,7 @@ Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting code
 
 Use the information in the "Report setup" column of the preceding table to configure sales tax codes and associate them with sales tax reporting codes on the **Report setup** FastTab of each sales tax code that is relevant to your company's business.
 
-[![Report setup FastTab.](../media/uae_vat_05.jpg)](/media/uae_vat_05.jpg)
+[![Report setup FastTab.](../media/uae_vat_05.jpg)]
 
 ## Set up the VAT declaration for UAE
 
@@ -187,11 +176,11 @@ To generate the VAT declaration report for UAE in Excel, use the standard **Repo
 
 To generate the VAT declaration after a VAT settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Export VAT file**. (For more information, see [Create a sales tax payment](../../general-ledger/tasks/create-sales-tax-payment.md).)
 
-[![Sales tax parameters line item.](../media/uae_vat_12.jpg)](/media/uae_vat_12.jpg)
+[![Sales tax parameters line item.](../media/uae_vat_12.jpg)]
 
 In the **Export VAT file** dialog box, specify the required information.
 
-[![Export VAT file dialog box.](../media/uae_vat_13.jpg)](/media/uae_vat_13.jpg)
+[![Export VAT file dialog box.](../media/uae_vat_13.jpg)]
 
 You're prompted to save the downloaded Excel file for the VAT declaration to your local computer. Save the file, and verify the content of the reported data.
 

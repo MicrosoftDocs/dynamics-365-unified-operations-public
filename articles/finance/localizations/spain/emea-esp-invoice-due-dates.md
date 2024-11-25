@@ -1,15 +1,14 @@
 ---
 title: Calculate due dates and report on the average period of payments (Spain)
-description: This article provides information about due dates and the average period of payments for Spain.
+description: Learn about due dates and the average period of payments for Spain, including an outline on using delivery dates to calculate invoice due dates.
 author: AdamTrukawka
-ms.date: 05/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Spain
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ---

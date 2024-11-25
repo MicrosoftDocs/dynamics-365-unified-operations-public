@@ -1,20 +1,18 @@
 ---
 title: Configure country/region context dependent ER model mappings
-description: This article explains how you can set up ER model mappings so that they depend on the country/region context of the legal entity that controls their use.
+description: Learn about how you can set up ER model mappings so that they depend on the country/region context of the legal entity that controls their use.
 author: kfend
-ms.date: 11/11/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: Release 8.1.2
+ms.topic: article
+ms.date: 11/11/2019
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2019-01-01
 ms.search.form: ERSolutionTable
+ms.dyn365.ops.version: Release 8.1.2
+ms.assetid: 
 ---
 
 # Configure country/region context dependent ER model mappings

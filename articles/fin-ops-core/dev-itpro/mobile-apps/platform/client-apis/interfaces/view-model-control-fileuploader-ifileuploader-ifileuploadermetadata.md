@@ -1,12 +1,13 @@
 ---
 title: FileUploaderMetadata type
-description: File uploader metadata type.
+description: Learna bout the FileUploaderMetadata type, a file uploader metadata type that includes the BoundEntity, BoundField, Description, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # FileUploaderMetadata type

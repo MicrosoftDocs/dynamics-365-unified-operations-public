@@ -1,18 +1,15 @@
 ---
 title: Payment terms in commercial transactions report (PL-00053)
-description: This article provides information about the Payment terms report, and explains how to configure and generate it.
-author: AdamTrukawka
-ms.date: 05/06/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the Payment terms report, and explains how to configure and generate it, including outlines on enabling features in feature management.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Poland
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.24
-ms.search.form: 
+ms.dyn365.ops.version: 10.0.24 
 ---
 
 # Payment terms in commercial transactions report

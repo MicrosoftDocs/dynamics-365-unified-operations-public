@@ -4,11 +4,8 @@
 title: Configure life event types
 description: Microsoft Dynamics 365 Human Resources uses life event types to define events to update employee benefits enrollment.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 07/02/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
@@ -17,11 +14,10 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -34,9 +30,7 @@ Dynamics 365 Human Resources uses **Life event types** to define events where it
 ## Create a life event type
 
 1. In the **Benefits management** workspace, under **Setup**, select **Life event types**.
-
 2. Select **New**.
-
 3. Specify values for the following fields:
 
    | Field | Description |
@@ -52,9 +46,7 @@ Dynamics 365 Human Resources uses **Life event types** to define events where it
 You can see a list of plans that are attached to the selected **Life event type**. Life events are attached to a plan type, and plan types are associated with a plan.
 
 1. In the **Benefits management** workspace, under **Setup**, select **Life event types**.
-
 2. Select **Actions**.
-
 3. Select **Attached plans**.
 
 ## Life events

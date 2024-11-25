@@ -1,18 +1,15 @@
 ---
 title: Duplicate sales invoice numbering for Poland
-description: For legal entities in Poland, the Duplicate sales invoice numbering functionality lets users identify and track duplicate sales invoices. This article provides information about the Duplicate sales invoice numbering functionality, and explains how to duplicate an invoice, delete a duplicate invoice, and print a copy of a duplicate invoice.
+description: For legal entities in Poland, the Duplicate sales invoice numbering functionality lets users identify and track duplicate sales invoices.
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Poland
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 263534
 ---
 
 # Duplicate sales invoice numbering for Poland

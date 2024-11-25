@@ -4,8 +4,6 @@ description: This article describes recommended practices for setting up new env
 author: andreashofmann1
 ms.date: 05/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
@@ -130,6 +128,9 @@ Start by creating a new Azure DevOps project if you don't already have one. In y
 ![VSTS project.](./media/2-VSTS-project.png)
 
 After you create the new Azure DevOps project, you must give Azure DevOps access to it. First, create a new personal access token on the Azure DevOps account. Then configure the LCS project with the correct URL and personal access token.
+
+> [!IMPORTANT]
+> Do not disable "Classic build and classic release pipelines" in the Azure DevOps project. 
 
 ![LCS project.](./media/3-LCS-project.png)
 
@@ -276,7 +277,7 @@ Regardless of whether there are customizations in the code branches, the followi
 15. Open a browser window, and paste the URL into the address bar. You should be able to browse to your local Commerce Scale Unit.
 16. In Commerce, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
 17. In Commerce, run job **1060** (**AX/Distribution schedule**).
-18. Activate MPOS by using the same Azure Active Directory (Azure AD) user that you added in step 16. Paste the Commerce Scale Unit URL, select a store and a register, and finish the activation.
+18. Activate MPOS by using the same Microsoft Entra user that you added in step 16. Paste the Commerce Scale Unit URL, select a store and a register, and finish the activation.
 
 You should now be able to run MPOS in the debugger from your local sources.
 

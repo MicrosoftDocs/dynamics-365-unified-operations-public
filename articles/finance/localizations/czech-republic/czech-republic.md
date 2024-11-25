@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Czech Republic overview
-description: This article provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
+description: Learn about Dynamics 365 Finance functionality that is specific to the Czech Republic, including outlines on fixed assets and VAT reporting.
 author: kfend
-ms.date: 01/18/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: Czech Republic
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 01/18/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Czech Republic
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Czech Republic overview

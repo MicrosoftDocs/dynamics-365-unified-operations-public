@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up fixed asset posting profiles
-description: This procedure shows how to set up Fixed asset posting profiles. 
+description: Learn how to set up Fixed asset posting profiles with an example for a posting profile created for a chart of accounts and financial reporting requirements.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetPosting   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetPosting
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up fixed asset posting profiles
 
 [!include [banner](../../includes/banner.md)]
@@ -36,7 +27,7 @@ This procedure shows how to set up Fixed asset posting profiles. The examples ar
 5. In the toolbar, click **Add**.
 6. In the **Book** field, enter or select a value. The **Groupings** field allows you to define the posting profile down to the **Table** (one account set up for each fixed asset) or **Group** (one account set up for each fixed asset group). For this task guide, leave the value set to **All** to apply to all fixed assets with the specified Book.  
 7. In the **Main account** field, specify the desired values. For acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
-8. In the drop-down menu under the **Ledger accounts** fastTab, select **Acquisition adjustment**. For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.  
+8. In the drop-down menu under the **Ledger accounts** FastTab, select **Acquisition adjustment**. For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.  
 9. Click **Add**.
 10. In the **Book** field, enter or select a value.
 11. In the **Main account** field, specify the desired values. For acquisition adjustments, you can enter an offset account or leave it blank to be filled in for the specific transaction.    

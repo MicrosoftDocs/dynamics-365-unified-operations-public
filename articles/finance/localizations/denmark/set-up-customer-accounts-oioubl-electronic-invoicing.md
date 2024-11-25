@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Set up customer accounts for OIOUBL electronic invoicing
-description: This task walks you through how to set up a customer account for OIOUBL electronic invoicing. 
+description: Learn how to set up a customer account for OIOUBL electronic invoicing, with the link that directs to a resource about customer electronic invoices in Denmark. 
 author: mrolecki
-ms.date: 02/02/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustTable, RegNumTaxIdLookup, smmContactPerson, DirPartyLookup, ContactPersonLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Denmark
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 02/02/2022
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User  
+ms.search.region: Denmark
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustTable, RegNumTaxIdLookup, smmContactPerson, DirPartyLookup, ContactPersonLookup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up customer accounts for OIOUBL electronic invoicing

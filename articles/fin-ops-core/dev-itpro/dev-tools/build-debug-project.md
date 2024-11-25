@@ -2,12 +2,13 @@
 title: Build and debug projects
 description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result.
 author: pvillads
-ms.date: 02/06/2019
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: pvillads
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/11/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
@@ -74,7 +75,7 @@ The rental company has had unfortunate events when customers rent cars using cre
 
 16. Press F10 a few times to step through the code, line-by-line, and use the full complement of debugger features. Notice that the **Locals** window updates the values of variables immediately with each statement that's executed.
 17. On the toolbar, click **Continue**, or press F5
-18. Close Internet Explorer to close the **Fleet Management** application. Visual Studio will exit the debugging mode. An alternative is to choose **Stop Debugging** from the **Debug** menu. This will leave Internet Explorer open, allowing the next debugging session to start faster.
+18. Close Microsoft Edge to close the **Fleet Management** application. Visual Studio will exit the debugging mode. An alternative is to choose **Stop Debugging** from the **Debug** menu. This will leave Microsoft Edge open, allowing the next debugging session to start faster.
 
 ## Add the validation code
 
@@ -202,7 +203,7 @@ The preceding code is straightforward. The method is marked as handler for the r
     
 13. Press F5 to continue. You'll see that the customer has been disallowed.
 14. In the same rental, change the customer name to Phil Spencer, and then click **Update**. This time, the transaction is allowed.
-15. Close Internet Explorer.
+15. Close Microsoft Edge.
 16. Comment out the **SubscribesTo** attribute on the **RentalFinalizedEventHandler** method. This step ensures that the credit card test will no longer run as you work on the remaining tutorials.
 
 ## Best practices

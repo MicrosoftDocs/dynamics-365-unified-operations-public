@@ -1,13 +1,13 @@
 ---
 title: All-in-one deployable packages
-description: This article describes the all-in-one deployable package concept and its use.
+description: Learn about the all-in-one deployable package concept and its use, including best practices for creating and managing packages.
 author: laneswenka
-ms.date: 05/20/2021
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 05/20/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
 ---

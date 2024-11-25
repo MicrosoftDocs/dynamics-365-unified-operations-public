@@ -1,19 +1,19 @@
 ---
 title: MX-00008 - Vendor registration IDs
-description: This procedure walks you through creating the vendor for Mexico to support DIOT declaration and other legal reports.
+description: Learn about creating the vendor for Mexico to support DIOT declaration and other legal reports with a step-by-step process.
 author: AdamTrukawka
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: VendTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # MX-00008 - Vendor registration IDs
 
 [!include [banner](../../includes/banner.md)]

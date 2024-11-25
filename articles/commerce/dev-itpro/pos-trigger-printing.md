@@ -2,10 +2,8 @@
 title: Store Commerce app triggers and printing
 description: This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 11/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -32,67 +30,63 @@ The following table lists the available triggers and denotes whether they can be
 
 | Trigger                   | Type           | Description                                                                                                                                          |
 |---------------------------|----------------|--------------|
-| ApplicationStartTrigger   | Non-cancelable | Executed after the POS application is started. You can revert or cancel whatever executed previously. |
-| ApplicationSuspendTrigger | Non-cancelable | Executed after the POS application is suspended.                                                                                     |
+| ApplicationStartTrigger   | Noncancelable | Executed after the POS application is started. You can revert or cancel whatever executed previously. |
+| ApplicationSuspendTrigger | Noncancelable | Executed after the POS application is suspended.                                                                                     |
 | PreLogOnTriggerTrigger    | Cancelable     | Executed before the POS log on.                                                                                                      |
-| PostLogOnTriggerTrigger   | Non-cancelable | Executed after the POS log on.                                                                                                       |
-| PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      | 
+| PostLogOnTriggerTrigger   | Noncancelable | Executed after the POS log on.                                                                                                       |
+| PostLogOffTrigger         | Noncancelable | Executed after the POS log off.                                                                                                      | 
 | PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | Executed before the manager override, this trigger will only work for non Microsoft Azure Active Directory (Azure AD) user authentication, if Azure AD is enabled this trigger will not work.   | 
+| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Microsoft Entra user authentication. If Microsoft Entra is enabled, this trigger won't work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 
-
 
 ## Cash management triggers
 
 | Trigger                      | Type           | Description                                                 |
 |------------------------------|----------------|-------------------------------------------------------------|
 | PreTenderDeclarationTrigger  | Cancelable     | Executed before the POS tender declaration. |
-| PostTenderDeclarationTrigger | Non-cancelable | Executed after the POS tender declaration.  |
+| PostTenderDeclarationTrigger | Noncancelable | Executed after the POS tender declaration.  |
 | PreFloatEntryTrigger         | Cancelable     | Executed before the POS float entry. |
-| PostFloatEntryTrigger        | Non-cancelable | Executed after the POS float entry.  |    
-
+| PostFloatEntryTrigger        | Noncancelable | Executed after the POS float entry.  |    
 
 ## Customer triggers
 
 | Trigger                   | Type                    | Description                                                        |Release    |
 |---------------------------|-------------------------|--------------------------------------------------------------------|-----------|
-| PreCustomerAddTrigger     | Cancelable              | Executed before adding a customer to the transaction.             |	 |
-| PostCustomerAddTrigger    | Non-cancelable          | Executed after adding a customer to the transaction.              |	 |
+| PreCustomerAddTrigger     | Cancelable              | Executed before the **Create customer** form is opened.             |	 |
+| PostCustomerAddTrigger    | Noncancelable          | Executed after the customer is created.              |	 |
 | PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |	 |
-| PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |	 |
+| PostCustomerClearTrigger  | Noncancelable          | Executed after the customer cleared from the cart. |	 |
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |	 |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |	 |
-| PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |	 |
-| PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |	 |
-| PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |	 |
-| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |	 |
+| PostCustomerSearchTrigger | Noncancelable          | Executed after customer search is performed.       |	 |
+| PostIssueLoyaltyCardTrigger  | Noncancelable          | Executed after the loyalty card is issued.       |	 |
+| PreCustomerSaveTrigger  | Cancelable          | Executed after the user selects the **Save** button, and before the customer is created or updated. The `isNewCustomer` value in the option indicates whether the operation is creating a new customer or editing an existing customer.     |	 |
+| PostCustomerSaveTrigger  | Noncancelable          | Executed after the customer is created or updated.       |	 |
 | PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |	 |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |	 |
-| PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |	 |
+| PostGetLoyaltyCardBalanceTrigger  | Noncancelable          | Executed after getting the loyalty card balance.       |	 |
 | PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |	 |
 | PreCustomerEditTrigger  | Cancelable          | Executed before editing the Customer.       |	10.0.19 |
-
-
 
 ## Discount triggers
 
 | Trigger                         | Type           | Description                                                                     |
 |---------------------------------|----------------|---------------------------------------------------------------------------------|
 | PreLineDiscountAmountTrigger    | Cancelable     | Executed before line discount amount is added to the cart line. |
-| PostLineDiscountAmountTrigger   | Non-cancelable | Executed after line discount amount added to the cart line.     |
+| PostLineDiscountAmountTrigger   | Noncancelable | Executed after line discount amount added to the cart line.     |
 | PreLineDiscountPercentTrigger   | Cancelable     | Executed before line discount percent added to the cart line.   |
-| PostLineDiscountPercentTrigger  | Non-cancelable | Executed after line discount percent added to the cart line.    |
+| PostLineDiscountPercentTrigger  | Noncancelable | Executed after line discount percent added to the cart line.    |
 | PreTotalDiscountAmountTrigger   | Cancelable     | Executed before total discount percent added to the cart.       |
-| PostTotalDiscountAmountTrigger  | Non-cancelable | Executed after total amount percent added to the cart.          |
+| PostTotalDiscountAmountTrigger  | Noncancelable | Executed after total amount percent added to the cart.          |
 | PreTotalDiscountPercentTrigger  | Cancelable     | Executed before total discount percent added to the cart.       |
-| PostTotalDiscountPercentTrigger | Non-cancelable | Executed after total discount percent added to the cart.        |
+| PostTotalDiscountPercentTrigger | Noncancelable | Executed after total discount percent added to the cart.        |
 | PreAddCouponTrigger             | Cancelable     | Executed before adding discount coupon to the cart.             |
-| PostAddCouponTrigger            | Non-cancelable | Executed after adding discount coupon to the cart.              |
+| PostAddCouponTrigger            | Noncancelable | Executed after adding discount coupon to the cart.              |
 
 ## Operation triggers
 
@@ -100,52 +94,52 @@ The following table lists the available triggers and denotes whether they can be
 |----------------------|----------------|-------------------------|
 | PreOperationTrigger  | Cancelable     | Generic trigger executed before all POS operations. You can use this trigger if there is no specific trigger available for a POS operation. |
 | PreOperationValidationTrigger | Cancelable | Generic trigger executed before the operation validation begins.   |
-| OperationFailureTrigger | Non-cancelable | Generic trigger executed after any POS operation failed.  |
-| PostOperationTrigger | Non-cancelable | Generic trigger executed after all POS operations. You can use this trigger if there is no specific trigger available for a POS operation.  |
+| OperationFailureTrigger | Noncancelable | Generic trigger executed after any POS operation failed.  |
+| PostOperationTrigger | Noncancelable | Generic trigger executed after all POS operations. You can use this trigger if there is no specific trigger available for a POS operation.  |
 
 ## Payment triggers
 
 | Trigger                 | Type           | Description                                                         |
 |-------------------------|----------------|---------------------------------------------------------------------|
 | PreAddTenderLineTrigger | Cancelable     | Executed before the payment line is added to the cart. |
-| PrePaymentTrigger       | Cancelable     | Executed after you click the pay button in POS.     |
-| PostPaymentTrigger      | Non-cancelable | Executed after all the payment processing is done.  |
+| PrePaymentTrigger       | Cancelable     | Executed after you select the pay button in POS.     |
+| PostPaymentTrigger      | Noncancelable | Executed after all the payment processing is done.  |
 | PreVoidPaymentTrigger   | Cancelable     | Executed before the payment line is voided in POS.  |
-| PostVoidPaymentTrigger  | Non-cancelable | Executed after the payment line is voided in POS.   |
+| PostVoidPaymentTrigger  | Noncancelable | Executed after the payment line is voided in POS.   |
 | PreTenderPaymentTrigger (10.0.21)  | Cancelable | Executed after the tender amount is selected in the payment view.   |
 
 ## Printing Triggers
 
 | Trigger                    | Type       | Description                                                                                                     |
 |----------------------------|------------|--------|
-| PrePrintReceiptCopyTrigger | Cancelable | Executed before the receipt copy is printed form the show journal screen or receipt view screen. |
-| PostReceiptPromptTrigger   | Non-cancelable | Executed after the receipt prompt - Do you want to print or not print receipt. |
+| PrePrintReceiptCopyTrigger | Cancelable | Executed before the receipt copy is printed from the show journal screen or receipt view screen. |
+| PostReceiptPromptTrigger   | Noncancelable | Executed after the receipt prompt (for example, "Do you want to print the receipt?"). |
 
 ## Product triggers
 
 | Trigger                    | Type           | Description                                                                          |
 |----------------------------|----------------|--------------------------------------------------------------------------------------|
-| PostGetSerialNumberTrigger | Non-cancelable | Executed after the serial number is added to the cart line.           |
+| PostGetSerialNumberTrigger | Noncancelable | Executed after the serial number is added to the cart line.           |
 | PreProductSaleTrigger      | Cancelable     | Executed before the product is added to the cart.                   |
-| PostProductSaleTrigger     | Non-cancelable | Executed after the product is added to the cart.                    |
+| PostProductSaleTrigger     | Noncancelable | Executed after the product is added to the cart.                    |
 | PreReturnProductTrigger    | Cancelable     | Executed before the return product is added to the cart.            |
-| PostReturnProductTrigger   | Non-cancelable | Executed after the return product is added to the cart.             |
+| PostReturnProductTrigger   | Noncancelable | Executed after the return product is added to the cart.             |
 | PreSetQuantityTrigger      | Cancelable     | Executed before the quantity information is updated in the cart line.  |
-| PostSetQuantityTrigger     | Non-cancelable | Executed after the quantity information is updated in the cart line.   |
+| PostSetQuantityTrigger     | Noncancelable | Executed after the quantity information is updated in the cart line.   |
 | PrePriceOverrideTrigger    | Cancelable     | Executed before the price is overridden for a cart line.               |
-| PostPriceOverrideTrigger   | Non-cancelable | Executed after the price is overridden for a cart line.                |
+| PostPriceOverrideTrigger   | Noncancelable | Executed after the price is overridden for a cart line.                |
 | PreClearQuantityTrigger    | Cancelable     | Executed before the quantity information is cleared from the cart line.|
-| PostClearQuantityTrigger   | Non-cancelable | Executed after the quantity information is cleared from the cart line. |
+| PostClearQuantityTrigger   | Noncancelable | Executed after the quantity information is cleared from the cart line. |
 | PreVoidProductsTrigger     | Cancelable     | Executed before the product is voided from the cart.                   |
-| PostVoidProductsTrigger    | Non-cancelable | Executed after the product is voided from the cart.                    |
-| PostPriceCheckTrigger      | Non-cancelable | Executed after the price check for the product is executed.          |
+| PostVoidProductsTrigger    | Noncancelable | Executed after the product is voided from the cart.                    |
+| PostPriceCheckTrigger      | Noncancelable | Executed after the price check for the product is executed.          |
 
 ## Sales order triggers
 
 | Trigger                 | Type           | Description                                                         |
 |-------------------------|----------------|---------------------------------------------------------------------|
 | PreRecallCustomerOrderTrigger 	| Cancelable     | Executed before the customer order is recalled. |
-| PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
+| PostRecallCustomerOrderTrigger	| Noncancelable | Executed after the customer order is recalled.  |
 | PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
 | PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during a customer order.|
 | PreGetFulfillmentLinesTrigger 	| Cancelable 	 | Executed before the Order fulfillment lines are loaded in the Order fulfillment view.|
@@ -160,46 +154,44 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallCustomerQuoteTrigger (10.0.18)	| Cancelable 	 | Executed before the customer quote is recalled from the recall order view.|
 | PostRecallCustomerQuoteTrigger (10.0.18)	| Non-Cancelable 	 | Executed after the customer quote is recalled from the recall order view.|
 
-
-
 ## Shift triggers
 
 | Trigger              | Type           | Description                                             | Release    |
 |----------------------|----------------|---------------------------------------------------------|--------------|
-| PostOpenShiftTrigger | Non-cancelable | This trigger is executed after the new shift is opened. | 	|
+| PostOpenShiftTrigger | Noncancelable | This trigger is executed after the new shift is opened. | 	|
 | PreCloseShiftTrigger | Cancelable | This trigger is executed before the shift is closed. |	|
 | PreResumeShiftTrigger | Cancelable | This trigger is executed before the shift is resumed. |10.0.16	|
-| PostResumeShiftTrigger | Non-cancelable | This trigger is executed after the shift is resumed. | 10.0.16 |
+| PostResumeShiftTrigger | Noncancelable | This trigger is executed after the shift is resumed. | 10.0.16 |
 
 ## Tax override triggers
 
 | Trigger                           | Type           | Description                                                                                     |
 |-----------------------------------|----------------|---------------|
 | PreOverrideLineProductTaxTrigger  | Cancelable     | Executed before the tax amount or code is overridden for a cart line.           |
-| PostOverrideLineProductTaxTrigger | Non-cancelable | Executed after the tax amount or code is overridden for a cart line.            |
+| PostOverrideLineProductTaxTrigger | Noncancelable | Executed after the tax amount or code is overridden for a cart line.            |
 | PreOverrideTransactionTaxTrigger  | Cancelable     | Executed before the tax amount or code is overridden for a cart or transaction. |
-| PostOverrideTransactionTaxTrigger | Non-cancelable | Executed before the tax amount or code is overridden for a cart or transaction. |
+| PostOverrideTransactionTaxTrigger | Noncancelable | Executed before the tax amount or code is overridden for a cart or transaction. |
 
 ## Transaction triggers
 
 | Trigger                            | Type           | Description                                                                                                                  |
 |------------------------------------|----------------|-------------------------------|
-| BeginTransactionTrigger            | Non-cancelable | Executed before the transaction is initialized.  |
+| BeginTransactionTrigger            | Noncancelable | Executed before the transaction is initialized.  |
 | PreConfirmReturnTransactionTrigger | Cancelable     | Executed before the return transaction is confirmed.  |
 | PreReturnTransactionTrigger        | Cancelable     | Executed before the return transaction is processed. |
-| PostReturnTransactionTrigger       | Non-cancelable | Executed after the return transaction is processed.   |
-| PreEndTransactionTrigger           | Cancelable     | Executed before the end transaction request is called to commit the changes to DB and close the transaction. |
-| PostEndTransactionTrigger          | Non-cancelable | Executed after the end transaction request is called to commit the changes to DB and close the transaction.  |
+| PostReturnTransactionTrigger       | Noncancelable | Executed after the return transaction is processed.   |
+| PreEndTransactionTrigger           | Cancelable     | Executed before the end transaction request is called to commit the changes to the database and close the transaction. |
+| PostEndTransactionTrigger          | Noncancelable | Executed after the end transaction request is called to commit the changes to the database and close the transaction.  |
 | PreVoidTransactionTrigger          | Cancelable     | Executed before the transaction is voided.         |
-| PostVoidTransactionTrigger         | Non-cancelable | Executed after the transaction is voided.        |
+| PostVoidTransactionTrigger         | Noncancelable | Executed after the transaction is voided.        |
 | PreSuspendTransactionTrigger       | Cancelable     | Executed before the transaction is suspended.   
-| PostSuspendTransactionTrigger      | Non-cancelable | Executed after the transaction is suspended.    |
+| PostSuspendTransactionTrigger      | Noncancelable | Executed after the transaction is suspended.    |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the transaction or order is recalled. |
-| PostRecallTransactionTrigger       | Non-cancelable | Executed after the transaction or order is recalled.  |
-| PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.     |
+| PostRecallTransactionTrigger       | Noncancelable | Executed after the transaction or order is recalled.  |
+| PostCartCheckoutTrigger            | Noncancelable | Executed after the checkout process is completed.     |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
-| PreSelectTransactionPaymentMethodTrigger       | Cancelable |  When the user selects the **Totals** button in the **Cart view - totals** panel, the available payment methods are shown and this trigger will get executed before this dialog is shown. You can us extension code to modify the available payment methods from this trigger.      |
+| PreSelectTransactionPaymentMethodTrigger       | Cancelable |  When the user selects the **Totals** button in the **Cart view - totals** panel, the available payment methods are shown and this trigger is executed before the dialog box is shown. You can use extension code to modify the available payment methods displayed from this trigger.      |
 | PreShipSelectedCartLinesTrigger       | Cancelable |  Executed when the product is selected for shipping.      |
 
 ## Reason code triggers
@@ -208,12 +200,14 @@ The following table lists the available triggers and denotes whether they can be
 | PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
 
 ## Transfer Order triggers
+
 | Trigger              | Type           | Description                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PreCreateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is created (executed after the order input). |
 | PreUpdateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is updated. |
 
 ## Inventory triggers
+
 | Trigger              | Type           | Description                                             | Release		|
 |----------------------|----------------|---------------------------------------------------------|--------------------------|
 | PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
@@ -227,6 +221,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreSaveStockCountJournalTrigger | Cancelable | This trigger is executed before the stock count journal is saved. | 10.0.16 |
 
 ## Business scenario
+
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
 
 To implement this scenario, you must complete these steps.
@@ -235,6 +230,8 @@ To implement this scenario, you must complete these steps.
 2. **CRT extension:** Generate the receipt data for printing.
 
 ## Implement a trigger
+
+To implement a trigger, follow these steps.
 
 1. Open Visual Studio 2015 in administrator mode.
 2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
@@ -429,9 +426,9 @@ To implement this scenario, you must complete these steps.
 
 ## Override the CRT receipt request to generate the receipt data
 
+The following procedure describes how to override an existing CRT request to print a receipt for suspended transactions. 
 
-This section explains how to override the existing CRT request to print a receipt for suspended transactions. 
-
+To override the CRT receipt request to generate the receipt data, follow these steps.
 
 1. Start Visual Studio 2015.
 2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).
@@ -683,31 +680,37 @@ This section explains how to override the existing CRT request to print a receip
 
 ## Add the custom receipt layout
 
+To add the custom receipt layout, follow these steps.
+
 1. Open Dynamics 365 Commerce.
-2. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Receipts formats**.
-3. Click **New** in **Receipts formats**.
+2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> **Receipts formats**.
+3. Select **New** in **Receipts formats**.
 4. In the **Receipt format filed** field, enter the format name **Suspend**. In the **Receipt type** field, select **CustomReceiptType7**.
-5. Click **Designer** to open the receipt designer.
-6. Follow the instructions if prompted to install. Enter the Azure Active Directory (AAD) credentials to launch the designer.
-7. Drag and drop the required field into the header, lines, or footer. Or, copy the from existing receipt format by using the copy feature and then edit it.
-8. Click **Save**.
-9. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Receipt profiles**.
-10. Select the **Email receipt** profile or the that profile you store. Click the **Add** button in the **General** tab.
+5. Select **Designer** to open the receipt designer.
+6. Follow the instructions if prompted to install. Enter the Azure Active AD credentials to launch the designer.
+7. Drag and drop the required field into the header, lines, or footer. Or, copy from the existing receipt format by using the copy feature and then edit it.
+8. Select **Save**.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Receipt profiles**.
+10. Select the **Email receipt** profile, or the profile you stores. Select the **Add** button on the **General** tab.
 11. In the **Receipt type**, select **CustomReceiptType7** and in the **Receipt format** select **Suspend**.
 12. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**.
-13. Select **Registers (1090)** and click **Run now** in the action bar. When prompted, click **Yes** to run the job. 
+13. Select **Registers (1090)**, and then select **Run now** on the action bar. When prompted, select **Yes** to run the job. 
 
 ## Configure the XPS printer for quick testing
 
-1. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Hardware profiles**.
+To configure the XPS printer for quick testing, follow these steps.
+
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 2. Select the hardware profile that your device is using. For example, in the demo data all the Houston devices uses **HW002**.
-3. Click **Edit** in the action bar.
+3. Select **Edit** on the action bar.
 4. Expand the **Printer** FastTab. In the **Printer** drop-down list, select **Windows driver** and in the device name field enter **Microsoft XPS Document Writer**.
-5. Click **Save**.
-6. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
-7. Select **Registers (1090)** and click **Run now** in the action bar. When prompted, click **Yes** to run the job. 
+5. Select **Save**.
+6. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+7. Select **Registers (1090)**, and then select **Run now** on the action bar. When prompted, select **Yes** to run the job. 
 
 ## Validate the extension
+
+To validate the extension, follow these steps.
 
 1. Press **F5** and deploy the POS to test your customization.
 2. After the POS starts, sign in to POS and add an item to a transaction.

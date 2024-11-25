@@ -1,40 +1,59 @@
 ---
-# required metadata
-
 title: Configure and install Retail hardware station
-description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
-author: jashanno
-ms.date: 04/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+description: This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. It also explains how to uninstall Retail hardware station.
+author: anush6121
+ms.author: anvenkat
+ms.date: 10/11/2024
+ms.topic: how-to
 ms.search.form: RetailHardwareStation
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure and install Retail hardware station
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
+This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
 
 > [!IMPORTANT]
-> It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+> - It is critical to note that this component uses a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+> - The use of self-signed certificates isn't allowed for hardware station installations. Instead, you should use a trusted third-party certificate.
+
+## Prerequisites
+
+When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
+- TLS 1.3\Server:Enabled=1
+- TLS 1.3\Client:Enabled=1
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
+
+When configuring hardware station for Commerce versions 10.0.41 and earlier, you must add the following registry entries to support TLS 1.2:
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
+
+> [!NOTE]
+> Any external applications or programs such as antivirus applications should exclude the registry entries listed above and the shared hardware station folder `C:\Users\RetailHardwareStationAppPool\AppData\Local\Microsoft Dynamics AX\Retail Hardware Station\`. This ensures that the registry entries and hardware station folders aren't deleted.
 
 ## Download Retail hardware station by using self-service
 
@@ -83,9 +102,9 @@ This article explains how to configure, download, and install the legacy Commerc
 5. Select the hardware station to download, and then select **Download**.
 
     > [!NOTE]
-    > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
+    > Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
-6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
+6. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
 
     > [!NOTE]
@@ -130,8 +149,7 @@ The Retail hardware station installer first extracts the associated files and th
 
     > [!NOTE]
     > - If the hardware station that was installed won't be used for payment-related work, don't close the **Install merchant information** window without completing the remaining steps. The hardware station won't work unless this installation is successfully completed.
-    
-    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used by until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
+    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
 
 8. The Install merchant information tool might request Azure AD credentials. Enter the Azure AD credentials of the user who is installing Retail hardware station.
 9. The Retail Server URL is determined through the Retail hardware station installation and is entered automatically. The installer uses this URL to load the list of stores that the user is connected to via the address book.
@@ -148,32 +166,42 @@ Current security standards state that the following options should be set in a p
 > The hardware station installer automatically makes these registry edits as part of the installation through self-service.
 
 - SSL should be disabled.
-- Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.
-
-    > [!NOTE]
-    > By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these values, follow these steps:
-    >
-    > 1. Press the Windows logo key+R to open a **Run** window.
-    > 2. In the **Open** field, type **Regedit**, and then select **OK**.
-    > 3. If a **User Account Control** window appears, select **Yes**.
-    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.2 only:
-    >
-    >    - TLS 1.2\\Server:Enabled=1
-    >    - TLS 1.2\\Server:DisabledByDefault=0
-    >    - TLS 1.2\\Client:Enabled=1
-    >    - TLS 1.2\\Client:DisabledByDefault=0
-    >    - TLS 1.1\\Server:Enabled=0
-    >    - TLS 1.1\\Client:Enabled=0
-    >    - TLS 1.0\\Server:Enabled=0
-    >    - TLS 1.0\\Client:Enabled=0
-    >    - SSL 3.0\\Server:Enabled=0
-    >    - SSL 3.0\\Client:Enabled=0
-    >    - SSL 2.0\\Server:Enabled=0
-    >    - SSL 2.0\\Client:Enabled=0
-
 - No additional network ports should be open, unless they are required for known, specified reasons.
 - Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
 - Only trusted certificate authorities should be used to procure certificates that will be used on computers that run Retail hardware station.
+- Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
+
+> [!NOTE]
+> By default, SSL and all versions of TLS except TLS 1.3 are disabled starting with Commerce versions 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead. To edit or enable these values, follow these steps:
+>   1. Select the Windows key + R to open a **Run** command window.
+>   1. In the **Open** field, enter "Regedit", and then select **OK**.
+>   1. If a **User Account Control** dialog appears, select **Yes**.
+>   1. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
+>      - The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only: 
+>        - TLS 1.3\Server:Enabled=1
+>        - TLS 1.3\Client:Enabled=1
+>        - TLS 1.2\Server:Enabled=1
+>        - TLS 1.2\Client:Enabled=1
+>        - TLS 1.1\Server:Enabled=0
+>        - TLS 1.1\Client:Enabled=0
+>        - TLS 1.0\Server:Enabled=0
+>        - TLS 1.0\Client:Enabled=0
+>        - SSL 3.0\Server:Enabled=0
+>        - SSL 3.0\Client:Enabled=0
+>        - SSL 2.0\Server:Enabled=0
+>        - SSL 2.0\Client:Enabled=0
+>
+>      - The following keys are automatically entered for Commerce versions 10.0.41 and earlier to allow for TLS 1.2 only:
+>        - TLS 1.2\Server:Enabled=1
+>        - TLS 1.2\Client:Enabled=1
+>        - TLS 1.1\Server:Enabled=0
+>        - TLS 1.1\Client:Enabled=0
+>        - TLS 1.0\Server:Enabled=0
+>        - TLS 1.0\Client:Enabled=0
+>        - SSL 3.0\Server:Enabled=0
+>        - SSL 3.0\Client:Enabled=0
+>        - SSL 2.0\Server:Enabled=0
+>        - SSL 2.0\Client:Enabled=0
 
 > [!IMPORTANT]
 > - Most common, lower-security software and services will stop working after all lower-security standards are disabled. To use them again, go to the preceding registry keys, and set the **Enabled** key from **0** to **1**.
@@ -188,7 +216,7 @@ Current security standards state that the following options should be set in a p
 - The computer that is running the Store Commerce app trusts the certificate that is used on the computer that runs Retail hardware station.
 
     - To verify this setup, in a web browser, go to the following URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
-    - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock symbol appears in the address bar. When you select this symbol, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
+    - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Microsoft Edge, a lock symbol appears in the address bar. When you select this symbol, Microsoft Edge verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
 
 - On the computer that runs Retail hardware station, the port that will be used by the hardware station is opened in the firewall.
 - Retail hardware station has properly installed merchant account information through the Install merchant information tool that runs at the end of the Retail hardware station installer.

@@ -4,22 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.28 (August 2022)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.28. 
 author: josaw1
-ms.date: 01/10/2023
+ms.date: 04/12/2024
 ms.topic: article
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2022-05-31 
 ms.dyn365.ops.version: 10.0.28
@@ -35,7 +27,6 @@ This article lists features that are either new or changed in Microsoft Dynamics
 - **Preview of release:** May 2022
 - **General availability of release (self-update):** July 2022
 - **General availability of release (auto-update):** July 2022
-
 
 ## Features included in this release
 

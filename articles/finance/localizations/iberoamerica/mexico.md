@@ -1,15 +1,13 @@
 ---
 title: Mexico overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Mexico.
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Mexico, including links directing to resources about electronic invoices.
 author: kfend
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: kfend
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -45,7 +43,7 @@ This article includes information and links to resources that can help you set u
 
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/mexico.html)
+<!-- Broken link - [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/mexico.html) -->
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

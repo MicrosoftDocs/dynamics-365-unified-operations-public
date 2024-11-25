@@ -1,15 +1,13 @@
 ---
 title: Data agnostic testing using the Regression Suite Automation Tool
-description: This article discusses the recommendations for data agnostic testing using the Regression Suite Automation Tool.
+description: Learn about the recommendations for data agnostic testing using the Regression Suite Automation Tool, including overviews on various frameworks.
 author: FrankDahl
-ms.date: 09/13/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 09/13/2019
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ---
@@ -24,7 +22,7 @@ While the functional validation of an ERP application can’t be fully data agno
 - ATL frameowrk
 - Regression Suite Automation Tool (RSAT)
 
-[![Test classification pyramid.](../../fin-ops/get-started/media/rsat-data-agnostic-testing-01.PNG)](/media/rsat-data-agnostic-testing-01.PNG)
+[![Test classification pyramid.](../../fin-ops/get-started/media/rsat-data-agnostic-testing-01.PNG)]
 
 ## Overview
 -	**SysTest framework** – The SysTest framework is reliable for writing unit tests. Because unit tests are generally testing a method or function, they should always be data agnostic and dependent only on the input data that is provided as part of the test.
@@ -36,7 +34,7 @@ While the functional validation of an ERP application can’t be fully data agno
     - o	Enter the unique identifiers, such as invoice numbers, through the number sequence or by using Microsoft Excel functions such as =TEXT(NOW(),"yyyymmddhhmm"). This function will provide a unique number every minute, which allows you to track when the action happened. This can be used for variables such as product receipt numbers and vendor invoice numbers. These tests continue to work on the same database again and again, without requiring any restoration.
     - Always set the **Edit mode** of the environment to **Read** or **Edit** as the first test case because the default option is **Auto**. The **Auto** options always uses the previous setting and can cause unreliable tests. 
  
-    [![Options page, Performance tab.](../../fin-ops/get-started/media/rsat-data-agnostic-testing-02.PNG)](/media/rsat-data-agnostic-testing-02.PNG)
+    [![Options page, Performance tab.](../../fin-ops/get-started/media/rsat-data-agnostic-testing-02.PNG)]
  
     - Only validate after you filter on a particular transaction instead of generic validation. For example, for the number of records, filter for the transaction number or the transaction date so that the validation excludes all other transactions. 
     - If you are checking a customer balance or budget check, save the value first and then add your transaction value to validate the expected result instead of validating a fixed expected value. 

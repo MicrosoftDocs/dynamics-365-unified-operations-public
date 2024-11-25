@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up earning codes and earning code groups
-description: This article explains how to set up earning codes and earning code groups.
+description: Learn about how to set up earning codes and earning code groups, including an outline on developing a list of the earning codes that you need.
 author: twheeloc
-ms.date: 08/21/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 08/21/2019
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221384
-ms.assetid: df18e3bb-bfad-45fb-8a6e-a3479e57b8df
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: df18e3bb-bfad-45fb-8a6e-a3479e57b8df
 ---
 
 # Set up earning codes and earning code groups

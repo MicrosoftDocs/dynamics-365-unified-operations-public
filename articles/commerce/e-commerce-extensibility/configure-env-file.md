@@ -2,18 +2,15 @@
 title: Configure a development environment (.env) file
 description: This article describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 03/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/19/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template 
 ---
 # Configure a development environment (.env) file
 
@@ -45,8 +42,8 @@ PORT=4000
 
 # MSDyn365_HOST variable defines the domain name of your customer-facing e-Commerce site. 
 #   When this variable is set, if the URL https://localhost:4000/ is opened in a development environment, 
-#   your e-Commerce site will be rendered locally. If your site is protected through Azure Active Directory 
-#   (Azure AD) credentials, a prompt for a user name and password will appear.
+#   your e-Commerce site will be rendered locally. If your site is protected through Microsoft Entra ID 
+#   (Microsoft Entra ID) credentials, a prompt for a user name and password will appear.
 
 MSDyn365_HOST=
 
@@ -96,7 +93,7 @@ Here is an example of a development environment URL that includes the port numbe
 
 ## MSDyn365\_HOST
 
-The **MSDyn365\_HOST** variable defines the domain name of your customer-facing e-Commerce site. When this variable is set, if the URL `https://localhost:4000/` is opened in a development environment, your e-Commerce site will be rendered locally. If your site is protected through Azure Active Directory (Azure AD) credentials, a prompt for a user name and password will appear.
+The **MSDyn365\_HOST** variable defines the domain name of your customer-facing e-Commerce site. When this variable is set, if the URL `https://localhost:4000/` is opened in a development environment, your e-Commerce site will be rendered locally. If your site is protected through Microsoft Entra credentials, a prompt for a user name and password will appear.
 
 The following example shows the syntax for this variable.
 
@@ -111,7 +108,7 @@ The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dyna
 The following example shows the syntax for this variable.
 
 ```text
-MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
+MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com/
 ```
 
 ## MSDyn365Commerce\_OUN
@@ -175,8 +172,6 @@ To get the CMS tenant ID in Dynamics 365 Commerce, follow these steps.
 1. In the **Select type** field, select **Images**.
 1. Select the first image.
 1. In the property pane on the right, find the URL in the **Public URL** field. Your CMS tenant ID is the string between **/cms/api/** and **/imageFileData**. For example, in the URL **../cms/api/fabrikam/imageFileData/..**, the CMS tenant ID is **fabrikam**.
-
-    ![Public URL field in Dynamics 365 Commerce.](media/obtain-tenant-id.png)
 
 After you've finished changing the .env file, restart the Node server by using the **yarn start** command.
 

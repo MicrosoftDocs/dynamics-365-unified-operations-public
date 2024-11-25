@@ -1,13 +1,14 @@
 ---
 title: Dual-write health check
-description: This article describes the dual-write configuration health check, including details on the error codes that can result from the health check.
+description: Learn about the dual-write configuration health check, including details on the error codes that can result from the health check.
 author: jaredha
-ms.date: 06/30/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: 
+ms.author: gned
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.search.region: global
-ms.author: jaredha
 ms.search.validFrom: 2023-06-06
 ---
 

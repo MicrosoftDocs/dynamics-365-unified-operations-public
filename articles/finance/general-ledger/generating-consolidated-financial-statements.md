@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Generate consolidated financial statements
-description: This article describes the various scenarios where you might generate consolidated financial statements.
-author: aprilolson
-ms.date: 07/09/2018
+description: Learn about the various scenarios where you might generate consolidated financial statements, including an outline on consolidations across legal entities.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/17/2024
+ms.custom: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
 ms.search.validFrom: 2018-5-31
+ms.search.form:
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Generate consolidated financial statements
@@ -125,8 +113,6 @@ Often, different legal entities have different charts of accounts but still want
 
 Multiple links to financial dimensions can be added to each row in the row definition for each unique company's chart of accounts. In the following illustration, the USMF company uses the set of accounts in the first **Link to Financial Dimensions** column (column J), and the DEMF company uses the accounts in the second **Link to Financial Dimensions** column (column K).
 
-> [!TIP]
-> For more information about the **Link to Financial Dimensions** cell, see Specify Link to Financial Dimensions cell.
 
 ![Set accounts first link to financial dimensions.](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Set accounts first link to financial dimensions")
 

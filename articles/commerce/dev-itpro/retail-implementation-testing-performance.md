@@ -2,20 +2,16 @@
 title: Testing and performance issues
 description: This article describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 02/01/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 05/28/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: andreash
+ms.author: anupamar
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: Retail 7.3
-ms.search.industry: Retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
-
 
 # Testing and performance issues
 
@@ -54,7 +50,6 @@ When you investigate store performance, follow the suggestions in [Retail Channe
 
 If you must troubleshoot the performance (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [Monitoring and diagnostics tools in Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics.md). That information should help you determine why some batch processes or form loads are slow.
 
-
 ### Performance testing
 
 Typically, when you test the performance of a system, you should focus on components where there is competition for many shared resources. These resources might differ for different projects, customers, or requirements.
@@ -80,6 +75,7 @@ After you've completed a performance fix, you should verify the fix in a test en
 Any fix of a larger performance issue should be followed by a new performance test. Often, a large issue masks other smaller issues. After the top issue is resolved, the next issues can be found and worked on until the performance meets the customer's expectations.
 
 ## Additional resources
+
 [Set up new environments, Azure DevOps, and branches for Commerce projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Update code and environments for Retail projects](./updating-environments.md)

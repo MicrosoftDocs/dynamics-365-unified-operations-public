@@ -1,18 +1,17 @@
 ---
 title: Customer sets for Latin America
-description: This article provides information about the customer set configuration for Latin America.
+description: Learn about the customer set configuration for Latin America, including prerequisites and an outline for setting up a customer set.
 author: Fhernandez0088
-ms.date: 01/31/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Customer sets for Latin America
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 You can define which document classes are allowed in transactions with customers. You can also define the predetermined document classes for transactions with specific customers.
 

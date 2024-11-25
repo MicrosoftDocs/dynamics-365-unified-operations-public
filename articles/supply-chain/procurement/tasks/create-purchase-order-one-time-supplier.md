@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create a purchase order for a one-time supplier
-description: This procedure shows you how to create a purchase order for a one-time supplier. 
-author: GalynaFedorova
+description: Learn how to create a purchase order for a one-time supplier, including a step-by-step process using the USMF demo data company. 
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac  
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder  
 ---
+
 # Create a purchase order for a one-time supplier
 
 [!include [banner](../../includes/banner.md)]

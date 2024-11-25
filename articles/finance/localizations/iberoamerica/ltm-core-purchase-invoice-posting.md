@@ -1,12 +1,12 @@
 ---
 title: Purchase invoice posting for Latin America
-description: This article provides information about the purchase invoice posting process for Latin America.
+description: Learn about the purchase invoice posting process for Latin America, including prerequisites and an outline on posting an invoice from a purchase order.
 author: Fhernandez0088
-ms.date: 05/26/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Purchase invoice posting for Latin America

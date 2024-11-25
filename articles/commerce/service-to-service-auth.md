@@ -2,13 +2,15 @@
 title: Configure Service-to-Service authentication
 description: This article describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
 author: gvrmohanreddy
-ms.date: 01/12/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Configure Service-to-Service authentication
@@ -21,7 +23,7 @@ Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) 
 
 ## Add a new app registration
 
-Before you add a new app registration, you must create an application by using the [Azure portal](https://portal.azure.com). To register an app in Azure Active Directory (Azure AD) and enable authentication, follow the steps in [Use Azure Active Directory with a custom connector in Power Automate](/connectors/custom-connectors/azure-active-directory-authentication).
+Before you add a new app registration, you must create an application by using the [Azure portal](https://portal.azure.com). To register an app in Microsoft Entra and enable authentication, follow the steps in [Use Microsoft Entra ID with a custom connector in Power Automate](/connectors/custom-connectors/azure-active-directory-authentication).
 
 Collect the following IDs from the Azure portal. You will need these IDs in the steps that follow.
 
@@ -86,4 +88,4 @@ To remove an existing app registration in Commerce site builder, follow these st
 
 [Import and export ratings and reviews](import-export-reviews.md)
 
-[Ratings and reviews FAQ](ratings-reviews-faq.md) 
+[Ratings and reviews FAQ](ratings-reviews-faq.md)

@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Formula designer
-description: This article explains how to use the formula designer to analyze and maintain formulas in a tree view.
-author: johanhoffmann 
-ms.date: 06/01/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PlanActivity, ReqSupplyDemandSchedule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: 
+description: Learn how to use the formula designer to analyze and maintain formulas in a tree view with an outline on analyzing formula structure.
+author: johanhoffmann
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article 
+ms.date: 06/01/2017
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 ---
 
 # Formula designer

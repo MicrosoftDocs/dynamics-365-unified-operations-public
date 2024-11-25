@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up a ledger account alias
-description: This procedure shows how to create an account alias that provides a shortcut for entering an account number. 
+description: Learn how to create an account alias that provides a shortcut for entering an account number, including a step-by-step process.
 author: aprilolson
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerAccountAlias   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/25/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerAccountAlias
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up a ledger account alias
 
 [!include [banner](../../includes/banner.md)]

@@ -1,15 +1,13 @@
 ---
 title: Sell and allocate product bundles
-description: This article describes how to work with product bundles on sales orders and related documents, and explains how bundle item prices are allocated to each bundle component.
-author: Henrikan
-ms.author: henrikan
+description: Learn how to work with product bundles on sales orders and related documents, and explains how bundle item prices are allocated to each bundle component.
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: how-to
+ms.date: 04/29/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: Customer
-ms.topic: how-to
-ms.date: 07/31/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Sell and allocate product bundles
@@ -64,7 +62,7 @@ After the sales order is confirmed, the parent item is still shown on the sales 
 
 ### Allocate prices to component items
 
-The sum of the component items must equal the **Bundle net amount** value of the parent item, because that value is the amount that's presented to the customer on the printed invoice. To ensure that the invoice matches the amounts that are posted to the general ledger, edits to the component items are limited. For example, the site and warehouse can't be changed, because those changes might trigger a price change based on a trade agreement.
+The sum of the component items must equal the **Bundle net amount** value of the parent item, because that value is the amount that's presented to the customer when the invoice is created. To ensure that the invoice matches the amounts that are posted to the general ledger, edits to the component items are limited. For example, the site and warehouse can't be changed, because those changes might trigger a price change based on a trade agreement.
 
 Because the sum of the components doesn't match the bundle price entered on the sales order in this example, the unit prices are recalculated and allocated to the components in the following way:
 
@@ -80,7 +78,7 @@ If changes are required for all component items, the parent item can be removed.
 
 ### Pick, pack, and ship the order
 
-While the sales order is being picked and packed, the internal documents show only the components of the product bundle. However, the packing slip and invoice must include a full product bundle. Otherwise, they can't be posted. For example, the dialog box shows three component items. If you try to delete one of them, you receive an error message that states that all products in the product bundle must be shipped before they can be invoiced.
+While the sales order is being picked and packed, only the components of the product bundle are shown. However, the packing slip and invoice must include a full product bundle. Otherwise, they can't be posted. For example, the dialog box shows three component items. If you try to delete one of them, you receive an error message that states that all products in the product bundle must be shipped before they can be invoiced.
 
 Each product bundle must be shipped and invoiced as a full bundle. For example, if you change the quantity of component item *1000* to *4*, but you leave the quantity of the other component items set to *5*, the packing slip and invoice can't be posted.
 
@@ -94,6 +92,43 @@ The invoice journal that's created after posting occurs doesn't include the pare
 
 The invoice journal must not include the parent item from the product bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab of the Action Pane, the credit note that's created will include the component items but not the parent item.
 
+## <a name="bundles-journals"></a>Product bundles in journals
+
+The *Product bundles in journals* feature extends the *Product bundle* feature. (Learn more in [Enable and set up product bundles](product-bundles-setup.md).) It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
+
+This section describes the changes that the *Product bundles in journals* feature introduces. These changes build on the features that were described earlier in this article.
+
+### Changes in sales confirmation journals
+
+After a sales order is confirmed, the parent item is still shown on the sales order, but its status is changed to *Canceled*. An additional status field, **Bundle line status**, represents the overall status across the components part of the product bundle. Use it to identify the overall status of the product bundle and its components on the sales order lines. A symbol in the **Type** column helps you identify which order line is a product bundle and which is a component. The net amount is tracked in the **Bundle net amount** field.
+
+Sales confirmation journal lines now contain information that's related to product bundles. This information is presented in the **Bundle parent** column. For each component journal line that's part of a bundle, the **Bundle parent** column shows the lot ID and name of the bundle. Use the **Group by** option on the **Bundle parent** column to see which components belong to which bundle.
+
+Product bundle information on the journal lines makes it possible to reprint sales confirmations correctly even after the sales order is deleted.
+
+### Changes in packing slip journals
+
+Sales packing slip journal lines now contain information that's related to product bundles. This information is presented in the **Bundle parent** column. For each component journal line that's part of a bundle, the **Bundle parent** column field shows the lot ID and name of the bundle. Use the **Group by** option on the **Bundle parent** column to see which components belong to which bundle.
+
+Product bundle information on the journal lines makes it possible to reprint sales packing slips correctly even after the sales order is deleted.
+
+### Changes in sales invoice journals
+
+Sales invoice journal lines now contain information that's related to product bundles. This information is presented in the **Bundle parent** column. For each component journal line that's part of a bundle, the **Bundle parent** column field shows the lot ID and name of the bundle. Use the **Group by** option on the **Bundle parent** column to see which components belong to which bundle.
+
+Product bundle information on the journal lines makes it possible to reprint sales invoices correctly even after the sales order is deleted.
+
+### Entity support for exporting sales confirmations and invoiced with bundle information
+
+The following data entities support bundle information on journal lines for sales confirmations and sales invoices. These entities let you send sales order confirmations and sales invoices that include product bundle lines to your customers.
+
+- **Sales order confirmation bundle parent lines** – This entity includes both root and intermediate bundle parent lines. To set criteria that define which lines are included, apply a filter on the *journal line type*. Select *bundle parent* to include only the bundle parent.
+- **Sales order confirmation lines including bundle component** – This entity includes standard sales order conformation transactions and bundle components, if they're available.​ To set criteria that define which lines are included, apply a filter on the *journal line type*. Select *standard* to exclude any components.
+- **Sales invoice bundle parent lines** – This entity includes both root and intermediate bundle parent lines. To set criteria that define which lines are included, apply a filter on the *journal line type*. Select *bundle parent* to include only the bundle parent.
+- **Sales invoice lines including bundle component** – This entity includes standard invoice transactions and bundle components, if they're available.​ To set criteria that define which lines are included, apply a filter on the *journal line type*. Select *standard* to exclude any components.
+
+The data that's exported through these entities resembles the data that's printed on sales confirmations and sales invoices.
+
 ## Important limitations
 
 The following important limitations apply when you use product bundle items:
@@ -103,7 +138,12 @@ The following important limitations apply when you use product bundle items:
 - Product bundle items aren't supported in direct deliveries.
 - Product bundle items aren't supported in delivery schedules.
 - The delivery type of the sales order line for bundle components is always *Stock*, regardless of the direct delivery setting on the released product.
-- You can reprint an invoice or sales order confirmation only if the related sales order that includes the product bundle order lines still exists. If the sales order lines have been deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
+- Unless you're using the *(Preview) Product bundles in journals* feature, you can reprint an invoice or sales order confirmation only if the related sales order that includes the product bundle order lines still exists. If the sales order lines were deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
 - Miscellaneous charges that are added to a parent item line aren't allocated to the component item lines when the parent item is exploded.
+
+## Related information
+
+- [Product bundles overview](product-bundles-overview.md)
+- [Enable and set up product bundles](product-bundles-setup.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

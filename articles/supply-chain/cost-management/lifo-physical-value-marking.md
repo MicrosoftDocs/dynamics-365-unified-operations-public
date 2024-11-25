@@ -1,16 +1,12 @@
 ---
 title: LIFO with physical value and marking
-description: Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
-author: JennySong-SH
-ms.date: 02/02/2022
+description: Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction with an outline on LIFO with marking.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-audience: Application User
+ms.date: 02/02/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ---
 
 # LIFO with physical value and marking

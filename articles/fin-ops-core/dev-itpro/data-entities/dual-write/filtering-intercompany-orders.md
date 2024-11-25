@@ -1,13 +1,13 @@
 ---
 title: Filter intercompany orders to avoid syncing Orders and OrderLines
-description: This article explains how to filter intercompany orders so that the Orders and OrderLines entities aren't synced.
+description: Learn about how to filter intercompany orders in order for the Orders and OrderLines entities to not be synced.
 author: negudava
-ms.date: 11/09/2020
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: negudava
+ms.topic: article
+ms.date: 11/09/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 

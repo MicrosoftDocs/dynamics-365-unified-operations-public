@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Subscription groups 
-description: This article outlines what is defined in subscription group.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn about what is defined in subscription group, including a list that defines number sequence codes, subscription frequencies, and additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMASubscriptionGroup
 ---
 
 # Subscription groups    
@@ -47,9 +31,7 @@ You can also complete the following tasks for all subscriptions that are attache
 
   - Post accrued revenue for subscription transactions.
 
-## See also
-
-[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
+## Related information
 
 [Set up subscription groups](set-up-subscription-groups.md)
 

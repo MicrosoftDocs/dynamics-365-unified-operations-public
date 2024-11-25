@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.38 (February 2024)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.38 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.38 preview release distributed in February 2024.
 author: twheeloc
-ms.date: 10/24/2023
-ms.topic: faq
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: faq
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 07/22/2024
+ms.reviewer: twheeloc 
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.38
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.38 (February 2024)
@@ -50,7 +37,7 @@ The following table lists the features that are included in this release. We mig
 | Cash and bank management | Generate NACHA payment file by Electronic reporting | This feature enables the generation of Electronic reporting (ER) for National Automated Clearing House Association (NACHA) payment files. To use this feature, users can import ER configurations under **Standard NACHA (US) - customers** and **Standard NACHA (US) - vendors**. | |
 | General ledger | Post foreign currency realized gains/losses for ledger settlements | <p>In Finance version 10.0.36, this feature posted foreign currency realized gains and realized losses for ledger settlements when the *reporting currency* values of the debits and credits differ. In Finance version 10.0.38, new capabilities are added that post foreign currency realized gains and realized losses for ledger settlements when the *accounting currency* values of the debits and credits differ.</p><p>This feature also changes the determination of whether a ledger settlement is fully settled. The feature now makes this determination based on the *transaction currency*, unless the ledger settlement and the transaction currencies differ for the marked transactions. In that case, the *accounting currency* values are used to determine whether the marked transactions are balanced. This feature doesn't support partial settlement. | Feature management |
 | Tax calculation | [Integration with project transactions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-finance/tax-calculation-service-integration-project-operations) | Tax calculation integration is now extended with the following Project management and accounting transactions in finance and operations apps: Project invoice proposal, Journals (Hour/Expense/Item/Fee), Project quotations, and Project Operations integration journal. | Parameter |
-| General Ledger | Performance enhancement for general ledger dimension set balance calculation | This feature enables your trial balance inquiry page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently, in less space, and enable the trial balance to show the current balance data more quickly. This feature uses process automation to keep the balance amounts up to date. | Feature management |
+| General Ledger | Performance enhancement for general ledger dimension set balance calculation | This feature enables your trial balance inquiry page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently, in less space, and enable the trial balance to show the current balance data more quickly. This feature uses process automation to keep the balance amounts up to date. For more information, see [New financial dimension sets](../general-ledger/financial-dimension-set-new.md). | Feature management |
 
 ## Feature enhancements included in this release
 
@@ -65,7 +52,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md).
+Dynamics 365 Finance version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).
 
 ### Bug fixes
 

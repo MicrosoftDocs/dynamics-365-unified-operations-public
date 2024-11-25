@@ -1,19 +1,17 @@
 ---
 title: Business document management overview
-description: This article provides information about how to use the Business document management feature of the ER framework.
+description: Learn about how to use the Business document management feature of the ER framework, including learning about supported Microsoft 365 applications.
 author: kfend
-ms.date: 04/23/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: overview
+ms.date: 04/23/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-08-01
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ms.dyn365.ops.version: 10.0.5
 ms.assetid: 
-ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ---
 
 # Business document management overview
@@ -421,7 +419,7 @@ Yes, you can. In the first application session, select **Open in Desktop App**. 
 
 ### When I select Open in Desktop App, I receive the following error message: "Value cannot be null. Parameter name: externalId." How do I work around this issue?
 
-Most likely you signed in to the current instance of the app of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance using the credentials of a user with the correct Azure AD domain.
+Most likely you signed in to the current instance of the app of the Microsoft Entra domain which differs from the Microsoft Entra domain that was used to deploy this instance. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance using the credentials of a user with the correct Microsoft Entra domain.
 
 ## Additional resources
 

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Budget plan narrative
-description: This article explains how to include a description and a revenue summary in a budget plan. 
-author: v-kiarnd
-ms.date: 06/29/2021
+description: Learn how to include a description and a revenue summary in a budget plan, including an outline and step-by-step process of setting up a budget plan narrative.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: BudgetPlan
-audience: Application User
-# ms.devlang: 
+ms.date: 06/29/2021
+ms.custom:
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author:  v-kiarnd
 ms.search.validFrom: 2021-02-05
+ms.search.form: BudgetPlan
 ms.dyn365.ops.version: 10.0.18
-
 ---
 
 # Budget plan narrative

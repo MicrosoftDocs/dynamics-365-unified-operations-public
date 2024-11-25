@@ -1,13 +1,13 @@
 ---
 title: Models and packages
-description: This article describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
-author: gianugo
-ms.date: 02/07/2020
+description: Learn about the concept of models and packages, including outlines on how to create new models, update parameters, and visualize dependencies between models.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 02/07/2020
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59

@@ -1,38 +1,23 @@
 ---
-# required metadata
-
 title: Validations, default values, and unmapped fields
-description: This article describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
-author: peakerbl
-ms.date: 10/28/2019
+description: Learn how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 10/28/2019
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 4624
+audience: Developer
 ms.assetid: 7ea995fa-8ea0-403d-8a68-f19993c40a6d
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Validations, default values, and unmapped fields
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields).
 

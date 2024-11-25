@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Enter an addition to a fixed asset
-description: This procedure shows how to add an addition to an existing fixed asset. 
+description: Learn how to add an addition to an existing fixed asset, with changes to the fixed asset value or service being made separate, including a step-by-step process.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetTable, AssetAddition   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetTable, AssetAddition
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Enter an addition to a fixed asset
 
 [!include [banner](../../includes/banner.md)]

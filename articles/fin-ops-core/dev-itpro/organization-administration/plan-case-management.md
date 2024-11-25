@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Plan case category security, case processes, and case categories
-description: This article describes the considerations and decisions that you must make during the planning process, before you begin to configure cases.
+description: Learn about the considerations and decisions that you must make during the planning process, before you begin to configure cases.
 author: kfend
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
 ---
 
 # Plan case category security, case processes, and case categories

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Address setup
-description: This article describes how to set up address formats for the global address book.
+description: Learn about how to set up address formats for the global address book, including overviews on defining address parameters and setting up address formats.
 author: jaredha
-ms.date: 09/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartyTable, DirPartyTableRoles
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 09/23/2021
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-09-23
+ms.search.form: DirPartyTable, DirPartyTableRoles
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Address setup

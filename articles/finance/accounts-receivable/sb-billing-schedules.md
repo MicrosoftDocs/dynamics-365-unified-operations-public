@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Create billing schedules
-description: This article explains how to create, delete, and edit billing schedules.
-author: JodiChristiansen
-ms.date: 01/30/2023
+description: Learn about how to create, delete, and edit billing schedules, including step-by-step processes for creating billing schedules and removing line items.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 539093
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jchrist
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Create billing schedules

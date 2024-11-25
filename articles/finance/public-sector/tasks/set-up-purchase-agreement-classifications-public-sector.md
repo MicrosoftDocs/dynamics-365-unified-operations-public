@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up purchase agreement classifications in the public sector
-description: The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
+description: The purchase agreement classification allows you to control the administrative information that is available on purchase agreements.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AgreementClassification   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: AgreementClassification
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up purchase agreement classifications in the public sector
 
 [!include [banner](../../includes/banner.md)]

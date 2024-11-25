@@ -6,9 +6,6 @@ description: This article provides an example of a business event.
 author: twheeloc
 ms.date: 03/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -30,8 +27,6 @@ ms.dyn365.ops.version: Human Resources
 # Business event example
 
 This article provides an example of a business event.
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 ## Set up a flow for assigned task notification
 
@@ -79,8 +74,6 @@ This article provides an example of a business event.
     substring(body('Read_business_event')?['BusinessProcessTaskId'], 1, sub(length(body('Read_business_event')?['BusinessProcessTaskId']),2)),
 
     Depending on the format of field, the value must be converted to **String** format. This conversion isn't required if the format of the field is already **String**. For example, because the format of **AssignedWorkerPersonnelNumber** is **String**, the field value is used.
-
-    ![Configuring Get a record.](./media/get-record4.png)
 
 12. Use the **Outlook** (or **Teams**) connector to send notifications.
 13. Select **Add dynamic content** to add dynamic content to the notification.

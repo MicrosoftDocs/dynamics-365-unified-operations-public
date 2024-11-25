@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Synchronize products with inventory unit from Supply Chain Management to Field Service
-description: This article discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
-author: Henrikan
-ms.date: 03/13/2019
+description: Learn about the templates and underlying task used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 06/10/2024
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: IT Pro
 ms.search.region: global
-ms.search.industry: 
-ms.author: henrikan
-ms.dyn365.ops.version: 8.1.3 
+ms.dyn365.ops.version: 8.1.3
+ms.search.form:
 ms.search.validFrom: 2018-12-01
-
 ---
 
 # Synchronize products with inventory unit from Supply Chain Management to Field Service
@@ -33,7 +19,7 @@ ms.search.validFrom: 2018-12-01
 
 This article discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSProductsOW.png)](/media/FSProductsOW.png)
+![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSProductsOW.png)
 
 The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template. For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).
 
@@ -63,7 +49,7 @@ The following illustrations show the template mapping in Data integration.
 
 ### Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products
 
-[![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProduct1.png)](/media/FSProduct1.png)
+![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProduct1.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up payment slip format for project invoices
-description: This article explains how to attach printed payment slips to project invoices and provide a payment reference for posting and settlement. 
+description: Learn how to attach printed payment slips to project invoices and provide a payment reference for posting and settlement.
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: OMLegalEntity, CustFormletterParameters   
+ms.custom:
+ms.reviewer: johnmichalak 
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: OMLegalEntity, CustFormletterParameters
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up payment slip format for project invoices
 
 [!include [banner](../../includes/banner.md)]

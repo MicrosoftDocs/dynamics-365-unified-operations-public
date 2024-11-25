@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Research or resolve exceptions
-description: Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
-author: abruer
+description: Vendor invoice policies run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/11/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Research or resolve exceptions
 
 [!include [banner](../../includes/banner.md)]

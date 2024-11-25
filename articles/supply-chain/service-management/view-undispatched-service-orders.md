@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: View undispatched service orders   
-description: This article describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.
-author: sorenva
-ms.date: 05/07/2018
+description: Learn how to view activities in a service order that don’t have a worker assigned to them from a dispatch team, including a step-by-step process.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMADispatchBoard
 ---
 
 
@@ -50,9 +34,7 @@ This article describes how to view activities in a service order that don’t ha
 
 5.  To view a list of service orders that don’t have a dispatch team assigned, click the **Undispatched** tab.
 
-## See also
-
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
+## Related information
 
 [Service activities](service-activities.md)
 

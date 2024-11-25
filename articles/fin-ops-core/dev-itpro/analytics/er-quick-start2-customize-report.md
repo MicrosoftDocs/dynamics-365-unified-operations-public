@@ -1,21 +1,18 @@
 ---
 title: Adjust an ER format to generate a custom electronic document
-description: This article explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
+description: Learn how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: kfend
-ms.date: 06/22/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.custom: 220314
+ms.topic: article
+ms.date: 06/22/2020
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.dyn365.ops.version: Version 7.0.0
+ms.assetid: 
 ---
 
 # Adjust an ER format to generate a custom electronic document

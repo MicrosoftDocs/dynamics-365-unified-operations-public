@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Process electronic payment remittances
-description: You can create the instructions for electronic payment of vendor invoices that must be sent to the bank.
+description: Learn how you can create the instructions for electronic payment of vendor invoices that must be sent to the bank, including a step-by-step process.
 author: v-gonode
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Brazil 
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: kfend
+ms.topic: article
+ms.date: 06/20/2017
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update
 ---
 

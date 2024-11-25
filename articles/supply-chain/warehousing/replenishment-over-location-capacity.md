@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Replenishment over location capacity
-description: This article provides information about the Replenishment over location capacity feature. This feature enables all replenishment work that will be required for the day to be created and manages availability of that replenishment work to ensure that the picking location neither runs out of inventory nor goes above capacity. 
+description: Learn about the Replenishment over location capacity feature, which enables all replenishment work required for the day to be created.
 author: Mirzaab
-ms.date: 07/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.7
+ms.topic: article
+ms.date: 07/16/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 ---
 
 # Replenishment over location capacity

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: What's new or changed for the Indian GST localization in 10.0.13 (September 2020)
-description: This article describes new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for the APAC India Goods and Services Tax (GST) features.
+description: Learn about new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for APAC India Goods and Services Tax (GST) features.
 author: prabhatb
-ms.date: 10/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: prabhatb
-ms.search.validFrom: 
+ms.topic: whats-new
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
+ms.reviewer: johnmichalak 
+ms.search.region: India
 ms.dyn365.ops.version: 10.0.13
-
 ---
 
 # What's new or changed for the Indian GST localization in 10.0.13 (September 2020)
@@ -74,7 +62,7 @@ Tax liability of TCS can accrue when payment is received. Per the new section, 2
 #### Dynamics AX 2012 R3
 
 - For information about the update for AX 2012 R3, see the following KB article: ["Tax collection at Source" (TCS) on sale of goods for India in Dynamics AX2012R3](https://support.microsoft.com/help/4574595).
-- [Download the package](https://download.microsoft.com/download/1/7/b/17b20afb-bc1a-4a2a-b385-5ccaa5f8e13c/DynamicsAX2012R3-KB4576331.EXE).
+<!-- Broken link - [Download the package](https://download.microsoft.com/download/1/7/b/17b20afb-bc1a-4a2a-b385-5ccaa5f8e13c/DynamicsAX2012R3-KB4576331.EXE). -->
 - Use [Issue search in Microsoft Dynamics Lifecycle Services (LCS)](https://fix.lcs.dynamics.com/Issue/Details?bugId=3982561).
 - Prerequisite for AX 2012 R3: Install KB 4528707 before you install the [TCS feature](https://download.microsoft.com/download/f/e/6/fe65747f-891f-4d11-b45c-65b2b4cea05a/DynamicsAX2012R3-KB4528707.EXE).
 

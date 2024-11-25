@@ -1,20 +1,17 @@
 ---
 title: Advanced formatting options in financial reporting
-description: This article describes advanced formatting functions, including filters, restrictions, non-printing rows, and conditional statements in calculations.
+description: Learn about advanced formatting functions, including filters, restrictions, non-printing rows, and conditional statements in calculations.
 author: panolte
-ms.date: 04/26/2019
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/26/2019
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Global
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 106571
-ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
 ms.search.form: FinancialReports
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
 ---
 
 # Advanced formatting options in financial reporting

@@ -1,18 +1,18 @@
 ---
 title: Set up interest and fines for vendor payments (Brazil)
 description: You must set up accounts for financial interest and fines, default codes for interest and fines, and interest codes and fine codes for vendors and purchase orders.
-author: AdamTrukawka
-ms.date: 06/26/2017
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up interest and fines for vendor payments (Brazil)
 
 [!include [banner](../../includes/banner.md)]

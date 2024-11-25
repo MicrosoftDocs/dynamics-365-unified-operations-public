@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Uptake of Dimension Entry controls
-description: Describes the Dimension Entry control and associated Controller classes.
+description: Learn about the Dimension Entry control and associated Controller classes, including outlines on the general approach and properties.
 author: RyanCCarlson2
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: Developer
-# ms.devlang:
-ms.reviewer: kfend
-# ms.tgt_pltfrm:
+ms.author: rcarlson
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
 ms.search.region: Global
-# ms.search.industry:
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Uptake of Dimension Entry controls
@@ -386,8 +374,6 @@ parmDimensionEntryControlHeader(
 
 
 ## Additional resources
-
-[Migrate default dimensions controls to Dimension Entry controls](dimension-entry-control-migration.md)
 
 [Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
 

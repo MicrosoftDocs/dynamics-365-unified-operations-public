@@ -1,24 +1,21 @@
 ---
 title: Withholding tax declaration for Egypt
-description: This article explains how to configure and generate the withholding tax declarations for Egypt.
-author: AdamTrukawka
-ms.date: 03/08/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to configure and generate the withholding tax declarations for Egypt, including an outline on downloading electronic reporting configurations.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.search.scope: 
 ---
 
 #  Withholding tax declaration for Egypt (EG-00005)
 
 [!include[banner](../../includes/banner.md)]
-[!include[banner](../../includes/preview-banner.md)]
 
 ## Overview
 This article explains how to set up and generate the withholding tax declaration and the withholding tax declaration forms 41 and 11 for legal entities in Egypt 

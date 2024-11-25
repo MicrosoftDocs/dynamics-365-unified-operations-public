@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Customer transactions list page
-description: This article provides information about the Customer transactions list page for Microsoft Dynamics 365 Finance.
-author: abruer
-ms.date: 08/28/2018
+description: Learn about the Customer transactions list page for Microsoft Dynamics 365 Finance, including outlines on viewing settlements and global transactions.
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  CustTrans
-audience: Application User
-# ms.devlang: 
+ms.date: 08/28/2018
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
+ms.search.form: CustTrans
 ms.dyn365.ops.version: 8.0.4
 ---
 

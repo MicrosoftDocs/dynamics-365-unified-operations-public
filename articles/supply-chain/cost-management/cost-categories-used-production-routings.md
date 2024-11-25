@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Cost categories used in production routing
-description: This article provides information about cost categories that apply to manufacturing environments that use routing.
-author: JennySong-SH
-ms.date: 06/20/2017
+description: Learn about cost categories that apply to manufacturing environments that use routing, including an outline on associated cost records.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProjCategory, RouteCostCategoryPrice
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: ProjCategory, RouteCostCategoryPrice
 ms.assetid: a3fdc76c-0a27-4723-b1c7-4322f707d89e
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Cost categories used in production routing

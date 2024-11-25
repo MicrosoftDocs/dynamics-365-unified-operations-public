@@ -1,5 +1,260 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-connected-applications.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-customer-certificates-secrets.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-parameters#create-a-key-vault-reference",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-service-environments.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-create-sharepoint-connection.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-sharepoint-connection",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-key-vault-azure-portal.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-azure-resources.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-rcs.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-sign-up-install.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-overview.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-administration-integration-components.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-administration-integration-components",
+      "redirect_document_id": "false"
+    },   
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-service-overview.md",
+      "redirect_url": "dynamics365/finance//localizations/global/gs-e-invoicing-service-overview",
+      "redirect_document_id": "false"
+    },   
+    {
+      "source_path": "articles/finance/cash-bank-management/letters-of-credit.md",
+      "redirect_url": "dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/human-resources/hr-admin-setup-provision.md",
+      "redirect_url": "dynamics365/human-resources/hr-admin-setup-provision-fo",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-ax2012.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-vcruntime.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/human-resources//hr-admin-integration-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/welcome",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
+      "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/perf-test/perfsdk-tutorial-lbd.md",
+      "redirect_url": "https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/brazil/e-invoicing-bra-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/brazil/latam-bra-nf-e-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/iberoamerica/e-invoicing-mex-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/iberoamerica/latam-mex-cfdi-electronic-invoices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-admin-whats-new.md",
+      "redirect_url": "/dynamics365/human-resources/whats-new-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/finance-insights/finance-insights-troubleshooting-faq.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/finance-insights/finance-insights-troubleshooting-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/business-performance-analytics/bus-matrix.md",
+      "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/business-performance-analytics/field-mappings.md",
+      "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
+      "redirect_document_id": "false"
+    },      
+    {
+      "source_path": "articles/human-resources/hr-teams-leave-app.md",
+      "redirect_url": "/human-resources/hr-app",
+      "redirect_document_id": "false"
+    },   
+    {
+      "source_path": "articles/human-resources/hr-admin-teams-leave-app.md",
+      "redirect_url": "/human-resources/hr-app",
+      "redirect_document_id": "false"
+    },   
+     {
+      "source_path": "articles/finance/general-ledger/add-change-acctg-rprtg-crrncy.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/add-change-accounting-reporting-currency",
+      "redirect_document_id": "false"
+    },    
+     {
+      "source_path": "articles/finance/cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/cash-bank-management/settlement-overview-resolve-issues",
+      "redirect_document_id": "false"
+    }, 
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
+      "redirect_document_id": "false"
+    }, 
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-issues-connecting-to-financial-reporting",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/unable-to-connect-financial-reporting-server",
+      "redirect_document_id": "false"
+    },
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
+      "redirect_document_id": "false"
+    },     
+     {
+      "source_path": "articles/finance/general-ledger/cant-reverse-transctns.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/cant-reverse-transactions",
+      "redirect_document_id": "false"
+    },  
+     {
+      "source_path": "articles/finance/general-ledger/yec-mssng-open-blnces.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/year-end-close-miss-opening-balances",
+      "redirect_document_id": "false"
+    },  
+     {
+      "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
+      "redirect_document_id": "false"
+    },        
+     {
+      "source_path": "articles/finance/general-ledger/dimension-default-values.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/finance/general-ledger/posting-fail-imbalance.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/posting-fail-imbalance",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/finance/general-ledger/open-fincl-jrnls-in-office.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/custom-excel-template-financial-journals-not-available",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
+      "redirect_url": "dynamics365/fin-ops-core/fin-ops",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery.md",
+      "redirect_url": "/power-platform/admin/business-continuity-disaster-recovery",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
+      "redirect_url": "dynamics365/finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/norway/emea-pol-vat-declaration.md",
+      "redirect_url": "dynamics365/fin-ops-core/localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/ltm-set-up-legal-entity-tax-uruguay.md",
+      "redirect_url": "dynamics365/fin-ops-core/localizations/poland/emea-pol-vat-declaration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/link-your-environment.md",
+      "redirect_url": "fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md",
+      "redirect_url": "fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
       "redirect_url": "../apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
@@ -1692,11 +1947,6 @@
     {
       "source_path": "articles/finance/localizations/e-invoicing-install-add-in-microservices-lcs.md",
       "redirect_url": "global/e-invoicing-install-add-in-microservices-lcs",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
-      "redirect_url": "dev-itpro/e-invoicing-power-platform-plug-in",
       "redirect_document_id": "false"
     },
     {
@@ -27360,8 +27610,638 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md ",
+      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md",
       "redirect_url": "../supply-chain-dev/production-floor-execution-styles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/finance/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/sensor-data-intelligence/sdi-scenario-anomaly.md",
+      "redirect_url": "/dynamics365/supply-chain/sensor-data-intelligence/sdi-home-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/faq-sdi-spike.md",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/BPA-self-help-2.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-budget-err00002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-3.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-main-account-in-budget-err00003",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-4.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-journal-entries-err00004",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-5.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/mismatch-between-debits-and-credits-err00005",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-6.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-data-err00006",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-7.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-transaction-header-err00007",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-1.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-general-ledger-err00001",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/cost.md",
+      "redirect_url": "/dynamics365/commerce/dom-costs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/wms-only-mode-using.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/wms-only-mode-shared-and-external-detail-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/rebate-management/rebate-management-enable.md",
+      "redirect_url": "/dynamics365/supply-chain/rebate-management/rebate-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/demand-planning/intercompany-planning-groups-demand-forecasting.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/intercompany-planning-groups-demand-forecasting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/config-job-card-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/report-progress-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/worker-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-worker-accounts.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/purchase-order-changes-after-confirmation-enable.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-converthtmltojson.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmllocalechanger.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/migrate-dynamicsax2012.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/preparing-content.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/procurement-sourcing.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-sourcing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/task-recorder-retail-pos.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-rsat.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-adyen.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-cf-e-sat.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-commerce-localization.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-deployment.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce-cancel-return.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce-contingency-mode.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-localization.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-prepayments.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-setup.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-fpi-sample.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-simplified-address.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/tasks/set-up-project-resource-information.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/tasks/submit-approve-project-budget.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/tasks/submit-approve-project-budget-revision.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/localizations/rus-goods-transit-postponed.md",
+      "redirect_url": "/dynamics365/supply-chain/localizations/russia/rus-goods-transit-postponed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/copliot-generative-help.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/copilot/enable-copliot-generative-help.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot-generative-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/base-price-determination-rules.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/base-price-versions.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/concurrence-cross-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/concurrence-within-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/customer-product-attribute-groups.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/discounts.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/margin-discount-pricing-rules.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/margin-price-adjustments.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-attribute-groups.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-attributes-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-attributes-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-component-code.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-component-posting.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-details.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-multiple.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-single.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/pricing-management-enable.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/sales-trade-agreement-prices.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/vendor-list-price.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-overview.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-faq.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/migrate-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path": "articles/commerce/dev-itpro/cloud-dev-box.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-build-pipeline.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/mpos-build-agent.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-run-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/ecommerce-platform-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/configure-online-store.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/configure-authentication-providers.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-packaging.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-app-signing-certificate.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/hybridapp.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/cancel-return-order.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/cancel-return-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/create-item-replacement-order.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/create-item-replacement-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/delete-return-order.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/delete-return-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/disposition-and-return-reason-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/disposition-and-return-reason-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/packing-slip-updates-returns.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/packing-slip-updates-returns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/pass-returned-items-on-to-inspection.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/pass-returned-items-on-to-inspection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/perform-invoice-updates-for-returns.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/perform-invoice-updates-for-returns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/post-arrival-journal-for-returned-products.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/post-arrival-journal-for-returned-products",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/receive-partial-deliveries-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/receive-partial-deliveries-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/receiving-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/receiving-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/register-the-receipt-of-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/register-the-receipt-of-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/return-cost-price-and-return-lot-id.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/return-cost-price-and-return-lot-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/set-up-disposition-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/set-up-disposition-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/set-up-return-reason-code.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/set-up-return-reason-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/specify-how-to-dispose-of-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/specify-how-to-dispose-of-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/take-returned-items-through-inspection.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/take-returned-items-through-inspection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/sales-returns.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/sales-returns",
       "redirect_document_id": false
     }
   ]

@@ -1,20 +1,16 @@
 ---
 title: Optimization advisor overview
-description: This article describes how you can use Optimization advisor to help ensure optimal configuration of finance and operations.
+description: Learn about how you can use Optimization advisor to help ensure optimal configuration of finance and operations.
 author: kamaybac
-ms.date: 07/23/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: global
 ms.author: kamaybac
+ms.topic: overview
+ms.date: 07/23/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.assetid: 
-ms.search.industry: 
 ms.search.form: SelfHealingWorkspace
+ms.dyn365.ops.version: 7.3
 ---
 
 # Optimization advisor overview

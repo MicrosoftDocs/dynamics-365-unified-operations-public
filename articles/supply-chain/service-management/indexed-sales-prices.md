@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Indexed sales prices   
-description: You set up the index for a subscription sales price when you create a subscription fee.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how you can set up the index for a subscription sales price when you create a subscription fee, including additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionCreateDialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: SMASubscriptionCreateDialog
 ---
 
 # Indexed sales prices  
@@ -38,7 +21,7 @@ In the **Create subscription fee** form, set the **Get pricing from** field to *
 
 For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.
 
-## See also
+## Related information
 
 [Create subscription fee transactions](create-subscription-fee-transactions.md)
 

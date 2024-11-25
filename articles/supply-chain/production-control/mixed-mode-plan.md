@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Mixed mode planning - Combine discrete, process, and lean sourcing
-description: This article provides information about mixed mode planning. 
+description: Learn about mixed mode planning, including outlines on supply policies, materials allocation cross-supply policy, and process manufacturing. 
 author: johanhoffmann
-ms.date: 11/03/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: article
+ms.date: 11/03/2017
+ms.reviewer: kamaybac
+ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
+ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ---
 
 # Mixed mode planning - Combine discrete, process, and lean sourcing

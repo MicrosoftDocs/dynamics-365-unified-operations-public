@@ -1,12 +1,13 @@
 ---
 title: Insert data
-description: This article describes how to insert data into tables by using X++.
+description: Learn how to insert data into tables by using X++, including X++ code examples for various methods such as the insert and DoInsert methods.
 author: josaw1
-ms.date: 06/16/2020
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/16/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Service order stages  
-description: By defining the stages for a service order and assigning them to workers, you control the flow of a service order through the tasks that various people perform in the service organization.
-author: sorenva
-ms.date: 04/30/2018
+description: Learn how you can control the flow of a service order through the tasks that various people perform in the service organization.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable, SMAStageTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/30/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable, SMAStageTable
 ---
 
 # Service order stages   
@@ -39,7 +23,7 @@ You can also define the actions that are permitted at each stage. For example, i
 
 When you set up a service stage, you can create multiple options, or branches, to select from for the next service stage. All the branches that you create are available to select from when the initial stage is completed. For example, you set up **Planning** as an initial stage. You create two stages named **In process** and **Cancel**, and then select **Planning** as the parent for them. You assign the **Planning** stage to sales order. When the planning stage for the sales order is completed, you can select the **In process** stage if the sales order is ready to work on, or you can select the **Cancel** stage if the sales order is canceled.
 
-## See also
+## Related information
 
 [Set up service order stages](set-up-service-order-stages.md)
 

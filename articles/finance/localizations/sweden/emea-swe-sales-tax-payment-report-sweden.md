@@ -1,19 +1,16 @@
 ---
 title: Sales tax report for Sweden
-description: This article explains how to set up and generate the sales tax report for legal entities in Sweden.
-author: AdamTrukawka
-ms.date: 05/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up and generate the sales tax report for legal entities in Sweden, including an outline and process on setting up report layouts.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Sweden
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 262684
-ms.search.form: 
 ---
 
 # Sales tax report for Sweden
@@ -72,7 +69,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
+Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-tax-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
 ## <a name="generate"></a> Generate a sales tax payment and print the Swedish sales tax report
 

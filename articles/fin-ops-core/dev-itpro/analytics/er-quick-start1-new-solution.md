@@ -1,21 +1,18 @@
 ---
 title: Design a new ER solution to print a custom report
-description: This article explains how to design an Electronic reporting (ER) solution to print a custom report.
+description: Learn how to design an Electronic reporting (ER) solution to print a custom report, including additional resources.
 author: kfend
-ms.date: 08/10/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.custom: 220314
+ms.topic: article
+ms.date: 08/10/2020
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.dyn365.ops.version: Version 7.0.0
+ms.assetid: 
 ---
 
 # Design a new ER solution to print a custom report

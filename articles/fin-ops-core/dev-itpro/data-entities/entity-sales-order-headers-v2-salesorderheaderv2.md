@@ -1,16 +1,12 @@
 ﻿---
 title: Sales order headers V2 entity
-description: Definition of the Sales order headers V2 data entity in finance and operations migration projects with Dynamics 365.
-ms.date: 04/28/2023
-ms.topic: article
+description: Learn about the Sales order headers V2 data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
 ms.author: katiehav
-searchScope: dynamics-365-daf
-ms.service: dynamics-365
-ms.subservice: guidance
+ms.topic: article
+ms.date: 04/28/2023
 ms.collection: FastTrack
 ---
-
 
 # Sales order headers V2
 

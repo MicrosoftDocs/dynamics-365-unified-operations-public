@@ -1,12 +1,13 @@
 ---
 title: GenericValue type
-description: Generic value control type.
+description: Learn about the generic value control type, which includes the container, generic, getDatSource, and hidden properties and various methods.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # GenericValue type

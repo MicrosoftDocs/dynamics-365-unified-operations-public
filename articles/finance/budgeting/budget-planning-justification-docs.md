@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Budget planning justification documents
-description: Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary. 
-author: panolte
-ms.date: 01/12/2018
+description: Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetPlanJustificationTemplate
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/12/2018
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 259594
-ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: BudgetPlanJustificationTemplate
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ---
 
 # Budget planning justification documents

@@ -1,23 +1,19 @@
 ---
 title: Category requests from vendors
-description: This article describes how vendors can request procurement categories for their account. It also describes the approval process that is completed by procurement agents.
-author: GalynaFedorova
-ms.date: 04/19/2021
+description: Learn how vendors can request procurement categories for their account, including an outline on the approval process that is completed by procurement agents.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
-ms.search.form: VendRequestNewCategory
-audience: Application User
+ms.date: 04/19/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: gfedorova
-ms.search.validFrom: 2021-04-19
-ms.dyn365.ops.version: 10.0.18
+ms.search.form: VendRequestNewCategory
 ---
 
 # Category requests from vendors
 
 [!include [banner](../includes/banner.md)]
 
-The category request process lets vendors request that new procurement categories be associated with their account. Those procurement categories can then be used by the related procurement and sourcing processes. (For more information, see [Procurement catalogs overview](procurement-catalogs.md).)
+The category request process lets vendors request that new procurement categories be associated with their account. Those procurement categories can then be used by the related procurement and sourcing processes. (Learn more in [Procurement catalogs overview](procurement-catalogs.md).)
 
 Category requests are initiated by vendors in the **Vendor information** workspace. They are then submitted to your agency for review and approval. Approved categories are added to the list of procurement categories for the vendor's account.
 
@@ -33,7 +29,7 @@ Before a vendor can interact with category requests, it must be set up for vendo
 
 The vendor must have at least one vendor collaboration user. Only vendor users with the *Vendor admin (external)* security role can create and submit category requests.
 
-For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
+Learn more in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
 ## Set up the Vendor category request workflow
 

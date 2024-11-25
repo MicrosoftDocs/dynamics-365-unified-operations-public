@@ -1,35 +1,22 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.17 (April 2021)
-description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.17 preview release.
+description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.17 preview release distributed in April 2021.
 author: kfend
-ms.date: 01/25/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2021-01-25 
+ms.topic: whats-new
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: 10.0.17
-
 ---
+
 # What's new or changed in Dynamics 365 Finance 10.0.17 (April 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
 

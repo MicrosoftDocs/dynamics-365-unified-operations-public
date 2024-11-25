@@ -1,20 +1,18 @@
 ---
 title: Electronic invoicing for Australia and New Zealand
-description: This article provides information to help you get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance.
+description: Learn about how to get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance (RCS).
 author: ilikond
-ms.date: 09/01/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Australia, New Zealand
 ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Australia, New Zealand
 ms.search.validFrom: 2023-09-01
-ms.dyn365.ops.version: AX 10.0.37
-ms.custom: 574542
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.37
 ---
 
 # Electronic invoicing for Australia and New Zealand

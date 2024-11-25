@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Dimension-based product configuration overview
 description: Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
-author: t-benebo
-ms.date: 07/25/2019
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
 ms.collection: get-started
+ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
 ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Dimension-based product configuration overview

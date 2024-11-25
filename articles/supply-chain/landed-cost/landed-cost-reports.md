@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Landed cost reports
-description: This article describes how to find and use the various types of reports that are available for the Landed cost module.
-author: Weijiesa
-ms.date: 02/01/2021
+description: Learn how to find and use the various types of reports that are available for the Landed cost module, including a step-by-step process.
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysOperationTemplateForm
-audience: Application User
-# ms.devlang: 
+ms.date: 02/01/2021
+ms.custom:
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2021-02-21
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: SysOperationTemplateForm
 ---
 
 # Landed cost reports

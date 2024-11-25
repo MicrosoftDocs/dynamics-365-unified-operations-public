@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Set up multiple element revenue allocation
-description: This article describes how to set up the parameters for multiple element revenue allocation in Subscription billing.
+description: Learn how to set up the parameters for multiple element revenue allocation in Subscription billing, including an overview on elemnent revenue allocation parameters.
 author: JodiChristiansen
-ms.date: 11/04/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 11/04/2021
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Set up multiple element revenue allocation

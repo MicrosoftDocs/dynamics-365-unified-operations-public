@@ -1,19 +1,17 @@
 ---
 title: Report definitions in financial report designer
-description: This article provides information about report definitions.
+description: Learn about report definitions in financial report designer, including overviews on creating a report definition and contents of a report definition.
 author: aprilolson
-ms.date: 11/22/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: aolson
+ms.topic: article
+ms.date: 11/22/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
-ms.search.form: FinancialReports
 ---
 
 # Report definitions in financial report designer
@@ -28,7 +26,7 @@ A report definition is a report component (or building block) that uses a row de
 - Financial and Account
 - Financial, Account, and Transaction
 
-However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.
+However, depending on how data is stored in Microsoft Dynamics 365 Finance, transaction details might not be available in reports.
 
 ## Create a report definition
 1. In Report designer, on the **File** menu, click **New**, and then select **Report definition**.

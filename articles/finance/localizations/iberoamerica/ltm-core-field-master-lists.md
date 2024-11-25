@@ -1,12 +1,12 @@
 ---
 title: Field list configuration for Latin America
-description: This article provides information about how to configure field lists for Latin America.
+description: Learn about how to configure field lists for Latin America, including prerequisites and an outline and process for creating a field list.
 author: Fhernandez0088
-ms.date: 09/05/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Field list configuration for Latin America

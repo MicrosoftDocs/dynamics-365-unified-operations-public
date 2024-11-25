@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Landed cost vs. Transportation management
-description: Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation, Transportation management (TMS) and Landed cost. This article summarizes the functionality that the two modules have in common and highlights the differences between them.
-author: Weijiesa
-ms.date: 12/04/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+description: Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation, Transportation management (TMS) and Landed cost.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: conceptual
+ms.date: 05/27/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2020-12-04
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: 
 ---
 
 # Landed cost vs. Transportation management
@@ -45,7 +31,7 @@ TMS and Landed cost use different terms for similar concepts. The following tabl
 | **Route**<p>A *route* is the physical path of a transport from origin to destination.</p> | **Journey**<p>A *journey* is the physical path of a transport from origin to destination. Each voyage must be assigned to a journey.</p> | |
 | **Route segments**<p>A route can have multiple *route segments*, each of which represents a step of the journey. A route can include multiple carriers or services, each of which is considered a route segment.</p> | **Legs**<p>Each journey can have multiple *legs*, each of which represents a step of the journey. A leg can be part of transportation, duty handling, or another activity.</p> | |
 | **Containers**<p>A *container* can be any kind of package or packaging that is used by TMS.</p> | **Shipping containers**<p>A *shipping container* is a literal, physical shipping container, as known from container ships.</p> | |
-| **Commodity codes**<p>In TMS (and in other places in Supply Chain Management), *commodity codes* identify types of commodities. They can affect tariffs, handling of hazardous materials, and so on.</p> | **Commodity codes**<p>In Landed cost, *commodity codes* are established at the level of the legal entity. They are mostly used for reporting.</p> | Landed cost can also use the commodity codes that are used for TMS and other places in Supply Chain Management. However, the Landed cost commodity codes are used only by Landed cost. |
+| **Commodity codes**<p>In TMS (and in other places in Supply Chain Management), *commodity codes* identify types of commodities. They can affect tariffs, handling of hazardous materials, and so on.</p> | **Commodity codes**<p>In Landed cost, *commodity codes* are established at the level of the legal entity. They're mostly used for reporting.</p> | Landed cost can also use the commodity codes that are used for TMS and other places in Supply Chain Management. However, the Landed cost commodity codes are used only by Landed cost. |
 
 ### Some reference data isn't shared
 
@@ -53,12 +39,12 @@ TMS and Landed cost don't share reference data for entities such as cost setup, 
 
 ### <a name="intercompany-reports"></a>Intercompany reports don't work with goods in transit
 
-The following reports don't work in conjunction with the goods in transit feature that Landed cost provides:
+The following reports don't work with the goods in transit feature that Landed cost provides:
 
 - [Intercompany goods in transit totals report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 - [Intercompany goods in transit transactions report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-transactions-report-intercompanygoodsintransittransactions)
 
-These reports assume that goods are put in transit as soon as you issue a sales packing slip, and that they are taken into inventory from transit upon receipt. However, goods in transit aren't processed in this way. Therefore, if you use the goods in transit and intercompany features together, the results for both these reports will be incorrect.
+These reports assume that goods are put in transit as soon as you issue a sales packing slip, and that they're taken into inventory from transit upon receipt. However, goods in transit aren't processed in this way. Therefore, if you use the goods in transit and intercompany features together, the results for both these reports will be incorrect.
 
 ## Using the two modules together
 
@@ -68,7 +54,7 @@ In general, we don't recommend that you use both modules together for inbound op
 
 ## Goods in transit
 
-One of the primary features of Landed cost is its ability to process goods in transit. Goods in transit processing lets you take financial ownership of shipped items before they are physically received at the destination warehouse. Goods in transit processing is often required for international trade.
+One of the primary features of Landed cost is its ability to process goods in transit. Goods in transit processing lets you take financial ownership of shipped items before they're physically received at the destination warehouse. Goods in transit processing is often required for international trade.
 
 ### TMS goods in transit features
 
@@ -78,11 +64,11 @@ TMS doesn't currently support goods in transit processing.
 
 Goods in transit processing is a primary feature of Landed cost and provides the following functionality:
 
-- **Goods in transit warehouses** – A goods in transit warehouse can be associated with each warehouse in Supply Chain Management. Goods are transferred to goods in transit warehouses after the original purchase order is invoiced. Items that are physically reserved there become unavailable for consumption until they are received at their physical warehouse. Therefore, you can take financial ownership of goods by invoicing the purchase order.
+- **Goods in transit warehouses** – A goods in transit warehouse can be associated with each warehouse in Supply Chain Management. Goods are transferred to goods in transit warehouses after the original purchase order is invoiced. Items that are physically reserved there become unavailable for consumption until they're received at their physical warehouse. Therefore, you can take financial ownership of goods by invoicing the purchase order.
 - **Goods in transit general ledger account** – Landed cost adds a specific general ledger posting account to the purchase order posting profile to handle goods in transit processing. This goods in transit general ledger account acts as an account of the "goods invoiced not received" type. When the original purchase order is invoiced, and the goods in transit order is created, the direct purchase order cost is posted to the goods in transit general ledger account until the goods are received at their final physical location.
-- **Tracking control updates** – Goods in transit orders support tracking control functionality in Landed cost. Tracking control lets you update the expected date of arrival of goods while they are in transit. Tracking control then updates the voyage and the associated purchase order lines. The expected delivery date is then available for master planning and logistics.
+- **Tracking control updates** – Goods in transit orders support tracking control functionality in Landed cost. Tracking control lets you update the expected date of arrival of goods while they're in transit. Tracking control then updates the voyage and the associated purchase order lines. The expected delivery date is then available for master planning and logistics.
 - **Triggering of over/under transactions** – If a variance occurs between the expected goods on a voyage line and the actual goods that are received at the warehouse, Landed cost resolves it by creating over and/or under transactions. You can then manage these transactions, based on that way that you want to process them, through either a purchase order or a movement journal. The over and under transactions provide a link back to the voyage, the original purchase order, and the new movement journal or purchase order for the variance.
-- **Goods in transit orders** – Landed cost introduces a new source document that is known as a *goods in transit order*. A goods in transit order lets you invoice the original purchase order to take financial ownership of the items. When the purchase order is invoiced, the new source document is created for each purchase order line that has a combination of inventory dimensions. Goods are then physically moved to a goods in transit warehouse, where they are physically reserved against the goods in transit order and can't be consumed unless goods in transit orders are received.
+- **Goods in transit orders** – Landed cost introduces a new source document that is known as a *goods in transit order*. A goods in transit order lets you invoice the original purchase order to take financial ownership of the items. When the purchase order is invoiced, the new source document is created for each purchase order line that has a combination of inventory dimensions. Goods are then physically moved to a goods in transit warehouse, where they're physically reserved against the goods in transit order and can't be consumed unless goods in transit orders are received.
 
 ## Miscellaneous charges and shipment costs
 
@@ -98,15 +84,15 @@ In TMS, miscellaneous charges can be apportioned, or divided, by the weight, vol
 
 ### Landed cost charge and cost features
 
-Landed cost provides a set of cost functions that handle additional costs that are associated with the shipment of goods. These costs are known as auto costs, and they are applied at the time of initial shipment invoicing by using the estimated cost amount. Each cost type is managed in its own posting. After the actual invoices for overhead costs are posted, the estimated costs are automatically updated to reflect the actual costs.
+Landed cost provides a set of cost functions that handle additional costs that are associated with the shipment of goods. These costs are known as auto costs, which are applied at the time of initial shipment invoicing by using the estimated cost amount. Each cost type is managed in its own posting. After the actual invoices for overhead costs are posted, the estimated costs are automatically updated to reflect the actual costs.
 
-Additionally, the overhead costs that are associated with the shipment of goods can be invoiced during the voyage from the port of origin or any time after the goods are received. This capability provides greater flexibility for the consumption of goods.
+Additionally, the overhead costs that are associated with the shipment of goods can be invoiced during the voyage from the port of origin or anytime after the goods are received. This capability provides greater flexibility for the consumption of goods.
 
 The following list outlines some concepts for the charge and cost features in Landed cost:
 
 - **Cost area** – Costs and charges can be assigned to different levels, or *cost areas*, on a voyage. The cost can be applied at the voyage level and broken down to each item in the voyage. Additionally, costs can be applied at the level of the container, purchase order, item, or transfer order. Each cost charge can be managed separately across the various areas and is broken down to a per-item cost.
 - **Apportionment methods** – Several apportionment methods are available in Landed cost. Cost charges can be apportioned by quantity, dollar amount, value, weight, volume, measurement, or a user-defined volumetric measure.
-- **Clearing/variance control** – Cost charges are set up as their own cost code type in Landed cost. Each cost code type lets you define a clearing account for estimated costs charges, and also accrual and purchase price variance accounts for variances in estimated costs versus actual costs. When the estimated costs are initially posted, there is a credit to the clearing account. After the actual invoices are posted, the actual cost charges are posted, and the estimated costs are debited out of the clearing account.
+- **Clearing/variance control** – Cost charges are set up as their own cost code type in Landed cost. Each cost code type lets you define a clearing account for estimated costs charges, and also accrual and purchase price variance accounts for variances in estimated costs versus actual costs. When the estimated costs are initially posted, there's a credit to the clearing account. After the actual invoices are posted, the actual cost charges are posted, and the estimated costs are debited out of the clearing account.
 
 ## Matching freight bills and invoices
 
@@ -114,7 +100,7 @@ The following list outlines some concepts for the charge and cost features in La
 
 TMS can match freight bills that contain estimated costs and invoices with the actual cost of the freight. Invoices can be received either electronically or on paper. Matching variance between the estimated cost and actual cost doesn't affect the inventory valuation.
 
-For more information, see [Reconcile freight in transportation management](../transportation/reconcile-freight-transportation-management.md).
+Learn more in [Reconcile freight in transportation management](../transportation/reconcile-freight-transportation-management.md).
 
 ### Landed cost bill and invoice matching features
 
@@ -122,7 +108,7 @@ Landed cost can match freight bills to estimated cost charges and can invoice th
 
 ## Tracking
 
-An important feature of both TMS and Landed cost is the ability to track goods and identify where they are in the journey from the point of origin to the final destination warehouse. Tracking lets you follow and update where the goods are located and when they are expected to arrive at the warehouse for consumption. In addition to the status of goods during their journey, Landed cost provides expected and actual dates for each step of the journey.
+An important feature of both TMS and Landed cost is the ability to track goods and identify where they are in the journey from the point of origin to the final destination warehouse. Tracking lets you follow and update where the goods are located and when they're expected to arrive at the warehouse for consumption. In addition to the status of goods during their journey, Landed cost provides expected and actual dates for each step of the journey.
 
 ### TMS tracking features
 
@@ -144,7 +130,7 @@ The journey concept identifies where the goods are in the process and controls t
 
 In TMS, routes can be broken down into route segments to represent multi-leg journeys. TMS can allocate spot rates and accessorial charges to individual route segments.
 
-For more information, see [Plan freight transportation routes with multiple stops](../transportation/plan-freight-transportation-routes-multiple-stops.md).
+Learn more in [Plan freight transportation routes with multiple stops](../transportation/plan-freight-transportation-routes-multiple-stops.md).
 
 ### Landed cost multi-leg journey features
 
@@ -154,9 +140,9 @@ In every leg of a journey, you can further define the status of each purchase or
 
 ## Receiving by container
 
-It can be important to manage how goods are split and stored on a vessel. On a vessel, goods can be kept in one container or multiple containers. When goods are received, they are received in containers, and different containers on a voyage might be received at different times or on different dates.
+It can be important to manage how goods are split and stored on a vessel. On a vessel, goods can be kept in one container or multiple containers. When goods are received, they're received in containers, and different containers on a voyage might be received at different times or on different dates.
 
-Both TMS and Landed cost provide functionality for managing the receipt of goods in a container. TMS uses the concept of loads to manage the goods, purchase orders, and transfer orders that are associated with a shipment container. TMS supports receiving on the basis of a packaging structure that is received through an advance shipping notice (ASN). Landed cost uses the concept of shipping containers to process purchase orders and control overhead costs that are associated with a container on a vessel.
+Both TMS and Landed cost provide functionality for managing the receipt of goods in a container. TMS uses the concept of loads to manage the goods, purchase orders, and transfer orders that are associated with a shipment container. TMS supports receiving based on a packaging structure received through an advance shipping notice (ASN). Landed cost uses the concept of shipping containers to process purchase orders and control overhead costs that are associated with a container on a vessel.
 
 ### TMS receiving by container features
 
@@ -164,7 +150,7 @@ TMS supports inbound ASNs, all variants of receiving through the Warehouse Manag
 
 ### Landed cost receiving by container features
 
-To support receiving by container, Landed cost creates shipping container records and associates purchase orders with a specific shipping container by using its container ID. Overhead costs can then be applied to that shipping container and broken down so that they are associated with the relevant purchase orders.
+To support receiving by container, Landed cost creates shipping container records and associates purchase orders with a specific shipping container by using its container ID. Overhead costs can then be applied to that shipping container and broken down so that they're associated with the relevant purchase orders.
 
 Containers in Landed cost can be received through a new type of receipt that is known as a *goods in transit receipt*, through arrival journals, or through mobile device receiving. When arrival journals are used, the quantities can be initialized from the goods in transit order or the original purchase order lines in the container. Landed cost provides two work types for receiving through the Warehouse Management mobile app.
 
@@ -180,7 +166,7 @@ TMS lets you identify vendor and routing solutions for inbound and outbound orde
 
 TMS provides full rate shopping and freight optimization through the rate route workbench, flexible rating options through the rating engine, a rating engine API for integration with external parties, and support for volumetric weight.
 
-For more information, see [Transportation management engines](../transportation/transportation-management-engines.md).
+Learn more in [Transportation management engines](../transportation/transportation-management-engines.md).
 
 ### Landed cost rate shopping features
 

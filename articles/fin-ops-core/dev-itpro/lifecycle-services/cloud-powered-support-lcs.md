@@ -1,15 +1,13 @@
 ---
 title: Manage support experiences for finance and operations apps
-description: This article provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents.
+description: Learn about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents and support plans in Lifecycle Services.
 author: sericks007
-ms.date: 02/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 02/16/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0fa10573-8146-446e-8124-8a7af9546add
@@ -106,7 +104,7 @@ The following incidents and support benefits will appear based on your sign in, 
 -   Individual incidents and 5 packs purchased on [support.microsoft.com/supportforbusiness]. 
 
    > [!NOTE]
-   > Incidents must be purchased with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Azure Active Directory accounts cannot have incidents tied to them.
+   > Incidents must be purchased with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Microsoft Entra accounts cannot have incidents tied to them.
 
 ### Tenant subscription
 The following entitlements will appear based on your subscription and ProDirect
@@ -133,4 +131,3 @@ We prefer that you contact Support following the steps in [Open a new incident](
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -1,19 +1,15 @@
 ---
 title: Change the captions of forms through extension
-description: This article explains how to change the form caption that helps the user identify the current page in a web browser.
+description: Learn about how to change the form caption that helps the user identify the current page in a web browser, with an example of what the form caption should appear.
 author: ivanv-microsoft
-ms.date: 07/10/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 07/10/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Change the captions of forms through extension

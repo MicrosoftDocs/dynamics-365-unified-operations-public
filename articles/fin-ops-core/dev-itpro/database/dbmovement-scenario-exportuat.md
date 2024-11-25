@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Export a copy of the standard user acceptance testing (UAT) database
-description: This article explains a database export scenario for finance and operations.
+description: Learn about a database export scenario for finance and operations, including known limitations and prerequisites.
 author: LaneSwenka
-ms.date: 03/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/13/2024
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Export a copy of the standard user acceptance testing (UAT) database
@@ -31,7 +18,7 @@ ms.dyn365.ops.version: 8.1.3
 
 Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to export all the data and transactions from a sandbox standard user acceptance testing (UAT) environment.
 
-In this tutorial, you will learn how to:
+In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 > * Refresh the UAT environment.
@@ -39,14 +26,14 @@ In this tutorial, you will learn how to:
 > * Download the database backup.
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
-As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into the development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into the development environment. In this way, the customer is able to debug specific transactions, or develop new features and reports by using realistic datasets.
 
 > [!IMPORTANT]
 > Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
 
 ## Known limitations
 
-Because of recent restrictions by the Microsoft Azure SQL Database platform, we don't recommend that you export your database if it's larger than 200 gigabytes (GB). If you must export a larger database, we recommend that you use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until SQL Database can support larger exports. Note that this recommendation applies to export operations, not refresh operations. Refresh operations can support databases that are up to 4 terabytes (TB) in size.
+Because of recent restrictions by the Microsoft Azure SQL Database platform, Microsoft doesn't recommend that you export your database if it's larger than 200 gigabytes (GB). If you must export a larger database, Microsoft recommends that you use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until SQL Database can support larger exports. This recommendation applies to export operations, not refresh operations. Refresh operations can support databases that are up to 4 terabytes (TB) in size.
 
 ## Prerequisites
 
@@ -62,7 +49,7 @@ This refresh operation overwrites the UAT environment with the latest copy of th
 
 ## Import the database
 
-After you've downloaded a database backup (.bacpac) file, you can begin the manual import operation on your Tier 1 environment. When you import the database, we recommend that you follow these guidelines:
+After you download a database backup (.bacpac) file, you can begin the manual import operation on your Tier 1 environment. When you import the database, Microsoft recommends that you follow these guidelines:
 
 - Keep a copy of the existing AxDB database, so that you can revert to it later if you must.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
@@ -73,7 +60,7 @@ To ensure the best performance, copy the \*.bacpac file to the local computer th
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200 /TargetUser:"axdbadmin" /TargetPassword:"AOSWebSite@123" /TargetTrustServerCertificate:True
 ```
 
-Here is an explanation of the parameters:
+Here's an explanation of the parameters:
 
 - **tsn (target server name)** – The name of the Microsoft SQL Server instance to import into.
 - **tdn (target database name)** – The name of the database to import into. The database should **not** already exist.
@@ -182,15 +169,18 @@ To switch environments and use the new database, first stop the following servic
 - Microsoft Dynamics 365 Unified Operations: Batch Management Service
 - Management Reporter 2012 Process Service
 
-After these services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
+After these services are stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 
 ### Post steps for Commerce environments
-If you are using Commerce channels, when importing a database to a developer environment, which was originally exported from a self-service sandbox, the following additional steps must be performed on the destination developer environment. Without completing these steps, Commerce channels will not function.
+If you're using Commerce channels, when you import a database that you originally exported from a self-service sandbox to a developer environment, the following additional steps must be performed on the destination developer environment. If you don't complete these steps, Commerce channels won't function.
 
-1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
-2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail self-service deployable package.
+1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update to create the channel database.
+2.	To restore any previously deployed channel database extensions, reapply the corresponding Retail self-service deployable package.
+
+> [!NOTE]
+> Starting with Commerce version 10.0.38, the collated/legacy channel database is no longer updated or supported. To restore Commerce channel functionality, you must set up a sealed CSU following the instructions in [Install Commerce Scale Unit on a development environment](/dynamics365/commerce/dev-itpro/install-csu-dev-env)
 
 ### Reprovision the target environment
 
@@ -211,7 +201,7 @@ In the client, enter the values that you documented for the encrypted and enviro
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Select **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**. |
 | FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework (DIXF). |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
-| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
+| HcmWorkerActionHire.PersonIdentificationNumber           | This field is obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
 | SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by Application Object Server (AOS). It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
@@ -220,7 +210,7 @@ In the client, enter the values that you documented for the encrypted and enviro
 
 Are you looking for more tools to help you import backup files into your developer environments? Here are some other sources of information:
 
-* [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that have been created by the community.
+* [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools created by the community.
 * [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
 
 ## Known issues
@@ -229,11 +219,11 @@ Are you looking for more tools to help you import backup files into your develop
 
 If the automation from LCS times out, the state of the export database is changed to **Preparation failed**. The export operation to export to the Asset library is still running in SQL Database. To resolve this issue, you can use the **Resume** button to reconnect the process with SQL Database. The process should then be successfully completed.
 
-### The export database takes a very long time
+### The export database takes a long time
 
-The Azure SQL team recently announced that the Import/Export application programming interface (API) that LCS uses has variable execution times for any database that is over 200 GB in size. If you encounter this issue, you can either [connect your DevTest environment directly to the UAT database](dbmovement-scenario-debugdiag.md) or follow the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). We don't recommend that you export databases for backup purposes, because the point-in-time restore functionality is available and included with your environment.
+The Azure SQL team announced that the Import/Export application programming interface (API) that LCS uses has variable execution times for any database that is over 200 GB in size. If you encounter this issue, you can either [connect your DevTest environment directly to the UAT database](dbmovement-scenario-debugdiag.md) or follow the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). Microsoft doesn't recommend that you export databases for backup purposes, because the point-in-time restore functionality is available and included with your environment.
 
-The Lifecycle Services team is working directly with the Azure SQL team to increase the performance of the Import/Export API and will make improvements in upcoming releases of LCS.
+The Lifecycle Services team works directly with the Azure SQL team to increase the performance of the Import/Export API to make improvements in upcoming releases of LCS.
 
 ### I can't download Management Studio installation files
 
@@ -277,8 +267,8 @@ This issue can occur when the platform build number of the current environment i
 
 The following guidelines can help you achieve optimal performance:
 
-- Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
-- In a one-box environment that is hosted in Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see the [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines) blog post.
+- You must always import the .bacpac file locally to the computer that runs the SQL Server instance. Don't import it to a remote machine from Management Studio.
+- Place the .bacpac file on drive D when you import it to a one-box environment that is hosted in Azure. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
 - Grant the account that runs the SQL Server Windows service [Instance File Initialization](/sql/relational-databases/databases/database-instant-file-initialization) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
 
 

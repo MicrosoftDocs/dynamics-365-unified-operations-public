@@ -1,23 +1,19 @@
 ---
-# required metadata
-
-title: Dynamics 365 Translation Service Azure DevOps extension tutorial (Public Preview)
-description: This tutorial explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+title: Dynamics 365 Translation Service Azure DevOps extension tutorial
+description: Learn how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow, such as with learning objectives.
 author: joshsantana
-ms.date: 04/14/2022
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: joshsantana
+ms.topic: article
+ms.date: 04/14/2022
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 03-28-2022
-
 ---
 
-# Dynamics 365 Translation Service Azure DevOps extension tutorial (Public Preview)
+# Dynamics 365 Translation Service Azure DevOps extension tutorial 
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 The Microsoft Dynamics 365 Translation Service (DTS) Azure DevOps extension provides several tasks for pipeline integration. Use this extension to conveniently translate your Dynamics 365 solutions from Azure DevOps.
 
@@ -101,7 +97,7 @@ To consume the DTS API, the extension must acquire an access token from the Micr
 Now that you have an app that is registered with the LCS API connections, you can create an LCS service connection. This service connection will enable the extension to obtain LCS permissions through the registered application.
 
 > [!NOTE]
-> LCS authentication requires Azure Active Directory (Azure AD) accounts that multi-factor authentication is turned off for, and that aren't backed by federated sign-ins. For the service connection, we recommend that you use a separate account that has limited permissions.
+> LCS authentication requires Microsoft Entra accounts that multi-factor authentication is turned off for, and that aren't backed by federated sign-ins. For the service connection, we recommend that you use a separate account that has limited permissions.
 
 1. In your Azure DevOps project, at the bottom of the left menu, select the **Project settings** button (gear symbol).
 1. In the **Project settings** pane, under **Pipelines**, select **Service connections**. Then select **Create service connection**.
@@ -390,4 +386,3 @@ After the pipeline is run, you're redirected to the pipeline summary page.
 ## Summary
 
 In this tutorial, you learned about the functionality and features that the DTS Azure DevOps extension provides. You learned how to create a pipeline to automate translation requests. You also learned how to edit the translations and then regenerate them, based on your edits. Finally, you learned how to create XLIFF translation memories by using the alignment task.
-

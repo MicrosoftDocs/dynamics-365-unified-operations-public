@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Containerization
-description: This article describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
+description: Learn how to automate the containerization of loads, which create containers and the picking work for shipments when a wave is processed.
 author: Mirzaab
-ms.date: 03/08/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: 10.0.18
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 ---
 
 # Containerization
@@ -46,7 +32,7 @@ You must set up one or more shipping wave templates for containerization. Wave t
 - How to create picking work. This is determined by the wave methods. The wave template must include the **containerization** method.
 - How to match items or allocation lines with a wave.
 
-For more information, see [Wave templates](wave-templates.md).
+Learn more in [Wave templates](wave-templates.md).
 
 ## Create container types
 
@@ -81,7 +67,7 @@ To set up a container group, follow these steps:
 
 ## Create container build templates
 
-You can set up rules for the containerization process, such as inventory mixing rules and other packing strategies. For example, you can set up a rule so that workers cannot pack allocation lines that represent sales orders from different customers in the same container.
+You can set up rules for the containerization process, such as inventory mixing rules and other packing strategies. For example, you can set up a rule so that workers can't pack allocation lines that represent sales orders from different customers in the same container.
 
 To set up a container build template, follow these steps.
 
@@ -101,11 +87,11 @@ To set up a container build template, follow these steps.
       - **Outbound order allocation line** ─ Pack allocation lines that are created for [outbound shipment orders](wms-only-mode-exchange-data.md#inbound-outbound-shipment-order-messages).
 
         > [!NOTE]
-        > To use nesting containers, you must make the containerization method repeatable. For more information, see [Wave templates](wave-templates.md).
+        > To use nesting containers, you must make the containerization method repeatable. Learn more in [Wave templates](wave-templates.md).
 
 1. On the **General** FastTab, in the **Wave step code** field, enter the unique identifier of the wave process method that links the container build template to steps in a wave template.
 1. Select the **Allow split picks** check box to allow workers to pack items from a work order in separate containers. This requires that the entire quantity fits in the container. The largest unit of measure in the allocation line is always used.
-1. In the **Pack by unit** field, select the unit of measure that will represent the container. For example, you can indicate that a case is a container. If you pack by the unit of measure, you cannot also specify a container group because the unit of measure is the container.
+1. In the **Pack by unit** field, select the unit of measure that will represent the container. For example, you can indicate that a case is a container. If you pack by the unit of measure, you can't also specify a container group because the unit of measure is the container.
 1. In the **Container packing strategy** field, select the packing strategy to use. The following options are available:
 
     > [!NOTE]

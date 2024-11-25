@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Hazardous materials inquiries and reports
-description: This article explains how to work with the various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
-author: t-benebo
-ms.date: 06/10/2020
+description: Learn how to work with the various reports that are related to hazardous materials, including an outline and process on setting up hazardous materials reporting.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 06/10/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
+ms.search.form:
 ---
 
 # Hazardous materials inquiries and reports
@@ -68,7 +54,7 @@ To view this report, go to **Product information management \> Inquiries and rep
 
 For more information about how to set stock limits on a released product, see [Set stock limits for hazardous products](hazmat-items.md#stock-limits).
 
-The regulation that is used for stock limits is defined on the **Warehouse management parameters** page. Go to **Warehouse management \> Setup \> Warehouse management parameters**, and then, on the **Reports** tab, in the **Hazardous materials stock limit**, specify a regulation code. For more information, see the [Set up hazardous materials reporting](#set-up) section earlier in this article.
+The regulation that is used for stock limits is defined on the **Warehouse management parameters** page. Go to **Warehouse management \> Setup \> Warehouse management parameters**, and then, on the **Reports** tab, in the **Hazardous materials stock limit**, specify a regulation code. Learn more in the [Set up hazardous materials reporting](#set-up) section earlier in this article.
 
 ## Verified gross mass report
 

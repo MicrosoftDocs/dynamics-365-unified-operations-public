@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Invoice capture received files
-description: This article explains how to collect invoice files from different sources in Invoice capture.
+description: Learn about how to collect invoice files from different sources in Invoice capture, including an outline on views in received files.
 author: sunfzam
-ms.date: 07/19/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: zezhangzhao
+ms.topic: overview
+ms.date: 08/09/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: 
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Invoice capture received files
@@ -55,11 +43,22 @@ The **Received file (captured)** page shows all files that have been successfull
 
 | Status | Description | Action |
 |---|---|---|
-| Waiting | The invoice has been captured by a Power Automate flow and is awaiting file validation. | No action is required. |
-| Processing | File filter rules are being applied to validate the invoice, or the invoice has passed filter validation and is being recognized. | **Retry** |
-| Cancelled | An exception occurred during file validation, or the call to the recognitive service failed. | **Retry** or **Void** |
-| Captured | The form recognizer result has been moved to captured invoice staging. | **View captured invoice** |
+| Waiting | The invoice was captured by a Power Automate flow and is awaiting file validation. | No action is required. |
+| In-process | File filter rules are being used to validate the invoice, or the invoice passed filter validation and is being recognized. | **Reset processing status** |
+| Canceled | An exception occurred when a duplicate file was found, or file filter validation or the call to the recognitive service failed. | **Retry** or **Void** |
+| Captured | The form recognizer result was moved to captured invoice staging. | **View captured invoice** |
 | Voided | If the invoice isn't needed, select **Voided**. If an invoice has a status of **Voided**, you can permanently delete it from Dataverse by selecting **Obsoleted**. | **Obsolete** |
+
+### Reset processing status
+
+Occasionally, system issues might cause an invoice to become stuck in the **Processing** status. In this case, the business process might be blocked, because the user can't take further action. To prevent the disruptions that this issue can cause, a **Reset processing status** button appears on the Action Pane if an invoice remains stuck for more than five minutes. Users can use this option to reset the status and try to resubmit the invoice in the event of system failure.
+
+### Duplicate file check
+
+The duplicate file check uses the checksum method to determine whether the same file was previously received. If a file that has the same checksum result is detected, the invoice file status is set to **Cancelled**, and the reason is set to **Duplicate file found**. Users can still process the file further by selecting the entry and then selecting the **Retry** button.
+
+> [!NOTE]
+> The duplicate file check differs from validation that ensures that an invoice that has the same number wasn't previously received. Although such validation doesn't exist, it can be implemented via a custom extension during the invoice transfer in Dynamics 365 Finance.
 
 ## Upload invoice files
 

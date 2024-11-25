@@ -1,16 +1,12 @@
 ---
 title: Make finished goods physically available before posting to journals
-description: When a manufactured item is reported as finished, it's registered as available for further physical processing, and one or more journals are posted. This article describes how to defer journal postings by enabling them to be processed by a batch job in a message queue.
+description: When a manufactured item is reported as finished, it's registered as available for further physical processing, and one or more journals are posted.
 author: johanhoffmann
-ms.date: 08/02/2022
-ms.topic: article
-ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2022-08-02
-ms.dyn365.ops.version: 10.0.29
+ms.topic: article
+ms.date: 08/02/2022
+ms.reviewer: kamaybac
+ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
 ---
 
 # Make finished goods physically available before posting to journals

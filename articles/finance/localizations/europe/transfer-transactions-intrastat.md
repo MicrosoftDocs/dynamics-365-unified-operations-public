@@ -1,21 +1,21 @@
 ---
 title: Transfer transactions to the Intrastat
-description: This article provides information about how to set up Intrastat parameters and transfer transactions to Intrastat.
-author: AdamTrukawka
-ms.date: 08/01/2023
+description: Learn about how to set up Intrastat parameters and transfer transactions to Intrastat, including a process for creating new and updating existing commodity code.
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - EcoResCategoryHierarchyListPage, EcoResCategory, UnitOfMeasureLookup, ProcCategoryAddCommodityCode, EcoResProductDetailsExtended, IntrastatCommodityLookup, IntrastatTransactionCode, IntrastatParameters, DeliveryMode, MarkupTable, SalesTableListPage, SalesCreateOrder, SalesTable, MarkupTrans, SalesEditLines
   - Intrastat, SysQueryForm, DeliveryReason, DeliveryTerms, DestinationCode
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Transfer transactions to the Intrastat
 
 [!include [banner](../../includes/banner.md)]

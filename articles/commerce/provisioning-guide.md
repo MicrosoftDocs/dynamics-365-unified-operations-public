@@ -2,19 +2,15 @@
 title: Provision a Dynamics 365 Commerce sandbox environment
 description: This article explains how to provision a Microsoft Dynamics 365 Commerce sandbox environment for demo or sandbox usage with built-in demo data.
 author: josaw1
-ms.date: 06/14/2022
+ms.date: 07/25/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Provision a Dynamics 365 Commerce sandbox environment
@@ -37,8 +33,8 @@ The following prerequisites must be in place before you can provision your Comme
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and have an implementation project already created and available to use in LCS.  
-- You have created an Azure Active Directory (Azure AD) security group that can be used as a Commerce system administrator group, and you have its ID available.
-- You have created an Azure AD security group that can be used as a ratings and reviews moderator group, and you have its ID available. (This security group can be the same as the Commerce system administrator group.)
+- You have created a Microsoft Entra security group that can be used as a Commerce system administrator group, and you have its ID available.
+- You have created a Microsoft Entra security group that can be used as a ratings and reviews moderator group, and you have its ID available. (This security group can be the same as the Commerce system administrator group.)
 - You have deployed a headquarters instance within LCS. For more information, see [Deploy a new environment](/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure).
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
@@ -75,8 +71,8 @@ To initialize Commerce, follow these steps.
 
 1. Select **Next** to continue.
 1. In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.
-1. In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
-1.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
+1. In the **Microsoft Entra security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
+1.	In the **Microsoft Entra security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
 1. Leave the **Enable ratings and review service** option set to **Yes**.
 1. Select **Initialize**. The **Commerce management** view displays again, where the **e-Commerce** tab is selected. E-Commerce initialization has started.
 1. Before you continue, wait until the status of Commerce initialization is **INITIALIZATION SUCCESSFUL**.

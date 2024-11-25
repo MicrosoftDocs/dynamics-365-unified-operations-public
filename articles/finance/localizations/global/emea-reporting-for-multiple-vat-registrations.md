@@ -1,19 +1,14 @@
 ---
 title: Reporting for multiple VAT registrations
-description: This article provides information about reporting for multiple value-added tax (VAT) registrations.
+description: Learn about reporting for multiple value-added tax (VAT) registrations, including prerequisites and an outline on activating feature for specific legal entity.
 author: liza-golub
-ms.date: 04/18/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
 ms.author: egolub
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 261354
-ms.search.form: 
+ms.topic: article
+ms.custom: 
+  - bap-template
+ms.date: 09/17/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # Reporting for multiple VAT registrations 
@@ -26,10 +21,13 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Belgium](../belgium/emea-reporting-multiple-vat-registrations-be.md)
 - [Czechia](../czech-republic/emea-reporting-multiple-vat-registrations-cz.md)
 - [Denmark](../denmark/emea-reporting-multiple-vat-registrations-dk.md)
+- [Estonia](../estonia/emea-reporting-multiple-vat-registrations-ee.md)
 - [Finland](../finland/emea-reporting-multiple-vat-registrations-fi.md)
 - [France](../france/emea-reporting-multiple-vat-registrations-fr.md)
 - [Germany](../germany/emea-reporting-multiple-vat-registrations-de.md)
 - [Italy](../italy/emea-reporting-multiple-vat-registrations-it.md)
+- [Latvia](../latvia/emea-reporting-multiple-vat-registrations-lv.md)
+- [Lithuania](../lithuania/emea-reporting-multiple-vat-registrations-lt.md)
 - [Netherlands](../netherlands/emea-reporting-multiple-vat-registrations-nl.md)
 - [Norway](../norway/emea-reporting-multiple-vat-registrations-no.md)
 - [Poland](../poland/emea-reporting-multiple-vat-registrations-pl.md)
@@ -208,8 +206,8 @@ All tax registrations have the same settings for EU sales list parameters.
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country/region of your tax registration.
 3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
-4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
-5. In the **Report cash discount** field, select **Yes** if the selected country/region cash discount must be transferred to the EU sales list. Select **No** if the selected country/region cash discount must not be transferred to EU sales list. Leave the value set to **Default** if the value that's specified in the **Report cash discount** field on **Transfer** FastTab must be applied to the selected country/region.
+4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report** or **EU sales list by columns report**.
+5. In the **Report cash discount** field, select **Yes** if the selected country/region cash discount must be transferred to the EU sales list. Select **No** if the selected country/region cash discount must not be transferred to EU sales list. Leave the value set to **Default** if the value that's specified in the **Report cash discount** field on the **Transfer** FastTab must be applied to the selected country/region.
 
     ![Report cash discount field on the Foreign trade parameters page.](../media/Mult-tax-cash-disc.png)
 
@@ -286,11 +284,15 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.23 | Germany | VAT Declaration XML (DE).version.101.16<br>VAT Declaration Excel (DE).version.101.16.12 | [VAT declaration (Germany)](../germany/emea-deu-vat-declaration-germany.md) |
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](../norway/emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](../spain/emea-esp-vat-declaration-spain.md) |
-    | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](../denmark/emea-dnk-vat-declaration-denmark.md) |
-    | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](../norway/emea-pol-vat-declaration.md) |
+    | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8<br>VAT Declaration XML (DK).version.101.15.7 | [VAT declaration (Denmark)](../denmark/emea-dnk-vat-declaration-denmark.md) |
+    | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](../poland/emea-pol-vat-declaration.md) |
+    | 10.0.36 | Estonia  | Tax declaration model.version.150<br>Tax declaration model mapping.version.150.317<br>VAT Declaration XML (EE).version.150.21<br>VAT Declaration Excel (EE).version.150.21.17 | [VAT declaration (Estonia)](../estonia/emea-est-vat-declaration.md) |
+    | 10.0.39 | Italy  | Tax declaration model.version.153<br>Tax declaration model mapping (IT).version.153.320.4<br>VAT Declaration PDF (IT).version.153.19 | [Configure and report Italian sales tax books](../italy/emea-ita-sales-tax-books.md) |
+    | 10.0.41 | Lithuania  | Tax declaration model.version.156<br>Tax declaration model mapping.version.156.329<br>VAT Declaration XML (LT).version.156.10<br>VAT Declaration Excel (LT).version.156.10.9 | [VAT declaration for Lithuania (FR0600)](../lithuania/emea-ltu-vat-declaration-lithuania.md) |
+    | 10.0.42<br>10.0.41 (build 10.0.2015.44)<br>10.0.40 (build 10.0.1935.114)<br>10.0.39 (build 10.0.1860.186) | Latvia  | Tax declaration model.version.167<br>Tax declaration model mapping.version.167.339<br>VAT Declaration XML (LV).version.167.19<br>VAT Declaration Excel (LV).version.167.19.10 | [VAT declaration for Latvia](../latvia/emea-lva-vat-declaration-latvia.md) |
 
     > [!NOTE]
-    > The VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](../poland/emea-pol-vdek.md).
+    > The VAT declaration of Poland (JPK-V7) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7, VDEK)](../poland/emea-pol-vdek.md).
 
 ### Generate a VAT declaration for multiple VAT registrations
 

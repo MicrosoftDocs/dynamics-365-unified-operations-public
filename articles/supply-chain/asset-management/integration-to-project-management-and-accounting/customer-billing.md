@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Bill for maintenance on customer-owned assets
-description: This article explains how to create, process, and bill maintenance work that is done on assets that your customers own.
-author: johanhoffmann
-ms.date: 01/28/2021
+description: Learn how to create, process, and bill maintenance work that is done on assets that your customers own, including an outline on the work order billing feature.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 01/28/2021
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjProjectsListPage, ProjTable, EntAssetWorkOrderType, EntAssetWorkOrderProjectSetup, EntAssetObjectTable, EntAssetWorkOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2021-01-28
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Bill for maintenance on customer-owned assets

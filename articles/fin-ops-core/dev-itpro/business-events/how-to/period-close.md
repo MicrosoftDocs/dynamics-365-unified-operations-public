@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Business events in financial period close
 description: This article explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 author: Sunil-Garg
-ms.date: 10/11/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 10/11/2019
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global 
 ms.search.validFrom: Platform update 26
+# ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-6-30 
-
 ---
 
 # Business events in financial period close
@@ -94,8 +84,6 @@ The following example describes the general steps for subscribing to a change-ba
 
     <img alt="Preparing to send the request for approval, part 2" src="../../media/Image8.png" width="70%">
 
-    <img alt="Preparing to send the request for approval, part 3" src="../../media/Image9.png" width="70%">
-
 6. Start the approval process.
 
     In this step, the approval request is sent from Power Automate.
@@ -111,10 +99,6 @@ The following example describes the general steps for subscribing to a change-ba
 8. Update the task with the approval outcome.
 
     Based on the outcome of the approval process, the task is updated with the result.
-
-    <img alt="Updating the task, part 1" src="../../media/Image12.png" width="70%">
-
-    <img alt="Updating the task, part 2" src="../../media/Image13.png" width="70%">
 
 ## Conclusion
 

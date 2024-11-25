@@ -1,12 +1,13 @@
 ---
 title: Collections coordinator summary FAQ
-description: This article answers some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
-ms.date: 6/15/2023
-ms.custom: faq
-ms.topic: article
+description: Access answers to some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
 ms.author: jchrist
+ms.topic: article
+ms.custom: faq
+ms.date: 5/29/2024
 ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot
 ---
 
 # Collections coordinator summary: FAQ
@@ -42,7 +43,7 @@ Processing of the customer's data, such as aged balances, overdue invoices, and 
 
 The AI-generated summary and email are generated inside Finance by using customer data such as aged balances, overdue invoices, and payment history. No text can be entered by the user and processed through Azure OpenAI. Only the customer's name and data that's found in Finance, such as aged balances, overdue invoices, and payment history, are processed through Azure OpenAI and returned as a summary or used to generate a draft email. You can edit the draft email before you send it.
 
-The AI-generated text and draft email options are optional and can be turned off or on in **Feature management** using the **Collections coordinatory summary**. 
+The AI-generated text and draft email are optional. They can be turned off or on in Feature management by using the **Collections coordinator summary** feature. 
 
 ## See also
 

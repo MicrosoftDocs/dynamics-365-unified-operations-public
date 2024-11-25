@@ -1,31 +1,17 @@
 ---
-# required metadata
-
-title: Add or copy leases (Preview)
-description: This article describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
+title: Add or copy leases (preview)
+description: Learn how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 03/28/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.14
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Add or copy leases (Preview)

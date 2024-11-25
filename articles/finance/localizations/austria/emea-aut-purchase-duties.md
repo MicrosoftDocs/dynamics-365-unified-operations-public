@@ -1,18 +1,16 @@
 ---
 title: Purchase duties
-description: This article provides information about purchase duties in Austria.
+description: Learn about purchase duties in Austria, what are calculated for legal entities that have a primary address in Austria.
 author: AdamTrukawka
-ms.date: 07/21/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Austria
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Austria
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 
 ---
 
 # Purchase duties

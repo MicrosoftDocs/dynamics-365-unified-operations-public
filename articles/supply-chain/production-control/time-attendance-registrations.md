@@ -1,15 +1,15 @@
 ---
 title: Time and attendance registration overview
-description: Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This article describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
+description: Learn about registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.
 author: johanhoffmann
 ms.author: johanho
+ms.topic: overview
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kamaybac
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr, JmgRegistrationSetup, JmgStampTrans, JmgStampJournalTrans
-ms.topic: overview
-ms.date: 01/27/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Time and attendance registration overview
@@ -20,7 +20,7 @@ Time registration workers can enter different types of time registrations, for e
 
 ## Registrations
 
-In companies that use time and attendance, workers must register the time that they spend at work in addition to their attendance. Some companies may only require workers to register clocking-in and clocking-out times. In other companies, workers may also be required to register time consumption on the actual activities they perform and the breaks they take. The intended users of time and attendance are:
+In companies that use time and attendance, workers must register the time that they spend at work in addition to their attendance. Some companies might only require workers to register clocking-in and clocking-out times. In other companies, workers might also be required to register time consumption on the actual activities they perform and the breaks they take. The intended users of time and attendance are:
 
 - Workers, who are required to register time and attendance at regular intervals, for example daily, weekly or bi-weekly.
 - Supervisors, managers, and payroll officers who calculate, approve, and transfer worker registrations for further processing.
@@ -40,13 +40,13 @@ After setup, the workers can enter different types of registrations.
 
     > [!NOTE]
     > A worker can be automatically assigned the time registrations that are made on a particular machine on the shop floor, if the worker chooses to work as an assistant to the machine when they start the production job.
-    
+
 - Time registrations on projects and project activities.
 - Registering project fees and item consumption via the respective project fee journals and project item journals.
 - Planned absence.
 - Absence when arriving late to work or leaving earlier than planned.
 - Work breaks, either manually registered or automatically calculated by the system.
-- Indirect activities, which are non-productive activities a worker might engage in during a workday. Examples of these activities include meetings or cleaning their workspace.
+- Indirect activities, which are nonproductive activities a worker might engage in during a workday. Examples of these activities include meetings or cleaning their workspace.
 - Overtime, which can be registered either as extra hours, flextime, or overtime.
 
 ## Adding clock-out registrations
@@ -85,7 +85,7 @@ You can set up a workflow approval process that automatically approves registrat
 
 ## Transferring approved registrations
 
-After approval of the registrations, you can transfer them to a periodic payroll job. A transferred registration is posted to an activity or job that it relates to, for example, a production order or a project. Payroll transactions are generated for each worker based on the registrations. 
+After approval of the registrations, you can transfer them to a periodic payroll job. A transferred registration is posted to an activity or job that it relates to, for example, a production order or a project. Payroll transactions are generated for each worker based on the registrations.
 
 ## Reversing transferred registrations
 

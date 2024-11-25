@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Planned maintenance window FAQ
-description: This article provides answers to frequently asked questions about the Microsoft planned maintenance windows.
+description: Access answers to frequently asked questions about the Microsoft planned maintenance windows, including infrastructure updates.
 author: angelmarshall
-ms.date: 02/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 6154
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: article
+ms.date: 02/25/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Planned maintenance window FAQ

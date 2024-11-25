@@ -1,81 +1,68 @@
 ---
-# required metadata
-
-title: Archive inventory transactions
-description: This article describes how to archive inventory transaction data to help improve system performance.
-author: yufeihuang
-ms.date: 05/10/2022
+title: Consolidate inventory transactions
+description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventTransArchiveProcessForm
-audience: Application User
-# ms.devlang: 
+ms.date: 04/11/2024
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: yufeihuang
-ms.search.validFrom: 2021-03-01
-ms.dyn365.ops.version: 10.0.18
+ms.search.form: InventTransArchiveProcessForm
 ---
-# Archive inventory transactions
+
+# Consolidate inventory transactions
 
 [!include [banner](../../includes/banner.md)]
 
-Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
+Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transaction consolidation* feature to consolidate data about inventory transactions to help improve system performance.
 
 > [!NOTE]
-> Only financially updated inventory transactions can be archived in a selected closed ledger period. To be archived, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
+> Only financially updated inventory transactions can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
 
-When you archive inventory transactions, all related transactions are moved to the `InventTransArchive` table. Inventory issue transactions and inventory receipt transactions are archived separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transactions.
+When you consolidate inventory transactions, all related transactions are moved to the `InventTransArchive` table. Inventory issue transactions and inventory receipt transactions are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they're put into the summarized issue and summarized receipt transactions.
 
-If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be archived.
+If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
+
+> [!NOTE]
+> After consolidating your inventory transactions, you can further optimize storage and system performance by using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. Learn more in [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
 ## Turn on the feature in your system
 
-If your system doesn't already include the features that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
+If your system doesn't already include the feature that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transaction consolidation* feature. This feature can't be disabled after being enabled.
 
-## Things to consider before you archive inventory transactions
+## Things to consider before you consolidate inventory transactions
 
-Before you archive inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:
+Before you consolidate inventory transactions, you should consider the following business scenarios, because they'll be affected by the operation:
 
-- When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as archived. To review the archived transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transactions archive**.
-- Inventory closing can't be canceled for archived periods. Before you can cancel an inventory closing, you must reverse the inventory transaction archive for the relevant period.
-- Standard cost conversion can't be done for archived periods. Before you can do standard cost conversion, you must reverse the inventory transaction archive for the relevant period.
-- Inventory reports that are sourced from inventory transactions will be affected when you archive inventory transactions. These reports include the inventory aging report and inventory value reports.
-- Inventory forecasts might be affected if they are run during the time horizon of archived periods.
+- When you audit inventory transactions from related documents, such as purchase order lines, they're shown as consolidated. To review the consolidated transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction consolidation**.
+- Inventory closing can't be canceled for consolidated periods.
+- Standard cost conversion can't be done for consolidated periods.
+- Inventory reports that are sourced from inventory transactions are affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
+- Inventory forecasts might be affected if they're run during the time horizon of consolidated periods.
+- All necessary actions (such as potential returns) on sales orders and their related inventory transactions should be completed before consolidating a period.
 
 ## Prerequisites
 
-Inventory transactions can be archived only during periods where the following conditions are met:
+Inventory transactions can be consolidated only during periods where the following conditions are met:
 
 - The ledger period must be closed.
-- Inventory closing must be run on or after the to-period date of the archive.
-- The period must be at least one year before the from-period date of the archive.
+- Inventory closing must be run on or after the to-period date of the consolidation.
+- The period must be at least one year before the from-period date of the consolidation.
 - There must not be any existing inventory recalculations.
 
-## Archive inventory transactions
+## Consolidate your inventory transactions
 
-To archive inventory transactions, follow these steps.
+To consolidate inventory transactions, follow these steps.
 
-1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction archive**.
+1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction consolidation**.
 
-    The **Inventory transactions archive** page appears and shows a list of archived process records.
+    The **Inventory transaction consolidation** page appears and shows a list of consolidated process records.
 
-    ![Inventory transactions archive page.](media/archive-inventory-empty.png "Inventory transactions archive page")
+1. On the Action Pane, select **Inventory transaction consolidation** to create an inventory transaction consolidation.
+1. In the **Inventory transaction consolidation** dialog box, on the **Parameters** FastTab, set the following fields:
 
-1. On the Action Pane, select **Inventory transactions archive** to create an inventory transaction archive.
-1. In the **Inventory transactions archive** dialog box, on the **Parameters** FastTab, set the following fields:
-
-    - **From date in closed ledger period** – Select the earliest transaction date to include in the archive.
-    - **To date in closed ledger period** – Select the latest transaction date to include in the archive.
-
-    ![Inventory transactions archive dialog box.](media/archive-inventory-dates.png "Inventory transactions archive dialog box")
+    - **From date in closed ledger period** – Select the earliest transaction date to include in the consolidation.
+    - **To date in closed ledger period** – Select the newest transaction date to include in the consolidation.
 
     > [!NOTE]
     > Only periods that meet the [prerequisites](#prerequisites) will be available for selection.
@@ -84,47 +71,42 @@ To archive inventory transactions, follow these steps.
 1. Select **OK**.
 1. You receive a message that prompts you to confirm that you want to continue. Read the message carefully, and then select **Yes** if you want to continue.
 
-    You receive a message that states that your inventory transactions archive job has been added to the batch queue. The job will now start to archive inventory transactions from the selected period.
+    You receive a message that states that your inventory transaction consolidation job is added to the batch queue. The job starts to consolidate inventory transactions from the selected period.
 
-## View archived inventory transactions
+## View consolidated inventory transactions
 
-The **Inventory transactions archive** page shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.
+The **Inventory transaction consolidation** page shows your full consolidating history. Each row in the grid shows information such as the date when the consolidation was created, the user who created it, and its status.
 
-![Archiving history on the Inventory transactions archive page.](media/archive-inventory-full.png "Archiving history on the Inventory transactions archive page")
+In the drop-down list at the top of the page select one of the following values to filter the consolidations that are shown in the grid:
 
-In the drop-down list at the top of the page select one of the following values to filter the archives that are shown in the grid:
+- **Active** – Show only active consolidations.
+- **All** – Show all consolidations.
 
-- **Active** – Show only active archives, not reversed archives.
-- **All** – Show all archives, both active and reversed.
+For each consolidation in the grid, the following information is provided:
 
-For each archive in the grid, the following information is provided:
+- **Active** – A check mark indicates that the consolidation is active.
+- **From date** – The date of the oldest transaction that can be included in the consolidation.
+- **To date** – The date of the newest transaction that can be included in the consolidation.
+- **Scheduled by** – The user account that created the consolidation.
+- **Executed** – The date when the consolidation was created.
+- **Stop current update** – A check mark indicates that the consolidation is in progress, but it has been paused.
+- **State** – The processing status of the consolidation. The possible values are *Waiting*, *In progress*, and *Finished*.
 
-- **Active** – A check mark indicates that the archive is active.
-- **From date** – The date of the oldest transaction that can be included in the archive.
-- **To date** – The date of the latest transaction that can be included in the archive.
-- **Scheduled by** – The user account that created the archive.
-- **Executed** – The date when the archive was created.
-- **Reverse** – A check mark indicates that the archive has been reversed.
-- **Stop current update** – A check mark indicates that the archive is in progress, but it has been paused.
-- **State** – The processing status of the archive. The possible values are *Waiting*, *In progress*, and *Finished*.
+The toolbar above the grid provides the following buttons that you can use to work with a selected consolidation:
 
-The toolbar above the grid provides the following buttons that you can use to work with a selected archive:
+- **Consolidated transactions** – View the full details of the selected consolidation. The **Consolidated transactions** page that appears shows all the transactions in the consolidation.
 
-- **Archived transactions** – View the full details of the selected archive. The **Archived transactions** page that appears shows all the transactions in the archive.
+    To view more information about a specific transaction on the **Consolidated transactions** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
 
-    ![Archived transactions page.](media/archive-inventory-transactions.png "Archived transactions page")
-
-    To view more information about a specific transaction on the **Archived transactions** page, select it in the grid, and then, on the Action Pane, select **Archived transaction details**. The **Archived transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
-
-- **Pause archiving** – Pause a selected archive that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If an archive has been paused, a check mark appears in its **Stop current update** field.
-- **Resume archiving** – Resume processing for a selected archive that is currently paused.
-- **Reverse** – Reverse the selected archive. You can reverse an archive only if its **State** field is set to *Finished*. If an archive has been reversed, a check mark appears in its **Reverse** field.
+- **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
+- **Resume** – Resume processing for a selected consolidation that is currently paused.
+- **Progress details** – Open a log that shows the progress of your inventory consolidation jobs.
 
 ## Extend your code to support custom fields
 
-If the `InventTrans` table contains one or more custom fields, then you may need to extend the code to support them, depending on how they are named.
+If the `InventTrans` table contains one or more custom fields, then you might need to extend the code to support them, depending on how they're named.
 
-- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they're 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
 - If the custom field names in the `InventTrans` table don't match the field names in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you must create a field in the `InventTransArchive` table with a different name (such as `InventtransArchive.InventTransCreatedDateTime`) and add extensions to the `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper` classes, as shown in the following sample code.
 
 The following sample code shows an example of how to add the required extension to the `InventTransArchiveProcessTask` class.
@@ -226,3 +208,7 @@ final class InventTransArchiveSqlStatementHelper_Extension
     }
 }
 ```
+
+## Learn more
+
+- [Consolidate inventory transactions FAQ](inventory-transactions-consolidation-faq.md)

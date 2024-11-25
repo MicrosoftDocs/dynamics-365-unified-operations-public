@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Engineering attributes and engineering attribute search
-description: This article explains how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system. It also explains how you can use engineering attribute search to easily find products, based on those registered characteristics.
-author: t-benebo
-ms.date: 09/28/2020
+description: Learn how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
-audience: Application User
-# ms.devlang: 
+ms.date: 09/28/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
+ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 ---
 
 # Engineering attributes and engineering attribute search
@@ -106,7 +92,7 @@ For more information about how to work with engineering product categories, incl
 
 ## Set attribute values for engineering attributes
 
-The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the **Engineering version** page or as part of engineering change management in an engineering change order. For more information, see [Manage changes to engineering products](engineering-change-management.md).
+The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the **Engineering version** page or as part of engineering change management in an engineering change order. Learn more in [Manage changes to engineering products](engineering-change-management.md).
 
 ## Create an engineering product
 

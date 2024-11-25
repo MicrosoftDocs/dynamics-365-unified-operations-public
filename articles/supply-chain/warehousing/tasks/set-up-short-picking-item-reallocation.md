@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Set up short picking item reallocation
-description: This article shows how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to. 
+description: Learn how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to.
 author: Mirzaab
-ms.date: 06/29/2020
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException    
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 06/29/2020
+ms.custom: 
+ms.reviewer: kamaybac   
+ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException  
 ---
+
 # Set up short picking item reallocation
 
 [!include [banner](../../includes/banner.md)]

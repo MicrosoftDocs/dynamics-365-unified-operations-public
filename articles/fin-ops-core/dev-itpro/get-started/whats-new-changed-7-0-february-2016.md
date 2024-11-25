@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics AX 7.0 (February 2016)
-description: This article describes features that are either new or changed in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
+description: Learn about new or changed features in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
 author: sericks007
-ms.date: 10/23/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
@@ -550,7 +550,7 @@ u<td>Intrastat commodity codes is a separate list. While there is category hiera
 |------------------|------------------|-----------------|------------------------|
 | Use the **Purchase order preparation** workspace to gain quick insight into the status of purchase orders that are being prepared. | Not supported | The **Purchase order preparation** workspace provides an overview of orders from the time when they are created as a draft and traced, through workflow approval states, and onward toward confirmation. | Your purchasing department no longer has to seek information from multiple pages but now benefits from the overview that the workspace provides. |
 | Use the **Purchase order receipt and follow-up** workspace to gain quick insight into purchase orders that are pending receipt, to help with follow-up. | Not supported | The **Purchase order receipt and follow-up** workspace provides an overview of confirmed purchase orders that have pending receipts or shipments. The workspace includes lists of post-due receipts and pending receipts to help with proactive review and follow-up by the supplier. The workspace also lists purchase orders that arrival registration has occurred for in the warehouse, to help guarantee that the receipt is posted. Purchase order returns that haven't yet been shipped are also available for review. | Your purchasing department benefits from the overview that the workspace provides. Relevant information is put together to guide follow-up and help improve productivity. |
-| Send purchase orders for confirmation to a vendor portal hosted in the Dynamics AX client. Let the vendor confirm or reject. | Not supported | The vendor portal interface allows vendors to receive purchase orders to be confirmed or rejected. It also allows the vendor to have an overview of all the confirmed purchase orders for an account. The purchasing agent can send a purchase order requesting a confirmation from the vendor. The vendor needs to be a registered Microsoft Azure Active Directory (Azure AD) user in Dynamics AX, a contact person for the vendor, and have a dedicated security role. | Your purchasing department benefits from reduced paper work and manually tracking responses on purchase orders, as they flow directly into the system. Having one source of truth reduces misunderstandings between customer and vendor. |
+| Send purchase orders for confirmation to a vendor portal hosted in the Dynamics AX client. Let the vendor confirm or reject. | Not supported | The vendor portal interface allows vendors to receive purchase orders to be confirmed or rejected. It also allows the vendor to have an overview of all the confirmed purchase orders for an account. The purchasing agent can send a purchase order requesting a confirmation from the vendor. The vendor needs to be a registered Microsoft Microsoft Entra user in Dynamics AX, a contact person for the vendor, and have a dedicated security role. | Your purchasing department benefits from reduced paper work and manually tracking responses on purchase orders, as they flow directly into the system. Having one source of truth reduces misunderstandings between customer and vendor. |
 
 ## Projects
 
@@ -749,11 +749,11 @@ Retail Server and data management lets consumers and enterprises create an omni-
 <td>It lets the customer process credit/debit card transactions for payments.</td>
 </tr>
 <tr>
-<td>Activate devices by using a Microsoft account (Microsoft Azure Active Directory (Azure AD)).</td>
+<td>Activate devices by using a Microsoft account (Microsoft Microsoft Entra ID).</td>
 <td>Not available</td>
 <td>The following functionality is provided:
 <ul>
-<li>Enhanced security by Azure AD-based activation for the cloud.</li>
+<li>Enhanced security by Microsoft Entra ID-based activation for the cloud.</li>
 <li>Enhanced security for token management.</li>
 <li>Improved reliability, troubleshooting, and error messaging during activation</li>
 <li>Simplified IT administration tasks that are related to activation.</li>
@@ -761,7 +761,7 @@ Retail Server and data management lets consumers and enterprises create an omni-
 </ul></td>
 <td>It provides the following benefits:
 <ul>
-<li>Security is enhanced through Azure AD and device token/ID (RS calls that use a token, user-specific app storage).</li>
+<li>Security is enhanced through Microsoft Entra and device token/ID (RS calls that use a token, user-specific app storage).</li>
 <li>It stops unauthorized remote use of MPOS (brick device).</li>
 <li>It tracks MPOS devices for PCI-compliance purposes.</li>
 <li>It maps physical devices with a business entity (register) by using a device token.</li>
@@ -828,7 +828,7 @@ Retail offers immersive mobile experiences anywhere, any time, and on any device
 <td>Not available</td>
 <td>Functional parity with MPOS is provided. This includes the following functionality:
 <ul>
-<li>Device activation by using AAD</li>
+<li>Device activation by using Microsoft Entra ID</li>
 <li>Responsive layout design</li>
 <li>Support for Edge, Internet Explorer and Chrome browsers.</li>
 </ul></td>
@@ -1028,4 +1028,3 @@ No new features have been added.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

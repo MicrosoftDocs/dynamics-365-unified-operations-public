@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Software lifecycle policy and cloud releases
-description: This article outlines the lifecycle and support policies for the finance and operations online service.
+description: Learn about the lifecycle and support policies for the finance and operations online service, including dates and versions for application and platform releases.
 author: hmahl
-ms.date: 09/29/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysAbout
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 09/29/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-08-30
+ms.search.form: SysAbout
 ms.dyn365.ops.version: Platform update 2
-
 ---
 
 # Software lifecycle policy and cloud releases

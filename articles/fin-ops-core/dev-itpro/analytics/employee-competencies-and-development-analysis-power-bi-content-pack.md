@@ -1,18 +1,15 @@
 ---
 title: Employee competencies and development Power BI content
-description: This article describes the Employee competencies and development Power BI content.
+description: Learn about how the Employee competencies and development Power BI content, including how to understand the data model and entities.
 author: jcart1106
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jcart
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 263894
 ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 ---
 
@@ -23,6 +20,7 @@ ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 This article describes the Employee competencies and development Power BI content. 
 
 ## Reports that are included in the content pack
+
 After you've connected the content pack to your data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                            | Contents                                               |

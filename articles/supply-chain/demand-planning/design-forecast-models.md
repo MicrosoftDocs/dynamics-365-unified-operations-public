@@ -1,37 +1,86 @@
 ---
 title: Design forecast models
-description: This article provides information about forecast models. These models let you arrange and configure tiles to define the forecast that is made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn about forecast models, which let you arrange and configure tiles to define the forecast that is made by a forecast profile.
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Design forecast models
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 *Forecast models* let you arrange and configure tiles to define the forecast that's made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 
+For a presentation about how forecast models and outlier removal methods work in Demand planning, see the following video on YouTube (starting at 16:53): [Deep dive into Demand Planning for Supply Chain Management | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=H27SRU1ua-8&t=1013s).
+
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 
-Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *prophet*. The demand forecasting algorithm that you use depends on the specific characteristics of your historical data.
+Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *Prophet*. The demand forecasting algorithm that you use depends on the specific characteristics of your historical data.
 
 - Auto-ARIMA works best when data follows stable patterns.
-- ETS is a versatile choice for data that has trends or seasonality.
+- Error, trend, and seasonality (ETS) is a versatile choice for data that has trends or seasonality.
 - Prophet works best with complex, real-world data.
+
+Demand planning also provides both a *best fit* model (which automatically selects the best of the available algorithms for each product and dimension combination) and the ability to develop and use your own custom models.
 
 By understanding these algorithms and their strengths, you can make informed decisions to optimize your supply chain and meet customer demand.
 
 This section describes how each algorithm works and its suitability for different types of historical demand data.
+
+### Best fit model
+
+The best fit model automatically finds which of the other available algorithms (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend using the best fit model because it combines the strengths of all of the other standard models. The following example shows how.
+
+Suppose you have the historical demand time-series data that includes the dimension combinations listed in the following table.
+
+| Product | Store |
+|---|---|
+| A | 1 |
+| A | 2 |
+| B | 1 |
+| B | 2 |
+
+When you run a forecast calculation using the Prophet model, you get the following results. In this example, the system always uses the Prophet model, regardless of the calculated mean absolute percentage error (MAPE) for each product and dimension combination.
+
+| Product | Store | forecast model | MAPE |
+|---|---|---|---|
+| A | 1 | Prophet | 0.12 |
+| A | 2 | Prophet | 0.56 |
+| B | 1 | Prophet | 0.65 |
+| B | 2 | Prophet | 0.09 |
+
+When you run a forecast calculation using the ETS model, you get the following results. In this example, the system always uses the ETS model, regardless of the calculated MAPE for each product and dimension combination.
+
+| Product | Store | forecast model | MAPE |
+|---|---|---|---|
+| A | 1 | ETS | 0.18 |
+| A | 2 | ETS | 0.15 |
+| B | 1 | ETS | 0.21 |
+| B | 2 | ETS | 0.31 |
+
+When you run a forecast calculation using the best fit model, the system optimizes the model selection for each product and dimension combination. The selection changes based on patterns found in the historical sales data.
+
+| Product | Store | Prophet MAPE | Auto-ARIMA MAPE | ETS MAPE | Best fit forecast model | Best fit MAPE |
+|---|---|---|---|---|---|---|
+| A | 1  | 0.12 | 0.34 | 0.18 | Prophet | 0.12 |
+| A | 2  | 0.56 | 0.23 | 0.15 | ETS | 0.15 |
+| B | 1  | 0.65 | 0.09 | 0.21 | Auto-ARIMA | 0.09 |
+| B | 2  | 0.10 | 0.27 | 0.31 | Prophet | 0.10 |
+
+The following graph shows the overall sales forecast across all dimensions (all products in all stores) over the next nine months, found using three different forecast models. The green line represents the best fit model. Because best fit chooses the best forecast model for each product and dimension combination, it avoids the outliers that could occur from forcing a single model on all dimension combinations. As a result, the overall best-fit forecast resembles an average of the single-model forecasts.
+
+:::image type="content" source="media/forecast-model-compare-graph.png" alt-text="Forecast results from three different forecast models based on the same historical data":::
+
+Legend:
+
+- Red = Only Prophet
+- Blue = Only ETS
+- Green = Best fit
 
 ### Auto-ARIMA: The time traveler's delight
 
@@ -41,7 +90,7 @@ Auto-ARIMA works especially well with time series data that shows a stable patte
 
 ### ETS: The shape shifter
 
-ETS is a versatile demand forecasting algorithm that adapts to the shape of your data. It can change its approach based on the characteristics of your historical demand. Therefore, it's suitable for a wide range of scenarios.
+Error, trend, and seasonality (ETS) is a versatile demand forecasting algorithm that adapts to the shape of your data. It can change its approach based on the characteristics of your historical demand. Therefore, it's suitable for a wide range of scenarios.
 
 The name ETS is an abbreviation for the three essential components that the algorithm decomposes the time series data into: error, trend, and seasonality. By understanding and modeling these components, ETS generates forecasts that capture the underlying patterns in your data. It works best with data that shows clear seasonal patterns, trends, or both. Therefore, it's an excellent choice for businesses that have seasonally affected products or services.
 
@@ -51,17 +100,13 @@ Prophet was developed by Facebook's research team. It's a modern and flexible fo
 
 Prophet works by decomposing the time series data into several components, such as trend, seasonality, and holidays, and then fitting a model to each component. This approach enables Prophet to accurately capture the nuances in your data and produce reliable forecasts. Prophet is ideal for businesses that have irregular demand patterns or frequent outliers, or businesses that are affected by special events such as holidays or promotions.
 
-### Best fit model
-
-The best fit model uses machine learning to determine which of the other available algorithms best fits your data for each product and dimension combination. In this way, different models can be used for different products.
-
 ### Custom Azure Machine Learning algorithm
 
-If you have a custom Microsoft Azure Machine Learning algorithm that you want to use with your forecasting models, you can use it in the Demand planning app.
+If you have a custom Microsoft Azure Machine Learning algorithm that you want to use with your forecasting models, you can use it in Demand planning.
 
 ## Create and customize a forecast model
 
-To create and customize a forecast model, you must first open an existing forecast profile. (For more information, see [Work with forecast profiles](forecast-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
+To create and customize a forecast model, you must first open an existing forecast profile. (Learn more in [Work with forecast profiles](forecast-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
 
 Follow these steps to create and customize a forecast model.
 
@@ -126,6 +171,29 @@ This section describes the purpose of each type of forecast tile. It also explai
 - *ETS* – Error, trend, seasonality
 - *Prophet* – Facebook Prophet
 - *Best fit model*
+
+### Finance and operations – Azure Machine Learning tiles
+
+If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use Demand planning. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
+
+For information about how to set up Demand planning to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
+
+### Phase in/out tiles
+
+*Phase in/out* tiles modify the values of a data column in a time series to simulate the gradual phasing in of a new element (such as a new product or warehouse) or phasing out of an old element. The phase in/out calculation lasts for a specific period and uses values that are drawn from the same time series (from either the same data column that is being adjusted or another data column that represents a similar element).
+
+*Phase in/out* tiles have the following fields that you can set:
+
+- **Step name** – The specific name of the tile. This name is also shown in the flowchart.
+- **Description** – A short description of the tile.
+- **Created by** – The user who created the tile.
+- **Rule group** – The name of the rule group that defines the calculation that the tile does.
+
+When you set up your forecast model, the position of the *Phase in/out* tile affects the calculation result. To apply the phase in/out calculation to the historical sales numbers, put the *Phase in/out* tile before the *Forecast* tile (as shown on the left side of the following illustration). To apply the phase in/out calculation to the forecasted result, put the *Phase in/out* tile after the *Forecast* tile (as shown on the right side of the following illustration).
+
+:::image type="content" source="media/phase-tile-position.png" alt-text="Screenshots that show the Phase in/out tile in different positions relative to the Forecast tile." lightbox="media/phase-tile-position.png":::
+
+For more information about phase in/out functionality, including details about how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
 
 ### Save tiles
 

@@ -2,18 +2,15 @@
 title: Add a favicon
 description: This article explains how to add a favicon to your site.
 author: bicyclingfool
-ms.date: 08/31/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: StuHarg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Add a favicon

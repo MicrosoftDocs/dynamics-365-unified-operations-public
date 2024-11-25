@@ -2,18 +2,16 @@
 title: Create a page URL
 description: This article covers the basic concepts and procedures for creating a page URL on your site.
 author: bicyclingfool
-ms.date: 10/01/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: StuHarg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template 
+
 ---
 
 # Create a page URL

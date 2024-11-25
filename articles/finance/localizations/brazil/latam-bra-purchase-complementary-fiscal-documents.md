@@ -1,19 +1,17 @@
 ---
 title: Purchase complementary fiscal documents for Brazil
-description: This article describes the concept of a purchase complementary invoice for the Brazilian localization.
-author: AdamTrukawka
-ms.date: 08/08/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the concept of a purchase complementary invoice for the Brazilian localization, including an outline on purchasing complementary fiscal document.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 269154
 ms.search.form: BrazilParameters, FBFiscalDocument_BR, PurchComplementaryInvoice, PurchComplementaryInvoiceCancel_BR, PurchComplementaryInvoiceListPage
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Purchase complementary fiscal documents for Brazil
@@ -48,7 +46,7 @@ Before you can create and post purchase complementary fiscal document, the follo
 -   **Sales tax code for PIS** – Specify the sales tax code that is used for the PIS tax calculation amount.
 
 ## Examples
-[![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types.](../media/purchcomplementary-1024x349.png)](/media/purchcomplementary.png)
+![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types.](../media/purchcomplementary-1024x349.png)]
 
 
 For more information, see the following topics:

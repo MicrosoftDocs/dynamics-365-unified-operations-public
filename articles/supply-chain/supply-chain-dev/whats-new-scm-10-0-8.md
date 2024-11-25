@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.8 (February 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.8. 
+description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.8, including an outline on included features. 
 author: kamaybac
-ms.date: 01/23/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-01-31 
-ms.dyn365.ops.version: 10.0.8
-
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
+
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.8 (February 2020)
 
 [!include [banner](../../finance/includes/banner.md)]
@@ -43,30 +28,30 @@ The following features are included in this release. The feature titles link to 
 
 - [Additional location zone](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 
-- [Asset Management](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - For more information, see [Asset management overview](../asset-management/index.md).
-- [Cancel work](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - For more information, see [Cancel warehouse work for exception handling](../warehousing/cancel-warehouse-work.md).
-- [Change work pool on work](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - For more information, see [Change work pool on work](../warehousing/change-work-pool-on-work.md).
-- [Cluster position full](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - For more information, see [Cluster position full](../warehousing/cluster-position-full.md).
-- [Confirm and transfer](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - For more information, see [Confirm and transfer](../warehousing/confirm-and-transfer.md).
-- [Location directive inventory picking aging](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - For more information, see [Location directive inventory picking aging](../warehousing/location-directive-inventory-picking-aging.md).
+- [Asset Management](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Learn more in [Asset management overview](../asset-management/index.md).
+- [Cancel work](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Learn more in [Cancel warehouse work for exception handling](../warehousing/cancel-warehouse-work.md).
+- [Change work pool on work](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Learn more in [Change work pool on work](../warehousing/change-work-pool-on-work.md).
+- [Cluster position full](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Learn more in [Cluster position full](../warehousing/cluster-position-full.md).
+- [Confirm and transfer](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Learn more in [Confirm and transfer](../warehousing/confirm-and-transfer.md).
+- [Location directive inventory picking aging](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Learn more in [Location directive inventory picking aging](../warehousing/location-directive-inventory-picking-aging.md).
 - [Location status](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
-- [Pick-line grouping](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - For more information, see [Pick line grouping](../warehousing/pick-line-grouping.md).
-- [Shipment auto update](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - For more information, see [Shipment auto-updates](../warehousing/auto-update-shipment.md).
+- [Pick-line grouping](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Learn more in [Pick line grouping](../warehousing/pick-line-grouping.md).
+- [Shipment auto update](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Learn more in [Shipment auto-updates](../warehousing/auto-update-shipment.md).
 - [Split demand replenishment work from create pick work step](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
 - [Split work](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
-- [System-directed cluster picking](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - For more information, see [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md).
+- [System-directed cluster picking](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - Learn more in [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md).
 - [Warehouse app task validation with RSAT](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Warehouse release rule](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Wave status visualization](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Wave template grouping](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - For more information, see [Wave template grouping](../warehousing/wave-template-grouping.md).
-- [Work line details](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - For more information, see [Work line details](../warehousing/work-line-details.md) and the [Work line details](https://www.microsoft.com/videoplayer/embed/RE4fcYN) video.
-- [Zone threshold replenishment](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - For more information, see [Zone threshold replenishment](../warehousing/zone-threshold-replenishment.md).
+- [Wave template grouping](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Learn more in [Wave template grouping](../warehousing/wave-template-grouping.md).
+- [Work line details](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Learn more in [Work line details](../warehousing/work-line-details.md) and the [Work line details](https://www.microsoft.com/videoplayer/embed/RE4fcYN) video.
+- [Zone threshold replenishment](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Learn more in [Zone threshold replenishment](../warehousing/zone-threshold-replenishment.md).
 
-## Additional resources
+## Related information
 
 ### Platform update 32
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-32.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 32. Learn more in [Preview features in Platform update 32](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-32.md).
 
 ### Bug fixes 
 

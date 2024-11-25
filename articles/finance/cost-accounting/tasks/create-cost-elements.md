@@ -1,19 +1,18 @@
 ---
 title: Create cost elements
-description: There are several ways to create cost elements in Cost accounting.
+description: There are several ways to create cost elements in Cost accounting. Learn about how to create new cost elements and configure data connectors.
 author: kfend
-ms.date: 08/29/2022
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfiguration, CAMDimensionMember
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create cost elements 
 
 [!include [banner](../../includes/banner.md)]

@@ -1,15 +1,13 @@
 ---
 title: Set up Electronic messages
-description: This article provides information about how to set up Electronic messages (EM) functionality.
+description: Learn about how to set up Electronic messages (EM) functionality, including outlines on number sequences, message item types, and message item statuses.
 author: AdamTrukawka
-ms.date: 11/18/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 11/18/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.1
 ---

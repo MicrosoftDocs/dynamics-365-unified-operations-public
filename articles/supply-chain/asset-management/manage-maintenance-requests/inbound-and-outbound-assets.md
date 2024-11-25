@@ -1,42 +1,23 @@
 ---
-# required metadata
-
 title: Inbound and outbound assets
-description: This article explains how to register inbound and outbound assets in Asset Management.
-author: johanhoffmann
-ms.date: 10/01/2019
+description: Learn how to register inbound and outbound assets in Asset Management, including a step-by-step process for registering assets as inbound.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 10/01/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac
+ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 ---
 
 # Inbound and outbound assets
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
 If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.
 
 > [!NOTE]
-> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. For more information, see [Maintenance requests](/d365F-O/supply-chain/asset-management/manage-maintenance-requests/../manage-maintenance-requests/maintenance-request-overview).
+> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. Learn more in [Maintenance requests](maintenance-request-overview.md).
 
 The setup of Asset Management determines whether you can work with inbound and outbound assets.
 

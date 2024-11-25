@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Semansys XBRL integration
-description: This procedure walks you through using Dutch functionality to export financial data in the XML format. 
+description: Learn about using Dutch functionality to export financial data in the XML format, including a step-by-step process for exporting data for annual reports. 
 author: mrolecki
-ms.date: 05/28/2020
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: Dialog   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Netherlands
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 05/28/2020
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User  
+ms.search.region: Netherlands
+ms.search.validFrom: 2016-06-30
+ms.search.form: Dialog 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 

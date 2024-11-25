@@ -4,8 +4,6 @@ description: This article describes how to create an end-to-end payment integrat
 author: Reza-Assadi
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article explains an architecture for building an integration b
 author: twheeloc
 ms.date: 11/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,18 +26,15 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes an architecture for using [Microsoft Dataverse virtual tables (entities)](/dev-itpro/power-platform/virtual-entities-overview) to build an integration between Dynamics 365 Human Resources and a third-party system. The focus of the article is on the security configuration, and on the authentication and authorization aspects that are required between the system boundaries to build a functional, secure system.
+This article describes an architecture for using [Microsoft Dataverse virtual tables (entities)](../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md) to build an integration between Dynamics 365 Human Resources and a third-party system. The focus of the article is on the security configuration, and on the authentication and authorization aspects that are required between the system boundaries to build a functional, secure system.
 
 ## Prerequisite reference articles
 
 The following articles provide more information about the concepts in this article:
 
-- [Virtual entities overview](/dev-itpro/power-platform/virtual-entities-overview)
-- [Get started with virtual tables (entities)](/developer/data-platform/virtual-entities/get-started-ve)
-- [Use multi-tenant server-to-server authentication (Microsoft Dataverse)](/developer/data-platform/use-multi-tenant-server-server-authentication)
-- [Use OAuth authentication with Microsoft Dataverse (Dataverse)](/developer/data-platform/authenticate-oauth)
+- [Virtual entities overview](../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md)
 - [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
-- [Authentication and authorization](/dev-itpro/power-platform/authentication-and-authorization)
+- [Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization.md)
 
 ## Architecture 
 
@@ -53,7 +46,7 @@ Here's an explanation of some of the elements in the preceding diagram:
 
 - **Microsoft** – Microsoft hosts and operates the different Dynamics 365 products on behalf of customers.
 
-    - **Azure Active Directory (Azure AD) tenant C** – An Azure AD tenant that's owned by Microsoft. It's the tenant that the Dynamics 365 applications are registered in.
+    - **Microsoft Entra tenant C** – An Microsoft Entra tenant that's owned by Microsoft. It's the tenant that the Dynamics 365 applications are registered in.
 
 - **Integrating partner**
 
@@ -61,15 +54,15 @@ Here's an explanation of some of the elements in the preceding diagram:
     - **Adapter** – The software or service that's responsible for interacting with both Dynamics 365 and the integrating system.
 
         > [!NOTE]
-        > If an adapter is intended to be used by multiple Dynamics 365 customers, the expectation is that it will be registered as a multitenant application in Azure AD.
+        > If an adapter is intended to be used by multiple Dynamics 365 customers, the expectation is that it will be registered as a multitenant application in Microsoft Entra ID.
 
-    - **Azure AD tenant A** – An Azure AD tenant that's owned by the integrating partner. It's the tenant that the adapter's application ID is registered in.
+    - **Microsoft Entra tenant A** – An Microsoft Entra tenant that's owned by the integrating partner. It's the tenant that the adapter's application ID is registered in.
 
 - **Mutual customer** – A customer that implements Dynamics 365 Human Resources and the integrating partner's solution.
 
     - **Dynamics 365 Finance or Human Resources** – The customer-specific instance of Dynamics 365 Finance or Human Resources that contains the customer data that the integrating system requires.
     - **Dataverse** – The customer-specific Dataverse environment that's connected to either Finance or Human Resources. Dataverse provides a Web API for interaction with Dynamics 365 data.
-    - **Azure AD tenant B** – The customer's Azure AD tenant. It functions as the identity provider (authorization server) and issues tokens that authorize callers to call the customer's Dataverse instance.
+    - **Microsoft Entra tenant B** – The customer's Microsoft Entra tenant. It functions as the identity provider (authorization server) and issues tokens that authorize callers to call the customer's Dataverse instance.
 
 ## Basic request flow
 
@@ -105,9 +98,9 @@ Look at the system boundaries in the diagram. Every web request between systems 
 
 In both cases, authentication checks are done first. Then application-level authorization checks are done to ensure that the authenticated user or application has the correct application-level privileges to retrieve the requested data.
 
-Authentication to call Dataverse is handled through a bearer token that must be included as an HTTP header in the web request to Dataverse. The adapter must get a token from the tenant B Azure AD instance. (See "1. Get Token" in the diagram.) Azure AD acts as the identity provider in the authentication flow.
+Authentication to call Dataverse is handled through a bearer token that must be included as an HTTP header in the web request to Dataverse. The adapter must get a token from the tenant B Microsoft Entra instance. (See "1. Get Token" in the diagram.) Microsoft Entra acts as the identity provider in the authentication flow.
 
-The adapter authenticates by providing its application identity (non-secret, as registered in Azure AD tenant A) and an application secret or certificate that only the adapter application has.
+The adapter authenticates by providing its application identity (non-secret, as registered in Microsoft Entra tenant A) and an application secret or certificate that only the adapter application has.
 
 After the user or application has been authenticated to make calls to Dataverse, the Dataverse-level authorization checks are done against each request. These checks make sure that the caller (the adapter application's identity, which is designated "\<guid A\>" in the diagram) has the appropriate application permissions. Application-level authorization is managed in Dataverse through an application user that represents the adapter's application ID. Application-level permissions are managed by granting access to specific Dataverse-defined application roles. Those roles provide granular privileges to the application.
 
@@ -117,14 +110,14 @@ If Dataverse-level application permission checks are passed, the Virtual entity 
 
 ![Finance and Operations virtual data source configuration record in the sandbox environment.](./media/sandbox.jpg)
 
-For more information, see [Configure Dataverse virtual entities](/dev-itpro/power-platform/admin-reference).
+For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 
 The call from the Dataverse Virtual entity plugin to Finance or Human Resources includes the adapter identity of the original call to Dataverse from the adapter (the identity that's designated "\<guid A\>" in the architectural diagram). If the virtual entity data source is correctly configured, and the S2S authentication checks are passed, the Virtual entity service in Finance or Human Resources will run the query in the context of the original caller (the adapter, \<guid A\>). Application permission checks (authorization) at the Finance or Human Resources level will be done to ensure that the adapter has the privileges that are required to access the data entities that are requested through the query.
 
 Finance and Human Resources security is managed in the following ways:
 
-1. By mapping the adapter identity (\<guid A\>) to a specific Finance or Human Resources user. This mapping is done on the **Azure active directory applications** page. For more information, see [Register your external application](/dev-itpro/data-entities/services-home-page.md#register-your-external-application).
-2. By granting the Finance or Human Resources user the appropriate application-level roles, duties, and privileges. For more information, see [Role-based security](/dev-itpro/sysadmin/role-based-security).
+1. By mapping the adapter identity (\<guid A\>) to a specific Finance or Human Resources user. This mapping is done on the **Azure active directory applications** page. For more information, see [Register your external application](../fin-ops-core/dev-itpro/data-entities/services-home-page.md#register-your-external-application).
+2. By granting the Finance or Human Resources user the appropriate application-level roles, duties, and privileges. For more information, see [Role-based security](../fin-ops-core/dev-itpro/sysadmin/role-based-security.md).
 
 If the adapter application (\<guid A\>) is granted the privileges that are required to access the requested data, the following events occur:
 

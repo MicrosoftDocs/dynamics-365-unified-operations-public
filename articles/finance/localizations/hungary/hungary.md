@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Hungary overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Hungary. 
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Hungary, including links that direct to resources about exchange rate calculations. 
 author: kfend
-ms.date: 09/04/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.search.region: Hungary
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 09/04/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Hungary
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Hungary overview

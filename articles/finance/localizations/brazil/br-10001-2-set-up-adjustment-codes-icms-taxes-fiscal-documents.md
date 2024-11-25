@@ -1,18 +1,18 @@
 ---
 title: Set up adjustment codes for ICMS taxes on fiscal documents (Brazil)
-description: You can create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents.
-author: AdamTrukawka
-ms.date: 06/26/2017
+description: Learn how you can create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents, including a step-by-step process.
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up adjustment codes for ICMS taxes on fiscal documents (Brazil)
 
 [!include [banner](../../includes/banner.md)]

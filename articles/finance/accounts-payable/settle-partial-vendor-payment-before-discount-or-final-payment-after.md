@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Settle partial payment before discount date and final payment after discount date
-description: This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ---
 
 # Settle partial payment before discount date and final payment after discount date

@@ -1,18 +1,16 @@
 ---
 title: What's new or changed in Finance and Operations version 10.0.2 (May 2019)
-description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 10.0.2. This version will be released in May.
+description: Learn about new or changed features in Dynamics 365 Finance and Operations version 10.0.2. This version was released in May 2019.
 author: sericks007
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 
-ms.dyn365.ops.version: Release 10.0.1
+ms.topic: whats-new
+ms.date: 07/12/2024
 ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.dyn365.ops.version: Release 10.0.1
 ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -21,9 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 10.0.2. This version will be released in May and has a build number of 10.0.80. For more information about version 10.0.2, see [Additional resources](#additional-resources).
-
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.2](../../../commerce/get-started/whats-new-10-0-2.md).
 

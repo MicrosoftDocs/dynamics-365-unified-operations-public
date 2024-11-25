@@ -1,20 +1,18 @@
 ---
 title: Change the depreciation method during the asset life for one asset
-description: In Japan, the depreciation method is permitted to change during the service life of a fixed asset.
+description: In Japan, the depreciation method is permitted to change during the service life of a fixed asset. Learna bout changing depreciation profiles for a fixed asset.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - AssetTable, AssetBook, AssetDepProfileChange_JP
   - AssetUndepreciatedBalancedSchedule_JP
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # Change the depreciation method during the asset life for one asset
 

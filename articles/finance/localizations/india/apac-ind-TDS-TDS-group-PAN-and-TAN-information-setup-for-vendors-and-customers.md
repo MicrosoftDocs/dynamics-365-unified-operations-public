@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Set up TDS group, PAN, and TAN information for vendors and customers
-description: This article explains how to set up information about the Tax Deducted at Source (TDS) group, permanent account number (PAN), and tax account number (TAN) for vendors and customers.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to set up information about the Tax Deducted at Source (TDS) group, permanent account number (PAN), and tax account number (TAN) for vendors.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # TDS group, PAN, and TAN information setup for vendors and customers
@@ -36,7 +22,7 @@ This article explains how to set up information about the Tax Deducted at Source
 
 1. Go to **Accounts payable \> Vendors \> All vendors** or **Accounts receivable \> Customers \> All customers**.
 
-    [![All vendors page.](../media/apac-ind-TDS-55.png)](/media/apac-ind-TDS-55.png)
+    [![All vendors page.](../media/apac-ind-TDS-55.png)]
 
 2. On the Action Pane, select **New** to create a vendor or customer, and enter the required details. Alternatively, select an existing vendor or customer.
 3. On the **Invoice and delivery** FastTab, in the **Withholding tax** section, set the **Calculate withholding tax** option to **Yes** to calculate withholding tax, TDS, or Tax Collected at Source (TCS) for the vendor or customer.
@@ -65,7 +51,7 @@ This article explains how to set up information about the Tax Deducted at Source
     - Local authority
     - Others
 
-    [![Tax information FastTab.](../media/apac-ind-TDS-56.png)](/media/apac-ind-TDS-56.png)
+    [![Tax information FastTab.](../media/apac-ind-TDS-56.png)]
 
 9. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs** to open the **Manage addresses** page.
 10. On the **Manage addresses** page, on the **Tax information** FastTab, select **Add** or **Edit** to open the **Manage tax information** page, where you can maintain the tax registration entry.

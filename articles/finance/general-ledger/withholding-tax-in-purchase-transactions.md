@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Withholding tax in purchase transactions
-description: For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **All vendors** page.
+description: For vendors who are liable to withholding tax, you can assign the default withholding tax group on the all vendors page.
 author: kailiang
-ms.date: 01/12/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 01/12/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-01-12
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.16
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Withholding tax in purchase transactions

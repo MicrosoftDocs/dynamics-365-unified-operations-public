@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Integrate asset management with fixed assets
-description: This article explains how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
-author: johanhoffmann 
+description: Learn how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
+author: jodahlMSFT
+ms.author: jodahl
+ms.topic: article 
 ms.date: 04/17/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: johanho
-ms.search.validFrom: 2020-04-17
-ms.dyn365.ops.version: 10.0.11
+ms.search.form:
 ---
 
 # Integrate asset management with fixed assets

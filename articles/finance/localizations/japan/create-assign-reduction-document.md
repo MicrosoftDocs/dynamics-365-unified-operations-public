@@ -2,18 +2,17 @@
 title: Create and assign a reduction entry document for a government grant subsidy
 description: For Japan, a reduction entry document is a document that you can attach to a fixed asset that is sponsored using a government subsidy.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetReductionEntryProfile_JP, AssetTable, AssetBook
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create and assign a reduction entry document for a government grant subsidy
 
 [!include [banner](../../includes/banner.md)]

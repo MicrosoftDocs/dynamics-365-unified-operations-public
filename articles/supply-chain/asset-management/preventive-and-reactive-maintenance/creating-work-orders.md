@@ -1,31 +1,13 @@
 ---
-# required metadata
-
 title: Creating work orders
-description: This article explains how to create work orders in Asset Management.
-author: johanhoffmann
-ms.date: 02/01/2021
+description: Learn how to create work orders in Asset Management, including a table that defines various reference types and an outline on createing work orders.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 02/01/2021
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.17
-
-
+ms.reviewer: kamaybac
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 ---
 
 # Creating work orders

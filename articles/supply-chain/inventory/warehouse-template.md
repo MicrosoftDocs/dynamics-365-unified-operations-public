@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Set up a warehouse by using a warehouse configuration template
-description: This article explains how to set up a warehouse by using a warehouse configuration template.
-author: yufeihuang
-ms.date: 11/16/2017
+description: Learn how to set up a warehouse by using a warehouse configuration template, including scenarios where configuration templates can be helpful.
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 11/16/2017
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 ---
 
 # Set up a warehouse by using a warehouse configuration template
@@ -91,7 +75,7 @@ You can download a zip file for the data package. This file contains all the dat
 4. Select **+ Add file**, and upload the zip file for the data package.
 5. Select **Import**. In the **Enhanced** view, you can use the **Filter** option to quickly get an overview of issues that might occur during the import.
 
-The **View execution** log provides detailed information about each data entity that is imported. You can use the staging data view to quickly get to the target data. In this way, you can see what the imported data looks like on the related pages in the application. When you use the default data templates, the import sequence for each data entity works in the predefined manner, to help guarantee that all dependent data is imported first. If custom data entities are part of the project, you must make sure that the correct sequence is defined. For more information, see [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+The **View execution** log provides detailed information about each data entity that is imported. You can use the staging data view to quickly get to the target data. In this way, you can see what the imported data looks like on the related pages in the application. When you use the default data templates, the import sequence for each data entity works in the predefined manner, to help guarantee that all dependent data is imported first. If custom data entities are part of the project, you must make sure that the correct sequence is defined. Learn more in [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 To learn more about how to use warehouse template to copy the configuration of a warehouse from one company to a new company within the same instance, see this 3-minute video on YouTube about [how to use warehouse template to copy the configuration for finance and operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 

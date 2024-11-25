@@ -1,13 +1,15 @@
 ---
 title: Guidance for dual-write setup
-description: This article describes the scenarios that are supported for dual-write setup.
+description: Understand the scenarios that are supported for dual-write setup, including various examples that provide guidance for dual-write setups.
 author: RamaKrishnamoorthy
-ms.date: 06/28/2022
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: how-to
+ms.date: 12/04/2023
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+audience: Application User, IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 
@@ -15,23 +17,17 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
-
-
 
 You can set up a dual-write connection between a finance and operations environment and a Dataverse environment.
 
 + A **finance and operations environment** provides the underlying platform for **finance and operations apps** (for example, Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources).
-+ A **Dataverse environment** provides the underlying platform for **customer engagement apps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
++ A **Dataverse environment** provides the underlying platform for **customer engagement apps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 
 > [!IMPORTANT]
 > The Human Resources module in Dynamics 365 Finance supports dual-write connections, but the Dynamics 365 Human Resources app doesn't.
 
-The setup mechanism varies, depending on your subscription and the environment:
-
-+ For new instances of finance and operations apps, the setup of a dual-write connection begins in Microsoft Dynamics Lifecycle Services (LCS). If you have a license for Microsoft Power Platform, you will get a new Dataverse environment if your tenant doesn't have one.
-+ For existing instances finance and operations apps, the setup of a dual-write connection begins in the finance and operations environment.
+Dual-write can be setup from Lifecycle Services for both new and existing environments involving finance and operations apps and customer engagement app. You can follow the guidance from [Dual-write setup from Lifecycle Services](lcs-setup.md).
 
 Before you start dual-write on an entity, you can run an initial synchronization to handle existing data on both sides: Finance and operations apps and customer engagement apps. You can skip the initial synchronization if you don't have to sync data between the two environments.
 
@@ -80,7 +76,7 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 To set up a dual-write connection between a new instance of a finance and operations app that has data and a new instance of a customer engagement app, follow the steps in the [A new finance and operations app instance and a new customer engagement app instance](#new-new) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
 
-1. Open the finance and operations app from the LCS page, sign in, and then go to **Data Management \> Dual-write**.
+1. Open the finance and operations app from the Lifecycle Services page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
 For links to an example and an alternative approach, see the [Example](#example) section.
@@ -89,7 +85,7 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 To set up a dual-write connection between a new instance of a finance and operations app that has data and an existing instance of a customer engagement app, follow the steps in the [A new finance and operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
 
-1. Open the finance and operations app from the LCS page, sign in, and then go to **Data Management \> Dual-write**.
+1. Open the finance and operations app from the Lifecycle Services page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
 To sync the existing Dataverse data to the finance and operations app, follow these steps.
@@ -103,20 +99,22 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 ## <a id="existing-new"></a>An existing finance and operations app instance and a new customer engagement app instance
 
-The setup of a dual-write connection between an existing instance of a finance and operations app and a new instance of a customer engagement app occurs in the Finance and Operation environment.
+The setup of a dual-write connection between an existing instance of a finance and operations app and a new instance of a customer engagement app occurs using Lifecycle Services power platform integration setup.
 
-1. [Set up the connection from the finance and operations app](enable-dual-write.md).
-2. Run the **Initial sync** functionality for the tables that you want to sync data for.
+1. Follow [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) to establish the link using Lifecycle Services.
+2. A dual-write connection is established for all legal entities. You can remove legal entities from the dual-write workspace within finance and operations apps if you do not wish to synchronize the data for a specific company.
+3. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
 For links to an example and an alternative approach, see the [Example](#example) section.
 
 ## <a id="existing-existing"></a>An existing finance and operations app instance and an existing customer engagement app instance
 
-The setup of a dual-write connection between an existing instance of a finance and operations app and an existing instance of a customer engagement app occurs in the Finance and Operation environment.
+The setup of a dual-write connection between an existing instance of a finance and operations app and an existing instance of a customer engagement app occurs in the finance and operation apps environment.
 
-1. [Set up the connection from the finance and operations app](enable-dual-write.md).
-2. To sync the existing Dataverse data to the finance and operations app, [bootstrap](bootstrap-company-data.md) the Dataverse data by using a three-letter ISO company code.
-3. Run the **Initial sync** functionality for the tables that you want to sync data for.
+1. Follow [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv) to establish the link using Lifecycle Services.
+2. A dual-write connection is established for all legal entities. You can remove legal entities from the dual-write workspace within finance and operations apps if you do not wish to synchronize the data for a specific company.
+3. To sync the existing Dataverse data to the finance and operations app, [bootstrap](bootstrap-company-data.md) the Dataverse data by using a three-letter ISO company code.
+4. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
 For links to an example and an alternative approach, see the [Example](#example) section.
 

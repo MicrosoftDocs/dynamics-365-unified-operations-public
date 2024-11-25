@@ -4,11 +4,8 @@
 title: Questionnaires
 description: This article provides general information about questionnaires, and links to more detailed information. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/01/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
@@ -20,7 +17,7 @@ audience: Application User
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Questionnaires
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

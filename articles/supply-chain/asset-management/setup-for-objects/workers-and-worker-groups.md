@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Maintenance workers and worker groups
-description: This article explains maintenance workers and worker groups in Asset Management.
-author: johanhoffmann
-ms.date: 06/26/2019
+description: Learn about maintenance workers and worker groups in Asset Management, including step-by-step processes for creating workers and worker groups.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/26/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2214
+ms.search.form: EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Maintenance workers and worker groups

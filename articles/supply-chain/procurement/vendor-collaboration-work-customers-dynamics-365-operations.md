@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Vendor collaboration with customers
-description: This article describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
-author: GalynaFedorova
-ms.date: 09/15/2020
+description: Learn how you can use vendor collaboration to work with POs and monitor consignment inventory, including a list of workspaces.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 09/15/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 221234
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2020-11-01
-ms.dyn365.ops.version: 10.0.15
-
 ---
 
 # Vendor collaboration with customers
@@ -153,7 +136,7 @@ As a vendor, you can access part of the information that the customer maintains 
 
 The accessible information is the vendor name, addresses, contact information, contact persons and their contact information, identification numbers, tax registration numbers, procurement categories that the vendor is approved to sell to the customer in, and information about certifications.
 
-## Additional resources
+## Related information
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 

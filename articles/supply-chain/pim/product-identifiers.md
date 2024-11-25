@@ -1,15 +1,13 @@
 ---
 title: Product identifiers 
-description: This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
+description: Learn about the various types of product identifiers and explains how you can add product identifiers in your product data.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 ---
 
 # Product identifiers
@@ -36,7 +34,7 @@ The item number is the product identifier that is used by a specific legal entit
 
 Additionally, a product variant can't be uniquely identified by an item number. It always requires the combination of an item number and all the product dimensions that are defined on the product master. This requirement can become cumbersome and can slow down the identification processes. For this reason too, we recommend that you use the unique product number instead the item number whenever you can.
 
-Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** &gt; **Setup** &gt; **Search** &gt; **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to **Yes**, the lookup will show not only product masters but product variants. For more information, see [Search for products and product variants during order entry](search-products-product-variants.md).
+Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** &gt; **Setup** &gt; **Search** &gt; **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to **Yes**, the lookup will show not only product masters but product variants. Learn more in [Search for products and product variants during order entry](search-products-product-variants.md).
 
 Additionally, you'll be able to search and filter on the product number, the product name and description, and the product dimension IDs of the product variant. When you select a variant, the related item number and all product dimension IDs will be selected. Therefore, you can more easily find and select the correct variant. This setting is highly recommended if you use product variants and the unique product number as the primary identifiers for products. The only exception might be the fashion industry, where the business processes often require that you select the master before you select a variant. You should carefully evaluate this option before you implement the numbering system.
 

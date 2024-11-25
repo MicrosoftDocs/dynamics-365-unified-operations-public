@@ -1,17 +1,15 @@
 ---
 title: Enable Dynamics 365 Commerce and Microsoft Teams integration
 description: This article describes how to enable Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
-author: gvrmohanreddy
-ms.date: 02/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: v-chgriffin
+author: ritakimani
+ms.date: 09/20/2024
+ms.topic: how-to
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: ritakimani
 ms.search.validFrom: 2021-01-15
-ms.dyn365.ops.version: 10.0.18
+ms.custom: 
+  - bap-template
 ---
 
 # Enable Dynamics 365 Commerce and Microsoft Teams integration
@@ -50,10 +48,6 @@ To enable Teams integration in Commerce headquarters, follow these steps.
 1. In the **Application ID** field, enter the **Application (client) ID** value that you obtained while you registered the Teams application in the Azure portal.
 1. In the **Application key** field, enter the **Secret value** value that you obtained while you added a client secret in the Azure portal.
 1. On the Action Pane, select **Save**.
-
-The following illustration shows an example of the configuration of Teams integration in Commerce headquarters.
-
-![Teams integration configuration in Commerce headquarters.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
 
 ## Disable Teams integration
 

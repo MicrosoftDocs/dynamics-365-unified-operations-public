@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Connect peripherals to the point of sale (POS)
 description: This article covers how to connect peripherals to your Retail POS.
 author: BrianShook
 ms.date: 01/30/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.topic: how-to
 ms.search.form: RetailTerminalTable, RetailDevice
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.search.region: Global
+ms.author: ritakimani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
 ---
 
 # Connect peripherals to the point of sale (POS)

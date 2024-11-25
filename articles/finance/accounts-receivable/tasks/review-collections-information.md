@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Review collections information
-description: This article explains how to review collections information as well as various setup options and collections transactions. 
-author: ShivamPandey-msft
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to review collections information as well as various setup options and collections transactions.
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/08/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Review collections information
 
 [!include [banner](../../includes/banner.md)]
@@ -56,12 +47,17 @@ This article explains how to review collections information as well as various s
 2. Select **New**.
 3. In the **Aging period definition** field, type a value.
 4. In the **Description** field, type a value.
-- Specify the period name, unit, and interval for each aging period to include in the aging period definition. The line that has 0 (zero) in the **Unit** field represents the date that the analysis is run. Lines before zero will have -1, and lines after zero will have 1 as a default entry in the **Unit** field, but can be changed. Select **Up** and **Down** to rearrange the lines. The 0 (zero) line cannot be moved.  
-- Place the pointer where you want to insert a new line and then select **Add**.  
-- Select an indicator to represent the aging period in the **Collections** page and list page. For example, you might select a green indicator for a current period, a yellow indicator for a 30-days-past period, and a red indicator for a 90-days-past period.  
-- Select the printing direction for the aging period definition. This selection determines the order in which the columns appear on the **Customer aging** report or the **Vendor aging** report.  
+5. Specify the period name, unit, and interval for each aging period to include in the aging period definition. The line that has 0 (zero) in the **Unit** field represents the date that the analysis is run. Lines before zero will have -1, and lines after zero will have 1 as a default entry in the **Unit** field, but can be changed. Select **Up** and **Down** to rearrange the lines. The 0 (zero) line cannot be moved.
+6. Place the pointer where you want to insert a new line and then select **Add**.
+7. Select an indicator to represent the aging period in the **Collections** page and list page. For example, you might select a green indicator for a current period, a yellow indicator for a 30-days-past period, and a red indicator for a 90-days-past period.
+8. Select the printing direction for the aging period definition. This selection determines the order in which the columns appear on the **Customer aging** report or the **Vendor aging** report.  
   - **Forward** – Print columns in the same order in which the headings appear in the table, starting with the top row.  
   - **Backward** – Print columns in the reverse order in which the headings appear in the table, starting with the bottom row.    
+
+>[!Note]
+> No more than six aging periods can be used on external statements, aging period snapshots, or on the **Collections list** page. This aging period definition isn't available on those pages. 
+
+If the default aging period is edited and has more than six periods, the default aging period isn't respected. The default aging period is set up here: **Account Receivables parameters** > **Collections** > **Collection Defaults** > **Aging period definition**.
 
 ## Setup collections parameters
 1. Go to **Credit and collections > Setup > Accounts receivable parameters**.
@@ -104,44 +100,44 @@ This article explains how to review collections information as well as various s
 1. Make sure the desired record is selected.
 2. Expand the **Address**, **Contact**, **Aging**, and **Credit limit** FactBoxes to view the given information.
 3. On the Action Pane, select **Collect**.
-- Update the aging snapshot for the customer, using the current date as the aging date that the transaction dates are compared with. If the aging snapshot contains information for multiple legal entities, the updated aging snapshot contains information for the same set of legal entities. Amounts are stored in the accounting currency of the legal entity that you are logged on to when you update the aging snapshot.  
-- Select an aging period definition. By default, the aging period definition that is associated with the aging snapshot for the customer is displayed. The aging period definition controls the aging periods and amounts that are shown in the **Aged balances** and **Credit information** FactBoxes.  
-- Open a menu that contains the following items:    
+4. Update the aging snapshot for the customer, using the current date as the aging date that the transaction dates are compared with. If the aging snapshot contains information for multiple legal entities, the updated aging snapshot contains information for the same set of legal entities. Amounts are stored in the accounting currency of the legal entity that you are logged on to when you update the aging snapshot.  
+5. Select an aging period definition. By default, the aging period definition that is associated with the aging snapshot for the customer is displayed. The aging period definition controls the aging periods and amounts that are shown in the **Aged balances** and **Credit information** FactBoxes.  
+6. Open a menu that contains the following items:    
   - **Company** – Display amounts in the **Aged balances** and **Credit information** FactBoxes in the legal entity's accounting currency.  
   - **Customer** – Display amounts in the **Aged balances** and **Credit information** Fact boxes in the customer's currency.  
-- Select one or more legal entities in the customer's aging snapshot for which to view information. The legal entities that are shown in the list were selected when the aging snapshot was created.  
-- View the customer's statement in Microsoft Excel format. You can select a starting date for the range of transactions to include on the statement and decide whether to include only open transactions, or both open and settled transactions. If the aging snapshot contains information for multiple legal entities, transactions are included for all the legal entities.  
+7. Select one or more legal entities in the customer's aging snapshot for which to view information. The legal entities that are shown in the list were selected when the aging snapshot was created.  
+8. View the customer's statement in Microsoft Excel format. You can select a starting date for the range of transactions to include on the statement and decide whether to include only open transactions, or both open and settled transactions. If the aging snapshot contains information for multiple legal entities, transactions are included for all the legal entities.  
 - Open the **Documents** page, in which you can create or edit documents or notes.  
-4. On the Action Pane, select **Communicate**.  
-- Open Outlook, where you can send an email message to the contact that is specified in the **Contact** field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** page. The transactions that are selected are included as an attachment. The attachment is in Excel format and contains three worksheets. An email template for messages to customer contacts can be specified in the **Accounts receivable parameters** page.  
-- This button is not available if the contact that is selected in this page does not have an email address set up.  
-- Prepare a statement and open Outlook, where you can send an email message that has an attached statement to the address specified in the **Contact** field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** page.  
-- This button is not available if the contact that is selected in this page doesn't have an email address set up.  
-- Open Outlook, where you can send an email message to the employee who is specified as the sales representative for the sales group that is assigned to the customer. If transactions are selected, they are included as an attachment. The attachment is in Excel format and contains two worksheets. An email template for messages to salespeople can be specified in the **Accounts receivable parameters** page.  
-- This button is not available if the salesperson that is displayed in this page does not have an email address set up.  
-- View and perform actions on transactions for the customer. If you are using centralized payments, information for all legal entities that are included in the customer's aging snapshot is included. You can restrict the legal entity information by selecting **Company** in the **Select** group on the action pane.  
-- Change the collections status for the selected transactions.    
+9. On the Action Pane, select **Communicate**.  
+10. Open Outlook, where you can send an email message to the contact that is specified in the **Contact** field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** page. The transactions that are selected are included as an attachment. The attachment is in Excel format and contains three worksheets. An email template for messages to customer contacts can be specified in the **Accounts receivable parameters** page.  
+- This button isn't available if the contact that is selected in this page does not have an email address set up.  
+11. Prepare a statement and open Outlook, where you can send an email message that has an attached statement to the address specified in the **Contact** field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** page.  
+- This button isn't available if the contact that is selected in this page doesn't have an email address set up.  
+12. Open Outlook, where you can send an email message to the employee who is specified as the sales representative for the sales group that is assigned to the customer. If transactions are selected, they are included as an attachment. The attachment is in Excel format and contains two worksheets. An email template for messages to salespeople can be specified in the **Accounts receivable parameters** page.  
+- This button isn't available if the salesperson that is displayed in this page does not have an email address set up.  
+13. View and perform actions on transactions for the customer. If you are using centralized payments, information for all legal entities that are included in the customer's aging snapshot is included. You can restrict the legal entity information by selecting **Company** in the **Select** group on the action pane.  
+14. Change the collections status for the selected transactions.    
   - **Not disputed** – No collections action has occurred for the transaction.    
   - **Disputed** – The customer has notified you that there is a problem with the transaction.    
   - **Promised to pay** – The customer has agreed to pay the transaction amount.    
   - **Resolved** – All problems with the transaction have been solved and no additional collections action is necessary.  
-- Open a menu and select one of the following items to specify which transactions to display in this page:    
+15. Open a menu and select one of the following items to specify which transactions to display in this page:    
   - **Open** – Display only transactions that have not been settled.    
   - **Open and closed** – Display all transactions, both settled and not settled.  
-- Process the selected payment as a non-sufficient funds (NSF) payment.    
+16. Process the selected payment as a non-sufficient funds (NSF) payment.    
   - This button is available only if the selected transaction is a payment (a credit balance without an invoice) entered in a payment journal, a bank account is assigned to the transaction, and the payment has not been canceled previously.  
-- Write off the selected transactions.  
-- Mark the selected transactions for settlement with each other.  
-- Open the **Original document** page, in which you can view and print the document for the selected transaction.  
-- Open a **menu** that contains the following items:    
+17. Write off the selected transactions.  
+18. Mark the selected transactions for settlement with each other.  
+19. Open the **Original document** page, in which you can view and print the document for the selected transaction.  
+20. Open a **menu** that contains the following items:    
   - **Collections** – Display only activities that were created in the **Collections** page.    
   - **All** – Display all activities for the customer, regardless of where the activities were created.  
-- Open a **menu** that contains the following items:    
+21. Open a **menu** that contains the following items:    
   - **Open** – Display only activities that are not closed.    
   - **Open and closed** – Display all activities, regardless of their status.  
-- Select a collections case that is assigned to the customer or leave this field blank. If a case is selected, only transactions and activities that are associated with the case are displayed in this page.  
-5. Select **Show list**.
-- Select a customer account or accept the default entry. By default, this is the selected customer account on the list page or in the page from which you opened this page. If you opened the page from a list page, the customers in the list are the customers who are included in the collections pool that is used on the list page.  
+22. Select a collections case that is assigned to the customer or leave this field blank. If a case is selected, only transactions and activities that are associated with the case are displayed in this page.  
+23. Select **Show list**.
+24. Select a customer account or accept the default entry. By default, this is the selected customer account on the list page or in the page from which you opened this page. If you opened the page from a list page, the customers in the list are the customers who are included in the collections pool that is used on the list page.  
 
 
 

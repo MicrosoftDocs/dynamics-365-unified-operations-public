@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Add a predecessor to a production flow activity
-description: In a production flow version, all activities must be sequenced. 
+description: Learn how to add a predecessor to a production flow activity, including a step-by-step process for finding production flows and versions.
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup
 ---
+
 # Add a predecessor to a production flow activity
 
 [!include [banner](../../includes/banner.md)]
@@ -33,7 +20,7 @@ This procedure shows how to associate a predecessor to an activity.
 
 To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected. 
 
-To learn more, read the white paper "Production flows and activities in lean manufacturing."
+To learn more, read the white paper [Lean manufacturing: Production flows and activities](https://go.microsoft.com/fwlink/?linkid=213164).
 
 
 ## Find the production flow and version

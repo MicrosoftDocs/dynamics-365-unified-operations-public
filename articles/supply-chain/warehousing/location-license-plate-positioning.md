@@ -1,26 +1,14 @@
 ---
-# required metadata
-
 title: Location license plate positioning
-description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
+description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as locations with double-deep pallet racking.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 ---
 
 # Location license plate positioning
@@ -32,10 +20,6 @@ License plate location positioning lets you see where a license plate is located
 The feature adds a sequence number to each license plate that is put into a storage location. This sequence number is used to order the license plates in the storage location. Therefore, the feature intelligently supports scenarios where customers are using a gravity racking system and must know, for picking purposes, which license plate is front-facing.
 
 This article presents a scenario that shows how to set up and use the feature.
-
-## Turn the Location license plate positioning feature on or off
-
-To use the functionality described in this article, the *Location license plate positioning* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location license plate positioning* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Example scenario
 
@@ -278,6 +262,5 @@ Now that the *Location license plate positioning* feature has been set up, and t
     ![Position 1 location.](media/LocationLicensePlatePositioning.png "Position 1 location")
 
 1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

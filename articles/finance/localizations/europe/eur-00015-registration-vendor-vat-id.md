@@ -1,19 +1,19 @@
 ---
 title: EUR-00015 Registration of vendor VAT ID
-description: This article explains how to add VAT registration IDs and a tax except number to a vendor account.
-author: AdamTrukawka
-ms.date: 08/01/2023
+description: Learn how to add VAT registration IDs and a tax except number to a vendor account, including a step-by-step process for adding VAT registration IDs.
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 08/01/2023
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # EUR-00015 Registration of vendor VAT ID
 
 [!include [banner](../../includes/banner.md)]

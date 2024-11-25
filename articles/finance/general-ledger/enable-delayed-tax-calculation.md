@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Enable delayed tax calculation on journals
-description: This article explains how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
-
-author: EricWang
-ms.date: 09/18/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: article
+ms.date: 09/18/2019
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-09-18
+ms.search.form: TaxTable
 ms.dyn365.ops.version: 10.0.7
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Enable delayed tax calculation on journals

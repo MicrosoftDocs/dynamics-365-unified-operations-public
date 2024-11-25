@@ -1,27 +1,13 @@
 --- 
-# required metadata 
- 
 title: Enter and compare RFQ bids and award contracts
-description: This article explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: GalynaFedorova
+description: Learn how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors.
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
 ms.date: 07/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Enter and compare RFQ bids and award contracts
@@ -32,7 +18,7 @@ This article explains how to enter replies to a request for quotation (RFQ), sco
 
 Before you start this procedure, you must have an RFQ that has two lines, and that has been sent to at least two vendors. To create this RFQ, complete the [Create a request for quotation](create-request-quotation.md) procedure. Scoring criteria must also be set up before you can complete this procedure.
 
-You can enter the bid as either a vendor or a procurement professional. For more information, see [Set up and maintain vendor collaboration](../set-up-maintain-vendor-collaboration.md).
+You can enter the bid as either a vendor or a procurement professional. Learn more in [Set up and maintain vendor collaboration](../set-up-maintain-vendor-collaboration.md).
 
 ## Enter a reply as a vendor
 

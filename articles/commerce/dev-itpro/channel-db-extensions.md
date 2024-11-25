@@ -1,22 +1,23 @@
 ---
 title: Channel database extensions
-description: This article explains how to extend the channel database.
+description: This article explains how to extend the channel database in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/17/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2017-09-15
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 # Channel database extensions
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to extend the channel database in Microsoft Dynamics 365 Commerce.
 
 The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from headquarters to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 

@@ -1,13 +1,14 @@
 ---
 title: Print labels using the Seagull Scientific BarTender® label service solution
-description: This article describes how to set up and print labels by using the Seagull Scientific BarTender® label service solution.
-author: GalynaFedorova
-ms.author: gfedorova
+description: Learn how to set up and print labels by using the Seagull Scientific BarTender® label service solution, including prerequisites.
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
+ms.date: 05/16/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
-ms.topic: how-to
-ms.date: 01/05/2023
-ms.custom: bap-template
 ---
 
 # Print labels using the Seagull Scientific BarTender® label service solution
@@ -148,7 +149,7 @@ You can now create label printers and label layouts.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the beginning of the full Librarian name has already been coded in the variable label template.
 > - When you create a variable-based label layout, **Variable name** in the **Data variables** grid can't be the same as **Variable name** in the **System variables** grid.
 
-## Additional resources
+## Related information
 
 - [Print labels using an external service](label-printing-using-external-label-service.md)
 - [Label Layouts](../warehousing/print-license-plate-labels-using-label-layouts.md)

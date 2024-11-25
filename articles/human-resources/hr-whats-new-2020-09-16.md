@@ -6,9 +6,6 @@ description: This article describes features that are either new or changed in M
 author: jcart1106
 ms.date: 09/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +14,7 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: evergreen
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

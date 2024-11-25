@@ -1,28 +1,16 @@
---- 
-# required metadata 
- 
-title: Load building workbench
-description: This article describes how to work with the load building workbench.
-author: Weijiesa
-ms.date: 10/30/2020
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-30
-ms.dyn365.ops.version: 10.0.15
 ---
+title: Load building workbench
+description: Learn how to work with the load building workbench, including an outline and step-by-step process for creating load building strategies.
+author: lisascholz91
+ms.author: lisascholz
+ms.reviewer: kamaybac
+ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
+---
+
 # Load building workbench
 
 [!include [banner](../../includes/banner.md)]
@@ -53,7 +41,7 @@ To create a load building strategy, follow these steps.
 1. Close the **Load building strategy parameters** page.
 1. Close the **Load building strategies** page.
 
-You can now assign the load building strategy to a load building template. Alternatively, you can use it directly in the load planning workbench.
+You can now assign the load building strategy to a load building template. Alternatively, you can use it directly in the load building workbench.
 
 ## Use a load building strategy in the load building workbench
 
@@ -68,6 +56,5 @@ You can now assign the load building strategy to a load building template. Alter
 1. Review the proposed loads and proposed load lines.
 1. On the Action Pane, select **Create loads** to create loads that are based on the source document lines on the **Proposed load lines** FastTab.
 1. Close the **Load building workbench** page.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

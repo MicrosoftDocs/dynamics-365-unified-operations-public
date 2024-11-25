@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Update certificate numbers and dates for TDS transactions
-description: This article explains how to update the recoverable certificate numbers and dates that were recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS).
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to update the recoverable certificate numbers and dates that were recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS).
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Update certificate numbers and dates for TDS transactions
@@ -38,7 +24,7 @@ Follow these steps to update certificate numbers and dates for TDS transactions.
 
 1. Go to **Tax \> Declarations \> Withholding tax \> Update certificate**.
 
-    [![Update certificate page.](../media/apac-ind-TDS-45.png)](/media/apac-ind-TDS-45.png)
+    [![Update certificate page.](../media/apac-ind-TDS-45.png)]
 
 2. On the **Update certificate** page, in the **Select** section, in the **Tax type** field, select **TDS**.
 3. In the **Certificate number** field, select the customer's or vendor's TDS certificate number.
@@ -65,4 +51,4 @@ Follow these steps to update certificate numbers and dates for TDS transactions.
 8. Select **Update** to update the **Certificate number** and **Certificate date** fields for TDS transactions in the lower grid.
 10. Go to **Tax \> Indirect taxes \> Withholding tax \> Recoverable certificate**, and select **Inquiry** to view the updated transaction lines that have the new certificate numbers on the **Certificate transactions** page.
 
-    [![Certificate transactions page.](../media/apac-ind-TDS-46.png)](/media/apac-ind-TDS-46.png)
+    [![Certificate transactions page.](../media/apac-ind-TDS-46.png)]

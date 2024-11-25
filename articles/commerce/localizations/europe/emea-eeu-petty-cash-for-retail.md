@@ -2,17 +2,15 @@
 title: Petty cash management for Commerce for Eastern Europe
 description: This article describes how to set up and use cash management features in Commerce for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 10/03/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Petty cash management for Commerce for Eastern Europe

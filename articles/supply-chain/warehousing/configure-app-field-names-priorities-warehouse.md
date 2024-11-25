@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Configure fields for the Warehouse Management mobile app
-description: This article describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
+description: Learn how to define and configure names and priorities of fields shown in the Warehouse Management mobile app, with an outline on warehouse app field names. 
 author: Mirzaab
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269434
-ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
-ms.search.region: global
-ms.search.industry: Manufacturing
 ms.author: mirzaab
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
+ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ---
 
 # Configure fields for the Warehouse Management mobile app
@@ -141,7 +124,7 @@ Based on the warehouse app field priority set up in the table above, the followi
 
 The remaining metadata, for example, Location, won't be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Dynamics 365 Supply Chain Management - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-## Additional resources
+## Related information
 
 [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
 

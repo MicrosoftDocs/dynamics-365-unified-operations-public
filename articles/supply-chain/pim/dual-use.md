@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Dual-use goods
-description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country/region, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
-author: t-benebo
-ms.date: 07/15/2020
+description: Learn how to keep track of products that are identified as dual-use goods and store certificate numbers for each relevant product and destination country/region.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
-audience: Application User
-# ms.devlang: 
+ms.date: 07/15/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.9
+ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
 ---
 
 # Dual-use goods

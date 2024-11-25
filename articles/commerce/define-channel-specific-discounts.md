@@ -4,8 +4,6 @@ description: Retailers often set different discounts in different channels. This
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

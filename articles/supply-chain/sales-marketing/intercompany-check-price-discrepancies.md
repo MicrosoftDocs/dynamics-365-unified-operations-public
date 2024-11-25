@@ -1,16 +1,12 @@
 ---
 title: Check intercompany order price discrepancies
-description: This article explains how to check intercompany order price discrepancies
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn how to check intercompany order price discrepancies, including a step-by-step process for price discrepancies on intercompany orders.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
 ---
 
 # Check intercompany order price discrepancies
@@ -19,7 +15,7 @@ ms.dyn365.ops.version: 10.0.22
 
 You can use this procedure to check for price discrepancies on intercompany orders.
 
-1. Go to **Procurement and sourcing \> Periodic \> Clean up \> Check intercompany order price discrepancies**.
+1. Go to **Procurement and sourcing \> Purchase orders \> Intercompany \> Check intercompany order price discrepancies**.
 1. Set up a batch job, if you need to, and then select **OK** to check the prices and discounts for intercompany sales orders and purchase orders. Otherwise, select **Cancel** to close the page without performing the check.
 
     > [!TIP]

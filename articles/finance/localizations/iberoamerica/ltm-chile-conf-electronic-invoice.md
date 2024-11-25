@@ -1,12 +1,12 @@
 ---
 title: Configure electronic invoice parameters for Chile
-description: This article explains how to configure the information required to generate the electronic invoice XML for Chile.
+description: Learn how to configure the information required to generate the electronic invoice XML for Chile, including prerequisites and a process of electronic invoices.
 author: Fhernandez0088
-ms.date: 10/20/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 10/20/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure electronic invoice parameters for Chile

@@ -1,17 +1,14 @@
 ---
 title: Bad debt reserves in Accounts receivable
-description: This article provides information about the tax registers for receivables, hopeless debts, and their write-off.
-author: AdamTrukawka
-ms.date: 08/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn about the tax registers for receivables, hopeless debts, and their write-off, including an outline on creating and setting up two debts calculation models.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
+ 
 ---
 
 # Bad debt reserves in Accounts receivable

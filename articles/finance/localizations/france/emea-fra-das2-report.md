@@ -1,15 +1,14 @@
 ---
 title: DAS-2 report
-description: This article guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
-author: AdamTrukawka
-ms.date: 12/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance with an overview on vendor configuration.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: France
-ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -52,7 +51,7 @@ After you've finished downloading the ER configurations from LCS, follow these s
 
 ### Example
 
-[![Example of a configuration.](../media/emea-fra-das2-report-configuration.png)](/media/emea-fra-das2-report-configuration.png)
+![Example of a configuration.](../media/emea-fra-das2-report-configuration.png)]
 
 On line 1 of the preceding configuration, main account **622000**, which is used to post fee expense transactions, is mapped to classification **C** (**Commissions**), which is established by the tax authority.
 

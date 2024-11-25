@@ -1,19 +1,19 @@
 ---
 title: MX-00010 Post a free text invoice
-description: Use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method.
+description: Learn how to use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method.
 author: AdamTrukawka
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, EInvoiceCFDIJournal_AR
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # MX-00010 Post a free text invoice
 
 [!include [banner](../../includes/banner.md)]

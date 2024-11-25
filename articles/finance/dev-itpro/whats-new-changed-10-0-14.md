@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.14 (November 2020)
-description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.14 preview release.
+description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.14 preview release released in November 2020.
 author: kfend
-ms.date: 10/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2020-08-31 
+ms.topic: whats-new
+ms.date: 07/15/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kfend
+ms.search.region: Global
+ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-
 ---
 # What's new or changed in Dynamics 365 Finance 10.0.14 (November  2020)
 

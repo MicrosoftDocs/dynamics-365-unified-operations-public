@@ -1,13 +1,13 @@
 ---
 title: Initialize company data
-description: This article explains how to initialize data with company information before you enable a dual-write connection.
+description: Learn how to initialize data with company information before you enable a dual-write connection, including prerequisites and a high-level scenario.
 author: RamaKrishnamoorthy
-ms.date: 12/01/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 12/01/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,9 +15,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Initialize company data
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
-
 
 
 If you have an existing Microsoft Dataverse instance or finance and operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or finance and operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.

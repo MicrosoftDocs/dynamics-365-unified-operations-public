@@ -4,8 +4,6 @@ description: This article explains how you can enhance the information that appe
 author: josaw1
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

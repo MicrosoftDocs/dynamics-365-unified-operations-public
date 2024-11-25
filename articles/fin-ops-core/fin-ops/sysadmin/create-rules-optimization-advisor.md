@@ -1,21 +1,17 @@
 ---
 title: Create rules for Optimization advisor
-description: This article discusses how to add new rules to Optimization advisor.
+description: Learn about how to add new rules to Optimization advisor, including outlines on various types of rules with code examples.
 author: kamaybac
-ms.date: 02/04/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: global
 ms.author: kamaybac
+ms.topic: article
+ms.date: 02/04/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.custom: 
-ms.assetid: 
-ms.search.industry: 
 ms.search.form: SelfHealingWorkspace
+ms.dyn365.ops.version: 7.3
 ---
 
 # Create rules for Optimization advisor

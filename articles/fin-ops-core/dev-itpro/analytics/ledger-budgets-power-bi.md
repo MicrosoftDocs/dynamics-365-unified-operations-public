@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Actual vs budget Power BI content
-description: This article describes the Actual vs budget Power BI content. It explains how to access the reports and provides information about the data model.
-author: panolte
-ms.date: 12/18/2017
+description: Learn about the Actual vs budget Power BI content. It explains how to access the reports and provides information about the data model.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetTrackingWorkspace 
+ms.date: 12/18/2017
+ms.custom:
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
-ms.search.validFrom: 2017-06-30 
+ms.search.validFrom: 2017-06-30
+ms.search.form: BudgetTrackingWorkspace 
 ms.dyn365.ops.version: July 2017 update 
 ---
 

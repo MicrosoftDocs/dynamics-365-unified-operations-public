@@ -4,8 +4,6 @@ description: This article explains how you can extend the Commerce initializatio
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -48,7 +46,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 1. Create a custom project and use the Application Object Tree (AOT) to add a custom table.
 2. Create a new resource file to add all custom job information. Here is the template for the resource file.
 
-```csharp
+```xml
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
         </jobs>
@@ -117,7 +115,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 9. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler >Initialize commerce scheduler**.
 10. Run the CDX initialization by clicking the **OK** button on **Initialize commerce scheduler** dialog.
 
-## Pull data from a new channel database table to a new HQ table by using a push job
+## Pull data from a new channel database table to a new HQ table by using a pull job
 
 To pull data from a new channel table to HQ, you have two options:
 
@@ -284,7 +282,7 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
 
 The sample CDX resource file in the Retail SDK contains additional customizations. However, for our example of RetailTransactionTable extension, the section in the following code is the only section that is required to pull data from the channel side back to HQ.
 
-```csharp
+```xml
 <RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7">
     <Subjobs>
         <!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ.For upload subjobs, set the OverrideTarget property to  "false", as ilustrated below. This will tell CDX to use the table defined by TargetTableName and TargetTableSchema as extension table on this subjob.-->
@@ -304,7 +302,7 @@ The sample CDX resource file in the Retail SDK contains additional customization
 
 **ChannelDBSchema='ext'** – This field is included so that the resource reads from the extension schema in the channel database.
 
-**Subjob Id="RetailTransactionTable"** – You must make sure that the SubJob ID is the same as the original subjob id for that table. so that the extensibility framework can determine that you're customizing the existing subjob. If you use new subjob di, system will throw duplicate subjob error for the same table.
+**Subjob Id="RetailTransactionTable"** – You must make sure that the SubJob ID is the same as the original subjob id for that table. so that the extensibility framework can determine that you're customizing the existing subjob. If you use new subjob ID, system will throw duplicate subjob error for the same table.
 
 **TargetTableName ="CONTOSORETAILTRANSACTIONTABLE"** - Your channel extension table name.
 

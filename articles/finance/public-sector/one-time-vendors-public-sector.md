@@ -1,20 +1,17 @@
 ---
 title: One-time vendors in the public sector
-description: This article provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices.
+description: Learn about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices.
 author: TaylorVH
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: TaylorVH
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 403857a3-bebb-4ff7-b1b5-c88f41fc18ae
-ms.search.industry: Public sector
-ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 ---
 
 # One-time vendors in the public sector

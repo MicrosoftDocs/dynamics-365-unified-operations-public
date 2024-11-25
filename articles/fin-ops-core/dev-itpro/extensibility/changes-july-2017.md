@@ -1,19 +1,15 @@
 ---
 title: Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
-description: This is a list of extensibility features that were implemented in the (July 2017).
+description: Access a list of extensibility features that were implemented in July 2017, including a table of soft-sealed application models.
 author: FrankDahl
-ms.date: 11/08/2017
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: conceptual
+ms.date: 11/08/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
-ms.assetid: 
 ---
 
 # Extensibility changes in Finance and Operations, Enterprise edition (July 2017)

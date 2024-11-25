@@ -1,37 +1,25 @@
 ---
-# required metadata
-
 title: Computed columns and virtual fields in data entities
-description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.
+description: Learn about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.
 author: jaredha
-ms.date: 10/12/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.author: kamanick
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jaredha
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Computed columns and virtual fields in data entities
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 
@@ -119,11 +107,8 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
 6. Go to **FMCustomerEntity** &gt; **Methods**. Right-click the **Methods** node, and then click **New**. Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.
 7. Paste the following X++ code into the method. The method returns the combined and formatted **NameAndAddress** value.
 
-    > [!NOTE]
-    > The **server** keyword is required.
-
     ```xpp
-    private static server str formatNameAndAddress()   // X++
+    private static str formatNameAndAddress()   // X++
     {
         DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
         List                fieldList = new List(types::String);

@@ -1,19 +1,17 @@
 ---
 title: Public sector accounting in France
-description: This article describes public sector accounting in France.
+description: Learn about public sector accounting in France, including prerequisites and outlines on French public sector topics and vendor invoice payment holds.
 author: brpotter
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: France
 ms.author: brpotter
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: France
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: f6bfb9dd-c3a7-48d3-b31d-23e6f27c1323
 ms.search.industry: Public sector
+ms.assetid: f6bfb9dd-c3a7-48d3-b31d-23e6f27c1323
 ---
 
 # Public sector accounting in France

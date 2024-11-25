@@ -1,15 +1,14 @@
 ---
 title: Order promising
-description: This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
-author: Henrikan
-ms.author: henrikan
+description: Learn about order promising, which helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.topic: conceptual
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
-ms.topic: conceptual
-ms.date: 02/06/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Order promising

@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Small parcel shipping
-description: This article provides information about the small parcel shipping (SPS) feature. This feature enables Microsoft Dynamics 365 Supply Chain Management to submit details about a packed container to the carrier, and then receive a shipping label, shipping rate, and tracking number back from that carrier.
+description: Learn about the small parcel shipping (SPS) feature, which enables Microsoft Dynamics 365 Supply Chain Management to submit details about packed containers.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-01-08
-ms.dyn365.ops.version: 10.0.16
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 ---
 
 # Small parcel shipping
@@ -49,11 +34,32 @@ Supply Chain Management doesn't include any rate engines. You must obtain or cre
 
 #### Download and deploy the demo rate engine
 
-Follow these steps to get the demo rate engine.
+Follow these steps to download and deploy the demo rate engine.
 
 1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
-1. On your Supply Chain Management server, save the DLL in the 
-**\\AOSService\\PackagesLocalDirectory\\ApplicationSuite\\bin** folder.
+
+1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
+
+1. Create a new model called *TMSSmallParcelShippingDemo* and make it reference the *ApplicationSuite* and *ApplicationPlatform* models in the select referenced packages step.
+
+    :::image type="content" source="media/visual-studio-create-model.png" alt-text="Create a model in Visual Studio":::
+
+1. Create a project in the new model and add the downloaded `TMSSmallParcelShippingEngine.dll` file to the references for the new project.
+
+    :::image type="content" source="media/visual-studio-solution-explorer.png" alt-text="The solution explorer in Visual Studio":::
+
+1. On the **Solution Explorer** pane, right-click and select **Build Solution** to compile the project and make sure the reference is added to the AOT node.
+
+    :::image type="content" source="media/visual-studio-aot-node.png" alt-text="The AOT node in Visual Studio":::
+
+1. Go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model.
+
+1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
+
+1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply.
+
+> [!NOTE]
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, please contact your LCS administrator for support.
 
 #### Create and deploy functional rate engines
 
@@ -148,7 +154,7 @@ Follow these steps to set up a carrier service account.
 
 Follow these steps to set up a container packing policy.
 
-1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. For more information, see [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
+1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. Learn more in [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
 1. Go to **Warehouse Management \> Setup \> Containers \> Container packing policies**.
 1. On the Action Pane, select **New** to add a container packing policy.
 1. On the header of the new policy, set the following values:

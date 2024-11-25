@@ -1,27 +1,29 @@
 ---
 title: Create POS permission groups
-description: This article explains how to create a POS permission group.
+description: This article explains how to create a POS permission group in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/20/2019
+ms.date: 08/02/2024
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.search.industry: Retail
 ms.search.form: RetailPosPermissionGroup, HcmJob
+ms.custom: 
+  - bap-template
 ---
 # Create POS permission groups
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
+This article explains how to create a POS permission group in Microsoft Dynamics 365 Commerce. 
 
-1. In the navigation pane, go to **Modules > Retail and Commerce > Employees > Permission groups**.
+The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
+
+To create a POS permission group in Commerce headquarters, follow these steps.
+
+1. In the navigation pane, go to **Modules \> Retail and Commerce \> Employees \> Permission groups**.
 2. Select **New**.
 3. In the **POS permission group ID** field, type a value.
 4. In the **Description** field, type a value.
@@ -32,7 +34,7 @@ This article explains how to create a POS permission group. The demo data compan
 9. Select **Yes** in the **Allow password change** field.
 10. Select **Yes** in the **Allow blind close** field.
 11. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to commerce channels. 
-12. In the navigation pane, go to **Modules > Human resources > Jobs > Jobs**.
+12. In the navigation pane, go to **Modules \> Human resources \> Jobs \> Jobs**.
 13. Next we will assign the POS permission group to a Job. In the list, find and select the desired record.
 14. Select **Edit**.
 15. Expand the **Job classification** section.

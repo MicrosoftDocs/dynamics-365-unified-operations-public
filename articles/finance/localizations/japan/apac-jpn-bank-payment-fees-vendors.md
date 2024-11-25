@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Bank payment fees covered by vendors in Japan
-description: This article answers some of the frequently asked questions about bank payment fees that are covered by vendors in Japan.
+description: Access answers some of the frequently asked questions about bank payment fees that are covered by vendors in Japan, including a step-by-step process.
 author: EricWangChen
-ms.date: 03/21/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 03/21/2018
+ms.reviewer: johnmichalak
+audience: Application User 
+ms.search.region: Japan
 ms.search.validFrom: 2016-02-28
+ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ---
 
 # Bank payment fees covered by vendors in Japan

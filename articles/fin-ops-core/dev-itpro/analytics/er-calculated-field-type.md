@@ -1,18 +1,16 @@
 ---
 title: Support parameterized calls of ER data sources of the Calculated field type
-description: This article provides information about how to use the Calculated field type for ER data sources.
+description: Learn about how to use the Calculated field type for ER data sources, including learning about the prerequisites and reviewing ER solutions.
 author: kfend
-ms.date: 01/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 01/04/2022
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.5
-ms.custom: 
 ms.assetid: 
 ---
 

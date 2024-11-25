@@ -6,9 +6,6 @@ description: This article provides details and an example query for the Job deta
 author: jcart
 ms.date: 04/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

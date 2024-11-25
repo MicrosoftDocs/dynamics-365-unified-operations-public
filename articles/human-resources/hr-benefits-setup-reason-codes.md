@@ -4,11 +4,8 @@
 title: Set up reason codes
 description: Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 07/02/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
@@ -17,11 +14,10 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -31,15 +27,10 @@ ms.dyn365.ops.version: Human Resources
 
 Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 
-> [!NOTE]
-> As of January 2021, reason codes were migrated to the **Personnel management** workspace instead of the **Benefits management** workspace. For more information, see [Manually migrate reason codes to Personnel management](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
-
 ## Create reason codes
 
 1. In the **Personnel management** workspace (or **Benefits management** workspace if your reason codes haven't migrated), select **Links**, and then select **Reason codes**.
-
 2. Select **New**.
-
 3. Specify values for the following fields:
 
    | Field | Description |
@@ -48,7 +39,6 @@ Dynamics 365 Human Resources uses reason codes to explain why an employee’s be
    | **Description** | A description of the reason code. |
 
 4. Under **Applicable scenarios**, set **Benefits management** to **Yes**. (Not applicable if your reason codes haven't migrated to the **Personnel management** workspace.)
-
 5. Select **Save**.
 
 ## Manually migrate reason codes to Personnel management

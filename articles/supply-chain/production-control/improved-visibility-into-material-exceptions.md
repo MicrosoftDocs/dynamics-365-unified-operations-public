@@ -1,29 +1,14 @@
 ---
-# required metadata
-
 title: Visibility into material exceptions
 description: This article describes how you can get better visibility into exceptions for raw materials for production orders and batch orders.
 author: johanhoffmann
-ms.date: 10/30/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 1705903
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.topic: article
+ms.date: 10/30/2017
+ms.reviewer: kamaybac
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 ---
+
 # Visibility into material exceptions
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +35,7 @@ A BOM or formula line can be released to the warehouse in three ways:
 - As a manual release
 - Automatically through a batch job
 
-For more information, see [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). 
+Learn more in [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). 
 
 If a BOM or formula line hasn't been released or has been only partly released, and if the date and filter criteria of the workspace are met, the line is included in the calculation of the number that appears on the **Unreleased material lines needing attention** tile.
 

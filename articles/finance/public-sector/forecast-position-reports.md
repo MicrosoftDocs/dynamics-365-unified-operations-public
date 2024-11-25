@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Forecast position reports for the public sector
-description: You can use the Forecast position summary and Forecast position detail reports to generate information about forecast positions during a budget plan and scenario that you specify. 
+description: You can use the Forecast position summary and Forecast position detail reports to generate information about forecast positions during a specified budget plan.
 author: velofog
-ms.date: 10/29/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-ms.search.industry: public sector
 ms.author: twheeloc
+ms.topic: article
+ms.date: 10/29/2019
+ms.custom: 
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-8-04
+ms.search.form:
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Forecast position reports for the public sector

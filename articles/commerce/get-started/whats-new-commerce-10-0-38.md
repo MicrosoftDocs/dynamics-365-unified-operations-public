@@ -2,9 +2,12 @@
 title: Preview features in Dynamics 365 Commerce 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.38. 
 author: josaw1
-ms.date: 10/27/2023
+ms.date: 04/12/2024
 ms.topic: article
 audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
@@ -16,8 +19,6 @@ ms.dyn365.ops.version: 10.0.38
 # What's new or changed in Dynamics 365 Commerce 10.0.38 (February 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.38. This version has a build number of 10.0.1777 and is available on the following schedule:
 
@@ -43,7 +44,7 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md). 
+Microsoft Dynamics 365 Commerce version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md). 
   
 
 ### Bug fixes

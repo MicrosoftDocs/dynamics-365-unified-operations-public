@@ -2,18 +2,15 @@
 title: Quick view module
 description: This article covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-08
-ms.dyn365.ops.version: Release 10.0.17
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Quick view module

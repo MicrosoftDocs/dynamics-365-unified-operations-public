@@ -1,19 +1,16 @@
 ---
 title: Enrich a category landing page
 description: This article covers the enrichment of category pages in Dynamics 365 Commerce.
-author: v-chgri
-ms.date: 04/14/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+author: ashishmsft
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Enrich a category landing page

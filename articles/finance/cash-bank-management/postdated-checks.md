@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Postdated checks
-description: This article provides information about support for postdated checks. Postdated checks are issued to make and receive payments on a future date.
-author: angelad116
-ms.date: 01/12/2018
+description: Learn about support for postdated checks. Postdated checks are issued to make and receive payments on a future date, including details for various scenarios.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendPostDatedChecks, CustPostDatedChecks
-# ROBOTS: 
+ms.date: 05/23/2024
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
 ---
 
 # Postdated checks

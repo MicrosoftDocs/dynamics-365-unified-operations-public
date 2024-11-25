@@ -1,19 +1,16 @@
 ---
 title: Archive printed customer invoices with hash numbers
-description: This article explains how to enable archiving to store printed customer invoices with hash numbers.
+description: Learn about how to enable archiving to store printed customer invoices with hash numbers, including prerequisites and an outline on configuring customer master data.
 author: mrolecki
-ms.date: 09/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: mrolecki
+ms.topic: article
+ms.date: 09/15/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-05
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
-ms.custom: 539093
-ms.search.form: 
 ---
 
 # Archive printed customer invoices with hash numbers

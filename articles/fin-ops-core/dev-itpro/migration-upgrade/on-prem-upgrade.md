@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: In-place upgrade process for on-premises environments
-description: This article provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
+description: Learn about the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x, including prerequisites.  
 author: laneswenka
-ms.date: 01/14/2021
-ms.topic: article
-ms.prod: dynamics-365
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: laswenka
-ms.search.validFrom: 2018-10-31 
+ms.topic: article
+ms.date: 01/14/2021
+ms.custom:
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2018-10-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.x
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # In-place upgrade process for on-premises environments

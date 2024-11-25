@@ -1,20 +1,18 @@
 ---
 title: Post inventory main accounts by site for China
-description: This article provides information about the posting of inventory main accounts by site for China.
+description: Learn about the posting of inventory main accounts by site for China. You can set set up or modify the posting of items to ledger accounts.
 author: AdamTrukawka
-ms.date: 03/21/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 262754
-ms.assetid: f8e0b34d-006a-4baf-86ae-60625ba4b442
 ms.search.form: InventPostingParameters
+ms.dyn365.ops.version: Version 1611
+ms.assetid: f8e0b34d-006a-4baf-86ae-60625ba4b442
 ---
 
 # Post inventory main accounts by site for China

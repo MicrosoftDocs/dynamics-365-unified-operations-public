@@ -1,12 +1,13 @@
 ---
 title: Application module
-description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
+description: Learn about the application module, a unit of runtime execution with sandboxing around concepts and data used inside of it.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Application module

@@ -1,18 +1,15 @@
 ---
 title: Create custom designs for business documents
-description: This article shows how to create a custom report design for an existing application business document by using a pure extension model.
-author: RichdiMSFT
-ms.date: 06/20/2017
+description: Learn about how to create a custom report design for an existing application business document by using a pure extension model.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
 ---
 

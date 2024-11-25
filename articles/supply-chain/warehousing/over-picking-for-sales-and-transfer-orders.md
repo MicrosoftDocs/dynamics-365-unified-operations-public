@@ -1,16 +1,12 @@
 ---
 title: Over-picking for sales orders and transfer orders
-description: This article explains how to enable over-picking for sales orders and transfer orders.
-author: GalynaFedorova
-ms.date: 07/06/2021
+description: Learn how to enable over-picking for sales orders and transfer orders, including an outline and step-by-step process for scenario setup.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
-ms.search.form: WHSRFMenuItem
-audience: Application User
+ms.date: 07/06/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: gfedorova
-ms.search.validFrom: 2021-07-06
-ms.dyn365.ops.version: 10.0.21
+ms.search.form: WHSRFMenuItem
 ---
 
 # Over-picking for sales orders and transfer orders

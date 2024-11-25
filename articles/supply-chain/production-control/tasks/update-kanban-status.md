@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Update kanban status
-description: When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status. 
+description: When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status. Learn about finding kanbans.
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: Kanban, KanbanResetEmpty   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: Kanban, KanbanResetEmpty
 ---
+
 # Update kanban status
 
 [!include [banner](../../includes/banner.md)]

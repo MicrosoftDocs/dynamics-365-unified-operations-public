@@ -1,36 +1,27 @@
 ---
-# required metadata
-
-title: Awareness between ledger settlement feature after year-end close using the inquiry page
-description: This article explains how to use the Awareness between ledger settlements feature by using the new inquiry page after the General ledger year-end close is run.
-author: kweekley
-ms.date: 12/15/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
+title: Enable advanced awareness options parameter after year-end close using the inquiry page
+description: Learn how to use the Enable advanced awareness options parameter by using the new inquiry page after the General ledger year-end close is run.
+author: moaamer
 ms.author: kweekley
+ms.topic: article
+ms.date: 11/08/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
-# Awareness between ledger settlement feature after year-end close using the inquiry page
+# Enable advanced awareness options parameter after year-end close using the inquiry page
 
-One primary change of the **Awareness between ledger settlement and year end close** feature (the **Awareness** feature) is that ledger settlement can't be done across fiscal years. This cross-year limitation is relevant only to ledger settlement, not to Accounts receivable or Accounts payable settlements.
+> [!Note]
+> Beginning in Dynamics 365 Finance version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters**, specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively.
 
-Before you enable the **Awareness** feature, the fiscal year that will undergo the year-end close must not have any ledger transactions that are settled across fiscal years. Specifically, any transactions that were posted into the fiscal year that you're running the year-end close for must be unsettled from transactions that were posted into a different fiscal year. The transactions can then be resettled against transactions in the same fiscal year.
+A major change of the **Enable advanced awareness options** parameter is that ledger settlement can't be done across fiscal years. This cross-year limitation is relevant only to ledger settlement, not to Accounts receivable or Accounts payable settlements.
+
+Before you enable the **Enable advanced awareness options** parameter, the fiscal year that will undergo the year-end close must not have any ledger transactions that are settled across fiscal years. Specifically, any transactions that were posted into the fiscal year that you're running the year-end close for must be unsettled from transactions that were posted into a different fiscal year. The transactions can then be resettled against transactions in the same fiscal year.
 
 This article describes the steps that are required to identify, unsettle, and resettle ledger transactions that are settled across years. In the example that's provided, fiscal year 2022 has been closed. The focus is on preparing the ledger settlement transactions before the 2023 year-end close is run.
 
@@ -49,14 +40,14 @@ The following illustration shows the transactions that were posted for main acco
 
 ## Example
 
-Follow these steps if your organization wants to use the **Awareness** feature after you run the year-end close for fiscal year 2022.
+Follow these steps if your organization wants to use the **Enable advanced awareness options** parameter after you run the year-end close for fiscal year 2022.
 
 > [!NOTE]
 > The year-end close for 2022 and earlier fiscal years must be rerun only if new transactions are posted into fiscal year 2022 or earlier. When you complete the following procedure, no new transactions are posted into 2022. Therefore, the year-end close doesn't have to be rerun.
 >
 > Ledger transactions that are settled across fiscal years can remain ledger-settled if they aren't settled against a transaction that was posted into 2022 or later. For example, if you've settled transactions in 2019 and 2020, they can remain settled.
 
-1. Complete the year-end close for 2022 without the **Awareness** feature enabled.
+1. Complete the year-end close for 2022 without the **Enable advanced awareness options** parameter enabled.
 2. Identify all the transactions that were posted into other fiscal years but settled against transactions that were posted into 2023 (the next fiscal year that will be closed).
 
     > [!NOTE]
@@ -101,10 +92,10 @@ Follow these steps if your organization wants to use the **Awareness** feature a
     - The opening balance of $1,700 can be settled against the adjustment for -$1,700.
     - The detailed transactions that were unsettled for -$700 can be settled against the adjustment for $700.00.
 
-8. Enable the **Awareness** feature. You're now ready to run the year-end close.
+8. Enable the **Enable advanced awareness options** parameter. You're now ready to run the year-end close.
 
     - Before you run the year-end close for 2023, consider selecting the **Keep details** option for all balance sheet accounts in the ledger settlement setup. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).
-    - When you begin the year-end close for 2023, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you. This situation might occur if users settled transactions across fiscal years before the **Awareness** feature was enabled.
-    - If 2022 and 2023 transactions are still settled, you'll have to disable the **Awareness** feature again and then repeat the previous steps to unsettle those transactions. This approach is required because 2022 is closed, and transactions can't be unsettled in a closed fiscal year.
+    - When you begin the year-end close for 2023, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you. This situation might occur if users settled transactions across fiscal years before the **Enable Advanced Awareness Options** parameter was enabled.
+    - If 2022 and 2023 transactions are still settled, you'll have to disable the **Enable advanced awareness options** parameter again and then repeat the previous steps to unsettle those transactions. This approach is required because 2022 is closed, and transactions can't be unsettled in a closed fiscal year.
 
-After the year-end close for 2022 is successfully run, you can leave the **Awareness** feature enabled from now on.
+After the year-end close for 2022 is successfully run, you can leave the **Enable advanced awareness options** parameter enabled.

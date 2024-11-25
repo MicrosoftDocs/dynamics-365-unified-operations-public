@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Sales orders mobile workspace
-description: This article provides information about the Sales orders mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
-author: Henrikan
-ms.date: 05/24/2022
+description: Learn about the Sales orders mobile workspace, which helps you stay up to date about your sales orders anywhere and anytime.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/24/2022
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 267134
+ms.search.form:
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: henrikan
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-
 ---
 
 # Sales orders mobile workspace
@@ -121,12 +104,6 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </tr>
 </tbody>
 </table>
-
-## Download and install the mobile app
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 

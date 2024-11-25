@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Fixed asset transaction options
-description: This article describes the different methods available for creating fixed asset transactions.
+description: Learn about the different methods available for creating fixed asset transactions, including outlines on Accounts payable and Accounts receivable.
 author: moaamer
-ms.date: 08/10/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetTable, PurchCreateOrder
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 08/10/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetTable, PurchCreateOrder
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
 ---
 
 # Fixed asset transaction options

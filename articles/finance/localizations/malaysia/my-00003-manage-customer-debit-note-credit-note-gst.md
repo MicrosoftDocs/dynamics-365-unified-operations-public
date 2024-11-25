@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00003 Manage customer Debit note and Credit note for GST
-description: This procedure walks you through how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note. 
+description: Learn how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note, including a process for creating a debit note. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PCProductLookup, CustInvoiceJourLookup_MY, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm   
+ms.custom:
+ms.reviewer: johnmichalak    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PCProductLookup, CustInvoiceJourLookup_MY, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00003 Manage customer Debit note and Credit note for GST
 
 [!include [banner](../../includes/banner.md)]

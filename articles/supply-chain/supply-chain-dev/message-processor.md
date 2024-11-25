@@ -1,15 +1,14 @@
 ---
 title: Create and process message queues and message types
-description: This article describes how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types by using the Message processor messages page.
-author: Henrikan
-ms.author: henrikan
+description: Learn how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types.
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
 ms.topic: how-to
-ms.date: 11/02/2022
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 11/18/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Create and process message queues and message types
@@ -44,10 +43,12 @@ You can use the fields at the top of the **Message processor messages** page to 
 - **Message type** – The type of message.
 - **Message queue** – The name of the queue that the message will be processed in. The following queues are provided:
 
-    - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
-    - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
+    - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. Learn more in [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
+    - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. Learn more in [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
     - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
     - *Shipment Orders* – This queue holds messages that support [Warehouse management only mode](../warehousing/wms-only-mode-overview.md).
+    - *Source System Products* – This queue holds messages that support [source product master data](../warehousing/wms-only-mode-exchange-data.md).
+    - *External warehouse shipment order updates* – This queue holds messages that support [external shared warehouse processing](../warehousing/wms-only-mode-external-shared-warehouse.md).
     - *Dynamics 365 Sales Integration* – This queue holds messages that integrate with Dynamics 365 Sales. For more information about this feature and the messages that it might add to this queue, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md).
     - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
 
@@ -64,7 +65,7 @@ You can use the fields at the top of the **Message processor messages** page to 
 
 To view detailed information about a message, select it in the grid, and then select the **Log** or **Message content** tab under the message grid, where each processing event is shown.
 
-The text on the **Message content** tab depends on the **Message type** value. Therefore, the text length will vary. A typical message content text will start with an opening brace (**{**) and end with a closing brace (**}**). In between will be field names (for example, `journalId`), each of which is followed by a colon and a value (for example, *USMF-123456*).
+The text on the **Message content** tab depends on the **Message type** value. Therefore, the text length varies. A typical message content text will start with an opening brace (**{**) and end with a closing brace (**}**). In between will be field names (for example, `journalId`), each of which is followed by a colon and a value (for example, *USMF-123456*).
 
 The toolbar on the **Log** tab includes the following buttons:
 
@@ -262,7 +263,7 @@ Because a bottleneck can occur when records are picked up for processing for mul
 - Bundle 2 - Production order 2 – Start message
 - Bundle 2 - Production order 2 – Report as finished message
 
-For scalability, when you develop a new queue, you can configure the number of tasks that should process the bundles. (For more information, see [Implement a new queue](#custom-queue).) If the configuration uses two message processor tasks, the two bundles can be processed in parallel.
+For scalability, when you develop a new queue, you can configure the number of tasks that should process the bundles. (Learn more in [Implement a new queue](#custom-queue).) If the configuration uses two message processor tasks, the two bundles can be processed in parallel.
 
 ## Implementation examples
 

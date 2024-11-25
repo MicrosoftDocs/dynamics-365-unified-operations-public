@@ -1,18 +1,15 @@
 ---
 title: Extend report menu items to redirect user navigation
-description: This article shows how to extend existing application menu items so that navigations are redirected to a custom reporting solution.
-author: RichdiMSFT
-ms.date: 06/20/2017
+description: Learn how to extend existing application menu items so that navigations are redirected to a custom reporting solution.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom: 266674
 ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
 ---
 

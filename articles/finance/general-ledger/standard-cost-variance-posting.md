@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Standard cost variance posting
-description: This article provides information about setting up posting profiles for standard costing.
+description: Learn about setting up posting profiles for standard costing, including a sample posting profile configuration and table giving details for posting types.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup
-# ROBOTS: 
+ms.date: 04/25/2022
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup
 ---
 
 # Standard cost variance posting
 
-When you use standard costing for one or more products in your organization, you must configure the [prerequisites for standard costing](/supply-chain/cost-management/prerequisites-standard-costs.md). This article explains the posting accounts that are required for step 3 of the prerequisites, "Assign ledger accounts to item postings that are related to standard cost variances."
+When you use standard costing for one or more products in your organization, you must configure the [prerequisites for standard costing](../../supply-chain/cost-management/prerequisites-standard-costs.md). This article explains the posting accounts that are required for step 3 of the prerequisites, "Assign ledger accounts to item postings that are related to standard cost variances."
 
-Different types of variances can occur for purchases and production orders. For examples of production variances, see [Common sources of production variances](/supply-chain/cost-management/common-sources-of-production-variances.md). Purchase order price variances occur when you use standard cost for a purchased item, and there is a difference between the product's standard cost and the invoiced amount on the purchase order.
+Different types of variances can occur for purchases and production orders. For examples of production variances, see [Common sources of production variances](../../supply-chain/cost-management/common-sources-of-production-variances.md). Purchase order price variances occur when you use standard cost for a purchased item, and there is a difference between the product's standard cost and the invoiced amount on the purchase order.
 
 ## Sample posting profile configuration
 

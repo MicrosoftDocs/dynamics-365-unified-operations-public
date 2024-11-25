@@ -1,21 +1,18 @@
 ---
 title: Hardware sizing requirements for on-premises environments
-description: This article lists the hardware sizing requirements for an on-premises environment.
+description: Learn about the hardware sizing requirements for an on-premises environment, including an overview on factors that affect sizing.
 author: sericks007
-ms.date: 06/02/2021
-ms.topic: article
-ms.prod: dynamics-365
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 06/02/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.assetid: 
-ms.service: 
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Hardware sizing requirements for on-premises environments
@@ -33,7 +30,7 @@ After you have reviewed the documentation, you can start the process of estimati
 
 All the factors shown in the following illustration contribute to sizing. The more detailed information that is collected, the more precisely you can determine sizing. Hardware sizing, without supporting data, is likely to be inaccurate. The absolute minimum requirement for necessary data is the peak transaction line load per hour.
 
-[![Hardware sizing for on-premises environments.](../../fin-ops/get-started/media/lbd-sizing-01.png)](/media/lbd-sizing-01.png)
+[![Hardware sizing for on-premises environments.](../../fin-ops/get-started/media/lbd-sizing-01.png)]
 
 Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization. It's important to always find the peak transactional volume per hour. If there are multiple peak periods, then these periods need to be accurately defined.
 

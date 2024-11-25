@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Configure address books
-description: Use this procedure to set up additional address books for your organization. 
-author: msftbrking 
+description: Use this procedure to set up additional address books for your organization with a step-by-step process for configuring address books. 
+author: msftbrking
+ms.author: anisagrawal
+ms.topic: how-to
 ms.date: 08/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DirAddressBook, DirAddressBookTeam   
+ms.custom: 
+ms.reviewer: johnmichalak 
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: brking
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: DirAddressBook, DirAddressBookTeam 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Configure address books
 
 [!include [banner](../../includes/banner.md)]

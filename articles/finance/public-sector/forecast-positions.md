@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Forecast position distribution
-description: This article provides information about the position budgeting functionality that is available for the public sector. 
+description: Learn about the position budgeting functionality that is available for the public sector and validate whether the dimensions for a forecast position are correct.
 author: velofog
-ms.date: 08/07/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-ms.search.industry: public sector
 ms.author: twheeloc
+ms.topic: article
+ms.date: 08/07/2019
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-8-04
+ms.search.form:
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Forecast position distribution 

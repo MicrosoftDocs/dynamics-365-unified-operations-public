@@ -1,21 +1,21 @@
 ---
 title: MX-00007 Customer registration IDs and other information
-description: This procedure walks you through creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico.
+description: Learn about creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico.
 author: AdamTrukawka
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Mexico
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
+ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - CustTable, DirPartyQuickCreateForm
   - DefaultDashboard
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # MX-00007 Customer registration IDs and other information
 
 [!include [banner](../../includes/banner.md)]

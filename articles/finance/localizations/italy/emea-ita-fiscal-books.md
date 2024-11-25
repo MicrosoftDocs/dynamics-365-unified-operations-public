@@ -1,19 +1,16 @@
 ---
 title: Italian sales tax books
-description: The article describes how to set up and use Italian sales tax books and Italian sales tax book sections.
+description: Learn how to set up and use Italian sales tax books and Italian sales tax book sections, including an outline on setting up sales tax books.
 author: liza-golub
-ms.date: 06/24/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/24/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 268654
 ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters, LedgerParameters
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Italian sales tax books
@@ -250,7 +247,7 @@ To report sales tax for Italy, follow these steps.
 12. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
 13. Select **OK** to generate the report.
 
-## Additional information
+## Related information
 Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
 
  - Reverse customer transaction (**All customers** page, select **Transactions** > **Reverse**) 

@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Fetch environment history
-description: This article explains how to fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
-author: jorichar
+description: Learn about how to fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+author: laneswenka
+ms.author: laswenka
 ms.date: 08/19/2021
 ms.topic: reference
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: jorichar
 ms.search.validFrom: 2021-08-12
-
 ---
 
 # Fetch environment history

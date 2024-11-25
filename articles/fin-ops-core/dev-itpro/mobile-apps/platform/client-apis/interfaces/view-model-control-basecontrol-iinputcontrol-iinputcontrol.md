@@ -1,12 +1,13 @@
 ---
 title: InputControl type
-description: Input control interface with methods and attributes for all input controls.
+description: Learn about the InputControl type, an input control interface with methods and attributes for all input controls.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # InputControl type

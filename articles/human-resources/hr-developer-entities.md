@@ -6,9 +6,6 @@ description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable ext
 author: twheeloc
 ms.date: 12/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,8 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Dataverse tables
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
@@ -41,7 +35,7 @@ Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility an
 
 The following Dataverse tables are available based on Human Resources entities.
 
-For more information about the known issues, see [Issue search in Lifecycle Services (LCS)](/dev-itpro/lifecycle-services/issue-search-lcs).
+For more information about the known issues, see [Issue search in Lifecycle Services (LCS)](../dev-itpro/lifecycle-services/issue-search-lcs.md).
 
 ## Benefit tables
 

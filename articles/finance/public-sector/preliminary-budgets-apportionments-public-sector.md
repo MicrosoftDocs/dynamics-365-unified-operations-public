@@ -1,20 +1,17 @@
 ---
 title: Preliminary budgets and apportionments in the public sector
-description: This article covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget.
+description: Learn about creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget.
 author: velofog
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: velofog
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 8885478d-67f5-4db8-b97b-c0734216f8dd
-ms.search.industry: Public sector
-ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 ---
 
 # Preliminary budgets and apportionments in the public sector

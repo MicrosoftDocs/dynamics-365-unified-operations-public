@@ -1,13 +1,13 @@
 ---
 title: Branching overview
-description: This article explains branching strategy considerations for X++ development.
+description: Learn about branching strategy considerations for X++ development, including considerations, branching criteria, and guidance.
 author: skaue-ms
-ms.date: 01/04/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: toskaue
+ms.topic: article
+ms.date: 01/04/2023
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2023-01-01
 ms.dyn365.ops.version: 10.0.30
 ---

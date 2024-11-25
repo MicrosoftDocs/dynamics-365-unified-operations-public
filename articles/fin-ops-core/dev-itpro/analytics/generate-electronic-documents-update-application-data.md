@@ -1,19 +1,17 @@
 ---
 title: Generate electronic documents and update application data by using ER
-description: You can design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents.
+description: Learn about how to design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents.
 author: kfend
-ms.date: 04/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/23/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 
 # Generate electronic documents and update application data by using ER

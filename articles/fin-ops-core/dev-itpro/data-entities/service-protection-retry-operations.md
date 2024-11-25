@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Retry operations
-description: This article describes retry operations that can be implemented if application programming interface (API) requests are throttled because they have reached service protection API limits.
+description: Learn about retry operations that can be implemented if application programming interface (API) requests are throttled because they reach service protection API limits.
 author: jaredha
-ms.date: 05/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.author: sumadhey
+ms.topic: conceptual
 ms.custom: 
-ms.assetid: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-
 ---
 
 # Retry operations

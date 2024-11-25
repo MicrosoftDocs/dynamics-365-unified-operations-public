@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Work with customer service overview 
-description: Customer service supports professional, service-based companies and manufacturing service organizations.
-author: sorenva
-ms.date: 07/25/2019
+description: Learn about customer service supports professional, service-based companies and manufacturing service organizations, including customer service functionality.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 ---
 
 

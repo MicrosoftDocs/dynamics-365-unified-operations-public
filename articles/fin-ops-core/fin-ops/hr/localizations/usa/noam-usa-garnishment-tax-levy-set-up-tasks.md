@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up garnishments and tax levies
-description: This article explains how to set up garnishments and tax levies.
+description: Learn about how to set up garnishments and tax levies, including an overview on setting up disposable income definitions.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollDisposableIncome
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221114
-ms.assetid: 6b3c8e46-96b2-4503-9f85-8408f9f97620
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollDisposableIncome
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 6b3c8e46-96b2-4503-9f85-8408f9f97620
 ---
 
 # Set up garnishments and tax levies

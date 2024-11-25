@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Release production orders
-description: A released production order is an order that has been authorized for production. The term Released is used to describe a state in the production order life cycle, where the production order is available for execution on the production shop floor and for warehouse processes. 
+description: Learn about release production orders, including outlines on characteristics of the released state and releasing jobs to the shop floor.
 author: johanhoffmann
-ms.date: 03/02/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProdParmRelease
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2414
-ms.assetid: 50c2257b-2924-44f5-b7c1-11f498092053
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: ProdParmRelease
+ms.topic: conceptual
+ms.date: 03/02/2021
+ms.custom: 
+  - bap-template
 ---
 
 # Release production orders
@@ -44,7 +28,7 @@ The **Released** state is one state in the production order life cycle. Producti
 
 ## Releasing jobs to the shop floor
 
-After a production order is released, production jobs that are related to the order are visible and ready for registration. The operators can make job registrations, such as Start, Stop, and Completion, on either the **Job card terminal** page or the **Job card device** page. The registered time and quantity are automatically transferred from the registration pages to production journals to keep track of the consumed time and quantity.
+After a production order is released, production jobs that are related to the order are visible and ready for registration. The operators can make job registrations, such as Start, Stop, and Completion, on the [production floor execution interface](production-floor-execution-use.md). The registered time and quantity are automatically transferred from the registration pages to production journals to keep track of the consumed time and quantity.
 
 ## Route cards
 

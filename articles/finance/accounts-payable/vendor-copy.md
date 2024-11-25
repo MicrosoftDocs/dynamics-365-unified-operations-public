@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Copy vendors by using shared number sequences
-description: This article explains how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.
+description: Learn about how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.
 author: sunfzam
-ms.date: 06/13/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  VendTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: conceptual
+ms.date: 06/13/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: VendTable
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Copy vendors by using shared number sequences

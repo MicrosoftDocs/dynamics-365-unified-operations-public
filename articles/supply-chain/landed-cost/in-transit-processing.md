@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Goods-in-transit processing
-description: This article describes how to work with goods-in-transit orders. When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
-author: Weijiesa
-ms.date: 01/13/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
-audience: Application User
-# ms.devlang: 
+description: When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 05/22/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
 ---
 
 # Goods-in-transit processing
@@ -144,9 +130,6 @@ The configuration settings for these processes resemble the settings for the [pu
 
 #### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!--KFM: Preview until further notice -->
-
 Workers using the Warehouse Management mobile app can register the receipt of goods in transit even when multiple orders are associated with the same voyage, container, item number, and purchase order number. To do so, the worker starts by entering the voyage, container, item, and order numbers, and can then select the relevant goods-in-transit order from a drop-down list.
 
 :::image type="content" source="media/wma-git-receiving.png" alt-text="Receiving goods in transit with the mobile app":::
@@ -159,9 +142,6 @@ This functionality is available in the following types of mobile device menu ite
 Both options provide flexibility and control over the selection of goods-in-transit orders, ensuring accurate and efficient handling of incoming inventory.
 
 #### <a name="batch-serial"></a>Assign batch/serial numbers when receiving with a mobile device
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!--KFM: Preview until further notice -->
 
 Workers using the Warehouse Management mobile app can register batch/serial numbers when receiving goods-in-transit orders that include items enabled for batch/serial number tracking. The system consolidates the received quantity for each batch/serial number into one work process and automatically assigns the numbers to the received items.
 
@@ -184,7 +164,7 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 
 Work templates that have a work order type of *Goods in transit* can be configured to split work headers. On the **Work templates** page, follow one of these steps:
 
-- On the **General** tab for the template, set work header maximums. These maximums work in the same way that they work for purchase order work templates. (For more information, see [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- On the **General** tab for the template, set work header maximums. These maximums work in the same way that they work for purchase order work templates. (Learn more in [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
 - Use the **Work header breaks** button to define when the system should create new work headers, based on fields that are used for sorting. For example, to create a work header for each container ID, select **Edit query** on the Action Pane, and then add the **Container ID** field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set up grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the checkbox in the **Group by this field** column.
 
 Landed cost [creates an over transaction](over-under-transactions.md) if the registered quantity exceeds the original order quantity. When a work header is completed, the system updates the status of the inventory transactions for the principal order quantity. However, it first updates the quantity that is linked to the over transaction after the principal is completely purchased.

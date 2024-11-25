@@ -1,15 +1,13 @@
 ---
 title: Set up scrap to calculate raw material requirements
-description: This article describes how to set up your bills of materials (BOMs), formulas, and route operations to record the quantity of raw material that is scrapped during manufacturing. The master planning engine can then calculate the quantity of raw materials that must be purchased to produce the desired quantity of the final product.
+description: Learn how to set up your bills of materials (BOMs), formulas, and route operations to record the quantity of raw material that is scrapped during manufacturing.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: Route, RouteTable, EcoResProductDetailsExtended, BOMConsistOf, BOMTable
 ms.topic: how-to
 ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: Route, RouteTable, EcoResProductDetailsExtended, BOMConsistOf, BOMTable
 ---
 
 # Set up scrap to calculate raw material requirements

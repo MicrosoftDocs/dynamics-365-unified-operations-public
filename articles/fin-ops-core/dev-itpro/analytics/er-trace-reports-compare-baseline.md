@@ -1,18 +1,15 @@
 ---
 title: Trace generated report results and compare them with baseline values
-description: This article explains how to compare the results of generated Electronic reporting (ER) reports with baseline report values.
+description: Learn how to compare the results of generated Electronic reporting (ER) reports with baseline report values, including examples.
 author: kfend
-ms.date: 06/17/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 06/17/2019
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 

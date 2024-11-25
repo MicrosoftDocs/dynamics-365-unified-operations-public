@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up Accounts payable invoice matching validation
-description: This article provides information on how to set up Accounts payable invoice matching validation. 
-author: abruer
-ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendParameters   
-audience: Application User 
-# ms.devlang:  
+description: Learn about on how to set up Accounts payable invoice matching validation, including an outline on determining which validations to use. 
+author: sunfzam
+ms.author: Raynezou
+ms.topic: how-to
+ms.date: 06/14/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendParameters
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up Accounts payable invoice matching validation
 
 [!include [banner](../../includes/banner.md)]
@@ -33,32 +24,35 @@ Before you begin, make sure that the Invoice matching configuration key is selec
 Four different types of matching validation are available. 
 
 - **Line level matching** – The most common type of matching is line matching. Line level matching can be two-way or three-way matching. The default line level matching can be specified for a legal entity on the **Accounts payable parameter** page. Two-way matching compares the unit price of the invoice to the unit price of the purchase order. Three-way matching additionally compares the invoice quantity to the matched product receipt quantity.
-- **Invoice totals matching** – Match the total amounts on the invoice to the total amounts on the purchase order. This type of invoice matching includes the least amount of detail, so you can use this option to set up controls that minimize the staff time that is required to review invoice matching information. Six totals are compared, including Subtotal, Total discount, Charges, Sales taxes, Round off, and Invoice amount. The system will validate if any of these values on the invoice deviate from expected amounts by more than an acceptable variance.
+- **Invoice totals matching** – Match the total amounts on the invoice to the total amounts on the purchase order. This type of invoice matching includes the least amount of detail, use this option to set up controls that minimize the staff time that is required to review invoice matching information. Six totals are compared, including Subtotal, Total discount, Charges, Sales taxes, Round off, and Invoice amount. The system validates if any of these values on the invoice deviate from expected amounts by more than an acceptable variance.
 - **Charges matching** – Match the charges information (amounts) on the invoice to the charges information (amounts) on the purchase order
-- **Price totals for line item matching** – This type of matching is useful for companies that typically receive multiple invoices for a single purchase order line. If you typically receive only one invoice per purchase order line, this type of matching is not necessary. This matching requires that two-way or three-way matching is enabled and serves as a not-to-exceed net amount validation, based on a tolerance percentages and amounts. This type of matching compares price information for the net amount of each line on the invoice, and all pending and previously posted invoice lines, with the net amount of the corresponding purchase order line. The net amount is determined by the following formula: (Unit price * Line quantity) + Line charges - Line discounts. When matching price totals by percentage, the values will be compared using the transaction currency. When matching price totals by amount, the system compares the values using the accounting currency.
+- **Price totals for line item matching** – This type of matching is useful for companies that typically receive multiple invoices for a single purchase order line. If you typically receive only one invoice per purchase order line, this type of matching isn't necessary. This matching requires that two-way or three-way matching is enabled and serves as a not-to-exceed net amount validation, based on a tolerance percentages and amounts. This type of matching compares price information for the net amount of each line on the invoice, and all pending and previously posted invoice lines, with the net amount of the corresponding purchase order line. The net amount is determined by the following formula: (Unit price * Line quantity) + Line charges - Line discounts. When matching price totals by percentage, the values will be compared using the transaction currency. When matching price totals by amount, the system compares the values using the accounting currency.
 
 ## Set up parameters to enable invoice matching validation
 1. Go to **Accounts payable > Setup > Accounts payable parameters**.
 2. Select the **Invoice validation** tab.
-3. Select or clear the **Enable invoice matching validation** check box.
-    * Select whether approval is required before an invoice that contains discrepancies for invoice matching can be posted. If set to **Allow with warning**, visual indication will display when a discrepancy for invoice matching exceeds the tolerance. However, you will be able to post the invoice. To use workflows together with invoice matching validation, make sure that the **Post invoice with discrepancies** field is set to **Allow with warning** to avoid having to approve multiple times.  
-    * In the **Automatically update invoice header match status** field, select whether matching will be performed automatically during invoice data entry. The recommended setting is **Yes**, unless you are experiencing data entry performance concerns. Disabling automatic updates may enable faster system performance because the invoice matching validation will be bypassed during data entry. The data entry clerk will need to manually update the invoice's match status to see the invoice matching validation results when this is set to **No**.  
+3. Select or clear the **Enable invoice matching validation** checkbox.
+    * Select if approval is required before an invoice that contains discrepancies for invoice matching can be posted. If set to **Allow with warning**, visual indication displays when a discrepancy for invoice matching exceeds the tolerance. However, you will be able to post the invoice. To use workflows together with invoice matching validation, make sure that the **Post invoice with discrepancies** field is set to **Allow with warning** to avoid having to approve multiple times.  
+    * In the **Automatically update invoice header match status** field, select if matching will be performed automatically during invoice data entry. The recommended setting is **Yes**, unless you're experiencing data entry performance concerns. Disabling automatic updates may enable faster system performance because the invoice matching validation will be bypassed during data entry. The data entry clerk needs to manually update the invoice's match status to see the invoice matching validation results when this is set to **No**.  
 4. Set **Invoice totals matching**.
-5. Select or clear the **Match invoice totals** check box to match actual invoice totals with expected totals.
+5. Select or clear the **Match invoice totals** checkbox to match actual invoice totals with expected totals.
     * Select whether an icon is displayed if a discrepancy for invoice matching exceeds the tolerance. You can select to display the icon when a positive discrepancy exceeds the tolerance, or when either a positive or a negative discrepancy exceeds the tolerance.  
     * For example, the tolerance is 5 percent, and the total invoice amount on the purchase order is 100.00. Therefore, a price match icon is displayed if the total invoice amount on the invoice exceeds 105.00. If you select **If greater than or less than tolerance**, the icon is also displayed if the invoice amount is less than 95.00.  
-6. In the **Invoice totals tolerance percentage** field, enter the percentage variance that is acceptable. This value is the default value for the company. This value can be overridden for specific vendors, using the **Invoice Totals Tolerances** page. For information about how to override the invoice totals tolerance percentage for a specific vendor, see the [Set up invoice totals matching tolerance for vendors](set-up-accounts-payable-invoice-matching-validation.md#set-up-invoice-totals-matching-tolerance-for-vendors) section later in this article.
+6. In the **Invoice totals tolerance percentage** field, enter the percentage variance that's acceptable. This value is the default value for the company. This value can be overridden for specific vendors, using the **Invoice Totals Tolerances** page. For information about how to override the invoice totals tolerance percentage for a specific vendor, see the [Set up invoice totals matching tolerance for vendors](set-up-accounts-payable-invoice-matching-validation.md#set-up-invoice-totals-matching-tolerance-for-vendors) section later in this article.
 7. Set **Price and quantity matching**.
-8. In the **Line matching policy** field, select a value to be used as the default policy for the legal entity that you are working with. **Not required** means there is no verification of individual invoice line prices to purchase order price or invoice quantities to packing slip quantities required. **Two-Way Match** means that the verification of invoice lines is required but only the purchase order and the supplier's invoice documents are involved in the verification. The product receipt isn't factored into the matching validations. **Three-Way Match** means that the invoice net unit price will be compared to the purchase order's net unit price and the matching product receipt quantity will be compared to the invoice quantity.
+8. In the **Line matching policy** field, select a value to be used as the default policy for the legal entity that you are working with.
+ - **Not required** - There's no verification of individual invoice line prices to purchase order price or invoice quantities to packing slip quantities required.
+ - **Two-Way Match** - The verification of invoice lines is required but only the purchase order and the supplier's invoice documents are involved in the verification. The product receipt isn't factored into the matching validations.
+ - **Three-Way Match** - The invoice net unit price is compared to the purchase order's net unit price and the matching product receipt quantity will be compared to the invoice quantity.
 9. To allow a different level of matching to be applied for an item, vendor, vendor and item combination, or purchase order line, select a value in the **Allow matching policy override** field. The legal entity line matching policy can be overridden for a specific vendor, item, or vendor and item combination in the **Matching policy** page.
-    * If you use a line matching policy of **Two-way matching** or **Three-way matching**, you can set up price tolerance percentages for your legal entity, items, and vendors on the **Item price tolerance** page. The legal entity default price tolerance will be set to zero percent for two-way and three-way matching. When vendor invoices are compared with the information on purchase orders, the applicable price tolerance percentage is searched for.   
+    * If you use a line matching policy of **Two-way matching** or **Three-way matching**, set up price tolerance percentages for your legal entity, items, and vendors on the **Item price tolerance** page. The legal entity default price tolerance will be set to zero percent for two-way and three-way matching. When vendor invoices are compared with the information on purchase orders, the applicable price tolerance percentage is searched for.   
 10. To match price totals for line items on invoices, select a value in the **Match price totals** field. This type of matching is useful when the vendor sends multiple invoices for the same purchase order line. You can compare price information for the net amount of each line on the invoice and all pending and previously posted invoice lines, with the net amount of the corresponding purchase order line. Options include **None**, **Percentage**, **Amount**, or **Percentage and amount**.
 11. In the **Purchase price total tolerance percent** field, enter a percentage of the variance you will accept. This field is available when **Match price totals** is set to **Percentage** or **Percentage and amount**..
 12. In the **Purchase price total tolerance** field, enter an amount in the accounting currency. This field is available when **Match price totals** is set to **Amount**, or **Percentage and amount**.
 13. In the **Display price total match icon** field, select when an icon is displayed if a discrepancy for invoice matching exceeds the tolerance. The icon can be displayed when a positive discrepancy exceeds the tolerance, or when either a positive or a negative discrepancy exceeds the tolerance.
 For example, the tolerance is 5 percent, and the line price total on the purchase order is 10.00. Therefore, a price match icon is displayed if the line price total on the invoice exceeds 10.50. If you select **If greater than or less than tolerance**, the icon is also displayed if the line price total on the invoice is less than 9.50.
-13. Set the **Charges matching**.
-14. To match actual charges with expected charges, based on information on the purchase order, select the **Match charges** check box.
+14. Set the **Charges matching**.
+15. To match actual charges with expected charges, based on information on the purchase order, select the **Match charges** check box.
 
 ## Set up unit price tolerance percentages
 Go to **Accounts payable > Setup > Invoice matching setup > Price tolerances** to define allowed price tolerance percentages. If you use a line matching policy of **Two-way matching** or **Three-way matching**, you can set up price tolerance percentages for your legal entity, items, and vendors. When vendor invoices are compared with the information on purchase orders, the applicable price tolerance percentage is searched for. The following is the default search order:
@@ -81,10 +75,10 @@ By default, negative price discrepancies are allowed. However, you can't enter a
 Go to **Accounts payable > Setup > Invoice matching setup > Matching policy** to define the default entry for the **Matching policy** field for lines in the **Purchase order** page. This is an optional setup. Use this page to set up two-way matching or three-way matching for items, vendors, or item and vendor combinations. These entries allow you to define more granular matching policies than the legal entity matching policy that you defined on the **Accounts payable parameters** page. The default legal entity line matching policy applies to all items and vendors except those for which a different line matching policy is specified on this page.
 
 On this page, select the **Matching policy level**. Select the level in the matching policy hierarchy to set line matching policies for.
-
-- **Item and vendor** – Specify the matching policy for specific items that are purchased from specific vendors.
-- **Item** – Specify the matching policy for specific items that are purchased from any vendor, except those that are specified at the item and vendor level.
-- **Vendor** – Specify the matching policy for all items that are purchased from specific vendors, except those that are specified at the item and vendor and item levels.
+Available matching policy levels are:
+- **Item and vendor** – Specific items that are purchased from specific vendors.
+- **Item** – Specific items that are purchased from any vendor, except those that are specified at the item and vendor level.
+- **Vendor** – All items that are purchased from specific vendors, except those that are specified at the item and vendor and item levels.
   
 The following hierarchy is used to determine the matching policy that is used:
   *  Item and vendor

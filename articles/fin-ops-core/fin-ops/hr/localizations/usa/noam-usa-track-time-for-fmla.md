@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Track time off for the Family and Medical Leave Act (FMLA)
-description: This article explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
+description: Learn about how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 author: ShielaSogge
-ms.date: 11/22/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 2741
-ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
-ms.search.region: USA
-# ms.search.industry: 
 ms.author: shielas
+ms.topic: article
+ms.date: 11/22/2019
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: USA
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
 ---
 
 # Track time off for the Family and Medical Leave Act (FMLA)

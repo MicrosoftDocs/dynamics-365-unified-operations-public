@@ -1,23 +1,14 @@
 ---
-# required metadata
-
 title: Production order posting
-description: This article provides information about different types of production order posting.  
+description: Learn about different types of production order posting, including outlines on material consumption and reporting finished goods and error quantities.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup, ProdGroup, WrkCtrTable, WrkCtrResourceGroup, ProjCategory, CostSheetDesigner
-# ROBOTS: 
+ms.date: 04/25/2022
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup, ProdGroup, WrkCtrTable, WrkCtrResourceGroup, ProjCategory, CostSheetDesigner
 ---
 
 # Production postings
@@ -88,7 +79,7 @@ For the end journal to post to the general ledger for a production order, the fo
 
 When you process transactions for a production order, you can configure indirect costs to capture overhead costs or additional fees in your general ledger. Physical transactions for indirect costs are recognized in inventory when you post a picking list journal or report as finished journal. Financial transactions for indirect costs are recognized in inventory when you post the end journal.
 
-You can recognize indirect costs on your time consumption related to **Route card** journals or **Job card** journals. These transactions are reversed and posted into the financial accounts when you end the production order. For more information, go to [Costing sheets](/supply-chain/cost-management/costing-sheets.md).
+You can recognize indirect costs on your time consumption related to **Route card** journals or **Job card** journals. These transactions are reversed and posted into the financial accounts when you end the production order. For more information, go to [Costing sheets](../../supply-chain/cost-management/costing-sheets.md).
 
 ## Controlling the level of ledger posting
 
@@ -155,5 +146,4 @@ The following table shows examples of the default posting types with sample main
 | Manufactured cost, WIP                    | 150150               | Production WIP – Materials | Asset        | Credit         | N                 | F                     | Estimated manufactured cost, WIP          | This account is used to recognize the cost of the finished good in WIP that is produced by a production order when you end the production order. The offset to this account is the Manufactured cost account.                                     |
 
 > [!NOTE]
-> The **Lean service WIP receipt** and **Lean service WIP clearing account** are used with backflush costing for lean manufacturing. For more information, go to [Backflush costing](/supply-chain/cost-management/backflush-costing.md).
-
+> The **Lean service WIP receipt** and **Lean service WIP clearing account** are used with backflush costing for lean manufacturing. For more information, go to [Backflush costing](../../supply-chain/cost-management/backflush-costing.md).

@@ -1,38 +1,22 @@
 ---
-# required metadata
-
 title: Configure manual tasks in a workflow
-description: This article explains how to configure the properties for a manual task.
+description: Learn about how to configure the properties for a manual task, including outlines on naming tasks and entering subject lines and instructions.
 author: ChrisGarty
-ms.date: 08/23/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 192191
-ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 08/23/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ---
 
 # Configure manual tasks in a workflow
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to configure the properties for a manual task.
 

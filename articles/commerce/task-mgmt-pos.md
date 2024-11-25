@@ -3,16 +3,14 @@ title: Task management in POS
 description: This article describes task management in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 author: gvrmohanreddy
 ms.date: 02/10/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: ritakimani
 ms.search.validFrom: 2020-02-03
-ms.dyn365.ops.version: Release 10.0.9
-ms.search.industry: 
+ms.custom: 
+  - bap-template
 ---
 
 # Task management in POS

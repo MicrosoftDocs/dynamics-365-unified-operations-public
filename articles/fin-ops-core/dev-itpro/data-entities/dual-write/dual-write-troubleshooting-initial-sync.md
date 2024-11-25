@@ -1,13 +1,15 @@
 ---
 title: Troubleshoot issues during initial synchronization
-description: This article provides troubleshooting information that can help you fix issues that might occur during initial synchronization.
+description: Learn about how you can fix issues that might occur during initial synchronization, including issues relating to checking for errors.
 author: RamaKrishnamoorthy
-ms.date: 06/24/2022
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 05/20/2024
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 
@@ -15,18 +17,26 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during initial synchronization.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## Check for initial synchronization errors in a finance and operations app
 
 After you enable the mapping templates, the status of the maps should be **Running**. If the status is **Not running**, errors occurred during initial synchronization. To view the errors, select the **Initial sync details** tab on the **Dual-write** page.
 
 ![Error on the Initial sync details tab.](media/initial_sync_status.png)
+
+In some cases, it may seem like the initial sync is stuck. If you see the initial sync status as **Running** for a long time, you can dig further into the status by examining the **FinOps job name** details in finance and operations apps. The following screenshots show how these items are related:
+
+1. From the table map screen, select the **Initial sync details** tab, and select the desired execution. This takes you to the **Execution details** screen, that provides the **FinOps job name**.
+
+    ![Initial sync details tab.](media/initial_sync_execution_details.png)
+
+2. Navigate to Data Management in finance and operations apps and find the **Job history** section. Search for the **FinOps job name** from step 1 in the **Execution group id** column. Once selected, you can select the **Execution details** button for more detail about the status of the job.
+
+    ![FinOps job name in Data Management.](media/initial_sync_finops_job.png)
 
 ## You can't complete initial synchronization: 400 Bad Request
 
@@ -36,7 +46,7 @@ You might receive the following error message when you try to run the mapping an
 
 *(\[Bad Request\], The remote server returned an error: (400) Bad Request.), AX export encountered an error.*
 
-Here is an example of the full error message.
+Here's an example of the full error message.
 
 ```console
 Dual write Initial Sync completed with status: Error. Following are the details:
@@ -71,9 +81,9 @@ You might receive the following error message during initial synchronization:
 To fix the issue, follow these steps.
 
 1. Sign in to the finance and operations app.
-2. On the **Azure Active Directory applications** page, delete the **DtAppID** client, and then add it again.
+2. On the **Microsoft Entra applications** page, delete the **DtAppID** client, and then add it again.
 
-![DtAppID client in the list of Azure AD applications.](media/aad_applications.png)
+![DtAppID client in the list of Microsoft Entra applications.](media/aad_applications.png)
 
 ## Self-reference or circular reference failures during initial synchronization
 
@@ -86,14 +96,14 @@ You might receive an error messages if any of your mappings have self-references
 
 You might encounter initial synchronization errors for the mapping of **Vendors V2** to **msdyn\_vendors** if the tables have existing rows where there are values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns. These errors occur because **InvoiceVendorAccountNumber** is a self-referencing column, and **PrimaryContactPersonId** is a circular reference in the vendor mapping.
 
-The error messages that you receive will have the following form.
+The error messages that you receive has the following form.
 
-*Couldn't resolve the guid for the field: \<field\>. The lookup was not found: \<value\>. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>`*
+*Couldn't resolve the guid for the field: \<field\>. The lookup wasn't found: \<value\>. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>`*
 
 Here are some examples:
 
-- *Couldn't resolve the guid for the field: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. The lookup was not found: 000056. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
-- *Couldn't resolve the guid for the field: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. The lookup was not found: V24-1. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
+- *Couldn't resolve the guid for the field: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. The lookup wasn't found: 000056. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
+- *Couldn't resolve the guid for the field: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. The lookup wasn't found: V24-1. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
 If any rows in the vendor table have values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns, follow these steps to complete the initial synchronization.
 
@@ -126,21 +136,21 @@ If any rows in the vendor table have values in the **PrimaryContactPersonId** an
 3. Run initial synchronization for the **Vendors V2 (msdyn\_vendors)** mapping. The initial synchronization should run successfully, without any errors.
 4. Run initial synchronization for the **CDS Contacts V2 (contacts)** mapping. You must sync this mapping if you want to sync the primary contact column on the vendors table, because initial synchronization must also be done for the contact rows.
 5. Add the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns back to the **Vendors V2 (msdyn\_vendors)** mapping, and then save the mapping.
-6. Run initial synchronization again for the **Vendors V2 (msdyn\_vendors)** mapping. Because change tracking is turned off, all the rows will be synced.
+6. Run initial synchronization again for the **Vendors V2 (msdyn\_vendors)** mapping. Because change tracking is turned off, all the rows are synced.
 7. Turn change tracking back on for the **Vendors V2** table.
 
 ## <a id="error-customer-map"></a>Resolve errors in the Customers V3–to–Accounts table mapping
 
 You might encounter initial synchronization errors for the mapping of **Customers V3** to **Accounts** if the tables have existing rows where there are values in the **ContactPersonID** and **InvoiceAccount** columns. These errors occur because **InvoiceAccount** is a self-referencing column, and **ContactPersonID** is a circular reference in the vendor mapping.
 
-The error messages that you receive will have the following form.
+The error messages that you receive has the following form.
 
-*Couldn't resolve the guid for the field: \<field\>. The lookup was not found: \<value\>. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>`*
+*Couldn't resolve the guid for the field: \<field\>. The lookup wasn't found: \<value\>. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>`*
 
 Here are some examples:
 
-- *Couldn't resolve the guid for the field: primarycontactid.msdyn\_contactpersonid. The lookup was not found: 000056. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
-- *Couldn't resolve the guid for the field: msdyn\_billingaccount.accountnumber. The lookup was not found: 1206-1. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
+- *Couldn't resolve the guid for the field: primarycontactid.msdyn\_contactpersonid. The lookup wasn't found: 000056. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
+- *Couldn't resolve the guid for the field: msdyn\_billingaccount.accountnumber. The lookup wasn't found: 1206-1. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
 If any rows in the customer table have values in the **ContactPersonID** and **InvoiceAccount** columns, follow these steps to complete the initial synchronization. You can use this approach for any out-of-box tables, such **Accounts** and **Contacts**.
 
@@ -176,8 +186,8 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
     > [!NOTE]
     > There are two maps that have the same name. Be sure to select the map that has the following description on the **Details** tab: **Dual-write template for sync between FO.CDS Vendor Contacts V2 to CDS.Contacts. Requires new package \[Dynamics365SupplyChainExtended\].**
 
-5. Add the **InvoiceAccount** and **ContactPersonId** columns back to the **Customers V3 (Accounts)** mapping, and then save the mapping. Both the **InvoiceAccount** column and the **ContactPersonId** column are now part of live synchronization mode again. In the next step, you will do the initial synchronization for these columns.
-6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** will be synced from the finance and operations app to Dataverse.
+5. Add the **InvoiceAccount** and **ContactPersonId** columns back to the **Customers V3 (Accounts)** mapping, and then save the mapping. Both the **InvoiceAccount** column and the **ContactPersonId** column are now part of live synchronization mode again. In the next step, you do the initial synchronization for these columns.
+6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** is synced from the finance and operations app to Dataverse.
 7. To sync the data for **InvoiceAccount** and **ContactPersonId** from Dataverse to the finance and operations app, you must use a data integration project.
 
     1. In Power Apps, create a data integration project between the **Sales.Account** and **finance and operations apps.Customers V3** tables. The data direction must be from Dataverse to the finance and operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator).
@@ -186,12 +196,12 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
         ![Data integration project to update CustomerAccount and ContactPersonId.](media/cust_selfref6.png)
 
-    2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria will be updated in the finance and operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria is updated in the finance and operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [NOTE]
         > If the filter button isn't present, create a support ticket to ask the data integration team to enable the filter capability on your tenant.
 
-        If you don't enter a filter query for **\_msdyn\_company\_value**, all the rows will be synced.
+        If you don't enter a filter query for **\_msdyn\_company\_value**, all the rows are synced.
 
         ![Adding a filter query.](media/cust_selfref7.png)
 
@@ -199,11 +209,11 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
 8. In the finance and operations app, turn change tracking back on for the **Customers V3** table.
 
-## Initial sync failures on maps with more than 10 lookup fields
+## Initial sync failure on maps with more than 10 lookup fields
 
-You might receive the following error message when you try run an initial sync failures on **Customers V3 - Accounts**, **Sales orders** mappings, or any map with more than 10 lookup fields:
+You might receive the following error message when you try run an initial sync failure on **Customers V3 - Accounts**, **Sales orders** mappings, or any map with more than 10 lookup fields:
 
-*CRMExport: Package execution complete. Error Description 5 Attempts to get data from https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc failed.*
+*CRMExport: Package execution complete. Error Description 5 Attempts to get data from https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'ID')&$orderby=accountnumber asc failed.*
 
 Because of the lookup limitation on the query, the initial sync fails when the entity mapping contains more than 10 lookups. For more information, see [Retrieve related table records with a query](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
 
@@ -221,11 +231,11 @@ This process enables the map for live sync mode.
 
 You might receive the following error message when you try to run the initial syn of Party postal addresses and party electronic addresses:
 
-*Party number could not found in Dataverse.*
+*Party number couldn't be found in Dataverse.*
 
-There is a range set on **DirPartyCDSEntity** in finance and operations apps that filters parties of type **Person** and **Organization**. As a result, an initial sync of the **CDS Parties – msdyn_parties** mapping will not sync parties of other types, including **Legal Entity** and **Operating Unit**. When the initial sync runs for **CDS Party postal addresses (msdyn_partypostaladdresses)** or **Party Contacts V3 (msdyn_partyelectronicaddresses)** you might receive the error.
+There's a range set on **DirPartyCDSEntity** in finance and operations apps that filters parties of type **Person** and **Organization**. As a result, an initial sync of the **CDS Parties – msdyn_parties** mapping doesn't sync parties of other types, including **Legal Entity** and **Operating Unit**. When the initial sync runs for **CDS Party postal addresses (msdyn_partypostaladdresses)** or **Party Contacts V3 (msdyn_partyelectronicaddresses)** you might receive the error.
 
-We are working on a fix to remove the party type range on the finance and operations entity so that parties of all types can synchronize to Dataverse successfully.
+We're working on a fix to remove the party type range on the finance and operations entity so that parties of all types can synchronize to Dataverse successfully.
 
 ## Are there any performance issues while running initial sync for Customers or Contacts data?
 
@@ -233,11 +243,10 @@ If you have run the initial sync for **Customer** data and have the **Customer**
 
 ## Float data type that has a zero value can't be synchronized
 
-Initial synchronization might fail for records that have a zero value for a price field, such as **Fixed payment amount** or **Amount** in the transaction currency. In this case, you will receive an error message that resembles the following example:
+Initial synchronization might fail for records that have a zero value for a price field, such as **Fixed payment amount** or **Amount** in the transaction currency. In this case, you receive an error message that resembles the following example:
 
-*An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '000000' to the expected type'Edm.Decimal',...*
+*An error occurred while validating input parameters: Microsoft.OData.ODataException: Can't convert the literal '000000' to the expected type'Edm.Decimal',...*
 
 The issue is with the **Language locale** value under **Source data formats** in the **Data management** module. Change the value of the **Language locale** field to **en-us**, and then try again.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

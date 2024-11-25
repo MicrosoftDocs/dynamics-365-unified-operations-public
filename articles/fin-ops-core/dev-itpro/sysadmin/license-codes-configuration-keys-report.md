@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: License codes and configuration keys report
-description: This article points you to a report that lists the license codes and configuration keys available in finance and operations.
+description: Access a report that lists the license codes and configuration keys associated with finance and operations apps.
 author: sericks007
-ms.date: 02/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysConfiguration
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 203464
-ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 02/16/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: SysConfiguration
 ms.dyn365.ops.version: Platform update 1
-
+ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
 ---
 
 # License codes and configuration keys report

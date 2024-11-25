@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: DE-00002 Depreciation adjustments for additional acquisitions in the second year
-description: This guide demonstrates how to set up the calculation of depreciation for additional acquisitions. 
+description: Learn how to set up the calculation of depreciation for additional acquisitions, including a step-by-step process on setting up depreciation profiles. 
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetParameters, AssetDepreciationProfile   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Germany
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Germany
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetParameters, AssetDepreciationProfile
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # DE-00002 Depreciation adjustments for additional acquisitions in the second year
 
 [!include [banner](../../includes/banner.md)]

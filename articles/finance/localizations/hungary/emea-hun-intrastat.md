@@ -1,13 +1,14 @@
 ---
 title: Hungarian Intrastat
-description: This article contains information about the Hungarian Intrastat report.
-author: AdamTrukawka
-ms.date: 06/02/2022
-ms.topic: article
-audience: 
-ms.reviewer: kfend
+description: Learn about the Hungarian Intrastat report, with an overviews on setting up VAT IDs, setting up compression of Intrastat, and a table that defines field names.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

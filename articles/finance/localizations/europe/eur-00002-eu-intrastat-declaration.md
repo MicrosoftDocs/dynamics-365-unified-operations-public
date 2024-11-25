@@ -1,19 +1,19 @@
 ---
 title: EUR-00002 Generate an EU Intrastat declaration
-description: This article explains how to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.
-author: AdamTrukawka
-ms.date: 08/01/2023
+description: Learn how to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # EUR-00002 Generate an EU Intrastat declaration
 
 [!include [banner](../../includes/banner.md)]

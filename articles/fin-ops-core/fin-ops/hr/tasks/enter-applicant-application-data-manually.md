@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Enter applicant and application data manually
-description: This procedure shows how to manually maintain information about applicants and their application. 
+description: Learn about how to manually maintain information about applicants and their application, including outlines on creating new applicant records. 
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: anbichse
+ms.topic: how-to
+ms.date: 01/10/2022
+ms.custom:  
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30 
+ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Enter applicant and application data manually

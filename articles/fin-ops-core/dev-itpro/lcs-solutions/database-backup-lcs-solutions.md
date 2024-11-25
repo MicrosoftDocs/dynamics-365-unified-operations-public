@@ -1,16 +1,13 @@
 ---
 title: Back up the databases for finance and operations apps
-description: This article provides information about the database backup that is required for your Microsoft Dynamics Lifecycle Services (LCS) solution package.
+description: Learn about the database backup that is required for your Microsoft Dynamics Lifecycle Services (LCS) solution package.
 author: sericks007
-ms.date: 04/13/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
-ms.custom: 196833
+ms.topic: article
+ms.date: 04/13/2018
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ---
 

@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Reprint and void wave labels
-description: This article explains how to void and reprint existing wave labels.
-author: perlynne
-ms.date: 07/09/2020
-ms.topic: article
-# ms.prod:
-# ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn how to void and reprint existing wave labels, including outlines on reprinting labels from the web client and reprinting labels from the warehousing app.
+author: Mirzaab
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-09
-ms.dyn365.ops.version: 10.0.2
-
+ms.topic: article
+ms.date: 07/09/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 ---
 
 # Reprint and void wave labels
@@ -224,7 +208,7 @@ Work exceptions control the behavior of short picking. Follow these steps to set
 1. Select the work exception code that you created for this scenario.
 1. If you selected the correct exception, the **Void and reprint** check box should be available. Select this box and confirm. When confirmed, the label roll sequence identified by the **Label build ID** field is recalculated based on the changed work line quantity. It's then reprinted on the specified printer.
 
-## Additional resources
+## Related information
 
 - [Wave label printing](configure-wave-label-printing.md)
 

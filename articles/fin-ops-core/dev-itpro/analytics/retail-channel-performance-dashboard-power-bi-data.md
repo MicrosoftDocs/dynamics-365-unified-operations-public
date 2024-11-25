@@ -1,18 +1,15 @@
 ---
 title: Retail channel performance PowerBI.com solution
-description: This article provides information about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases.
+description: Learn about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases, including information on how to connect and modify reports.
 author: ashishmsft
-ms.date: 05/09/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: asharchw
+ms.topic: article
+ms.date: 05/09/2018
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 105483
 ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
 ---
 

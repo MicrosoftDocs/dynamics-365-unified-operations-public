@@ -1,36 +1,22 @@
 ---
-# required metadata
-
 title: Associate fixed assets with leases
-description: The article explains how to associate an existing fixed asset with a new lease. 
+description: Learn about how to associate an existing fixed asset with a new lease, including a step-by-step process that outlines how to create a record for fixed assets. 
 author: moaamer
-ms.date: 04/12/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetLeaseDetail
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/12/2021
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: AssetLeaseDetail
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Associate fixed assets with leases
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The article explains how to associate an existing fixed asset with a new lease. When you associate a fixed asset with a lease, the right-of-use (ROU) asset value at initial recognition will be the acquisition cost of the fixed asset.
 
@@ -62,11 +48,11 @@ When a lease is associated with a fixed asset, the **Service life** field on the
 
 If the **Transfer of ownership** field is set to **Yes** for the lease book, the value in the **Service life** field will always be the asset’s useful life. 
  
-The Service life will be updated every time the lease is adjusted to ensure that the right-of-use asset is depreciated over the term lease, as if it were depreciated in Asset leasing.
+The **Service life** is updated every time the lease is adjusted to ensure that the right-of-use asset is depreciated over the term lease, as if it were depreciated in Asset leasing.
 
 > [!NOTE]
 > If you associate a fixed asset with a lease, the **Asset depreciation** and **Lease impairment** buttons are disabled in Asset leasing. You can view asset depreciation and lease impairment transactions from Fixed assets. The **Asset transactions** button, which opens an inquiry form is also disabled. You can also open the **Asset transactions** inquiry form in Fixed assets.  
 
-The **Fixed assets** and **Fixed asset book** pages will display the lease ID that is associated with a fixed asset. If a fixed asset is associated with a lease, the lease ID and lease description will be displayed on the **Lease information** FastTab on the **Fixed assets** page. For fixed asset books that are associated with lease books, the **Lease ID**, **Lease description**, and **Book type** fields will display information for the selected fixed asset book on the **Lease information** FastTab, to indicate that it's associated with a lease book.
+The **Fixed assets** and **Fixed asset book** pages display the lease ID that is associated with a fixed asset. If a fixed asset is associated with a lease, the lease ID and lease description are displayed on the **Lease information** FastTab on the **Fixed assets** page. For fixed asset books that are associated with lease books, the **Lease ID**, **Lease description**, and **Book type** fields display information for the selected fixed asset book on the **Lease information** FastTab, to indicate that it's associated with a lease book.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

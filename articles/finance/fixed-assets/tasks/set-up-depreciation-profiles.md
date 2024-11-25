@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up and create depreciation profiles
-description: This procedure shows how depreciation profiles determine the type and the frequency of depreciation for an asset. 
+description: Learn how depreciation profiles determine the type and the frequency of depreciation for an asset, including a step-by-step process. 
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetDepreciationProfile   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up and create depreciation profiles
 
 [!include [banner](../../includes/banner.md)]

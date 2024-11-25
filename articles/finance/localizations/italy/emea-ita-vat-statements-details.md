@@ -1,128 +1,145 @@
 ---
-title: VAT statements details for Italy
-description: This article explains how to set up a VAT statement for legal entities in Italy.
-author: AdamTrukawka
-ms.date: 06/20/2017
+title: Configure system parameters to report sales tax books for Italy
+description: Learn how to configure system parameters to report sales tax books for legal entities in Italy, including an outline on the address of the legal entity.
+author: liza-golub
+ms.author: egolub
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/04/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Italy
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.custom: 269664
-ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
 ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
+ms.dyn365.ops.version: Version 1611
+ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
 ---
 
-# VAT statements details for Italy
+# Configure system parameters to report sales tax books for Italy
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up a VAT statement for legal entities in Italy. 
+This article explains how to configure system parameters to report sales tax books for legal entities in Italy.
 
-## Set up customer/vendor tax information for tax reports
+As of Microsoft Dynamics 365 Finance version 10.0.39, the Italian sales tax books functionality supports reporting of Italian sales tax books in the [Electronic reporting (ER) tool](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). It also accommodates reporting for [multiple value-added tax (VAT) registrations](../global/emea-multiple-vat-registration-numbers.md).
 
-To generate the sales tax report, the customer and vendor must be configured with the fiscal information for Italy. On the **Customers** page, select the fields in the following table.
+## Address of the legal entity
 
-### Invoice and delivery
+The primary address of the legal entity must be in Italy. (Go to **Organization administration** \> **Organizations** \> **Legal entities** \> **Addresses** \> **Country/region**.)
 
-| **Field**             | **Description**                                        |
-|-----------------------|--------------------------------------------------------|
-| **Tax exempt number** | Enter the tax exempt number for VAT declaration.       |
-| **Fiscal code**       | Enter the fiscal code for this customer.               |
-| **Sales tax Group**   | Select a sales tax group to be used for this customer. |
+As of Dynamics 365 Finance version 10.0.39, the ER format of Italian sales tax books can be generated from a legal entity that has a primary address that's outside Italy. In this scenario, you must set up an address and a tax registration number in Italy. For more information, see [Set up a VAT ID for a legal entity, customers, and vendors](../global/emea-multiple-vat-registration-numbers.md#set-up-a-vat-id-for-a-legal-entity-customers-and-vendors).
 
-On the **Vendors** page, select the fields in the following table.
+## <a id="number-sequences"></a>Number sequences and number sequence groups
 
-### Invoice and delivery
+Set up as many number sequences and number sequence groups as you require to cover all the required types of sales tax transactions. For more information about number sequences in Finance, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-| **Field**             | **Description**                                      |
-|-----------------------|------------------------------------------------------|
-| **Tax exempt number** | Enter the tax exempt number for VAT declaration.     |
-| **Fiscal code**       | Enter the fiscal code for this vendor.               |
-| **Sales tax Group**   | Select a sales tax group to be used for this vendor. |
+For continuous numbering of documents in Italian sales tax books, number sequences must be continuous, and they must have the **Company** scope.
 
-## Set up a company fiscal code and tax registration number
-To generate reports, the company fiscal code and registration number should be set up on the **Legal entity** page. On the **Legal entity** page, select the fields in the following table.
+In parameters of the **Accounts receivable**, **Accounts payable**, and **Project management and accounting** modules in Finance, you can set up number sequence groups to allocate specific number sequences to specific customers or vendors.
 
-### Registration numbers
+### Accounts receivable parameters
 
-| **Field**        | **Description**                                                    |
-|------------------|--------------------------------------------------------------------|
-| **Fiscal Code**  | Enter the fiscal code from the legal entity registration in Italy. |
-| **Legal Nature** | Enter the legal structure of the company.                          |
-| **CUC**          | Enter the CUC code.                                                |
+To set up number sequence groups in Accounts receivable parameters, follow these steps.
 
-### Tax registration
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Number sequence** tab, in the **Reference** column, select **Free text invoice**.
+3. Select the **Group** button above the grid.
+4. On the **Number sequence groups** page, define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with the selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes. For example, on the **Accounts receivable parameters** page, on the **Number sequences** tab, select the **Reuse numbers** checkbox for **Free text invoice voucher** to synchronize number allocation for free text invoice vouchers and free text invoices.
 
-| **Field**               | **Description**                                                 |
-|-------------------------|-----------------------------------------------------------------|
-| Tax registration number | Enter the tax registration number for the legal entity in Italy |
+### Accounts payable parameters
 
-### Set up parameters for Italian sales tax book
+To set up number sequence groups in Accounts payable parameters, follow these steps.
 
-On the **Sales tax** page, create sales tax books to be reported to the Italian government after the settlement period is past.
+1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
+2. On the **Number sequence** tab, in the **Reference** column, select **Internal invoice**.
+3. Select the **Group** button above the grid.
+4. On the **Number sequence groups** page, define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes.
 
-| **Field**                     | **Description**                                 |
-|-------------------------------|-------------------------------------------------|
-| **Sales tax book type**       | Enter the movement direction. (Sales/Purchase)  |
-| **Sales tax book**            | Enter the identifier of the sales tax book.     |
-| **Name**                      | Enter the name of the sales tax book.           |
-| **Sales tax book type**       | Enter the movement direction. (Sales/Purchase)  |
-| **Settlement period**         | The period for this tax book.                   |
-| **Closed to**                 | Select the transaction date.                    |
-| **EU sales**                  | The amount sold to the European Union.          |
-| **ATECOFIN**                  | The tax code for sales tax reporting.           |
-| **Print summary and payment** | Select to print the summary and payment report. |
+### Project management and accounting parameters
 
-## Yearly tax communication report
-After the year end, generate the report for each settlement period. The transmission is mandatory as required by the Italian fiscal authority via a website. On the **Yearly tax communication** page, it is possible to create or view a report.
+To set up number sequence groups in Project management and accounting parameters, follow these steps.
 
-### Overview
+1. Go to **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
+2. On the **Number sequence** tab, in the **Reference** column, select **Invoice voucher**.
+3. Select the **Group** button above the grid.
+4. On the **Number sequence groups** page define the required number sequence groups. On the **References** FastTab, associate each number sequence that you previously set up with the appropriate area. The **Sales tax book section** column shows the sales tax book section that's associated with the selected number sequence when you set up [sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** checkbox when you define the number sequences for those invoices and credit notes.
 
-| **Field**                | **Description**                                                                               |
-|--------------------------|-----------------------------------------------------------------------------------------------|
-| **Tax communication ID** | Enter the identification number of the Yearly tax communication report.                       |
-| **Years**                | Enter the year of the tax communication.                                                      |
-| **ATECOFIN Code**        | Enter the tax code that is associated with the classification of possible company activities. |
-| **Exported**             | Indicates that the .ivc file is exported.                                                     |
+## Journal names
 
-### General
+Set up the required journal names.
 
-| **Field**                | **Description**                                                                               |
-|--------------------------|-----------------------------------------------------------------------------------------------|
-| **Tax communication ID** | Enter the identification number of the Yearly tax communication report.                       |
-| **Years**                | Enter the year of the tax communication.                                                      |
-| **ATECOFIN Code**        | Enter the tax code that is associated with the classification of possible company activities. |
-| **Exported**             | Indicates that the file was exported.                                                         |
-| **Date of export**       | The date when the .ivc file was exported.                                                     |
-| **Export file name**     | The name of the .ivc file.                                                                    |
+To set up journal names for General ledger, go to **General ledger** \> **Journal setup** \> **Journal names**.
 
-Find more details in [Yearly tax communication](emea-ita-yearly-tax-communication.md).
+To set up journal names for Project management and accounting parameters, go to **Project management and accounting** \> **Setup** \> **Journals** \> **Journal names**.
 
-## VAT summary report
-For VAT reporting, Italy has specific information to be reported and formatted. In the **Sales tax authorities** page, on **Tax setup**, configure the Italian authority.
+The following table shows the recommended setup of journal name parameters for legal entities that report Italian sales tax books.
 
-| **Field**                                 | **Description**                                                                                |
-|-------------------------------------------|------------------------------------------------------------------------------------------------|
-| **Report layout**                         | Select the Italian report to enable Italian fields.                                            |
-| **Print blank page with no transactions** | Select to print blank pages when no transactions are present.                                  |
-| **Separate summary register**             | Select this check box to use a separate value added tax (VAT) book to number summary sections. |
-| **Account gain**                          | Gain due to rounding.                                                                          |
-| **Account loss**                          | Loss due to rounding.                                                                          |
+| Parameter | Value |
+|-----------|-------|
+| Number allocation at posting | Yes |
+| Italian sales tax book | <ul><li><strong>Not included</strong> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community.</li><li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li><li><strong>Sales</strong> – Select this value for sales invoices and credit notes.</li><li><strong>Empty</strong> – Select this value for all other types of transactions.</li></ul><p>In some cases, the <strong>Italian sales tax book</strong> field is automatically set based on the value of the <strong>Journal type</strong> field. For example, if the <strong>Journal type</strong> field is set to <strong>Invoice register</strong>, the <strong>Italian sales tax book</strong> field is set to <strong>Purchase</strong> by default.</p> |
+| Voucher series | Select a number sequence that you set up in the [Number sequences and number sequence groups](#number-sequences) section of this article. |
+
+## General ledger parameters
+
+The Italian localization doesn't support corrections to the Italian sales tax payment report for a sales tax period that's already settled. Therefore, on the **General ledger parameters** page, on the **Sales tax** tab, in the **Special report** section, set the **Include corrections** option to **No**.
+
+## Company, vendor, and customer fiscal codes and tax registration numbers
+
+> [!NOTE]
+> When [Tax Calculation service](../global/global-tax-calcuation-service-overview.md) is used, and functionality for [multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) is enabled, you must set up [registration IDs](../europe/emea-registration-ids.md) to define the tax exempt number (tax registration number) of your legal entity, customers, and vendors, as described in [Set up a VAT ID for a legal entity, customers, and vendors](../global/emea-multiple-vat-registration-numbers.md#set-up-a-vat-id-for-a-legal-entity-customers-and-vendors).
+
+### Company fiscal code and tax registration number
+
+| Field | Description | Page \> FastTab |
+|-------|-------------|-----------------|
+| Tax registration number | Enter the tax registration number for the legal entity in Italy. | <p>Legal entities \> Tax registration</p><p>See the note earlier in this section for information about the setup in scenarios that involve multiple VAT registration numbers.</p> |
+| Fiscal Code | Enter the fiscal code from the legal entity registration in Italy. | Legal entities \> Registration numbers |
+
+### Customer fiscal code and tax registration number
+
+| Field | Description | Page \> FastTab |
+|-------|-------------|-----------------|
+| Tax exempt number | Enter the tax exempt number for VAT declaration. | <p>Account receivable \> Customers \> All customers \> Invoice and delivery</p><p>See the note earlier in this section for information about the setup in scenarios that involve multiple VAT registration numbers.</p> |
+| Fiscal code | Enter the fiscal code for the customer. | Account receivable \> Customers \> All customers \> Invoice and delivery |
+
+### Vendor fiscal code and tax registration number
+
+| Field | Description | Page \> FastTab |
+|-------|-------------|-----------------|
+| Tax exempt number | Enter the tax exempt number for VAT declaration. | <p>Account payable \> Vendors \> All vendors \> Invoice and delivery</p><p>See the note earlier in this section for information about the setup in scenarios that involve multiple VAT registration numbers.</p> |
+| Fiscal code | Enter the fiscal code for the vendor. | Account payable \> Vendors \> All vendors \> Invoice and delivery |
+
+## Sales tax authority
+
+To set up a sales tax authority, follow these steps.
+
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
+2. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
+3. In the **Report layout** field, select **Default**.
+4. In the **Vendor account** field, select a vendor account that corresponds to the tax authority that has a primary address in Italy.
+5. To print a blank page on the sales tax payment report for periods that have no transactions, select the **Print blank page with no transactions** option.
+6. To use a separate tax book to number summary sections, select the **Separate summary register** checkbox.
+7. In the **Account gain** and **Account loss** fields, specify main accounts. These main accounts are used to automatically post rounding results during the sales tax settlement procedure.
 
 ## Sales tax settlement periods
-Per Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You are required to report if the settlement refers to the last period on the fiscal year. View the settlement period status and report if it refers to a year closing. On the **Sales tax settlement period** page &gt; **Period Intervals** tab, select the following fields.
 
+According to Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You're required to report whether the settlement refers to the last period of the fiscal year. To determine whether the settlement period refers to a year closing, view the settlement period status.
 
-|    <strong>Field</strong>    |                                   <strong>Description</strong>                                    |
-|------------------------------|---------------------------------------------------------------------------------------------------|
-|   <strong>Closed</strong>    | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
-| <strong>Last period</strong> |             Select this option if the period is the last period in a sales tax year.              |
+To set up sales tax settlement periods, follow these steps.
 
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
+2. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
+3. To attach the generated Italian sales tax book ER format to the **Sales tax book status** records, select the **Attach report to Sales tax book status** checkbox.
+4. To report amounts in the Italian sales tax book ER format in the tax currency, select the **Report in tax currency** checkbox.
 
+In legal entities that have an address in Italy, the following columns are added for period intervals on the **Sales tax settlement periods** page.
+
+| Field | Description |
+|-------|-------------|
+| Closed | A value that indicates whether the interval of the sales tax settlement period has been settled and closed. |
+| Last period | Select this option if the period is the last period in a sales tax year. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

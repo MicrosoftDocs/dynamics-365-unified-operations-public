@@ -6,9 +6,6 @@ description: This article provides an overview of extensibility of the Gender ba
 author: twheeloc
 ms.date: 05/23/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -47,6 +44,3 @@ A new **HcmPersonGenderTranformUtil** class was created to allow for translation
 
 **PayrollStateWageTaxPrepDP** is the data provider class for the **Payroll State Wage Tax Prep** SQL Server Reporting Services (SSRS) report. For the United States, three values are available: **Male**, **Female**, and **Unspecified**. In the **populatePayrollStateWageTaxPrepTmp** method, there is a switch statement that is used to map the value of the **HcmPersonGender** enum to one of three fields: **IsMale**, **IsFemale**, or **IsUnspecifiedGender**. The default value for the switch statement is **IsUnspecifiedGender**. If you add any values to the **HcmPersonGender** enum to map differently, you must create an extension by using the **Chain of Command** class over the **populatePayrollStateWageTaxPrepTmp** method to change the value as needed.
 
-## smmOutlookSync_Contact (Class)
-
-The **smmOutlookSync_Contact** integration class links values to and from **Outlook** and **Contact persons**. **Outlook** supports three values: **Male**, **Female**, and **Unspecified**. The class has two methods to help you map **Genders** to **OutlookGenders**. The default method is **NonSpecific/UnSpecified**. If you create additional values for the **Gender** enum, you should create an extension by using the **Chain of Command** class over both methods and map as needed.

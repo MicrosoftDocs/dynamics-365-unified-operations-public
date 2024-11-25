@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Create maintenance requests
-description: This article explains how to create a maintenance request in Asset Management.
-author: johanhoffmann
-ms.date: 10/01/2019
+description: Learn how to create a maintenance request in Asset Management, including an outline on subsequent processing of maintenance requests.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetRequestTableCreate 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 10/01/2019
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
-
+ms.reviewer: kamaybac
+ms.search.form: EntAssetRequestTableCreate 
 ---
 
 # Create maintenance requests

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Settle a postdated check from a customer
-description: You can settle a postdated check after the check has been cleared by the bank. 
+description: Learn how to can settle a postdated check after the check has been cleared by the bank, including a step-by-step process of the procedure using the USMF demo company. 
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Settle a postdated check from a customer
 
 [!include [banner](../../includes/banner.md)]

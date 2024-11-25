@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.28 (August 2022)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.28 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.28 preview release distributed in August 2022.
 author: kfend
-ms.date: 05/27/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 07/22/2024
+ms.reviewer: kfend
+ms.search.region: Global
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.28 (August 2022)
@@ -46,7 +33,8 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
 | Accounts payable | Enabling purchase order prepayment functionality | Prepayment invoice functionality can be used, regardless of whether you're using the **Journalizing customer\vendor settlement transactions** functionality. To use prepayment invoice functionality, go to **Accounts payable parameters** \> **Ledger and sales tax**, and then, on the **Prepayment invoice** FastTab, set the **Use prepayment invoice** option to **Yes**. | Parameter |
-| Budget control | Budget control document filtering enhancement | This feature provides a query-based filter option for each document that is included in budget control, so that you can specify which budget control documents are budget checked. Therefore, you can specify that only a subset of a document type should be checked (for example, only purchase orders where the **Pool** field is set to **01**). | Feature management |
+| Accounts payable | Vendor balance list report enhancement |  This feature enhances the existing vendor transaction table to persist the posted main accounts. With this enhancement, the Vendor balance list report correctly reflects the vendor balance after main accounts are changed in the vendor posting profile. | Feature management | 
+Budget control | Budget control document filtering enhancement | This feature provides a query-based filter option for each document that is included in budget control, so that you can specify which budget control documents are budget checked. Therefore, you can specify that only a subset of a document type should be checked (for example, only purchase orders where the **Pool** field is set to **01**). | Feature management |
 | Fixed assets (Russia) | Start and finish date of depreciation | In the **Depreciation start date** field, you can select **From date when put into operation**. The system then starts to calculate the depreciation from the date when the asset is put into operation and completes the depreciation on the date of disposal. | Parameter |
 | General ledger | Unmark all ledger transactions within ledger settlement | Sometimes, ledger transactions that can't be settled are marked for ledger settlement, because the system determines that the transactions have been settled. To work around this issue, you can unmark all the ledger transactions for all users and legal entities in the system. When this feature is enabled, a new button that is named **Unmark all transactions** is added to the **Ledger settlement** page. Select this button to unmark all ledger settled transactions for all users and legal entities in the system. This button is available only to administrators. | Default |
 | General ledger | Option to display main account category on trial balance | This feature lets you add the main account category as a column on the **Trial balance** list page. A **Display main account category** option has been added to the menu under the **Columns to display** button on the trial balance. | Default |

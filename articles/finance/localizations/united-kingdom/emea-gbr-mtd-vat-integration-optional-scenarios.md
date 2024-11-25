@@ -1,15 +1,14 @@
 ---
 title: Retrieve information about VAT payments and liabilities from HMRC
-description: This article explains how to retrieve information about value-added tax (VAT) payments and liabilities from the Making Tax Digital for VAT (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
-author: AdamTrukawka
-ms.date: 08/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to retrieve information about value-added tax payments and liabilities from the Making Tax Digital of Her Majesty's Revenue and Customs (HMRC).
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2021-08-06
 ms.dyn365.ops.version: AX 10.0.22
 ---

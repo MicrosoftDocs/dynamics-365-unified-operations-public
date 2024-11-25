@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Financial analysis
 description: Financial analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
-ms.date: 09/24/2023
+ms.author: kweekley
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.custom: 
+  - bap-template
+ms.date: 09/24/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Financial analysis
@@ -129,8 +116,6 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Page-level filters** – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
 - **Drill-through filter** – This filter filters from a "source" visual that is applied to the current visual when you drill through from the source visual to the current visual.
-
-![Filter options.](./media/filter.png)
 
 To remove a specific filter value, select the eraser symbol next to it. Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option. If you accidentally remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
 

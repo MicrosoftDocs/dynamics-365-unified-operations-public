@@ -1,15 +1,15 @@
 ---
 title: VAT declaration (France)
-description: This article describes how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration.
+description: Learn how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration, including a VAT declaration preview overview.
 author: liza-golub
-ms.date: 03/10/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: France
-ms.author: atrukawk
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: AX 10.0.21
 ---
@@ -46,7 +46,7 @@ The VAT declaration preview in France contains the following information.
 | A2   | 0981 | Other taxable transactions | Operation lookup | OtherTaxableTransactions |
 | A3   | 0044 | Intra-community purchases of services | Operation lookup | EUPurchaseServices |
 | A4   | 0056 | Imports (other than petroleum products) | Operation lookup | TaxableImports |
-| A5   | 0051 | Withdrawals from the suspensive tax regime (other than petroleum products) | Operation lookup | TaxableWithdrawalsSuspensiveTaxRegime |
+| A5   | 0051 | Suspensive tax regime outputs (other than petroleum products) and outputs of special customs regime only when deliveries have taken place during the regime | Operation lookup | TaxableWithdrawalsSuspensiveTaxRegime |
 | B1   | 0048 | Releases for consumption of petroleum products | Operation lookup | TaxablePetroleumProductsReleasesForConsumption |
 | B2   | 0031 | Intra-community acquisitions | Operation lookup | EUPurchase (Line 17 is also affected.) |
 | B3   | 0030 | Deliveries of electricity, natural gas, heat, or cold that are taxable in France (domestic reverse charge) | Operation lookup | TaxableElectricityGasHeatCold |
@@ -98,6 +98,7 @@ The VAT declaration preview in France contains the following information.
 |------|------|-------------|--------|---------------|
 | T1   | 1120 | Transactions carried out in the DOM and taxable at the rate of 1.75% | Report field lookup | <p>VATDueSpecificRateDOM1_75</p><p>UseTaxSpecificRateDOM1_75 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_75</p> |
 | T2   | 1110 | Transactions carried out in the DOM and taxable at the rate of 1.05% | Report field lookup | <p>VATDueSpecificRateDOM1_05</p><p>UseTaxSpecificRateDOM1_05 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_05 (Line 19 is also affected.)</p> |
+| TC   | 1090 | TC - Operations carried out in Corsica and taxable at the rate of 13 % | Report field lookup | <p>VATDueSpecificRateCorse13</p><p>UseTaxSpecificRateCorse13 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse13 (Line 19 is also affected.)</p> |
 | T3   | 1081 | Operations carried out in Corsica and taxable at the rate of 10% | Report field lookup | <p>VATDueSpecificRateCorse10</p><p>UseTaxSpecificRateCorse10 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse10 (Line 19 is also affected.)</p> |
 | T4   | 1050 | Operations carried out in Corsica and taxable at the rate of 2.1% | Report field lookup | <p>VATDueSpecificRateCorse2_1</p><p>UseTaxSpecificRateCorse2_1 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse2_1 (Line 19 is also affected.)</p> |
 | T5   | 1040 | Transactions carried out in Corsica and taxable at the rate of 0.9% | Report field lookup | <p>VATDueSpecificRateCorse0_9</p><p>UseTaxSpecificRateCorse0_9 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse0_9 (Line 19 is also affected.)</p> |
@@ -157,13 +158,13 @@ The VAT declaration preview in France contains the following information.
 | 25   | 0705 | VAT credit (line 23 – line 16) | Total: lines 23 – 16 |
 | TD   | 8900 | VAT due (line 16 – line 23) | Total: lines 16 – 23 |
 
-**Regularization of domestic consumption taxes (TIC)**
+**Regularization of domestic consumption taxes (TIC) - Excise on energy**
 
 | Line | Box  | Description | User input parameter |
 |------|------|-------------|---------------|
-|  Recognized credit: TICFE  | - | Domestic consumption taxes (TIC) on electricity | Recognized amount TICFE |
-|  Recognized credit: TICGN  | - | Domestic consumption taxes (TIC) on natural gas | Recognized amount TICGN |
-|  Recognized credit: TICC   | - | Domestic consumption taxes (TIC) on coal        | Recognized amount TICC |
+|  Recognized credit: Excise on electricity  | - | Domestic consumption taxes (TIC) on electricity | Recognized amount TICFE |
+|  Recognized credit: Excise on natural gases  | - | Domestic consumption taxes (TIC) on natural gas | Recognized amount TICGN |
+|  Recognized credit: Excise on coal   | - | Domestic consumption taxes (TIC) on coal        | Recognized amount TICC |
 |  Recognized credit: TOTAL  | - | Total of recognized credit                      | Total of recognized credit: TICFE + TICGN + TICC |
 |  Credit applied to VAT (within the limit of the TD line) - X1: TICFE  | 8100 | Line X1 corresponds to the amount of TICFE, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICFE) |
 |  Credit applied to VAT (within the limit of the TD line) - X2: TICGN  | 8101 | Line X2 corresponds to the amount of TICGN, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICGN) |
@@ -173,9 +174,9 @@ The VAT declaration preview in France contains the following information.
 |  Balance of credit to be repaid - Y2: TICGN  | 8111 | Line Y2 corresponds to the remainder of TICGN. | Calculated field: Recognized amount TICGN - Credit applied to the VAT (TICGN) |
 |  Balance of credit to be repaid - Y3: TICC  | 8112 | Line Y3 corresponds to the remainder of TICC. | Calculated field: Recognized amount TICC - Credit applied to the VAT (TICC) |
 |  Balance of credit to be repaid - Y4: TOTAL  | - | Line Y4 is total of balance of credit to be repaid. | Total: Y1 + Y2 + Y3 |
-|  Tax due - Z1: TICFE  | 8120 | Amount of the additional payments of TICFE to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICFE) |
-|  Tax due - Z2: TICGN  | 8121 | Amount of the additional payments of TICGN to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICGN) |
-|  Tax due - Z3: TICC  | 8122 | Amount of the additional payments of TICC to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICC) |
+|  Tax due - Z1: Excise on electricity  | 8120 | Amount of the additional payments of TICFE to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICFE) |
+|  Tax due - Z2: Excise on natural gases  | 8121 | Amount of the additional payments of TICGN to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICGN) |
+|  Tax due - Z3: Excise on coal  | 8122 | Amount of the additional payments of TICC to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICC) |
 |  Tax due - Z4: TOTAL  | - | Total amount of the additional payments of TIC to be made. This amount is recorded using the annual summary statement (ERA). | Total: Z1 + Z2 + Z3 |
 
 **Determination of the amount to be paid and/or VAT and/or TIC credits**
@@ -184,12 +185,13 @@ The VAT declaration preview in France contains the following information.
 |------|------|-------------|---------------|
 | 26   | 8002 | Credit repayment that is requested | The user defines the value in a dialog box. |
 | AA   | 8005 | VAT credit that is transferred to the head company of the group | The user defines the value in a dialog box. |
-| 27   | 8003 | Credit to carry forward (line 25 – line 26 – line AA). This amount should be carried over to line 22 of the next return. | Total: lines 25 – 26 – AA |
-| Y5   | 8113 | Reimbursement of remaining TIC requested (report from line Y4). | Value from Y4 line |
-| Y6   | 8114 | TIC credit transferred to the group head company on the summary declaration 3310-CA3G (deferral of the line Y4). | Value from Y4 line |
-| X5   | 8103 | TIC credit charged to VAT (carried forward from line X4). | Value from X4 line |
+| 27   | 8003 | VAT credit to be carried forward (line 25 – line 26). This amount should be carried over to line 22 of the next return. | Total: lines 25 – 26 |
+| Y5   | 8113 | Reimbursement of remaining TIC (Excise on energy) requested (report from line Y4). | Value from Y4 line |
+| Y6   | 8114 | TIC (Excise on energy) credit transferred to the group head company on the summary declaration 3310-CA3G (deferral of the line Y4). | Value from Y4 line |
+| X5   | 8103 | TIC (Excise on energy) credit charged to VAT (carried forward from line X4). | Value from X4 line |
 | 28   | - | Total net VAT payable (line TD – line X5) | Total: lines TD – X5 |
 | 29   | 9979 | Assimilated taxes | The user defines a value in a dialog box. |
+| Z5   | 8123 | Total TIC (Energy Excise) due (carryover from line Z4) | The value carryover from line Z4. |
 | AB   | 9991 | Total payable that is paid by the head company of the group on the summary declaration | The user defines a value in a dialog box. |
 | 32   | - | Total payable (line 28 + line 29 +line Z5 – line AB) | Total: lines 28 + 29 + Z5 – AB |
 

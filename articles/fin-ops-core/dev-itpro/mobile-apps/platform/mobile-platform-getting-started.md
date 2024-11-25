@@ -1,19 +1,16 @@
 ---
 title: Get started with the mobile platform
-description: This article describes how to develop on the mobile platform.
+description: Learn about how to develop on the mobile platform, including overviews on getting Fleet Management mobile forms and getting sample workspaces.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.custom: 255544
-ms.collection: get-started
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ---
 

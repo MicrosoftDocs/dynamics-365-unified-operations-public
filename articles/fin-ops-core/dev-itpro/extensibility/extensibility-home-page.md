@@ -1,19 +1,16 @@
 ---
 title: Extensibility home page
-description: This article provides links to topics about extensibility.
+description: Access links to topics about the extensibility home page, including links for getting started, fundamentals on extensions, and breaking changes.
 author: FrankDahl
-ms.date: 05/14/2019
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: conceptual
+ms.date: 05/14/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.collection: get-started
-ms.assetid: 
 ---
 # Extensibility home page
 

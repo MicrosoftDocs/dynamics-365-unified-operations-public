@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Mass deployment of sealed Commerce self-service components
 description: This article explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 02/17/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: v-chrgriffin
 ms.search.region: Global 
-ms.author: jashanno
+ms.author: asharchw
 ms.search.validFrom: 2021-04-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Mass deployment of sealed Commerce self-service components
@@ -36,29 +35,29 @@ The following table shows the delimiters that can be used in the command line ex
 
 | Delimiter                 | Description |
 |---------------------------|-------------|
-| --AadTokenIssuerPrefix | The prefix for the Microsoft Azure Active Directory (Azure AD) token issuer. |
-| --AsyncClientAadClientId | The Azure AD client ID that Async Client should use during communications with Headquarters. |
+| --AadTokenIssuerPrefix | The prefix for the Microsoft Microsoft Entra token issuer. |
+| --AsyncClientAadClientId | The Microsoft Entra client ID that Async Client should use during communications with Headquarters. |
 | --AsyncClientAppInsightsInstrumentationKey | The Async Client AppInsights instrumentation key. |
-| --AsyncClientCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Async Client Identity certificate location that should be used to authenticate with Azure AD for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-AsyncClientCertThumbprint** parameter. |
-| --AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate that should be used to authenticate with Azure AD for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-AsyncClientCertFullPath** parameter. |
+| --AsyncClientCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Async Client Identity certificate location that should be used to authenticate with Microsoft Entra for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-AsyncClientCertThumbprint** parameter. |
+| --AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-AsyncClientCertFullPath** parameter. |
 | --ClientAppInsightsInstrumentationKey | The Client AppInsights instrumentation key. |
 | --CloudPosAppInsightsInstrumentationKey | The Cloud POS AppInsights instrumentation key. |
 | --Config | The configuration file that should be used during installation. An example of a file name is **Contoso.CommerceScaleUnit.xml**. Read below for additional information on how to create a configuration file. |
-| --CposAadClientId | The Azure AD client ID that Cloud POS should use during device activation. This parameter isn't required for on-premises deployments. |
+| --CposAadClientId | The Microsoft Entra client ID that Cloud POS should use during device activation. This parameter isn't required for on-premises deployments. |
 | --Device | The device ID, as shown on the **Devices** page in Headquarters. |
 | --EnvironmentId | The environment ID. |
 | --HardwareStationAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
 | --InPlaceUpgradeFromModernPOS | Used to upgrade from Modern POS to Store Commerce. Unless other parameters are used, the default assumption is to capture the Modern POS device token and then uninstall Modern POS. |
 | Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and doesn't have a leading dash character. |
-| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Azure Active Directory (Azure AD) authentication, POS offline won't function, as online connectivity is always required. |
+| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Microsoft Entra authentication, POS offline won't function, as online connectivity is always required. |
 | --Port | The port that should be associated with and used by the Retail Server virtual directory. If no port is set, the default port, 443, will be used. |
 | --Register | The register ID, as shown on the **Registers** page in Headquarters. |
-| --RetailServerAadClientId | The Azure AD client ID that Retail Server should use during communications with Headquarters. |
-| --RetailServerAadResourceId | The Retail Server Azure AD app resource ID that should be used during device activation. This parameter isn't required for on-premises deployments. |
-| --RetailServerCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Retail Server Identity certificate that should be used to authenticate with Azure AD for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-RetailServerCertThumbprint** parameter. |
-| --RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate that should be used to authenticate with Azure AD for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Don't use this parameter together with the **-RetailServerCertFullPath** parameter. |
+| --RetailServerAadClientId | The Microsoft Entra client ID that Retail Server should use during communications with Headquarters. |
+| --RetailServerAadResourceId | The Retail Server Microsoft Entra app resource ID that should be used during device activation. This parameter isn't required for on-premises deployments. |
+| --RetailServerCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Retail Server Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-RetailServerCertThumbprint** parameter. |
+| --RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Don't use this parameter together with the **-RetailServerCertFullPath** parameter. |
 | --RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value will be used during device activation. |
-| --SkipAadCredentialsCheck| A switch that indicates whether Azure AD credential prerequisite checks should be skipped. The default value is **false**. |
+| --SkipAadCredentialsCheck| A switch that indicates whether Microsoft Entra credential prerequisite checks should be skipped. The default value is **false**. |
 | --SkipCertCheck | A switch that indicates whether certificate prerequisite checks should be skipped. The default value is **false**. |
 | --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations that are run prior to performing the device token capture from Modern POS. This flag should only be used in test environments, and shouldn't be used in production. |
 | --SkipIisCheck | A switch that indicates whether Internet Information Services (IIS) prerequisite checks should be skipped. The default value is **false**. |
@@ -73,9 +72,9 @@ The following table shows the delimiters that can be used in the command line ex
 | --SslCertThumbprint | The thumbprint of the certificate that should be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-SslCertFullPath** parameter. |
 | --StoreSystemAosUrl | The Headquarters (AOS) URL. |
 | --StoreSystemChannelDatabaseId | The channel database ID (name). |
-| --TenantId | The Azure AD tenant ID. |
-| --TransactionServiceAzureAuthority | The Transaction Service Azure AD authority. |
-| --TransactionServiceAzureResource | The Transaction Service Azure AD resource. |
+| --TenantId | The Microsoft Entra tenant ID. |
+| --TransactionServiceAzureAuthority | The Transaction Service Microsoft Entra authority. |
+| --TransactionServiceAzureResource | The Transaction Service Microsoft Entra resource. |
 | --TrustSqlServerCertificate | A switch that indicates whether the Server certificate should be trusted while a connection to SQL Server is being established. To help avoid security risks, production deployments should never supply a value of **true** here. The default value is **false**. |
 | --UseCommonApplicationData | A switch to alter the location of the device token. Instead of being in the user context, the token is stored in a shared location so that all Windows users can access the same token, allowing for the use of Store Commerce regardless of the active user. Users must still be in the **RetailChannelUsers** group. |
 | --Verbosity | The level of logging that is requested during installation. Typically, this value shouldn't be used. |
@@ -247,7 +246,7 @@ The following command silently installs (or updates) CSU (self-hosted). It has t
 Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
-CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --Config "Contoso.StoreSystemSetup.xml"
+CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-AsyncClient" --RetailServerMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-RetailServer" --CPOSMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-CloudPOS" --RetailServerMicrosoft Entra IDResourceID "https://retailstorescaleunit.retailserver.com" --Config "Contoso.StoreSystemSetup.xml"
 ```
 
 > [!NOTE]
@@ -256,7 +255,7 @@ CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateTh
 The following command is a more thorough command that runs the executable file installer with some alternative parameters. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
-CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --Verbosity 0 --Config "Contoso.StoreSystemSetup.xml"
+CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-AsyncClient" --RetailServerMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-RetailServer" --CPOSMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-CloudPOS" --RetailServerMicrosoft Entra IDResourceID "https://retailstorescaleunit.retailserver.com" --Verbosity 0 --Config "Contoso.StoreSystemSetup.xml"
 ```
 
 The following command specifies parameters required to skip the prerequisite checks during a standard installation. 
@@ -266,7 +265,7 @@ The following command specifies parameters required to skip the prerequisite che
 > - Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
-CommerceScaleUnit.exe install --skipscaleunithealthcheck --skipcertcheck --skipaadcredentialscheck --skipschannelcheck --skipiischeck --skipnetcorebundlecheck --skipsqlservercheck --skipnetframeworkcheck --skipversioncheck --skipurlcheck --Config "Contoso.StoreSystemSetup.xml" --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com"
+CommerceScaleUnit.exe install --skipscaleunithealthcheck --skipcertcheck --skipaadcredentialscheck --skipschannelcheck --skipiischeck --skipnetcorebundlecheck --skipsqlservercheck --skipnetframeworkcheck --skipversioncheck --skipurlcheck --Config "Contoso.StoreSystemSetup.xml" --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-AsyncClient" --RetailServerMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-RetailServer" --CPOSMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-CloudPOS" --RetailServerMicrosoft Entra IDResourceID "https://retailstorescaleunit.retailserver.com"
 ```
 
 You can mix and match these concepts to achieve the installation results that you want.

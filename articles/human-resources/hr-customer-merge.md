@@ -7,9 +7,6 @@ description: This article describes the Microsoft Dynamics 365 Human Resources c
 author: twheeloc
 ms.date: 01/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -18,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Dynamics 365 Human Resources customer merge overview
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## Dynamics Human Resources 365 customer merge
 
@@ -42,7 +37,7 @@ This article includes resources and information about various customer scenarios
 
 ## Custom fields
 
-There's an extensive set of out-of-box fields for managing a broad range of business processes. However, a company must sometimes track additional information. One approach is to have programmers to add the required fields as extensions in developer tools. Alternatively, the custom fields feature enables fields to be added directly from the user interface (UI). This approach lets you tailor the application to your business. For more information, see [How to create and work with custom fields](/fin-ops/get-started/user-defined-fields).
+There's an extensive set of out-of-box fields for managing a broad range of business processes. However, a company must sometimes track additional information. One approach is to have programmers to add the required fields as extensions in developer tools. Alternatively, the custom fields feature enables fields to be added directly from the user interface (UI). This approach lets you tailor the application to your business. For more information, see [How to create and work with custom fields](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 
 ### Move custom fields from one environment to another
 
@@ -153,7 +148,7 @@ Follow these steps to copy Human Resources custom field metadata that's created 
 
 ## Personalizations
 
-By personalizing the user interface in finance and operations apps, employees of an organization can work more efficiently. To learn more about personalization, see [Personalize finance and operations apps](/fin-ops/get-started/personalize-user-experience).
+By personalizing the user interface in finance and operations apps, employees of an organization can work more efficiently. To learn more about personalization, see [Personalize finance and operations apps](../fin-ops-core/fin-ops/get-started/personalize-user-experience.md).
 
 To move the personalizations:
 

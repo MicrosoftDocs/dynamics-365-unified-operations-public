@@ -1,15 +1,13 @@
 ---
 title: Configure locations in a WMS-enabled warehouse
-description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). 
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup   
+description: Learn how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). 
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
-ms.date: 12/01/2022
-audience: Application User
-ms.search.region: Global
+ms.date: 04/19/2024
 ms.custom: bap-template
+ms.reviewer: kamaybac  
+ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup, WMSBlockingCause 
 ---
 
 # Configure locations in a WMS-enabled warehouse
@@ -23,7 +21,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Create a new warehouse
 
-1. Go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**.
+1. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
 2. Select **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.
@@ -34,7 +32,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define a location format
 
-1. Go to **Warehouse management \> Setup \> Warehouse >Location formats**. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these components could be *aisle*, *rack*, *shelf*, and *bin*.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse >Location formats**. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these components could be *aisle*, *rack*, *shelf*, and *bin*.
 2. Select **New**.
 3. In the **Location format** field, type a value.
 4. In the **Name** field, type a value.
@@ -57,7 +55,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define location types
 
-1. Go to **Warehouse management \> setup \> Warehouse \> Location types**. Location types can be used as filtering options to control the different warehouse management processes. As a minimum, you must create staging and final shipping location types in order to define the outbound warehouse management process.
+1. Go to **Warehouse management** \> **setup** \> **Warehouse** \> **Location types**. Location types can be used as filtering options to control the different warehouse management processes. As a minimum, you must create staging and final shipping location types in order to define the outbound warehouse management process.
 2. Select **New**.
 3. In the **Location** type field, type a value.
 4. In the **Description** field, type a value.
@@ -65,7 +63,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define location profile
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**. The definition of location profiles is very important. Grouped locations capacity can be controlled here, as can the policies related to what inventory gets stored and how it's stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable WMS.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Location profiles**. The definition of location profiles is very important. Grouped locations capacity can be controlled here, as can the policies related to what inventory gets stored and how it's stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable WMS.
 2. Select **New**.
 3. In the **Location profile ID** field, type a value.
 4. In the **Name** field, type a value.
@@ -83,7 +81,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Enable warehouse management parameters
 
-1. Go to **Warehouse management \> Setup \> Warehouse management parameters**. To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type.  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to "Picked".
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**. To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type.  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to "Picked".
 2. Expand the **Location profiles** section.
 3. In the **User location** field, select the drop-down button to open the lookup.
 4. In the list, select the link in the selected row.
@@ -96,7 +94,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define warehouse zone groups
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouse zone groups**. Warehouse zones can be used as filters for options to control the different warehouse management processes. You need to create a zone group before you can define a zone.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouse zone groups**. Warehouse zones can be used as filters for options to control the different warehouse management processes. You need to create a zone group before you can define a zone.
 2. Select **New**.
 3. In the **Zone group ID** field, type a value.
 4. In the **Zone group name** field, type a value.
@@ -104,7 +102,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define Warehouse zones
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Zones**.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Zones**.
 2. Select **New**.
 3. In the **Zone ID** field, type a value.
 4. In the **Zone name** field, type a value.
@@ -115,7 +113,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Create locations using the Location setup wizard
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location setup wizard**.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Location setup wizard**.
 2. In the **Warehouse** field, select the drop-down button to open the lookup.
 3. In the list, find and select the desired record.
 4. In the list, select the link in the selected row.
@@ -139,9 +137,9 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 22. In the **To number** field, enter a number.
 23. Select Create.
 
-## Create locations manually
+## <a name="create-locations-manually"></a>Create locations manually
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. Manually creation of locations within a warehouse can easily be done. The location name and the location profile ID are mandatory values.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Locations**. Manually creation of locations within a warehouse can easily be done. The location name and the location profile ID are mandatory values.
 2. Select **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Location** field, type a value. Note that you're creating a new location here, so you need to type a new unique name, rather than selecting an existing one.
@@ -150,7 +148,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define Pack size categories
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Pack size categories**. Pack size categories can be used to group items that have similar physical packing sizes. In this example, the pack size category will be used to control the capacity at the picking locations within a specific zone of the warehouse. Note that the pack size category ID must be assigned to the released product entity in order to be used as part of the stocking limits processing.  
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Pack size categories**. Pack size categories can be used to group items that have similar physical packing sizes. In this example, the pack size category will be used to control the capacity at the picking locations within a specific zone of the warehouse. Note that the pack size category ID must be assigned to the released product entity in order to be used as part of the stocking limits processing.  
 2. Select **New**.
 3. In the **Pack size category ID** field, type a value.
 4. In the **Pack size category name** field, type a value.
@@ -158,7 +156,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define location stocking limits
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location stocking limits**. Location stocking limits help make sure that work isn't created that requests inventory to be put in a location that doesn't have the physical capacity to carry the inventory.  
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Location stocking limits**. Location stocking limits help make sure that work isn't created that requests inventory to be put in a location that doesn't have the physical capacity to carry the inventory.  
 2. Select **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Location profile ID** field, type a value.
@@ -169,12 +167,25 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define fixed picking locations
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Fixed locations**. You can define the locations to be used per product or per product variant. It's possible to create multiple fixed locations for the same product within the same warehouse.
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Fixed locations**. You can define the locations to be used per product or per product variant. It's possible to create multiple fixed locations for the same product within the same warehouse.
 2. Select **New**.
 3. In the **Item number** field, type a value.
 4. In the **Warehouse** field, type a value.
 5. In the **Location** field, select the drop-down button to open the lookup.
 6. In the list, select the link in the selected row.
 7. Close the page.
+
+## <a name="define-location-blocking-causes"></a>Define location blocking causes
+
+Each [location](#create-locations-manually) can be assigned **Input blocked** and **Output blocked** causes that can affect warehouse management business processes and determine whether that location can be used for input and/or output. One possible reason to block a location could be because it requires maintenance. To set up the blocking causes that can be used for locations, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **Blocking causes**.
+1. Select **New**.
+1. In the **Cause of blocking** field, enter a short name that identifies the cause. This is the value shown when setting up the location.
+1. In the **Description** field, enter a short description.
+1. In the **Policy** field, select one of the following values:
+    - *Do not use for warehouse work* – Locations blocked for this cause won't be blocked when processing warehouse work.
+    - *Also use for warehouse work* – Locations blocked for this cause will also be blocked when processing warehouse work.
+1. Close the page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

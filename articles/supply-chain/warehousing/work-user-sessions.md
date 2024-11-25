@@ -1,15 +1,13 @@
 ---
 title: Inspect details of active Warehouse Management mobile app sessions
-description: This article describes how to view a detailed history of XML messages and errors that are associated with all active Warehouse Management mobile app sessions.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
+description: Learn how to view a detailed history of XML messages and errors that are associated with all active Warehouse Management mobile app sessions.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/26/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
 ---
 
 # Inspect details of active Warehouse Management mobile app sessions
@@ -21,7 +19,7 @@ The whole time that a [warehouse worker user](manage-warehouse-workers.md) is us
 > [!NOTE]
 > If no historical data appears on the **Work user sessions** page, a cleanup job, such as [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management), might be running.
 
-The XML messages can be useful if, for example, you must look up [mobile device step IDs](mobile-app-titles-instructions.md) when you're setting up a [detour](warehouse-app-detours.md) process. They can also be useful if you must look up field names to use in your [GS1 policy](gs1-barcodes.md#set-up-custom-specific-gs1-policies) definition. Those fields name must exactly match the field names that are used in the relevant XML messages.
+The XML messages can be useful if, for example, you must look up [mobile device step IDs](mobile-app-titles-instructions.md) when you're setting up a [detour](warehouse-app-detours.md) process. They can also be useful if you must look up field names to use in your [barcode data policy](gs1-barcodes.md#policies-for-menus) definitions. Those fields name must exactly match the field names that are used in the relevant XML messages.
 
 > [!IMPORTANT]
 > To view the correct XML so that you can find information such as field names and step IDs, you must perform work by using the actual Warehouse Management mobile app, not an alternative tool such as the browser-based emulator.
@@ -44,7 +42,7 @@ The following example shows XML content that was copied from a *Mixed license pl
     <UserCulture>en-us</UserCulture>
     <UserDateCulture>en-us</UserDateCulture>
     <OperationalInsightsInstrumentationKey />
-    <ServerAadTenantId>4dbfcf74-c5a6-4727-b638-d56e51d1f381</ServerAadTenantId>
+    <ServerAadTenantId>ffffaaaa-5555-bbbb-6666-cccc7777dddd</ServerAadTenantId>
     <ServerEnvironmentId /><ServerAzureRegion /><ServerVersion /><BatchFlightsEnabled />
     <Device DeviceId="{C1DEE34C-69FA-44DD-BE17-2655931016CC}" /><ServerActivity ServerActivityId="{B2AAD7A2-7674-0006-E259-ABB27476D901}" />
 </ParentNode>

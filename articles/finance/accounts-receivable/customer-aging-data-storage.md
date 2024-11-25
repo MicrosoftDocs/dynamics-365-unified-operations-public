@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Customer aging data storage
-description: This article describes the process of using external storage for customer aging data. You can run the Customer aging data storage process to make the output available for export to an external system.
+description: Learn about the process of using external storage for customer aging data. You can run this data to make the output available for export to an external system.
 author: JodiChristiansen
-ms.date: 10/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Customer aging data storage
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run the **Customer aging data storage** process to make the output available for export to an external system. When you run the process, the same aging report options that are available in the system are available to external systems. The details are always included in the exported data.
+This article describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run the **Customer aging data storage** process to make the output available for export to an external system. When you run the process, the same aging report options that are available in the system are available to external systems. Starting in Dynamics 365 Finance version 10.0.39, the details are optional instead of always included in the exported data.
 
 It can be helpful to make customer aging data available to an external system for storage in cases where the output contains many customers and/or many transactions. If the existing **Customer aging** report times out because it has too much data to print, this feature provides an alternative way to get the same data.
 
@@ -48,7 +37,7 @@ Before you can use this feature, you must enable it in your system. Administrato
 4. Set the remaining parameters as you require.
 
     > [!NOTE]
-    > Transaction details are always included, and the processing is always done in a batch job.
+    > As of version 10.0.39 transaction details are optional while the processing is always done in a batch job.
 
 5. Select **OK**.
 6. Refresh the **Customer aging data storage** page to see the **Batch name** and **Batch run time** values that are shown together with the **Processing status** value. When the batch job is completed, the **Processing status** field is set to **Ended** and the **Number of aging lines** field is set. If the batch job is recurring, the **Processing status** field is set to **Waiting**.

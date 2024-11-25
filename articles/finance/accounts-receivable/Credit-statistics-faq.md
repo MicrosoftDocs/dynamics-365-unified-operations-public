@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Credit statistics FAQ
-description: This article answers some frequently asked questions about credit statistics
+description: Access answers to some frequently asked questions about credit statistics, including questions about calculating and using days sales outstanding.
 author: JodiChristiansen
-ms.date: 10/15/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 10/15/2023
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2023-10-15
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.35
-
 ---
+
 # Credit statistics FAQ
 
 This article answers some frequently asked questions about running the **Calculate balance statistics** periodic task. This feature is found at **Credit and collections** \> **Periodic tasks** \> **Credit management**. When you view the **All customers** or **Aged balances** page, many credit statistics are calculated in the **Related information** FactBox.

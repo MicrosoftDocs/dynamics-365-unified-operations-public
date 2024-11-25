@@ -1,19 +1,18 @@
 ---
 title: VAT declaration (Czech Republic)
-description: This article provides information about the value-added tax (VAT) declaration for the Czech Republic.
-author: AdamTrukawka
-ms.date: 01/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+description: Learn about the value-added tax (VAT) declaration for the Czech Republic, including overviews on taxable transactions, VAT deductions, and and tax calculations.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Czech Republic
-ms.author: atrukawk
 ms.search.validFrom: 2017-07-20
-ms.dyn365.ops.version: 10.0.13
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # VAT declaration (Czech Republic)
@@ -88,7 +87,7 @@ The VAT declaration format in the Czech Republic contains the following sections
 
 | Row | Control statement section | Description                                                         | Rate     | Tax base (XML element) | Full tax deduction (XML element) | Tax deduction adjustment (XML element) | Report field (lookup result) |
 |-----|---------------------------|---------------------------------------------------------------------|----------|------------------------|----------------------------------|------------------------------------------|------------------------------|
-| 40  | B2/B3                     | From taxable purchases                                              | Standard | pln23                  | odp\_taz23\_nar                  | odp\_tuz23                                | <p>**Full deduction:**</p><ul><li>PurchaseVATDeductionStandard</li><li>AcquiredAssetsStandard – VATAdjustmentVendorBadDebtsStandard</li></ul><p>**Deduction adjustment:**</p><ul><li>PurchaseVATDeductionAdjustStandard</li><li>AcquiredAssetsAdjustStandard – VATAdjustmentVendorBadDebtsAdjustStandard</li></ul> |
+| 40  | B2/B3                     | From taxable purchases                                              | Standard | pln23                  | odp\_tuz23\_nar                  | odp\_tuz23                                | <p>**Full deduction:**</p><ul><li>PurchaseVATDeductionStandard</li><li>AcquiredAssetsStandard – VATAdjustmentVendorBadDebtsStandard</li></ul><p>**Deduction adjustment:**</p><ul><li>PurchaseVATDeductionAdjustStandard</li><li>AcquiredAssetsAdjustStandard – VATAdjustmentVendorBadDebtsAdjustStandard</li></ul> |
 | 41  | B2/B3                     | From taxable purchases                                              | Reduced  | pln5                   | odp\_tuz5\_nar                   | odp\_tuz5                                 | <p>**Full deduction:**</p><ul><li>PurchaseVATDeductionReduced</li><li>PurchaseVATDeductionReduced2</li><li>AcquiredAssetsReduced – VATAdjustmentVendorBadDebtsReduced – VATAdjustmentVendorBadDebtsReduced2</li></ul><p>**Deduction adjustment:**</p><ul><li>PurchaseVATDeductionAdjustReduced</li><li>PurchaseVATDeductionAdjustReduced2 – VATAdjustmentVendorBadDebtsAdjustReduced – VATAdjustmentVendorBadDebtsAdjustReduced2</li><li>AcquiredAssetsAdjustReduced</li></ul> |
 | 42  | Not applicable            | From import of goods when the Tax authority is the customs office | Not applicable      | dov\_cu                 | odp\_cu\_nar                       | odp\_cu                                   | <p>**Full deduction:**</p><ul><li>ImportVATDeductionTaxAdminCustomsOffice</li></ul><p>**Deduction adjustment:**</p><ul><li>ImportVATDeductionAdjustTaxAdminCustomsOffice</li></ul> |
 | 43  | Not applicable            | From taxable transactions reported in rows 3 through 13                 | Standard | nar\_zdp23              | od\_zdp23                         | odkr\_zdp23                               | <p>**Full deduction:**</p><ul><li>VATDeductionFromPurchasesWithBATPayableStandard</li><li>EUPurchaseGoodsUseTaxStandard (row 3)</li><li>EUPurchaseServicesUseTaxStandard (row 5)</li><li>ImportGoodsUseTaxStandard (row 7)</li><li>EUPurchaseNewTransportUseTax (row 9)</li><li>DomesticPurchaseReverseChargeUseTaxStandard (row 10)</li><li>OtherPurchasesUseTaxStandard (row 12)</li></ul><p>**Deduction adjustment:**</p><ul><li>VATDeductionAdjustFromPurchasesWithVATPayableStandard</li></ul> |
@@ -274,7 +273,7 @@ Section B2 contains the following information about each document.
 | Tax base at second reduced rate                                                                                                                     | zakl\_dane3 |
 | Tax amount at second reduced rate                                                                                                                   | dan3        |
 | <p>Flag of VAT adjustment for bad debts:</p><ul><li>**N** – The document isn't a VAT adjustment of bad debts.</li><li>**P** – The document is a VAT adjustment of bad debts.</li></ul> | zdph\_44     |
-| <p>Flag of the proportional right of deduction: Yes/No</p><p>**Note:** Out of the box, this field is set to **No**.</p> | pomer       |
+| <p>Flag of the proportional right of deduction: Yes/No</p><ul><li>**A** – “ANO”, for documents with proportional deduction.</li><li>**N** – “NO”, for all other documents.</li></ul> | pomer       |
 
 ### Section A5: Taxable sales with an amount below 10 000 including VAT, and when there is no obligation to issue a tax document
 

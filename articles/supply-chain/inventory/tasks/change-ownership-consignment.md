@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Change the ownership of consignment inventory based on production demand
-description: This procedure shows how to change the owner of consignment inventory from the vendor to your legal entity when there is demand for the inventory in production. 
-author: yufeihuang
+description: Learn how to change the owner of consignment inventory from the vendor to your legal entity when there is demand for the inventory in production. 
+author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/14/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: InventJournalOwnershipChange, InventJournalCreate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac    
+ms.search.form: InventJournalOwnershipChange, InventJournalCreate 
 ---
+
 # Change the ownership of consignment inventory based on production demand
 
 [!include [banner](../../includes/banner.md)]

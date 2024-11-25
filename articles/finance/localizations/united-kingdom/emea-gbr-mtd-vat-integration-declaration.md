@@ -1,15 +1,14 @@
 ---
 title: VAT setup details for VAT declarations in the United Kingdom
-description: This article provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
+description: Learn about the value-added tax (VAT) setup for VAT declarations in the United Kingdom with a process on country/region type in foreign trade parameters.
 author: liza-golub
-ms.date: 09/07/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2021-08-03
 ms.dyn365.ops.version: AX 10.0.22
 ---

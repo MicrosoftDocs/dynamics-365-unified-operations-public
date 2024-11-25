@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Auto costs setup
-description: This article describes how to set up cost rules for various inbound voyage levels. Based on these rules, the system calculates the costs and automatically adds them. Therefore, users don't have to manually add the costs.
-author: Weijiesa
-ms.date: 01/21/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ITMCostAutoSetup
-audience: Application User
-# ms.devlang: 
+description: Learn how to set up cost rules for various inbound voyage levels. Based on these rules, the system calculates the costs and automatically adds them.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2021-01-21
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: ITMCostAutoSetup
 ---
 
 # Auto costs setup
@@ -72,7 +58,7 @@ The following table describes all the fields that can appear in the header secti
 
 ## Settings on the Lines FastTab
 
-On the **Lines** FastTab, add a row for each currency that can be used when a cost is applied to a purchase order line on a voyage. 
+On the **Lines** FastTab, add a row for each currency that can be used when a cost is applied to a purchase order line on a voyage.
 
 For items and purchase orders, the system will match the currency of each purchase order line against the currencies that are specified on the **Lines** FastTab. It will apply only the cost value that is set for the matching line or item. If no line is set up for the currency of the line or item, the auto cost won't be applied to that line or item.
 
@@ -85,8 +71,8 @@ The following table describes all the fields that can appear on each line. Howev
 | **Currency** | Select the currency that the line applies to. This currency is related to the purchase order. When the system is trying to find the auto costs that should be applied to a voyage and its voyage lines, it will select the line that has the same currency as the purchase order. This field is available only when the **Cost area** field is set to *Purchase order* or *Item*. |
 | **Cost type code** | The cost type. |
 | **Apportionment method** | <p>The method that is used to distribute costs to lines. The following options are available:</p><ul><li><p>**Percent** – The value of the **Cost value** field is a percentage that applies to the total value of goods.</p><p>For example, if the **Cost value** field is set to *10*, and the total value of goods is $800, the cost value is $80 (= $800 × 10 percent).</p></li><li>**Quantity** – The cost will be apportioned based on the quantity of goods.</li><li>**Amount** – The cost will be apportioned based on value of the goods.</li><li>**Volume** – The cost will be apportioned based on the volume of goods. Volume is specified on the item master.</li><li>**Weight** – The cost will be apportioned based on the weight of goods. Weight is specified on the item master.</li><li>**Volumetric** – The cost will be apportioned based on the volumetric measurement of goods.</li><li><p>**Measurement** – This option enables a measurement to be specified in the **Landed cost** module. It's often used by organizations that don't know the individual volume or weight of the goods, but that require a more accurate apportionment than the **Amount** and **Quantity** options allow for. The freight forwarder or agent will provide the organization with the weight or cubic measurement, at either the item level or the purchase order level.</p><p>For example, sea freight equals $900. Item A has a weight of 800 kilograms (kg) and a volume of 2 cubic meters (m³). Item B has a weight of 100 kg and a volume of 1 m³. Here are the results when the costs are apportioned by weight:</p><ul><li>Item A = $800</li><li>Item B = $100</li></ul><p>Here are the results when the costs are apportioned by volume:</p><ul><li>Item A = $600</li><li>Item B = $300</li></ul><p>**Note:** When the **Apportionment method** field is set to *Measurement*, the system uses the measurements that are entered for both the cost area (the shipping container) and the lines. These measurements don't necessarily have to add up to the expected total. However, if you require that they add up to the expected total, you can do a check by using the statistics to review the total measurement. The measurement prompt setting and automatic update of the measurement at the shipment or container level are set on the voyage header.</p></li></ul> |
-| **From date** | Specify the start of the date range for costing, if there is a range of dates. This date is the first date when the auto cost will apply. |
-| **To date** | Specify the end of the date range for costing, if there is a range of dates. This date is the last date when the auto cost will apply. |
+| **From date** | Specify the start of the date range for costing, if there's a range of dates. This date is the first date when the auto cost will apply. |
+| **To date** | Specify the end of the date range for costing, if there's a range of dates. This date is the last date when the auto cost will apply. |
 | **Category** | <p>Select the method that should be used to calculate cost. The following options are available:</p><ul><li>**Fixed** – Cost will be apportioned based on the apportionment method.</li><li>**Pieces** – Cost will be allocated per piece. Therefore, the apportionment method won't be used.</li><li>**Percent** – A percentage of the goods' value will be added. Therefore, the apportionment method won't be used.</li><li>**Rate** – Select this option if there are quantity breakdowns. The **Apportionment method** field for the line must be set to *Measurement*.</li><ul> |
 | **Broken by quantity** | <p>Select this check box to make the **Quantity breaks** button available on the **Lines** FastTab. Quantity breaks enable the cost to be broken down and the different costs to vary, depending on the quantity on the purchase order line of the voyage. This functionality is often used when the mode of delivery is air. The **Category** field for the line must be set to *Rate*.</p><p>The quantity pertains to the option that is selected in the **Apportionment method** field. The cost value will be up to the quantity that is entered in the **Cost value** field.<p>For example, quantities of 45–100 kg produce a charge of $6.00 per measurement (such as kg/m³). Quantities that exceed 100 kg produce a charge of $5.50 per measurement (such as kg/m³).</p> |
 | **Cost value** | Enter the value of the cost. |

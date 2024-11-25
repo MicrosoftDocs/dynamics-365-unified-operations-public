@@ -1,16 +1,15 @@
 ---
 title: Add license files to a deployable package in Azure Pipelines
-description: The article explains how you can add license files to an existing software deployable package when you run build automation in Microsoft Azure DevOps.
-author: gianugo
-ms.date: 10/03/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
+description: Learn about how you can add license files to an existing software deployable package when you run build automation in Microsoft Azure DevOps.
+author: josaw1
 ms.author: josaw
+ms.topic: article
+ms.date: 10/03/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Add license files to a deployable package in Azure Pipelines

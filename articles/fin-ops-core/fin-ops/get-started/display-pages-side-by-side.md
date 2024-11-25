@@ -1,15 +1,13 @@
 ---
 title: Show pages side-by-side using the Open in new window feature
-description: This article explains how to display pages side-by-side.
+description: Learn about how to display pages side-by-side, including a step-by-step process about showing pages side-by-side using the Open in new window feature.
 author: jasongre
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/20/2020
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: fc589d76-3927-4486-ab83-e86b9b47ba2c
@@ -18,9 +16,6 @@ ms.assetid: fc589d76-3927-4486-ab83-e86b9b47ba2c
 # Show pages side-by-side using the Open in new window feature
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to display pages side by side.
 

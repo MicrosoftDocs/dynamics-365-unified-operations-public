@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Canadian Harmonized sales tax
-description: This article provides information about the functionality to support Harmonized sales tax for the public sector.
+description: Learn about the functionality to support Harmonized sales tax for the public sector, including a step-by-step process on enabling the HST feature.
 author: velofog
-ms.date: 04/2/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PSNCanadianHSTTaxFeature
-audience: Application User
-ms.devlang: 
-ms.reviewer: twheeloc
-ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-ms.search.industry: public sector
 ms.author: twheeloc
+ms.topic: article
+ms.date: 04/2/2020
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-4-01
+ms.search.form: PSNCanadianHSTTaxFeature
 ms.dyn365.ops.version: 10.0.12
 ---
 

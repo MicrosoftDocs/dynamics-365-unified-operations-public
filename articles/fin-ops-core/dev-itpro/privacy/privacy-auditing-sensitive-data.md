@@ -1,15 +1,13 @@
 ---
 title: Manage access to sensitive data
-description: This article provides information about the user log functionality.
+description: Learn about the user log functionality, including overviews on sensitive data, language-specific information, and log retention.
 author: ToddLefor
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: tlefor
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Release product structures
-description: This article explains how you can release complete product structures in addition to releasing products together with their engineering versions. In this way, you can ensure that engineering-relevant product data can easily be reused in different legal entities.
-author: t-benebo
-ms.date: 09/28/2020
+description: Learn how you can release complete product structures in addition to releasing products together with their engineering versions.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
-audience: Application User
-# ms.devlang: 
+ms.date: 09/28/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: benebotg
-ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
+ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 ---
 
 # Release product structures
@@ -55,7 +41,7 @@ When you turn on engineering change management on your system, the release produ
 
 ## Product acceptance
 
-**Product acceptance** is a key parameter that influences the release process. You can set this parameter for each company by going to **Engineering change management \> Setup \> Engineering change management parameters**. For more information, see [Engineering change management parameters](engineering-parameters.md).
+**Product acceptance** is a key parameter that influences the release process. You can set this parameter for each company by going to **Engineering change management \> Setup \> Engineering change management parameters**. Learn more in [Engineering change management parameters](engineering-parameters.md).
 
 ### Automatic product acceptance
 
@@ -141,7 +127,7 @@ For each row that is shown on the **Option parameters for engineering products**
 | Template BOM | When a product that has a BOM is released, the lines of the specified template BOM will be added. This field is useful for adding local components, such as packaging or instructions in the local language. |
 | Template route | When a product that has a route is released, the lines of the specified template will be added. |
 | Copy effectivity | Select whether effectivity dates should be copied from the engineering company to the operational company when you release products. |
-| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (For more information, see [Manage changes to engineering products](engineering-change-management.md).)
+| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (Learn more in [Manage changes to engineering products](engineering-change-management.md).)
 
 ### Review each product when you release it
 
@@ -159,7 +145,7 @@ This behavior applies only when a product is directly selected for release. Prod
 
 For example, product X is assigned to the *Design cabinets* product owner group. Product X is also part of the BOM of product Y, which is assigned to the *Design speakers* product owner group. If a user from the *Design speakers* product owner group releases product Y and its BOM, product X will be released together with product Y.
 
-For more information, see [Product owners](product-owner.md).
+Learn more in [Product owners](product-owner.md).
 
 ## Release multiple BOMs/formulas
 

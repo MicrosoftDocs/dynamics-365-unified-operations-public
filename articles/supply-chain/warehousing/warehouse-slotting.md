@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Warehouse slotting
-description: This article provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
+description: Learn about warehouse slotting, which lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released.
 author: Mirzaab
-ms.date: 11/13/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
+ms.topic: article
+ms.date: 11/13/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 ---
 
 # Warehouse slotting
@@ -158,7 +145,7 @@ For each sales order template that you create, follow these steps to add a line 
 
     - **Unit of Measure Tier:** _EaBoxPl_
 
-        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
+        This field defines the units of measure of demand that are valid for the line. (Learn more in the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
 
     - **Assign slot criteria:** _Consider qty_
 

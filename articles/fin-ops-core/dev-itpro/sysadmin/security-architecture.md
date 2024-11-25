@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Security architecture
-description: This article provides an overview of the security architecture of finance and operations.
-author: pnghub 
-ms.date: 08/14/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the security architecture of finance and operations, including overviews on authentication, authorization, data security, and auditing user logins.
+author: pnghub
 ms.author: gned
+ms.topic: article
+ms.date: 08/14/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
 ---
 
 # Security architecture
@@ -38,7 +26,7 @@ When you understand the security architecture, you can more easily customize sec
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 
 
-Microsoft Azure Active Directory is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid Azure Active Directory account in an authorized tenant.
+Microsoft Entra ID is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid Microsoft Entra account in an authorized tenant.
 
 ## Authorization
 Authorization is the control of access to finance and operations applications. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the finance and operations client. 

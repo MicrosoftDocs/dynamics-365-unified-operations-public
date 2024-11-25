@@ -1,16 +1,14 @@
 ---
 title: Cycle counting example scenarios
 description: This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management.
-author: GalynaFedorova
-ms.date: 06/08/2021
-ms.topic: article
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
-audience: Application User
+author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: gfedorova
-ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: 10.0.20
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 ---
 
 # Cycle counting example scenarios
@@ -95,7 +93,8 @@ Follow these steps to confirm that all the demo data that is required for the sc
     - **Title:** *Spot Counting*
     - **Mode:** *Work*
     - **Use existing work:** *No*
-    - **Work creation process:** *Spot cycle counting* (This value indicates that the worker can count items in a warehouse location at any time, without creating cycle counting work. To do spot cycle counting in a location, the worker enters the location ID.)
+    - **Work creation process:** *Spot cycle counting* (This value indicates that the worker can count items in a warehouse location at any time, even if no open cycle counting work exists for that location. To initiate spot cycle counting in a location, the worker enters the location ID. If no open cycle counting work exists for that location, then the system creates a new work record for spot cycle counting. If open cycle counting work does exist for the location, then the existing work record will be used for spot cycle counting.
+)
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. In the list pane, select the record that is named *Inventory*. If no existing record has this name, create it. Confirm that the following cycle counting menu items appear in the **Menu structure** column:
@@ -248,7 +247,7 @@ Follow these steps to review the cycle counting differences.
 
 ## Scenario 3: Spot cycle counting
 
-The on-hand record states that there is an on-hand quantity of item *L0101* at location *01A02R2S2B*. The warehouse worker is at location *01A02R2S1B*. Although this location should be empty, it's full. Therefore, the warehouse worker immediately does a spot count of this location.
+The on-hand record states that there's an on-hand quantity of item *L0101* at location *01A02R2S2B*. The warehouse worker is at location *01A02R2S1B*. Although this location should be empty, it's full. Therefore, the warehouse worker immediately does a spot count of this location.
 
 ### Do cycle counting work for scenario 3
 
@@ -338,7 +337,7 @@ Follow these steps to set up a cycle count plan.
 1. On the Action Pane, select **Process cycle counting plan**.
 1. In the **Cycle count plans** dialog box, on the **Run in the background** FastTab, set the **Batch processing** option to *Yes*.
 1. Select **Recurrence**.
-1. In the **Define recurrence** dialog box, set up the batch job so that it begins immediately and runs once every minute, and so that there is no end date.
+1. In the **Define recurrence** dialog box, set up the batch job so that it begins immediately and runs once every minute, and so that there's no end date.
 1. Select **OK** to close the **Define recurrence** dialog box.
 1. Select **OK** to close the **Cycle count plans** dialog box.
 

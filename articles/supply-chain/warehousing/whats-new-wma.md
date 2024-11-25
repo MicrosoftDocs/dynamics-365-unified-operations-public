@@ -1,23 +1,180 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
-description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+description: This article lists the new and changed features for each released version of the Warehouse Management app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 08/15/2023
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-06-07
-ms.dyn365.ops.version: 10.0.21
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: conceptual
+ms.date: 11/13/2024
+ms.custom: 
+  - bap-template
 ---
 
 # What's new or changed in the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 3.0.4.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Fixed an issue that affected the wireless network connection monitor.
+- Fixed an issue that could occur when changing color themes.
+- Improved security and performance.
+
+## Version 3.0.3.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.  
+- Improved authentication stability and sign-in experience.
+- Improved speed when changing between pages.  
+- Improved connection stability and performance.
+- Fixed decimal formats to better match the selected user culture.  
+- Improved accessibility on the workload screen.
+
+## Version 3.0.0.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- User-based authentication (device code or username/password) is now required. Support for service-based authentication methods (certificate and client secret) has been removed. You must update the connection settings on all devices that are still using service-based authentication.
+- The Copilot button is now shown at the top of most pages (instead of as an entry on the **Main Menu** page) and has been relabeled to **Workload** because it opens the Copilot-generated workload summary.
+- The **Settings** button is now shown as a gear icon at the right side of the title bar on most pages (instead of as an entry on the **Main Menu** page).
+- Fixed an issue that could cause the app to freeze.
+
+## Version 2.3.7.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+
+## Version 2.3.6.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed an issue that could prevent the app from connecting to Copilot.
+- Fixed a crash that could occur on Android 11 devices shortly after starting up the app.
+
+## Version 2.3.4.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Added a new and improved user interface for the Copilot screen.
+- On devices that are still set up to use a deprecated authentication method, the app now shows a warning to tell users that the app will soon stop working if the connection settings aren't changed.
+- Fixed a crash that could occur on Android devices when restarting the app after a long pause.
+
+## Version 2.3.3.0
+
+### New features introduced in version 2.3.3.0
+
+This version of the Warehouse Management mobile app introduces the following new features:
+
+- Simplified authentication setup by providing an option that doesn't require that you register or maintain your own Microsoft Entra ID application.
+- Added intent scanning for Android, which improves scanner integration on devices that support it.
+
+### New fixes and improvements in version 2.3.3.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed an issue that striped non-GS1 symbology values when scanning.
+
+## Version 2.3.2.0
+
+### New features introduced in version 2.3.2.0
+
+This version of the Warehouse Management mobile app introduces the following new features: 
+
+- Added a welcome screen copilot, which provides essential information and helpful tips.
+- Added a sound and vibration alert to tell workers when they are scanning too quickly for the system to keep up and therefore need to redo their last scan.
+- Reduced whitespace on details cards by 35%.
+
+### New fixes and improvements in version 2.3.2.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed an issue that prevented action buttons from respecting the **Button position** user setting.
+
+## Version 2.2.1.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- For Android devices, Android version 5.0 or higher is now strictly required.
+- Improved support for the SOTI MobiControl Mobile Device Management (MDM) system. The managed configuration for the uploaded Warehouse Management APK file is now visible in MobiControl, and it's possible to include a connections JSON string.
+- Improved performance for large action lists.
+- Enhanced validation of authentication secrets on the **Edit connection** page.
+- Fixed an issue on certain Honeywell devices, which was related to using the enter key.
+- You can now set the minimum server timeout to one minute.
+
+## Version 2.1.26.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability.
+- Fixed an issue where non-GS1 barcodes didn't scan correctly on inquiry pages.
+- Fixed an issue where connection configurations that used a user-based authentication method could be saved even if values were wrong or missing.
+
+## Version 2.1.25.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in using only the alias part of the Microsoft Entra ID account username (rather than a complete email address). The app will retrieve the domain name from the connection configuration. You can still sign in using the full email address as the username if you prefer.
+- Fixed an issue where a selected value wasn't respected when moving back and forth within detours.
+- Fixed an issue where the page would sometimes be rendered incorrectly when the device was in landscape mode and the user had selected to never show the *quantity spinner*.
+- The app now moves back to the **Select connection** page if the device code expires (after 15 minutes of inactivity) instead of showing an ambiguous error message.
+- Fixed an issue that would prevent the app from being installed on Windows when the package was downloaded from Microsoft App Center.
+- Added several accessibility improvements.
+
+## Version 2.1.23.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability.
+- Added the username/password authentication method.
+- Added support for single sign-on (SSO) when using username/password authentication.
+- Added support for assigning a default mobile device user for each worker account, which enables automatic sign-in for workers.
+- Added a pop-up message to confirm successful sign-out from Microsoft Entra.
+- Improved support for Active Directory Federation Services (AD FS), thereby enabling device code flow, username/password, and SSO authentication in Dynamics 365 Finance + Operations (on-premises) environments.
+- Fixed a bug that prevented the app from saving manually entered connection settings after previously importing those settings from a file.
+- Added support for the new "back" gesture in Android 13.
+- White space on the details card now scales better with text zoom.
+- Added several accessibility improvements.
+
+## Version 2.1.20.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed an issue with icons not working for Turkish localizations.
+- Added temporary support for Windows 10.0.17763.
+- Fixed an issue that prevented client telemetry from being sent.
+
+## Version 2.1.19.0
+
+### New features introduced in version 2.1.19.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- The wireless network connection screen is now correctly hidden in all contexts.
+- Fields on the details card are now sorted by priority.
+- The empty confirmation label on the details card is now hidden.
+- Translations have been updated.
+- Telemetry is now available in China.
+- The app can now scan the pipe character (|) correctly as a separator.
+- New icons are now provided for action buttons.
+- The worklist and inquiry cards now have full text accessibility pop-ups.
+- Pressing the escape key while entering vendor batches no longer causes the app to crash.
+- The about screen now shows the latest version correctly.  
+- The app no longer crashes on Android devices that lack of a preinstalled browser.
 
 ## Version 2.1.17.0
 
@@ -35,7 +192,7 @@ This version of the Warehouse Management mobile app introduces the following new
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed the bug that prevented the Wi-Fi screen from being hidden.
+- Fixed the bug that prevented the wireless network connection screen from being hidden.
 - Resolved the bug causing accessibility tooltips to appear on Windows unexpectedly.  
 - Fixed issues related to configuration mode.
 - Resolved the bug that prevents hiding the step instructions screen.
@@ -47,7 +204,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It’s also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights.
+- Wireless network connection strength indicator: Indicates the strength of the wireless network connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It's also possible to log wireless network connection strength measurements among the telemetry data collected in Application Insights.
 - Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. For more information about this XML code, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
 ### New fixes and improvements in version 2.1.15.0
@@ -82,7 +239,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 ### New authentication method added in version 2.1.12.0
 
-The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. See also [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. Learn more in [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
 ### New fixes and improvements in version 2.1.12.0
 
@@ -92,12 +249,12 @@ This version of the Warehouse Management mobile app introduces the following fix
 - The decimal separator shown by the mobile app now matches the culture (language) specified for the user account that the app is using to sign in to Supply Chain Management rather than the culture set for the local device.
 - Fixed an issue where the read-only quantity spinner would display an incorrect value after the page was resized.
 - Fixed an issue where the compact (small) quantity spinner would initially show an incorrect value.
-- Added the ability to collect telemetry data about the Wi-Fi strength seen at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)).
+- Added the ability to collect telemetry data about the wireless network connection strength seen at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)).
 - Added several accessibility improvements.
 
 ## Version 2.1.9.0
 
-This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
+This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements:
 
 - Increased stability.
 - Improved narration and keyboard navigation for better accessibility.
@@ -109,15 +266,15 @@ This version of the Warehouse Management mobile app introduces the following new
 
 ## Version 2.1.6.0
 
-This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
+This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements:
 
-- Added a new setting that lets workers specify the visibility and type of quantity spinner. Workers can choose to hide the spinner; always show the compact, non-scrolling spinner; or let the app select automatically. 
-- Added a search function to inquiry pages. Workers can now scan or type to search in all the fields and titles on the page. 
-- On custom pages, the app now focuses on the first non-filled text box instead of the first text box. 
-- Added a close button on all dialog pop-up pages. 
-- Added a back button on the **Settings**, **Alphanumeric** input, and **Numpad** pages. 
-- Fixed an issue where the camera scanner would read an extra unprintable character at the end of specific Code 128 barcodes. 
-- Improved narration and keyboard navigation for better accessibility. 
+- Added a new setting that lets workers specify the visibility and type of quantity spinner. Workers can choose to hide the spinner; always show the compact, non-scrolling spinner; or let the app select automatically.
+- Added a search function to inquiry pages. Workers can now scan or type to search in all the fields and titles on the page.
+- On custom pages, the app now focuses on the first non-filled text box instead of the first text box.
+- Added a close button on all dialog pop-up pages.
+- Added a back button on the **Settings**, **Alphanumeric** input, and **Numpad** pages.
+- Fixed an issue where the camera scanner would read an extra unprintable character at the end of specific Code 128 barcodes.
+- Improved narration and keyboard navigation for better accessibility.
 
 ## Version 2.1.1.0  
 
@@ -125,20 +282,20 @@ This version of the Warehouse Management mobile app introduces the following new
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- The app is now available for iOS devices. 
-- This version is compliant with regulations for European Union Data Boundary (EUDB) and sovereign clouds. 
+- The app is now available for iOS devices.
+- This version is compliant with regulations for European Union Data Boundary (EUDB) and sovereign clouds.
 
 ### New fixes and improvements in version 2.1.1.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
-- Increased stability for installations deployed using Microsoft Intune. 
-- Fixed an issue where the app couldn't connect to the server when running on Android 4.4. 
-- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server. 
+- Increased stability for installations deployed using Microsoft Intune.
+- Fixed an issue where the app couldn't connect to the server when running on Android 4.4.
+- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server.
 
 ## Version 2.0.42.0
 
-This version introduces the following new features, fixes, and improvements: 
+This version introduces the following new features, fixes, and improvements:
 
 - The user settings and input-helper dialogs now include a back button in the toolbar.
 - You can now use a pull-down gesture to close the user settings and photo dialogs.
@@ -169,13 +326,14 @@ This version of the Warehouse Management mobile app introduces the following fix
 ## Version 2.0.40.0
 
 This version introduces the following new features, fixes, and improvements:
-- Increased stability. 
+
+- Increased stability.
 
 ## Version 2.0.39.0
 
 This version introduces the following new features, fixes, and improvements:
 
-- Increased stability. 
+- Increased stability.
 - The fields of the **Custom** page are no longer sorted automatically based on their priority and subpriority settings.  
 - The app now uses the priority and subpriority settings for each field to identify the primary field for a page. The primary field is shown in the step header.
 - Fixed an issue where the soft keyboard wouldn't hide on Android.
@@ -200,11 +358,13 @@ This version introduces the following new features, fixes, and improvements:
 ## Version 2.0.35.0
 
 This version introduces the following new features, fixes, and improvements:
+
 - Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards were to be shown.
 
 ## Version 2.0.34.0
 
 This version introduces the following new features, fixes, and improvements:
+
 - Improved stability.
 - Improved performance.
 - Improved the screen layout to allow more space for the details card.
@@ -227,9 +387,9 @@ This version introduces the following new features, fixes, and improvements:
 
 This version introduces the following new features, fixes, and improvements:
 
--	Enhanced performance and stability.
--	Improved user interface that makes it faster and easier to work with long selection lists. Workers can now search for a list item by name rather than scroll through the full list.
--	Fixed an issue where pre-entered values didn't get overwritten when scanning by character.
+- Enhanced performance and stability.
+- Improved user interface that makes it faster and easier to work with long selection lists. Workers can now search for a list item by name rather than scroll through the full list.
+- Fixed an issue where pre-entered values didn't get overwritten when scanning by character.
 
 ## Version 2.0.30.0
 
@@ -336,15 +496,15 @@ This version introduces the following new features, fixes, and improvements:
 - Added missing selection list titles.
 - Fixed an issue where the back button didn't work.
 - Added several keyboard navigation fixes and improvements, including on the following pages:
-  - User sign in
-  - Select connection
-  - Edit connection
+    - User sign in
+    - Select connection
+    - Edit connection
 - Fixed scrolling when using keyboard navigation.
 - Enhanced accessibility, including the following improvements:
-  - Fixed color visibility and contrast.
-  - Prevented loss of keyboard focus when pop-up pages are closed.
-  - Added error messages to the narration.
-  - Increased the size of placeholder values in the step banner.
+    - Fixed color visibility and contrast.
+    - Prevented loss of keyboard focus when pop-up pages are closed.
+    - Added error messages to the narration.
+    - Increased the size of placeholder values in the step banner.
 - Fixed the example of the custom legacy page in demo mode.
 
 ## Version 2.0.15.0

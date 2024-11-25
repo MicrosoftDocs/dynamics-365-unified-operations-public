@@ -1,12 +1,13 @@
 ---
 title: Part type
-description: Part control type. A part is a container control that contains only a page, allowing for a page to be embedded within a page.
+description: Learn about the part type, a container control that contains only a page, allowing for a page to be embedded within a page.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Part type

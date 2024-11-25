@@ -1,15 +1,13 @@
 ---
 title: Master plans overview
-description: Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. This article describes various important strategies and parameters that are used to set up master plans.
+description: Learn how to use various master plans to support your company's daily working operations with an outline on strategies and parameters used to set up master plans.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace, ReqParameters, ReqPlanSched
 ms.topic: overview
 ms.date: 01/05/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace, ReqParameters, ReqPlanSched
 ---
 
 # Master plans overview
@@ -133,6 +131,10 @@ The positive days also affect the action messages. For example, the system might
 
 As a rule, the positive days are set to a number that is between the longest lead time of the items and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
 
+### Dynamic positive days
+
+Dynamic positive days work like positive days, but they also consider the lead time. Learn more in [Dynamic positive days for last-minute orders](dynamic-positive-days.md).
+
 ### Negative days
 
 Negative days indicate how late item receipts will be allowed. They represent the number of days that you're willing to wait before you order new replenishment when you have negative inventory or don't have enough inventory. Negative days answer the question, Should we create a new purchase order for the item, or should we use an existing purchase, even though we know that the item will be late?
@@ -151,8 +153,6 @@ Lead time + Negative days + Current date – Requirement date
 
 The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time.
 
-For more information, see [Negative days and dynamic negative days](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Learn more in [Negative days and dynamic negative days](more-about-dynamic-negative-days.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

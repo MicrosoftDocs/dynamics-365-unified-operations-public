@@ -1,15 +1,16 @@
 ---
 title: Spanish Intrastat
-description: This article contains information about the Spanish Intrastat report.
-author: AdamTrukawka
-ms.date: 10/18/2021
-ms.topic: article
-audience: 
-ms.reviewer: kfend
+description: Learn about the Spanish Intrastat report, including outlines and step-by-step processes for setting up intrastat and setting up delivery addresses.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
-ms.search.validFrom: 
 ---
+
 # Spanish Intrastat
 
 [!include [banner](../../includes/banner.md)]

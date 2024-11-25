@@ -1,28 +1,15 @@
 --- 
-# required metadata 
- 
 title: Create a purchase order with a delivery schedule
-description: This article demonstrates how to create a delivery schedule for a purchase order. 
-author: GalynaFedorova
+description: Learn how to create a delivery schedule for a purchase order, including a step-by-step process using the USMF demo data company. 
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
 ms.date: 08/01/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom:
+ms.reviewer: kamaybac   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines 
 ---
+
 # Create a purchase order with a delivery schedule
 
 [!include [banner](../../includes/banner.md)]

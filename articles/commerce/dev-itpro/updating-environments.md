@@ -2,18 +2,15 @@
 title: Update code and environments for Commerce projects
 description: This article describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 02/03/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/19/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: Retail 7.3
-ms.search.industry: Retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 
@@ -150,8 +147,6 @@ Environments that are used for work of the same release should also have the sam
 
 Notice that after you've finished updating an environment, the tile counts for the available updates are significantly lower than they were when you started.
 
-![LCS Dev Environment.](./media/LCSDevEnvironmentpage.png)
-
 ## Move to a new version
 
 To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy a new environment. You must also run a code upgrade and a database upgrade, if these upgrades are applicable. For more details, see [Code migration home page](../../fin-ops-core/dev-itpro/migration-upgrade/code-migration-home-page.md).
@@ -175,7 +170,7 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
     - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
     - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
     - The "Initialize Commerce scheduler" job should be run.
-    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Azure Active Directory setup, Commerce shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
+    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Entra ID setup, Commerce shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
     - Is a synchronization of the CDX data jobs required?
     - Is a full synchronization of CDX data jobs required?
     - Does a deployment require that store components also be updated?
@@ -190,4 +185,3 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Set up call center channels
-description: This article provides information about how to process orders for call centers by using Dynamics 365 Commerce.
+description: This article describes how to process orders for call centers in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/04/2022
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User 
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
+ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Set up call center channels
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to process orders for call centers in Microsoft Dynamics 365 Commerce.
 
 A company can define multiple call center channels in Dynamics 365 Commerce. Call center channels are configured at **Retail and Commerce** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
 

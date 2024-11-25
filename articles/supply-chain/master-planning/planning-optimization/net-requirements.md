@@ -1,16 +1,12 @@
 ---
 title: Net requirements and pegging information
-description: This article provides information about calculated net requirements and pegging information.
+description: Learn about calculated net requirements and pegging information, including an outline on the various methods of opening the net requirements page.
 author: t-benebo
-ms.date: 7/28/2021
-ms.topic: article
-ms.search.form: ReqTransOverview
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.20
+ms.topic: article
+ms.date: 7/28/2021
+ms.reviewer: kamaybac
+ms.search.form: ReqTransOverview
 ---
 
 # Net requirements and pegging information
@@ -31,7 +27,16 @@ You can open the **Net requirements** page in any of the following ways:
 
 ## Use the Net requirements page
 
-The **Net requirements** page consists of upper and lower sections. The Action Pane on this page includes an **Update** button. When this button is selected, a menu of commands appears.
+The **Net requirements** page consists of upper and lower sections. The Action Pane on this page includes an **Update** button.
+
+### Update the Net requirements page to reflect new supply and demand
+
+Before new supply or demand will appear among the net requirements of an item, you must do one of the following:
+
+- Run a master plan that includes the item.
+- Open the **Net requirements** page for the item and then, from the Action Pane, select **Update > Master planning**. This action runs master planning for the selected item.
+
+For example, if you manually create a planned order (supply), change an existing planned order (supply), or create sales order (demand), the changes won't appear on an item's **Net requirements** page until after master planning runs for that item.
 
 ### Select a master plan to view
 

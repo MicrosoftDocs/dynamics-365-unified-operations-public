@@ -1,12 +1,13 @@
 ---
 title: Input module
-description: Input controls are typically used on task pages for collecting user input, for example, for a new control.
+description: Learn about the Input module, the input controls are typically used on task pages for collecting user input, for example, for a new control.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Input module

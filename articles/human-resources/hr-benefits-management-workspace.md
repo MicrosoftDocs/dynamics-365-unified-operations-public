@@ -4,11 +4,8 @@
 title: Benefits management workspace
 description: This article describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/03/2022
+ms.date: 07/03/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
@@ -17,11 +14,10 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
 
@@ -49,7 +45,7 @@ You can view your action items by either selecting a tile or a tab. If you selec
 
 ![Action items.](./media/hr-benefits-management-workspace-action-items.png)
 
-If you select a tile, you go to the page for that area. For example, selecting any of these tiles displays the **Worker benefits plans** page, filtered for employees you need to take action on:
+When you select a tile, you go to the page for that area. For example, selecting any of these tiles displays the **Worker benefits plans** page, filtered for employees you need to take action on:
 
 - **Unconfirmed selections**
 - **Open enrollments with no checked out plans**
@@ -92,7 +88,7 @@ To view a different benefits period, select it from the **Period** drop-down lis
 You can view action items by selecting either a tile or a tab. If you select a tab, you can view and select workers on the workspace page.
 The **Open enrollment** tab provides key metrics for the open enrollment process. 
 
-Information regarding open enrollment will be displayed 30 days before the **Enrollment start date**. This is defined in the **Periods** setup in **Benefits management** > **Links** > **Periods**, in the **Enrollment start date** field.  To change this setting, go to **Human resources shared parameters** > **Benefits management** > **Open enrollment options** and update the **Number of** field.  
+Information regarding open enrollment is displayed 30 days before the **Enrollment start date**. This is defined in the **Periods** setup in **Benefits management** > **Links** > **Periods**, in the **Enrollment start date** field. To change this setting, go to **Human resources shared parameters** > **Benefits management** > **Open enrollment options** and update the **Number of** field.  
 
 The following information is available on the **Open enrollment** tab:
  - Employees that have not started the open enrollment process
@@ -102,20 +98,20 @@ The following information is available on the **Open enrollment** tab:
 
 **Summary tiles**
 
-- **Not started** – The **Not started** tile shows a count of employees who have not started the enrollment process. The **Not started** tile is a filtered list that it shows only those employees that do not have any plans selected, waived, or checked out for the open enrollment plan period. Mandatory plans are ignored and not included because they are selected by default for the employee.  You can drill back on this tile to see a list of employees who have not started the open enrollment process on the **Worker benefits plan** page.
+- **Not started** – The **Not started** tile shows a count of employees who have not started the enrollment process. The **Not started** tile is a filtered list that it shows only those employees that don't have any plans selected, waived, or checked out for the open enrollment plan period. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill back on this tile to see a list of employees who haven't started the open enrollment process on the **Worker benefits plan** page.
 
   > [!NOTE]
-  > If you do not want to track the open enrollment progress for a **Plan type**, you can exclude it by going to **Benefits management** > **Links** > **Employee self service parameters** > **Benefit plans tile setup** and updating the **Track open enrollment progress** field.  For example, you may have plans created where **Plan type** = **Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, plans of these types will be ignored when tracking enrollment progress or completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities.
+  > If you do not want to track the open enrollment progress for a **Plan type**, you can exclude it by going to **Benefits management** > **Links** > **Employee self service parameters** > **Benefit plans tile setup** and updating the **Track open enrollment progress** field. For example, you may have plans created where **Plan type** = **Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, plans of these types will be ignored when tracking enrollment progress or completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities.
 
 - **In progress** – The **In progress** tile gives a count of employees that have elections in progress. The **In progress** tile is a filtered list that shows only employees that have at least one plan that is waived or selected. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill back from this tile to see the selected and waived plans on the **Worker benefit plans bulk update** page.
 
-- **Enrolled in benefits** – The **Enrolled in benefits** tile gives a count of employees that are fully enrolled in benefits. The **Enrolled in benefits** tile is a filtered list that shows employees who have either selected or waived all plans. The query will exclude plans that are not being tracked for open enrollment on the **Employee self service parameters** page. You can drill back from this tile to see a list of employees on the **Worker benefit plans** page.
+- **Enrolled in benefits** – The **Enrolled in benefits** tile gives a count of employees that are fully enrolled in benefits. The **Enrolled in benefits** tile is a filtered list that shows employees who have either selected or waived all plans. The query excludes plans that aren't tracked for open enrollment on the **Employee self service parameters** page. You can drill back from this tile to see a list of employees on the **Worker benefit plans** page.
 
 - **Unconfirmed selections** – The **Unconfirmed selections** tile shows a count of employees that have plans that are selected or waived and need to be confirmed. You can drill back from this tile to display the **Worker benefit plans bulk update** page.
 
 **Activity**
 
-- **Not started** - The **Not started** tab displays a list of employees that have not started the enrollment process. The **Not started** tile is a filtered list that shows  employees that do not have any plans selected, waived, or checked out for the open enrollment plan period. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill down on the worker to display the **Worker benefit plans detail** page.
+- **Not started** - The **Not started** tab displays a list of employees that have not started the enrollment process. The **Not started** tile is a filtered list that shows employees that don't have any plans selected, waived, or checked out for the open enrollment plan period. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill down on the worker to display the **Worker benefit plans detail** page.
 
 - **Elections in progress** - The **Elections in progress** tab displays a list of employees that have elections in progress. The **Elections in progress** is a filtered list that shows employees that have at least one plan that is waived or selected. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill down on the worker to display the **Worker benefit plans detail** page.
 

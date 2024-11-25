@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up Ledger posting groups for sales tax
-description: Sales tax is calculated and posted to main accounts that are specified in Ledger posting groups. 
+description: Sales tax is calculated and posted to main accounts that are specified in Ledger posting groups. Learn about setting up ledger posting groups for sales tax.
 author: twheeloc
-ms.date: 07/01/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxAccountGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/01/2019
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxAccountGroup 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up Ledger posting groups for sales tax
 
 [!include [banner](../../includes/banner.md)]

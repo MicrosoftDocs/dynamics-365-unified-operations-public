@@ -1,48 +1,37 @@
 ---
-# required metadata
-
 title: Import currency exchange rates
-description: This article provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
-author: EvgenyPopovMBS
-ms.date: 03/17/2020
+description: Learn about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
+author: RyanCCarlson2 
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ExchangeRateProviderConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261374
-ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
+ms.date: 07/29/2024
+ms.reviewer: twheeloc
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2020-02-03
+ms.search.form: ExchangeRateProviderConfiguration
 ms.dyn365.ops.version: 10.0.9
-
+ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
 # Import currency exchange rates
 
 [!include [banner](../includes/banner.md)]
 
-If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This article provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
+If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This article provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as OANDA Rates®,  the European Central Bank, and the Central Bank of Russia. 
+>[!NOTE]
+>Beginning in Dynamics 365 Finance version 10.0.41, a new rate provider option, **OANDA Central Banks**, is available with an upgraded license key from OANDA. 
 
 The following sections describe the flow of information that is used for setting up and processing the import of foreign exchange rates.
 
 ## Configure an exchange rate provider
-Before you can import exchange rates, you must set up the information that is required by the providers who offer the exchange rates. Use the **Configure exchange rate providers** page to select the exchange rate providers. Some exchange rate providers are included with the demo data in Dynamics 365 Finance. The following table provides descriptions for the controls on this page.
+Before you can import exchange rates, you must set up the information that is required by the providers who offer the exchange rates. Use the **Configure exchange rate providers** page to select the exchange rate providers. Some exchange rate providers are included with the demo data in Dynamics 365 Finance. The following table provides descriptions for the controls on this page. 
 
 | Field | Description                   |
 |-----------|-----------------------------------|
-| **Name**  | The name of the exchange rate provider.                                                                                                                                                                                     |
-| **Key**   | The unique identifier for each piece of configuration information that is required by the provider. This information is automatically added for each exchange rate provider that you add. |
-| **Value** | Information for each key. This information is added for each exchange rate provider that you add.                                                                                         |
+| **Name**  | The name of the exchange rate provider.                                                                                                          |
+| **Key**   | The **Key** column is a unique identifier for each piece of configuration information that is required by the provider. This information is automatically added for each exchange rate provider that you add. |
+| **Value** | The **Value** column is the required information for each key. This information is added for each exchange rate provider that you add. OANDA provider options requires the API key value to be filled in by you that were received from OANDA directly. The OANDA Central Banks provider allows you to select a specific cental bank value in the **Data set key** field.          |
 
 ## Import currency exchange rates
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.

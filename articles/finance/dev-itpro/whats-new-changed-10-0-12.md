@@ -1,35 +1,22 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.12 (August 2020)
-description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.12 preview release.
+description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.12 preview release released in August 2020.
 author: kfend
-ms.date: 05/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2020-04-13 
+ms.topic: whats-new
+ms.date: 07/15/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kfend
+ms.search.region: Global
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
-
 ---
+
 # What's new or changed in Dynamics 365 Finance 10.0.12 (August 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.12. This version has a build number of 10.0.507 and is available as follows:
 

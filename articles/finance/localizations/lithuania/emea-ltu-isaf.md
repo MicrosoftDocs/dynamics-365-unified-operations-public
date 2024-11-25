@@ -1,19 +1,18 @@
 ---
 title: i.SAF reporting for Lithuania
-description: This article explains how to set up and work with the i.SAF report for legal entities in Lithuania.
-author: AdamTrukawka
-ms.date: 03/22/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+description: Learn how to set up and work with the i.SAF report for legal entities in Lithuania, including an overview on setting up Electronic Reporting configurations.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.date: 03/18/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Lithuania
-ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 266884
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # i.SAF reporting for Lithuania
@@ -225,6 +224,8 @@ Complete the following steps to limit access to the **i.SAF** processing.
 ## Set up the VAT registration number for the company that is reporting i.SAF
 
 The system retrieves the VAT registration number of the company that is reporting i.SAF from the registration ID that is defined in the properties of the legal entity. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories). The tax registration type must be assigned to the **VAT ID** tax registration category. For a more detailed walkthrough of the prerequisites for VAT ID registration, see [Set up VAT ID](../europe/eur-00015-vat-id.md).
+
+As of version 52.26 of **i.SAF model mapping** you can also set up a registration ID that is assigned to the **Enterprise ID (COID)** tax registration category for your legal entity. When the registration number of the **Enterprise ID (COID)** tax registration category is configured for legal entity, it's reported in the **RegistrationNumber** field of i.SAF. Otherwise, the **RegistrationNumber** field of i.SAF is reported with value set up for **VAT ID** tax registration category.
 
 ## Collect data for the i.SAF report
 

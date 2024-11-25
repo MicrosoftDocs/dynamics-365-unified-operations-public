@@ -1,19 +1,18 @@
 ---
 title: Reverse an endorsed bill of exchange
-description: This task walks you through reversing an endorsed bill of exchange.
+description: Learn about reversing an endorsed bill of exchange from the accounts payable option, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReverse, LedgerTransVoucher
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Reverse an endorsed bill of exchange
 
 [!include [banner](../../includes/banner.md)]

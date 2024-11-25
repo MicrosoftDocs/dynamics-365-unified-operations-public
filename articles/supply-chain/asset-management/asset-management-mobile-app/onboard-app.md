@@ -1,15 +1,13 @@
 ---
 title: Onboard the Asset Management mobile app
-description: This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app, and how to install the app on your mobile devices.
-author: johanhoffmann
-ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: how-to
 ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Onboard the Asset Management mobile app
@@ -34,21 +32,30 @@ When you create the Dataverse environment where you want to install the app, be 
 
 The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
 
+## Licensing requirements
+
+To gain access to the app, users must have the appropriate security role(s) assigned to them in Supply Chain Management. The roles that are available for each user in Supply Chain Management depend on the licenses assigned to them in Microsoft Entra ID. For details about which security roles grant access to which functionality in the Asset Management mobile app, see [Configure users and workers in Supply Chain Management](#roles-workers). For details about which licenses grant access to which security roles, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
 You must install the Asset Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
 
 Follow these steps to install the Asset Management mobile app in Dataverse.
 
-1. Go to ["Dynamics 365 Asset Management mobile application" in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-scm-assetmanagementmobileapp).
-1. Select **Get it now**.
-1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**.
+1. Search for and select the app named *Dynamics 365 Asset Management Mobile Application*.
+1. On the top toolbar, select **Install**.
+1. Select the environment where you want to install the app, review the packages that will be installed, and select the **I agree to the terms of service** checkbox.
+1. Select **Install**.
 
 ## Grant access to the mobile app in Dataverse
 
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Asset Management mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
 Each relevant user must be assigned a role that lets them work with the Dataverse Supply Chain Management virtual tables that the solution installs. The solution installs a role named *Asset Management Mobile Application User Role* that grants access privileges to all the required virtual tables. You can assign this role to a Dataverse group team. Any user who's a member of that team will then have the role too. Alternatively, you can assign the role directly to a user.
+
+Each relevant user must also have the *Finance and Operations Basic User* role.
 
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).

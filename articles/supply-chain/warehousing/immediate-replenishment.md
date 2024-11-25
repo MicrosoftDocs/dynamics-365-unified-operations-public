@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Immediate replenishment
-description: This article describes how you can use immediate replenishment to replenish inventory when a location directive fails to allocate inventory.
+description: Learn how you can use immediate replenishment to replenish inventory when a location directive fails to allocate inventory.
 author: Mirzaab
-ms.date: 03/15/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 1705903
-ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
+ms.topic: article
+ms.date: 03/15/2017
+ms.reviewer: kamaybac
+ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
+ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ---
 
 # Immediate replenishment

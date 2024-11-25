@@ -6,9 +6,6 @@ description: This article provides an API and custom fields reference. It also p
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -30,7 +27,6 @@ ms.dyn365.ops.version: Human Resources
 # Development overview
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
