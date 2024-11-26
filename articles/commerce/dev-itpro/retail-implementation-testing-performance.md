@@ -25,11 +25,11 @@ The main purpose of user acceptance testing (UAT) is to verify that specific bus
 
 For the best results, the UAT environment should be a Tier 2 through Tier 5 environment, not a development environment (Tier 1).
 
-If a development environment is used, there are scenarios where a developer who uses the same environment can cause errors (for example, uncommitted source changes or debugger attached errors). The switch between Microsoft Internet Information Services (IIS) Express and IIS can also cause issues. Additionally, because there is no way to know exactly what has happened on a development machine, Microsoft support for a Tier 1 environment is very limited.
+If a development environment is used, there are scenarios where a developer who uses the same environment can cause errors (for example, uncommitted source changes or debugger attached errors). The switch between Microsoft Internet Information Services (IIS) Express and IIS can also cause issues. Additionally, because there's no way to know exactly what happened on a development machine, Microsoft support for a Tier 1 environment is limited.
 
 A production environment can be used for UAT (for example, as a "dry run" for go-live). However, if you require access to the database for any reason, you must go through deployment support engineer (DSE) service requests. Therefore, this approach might not be efficient. Additionally, the production environment isn't available for a long period before the planned go-live date.
 
-The UAT should be done after you deploy officially built deployable packages. It should not be done on packages that are manually built in Microsoft Visual Studio. The reason is that there is no way to prove what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a specific build.
+The UAT should be done after you deploy officially built deployable packages. It shouldn't be done on packages that are manually built in Microsoft Visual Studio. The reason is that there's no way to prove what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a specific build.
 
 If you use the Store Commerce app or Store Commerce for web, make sure that you use the correct user roles. You should test by signing in as both a manager and a cashier who has lower privileges.
 
@@ -46,11 +46,11 @@ For more information, see [Commerce for IT pros and developers](/dynamics365/uni
 
 ### Using telemetry data to find performance issues
 
-If you must troubleshoot the performance (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [Monitoring and diagnostics tools in Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics.md). That information should help you determine why some batch processes or form loads are slow.
+If you must troubleshoot the performance (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more information, see [Monitoring and diagnostics tools in Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics.md). That information should help you determine why some batch processes or form loads are slow.
 
 ### Performance testing
 
-Typically, when you test the performance of a system, you should focus on components where there is competition for many shared resources. These resources might differ for different projects, customers, or requirements.
+Typically, when you test the performance of a system, you should focus on components where there's competition for many shared resources. These resources might differ for different projects, customers, or requirements.
 
 Here are some of the reasons why bottlenecks can occur:
 
@@ -58,17 +58,17 @@ Here are some of the reasons why bottlenecks can occur:
 - Complex business logic for multiple terminals or stores that run on a few Commerce Scale Unit 
 - Integrated third-party systems (integrated from either Commerce or Commerce Scale Unit)
 - Real-time transaction services that are frequently called from Commerce Scale Unit.
-- Non-standard or extended standard functionality (for example, extended statement posting that uses a custom WHS code)
+- Nonstandard or extended standard functionality (for example, extended statement posting that uses a custom WHS code)
 
 In general, default and non-real-time POS operations aren't considered bottlenecks because they have their own dedicated resource: the computer that the POS is installed or running on. Performance issues are typically caused by the business logic or "chatty" calls to Commerce Scale Unit.
 
-Ideally, performance testing should be done after some initial optimizations have already been completed by using the information earlier in this article. If the system doesn't perform well for a single user or process, it won't perform well for concurrent users or processes. For more information, search for "PerfSdk" or "Trace parser" in the Finance documentation. 
+Ideally, performance testing should be done after some initial optimizations are already completed by using the information earlier in this article. If the system doesn't perform well for a single user or process, it won't perform well for concurrent users or processes. For more information, search for "PerfSdk" or "Trace parser" in the Finance documentation. 
 
-Because every project is different, it's difficult to give a general answer about the exact performance tests that must be run. For example, if the count of transaction sales lines is low (less than 100,000 per day for all stores), and if no custom extension code has been added for statement posting, a performance test should not be required for posting. However, if the count of sales lines is substantially higher, or if major custom changes have been added, a performance test for posting is a good idea.
+Because every project is different, it's difficult to give a general answer about the exact performance tests that must be run. For example, if the count of transaction sales lines is low (less than 100,000 per day for all stores), and if no custom extension code is added for statement posting, a performance test shouldn't be required for posting. However, if the count of sales lines is substantially higher, or if major custom changes are added, a performance test for posting is a good idea.
 
 Usually, the hardware capabilities of every environment differ. However, performance issues can usually be reproduced in other environments if the code and data are similar. We don't recommend that you use a production environment for performance testing. A good practice is to use the same data in development, test, and production environments. The development environment can then be used to work on and verify a fix. Because many performance-critical code paths are data-dependent, the same issues might not be seen for a Contoso sample database.
 
-After you've completed a performance fix, you should verify the fix in a test environment. Deploy an officially built package to the test environment, and if the issue is fixed, mark the package as a release package. 
+After you complete a performance fix, you should verify the fix in a test environment. Deploy an officially built package to the test environment, and if the issue is fixed, mark the package as a release package. 
 
 Any fix of a larger performance issue should be followed by a new performance test. Often, a large issue masks other smaller issues. After the top issue is resolved, the next issues can be found and worked on until the performance meets the customer's expectations.
 
