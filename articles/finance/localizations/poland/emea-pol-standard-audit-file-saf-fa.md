@@ -1,12 +1,12 @@
 ---
 title: SAF VAT invoices file - JPK_FA
-description: Users in legal entities in Poland can generate a SAF VAT invoices file - JPK_FA in XML format.
+description: Thisnarticle explains how users in legal entities in Poland can generate a SAF VAT invoices file - JPK_FA in XML format.
 author: liza-golub
 ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 11/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -25,15 +25,15 @@ Users in legal entities in Poland can generate a SAF VAT invoices file - JPK_FA 
 
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
-1. [Import Electronic reporting configurations](#er-import)
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
-3. [Set up sales tax authorities](#tax-authorities)
-4. [Set up sales tax reporting codes](#tax-codes)
-5. [Configure Application-specific parameters for the format of the report](#asp-setup)
+1. [Import Electronic reporting configurations](#er-import).
+2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+3. [Set up sales tax authorities](#tax-authorities).
+4. [Set up sales tax reporting codes](#tax-codes).
+5. [Configure Application-specific parameters for the format of the report](#asp-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
-In Finance, import the following Electronic reporting (ER) configurations from Dataverse.
+In Microsoft Dynamics 365 Finance, import the following Electronic reporting (ER) configurations from Microsoft Dataverse.
 
 For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -51,6 +51,8 @@ The version description usually includes the number of the Microsoft Knowledge B
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
 
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
+
+To set up Electronic reporting format in General ledger parameters, follow these steps.
 
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
@@ -534,18 +536,18 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 
 For invoices that aren't paid within 150 days, an **Overdue debt VAT** periodic task can be applied. 
 In this case, the same reporting codes that are used for **K_44** and/or **K_46** can be used. 
-The system will automatically interpret transactions for reporting in **K_49** (Overdue invoice) and **K_50** (Paid overdue invoice). 
+The system automatically interprets transactions for reporting in **K_49** (Overdue invoice) and **K_50** (Paid overdue invoice). 
 
 Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this article. 
 If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
 
 1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
 2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
-3. Select the created format, and on the **Main menu**, select **Designer** to open format designer.
-4. Update format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (in the case of the VAT register case, it is an XML scheme). The right side is a Data model (data). 
-5. On the right side, select **Mapping** to see the Data model. The Data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
+3. Select the created format, and on the **Main menu**, select **Designer**.
+4. Update the format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (for the VAT register, it is an XML scheme). The right side is a data model (data). 
+5. On the right side, select **Mapping** to see the data model. The data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
 6. Data under the **Faktura** tag is mapped mostly to the **Model &gt; SourceDocuments &gt; $Invoices** node. Scroll down the tree to find and select the node. 
-7. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Format designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
+7. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Formula Designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
 8. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
 9. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
 
