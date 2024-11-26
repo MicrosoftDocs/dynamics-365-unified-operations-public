@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 11/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -31,13 +31,13 @@ This topic provides information on how to prepare your Finance to report SAF Acc
 
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
-1. [Import Electronic reporting configurations](#er-import)
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
-5. [Configure Application-specific parameters for the format of the report](#asp-setup)
+1. [Import Electronic reporting configurations](#er-import).
+2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+5. [Configure Application-specific parameters for the format of the report](#asp-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
-In Finance, import the following Electronic reporting (ER) configurations from Dataverse.
+In Microsoft Dynamics 365 Finance, import the following Electronic reporting (ER) configurations from Microsoft Dataverse.
 
 For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
