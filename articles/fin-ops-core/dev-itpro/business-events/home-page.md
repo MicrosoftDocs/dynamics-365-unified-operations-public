@@ -22,7 +22,7 @@ Business events provide a mechanism that lets external systems receive notificat
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
-A business action that a user performs can be either a workflow action or a non-workflow action. Approval of a purchase requisition is an example of a workflow action, whereas confirmation of a purchase order is an example of a non-workflow action. Both types of actions can generate business events that external systems can use in integration and notification scenarios. 
+A business action that a user performs can be either a workflow action or a nonworkflow action. Approval of a purchase requisition is an example of a workflow action, whereas confirmation of a purchase order is an example of a nonworkflow action. Both types of actions can generate business events that external systems can use in integration and notification scenarios. 
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Business events can be consumed using Microsoft Power Automate and Azure messagi
 
 ## Business events that are implemented
 
-Business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md), [Workflow business events](business-events-workflow.md), and [Alerts as business events](alerts-business-events.md).
+Business events are implemented in some business processes out of the box. These business events include both workflow and nonworkflow business events. For more information, see [Application business events](app-business-events.md), [Workflow business events](business-events-workflow.md), and [Alerts as business events](alerts-business-events.md).
 
 A developer must use extensions to implement new business events. For more information, see [Business events developer documentation](business-events-dev-doc.md).
 
