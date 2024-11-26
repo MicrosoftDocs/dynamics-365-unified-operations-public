@@ -26,7 +26,7 @@ Large taxpayers need to report the new JPK_KR_PD for the first time in March 202
 
 > [!NOTE]
 > Previouse version of SAF Accounting books (JPK_KR) report is required for reporting periods before January 1, 2025. For more information about how to set up and generate JPK_KR to report for periods before January 1, 2025, see [SAF Accounting Books - JPK_KR](emea-pol-standard-audit-file-saf-kr.md).
-> The SAF Accounting books (JPK_KR) report will be deprecated as of Janury 1, 2026. For deprecation announcement of SAF Accounting books (JPK_KR), see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release)
+> The SAF Accounting books (JPK_KR) report will be deprecated as of Janury 1, 2026. For deprecation announcement of SAF Accounting books (JPK_KR), see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release)
 
 ## Setup
 
