@@ -29,7 +29,7 @@ To use .NET tools to build X++ in Azure DevOps, the Microsoft Build Engine (MSBu
 
 You can optionally use a solution file to group the projects, including C# project dependencies, and provide an explicit build order. If the repository doesn't already contain a project, you can create a project in Visual Studio.
 
-Ensure that a descriptor folder exists and checked in the descriptor file for each model to your model metadata folder in Azure DevOps.
+Ensure that a descriptor folder exists, and that the descriptor file for each model is checked into your model metadata folder in Azure DevOps.
 
 > [!NOTE]
 > When you use an existing X++ project (rnrproj), make sure that you used Visual Studio tools to create it, or to open and save it.
@@ -146,7 +146,7 @@ Follow these steps to create a build pipeline.
 4. The imported pipeline is automatically opened. In the pipeline settings, name your pipeline, set the agent pool, and set the agent specification to **windows-latest**.
 5. Select **Get sources**, and set the source to TFVC. The **Workspace mappings** section is opened.
 6. Select the ellipsis (**&hellip;**) button next to the **Server path** field, and then select the folder that contains the metadata and projects folders. For example, the folder might be **\$/\<*RepoName*\>/Trunk/Main**.
-7. On the **Variables** tab, confirm that **NugetConfigPath** points to the location of the in your Dynamics 365 finance and operations repository. For example, the location might be **\$(Build.SourcesDirectory)\\Projects**.
+7. On the **Variables** tab, confirm that **NugetConfigPath** points to the location where the nuget.congig is saved in your Dynamics 365 finance and operations repository. For example, the location might be **\$(Build.SourcesDirectory)\\Projects**.
 8. In the **Build solution** task, set your Visual Studio solution to Visual Studio 2022 or the latest version.
 9. Save the pipeline.
 
@@ -180,7 +180,7 @@ install -Noninteractive $(NugetConfigsPath)\packages.config -ConfigFile $(NugetC
 
 #### <a name="updatemodel"></a>Task 2. Update the model versions
 
-Follow the steps here to install and configure the [Update the model versions](pipeline-model-version.md) task.
+Install and update the **Update the model versions** task by following the instructions in [Update the model versions](pipeline-model-version.md).
 
 #### <a name="buildsolutions"></a>Task 3. Build the solution or projects
 
