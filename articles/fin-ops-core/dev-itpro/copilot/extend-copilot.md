@@ -4,7 +4,7 @@ description: Learn about how to extend Copilot capabilities in finance and opera
 author: jaredha
 ms.author: jaredha
 ms.topic: overview
-ms.date: 02/08/2024
+ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
