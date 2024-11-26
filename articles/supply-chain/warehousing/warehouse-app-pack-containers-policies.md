@@ -16,13 +16,6 @@ Mobile device container packing policies let you control the packing process tha
 
 For more information about how packing containers work with the Warehouse Management mobile app, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). For an example that shows how to set up and use this functionality, see [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
 
-## Prerequisites
-
-To use this feature, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.32 or later.
-- The feature that's named *Pack containers using the Warehouse Management mobile app* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is turned on by default.
-
 ## Set up mobile device container packing policies
 
 Follow these steps to set up your mobile device container packing policies.
