@@ -60,19 +60,19 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.39 PQU-4 | July 3, 2024 | July 8, 2024 to August 11, 2024| Completed |
 | 10.0.39 PQU-5 | July 31, 2024 | August 5, 2024 to September 8, 2024| Completed |
 | 10.0.39 PQU-6 | August 28, 2024 | September 2, 2024 to October 6, 2024| Completed |
-| 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| In-Progress |
+| 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| Completed |
 | 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 15, 2024| Canceled |
-| 10.0.39 PQU-9 | November 22, 2024 | December 4, 2024 to January 19, 2025| Not Started |
+| 10.0.39 PQU-9 | November 22, 2024 | December 2, 2024 to January 19, 2025| In-Progress |
 | 10.0.40 PQU-1 | July 10, 2024 | July 15, 2024 to August 18, 2024| Completed |
 | 10.0.40 PQU-2 | August 7, 2024 | August 12, 2024 to September 15, 2024| Completed |
 | 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| Completed |
-| 10.0.40 PQU-4 | October 2, 2024 | October 7, 2024 to November 10, 2024| In-Progress |
+| 10.0.40 PQU-4 | October 2, 2024 | October 7, 2024 to November 10, 2024| Completed |
 | 10.0.40 PQU-5 | October 30, 2024 | November 4, 2024 to December 15, 2024| Canceled |
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| Not Started |
 | 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| Not Started |
 | 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| Not Started |
-| 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Not Started |
+| 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Completed |
 | 10.0.41 PQU-2 | November 8, 2024 | November 11, 2024 to January 5, 2025| Canceled |
 | 10.0.41 PQU-3 | December 31, 2024 | January 6, 2025 to February 9, 2025| Not Started |
 | 10.0.41 PQU-4 | January 29, 2025 | February 3, 2025 to March 9, 2025| Not Started |
@@ -92,23 +92,6 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a>Proactive quality update upcoming 10.0.39 Release-7 train schedule
-
-**App version: 10.0.1860.196**
-
-**Platform version: 7.0.7198.208**
-
-**Unified Environment Provisioning Application Version: 10.0.39.11**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | September 30 to October 3, 2024 | NA |
-| Station 2 | October 7 to October 10, 2024 | October 19 to October 20, 2024 |
-| Station 3 | October 8 to October 11, 2024 | October 19 to October 20, 2024 |
-| Station 4 | October 14 to October 17, 2024 | October 26 to October 27, 2024 |
-| Station 5 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
-| Station 6 | October 22 to October 25, 2024 | November 2 to November 3, 2024 |
-
 ### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.39 Release-8 train schedule
 
 **App version: 10.0.1860.207**
@@ -126,26 +109,26 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | November 18 to November 21, 2024 | December 14 to December 15, 2024 |
 | Station 6 | November 19 to November 22, 2024 | December 14 to December 15, 2024 |
 
-> [!IMPORTANT]
-> 1. 10.0.39 Release-8 has been canceled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.39 Release-9 train schedule
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-4 train schedule
+**App version: 10.0.1860.223**
 
-**App version: 10.0.1935.139**
+**Platform version: 7.0.7198.216**
 
-**Platform version: 7.0.7279.152**
-
-**Unified Environment Provisioning Application Version: 10.0.40.6**
+**Unified Environment Provisioning Application Version: 10.0.39.13**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | October 7 to October 10, 2024 | NA |
-| Station 2 | October 14 to October 17, 2024 | October 26 to October 27, 2024 |
-| Station 3 | October 15 to October 18, 2024 | October 26 to October 27, 2024|
-| Station 4 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
-| Station 5 | October 28 to October 31, 2024 | November 9 to November 10, 2024 |
-| Station 6 | October 29 to November 1, 2024 | November 9 to November 10, 2024 |
+| Station 1 | December 2 to December 5, 2024 | NA |
+| Station 2 | December 9 to December 12, 2024 | January 11 to January 12, 2025 |
+| Station 3 | December 10 to December 13, 2024 | January 11 to January 12, 2025 |
+| Station 4 | December 16 to December 19, 2024 | January 11 to January 12, 2025 |
+| Station 5 | January 7 to January 10, 2025 | January 18 to January 19, 2025 |
+| Station 6 | January 8 to January 11, 2025 | January 18 to January 19, 2025 |
+
+> [!IMPORTANT]
+> 1. 10.0.39 Release-8 has been canceled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
 ### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.40 Release-5 train schedule
 
@@ -158,21 +141,6 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!IMPORTANT]
 > 1. 10.0.40 Release-5 has been canceled due to the forthcoming holiday season.
 > 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
-
-### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.41 Release-1 train schedule
-
-**App version: 10.0.2015.78**
-
-**Platform version: 7.0.7367.67**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | October 14 to October 17, 2024 | NA |
-| Station 2 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
-| Station 3 | October 22 to October 25, 2024 | November 2 to November 3, 2024|
-| Station 4 | October 28 to October 31, 2024 | November 9 to November 10, 2024 |
-| Station 5 | November 4 to November 7, 2024 | November 16 to November 17, 2024 |
-| Station 6 | November 5 to November 8, 2024 | November 16 to November 17, 2024 |
 
 ### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.41 Release-2 train schedule
 
