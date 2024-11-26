@@ -19,7 +19,9 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
-Users in legal entities in Poland can generate a SAF Bank statement file - JPK_WB in XML format. 
+SAF Bank statement file (JPK_WB) is a standardized electronic format that allows businesses to submit detailed bank account statements directly to tax authorities in a structured and consistent manner. The JPK_WB file must be submitted electronically through the Polish tax authority’s portal. The JPK_WB must be submitted upon request by the Polish tax authorities. 
+
+This topic provides an overview of how to set up Dynamics 365 Finance to generate and generate the JPK_WB file in legal entities with primary address in Poland.
 
 ## Setup
 
