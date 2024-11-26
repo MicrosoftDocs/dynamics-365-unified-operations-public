@@ -19,7 +19,11 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
-Users in legal entities in Poland can generate a SAF VAT sales and purchase register - JPK_VAT in XML format. 
+The SAF VAT File (JPK_VAT) is a standardized electronic format that allows businesses to submit detailed records of their VAT sales and purchase transactions directly to the Polish tax authorities. This file provides a structured overview of VAT settlements, enabling efficient tax audits and enhancing compliance with Polish VAT regulations.
+
+The JPK_VAT must be submitted electronically through the Polish tax authority’s portal and is required on a monthly basis, even if no transactions occurred during the reporting period.
+
+This topic provides an overview of how to set up Dynamics 365 Finance to configure and generate the JPK_VAT file for legal entities with a primary address in Poland.
 
 ## Setup
 
