@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about proactive qualit
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 04/05/2023
+ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -45,6 +45,10 @@ To identify the changes that are included in a PQU, follow these steps. This exa
 A critical issue is one or more events that cause multiple customers to have a degraded experience with one or more of our services. These issues can cause unplanned downtime, including unavailability, performance degradation, and interference with service management. If an issue with a PQU causes customer impact, we'll stop the rollout of that PQU until we can communicate and fix the issue. Typically, the next PQU will have the fix that's required to resume the rollout.
 
 If only one customer environment is affected, contact Microsoft support to open a support ticket. Based on the justification, we'll stop the rollout of the PQU to other customer environments in that project until the issue is mitigated.
+
+### How do I see notifications about a PQU?
+
+Notifications for PQUs are avaiable in the message center in Microsoft 365 admin center. For more information, see [Track new and changed features in the Microsoft 365 Message center](/admin/manage/message-center).
 
 ### Can customers still manually apply hotfix updates from Lifecycle Services?
 
