@@ -111,9 +111,9 @@ The following table shows the high-level train schedule. It includes a descripti
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.39 Release-9 train schedule
 
-**App version: 10.0.1860.223**
+**App version: 10.0.1860.224**
 
-**Platform version: 7.0.7198.216**
+**Platform version: 7.0.7198.217**
 
 **Unified Environment Provisioning Application Version: 10.0.39.13**
 
