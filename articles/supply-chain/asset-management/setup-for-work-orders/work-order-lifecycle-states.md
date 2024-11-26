@@ -82,7 +82,7 @@ The following table describes the options in the **Work order** and **Schedule**
     - If the standard project setup doesn't include all the stages that you require for your Asset Management setup, you can set up user-defined project stages on the **Project stage** tab of the **Project management and accounting parameters** page. The following illustration shows the **Project stage** tab on the **Project management and accounting parameters** page.
 
     ![Set up project stages for various project types page.](media/10-setup-for-work-orders.png)
-
+17. On the **Security roles** FastTab, select the security roles that are allowed to change to this lifecycle state. If no roles are selected, then all users that have access to work order lifecycle states are able to change to this lifecycle state.
 > [!NOTE]
 > If the lifecycle state that you update a work order to is inactive, journals that are related to the work order but that haven't yet been posted are automatically deleted. This behavior helps guarantee automatic cleanup of unused data. (A lifecycle state is inactive if the **Active** option for it is set to **No** on the **General** FastTab of the **Work order lifecycle state** page.)
 >
