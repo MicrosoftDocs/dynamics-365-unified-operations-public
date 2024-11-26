@@ -2,7 +2,7 @@
 title: Update code and environments for Commerce projects
 description: This article describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 09/19/2024
+ms.date: 11/26/2024
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -80,7 +80,7 @@ Just as the branching strategy is dictated by project, team, or other constraint
 
 ### Steps 1–3: Obtain and apply updates
 
-For full details about steps 1 through 3 (taking updates), see the [hotfix and deployment cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/). If the branches are set up in the same manner that is shown in the preceding illustration, you should do this work in the Dev branch.
+If the branches are set up in the same manner that is shown in the preceding illustration, you should do this work in the Dev branch.
 
 ### Steps 3.1–3.2: Keep development environments up to date
 
