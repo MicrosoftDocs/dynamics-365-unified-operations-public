@@ -2275,8 +2275,8 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Chat with finance and operations data on Microsoft 365 Copilot
-        href: m365-copilot/chat-with-fno-data-on-m365copilot.md
+      - name: Chat with finance and operations data
+        href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
@@ -2311,8 +2311,6 @@ items:
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
-      - name: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
-        href: ../fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
       - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
