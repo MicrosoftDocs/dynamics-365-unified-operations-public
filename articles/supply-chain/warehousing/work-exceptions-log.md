@@ -18,7 +18,7 @@ Work exceptions let you register work related errors that occur in your warehous
 
 To view the work exceptions log, navigate to **Warehouse management \> Work \> Work exceptions log**), where it can be further filtered based **Status** or other characteristics inherited from the Work.
 
-![Outbound work monitoring form](media/work-exceptions-log-form.png)
+![Work exceptions log form](media/work-exceptions-log-form.png)
 
 Work exceptions can also be visualized from other forms, such as **Outbound work monitoring** (found in **Warehouse management \> Workspaces \> Outbound work monitoring**), where **Locations** with open exceptions can be further explored.
 
@@ -46,7 +46,7 @@ The short pick event generates a work exception in **Location**, which can be vi
 
 Different behaviors based on type of work exception can be configured in **Warehouse management \> Setup \> Work \> Work exceptions**, for example, to adjust inventory at the **License Plate** or to allow automatic item reallocation.
 
-![Outbound work monitoring form](media/work-exceptions-form.png)
+![Work exceptions form](media/work-exceptions-form.png)
 
 ## Clean up work exceptions log
 
