@@ -3,12 +3,11 @@ title: Business events overview
 description: Learn about business events, which allow external systems to receive notifications from finance and operations apps.
 author: jaredha
 ms.author: kamanick
-ms.date: 06/19/2024
+ms.date: 11/26/2024
 ms.topic: overview
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 24
 # ms.search.form:  [Operations AOT form name to tie this article to]
@@ -141,7 +140,7 @@ The integration requirements and integration solution design for implementations
 - Power Automate can directly subscribe to business events.
 
 ## Idempotency
-Business events enable idempotent behavior on the consuming side by having a control number in the payload. The consuming application can use the unique control number to detect duplicate delivery. The control number can't be misread as the sequence number because the control number can't be sequential. There can be gaps in the numbering space. The order in which events emitted in Finance and Operations isn't guaranteed to preserve the order in which they're delivered to the endpoints.
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The consuming application can use the unique control number to detect duplicate delivery. The control number can't be misread as the sequence number because the control number can't be sequential. There can be gaps in the numbering space. The order in which events emitted in finance and operations apps isn't guaranteed to preserve the order in which they're delivered to the endpoints.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid support subscribing to topics by
@@ -227,7 +226,7 @@ To ensure backward compatibility, the following behavior must be understood.
 
 ### Limitations
 
-The Business events that occur in Finance and Operations are processed asynchronously across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to preserve the order in which they're delivered to the endpoints.
+The Business events that occur in finance and operations apps are processed asynchronously across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in finance and operations apps isn't guaranteed to preserve the order in which they're delivered to the endpoints.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
