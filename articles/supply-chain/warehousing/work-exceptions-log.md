@@ -41,7 +41,7 @@ You can configure the way the system should handle each relevant type of work ex
 To configure these system behaviors, follow these steps.
 
 1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work exceptions**.
-1. Use the buttons in the Action Pane to add, edit, and delete rows as needed. To learn how to use the settings in each column, hover your mouse pointer over the column header to see a tooltip.
+1. Use the buttons on the Action Pane to add, edit, and delete rows as needed. To learn how to use the settings in each column, hover your mouse pointer over the column header to see a tooltip.
 
     :::image type="content" source="media/work-exceptions-form.png" alt-text="The Work exceptions page." lightbox="media/work-exceptions-form.png":::
 
