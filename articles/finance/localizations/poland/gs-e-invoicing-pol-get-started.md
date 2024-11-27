@@ -128,8 +128,8 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
     ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Poland.](e-inv-pol-feature-parameters.jpg)
 
 1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
-1. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the [name of the data channel](#ImpChn). Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
-1. <a id="OutputFile"></a>On the **Variables** section, make a note of the **OutputFile** name, because you will use it in later configuration steps.
+1. On the **Applicability rules** tab, in the **Set up applicability rule** section, in the **Value** field, enter the [name of the data channel](#ImpChn) that you previously defined.
+1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
 1. Select **Save**, and close the page.
 1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
@@ -254,8 +254,7 @@ You can inquire about the results of a submission by going to **Organization adm
 1. Select the **Public key** parameter, and then, in the **Value** field, select the name of the [public key](#PK) that you previously created.
 1. Select the **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
 1. Select the **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
-1. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSeF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
-1. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
+
 1. 
 
 ### Configure additional parameters in Finance
