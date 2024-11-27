@@ -30,7 +30,7 @@ The JPK_MAG must be submitted electronically through the Polish tax authority’
 Before you can generate a SAF Inventory file, you must complete the following setup.
 
 1. [Import Electronic reporting configurations](#er-import).
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+1. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
