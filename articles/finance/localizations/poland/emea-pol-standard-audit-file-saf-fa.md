@@ -1,6 +1,6 @@
 ---
 title: SAF VAT invoices file - JPK_FA
-description: Thisnarticle explains how users in legal entities in Poland can generate a SAF VAT invoices file - JPK_FA in XML format.
+description: This article explains how users in legal entities in Poland can generate a SAF VAT invoices file - JPK_FA in XML format.
 author: liza-golub
 ms.author: egolub
 ms.topic: conceptual
@@ -30,10 +30,10 @@ This topic provides an overview of how to set up Dynamics 365 Finance to configu
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
 1. [Import Electronic reporting configurations](#er-import).
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
-3. [Set up sales tax authorities](#tax-authorities).
-4. [Set up sales tax reporting codes](#tax-codes).
-5. [Configure Application-specific parameters for the format of the report](#asp-setup).
+1. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+1. [Set up sales tax authorities](#tax-authorities).
+1. [Set up sales tax reporting codes](#tax-codes).
+1. [Configure Application-specific parameters for the format of the report](#asp-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
@@ -56,7 +56,7 @@ The version description usually includes the number of the Microsoft Knowledge B
 
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
 
-To set up Electronic reporting format in General ledger parameters, follow these steps.
+To set up an electronic reporting format in General ledger parameters, follow these steps.
 
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
@@ -65,9 +65,10 @@ To set up Electronic reporting format in General ledger parameters, follow these
 
 For general information about how to set up a sales tax authority, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md). 
 To generate a JPK_FA in XML file in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. 
-
-On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), 
-set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
+To set up the report layout for sales tax authorities, follow these steps.
+1. Go to the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**).
+1. Set the **Report layout** field to **Default**. 
+1. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
 
 ### <a id="tax-codes"></a> Set up sales tax reporting codes
 
@@ -543,24 +544,24 @@ In this case, the same reporting codes that are used for **K_44** and/or **K_46*
 The system automatically interprets transactions for reporting in **K_49** (Overdue invoice) and **K_50** (Paid overdue invoice). 
 
 Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this article. 
-If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
+If you must adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
 
-1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
-2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
-3. Select the created format, and on the **Main menu**, select **Designer**.
-4. Update the format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (for the VAT register, it is an XML scheme). The right side is a data model (data). 
-5. On the right side, select **Mapping** to see the data model. The data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
-6. Data under the **Faktura** tag is mapped mostly to the **Model &gt; SourceDocuments &gt; $Invoices** node. Scroll down the tree to find and select the node. 
-7. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Formula Designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
-8. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
-9. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
+1. Select the format in the configuration's tree and then, in the **Main menu**, then select **Create configuration**. 
+1. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
+1. Select the format you created, and on the **Main menu**, select **Designer**.
+1. Update the format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (for the VAT register, it is an XML scheme). The right side is a data model (data). 
+1. On the right side, select **Mapping** to see the data model. The data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
+1. Data under the **Faktura** tag is mapped mostly to the **Model \>  SourceDocuments \>  $Invoices** node. Scroll down the tree to find and select the node. 
+1. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Formula Designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constant. 
+1. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
+1. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on the **Versions** FastTab on **Configurations**.
 
 ### <a id="asp-setup"></a> Configure Application-specific parameters for the format of the report
 
 To correctly report some of the important tags in the report, define the application-specific parameters. 
 
-1. Open **Configurations** \> **Application specific parameters**, and then, on the Action Pane, select **Setup**.
-2. Select the version of the format that you're going to use, and then set up the values for each lookup in the list on the right.
+1. Go to **Configurations** \> **Application specific parameters**, and then, on the Action Pane, select **Setup**.
+1. Select the version of the format that you're going to use, and then set up the values for each lookup in the list on the right.
 
     | Name            | Short description (English) | Short description (Polish) | Description (English) | Description (Polish) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
@@ -592,7 +593,7 @@ When you've completed the setup for the **TaxFree_LOOKUP** lookup field and are 
 
 Conditions for **TaxExemptReason_LOOKUP** are sales tax exempt codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**) and used in sales tax groups when tax transactions are posted. If no lines on an invoice have sales tax exemptions, the **P_19** field will be reported with a value of **False**, and the **P_19A**, **P_19B**, and **P_19C** tags will be omitted.
 
-- **P_19A** indicates the provision of the act was issued on the basis of which the taxpayer applies tax exemption.
+- **P_19A** indicates the provision of the act was issued based on which the taxpayer applies tax exemption.
 - **P_19B** indicates the provision of Directive 2006/112/EC, which exempts the supply of goods or such services from such tax.
 - **P_19C** indicates that the supply of goods or services benefits from the exemption on another legal basis.
 
@@ -616,7 +617,7 @@ The following values are available for setup of **ItemType_LOOKUP**.
 
 When you finish configuring the values of the lookup fields, set the **State** field to **Completed**, save your changes, and then close the page. 
 
-If any lookup field doesn't have at least one **Not blank** value, an error will occur when the report is run. The error message will state that the application-specific parameters are missing.
+If any lookup field doesn't have at least one **Not blank** value, an error will occur when the report is run. The error message states that the application-specific parameters are missing.
 
 #### <a id="special-procedures-lookup"></a>SpecialProcedures_LOOKUP
 
@@ -635,7 +636,7 @@ If any lookup field doesn't have at least one **Not blank** value, an error will
 
 ## Generate a SAF VAT invoices report - JPK_FA in XML
 
-To generate a SAF VAT invoices file, go to **General ledger \> Inquiries and reports \> Standard Audit File for Tax (SAF-T) \> SAF VAT invoices**, and set the following parameters.
+To generate a SAF VAT invoices file, go to **General ledger \> Inquiries and reports \> Standard Audit File for Tax (SAF-T) \> SAF VAT invoices**, and set the following parameters.
 
 | Parameter                | Description                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
@@ -643,26 +644,27 @@ To generate a SAF VAT invoices file, go to **General ledger \> Inquiries and re
 | To date                  | Specify the last date to export reporting data for.                                    |
 | Authority identification | In the list, select the identifier of the tax authority to use in the export file.     |
 | Invoice ID From/To       | Specify a range of invoice IDs to limit the invoices that are selected for data export. |
-| Currency code            | Specify the code of a currency that you want to generate the report for. Only invoices in the specified currency will be included on the report. To generate a report for all currencies in one file, leave the field blank. |
+| Currency code            | Specify the code of a currency that you want to generate the report for. Only invoices in the specified currency is included on the report. To generate a report for all currencies in one file, leave the field blank. |
 
 You can specify additional selection parameters by using the **Filter** functionality on the **Records to include** tab.
 
 ## Using batch jobs for JPK_FA
 
-Generating JPK_FA report for a long period such as month or a quarter can include a huge data and take a long time. 
-For such cases, it is recommended to use batch jobs. 
+Generating JPK_FA report for a long period such as month or a quarter can include a large amount of data and take a long time; therefore, it’s recommended to use batch jobs. 
 Dialog page for every SAF report has a **Run in the background** tab. 
 Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
-To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
+To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). 
+To review batch jobs or find a generated file, follow these steps.
+1.  Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job.
+1. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. 
+1. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
 
-When an electronic report is generated in batch mode, you can find related batch information and the generated output file as 
-an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
-For more information about how to configure a destination for each ER format configuration and its output component, 
-see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
+For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 ## Implementation details
 
-In version 3 of the **JPK_FA** report, invoices that have different document currencies can be reported in the same file. For this purpose, the **Currency** parameter in the dialog box for the **SAF VAT invoices (Poland)** report is optional. If you specify a currency, the report will include only invoices that have that currency. If you don't specify a currency, the report will be generated for all invoices.
+In version 3 of the **JPK_FA** report, invoices that have different document currencies can be reported in the same file. For this purpose, the **Currency** parameter in the dialog box for the **SAF VAT invoices (Poland)** report is optional. If you specify a currency, the report only includes invoices that have that currency. If you don't specify a currency, the report will be generated for all invoices.
 
 ### <P_14x> tags
 
