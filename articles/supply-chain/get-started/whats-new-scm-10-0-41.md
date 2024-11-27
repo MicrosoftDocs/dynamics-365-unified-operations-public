@@ -74,8 +74,6 @@ The following table lists features that were introduced as public preview featur
 | Master planning | *Support for splitting and grouping planned orders for Planning Optimization* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Sales and marketing | *Product bundles in journals* | [Enable and set up product bundles](../sales-marketing/product-bundles-setup.md)<br><br>[Sell and allocate product bundles](../sales-marketing/product-bundles-use.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
 
-
-
 ## Features turned on by default in this release
 
 The following table lists the features that became turned on by default in version 10.0.41. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
@@ -101,11 +99,11 @@ The following table lists the features that became turned on by default in versi
 | Sales and marketing | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | [Add efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md)<br><br>[Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.33 (May 2023)](whats-new-scm-10-0-33.md) |
 | Sales and marketing | *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* | [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/prospects-in-prospect-to-cash-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
 | Sales and marketing | *Process Dynamics 365 Sales integration related events* | [Add efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md)<br><br>[Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.33 (May 2023)](whats-new-scm-10-0-33.md) |
-| Transportation management | *Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.* |  |
-| Transportation management | *Post landed cost with the specified posting type and account value on cost type code when credit type is 'Ledger Account'.* |  |
-| Transportation management | *Specify Goods In Transit Order when receiving via mobile device.* |  |
-| Transportation management | *Source document and accounting distribution support for Landed Cost* |  |
-| Transportation management | *Match vendor invoice journal with voyage cost in different currency.* |  |
+| Transportation management | *Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.* | [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)](whats-new-scm-10-0-35.md) |
+| Transportation management | *Post landed cost with the specified posting type and account value on cost type code when credit type is 'Ledger Account'.* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.33 (May 2023)](whats-new-scm-10-0-33.md) |
+| Transportation management | *Specify Goods In Transit Order when receiving via mobile device.* | [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)](whats-new-scm-10-0-35.md) |
+| Transportation management | *Source document and accounting distribution support for Landed Cost* | [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
+| Transportation management | *Match vendor invoice journal with voyage cost in different currency.* | [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)](whats-new-scm-10-0-36.md) |
 
 ## Features becoming mandatory in this release
 
@@ -129,10 +127,11 @@ The following table lists the features that became mandatory in version 10.0.41.
 | Sales and marketing | *Unit of measure for line level charges* | [Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Transportation management | *Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* | [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md) |
 | Transportation management | *Performance improvements for post receipt function in Landed Cost* | [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md) |
+| Transportation management | *Landed Cost* | [Landed cost module](../landed-cost/landed-cost-overview.md)<br><br>[Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md) |
 
 ## Features removed from Feature management
 
-The following table lists features that were removed from Feature management in version 10.0.41. These features are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of the product.
+The following table lists features that were removed from Feature management in version 10.0.41. These features are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of Supply Chain Management.
 
 | Module | Feature name | More information |
 |---|---|---|
