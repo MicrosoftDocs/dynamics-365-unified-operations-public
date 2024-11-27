@@ -63,15 +63,15 @@ Work exceptions can also be shown on other pages, such as the **Outbound work mo
 
 ## Clean up the work exceptions log
 
-Even after they're resolved, the system keeps all log entries until they are explicitly removed. Cleaning out old work exceptions helps make it easier for users to search for locations with open work exceptions and improves the performance of pages that show work exceptions.
+Even after they're resolved, the system keeps all log entries until they're explicitly removed. Cleaning out old work exceptions helps make it easier for users to search for locations with open work exceptions and improves the performance of pages that show work exceptions.
 
-The system provides a clean-up batch job to help you delete multiple entries in the work exceptions log once they're resolved or no longer necessary. When you set up the job, you'll set the criteria for selecting which entries should be deleted (for example, according to the status and/or age of each entry). When the job runs, it removes all work exceptions that match the criteria.
+The system provides a clean-up batch job to help you delete multiple entries in the work exceptions log once they're resolved or no longer necessary. When you set up the job, you set the criteria for selecting which entries should be deleted (for example, according to the status and/or age of each entry). When the job runs, it removes all work exceptions that match the criteria.
 
 To clean up the work exceptions log, follow these steps.
 
 1. Go to **Warehouse management** \> **Periodic tasks** \> **Clean up** \> **Clean up work exceptions logs**.
 1. In the dialog, expand the **Parameters** FastTab and make the following settings:
-    - **The number of days to keep** – Specify the age (in days) of the oldest entries to keep. Entries older than this will be deleted.
+    - **The number of days to keep** – Specify the age (in days) of the oldest entries to keep. Entries older than this are removed.
     - **Status** – Select the status of the exception logs to delete (*Open* or *Closed*).
     - **Maximum cleanup records count** – Specify the maximum number of records to delete. Setting a limit here can improve system performance by preventing too many records from being deleted in a single operation. (Default is 100,000.)
 1. On the **Run in the background** FastTab, set up batch, batch group, scheduling, and alert options as you require, just as you might do for other batch jobs in Supply Chain Management.
