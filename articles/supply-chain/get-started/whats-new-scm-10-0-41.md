@@ -87,7 +87,7 @@ The following table lists the features that became turned on by default in versi
 | Production control | *Add filter to hide completed jobs on the Kanban board* | &nbsp; |
 | Production control | *Leverage production order defaults in manufacturing execution system integration* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
 | Production control | *Change BOM item* | [React to last-minute changes in production](../production-control/react-to-last-minute-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
-| Production control | *Default order settings for Change production order BOM item* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September 2024)](whats-new-scm-10-0-41.md) |
+| Production control | *Default order settings for Change production order BOM item* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
 | Production control | *Production order route change* | [React to last-minute changes in production](../production-control/react-to-last-minute-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Production control | *Standard cost financial posting of a production/batch order with a scrap account method* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Sales and marketing | *Price and discount search for derived line creation* | &nbsp; |
