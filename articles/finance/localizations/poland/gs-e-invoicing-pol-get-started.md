@@ -162,7 +162,7 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 1. Repeat steps 5 and 6 for the **Project invoice** and **Advance invoice** table names.
 1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
 1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
-1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that you [previously created](#OutputFile).
+1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
     :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
@@ -245,31 +245,7 @@ To enter additional invoice data, follow these steps.
 > [!NOTE]
 > You can enter additional data for project invoices in a similar way at **Project management and accounting** \> **Project invoices** \> **Project invoice**.
 
-## Issue electronic invoices
-
-After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate and submit electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
-
-You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information about the submission log, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
-
-## Receive incoming electronic invoices
-
-<a id="Import"></a>Complete the following configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that is used for outgoing invoice submission.
-
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
-1. On the **Setups** tab, in the grid, select **Import vendor invoice derived**. Then select **Edit**.
-1. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the [name of the data channel](#ImpChn). Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
-1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [client ID](#ClID) that you previously created.
-1. Select the **Public key** parameter, and then, in the **Value** field, select the name of the [public key](#PK) that you previously created.
-1. Select the **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
-1. Select the **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
-
-1. 
-
-### Configure additional parameters in Finance
-
-
-
-### Configure master data in Finance
+### Configure the data for incoming electronic invoices matching
 
 You must configure the following types of master data to provide a match for incoming electronic invoices:
 
@@ -305,7 +281,14 @@ To configure units, follow these steps.
     > [!NOTE]
     > External unit codes make sense only if incoming electronic invoices contain explicitly defined units. If incoming electronic invoices don't contain explicitly defined units, you can skip step 4.
 
-### Receive electronic invoices
+
+## Issue outgoing electronic invoices
+
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate and submit electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information about the submission log, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+
+## Receive incoming electronic invoices
 
 To receive electronic invoices, follow these steps.
 
