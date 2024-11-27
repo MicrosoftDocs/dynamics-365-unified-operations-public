@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 10.0.39
 
 This article provides information that will help you get started with Electronic invoicing for Poland. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. 
 
-After you configure electronic invoicing, you can generate and submit the XML files of electronic invoices according to the current regulatory requirements in Poland.
+After you configure electronic invoicing, you can submit and receive the XML files of electronic invoices according to the regulatory requirements in Poland.
 
 ![Diagram of the electronic invoicing workflow in Poland.](e-inv-pol-workflow.jpg)
 
@@ -97,10 +97,10 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - **Vendor invoice import (PL)**
     - **Vendor invoice Mapping to destination (PL)**
     
-## Configure the import channel name
+## Configure the import channel
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. <a id="Context">Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 1. Open the **DataChannel** definition for editing in the designer.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
@@ -244,6 +244,8 @@ To enter additional invoice data, follow these steps.
 
 > [!NOTE]
 > You can enter additional data for project invoices in a similar way at **Project management and accounting** \> **Project invoices** \> **Project invoice**.
+>
+> Additional data are applicable to invoice header level only.
 
 ### Configure the data for incoming electronic invoices matching
 
