@@ -19,11 +19,11 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
+This article provides an overview of how to set up Dynamics 365 Finance to configure and generate the JPK_FA file for legal entities with a primary address in Poland.
+
 The SAF Invoice File (JPK_FA) is a standardized electronic format that enables businesses to submit detailed records of issued sales invoices directly to the Polish tax authorities. This file includes comprehensive information about invoice data, such as buyer and seller details, transaction dates, amounts, and VAT rates, ensuring transparency and facilitating tax audits.
 
 The JPK_FA must be submitted electronically through the Polish tax authority’s portal and is required upon request by the tax authorities.
-
-This topic provides an overview of how to set up Dynamics 365 Finance to configure and generate the JPK_FA file for legal entities with a primary address in Poland.
 
 ## Setup
 
