@@ -100,7 +100,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 ## Configure the import channel name
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+1. <a id="Context">Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 1. Open the **DataChannel** definition for editing in the designer.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
@@ -139,13 +139,13 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 ## Configure electronic document parameters
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice**, and **Advance invoice** table names.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Project invoice**, and **Advance invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page."::: 
 
 > [!NOTE]
-> If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
+> If you have created the [derived analogues](#Context) of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
 
 1. For the **Customer Invoice journal** table name, select **Response types**.
 1. Select **New** to create a response type, and enter the following values:
@@ -160,7 +160,14 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
     > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
 
 1. Repeat steps 5 and 6 for the **Project invoice** and **Advance invoice** table names.
-1. Save your changes, and close the page.
+1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
+1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
+1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that you [previously created](#OutputFile).
+1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+
+    :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
+
+1. Select **Save**, and close the page.
 
 ## Configure Finance business data
 
@@ -261,15 +268,6 @@ You can inquire about the results of a submission by going to **Organization adm
 ### Configure additional parameters in Finance
 
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the import channel name that you previously created.
-1. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the configuration that you previously created.
-1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that you [previously created](#OutputFile).
-1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
-
-    :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
-
-1. Select **Save**, and close the page.
 
 ### Configure master data in Finance
 
