@@ -72,6 +72,25 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     > [!NOTE]
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
+
+## Import the electronic invoicing feature
+
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Polish electronic invoice (PL)** Globalization feature.
+
+    - **Invoice model**
+    - **Invoice model mapping**
+    - **Advance invoice model mapping** 
+    - **Sales e-invoice (PL)**
+    - **Project e-invoice (PL)**
+    - **Advance e-invoice (PL)**
+    - **Customer invoice context model**
+
+> [!NOTE]
+> If due to some reason the mentioned Electronic reporting configurations were not imported then import tem manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+
+3. 
+
 ## Configure the electronic invoicing feature
 
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
