@@ -85,6 +85,9 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - **Project e-invoice (PL)**
     - **Advance e-invoice (PL)**
     - **Customer invoice context model**
+    - **Response message model**
+    - **Response message model mapping to destination (PL)**
+    - **KSeF response data import format (PL)**
 
 > [!NOTE]
 > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
