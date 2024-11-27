@@ -1,12 +1,12 @@
 ---
 title: SAF Inventory file - JPK_MAG
-description: Users in legal entities in Poland can generate a SAF Inventory file - JPK_MAG in XML format.
+description: This article explains how users in legal entities in Poland can generate a SAF Inventory file - JPK_MAG in XML format.
 author: liza-golub
 ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 11/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -23,18 +23,18 @@ The SAF Warehouse Stock File (JPK_MAG) is a standardized electronic format that 
 
 The JPK_MAG must be submitted electronically through the Polish tax authority’s portal and is required upon request by the tax authorities.
 
-This topic provides an overview of how to set up Dynamics 365 Finance to configure and generate the JPK_MAG file for legal entities with a primary address in Poland.
+This article provides an overview of how to set up Microsoft Dynamics 365 Finance to configure and generate the JPK_MAG file for legal entities with a primary address in Poland.
 
 ## Setup
 
 Before you can generate a SAF Inventory file, you must complete the following setup.
 
-1. [Import Electronic reporting configurations](#er-import)
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
+1. [Import Electronic reporting configurations](#er-import).
+2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
-In Finance, import the following Electronic reporting (ER) configurations from Dataverse.
+In Finance, import the following Electronic reporting (ER) configurations from Microsoft Dataverse.
 
 For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -52,13 +52,13 @@ The version description usually includes the number of the Microsoft Knowledge B
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
 
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
-
+To set up Electronic reporting format in General ledger parameters, follow these steps.
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Inventory** field, select the ER format, **Inventory (PL)**. 
+1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Inventory** field, select the ER format, **Inventory (PL)**. 
 
 ## <a id="jpk-mag"></a>Generate a SAF Inventory file (JPK_MAG)
 
-To generate a SAF Inventory file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
+To generate a SAF Inventory file, go to **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
 
 | Parameter                | Description                                                                        |
 |--------------------------|------------------------------------------------------------------------------------|
@@ -69,13 +69,14 @@ To generate a SAF Inventory file, click **General ledger > Inquiries and reports
 
 ## Using batch jobs for JPK_MAG
 
-Generating JPK_MAG report for a long period such as month or a quarter can include a huge data and take a long time. 
-For such cases, it is recommended to use batch jobs. 
+Generating JPK_MAG report for a long period such as month or a quarter can include a large amount of data and take a long time; therefore, it is recommended to use batch jobs. 
 Dialog page for every SAF report has a **Run in the background** tab. 
 Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
-To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
+To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). 
+To review batch jobs or find a generated file, follow these steps.
+1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. 
+1. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. 
+1. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
 
-When an electronic report is generated in batch mode, you can find related batch information and the generated output file as 
-an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
-For more information about how to configure a destination for each ER format configuration and its output component, 
-see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
+For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
