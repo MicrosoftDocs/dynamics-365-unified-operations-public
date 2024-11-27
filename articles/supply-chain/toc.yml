@@ -4079,6 +4079,8 @@
           href: warehousing/gs1-barcodes.md
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
+        - name: Work exceptions log
+          href: warehousing/work-exceptions-log.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes

@@ -85,7 +85,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Warehouse management \> Periodic tasks \> Clean up \> Wave labels cleanup | This cleanup routine is used to clean up the wave label records from the WHSWaveLabel table. |
 | Warehouse management \> Periodic tasks \> Clean up \> Work line history log cleanup | This cleanup routine is used to delete the temporary work history records from the WHSTmpWorkLineHistory table. In the dialog box, you specify the number of days to keep the history. |
 | Warehouse management \> Periodic tasks \> Clean up \> Clean up License plate registration history | This cleanup routine is used to delete the license plate receiving history records from the WHSLicensePlateReceivingHistory. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Clean up work exceptions log | This cleanup routine is used to delete work exceptions log records from WHSWorkExceptionLog. In the dialog box, you specify the number of days to keep the history, the status of the entry to be deleted (that is, Open or Closed) and the maximum number of records which this operation can delete. |
+| Warehouse management \> Periodic tasks \> Clean up \> Clean up work exceptions log | This cleanup routine is used to delete work exceptions log records from the WHSWorkExceptionLog table. In the dialog box, you specify the number of days to keep in the history, the status of the entries to be deleted (that is, *Open* or *Closed*) and the maximum number of records that this operation can delete. |
 
 ## Inventory management
 

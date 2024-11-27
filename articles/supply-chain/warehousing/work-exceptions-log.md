@@ -1,69 +1,80 @@
 ---
-title: Work exceptions log
-description: Learn about work exceptions log. This functionality lets you register issues from your operational workflows to be tracked and addressed.
-author: sservulo
-ms.author: samuoliveira
-ms.topic: article
-ms.date: 11/15/2024
-ms.custom:
-ms.reviewer: --
-ms.search.form: WHSWorkExceptionLog
+title: View and manage the work exceptions log
+description: Learn about the work exceptions log. The system registers work-related errors in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows.
+author: Mirzaab
+ms.author: mirzaab
+ms.reviewer: kamaybac
+ms.search.form: WHSWorkExceptionLog, WHSWorkException, WHSLocationWithWorkException
+ms.topic: how-to
+ms.date: 1/27/2025
+ms.custom: 
+  - bap-template
 ---
 
-# Work exceptions log
+# View and manage the work exceptions log
 
 [!include [banner](../includes/banner.md)]
 
-Work exceptions let you register work related errors that occur in your warehouse operations, for example: discrepancies in inventory, missing goods on given locations, etc. Registering these exceptions in the work exceptions log can be used to help track and diagnose issues related to warehouse work workflows such as pick or pack procedures.
+Work exceptions are work-related errors that can occur during warehouse operations (such as discrepancies in inventory or missing goods at a given location). The system registers these exceptions in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows such as pick or pack procedures.
 
-To view the work exceptions log, navigate to **Warehouse management \> Work \> Work exceptions log**), where it can be further filtered based **Status** or other characteristics inherited from the Work.
+## Example of how a worker can create a work exception
 
-![Work exceptions log form](media/work-exceptions-log-form.png)
+The Warehouse Management mobile app automatically creates exceptions during some types some workflows in response to certain events. For example, one possible way that a worker can trigger a work exception is by completing the following procedure to perform a short pick (assuming the required work record already exists):
 
-Work exceptions can also be visualized from other forms, such as **Outbound work monitoring** (found in **Warehouse management \> Workspaces \> Outbound work monitoring**), where **Locations** with open exceptions can be further explored.
+1. Open the Warehouse Management mobile app.
+1. Go to **Outbound** \> **Sales Picking**.
+1. Enter the **Work ID** and select **OK**.
+1. Enter the **Location** and select **OK**.
+1. Select **Short Pick**.
+1. Specify the following values:
+    - The target license plate
+    - The quantity picked
+    - The reason for the short pick (for example, the item wasn't available at the expected location)
+1. Select **OK** and complete the work.
 
-![Outbound work monitoring form](media/outbound-work-monitoring-form.png)
+The short pick event generates a work exception for the specified **Location**.
 
-![Locations with open work exceptions form](media/locations-with-open-exceptions-form.png)
+## Configure behaviors for handling each type of work exception
 
-Take note that even once resolved, logs are kept in the system until explicitly removed either manually or using a clean-up job.
+You can configure the way the system should handle each relevant type of work exception. For example, you could set the system to adjust inventory at an affected license plate or allow automatic item reallocation.
 
-## Example: Creating a work exception based on short pick
+To configure these system behaviors, follow these steps.
 
-Work exceptions are automatically created in some workflows based on given events. One of the possible ways to create a work exception is by performing a short pick. Assuming an already existing **Work**, in the mobile app:
+1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work exceptions**.
+1. Use the buttons in the Action Pane to add, edit, and delete rows as needed. To learn how to use the settings in each column, hover your mouse pointer over the column header to see a tooltip.
 
-- Navigate to: **Outbound \> Sales Picking**;
-- Input the **Work Id** and select Ok;
-- Input the **Location** and select Ok;
-- Select **Short Pick**;
-- Input:
-    - The target **License Plate**;
-    - The quantity picked;
-    - The reason for the short pick (for example: item wasn't in the expected location);
-- Select Ok and complete the **Work**.
+    :::image type="content" source="media/work-exceptions-form.png" alt-text="The Work exceptions page." lightbox="media/work-exceptions-form.png":::
 
-The short pick event generates a work exception in **Location**, which can be visualized in one of the above mentioned forms.
+## View the work exceptions log
 
-Different behaviors based on type of work exception can be configured in **Warehouse management \> Setup \> Work \> Work exceptions**, for example, to adjust inventory at the **License Plate** or to allow automatic item reallocation.
+To view the work exceptions log, go to **Warehouse management** \> **Work** \> **Work exceptions log**. You can sort and filter the list using the column headers or by entering a value in the **Filter** field and selecting where to search for it (for example by **Status**).
 
-![Work exceptions form](media/work-exceptions-form.png)
+:::image type="content" source="media/work-exceptions-log-form.png" alt-text="The Work exceptions log page." lightbox="media/work-exceptions-log-form.png":::
 
-## Clean up work exceptions log
+Work exceptions can also be shown on other pages, such as the **Outbound work monitoring** workspace (available at **Warehouse management** \> **Workspaces** \> **Outbound work monitoring**), which provides a tile that shows the number of **Locations with open work exceptions**. Select that tile to view and explore full details about the exceptions at each location.
 
-To simplify deleting multiple entries in the work exceptions log, once they're resolved or no longer necessary, a batch clean-up job is available. Once the criteria of entries to be deleted in the work exceptions log are selected, for example: **Status** or **Age** of the entry, a batch job takes care of removing work exceptions that match the criteria.
+:::image type="content" source="media/outbound-work-monitoring-form.png" alt-text="The Outbound work monitoring page." lightbox="media/outbound-work-monitoring-form.png":::
 
-This functionality is useful when old work exceptions need to be removed. For example, when searching for locations with open work exceptions or to improve the performance of forms that use work exceptions.
+:::image type="content" source="media/locations-with-open-exceptions-form.png" alt-text="The Locations with open work exceptions page." lightbox="media/locations-with-open-exceptions-form.png":::
 
-## How to set up
+## Clean up the work exceptions log
 
-### Specify cleanup criteria for work exception logs
+The system provides a clean-up batch job to help you delete multiple entries in the work exceptions log once they're resolved or no longer necessary. When you set up the job, you'll set the criteria for selecting which entries should be deleted (for example, according to the status and/or age of each entry). When the job runs, it removes all work exceptions that match the criteria.
 
-To access the cleanup dialog, navigate to **Warehouse management \> Periodic tasks \> Clean up \> Clean up work exceptions log**).
+Cleaning out old work exceptions helps make it easier for users to search for locations with open work exceptions and improves the performance of pages that show work exceptions.
 
-Select which exception logs should be removed, **Open**, or **Closed** (default: Closed), the age (in days) of entries that should be kept (default: 30 days or younger). A maximum number of records to be removed can be specified as well (default: 100000). This parameter can improve system performance by preventing removal of a large number of records in a single operation.
+> [!NOTE]
+> Even after they are resolved, logs are kept in the system until explicitly removed either manually or using a clean-up job.
 
-Other configurations such as recurrence, alerts, and batch group can be configured as well.
+To clean up the work exceptions log, follow these steps.
 
-Once the job finishes execution, a notification with how many records were removed is displayed.
+1. Go to **Warehouse management** \> **Periodic tasks** \> **Clean up** \> **Clean up work exceptions logs**.
+1. In the dialog, expand the **Parameters** FastTab and make the following settings:
+    - **The number of days to keep** – Specify the age (in days) of the oldest entries to keep. Entries older than this will be deleted.
+    - **Status** – Select the status of the exception logs to delete (*Open* or *Closed*).
+    - **Maximum cleanup records count** – Specify the maximum number of records to delete. Setting a limit here can improve system performance by preventing too many records from being deleted in a single operation. (Default is 100,000.)
+1. On the **Run in the background** FastTab, set up batch, batch group, scheduling, and alert options as you require, just as you might do for other batch jobs in Supply Chain Management.
+
+When the job finishes execution, the system shows a notification of how many records were removed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
