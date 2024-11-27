@@ -59,7 +59,7 @@ The version description usually includes the number of the Microsoft Knowledge B
 To set up an electronic reporting format in General ledger parameters, follow these steps.
 
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
+1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
 
 ### <a id="tax-authorities"></a> Set up sales tax authorities
 
