@@ -31,8 +31,8 @@ As of January 1, 2025 the JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachun
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
 1. [Import Electronic reporting configurations](#er-import).
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
-5. [Configure Application-specific parameters for the format of the report](#asp-setup).
+1. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+1. [Configure Application-specific parameters for the format of the report](#asp-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
@@ -56,7 +56,7 @@ The version description usually includes the number of the Microsoft Knowledge B
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
 To set up Electronic reporting format in General ledger parameters, follow these steps.
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting books** field, select the ER format, **Accounting Books (PL)**.
+1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting books** field, select the ER format, **Accounting Books (PL)**.
 
 ### <a id="asp-setup"></a> Configure Application-specific parameters for the format of the report
 
