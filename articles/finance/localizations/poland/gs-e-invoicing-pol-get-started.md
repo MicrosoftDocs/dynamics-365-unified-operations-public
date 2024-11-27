@@ -144,6 +144,9 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 
     :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page."::: 
 
+> [!NOTE]
+> If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
+
 1. For the **Customer Invoice journal** table name, select **Response types**.
 1. Select **New** to create a response type, and enter the following values:
 
