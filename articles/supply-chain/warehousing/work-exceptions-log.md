@@ -59,12 +59,9 @@ Work exceptions can also be shown on other pages, such as the **Outbound work mo
 
 ## Clean up the work exceptions log
 
-Cleaning out old work exceptions helps make it easier for users to search for locations with open work exceptions and improves the performance of pages that show work exceptions.
+Even after they're resolved, the system keeps all log entries until they are explicitly removed. Cleaning out old work exceptions helps make it easier for users to search for locations with open work exceptions and improves the performance of pages that show work exceptions.
 
 The system provides a clean-up batch job to help you delete multiple entries in the work exceptions log once they're resolved or no longer necessary. When you set up the job, you'll set the criteria for selecting which entries should be deleted (for example, according to the status and/or age of each entry). When the job runs, it removes all work exceptions that match the criteria.
-
-> [!NOTE]
-> Even after they are resolved, logs are kept in the system until explicitly removed either manually or using a clean-up job.
 
 To clean up the work exceptions log, follow these steps.
 
