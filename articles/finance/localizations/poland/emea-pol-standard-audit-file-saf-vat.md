@@ -554,7 +554,7 @@ To configure the ER model and format for the report, follow these steps.
 1. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
 
 ## Generate a SAF VAT sales and purchase register
-To generate a SAF VAT sales and purchase register, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT sales and purchase register**, and set the following parameters.
+To generate a SAF VAT sales and purchase register, select **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT sales and purchase register**, and set the following parameters.
 
 | Parameter                |   Description                                                                      |
 |--------------------------|------------------------------------------------------------------------------------|
@@ -566,8 +566,7 @@ You can specify additional selection parameters by using the **Filter** function
 
 ## Using batch jobs for JPK_VAT
 
-Generating JPK_VAT report for a long period such as month or a quarter can include a huge data and take a long time. 
-For such cases, it is recommended to use batch jobs. 
+Generating JPK_VAT report for a long period such as month or a quarter can include a large amount of data and take a long time; therefore, it is recommended to use batch jobs. 
 Dialog page for every SAF report has a **Run in the background** tab. 
 Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
 To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). 
