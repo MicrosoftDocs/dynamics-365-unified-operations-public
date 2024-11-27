@@ -1,51 +1,60 @@
 ---
-title: Work exceptions log
-description: Learn about work exceptions log. This functionality lets you register issues from your operational workflows to be tracked and addressed.
-author: sservulo
-ms.author: samuoliveira
-ms.topic: article
-ms.date: 11/15/2024
-ms.custom:
-ms.reviewer: --
-ms.search.form: WHSWorkExceptionLog
+title: View and manage the work exceptions log (preview)
+description: Learn about the work exceptions log. The system registers work-related errors in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows.
+author: Mirzaab
+ms.author: mirzaab
+ms.reviewer: kamaybac
+ms.search.form: WHSWorkExceptionLog, WHSWorkException, WHSLocationWithWorkException
+ms.topic: how-to
+ms.date: 11/27/2025
+ms.custom: 
+  - bap-template
 ---
 
-# Work exceptions log
+# View and manage the work exceptions log
 
 [!include [banner](../includes/banner.md)]
 
-Work exceptions let you register work related errors that occur in your warehouse operations, for example: discrepancies in inventory, missing goods on given locations, etc. Registering these exceptions in the work exceptions log can be used to help track and diagnose issues related to warehouse work workflows such as pick or pack procedures.
+Work exceptions are work-related errors that can occur during warehouse operations (such as discrepancies in inventory or missing goods at a given location). The system registers these exceptions in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows such as pick or pack procedures.
 
-To view the work exceptions log, navigate to **Warehouse management \> Work \> Work exceptions log**), where it can be further filtered based **Status** or other characteristics inherited from the Work.
+## Example of how a worker can create a work exception
 
-![Outbound work monitoring form](media/work-exceptions-log-form.png)
+The Warehouse Management mobile app automatically creates exceptions during some types some workflows in response to certain events. For example, one possible way that a worker can trigger a work exception is by completing the following procedure to perform a short pick (assuming the required work record already exists):
 
-Work exceptions can also be visualized from other forms, such as **Outbound work monitoring** (found in **Warehouse management \> Workspaces \> Outbound work monitoring**), where **Locations** with open exceptions can be further explored.
+1. Open the Warehouse Management mobile app.
+1. Go to **Outbound** \> **Sales Picking**.
+1. Enter the **Work ID** and select **OK**.
+1. Enter the **Location** and select **OK**.
+1. Select **Short Pick**.
+1. Specify the following values:
+    - The target license plate
+    - The quantity picked
+    - The reason for the short pick (for example, the item wasn't available at the expected location)
+1. Select **OK** and complete the work.
 
-![Outbound work monitoring form](media/outbound-work-monitoring-form.png)
+The short pick event generates a work exception for the specified **Location**.
 
-![Locations with open work exceptions form](media/locations-with-open-exceptions-form.png)
+## Configure behaviors for handling each type of work exception
 
-Take note that even once resolved, logs are kept in the system until explicitly removed either manually or using a clean-up job.
+You can configure the way the system should handle each relevant type of work exception. For example, you could set the system to adjust inventory at an affected license plate or allow automatic item reallocation.
 
-## Example: Creating a work exception based on short pick
+To configure these system behaviors, follow these steps.
 
-Work exceptions are automatically created in some workflows based on given events. One of the possible ways to create a work exception is by performing a short pick. Assuming an already existing **Work**, in the mobile app:
+1. Go to **Warehouse management** \> **Setup** \> **Work** \> **Work exceptions**.
+1. Use the buttons on the Action Pane to add, edit, and delete rows as needed. To learn how to use the settings in each column, hover your mouse pointer over the column header to see a tooltip.
 
-- Navigate to: **Outbound \> Sales Picking**;
-- Input the **Work Id** and select Ok;
-- Input the **Location** and select Ok;
-- Select **Short Pick**;
-- Input:
-    - The target **License Plate**;
-    - The quantity picked;
-    - The reason for the short pick (for example: item wasn't in the expected location);
-- Select Ok and complete the **Work**.
+    :::image type="content" source="media/work-exceptions-form.png" alt-text="The Work exceptions page." lightbox="media/work-exceptions-form.png":::
 
-The short pick event generates a work exception in **Location**, which can be visualized in one of the above mentioned forms.
+## View the work exceptions log
 
-Different behaviors based on type of work exception can be configured in **Warehouse management \> Setup \> Work \> Work exceptions**, for example, to adjust inventory at the **License Plate** or to allow automatic item reallocation.
+To view the work exceptions log, go to **Warehouse management** \> **Work** \> **Work exceptions log**. You can sort and filter the list using the column headers or by entering a value in the **Filter** field and selecting where to search for it (for example by **Status**).
 
-![Outbound work monitoring form](media/work-exceptions-form.png)
+:::image type="content" source="media/work-exceptions-log-form.png" alt-text="The Work exceptions log page." lightbox="media/work-exceptions-log-form.png":::
+
+Work exceptions can also be shown on other pages, such as the **Outbound work monitoring** workspace (available at **Warehouse management** \> **Workspaces** \> **Outbound work monitoring**), which provides a tile that shows the number of **Locations with open work exceptions**. Select that tile to view and explore full details about the exceptions at each location.
+
+:::image type="content" source="media/outbound-work-monitoring-form.png" alt-text="The Outbound work monitoring page." lightbox="media/outbound-work-monitoring-form.png":::
+
+:::image type="content" source="media/locations-with-open-exceptions-form.png" alt-text="The Locations with open work exceptions page." lightbox="media/locations-with-open-exceptions-form.png":::
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
