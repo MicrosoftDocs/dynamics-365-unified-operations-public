@@ -69,8 +69,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
     - <a id="PK"></a>The **Public key** element of the **Secret** type.
 
-    > [!NOTE]
-    > The values in the **Name** column should match the names of the secrets that are described in the previous section.
+> [!NOTE]
+> The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
 
 ## Import the electronic invoicing feature
@@ -89,7 +89,24 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 > [!NOTE]
 > If due to some reason the mentioned Electronic reporting configurations were not imported then import tem manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-3. 
+3. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, additionally import the latest versions of the following Electronic reporting configurations required for receiving incoming vendor invoices.
+
+    - **Vendor invoice import (PL)**
+    - **Vendor invoice Mapping to destination (PL)**
+    
+## Configure the import channel name
+
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
+1. Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
+1. Open the **DataChannel** definition for editing in the designer.
+1. In the **Data sources** tree, expand the **$Context\_Channel** container.
+1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel.
+
+    :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
+
+1. Save your changes, and complete the derived configuration.
+
 
 ## Configure the electronic invoicing feature
 
@@ -250,23 +267,7 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ### Configure additional parameters in Finance
 
-Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the following ER configurations are imported:
-
-    - Vendor invoice import (PL)
-    - Vendor invoice Mapping to destination (PL)
-
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
-1. Open the **DataChannel** definition for editing in the designer.
-1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel.
-
-    :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
-
-1. Save your changes, and complete the derived configuration.
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the import channel name that you previously created.
 1. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the configuration that you previously created.
