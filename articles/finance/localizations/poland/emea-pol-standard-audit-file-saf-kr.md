@@ -134,7 +134,7 @@ The **RodzajDowodu** field under the **Dziennik** node of the report must repres
 
 A SAF Accounting books file must be provided upon request. The file must include accounting data for the reporting period. It must also include the selected posting layers for all the main accounts that have non-zero aggregated turnover or transactions during the reporting period.
 
-To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, set the following parameters and click **OK** to generate the report.
+To generate a SAF Accounting books file, select **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, set the following parameters and select **OK** to generate the report.
 
 | Parameter                                   | Description |
 |---------------------------------------------|-------------|
