@@ -2,7 +2,7 @@
 title: Electronic invoicing for Poland
 description: The article provides information that will help you get started with Electronic invoicing for Poland.
 author: ikondratenko
-ms.date: 05/22/2024
+ms.date: 11/27/2024
 ms.topic: how-to
 ms.collection:
   - bap-ai-copilot
@@ -89,10 +89,10 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - **Response message model mapping to destination (PL)**
     - **KSeF response data import format (PL)**
 
-> [!NOTE]
-> If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+   > [!NOTE]
+   > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-3. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, additionally import the latest versions of the following Electronic reporting configurations required for receiving incoming vendor invoices.
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, additionally import the latest versions of the following Electronic reporting configurations required for receiving incoming vendor invoices.
 
     - **Vendor invoice import (PL)**
     - **Vendor invoice Mapping to destination (PL)**
@@ -108,7 +108,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
     :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
 
-1. Save your changes, and complete the derived configuration.
+1. Save your changes and complete the derived configuration.
 
 
 ## Configure the electronic invoicing feature
