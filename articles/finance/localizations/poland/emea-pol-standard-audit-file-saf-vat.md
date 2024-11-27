@@ -1,12 +1,12 @@
 ---
 title: SAF VAT sales and purchase register - JPK_VAT
-description: Users in legal entities in Poland can generate a SAF VAT sales and purchase register - JPK_VAT.
+description: This article explains how users in legal entities in Poland can generate a SAF VAT sales and purchase register - JPK_VAT.
 author: liza-golub
 ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 11/27/2024
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -19,25 +19,25 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
+This article provides an overview of how to set up Microsoft Dynamics 365 Finance to configure and generate the JPK_VAT file for legal entities with a primary address in Poland.
+
 The SAF VAT File (JPK_VAT) is a standardized electronic format that allows businesses to submit detailed records of their VAT sales and purchase transactions directly to the Polish tax authorities. This file provides a structured overview of VAT settlements, enabling efficient tax audits and enhancing compliance with Polish VAT regulations.
 
-The JPK_VAT must be submitted electronically through the Polish tax authority’s portal and is required on a monthly basis, even if no transactions occurred during the reporting period.
-
-This topic provides an overview of how to set up Dynamics 365 Finance to configure and generate the JPK_VAT file for legal entities with a primary address in Poland.
+The JPK_VAT must be submitted electronically through the Polish tax authority’s portal and is required monthly, even if no transactions occurred during the reporting period.
 
 ## Setup
 
 Before you can generate a SAF VAT sales and purchase register file, you must complete the following setup.
 
-1. [Import Electronic reporting configurations](#er-import)
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
-3. [Set up sales tax authorities](#tax-authorities)
-4. [Set up sales tax reporting codes](#tax-codes)
-5. [Configure the ER model and format for the report (optional)](#configure-er)
+1. [Import Electronic reporting configurations](#er-import).
+1. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+1. [Set up sales tax authorities](#tax-authorities).
+1. [Set up sales tax reporting codes](#tax-codes).
+1. [Configure the ER model and format for the report (optional)](#configure-er).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
-In Finance, import the following Electronic reporting (ER) configurations from Dataverse.
+In Finance, import the following Electronic reporting (ER) configurations from Microsoft Dataverse.
 
 For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -55,17 +55,16 @@ The version description usually includes the number of the Microsoft Knowledge B
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
 
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
-
+To set up electronic reporting format in General ledger parameters, follow these steps.
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT sale and purchase registers** field, select the ER format, **VAT Register (PL)**. 
+1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT sale and purchase registers** field, select the ER format, **VAT Register (PL)**. 
 
 ### <a id="tax-authorities"></a> Set up sales tax authorities
 
 For general information about how to set up a sales tax authority, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md). 
 To generate a JPK_FA in XML file in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. 
 
-On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), 
-set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
+On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
 
 ### <a id="tax-codes"></a> Set up sales tax reporting codes
 
@@ -543,16 +542,16 @@ The system will automatically interpret transactions for reporting in **K_49** (
 ### <a id="configure-er"></a> Configure the ER model and format for the report (optional)
 
 Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this article. If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
-
+To configure the ER model and format for the report, follow these steps.
 1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
-2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
-3. Select the created format, and on the **Main menu**, select **Designer** to open format designer.
-4. Update format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (in the case of the VAT register case, it is an XML scheme). The right side is a Data model (data). 
-5. On the right side, select **Mapping** to see the Data model. The Data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
-6. Data under the **Faktura** tag is mapped mostly to the **Model &gt; SourceDocuments &gt; $Invoices** node. Scroll down the tree to find and select the node. 
-7. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Format designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
-8. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
-9. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
+1. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
+1. Select the created format, and on the **Main menu**, select **Designer** to open format designer.
+1. Update format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (in the case of the VAT register case, it is an XML scheme). The right side is a Data model (data). 
+1. On the right side, select **Mapping** to see the Data model. The Data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
+1. Data under the **Faktura** tag is mapped mostly to the **Model \> SourceDocuments \> $Invoices** node. Scroll down the tree to find and select the node. 
+1. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Format designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
+1. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
+1. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
 
 ## Generate a SAF VAT sales and purchase register
 To generate a SAF VAT sales and purchase register, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT sales and purchase register**, and set the following parameters.
@@ -571,4 +570,8 @@ Generating JPK_VAT report for a long period such as month or a quarter can inclu
 For such cases, it is recommended to use batch jobs. 
 Dialog page for every SAF report has a **Run in the background** tab. 
 Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
-To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
+To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). 
+To review batch jobs or find a generated file, follow these steps.
+1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. 
+1. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. 
+1. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
