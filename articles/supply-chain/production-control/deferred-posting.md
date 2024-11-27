@@ -21,10 +21,7 @@ The following illustration shows how processes for posting journals are invoked 
 
 ## Turn on deferred journal posting for your system
 
-Before you can use deferred journal posting, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Production control*
-- **Feature name:** *Make finished goods physically available before posting to journals*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.41, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.41, then admins can turn this functionality on or off by searching for the *Make finished goods physically available before posting to journals* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up journal posting options for reporting as finished
 

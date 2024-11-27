@@ -23,10 +23,9 @@ The *Specific unit* and *Specific unit match* categories are supported for sales
 
 ## Prerequisites
 
-Before you can use the features that are described in this article, your system must meet the following requirements:
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.41, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.41, then admins can turn this functionality on or off by searching for the *Unit of measure for line level charges* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that's named *Unit of measure for line level charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+This feature requires Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
 
 ## Example scenario: Set up line-level auto charges for specific units and unit matching
 
