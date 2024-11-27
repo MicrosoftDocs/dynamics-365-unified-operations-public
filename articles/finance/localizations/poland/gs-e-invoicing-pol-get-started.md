@@ -159,7 +159,7 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
     > [!NOTE]
     > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
 
-1. Repeat steps 5 and 6 for the **Project invoice** and **Advance invoice** table names.
+1. Repeat steps 4 and 5 for the **Project invoice** and **Advance invoice** table names.
 1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
 1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
 1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
