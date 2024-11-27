@@ -19,11 +19,11 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
+This article provides an overview of how to set up Microsoft Dynamics 365 Finance to configure and generate the JPK_MAG file for legal entities with a primary address in Poland.
+
 The SAF Warehouse Stock File (JPK_MAG) is a standardized electronic format that enables businesses to submit detailed records of their warehouse inventory movements to tax authorities in a structured and consistent manner. The file contains information about stock entries, withdrawals, and transfers, facilitating transparency and compliance during audits or tax inspections.
 
 The JPK_MAG must be submitted electronically through the Polish tax authority’s portal and is required upon request by the tax authorities.
-
-This article provides an overview of how to set up Microsoft Dynamics 365 Finance to configure and generate the JPK_MAG file for legal entities with a primary address in Poland.
 
 ## Setup
 
