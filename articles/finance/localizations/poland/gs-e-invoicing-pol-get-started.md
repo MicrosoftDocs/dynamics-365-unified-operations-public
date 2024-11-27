@@ -69,8 +69,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
     - <a id="PK"></a>The **Public key** element of the **Secret** type.
 
-> [!NOTE]
-> The values in the **Name** column should match the names of the secrets that are described in the previous section.
+    > [!NOTE]
+    > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
 
 ## Import the electronic invoicing feature
@@ -89,8 +89,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - **Response message model mapping to destination (PL)**
     - **KSeF response data import format (PL)**
 
-   > [!NOTE]
-   > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+    > [!NOTE]
+    > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, additionally import the latest versions of the following Electronic reporting configurations required for receiving incoming vendor invoices.
 
@@ -144,8 +144,8 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 
     :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page."::: 
 
-   > [!NOTE]
-   > If you have created the [derived analogues](#Context) of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
+    > [!NOTE]
+    > If you have created the [derived analogues](#Context) of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
 
 1. For the **Customer Invoice journal** table name, select **Response types**.
 1. Select **New** to create a response type, and enter the following values:
