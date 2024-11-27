@@ -19,9 +19,9 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
-As of January 1, 2025 the JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a new mandatory reporting standard in Poland, that requires taxpayers to submit detailed accounting books in a structured electronic format. For more details about how to prepare your system and generate the JPK_KR_PD report, see [SAF Accounting Books Income Tax - JPK_KR_PD](emea-pol-standard-audit-file-saf-pd.md).
+This article provides information on how to prepare your Finance to report SAF Accounting books (JPK_KR) report that’s required for reporting periods before January 1, 2025.
 
-This topic provides information on how to prepare your Finance to report SAF Accounting books (JPK_KR) report that’s required for reporting periods before January 1, 2025.
+As of January 1, 2025 the JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a new mandatory reporting standard in Poland, that requires taxpayers to submit detailed accounting books in a structured electronic format. For more details about how to prepare your system and generate the JPK_KR_PD report, see [SAF Accounting Books Income Tax - JPK_KR_PD](emea-pol-standard-audit-file-saf-pd.md).
 
 > [!NOTE]
 > The SAF Accounting books (JPK_KR) report will be deprecated as of January 1, 2026. For deprecation announcement of SAF Accounting books (JPK_KR), see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release)
