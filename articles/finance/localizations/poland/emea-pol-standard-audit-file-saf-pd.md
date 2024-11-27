@@ -1,12 +1,12 @@
 ---
 title: SAF Accounting Books Income Tax - JPK_KR_PD
-description: Users in legal entities in Poland can generate a SAF Accounting Books Income Tax - JPK_KR_PD in XML format and preview in Excel.
+description: This articles explains how users in legal entities in Poland can generate a SAF Accounting Books Income Tax - JPK_KR_PD in XML format and preview in Excel.
 author: liza-golub
 ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 11/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -19,24 +19,24 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
-The JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a new mandatory reporting standard in Poland, 
-requiring taxpayers to submit detailed accounting books in a structured electronic format. 
-This requirement is mandatory for businesses starting January 1, 2025.
+This articles explains how users in legal entities in Poland can generate a SAF Accounting Books Income Tax - JPK_KR_PD in XML format and preview in Excel.
+
+The JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a new mandatory reporting standard in Poland, requiring taxpayers to submit detailed accounting books in a structured electronic format. This requirement is mandatory for businesses starting January 1, 2025.
 Large taxpayers need to report the new JPK_KR_PD for the first time in March 2026, in line with the deadline for filing their 2025 tax return. 
 
 > [!NOTE]
-> Previouse version of SAF Accounting books (JPK_KR) report is required for reporting periods before January 1, 2025. For more information about how to set up and generate JPK_KR to report for periods before January 1, 2025, see [SAF Accounting Books - JPK_KR](emea-pol-standard-audit-file-saf-kr.md).
-> The SAF Accounting books (JPK_KR) report will be deprecated as of Janury 1, 2026. For deprecation announcement of SAF Accounting books (JPK_KR), see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release)
+> Previous version of SAF Accounting books (JPK_KR) report is required for reporting periods before January 1, 2025. For more information about how to set up and generate JPK_KR to report for periods before January 1, 2025, see [SAF Accounting Books - JPK_KR](emea-pol-standard-audit-file-saf-kr.md).
+> The SAF Accounting books (JPK_KR) report will be deprecated as of January 1, 2026. For deprecation announcement of SAF Accounting books (JPK_KR), see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release)
 
 ## Setup
 
 Before you can generate a SAF Accounting Books Income Tax report, you must complete the following setup.
 
-1. [Import Electronic reporting configurations](#er-import)
-2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
-3. [Set up sales tax authority](#tax-authorities)
-4. [Set up consolidation accounting groups](#consolidation-accounting-groups)
-5. [Configure Application-specific parameters for the format of the report](#asp-setup)
+1. [Import Electronic reporting configurations](#er-import).
+1. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+1. [Set up sales tax authority](#tax-authorities).
+1. [Set up consolidation accounting groups](#consolidation-accounting-groups).
+1. [Configure Application-specific parameters for the format of the report](#asp-setup).
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
@@ -60,24 +60,23 @@ Import the most recent versions of the configurations.
 The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!IMPORTANT]
-> In case your organization is using other JPK reports and **Standard Audit File model mapping** configuration is set as **Default for model mapping**,
-> you can keep this setting and **JPK_KR_PD XML (PL)** format will use the **General ledger data model mapping** automatically, when run from **SAF Accounting Book Income Tax** menu item.
+> In case your organization is using other JPK reports and **Standard Audit File model mapping** configuration is set as **Default for model mapping**, you can keep this setting and **JPK_KR_PD XML (PL)** format will use the **General ledger data model mapping** automatically, when run from **SAF Accounting Book Income Tax** menu item.
 >
 > To run **JPK_KR_PD XML (PL)** format from other places in your Dynamics 365 Finance, set the **General ledger data model mapping** as **Default for model mapping**. 
 
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
-
+To set up electronic reporting format in General ledger parameters, follow these steps.
 1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the ER format, **JPK_KR_PD XML (PL)**. 
+1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the ER format, **JPK_KR_PD XML (PL)**. 
 
 ### <a id="tax-authorities"></a> Set up sales tax authority
 
 For general information about how to set up a sales tax authority, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md). 
 To generate a JPK_KR_PD in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. 
-
+To set up the report layout for sales tax authorities, follow these steps.
 1. On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), 
 set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
-2. In the **Authority identification** specify the the code of the tax office competent for the taxpayer's registered office, that will be reported in `<KodUrzedu>` field of JPK_KR_PD.
+1. In the **Authority identification** specify the code of the tax office competent for the taxpayer's registered office, that will be reported in `<KodUrzedu>` field of JPK_KR_PD.
 
 ### <a id="consolidation-accounting-groups"></a> Set up consolidation accounting groups
 
@@ -94,7 +93,7 @@ In addition to this requirement, if your organization employs a non-standard cha
 Use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association of main accounts in your Finance and applicable values of S_12_1, S_12_2, S_12_3 and standard main accounts in Poland.
 
 1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). For example, create a group that's named **S_12_3**.
-2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify the applicable value of S_12_3 enumeration. This value is reported in the **S_12_3** element of JPK_KR_PD in the **ZOiS** section.
+1. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify the applicable value of S_12_3 enumeration. This value is reported in the **S_12_3** element of JPK_KR_PD in the **ZOiS** section.
 
 You must create as many consolidation account groups as necessary to cover the different account tag enumeration lists applicable to your organization's business operations. If your organization uses a non-standard chart of accounts in Poland, you should create a separate consolidation account group to establish the association between the main accounts and the standard chart of accounts used in Poland.
 
@@ -105,17 +104,17 @@ Application-specific parameters of JPK_KR_PD format in Electronic Reporting (ER)
 To prepare your Finance for generating JPK_KR_PD in compliance with the required schema, follow these steps.
 
 1. Open the **Electronic reporting workspace**, and then, in the configuration tree, select **Standard Audit File (SAF-T) \> JPK_KR_PD XML (PL)**.
-2. On the Action Pane, select **Configurations \> Applications specific parameters \> Setup**.
-3. Select the latest version of the format on the left hand side of **Application specific parameters** page.
-4. On the **Lookups** FastTab, select the lookup field. Detailed description of all the lookup fields of the JPK_KR_PD XML (PL) format is provided further in this topic.
-5. On the **Conditions** FastTab, define the required conditions and specify the values in the **Lookup result** column.
-6. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
-7. Select the next lookup field from the list on the **Lookups** FastTab and repeat the steps 5 and 6.
-8. When all the lookup fields are set up, in the **State** field, select **Completed**, and save the configuration.
+1. On the Action Pane, select **Configurations \> Applications specific parameters \> Setup**.
+1. Select the latest version of the format on the left side of **Application specific parameters** page.
+1. On the **Lookups** FastTab, select the lookup field. Detailed description of all the lookup fields of the JPK_KR_PD XML (PL) format is provided further in this topic.
+1. On the **Conditions** FastTab, define the required conditions and specify the values in the **Lookup result** column.
+1. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
+1. Select the next lookup field from the list on the **Lookups** FastTab and repeat steps 5 and 6.
+1. When all the lookup fields are set up, in the **State** field, select **Completed**, and save the configuration.
 
 #### OpisDziennika - Journal description
 
-Use the free-text **OpisDziennika** lookup field to define mapping of journal description of general journal entries in your Fiannce to the values that will be reported in D_2 field of JPK_KR_PD.
+Use the free-text **OpisDziennika** lookup field to define mapping of journal description of general journal entries in your Finance to the values that will be reported in D_2 field of JPK_KR_PD.
 
 | ZOiS field | Description En | Description Pl |
 |-----|-----|----|
@@ -162,9 +161,9 @@ In **Lookup result** column select **PodatnikZnacznik** and then in **Taxpayer t
 
 #### ZnacznikKonta - Account tags and Polish chart of accounts
 
-Use the **ZnacznikKonta** lookup field to define which of the previously set up consolidation accounting groups that are appicable to your organization applicable should be reported in which fields of JPK_KR_PD.
+Use the **ZnacznikKonta** lookup field to define which of the previously set up consolidation accounting groups that are applicable to your organization applicable should be reported in which fields of JPK_KR_PD.
 
-In **Lookup result** column select the report tag ot **PL_CoA** for standard chart of accounts and then in **Consolidation group** column, select which consolidation accounting group should be used for the tag selected. The following lookup result values are available:
+In **Lookup result** column, select the report tag **PL_CoA** for standard chart of accounts and then in **Consolidation group** column, select which consolidation accounting group should be used for the tag selected. The following lookup result values are available:
 
 | Lookup field | Description En | Description PL |
 |-----------|-------------|--------------|
@@ -175,7 +174,7 @@ In **Lookup result** column select the report tag ot **PL_CoA** for standard cha
 
 #### RodzajDowodu - Accounting voucher type
 
-Use the free-text **RodzajDowodu** lookup field to define mapping of the type of accounting voucher of general journal entries in your Fiannce to the values that will be reported in D_5 field of JPK_KR_PD.
+Use the free text **RodzajDowodu** lookup field to define mapping of the type of accounting voucher of general journal entries in your Finance to the values that will be reported in D_5 field of JPK_KR_PD.
 
 | ZOiS field | Description En | Description Pl |
 |-----|-----|----|
@@ -185,13 +184,13 @@ The following condition is available for mapping in this lookup field.
 
 | Condition | Description |
 |-----------|-----------|
-| Original Document Type (OriginalDocumentType) | Select original document types that are used in your busines oprations and and specify in the **Lookup result** field how they should be reported in JPK_KR_PD \> Dziennik.  |
+| Original Document Type (OriginalDocumentType) | Select original document types that are used in your business operations and specify in the **Lookup result** field how they should be reported in JPK_KR_PD \> Dziennik.  |
 
 As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
 
 ## <a id="jpk-kr"></a> Generate a Standard Audit File Accounting Books Income Tax file (JPK_KR_PD)
 
-To generate a Standard Audit File Accounting Books Income Tax - JPK_KR_PD file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > Standard Audit File Accounting Books Income Tax**, and set the following parameters.
+To generate a Standard Audit File Accounting Books Income Tax - JPK_KR_PD file, select **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > Standard Audit File Accounting Books Income Tax**, and set the following parameters.
 
 | Parameter                                   | Description |
 |---------------------------------------------|-------------|
@@ -207,13 +206,14 @@ To generate a Standard Audit File Accounting Books Income Tax - JPK_KR_PD file, 
 
 ## Using batch jobs for JPK_KR_PD
 
-Generating JPK_KR_PD report for a long period such as month or a quarter can include a huge data and take a long time. 
-For such cases, it is recommended to use batch jobs. 
+Generating JPK_KR_PD report for a long period such as a month or a quarter can include a large amount of data and take a long time; therefore, it is recommended to use batch jobs. 
 Dialog page for every SAF report has a **Run in the background** tab. 
 Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
-To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
+To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). 
+To review batch jobs or find a generated file, follow these steps.
+1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. 
+1. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. 
+1. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
 
-When an electronic report is generated in batch mode, you can find related batch information and the generated output file as 
-an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
-For more information about how to configure a destination for each ER format configuration and its output component, 
-see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
+For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
