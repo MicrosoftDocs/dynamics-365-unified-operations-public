@@ -1,5 +1,5 @@
 ---
-title: View and manage the work exceptions log
+title: View and manage the work exceptions log (preview)
 description: Learn about the work exceptions log. The system registers work-related errors in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows.
 author: Mirzaab
 ms.author: mirzaab
@@ -11,11 +11,15 @@ ms.custom:
   - bap-template
 ---
 
-# View and manage the work exceptions log
+# View and manage the work exceptions log (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.42 GA -->
 
 Work exceptions are work-related errors that can occur during warehouse operations (such as discrepancies in inventory or missing goods at a given location). The system registers these exceptions in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows such as pick or pack procedures.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Example of how a worker can create a work exception
 
