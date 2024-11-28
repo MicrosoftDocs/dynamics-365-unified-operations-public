@@ -51,14 +51,14 @@ After you've set up Application Insights and have a copy of its instrumentation 
     - **DMF Errors** – 
     - **Warehouse events** – Specify whether you want to send warehousing telemetry data to Application Insights. You should set this option to *Yes*.
 
-1. On the **Environments** tab, set the following fields: <!--KFM: Why might I make more than one row here? -->
+1. On the **Environments** tab, identify the environment mode (*Development*, *Test*, and *Production*) of each environment that you want to send telemetry from. Use the **New** and **Delete** buttons to add and remove rows as needed. Make the following settings for each row:
 
     - **LCS Environment ID** – Enter the ID of the Microsoft Dynamics Lifecycle Services environment that you want to send telemetry data from. To find this ID, [sign in to Lifecycle Services](https://lcs.dynamics.com/Logon/Index), and open the environment details page for your environment. In the **Environment Details** section, look for the **Environment ID** field.
-    - **Environment mode** – Specify the mode of your selected environment. The supported environment modes are *Development*, *Test*, and *Production*.
+    - **Environment mode** – Select the mode of your selected environment.
 
-1. On the **Application Insights registry** tab, set the following fields: <!--KFM: Why might I make more than one row here? -->
+1. On the **Application Insights registry** tab, map each environment mode that you use to a target Application Insights connection string or instrumentation key. If a database is copied from one environment to another, the mode will be auto-detected and failover to the new target endpoint. Environments that aren't mapped default to the *Development* mode. Use the **New** and **Delete** buttons to add and remove rows as needed. Make the following settings for each row:
 
-    - **Environment mode** – Specify the mode of your selected environment. The value must match the value that you specified on the **Environments** tab.
+    - **Environment mode** – Specify the mode you want to map.
     - **Connection string** or **Instrumentation key** – Enter the value that you copied when you set up Application Insights in Azure.
 
     > [!NOTE]
