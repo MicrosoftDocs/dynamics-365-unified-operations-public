@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSWorkExceptionLog, WHSWorkException, WHSLocationWithWorkException
 ms.topic: how-to
-ms.date: 11/27/2025
+ms.date: 11/27/2024
 ms.custom: 
   - bap-template
 ---
