@@ -41,22 +41,19 @@ OANDA provider options require the API key value to be filled in by you that wer
 
 ### Central Bank of the Republic of Türkiye
 
-Indicative exchange rates are announced at 15:30 on working days by the Central Bank of the Republic of Türkiye (CBRT) and are applicable for the following working day. Therefore, exchange rates should be retrieved from the Central Bank of the Republic of Türkiye daily. No exchange rate information is provided at weekends or on official holidays. Configuration uses the Value to receive exchange rates for each exchange rate type in configuration separately.
+Indicative exchange rates are announced by the Central Bank of the Republic of Türkiye (CBRT) at 15:30 on working days and are applicable for the following working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends and official holidays. 
 
-In the standard version, a utility is developed for this task, and it already includes the Russian and European Central Banks. The same utility can be used to obtain exchange rates from CBRT.
-
-Configuration for the Central Bank of the Republic of Türkiye includes the following keys.
+The configuration enables importing exchange rates for five different exchange rate types provided by CBRT: *Banknote buying, Banknote selling, Cross rate, Forex buying, Forex selling*. 
 
 | Key | Value |
-| ------ | -------------------------------------------------------------------------------|
-| **Name** | The name of the exchange rate provider. |                                   
-| **Banknote buying** | The *Banknote buying* value must be defined to receive exchange rates.|
-| **Banknote selling** | The *Banknote selling* value must be defined to receive exchange rates. |
-| **Cross rate** | The *default* value must be defined to receive exchange rates.|
-| **Decimal places** | Number of digits to be displayed after the comma in exchange rates |
-| **Forex buying** | The *Forex buying* value must be defined to receive exchange rates. |
-| **Forex selling** | The *Forex selling* value must be defined to receive exchange rates. |
-| **Service URL** | URL information of Central Bank of the Republic of Türkiye. |
+| ------ | -------------------------------------------------------------------------------|                        
+| **Banknote buying** | Specify the exchange rate type for *Banknote buying*.|
+| **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
+| **Cross rate** | Specify the exchange rate type for *Cross rate*.|
+| **Decimal places** | Specify the number of digits in exchange rate. Default is 4.|
+| **Forex buying** | Specify the exchange rate type for *Forex buying*. |
+| **Forex selling** | Specify the exchange rate type for *Forex selling*. |
+| **Service URL** | Specify the URL information to connect to CBRT. |
 
 ## Import currency exchange rates
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.
