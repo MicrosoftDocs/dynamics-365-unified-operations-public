@@ -255,7 +255,7 @@ For information about how to set up Demand planning to connect to and use your A
 
 When you set up your forecast model, the position of the *Phase in/out* step affects the calculation result. To apply the phase in/out calculation to the historical sales numbers, put the *Phase in/out* step before the *Forecast* step (as shown on the left side of the following illustration). To apply the phase in/out calculation to the forecasted result, put the *Phase in/out* step after the *Forecast* step (as shown on the right side of the following illustration).
 
-:::image type="content" source="media/phase-step-position.png" alt-text="Screenshots that show the Phase in/out step in different positions relative to the Forecast step." lightbox="media/phase-step-position.png":::
+:::image type="content" source="media/phase-tile-position.png" alt-text="Screenshots that show the Phase in/out step in different positions relative to the Forecast step." lightbox="media/phase-tile-position.png":::
 
 For more information about phase in/out functionality, including details about how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
 
