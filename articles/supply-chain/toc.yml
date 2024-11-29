@@ -2073,11 +2073,13 @@
           href: demand-planning/forecast-profiles.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
+        - name: Forecast with signals (preview)
+          href: demand-planning/forecasts-with-signals.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
       - name: Use phase in/out functionality to simulate planned changes
         href: demand-planning/phase-in-out.md
-      - name: Time series and planning data
+      - name: Time series, worksheets, and planning data
         href: demand-planning/time-series.md
       - name: Limit time series edits with time fences
         href: demand-planning/time-fences.md
