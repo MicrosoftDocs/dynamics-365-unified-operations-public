@@ -17,14 +17,14 @@ ms.search.form:
 Time series, worksheets, and planning data represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 
 - *Time series* is a term that describes the type of data consumed and created by forecasts, calculations, and transformations. Each time series is a collection of data values plotted against a series regular time intervals. Planning data and worksheets both contain time series data.
-- *Planning data* is the processed and categorized output created by forecasts and calculations. Demand planning presents planning data using both a graph and a grid of values, and provides tools for organization, editing, combining, and presenting this data. Based on how it was created, each planning data record is categorized as containing *Forecast*, *Demand*, *Financials*, or *Miscellaneous* data.
+- *Planning data* is the processed and categorized output created by forecasts, calculations, and transformations. Demand planning presents planning data using both a graph and a grid of values, and provides tools for organizing, analyzing, editing, combining, and presenting this data. Based on how it was created, each planning data record is categorized as containing *Forecast*, *Demand*, *Financials*, or *Miscellaneous* data.
 - *Worksheets* let you view, modify, and combine various types, versions, and views of planning data. You can create and switch between any number of worksheets for each planning data record.
 
 <!--KFM: The above details are my best guess. Requires review. -->
 
 ## <a name="explore"></a>Explore planning data and worksheets
 
-To view all your planning data, on the navigation pane, select **Planning data** \> **All**. (Alternatively, select an appropriate planning data category under **Planning data**.) To view shared worksheets, on the navigation pane, select **Home** \> **Worksheets**.
+To view all your planning data, on the navigation pane, select **Planning data** \> **All**. Alternatively, select an appropriate planning data category under **Planning data**. To view shared worksheets, on the navigation pane, select **Home** \> **Worksheets**.
 
 To open a worksheet or planning data record, select its name in the **Name** column. The following illustration highlights the features on the **Output** tab of the time series details page.
 
@@ -32,7 +32,7 @@ To open a worksheet or planning data record, select its name in the **Name** col
 
 Legend:
 
-1. **Worksheet selector** – On this menu, you can save the current view (including all filters, overlaid series, and other selections) as a worksheet. If you've already saved one or more worksheets, you can load them from here. To list a worksheet under **Home** \> **Worksheets**, create or set it as a **Shared worksheet** using the controls provided here.
+1. **Worksheet selector** – On this menu, you can save the current view (including all filters, overlaid series, and other selections) as a worksheet within the current planning data record. If you've already saved one or more worksheets, you can load them from here. To list a worksheet under **Home** \> **Worksheets**, create or set it as a **Shared worksheet** using the controls provided here.
 1. **Current filters** – If you've applied any filters to the data, they're listed next to the **Add filter** button as colored blocks. You can remove any listed filter by selecting its **Close** button (**X**).
 1. **Add filter** – Open a menu where you can choose to filter the time series by any combination of date or dimension values. This filtering affects the key performance indicators (KPIs) that are shown on the **Insights** FastTab, the chart that's shown on the **Timeline** FastTab, and the values that are available on the **Time series values** FastTab. Filters that you add from here are added to the current filters list (2).
 1. **Insights** – This FastTab shows KPIs for the current time series, including total quantity, average quantity, and standard deviation of quantity. These values reflect the filter settings.
