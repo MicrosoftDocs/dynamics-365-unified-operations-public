@@ -39,24 +39,17 @@ After you've set up Application Insights and have a copy of its instrumentation 
 
 1. Sign in to Supply Chain Management as a user who has system admin privileges.
 1. Go to **System administration \> Setup \> Monitoring and telemetry parameters**.
-1. On the **Configure** tab choose which types of telemetry you'd like to capture. Only the selected types are sent to Application Insights. Make the following settings:
+1. On the **Configure** tab choose which types of telemetry you'd like to capture. Only the selected types are sent to Application Insights. Of the options listed, only the following are relevant for warehousing telemetry:
 
-     <!--KFM: Details needed for each of the following. -->
-
-    - **Custom metrics (Metrics)** – 
-    - **Form runs (Page views)** – 
     - **User sessions (custom events)** – This must be enabled to capture warehouse events. You should set this option to *Yes*.
-    - **X++ exceptions (Failures)** – 
-    - **Custom traces (Traces)** – 
-    - **DMF Errors** – 
     - **Warehouse events** – Specify whether you want to send warehousing telemetry data to Application Insights. You should set this option to *Yes*.
 
-1. On the **Environments** tab, identify the environment mode (*Development*, *Test*, and *Production*) of each environment that you want to send telemetry from. Use the **New** and **Delete** buttons to add and remove rows as needed. Make the following settings for each row:
+1. On the **Environments** tab, identify the environment mode (*Development*, *Test*, and *Production*) of each environment that you want to send telemetry from. Use the **New** and **Delete** buttons to add and remove rows as needed. You can create as many rows as you want, but we recommend that you create no more than one for each **Environment mode** value (if more than one environment ID is mapped to the same mode, the system will select an ID at random). Make the following settings for each row:
 
     - **LCS Environment ID** – Enter the ID of the Microsoft Dynamics Lifecycle Services environment that you want to send telemetry data from. To find this ID, [sign in to Lifecycle Services](https://lcs.dynamics.com/Logon/Index), and open the environment details page for your environment. In the **Environment Details** section, look for the **Environment ID** field.
     - **Environment mode** – Select the mode of your selected environment.
 
-1. On the **Application Insights registry** tab, map each environment mode that you use to a target Application Insights connection string or instrumentation key. If a database is copied from one environment to another, the mode will be auto-detected and failover to the new target endpoint. Environments that aren't mapped default to the *Development* mode. Use the **New** and **Delete** buttons to add and remove rows as needed. Make the following settings for each row:
+1. On the **Application Insights registry** tab, map each environment mode that you use to a target Application Insights connection string or instrumentation key. If a database is copied from one environment to another, the mode will be auto-detected and failover to the new target endpoint. Environments that aren't mapped default to the *Development* mode. Use the **New** and **Delete** buttons to add and remove rows as needed. You can create up to three rows here (one for each **Environment mode** value). Make the following settings for each row:
 
     - **Environment mode** – Specify the mode you want to map.
     - **Connection string** or **Instrumentation key** – Enter the value that you copied when you set up Application Insights in Azure.
