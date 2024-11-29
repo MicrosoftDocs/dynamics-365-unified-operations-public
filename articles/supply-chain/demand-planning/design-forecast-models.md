@@ -192,10 +192,10 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 - **Created by** – The user who created the step.
 - **Handle outliers** – Select one of the following options:
 
-    - *Interquarstep range (IQR)*
-    - *Seasonal and trend decomposition using loess (STL)*
+    - *Interquartile range (IQR)* – <!-- KFM: Improved description needed. -->
+    - *Seasonal and trend decomposition using loess (STL)* – <!-- KFM: Improved description needed. -->
 
-- **Interquarstep range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
+- **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
 - **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
 - **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. <!-- KFM: Improved description needed. -->
 
