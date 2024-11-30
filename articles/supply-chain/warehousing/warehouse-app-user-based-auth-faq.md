@@ -94,11 +94,14 @@ No, you don't have to map users on the **Microsoft Entra ID applications** page 
 
 ## How often will the Warehouse Management mobile app have to be signed in?
 
-The session time-out period depends on your Microsoft Entra ID policies. By default, the session lasts for 90 days after each sign in. Therefore, at least 91 days will pass between sign-ins.
-
+For idle devices refresh token revocation period is fixed to 90 days (https://learn.microsoft.com/en-us/entra/identity-platform/refresh-tokens#token-lifetime). </p> 
+We strongly recommend to setup conditional access to increase security of warehouse mobile devices with at least 
+1. Session sign in  frequency : can be any value up to 365 days (It will also affect used devices)
+2. Target ressources : select "Microsof Dynamics ERP" to limit device users access to only dynamics 365 ERP Apps  ![image](https://github.com/user-attachments/assets/e2903423-c501-4544-a9f2-632bacfbed7d)
+ 
 ## Can I set the session time-out period to more than 90 days?
 
-No. The maximum session time-out period is 90 days.
+No. The session time-out period is fixed to 90 days for refresh tokens but the token is refreshed during each app use to rolling 90 days, and no re-authentitcation will be needed, except if you override this behavior with conditional access sign in frequency enforcement.
 
 ## Will the current worker sign-in page change or be removed?
 
