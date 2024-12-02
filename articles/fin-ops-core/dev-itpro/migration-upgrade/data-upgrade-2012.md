@@ -111,6 +111,12 @@ To get the latest data upgrade deployable package for a target environment that 
     .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook"
     ```
 
+   If you have applied a Product Quality Update (PQU), then you may get the following message when executing the package **"The version of the service on current machine is higher than the one that's in the package, downgrade is not supported"**. To workaround this use the  **-versioncheck=false** parameter when executing the runbook, see following example:
+
+   ```PowerShell
+   .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -versioncheck=false
+   ```
+
 > [!NOTE]
 > The data upgrade can take several hours.
 
