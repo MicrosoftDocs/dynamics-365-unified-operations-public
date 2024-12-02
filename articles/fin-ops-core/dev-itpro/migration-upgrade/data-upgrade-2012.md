@@ -41,7 +41,7 @@ We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) a
 Ensure that you've completed the preupgrade checklist in AX 2012. For more information, see [Preupgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!IMPORTANT]
-> It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 finance and operations version you are using.
 
 
 ### Back up your AX 2012 database
@@ -66,14 +66,14 @@ To speed up the database restore process, you can change the SQL Server service 
 
 After the database is restored, stop the following services:
 
-- Management Reporter 2012 Process service
-- Microsoft Dynamics 365 Unified Operations: Batch Management service
-- Microsoft Dynamics 365 Unified Operations: Data Import Export Framework Service
-- Microsoft Dynamics Lifecycle Services Diagnostic Service
+- Management Reporter 2012 process service
+- Microsoft Dynamics 365 unified operations: Batch management service
+- Microsoft Dynamics 365 unified operations: Data import export framework service
+- Microsoft Dynamics Lifecycle Services diagnostic service
 - World wide web publishing service
 
 > [!NOTE]
-> Ensure these services remained stopped during the upgrade. Rebooting the server will start these again. 
+> Ensure these services remained stopped during the upgrade. Rebooting the server starts these again. 
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.
 ```sql
@@ -94,14 +94,14 @@ To get the latest data upgrade deployable package for a target environment that 
 1. Sign in to [LCS](https://lcs.dynamics.com/).
 1. Select the **Shared asset library** tile.
 1. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
-1. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 version.
+1. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 finance and operations version.
 
-    For example, if you're upgrading to version 10.0.26, the package name is **AX2012DataUpgrade-10.0.26**.
+    For example, if you're upgrading to Dynamics 365 finance and operations version 10.0.26, the package name is **AX2012DataUpgrade-10.0.26**.
 
 1. Select the data upgrade package to download, and save\copy it to the **C:\\Temp** folder in the cloud-hosted environment.
 1. Select and hold (or right-click) the download, and then select **Properties**.
 1. Select the **Unblock** checkbox, select **OK**, and then extract the file. 
-1. Open a PowerShell Prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
+1. Open a PowerShell prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
 1. Ensure the services you stopped in the **Download and restore the backup to the customer-managed development environment** step above are still stopped. If these are running, you get locking issues on the database. 
 1. Run the deployable package by using the following script. You can edit the runbook ID and file name in the script.
 
