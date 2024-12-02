@@ -19,64 +19,65 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides an overview of how to set up Microsoft Dynamics 365 Finance to generate and generate the JPK_WB file in legal entities with primary address in Poland.
+This article explains how to set up Microsoft Dynamics 365 Finance to configure and generate a SAF Bank statement file - JPK_WB in legal entities that have a primary address in Poland.
 
-SAF Bank statement file (JPK_WB) is a standardized electronic format that allows businesses to submit detailed bank account statements directly to tax authorities in a structured and consistent manner. The JPK_WB file must be submitted electronically through the Polish tax authority’s portal. The JPK_WB must be submitted upon request by the Polish tax authorities. 
+SAF Bank statement file (JPK_WB) is a standardized electronic format that enables businesses to submit detailed bank account statements directly to Polish tax authorities in a structured and consistent manner.
+
+A SAF Bank statement file - JPK_WB must be submitted whenever Polish tax authorities request one. It must be submitted electronically through the Polish tax authority's portal.
 
 ## Setup
 
-Before you can generate a SAF Bank statement file, you must complete the following setup.
+Before you can generate a SAF Bank statement file - JPK_WB, you must complete the following setup.
 
-1. [Import Electronic reporting configurations](#er-import).
-1. [Set up Electronic reporting format in General ledger parameters](#er-format-setup).
+1. [Import Electronic reporting (ER) configurations](#er-import).
+1. [Set up the ER format in General ledger parameters](#er-format-setup).
 
-### <a id="er-import"></a> Import Electronic reporting configurations
+### <a id="er-import"></a>Import ER configurations
 
-In Finance, import the following Electronic reporting (ER) configurations from Microsoft Dataverse.
+In Finance, import the following ER configurations from Dataverse. Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
-For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
-
-| ER configuration name       | Type          | Description |
-|-----------------------------|---------------|-------------|
-| Standard Audit File (SAF-T) | Model         | The common data model for different audit reports. |
+| ER configuration name | Type | Description |
+|---|---|---|
+| Standard Audit File (SAF-T) | Model | The common data model for different audit reports. |
 | Standard Audit File model mapping | Model mapping | The model mapping that provides general source mapping for several electronic reports for Poland. |
-| SAF Poland                  | Format        | The XML format that represents a parent format for several JPK formats for Poland. |
-| Bank Statement (PL)         | Format        | The XML format that representsBank Statement (WB) SAF-T for Poland. |
+| SAF Poland | Format | The XML format that represents a parent format for several JPK formats for Poland. |
+| Bank Statement (PL) | Format | The XML format that represents Bank Statement (WB) SAF-T for Poland. |
 
-Import the most recent versions of the configurations. 
-The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
+Import the most recent versions of the configurations. The version description usually includes the number of the Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!IMPORTANT]
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
 
-### <a id="er-format-setup"></a> Set up electronic reporting format in General ledger parameters
-To set up electronic reporting format in General ledger parameters, follow these steps.
-1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Bank statements** field, select the ER format, **VAT Invoices (PL)**. 
+### <a id="er-format-setup"></a>Set up the ER format in General ledger parameters
 
-## <a id="jpk-wb"></a>Generate a SAF Bank statement file (JPK_WB)
+To set up the ER format in General ledger parameters, follow these steps.
 
-To generate a SAF Bank statement file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Bank statement**, and set the following parameters.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Bank statements** field, select the **VAT Invoices (PL)** ER format.
 
-| Parameter                | Description                                                                        |
-|--------------------------|------------------------------------------------------------------------------------|
-| From date                | Specify the first date to export reporting data for.                               |
-| To date                  | Specify the last date to export reporting data for.                                |
+## <a id="jpk-wb"></a>Generate a SAF Bank statement file - JPK_WB
+
+To generate a SAF Bank statement file - JPK_WB, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **SAF Bank statement**, set the following parameters, and then select **OK**.
+
+| Parameter | Description |
+|---|---|
+| From date | Specify the first date to export reporting data for. |
+| To date | Specify the last date to export reporting data for. |
 | Authority identification | In the list, select the identifier of the tax authority to use in the export file. |
-| Bank account             | Specify the bank account to export transactions for.                               |
+| Bank account | Specify the bank account to export transactions for. |
 
-The **SAF Bank statement** file includes information about transactions posted during the specified period of time for the bank account selected on the report's dialog. The name of the counterparty reported in the **NazwaPodmiotu** element is collected from the **Customers** (**Accounts receivable** > **Customers** > **All customers**) and **Vendors** (**Accounts payable** > **Vendors** > **All vendors**) master data of the system registered in the legal entity as it relates to the posted bank transaction. The operation description reported in the **OpisOperacji** element is collected from the **Description** field of the bank transaction.
+The SAF Bank statement file includes information about transactions that were posted during the specified period for the selected bank account. The name of the counterparty that is reported in the **NazwaPodmiotu** element is collected from the **Customers** master data (**Accounts receivable** \> **Customers** \> **All customers**) and the **Vendors** master data (**Accounts payable** \> **Vendors** \> **All vendors**) of the system that is registered in the legal entity, as it's related to the posted bank transaction. The operation description that is reported in the **OpisOperacji** element is collected from the **Description** field of the bank transaction.
 
-## Using batch jobs for JPK_WB
+## Using a batch job to generate a SAF Bank statement file - JPK_WB
 
-Generating JPK_WB report for a long period such as month or a quarter can include a large amount of data and take a long time; therefore, it is recommended to use batch jobs. 
-The dialog page for every SAF report has a **Run in the background** tab. 
-Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
-To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). 
+A SAF Bank statement file - JPK_WB for a long period, such as a month or a quarter, can include a large amount of data and take a long time to be generated. Therefore, we recommend that you use a batch job. The dialog box for every SAF report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
 To review batch jobs or find a generated file, follow these steps.
-1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. 
-1. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. 
-1. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
 
-When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
-For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
+1. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+
+When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+
+Learn more about how to configure a destination for each ER format configuration and its output component in [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
