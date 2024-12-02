@@ -3,18 +3,19 @@ title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 05/16/2023
 ms.reviewer: kamaybac
-ms.collection: get-started
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
+ms.topic: overview
+ms.date: 12/02/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Cost management home page
 
 [!include [banner](../includes/banner.md)]
 
-[Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
+[Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It's the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
 
 You can define cost policies in the following areas:
 
