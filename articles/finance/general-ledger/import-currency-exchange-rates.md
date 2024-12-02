@@ -4,7 +4,7 @@ description: Learn about the requirements for importing foreign exchange referen
 author: RyanCCarlson2 
 ms.author: rcarlson
 ms.topic: article
-ms.date: 10/17/2024
+ms.date: 12/2/2024
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -43,7 +43,12 @@ OANDA provider options require the API key value to be filled in by you that wer
 
 Indicative exchange rates are announced by the Central Bank of the Republic of Türkiye (CBRT) at 15:30 on working days and are applicable for the following working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends and official holidays. 
 
-The configuration enables importing exchange rates for five different exchange rate types provided by CBRT: *Banknote buying, Banknote selling, Cross rate, Forex buying, Forex selling*. 
+The configuration enables importing exchange rates for five different exchange rate types provided by CBRT:
+ - Banknote buying
+ - Banknote selling
+ - Cross rate
+ - Forex buying
+ - Forex selling 
 
 | Key | Value |
 | ------ | -------------------------------------------------------------------------------|                        
