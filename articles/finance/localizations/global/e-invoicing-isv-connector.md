@@ -4,13 +4,11 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 07/29/2024
+ms.date: 12/03/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.37
 ---
 
