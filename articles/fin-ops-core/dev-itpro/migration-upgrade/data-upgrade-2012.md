@@ -4,7 +4,7 @@ description: Learn about the end-to-end process for upgrading from Microsoft Dyn
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 10/23/2024
+ms.date: 12/2/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -111,7 +111,7 @@ To get the latest data upgrade deployable package for a target environment that 
     .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook"
     ```
 
-   If you have applied a Product Quality Update (PQU), then you may get the following message when executing the package **"The version of the service on current machine is higher than the one that's in the package, downgrade is not supported"**. To workaround this use the  **-versioncheck=false** parameter when executing the runbook, see following example:
+   If you have applied a product quality update (PQU), when executing the package, you may get a **The version of the service on current machine is higher than the one that's in the package, downgrade is not supported** message. To workaround, use **-versioncheck=false** parameter when executing the runbook, see following example:
 
    ```PowerShell
    .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -versioncheck=false
