@@ -577,5 +577,6 @@ A SAF VAT sales and purchase register - JPK_VAT for a long period, such as a mon
 To review batch jobs or find a generated file, follow these steps.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
-1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
-1. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+2. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
+3. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+
