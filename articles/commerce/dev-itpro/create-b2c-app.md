@@ -2,7 +2,7 @@
 title: Create a B2C application
 description: This article describes how to create a Microsoft Dynamics 365 Commerce business-to-consumer (B2C) application in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 12/03/2024
+ms.date: 12/04/2024
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
