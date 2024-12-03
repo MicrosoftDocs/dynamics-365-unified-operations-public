@@ -3790,16 +3790,6 @@
                       href: localizations/poland/emea-pol-intrastat.md
                     - name: Set up number sequences by warehouse
                       href: localizations/poland/emea-pol-number-sequence-warehouses.md
-                    - name: Standard audit file
-                      href: localizations/poland/emea-pol-standard-audit-file-saf.md
-                    - name: Tax interest and free-hand interest
-                      href: localizations/poland/emea-pol-interest-calculation.md
-                    - name: Turnover balances statement
-                      href: localizations/poland/emea-pol-turnover-balances-statement.md
-                    - name: Split AP/AR exchange difference
-                      href: localizations/poland/emea-pol-split-ap-ar-exchange-difference.md
-                    - name: Set up and use PKWiU codes for Poland
-                      href: localizations/poland/emea-pol-pkwiu-code.md
                     - name: VAT declaration with registers (JPK_V7, VDEK)
                       items:
                         - name: VAT declaration with registers (JPK_V7, VDEK) overview
@@ -3810,6 +3800,28 @@
                           href: localizations/poland/emea-pol-vdek-reporting.md
                         - name: Details of specific business scenarios in the JPK-V7 report
                           href: localizations/poland/emea-pol-vdek-scenarios.md
+                    - name: Standard audit file (JPK)
+                      items:
+                        - name: Standard audit file (JPK) overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Accounting Books Income Tax - JPK_KR_PD
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
+                        - name: SAF Bank statement file - JPK_WB
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
+                        - name: SAF Inventory file - JPK_MAG
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-mag.md
+                        - name: SAF VAT sales and purchase register - JPK_VAT
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-vat.md
+                        - name: SAF VAT invoices file - JPK_FA
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-fa.md
+                    - name: Tax interest and free-hand interest
+                      href: localizations/poland/emea-pol-interest-calculation.md
+                    - name: Turnover balances statement
+                      href: localizations/poland/emea-pol-turnover-balances-statement.md
+                    - name: Split AP/AR exchange difference
+                      href: localizations/poland/emea-pol-split-ap-ar-exchange-difference.md
+                    - name: Set up and use PKWiU codes for Poland
+                      href: localizations/poland/emea-pol-pkwiu-code.md
                     - name: Payment terms in commercial transactions report
                       href: localizations/poland/emea-pol-payment-terms-report.md
                 - name: Qatar
