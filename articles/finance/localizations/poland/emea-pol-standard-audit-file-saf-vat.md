@@ -25,6 +25,9 @@ SAF VAT File (JPK_VAT) is a standardized electronic format that enables business
 
 A SAF VAT sales and purchase register - JPK_VAT is required monthly, even if no transactions occurred during the reporting period. It must be submitted electronically through the Polish tax authority's portal.
 
+> [!NOTE]
+> The Act of July 4, 2019, issued by the Polish Parliament and signed by the President of Poland, replaced the previous JPK_VAT records and VAT-7/VAT-7K declarations with a single electronic document, JPK_V7, submitted as JPK_V7M or JPK_V7K. For more details, see [VAT declaration with registers (JPK-V7, VDEK)](emea-pol-vdek.md). Due to this regulatory change, the JPK_VAT format was deprecated. For more details, see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release).
+
 ## Setup
 
 Before you can generate a SAF VAT sales and purchase register - JPK_VAT, you must complete the following setup.
