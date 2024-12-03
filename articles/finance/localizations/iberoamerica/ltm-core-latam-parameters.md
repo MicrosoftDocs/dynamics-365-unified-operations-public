@@ -30,8 +30,8 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Enable sales return account   | Activate the alternative ledger account for return sales orders. |
     | Enable project return account | Activate the alternative ledger account for return project sales. |
 
-5. On the **Mandatory document class in journal** tab, activate the options for each group as required. When you activate an option, the **Document class** field in the LATAM extended information from journal entries becomes mandatory.
-6. On the **Value** tab, update the following fields to configure how payment methods behave with transactions.
+4. On the **Mandatory document class in journal** tab, activate the options for each group as required. When you activate an option, the **Document class** field in the LATAM extended information from journal entries becomes mandatory.
+5. On the **Value** tab, update the following fields to configure how payment methods behave with transactions.
 
     | Field                                               | Description |
     |-----------------------------------------------------|-------------|
@@ -46,7 +46,7 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Remove IBAN field validation                        | Don't use the native validation of the **IBAN** field in the bank account master. |
     | Show payment transactions                           | Hide value documents while transactions are settled. |
 
-7. On the **Dimension allocations** tab, enable the addition of third-party information as a dimension in transactions.
+6. On the **Dimension allocations** tab, enable the addition of third-party information as a dimension in transactions.
 
     | Field                                                         | Description |
     |---------------------------------------------------------------|-------------|
@@ -55,4 +55,4 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Enable allocation of third-party dimension in customer/vendor | When the vendor or customer LATAM information is completed, the country/region tax ID number is assigned in the selected third-party dimension. |
     | Inherit dimension to journal lines                            | Replicate the third-party dimension information of the client or vendor on the voucher header on the other lines of the journal. Include values, if they're blank. |
 
-8. On the **Concepts and Notes** tab, enter information together with the labels that are required in the following master records: vendors, legal entities, bank groups, contacts, and employees.
+7. On the **Concepts and Notes** tab, enter information together with the labels that are required in the following master records: vendors, legal entities, bank groups, contacts, and employees.
