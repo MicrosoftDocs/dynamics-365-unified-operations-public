@@ -7,7 +7,7 @@ ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 09/17/2024
+ms.date: 11/26/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-03-02
@@ -27,6 +27,32 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Finance 10.0.43 release
+
+### SAF Accounting books (JPK_KR) for Poland
+
+[SAF Accounting Books - JPK_KR](../localizations/poland/emea-pol-standard-audit-file-saf-kr.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with the new, regulatory-required [SAF Accounting Books Income Tax - JPK_KR_PD](../localizations/poland/emea-pol-standard-audit-file-saf-pd.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By January 1, 2026, we plan to no longer support the SAF Accounting Books - JPK_KR, including the **Accounting Books (PL)** Electronic reporting (ER) format, the **SAF Accounting books** parameter in General ledger parameters, and the **SAF Accounting books** menu item in the **General ledger** module. |
+
+### SAF VAT sales and purchase register (JPK_VAT) for Poland
+
+[SAF VAT sales and purchase register - JPK_VAT](../localizations/poland/emea-pol-standard-audit-file-saf-vat.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with the new, regulatory-required [VAT declaration with registers (JPK-V7, VDEK)](../localizations/poland/emea-pol-vdek.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By January 1, 2026, we plan to no longer support the [SAF VAT sales and purchase register - JPK_VAT, including the **VAT Register (PL)** Electronic reporting (ER) format, the **SAF VAT sale and purchase registers** parameter in General ledger parameters, and the **SAF VAT sales and purchase register** menu item in the **General ledger** module. |
 
 ## Features removed or deprecated in the Finance 10.0.42 release
 
