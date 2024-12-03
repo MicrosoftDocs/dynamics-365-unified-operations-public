@@ -11,9 +11,9 @@ ms.custom: bap-template
 ---
 # Analyze and monitor telemetry with KQL
 
-Telemetry from Dynamics 365 Finance & Supply Chain Management is stored in Application Insights. For more information about the data model, telemetry data model.
+Telemetry from Dynamics 365 Finance & Supply Chain Management is stored in Application Insights. To query that telemetry, the _Kusto Query Language (KQL)_ is used. This article has information and links to resources to get started learning about the KQL language.
 
-The language used to query data in Azure Application Insights is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
+For more information about how the telemetry is stored and the telemetry data model, see [Telemetry datamodel](./monitoring-developer-telemetry-data-model.md).
 
 ## Running your first KQL query
 As a simple example, follow these steps:

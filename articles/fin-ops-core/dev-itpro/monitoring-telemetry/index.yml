@@ -24,24 +24,14 @@ landingContent:
         links:
           - text: Monitoring and Telemetry Feature overview
             url: monitoring-overview.md
+          - text: Getting started
+            url: monitoring-getting-started.md
       - linkListType: concept
         links:
           - text: Gathering requirements for monitoring
             url: monitoring-gathering-requirements.md
           - text: Controlling telemetry costs
             url: monitoring-controlling-telemetry-costs.md
-
-  # Card (optional)
-  - title: Configuring monitoring and telemetry
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Getting started
-            url: monitoring-getting-started.md
-          - text: Enable the Monitoring and telemetry feature
-            url: monitoring-enable-feature.md
-          - text: Environment configuration
-            url: monitoring-configure-environments.md
 
   # Card
   - title: Available features
@@ -78,7 +68,7 @@ landingContent:
             url: monitoring-analyze-telemetry-ADE.md
           - text: Analyze telemetry with Power BI
             url: monitoring-analyze-telemetry-PowerBI.md
-          - text: Creating telemetry driven alerts
+          - text: Create telemetry driven alerts
             url: monitoring-analyze-telemetry-driven-alerts.md
   
   # Card
