@@ -42,25 +42,19 @@ OANDA provider options require that you fill in the API key values that you rece
 
 ### Central Bank of the Republic of Türkiye
 
-CBRT announces indicative exchange rates at 3:30 PM on working days. Those rates are then applicable on the next working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends and official holidays.
+Indicative exchange rates are announced by the Central Bank of the Republic of Türkiye (CBRT) at 15:30 on working days and are applicable for the following working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends or on official holidays. 
 
-The configuration enables exchange rates to be imported for five different exchange rate types that CBRT provides:
+The configuration enables importing exchange rates for five different exchange rate types provided by CBRT: *Banknote buying, Banknote selling, Cross rate, Forex buying, Forex selling*.
 
-- Banknote buying
-- Banknote selling
-- Cross rate
-- Forex buying
-- Forex selling
-
-| Key | Value |
-|-----|-------|
-| **Banknote buying** | Specify the exchange rate type for *Banknote buying*. |
+| **Key** | **Value** |
+| ------ | -------------------------------------------------------------------------------|                        
+| **Banknote buying** | Specify the exchange rate type for *Banknote buying*.|
 | **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
-| **Cross rate** | Specify the exchange rate type for *Cross rate*. |
-| **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
+| **Cross rate** | Specify the exchange rate type for *Cross rate*.|
+| **Decimal places** | Specify the number of digits in exchange rate. Default is 4.|
 | **Forex buying** | Specify the exchange rate type for *Forex buying*. |
 | **Forex selling** | Specify the exchange rate type for *Forex selling*. |
-| **Service URL** | Specify the URL that is used to connect to CBRT. |
+| **ServiceOnDateUrl** | Specify the URL information to be used to download exchange rates from CBRT. |
 
 ## Import currency exchange rates
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.
