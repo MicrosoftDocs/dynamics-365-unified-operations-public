@@ -177,4 +177,32 @@ The **Action log** FastTab saves information about all the actions that are perf
 >
 > ![Error message if system admin consent wasn't given.](../media/uk-mtd-system-admin-consent-log-error.png)
 
+## Submit VAT returns to HMRC from on-premises deployments of Dynamics 365 Finance
+
+Starting June 6, 2025, support for the UK MTD VAT integration feature in on-premises deployments of Dynamics 365 Finance is discontinued. 
+
+Transitioning to the cloud deployment of Dynamics 365 Finance offers several advantages. These include enhanced security, automatic updates, and compliance with HMRC’s MTD requirements. This provides seamless integration and access to the latest Dynamics 365 Finance features. 
+
+Additionally, you can use a cloud-based environment as intermediary software for submitting your VAT return to HMRC from your on-premises deployment. To implement this solution, establish a cloud-based environment configured to interact seamlessly with your existing systems.  
+
+With adjustments to the UK MTD VAT Electronic Messaging, you can efficiently submit your VAT returns to HMRC using Dynamics 365 Finance’s cloud-based solution. This approach allows your organization to benefit from cloud capabilities such as more security options, improved data management, and staying updated with regulatory changes. We recommend this option to ensure compliance with HMRC’s VAT submission requirements. 
+
+ To adopt the UK MTD VAT Electronic Messaging to submit a VAT return in JSON format generated in your on-premises deployments of Dynamics 365 Finance, follow these steps.
+
+ 1. Set up your cloud environment to integrate with HMRC as explained in the following sections of [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup) topic:
+    - [Import and set up ER configurations](emea-gbr-mtd-vat-integration-setup.md#configurations)
+    - [Set up application-specific parameters for MTD VAT web request headers format](emea-gbr-mtd-vat-integration-setup.md#headers)
+    - [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities)
+    - [Set up the VAT registration number of the company that is reporting VAT](emea-gbr-mtd-vat-integration-setup.md#vrn)
+    - [Set up number sequences for Electronic messages functionality](emea-gbr-mtd-vat-integration-setup.md#sequences)
+    - [Set up document management parameters](emea-gbr-mtd-vat-integration-setup.md#docmanagement)
+    - [Set up security roles for electronic message processing](emea-gbr-mtd-vat-integration-setup.md#processing)
+    - [Set up security roles to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md#application)
+  2. Authorize your cloud environment to interoperate with HMRC's MTD web service as explained in [Authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md)
+  3. Modify the 'UK MTD VAT returns' Electronic message processing as following:
+     - Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions**, select the **Ready to generate VAT return** action and change the **Result status** to **Generated VAT return**. After this change, the **Ready to generate VAT return** action will expect a preliminary generated JSON file will be attached to the electronic message and after the **Ready to generate VAT return** action is executed,  the JSON file from the attachment can be submitted by running the **Submit VAT return** action.
+     - Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing** and select the **UK MTD VAT returns**on the left-hand side of the page. Select and remove from the list the following action: **Populate VAT return records**, **Exclude from reporting**, **Preview VAT return**, **Generate file for submission**.
+
+With these changes to the 'UK MTD VAT returns' electronic message processing, you can use your cloud-based Dynamics 365 Finance to submit a VAT return generated in your on-premises Dynamics 365 Finance instance in JSON format by attaching the JSON file to the electronic message in the **Ready to generate VAT return** action.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
