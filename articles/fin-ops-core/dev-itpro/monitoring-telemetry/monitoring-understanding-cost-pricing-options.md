@@ -1,6 +1,6 @@
 ---
-title: Azure Application Insights Experiences
-description: Reference to the available feature provided by Azure Application Insights.  
+title: Understanding cost and pricing options.
+description: Provides information about the various cost and pricing options.
 author: kesaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
@@ -10,6 +10,6 @@ ms.reviewer: kesaelen
 ms.custom: bap-template
 ---
 
-# Azure Application Insights Experiences
+# Understanding cost and pricing options
 
-Under construction
+Under construction.

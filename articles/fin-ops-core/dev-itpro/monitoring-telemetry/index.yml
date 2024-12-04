@@ -30,8 +30,8 @@ landingContent:
         links:
           - text: Gathering requirements for monitoring
             url: monitoring-gathering-requirements.md
-          - text: Controlling telemetry costs
-            url: monitoring-controlling-telemetry-costs.md
+          - text: Understanding cost and pricing options
+            url: monitoring-understanding-cost-pricing-options.md
 
   # Card
   - title: Available features

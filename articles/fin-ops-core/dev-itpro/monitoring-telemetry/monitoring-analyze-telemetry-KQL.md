@@ -2,13 +2,14 @@
 title: Analyze and monitor telemetry with KQL
 description: Learn how to query Dynamics 365 Finance & Supply Chain Management telemetry with KQL.  
 author: kesaelen
-ms.topic: overview
+ms.topic: how-to-guide
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
 ms.author: kesaelen
 ms.reviewer: kesaelen
 ms.custom: bap-template
 ---
+
 # Analyze and monitor telemetry with KQL
 
 Telemetry from Dynamics 365 Finance & Supply Chain Management is stored in Application Insights. To query that telemetry, the _Kusto Query Language (KQL)_ is used. This article has information and links to resources to get started learning about the KQL language.
@@ -16,6 +17,7 @@ Telemetry from Dynamics 365 Finance & Supply Chain Management is stored in Appli
 For more information about how the telemetry is stored and the telemetry data model, see [Telemetry datamodel](./monitoring-developer-telemetry-data-model.md).
 
 ## Running your first KQL query
+
 As a simple example, follow these steps:
   
 1. In the Azure portal, open your Application Insights resource.
@@ -41,11 +43,12 @@ You can use Kusto queries as the data source in many places. For example:
 * Jupyter Notebooks (with the Kqlmagic extension)
 
 ## Where can I learn more about KQL?
-The Kusto Query Language is very well documented. Go to [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric) in the Azure Data Explorer documentation.
+
+The Kusto Query Language is very well documented. Go to [Kusto Query Language (KQL)](https://learn.microsoft.com/kusto/query/?view=microsoft-fabric) in the Azure Data Explorer documentation.
 
 ## Which tools can I use (KQL editors and clients)?
 
-To get an overview of the different tools, go to [Azure Data Explorer tools and integrations overview](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-overview?tabs=connectors) in the Azure Data Explorer documentation.
+To get an overview of the different tools, go to [Azure Data Explorer tools and integrations overview](https://learn.microsoft.com/azure/data-explorer/integrate-overview?tabs=connectors) in the Azure Data Explorer documentation.
 
 ## How can I query telemetry from Log Analytics?
 
@@ -77,6 +80,7 @@ pageViews                                                                       
 ```
 
 ## KQL example - Adding statistics on the duration of forms
+
 Taking this one step further, you can write the following KQL query to fetch the slowest forms:
 
 ```kql
@@ -100,4 +104,4 @@ pageViews
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
 [Analyze Telemetry with Power BI](telemetry-power-bi-app.md)  
-[Telemetry FAQ](telemetry-faq.md)  
+[Telemetry FAQ](telemetry-faq.md)
