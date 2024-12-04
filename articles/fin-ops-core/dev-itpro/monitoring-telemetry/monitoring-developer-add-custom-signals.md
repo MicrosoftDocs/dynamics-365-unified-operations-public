@@ -16,7 +16,7 @@ When the Monitoring and Telemetry feature is activated, telemetry is emitted to 
 ## Telemetry logger
 The main entry point for logging custom telemetry is through the **SysApplicationInsightsTelemetryLogger** class. It encupsulates the [!INCLUDE[appinsights](./includes/azure-appinsights-name.md)] telemetry client and provides access to the necessary operations to track an event, pageview, trace, exception or metric. 
 
-The logger uses the [static constructor pattern](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](./includes/azure-appinsights-name.md)] telemetry client will be further cached to ensure only one telemetry client is created per AOS instance.
+The logger uses the [static constructor pattern](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](./includes/azure-appinsights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per AOS instance.
 
 ## Telemetry data contract types
 [!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] currently supports the following types of data contracts to be used:
