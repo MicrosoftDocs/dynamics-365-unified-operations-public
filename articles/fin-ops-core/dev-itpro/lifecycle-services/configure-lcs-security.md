@@ -36,7 +36,7 @@ There are three types of organizational roles in Lifecycle Services:
 - Delegated admin
 
 ### Organization admin
-At the organization or tenant level, anyone who has the Global Administrator role in Microsoft Entra ID automatically becomes an organization admin when they sign in to Lifecycle Services. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
+At the organization or tenant level, anyone who has the tenant administrator role in Microsoft Entra ID automatically becomes an organization admin when they sign in to Lifecycle Services. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
 
 ![Message in Lifecycle Services that states that organization admins can add themselves to any project.](media/OrgAdminProjectInject.png)
 
