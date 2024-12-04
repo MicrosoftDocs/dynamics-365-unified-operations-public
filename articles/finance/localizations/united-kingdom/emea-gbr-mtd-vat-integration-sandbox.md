@@ -20,6 +20,11 @@ This article explains how to test the interoperation of Microsoft Dynamics 365 F
 
 For testing purposes, HMRC lets you register as a developer in the [HMRC Developer Hub](https://developer.service.hmrc.gov.uk/developer/registration) and access the sandbox environment. When you're registered as a developer, you can use the **UK MTD VAT TEST** Electronic messaging (EM) processing in Finance to try to interoperate with HMRC's sandbox environment.
 
+> [!NOTE]
+> To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement will involve the adoption of an Electronic Invoicing service as an intermediary, which will facilitate secure access to the storage of credentials essential for software authorization within the HMRC APIs. **Please note that these services will not be accessible from on-premises deployments by June 6, 2025**.
+>
+> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the Making Tax Digital feature. It will still be possible to generate in batch the report (VAT 100) in Excel and JSON formats. 
+
 ## Create a sandbox application in the HMRC Developer Hub
 
 When you're registered as a developer in the HMRC Developer Hub, you can create a sandbox application. This sandbox application is used to test the interoperation of Finance with HMRC's MTD VAT API.
