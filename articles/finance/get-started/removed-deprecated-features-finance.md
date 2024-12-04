@@ -30,6 +30,28 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.43 release
 
+### Making Tax Digital – VAT return submission in the United Kingdom for on-premises deployments
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement will involve the adoption of an [Electronic Invoicing service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, which will facilitate secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that these services will not be accessible from on-premises deployments. | 
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support the Making Tax Digital – VAT return submission in the United Kingdom **for on-premises** deployments. It will still be possible to generate the report (VAT 100) in Excel and JSON formats. Direct submission for on-premises deployments to MTD VAT APIs will be eliminated. For more information, see [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://go.microsoft.com/fwlink/?linkid=2292714) |
+
+### Batch submission of VAT returns in the UK via Making Tax Digital for VAT in cloud deployments
+
+[Making Tax Digital – VAT return submission in the United Kingdom](https://review.learn.microsoft.com/en-us/dynamics365/finance/localizations/united-kingdom/emea-gbr-mtd-vat-integration?branch=main&branchFallbackFrom=liza-no-saf-971248)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement will involve the adoption of an [Electronic Invoicing service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, which will facilitate secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that VAT return submission in batch will no longer be available. | 
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support batch mode for submission of VAT return in the Making Tax Digital feature. It will still be possible to generate in batch the report (VAT 100) in Excel and JSON formats. |
+
 ### SAF Accounting books (JPK_KR) for Poland
 
 [SAF Accounting Books - JPK_KR](../localizations/poland/emea-pol-standard-audit-file-saf-kr.md)
