@@ -17,6 +17,11 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../../includes/banner.md)]
 
+> [!NOTE]
+> To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement will involve the adoption of an Electronic Invoicing service as an intermediary, which will facilitate secure access to the storage of credentials essential for software authorization within the HMRC APIs. **Please note that these services will not be accessible from on-premises deployments by June 6, 2025**.
+>
+> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the Making Tax Digital feature. It will still be possible to generate in batch the report (VAT 100) in Excel and JSON formats. 
+
 After your company is [signed up for the Making Tax Digital (MTD) service for value-added tax (VAT) in Her Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/vat-record-keeping/sign-up-for-making-tax-digital-for-vat), complete the following tasks. These tasks will prepare your Microsoft Dynamics 365 Finance environment to interoperate with HMRC's web service to retrieve information about your company's VAT obligations and submit VAT returns.
 
 - [Import and set up Electronic reporting (ER) configurations](#configurations).
