@@ -38,7 +38,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support the Making Tax Digital – VAT return submission in the United Kingdom **for on-premises** deployments. It's still possible to generate the report (VAT 100) in Excel and JSON formats. Direct submission for on-premises deployments to MTD VAT APIs are eliminated. For more information, see [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://go.microsoft.com/fwlink/?linkid=2292714) |
+| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support the Making Tax Digital – VAT return submission in the United Kingdom **for on-premises** deployments. It's still possible to generate the report (VAT 100) in Excel and JSON formats. Direct submission for on-premises deployments to MTD VAT APIs is eliminated. For more information, see [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://go.microsoft.com/fwlink/?linkid=2292714) |
 
 ### Batch submission of VAT returns in the UK via Making Tax Digital for VAT in cloud deployments
 
@@ -46,7 +46,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that VAT return submission in a batch are no longer be available. | 
+| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that VAT return submission in a batch is no longer be available. | 
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
@@ -223,7 +223,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance no longer receive support with bug fixes. Customers are asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). After January 2024, the Revenue recognition feature isn't available. Customers are asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, was replaced and released as a separate feature available in 10.0.36.|
+| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance no longer receives support with bug fixes. Customers are asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). After January 2024, the Revenue recognition feature isn't available. Customers are asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, was replaced and released as a separate feature available in 10.0.36.|
 
 
 ## Features removed or deprecated in the Finance 10.0.29 release
