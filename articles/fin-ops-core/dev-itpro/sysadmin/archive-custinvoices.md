@@ -1,4 +1,3 @@
----
 # required metadata
 
 title: Archive Dynamics 365 customer invoice data
@@ -24,7 +23,7 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2024-12-05
 ms.dyn365.ops.version: 10.0.24
-
+---
 # Archive Dynamics 365 Finance customer invoice data
 
 This article explains how to archive Microsoft Dynamics 365 Finance customer invoice data. 
