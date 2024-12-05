@@ -189,7 +189,7 @@ With adjustments to the UK MTD VAT Electronic Messaging, you can efficiently sub
 
  To adopt the UK MTD VAT Electronic Messaging to submit a VAT return in JSON format generated in your on-premises deployments of Dynamics 365 Finance, follow these steps.
 
- 1. Set up your cloud environment to integrate with HMRC as explained in the following sections of [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup) topic:
+ 1. Set up your cloud environment to integrate with HMRC as explained in the following sections of [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md) topic:
     - [Import and set up ER configurations](emea-gbr-mtd-vat-integration-setup.md#configurations)
     - [Set up application-specific parameters for MTD VAT web request headers format](emea-gbr-mtd-vat-integration-setup.md#headers)
     - [Import a package of data entities that includes a predefined EM setup](emea-gbr-mtd-vat-integration-setup.md#entities)
