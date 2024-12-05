@@ -1,6 +1,6 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Finance 
-description: Learn about features that have been removed, or that are planned for removal from Dynamics 365 Finance, with an outline on features removed.
+description: Learn about features that are removed, or that are planned for removal from Dynamics 365 Finance, with an outline on features removed.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
+This article describes features that are removed, or that are planned for removal from Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and may be removed in a future update.
@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. *These services won't be accessible from on-premises deployments*. | 
+| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. *These services aren't accessible from on-premises deployments*. | 
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
@@ -46,7 +46,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that VAT return submission in a batch is no longer be available. | 
+| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. VAT return submission in a batch is no longer available. | 
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
@@ -88,7 +88,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By October 1, 2025, we plan to no longer support the Sales tax report for Latvia design that's based on reporting codes, including the **VAT declaration (LV)**, **VAT declaration 218 (LV)**, **VAT declaration v6 (LV)**, **VAT declaration v7 (LV)** Electronic reporting (ER) formats under the **VAT declaration model** together with the following objects: EDT/TaxAmountOverpaid_LV, Enum/LvBusinessType, Enum/LvDocumentType, Enum/LvDocumentAggregationType, Enum/TaxTransDataOrigin_W, Enum/TaxDeclarationType_W, Class/VATDeclarationService_LV, Table/TaxTable/Field/BusinessType_LV, Table/TmpTaxReportTaxTransData_LV. New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By October 1, 2025, we plan to no longer support the Sales tax report for Latvia design based on reporting codes, including the **VAT declaration (LV)**, **VAT declaration 218 (LV)**, **VAT declaration v6 (LV)**, **VAT declaration v7 (LV)** Electronic reporting (ER) formats under the **VAT declaration model** together with the following objects: EDT/TaxAmountOverpaid_LV, Enum/LvBusinessType, Enum/LvDocumentType, Enum/LvDocumentAggregationType, Enum/TaxTransDataOrigin_W, Enum/TaxDeclarationType_W, Class/VATDeclarationService_LV, Table/TaxTable/Field/BusinessType_LV, Table/TmpTaxReportTaxTransData_LV. New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration** model. |
 
 ### Sales tax report for Norway (design based on reporting codes)
 
@@ -152,7 +152,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | N/A |
 | **Product areas affected**         | Developer |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes were removed on December 27, 2024 to improve performance and reduce storage costs. All access to these fields should be internal only to the core Financial dimension APIs and no action is required if using our APIs. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references ASAP. The fields are removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
+| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes were removed on December 27, 2024 to improve performance and reduce storage costs. All access to these fields should be internal only to the core Financial dimension APIs and no action is required if using our APIs. If any direct access to these fields is enabled using a customization, make the necessary changes to remove these direct references ASAP. The fields are removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
 
 
 ### Electronic Invoicing integration using Microsoft Dataverse
@@ -197,7 +197,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By July 1, 2024, Microsoft no longer supports the **FTA VAT Audit File (AE)** ER format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**). A new **FTA Tax Audit File - FAF in TXT (AE)** ER format has been introduced that uses the **SAF-T General** model mapping and can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) feature. For more information, see [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md). |
+| **Status**                         | Deprecated: By July 1, 2024, Microsoft no longer supports the **FTA VAT Audit File (AE)** ER format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**). A new **FTA Tax Audit File - FAF in TXT (AE)** ER format was introduced that uses the **SAF-T General** model mapping and can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) feature. For more information, see [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md). |
 
 ## Features removed or deprecated in the Finance 10.0.31 release
 
@@ -209,7 +209,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Banks in Austria deprecated EDICFACT-PAYMUL for cross-border payments by November 2022 and replace it with XML version pain.001.001.09N. A new configuration has been added under the Global Configuration repository which enables users to complete the cross-border payment request. |
+| **Status**                         | Deprecated: Banks in Austria deprecated EDICFACT-PAYMUL for cross-border payments by November 2022 and replace it with XML version pain.001.001.09N. A new configuration was added under the Global Configuration repository which enables users to complete the cross-border payment request. |
 
 ## Features removed or deprecated in the Finance 10.0.30 release
 
@@ -219,7 +219,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** |Replaced by improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Reason for deprecation/removal** |Replaced with improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md)
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
@@ -336,7 +336,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: by May 1, 2022, we plan to no longer support "French FEC audit file" Electronic reporting (ER) format for France under "German audit file output" format. New FEC audit file (FR) format is introduced instead under the "Data export model". |
+| **Status**                         | Deprecated: by May 1, 2022, we plan to no longer support "French FEC audit file" Electronic reporting (ER) format for France under "German audit file output" format. New FEC audit file (FR) format is introduced instead under the "Data export model." |
 
 ## Features removed or deprecated in the Finance 10.0.17 release
 
@@ -360,7 +360,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By January 22, 2022, we plan to no longer support "VAT declaration (CZ)", "Control statement export (CZ)" Electronic reporting (ER) formats. New VAT declaration XML (CZ), VAT declaration Excel (CZ), VAT control statement XML (CZ) formats are introduced instead under the "Tax declaration" model. |
+| **Status**                         | Deprecated: By January 22, 2022, we plan to no longer support "VAT declaration (CZ)," "Control statement export (CZ)" Electronic reporting (ER) formats. New VAT declaration XML (CZ), VAT declaration Excel (CZ), VAT control statement XML (CZ) formats are introduced instead under the "Tax declaration" model. |
 
 ### "Ledger transaction export format (BE)" Electronic reporting format and respective "Ledger transaction export (BE)" model for Belgium
 
@@ -376,7 +376,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with new ER format - "VAT Declaration Excel (UK)" format under "Tax declaration model".  |
+| **Reason for deprecation/removal** | Replaced with new ER format - "VAT Declaration Excel (UK)" format under "Tax declaration model."  |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
@@ -388,7 +388,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This impacts customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This impacts customers who use Dynamics 365 products designed to use through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
 | **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
@@ -404,7 +404,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes (Excel format for Standard Audit File with VAT declaration - JPK_VDEK) |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Not deprecated: As of April 27, 2021, we plan to continue to support the SSRS reports: **Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014**. Excel format example for Standard Audit File with VAT declaration (JPK_VDEK) has also been introduced. |
+| **Status**                         | Not deprecated: As of April 27, 2021, we plan to continue to support the SSRS reports: **Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014**. Excel format example for Standard Audit File with VAT declaration (JPK_VDEK) was introduced. |
 
 ## Features removed or deprecated in the Finance 10.0.11 release
 
@@ -431,7 +431,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types set up without Account groups selection. Find more details about the new design in [What's new in 10.0.7](../dev-itpro/whats-new-changed-10-0-7.md). |
 
 ## Previous announcements about removed or deprecated features
-To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+To learn more about features that are removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
