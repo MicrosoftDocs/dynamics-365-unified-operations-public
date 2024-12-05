@@ -1,4 +1,5 @@
-# required metadata
+---
+#required metadata
 
 title: Archive Dynamics 365 customer invoice data
 description: This topic explains how to archive customer invoice data using the Dataverse long term retention. 
@@ -8,7 +9,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-# optional metadata
+#optional metadata
 
 ms.search.form:  
 # ROBOTS: 
@@ -32,7 +33,7 @@ This article explains how to archive Microsoft Dynamics 365 Finance customer inv
 
 ## Prerequisites 
 The following prerequisites must be met before you archive customer invoice transactions:
- - In Feature management enable the features **(Preview) Archive Customer invoice with long term retention** and **Archive with Dataverse long term retention**. For more information on the set up of the archive feature see [Set up and manage archive](archive-gl.md).
+ - In Feature management enable the features **(Preview) Archive Customer invoice with long term retention** and **Archive with Dataverse long term retention**. For more information on the set up of the archive feature see [Set up and manage archive](archive-setup-manage.md).
  - The fiscal period must be On hold or closed for the date range used in the archive job
 
  ## Set up an archival job
@@ -48,8 +49,8 @@ New long term retention jobs can be scheduled for sales order invoices or free t
 Note: One job is created for each legal entity and each invoice type selected.
   8. Select **Next**.
   9. Select the type of scheduling. Two types are supported:
- - **Single run** - long term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
- - **Daily during allotted time** - The long term retention runs continuously until it is completed. The **Save to history** process runs during the specified start and stop archiving time.
+     - **Single run** - long term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
+     - **Daily during allotted time** - The long term retention runs continuously until it is completed. The **Save to history** process runs during the specified start and stop archiving time.
  10. Select **Finish** to schedule the archive job for the selected invoice types and the companies.
  11. Select the link in the **Results** column to view the progress or detailed logs.
 
