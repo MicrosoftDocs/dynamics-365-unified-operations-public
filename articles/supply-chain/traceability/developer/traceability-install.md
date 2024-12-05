@@ -26,7 +26,7 @@ To use Traceability, your system must meet the following requirements:
 - Your Supply Chain Management installation must be running on one of the following types of environments:
     - Tier-2 environment
     - A Unified Developer Experience (UDE) environment copied from a tier-2 environment that didn't have Traceability installed. Copying an environment with Traceability already installed isn't supported.
-- The Dynamics 365 app named *Dynamics 365 Finance and Operations Platform Tools* app must be installed for your environment in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+- The Dynamics 365 app named *Dynamics 365 Finance and Operations Platform Tools* must be installed for your environment in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Turn on features in Supply Chain Management
 
