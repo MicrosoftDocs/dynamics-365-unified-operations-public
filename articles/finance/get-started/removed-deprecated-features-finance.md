@@ -7,7 +7,7 @@ ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 11/26/2024
+ms.date: 12/05/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-03-02
@@ -21,7 +21,7 @@ ms.dyn365.ops.version: Platform update 33
 This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
@@ -34,11 +34,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement will involve the adoption of an [Electronic Invoicing service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, which will facilitate secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that these services will not be accessible from on-premises deployments. | 
+| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. *These services won't be accessible from on-premises deployments*. | 
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support the Making Tax Digital – VAT return submission in the United Kingdom **for on-premises** deployments. It will still be possible to generate the report (VAT 100) in Excel and JSON formats. Direct submission for on-premises deployments to MTD VAT APIs will be eliminated. For more information, see [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://go.microsoft.com/fwlink/?linkid=2292714) |
+| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support the Making Tax Digital – VAT return submission in the United Kingdom **for on-premises** deployments. It's still possible to generate the report (VAT 100) in Excel and JSON formats. Direct submission for on-premises deployments to MTD VAT APIs are eliminated. For more information, see [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://go.microsoft.com/fwlink/?linkid=2292714) |
 
 ### Batch submission of VAT returns in the UK via Making Tax Digital for VAT in cloud deployments
 
@@ -46,11 +46,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement will involve the adoption of an [Electronic Invoicing service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, which will facilitate secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that VAT return submission in batch will no longer be available. | 
+| **Reason for deprecation/removal** | To meet security requirements, we're implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an [Electronic Invoicing service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance) as an intermediary, that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. Please note that VAT return submission in a batch are no longer be available. | 
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support batch mode for submission of VAT return in the Making Tax Digital feature. It will still be possible to generate in batch the report (VAT 100) in Excel and JSON formats. |
+| **Status**                         | Deprecated: By June 6, 2025, we plan to no longer support batch mode for submission of VAT return in the Making Tax Digital feature. It's still possible to generate in batch the report (VAT 100) in Excel and JSON formats. |
 
 ### SAF Accounting books (JPK_KR) for Poland
 
@@ -128,7 +128,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By February 1, 2025, the Sales tax report for Estonia (Estonian report layout) will not be supported. New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By February 1, 2025, the Sales tax report for Estonia (Estonian report layout) won't be supported. New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
 
 ### Sales tax (Italy) SSRS format, Italian report layout, menu item
 
@@ -152,7 +152,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | N/A |
 | **Product areas affected**         | Developer |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes will be removed by December 27, 2024 to improve performance and reduce storage costs. All access to these fields should be internal only to the core Financial dimension API's and no action is required if using our API's. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references asap. The fields will be removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
+| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes were removed on December 27, 2024 to improve performance and reduce storage costs. All access to these fields should be internal only to the core Financial dimension APIs and no action is required if using our APIs. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references ASAP. The fields are removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
 
 
 ### Electronic Invoicing integration using Microsoft Dataverse
@@ -209,7 +209,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Banks in Austria will deprecate EDICFACT-PAYMUL for cross-border payments by November 2022 and will replace it with XML version pain.001.001.09N. A new configuration has been added under the Global Configuration repository which enables users to complete the cross-border payment request. |
+| **Status**                         | Deprecated: Banks in Austria deprecated EDICFACT-PAYMUL for cross-border payments by November 2022 and replace it with XML version pain.001.001.09N. A new configuration has been added under the Global Configuration repository which enables users to complete the cross-border payment request. |
 
 ## Features removed or deprecated in the Finance 10.0.30 release
 
@@ -223,7 +223,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance will no longer receive support with bug fixes. Customers will be asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). In January 2024, the Revenue recognition feature will no longer be available. Customers will be asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, will be replaced and released as a separate feature available in 10.0.36.|
+| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance no longer receive support with bug fixes. Customers are asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). After January 2024, the Revenue recognition feature isn't available. Customers are asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, was replaced and released as a separate feature available in 10.0.36.|
 
 
 ## Features removed or deprecated in the Finance 10.0.29 release
@@ -238,7 +238,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Deprecated: After April 2023, the **Stock transfer orders that have tax on the transfer price** functionality will no longer receive support with bug fixes and security fixes. Customers will be asked to use the improved functionality, [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md). After October 2023, the **Stock transfer orders that have tax on the transfer price** functionality will be no longer available, and customers will be asked to move to the improved functionality. |
+| **Status** | Deprecated: After April 2023, the **Stock transfer orders that have tax on the transfer price** functionality no longer receives support with bug fixes and security fixes. Customers are asked to use the improved functionality, [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md). After October 2023, the **Stock transfer orders that have tax on the transfer price** functionality is no longer available, and customers are asked to move to the improved functionality. |
 
 ### Bank statement import and export of positive pay file
 
@@ -248,7 +248,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: XSLT functionality for importing and exporting files will no longer receive support with bug fixes and security fixes. Customers will be asked to use the improved functionality: [Set up positive pay files by using Electronic reporting](../../finance/accounts-payable/set-up-positive-pay-er.md) and [Set up advanced bank reconciliation import by using Electronic reporting](../../finance/accounts-payable/import-bai2-er.md). After September 2022, the XSLT functionality will be no longer available, and customers will be asked to move to the improved functionality.|
+| **Status**                         | Deprecated: XSLT functionality for importing and exporting files no longer receives support with bug fixes and security fixes. Customers are asked to use the improved functionality: [Set up positive pay files by using Electronic reporting](../../finance/accounts-payable/set-up-positive-pay-er.md) and [Set up advanced bank reconciliation import by using Electronic reporting](../../finance/accounts-payable/import-bai2-er.md). After September 2022, the XSLT functionality is no longer available, and customers are asked to move to the improved functionality.|
 
 
 ## Features removed or deprecated in the Finance 10.0.26 release
@@ -314,7 +314,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2022, Microsoft no longer supports the **OB declaration (NL)** Electronic reporting (ER) format and **OB declaration model**. New **VAT declaration XML (NL)** and **VAT declaration Excel (NL)** ER formats are introduced under the **Tax declaration** model. We also will no longer support the **Tax** \> **Declarations** \> **Sales tax** \> **Electronic OB declaration** menu item and page, and the Dutch report layout (TaxReport_NL) SSRS format. The process of VAT reporting in the Netherlands is supported in [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. For more information, see [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md). |
+| **Status**                         | Deprecated: By December 1, 2022, Microsoft no longer supports the **OB declaration (NL)** Electronic reporting (ER) format and **OB declaration model**. New **VAT declaration XML (NL)** and **VAT declaration Excel (NL)** ER formats are introduced under the **Tax declaration** model. The **Tax** \> **Declarations** \> **Sales tax** \> **Electronic OB declaration** menu item and page, and the Dutch report layout (TaxReport_NL) SSRS format are no longer supported. The process of VAT reporting in the Netherlands is supported in [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. For more information, see [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## Features removed or deprecated in the Finance 10.0.20 release
 
@@ -348,7 +348,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Dynamics 365 Finance, Supply Chain Management, and Project Operations products|
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 01, 2022, we plan to no longer support the Microsoft Dynamics Lifecycle Services (LCS) repository as a storage option for Electronic reporting (ER) configurations. New Microsoft ER configurations will be published for download exclusively from the Global repository. The Global repository can be accessed from the Dynamics 365 products and RCS. For more information, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) and [Regulatory Configuration Service - Lifecycle Services storage deprecation](../localizations/rcs-lcs-repo-dep-faq.md). |
+| **Status**                         | Deprecated: By April 01, 2022, we plan to no longer support the Microsoft Dynamics Lifecycle Services (LCS) repository as a storage option for Electronic reporting (ER) configurations. New Microsoft ER configurations are published for download exclusively from the Global repository. The Global repository can be accessed from the Dynamics 365 products and RCS. For more information, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) and [Regulatory Configuration Service - Lifecycle Services storage deprecation](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## Features removed or deprecated in the Finance 10.0.16 release
 
@@ -388,7 +388,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This impacts customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
 | **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
@@ -428,7 +428,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about the new design in [What's new in 10.0.7](../dev-itpro/whats-new-changed-10-0-7.md). |
+| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types set up without Account groups selection. Find more details about the new design in [What's new in 10.0.7](../dev-itpro/whats-new-changed-10-0-7.md). |
 
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
