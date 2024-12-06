@@ -3,9 +3,12 @@ title: Differences between Planning Optimization and the deprecated master plann
 description: Learn about features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
-ms.date: 01/09/2023
 ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 12/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Differences between Planning Optimization and the deprecated master planning engine
