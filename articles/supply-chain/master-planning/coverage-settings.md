@@ -3,11 +3,12 @@ title: Coverage settings
 description: Learn about the coverage settings that master scheduling uses to calculate item requirements, including an outline on coverage codes.
 author: t-benebo
 ms.author: benebotg
-ms.topic: how-to
-ms.date: 01/06/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
+ms.topic: how-to
+ms.date: 12/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Coverage settings
@@ -36,7 +37,7 @@ You can specify coverage settings in several ways:
 
 ## Coverage codes
 
-Master planning can be configured to use different replenishment methods. The replenishment methods or lot-sizing methods are the techniques used by the system to determine the batch size for purchased or produced items. 
+Master planning can be configured to use different replenishment methods. The replenishment methods or lot-sizing methods are the techniques used by the system to determine the batch size for purchased or produced items.
 
 Each replenishment method is assigned one of the following coverage codes:
 
@@ -74,6 +75,5 @@ To configure a coverage group to use the BOM or formula versions and/or routes s
 ## Related information
 
 - [Master plans overview](master-plans.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
