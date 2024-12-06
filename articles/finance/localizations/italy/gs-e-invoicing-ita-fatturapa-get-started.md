@@ -212,7 +212,7 @@ Follow the configuration steps in [Customer electronic invoices](../italy/emea-i
 This section provides information to help you set up and configure the proxy service for communication between the Exchange system (SDI) and the Electronic Invoicing service.
 
 > [!NOTE]
-> This secetion is provided solely for illustrative purposes. It offers a high-level overview of the steps involved in the process of **Proxy server** configuration. It isn't a comprehensive guide for design, configuration, implementation, maintenance, or ongoing support of the Proxy server. All responsibilities related to this area, including but not limited to detailed technical execution, troubleshooting, and system upkeep, lie with the customer's team. Users are advised to consult appropriate technical resources or engage qualified professionals for full implementation and support needs.
+> This section is provided solely for illustrative purposes. It offers a high-level overview of the steps involved in the process of **Proxy server** configuration. It isn't a comprehensive guide for design, configuration, implementation, maintenance, or ongoing support of the Proxy server. All responsibilities related to this area, including but not limited to detailed technical execution, troubleshooting, and system upkeep, lie with the customer's team. Users are advised to consult appropriate technical resources or engage qualified professionals for full implementation and support needs.
 
 ### Create an app registration
 
