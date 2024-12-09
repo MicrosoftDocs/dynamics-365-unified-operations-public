@@ -4,7 +4,7 @@ description: Learn about planning for production and explains how to modify plan
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 11/14/2024
+ms.date: 12/09/2024
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ---
