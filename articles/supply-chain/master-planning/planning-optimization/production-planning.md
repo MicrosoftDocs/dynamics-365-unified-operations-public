@@ -35,13 +35,14 @@ When a BOM component is replenished using a production/batch order, the validity
 
 Individual BOM lines also have validity periods, which are evaluated after a planned production order is scheduled, so the system uses the corresponding operation start or end dates to check for validity. Even though a BOM version and its lines might have the same validity periods, different dates are used to evaluate them. For a BOM version, the system uses the demand requirement date. For a BOM line, the system uses the scheduled start of the planned production order for the finished good.
 
-With some level of simplification, there are following actions performed that are valid for BOM version and lines choices:
+The system takes the following actions:
 
-- Planned production order is created to replenish demand and its BOM version is chosen.
-- The order is scheduled (BOM version to use is not reevaluated).
-- BOM line requirements are created based on the chosen BOM version BOM lines and their validity assertions (based on the scheduled dates).
-- If appropriate planning settings, BOM line requirements are covered with supply down to the specific BOM level.
-- Delay propagation.
+1. Create a planned production order to replenish demand and selects a BOM version to use.
+1. Schedule the order without reevaluating the BOM version, even if the date shifts as a result of scheduling.
+1. Asses the BOM lines for the selected BOM version to ensure they are valid for the scheduled dates.
+1. Create BOM line requirements for the valid BOM lines only.
+1. If required by the planning settings, cover BOM line requirements with supply down to the specific BOM level.
+1. Evaluate whether supply of the lower BOM levels will affect the delivery schedule for any parent production orders and adjusts the schedules accordingly.
 
 ## Scheduling during firming
 
