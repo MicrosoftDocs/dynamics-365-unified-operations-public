@@ -25,7 +25,10 @@ Users with the appropriate role can select a date range to delete transactions i
 > [!NOTE]
 > Currently, this feature is available to users with the "Retail operations manager" role, but due to the risk associated with this action since transaction deletion is irreversible, it will soon be restricted to the "Information technology officer" role. 
 
-The purge job runs as a batch job, with only one active job per legal entity. Once complete, the info log for the batch job displays details of the tables and record counts deleted. The purge job does not lock the tables it deletes from, allowing the system to continue using these tables for various business processes.
+The purge job runs as a batch job, with only one active job per legal entity. Once complete, the info log for the batch job displays details of the tables and record counts deleted. The purge job does not lock the tables it deletes from, allowing the system to continue using these tables for various business processes. Refer the below image showcasing the Purge commerce sales transactions form details.
+
+ ![Purge commerce transactions](./articles/commerce/media/Purge_commerce_transactions_1.png "Purge commerce transactions")
+
 
 
 
