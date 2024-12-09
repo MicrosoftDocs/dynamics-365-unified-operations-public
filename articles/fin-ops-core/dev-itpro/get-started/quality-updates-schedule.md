@@ -130,6 +130,18 @@ The following table shows the high-level train schedule. It includes a descripti
 > 1. 10.0.39 Release-8 has been canceled due to the forthcoming holiday season.
 > 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
+### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.40 Release-5 train schedule
+
+**App version: 10.0.1935.158**
+
+**Platform version: 7.0.7279.164**
+
+**Unified Environment Provisioning Application Version: 10.0.40.7**
+
+> [!IMPORTANT]
+> 1. 10.0.40 Release-5 has been canceled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
+
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-6 train schedule
 
 **App version: 10.0.1935.184**
@@ -143,22 +155,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 1 | December 9 to December 12, 2024 | NA |
 | Station 2 | December 16 to December 19, 2024 | January 11 to January 12, 2025 |
 | Station 3 | December 17 to December 20, 2024 | January 11 to January 12, 2025 |
-| Station 4 | January 7 to January 10, 2024 | January 11 to January 12, 2025 |
-| Station 5 | January 13 to January 16, 2025 | January 18 to January 19, 2025 |
-| Station 6 | January 14 to January 17, 2025 | January 18 to January 19, 2025 |
-
-
-### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.40 Release-5 train schedule
-
-**App version: 10.0.1935.158**
-
-**Platform version: 7.0.7279.164**
-
-**Unified Environment Provisioning Application Version: 10.0.40.7**
-
-> [!IMPORTANT]
-> 1. 10.0.40 Release-5 has been canceled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
+| Station 4 | January 7 to January 10, 2024 | January 18 to January 19, 2025 |
+| Station 5 | January 13 to January 16, 2025 | January 25 to January 26, 2025 |
+| Station 6 | January 14 to January 17, 2025 | January 25 to January 26, 2025 |
 
 ### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.41 Release-2 train schedule
 
