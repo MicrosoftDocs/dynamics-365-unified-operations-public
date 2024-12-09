@@ -41,12 +41,10 @@ The following prerequisites must be met before you archive customer invoice tran
   1. Go to **System administration > Workspaces > Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
   2. Select **Customer invoice**.
   3. Select **New long term retention** to open a wizard that you can use to schedule a new Customer invoice long term retention job.
-  4. Enter a name for the job, and then select **Next**.
-New long term retention jobs can be scheduled for sales order invoices or free text invoices or both on the same job.
+  4. Enter a name for the job, and then select **Next**. New long term retention jobs can be scheduled for sales order invoices or free text invoices or both on the same job.
   5. On the **Define criteria** page, select to archive sales order invoices, free text invoices or both.
   6. Enter the From date and To date. The fiscal periods must have a status of On hold or Permanently closed in that date range.
-  7. Select one or more legal entities.
-Note: One job is created for each legal entity and each invoice type selected.
+  7. Select one or more legal entities. One job is created for each legal entity and each invoice type selected.
   8. Select **Next**.
   9. Select the type of scheduling. Two types are supported:
      - **Single run** - long term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
@@ -55,8 +53,10 @@ Note: One job is created for each legal entity and each invoice type selected.
  11. Select the link in the **Results** column to view the progress or detailed logs.
 
 ## View historical data from the history table
-To view the historical transactional details 
+To view the historical transactional details select an archive job and then **View history data**. The **Archived invoices** page displays the invoices and lines. 
 
 Important
 
 ## Capacity reports
+The Finance application tables that are moved to Dataverse long term retention appear in the Power Platform admin center, under the database storage capacity reports. The live and history tables are available in the **Finance** section of the Power Platform admin center capacity reports. 
+
