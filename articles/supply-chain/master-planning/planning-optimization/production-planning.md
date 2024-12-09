@@ -39,7 +39,7 @@ The system takes the following actions:
 
 1. Create a planned production order to replenish demand and selects a BOM version to use.
 1. Schedule the order without reevaluating the BOM version, even if the date shifts as a result of scheduling.
-1. Asses the BOM lines for the selected BOM version to ensure they are valid for the scheduled dates.
+1. Assess the BOM lines for the selected BOM version to ensure they are valid for the scheduled dates.
 1. Create BOM line requirements for the valid BOM lines only.
 1. If required by the planning settings, cover BOM line requirements with supply down to the specific BOM level.
 1. Evaluate whether supply of the lower BOM levels will affect the delivery schedule for any parent production orders and adjusts the schedules accordingly.
