@@ -2071,6 +2071,8 @@
         items:
         - name: Work with forecast profiles
           href: demand-planning/forecast-profiles.md
+        - name: Demand forecasting algorithms
+          href: demand-planning/forecast-algorithm-types.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
         - name: Forecast with signals (preview)
