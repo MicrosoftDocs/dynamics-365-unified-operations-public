@@ -123,8 +123,10 @@ public void delete()
 public void update()
 {
     Common originalRecord = this.orig();
-    super();
-    DimensionValueRename::syncRenamedValue(this, originalRecord);
+     DimensionValueRenameV2 rename = DimensionValueRenameV2::construct(this, originalRecord);
+     rename.syncRenamedValuePreSuper();
+     super();
+     rename.syncRenamedValuePostSuper();
 }
    
 public void renamePrimaryKey()
