@@ -110,5 +110,6 @@ The illustration below shows an example of the **Update work order forecast** di
 
 ![Figure 2.](media/07-work-orders.png)
 
+If the toggle **Update forecast** is toggled to yes when dispatching a work order, the forecast is updated with any manual changes that were made to the hours.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
