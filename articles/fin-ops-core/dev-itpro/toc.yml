@@ -315,6 +315,8 @@ items:
           items:
           - name: Archive Dynamics 365 Finance General ledger
             href: sysadmin/archive-gl.md
+          - name: Archive Dynamics 365 customer invoice data
+            href: sysadmin/archive-custinvoices.md
           - name: Archive Dynamics 365 Finance Tax transactions
             href: sysadmin/archive-taxtrans.md
           - name: Archive Dynamics 365 Supply Chain Sales orders
