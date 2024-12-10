@@ -871,7 +871,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
       - name: Power Automate Process Mining content
         items:
-        - name: Analyze warehouse material movement through process mining (preview)
+        - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
@@ -4087,7 +4087,7 @@
           href: warehousing/warehouse-transactions.md
         - name: Optimize location directive queries
           href: warehousing/location-directives-optimize.md
-        - name: Analyze warehouse material movement through process mining (preview)
+        - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
         - name: Warehousing telemetry
           items:
