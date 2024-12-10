@@ -95,7 +95,7 @@ To run an existing data export profile, follow these steps.
     - **Jobs** – This tab shows a list of every run of the profile.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab. There, you can follow the status of the new export. The page isn't automatically refreshed. To update the status information, you must select **Refresh** on the grid toolbar.
-1. When the job is finished, select **Download** on the Action Pane to download the data as a CSV file and save it in your local download folder. <!--KFM: Always downloads the most recent run? Does it matter which row we select? Is there anything to say about teh time series created/updated (overwritten?) each time we run a job? Is there any point to schedule this type of job, since the downloads are manual anyway? -->
+1. When the job is finished, select **Download** on the Action Pane to download the data as a CSV file and save it in your local download folder.
 
 ### Create and manage profiles for exporting to CSV
 

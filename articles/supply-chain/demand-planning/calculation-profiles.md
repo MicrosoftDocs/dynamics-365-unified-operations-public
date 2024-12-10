@@ -62,8 +62,8 @@ To create or edit a calculation profile, follow these steps.
     - **Name** – Enter a name for the new profile.
     - **Description** – Enter a short description of the profile.
     - **Owner** – Select the user account that owns the profile.
-    - **Precision** – <!--KFM: Description needed -->
-    - **Category** – <!--KFM: Description needed. Can we customize this list? -->
+    - **Precision** – Specify number of decimal places that the profile should display for calculation results and output.
+    - **Category** – Choose the category of the output time series (*Forecast*, *Demand*, *Financials*, or *Miscellaneous*). The category affects the location where you will find the output time series under the **Planning data** heading on the navigation pane.
 
 1. Select **Next**.
 1. On the **Select and configure calculation model** page, you can select a calculation model preset to use with your current profile. Browse the presets that are listed under **Available model presets** to preview the calculation that each preset does. You can configure settings and customize the calculation model as you require after you save the profile. Therefore, select the preset that's closest to what you're looking for, and then select **Next**. For information about how to configure settings and customize the calculation model that a profile uses, and how to create new presets, see [Design calculation models](design-calculation-models.md).

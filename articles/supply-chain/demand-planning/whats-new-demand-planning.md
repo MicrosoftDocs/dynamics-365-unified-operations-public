@@ -39,7 +39,7 @@ One way to improve the accuracy of a forecast is to include input signal data be
 
 #### Autodetect seasonality patterns (preview)
 
-Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy. <!--KFM: Where is this? How do we set this up? -->
+Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy. Automatic seasonality detection is only available when you use the ARIMA [forecast algorithm](forecast-algorithm-types.md). Learn more in [Design forecast models](design-forecast-models.md#forecast-steps).
 
 ### New fixes and improvements in version 1.0.0.1700
 

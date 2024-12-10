@@ -66,8 +66,8 @@ This section describes the purpose of each type of forecast step. It also explai
 - **Created by** – The user who created the step.
 - **Time series** – The time series added by the step. When you first set up an *Input* step, the **Configure step** dialog provides a button that lets you choose the time series to add. After you have added a time series, the dialog shows the name of the time series and provides an **Edit** button that lets you change the time series and a **Filter** button that lets you set up filtering criteria based on fixed dates, relative dates, and/or field values.
 - **Time series version** – If the selected time series includes more than one version, then you can select a specific version here. By default, it uses the latest (current) version.
-- **Fill missing values** – <!-- KFM: Description needed. -->
-- **Fill missing values strategy** – <!-- KFM: Description needed. -->
+- **Fill missing values** – Choose whether the system should fill in placeholder values for time buckets where no value is provided by the input. In most cases, you should enable this feature because it results in improved forecasts.
+- **Fill missing values strategy** – Select the strategy the system should use to choose values to enter into any empty time buckets. In the current version, the only available strategy is *Zeros*, which means all missing values are set to zero.
 
 ### Signal steps (preview)
 
@@ -85,7 +85,7 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 - **Created by** – The user who created the step.
 - **Time series** – The time series added by the step. When you first set up a *Signal* step, the **Configure step** dialog provides a button that lets you choose the time series to add. After you have added a time series, the dialog shows the name of the time series and provides an **Edit** button that lets you change the time series and a **Filter** button that lets you set up filtering criteria based on fixed dates, relative dates, and/or field values.
 - **Time series version** – If the selected time series includes more than one version, then you can select a specific version here. By default, it uses the latest (current) version.
-- **Fill missing values** – <!-- KFM: Description needed. -->
+- **Fill missing values** – Choose whether the system should fill in placeholder values for time buckets where no value is provided by the input. In most cases, you should enable this feature because it results in improved forecasts. In the current version, all missing values are set to zero.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -123,7 +123,19 @@ When you add a *Signal* step, the system automatically creates a parallel branch
     - *ETS* – Error, trend, seasonality
     - *Prophet* – Facebook Prophet
 
-- **Seasonality hint (in periods of time buckets)** – <!-- KFM: Description needed. -->
+- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule (such as a weekly pattern where most customers shop on Saturdays). If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
+
+#### Autodetect seasonality patterns (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+If you're using the ARIMA algorithm, then the **Seasonality hint (in periods of time buckets)** is replaced by the **Select seasonality detection setting (preview)** setting, which provides the following options:
+
+- **Auto detection** – Select this option to enable an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations. Seasonality patterns typically vary for different products and different locations, so auto detection often works better than using forecast models that try to apply the same pattern everywhere.
+- **Detection using hint** – Select this option to use the value that you enter in the **Seasonality hint (in periods of time buckets)** field to help identify seasonality patterns. This option works best when you know the seasonality pattern in advance. For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Forecast with signals (preview)
 
@@ -140,7 +152,7 @@ You can use this type of step only if your forecast model has at least two paral
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. In the current version, only the *XGBoost* algorithm is available.
-- **Seasonality hint (in periods of time buckets)** – <!-- KFM: Description needed. -->
+- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule (such as a weekly pattern where most customers shop on Saturdays). If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -172,7 +184,3 @@ For more information about phase in/out functionality, including details about h
 *Save* steps save the result of the forecast model as a new or updated series. All forecast models must end with a single *Save* step.
 
 The forecast time series will be saved according to the settings that you configure each time that you run a forecast job as described in [Work with forecast profiles](forecast-profiles.md).
-
-### Custom steps
-
-<!--KFM: Description needed -->

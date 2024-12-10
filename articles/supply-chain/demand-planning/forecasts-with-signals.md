@@ -31,13 +31,13 @@ Follow these steps to set up a forecast that includes both input and a signal.
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
 1. After you've created and saved the profile, select the **Forecast model** tab.
-1. Set up your model. (Learn more in [Design forecast models](design-forecast-models.md).)
+1. Set up your model as follows. (Learn more in [Design forecast models](design-forecast-models.md).)
     - Use an *Input* tile to set up your primary time series.
     - Add a *Signal* tile to set up your signal time series in a parallel branch.
     - Add other steps as required to condition the data in each branch.
     - Add a *Forecast with signals* step to combine the two branches.
     - Complete the model by adding a *Save* step.
 
-1. On the Action Pane, select **Save**.
+    :::image type="content" source="media/forecast-with-signal-model.png" alt-text="A simple forecast model using forecast with signal" lightbox="media/forecast-with-signal-model.png":::
 
-:::image type="content" source="media/forecast-with-signal-model.png" alt-text="A simple forecast model using forecast with signal" lightbox="media/forecast-with-signal-model.png":::
+1. On the Action Pane, select **Save**.

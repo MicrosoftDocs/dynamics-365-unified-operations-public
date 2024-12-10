@@ -17,7 +17,7 @@ ms.search.form:
 Demand planning includes four popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, *Prophet*, and *XGBoost*.
 
 - Auto-ARIMA is suited for stationary data, which is data with constant mean, constant standard deviation, and no seasonality.
-- Error, trend, and seasonality (ETS) shines if your business case is simple and the data has various patterns like linear or exponential trends **or** if you would like the forecast to give more weight to most recent data.
+- Error, trend, and seasonality (ETS) shines if your business case is simple and the data has various patterns like linear or exponential trends *or* if you would like the forecast to give more weight to most recent data.
 - Prophet works best with complex, real-world data.
 - eXtreme Gradient Boosting (XGBoost) is able to generate a forecast based on two inputs.
 
@@ -42,8 +42,6 @@ The demand forecasting algorithm that you should use depends on the specific cha
 | Data is non-stationary | Not recommended | Acceptable | Recommended |
 | Require quick forecasting | Not recommended | Recommended | Acceptable |
 | Forecasting with focus on recent period | Acceptable | Recommended | Acceptable |
-
-<!-- KFM: Check these interpretations of the original colors -->
 
 ## Best fit model algorithm
 
@@ -121,37 +119,33 @@ The auto regressive (AR) and moving average (MA) components serve distinct but c
 
 The AR component applies the following equation:
 
-**Yt = c + ɸ1Yt – 1 + ɸ2Yt – 2 + ... ɸpYt – p + ϵt**
-
-<!-- KFM: check equation. Y(t)? ... Y(t-1)? -->
+**Y(t) = c &plus; ɸ1Y(t–1) &plus; ɸ2Y(t–2) &plus; ... &plus; ɸpY(t–p) &plus; ϵ(t)**
 
 Where:
 
-- *Yt* – Value at time t
+- *Y(t)* – Value at time t
 - *c* – constant
-- *ɸ1, ɸ2, ... ɸp* – Coefficients of the model
-- *ϵt* – white noise error term
+- *ɸ1, ɸ2, ... , ɸp* – Coefficients of the model
+- *ϵ(t)* – white noise error term
 
 #### Moving average calculation
 
 The MA component applies the following equation:
 
-**Yt = c + ϵt + ϴ1ϵt – 1 + ϴ2ϵt – 2 + ... + ϴqϵt – q**
-
-<!-- KFM: check equation. Y(t)? ϵ(t)? ... ϵ(t-1)? -->
+**Y(t) = c &plus; ϵ(t) &plus; ϴ1ϵ(t–1) &plus; ϴ2ϵ(t–2) &plus; ... &plus; ϴqϵ(t–q)**
 
 Where:
 
-- *Yt* – Value at time t
+- *Y(t)* – Value at time t
 - *c* – constant
-- *ϵt, ϵt – 1,  ... ϵt - q* – Error terms at time t, t – 1, ... ,t - q
+- *ϵ(t), ϵ(t–1),  ... , ϵ(t–q)* – Error terms at time t, t–1, ... , t-q
 - *ϴ1, ϴ2, .. ϴq* – Coefficients of the model
 
 #### ARIMA calculation
 
 The auto-ARIMA algorithm combines the AR and MA components using the following equation:
 
-**ARIMA =  AR + MA (*After differencing the time series*)**
+**ARIMA =  AR &plus; MA (*After differencing the time series*)**
 
 ## ETS: The shape shifter
 
@@ -187,15 +181,13 @@ Here's a step-by-step explanation of the algorithm:
 
 The ETS algorithm applies the following equation:
 
-**Ft+1 = αAt + (1 – α) Ft**
-
-<!-- KFM: check equation. F(t+1)? F(t)? ... A(t)? -->
+**F(t&plus;1) = αA(t) &plus; \[1–α\]F(t)**
 
 Where:
 
-- *Ft+1* – Forecasted value
-- *Ft* – Previous forecasted value
-- *At* – Actual historical value
+- *F(t&plus;1)* – Forecasted value
+- *F(t)* – Previous forecasted value
+- *A(t)* – Actual historical value
 - *α* – Smoothing constant (0 ≤ α ≤ 1)
 
 ## Prophet: The visionary forecasting guru
@@ -217,7 +209,7 @@ The algorithm follows these steps to generate forecasts:
 
 The Prophet algorithm applies the following equation:
 
-**y(t) = g(t) + s(t) + h(t) + ϵ(t)**
+**y(t) = g(t) &plus; s(t) &plus; h(t) &plus; ϵ(t)**
 
 Where:
 
@@ -237,29 +229,19 @@ XGBoost is a highly efficient and scalable implementation of gradient boosting. 
 A *decision tree* is a machine learning model that splits data into subsets based on signals values (also known as dimensions or features), forming a tree-like structure, below is an example of sales based on wether data:
 
 ```plaintext
-                             [Is temp > 25°C?]
-                            /                 \
-                         Yes                    No
-                        /                         \
-           [Is temp > 30°C?]                   [Is temp > 15°C?]
-              /       \                            /           \
-        Leaf: 80 SKU  Leaf: 60 SKU       [Is temp > 10°C?]   Leaf: 20 SKU
-                                             /         \
-                                      Leaf: 40 SKU    Leaf: 10 SKU
-```
-
-Here's the revised ASCII art for a regression decision tree predicting sales *only based on temperature*: <!--KFM: Both diagrams look the same except for "SKU"? Add more Yes and No labels? Or maybe remove them all? -->
-
-```plaintext
                           [Is temp > 25°C?]
                           /               \
                         Yes                No
                        /                     \
         [Is temp > 30°C?]               [Is temp > 15°C?]
             /      \                        /           \
-        Leaf: 80  Leaf: 60        [Is temp > 10°C?]     Leaf: 20
+         Yes        No                    Yes             No
+         /            \                   /                \
+    Leaf: 80      Leaf: 60        [Is temp > 10°C?]     Leaf: 20
                                         /       \
-                                    Leaf: 40  Leaf: 10
+                                    Yes         No
+                                    /            \
+                                Leaf: 40      Leaf: 10
 ```
 
 This example decision tree progresses as follows:
