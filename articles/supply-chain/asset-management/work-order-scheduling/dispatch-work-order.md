@@ -21,10 +21,10 @@ The dispatch functionality in Asset Management schedules work orders and work or
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.43 GA -->
 
-To use the **Update forecast** feature described later in this article, your system must meet the following requirements:
+To use the **Update forecast** option described later in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
-- The feature that is named *XXXX* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Adjust forecast hours to match schedule hours when work orders are dispatched* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
