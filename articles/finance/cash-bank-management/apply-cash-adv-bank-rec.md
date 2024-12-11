@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 11/01/2024
+ms.date: 12/11/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -143,4 +143,4 @@ To enter default descriptions for bank reconciliation postings, follow these ste
 2. There is a description type **Bank - reconciliation worksheet** in the list.
 3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 
-[![Default descriptions.](./media/defaultdescriptions.PNG)](./media/defaultdescriptions.PNG)
+![Default descriptions](./media/defaultdescriptions.PNG)]
