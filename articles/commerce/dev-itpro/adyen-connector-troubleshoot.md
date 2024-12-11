@@ -31,7 +31,7 @@ For all general issues, you should always consult the Store Commerce app or Inte
 
 ### Failing payment transactions
 
-When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS contain a payment service provider (PSP) reference ID provided by Adyen that's used to uniquely identify each transaction. Provide this reference number when you contact Adyen support for help with specific transactions.
+When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS contain a payment service provider (PSP) reference ID. The PSP reference ID is provided by Adyen to identify each transaction. Provide this reference ID when you contact Adyen support for help with specific transactions.
 
 ### The EFT terminal ID isn't set
 
@@ -50,7 +50,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <td>This issue can occur when the <strong>EFT POS Register Number</strong> field isn't set on the register or the IIS Hardware Station. It can also occur if the value is set but isn't correctly synced to the POS terminal. Finally, it can also occur when the value is cached.</td>
 </tr>
 <td><strong>Fix</strong></td>
-<td>Follow the instructions in <a href="adyen-connector-setup.md#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a>. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedule jobs. If the issue isn't resolved, consider reactivating the Store Commerce app, because the value of the <strong>EFT POS Register Number</strong> field could be cached and might need to be reset.</td>
+<td>Follow the instructions in <a href="adyen-connector-setup.md#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a>. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedule jobs. If the issue isn't resolved, consider reactivating the Store Commerce app, because the value of the <strong>EFT POS Register Number</strong> field may be cached and might need to be reset.</td>
 </tr>
 </tbody>
 </table>
