@@ -4,7 +4,7 @@ description: Learn how to dispatch a work order in Asset Management, which sched
 author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
-ms.date: 08/19/2019
+ms.date: 12/11/2024
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EntAssetScheduledExecution 
@@ -14,37 +14,40 @@ ms.search.form: EntAssetScheduledExecution
 
 [!include [banner](../../includes/banner.md)]
 
- 
+The dispatch functionality in Asset Management schedules work orders and work order jobs.
 
-You can schedule one work order or work order jobs to one worker using the **Dispatch** functionality.
+## Prerequisites for the update forecasts feature (preview)
 
-1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
 
-2. Select the work order in the list.
+To use the **Update forecast** feature described later in this article, your system must meet the following requirements:
 
-3. On the **General** tab, click **Dispatch**.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- The feature that is named *XXXX* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-4. In the **Schedule work order** dialog, select the worker in the **Worker** field.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-5. In the **Schedule hours** field, you can insert expected work hours in case expected work hours differ from forecast hours.
+## Dispatch a work order
 
-6. In the **Scheduled start** field, you can edit start date and time, if required.
+To dispatch a work order, follow these steps:
 
-7. If the scheduling process should observe capacity limitations regarding resources already scheduled on other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to **Yes**. If you want to see detailed information about the scheduling process, select **Yes** on the **Verbose** toggle button. This means detailed information about the calculated scores on the work order is shown in the Action center.
+1. Go to **Asset management** \> **Work orders** \> **All Work orders** or **Active work orders**.
+1. On the grid, select the work order you want to dispatch.
+1. On the Action Pane, open the **General** tab and select **Dispatch**.
+1. In the **Schedule work order** dialog, make the following settings:
+    - **Worker** – Select the worker.
+    - **Schedule hours** – If the expected work hours differ from the forecast hours, enter the number of expected work hours.
+    - **Scheduled start** – Edit start date and time, if required.
+    - **Asset**, **Tool**, and **Worker** – Set one or more of these to *Yes* if the scheduling process should observe capacity limitations regarding resources of the specified type that are already scheduled on other jobs.
+    - **Ignore schedule** – Set to *Yes* to ignore closed days in the calendar (applies to assets, workers, and tools).
+    - **Ignore scheduled execution** – Set to *Yes* to ignore limitations that may have been selected on the work order regarding scheduling. Learn more in [Scheduled execution](../setup-for-work-orders/scheduled-execution.md).
+    - **Verbose** – Set to *Yes* to see detailed information about the scheduling process. This detailed information about the calculated scores on the work order is shown in the Action center.
+    - **Update forecast** – Set to *Yes* to update the forecast to reflect any scheduling change you have made in this dialog.
 
-8. Select **Yes** on the **Ignore schedule** toggle button to ignore closed days in the calendar (applies to asset, worker, and tools). Select **Yes** on the **Ignore scheduled execution** toggle button to ignore limitations that may have been selected on the work order regarding scheduling. 
-
-    For information on the setup of scheduled execution, see the [Scheduled execution](../setup-for-work-orders/scheduled-execution.md) section.
-
-9. Click **OK**. The work order lifecycle state is automatically updated to the **Scheduled** lifecycle state specified **Asset management** > **Setup** > **Work orders** > **Lifecycle models**.
-
-The figure below shows an example of dispatch selections in the **Schedule work order** dialog.
-
-![Figure 1.](media/04-work-order-scheduling.png)
+1. Select **OK**. The work order lifecycle state is automatically updated to **Scheduled state** specified on the **Lifecycle models** page (available at **Asset management** \> **Setup** \> **Work orders** \> **Lifecycle models**).
 
 [!NOTE]
-If you want to delete the schedule on a work order, select the work order in **All work orders**, and then click **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.
-
-
+If you want to delete the schedule on a work order, select it and then, on the Action Pane, open the **General** tab and select **Delete schedule**. Remember to manually update the work order lifecycle state if you delete the schedule.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
