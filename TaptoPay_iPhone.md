@@ -52,6 +52,10 @@ Expand the “Pin pad” fast tab and add the following properties:
 1.	In the **PIN pad** field, select **Network**.
 2.	In the **Device name** field, enter **MicrosoftAdyenDeviceV001.**
 3.	Turn on the field named **Accept NFC Payments**. This is the new field that is introduced by the Tap to Pay on iPhone feature. If you do not see this field, then contact Microsoft as it means that the Tap to Pay on iPhone feature is not enabled in your environment.
+
+The below image shows the "Accept NFC payments" property on the Hardware Profile if the Tap to Pay on iPhone capability is enabled.
+![Accept NFC payments](./articles/commerce/media/Accept_NFC_Payments.png "Accept NFC payments")
+
  
 ### Associate a payment method with the store
 Tap to Pay on iPhone does not need a new payment method to be added to the store, rather it relies on the existing payment method which is mapped to the “Pay card” operation. Navigate to the “All stores” form (**Retail and commerce** > **Channels** > **Stores**) and verify there is a payment method defined which is associated to the **“Pay card”** operation. If such a payment method is not defined for the store, then create a new payment method to capture credit or debit cards.
@@ -69,7 +73,15 @@ This is an optional step for testing Tap to Pay, however, there are scenarios wh
 For Test environments, the **“Gateway environment”** property of the Adyen connector in Hardware profile must be set to **“Test”**. 
 For Live environments, the **“Gateway environment"** property of the Adyen connector depends on whether you want to pair the iPhone with the external Pin Pad terminal or not. 
 - If you **do not** want to pair an external Pin Pad terminal, then you can set to **“Custom”**. Along with this, you need to set the **“Optional Domain”** property of the Adyen connector in Hardware profile to the prefix value found in the Adyen customer portal. To find this value, sign in to the Live environment of Adyen customer portal and select the “API URLs” section under the “Developers” section. Select the appropriate data center, based on your region and copy the **“Prefix”** value shown on the portal. Refer to the image below showing the prefix property. This Prefix value should be pasted in the “Optional Domain” property of the Adyen connector.
+
+![Prefix value from Adyen customer portal](./articles/commerce/media/Prefix.png "Prefix value from Adyen customer portal")
+
 - If you **want** to pair an external Pin Pad terminal, then you can set the **“Gateway environment”** property to **“Live”** and **instead of** pasting the Prefix value on the **“Optional Domain”**, **paste it** as a key value pair on the **“Custom Settings”** property on the Adyen connector in Hardware profile as **iOSCustomGatewayTTP:”paste prefix here”**. For example, if the prefix value is "ecc3f8b08d323232-MS" the Customer settings property should be **iOSCustomGatewayTTP:”ecc3f8b08d323232-MS”**
+
+The below image shows the screenshot of the Hardware Profile with sample data if the Gateway environment property is set to Live. 
+
+![Hardware profile sample with Live setup](./articles/commerce/media/sampleHWP.png "Hardware profile sample with Live setup")
+
 > [!NOTE]
 > The prefix value should be passed within the double quotes
  
@@ -85,7 +97,8 @@ Navigate to the Distribution schedule form and run 9999 job to update the channe
 - Once the payment is successful, the user will see an approved message and a payment line will be added to the transaction.
 - Optionally, the change due dialog will display, unless it is configured to be hidden when there is no balance due. This will conclude the transaction.
 
- 
+  The below image shows the screenshots of the user experience of Store Commerce App along with Tap to pay on iPhone.
+  ![Store Commerce App with Tap to Pay on iPhone](./articles/commerce/media/TTP_ux.png "Store Commerce App with Tap to Pay on iPhone")
 
 ## Limitations
 The Tap to Pay for iPhone has a limitation related to customer orders. Tap to Pay on iPhone cannot be used to authorize the remaining balance for a customer order. Thus, the merchant can either capture the full order amount as deposit via Tap to Pay on iPhone or use the “Pay the balance later” option for the customer order. Alternatively, the merchant can pair the iPhone with a physical pin pad device and use that device for balance authorizations. 
