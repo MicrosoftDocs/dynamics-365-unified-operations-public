@@ -6,8 +6,8 @@ ms.author: kfend
 ms.topic: article
 ms.date: 01/18/2023
 ms.custom:
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: China (PRC)
 ms.search.validFrom: 2019-04-01
 ms.search.form: 
