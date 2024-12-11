@@ -47,7 +47,7 @@ To dispatch a work order, follow these steps:
 
 1. Select **OK**. The work order lifecycle state is automatically updated to **Scheduled state** specified on the **Lifecycle models** page (available at **Asset management** \> **Setup** \> **Work orders** \> **Lifecycle models**).
 
-[!NOTE]
-If you want to delete the schedule on a work order, select it and then, on the Action Pane, open the **General** tab and select **Delete schedule**. Remember to manually update the work order lifecycle state if you delete the schedule.
+> [!NOTE]
+> If you want to delete the schedule on a work order, select it and then, on the Action Pane, open the **General** tab and select **Delete schedule**. Remember to manually update the work order lifecycle state if you delete the schedule.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
