@@ -137,5 +137,4 @@ After you update the fields, select **Validate** to ensure the secret can be acc
 
     - The remaining three properties are measures from Customer Insights - Data that are displayed on the customer card in the client book. You can select up to three measures. However, you aren't required to select any. As mentioned previously, the system shows these values first, and then it shows the values for the client book attribute group.
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
