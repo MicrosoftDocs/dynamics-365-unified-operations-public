@@ -114,23 +114,28 @@ To set up the integration of Customer insights with Commerce, follow these steps
 4. Save the secret (in this example, "CI_Access_Secret") in the vault. When this secret is stored in the vault, the secret gets a name. Note the secret name (in this example, 'SecretName").
 5. To access the secret from Azure Key Vault, you need to create another application with an application ID and secret (in this example, "KeyVault_Access_AppID" and "KeyVault_Access_Secret"). Note the secret safely because it won't be displayed again.
 6. Next, you need to give permissions to the application to access the Key Vault from Commerce using APIs. Go to the application page in Azure portal. Under the **Manage** section, select **API permissions**. Add the permission to access **Azure key vault**. For this permission, select **Access policy**. Select the template as **Secret management**, and select the **Get**, **List**, **Decrypt**, and **Encrypt** options. 
-5. In Commerce headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
-6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and select **View** access to the application. For instructions, see [Permissions](/dynamics365/ai/customer-insights/pm-permissions).
-7. On the **System administration \> Setup \> Key Vault parameters** page in Commerce headquarters, update the following fields: 
-
-- **Key Vault url**: "KeyVaultURL" (from step 3 above).
-- **Key Vault client**: "KeyVault_Access_AppID" (from step 5 above).
-- **Key Vault secret key**: "KeyVault_Access_Secret" (from step 5 above).
-- Under **Secrets** section:
-    - **Name**: Any name, for example "CISecret".
-    - **Description**: Any value.
-    - **Secret**: **vault**:`//<Name of key vault>/<name of secret>>` For this example, it's `vault://KeyVaultName/SecretName`.
+7. In Commerce headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
+8. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and select **View** access to the application. For instructions, see [Permissions](/dynamics365/ai/customer-insights/pm-permissions).
+9. On the **System administration \> Setup \> Key Vault parameters** page in Commerce headquarters, update the following fields: 
+    - **Key Vault url**: "KeyVaultURL" (from step 3 above).
+    - **Key Vault client**: "KeyVault_Access_AppID" (from step 5 above).
+    - **Key Vault secret key**: "KeyVault_Access_Secret" (from step 5 above).
+    - Under **Secrets** section:
+        - **Name**: Any name, for example "CISecret".
+        - **Description**: Any value.
+        - **Secret**: **vault**:`//<Name of key vault>/<name of secret>>` For this example, it's `vault://KeyVaultName/SecretName`.
 
 After you update the fields, select **Validate** to ensure the secret can be accessed by the Commerce application.
 
-8. In Commerce headquarters, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message is displayed, and this option is set to **No**. 
+10. In Commerce headquarters, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message is displayed, and this option is set to **No**. 
 
-You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.) The remaining three properties are the measures that are shown on the customer card in the client book. You can select up to three measures to show on the customer card. However, you aren't required to select any measures. As mentioned previously, the system shows these values first, and then it shows the values for the client book attribute group.
+    - You can have multiple environments in Customer Insights - Data, such as **test** and **production**. In the **Environment instance ID** field, enter the appropriate environment that you want Commerce to reference. 
+    - In the **Alternate customer ID** field, select the field from the Customer Profile in Customer Insights - Data that corresponds to Commerce customer account number. This field neeeds to have been configured as the [primary key](/dynamics365/customer-insights/data/data-unification-map-tables#select-primary-key) for one of the sources contributing to [profile unification](/dynamics365/customer-insights/data/data-unification). If you are using Dual Write to synchronize customers from Commerce with Contacts in Dataverse as per the [mapping reference](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference#116), the attribute to use from the Customer Profile is the one mapped to **msdyn_contactpersonid**.
+
+    > [!NOTE]
+    > In Commerce, the customer account number is known as the customer ID but has been abbreviated in some places as customer account, account number, and account id. 
+
+    - The remaining three properties are measures from Customer Insights - Data that are displayed on the customer card in the client book. You can select up to three measures. However, you aren't required to select any. As mentioned previously, the system shows these values first, and then it shows the values for the client book attribute group.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
