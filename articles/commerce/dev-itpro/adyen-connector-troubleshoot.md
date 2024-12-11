@@ -26,7 +26,8 @@ This article provides troubleshooting guidance for common issues related to the 
 
 For all general issues, you should always consult the Store Commerce app or Internet Information Services (IIS) Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
 
-- **Windows Logs \> Application \> Filter Current Log** (On the **Event sources** drop-down list, select **Microsoft Dynamics - Store Commerce**.)
+- **Windows Logs \> Application \> Filter Current Log**</br>
+(On the **Event sources** drop-down list, select **Microsoft Dynamics - Store Commerce**.)
 - **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station**
 
 ### Failing payment transactions
