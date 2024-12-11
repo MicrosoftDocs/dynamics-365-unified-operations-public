@@ -15,8 +15,6 @@ ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
 Work order lifecycle states define the states that a work order can go through. Examples include **Created**, **Scheduled**, **In progress**, and **Ended**. Work order lifecycle states can be manually updated on a work order, or they can be automatically updated (for example, during work order scheduling).
 
 The work order lifecycle states that are required for your work orders must be attached to matching project stages on the **Project management and accounting parameters** page (**Project management and accounting** \> **Project management and accounting parameters**). You first set up project stages in Project management and accounting. You then set up work order lifecycle states and work order lifecycle models in Asset Management.
@@ -83,6 +81,12 @@ The following table describes the options in the **Work order** and **Schedule**
 
     ![Set up project stages for various project types page.](media/10-setup-for-work-orders.png)
 17. On the **Security roles** FastTab, select the security roles that are allowed to change to this lifecycle state. If no roles are selected, then all users that have access to work order lifecycle states are able to change to this lifecycle state.
+
+## Prerequisites
+Before you can use **Security roles** for work order lifecycle states, your system must meet the following requirements:
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.43 or later.
+- The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in Feature management.
+  
 > [!NOTE]
 > If the lifecycle state that you update a work order to is inactive, journals that are related to the work order but that haven't yet been posted are automatically deleted. This behavior helps guarantee automatic cleanup of unused data. (A lifecycle state is inactive if the **Active** option for it is set to **No** on the **General** FastTab of the **Work order lifecycle state** page.)
 >
