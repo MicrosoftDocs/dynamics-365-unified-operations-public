@@ -2,16 +2,16 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen
 description: This article provides troubleshooting guidance for common issues related to the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 02/01/2023
-ms.topic: article
+ms.date: 12/11/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: rassadi
+ms.author: shajain
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Troubleshoot Dynamics 365 Payment Connector for Adyen
@@ -26,8 +26,8 @@ This article provides troubleshooting guidance for common issues related to the 
 
 For all general issues, you should always consult the Store Commerce app or IIS Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
 
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-ModernPOS
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
+- **Windows Logs \> Application \> Filter Current Log** (On the **Event sources** drop-down list, select **Microsoft Dynamics - Store Commerce**.)
+- **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station**
 
 ### Failing payment transactions
 
