@@ -74,7 +74,7 @@ For information on enabling a dedicated Hardware station for the store, see [Con
 
 ### (Optional) Enable a Pin pad terminal along with Tap To Pay
 
-This is an optional step for testing Tap to Pay on iPhone. There are scenarios where the Near Field Communication (NFC)-based tap capability isn't sufficient. For example, the customer doesn't have an NFC enabled card, or the customer wants to use a gift card, or a wallet. In such cases, it's useful to pair the iPhone running the Store Commerce App, with a PIN pad device to enable these additional use cases. To do so, navigate to the register used with the iPhone and select the **Configure IP address** button under the Hardware section at the top toolbar and add the details under the PIN pad FastTab. For information about PIN pad onboarding, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md#onboard-and-configure-an-adyen-payment-terminal).
+This optional step is for testing Tap to Pay on iPhone. There are scenarios where the Near Field Communication (NFC)-based tap capability isn't sufficient. For example, the customer doesn't have an NFC enabled card, or the customer wants to use a gift card, or a wallet. In such cases, it's useful to pair the iPhone running the Store Commerce App, with a PIN pad device to enable these additional use cases. To do so, navigate to the register used with the iPhone and select the **Configure IP address** button under the Hardware section at the top toolbar and add the details under the PIN pad FastTab. For information about PIN pad onboarding, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md#onboard-and-configure-an-adyen-payment-terminal).
 
 ### Test with test and live environments
 
@@ -104,7 +104,7 @@ Navigate to the Distribution schedule form and run 9999 job to update the channe
 - Selecting **Tender payment** activates the Tap to Pay screen on iPhone displaying the selected amount.
 - The store associate can now request the customer to tap their physical card or mobile phone with a digital wallet on the iPhone.
 - Once the payment is successful, the user sees an approved message and a payment line is added to the transaction.
-- Optionally, the change due dialog displays unless it's configured to be hidden when there's no balance due. This concludes the transaction.
+- Optionally, the change due dialog displays unless it's configured to be hidden when there's no balance due. This step concludes the transaction.
 
   The following example image shows the screenshots of the user experience of Store Commerce App along with Tap to pay on iPhone.
   ![Store Commerce App with Tap to Pay on iPhone](../media/TTP_ux.png "Store Commerce App with Tap to Pay on iPhone")
