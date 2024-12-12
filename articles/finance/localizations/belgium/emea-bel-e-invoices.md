@@ -38,24 +38,13 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
-## ========================================
-
 ## Create the Azure Key Vault configuration
 
 Create an Azure key vault to store the required secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 Add the following required elements in the key vault:
 
-- The secret for the obtained **token**.
-- The secret for the **client ID**, which must equal the taxpayer's tax identification number (NIP).
-- The secret for the obtained **public key**.
-
-    > [!NOTE]
-    > The value of the public key must be wrapped in the following commands.
-    >
-    > `----BEGIN PUBLIC KEY----`  
-    > &hellip;  
-    > `----END PUBLIC KEY----`
+- The secret for the **token** that grants authorization to access the Edicom services. Must be preliminary obtained from Edicom as was described in the prerequisites.
 
 ## Configure electronic invoicing Key Vault parameters
 
@@ -68,12 +57,11 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each secret that is described in the previous section.
 
     - <a id="Tok"></a>The **token** element of the **Secret** type.
-    - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
-    - <a id="PK"></a>The **Public key** element of the **Secret** type.
 
-    > [!NOTE]
-    > The values in the **Name** column should match the names of the secrets that are described in the previous section.
+> [!NOTE]
+> The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
+## ===========================
 
 ## Import the electronic invoicing feature
 
