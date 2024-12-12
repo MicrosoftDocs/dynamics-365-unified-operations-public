@@ -100,13 +100,62 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 - **Created by** – The user who created the step.
 - **Handle outliers** – Select one of the following options:
 
-    - *Interquartile range (IQR)* – <!-- KFM: Improved description needed. -->
-    - *Seasonal and trend decomposition using loess (STL)* – <!-- KFM: Improved description needed. -->
+    - *Interquartile range (IQR)*: The IQR is the range between the first quartile (Q1) and the third quartile (Q3):
 
-- **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
-- **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
-- **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. <!-- KFM: Improved description needed. -->
+      #### Formula: **IQR=Q3−Q1**
 
+      - Q1 (25th percentile): The value below which 25% of the data lies.
+      - Q3 (75th percentile): The value below which 75% of the data lies.
+      - The IQR measures the spread of the middle 50% of the data.
+      - Any data outside of the Interquartile range will be be identified as outlier which will be smoothed later on.
+
+    - *Seasonal and trend decomposition using Loess (STL)*
+      
+      #### Algorithm
+      1. STL decomposes the time series into 3 components:
+            1. **Trend**.
+            1. **Seasonality**.
+            1. **Residuals**: A residual is basically the raw time series after removing trend and seasonality from it.
+
+        :::image type="content" source="media/stl-decomposition.png" alt-text="Diagram that shows 4 plots, an original time series, an upwards trend decomposed from the time series, a plot with spikes representing the seasonality of the time series and the residuals after removing trend and seasonality.":::
+      
+      2. STL tries to smooth the outliers using LOESS (Locally Estimated Scatterplot Smoothing).
+      
+      3. LOESS is a generalization of the moving average and polynomial regression, where it tries to fit a graph through scattered data points dots thus smooths the residuals during this process.
+
+      :::image type="content" source="media/stl-fitting-plot.png" alt-text="Diagram that shows scattered plot of residuals and a graph that smoothes the residuals by attempting to fit it in the dots.":::
+      
+      4. After calculating mean and standard deviation, it uses them to get rid of the outliers and mitigate anomalies.
+      
+      5. Lastly, STL adds again the seasonality and the trend to the newly smoothed residual and you can proceed to the next step.
+      
+      
+
+- **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*.
+   - Multiplier of the IQR is determined by the user.​
+     - Lower bound = Q1 - Multiplier  X IQR​
+     - Upper bound = Q3 + Multiplier X IQR
+   
+   - A high multiplier increases the range within which data points are considered non-outliers.
+   This results in having a more lenient definition of your boundaries and include more points
+   Thus, the IQR method will be less sensitive to variations in the time series.
+   - A low multiplier decreases the range within which data points are considered non-outliers
+   That means you get stricter boundaries, and more data points are will get removed.
+   
+- **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. The 2 available options are Median/Mean, this will replace the outliers with the median/mean of the data.
+- **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window used for the LOESS smoother when estimating the seasonal component.
+  - STL uses LOESS to smooth the seasonal component over time. The seasonal period helps divide the data into segments, ensuring the algorithm correctly extracts repeating patterns.
+  For accurate decomposition:
+  - A well-defined seasonal period captures the true periodicity of the data and  STL will successfully isolate the seasonality, making the trend and residuals more interpretable
+  - An incorrect period results in poor seasonal extraction, leading to inaccurate trend and residual components.
+    - Too short: May miss the full seasonal cycle, causing overlapping or incomplete patterns.
+    - Too long: Adds unnecessary complexity, potentially treating random noise as seasonality.
+### When to use what?
+| Scenario                             | IQR             | STL             |
+|--------------------------------------|-----------------|-----------------|
+| Data with Seasonal or Trend Patterns | Not Recommended | Recommended     |
+| Robust Handling of Outliers          | Recommended     | Not Recommended |
+| Sensitivity to Extreme Values        | Recommended     | Recommended     |
 ### Forecast steps
 
 *Forecast* steps apply a selected forecast algorithm to the input time series to create a forecast time series.
@@ -123,7 +172,46 @@ When you add a *Signal* step, the system automatically creates a parallel branch
     - *ETS* – Error, trend, seasonality
     - *Prophet* – Facebook Prophet
 
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule (such as a weekly pattern where most customers shop on Saturdays). If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
+- **Seasonality hint (in periods of time buckets)** – 
+Seasonality refers to regular and predictable patterns in a time series that occur at fixed intervals due to recurring events or influences. These patterns are often driven by factors such as weather, holidays, or economic cycles.
+
+- **Example**: 
+  - Increased retail sales every December due to holiday shopping.
+  - Higher electricity demand during summer months due to air conditioning.
+
+### **How is Seasonality Different from Cycles?**
+While both seasonality and cycles involve repeating patterns, there are key differences:
+
+| **Aspect**            | **Seasonality**                                              | **Cycles**                                                     |
+|------------------------|------------------------------------------------------------|----------------------------------------------------------------|
+| **Frequency**          | Fixed, regular intervals (e.g., daily, weekly, yearly).     | Variable, often irregular and influenced by external factors. |
+| **Duration**           | Short-term and predictable (e.g., seasonal sales).         | Long-term and unpredictable (e.g., business cycles).          |
+| **Cause**              | Calendar-based events or natural patterns.                 | Economic, social, or structural forces.                       |
+| **Examples**           | Summer travel peaks, holiday shopping trends.              | Economic recession cycles, stock market booms and busts.      |
+
+Specifying the seasonal period hint aids the forecasting algorithm/stl outlier to capture the periodicy in order to capture the patterns and take into account seasonality when forecasting the data or removing outlier.
+
+### **Dangers of Incorrectly Specifying Seasonality**
+Specifying the seasonality incorrectly (too long or too short) can significantly affect the analysis or forecasting results.
+
+#### **1. Too Short Seasonality**
+When the seasonal period is shorter than the actual cycle:
+- **Missed patterns**: Important parts of the seasonal pattern are excluded, leading to incomplete seasonality extraction.
+- **Trend contamination**: Some seasonal variations may be mistaken for the trend component, distorting the trend estimation.
+- **Residual issues**: Residuals may show unexplained periodicity, indicating the model failed to capture seasonality properly.
+
+**Example**: 
+- Using a seasonal period of **6 months** for yearly retail sales data results in only part of the yearly cycle being captured, missing critical holiday season peaks.
+
+#### **2. Too Long Seasonality**
+When the seasonal period is longer than the actual cycle:
+- **Overfitting**: Noise or random fluctuations may be falsely interpreted as seasonality.
+- **Distorted decomposition**: Artificially long seasonal cycles can obscure the true trend or residual components.
+- **Increased complexity**: The model may become unnecessarily complex, making it harder to interpret and validate.
+
+**Example**: 
+- Using a seasonal period of **24 months** for data with an annual cycle results in overfitting, where small irregularities in the data are treated as seasonal patterns.
+
 
 #### Autodetect seasonality patterns (preview)
 
