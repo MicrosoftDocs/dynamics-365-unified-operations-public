@@ -4,7 +4,7 @@ description: Learn how to set up reconciliation matching rules and reconciliatio
 author: music727 
 ms.author: wangchen
 ms.topic: article
-ms.date: 11/25/2024
+ms.date: 12/12/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -36,7 +36,7 @@ The feature **Advanced bank reconciliation improvement: enable group conditions 
 - Many to many
 
 >  [!NOTE] 
-> The data entity **BankReconciliationMatchingRuleEntity** to import and export reconciliation matching rules can only be used if the **Modern bank reconciliation** feature is disabled. 
+> The **BankReconciliationMatchingRuleEntity** data entity to import and export reconciliation matching rules can only be used if the **Modern bank reconciliation** feature is disabled. 
 
 When you select one of these matching types, grouping conditions are available in the reconciliation matching rule setup. Bank statement records and bank transaction records are grouped by the grouping conditions that are defined in this step, and then the remaining matching steps are run.
 
