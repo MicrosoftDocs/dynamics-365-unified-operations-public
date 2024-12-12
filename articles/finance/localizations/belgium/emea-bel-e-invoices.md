@@ -17,23 +17,26 @@ ms.dyn365.ops.version: AX 10.0.45
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Belgium. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format in Microsoft Dynamics 365 Finance.
+This article provides information to help you get started with Electronic invoicing for Belgium. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format in Microsoft Dynamics 365 Finance using the last-mile connector.
+
+![Screenshot that shows e-invoices flow for Belgium.](../mediaemea-bel-einoices-flow.jpg)
 
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-- The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure, [NemHandel](https://nemhandel.dk/).
-- The company must have a signed agreement with the provider of electronic document delivery service that secures electronic document interchange in OIOUBL and PEPPOL formats.
-- Among the registered profile IDs, the company should have the following profiles that Microsoft Dynamics 365 Finance uses for electronic document interchange:
+- The company must be a registered tax payer in Belgium.
+- The company must have a signed agreement with the provider of electronic document delivery service that secures electronic document interchange in the PEPPOL format.
+- Among the registered profile IDs, the company should have the following profile that Microsoft Dynamics 365 Finance uses for electronic document interchange:
 
-    - **Procurement-BilSim-1.0** – This profile is used to interchange documents in OIOUBL format.
     - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** – This profile is used to interchange documents in PEPPOL format.
 
 - The company must obtain, from the service provider, the required credentials to enable integration of the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 - In the key vault, create a secret for the token that grants authorization to access the infrastructure of the provider of electronic document delivery service, and set up Azure Key Vault as described in [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+
+## ========================================
 
 ## Use the country-specific configuration for the Danish electronic invoice (DK) feature
 
