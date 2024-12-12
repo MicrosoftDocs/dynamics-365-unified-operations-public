@@ -21,6 +21,9 @@ This article provides information to help you get started with Electronic invoic
 
 ![Screenshot that shows e-invoices flow for Belgium.](../media/emea-bel-einoices-flow.jpg)
 
+> [!NOTE]
+> The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
+
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
@@ -34,9 +37,141 @@ Before you begin the procedures in this article, the following prerequisites mus
 - The company must obtain, from the service provider, the required credentials to enable integration of the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
-- In the key vault, create a secret for the token that grants authorization to access the infrastructure of the provider of electronic document delivery service, and set up Azure Key Vault as described in [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 ## ========================================
+
+## Create the Azure Key Vault configuration
+
+Create an Azure key vault to store the required secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+
+Add the following required elements in the key vault:
+
+- The secret for the obtained **token**.
+- The secret for the **client ID**, which must equal the taxpayer's tax identification number (NIP).
+- The secret for the obtained **public key**.
+
+    > [!NOTE]
+    > The value of the public key must be wrapped in the following commands.
+    >
+    > `----BEGIN PUBLIC KEY----`  
+    > &hellip;  
+    > `----END PUBLIC KEY----`
+
+## Configure electronic invoicing Key Vault parameters
+
+To configure electronic invoicing Key Vault parameters, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section of this article.
+1. In the **SAS token secret** field, select the name of the storage account secret URL that must be used to authenticate access to the storage account.
+1. Select **Key Vault parameters**.
+1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each secret that is described in the previous section.
+
+    - <a id="Tok"></a>The **token** element of the **Secret** type.
+    - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
+    - <a id="PK"></a>The **Public key** element of the **Secret** type.
+
+    > [!NOTE]
+    > The values in the **Name** column should match the names of the secrets that are described in the previous section.
+
+
+## Import the electronic invoicing feature
+
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Polish electronic invoice (PL)** Globalization feature import.
+
+    - **Invoice model**
+    - **Invoice model mapping**
+    - **Advance invoice model mapping** 
+    - **Sales e-invoice (PL)**
+    - **Project e-invoice (PL)**
+    - **Advance e-invoice (PL)**
+    - **Customer invoice context model**
+    - **Response message model**
+    - **Response message model mapping to destination (PL)**
+    - **KSeF response data import format (PL)**
+
+    > [!NOTE]
+    > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, additionally import the latest versions of the following Electronic reporting configurations required for receiving incoming vendor invoices.
+
+    - **Vendor invoice import (PL)**
+    - **Vendor invoice Mapping to destination (PL)**
+    
+## Configure the import channel
+
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
+1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
+1. Open the **DataChannel** definition for editing in the designer.
+1. In the **Data sources** tree, expand the **$Context\_Channel** container.
+1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel. Make a note of the value, because you will use it in later configuration steps.
+
+    :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
+
+1. Save your changes and complete the derived configuration.
+
+
+## Configure the electronic invoicing feature
+
+Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+
+To review and update the **Polish electronic invoice (PL)** electronic invoicing feature configuration, follow these steps.
+
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Polish KSEF services.
+
+    - **EnvironmentName** – select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
+    - **PolishClientID** – select the name of the [client ID](#ClID) that you previously created.
+    - **PolishImportDataChannel** – enter the [name of the data channel](#ImpChn) that you previously defined.
+    - **PolishPublicKey** – select the name of the [public key](#PK) that you previously created.
+    - **PolishToken** – select the name of the [token](#Tok) that you previously created.
+
+    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Poland.](e-inv-pol-feature-parameters.jpg)
+
+1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
+1. On the **Applicability rules** tab, in the **Set up applicability rule** section, in the **Value** field, enter the [name of the data channel](#ImpChn) that you previously defined.
+1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
+1. Select **Save**, and close the page.
+1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+
+## Configure electronic document parameters
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Project invoice**, and **Advance invoice** table names.
+1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+
+    :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page."::: 
+
+    > [!NOTE]
+    > If you have created the [derived analogues](#Context) of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
+
+1. For the **Customer Invoice journal** table name, select **Response types**.
+1. Select **New** to create a response type, and enter the following values:
+
+    - In the **Response type** field, enter **ResponseData** (the default value).
+    - In the **Submission status** field, select **Pending**.
+    - In the **Model mapping** field, select **KSeF response data import format (PL)**.
+
+    :::image type="content" source="e-inv-pol-response-type.jpg" alt-text="Screenshot of the setup of the new response type on the Electronic document tab of the Electronic document parameters page.":::
+
+    > [!NOTE]
+    > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
+
+1. Repeat steps 4 and 5 for the **Project invoice** and **Advance invoice** table names.
+1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
+1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
+1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
+1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+
+    :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
+
+1. Select **Save**, and close the page.
+
+## =======================================
 
 ## Use the country-specific configuration for the Danish electronic invoice (DK) feature
 
