@@ -49,7 +49,7 @@ The following table shows what is a cost object and what is an inventory object.
     -   Posted quantity
 -   The **Average unit cost** field is a calculated field. The value is calculated by dividing the **Value** value by the **Quantity** value.
 
-**Note:** The **Include physical value **parameter has no effect on the preceding calculations.
+**Note:** The **Include physical value** parameter has no effect on the preceding calculations.
 
 ## Related information
 
