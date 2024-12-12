@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 This article provides information to help you get started with Electronic invoicing for Belgium. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format in Microsoft Dynamics 365 Finance using the last-mile connector.
 
-![Screenshot that shows e-invoices flow for Belgium.](../mediaemea-bel-einoices-flow.jpg)
+![Screenshot that shows e-invoices flow for Belgium.](../media/emea-bel-einoices-flow.jpg)
 
 ## Prerequisites
 
