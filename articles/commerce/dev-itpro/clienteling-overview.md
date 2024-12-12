@@ -4,7 +4,7 @@
 title: Clienteling overview
 description: This article provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
-ms.date: 06/04/2024
+ms.date: 12/12/2024
 ms.topic: overview
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -22,7 +22,7 @@ ms.search.validFrom: 2018-10-01
 
 [!include [banner](../includes/banner.md)]
 
-Many retailers, especially high-end specialty retailers, want their sales associates to form long-term relationships with their key customers. The associates are expected to know about these customers' likes and dislikes, purchase history, product preferences, and important dates, such as anniversaries and birthdays. Associates need a place where they can capture this information and easily find it when it's required. If this information is available in a single view, the associates can easily target customers who meet specific criteria. For example, they can find all customers who prefer to shop for handbags, or customers who have an important event approaching, such as a birthday or anniversary.
+Many retailers, especially high-end specialty retailers, want their sales associates to form long-term relationships with their key customers. The associates are expected to know about these customers' likes and dislikes, purchase history, product preferences, and important dates, such as anniversaries and birthdays. Associates need a place where they can capture this information and easily find it when needed. If this information is available in a single view, the associates can easily target customers who meet specific criteria. For example, they can find all customers who prefer to shop for handbags, or customers who have an important event approaching, such as a birthday or anniversary.
 
 The following video walks through an example scenario of clienteling in Dynamics 365 Commerce.
 
@@ -35,7 +35,7 @@ In Microsoft Dynamics 365 Commerce, retailers can use the client book functional
 
 The client book includes customer cards that show contact information for each customer, together with three more properties that are defined by the retailer and configured in headquarters. Retailers can decide the three most important things that sales associates should know about customers. For example, a jewelry retailer might want to include important dates such as anniversaries or birthdays, because these dates are occasions when people might buy more jewelry. Similarly, a fashion retailer might want to include the customer's preferred shopping interests and brands.
 
-The client book also lets sale associates filter the list so that it shows only customers who meet specific criteria. For example, a new collection of shoes has arrived in the store, and an associate wants to inform customers who like to buy shoes. In this case, the associate can filter the client book to find the relevant customers and then take further action.
+The client book also lets sale associates filter the list so that it shows only customers who meet specific criteria. For example, a new collection of shoes arrives in the store, and an associate wants to inform customers who like to buy shoes. In this case, the associate can filter the client book to find the relevant customers and then take further action.
 
 If any customers are no longer considered key customers for some reason, and therefore shouldn't be closely managed, sales associates can remove them from their client book.
 
@@ -104,7 +104,7 @@ To turn on the integration of Customer Insights with Commerce, you must make sur
 
 To set up the integration of Customer insights with Commerce, follow these steps.
 
-1. In the Azure portal, register a new application (for example, "CI_Access_name") and make a note of the application name, application ID, and secret. This information is used for service-to-service authentication between Commerce and Customer Insights. Note the secret safely, as you are required to save it in the key vault. For the following example, use "CI_Access_name", "CI_Access_AppID", and "CI_Access_Secret" for the application name, application ID, and secret, respectively. For more information, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+1. In the Azure portal, register a new application (for example, "CI_Access_name") and make a note of the application name, application ID, and secret. This information is used for service-to-service authentication between Commerce and Customer Insights. Note the secret safely, as you're required to save it in the key vault. For the following example, use "CI_Access_name", "CI_Access_AppID", and "CI_Access_Secret" for the application name, application ID, and secret, respectively. For more information, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Take steps so that you will remember to change the secret before it expires. Otherwise, the integration will unexpectedly stop.
@@ -114,9 +114,9 @@ To set up the integration of Customer insights with Commerce, follow these steps
 4. Save the secret (in this example, "CI_Access_Secret") in the vault. When this secret is stored in the vault, the secret gets a name. Note the secret name (in this example, 'SecretName").
 5. To access the secret from Azure Key Vault, you need to create another application with an application ID and secret (in this example, "KeyVault_Access_AppID" and "KeyVault_Access_Secret"). Note the secret safely because it won't be displayed again.
 6. Next, you need to give permissions to the application to access the Key Vault from Commerce using APIs. Go to the application page in Azure portal. Under the **Manage** section, select **API permissions**. Add the permission to access **Azure key vault**. For this permission, select **Access policy**. Select the template as **Secret management**, and select the **Get**, **List**, **Decrypt**, and **Encrypt** options. 
-5. In Commerce headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
-6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and select **View** access to the application. For instructions, see [Permissions](/dynamics365/ai/customer-insights/pm-permissions).
-7. On the **System administration \> Setup \> Key Vault parameters** page in Commerce headquarters, update the following fields: 
+7. In Commerce headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
+8. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and select **View** access to the application. For instructions, see [Permissions](/dynamics365/ai/customer-insights/pm-permissions).
+9. On the **System administration \> Setup \> Key Vault parameters** page in Commerce headquarters, update the following fields: 
 
 - **Key Vault url**: "KeyVaultURL" (from step 3 above).
 - **Key Vault client**: "KeyVault_Access_AppID" (from step 5 above).
@@ -126,11 +126,17 @@ To set up the integration of Customer insights with Commerce, follow these steps
     - **Description**: Any value.
     - **Secret**: **vault**:`//<Name of key vault>/<name of secret>>` For this example, it's `vault://KeyVaultName/SecretName`.
 
-After you update the fields, select **Validate** to ensure the secret can be accessed by the Commerce application.
+10. After you update the fields, select **Validate** to ensure that the secret can be accessed by the Commerce application.
 
-8. In Commerce headquarters, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message is displayed, and this option is set to **No**. 
+11. In Commerce headquarters, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message is displayed, and this option is set to **No**. 
+    - You can have multiple environments in Customer Insights - Data, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment that you want Commerce to reference. 
+    - In the **Alternate customer ID** field, select the field from the customer profile in Customer Insights - Data that corresponds to the Commerce customer account number. This field must be configured as the [primary key](/dynamics365/customer-insights/data/data-unification-map-tables#select-primary-key) for one of the sources contributing to [profile unification](/dynamics365/customer-insights/data/data-unification). If you're using dual-write to synchronize customers from Commerce with contacts in Dataverse per the [mapping reference](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference#116), the attribute to use from the customer profile is the one mapped to **msdyn_contactpersonid**.
 
-You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.) The remaining three properties are the measures that are shown on the customer card in the client book. You can select up to three measures to show on the customer card. However, you aren't required to select any measures. As mentioned previously, the system shows these values first, and then it shows the values for the client book attribute group.
+    > [!NOTE]
+    > In Commerce the customer account number is known as the customer ID, but is referred to in some places as the customer account, the account number, and the account ID.
+
+    - The remaining three properties are measures from Customer Insights - Data that are displayed on the customer card in the client book. You can select up to three measures, but aren't required to select any. The system shows these values first, and then it shows the values for the client book attribute group.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
