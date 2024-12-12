@@ -84,7 +84,7 @@ For Live environments, the **Gateway environment** property of the Adyen connect
 
 ![Prefix value from Adyen customer portal](../media/Prefix.png)
 
-- If you want to pair an external PIN pad terminal you can set the **Gateway environment** property to **Live** and instead of pasting the Prefix value on the **Optional Domain**, paste it as a key value pair on the **Custom Settings** property on the Adyen connector in Hardware profile as **iOSCustomGatewayTTP:<_paste prefix here_>**. For example, if the prefix value is "ecc3f8b08d323232-MS" the Customer settings property should be **iOSCustomGatewayTTP:”ecc3f8b08d323232-MS**
+- If you want to pair an external PIN pad terminal you can set the **Gateway environment** property to **Live** and instead of pasting the Prefix value on the **Optional Domain**, paste it as a key value pair on the **Custom Settings** property on the Adyen connector in Hardware profile as **iOSCustomGatewayTTP:<"_paste prefix here_">**. For example, if the prefix value is "ecc3f8b08d323232-MS" the **Custom Settings** property value should be **iOSCustomGatewayTTP:"ecc3f8b08d323232-MS"**
 
 The following example image shows the screenshot of the Hardware Profile with sample data if the Gateway environment property is set to Live. 
 
