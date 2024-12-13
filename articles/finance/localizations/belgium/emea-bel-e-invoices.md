@@ -65,32 +65,33 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 > [!NOTE]
 > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
-## ===========================
-
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Polish electronic invoice (PL)** Globalization feature import.
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Belgian electronic invoice (BE)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Belgian electronic invoice (BE)** Globalization feature import.
 
     - **Invoice model**
     - **Invoice model mapping**
-    - **Advance invoice model mapping** 
-    - **Sales e-invoice (PL)**
-    - **Project e-invoice (PL)**
-    - **Advance e-invoice (PL)**
+    - **PEPPOL Sales e-invoice** 
+    - **PEPPOL Sales e-credit note**
+    - **PEPPOL Project e-invoice**
+    - **PEPPOL Project e-credit note**
     - **Customer invoice context model**
     - **Response message model**
-    - **Response message model mapping to destination (PL)**
-    - **KSeF response data import format (PL)**
+    - **Edicom Response Processing**
+    - **Error log import Json**
 
     > [!NOTE]
     > If due to some reason the mentioned Electronic reporting configurations were not imported then import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, additionally import the latest versions of the following Electronic reporting configurations required for receiving incoming vendor invoices.
 
-    - **Vendor invoice import (PL)**
-    - **Vendor invoice Mapping to destination (PL)**
+    - **Vendor invoice import**
+    - **Vendor invoice Mapping to destination**
+    - **Import invoice context model**
     
+## ===========================
+
 ## Configure the import channel
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
