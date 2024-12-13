@@ -66,7 +66,7 @@ The following table lists the features that have been removed from Feature manag
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.41 includes platform updates. To learn more, see [Platform updates for version 10.0.41 of finance and operations apps](../../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-41.md).
+Dynamics 365 Finance version 10.0.41 includes platform updates. To learn more, see [Platform updates for version 10.0.41 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-41.md).
 
 ### Bug fixes
 
@@ -75,7 +75,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../../localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../../../localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2024 release wave 1 plan
 
