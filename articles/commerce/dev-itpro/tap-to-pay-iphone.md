@@ -114,8 +114,9 @@ After you set the **Gateway environment** property, in headquarters go to **Reta
 - Once the payment is successful, the user sees an approved message and a payment line is added to the transaction.
 - Optionally, the **Change due** dialog displays unless it's configured to be hidden when there's no balance due. This step concludes the transaction.
 
-  The following example image shows screenshots of the user experience of Store Commerce app with Tap to Pay on iPhone enabled.
-  ![Store Commerce App with Tap to Pay on iPhone](../media/TTP_ux.png)
+The following example image shows screenshots of the user experience of Store Commerce app with Tap to Pay on iPhone enabled.
+
+![Store Commerce App with Tap to Pay on iPhone](../media/TTP_ux.png)
 
 ## Limitations of the Tap to Pay on iPhone feature
 
