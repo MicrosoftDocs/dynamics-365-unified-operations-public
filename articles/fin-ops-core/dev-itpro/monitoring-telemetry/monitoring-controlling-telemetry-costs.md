@@ -40,7 +40,7 @@ Managing telemetry costs in Dynamics 365 is crucial, as data sent to Azure Appli
 
 ## Best Practices from Azure Application Insights Team
 
-- **Workspace-Based Resources**: Ensure that your Application Insights resources are workspace-based to take advantage of cost-saving features like Basic Logs and commitment tiers. ([learn.microsoft.com](https://learn.microsoft.com/en-us/azure/azure-monitor/best-practices-cost?utm_source=chatgpt.com))
+- **Workspace-Based Resources**: Ensure that your Application Insights resources are workspace-based to take advantage of cost-saving features like Basic Logs and commitment tiers. ([learn.microsoft.com](https://learn.microsoft.com/azure/azure-monitor/best-practices-cost))
 - **Data Ingestion Management**: Configure data collection to avoid unnecessary ingestion. Regularly review and adjust the types and amounts of data collected to align with your monitoring needs.
 - **Retention and Archiving Configuration**: Set appropriate retention periods for different data types and utilize archiving for long-term storage to manage costs effectively.
 
@@ -48,9 +48,9 @@ Managing telemetry costs in Dynamics 365 is crucial, as data sent to Azure Appli
 
 ## Additional Resources
 
-- **Well-Architected Framework Perspective on Application Insights**: Provides best practices for Application Insights based on the five pillars of the Azure Well-Architected Framework. ([learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights?utm_source=chatgpt.com))
-- **Cost Optimization in Azure Monitor**: Offers recommendations on configuring data collection and retention to optimize costs in Azure Monitor, applicable to Application Insights. ([learn.microsoft.com](https://learn.microsoft.com/en-us/azure/azure-monitor/best-practices-cost?utm_source=chatgpt.com))
-- **Monitoring and Telemetry Using Application Insights**: Discusses how to set up and use Application Insights for monitoring in D365 F&O. ([learn.microsoft.com](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights?utm_source=chatgpt.com))
+- **Well-Architected Framework Perspective on Application Insights**: Provides best practices for Application Insights based on the five pillars of the Azure Well-Architected Framework. ([learn.microsoft.com](https://learn.microsoft.com/azure/well-architected/service-guides/application-insights))
+- **Cost Optimization in Azure Monitor**: Offers recommendations on configuring data collection and retention to optimize costs in Azure Monitor, applicable to Application Insights. ([learn.microsoft.com](https://learn.microsoft.com/azure/azure-monitor/best-practices-cost))
+- **Monitoring and Telemetry Using Application Insights**: Discusses how to set up and use Application Insights for monitoring in D365 F&O. ([learn.microsoft.com](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights))
 
 ---
 
