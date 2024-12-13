@@ -23,7 +23,7 @@ Configuring your environments to send telemetry to Application Insights requires
 
 ## Set up Application Insights resource in Azure
 
-The first thing needed to get started is to create an Application Insights resource in Azure if you do not have one. for more information, see [Workspace-based Application Insights resources](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource?tabs=bicep).
+The first thing needed to get started is to create an Application Insights resource in Azure if you do not have one. for more information, see [Workspace-based Application Insights resources](https://learn.microsoft.com/azure/azure-monitor/app/create-workspace-resource?tabs=bicep).
 
 ## Enable the Monitoring and Telemetry feature
 
