@@ -5,7 +5,6 @@ author: josaw1
 ms.date: 05/28/2024
 ms.topic: article
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: Global
