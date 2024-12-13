@@ -4,8 +4,8 @@ description: Learn about the Accounting source explorer page, which you can use 
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 10/31/2023
-ms.reviewer: kfend
+ms.date: 12/13/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -39,7 +39,7 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from the **Accounting source explorer** page.
 
 > [!NOTE]
-> As of in Microsoft Dynamics 365 version 10.0.43 [financial tags](../general-ledger/financial-tag.md) will be available for the accounting source explorer page. This can be enabled in feature management by turning on the feature named **Enable financial tags for Accounting Source Explorer**. 
+> As of in Microsoft Dynamics 365 version 10.0.43, a **Enable financial tags for Accounting source explorer** feature is available in feature management. For more information, see [Financial tags](../general-ledger/financial-tag.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
