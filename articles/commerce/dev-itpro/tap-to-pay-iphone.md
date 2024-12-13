@@ -94,14 +94,14 @@ For live environments, the **Gateway environment** property value of the Adyen c
 
 - If you want to pair an external PIN pad terminal with an iPhone, set the **Gateway environment** property of the Adyen connector to **Live**. You must also set the **Custom Settings** property value of the Adyen connector in the hardware profile to `iOSCustomGatewayTTP:<"paste prefix here">`. For example, if the prefix value is "ecc3f8b08d323232-MS" the **Custom Settings** property value is `iOSCustomGatewayTTP:"ecc3f8b08d323232-MS"`.
 
+    > [!NOTE]
+    > The prefix value should be passed within double quotes.
+
 The following example image shows a screenshot of the hardware profile with sample data for when the gateway environment property is set to **Live**. 
 
 ![Hardware profile sample with Live setup](../media/sampleHWP.png)
 
-> [!NOTE]
-> The prefix value should be passed within double quotes.
- 
-In headquarters, go to **Retail and Commerce IT \> Distribution schedule** and run the **9999** schedule job to update the channel components with your changes.
+After you set the **Gateway environment** property, in headquarters go to **Retail and Commerce IT \> Distribution schedule** and run the **9999** schedule job to update the channel components with your changes.
 
 ## The Tap to Pay on iPhone user experience
 
