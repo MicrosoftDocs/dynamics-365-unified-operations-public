@@ -51,11 +51,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/finance/localizations/global/rcs-global-repo-upload.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/finance/localizations/global/rcs-global-repo-share-configuration.md",
       "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
