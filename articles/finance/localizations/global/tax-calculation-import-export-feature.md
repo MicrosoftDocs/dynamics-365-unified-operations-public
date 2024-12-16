@@ -29,7 +29,6 @@ This article provides information about the import and export functionality of t
 
 1. Follow one of these steps, depending on where you're completing the procedure:
 
-    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
     - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 
 2. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
