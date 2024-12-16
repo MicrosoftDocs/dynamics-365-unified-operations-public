@@ -20,9 +20,11 @@ ms.dyn365.ops.version: 10.0.23
 
 This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 
-Sometimes, vendor invoices contain limited information, such as recipient information and subtotals. However, they contain no information for line items. When you import invoices, the invoice lines are automatically generated, based on information on the corresponding purchase order.
+Sometimes, vendor invoices only contains some header information without line details and the vendor always sends the invoices with a fixed patterns:
+1. Invoices always contains the same lines as aligned with purchase order. 
+2. Invoices always contains the same lines based on the good they shipped and the price will follow the one defined on the purchase order. 
 
-To enable automatic creation of invoice lines, follow these steps.
+To streamline the process, the invocie line can be automatically derived from the purchase order or product receipt. To enable automatic creation of invoice lines, follow these steps.
 
 1.	Go to **Accounts payable \> Setup \> Accounts payable parameters**.
 2.	On the **Vendor invoice automation** tab, under **Automatic line creation for imported invoices**, set the **Automatically create invoice lines** option to **Yes**. 
@@ -30,6 +32,9 @@ To enable automatic creation of invoice lines, follow these steps.
 
     - **Ordered quantity** – Lines are generated from purchase order lines. This value is the default value.
     - **Product receipt quantity** – The purchase order number is used to find the relevant product receipts. It will then use the product receipt quantities to generate invoice lines.
+  
+    This parameter is only used when the purchase order number range is specified during invoice import without product receipt range. If the product receipt range is given, the line will always be derived from the product receipt instead of the purchase order. 
+5. Parameter **"Allow invoice to be imported with no derived lines"** decides whether the invoice import will be blocked when there is no derived invoice lines. 
 
 ## Data entity changes
 
@@ -48,6 +53,7 @@ All product receipts must belong to the same vendor account on the invoice heade
 If lines are successfully generated, the following message is logged in the vendor invoice automation history: "Automatically create invoice lines: Succeeded."
 
 If lines don't generate, the following error message is logged: "Automatically create invoice lines: Failed."
+
 
 ## Import prepayment invoice
 
