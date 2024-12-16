@@ -77,7 +77,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         # If remoting, only execute
         # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
-        .\Configure-PreReqs.ps1
+        .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
         ```
 
     3. Run the following script to ensure that all prerequisites are completed. Perform this step as an administrator.
