@@ -32,7 +32,6 @@ Follow these steps to view the tax calculation data model.
 
 1. Follow one of these steps, depending on where you're completing the procedure:
 
-    - In [RCS](https://marketing.configure.global.dynamics.com/), select **Electronic reporting** \> **Tax configurations**.
     - In Finance, open the **Globalization Studio** workspace, and select **Electronic reporting** \> **Tax configurations**.
    
 2. Select **Tax Data Model** \> **Tax Calculation Data Model**.
@@ -51,7 +50,6 @@ You can also view the tax calculation data model and the available columns in th
 
 1. Follow one of these steps, depending on where you're completing the procedure:
 
-    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
     - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 
 2. On the **Tax calculation features** page, find a tax feature that has a status of **Draft**, and then select **Edit**.
