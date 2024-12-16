@@ -20,12 +20,12 @@ ms.dyn365.ops.version: 10.0.23
 
 This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 
-Sometimes, vendor invoices contains only header information without line details and the vendor consistently sends the invoices in a fixed pattern:
+Sometimes, vendor invoices contain only header information without line details and the vendor consistently sends the invoices in a fixed pattern:
 
-- Invoices always contains the same lines as the purchase order.
-- Invoices always contains the same lines based on the good shipped with prices based on those defined in the purchase order.
+- Invoices always contain the same lines as the purchase order.
+- Invoices always contain the same lines based on the goods shipped with prices based on the purchase order.
   
-To streamline the process, invocie lines can be automatically derived from the purchase order or product receipt. To enable automatic creation of invoice lines, follow these steps.
+To streamline the process, invoice lines can be automatically derived from the purchase order or product receipt. To enable automatic creation of invoice lines, follow these steps.
 
 ## Enable the settings
 1.	Go to **Accounts payable \> Setup \> Accounts payable parameters**.
@@ -37,17 +37,18 @@ To streamline the process, invocie lines can be automatically derived from the p
     
     This parameter is only used when the purchase order number range is specified during invoice import without product receipt range. If the product receipt range is specified, the line is always derived from the product receipt instead of the purchase order.
   	
-4. The **Allow invoice to be imported with no derived lines** parameter decides if the invoice import will be blocked when there is no derived invoice lines.
+4. The **Allow invoice to be imported with no derived lines** parameter decides if the invoice import is blocked if there's no derived invoice lines.
 
 ## Data entity changes
 
-To support the functionality that is described in this article, the **Vendor invoice header** data entity has been enhanced. Three fields have been added:
+To support the functionality that's described in this article, three fields are added to the **Vendor invoice header** data entity:
 
 - **HeaderOnlyImport** – This field must be set to **Yes** to generate lines for invoice headers.
-- **PurchIdRange** – The list of purchase order numbers. The invoice numbers can be a range, such as **PO0001..PO0009** (where two dots separate the start and end of the range), or discrete values, such as **PO0001,PO0003,PO0006**. All purchase orders must belong to the same vendor account on the invoice header. Otherwise, you will receive the following error message: "Failed to generate invoice lines. Purchase orders have different vendor accounts."
+- **PurchIdRange** – The list of purchase order numbers. The invoice numbers can be a range, such as **PO0001..PO0009** (where two dots separate the start and end of the range), or discrete values, such as **PO0001,PO0003,PO0006**. All purchase orders must belong to the same vendor account on the invoice header. Otherwise, you receive the following error message: **Failed to generate invoice lines. Purchase orders have different vendor accounts.**
 - **PackingslipRange** – The list of product receipt numbers. Vendor invoice lines can be created from product receipts. However, product receipt numbers aren't typically included on vendor invoices. Only enter the product receipt numbers into this field if you can clearly identify which product receipts are for which specific invoices. Invoice lines can be generated based on product receipts. If this field is used, the setting of the **Choose default quantity for automatic invoice lines creation** field on the **Accounts payable parameters** page is ignored. 
 
-**Limitation**: If you enter multiple product receipt numbers, several pending vendor invoices are created with the same invoice number. You must consolidate them manually before processing the invoice further. In future releases, we plan to consolidate the invoices automatically, so the limitation is removed.
+>[!NOTE]
+> If multiple product receipt numbers are entered, several pending vendor invoices are created with the same invoice number. You must consolidate them manually before processing the invoice further. In future releases, the invoices are consolidated automatically.
 
 All product receipts must belong to the same vendor account on the invoice header.
 
@@ -73,7 +74,7 @@ When a vendor invoice is associated with a single purchase order, the purchase o
 
  - Currency code derivation and validation - The currency code is automatically derived from the purchase order if the currency code is not given in the vendor invoice header entity. The validation error is raised when the imported invoice has a different currency code against the one specified on the purchase order. 
 
- - Financial dimension defaulting - The invoice header's financial dimension values will be derived from the purchase order header. The corresponding financial dimension on the invoice lines is derived from the vendor invoice header during the invoice lines importing process. This ensures the consistencies between the invoice imported via DMF and the invoice created by pending vendor invoice page.
+ - Financial dimension defaulting - The invoice header's financial dimension values are derived from the purchase order header. The corresponding financial dimension on the invoice lines is derived from the vendor invoice header during the invoice lines importing process. This ensures consistency between invoices imported using DMF and invoices created by **Pending vendor invoice** page.
 
  - Vendor invoice workflow - If the invoice validation fails, the invoice is redirected to the purchase order originator to address any discrepancies. The correct purchase order number ensures the vendor invoice is redirected to the right purchase order originator during the workflow process. 
 
