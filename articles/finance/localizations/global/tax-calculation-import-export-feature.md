@@ -27,10 +27,7 @@ This article provides information about the import and export functionality of t
 
 ### Export templates
 
-1. Follow one of these steps, depending on where you're completing the procedure:
-
-    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
-
+1. In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 2. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 3. In the **Versions** grid, select **Edit**.
 4. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
