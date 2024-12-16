@@ -36,10 +36,7 @@ However, tax groups in the Tax Calculation feature differ from sales tax groups 
 
 Follow these steps to set up a tax group.
 
-1. Follow one of these steps, depending on where you're completing the procedure:
-
-    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
-
+1. In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 2. On the **Tax calculation features** page, select the feature and version that you want to set up, and then select **Edit**.
 3. On the **General** tab, select **Configuration version**.
 4. On the **Tax group** tab, select **Manage Column**. If you're setting up a tax group for the first time, the fields in the **Manage column** dialog box are automatically set.
