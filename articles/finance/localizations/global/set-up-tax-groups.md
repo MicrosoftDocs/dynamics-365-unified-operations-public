@@ -38,7 +38,6 @@ Follow these steps to set up a tax group.
 
 1. Follow one of these steps, depending on where you're completing the procedure:
 
-    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
     - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 
 2. On the **Tax calculation features** page, select the feature and version that you want to set up, and then select **Edit**.
