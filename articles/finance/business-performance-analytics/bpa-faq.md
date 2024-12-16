@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 11/14/2024
+ms.date: 12/16/2024
 ---
 
 # Business performance analytics FAQ
@@ -62,6 +62,149 @@ Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Uni
 ### How long does it take for fresh data to be available every day on Business performance analytics reports?
 
 The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
+
+### How do I uninstall Business performance analytics?
+There are two options available to uninstall Business performance analytics. If you need to install Business performance analytics after uninstalling, wait four hours before installing.
+
+Option one:
+
+1. Sign into [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Microsoft Dataverse admin credentials. 
+2. Select the environment where you want to uninstall.
+3. Click on the environment URL provided in the details. This redirects you to the Dataverse environment login page.
+4. Open the developer console by either pressing **Ctrl+Shift+I** or go to **More tools** > **Developer tools** and **Console** tab.
+5. Paste the following JavaScript code into the console to start the uninstallation process.
+6. The approximate time to delete all the solutions is 20 minutes. If the operation is successful, you receive the following message: Business performance analytics solutions removed successfully.
+   
+Uninstall Business performance analytics
+```
+// Get the current org URL
+const ORG = window.location.hostname;
+const WEB_API = `https://${ORG}/api/data/v9.2`;
+const SOLUTIONS = [
+  "msdyn_BpaAnchor",
+  "msdyn_Bpa",
+  "msdyn_BpaReports",
+  "msdyn_BpaReports_TIP",
+  "msdyn_BpaPlugins",
+  "msdyn_BpaPermissions",
+  "msdyn_BpaPermissions_TIP",
+  "msdyn_BpaTables",
+  "msdyn_BpaControls",
+  "msdyn_BpaTablesAnchorSolution",
+  "msdyn_BpaTablesUserRoles",
+  "msdyn_BpaTablesUserRoles_TIP",
+  "msdyn_BpaAnalyticalTablesWorkspace",
+  "msdyn_BpaAnalyticalTables",
+  "msdyn_BpaTablesTransformationJobFlows",
+  "msdyn_BpaTablesTransformationJobFlows_TIP",
+  "msdyn_BpaTablesDataProcessingConfigurations",
+  "msdyn_BpaTablesDataProcessingConfigurations_TIP",
+  "msdyn_BpaTablesDataLakeSynchronizationWorkspace",
+  "msdyn_BpaTablesDataLakeSynchronization",
+  "msdyn_BpaTablesStandardEntities",
+  "msdyn_BpaTablesVirtualEntitiesWorkspace",
+  "msdyn_BpaTablesVirtualEntities",
+  "msdyn_BpaTablesManagedDataLake",
+  "msdyn_BpaTablesManagedDataLake_TIP",
+  "msdyn_BpaPipelinePlugins",
+  "msdyn_BpaTablesSecurity",
+  "msdyn_BpaTablesSecurity_TIP",
+  "msdyn_BpaConfigs"
+];
+
+
+// Get all solutions
+let _getSolutions = () => {
+  var requestOptions = {
+    method: "GET",
+  };
+  return fetch(
+    `${WEB_API}/solutions?$filter=(isvisible%20eq%20true)&$select=solutionid,friendlyname,uniquename`,
+    requestOptions
+  ).then((response) => response.json());
+};
+
+// Delete the solution by solution ID
+let _deleteSolution = async (solutionid) => {
+  var requestOptions = {
+      method: "DELETE",
+  };
+  const response = await fetch(`${WEB_API}/solutions(${solutionid})`, requestOptions);
+  if (!response.ok) {
+      const errorMessage = await response.text(); // Get the error message from the response
+      throw new Error(`Failed to delete solution with ID ${solutionid}: ${errorMessage}`);
+  }
+};
+
+let start = async () => {
+  console.info("Uninstalling BPA solutions");
+  let hadErrors = false; // Boolean flag to indicate if there were errors uninstalling solutions
+
+  let installedSolutions = (await _getSolutions()).value;
+
+  // Sort the installed BPA solutions 
+  let installedBPASoltuions = installedSolutions
+    .filter((i) => SOLUTIONS.indexOf(i.uniquename) > -1)
+    .sort(
+      (i, j) =>
+        SOLUTIONS.indexOf(i.uniquename) - SOLUTIONS.indexOf(j.uniquename)
+    );
+
+  for (let solution of installedBPASoltuions) {
+    console.info(`Removing solution ${solution.friendlyname}`);
+    try {
+        await _deleteSolution(solution.solutionid);
+    } catch (error) {
+        console.error(`Error removing solution ${solution.friendlyname}:`, error);
+        hadErrors = true; // Set the flag to true if there was an error
+    }
+  }
+
+  if (hadErrors) {
+    throw new Error("Some solutions failed to uninstall. Retrying the script may fix this issue.");
+  }
+  console.info("BPA Solutions removed successfully");
+};
+
+start();
+```
+
+### Uninstall Business performance analytics
+
+Option two: Business performance analytics can be manually uninstalled through the Power Platform admin center. The solutions must be manually deleted in the following order.
+
+1. Business performance analytics anchor solution  
+2. Business performance analytics solution 
+3. Business performance analytics reports
+4. Business performance analytics plugins solution 
+5. Business performance analytics permissions 
+6. Business performance analytics tables 
+7. Business performance analytics controls 
+8. Business performance analytics tables anchor solution 
+9. Business performance analytics tables user roles 
+10. Business performance analytics analytical tables workspace 
+11. Business performance analytics analytical tables 
+12. Business performance analytics tables transformation job flows 
+13. Business performance analytics tables data processing configuration 
+14. Business performance analytics tables data lake synchronization 
+15. Business performance analytics tables standard entities 
+16. Business performance analytics tables virtual entities 
+17. Business performance analytics tables managed data lake 
+18. Business performance analytics pipeline plugins solution 
+19. Business performance analytics tables security 
+20. Business performance analytics configs
+
+To delete each of the preceding solutions, follow these steps.
+
+1. Go to [maker portal](https://make.preview.powerapps.com/), on the **Solution** tab, select the solution to delete, and then select **Delete**.
+2. Select **Delete** again to confirm the operation.
+3. Wait for the **Deleting** message box to disappear. If the operation is successful, you receive the following message: "Successfully deleted solution."
+
+The approximate time that's required to delete all the solutions is 20 minutes.
+
+> [!NOTE]
+> If you uninstall and install Business performance analytics, any new reports that were created won't be saved. 
+
 
 ### How often will updates for Business performance analytics be released?
 
