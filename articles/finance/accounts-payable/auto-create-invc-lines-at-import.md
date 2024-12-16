@@ -4,7 +4,7 @@ description: Learn about the functionality for automatically generating invoice 
 author: sunfzam
 ms.author: shpandey
 ms.topic: article
-ms.date: 12/17/2023
+ms.date: 12/17/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.23
 
 This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 
-Sometimes, vendor invoices only contains header information without line details and the vendor consistently sends the invoices in a fixed pattern:
+Sometimes, vendor invoices contains only header information without line details and the vendor consistently sends the invoices in a fixed pattern:
 
 - Invoices always contains the same lines as the purchase order.
 - Invoices always contains the same lines based on the good shipped with prices based on those defined in the purchase order.
@@ -35,8 +35,9 @@ To streamline the process, invocie lines can be automatically derived from the p
     - **Ordered quantity** – Lines are generated from purchase order lines. This value is the default value.
     - **Product receipt quantity** – The purchase order number is used to find the relevant product receipts. It will then use the product receipt quantities to generate invoice lines.
     
-    This parameter is only used when the purchase order number range is specified during invoice import without product receipt range. If the product receipt range is specified, the line will always be derived from the product receipt instead of the purchase order.
-4. Parameter "Allow invoice to be imported with no derived lines" decides whether the invoice import will be blocked when there is no derived invoice lines.
+    This parameter is only used when the purchase order number range is specified during invoice import without product receipt range. If the product receipt range is specified, the line is always derived from the product receipt instead of the purchase order.
+  	
+4. The **Allow invoice to be imported with no derived lines** parameter decides if the invoice import will be blocked when there is no derived invoice lines.
 
 ## Data entity changes
 
@@ -56,7 +57,7 @@ If lines are successfully generated, the following message is logged in the vend
 
 If lines don't generate, the following error message is logged: "Automatically create invoice lines: Failed."
 
-# Import prepayment invoice
+### Import prepayment invoice
 
 The prepayment invoice can be imported directly via data entity **Vendor invoice header** when the parameter **Automatically create invoice lines** is enabled.
 - **HeaderOnlyImport** – Set to **Yes** to generate lines for prepayment invoice.
@@ -66,7 +67,7 @@ The prepayment invoice can be imported directly via data entity **Vendor invoice
 
 The import of a prepayment invoice isn't accepted when the prepayment invoice has already been generated without a settlement under the purchase order.
 
-# Import purchase order number
+### Import purchase order number
 
 When a vendor invoice is associated with a single purchase order, the purchase order number (PurchId) is given in vendor invoice header entity to support the following:
 
