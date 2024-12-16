@@ -30,7 +30,7 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 
 4. In the **Schedule work orders** dialog, you can add selections regarding expected start date and service level, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".
 
-    [!NOTE]
+>[!NOTE]
     If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Action center, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
 
 5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and maintenance workers will be shown in the Action center.
