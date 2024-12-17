@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 11/12/2025
+ms.date: 11/12/2024
 ms.reviewer: johnmichalak
 ms.dyn365.ops.version: AX 10.0.39
 ---

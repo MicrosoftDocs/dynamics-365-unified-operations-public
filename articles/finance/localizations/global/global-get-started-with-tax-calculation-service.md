@@ -120,13 +120,12 @@ Before you can complete the remaining procedures in this article, the following 
 
 ## Configure the Tax Calculation feature
 
-The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time. You can complete it in any legal entity in [RCS](https://marketing.configure.global.dynamics.com/) (if you're using version 10.0.38 or earlier) or in the [Globalization Studio workspace in Finance](./workspace/gsw-features.md) (if you're using version 10.0.39 or later).
+The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time. You can complete it in any legal entity in [Globalization Studio workspace in Finance](./workspace/gsw-features.md) (if you're using version 10.0.39 or later).
 
 Import the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on your Finance version. Follow the steps in [Import Electronic reporting (ER) configurations from Dataverse](./workspace/gsw-import-er-config-dataverse.md).
 
 1. Follow one of these steps, depending on where you're completing the procedure:
 
-    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
     - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 
 2. On the **Tax calculation features** page, select the **Add** button, and select one of the following feature types:
