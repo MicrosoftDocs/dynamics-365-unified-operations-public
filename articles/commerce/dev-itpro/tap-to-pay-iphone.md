@@ -2,7 +2,7 @@
 title: Enable Tap to Pay on iPhone to run the Store Commerce app
 description: Learn how to set up and enable Tap to Pay on iPhone to run the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: shajain
-ms.date: 12/13/2024
+ms.date: 12/17/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
