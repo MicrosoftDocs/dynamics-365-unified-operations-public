@@ -608,6 +608,8 @@
               href: dev-itpro/google-pay-adyen.md
             - name: Set up Apple Pay with Adyen
               href: dev-itpro/apple-pay-adyen.md
+            - name: Enable Tap to Pay on iPhone
+              href: dev-itpro/tap-to-pay-iphone.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
