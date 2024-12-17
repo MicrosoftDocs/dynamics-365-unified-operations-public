@@ -42,7 +42,7 @@ OANDA provider options require that you fill in the API key values that you rece
 
 ### Central Bank of the Republic of Türkiye
 
-CBRT announces indicative exchange rates at 3:30 PM on working days. Those rates are then applicable on the next working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends or official holidays.
+Central Bank of the Republic of Türkiye (CBRT) announces indicative exchange rates at 3:30 PM on working days. Those rates are then applicable on the following working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends or official holidays.
 
 The configuration enables exchange rates to be imported for five different exchange rate types that CBRT provides:
 
