@@ -17,6 +17,9 @@ ms.search.form:
 
 # (Preview) Enable enhanced user feedback for Copilot and related experiences
 
+> [!NOTE]
+> The feedback system is provided by the [in-product feedback experiences used across Microsoft products](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide) and follows its data handling and privacy policies.
+
 Enhanced *user feedback for the Copilot sidecar and related experiences* enables users to submit detailed written feedback about their experience via the Thumbs up and down buttons, while using Copilot in the sidecar user interface (such as when using [Copilot generative help](../../fin-ops/copilot/copilot-generative-help.md)), summarization experiences, and other experiences. Without this feature, users can only provide feedback on through simple thumbs-up or thumbs-down signals, resulting in less actionable data for enhancing the service.
 
 :::image type="content" source="feedback-thumbs.png" alt-text="Feedback Thumbs up and Down experience.":::
@@ -26,9 +29,16 @@ Users are invited to provide a written statement about the experience, wether it
 
 When submitting feedback users can optionally attach additional information. For example, in the Copilot sidecar users can rate the usefulness of Copilot's responses and optionally attach the conversation to provide more context.  Users always can review the information that will be attached before submitting, and can decide to submit the feedback without attachments. Admins can also disable attachments for user feedback tenant wide.
 
-The system automatically categories and translates all feedback. This allows for a comprehensive collection of user insights, supporting ongoing improvements to the Copilot experience.
+## Admins can review and manage feedback provided by users
+
+The product feedback portal in the Microsoft 365 admin center can be used by admins to review and manage feedback provided by users. 
+
+As an admin. open the admin center at [admin.cloud.microsoft](https://go.microsoft.com/fwlink/p/?linkid=2024339) and on the left navigation pane, select **Health** and then **Product feedback**.
+The portal provides a list of all feedback provided by users and allows to filter, review details and data attached.  
 
 ## Admin control for enhanced user feedback for Copilot and related experiences
+
+Enhanced user feedback for Copilot and related experiences is switched on by default. The feature enhances the existing Thumbs-up and down feedback experience and is based on the existing One Customer Voice feedback system.  
 
 The admin has multiple levels of control on whether and to which detail users can send Copilot related product feedback on their experience to Microsoft, and the following settings will be honored by finance and operations apps.
 
