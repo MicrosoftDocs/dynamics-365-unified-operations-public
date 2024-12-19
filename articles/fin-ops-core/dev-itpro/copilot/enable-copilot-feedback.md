@@ -17,56 +17,74 @@ ms.search.form:
 
 # (Preview) Enable enhanced user feedback for Copilot and related experiences
 
+[!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+>
+> - *Enhanced user feedback for Copilot and related experiences* is available in finance and operations version 10.0.43 and later. For information about release schedules for finance and operations apps, see [Service update availability](../get-started/public-preview-releases.md).
+> - This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+
 > [!NOTE]
-> The feedback system is provided by the [in-product feedback experiences used across Microsoft products](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide) and follows its data handling and privacy policies.
+> Feedback is captured using the [in-product feedback system](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide) common across Microsoft products. This system follows existing data handling and privacy policies.
 
-Enhanced *user feedback for the Copilot sidecar and related experiences* enables users to submit detailed written feedback about their experience via the Thumbs up and down buttons, while using Copilot in the sidecar user interface (such as when using [Copilot generative help](../../fin-ops/copilot/copilot-generative-help.md)), summarization experiences, and other experiences. Without this feature, users can only provide feedback on through simple thumbs-up or thumbs-down signals, resulting in less actionable data for enhancing the service.
+Users can provide product feedback to Microsoft by selecting the Thumbs Up or Thumbs Down buttons. Currently, these options are available in experiences like the Copilot sidecar and summary cards, and will be extended to more scenarios over time.
 
-:::image type="content" source="feedback-thumbs.png" alt-text="Feedback Thumbs up and Down experience.":::
+:::image type="content" source="feedback-thumbs.png" alt-text="Feedback experience with Thumbs up and Down buttons.":::
 
-Users are invited to provide a written statement about the experience, wether it is positive or negative.
+Enhanced *user feedback for  Copilot and related experiences* allows users to provide more detailed, written feedback in addition to simple thumbs-up or thumbs-down inputs. By enabling this feature, Microsoft gains richer insights to help improve Copilot responses and user satisfaction. Without enhanced feedback, users can only indicate positive or negative experiences with a simple signal, resulting in limited actionable data for service enhancements.
+
+When a user selects thumbs up or thumbs down, they’re prompted to provide a written statement describing their experience—positive or negative.
 :::image type="content" source="feedback-survey-popup.png" alt-text="Example for a survey popup with a user provided message.":::
 
-When submitting feedback users can optionally attach additional information. For example, in the Copilot sidecar users can rate the usefulness of Copilot's responses and optionally attach the conversation to provide more context.  Users always can review the information that will be attached before submitting, and can decide to submit the feedback without attachments. Admins can also disable attachments for user feedback tenant wide.
+When submitting feedback, users can choose to include additional system-collected information to provide richer context. For example, in the Copilot sidecar, users may attach the conversation history along with their feedback. Before finalizing, users review all attached data and can opt out of including any attachments. Administrators have the option to disable attachments across the tenant if necessary.
 
-## Admins can review and manage feedback provided by users
+## Admin Review and Management of Feedback
 
-The product feedback portal in the Microsoft 365 admin center can be used by admins to review and manage feedback provided by users. 
+Administrators can review and manage user-provided feedback in the Microsoft 365 admin center’s product feedback portal.
 
-As an admin. open the admin center at [admin.cloud.microsoft](https://go.microsoft.com/fwlink/p/?linkid=2024339) and on the left navigation pane, select **Health** and then **Product feedback**.
-The portal provides a list of all feedback provided by users and allows to filter, review details and data attached.  
+1. Open the admin center at [admin.cloud.microsoft](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+2. In the left navigation pane, select **Health > Product feedback**.
 
-## Admin control for enhanced user feedback for Copilot and related experiences
+The portal displays all collected feedback. Admins can filter, review details, and examine attached data as needed.
 
-Enhanced user feedback for Copilot and related experiences is switched on by default. The feature enhances the existing Thumbs-up and down feedback experience and is based on the existing One Customer Voice feedback system.  
+## Admin Controls for Enhanced User Feedback
 
-The admin has multiple levels of control on whether and to which detail users can send Copilot related product feedback on their experience to Microsoft, and the following settings will be honored by finance and operations apps.
+By default, enhanced user feedback for Copilot and related experiences is turned on. These features integrate with existing Microsoft product feedback mechanisms and the standard thumbs-up/down interface. 
+
+Administrators have multiple layers of control, enabling them to manage whether and how users submit product feedback to Microsoft. Disabling feedback at a higher level prevents it from being enabled at lower levels.
+
+The following settings apply to finance and operations apps:
 
 |Level    |Settings  |Details  |
 |---------|---------|---------|
-|Tenant wide  |*Copilot feedback* |Enabled by default. If this setting is disabled, users can't submit detailed feedback to Microsoft.|
-|Tenant wide |*Copilot data collection*  |Enabled by default. If this setting is disabled,  data such as conversation history can't be attached to the user's feedback.|
-|Per Dataverse Environment    |*Allow users to provide feedback to improve Copilot experiences*|Enabled by default. If this flag on Dataverse organization is set to *No*, users can't submit detailed feedback to Microsoft.|
-|Finance and operations environment |*(Preview) Enable user feedback for Copilot and related experiences*|Enabled by default in finance and operations [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). If disabled users can't submit detailed feedback to Microsoft.|
+|Tenant wide  |*Copilot feedback* |On by default. If disabled, users cannot submit detailed feedback.|
+|Tenant wide |*Copilot data collection*  |On by default. If disabled, users cannot attach additional data (such as conversation history) to their feedback.|
+|Dataverse organization level |*Allow users to provide feedback to improve Copilot experiences*|On by default. If set to No, users cannot submit detailed feedback to Microsoft.|
+|Finance and operations environment level|*(Preview) Enable user feedback for Copilot and related experiences*|On by default through [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). If disabled, users cannot submit detailed feedback.|
 
 > [!NOTE]
-> If the tenant level setting **Copilot Feedback** or the organizational level setting **Allow users to provide feedback to improve Copilot experiences** are disabled, then the feature **(Preview) Enable user feedback for Copilot and related experiences** in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) will automatically be disabled and marked as **"Feature disabled by Microsoft."** and cannot be enabled.
+> If the tenant level setting **Copilot Feedback** or the organizational level setting **Allow users to provide feedback to improve Copilot experiences** is disabled, then the feature **(Preview) Enable user feedback for Copilot and related experiences** in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) is automatically disabled and marked as **"Feature disabled by Microsoft."**. It cannot be re-enabled unless those higher-level settings are turned back on.
 
-### Steps to enable or disable enhanced user feedback for Copilot and related experiences
-- Enable or disable **Copilot feedback** and **Copilot data collection** on tenant level 
+### Steps to Enable or Disable Settings
+
+- Enable or disable **Copilot feedback** at the tenant level 
     1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-    1. On the left navigation pane, select **Settings**.
-    1. On the **Tenant settings** page, find the row with a **Name** of *Copilot feedback*. This setting controls whether feedback sending is on or off. This setting is on by default. Select this link to open the **Copilot feedback** dialog. Set the option to *On* to enable or *Off* to disable feedback tenant wide across apps and then select **Save**.
-    1. On the **Tenant settings** page, find the row with a **Name** of *Copilot data collection*. This setting controls whether users can send conversation metadata as part of the feedback.  This setting is on by default. Select this link to open the **Copilot data collection** dialog. Set the option to *On* to allow and *Off* to prevent users to attach additional data with feedback and then select **Save**.
+    1. Select **Settings** from the left navigation pane.
+    1. On the **Tenant settings** page, locate the setting *Copilot feedback*. This setting is on by default. Select it, and in the **Copilot feedback** dialog toggle it to On or Off and choose **Save**.
 
-- Dataverse Organization-level:
+- Enable or disable **Copilot data collection** at the tenant level
+    1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    1. Select **Settings** from the left navigation pane.
+    1. On the **Tenant settings** page, locate the setting *Copilot data collection*. Select it, and in the **Copilot data collection** dialog toggle it to On or Off and choose **Save**.
+
+- Enable or disable **Copilot feedback** at the Dataverse organization level:
     1. Open the [maker experience for Power Apps](https://aka.ms/makepowerapps) for the Dataverse environment.
-    1. On the left navigation pane, select **Tables**.
-    1. In the list of tables identify the **Organization** table and open it.
-    1. In the grid **Organization columns data** use the drop down in the column header. In the popup to *Show existing column* use the search field search to select the column **Allow users to provide feedback to improve Copilot experiences** and press **Save**.
-    1. In the grid you can now choose whether users can submit enhanced feedback. This setting is on by default. If you change the value, wait until the change has been saved, indicated by the text *Saving* and then *Data saved*.
+    1. From the left navigation pane, select **Tables**.
+    1. Find the **Organization** table and open it.
+    1. In the **Organization columns data** grid use the drop down in the column header to *Show existing column*. Search for **Allow users to provide feedback to improve Copilot experiences** and select the column to be added and press **Save**.
+    1. Back in the gris, select this column to edit, then toggle the value. It’s on by default. After changing it, wait until you see Data saved before proceeding.
 
-- Enable or disable enhanced feedback on finance and operations environment level
+- Enable or disable enhanced feedback at the finance and operations environment level:
     1. Sign in to your finance and operations apps environment.
-    1. Use the [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on or off the feature called **(Preview) Enable user feedback for Copilot and related experiences**. This feature controls within the finance and operations environment whether users can submit enhanced feedback.
-
+    1. Use the [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable or disable **(Preview) Enable user feedback for Copilot and related experiences**. If disabled, users cannot submit detailed feedback within this environment.
