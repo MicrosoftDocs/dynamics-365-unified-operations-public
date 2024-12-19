@@ -15,7 +15,7 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# (Preview) Enable enhanced user feedback for Copilot and related experiences
+# (Preview) Enable Enhanced User Feedback for Copilot and Related Experiences
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,7 +66,7 @@ The following settings apply to finance and operations apps:
 > [!NOTE]
 > If the tenant level setting **Copilot Feedback** or the organizational level setting **Allow users to provide feedback to improve Copilot experiences** is disabled, then the feature **(Preview) Enable user feedback for Copilot and related experiences** in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) is automatically disabled and marked as **"Feature disabled by Microsoft."**. It cannot be re-enabled unless those higher-level settings are turned back on.
 
-### Steps to Enable or Disable Settings
+### Steps to Enable or Disable Enhanced User Feedback
 
 - Enable or disable **Copilot feedback** at the tenant level 
     1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
