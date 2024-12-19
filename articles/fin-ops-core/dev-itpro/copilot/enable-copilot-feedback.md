@@ -24,7 +24,6 @@ ms.search.form:
 > - *Enhanced user feedback for Copilot and related experiences* is available in finance and operations version 10.0.43 and later. For information about release schedules for finance and operations apps, see [Service update availability](../get-started/public-preview-releases.md).
 > - This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
-
 > [!NOTE]
 > Feedback is captured using the [in-product feedback system](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide) common across Microsoft products. This system follows existing data handling and privacy policies.
 
