@@ -42,6 +42,9 @@ The coverage group can be assigned on different pages:
 - On the **Item coverage** page. On the **Released product details** page, select **Item coverage** to open the **Item coverage** page. The **Overview** tab shows different parameters for replenishment, depending on the site, warehouse, and product dimensions. The coverage group for each item is inherited from the coverage group on the **Released product details** page. However, you can override it by selecting **Use specific settings** or **Override group setting** on the **General** tab.
 - On the **Master planning parameters** page. If no coverage group is assigned to an item on the previously mentioned pages, master planning uses the general coverage group that's set in the **General coverage group** field on the **Master planning parameters** page (**Master planning** \> **Setup** \> **Master planning parameters**).
 
+> [!NOTE]
+> If no calendar is defined on the Coverage group of the item, Planning Optimization will consider the calendar of the default coverage group defined on the **Master Planning Parameters**.
+
 #### Define the lead time for a purchased item
 
 You specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.

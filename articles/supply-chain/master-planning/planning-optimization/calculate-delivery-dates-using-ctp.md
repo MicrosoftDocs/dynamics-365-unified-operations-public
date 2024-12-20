@@ -165,6 +165,7 @@ The **Batch CTP status** field indicates whether confirmed dates have been calcu
 > [!NOTE]
 > - If you update a sales order line after Batch CTP has calculated confirmed dates for it, the system clears those dates until the next time that the appropriate dynamic plan is run.
 > - If you edit a related setting that might affect existing confirmed dates (for example, by changing lead times, reservations, or markings), you should clear the confirmed dates for the relevant existing orders. This action will cause the status of each relevant line to be changed to *Not ready*. This change, in turn, will cause the system to recalculate the confirmed dates the next time that it runs the dynamic plan.
+>- Since Batch CTP will only calculate the confirmed dates of sales lines with status **Not Ready** any subsequent Planning Optimization executions might affect the planned supply generated previously for the sales line with status **Ready** so the confirmed dates might no longer be in sync with the latest plan result. To prevent this, consider firming the planned orders early to ensure the generated supply remains unaffected by future Planning Optimization executions.
 
 ## <a name="change-orders"></a>Change existing sales orders so that they use CTP
 
