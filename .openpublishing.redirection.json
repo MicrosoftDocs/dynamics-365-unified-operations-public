@@ -1,6 +1,71 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/global/e-invoicing-faq.md",
+      "redirect_url": "dynamics365//finance/localizations/global/gs-e-invoicing-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/rcs-overview.md",
+      "redirect_url": "dynamics365/localizations/global/workspace/merge-rcs-to-gsw",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/finance/localizations/global/rcs-globalization-feature.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/rcs-global-repo-upload.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },  
+    {
+      "source_path": "articles/finance/localizations/dev-itpro/rcs-delete-environment.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/rcs-lcs-repo-dep-faq.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/enhanced-filtering-global-repo.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/rcs-global-repo-share-configuration.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/discontinuing-configurations-rcs-global-repo.md",
+      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md",
       "redirect_url": "dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
       "redirect_document_id": "false"

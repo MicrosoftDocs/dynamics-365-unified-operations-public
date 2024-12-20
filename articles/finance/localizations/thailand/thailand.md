@@ -29,7 +29,6 @@ This article provides links to documentation resources for Thailand.
 - [Withholding tax](apac-tha-withholding-tax.md)
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/thailand.html)
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

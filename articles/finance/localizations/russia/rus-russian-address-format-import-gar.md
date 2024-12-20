@@ -86,7 +86,7 @@ For more information about how to import ER configurations, see [Download ER con
 
 ## GAR import
 
-1. Download the database from [https://fias.nalog.ru/Updates](https://fias.nalog.ru/Updates).
+1. Download the database from [https://fias.nalog.ru/Frontend](https://fias.nalog.ru/Frontend).
 2. Go to **Organization administration** \> **Global address book** \> **Import from GAR**.
 3. Select **Import from GAR**.
 4. In the **Import from GAR** dialog box, on the **Parameters** FastTab, select **Browse** to select the zip archive.
