@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/global/e-invoicing-faq.md",
+      "redirect_url": "dynamics365//finance/localizations/global/gs-e-invoicing-faq",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/global/rcs-overview.md",
       "redirect_url": "dynamics365/localizations/global/workspace/merge-rcs-to-gsw",
       "redirect_document_id": "false"
