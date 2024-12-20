@@ -15,7 +15,7 @@ ms.search.region: Saudi Arabia
 
 [!include[banner](../../includes/banner.md)]
 
-This article walks you through the process of setting up sales taxes for Saudi Arabia. Before you read this article, you might find it helpful to read [Sales tax overview](../../general-ledger/indirect-taxes-overview.md). For information about regulatory requirements for Saudi Arabia, see [VAT for Saudi Arabia (Government website)](https://www.vat.gov.sa/).
+This article walks you through the process of setting up sales taxes for Saudi Arabia. Before you read this article, you might find it helpful to read [Sales tax overview](../../general-ledger/indirect-taxes-overview.md). 
 
 ## Setting up sales tax for Saudi Arabia
 
