@@ -2,7 +2,7 @@
 title: Enable Tap to Pay on iPhone to run the Store Commerce app
 description: Learn how to set up and enable Tap to Pay on iPhone to run the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: shajain
-ms.date: 12/17/2024
+ms.date: 12/23/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -29,6 +29,7 @@ This feature is available as of Commerce version 10.0.40. The minimum versions f
 - **Dynamics 365 Commerce headquarters:** 10.0.1935.73
 - **Commerce Scale Unit (CSU):** 9.50.24201.4
 - **Store Commerce app on iPhone from App Store:** 9.51.24320
+- **Minimum iOS version:** 16.4
 
 This feature requires that a dedicated Hardware station is deployed on the iPhones where the Store Commerce app is installed.
 
@@ -101,7 +102,7 @@ For test environments, you must set the **Gateway environment** property of the 
 
     1. Paste the value into the field for the **Optional Domain** property of the Adyen connector.
 
-- If you want to pair an external PIN pad terminal with an iPhone, set the **Gateway environment** property of the Adyen connector to **Live**. You must also set the **Custom Settings** property of the Adyen connector in the hardware profile to **iOSCustomGatewayTTP:\<*Prefix*\>**, where **\<*Prefix*\>** is the prefix value in double quotation marks. For example, if the prefix value is **"ecc3f8b08d323232-MS"**, the value of the **Custom Settings** property is **iOSCustomGatewayTTP:"ecc3f8b08d323232-MS"**.
+- If you want to pair an external PIN pad terminal with an iPhone, set the **Gateway environment** property of the Adyen connector to **Live**. You must also set the **Custom Settings** property of the Adyen connector in the hardware profile to **iOSCustomGatewayTTP:\<*Prefix*\>**, where **\<*Prefix*\>** is the prefix value in double quotation marks. For example, if the prefix value is "ecc3f8b08d323232-MS", the value of the **Custom Settings** property is `iOSCustomGatewayTTP:"ecc3f8b08d323232-MS"`.
 
     > [!NOTE]
     > The prefix value should be passed in double quotation marks.
