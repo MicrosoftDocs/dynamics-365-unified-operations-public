@@ -1,10 +1,10 @@
 ---
 title: Singapore overview
 description: Access links to documentation resources for Singapore, including links to resources about Reverse charge VAT and audit files.
-author: kfend
-ms.author: kfend
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
-ms.date: 06/20/2022
+ms.date: 12/20/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Singapore
