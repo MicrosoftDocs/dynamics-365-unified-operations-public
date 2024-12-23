@@ -1,15 +1,15 @@
 ---
 title: Thailand overview
 description: Access links to documentation resources for Thailand, including links to resources about stock card reports, tax invoices, and average VAT for purchase transations. 
-author: kfend
-ms.author: kfend
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
-ms.date: 03/09/2022
+ms.custom: 
+  - bap-template
+ms.date: 12/23/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Thailand
 ms.search.validFrom: 2017-06-30
-ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
 ---
 
