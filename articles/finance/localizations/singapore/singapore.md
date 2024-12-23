@@ -4,12 +4,13 @@ description: Access links to documentation resources for Singapore, including li
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 12/20/2024
+ms.custom: 
+  - bap-template
+ms.date: 12/23/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Singapore
 ms.search.validFrom: 2017-06-30
-ms.search.form:
 ms.dyn365.ops.version: July 2017 update
 ---
 
