@@ -1,7 +1,7 @@
 ---
 title: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
 description: Learn about how to work with the improved quote-to-cash features when you integrate with Dynamics 365 Sales, including how to change ownership for a sales quotation.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 09/15/2023

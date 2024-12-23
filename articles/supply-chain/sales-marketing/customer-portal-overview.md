@@ -1,7 +1,7 @@
 ---
 title: Customer portal for Dynamics 365 Supply Chain Management overview
 description: Learn about the Customer portal and integration in modern supply chains, including outlines on who should use it and how it works.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
 ms.date: 06/07/2024

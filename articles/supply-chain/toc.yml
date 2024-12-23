@@ -20,8 +20,6 @@
           href: get-started/whats-new-scm-10-0-41.md
         - name: Supply Chain Management 10.0.40 (June 2024)
           href: get-started/whats-new-scm-10-0-40.md
-        - name: Supply Chain Management 10.0.39 (April 2024)
-          href: get-started/whats-new-scm-10-0-39.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -437,7 +435,7 @@
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
           href: asset-management/objects/create-an-object.md
-        - name: Change the asset type of existing assets (preview)
+        - name: Change the asset type of existing assets
           href: asset-management/objects/change-asset-type.md
         - name: Multi-level assets
           href: asset-management/objects/multi-level-objects.md
@@ -873,7 +871,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
       - name: Power Automate Process Mining content
         items:
-        - name: Analyze warehouse material movement through process mining (preview)
+        - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
@@ -1769,7 +1767,7 @@
           items:
           - name: Inventory Visibility on-hand change schedule and ATP
             href: inventory/inventory-visibility-available-to-promise.md
-          - name: Track time-series inventory in Inventory Visibility (preview)
+          - name: Track time-series inventory in Inventory Visibility
             href: inventory/inventory-visibility-track-atp.md
         - name: Inventory Visibility Power BI dashboard
           href: inventory/inventory-visibility-dashboard.md
@@ -2081,7 +2079,9 @@
         href: demand-planning/phase-in-out.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
-      - name: Analyze demand plans with Copilot (preview)
+      - name: Limit time series edits with time fences
+        href: demand-planning/time-fences.md
+      - name: Analyze demand plans with Copilot
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
@@ -2295,7 +2295,7 @@
       items:
       - name: Unified pricing management module overview
         href: unified-pricing-management/upm-pricing-management-overview.md
-      - name: Turn on the Unified pricing management module module for your system
+      - name: Turn on the Unified pricing management module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
       - name: Price attributes
         items:
@@ -2971,7 +2971,7 @@
             href: production-control/tasks/remove-kanban-job-schedule.md
           - name: Revert kanban job status
             href: production-control/tasks/revert-kanban-job-status.md
-          - name: Schedule kanban jobs)
+          - name: Schedule kanban jobs
             href: production-control/tasks/schedule-kanban-jobs.md
           - name: Transfer materials with kanban jobs
             href: production-control/tasks/transfer-materials-kanban-jobs.md
@@ -3236,45 +3236,45 @@
       - name: Returns
         items:
         - name: Sales returns
-          href: warehousing/sales-returns.md
+          href: sales-marketing/sales-returns.md
         - name: Receive unannounced sales returns
           href: warehousing/sales-returns-unannounced.md
         - name: Set up customer returns
           items:
           - name: Return reason codes and disposition codes
-            href: service-management/disposition-and-return-reason-codes.md
+            href: sales-marketing/disposition-and-return-reason-codes.md
           - name: Set up disposition codes
-            href: service-management/set-up-disposition-codes.md
+            href: sales-marketing/set-up-disposition-codes.md
           - name: Set up return reason codes
-            href: service-management/set-up-return-reason-code.md
+            href: sales-marketing/set-up-return-reason-code.md
           - name: Specify how to dispose of returned items
-            href: service-management/specify-how-to-dispose-of-returned-items.md
+            href: sales-marketing/specify-how-to-dispose-of-returned-items.md
         - name: Authorize customer returns
           items:
           - name: Return cost price and return lot ID
-            href: service-management/return-cost-price-and-return-lot-id.md
+            href: sales-marketing/return-cost-price-and-return-lot-id.md
           - name: Cancel a return order
-            href: service-management/cancel-return-order.md
+            href: sales-marketing/cancel-return-order.md
           - name: Create an item replacement order
-            href: service-management/create-item-replacement-order.md
+            href: sales-marketing/create-item-replacement-order.md
           - name: Delete a return order
-            href: service-management/delete-return-order.md
+            href: sales-marketing/delete-return-order.md
           - name: Pass returned items on to inspection
-            href: service-management/pass-returned-items-on-to-inspection.md
+            href: sales-marketing/pass-returned-items-on-to-inspection.md
           - name: Post arrival journal for returned products
-            href: service-management/post-arrival-journal-for-returned-products.md
+            href: sales-marketing/post-arrival-journal-for-returned-products.md
           - name: Receive partial deliveries of returned items
-            href: service-management/receive-partial-deliveries-returned-items.md
+            href: sales-marketing/receive-partial-deliveries-returned-items.md
           - name: Receive returned items
-            href: service-management/receiving-returned-items.md
+            href: sales-marketing/receiving-returned-items.md
           - name: Register the receipt of returned items
-            href: service-management/register-the-receipt-of-returned-items.md
+            href: sales-marketing/register-the-receipt-of-returned-items.md
           - name: Take returned items through inspection
-            href: service-management/take-returned-items-through-inspection.md
+            href: sales-marketing/take-returned-items-through-inspection.md
           - name: Packing slip updates for returns
-            href: service-management/packing-slip-updates-returns.md
+            href: sales-marketing/packing-slip-updates-returns.md
           - name: Perform invoice updates for returns
-            href: service-management/perform-invoice-updates-for-returns.md
+            href: sales-marketing/perform-invoice-updates-for-returns.md
       - name: Commission
         items:
         - name: Register sales commissions
@@ -4077,6 +4077,8 @@
           href: warehousing/gs1-barcodes.md
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
+        - name: View and manage the work exceptions log
+          href: warehousing/work-exceptions-log.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes
@@ -4085,7 +4087,7 @@
           href: warehousing/warehouse-transactions.md
         - name: Optimize location directive queries
           href: warehousing/location-directives-optimize.md
-        - name: Analyze warehouse material movement through process mining (preview)
+        - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
         - name: Warehousing telemetry
           items:
@@ -4131,7 +4133,7 @@
         href: responsible-ai-overview.md
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
-      - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
+      - name: Responsible AI FAQ for Analyze demand plans with Copilot
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md

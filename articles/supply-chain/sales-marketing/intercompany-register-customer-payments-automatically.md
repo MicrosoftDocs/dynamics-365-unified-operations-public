@@ -1,7 +1,7 @@
 ---
 title: Register payments automatically for intercompany customer invoices
 description: Learn how to register payments automatically for intercompany customer invoices, including a step-by-step process for registering payments.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

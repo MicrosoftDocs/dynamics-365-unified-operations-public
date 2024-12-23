@@ -1,7 +1,7 @@
 ---
 title: Maintenance attribute types
 description: Learn how to create attribute types in Asset Management, including an outline and step-by-step process on creating attribute types. 
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/24/2019

@@ -1,7 +1,7 @@
 --- 
 title: Rating profiles
 description: Learn how to set up data for rating profiles, including an outline and process for creating or editing rating profiles on the rating profiles page.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
 ms.date: 10/30/2020

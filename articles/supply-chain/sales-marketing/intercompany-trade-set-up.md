@@ -1,7 +1,7 @@
 ---
 title: Set up intercompany trade
 description: Learn how to set up intercompany trade, including outlines on what to do before setting up intercompany trade and setting up trading relations and products.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer

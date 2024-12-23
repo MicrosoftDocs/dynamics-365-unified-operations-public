@@ -4,13 +4,11 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 07/29/2024
+ms.date: 12/03/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.37
 ---
 
@@ -142,11 +140,17 @@ The name of this variable must be used as the name of the import source for the 
 
 ### Electronic invoicing in Chile
 
-For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md).
+For more information about electronic invoicing in Chile, see:
+[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
+[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
 
 ### Electronic invoicing in Denmark
 
 For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
+
+### Electronic invoicing in Panama
+
+For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
 
 ## Additional resources
 

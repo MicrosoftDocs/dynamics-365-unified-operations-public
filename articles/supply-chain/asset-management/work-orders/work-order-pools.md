@@ -1,7 +1,7 @@
 ---
 title: Work order pools
 description: Learn how to work with work order pools in Asset Management, including an outline and step-by-step process for creating a work order pool.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019

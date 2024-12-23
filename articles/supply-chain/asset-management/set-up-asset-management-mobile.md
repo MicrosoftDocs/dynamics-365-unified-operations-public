@@ -1,7 +1,7 @@
 ---
 title: Set up the Asset management mobile workspace
 description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management and the finance and operations mobile app to run an Asset management mobile workspace.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 01/15/2021
@@ -42,12 +42,7 @@ To make asset management features available in the finance and operations (Dynam
 
 1. Select the **Asset Management** tile, and then select **Publish** on the toolbar. After a few seconds, you should receive a notification that states that the workspace has been successfully published. Additionally, the text on the tile should change to "In metadata - published."
 
-## Install and set up the finance and operations (Dynamics 365) mobile app
-
-1. Go to one of the following app stores to install the **Microsoft finance and operations (Dynamics 365)** app on your mobile device:
-
-    - [For Google Android devices](https://go.microsoft.com/fwlink/?linkid=850662)
-    - [For Apple iOS devices](https://go.microsoft.com/fwlink/?linkid=850663)
+## Set up the finance and operations (Dynamics 365) mobile app
 
 1. Open the finance and operations (Dynamics 365) app. The sign-in page should appear. In the **Sign in** field, enter your Supply Chain Management URL, or select a recent URL in the **Recent environments** list, and then tap **Connect**.
 

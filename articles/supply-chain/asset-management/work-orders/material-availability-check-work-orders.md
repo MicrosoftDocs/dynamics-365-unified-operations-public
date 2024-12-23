@@ -1,7 +1,7 @@
 ---
 title: Material availability check for work orders
 description: Learn how supervisors can check whether all the required materials are available for one or more maintenance work orders.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: how-to
 ms.date: 09/07/2023

@@ -4,8 +4,8 @@ description: Learn about service update availability and the different release o
 author: hmahl
 ms.author: hmahl
 ms.topic: article
-ms.date: 03/18/2024
-ms.custom: 
+ms.date: 11/04/2024
+ms.custom: evergreen
 ms.reviewer: johnmichalak
 audience: IT Pro 
 ms.search.region: Global

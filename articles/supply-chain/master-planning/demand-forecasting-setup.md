@@ -3,11 +3,12 @@ title: Demand forecasting setup
 description: Learn about the setup tasks that you must perform to prepare for demand forecasting, including an outline on item allocation keys.  
 author: t-benebo
 ms.author: benebotg
-ms.topic: how-to
-ms.date: 01/05/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
+ms.topic: how-to
+ms.date: 12/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Demand forecasting setup
@@ -24,7 +25,7 @@ Item allocation keys establish groups of items. A demand forecast is calculated 
 
 An item and its dimensions must be part of only one item allocation key if the item allocation key is used during forecast creation.
 
-To create item allocation keys and add a stockkeeping unit (SKU) to them, follow these steps.
+To create item allocation keys and add a stock-keeping unit (SKU) to them, follow these steps.
 
 1. Go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**.
 1. Either select an item allocation key in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected key, set the following fields:
@@ -102,7 +103,7 @@ The **Forecast generation strategy** field lets you select the method that is us
 
 - *Copy over historical demand* – Create forecasts by just copying historical data.
 - *Azure Machine Learning Service* – Use a forecast model that uses the Azure Machine Learning Service. The Azure Machine Learning Service is the current machine learning solution for Azure. Therefore, we recommend that you use it if you want to use a forecast model.
-- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning studio (classic). Azure Machine Learning studio (classic) has been deprecated and will soon be removed from Azure. Therefore, we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
+- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning Studio (classic). Azure Machine Learning Studio (classic) has been deprecated and will soon be removed from Azure. Therefore, we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning Studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
 
 You can override the forecast generation method for one or more specific item allocation keys by using the **Item allocation keys** tab. That tab provides similar fields.
 
@@ -132,14 +133,14 @@ Use the **Azure Machine Learning Service** tab to set up the connection to the A
 
 For more information about how to set up the Azure Machine Learning Service and then use the settings here to connect to it, see the [Set up the Azure Machine Learning Service](#setup-amls) section.
 
-### Set up the connection to Azure Machine Learning studio (classic)
+### Set up the connection to Azure Machine Learning Studio (classic)
 
 > [!IMPORTANT]
 > Azure Machine Learning Studio (classic) has been deprecated. Therefore, you can no longer create new workspaces for it in Azure. It has been replaced by the Azure Machine Learning Service, which provides similar functionality and more. If you aren't already using Azure Machine Learning, you should start to use the Azure Machine Learning Service. If you already have a workspace that was created for Azure Machine Learning Studio (classic), you can continue to use it until the feature is completely removed from Azure. However, we recommend that you update to the Azure Machine Learning Service as soon as possible. Although the application will continue to warn you that Azure Machine Learning Studio (classic) has been deprecated, the forecasting result won't be affected. For more information about the new Azure Machine Learning Service and how to set it up, see the [Set up the Azure Machine Learning Service](#setup-amls) section.
 >
 > You can freely switch between using the new and old machine learning solutions with Supply Chain Management for as long as your old Azure Machine Learning Studio (classic) workspace remains available.
 
-If you already have an available Azure Machine Learning studio (classic) workspace, you can use it to generate forecasts by connecting it to Supply Chain Management. You can establish this connection by using the **Azure Machine Learning** tab on the **Demand forecasting parameters** page. (The settings on this tab have an effect only when the **Forecast generation strategy** field is set to *Azure Machine Learning*.) Enter the following details for your Azure Machine Learning studio (classic) workspace:
+If you already have an available Azure Machine Learning Studio (classic) workspace, you can use it to generate forecasts by connecting it to Supply Chain Management. You can establish this connection by using the **Azure Machine Learning** tab on the **Demand forecasting parameters** page. (The settings on this tab have an effect only when the **Forecast generation strategy** field is set to *Azure Machine Learning*.) Enter the following details for your Azure Machine Learning Studio (classic) workspace:
 
 - Web service application programming interface (API) key
 - Web service endpoint URL
@@ -157,7 +158,7 @@ To set up the default parameters and values used for demand forecasting models, 
 
 - **Name** – The name of the parameter, as used by Azure. Usually, you shouldn't change this name unless you've customized the experiment in Azure Machine Learning.
 - **Description** – A common name for the parameter. This name is used to identify the parameter in other places in the system (for example, on the **Demand forecasting parameters** page).
-- **Value** – The default value for the parameter. The value that you should enter depends on the parameter that you're editing. 
+- **Value** – The default value for the parameter. The value that you should enter depends on the parameter that you're editing.
 - **Explanation** – A short description of the parameter and how to use it. This description typically includes advice about valid values for the **Value** field.
 
 The following parameters are provided by default. (If you must ever revert to this standard list, select **Restore** on the Action Pane.)
@@ -198,7 +199,7 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 ### <a name="ml-workspace"></a>Set up machine learning in Azure
 
-To enable Azure to use machine learning to process your forecasts, you must set up an Azure machine learning workspace for this purpose. You have two options:
+To enable Azure to use machine learning to process your forecasts, you must set up an Azure Machine Learning workspace for this purpose. You have two options:
 
 - To set up the workspace by running a script that is provided by Microsoft, follow the instructions in the [Option 1: Run a script to automatically set up your machine learning workspace](#ml-workspace-script) section, and then skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
 - To manually set up your workspace, follow the instructions in the [Option 2: Manually set up your machine learning workspace](#ml-workspace-manual) section, and then skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section. This option takes more time, but it gives you more control.
@@ -338,6 +339,5 @@ When you select *Azure Machine Learning Service* as your forecast generation str
 - [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 - [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

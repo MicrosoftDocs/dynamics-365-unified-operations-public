@@ -1,7 +1,7 @@
 ---
 title: Introduction to work orders
 description: Access an overview of work orders in Asset Management, which are used to manage maintenance jobs, provide required information, and register consumption.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: how-to
 ms.date: 05/22/2024

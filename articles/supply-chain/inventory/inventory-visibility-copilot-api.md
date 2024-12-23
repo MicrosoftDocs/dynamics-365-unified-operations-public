@@ -4,7 +4,7 @@ description: Learn how the inventory visibility service interacts with Microsoft
 author: yufei-huang
 ms.author: yufeihuang
 ms.topic: how-to
-ms.date: 11/07/2023
+ms.date: 11/11/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:

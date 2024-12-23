@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.42 of finance and operations apps (Dece
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.42 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 10/25/2024
+ms.date: 11/04/2024
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -19,14 +19,15 @@ This article lists the features that are included in the platform updates for ve
 
 - **Preview of release:** October 2024
 - **General availability of release (self-update):** December 2024
-- **General availability of release (auto-update):** Febuary 2025
+- **General availability of release (auto-update):** February 2025
 
 ## Features included in this release
 
-This section qill contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| User interface development | Add Adaptive Card controls to your forms in finance and operations apps | [Adaptive Card controls](../../dev-itpro/user-interface/adaptive-cards.md) | Default |
 
 ## Feature enhancements included in this release
 
@@ -48,12 +49,11 @@ Check out the [Dynamics 365: 2024 release wave 2 plan](/dynamics365/release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that are removed, or that are planned for removal in platform updates of finance and operations apps.
+The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes removed features or features that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-Deprecation notices are add to the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+Deprecation notices are added to the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are 
-functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler.

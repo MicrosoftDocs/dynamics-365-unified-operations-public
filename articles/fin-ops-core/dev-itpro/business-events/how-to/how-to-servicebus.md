@@ -31,7 +31,7 @@ Here are two of the many benefits of this approach:
 Here is an overview of the procedures that you must complete:
 
 1. Create a new Service Bus namespace.
-2. Create a new Service Bus article and subscription.
+2. Create a new Service Bus topic and subscription.
 3. Create a new key vault to store the Service Bus key.
 4. Register an Azure app that has permission to access the key vault.
 5. Configure a Business Events endpoint.
@@ -48,21 +48,21 @@ Here is an overview of the procedures that you must complete:
 
 4. When you've finished setting all the parameters, select **Create**.
 
-## Create a new Service Bus article and subscription
+## Create a new Service Bus topic and subscription
 
-1. In the Azure portal, select the Service Bus that you just created, and then create a new article.
+1. In the Azure portal, select the Service Bus that you just created, and then create a new topic.
 
    <img alt="Service Bus Topic" src="../../media/BEF-Howto-servicebus-03.png" width="70%">
 
-2. Select the new article, and then create a new subscription that is named **BE-USMF**.
-3. Go back to the blade for your Service Bus, and create a new shared access policy to send events. Only the **Send** policy is required to send events to the Service Bus article.
+2. Select the new topic, and then create a new subscription that is named **BE-USMF**.
+3. Go back to the blade for your Service Bus, and create a new shared access policy to send events. Only the **Send** policy is required to send events to the Service Bus topic.
 
     <img alt="Service Bus Shared access policy" src="../../media/BEF-Howto-servicebus-05.png" width="70%">
 
 4. Select the new **Send** policy, and then copy and save the **Primary Connection String** value. You will use this value later.
 
   > [!NOTE]
-  > The shared access policy must be at the name space level and not at the article level. If the shared access policy from the article level is used, the trailing string with semi colon EntityPath= must not be included when configuring the endpoint for business events.
+  > The shared access policy must be at the name space level and not at the topic level. If the shared access policy from the topic level is used, the trailing string with semi colon EntityPath= must not be included when configuring the endpoint for business events.
 
 ## Create a new key vault
 
@@ -120,7 +120,7 @@ The business scenario involves sending an email or a message to a team channel w
 2. Activate the business event for USMF company.
     After you activate a business event that uses the new Service Bus endpoint, the application sends a test message to verify that the configuration is accurate and to cache the connection.
 
-3. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus article, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
+3. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus topic, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
 
     <img alt="Service Bus message count" src="../../media/BEF-Howto-servicebus-10.png" width="70%">
 
@@ -131,7 +131,7 @@ The business scenario involves sending an email or a message to a team channel w
 4. Create a new logic app in your resource group.
 5. After your Logic Apps resource has been created, select the option to create a blank logic app.
 6. Search for **Service Bus**, and select it.
-7. Select the trigger that is named **When a message is received in a article subscription (auto-complete)**.
+7. Select the trigger that is named **When a message is received in a topic subscription (auto-complete)**.
 
     > [!NOTE] 
     > Auto-complete means that the message is deleted from the subscription queue after it's retrieved. Peek-lock authorizes concurrent consumers. It requires a call to the **complete** command of the Service Bus application programming interface (API) in order to delete the message.
@@ -146,7 +146,7 @@ The business scenario involves sending an email or a message to a team channel w
 
     <img alt="Service bus listen policy " src="../../media/BEF-Howto-servicebus-16.png" width="70%">
 
-10. Select your trigger parameters. Be sure to use the correct names for the article and subscription that you created.
+10. Select your trigger parameters. Be sure to use the correct names for the topic and subscription that you created.
 
     This API polls Service Bus for new messages at a configurable recurrence (by default, every three minutes). If the volume of messages is low, the API will have a cost impact for unnecessary triggers, because Logic Apps is priced per trigger call and action run. However, you can implement a push architecture that uses Azure Event Grid in the middle. Service Bus can then push events to Event Grid when there are messages in a queue or a subscription. For more information, see [Azure Service Bus to Event Grid integration overview](/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept).
 

@@ -1,7 +1,7 @@
 ---
 title: Warranties on assets and asset types
 description: Learn how to set up warranties on assets and asset types in Asset Management, including processes for setting up warranties on assets and asset types.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/30/2019

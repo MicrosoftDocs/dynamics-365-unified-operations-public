@@ -37,7 +37,7 @@ For example, you've added the following four fields to the `InventTable` table t
 - Custom field 3
 - Custom field 4
 
-In the case, you must modify the `getExtensionFields()` method in the following way.
+In this case, you must modify the `getExtensionFields()` method in the following way.
 
 ```xpp
 [ExtensionOf(classStr(InventSiteOnHandAggregatedViewBuilder))]

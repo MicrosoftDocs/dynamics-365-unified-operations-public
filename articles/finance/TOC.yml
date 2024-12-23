@@ -1076,6 +1076,10 @@
                       href: general-ledger/financial-tag.md
                     - name: Differences between financial tags and financial dimensions
                       href: general-ledger/financial-tag-financial-dimension.md
+                    - name: Financial tag rules
+                      href: general-ledger/financial-tag-defaulting.md
+                    - name: Financial tag rule reference
+                      href: general-ledger/financial-tag-rule-reference.md
                 - name: Financial dimensions
                   items:
                     - name: Financial dimensions
@@ -1360,6 +1364,8 @@
               href: general-ledger/configure-power.md
             - name: Financial reporting best practices
               href: general-ledger/fin-reports-best.md
+            - name: Financial reporting posting audit
+              href: general-ledger/postings-audit-report.md
             - name: Financial report components
               href: ../fin-ops-core/fin-ops/analytics/financial-report-components.md?context=/dynamics365/context/finance
             - name: View and design financial reports
@@ -1590,38 +1596,6 @@
                       href: localizations/global/workspace/gsw-upload-er-config.md
                     - name: Create a Dataverse solution using upload into repository
                       href: localizations/global/workspace/gsw-upload-into-repository.md
-                - name: Regulatory configuration service (RCS)
-                  items:
-                    - name: Regulatory configuration service (RCS) overview
-                      href: localizations/global/rcs-overview.md?context=/dynamics365/context/finance
-                    - name: Regulatory configuration service (RCS) - Globalization features
-                      href: localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/finance
-                    - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-                      href: localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/finance
-                    - name: Regulatory Configuration Service (RCS) - Delete an RCS environment
-                      href: localizations/dev-itpro/rcs-delete-environment.md
-                    - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-                      href: localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/finance
-                    - name: Download ER configurations to Finance
-                      items:
-                        - name: Download configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/finance
-                        - name: Import configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
-                    - name: Global repository (GR)
-                      items:
-                        - name: Import configurations from GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/finance
-                        - name: Import updated versions of ER configurations
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/finance
-                        - name: Enhanced filtering to find configurations in GR
-                          href: localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/finance
-                        - name: Upload configurations to GR
-                          href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/finance
-                        - name: Share configurations in GR
-                          href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
-                        - name: Discontinue configurations in the RCS Global repository
-                          href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing
                   items:
                     - name: Electronic Invoicing overview
@@ -1726,74 +1700,6 @@
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
-                    - name: Work with Globalization features
-                      items:
-                        - name: Work with Globalization features overview
-                          href: localizations/global/e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
-                        - name: Import a feature from the Global repository
-                          href: localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
-                        - name: Create a new Globalization feature
-                          href: localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Work with configurations
-                          href: localizations/global/e-invoicing-work-configurations.md
-                        - name: Work with feature setup
-                          href: localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/finance
-                        - name: Complete, publish, and deploy a Globalization feature
-                          href: localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
-                        - name: Share with other organizations
-                          href: localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/finance
-                        - name: Usage management dashboard
-                          href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
-                        - name: Process incoming electronic documents
-                          items:
-                            - name: Processing incoming electronic documents
-                              href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
-                            - name: Configure an email channel
-                              href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
-                            - name: Configure an email channel for Office 365 Exchange Online
-                              href: localizations/global/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
-                            - name: Configure a SharePoint channel
-                              href: localizations/global/e-invoicing-configure-sharepoint-channel.md
-                        - name: Electronic Invoicing service ISV last-mile connector
-                          href: localizations/global/e-invoicing-isv-connector.md
-                    - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-                      items:
-                        - name: Activate and set up integration with Electronic Invoicing
-                          href: localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/finance
-                        - name: Set up Electronic Invoicing parameters
-                          href: localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
-                        - name: Work with Electronic Invoicing
-                          items:
-                            - name: Submit electronic documents to Electronic Invoicing
-                              href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
-                            - name: Work with the Electronic documents submission log
-                              href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
-                            - name: Work with the Electronic documents receiving log
-                              href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
-                    - name: Country/region-specific scenarios
-                      items:
-                        - name: Availability of Electronic Invoicing features
-                          href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for Australia and New Zealand
-                          href: localizations/apac/apac-aus-nzl-electronic-invoices.md
-                        - name: Get started with Electronic invoicing for Denmark
-                          href: localizations/denmark/e-invoicing-dk-get-started.md
-                        - name: Get started with Electronic Invoicing for Egypt
-                          href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for Indonesia
-                          href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic invoicing for Poland
-                          href: localizations/poland/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
-                          href: localizations/mea/e-invoicing-sa-get-started-phase-one.md
-                        - name: Get started with Electronic invoicing for Saudi Arabia - Phase two
-                          href: localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Electronic invoicing onboarding in Saudi Arabia
-                          href: localizations/mea/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
-                        - name: Setup direct integration of Italian FatturaPA with SDI
-                          href: localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
-                    - name: Electronic Invoicing FAQ
-                      href: localizations/global/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
                   items:
                     - name: Tax Calculation overview
@@ -3784,16 +3690,6 @@
                       href: localizations/poland/emea-pol-intrastat.md
                     - name: Set up number sequences by warehouse
                       href: localizations/poland/emea-pol-number-sequence-warehouses.md
-                    - name: Standard audit file
-                      href: localizations/poland/emea-pol-standard-audit-file-saf.md
-                    - name: Tax interest and free-hand interest
-                      href: localizations/poland/emea-pol-interest-calculation.md
-                    - name: Turnover balances statement
-                      href: localizations/poland/emea-pol-turnover-balances-statement.md
-                    - name: Split AP/AR exchange difference
-                      href: localizations/poland/emea-pol-split-ap-ar-exchange-difference.md
-                    - name: Set up and use PKWiU codes for Poland
-                      href: localizations/poland/emea-pol-pkwiu-code.md
                     - name: VAT declaration with registers (JPK_V7, VDEK)
                       items:
                         - name: VAT declaration with registers (JPK_V7, VDEK) overview
@@ -3804,6 +3700,28 @@
                           href: localizations/poland/emea-pol-vdek-reporting.md
                         - name: Details of specific business scenarios in the JPK-V7 report
                           href: localizations/poland/emea-pol-vdek-scenarios.md
+                    - name: Standard audit file (JPK)
+                      items:
+                        - name: Standard audit file (JPK) overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Accounting Books Income Tax - JPK_KR_PD
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
+                        - name: SAF Bank statement file - JPK_WB
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
+                        - name: SAF Inventory file - JPK_MAG
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-mag.md
+                        - name: SAF VAT sales and purchase register - JPK_VAT
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-vat.md
+                        - name: SAF VAT invoices file - JPK_FA
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-fa.md
+                    - name: Tax interest and free-hand interest
+                      href: localizations/poland/emea-pol-interest-calculation.md
+                    - name: Turnover balances statement
+                      href: localizations/poland/emea-pol-turnover-balances-statement.md
+                    - name: Split AP/AR exchange difference
+                      href: localizations/poland/emea-pol-split-ap-ar-exchange-difference.md
+                    - name: Set up and use PKWiU codes for Poland
+                      href: localizations/poland/emea-pol-pkwiu-code.md
                     - name: Payment terms in commercial transactions report
                       href: localizations/poland/emea-pol-payment-terms-report.md
                 - name: Qatar
@@ -4929,30 +4847,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/finance
                     - name: Import configurations (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/finance
-                - name: Regulatory configuration service (RCS)
-                  items:
-                    - name: Regulatory configuration service (RCS) overview
-                      href: localizations/global/rcs-overview.md?context=/dynamics365/context/finance
-                    - name: Download ER configurations to Finance
-                      items:
-                        - name: Download configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/finance
-                        - name: Import configurations from RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
-                    - name: Global repository (GR)
-                      items:
-                        - name: Import configurations from GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/finance
-                        - name: Import updated versions of ER configurations
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/finance
-                        - name: Enhanced filtering to find configurations in GR
-                          href: localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/finance
-                        - name: Upload configurations to GR
-                          href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/finance
-                        - name: Share configurations in GR
-                          href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
-                        - name: Discontinue configurations in the RCS Global repository
-                          href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
             - name: Quick start guides
               items:
                 - name: Adjust an ER format to generate a custom electronic document

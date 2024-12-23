@@ -315,6 +315,8 @@ items:
           items:
           - name: Archive Dynamics 365 Finance General ledger
             href: sysadmin/archive-gl.md
+          - name: Archive Dynamics 365 customer invoice data
+            href: sysadmin/archive-custinvoices.md
           - name: Archive Dynamics 365 Finance Tax transactions
             href: sysadmin/archive-taxtrans.md
           - name: Archive Dynamics 365 Supply Chain Sales orders
@@ -843,6 +845,8 @@ items:
             href: dev-ref/xpp-string-run-time-functions.md
         - name: System tables
           href: dev-ref/system-tables.md
+      - name: Real async feature enhancements
+        href: dev-tools/real-async.md  
       - name: Extensibility
         items:
         - name: Extensibility home page
@@ -1358,7 +1362,7 @@ items:
             - name: Centralized error management
               href: data-entities/dual-write/dual-write-async-error.md
             - name: Dual-write Async FAQ  
-              href: data-entities/dual-write/dual-write-async-faq.md        
+              href: data-entities/dual-write/dual-write-async-faq.md    
         - name: Support for dual-write
           items:
             - name: Considerations for initial synchronization
@@ -1965,6 +1969,8 @@ items:
           items:
           - name: Troubleshoot development environments during upgrade
             href: migration-upgrade/troubleshoot-dev-env.md
+          - name: Debug data upgrade scripts
+            href: migration-upgrade/debug-data-upgrade.md
           - name: Troubleshoot upgrades to self-service environments
             href: migration-upgrade/troubleshoot-self-service-env.md
           - name: Troubleshoot PreSync and PostSync upgrade scripts
@@ -2105,6 +2111,8 @@ items:
           href: user-interface/filtering.md
         - name: Power Apps Host control
           href: user-interface/powerapps-host-control.md
+        - name: Adaptive Card control
+          href: user-interface/adaptive-cards.md
       - name: Window management
         items:
         - name: Migrate context menu code
@@ -2269,8 +2277,8 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Chat with finance and operations data on Microsoft 365 Copilot
-        href: m365-copilot/chat-with-fno-data-on-m365copilot.md
+      - name: Chat with finance and operations data
+        href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
@@ -2305,8 +2313,6 @@ items:
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
-      - name: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
-        href: ../fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
       - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)

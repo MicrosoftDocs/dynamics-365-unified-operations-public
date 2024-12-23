@@ -1,7 +1,7 @@
 ---
 title: Delivery schedules
 description: Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/20/2017

@@ -1,7 +1,7 @@
 ﻿---
 title: Display seamless sync information on custom forms in Dynamics 365 Sales (preview)
 description: Learn how to modify custom forms in Dynamics 365 Sales to display seamless sync information
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form:

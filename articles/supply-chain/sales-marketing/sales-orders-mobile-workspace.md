@@ -1,7 +1,7 @@
 ---
 title: Sales orders mobile workspace
 description: Learn about the Sales orders mobile workspace, which helps you stay up to date about your sales orders anywhere and anytime.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/24/2022
@@ -104,12 +104,6 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </tr>
 </tbody>
 </table>
-
-## Download and install the mobile app
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 

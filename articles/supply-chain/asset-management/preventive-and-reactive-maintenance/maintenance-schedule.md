@@ -1,7 +1,7 @@
 ---
 title: Maintenance schedule
 description: Learn about the maintenance schedule in Asset Management, including a table that provides a description of contents for various menu items.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/27/2019

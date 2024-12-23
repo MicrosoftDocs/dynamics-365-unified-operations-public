@@ -1,7 +1,7 @@
 ---
 title: Create an asset
 description: Learn how to create an asset in Asset Management, including a detailed step-by-step process on creating assets and an outline on general information.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019

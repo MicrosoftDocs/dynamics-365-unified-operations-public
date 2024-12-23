@@ -1,7 +1,7 @@
 --- 
 title: Set up a transportation tender
 description: Learn how to set up a transportation tender typically done by a transportation coordinator, including a step-by-step process. 
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
 ms.date: 08/29/2018

@@ -1,7 +1,7 @@
 ---
 title: Asset types
 description: Learn how to create asset types in Asset Management. It also describes the elements that are related to asset types, including a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019

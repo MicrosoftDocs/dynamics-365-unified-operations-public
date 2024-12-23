@@ -3,10 +3,12 @@ title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
-ms.date: 08/05/2024
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: conceptual
+ms.date: 11/13/2024
+ms.custom: 
+  - bap-template
 ---
 
 # What's new or changed in the Warehouse Management mobile app
@@ -16,16 +18,36 @@ ms.search.form:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 3.0.6.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Fixed an issue that affected the connection on Android devices.
+
+## Version 3.0.5.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Fixed an issue that affected the wireless network connection monitor.
+
+## Version 3.0.4.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Fixed an issue that affected the wireless network connection monitor.
+- Fixed an issue that could occur when changing color themes.
+- Improved security and performance.
+
 ## Version 3.0.3.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.  
-- Improved authentication stability and sign-in experience. 
+- Improved authentication stability and sign-in experience.
 - Improved speed when changing between pages.  
-- Improved connection stability and performance. 
+- Improved connection stability and performance.
 - Fixed decimal formats to better match the selected user culture.  
-- Improved accessibility on the workload screen.   
+- Improved accessibility on the workload screen.
 
 ## Version 3.0.0.0
 

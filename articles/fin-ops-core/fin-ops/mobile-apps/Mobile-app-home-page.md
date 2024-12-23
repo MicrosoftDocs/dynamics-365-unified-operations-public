@@ -121,16 +121,6 @@ The following table includes links to resources that can help you implement both
 <td><a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a></td>
 </tr>
 <tr class="even">
-<td>8</td>
-<td>User</td>
-<td>Download and install the mobile app.</td>
-<td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and operations app for Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and operations app for iOS</a><BR/>
-(Windows Phone unsupported)
-</td>
-</tr>
-<tr class="odd">
 <td>9</td>
 <td>User</td>
 <td>Sign in, and use the mobile app. The app includes the mobile workspaces that have been published by the system administrator.</td>

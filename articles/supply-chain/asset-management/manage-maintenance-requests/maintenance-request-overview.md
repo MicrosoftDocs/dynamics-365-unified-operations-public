@@ -1,7 +1,7 @@
 ---
 title: Maintenance requests
 description: Access an overview about managing maintenance requests in Asset Management, including an outline on viewing maintenance requests.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: overview
 ms.date: 10/01/2019

@@ -1,7 +1,7 @@
 ---
 title: Integration with Microsoft Dynamics 365 Field Service overview
 description: Learn about the Integration with Microsoft Dynamics 365 Field Service, including an overview of system requirements.
-author: adpattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
 ms.date: 07/24/2024

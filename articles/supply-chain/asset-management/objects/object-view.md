@@ -1,7 +1,7 @@
 ---
 title: Asset view
 description: Learn about the asset view in Asset Management, including an outline and step-by-step process for navigating to the View field.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019

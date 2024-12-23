@@ -1,7 +1,7 @@
 ---
 title: Maintenance forecasts
 description: Learn about maintenance forecasts in Asset Management, which adds forecast lines and deletes them from work orders, including a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
