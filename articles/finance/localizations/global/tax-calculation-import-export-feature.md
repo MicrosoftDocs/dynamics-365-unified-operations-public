@@ -18,16 +18,11 @@ ms.dyn365.ops.version: 10.0.23
 
 This article provides information about the import and export functionality of the tax calculation feature. This functionality helps ensure a flexible and efficient configuration experience.
 
-> [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to the **Globalization Studio** workspace in Microsoft Dynamics Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
->
-> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
-
 ## Import and export tax codes
 
 ### Export templates
 
-1. In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
+1. Open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 2. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 3. In the **Versions** grid, select **Edit**.
 4. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
