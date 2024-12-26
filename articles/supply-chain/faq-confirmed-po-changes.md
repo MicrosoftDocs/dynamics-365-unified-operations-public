@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: cabeln
 ms.author: cabeln
 ms.topic: article
-ms.date: 11/16/2023
+ms.date: 11/12/2024
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

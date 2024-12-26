@@ -58,7 +58,7 @@ This icon would be converted to an image with a **white background and transpare
 
 ![Workspace icon following new guidance.](./media/baseIcon_img_PU29.png) 
 
-To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the new sizing recommendations.   
+To understand how this relates to the sizing recommendations, here is the workspace icon image overlaid with the new sizing recommendations.   
 
 ![Workspace icon with new sizing recommendations.](./media/baseIcon_Guides_PU29.png) 
 

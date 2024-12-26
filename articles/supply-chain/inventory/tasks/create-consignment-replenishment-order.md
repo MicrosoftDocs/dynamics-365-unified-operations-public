@@ -1,8 +1,8 @@
 --- 
 title: Create a consignment replenishment order
 description: Learn how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 08/19/2019
 ms.custom:

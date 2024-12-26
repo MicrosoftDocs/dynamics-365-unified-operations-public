@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 7/28/2024
+ms.date: 9/17/2024
 ms.custom:   
   - bap-template
   - evergreen
@@ -30,12 +30,13 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Accounts payable | Financial tag for purchase order invoicing | This feature takes advantage of financial tags to help track processes and ensure accurate analysis of financial data across procurement-to-pay transactions. | Feature management |
+| Accounts payable | Enable financial tags for purchase order invoicing | This feature takes advantage of financial tags to help track processes and ensure accurate analysis of financial data across procurement-to-pay transactions. | Feature management |
 | Accounts receivable | Prepayment customer invoice feature | This feature creates and manages invoices for customer prepayments. Customers can issue prepayment invoices to require a deposit before a sales order is fulfilled. | Feature management |
 | Accounts receivable | Free text invoice performance boost | <p>The increasing volume of data was causing the free text invoice page in Dynamics 365 Finance to be loaded slowly. It was also causing performance issues when the workflow was enabled. To address these issues, two key changes were made:</p><ul><li>The **All free text invoices** menu item now shows only invoices that have a status of **Not posted**.</li><li>A new **Optimized invoice loading page** menu item provides a streamlined interface and faster data loading capabilities.</li></ul> | Feature management |
 | Cash and bank management | Modern bank reconciliation | This feature improves the usability and performance of advanced bank reconciliation and provides feature enhancements. Several new capabilities are available on the bank reconciliation worksheet. For example, there are capabilities to clear reversal company transactions, generate vouchers and payment journals, and settle open customer invoices. Bank reconciliation matching rules are enhanced to automatically run these capabilities through user-defined criteria. This feature is generally available for production environments in Dynamics 365 Finance version 10.0.41. | Feature management |
 | Cash and bank management | Automatic clear bridged transactions through advanced bank reconciliation | This feature automatically clears bridged payment transactions through bank reconciliation. The transactions don't have to be manually cleared in the general ledger. Users can set up a bridging account for each bank account. This feature is generally available for production environments in Dynamics 365 Finance version 10.0.41. | Feature management |
 | Cash and bank management | Skip reversal flag validation when matching reversal bank statement lines | A mandatory validation determines whether one of the bank statement lines has the reversal field set to **Yes** to match the corresponding original statement line. This new feature skips the validation for manual matching and provides a configurable parameter for matching rule setup. This feature is generally available for production environments in Dynamics 365 Finance version 10.0.41. | Feature management |
+| Cash and bank management | Enable batch mode for bank statement and bank statement line posting in advanced bank reconciliation | This feature enables batch processing option for bank statement posting and bank statement line posting in bank reconciliation worksheet. To post bank statement lines in bank reconciliation worksheet, the **Enable posting of new transactions in bank reconciliation** feature has to be enabled. | Feature management |
  |Credit and collections |	Customer balance statistics deletion job	 |Users can efficiently manage long-term data stored in the Customer balance statistics table. This enhancement includes a **Delete outdated balance statistics records** periodic task designed to remove unnecessary records from the table, alleviating potential performance impacts associated with data overload. |	Feature management |
  |Credit and collections	 |Customer data maintenance |	A new data maintenance page is available that streamlines data consistency. This page allows customers to view and manually retry failed updates, and resolve issues without relying on support tickets.  |	Feature management |
 | Fixed assets | Consider split transaction in derived books posting (Public preview) | This feature automates the process of posting split transactions from the main book to specified derived books, based on the configuration that is set up on the **Asset book** page. That configuration defines how transactions are posted based on transaction type. After the feature is enabled, split transactions are automatically posted according to the predefined settings. Therefore, manual intervention isn't required. | Feature management |
@@ -68,6 +69,7 @@ This section contains a table that lists the enhancements that are included in t
 | Tax | Global withholding tax performance improvement | The performance of the withholding tax calculation process is improved when customer or vendor invoices are settled. | Default on |
 | Tax (India) | Performance improvements for posting journals | Posting performance is improved when there is a large volume of journal entries where India's Goods and Services Tax (GST) is applied. | Default on|
 | Electronic Invoicing | E-Invoicing for Chile: Vendor electronic invoice import | This feature enhances the last-mile integration with the Chilean Tax Authorities via the Edicom certification authorization provider. It provides the required end-to-end process for the inbound flow of electronic invoice import. For more information, see [Vendor electronic invoice import in Chile](../localizations/iberoamerica/ltm-chl-vend-e-invoice.md). | |
+| Regulatory reporting | VAT declaration for Lithuania | New **VAT declaration XML (LT)** and **VAT declaration Excel (LT)** ER formats are introduced under the **Tax declaration model**. For more information, see [VAT declaration for Lithuania (FR0600)](../localizations/lithuania/emea-ltu-vat-declaration-lithuania.md). | |
 
 ## Features turned on by default in this release
 

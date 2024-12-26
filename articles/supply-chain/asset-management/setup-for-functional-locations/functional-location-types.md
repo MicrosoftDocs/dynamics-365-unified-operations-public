@@ -1,8 +1,8 @@
 ---
 title: Functional location types
 description: Learn how to create functional location types in Asset Management, including an outline and step-by-step process on creating a default functional location type.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/24/2019
 ms.reviewer: kamaybac

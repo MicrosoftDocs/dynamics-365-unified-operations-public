@@ -1,8 +1,8 @@
 ---
 title: Inventory blocking
 description: Learn how to work with inventory blocking, which is part of the quality inspection process in Supply Chain Management, with an outline on manually blocking items.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

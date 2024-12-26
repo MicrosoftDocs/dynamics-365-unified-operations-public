@@ -3,12 +3,14 @@ title: POS extension basics
 description: This article describes the basic concepts of point of Sale (POS) extension in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: bennettray
+ms.author: anupamar
 ms.search.validFrom: 2020-04-13
+ms.custom: 
+  - bap-template
 ---
 
 # POS extension basics

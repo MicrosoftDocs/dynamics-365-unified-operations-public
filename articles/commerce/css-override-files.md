@@ -3,12 +3,14 @@ title: Work with CSS override files
 description: This article describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-12-12
+ms.custom: 
+  - bap-template
 ---
 
 # Work with CSS override files

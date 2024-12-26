@@ -1,8 +1,8 @@
 ---
 title: Demand planning home page
 description: Learn about Ddmand planning in Microsoft Dynamics 365 Supply Chain Management, Microsoft's next-generation collaborative demand planning solution.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: overview
 ms.date: 10/19/2023
 ms.custom: bap-template
@@ -21,7 +21,7 @@ Inaccurate forecasts and demand plans can lead to lost revenue and inefficiency 
 Demand planning provides the following capabilities:
 
 - **A no-code approach** to demand modeling and planning configuration. Flexible building blocks enable the vast majority (over 85 percent) of demand planners who aren't data scientists to do what-if planning and analyze, optimize, and compare scenarios in minutes.
-- **Seamless, on-the-fly aggregation and disaggregation**. Therefore, planners can edit forecasts at the corporate or product group level, and then zoom in and instantly see the impact at the regional and stockkeeping unit (SKU) levels.
+- **Seamless, on-the-fly aggregation and disaggregation**. Therefore, planners can edit forecasts at the corporate or product group level, and then zoom in and instantly see the impact at the regional and stock-keeping unit (SKU) levels.
 - **Improved forecast accuracy** with automatic AI parameter tuning to help ensure accurate forecasting and preprocessing. External signals enable superior forecast accuracy by considering promotions or stockouts.
 - **Disruption readiness** with interactive and fast what-if analysis. Version history enables tracking, evaluating forecast changes, and using the lessons learned to improve the decision making process.
 - **Effective collaboration throughout the planning cycle**. This capability is enabled through Microsoft Teams in-context communication, in-product commenting, and restorable versions of forecast values throughout the planning process.

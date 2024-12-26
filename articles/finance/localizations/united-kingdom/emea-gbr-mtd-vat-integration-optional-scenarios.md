@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 12/05/2024
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-06
@@ -18,6 +18,11 @@ ms.dyn365.ops.version: AX 10.0.22
 [!include [banner](../../includes/banner.md)]
 
 Her Majesty's Revenue and Customs (HMRC) lets you retrieve information about value-added tax (VAT) payments and VAT liabilities. Therefore, the **UK MTD VAT returns** processing includes actions that let you use the **Dynamics 365 Finance** web application to retrieve this information from HMRC.
+
+> [!NOTE]
+> To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. **These services won’t be accessible from on-premises deployments by June 6, 2025**.
+>
+> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. It’s still possible to generate in batch the report (VAT 100) in Excel and JSON formats.
 
 ## Retrieve information about VAT payments
 

@@ -1,8 +1,8 @@
 ---
 title: Inventory aging report storage
 description: Learn about the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 09/03/2024
 ms.custom:

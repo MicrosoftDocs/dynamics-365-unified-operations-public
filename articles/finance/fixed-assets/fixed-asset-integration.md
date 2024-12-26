@@ -4,8 +4,8 @@ description: Fixed assets can be integrated with General ledger, Inventory manag
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 03/05/2019
-ms.reviewer: kfend
+ms.date: 09/25/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -27,7 +27,11 @@ In General ledger, the value of all fixed assets is typically summarized in mult
 On the **Fixed asset posting profiles** page, you define the main accounts that fixed asset book transactions are posted to. You also specify the types of fixed asset transactions that are posted to each main account. You can create various combinations of main accounts for fixed assets, depending on the level of detail that you want for fixed assets in the general ledger. Main accounts can be based on transaction types, books, and other main accounts.
 
 ## Inventory management
-In the inventory journal for fixed assets, you can enter the acquisition of fixed assets that the legal entity has produced or constructed for itself. You can then transfer inventory items to fixed assets either as an acquisition or as part of an acquisition. 
+In the inventory journal for fixed assets, you can enter the acquisition of fixed assets that the legal entity has produced or constructed for itself. You can then transfer inventory items to fixed assets either as an acquisition or as part of an acquisition.
+
+When acquiring a fixed asset through the **Inventory to Fixed Asset** journal using an inventory item with a tracking dimension such as a 'Serial number' or 'Batch number', there are two options:
+ - If you are capitalizing a single quantity, enter the inventory item along with its tracking dimension directly in the journal line.
+ - If you are acquiring multiple serial or batch numbers for the same asset, assign the serial numbers using the **Reservation** function on the **Inventory** tab.
 
 You can also acquire assets by using purchase orders. When purchase orders contain inventory items that are designated as fixed assets, the setting of the **Allow asset acquisition from Purchasing** option on the **Fixed assets parameters** page determines whether an acquisition is posted for the fixed asset when the invoice is posted. One purchasing line will create one fixed asset, regardless of the quantity. The effect that the acquisition of fixed assets has on inventory depends on the setup of the legal entity. 
 

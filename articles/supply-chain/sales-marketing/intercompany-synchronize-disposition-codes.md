@@ -1,8 +1,8 @@
 ---
 title: Synchronize disposition codes
 description: Learn about synchronization of disposition codes for intercompany commerce, including an outline on disposition codes for three-legged direct returns.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

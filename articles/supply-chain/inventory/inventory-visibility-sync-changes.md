@@ -1,7 +1,7 @@
 ---
-title: Sync external inventory adjustments through Inventory Visibility (preview)
+title: Sync external inventory adjustments through Inventory Visibility
 description: This article explains how to set up the system to sync inventory adjustments registered in an external system to Microsoft Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
-author: yufeihuang
+author: yufei-huang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Sync external inventory adjustments through Inventory Visibility (preview)
+# Sync external inventory adjustments through Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!--KFM: Preview until 10.0.41 GA -->
 
 This article explains how to set up the system to sync inventory adjustment transactions that are registered in an external system to Microsoft Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Some organizations have multiple sources or channels of inventory operations that work outside Supply Chain Management. This feature enables those organizations to use Inventory Visibility to store their omnichannel inventory transactions. Based on these transactions, Inventory Visibility can create and post inventory adjustment journals to Supply Chain Management. These capabilities provide the following key business benefits:
 
@@ -74,13 +70,15 @@ To manage the feature configuration, follow these steps.
 1. On the navigation pane, select **Settings** \> **Feature management**.
 1. On the **Inventory transactions** tile, select **Manage**.
 1. On the **Transaction** page, in the upper section, set the following fields:
-
     - **Enable feature** – Set this option to *True* to enable the feature. Set it to *False* to disable the feature. The feature is automatically turned on when you initialize the configuration as described in the previous section.
     - **Periodically synchronize transaction to IV** – Set this option to *True* if you want the system to automatically sync inventory updates from the Inventory Visibility business layer to the Inventory Visibility service at regular intervals. Set it to *False* to disable this functionality.
     - **Inventory Visibility synchronization frequency** – Enter an integer to specify how often (in minutes) the system syncs inventory updates from the Inventory Visibility business layer to Supply Chain Management (if you enabled this functionality). The default value is *5*.
-    - **Periodically synchronize transaction to Fno** – Set this option to *True* if you want the system to automatically aggregate and sync inventory updates from the Inventory Visibility business layer to Supply Chain Management at regular intervals. When this option is set to *False*, omnichannel transactions are still stored in the Inventory Visibility business layer. However, they aren't synced to Supply Chain Management.
-    - **Fno synchronization frequency** – Enter an integer to specify how often (in minutes) the system syncs inventory updates from the Inventory Visibility business layer to the Inventory visibility service (if you enabled this functionality). The default value is *1440*.
+
+1. In the **Fno Synchronization Settings** section, set the following fields:
+    - **Enable Sync Job** – Set this option to *True* if you want the system to automatically aggregate and sync inventory updates from the Inventory Visibility business layer to Supply Chain Management at regular intervals. When this option is set to *False*, omnichannel transactions are still stored in the Inventory Visibility business layer. However, they aren't synced to Supply Chain Management.
+    - **Job settings** – Select the setting value to open the detailed settings page, where you can specify the start and end time, recurrence interval, and unit for synchronizing inventory updates from the Inventory Visibility business layer to the Inventory Visibility service (if this functionality is enabled). The job is automatically scheduled with default settings when you install Inventory Visibility.
     - **Fno sync max line count in adjustment journal** – Enter an integer to specify the maximum number of inventory adjustment lines that are allowed per adjustment journal during synchronization back to Supply Chain Management. The default value is *10,000*.
+    - **Fno sync max journal count in package** – Enter an integer to specify the maximum number of inventory adjustment journals that are allowed per data package during synchronization back to Supply Chain Management. The default value is *1*.
 
 1. Use the **Fno integration mappings** section to control how data is mapped from the Inventory Visibility business layer to Supply Chain Management. Use the buttons on the toolbar to add, edit, or delete mappings as required. For each mapping, set the following fields:
 

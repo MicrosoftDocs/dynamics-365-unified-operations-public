@@ -13,7 +13,6 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enables organizations to drive business processes in Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor. It's an updated, renamed version of the *IoT Intelligence* feature that was previously available for Supply Chain Management.

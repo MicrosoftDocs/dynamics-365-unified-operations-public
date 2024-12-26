@@ -1,8 +1,8 @@
 ---
 title: Information used in BOM calculations with standard costs
 description: Bills of material (BOM) calculations use data from several sources to calculate the standard costs of a manufactured item.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 10/25/2017
 ms.reviewer: kamaybac

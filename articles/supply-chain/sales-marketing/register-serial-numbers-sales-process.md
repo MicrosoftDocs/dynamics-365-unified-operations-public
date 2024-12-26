@@ -1,8 +1,8 @@
 ---
 title: Working with serialized items
 description: Learn how you can register serial numbers on packing slips or invoices during the sales process, including answers to questions about serial numbers.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 10/31/2019
 ms.reviewer: kamaybac

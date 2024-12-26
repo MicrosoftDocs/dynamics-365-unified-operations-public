@@ -1,8 +1,8 @@
 ---
 title: Functional location lifecycle states
 description: Learn how to set up functional location states and lifecycle models in Asset Management, including a process for setting up functional location lifecycle states.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/24/2019
 ms.reviewer: kamaybac

@@ -5,11 +5,12 @@ author: phinneyridge
 ms.date: 10/26/2023
 ms.topic: overview
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2023-03-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Omnichannel media management overview

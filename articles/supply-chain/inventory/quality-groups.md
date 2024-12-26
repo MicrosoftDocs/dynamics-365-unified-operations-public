@@ -1,8 +1,8 @@
 ---
 title: Item quality groups
 description: Learn how to use item quality groups to group products so that they can be assigned to quality associations for the automatic generation of quality orders.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

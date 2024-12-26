@@ -1,8 +1,8 @@
 --- 
 title: Set up automatic freight reconciliation
 description: Learn how to set up data for automatic freight reconciliation, including a step-by-step process for setting up freight bill types.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 10/16/2018
 ms.custom:

@@ -1,8 +1,8 @@
 --- 
 title: Enter and compare RFQ bids and award contracts
 description: Learn how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 07/09/2019
 ms.custom:

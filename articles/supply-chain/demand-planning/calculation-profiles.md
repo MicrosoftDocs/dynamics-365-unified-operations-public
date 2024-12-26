@@ -1,8 +1,8 @@
 ---
 title: Work with calculation profiles
 description: Learn how to work with calculation profiles, which apply predefined calculations to one or more existing time series to generate a new time series as output.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template

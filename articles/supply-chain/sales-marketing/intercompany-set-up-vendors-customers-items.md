@@ -1,8 +1,8 @@
 ---
 title: Set up vendors, customers, and items for intercompany trade
 description: Learn how to set up vendors, customers, and items for intercompany trade, including a step-by-step process for associating vendors and customers.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

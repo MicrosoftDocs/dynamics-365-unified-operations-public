@@ -1,8 +1,8 @@
 ---
 title: Product information overview
 description: Learn about product information management, which works with a shared product definition, categorization, identifiers, and specific configurations of a product.
-author: t-benebo 
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 01/06/2023
 ms.custom: bap-template

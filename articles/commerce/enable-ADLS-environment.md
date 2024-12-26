@@ -2,18 +2,15 @@
 title: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
 description: This article provides instructions on how to connect an Azure Data Lake Storage Gen 2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
 author: bebeale
-ms.date: 04/21/2023
-ms.topic: article
+ms.date: 09/20/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
-ms.search.region: global
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail, eCommerce
-ms.search.form: 
+  - bap-template
 ---
 
 # Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
@@ -48,10 +45,6 @@ For a more in-depth overview of the steps required to enable Azure Data Lake Sto
     1. **Application ID** // **Application Secret** // **DNS Name** - Needed to connect to KeyVault where the Azure Data Lake Storage secret is stored.
     1. **Secret name** - The secret name stored in KeyVault and used to authenticate with Azure Data Lake Storage.
 1. Save your changes in the top left corner of the page.
-
-The following image shows an example Azure Data Lake Storage configuration.
-
-![Example of Azure Data Lake Storage configuration.](./media/exampleADLSConfig1.png)
 
 ### Test the Azure Data Lake Storage connection
 

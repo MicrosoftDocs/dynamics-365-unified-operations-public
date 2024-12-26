@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 08/01/2024
+ms.date: 11/08/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
@@ -225,7 +225,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 ### <a name="plancert"></a>Step 2. Plan and acquire your certificates
 
-Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD&nbsp;CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
+Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/what-is-an-ssl-certificate), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD&nbsp;CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
 Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in Lifecycle Services include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you'll be instructed to run the creation scripts during later steps in this article. As has been mentioned, these certificates can be used only for testing purposes.
 
@@ -247,24 +247,24 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Purpose                                      | Explanation | Other requirements |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that's transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine LBDEN01SQLA01, the certificate's DNS name is LBDEN01SQLA01.contoso.com.</p><ul><li>**Common name (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS name:** LBDEN01SQLA01.contoso.com</li></ul> |
-| Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that's presented to the client that connects to the cluster. | <p>For this certificate, you can also use the wildcard SSL certificate for your domain, such as \*.contoso.com. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
+| Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that's presented to the client that connects to the cluster. | <p>You can combine this certificate with the AOS SSL certificate. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
 | Service Fabric Client certificate            | Clients use this certificate to view and manage the Service Fabric cluster. | <ul><li>**CN:** client.d365ffo.onprem.contoso.com</li><li>**DNS name:** client.d365ffo.onprem.contoso.com</li></ul> |
 | Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and shouldn't include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
-| AOS SSL certificate                          | This certificate is used as the server certificate that's presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates. | <p>You can use the same wildcard SSL certificate that you used as the Service Fabric server certificate. Otherwise, use the following values:</p><ul><li>**CN:** ax.d365ffo.onprem.contoso.com</li><li>**DNS name:** ax.d365ffo.onprem.contoso.com</li></ul> |
+| AOS SSL certificate                          | This certificate is used as the server certificate that's presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates. | <p>You can combine this certificate with the Service Fabric server certificate. Otherwise, use the following values:</p><ul><li>**CN:** ax.d365ffo.onprem.contoso.com</li><li>**DNS name:** ax.d365ffo.onprem.contoso.com</li></ul> |
 | Session Authentication certificate           | AOS uses this certificate to help secure a user's session information. | <p>This certificate is also the File Share certificate that is used at the time of deployment from Lifecycle Services.</p><ul><li>**CN:** SessionAuthentication</li><li>**DNS name:** SessionAuthentication </li></ul> |
 | Data Encryption certificate                  | AOS uses this certificate to encrypt sensitive information. | <ul><li>**CN:** DataEncryption</li><li>**DNS name:** DataEncryption</li></ul> |
 | Data Signing certificate                     | AOS uses this certificate to sign sensitive information. | <p>This certificate is separate from the Data Encryption certificate.</p><ul><li>**CN:** DataSigning</li><li>**DNS name:** DataSigning</li></ul> |
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
-| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
+| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
-You can use the wildcard SSL certificate for your domain to combine the Service Fabric Server certificate and the AOS SSL certificate. Here's an example of a Service Fabric Server certificate that's combined with an AOS SSL certificate.
+To reduce the number of certificates that are required, you can combine the Service Fabric Server certificate with the AOS SSL certificate. We don't recommend that you use a wildcard certificate. Instead, use a certificate that has multiple subject alternative names (SANs).
 
 #### Subject name
 
 ```Text
-CN = *.d365ffo.onprem.contoso.com
+CN = sf.d365ffo.onprem.contoso.com
 ```
 
 #### Subject alternative names
@@ -272,11 +272,10 @@ CN = *.d365ffo.onprem.contoso.com
 ```Text
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
-DNS Name=*.d365ffo.onprem.contoso.com
 ```
 
-> [!IMPORTANT]
-> You can use the wildcard certificate to help secure only the first-level subdomain of the domain that it's issued to. Therefore, a certificate for \*.onprem.contoso.com won't be valid for ax.d365ffo.onprem.contoso.com.
+> [!NOTE]
+> The subject name can contain either of the subject alternative names.
 
 ### <a name="plansvcacct"></a>Step 3. Plan your users and service accounts
 
@@ -564,7 +563,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     | Microsoft Visual C++ 2015-2022 Redistributable | [Combined Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1522.exe | 10.0.31 | Not applicable|
     | Access Database Engine 2016 Redistributable | [Microsoft Access Database Engine 2016 Redistributable](https://www.microsoft.com/download/details.aspx?id=54920) | AccessDatabaseEngine\_x64\_2016.exe | 10.0.32 | Not applicable |
     | The .NET Framework version 4.8 (CLR 4.0) | [.NET Framework 4.8 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net48-offline) | ndp48-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
-    | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
+    | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | 10.0.41 |
 
 > [!IMPORTANT]
 > - Make sure that the Management Studio setup is in US English.
@@ -652,44 +651,12 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the tenant
+### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the deployment
 
-An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations (on-premises) through Lifecycle Services. To establish connectivity from Lifecycle Services to the Finance + Operations (on-premises) tenant, you must configure a certificate that enables the local agent to act on behalf of your Microsoft Entra tenant (for example, contoso.onmicrosoft.com).
-
-Use the on-premises agent certificate that you acquired from a CA or the self-signed certificate that you generated by using scripts. The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
-
-Only user accounts that have the Global Administrator directory role can add certificates to authorize Lifecycle Services. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory.
+Authentication with Microsoft Dynamics Lifecycle Services is required to deploy Finance + Operations (on-premises). For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (on-premises) deployments](./onprem-auth-lcs.md).
 
 > [!IMPORTANT]
-> - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with Lifecycle Services.
-> - If you run the following script on a server machine (for example, a machine that's running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page is blocked.
-
-1. Sign in to the customer's [Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
-1. From the **infrastructure** folder, run the following commands to determine whether the certificate is already registered.
-
-    ```powershell
-    # If you have issues downloading the Azure PowerShell Az module, run the following:
-    # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    
-    Install-Module Az -RequiredVersion 7.4.0
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
-    ```
-
-    > [!IMPORTANT]
-    > If you previously installed AzureRM, you should remove it, because it might not be compatible with any existing AzureRM installations in Windows PowerShell 5.1. For more information, see [Migrate Azure PowerShell from AzureRM to Az](/powershell/azure/migrate-from-azurerm-to-az).
-
-1. If the script indicates that the certificate isn't registered, run the following command.
-
-    ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint'
-    ```
-
-> [!NOTE]
-> If you have multiple tenants that are associated with the login account, you can run the following command to pass the tenant ID as a parameter. In this way, you can ensure that the context is set to the correct tenant.
->
-> ```powershell
-> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
-> ```
+> Authentication with Lifecycle Services is changing. To ensure that you can continue to deploy Finance + Operations (on-premises), you must update your authentication method. For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (on-premises) deployments](./onprem-auth-lcs.md).
 
 ### <a name="configuresqlcert"></a>Step 17. Configure the SQL Server certificate
 

@@ -1,8 +1,8 @@
 --- 
 title: Assign a product lifecycle state to a released product
 description: Learn how to assign a product lifecycle state to a released product, including a step-by-step process for finding released products. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/05/2017
 ms.custom:

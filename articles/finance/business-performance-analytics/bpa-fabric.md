@@ -15,8 +15,6 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 
 # Connect Business performance analytics data to Microsoft Fabric (preview)
 
-[This article is prerelease documentation and is subject to change.].
-
 Business performance analytics enables organizations to extend their existing data warehouse by using Microsoft Fabric shortcuts to connect the Business performance analytics dimensional data model to it.
 
 Business performance analytics uses Dataverse direct integration with Fabric and provides the following benefits:
@@ -31,12 +29,12 @@ As data is updated, changes are automatically reflected in your lakehouse.
 
 ## Prerequisites
 
-Before you install Fabric and use it with business performance planning, the following prerequisites must be completed:
+Before you install Fabric and use it with business performance analytics, the following prerequisites must be completed:
 
-1. You must have a Power BI premium capacity license or Fabric.
-2. The workspace that's linked to Dataverse must be assigned to premium or fabric capacity in the same region as your Business performance analytics Dataverse environment. If you create a new workspace, you must have access to Power BI or Fabric premium capacity in the same region as your Dataverse environment. To confirm that you have access to the required premium capacity, follow these steps:
+1. You must have a Power BI premium capacity license or Fabric capacity. For more information, see [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) for the list of premium capacity Power BI SKUs. When setting up a Fabric workspace, this translates to a Pro, Trial, or Premium per-user capacity.
+2. The workspace that's linked to Dataverse must be assigned to premium or Fabric capacity in the same region as your Business performance analytics Dataverse environment. If you create a new workspace, you must have access to Power BI or Fabric premium capacity in the same region as your Dataverse environment. To confirm that you have access to the required premium capacity, follow these steps:
 
-    1. In Power BI, open the workspace.
+    1. In [Power BI](https://app.powerbi.com/), open the workspace.
     2. Select **Workspace settings** \> **Premium**.
     3. Confirm that **Trial** or **Premium** is selected as the capacity.
 
@@ -46,6 +44,10 @@ Before you install Fabric and use it with business performance planning, the fol
     2. Select **New**, and then select **Cloud**.
     3. In the **Connection type** field, select **Dataverse**.
     4. In the **Environment domain** field, enter the environment URL of the environment where Business performance analytics is installed. You can find the environment URL on the **Environment details** page in Power Platform admin center.
+
+        > [!NOTE]
+        > The environment URL that you enter should not start with "https://" or end with a slash (/). Delete these elements if they are included.
+
     5. In the **Authentication method** field, select **OAuth2.0**.
     6. Select **Edit credentials**, and complete authentication.
     7. In the **Encrypted connection** field, select **Encrypted**.
@@ -57,7 +59,7 @@ Before you install Fabric and use it with business performance planning, the fol
 To link Business performance analytics data to your organization's Fabric workspace, follow these steps.
 
 1. In Business performance analytics, select the **Administration** tab.
-2. Go to **Connect with Microsoft Fabric**, and select **Manage**.
+2. Go to **Link with Microsoft Fabric**, and select **Manage**.
 3. Select **Link Fabric**.
 4. Specify the Fabric workspace ID to create the lake shortcut for the Business performance analytics dimensional model. Confirm that the workspace is linked to your Business performance analytics Dataverse environment.
 
@@ -96,27 +98,54 @@ This section shows how you can create a custom Power BI dataset that extends the
 > [!NOTE]
 > Before you begin this procedure, you must link Business performance analytics data to your Fabric workspace as described earlier in this article.
 
-1. Open Power BI Desktop, and import the dataset Power BI file. You're prompted for an organization URL. If you're prompted to sign in, sign in as the user who initiated the Fabric link.
-2. Validate that the Business performance analytics dataset that you imported into Power BI Desktop was successfully refreshed. You receive confirmation of a successful refresh. You can then select fact or dimensions, and view data in a report view.
-3. In Power BI Desktop, select **Publish**, save any changes that you made, and select the destination to publish the dataset to. You can select either the same workspace that you've already been working with or a different workspace.
+1. Download the Business performance analytics dataset.
 
-### Use the Business performance analytics dataset as part of a custom dataset
+    1. Sign in to [Power Apps](https://make.powerapps.com/).
+    2. Go to **All**, and search for the **msdyn\_BpaReports** solution.
 
-1. In Power BI Desktop, select **File** \> **New** \> **Blank report**.
-2. Select **Get data** \> **Power BI semantic model**.
-3. Select the Business performance analytics dataset that you published to the selected workspace.
-4. Select **Connect**.
+2. Select the finance and operations dataset.
+3. On the report details page, select **Actions** \> **Download report**. Make a note of the download location.
+4. Upload the Business performance analytics dataset.
+
+    - In [Power BI](https://app.powerbi.com), open your workspace, and upload the Business performance analytics dataset from the location that you downloaded it to in step 3.
+
+5. Connect the dataset to the lakehouse.
+
+    1. In the workspace, under the lakehouse, find the SQL Analytics Endpoint, and copy the SQL connection string.
+    2. In the semantic model, go to **Settings** \> **Parameters**, and enter the connection string.
+    3. Reload the page, and re-enter the credentials.
+
+6. Validate the connection.
+
+    1. Refresh the settings, and edit the data source credentials to ensure that OAuth is used for authentication.
+    2. Refresh the dataset to view the tables from Business performance analytics.
+
+### Use the Business performance analytics dataset in Power BI Desktop
+
+1. In Power BI Desktop, open the downloaded .pbix file, and select **Transform data** \> **Edit Parameters**.
+2. In the workspace, under the lakehouse, find the SQL Analytics Endpoint, and copy the SQL connection string.
+3. Enter the SQL connection string as **CDSOrgURL**.
+4. Select **OK**, and do a refresh.
 5. Follow any authentication prompts that appear. Sign in as the same user who published the Business performance analytics dataset to Fabric.
 6. Validate that data is being refreshed from the dataset. You receive an initial notification that the refresh is in progress. You then receive a notification that indicates whether the refresh was successful or unsuccessful.
-7. You now have a dataset that you can extend so that it includes other data sources. To select a dataset, select **Get data**, and then select the appropriate option. As an example, the steps that follow show how to connect to a second lakehouse.
-8. In your Fabric workspace, find the second lakehouse that you want to include in the custom dataset, and then find the SQL analytics endpoint that is nested under it. Select the ellipsis (**&hellip;**) next to the name of the endpoint, and then select **Copy SQL connection string**.
-9. In Power BI Desktop, select **Get data** \> **SQL server**.
-10. When you're notified that a Direct Query connection is required, select **Add a local model**.
-11. In the prompt that appears, select the entire dataset, and then select **Submit**.
-12. When you're prompted for the server, enter the SQL Server connection string that you copied earlier.
-13. Select **Direct query**, and then select **OK**.
-14. Find the custom lakehouse that you added earlier, expand it, and select the tables to include.
-15. Select **Load**.
-16. When you're warned about the potential security risk, select **OK**.
-17. You should notice that the new data is being loaded.
-18. Select **File** \> **Save** to save the new dataset as a PBIX file.
+
+    You now have a dataset that you can extend so that it includes other data sources. You can also create new measures on it.
+
+7. To includes other data sources in your Fabric workspace, find the second lakehouse that you want to include in the custom dataset, and then find the SQL analytics endpoint that is nested under it. Select the ellipsis (**&hellip;**) next to the name of the endpoint, and then select **Copy SQL connection string**.
+8. In Power BI Desktop, select **Get data** \> **SQL server**.
+9. When you're notified that a Direct Query connection is required, select **Add a local model**.
+10. In the prompt that appears, select the entire dataset, and then select **Submit**.
+11. When you're prompted for the server, enter the SQL Server connection string that you copied earlier.
+12. Select **Direct query**, and then select **OK**.
+13. Find the custom lakehouse that you added earlier, expand it, and select the tables to include.
+14. Select **Load**.
+15. When you're warned about the potential security risk, select **OK**.
+16. You should notice that the new data is being loaded.
+17. Select **File** \> **Save** to save the new dataset as a PBIX file.
+
+> [!NOTE]
+> **Authentication issues:** Ensure that you use OAuth 2.0 for authentication when you create connections.
+>
+> **Refresh delays:** After each configuration, allow up to two minutes for the dataset or lakehouse to be refreshed.
+>
+> **If the dataset isn't loaded:** Double-check the SQL connection string and parameters in Power BI and Business performance analytics.

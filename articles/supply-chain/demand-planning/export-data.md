@@ -1,8 +1,8 @@
 ---
 title: Export and download data
 description: Learn how to export a forecast that you've created, analyzed, and edited back to Microsoft Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template

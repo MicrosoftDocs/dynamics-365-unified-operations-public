@@ -4,7 +4,7 @@ description: Learn about the required setup and steps for running the general le
 author: MOAAMER
 ms.author: moaamer 
 ms.topic: article
-ms.date: 08/12/2024
+ms.date: 09/25/2024
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 audience: Application User
@@ -42,13 +42,10 @@ On the **General ledger parameters** page under **Fiscal year close**:
 - The **Set fiscal year status to permanently closed** option is used to set the fiscal year to a permanently closed status. Use this option carefully, because periods that have a permanently closed status can't be reopened. Therefore, adjustments can't be posted to the fiscal year. As a best practice, this option should be set to **No**.
 - The **Voucher number must be filled in** option has been removed. A voucher is now required when the year-end close process is run. At that time, the voucher number is manually entered.
 
-On the **Fiscal calendar** page:
-
-- The next fiscal year must exist before the year-end close is run. Otherwise, the beginning balances can't be created in the opening period.
-
 On the **Ledger calendar** page:
 
-- Optional: Each fiscal period for the fiscal year that is being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
+-  Optional: Each fiscal period for the fiscal year that's being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
+-  Optional: If **Budget control** is being used, the purchase order year-end process should be completed before closing the period or putting it **On hold**. All non-closed budget-controlled documents must be closed or moved to a new year before the year-end can be completed. For information about how purchase orders are processed at the year-end, see [Purchase order year-end process](../budgeting/purchase-order-year-end-process.md).
 
 On the **Year-end close template setup** page:
 

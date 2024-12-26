@@ -14,7 +14,7 @@ ms.search.form: TaxIntegration, TaxServiceParameters
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Sync the tax setup from the Tax Calculation Service to Dynamics 365 Finance
+# Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance
 
 [!include [banner](../../includes/banner.md)]
 

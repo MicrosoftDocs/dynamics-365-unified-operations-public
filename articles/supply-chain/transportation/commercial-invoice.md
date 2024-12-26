@@ -1,8 +1,8 @@
 ---
 title: Commercial invoices
 description: Learn how to create and print a commercial invoice when you use transportation management processes (TMS) with an outline on document content.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 05/22/2024
 ms.custom:

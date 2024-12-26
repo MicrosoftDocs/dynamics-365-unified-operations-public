@@ -4,14 +4,12 @@ description: Learn how to create and edit reports in Business performance analyt
 author: jkhaira7
 ms.author: jkhaira 
 ms.reviewer: twheeloc
-ms.date: 06/04/2024
+ms.date: 11/14/2024
 ms.topic: conceptual
 audience: Application User
 ---
 
 # Create and edit Business performance analytics reports
-
-[This article is prerelease documentation and is subject to change.]
 
 Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. To view all available reports, select **Reports** in the **Data explorer** pane on the left. Select **Refresh** to ensure that you have the most up-to-date reports.
 
@@ -81,9 +79,10 @@ To share a report that isn't currently open, follow these steps:
 4. Specify to provide **Edit** or **View** access to the report. 
 
 >[!NOTE]
-> You can't share reports of the **Microsoft** type. You must duplicate them to create a **Custom** type report, which can be shared.
-> Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
-> Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with other users who did not originally have access to the report.
+> You can't share **Microsoft** type reports. To share a report, you must duplicate it to create a **Custom** type report.
+> Only admin users may see a **Share** button, which currently has no functionality.
+> Access to Microsoft reports is granted by an admin using **Roles**. Users with access to a Microsoft report can duplicate and share it with others who did not originally have access.
+> If you aren't a Business performance analytics admin, sharing is restricted to users within the same business unit, as defined by your Dataverse security.
 
 ## Remove edit columns and edit filters buttons
 

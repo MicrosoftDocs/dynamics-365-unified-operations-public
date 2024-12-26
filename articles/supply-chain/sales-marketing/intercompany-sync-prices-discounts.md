@@ -1,8 +1,8 @@
 ---
 title: Synchronize intercompany prices and discounts
 description: Learn about synchronization of prices and discounts for intercompany sales orders and purchase orders, including an outline on the price and discount field.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

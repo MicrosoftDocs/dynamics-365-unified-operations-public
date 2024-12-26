@@ -2,7 +2,7 @@
 title: Customer information management for Italy
 description: This article describes how to handle customer information in POS for Italy.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 10/02/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -16,8 +16,6 @@ ms.custom:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-## Introduction
-
 This article describes how you can handle customer information, such as the customer's lottery code, in the Commerce point of sale (POS) for Italy.
 
 You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and it can be used for the national lottery. Personal fiscal codes can also be used to search for a customer in POS.
@@ -29,7 +27,6 @@ You can specify the customer information, such as the fiscal code or lottery cod
 
 You must complete the following configuration to use this functionality:
 
-- Enable the customer information management feature for Italy
 - Set up a registration type for the lottery code.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
@@ -37,9 +34,8 @@ You must complete the following configuration to use this functionality:
 - Add a customer search criterion.
 - Configure channel components.
 
-### Enable the customer information management feature for Italy
-
-You must enable the **(Italy) Customer information management in Retail POS** feature in the **Feature management** workspace.
+> [!NOTE]
+> For Commerce version 10.0.38 and earlier, you must enable the **(Italy) Customer information management in Retail POS** feature in the Commerce headquarters **Feature management** workspace.
 
 ### Set up a registration type for the lottery code
 
@@ -243,7 +239,7 @@ Follow these steps to create deployable packages that contain Commerce component
 The steps that are described in this section are required if you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later. You must follow these steps to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
-1. Enable [Italy-specific features](#enable-the-customer-information-management-feature-for-italy) in the **Feature management** workspace, and distribute the changes to channels.
+1. For Commerce version 10.0.38 and earlier, you must enable the **(Italy) Customer information management in Retail POS** feature in the Commerce headquarters **Feature management** workspace and distribute the changes to channels.
 1. Update CRT, Cloud POS, and Modern POS, and exclude the following legacy Italy-specific extensions:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files, exclude the **Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly** CRT extension.

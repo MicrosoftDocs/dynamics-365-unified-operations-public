@@ -1,8 +1,8 @@
 ---
 title: Item where used
 description: Learn how to get an overview of where an item is used in Asset Management, including a step-by-step process for making an item-where-used calculation.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/23/2019
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Period charges
 description: Learn about about period charges, which let you charge customers when a collection of orders invoiced over a specified period failed to meet specific criteria.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 11/22/2023
 ms.custom: bap-template
@@ -28,7 +28,7 @@ The *Period charges* feature introduces the following changes to your system:
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that's named *Period charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Period charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (As of Supply Chain Management version 10.0.42, it's turned on by default)
 
 ## Configure period charges
 

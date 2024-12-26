@@ -133,7 +133,7 @@ When a print job is run, the system uses the following sequence to identify whic
     1. If a default label printer that uses the required stock type is set up for the mobile device the current flow is executing on (for example, forklift mounted mobile device and printer), the system uses that printer.
     1. Otherwise, the system uses the default label printer that uses the required stock type and that's set up for the current user and warehouse.
 
-1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See Additional resources for more information.
+1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See [Related information](#related-information) for more information.
 1. If no override or default printer is found, no label is printed.
 
 ## Related information

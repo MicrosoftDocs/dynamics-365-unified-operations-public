@@ -1,8 +1,8 @@
 ---
 title: Inventory value reports
 description: Learn how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 09/03/2024
 ms.custom:

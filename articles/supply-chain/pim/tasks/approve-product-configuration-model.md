@@ -1,8 +1,8 @@
 --- 
 title: Approve a product configuration model
 description: Learn about approving a product configuration model, which requires at least one product configuration model, including a step-by-step process.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

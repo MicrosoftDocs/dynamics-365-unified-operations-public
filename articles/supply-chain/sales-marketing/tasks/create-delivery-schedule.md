@@ -1,8 +1,8 @@
 --- 
 title: Create delivery schedule
 description: Learn how to create a delivery schedule for a sales order, including a step-by-step process for creating delivery schedules.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

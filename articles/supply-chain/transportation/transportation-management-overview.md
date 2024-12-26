@@ -1,8 +1,8 @@
 ---
 title: Transportation management overview
 description: Access an overview of the transportation management functionality in Supply Chain Management, including a table outlining information for various scenarios.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: overview
 ms.date: 05/22/2024
 ms.custom: 
@@ -47,5 +47,12 @@ You can plan and process an outbound load to ship specific items from a companyâ
 ## Load building
 
 Supply Chain Management provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
+
+## White papers
+
+The following white papers explore various aspects of transportation management in Dynamics 365 Supply Chain Management:
+
+- [Transportation management engines](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
+- [Implementing and deploying Transportation management engines](https://download.microsoft.com/download/b/5/f/b5ff8fef-3918-4c1d-92d5-b67eb0971684/ImplementingAndDeployingTransportationManagementEnginesInAX.pdf)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

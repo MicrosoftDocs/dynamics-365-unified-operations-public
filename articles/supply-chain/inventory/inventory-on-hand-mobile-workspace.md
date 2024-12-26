@@ -1,8 +1,8 @@
 ---
 title: Inventory on-hand mobile workspace
 description: Learn about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac
@@ -79,13 +79,6 @@ If Platform update 3 or later has been deployed for your organization, the syste
 </tr>
 </tbody>
 </table>
-
-## Download and install the mobile app
-
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 

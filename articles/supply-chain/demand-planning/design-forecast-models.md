@@ -1,8 +1,8 @@
 ---
 title: Design forecast models
 description: Learn about forecast models, which let you arrange and configure tiles to define the forecast that is made by a forecast profile.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template

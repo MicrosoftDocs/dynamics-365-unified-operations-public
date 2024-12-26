@@ -1,8 +1,8 @@
 ---
-title: Approvals Management mobile app FAQ and known issues (preview)
+title: Approvals Management mobile app FAQ and known issues
 description: This article answers frequently asked questions about the Approvals Management mobile app. It also describes known issues that affect the app and explains how to work around them.
-author: johanhoffmann
-ms.author: johanho
+author: kamaybac
+ms.author: akshaykmr
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
@@ -11,10 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Approvals Management mobile app FAQ and known issues (preview)
+# Approvals Management mobile app FAQ and known issues
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides answers to several frequently asked questions (FAQ) about the Approvals Management mobile app. It also describes some known issues that affect the app and explains how to work around them.
 
@@ -28,7 +27,7 @@ If no features are visible in the Approvals Management mobile app, you probably 
 
 ## What versions of Supply Chain Management support the mobile app?
 
-The Approvals Management mobile app requires Supply Chain Management version 10.0.40 or later.
+The Approvals Management mobile app requires Supply Chain Management version 10.0.41 or later.
 
 ## Does the mobile app support Microsoft Intune deployment?
 

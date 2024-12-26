@@ -2,7 +2,7 @@
 title: Mock the signed-in state during local development
 description: This article describes how to mock a signed-in user in a Microsoft Dynamics 365 Commerce online local development environment.
 author: samjarawan
-ms.date: 08/21/2024
+ms.date: 09/20/2024
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -70,17 +70,12 @@ Next, you create a native application meant to represent the Node application to
 1.	For **Redirect URIs**, select **Public client/native (mobile & desktop)** from the drop-down list, and leave the URI as is.
 1.	Leave all other default values as is, and select **Register**.
 1.	Select the new application, and then copy and save the **Application (client) ID** value, as this ID is used later as the `nativeApplicationId` property value in your credentials.json file.
-
-    ![Local Node app.](media/local-sign-in-02.png)
-
 1.	In the left navigation pane under **Manage**, select **Authentication**.
 1.	Select **Try out the new experience** (if shown).
 1.	Under **Default client type**, select **Yes** for **Treat the application as a public client**. This setting is required for the ROPC flow.
 1.	Select **Save**.
 1.	In the left navigation pane under **Manage**, select **Manifest** to open the manifest editor.
 1.	Set the **oauth2AllowImplicitFlow** attribute to **true**, and then select **Save**.
-
-    ![Local Node app manifest.](media/local-sign-in-03.png)
 
 You created a new native application that is used to represent your local Node application. 
 
@@ -98,16 +93,10 @@ From the previous examples you obtained the following information:
 1.	In the Microsoft Entra B2C settings, go to **App registrations**.
 1.	Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this application is the one whose client ID is used in the Microsoft Entra B2C configuration for your site. If Microsoft Entra ID B2C is already configured, the application ID used for your e-commerce site is located in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID is also located in Commerce site builder at **Tenant Settings \> B2C Settings** as the **Client GUID** within the B2C application configuration used for your site.
 1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one doesn't exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
-
-    ![Expose an API.](media/local-sign-in-04.png)
-
 1.	Copy and save the full scope value, as this information is used as the `userImpersonationScopeURL` property value in your credentials.json file.
 1.	Return to the native application you created and in the left navigation pane under **Manage**, select **API permissions**.
 1.	Select **Add a permission**, and then select the **APIs my organization uses** tab.
 1.	Search for the e-commerce rendering application that you created, and then select it and add **user_impersonation** as a permission.
-
-    ![API permissions.](media/local-sign-in-05.png)
-
 1.	Select **Add permissions**.
 1.	Select **Grant admin consent for** (this name contains your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
  
@@ -150,8 +139,6 @@ The credentials file is located in the `secrets/` directory in your Node applica
     ]
 }
 ```
-
-![Example credentials.json file.](media/local-sign-in-06.png)
 
 > [!NOTE]
 > Everything under the `secrets/` directory should be added to your .gitignore file to help prevent credentials from being leaked online.

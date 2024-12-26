@@ -1,8 +1,8 @@
 ---
 title: Product receipt against purchase orders
 description: Learn about the various options for registering products as received, including an outline on preregistration and registration.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: conceptual
 ms.date: 05/02/2024
 ms.custom: bap-template
@@ -46,6 +46,7 @@ You can access this page from the **Receipt** action group on the **Purchase ord
 
 ## Related information
 
+- [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md)
 - [Purchase order overview](purchase-order-overview.md)
 - [Create purchase orders](purchase-order-creation.md)
 - [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)

@@ -336,21 +336,21 @@ additionalContent:
         text: Order promising
       - url: /dynamics365/supply-chain/sales-marketing/sales-agreements
         text: Sales agreements
-      - url: /dynamics365/supply-chain/warehousing/sales-returns
+      - url: /dynamics365/supply-chain/sales-marketing/sales-returns
         text: Sales returns
       - url: /dynamics365/supply-chain/sales-marketing/customer-portal-overview
         text: Customer portal
-    - title: Pricing management  
+    - title: Unified pricing management  
       links: 
-      - url: /dynamics365/supply-chain/pricing-management/pricing-management-overview
-        text: Pricing management overview
-      - url: /dynamics365/supply-chain/pricing-management/price-attributes-overview
+      - url: /dynamics365/supply-chain/unified-pricing-management/upm-pricing-management-overview
+        text: Unified pricing management overview
+      - url: /dynamics365/supply-chain/unified-pricing-management/upm-price-attributes-overview
         text: Price attributes
-      - url: /dynamics365/supply-chain/pricing-management/price-component-code
+      - url: /dynamics365/supply-chain/unified-pricing-management/upm-price-component-code
         text: Price component codes
-      - url: /dynamics365/supply-chain/pricing-management/price-structure-overview
+      - url: /dynamics365/supply-chain/unified-pricing-management/upm-price-structure-overview
         text: Price structures
-      - url: /dynamics365/supply-chain/pricing-management/discounts
+      - url: /dynamics365/supply-chain/unified-pricing-management/upm-discounts
         text: Discounts
     - title: Rebate management
       links: 

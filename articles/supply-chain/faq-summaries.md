@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 06/06/2024
+ms.date: 11/07/2024
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

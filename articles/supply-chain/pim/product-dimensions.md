@@ -1,8 +1,8 @@
 ---
 title: Product dimensions
 description: Learn about product dimensions, with outlines on product variants, setting up product dimensions, version product dimensions, and examples.
-author: t-benebo 
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 01/06/2023
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Vendor rebates
 description: Access an overview of common tasks that you might want to perform when you work with vendor rebates, which help companies manage their supplier rebate programs.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 06/20/2017
 ms.custom: no wiki article

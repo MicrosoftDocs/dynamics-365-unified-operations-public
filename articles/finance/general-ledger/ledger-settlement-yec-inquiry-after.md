@@ -4,7 +4,7 @@ description: Learn how to use the Enable advanced awareness options parameter by
 author: moaamer
 ms.author: kweekley
 ms.topic: article
-ms.date: 04/15/2024
+ms.date: 11/08/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -15,6 +15,9 @@ ms.dyn365.ops.version: 10.0.25
 ---
 
 # Enable advanced awareness options parameter after year-end close using the inquiry page
+
+> [!Note]
+> Beginning in Dynamics 365 Finance version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters**, specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively.
 
 A major change of the **Enable advanced awareness options** parameter is that ledger settlement can't be done across fiscal years. This cross-year limitation is relevant only to ledger settlement, not to Accounts receivable or Accounts payable settlements.
 

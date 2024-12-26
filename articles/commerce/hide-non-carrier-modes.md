@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Hide non-carrier delivery modes from the shipment options in POS
 description: This article describes a configuration option that can prevent non-carrier modes of delivery from appearing for selection when shipment orders are created in the point of sale (POS) application.
 author: hhainesms
 ms.date: 10/24/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
+ms.topic: how-to
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: hhaines
+ms.author: shajain
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.7
-
+ms.custom: 
+  - bap-template
 ---
 
 # Hide non-carrier delivery modes from the shipping options in POS

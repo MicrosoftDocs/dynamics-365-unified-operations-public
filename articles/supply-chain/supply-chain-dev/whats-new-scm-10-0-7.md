@@ -23,7 +23,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 - General availability (self-update) is in November 2019.
 - Auto-update is in January 2020. 
 
-For more information about version 10.0.7, see [Additional resources](#related-information).
+For more information about version 10.0.7, see [Related information](#related-information).
 
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 

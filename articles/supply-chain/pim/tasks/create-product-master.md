@@ -1,8 +1,8 @@
 --- 
 title: Create a product master
 description: Learn how to create a product master for the predefined variants, including a step-by-step process using the USMF demo data company. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

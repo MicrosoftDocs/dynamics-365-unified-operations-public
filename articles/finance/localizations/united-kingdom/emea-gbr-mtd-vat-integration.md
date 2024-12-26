@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 12/05/2024
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-02-28
@@ -52,6 +52,11 @@ The solution that supports the [MTD for VAT requirements](https://developer.serv
 The setup package for MTD VAT feature doesn't cover the View VAT Return endpoint that might be required. However, the Electronic messages functionality lets you set up and support this endpoint.
 
 The MTD VAT feature in Finance supports filing a VAT return for [Multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a [VAT group](https://www.gov.uk/hmrc-internal-manuals/vat-groups) in the same system database.
+
+> [!NOTE]
+> To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. **These services won’t be accessible from on-premises deployments by June 6, 2025**.
+>
+> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. It’s still possible to generate in batch the report (VAT 100) in Excel and JSON formats.
 
 ## <a name="privacy-notice"></a>Privacy notice
 

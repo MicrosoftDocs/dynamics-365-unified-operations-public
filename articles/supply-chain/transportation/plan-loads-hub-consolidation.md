@@ -1,8 +1,8 @@
 ---
 title: Plan loads using hub consolidation overview
 description: Learn about the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 --- 
 title: Create a hierarchy of product classification
 description: Learn how to create a new category hierarchy and assign a commodity code hierarchy type, including processes for creating and building category hierarchies. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 07/11/2019
 ms.custom:

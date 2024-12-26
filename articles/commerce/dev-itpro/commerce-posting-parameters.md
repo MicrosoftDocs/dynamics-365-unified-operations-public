@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Commerce posting parameters
 description: This article describes the parameters that are specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: analpert
+ms.author: shajain
 ms.search.validFrom: 2022-04-12
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce posting parameters

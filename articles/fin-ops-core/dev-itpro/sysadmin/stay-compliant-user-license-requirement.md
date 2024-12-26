@@ -77,7 +77,7 @@ You can use the **Role to user assignment** report or the **Assign users to role
 For internal security and to help avoid licensing requirements for users who have left or aren't actively using the finance and operations apps, we recommend that you disable those users on the **Users** page.
 
 > [!NOTE]
->  The System Administrator role is a special role in Microsoft Dynamics AX that grants users full access to manage system artifacts. Users assigned this role cannot be restricted or modified by other roles and are exempt from licensing requirements. This means that individuals with this role don'tt need to purchase more licenses to configure and administer Dynamics 365 applications.
+>  The System Administrator role is a special role in finance and operations apps that grants users full access to manage system artifacts. Users assigned to this role cannot be restricted or modified by other roles and are exempt from licensing requirements. This means that individuals with this role don't need to purchase additional licenses to configure and administer Dynamics 365 applications.
 
 ## User license counts report
 

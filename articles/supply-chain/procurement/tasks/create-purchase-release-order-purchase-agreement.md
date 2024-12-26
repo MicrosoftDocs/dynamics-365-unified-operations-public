@@ -1,8 +1,8 @@
 --- 
 title: Apply a purchase agreement when creating a purchase order
 description: Learn how to use a purchase agreement when you create a purchase order, including a step-by-step process for creating a purchase order. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 08/09/2019
 ms.custom:
@@ -18,7 +18,7 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 
 ## Create a purchase order
 
-1. Go to **Production and sourcing \> Workspaces \> Purchase order preparation**.
+1. Go to **Procurement and sourcing \> Workspaces \> Purchase order preparation**.
 1. On the Action Pane, select **New purchase order**.
 1. The **Create purchase order** dialog opens. Select a **Vendor account**. Inspect and adjust the other address fields as needed.
 1. Expand the **General** FastTab.

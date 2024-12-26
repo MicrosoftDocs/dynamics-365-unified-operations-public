@@ -1,13 +1,13 @@
 ---
 title: Checkout module
-description: This article describes how to add a checkout module to a page and set the required properties.
+description: This article describes how to add a checkout module to a page and set the required properties in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to add a checkout module to a page and set the required properties.
+This article describes how to add a checkout module to a page and set the required properties in Microsoft Dynamics 365 Commerce.
 
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 

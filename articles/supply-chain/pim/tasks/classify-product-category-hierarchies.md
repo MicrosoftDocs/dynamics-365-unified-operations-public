@@ -1,8 +1,8 @@
 --- 
 title: Classify a product using category hierarchies
 description: Learn how to classify a product using category hierarchies, including a step-by-step process using the USMF demo data company. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/02/2019
 ms.custom:

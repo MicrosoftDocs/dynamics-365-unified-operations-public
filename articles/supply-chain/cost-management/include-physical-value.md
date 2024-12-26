@@ -1,8 +1,8 @@
 ---
 title: Options for including physical value in cost calculations
 description: Learn how to use the "Include physical value" and "Include physical value in weighted average recalculation" options for cost calculations.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup
 ms.topic: how-to
@@ -64,7 +64,6 @@ When a sales order is posted, the posted cost amount is USD 10.00, because the r
 ## Include physical value in weighted average recalculation (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 This feature lets you choose whether to include physically updated transactions that haven't yet been financially updated when recalculating weighted average.

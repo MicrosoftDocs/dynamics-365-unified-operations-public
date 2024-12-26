@@ -1,8 +1,8 @@
 ---
 title: Transportation management number sequence
 description: Learn how to set up number sequences for transportation management, including a step-by-step process for creating number sequences for pro numbers.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
 ms.date: 10/16/2020
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Import data into Demand planning
 description: Learn how to import data from different sources and file types, and also data that is stored in a Microsoft Azure data lake.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 08/28/2024
 ms.custom: bap-template

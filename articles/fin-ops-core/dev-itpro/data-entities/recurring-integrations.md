@@ -3,14 +3,14 @@ title: Recurring integrations
 description: Learn about recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: pnghub
 ms.author: gned
-ms.topic: article
-ms.date: 06/11/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 10/23/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
@@ -194,11 +194,30 @@ BODY
 ```
 
 GetExecutionIdByMessageId can be used to get the Execution ID. The API take the enqueued message ID and return the Execution ID.
+
 ```Console
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionIdByMessageId
 BODY
 {"_messageId":"<messageId>"}
 ```
+
+## Automatic retry support during batch node restarts
+
+Automatic retry support for recurring data jobs has been implemented to enable retries when a batch restarts. This feature is available starting from PU64.
+
+Previous Design: 
+There was one regular batch job with one runtime batch task.
+
+:::image type="content" source="media/batch-one-task.png" alt-text="Diagram of the design with one regular batch job with one runtime batch task."::: 
+
+New Design: 
+There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
+
+:::image type="content" source="media/batch-child-job.png" alt-text="Diagram of the design with one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1."::: 
+
+> [!NOTE]
+> If you've customized your code that involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you may encounter issues with the recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
+ 
 
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
@@ -215,8 +234,6 @@ The batch job status is retrieved asynchronously from the batch framework for th
 When you use recurring exports, you can choose not to upload a generated file or package if the total record count in that file or package is 0 (zero).
 
 You can set **Prevent upload when zero records** when you configure a recurring export job or after a job is created. This option is available only when you use files or packages as data sources.
-
-![Prevent upload when zero records.](./media/prevent-file-upload.png)
 
 Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file was uploaded that shouldn't be, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
 

@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Set up and design receipt formats
 description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: BrianShook
 ms.date: 02/03/2023
-ms.topic: article
-# optional metadata
-
+ms.topic: how-to
 ms.search.form: RetailFormLayout
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.search.region: Global
+ms.author: ritakimani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
 ---
 
 # Set up and design receipt formats
