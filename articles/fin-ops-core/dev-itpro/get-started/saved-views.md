@@ -143,7 +143,10 @@ To publish a view, follow these steps:
 10. Add the legal entities that this view should be available for. 
 11. Select **Publish**.
 
-Note that in some environments, it may take some time (up to an hour) before users see the published view.
+In some environments, it may take some time (up to an hour) before users see the published view
+
+> [!NOTE]
+> Published workspace views do not appear in the view selector for the original workspace. Instead, published workspace views follow the pattern of published embedded apps and appear as new tiles on the dashboard.
 
 ## Modifying a published view
 
