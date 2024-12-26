@@ -119,7 +119,8 @@ Follow these steps to edit the configuration of an embedded app:
     - If the embedded app was added from the dashboard, open the dashboard, select and hold (or right-click) the tile that is associated with the canvas app, select **Personalize**, and then select **Edit page**.
 
 2. Make the needed modifications to the app configuration, and then click **Save**.
-
+3. Re-save or republish the view. Note that if you leave the page without explicitly saving the view, none of the actions that you performed in the **Edit website** pane will be maintained. This step is not needed for pages that don't support views.  
+   
 ## Removing an app
 
 After an app has been embedded onto a page, there are a few ways to remove it if needed:
