@@ -56,7 +56,7 @@ With this updated SharePoint authentication mechanism, batch connections utilize
 
 ``` powershell
 
-Import-Module Microsoft.Graph
+Import-Module Microsoft.Graph.Applications
    
 # The parameter for TenantId needs to be changed
 Connect-MgGraph -TenantId microsoft.onmicrosoft.com -Scopes 'Application.ReadWrite.All'
