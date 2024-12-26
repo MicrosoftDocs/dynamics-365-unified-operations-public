@@ -1718,7 +1718,7 @@
                           href: localizations/global/tax-calculation-import-export-feature.md
                         - name: Set up an environment for master data lookup
                           href: localizations/global/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/finance
-                        - name: Sync the tax setup from the Tax Calculation Service to Finance
+                        - name: Sync the tax setup from the Tax Calculation feature to Finance
                           href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Determination
                       items:
@@ -1822,7 +1822,7 @@
                           href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
                         - name: No matching result could be found
                           href: localizations/tcs-troubleshooting-no-matching-result.md
-                        - name: Enable debug mode in the Tax Calculation service
+                        - name: Enable debug mode in the Tax Calculation
                           href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: Tax Calculation FAQ
                       href: localizations/global/global-tax-calcuation-service-faq.md?context=/dynamics365/context/finance

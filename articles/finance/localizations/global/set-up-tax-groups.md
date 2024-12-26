@@ -25,12 +25,7 @@ The concept of tax groups in the Tax Calculation feature resembles the concept o
 However, tax groups in the Tax Calculation feature differ from sales tax groups in Finance in that there are no additional parameters on them, such as **Use tax** and **Exempt tax**. Instead, those parameters are available at the tax code level.
 
 > [!IMPORTANT]
-> The setup of tax groups in the Tax Calculation service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. When you enable the Tax Calculation service in Finance, tax groups are automatically synced for the selected legal entity.
-
-> [!NOTE]
-> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
->
-> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
+> The setup of tax groups in the Tax Calculation of Globalization studio workspace is legal entity–agnostic. When you enable the Enable advanced tax calculation in the Tax calculation parameters, tax groups are automatically synced to the Sales tax groups for the selected legal entity.
 
 ## Set up a tax group
 

@@ -25,27 +25,22 @@ The *tax data model* is made up of fields that are required for tax calculations
 
 Follow these steps to view the tax calculation data model.
 
-> [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to the **Globalization Studio** workspace in Microsoft Dynamics 365 Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
->
-> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
-
-1. In Finance, open the **Globalization Studio** workspace, and select **Electronic reporting** \> **Tax configurations**.
+1. Open the **Globalization Studio** workspace, and select **Electronic reporting** \> **Tax configurations**.
 2. Select **Tax Data Model** \> **Tax Calculation Data Model**.
 3. On the **Versions** FastTab, select a version.
 4. Select **Designer**.
 
-    [![Designer button.](../media/tax-calculation-model-mapping-1.png)](../media/tax-calculation-model-mapping-1.png)
+    [![Designer button.](../media/tax-calculation-model-mapping-designer-1.png)](../media/tax-calculation-model-mapping-designer-1.png)
 
 5. Expand the **Tax Calculation** node.
 6. Expand the **Header** node to view the header data models.
 7. Expand the **Lines** node to view the line data models.
 
-    [![Data models.](../media/tax-calculation-model-mapping-2.png)](../media/tax-calculation-model-mapping-2.png)
+    [![Data models.](../media/tax-calculation-model-mapping-designer-2.png)](../media/tax-calculation-model-mapping-designer-2.png)
 
 You can also view the tax calculation data model and the available columns in the applicability rules table.
 
-1. In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
+1. Open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 2. On the **Tax calculation features** page, find a tax feature that has a status of **Draft**, and then select **Edit**.
 3. On the **General** tab, select the configuration version, based on the version of the tax calculation data model. For example, select **40.46.212**.
 4. On the **Tax group applicability** tab, select **Manage columns**.
