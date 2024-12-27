@@ -99,7 +99,7 @@ If you want to make multiple changes to a page, or changes that aren't available
 
 [![Personalization toolbar.](../../fin-ops/get-started/media/restyledPersonalizationToolbar.png)]
 
-#### Navigating the page
+#### Navigate the page
 
 When the **Personalization** toolbar is open, the underlying page is read-only (in other words, you can't edit data), but it's still interactive. Specifically, you can expand or collapse the **Related information** pane, switch tabs, and expand or collapse sections, just as you would usually perform those actions on the page. To apply a personalization to a collapsible section or tab (for example, to hide a FastTab), you just have to select the button that appears next to that section or tab when it gains keyboard focus or when you hover over it.
 
@@ -129,7 +129,7 @@ When you use the **Personalization** toolbar, you must explicitly save personali
 
 In some cases, when you select a tool, a padlock symbol appears next to an element. This symbol indicates that you can't modify the element properties that are related to the selected tool, because changes to those properties will prevent the page from working correctly.
 
-### Adding tiles, lists, and links to a workspace
+### Add tiles, lists, and links to a workspace
 
 For some pages that include lists, the **Add to workspace** personalization feature is available in the **Personalize** group on the **Options** tab of the Action Pane. This feature lets you push relevant information from the current list to a specific workspace. The information that appears in the workspace can be based on either the whole list, or a filtered and sorted version of the list. You can also specify whether the information appears in the workspace as a list, a summary tile that can show the number of items in the list, or a link.
 
@@ -151,10 +151,11 @@ After you've added a list, tile, or link to a workspace, you can open that works
 
 Some workspaces contain count tiles (that is, tiles that have numbers on them), and you might want those tiles to appear on your dashboard too. In a workspace, right-click a count tile, select **Personalize**, and then, in the tile's property window, select **Pin to dashboard**. The next time that you open and refresh the dashboard, the count will appear below the navigation tile for that workspace. You can select that count to go directly to the data that it represents.
 
-### Changing the size of a tile
+### Change the size of a tile
+
 Users can modify the size of any non-KPI tile via personalization. In a workspace, right-click a tile, and then select **Personalize**. In the tile's property window, select the desired size from the **Tile size** options. After selecting a size, the tile size adjusts immediately. If the **Saved views support for workspaces** feature is enabled, you can save this personalization to a workspace view.  
 
-### Personalizing your dashboard
+### Personalize your dashboard
 
 The dashboard is often the first page that you see when you open the app. It can be personalized like any other page in the system, by using the same mechanisms that are described earlier in this article. 
 
@@ -163,7 +164,7 @@ One unique personalization capability that is available on the dashboard is the 
 - If the **Full-page apps** feature is turned off, you add a new tile by right-clicking an element on the dashboard and then selecting **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile to whatever you want.
 - If the **Full-page apps** feature is turned on, you add a new tile by right-clicking an element on the dashboard and then selecting **Add an app**. In the dialog, select whether you want to add a tile for a new workspace or a tile that has content from [Power Apps](embed-power-apps.md) or a [website](embed-website.md). Then follow the steps to configure the option that you selected. A new tile is then created at the bottom of the dashboard.
 
-## Sharing personalizations
+## Share personalizations
 
 After you personalize a page, there are a few methods that you can use to share your personalizations with other users. In the following list, the methods are arranged in order from most recommended to least recommended.
 
@@ -205,7 +206,7 @@ Another way to share personalizations is via export and import. Individual users
 > [!IMPORTANT]
 > As personalizations persist across updates, re-importing all personalizations after a service update or at any other time is unnecessary and highly discouraged.
 
-#### Export
+#### Export views or personalizations
 
 In general, you can export one of your own views or personalizations by opening the appropriate page, opening the **Personalization** toolbar, and then selecting **Export**. For more information about the toolbar, see the [Personalization toolbar](#personalization-toolbar). Alternatively, you can go to **Settings** \> **User options** \> **Personalization** to view a list of all your personalizations in the system. From there, you can select the views or personalizations to export, and then select **Export**.
 
@@ -216,7 +217,7 @@ Additionally, admins can export other users' personalizations by following these
 3. Find and select the view or personalization that you're interested in.
 4. Select **Export**.
 
-#### Import
+#### Import views or personalizations
 
 To import a view or personalization, you can just open the **Personalization** toolbar and select **Import**. Additionally, admins can import a file and immediately give it to one or more users.
 
@@ -235,14 +236,15 @@ If saved views are enabled, follow these steps.
 7. Select **Import**.
 8. Resolve conflicts as required.
 
-## Administration of personalizations
+## Administer personalizations
 
 The **Personalization** page is the central hub for managing personalizations at an organizational level. For more information, see [Managing views globally](saved-views.md#managing-views-globally).
 
 ### Service updates and personalization
+
 Personalization data does not need to be cleared or reset when moving to a new version of the product. Personalizations and saved views data will continue to work across updates. Exceptions to this would include changes to the form itself that invalidate a personalization (such as a removed control) or changes to the form's base query that changes its data source subtree so that it no longer matches the data source subtree associated with the view query.
 
-## Personalizing inventory dimensions
+## Personalize inventory dimensions
 
 When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, you use personalization to hide a column for the Batch number inventory dimension, but the column appears the next time that the page is opened. This behavior occurs because the **Dimension display** settings control the inventory dimension columns that are shown. The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on individual pages.
 
