@@ -6,7 +6,6 @@ ms.author: jasongre
 ms.topic: how-to
 ms.date: 12/27/2024
 ms.reviewer: twheeloc
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-07-31
 ms.search.form: DefaultDashboard
