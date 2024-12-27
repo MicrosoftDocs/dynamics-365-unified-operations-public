@@ -77,7 +77,7 @@ After you've embedded an app by using one of the methods that are described in t
 
     You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience that resembles the *Publishing views* experience is shown, and you can select the security roles and legal entities to publish to.  
 
-- **Copy the personalization:** For pages that don't support views, you can copy the personalization to the appropriate users. For more information, see [Sharing personalizations](personalize-user-experience.md#sharing-personalizations).
+- **Copy the personalization:** For pages that don't support views, you can copy the personalization to the appropriate users. For more information, see [Sharing personalizations](personalize-user-experience.md#share-personalizations).
 
 ## Viewing embedded apps
 
