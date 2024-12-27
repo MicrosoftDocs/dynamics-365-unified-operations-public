@@ -56,7 +56,7 @@ Here is a list of the actions that fall under typical page usage and are covered
 
 At the **full personalization access** level, users have access to all the personalization capabilities that the app provides. Because different people and companies have different needs when they interact with the app, especially in terms of utilized fields, personalization provides tools that let users and organizations tailor the way that information is ordered and interacted with in the app. These capabilities are key to providing simplified, optimized experiences in the app that are tailored to you and your organization. 
 
-For pages with [saved views](saved-views.md), an explicit save is required to persist any user changes to the user experience for the current view. For pages without **saved views**, these changes are automatically saved.
+For pages with [saved views](saved-views.md), an explicit save is required to persist any user changes to the user experience for the current view. For pages without saved views, these changes are saved automatically.
 
 The following sections cover the extent of personalization capabilities that are available to users at the **full personalization access** level. Here are some of these capabilities:
 
@@ -83,7 +83,7 @@ You can use the property window to personalize an element in the following ways:
 - Include the information in the FastTab's summary section (if the element is on a FastTab).
 - Skip the field so that it never receives focus when you tab through the page.
 - Prevent data in the field from being edited (for any record).
-- Designate a field to be required for data entry. If no value has been entered in this field, it will appear with a red border and an asterisk to indicate this state. 
+- Designate a field to be required for data entry. If no value has been entered in this field, it appears with a red border and an asterisk to indicate this state. 
 
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and property windows for elements on the default dashboard might let you create a new custom workspace.
 
@@ -108,7 +108,7 @@ The following tools are available on the **Personalization** toolbar:
 
 - Use the **Select** tool to select and change the properties of an element. To use this tool, select the **Select** button on the toolbar, and then select the desired element. The element's property window appears, where you can change any of the properties of that element. You can repeat the process for other elements that can be personalized on the page. Note that some personalization properties might not be available in some scenarios. For example, you can't lock a field that is required.
 - Use the **Hide** tool to hide an element on the page. To use this tool, select the **Hide** button on the toolbar, and then select the element to hide. When you use the **Hide** tool, all elements that are currently hidden are made visible, but they are shown in a shaded container. You can then make an element visible by selecting it. To see how the page will look when elements are hidden, switch to another personalization tool or close the personalization toolbar.
-- Use the **Add fields** tool to add fields to your page. When you use this tool, you can only add fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md). After you select the **Add fields** button on the toolbar, you must first select the grid or section where you want to add a field. A dialog box will show the list of fields that are related to the selected grid or section. In the dialog box, select one or more fields to add from either the **Recommended fields** or **All fields** list. After choosing the desired fields, select **Update**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
+- Use the **Add fields** tool to add fields to your page. When you use this tool, you can only add fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md). After you select the **Add fields** button on the toolbar, you must first select the grid or section where you want to add a field. A dialog box will show the list of fields that are related to the selected grid or section. In the dialog box, select one or more fields to add from either the **Recommended fields** or **All fields** list. After you select the desired fields, select **Update**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog.
 
     The **Recommended fields** list shows fields that have been previously added by other users in your organization. This list of fields is updated based on the recurrence frequency of the **Recommendation batch job**. A similar experience exists when adding new filter fields using the Filter pane on a page.
 
@@ -117,14 +117,14 @@ The following tools are available on the **Personalization** toolbar:
 - Use the **Show in header** tool when you want a field to appear in the FastTab's summary section. When you select the **Show in header** button on the toolbar, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from the summary by selecting the fields.
 - Use the **Require** tool to designate an element as required for data entry. When you select the **Require** button on the toolbar, all elements that have been personalized to make them required are shown in a shaded container. You can then make them not required again. 
 - Use the **Lock** tool to mark an element as either editable or noneditable. When you select the **Lock** button on the toolbar, all elements that are currently noneditable are shown in a shaded container. You can then make them editable again. Note that some fields are required and can't be made noneditable. A padlock symbol appears next to those fields.
-- Use the **Add an app from Power Apps** tool to embed an app that was created by using Microsoft Power Apps into the page. For detailed information about how to embed an app from Power Apps into a page, see . This option is available only when the [Saved views](saved-views.md) feature is turned off.
-- Use the **Add an app** button to embed an app, either one created from Microsoft [Power Apps](embed-power-apps.md) or a [third-party](embed-website.md], into the page.  
-- Use the **Clear** tool to reset the page to its default state. This applies to the current view for pages that support saved views and to all personalizations on the current page for pages that do not support saved views. As you can't undo this action, only use this tool if you're sure that you want to reset the view or page. 
-- Use the **Import** tool to load a personalization from a file that you or someone else previously created. The imported personalizations will become a view on the page. If the view already exists, you will have the option to skip the import, replace the current view that has the same name, or rename the imported view.
-- Use the **Export** tool to save the current view for the page to a file. You can then share your personalizations with other users. Those users just have to import the file that contains your personalizations for the page. 
+- Use the **Add an app from Power Apps** tool to embed an app that was created by using Microsoft Power Apps into the page. This option is available only when the [Saved views](saved-views.md) feature is turned off.
+- Use the **Add an app** button to embed an app into the page. This can either be an app created from Microsoft [Power Apps](embed-power-apps.md) or a [third-party](embed-website.md] app.  
+- Use the **Clear** tool to reset the page to its default state. This applies to the current view for pages that support saved views and to all personalizations on the current page for pages that don't support saved views. You can't undo this action, so only use this tool if you're sure that you want to reset the view or page. 
+- Use the **Import** tool to load a personalization from a file that you or someone else previously created. The imported personalizations then becomes a view on the page. If the view already exists, you have the option to skip the import, replace the current view that has the same name, or rename the imported view.
+- Use the **Export** tool to save the current view for the page to a file with which you can share your personalizations with other users. Users can then import the file that contains your personalizations for the page. 
 - Select the **Close** button to close the **Personalization** toolbar and return the page to its previous interactive state.
 
-When the **Personalization** toolbar is used, you must explicitly save personalizations to a view for them to be persisted.  
+When you use the **Personalization** toolbar, you must explicitly save personalizations to a view for them to be persisted.  
 
 In some cases, when you select a tool, a padlock symbol appears next to an element. This symbol indicates that you can't modify the element properties that are related to the selected tool, because changes to those properties will prevent the page from working correctly.
 
@@ -137,21 +137,21 @@ For some pages that include lists, the **Add to workspace** personalization feat
 
 [![Add to workspace.](../../fin-ops/get-started/media/personalization-addtoworkspace.png)]
 
-- To add a list to a workspace, first sort or filter the list on the page so that it shows the information as you want it to appear in the workspace (and save it to a view if the current page has a large view selector). After choosing **Add to workspace**, select a workspace and then select **List** in the **Presentation** field. After choosing **Configure**, select the columns that should appear in the list and specify the label to be used for the list in the workspace.
-- To add a tile to a workspace, first filter the list on the page so that it shows the data that should be summarized or that you want quick access to (and save it to a view if the current page has a large view selector). After choosing **Add to workspace**, select a workspace and then select **Tile** in the **Presentation** field. After choosing **Configure**, you can specify the label that should be used for the tile in the workspace, choose whether the tile should show a count, and select from one of four available tile sizes. (You can change the tile size directly from the workspace later.).
-- To add a link to a workspace, first filter the list on the page so that it shows the data that you're interested in (and save it to a view if the current page has a large view selector). After choosing **Add to workspace**, select a workspace and then select **Link**  in the **Presentation** field. After choosing **Configure**, you can specify the label that should be used for the link and also optionally a label for the section on the workspace where this link is to be placed. If that section doesn't exist, a new section will be created.
+- To add a list to a workspace, first sort or filter the list on the page so that it displays the information as you want it to appear in the workspace. Save it to a view if the current page has a large view selector. After you select **Add to workspace**, select a workspace and then select **List** in the **Presentation** field. After you select **Configure**, select the columns that should appear in the list and specify the label to be used for the list in the workspace.
+- To add a tile to a workspace, first filter the list on the page so that it displays the data that should be summarized or that you want quick access to (and save it to a view if the current page has a large view selector). After you select **Add to workspace**, select a workspace and then select **Tile** in the **Presentation** field. After you select **Configure**, you can specify the label that should be used for the tile in the workspace, choose whether the tile should show a count, and select from one of four available tile sizes. (You can change the tile size directly from the workspace later.).
+- To add a link to a workspace, first filter the list on the page so that it displays the data that you're interested in (and save it to a view if the current page has a large view selector). After you select **Add to workspace**, select a workspace and then select **Link** in the **Presentation** field. After you select **Configure**, you can specify the label that should be used for the link and also optionally a label for the section on the workspace where this link is to be placed. If that section doesn't exist, a new section will be created.
 
 > [!NOTE]
-> If the **Saved views for workspaces** feature is enabled, when you configure your list, tile, or link, you will also have to select the workspace view that you want to add the element to. The available workspace views will appear in the **Workspace options** section of each **Configure** dialog box. 
+> If the **Saved views for workspaces** feature is enabled, when you configure your list, tile, or link you also have to select the workspace view to which you want to add the element. The available workspace views appear in the **Workspace options** section of each **Configure** dialog. 
 
 After you've added a list, tile, or link to a workspace, you can open that workspace and rearrange the elements in it as you want.
 
-### Promoting a tile from a workspace to a dashboard
+### Promote a tile from a workspace to a dashboard
 
 Some workspaces contain count tiles (that is, tiles that have numbers on them), and you might want those tiles to appear on your dashboard too. In a workspace, right-click a count tile, select **Personalize**, and then, in the tile's property window, select **Pin to dashboard**. The next time that you open and refresh the dashboard, the count will appear below the navigation tile for that workspace. You can select that count to go directly to the data that it represents.
 
 ### Changing the size of a tile
-Users can modify the size of any non-KPI tile via personalization. In a workspace, right-click a tile, and then select **Personalize**. In the tile's property window, select the desired size from the **Tile size** options. The tile size will adjust immediately. If the **Saved views support for workspaces** feature is enabled, you can save this personalization to a workspace view.  
+Users can modify the size of any non-KPI tile via personalization. In a workspace, right-click a tile, and then select **Personalize**. In the tile's property window, select the desired size from the **Tile size** options. After selecting a size, the tile size adjusts immediately. If the **Saved views support for workspaces** feature is enabled, you can save this personalization to a workspace view.  
 
 ### Personalizing your dashboard
 
@@ -159,8 +159,8 @@ The dashboard is often the first page that you see when you open the app. It can
 
 One unique personalization capability that is available on the dashboard is the ability to add tiles. 
 
-- If the **Full-page apps** feature is turned off, you add a new tile by right-clicking an element on the dashboard and then selecting **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile as you want. You can also  of this article.
-- If the **Full-page apps** feature is turned on, you add a new tile by right-clicking an element on the dashboard and then selecting **Add an app**. In the dialog box, select whether you want to add a tile for a new workspace (where you can add lists, tiles, and links to the workspace, as described in [Adding tiles, lists, and links to a workspace](#adding-tiles-lists-and-links-to-a-workspace)) or a tile that has content from [Power Apps](embed-power-apps.md) or a [website](embed-website.md). Then follow the steps to configure the option that you selected. A new tile is created at the bottom of the dashboard. For more information about how to add, edit, delete, and share these embedded apps, see the linked documentation.
+- If the **Full-page apps** feature is turned off, you add a new tile by right-clicking an element on the dashboard and then selecting **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile to whatever you want.
+- If the **Full-page apps** feature is turned on, you add a new tile by right-clicking an element on the dashboard and then selecting **Add an app**. In the dialog, select whether you want to add a tile for a new workspace or a tile that has content from [Power Apps](embed-power-apps.md) or a [website](embed-website.md). Then follow the steps to configure the option that you selected. A new tile is then created at the bottom of the dashboard.
 
 ## Sharing personalizations
 
@@ -176,19 +176,19 @@ If the page supports saved views, the best way to share personalizations with ot
 
 ### Copy views or personalizations to users
 
-If the page doesn't support views, the recommended way to share personalizations is to copy them between users. This method is available only to privileged users (for example, system admins), who can look up a specific user's personalization in the system (including the users' personal views) and copy the configuration to other users.
+If the page doesn't support views, the recommended way to share personalizations is to copy them between users. This method is available only to privileged users (for example, system administrators) who can look up a specific user's personalization in the system (including the users' personal views) and copy the configuration to other users.
 
-Follow these steps to copy personalizations between users.
+To copy personalizations between users, follow these steps.
 
 1. Go **System administration \> Setup \> Personalization**.
-2. Follow these steps to copy personal views:
+2. To copy personal views, follow these steps.
 
     1. Select **Personal views**.
     2. Select the desired views in the list.
     3. Select **Copy to users**.
     4. Select the users to distribute the views to.
 
-3.  Follow these steps to copy personalizations on pages that don't support views:
+3.  To copy personalizations on pages that don't support views, follow these steps.
 
     1. Select **User settings**.
     2. Select the user who has the personalization that you want to distribute.
@@ -206,7 +206,7 @@ Another way to share personalizations is via export and import. Individual users
 
 #### Export
 
-In general, you can export one of your own views or personalizations by opening the appropriate page, opening the **Personalization** toolbar, and then selecting **Export**. For more information about the toolbar, see the [Personalization toolbar](#personalization-toolbar) section earlier in this article. Alternatively, you can go to **Settings \> User options \> Personalization** to view a list of all your personalizations in the system. From there, you can select the views or personalizations to export, and then select **Export**.
+In general, you can export one of your own views or personalizations by opening the appropriate page, opening the **Personalization** toolbar, and then selecting **Export**. For more information about the toolbar, see the [Personalization toolbar](#personalization-toolbar). Alternatively, you can go to **Settings** \> **User options** \> **Personalization** to view a list of all your personalizations in the system. From there, you can select the views or personalizations to export, and then select **Export**.
 
 Additionally, admins can export other users' personalizations by following these steps.
 
@@ -236,7 +236,7 @@ If saved views are enabled, follow these steps.
 
 ## Administration of personalizations
 
-The **Personalization** page is the central hub for managing personalizations at an organizational level. See the "Managing views globally" section in the [Saved views](saved-views.md) article for more details.
+The **Personalization** page is the central hub for managing personalizations at an organizational level. For more information, see [Managing views globally](saved-views.md#managing-views-globally).
 
 ### Service updates and personalization
 Personalization data does not need to be cleared or reset when moving to a new version of the product. Personalizations and saved views data will continue to work across updates. Exceptions to this would include changes to the form itself that invalidate a personalization (such as a removed control) or changes to the form's base query that changes its data source subtree so that it no longer matches the data source subtree associated with the view query.
