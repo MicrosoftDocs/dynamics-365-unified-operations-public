@@ -3,21 +3,22 @@ title: Embed third-party apps
 description: This article explains how to embed third-party apps to augment the product's functionality, including an overview on embedding wesites on existing pages.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 09/13/2021
+ms.topic: how-to
+ms.date: 12/27/2024
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-04-30
 ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
-ms.dyn365.ops.version: 10.0.19
+ms.custom: 
+  - bap-template
 ---
 
 # Embed third-party apps
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with finance and operations apps. To provide a more seamless user experience, you can embed those third-party apps directly into your finance and operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.
+Many customers use a range of applications to run their businesses. Some of those applications are third-party web apps that work in conjunction with finance and operations apps. To provide a more seamless user experience, you can embed third-party apps directly into your finance and operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps they require without having to switch tabs or windows.
 
 Use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into finance and operations apps.
 
@@ -80,7 +81,7 @@ After you've embedded an app by using one of the methods that are described in t
 
 ## Viewing embedded apps
 
-To view an embedded app on a page in finance and operations apps, open the page that has the embedded app. Remember that, on some pages, embedded Power Apps can be accessed by using the **Power Apps** button on the standard Action Pane. Alternatively, any embedded app might appear directly on the page as a new tab, FastTab, or blade, or as a new section in a workspace.
+To view an embedded app on a page in finance and operations apps, open the page that has the embedded app. On some pages, embedded Power Apps can be accessed by using the **Power Apps** button on the standard Action Pane. Alternatively, any embedded app might appear directly on the page as a new tab, FastTab, or blade, or as a new section in a workspace.
 
 ## Editing or removing embedded apps
 
