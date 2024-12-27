@@ -3,15 +3,16 @@ title: Personalize the user experience
 description: Learn about how you can personalize the app and user experience, covering various subjects including system-wide options and full personalization access.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/03/2022
+ms.topic: how-to
+ms.date: 12/27/2024
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: SysUserSetup, DefaultDashboard
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Personalize the user experience
