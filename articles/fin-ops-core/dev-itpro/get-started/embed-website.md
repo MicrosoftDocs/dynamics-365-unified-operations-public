@@ -6,7 +6,6 @@ ms.author: jasongre
 ms.topic: how-to
 ms.date: 12/27/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-04-30
 ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
