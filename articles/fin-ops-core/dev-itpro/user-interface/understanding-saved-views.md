@@ -3,14 +3,15 @@ title: Build forms that fully utilize saved views
 description: Learn about some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 01/30/2023
+ms.topic: how-to
+ms.date: 12/27/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-07-31
-ms.dyn365.ops.version: Platform update 28
 ms.search.form: SysUserSetup, DefaultDashboard
+ms.custom: 
+  - bap-template
 ---
 
 # Build forms that fully utilize saved views
@@ -111,7 +112,7 @@ public boolean OnFailureQueryPersonalizationApply(Query _sourceQuery, Query _tar
 ```
 
 ### Opting forms out of views
-Although this approach isn't generally recommended, developers can opt an individual form out of saved views support as required. In this case, no view selector will be available on the form, and there will be no publish capabilities.
+Although this approach isn't generally recommended, developers can opt an individual form out of saved views support as required. In this case, no view selector is available on the form, and there are no publish capabilities.
 
 To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form: 
 
@@ -133,7 +134,7 @@ In the long term, the plan is for views to replace modeled secondary list pages.
 
 Traditionally, personalizations have been applied during the **super()** of **run()**, after the form query has been initially run. Because of this timing, if personalizations included an added field, the query might be rerun to ensure that the extra data was fetched. With saved views, personalizations that are related to the default view were applied at the same time as before. However, the possibility of at least one extra execution of the query during form load increased, because an extra execution occurred if the default view contained any personalizations that affected the query. These personalizations include added fields, modified filters, and modified sorting.
 
-The **Saved views performance enhancement** feature helps to improve the performance of form load for default views that contain personalizations that affect the query. This feature changes when some parts of the default view are applied, so that all query-related changes (such as added fields, modified filters, and modified sorting) are in place when the form initially runs its query in **super()** of **run()**. Therefore, the system runs the form query only once during form load, instead of potentially multiple times. In this way, the feature can speed up the load time for forms.
+The **Saved views performance enhancement** feature helps to improve form load performance for default views that contain personalizations that affect the query. This feature changes when some parts of the default view are applied so that all query-related changes (such as added fields, modified filters, and modified sorting) are in place when the form initially runs its query in **super()** of **run()**. Therefore, the system runs the form query only once during form load, instead of potentially multiple times. In this way, the feature can speed up the load time for forms.
 
 However, because this feature changes when some personalizations that are associated with the default view are applied, the behavior on the page might change. In particular, any code that affects the query in the **OnPostRun** event handler of the form will now be run after the view query is run, not before. Therefore, before you enable the feature, you should evaluate any query-affecting code in the **OnPostRun** event handler in forms.
 
