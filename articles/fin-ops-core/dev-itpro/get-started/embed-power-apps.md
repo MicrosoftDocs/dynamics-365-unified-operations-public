@@ -44,7 +44,7 @@ The following procedure shows how to embed a canvas app on an existing page from
 1. Go to the page where you want to embed the canvas app. This page will contain any data that must be passed to the app as input.
 2. Open the **Add an app from Power Apps** pane:
 
-    - If the app will be embedded directly on the page, select **Options** \> **Personalize this page** \> **More**. Select **Add a page**, and then select the region on the page where you want to add the app. To embed the app into the **Power Apps** menu button, select the Action Pane. To embed the app directly on the page, select the appropriate tab, FastTab, blade, or section (if you're on a workspace). Then, in the **Add an app** pane, select **Power Apps**.
+    - If the app will be embedded directly on the page, select **Options** \> **Personalize this page** \> **More**. Select **Add a page**, and then select the region on the page where you want to add the app. To embed the app into the **Power Apps** menu button, on the Action Pane select **Power Apps**. To embed the app directly on the page, select the appropriate tab, FastTab, blade, or section (if you're on a workspace). Then, in the **Add an app** pane, select **Power Apps**.
     - If the app will be accessed by using the **Power Apps** menu button, you can select the **Power Apps** menu button on the standard Action Pane and then select **Add an app**.
 
 3. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
