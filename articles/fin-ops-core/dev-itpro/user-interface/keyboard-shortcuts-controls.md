@@ -24,7 +24,7 @@ Keyboard shortcuts are an important consideration when you create any extensible
 For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This article provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by finance and operations apps and supported browsers, shortcuts that are planned for implementation, and shortcuts that one or more browsers don't allow to be overridden. This article also outlines the recommended way to implement keyboard shortcuts for extensible controls.
 
 ## Choosing a key combination
-When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you be aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
+When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you're aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
 
 - The new keyboard shortcut might not work, because a browser doesn't allow that key combination to be overridden, or a framework-provided shortcut takes precedence over the new shortcut.
 - The new keyboard shortcut might remove expected keyboard functionality, because users expect specific key combinations to perform specific functions in a browser. Alternatively, you might override framework-provided shortcuts or other control shortcuts, so that keyboard-only users can't use them.
@@ -33,7 +33,7 @@ Because of these potential issues, we recommend that you adhere to this guidance
 
 - **Don't** choose any key combination that is currently used by finance and operations apps, or that is planned for future implementation.
 - **Do** pick key combinations that will work in all supported browsers.
-- **Do** be careful when you override shortcuts that are used by a supported browser. You should not suppress shortcuts for important or frequently used browser functionality.
+- **Do** be careful when you override shortcuts that are used by a supported browser. You shouldn't suppress shortcuts for important or frequently used browser functionality.
 - **Do** use longer key combinations (three keys) for control-specific behavior. Shorter combinations should be reserved for user-defined keyboard shortcuts.
 - **Don't** choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.
 
@@ -47,7 +47,7 @@ Here are links to the keyboard shortcuts that are documented for finance and ope
 - <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
 
 ### Planned keyboard shortcuts 
-In addition to the keyboard shortcuts that are currently used, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you should not choose the following key combinations for extensible controls.
+In addition to the keyboard shortcuts that are currently used, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you shouldn't choose the following key combinations for extensible controls.
 <table>
 <tbody>
 <tr>
@@ -80,7 +80,7 @@ In addition to the keyboard shortcuts that are currently used, there are several
 ### Browser/operating system keyboard shortcuts to avoid
 
 #### Keyboard shortcuts that correspond to important functionality
-The following table provides a short, non-exhaustive list of keyboard shortcuts that correspond to important functionality in a browser or operating system. You should not choose the key combinations in this table.
+The following table provides a short, non-exhaustive list of keyboard shortcuts that correspond to important functionality in a browser or operating system. You shouldn't choose the key combinations in this table.
 <table>
 <tbody>
 <tr>
@@ -137,7 +137,7 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 </table>
 
 #### Keyboard shortcuts that can't be overridden by some browsers
-Some browsers don't allow the following keyboard shortcuts to be overridden. Therefore, you should not choose the following key combinations, because the shortcut won't work in all browsers.
+Some browsers don't allow the following keyboard shortcuts to be overridden. Therefore, you shouldn't choose the following key combinations, because the shortcut won't work in all browsers.
 <table>
 <tbody>
 <tr>
@@ -262,7 +262,7 @@ We recommend that you use the registration mechanism that is described in this s
     ```
 
 ### Examples
-Here is a Form example.
+Here's a Form example.
 
 ```Text
 Shortcuts: {
@@ -290,7 +290,7 @@ Shortcuts: {
 }
 ```
 
-Here is a Dialogs example that extends the Form control.
+Here's a Dialogs example that extends the Form control.
 
 ```Text
 Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
