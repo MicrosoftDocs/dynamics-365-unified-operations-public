@@ -24,11 +24,11 @@ This article discusses how to enable lookup behavior on controls. It also discus
 
 ### Controls bound to an Extended Data Type
 
-Controls with their Extended Data Type property set (no FormDataSource in play) will have a lookup under the following conditions:
+Controls with their Extended Data Type property set (no FormDataSource in play) have a lookup under the following conditions:
 
 1.  If the EDT has its Table Relations or Table References nodes populated.
 2.  If the FormHelp property is set (custom lookup); doesn’t require rule \#1 to be true.
-3.  If the control has lookup or lookupReference methods overridden. This rule also applies to fully unbound controls (no EDT, field, or data method). This includes overrides via registerOverrideMethod and others.
+3.  If the control has lookup or lookupReference methods overridden. This rule also applies to fully unbound controls (no EDT, field, or data method). This condition includes overrides via registerOverrideMethod and others.
 
 ### Controls bound to a form data source
 
@@ -37,7 +37,7 @@ Controls that are bound to a data source can have a lookup under the following c
 1.  The “lookup” or “lookupReference” (Reference Controls) methods are overridden.
     1.  If the FormDataSource field has lookup or lookupReference methods overridden.
     2.  If the control has lookup or lookupReference methods overridden.
-        -   This includes overrides via registerOverrideMethod and others.
+        -   This condition includes overrides via registerOverrideMethod and others.
 
 2.  If the field has an EDT, then rule \#2 from the "Controls bound to an Extended Data Type" section applies.
 3.  If the bound field maps to a relation per DBFGetRef rules.
@@ -57,7 +57,7 @@ Controls that are bound to a data source can have a lookup under the following c
 
 1.  If the return type of the data method is an EDT, then rules \#1 and \#2 from the "Controls bound to an Extended Data Type" section apply.
 2.  If the control has lookup or lookupReference methods overridden.
-    -   This includes overrides by using registerOverrideMethod.
+    -   This condition includes overrides by using registerOverrideMethod.
 
 ## Multiselect lookups
 ### Available system forms for building multi-select lookups
@@ -89,7 +89,7 @@ Using SelectedControl() to determine which control is hosting a lookup is unsupp
     FormStringControl argsCallerFormControl = args.callerFormControl();
     ```
     
-The selectTarget and callerFormControl is set automatically if the lookup form instance is spun up automatically by the kernel. If the form instance is created in app code, these can be set manually as shown below.
+The selectTarget and callerFormControl are set automatically if the lookup form instance is generated automatically by the kernel. If the form instance is created in app code, they can be set manually as shown in the following example.
 
 ```xpp
 public void lookup()
@@ -105,7 +105,7 @@ public void lookup()
 
 ### Creating a slider dialog (instead of a lookup form) when the lookup button is used
 
-Lookup controls should open lookup forms when the lookup button is used (not slider dialogs or other kinds of forms).  The first reason for this is product consistency. The second and more important reason is that opening a slider dialog from a lookup is incompatible with the new type-ahead feature in lookups.
+Lookup controls should open lookup forms when the lookup button is used (not slider dialogs or other kinds of forms). The first reason for this functionality is product consistency. The second and more important reason is that opening a slider dialog from a lookup is incompatible with the new type-ahead feature in lookups.
 
 
 
