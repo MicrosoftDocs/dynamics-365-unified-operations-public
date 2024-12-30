@@ -100,6 +100,17 @@ To enable purchase orders to be retrieved during the purchase order year-end pro
 1. Go to **General ledger** \> **Periodic** \> **Fiscal year close** \> **Purchase order year-end process**.
 2. In the lower pane, select **Retrieve purchase orders**.
 3. In the query dialog box that appears, define criteria for the purchase orders that you want to include in the year-end processing. Criteria include the date, date range, vendor account, purchase order type, purchase order balance, and financial dimensions. When you're finished, select **OK**.
+
+> [!NOTE]
+> If the feature **Enable non-retriavable purchase orders form for purchase order year-end process** is enabled, users can validate the reason why specific purchase order is not available for a POYE processing in the **Non-retriavable purchase orders** form.
+> The following conditions are checked and should be met for the order to be available to be processed during purchase order year-end process:
+> - Purchase order status should be Confirmed but not fully invoiced (no draft invoices should exist as well).
+> - Approval status must be Approved.
+> - Accounting date should be in the fiscal year for which POYE is run.
+> - Last accouting event date of the PO should be in the year for which POYE is run.
+> - PO should be budget controlled or have ecumbrances enabled.\
+> ![Non-retriavable purchase orders](.budgeting/media/Non-retrievable-purchase-orders.png)
+
 4. On the **Purchase order year-end process** page, the lower pane shows the results of the query. To include only specific purchase orders from the query results in the year-end processing, select the **Include** checkbox for each one. To include all the purchase orders from the query results, select **Include all**. To clear the selection of all purchase orders, select **Exclude all**. Encumbrances for the selected purchase orders are reversed in the fiscal year that is ending. The encumbered amounts will then be available in the new fiscal year.
 
     > [!TIP]
