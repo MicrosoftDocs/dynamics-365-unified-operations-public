@@ -13,7 +13,7 @@ ms.author: v-federicohe
 
 # Ecuadorian refund invoice transactions posting
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article provides a guide on configuring and utilizing refund-type invoices for Ecuador. A Refund invoice enables an intermediary to purchase goods and services from a vendor on our behalf. Subsequently, we reimburse the intermediary for the invoice amount.
 
