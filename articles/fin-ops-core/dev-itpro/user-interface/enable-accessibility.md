@@ -3,14 +3,14 @@ title: Accessibility in forms, products, and controls
 description: Learn about best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 08/13/2018
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: Platform update 1
 ms.assetid: 5b97c471-212a-4487-baef-120d01063319
+ms.custom: 
+  - bap-template
 ---
 
 # Accessibility in forms, products, and controls
