@@ -26,37 +26,37 @@ This article discusses how to enable lookup behavior on controls. It also discus
 
 Controls with their Extended Data Type property set (no FormDataSource in play) will have a lookup under the following conditions:
 
-1.  If the EDT has its Table Relations or Table References node populated.
+1.  If the EDT has its Table Relations or Table References nodes populated.
 2.  If the FormHelp property is set (custom lookup); doesn’t require rule \#1 to be true.
-3.  If the control has lookup or lookupReference overridden. Note, this rule also applies to fully unbound controls (no EDT, field, or data method). This includes overrides via registerOverrideMethod and others.
+3.  If the control has lookup or lookupReference methods overridden. This rule also applies to fully unbound controls (no EDT, field, or data method). This includes overrides via registerOverrideMethod and others.
 
 ### Controls bound to a form data source
 
-Controls that are bound to a data source will have a lookup under the following conditions: **Field bound**
+Controls that are bound to a data source can have a lookup under the following conditions: **Field bound**
 
-1.  “lookup” or “lookupReference” (Reference Controls) methods are overridden.
-    1.  If the FormDataSource field has lookup or lookupReference overridden.
-    2.  If the control has lookup or lookupReference overridden.
+1.  The “lookup” or “lookupReference” (Reference Controls) methods are overridden.
+    1.  If the FormDataSource field has lookup or lookupReference methods overridden.
+    2.  If the control has lookup or lookupReference methods overridden.
         -   This includes overrides via registerOverrideMethod and others.
 
 2.  If the field has an EDT, then rule \#2 from the "Controls bound to an Extended Data Type" section applies.
 3.  If the bound field maps to a relation per DBFGetRef rules.
     1.  High level rules:
-        1.  If there is an EDT relation backing the field, with the Table Relations node populated and Ignore EDT Relations is false on the field, the relation is used (has a lookup).
-        2.  If there is a relation mapping to the field and any fixed field link conditions are satisfied, the relation is used (has a lookup).
+        1.  If there's an EDT relation backing the field, with the Table Relations node populated and Ignore EDT Relations is false on the field, the relation is used (has a lookup).
+        2.  If there's a relation mapping to the field and any fixed field link conditions are satisfied, the relation is used (has a lookup).
             1.  Validate must be “Yes”.
 
-        3.  Note the special case of migrated EDT relations which occur when:
+        3.  Note the special case of migrated EDT relations that occurs when:
             1.  Field is backed by an EDT with the Relations node populated.
             2.  Field is backed by a TABLE relation with the “EDTRelation” set to Yes.
             3.  The table relation link has the SourceEDT set to the appropriate EDT.
 
-        4.  You can also have cases where IgnoreEDTRelation is set to true on a field, in which case a lookup will occur only if rule \#3.1.2 of this section is true.
+        4.  You can also have cases where IgnoreEDTRelation is set to true on a field, in which case a lookup occurs only if rule \#3.1.2 of this section is true.
 
 **Data method bound**
 
 1.  If the return type of the data method is an EDT, then rules \#1 and \#2 from the "Controls bound to an Extended Data Type" section apply.
-2.  If the control has lookup or lookupReference overridden.
+2.  If the control has lookup or lookupReference methods overridden.
     -   This includes overrides by using registerOverrideMethod.
 
 ## Multiselect lookups
@@ -69,27 +69,27 @@ There are currently two system forms for creating multi-select lookups:
 
 ### What happened to the SysLookupMultiselect form?
 
-SysLookupMultiselect was marked for deprecation in Microsoft Dynamics AX 2012 and has been removed. Any use of this form for multiselect lookup scenarios should be migrated to use SysLookupMultiselectGrid. For an example, see the form tutorial\_LookupMultiSelectGrid.
+SysLookupMultiselect was marked for deprecation in Microsoft Dynamics AX 2012 and was removed. Any use of this form for multiselect lookup scenarios should be migrated to use SysLookupMultiselectGrid. For an example, see the form tutorial\_LookupMultiSelectGrid.
 
 ## Unsupported lookup scenarios
 ### Creating multiple lookup forms when the lookup button is used
 
-An error may occur if you create multiple lookup forms when the lookup button is used. For example, overriding the ‘lookup’ method and creating a new lookup form, but also calling ‘super’ (which will create another lookup form).
+An error may occur if you create multiple lookup forms when the lookup button is used. For example, overriding the ‘lookup’ method and creating a new lookup form, but also calling ‘super’ (which creates another lookup form).
 
 ### Using SelectedControl() to determine which control is hosting a lookup
 
-Using SelectedControl() to determine which control is hosting a lookup is unsupported. While it may work in some cases, it will fail in others. For example, in disambiguation lookups, no control is selected on the parent form since the act of leaving the control is what triggers a disambiguation lookup. As an alternative to using SelectedControl(), there are a few other ways to retrieve the control that is hosting the lookup:
+Using SelectedControl() to determine which control is hosting a lookup is unsupported. While it may work in some cases, it fails in others. For example, in disambiguation lookups, no control is selected on the parent form since the act of leaving the control is what triggers a disambiguation lookup. As an alternative to using SelectedControl(), there are a few other ways to retrieve the control that is hosting the lookup:
 -   Check the ‘selectTarget’ of the lookup form.
     ```xpp
     FormStringControl selectTarget = formRun.selectTarget();
     ```
 
--   Check the ‘callerFormControl’ on the lookup form args. Note that SysTableLookup::getCallerControl(Args args) encapsulates that call.
+-   Check the ‘callerFormControl’ on the lookup form args. SysTableLookup::getCallerControl(Args args) encapsulates that call.
     ```xpp
     FormStringControl argsCallerFormControl = args.callerFormControl();
     ```
     
-Note that the selectTarget and callerFormControl will be set automatically if the lookup form instance is spun up automatically by the kernel. If the form instance is created in app code, these can be set manually as shown below.
+The selectTarget and callerFormControl is set automatically if the lookup form instance is spun up automatically by the kernel. If the form instance is created in app code, these can be set manually as shown below.
 
 ```xpp
 public void lookup()
