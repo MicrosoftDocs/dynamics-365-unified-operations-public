@@ -3,14 +3,15 @@ title: Form styles and patterns
 description: Learn about the concept of form patterns and discusses the process for applying and removing patterns, including an overview on applying patterns.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 11/09/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Form styles and patterns
