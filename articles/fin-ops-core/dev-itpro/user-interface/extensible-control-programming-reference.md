@@ -3,14 +3,15 @@ title: Extensible control programming reference
 description: Access extensible control programming references, including examples, control block diagrams, and X++ code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Extensible control programming reference
