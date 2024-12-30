@@ -3,14 +3,15 @@ title: Lookup controls
 description: Learn about how to enable lookup behavior on controls, including overviews on multiselect lookups and unsupported lookup scenarios.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 1c71ebac-47c3-4c7e-bb48-a1c45619c95e
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Lookup controls
