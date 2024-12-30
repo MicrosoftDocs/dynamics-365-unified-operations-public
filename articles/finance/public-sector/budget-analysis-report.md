@@ -23,13 +23,13 @@ You can use the **Budget analysis** report to generate a summarized report that 
 
 The report can be sorted by fund and then account number. Within each fund, the report shows subtotals, based on the financial dimension set that you selected to group by. When you use the navigation pane to review activity, the grouping determines how activity is shown there.
 
-The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a Profit and Loss account type won't be included in the report. The report also doesn't include net totals. (Net totals are calculated as revenue minus expenses.)
+The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a Profit and Loss account type won't be included in the report. The report also doesn't include net totals (net totals are calculated as revenue minus expenses).
 
 To view more information about an account, select the account name or number to open the **Budget analysis inquiry** page. You can view all the transactions that contribute to the amount on the report. To view the transactions, you can show drill-down report links on the report. Select a link to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances. The drill-down reports can optionally include pending transactions.
 
 ## Filter the data on this report
 
-When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. For more information, see the "How to work with reports" section of this article.
+When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. 
 
 | Field | Description |
 |---|---|
