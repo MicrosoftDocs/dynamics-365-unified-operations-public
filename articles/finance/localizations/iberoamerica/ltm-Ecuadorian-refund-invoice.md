@@ -1,5 +1,5 @@
 ---
-title: Ecuadorian refund invoice transactions posting
+title: Post Ecuadorian refund invoice transactions
 description: The article describes how to configure and use refund invoices for Ecuador. 
 author: Fhernandez0088
 ms.date: 12/30/2024
@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 ---
 
-# Ecuadorian refund invoice transactions posting
+# Post Ecuadorian refund invoice transactions
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
