@@ -3,14 +3,15 @@ title: File upload control
 description: Learn about the file upload control, which lets users upload files, including overviews on design classes and sequence diagrams.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 07/27/2020
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # File upload control
