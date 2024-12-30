@@ -3,14 +3,15 @@ title: Page layout in the web client
 description: Learn about page layout in the web client, including a table that defines various containers and options, with code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 01/22/2021
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Page layout in the web client
