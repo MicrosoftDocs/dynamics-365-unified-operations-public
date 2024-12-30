@@ -3,14 +3,14 @@ title: Page design guidelines
 description: Learn about page design guidelines for mobile apps, including answers to various questions about list views and other aspects of mobile design.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Page design guidelines
