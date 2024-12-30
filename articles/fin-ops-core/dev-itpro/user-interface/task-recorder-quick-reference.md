@@ -3,13 +3,14 @@ title: Task Recorder quick reference
 description: Access a quick reference sheet that explains what each button in the Task recorder menus does, including a main menu and open and save options.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 12/01/2019
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Task Recorder quick reference
