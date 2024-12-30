@@ -19,8 +19,9 @@ This article provides a guide on configuring and utilizing refund-type invoices 
 
 ## Prerequisites
 Before you complete the procedure in this article, the following prerequisites must be met:
-* Configure document class types and document classes that represent the fiscal documents. In this case, refund invoice, credit and debit note.
-* Intermediary vendor must be set up.
+
+- Configure document class types and document classes that represent the fiscal documents. In this case, refund invoice, credit and debit note.
+- Intermediary vendor must be set up.
 
 
 ## Configuration for refund invoice
@@ -66,7 +67,7 @@ To create the second transaction, follow these steps.
 
 The third transaction reconciles the accounts used in the previous two transactions. 
 
-To create the thrid transaction, follow these steps.
+To create the third transaction, follow these steps.
 
 1. The vendor account is credited, and the ledger account will be debited with the refund account used in transaction one.
 1. Complete the tax groups and codes for the ledger account and fill in the LATAM fields for the vendor line using the document class for settlement previously created. Post the transaction.
