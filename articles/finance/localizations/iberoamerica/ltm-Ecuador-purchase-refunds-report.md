@@ -25,7 +25,7 @@ Before you complete the steps in this article to generate and print the report, 
 - You must configure the Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md). 
 - You must post vendor invoices for the specific period. For more information, see [Purchase invoice posting for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-purchase-invoice-posting) .
 - You must post vendor payments. For more information, see [Use the LATAM extension in vendor payments journals](/dynamics365/finance/localizations/iberoamerica/ltm-latam-in-vendor-payment).
-- You can follow the instructions in the [Ecuadorian refund invoice transactions posting]( /ltm-Ecuadorian-refunds-invoice.md) article.
+- You can follow the instructions in the [Ecuadorian refund invoice transactions posting](ltm-Ecuadorian-refunds-invoice.md) article.
 
 ## Configure application-specific parameters
 
