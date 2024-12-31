@@ -51,7 +51,7 @@ Note that the records displayed are only the unique combinations of budget contr
 ### Budget control check fails
 
 If user experience the issue with budget checks, or budget check fails noting there are not enough funds available, but the **Budget control statistics by period** page shows available funds for the given dimension combination, or if the above mentioned steps do not apply or yield expected results, the following steps and scenarios could be considered:
-- User should check **Budget analysis** page to confirm the data consistency between reports.
+- **Budget control threshold** defines the level of a budget usage at which system prevents posting or displays warnings. If a budget threshold in the **Budget control configuration** form is set to, for example, 80%, and *Display a message when exeeding budget threshold* is set to **Yes**, the user will be shown a message about exceeding the threshold defined. 
 - **Budget groups** - if a dimension combination runs out of budget, it may try to use funds from the budget group. There might be scenarios where a dimension combination is overbudget and the budget could be pulled from the budget group.
 - **Overbudget permissions** - if there are any over budget permissions, there might be an overbudget scenario, but the user will not get a failure on the budget check.
 - **Budget control interval** setup on the **Budget control configuration** groups - if the budget control interval is set to **Fiscal year to date** in the **Budget control configuration**, funds validation end date might be different than the date defined in the **Budget control statistics by period** page.
