@@ -3,13 +3,13 @@ title: Client-side design APIs
 description: Learn about the client-side design APIs and includes recommendations for using them with definitions for various terms.
 author: jasongre
 ms.author: jasongre
-ms.topic: overview
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Client-side design APIs
