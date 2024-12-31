@@ -129,6 +129,9 @@ A regulatory update is a new feature, or a change to an existing feature, that's
 
 The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for new features and changes for a future release. Features are also documented on Microsoft Learn as needed.
 
+> [!NOTE]
+> To view the specific fixes included in a major release version, such as 10.0.XX, search in LCS for "version 10.0.XX". This should bring up a result named "Version 10.0.XX of Finance and Operations apps".  All the fixes included in that release are listed under that item.
+
 ### What's the upcoming schedule of updates?
 
 Each year, four service updates are released. You have the option to apply them at a time that's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You're required to use an update that's no more than one update behind the current update.
