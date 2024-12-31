@@ -3,14 +3,15 @@ title: Images on a page or in a grid
 description: Learn about the steps for displaying images on a page or in a grid, including overviews of various image types with code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 07/09/2019
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Images on a page or in a grid
