@@ -3,15 +3,15 @@ title: Code migration - Context menu code
 description: Learn about details about the programming model that is required for context menus, including an overview on migrating context menu code.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Code migration - Context menu code

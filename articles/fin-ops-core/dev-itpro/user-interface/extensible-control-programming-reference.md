@@ -3,14 +3,15 @@ title: Extensible control programming reference
 description: Access extensible control programming references, including examples, control block diagrams, and X++ code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Extensible control programming reference
@@ -62,14 +63,14 @@ class MyControl extends FormTemplateControl
 ```
 
 ## Runtime: FormCommandAttribute
-The **FormCommandAttribute** is applied to a method in your control class, which allows the method to be called from a control’s JavaScript class. A method with this attribute applied is called a **command.** Use the **FormCommandAttribute** on only the X++ methods that need to be accessed directly from the control’s JavaScript class. An X++ method serving as a command can only accept string arguments. The method must perform the necessary operations to serialize or deserialize the string arguments into other types. The **FormCommandAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. The **FormCommandAttribute** exposes the X++ method as an external endpoint that is accessible from JavaScript. As such, every command should be threat modeled and tested for exploits, and should perform validation on all of its arguments. The underlying X++ method should be declared private so that it is not accessible from X++. If X++ code needs to access this method’s behavior, then a separate X++ method should be declared as public without the **FormCommandAttribute.** This public method should contain any shared code that is needed by both X++ and JavaScript. The private X++ method with the **FormCommandAttribute** can then call this public method to access the shared code. This practice allows the command to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic. You supply the following arguments to the **FormCommandAttribute** constructor:
+The **FormCommandAttribute** is applied to a method in your control class, which allows the method to be called from a control’s JavaScript class. A method with this attribute applied is called a **command.** Use the **FormCommandAttribute** on only the X++ methods that need to be accessed directly from the control’s JavaScript class. An X++ method serving as a command can only accept string arguments. The method must perform the necessary operations to serialize or deserialize the string arguments into other types. The **FormCommandAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. The **FormCommandAttribute** exposes the X++ method as an external endpoint that is accessible from JavaScript. As such, every command should be threat modeled and tested for exploits, and should perform validation on all of its arguments. The underlying X++ method should be declared private so that it isn't accessible from X++. If X++ code needs to access this method’s behavior, then a separate X++ method should be declared as public without the **FormCommandAttribute.** This public method should contain any shared code that is needed by both X++ and JavaScript. The private X++ method with the **FormCommandAttribute** can then call this public method to access the shared code. This practice allows the command to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic. You supply the following arguments to the **FormCommandAttribute** constructor:
 
 -   **Name**: A required string that specifies the name of the command. A few best practices for naming Properties:
     -   Capitalize the first letter, and use PascalCase.
     -   Use a verb in the name.
     -   Include the Property name if the Command is used to read/write a FormProperty (ex: Set\_&lt;PropertyName&gt;)
-    -   Do not use any of the names of inherited JavaScript properties.
--   **Execute immediate**: An optional boolean that specifies whether calls to this command are deferred or require immediate execution. By default, commands have **Execute immediate** set to **true,** so calls are not deferred. Most commands likely require immediate execution because their X++ logic must run before allowing the user to complete their next action. However, commands that have no side-effects on the user’s ability to take their next action can likely be safely deferred to gain a performance benefit. For commands that can be deferred, set Execute immediate to **false** to reduce network chattiness.
+    -   Don't use any of the names of inherited JavaScript properties.
+-   **Execute immediate**: An optional boolean that specifies whether calls to this command are deferred or require immediate execution. By default, commands have **Execute immediate** set to **true,** so calls aren't deferred. Most commands likely require immediate execution because their X++ logic must run before allowing the user to complete their next action. However, commands that have no side-effects on the user’s ability to take their next action can likely be safely deferred to gain a performance benefit. For commands that can be deferred, set Execute immediate to **false** to reduce network chattiness.
 
 The following example declares a command with the name of "SetText".
 
@@ -82,7 +83,7 @@ private void setText(str value)
 ```
 
 ## Runtime: FormPropertyAttribute
-The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it is not accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttibute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type if an EDT, the property must accept and return the base type of the EDT. The supported property types are:
+The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it isn't accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttibute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type is an EDT, the property must accept and return the base type of the EDT. The supported property types are:
 
 -   [X++ primitive types](/dynamicsax-2012/developer/primitive-data-types)
 -   [X++ data contracts](/dotnet/api/system.runtime.serialization.datacontractattribute) (whose members are also supported types)
@@ -93,9 +94,9 @@ You supply the following arguments to the **FormPropertyAttribute** constructor:
 -   **FormPropertyKind:** A required **FormProperyKind** value that specifies the type of the property. Use **FormPropertyKind::Value** for Properties not bound to a data source field, and use **FormPropertyKind::BindableValue** for properties that may be bound to a data source field.
 -   **Name:** A required string that specifies the name of the property. A few best practices for naming properties:
     -   Capitalize the first letter, and use PascalCase.
-    -   Do not use any of the names of inherited JavaScript properties
--   **Read only**: An optional boolean that specifies whether this property is writable from the control’s JavaScript class. By default, properties have **Read only** set to **false,** so they are writeable. This argument does not affect the ability to write to this property from X++. To make the X++ method read only, remove all method arguments from the method declaration. A majority of properties should not be writable from the control’s JavaScript class. Because most property values require validation, a command should be used as a setter for the property so that validation logic is can be run before the backing property is set.
--   **Execute immediate**: An optional Boolean that specifies whether writes to this property are deferred or require immediate execution. By default, properties have **Execute immediate** set to **false,** so writes are deferred. Because the majority of properties should not be writeable form the control’s JavaScript class, the **Execute immediate** flag defaults to **false** and provides performance benefits. Even in the case of properties that are writable from the control’s JavaScript class, the performance side effects of immediate execution should be carefully considered before enabling the behavior.
+    -   Don't use any of the names of inherited JavaScript properties
+-   **Read only**: An optional boolean that specifies whether this property is writable from the control’s JavaScript class. By default, properties have **Read only** set to **false,** so they're writeable. This argument doesn't affect the ability to write to this property from X++. To make the X++ method read only, remove all method arguments from the method declaration. A majority of properties shouldn't be writable from the control’s JavaScript class. Because most property values require validation, a command should be used as a setter for the property so that validation logic is can be run before the backing property is set.
+-   **Execute immediate**: An optional Boolean that specifies whether writes to this property are deferred or require immediate execution. By default, properties have **Execute immediate** set to **false,** so writes are deferred. Because the majority of properties shouldn't be writeable form the control’s JavaScript class, the **Execute immediate** flag defaults to **false** and provides performance benefits. Even in the case of properties that are writable from the control’s JavaScript class, the performance side effects of immediate execution should be carefully considered before enabling the behavior.
 
 The following example shows a typical property declaration. Most properties share the same boilerplate code for getting/setting, as shown below. The textProperty variable is the backing FormProperty field for this property.
 
@@ -171,7 +172,7 @@ The **new** method on a control’s X++ runtime class is called as a part of ins
 The **applyBuild** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **applyBuild** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for initialization of a control’s FormProperties to their default values, or to the values specified by the form developer who placed the control on the form. See typical use of the **applyBuild **method in the example for FormProperty.
 
 ## Runtime: FormBindingUtil::initbinding method
-The **FormBindingUtil** is an API provided by the control framework. It is used to bind FormProperties to data fields and data methods on a data source. The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.
+The **FormBindingUtil** is an API provided by the control framework. It's used to bind FormProperties to data fields and data methods on a data source. The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.
 
 ```xpp
 [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
@@ -215,7 +216,7 @@ class MyControl extends FormTemplateControl
 ```
 
 ## Design time: The X++ build class
-The build class defines the design time behavior of your control. This class determines which properties appear in the property sheet, and how the control behaves when it is modeled in the Form designer. The job of the design time class is to capture design time information for the runtime class to access later on.
+The build class defines the design time behavior of your control. This class determines which properties appear in the property sheet, and how the control behaves when it's modeled in the Form designer. The job of the design time class is to capture design time information for the runtime class to access later on.
 
 ## Design time: Class declaration & FormDesignControlAttribute
 The FormDesignControlAttribute is necessary for the control to appear in the Visual Studio Form designer when right-clicking on the design node of the form. If the FromDesignControlAttribute is missing, then the control can only be added to a form via imperative X++ code (i.e. via the addControlEx method on the form).
@@ -250,7 +251,7 @@ class MyControlBuild extends FormBuildControl
 ```
 
 ## Design time: FormDesignProperty** **Attribute
-There are a number of FormDesignProperty attributes which may be applied alongside the standard FormDesignPropertyAttribute for specialized behavior in the property sheet. The specialized behavior includes enabling the property as a combobox which allows selecting from a list of a values. The different types of lists that used are enumerated below. Whenever the user selects an item from the combobox, the string name of that item is passed into the X++ method getter/setter with the attribute.
+There are a number of FormDesignProperty attributes which may be applied alongside the standard FormDesignPropertyAttribute for specialized behavior in the property sheet. The specialized behavior includes enabling the property as a combo box that allows you to select from a list of values. The different types of lists that used are enumerated below. Whenever the user selects an item from the combobox, the string name of that item is passed into the X++ method getter/setter with the attribute.
 
 -   \[FormDesignPropertyDataSourceAttribute\] - Shows a list of the data sources on the form.
 -   \[FormDesignPropertyDataFieldAttribute(&lt;data source name&gt;)\] - Shows a list of the data fields on the specified data source.
@@ -357,7 +358,7 @@ The data binding attribute accepts a comma-separated list of binding handler-val
 data-dyn-bind="text: 'Hi', visible: true"
 ```
 
-The data binding attribute is a custom HTML attribute understood by the control framework. The data binding attribute can be applied to any HTML element. Some HTML elements may not have the behavior which the binding handler modifies. For example, using the text binding handler on an **&lt;svg&gt;** element will not show the text since the **&lt;svg&gt;** element does not have a textContent property. The control framework reads and executes the data bindings specified in the control’s template at runtime. The lifecycle for the control in the browser can be summarized as follows:
+The data binding attribute is a custom HTML attribute understood by the control framework. The data binding attribute can be applied to any HTML element. Some HTML elements may not have the behavior which the binding handler modifies. For example, using the text binding handler on an **&lt;svg&gt;** element doesn't show the text since the **&lt;svg&gt;** element doesn't have a textContent property. The control framework reads and executes the data bindings specified in the control’s template at runtime. The lifecycle for the control in the browser can be summarized as follows:
 
 1.  The control’s HTM file is loaded by the browser.
 2.  Any script or resource files referenced in the HTM file are also loaded by the browser. Steps 1 and 2 are executed only once during a user’s session, even if there are multiple instances of the control.
@@ -385,7 +386,7 @@ The following example creates the title and name attributes and sets their value
 <div title="Hello" data-dyn-bind="attr: {title: 'Hello', name: 'Greeting'}" name="Greeting"></div>
 ```
 
-The following example uses expressions and functions. However, using JavaScript functions as in-line HTML like the example below is not recommended.
+The following example uses expressions and functions. However, using JavaScript functions as in-line HTML like the example below isn't recommended.
 
 ```xpp
 <!-- the markup in the HTML template -->
@@ -454,7 +455,7 @@ self.ElementClicked = function (event) {
 </div>
 ```
 
-The following example prevents the browser default behavior from executing. For anchor tags, the default hyperlink behavior is prevented, so the browser will not navigate to the link when the element is clicked.
+The following example prevents the browser default behavior from executing. For anchor tags, the default hyperlink behavior is prevented, so the browser doesn't navigate to the link when the element is clicked.
 
 ```xpp
 // In your control’s code-behind JS file
@@ -533,7 +534,7 @@ self.elementHovered = function (event) { alert($dyn.format('{0}',$(event.target)
 
 ##### Behavior
 
-Repeats the content of the child element, updating the binding context of each child based on the supplied data. Supply ***only one*** child element inside of the element with the **foreach** binding. This one element is the element that will be cloned and repeated. Any other additional elements or content will be removed when the binding is applied. Binding handlers are executed in the order in which they appear on the element. Since the **foreach** binding changes the binding context, it is a best practice to always place the **foreach** binding after all other bindings on the element. This will ensure that preceding bindings are not affected by the binding context created by the **foreach** binding. To avoid performance issues, be careful to not create unintentional dependencies on observables inside of your **foreach.** Do not access an observable in the array using **$dyn.value** from within the child elements of the **foreach,** as the **foreach** binding has already subscribed to the observables in the array. Instead, use **$dyn.peek** to access an observable’s value once without creating a subscription.
+Repeats the content of the child element, updating the binding context of each child based on the supplied data. Supply ***only one*** child element inside of the element with the **foreach** binding. This one element is the element that will be cloned and repeated. Any other additional elements or content will be removed when the binding is applied. Binding handlers are executed in the order in which they appear on the element. Since the **foreach** binding changes the binding context, it's a best practice to always place the **foreach** binding after all other bindings on the element. This will ensure that preceding bindings aren't affected by the binding context created by the **foreach** binding. To avoid performance issues, be careful to not create unintentional dependencies on observables inside of your **foreach.** Don't access an observable in the array using **$dyn.value** from within the child elements of the **foreach,** as the **foreach** binding has already subscribed to the observables in the array. Instead, use **$dyn.peek** to access an observable’s value once without creating a subscription.
 
 ##### Arguments
 
@@ -566,7 +567,7 @@ self.colors = ['Red','Blue','Green'];
 </div>
 ```
 
-The following examples shows a nested **foreach** binding. This example showcases how to use the index framework scope variable and custom scope variables to access the binding context from the parent element.
+The following example shows a nested **foreach** binding. This example showcases how to use the index framework scope variable and custom scope variables to access the binding context from the parent element.
 
 ```xpp
     // In your control’s code-behind JS file
@@ -619,7 +620,7 @@ self.colors = [
 
 ##### Behavior
 
-Conditionally renders and binds the child elements of the element with this binding. This binding handler only operates on the child elements. It will not show/hide the element with the binding, nor will this binding show/hide the text content of the element with the binding. Bindings on the child elements will only be executed if the condition evaluates to true. Once the bindings on child elements have been evaluated once they will remain data bound even if the condition changes to false. This means that any calculations caused by bindings on child elements will continue to operate even after the child elements are hidden. Consider this when evaluating the performance of your control.
+Conditionally renders and binds the child elements of the element with this binding. This binding handler only operates on the child elements. It doesn't show/hide the element with the binding, nor will this binding show/hide the text content of the element with the binding. Bindings on the child elements will only be executed if the condition evaluates to true. Once the bindings on child elements have been evaluated once they'll remain data bound even if the condition changes to false. This means that any calculations caused by bindings on child elements will continue to operate even after the child elements are hidden. Consider this when evaluating the performance of your control.
 
 ##### Arguments
 
@@ -654,7 +655,7 @@ self.show(true);
 </div>
 ```
 
-#### sizing
+#### Sizing
 
 ##### Behavior
 
@@ -694,11 +695,11 @@ self.bigBox = true;
 <div style="width: 50px; height: 50px;" data-dyn-bind="sizing: {height: $control.bigBox?50:10, width: $control.bigBox?50:10}"></div>
 ```
 
-#### text
+#### Text
 
 ##### Behavior
 
-Binds to the textContent property of the element. The text binding handler is meant to be used with UI text. It is not meant to bind non-string values (such as numbers, dates or Booleans) to the element. Convert all values into strings before supplying them to the binding handler, by using the dyn.format function. The text binding handler will replace all of the content inside of the element with the binding, whether or not the existing content is HTML or simple text.
+Binds to the textContent property of the element. The text binding handler is meant to be used with UI text. It isn't meant to bind non-string values (such as numbers, dates or Booleans) to the element. Convert all values into strings before supplying them to the binding handler, by using the dyn.format function. The text binding handler will replace all of the content inside of the element with the binding, whether or not the existing content is HTML or simple text.
 
 ##### Arguments
 
@@ -719,11 +720,11 @@ self.text = "Hello";
 <div data-dyn-bind="text: $dyn.format('{0}',$control.text)">Hello</div>
 ```
 
-#### vars
+#### Vars
 
 ##### Behavior
 
-Creates an HTML scope variable with the supplied name and value. The created scope variable is accessible only from bindings in the template. In addition, the scope variable is inherited by child elements. Binding handlers are executed in the order in which they appear on the element. Since the vars binding adds variables to the binding context, it is a best practice to always place the vars binding before all other bindings on the element. This will ensure that the subsequent bindings can access scope variables added by the vars binding. Do not create scope variables with any of the following names, as these names are reserved for framework scope variables: $control, $data, $index, and $value.
+Creates an HTML scope variable with the supplied name and value. The created scope variable is accessible only from bindings in the template. In addition, the scope variable is inherited by child elements. Binding handlers are executed in the order in which they appear on the element. Since the vars binding adds variables to the binding context, it's a best practice to always place the vars binding before all other bindings on the element. This will ensure that the subsequent bindings can access scope variables added by the vars binding. Don't create scope variables with any of the following names, as these names are reserved for framework scope variables: $control, $data, $index, and $value.
 
 ##### Arguments
 
@@ -749,11 +750,11 @@ Hello World!
 
 For an example, see the foreach binding handler examples.
 
-#### visible
+#### Visible
 
 ##### Behavior
 
-Sets the visibility of the element. Always supply the visible binding handler on the root element of the template, and bind to the *Visible* property from the X++ control. This will ensure that the control respects the *Visible* property when it is set by a form developer or when it is set by the framework. If a control is initialized with its *Visible* X++ property set to false, then the control will not appear on the form, and it the control’s template will not be loaded in the browser. If the control’s *Visible* X++ property is set to true at a later time, then the control’s template will be loaded and instantiated in the browser at that time. A control’s *Visible* X++ property can be inherited from its parent controls on the form. An element’s visibility may be controlled by its parent elements, controls and containers, regardless of whether the visible binding handler is applied. The cascading nature of visibility is a standard HTML behavior and is not specific to the control framework.
+Sets the visibility of the element. Always supply the visible binding handler on the root element of the template, and bind to the *Visible* property from the X++ control. This ensures that the control respects the *Visible* property when it's set by a form developer or when it's set by the framework. If a control is initialized with its *Visible* X++ property set to false, then the control doesn't appear on the form, and the control's template doesn't load in the browser. If the control’s *Visible* X++ property is set to true at a later time, then the control’s template is loaded and instantiated in the browser at that time. A control’s *Visible* X++ property can be inherited from its parent controls on the form. An element’s visibility may be controlled by its parent elements, controls and containers, regardless of whether the visible binding handler is applied. The cascading nature of visibility is a standard HTML behavior and isn't specific to the control framework.
 
 ##### Arguments
 
@@ -787,7 +788,7 @@ The *$control* scope variable provides the bindings in the HTML template with ac
 
 #### $data
 
-The *$data* scope variable provides elements with access to their current binding context. Only variables defined in $data (the binding context) or scope variables, can be used inside of HTML bindings. Variables that do not exist in the current binding context and do not exist as current scope variable cannot be accessed from an HTML binding. In most cases the binding context will be the control’s JavaScript instance, so *$data* and *$control* will be equivalent. However, in some cases the binding context can change. For example, for elements inside of a **foreach** binding, *$data* provides the elements with access to the current array item. In cases involving multiple nested **foreach** bindings, elements in a nested binding may need access to the array item in a parent **foreach** binding. To access items in the parent **foreach** binding, you may create a scope variable which will be accessible to elements in the nested **foreach** biding. For an example, see the foreach binding handler examples.
+The *$data* scope variable provides elements with access to their current binding context. Only variables defined in $data (the binding context) or scope variables, can be used inside of HTML bindings. Variables that don't exist in the current binding context and don't exist as current scope variable can't be accessed from an HTML binding. In most cases the binding context will be the control’s JavaScript instance, so *$data* and *$control* will be equivalent. However, in some cases the binding context can change. For example, for elements inside of a **foreach** binding, *$data* provides the elements with access to the current array item. In cases involving multiple nested **foreach** bindings, elements in a nested binding may need access to the array item in a parent **foreach** binding. To access items in the parent **foreach** binding, you may create a scope variable which will be accessible to elements in the nested **foreach** biding. For an example, see the foreach binding handler examples.
 
 #### $index
 
@@ -796,7 +797,7 @@ The $index scope variable provides a 0-based index of the array item when in a *
 ## JavaScript: Inherited properties
 #### Visible
 
-The **Visible** property is inherited from the base JavaScript class (via **$dyn.ui.Controls.apply**). There is also a **Visible** property in X++ that the runtime class in inherits from the base **FormControl** X++ class. Simply bind this property to the visible binding handler and place it on the root element of the HTML template for your control. The framework takes care of the rest. The following example shows how to use the Visible property.
+The **Visible** property is inherited from the base JavaScript class (via **$dyn.ui.Controls.apply**). There is also a **Visible** property in X++ that the runtime class in inherits from the base **FormControl** X++ class. Bind this property to the visible binding handler and place it on the root element of the HTML template for your control. The framework takes care of the rest. The following example shows how to use the Visible property.
 
 ```xpp
 <!-- the markup in the HTML template -->
@@ -909,7 +910,7 @@ var greeting = $dyn.observable("Hello");
 
 ##### Usage
 
-Accesses the value of an observable variable. When **$dyn.value** is called from inside of an observer function (such as an observer passed to **$dyn.observe** or **$dyn.computed**, as well as the binding expression passed to a binding handler) a dependency on the observable is created. This will cause the binding handler or callback to re-execute whenever the value of the observable changes. Because this dependency is created automatically when using **$dyn.value**, it is important to only use **$dyn.value** when you intentionally wish to create such a dependency. If you wish to access the value of an observable without creating a dependency, you should use $dyn.peek.
+Accesses the value of an observable variable. When **$dyn.value** is called from inside of an observer function (such as an observer passed to **$dyn.observe** or **$dyn.computed**, as well as the binding expression passed to a binding handler) a dependency on the observable is created. This will cause the binding handler or callback to re-execute whenever the value of the observable changes. Because this dependency is created automatically when using **$dyn.value**, it's important to only use **$dyn.value** when you intentionally wish to create such a dependency. If you wish to access the value of an observable without creating a dependency, you should use $dyn.peek.
 
 ```xpp
 $dyn.value(observable)
@@ -961,7 +962,7 @@ console.log($dyn.peek(observable));
 
 ##### Usage
 
-Wraps a function with an observability scope. If observables are accessed from inside of the function by using the **$dyn.value** function, then the function will re-execute whenever the values of those observables change. Observables that are accessed by using **$dyn.peek** will not cause the function to re-execute when their values change.
+Wraps a function with an observability scope. If observables are accessed from inside of the function by using the **$dyn.value** function, then the function will re-execute whenever the values of those observables change. Observables that are accessed by using **$dyn.peek** don't cause the function to re-execute when their values change.
 
 ```xpp
 $dyn.computed(observer, [context], [disposableObserver])
@@ -992,7 +993,7 @@ If the Observer returns a value, then that value will also be returned by the ca
 
 ##### Usage
 
-Calls the apply method on specified function. It cannot be used during an interaction.
+Calls the apply method on specified function. It can't be used during an interaction.
 
 ##### Arguments
 
@@ -1083,7 +1084,7 @@ The label ID, as specified to the Globalization API.
 
 ###### Value (string)
 
-The label string in the current culture, if the Identifier is found. Otherwise, returns the supplied Identifier as a string. The following example returns and prints the label named "greeting".
+The label string in the current culture, if the Identifier is found. Otherwise, it returns the supplied Identifier as a string. The following example returns and prints the label named "greeting".
 
 ```xpp
 Globalize.addCultureInfo("en", {
