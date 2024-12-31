@@ -3,13 +3,13 @@ title: Show counts in fields
 description: Learn about how to calculate a count that is correct and appears quickly due to a limit on the number of rows that are retrieved.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Show counts in fields
