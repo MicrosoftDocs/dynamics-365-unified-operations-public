@@ -1,4 +1,4 @@
-=---
+---
 title: FieldMetadata type
 description: Learn about the FieldMetadata type, an interface for field metadata that includes the BoundEntity, BoundField, DecimalPlaces, Description, and other properties.
 author: jasongre
