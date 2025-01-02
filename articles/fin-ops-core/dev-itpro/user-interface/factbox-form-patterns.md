@@ -22,15 +22,15 @@ This article provides information about the FactBox form patterns. FactBoxes are
 
 ## Usage
 
-In general, FactBoxes are used to provide “related information” for a record. They help guarantee that the user doesn't have to open additional forms to get important information, such as totals, balances, overdue orders, and email addresses. The Factbox Grid pattern should be used when there is a child collection (potential for multiple rows) of related information. Two patterns are described in this document:
+In general, FactBoxes are used to provide related information for a record. They help guarantee that the user doesn't have to open additional forms to get important information, such as totals, balances, overdue orders, and email addresses. The Factbox Grid pattern should be used when there's a child collection (potential for multiple rows) of related information. Two patterns are described in this document:
 
--   **Form Part FactBox Grid** – This FactBox pattern is used when there is a child collection (potential for multiple rows) of related information.
--   **Form Part FactBox Card** – This FactBox pattern is used when there is just a set of related fields that must be shown.
+-   **Form Part FactBox Grid** – This FactBox pattern is used when there's a child collection (potential for multiple rows) of related information.
+-   **Form Part FactBox Card** – This FactBox pattern is used when there's just a set of related fields that must be shown.
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   A group has been added around the optional button to make it easier to position the button.
+-   A group was added around the optional button to make it easier to position the button.
 
 ## Model
 ### Form Part FactBox Grid – High-level structure
@@ -64,17 +64,17 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
     -   **Grid.DataSource** isn't empty.
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that are enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines are consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **FactBox** **general guidelines:**
 
 -   If a backing form exists, the FactBox should have a **(More…)** link defined that goes to the appropriate backing form. The names of the FactBox and backing form should be similar.
--   The title should not be a verb or a verb phrase.
--   The title should not contain a label to a specific record.
--   FactBoxes should not display fields that let a user enter data by typing with the keyboard.
--   The title should accurately describe the content and should not be truncated when the FactBox area is at its default size.
+-   The title shouldn't be a verb or a verb phrase.
+-   The title shouldn't contain a label to a specific record.
+-   FactBoxes shouldn't display fields that let a user enter data by typing with the keyboard.
+-   The title should accurately describe the content and shouldn't be truncated when the FactBox area is at its default size.
 
 **FactBox grid guidelines:**
 
@@ -83,8 +83,8 @@ The verification checklist shows the steps for manually verifying that the form 
 **FactBox card guidelines:**
 
 -   Each field should have a label.
--   The ID and name of the header or the line that content is displayed for in the FactBox should not be displayed.
--   Two to ten fields should be displayed.
+-   The ID and name of the header or the line that content is displayed for in the FactBox shouldn't be displayed.
+-   Two to 10 fields should be displayed.
 -   Currency indicator fields should be displayed as the last field in the FactBox.
 
 ## Appendix
