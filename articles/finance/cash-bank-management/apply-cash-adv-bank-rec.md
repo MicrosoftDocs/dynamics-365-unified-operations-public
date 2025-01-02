@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 12/11/2024
+ms.date: 1/02/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -31,7 +31,8 @@ There might be customer or vendor payments on bank statements in the app. This f
 - As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
 
 > [!NOTE]
-> Only journal names without approval workflow enabled are supported during cash application in advanced bank reconciliation.
+> When applying cash in advanced bank reconciliation, only journal names without approval workflow enabled are supported.
+
 
 ## Complete cash application on the reconciliation worksheet
 
