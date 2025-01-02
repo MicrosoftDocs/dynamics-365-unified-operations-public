@@ -56,7 +56,7 @@ None
 
 ### Open issues
 
--   The pattern currently sets the **HeightMode** property of the control to **SizeToAvailable**. This can produce very tall string controls if the pattern is used in a **SizeToAvailable** container. We’re investigating whether this control should use **SizeToContent** height, or whether it should not set the property at all and should instead let the developer decide the appropriate control height.
+-   The pattern currently sets the **HeightMode** property of the control to **SizeToAvailable**, which can produce tall string controls if the pattern is used in a **SizeToAvailable** container. We’re investigating whether this control should use **SizeToContent** height, or whether it shouldn't set the property at all and should instead let the developer decide the appropriate control height.
 
 
 
