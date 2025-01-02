@@ -4,7 +4,7 @@ description: Learn about Microsoft Office integration concepts and features, inc
 author: jasongre
 ms.author: jasongre
 ms.topic: overview
-ms.date: 01/04/2024
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak 
 ms.collection: get-started
 ms.search.region: Global
