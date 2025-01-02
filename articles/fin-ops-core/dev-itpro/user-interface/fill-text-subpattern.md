@@ -3,14 +3,15 @@ title: Fill Text subpattern
 description: Learn about the Fill Text subpattern that is used when a single String or StaticText control must stretch to the full width of the container.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Fill Text subpattern
@@ -22,10 +23,6 @@ This article provides information about the Fill Text subpattern. This subpatter
 ## Usage
 
 Fill Text is used when you need a single String or StaticText control to stretch to the full width of the container. This subpattern is typically used for multi-line string controls that require more space for users to enter information.
-
-## Wireframe
-
-[![Fill Text sub-pattern wireframe.](./media/filltext1.png)](./media/filltext1.png)
 
 ## Model
 ### High-level structure
@@ -45,11 +42,6 @@ String | StaticText
 ## UX guidelines
 None
 
-## Examples
-Form: **FmRental (Notes)** 
-
-[![Fill Text sub-pattern example.](./media/filltext2.png)](./media/filltext2.png)
-
 ## Resources
 ### Typically used by patterns
 
@@ -61,9 +53,6 @@ Form: **FmRental (Notes)**
 -   [Wizard](wizard-form-pattern.md)
 
 ## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 
