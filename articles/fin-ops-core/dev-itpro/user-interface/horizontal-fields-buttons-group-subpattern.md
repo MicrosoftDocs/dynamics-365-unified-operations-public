@@ -3,13 +3,14 @@ title: Horizontal Fields and Buttons Group subpattern
 description: Learn about the Horizontal Fields and Buttons Group subpattern, which is used when actions must be defined for an individual field.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Horizontal Fields and Buttons Group subpattern
@@ -26,9 +27,6 @@ This subpattern is used when actions must be defined for an individual field on 
 
 -   1–2 fields
 -   1–3 buttons
-
-## Wireframe
-[![Wireframe for Horizontal Fields and Buttons Group form subpattern.](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -67,11 +65,6 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Buttons should have tooltips.
     -   There should be a maximum of three buttons. The last button can be a menu button.
 
-## Examples
-Form: **SalesTable (GroupHeaderAddressHeaderOverview)** 
-
-[![Example of SalesTable form.](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
-
 ## Resources
 ### Typically used by patterns
 
@@ -80,19 +73,6 @@ Form: **SalesTable (GroupHeaderAddressHeaderOverview)**
 -   [Details Master](details-master-form-pattern.md)
 -   [Details Transaction](details-transaction-form-pattern.md)
 
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
--   None
-
-### Dynamics AX 2012 content
-**SalesTable** 
-
-[![Example of form.](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
