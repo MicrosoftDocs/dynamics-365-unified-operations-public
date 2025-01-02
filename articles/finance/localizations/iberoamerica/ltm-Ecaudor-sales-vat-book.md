@@ -1,6 +1,6 @@
 ---
-title: Configure Ecuador sales VAT book printing
-description: The article describes how to set up, use and print the Ecuador Sales VAT book report.
+title: Configure Ecuadorian sales VAT book printing
+description: Learn how to configure the Ecuadorian sales VAT book report for printing.
 author: Fhernandez0088
 ms.date: 12/30/2024
 ms.topic: how-to
@@ -9,49 +9,54 @@ ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ---
 
-# Configure Ecuador Sales VAT book printing
+# Configure Ecuadorian sales VAT book printing
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-The article describes how to create and use sales VAT books for Ecuador. The value added tax (VAT) sales report is the record and accounting document used by businesses to keep a record of their sales transactions. Although specific VAT ledger requirements may vary from country/region to country/region, they generally include transaction date, customer information, and tax information details.
+The article explains how to configure the Ecuadorian sales value-added tax (VAT) book report so that it can be printed. The sales VAT book report is the record and accounting document that businesses use to keep a record of their sales transactions. Although the specific VAT ledger requirements might vary from one country/region to another, they typically include the transaction date, customer information, and tax information details.
 
 ## Prerequisites
 
-To print the report, the following prerequisites must be met: 
+Before you can generate and print the report, the following prerequisites must be met:
 
-- Be a legal entity domiciled in a country within the LATAM localization, Ecuador in this case.
-- Have both the LATAM country specific function and the general function activated.
-- Download the specific report from the global repository. For more information, see [ER download reports](/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?context=%2Fdynamics365%2Fcontext%2Ffinance).
-- Configure the ER parameters. For more information, see [ER configuration](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
-- You must have sales invoices posted.
+- The legal entity's address must be in a country/region that is within the LATAM localization (in this case, Ecuador).
+- Both the country/region-specific LATAM feature and the general LATAM feature must be enabled.
+- You must download the relevant report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?context=%2Fdynamics365%2Fcontext%2Ffinance).
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- You must post sales invoices.
 
 ## Set up application-specific parameters
 
-Searches and conditions are designed to allow you to select the combination of document classification IDs and sales tax codes that are used in sales transactions. Depending on the country/region for which you want to set up the report, the applicable conditions will be displayed.
+Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in sales transactions. Depending on the country/region that you want to configure the report for, the applicable conditions are shown.
 
 To set up application-specific parameters, follow these steps.
 
-1. Open the **Electronic Reporting** work area and select **Report Configurations**.
-1. Select the Sales VAT ledger format for Ecuador, and then select **setup** in the **Actions** pane, on the **Configuration** tab, in the **Application-specific parameters** group.
-1. Under **Lookup** in the **Name** column, configure **IsApplicable** for the document class required for the sales, the **TaxType** for the taxes involved in sales transactions in Ecuador and, the **Ret** for withholdings applied to sales.
-1. On the Quick **Conditions** tab, select **Add** to add conditions to the lookup name we have previously selected.
-1. For the lookup name **Isapplicable**, in the **lookup result** field, select **add**, in the lookup result column, indicate whether the document is applicable or not, then in the **Document classification id** column indicates the document class that applies.
-1. For the lookup name **Ret**, in the **lookup result** field, select **add**, in the lookup result column, indicate the type of withholding, then in the **Document classification id** column indicate the type of voucher that applies for each withholding.
-1. For the lookup name **Taxtype**, in the Search result field, select **add**.in the **lookup result** column indicate the tax type, then in the **Tax code** column, indicate the tax code in each case.
+1. Open the **Electronic Reporting** workspace, and select **Report Configurations**.
+1. Select the **Sales VAT ledger** format for Ecuador, and then, on the Action Pane, on the **Configuration** tab, in the **Application-specific parameters** group, select **Setup**.
+1. On the **Lookups** FastTab, in the **Name** column, select **IsApplicable** to configure this lookup for the document class that is required for the sales.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** column, specify whether the document is applicable.
+1. In the **Document classification id** column, specify the document class that applies.
+1. On the **Lookups** FastTab, in the **Name** column, select **Ret** to configure this lookup for withholdings that are applied to sales.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** column, specify the type of withholding.
+1. In the **Document classification id** column, specify the type of voucher that applies to each withholding.
+1. On the **Lookups** FastTab, in the **Name** column, select **TaxType** to configure this lookup for the taxes that are involved in sales transactions in Ecuador.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** column, specify the tax type.
+1. In the **Tax code** column, specify the tax code for each case.
 
 > [!NOTE]
-> VAT books are formats that depend on the LTM tax report template. Therefore, it is important that taxes are recorded for the transactions. The codes you select here must match the codes recorded on the transactions.
-To ensure that the report shows the transactions that meet the configured conditions, complete the conditions field with blank and non-blank conditions.
+> VAT books are formats that depend on the **LTM Tax Report** model. Therefore, it's important that taxes are recorded for the transactions. The codes that you select here must match the codes that are recorded on the transactions. To ensure that the report shows the transactions that meet the configured conditions, complete the conditions with blank and non-blank conditions.
 
-## Run VAT books
+## Run the sales VAT book report
 
-To run VAT books, follow these steps.
+To generate the sales VAT book report, follow these steps.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-1. In the **Format mapping** field, select **EC sales vat book** value.
+1. In the **Format mapping** field, select **EC sales vat book**.
 1. Select **OK**.
-1. In the **From** date field, enter a date.
-1. In the **To** date field, enter a date.
+1. In the **From date** and **To date** fields, enter the date range to include on the report.
 1. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
