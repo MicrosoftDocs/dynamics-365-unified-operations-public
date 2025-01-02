@@ -43,9 +43,6 @@ Apply Section PowerBI to the appropriate tab page in the workspace.
 ## UX guidelines
 None
 
-## Examples
-Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) PowerBI must be configured before the form can appear. (For information about how to configure PowerBI, see the Appendix.)
-
 ## Appendix
 ### Related articles
 
@@ -55,7 +52,7 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 ### Frequently asked questions
 
 -   **How do I configure PowerBI for integration with my workspace?**
-    -   See the [Configure Power BI integration for workspaces](../analytics/configure-power-bi-integration.md) article.
+    -   See [Configure Power BI integration for workspaces](../analytics/configure-power-bi-integration.md).
 
 ### Open issues
 
