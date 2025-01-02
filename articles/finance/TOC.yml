@@ -2416,15 +2416,15 @@
                       href: localizations/denmark/emea-dnk-accounting-basis.md
                 - name: Ecuador
                   items:
-                  - name: Configure Ecuador sales VAT book printing
+                  - name: Configure Ecuadorian sales VAT book printing
                     href: localizations/iberoamerica/ltm-Ecaudor-sales-vat-book.md
-                  - name: Configure Ecuador purchases payments methods printing
+                  - name: Configure Ecuadorian purchase payment methods printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-payment-methods.md
-                  - name: Configure Ecuador purchase refunds report printing
+                  - name: Configure Ecuadorian purchase refunds report printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-refunds-report.md
-                  - name: Configure purchases VAT book details for Ecuador printing
+                  - name: Configure Ecuadorian purchase VAT book details printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
-                  - name: Configure Ecuador purchases Withholdings book printing
+                  - name: Configure Ecuadorian purchase withholding book printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
                   - name: Post Ecuadorian refund invoice transactions
                     href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
