@@ -3,14 +3,15 @@ title: Build operational workspaces
 description: Learn about workspaces and the patterns and subpatterns that are used to build operational workspaces, including various examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 02/08/2022
+ms.topic: how-to
+ms.date: 01/03/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Build operational workspaces
@@ -34,8 +35,6 @@ This article provides detailed information about workspaces and the patterns and
 - Reduce the need for navigation.
 - Provide visual impact.
 - Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.
-
-[![Example of a workspace](./media/workspaceConceptVertical2.png)](./media/workspaceConceptVertical2.png)
 
 To accomplish these goals, the operation workspace pattern was developed.
 
