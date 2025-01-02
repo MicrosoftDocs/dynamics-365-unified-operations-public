@@ -3,14 +3,15 @@ title: General form guidelines
 description: Learn about general form guidelines, including overviews of the verification checklist, standard form guidelines, and other form guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 03/09/2020
+ms.topic: how-to
+ms.date: 01/03/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # General form guidelines
@@ -48,8 +49,6 @@ The verification checklist shows the steps for manually verifying that the form 
   -   **Example:** For role A, field A **is not** required, but for role B, field A **is** required.
 - No UX guidelines are violated when country/region codes are applied.
 - Two fields can share a single label. Group the fields into a group, and set the **FrameType** property of the group to **GroupedFieldsLabel**.
-
-  [![Example of two fields sharing a single label.](./media/generalform1.jpg)](./media/generalform1.jpg)
 
 ## Other form guidelines
 -   Use a StaticText control instead of StringEdit for multi-line read-only text. StringEdit controls are semantically incorrect for informational text, because they can never be edited. Additionally, StringEdit controls typically have a border and different layout characteristics than StaticText controls, and these differences negatively affect the user experience.
@@ -118,9 +117,6 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 
 ## FastTabs guidelines
 -   The fields in groups should flow across the FastTab. 
-
-    [![Example of fields flowing across FastTab.](./media/generalform2.jpg)](./media/generalform2.jpg)
-
 -   The content of the first FastTab should be fully visible without scrolling. FastTabs should never horizontally scroll when the fields are displayed.
 -   The first FastTab should contain the most important fields for this entity (the fields that will be edited most often).
 -   FastTabs should display summary information.
@@ -148,9 +144,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
     -   From the least risk to the most risk
 
 ## Check box and toggle guidelines
-Toggle buttons are typically used instead of traditional check boxes. 
-
-[![Image of a check box and a toggle.](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
+Toggle buttons are typically used instead of traditional check boxes.   
 
 -   Follow all [standard Microsoft guidelines for check boxes.](/windows/desktop/uxguide/ctrl-check-boxes) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.
