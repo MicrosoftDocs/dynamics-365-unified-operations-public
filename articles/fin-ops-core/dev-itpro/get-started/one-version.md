@@ -2,7 +2,7 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: rashmansur
-ms.date: 04/30/2024
+ms.date: 01/2/2022
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -130,7 +130,9 @@ A regulatory update is a new feature, or a change to an existing feature, that's
 The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for new features and changes for a future release. Features are also documented on Microsoft Learn as needed.
 
 > [!NOTE]
-> To view the specific fixes included in a major release version, such as 10.0.XX, search in LCS for "version 10.0.XX". This should bring up a result named "Version 10.0.XX of Finance and Operations apps".  All the fixes included in that release are listed under that item.
+> To view the specific fixes included in a major release version, such as 10.0.XX:
+> Go to LCS, search for "version 10.0.XX".
+> This displays **Version 10.0.XX of Finance and Operations apps**. Fixes included in that release are listed.
 
 ### What's the upcoming schedule of updates?
 
