@@ -3,14 +3,15 @@ title: FactBox form patterns
 description: Learn about the FactBox form patterns, which are used to provide related information for a record, including overviews on usage and wireframes.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 11/09/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # FactBox form patterns
@@ -24,19 +25,7 @@ This article provides information about the FactBox form patterns. FactBoxes are
 In general, FactBoxes are used to provide “related information” for a record. They help guarantee that the user doesn't have to open additional forms to get important information, such as totals, balances, overdue orders, and email addresses. The Factbox Grid pattern should be used when there is a child collection (potential for multiple rows) of related information. Two patterns are described in this document:
 
 -   **Form Part FactBox Grid** – This FactBox pattern is used when there is a child collection (potential for multiple rows) of related information.
-
-<!-- -->
-
 -   **Form Part FactBox Card** – This FactBox pattern is used when there is just a set of related fields that must be shown.
-
-## Wireframe
-### Form Part FactBox Grid
-
-[![Illustration of Form Part FactBox grid.](./media/factbox1.png)](./media/factbox1.png)
-
-### Form Part FactBox Card
-
-[![Illustration of Form Part FactBox card.](./media/factbox2.png)](./media/factbox2.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -98,23 +87,8 @@ The verification checklist shows the steps for manually verifying that the form 
 -   Two to ten fields should be displayed.
 -   Currency indicator fields should be displayed as the last field in the FactBox.
 
-## Examples
-### Form Part FactBox Grid
-
-Form: **CustTable** &gt; **ContactsInfoPart** 
-
-[![Example of Form Part FactBox grid.](./media/factbox3.png)](./media/factbox3.png)
-
-### Form Part FactBox Card
-
-Form: **CustTable** &gt; **CustStatisticsStatistics** 
-
-[![Example of Form Part FactBox card.](./media/factbox4.png)](./media/factbox4.png)
-
 ## Appendix
 ### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **How do I make the More button work?**
     -   The **More** button at the bottom of the FactBox takes the user to a backing form that contains the full list of related records. This button should be implemented by using a regular Button control that overrides the **clicked** method as shown in the following example. Be sure to fill in the **TableRef** and **ListPageRef** properties on the table that provides data for the grid.
@@ -142,11 +116,6 @@ This section will have answers to frequently asked questions that are related to
 
 -   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](/dynamicsax-2012/developer/list-page-user-experience-guidelines)
 
-#### AX 2012 example
-
-**CustTable** &gt; **ContactsInfoPart** 
-
-[![Example of FactBox.](./media/factbox5.png)](./media/factbox5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
