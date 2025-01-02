@@ -3,14 +3,15 @@ title: Simple List and Details form pattern
 description: Learn about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 03/09/2020
+ms.topic: how-to
+ms.date: 01/03/2020
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Simple List and Details form pattern
@@ -31,10 +32,6 @@ Three patterns are described in this document:
 -   **Simple List and Details – List Grid** – This is the basic SL+D pattern. This is the pattern that should be used by default.
 -   **Simple List and Details – Tabular Grid** – This is the SL+D pattern that should be used if the number of fields in the “simple list” part of the form is larger than expected (see the "Pattern changes" section later in this article).
 -   **Simple List and Details – Tree** – This is the SL+D pattern that should be used if the “simple list” part of the form is actually a tree.
-
-## Wireframe
-
-[![Simple list and details wireframe.](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -110,25 +107,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   Simple List and Detail forms must **not** have these elements:
     -   Standard tabs to group fields
 
-## Examples
-### Simple List and Details – List Grid
-
-Form: **PaymTerm** 
-
-[![Simple List and Details – List Grid example.](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
-
-### Simple List and Details – Tabular Grid
-
-Form: **ExchangeRate** 
-
-[![Simple List and Details - Tabular Grid example.](./media/sldGridExample.png)](./media/sldGridExample.png)
-
-### Simple List and Details – Tree
-
-Form: **CaseCategorySetup** 
-
-[![Simple List and Details – Tabular Grid example.](./media/sldTreeExample.png)](./media/sldTreeExample.png)
-
 ## Appendix
 ### Frequently asked questions
 
@@ -147,10 +125,6 @@ This section will have answers to frequently asked questions that are related to
     -   Whenever possible, refactor the form to fit the SL&D pattern (as the **Interest** form has done). Otherwise, use custom containers.
 -   **How do we prevent hyperlinks on fields in the UI?**
     -   For some fields, you can **set IgnoreEDTRelation**=**Yes** to prevent hyperlinks in the UI. Regardless (as of Platform update 17), you can set **EnableFormRef**=**No** on an input control to disable a hyperlink.
-
-### AX 2012 content
-
-[![AX 2012 example.](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
