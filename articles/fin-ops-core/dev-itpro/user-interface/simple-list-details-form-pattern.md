@@ -4,7 +4,7 @@ description: Learn about the Simple List and Details form pattern. This pattern 
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 01/03/2020
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
