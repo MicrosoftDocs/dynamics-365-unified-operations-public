@@ -3,14 +3,15 @@ title: Section Related Links subpattern
 description: Learn about the Section Related Links subpattern, including overviews on usage, wireframes, pattern changes, models, UX guidelines, and examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 984d7c6b-cf0a-4056-88f3-c32c92ca3401
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Section Related Links subpattern
@@ -22,9 +23,6 @@ This article provides information about the Section Related Links subpattern. Th
 ## Usage
 
 The Section Related Links subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
-
-## Wireframe
-[![Section Related Links wireframe.](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -50,19 +48,6 @@ Apply Section Related Links to the appropriate tab page in the Operational Works
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. None
 
-## Examples
-Form: **PurchOrderProcessReceiptsWorkspace** (**All workspaces** &gt; **Purchase order receipt and follow-up** (see the **Links** section) 
-
-[![Section Related Links example.](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
