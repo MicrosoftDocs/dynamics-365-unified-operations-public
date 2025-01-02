@@ -49,15 +49,15 @@ This container pattern is used to show actions above a subpattern of data fields
 -   [Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that are enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
 **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines are consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **Toolbar** **guidelines:**
 
--   Toolbar guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
+-   Toolbar guidelines are consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 ## Resources
 ### Typically used by patterns
@@ -72,7 +72,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ### Open issues
 
 -   **Should the ShowMoreLess group be part of the pattern, or should it be its own subpattern?**
-    -   We will treat the **ShowMoreLess** group as a custom container pattern until there is enough demand to justify the addition of a new pattern.
+    -   We treat the **ShowMoreLess** group as a custom container pattern until there's enough demand to justify the addition of a new pattern.
 
 
 
