@@ -18,71 +18,59 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Definition A highly variable dimension is a financial dimension characterized by values that are not reused, either individually or in combination with others. Highly variable dimension issues typically arise 
-when values are used for only days or weeks, while financial dimensions are designed for values that persist over the years. Generating combinations is resource-intensive, and the following two types of highly
-variable dimensions produce numerous combinations: 
+A highly variable dimension is a financial dimension characterized by values that aren't reused, either individually or in combination with others. Highly variable dimension issues typically arise 
+when values are used for only days or weeks, while financial dimensions are designed for values that persist over the years. Generating combinations is resource-intensive. 
+Two types of highly variable dimensions that produce numerous combinations: 
+ - Individually highly variable dimensions - typically appear in only one or a few specific transactions.
+ - Combination highly variable dimensions - limited reusability when combined with others, resulting in excessive permutations. 
 
-Individually highly variable dimensions, These typically appear in only one or a few specific transactions. 
+## Background  
 
-Combination- highly variable dimensions, These exhibit limited reusability when combined with others, resulting in excessive permutations. 
-
-Background  
-
-Highly variable dimensions slow transaction processing due to the additional tracking for account balances due to the loss of aggregation. The Financial dimension framework allows dimensions values to flow from 
-master data through posted transactions. However, it is often misused as a quick way to add fields or data without modifying forms, tables, or processes. The financial dimension model is designed for 
+Highly variable dimensions slow transaction processing due to the additional tracking for account balances due to the loss of aggregation. The financial dimension framework allows dimensions values to flow from 
+master data through posted transactions. However, it's often misused as a quick way to add fields or data without modifying pages, tables, or processes. The financial dimension model is designed for 
 low-variability and high-reuse data patterns, making it unsuitable for high-volume unique values that do not aggregate well. 
 
-Examples of individually highly variable dimensions  
+### Examples of individually highly variable dimensions  
 
 These dimensions lack financial significance and must not be used as financial dimensions: 
 
-Document Numbers: Sales/Purchase Order ID, Receipt/Sales Transaction ID, Check # 
+ - Document numbers: Sales/Purchase order ID, receipt/sales transaction ID and check number
+ - Serial numbers: Item serial number and batch number. 
 
-Serial Numbers: Item Serial #, Batch# 
+These dimensions aren't useful for financial analysis, such as profit and loss statements or trial balances. It must be considered as financial tags and not included as financial dimensions. 
 
-These dimensions are not useful for financial analysis, such as profit and loss statements or trial balances, and must be considered as financial tags, and not included as financial dimensions. 
+Examples that result in highly variable dimensions become problematic if used in combination with others:  
+ - Customer ID
+ - Vendor ID
+ - Project ID
+ - Item ID
+ - Asset ID
+ - Employee ID 
 
-Examples that result in highly variable dimensions certain dimensions will become problematic if used in combination with others. These must be employed cautiously after performance testing: 
+### Explanation  
 
-Customer ID, Vendor ID, Project ID, Item ID, Asset ID, Employee ID 
-
-Explanation  
-
-A highly variable dimension is included in a ledger account but is ineffective for grouping or reporting due to its highly unique values. Such dimensions will inflate the number of unique combinations in a 
-dimension set, making it computationally demanding. For instance, if a highly variable dimension is based on a unique identifier like a Sales Order, it does not permit aggregation, leading to slowdowns and high 
-memory usage that will impact the data storage size and cost as well. When a business uses customers as financial dimensions, regularly adds thousands of new customers, and processes hundreds of thousands of 
-transactions, it will lead to millions of variable dimensions. Including a highly variable dimension, such as a unique identifier with no value reuse, greatly increases combinations and puts a strain on system 
+A highly variable dimension is included in a ledger account but is ineffective for grouping or reporting due to its highly unique values. Such dimensions inflate the number of unique combinations in a 
+dimension set, making it computationally demanding. For instance, if a highly variable dimension is based on a unique identifier like a sales order. It doesn't permit aggregation, leading to slowdowns and high 
+memory usage that impacts the data storage size and cost. When a business uses customers as financial dimensions, regularly adds thousands of new customers, and processes hundreds of thousands of 
+transactions, it leads to millions of variable dimensions. Including a highly variable dimension, such as a unique identifier with no value reuse, greatly increases combinations and puts a strain on system 
 performance. 
 
-Impact on financial processes  
+### Impact on financial processes  
 
-Highly variable dimensions are  significantly impact several financial processes: 
+Highly variable dimensions significantly impact several financial processes: 
+ - Year-end close - During year-end closing, all unique dimension values are processed to create new beginning balances. This includes running **Rebuild balances** to update each dimension. If highly variable dimensions are present, this process creates a significantly high number of combinations, drastically slowing down the system.
+ - Consolidations - Similar to year-end close, consolidations involve creating unique combinations of dimension values. This delays the process if there are numerous highly variable dimensions.
+ - General ledger currency revaluation - The General ledger currency revaluation process creates unique combinations of dimension values. If there are numerous high-volatility dimensions, this significantly slows the process.
+ - Trial balance - In a trial balance report, every unique dimension aggregates into a single line. Hhighly variable dimensions reduce aggregation efficiency and slows down balance updates and report generation.
+ - Entity imports - Importing records with highly variable dimensions results in dimension combinations that aren't reused. This leads to a significantly high number of unique entries, straining system performance and increase the storage data size. 
 
-Year-End Close During year-end closing, all unique dimension values must be processed to create new beginning balances. This includes running a "Rebuild Balances" process to update each dimension. If highly 
-variable dimensions are present, this process will lead to significantly high number of combinations, drastically slowing down the system. 
+### Recommended option 
 
-Consolidations Similar to year-end close, consolidations involve creating unique combinations of dimension values, which will delay the process if there are numerous highly variable dimensions. 
-
-General ledger currency revaluation Like year-end close and consolidations, the GL currency revaluation process creates unique combinations of dimension values. If there are numerous high-volatility dimensions, 
-this will slow down the process significantly. 
-
-Trial Balance In a trial balance report, every unique dimension aggregates into a single line, so highly variable dimensions reduce aggregation efficiency and slow down balance updates and report generation. 
-
-Entity Imports Importing records with highly variable dimensions results in no reuse of dimension combinations, which can lead to significantly high number of unique entries, straining system performance and 
-increase the storage data size. 
-
- 
-
-Recommended alternative option To optimize financial dimensions: 
-
-Align financial dimensions with external reporting and analytics that require aggregation and consistency. 
-
-Use financial tags for detailed internal tracking instead of overloading the financial dimension framework. Financial tags - Finance | Dynamics 365 | Microsoft Learn 
-
-Reserve financial dimensions for high-reuse, low- variability data relevant to external reporting. 
-
-Avoid highly variable dimensions like customer accounts or document numbers, as they create excessive combinations, strain performance, and inflate data storage costs. 
-
-Test potentially volatile dimensions, such as Customer ID or Vendor ID, before implementation to evaluate their impact on performance. 
+To optimize financial dimensions: 
+ - Align financial dimensions with external reporting and analytics that require aggregation and consistency.
+ - Use financial tags for detailed internal tracking instead of overloading the financial dimension framework.
+ - Reserve financial dimensions for high-reuse, low- variability data relevant to external reporting.
+ - Avoid highly variable dimensions like customer accounts or document numbers, as they create excessive combinations, strain performance, and inflate data storage costs.
+ - Test potentially volatile dimensions, such as Customer ID or Vendor ID, before implementation to evaluate their impact on performance. 
 
 By balancing aggregation needs with system efficiency, businesses can optimize financial reporting, analytics, transaction processing, and overall performance. 
