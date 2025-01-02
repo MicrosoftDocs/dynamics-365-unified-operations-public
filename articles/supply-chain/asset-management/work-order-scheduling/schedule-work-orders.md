@@ -4,7 +4,7 @@ description: Learn how to schedule work orders in Asset Management, including a 
 author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
-ms.date: 08/19/2019
+ms.date: 01/02/2025
 ms.custom:
 ms.reviewer: kamaybac 
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
@@ -30,8 +30,8 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 
 4. In the **Schedule work orders** dialog, you can add selections regarding expected start date and service level, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".
 
->[!NOTE]
-    If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Action center, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
+    > [!NOTE]
+    > If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Action center, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
 
 5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and maintenance workers will be shown in the Action center.
 
@@ -39,8 +39,8 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 
 7. When scheduling is completed, an Action center message shows the number of work orders scheduled, and also more detailed information if the **Verbose** toggle button was set to "Yes".
 
->[!NOTE]
->Work orders are scheduled in one cycle per work order, not per work order job. You can also open the **Schedule work orders** dialog directly in **Asset management** > **Periodic** > **Work orders** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** dialog > the **Run in the background** FastTab.
+> [!NOTE]
+> Work orders are scheduled in one cycle per work order, not per work order job. You can also open the **Schedule work orders** dialog directly in **Asset management** > **Periodic** > **Work orders** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** dialog, on the **Run in the background** FastTab.
 
 *Example:* In the figure below, the formula inserted in the **Expected start** field will generate work order scheduling for all work orders with expected start date a week from now and later. This formula may be useful when you run work order scheduling on an ongoing basis, but you want to make sure the work orders scheduled for the next 5-6 days are not rescheduled.
 
@@ -96,8 +96,8 @@ The rating scores relating to calculating which maintenance workers should work 
 | Location  | If your company uses functional locations, maintenance workers get full score if they are located on the functional location related to the asset. If the functional location of the asset has a parent location, maintenance workers on that functional location get 1/2 score. If that location also has a parent, maintenance workers on that location get 1/3 score. If that location also has a parent, maintenance workers on that location get 1/4 score, and so on. If you company uses asset location, which we do not recommend, location, area, and zone are used to calculate location scores. Workers get full score if they are located in the location and area and zone related to the asset. If worker location only matches location and area, the rating score for the maintenance worker is 2/3 of the full score. If maintenance worker location only matches location, the rating score for the maintenance worker is 1/3 of the full score. |
 | Worker's start date  | For every date that the scheduled start date is later than the expected start date, the score is subtracted.  |
 
->[!NOTE]
->If a score is set to "0", that score is not calculated. This is useful if, for example, you do not want to include a responsible worker in your scheduling.
+> [!NOTE]
+> If a score is set to "0", that score is not calculated. This is useful if, for example, you do not want to include a responsible worker in your scheduling.
 
 ## Competencies used in work order scheduling
 
