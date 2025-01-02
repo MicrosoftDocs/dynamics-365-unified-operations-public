@@ -30,6 +30,9 @@ There might be customer or vendor payments on bank statements in the app. This f
 - As of version 10.0.42, if the **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** feature is enabled, a prepayment option and a posting profile option are available when users generate a customer payment journal and a vendor payment journal from the bank reconciliation worksheet. Users can also configure those two options in the setup of reconciliation matching rules.
 - As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
 
+> [!NOTE]
+> Only journal names without approval workflow enabled are supported during cash application in advanced bank reconciliation.
+
 ## Complete cash application on the reconciliation worksheet
 
 To manually complete cash application on the reconciliation worksheet, follow these steps.
@@ -143,4 +146,4 @@ To enter default descriptions for bank reconciliation postings, follow these ste
 2. There is a description type **Bank - reconciliation worksheet** in the list.
 3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 
-![Default descriptions](./media/defaultdescriptions.PNG)]
+![Default descriptions](./media/defaultdescriptions.PNG)
