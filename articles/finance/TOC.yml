@@ -726,8 +726,8 @@
                   href: cash-bank-management/tasks/export-letter-credit.md
                 - name: Import letter of credit
                   href: cash-bank-management/tasks/import-letter-credit.md
-             - name: Letters of guarantee
-               items: 
+            - name: Letters of guarantee
+              items: 
                 - name: Letters of guarantee
                   href: cash-bank-management/letters-of-guarantee.md
                 - name: Letter of guarantee transaction
