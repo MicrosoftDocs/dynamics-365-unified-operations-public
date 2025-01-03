@@ -140,9 +140,9 @@ When you use the IQR method to handle outliers, you must set a **Interquartile r
 - Lower bound = Q1 &minus; (Multiplier &times; IQR​)
 - Upper bound = Q3 &plus; (Multiplier &times; IQR)
 
-A *high* multiplier increases the range within which data points are considered non-outliers. This results in softer boundaries and includes more points, which makes the result less sensitive to variations in the time series.
+A *high* multiplier increases the range within which data points are considered nonoutliers. High multipliers result in softer boundaries and include more points, which makes the result less sensitive to variations in the time series.
 
-A *low* multiplier decreases the range within which data points are considered non-outliers. This results in stricter boundaries and removes more data points, which makes the result more sensitive to variations in the time series.
+A *low* multiplier decreases the range within which data points are considered nonoutliers. Low multipliers result in stricter boundaries and remove more data points, which makes the result more sensitive to variations in the time series.
 
 When you use the IQR method to handle outliers, you must also set a **Correction method**, which affects the way the outliers should be replaced in the data after being removed. The available options are *Median smoothing* and *Mean smoothing*.
 
@@ -156,7 +156,7 @@ STL starts by decomposing the time series into 3 components:
 
 The following diagram shows examples of an original time series, the trend decomposed from the time series, the seasonality spikes found in the time series, and the residuals after removing the trend and seasonality.
 
-:::image type="content" source="media/stl-decomposition.png" alt-text="Diagram that shows 4 plots, an original time series, an upwards trend decomposed from the time series, a plot with spikes representing the seasonality of the time series and the residuals after removing trend and seasonality.":::
+:::image type="content" source="media/stl-decomposition.png" alt-text="Diagram that shows four plots, an original time series, an upwards trend decomposed from the time series, a plot with spikes representing the seasonality of the time series and the residuals after removing trend and seasonality.":::
 
 STL then tries to smooth the outliers using LOESS (locally estimated scatterplot smoothing). LOESS is a generalization of the moving average and polynomial regression, where it tries to fit a graph through scattered data points, thereby smoothing the residuals, as shown in the following diagram.
 
@@ -253,8 +253,6 @@ While both seasonality and cycles involve repeating patterns, there are key diff
 | **Duration** | Short-term and predictable (such as seasonal sales). | Long-term and unpredictable (such as business cycles). |
 | **Cause** | Calendar-based events or natural patterns. | Economic, social, or structural forces. |
 | **Examples** | Summer travel peaks, holiday shopping trends. | Economic recession cycles, stock market booms and busts. |
-
-Specifying the seasonal period hint aids the forecasting algorithm/stl outlier to capture the periodicy in order to capture the patterns and take into account seasonality when forecasting the data or removing outlier.
 
 ### Seasonality hints
 
