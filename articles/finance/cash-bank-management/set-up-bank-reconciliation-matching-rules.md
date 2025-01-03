@@ -29,13 +29,13 @@ On the **Reconciliation matching rules** page, you can select which actions and 
 
 By default, matching rules will match to the first bank document (transaction) that meets the matching rule criteria. If multiple bank documents (transactions) meet the rule criteria, the parameter to require manual matching can be turned on by going to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation > Require manual matching when advanced bank reconciliation matching rules find multiple documents that match on amount**.
 
-The feature **Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules** is enabled by default and adds three additional matching types: 
+If the **Modern bank reconciliation** feature is enabled, additional matching types are available: 
 
 - One to many
 - Many to one
 - Many to many
 
->  [!NOTE] 
+> [!NOTE] 
 > The **BankReconciliationMatchingRuleEntity** data entity to import and export reconciliation matching rules can only be used if the **Modern bank reconciliation** feature is disabled. 
 
 When you select one of these matching types, grouping conditions are available in the reconciliation matching rule setup. Bank statement records and bank transaction records are grouped by the grouping conditions that are defined in this step, and then the remaining matching steps are run.
@@ -51,11 +51,9 @@ When you select one of these matching types, grouping conditions are available i
 
 
 If the **Modern bank reconciliation** feature is enabled, additional reconciliation rules are available for further automation. For more information, see:
+- [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md)
 - [Clear reversal company transactions in advanced bank reconciliation](clear-reverse-comp-trans.md)
 - [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md)
-- [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md)
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
