@@ -3,14 +3,15 @@ title: Workspace Page Filter Group subpattern
 description: Learn about the Workspace Page Filter Group subpattern, including overviews on usage, wireframes, pattern changes, models, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Workspace Page Filter Group subpattern
@@ -22,10 +23,6 @@ This article provides information about the Workspace Page Filter Group subpatte
 ## Usage
 
 The Workspace Page Filter Group subpattern is used as part of the Operational Workspace pattern, specifically when a workspace must expose a single workspace-wide filter on the form.
-
-## Wireframe
-
-[![Wireframe for Workspace Page Filter Group subpattern.](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist in Microsoft Dynamics AX 2012.
@@ -53,19 +50,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   The expectation is that the filter field will be modified multiple times per day by the target user. If the filter field is modified less often or is primarily static, it should be put in a configuration dialog.
 -   If more filter fields are needed, they should be put in a configuration dialog (up to five filter fields).
 
-## Examples
-Form: **ReqCreatePlanWorkspace** (**All workspaces** &gt; **Master Planning**) 
-
-[![workspace Page Filter Group example.](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

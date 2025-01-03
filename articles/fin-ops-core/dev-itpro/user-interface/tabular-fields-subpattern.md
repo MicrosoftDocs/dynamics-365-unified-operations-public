@@ -3,13 +3,14 @@ title: Tabular Fields subpattern
 description: Learn about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Tabular Fields subpattern
@@ -24,14 +25,6 @@ This subpattern is used to show information efficiently in a tabular format. The
 
 -   TabPage control
 -   Group control
-
-## Wireframes
-
-[![Wireframe for Tabular Fields using grid.](./media/tabularfields1.png)](./media/tabularfields1.png)
-
-Structural wireframe
-
-[![Wireframe for Tabular Fields.](./media/tabularfields2.png)](./media/tabularfields2.png)
 
 ## Pattern changes
 In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern. Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern. The most common way to model this pattern was to use groups for columns. However, groups are now used for the rows. The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.
@@ -68,11 +61,6 @@ Apply the Tabular Fields pattern on the top-level group or tab page. Address the
 
 ## UX guidelines
 No manual verification is required.
-
-## Examples
-Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**) 
-
-[![Example of Tabular Fields.](./media/tabularfields3.png)](./media/tabularfields3.png)
 
 ## Resources
 ### Typically used by patterns
