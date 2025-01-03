@@ -3,14 +3,15 @@ title: Task Double form pattern
 description: Learn about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Task Double form pattern
@@ -22,10 +23,6 @@ This article provides information about the Task Double form pattern. This patte
 ## Usage
 
 This type of form has previously been used when you wanted to present parent/child entities in the same form. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
-
-## Wireframe
-
-![Task Double form wireframe.](./media/patterntaskdouble.png)]
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -93,23 +90,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   The first tab on a child tab control should be called **Lines list** or an appropriate variation.
 -   Selection in the parent grid will update content in the child grid.
 
-## Example
-Form: **HRMAbsenceTableHistory** 
-
-[![Task Double example.](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
--   None
-
-### AX 2012 content
-
-[![AX 2012 visual example.](./media/taskdouble3.png)](./media/taskdouble3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
