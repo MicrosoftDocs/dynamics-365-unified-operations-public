@@ -680,10 +680,10 @@
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
           items:
-            - name: Petty cash
-              href: cash-bank-management/Petty-cash.md
             - name: Cash and bank management home page
               href: cash-bank-management/cash-bank-management.md
+            - name: Petty cash
+              href: cash-bank-management/Petty-cash.md
             - name: Cash flow forecasting
               href: cash-bank-management/cash-flow-forecasting.md
             - name: Troubleshoot Cash flow forecasting setup
@@ -706,6 +706,14 @@
               href: cash-bank-management/settlement-overview.md
             - name: Settlement overview for centralized payments
               href: cash-bank-management/settlement-overview-centralized-payments.md
+            - name: Prepayment invoices vs. prepayments
+              href: accounts-payable/prepayments-invoices-vs-prepayments.md
+            - name: Handling cash discounts for overpayments
+              href: cash-bank-management/cash-discount-handling-overpayments.md
+            - name: Set up centralized payments
+              href: cash-bank-management/set-up-centralized-payments.md
+            - name: Automatic settlement and prioritization
+              href: accounts-receivable/automatic-settlement-prioritization.md
             - name: Letters of credit
               items:
                 - name: Letters of credit and import collections
@@ -718,64 +726,62 @@
                   href: cash-bank-management/tasks/export-letter-credit.md
                 - name: Import letter of credit
                   href: cash-bank-management/tasks/import-letter-credit.md
-            - name: Letters of guarantee
-              href: cash-bank-management/letters-of-guarantee.md
-            - name: Letter of guarantee transaction
-              href: cash-bank-management/tasks/letter-guarantee-transaction.md
-            - name: Create a bank facility agreement for the letter of guarantee
-              href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-            - name: Set up bank facilities and posting profiles for letters of guarantee
-              href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-            - name: Postdated checks
-              href: cash-bank-management/postdated-checks.md
-            - name: Set up postdated checks
-              href: cash-bank-management/tasks/set-up-postdated-checks.md
-            - name: Register and post a postdated check for a customer
-              href: cash-bank-management/tasks/register-post-postdated-check-customer.md
-            - name: Register and post a postdated check for a vendor
-              href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
-            - name: Settle a postdated check from a customer
-              href: cash-bank-management/tasks/settle-postdated-check-customer.md
-            - name: Settle a postdated check for a vendor
-              href: cash-bank-management/tasks/settle-postdated-check-vendor.md
-            - name: Check number validation
-              href: cash-bank-management/check-number-validation.md
-            - name: Create checks that have Blank status
-              href: cash-bank-management/create-check-with-blank-status.md
-            - name: Prepayment invoices vs. prepayments
-              href: accounts-payable/prepayments-invoices-vs-prepayments.md
-            - name: Handling cash discounts for overpayments
-              href: cash-bank-management/cash-discount-handling-overpayments.md
-            - name: Set up centralized payments
-              href: cash-bank-management/set-up-centralized-payments.md
-            - name: Automatic settlement and prioritization
-              href: accounts-receivable/automatic-settlement-prioritization.md
-            - name: Reconcile a bank account
-              href: cash-bank-management/reconcile-bank-account.md
-            - name: Advanced bank reconciliation
+             - name: Letters of guarantee
+               items: 
+                - name: Letters of guarantee
+                  href: cash-bank-management/letters-of-guarantee.md
+                - name: Letter of guarantee transaction
+                  href: cash-bank-management/tasks/letter-guarantee-transaction.md
+                - name: Create a bank facility agreement for the letter of guarantee
+                  href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+                - name: Set up bank facilities and posting profiles for letters of guarantee
+                  href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
+            - name: Checks
               items:
-                - name: Advanced bank reconciliation overview
-                  href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Advanced bank reconciliation setup process
-                  href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Set up bank reconciliation matching rules
-                  href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-                - name: Set up advanced bank reconciliation import process using Electronic reporting
-                  href: accounts-payable/import-bai2-er.md
-                - name: Reconcile bank statements by using advanced bank reconciliation
-                  href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Clear reversal bank statements
-                  href: cash-bank-management/clear-reverse-bank-stmt-trx.md
-                - name: Clear reversal company transactions
-                  href: cash-bank-management/clear-reverse-comp-trans.md
-                - name: Generate vouchers in the reconcilation worksheet
-                  href: cash-bank-management/vouchers-adv-bank-rec.md
-                - name: Apply cash in the reconcilation worksheet
-                  href: cash-bank-management/apply-cash-adv-bank-rec.md
-                - name: Clear bridging payments using advanced bank reconciliation
-                  href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
-                - name: Update the bank journal composite entity
-                  href: dev-itpro/upgrade-bank-journal-composite-entity.md
+                - name: Check number validation
+                  href: cash-bank-management/check-number-validation.md
+                - name: Create checks that have Blank status
+                  href: cash-bank-management/create-check-with-blank-status.md
+                - name: Postdated checks
+                  href: cash-bank-management/postdated-checks.md
+                - name: Set up postdated checks
+                  href: cash-bank-management/tasks/set-up-postdated-checks.md
+                - name: Register and post a postdated check for a customer
+                  href: cash-bank-management/tasks/register-post-postdated-check-customer.md
+                - name: Register and post a postdated check for a vendor
+                  href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
+                - name: Settle a postdated check from a customer
+                  href: cash-bank-management/tasks/settle-postdated-check-customer.md
+                - name: Settle a postdated check for a vendor
+                  href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+            - name: Bank account reconciliation
+              items:
+                - name: Reconcile a bank account - Simple bank account reconciliation
+                  href: cash-bank-management/reconcile-bank-account.md
+                - name: Advanced bank reconciliation
+                  items:
+                    - name: Advanced bank reconciliation overview
+                      href: cash-bank-management/advanced-bank-reconciliation-overview.md
+                    - name: Advanced bank reconciliation setup process
+                      href: cash-bank-management/configure-advanced-bank-reconciliation.md
+                    - name: Set up bank reconciliation matching rules
+                      href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+                    - name: Set up advanced bank reconciliation import process using Electronic reporting
+                      href: accounts-payable/import-bai2-er.md
+                    - name: Reconcile bank statements by using advanced bank reconciliation
+                      href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
+                    - name: Clear reversal bank statements
+                      href: cash-bank-management/clear-reverse-bank-stmt-trx.md
+                    - name: Clear reversal company transactions
+                      href: cash-bank-management/clear-reverse-comp-trans.md
+                    - name: Generate vouchers in the reconcilation worksheet
+                      href: cash-bank-management/vouchers-adv-bank-rec.md
+                    - name: Apply cash in the reconcilation worksheet
+                      href: cash-bank-management/apply-cash-adv-bank-rec.md
+                    - name: Clear bridging payments using advanced bank reconciliation
+                      href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
+                    - name: Update the bank journal composite entity
+                      href: dev-itpro/upgrade-bank-journal-composite-entity.md
         - name: Cost accounting
           items:
             - name: Cost accounting home page
