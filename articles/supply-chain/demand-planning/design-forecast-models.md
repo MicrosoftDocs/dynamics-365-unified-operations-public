@@ -93,23 +93,86 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 
 *Handle outliers* steps identify and compensate for outlier data points in the input. These data points are considered anomalies that should be ignored or smoothed out to prevent them from throwing off the forecast calculation.
 
+#### Handle outlier step settings
+
 *Handle outliers* steps have the following settings:
 
 - **Step name** – The specific name of the step. This name is also shown in the flowchart.
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
-- **Handle outliers** – Select one of the following options:
+- **Handle outliers** – Select one of the following options. Learn more about each of these options in [How handle outliers options work](#handle-outlier-options).
 
-    - *Interquartile range (IQR)* – <!-- KFM: Improved description needed. -->
-    - *Seasonal and trend decomposition using loess (STL)* – <!-- KFM: Improved description needed. -->
+    - *Interquartile range (IQR)*
+    - *Seasonal and trend decomposition using Loess (STL)*
 
-- **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
-- **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. <!-- KFM: Improved description needed. -->
-- **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. <!-- KFM: Improved description needed. -->
+- **Interquartile range multiplier** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects the number data points removed as outliers. Learn more about this setting in [How handle outliers options work](#handle-outlier-options).
+
+- **Correction methods** – This field is available only when the **Handle outliers** field is set to *IQR*. It affects how outliers are replaced in the data after being removed. The available options are *Median smoothing* and *Mean smoothing*.
+- **Seasonality hint** – This field is available only when the **Handle outliers** field is set to *STL*. It influences the size of the window used for the LOESS smoother when estimating the seasonal component. Learn more about this setting in [Seasonality in forecasts](#seasonality).
+
+#### How to choose the method for handling outliers
+
+The following table provides examples that will help you choose which method to use to handle outliers in your time series data based on your scenario.
+
+| Scenario                             | IQR             | STL             |
+|--------------------------------------|-----------------|-----------------|
+| Data with seasonal or trend patterns | Not recommended | Recommended     |
+| Robust handling of outliers          | Recommended     | Not recommended |
+| Sensitivity to extreme values        | Recommended     | Recommended     |
+
+<a name="handle-outlier-options"></a>
+
+#### How handle outliers options work
+
+##### Interquartile range (IQR)
+
+The IQR is the range between the first quartile (Q1) and the third quartile (Q3). It measures the spread of the middle 50% of the data. Any data outside of the interquartile range is identified as outlier that should be smoothed later on. It applies the following formula to identify outliers:
+
+*IQR = Q3 − Q1*
+
+Where:
+
+- *Q1* – Represents the 25th percentile (the value below which 25% of the data lies).
+- *Q3* – Represents the 75th percentile (the value below which 75% of the data lies).
+
+When you use the IQR method to handle outliers, you must set a **Interquartile range multiplier**. The multiplier affects how many data points are removed as outliers. It's calculated as follows:
+
+- Lower bound = Q1 &minus; (Multiplier &times; IQR​)
+- Upper bound = Q3 &plus; (Multiplier &times; IQR)
+
+A *high* multiplier increases the range within which data points are considered nonoutliers. High multipliers result in softer boundaries and include more points, which makes the result less sensitive to variations in the time series.
+
+A *low* multiplier decreases the range within which data points are considered nonoutliers. Low multipliers result in stricter boundaries and remove more data points, which makes the result more sensitive to variations in the time series.
+
+When you use the IQR method to handle outliers, you must also set a **Correction method**, which affects the way the outliers should be replaced in the data after being removed. The available options are *Median smoothing* and *Mean smoothing*.
+
+##### Seasonal and trend decomposition using LOESS (STL)
+
+STL starts by decomposing the time series into 3 components:
+
+- Trend (overall trend in the data)
+- Seasonality (regular and predictable patterns driven by factors such as weather, holidays, or economic cycles)
+- Residuals (the time series after removing trend and seasonality)
+
+The following diagram shows examples of an original time series, the trend decomposed from the time series, the seasonality spikes found in the time series, and the residuals after removing the trend and seasonality.
+
+:::image type="content" source="media/stl-decomposition.png" alt-text="Diagram that shows four plots, an original time series, an upwards trend decomposed from the time series, a plot with spikes representing the seasonality of the time series and the residuals after removing trend and seasonality.":::
+
+STL then tries to smooth the outliers using LOESS (locally estimated scatterplot smoothing). LOESS is a generalization of the moving average and polynomial regression, where it tries to fit a graph through scattered data points, thereby smoothing the residuals, as shown in the following diagram.
+
+:::image type="content" source="media/stl-fitting-plot.png" alt-text="Diagram that shows scattered plot of residuals and a graph that smooths the residuals by attempting to fit it between the dots.":::
+
+After calculating the mean and standard deviation, STL uses them to get rid of the outliers and mitigate anomalies.
+
+Finally, STL reintroduces the seasonality and trend to the newly smoothed residual.
+
+When you use the STL method to handle outliers, you must also set a **Seasonality hint**, which influences the size of the time period (in time buckets) used when estimating the seasonal component. It helps divide the data into segments, ensuring the algorithm correctly extracts repeating patterns. For example, if you see a weekly seasonality pattern (such as where most customers shop on Saturdays) and are using buckets in days, then enter *7* here. Learn more in [Seasonality in forecasts](#seasonality).
 
 ### Forecast steps
 
 *Forecast* steps apply a selected forecast algorithm to the input time series to create a forecast time series.
+
+#### Forecast step settings
 
 *Forecast* steps have the following settings:
 
@@ -117,25 +180,12 @@ When you add a *Signal* step, the system automatically creates a parallel branch
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. For more information about each of the available algorithms, see [Demand forecasting algorithms](forecast-algorithm-types.md). Select one of the following algorithms:
-
     - *Best fit model*
     - *ARIMA* – Autoregressive integrated moving average
     - *ETS* – Error, trend, seasonality
     - *Prophet* – Facebook Prophet
 
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule (such as a weekly pattern where most customers shop on Saturdays). If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
-
-#### Autodetect seasonality patterns (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
-
-If you're using the ARIMA algorithm, then the **Seasonality hint (in periods of time buckets)** is replaced by the **Select seasonality detection setting (preview)** setting, which provides the following options:
-
-- **Auto detection** – Select this option to enable an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations. Seasonality patterns typically vary for different products and different locations, so auto detection often works better than using forecast models that try to apply the same pattern everywhere.
-- **Detection using hint** – Select this option to use the value that you enter in the **Seasonality hint (in periods of time buckets)** field to help identify seasonality patterns. This option works best when you know the seasonality pattern in advance. For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern (such as where most customers shop on Saturdays) and are using buckets in days, then enter *7* here. Learn more in [Seasonality in forecasts](#seasonality).
 
 ### Forecast with signals (preview)
 
@@ -152,7 +202,7 @@ You can use this type of step only if your forecast model has at least two paral
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. In the current version, only the *XGBoost* algorithm is available.
-- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule (such as a weekly pattern where most customers shop on Saturdays). If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern and are using buckets in days, then enter *7* here. If your data has no seasonality, then enter *1* here. <!-- KFM: Check with Mostafa. -->
+- **Seasonality hint (in periods of time buckets)** – Seasonality refers to a pattern of demand that fluctuates according to a regular, recurring schedule. If your data has such a pattern, then enter the frequency here (in time buckets). For example, if you see a weekly seasonality pattern (such as where most customers shop on Saturdays) and are using buckets in days, then enter *7* here. Learn more in [Seasonality in forecasts](#seasonality).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -184,3 +234,55 @@ For more information about phase in/out functionality, including details about h
 *Save* steps save the result of the forecast model as a new or updated series. All forecast models must end with a single *Save* step.
 
 The forecast time series will be saved according to the settings that you configure each time that you run a forecast job as described in [Work with forecast profiles](forecast-profiles.md).
+
+<a name="seasonality"></a>
+
+## Seasonality in forecasts
+
+Seasonality refers to regular and predictable patterns in a time series that occur at fixed intervals due to recurring events or influences. These patterns are often driven by factors such as weather, holidays, or economic cycles. Examples include increased retail sales every December due to holiday shopping or higher electricity demand during summer months due to air conditioning.
+
+Demand planning identifies and compensates for seasonality patters both when handling outliers (in a handle outliers step set to use STL) and when generating a forecast (in any forecast step).
+
+### How seasonality is different from cycles
+
+While both seasonality and cycles involve repeating patterns, there are key differences, as summarized in the following table.
+
+| Aspect | Seasonality | Cycles |
+|--|--|--|
+| **Frequency** | Fixed, regular intervals (such as daily, weekly, or yearly). | Variable, often irregular, and influenced by external factors. |
+| **Duration** | Short-term and predictable (such as seasonal sales). | Long-term and unpredictable (such as business cycles). |
+| **Cause** | Calendar-based events or natural patterns. | Economic, social, or structural forces. |
+| **Examples** | Summer travel peaks, holiday shopping trends. | Economic recession cycles, stock market booms and busts. |
+
+### Seasonality hints
+
+Some forecast and outlier-detection algorithms provide a **Seasonality hint** setting, which influences the size of the time period (in time buckets) used when identifying seasonality patterns. It helps divide the data into segments, ensuring the algorithm correctly extracts repeating patterns. For example, if you see a weekly seasonality pattern (such as where most customers shop on Saturdays) and are using buckets in days, then enter *7* as the **Seasonality hint**.
+
+- A well-defined seasonal period captures the true periodicity of the data. It allows the algorithm to successfully isolate the seasonality, which makes the trend and residuals more interpretable
+- An incorrect seasonal period results in poor seasonal extraction, leading to inaccurate trend and residual components.
+
+If you use a seasonal period that's too short (shorter than the actual cycle), then you risk encountering the following issues:
+
+- **Missed patterns** – Important parts of the seasonal pattern could be excluded, leading to incomplete seasonality extraction.
+- **Trend contamination** – Some seasonal variations could be mistaken for the trend component, distorting the trend estimation.
+- **Residual issues** – Residuals might show unexplained periodicity, indicating that the algorithm failed to capture seasonality properly.
+- **Example** – Using a seasonal period of *6 months* for yearly retail sales data can result in only part of the yearly cycle being captured, missing critical holiday season peaks.
+
+If you use a seasonal period that's too long (longer than the actual cycle), then you risk encountering the following issues:
+
+- **Overfitting** – Noise or random fluctuations could be falsely interpreted as seasonality.
+- **Distorted decomposition** – Artificially long seasonal cycles might obscure the true trend or residual components.
+- **Increased complexity** – The model may become unnecessarily complex, making it harder to interpret and validate.
+- **Example** – Using a seasonal period of *24 months* for data with an annual cycle results in overfitting, where small irregularities in the data are treated as seasonal patterns.
+
+### Autodetect seasonality patterns (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+If you're using the ARIMA forecast algorithm, then the **Seasonality hint (in periods of time buckets)** setting is replaced by the **Select seasonality detection setting (preview)** setting, which provides the following options:
+
+- **Auto detection** – Select this option to enable an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations. Seasonality patterns typically vary for different products and different locations, so auto detection often works better than applying the same pattern everywhere.
+- **Detection using hint** – Select this option to use the value that you enter in the **Seasonality hint (in periods of time buckets)** field to help identify seasonality patterns. This option works best when you know the seasonality pattern in advance (such as where most customers shop on Saturdays). For example, if you know you have a strong weekly seasonality pattern, and are using buckets in days, then choose this option and enter *7* here. You can learn more about this setting in the previous section.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]

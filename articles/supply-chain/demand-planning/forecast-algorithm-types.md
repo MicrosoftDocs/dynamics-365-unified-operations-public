@@ -1,6 +1,6 @@
 ---
-title: Design forecast models
-description: Learn about forecast models, which let you arrange and configure steps to define the forecast that is made by a forecast profile.
+title: Demand forecasting algorithms
+description: Learn how each of the available forecasting algorithms work in Demand planning. This article describes how each algorithm works and its suitability for different types of historical demand data.
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
@@ -21,9 +21,7 @@ Demand planning includes four popular demand forecasting algorithms: *auto-ARIMA
 - Prophet works best with complex, real-world data.
 - eXtreme Gradient Boosting (XGBoost) is able to generate a forecast based on two inputs.
 
-Demand planning also provides both a *best fit model* algorithm (which automatically selects the best of the available algorithms for each product and dimension combination) and the ability to develop and use your own custom models.
-
-By understanding these algorithms and their strengths, you can make informed decisions to optimize your supply chain and meet customer demand.
+Demand planning also provides both a *best fit model* algorithm (which automatically selects the best of the available algorithms for each product and dimension combination) and the ability to develop and use your own custom algorithms.
 
 In Demand planning, you choose a forecast algorithm when placing and configuring a *Forecast* step or *Forecast with signals* step in a [forecast model](design-forecast-models.md), which you then use in a [forecast profile](forecast-profiles.md) to generate a forecast.
 
