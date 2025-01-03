@@ -1,10 +1,10 @@
 ---
 title: Budget analysis report
 description: Learn about the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity.
-author: v-kiarnd
-ms.author: twheeloc
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 07/08/2019
+ms.date: 01/03/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -23,7 +23,7 @@ You can use the **Budget analysis** report to generate a summarized report that 
 
 The report can be sorted by fund and then account number. Within each fund, the report shows subtotals, based on the financial dimension set that you selected to group by. When you use the navigation pane to review activity, the grouping determines how activity is shown there.
 
-The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a Profit and Loss account type won't be included in the report. The report also doesn't include net totals (net totals are calculated as revenue minus expenses).
+The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a **Profit and Loss** account type won't be included in the report. The report also doesn't include net totals (net totals are calculated as revenue minus expenses).
 
 To view more information about an account, select the account name or number to open the **Budget analysis inquiry** page. You can view all the transactions that contribute to the amount on the report. To view the transactions, you can show drill-down report links on the report. Select a link to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances. The drill-down reports can optionally include pending transactions.
 
