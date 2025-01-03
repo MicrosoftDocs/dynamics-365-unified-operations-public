@@ -29,6 +29,9 @@ You can apply updates to an on-premises environment either during deployment or 
 
 While an on-premises environment is being deployed, you can select to deploy a custom package in the **Advanced** settings. For more information about how to apply customizations or application X++ updates, see [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
+> [!NOTE]
+> Merged packages, which include both platform and custom code, are restricted to use during quality updates only. They cannot be utilized when updating to a newer service update. For instance, if you are updating from version 10.0.41 to 10.0.42, you must first apply the service update before using a merged package.
+
 To apply updates to an on-premises environment after it's deployed, follow these steps.
 
 1. In Lifecycle Services, open the **Environment details** page for the environment.
