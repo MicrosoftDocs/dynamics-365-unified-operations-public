@@ -4,7 +4,7 @@
 title: Courses overview
 description: This article explains how Human Resources administrators and managers can use the courses features to maintain information about courses that are available to workers.
 author: twheeloc
-ms.date: 05/08/2024
+ms.date: 01/03/2025
 ms.topic: article
 # optional metadata
 
@@ -44,6 +44,10 @@ After the **Course enhancements** feature is enabled in Feature management, the 
 - A course link is required.
 - **Employee self service** will display an employee overview in **Courses**. User can view courses that are overdue, due soon, and assigned.
 - Workers can complete virtual courses and self-attest to them.
+- After participants complete the virtual course, their skills and certificates are recorded as worker skills. These appear on the worker's skill page after the admin closes the course.
+>[!Note:]
+> If you don't want to capture skills upon completion of a virtual course, disable the **Enable skill mapping after completing the virtual course** feature.
+
 
 ## Set up in-person courses
 
