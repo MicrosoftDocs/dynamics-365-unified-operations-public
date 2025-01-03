@@ -2,9 +2,8 @@
 title: Checkout module
 description: This article describes how to add a checkout module to a page and set the required properties in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2024
+ms.date: 01/03/2025
 ms.topic: how-to
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
