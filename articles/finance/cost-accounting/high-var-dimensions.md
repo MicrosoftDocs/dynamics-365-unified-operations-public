@@ -1,6 +1,6 @@
 ---
 title: Highly variable dimensions
-description: Learn about highly variable dimensions. These financial dimension are characterized by values that aren't reused, either individually or in combination with other values.
+description: Learn about highly variable dimensions. These financial dimensions are characterized by values that aren't reused, either individually or in combination with other values.
 author: twheeloc
 ms.author: moaamer
 ms.topic: how-to
