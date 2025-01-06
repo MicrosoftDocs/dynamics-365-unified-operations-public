@@ -1,10 +1,10 @@
 ---
 title: Reconcile bank statements by using advanced bank reconciliation
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance.
-author: EricWangChen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 07/20/2024
+ms.date: 01/06/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -21,11 +21,11 @@ ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains the reconciliation process.
 
 > [!NOTE] 
-> Some of the functionalities explained below apply only when **Modern bank reconciliation** feature is turned off. If a **Modern bank reconciliation** feature is enabled, the process flow slighly differs and additional functionalities are available:
-> - Bank statement validation and confirmation (please see more details below).
-> - Bank reconciliation matching rule improvements explained in [Cash application in advanced bank reconciliation](../finance/cash-bank-management/apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](../finance/cash-bank-management/clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](../finance/cash-bank-management/clear-reverse-comp-trans.md), [Generate a voucher in advanced bank reconciliation](../finance/cash-bank-management/vouchers-adv-bank-rec.md).
-> - Option for customer and vendor journal posting directly from bank reconciliation worksheet (please see more details below).
-> - Option to generate general ledger vouchers directly from bank reconciliation worksheet [Generate a voucher in advanced bank reconciliation](../finance/cash-bank-management/vouchers-adv-bank-rec.md).
+> Some of the functionality explained below only applies when the **Modern bank reconciliation** feature is turned off. If the **Modern bank reconciliation** feature is enabled, the process flow is different and additional functionalities are available:
+> - Bank statement validation and confirmation.  
+> - Bank reconciliation matching rule improvements. For more information, see [Cash application in advanced bank reconciliation](/apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](/clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](/clear-reverse-comp-trans.md), and [Generate a voucher in advanced bank reconciliation](/vouchers-adv-bank-rec.md).
+> - Customer and vendor journal posting directly from bank reconciliation worksheet.
+> - Generate general ledger vouchers directly from bank reconciliation worksheet.
 
 ## Import an electronic bank statement by using Electronic reporting
 
