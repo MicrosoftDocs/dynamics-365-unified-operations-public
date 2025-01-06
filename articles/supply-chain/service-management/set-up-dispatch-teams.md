@@ -31,6 +31,6 @@ This article describes how to create a dispatch team. After you create a dispatc
 5. Optional: In the **Description** field, enter a brief description for this dispatch team.
 
 > [!NOTE]
-> You can assign a worker to this dispatch team on the **Worker** page. For more information about how to assign a worker to a dispatch team, see [Dispatch workers (page)](/dynamicsax-2012//dispatch-workers-page).
+> You can assign a worker to this dispatch team on the **Worker** page. For more information about how to assign a worker to a dispatch team, see [Dispatch workers (page)](/dynamicsax-2012/dispatch-workers-page).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

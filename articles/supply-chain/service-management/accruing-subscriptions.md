@@ -28,7 +28,7 @@ If you credit invoiced subscription amounts, you can use two methods to reverse 
 
 - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-Learn more in [Subscription parameters (page)](/dynamicsax-2012//subscription-parameters-page).
+Learn more in [Subscription parameters (page)](/dynamicsax-2012/subscription-parameters-page).
 
 ## Setup requirements
 
