@@ -69,7 +69,7 @@ To define translations for the ID or symbol and the description for a unit of me
 1. In the **Text** field, enter the translation of the unit ID or symbol in the selected language.
 1. On the Action Pane, select **Save**.
 1. Close the page.
-1. On the **Action Pane**, select **Translated unit descriptions**.
+1. On the Action Pane, select **Translated unit descriptions**.
 
     The **Translated unit descriptions** page appears. You use this page to define language-specific descriptions for the selected unit.
 

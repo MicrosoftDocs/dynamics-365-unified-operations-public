@@ -42,11 +42,10 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 
 ## Look up the purchase agreement
 
-1. On the **Action Pane**, select **General**.
+1. On the Action Pane, select **General**.
 1. Select **Purchase agreement**.
 1. Close the page.
 1. Close the page.
 
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

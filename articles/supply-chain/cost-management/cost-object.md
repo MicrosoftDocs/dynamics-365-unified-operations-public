@@ -55,9 +55,9 @@ The following table shows what is a cost object and what is an inventory object.
 
 [Product dimension group](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Storage dimension group](/dynamicsax-2012//storage-dimension-groups-form)
+[Storage dimension group](/dynamicsax-2012/storage-dimension-groups-form)
 
-[Tracking dimension group](/dynamicsax-2012//tracking-dimension-groups-form)
+[Tracking dimension group](/dynamicsax-2012/tracking-dimension-groups-form)
 
 [What's new or changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 

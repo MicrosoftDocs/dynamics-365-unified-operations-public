@@ -1,8 +1,8 @@
 ---
 title: Template BOMs  
 description: A template bill of materials (BOM) provides a standardized list of components for service objects that are serviced regularly. 
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMATemplateBOMTable
 ms.topic: how-to
@@ -68,8 +68,8 @@ To use template BOMs, you must set up two number sequences. Set up one number se
 ## Set up number sequences
 
 1. On the **Number sequences** list page, create number sequences for template BOMs and the BOM history line number.
-1. Select **Service management** \> **Setup** \> **Service management parameters**.
-1. Select **Number sequences**, and then select a number sequence code for the number sequence references that you created in the **Number sequences** page.
+1. Go to **Service management** \> **Setup** \> **Service management parameters**.
+1. Select **Number sequences**, and then select a number sequence code for the number sequence references that you created on the **Number sequences** page.
 1. Close the page to save your changes.
 
 > [!NOTE]
