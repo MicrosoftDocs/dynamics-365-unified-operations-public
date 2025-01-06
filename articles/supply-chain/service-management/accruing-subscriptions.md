@@ -25,10 +25,9 @@ You can accrue and reverse accrued revenue.
 If you credit invoiced subscription amounts, you can use two methods to reverse the accrual amounts:
 
 - You can reverse each accrued revenue transaction individually before you create the credit note proposal for the transaction. This is the manual method. (manual)
-
 - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-Learn more in [Subscription parameters (page)](/dynamicsax-2012/subscription-parameters-page).
+Learn more in [Subscription parameters (form)](/dynamicsax-2012/subscription-parameters-form).
 
 ## Setup requirements
 
