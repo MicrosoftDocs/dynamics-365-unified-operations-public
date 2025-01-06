@@ -56,10 +56,11 @@ To run the **Budget control data maintenance** tool, follow these steps.
 
     The tool finds all documents that relieve each other. For example, you specify document PO00123, which relieves document PR005678. In this case, both documents appear in the grid, and they are processed as a group.
 
-1. To process the documents that are found, select **Process document**.
-1. Complete the remaining dialog boxes.
+1. To process the documents that are found, select **Process documents**.
 
-![Screenshot that shows the Budget control data maintenance tool.](./media/budget-control-data-maintenance.png)
+    ![Screenshot that shows the Process documents button in the Budget control data maintenance tool.](./media/budget-control-data-maintenance.png)
+
+1. Complete the remaining dialog boxes.
 
 ### Budget control dimension values provider
 
