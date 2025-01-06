@@ -59,7 +59,7 @@ Highly variable dimensions significantly affect several financial processes:
 - **Consolidation** – Like year-end close, consolidation involves the creation of unique combinations of dimension values. This process is delayed if there are numerous highly variable dimensions.
 - **General ledger currency revaluation** – The General ledger currency revaluation process creates unique combinations of dimension values. If there are numerous high-volatility dimensions, the process is slowed down.
 - **Trial balance** – On a trial balance report, every unique dimension is aggregated onto a single line. Highly variable dimensions reduce aggregation efficiency and slow down balance updates and report generation.
-- **Entity import** – The import of records that have highly variable dimensions leads to dimension combinations that aren't reused. The results are many unique entries, which strain system performance and increase the data storage size.
+- **Entity import** – Imports of records that have highly variable dimensions lead to dimension combinations that aren't reused. The results are many unique entries, which strain system performance and increase the data storage size.
 
 ### Recommendations
 
