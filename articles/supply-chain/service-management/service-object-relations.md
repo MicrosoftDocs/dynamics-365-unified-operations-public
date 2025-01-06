@@ -1,8 +1,8 @@
 ---
 title: Service object relations 
 description: Learn how you can create service object relations between a service object and a service agreement or service order, including an example. 
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 02/21/2018
 ms.custom:
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: SMAServiceObjectRelation
 ---
 
-# Service object relations 
+# Service object relations
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,14 +26,14 @@ the service agreement or service order.
 You can also specify a template BOM for the object relation. The template BOM is
 a bill of materials for the object on which you perform service. If you replace
 a component part of the service object during a service visit, you can register
-this change in the service BOM by using the Service objects form.
+this change in the service BOM by using the Service objects page.
 
 ## Example
 
 You create a service agreement for servicing two elevators at a customer site.
 The service agreement has the identifier ID SAL-001.
 
-The elevators are set up in the Service objects form as objects, EL-S/1000 and
+The elevators are set up on the Service objects page as objects, EL-S/1000 and
 EL-L/1000.
 
 You attach the service objects, EL-S/1000 and EL-L/1000, to the service
@@ -67,16 +67,14 @@ the service object relation that you set up for the current service agreement.
 Access the BOM Designer by using a service object relation
 
 1. Service agreements
-2. Double-click a service agreement, or click Service agreement to create a service agreement.
-3. Click the Setup tab.
-4. Click Service objects to attach a template BOM to the service agreement.
-5. In the Service objects form, click Designer to open the Designer form to modify the template BOM.
+2. Open a service agreement, or select Service agreement to create a service agreement.
+3. Select the Setup tab.
+4. Select Service objects to attach a template BOM to the service agreement.
+5. On the Service objects page, select Designer to open the Designer page to modify the template BOM.
 
 ## Automatically created service orders
 
 If you automatically create service orders for a service agreement, the service
 object relations in the agreement are also created in the service orders.
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

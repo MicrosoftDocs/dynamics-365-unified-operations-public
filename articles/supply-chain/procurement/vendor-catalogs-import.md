@@ -49,7 +49,7 @@ The catalog import file template is an XSD file that you use to create a CMR fil
 
 1. Go to **Procurement and sourcing** \> **Catalogs** \> **Vendor catalogs** and open the catalog that you want to work with.
 
-2. Download a current catalog import template (XSD file). On the **Update catalog** page, on the **Action Pane**, on the **Catalogs** tab, in the **Related information** group, select **Generate catalog template** and select **Procurement category**.
+2. Download a current catalog import template (XSD file). On the **Update catalog** page, on the Action Pane, on the **Catalogs** tab, in the **Related information** group, select **Generate catalog template** and select **Procurement category**.
 
     - With the **Procurement category** option, you can generate a catalog template that includes the procurement categories in which the vendor is authorized to provide products.
 
