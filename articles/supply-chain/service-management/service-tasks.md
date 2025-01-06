@@ -1,8 +1,8 @@
 ---
 title: Service tasks overview
 description: Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information. 
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceTask
 ms.topic: how-to
@@ -18,7 +18,7 @@ ms.custom:
 
 Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information.
 
-You create service tasks in the **Service tasks** page, and you associate service tasks with a specific service agreement or service order by creating service task relations. Every time that you create a service task relation, you can create the following:
+You create service tasks on the **Service tasks** page, and you associate service tasks with a specific service agreement or service order by creating service task relations. Every time that you create a service task relation, you can create the following:
 
 - Internal notes for the task, such as detailed technical requests for the task that are important for the technician to know.
 
