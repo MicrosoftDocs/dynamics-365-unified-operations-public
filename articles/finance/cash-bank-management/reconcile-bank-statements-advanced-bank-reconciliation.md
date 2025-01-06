@@ -23,7 +23,7 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 > [!NOTE] 
 > Some of the functionality explained below only applies when the **Modern bank reconciliation** feature is turned off. If the **Modern bank reconciliation** feature is enabled, the process flow is different and additional functionalities are available:
 > - Bank statement validation and confirmation.  
-> - Bank reconciliation matching rule improvements. For more information, see [Cash application in advanced bank reconciliation](/apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](/clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](/clear-reverse-comp-trans.md), and [Generate a voucher in advanced bank reconciliation](/vouchers-adv-bank-rec.md).
+> - Bank reconciliation matching rule improvements. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), and [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
 > - Customer and vendor journal posting directly from bank reconciliation worksheet.
 > - Generate general ledger vouchers directly from bank reconciliation worksheet.
 
@@ -150,7 +150,7 @@ Bank statement transactions that you marked as **New** on the reconciliation wor
 
 To view the voucher of a new transaction on a **Bank statement** page, turn on the **Display vouchers in bank statement** feature.
 
-If the feature **Modern bank reconciliation** is enabled, to generate general ledger vouchers directly from the reconciliation worksheet, please refer to [Generate a voucher in advanced bank reconciliation](../finance/cash-bank-management/vouchers-adv-bank-rec.md).
+If the **Modern bank reconciliation** feature is enabled, users can generate general ledger vouchers directly from the reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
 
 ## Post customer and vendor payment journals from bank statements and reconciliation worksheets
 
