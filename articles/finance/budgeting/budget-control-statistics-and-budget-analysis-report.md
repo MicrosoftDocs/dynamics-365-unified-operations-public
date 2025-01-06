@@ -63,7 +63,9 @@ To run the **Budget control data maintenance** tool, follow these steps.
 
 ### Budget control dimension values provider
 
-The **Budget control data maintenance** tool includes a **Budget control dimension values provider** scenario that lets you adjust the dimension values that are used in budget data. This scenario is typically used when a new segment is added to the ledger account structure. It finds all dimension values that are currently used in budget data and transfers them to match the current account structure. If a customer wants to preserve historical data (that is, keep the previous account structure), the date range can be adjusted so that only data in the specified range is updated.
+The **Budget control data maintenance** tool includes a **Budget control dimension values provider** scenario that lets you adjust the dimension values that are used in budget data. This scenario is typically used when a new segment is added to the ledger account structure. It finds all dimension values that are currently used in budget data and transfers them to match the current account structure.
+
+A customer might want to preserve historical data (that is, keep the previous account structure). In this case, the date range can be adjusted so that only data in the specified range is updated.
 
 To run the **Budget control dimension values provider** scenario, follow these steps.
 
