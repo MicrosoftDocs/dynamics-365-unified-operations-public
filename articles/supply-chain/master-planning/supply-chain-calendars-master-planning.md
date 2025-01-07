@@ -43,7 +43,7 @@ The coverage group can be assigned on different pages:
 - On the **Master planning parameters** page. If no coverage group is assigned to an item on the previously mentioned pages, master planning uses the general coverage group that's set in the **General coverage group** field on the **Master planning parameters** page (**Master planning** \> **Setup** \> **Master planning parameters**).
 
 > [!NOTE]
-> If no calendar is defined on the Coverage group of the item, Planning Optimization will consider the calendar of the default coverage group defined on the **Master Planning Parameters**.
+> If no calendar is defined for the coverage group of an item, Planning Optimization uses the calendar of the default coverage group defined on the **Master Planning Parameters** page.
 
 #### Define the lead time for a purchased item
 
