@@ -20,7 +20,7 @@ Before you can print the **Ecuador Sales book by establishment** report, the fol
 - The legal entity address must in a country within the LATAM localization, Ecuador in this case.
 - Have both the LATAM country specific function and the general function are activated.
 - Download the specific report configuration from Microsoft Dataverse repository. For more information, see [ER download reports](../global/workspace/gsw-import-er-config-dataverse.md).
-- Configure the Electronic Reporting parameters. For more information, see [ER configuration](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parametersmd).
+- Configure the Electronic Reporting parameters. For more information, see [ER configuration](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must have sales invoices with LATAM information posted.
 - You must configure the **Tax applications** of the **Sales points** used with an **”F”** for physical document and **”E”** for electronic document. For more information, see [Document classes for Latin America](ltm-core-document-class.md) article.
 
