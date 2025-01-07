@@ -3,13 +3,12 @@ title: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 
 description: Learn about how to enable extra efficiency in quote-to-cash with Microsoft Dynamics 365 Sales, with outlines on prerequisites and initial setup.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: how-to
-ms.date: 09/15/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: DataManagementWorkspace, CustParameters
-ms.search.region: Global
+ms.topic: how-to
+ms.date: 01/07/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
@@ -35,12 +34,12 @@ Before you can use the features that are described in this article, your system 
 
 ## Initial setup
 
-To add **Extra efficiency in quote-to-cash with Dynamics 365 Sales** functionality to your system, you must install the required solution in your dual-write environment, enable mappings in Supply Chain Management, and turn on the features that you want to use.
+To add *Extra efficiency in quote-to-cash with Dynamics 365 Sales* functionality to your system, you must install the required solution in your dual-write environment, enable mappings in Supply Chain Management, and turn on the features that you want to use.
 
 ### Step 1: Add the Dual-write Supply Chain solution to your Power Platform environment
 
 > [!IMPORTANT]
-> Do not update your Dual-write Supply Chain solution, as described in this section, unless you are running Supply Chain Management version 10.0.32 or later. To fully benefit from this update and the other improvements that are described in this article, you must be running Supply Chain Management version 10.0.34 or later.
+> Don't update your Dual-write Supply Chain solution, as described in this section, unless you're running Supply Chain Management version 10.0.32 or later. To fully benefit from this update and the other improvements that are described in this article, you must be running Supply Chain Management version 10.0.34 or later.
 
 Follow these steps to add the Dual-write Supply Chain solution to your Power Platform environment.
 
@@ -54,7 +53,7 @@ Follow these steps to add the Dual-write Supply Chain solution to your Power Pla
     - If the **Status** field for the row indicates that the app isn't installed, or that an update is available, select the row, and then select **Next** to open an installation wizard. Follow the on-screen instructions to install the app.
     - If the **Status** field for the row indicates that the app is installed, enabled, and up to date, select **Cancel**.
 
-1. On the **Dynamics 365 apps** page, find the row where the **Name** field is set to *Dual-write Supply Chain solution*. The **Status** field for the row should now indicate that this app is installed. 
+1. On the **Dynamics 365 apps** page, find the row where the **Name** field is set to *Dual-write Supply Chain solution*. The **Status** field for the row should now indicate that this app is installed.
 1. Select the ellipsis button (**&hellip;**) for the row, and then select **Details** on the menu.
 1. In the **Details** dialog box for the solution, confirm that the **Version** value fulfills the [prerequisites](#prerequisites) at the beginning of this article. Then close the dialog box.
 
@@ -63,7 +62,7 @@ Follow these steps to add the Dual-write Supply Chain solution to your Power Pla
 Follow these steps to enable the required mappings in Supply Chain Management.
 
 1. Sign in to Supply Chain Management.
-1. Go to **System administration \> Workspaces \> Data management**.
+1. Go to **System administration** \> **Workspaces** \> **Data management**.
 1. In the **Data management** workspace, select **Dual-write**.
 1. On the **Dual-write** page, on the Action Pane, select **Apply solution**.
 1. In the **Apply solution** dialog box, select the maps to apply. At a minimum, you must select the map where the **Display name** field is set to *Dynamics 365 Supply Chain Management extended entity maps*. However, we recommend that you select all the maps that are listed. When you've finished selecting maps, select **Apply**.
@@ -111,7 +110,7 @@ Use the [Feature management](../get-started/feature-management/feature-managemen
 | *Process Dynamics 365 Sales integration related events* | Optional | <p>This feature enables Sales integration-related events to be processed asynchronously via the message processor framework. This capability can improve performance in some scenarios, such as a scenario where the status of a sales quotation is transitioned when a quotation journal or quotation confirmation journal must be created.</p><p>In Supply Chain Management version 10.0.37 and later, after you enable this feature, you can turn the functionality on or off by using the **Use message processor** option on the **Accounts receivable parameters** page (as described in the next section).</p><p>As of Supply Chain Management version 10.0.41, this feature is turned on by default.</p> |
 
 > [!NOTE]
-> The status of these features in Supply Chain Management is exposed to Dataverse and will be consumed by business logic that's run in Sales. If **Integrate quotation lifecycles** and **Calculate and push prices** functionalities are enabled, they affect the process for working with sales quotations in both Sales and Supply Chain Management, and price calculations for sales orders and sales quotations in Sales. The exposure of feature statuses to Dataverse helps ensure consistency of feature statuses between the two apps. In Supply Chain Management version 10.0.37 and later, after you enable the features in Feature management, you can turn both functionalities on or off by using the **Accounts receivable parameters** page (as described in the next section).<!--Does this apply just when the feature is enabled in FM, or only when the parameters are also enabled? -->
+> The status of these features in Supply Chain Management is exposed to Dataverse and will be consumed by business logic that's run in Sales. If **Integrate quotation lifecycles** and **Calculate and push prices** functionalities are enabled, they affect the process for working with sales quotations in both Sales and Supply Chain Management, and price calculations for sales orders and sales quotations in Sales. The exposure of feature statuses to Dataverse helps ensure consistency of feature statuses between the two apps. In Supply Chain Management version 10.0.37 and later, after you enable the features in Feature management, you can turn both functionalities on or off by using the **Accounts receivable parameters** page (as described in the next section).
 
 ## <a name="config-parameters"></a>Configure extra efficiency in quote-to-cash with Dynamics 365 Sales
 
@@ -119,7 +118,7 @@ After you've completed the initial setup, you can configure the features that yo
 
 To open the configuration settings, follow these steps.
 
-1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Dynamics 365 Sales integration** tab, set the fields that are described in the following table. A tooltip is also provided for each field on the page.
 
     | FastTab | Field | Required features | Description |
@@ -134,13 +133,13 @@ To open the configuration settings, follow these steps.
     | **Message processor** | **Create quotation confirmation journal in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor creates quotation confirmation journals asynchronously. Asynchronous creation improves performance when a quotation is won in Sales.</p><p>For more information about this option, see [Set message processor options](add-efficiency-in-quote-to-cash-use.md#processor-options).</p> |
     | **Message processor** | **Copy quotation data to sales order in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor copies quotation data to sales orders asynchronously. Asynchronous copying improves performance when a quotation is won in Sales.</p><p>For more information about this functionality, see [Copy Supply Chain Management sales quotation data to sales orders synced from Sales](add-efficiency-in-quote-to-cash-use.md#copy-quotation-data).</p> |
     | **Message processor** | **Calculate and push prices and totals in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor runs the *Push price and totals*, *Calculate sales order totals for Sales*, and *Calculate sales quotation totals for Sales* processes asynchronously. Asynchronous runs improve performance.</p><p>For more information about this functionality, see [Choose whether to process and push totals synchronously or asynchronously](add-efficiency-in-quote-to-cash-use.md#synch-async).</p> |
-    | **Sales quotation** | **Default ownership** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Set default ownership for sales quotations when integrated with Dynamics 365 Sales*</p>	| <p>Set the owner of the sales quotations (Supply Chain Management or Sales).</p><p>For more information about this functionality, see [Set the default ownership for all sales quotations](add-efficiency-in-quote-to-cash-use.md#default-ownership).</p> |
+    | **Sales quotation** | **Default ownership** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Set default ownership for sales quotations when integrated with Dynamics 365 Sales*</p> | <p>Set the owner of the sales quotations (Supply Chain Management or Sales).</p><p>For more information about this functionality, see [Set the default ownership for all sales quotations](add-efficiency-in-quote-to-cash-use.md#default-ownership).</p> |
 
 ## Troubleshooting
 
 After you enable the **Integrate quotation lifecycles** functionality, if the sales quotation lifecycle flow doesn't work as expected for newly created sales quotations, follow these steps. For more information about each step, see the [Step 2: Enable mappings in Supply Chain Management](#enable-mappings) section.
 
-1. In Supply Chain Management, go to **System administration \> Workspaces \> Data management**.
+1. In Supply Chain Management, go to **System administration** \> **Workspaces** \> **Data management**.
 1. In the **Data management** workspace, select **Dual-write**.
 1. Run an initial synchronization for the table map that's named *Dynamics 365 Sales feature management states (msdyn\_supplychainfeaturestates)*.
 1. Make sure that the following maps are running:
