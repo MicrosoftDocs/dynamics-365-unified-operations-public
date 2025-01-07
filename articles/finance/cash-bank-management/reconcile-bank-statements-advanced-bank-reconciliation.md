@@ -128,7 +128,7 @@ There are three ways to match or reconcile bank statement transactions:
 
 - Match the statement transactions with bank transactions posted in Dynamics 365 Finance.
 - Match the statement transactions with a reversal bank statement transaction.
-- Mark the transactions as **New**, so that they can be posted later as a bank transaction in Finance.
+- Mark the transactions as **New**, so that they can be posted later as a bank transaction in Dynamics 365 Finance.
 
 To manually match transactions, select the transactions in the **Bank statement transactions** grid, select the corresponding transactions in the **Operations bank transactions** grid, and then select **Match**. The selected transactions are moved from the upper grids for unmatched transactions to the lower grids for matched transactions. Additionally, the matched and unmatched total amounts are updated. You can have one-to-one, many-to-one, and many-to-many transaction matches. Matches must follow the rules for allowed date differences and transaction type mapping. These rules are set on the **Cash and bank management parameters** page.
 
@@ -154,16 +154,18 @@ If the **Modern bank reconciliation** feature is enabled, users can generate gen
 
 ## Post customer and vendor payment journals from bank statements and reconciliation worksheets
 
-If the feature **Modern bank reconciliation** is enabled, it enhances the bank statement and reconciliation worksheet. Among additional functionalities noted above, you can post customer and vendor payment journals directly from selected bank statement lines. The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet.
+If the **Modern bank reconciliation** feature is enabled, the bank statement and reconciliation worksheet are enhanced. Additional functionalities include:
+ - Post customer and vendor payment journals directly from selected bank statement lines.
+ - The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet.
 
 To use this functionality, follow these steps:
 
-- On the **Bank accounts** setup page, on the **Reconciliation** FastTab, enter the **Default customer payment journal** and **Default vendor payment journal** names.
+1. On the **Bank accounts** setup page, on the **Reconciliation** FastTab, enter the **Default customer payment journal** and **Default vendor payment journal** names.
 
 > [!NOTE] 
 > Only journal names without approval workflow enabled are supported.
 
-- On the **Bank statement** page or the **Bank reconciliation worksheet** page, select the required bank statement lines.
-- Select **Generate payment journal** to generate and post the payment journal.
+2. On the **Bank statement** or the **Bank reconciliation worksheet** page, select the required bank statement lines.
+3. Select **Generate payment journal** to generate and post the payment journal.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
