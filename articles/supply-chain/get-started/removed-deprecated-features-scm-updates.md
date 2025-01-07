@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 01/07/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**  | Yes. The *Register material consumption on the production floor execution interface (WMS-enabled)* feature (previously in preview) has been replaced by the *[Register material consumption as complete and edit dimensions on the production floor execution interface](../production-control/production-floor-execution-configure.md#material-consumption)* feature, which also adds the ability to use the production floor execution interface to register material consumption for WMS-enabled items. |
 | **Product areas affected** | Supply Chain Management – Production control |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Removed. If you haven't enabled the old *Register material consumption on the production floor execution interface (WMS-enabled)* feature, then you'll only see the newer feature in feature management. If you have enabled the old feature, you'll still be able to use it, but you'll soon be contacted by Microsoft Support with instructions on how to replace it with the newer *Register material consumption as complete and edit dimensions on the production floor execution interface* feature. |
+| **Status** | Removed. As of Supply Chain Management version 10.0.41, if you never enabled the old *Register material consumption on the production floor execution interface (WMS-enabled)* feature, then you'll only see the newer *Register material consumption as complete and edit dimensions on the production floor execution interface* feature in feature management. If you previously enabled the old feature, you'll still be able to use it, but you'll soon be contacted by Microsoft Support with instructions on how to replace it with the newer feature. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 
@@ -46,7 +46,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**  | Yes, the Pricing management module is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
 | **Product areas affected** | Supply Chain Management – Pricing management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Deprecated. Approximately one year after the release of version 10.0.41, the Pricing management module will no longer be supported and may eventually be removed from the product. |
+| **Status** | Deprecated and will be removed in a future release. It is replaced by the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md), which offers nearly all of the same functionality as the deprecated Pricing management module, plus several important enhancements. Both the deprecated pricing management module and the Unified pricing management module use similar or identical navigation paths in the Supply Chain Management user interface, so only one of these modules can be active at a time. As of Supply Chain Management version 10.0.41, if you never enabled the deprecated pricing management module in your environment, only the Unified pricing management module will be available to you. If you have enabled the deprecated pricing management module, you can continue to use it until it is removed, but we recommend that you transition to the Unified pricing management module as soon as possible to take advantage of the new features and enhancements that it offers. For help transitioning from the deprecated pricing management module to the Unified pricing management module, please contact Microsoft Support. |
 
 ### Job card terminal
 

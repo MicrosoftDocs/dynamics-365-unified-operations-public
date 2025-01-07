@@ -366,10 +366,6 @@
           items: 
           - name: Goods in transit from vendor
             href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
-    - name: Distributed hybrid topology
-      items:
-      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
-        href: cloud-edge/cloud-edge-landing-page.md
     - name: Approval management mobile app
       items:
       - name: Approvals Management mobile app overview
@@ -2087,42 +2083,6 @@
         href: demand-planning/export-data.md
       - name: Rolling forecasts
         href: demand-planning/rolling-forecasts.md
-    - name: Mobile app (deprecated)
-      items:
-      - name: Mobile app home page
-        href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
-      - name: Mobile workspaces
-        items:
-        - name: Available mobile workspaces
-          href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
-        - name: Asset management
-          href: asset-management/asset-management-mobile-workspace.md
-        - name: Company directory
-          href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Cost controlling
-          href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Expense management
-          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
-        - name: Inventory on-hand
-          href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Invoice approvals
-          href: ../fin-ops-core/fin-ops/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: My team
-          href: ../fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
-        - name: Project time entry
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
-        - name: Project timesheet
-          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
-        - name: Purchase order approval
-          href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Sales orders
-          href: sales-marketing/sales-orders-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Vendor collaboration
-          href: procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/supply-chain
-      - name: Publish mobile workspaces
-        href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Office integration
       items:
       - name: Office integration overview
@@ -2287,10 +2247,6 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Pricing management (deprecated)
-      items:
-      - name: The Pricing management module is deprecated and no longer available to new customers
-        href: pricing-management/pricing-management-overview.md
     - name: Unified pricing management (preview)
       items:
       - name: Unified pricing management module overview
@@ -4127,6 +4083,50 @@
         href: inventory/extend-on-hand-entities.md
       - name: Create and process message queues and message types
         href: supply-chain-dev/message-processor.md
+    - name: Distributed hybrid topology (deprecated)
+      items:
+      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
+        href: cloud-edge/cloud-edge-landing-page.md
+    - name: Pricing management (deprecated)
+      items:
+      - name: The Pricing management module is deprecated and no longer available to new customers
+        href: pricing-management/pricing-management-overview.md
+    - name: Mobile app (deprecated)
+      items:
+      - name: Mobile app home page
+        href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
+      - name: Mobile workspaces
+        items:
+        - name: Available mobile workspaces
+          href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
+        - name: Asset management
+          href: asset-management/asset-management-mobile-workspace.md
+        - name: Company directory
+          href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Cost controlling
+          href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Expense management
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
+        - name: Inventory on-hand
+          href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Invoice approvals
+          href: ../fin-ops-core/fin-ops/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: My team
+          href: ../fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Project mobile applications overview
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
+        - name: Project time entry
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
+        - name: Project timesheet
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
+        - name: Purchase order approval
+          href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Sales orders
+          href: sales-marketing/sales-orders-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Vendor collaboration
+          href: procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/supply-chain
+      - name: Publish mobile workspaces
+        href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Responsible AI 
       items:
       - name: Overview
