@@ -110,7 +110,6 @@ The following conditions are checked and should be met for the order to be avail
  - Accounting date should be in the fiscal year that the Purchase order year end is run.
  - Last accouting event date of the Puchase order should be in the year that the Purchase order year end is run.
  - Purchase order should be budget controlled or have ecumbrances enabled.
- ![Non-retriavable purchase orders](.budgeting/media/Non-retrievable-purchase-orders.png)
 
 4. On the **Purchase order year-end process** page, the lower pane shows the results of the query. To include only specific purchase orders from the query results in the year-end processing, select the **Include** checkbox for each one. To include all the purchase orders from the query results, select **Include all**. To clear the selection of all purchase orders, select **Exclude all**. Encumbrances for the selected purchase orders are reversed in the fiscal year that is ending. The encumbered amounts will then be available in the new fiscal year.
 
