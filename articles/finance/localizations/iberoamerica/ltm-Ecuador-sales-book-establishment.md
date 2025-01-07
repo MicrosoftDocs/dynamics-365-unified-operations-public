@@ -1,5 +1,5 @@
 ---
-title: Configure printing for the Ecuador Sales book by establishment
+title: Configure printing for the Ecuador Sales book by establishment report
 description: This article describes how to set up and use the Ecuador Sales book by establishment report
 author: Fhernandez0088
 ms.date: 01/03/2025
@@ -9,7 +9,7 @@ ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ---
 
-# Configure printing for the Ecuador Sales book by establishment
+# Configure printing for the Ecuador Sales book by establishment report
 
 The **Ecuador Sales book by establishment** report is the record document used by businesses to keep a record of their sales transactions for each active establishment. Although specific VAT report requirements may vary from country/region to country/region, they generally include transaction date, customer information, and tax information details.
 
@@ -54,3 +54,4 @@ Lookups and conditions are designed to allow you to select the combination of do
 1. In the **From** date field, enter a date.
 1. In the **To** date field, enter a date.
 1. Select **OK**.
+eport
