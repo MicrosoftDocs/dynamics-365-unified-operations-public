@@ -4,7 +4,7 @@ description: The Advanced bank reconciliation feature lets you import electronic
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 01/06/2025
+ms.date: 01/07/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
