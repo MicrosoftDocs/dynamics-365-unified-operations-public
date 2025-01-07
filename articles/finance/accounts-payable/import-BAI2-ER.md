@@ -4,7 +4,7 @@ description: Learn about how to use Electronic reporting to set up the advanced 
 author: twheeloc
 ms.author: shpandey
 ms.topic: article
-ms.date: 04/29/2024
+ms.date: 01/07/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -24,9 +24,9 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 
 1. Go to **Workspaces \> Electronic reporting**.
 2. On the tile for the **Microsoft** configuration provider, select **Repositories**.
-3. Select **Dataverse**, and then select **Open**. For more details, please refer to [Import Electronic reporting (ER) configurations from Dataverse](../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md)
+3. Select **Dataverse**, and then select **Open**. For more details, see [Import Electronic reporting (ER) configurations from Dataverse](../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
 4. If a connection to the repository must be established, select the blue link in the dialog box.
-5. In the configuration list, find **Advanced bank reconciliation statement model \> ABR BAI2 format** (MT940 and ISO20022/camt053 formats are also available).
+5. In the configuration list, find **Advanced bank reconciliation statement model \> ABR BAI2 format**. MT940 and ISO20022/camt053 formats are also available.
 6. Select the **ABR BAI2 format**.
 7. On the **Versions** FastTab, select the latest version, and then select **Import**.
 
