@@ -91,7 +91,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=748efff6-7d33-4378-a273-b6f97938f461]
 
 ### Supported payment instruments
 
