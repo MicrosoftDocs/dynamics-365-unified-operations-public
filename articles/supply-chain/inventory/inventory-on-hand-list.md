@@ -19,7 +19,7 @@ This article describes how to use the **On-hand list** page to inspect on-hand i
 
 On-hand list is a summarized view over all Inventory and Warehouse transactions in your system. On-hand list allows you to filter along dimensions (product, storage, tracking) as well as control break-down of output values along dimensions. The values observed in the form change in accordance with used filter dimensions and display dimensions. We will show a few of the ways that the various filtering and output options work together, and how it affects the results presentation.
 
-You can also inquire into the Inventory and Warehouse transactions from the form to explain the values in the list.
+You can also inquire into the Inventory and Warehouse transactions from the form to explain the values in the list, change the on-hand values and find related information.
 
 ## Query your on-hand inventory
 
