@@ -4,7 +4,7 @@ description: Learn about which features are supported in Cloud and on-premises, 
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 01/14/2021
+ms.date: 01/08/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
