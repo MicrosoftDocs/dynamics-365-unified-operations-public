@@ -35,7 +35,7 @@ To deploy and administer Azure components for Sensor Data Intelligence, your Azu
 
 The following video shows how to [turn on the Sensor Data Intelligence feature](sdi-enable-feature.md) and deploy the required Azure resources. The other section in this article provides the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=90804485-5a57-475a-aa9e-753df28dd0d4]
 
 ## Procedure
 
