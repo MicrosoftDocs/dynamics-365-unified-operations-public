@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 01/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -26,25 +26,25 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.43 release
 
-### Non-process guide Adjustment out Mobile device menu item
+### "Adjustment out" mobile device menu items must now use process guide
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers much better extensibility support and allows for easier changes in the feature behavior. |
-| **Replaced by another feature?**  | Yes. It is recommended to enable the *Use process guide* setting. |
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Adjustment out* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Adjustment out* work creation process. The ability to turn off this option is being removed from the product. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | The *Use process guide* setting will be made mandatory in the 10.0.45 release. Approximately one year after the release of version 10.0.45, the non-process guide implementation will no longer be supported and may eventually be removed from the product. |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Adjustment out* work creation process will be made mandatory in Supply Chain Management version 10.0.45. Approximately one year after the release of version 10.0.45, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile device menu items for adjustment in and adjustment out](../warehousing/reason-codes-for-counting-journals.md#setup-adjustment-in-out). |
 
-### Non-process guide Spot cycle counting Mobile device menu item
+### "Spot cycle counting" mobile device menu items must now use process guide
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers much better extensibility support and allows for easier changes in the feature behavior. |
-| **Replaced by another feature?**  | Yes. It is recommended to enable the *Use process guide* setting. |
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Spot cycle counting* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Spot cycle counting* work creation process. The ability to turn off this option is being removed from the product. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | The *Use process guide* setting will be enabled by default in the 10.0.45 release, and it will be made mandatory in the 10.0.47 release. Approximately one year after the release of version 10.0.47, the non-process guide implementation will no longer be supported and may eventually be removed from the product. |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Spot cycle counting* work creation process will be enabled by default in Supply Chain Management version 10.0.45, and it will be made mandatory in version 10.0.47. Approximately one year after the release of version 10.0.47, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md). |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.42 release
 
