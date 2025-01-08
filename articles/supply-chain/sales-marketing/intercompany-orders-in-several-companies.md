@@ -15,7 +15,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 Microsoft Dynamics 365 Supply Chain Management is not limited to handling only one production company and several sales companies. All companies that are set up for intercompany can be both trading companies and production companies.
 
-If more companies can deliver the same item, you can freely choose whom to buy from, and updates are processed even if one sales order becomes several purchase orders.
+If more companies can deliver the same item, you can freely choose whom to buy from, and updates are processed even if one sales order becomes several purchase orders.In case of demand explosion of a bill of materials (BOM) version in original sales order, which creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse. Both Product bundle items and  BOM explosions aren't supported in intercompany sales orders and intercompany purchase orders. 
 
 In the same way that you automatically create one intercompany purchase order, you can create an original sales order in your company and then have several intercompany vendor companies fulfill the order by creating more than one intercompany purchase order. Microsoft Dynamics 365 Supply Chain Management automatically creates intercompany sales orders in the vendor companies.
 
