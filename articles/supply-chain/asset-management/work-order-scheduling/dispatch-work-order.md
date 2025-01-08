@@ -3,11 +3,12 @@ title: Dispatch work order
 description: Learn how to dispatch a work order in Asset Management, which schedules work orders and work order jobs, including a step-by-step process.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
-ms.date: 12/11/2024
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: EntAssetScheduledExecution 
+ms.topic: how-to
+ms.date: 01/27/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Dispatch work order
@@ -38,12 +39,12 @@ To dispatch a work order, follow these steps:
 1. In the **Schedule work order** dialog, make the following settings:
     - **Worker** – Select the worker.
     - **Schedule hours** – If the expected work hours differ from the forecast hours, enter the number of expected work hours.
-    - **Scheduled start** – Edit start date and time, if required.
+    - **Scheduled start** – Specify the start date and time.
     - **Asset**, **Tool**, and **Worker** – Set one or more of these to *Yes* if the scheduling process should observe capacity limitations regarding resources of the specified type that are already scheduled on other jobs.
     - **Ignore schedule** – Set to *Yes* to ignore closed days in the calendar (applies to assets, workers, and tools).
-    - **Ignore scheduled execution** – Set to *Yes* to ignore limitations that may have been selected on the work order regarding scheduling. Learn more in [Scheduled execution](../setup-for-work-orders/scheduled-execution.md).
+    - **Ignore scheduled execution** – Set to *Yes* to ignore limitations that might have been selected on the work order regarding scheduling. Learn more in [Scheduled execution](../setup-for-work-orders/scheduled-execution.md).
     - **Verbose** – Set to *Yes* to see detailed information about the scheduling process. This detailed information about the calculated scores on the work order is shown in the Action center.
-    - **Update forecast** – Set to *Yes* to update the forecast to reflect any scheduling change you have made in this dialog.
+    - **Update forecast** – Set to *Yes* to update the forecast to reflect any scheduling change you made in this dialog.
 
 1. Select **OK**. The work order lifecycle state is automatically updated to **Scheduled state** specified on the **Lifecycle models** page (available at **Asset management** \> **Setup** \> **Work orders** \> **Lifecycle models**).
 

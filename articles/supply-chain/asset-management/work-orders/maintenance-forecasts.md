@@ -3,11 +3,12 @@ title: Maintenance forecasts
 description: Learn about maintenance forecasts in Asset Management, which adds forecast lines and deletes them from work orders, including a step-by-step process.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
-ms.date: 10/15/2019
-ms.custom: 
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast 
+ms.topic: how-to
+ms.date: 01/27/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Maintenance forecasts
@@ -65,7 +66,7 @@ To get an overview that shows where the item on the selected line is used in rel
 
 1. On the **Work order maintenance forecast** page, select the work order job to add a forecast to.
 
-    :::image type="content" source="media/06-work-orders.png" alt-text="Screenshot of the Work order maintenance forecast page" lightbox="media/06-work-orders.png":::
+    :::image type="content" source="media/06-work-orders.png" alt-text="Screenshot of the Work order maintenance forecast page." lightbox="media/06-work-orders.png":::
 
 1. On the **Expense** FastTab, select **Add** to create a line.
 1. In the **Category** field, select a category.
@@ -82,9 +83,9 @@ If hour costs, item costs, and expenses are updated in other modules, work order
 
 1. Go to **Asset management** \> **Periodic** \> **Forecast** \> **Update work order forecast**.
 
-    :::image type="content" source="media/07-work-orders.png" alt-text="Screenshot of the Update work order forecast dialog" lightbox="media/07-work-orders.png":::
+    :::image type="content" source="media/07-work-orders.png" alt-text="Screenshot of the Update work order forecast dialog." lightbox="media/07-work-orders.png":::
 
-2. In the **Update work order forecast** dialog, on the **Records to include** FastTab, you can add selections regarding specific work orders or work order jobs, as you require. Click **Filter** to make the relevant selections.
+2. In the **Update work order forecast** dialog, on the **Records to include** FastTab, you can add selections regarding specific work orders or work order jobs, as you require. Select **Filter** to make the relevant selections.
 3. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 4. Select **OK** to start the forecast update.
 
