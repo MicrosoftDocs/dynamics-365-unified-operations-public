@@ -38,12 +38,17 @@ The following table describes the options in the **Work order** and **Schedule**
 | End | Set this option to *Yes* if the work order job schedule status for all work order jobs that are created on a work order should automatically be updated to **Ended** when the work order is updated to this lifecycle state. |
 | Delete schedule lines | Set this option to *Yes* if scheduling on all work order jobs that are created on a work order that has already been scheduled should be deleted when the work order is updated to this lifecycle state. In other words, capacity reservations on the asset, the related maintenance worker, and related tools will be deleted. For example, you set this option to *Yes* on a work order lifecycle state that is named **Estimated**. Then, when a work order is rolled back to this lifecycle state because rescheduling is required, scheduling can be deleted on that work order. |
 
-## Prerequisites
+## Prerequisites for the role-based access feature (preview)
 
-Most of the features described in this topic are standard functionality for all currently supported versions of Supply Chain Management. However, to use security roles for work order lifecycle states, your system must also meet the following requirements:
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
+
+To use the role-based access feature (on the **Security roles** FastTab), as described later in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.43 or later.
 - The feature that's named *Role-based access control for work order lifecycle stages* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Set up project stages and work order lifecycle states
 
