@@ -14,9 +14,16 @@ ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 
 [!include [banner](../includes/banner.md)]
 
-Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
+In Dynamics 365, a delivery schedule is used to manage and track the delivery of order quantities in multiple shipments.This is particularly useful when a single sales order,sales quotation or purchase order needs to be delivered in parts over a period of time.
 
-Use a delivery schedule when the total quantity on an order or quotation line must be delivered in multiple shipments. Individual shipments are represented by delivery lines. Two or more delivery lines make up one delivery schedule. The delivery lines can have different delivery dates, quantities, modes of delivery, and storage dimensions, such as site and warehouse.  
+Here’s a breakdown of how it works:
+
+Creating Delivery Scedhule:When you create a delivery schedule, the total quantity of an order line is divided into multiple delivery lines specific to its delivery schedule,quantity,mode of delivery and storage dimensions.Each delivery line represents a separate shipment.
+
+Managing Delivery Lines:Delivery lines can have different delivery dates, quantities, modes of delivery, and storage dimensions (like site and warehouse).
+The original order line is converted into a commercial line, which acts as a header for the delivery lines. Changes to delivery line quantities automatically update the commercial line to reflect the total quantity.
+
+Processing Orders:Orders with delivery schedules are processed against the delivery lines. This includes posting packing slips, product receipts, and invoicing.When documents like confirmations or invoices are printed, only the delivery lines are shown, not the original commercial lines.
 
 **Example of a delivery schedule**
 
