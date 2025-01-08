@@ -16,7 +16,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.34 GA -->
 
 In situations where more than one price calculation can apply, the system evaluates the priority of each group to determine which one should apply. This article explains how the priority is evaluated.
 
