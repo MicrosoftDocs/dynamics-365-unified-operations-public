@@ -43,25 +43,25 @@ These videos help introduce RSAT and get you started.
 
 ### Use task recorder to create a test case for RSAT
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3e1fd568-558a-4647-ae6e-6efc3f4602fc]
 
 The [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI) video is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Create a test plan in Azure DevOps to use with RSAT
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5313ebe6-9e73-4a6d-9abe-67b616bcb555]
 
 The [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) video is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### How to use RSAT
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=88daf54a-0b81-4069-89fd-ac528d66543d]
 
 The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### The improved Excel experience in RSAT 2.0
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7fc17d98-a826-41a3-be07-887d0ab4d6c2]
 
 The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -173,4 +173,3 @@ This tab provides quick access to the most relevant pages in Azure DevOps.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

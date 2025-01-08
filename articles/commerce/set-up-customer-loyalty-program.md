@@ -33,7 +33,7 @@ You can set up your loyalty program so that they include the following options.
 The following video provides an overview and demo of loyalty capabilities in Dynamics 365 Commerce.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6559a7a7-7fef-4051-b423-bfc2b202f744]
 
 ## Setting up loyalty programs
 
