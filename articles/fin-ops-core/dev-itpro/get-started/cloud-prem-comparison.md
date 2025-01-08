@@ -48,8 +48,8 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | ER: Integration with SharePoint                                                           | Yes       | No              |
 |                                      | ER: Integration with Regulatory Configuration Services (RCS)                              | Yes       | No              |
 |                                      | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No        | Yes             |
-|                                      | Integration with PowerBI.com                                                              | Yes       | No              |
-|                                      | Integration with PowerBI Desktop                                                          | No        | Yes             |
+|                                      | Integration with Power BI.com                                                              | Yes       | No              |
+|                                      | Integration with Power BI Desktop                                                          | No        | Yes             |
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
