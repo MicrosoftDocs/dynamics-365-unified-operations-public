@@ -14,7 +14,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTre
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes how to set up and use margin price adjustments.
 
