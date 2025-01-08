@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 12/09/2024
+ms.date: 01/08/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -38,7 +38,7 @@ For information about the maintenance windows for each region, see [What are the
 > [!IMPORTANT]
 > 1. The PQU build for every train is typically published to Lifecycle Services after the change cutoff date that's shown in the following high-level PQU train schedule. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. 
 > 2. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4), or Premium performance test (tier5) sandboxes didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
-> 3. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments opted-in for First release program (station1) will recieve updates on the following weekend of mentioned Station-1 schedule.
+> 3. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments opted-in for the First release program (station 1) will receive updates on the following weekend of the station 1 schedule.
 
 ## High-level PQU train schedule
 
@@ -132,7 +132,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > 1. 10.0.39 Release-8 has been canceled due to the forthcoming holiday season.
 > 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-6 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-6 train schedule
 
 **App version: 10.0.1935.184**
 
@@ -148,6 +148,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | January 7 to January 10, 2024 | January 18 to January 19, 2025 |
 | Station 5 | January 13 to January 16, 2025 | January 25 to January 26, 2025 |
 | Station 6 | January 14 to January 17, 2025 | January 25 to January 26, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-7 train schedule
+
+**App version: 10.0.1935.200**
+
+**Platform version: 7.0.7279.196**
+
+**Unified Environment Provisioning Application Version: 10.0.40.9**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | January 13 to January 16, 2025 | NA |
+| Station 2 | January 20 to January 23, 2025 | February 1 to February 2, 2025 |
+| Station 3 | January 21 to January 25, 2025 | February 2 to February 3, 2025 |
+| Station 4 | January 27 to January 30, 2024 | February 8 to February 9, 2025 |
+| Station 5 | February 3 to February 6, 2025 | February 15 to February 16, 2025 |
+| Station 6 | February 4 to February 7, 2025 | February 15 to February 16, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-3 train schedule
 
