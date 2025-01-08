@@ -33,16 +33,16 @@ Demand planning provides functionality for the complete demand planning process.
 
 1. **[Import data](import-data.md)** – Import your historical data, products, sites, warehouses, prices, and so on, into the app.
 
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1dwCZ]
+    > [!VIDEO https://learn-video.azurefd.net/vod/player?id=62832cd0-1bd9-456b-9dd1-3dc33a101b0b]
 
 1. **[Create transformation](transform-data.md)** – Transform imported data from tables into time series by identifying data columns, choosing time buckets, and shifting dates. For example, you can shift historical data from last year to next year so that you can use it as a basis for the forecast. Alternatively, you can apply multiplications or combine data from different systems.
 1. **[Create forecasts](forecast-profiles.md)** – Use different forecasting models (including your own Azure Machine Learning model) to create a forecast, or let AI determine which forecast model works best.
 
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1d4sy]
+    > [!VIDEO https://learn-video.azurefd.net/vod/player?id=9d178a98-0a58-4765-9885-b73ee2ad17ef]
 
 1. **[Review and adjust forecast](time-series.md)** – Work on the forecast, adjust values, and get different perspectives about how pricing, weather, promotional events, and other factors might affect the forecast. Collaborate to reach the most accurate forecast.
 
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1d9Ah]
+    > [!VIDEO https://learn-video.azurefd.net/vod/player?id=14bf0230-5088-49c6-9b14-685f322f2376]
 
 1. **[Export data](export-data.md)** – After your forecast is done, you can export it to any external system that can consume forecasts.
 
