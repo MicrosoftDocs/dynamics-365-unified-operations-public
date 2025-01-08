@@ -27,7 +27,7 @@ Many retailers, especially high-end specialty retailers, want their sales associ
 The following video walks through an example scenario of clienteling in Dynamics 365 Commerce.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d26bcf4b-1d98-48db-b7f8-1bea8b4bb70d]
 
 ## Client book
 

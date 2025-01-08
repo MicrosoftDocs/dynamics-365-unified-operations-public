@@ -24,7 +24,7 @@ There are many ways to change the look, feel, and content of your site. Dependin
 
 The following video provides an overview of site builder content management. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1834A]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e6193c35-fc6f-454e-b5b3-b66eb7649c93]
 
 The following articles are good jumping off points to start understanding how to add and manage site content. Most of the articles listed focus on areas of your site that don't require a developer. Some address basic content editing, while others focus on site administrator tasks. Each of these articles will denote specific tasks might require SDK work. Each article assumes that you have already provisioned a site and been granted access to the site builder toolset for your site.
 
