@@ -59,8 +59,8 @@ Each *Input* step represents a time series that provides input to the calculatio
 
 *Input* steps have the following options that you can set:
 
-- **Time series** – The time series added by the step. When you first set up an *Input* step, the **Configure step** dialog provides a button that lets you choose the time series to add. After you have added a time series, the dialog shows the name of the time series and provides an **Edit** button that lets you change the time series and a **Filter** button that lets you set up filtering criteria based on fixed dates, relative dates, and/or field values.
-- **Time series version** – If the selected time series includes more than one version, then you can select a specific version here. By default, it uses the latest (current) version.
+- **Time series** – The time series that is added by the step. When you first set up an *Input* step, the **Configure step** dialog box provides a button that lets you select the time series to add. After you add a time series, the dialog box shows the name of the time series and provides an **Edit** button that lets you change the time series. It also provides a **Filter** button that lets you set up filtering criteria based on fixed dates, relative dates, and/or field values.
+- **Time series version** – If the selected time series includes more than one version, you can select a specific version. By default, the latest (current) version is used.
 
 ### Arithmetic operator steps
 
