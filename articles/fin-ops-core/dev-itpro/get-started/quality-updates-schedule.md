@@ -132,7 +132,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > 1. 10.0.39 Release-8 has been canceled due to the forthcoming holiday season.
 > 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-6 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-6 train schedule
 
 **App version: 10.0.1935.184**
 
@@ -148,6 +148,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | January 7 to January 10, 2024 | January 18 to January 19, 2025 |
 | Station 5 | January 13 to January 16, 2025 | January 25 to January 26, 2025 |
 | Station 6 | January 14 to January 17, 2025 | January 25 to January 26, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-7 train schedule
+
+**App version: 10.0.1935.200**
+
+**Platform version: 7.0.7279.196**
+
+**Unified Environment Provisioning Application Version: 10.0.40.9**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | January 13 to January 16, 2025 | NA |
+| Station 2 | January 20 to January 23, 2025 | February 1 to February 2, 2025 |
+| Station 3 | January 21 to January 25, 2025 | February 2 to February 3, 2025 |
+| Station 4 | January 27 to January 30, 2024 | February 8 to February 9, 2025 |
+| Station 5 | February 3 to February 6, 2025 | February 15 to February 16, 2025 |
+| Station 6 | February 4 to February 7, 2025 | February 15 to February 16, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-3 train schedule
 
