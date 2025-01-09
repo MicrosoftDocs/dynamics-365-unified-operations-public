@@ -29,10 +29,10 @@ To have a better understanding of all the cost aspects, see [Azure Monitor cost 
 ### Data Retention Policies
 
 - **Archiving Practices**: Regularly archive telemetry data older than 30 days to more cost-effective storage solutions. This practice helps in managing storage costs while retaining access to historical data.
-- **Retention Configuration**: Adjust data retention settings in Application Insights to align with your organization's compliance and analysis requirements, thereby optimizing storage expenses.
+- **Retention Configuration**: Adjust data retention settings in Application Insights to align with your organization's compliance and analysis requirements, optimizing storage expenses.
 
 ### Sampling Techniques
-Sampling provides way to reduce telemetry traffic, data costs, and storage costs, while preserving a statistically correct analysis of application data. It works particularly well in scenarios where measurements are done and where single entries might not be statistically relevant. (Example: Tracking the average posting time for an invoice can be still be relevant on only 70% of the invoices.)
+Sampling provides way to reduce telemetry traffic, data costs, and storage costs, while preserving a statistically correct analysis of application data. It is intended for scenarios where measurements are done and where single entries might not be statistically relevant. (Example: Tracking the average posting time for an invoice can be still be relevant on only 70% of the invoices.)
 
 - **Implement Sampling**: Use sampling to collect a representative subset of telemetry data. This method reduces data ingestion volumes and costs without significantly compromising insights.
 - **Adaptive Sampling**: Leverage adaptive sampling features to automatically adjust the sampling rate based on traffic patterns, ensuring efficient data collection.

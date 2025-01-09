@@ -66,7 +66,7 @@ This table shows table names for Dynamics 365 Finance & Supply Chain Management 
 
 ## KQL example - Listing the top 20 most used forms
 
-In Dynamics 365 Finance & Supply Chain Management form loading times are logged as pageViews in the **pageViews** table. Using this information, you can query form loads to understand the most used forms, the slowest form loads, ...
+In Dynamics 365 Finance & Supply Chain Management form loading, times are logged as pageViews in the **pageViews** table. Using this information, you can query form loads to understand the most used forms, the slowest form loads, ...
 
 Use this KQL code to query the top 20 form loads based on the number of times the forms were opened:
 

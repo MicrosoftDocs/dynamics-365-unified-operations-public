@@ -1,5 +1,5 @@
 ---
-title: Analyze and monitor telemetry with ADE
+title: Analyze and monitor telemetry with Azure Data Explorer
 description: Learn how to query Dynamics 365 Finance & Supply Chain Management telemetry with Azure Data Explorer.  
 author: kesaelen
 ms.topic: how-to-guide

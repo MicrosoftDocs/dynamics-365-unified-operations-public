@@ -49,7 +49,7 @@ Document specific scenarios where monitoring and telemetry are required. Use cas
   - Measuring resource consumption to optimize costs.
 
 ## Determine Metrics and KPIs
-Define the key metrics and performance indicators that will provide insights into the health and performance of your application.
+Define the key metrics and performance indicators that provide insights into the health and performance of your application.
 
 - **Categories of Metrics:**
   - **Performance Metrics:** Response time, throughput, latency.
@@ -58,7 +58,7 @@ Define the key metrics and performance indicators that will provide insights int
   - **Infrastructure Metrics:** CPU usage, memory usage, disk I/O.
 
 ## Establish Alerting and Notification Requirements
-Identify the conditions under which alerts should be triggered and determine how notifications will be managed.
+Identify the conditions under which alerts should be triggered and determine how notifications are managed.
 
 - **Alerting Best Practices:**
   - Set thresholds that balance sensitivity and relevance.

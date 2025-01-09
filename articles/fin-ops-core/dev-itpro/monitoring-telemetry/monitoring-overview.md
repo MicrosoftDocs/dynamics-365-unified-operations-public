@@ -34,7 +34,7 @@ For more information, see [Gathering requirements](./monitoring-gathering-requir
 
 ## Getting started
 
-To get started configuring and using [!INCLUDE[monitoringtelemetry](./includes/finops-monitoring-feature-name.md)], please refer to [Getting started](./monitoring-getting-started.md).
+To get started configuring and using [!INCLUDE[monitoringtelemetry](./includes/finops-monitoring-feature-name.md)], refer to [Getting started](./monitoring-getting-started.md).
 
 ## Available telemetry
 
