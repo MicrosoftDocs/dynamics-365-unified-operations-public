@@ -55,8 +55,8 @@ For each matching item, the **On-hand** grid provides the following columns of i
 Use the **Filters** pane to filter the on-hand inventory list so that it includes only records where the field values match the filtering criteria. To define a filter, follow these steps.
 
 1. In the **Filters** pane, find the field that you want to filter on.
-2. In the field below the name of the target field, select a logical operator (for example, *starts with*, *equal to*, or *greater than*).
-3. Enter or select the value to look for.
+1. In the field below the name of the target field, select a logical operator (for example, *starts with*, *equal to*, or *greater than*).
+1. Enter or select the value to look for.
 
 > [!IMPORTANT]
 > The **On-hand list** page is assembled from a detailed on-hand inventory table that includes all available dimensions. However, the list on this page is a summary. Therefore, it might combine rows from the source table by aggregating values according to the dimensions that are shown.
@@ -80,9 +80,9 @@ To customize the selection of inventory dimensions that is shown, follow these s
 
     The **Dimension display** dialog box that appears shows every dimension.
 
-2. Select the check box for each dimension that you want to include in the grid.
-3. If you want your selection to be used by default the next time that you open the **On-hand list** page, set the **Save setup** option to **Yes**. If you set this option to **No**, your selection will be used only during the current session. Therefore, the next time that you open the page, the current default selection will be used.
-4. Select **OK** to close the dialog box and apply your changes.
+1. Select the check box for each dimension that you want to include in the grid.
+1. If you want your selection to be used by default the next time that you open the **On-hand list** page, set the **Save setup** option to **Yes**. If you set this option to **No**, your selection will be used only during the current session. Therefore, the next time that you open the page, the current default selection will be used.
+1. Select **OK** to close the dialog box and apply your changes.
 
 ## Investigate and act on the on-hand information
 
@@ -91,8 +91,7 @@ The **On-hand list** page displays aggregated on-hand information per used filte
 To understand more about the transactions that participated in the on-hand calculation, follow these steps:
 
 1. On the Action Pane, select **Transactions**. The [Inventory transactions](inventory-transactions-details.md) page opens with the same filters and dimensions that you were using in the on-hand list.
-
-2. On the Action Pane, select **Warehouse transactions**. The [Warehouse transactions](warehouse-transactions.md) page opens with the same filters and dimensions that you were using in the on-hand list.
+1. On the Action Pane, select **Warehouse transactions**. The [Warehouse transactions](../warehousing/warehouse-transactions.md) page opens with the same filters and dimensions that you were using in the on-hand list.
 
 Inspect the Action Pane to find useful actions related to your on-hand inventory. For example, you can do the following actions from here:
 
