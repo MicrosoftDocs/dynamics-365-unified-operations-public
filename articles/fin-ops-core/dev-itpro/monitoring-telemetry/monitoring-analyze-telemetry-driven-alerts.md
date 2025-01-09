@@ -41,7 +41,7 @@ To read more about alerts and how to create them, go to [Azure Application Insig
 
 ### Create alerts using Azure Logic Apps and Power Automate
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] for setting up custom notifications or automating certain actions that are triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
+Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. It's possible to configure custom notifications or automating certain actions triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
 
 The samples below can help getting started with customization and automation using Application Insights.
 
@@ -50,4 +50,4 @@ The samples below can help getting started with customization and automation usi
 >
 > After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in the Azure Portal.
 >
-> If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
+> If you already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App, you can reuse them by entering the same resource name before deploying the Logic App.

@@ -19,7 +19,7 @@ Configuring your environments to send telemetry to Application Insights requires
 1. Set up an Application Insights resource in Azure.
 1. Enable the Monitoring and Telemetry feature in Dynamics 365 Finance & Supply Chain Management.
 1. Configure environments to link to the right Application Insights resources.
-1. Configure the type of telemetry to be send to Application Insights.
+1. Configure the type of telemetry to be sent to Application Insights.
 
 ## Set up Application Insights resource in Azure
 
@@ -36,7 +36,7 @@ Complete the following steps to enable the Monitoring and Telemetry feature.
 
 ## Configure environments and link to Application Insights
 
-Environments are categorized into either of the following environment modes: development, test and production. Follow these steps to link environments to specific modes:
+Environments are categorized into either of the following environment modes: development, test, and production. Follow these steps to link environments to specific modes:
 
 1. In Dynamics 365 for Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
 2. In the **Environments** tab, create one record for each environment want to emit telemetry for. Multiple environments can be entered here. Entering all your environments ensures that database refresh operations would include this configuration and be synchronized across environments.<br>
@@ -44,8 +44,8 @@ Provide the following configuration:
 
 | Field name | Description |
 | ---------- | ----------- |
-| **Environment ID** | The unique idendifier for your environment |
-| **Environment Mode** | Specifies whether this environment is a Development, Test or Production environment. <br>This is used to separate telemetry in different Application Insight instances intented for Development, Test or Production. |
+| **Environment ID** | The unique identifier for your environment |
+| **Environment Mode** | Specifies whether this environment is a development, test, or production environment. <br>This is used to separate telemetry in different Application Insight instances intended for development, test, or Production. |
 
 [![Application Insights Environments.](./images/monitoring-getting-started-application-insights-environments.png)](./images/monitoring-getting-started-application-insights-environments.png)
 
@@ -53,7 +53,7 @@ Provide the following configuration:
 
 | Field name | Description |
 | ---------- | ----------- |
-| **Environment Mode** | Specifies whether this environment is a Development, Test or Production environment. |
+| **Environment Mode** | Specifies whether this environment is a development, test, or Production environment. |
 | **Instrumentation Key** | The instrumentation key used for connecting to Application Insights.<br>If a connection string is specified, the instrumentation is ignored. |
 | **Connection String** | The connection string used to connect to Application Insights.  |
 

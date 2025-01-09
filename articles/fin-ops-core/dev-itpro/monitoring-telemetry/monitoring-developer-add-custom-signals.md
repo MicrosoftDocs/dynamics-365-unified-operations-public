@@ -11,13 +11,13 @@ ms.custom: bap-template
 ---
 # Adding custom telemetry signals
 
-When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. On top of what is already emitted out of the box, you can provide extensions to add your own custom telemetry signals. These signals can provide additional insights into your custom processes.
+When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. On top of what is already emitted out of the box, you can provide extensions to add your own custom telemetry signals. These signals can provide more insights into your custom processes.
 
 ## Telemetry logger
 
 The main entry point for logging custom telemetry is through the **SysApplicationInsightsTelemetryLogger** class. It encupsulates the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client and provides access to the necessary operations to track an event, pageview, trace, exception or metric. 
 
-The logger uses the [static constructor pattern](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per AOS instance.
+The logger uses the [static constructor pattern](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per Application Object Server (AOS) instance.
 
 ## Telemetry data contract types
 
@@ -96,7 +96,7 @@ SysApplicationInsightsTelemetryLogger::instance().trackException(exceptionTeleme
 ```
 
 > [!NOTE]
-> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the infolog are automatically emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. 
+> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. 
 
 ### Traces
 
@@ -112,6 +112,6 @@ SysApplicationInsightsTelemetryLogger::instance().trackTrace(traceTelemetry);
 
 Interacting with metrics is different than the previous examples. Instead of using a specific data contract, we can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. The logger first gets the existing Metric instance from [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
 
-Metrics use local pre-aggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] after a one minute period. Using local pre-aggregation is benificial in batch processing scenarios where a lot of updates could happen to a specific metric.
+Metrics use local preaggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] after a one-minute period. Using local preaggregation is beneficial in batch processing scenarios where a lot of updates could happen to a specific metric.
 
 For a complete overview of Metrics, see [Azure Monitor Metrics overview](https://learn.microsoft.com/azure/azure-monitor/essentials/data-platform-metrics)
