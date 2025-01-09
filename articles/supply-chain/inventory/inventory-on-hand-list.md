@@ -106,7 +106,9 @@ Inspect the Action pane of the form to find useful actions related to your on-ha
 ## <a name="whsonhand"></a>Understand on-hand information for warehouse-enabled items
 
 For warehouse-enabled items the on-hand list will look and feel subtly different from non-warehouse-enabled items. Notice the _Uses the warehouse management process_ checkmark placed next to them together with helpful warnings you can learn more from when hovering the mouse over them.
+
 Compared to regular items:
+
  - _Physical inventory_ columns will follow the same aggregation principles of filtering and requested dimensions as regular items. The value will be placed on the most specific storage dimension. In example below, Physical Inventory is given per License plate, with exception of location _BULK-001_ in Warehouse _24_ in row 7, which isn't licence plate enabled.
  - _Physical reserved_ differs from regular items, because warehouse-enabled items use [Reservation hierarchies](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation). Reserved physical is presented at the hierarchy level associated with the item. 
  In the example below it results in adding additional rows 1 and 5 next to rows representing _Physical inventory_. Different processes reserve at different levels, e.g. row 1 is related to Sales process reserving at the warehouse level, while row 5 is related to Counting operation.
