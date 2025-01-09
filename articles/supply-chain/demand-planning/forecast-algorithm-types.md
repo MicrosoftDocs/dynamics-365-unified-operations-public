@@ -227,7 +227,7 @@ XGBoost is a highly efficient and scalable implementation of gradient boosting. 
 
 ### Decision trees
 
-A *decision tree* is a machine learning model that splits data into subsets based on signals values (also known as *dimensions* or *features*) and forms a tree-like structure. The following examples shows sales based on weather data.
+A *decision tree* is a machine learning model that splits data into subsets based on signals values (also known as *dimensions* or *features*) and forms a tree-like structure. The following example shows sales based on weather data.
 
 ```plaintext
                           [Is temp > 25°C?]
