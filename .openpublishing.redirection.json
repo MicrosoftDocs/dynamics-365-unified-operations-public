@@ -5,6 +5,11 @@
       "redirect_url": "dynamics365//finance/localizations/global/gs-e-invoicing-faq",
       "redirect_document_id": "false"
     },
+     {
+      "source_path": "articles//human-resources/hr-admin-integration-common-data-service.md",
+      "redirect_url": "dynamics365/human-resources/hr-dataverse-integration",
+      "redirect_document_id": "false"
+    },    
     {
       "source_path": "articles/finance/localizations/global/rcs-overview.md",
       "redirect_url": "dynamics365/localizations/global/workspace/merge-rcs-to-gsw",
