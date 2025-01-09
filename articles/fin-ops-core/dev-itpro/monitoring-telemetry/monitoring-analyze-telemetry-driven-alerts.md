@@ -51,24 +51,3 @@ The samples below can help getting started with customization and automation usi
 > After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in the Azure Portal.
 >
 > If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
-
-### TODO : create 2 examples for F&O and link them here
-
-#### Example - Run an alerting query every "n" days and send an email
-
-This Logic App runs every number of days (specified in app deployment). It lists all updates made available to environments that emit telemetry to the specified Application Insights resource during the period. Administrators can use this app to replace email notifications they'd receive for environments when set up as notification recipient.
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAvailableUpdatesNotification.json)
-
-#### Example - Run an alerting query every "n" minutes and send a message to Teams
-
-This Logic App queries Application Insights every number of minutes (specified in app deployment). It notifies a user (also specified in deployment) of any deleted environments in Microsoft Teams. The action that sends the notification in Teams can be updated to notify a Channel or Group Chat instead.
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FDeletedEnvironmentNotification.json)
-
-## See also
-
-[Telemetry overview](telemetry-overview.md)  
-[Enabling telemetry](telemetry-enable-application-insights.md)  
-[Available telemetry](telemetry-available-telemetry.md)  
-[Telemetry FAQ](telemetry-faq.md)

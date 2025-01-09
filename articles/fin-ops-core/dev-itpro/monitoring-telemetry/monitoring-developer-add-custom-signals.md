@@ -27,8 +27,8 @@ The logger uses the [static constructor pattern](https://learn.microsoft.com/dyn
 |------------------|-----------------------------------------------|--------------------------------|
 | Event            | SysApplicationInsightsEventTelemetry          | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry?view=azure-dotnet) |
 | PageView         | SysApplicationInsightsPageViewTelemetry       | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry?view=azure-dotnet) |
-| Exception        | SysApplicationInsightsExceptionTelemetry      |  [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
-| Trace            | SysApplicationInsightsTraceTelemetry          |  [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
+| Exception        | SysApplicationInsightsExceptionTelemetry      | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
+| Trace            | SysApplicationInsightsTraceTelemetry          | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
 
 ### Event
 

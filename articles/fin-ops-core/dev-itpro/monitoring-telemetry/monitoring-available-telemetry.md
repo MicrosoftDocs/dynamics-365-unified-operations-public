@@ -14,9 +14,7 @@ ms.custom: bap-template
 
 D365 Finance and SCM comes with robust out-of-the-box telemetry capabilities when Application Insights is enabled. These features provide critical insights into various aspects of the system, helping customers monitor performance, diagnose issues, and optimize operations. Below is an overview of the available telemetry and corresponding resources.
 
----
-
-## 1. **Form Run Telemetry**
+## **Form Run Telemetry**
 
 Form run telemetry captures detailed information about forms within the application. It provides insights into:
 
@@ -35,9 +33,7 @@ This data allows customers to:
 
 - Plug-and-play dashboard: [Forms Telemetry Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Forms)
 
----
-
-## 2. X++ Exceptions
+## X++ Exceptions
 
 All exceptions that occur in the X++ layer are captured and logged to Application Insights. This telemetry enables customers to:
 
@@ -51,9 +47,7 @@ All exceptions that occur in the X++ layer are captured and logged to Applicatio
 
 - Plug-and-play dashboard: [X++ Errors Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Errors)
 
----
-
-## 3. Warehouse Telemetry
+## Warehouse Telemetry
 
 The warehouse module generates extensive telemetry data, offering insights into:
 
@@ -67,15 +61,9 @@ This telemetry can be visualized using the provided Power BI dashboards.
 - Documentation: [Warehouse Telemetry in Application Insights](https://learn.microsoft.com/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi)
 - Power BI dashboard: [Warehouse Power BI Dashboard](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource)
 
----
-
-## 4. DMF Errors
+## DMF Errors
 
 Errors from the Data Management Framework (DMF) are logged to the exceptions table in Application Insights. These errors include issues encountered during data import and export operations, enabling customers to:
 
 - Identify and address integration issues quickly.
 - Monitor the health of data pipelines.
-
----
-
-By leveraging these out-of-the-box telemetry features, D365 Finance and SCM customers can gain a comprehensive understanding of system performance and operational health. These insights are essential for ensuring smooth operations and driving continuous improvements.
