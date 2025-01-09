@@ -99,7 +99,7 @@ You can also receive goods by creating an arrival journal. You can create an arr
 1. On the Action Pane, on the **Manage** tab, in the **Functions** group, select **Create arrival journal**.
 1. In the **Create arrival journal** dialog box, set the following values:
     - **Initialize quantity** – Set this option to *Yes* to set the quantity from the in-transit quantity. If this option is set to *No*, no default quantity is set from the goods-in-transit lines.
-    - **Create from goods in transit** - Set this option to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
+    - **Create from goods in transit** – Set this option to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
     - **Create from order lines** – Set this option to *Yes* to set the default quantity in the arrival journal from the purchase order lines. The default quantity in the arrival journal can be set in this way only if the quantity on the purchase order line matches the quantity on the goods-in-transit order.
 
 1. Process the arrival journal as described in [Register item receipts with an item arrival journal](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
@@ -122,7 +122,7 @@ Landed cost adds the following work creation processes to the mobile device menu
 
 The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). However, the *Goods in transit item receiving and putaway* process also adds the following field.
 
-- **Enable shipping container complete** – If this option is set to *Yes*, when the put-away work is completed, the Warehouse Management mobile app provides an option called **Shipping container complete**. When that option is selected, the worker is asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction. This button works just as the **Close** checkbox on the goods-in-transit order receiving form, which is used to depreciate the remaining quantity. The **Shipping container complete** button is only available for under delivery scenarios and for the *GIT Receive and Putaway* action on the mobile device. When a goods-in-transit order is received in full or in over-delivery, this button will not be visible.
+- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app provides an option called **Shipping container complete**. When that option is selected, the worker is asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction. This button works just as the **Close** checkbox on the goods-in-transit order receiving form, which is used to depreciate the remaining quantity. The **Shipping container complete** button is only available for under delivery scenarios and for the *GIT Receive and Putaway* action on the mobile device. When a goods-in-transit order is received in full or in over-delivery, this button will not be visible.
 
 #### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device
 
@@ -135,8 +135,8 @@ Receiving goods-in-transit orders with the landed cost module on a mobile device
 Examples of these differences are:
 
 - **Voyage** and **Shipping Container** fields must be selected when receiving goods-in-transit orders, whereas these are not needed for standard purchase and transfer order receiving.
-- **Assign putaway cluster** functionality for the put-away process is not available for *Goods-in-transit receiving*.
-- In normal receipt process without goods in transit orders, the worker can cancel in-process work, which automatically de-registers the license plate. Cancelling put-away work when receiving goods-in-transit orders at mid-stage is not possible. In this situation, a transfer journal must be used to move items back to the receiving location, and then the registration must be manually undone.
+- **Assign putaway cluster** functionality for the putaway process is not available for *Goods-in-transit receiving*.
+- In normal receipt process without goods in transit orders, the worker can cancel in-process work, which automatically de-registers the license plate. Cancelling putaway work when receiving goods-in-transit orders at mid-stage is not possible. In this situation, a transfer journal must be used to move items back to the receiving location, and then the registration must be manually undone.
 
 #### <a name="batch-serial"></a>Receiving goods-in-transit orders with a mobile device and serial/batch numbers enabled
 
@@ -187,12 +187,12 @@ Landed cost adds two new posting rules that you can configure. These posting rul
 
 To work with posting profiles, go to **Inventory management** \> **Setup** \> **Posting** \> **Posting**. On the **Purchase Order** tab, the following new posting rules are available:
 
-- **Landed cost, goods-in-transit** – Specify the posting rules for goods-in-transit management.
-- **Landed cost, cost charge accrual** – Specify the posting rules for charge account accrual.
+- *Landed cost, goods-in-transit* – Specify the posting rules for goods-in-transit management.
+- *Landed cost, cost charge accrual* – Specify the posting rules for charge account accrual.
 
 ## Cancel or reverse a goods-in-transit order
 
 To reverse the creation of a goods-in-transit order and the movement of items to the goods-in-transit warehouse:
 
-1. Move received goods out of the *goods-in-transit warehouse* using a movement journal
-2. Depreciate the on-hand stock on the purchase order warehouse.
+1. Move received goods out of the *goods-in-transit warehouse* using a movement journal.
+1. Depreciate the on-hand stock on the purchase order warehouse.
