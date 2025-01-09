@@ -13,6 +13,8 @@ ms.custom:
 
 # Goods-in-transit processing and receiving
 
+[!include [banner](../../includes/banner.md)]
+
 This article describes how to work with goods-in-transit orders. This type of order is used only by the **Landed cost** module. When an order or voyage is set up to use goods-in-transit processing, you don't have to wait until goods are received in the warehouse before you can invoice them. Instead, the goods are invoiced when they leave the vendor's warehouse or port of origin, and the financial costs are recognized when the voyage begins. This functionality lets you correctly take ownership of inventory, because goods often become the property of your organization when they leave the shipping port.
 
 When goods-in-transit orders are used, the financially updated items are received in an interim warehouse that is known as a goods-in-transit warehouse. The goods then stay in this warehouse until they can be received at the final destination warehouse (that is, the warehouse that is defined on the purchase or transfer order line). They can't be manually removed. When the goods-in-transit order is invoiced, goods are immediately moved to this goods-in-transit warehouse, which signifies this change in ownership.
