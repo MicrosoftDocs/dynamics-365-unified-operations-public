@@ -23,7 +23,7 @@ The *Enhanced user feedback for Copilot and related experiences* feature lets us
 In addition to simple thumbs-up or thumbs-down input, the feature lets users provide detailed written feedback. In this way, Microsoft gains richer insights that can help us improve Copilot responses and user satisfaction. Without enhanced user feedback, users can indicate positive or negative experiences only through a simple signal. The result is limited actionable data that can be used for service enhancements.
 
 > [!NOTE]
-> Feedback is captured by using the [in-product feedback system](/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide) that is common across Microsoft products. This system follows existing data handling and privacy policies.
+> Feedback is captured by using the [in-product feedback system](/microsoft-365/admin/misc/feedback-user-control) that is common across Microsoft products. This system follows existing data handling and privacy policies.
 
 When enhanced user feedback is turned on, if users select a thumbs-up or thumbs-down button, a dialog box prompts them to provide a written statement that describes their experience.
 
