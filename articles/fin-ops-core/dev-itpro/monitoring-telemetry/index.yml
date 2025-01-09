@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Monitoring and Telemetry using Dynamics 365 Finance & Supply Chain Management
-summary: Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 F&SCM.
+summary: Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 Finance and Supply Chain Management.
 
 metadata:
   title: Monitoring and Telemetry with Microsoft Dynamics 365 Finance & Supply Chain Management
-  description: "Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 F&SCM."
+  description: "Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 Finance and Supply Chain Management."
   
   ms.topic: landing-page
   author: kesae

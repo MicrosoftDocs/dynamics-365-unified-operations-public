@@ -110,8 +110,8 @@ SysApplicationInsightsTelemetryLogger::instance().trackTrace(traceTelemetry);
 
 ### Metrics
 
-Interacting with metrics is different than the previous examples. Instead of using a specific data contract, we can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. This is because the logger will first get the existing Metric instance from [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
+Interacting with metrics is different than the previous examples. Instead of using a specific data contract, we can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. The logger will first get the existing Metric instance from [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
 
-Metrics use local pre-aggregation for performance reasons. This ensures that updates to a certain metric are only sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] after a one minute period. This is benificial in batch processing scenarios where a lot of updates could happen to a specific metric.
+Metrics use local pre-aggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] after a one minute period. Using local pre-aggregation is benificial in batch processing scenarios where a lot of updates could happen to a specific metric.
 
 For a complete overview of Metrics, see [Azure Monitor Metrics overview](https://learn.microsoft.com/azure/azure-monitor/essentials/data-platform-metrics)

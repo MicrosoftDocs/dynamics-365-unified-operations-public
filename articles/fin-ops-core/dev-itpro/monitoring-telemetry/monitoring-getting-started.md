@@ -39,7 +39,7 @@ Complete the following steps to enable the Monitoring and Telemetry feature.
 Environments are categorized into either of the following environment modes: development, test and production. Follow these steps to link environments to specific modes:
 
 1. In Dynamics 365 for Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
-2. In the **Environments** tab, create one record for each environment want to emit telemetry for. Multiple environments can be entered here. This ensures that database refresh operations would include this configuration and be synchronized across environments.<br>
+2. In the **Environments** tab, create one record for each environment want to emit telemetry for. Multiple environments can be entered here. Entering all your environments ensures that database refresh operations would include this configuration and be synchronized across environments.<br>
 Provide the following configuration:
 
 | Field name | Description |
@@ -54,7 +54,7 @@ Provide the following configuration:
 | Field name | Description |
 | ---------- | ----------- |
 | **Environment Mode** | Specifies whether this environment is a Development, Test or Production environment. |
-| **Instrumentation Key** | The instrumentation key used for connecting to Application Insights.<br>If a connection string is specified, the instrumentation key will be ignored. |
+| **Instrumentation Key** | The instrumentation key used for connecting to Application Insights.<br>If a connection string is specified, the instrumentation is ignored. |
 | **Connection String** | The connection string used to connect to Application Insights.  |
 
 [![Application Insights Registry.](./images/monitoring-getting-started-application-insights-registry.png)](./images/monitoring-getting-started-application-insights-registry.png)
