@@ -21,8 +21,7 @@ Before you complete the steps in this article to generate and print the report, 
 
 - The legal entity's address must be in a country/region that's within the LATAM localization. 
 - The country/region-specific LATAM feature for Ecuador and the general LATAM feature must be enabled.
-- Download the specific report configuration from the **Dataverse** repository. 
-[ER download reports](../../global/workspace/gsw-import-er-config-dataverse.md).
+- Download the specific report configuration from the **Dataverse** repository. For more information, see [ER download reports](../global/workspace/gsw-import-er-config-dataverse.md).
 - You must configure the Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md). 
 - You must follow the instructions in the [Ecuadorian refund invoice transactions posting](ltm-Ecuadorian-refund-invoice.md) article to post refund invoices.
 
