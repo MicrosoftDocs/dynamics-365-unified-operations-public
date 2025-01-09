@@ -21,7 +21,7 @@ The on-hand inventory list provides a summarized view over all inventory and war
 
 You can also inquire into the inventory and warehouse transactions to explain the values in the list, change the on-hand values, and find related information.
 
-:::image type="content" source="on-hand-page.png" alt-text="Screenshot of the On-hand list page." lightbox="on-hand-page.png":::
+:::image type="content" source="media/on-hand-page.png" alt-text="Screenshot of the On-hand list page." lightbox="media/on-hand-page.png":::
 
 ## Query your on-hand inventory
 
@@ -108,7 +108,7 @@ Items that are enabled for warehouse management processes (WMS) look and feel su
 - Values shown for **Physical reserved** work differently from non-WMS items because warehouse-enabled items use [Reservation hierarchies](../warehousing/flexible-warehouse-level-dimension-reservation.md). **Physical reserved** values are presented at the hierarchy level associated with the item. In the example that follows this list, this functionality results in adding additional rows 1 and 5 next to rows representing **Physical inventory**. Different processes reserve at different levels, for example, row 1 is related to sales-process reservations made at the warehouse level, while row 5 is related to a counting operation.
 - You might see empty rows (such as in row 2 in the example) which indicate that there's no on-hand inventory or related reservations or orders on this dimension right now, but there have been.
 
-<!-- KFM: Screenshot or table needed -->
+:::image type="content" source="media/on-hand-page-example.png" alt-text="Example of information shown on the On-hand list page." lightbox="media/on-hand-page-example.png":::
 
 ## <a name="grid-filters"></a>Filter on the output of the inventory on-hand list
 
