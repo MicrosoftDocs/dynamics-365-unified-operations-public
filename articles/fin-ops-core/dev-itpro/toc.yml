@@ -1911,6 +1911,8 @@ items:
         href: sysadmin/configure-manage-database-log.md
       - name: Build OData metadata cache when the AOS starts
         href: sysadmin/odata-warmup.md
+      - name: Understand Interactive Application Object Server (AOS) restarts
+        href: sysadmin/interactive-aos-restart.md
       - name: Setting Up Azure Key Vault client
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
