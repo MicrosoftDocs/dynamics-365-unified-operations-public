@@ -103,8 +103,6 @@ items:
           href: data-entity.md
         - name: Throttling FAQ
           href: dev-itpro/hr-admin-integration-throttling-faq.md
-        - name: Configure Dataverse integration
-          href: hr-admin-integration-common-data-service.md
         - name: Dataverse tables
           href: hr-developer-entities.md
         - name: Configure Dataverse virtual tables
