@@ -208,8 +208,8 @@ If no business rejection or acceptance is received from the buyer after nine day
 ## More resources
 
 - [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../gs-e-invoicing-administration-integration-components.md)
-- [Setting up Electronic Invoicing](../gs-e-invoicing-set-up-overview.md)
+- [Get started with Electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
+- [Setting up Electronic Invoicing](../global/gs-e-invoicing-set-up-overview.md)
 - [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
 - [Dynamics 365 Country expansion: localizations for LATAM countries | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
 - [Dynamics 365 Country expansion: localizations for LATAM countries | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
