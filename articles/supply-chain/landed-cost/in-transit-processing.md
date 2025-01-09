@@ -44,7 +44,7 @@ Landed cost adds two new types of warehouse: *goods in transit* and *under-deliv
 
 The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse, and that warehouse will be used to process the goods on goods-in-transit orders before they're received at the final destination warehouse.
 
-Upon posting the purchase or transfer order invoice of a goods-in-transit enabled voyage, inventory will be purchased in the receiving warehouse and immediately transferred to the configured goods-in-transit warehouse. This is to signify the change in ownership of the goods that have not yet arrived physically at the destination warehouse.
+Upon posting the purchase or transfer order invoice of a goods-in-transit enabled voyage, inventory will be purchased in the receiving warehouse and immediately transferred to the configured goods-in-transit warehouse. This is to signify the change in ownership of the goods that haven't yet arrived physically at the destination warehouse.
 
 In general, one goods-in-transit warehouse is enough for each site if Site and Warehouse are the only inventory dimensions that are used for inventory management. If the Location inventory dimension is also used, a goods-in-transit warehouse must be set up for each combination of a site and warehouse, so that the default location can also be specified.
 
@@ -77,7 +77,7 @@ To work with goods-in-transit orders, go to **Landed cost** \> **Periodic tasks*
 
 ## Receiving stock from the goods-in-transit warehouse
 
-You can receive goods from a goods-in-transit order in many ways, depending on the setup of your system. If items have batch/serial number disabled, you can use in-transit receiving. If items have batch/serial number tracking as well as advanced warehouse management enabled, you can receive goods from a goods-in-transit order with a mobile device. If items have batch/serial number tracking, but not advanced warehouse management enabled, you can post an arrival journal to register the receipt of goods. When to use which type of receipt method when receiving goods in transit orders is illustrated in the following diagram:
+You can receive goods from a goods-in-transit order in many ways, depending on the setup of your system. If items have batch/serial number disabled, you can use in-transit receiving. If items have both batch/serial number tracking and advanced warehouse management enabled, you can receive goods from a goods-in-transit order with a mobile device. If items have batch/serial number tracking, but not advanced warehouse management enabled, you can post an arrival journal to register the receipt of goods. When to use which type of receipt method when receiving goods in transit orders is illustrated in the following diagram:
 
 :::image type="content" source="media/receiving-stock-from-git-warehouse.png" alt-text="Diagram showing when to use which type of receipt method when receiving goods in transit orders." lightbox="media/receiving-stock-from-git-warehouse.png":::
 
@@ -91,7 +91,7 @@ You can do in-transit receiving from any of the following pages:
 - On the **All folios** page, select or open a folio. Then, on the Action Pane, on the **Manage** tab, in the **Goods in transit** group, select **Receive goods in transit**.
 
 > [!NOTE]
-> In-transit receiving is generally used in situations where locations and batch/serial tracking aren't used.
+> In-transit receiving is normally used in situations where locations and batch/serial tracking aren't used.
 
 ### Arrival journal
 
@@ -109,7 +109,7 @@ You can also receive goods by creating an arrival journal. You can create an arr
 > [!NOTE]
 > The arrival journal is generally used in situations where locations and batch/serial tracking are used, but warehouse management isn't used.
 >
-> Default receipt locations should not be specified on the order lines if a putaway location will be specified in the arrival journal.
+> Default receipt locations shouldn't be specified on the order lines if a putaway location will be specified in the arrival journal.
 
 ### Warehouse mobile device receiving
 
@@ -124,7 +124,7 @@ Landed cost adds the following work creation processes to the mobile device menu
 
 The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). However, the *Goods in transit item receiving and putaway* process also adds the following field.
 
-- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app provides an option called **Shipping container complete**. When that option is selected, the worker is asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction. This button works just as the **Close** checkbox on the goods-in-transit order receiving form, which is used to depreciate the remaining quantity. The **Shipping container complete** button is only available for under delivery scenarios and for the *GIT Receive and Putaway* action on the mobile device. When a goods-in-transit order is received in full or in over-delivery, this button will not be visible.
+- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app provides an option called **Shipping container complete**. When that option is selected, the worker is asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction. This button works just as the **Close** checkbox on the goods-in-transit order receiving form, which is used to depreciate the remaining quantity. The **Shipping container complete** button is only available for under delivery scenarios and for the *GIT Receive and Putaway* action on the mobile device. When a goods-in-transit order is received in full or in over-delivery, this button isn't visible.
 
 #### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device
 
@@ -132,25 +132,25 @@ Workers using the Warehouse Management mobile app can register the receipt of go
 
 #### Differences in mobile device receiving for a goods-in-transit versus standard purchase or transfer order flow
 
-Receiving goods-in-transit orders with the landed cost module on a mobile device will not always be consistent with receiving a purchase or transfer order without landed cost and goods-in-transit orders enabled.
+Receiving goods-in-transit orders with the landed cost module on a mobile device won't always be consistent with receiving a purchase or transfer order without landed cost and goods-in-transit orders enabled.
 
 Examples of these differences are:
 
-- **Voyage** and **Shipping Container** fields must be selected when receiving goods-in-transit orders, whereas these are not needed for standard purchase and transfer order receiving.
-- **Assign putaway cluster** functionality for the putaway process is not available for *Goods-in-transit receiving*.
-- In normal receipt process without goods in transit orders, the worker can cancel in-process work, which automatically de-registers the license plate. Cancelling putaway work when receiving goods-in-transit orders at mid-stage is not possible. In this situation, a transfer journal must be used to move items back to the receiving location, and then the registration must be manually undone.
+- **Voyage** and **Shipping Container** fields must be selected when receiving goods-in-transit orders, whereas these aren't needed for standard purchase and transfer order receiving.
+- **Assign putaway cluster** functionality for the putaway process isn't available for *Goods-in-transit receiving*.
+- In normal receipt process without goods in transit orders, the worker can cancel in-process work, which automatically deregisters the license plate. Cancelling putaway work when receiving goods-in-transit orders at mid-stage isn't possible. In this situation, a transfer journal must be used to move items back to the receiving location, and then the registration must be manually undone.
 
 #### <a name="batch-serial"></a>Receiving goods-in-transit orders with a mobile device and serial/batch numbers enabled
 
 Workers using the Warehouse Management mobile app can register batch/serial numbers when receiving goods-in-transit orders that include items enabled for batch/serial number tracking. The system consolidates the received quantity for each batch/serial number into one work process and automatically assigns the numbers to the received items.
 
-If batch and serial numbers are known at the time of receiving goods, they can be manually specified directly on the device during receipt process. When receiving more than one serialized item on the Warehouse mobile device, the voyage number, shipping container, item, quantity and license plate number must be entered manually with each new serial number.
+If batch and serial numbers are known at the time of receiving goods, they can be manually specified directly on the device during receipt process. When receiving more than one serialized item on the Warehouse mobile device, the voyage number, shipping container, item, quantity, and license plate number must be entered manually with each new serial number.
 
 Alternatively, you can let the system automatically assign batch/serial numbers when receiving items with batch/serial number tracking enabled.
 
 #### Under receive with batch/serial number control activated
 
-To under-receive a serial-enabled item, let the system assign batch/serial numbers automatically. If serial number is set manually for the quantity received, the remaining amount remaining on the under-delivery warehouse will not be able to be posted without a serial number.
+To under-receive a serial-enabled item, let the system assign batch/serial numbers automatically. If serial number is set manually for the quantity received, the remaining amount remaining on the under-delivery warehouse won't be able to be posted without a serial number.
 
 ### Location directives
 
@@ -174,11 +174,11 @@ Work templates that have a work order type of *Goods in transit* can be configur
 
 Landed cost [creates an over transaction](over-under-transactions.md) if the registered quantity exceeds the original order quantity. When a work header is completed, the system updates the status of the inventory transactions for the principal order quantity. However, it first updates the quantity that is linked to the over transaction after the principal is completely purchased.
 
-If you cancel a work header for an over transaction that has already been registered, the over transaction is first reduced by the cancelled quantity. After the over transaction is reduced to a quantity of 0 (zero), the record is removed, and any additional quantities are unregistered against the principal order quantity.
+If you cancel a work header for an over transaction that has already been registered, the over transaction is first reduced by the canceled quantity. After the over transaction is reduced to a quantity of 0 (zero), the record is removed, and any additional quantities are unregistered against the principal order quantity.
 
 ### Marking for goods-in-transit stock
 
-Goods-in-transit transactions are marked to the purchase or transfer order transactions. They are considered in inventory closing and are reflected in the inventory aging report as 0 on-hand items with inventory value.
+Goods-in-transit transactions are marked to the purchase or transfer order transactions. They're considered in inventory closing and are reflected in the inventory aging report as 0 on-hand items with inventory value.
 
 > [!NOTE]
 > If sales orders are marked to purchase orders to reserve incoming stock, goods-in-transit orders will be split if a purchase order line is marked to multiple sales order lines. Any goods-in-transit order that has been split must be manually received one by one.
