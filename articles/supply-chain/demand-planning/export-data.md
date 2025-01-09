@@ -16,7 +16,7 @@ ms.search.form:
 
 When you've finished creating, analyzing, and editing a forecast, you can export it back to Microsoft Dynamics 365 Supply Chain Management. Alternatively, you can download the data as a comma-separated values (CSV) file that can be viewed in Excel.
 
-## Export to to Supply Chain Management
+## Export to Supply Chain Management
 
 ### <a name="existing-export-profiles"></a>View and run existing data export profiles to export to Supply Chain Management
 
@@ -37,9 +37,9 @@ To run an existing data export profile, follow these steps.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab. There, you can follow the status of the new export. The page isn't automatically refreshed. To update the status information, you must select **Refresh** on the grid toolbar.
 
-### Create and manage profiles for exporting to Supply Chain Management
+### Create and manage profiles for export to Supply Chain Management
 
-Each time that your organization has to run a new type of data export, a manager or admin must create a new data export profile. After the profile is created, it becomes available to users, who can run it as often as they require. Each profile exports either to Supply Chain Management or an CSV file, depending on how to set them up. This section describes how to create a profile that exports to your selected Supply Chain Management instance.
+Each time that your organization has to run a new type of data export, a manager or admin must create a new data export profile. After the profile is created, it becomes available to users, who can run it as often as they require. Each profile exports to either Supply Chain Management or a CSV file, depending on how you set it up. This section describes how to create a profile that exports to your selected Supply Chain Management instance.
 
 1. On the navigation pane, select **Data management** \> **Export**.
 1. On the Action Pane, select **New**.
@@ -68,9 +68,11 @@ Each time that your organization has to run a new type of data export, a manager
 
 ### Download a time series values grid as a CSV file
 
-You can download the time series values grid from any selected time series as a CSV file. This type of export creates a CSV file that presents the data the same way as it's shown in **Time series values** grid for the time series, which means that it contains one row for each combination of dimensions and a column for each dimension, the grand total value, and the value for each available date. If you require a file that instead has a row for each date, you should instead create a CSV export profile and run it as described later in this topic (this type of CSV file might be more useful for importing data into other systems).
+You can download the **Time series values** grid from any selected time series as a CSV file. The CSV file presents the data just as it's presented in the **Time series values** grid for the time series. In other words, it has a row for each combination of dimensions and a column for each dimension, the grand total value, and the value for each available date.
 
-To export the time series values grid from any selected time series to a CSV file, follow these steps.
+If you require a file that has a row for each date instead, you should create a CSV export profile and run it as described in the [Create and manage profiles for export to CSV](#new-csv-profiles) section. This type of CSV file might be more useful for importing data into other systems.
+
+To export the **Time series values** grid from any selected time series to a CSV file, follow these steps.
 
 1. Open the time series that you want to export from.
 1. On the **Time series values** FastTab, select **Download** on the toolbar.
@@ -79,7 +81,7 @@ The file is saved as a CSV file in your local download folder.
 
 ### <a name="existing-csv-profiles"></a>View and run existing data export profiles to export to CSV
 
-Demand planning lets you build a collection of *export profiles*. Each CSV export profile exports data from a selected time series to a CSV file saved on your local computer. The CSV file includes a row for each date with columns for the date, value, and each dimension.
+Demand planning lets you build a collection of *export profiles*. Each CSV export profile exports data from a selected time series to a CSV file that's saved on your local computer. The CSV file includes a row for each date and columns for the date, value, and each dimension.
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to export as they require.
 
@@ -97,9 +99,9 @@ To run an existing data export profile, follow these steps.
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab. There, you can follow the status of the new export. The page isn't automatically refreshed. To update the status information, you must select **Refresh** on the grid toolbar.
 1. When the job is finished, select **Download** on the Action Pane to download the data as a CSV file and save it in your local download folder.
 
-### Create and manage profiles for exporting to CSV
+### <a name="new-csv-profiles"></a>Create and manage profiles for export to CSV
 
-Each time that your organization has to run a new type of data export, a manager or admin must create a new data export profile. After the profile is created, it becomes available to users, who can run it as often as they require. Each profile exports either to Supply Chain Management or an CSV file, depending on how to set them up. This section describes how to create a profile that exports to CSV.
+Each time that your organization has to run a new type of data export, a manager or admin must create a new data export profile. After the profile is created, it becomes available to users, who can run it as often as they require. Each profile exports to either Supply Chain Management or a CSV file, depending on how you set it up. This section describes how to create a profile that exports to CSV.
 
 1. On the navigation pane, select **Data management** \> **Export**.
 1. On the Action Pane, select **New**.
@@ -116,7 +118,7 @@ Each time that your organization has to run a new type of data export, a manager
         - To set up one or more filter rules to apply to the exported data, select **Filter data source** on the toolbar.
 
 1. When you've finished selecting and setting up the time series to export, select **Next**.
-1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
+1. On the **Set run schedule** page, you can set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
 1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data export profiles to export to CSV](#existing-csv-profiles) section.
