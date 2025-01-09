@@ -70,23 +70,23 @@ For a comparison of the terminology and features of the **Landed cost** and **Tr
 
 ## Landed cost process flow overview
 
-Landed cost can be run both with and without generating goods in transit orders. Both processes start with an inbound demand source document, followed by creating a new voyage, adding the source document order line to a container in that voyage, and adding costs to the voyage. The source document must be invoiced to post estimated landed costs and generate a goods-in-transit order if applicable. A vendor invoice journal must also be posted to post the actual costs. Product receipt is not always mandatory and can happen at different points in the flow.
+Landed cost can be run both with and without generating goods in transit orders. Both processes start with an inbound demand source document, followed by creating a new voyage, adding the source document order line to a container in that voyage, and adding costs to the voyage. The source document must be invoiced to post estimated landed costs and generate a goods-in-transit order if applicable. A vendor invoice journal must also be posted to post the actual costs. Product receipt isn't always mandatory and can happen at different points in the flow.
 
 The delivery of a goods-in-transit order can be date-tracked using the **Tracking control center** page. Learn more in [Track inbound voyages and shipping container journeys](inbound-tracking.md). You can use the **Inquiries** feature to look up information across landed cost-enabled orders such as looking up an item or container and viewing related information. Various reports can be viewed and generated using the **Reports** functionality [Landed cost reports](landed-cost-reports.md).
 
 ### Setup / Configuration
 
-If you're using landed cost with goods in transit orders enabled, the following must be configured:
+If you're using landed cost with goods in transit orders enabled, the following configurations must be in place:
 
-- Goods in transit management must be set to *Yes* on the**Terms of delivery.**
+- Goods in transit management must be set to *Yes* on the **Terms of delivery.**
 - **Terms of delivery** must be set on the purchase or transfer order header.
 - Additional goods in transit and under-delivery warehouses must be set up.
 
 Learn more in [Goods-in-transit processing](in-transit-processing.md).
 
-If you're using landed cost without goods in transit orders, no additional warehouses need to be configured, and terms of delivery are not required on the purchase or transfer order.
+If you're using landed cost without goods in transit orders, no additional warehouses need to be configured, and terms of delivery aren't required on the purchase or transfer order.
 
-The costing, financial and inventory impact of posting estimated and actual costs are based on configurations set within the module. Learn more in [Landed cost parameters setup](landed-cost-parameters.md). <!-- KFM: where is &lt;**Costing parameters set up**&gt;  ? -->
+The costing, financial, and inventory impact of posting estimated and actual costs are based on configurations set within the module. Learn more in [Landed cost parameters setup](landed-cost-parameters.md) and [Costing parameter values setup](costing-parameters-setup.md).
 
 The following diagram shows the process flow for landed cost without goods-in-transit orders enabled.
 
@@ -94,7 +94,7 @@ The following diagram shows the process flow for landed cost without goods-in-tr
 
 The following diagram shows the process flow for landed cost with goods-in-transit orders enabled.
 
-:::image type="content" source="media/landed-cost-with-git-orders.png" alt-text="Diagram showing the process flow for landed cost without goods-in-transit orders enabled." lightbox="media/landed-cost-with-git-orders.png":::
+:::image type="content" source="media/landed-cost-with-git-orders.png" alt-text="Diagram showing the process flow for landed cost with goods-in-transit orders enabled." lightbox="media/landed-cost-with-git-orders.png":::
 
 ### Inbound demand source document
 
@@ -134,7 +134,7 @@ Learn more in [Goods-in-transit processing](in-transit-processing.md).
 
 #### Processing over and under transactions
 
-Landed cost processes the over and under receiving of goods. This happens if the quantity received from a goods in transit enabled purchase or transfer order does not match the ordered quantity, and if this difference to ordered quantity exceeds configured rules and tolerances.
+Landed cost processes the over and under receiving of goods. This happens if the quantity received from a goods in transit enabled purchase or transfer order doesn't match the ordered quantity, and if this difference to ordered quantity exceeds configured rules and tolerances.
 
 Learn more in [Over/under transactions](over-under-transactions.md).
 
@@ -146,7 +146,7 @@ This step reflects an invoice received from the vendor in Supply Chain Managemen
 
 ## Limitations of the landed cost module
 
-The following are not supported in the current landed cost module:
+The following aren't supported in the current landed cost module:
 
 - Project purchase orders
 - Purchase orders with catch-weight enabled items
