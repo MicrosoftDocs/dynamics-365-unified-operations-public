@@ -25,18 +25,21 @@ You can also inquire into the inventory and warehouse transactions to explain th
 
 ## Query your on-hand inventory
 
-To check the availability of inventory, go to **Inventory management \> Inquiries and reports \> On-hand list**.
-
 The **On-hand list** page is automatically updated when transactions are made in inventory. Those transactions might be forecasted, physical, or financial transactions.
 
-Use the following tools to find the set of products that you're looking for:
+To check the availability of inventory, follow these steps.
 
-- On the Action Pane, select [**Dimensions**](#dimensions) to open a dialog box where you can add or remove columns that are shown in the **On-hand** grid.
-- In the [**Filters** pane](#filters-pane), enter values for specific fields to show only records that match those values. Note that filters that you define here apply to source tables that might be aggregated later, according to the dimensions that you've selected to show. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
-- In the **Filters** pane, select **Apply** to generate the list of matching on-hand inventory in the **On-hand** grid.
-- In the **On-hand** grid, select any column heading to sort or filter by values in that column. The **Filter** field at the top of the grid provides additional filtering options. Unlike the filter pane, these filters only apply to the presentation of results&mdash;they don't change the result values.
+1. Go to **Inventory management \> Inquiries and reports \> On-hand list**.
+1. In the [**Filters** pane](#filters-pane), specify the product and locations for which you wish to see the on-hand information. You can add or remove filters as needed by using the **Add** and **Close** (X) buttons, respectively. Select **Apply** to see the results. The more filters you specify, the more specific the on-hand results will be, resulting in fewer rows and/or lower on-hand values.
+1. On the Action Pane, select [**Dimensions**](#dimensions) to open a dialog where you can specify the dimensions used to present your on-hand inventory. The more dimensions you choose, the more granular the results will be. For example, if you add the storage dimension **Location**, a **Location** column will be added to the grid and the results will expand from showing one row per warehouse to showing one row per warehouse location.
 
-For each matching item, the **On-hand** grid provides the following columns of inventory information.
+    > [!TIP]
+    > 
+    > - You can save the set of dimensions that you use most often so that the page will automatically show those dimensions each time you open it. To do so, set **Save setup** to *Yes* in the **Dimensions display** dialog before closing it.
+    > - The on-hand information is easiest to understand when the dimensions displayed are aligned with filters you're using. See the [examples](#examples) provided later in this article to learn how different combinations of filters and dimensions lead to different results.
+    > - You can further filter the results using the **Filter** field at the top of the grid and the drop-down lists in the column headers. Unlike the **Filters** pane, these filters only apply to the presentation of results&mdash;they don't change the result values.
+
+The **On-hand** grid provides the following columns of inventory information.
 
 | Column | Description |
 |---|---|
