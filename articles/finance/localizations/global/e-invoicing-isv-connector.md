@@ -25,7 +25,7 @@ This article explains how to configure and use the Electronic Invoicing service 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - Your company must have a separate signed service agreement with an ISV that will provide electronic document delivery service. Additionally, you must obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV last-mile connector.
-- Become familiar with Electronic invoicing functionality. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Become familiar with Electronic invoicing functionality. For more information, see [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Consult the list of available country/region-specific [Electronic invoicing features](e-invoicing-country-specific-availability.md). The capability to use the ISV last-mile connector for submission complements this list.
 
 ## Integration with Edicom
@@ -154,8 +154,8 @@ For more information about electronic invoicing in Chile, see [Get started with 
 
 ## Additional resources
 
-- [Electronic invoicing administration and integration components](../global/e-invoicing-administration-integration-components.md)
-- [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md)
-- [Work with Globalization features](../global/e-invoicing-working-globalization-features.md)
+- [Electronic invoicing administration and integration components](../global/gs-e-invoicing-administration-integration-components.md)
+- [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md)
+- [Work with Globalization features](../global/gs-e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
