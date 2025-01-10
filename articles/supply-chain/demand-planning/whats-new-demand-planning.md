@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: conceptual
-ms.date: 09/25/2024
+ms.date: 11/29/2024
 ms.custom: 
   - bap-template
 ---
@@ -23,23 +23,23 @@ This version of Demand planning adds several new features, as described in the f
 
 #### Select input for forecasts and calculations at the model level
 
-In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* action card, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and/or dimensions (such as products and locations). As with all action cards, you access these settings by opening the **Actions** menu (ellipsis button) on the card.
+In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* step, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and/or dimensions (such as products and locations). As with all steps, you access these settings by opening the **Actions** menu (ellipsis button) on the card. Learn more in [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
 
-#### Apply input filters in calculation profiles
+#### Apply input filters in calculation models
 
-You can now filter the input used in calculation profiles. Filters can be based on dates and/or dimensions (such as products and locations). It was already possible to apply filters in forecast profiles.
+You can now filter the input used in calculation models. Filters can be based on dates and/or dimensions (such as products and locations). It was already possible to apply filters in forecast models. Learn more in [Design calculation models](design-calculation-models.md).
 
 #### Analyze demand plans with Copilot
 
-Copilot cursor prompts in Demand planning let you explore specific data points or data ranges in a forecast or time series. Each prompt presents a set of predefined questions that you can ask Copilot, which then returns insights into notable shifts, trends, anomalies, or deviations across multiple dimensions. Copilot replies using natural-language summaries and visuals, which make it easy for you to digest the information and use it to make informed decisions.
+Copilot cursor prompts in Demand planning let you explore specific data points or data ranges in a forecast or time series. Each prompt presents a set of predefined questions that you can ask Copilot, which then returns insights into notable shifts, trends, anomalies, or deviations across multiple dimensions. Copilot replies using natural-language summaries and visuals, which make it easy for you to digest the information and use it to make informed decisions. Learn more in [Analyze demand plans with Copilot](demand-planning-copilot.md).
 
 #### Forecast with signals (preview)
 
-One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* action card, which lets planners include any signal (such as inflation or weather data) as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* action card lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release.
+One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* step, which lets planners include any signal (such as inflation or weather data) as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* step lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release. Learn more in [Forecast with signals](forecasts-with-signals.md).
 
 #### Autodetect seasonality patterns (preview)
 
-Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy.
+Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy. Automatic seasonality detection is only available when you use the ARIMA [forecast algorithm](forecast-algorithm-types.md). Learn more in [Design forecast models](design-forecast-models.md#forecast-steps).
 
 ### New fixes and improvements in version 1.0.0.1700
 
