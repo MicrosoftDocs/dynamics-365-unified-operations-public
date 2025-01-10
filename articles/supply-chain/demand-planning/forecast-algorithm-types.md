@@ -168,15 +168,9 @@ Here is a step-by-step explanation of the algorithm:
 
     *ETS(A,A,A)* – Additive error, additive trend, additive seasonality.
 
-3. **Specify the initial states.** Initial values for the *level*, *trend*, and *seasonality* states of the model are calculated to start the recursive update process.
-4. **Update the states.** As new data points arrive, the states of the model (level, trend, and seasonality) are updated by using weighted smoothing equations. The following general equations are used:
-
-    - *Level (ℓ)* – A representation of the current smoothed value of the series.
-    - *Trend (b)* – A representation of the rate of change in the series.
-    - *Seasonality (s)* – Adjustment for periodic patterns.
-    - *Error (e)* – The difference between the actual and predicted values.
-
-5. **Forecast.** Future values are predicted by combining the most recent estimates of the *level*, *trend*, and *seasonality* components.
+3. **Specify the initial states.** Initial values for the *level*, *trend*, and *seasonality* states of the model are calculated to start the recursive update process. The *level* is the baseline forecast, which is updated as the model is trained.
+4. **Update the states.** As new data points arrive, the states of the model (*level*, *trend*, and *seasonality*) are updated by using weighted smoothing equations.
+5. **Forecast.** Future values are predicted by combining the most recent estimates of the *level*, *trend*, and *seasonality*.
 
 ### ETS algorithm equation
 
