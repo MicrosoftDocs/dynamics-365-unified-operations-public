@@ -3405,7 +3405,9 @@
                     - name: Latin America overview
                       href: localizations/iberoamerica/latam-overview.md
                     - name: Latin America parameters
-                      href: localizations/iberoamerica/ltm-core-latam-parameters.md
+                      items:
+                      - name: Latin America parameters
+                        href: localizations/iberoamerica/ltm-core-latam-parameters.md
                     - name: Field list configuration for Latin America
                       href: localizations/iberoamerica/ltm-core-field-master-lists.md
                     - name: Taxpayer types for Latin America
