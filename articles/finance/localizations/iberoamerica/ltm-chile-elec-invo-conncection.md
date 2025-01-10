@@ -39,7 +39,9 @@ Before you begin the procedures in this article, the following prerequisites mus
     - E-Invoicing service workspace designer
     - Execute update actions for submitted documents
 
-1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
+[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md),
+[Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Customer invoice context model
     - Inventory e-invoice (CL)
