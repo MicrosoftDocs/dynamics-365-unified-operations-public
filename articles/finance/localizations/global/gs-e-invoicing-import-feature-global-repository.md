@@ -4,7 +4,7 @@ description: Learn how to import Globalization features from the Dataverse repos
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 11/04/2024
+ms.date: 01/10/2025
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Application User
