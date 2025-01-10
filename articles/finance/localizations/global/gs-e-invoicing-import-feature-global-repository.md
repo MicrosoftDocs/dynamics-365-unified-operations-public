@@ -53,7 +53,7 @@ You can now work with the imported feature. You can review its details and creat
 > [!NOTE]
 > You can modify a feature only if it was created by the configuration provider that's currently active. You can create a new feature by using the original feature as a base. You can then make the required changes or set up the parameters.
 
-## Learn more
+## Additional information
 
 - [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md)
 
