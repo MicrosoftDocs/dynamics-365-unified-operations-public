@@ -63,7 +63,7 @@ For general setup information, see [EU Sales list reporting](../europe/emea-eu-s
 
 The company name is used in the XML file for the EU sales list report. The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .xlsx file for the EU sales list report.
 
-To set up and use EU sales list reporting for multiple VAT registrations, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) and [Reporting for multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations).
+To set up and use EU sales list reporting for multiple VAT registrations, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) and [Reporting for multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md).
 
 ### Set up information about the company
 
@@ -84,7 +84,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 
 ### Import Electronic reporting configurations
 
-- In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
+Import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list from Dataverse:
     - EU Sales list model
     - EU Sales list by columns report
     - EU Sales list by rows report
