@@ -123,15 +123,15 @@ For general information about the types of transactions that are included in the
 
     | Field                       | Description                                                                         |
     |-----------------------------|-------------------------------------------------------------------------------------|
-    | Reporting period            | Select **Monthly** or **Quarterly**.                                                |
-    | From date                   | Select the start date for the report.                                               |
-    | Generate file               | Set this option to **Yes** to generate an .xml file for your EU sales list report.  |
-    | File name                   | Enter the name of the .xml file.                                                    |
-    | Generate report             | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
-    | Report file name            | Enter the name of the .xlsx file.                                                   |
-    | Authority                   | Select the sales tax authority.                                                     |
-    | Correction                  | Unmark the checkbox.                                                     |
-    | I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code | Set this option to **Yes** to generate files.             |
+    | **Reporting period**            | Select **Monthly** or **Quarterly**.                                                |
+    | **From date**                   | Select the start date for the report.                                               |
+    | **Generate file**              | Set this option to **Yes** to generate an .xml file for your EU sales list report.  |
+    | **File name**                   | Enter the name of the .xml file.                                                    |
+    | **Generate report**             | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
+    | **Report file name**            | Enter the name of the .xlsx file.                                                   |
+    | **Authority**                   | Select the sales tax authority.                                                     |
+    | **Correction**                  | Unmark the checkbox.                                                     |
+    | **I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code** | Set this option to **Yes** to generate files.             |
 
 6. Select **OK**, and review the generated reports.
 
@@ -146,15 +146,15 @@ For general information about the types of transactions that are included in the
 
     | Field                       | Description                                                                         |
     |-----------------------------|-------------------------------------------------------------------------------------|
-    | Reporting period            | Select **Monthly** or **Quarterly**.                                                |
-    | From date                   | Select the start date for the report.                                               |
-    | Generate file               | Set this option to **Yes** to generate an .xml file for your EU sales list report.  |
-    | File name                   | Enter the name of the .xml file.                                                    |
-    | Generate report             | **Generate report** checkbox is not available when you report a correction. |
-    | Report file name            | **Report file name** field is not available when you report a correction.                                                   |
-    | Authority                   | Select the sales tax authority.                                                     |
-    | Correction                  | Select the checkbox. **Generate report** checkbox and **Report file name** field are not available when you report a correction. |
-    | I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code | Set this option to **Yes** to generate files.             |
+    | **Reporting period**            | Select **Monthly** or **Quarterly**.                                                |
+    | **From date**                   | Select the start date for the report.                                               |
+    | **Generate file**               | Set this option to **Yes** to generate an .xml file for your EU sales list report.  |
+    | **File name**                   | Enter the name of the .xml file.                                                    |
+    | **Generate report**             | **Generate report** checkbox is not available when you report a correction. |
+    | **Report file name**            | **Report file name** field is not available when you report a correction.                                                   |
+    | **Authority**                   | Select the sales tax authority.                                                     |
+    | **Correction**                  | Select the checkbox. **Generate report** checkbox and **Report file name** field are not available when you report a correction. |
+    | **I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code** | Set this option to **Yes** to generate files.             |
 
 7. Select **OK**, and review the generated file.
 
