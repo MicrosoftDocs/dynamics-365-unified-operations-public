@@ -55,7 +55,7 @@ Possibility to report corrections to EU sales list in XML for Poland is supporte
 | 10.0.43 | ... |
 | 10.0.42 | ... |
 | 10.0.41 | ... |
-| 10.0.41 | ... |
+| 10.0.40 | ... |
 
 ## Setup
 
