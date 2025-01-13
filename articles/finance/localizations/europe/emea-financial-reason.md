@@ -1,12 +1,12 @@
 ---
-title: Financial reason feature extension
+title: Financial reason
 description: Learn about the extension to the Financial reason feature, including a step-by-step process on setting up a predefined list of financial reasons.
 author: liza-golub
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 01/13/2025
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2021-11-01
 ms.dyn365.ops.version: AX 10.0.21
