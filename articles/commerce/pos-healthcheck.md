@@ -78,6 +78,14 @@ The two out-of-box network health checks listed below are always included in the
 | Retail Server connectivity | The Retail Server connectivity health check verifies that the terminal can communicate with Retail Server and the channel database, and verifies that real-time service calls can be made to Commerce headquarters. |
 | Network latency            | The network latency health check tests the network latency between the terminal and Retail Server. The test returns the average latency for 10 calls to Retail Server in a five-second period. |
 
+To provide additional insights on the network connectivity and performance, and to help admins analyse any app issues that may be linked to network conenctivity during  speciic period of time, following health check charts have been added. 
+
+- **Connection history** - Provides insights on whether the connectivity was with **internet access**, **local access**  with no internet or **no access** at all- The chart shows an hourly view for a period of 24 hours. The time period can however be adjusted and can be narrowed to minutes to get insights on network fluctuations if any during a specific period when app issues were noticed.
+- **Connection type**- Provides insights on the type of connection used by the point of sale device to connect to the internet. 
+- **WI-FI signal strength** Provides insights on the WI-FI signal strength quality for a period of 24 hours. The timing can be narrowed to minutes to get detailed insights on any Wi-fi fluctuations that may be responsible to app issues during specific times in a day.
+
+To access these charts, go to **View connection history report** link on the **About** tab.
+
 #### Network latency health check
 
 Network latency health check results are categorized as shown in the following table.
