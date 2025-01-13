@@ -47,7 +47,7 @@ As of version 10.0.44 of Dynamics 365 Finance, you can also report corrections t
     - Total amount of services after correction
     - Total amount of triangular trade after correction
 
-Possibility to report corrections to EU sales list in XML for Poland is supported as of version ... of `EU Sales list (PL)` electronic reporting format. This version of the format can be imported and used in  in the following or later versions of Finance.
+Possibility to report corrections to EU sales list in XML for Poland is supported as of version ... of `EU Sales list (PL)` electronic reporting format. This version of the format can be imported and used in the following or later versions of Finance.
 
 | Version | Build |
 |---------|-------|
