@@ -1900,6 +1900,8 @@
                       href: general-ledger/tasks/view-posted-sales-tax-transactions.md
                     - name: Print the Sales tax payment by code report
                       href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: Financial reason
+                      href: localizations/europe/emea-financial-reason.md
                     - name: Sales tax troubleshooting
                       items:
                         - name: Tax isn't calculated or the tax amount is zero
@@ -2602,8 +2604,6 @@
                           href: localizations/emea-date-vendor-vat-register.md
                     - name: View transactions on settlement
                       href: localizations/europe/emea-transactions-settlement-form.md
-                    - name: Financial reason
-                      href: localizations/europe/emea-financial-reason.md
                 - name: Finland
                   items:
                     - name: Finland overview
