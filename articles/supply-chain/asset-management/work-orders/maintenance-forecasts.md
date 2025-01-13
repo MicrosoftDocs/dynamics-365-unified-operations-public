@@ -20,8 +20,7 @@ When you create a work order, you create work order jobs that have related asset
 You might be able to add forecast lines to a work order or delete them from a work order. The setup of the work order lifecycle state, the related project type, and the stage rules that are related to the project type determine whether you can add or edit forecast lines. For more information about work order lifecycle states and related project stages, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
-
-2. Select the work order in the list, and then, on the Action Pane, open the **Work order** tab and, from the **Project** group, select **Forecast**. The **Work order maintenance forecast** page shows forecast lines from the maintenance job type selected on the work order job.
+2. Select the work order in the list, and then, on the Action Pane, on the **Work order** tab, in the **Project** group, select **Forecast**. The **Work order maintenance forecast** page shows forecast lines from the maintenance job type that is selected on the work order job.
 
 ## Add an hours forecast to a work order
 
@@ -75,7 +74,7 @@ To get an overview that shows where the item on the selected line is used in rel
 1. In the **Line property** field, select the type of charge that should be used on the line.
 
 > [!NOTE]
-> The **Maintenance forecast totals** FastTab shows an overview of the number of lines that have been created, for the selected work order job and for the work order, on each FastTab. It also shows the total forecasted work hours for the work order job and the work order.
+> The **Maintenance forecast totals** FastTab shows an overview of the number of lines that were created for the selected work order job and the work order on each FastTab. It also shows the total forecasted work hours for the work order job and the work order.
 
 ## Automatic update of work order forecasts
 
@@ -83,9 +82,9 @@ If hour costs, item costs, and expenses are updated in other modules, work order
 
 1. Go to **Asset management** \> **Periodic** \> **Forecast** \> **Update work order forecast**.
 
-    :::image type="content" source="media/07-work-orders.png" alt-text="Screenshot of the Update work order forecast dialog." lightbox="media/07-work-orders.png":::
+    :::image type="content" source="media/07-work-orders.png" alt-text="Screenshot of the Update work order forecast dialog box." lightbox="media/07-work-orders.png":::
 
-2. In the **Update work order forecast** dialog, on the **Records to include** FastTab, you can add selections regarding specific work orders or work order jobs, as you require. Select **Filter** to make the relevant selections.
+2. In the **Update work order forecast** dialog box, on the **Records to include** FastTab, you can select **Filter** to add selections that are related to specific work orders or work order jobs, as you require.
 3. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 4. Select **OK** to start the forecast update.
 
