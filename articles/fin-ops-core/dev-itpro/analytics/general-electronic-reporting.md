@@ -1,7 +1,7 @@
 ---
 title: Electronic reporting (ER) overview
 description: Learn about the Electronic reporting tool through an overview. It describes key concepts, supported scenarios, and formats that are part of the solution.
-author: kfend
+author: twheeloc
 ms.author: filatovm
 ms.topic: overview
 ms.date: 11/02/2021
