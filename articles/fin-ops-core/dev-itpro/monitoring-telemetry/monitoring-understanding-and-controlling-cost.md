@@ -1,7 +1,7 @@
 ---
 title: Understanding and controlling cost.
 description: Provides information about the various cost and pricing options.
-author: kesaelen
+author: kennysaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024

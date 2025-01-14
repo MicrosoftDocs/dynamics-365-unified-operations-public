@@ -1,7 +1,7 @@
 ---
 title: Available Telemetry
 description: Overview of the available telemetry in the Monitoring and Telemetry feature.  
-author: kesaelen
+author: kennysaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024

@@ -1,7 +1,7 @@
 ---
 title: Analyze and monitor telemetry with Azure Data Explorer
 description: Learn how to query Dynamics 365 Finance & Supply Chain Management telemetry with Azure Data Explorer.  
-author: kesaelen
+author: kennysaelen
 ms.topic: how-to
 ms.custom: 
   - bap-template

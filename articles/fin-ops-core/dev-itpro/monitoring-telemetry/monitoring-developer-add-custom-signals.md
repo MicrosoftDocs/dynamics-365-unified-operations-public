@@ -1,7 +1,7 @@
 ---
 title: Adding custom telemetry signals
 description: Learn how to add custom telemetry signals in Dynamics 365 Finance & Supply Chain Management.  
-author: kesaelen
+author: kennysaelen
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024

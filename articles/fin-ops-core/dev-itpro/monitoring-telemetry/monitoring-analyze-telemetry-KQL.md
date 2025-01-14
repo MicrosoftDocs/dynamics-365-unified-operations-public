@@ -1,7 +1,7 @@
 ---
 title: Analyze and monitor telemetry with KQL
 description: Learn how to query Dynamics 365 Finance & Supply Chain Management telemetry with KQL.  
-author: kesaelen
+author: kennysaelen
 ms.topic: how-to
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry

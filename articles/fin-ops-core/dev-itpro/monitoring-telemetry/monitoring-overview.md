@@ -1,7 +1,7 @@
 ---
 title: Monitoring and Telemetry overview
 description: This article explains how to get started with the Application Insights integration for finance and 
-author: kesaelen
+author: kennysaelen
 ms.topic: get-started
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
