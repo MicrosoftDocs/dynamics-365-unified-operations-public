@@ -45,11 +45,11 @@ You can use Kusto queries as the data source in many places. For example:
 
 ## Where can I learn more about KQL?
 
-The Kusto Query Language is very well documented. Go to [Kusto Query Language (KQL)](https://learn.microsoft.com/kusto/query/?view=microsoft-fabric) in the Azure Data Explorer documentation.
+The Kusto Query Language is very well documented. Go to [Kusto Query Language (KQL)](/kusto/query/?view=microsoft-fabric) in the Azure Data Explorer documentation.
 
 ## Which tools can I use (KQL editors and clients)?
 
-To get an overview of the different tools, go to [Azure Data Explorer tools and integrations overview](https://learn.microsoft.com/azure/data-explorer/integrate-overview?tabs=connectors) in the Azure Data Explorer documentation.
+To get an overview of the different tools, go to [Azure Data Explorer tools and integrations overview](/azure/data-explorer/integrate-overview?tabs=connectors) in the Azure Data Explorer documentation.
 
 ## How can I query telemetry from Log Analytics?
 

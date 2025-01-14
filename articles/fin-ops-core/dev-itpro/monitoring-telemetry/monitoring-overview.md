@@ -19,9 +19,9 @@ This feature addresses the following needs:
 - Gather telemetry to gain insights on how the application is used.
 - Allows for developers and admins to gather additional information in diagnosing scenarios.
 - Improve efficiency in detecting, diagnosing and troubleshooting issues, reducing the overall time resolution.
-- Enable proactive alerting through standard capabilities provided by [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].  
+- Enable proactive alerting through standard capabilities provided by [!INCLUDE[appinsights](../includes/azure-application-insights-name.md)].  
 
-[![Monitoring and Telemetry Feature.](./images/monitoring-overview-userflows.png)](./monitoring-overview-userflows.png)
+[![Monitoring and Telemetry Feature.](./images/monitoring-overview-userflows.png)](../monitoring-overview-userflows.png)
 
 > [!NOTE]
 > The emitted telemetry is not collected by Microsoft for support or other operational reporting. Instead, the data is customer owned and customer driven.
@@ -34,11 +34,11 @@ For more information, see [Gathering requirements](./monitoring-gathering-requir
 
 ## Getting started
 
-To get started configuring and using [!INCLUDE[monitoringtelemetry](./includes/finops-monitoring-feature-name.md)], refer to [Getting started](./monitoring-getting-started.md).
+To get started configuring and using [!INCLUDE[monitoringtelemetry](../includes/finops-monitoring-feature-name.md)], refer to [Getting started](./monitoring-getting-started.md).
 
 ## Available telemetry
 
-[!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] provides a set of telemetry signals out of the box. See [Available telemetry](./monitoring-available-telemetry.md) for a list of all available signals.
+[!INCLUDE[d365foscm](../includes/finops-product-name-long.md)] provides a set of telemetry signals out of the box. See [Available telemetry](./monitoring-available-telemetry.md) for a list of all available signals.
 
 ## Extending Telemetry
 
@@ -46,4 +46,4 @@ On top of the out of the box telemetry signals it is possible to add customer te
 
 ## Understanding cost and pricing options
 
-Storing telemetry in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] does come with a cost. To understand more about associated cost and pricing options, see [Controlling telemetry cost](./monitoring-controlling-telemetry-costs.md).
+Storing telemetry in [!INCLUDE[appinsights](../includes/azure-application-insights-name.md)] does come with a cost. To understand more about associated cost and pricing options, see [Controlling telemetry cost](./monitoring-controlling-telemetry-costs.md).

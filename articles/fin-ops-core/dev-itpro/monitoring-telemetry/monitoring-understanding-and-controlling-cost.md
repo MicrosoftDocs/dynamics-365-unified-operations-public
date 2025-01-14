@@ -17,7 +17,7 @@ Managing telemetry cost in Dynamics 365 is crucial, as data sent to Azure Applic
 ## Understanding Telemetry Costs
 Azure Application Insights is an extension on top of Azure Monitor and the cost of Azure Monitor is including many aspects, but the main driver is ingestion and retention of data. Azure Application Insights provides the necessary tools to gain insights into the current usage, provides ways to automate retrieval of usage cost information and provides ways to set thresholds and alert when exceeding those thresholds.
 
-To have a better understanding of all the cost aspects, see [Azure Monitor cost and usage](https://learn.microsoft.com/azure/azure-monitor/cost-usage).
+To have a better understanding of all the cost aspects, see [Azure Monitor cost and usage](/azure/azure-monitor/cost-usage).
 
 ## Strategies for Controlling Telemetry Costs
 
@@ -37,7 +37,7 @@ Sampling provides way to reduce telemetry traffic, data costs, and storage costs
 - **Implement Sampling**: Use sampling to collect a representative subset of telemetry data. This method reduces data ingestion volumes and costs without significantly compromising insights.
 - **Adaptive Sampling**: Leverage adaptive sampling features to automatically adjust the sampling rate based on traffic patterns, ensuring efficient data collection.
 
-For more information about sampling in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], see [Sampling in Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api).
+For more information about sampling in [!INCLUDE[appinsights](../includes/azure-application-insights-name.md)], see [Sampling in Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api).
 
 ### Monitoring and Alerts
 
@@ -46,17 +46,17 @@ For more information about sampling in [!INCLUDE[appinsights](./includes/azure-a
 
 ## Best Practices from Azure Application Insights Team
 
-- **[Workspace-Based Resources](https://learn.microsoft.com/azure/azure-monitor/best-practices-cost)**: Ensure that your Application Insights resources are workspace-based to take advantage of cost-saving features like Basic Logs and commitment tiers. 
+- **[Workspace-Based Resources](/azure/azure-monitor/best-practices-cost)**: Ensure that your Application Insights resources are workspace-based to take advantage of cost-saving features like Basic Logs and commitment tiers. 
 - **Data Ingestion Management**: Configure data collection to avoid unnecessary ingestion. Regularly review and adjust the types and amounts of data collected to align with your monitoring needs.
 - **Retention and Archiving Configuration**: Set appropriate retention periods for different data types and utilize archiving for long-term storage to manage costs effectively.
 
 ## Additional Resources
 
-- **[Well-Architected Framework Perspective on Application Insights](https://learn.microsoft.com/azure/well-architected/service-guides/application-insights)**
+- **[Well-Architected Framework Perspective on Application Insights](/azure/well-architected/service-guides/application-insights)**
 Provides best practices for Application Insights based on the five pillars of the Azure Well-Architected Framework. 
-- **[Cost Optimization in Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/best-practices-cost)**
+- **[Cost Optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost)**
 Offers recommendations on configuring data collection and retention to optimize costs in Azure Monitor, applicable to Application Insights. 
-- **[Monitoring and Telemetry Using Application Insights](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)**
-Discusses how to set up and use Application Insights for monitoring in [!INCLUDE[finops-product-name-short](./includes/finops-product-name-short.md)].
+- **[Monitoring and Telemetry Using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)**
+Discusses how to set up and use Application Insights for monitoring in [!INCLUDE[finops-product-name-short](../includes/finops-product-name-short.md)].
 
-By implementing these strategies and adhering to best practices, organizations can effectively control telemetry costs in [!INCLUDE[finops-product-name-short](./includes/finops-product-name-short.md)] while maintaining comprehensive monitoring capabilities.
+By implementing these strategies and adhering to best practices, organizations can effectively control telemetry costs in [!INCLUDE[finops-product-name-short](../includes/finops-product-name-short.md)] while maintaining comprehensive monitoring capabilities.
