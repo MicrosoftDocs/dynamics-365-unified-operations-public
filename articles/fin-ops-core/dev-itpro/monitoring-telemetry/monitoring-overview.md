@@ -10,7 +10,7 @@ ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
 
-# Monitoring and telemetry using Application Insights
+# Monitoring and Telemetry overview
 
 The [!INCLUDE[monitoringtelemetry](includes/finops-monitoring-feature-name.md)] feature is a direct, point-to-point integration between a [!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] instance and the target [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] destination. [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] is a service hosted within Azure that gathers telemetry data for analysis and presentation. 
 
