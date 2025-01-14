@@ -107,9 +107,9 @@ Create a detailed requirements document that can guide the design and implementa
 
 Explore these Microsoft resources for additional guidance on building monitoring and telemetry solutions:
 
-- [Azure Architecture Center: Monitoring and Diagnostics Guidance](https://learn.microsoft.com/azure/architecture/best-practices/monitoring)
-- [Azure Well-Architected Framework: Designing a Reliable Monitoring and Alerting Strategy](https://learn.microsoft.com/azure/well-architected/reliability/monitoring-alerting-strategy)
-- [Azure Well-Architected Framework: Designing and Creating a Monitoring System](https://learn.microsoft.com/azure/well-architected/operational-excellence/observability)
-- [Azure Monitor: Planning Your Implementation](https://learn.microsoft.com/azure/azure-monitor/best-practices-plan)
+- [Azure Architecture Center: Monitoring and Diagnostics Guidance](/azure/architecture/best-practices/monitoring)
+- [Azure Well-Architected Framework: Designing a Reliable Monitoring and Alerting Strategy](/azure/well-architected/reliability/monitoring-alerting-strategy)
+- [Azure Well-Architected Framework: Designing and Creating a Monitoring System](/azure/well-architected/operational-excellence/observability)
+- [Azure Monitor: Planning Your Implementation](/azure/azure-monitor/best-practices-plan)
 
 By following these steps, you can ensure that your monitoring and telemetry solution is tailored to your team’s needs and provides maximum value. Engage all relevant stakeholders and revisit these requirements periodically to adapt to changing business and technical needs.

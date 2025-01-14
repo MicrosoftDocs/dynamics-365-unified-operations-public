@@ -17,7 +17,7 @@ When the Monitoring and Telemetry feature is activated, telemetry is emitted to 
 
 The main entry point for logging custom telemetry is through the **SysApplicationInsightsTelemetryLogger** class. It encupsulates the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client and provides access to the necessary operations to track an event, pageview, trace, exception or metric. 
 
-The logger uses the [static constructor pattern](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per Application Object Server (AOS) instance.
+The logger uses the [static constructor pattern](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per Application Object Server (AOS) instance.
 
 ## Telemetry data contract types
 
@@ -84,7 +84,7 @@ public static void FormRun_onFormRunCompleted(FormRun _formInstance)
 
 ### Exceptions
 
-The following example shows how to track exceptions to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsExceptionTelemetry** contract and calling the **trackException** method on the **SysApplicationInsightsTelemetryLogger**.
+The following example shows how to track exceptions to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsExceptionTelemetry** contract and calling the **trackException** method on the **SysApplicationInsightsTelemetryLogger**.
 
 ```xpp
 SysApplicationInsightsExceptionTelemetry exceptionTelemetry = SysApplicationInsightsExceptionTelemetry::newFromExceptionMessage(Args.getArg('txt'));
@@ -96,11 +96,11 @@ SysApplicationInsightsTelemetryLogger::instance().trackException(exceptionTeleme
 ```
 
 > [!NOTE]
-> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. 
+> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. 
 
 ### Traces
 
-The following example shows how to track exceptions to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsTraceTelemetry** contract and calling the **trackTrace** method on the **SysApplicationInsightsTelemetryLogger**
+The following example shows how to track exceptions to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsTraceTelemetry** contract and calling the **trackTrace** method on the **SysApplicationInsightsTelemetryLogger**
 
 ```xpp
 SysApplicationInsightsTraceTelemetry traceTelemetry = SysApplicationInsightsTraceTelemetry::newFromMessageAndSeverity('My custom trace message', Microsoft.ApplicationInsights.DataContracts.SeverityLevel::Information);
@@ -110,8 +110,8 @@ SysApplicationInsightsTelemetryLogger::instance().trackTrace(traceTelemetry);
 
 ### Metrics
 
-Interacting with metrics is different than the previous examples. Instead of using a specific data contract, we can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. The logger first gets the existing Metric instance from [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
+Interacting with metrics is different than the previous examples. Instead of using a specific data contract, we can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. The logger first gets the existing Metric instance from [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
 
-Metrics use local preaggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] after a one-minute period. Using local preaggregation is beneficial in batch processing scenarios where a lot of updates could happen to a specific metric.
+Metrics use local preaggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] after a one-minute period. Using local preaggregation is beneficial in batch processing scenarios where a lot of updates could happen to a specific metric.
 
-For a complete overview of Metrics, see [Azure Monitor Metrics overview](https://learn.microsoft.com/azure/azure-monitor/essentials/data-platform-metrics)
+For a complete overview of Metrics, see [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics)
