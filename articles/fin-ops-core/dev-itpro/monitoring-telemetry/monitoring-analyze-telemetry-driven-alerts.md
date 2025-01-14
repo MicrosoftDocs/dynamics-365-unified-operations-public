@@ -2,11 +2,11 @@
 title: Telemetry based alerts
 description: Learn how to create alerts in Azure Application Insights.  
 author: kesaelen
-ms.topic: how-to-guide
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
 ms.author: kesaelen
-ms.reviewer: kesaelen
+ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
 
