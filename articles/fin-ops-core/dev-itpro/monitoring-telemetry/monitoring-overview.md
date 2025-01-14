@@ -16,15 +16,15 @@ The [!INCLUDE[monitoringtelemetry](includes/finops-monitoring-feature-name.md)] 
 
 This feature addresses the following needs:
 
-- Gather telemetry to gain insights on how the application is used.
-- Allows for developers and admins to gather additional information in diagnosing scenarios.
-- Improve efficiency in detecting, diagnosing and troubleshooting issues, reducing the overall time resolution.
+- Gather telemetry to gain insights into how the application is used.
+- Allows developers and admins to gather additional information in diagnosing scenarios.
+- Improve efficiency in detecting, diagnosing and troubleshooting issues, reducing the overall time to resolution.
 - Enable proactive alerting through standard capabilities provided by [!INCLUDE[appinsights](includes/azure-application-insights-name.md)].  
 
 [![Monitoring and Telemetry Feature.](images/monitoring-overview-userflows.png)
 
 > [!NOTE]
-> The emitted telemetry is not collected by Microsoft for support or other operational reporting. Instead, the data is customer owned and customer driven.
+> The emitted telemetry is not collected by Microsoft for support or other operational reporting. Instead, the data is customer-owned, and customer-driven.
 
 ## Gathering monitoring requirements
 
@@ -38,11 +38,11 @@ To get started configuring and using [!INCLUDE[monitoringtelemetry](includes/fin
 
 ## Available telemetry
 
-[!INCLUDE[d365foscm](includes/finops-product-name-long.md)] provides a set of telemetry signals out of the box. See [Available telemetry](monitoring-available-telemetry.md) for a list of all available signals.
+[!INCLUDE[d365foscm](includes/finops-product-name-long.md)] provides a set of telemetry signals out-of-the-box. See [Available telemetry](monitoring-available-telemetry.md) for a list of all available signals.
 
 ## Extending Telemetry
 
-On top of the out of the box telemetry signals it is possible to add customer telemetry signals that emit information about your specific processes. See [Add custom telemetry signals](monitoring-developer-add-custom-signals.md).
+On top of the out of the box telemetry signals it is possible to add customer telemetry signals that emit information about your specific processes. For more information, see [Add custom telemetry signals](monitoring-developer-add-custom-signals.md).
 
 ## Understanding cost and pricing options
 
