@@ -1,6 +1,6 @@
 ---
 title: Analyze and monitor telemetry with KQL
-description: Learn how to query Dynamics 365 Finance & Supply Chain Management telemetry with KQL.  
+description: Learn how to query Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management telemetry with KQL.  
 author: kennysaelen
 ms.topic: how-to
 ms.custom: bap-template
@@ -13,17 +13,17 @@ ms.reviewer: johnmichalak
 
 # Analyze and monitor telemetry with KQL
 
-Telemetry from Dynamics 365 Finance & Supply Chain Management is stored in Application Insights. To query that telemetry, the _Kusto Query Language (KQL)_ is used. This article has information and links to resources to get started learning about the KQL language.
+Telemetry from Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management is stored in Application Insights. To query that telemetry, the _Kusto Query Language (KQL)_ is used. This article has information and links to resources to get started learning about the KQL language.
 
 For more information about how the telemetry is stored and the telemetry data model, see [Telemetry datamodel](monitoring-developer-telemetry-data-model.md).
 
-## Running your first KQL query
+## Run your first KQL query
 
-As a simple example, follow these steps:
+To run your first KQL query, follow these steps.
   
-1. In the Azure portal, open your Application Insights resource.
-2. In the **Monitoring** menu, select **Logs**.
-3. On the **New Query** tab, enter the following to get the last 100 traces:
+1. On the Azure portal, open your Application Insights resource.
+1. On the **Monitoring** menu, select **Logs**.
+1. To get the last 100 traces, on the **New Query** tab, enter the following:
 
     ```kql
     pageViews
@@ -45,17 +45,17 @@ You can use Kusto queries as the data source in many places. For example:
 
 ## Where can I learn more about KQL?
 
-The Kusto Query Language is very well documented. Go to [Kusto Query Language (KQL)](/kusto/query/?view=microsoft-fabric) in the Azure Data Explorer documentation.
+The Kusto Query Language is very well documented. For more information, see [Kusto Query Language (KQL)](/kusto/query/?view=microsoft-fabric).
 
 ## Which tools can I use (KQL editors and clients)?
 
-To get an overview of the different tools, go to [Azure Data Explorer tools and integrations overview](/azure/data-explorer/integrate-overview?tabs=connectors) in the Azure Data Explorer documentation.
+To get an overview of the different tools, see [Azure Data Explorer tools and integrations overview](/azure/data-explorer/integrate-overview?tabs=connectors).
 
 ## How can I query telemetry from Log Analytics?
 
 With workspace-based resources, Azure Application Insights sends telemetry to a common Azure Log Analytics workspace, providing full access to all the features of Azure Log Analytics while keeping your application, infrastructure, and platform logs in a single consolidated location. This integration allows for common Azure role-based access control across your resources and eliminates the need for cross-app/workspace queries.
 
-This table shows table names for Dynamics 365 Finance & Supply Chain Management telemetry when queried from Azure Application Insights and from Azure Log Analytics:
+This table shows table names for Finance and Supply Chain Management telemetry when queried from Azure Application Insights and from Azure Log Analytics:
 
 | Table name | Table name in Azure Log Analytics | 
 | --------- | ------------| 
@@ -67,7 +67,7 @@ This table shows table names for Dynamics 365 Finance & Supply Chain Management 
 
 ## KQL example - Listing the top 20 most used forms
 
-In Dynamics 365 Finance & Supply Chain Management form loading, times are logged as pageViews in the **pageViews** table. Using this information, you can query form loads to understand the most used forms, the slowest form loads, ...
+In Finance and Supply Chain Management form loading, times are logged as pageViews in the **pageViews** table. Using this information, you can query form loads to understand the most used forms, the slowest form loads, etc.
 
 Use this KQL code to query the top 20 form loads based on the number of times the forms were opened:
 
@@ -99,7 +99,7 @@ pageViews
 | order by ['Avg duration (s)'] desc                                                                   // List the slowest first
 ```
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
