@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Telemetry based alerts
 
-When a [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)] environment is emitting telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], this telemetry can be used to proactive alert on. Examples of alerting include:
+When a [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environment is emitting telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], this telemetry can be used to proactive alert on. Examples of alerting include:
 
 - Notify stakeholders when someone changes a customer bank account.
 - Notify system administrators when certain form loads are taking longer than usual.
@@ -27,21 +27,21 @@ You can use the following tools to define and set up alerts on telemetry events:
 
 ## No-code alerting with Power BI Metrics
 
-[!INCLUDE[pbimetrics](./includes/include-telemetry-alerting-powerbi-metrics.md)]
+[!INCLUDE[pbimetrics](includes/include-telemetry-alerting-powerbi-metrics.md)]
 
 ### Create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]
 
 If you want to create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], then do as follows:
 
 1. Open the [Azure portal](https://portal.azure.com) and locate your Application Insights resource.
-2. In the navigation pane on the left, select **Alerts**.
-3. Add a KQL alerting condition query in the condition for a custom log search.
+1. In the navigation pane on the left, select **Alerts**.
+1. Add a KQL alerting condition query in the condition for a custom log search.
 
-To read more about alerts and how to create them, go to [Azure Application Insights Alerts Overview](https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview) in the Azure documentation. 
+To read more about alerts and how to create them, go to [Azure Application Insights Alerts Overview](/azure/azure-monitor/alerts/alerts-overview) in the Azure documentation. 
 
 ### Create alerts using Azure Logic Apps and Power Automate
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. It's possible to configure custom notifications or automating certain actions triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
+Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. It's possible to configure custom notifications or automating certain actions triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
 
 The samples below can help getting started with customization and automation using Application Insights.
 
