@@ -1,5 +1,5 @@
 ---
-title: Gathering monitoring requirements
+title: Gather monitoring requirements
 description: Provides information on how to identify monitoring requirements.  
 author: kennysaelen
 ms.topic: how-to
@@ -10,88 +10,97 @@ ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
 
-# Gathering monitoring requirements
+# Gather monitoring requirements
 
-Defining the correct set of requirements is crucial to building an effective monitoring and telemetry solution in D365 and ensures that the solution aligns with your team’s needs and delivers actionable insights to maintain the health of your applications. Use this guide to establish a strong foundation for your monitoring and telemetry strategy.
+Defining the correct set of requirements is crucial to building an effective monitoring and telemetry solution in finance and operations apps and ensures that the solution aligns with your team’s needs and delivers actionable insights to maintain the health of your applications. Use this guide to establish a strong foundation for your monitoring and telemetry strategy.
 
-## Understand Your Business Objectives
+## Understand your business objectives
+
 Begin by identifying the overarching goals that your monitoring solution should support. These objectives should align with the strategic priorities of your organization.
 
-- **Example Objectives:**
+- **Example objectives:**
   - Reduce downtime and improve system availability.
   - Optimize performance to enhance user experience.
   - Monitor compliance with SLAs (Service Level Agreements).
   - Gain visibility into key business processes.
 
-## Identify Key Stakeholders
+## Identify key stakeholders
+
 Gather input from all stakeholders who will use or benefit from the monitoring solution.
 
-- **Common Stakeholders:**
+- **Common stakeholders:**
   - IT Operations teams
   - Development teams
   - Product managers
   - Customer support teams
   - Executive leadership
 
-- **Sample Questions to Ask Stakeholders:**
+- **Sample questions to ask stakeholders:**
   - What information is critical for your role?
   - What issues or pain points do you face today?
   - How do you plan to use telemetry data in your workflows?
 
-## Define Use Cases
+## Define use cases
+
 Document specific scenarios where monitoring and telemetry are required. Use cases help ensure the solution meets real-world needs.
 
-- **Sample Use Cases:**
+- **Sample use cases:**
   - Monitoring API call success and failure rates.
   - Alerting on anomalous increases in response time.
   - Monitoring P50, P95, P99 etc for Purchase order processing
   - Tracking customer interactions through a sales pipeline.
   - Measuring resource consumption to optimize costs.
 
-## Determine Metrics and KPIs
+## Determine metrics and KPIs
+
 Define the key metrics and performance indicators that provide insights into the health and performance of your application.
 
-- **Categories of Metrics:**
+- **Categories of metrics:**
   - **Performance Metrics:** Response time, throughput, latency.
   - **Error Metrics:** Exception rates, failed transaction counts.
   - **Business Metrics:** Conversion rates, revenue impact.
   - **Infrastructure Metrics:** CPU usage, memory usage, disk I/O.
 
-## Establish Alerting and Notification Requirements
+## Establish alerting and notification requirements
+
 Identify the conditions under which alerts should be triggered and determine how notifications are managed.
 
-- **Alerting Best Practices:**
+- **Alerting best practices:**
   - Set thresholds that balance sensitivity and relevance.
   - Use severity levels to prioritize alerts.
   - Define escalation paths for unresolved alerts.
 
-- **Notification Channels:**
+- **Notification channels:**
   - Email
   - SMS
   - Microsoft Teams/Slack integrations
 
-## Consider Data Retention and Privacy
+## Consider data retention and privacy
+
 Define how long telemetry data should be retained and ensure compliance with data privacy regulations.
 
 - **Retention Periods:** Align with business and compliance needs. Take costs into consideration and set archiving policy.
 - **Privacy Considerations:** Ensure PII (Personally Identifiable Information) is excluded or anonymized where necessary.
 
-## Evaluate Visualization Needs
+## Evaluate visualization needs
+
 Determine how telemetry data is to be visualized to provide actionable insights.
 
 - **Dashboards:** Create role-specific dashboards (e.g. operational, business).
 - **Reports:** Define periodic reporting needs (e.g. weekly SLA compliance).
 - **Custom Queries:** Use tools like Azure Data Explorer to explore data interactively.
 
-## Align with Organizational Governance
+## Align with organizational governance
+
 Ensure your monitoring solution adheres to your organization’s governance policies.
 
-- **Key Governance Areas:**
+- **Key governance areas:**
   - Access control for telemetry data.
   - Audit trails for changes to monitoring configurations.
   - Budgetary constraints and cost management.
 
-## Document Requirements Thoroughly
+## Document requirements thoroughly
+
 Create a detailed requirements document that can guide the design and implementation of your monitoring solution.
 
 - **Include:**
@@ -103,9 +112,9 @@ Create a detailed requirements document that can guide the design and implementa
   - Data retention policies
   - Scalability and resilience plans
 
-## Additional Resources for Further Learning
+## Related information
 
-Explore these Microsoft resources for additional guidance on building monitoring and telemetry solutions:
+Explore these Microsoft resources for more guidance on building monitoring and telemetry solutions:
 
 - [Azure Architecture Center: Monitoring and Diagnostics Guidance](/azure/architecture/best-practices/monitoring)
 - [Azure Well-Architected Framework: Designing a Reliable Monitoring and Alerting Strategy](/azure/well-architected/reliability/monitoring-alerting-strategy)
