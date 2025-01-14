@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Gather monitoring requirements
 
+[!include [banner](../includes/banner.md)]
+
 Defining the correct set of requirements is crucial to building an effective monitoring and telemetry solution in finance and operations apps and ensures that the solution aligns with your team’s needs and delivers actionable insights to maintain the health of your applications. Use this guide to establish a strong foundation for your monitoring and telemetry strategy.
 
 ## Understand your business objectives
@@ -122,3 +124,5 @@ Explore these Microsoft resources for more guidance on building monitoring and t
 - [Azure Monitor: Planning Your Implementation](/azure/azure-monitor/best-practices-plan)
 
 By following these steps, you can ensure that your monitoring and telemetry solution is tailored to your team’s needs and provides maximum value. Engage all relevant stakeholders and revisit these requirements periodically to adapt to changing business and technical needs.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

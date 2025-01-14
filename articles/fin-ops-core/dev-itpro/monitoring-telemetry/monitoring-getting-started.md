@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Get started with telemetry for finance and operations apps
 
+[!include [banner](../includes/banner.md)]
+
 This article describes how to get started to send telemetry from [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environments to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
 
 To configure your environments to send telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps. 
@@ -65,3 +67,5 @@ Provide the following configuration:
 1. On the **Configure** tab, enable each of the types of telemetry that need to be emitted.
 
    [![Application Insights Signal Configuration.](images/monitoring-getting-started-configure-signals.png)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

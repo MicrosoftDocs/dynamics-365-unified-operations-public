@@ -11,6 +11,8 @@ ms.custom: bap-template
 ---
 # Add custom telemetry signals
 
+[!include [banner](../includes/banner.md)]
+
 When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. On top of what is already emitted out-of-the-box, you can provide extensions to add your own custom telemetry signals. These signals can provide more insights into your custom processes.
 
 ## Telemetry logger
@@ -115,3 +117,5 @@ Interacting with metrics is different than the previous examples. Instead of usi
 Metrics use local preaggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] after a one-minute period. Using local preaggregation is beneficial in batch processing scenarios where a lot of updates could happen to a specific metric.
 
 For a complete overview of Metrics, see [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
