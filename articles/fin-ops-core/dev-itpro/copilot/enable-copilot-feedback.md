@@ -41,9 +41,7 @@ To use enhanced user feedback, you must be running finance and operations apps v
 
 ## Turn enhanced user feedback on or off
 
-By default, enhanced user feedback is turned on. The feature integrates with existing Microsoft product feedback mechanisms and the standard thumbs-up/thumbs-down interface.
-
-Admins control whether and how users can submit feedback to Microsoft by managing various aspects of the feature at each of several levels: the tenant, the Dataverse organization, and the finance and operations environment. If feedback is disabled at a higher level, it can't be enabled at any lower levels. To make the feature available to users of finance and operations apps, you must enable it at each level, as described in the following procedures.
+Admins control whether and how users can submit feedback to Microsoft by managing various aspects of the feature at each of several levels: the tenant, the Dataverse organization, and the finance and operations environment. If feedback is disabled at a higher level, it can't be enabled at any lower levels. To make the feature available to users of finance and operations apps, you must enable it at each level, as described in the following procedures. By default, the feature is turned on at the tenant and Dataverse organization levels, but turned off at the finance and operations environment level.
 
 To turn enhanced user feedback on or off at the tenant level, follow these steps.
 
