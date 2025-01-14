@@ -1,1 +1,1 @@
-Dynamics 365 Finance and Supply Chain Management
+Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
