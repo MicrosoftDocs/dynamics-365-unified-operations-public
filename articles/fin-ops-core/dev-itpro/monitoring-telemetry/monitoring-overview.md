@@ -21,7 +21,7 @@ This feature addresses the following needs:
 - Improve efficiency in detecting, diagnosing and troubleshooting issues, reducing the overall time resolution.
 - Enable proactive alerting through standard capabilities provided by [!INCLUDE[appinsights](includes/azure-application-insights-name.md)].  
 
-[![Monitoring and Telemetry Feature.](images/monitoring-overview-userflows.png)](../monitoring-overview-userflows.png)
+[![Monitoring and Telemetry Feature.](images/monitoring-overview-userflows.png)
 
 > [!NOTE]
 > The emitted telemetry is not collected by Microsoft for support or other operational reporting. Instead, the data is customer owned and customer driven.

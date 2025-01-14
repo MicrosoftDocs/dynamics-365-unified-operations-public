@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 # Adding custom telemetry signals
 
-When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. On top of what is already emitted out of the box, you can provide extensions to add your own custom telemetry signals. These signals can provide more insights into your custom processes.
+When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. On top of what is already emitted out of the box, you can provide extensions to add your own custom telemetry signals. These signals can provide more insights into your custom processes.
 
 ## Telemetry logger
 
@@ -25,10 +25,10 @@ The logger uses the [static constructor pattern](https://learn.microsoft.com/dyn
 
 | Type             | X++ class                                     | Application Insights Data Type |
 |------------------|-----------------------------------------------|--------------------------------|
-| Event            | SysApplicationInsightsEventTelemetry          | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry?view=azure-dotnet) |
-| PageView         | SysApplicationInsightsPageViewTelemetry       | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry?view=azure-dotnet) |
-| Exception        | SysApplicationInsightsExceptionTelemetry      | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
-| Trace            | SysApplicationInsightsTraceTelemetry          | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
+| Event            | SysApplicationInsightsEventTelemetry          | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry?view=azure-dotnet) |
+| PageView         | SysApplicationInsightsPageViewTelemetry       | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry?view=azure-dotnet) |
+| Exception        | SysApplicationInsightsExceptionTelemetry      | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
+| Trace            | SysApplicationInsightsTraceTelemetry          | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
 
 ### Event
 

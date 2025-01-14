@@ -58,7 +58,7 @@ This telemetry can be visualized using the provided Power BI dashboards.
 
 ### Resources:
 
-- Documentation: [Warehouse Telemetry in Application Insights](https://learn.microsoft.com/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi)
+- Documentation: [Warehouse Telemetry in Application Insights](/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi)
 - Power BI dashboard: [Warehouse Power BI Dashboard](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource)
 
 ## DMF Errors

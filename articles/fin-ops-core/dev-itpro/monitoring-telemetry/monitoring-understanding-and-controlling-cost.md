@@ -37,7 +37,7 @@ Sampling provides way to reduce telemetry traffic, data costs, and storage costs
 - **Implement Sampling**: Use sampling to collect a representative subset of telemetry data. This method reduces data ingestion volumes and costs without significantly compromising insights.
 - **Adaptive Sampling**: Leverage adaptive sampling features to automatically adjust the sampling rate based on traffic patterns, ensuring efficient data collection.
 
-For more information about sampling in [!INCLUDE[appinsights](../includes/azure-application-insights-name.md)], see [Sampling in Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api).
+For more information about sampling in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)], see [Sampling in Azure Application Insights](/azure/azure-monitor/app/sampling-classic-api).
 
 ### Monitoring and Alerts
 
@@ -57,6 +57,6 @@ Provides best practices for Application Insights based on the five pillars of th
 - **[Cost Optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost)**
 Offers recommendations on configuring data collection and retention to optimize costs in Azure Monitor, applicable to Application Insights. 
 - **[Monitoring and Telemetry Using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)**
-Discusses how to set up and use Application Insights for monitoring in [!INCLUDE[finops-product-name-short](../includes/finops-product-name-short.md)].
+Discusses how to set up and use Application Insights for monitoring in [!INCLUDE[finops-product-name-short](includes/finops-product-name-short.md)].
 
-By implementing these strategies and adhering to best practices, organizations can effectively control telemetry costs in [!INCLUDE[finops-product-name-short](../includes/finops-product-name-short.md)] while maintaining comprehensive monitoring capabilities.
+By implementing these strategies and adhering to best practices, organizations can effectively control telemetry costs in [!INCLUDE[finops-product-name-short](includes/finops-product-name-short.md)] while maintaining comprehensive monitoring capabilities.
