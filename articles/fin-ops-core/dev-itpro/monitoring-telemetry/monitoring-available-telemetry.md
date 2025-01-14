@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Available Telemetry
 
-D365 Finance and SCM comes with robust out-of-the-box telemetry capabilities when Application Insights is enabled. These features provide critical insights into various aspects of the system, helping customers monitor performance, diagnose issues, and optimize operations. Below is an overview of the available telemetry and corresponding resources.
+[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] come with robust, out-of-the-box telemetry capabilities when Application Insights is enabled. These features provide critical insights into various aspects of the system, helping customers monitor performance, diagnose issues, and optimize operations. This article provides an overview of the available telemetry and its corresponding resources.
 
 ## **Form Run Telemetry**
 
