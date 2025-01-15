@@ -2440,6 +2440,8 @@
                     href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
                   - name: Configure Simplified transactional appendix (ATS) printing
                     href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
+                  - name: Create customer and vendor records with an address in Ecuador
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-Ecuador.md
                   - name: Post Ecuadorian refund invoice transactions
                     href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
                 - name: Egypt
