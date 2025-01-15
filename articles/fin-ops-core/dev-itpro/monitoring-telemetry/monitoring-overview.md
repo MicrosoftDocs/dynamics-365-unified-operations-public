@@ -1,5 +1,5 @@
 ---
-title: Monitoring and Telemetry overview
+title: Monitoring and telemetry overview
 description: This article explains how to get started with the Application Insights integration for finance and 
 author: kennysaelen
 ms.topic: get-started

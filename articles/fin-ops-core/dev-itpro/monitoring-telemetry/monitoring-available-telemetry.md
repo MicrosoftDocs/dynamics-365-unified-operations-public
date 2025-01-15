@@ -1,5 +1,5 @@
 ---
-title: Available Telemetry
+title: Available telemetry
 description: Overview of the available telemetry in the Monitoring and Telemetry feature.  
 author: kennysaelen
 ms.topic: overview

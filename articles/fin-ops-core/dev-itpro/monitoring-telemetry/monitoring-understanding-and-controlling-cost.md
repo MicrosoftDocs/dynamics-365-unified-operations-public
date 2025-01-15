@@ -1,5 +1,5 @@
 ---
-title: Understand and control costs.
+title: Understand and control costs
 description: Provides information about the various cost and pricing options.
 author: kennysaelen
 ms.topic: overview

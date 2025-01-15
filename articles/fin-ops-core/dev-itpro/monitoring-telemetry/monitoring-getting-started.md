@@ -1,5 +1,5 @@
 ---
-title: Get started with Monitoring and Telemetry
+title: Get started with monitoring and telemetry
 description: This article explains how to get started with the Application Insights integration for finance and operations apps.
 author: kennysaelen
 ms.topic: how-to
