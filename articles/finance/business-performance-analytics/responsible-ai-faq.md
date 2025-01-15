@@ -4,7 +4,7 @@ description: Learn how Microsoft has minimized the potential harm related to AI 
 author: Carylhenry
 ms.author: jiwo
 ms.topic: article 
-ms.date: 07/22/2024
+ms.date: 01/15/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
