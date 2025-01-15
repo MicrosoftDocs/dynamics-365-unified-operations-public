@@ -48,6 +48,6 @@ On top of the out of the box telemetry signals it is possible to add customer te
 
 ## Understand cost and pricing options
 
-Storing telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] does come with a cost. To understand more about associated cost and pricing options, see [Controlling telemetry cost](monitoring-controlling-telemetry-costs.md).
+Storing telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] does come with a cost. To understand more about associated cost and pricing options, see [Controlling telemetry cost](monitoring-understanding-and-controlling-cost.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
