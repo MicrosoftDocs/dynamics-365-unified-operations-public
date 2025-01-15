@@ -44,8 +44,6 @@ landingContent:
             url: monitoring-developer-add-custom-signals.md
       - linkListType: reference
         links:
-          - text: Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management telemetry GitHub sample repository
-            url: monitoring-sample-repositories.md
           - text: Telemetry data model
             url: https://learn.microsoft.com/azure/azure-monitor/app/data-model-complete
           - text: Application Insights API for custom events and metrics
