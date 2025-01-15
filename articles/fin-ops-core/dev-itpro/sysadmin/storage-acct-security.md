@@ -6,7 +6,7 @@ ms.author: mansijain
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 11/18/2024
+ms.date: 01/15/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
@@ -133,7 +133,7 @@ Refrain from using any classes or methods that are exposed in the **Microsoft.Dy
 
 ### Are there any logs to verify that only authorized access has occurred? Would they be able available after deprecating the connection string? 
 
-Once anonymous access and admin key-based authentication (i.e., connection string) are disabled, access will only be possible through [user delegated] SAS URLs or OAuth (via Managed Identity). We do have metrics (not logs) available to track the type of authentication being used. Please note that these metrics are currently for internal use only and they are no plan to share it or expose it.
+Once anonymous access and admin key-based authentication (i.e., connection string) are disabled, access will only be possible through [user delegated] SAS URLs or OAuth (via Managed Identity). We do have metrics (not logs) available to track the type of authentication being used. Please note that these metrics are currently for internal use only and they're no plan to share it or expose it.
 
 ### ]Is the new method more secure than the connection string? If so, how? How could this become more secure? 
 
@@ -146,14 +146,14 @@ Yes, this is a more secure method for connecting to the storage account compared
 
 ### Can the access string/replacement be rotated regularly? 
 
-We are moving away from connection string (aka account access key); hence rotation of account access key won't be needed.
+We're moving away from connection string (also known as account access key); hence rotation of account access key won't be needed.
 
-### We have a process for LBD customers migrating from D365 finance and operations On-Premises (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Will this be affected by the changes? And if so, we’ll need to have a way to help out customers migrate their attachments.
+### We have a process for LBD customers migrating from Dynamics 365 finance and operations on-premises (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Will this be affected by the changes? And if so, we’ll need to have a way to help out customers migrate their attachments.
 
-It will work. If Managed Identity is enabled, a user-delegated SAS URL can be used to generate a SAS URL that can be shared with customers. However, please note that a user-delegated SAS URL is valid for a maximum of 7 days. Azure Storage does not support generating SAS URLs with a validity period longer than this. 
+It will work. If Managed Identity is enabled, a user-delegated SAS URL can be used to generate a SAS URL that can be shared with customers. However, please note that a user-delegated SAS URL is valid for a maximum of seven days. Azure Storage doesn't support generating SAS URLs with a validity period longer than this. 
 
 ### Previously created SAS URL will stop working once the storage account access key is disabled?
 
- Yes, previously created SAS URL will stop working once the account access key is disabled. Because 7 days is the max TimeToLive value (Validity of the URL). Hence, SAS URL would be expired and will not be worked after 7 days.
+ Yes, previously created SAS URL will stop working once the account access key is disabled. Because seven days is the max TimeToLive value (Validity of the URL). Therefore, the SAS URL expires and won't work after seven days.
  
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
