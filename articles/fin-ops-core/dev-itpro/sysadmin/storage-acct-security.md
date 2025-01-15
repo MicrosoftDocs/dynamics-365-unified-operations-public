@@ -131,4 +131,29 @@ No, there's no impact. Additionally, no request that is made from those librarie
 
 Refrain from using any classes or methods that are exposed in the **Microsoft.Dynamics.Clx.ServicesWrapper.Infrastructure.Interceptor** namespace, because they're intended for internal use only and are subject to change.
 
+### Are there any logs to verify that only authorized access has occurred? Would they be able available after deprecating the connection string? 
+
+Once anonymous access and admin key-based authentication (i.e., connection string) are disabled, access will only be possible through [user delegated] SAS URLs or OAuth (via Managed Identity). We do have metrics (not logs) available to track the type of authentication being used. Please note that these metrics are currently for internal use only and they are no plan to share it or expose it.
+
+### ]Is the new method more secure than the connection string? If so, how? How could this become more secure? 
+
+Yes, this is a more secure method for connecting to the storage account compared to using a connection string. Security needs should be addressed through a multi-pronged approach, including: 
+- Disabling anonymous access to the storage account. 
+- Preventing the sharing of connection strings via public APIs (already communicated and now restricted). 
+- Turning off access to the storage account via connection strings (already communicated). 
+- Upgrading the storage SDK in the platform repository to only support newer, supported versions (already communicated and implemented in platform code). 
+- These changes are at different stages of development, rollout, or discussion.
+
+### Can the access string/replacement be rotated regularly? 
+
+We are moving away from connection string (aka account access key); hence rotation of account access key won't be needed.
+
+### We have a process for LBD customers migrating from D365 finance and operations On-Premises (LBD) to cloud. Currently for the finance and operations attachments we provide customers with a SAS token. Will this be affected by the changes? And if so, we’ll need to have a way to help out customers migrate their attachments.
+
+It will work. If Managed Identity is enabled, a user-delegated SAS URL can be used to generate a SAS URL that can be shared with customers. However, please note that a user-delegated SAS URL is valid for a maximum of 7 days. Azure Storage does not support generating SAS URLs with a validity period longer than this. 
+
+### Previously created SAS URL will stop working once the storage account access key is disabled?
+
+ Yes, previously created SAS URL will stop working once the account access key is disabled. Because 7 days is the max TimeToLive value (Validity of the URL). Hence, SAS URL would be expired and will not be worked after 7 days.
+ 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
