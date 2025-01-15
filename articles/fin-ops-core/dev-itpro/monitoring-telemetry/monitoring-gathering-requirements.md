@@ -4,7 +4,7 @@ description: Provides information on how to identify monitoring requirements.
 author: kennysaelen
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 08/11/2024
+ms.date: 01/20/2025
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template

@@ -4,7 +4,7 @@ description: This article explains how to get started with the Application Insig
 author: kennysaelen
 ms.topic: get-started
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 08/11/2024
+ms.date: 01/20/2025
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
