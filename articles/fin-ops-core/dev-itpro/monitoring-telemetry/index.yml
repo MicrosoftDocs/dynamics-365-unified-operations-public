@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Monitoring and Telemetry using Dynamics 365 Finance & Supply Chain Management
-summary: Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 Finance and Supply Chain Management.
+title: Monitoring and Telemetry using Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+summary: Learn how to implement a monitoring solution to capture and analyze telemetry for Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management.
 
 metadata:
-  title: Monitoring and Telemetry with Microsoft Dynamics 365 Finance & Supply Chain Management
-  description: "Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 Finance and Supply Chain Management."
+  title: Monitoring and Telemetry with Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+  description: "Learn how to implement a monitoring solution to capture and analyze telemetry for Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management."
   
   ms.topic: landing-page
   author: kennysaelen
@@ -44,7 +44,7 @@ landingContent:
             url: monitoring-developer-add-custom-signals.md
       - linkListType: reference
         links:
-          - text: Dynamics 365 Finance & SCM telemetry github sample repository
+          - text: Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management telemetry GitHub sample repository
             url: monitoring-sample-repositories.md
           - text: Telemetry data model
             url: https://learn.microsoft.com/azure/azure-monitor/app/data-model-complete
@@ -70,7 +70,7 @@ landingContent:
             url: https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview
           - text: Cost optimization and Application Insights
             url: https://learn.microsoft.com/azure/well-architected/service-guides/application-insights/cost-optimization
-          - text: Dynamics 365 Finance & SCM - Enable warehousing telemetry with Application Insights
+          - text: Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management - Enable warehousing telemetry with Application Insights
             url: https://learn.microsoft.com/dynamics365/supply-chain/warehousing/application-insights-warehousing          
-          - text: Dynamics 365 Finance & SCM - Monitor warehouse management usage and performance
+          - text: Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management - Monitor warehouse management usage and performance
             url: https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance          
