@@ -20,17 +20,17 @@ This feature addresses the following needs:
 
 - Gather telemetry to gain insights into how the application is used.
 - Allows developers and admins to gather additional information in diagnosing scenarios.
-- Improve efficiency in detecting, diagnosing and troubleshooting issues, reducing the overall time to resolution.
+- Improve efficiency in detecting, diagnosing, and troubleshooting issues, reducing the overall time to resolution.
 - Enable proactive alerting through standard capabilities provided by [!INCLUDE[appinsights](includes/azure-application-insights-name.md)].  
 
 [![Monitoring and Telemetry Feature.](images/monitoring-overview-userflows.png)
 
 > [!NOTE]
-> The emitted telemetry is not collected by Microsoft for support or other operational reporting. Instead, the data is customer-owned, and customer-driven.
+> The emitted telemetry isn't collected by Microsoft for support or other operational reporting. Instead, the data is customer-owned, and customer-driven.
 
 ## Gather monitoring requirements
 
-It is easy and straightforward to configure and enable telemetry signals to get the out of the box provided signals. However, before being able to build the right experience for your team it is important to define the correct set of requirements that the monitoring solution must meet.
+It's easy and straightforward to configure and enable telemetry signals to get the out of the box provided signals. However, before being able to build the right experience for your team it's important to define the correct set of requirements that the monitoring solution must meet.
 
 For more information, see [Gathering requirements](monitoring-gathering-requirements.md).
 
@@ -44,10 +44,10 @@ To get started configuring and using [!INCLUDE[monitoringtelemetry](includes/fin
 
 ## Extend telemetry
 
-On top of the out of the box telemetry signals it is possible to add customer telemetry signals that emit information about your specific processes. For more information, see [Add custom telemetry signals](monitoring-developer-add-custom-signals.md).
+On top of the out of the box telemetry signals it's possible to add customer telemetry signals that emit information about your specific processes. For more information, see [Add custom telemetry signals](monitoring-developer-add-custom-signals.md).
 
 ## Understand cost and pricing options
 
-Storing telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] does come with a cost. To understand more about associated cost and pricing options, see [Controlling telemetry cost](monitoring-controlling-telemetry-costs.md).
+Storing telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] does come with a cost. To understand more about associated cost and pricing options, see [Controlling telemetry cost](monitoring-understanding-and-controlling-cost.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

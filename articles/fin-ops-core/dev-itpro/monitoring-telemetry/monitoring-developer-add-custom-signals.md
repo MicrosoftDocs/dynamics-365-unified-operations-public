@@ -67,7 +67,7 @@ internal static void logUserLogOn(XppPrePostArgs _args)
 
 ### PageViews
 
-Using PageView entries, [!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] is out-of-the-box already logging every form that is opened in the application.
+PageView entries, [!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] is out-of-the-box already logging every form that is opened in the application.
 
 ```xpp
 [SubscribesTo(classStr(FormRun), staticDelegateStr(FormRun, onFormRunCompleted))]
@@ -98,7 +98,7 @@ SysApplicationInsightsTelemetryLogger::instance().trackException(exceptionTeleme
 ```
 
 > [!NOTE]
-> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. 
+> The previous example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. 
 
 ### Traces
 

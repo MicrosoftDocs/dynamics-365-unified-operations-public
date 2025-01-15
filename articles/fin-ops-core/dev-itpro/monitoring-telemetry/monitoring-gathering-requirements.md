@@ -49,7 +49,7 @@ Document specific scenarios where monitoring and telemetry are required. Use cas
 - **Sample use cases:**
   - Monitoring API call success and failure rates.
   - Alerting on anomalous increases in response time.
-  - Monitoring P50, P95, P99 etc for Purchase order processing
+  - Monitoring P50, P95, P99, etc. for Purchase order processing
   - Tracking customer interactions through a sales pipeline.
   - Measuring resource consumption to optimize costs.
 
@@ -88,8 +88,8 @@ Define how long telemetry data should be retained and ensure compliance with dat
 
 Determine how telemetry data is to be visualized to provide actionable insights.
 
-- **Dashboards:** Create role-specific dashboards (e.g. operational, business).
-- **Reports:** Define periodic reporting needs (e.g. weekly SLA compliance).
+- **Dashboards:** Create role-specific dashboards (for example, operational, business).
+- **Reports:** Define periodic reporting needs (for example, weekly SLA compliance).
 - **Custom Queries:** Use tools like Azure Data Explorer to explore data interactively.
 
 ## Align with organizational governance
