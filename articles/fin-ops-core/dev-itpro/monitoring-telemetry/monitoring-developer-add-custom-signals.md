@@ -1,23 +1,25 @@
 ---
-title: Adding custom telemetry signals
+title: Add custom telemetry signals
 description: Learn how to add custom telemetry signals in Dynamics 365 Finance & Supply Chain Management.  
-author: kesaelen
-ms.topic: how-to-guide
+author: kennysaelen
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
 ms.author: kesaelen
-ms.reviewer: kesaelen
+ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
-# Adding custom telemetry signals
+# Add custom telemetry signals
 
-When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. On top of what is already emitted out of the box, you can provide extensions to add your own custom telemetry signals. These signals can provide more insights into your custom processes.
+[!include [banner](../includes/banner.md)]
+
+When the Monitoring and Telemetry feature is activated, telemetry is emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. On top of what is already emitted out-of-the-box, you can provide extensions to add your own custom telemetry signals. These signals can provide more insights into your custom processes.
 
 ## Telemetry logger
 
-The main entry point for logging custom telemetry is through the **SysApplicationInsightsTelemetryLogger** class. It encupsulates the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client and provides access to the necessary operations to track an event, pageview, trace, exception or metric. 
+The main entry point for logging custom telemetry is through the **SysApplicationInsightsTelemetryLogger** class. It encapsulates the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client and provides access to the necessary operations to track an event, pageview, trace, exception, or metric. 
 
-The logger uses the [static constructor pattern](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per Application Object Server (AOS) instance.
+The logger uses the [static constructor pattern](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-static-classes#static-constructors) ensuring a singleton instance per user session. The encapsulated [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] telemetry client is further cached to ensure only one telemetry client is created per Application Object Server (AOS) instance.
 
 ## Telemetry data contract types
 
@@ -25,14 +27,14 @@ The logger uses the [static constructor pattern](https://learn.microsoft.com/dyn
 
 | Type             | X++ class                                     | Application Insights Data Type |
 |------------------|-----------------------------------------------|--------------------------------|
-| Event            | SysApplicationInsightsEventTelemetry          | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry?view=azure-dotnet) |
-| PageView         | SysApplicationInsightsPageViewTelemetry       | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry?view=azure-dotnet) |
-| Exception        | SysApplicationInsightsExceptionTelemetry      | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
-| Trace            | SysApplicationInsightsTraceTelemetry          | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](https://learn.microsoft.com/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
+| Event            | SysApplicationInsightsEventTelemetry          | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry?view=azure-dotnet) |
+| PageView         | SysApplicationInsightsPageViewTelemetry       | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry?view=azure-dotnet) |
+| Exception        | SysApplicationInsightsExceptionTelemetry      | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
+| Trace            | SysApplicationInsightsTraceTelemetry          | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
 
 ### Event
 
-To log a custom event to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], we can create an instance of **SysApplicationInsightsEventTelemetry** and pass in the necessary payload. Next, use the **trackEvent** method on the **SysApplicationInsightsTelemetryLogger** to emit the event.
+To log a custom event to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], you can create an instance of **SysApplicationInsightsEventTelemetry** and pass in the necessary payload. Next, use the **trackEvent** method on the **SysApplicationInsightsTelemetryLogger** to emit the event.
 
 The following example shows how to emit an event when a record is created in the SysUserLog table. 
 
@@ -65,7 +67,7 @@ internal static void logUserLogOn(XppPrePostArgs _args)
 
 ### PageViews
 
-Using PageView entries, [!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] is out of the box already logging every form that is opened in the application.
+Using PageView entries, [!INCLUDE[d365foscm](./includes/finops-product-name-long.md)] is out-of-the-box already logging every form that is opened in the application.
 
 ```xpp
 [SubscribesTo(classStr(FormRun), staticDelegateStr(FormRun, onFormRunCompleted))]
@@ -84,7 +86,7 @@ public static void FormRun_onFormRunCompleted(FormRun _formInstance)
 
 ### Exceptions
 
-The following example shows how to track exceptions to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsExceptionTelemetry** contract and calling the **trackException** method on the **SysApplicationInsightsTelemetryLogger**.
+The following example shows how to track exceptions to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsExceptionTelemetry** contract and calling the **trackException** method on the **SysApplicationInsightsTelemetryLogger**.
 
 ```xpp
 SysApplicationInsightsExceptionTelemetry exceptionTelemetry = SysApplicationInsightsExceptionTelemetry::newFromExceptionMessage(Args.getArg('txt'));
@@ -96,11 +98,11 @@ SysApplicationInsightsTelemetryLogger::instance().trackException(exceptionTeleme
 ```
 
 > [!NOTE]
-> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. 
+> The above example is taken from the SysApplicationInsightsGlobalTelemetry class where all errors that are presented in the Infolog are automatically emitted to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. 
 
 ### Traces
 
-The following example shows how to track exceptions to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsTraceTelemetry** contract and calling the **trackTrace** method on the **SysApplicationInsightsTelemetryLogger**
+The following example shows how to track exceptions to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] by using the **SysApplicationInsightsTraceTelemetry** contract and calling the **trackTrace** method on the **SysApplicationInsightsTelemetryLogger**
 
 ```xpp
 SysApplicationInsightsTraceTelemetry traceTelemetry = SysApplicationInsightsTraceTelemetry::newFromMessageAndSeverity('My custom trace message', Microsoft.ApplicationInsights.DataContracts.SeverityLevel::Information);
@@ -110,8 +112,10 @@ SysApplicationInsightsTelemetryLogger::instance().trackTrace(traceTelemetry);
 
 ### Metrics
 
-Interacting with metrics is different than the previous examples. Instead of using a specific data contract, we can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. The logger first gets the existing Metric instance from [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
+Interacting with metrics is different than the previous examples. Instead of using a specific data contract, you can interact with the **SysApplicationInsightsTelemetryLogger** directly using **trackMetric**. The logger first gets the existing Metric instance from [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] and update the value. Using **trackMetricWithDimensions**, you can add properties to be used as dimensions to slice values based on those dimensions. 
 
-Metrics use local preaggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] after a one-minute period. Using local preaggregation is beneficial in batch processing scenarios where a lot of updates could happen to a specific metric.
+Metrics use local preaggregation for performance reasons, ensuring updates to a certain metric are only sent to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)] after a one-minute period. Using local preaggregation is beneficial in batch processing scenarios where a lot of updates could happen to a specific metric.
 
-For a complete overview of Metrics, see [Azure Monitor Metrics overview](https://learn.microsoft.com/azure/azure-monitor/essentials/data-platform-metrics)
+For a complete overview of Metrics, see [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

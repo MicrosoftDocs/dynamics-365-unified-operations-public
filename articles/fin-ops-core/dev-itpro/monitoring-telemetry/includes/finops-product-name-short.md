@@ -1,1 +1,1 @@
-Dynamics 365 Finance & SCM
+Finance and Supply Chain Management

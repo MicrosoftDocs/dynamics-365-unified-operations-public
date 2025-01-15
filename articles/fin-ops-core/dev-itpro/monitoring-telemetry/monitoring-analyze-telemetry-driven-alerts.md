@@ -1,22 +1,24 @@
 ---
-title: Telemetry based alerts
+title: Use telemetry based alerts
 description: Learn how to create alerts in Azure Application Insights.  
-author: kesaelen
-ms.topic: how-to-guide
+author: kennysaelen
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
 ms.author: kesaelen
-ms.reviewer: kesaelen
+ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
 
-# Telemetry based alerts
+# Use telemetry based alerts
 
-When a [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)] environment is emitting telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], this telemetry can be used to proactive alert on. Examples of alerting include:
+[!include [banner](../includes/banner.md)]
+
+When a [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environment is emitting telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], this telemetry can be used to create proactive alerts. Examples of alerting can include:
 
 - Notify stakeholders when someone changes a customer bank account.
 - Notify system administrators when certain form loads are taking longer than usual.
-- Get notifications when certain errors are occurring in nightly batch jobs.
+- Get notifications when certain errors occur in nightly batch jobs.
 
 You can use the following tools to define and set up alerts on telemetry events:
 
@@ -27,23 +29,23 @@ You can use the following tools to define and set up alerts on telemetry events:
 
 ## No-code alerting with Power BI Metrics
 
-[!INCLUDE[pbimetrics](./includes/include-telemetry-alerting-powerbi-metrics.md)]
+[!INCLUDE[pbimetrics](includes/include-telemetry-alerting-powerbi-metrics.md)]
 
 ### Create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]
 
-If you want to create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], then do as follows:
+To create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps.
 
 1. Open the [Azure portal](https://portal.azure.com) and locate your Application Insights resource.
-2. In the navigation pane on the left, select **Alerts**.
-3. Add a KQL alerting condition query in the condition for a custom log search.
+1. In the navigation pane, select **Alerts**.
+1. Add a KQL alerting condition query in the condition for a custom log search.
 
-To read more about alerts and how to create them, go to [Azure Application Insights Alerts Overview](https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview) in the Azure documentation. 
+For more information about alerts and how to create them, see [Azure Application Insights Alerts Overview](/azure/azure-monitor/alerts/alerts-overview). 
 
 ### Create alerts using Azure Logic Apps and Power Automate
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]. It's possible to configure custom notifications or automating certain actions triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
+Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. It's possible to configure custom notifications or automating certain actions triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
 
-The samples below can help getting started with customization and automation using Application Insights.
+The samples below can help getting started with customization and automation using [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
 
 > [!IMPORTANT]
 > Deploying a Logic App to Azure also creates the API Connection Resources necessary to authenticate certain actions in the Logic Apps.
@@ -51,3 +53,5 @@ The samples below can help getting started with customization and automation usi
 > After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in the Azure Portal.
 >
 > If you already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App, you can reuse them by entering the same resource name before deploying the Logic App.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

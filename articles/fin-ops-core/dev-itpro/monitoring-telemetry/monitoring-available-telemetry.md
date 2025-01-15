@@ -1,20 +1,22 @@
 ---
 title: Available Telemetry
 description: Overview of the available telemetry in the Monitoring and Telemetry feature.  
-author: kesaelen
+author: kennysaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
 ms.author: kesaelen
-ms.reviewer: kesaelen
+ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
 
-# Available Telemetry
+# Available telemetry
 
-D365 Finance and SCM comes with robust out-of-the-box telemetry capabilities when Application Insights is enabled. These features provide critical insights into various aspects of the system, helping customers monitor performance, diagnose issues, and optimize operations. Below is an overview of the available telemetry and corresponding resources.
+[!include [banner](../includes/banner.md)]
 
-## **Form Run Telemetry**
+[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] come with robust, out-of-the-box telemetry capabilities when Application Insights is enabled. These features provide critical insights into various aspects of the system, helping customers monitor performance, diagnose issues, and optimize operations. This article provides an overview of the available telemetry and its corresponding resources.
+
+## Form run telemetry**
 
 Form run telemetry captures detailed information about forms within the application. It provides insights into:
 
@@ -33,7 +35,7 @@ This data allows customers to:
 
 - Plug-and-play dashboard: [Forms Telemetry Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Forms)
 
-## X++ Exceptions
+## X++ exceptions
 
 All exceptions that occur in the X++ layer are captured and logged to Application Insights. This telemetry enables customers to:
 
@@ -47,7 +49,7 @@ All exceptions that occur in the X++ layer are captured and logged to Applicatio
 
 - Plug-and-play dashboard: [X++ Errors Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Errors)
 
-## Warehouse Telemetry
+## Warehouse telemetry
 
 The warehouse module generates extensive telemetry data, offering insights into:
 
@@ -58,12 +60,14 @@ This telemetry can be visualized using the provided Power BI dashboards.
 
 ### Resources:
 
-- Documentation: [Warehouse Telemetry in Application Insights](https://learn.microsoft.com/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi)
+- Documentation: [Warehouse Telemetry in Application Insights](/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi)
 - Power BI dashboard: [Warehouse Power BI Dashboard](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource)
 
-## DMF Errors
+## DMF errors
 
 Errors from the Data Management Framework (DMF) are logged to the exceptions table in Application Insights. These errors include issues encountered during data import and export operations, enabling customers to:
 
 - Identify and address integration issues quickly.
 - Monitor the health of data pipelines.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
