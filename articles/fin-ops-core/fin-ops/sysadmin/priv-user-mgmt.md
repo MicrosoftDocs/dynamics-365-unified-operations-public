@@ -18,17 +18,17 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-Privileged user management allows system administrators to schedule a session for selected user accounts and record all user interactions within Dynamics 365 Finance and Operations during the entire session. This feature is useful when some elevated privileged accounts are utilized for auditing purposes and ensures users aren't performing any unauthorized activities within the system.
+Privileged user management allows system administrators to schedule a session for selected user accounts and records all user interactions within Dynamics 365 finance and operations during the session. This feature is useful when some elevated privileged accounts are utilized for auditing purposes and ensures users aren't performing any unauthorized activities within the system.
 
-You can also control to enable or disable the account once the session starts. As soon as the session ends, the account goes back to it's original state.
+You can also enable or disable the account once the session starts. As soon as the session ends, the account goes back to its original state.
 
 
 ## Session approval and process
-A new session can only be initiated by a system administrator.
+A new session is initiated by a system administrator.
 
-1. Click **New** and the request has a **Draft** status and waits for the system administrator for approval.
+1. Click **New**. The request has a **Draft** status and the system administrator can approve it.
 2. Anyone with **System administrator** role can approve or edit the request.
-3. To approve the request, in the **Change status** field and select **Approve**. At this point, the request is either picked up by the background process or the system administrator can process it manually. The system administrator can schedule the session for the user account. The system administrator can also enable or disable the account aftr the session starts. As soon as the session ends, the account goes back to it's original state.
+3. To approve the request, in the **Change status** field and select **Approve**. The request can be picked up by the background process or the system administrator can process it manually. The system administrator can schedule the session for the user account. The system administrator can also enable or disable the account after the session starts. As soon as the session ends, the account goes back to its original state.
 
 [!NOTE]
 > Maximum duration for a **Privileged user session** is 24 hours.
@@ -40,17 +40,17 @@ Use the **Audit logs** to see all actions performed on a given session request. 
  - change in status
  - the date and time stamp of the action
  - who made the change
- - system administrator or the batch process.
+ - if the system administrator or the batch process approved 
 
 ## User log
 
 **User log** captures all the sessions that selected user account has been logged in Dynamics 365 finance and operations during the active privileged user session. This helps track the user activities and the time spent on each session. 
 
 > [!NOTE]
-> The **User log** captures the logging sessions which were performed during an active privileged user session. Anything outside of the session will not be captured even if the same user account is active in the system earlier and has been logging in. 
+> The **User log** captures the logging sessions which were performed during an active privileged user session. Anything outside of the session isn't captured even if the same user account is active in the system earlier and has been logging in. 
 
 
 ## Recordings
-Each user session in Dynamics 365 finance and operations is recorded using the task recording framework. The recordings are stored on the **Recordings** tab, system administrators can download by clicking **Download**. This helps you to review the user interactions performed by user during the session and support any audits for compliance.
+Each user session in Dynamics 365 finance and operations is recorded using the task recording framework. The recordings are stored on the **Recordings** tab, system administrators can download by clicking **Download**. This helps review the user interactions performed by user during the session and support any audits for compliance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
