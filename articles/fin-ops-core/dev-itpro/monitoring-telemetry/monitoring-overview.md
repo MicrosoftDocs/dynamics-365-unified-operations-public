@@ -5,7 +5,7 @@ author: kennysaelen
 ms.topic: get-started
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 08/11/2024
-ms.author: kesaelen
+ms.author: kennysaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
 ---
