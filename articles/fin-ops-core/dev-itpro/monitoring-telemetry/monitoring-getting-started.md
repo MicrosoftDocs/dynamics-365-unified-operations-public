@@ -25,7 +25,7 @@ To configure your environments to send telemetry to [!INCLUDE[appinsights](./inc
 
 ## Set up Application Insights resource in Azure
 
-The first thing needed to get started is to create an[!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in Azure if you do not have one. For more information, see [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource?tabs=bicep).
+The first thing needed to get started is to create a [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in Azure if you don't have one. For more information, see [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource?tabs=bicep).
 
 ## Enable the Monitoring and Telemetry feature
 
@@ -47,7 +47,7 @@ Provide the following configuration:
    | Field name | Description |
    | ---------- | ----------- |
    | **Environment ID** | The unique identifier for your environment |
-   | **Environment Mode** | Specifies whether this environment is a development, test, or production environment. <br>This is used to separate telemetry in different Application Insight instances intended for development, test, or Production. |
+   | **Environment Mode** | Specifies whether this environment is a development, test, or production environment. <br>This field is used to separate telemetry in different Application Insight instances intended for development, test, or Production. |
 
    [![Application Insights Environments.](images/monitoring-getting-started-application-insights-environments.png)
 
