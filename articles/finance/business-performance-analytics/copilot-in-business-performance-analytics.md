@@ -4,7 +4,7 @@ description: This article describes Copilot features in Business performance ana
 author: Carylhenry
 ms.author: jiwo
 ms.topic: article
-ms.date: 07/22/2024
+ms.date: 01/15/2025
 ms.collection: bap-ai-copilot
 
 ms.custom:
