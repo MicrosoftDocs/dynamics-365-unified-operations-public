@@ -20,14 +20,14 @@ ms.custom:
 This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 
 > [!IMPORTANT]
-> Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. However, if you don't already have a Bing Maps key, you can no longer get one and must build your own customization to bring in longitude and latitude address data for DOM to work. You also need to disable Bing Maps usage for DOM when you configure DOM parameters as described in this article.
+> Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. Starting with the Dynamics 365 Commerce 10.0.43 release, there is an option to use Azure Maps as an alternative to Bing Maps. See on how to manage Azure Maps for your organisation here https://go.microsoft.com/fwlink/?linkid=2300838.
 
 ## Enable the DOM configuration key
 
 To enable the DOM configuration key, follow these steps.
 
 1. In Commerce headquarters, go to **System administration \> Setup \> License configuration**.
-1. On the **Configuration keys** tab, expand the **Commerce** node, and then select the **Distributed Order Management** checkbox.
+1. On the **Configuration keys** tab, expand the **Retail** node, and then select the **Distributed Order Management** checkbox.
 
 ## Configure DOM parameters
 
@@ -37,11 +37,14 @@ To configure DOM parameters, follow these steps.
 1. On the **General** tab, set the following values:
 
     - **Enable distributed order management** – Set this option to **Yes**.
-    - **Confirm Bing Maps usage for DOM** – Set this option to **Yes**. When this option is enabled, DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. When this option is disabled, the latitude and longitude values on the warehouse setting or customer's delivery address are used. The latitude and longitude values are used for distance calculation in the DOM processing.
+    - **Confirm Bing Maps usage for DOM** – Set this option to **Yes** if you have a valid Bing Maps license and shared key. When this option is enabled, DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. When this option is disabled, the latitude and longitude values on the warehouse setting or customer's delivery address are used. The latitude and longitude values are used for distance calculation in the DOM processing.
 
         > [!NOTE]
         > - You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the headquarters **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
         > - The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
+        
+       - **Confirm Azure Maps usage for DOM** – Set this option to **Yes** if you have a valid Azure Maps license and shared key. You can only have either this set to **Yes** or Bing Maps usage. If one is set to **Yes**, the other will automatically be set to **No**. When this option is enabled, DOM depends on Azure Maps to determine accurate latitude and longitude values based on address, city, and postal code information. When this option is disabled, the latitude and longitude values on the warehouse setting or customer's delivery address are used. The latitude and longitude values are used for distance calculation in the DOM processing.
+         
     - **Disable road distance calculation** - If this option is **Yes**, aerial distance is calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use Bing Maps API to calculate road distance, in this case, **Confirm Bing Maps usage for DOM** option is required to be **Yes**.
     - **Do not process accepted store orders during order optimization** - Set this option to **Yes** if you don't want DOM to process sales orders that have been accepted by retail stores.
     - **Update Financial Dimensions on Sales Order Line based on Site** - Set this option to **Yes** if you want to update financial dimensions on sales order lines based on the site.
