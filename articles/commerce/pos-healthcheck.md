@@ -85,6 +85,7 @@ To provide additional insights on the network connectivity and performance, and 
 - **WI-FI signal strength** Provides insights on the WI-FI signal strength quality for a period of 24 hours. The timing can be narrowed to minutes to get detailed insights on any Wi-fi fluctuations that may be responsible to app issues during specific times in a day.
 
 To access these charts, go to **View connection history report** link on the **About** tab.
+To get more insights from telemetry, you can look for event **connectivityManagerRegisterConnectivityStatus** in headquarters.
 
 #### Network latency health check
 
