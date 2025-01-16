@@ -21,7 +21,7 @@ This article describes how to set up distributed order management (DOM) function
 
 > [!IMPORTANT]
 > - Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**.
-> - Starting with the Dynamics 365 Commerce 10.0.43 release you can use Azure Maps as an alternative to Bing Maps. For more information, see [Manage Azure Maps for your organisation](dev-itpro/manage-bing-maps.md).
+> - Starting with the Dynamics 365 Commerce 10.0.43 release you can use Azure Maps as an alternative to Bing Maps. For more information, see [Manage Azure Maps for your organization](dev-itpro/manage-bing-maps.md).
 
 ## Enable the DOM configuration key
 
@@ -39,10 +39,10 @@ To enable Azure Maps, follow these steps.
 3. Set the **Enable Azure Maps** option to **Yes**.
 4. Enter a valid **Azure Maps key** value, and then select **Save**.
 
-For information on how to obtain a key and privacy notice, see [Manage Azure Maps for your organisation](dev-itpro/manage-bing-maps.md).
+For information on how to obtain a key and privacy notice, see [Manage Azure Maps for your organization](dev-itpro/manage-bing-maps.md).
 
  > [!NOTE]
- > If you're using Bing Maps, in the left navigation pane, select **Bing Maps**. Set the **Enable Bings Maps** option to **Yes**, and then under **Bing Maps key**, enter a valid key. [Manage Bing Maps for your organisation](dev-itpro/manage-bing-maps.md)
+ > If you're using Bing Maps, in the left navigation pane, select **Bing Maps**. Set the **Enable Bings Maps** option to **Yes**, and then under **Bing Maps key**, enter a valid key. [Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
 
 ## Configure DOM parameters
 
@@ -56,7 +56,7 @@ To configure DOM parameters, follow these steps.
     - **Confirm Bing Maps usage for DOM** – Set this option to **Yes** if you have a valid Bing Maps license and shared key. When this option is enabled, DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. 
 
         > [!NOTE]
-        > - The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
+        > - The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key is validated against. Requests originating from your allow list process normally, while requests from outside of your list return an access denied response. Adding domain security to your API key is optional and keys left as-is continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management doesn't support the setting up of domain-referred properties.
         
          
     - **Disable road distance calculation** - If this option is **Yes**, aerial distance is calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use either the Azure Maps API or Bing Maps API to calculate road distance. In this case, either the **Confirm Azure Maps usage for DOM** option or the **Confirm Bing Maps usage for DOM** option is required to be set to **Yes**.
@@ -82,7 +82,7 @@ To configure DOM parameters, follow these steps.
         1. In Commerce headquarters, go to the **DOM parameters** page. On the **Solver** tab, for **Solver type**, select **Production solver**, and then confirm that no error messages appear.
 
         > [!NOTE]
-        > - The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
+        > - The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations shouldn't use the Simplified Solver in production environments.
         > - The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). The **Partial orders** rule requires Production Solver.
 1. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 1. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.
@@ -134,10 +134,10 @@ To set up and configure DOM fulfillment profiles, follow these steps:
 1. If you want to change how DOM break sales lines into different batches, set a value for **Maximum number of order lines per optimization**. For more information, see [Partition sales lines](dom-processing.md#partition-sales-lines).
 
     > [!NOTE]
-    > - In Commerce version 10.0.12 and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM will look at all warehouses on legal entities that are defined in the profile.
+    > - In Commerce version 10.0.12 and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM checks all warehouses on legal entities that are defined in the profile.
     > - This feature adds a new configuration on the **Fulfillment profile** page that can be associated to a single fulfillment group.
-    > - If you select the fulfillment group, the DOM rules for that fulfillment profile will efficiently run against the "shipping" warehouses included in the fulfillment group.
-    > - To effectively use this feature, ensure that there is one fulfillment group that contains all the shipping warehouses, and then associate that fulfillment group to the fulfillment profile.
+    > - If you select the fulfillment group, the DOM rules for that fulfillment profile run efficiently against the "shipping" warehouses included in the fulfillment group.
+    > - To effectively use this feature, ensure that there's one fulfillment group that contains all the shipping warehouses, and then associate that fulfillment group to the fulfillment profile.
 1. On the **Legal entities** FastTab, select **Add**, and then select a legal entity.
 1. On the **Rules** FastTab, select **Add**, and then select the rule to link to the profile.
 1. Repeat the previous two steps until all the required rules are associated with the profile.
