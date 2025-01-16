@@ -4,7 +4,7 @@
 title: Manage features in Human Resources
 description: This article describes the Feature management feature and how you can use it.
 author: twheeloc
-ms.date: 07/02/2024
+ms.date: 01/15/2025
 ms.topic: article
 # optional metadata
 
@@ -51,7 +51,7 @@ To access preview features, you must first enable them in your environment. Enab
 To enable Benefits management, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
 > [!IMPORTANT]
-> You can't disable Benefits management in a **Production** environment after you enable it. You can disable Benefits management in **Sandbox** environments, however.
+> You can't disable Benefits management in a **Production** environment after you enable it. 
 
 For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
 
