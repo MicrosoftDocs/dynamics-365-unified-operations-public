@@ -46,7 +46,7 @@ This procedure walks through creating channel-specific sales price trade agreeme
 17. In the **Navigation pane**, go to **Modules > Retail and Commerce > Products and categories > Released products by category**.
 18. In the list, click the link in the selected row.
 19. Click **Edit**.
-20. Expand the **Sell** fastTab.
+20. Expand the **Sell** FastTab.
 21. In the **Price** field, enter a number. This price is used if no applicable trade agreements are found.  
 22. Click **Save**.
 23. On the **Action Pane**, click **Sell**.
@@ -60,7 +60,7 @@ This procedure walks through creating channel-specific sales price trade agreeme
 31. In the list, find and select the desired record. This will complete the link from Channel to Price group to Trade agreement.  
 32. In the **Item relation** field, type a value.
 33. In the **Amount in currency** field, enter a number.
-34. In the **Details** fastTab, check or uncheck the **Find next** checkbox. When **Find next** is set to 'Yes', the pricing engine will continue to search for applicable trade agreements with a lower sale price. When **Find next** is set to 'No', the price engine stops searching and uses the trade agreement.  
+34. In the **Details** FastTab, check or uncheck the **Find next** checkbox. When **Find next** is set to 'Yes', the pricing engine will continue to search for applicable trade agreements with a lower sale price. When **Find next** is set to 'No', the price engine stops searching and uses the trade agreement.  
 35. Click **Post**.
 36. Click **OK**.
 37. Close the page.

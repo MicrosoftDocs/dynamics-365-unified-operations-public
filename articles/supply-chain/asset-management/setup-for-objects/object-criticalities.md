@@ -1,8 +1,8 @@
 ---
 title: Asset criticality types
 description: Learn about asset criticality types in Asset Management, including step-by-step processes for setting up criticality types and asset criticalities.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

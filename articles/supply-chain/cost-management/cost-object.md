@@ -1,8 +1,8 @@
 ---
 title: Cost objects
 description: Learn about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
@@ -49,15 +49,15 @@ The following table shows what is a cost object and what is an inventory object.
     -   Posted quantity
 -   The **Average unit cost** field is a calculated field. The value is calculated by dividing the **Value** value by the **Quantity** value.
 
-**Note:** The **Include physical value **parameter has no effect on the preceding calculations.
+**Note:** The **Include physical value** parameter has no effect on the preceding calculations.
 
 ## Related information
 
 [Product dimension group](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Storage dimension group](/dynamicsax-2012//storage-dimension-groups-form)
+[Storage dimension group](/dynamicsax-2012/storage-dimension-groups-form)
 
-[Tracking dimension group](/dynamicsax-2012//tracking-dimension-groups-form)
+[Tracking dimension group](/dynamicsax-2012/tracking-dimension-groups-form)
 
 [What's new or changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 

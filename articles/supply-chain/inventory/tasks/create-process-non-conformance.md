@@ -1,13 +1,14 @@
 ---
 title: Create and process nonconformances
 description: Learn how to perform nonconformance management based on an existing quality order, including a step-by-step process for creating a nonconformance.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
+ms.reviewer: kamaybac
+ms.search.form: InventNonConformanceTable, InventQualityOrderTable
 ms.topic: how-to
-ms.date: 03/23/2021
-ms.custom:
-ms.reviewer: kamaybac 
-ms.search.form:
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create and process nonconformances

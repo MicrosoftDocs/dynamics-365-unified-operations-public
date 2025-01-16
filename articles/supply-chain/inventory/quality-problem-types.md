@@ -1,8 +1,8 @@
 ---
 title: Problem types for nonconformances
 description: Learn how to create and use problem types for nonconformances, including definitions for various nonconformance types and examples.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

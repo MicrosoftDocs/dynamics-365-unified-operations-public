@@ -1,8 +1,8 @@
 ---
 title: Synchronize intercompany charges
 description: Learn about synchronization of intercompany charges, including outlines on changes that occur when the Allow price edit field is enabled or disabled.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

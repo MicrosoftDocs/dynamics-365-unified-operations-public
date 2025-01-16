@@ -1,12 +1,14 @@
 ---
 title: Create and invoice an intercompany purchase order for internal use
 description: Learn how to create and invoice an intercompany purchase order for internal use, including a step-by-step process for creating purchase orders.
-author: Henrikan
-ms.author: henrikan
-ms.topic: article
-ms.date: 09/01/2021
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
+ms.topic: how-to
+ms.date: 01/07/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create and invoice an intercompany purchase order for internal use
@@ -24,11 +26,11 @@ Do these steps in legal entity AAA, as shown in the illustration.
 1. Select **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. On the **All purchase orders** list page, create a purchase order for an intercompany vendor. The field values are copied from the vendor account to the purchase order.
 
-    Because you are working with an intercompany vendor, an intercompany sales order is created in the legal entity that corresponds to the vendor. The number of the intercompany sales order can be the same as the number of the intercompany purchase order, and it can include the ID of the legal entity. The number structure that is used depends on the selection in the **Sales order numbering** field in the **Intercompany** page. For example, if you create purchase order 00029\_064 in legal entity AAA, the sales order number in legal entity BBB is AAA00029\_64.
+    Because you're working with an intercompany vendor, an intercompany sales order is created in the legal entity that corresponds to the vendor. The number of the intercompany sales order can be the same as the number of the intercompany purchase order, and it can include the ID of the legal entity. The number structure that is used depends on the selection in the **Sales order numbering** field in the **Intercompany** page. For example, if you create purchase order 00029\_064 in legal entity AAA, the sales order number in legal entity BBB is AAA00029\_64.
 
     An informational message tells you that an intercompany purchase order and intercompany sales order have been created. The message includes the intercompany sales order number, for your information.
 
-1. Add line items to the purchase order. The corresponding line items are added automatically to the intercompany sales order. If an item does not exist in the other legal entity, a message is displayed and you cannot add the item to the purchase order. To fix this problem, switch to the other legal entity and release the product to that legal entity. The item will be available to be added to sales orders in that legal entity. Then, switch back to the legal entity of the purchase order and continue adding line items.
+1. Add line items to the purchase order. The corresponding line items are added automatically to the intercompany sales order. If an item doesn't exist in the other legal entity, a message is displayed and you can't add the item to the purchase order. To fix this problem, switch to the other legal entity and release the product to that legal entity. The item will be available to be added to sales orders in that legal entity. Then, switch back to the legal entity of the purchase order and continue adding line items.
 1. When you have finished entering information for the purchase order, confirm it.
 
 ## Process the intercompany packing slip and customer invoice

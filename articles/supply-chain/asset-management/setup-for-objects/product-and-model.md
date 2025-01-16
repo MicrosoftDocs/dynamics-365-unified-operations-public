@@ -1,8 +1,8 @@
 ---
 title: Asset manufacturers and models
 description: Learn how to set up asset manufacturers and related models in Asset Management, including a process for setting up product-model relations.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

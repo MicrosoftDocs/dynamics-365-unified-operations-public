@@ -1,8 +1,8 @@
 ---
 title: Less than truckload (LTL) classes
 description: Learn about what less than truckload (LTL) classes are and describes how to set them up in Microsoft Dynamics 365 Supply Chain Management.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 

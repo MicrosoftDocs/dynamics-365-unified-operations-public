@@ -1,8 +1,8 @@
 ---
 title: Manage folios
 description: Learn how to work with folios, which typically consist of one vendor's goods for one entity or company per shipment, including an outline on action panes.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: ITMFolioTable, ITMFolioTableListPage
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Recalculate line net amounts when importing sales orders and quotations
 description: Learn how the system recalculates line net amounts when sales orders are imported and control the behavior in different versions Supply Chain Management.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 08/05/2022
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Extend inventory on-hand data entities
 description: Learn how to add fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that inventory on-hand data entities work with extensions.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 07/27/2020
 ms.custom:
@@ -37,7 +37,7 @@ For example, you've added the following four fields to the `InventTable` table t
 - Custom field 3
 - Custom field 4
 
-In the case, you must modify the `getExtensionFields()` method in the following way.
+In this case, you must modify the `getExtensionFields()` method in the following way.
 
 ```xpp
 [ExtensionOf(classStr(InventSiteOnHandAggregatedViewBuilder))]

@@ -88,7 +88,7 @@ Yes. Both inbound and outbound shipment order messages support document attachme
 
 ## Why can't I see and search for page names that are related to Warehouse management only mode?
 
-Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. Learn more in [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
+Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. Learn more in [Enable and configure Warehouse management only mode](wms-only-mode-setup.md).
 
 ## Why doesn't my registered inventory transaction have a load ID?
 

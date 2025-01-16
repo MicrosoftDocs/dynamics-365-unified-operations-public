@@ -1,8 +1,8 @@
 ---
 title: Intercompany orders and return orders
 description: Learn about intercompany orders and return orders, including outlines on intercompany order examples and intercompany return orders.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

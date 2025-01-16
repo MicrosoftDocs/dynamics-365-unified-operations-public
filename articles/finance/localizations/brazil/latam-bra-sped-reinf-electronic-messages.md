@@ -139,4 +139,3 @@ Before a message is delivered, set up XML schema validation to help prevent reje
 
 7. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates to issue and inquire about events.
 
-    ![Web services connection and certificates set up on the Web services settings page.](../media/bra-web-service-settings21.png)

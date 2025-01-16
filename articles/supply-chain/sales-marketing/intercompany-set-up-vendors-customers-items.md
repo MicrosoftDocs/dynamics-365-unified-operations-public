@@ -1,19 +1,21 @@
 ---
 title: Set up vendors, customers, and items for intercompany trade
 description: Learn how to set up vendors, customers, and items for intercompany trade, including a step-by-step process for associating vendors and customers.
-author: Henrikan
-ms.author: henrikan
-ms.topic: article
-ms.date: 09/01/2021
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CustTable, VendTable, EcoResProductListPage
+ms.topic: how-to
+ms.date: 01/07/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Set up vendors, customers, and items for intercompany trade
 
 [!include [banner](../../includes/banner.md)]
 
-To prepare your organization for intercompany trade, you must define the vendors and customers with whom you will be trading internally. You must then associate these vendors and customers with the items that you will be purchasing or selling.
+To prepare your organization for intercompany trade, you must define the vendors and customers with whom you will be trading internally. You must then associate these vendors and customers with the items that you'll be purchasing or selling.
 
 1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
 1. Select the vendor to define as an intercompany vendor.
@@ -34,6 +36,6 @@ To prepare your organization for intercompany trade, you must define the vendors
 1. If you want to allow extra lines to be created indirectly on a sales order, set **Create indirect order lines** to *Yes*. A user can then add lines to the original sales order from the intercompany sales order.
 
 > [!WARNING]
-> If you allow order lines to be created indirectly, you are permitting all additions to the original sales order from the intercompany sales order. Each addition is then processed through to the customer, and is added to the order and the invoice. Additionally, every document that is involved in the sale is printed and posted automatically. Users are not alerted about the addition.
+> If you allow order lines to be created indirectly, you're permitting all additions to the original sales order from the intercompany sales order. Each addition is then processed through to the customer, and is added to the order and the invoice. Additionally, every document that is involved in the sale is printed and posted automatically. Users aren't alerted about the addition.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

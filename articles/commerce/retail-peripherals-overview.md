@@ -5,7 +5,6 @@ author: anush6121
 ms.author: anvenkat
 ms.date: 08/07/2024
 ms.topic: overview
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
@@ -138,7 +137,7 @@ Commerce supports the OPOS industry standard as the primary peripheral device pl
 -   **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. Therefore, the testing helps guarantee that if Commerce supports a device class through OPOS, many device types are supported provided that the manufacturer provides a service object that's built for OPOS. You don't have to explicitly test each device type.
 -   **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
-[![Control object and service object.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
+![Control object and service object.](./media/retail_peripherals_overview01.png)
 
 Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
 

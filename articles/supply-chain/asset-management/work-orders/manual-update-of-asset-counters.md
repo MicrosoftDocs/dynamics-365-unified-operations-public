@@ -1,8 +1,8 @@
 ---
 title: Manual update of asset counters
 description: Learn about manual update of asset counters in Asset Management and counters, which are used to create registrations on an asset.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
 ms.custom: 

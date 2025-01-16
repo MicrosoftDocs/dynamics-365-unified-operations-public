@@ -1,8 +1,8 @@
 ---
 title: Direct deliveries
 description: Learn about direct deliveries, which are deliveries that are sent directly from the vendor to your customer with outlines on delivery dates and order lines.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
 ms.topic: how-to

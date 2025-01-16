@@ -1,8 +1,8 @@
 ---
 title: Create a purchase order from a sales order
 description: Learn how to create a purchase order that is based on a sales order, including a step-by-step process for creating purchases orders from sales orders. 
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
 ms.topic: how-to
@@ -33,7 +33,7 @@ This procedure shows you how to create a purchase order that is based on a sales
 1. In the list, select the link in the selected row.
 1. In the **Quantity** field, enter a number.
 1. Select **Save**.
-1. On the **Action Pane**, select **Sales order**.
+1. On the Action Pane, select **Sales order**.
 1. Select **Purchase order**. The **Create purchase order** page lists all the open sales order lines that have been copied from the sales order. You can review the order details, and if necessary, you can modify selected details such purchase quantity and pricing terms, before you create the purchases.
 1. Select the **Include all option**.
     - If you want to generate purchase orders for only a subset of the sales order lines, select these individually.  
@@ -50,7 +50,7 @@ This procedure shows you how to create a purchase order that is based on a sales
 
 ## Review purchase orders created from sales orders
 
-1. On the **Action Pane**, select **General**.
+1. On the Action Pane, select **General**.
 1. Select **Related orders**. The **Related orders** page lists all the orders that were created from the sales order. In this example, there are two purchase orders generated for two different vendors respectively.
 1. Select to follow the link in the **Purchase order** field. Each purchase order line is associated with the sales order line that led to the purchase. The relation to the sales order is indicated on the **Product tab** in the **Line details** FastTab, in the **Reference type**, **Reference number**, and **Reference lot** fields.  
 1. Expand or collapse the **Line details** section.

@@ -1,8 +1,8 @@
 ---
 title: Asset documents
 description: Learn about asset documents in Asset Management, including examples and a step-by-step process for creating asset document relation.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

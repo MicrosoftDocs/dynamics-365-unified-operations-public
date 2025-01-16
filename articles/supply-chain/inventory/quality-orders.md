@@ -1,13 +1,14 @@
 ---
 title: Quality orders
 description: Learn how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results.
-author: yufei-huang
-ms.author: yufeihuang
-ms.topic: article
-ms.date: 03/23/2021
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventQualityOrderTable
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Quality orders
@@ -29,7 +30,7 @@ To manually create a quality order, follow these steps.
 1. In the **Quality orders** dialog box, in the **Reference type** field, select the inventory reference that your quality order will be related to. For a description of the reference types that are available for selection, see the [Quality order reference types](#ref-types) section later in this article.
 
     > [!NOTE]
-    > Inventory that is related to the selected reference must be available. If no inventory is available for the combination of the reference type, quantity, and inventory dimensions that you select, you will receive an error message.
+    > Inventory that is related to the selected reference must be available. If no inventory is available for the combination of the reference type, quantity, and inventory dimensions that you select, you'll receive an error message.
 
 1. Follow one of these steps, depending on the value that you selected in the **Reference type** field:
 
@@ -61,12 +62,12 @@ Quality orders are used to track the details about inspections and test results 
 
 - **Inventory** – This reference type indicates that you're inspecting inventory that is on hand. Inspections of this type are typically random or unplanned, and are done when a warehouse worker identifies a problem.
 - **Sales** – This reference type indicates that you're inspecting inventory that is related to a specific sales order. Inspections of this type are typically related to customer specifications or the generation of a certificate of analysis (CoA) that must be provided to a customer as part of a shipment. (A CoA is sometimes also referred to as a certificate of compliance \[CoC\].)
-- **Purchase** – This reference type indicates that you're inspecting inventory that is related to a purchase order. Inspections of this type are often used to inspect incoming goods before they are put into inventory or consumed in production processes.
-- **Production** – This reference type indicates that you're inspecting inventory that is related to a production order. Inspections of this type are often used to inspect finished goods before they are put into inventory.
+- **Purchase** – This reference type indicates that you're inspecting inventory that is related to a purchase order. Inspections of this type are often used to inspect incoming goods before they're put into inventory or consumed in production processes.
+- **Production** – This reference type indicates that you're inspecting inventory that is related to a production order. Inspections of this type are often used to inspect finished goods before they're put into inventory.
 - **Quarantine** – This reference type indicates that you're inspecting inventory that is related to a quarantine order. Quarantine orders are a special type of order that tracks inventory in a segregated warehouse or a segregated area in your warehouse. Inspections of this type are often used to inspect goods that a customer has returned or that have been put into quarantine for further analysis. Quarantine orders can be generated from quality orders. Alternatively, they can be generated from other sources, and then quality orders can be related to the quarantine orders.
 - **Route operation** – This reference type indicates that you're inspecting inventory that is related to a specific step of the route for a production order. Inspections of this type are typically used to analyze the work in process (WIP) of a product before it moves to the next step in the production process.
 - **Co-product production** – This reference type indicates that you're inspecting inventory that is related to a co-product of a production order. Inspections of this type are typically used to inspect the co-product of a batch order before the co-product is added to inventory.
-- **Goods in transit order** – This reference type indicates that you're inspecting inventory that is related to a goods-in-transit order from Landed Cost. Inspections of this type are often used to inspect incoming goods before they are put into inventory.
+- **Goods in transit order** – This reference type indicates that you're inspecting inventory that is related to a goods-in-transit order from Landed Cost. Inspections of this type are often used to inspect incoming goods before they're put into inventory.
 
 ## View and create quality orders from various parts of the system
 
@@ -145,7 +146,7 @@ To reopen a quality order, follow these steps.
 
 ### Create a certificate of analysis for a quality order
 
-A CoA is a report that is generated by an organization's quality assurance team. It validates that a product meets specific regulations or requirements. Your customers or regulatory establishments in your geopolitical location might require CoAs. They might also be required based on your industry and the type of products that you handle, purchase, produce, or sell.
+A certificate of analysis (CoA) is a report that is generated by an organization's quality assurance team. It validates that a product meets specific regulations or requirements. Your customers or regulatory establishments in your geopolitical location might require CoA reports. They might also be required based on your industry and the type of products that you handle, purchase, produce, or sell.
 
 Supply Chain Management lets you generate a CoA from a quality order. The report will include the results of any tests on the quality order where the **Certificate of analysis report** option is set to *Yes*. This option can be set by default, based on the test that you define on the **Tests** page. However, you can override the setting on specific tests for a specific quality order.
 
@@ -188,7 +189,7 @@ You work for a manufacturing company that must follow strict regulations that ar
 
 ### Example 2
 
-You work for a distribution company that ships products that can be customized for various countries and regions. Some customers have strict specifications that must be followed. Otherwise, fees and returns or chargebacks might be incurred. You use quality orders to track the details about each test and results that match customer requirements. Cases are used to review and approve the details for the CoA before the document is generated and attached together with other shipping paperwork.
+You work for a distribution company that ships products that can be customized for various countries/regions. Some customers have strict specifications that must be followed. Otherwise, fees and returns or chargebacks might be incurred. You use quality orders to track the details about each test and results that match customer requirements. Cases are used to review and approve the details for the CoA before the document is generated and attached together with other shipping paperwork.
 
 ## Related information
 

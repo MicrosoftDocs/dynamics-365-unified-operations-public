@@ -28,7 +28,7 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 - **Embedded** – These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
 - **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md).
 
-## Available Copilot features for finance and operations apps
+## Available Copilot features in finance and operations apps
 
 The following Copilot features are currently available in finance and operations apps:
 

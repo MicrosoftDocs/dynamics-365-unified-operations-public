@@ -1,8 +1,8 @@
 ---
 title: Units of measure for line-level charges
 description: Learn how to set up line charges based on specific units and unit matches. This capability applies to both sales orders and purchase orders.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 11/22/2023
 ms.custom: bap-template
@@ -23,10 +23,9 @@ The *Specific unit* and *Specific unit match* categories are supported for sales
 
 ## Prerequisites
 
-Before you can use the features that are described in this article, your system must meet the following requirements:
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.41, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.41, then admins can turn this functionality on or off by searching for the *Unit of measure for line level charges* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that's named *Unit of measure for line level charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+This feature requires Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
 
 ## Example scenario: Set up line-level auto charges for specific units and unit matching
 
@@ -117,6 +116,6 @@ The charges can now be automatically applied to a sales quotation line or a sale
 
 ## Pricing management
 
-The features that are described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges. Therefore, it also changes some of the behavior that's described in this article. When the **Pricing management** module is [enabled](../pricing-management/pricing-management-enable.md), charges that are set up at **Accounts receivable** \> **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** \> **During-sales pricing** \> **Charges setup** \> **Auto charges**.
+The features that are described in this article work together with the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges. Therefore, it also changes some of the behavior that's described in this article. When the Unified pricing management module is [enabled](../unified-pricing-management/upm-pricing-management-enable.md), charges that are set up at **Accounts receivable** \> **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** \> **During-sales pricing** \> **Charges setup** \> **Auto charges**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

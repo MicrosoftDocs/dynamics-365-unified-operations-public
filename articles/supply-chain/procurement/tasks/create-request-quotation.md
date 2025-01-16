@@ -1,8 +1,8 @@
 ---
 title: Create a request for quotation
 description: Learn how to create a request for quotation, including step-by-step processes for preparing new RFQs, adding lines, and adding vendors.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchRFQCaseTableListPage, PurchCreateRFQCase, InventLocationIdLookup, PurchRFQCaseTable, InventItemIdLookupSimple, EcoResCategorySingleLookup, UnitOfMeasureLookup, PurchRFQEditLines, PurchRFQEditLinesPrintOptions, VendRFQJournal, SrsReportViewerForm
 ms.topic: how-to
@@ -57,7 +57,7 @@ After you've specified the basic information about your RFQ, you specify the goo
 
 ## Send the RFQ to vendors
 
-1. On the **Action Pane**, select **Send**. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.  
+1. On the Action Pane, select **Send**. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.  
 2. Select **Print**. This dialog allows you to print the RFQ. If you choose to print a reply sheet, the contents of this are defined in Procurement and Sourcing parameters. To choose how to print reply sheets, once you've opened the Print dialog, select Advanced printing options. One RFQ will be printed for each vendor containing the lines that have the status of Created or Sent. Canceled lines and lines with registered replies won't be printed.
 3. Select **Cancel**.
 4. Select **OK**.

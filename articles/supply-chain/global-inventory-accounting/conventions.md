@@ -1,8 +1,8 @@
 ---
 title: Conventions
 description: Learn how to set up conventions to establish how costs should be accounted in Global Inventory Accounting, including an outline on various fields.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/18/2021
 ms.reviewer: kamaybac

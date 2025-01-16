@@ -4,12 +4,10 @@ description: Learn how to set up the Electronic invoicing parameters in Globaliz
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 04/10/2024
+ms.date: 10/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ---
@@ -24,26 +22,29 @@ The process of submitting electronic documents to the Electronic Invoicing servi
 
 Before you can submit documents to Electronic invoicing and process responses, you must import ER configurations from the repository and define them in parameters.
 
-To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, complete the following procedures.
+> [!NOTE]
+> Most of the ER configurations that are mentioned in the following procedure are automatically imported as a result of the import of related Globalization features. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). If you must reimport configurations, use the following procedure. 
+
+To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, follow these steps.
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 1. In the **Configuration providers** section, select the **Microsoft** configuration provider, and then select **Repositories**.
 1. Select the repository of the **Dataverse** type, and then, on the Action Pane, select **Open**.
-1. Import the following ER models:
+1. Import the following ER configurations:
 
     - **Customer invoice context model**
     - **Invoice model**
     - **Fiscal documents** (for Brazilian scenarios, if required)
     - **Retail channel data** (for Saudi Arabian retail-specific scenarios, if required)
+    - **Invoices Communication Model** (for Malaysian and Indonesian batch submission scenarios, if required)
     - **Response message model**
-
-1. Verify that the following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
-
     - **Invoice model mapping**
     - **Fiscal documents mapping** (for Brazilian scenarios, if required)
     - **Advance invoice model mapping** (for Polish scenarios, if required)
     - **Retail fiscal document mapping** (for Saudi Arabian retail-specific scenarios, if required)
     - **Pending vendor invoice model mapping** (for Danish responses scenarios, if required)
+    - **Invoices communication model mapping (ID)** (for Indonesian batch submission scenarios, if required)
+    - **Consolidated Invoice Model Mapping (MY)** (for Malaysian batch submission scenarios, if required)
 
 ## Set up Electronic document parameters
 
@@ -63,10 +64,15 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
    | VendInvoiceJour | <p><b>Mapping name:</b> Self invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Self invoice</p><p><b>Configuration:</b> Self invoice model mapping</p> | Malaysian electronic invoicing (MY) |
+   | <p>CustInvoiceJour</p><p>ProjInvoiceJour</p><p>(*In case of batch submission*)</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Invoices communication model mapping (ID)</p><p><b>Configuration:</b> Invoices communication model mapping (ID)</p> | Indonesian electronic invoice (ID) |
+   | <p>CustInvoiceJour</p><p>(*In case of batch submission*)</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Consolidated Invoice Model Mapping (MY)</p><p><b>Configuration:</b> Consolidated Invoice Model Mapping (MY)</p> | Malaysian electronic invoicing (MY) |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
-To set up the rules to process responses from the Electronic Invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md).
+> [!NOTE]
+> By default, configured Electronic document parameters are applicable to all legal entities. To activate a configuration for specific legal entities, enable the **Electronic documents configuration per legal entities** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+To set up the rules to process responses from the Electronic Invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic Invoicing Service features by country or region](e-invoicing-country-specific-availability.md).
 
 ## Create a Key Vault reference
 

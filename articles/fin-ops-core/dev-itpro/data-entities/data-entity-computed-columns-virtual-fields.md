@@ -107,11 +107,8 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
 6. Go to **FMCustomerEntity** &gt; **Methods**. Right-click the **Methods** node, and then click **New**. Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.
 7. Paste the following X++ code into the method. The method returns the combined and formatted **NameAndAddress** value.
 
-    > [!NOTE]
-    > The **server** keyword is required.
-
     ```xpp
-    private static server str formatNameAndAddress()   // X++
+    private static str formatNameAndAddress()   // X++
     {
         DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
         List                fieldList = new List(types::String);

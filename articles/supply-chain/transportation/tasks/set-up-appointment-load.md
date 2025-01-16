@@ -1,8 +1,8 @@
 --- 
 title: Set up an appointment for a load
 description: Learn how to set up and plan a dock appointment for a load typically done by transportation coordinators, including a step-by-step process. 
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

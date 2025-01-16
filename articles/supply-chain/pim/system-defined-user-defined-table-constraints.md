@@ -1,8 +1,8 @@
 ---
 title: System-defined and user-defined table constraints
 description: Learn about the two types of table constraints for components in a product configuration model with an outline on user-defined table constraints.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

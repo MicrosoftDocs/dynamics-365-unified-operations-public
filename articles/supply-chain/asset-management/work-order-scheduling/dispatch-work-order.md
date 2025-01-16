@@ -1,8 +1,8 @@
 ---
 title: Dispatch work order
 description: Learn how to dispatch a work order in Asset Management, which schedules work orders and work order jobs, including a step-by-step process.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/19/2019
 ms.custom:

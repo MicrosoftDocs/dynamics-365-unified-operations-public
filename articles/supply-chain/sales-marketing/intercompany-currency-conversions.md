@@ -1,8 +1,8 @@
 ---
 title: Intercompany currency conversions
 description: Learn about currency conversions for intercompany transactions, including a list of fields that are currency converted when synchronized.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Product-related translations FAQ
 description: Learn how to manage translations for products, product dimension values, and product attributes with outlines on translating data and information. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 08/06/2020
 ms.reviewer: kamaybac

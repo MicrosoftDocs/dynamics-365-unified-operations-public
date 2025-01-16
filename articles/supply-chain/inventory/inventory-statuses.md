@@ -1,10 +1,10 @@
 ---
 title: Inventory statuses
 description: Learn how you can use inventory statuses to categorize and keep track of inventory with an outline on setting up and using inventory statuses.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
-ms.date: 05/27/2024
+ms.date: 11/15/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -47,16 +47,20 @@ To plan coverage for items that have an available inventory status, select the *
 
 ## Change inventory statuses
 
-You can change inventory statuses either by using the **On-hand by location** page or by using the *Inventory status change* periodic task.
+You can change inventory statuses either by using the **On-hand by location** page or by using a batch job.
 
-- When using the *Inventory status change* periodic task, you can select which records to include and set the task to run in the batch at the desired interval.
-- To change inventory status as an ad-hoc process, go to **On-hand by location** page, select the relevant records, and then select the **Inventory status change** button.
+To change inventory status of individually selected records, follow these steps.
 
-> [!NOTE]
-> The *Change the inventory status of items controlled by tracking dimensions* feature allows you to change the inventory status of items controlled by tracking dimensions, including the ability to update only selected records. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Change the inventory status of items controlled by tracking dimensions* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. If the feature is enabled, you'll be able to do the following:
->
-> - On the **On-hand by location** page, you can group lines based on shown dimensions using the **Display dimensions** button and change the status for the selected lines.
-> - On the **On-hand by location** page, you can select multiple records and then use the **Inventory status change** button to change all of them at once.
-> - On the **Inventory status change** periodic task you will be able to filter by tracking dimensions.
+1. Go to **Warehouse management** \> **Inquiries and reports** \> **On-hand by location**.
+1. Use the **Site**, **Warehouse**, and **Location** fields to find the relevant location.
+1. On the **Locations** tab, select the location.
+1. On the **On-hand** tab, select the relevant records, and then select the **Inventory status change** button.
+
+To set up a batch job task that selects and updates records, follow these steps.
+
+1. Go to **Warehouse management** \> **Periodic tasks** \> **Warehouse management inventory status change**.
+1. On the **Parameters** FastTab, set **To inventory status** to the status value you want to update the selected records to.
+1. On the **Records to include** FastTab, select the **Filter** button and set up a query that selects which records to change.
+1. On the **Run in background** FastTab, set **Batch processing** to *Yes*. If you want to run the job at a regular interval, select **Recurrence** and assign the interval.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

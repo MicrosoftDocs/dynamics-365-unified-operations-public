@@ -1,13 +1,14 @@
 ---
 title: Trade allowance management
 description: Learn about trade allowance management for Dynamics 365 Supply Chain Management, including outlines on audience and purpose.
-author: Henrikan
-ms.author: henrikan
-ms.topic: article
-ms.date: 08/17/2018
-ms.custom:
-ms.reviewer: kamaybac  
+author: AditiPattanaik
+ms.author: adpattanaik
+ms.reviewer: kamaybac
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
+ms.topic: how-to
+ms.date: 01/07/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Trade allowance management
@@ -15,7 +16,6 @@ ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTa
 [!include [banner](../includes/banner.md)]
 
 Trade allowance management helps companies manage sales promotion programs that offer "pay-for-performance" monetary rewards to customers that achieve volume and behavioral goals. The feature’s capabilities are designed for companies that focus on comprehensive promote-to-profit processes, from promotion fund budgeting and allocation, to allowance contract setup, to claims creation and processing, to payment processing, to promotion effectiveness analysis.
-
 
 This article will provide a broad overview of the Trade allowance management feature and will familiarize you with the typical set of tasks that are involved in managing a sales promotion program. Several types of users who have operational and decision making responsibilities are expected to use this functionality to achieve their respective goals:
 
@@ -31,7 +31,7 @@ The information in this document is intended for business decision makers in ent
 
 - High-level budgets and fund allocation
 - Planning and analyzing sales promotions
-- Managing staff that processes bill-back claims, runs payments based on merchandizing events, and settles short-pays and deductions
+- Managing staff that processes bill-back claims, runs payments based on Merchandising events, and settles short-pays and deductions
 
 People in these roles are looking for ways to achieve these goals:
 
@@ -53,7 +53,7 @@ Funds that are allocated to trade allowance agreements are recorded on the **Fun
 
 On the **Funds** page, you can view the details of promotional funds.
 
-The **General** FastTab shows the period that the fund is valid for and its budgeted amount. In order for the fund to be allocated to the promotion agreement, the **Status** field must have a value of **Approved**.
+The **General** FastTab shows the period that the fund is valid for and its budgeted amount. In order for the fund to be allocated to the promotion agreement, the **Status** field must have a value of *Approved*.
 
 The **Customers** FastTab shows the customer hierarchy. To select the customers that the fund targets, drag them so that they are under **Fund customers**. This FastTab also shows how the total amount of the fund is distributed.
 
@@ -61,7 +61,7 @@ The **Items** FastTab shows the items that are included in the promotion.
 
 ### Trade allowance agreement
 
-After the fund definition is in place, the next step in promotion planning is to register promotion contracts (which are known as trade allowance agreements), allocate funds, and define performance goals for each merchandizing event.
+After the fund definition is in place, the next step in promotion planning is to register promotion contracts (which are known as trade allowance agreements), allocate funds, and define performance goals for each Merchandising event.
 
 Trade allowance agreements are recorded on the **Trade allowance agreements** page. To open the **Trade allowance agreements** page, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**.
 
@@ -71,7 +71,7 @@ Trade allowance agreements are recorded on the **Trade allowance agreements** pa
 
 Select **Header** to switch to the Header view.
 
-On the **General** FastTab, the **Order to** and **Order from** fields define the period when the agreement is valid. An approval status of **Internal approved** for the agreement indicates that the agreement isn't yet valid and can't be applied during sales order processing.
+On the **General** FastTab, the **Order to** and **Order from** fields define the period when the agreement is valid. An approval status of *Internal approved* for the agreement indicates that the agreement isn't yet valid and can't be applied during sales order processing.
 
 The **Analysis** section of the **General** FastTab contains important fields that define the quantities and costs that are used for promotion evaluation:
 
@@ -89,25 +89,25 @@ On the **Funds** FastTab, you can view the promotion funds that are associated w
 
 Next, select **Lines** to switch to the Lines view.
 
-The **Merchandizing events** tab shows the types of events covered by an agreement. There are three types: bill back, lump sum and off-invoice.
+The **Merchandising events** tab shows the types of events covered by an agreement. There are three types: bill back, lump sum, and off-invoice.
 
-When you select the merchandizing event and then select the **Amounts** tab, the details for the event are found.
+When you select the merchandising event and then select the **Amounts** tab, the details for the event are found.
 
 ![Trade allowance agreement lines.](./media/trade-allowance-management-agreements-lines.png "Trade allowance agreement lines")
 
 In the **Trade allowance lines** section, you specify the quantity or amount ranges that the customer must achieve for definitions to obtain the rewards.
 
-In the case of a merchandizing event of the **Bill back** type, the upper section the **Amounts** tab defines the rules that the bill back will be applied, generated, and paid under. For example, the rules may specify the following conditions for the bill back claim:
+For merchandising events of the *Bill back* type, the upper section the **Amounts** tab defines the rules that the bill back will be applied, generated, and paid under. For example, the rules might specify the following conditions for the bill back claim:
 
-- It’s based on the creation date of the sales order (the **Calculation date type** value is **Created**).
-- It’s calculated based on the sales order line’s amount before discounts, not the net amount, which includes discounts (the **Taken from** value is **Gross**).
-- It’s based on the volume of the sold products, not the amount (the **Rebate line break type** value is **Quantity**).
-- It’s calculated per period of a month (the **Cumulate sales by** value is **Month**). 
-- It’s settled as a deduction, not by using A/P (the **Payment type** value is **Customer deductions**).
+- It’s based on the creation date of the sales order (the **Calculation date type** value is *Created*).
+- It’s calculated based on the sales order line’s amount before discounts, not the net amount, which includes discounts (the **Taken from** value is *Gross*).
+- It’s based on the volume of the sold products, not the amount (the **Rebate line break type** value is *Quantity*).
+- It’s calculated per period of a month (the **Cumulate sales by** value is *Month*).
+- It’s settled as a deduction, not by using A/P (the **Payment type** value is *Customer deductions*).
 
-In the case of a merchandizing event of the **Lump sum** type, the **Amounts** tab shows the quantity that will be paid to the customer in the form of a deduction when the customer achieves specific performance. An approval status of **Open** indicates that the lump sum hasn't yet been paid.
+For merchandising events of the *Lump sum* type, the **Amounts** tab shows the quantity that will be paid to the customer in the form of a deduction when the customer achieves specific performance. An approval status of *Open* indicates that the lump sum hasn't yet been paid.
 
-To apply the agreement to sales orders that meet the agreement's conditions, the agreement's status must be **Confirmed**. 
+To apply the agreement to sales orders that meet the agreement's conditions, the agreement's status must be *Confirmed*.
 
 ## Perform sales under the planned merchandising event and generate bill-back claims
 
@@ -126,7 +126,7 @@ The next steps in the process for handling bill-backs are to review, calculate, 
 
 The Bill back workbench is where the promotion agreement owner periodically reviews and processes the claims that are generated. It's also where the A/R administrator converts the approved claims into deductions or regular payments, depending on the payment method for the claim.
 
-On the **Bill back workbench** page, you can review the claim lines. If the claims are in **To be recalculated** status, they must be recalculated for any cumulative effect.
+On the **Bill back workbench** page, you can review the claim lines. If the claims are in *To be recalculated* status, they must be recalculated for any cumulative effect.
 
 ### Recalculate claims
 
@@ -138,15 +138,15 @@ After the recalculation is completed, the status of the claims is changed to **C
 
 ### Process claims and pass them to A/R
 
-The claims are now ready for A/R processing. To process them, on the Action Pane, select **Process**. 
+The claims are now ready for A/R processing. To process them, on the Action Pane, select **Process**.
 
-Upon processing the claims, the status has changed to **Mark** and indicates that a journal posting (the journal that is posted is the Rebate accrual journal, as specified in the A/R parameters) has caused the following events to occur: 
+Upon processing the claims, the status has changed to *Mark* and indicates that a journal posting (the journal that is posted is the Rebate accrual journal, as specified in the A/R parameters) has caused the following events to occur:
 
 - The claims have been transferred to the temporary customer balance as deductions.
 - The rebate accrual account has been credited to represent the future liability for the customer.
 - The rebate expense account has been debited to recognize the cost that was incurred in connection with the sales.
 
-To complete the process, the A/R clerk must now handle the accrual deductions by transferring them to the customers balance as a credit note (liability). 
+To complete the process, the A/R clerk must now handle the accrual deductions by transferring them to the customers balance as a credit note (liability).
 
 To start the task, on the Action Pane of the **Customer** page, select **Collect** \> **Settle transactions**. Then, on the **Settle transactions** page, select **Functions** \> **Bill back program**. This rebate page shows all the bill-back claims that were previously processed.
 
@@ -157,7 +157,7 @@ Upon credit note creation, a journal is posted. (The journal that is posted is t
 - The customer's receivable account has been credited.
 - The rebate accrual account has been debited.
 
-To approve a merchandising event of the **Lump sum** type, select the event on the **Trade allowance agreements** page, and then, on the **Amount** tab, select **Approve**.
+To approve a merchandising event of the *Lump sum* type, select the event on the **Trade allowance agreements** page, and then, on the **Amount** tab, select **Approve**.
 
 ## Settle the deduction that is due and the customer short-pay by using the Deduction workbench
 
@@ -167,9 +167,9 @@ To register a customer's short-pay in the Payment journal, select **Accounts rec
 
 The collection manager is now responsible for settling the open credit note transaction and the short-pay transaction against each other in the Deduction workbench.
 
-To manage deductions, select **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**. The upper section of the page contains lines that represent the short-pays from the customer. The lower section of the page contains the customers open credit transactions. 
+To manage deductions, select **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**. The upper section of the page contains lines that represent the short-pays from the customer. The lower section of the page contains the customers open credit transactions.
 
-To settle the deduction against the open transaction, mark the deduction line, and then, on the Open transactions tab, mark the line. On the Action Pane, click Maintain > Match.
+To settle the deduction against the open transaction, mark the deduction line, and then, on the Open transactions tab, mark the line. On the Action Pane, select Maintain > Match.
 
 The status of the originating claims is now set to **Completed**.
 
@@ -183,10 +183,8 @@ The **Summary** tab shows the total quantity of products that have been sold und
 
 The **Bill back credits** tab contains the details of individual bill-backs that have been credited to the customer.
 
-To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**.  
+To get a more analytical overview of the various performance measures for the promotion, you can use the **Analysis** view. To go to the **Analysis** view, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, select **Analysis**.  
 
-To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**. 
-
-
+To get a more analytical overview of the various performance measures for the promotion, you can use the **Analysis** view. To go to the **Analysis** view, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, select **Analysis**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

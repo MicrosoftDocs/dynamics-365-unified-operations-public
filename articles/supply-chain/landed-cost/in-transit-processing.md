@@ -1,8 +1,8 @@
 ---
 title: Goods-in-transit processing
 description: When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 05/22/2024
 ms.custom: 
@@ -29,7 +29,7 @@ When you enable the **Landed cost** module, the standard *terms of delivery* ent
 
 When the **Goods in transit management** option is set to *Yes* for the applicable terms of delivery record, the goods are put into the goods-in-transit warehouse. This action is triggered only if the inventory receipt isn't processed before an invoice is processed. When the delivery terms for an order are set to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, an error occurs. The error message states that they must use the goods-in-transit functionality to proceed.
 
-To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the fields that the **Landed cost** module adds to the **Terms of delivery** page to support the goods-in-transit functionality. Both fields are on the **General** FastTab. For more information about the other fields on this page, see [Terms of delivery (form)](/dynamicsax-2012//terms-of-delivery-form).
+To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the fields that the **Landed cost** module adds to the **Terms of delivery** page to support the goods-in-transit functionality. Both fields are on the **General** FastTab. For more information about the other fields on this page, see [Terms of delivery (form)](/dynamicsax-2012/terms-of-delivery-form).
 
 | Field | Description |
 |---|---|
@@ -44,7 +44,7 @@ Landed cost adds two new types of warehouse: *goods in transit* and *under-deliv
 
 The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse, and that warehouse will be used to process the goods on goods-in-transit orders before they're received at the final destination warehouse. In general, one goods-in-transit warehouse is enough for each site if Site and Warehouse are the only inventory dimensions that are used for inventory management. If the Location inventory dimension is also used, a goods-in-transit warehouse must be set up for each combination of a site and warehouse, so that the default location can also be specified.
 
-To work with goods-in-transit settings for your warehouses, go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**. The following table describes the fields that the **Landed cost** module adds to the **Warehouses** page to support the goods-in-transit functionality. Both fields appear on the **General** FastTab. For information about the other fields on the page, see [Warehouses (form)](/dynamicsax-2012//warehouses-form).
+To work with goods-in-transit settings for your warehouses, go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**. The following table describes the fields that the **Landed cost** module adds to the **Warehouses** page to support the goods-in-transit functionality. Both fields appear on the **General** FastTab. For information about the other fields on the page, see [Warehouses (form)](/dynamicsax-2012/warehouses-form).
 
 | Field | Description |
 |---|---|

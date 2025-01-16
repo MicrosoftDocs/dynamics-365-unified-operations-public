@@ -1,8 +1,8 @@
 ---
 title: Set up product search for Inventory Visibility
 description: Learn how to set up product search for Inventory Visibility, which lets users search for products and on-hand inventory information based on specific attributes.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
 ms.date: 11/20/2023
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Quality and nonconformance management overview
 description: Learn about the quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management and how they help improve product quality.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: overview
 ms.date: 05/27/2024
 ms.custom:

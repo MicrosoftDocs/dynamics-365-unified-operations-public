@@ -1,8 +1,8 @@
 ---
 title: Display charges for a manufactured item
 description: The constant costs of a manufactured item reflect the operation setup times and the components that have a constant quantity or a constant scrap amount.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 04/20/2017
 ms.reviewer: kamaybac

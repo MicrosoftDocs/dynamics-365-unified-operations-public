@@ -1,8 +1,8 @@
 ---
 title: Costing sheets
 description: The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: conceptual
 ms.date: 05/27/2024
 ms.custom:
@@ -39,5 +39,9 @@ Two blocking policies for a costing version determine whether pending costs can 
 After you define the costing sheet format and calculations for indirect costs, you must perform a separate step to validate and save the information. The costing sheet represents a company-wide format for consistently displaying information about the costs of goods sold.
 
 The costing sheet is displayed as part of the **Calculate item cost** page. The costing sheet can be displayed for a manufactured item’s calculated cost record on the **Item price** page or for an order-specific calculation record on the **BOM calculation results** page. It can also be displayed as part of the **Price calculation** page for a production order.
+
+## Related information
+
+- The white paper [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the articles, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

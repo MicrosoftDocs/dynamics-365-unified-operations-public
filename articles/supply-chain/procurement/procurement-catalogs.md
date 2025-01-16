@@ -1,8 +1,8 @@
 ---
 title: Procurement catalogs overview
 description: Learn how purchasing professionals can set up and maintain procurement catalogs, which define the services that company employees can order for internal use.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 ms.topic: overview

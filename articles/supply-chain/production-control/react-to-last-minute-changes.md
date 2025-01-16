@@ -25,7 +25,7 @@ Sometimes, a bill of materials (BOM) item must be changed on multiple production
 Before you can change BOM items on production orders, your system must meet the following requirements:
 
 - You must be running Supply Chain Management 10.0.38 or later.
-- The feature that's named *Change BOM item* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Change BOM item* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.41, it's turned on by default.
 
 ### Change a BOM item on a production order
 
@@ -69,7 +69,7 @@ It's often useful to change the setup times for routes when improvements are mad
 Before you can change production order routes, your system must meet the following requirements:
 
 - You must be running Supply Chain Management 10.0.38 or later.
-- The feature that's named *Production order route change* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Production order route change* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.41, it's turned on by default.
 
 ### Change a production order route
 

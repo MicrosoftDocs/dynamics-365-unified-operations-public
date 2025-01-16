@@ -1,8 +1,8 @@
 --- 
 title: Enter sales agreements
 description: Learn how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 08/08/2019
 ms.custom:

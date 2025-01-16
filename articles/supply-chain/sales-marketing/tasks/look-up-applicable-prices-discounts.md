@@ -1,8 +1,8 @@
 --- 
 title: Look up applicable prices and discounts
 description: Learn how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 11/10/2016
 ms.custom:

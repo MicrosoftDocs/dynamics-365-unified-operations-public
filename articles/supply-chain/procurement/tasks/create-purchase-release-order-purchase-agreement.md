@@ -1,8 +1,8 @@
 --- 
 title: Apply a purchase agreement when creating a purchase order
 description: Learn how to use a purchase agreement when you create a purchase order, including a step-by-step process for creating a purchase order. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 08/09/2019
 ms.custom:
@@ -42,11 +42,10 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 
 ## Look up the purchase agreement
 
-1. On the **Action Pane**, select **General**.
+1. On the Action Pane, select **General**.
 1. Select **Purchase agreement**.
 1. Close the page.
 1. Close the page.
 
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

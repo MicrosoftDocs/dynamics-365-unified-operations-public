@@ -1,8 +1,8 @@
 ---
 title: Enable and set up product bundles 
 description: Learn how to set up product bundles, including prerequisites and an outline on toggling product bundle features for your system.
-author: henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 04/29/2024
 ms.custom: bap-template
@@ -30,25 +30,20 @@ To make product bundle functionality available, you must turn it on for your sys
 1. Go to **System administration \> Workspaces \> Feature management**. (Learn more in [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 1. On the **All** tab, use the **Filter** field to search for the feature that's named *Revenue recognition*.
 1. If the *Revenue recognition* feature is enabled in your system, select it in the list, and then select **Disable** to disable it. You can't use this feature together with the *Product bundle* feature.
-1. Use the **Filter** field to search for the feature that's named *Product bundle*.
+1. Use the **Filter** field to search for the feature that's named *Product bundles*.
 1. Select the feature in the list, and then select **Enable now** to enable it.
 
 > [!NOTE]
 > When you first turn on the *Product bundle* feature, the system checks whether it includes any released products where the **Revenue recognition bundle** option is set to *Yes*. If it does, the system creates a batch job that automatically upgrades the records for those products so that they will work with the *Product bundle* feature. Likewise, if the system includes any uncanceled sales orders that have lines that contain revenue recognition bundle items, those sales order lines are also upgraded so that they will work with the *Product bundle* feature. This behavior should provide a seamless experience as you transition from using revenue recognition bundles to using product bundles. The upgrade is done as part of a Data maintenance portal action.
 
-### Turn on the product bundles in journals feature (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!--KFM: Preview until further notice -->
+### Turn on the product bundles in journals feature
 
 The *Product bundles in journals* feature extends the *Product bundle* feature. It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 To make the *Product bundles in journals* feature available, you must turn it on for your system.
 
 1. Go to **System administration** \> **Workspaces** \> **Feature management**. (Learn more in [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. On the **All** tab, use the **Filter** field to search for the feature that's named *(Preview) Product bundles in journals*.
+1. On the **All** tab, use the **Filter** field to search for the feature that's named *Product bundles in journals*.
 1. Select the feature in the list, and then select **Enable now** to enable it.
 
 > [!NOTE]

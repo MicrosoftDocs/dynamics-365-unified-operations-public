@@ -1,8 +1,8 @@
 ---
 title: Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
 description: Learn how to integrate the Asset management module to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 04/28/2020
 ms.custom:

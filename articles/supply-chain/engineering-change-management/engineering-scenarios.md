@@ -1,8 +1,8 @@
 ---
 title: Engineering change management feature walkthrough
 description: Learn about an end-to-end walkthrough that shows how to work with engineering change management with an outline on setting up for the sample scenario.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 08/05/2022
 ms.custom:

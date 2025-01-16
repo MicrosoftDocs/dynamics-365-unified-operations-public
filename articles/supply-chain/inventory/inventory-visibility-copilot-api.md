@@ -1,10 +1,10 @@
 ---
 title: Inquire into inventory with Copilot (preview)
 description: Learn how the inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
-ms.date: 11/07/2023
+ms.date: 11/11/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:

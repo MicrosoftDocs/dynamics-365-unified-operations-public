@@ -6,7 +6,7 @@ ms.author: aolson
 ms.topic: article
 ms.date: 05/20/2024
 ms.reviewer: twheeloc
-ms.collection: get-started
+ms.collection: get-started 
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

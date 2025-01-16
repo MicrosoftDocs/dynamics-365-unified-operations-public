@@ -1,8 +1,8 @@
 ---
 title: Active work order maintenance jobs overview
 description: Learn about active work order maintenance jobs overview in Asset Management, including a step-by-step process for opening the list page.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: overview
 ms.date: 10/15/2019
 ms.reviewer: kamaybac

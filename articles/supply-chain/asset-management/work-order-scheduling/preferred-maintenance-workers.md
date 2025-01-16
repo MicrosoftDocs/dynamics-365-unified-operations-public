@@ -1,8 +1,8 @@
 ---
 title: Set up preferred maintenance workers
 description: Learn how to set up preferred maintenance workers in Asset Management, including an outline and step-by-step process for setting up preferred workers.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/19/2019
 ms.custom:

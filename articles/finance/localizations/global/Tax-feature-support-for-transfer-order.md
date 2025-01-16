@@ -20,17 +20,6 @@ ms.dyn365.ops.version: 10.0.18
 
 This article provides information about tax calculation and posting integration in transfer orders. This functionality lets you set up tax calculation and posting in transfer orders for stock transfers. Under European Union (EU) value-added tax (VAT) regulations, stock transfers are considered intra-community supply and intra-community acquisitions.
 
-To configure and use this functionality, you must complete three main steps:
-
-1. **RCS setup:** In Regulatory Configuration Service (RCS), set up the tax feature, tax codes, and tax codes applicability for tax code determination in transfer orders.
-2. **Dynamics 365 Finance setup:** In Finance, enable the **Tax in transfer order** feature, set up the tax calculation parameters for inventory, and set up core tax parameters.
-3. **Inventory setup:** Set up the inventory configuration for transfer order transactions.
-
-> [!NOTE]
-> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
->
-> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
-
 ## Set up Tax calculation for tax and transfer order transactions
 
 Follow these steps to set up the tax that is involved in a transfer order. In the example that is shown here, the transfer order is from the Netherlands to Belgium.
@@ -131,17 +120,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 
 ## Set up Finance for transfer order transactions
 
-Follow these steps to enable and set up taxes for transfer orders.
-
-1. In Finance, go to **Workspaces** > **Feature management**.
-2. In the list, find and select the **Tax in transfer order** feature, and then select **Enable now** to turn it on.
-
-    > [!IMPORTANT]
-    > The **Tax in transfer order** feature is fully dependent on the tax calculation feature. Therefore, it can be turned on only after you enable the **Enable advanced tax calculation** parameter on the **Tax calculation parameters** page.
-
-    ![Tax in transfer order feature.](../media/image7.png)
-
-3. Enable the tax calculation **Enable advanced tax calculation** parameter, and select the **Inventory** business process.
+1. Enable the tax calculation **Enable advanced tax calculation** parameter, and select the **Inventory** business process.
 
     > [!IMPORTANT]
     > You must complete this step for each legal entity in Finance where you want the tax calculation feature and the functionality for tax in transfer orders to be available.
@@ -149,12 +128,12 @@ Follow these steps to enable and set up taxes for transfer orders.
     1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters**.
     2. In the **Business process** field, select **Inventory**.
 
-4. Verify that the reverse charge mechanism is set up. Go to **General ledger** \> **Setup** \> **Parameters**, and then, on the **Reverse charge** tab, verify that the **Enable reverse charge** option is set to **Yes**.
+2. Verify that the reverse charge mechanism is set up. Go to **General ledger** \> **Setup** \> **Parameters**, and then, on the **Reverse charge** tab, verify that the **Enable reverse charge** option is set to **Yes**.
 
     ![Enable reverse charge option.](../media/image9.png)
 
-5. Verify that the related tax codes, tax groups, item tax groups, and VAT registration numbers have been set up in Finance according to the tax calculation guidance.
-6. Set up an interim transit account. This step is required only when the tax that is applied to a transfer order isn't applicable to a tax exempted or reverse charge mechanism.
+3. Verify that the related tax codes, tax groups, item tax groups, and VAT registration numbers have been set up in Finance according to the tax calculation guidance.
+4. Set up an interim transit account. This step is required only when the tax that is applied to a transfer order isn't applicable to a tax exempted or reverse charge mechanism.
 
     1. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
     2. In the **Interim transit** field, select a ledger account.

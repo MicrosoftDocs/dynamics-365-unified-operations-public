@@ -1,8 +1,8 @@
 ---
 title: Preventive maintenance overview
 description: Learn about preventive maintenance in Asset Management. Maintenance plans are used for preventive and reactive maintenance on individual assets.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview

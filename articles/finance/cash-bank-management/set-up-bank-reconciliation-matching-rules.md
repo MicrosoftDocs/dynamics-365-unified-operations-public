@@ -2,9 +2,9 @@
 title: Set up bank reconciliation matching rules
 description: Learn how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process.
 author: music727 
-ms.author: wangchen
+ms.author: mibeinar
 ms.topic: article
-ms.date: 08/16/2024
+ms.date: 01/03/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -23,17 +23,19 @@ This article explains how to set up reconciliation matching rules and reconcilia
 You can set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process. A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Dynamics 365 Finance bank transaction lines during the reconciliation process. Use the **Reconciliation matching rules** page to set up the reconciliation matching rules. You can set up more than one matching rule and then create a reconciliation matching rule set on the **Reconciliation matching rule sets** page. 
 
 > [!NOTE] 
-> Bank reconciliation matching rules are used if you reconcile an electronic bank statement by using advance bank reconciliation. 
+> Bank reconciliation matching rules are used if you reconcile an electronic bank statement by using advance bank reconciliation.
 
 On the **Reconciliation matching rules** page, you can select which actions and selection criteria are used when the matching rule is run. In the **Actions** field group, select the action that will be performed when the matching rule is run during the reconciliation process.  
 
 By default, matching rules will match to the first bank document (transaction) that meets the matching rule criteria. If multiple bank documents (transactions) meet the rule criteria, the parameter to require manual matching can be turned on by going to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation > Require manual matching when advanced bank reconciliation matching rules find multiple documents that match on amount**.
 
-The feature **Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules** is enabled by default and adds three additional matching types: 
-
+If the **Modern bank reconciliation** feature is enabled, the following additional matching types are available: 
 - One to many
 - Many to one
-- Many to many 
+- Many to many
+
+> [!NOTE] 
+> The **BankReconciliationMatchingRuleEntity** data entity to import and export reconciliation matching rules can only be used if the **Modern bank reconciliation** feature is disabled. 
 
 When you select one of these matching types, grouping conditions are available in the reconciliation matching rule setup. Bank statement records and bank transaction records are grouped by the grouping conditions that are defined in this step, and then the remaining matching steps are run.
 
@@ -46,6 +48,11 @@ When you select one of these matching types, grouping conditions are available i
 | **Clear reversal statement lines** | Create criteria to specify how reversal statement lines should be removed from the **Bank reconciliation worksheet** page when the matching rule is run. This option is used when a bank error causes two bank statement lines to be listed in the imported bank statement, and the lines must be reconciled. |<ul><li> **Step 1**: **Find reversal statement lines** – Add selection criteria to select reversal bank statement lines. For example, to select only checks, select the **Bank transaction code** in the **Field** field, select the plus sign (+) in the **Operator** field, and then enter **Checks** in the **Value** field. </li><li>**Step 2: Find original statement lines** – You can add selection criteria to match bank document (transaction) lines to bank statement lines. </li><li>**Step 3: Find Finance bank transactions** – You can add selection criteria to match Finance bank transactions to bank statement lines.</li></ul>  |
 | **Mark new transactions**          | Create criteria to specify how new transactions should be marked on the **Bank reconciliation worksheet** page when the matching rule is run.                                                                                                                                                                 | <ul><li>**Step 1: Find statement lines** – Add selection fields to specify which bank statement lines should be selected from the **Bank reconciliation worksheet** page.</li><li> **Step 2: Find finance and operations** – You can add selection criteria to search bank document (transaction) lines. If no bank document is found, a statement line will be marked as a new transaction. </li></ul>         |
 
+
+If the **Modern bank reconciliation** feature is enabled, additional reconciliation rules are available for further automation. For more information, see:
+- [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md)
+- [Clear reversal company transactions in advanced bank reconciliation](clear-reverse-comp-trans.md)
+- [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

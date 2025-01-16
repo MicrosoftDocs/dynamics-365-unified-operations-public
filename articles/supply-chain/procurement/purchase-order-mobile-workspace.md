@@ -1,8 +1,8 @@
 ---
 title: Purchase order approval mobile workspace
 description: Learn about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac
@@ -57,13 +57,6 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </tr>
 </tbody>
 </table>
-
-## Download and install the mobile app
-Download and install the finance and operations mobile app:
-
-- [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
-- [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
-
 
 ## Sign in to the mobile app
 

@@ -1,8 +1,8 @@
 ---
 title: Maintenance rounds
 description: Learn about maintenance rounds in Asset Management, including outlines and step-by-step processes for setting up and scheduling maintenance rounds.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetRoundTable 
 ms.topic: how-to
