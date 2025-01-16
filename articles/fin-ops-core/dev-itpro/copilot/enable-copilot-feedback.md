@@ -64,7 +64,6 @@ To turn enhanced user feedback on or off at the finance and operations environme
 
 1. Sign in to your finance and operations apps environment.
 1. Go to **System administration** \> **Workspaces** \> **Feature management**. (Learn more about Feature management in [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Select **Check for updates**.
 1. Find and select the feature that is named *(Preview) Enable user feedback for Copilot and related experiences*. Then select **Enable now** to turn it on or **Disable** to turn it off.
 
     > [!NOTE]
@@ -78,3 +77,7 @@ Admins can review and manage user-provided feedback by going to product feedback
 1. In the left pane, select **Health** \> **Product feedback**.
 
 The portal shows all collected feedback. Admins can filter, review details, and examine attached data as they require.
+
+## Related information
+
+Enhanced user feedback for Copilot and related experiences uses the same [in-product feedback system as Microsoft 365 apps](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide). For information about what feedback data is collected about Copilot and how it's used, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/en-us/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
