@@ -1,6 +1,6 @@
 ---
 title: Manage Azure Maps for your organization
-description: This article describes how to manage Microsoft Azure Maps in Microsoft Dynamcis 365 Commerce.
+description: This article describes how to manage Microsoft Azure Maps in Microsoft Dynamics 365 Commerce.
 author: ritakimani1
 ms.date: 01/27/2025
 ms.topic: how-to
@@ -18,7 +18,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to manage Microsoft Azure Maps in Microsoft Dynamcis 365 Commerce.
+This article describes how to manage Microsoft Azure Maps in Microsoft Dynamics 365 Commerce.
 
 When Azure Maps is turned on, you can use it with the Commerce distributed order management (DOM) feature. 
 
@@ -43,7 +43,7 @@ To enter an Azure Maps key, follow these steps.
 
 If you enable the Azure Maps feature, address information is automatically sent over the internet to the Azure Maps service to display an online map of the address within the application. Your use of Azure Maps is governed by the [Azure Maps Terms of Use](https://azure.microsoft.com/support/legal/). For information on Azure Map's geographic scope and how to limit data residency, see [Azure Maps Consent Management](/azure/azure-maps/consent-management).
   
-Administrators can turn the Azure Maps feature on or off in headquarters at **Commerce shared Parameters \> Azure Maps**. Turning the Azure Maps app off makes the feature unavailable in Commerce.
+Administrators can turn the Azure Maps feature on or off in headquarters at **Commerce shared Parameters \> Azure Maps**. Turning Azure Maps app off makes the feature unavailable in Commerce.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
