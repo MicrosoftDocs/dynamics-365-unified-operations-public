@@ -2,7 +2,7 @@
 title: Set up DOM
 description: This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 08/23/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -22,7 +22,7 @@ This article describes how to set up distributed order management (DOM) function
 > [!IMPORTANT]
 > Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**.
 
-> Starting with the Dynamics 365 Commerce 10.0.43 release, you can now use Azure Maps as an alternative to Bing Maps. [Manage Azure Maps for your organisation](manage-bing-maps.md).
+> Starting with the Dynamics 365 Commerce 10.0.43 release, you can now use Azure Maps as an alternative to Bing Maps. [Manage Azure Maps for your organisation](dev-itpro/manage-bing-maps.md).
 
 ## Enable the DOM configuration key
 
@@ -40,10 +40,10 @@ To enable Azure Maps, follow these steps.
 3. Set **Enable Azure Maps** to **Yes** to turn on the Azure Maps functionality.
 4. Enter a valid **Azure Maps key** and **Save**.
 
-See [Manage Azure Maps for your organisation](manage-bing-maps.md) for details on how to obtain a key and privacy notice.
+See [Manage Azure Maps for your organisation](dev-itpro/manage-bing-maps.md) for details on how to obtain a key and privacy notice.
 
  > [!NOTE]
- > If using Bing Maps, enable it and set a valid key under the Bing Maps tab. [Manage Bing Maps for your organisation](manage-bing-maps.md)
+ > If using Bing Maps, enable it and set a valid key under the Bing Maps tab. [Manage Bing Maps for your organisation](dev-itpro/manage-bing-maps.md)
 
 ## Configure DOM parameters
 
