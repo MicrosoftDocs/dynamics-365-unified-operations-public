@@ -17,10 +17,11 @@ ms.custom:
 # Manage Azure Maps for your organization
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to manage Microsoft Azure Maps in Microsoft Dynamics 365 Commerce.
 
-When Azure Maps is turned on, you can use it with the Commerce distributed order management (DOM) feature. 
+When Azure Maps is enabled in Commerce headquarters, you can then use it with the Commerce distributed order management (DOM) feature. 
 
 ## Enable Azure Maps
 
