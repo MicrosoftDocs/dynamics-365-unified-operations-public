@@ -7,7 +7,7 @@ ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: ritakimani1
+ms.author: ritakimani
 ms.search.validFrom: 2025-01-15
 ms.dyn365.ops.version: Retail July 2017 update
 ms.search.industry: Retail
@@ -27,15 +27,14 @@ Learn how you can manage Azure Maps for your application. When Azure Maps is tur
 
 ## Enter a Azure Maps key
 
-Go to the [Azure Maps licensing page](https://azure.microsoft.com/en-us/pricing/details/azure-maps/) and [Azure Maps Authentication](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication#view-authentication-details) for details about how to
-obtain a key.
+Go to the [Azure Maps licensing page](https://azure.microsoft.com/pricing/details/azure-maps/) and [Azure Maps Authentication](https://learn.microsoft.com/azure/azure-maps/how-to-manage-authentication) for details about how to obtain a key.
 
 1. Go to **Commerce shared Parameters** > **Azure Maps**.
 2. Enter the license key in the **Azure Maps Key** field.
 
 ## Privacy notice
 
-If you enable the Azure Maps feature, address information is automatically sent over the internet to the Azure Maps service to display an online map of the address within this application. Your use of Azure Maps is also governed by the [Azure Maps Terms of Use](https://azure.microsoft.com/en-us/support/legal/). Go to [Azure Maps Consent Management](https://learn.microsoft.com/en-us/azure/azure-maps/consent-management) to learn more about Azure Map's geographic scope and how to limit data residency.
+If you enable the Azure Maps feature, address information is automatically sent over the internet to the Azure Maps service to display an online map of the address within this application. Your use of Azure Maps is also governed by the [Azure Maps Terms of Use](https://azure.microsoft.com/support/legal/). Go to [Azure Maps Consent Management](https://learn.microsoft.com/azure/azure-maps/consent-management) to learn more about Azure Map's geographic scope and how to limit data residency.
   
 Administrators can turn the Azure Maps feature on or off under **Commerce shared Parameters** > **Azure Maps**. Turning the Azure Maps app off makes the feature unavailable in this application.
 
