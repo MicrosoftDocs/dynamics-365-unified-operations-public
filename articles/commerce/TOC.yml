@@ -652,6 +652,8 @@
             href: configure-emailed-receipt-formats.md
           - name: Add a QR code or bar code to transactional and receipt emails
             href: add-qr-code-barcode-email.md
+        - name: Manage Azure Maps for your organization
+          href: dev-itpro/manage-azure-maps.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
