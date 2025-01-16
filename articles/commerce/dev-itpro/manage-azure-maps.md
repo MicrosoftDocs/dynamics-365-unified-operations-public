@@ -9,7 +9,6 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2025-01-15
-ms.dyn365.ops.version: Retail July 2017 update
 ms.search.industry: Retail
 ms.search.form: RetailSharedParameters
 ---
