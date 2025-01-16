@@ -2,7 +2,7 @@
 title: Configure Ecuadorian sales VAT book printing
 description: Learn how to configure the Ecuadorian sales VAT book report for printing.
 author: Fhernandez0088
-ms.date: 12/30/2024
+ms.date: 01/16/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -24,11 +24,11 @@ Before you can generate and print the report, the following prerequisites must b
 - You must download the relevant report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?context=%2Fdynamics365%2Fcontext%2Ffinance).
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must post sales invoices.
-* You must configure the **Tax applications** of the **Sales points** used in transactions with an **F** for physical documents and **E** for electronic documents. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application) and [Sales point prefixes for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-sales-point-prefixes) articles.
+* You must configure the **Tax applications** of the **Sales points** used in transactions with an **F** for physical documents and **E** for electronic documents. See [Tax application for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application) and [Sales point prefixes for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-sales-point-prefixes) articles.
 
 ## Set up application-specific parameters
 
-Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in sales transactions. In this case lookups and conditions for the Ecaudor ATS will be shown.
+Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in sales transactions. In this case, lookups and conditions for the Ecaudor ATS are shown.
 
 To set up application-specific parameters, follow these steps.
 
