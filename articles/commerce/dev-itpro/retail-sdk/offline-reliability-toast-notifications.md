@@ -35,3 +35,5 @@ Store employees will receive a notification when POS switches to offline mode th
 Store employees will receive a notification when network connectivity is missing or weak, with a prompt to switch to offline. Additionally, there will be a direct link to network connectivity 
 insights from the notification to learn more. To learn more on the network connectivity insights see [Network health checks](pos-healthcheck.md) 
 
+Please visit this page as we update with more notifications in the future releases.
+
