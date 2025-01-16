@@ -1,41 +1,49 @@
 ---
 title: Manage Azure Maps for your organization
-description: This article describes how to manage Azure Maps for your application.
+description: This article describes how to manage Microsoft Azure Maps in Microsoft Dynamcis 365 Commerce.
 author: ritakimani1
-ms.date: 01/15/2025
-ms.topic: article
-audience: IT Pro
-ms.reviewer: josaw
+ms.date: 01/27/2025
+ms.topic: how-to
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2025-01-15
 ms.search.industry: Retail
 ms.search.form: RetailSharedParameters
+ms.custom: 
+  - bap-template
 ---
 
 # Manage Azure Maps for your organization
 
 [!include [banner](../includes/banner.md)]
 
-Learn how you can manage Azure Maps for your application. When Azure Maps is turned on, you can use it with Commerce DOM feature. 
+This article describes how to manage Microsoft Azure Maps in Microsoft Dynamcis 365 Commerce.
+
+When Azure Maps is turned on, you can use it with the Commerce distributed order management (DOM) feature. 
 
 ## Enable Azure Maps
 
-1. Go to **Commerce shared Parameters** > **Azure Maps**.
+To enable Azure Maps, follow these steps.
+
+1. In Commerce headquarters, go to **Commerce shared Parameters \> Azure Maps**.
 2. Select **Enable Azure Maps** to turn on Azure Maps functionality.
 
-## Enter a Azure Maps key
+## Enter an Azure Maps key
 
-Go to the [Azure Maps licensing page](https://azure.microsoft.com/pricing/details/azure-maps/) and [Azure Maps Authentication](https://learn.microsoft.com/azure/azure-maps/how-to-manage-authentication) for details about how to obtain a key.
+> [!NOTE]
+> For information about how to obtain an Azure Maps key, see [Azure Maps licensing page](https://azure.microsoft.com/pricing/details/azure-maps/) and [Azure Maps Authentication](/azure/azure-maps/how-to-manage-authentication).
 
-1. Go to **Commerce shared Parameters** > **Azure Maps**.
+To enter an Azure Maps key, follow these steps.
+
+1. In Commerce headquarters, go to **Commerce shared Parameters \> Azure Maps**.
 2. Enter the license key in the **Azure Maps Key** field.
 
 ## Privacy notice
 
-If you enable the Azure Maps feature, address information is automatically sent over the internet to the Azure Maps service to display an online map of the address within this application. Your use of Azure Maps is also governed by the [Azure Maps Terms of Use](https://azure.microsoft.com/support/legal/). Go to [Azure Maps Consent Management](https://learn.microsoft.com/azure/azure-maps/consent-management) to learn more about Azure Map's geographic scope and how to limit data residency.
+If you enable the Azure Maps feature, address information is automatically sent over the internet to the Azure Maps service to display an online map of the address within the application. Your use of Azure Maps is governed by the [Azure Maps Terms of Use](https://azure.microsoft.com/support/legal/). For information on Azure Map's geographic scope and how to limit data residency, see [Azure Maps Consent Management](/azure/azure-maps/consent-management).
   
-Administrators can turn the Azure Maps feature on or off under **Commerce shared Parameters** > **Azure Maps**. Turning the Azure Maps app off makes the feature unavailable in this application.
+Administrators can turn the Azure Maps feature on or off in headquarters at **Commerce shared Parameters \> Azure Maps**. Turning the Azure Maps app off makes the feature unavailable in Commerce.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
