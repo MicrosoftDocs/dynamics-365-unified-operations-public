@@ -45,8 +45,6 @@ For more information about alerts and how to create them, see [Azure Application
 
 Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. It's possible to configure custom notifications or automating certain actions triggered by events or trends happening within [!INCLUDE[finops-product-name-long](./includes/finops-product-name-long.md)].
 
-The following samples can help getting started with customization and automation using [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
-
 > [!IMPORTANT]
 > Deploying a Logic App to Azure also creates the API Connection Resources necessary to authenticate certain actions in the Logic Apps.
 >
