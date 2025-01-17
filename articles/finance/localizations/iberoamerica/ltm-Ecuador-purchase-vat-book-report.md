@@ -13,17 +13,29 @@ ms.author: v-federicohe
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article explains how to configure the purchase value-added tax (VAT) book details report so that it can be printed. Purchases VAT books are the transaction records that companies use to keep a detailed record of their operations. For each transaction, these records indicate the vendor information and voucher details. As applicable, they also indicate the corresponding taxes and tax withholdings, including local and foreign transactions and other mandatory information that the regulations specify.
+This article explains how to configure the purchase value-added tax (VAT) book details report so that it can be printed. Purchases VAT books are the transaction records that companies use to keep a detailed record of their operations. For each transaction, these records indicate the vendor information and document details. If applicable, they also indicate the corresponding taxes and tax withholdings, including local and foreign transactions and other mandatory information that the regulations specify.
 
 ## Prerequisites
 
-Before you can generate and print the report, the following prerequisites must be met:
+Before you complete the steps in this article to generate and print the report, the following prerequisites must be met:
 
 - The legal entity's address must be in Ecuador.
-- Both the country/region-specific LATAM feature and the general LATAM feature must be enabled.
+- Both the country/region-specific Ecuador feature and the general LATAM feature must be enabled.
 - You must download the relevant report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must post vendor invoices for the relevant period. Learn more in [Purchase invoice posting for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-purchase-invoice-posting).
+- You must post vendor payments with or without withholding taxes. For more information see [Use the LATAM extension in vendor payments journals](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-latam-in-vendor-payment) article.
+- You must configure LATAM withholding tax codes and set tax application code for each withholding tax code as specified by the regulation. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application)
+
+## Additional configuration required for Ecuadorian Purchases VAT book details report:
+
+- You must create and use a **Tax Application** code for this report. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application) article.
+- Configure master field list 10 in purchase invoice document calsses wit the **Support code** as specified by the regulation. See [Field list configuration for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-field-master-lists) article.
+- You must configure the **Tax application code** of the vendor **Tax Id type** with the **Vendor identification type code** as specified by the regulation. See [Tax ID types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type)
+- You must configure the **Tax application code** of the **Document class type** with the **Document type code** as specified by the regulation. See [Document class type for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class-type)
+-You must confiugure the **Vendor type** field in the **Retail** section of the **Vendor** configuration with **Own** to indicate no relation, and with **3rd party** to indicate a related part.
+- A vendor payment will be considered locally or abroad according to the country address configured in the vendor main address.
+- You must configure the **Tax application code** of the vendor **Taxpayer type** with the **Foreing tax regime code** as specified by the regulation. See [Taxpayer types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-taxpayer-type)
 
 ## Configure application-specific parameters
 
@@ -41,12 +53,12 @@ To configure application-specific parameters, follow these steps.
 1. On the **Lookups** FastTab, in the **Name** column, select **VendorApplicableInvoices**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **Yes**.
-1. In the **Document classification Id** field, select a value.
+1. In the **Document classification Id** field, select an applicable document class.
 1. Repeat steps 10 and 11 to add as many more document classes as you need.
 1. On the **Lookups** FastTab, in the **Name** column, select **WithholdingGroup**.
 1. On the **Conditions** FastTab, select **Add**.
-1. In the **Lookup result** field, select a value.
-1. In the **Document classification Id** field, select a value.
+1. In the **Lookup result** field, select a withholding tax category.
+1. In the **Document classification Id** field, select a document class that represent a withholding tax.
 1. Repeat steps 15 and 16 to add as many more withholding document classes as you need.
 
 > [!NOTE]
@@ -59,6 +71,7 @@ To generate the purchase VAT book details report, follow these steps.
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **EC Purchases VAT Book details**.
 1. Select **OK**.
+2. In the **Tax application Id** field enter the tax application code you created for this report.
 1. In the **From date** and **To date** fields, enter the date range to include on the report.
 1. Select **OK**.
 
