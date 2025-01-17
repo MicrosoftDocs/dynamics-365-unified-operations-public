@@ -54,7 +54,7 @@ Follow these steps to create a new task.
 1. Select **Create new duty** to create a duty for the task.
 1. In the **Duty name** field, enter a value.
 1. In the **Description** field, enter a value.
-1. After you create the duty, a privilege is automatically created for it. This privilege has the same name in the background.
+1. After you create the duty, a privilege is automatically created for it. This privilege has the same name as the duty that it's created for.
 
 ## Assign an entry point 
 
