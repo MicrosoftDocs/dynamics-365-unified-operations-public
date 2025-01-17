@@ -2,20 +2,18 @@
 title: Import info codes
 description: This article describes how to import info codes in Microsoft Dynamics 365 Commerce.
 author: rgindulin
-ms.date: 26/01/2025
+ms.date: 17/01/2025
 ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: 
 ms.search.region: Global
-ms.author: asharchw
-ms.search.validFrom: 2017-06-20
+ms.author: 
+ms.search.validFrom: 
 ms.custom: 
   - bap-template
 ---
 
 # Import info codes
-
-[!include [banner](includes/banner.md)]
 
 This article describes how to import info codes in Microsoft Dynamics 365 Commerce. 
 
@@ -29,8 +27,9 @@ This article describes how to import info codes in Microsoft Dynamics 365 Commer
 8. Add the RetailInfocodeEntity and corresponding file where you want to import from
 9. Add the RetailInfocodeTranslationEntity and corresponding file where you want to import from
 10. The form should look like this ![import info codes.](./media/import-info-codes.png "import info codes")
-11. Click the Import button on the top
-12. The final result form ![imported.](./media/imported.png "imported")
+11. Once all files are added, click the Import button at the top.
+12. Check the final result form to confirm successful import. ![imported.](./media/imported.png "imported")
+13. Go to Info Codes form to see imported info codes
 
 ## Importing files examples
 
