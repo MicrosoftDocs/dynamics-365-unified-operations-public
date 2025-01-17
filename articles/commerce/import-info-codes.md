@@ -13,32 +13,26 @@ ms.custom:
   - bap-template
 ---
 
-# Customer search
+# Import info codes
 
 [!include [banner](includes/banner.md)]
 
-This article describes customer search capabilities in Microsoft Dynamics 365 Commerce.
+This article describes how to import info codes in Microsoft Dynamics 365 Commerce. 
 
-Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. Employees can search for customers who are associated with the current store or any other store in the company. Employees can also search for customers who are associated with a different company in the parent organization.  
+1. Go to **System administration \> Workspaces \> Data management**
+2. Click the Data entities menu item
+3. Add the RetailInfocodeTranslationEntity and RetailInfocodeEntity entities ![adding entities.](./media/adding-info-code-entities.png "adding entities")
+4. Go back to **System administration \> Workspaces \> Data management**
+5. Click the Import menu item
+6. Fill in the Group name field
+7. Click the "Add file" button
+8. Add the RetailInfocodeEntity and corresponding file where you want to import from
+9. Add the RetailInfocodeTranslationEntity and corresponding file where you want to import from
+10. The form should look like this ![import info codes.](./media/import-info-codes.png "import info codes")
+11. Click the Import button on the top
+12. The final result form ![imported.](./media/imported.png "imported")
 
+## Importing files examples
 
-![Global customer search.](./media/Globalcustomersearch.png "Global customer search")
-
-## Cloud-powered customer search
-
-Public preview of the customer search capability using the Azure Cognitive Search service was released as part of the Commerce 10.0.18 release. In addition to performance improvements, users of the service also benefit from rich refinement and improved relevance capabilities. The performance improvements are especially evident when the global search feature ("Search all stores") of the POS is used, because search results are fetched from the Azure search index instead of queried from the data in Commerce headquarters. 
-
-### Enable the cloud-powered search feature
-
-> [!NOTE]
-> It is required that both Commerce headquarters and Commerce Scale Unit are updated to version 10.0.18. Updating the POS is not required.
-
-To enable the cloud-powered search feature in Commerce headquarters, follow these steps.
-
-1. Go to **System administration \> Workspaces \> Feature management**.
-1. Find and select the **(Preview) Cloud powered customer search** feature, and then select **Enable now**.
-1. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler** and select **OK** to display the new **1010_CustomerSearch** job on the **Distribution schedule** form.
-1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**.
-1. Run the **1010_CustomerSearch** job. This job publishes the date to the Azure search index. When publishing of the index is completed, the status of the job will be set to **Applied**.
-1. After the **1010_CustomerSearch** job status is set to **Applied**, run the **1110 - Global configuration** job to update the POS channels of the newly enabled feature in **Feature management**.
-1. Subsequently, run the **1010_CustomerSearch** job at regular intervals to send customer updates to the search index.
+![info code file.](./media/info-code-file.png "info code file")
+![info code translation file.](./media/info-code-translation-file.png "info code translation file")
