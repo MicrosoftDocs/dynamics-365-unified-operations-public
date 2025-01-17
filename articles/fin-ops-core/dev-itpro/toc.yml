@@ -1828,7 +1828,7 @@ items:
         - name: Analyze and monitor telemetry with KQL
           href: monitoring-telemetry/monitoring-analyze-telemetry-KQL.md
         - name: Use telemetry-based alerts
-          herf: monitoring-telemetry/monitoring-analyze-telemetry-driven-alerts.md
+          href: monitoring-telemetry/monitoring-analyze-telemetry-driven-alerts.md
         - name: Add custom telemetry signals
           href: monitoring-telemetry/monitoring-developer-add-custom-signals.md
         - name: Understand and control costs
