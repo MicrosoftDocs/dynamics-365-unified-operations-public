@@ -26,6 +26,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Copilot and AI innovation | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences (preview)](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md) | Feature management:<br>*(Preview) Enable user feedback for Copilot and related experiences* |
 | Inventory and logistics | [Enhance vendor rebate management](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/enhance-vendor-rebate-management-reconciliation-resubmission-workflows) | *Coming soon* <!-- KFM: Any docs coming? --> | <!-- KFM: How is this enabled? Is this feature coming out? --> |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
@@ -36,9 +37,17 @@ Some of these features aren't visible on your system until you turn them on in [
 
 | Feature enhancement | Description |
 |---|---|
-| **Module:** Asset management<br><br>**Feature management name:** *Role-based access control for work order lifecycle stages*| Lets admins assign security roles to each available work order lifecycle state. When a lifecycle state has a security role assigned to it, only users with that role will be able to change work orders to that lifecycle state.<br><br>Learn more in [Work order lifecycle states](../asset-management/setup-for-work-orders/work-order-lifecycle-states.md). |
-| **Module:** Asset management<br><br>**Feature management name:** *Adjust forecast hours to match schedule hours when work orders are dispatched*| Lets you choose whether a forecast should be updated automatically when dispatching a work order after the hours have been manually changed.<br><br>Learn more in [Dispatch work order](../asset-management/work-order-scheduling/dispatch-work-order.md). |
-| **Module:** Warehouse management<br><br>**Enhancement:** *Clean up work exception logs*<br><br>**Feature management name:** *(None)*| Adds a batch job that removes old or unneeded work-exception log entries based on specified criteria, which can help improve system performance for some operations (such as when searching for locations with open exceptions).<br><br>Learn more in [View and manage the work exceptions log](../warehousing/work-exceptions-log.md) |
+| **Module:** Asset management<br><br>**Feature management name:** *Role-based access control for work order lifecycle stages* | Lets admins assign security roles to each available work order lifecycle state. When a lifecycle state has a security role assigned to it, only users with that role will be able to change work orders to that lifecycle state.<br><br>Learn more in [Work order lifecycle states](../asset-management/setup-for-work-orders/work-order-lifecycle-states.md). |
+| **Module:** Asset management<br><br>**Feature management name:** *Adjust forecast hours to match schedule hours when work orders are dispatched* | Lets you choose whether a forecast should be updated automatically when dispatching a work order after the hours have been manually changed.<br><br>Learn more in [Dispatch work order](../asset-management/work-order-scheduling/dispatch-work-order.md). |
+| **Module:** Master planning<br><br>**Feature management name:** *Keep pegging between approved planned orders for Planning Optimization* | Lets you to choose whether pegging assignments should be kept for approved planned orders. To set this option, go to the **Master planning parameters** page, open the **Planned orders** tab, and set **Keep pegging between approved planned orders** to *Yes* or *No*. Enabling this option ensures that created supply is used for its initial purpose, following a first-come-first-served approach. We recommend that you enable this option in make-to-order scenarios or if you use grouping or splitting of planned orders. |
+| **Module:** Master planning<br><br>**Feature management name:** *Calculate catch weight quantities for catch weight enabled products in Planning Optimization* | Enhances Planning Optimization by enabling quantity calculations in catch weight units for products that are enabled as catch weight items. The feature ensures that master planning generates planned purchase orders with specified catch weight quantities. |
+| **Module:** Master planning<br><br>**Feature management name:** *Support for material step consumption for Planning Optimization* | Adds support for step consumption in Planning Optimization. Step consumption is used to calculate fixed consumption based on the quantity of the end product. The quantity of consumed material is calculated based on the intervals (steps) defined for each BOM/formula line. |
+| **Module:** Master planning<br><br>**Feature management name:** *Dimension-based product configuration for Planning Optimization* | Lets you create many product variants from a single product master and its bill of materials. |
+| **Module:** Master planning<br><br>**Feature management name:** *Clean up data from failed Demand planning import jobs* | Adds a scheduled task that cleans up staging table data related to failed import jobs from Demand planning in Microsoft Dynamics 365 Supply Chain Management. |
+| **Module:** Procurement and sourcing<br><br>**Feature management name:** *(Preview) Follow-up with vendors on purchase orders* | Follow-up with vendors on purchase orders. |
+| **Module:** Product information management<br><br>**Feature management name:** *(Preview) Enable foreign trade parameters for all countries* | Enables foreign trade parameters for all countries. |
+| **Module:** Sales and marketing<br><br>**Feature management name:** *Introduce parameter to consider reserved on-hand quantity as unavailable for ATP* | Lets you choose whether reserved on-hand inventory should be considered available for use in promise (ATP) calculations. To set this options, go to the **Accounts receivable parameters** page, open the **Shipments** tab, expand the **Delivery control** FastTab, and set **ATP excl. reserved on-hand** to *Yes* or *No*. |
+| **Module:** Warehouse management<br><br>**Enhancement:** *Clean up work exception logs*<br><br>**Feature management name:** *(None)* | Adds a batch job that removes old or unneeded work-exception log entries based on specified criteria, which can help improve system performance for some operations (such as when searching for locations with open exceptions).<br><br>Learn more in [View and manage the work exceptions log](../warehousing/work-exceptions-log.md) |
 
 ## Preview features that are now generally available
 
@@ -46,14 +55,16 @@ The following table lists the features that were introduced as public preview fe
 
 | Module | Feature name | More information |
 |---|---|---|
-| Sales and marketing | *Unified pricing management* | [Unified pricing management module overview (preview)](../unified-pricing-management/upm-pricing-management-overview.md) |
+| Sales and marketing | *Unified pricing management* | [Unified pricing management module overview (preview)](../unified-pricing-management/upm-pricing-management-overview.md) <!-- KFM: This is still named with "(Preview)" in FM --> |
 
-## Features turned on by default in this release
+## Features becoming mandatory in this release
 
-The following table lists the features that became turned on by default in version 10.0.43. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
+The following table lists the features that became mandatory in version 10.0.41. These features can still be seen in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) but can no longer be turned off.
 
 | Module | Feature name | More information |
 |---|---|---|
+| Procurement and sourcing | *Assign Auto Charge for Purchase Order* | Lets you choose whether to automatically add charges from a request for quotation (RFQ) to a purchase order. This feature adds a setting called **Assign Auto Charge for PO** to the **Request for quotation** tab of the **Procurement and sourcing parameters page**. When **Assign Auto Charge for PO** is set to *Yes*, charges from an RFQ are automatically copied to its related purchase order. |
+| Master planning | *Batch CTP*| Adds a new delivery date control type called *Batch CTP*, which provides confirmed delivery dates for sales order lines when the current dynamic master plan is run. This delivery control makes capable to promise (CTP) functionality available when you are using Planning Optimization. In some previous versions of Supply Chain Management, this feature was called *CTP for Planning Optimization*<br><br>Learn more in [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) |
 
 ## New and updated documentation resources
 
@@ -61,6 +72,12 @@ We have recently added or significantly updated the following help articles. The
 
 | Feature area | New or updated articles |
 |---|---|
+| Demand planning | [Demand forecasting algorithms](../demand-planning/forecast-algorithm-types.md) |
+| Demand planning | [Forecast with signals (preview)](../demand-planning/forecasts-with-signals.md) |
+| Demand planning | [Design forecast models](../demand-planning/design-forecast-models.md) |
+| Demand planning | [Analyze demand plans with Copilot](../demand-planning/demand-planning-copilot.md) |
+| Inventory management | [Inventory on-hand list](../inventory/inventory-on-hand-list.md) |
+| Landed cost | [Landed cost module overview](../landed-cost/landed-cost-overview.md) |
 
 ## Related information
 
