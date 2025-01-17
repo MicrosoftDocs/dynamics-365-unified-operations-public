@@ -15,6 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The *Enhanced user feedback for Copilot and related experiences* feature lets users provide product feedback to Microsoft by selecting thumbs-up or thumbs-down buttons. These buttons are currently available in experiences such as the Copilot sidecar and summary cards.
 
