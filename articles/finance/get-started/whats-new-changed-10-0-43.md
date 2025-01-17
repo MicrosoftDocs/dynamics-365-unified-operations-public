@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.43. This version has a build number of 10.0.ZZZZZ and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.43. This version has a build number of 10.0.XXXX and is available on the following schedule:
 
 - **Preview of release:** January 2025
 - **General availability of release (self-update):** March 2025
@@ -30,7 +30,7 @@ originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+|Subscription billing|	Performance improvement for consumption quantity update	|This feature enhances recurring contract billing performance when the consumption quantity is updated on the billing detail line for a usage-based billing schedule line.|	 Feature management|
 
 ## Feature enhancements included in this release
 
@@ -39,6 +39,8 @@ originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+|Subscription billing|	Mass stubbing	|The Mass stubbing page is updated with **Add renewal term** to add a renewal term for usage billing schedule lines that are set to auto renew.|  |	
+|Subscription billing|	Generate invoice	|Performance improvement when creating invoice proposal for billing schedule lines that are deferred.	| |
 
 
 ## Features turned on by default in this release
