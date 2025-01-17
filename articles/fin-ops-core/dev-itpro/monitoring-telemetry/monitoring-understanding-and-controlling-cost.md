@@ -47,7 +47,7 @@ Learn more about sampling in [!INCLUDE[appinsights](includes/azure-application-i
 
 ### Monitoring and alerts
 
-- **Cost monitoring** – Use Azure Cost Management tools to monitor Application Insights usage and set up alerts for unusual spending patterns.
+- **Cost monitoring** – Use Microsoft Cost Management tools to monitor Application Insights usage and set up alerts for unusual spending patterns.
 - **Daily caps** – To prevent unexpected cost overruns, consider setting daily caps on data ingestion. Be careful, because data loss might occur if the cap is reached.
 
 ## Best practices from the Azure Application Insights team
