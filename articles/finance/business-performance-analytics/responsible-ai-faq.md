@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for generative help and guidance
+title: Responsible AI FAQ for generative help and guidance in Business performance analytics
 description: Learn how Microsoft has minimized the potential harm related to AI features in Business performance analytics.
 author: Carylhenry
 ms.author: jiwo
@@ -11,7 +11,7 @@ audience: Application User
 ms.collection: bap-ai-copilot
 ---
 
-# Responsible AI FAQ for generative help and guidance
+# Responsible AI FAQ for generative help and guidance in Business performance analytics
 
 ## What is generative help and guidance?
 
