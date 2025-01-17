@@ -89,17 +89,25 @@ The following France-specific POS features are enabled when the primary address 
 
 If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
 
-- Sign-in
-- Sign-out
-- Printing a copy of a receipt
-- Starting offline mode
-- Ending offline mode
-- Applying a manager override
-- Voiding a transaction 
-- Voiding a transaction line
-- Closing a shift
-- Cleanup of transactions from the channel database
-- Applying a major update of the software with compliance impact
+| Event | NF 525 Jet Code |
+|----------|-------------|
+| Sign-in | 80 |
+| Sign-out | 40 |
+| Printing a copy of a receipt | 155 |
+| Returns | 326 |
+| Starting offline mode | 70 |
+| Ending offline mode | 120 |
+| Applying a manager override | 130 |
+| Voiding a transaction  | 320 |
+| Voiding a transaction line | #323 |
+| Closing a shift | 50 |
+| Period tax archiving | 20 |
+| Fiscal year archiving | 30 |
+| Annual or year-end closing | 60 |
+| Cleanup of transactions from the channel database | 200** |
+| Applying a major update of the software with compliance impact | 250 |
+| Detection of an integrity flaw in secured data or a tax archive** | 90 |
+
 
 ### Digital signing overview
 
