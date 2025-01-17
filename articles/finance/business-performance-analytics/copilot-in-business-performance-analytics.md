@@ -1,5 +1,5 @@
 ---
-title: Generative help and guidance
+title: Business performance analytics generative help and guidance  
 description: This article describes Copilot features in Business performance analytics.
 author: Carylhenry
 ms.author: jiwo
