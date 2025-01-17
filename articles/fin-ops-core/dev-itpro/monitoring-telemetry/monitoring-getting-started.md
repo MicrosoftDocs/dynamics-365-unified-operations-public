@@ -1,10 +1,10 @@
 ---
-title: Get started with Monitoring and Telemetry
-description: This article explains how to get started with the Application Insights integration for finance and operations apps.
+title: Get started with monitoring and telemetry
+description: Learn how to get started with the Application Insights integration for finance and operations apps.
 author: kennysaelen
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 08/11/2024
+ms.date: 01/20/2025
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
@@ -14,58 +14,61 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to get started to send telemetry from [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environments to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
+This article explains how to start to send telemetry from [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environments to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
 
-To configure your environments to send telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps. 
+To configure your environments to send telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps.
 
 1. Set up an Application Insights resource in Azure.
 1. Enable the **Monitoring and Telemetry** feature in [!INCLUDE[finops-product-name-short](includes/finops-product-name-short.md)].
-1. Configure environments to link to the right [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resources.
-1. Configure the type of telemetry to be sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
+1. Configure environments to link to the correct [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resources.
+1. Configure the type of telemetry that must be sent to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
 
-## Set up Application Insights resource in Azure
+## Set up an Application Insights resource in Azure
 
-The first thing needed to get started is to create a [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in Azure if you don't have one. For more information, see [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource?tabs=bicep).
+To get started, you must create a [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] resource in Azure if you don't already have one. Learn more in [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource?tabs=bicep).
 
-## Enable the Monitoring and Telemetry feature
+## Enable the Monitoring and telemetry feature
 
-To enable the Monitoring and Telemetry feature, follow these steps.
+To enable the Monitoring and telemetry feature, follow these steps.
 
-1. In Dynamics 365 for Finance and Supply Chain Management, go to the **Feature Management** workspace.
-1. In the **Feature list**, filter the list to find the **Monitoring and Telemetry** feature and click **Enable**.
+1. In Finance and Supply Chain Management, open the **Feature management** workspace.
+1. Filter the feature list to find the **Monitoring and Telemetry** feature. Select the feature, and then select **Enable**.
 
-[![Monitoring and Telemetry Feature.](images/monitoring-getting-started-enable-feature.png)
+[![Screenshot that shows the Monitoring and Telemetry feature enabled in the Feature management workspace.](images/monitoring-getting-started-enable-feature.png)](images/monitoring-getting-started-enable-feature.png)
 
 ## Configure environments and link to Application Insights
 
-Environments are categorized into either of the following environment modes: development, test, and production. To link environments to specific modes, follow these steps.
+Environments are categorized into one of the following environment modes: development, test, or production. To link environments to specific modes, follow these steps.
 
-1. In Dynamics 365 for Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
-1. In the **Environments** tab, create one record for each environment want to emit telemetry for. Multiple environments can be entered here. Entering all your environments ensures that database refresh operations would include this configuration and be synchronized across environments.<br>
-Provide the following configuration:
+1. In Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
+1. On the **Monitoring settings** page, on the **Environments** tab, create a record for each environment that you want to emit telemetry for. Multiple environments can be entered here. By entering all your environments, you ensure that database refresh operations include this configuration and are synced across environments.
 
-   | Field name | Description |
-   | ---------- | ----------- |
-   | **Environment ID** | The unique identifier for your environment |
-   | **Environment Mode** | Specifies whether this environment is a development, test, or production environment. <br>This field is used to separate telemetry in different Application Insight instances intended for development, test, or Production. |
+    For each environment, set the following fields.
 
-   [![Application Insights Environments.](images/monitoring-getting-started-application-insights-environments.png)
+    | Field name | Description |
+    | ---------- | ----------- |
+    | Environment ID | The unique identifier of the environment. |
+    | Environment Mode | <p>A value that specifies whether the environment is a development, test, or production environment.</p><p>This field is used to separate telemetry in different Application Insight instances that are intended for development, test, or production.</p> |
 
-1. On the **Application Insights Registry** tab, create a record for each of the used environment modes.
+    [![Screenshot that shows environments being added on the Environments tab of the Monitoring settings page.](images/monitoring-getting-started-application-insights-environments.png)](images/monitoring-getting-started-application-insights-environments.png)
 
-   | Field name | Description |
-   | ---------- | ----------- |
-   | **Environment Mode** | Specifies whether this environment is a development, test, or Production environment. |
-   | **Instrumentation Key** | The instrumentation key used for connecting to Application Insights.<br>If a connection string is specified, the instrumentation is ignored. |
-   | **Connection String** | The connection string is used to connect to Application Insights.  |
+1. On the **Application Insights Registry** tab, create a record for each environment mode that is used.
 
-   [![Application Insights Registry.](./images/monitoring-getting-started-application-insights-registry.png)](./images/monitoring-getting-started-application-insights-registry.png)
+    For each environment mode, set the following fields.
 
-## Configure the type of telemetry to be emitted
+     | Field name | Description |
+     | ---------- | ----------- |
+     | Environment Mode | A value that specifies whether the environment is a development, test, or production environment. |
+     | Instrumentation Key | <p>The instrumentation key that is used to connect to Application Insights.</p><p><strong>Note:</strong> If a connection string is specified, the instrumentation key is ignored.</p> |
+     | Connection String | The connection string that is used to connect to Application Insights. |
 
-1. In Dynamics 365 for Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
-1. On the **Configure** tab, enable each of the types of telemetry that need to be emitted.
+     [![Screenshot that shows an environment mode being added on the Application Insights Registry tab of the Monitoring settings page.](./images/monitoring-getting-started-application-insights-registry.png)](./images/monitoring-getting-started-application-insights-registry.png)
 
-   [![Application Insights Signal Configuration.](images/monitoring-getting-started-configure-signals.png)
+## Configure the type of telemetry that must be emitted
+
+1. In Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
+1. On the **Monitoring settings** page, on the **Configure** tab, turn on the option for each type of telemetry that must be emitted.
+
+    [![Screenshot that shows the setup of telemetry types on the Configure tab of the Monitoring settings page.](images/monitoring-getting-started-configure-signals.png)](images/monitoring-getting-started-configure-signals.png)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
