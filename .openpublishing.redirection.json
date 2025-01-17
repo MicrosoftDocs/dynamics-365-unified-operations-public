@@ -1,8 +1,13 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/index",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/global/e-invoicing-faq.md",
-      "redirect_url": "dynamics365//finance/localizations/global/gs-e-invoicing-faq",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-faq",
       "redirect_document_id": "false"
     },
      {
