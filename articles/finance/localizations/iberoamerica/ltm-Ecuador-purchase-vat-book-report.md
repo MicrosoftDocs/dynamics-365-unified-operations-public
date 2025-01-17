@@ -2,7 +2,7 @@
 title: Configure Ecuadorian purchase VAT book details printing
 description: Learn how to configure the Ecuadorian purchase VAT book details report for printing.
 author: Fhernandez0088
-ms.date: 12/30/2024
+ms.date: 01/17/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -24,18 +24,18 @@ Before you complete the steps in this article to generate and print the report, 
 - You must download the relevant report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must post vendor invoices for the relevant period. Learn more in [Purchase invoice posting for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-purchase-invoice-posting).
-- You must post vendor payments with or without withholding taxes. For more information see [Use the LATAM extension in vendor payments journals](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-latam-in-vendor-payment) article.
-- You must configure LATAM withholding tax codes and set tax application code for each withholding tax code as specified by the regulation. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application)
+- You must post vendor payments with or without withholding taxes. For more information see [Use the LATAM extension in vendor payments journals](ltm-latam-in-vendor-payment.md) article.
+- You must configure LATAM withholding tax codes and set tax application code for each withholding tax code as specified by the regulation. See [Tax application for Latin America](ltm-core-tax-application.md)
 
 ## Additional configuration required for Ecuadorian Purchases VAT book details report:
 
-- You must create and use a **Tax Application** code for this report. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application) article.
-- Configure master field list 10 in purchase invoice document calsses wit the **Support code** as specified by the regulation. See [Field list configuration for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-field-master-lists) article.
-- You must configure the **Tax application code** of the vendor **Tax Id type** with the **Vendor identification type code** as specified by the regulation. See [Tax ID types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type)
-- You must configure the **Tax application code** of the **Document class type** with the **Document type code** as specified by the regulation. See [Document class type for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class-type)
--You must confiugure the **Vendor type** field in the **Retail** section of the **Vendor** configuration with **Own** to indicate no relation, and with **3rd party** to indicate a related part.
+- You must create and use a **Tax Application** code for this report. See [Tax application for Latin America](ltm-core-tax-application.md) article.
+- Configure master field list 10 in purchase invoice document classes with the **Support code** as specified by the regulation. See [Field list configuration for Latin America](ltm-core-field-master-lists.md) article.
+- You must configure the **Tax application code** of the vendor **Tax Id type** with the **Vendor identification type code** as specified by the regulation. See [Tax ID types for Latin America](ltm-core-tax-id-type.md)
+- You must configure the **Tax application code** of the **Document class type** with the **Document type code** as specified by the regulation. See [Document class type for Latin America](ltm-core-document-class-type.md)
+-You must configure the **Vendor type** field in the **Retail** section of the **Vendor** configuration with **Own** to indicate no relation, and with **3rd party** to indicate a related part.
 - A vendor payment will be considered locally or abroad according to the country address configured in the vendor main address.
-- You must configure the **Tax application code** of the vendor **Taxpayer type** with the **Foreing tax regime code** as specified by the regulation. See [Taxpayer types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-taxpayer-type)
+- You must configure the **Tax application code** of the vendor **Taxpayer type** with the **Foreign tax regime code** as specified by the regulation. See [Taxpayer types for Latin America](iberoamerica/ltm-core-taxpayer-type.md)
 
 ## Configure application-specific parameters
 
@@ -71,7 +71,7 @@ To generate the purchase VAT book details report, follow these steps.
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **EC Purchases VAT Book details**.
 1. Select **OK**.
-2. In the **Tax application Id** field enter the tax application code you created for this report.
+2. In the **Tax application Id** field, enter the tax application code you created for this report.
 1. In the **From date** and **To date** fields, enter the date range to include on the report.
 1. Select **OK**.
 
