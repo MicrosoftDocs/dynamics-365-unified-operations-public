@@ -431,6 +431,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | REPRINTTIME24H_FR               | Receipt | 900014          |
 | REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
 | SOFTWAREVERSION_FR              | Receipt | 900016          |
+| VATID_FR                        | Receipt | 900017          |
+| SIRETNUMBER_FR                  | Receipt | 900018          |
+
 
 ### Configure receipt formats
 
