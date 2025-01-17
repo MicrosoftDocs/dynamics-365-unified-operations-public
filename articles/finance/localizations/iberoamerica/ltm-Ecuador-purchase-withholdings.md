@@ -2,7 +2,7 @@
 title: Configure Ecuadorian purchase withholding book printing
 description: Learn how to configure the Ecuadorian purchase withholding book report for printing.
 author: Fhernandez0088
-ms.date: 12/30/2024
+ms.date: 01/17/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -28,8 +28,8 @@ Before you can generate and print the report, the following prerequisites must b
 
 ## Additional configuration required for Ecuadorian Purchases withholdings book:
 
-- You must create and use a **Tax Application** code for this report. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application) article.
-- You must configure **LATAM withholding taxes** and set the **Tax application** code in those document classes used for withholdings transactions as specified by the regulation. Learn more in [Document classes for Latin America]( https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-taxpayer-type).
+- You must create and use a **Tax Application** code for this report. See [Tax application for Latin America](ltm-core-tax-application.md) article.
+- You must configure **LATAM withholding taxes** and set the **Tax application** code in those document classes used for withholdings transactions as specified by the regulation. Learn more in [Document classes for Latin America](ltm-core-taxpayer-type.md).
 
 
 ## Configure application-specific parameters
