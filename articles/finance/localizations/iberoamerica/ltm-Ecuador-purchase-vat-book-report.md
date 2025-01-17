@@ -35,7 +35,7 @@ Before you complete the steps in this article to generate and print the report, 
 - You must configure the **Tax application code** of the **Document class type** with the **Document type code** as specified by the regulation. See [Document class type for Latin America](ltm-core-document-class-type.md)
 -You must configure the **Vendor type** field in the **Retail** section of the **Vendor** configuration with **Own** to indicate no relation, and with **3rd party** to indicate a related part.
 - A vendor payment will be considered locally or abroad according to the country address configured in the vendor main address.
-- You must configure the **Tax application code** of the vendor **Taxpayer type** with the **Foreign tax regime code** as specified by the regulation. See [Taxpayer types for Latin America](iberoamerica/ltm-core-taxpayer-type.md)
+- You must configure the **Tax application code** of the vendor **Taxpayer type** with the **Foreign tax regime code** as specified by the regulation. See [Taxpayer types for Latin America](ltm-core-taxpayer-type.md)
 
 ## Configure application-specific parameters
 
