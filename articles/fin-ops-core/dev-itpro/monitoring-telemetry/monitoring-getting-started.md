@@ -34,7 +34,7 @@ To enable the Monitoring and telemetry feature, follow these steps.
 1. In Finance and Supply Chain Management, open the **Feature management** workspace.
 1. Filter the feature list to find the **Monitoring and Telemetry** feature. Select the feature, and then select **Enable**.
 
-[![Screenshot that shows the Monitoring and Telemetry feature enabled in the Feature management workspace.](images/monitoring-getting-started-enable-feature.png)
+[![Screenshot that shows the Monitoring and Telemetry feature enabled in the Feature management workspace.](images/monitoring-getting-started-enable-feature.png)](images/monitoring-getting-started-enable-feature.png)
 
 ## Configure environments and link to Application Insights
 
@@ -47,10 +47,10 @@ Environments are categorized into one of the following environment modes: develo
 
     | Field name | Description |
     | ---------- | ----------- |
-    | Environment Id | The unique identifier of the environment. |
+    | Environment ID | The unique identifier of the environment. |
     | Environment Mode | <p>A value that specifies whether the environment is a development, test, or production environment.</p><p>This field is used to separate telemetry in different Application Insight instances that are intended for development, test, or production.</p> |
 
-    [![Screenshot that shows environments being added on the Environments tab of the Monitoring settings page.](images/monitoring-getting-started-application-insights-environments.png)
+    [![Screenshot that shows environments being added on the Environments tab of the Monitoring settings page.](images/monitoring-getting-started-application-insights-environments.png)](images/monitoring-getting-started-application-insights-environments.png)
 
 1. On the **Application Insights Registry** tab, create a record for each environment mode that is used.
 
@@ -69,6 +69,6 @@ Environments are categorized into one of the following environment modes: develo
 1. In Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
 1. On the **Monitoring settings** page, on the **Configure** tab, turn on the option for each type of telemetry that must be emitted.
 
-    [![Screenshot that shows the setup of telemetry types on the Configure tab of the Monitoring settings page.](images/monitoring-getting-started-configure-signals.png)
+    [![Screenshot that shows the setup of telemetry types on the Configure tab of the Monitoring settings page.](images/monitoring-getting-started-configure-signals.png)](images/monitoring-getting-started-configure-signals.png)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
