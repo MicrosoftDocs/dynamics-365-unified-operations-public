@@ -1826,7 +1826,7 @@ items:
         - name: Get started with telemetry for finance and operations apps
           href: monitoring-telemetry/monitoring-getting-started.md
         - name: Analyze and monitor telemetry with KQL
-          href: monitoring-analyze-telemetry-KQL.md
+          href: monitoring-telemetry/monitoring-analyze-telemetry-KQL.md
         - name: Use telemetry-based alerts
           herf: monitoring-telemetry/monitoring-analyze-telemetry-driven-alerts.md
         - name: Add custom telemetry signals
