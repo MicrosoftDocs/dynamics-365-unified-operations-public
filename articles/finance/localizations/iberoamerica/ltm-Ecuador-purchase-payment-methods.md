@@ -2,7 +2,7 @@
 title: Configure Ecuadorian purchase payment methods printing 
 description: Learn how to configure the Ecuadorian purchase payment methods report for printing.
 author: Fhernandez0088
-ms.date: 12/30/2024
+ms.date: 01/17/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -28,9 +28,9 @@ Before you can generate and print the report, the following prerequisites must b
 
 ## Additional configuration required for Ecuadorian Purchases payment methods report:
 
-- You must create and use a **Tax Application** code for this report. See [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application) article.
-- You must configure **Payment method** as specified by the regulation in the field master list 7. For more information, see [Field list configuration for Latin America] (https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-field-master-lists)
-- You must configure the **Payment method code** in the field master list 7 of the document class used as specified by the regulation. Learn more in [Field list configuration for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-field-master-lists) article.
+- You must create and use a **Tax Application** code for this report. For more information, see [Tax application for Latin America](ltm-core-tax-application.md) article.
+- You must configure **Payment method** as specified by the regulation in the field master list 7. For more information, see [Field list configuration for Latin America] (ltm-core-field-master-lists.md)
+- You must configure the **Payment method code** in the field master list 7 of the document class used as specified by the regulation. For more information, see [Field list configuration for Latin America](ltm-core-field-master-lists.md) article.
 
 ## Configure application-specific parameters
 
