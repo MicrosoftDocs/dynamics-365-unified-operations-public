@@ -26,14 +26,20 @@ Enable proactive notifications for network connectivity insights.
 Store employees will receive a notification if the offline mode is unavailable due to offline logon authentication failure. The notification will have a link for more detailed
 error information that may be copied and sent to admin for corrective action.
 
+![toastnotificationofflinelogon.](media/toastnotificationofflinelogon.jpg)
+
 ## Toast notification for Seamless offline switch
 
 Store employees will receive a notification when POS switches to offline mode through the seamless switch mechanism and will also receive a notification when POS switches back to online mode.
+
+![seamlessoffline.](media/seamlessoffline.jpg)
 
 ## Toast notfication for missing or weak network connection
 
 Store employees will receive a notification when network connectivity is missing or weak, with a prompt to switch to offline. Additionally, there will be a direct link to network connectivity 
 insights from the notification to learn more. To learn more on the network connectivity insights see [Network health checks](pos-healthcheck.md) 
+
+![network-connectivity-notification.](media/network-connectivity-notification.jpg)
 
 Please visit this page as we update with more notifications in the future releases.
 
