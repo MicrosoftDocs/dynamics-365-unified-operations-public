@@ -4,7 +4,7 @@ description: Access answers to some frequently asked questions about collections
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: conceptual
-ms.date: 01/31/2024
+ms.date: 01/17/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot 
 audience: Application User
