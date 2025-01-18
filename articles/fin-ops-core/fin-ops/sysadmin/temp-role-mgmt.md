@@ -1,6 +1,6 @@
 ---
 title: Temporary role management
-description: Learn about how you can use temporary role management to assign temporary roles and responsibilities to active users.
+description: Learn how you can use temporary role management to assign temporary roles and responsibilities to active users.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -18,49 +18,55 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-Temporary role management allows system administrators to assign temporary roles to the selected user account for a desired duration. This feature is useful when a user in a company is out for a duration or if similar role has to be divided among multiple folks for a temporarily manner. As soon as the session ends, the user account goes back to it's original roles.
+Temporary role management lets system administrators assign temporary roles to a specific user account for a specific amount of time (known as a *session*). This feature is useful when a user in a company is away from work for a period, or if a role must temporarily be divided among multiple users. When the session ends, the user account returns to its original roles.
 
+## Session approval and processing
 
-## Session approval and process
-A new session can only be initiated by a system administrator.
+Only users who have the **System administrator** role can initiate new temporary role sessions.
 
-To initiate a new session, follow these steps:
-1. Click **New** and the request has a **Draft** status and wait for the system administrator for approval. Users with **System administrator** role can approve or edit the request.
-2. To approve the request, in the **Change status** field and select **Planned**.
-3. The request is either picked up by the background process or the system administrator processes it manually by clicking **Process**.
-4. When the session starts, the selected user obtains temporary roles in Dynamics 365 finance and operations.
-5. When the session ends, the user accounts go back to their original roles.
-[!NOTE]
-> There is no maximum limit for a temporary role session.
+The process for temporary role sessions has these steps.
 
+1. Select **New** to create a request for a new session. The request has a status of **Draft**. Wait for a system administrator to approve the request. System administrators can approve or edit session requests.
+1. To approve the session request, in the **Change status** field, select **Planned**.
+1. The background process picks up the session request for processing. Alternatively, a system administrator can manually process it by selecting **Process**.
+1. When the session begins, the selected user account obtains temporary roles in finance and operations apps.
+1. When the session ends, the user account returns to its original roles.
 
-## Merge and replace types
-When creating a new session, select a **Merge** or **Replace** type. 
- - **Merge** - adds the temporary roles to the existing roles of the user account.
- - **Replace** - replaces the existing roles of the user account with the temporary roles. When the session ends, both these types revert to the original roles of the user account.
+> [!NOTE]
+> There is no limit on the length of a temporary role session.
 
-## Assigning temporary role
-For the new session, click **Assign roles** to assign the temporary roles to the selected user account. You can also click **Assign organizations** to assign the temporary role to the selected organization only and not all organizations. 
+## Session types
 
-## Audit log
+When you create a new temporary role session, set the type to **Merge** or **Replace**.
 
-Use the **Audit logs** to see all actions performed on a given session request. This table captures:
- - change in status
- - the date
- - time stamp of the action
- - who made the change
- - Was it the system administrator or the batch process
+- **Merge** – Add the temporary roles to the existing roles of the user account.
+- **Replace** – Replace the existing roles of the user account with the temporary roles.
+
+For both session types, the user account returns to its original roles when the session ends.
+
+## Assign temporary roles
+
+For a new temporary role session, select **Assign roles** to assign the temporary roles to the selected user account. You can also select **Assign organizations** to assign the temporary roles to the selected organization only, not to all organizations.
+
+## Audit logs
+
+Use the **Audit logs** to view all actions that are performed on a given session request. The grid captures the following details:
+
+- The change in status
+- The date
+- The timestamp of the action
+- Who made the change
+- Whether a system administrator or the batch process processed the request
 
 ## User log
 
-**User log** captures all sessions when any selected user accounts log into Dynamics 365 finance and operations during the active temporary role session. This helps track user activities and the time spent on each session. It also captures when the current session ends. 
+The **User log** captures all sessions when any selected user accounts sign in to finance and operations apps during the active temporary role session. This log helps track user activities and the time that is spent on each session. It also captures when the current session ends.
 
 > [!NOTE]
-> The **User log** captures the logging sessions that were performed during an active temporary role session. Anything outside of the session isn't captured even if the same user account is active in the system earlier and has been logging in.
-
+> The **User log** captures the logging sessions that were performed during an active temporary role session. Nothing outside the session is captured, even if the same user account was active in the system earlier and was signing in.
 
 ## User role change log
-**User role change log** captures all the role changes that were performed during the active temporary role session. This helps track the role changes for a given user account.
+
+The **User role change log** captures all the role changes that were performed during the active temporary role session. This log helps track the role changes for a specific user account.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
