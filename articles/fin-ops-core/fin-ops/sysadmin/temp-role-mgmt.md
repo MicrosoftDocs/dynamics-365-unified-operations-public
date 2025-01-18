@@ -56,7 +56,7 @@ Use the **Audit logs** to view all actions that are performed on a given session
 - The date
 - The timestamp of the action
 - Who made the change
-- Whether a system administrator or the batch process processed the request
+- Whether the batch process or a system administrator processed the request
 
 ## User log
 
