@@ -59,6 +59,8 @@ As of January 2025, AI-generated results are available in all languages supporte
 
 AI-generated content should not be used without manual review or supervision.
 
+Summaries and terminology provided by Copilot in languages other than English may be less accurate than their English language versions.
+
 ## What operational factors and settings allow for effective and responsible use of Analyze demand plans with Copilot?
 
 When you use this feature, follow these recommendations:
