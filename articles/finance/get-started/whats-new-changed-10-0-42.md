@@ -62,19 +62,6 @@ This section contains a table that lists the enhancements that are included in t
 | Tax calculation | Nondeductible amount on posted sales tax | The tax-specific exchange rate functionality now supports the 100% nondeductible scenario. | On by default |
 | Tax (India) | PAN Based accumulation for multiple vendors | This enhancement enables accumulation that is based on permanent account number (PAN) for cases where multiple vendors have the same PAN. | On by default |
 
-## Features turned on by default in this release
-
-The following table lists the features that are turned on by default in version 10.0.42. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
-
-| Feature name | Feature state | Module |
-|--------------|---------------|--------|
-
-## Features removed from Feature management
-
-The following table lists the features that have been removed from Feature management in version 10.0.41.
-
-| Feature name | Feature state | Module |
-|--------------|---------------|--------|
 
 ## Additional resources
 

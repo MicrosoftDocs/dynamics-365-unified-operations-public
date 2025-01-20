@@ -26,7 +26,7 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 
 - **Sidecar** – Copilot sits alongside the application as a *sidecar* and provides conversational support to the user. The sidecar is the primary Copilot interface in finance and operations apps. It provides a natural language chat experience that helps users work with application functionality and data. For example, the [generative help and guidance with Copilot](copilot-generative-help.md) feature is provided as a sidecar.
 - **Embedded** – These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
-- **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md).
+- **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md).
 
 ## Available Copilot features in finance and operations apps
 
@@ -34,10 +34,11 @@ The following Copilot features are currently available in finance and operations
 
 - For all finance and operations apps:
 
-    - [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md)
     - [Generative help and guidance with Copilot](copilot-generative-help.md)
     - [Workflow history summary](../organization-administration/workflow-history-summary.md)
     - [Enhanced user feedback for Copilot and related experiences](../../dev-itpro/copilot/enable-copilot-feedback.md)
+    - [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md)
+
 
 - For Dynamics 365 Commerce:
 

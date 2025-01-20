@@ -55,7 +55,7 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 Copilot shows a maximum of ten results. These results are ordered by significance. Results of equal significance are ordered arbitrarily. Although there might be additional results that have the same significance as the tenth result, Copilot doesn't indicate that those results exist.
 
-The AI-generated results are always presented in US English.
+As of January 2025, AI-generated results are available in all languages supported by Demand planning.
 
 AI-generated content should not be used without manual review or supervision.
 
