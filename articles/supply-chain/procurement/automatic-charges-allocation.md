@@ -14,13 +14,13 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Based on the customer that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
+Based on the customer or vendor that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
 
-Automatic charges (auto charges) are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, or items. You can also define auto charges that apply to all vendors, customers, or items.
+Automatic charges (auto charges) are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, group of customers, items or group of items. You can also define auto charges that apply to all vendors, customers, or items.
 
 ## Set up parameters
 
-The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
+The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to apply charges automatically in the purchase order. To complete this setup, follow these steps.
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the following fields:
@@ -28,7 +28,7 @@ The **Procurement and sourcing parameters** page has a few settings that are esp
     - **Find auto charges for header** – Set this option to *Yes* if charges should automatically be applied to purchase order headers.
     - **Find auto charges for line** – Set this option to *Yes* if charges should automatically be applied to purchase order lines.
 
-The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
+The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically in the sales order. To complete this setup, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the following fields:
@@ -59,7 +59,7 @@ To apply charges, you must first define charges codes.
 
 1. The **Posting** FastTab includes **Debit** and **Credit** sections. Set the following fields, depending on the ledger that you want to post the charges to:
 
-    - **Type** – Select the type of account that you're posting to (*Ledger*, *Customer*, or *Item*).
+    - **Type** – Select the type of account that you're posting to (*Ledger*, *Customer*, or *Item*).If you selected Ledger account as the debit type or credit type, specify a posting type in the Posting fields, and specify the main account in the Account fields.
     - **Posting** – Select the type of postings to create (such as *Broker fee* or *Customer settlement*).
     - **Account** – Select the account to post the charge for.
 
@@ -135,9 +135,7 @@ After your charges codes are set up, follow these steps to define the auto charg
 1. **For sales orders only:** In the **Mode of delivery relation** field, select a specific mode of delivery if you set the **Mode of delivery code** field to *Table*. If you set the **Mode of delivery code** field to *Group*, select a mode of delivery group.
 1. On the **Lines** FastTab, define the charges and the charges rates that will be used when the current auto charge is applied. You can use the toolbar on this FastTab to add as many lines as you require. For each line, set the following fields:
 
-    - **Sequence** – Select the currency that should be used to calculate the charge. This field is applicable only to the *Header* level for sales quotation and sales order charges.
-    - **Compound** – Select the currency that should be used to calculate the charge. This field is applicable only to the *Header* level for sales quotation and sales order charges.
-    - **Currency** – Select the currency that should be used to calculate the charge.
+    - **Currency** – Select the currency that should be used to calculate the charge. This field is applicable only to the *Header* and *Line* level for sales quotation and sales order charges.
     - **Charges code** – Select the code for the charge.
     - **Category** – Select one of the following values:
 
