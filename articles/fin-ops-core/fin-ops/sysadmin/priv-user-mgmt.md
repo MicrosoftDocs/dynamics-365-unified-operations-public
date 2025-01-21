@@ -4,7 +4,7 @@ description: This article describes how to use privileged user management to con
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/13/2025
+ms.date: 01/25/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -16,7 +16,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Privileged user management
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Privileged user management allows system administrators to schedule a session for selected user accounts and records all user interactions within Dynamics 365 finance and operations during the session. This feature is useful when some elevated privileged accounts are utilized for auditing purposes and ensures users aren't performing any unauthorized activities within the system.
 
