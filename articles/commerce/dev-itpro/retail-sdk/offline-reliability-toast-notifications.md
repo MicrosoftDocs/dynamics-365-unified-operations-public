@@ -35,7 +35,7 @@ Store employees receive a notification when POS switches to offline mode through
 
 ## Toast notification for missing or weak network connection
 
-Store employees receive a notification when network connectivity is missing or weak, with a prompt to switch to offline. There's also a direct link to network connectivity insights from the notification to learn more. To learn more on the network connectivity insights, see [Network health checks](pos-healthcheck.md) 
+Store employees receive a notification when network connectivity is missing or weak, with a prompt to switch to offline. There's also a direct link to network connectivity insights from the notification to learn more. To learn more on the network connectivity insights, see [Network health checks](../pos-healthcheck.md) 
 
 ![network-connectivity-notification.](../../media/network-connectivity-notification.jpg)
 
