@@ -16,7 +16,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Security version management
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The security version feature maintains multiple versions of security configurations within a company and perform comparisons and restorations.
 
