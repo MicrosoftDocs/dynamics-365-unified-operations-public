@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Set up security categories
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Security categories
 Categories are used for an aggregation in **Process roles maintain** module. You can define categories that help you save a new role under a given work stream or department. We strongly recommend building this properly to limit the development costs when it comes to security upgrades.
