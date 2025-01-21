@@ -1,10 +1,10 @@
 --- 
 title: User activity aging report
-description: Learn about how the user activity aging report helps monitor the usage of licenses and further providing data points to optimize licensing cost. 
+description: Learn about how the user activity aging report helps monitor license usage. 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/15/2025
+ms.date: 01/25/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,10 +18,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-**User activity aging** report is designed to facilitate tracking login into **Finance & Operations**, enabling administrators to monitor user activity effectively. One of the most common monitoring days are 10, 30, 60, 90, 120 and this data can be used to optimize licensing costs. However, these day ranges are configurable and can be customized to suit the organization's needs.
+The **User activity aging** report facilitates tracking login information into Dynamics 365 finance and operations, enabling administrators to monitor user activity effectively. 
+Some of the most common monitoring days are 10, 30, 60, 90, 120. This data can be used to optimize licensing costs. These day ranges are configurable and can be customized to suit the organization's needs.
 
-In order to define and customize time ranges for **User activity aging**:
+In order to define and customize time ranges for **User activity aging**, follow these steps:
 1. Go to **System administration** > **Security governance setup** > **Parameters**.
-2. Navigate to **User aging periods** tab.
-3. Configure all five periods as per the organization's requirements.
+2. On the **User aging periods** tab.
+3. Configure all five periods as needed.
 4. Click **Save**.
