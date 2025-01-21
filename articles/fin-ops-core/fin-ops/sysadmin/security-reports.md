@@ -15,6 +15,10 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Available reports for security 
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 There are various reports that are available to help with security, licenses, roles. and duties. 
 The following reports are available:
  - User activity aging - tracks login information.
