@@ -1,6 +1,6 @@
 ---
-title: Offline reliability toast notifications in Store Commerce
-description: This article describes the various toast notifications available in Microsoft Dynamics 365 Commerce Store Commerce app.
+title: Offline reliability toast notifications in the Store Commerce app
+description: Learn about the various toast notifications that are available in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: conceptual 
@@ -10,34 +10,33 @@ ms.custom:
 ms.reviewer: v-chrgriffin
 ---
 
-# Offline reliability toast notifications in Store Commerce app
+# Offline reliability toast notifications in the Store Commerce app
 
-This article describes the various toast notifications available in the Microsoft Dynamics 365 Commerce Store Commerce app to support Offline reliability scenarios starting with release 10.0.43. 
+This article describes the various toast notifications that are available as of the 10.0.43 release of the Microsoft Dynamics 365 Commerce Store Commerce app to support offline reliability scenarios.
 
-## Enable toast notifications feature.
+Revisit this article as more notifications are added in future releases.
 
-To enable toast notifications in the Store commerce app, the following feature management flags should be turned on.
+## Enable the toast notifications feature
 
-- Enable proactive notifications for offline functionalities.
-- Enable proactive notifications for network connectivity insights.
+To enable toast notifications in the Store Commerce app, you must turn on the following feature management flags:
 
-## Toast notification for offline logon failure
+- Enable proactive notifications for offline functionalities
+- Enable proactive notifications for network connectivity insights
 
-Store employees receive a notification if the offline mode is unavailable due to offline logon authentication failure. The notification has a link for more detailed error information that can be copied and sent to an Administrator for corrective action.
+## Toast notification for offline sign-in authentication failures
 
-:::image type="content" source="../../media/toastnotificationofflinelogon.jpg" alt-text="Screenshot of toastnotificationofflinelogon.":::
+Store employees receive a notification if the offline mode is unavailable because of an offline sign-in authentication failure. The notification includes a link to more detailed error information. That information can be copied and sent to an administrator for corrective action.
 
-## Toast notification for Seamless offline switch
+:::image type="content" source="../../media/toastnotificationofflinelogon.jpg" alt-text="Screenshot that shows an example of a toast notification about an offline sign-in authentication failure.":::
 
-Store employees receive a notification when POS switches to offline mode through the seamless switch mechanism and also receive a notification when POS switches back to online mode.
+## Toast notification for seamless switches to offline mode
 
-:::image type="content" source="../../media/seamlessoffline.jpg" alt-text="screenshot of seamlessoffline.":::
+Store employees receive a notification when the point of sale (POS) switches to offline mode through the seamless switch mechanism. They also receive a notification when POS switches back to online mode.
 
-## Toast notification for missing or weak network connection
+:::image type="content" source="../../media/seamlessoffline.jpg" alt-text="Screenshot that shows an example of a toast notification about a seamless switch to offline mode.":::
 
-Store employees receive a notification when network connectivity is missing or weak, with a prompt to switch to offline. There's also a direct link to network connectivity insights from the notification to learn more. To learn more on the network connectivity insights, see [Network health checks](../../pos-healthcheck.md) 
+## Toast notification for missing or weak network connections
 
-:::image type="content" source="../../media/network-connectivity-notification.jpg" alt-text="Screenshot of etwork-connectivity-notification.":::
+Store employees receive a notification when network connectivity is missing or weak. The notification prompts employees to switch to offline mode. The notification also include a direct link to network connectivity insights, so that employees can learn more about the issue. Learn more about network connectivity insights in [Network health checks](../../pos-healthcheck.md#network-health-checks).
 
-Visit this page as we update with more notifications in the future releases.
-
+:::image type="content" source="../../media/network-connectivity-notification.jpg" alt-text="Screenshot that shows an example of a notification about a missing network connection.":::
