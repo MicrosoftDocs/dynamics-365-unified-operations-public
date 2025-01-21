@@ -82,12 +82,16 @@ The following health check charts are added to provide more insights into the ne
 
 - **Connection history** - Provides insights on whether the connectivity was with **internet access**, **local access** with no internet or **no access** at all- The chart shows an hourly view for a 24 hour period. 
   The time period can however be adjusted and can be narrowed to minutes to get insights into network fluctuations if any during a specific period when app issues were noticed.
-  ![connectivityhistory.](media/connectivityhistory.jpg)
+  
+  :::image type="content" source="media/connectivityhistory.jpg" alt-text="Screenshot of connectivityhistory.":::
 - **Connection type**- Provides insights into the type of connection used by the point of sale device to connect to the internet.
-  ![connectivitytype.](media/connectivitytype.jpg)
+  
+  :::image type="content" source="media/connectivitytype.jpg" alt-text="Screenshot of connectivitytype.":::
 - **WI-FI signal strength** Provides insights into the WI-FI signal strength quality for a 24 hour period. The timing can be narrowed to minutes to get detailed insights on any Wi-fi fluctuations that may be 
   responsible to app issues during specific times in a day.
-  ![WIFIsignalstrength.](media/WIFIsignalstrength.jpg)
+
+  :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot of WIFIsignalstrength.":::
+
 
 To access these charts, select the **View connection history report** link on the **About** tab.
 
