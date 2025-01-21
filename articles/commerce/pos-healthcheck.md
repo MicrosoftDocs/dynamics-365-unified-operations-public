@@ -65,9 +65,9 @@ When the health check operation is initiated in the POS, a pane on the right lis
 
 The **Last check** column shows when the health check was last done for each device.
 
-If a device passes the health check (that is, if no errors are encountered), the device's status displays **OK**. If the health check fails, the status indicates that there was an error. In this case, the pane on the right provides details that are related to the error, or it instructs the user to contact the system admin.
+If a device passes the health check (that is, if no errors are encountered), the device's status is shown as **OK**. If the health check fails, the status indicates that there was an error. In this case, the pane on the right provides details that are related to the error, or it instructs the user to contact the system admin.
 
-Some devices, such as the OPOS keylock, don't have out-of-box health check tests. If a health check test isn't detected for any device that is used, the status is **Not supported**.
+Some devices, such as the OPOS keylock, don't have out-of-box health check tests. If no health check test is detected for a device that is used, the status is **Not supported**.
 
 ### Network health checks
 
@@ -78,20 +78,19 @@ The two out-of-box network health checks listed below are always included in the
 | Retail Server connectivity | The Retail Server connectivity health check verifies that the terminal can communicate with Retail Server and the channel database, and verifies that real-time service calls can be made to Commerce headquarters. |
 | Network latency            | The network latency health check tests the network latency between the terminal and Retail Server. The test returns the average latency for 10 calls to Retail Server in a five-second period. |
 
-The following health check charts are added to provide more insights into the network connectivity and performance, and to help admins analyze any app issues that may be linked to network connectivity during specific period of time. 
+The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period.
 
-- **Connection history** - Provides insights on whether the connectivity was with **internet access**, **local access** with no internet or **no access** at all- The chart shows an hourly view for a 24 hour period. 
-  The time period can however be adjusted and can be narrowed to minutes to get insights into network fluctuations if any during a specific period when app issues were noticed.
-  
-  :::image type="content" source="media/connectivityhistory.jpg" alt-text="Screenshot of connectivityhistory.":::
-- **Connection type**- Provides insights into the type of connection used by the point of sale device to connect to the internet.
-  
-  :::image type="content" source="media/connectivitytype.jpg" alt-text="Screenshot of connectivitytype.":::
-- **WI-FI signal strength** Provides insights into the WI-FI signal strength quality for a 24 hour period. The timing can be narrowed to minutes to get detailed insights on any Wi-fi fluctuations that may be 
-  responsible to app issues during specific times in a day.
+- **History of connectivity** – Provides insights about whether the connectivity was with **internet access**, **local access** with no internet, or **no access** at all. The chart shows an hourly view for a 24-hour period. However, the period can be narrowed to minutes to provide insights into any network fluctuations that occurred during a specific period when app issues were noticed.
 
-  :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot of WIFIsignalstrength.":::
+    :::image type="content" source="media/connectivityhistory.jpg" alt-text="Screenshot that shows an example of a History of connectivity chart on the Connectivity health report page.":::
 
+- **Connection type** – Provides insights into the type of connection that the point of sale device uses to connect to the internet.
+
+    :::image type="content" source="media/connectivitytype.jpg" alt-text="Screenshot that shows an example of a Connection type chart on the Connectivity health report page.":::
+
+- **Wi-Fi signal strength** – Provides insights into the quality of the Wi-Fi signal strength for a 24-hour period. The period can be narrowed to minutes to provide detailed insights into any Wi-Fi fluctuations that might be responsible for app issues during specific times of a day.
+
+    :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot that shows an example of a Wi-Fi signal strength chart on the Connectivity health report page.":::
 
 To access these charts, select the **View connection history report** link on the **About** tab.
 
@@ -103,9 +102,9 @@ Network latency health check results are categorized as shown in the following t
 
 | Latency range       | Meaning                                                      |
 | ------------------- | ------------------------------------------------------------ |
-| 0-50 ms             | **Good** - Your network latency is low and not likely to be the source of any performance related issues. |
-| 50-100 ms           | **Acceptable** - Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
-| Greater than 100 ms | **Poor** - Your network latency is likely degrading your point of sale operations. Latency in the 100-150 ms range may not cause noticeable performance degradation for common operations, but latency above 150 ms slow down most operations.  <br /><br />To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection. |
+| 0–50 ms             | **Good** – Your network latency is low and not likely to be the source of any performance related issues. |
+| 50–100 ms           | **Acceptable** – Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
+| Above 100 ms | <p>**Poor** – Your network latency is likely degrading your point of sale operations. Although latency in the 100–150 ms range might not cause noticeable performance degradation for common operations, latency above 150 ms slows down most operations.</p><p>To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection.</p> |
 
 ### Extending health checks
 
