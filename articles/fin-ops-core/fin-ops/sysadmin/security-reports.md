@@ -20,6 +20,7 @@ The following reports are available:
  - User activity aging - tracks login information.
  - License summary - displays how many entry points for each license level.
  - Role audit trail - view the history of a role that are assigned and unassigned to users.
+ - Security analysis - provides information about various roles and their privileges access levels, how many users belong to each role and change history of duties, roles and privileges.
 
 ## User activity aging report
 
@@ -51,3 +52,13 @@ Role audit trail provides a history of the role that have been assigned and unas
 Go to **System administration** > **Users** > **User's role**
   or
 **System administration** > **Security** > **Security governance** > **Temporary role management**.
+
+## Security analysis report
+The security analysis report displays information about various roles and their privileges access levels, how many users belong to each role and change history of duties, roles and privileges. To refresh the report data, click on **Rebuild**
+
+### Navigate the report
+Users can find **Security elements** based on the name. Permission levels are displayed by **Read**, **Create**, **Correct**, **Update**, **Invoke**, and **Delete**. Roles and their mappings to user licenses is displayed.
+
+ - Entry points - A list of all **Roles**, **Sub-roles**, **Duties**, and **Privileges** in the system. Users can see all the roles and their duties and privileges in a the single place.
+ - User entry points - Provides a complete security profile of a selected user to see what roles are assigned, what duties and privileges are assigned to the roles, and what entry points are accessible to the user. Users can see other users within the company have similar access level.
+ - Entry points history - Provides a complete history of changes made to the security configuration. Various data points like **Created date and time** and **Created by** are captured for **Roles**, **Duty**, and **Privilege**. Users can also see **XML** and **Difference** with the previous version of the same object.
