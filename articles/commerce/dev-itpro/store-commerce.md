@@ -172,12 +172,12 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
   - Windows Server 2019 (Standard, Essentials) with the latest available updates.
   - Windows 10 version 17763.0 or later (Pro, Enterprise, and Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IoT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
      > [!NOTE]
-     > Store commerce for windows is not supported on ARM processors.
+     > Store Commerce for Windows isn't supported on ARM processors.
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
 - To support the embedded Hardware Station components, you must install the correct version of .NET Framework. For Commerce versions 10.0.42 and later, install .NET Framework 4.8. For Commerce versions 10.0.41 and earlier, install .NET Framework 4.7.2. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
-- .NET Desktop Runtime 8 for 10.0.42 and beyond and .NET 6.0.16 for previous versions, which is used by the Store Commerce app for UI rendering.
+- .NET Desktop Runtime 8 for version 10.0.42 and later, and .NET 6.0.16 for previous versions, are used by the Store Commerce app for UI rendering.
 - The following Store Commerce folders should be excluded when running any external applications or programs such as antivirus applications to prevent the folders from being deleted:
     - User-scoped application data: `C:\Users\**\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
     - Common application data: `C:\ProgramData\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
@@ -263,7 +263,7 @@ You can extend Store Commerce to integrate it with hardware devices. You can use
 
 ## Microsoft Edge WebView2 control
 
-The Store Commerce app for Windows uses the [Microsoft Edge WebView2 control](/microsoft-edge/webview2/) for rendering. Microsoft preinstalls and automatically updates the WebView2 evergreen runtime on all Windows 11 and eligible Windows 10 devices. The evergreen runtime distribution model has the advantage of not requiring more effort to manage, but it doesn't allow you to control the version of WebView2 used with a particular release of the Store Commerce app. 
+The Store Commerce app for Windows uses the [Microsoft Edge WebView2 control](/microsoft-edge/webview2/) for rendering. Microsoft preinstalls and automatically updates the WebView2 evergreen runtime on all Windows 11 and eligible Windows 10 devices. The evergreen runtime distribution model has the advantage of not requiring more effort to manage, but it doesn't let you control the version of WebView2 that is used with a particular release of the Store Commerce app. 
 
 Microsoft recommends that you explicitly manage the WebView2 version that is used by a particular update of the Store Commerce app to mitigate the risk of regressions that are caused by incompatibilities between the Store Commerce app and the latest WebView2 control.  
 
