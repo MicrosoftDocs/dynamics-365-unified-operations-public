@@ -85,7 +85,7 @@ The following health check charts are added to provide more insights into the ne
   ![connectivityhistory.](media/connectivityhistory.jpg)
 - **Connection type**- Provides insights into the type of connection used by the point of sale device to connect to the internet.
   ![connectivitytype.](media/connectivitytype.jpg)
-- **WI-FI signal strength** Provides insights into the WI-FI signal strength quality for a period of 24 hours. The timing can be narrowed to minutes to get detailed insights on any Wi-fi fluctuations that may be 
+- **WI-FI signal strength** Provides insights into the WI-FI signal strength quality for a 24 hour period. The timing can be narrowed to minutes to get detailed insights on any Wi-fi fluctuations that may be 
   responsible to app issues during specific times in a day.
   ![WIFIsignalstrength.](media/WIFIsignalstrength.jpg)
 
