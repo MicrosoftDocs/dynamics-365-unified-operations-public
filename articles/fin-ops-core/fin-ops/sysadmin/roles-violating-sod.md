@@ -1,6 +1,6 @@
 --- 
 title: Roles violating segregation of duties
-description: Learn about how to identify viloations of segregation of duties. 
+description: Learn about how to identify segregation of duties violations. 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -19,9 +19,9 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include[banner](../../../finance/includes/banner.md)]
 
 This view displays roles that violate **Segregation of duties** rules and how many such violations exist for each role.
-1. To view Segration of duties rule violations, go to **Segration of duties rules** table.
+1. To view segregation of duties rule violations, go to **Segregation of duties rules** table.
 2. Click a specific rule name.
-3. You will be able to see the specific **Segregation of role rule** that the selected role breaches.
+3. You are able to see the specific **Segregation of role rule** that the selected role breaches.
 
 ## View all violations
 To view a list of all violations, follow these steps:
