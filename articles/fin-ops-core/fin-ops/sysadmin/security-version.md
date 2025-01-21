@@ -1,6 +1,6 @@
 --- 
 title: Security version management
-description: Learn about how the security version feature allows maintain multiple versions of security configurations within company and perform comparison, restoration etc. 
+description: Learn about how to maintain multiple versions of security configurations within a company. 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -18,38 +18,43 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-The security version feature allows maintain multiple versions of security configurations within company and perform comparison, restoration etc.
+The security version feature maintains multiple versions of security configurations within a company and perform comparisons and restorations.
 
 ## Create version
-This feature allows you to create the version of the security configurations at the point of time.
+To create a version of the security configurations at a point of time, follow these steps:
 
 1. Go to **System administration** > **Security** > **Security governance** > **Security versions**.
 2. Click **Create version**
-3. In the **Name** field, type a value for the version. **Description** field is optional.
+3. In the **Name** field, type a value for the version. 
 4. Click **OK**.
-5. The version creation is an asynchronous process. You can check the status of the version creation by monitoring **Status** column. 
+5. Version creation is an asynchronous process. You can check the status of the version creation by monitoring **Status** column. 
 6. **Executing** status indicates that the version creation is in progress.
 
 ## Restore version
-This feature allows you to restore the security configurations to the version that was created earlier.
+To restore the security configurations to a version that was created earlier, follow these steps:
 
 1. Go to **System administration** > **Security** > **Security governance** > **Security versions**.
-2. Select the version that you want to restore.
+2. Select the version to restore.
 3. Click **Restore version**
-4. A dialog box will open. Select the options as per your requirement.
-5. Click **OK**
+4. A dialog box opens.
+5. Select options as needed.
+6. Click **OK**
 
 ## Compare versions
-Once the security versions are created, it is possible to compare them with each other to gain a clear insight into their differences (such as what changes have been introduced in the meantime).
+After the security versions are created, users can compare them to gain a clear insight into differences.
+
+To compare versions, follow these steps:
 1. Go to **System administration** > **Security** > **Security governance** > **Security versions**.
-2. Select the version you want to compare. 
+2. Select the version to compare. 
 3. Click **Compare**
-4. It will navigate you to a different screen where you will be asked to select another security version with which you want to compare the above selected version.
-5. You can select the option to see only **differences** or all the details.
+4. Select another security version from the additional screen to compare the above selected version.
+5. Select to see only **Differences** or all the details.
 6. Click **Compare**.
 
 ## Delete version
-This feature allows you to delete the security version that is no longer required.
+Users can delete security versions that aren't required.
+
+To delete a security version, follow these steps:
 1. Go to **System administration** > **Security** > **Security governance** > **Security versions**.
-2. Select the version that you want to delete.
+2. Select the version to delete.
 3. Click **Delete**.
