@@ -12,9 +12,7 @@ ms.date: 1/16/2025
 
 # Custom reports migration
 
-This guide will help you to backup, export, and restore custom reports, ensuring that your organization's data remains consistent and up-to-date. By following the steps outlined, users can ensure seamless data transfer and maintain the integrity of their reports. We will also addresses potential challenges and provides recommendations on managing solutions to help you make informed decisions based on your organization's needs.
-
-The process involves two main stages: exporting custom reports from the source organization and importing them into the target organization. Key terminologies such as **source organization** and **target organization** are defined to clarify the roles of each entity in this process. Additionally, prerequisites such as having the appropriate version of Business Performance Analytics and updating the connections of specific flows are highlighted to ensure a smooth transition.
+This guide will help you to backup, export, and restore custom reports, ensuring that your organization's data remains consistent and up-to-date. By following the steps outlined, users can ensure seamless data transfer and maintain the integrity of their reports. We will also addresses potential challenges and provides recommendations on managing solutions to help you make informed decisions based on your organization's needs. The process involves two main stages: exporting custom reports from the source organization and importing them into the target organization. 
 
 ## Terminology
 - Source organization: The organization from which you are backing up and exporting from.
