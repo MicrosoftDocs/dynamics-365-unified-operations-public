@@ -46,5 +46,21 @@ You can link info codes so that when one info code is triggered, another info co
 
 When you sell certain products, for example mobile devices, you always want to collect a specific set of information, such as telephone number, mobile equipment identifier (MEID), and serial number. However, you also want to collect different information for a tablet versus a mobile phone. You can set up an info code group that includes prompts for the telephone number, MEID, and the serial number, and then link the info code group to an individual info code. When the product-specific info code is triggered, the info code group can be triggered next to enable you to collect the common data without having to define multiple sets of linked info codes for each device.
 
+## Import info code
+
+1. Go to **System administration \> Workspaces \> Data management**
+2. Click the Data entities menu item
+3. Add the RetailInfocodeTranslationEntity and RetailInfocodeEntity entities ![adding entities.](./media/adding-info-code-entities.png "adding entities")
+4. Go back to **System administration \> Workspaces \> Data management**
+5. Click the Import menu item
+6. Fill in the Group name field
+7. Click the "Add file" button
+8. Add the RetailInfocodeEntity and corresponding file where you want to import from
+9. Add the RetailInfocodeTranslationEntity and corresponding file where you want to import from
+10. The form should look like this ![import info codes.](./media/import-info-codes.png "import info codes")
+11. Once all files are added, click the Import button at the top.
+12. Check the final result form to confirm successful import. ![imported.](./media/imported.png "imported")
+13. Go to Info Codes form to see the imported info codes
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
