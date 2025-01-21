@@ -104,9 +104,8 @@ If the **Audit** option in the POS functionality profile is set to **Yes**, the 
 | Period tax archiving | 20 |
 | Fiscal year archiving | 30 |
 | Annual or year-end closing | 60 |
-| Cleanup of transactions from the channel database | 200** |
+| Cleanup of transactions from the channel database | 200 |
 | Applying a major update of the software with compliance impact | 250 |
-| Detection of an integrity flaw in secured data or a tax archive** | 90 |
 
     > [!NOTE]
     > Audit event logs are only applicable to changes made in the POS, hence changes made in Commerce HQ will not be included in the logs.
@@ -360,6 +359,7 @@ You must enable the following features in the **Feature management** workspace:
 - (France) Enable additional audit events in POS
 - (France) Enable additional information in end-of-day statements in POS
 - (France) Enable exporting Z-Report to file
+- (France) Enable identical receipt copy printing
 
 ### Set up the legal entity
 
