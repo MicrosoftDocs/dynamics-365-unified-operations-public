@@ -25,19 +25,19 @@ To enable toast notifications in the Store commerce app, the following feature m
 
 Store employees receive a notification if the offline mode is unavailable due to offline logon authentication failure. The notification has a link for more detailed error information that can be copied and sent to an Administrator for corrective action.
 
-![toastnotificationofflinelogon.](../media/toastnotificationofflinelogon.jpg)
+![toastnotificationofflinelogon.](../../media/toastnotificationofflinelogon.jpg)
 
 ## Toast notification for Seamless offline switch
 
 Store employees receive a notification when POS switches to offline mode through the seamless switch mechanism and also receive a notification when POS switches back to online mode.
 
-![seamlessoffline.](../media/seamlessoffline.jpg)
+![seamlessoffline.](../../media/seamlessoffline.jpg)
 
 ## Toast notification for missing or weak network connection
 
 Store employees receive a notification when network connectivity is missing or weak, with a prompt to switch to offline. There's also a direct link to network connectivity insights from the notification to learn more. To learn more on the network connectivity insights, see [Network health checks](pos-healthcheck.md) 
 
-![network-connectivity-notification.](../media/network-connectivity-notification.jpg)
+![network-connectivity-notification.](../../media/network-connectivity-notification.jpg)
 
 Visit this page as we update with more notifications in the future releases.
 
