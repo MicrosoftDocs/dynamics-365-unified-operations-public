@@ -2020,7 +2020,7 @@
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
                 - name: Bolivia
                   items:
-                  - name: Print configuration for Sales Vat Book Bolivia
+                  - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                 - name: Brazil
                   items:
