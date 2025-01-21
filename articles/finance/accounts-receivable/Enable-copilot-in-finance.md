@@ -4,7 +4,7 @@
 title: Enable Copilot in Dynamics 365 Finance
 description: This article explains how to enable the functionality that's related to Microsoft Copilot in Dynamics 365 Finance. 
 author: JodiChristiansen
-ms.date: 06/07/2024
+ms.date: 01/21/2025
 ms.topic: article
 ms.collection: bap-ai-copilot
 
