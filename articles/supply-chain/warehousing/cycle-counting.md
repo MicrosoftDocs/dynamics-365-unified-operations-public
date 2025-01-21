@@ -60,7 +60,7 @@ To create cycle counting work manually, you can use the **Cycle count work by it
 
 > [!NOTE]
 >
-> - When the cycle counting work is created, it will always be created for the whole location. This will be the case regardless which method of cycle counting work creation is used (e.g. manual or automatic) or which query was used (the query is only used to select which locations to create cycle counting work for). That means the neither the item nor the tracking dimensions will be set on the work line. The only exception is the Partial location cycle counting (see more details in [Define partial location cycle counting process](define-partial-location-cycle-counting-process.md)), which supports counting based on the item or product variant.
+> - When the cycle counting work is created, it will always be created for the whole location. This will be the case regardless which method of cycle counting work creation is used (e.g. manual or automatic) or which query was used (the query is only used to select which locations to create cycle counting work for). That means the neither the item nor the tracking dimensions will be set on the work line. The information about the specific item and tracking dimensions will be created in the **Cycle counting transactions** when the user starts the counting process on the mobile device. The only exception is the Partial location cycle counting (see more details in [Define partial location cycle counting process](define-partial-location-cycle-counting-process.md)), which supports counting based on the item or product variant.
 
 ## Perform a cycle count by using a mobile device
 
