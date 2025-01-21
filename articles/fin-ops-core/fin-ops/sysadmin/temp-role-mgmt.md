@@ -4,7 +4,7 @@ description: Learn how you can use temporary role management to assign temporary
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/13/2025
+ms.date: 01/25/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Temporary role management
 
 [!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Temporary role management lets system administrators assign temporary roles to a specific user account for a specific amount of time (known as a *session*). This feature is useful when a user in a company is away from work for a period, or if a role must temporarily be divided among multiple users. When the session ends, the user account returns to its original roles.
 
