@@ -23,8 +23,8 @@ Before you complete the steps in this article to generate and print the report, 
 - The country/region-specific LATAM feature for Bolivia and the general LATAM feature must be enabled.
 - You must download the relevant report from the Global repository (BO Sales VAT Book). For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 - You must configure the Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
--There must be a **Tax application** created to be used in this report. For more information, see [Configure Tax application for Latin America]( /ltm-core-tax-application.md).
--Configure the **Tax application** of **Document classes** used to annul posted fiscal documents with the **Tax application** created and complete the **Letter code** field with an “A”. For more information, see [Document classes for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class).
+-There must be a **Tax application** created to be used in this report. For more information, see [Configure Tax application for Latin America](../ltm-core-tax-application.md).
+-Configure the **Tax application** of **Document classes** used to annul posted fiscal documents with the **Tax application** created and complete the **Letter code** field with an “A”. For more information, see [Document classes for Latin America](ltm-core-document-class.md).
 
 ## Configure application-specific parameters
 
