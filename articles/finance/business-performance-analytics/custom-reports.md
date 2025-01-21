@@ -2,8 +2,8 @@
 title: Custom reports migration
 description: Learn how to import, export, and restore custom reports.
 author: lizmota
-ms.author: jiwo
-ms.topic: faq
+ms.author: atrukawk
+ms.topic: report migration
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -22,9 +22,9 @@ The process involves two main stages: exporting custom reports from the source o
   
 ## Prerequisites
 - Have a System administrator role
--	Have version of Business performance analytics <version here> or newer on both the target and source organizations
+-	Have version of Business performance analytics version 2.0.29241185 or newer on both the target and source organizations
 -	Update the connection of the flows “Business performance analytics backup custom reports” and “Business performance analytics restore custom reports” on the Target and Source organizations. This can be accomplished by doing the following:
-    1.	Go to https://make.powerapps.com
+    1.	Go to [Power Apps](https://make.powerapps.com)
     2.	Select the organization
     3.	Go to “Flows”
     4.	Find the flow in the list
@@ -35,25 +35,25 @@ The process involves two main stages: exporting custom reports from the source o
 
 ## Export
 To export custom reports from your source organization, perform the following steps:
-1.	Go to https://make.powerapps.com
+1.	Go to [Power Apps](https://make.powerapps.com)
 2.	Make sure you are in the source organization
-3.	Create a new solution in the organization following the guide https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-solution 
-a.	Remember what you put in for the “Name” field (this is the unique name of the solution)
-b.	You only need to follow the first part of the guide where you create the solution
+3.	Create a new solution in the organization following the [Create Solution guide](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-solution) 
+    - Remember what you put in for the “Name” field (this is the unique name of the solution)
+    - You only need to follow the first part of the guide where you create the solution
 4.	Go to “Flows”
 5.	Find flow “Business performance analytics backup custom reports” and click “Run” (“Play” icon)
-a.	It will ask you for a parameter called “Solution unique name” place the value from step 1-a here
-b.	Click “Run flow”
+    - It will ask you for a parameter called “Solution unique name” place the value from step 1-a here
+    - Click “Run flow”
 6.	The execution time will depend on the number of reports in the system, but the progress can be monitored in the flow “Business performance analytics move custom reports to solution”
-7.	Once complete go to the “Solutions” page and export the solution from step 1 following the guide https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-solutions#export-from-power-apps 
-a.	You can select “Managed” or “Unmanaged” when exporting (see notes and limitations section)
+7.	Once complete go to the “Solutions” page and export the solution from step 1 following the [Export Solutions guide](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-solutions#export-from-power-apps) 
+    - You can select “Managed” or “Unmanaged” when exporting (see notes and limitations section)
 
 ## Import
 To import custom reports to your target organization, perform the following steps:
-1.	Go to https://make.powerapps.com
+1.	Go to [Power Apps](https://make.powerapps.com)
 2.	Make sure you are in the target organization
-3.	Import the solution that you exported from the source organization by following the guide https://learn.microsoft.com/en-us/power-apps/maker/data-platform/import-update-export-solutions
-a.	Wait for the import to finish before proceeding to the next step
+3.	Import the solution that you exported from the source organization by following the [Import Solution guide](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/import-update-export-solutions)
+    - Wait for the import to finish before proceeding to the next step
 4.	Go to “Flows”
 5.	Find flow “Business performance analytics restore custom reports” and click “Run” (“Play” icon)
 6.	The execution time will depend on the number of reports in the system, but the progress can be monitored in the flow “Business performance analytics custom report restore flow”
