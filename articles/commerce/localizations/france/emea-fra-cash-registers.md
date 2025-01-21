@@ -107,8 +107,8 @@ If the **Audit** option in the POS functionality profile is set to **Yes**, the 
 | Cleanup of transactions from the channel database | 200 |
 | Applying a major update of the software with compliance impact | 250 |
 
-    > [!NOTE]
-    > Audit event logs are only applicable to changes made in the POS, hence changes made in Commerce HQ will not be included in the logs.
+  > [!NOTE]
+  > Audit event logs are only applicable to changes made in the POS, hence changes made in Commerce HQ will not be included in the logs.
     
 ### Digital signing overview
 
