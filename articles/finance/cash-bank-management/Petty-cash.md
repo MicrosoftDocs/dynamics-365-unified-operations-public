@@ -425,7 +425,8 @@ Confirmation is appropriate when cash documents are issued, and cash receipts or
 - To reject a cash document, select **Documents approval** \> **Reject**. This option is available only for documents that have **Confirmed** status.
 - To approve a transaction, select the corresponding Slip journal line, and then select **Documents approval** \> **Approve**. The **Approved** status indicates that cash funds are received or expended. The cash balance is changed. The cash transaction can be posted.
 - To cancel an **Approved** status and reset the status to **None**, select **Documents approval** \> **Reset status**. Only approved cash transactions can be posted. To post a journal, select **Post** \> **Post**.
-
+- Journals with **Rejected** documents can be posted, but will not generate vouchers for these transactions. However, all rejected documents are logged and available to be reviewed in the **Cash transactions** page.
+  
 ## Periodic tasks
 
 To complete the following tasks, go to **Cash and bank management** \> **Periodic tasks**.
