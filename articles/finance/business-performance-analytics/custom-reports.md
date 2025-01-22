@@ -1,6 +1,6 @@
 ---
 title: Custom reports migration
-description: Learn how to import, export, and restore custom reports.
+description: Learn how to import, export, and restore custom reports in Business performance analytics.
 author: lizmota
 ms.author: atrukawk
 ms.topic: report migration
@@ -12,7 +12,7 @@ ms.date: 1/16/2025
 
 # Custom reports migration
 
-This articles describes how to backup, export, and restore custom reports, ensuring that your organization's data remains consistent and up-to-date. We address potential challenges and provide recommendations on managing solutions to help you make informed decisions based on your organization's needs. The process involves two main stages: 
+This article describes how to backup, export, and restore custom reports, ensuring that your organization's data remains consistent and up-to-date. We address potential challenges and provide recommendations on managing solutions to help you make informed decisions based on your organization's needs. The process involves two main stages: 
  - exporting custom reports from the source organization
  - importing them into the target organization
 
