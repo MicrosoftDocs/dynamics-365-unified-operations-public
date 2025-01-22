@@ -17,8 +17,8 @@ This article describes how to backup, export, and restore custom reports, ensuri
  - importing them into the target organization
 
 ## Terminology
-- Source organization - the organization from which you are backing up and exporting from.
-- Target organization - the organization that you will import the solution and reports to.
+- Source organization - the organization from which you're backing up and exporting from.
+- Target organization - the organization that you import the solution and reports to.
   
 ## Prerequisites
 Before you import or export reports, the following prerequisites must be in place:
@@ -38,7 +38,7 @@ To update the connection, follow these steps:
 To export custom reports from your source organization, follow these steps:
 1.	Go to [Power Apps](https://make.powerapps.com) Confirm you're in the source organization.
 2.	Create a new solution in the organization. Learn more in [Create solution guide](/power-apps/maker/data-platform/create-solution). 
-    - Remember what is **Name** field - this is the unique name of the solution.
+    - Remember the **Name** field.
     - Follow the first part of the guide where you create the solution.
 3.	Go to **Flows**.
 4.	Find the **Business performance analytics backup custom reports** flow, click **Run**.
@@ -63,18 +63,18 @@ To import custom reports to your target organization, follow these steps:
     - The report name has a 100 character limit. 
     - If the name remains unchanged after truncation, the report isn't imported.
 -	If you have backed up or imported reports with this feature, the following occurs when the **Business performance analytics restore custom reports** flow is run:
-    - The content of the reports are overwritten with the report that was backed up or imported last. 
+    - The content of the reports is overwritten with the report that was backed up or imported last. 
     - The name of the report isn't updated.
 -	If you import from the same source organization again, any backups taken of those reports in target organizations are overwritten by the values in the imported solution.
 -	Managed solutions (not recommended): If you choose to export and then import your backup solution as a managed solution the following applies: 
     - Any backups in the target organization layer their changes on top of the imported backup solution. 
     - To move your reports from the target organization to any other organization, import the managed backup solution first.
     - If you imported the managed solution, deleted it and then backed up the target organization, you won't be able to import from the same source organization again as it creates conflicts.
-    - The backed up version in the unmanaged solution overwrites what the managed solution contains.
+    - The backed-up version in the unmanaged solution overwrites what the managed solution contains.
     - We only recommend this if you don’t plan on backing up the target organization.
 -	Unmanaged solutions (recommended): If you choose to export and then import your backup solution as an unmanaged solution the following applies:
     - You won't be able to import custom reports from the same source organization using a managed solution.
-    - You'll be able to use the same solution to backup the imported reports.
+    - You are able to use the same solution to back up the imported reports.
     - You can back up new reports to the imported solution.
         - This is only recommended if you keep everything as a bundle.
     - You can export the backup solution again.
