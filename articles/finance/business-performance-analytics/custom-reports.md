@@ -4,6 +4,7 @@ description: Learn how to import, export, and restore custom reports in Business
 author: lizmota
 ms.author: lizmota
 ms.custom:
+ms.topic: how-to
 ms.reviewer: twheeloc 
 audience: Application User
 ms.date: 1/16/2025
@@ -36,7 +37,7 @@ To update the connection, follow these steps:
 ### Export
 To export custom reports from your source organization, follow these steps:
 1.	Go to [Power Apps](https://make.powerapps.com) Confirm you're in the source organization.
-2.	Create a new solution in the organization. Learn more in [Create solution guide](../../fin-ops-core/dev-itpro/power-apps/maker/data-platform/create-solution.md). 
+2.	Create a new solution in the organization. Learn more in [Create solution guide](../../../../power-apps/maker/data-platform/create-solution.md). 
     - Remember what is **Name** field - this is the unique name of the solution.
     - Follow the first part of the guide where you create the solution.
 3.	Go to **Flows**.
