@@ -2438,6 +2438,8 @@
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
                   - name: Configure printing for the Ecuador Sales book by establishment report
                     href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
+                  - name: Configure sales and purchase invoices for Ecuador
+                    href: localizations/iberoamerica/ltm-Configure-invoices-Ecuador.md
                   - name: Configure Simplified transactional appendix (ATS) printing
                     href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
                   - name: Post Ecuadorian refund invoice transactions
