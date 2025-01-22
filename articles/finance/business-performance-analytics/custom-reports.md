@@ -46,13 +46,13 @@ To export custom reports from your source organization, follow these steps:
     - Click **Run flow**.
 5.	The execution time depends on the number of reports in the system. The progress can be monitored in the **Business performance analytics move custom reports to solution** flow.
 6.	After it's complete, go to the **Solutions** page.
-7.	Export the solution from step 1. Learn more in [Export Solutions guide](../../fin-ops-core/dev-itpro/power-apps/maker/data-platform/export-solutions#export-from-power-apps.md).
+7.	Export the solution from step 1. Learn more in [Export Solutions guide](/power-apps/maker/data-platform/export-solutions#export-from-power-apps).
 8.	Select **Managed** or **Unmanaged** when exporting.
 
 ## Import
 To import custom reports to your target organization, follow these steps:
 1.	Go to [Power Apps](https://make.powerapps.com). Confirm you're in the target organization.
-2.	Import the solution that was exported from the source organization. Learn more in [Import Solution guide](../../fin-ops-core/dev-itpro/power-apps/maker/data-platform/import-update-export-solutions.md).
+2.	Import the solution that was exported from the source organization. Learn more in [Import Solution guide](/power-apps/maker/data-platform/import-update-export-solutions).
 3.	After the import is finished, go to **Flows**.
 4.	Find the **Business performance analytics restore custom reports** flow, click **Run**.
 5.	The run time depends on the number of reports in the system. Progress can be monitored in the **Business performance analytics custom report restore flow** flow.
