@@ -221,7 +221,21 @@ To view and edit Rebate management transactions by using the rebate workbench, f
 > [!NOTE]
 > If you're using a claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period.
 
-## Post rebates transactions
+## Consolidate vendor invoices for the same vendor in vendor rebate deals (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
+
+When vendor rebate deals are listed over multiple lines (such as when the output is split by financial dimension), it can become cumbersome to manage multiple entries and vendor accounts for the same vendor. To improve efficiency when generating vendor accounts payable invoices, you can consolidate multiple ledger lines for the same vendor into a single vendor line with several ledger lines.
+
+To be able to consolidate vendor invoices, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- The feature that is named *Consolidate vendor invoices for the same vendor in vendor rebate deals* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Post rebate transactions
 
 To post the value of a processed provision, rebate management amount, and write-off, you must run the posting process. The posting process marks the provision, rebate management, or write-off transactions as posted, and creates the target transaction. If you don't have to review the target transaction, these transactions can be set up so that they're automatically posted.
 

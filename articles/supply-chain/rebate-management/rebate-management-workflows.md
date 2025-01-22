@@ -49,7 +49,7 @@ In addition, rebate lines can be removed.
 
 ## Resubmit a workflow (preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.43 GA -->
 
 You might sometimes need to resubmit a workflow for a deal because of missing or incorrect data, an activated or updated rebate deal, modified rebate rules, or an extension of the original rebate period. To resubmit a workflow, you must first deactivate the active deal. Then, you can edit the deal as needed and activate it again.

@@ -23,6 +23,20 @@ To set up Rebate management posting profiles for customers and vendors, go to **
 
 The remaining sections of this article describe how to use the available fields when you create or edit a profile.
 
+## Create a profile that sends rebates to the original transaction account (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
+
+You can set up rebate management posting profiles that output rebates to the original transaction account from the related sales order or purchase order. To use this capability, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- The feature that is named *Enable posting of vendor rebate outputs to purchase order vendors* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+To use this functionality, select the appropriate option for the **Use account source** field of your posting profile, as described later in this article.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Posting profile header
 
 The following table describes the settings that are available in the header section of each Rebate management posting profile.
@@ -68,8 +82,8 @@ The following table describes the fields that are available on the **Posting** F
 | Credit account | Select the account that credit amounts are posted to when rebate provisions are made. This account will also be used as an offset account when the rebate is posted to credit the customer or debit the vendor. |
 | Name of journal<br>(In the **Provision** section) | Select the name of the journal to use to record the posted provision. |
 | Type | Select whether to post the rebate to a ledger account, or to a customer or vendor. If the **Payment type** field on the header is set to *Tax invoice customer deductions*, this field is set to *Customer/Vendor*. |
-| Use account source | <p>Select one of the following values:</p><ul><li>*Fixed account* – If you select this value, you must specify an account in the **Rebate account** field.</li><li>*Deal line account* – Use the customer or vendor account that is specified on the rebate line. You can select this value only for deals where the **Reconcile by** field is set to *Line* and deal lines where the **Account code** field is set to *Table*. It doesn't apply to customer royalty posting profiles or vendor rebates that are based on sales orders.</li></ul> |
-| Rebate account | The account that actual rebates expense will be posted to. |
+| Use account source | <p>Select one of the following values:</p><ul><li>*Fixed account* – If you select this value, you must specify an account in the **Rebate account** field.</li><li>*Deal line account* – Use the customer or vendor account that is specified on the rebate line. You can select this value only for deals where the **Reconcile by** field is set to *Line* and deal lines where the **Account code** field is set to *Table*. It doesn't apply to customer royalty posting profiles or vendor rebates that are based on sales orders.</li><li>*Sold-to customer* – Rebate output is sent to sold-to customer on the original sales order. This setting is only valid for profiles where **Module** is set to *Customer*.</li><li>*Purchase order vendor* – Rebate output is sent to the purchase-from vendor on the original purchase order. This setting is only valid for profiles where **Module** is set to *Vendor*.</li></ul> |
+| Rebate account | The account that actual rebates expense will be posted to when **Use account source** is set to *Fixed account*. |
 | Name of journal<br>(In the **Rebate management** field group) | Select the name of the journal to use to post a credit note for the rebate amount to the customer or vendor. This field is unavailable when the **Payment type** field on the header is set to *Tax invoice customer deductions*. For customer rebates, journal names of the *Daily* journal type will be available. For customer royalties and vendor rebates, journal names of the *Vendor invoice recording* journal type will be available. |
 | Item sales tax group | Specify whether the rebate is taxable. |
 | Name of journal<br>(In the **Write off** field group) | If the rebate that is posted doesn't equal the provision, the difference can be written off. Select the name of the journal to use to record the posted write-off. |
