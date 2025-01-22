@@ -12,7 +12,8 @@ ms.date: 1/16/2025
 
 # Custom reports migration
 
-This article describes how to backup, export, and restore custom reports, ensuring that your organization's data remains consistent and up-to-date. We address potential challenges and provide recommendations on managing solutions to help you make informed decisions based on your organization's needs. The process involves two main stages: 
+This article describes how to back up, export, and restore custom reports, ensuring that your organization's data remains consistent and up-to-date. 
+The process involves two main stages: 
  - exporting custom reports from the source organization
  - importing them into the target organization
 
@@ -38,13 +39,13 @@ To update the connection, follow these steps:
 To export custom reports from your source organization, follow these steps:
 1.	Go to [Power Apps](https://make.powerapps.com) Confirm you're in the source organization.
 2.	Create a new solution in the organization. Learn more in [Create solution guide](/power-apps/maker/data-platform/create-solution). 
-    - Remember the **Name** field.
+    - Remember the **Name** field value.
     - Follow the first part of the guide where you create the solution.
 3.	Go to **Flows**.
 4.	Find the **Business performance analytics backup custom reports** flow, click **Run**.
     - In the **Solution unique name**, enter the name from step 1.
     - Click **Run flow**.
-5.	The execution time depends on the number of reports in the system. The progress can be monitored in the **Business performance analytics move custom reports to solution** flow.
+5.	The execution time depends on the number of existing reports. The progress can be monitored in the **Business performance analytics move custom reports to solution** flow.
 6.	After it's complete, go to the **Solutions** page.
 7.	Export the solution from step 1. Learn more in [Export Solutions guide](/power-apps/maker/data-platform/export-solutions#export-from-power-apps).
 8.	Select **Managed** or **Unmanaged** when exporting.
