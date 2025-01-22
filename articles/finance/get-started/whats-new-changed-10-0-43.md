@@ -81,12 +81,12 @@ The following table lists the features that have been removed from Feature manag
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
 |Tax setup validation	|The related functionality is enabled out of the box.|	Tax|
-|Enable Globalization feature setup for Tax calculation service.	|The related functionality is enabled out of the box.	|Tax|
-|Tax in transfer order.|	The related functionality is enabled out of the box.|	Tax|
-|Deprecated obsolete code for shared Accounts receivable and Accounts payable invoicing localization.|	The related functionality is enabled out of the box.|	Accounts receivable|
-|Deprecated obsolete code for Accounts receivable.|	The related functionality is enabled out of the box.|	Accounts receivable|
-|(Mexico) Add fields for customs information on free text invoice lines.|	The related functionality is enabled out of the box.|	Accounts receivable|
-|Reset the workflow status for free text invoices from **Unrecoverable** to **Draft**.|	The related functionality is enabled out of the box.|	Accounts receivable|
+|Enable Globalization feature setup for Tax calculation service	|The related functionality is enabled out of the box.	|Tax|
+|Tax in transfer order|	The related functionality is enabled out of the box.|	Tax|
+|Deprecated obsolete code for shared Accounts receivable and Accounts payable invoicing localization|	The related functionality is enabled out of the box.|	Accounts receivable|
+|Deprecated obsolete code for Accounts receivable|	The related functionality is enabled out of the box.|	Accounts receivable|
+|(Mexico) Add fields for customs information on free text invoice lines|	The related functionality is enabled out of the box.|	Accounts receivable|
+|Reset the workflow status for free text invoices from **Unrecoverable** to **Draft**|	The related functionality is enabled out of the box.|	Accounts receivable|
 
 ## Additional resources
 
