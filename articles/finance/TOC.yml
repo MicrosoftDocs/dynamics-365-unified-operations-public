@@ -2436,6 +2436,8 @@
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
                   - name: Configure Ecuadorian purchase withholding book printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
+                  - name: Configure electronic invoice parameters for Ecuador
+                    href: localizations/iberoamerica/ltm-ecuador-conf-electronic-invoice.md
                   - name: Configure printing for the Ecuador Sales book by establishment report
                     href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
                   - name: Configure Simplified transactional appendix (ATS) printing
