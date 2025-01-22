@@ -11,9 +11,9 @@ ms.reviewer: twheeloc
 
 # Responsible AI FAQs for Dynamics 365 Finance
 
-[!INCLUDE [responsible-ai-intro](../../includes/responsible-ai-intro.md)]
+[!INCLUDE [responsible-ai-intro](../includes/responsible-ai-intro.md)]
 
-[!INCLUDE [responsible-ai-features](../../includes/responsible-ai-features.md)]
+[!INCLUDE [responsible-ai-features](../includes/responsible-ai-features.md)]
 
 - [Collections coordinator summary: FAQ](accounts-receivable/collections-coordinator-summary-faq.md)
 - [Customer page summary responsible AI FAQ](accounts-receivable/CustomerPageSummaryFAQ.md)

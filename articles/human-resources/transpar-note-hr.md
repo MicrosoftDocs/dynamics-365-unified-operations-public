@@ -11,9 +11,9 @@ ms.reviewer: twheeloc
 
 # Responsible AI FAQs for Dynamics 365 Human Resources
 
-[!INCLUDE [responsible-ai-intro](../../includes/responsible-ai-intro.md)]
+[!INCLUDE [responsible-ai-intro](../includes/responsible-ai-intro.md)]
 
-[!INCLUDE [responsible-ai-features](../../includes/responsible-ai-features.md)]
+[!INCLUDE [responsible-ai-features](../includes/responsible-ai-features.md)]
 
 - [Employee self service workspace summary](ess-workspace-summary.md)
 
