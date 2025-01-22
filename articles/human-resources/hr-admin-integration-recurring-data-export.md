@@ -115,8 +115,6 @@ The bulk of the exercise involves creating the logic app.
             }
             ```
 
-        ![Invoke an HTTP request action.](media/integration-logic-app-export-to-package-step.png)
-
     > [!TIP]
     > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.
 
