@@ -161,7 +161,7 @@ The following table shows the high-level train schedule. It includes a descripti
 |---|---|---|
 | Station 1 | January 13 to January 16, 2025 | NA |
 | Station 2 | January 20 to January 23, 2025 | February 1 to February 2, 2025 |
-| Station 3 | January 21 to January 25, 2025 | February 2 to February 3, 2025 |
+| Station 3 | January 21 to January 25, 2025 | February 1 to February 2, 2025 |
 | Station 4 | January 27 to January 30, 2024 | February 8 to February 9, 2025 |
 | Station 5 | February 3 to February 6, 2025 | February 15 to February 16, 2025 |
 | Station 6 | February 4 to February 7, 2025 | February 15 to February 16, 2025 |
@@ -178,7 +178,7 @@ The following table shows the high-level train schedule. It includes a descripti
 |---|---|---|
 | Station 1 | January 6 to January 9, 2024 | NA |
 | Station 2 | January 13 to January 16, 2024 | January 25 to January 26, 2025 |
-| Station 3 | January 14 to January 27, 2024 | January 26 to January 27, 2025 |
+| Station 3 | January 14 to January 27, 2024 | January 25 to January 26, 2025 |
 | Station 4 | January 20 to January 23, 2024 | February 1 to February 2, 2025 |
 | Station 5 | January 27 to January 30, 2025 | February 8 to February 9, 2025 |
 | Station 6 | January 28 to January 31, 2025 | February 8 to February 9, 2025 |
