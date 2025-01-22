@@ -94,7 +94,6 @@ The following health check charts are added to provide more insights into networ
 
 To access these charts, select the **View connection history report** link on the **About** tab.
 
-To get more insights from telemetry, you can look for the **connectivityManagerRegisterConnectivityStatus** event in headquarters.
 
 #### Network latency health check
 
