@@ -4,7 +4,7 @@ description: Access links to the release plans, major announcements, and documen
 author: jaredha
 ms.author: jaredha
 ms.topic: whats-new
-ms.date: 10/24/2024
+ms.date: 01/24/2025
 ms.custom: 
   - bap-template
   - evergreen
@@ -29,8 +29,8 @@ The January regular release of dual-write GAB solution 3.5.2.131 contains the fo
 
 | Feature | Description | Status |
 |---|---|---|
-|Changing the conditions for contact entity business rules to prevent trigger-conflicts|	Added validation for the company name while creating contacts to prevent trigger conflicts.|	Bug fix|
-|Support for offline functionality in **Postal address** entity main page	|Updated JavaScript logic to read records in offline mode and not only online mode.|	Bug fix|
+|Changed the conditions for contact entity business rules to prevent trigger conflicts|	Added validation for the company name while creating contacts to prevent trigger conflicts.|	Bug fix|
+|Support for offline functionality in **Postal address** entity main page	|Updated JavaScript logic to read records in offline mode.|	Bug fix|
 |Address swapping fix while changing from **Prospect** to **Customer**|	Resolved a race condition in a handler file that caused addresses to swap when changing the type from **Prospect** to **Customer**.|	Bug fix|
 |Add **Party menu** option for dual-write GAB|	Added party menu options in the Sales hub and Customer service hub, enabling navigation to party-related information alongside **Accounts** and **Contacts**.|	General availability|
 
@@ -43,8 +43,6 @@ The January regular release of dual-write GAB solution 3.5.2.131 contains the fo
 |Dynamics365GABDualWriteEntityMaps|	Yes|	3.5.2.161	|3.5.2.263|
 |Dynamics365GABPartyAnchor|	Yes|	3.5.2.161|	3.5.2.263|
 |Dynamics365GABPartyCommon|	Yes|	3.5.2.161|	3.5.2.263|
-
-
 
 ## October 2024
 
