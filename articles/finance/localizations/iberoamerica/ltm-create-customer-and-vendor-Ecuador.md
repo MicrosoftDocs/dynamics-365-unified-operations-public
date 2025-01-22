@@ -39,7 +39,7 @@ To create a record for a customer in Ecuador, follow these steps.
 1. In the **Type** field, select **Organization** for **Sociedad** or **Person** for **Persona natural**.
 1. In the **Customer group** field, select a local group.
 1. In the **Address** section, select **New**, and provide a name for the address.
-1. In the **Country/región** field, select **Ecuador**.
+1. In the **Country/region** field, select **Ecuador**.
 1. Enter the street and street number.
 1. Select a **state/province**, and mark the address as primary.
 1. To create a record for the company phone number, in the **Contact information** section, select **New**.
@@ -60,16 +60,16 @@ To create a record for a customer in Ecuador, follow these steps.
 
 ## Create a record for a vendor in Ecuador
 
-To create a record for a customer in Ecuador, follow these steps.
+To create a record for a vendor in Ecuador, follow these steps.
 
-1. Go to **Accounts payable > Vendors > All vendors**, and select **New**.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
 1. In the **Type** field, select **Organization** for **Sociedad** or **Person** for **Persona natural**.
-1. In the **Vendor group field**, select a local group.
+1. In the **Vendor group** field, select a local group.
 1. In the **Address** section, select **New**, and provide a name for the address.
-1. In the **Country/región** field, select **Ecuador**.
+1. In the **Country/region** field, select **Ecuador**.
 1. Enter the street and street number.
-1. Select a state/province, and mark the address as primary.
-1. In the **Contact information** section, select **New** to create a record for the company phone number.
+1. Select a **state/province**, and mark the address as primary.
+1. To create a record for the company phone number, in the **Contact information** section, select **New**.
 1. In the **Sales demographic** section, set the currency to **USD** (Legal currency).
 1. Configure the terms of payments and the invoice account.
 1. Set the delivery terms, mode of delivery, and delivery reason.
@@ -78,7 +78,7 @@ To create a record for a customer in Ecuador, follow these steps.
    - In the **Vendor set** field, select a set that contains the document classes to use with the vendor.
    - In the **Taxpayer type** field, select a taxpayer that represents the organization. 
    - In the **Based in country/región** field, select **Ecuador**.
-   - In the **Country document type** field, select a tax ID type. For example, select **RUC**.
+   - In the **Country document type** field, select a tax ID type. For example, select **RUC** (Unique Taxpayer Registry).
    - Complete the **Country document number** field with the vendor's tax ID number.
 
 > [!NOTE]
