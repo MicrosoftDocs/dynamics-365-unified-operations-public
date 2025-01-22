@@ -49,7 +49,7 @@ Some features won't be available for deployment in GCC, or they won't be availab
 
 ### Are Dynamics 365 Finance and Dynamics 365 Supply Chain Management supported in GCC-High?
 
-No. Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported only in GCC.
+Yes. Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported in both GCC and GCC High.
 
 ### Can I use public Azure DevOps with Finance and Supply Chain Management in GCC?
 
@@ -57,7 +57,7 @@ Yes, you can use public Azure DevOps services if you don't have requirements for
 
 ### Can I deploy a cloud-hosted environment Tier-1 development environment on an Azure commercial subscription?
 
-No. In [LCS for GCC](https://gov.lcs.microsoftdynamics.us), you must use an Azure Government subscription to deploy a cloud-hosted environment.
+No. In [LCS for GCC](https://gov.lcs.microsoftdynamics.us) and [LCS for GCC High](https://high.lcs.microsoftdynamics.us), you must use an Azure Government subscription to deploy a cloud-hosted environment.
 
 ### What can I do if I need a package from the Shared asset library, but it isn't available in LCS for GCC?
 
