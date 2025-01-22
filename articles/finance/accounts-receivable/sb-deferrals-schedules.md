@@ -4,7 +4,7 @@ description: Learn about deferral schedules in revenue and expense deferrals, in
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/29/2024
+ms.date: 01/22/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -84,6 +84,9 @@ To put a deferral schedule on hold, follow these steps.
 2. On the **Place hold** page, select whether you want to transfer the balance from the deferral account or the hold account.
 3. If you selected to transfer the balance, select the journal name in the **Journal name** field, select the hold account in the **On hold account** field, and specify the transaction date in the **Transaction date** field.
 4. Select **OK**.
+
+>[!NOTE]
+> The **Deferral balance** report doesn't display the billing schedules that are currently on hold. To view the report, go to **Revenue and expense deferral** > **Inquiries and reports** > **Deferral balance**. 
 
 ## Remove a hold from a deferral schedule
 
