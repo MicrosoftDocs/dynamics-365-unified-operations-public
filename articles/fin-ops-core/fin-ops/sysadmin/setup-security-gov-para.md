@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to set up various parameters that are related to the security governance module. These parameters are useful for licensing reports and user aging reports.
+This article explains how to set up various parameters that are related to the security governance feature. These parameters are useful for licensing reports and user aging reports.
 
 ## Basic license cost
 
@@ -30,7 +30,7 @@ This article explains how to set up various parameters that are related to the s
 1. In the **Price** field, enter the manual price of the license.
 1. Repeat steps 3 through 5 to set up the manual price for other user licenses.
 1. To exclude user accounts from the license price calculation on the **Licenses usage summary** report, in the **Exclude** section, select **Group**.
-1. To exclude all system administrators from the license price calculation on the **Licenses usage summary** report, set the **System administrator** option to **Yes** or **No**.
+1. To exclude all system administrators from the license price calculation on the **Licenses usage summary** report, set the **System administrator** option to **Yes**.
 
 ## General
 
