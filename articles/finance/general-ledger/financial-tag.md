@@ -4,7 +4,7 @@ description: Learn about financial tags, including outlines on setup, the proces
 author: leizi2015
 ms.author: kweekley
 ms.topic: article
-ms.date: 11/07/2023
+ms.date: 01/23/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
