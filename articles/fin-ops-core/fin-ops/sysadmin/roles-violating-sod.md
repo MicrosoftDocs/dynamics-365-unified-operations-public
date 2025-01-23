@@ -1,6 +1,6 @@
---- 
+---
 title: Roles violating segregation of duties
-description: Learn about how to identify segregation of duties violations. 
+description: Learn how to identify violations of the segregation of duties.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -11,7 +11,7 @@ audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2025-01-20
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Roles violating segregation of duties
@@ -19,12 +19,17 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include[banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This view displays roles that violate **Segregation of duties** rules and how many such violations exist for each role.
-1. To view segregation of duties rule violations, go to **Segregation of duties rules** table.
-2. Click a specific rule name.
-3. You are able to see the specific **Segregation of role rule** that the selected role breaches.
+The **Roles violating segregation of duties** view shows all roles that violate segregation of duties rules. It also shows how many violations of this type exist for each role.
+
+## View violations for a selected role
+
+To view violations of segregation of duties rules, follow these steps.
+
+1. Go to the **Segregation of duties rules** grid.
+2. Select the name of a specific rule. The view shows the specific segregation of duties rule that the selected role violates.
 
 ## View all violations
-To view a list of all violations, follow these steps:
-1. Go to **System administration** > **Security** > **Security governance** > **Role violating segregation of duties** > **List**.
-2. This report utilizes the defined **Segregation of duties** rules. All duties are monitored against these rules. If a duty is assigned to a role that violates any of these rules, it's displayed on this report.
+
+To view a report that lists all violations, go to **System administration** \> **Security** \> **Security governance** \> **Role violating segregation of duties** \> **List**.
+
+The report uses the defined segregation of duties rules. All duties are monitored against these rules. If a duty is assigned to a role that violates any of these rules, it appears on this report.
