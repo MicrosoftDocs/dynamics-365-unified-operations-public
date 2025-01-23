@@ -1,6 +1,6 @@
 ---
 title: Privileged user management
-description: This article describes how to use privileged user management to control privileged user accounts.
+description: Learn how you can use privileged user management to control privileged user accounts.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -19,41 +19,45 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Privileged user management allows system administrators to schedule a session for selected user accounts and records all user interactions within Dynamics 365 finance and operations during the session. This feature is useful when some elevated privileged accounts are utilized for auditing purposes and ensures users aren't performing any unauthorized activities within the system.
+Privileged user management lets system administrators schedule a session for selected user accounts. It also records all user interactions in Dynamics 365 finance and operations apps during that session. This feature is useful when some elevated privileged accounts are used for auditing purposes. It helps ensure that users aren't performing any unauthorized activities in the system.
 
-You can also enable or disable the account once the session starts. As soon as the session ends, the account goes back to its original state.
+System administrators can also enable or disable a user account after the session begins. As soon as the session ends, the account returns to its original state.
 
+## Session approval and processing
 
-## Session approval and process
-A new session is initiated by a system administrator.
+New privileged user sessions are initiated by a system administrator.
 
-1. Click **New**. The request has a **Draft** status and the system administrator can approve it.
-2. Anyone with **System administrator** role can approve or edit the request.
-3. To approve the request, in the **Change status** field and select **Approve**. The request can be picked up by the background process or the system administrator can process it manually. The system administrator can schedule the session for the user account. The system administrator can also enable or disable the account after the session starts. As soon as the session ends, the account goes back to its original state.
+1. On the **Privileged user management** page, select **New** to create a request for a new session. The request has a status of **Draft**.
+1. Anyone who has the **System administrator** role can approve or edit the session request. To approve the request, in the **Change status** field, select **Approve**.
+1. The background process picks up the session request for processing. Alternatively, a system administrator can manually process it. The system administrator can schedule the session for the user account. They can also enable or disable the account after the session begins. As soon as the session ends, the account returns to its original state.
 
-[!NOTE]
-> Maximum duration for a **Privileged user session** is 24 hours.
+> [!NOTE]
+> The maximum duration for a privileged user session is 24 hours.
 
+## Audit logs
 
-## Audit log
+Use the **Audit logs** to view all actions that are performed on a given session request. The grid captures the following details:
 
-Use the **Audit logs** to see all actions performed on a given session request. This table captures:
- - change in status
- - the date and time stamp of the action
- - who made the change
- - if the system administrator or the batch process approved 
+- The change in status
+- The date and timestamp of the action
+- who made the change
+- Whether a system administrator or the batch process approved the request
 
 ## User log
 
-**User log** captures all the sessions that selected user account has been logged in Dynamics 365 finance and operations during the active privileged user session. This helps track the user activities and the time spent on each session. 
+The **User log** captures all the sessions where the selected user account signs in to finance and operations apps during the active privileged user session. This log helps track the user's activities and the time that is spent on each session.
 
 > [!NOTE]
-> The **User log** captures the logging sessions which were performed during an active privileged user session. Anything outside of the session isn't captured even if the same user account is active in the system earlier and has been logging in. 
-
+> The **User log** captures only the logging sessions that are performed during the active privileged user session. Nothing outside that session is captured, even if the same user account was active in the system earlier and was signing in.
 
 ## Recordings
-When a **System Administrator** is schedules a privileged user session for an account, they're notified that the user account interactions in Dynamics 365 finance and operations is recorded using the Task recorder tool. Task recorder captures the user action type, for example, a button click, value entry, or navigation, and any data that is related to the user action. For the end users assigned to a privileged user session get a consent when they log into Dynamics 365 finance and operations. When users agree and continue using the application, their session is recorded. The recordings are created for each session. The recordings are stored on **Privileged user management** page under the **Recordings** tab. System administrators can download each recording by selecting it and click **Download**. This helps when there are any audits or compliance reviews for the user interactions performed by user.
 
-Learn more in [Task recorder](../../dev-itpro/user-interface/task-recorder.md).
+When a system administrator schedules a privileged user session for a user account, they are notified that the Task recorder tool will be used to record the account's interactions in finance and operations apps. Task recorder captures the type of user action (for example, button selection, value entry, or navigation). It also captures any data that is related to that action.
+
+When system users who are assigned to a privileged user session sign in to finance and operations apps, they must consent to having their interactions recorded. If they consent and proceed to use the apps, the session is recorded.
+
+A separate recording is created for each session. The recordings are stored on the **Recordings** tab of the **Privileged user management** page. System administrators can download each recording by selecting it and then selecting **Download**. This capability is helpful when audits or compliance reviews must be done for a user's interactions.
+
+Learn more in [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
