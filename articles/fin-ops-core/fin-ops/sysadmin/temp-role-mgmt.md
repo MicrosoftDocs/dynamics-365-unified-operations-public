@@ -40,8 +40,8 @@ The process for temporary role sessions has these steps.
 
 When you create a new temporary role session, set the type to **Merge** or **Replace**.
 
-- **Merge** – Add the temporary roles to the existing roles of the user account.
-- **Replace** – Replace the existing roles of the user account with the temporary roles.
+- **Merge** – Add the temporary roles to the existing roles of the user account. Once the temporary roles session is over, user will retain their original roles and added temporary roles will be revoked.  
+- **Replace** – Replace the existing roles of the user account with the temporary roles. Once the temporary roles session is over, user will be re-assigned with their original roles and temporarily assigned roles will be revoked. 
 
 For both session types, the user account returns to its original roles when the session ends.
 
