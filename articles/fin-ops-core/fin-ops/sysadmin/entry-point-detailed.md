@@ -26,7 +26,7 @@ The security entry points under the process hierarchy are critical for defining 
 
 ## Explode entry point
 
-System administrators can expand the permissions of a given role by including all the other entry points that are related to the menu item. The menu item that is associated with the entry point is retrieved by using its name and type. The system then fetches all the other entry points that are associated with that menu item. If the menu item exists, the access rights and labels are set for the entry point. If the record type is a menu item, additional properties are set, such as user licenses and manual permissions.
+System administrators can expand the permissions of a given role by including all the other entry points that are related to the menu item. The menu item that is associated with the entry point is retrieved by using its name and type. The system then fetches all the other entry points that are associated with that menu item. If the menu item exists, the access rights and labels are set for the entry point. If the record type is a menu item, other properties are set, such as user licenses and manual permissions.
 
 > [!IMPORTANT]
 > This function adds all neighboring entry points from the selected entry point. We recommend that you use it with workspaces.
