@@ -102,7 +102,7 @@ To enable purchase orders to be retrieved during the purchase order year-end pro
 3. In the query dialog box that appears, define criteria for the purchase orders that you want to include in the year-end processing. Criteria include the date, date range, vendor account, purchase order type, purchase order balance, and financial dimensions. When you're finished, select **OK**.
 
 > [!NOTE]
-> If the **Enable non-retriavable purchase orders form for purchase order year-end process** feature is enabled, users can validate the reason why specific purchase orders aren't available for Purchase order year end processing on the **Non-retriavable purchase orders** page.
+> If the **Enable non-retrievable purchase orders form for purchase order year-end process** feature is enabled, users can validate the reason why specific purchase orders aren't available for Purchase order year end processing on the **Non-retrievable purchase orders** page.
 
 The following conditions are checked and should be met for the order to be available to be processed during purchase order year-end process:
  - Purchase order status should be **Confirmed** but not fully invoiced. No draft invoices should exist.
