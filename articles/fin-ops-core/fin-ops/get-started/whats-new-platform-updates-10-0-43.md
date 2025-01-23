@@ -23,11 +23,11 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
-This section will contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| System Administration | User security governance | User security governance is a set of advanced features that provide useful tools to System Administrators for creating their security architecture to help closely aligned with their business processes, role management, licenses auditing, enhanced role audit trails, security config versioning, privileged users' management, temporary role assignments etc. Some useful reports around license usage for cost optimization, users' activity and licenses consumption, segregation of duties violations etc. are included. For more information, see [Security governance](https://go.microsoft.com/fwlink/?linkid=2285853) | Feature Management|
+| System Administration | User security governance | User security governance includes advanced features that provide useful tools for System Administrators. These tools help in creating a security architecture that aligns closely with business processes. They also assist with role management, license auditing, enhanced role audit trails, and security configuration versioning. Additionally, they manage privileged users and temporary role assignments. Some useful reports around license usage for cost optimization, users' activity and licenses consumption, segregation of duties violations, etc. are included. For more information, see [Security governance](https://go.microsoft.com/fwlink/?linkid=2285853) | Feature Management|
 
 ## Feature enhancements included in this release
 
