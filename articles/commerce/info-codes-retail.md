@@ -32,7 +32,7 @@ Info codes provide a way for you to capture data at a point-of-sale (POS) regist
 
 In Commerce, you can create groups of info codes. Info code groups add flexibility by enabling you to define fewer info codes and then use them in more versatile ways. You can use info code groups in the following ways:
 
-- Define fewer info codes and easily re-use them. Info codes that are included in info code groups have no predefined dependencies on other info codes. You can include the same info code in multiple info code groups and then use prioritization to present the same info codes in the order that makes sense in any particular situation.
+- Define fewer info codes and easily reuse them. Info codes that are included in info code groups have no predefined dependencies on other info codes. You can include the same info code in multiple info code groups and then use prioritization to present the same info codes in the order that makes sense in any particular situation.
 - Link info codes to other info codes or info code groups to gather information about a product or transaction without having to define a separate info code or linked info code for each scenario.
 
 ## Info code examples
@@ -53,7 +53,7 @@ To import an info code, follow these steps.
 1. Select ***Data entities menu item**.
 1. Add the **RetailInfocodeTranslationEntity** and **RetailInfocodeEntity** entities. 
 
-   :::image type="content" source="media/adding-info-code-entities.png" alt-text="Image with and example of adding entities.":::
+   :::image type="content" source="media/adding-info-code-entities.png" alt-text="Screenshot with and example of adding the RetailInfocodeTranslationEntity and RetailInfocodeEntity entities.":::
    
 1. Go back to **System administration \> Workspaces \> Data management**.
 1. Select the **Import** menu item.
@@ -62,12 +62,12 @@ To import an info code, follow these steps.
 1. Add the **RetailInfocodeEntity** and corresponding file where you want to import from.
 1. Add the **RetailInfocodeTranslationEntity** and corresponding file where you want to import from. The form should look similar to the following screenshot.
 
-   :::image type="content" source="media/import-info-codes.png" alt-text="Image with import info codes."::: 
+   :::image type="content" source="media/import-info-codes.png" alt-text="Screenshot with an example of import info codes."::: 
 
 1. Once all files are added, select the **Import** button.
-1. Check the final result form to confirm successful import.
+1. Check the final result form to confirm the status is **Succeeded**.
 
-   :::image type="content" source="media/imported.png" alt-text="Image with imported."::: 
+   :::image type="content" source="media/imported.png" alt-text="Screenshot showing the status is Succeeded."::: 
 
 1. Go to the **Info Codes** form to see the imported info codes.
 
