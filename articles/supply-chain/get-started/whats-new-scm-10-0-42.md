@@ -70,7 +70,7 @@ We have recently added or significantly updated the following help articles. The
 
 | Feature area | New or updated articles |
 |---|---|
-| Master planning | [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) now describes *(Preview) Near real-time CTP* and *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs* functionality. |
+| Master planning | [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) now describes *Near real-time CTP* and *Improve Planning Optimization performance by merging and queueing plan regeneration jobs* functionality. |
 
 ## Related information
 
