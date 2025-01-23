@@ -127,8 +127,6 @@ The **Upgrade** menu includes an **Apply updates** option. You can select this o
 
 **We highly recommend** that you apply the latest platform update as your first step. If you're upgrading to version 8.1, we recommend that you get the latest binary update package, such as 8.1.3. This package will also include the latest platform update. In this way, you help guarantee that you have the latest hotfixes that are available and help reduce errors later in the process.
 
-<img src="media/UpgradeAutomation/06_ApplyUpdates.png" width="700px" alt="Apply updates option on the Upgrade menu" />
-
 When you apply a new package to the environment, the process is the same as the process for regular environment servicing. When package application is completed, you must use the **Sign Off** button for that package before you can move on or apply another package.
 
 If package deployment fails, you can use the **Rollback** button to reverse it. Note that this button is **not** the same as the **Rollback** option on the **Upgrade** menu.
@@ -149,8 +147,6 @@ After all packages are applied to your upgrade-in-progress sandbox environment, 
 > This stage begins the downtime for your original sandbox environment.
 
 On the **Upgrade** menu, select **Data upgrade**.
-
-<img src="media/UpgradeAutomation/08_DataUpgrade.png" width="700px" alt="Data upgrade option on the Upgrade menu" />
 
 Your original sandbox environment is turned off, and the database connection is swapped so that your new environment is connected to the original database. This process can take up to one hour.
 

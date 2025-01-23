@@ -21,7 +21,7 @@ ms.dyn365.ops.version: Platform update 1
 This article describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to cloud environments. 
 
 > [!IMPORTANT]
-> Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
+> Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services are stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
 All customer-managed and Microsoft-managed environments deployed through Lifecycle Services are supported. For more information about self-service environments, see [Update an environment](updateenvironment-newinfrastructure.md).
@@ -42,7 +42,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
 - **Application and Platform Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft. This is available from the **All binary updates** tile from LCS.
-- **Platform update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform depend on. This is a package released by Microsoft. This is available from the **Platform binary updates** tile from LCS.
+- **Platform update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform depends on. This is a package released by Microsoft. This is available from the **Platform binary updates** tile from LCS.
 - **Commerce deployable package** – A combination of various packages that are generated after the Commerce code is combined.
 - **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Commerce deployable package. The packages are merged in the Asset library for the project in LCS.
 > [!NOTE] 
@@ -50,11 +50,11 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 >
 > For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 >
-> If your environment is on an application version 8.1 and later, then the **Platform Update package** does not apply to your environment. Starting with 8.1 and later releases, **Application and Platform Binary update package** is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page, clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
+> If your environment is on an application version 8.1 and later, then the **Platform Update package** doesn't apply to your environment. Starting with 8.1 and later releases, **Application and Platform Binary update package** applies since application and platform are combined into a single cumulative package and is released by Microsoft. Note that you won't apply granular X++ hotfixes and will get all application and platform updates together. On the **Environment details** page, clicking on **View detailed version information** won't have details on the granular hotfixes or KBs applied as there's no way to apply them. 
 
 ## Prerequisite steps
 
-- **Make sure that the package that should be applied is valid.** When a package is uploaded to the Asset library, it isn't analyzed. If you select the package, the package status appears in the right pane as **Not Validated**. A package must pass validation before it can be applied in an environment by using the following procedures. The status of the package will be updated in the Asset library to indicate whether the package is valid. We require validation to help ensure that production environments aren't affected by packages that don't meet the guidelines.
+- **Make sure that the package that should be applied is valid** - When a package is uploaded to the Asset library, it isn't analyzed. If you select the package, the package status appears in the right pane as **Not Validated**. A package must pass validation before it can be applied in an environment by using the following procedures. The status of the package is updated in the Asset library to indicate whether the package is valid. We require validation to help ensure that production environments aren't affected by packages that don't meet the guidelines.
 
     There are three types of validations:
 
@@ -66,7 +66,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
 - **Make sure that the application binary update package is applied to your dev/build environment AFTER it is applied to your sandbox and production environment** - If the application binary package is applied on your dev/build environment and this raises the platform build version to be higher than your target sandbox or production environment, you will be blocked from applying any AOT packages that are produced from this dev/build environment. To apply AOT packages produced from a dev/build environment, your dev/build instance must be equal to or lower than your target environments.
 
-## Apply a package to a non-production environment by using LCS
+## Apply a package to a nonproduction environment by using LCS
 
 > [!NOTE]
 > For self-service type environments, see [Update an environment](updateenvironment-newinfrastructure.md).
@@ -99,7 +99,7 @@ In a production environment, customers can schedule a downtime for when they wan
 6. At the scheduled downtime, package deployment will start.     
 7. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application. Additionally, a progress indicator shows the number of steps that have been run, out of the total number of steps that are available.
 8. After the deployment is successfully completed, the **Servicing status** field is set to **Completed**.
-9. If package application isn't successfully completed, Microsoft will investigate the issue. The **Servicing status** field will indicate that package application has failed. The environment will be rolled back to a good state. 
+9. If package application isn't successfully completed, Microsoft investigates the issue. The **Servicing status** field indicates that package application has failed. The environment is rolled back to a good state. 
 
 ## Troubleshoot package deployment failures
 
@@ -119,9 +119,7 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 
 [![Example of a deployable package.](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
-**Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
-
-[![Example of a deployment runbook.](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
+**Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps 1 at a time and in the correct order.
 
 **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
