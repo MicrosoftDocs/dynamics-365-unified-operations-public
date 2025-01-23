@@ -1863,12 +1863,12 @@ items:
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
         - name: Security governance (preview)
           items:
-            - name: Set up a process hierarchy, roles, and privileges
-              href: ../fin-ops-core/fin-ops/sysadmin/setup-process-role-hierarchy.md        
             - name: Set up security categories
               href: ../fin-ops-core/fin-ops/sysadmin/security-category.md
             - name: Set up security governance parameters
               href: ../fin-ops-core/fin-ops/sysadmin/setup-security-gov-para.md 
+            - name: Set up a process hierarchy, roles, and privileges
+              href: ../fin-ops-core/fin-ops/sysadmin/setup-process-role-hierarchy.md        
             - name: Security tasks under process hierarchy
               href: ../fin-ops-core/fin-ops/sysadmin/usg-security-tasks-detailed.md          
             - name: Security entry points under process hierarchy
