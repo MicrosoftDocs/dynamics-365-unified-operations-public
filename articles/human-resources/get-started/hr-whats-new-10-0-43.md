@@ -30,7 +30,7 @@ originally published.
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 |Disable the assignment of duplicate identification numbers|	Enabling this feature ensures that an employee can no longer have duplicate identification numbers assigned to them, reducing inconsistencies.|	On by default|
-|(Preview) Recruiting enhancements|	This is a preview feature. By enabling this feature, you are confirming that you have read and understand the preview feature terms and conditions. This feature allows you to create recruiting request directly through positions.	| |
+|(Preview) Recruiting enhancements|	This is a preview feature. This feature allows you to create recruiting request directly through positions.	| |
 
 ## Feature enhancements included in this release
 
@@ -39,11 +39,11 @@ originally published.
 
 | Module or feature area | Feature name | More information | 
 |---|---|---|---|
-| Benefits management| My Benefit plans |	Employees will be able to view their benefit plans from the ESS.|
-|    Benefits management    |Compare benefit plans|	Employees will be able to view their benefit plans of previous years while checking out the benefit plans. |
-|    Benefits management   |Benefits check out screen enhancement 	|Benefits check out screen has been enhanced. User will be able to allow users to validate the details and check out the benefit plans seamlessly.  |
+| Benefits management| My benefit plan |	Employees can view their benefit plans from the Employee self service workspace.|
+|    Benefits management    |Compare benefit plans|	Employees can view their benefit plans of previous years while checking out the benefit plans. |
+|    Benefits management   |Benefits check out screen enhancement 	|Benefits check out screen has been enhanced. Users can validate the details and check out the benefit plans seamlessly.  |
 | Performance management | HTML Editior for all comments for Performance management 	|   |
-|   Benefits management   |Streamlined employee entry|	Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.45 release. This has been extended from the earlier 10.0.43 version to 10.0.45 version.|
+|   Benefits management   |Streamlined employee entry|	Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.45 release. This has been extended from Dynamics 365 Human Reources version 10.0.43.|
 
 
 ## Features turned on by default in this release
