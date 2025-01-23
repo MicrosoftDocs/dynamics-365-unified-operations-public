@@ -54,6 +54,6 @@ Use the **Audit logs** to see all actions performed on a given session request. 
 ## Recordings
 When a **System Administrator** is schedules a privileged user session for an account, they're notified that the user account interactions in Dynamics 365 finance and operations is recorded using the Task recorder tool. Task recorder captures the user action type, for example, a button click, value entry, or navigation, and any data that is related to the user action. For the end users assigned to a privileged user session get a consent when they log into Dynamics 365 finance and operations. When users agree and continue using the application, their session is recorded. The recordings are created for each session. The recordings are stored on **Privileged user management** page under the **Recordings** tab. System administrators can download each recording by selecting it and click **Download**. This helps when there are any audits or compliance reviews for the user interactions performed by user.
 
-Learn more in [Task recorder](../dev-itpro/user-interface/task-recorder.md).
+Learn more in [Task recorder](../../dev-itpro/user-interface/task-recorder.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
