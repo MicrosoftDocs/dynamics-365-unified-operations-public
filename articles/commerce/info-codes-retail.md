@@ -2,9 +2,8 @@
 title: Info codes and info code groups
 description: This article provides an overview on info codes and info code groups and how to use them in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/28/2024
+ms.date: 01/23/2025
 ms.topic: overview
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -48,19 +47,29 @@ When you sell certain products, for example mobile devices, you always want to c
 
 ## Import info code
 
-1. Go to **System administration \> Workspaces \> Data management**
-2. Click the Data entities menu item
-3. Add the RetailInfocodeTranslationEntity and RetailInfocodeEntity entities ![adding entities.](./media/adding-info-code-entities.png "adding entities")
-4. Go back to **System administration \> Workspaces \> Data management**
-5. Click the Import menu item
-6. Fill in the Group name field
-7. Click the "Add file" button
-8. Add the RetailInfocodeEntity and corresponding file where you want to import from
-9. Add the RetailInfocodeTranslationEntity and corresponding file where you want to import from
-10. The form should look like this ![import info codes.](./media/import-info-codes.png "import info codes")
-11. Once all files are added, click the Import button at the top.
-12. Check the final result form to confirm successful import. ![imported.](./media/imported.png "imported")
-13. Go to Info Codes form to see the imported info codes
+To import an info code, follow these steps.
+
+1. Go to **System administration \> Workspaces \> Data management**.
+1. Select ***Data entities menu item**.
+1. Add the **RetailInfocodeTranslationEntity** and **RetailInfocodeEntity** entities. 
+
+   :::image type="content" source="media/adding-info-code-entities.png" alt-text="Image with and example of adding entities.":::
+   
+1. Go back to **System administration \> Workspaces \> Data management**.
+1. Select the **Import** menu item.
+1. Fill in the **Group name** field.
+1. Select the **Add file** button.
+1. Add the **RetailInfocodeEntity** and corresponding file where you want to import from.
+1. Add the **RetailInfocodeTranslationEntity** and corresponding file where you want to import from. The form should look similar to the following screenshot.
+
+   :::image type="content" source="media/import-info-codes.png" alt-text="Image with import info codes."::: 
+
+1. Once all files are added, select the **Import** button.
+1. Check the final result form to confirm successful import.
+
+   :::image type="content" source="media/imported.png" alt-text="Image with imported."::: 
+
+1. Go to the **Info Codes** form to see the imported info codes.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
