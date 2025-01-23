@@ -4,12 +4,10 @@ description: Learn about creating Open in Office experiences for Excel and Word,
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 03/18/2022
+ms.date: 01/23/2025
 ms.reviewer: twheeloc
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
 ---
@@ -57,9 +55,7 @@ When an entity has the same root datasource (table) as a form, it will be added 
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image shows the Visual Studio view of the AutoReport field group for the FMCustomerEntity.
 
 ## What fields will be shown when an entity is the target of a lookup?
-When a relationship is defined between two entities, if the identifier for one entity is shown on the other entity, then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. The Excel Add-in with an enumeration lookup is shown below.
-
-[![Excel Add-in with an enumeration lookup.](./media/off101d.png)](./media/off101d.png)
+When a relationship is defined between two entities, if the identifier for one entity is shown on the other entity, then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. 
 
 ## What should be done to make an entity ready for use in Excel?
 Define the AutoReport and AutoLookup field groups and test them using the Excel App design experience.
@@ -113,16 +109,10 @@ The Excel Add-in is injected into a workbook when a generated Open in Excel expe
 -   The **View related** form will navigate to the form relating to the currently selected entity to more easily review the effect of data changes made in Excel.
 -   The **Get entity record count** button will show the record count for the currently selected entity. The Excel Add-in will handle large sets of data within the memory limits of a user's machine. By default, the Excel Add-in has a data governor that restricts the data size to one million cells but, depending on the performance abilities of the user's machine, this can usually be extended to around 2.5 million cells.
 
-The following image shows the **Excel workbook designer** form.
-
-[![Excel workbook designer form.](./media/off101e.png)](./media/off101e.png) 
-
 After obtaining a workbook containing the Excel Add-in, additional datasources can be added using the **Design** button. Currently, datasources cannot be removed. 
 
 ## When will a template show as an Open in Excel option?
-When a template listed in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form (DocuTemplate) has ShowInOpenInOfficeMenu set to Yes and has the same root datasource (table) as the current form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. The following image shows the **Document templates** form.
-
-[![Document templates form.](./media/off101g.png)](./media/off101g.png)
+When a template listed in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form (DocuTemplate) has ShowInOpenInOfficeMenu set to Yes and has the same root datasource (table) as the current form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. 
 
 ## Will a filter be added to the template?
 In the **Document Templates** form, the standard filter for “current record” can be turned on and off. If the filter is on, when the template is invoked as an Open in Excel option, then a filter for the current record will be added to the workbook. The filter will be the key fields and their values.
@@ -137,11 +127,7 @@ When adding a template into the **Document Templates** form, it is added for tha
 The LedgerJournalLineEntryTemplateRegistration and FMTemplateRegistrations classes are good examples of template registrations defined in code. The LedgerJournalLineEntryTemplate and FMTemplateCustomersWithLocations resources are the corresponding templates stored in metadata as resources. When a template has a registration class, it will be loaded when the **Reload system templates** button is clicked in the **Document Templates** form.
 
 ## How do templates get loaded into a fresh deployment?
-To load system defined templates, click the **Reload system templates** button in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form, as shown below.
-
-[![Reload system templates button.](./media/off101h.png)](./media/off101h.png) 
-
-In the future, we will do the equivalent of clicking that button during deployment.
+To load system defined templates, click the **Reload system templates** button in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form.
 
 ## How do I decide if I should create a template?
 A template is an artifact that needs to be maintained and versioned. If you can avoid defining a template without sacrificing much from the user experience, then you probably should use a template. Create a template if:
@@ -223,10 +209,6 @@ class OpenLinesInExcel
 }
 ```
 
-The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
-
-[![Highlighted Open lines in Excel button.](./media/off101i.png)](./media/off101i.png)
-
 To programmatically add generated and template Open in Excel options, Open in Excel options can be added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. An example of when you would use this capability is on forms without a datasource, potentially containing only a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
 
 ```xpp
@@ -298,13 +280,7 @@ _settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(
 }
 ```
 
-After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. The following image shows the Excel Add-in with the **Filter** button highlighted.
-
-[![Highlighted Filter button.](./media/off101j.png)](./media/off101j.png) 
-
-The following image shows the Excel Add-in with the **Filter** dialog box opened.
-
-[![Filter dialog box opened.](./media/off101k.png)](./media/off101k.png)
+After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. 
 
 ## How do I enable relationship lookups in Excel?
 To enable relationship lookups in the Excel Data Connector, you must ensure that the following metadata is set.
@@ -407,15 +383,9 @@ To resolve this, change the binding information in the affected template so that
 1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for example replace FMCustomerEntity with FleetCustomer.
 2.  Find the affected template.
 3.  Change the file extension on the template from .xlsx to .zip.
-
-    [![Rename dialog box.](./media/off101m.png)](./media/off101m.png)
-    
 4.  The file to be changed will be one of the webextension\*.xml files in the xlwebextensions directory, such as 2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml.
 5.  Open the file to ensure that you have the correct location.
 6.  Find the DataEntity.Name,  such as FMCustomerEntity.
-
-    [![Find DataEntity.Name.](./media/off101n.png)](./media/off101n.png)
-    
 7.  Extract the zip file.
 8.  Open the webextension xml file.
 9.  Replace the DataEntity.Name with the corresponding DataEntity.PublicEntityName.
