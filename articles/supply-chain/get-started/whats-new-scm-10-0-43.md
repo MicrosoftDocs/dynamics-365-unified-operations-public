@@ -27,7 +27,7 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Copilot and AI innovation | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences (preview)](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md) | Feature management:<br>*(Preview) Enable user feedback for Copilot and related experiences* |
-| Inventory and logistics | [Enhance vendor rebate management](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/enhance-vendor-rebate-management-reconciliation-resubmission-workflows) | [Rebate management deal workflows](../rebate-management/rebate-management-workflows.md) | Feature management:<ul><li>*Consolidate vendor invoices for the same vendor in vendor rebate deals*</li><li>*Enable posting of vendor rebate outputs to purchase order vendors*</li><li>*Enable resubmission of workflows for vendor rebate deals*</li></ul> |
+| Inventory and logistics | [Enhance vendor rebate management](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/enhance-vendor-rebate-management-reconciliation-resubmission-workflows) | *Coming soon* | Feature management:<ul><li>*Consolidate vendor invoices for the same vendor in vendor rebate deals*</li><li>*Enable posting of vendor rebate outputs to purchase order vendors*</li><li>*Enable resubmission of workflows for vendor rebate deals*</li></ul> |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
