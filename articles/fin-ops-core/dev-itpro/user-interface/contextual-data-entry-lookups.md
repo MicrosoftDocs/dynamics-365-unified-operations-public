@@ -32,11 +32,7 @@ This user experience is not optimal and is being addressed by data entry efficie
 ## Contextual lookup forms
 Just like keyboard data entry, all system-generated lookup forms are also now contextual, meaning that filtering and sorting occur in the context of the data the user has entered. Using the create a Sales Order scenario as an example, the user will see the lookup shown below if an ID is entered. 
 
-[![Customer account lookup form opened in the context of ID.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png) 
-
 If a NAME is entered, then the user will see the following lookup. Notice how the NAME column is moved first in the Grid, and how the lookup is sorted and filtered upon when the user’s data is in the context of NAME. 
-
-![Customer account lookup form opened in the context of NAME.](./media/howtocontextuallookups-2.png)
 
 ## Contextual data entry implementation details
 ### Behavior
