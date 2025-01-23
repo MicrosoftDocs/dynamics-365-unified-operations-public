@@ -30,7 +30,7 @@ This article explains how to set up various parameters that are related to the s
 1. In the **Price** field, enter the manual price of the license.
 1. Repeat steps 3 through 5 to set up the manual price for other user licenses.
 1. To exclude user accounts from the license price calculation on the **Licenses usage summary** report, in the **Exclude** section, select **Group**.
-1. To exclude all system administrators from the license price calculation on the **Licenses usage summary** report, set the **System administrator** option to **Yes**.
+1. To exclude all system administrators from the license price calculation on the **Licenses usage summary** report, set the **System administrator** option to **No**.
 
 ## General
 
