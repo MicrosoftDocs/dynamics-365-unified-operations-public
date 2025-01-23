@@ -3,7 +3,9 @@ title: Open in Excel experiences FAQ
 description: Learn about creating Open in Office experiences for Excel and Word, including learning about what are open in Excel experiences.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 01/23/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
