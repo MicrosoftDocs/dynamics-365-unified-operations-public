@@ -1,6 +1,6 @@
---- 
-title: Security entry points under process hierarchy
-description: Learn about various functionalities related to process hierarchy entry points under user security governance. 
+---
+title: Security entry points under the process hierarchy
+description: Learn about various functionality that is related to entry points under the process hierarchy in user security governance.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -11,28 +11,35 @@ audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2025-01-20
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Security entry points under process hierarchy
+# Security entry points under the process hierarchy
 
 [!include[banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The security entry points under the process hierarchy are critical for defining and designing the access level and privileges for any given role. Some of the key functionalities around entry points that are supported under security governance are:
- - Expload entry point
- - Update permissions
+The security entry points under the process hierarchy are critical for defining and designing the access level and privileges for any given role. Here are some of the key entry point–related functions that are supported in user security governance:
+
+- Explode entry point
+- Update permissions
 
 ## Explode entry point
-System administrators can expand permissions of a given role by including all the other entry points related to the menu item. The menu item associated with the entry point is retrieved using its name and type and then fetches all the other entry points associated with the menu item. If the menu item exists, the access rights and labels are set for the entry point. If the record type is a menu item, additional properties are set, like user licenses and manual permissions. 
-> [!IMPORTANT] 
-> This function adds all neighborhood entry points from selected entry point and is recommended to use with workspaces.
+
+System administrators can expand the permissions of a given role by including all the other entry points that are related to the menu item. The menu item that is associated with the entry point is retrieved by using its name and type. The system then fetches all the other entry points that are associated with that menu item. If the menu item exists, the access rights and labels are set for the entry point. If the record type is a menu item, additional properties are set, such as user licenses and manual permissions.
+
+> [!IMPORTANT]
+> This function adds all neighboring entry points from the selected entry point. We recommend that you use it with workspaces.
 
 ## Update permissions
-System administrators can update the permissions of a given role by changing the permission levels for each entry point. One can reconfigure the **Unselect**, **Grant**, or **Deny** permissions for each entry point at the following levels:
- - **Read**
- - **Create**
- - **Update**
- - **Correct**
- - **Invoke**
- - **Delete** 
+
+System administrators can update the permissions of a given role by changing the permission levels for each entry point.
+
+For each entry point, the **Unselect**, **Grant**, or **Deny** permissions can be reconfigured at the following levels:
+
+- Read
+- Create
+- Update
+- Correct
+- Invoke
+- Delete
