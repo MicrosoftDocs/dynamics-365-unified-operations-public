@@ -3,10 +3,11 @@ title: Action controls
 description: Actions are an essential component of any enterprise resource planning (ERP) system, and are triggered by mouse click, keyboard, or touch.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 02/08/2023
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 01/23/2025
 ms.reviewer: twheeloc
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -84,10 +85,7 @@ In general, the **Button Style** property defines how a button is shown in the u
 | Link            | [![Example of Link button style.](./media/13_control.png)](./media/13_control.png) | A button that has the appearance of a hyperlink         |
 
 ## Standard Action Panes
-The standard Action Pane is the primary location for page-level actions. It consists of both system-defined actions (actions that aren't explicitly modeled but are automatically added by the framework) and developer-defined actions (actions that are explicitly modeled in either Action Pane tabs or Button Groups). Developers can promote the most frequently used actions directly to the standard Action Pane by modeling Button Groups directly under the Action Pane. However, Action Pane tabs can still be used to group actions and provide access via a flyout. The following illustration shows a standard Action Pane that includes system-defined buttons, two promoted developer-defined actions, and a set of Action Pane tabs. 
-[![Illustration of standard Action Pane.](./media/1_control.png)](./media/1_control.png) 
-The following illustration shows the flyout that appears to show additional commands when an Action Pane tab is clicked. 
-[![Illustration showing Action Pane flyout.](./media/control_2.png)](./media/control_2.png)
+The standard Action Pane is the primary location for page-level actions. It consists of both system-defined actions (actions that aren't explicitly modeled but are automatically added by the framework) and developer-defined actions (actions that are explicitly modeled in either Action Pane tabs or Button Groups). Developers can promote the most frequently used actions directly to the standard Action Pane by modeling Button Groups directly under the Action Pane. However, Action Pane tabs can still be used to group actions and provide access via a flyout. 
 
 ### System-defined buttons
 
@@ -113,16 +111,11 @@ When the Action Pane is pinned open, an Action Pane tab is expanded and pushes t
 
 When the Action Pane is not pinned open, clicking on an Action Pane tab opens it as a flyout on top of the form content. The lower right corner of the Action Pane tab flyout has a pushpin button that can be clicked to pin the Action Pane open. 
 
-![Action Pane pinning.](./media/actionPanePinning.png)
-
 ### Overflow behavior in the Action Pane
 Standard Action Panes include an overflow feature that adds a responsive element to forms and eliminates the need for a horizontal scrollbar in the Action Pane. When the browser width is insufficient to show the entire Action Pane contents, an overflow menu automatically appears in the Action Pane and includes any buttons and Action Pane tabs that did not fit given the browser width.  Items are added one-by-one starting with the rightmost actions from the Action Pane. Note the system actions on the right side of the Action Pane do not participate in the overflow behavior.  
 
-![Action Pane overflow.](./media/actionPaneOverflow.png)
-
 ## Toolbars
-Toolbars (previously called Action Pane strips) are Actions Panes that have the **Style** property set to **Strip**. They are used for actions that have a specific context and aren't page-level actions. They are primarily used for actions that are specific to a FastTab, tab, or grid. The actions in a Strip-styled Action Pane are shown horizontally in a Toolbar. The following illustration shows a Toolbar that has two buttons for adding and removing lines from this **TransactionDetails** form. 
-[![ActionPaneToolbar.](./media/actionpanetoolbar.png)](./media/actionpanetoolbar.png)
+Toolbars (previously called Action Pane strips) are Actions Panes that have the **Style** property set to **Strip**. They are used for actions that have a specific context and aren't page-level actions. They are primarily used for actions that are specific to a FastTab, tab, or grid. The actions in a Strip-styled Action Pane are shown horizontally in a Toolbar. 
 
 ### Overflow behavior in Toolbars
 Toolbars have the same overflow feature as standard Action Panes.  See the section above for more details. 
