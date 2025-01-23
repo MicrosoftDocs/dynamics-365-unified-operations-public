@@ -27,7 +27,7 @@ Only users who have the **System administrator** role can initiate new temporary
 
 The process for temporary role sessions has these steps.
 
-1. Select **New** to create a request for a new session. The request has a status of **Draft**. Wait for a system administrator to approve the request. System administrators can approve or edit session requests.
+1. On the **Temporary role management** page, select **New** to create a request for a new session. The request has a status of **Draft**. Wait for a system administrator to approve the request. System administrators can approve or edit session requests.
 1. To approve the session request, in the **Change status** field, select **Planned**.
 1. The background process picks up the session request for processing. Alternatively, a system administrator can manually process it by selecting **Process**.
 1. When the session begins, the selected user account obtains temporary roles in finance and operations apps.
