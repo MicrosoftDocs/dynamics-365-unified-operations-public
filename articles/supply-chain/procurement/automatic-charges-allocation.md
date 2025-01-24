@@ -3,11 +3,12 @@ title: Automatic application of charges
 description: Learn how the charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 11/22/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Automatic application of charges
@@ -16,7 +17,7 @@ ms.search.form:
 
 Based on the customer or vendor that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
 
-Automatic charges (auto charges) are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, group of customers, items or group of items. You can also define auto charges that apply to all vendors, customers, or items.
+Automatic charges (auto charges) are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, group of customers, items, or group of items. You can also define auto charges that apply to all vendors, customers, or items.
 
 ## Set up parameters
 
@@ -59,7 +60,7 @@ To apply charges, you must first define charges codes.
 
 1. The **Posting** FastTab includes **Debit** and **Credit** sections. Set the following fields, depending on the ledger that you want to post the charges to:
 
-    - **Type** – Select the type of account that you're posting to (*Ledger*, *Customer*, or *Item*).If you selected Ledger account as the debit type or credit type, specify a posting type in the Posting fields, and specify the main account in the Account fields.
+    - **Type** – Select the type of account that you're posting to (*Ledger*, *Customer*, or *Item*). If you selected *Ledger account* as the debit type or credit type, specify a posting type in the **Posting** field, and specify the main account in the **Account** field.
     - **Posting** – Select the type of postings to create (such as *Broker fee* or *Customer settlement*).
     - **Account** – Select the account to post the charge for.
 
@@ -126,21 +127,21 @@ After your charges codes are set up, follow these steps to define the auto charg
     - *All* – Assign charges to all items.
 
 1. In the **Item relation** field, select a specific item if you set the **Item code** field to *Table*. If you set the **Item code** field to *Group*, select an item charges group.
-1. **For sales orders only:** In the **Mode of delivery code** field, select one of the following values to specify the scope of delivery modes that will be affected:
+1. *For sales orders only:* In the **Mode of delivery code** field, select one of the following values to specify the scope of delivery modes that will be affected:
 
     - *Table* – Assign charges to a specific mode of delivery.
     - *Group* – Assign charges to a mode of delivery group.
     - *All* – Assign charges to all modes of delivery.
 
-1. **For sales orders only:** In the **Mode of delivery relation** field, select a specific mode of delivery if you set the **Mode of delivery code** field to *Table*. If you set the **Mode of delivery code** field to *Group*, select a mode of delivery group.
+1. *For sales orders only:* In the **Mode of delivery relation** field, select a specific mode of delivery if you set the **Mode of delivery code** field to *Table*. If you set the **Mode of delivery code** field to *Group*, select a mode of delivery group.
 1. On the **Lines** FastTab, define the charges and the charges rates that will be used when the current auto charge is applied. You can use the toolbar on this FastTab to add as many lines as you require. For each line, set the following fields:
 
-    - **Currency** – Select the currency that should be used to calculate the charge. This field is applicable only to the *Header* and *Line* level for sales quotation and sales order charges.
+    - **Currency** – Select the currency that should be used to calculate the charge. This field is applicable to the *Header* and *Line* levels for sales quotation and sales order charges.
     - **Charges code** – Select the code for the charge.
     - **Category** – Select one of the following values:
 
         - *Fixed* – The charge is entered as a fixed amount on the line. Fixed charges can be used on charges both in the order header and on the order lines.
-        - *Pcs* – The charge is based on unit with no unit of measure conversion. Pcs in this case represents any unit of measure and not the specific Pcs unit of measure. These charges can be used only on order lines. They will appear when you calculate the order total. 
+        - *Pcs* – The charge is based on unit with no unit of measure conversion. Pcs in this case represents any unit of measure and not the specific Pcs unit of measure. These charges can be used only on order lines. They'll appear when you calculate the order total.
         - *Percent* – The charge is entered as a percentage on the line. Percentage charges can be used on charges both in the order header and on the order lines.
         - *Intercompany percent* – The charge is entered as a percentage on the line for intercompany orders. Intercompany percentage charges can be used only on order lines.
         - *External* – A third-party service that's associated with one or more shipping carriers will calculate the charge.
@@ -244,7 +245,7 @@ This example shows that if you allocate a header auto charge to a line and then 
 1. Open the **Header** tab of the purchase order.
 1. Expand the **Delivery** FastTab and select a new value for the **Mode of delivery** field.
 1. On the Action Pane, select **Save**.
-1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. 
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
 
     Note that the original header auto charge is now reapplied to the order, even though the charge is also listed at the line level.
 
