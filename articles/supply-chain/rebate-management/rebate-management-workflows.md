@@ -52,7 +52,7 @@ In addition, rebate lines can be removed.
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.43 GA -->
 
-You might sometimes need to resubmit a workflow for a deal because of missing or incorrect data, an activated or updated rebate deal, modified rebate rules, or an extension of the original rebate period. To resubmit a workflow, you must first deactivate the active deal. Then, you can edit the deal as needed and activate it again.
+You might sometimes need to resubmit a workflow for a deal because of missing or incorrect data, an activated or updated rebate deal, modified rebate rules, or an extension of the original rebate period. To resubmit a workflow, you must first deactivate the active deal, then edit the deal as needed, and finally activate it again.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -68,11 +68,12 @@ To be able to deactivate and resubmit workflows for vendor rebate deals, your sy
 To deactivate and resubmit a workflow for a vendor rebate deal, follow these steps:
 
 1. Go to **Rebate management \> Rebate management deals \> All rebate management deals**.
-1. Find the deal that you want to deactivate, edit, and resubmit (it must already be active). Select the deal and then select **Deactivate**.
+1. Find and select the deal that you want to deactivate, edit, and resubmit (it must already be active).
+1. On the Action Pane, open the **Rebate management deals** tab and select **Deactivate**.
 1. Edit the deal as needed. For example, you might make any of the following changes:
    - Change the due date for one or more lines.
-   - Add a new period on the **Rebate line** tab.
-   - Add new deal lines under **Rebate management**.
+   - Add one or more new deal lines.
+   - Add a new rebate period for an existing deal line.
 
 1. When you're done editing the deal, on the Action Pane, select **Workflow \> Submit**.
 
