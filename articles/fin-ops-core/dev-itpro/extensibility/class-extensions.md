@@ -18,9 +18,11 @@ ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the new class extension model in X++.
+This article describes the class extension model in X++.
 
-Because over-layering is a very intrusive feature, we recommend that you not use it. The alternative to over-layering is extension. Extension lets you extend existing artifacts in a new model. Extensions are easier to maintain, but the amount of extension that can be done during customization is limited. There are rich ways to extend the metadata. For example, you can add new fields to a table. This article describes how X++ code can be extended, so that you can add methods and state to artifacts that are defined in other models without recompiling those models. A similar code extension mechanism already exists for X++ and is modeled after the corresponding feature in C\#. Under this mechanism, a class can be designated as an extension class through a naming convention and by hosting public static methods. In the existing feature, the type of the first argument that is passed to the extension method is the type to extend. What this article describes is the next step in that direction, which offers a more capable and natural extension story. In object-oriented programming, the term *extend* has a well-defined meaning. If we say, "class B extends class A," we mean that B inherits from A, that A is B's parent class, and the usual object-oriented rules are implied. In fact, this term is even used in the X++ syntax that is used in class declarations to express this relationship. At the same time, we use the term *extension* to talk about metadata that has contributions from several models. To avoid further overloading the term *extend*, we will instead use the term *class augmentation* to designate the relationship between a class A in a base model and a class B in a model that depends on it, where B provides additional functionality to class A in the context of that model. Nevertheless, we will also continue to use the term *extension class*, because it's prevalent.
+Extension is a term used for features that let you extend existing artifacts in a new model. There are rich ways to extend the both X++ code and metadata. This article describes how X++ code can be extended, so that you can add methods and state to artifacts that are defined in other models without recompiling those models. 
+
+A similar code extension mechanism already exists for X++ and is modeled after the corresponding feature in C\#. This extension mechanism allows a class to be designated as an extension class through a naming convention and by hosting public static methods. These classes are a programming utility concept that allows you to add methods to existing types, namely the type of the first parameter to the extension method. In this way, the method is "extending" the new class with a method that it was not born with. This article describes the next step in that direction, which offers a more capable and natural extension story. In object-oriented programming, the term *extend* has a well-defined meaning. When we say, "class B extends class A," we mean that B inherits from A, that A is B's parent class, and the usual object-oriented rules are implied. In fact, this term is even used in the X++ syntax that is used in class declarations to express this relationship. At the same time, we use the term *extension* to talk about metadata that has contributions from several models. To avoid further overloading the term *extend*, we will instead use the term *class augmentation* to designate the relationship between a class A in a base model and a class B in a model that depends on it, where B provides additional functionality to class A in the context of that model. Nevertheless, we will also continue to use the term *extension class*, because it is so prevalent.
 
 ## The effective class concept
 It's useful to have a term for a class that consists of the public members of the augmented artifact and all the public members of all the class extensions that augment that artifact. This class is called the effective class in a given model. The following illustration shows an artifact, **MyArtifact**, that is defined in a base model, **MyModel**, and two dependent models that have extension classes for **MyArtifact**.
@@ -47,7 +49,7 @@ class MyClass
 We can add new methods and state to **MyClass** by introducing an extension class in the extension model (**MyExtensionModel**) that builds on top of (that is, has a dependency on) **MyModel**.
 
 ## Extension class declarations
-Extension classes are final classes that are adorned with the **ExtensionOf** attribute and that also have a name that has the **\_Extension** suffix. (This restriction on the naming might be removed later.) The name of the extension class is otherwise unimportant. The class augments the artifact that is specified in the parameter of the **ExtensionOf** attribute, as shown in the following example.
+Extension classes are final classes that are adorned with the **ExtensionOf** attribute and that also have a name that has the **\_Extension** suffix. The name of the extension class is otherwise unimportant, but be consistent with your best practices. The class augments the artifact that is specified in the parameter of the **ExtensionOf** attribute, as shown in the following example.
 
 ```xpp
 [ExtensionOf(classStr(MyClass))]
@@ -59,10 +61,10 @@ final class MyClass_Extension
 }
 ```
 
-Because the classes are instantiated by the runtime system, it's not meaningful to derive from the extension class. Therefore, the extension class must be marked as **final**. The extension class **MyClass_Extension** does not extend the designated class (**MyClass**). Therefore, you cannot override methods from **MyClass** in **MyClass_Extension**. The **classStr** compile-time function must be used to designate the augmented class, and it serves two purposes:
+Because the classes are instantiated by the runtime system, it's not meaningful to derive from the extension class. Therefore, the extension class must be marked as **final**. The extension class **MyClass_Extension** does not extend the designated class (**MyClass**). Therefore, you cannot override methods from **MyClass** in **MyClass_Extension**. As you see in the example above, the **classStr** compile-time function must be used to designate the augmented class, and it serves two purposes:
 
 -   It produces a compilation error if the **MyClass** class doesn't exist.
--   The compile-time function that is used tells the compiler what kind of artifact is augmented. Artifact names by themselves don't uniquely identify a given artifact to augment. For example, forms can have the same names as tables, classes, and enums.
+-   The compile-time function informs the compiler about what kind of artifact is augmented. Artifact names by themselves don't uniquely identify a given artifact to augment. For example, forms can have the same names as tables, classes, and enums.
 
 Any number of extension classes can augment a given artifact in a particular model. Extension classes are never referenced directly by the programmer, only by the runtime system.
 
@@ -70,18 +72,18 @@ Any number of extension classes can augment a given artifact in a particular mod
 Any class that inherits from an augmented class also inherits the effective class. In other words, the classes that inherit from a class that has extensions inherit the methods that are defined in the extension classes.
 
 ## Constructors
-X++ supports both instance constructors and static constructors.
+Pleae find below a description of restrictions and requirements for constructors in extension classes.
 
 ### Instance constructors
 
-The instance constructor is the method that is named **new**. Constructors are useful for initializing the state of the extension objects. The instance constructor that is defined in an extension class can't have parameters. Instances of the extension classes are created, and the runtime system calls their constructors as required by the usage scenario. These constructors are never explicitly called by your code.  It's guaranteed that the constructor that is provided in an extension class will be called once before any instance method or the instance state on the extension class is accessed. However, if no such references are made, the constructor isn't called.
+The instance constructor is the method that is named **new**. Constructors are useful for initializing the state of the extension objects. The instance constructor that is defined in an extension class can't have parameters. Instances of the extension classes are instantiated, and the runtime system calls their constructors as required by the usage scenario. These constructors are never explicitly called by your code.  It's guaranteed that the constructor that is provided in an extension class will be called once before any instance method or the instance state on the extension class is accessed. However, if no such references are made, the constructor isn't called.
 
 ### Static constructors
 
 Static constructors are the parameter-less static methods that are named **typenew**. Static constructors can be defined on extension classes. It's guaranteed that the runtime system will call the constructor exactly once before the first reference to the extension type. You can't assume any particular order of invocation for static construction among a set of extensions. This means that you should be careful about referencing static data from other classes in static constructors.
 
 ## Methods
-The public methods that are defined in extension classes provide additional functionality to the augmented class in the context of the model where the extension class is defined. Only public methods are exposed in this way. You can define private methods to help implement the public methods, but those private methods aren't part of the effective class. Because extension classes are final, methods should not be marked as **protected**.
+The public methods that are defined in extension classes provide additional functionality to the augmented class in the context of the model where the extension class is defined. Only public methods are exposed in this way. You can define private methods to help implement the public methods, but those private methods aren't part of the effective class. Because extension classes are final, methods should not be marked as **protected** since no derived classes can be created to override the method.
 
 ### Instance methods
 
@@ -104,10 +106,10 @@ The public instance method (**ExtensionMethod**) is defined in the extension cla
 
 ```xpp
 MyClass c = new MyClass();
-print c.ExtensionMethod(32);
+print c.ExtensionMethod(32); // Call the extension method from MyClass_Extension on the instance of the class
 ```
 
-Note that the instance method that is defined in the extension class is used as an instance method on the augmented artifact. An extension method can access public and protected members only from the artifact that it augments. This behavior is by design. No artifact should be able to interact directly with state and methods that are explicitly hidden through the **private**, or **internal** keywords. Otherwise, direct interaction with explicitly hidden state and methods could cause malfunction by invalidating key implementation assumptions in those artifacts. Methods and statements in the method body can use the **this** keyword. In this context, the type of **this** is the effective class of the augmented artifact.
+As shown, the instance method that is defined in the extension class is used as an instance method on the augmented artifact. An extension method can access public and protected members only from the artifact that it augments. This behavior is by design. No artifact should be able to interact directly with state and methods that are explicitly hidden through the **private**, or **internal** keywords. Otherwise, direct interaction with explicitly hidden state and methods could cause malfunction by invalidating key implementation assumptions in those artifacts. Methods and statements in the method body can use the **this** keyword. In this context, the type of **this** is the effective class of the augmented artifact.
 
 ### Static methods
 
