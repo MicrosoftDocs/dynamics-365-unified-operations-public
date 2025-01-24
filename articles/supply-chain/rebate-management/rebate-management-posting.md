@@ -33,7 +33,7 @@ You can configure rebate management posting profiles to output rebates to the or
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
 - The feature that is named *Enable posting of vendor rebate outputs to purchase order vendors* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-To use this functionality, select the appropriate option for the **Use account source** field of your posting profile, as described later in this article.
+To set up this functionality, select the appropriate option for the **Use account source** field of your posting profile, as described later in this article.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
