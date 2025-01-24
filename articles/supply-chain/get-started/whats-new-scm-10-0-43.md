@@ -122,7 +122,7 @@ The following table lists the features that became mandatory in version 10.0.43.
 | Inventory and warehouse management | *\[Russia\] Post storno financial inventory transactions according to the correction flag in the financial voucher for Sales orders* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.23 (January 2022)](whats-new-scm-10-0-23.md) |
 | Inventory and warehouse management | *Cascade transfer order header date change to lines* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)](whats-new-scm-10-0-35.md) |
 | Inventory and warehouse management | *Correct item that is not visible in released products form manually* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
-| Inventory and warehouse management | *Using unit of measure and unit quantity in inventory journals.* |  |
+| Inventory and warehouse management | *Using unit of measure and unit quantity in inventory journals.* | N/A |
 | Master planning | *Average daily usage for distribution scenarios* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)](whats-new-scm-10-0-36.md) |
 | Master planning | *Show batch job status as Error when applicable for Planning Optimization* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Master planning | *Use rounding for unit of measures in Planning Optimization* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
