@@ -38,7 +38,7 @@ To reset the data mart, in Report designer, on the **Tools** menu, select **Rese
 
 ##### Integration attempts
 
-The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You know that the data mart must be reset if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
+The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. In this situation, the data won't be reported on.
 
 ##### Data status
 
