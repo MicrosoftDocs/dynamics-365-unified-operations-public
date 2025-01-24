@@ -42,9 +42,9 @@ Annie then creates a case, associates the telephone call with the case, and crea
 
 The following scenarios show how Fabrikam Human Resources generalists in different locations can use case management when they address issues for employees.
 
-### In Great Britain
+### In England
 
-Christine, the Human Resources generalist for the Great Britain division of Fabrikam, receives a telephone call from Peter, a Fabrikam employee. Christine is informed that nine weeks ago, immediately after the birth of Peter's son, Peter changed the number of dependents on the tax withholdings. Peter wants to know why the changes haven't become effective. Christine creates a case for Peter and reviews Peter's tax information. Christine learns that, although Peter entered new dependent information, a start date for the new tax withholdings wasn't selected. Christine informs Peter to select a start date and resubmit the changes. Peter replies to Christine's message informing that Peter has now selected a start date and resubmitted the changes. Christine attaches the email message from Peter to the case record, verifies that the correct changes were made and submitted, and closes the case.
+Christine, the Human Resources generalist for the English division of Fabrikam, receives a telephone call from Peter, a Fabrikam employee. Christine is informed that nine weeks ago, immediately after the birth of Peter's son, Peter changed the number of dependents on the tax withholdings. Peter wants to know why the changes haven't become effective. Christine creates a case for Peter and reviews Peter's tax information. Christine learns that, although Peter entered new dependent information, a start date for the new tax withholdings wasn't selected. Christine informs Peter to select a start date and resubmit the changes. Peter replies to Christine's message informing that Peter has now selected a start date and resubmitted the changes. Christine attaches the email message from Peter to the case record, verifies that the correct changes were made and submitted, and closes the case.
 
 ### In the United States
 

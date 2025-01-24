@@ -44,7 +44,7 @@ For more information, see [Download ER configurations from the Global repository
 4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). You also use it for corrections. Companies in Sweden use one-digit transaction codes.
 6. In the **Credit note** field, select the transaction code for the return of goods.
-7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**, so that the country appears on your Intrastat report.
+7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**, so that the country/region appears on your Intrastat report.
 
 ## Set up the product parameters for the Intrastat declaration
 
@@ -63,7 +63,7 @@ For more information, see [Download ER configurations from the Global repository
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
+On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 

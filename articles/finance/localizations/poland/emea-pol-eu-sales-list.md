@@ -102,7 +102,7 @@ For more information, see [Import Electronic reporting (ER) configurations from 
 6. On the **Country/region properties** tab, select **New**, and specify the following information:
     - In the **Country/region** column, select **POL**.
     - In the **Country/region type** column, select **Domestic**. For multiple VAT registrations, in the **Country/region type** column, select **EU**
-7. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
+7. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries or regions on the **EU sales list** page.
 
 ### Set up a sales tax authority
 
