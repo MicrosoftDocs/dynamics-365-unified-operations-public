@@ -68,7 +68,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in version 10.0.39. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
+The following table lists the features that are turned on by default in version 10.0.39. Most features that have been turned on can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
