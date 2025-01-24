@@ -61,7 +61,7 @@ This section contains a table that lists the enhancements that are included in t
 | Tax calculation | Cash slip journal | Tax calculation supports **Cash slip journal** when the journal business process is enabled on the **Tax calculation parameters** page. | Parameter |
 | Tax calculation | Nondeductible amount on posted sales tax | The tax-specific exchange rate functionality now supports the 100% nondeductible scenario. | On by default |
 | Tax (India) | PAN Based accumulation for multiple vendors | This enhancement enables accumulation that is based on permanent account number (PAN) for cases where multiple vendors have the same PAN. | On by default |
-| Regulatory reporting | VAT declaration for Latvia | New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration model**. For more information, see [VAT declaration for Latvia](../localizations/latvia/emea-lva-vat-declaration-latvia).
+| Regulatory reporting | VAT declaration for Latvia | New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration model**. For more information, see [VAT declaration for Latvia](../localizations/latvia/emea-lva-vat-declaration-latvia.md).
 
 ## Features turned on by default in this release
 
