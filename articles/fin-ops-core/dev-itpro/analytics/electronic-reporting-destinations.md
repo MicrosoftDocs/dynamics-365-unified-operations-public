@@ -22,23 +22,6 @@ You can configure a destination for each Electronic reporting (ER) format config
 
 ER format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, XLSX, DOCX, or PDF) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets you save or open the file. The same behavior also occurs when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
 
-## Availability and general prerequisites
-
-The functionality for ER destinations isn't available in Microsoft Dynamics AX 7.0 (February 2016). Therefore, you must install Microsoft Dynamics 365 for Operations version 1611 (November 2016) or later to use the following destination types:
-
-- [Email](er-destination-type-email.md)
-- [Archive](er-destination-type-archive.md)
-- [File](er-destination-type-file.md)
-- [Screen](er-destination-type-screen.md)
-- [Power BI](er-destination-type-powerbi.md)
-
-Alternatively, you can install one of the following prerequisites. However, be aware that these alternatives provide a more limited ER destination experience.
-
-- Microsoft Dynamics AX application version 7.0.1 (May 2016)
-- [Electronic reporting destination management application hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
-
-There is also a [Print](er-destination-type-print.md) destination type. To use it, you must install Microsoft Dynamics 365 Finance version 10.0.9 (April 2020).
-
 ## Overview
 
 You can set up destinations only for ER configurations that have been [imported](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) into the current Finance instance, and for the formats that are available on the **Electronic reporting configurations** page. The functionality for ER destination management is available at **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**.
@@ -47,7 +30,7 @@ You can set up destinations only for ER configurations that have been [imported]
 
 The default behavior for an ER format configuration depends on the execution type that you specify when an ER format starts.
 
-In the **Intrastat Report** dialog box, on the **Run in the background** FastTab, if you set the **Batch processing** option to **No**, an ER format is run immediately in interactive mode. When this execution is successfully completed, a generated outbound document is made available for download.
+For example, in the **Intrastat Report** dialog box, on the **Run in the background** FastTab, if you set the **Batch processing** option to **No**, an ER format is run immediately in interactive mode. When this execution is successfully completed, a generated outbound document is made available for download.
 
 If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](../sysadmin/batch-processing-overview.md) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
 
@@ -78,15 +61,13 @@ After you create a reference, you can create a file destination for each **Folde
 
 [![Creating a file destination.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
-Next, in the **Destination settings** dialog box, you can enable and disable individual destinations for the file destination. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it.
+Next, in the **Destination settings** dialog box, you can enable and disable individual destinations for the file destination. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it. 
 
-In versions of Finance **before version 10.0.9**, you can create **one file destination** for each output component of the same format, such as a folder or a file that is selected in the **File Name** field. However, in **version 10.0.9 and later**, you can create **multiple file destinations** for each output component of the same format.
-
-For example, you can use this capability to configure file destinations for a file component that is used to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive, and another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) the Excel file to PDF format and send the PDF file by email.
+You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that is used to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive, and another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) the Excel file to PDF format and send the PDF file by email.
 
 [![Configuring multiple destinations for a single format element.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
-When you run an ER format, all destinations that were configured for components of the format are always run. In addition, in Finance **version 10.0.17 and later**, the ER destinations functionality has been improved and now lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
+When you run an ER format, all destinations that were configured for components of the format are always run. In addition, the ER destinations functionality lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
 
 ## Destination types
 
@@ -148,18 +129,7 @@ If you clear the **Stop processing on failure** checkbox for the **CoveringLette
 
 You can use the PDF conversion option to convert output in Microsoft Office (Excel or Word) format to PDF format.
 
-### Make PDF conversion available
-
-To make the PDF conversion option available in the current Finance instance, open the **Feature management** workspace, and turn on the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature.
-
-[![Turning on the PDF conversion of outbound documents feature in Feature management.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
-
-> [!NOTE]
-> In versions of Finance before 10.0.21, conversion to PDF had to be explicitly enabled. However, starting in version 10.0.21, the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature was automatically enabled. Starting in version 10.0.29, the feature became mandatory. In Finance version 10.0.32, the feature has been eliminated, and conversion to PDF is enabled out of the box.
-
-### Applicability
-
-In versions of Finance **before version 10.0.18**, the PDF conversion option can be turned on only for **Excel\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
+The PDF conversion option can be turned on for **Excel\\File** and  **Common\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
 
 > [!NOTE]
 > Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component will expose the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
@@ -168,23 +138,21 @@ In versions of Finance **before version 10.0.18**, the PDF conversion option can
 
 ### Limitations
 
-As of Finance **version 10.0.9**, the PDF conversion option is available only for cloud deployments. Starting in Finance version **10.0.27**, the PDF conversion option is available for any on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
+In versions of Finance before version 10.0.43, the PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. This solution has the following limitations:
 
-The PDF document that is produced is limited to a maximum length of 300 pages.
+- the PDF conversion option is available for cloud deployments and on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
+- the PDF document that is produced is limited to a maximum length of 300 pages.
 
-As of Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. Starting in Finance **version 10.0.10**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
+In version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
 
-Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
+Here are the advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled:
 
-### Resources
-
-Before Finance version 10.0.29, PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature. This feature lets you convert generated Word documents to PDF format locally by using application server resources in the current Finance instance. 
-
-Here are the advantages of local PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
-
-- The PDF document that is produced isn't [limited](#limitations) to a maximum number of pages.
+- The PDF document that is produced isn't limited to 300 pages.
 - The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
 - Internet connectivity isn't required in on-premises deployments.
+
+> [!NOTE]
+> Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 
 ### <a name="ConvertToPDF"></a>Use the PDF conversion option
 
@@ -192,45 +160,35 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 [![Turning on PDF conversion for a file destination.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
-### <a name="SelectPdfPageOrientation">Select a page orientation for PDF conversion</a>
+### Use the PDF conversion component in ER format configurations
 
-If you generate an ER configuration in Excel format and want to convert it to PDF format, you can explicitly specify the page orientation of the PDF document. When you select the **Convert to PDF** checkbox to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
-
-[![Selecting a page orientation for PDF conversion.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
-
-To have the option to select the PDF page orientation, install Finance version 10.0.10 or later. In versions of Finance **before version 10.0.23**, this option offers the following page orientation options:
-
-- Portrait
-- Landscape
-
-The selected page orientation is applied to all pages of an outbound document that is generated in Excel format and then converted to PDF format.
-
-However, in **version 10.0.23 and later**, the list of page orientation options has been extended as follows:
-
-- Portrait
-- Landscape
-- Worksheet specific
-
-When you select the **Worksheet specific** option, every worksheet of a generated Excel workbook is converted to PDF by using page orientation that has been configured for this worksheet in the used Excel template. So, you might have a final PDF document containing portrait and landscape pages. 
-
-If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is always taken from the Word document.
-
-### Use the PDF conversion component in formats
-
-In Finance **version 10.0.33**, you can use PDF conversion directly in format configurations. In this case, you don't have to use the [**Convert to PDF**](#ConvertToPDF) checkbox on the **Electronic reporting destination** page. A new format component, **PDF Converter**, has been added.
+You can use PDF conversion directly in format configurations. In this case, you don't have to use the [**Convert to PDF**](#ConvertToPDF) checkbox on the **Electronic reporting destination** page. A format component, **PDF Converter**, is availble.
 
 [![PDF Converter component in formats.](./media/ERformatPDFconverter.jpg)](./media/ERformatPDFconverter.jpg)
 
 > [!NOTE]
 > The **PDF Converter** component can be added only in the format configurations of a **PDF** format type, or when the format type isn't explicitly defined but is left blank. The **PDF Converter** component can contain only one **Excel\\File** sub-component.
 
+### <a name="SelectPdfPageOrientation"></a> Select a page orientation for PDF conversion
+
+If you generate an ER configuration in Excel format and want to convert it to PDF format, you can explicitly specify the page orientation of the PDF document. When you select the **Convert to PDF** checkbox to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
+
+[![Selecting a page orientation for PDF conversion.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+The following page orientation options are supported:
+
+- Portrait
+- Landscape
+- Worksheet specific
+
+The selected page orientation is applied to all pages of an outbound document that is generated in Excel format and then converted to PDF format. When you select the **Worksheet specific** option, every worksheet of a generated Excel workbook is converted to PDF by using page orientation that has been configured for this worksheet in the used Excel template. So, you might have a final PDF document containing portrait and landscape pages. 
+
+> [!NOTE]
+> For ER configuration in Word format converted to PDF format, the page orientation of the PDF document is always taken from the Word document.
+
 ## Output unfolding
 
 When you configure a destination for the **Folder** component of your ER format, you can specify how the output of that component is delivered to the configured destination.
-
-### Make output unfolding available
-
-To make the output unfolding option available in the current Finance instance, open the **Feature management** workspace, and turn on the **Allow configuring ER destinations to send folders content as separate files** feature.
 
 ### Applicability
 
@@ -254,7 +212,7 @@ If you set the **Send folder as** field to **Separate files** for a **Folder** c
 
 ## <a name="change-page-layout-properties-of-a-template"></a> Change page layout properties of a template
 
-You can configure an ER destination for an ER format component that's designed to use a template in a Microsoft Office (Excel or Word) format for report generation. If you aren't the owner of this format and you need to change page layout properties of the format's template, in versions of Finance before version 10.0.29, you have to create a derived format and modify the template properties. Then, you have to maintain the derived format configuration. However, in version 10.0.29 and later, you can change the page layout properties of the template at runtime to avoid creating and maintaining the derived format configuration. To do this, set up the desired properties as part of the settings of the configured ER destination. When you run an ER format and execute an ER destination that's configured to use certain page layout properties, the values of page layout properties of the executed destination are applied to the template you're using, replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the template in use.
+You can configure an ER destination for an ER format component that's designed to use a template in a Microsoft Office (Excel or Word) format for report generation. If you aren't the owner of this format and you need to change page layout properties of the format's template, you can change the page layout properties of the template at runtime to avoid creating and maintaining the derived format configuration. To do this, set up the desired properties as part of the settings of the configured ER destination. When you run an ER format and execute an ER destination that's configured to use certain page layout properties, the values of page layout properties of the executed destination are applied to the template you're using, replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the template in use.
 
 The following properties can be configured in an ER destination for a format component that's designed to use a template in Excel or Word format:
 
