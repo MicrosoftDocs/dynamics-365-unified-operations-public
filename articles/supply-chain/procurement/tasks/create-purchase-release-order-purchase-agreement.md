@@ -1,13 +1,14 @@
---- 
+---
 title: Apply a purchase agreement when creating a purchase order
 description: Learn how to use a purchase agreement when you create a purchase order, including a step-by-step process for creating a purchase order. 
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: how-to
-ms.date: 08/09/2019
-ms.custom:
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: how-to
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Apply a purchase agreement when creating a purchase order
@@ -28,8 +29,8 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 
 ## Add a line
 
-1. In the **Item number** field, type a value. If there are specific inventory or location dimensions on the commitment you must enter the same values on the purchase order line to make use of the agreement.
-1. In the **Site** field, select the drop-down button to open the lookup. The site may already be populated with the default value from the order, or from the vendor. If this is the case, skip this step.  
+1. In the **Item number** field, type a value. If there are specific inventory or location dimensions on the commitment, you must enter the same values on the purchase order line to make use of the agreement.
+1. In the **Site** field, select the drop-down button to open the lookup. The site may already be populated with the default value from the order, or from the vendor. If so, skip this step.  
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
 1. In the **Quantity** field, enter a number. Validate that the price is copied from the commitment.  
@@ -37,7 +38,7 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 ## Look up the commitment
 
 1. Select **Update line**.
-1. Select **Attached**. Here you can get details for the purchase agreement. For example, you can see the price and whether the price and discount are fixed, which means that if you change price or discount on the purchase order to a different value than on the commitment, the system will remove the link so the purchase order line does not fulfill the commitment. You can also see if the Max is enforced option is selected, which means that the quantity on the commitment cannot be exceeded by summing all of the purchases that fulfill the commitment.  
+1. Select **Attached**. Here you can get details for the purchase agreement. For example, you can see the price and whether the price and discount are fixed, which means that if you change price or discount on the purchase order to a different value than on the commitment, the system will remove the link so the purchase order line doesn't fulfill the commitment. You can also see if the Max is enforced option is selected, which means that the quantity on the commitment can't be exceeded by summing all of the purchases that fulfill the commitment.  
 1. Close the page.
 
 ## Look up the purchase agreement
@@ -48,4 +49,3 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 1. Close the page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
