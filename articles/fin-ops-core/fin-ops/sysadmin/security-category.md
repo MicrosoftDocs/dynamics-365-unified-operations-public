@@ -1,6 +1,6 @@
---- 
+---
 title: Set up security categories
-description: Learn about how you can set up security categories that are utilized to create the process hierarchy and security configuration. 
+description: Learn how to set up security categories that are used to create the process hierarchy and security configuration.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -11,7 +11,7 @@ audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2025-01-20
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Set up security categories
@@ -20,28 +20,31 @@ ms.dyn365.ops.version: Version 7.0.0
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Security categories
-Categories are used for an aggregation in **Process roles maintain** module. You can define categories that help you save a new role under a given work stream or department. We strongly recommend building this properly to limit the development costs when it comes to security upgrades.
 
-To create a new **Category**, there are two approaches available: 
- - Create a new category
- - Import an existing category from different company
+Categories are used for an aggregation in the **Process roles maintain** module. You can define categories that help you save a new role under a given work stream or department. We strongly recommend that you complete this setup correctly. In this way, you help reduce the development costs when security upgrades are required.
+
+There are two ways to create a category:
+
+- Create a new category from scratch.
+- Import an existing category from a different company.
 
 ### Create a new category
 
-To create a new category, follow these steps:
-1. Go to **System administration \> Security governance \> Security category**.
-2. Click on **New**.
-3. Enter the **Name**, **Company** (optional) and **Description** (optional).
-4. Click on **Save**.
+To create a new category from scratch, follow these steps.
 
+1. Go to **System administration** \> **Security governance** \> **Security category**.
+1. Select **New**.
+1. Set the **Name** field.
+1. Optional: Set the **Company** and **Description** fields.
+1. Select **Save**.
 
 ### Import an existing category
 
-To import an existing category, follow these steps:
-1. Go to **System administration \> Security governance \> Security category**.
-2. Click on **Import**.
-3. Expand the **Parameters** section.
-4. Provide the file path in the **Browse** file attachment field.
-5. Select **Type** to pick the value as per your business requirement.
-6. Click on **OK**.
-7. A message in the message bar displays if the import is successful or failed.
+To import an existing category, follow these steps.
+
+1. Go to **System administration** \> **Security governance** \> **Security category**.
+1. Select **Import**.
+1. Expand the **Parameters** section.
+1. Use the **Browse** button to provide the file path of the attachment.
+1. Select **Type** to select the value according to your business requirement.
+1. Select **OK**. A message bar indicates whether the import was successful or failed.
