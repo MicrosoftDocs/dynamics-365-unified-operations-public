@@ -1,6 +1,6 @@
 ---
-title: Return order invoices sync
-description: This article describes how to sync return order invoices from Dynamics 365 Finance to dataverse environments.
+title: Return order invoice synchronization
+description: Learn about the changes that enable synchronization of return order invoices from Microsoft Dynamics 365 Finance to Dataverse environments.
 author: twheeloc
 ms.author: reetuchopra
 ms.topic: how-to
@@ -13,21 +13,15 @@ ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 ---
 
-# Return orders invoice sync
+# Return order invoice synchronization
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article provides an overview of the changes implemented to support return order invoices with dual-write. Microsoft created new mapping to synchronize return order invoices from Microsoft Dynamics 365 Finance to the customer's Dataverse environment.
+This article provides an overview of the changes that were implemented so that dual-write can support return order invoices. Microsoft created a new mapping to sync return order invoices from Microsoft Dynamics 365 Finance to the customer's Dataverse environment.
 
-## Overview
-In previous versions, return order invoices weren't supported with dual-write. When a return order invoice is created in Microsoft Dynamics 365 Finance, it generates a **Return order** type of sales order with 
-negative quantities. This doesn't synchronize back to the customer's Dataverse environment due to the current entity being filtered on specific order types. 
-For more information, see [Dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
+In previous versions of Finance, dual-write doesn't support return order invoices. When a return order invoice is created in Finance, it generates a sales order of the **Return order** type that has negative quantities. This sales order isn't synced back to the customer's Dataverse environment because the current entity is filtered on specific order types. Learn more in [Guidance for dual-write setup](../../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
+In Finance version 10.0.43, two new entities are available for return order invoices: CDS return invoice headers and CDS return invoice lines. These entities support dual-write synchronization to the customer's Dataverse environment. To sync return order invoices, customers must enable the dual-write mapping for CDS return invoice headers and CDS return invoice lines.
 
-In Dynamics 365 Finance version 10.0.43, new entities are available for return orders invoices (CDS return invoice headers, CDS return invoice lines) that support dual-write synchronization to the customer's 
-Dataverse environment. Customers need to enable the dual write mapping for CDS return invoice headers and CDS return invoice lines to synchronize the return order invoices.
-
-To export invoices, customers can use the existing sales invoice headers and lines entities in Microsoft Dynamics 365 Finance. The new return order invoice entities support the dual-write synchronization.
-This is a solution for return orders invoices and it minimizes the risk of disrupting the existing sales order process.
+To export invoices, customers can use the existing sales invoice headers and sales invoice lines entities in Finance. The new return order invoice entities support dual-write synchronization. This solution for return order invoices helps minimize the risk of disruption to the existing sales order process.
