@@ -17,8 +17,8 @@ This article explains the configuration that's required to issue a format 1005 f
 
 Before you print the report, the following prerequisites must be met:
 
-- The legal entity must have an address in a country within the Latin American (LATAM) localization.
-- The country-specific LATAM feature and the general feature must be activated.
+- The legal entity must have an address in a country/region within the Latin American (LATAM) localization.
+- The country-/region-specific LATAM feature and the general feature must be activated.
 - The following configurations must be imported from the Global repository:
 
     - LTM Tax Report

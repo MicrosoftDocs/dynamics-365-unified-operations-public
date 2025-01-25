@@ -18,7 +18,7 @@ This article explains how to set up and issue a format 1007 file. The format 100
 Before you print the report, the following prerequisites must be met:
 
 - The address that's set for the legal entity must be in Colombia.
-- Enable the country-specific Latin American (LATAM) globalization feature and the general LATAM feature.
+- Enable the country-/region-specific Latin American (LATAM) globalization feature and the general LATAM feature.
 - Import the following configurations from the Global repository:
 
     - LTM Tax Report

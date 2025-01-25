@@ -114,7 +114,7 @@ Alternatively, you can create a customer's VAT registration number on the **Tax 
 4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). You also use it for corrections.
 6. In the **Credit note** field, select the transaction code for the return of goods.
-7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For Estonia, select **Domestic** in the **Country/region type** field.
+7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report. For Estonia, select **Domestic** in the **Country/region type** field.
 
 ## Set up compression of Intrastat
 

@@ -17,7 +17,7 @@ ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for LCS solutions for localization and translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context. This article describes how to apply country/region context to meet these requirements. In this article you can find information how you should use country context property and what application objects control user interface elements.
+As part of the requirements for LCS solutions for localization and translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context. This article describes how to apply country/region context to meet these requirements. In this article you can find information how you should use country/region context property and what application objects control user interface elements.
 
 ## Country/region-specific functionality
 
