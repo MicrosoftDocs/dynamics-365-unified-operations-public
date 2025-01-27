@@ -28,7 +28,8 @@ The on-premises deployment option uses cloud components running on-premises usin
 
 On-premises deployment defines two types of Service Fabric standalone clusters: clusters for production environments and clusters for sandbox environments. The following roles or node types are deployed into both types of clusters: 
 
-- Application Object Servers (AOS) – Provides the ability to run the application functionality in client, batch, and import/export scenarios. 
+- Application Object Servers (AOS) – Provides the ability to run the application functionality in client, batch.
+- SQL Server Inegration Services (SSIS) – Provides mport/export scenarios functionality as part of the Data Management Framework (DMF\DIXF). 
 - Management Reporter (MR) – Provides financial reporting functionality. 
 - SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
 - Environment Orchestrator – Enables on-premises environment management from LCS. 
