@@ -7,7 +7,7 @@ ms.custom:
 ms.topic: how-to
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 1/16/2025
+ms.date: 1/27/2025
 ---
 
 # Custom report migration
@@ -33,12 +33,13 @@ Before you import or export reports, the following prerequisites must be in plac
 - You must update the connection of the **Business performance analytics backup custom reports** and **Business performance analytics restore custom reports** flows in the target and source organizations. To update the connection, follow these steps.
 
     1. Go to [Power Apps](https://make.powerapps.com).
-    1. Select the organization.
+    1. Select one of the organizations (source or target).
     1. Go to **Flows**, and select one of the flows in the list.
     1. Select **Edit**.
     1. Either select an existing connection or create a new one.
     1. Select **Save**.
     1. Repeat the preceding steps for the other flow.
+    1. Repeat the preceding steps for the other organization.
 
 ## Export
 
