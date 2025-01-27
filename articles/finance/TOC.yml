@@ -4381,6 +4381,8 @@
                   href: business-performance-analytics/install-bpa.md
                 - name: Configure security in business performance analytics
                   href: business-performance-analytics/set-up-security.md
+                - name: Custom report import, export, and migration
+                  href: business-performance-analytics/custom-reports.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model
