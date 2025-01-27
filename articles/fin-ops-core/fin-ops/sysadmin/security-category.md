@@ -46,5 +46,8 @@ To import an existing category, follow these steps.
 1. Select **Import**.
 1. Expand the **Parameters** section.
 1. Use the **Browse** button to provide the file path of the attachment.
-1. Select **Type** to select the value according to your business requirement.
+1. In the **Type** dropdown, select one of the following values:
+ -  **User security governance** - This option impacts the process roles under security governance module and it won't impact the security configuration.
+ -  **Security configuration** - This option impacts the security configuration under core platform and not the process roles under security governance module.
+ -  **Governance + Configuration** - This option impacts both the security governance as well as security configuration under the core platform.
 1. Select **OK**. A message bar indicates whether the import was successful or failed.
