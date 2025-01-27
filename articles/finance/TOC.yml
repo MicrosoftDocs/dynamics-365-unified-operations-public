@@ -796,8 +796,6 @@
               href: general-ledger/Default-dimensions.md
             - name: Add financial dimensions to the CFO workspace
               href: general-ledger/CFO-workspace.md
-            - name: Highly variable dimensions
-              href: cost-accounting/high-var-dimensions.md
             - name: Create account structures
               href: general-ledger/tasks/create-account-structures.md
             - name: Budgeting overview
@@ -1094,6 +1092,8 @@
                       href: general-ledger/financial-dimensions.md
                     - name: Define financial dimensions
                       href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Highly variable dimensions
+                      href: cost-accounting/high-var-dimensions.md  
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
