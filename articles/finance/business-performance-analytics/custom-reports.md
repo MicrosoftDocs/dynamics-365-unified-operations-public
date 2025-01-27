@@ -80,7 +80,8 @@ When the flow finishes running, the reports are ready to use.
 
 - A report that you're importing into the target organization might have the same name as an existing report in that organization. In this case, the unique name of the solution is appended to the name of the report that is being imported.
 
-    > [!NOTE] Report names have a 100-character limit. Any characters above this limit are truncated. After truncation, if the appended name of a report that is being imported remains the same as the name of an existing report, the report isn't imported.
+    > [!NOTE]
+    > Report names have a 100-character limit. Any characters above this limit are truncated. After truncation, if the appended name of a report that is being imported remains the same as the name of an existing report, the report isn't imported.
 
 - If you backed up or imported reports by using this feature, the following behavior occurs when the **Business performance analytics restore custom reports** flow is run:
 
