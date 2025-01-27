@@ -110,13 +110,19 @@ A [sizing spreadsheet](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2
     - 1 to 4 batch threads per core
     - Size based on batch window characterization
 
-- The AOS, Data Management, and Batch are on the same role in the Service Fabric. You need to size for these three workloads combined, and not separate these like in Microsoft Dynamics AX 2012.
+- Nodes can be configured to handle both online and batch workloads simultaneously or dedicated exclusively to either online or batch processing 
 - The same variability factors for SQL Server apply here.
 
 ### High availability
 
 - Ensure that you have at least 1 to 2 more AOS available than you estimate.
 - Ensure that you have at least 3 to 4 virtual hosts available.
+
+## SQL Server Inegration Services (SSIS\DMF\DIXF)
+
+### Sizing
+
+- Data Management nodes need to be sized according to you integration (import\export) volumes. 
 
 ## Management reporter
 
