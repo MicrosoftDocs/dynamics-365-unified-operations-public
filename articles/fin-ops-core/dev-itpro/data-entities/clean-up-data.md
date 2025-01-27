@@ -13,8 +13,6 @@ ms.reviewer: twheeloc
 
 [!include [banner](../includes/banner.md)]
 
-As of September 2023, Data Management job history entries and related staging table data that are older than 90 days are automatically deleted. To configure a job history retention period of less than 90 days, customers can use the **Job history cleanup** batch job.
-
 ## Clean up data
 
 1. Go to **Data management** \> **Job history cleanup**.
