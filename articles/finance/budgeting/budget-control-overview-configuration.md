@@ -4,7 +4,7 @@ description: Learn about the budget control feature and how to configure budget 
 author: jchrist  
 ms.author: jchrist
 ms.topic: overview
-ms.date: 12/03/2024
+ms.date: 01/27/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
@@ -112,13 +112,16 @@ When the **Main account** is selected as a budget control dimension, no configur
 
 ### Define budget groups
 
-You can define **Budget groups** to form a budget pool, or a collection of financial dimension values whose budgets will be pooled for a secondary budget check. 
-The financial dimension combinations that are found in the **budget control rule** are always checked for budget amounts. If a financial dimension combination is also found in a **budget group**, a second budget check is performed at the budget group level.
+You can define **Budget groups** to create a budget pool, or a collection of financial dimension values whose budgets are pooled for a secondary budget check. 
+The financial dimension combinations found in the **Budget control rule** are checked for budget amounts. If a financial dimension combination is also found in a **Budget group**, a second budget check is performed at the budget group level.
 
 > [!Important]
-> The parameter **user group budget permissions** defined on the **budget control rules** determines if both budget rules and budget groups are checked for specific scneario for certain dimension combinations. If over budget permissions are defined as **Prevent budget group check when budget funds are not available**, the **budget group** checks will not be performed.
+> The **User group budget permissions** parameter defined on the **Budget control rules** determines if both budget rules and budget groups are checked for specific scneario for certain dimension combinations. If over budget permissions are defined as **Prevent budget group check when budget funds are not available**, the **budget group** checks aren't performed.
 
-If you would like a budget to be checked for specific rule/scenario, then you should adjust **budget group** criteria to exclude specific dimension combinations which you do not want to check at both budget control rules and budget control groups level, or adjust **user group budget permissions**.
+If you want a budget to be checked for specific rule/scenario you can adjust:
+ - the **Budget group** criteria to exclude specific dimension combinations that you don't want checked at both budget control rules and budget control groups level.
+   or
+ - the **User group budget permissions**.
 
 
 ### Activate budget control
