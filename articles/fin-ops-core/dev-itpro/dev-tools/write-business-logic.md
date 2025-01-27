@@ -29,10 +29,10 @@ In this tutorial, you’ll write business logic in C\# source code and in X++ so
 This tutorial requires that you access the environment using Remote Desktop, and be provisioned as an administrator on the instance. 
 
 > [!NOTE]
-> Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** check box is selected. Since this option is selected by default, it must be changed prior to running the lab. In Visual Studio, click **Dynamics 365** &gt; **Options**, and clear the **Load symbols only for items in the solution** check box.
+> Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** check box is selected. If this option is selected, it must be changed prior to running the lab. If not, the debugger will be unable to debug the C# code. In Visual Studio, click **Extensions** &gt; **Options** &gt; **Dynamics 365...** &gt; **Options** &gt **Debugging**, and clear the **Load symbols only for items in the solution** check box.
 
 ## Scenario
-Too many cars have been rented to drivers who have a history of unsafe driving habits. The Fleet Management rental company needs to check driving records from external sources. Upper management has decided to subscribe to a service that is hosted by the Department of Transportation (DOT), which is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easy. The obvious choice would be to leverage Visual Studio to write the code. However, in this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we provide a mock implementation of a service call. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++.
+Management at the the Fleet Management rental company has noticed that too many cars have been rented to drivers who have a history of unsafe driving habits. Therefore, the company needs to check driving records from external sources prior to completing a rental. Upper management has decided to subscribe to a service that is hosted by the Department of Transportation (DOT), which is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easier. The obvious choice would be to leverage Visual Studio to write the code. However, in this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we will provide a mock implementation. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++, not to provide a real-world solution.
 
 ## Create a C\# class library
 You can create a reference from a project to the C\# class library, or to any other type of C\# project that generates an assembly. Such references affect the build order. The C\# project is built before the project that references and depends on it. The infrastructure understands the references, and will make sure that the C\# assemblies are deployed correctly to the cloud before execution. Follow these steps to create a C\# class library in the Fleet Management solution:
@@ -58,31 +58,24 @@ You can create a reference from a project to the C\# class library, or to any ot
     [![RenameClass\_LinqC.](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
 
 ## Write a C\# method named CheckDriversLicense
-In this section, you add C\# code for a method named CheckDriversLicense. The method must validate the driver’s license. To do this, the method must retrieve the driver’s license number, which is stored in the customer table. The method is given the RecId value for the customer record that contains the information required by the method. Your C\# code uses the LINQ provider to read from the customer table. For LINQ to work, you must first add references pointing to the LINQ assemblies. You add these references to the C\# project named DriversLicenseEvaluator.
+In this section, you add C\# code for a method named CheckDriversLicense to validate the driver’s license. To do this, the method must retrieve the driver’s license number, which is stored in the customer table. The method is given the RecId value for the customer record that contains the information required by the method. Your C\# code uses the LINQ provider to look up the customer record from the customer table. 
 
-1.  In **Solution Explorer**, expand the DriversLicenseEvaluator project node, right-click **References**, and then click **Add Reference**.
-2.  Click **Browse** and then enter the following path: C:\\Packages\\bin
-
-    Note that in some environments, the location of the packages folder is not on the c: drive.
-
-3.  In the **File name** field, type the pattern \*LINQ\*.dll and then press **Enter**. You'll see a list of assemblies with the name LINQ in them. From that list, select the following files, and then click **Add**:
-    -   Microsoft.Dynamics.AX.Framework.Linq.Data.dll
-    -   Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
-    -   Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
-
-    [![SelectReferences\_LinqC.](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
-    
-4.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Click **Browse** again, and then type the following file name into the field:
+1.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Add these assemblies from the bin folder under the PackagesLocalDirectory folder for you application version:
     -   Microsoft.Dynamics.AX.Xpp.Support.dll
     -   Microsoft.Dynamics.AX.Data.Core.dll
 
-5.  Click **Add**, and then click **OK**. The assemblies now appear under the references node in the project.
-6.  Repeat the **Add Reference** process, except this time, add the following DLL file from the indicated path:
+2.  Click **Add**, and then click **OK**. The assemblies now appear under the references node in the project.
+3.  Repeat the **Add Reference** process, except this time, add the following DLL file from the indicated path:
     -   Dynamics.Ax.FleetManagement.dll, in C:\\Packages\\FleetManagement\\bin
 
-7.  In **Solution Explorer**, select the reference Dynamics.Ax.FleetManagement.dll reference and set the property **Copy Local = False**.
-8.  In **Solution Explorer**, right-click **DriversLicenseChecker.cs**, and then click **View Code**.
-9.  Add the following three using statements to the **DriversLicenseEvaluator** namespace, to reduce the verbosity of code that references external classes. using Dynamics.AX.Application; using Microsoft.Dynamics.AX.Framework.Linq.Data; using Microsoft.Dynamics.AX.Xpp; Your C\# code should now look something like the following example.
+4.  In **Solution Explorer**, select the reference Dynamics.Ax.FleetManagement.dll reference and set the property **Copy Local = False**.
+5.  In **Solution Explorer**, right-click **DriversLicenseChecker.cs**, and then click **View Code**.
+6.  Add the following three using statements to the **DriversLicenseEvaluator** namespace, to reduce the verbosity of code that references external classes. 
+    - using Dynamics.AX.Application; 
+    - using Microsoft.Dynamics.AX.Framework.Linq.Data; 
+    - using Microsoft.Dynamics.AX.Xpp; 
+    
+    Your C\# code should now look something like this.
 
     ```csharp
     using System;
@@ -103,7 +96,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
     }
     ```
 
-10. Replace the class CheckDriversLicense with the following code. 
+7. Replace the class CheckDriversLicense with the following code. 
 
     > [!TIP] 
     > If you prefer, you can paste in the code from the DriversLicenseChecker.cs file in the C:\\FMLab directory.
@@ -154,10 +147,10 @@ Before proceeding with more C\# code, verify that you understand the LINQ code y
 
 -   First, a *provider* is created. It provides access to all the tables.
 -   Next, a *collection* of all customers is created. The customer of interest is retrieved from this collection.
--   Then, a *query* is created with a where clause that designates the requested customer by **RecId**.
+-   Then, a *query* is created with a where clause that designates the requested customer by its **RecId**.
 -   The call to the FirstOrDefault method forces execution of the query.
--   The method assigns the single matching customer to the customer variable. (Null is assigned if the RecId value matches no customer.)
--   Finally, the customer data is tested to see if the associated driver's license is valid. (Does the license contain "89"?)
+-   The method assigns the single matching customer to the customer variable. (Null is assigned if there is no record in the customer database with the provided RecId value.)
+-   Finally, the customer data is tested to see if the associated driver's license is valid. (The toy example checks if the license contain "89", whereas real-world solutions would call an external service.)
 
 ## Handle the event when a record is added
 The following subsections provide the following:
@@ -168,8 +161,20 @@ The following subsections provide the following:
 
 ### Preparatory overview
 
-When an attempt is made to add a record to a table, the OnValidateWrite event is raised before the record is written to the database. You want your CheckDriversLicense method to be called each time on the OnValidateWrite event is raised for the FMRental table. To do this, you now need to write a C\# method that is invoked by the event, and which calls your checkDriversLicense method. In other words, you need to write an event handler that calls your CheckDriversLicense method. The event handler method receives a parameter of the type, DataEventArgs. The event handler can set a value in the DataEventArgs structure to accept or reject the record. After you write your event handler method, you connect it to the event by assigning, or adding it to the OnValidatedWrite delegate that is a member of the FMRental table. You write this assignment in the init method of the data source of the FMRental form. This assignment to a delegate might seem odd. After all, we're modifying existing code (FMRental) to add handlers, which contradicts the main value proposition of loose coupling that eventing is supposed to offer. This assignment step is temporary. We'll eventually have the same story in C\# as we do in X++, where an attribute is applied to the C\# event handler as the mechanism that ties the delegate to the handler. 
+When an attempt is made to add a record to a table, the OnValidateWrite event is raised before the record is persisted in the database. You want your CheckDriversLicense method to be called each time on the OnValidateWrite event is raised for the FMRental table so that it can pass judgement on the customer's license number. To do this, you now need to write a C\# method that is invoked by the event, and which calls your checkDriversLicense method. In other words, you need to write an event handler that calls your CheckDriversLicense method. The event handler method receives a parameter of type *DataEventArgs*. The event handler can set a value in the DataEventArgs structure to accept or reject the record. After you write your event handler method, you connect it to the event by assigning, or adding it to the OnValidatedWrite delegate that is a member of the FMRental table. You write this assignment in the init method of the data source of the FMRental form. 
 
+This assignment to a delegate might seem odd. After all, we're modifying existing code (FMRental) to add handlers, which contradicts the main value proposition of loose coupling that eventing is supposed to offer. If this were done in X++, we would use the SubscribesTo attribute to wire up the event handler to the event, as shown in the following example:
+
+```xpp
+    [SubscribesTo(tablestr(CompanyInfo), delegatestr(Customer, validateWriteDelegate))]
+    public static void onvalidateWrite(Customer customerInfo, EventHandlerResult eventHandlerResult)
+    {
+        boolean ok = true; // check for the validity
+
+        eventHandlerResult.result(ok);
+    }
+```
+However, this requires functionality provided by the X++ compiler, and this functionality is not available in C#. Therefore, we need to use the eventing mechanism that is available in C#. 
 > [!NOTE]
 > The data source init method is called when the form is opened. Technically, the init method is inherited from the FormDataSource class.
 
