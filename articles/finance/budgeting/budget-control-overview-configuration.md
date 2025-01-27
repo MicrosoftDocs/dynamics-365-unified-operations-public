@@ -110,6 +110,14 @@ If a purchase order is created for expenses associated to main account 600120, t
 
 When the **Main account** is selected as a budget control dimension, no configurations in **Select main accounts** tab are required. 
 
+### Define budget groups
+
+You can define **Budget groups** to form a budget pool, or a collection of financial dimension values whose budgets will be pooled for a secondary budget check. The financial dimension combinations that are found in the **budget control rule** are always checked for budget amounts. If a financial dimension combination is also found in a **budget group**, a second budget check is performed at the budget group level.
+
+If both budget rules and budget groups are configured, only one of the budget checks should pass for transaction posting to be allowed, as opposed to two chances to fail and stop the transaction posting.
+
+**Budget groups** configuration should be left empty if the above behaviour is not intended. If you would like a budget to be checked for specific rule/scenario, then you should adjust **budget group** criteria to exclude specific dimension combinations which you do not want to check at both budget control rules and budget control groups level.
+
 ### Activate budget control
 
 After budget control has been configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version will then become effective.
