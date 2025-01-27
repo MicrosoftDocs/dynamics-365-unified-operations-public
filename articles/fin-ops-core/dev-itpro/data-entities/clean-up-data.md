@@ -4,7 +4,7 @@ description: Learn how to clean up data management job history, including how to
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 9/28/2023
+ms.date: 01/27/2025
 ms.custom:
 ms.reviewer: twheeloc
 ---
@@ -12,8 +12,6 @@ ms.reviewer: twheeloc
 # Clean up data management job history
 
 [!include [banner](../includes/banner.md)]
-
-As of September 2023, Data Management job history entries and related staging table data that are older than 90 days are automatically deleted. To configure a job history retention period of less than 90 days, customers can use the **Job history cleanup** batch job.
 
 ## Clean up data
 
