@@ -79,7 +79,7 @@ Finance + Operations doesn't require internet connectivity from user workstation
 
 ## Telemetry data transfer to the cloud
 
-Most telemetry data is stored locally and can be accessed by using Event Viewer in Microsoft Windows. A small subset of telemetry events is transferred to the Microsoft telemetry pipeline in the cloud for diagnostics. Customer data and user-identifiable data aren't part of the telemetry data that is sent to Microsoft. VM names are sent to Microsoft to help with environment management and diagnostics from the LCS portal.
+Most telemetry data is stored locally and can be accessed by using Event Viewer in Microsoft Windows. A small subset of telemetry events are transferred to the Microsoft telemetry pipeline in the cloud for diagnostics. Customer data and user-identifiable data aren't part of the telemetry data that is sent to Microsoft. VM names are sent to Microsoft to help with environment management and diagnostics from the LCS portal.
 
 ## Domain requirements
 
@@ -91,7 +91,7 @@ Consider the following domain requirements when you install Finance + Operations
 
 ### Full 2-way trust
 
-For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported in Platform update 33 and later.
+For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported.
 
 This means that users of the Finance + Operations (on-premises) application will come from the Windows Server 2008 R2 DFL domain, and the resources and service accounts hosting the Finance + Operations (on-premises) infrastructure and services will come from the Windows Server 2012 R2 DFL domain.
 
@@ -111,10 +111,11 @@ The actual hardware requirements vary, based on the system configuration, the da
 
 - The number of transactions per hour
 - The number of concurrent users
+- Intergration loads
 
 ## Minimum infrastructure requirements
 
-Finance + Operations uses Service Fabric to host the AOS, Batch, Data management, Management reporter, and Environment orchestrator services.
+Finance + Operations uses Service Fabric to host the AOS, Batch, Data management, SQL reporting, Management reporter, and Environment orchestrator services.
 
 SQL Server must have a high-availability HADRON setup that has at least two nodes for production use.
 
@@ -134,11 +135,13 @@ The following tables list the number of processors and the amount of random-acce
 | Topology   | Role (node type)              | Recommended processor cores | Recommended memory (GB) |
 |------------|-------------------------------|-----------------------------|-------------------------|
 | Production | AOS, Data management, Batch   | 8                           | 24                      |
+|            | SSIS                          | 4                           | 16                      |
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
 |            | SQL Server                    | 8                           | 32                      |
 | Sandbox    | AOS, Data management, Batch   | 4                           | 24                      |
+|            | SSIS                          | 4                           | 16                      |
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
@@ -149,18 +152,20 @@ The following tables list the number of processors and the amount of random-acce
 | Topology                                        | Role                          | Number of instances |
 |-------------------------------------------------|-------------------------------|---------------------|
 | Production                                      | AOS (Data management, Batch)  | 3                   |
+|                                                 | SSIS                          | 2                   |
 |                                                 | Management Reporter           | 2                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator\*\*              | 3                   |
 |                                                 | SQL Server                    | 2                   |
 | Sandbox                                         | AOS, Data management, Batch   | 2                   |
+|                                                 | SSIS                          | 1                   |
 |                                                 | Management Reporter           | 1                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator                  | 3                   |
 |                                                 | SQL Server                    | 1                   |
-| *Summary for production and sandbox topologies* |                               | *19*                |
+| *Summary for production and sandbox topologies* |                               | *22*                |
 
-\* The numbers in this table are being validated by our preview customers and might be adjusted based on the feedback from those customers.
+\* The hardware sizes recommended in this document are intended as general guidelines only. Actual hardware requirements may vary based on specific customer processes, customizations, transaction volumes and workloads. We strongly recommend that customers conduct thorough testing of any proposed configurations as part of a comprehensive performance evaluation exercise.
 
 \*\* Orchestrator is designated as the primary node type and will also be used to run the Service Fabric services.
 
@@ -218,7 +223,7 @@ The following tables list the number of processors and the amount of random-acce
 
 ## Storage
 
-- **AOS** – Finance + Operations uses a Server Message Block (SMB) 3.0 share to store unstructured data. For more information, see [Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
+- **AOS & SSIS** – Finance + Operations uses a Server Message Block (SMB) 3.0 share to store unstructured data. For more information, see [Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
 - **SQL** – The following options are viable:
 
     - A highly available SSD setup
@@ -259,11 +264,16 @@ For the hardware requirements for SQL Server, see [Hardware and Software Require
 
 ### Software requirements for Application Object Server (AOS)
 
-- SQL Server Integration Services (SSIS)
+- [Optional] SQL Server Integration Services (SSIS)
+  - If you are using a dedicated SSIS node then you do not need to install SSIS on the AOS nodes. 
 
 ### Software requirements for Reporting Server (BI)
 
 - SQL Server Reporting Services (SSRS)
+
+### Software requirements for SQL Server Integration Services (SSIS)
+
+- SQL Server Integration Services (SSIS)
 
 ## Software requirements for client computers
 
@@ -272,22 +282,9 @@ Users can access Finance + Operations by using the most recent versions of these
 - Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
 - Google Chrome
 - Apple Safari
-- Internet Explorer 11 (deprecated, not recommended)
 
 > [!NOTE]
 > For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
-> 
-> **Version 10.0.21 and later:** Users of old versions of Microsoft Edge and Google Chrome (version 83 and earlier) will receive prompts to update their browser to the latest version. 
-
-### Internet Explorer deprecation
-
-Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see [Internet Explorer deprecation announcement](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
-
-Starting in version 10.0.20, users accessing finance and operations apps with Internet Explorer will start seeing notifications about the end of support for that browser. Before August 17, 2021, Internet Explorer users will see an informational message that Internet Explorer support is soon ending. After that date, Internet Explorer users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless Internet Explorer is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
-
-Starting in version 10.0.25, the use of Internet Explorer 11 will be blocked in finance and operations apps. If your organization wants to block Internet Explorer earlier, and you're using version 10.0.21 or later, contact Microsoft Support. 
-
-To prepare organizations and users for the upcoming block of Internet Explorer, in January 2022, Internet Explorer users will start to receive a non-dismissible error message that states that Internet Explorer support will soon be blocked. This error message is **not** controlled by the **Internet Explorer end-of-support notifications** feature. Customers will have to contact Microsoft Support if this message must be suppressed for their organization.
 
 ### Special considerations
 
