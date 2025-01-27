@@ -4,7 +4,7 @@ description: Learn how to clean up data management job history, including how to
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 9/28/2023
+ms.date: 01/27/2025
 ms.custom:
 ms.reviewer: twheeloc
 ---
