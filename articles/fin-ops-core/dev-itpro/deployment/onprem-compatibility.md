@@ -50,7 +50,6 @@ This section covers the following SQL Server components:
 | Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
 | Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
 | Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
-| Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
@@ -92,8 +91,6 @@ Your Service Fabric cluster should always be on a supported version according to
 | Service Fabric runtime 10.0 | 10.0.41        |
 | Service Fabric runtime 8.2  | 10.0.30        |
 | Service Fabric runtime 8.0  | 10.0.24        |
-| Service Fabric runtime 7.2  | 10.0.17        |
-| Service Fabric runtime 7.1  | 10.0.14        |
 
 ## Minimum Microsoft .NET Framework runtime
 
