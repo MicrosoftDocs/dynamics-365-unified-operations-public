@@ -56,6 +56,7 @@ Business users and functional team members validate application functionality by
 At a minimum, an on-premises sandbox environment requires:
 - 3 machines running Environment Orchestrator
 - 2 machines running Application Object Servers (AOS)
+- 1 machine running SQL Server Integration Services (SSIS) 
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
 - 1 machine running Active Directory
@@ -67,6 +68,7 @@ The production environment is the live deployment that your users and customers 
 At a minimum, an on-premises production environment requires:
 - 3 machines running Environment Orchestrator
 - 3 machines running Application Object Servers (AOS)
+- 1 machine running SQL Server Integration Services (SSIS) 
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
 - 2 or more machines running SQL Server (Database Engine)
@@ -177,6 +179,9 @@ For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/
 #### High availability
 - Ensure that you have at least 1 to 2 more AOS available than you estimate.
 - Ensure that you have at least 3 to 4 virtual hosts available.
+
+### SQL Integration Services (SSIS)
+Typically, the recommended minimum requirements of two nodes should suffice for most integration uses. In scenarios involving high levels of integrations, more than two nodes may be required. When this happens, you can scale up accordingly.
 
 ### Management reporter
 In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well. Only in cases where there is heavy use will you need more than two nodes, after which you can scale as needed.
