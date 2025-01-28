@@ -6,7 +6,7 @@ ms.author: peterfriis
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 01/29/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-08-30
@@ -165,7 +165,7 @@ The following tables list the number of processors and the amount of random-acce
 |                                                 | SQL Server                    | 1                   |
 | *Summary for production and sandbox topologies* |                               | *22*                |
 
-\* The hardware sizes recommended in this document are intended as general guidelines only. Actual hardware requirements may vary based on specific customer processes, customizations, transaction volumes and workloads. We strongly recommend that customers conduct thorough testing of any proposed configurations as part of a comprehensive performance evaluation exercise.
+\* The recommended hardware sizes are general guidelines only. Actual hardware requirements may vary based on specific customer processes, customizations, transaction volumes, and workloads. We strongly recommend that customers conduct thorough testing of any proposed configurations as part of a comprehensive performance evaluation exercise.
 
 \*\* Orchestrator is designated as the primary node type and will also be used to run the Service Fabric services.
 
@@ -265,7 +265,7 @@ For the hardware requirements for SQL Server, see [Hardware and Software Require
 ### Software requirements for Application Object Server (AOS)
 
 - [Optional] SQL Server Integration Services (SSIS)
-  - If you are using a dedicated SSIS node then you do not need to install SSIS on the AOS nodes. 
+  - If you are using a dedicated SSIS node, you don't need to install SSIS on the AOS nodes. 
 
 ### Software requirements for Reporting Server (BI)
 
