@@ -2,7 +2,7 @@
 title: Cash register functionality for France (preview)
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 10/25/2024
+ms.date: 01/28/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -31,15 +31,12 @@ This version of the cash register functionality for France has passed an audit a
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog box. You can open this dialog box by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog box shows the certified software name and version, the certification category, and the NF 525 certificate number.
+You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog. You can open this dialog by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog shows the certified software name and version, the certification category, and the NF 525 certificate number.
 
  > [!NOTE]
-  > To comply with NF 525 certification requirements for updating software versions, we use a separate NF 525 specific version. The current NF 525 certified version is **Microsoft Dynamics 365 Commerce, version 10.0** which maps to the global major Microsoft Dynamics 365 Commerce version **10.0**. See section below on NF 525 compliance documentation for more details on Microsoft's versioning approach. 
-> 
-  > Microsoft ensures the authenticity and security of the Microsoft Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and has not been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
-  >  
-  > Microsoft maintains source code for all supported versions of the Microsoft Dynamics 365 Commerce in a secure version control system in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Microsoft Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
-
+  > - To comply with NF 525 certification requirements for updating software versions, we use a separate NF 525 specific version. The current NF 525 certified version is **Microsoft Dynamics 365 Commerce, version 10.0**, which maps to the global major Dynamics 365 Commerce version **10.0**. For more information on Microsoft's versioning approach, see [NF 525 compliance documentation](#NF-525-compliance-documentation). 
+  > - Microsoft ensures the authenticity and security of the Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and hasn't been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
+  > - Microsoft maintains source code for all supported versions of Dynamics 365 Commerce in a secure version control system that is in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
 
 ### NF 525 compliance documentation
 
@@ -107,8 +104,8 @@ If the **Audit** option in the POS functionality profile is set to **Yes**, the 
 | Cleanup of transactions from the channel database | 200 |
 | Applying a major update of the software with compliance impact | 250 |
 
-  > [!NOTE]
-  > Audit event logs are only applicable to changes made in the POS, hence changes made in Commerce HQ will not be included in the logs.
+> [!NOTE]
+> Audit event logs are only applicable to changes made in the POS, so changes made in Commerce headquarters aren't included in the logs.
     
 ### Digital signing overview
 
@@ -564,7 +561,7 @@ After you import the configurations, select ER formats for the Z report and arch
 To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable France-specific data to be transmitted from POS to Commerce headquarters, you must reinitialize the Commerce scheduler.
 
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../../enable-configure-retail-functionality.md).
-1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
+1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog, select **OK**.
 
 ### Configure channel components
 
@@ -700,7 +697,7 @@ To validate a digitally signed audit event, follow these steps.
     1. Sign in to POS, and open a new shift.
     1. Open the **Settings** page.
     1. Under **France**, in the **NF 525 certification** section, select **View details**.
-    1. In the **NF 525 certification** dialog box, review the software name and version, the certification category, and the NF 525 certificate number.
+    1. In the **NF 525 certification** dialog, review the software name and version, the certification category, and the NF 525 certificate number.
     1. On the **Current transaction** page, add several items, and pay the exact amount.
     1. Return to **Home**, and select **Show journal**.
     1. On the **Transaction journal** page, select the previous sales transaction, and return one item from it. Pay the exact amount.
