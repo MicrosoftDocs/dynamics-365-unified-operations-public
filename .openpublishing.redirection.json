@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-overview.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-overview",
       "redirect_document_id": "false"
     },
     {
