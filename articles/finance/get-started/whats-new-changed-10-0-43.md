@@ -1,6 +1,6 @@
 ---
 title: What's new or changed in Dynamics 365 Finance 10.0.43 (January 2025)
-description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.42 preview release distributed in January 2025.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.43 preview release distributed in January 2025.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.43. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.43. This version has a build number of 10.0.2177 and is available on the following schedule:
 
 - **Preview of release:** January 2025
 - **General availability of release (self-update):** March 2025
@@ -97,7 +97,7 @@ Dynamics 365 Finance version 10.0.43 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=985753).
 
 ### Regulatory updates
 
