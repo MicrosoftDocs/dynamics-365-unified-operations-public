@@ -4,7 +4,7 @@ description: Learn how to set up and plan a dock appointment for a load typicall
 author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 01/28/2025
 ms.custom:
 ms.reviewer: kamaybac 
 ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
