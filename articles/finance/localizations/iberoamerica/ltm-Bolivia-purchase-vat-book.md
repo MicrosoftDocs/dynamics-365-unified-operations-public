@@ -63,4 +63,4 @@ To generate the **BO Purchase VAT Book** report, follow these steps.
 1. In the **From date** and **To date** fields, specify the date range to include on the report.
 1. Select **OK**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
