@@ -796,8 +796,6 @@
               href: general-ledger/Default-dimensions.md
             - name: Add financial dimensions to the CFO workspace
               href: general-ledger/CFO-workspace.md
-            - name: Highly variable dimensions
-              href: cost-accounting/high-var-dimensions.md
             - name: Create account structures
               href: general-ledger/tasks/create-account-structures.md
             - name: Budgeting overview
@@ -1094,6 +1092,8 @@
                       href: general-ledger/financial-dimensions.md
                     - name: Define financial dimensions
                       href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Highly variable dimensions
+                      href: cost-accounting/high-var-dimensions.md  
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
@@ -2018,6 +2018,10 @@
                       href: localizations/belgium/emea-bel-intrastat.md
                     - name: VAT declaration
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                - name: Bolivia
+                  items:
+                  - name: Configure for Sales Vat Books for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
@@ -2436,12 +2440,16 @@
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
                   - name: Configure Ecuadorian purchase withholding book printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
+                  - name: Configure electronic invoice parameters for Ecuador
+                    href: localizations/iberoamerica/ltm-ecuador-conf-electronic-invoice.md
                   - name: Configure printing for the Ecuador Sales book by establishment report
                     href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
                   - name: Configure Simplified transactional appendix (ATS) printing
                     href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
                   - name: Post Ecuadorian refund invoice transactions
                     href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
+                  - name: Set up a legal entity and tax information for Ecuador
+                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Ecuador.md
                 - name: Egypt
                   items:
                     - name: Egypt overview
@@ -3422,72 +3430,82 @@
                   items:
                     - name: Latin America overview
                       href: localizations/iberoamerica/latam-overview.md
-                    - name: Latin America parameters
-                      href: localizations/iberoamerica/ltm-core-latam-parameters.md
-                    - name: Field list configuration for Latin America
-                      href: localizations/iberoamerica/ltm-core-field-master-lists.md
-                    - name: Taxpayer types for Latin America
-                      href: localizations/iberoamerica/ltm-core-taxpayer-type.md
-                    - name: Tax ID types for Latin America
-                      href: localizations/iberoamerica/ltm-core-tax-id-type.md
-                    - name: Tax application for Latin America
-                      href: localizations/iberoamerica/ltm-core-tax-application.md
-                    - name: Tax and legal attributes for Latin America
-                      href: localizations/iberoamerica/ltm-tax-legal-attributes.md
-                    - name: Document classes for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class.md
-                    - name: Document class types for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-type.md
-                    - name: Document class letter for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-letter.md
-                    - name: Document class sales point for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
-                    - name: Customer sets for Latin America
-                      href: localizations/iberoamerica/ltm-core-customers-set.md
-                    - name: Vendor set configuration
-                      href: localizations/iberoamerica/ltm-core-vendors-set.md
-                    - name: Address setup for Latin America
-                      href: localizations/iberoamerica/ltm-core-address-setup.md
-                    - name: Sales point prefixes for Latin America
-                      href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
-                    - name: Sales point relation for sales documents and remission
-                      href: localizations/iberoamerica/ltm-core-point-relation.md
-                    - name: Sales invoice posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-sales-invoice-posting-latam.md
-                    - name: Purchase invoice posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-purchase-invoice-posting.md
-                    - name: Inventory transfer order for posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-transfer-order-posting.md
-                    - name: Post bank expenses for Latin America
-                      href: localizations/iberoamerica/ltm-core-bank-expenses.md
-                    - name: Post packing slips for Latin America
-                      href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
-                    - name: Configure journal names for Latin America
-                      href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
-                    - name: Value query for Latin America
-                      href: localizations/iberoamerica/ltm-core-value-query.md
-                    - name: Configure electronic document references
-                      href: localizations/iberoamerica/ltm-electronic-doc-references.md
-                    - name: VAT book printing configuration
-                      href: localizations/iberoamerica/ltm-vat-book.md
-                    - name: Print payment checks
-                      href: localizations/iberoamerica/ltm-check-printing.md
-                    - name: Configure the layout of a printed invoice for Latin America
-                      href: localizations/iberoamerica/ltm-invoice-layout-print.md
-                    - name: Print a Ledger Posting report for LATAM
-                      href: localizations/iberoamerica/ltm-ledger-posting-report.md
-                    - name: SSRS Reports/Services references configuration for Latin America
-                      href: localizations/iberoamerica/ltm-ssrsreport-services.md
-                    - name: Printing configurations for General Ledger LATAM
-                      href: localizations/iberoamerica/ltm-general-ledger.md
-                    - name: Set up transaction posting for Latin America
-                      href: localizations/iberoamerica/ltm-post-transactions.md
-                    - name: Use LATAM functionality for checks
-                      href: localizations/iberoamerica/ltm-checks-in-latam.md
-                    - name: Use the LATAM extension in customer payments journals
-                      href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
-                    - name: Use the LATAM extension in vendor payments journals
-                      href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - name: Latin America Get started
+                      items:
+                      - name: Latin America parameters
+                        href: localizations/iberoamerica/ltm-core-latam-parameters.md
+                      - name: Set up transaction posting for Latin America
+                        href: localizations/iberoamerica/ltm-post-transactions.md
+                    - name: Tax and legal attributes
+                      items:
+                      - name: Tax and legal attributes for Latin America
+                        href: localizations/iberoamerica/ltm-tax-legal-attributes.md
+                      - name: Taxpayer types for Latin America
+                        href: localizations/iberoamerica/ltm-core-taxpayer-type.md
+                      - name: Tax ID types for Latin America
+                        href: localizations/iberoamerica/ltm-core-tax-id-type.md
+                      - name: Address setup for Latin America
+                        href: localizations/iberoamerica/ltm-core-address-setup.md
+                      - name: Customer set for Latin America
+                        href: localizations/iberoamerica/ltm-core-customers-set.md
+                      - name: Vendor set configuration
+                        href: localizations/iberoamerica/ltm-core-vendors-set.md              
+                    - name: Document classification configurations
+                      items:
+                      - name: Document class letter for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-letter.md
+                      - name: Document class types for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-type.md
+                      - name: Document classes for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class.md
+                      - name: Document class sales point for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
+                      - name: Sales point prefixes for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
+                      - name: Sales point relation for sales documents and remission
+                        href: localizations/iberoamerica/ltm-core-point-relation.md
+                      - name: Field list configuration for Latin America
+                        href: localizations/iberoamerica/ltm-core-field-master-lists.md
+                      - name: Configure journal names for Latin America
+                        href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
+                      - name: Configure electronic document references
+                        href: localizations/iberoamerica/ltm-electronic-doc-references.md
+                    - name: Latam extension in transactions
+                      items:
+                      - name: Sales invoice posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-invoice-posting-latam.md
+                      - name: Purchase invoice posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-purchase-invoice-posting.md
+                      - name: Inventory transfer order for posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-transfer-order-posting.md
+                      - name: Post bank expenses for Latin America
+                        href: localizations/iberoamerica/ltm-core-bank-expenses.md
+                      - name: Post packing slips for Latin America
+                        href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
+                      - name: Use LATAM functionality for checks
+                        href: localizations/iberoamerica/ltm-checks-in-latam.md
+                      - name: Use the LATAM extension in customer payments journals
+                        href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
+                      - name: Use the LATAM extension in vendor payments journals
+                        href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - name: Inquiries and Reports
+                      items:
+                      - name: Value query for Latin America
+                        href: localizations/iberoamerica/ltm-core-value-query.md
+                      - name: Print payment checks
+                        href: localizations/iberoamerica/ltm-check-printing.md
+                      - name: Configure the layout of a printed invoice for Latin America
+                        href: localizations/iberoamerica/ltm-invoice-layout-print.md
+                      - name: SSRS Reports/Services references configuration for Latin America
+                        href: localizations/iberoamerica/ltm-ssrsreport-services.md                  
+                      - name: Printing configurations for General Ledger LATAM
+                        href: localizations/iberoamerica/ltm-general-ledger.md                    
+                      - name: Print a Ledger Posting report for LATAM
+                        href: localizations/iberoamerica/ltm-ledger-posting-report.md
+                      - name: VAT book printing configuration
+                        href: localizations/iberoamerica/ltm-vat-book.md
+                      - name: Tax application for Latin America
+                        href: localizations/iberoamerica/ltm-core-tax-application.md                                    
                 - name: Latvia
                   items:
                     - name: Latvia overview
@@ -4367,6 +4385,8 @@
                   href: business-performance-analytics/install-bpa.md
                 - name: Configure security in business performance analytics
                   href: business-performance-analytics/set-up-security.md
+                - name: Custom report import, export, and migration
+                  href: business-performance-analytics/custom-reports.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model

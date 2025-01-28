@@ -609,12 +609,6 @@
           href: asset-management/asset-management-mobile-app/maintenance-requests.md
         - name: Asset Management mobile app FAQs and known issues
           href: asset-management/asset-management-mobile-app/asset-management-app-faq.md
-      - name: Asset management from the now-deprecated mobile app
-        items: 
-        - name: Set up the Asset management mobile workspace
-          href: asset-management/set-up-asset-management-mobile.md
-        - name: Use the Asset management mobile workspace
-          href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
       - name: Target entities
@@ -691,8 +685,6 @@
         href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?context=/dynamics365/context/supply-chain
       - name: Use content pack for Microsoft Power BI reporting
         href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?context=/dynamics365/context/supply-chain
-      - name: Use cost control workspace for finance and operations mobile application
-        href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Global Inventory Accounting
       items:
       - name: Global Inventory Accounting home page
@@ -1695,8 +1687,6 @@
           href: inventory/tasks/correct-inventory-tracking-information.md
         - name: Register serial number in the sales process
           href: sales-marketing/register-serial-numbers-sales-process.md
-        - name: Inventory on-hand mobile workspace
-          href: inventory/inventory-on-hand-mobile-workspace.md
       - name: Outbound process
         items:
         - name: Outbound process overview
@@ -2365,8 +2355,6 @@
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
-        - name: Purchase order approval mobile workspace
-          href: procurement/purchase-order-mobile-workspace.md
         - name: Create and invoice an intercompany purchase order for internal use
           href: sales-marketing/intercompany-purchase-order-for-internal-use.md
         - name: Check intercompany order price discrepancies
@@ -2467,8 +2455,6 @@
           href: procurement/purchasing-cxml-enhancements.md
         - name: Use external catalogs for PunchOut e-procurement
           href: procurement/use-external-catalogs-for-punchout.md
-        - name: Vendor collaboration mobile workspace
-          href: procurement/vendor-collaboration-mobile-workspace.md
         - name: Approve vendors for specific procurement categories
           href: procurement/tasks/approve-vendors-specific-procurement-categories.md
         - name: Approve vendors for specific products
@@ -3081,8 +3067,6 @@
           href: sales-marketing/register-serial-numbers-sales-process.md
         - name: Reservation from same batch
           href: sales-marketing/reserve-same-batch-sales-order.md
-        - name: Sales orders mobile workspace
-          href: sales-marketing/sales-orders-mobile-workspace.md
         - name: Ship orders as direct deliveries
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
@@ -4103,7 +4087,9 @@
         items:
         - name: Available mobile workspaces
           href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
-        - name: Asset management
+        - name: Set up the Asset management mobile workspace
+          href: asset-management/set-up-asset-management-mobile.md
+        - name: Use the Asset management mobile workspace
           href: asset-management/asset-management-mobile-workspace.md
         - name: Company directory
           href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain

@@ -2,9 +2,8 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 01/17/2025
+ms.date: 01/23/2025
 ms.topic: overview
-audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -39,7 +38,7 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
+The following list describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
 
@@ -83,7 +82,7 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ### Dynamics 365 Retail POS version 10.0.42
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_109 | adyen_v1_110 |
+| adyen_v1_109 | adyen_v1_109 |
 
 ---
 
@@ -150,7 +149,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Givex | ✔ | ✔ |
 | Stored Value Solutions (SVS) | ✔ | ✔ |
 
-To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
+To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete more steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
 #### Digital wallet support status
 
@@ -168,7 +167,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | WeChat Pay | ✔ | No |
 
 > [!NOTE]
-> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For inormation on setup and known limitations, see [Wallet payment support](wallets.md).
+> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For information on setup and known limitations, see [Wallet payment support](wallets.md).
 
 #### Supported card present input methods
 

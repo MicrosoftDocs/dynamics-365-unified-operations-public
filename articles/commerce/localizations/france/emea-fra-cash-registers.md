@@ -2,7 +2,7 @@
 title: Cash register functionality for France (preview)
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 10/25/2024
+ms.date: 01/28/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -24,14 +24,19 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10.0** (the most recent audited version is **10.0.40**):
+- **Microsoft Dynamics 365 Commerce, version 10.0**:
 
     - Certificate category: B
     - Certificate number: 0498
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog box. You can open this dialog box by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog box shows the certified software name and version, the certification category, and the NF 525 certificate number.
+You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog. You can open this dialog by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog shows the certified software name and version, the certification category, and the NF 525 certificate number.
+
+ > [!NOTE]
+  > - To comply with NF 525 certification requirements for updating software versions, we use a separate NF 525 specific version. The current NF 525 certified version is **Microsoft Dynamics 365 Commerce, version 10.0**, which maps to the global major Dynamics 365 Commerce version **10.0**. For more information on Microsoft's versioning approach, see [NF 525 compliance documentation](#nf-525-compliance-documentation). 
+  > - Microsoft ensures the authenticity and security of the Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and hasn't been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
+  > - Microsoft maintains source code for all supported versions of Dynamics 365 Commerce in a secure version control system that is in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
 
 ### NF 525 compliance documentation
 
@@ -41,7 +46,7 @@ The following table shows the Dynamics 365 Commerce documentation that is relate
 |----------|-------------|-------|
 | <p>High-level design</p><p>Technical architecture</p> | This documentation describes the software product, its components, and data flows, and also the technical design of the product. | <p>[Commerce home page](../../welcome.md) and nested links</p><p>[Dynamics 365 Commerce architecture overview](../../dev-itpro/commerce-architecture.md)</p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france)</p> |
 | <p>Functional specification</p><p>User documentation</p> | This documentation describes the functions of the software. | <p>[Commerce home page](../../welcome.md) and nested links</p><p>[France-specific POS features](#france-specific-pos-features)</p> |
-| Versioning strategy | <p>This documentation describes the versioning approach and the version management procedure for the software product.</p><p>The current major Dynamics 365 Commerce version is **10.0**. Service updates for this version are indicated by a consecutive number after the version number: **10.0.X**. For more information about the software lifecycle policy and service updates, use the links in this table.</p> | <p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p><p>[Software lifecycle policy and cloud releases](../../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)</p><p>[Service update availability](../../../fin-ops-core/dev-itpro/get-started/public-preview-releases.md)</p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)</p><p>[What's new or changed in Dynamics 365 Commerce](../../get-started/whats-new-home-page.md)</p><p>[Dynamics 365 Commerce component versioning requirements](../../dev-itpro/arch-component-versioning.md)</p> |
+| Versioning strategy | <p>This documentation describes the versioning approach and the version management procedure for the software product.</p><p>The current major Dynamics 365 Commerce version is **10.0**. Service updates for this version are indicated by a consecutive number after the version number: **10.0.X**. For more information about the software lifecycle policy and service updates, use the links in this table.</p>| <p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p><p>[Software lifecycle policy and cloud releases](../../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)</p><p>[Service update availability](../../../fin-ops-core/dev-itpro/get-started/public-preview-releases.md)</p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)</p><p>[What's new or changed in Dynamics 365 Commerce](../../get-started/whats-new-home-page.md)</p><p>[Dynamics 365 Commerce component versioning requirements](../../dev-itpro/arch-component-versioning.md)</p> |
 | Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../../fin-ops-core/fin-ops/lcs/country-region.md) |
 | Maintenance documentation | This documentation describes implementation and maintenance of the software solution. | <p>[Service description](../../../fin-ops-core/dev-itpro/get-started/service-description.md)</p><p>[Before you buy](../../../fin-ops-core/fin-ops/get-started/before-you-buy.md)</p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)</p><p>[Implementation lifecycle management home page](../../../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md)</p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../../dev-itpro/Synchronize-installers.md)</p><p>[Set up Commerce for France](#set-up-commerce-for-france)</p><p>[Compliance checklist](#compliance-checklist)</p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/support/)</p><p>[Submit service requests](../../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)</p><p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p> |
 | Auditor documentation | This documentation describes how to access the data, the files, and the process that are used by the authorities. | [Fiscal archive for France](emea-fra-fiscal-archive.md) |
@@ -81,18 +86,27 @@ The following France-specific POS features are enabled when the primary address 
 
 If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
 
-- Sign-in
-- Sign-out
-- Printing a copy of a receipt
-- Starting offline mode
-- Ending offline mode
-- Applying a manager override
-- Voiding a transaction 
-- Voiding a transaction line
-- Closing a shift
-- Cleanup of transactions from the channel database
-- Applying a major update of the software with compliance impact
+| Event | NF 525 Jet Code |
+|----------|-------------|
+| Sign-in | 80 |
+| Sign-out | 40 |
+| Printing a copy of a receipt | 155 |
+| Returns | 326 |
+| Starting offline mode | 70 |
+| Ending offline mode | 120 |
+| Applying a manager override | 130 |
+| Voiding a transaction  | 320 |
+| Voiding a transaction line | #323 |
+| Closing a shift | 50 |
+| Period tax archiving | 20 |
+| Fiscal year archiving | 30 |
+| Annual or year-end closing | 60 |
+| Cleanup of transactions from the channel database | 200 |
+| Applying a major update of the software with compliance impact | 250 |
 
+> [!NOTE]
+> Audit event logs are only applicable to changes made in the POS, so changes made in Commerce headquarters aren't included in the logs.
+    
 ### Digital signing overview
 
 The following types of records (transactions and events) are digitally signed in POS:
@@ -339,9 +353,10 @@ You must also specify the following settings for France. Note that you must run 
 
 You must enable the following features in the **Feature management** workspace:
 
-- (France) Enable additional audit events in POS
-- (France) Enable additional information in end-of-day statements in POS
-- (France) Enable exporting Z-Report to file
+- (France) Enable additional audit events in POS.
+- (France) Enable additional information in end-of-day statements in POS.
+- (France) Enable exporting Z-Report to file.
+- (France) Enable identical receipt copy printing (starting with the Commerce 10.0.43 release).
 
 ### Set up the legal entity
 
@@ -413,6 +428,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | REPRINTTIME24H_FR               | Receipt | 900014          |
 | REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
 | SOFTWAREVERSION_FR              | Receipt | 900016          |
+| VATID_FR                        | Receipt | 900017          |
+| SIRETNUMBER_FR                  | Receipt | 900018          |
+
 
 ### Configure receipt formats
 
@@ -543,7 +561,7 @@ After you import the configurations, select ER formats for the Z report and arch
 To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable France-specific data to be transmitted from POS to Commerce headquarters, you must reinitialize the Commerce scheduler.
 
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../../enable-configure-retail-functionality.md).
-1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
+1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog, select **OK**.
 
 ### Configure channel components
 
@@ -679,7 +697,7 @@ To validate a digitally signed audit event, follow these steps.
     1. Sign in to POS, and open a new shift.
     1. Open the **Settings** page.
     1. Under **France**, in the **NF 525 certification** section, select **View details**.
-    1. In the **NF 525 certification** dialog box, review the software name and version, the certification category, and the NF 525 certificate number.
+    1. In the **NF 525 certification** dialog, review the software name and version, the certification category, and the NF 525 certificate number.
     1. On the **Current transaction** page, add several items, and pay the exact amount.
     1. Return to **Home**, and select **Show journal**.
     1. On the **Transaction journal** page, select the previous sales transaction, and return one item from it. Pay the exact amount.

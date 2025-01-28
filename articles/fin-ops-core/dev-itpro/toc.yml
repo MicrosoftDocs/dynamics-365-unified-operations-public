@@ -1815,8 +1815,24 @@ items:
         href: sysadmin/sys-admin-tools-network-printer.md
       - name: Monitoring and telemetry using Application Insights
         items:  
-        - name: Overview
-          href: sysadmin/monitoring-and-telemetry-appinsights.md
+        - name: Monitoring and Telemetry using Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+          href: monitoring-telemetry/index.yml
+        - name: Monitoring and telemetry overview
+          href: monitoring-telemetry/monitoring-overview.md
+        - name: Available telemetry
+          href: monitoring-telemetry/monitoring-available-telemetry.md
+        - name: Gather monitoring requirements
+          href: monitoring-telemetry/monitoring-gathering-requirements.md
+        - name: Get started with telemetry for finance and operations apps
+          href: monitoring-telemetry/monitoring-getting-started.md
+        - name: Analyze and monitor telemetry with KQL
+          href: monitoring-telemetry/monitoring-analyze-telemetry-KQL.md
+        - name: Use telemetry-based alerts
+          href: monitoring-telemetry/monitoring-analyze-telemetry-driven-alerts.md
+        - name: Add custom telemetry signals
+          href: monitoring-telemetry/monitoring-developer-add-custom-signals.md
+        - name: Understand and control costs
+          href: monitoring-telemetry/monitoring-understanding-and-controlling-cost.md
       - name: Security
         items:
         - name: Role-based security

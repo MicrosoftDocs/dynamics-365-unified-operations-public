@@ -3,10 +3,11 @@ title: Create documentation or training with Task Recorder
 description: Learn about what Task recorder and task guides are, how to create recordings, and how to customize Microsoft task guides and include them in your Help.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 03/24/2020
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 01/23/2025
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: SysHelpSetup
@@ -53,25 +54,7 @@ Whether you’re creating a new task recording or basing your recording on a Mic
 **Understand the different types of annotations** All annotations are optional. Only add them if they provide helpful information to the user.
 
 -   **Title**: A title annotation appears before the step text that task recorder automatically generates. In the task guide, the title annotation appears above the automatically generated text. Use this type of annotation to explain why the user is doing the step or to give context.
-
-This is the editing pane when you add an annotation as you create your recording. Enter a title annotation in the **Title** box. 
-
-[![Editing pane with title annotation.](../../dev-itpro/user-interface/media/screen1.png)]
-
-This is the title annotation in the task guide. 
-
-[![Title annotation appearance in task guide.](../../dev-itpro/user-interface/media/screen2.png)]
-
 -   **Notes:** A notes annotation appears after the step text that task recorder automatically generates. In the task guide, it'll only be visible if the user clicks **Show more** in the task guide bubble. Use this type of annotation to describe anything that a user needs to know to complete the step.
-
-This is the editing pane that you see when you add an annotation as you create your recording. Enter a notes annotation in the **Notes** box. 
-
-[![Editing pane with annotation in Notes box.](../../dev-itpro/user-interface/media/screen3.png)]
-
-This is the notes annotation in the task guide.
-
-[![Notes annotation appearance in task guide.](../../dev-itpro/user-interface/media/screen4.png)]
-
 -   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step.** Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a page, the task guide **bubble** appears someplace on the page, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide **bubble** points to the control when the task guide is played. In the Help pane, an info step annotation appears as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of the application, or to refer to other recordings.
 
 **Determine how long to make your recording**
