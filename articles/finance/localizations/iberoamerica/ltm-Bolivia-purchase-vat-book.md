@@ -2,7 +2,7 @@
 title: Configure printing for Purchase Vat Books for Bolivia
 description: Learn about the required configuration for printing a Purchase Vat Book report for Bolivia. 
 author: Fhernandez0088
-ms.date: 01/27/2025
+ms.date: 01/28/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
