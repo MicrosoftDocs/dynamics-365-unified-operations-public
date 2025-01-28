@@ -353,10 +353,10 @@ You must also specify the following settings for France. Note that you must run 
 
 You must enable the following features in the **Feature management** workspace:
 
-- (France) Enable additional audit events in POS
-- (France) Enable additional information in end-of-day statements in POS
-- (France) Enable exporting Z-Report to file
-- (France) Enable identical receipt copy printing (from 10.0.43 release)
+- (France) Enable additional audit events in POS.
+- (France) Enable additional information in end-of-day statements in POS.
+- (France) Enable exporting Z-Report to file.
+- (France) Enable identical receipt copy printing (starting with the Commerce 10.0.43 release).
 
 ### Set up the legal entity
 
