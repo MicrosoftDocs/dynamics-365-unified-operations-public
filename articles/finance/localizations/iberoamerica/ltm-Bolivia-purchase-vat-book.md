@@ -11,6 +11,8 @@ ms.author: v-federicohe
 
 # Configure printing for Purchase Vat Books for Bolivia
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This article explains how to set up and use purchase VAT tax books for Bolivia.
 
 Value-added tax (VAT) books refer to the records and accounting documents that businesses use to keep track of their transactions for VAT purposes. Although the specific requirements for VAT books can vary from one country/region to another, they generally include the date of the transaction, the customer/vendor information, and the tax information details.
@@ -46,7 +48,7 @@ To configure application-specific parameters, follow these steps.
 > VAT books are formats that depend on the **LTM Tax Report** model. Therefore, it's important that taxes are registered for transactions. The codes that you select here must match the codes that are registered in the transactions. Complete each lookup with conditions **No** or **Not applicable** selecting **Blank** and **Not blank**.
 
 > [!NOTE]
-> This VAT book will only consider VAT, and not other type of taxes.
+> This VAT book will only consider VAT, and not other types of taxes.
 
 1. Repeat steps 6 through 9 for every other VAT column on the report.
 
@@ -60,3 +62,5 @@ To generate the **BO Purchase VAT Book** report, follow these steps.
 1. In the **TAX application Id** field, specify the tax application code created for this report.
 1. In the **From date** and **To date** fields, specify the date range to include on the report.
 1. Select **OK**.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
