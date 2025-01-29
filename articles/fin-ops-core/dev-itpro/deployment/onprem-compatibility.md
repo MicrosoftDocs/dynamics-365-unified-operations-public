@@ -71,7 +71,7 @@ Finance + Operations (on-premises) supports a limited set of collations. The fol
 You should always utilize SQL Server in either a cluster or mirroring setup for production environments. 
 
 > [!IMPORTANT]
-> Database failover is only supported in an active\passive configuration. Read-only replicas are not supported. 
+> Database failover is only supported in an active or passive configuration. Read-only replicas aren't supported. 
 
 ## Active Directory Federation Services (AD FS)
 
