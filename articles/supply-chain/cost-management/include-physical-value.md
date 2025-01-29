@@ -64,7 +64,7 @@ When a sales order is posted, the posted cost amount is USD 10.00, because the r
 ## Include physical value in weighted average recalculation (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.43 GA -->
 
 This feature lets you choose whether to include physically updated transactions that haven't yet been financially updated when recalculating weighted average.
 
@@ -78,7 +78,7 @@ This feature lets you choose whether to include physically updated transactions 
 To use the feature described in this section, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The feature that is named *(Preview) Recalculation for Weighted Average Cost including Physical Transaction* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Recalculation for Weighted Average Cost including Physical Transaction* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Choose whether to include physical value in weighted average recalculation
 

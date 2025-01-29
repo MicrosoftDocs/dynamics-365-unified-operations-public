@@ -4,8 +4,8 @@ description: Learn about the Accounting source explorer page, which you can use 
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 10/31/2023
-ms.reviewer: kfend
+ms.date: 12/13/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -39,11 +39,7 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from the **Accounting source explorer** page.
 
 > [!NOTE]
-> As of in Microsoft Dynamics 365 version 10.0.36, a **Accounting source explorer advanced filtering** feature is available in **Feature management** and will be set to mandatory in version 10.0.39. This feature replaces the **Update** button and provides a more robust advanced query experience that resembles what is available on the **Voucher transactions** page. The advanced filter lets you filter on fields such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
-
-> [!NOTE]
-> In version 10.0.39, the accounting source explorer will have a performance boost by having a background process keep the recently posted documents updated and ready for viewing in the accounting source explorer.
-On the **Process automation administration** page > **Background processes**, there is a new process **Accounting source explorer background preprocessing**. This background process continuously looks for recently posted source document backed documents and keep the data structure used for the accounting source explorer up-to-date.
+> As of in Microsoft Dynamics 365 version 10.0.43, a **Enable financial tags for Accounting source explorer** feature is available in feature management. For more information, see [Financial tags](../general-ledger/financial-tag.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

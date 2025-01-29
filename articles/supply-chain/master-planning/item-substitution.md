@@ -21,7 +21,7 @@ You can use substitute materials during planning for items that use formulas or 
 Before you can use substitution in planning for formulas, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
-- The feature that's named *Item substitution (Plan group) support for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Item substitution (Plan group) support for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 Before you can use substitution in planning for BOMs, your system must meet the following requirements:
 
