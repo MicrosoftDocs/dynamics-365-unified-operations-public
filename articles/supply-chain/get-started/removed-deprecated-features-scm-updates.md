@@ -30,7 +30,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Adjustment out* work creation process. |
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Adjustment out* work creation process. |
 | **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Adjustment out* work creation process. The ability to turn off this option is being removed from the product. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
@@ -40,7 +40,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Spot cycle counting* work creation process. |
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Spot cycle counting* work creation process. |
 | **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Spot cycle counting* work creation process. The ability to turn off this option is being removed from the product. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
