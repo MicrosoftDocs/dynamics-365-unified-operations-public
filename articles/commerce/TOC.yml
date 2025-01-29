@@ -486,6 +486,8 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
+            - name: Offline reliability toast notifications in Store Commerce
+              href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
             - name: Dynamics 365 Commerce authentication flows

@@ -41,11 +41,9 @@ Separate reports provide information about each type of transaction. Use these r
 - **Materials in process** − This report lists the picking list transactions that are reported against the current production orders as of a specified transaction date. The report indicates the quantity of a component that was issued and the cost amount for each transaction. Use the selection criteria for a single component item. For example, you can print information about the component’s issued quantity against applicable production orders. The issued quantity isn't updated by the quantities that are reported as finished for the parent item. Therefore, the actual quantity of raw materials in process might be overstated.
 - **Work in process** − This report lists route transactions (or job transactions) that are reported against the current production orders as of a specified transaction date. The report indicates the hours, amount, and quantity (both good quantity and error quantity) that are reported for each transaction. It also includes information such as the operation number, operation ID, and operations resource. Additionally, this report shows the total time and amount for all transactions against the production order, and the quantity that is reported as finished.
 - **Indirect costs in process** − This report lists the indirect costs that have been incurred against production orders. This data is based on reported consumption of routing operations and components as of a specified transaction date. The report indicates the type of indirect cost (surcharge or rate), the costing sheet code for the indirect cost, and the cost amount for each transaction. This report doesn't provide information about the route card or pick list transaction that generated the indirect cost.
-- **In process production costing** − This report lists the combined consumption of material, routing operations, and indirect cost against the production orders as of a specified transaction date.
-- **Finished items in process** − This report lists current production orders and the report-as-finished transactions as of a specified transaction date.
 
 ## Related information
 
-[Common sources of production variances](common-sources-of-production-variances.md)
+- [Common sources of production variances](common-sources-of-production-variances.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

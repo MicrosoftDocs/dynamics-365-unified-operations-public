@@ -24,7 +24,7 @@ If you want to test Sensor Data Intelligence without installing any physical sen
 
 The following video shows how to set up a simulated sensor for testing. The remaining sections in this article provide the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE588g6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=73e8b915-2b43-4285-9100-9bd2a4ed1be6]
 
 ## Create a device in Azure IoT Hub
 

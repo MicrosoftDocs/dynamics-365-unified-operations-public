@@ -4,7 +4,7 @@ description: Access resources that describe the new and changed features in each
 author: kamaybac
 ms.author: kamaybac
 ms.topic: article
-ms.date: 04/02/2024
+ms.date: 01/07/2025
 ms.reviewer: kamaybac
 ms.collection: get-started 
 ms.search.form:

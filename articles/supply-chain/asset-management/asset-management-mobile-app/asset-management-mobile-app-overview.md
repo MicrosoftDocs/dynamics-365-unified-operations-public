@@ -3,11 +3,12 @@ title: Asset Management mobile app overview
 description: Learn about the Asset Management mobile app, including outlines on managing work orders, creating maintenance requests, and creating work orders.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: overview
-ms.date: 09/19/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: overview
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Asset Management mobile app overview
@@ -24,7 +25,7 @@ To use the app, you must have a fully implemented setup of Asset Management in y
 
 The following video shows how the Asset Management mobile app supports various business roles in common asset management scenarios.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0781126d-d706-42af-b4f5-e4f727a55e8e]
 
 The following illustration shows an example of a list of jobs for a work order in the Asset Management mobile app.
 

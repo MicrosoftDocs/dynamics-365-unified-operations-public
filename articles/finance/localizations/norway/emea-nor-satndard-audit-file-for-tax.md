@@ -4,7 +4,7 @@ description: Learn how to set up and generate the Standard Audit File for Tax (S
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 11/06/2024
+ms.date: 01/24/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -103,8 +103,8 @@ If you use option 1, the report doesn't consider option 2. If any of the sales t
 2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and then select **SAF-T Format (NO)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. On the **Application specific parameters** page, select the latest version of the format that you want to define conditions for.
-5. On the **Lookups** FastTab, select the **StandardTaxCodes\_Lookup** lookup, and define the appropriate conditions.
-6. On the **Conditions** FastTab, define which tax codes must correspond to a specific lookup result.
+5. On the **Lookups** FastTab, select the **StandardTaxCodes\_Lookup** lookup, and define the appropriate conditions. 
+6. On the **Conditions** FastTab, define which tax codes must correspond to a specific lookup result. Use "NA" lookup result for those tax codes that have no Norwegian standard VAT code and must be reported as "NA" in SAF-T.
 7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
 #### Option 2: Associate sales tax codes used in Finance with Norwegian standard VAT codes by using the External codes functionality

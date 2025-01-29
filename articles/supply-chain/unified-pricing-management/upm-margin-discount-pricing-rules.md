@@ -14,7 +14,7 @@ ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdj
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.34 GA -->
 
 This article explains how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts, and free-item discounts.
 
