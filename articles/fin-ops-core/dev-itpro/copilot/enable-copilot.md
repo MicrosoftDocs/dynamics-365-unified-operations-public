@@ -101,6 +101,7 @@ As was previously mentioned, most Copilot features in finance and operations app
 | All finance and operations apps | Basic Copilot support | There are no additional requirements. |
 | All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copilot-generative-help.md). |
 | All finance and operations apps | Workflow history summary | [Turn on Copilot support for the Workflow history page](../../fin-ops/organization-administration/workflow-history-summary.md) |
+| All finance and operations apps | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences](enable-copilot-feedback.md) |
 | Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md). |
 | Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md). |
 | Dynamics 365 Finance | Customer page summary | [Enable customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md). |

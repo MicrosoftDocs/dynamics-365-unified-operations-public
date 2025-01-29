@@ -15,6 +15,8 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.43 (January 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
         - name: Platform updates for version 10.0.42 (December 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
         - name: Platform updates for version 10.0.41 (September 2024)
@@ -1861,6 +1863,28 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
+        - name: Security governance (preview)
+          items:
+            - name: Set up security categories
+              href: ../fin-ops-core/fin-ops/sysadmin/security-category.md
+            - name: Set up security governance parameters
+              href: ../fin-ops-core/fin-ops/sysadmin/setup-security-gov-para.md 
+            - name: Set up a process hierarchy, roles, and privileges
+              href: ../fin-ops-core/fin-ops/sysadmin/setup-process-role-hierarchy.md        
+            - name: Security tasks under process hierarchy
+              href: ../fin-ops-core/fin-ops/sysadmin/usg-security-tasks-detailed.md          
+            - name: Security entry points under process hierarchy
+              href: ../fin-ops-core/fin-ops/sysadmin/entry-point-detailed.md
+            - name: Roles violating segregation of duties
+              href: ../fin-ops-core/fin-ops/sysadmin/roles-violating-sod.md
+            - name: Manage temporary roles 
+              href: ..fin-ops-core/fin-ops/sysadmin/temp-role-mgmt.md
+            - name: Security version management
+              href: ../fin-ops-core/fin-ops/sysadmin/security-version.md
+            - name: Privileged user management
+              href: ../fin-ops-core/fin-ops/sysadmin/priv-user-mgmt.md            
+            - name: Available reports for security
+              href: ../fin-ops-core/fin-ops/sysadmin/security-reports.md            
         - name: Entra ID security groups
           href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management
@@ -2307,6 +2331,8 @@ items:
           href: copilot/enable-copilot-generative-help.md
         - name: Add knowledge to generative help and guidance with Copilot
           href: copilot/extend-copilot-generative-help.md
+        - name: Enable enhanced user feedback for Copilot and related experiences (preview)
+          href: copilot/enable-copilot-feedback.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview

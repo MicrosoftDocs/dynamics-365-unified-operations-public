@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.43 (January)
+                  href: get-started/whats-new-changed-10-0-43.md
                 - name: Finance 10.0.42 (December)
                   href: get-started/whats-new-changed-10-0-42.md
                 - name: Finance 10.0.41 (September)  
                   href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
-                - name: Finance 10.0.39 (April)
-                  href: get-started/whats-new-changed-10-0-39.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -676,6 +676,8 @@
                   href: budgeting/budget-funds-available.md
                 - name: Budget analysis report
                   href: public-sector/budget-analysis-report.md
+                - name: Budget control statistics vs. Budget analysis report
+                  href: budget-control-statistics-and-budget-analysis-report.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
@@ -796,8 +798,6 @@
               href: general-ledger/Default-dimensions.md
             - name: Add financial dimensions to the CFO workspace
               href: general-ledger/CFO-workspace.md
-            - name: Highly variable dimensions
-              href: cost-accounting/high-var-dimensions.md
             - name: Create account structures
               href: general-ledger/tasks/create-account-structures.md
             - name: Budgeting overview
@@ -1094,6 +1094,8 @@
                       href: general-ledger/financial-dimensions.md
                     - name: Define financial dimensions
                       href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Highly variable dimensions
+                      href: cost-accounting/high-var-dimensions.md  
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
@@ -2440,12 +2442,16 @@
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
                   - name: Configure Ecuadorian purchase withholding book printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
+                  - name: Configure electronic invoice parameters for Ecuador
+                    href: localizations/iberoamerica/ltm-ecuador-conf-electronic-invoice.md
                   - name: Configure printing for the Ecuador Sales book by establishment report
                     href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
                   - name: Configure Simplified transactional appendix (ATS) printing
                     href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
                   - name: Post Ecuadorian refund invoice transactions
                     href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
+                  - name: Set up a legal entity and tax information for Ecuador
+                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Ecuador.md
                 - name: Egypt
                   items:
                     - name: Egypt overview
@@ -4381,6 +4387,8 @@
                   href: business-performance-analytics/install-bpa.md
                 - name: Configure security in business performance analytics
                   href: business-performance-analytics/set-up-security.md
+                - name: Custom report import, export, and migration
+                  href: business-performance-analytics/custom-reports.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model
@@ -5115,8 +5123,6 @@
                   href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Cost controlling
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
-                - name: Expense management
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Inventory on-hand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Invoice approvals
