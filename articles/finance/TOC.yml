@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.43 (January)
+                  href: get-started/whats-new-changed-10-0-43.md
                 - name: Finance 10.0.42 (December)
                   href: get-started/whats-new-changed-10-0-42.md
                 - name: Finance 10.0.41 (September)  
                   href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
-                - name: Finance 10.0.39 (April)
-                  href: get-started/whats-new-changed-10-0-39.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -5121,8 +5121,6 @@
                   href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Cost controlling
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
-                - name: Expense management
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Inventory on-hand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Invoice approvals
