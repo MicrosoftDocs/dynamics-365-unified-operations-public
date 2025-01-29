@@ -102,7 +102,7 @@ This aticle explains how to set up Intrastat parameters and transfer transaction
 ## Transfer transactions to the Intrastat
 1. Go **Tax** > **Declarations** > **Foreign trade** > **Intrastat** and select **Transfer**.
 2. In the **Customer invoice** field, select **Yes**.
-3. Select filter **Filter** button near the bottom of the pane, then in the list, mark the row with **Date**.
+3. Select the **Filter** button near the bottom of the pane, then in the list, mark the row with **Date**.
 4. In the **Criteria** field, enter a value. For example, enter the filter for the period January 2015 (the exact value depends on your date format): 1/1/2015..1/31/2015  
 5. Select **OK** and then select **Ok** again.
 6. In the list, find and select the transferred record.
