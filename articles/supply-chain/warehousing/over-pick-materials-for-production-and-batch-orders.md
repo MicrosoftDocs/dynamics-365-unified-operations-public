@@ -23,7 +23,7 @@ This feature lets workers who use the Warehouse Management mobile app over-pick 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.37 or later.
-- The feature that's named *Over-pick materials for production orders and batch orders* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.40, it's turned on by default.
+- The feature that's named *Over-pick materials for production orders and batch orders* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.40, it's turned on by default. As of version 10.0.43, it's mandatory and can't be turned off.
 - All products that you'll use this feature for must be enabled for warehouse management processes (WMS).
 
 ## Set up over-picking for production and batch orders

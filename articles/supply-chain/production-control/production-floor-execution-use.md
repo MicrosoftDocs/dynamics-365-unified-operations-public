@@ -153,7 +153,7 @@ When a worker completes or partially completes a job, they can report scrap by s
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
+<!-- KFM: Preview until 10.0.43 GA -->
 
 Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
