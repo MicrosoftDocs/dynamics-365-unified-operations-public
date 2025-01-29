@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 08/02/2024
+ms.date: 01/27/2025
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -61,14 +61,21 @@ The following Copilot features are currently available in finance and operations
 - For Dynamics 365 Supply Chain Management:
 
     - [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)
-    - [Analyze demand plans with Copilot (preview)](../../../supply-chain/demand-planning/demand-planning-copilot.md)
+    - [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md)
     - [Inquire into inventory with Copilot (preview)](../../../supply-chain/inventory/inventory-visibility-copilot-api.md)
     - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
     - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
 
 ## Responsible AI
 
-Microsoft is committed to applying [responsible AI practices](../../dev-itpro/responsible-ai/responsible-ai-overview.md) with Copilot. We ensure user privacy through stringent data protection measures and oversee content generation to maintain relevance and safety.
+Microsoft is committed to applying [responsible AI practices](../../dev-itpro/responsible-ai/responsible-ai-overview.md) with Copilot. We ensure user privacy through stringent data protection measures and oversee content generation to maintain relevance and safety. To learn more about responsible AI practices in Microsoft finance and operations apps, read the following articles:
+
+- [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview)
+- [Responsible AI FAQs for Dynamics 365 Supply Chain Management](/dynamics365/supply-chain/responsible-ai-overview)
+- [Responsible AI FAQs for Dynamics 365 Finance](/dynamics365/finance/transparency-note)
+- [Responsible AI FAQs for Dynamics 365 Human Resources](/dynamics365/human-resources/transpar-note-hr)
+- [Responsible AI FAQs for Microsoft Dynamics 365 Commerce](/dynamics365/commerce/responsible-ai/responsible-ai-overview)
+- [Responsible AI FAQs for Microsoft Dynamics 365 Project Operations](/dynamics365/project-operations/responsible-ai/responsible-ai-overview)
 
 ## Next steps
 
