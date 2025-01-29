@@ -1,14 +1,14 @@
 ---
 title: Confirm sales orders
 description: Learn how to confirm sales orders, including outlines and step-by-step processes for confirming singles sales orders and multiple sales orders at once.
-author: Henrikan
-ms.author: henrikan
-ms.topic: how-to
-ms.date: 02/06/2023
-ms.custom: bap-template
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup, SalesUnconfirmedOrdersPart
+ms.topic: how-to
+ms.date: 08/26/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Confirm sales orders
@@ -29,7 +29,7 @@ This procedure demonstrates how to confirm sales orders. You'll be shown how to 
 1. Select **OK**.
 1. Select **Yes**.
 1. Close the page.
-1. On the **Action Pane**, select **Options**.
+1. On the Action Pane, select **Options**.
 1. Select **Change view**.
 1. Select **Header view**. When an order is confirmed, the **Document status** is set to *Confirmation*.
 1. On the Action Pane, select **Sell**.

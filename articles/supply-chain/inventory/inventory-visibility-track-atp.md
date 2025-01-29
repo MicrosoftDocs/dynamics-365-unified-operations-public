@@ -1,7 +1,7 @@
 ---
-title: Track time-series inventory in Inventory Visibility (preview)
+title: Track time-series inventory in Inventory Visibility
 description: This article explains how to set up the integration of inventory time-series data in Microsoft Dynamics 365 Supply Chain Management with Inventory Visibility so that you can query the projected inventory by date and calculate ATP.
-author: yufeihuang
+author: yufei-huang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
@@ -11,19 +11,15 @@ ms.custom:
   - bap-template
 ---
 
-# Track time-series inventory in Inventory Visibility (preview)
+# Track time-series inventory in Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!--KFM: Preview until further notice -->
 
 The Inventory Visibility service enables external systems to query Microsoft Dynamics 365 Supply Chain Management for inventory changes that will occur up to 180 days in the future. In this way, users who work in an external system can view future inventory availability details and make accurate projections about when orders can be delivered.
 
 The Inventory Visibility service can import information about planned inbound and outbound inventory changes together with the related dates. Available-to-promise (ATP) functionality in Inventory Visibility can then query those time-series based inventory changes and calculate your omnichannel ATP. External systems can query and retrieve this information from Inventory Visibility in near-real time by calling its API.
 
 The *Inventory Visibility integration with ATP* feature that is described in this article adds support for out-of-box ATP integration between Supply Chain Management and Inventory Visibility. Therefore, you can easily bring expected inventory issue and receipts together with time-series information from Supply Chain Management into Inventory Visibility. You can also post updated scheduling information back to Supply Chain Management.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

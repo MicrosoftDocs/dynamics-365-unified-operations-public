@@ -1,15 +1,12 @@
 ---
 title: Set up parameters to post an intercompany order
 description: Learn how to set up parameters to post an intercompany order, including a step-by-step process for setting up parameters.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Set up parameters to post an intercompany order

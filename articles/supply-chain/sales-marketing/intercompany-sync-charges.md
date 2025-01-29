@@ -1,15 +1,12 @@
 ---
 title: Synchronize intercompany charges
 description: Learn about synchronization of intercompany charges, including outlines on changes that occur when the Allow price edit field is enabled or disabled.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Synchronize intercompany charges

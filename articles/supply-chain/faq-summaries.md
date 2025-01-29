@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 06/06/2024
+ms.date: 11/07/2024
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
@@ -31,10 +31,6 @@ AI summaries with Copilot use Copilot to generate natural-language summaries of 
 ## What is the intended use of AI summaries with Copilot?
 
 This section describes the intended use for each of the available summaries.
-
-### Warehouse Management mobile app insights
-
-Warehouse Management mobile app insights give workers information about the number of lines that must be picked as open work, the number of workers who are online at the warehouse, and the type of work that must be picked.
 
 ### Product hover and released product summaries
 
@@ -73,7 +69,7 @@ When you use the feature, follow these recommendations:
 - Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Always review the generated summaries before you make decisions based on the information that's provided.
 
-## See also
+## Related information
 
 - [AI summaries with Copilot](get-started/copilot-summaries-overview.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

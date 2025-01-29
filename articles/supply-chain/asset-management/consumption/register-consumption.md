@@ -1,16 +1,13 @@
 ---
 title: Register consumption
 description: Learn how to register consumption in Asset Management, including a step-by-step process for splitting hours on work orders with several work order jobs.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/21/2019
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Register consumption

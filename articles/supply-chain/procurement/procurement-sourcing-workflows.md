@@ -1,8 +1,8 @@
 ---
 title: Procurement and sourcing workflows
 description: Learn about purchase requisitions and purchase orders that are approved by a user other than the person who entered the transaction.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: WorkflowTableListPageRnr
 ms.topic: how-to
@@ -61,7 +61,7 @@ You can assign an approval step to the following groups of participants.
 | Queue | Assign the approval step to a work item queue. |
 | User | Assign the approval step to specific users. |
 
-## Additional resources
+## Related information
 
 - [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Purchase requisition workflow](purchase-requisitions-workflow.md)

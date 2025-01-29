@@ -1,8 +1,8 @@
 ---
 title: Set up vendor accounts
 description: Learn about the types of information that you must specify when you create a new vendor account, including an outline on vendor account numbers.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 
@@ -31,6 +31,10 @@ When you create a vendor account, you enter information about the vendor. This i
 To speed up the process of creating vendor accounts, you can create templates. To create a template, on the **Vendor** page, on the Action Pane, select **Options \> Record info**. Then select **Company accounts template**. Company account templates are shared with other users.  
 
 You can also create a user template for your own use. You can't delete a vendor that is associated with other records, such as contacts or products.
+
+## Create, edit, and manage vendor accounts
+
+To create, edit, and manage vendor accounts, go to **Procurement and sourcing** \> **Vendors** \> **All vendors**. Learn more in [Set up vendor accounts](set-up-vendor-accounts.md).
 
 ## Vendor account numbers
 

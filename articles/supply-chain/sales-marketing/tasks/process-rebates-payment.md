@@ -1,16 +1,13 @@
 --- 
 title: Process rebates for payment
 description: Learn how to convert approved and processed customer rebates to credit notes, including a step-by-step process for converting rebate claims to credit notes.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 11/10/2016
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form:
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Process rebates for payment

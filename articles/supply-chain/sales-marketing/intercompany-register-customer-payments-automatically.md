@@ -1,15 +1,12 @@
 ---
 title: Register payments automatically for intercompany customer invoices
 description: Learn how to register payments automatically for intercompany customer invoices, including a step-by-step process for registering payments.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Register payments automatically for intercompany customer invoices

@@ -1,22 +1,18 @@
 ---
 title: Accruing subscriptions  
 description: With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 04/30/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionGroup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Accruing subscriptions 
+# Accruing subscriptions
 
 [!include [banner](../includes/banner.md)]
-
 
 With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
 
@@ -28,11 +24,10 @@ You can accrue and reverse accrued revenue.
 
 If you credit invoiced subscription amounts, you can use two methods to reverse the accrual amounts:
 
-  - You can reverse each accrued revenue transaction individually before you create the credit note proposal for the transaction. This is the manual method. (manual)
+- You can reverse each accrued revenue transaction individually before you create the credit note proposal for the transaction. This is the manual method. (manual)
+- You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-  - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
-
-For more information, see [Subscription parameters (form)](/dynamicsax-2012//subscription-parameters-form).
+Learn more in [Subscription parameters (form)](/dynamicsax-2012/subscription-parameters-form).
 
 ## Setup requirements
 
@@ -46,17 +41,17 @@ When you post accrued revenue, the **WIP - subscription** account is debited wit
 
 ## Set up accounts for accrual of subscription revenue
 
-1.  Click **Project management and accounting** \> **Setup** \> **Posting** \> **Ledger posting setup**.
+1. Go to **Project management and accounting** \> **Setup** \> **Posting** \> **Ledger posting setup**.
 
-2.  Click the **Revenue accounts** tab, and select **WIP - subscription** or **Accrued revenue - subscription** to set up the accounts.
+2. Select the **Revenue accounts** tab, and select **WIP - subscription** or **Accrued revenue - subscription** to set up the accounts.
 
 ## Subscription group setup
 
-To be able to accrue revenue for subscriptions, the **Accrue revenue** check box must be selected. This is found on the **Subscription groups** form for the group that is attached to the subscription. Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+To be able to accrue revenue for subscriptions, the **Accrue revenue** check box must be selected. This is found on the **Subscription groups** page for the group that is attached to the subscription. Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
 ## Enable revenue accrual on a subscription group
 
-Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
 ## Periods
 
@@ -115,12 +110,10 @@ The following table provides an overview of which accrual periods can be set up 
 </tbody>
 </table>
 
-Setting up the invoicing period is a mandatory part of the overall subscription group setup. You can decide whether to also set up an accrual period for the subscription group. If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field. This field is found in the **Accrue subscription revenue** form, when you accrue subscription revenue. However, the accrual period is optional information about the subscription group.
-
+Setting up the invoicing period is a mandatory part of the overall subscription group setup. You can decide whether to also set up an accrual period for the subscription group. If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field. This field is found on the **Accrue subscription revenue** page, when you accrue subscription revenue. However, the accrual period is optional information about the subscription group.
 
 > [!NOTE]
-> <P>Use the following path to open the <STRONG>Accrue subscription revenue</STRONG> form. Click <STRONG>Service management</STRONG> &gt; <STRONG>Periodic</STRONG> &gt; <STRONG>Service subscriptions</STRONG> &gt; <STRONG>Accrue subscription revenue</STRONG>.</P>
-
+> Use the following path to open the **Accrue subscription revenue** page. Go to **Service management** &gt; **Periodic** &gt; **Service subscriptions** &gt; **Accrue subscription revenue**.
 
 ## Transactions
 
@@ -128,18 +121,12 @@ You can control the number of ledger transactions that are created when you post
 
 ## Specify the level of posting details to display for accrued transactions
 
-1.  Click **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
+1. Go to **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
 
-2.  On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.
+2. On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.
 
+## Related information
 
-## See also
-
-[Accrue subscription revenue](accrue-subscription-revenue.md)
-
-  
-
-
-
+- [Accrue subscription revenue](accrue-subscription-revenue.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

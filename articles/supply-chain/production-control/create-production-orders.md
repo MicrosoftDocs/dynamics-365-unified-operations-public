@@ -7,11 +7,7 @@ ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
 ms.collection: get-started
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ProdTable, ProdTableCreate
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: bbb6e69d-479c-45fc-a0a8-66da5df16c7f
 ---
 

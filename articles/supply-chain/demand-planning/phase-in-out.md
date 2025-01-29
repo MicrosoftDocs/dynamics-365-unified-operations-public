@@ -1,10 +1,10 @@
 ---
 title: Use phase in/out functionality to simulate planned changes
 description: Learn how to use phase in/out functionality to set up forecasts and calculations that simulate changes that you plan to make.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
-ms.date: 05/29/2024
+ms.date: 11/29/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -20,7 +20,7 @@ Phase in/out functionality lets you set up forecasts and calculations that simul
 - Replace an older product with a new, similar one.
 - Open a new store or warehouse that should be similar to an existing one.
 
-To apply calculations of this type, add a *Phase in/out* tile to the relevant calculation model or forecast model. The *Phase in/out* tile uses a *phase in/out rule group* to modify a selected data column based on values that are found in the same column or another column of the time series. Each phase in/out rule group defines selection criteria that identify input and output columns, a period to apply the calculation during, and a scaling factor to apply during that period.
+To apply calculations of this type, add a *Phase in/out* step to the relevant calculation model or forecast model. The *Phase in/out* step uses a *phase in/out rule group* to modify a selected data column based on values that are found in the same column or another column of the time series. Each phase in/out rule group defines selection criteria that identify input and output columns, a period to apply the calculation during, and a scaling factor to apply during that period.
 
 ## Example: Phase in a new product that replaces an existing product
 
@@ -65,7 +65,7 @@ Use phase in/out rule groups to define the phase in/out calculations that are ap
     - **Name** – Enter a name for the rule group.
     - **Description** – Enter a short description of the rule group.
     - **Owner** – Select the user account that owns the rule group. (This field is available only in the wizard.)
-    - **Active** – Set this option to *Yes* or *No*. Only active rules groups can be assigned to the phase in/out tiles of your forecast or calculation models.
+    - **Active** – Set this option to *Yes* or *No*. Only active rules groups can be assigned to the phase in/out steps of your forecast or calculation models.
     - **Rules** – Use the fields on this tab to define the phase in/out calculations that the group does. For information about how to use these fields, see the next section.
 
 1. Follow one of these steps:
@@ -92,9 +92,9 @@ In the **Edit rule** dialog box, set the following fields for each rule:
     - *Phase out* – The rule takes a value from the data column that you identify in the **Copy data from** section, multiplies it by the **Uplift/reduction factor (%)** value, and sets the result as the new value for the same data column that you identify in the **Copy data from** section.
 
 - **Uplift/reduction factor (%)** – Specify a factor (as a percentage) to apply to the input time series values.
-- **Copy data from** – Use this section to specify criteria for selecting input values for the calculation. You can use the **Add condition** button to add as many rows as you need. The data tables that are listed are the data tables that are defined in Demand planning. (For more information, see [View and customize tables for holding imported data](tables.md).) You typically use this section to identify a product from the product table that you want to phase in or out.
+- **Copy data from** – Use this section to specify criteria for selecting input values for the calculation. You can use the **Add condition** button to add as many rows as you need. The data tables that are listed are the data tables that are defined in Demand planning. (Learn more in [View and customize tables for holding imported data](tables.md).) You typically use this section to identify a product from the product table that you want to phase in or out.
 - **Apply data to** – This section applies only to phase in rules. (Phase out rules always apply to the same data columns that are identified in the **Copy data from** section.) Specify criteria for selecting the data column that the phase in rule applies to. You typically use this section to identify a new product that you're phasing in. You can use the **Add condition** button to add as many rows as you need.
 
-## Assign rule groups to phase in/out tiles
+## Assign rule groups to phase in/out steps
 
-After you finish setting up your rule groups, you can use them by putting *Phase in/out* tiles at the appropriate positions in your calculation models and forecast models. For more information, see [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
+After you finish setting up your rule groups, you can use them by putting *Phase in/out* steps at the appropriate positions in your calculation models and forecast models. Learn more in [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).

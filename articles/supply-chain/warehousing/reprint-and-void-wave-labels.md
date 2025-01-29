@@ -1,16 +1,13 @@
 ---
 title: Reprint and void wave labels
 description: Learn how to void and reprint existing wave labels, including outlines on reprinting labels from the web client and reprinting labels from the warehousing app.
-author: perlynne
+author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
 ms.date: 07/09/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-07-09
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
-ms.dyn365.ops.version: 10.0.2
 ---
 
 # Reprint and void wave labels
@@ -211,7 +208,7 @@ Work exceptions control the behavior of short picking. Follow these steps to set
 1. Select the work exception code that you created for this scenario.
 1. If you selected the correct exception, the **Void and reprint** check box should be available. Select this box and confirm. When confirmed, the label roll sequence identified by the **Label build ID** field is recalculated based on the changed work line quantity. It's then reprinted on the specified printer.
 
-## Additional resources
+## Related information
 
 - [Wave label printing](configure-wave-label-printing.md)
 

@@ -41,6 +41,4 @@ This article explains how to record the Tax Deducted at Source (TDS) concession 
 
 11. In the **Certificate** field, enter the TDS concession certificate number.
 
-    [![Certificate FastTab.](../media/apac-ind-TDS-33.png)]
-
 12. Close the page.

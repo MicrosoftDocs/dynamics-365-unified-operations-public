@@ -3,7 +3,6 @@ title: Inventory Visibility tips
 description: Access a few tips that you should consider when you set up and use the Inventory Visibility Add-in, including tips about Microsoft Entra environments.
 author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: conceptual
 ms.date: 06/24/2024

@@ -1,13 +1,12 @@
 ---
 title: Inventory On-hand mobile app
 description: Learn about the function of the Inventory On-hand mobile app and how to onboard it, including prerequisites and system requirements.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 11/15/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -33,7 +32,7 @@ Before you can start to onboard the Inventory On-hand mobile app, you must meet 
 
 ### System requirements
 
-To run the latest Inventory On-hand mobile app, you must be using Supply Chain Management version 10.0.38 or later.
+To run the latest Inventory On-hand mobile app, you must be using Supply Chain Management version 10.0.40 or later.
 
 ### Set up Dataverse for your Supply Chain Management environment
 
@@ -49,17 +48,18 @@ You must install the Inventory On-hand mobile app in your Dataverse environment 
 
 Follow these steps to install the Inventory On-hand mobile app in Dataverse.
 
-1. In AppSource, find [Dynamics 365 Inventory On-hand Mobile Application](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-scm-inventoryonhandmobileapp).
-1. Select **Get it now**.
-1. Follow the on-screen instructions to install the app in the Dataverse environment that's connected to your target Supply Chain Management environment.
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**.
+1. Search for and select the app named *Dynamics 365 Inventory On-hand Mobile Application*.
+1. On the top toolbar, select **Install**.
+1. Select the environment where you want to install the app, review the packages that will be installed, and select the **I agree to the terms of service** checkbox.
+1. Select **Install**.
 
-## Grant access to the mobile app in Dataverse
+## Share the mobile app and assign security roles
 
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Inventory On-hand mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
-The security roles that can access and query on-hand inventory through the mobile app are inherited from your Supply Chain Management setup. Therefore, any user (such as a sales manager, warehouse manager, or production manager) that can access the on-hand inventory list in Supply Chain Management can also query and view that data in the Inventory On-hand mobile app.
-
-For more information about how to set up roles and security in Supply Chain Management, see [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+The security roles that can access and query on-hand inventory through the mobile app are inherited from your Supply Chain Management setup. Therefore, any user (such as a sales manager, warehouse manager, or production manager) that has the security roles required to access the on-hand inventory list in Supply Chain Management can also query and view that data in the Inventory On-hand mobile app. For more information about how to set up roles and security in Supply Chain Management, see [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ## Install and open the Inventory On-hand mobile app
 
@@ -82,3 +82,25 @@ Follow these steps to clear the Power Apps cache on a mobile device.
 1. In the upper left of the page, select the image for your user account to open the settings menu.
 1. Select **Clear cache** to open the **Clear cache** dialog box.
 1. Select **Confirm**.
+
+## Frequently asked questions
+
+### What platforms and mobile devices are supported?
+
+The Inventory On-hand mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app can also run the Inventory On-hand mobile app. Learn more in [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
+
+### Why don't I see anything when I sign in to the app?
+
+If you don't see any features in the app, you probably lack the permissions required to access them. Access is controlled by the security roles assigned to your user account in Supply Chain Management. The roles you need are the same as those required to access the on-hand inventory list in Supply Chain Management. Learn more in [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+
+### Can I customize and extend the app?
+
+No, it isn't currently possible to customize or extend the app.
+
+### Does the app support offline mode?
+
+No, the Inventory On-hand mobile app doesn't currently support offline mode.
+
+### Is there multi-language support?
+
+Yes, the Inventory On-hand mobile app is available in all the same languages as Supply Chain Management. The language is set according to your mobile device settings.

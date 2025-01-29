@@ -1,8 +1,8 @@
 ---
 title: Shipping containers
 description: Learn how to set up shipping containers for the Landed cost module, including an outline on setting up container types and a table defining various fields.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: ITMContainerTypeTable, ITMContainerTable, ITMContainerUnitTypeTable, ITMRefrigerationTypeTable, ITMContainersListPage, ITMContainers
 ms.topic: how-to
@@ -44,7 +44,7 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 | Field | Description |
 |---|---|
 | Shipping container | Enter a unique identification name/number for the shipping container. |
-| Shipping container type | Select the type of shipping container. For more information, see the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
+| Shipping container type | Select the type of shipping container. Learn more in the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
 
 > [!NOTE]
 >

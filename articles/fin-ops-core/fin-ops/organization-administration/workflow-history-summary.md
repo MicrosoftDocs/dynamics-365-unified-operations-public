@@ -2,7 +2,7 @@
 title: Workflow history summary
 description: This topic describes the copilot capabilities on the Workflow history page.
 author: JodiChristiansen
-ms.date: 06/03/2024
+ms.date: 01/23/2025
 ms.topic: article
 ms.custom: 
   - bap-template

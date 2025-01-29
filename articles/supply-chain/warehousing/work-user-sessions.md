@@ -1,13 +1,12 @@
 ---
 title: Inspect details of active Warehouse Management mobile app sessions
 description: Learn how to view a detailed history of XML messages and errors that are associated with all active Warehouse Management mobile app sessions.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/26/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
 ---
 
@@ -15,7 +14,7 @@ ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
 
 [!include [banner](../includes/banner.md)]
 
-The whole time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app.md), the system maintains a *work user session* for that user. You can view the details of each active work user session by going to **Warehouse management \> Periodic tasks \> Work user sessions**. For each session, the **Work user sessions** page shows associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** values, together with a detailed history of XML communication messages and logged errors.
+The whole time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app.md), the system maintains a *work user session* for that user. You can view the details of each active work user session by going to **Warehouse management** \> **Inquiries and reports** \> **Mobile device logs** \> **Work user sessions**. For each session, the **Work user sessions** page shows associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** values, together with a detailed history of XML communication messages and logged errors.
 
 > [!NOTE]
 > If no historical data appears on the **Work user sessions** page, a cleanup job, such as [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management), might be running.
@@ -43,7 +42,7 @@ The following example shows XML content that was copied from a *Mixed license pl
     <UserCulture>en-us</UserCulture>
     <UserDateCulture>en-us</UserDateCulture>
     <OperationalInsightsInstrumentationKey />
-    <ServerAadTenantId>4dbfcf74-c5a6-4727-b638-d56e51d1f381</ServerAadTenantId>
+    <ServerAadTenantId>ffffaaaa-5555-bbbb-6666-cccc7777dddd</ServerAadTenantId>
     <ServerEnvironmentId /><ServerAzureRegion /><ServerVersion /><BatchFlightsEnabled />
     <Device DeviceId="{C1DEE34C-69FA-44DD-BE17-2655931016CC}" /><ServerActivity ServerActivityId="{B2AAD7A2-7674-0006-E259-ABB27476D901}" />
 </ParentNode>

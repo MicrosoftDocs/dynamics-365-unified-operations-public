@@ -53,13 +53,6 @@ The job card device supports three scenarios for reporting on batch items. These
 - **Predefined batch numbers** - Workers select a batch number in a list of batch numbers that the system automatically generates before the production order is released to the job card device.
 - **Fixed batch numbers** - Workers don't enter or select a batch number. Instead, the system automatically assigns a batch number to the production order before it's released.
 
-### Enable the feature on your system
-
-To enable your job card devices to accept a batch number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
-
-- *Improved user experience for the Report progress dialog in the Job Card Device*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
-- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
-
 ### Configure products that require batch number reporting
 
 To enable a product to support any of the available batch-controlled scenarios, follow these steps:
@@ -130,13 +123,6 @@ The job card device supports three scenarios for reporting on serial-controlled 
 - **Manually assigned serial numbers** - Workers enter a custom serial number. This serial number might come from an external source that isn't known to the system.
 - **Predefined serial numbers** - Workers select a serial number in a list of serial numbers that the system automatically generates before the production order is released to the job card device.
 - **Fixed serial number** - Workers don't enter or select a serial number. Instead, the system automatically assigns a serial number to the production order before it's released.
-
-### Enable the feature on your system
-
-To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
-
-- *Improved user experience for the Report progress dialog in the Job Card Device*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
-- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ### Configure products that require serial-number reporting
 
@@ -223,7 +209,7 @@ To control whether workers should reuse an existing license plate or generate a 
 ![Configure job card for devices page.](media/config-job-card-raf.png "Configure job card for devices page")
 
 > [!NOTE]
-> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
+> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. Learn more in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

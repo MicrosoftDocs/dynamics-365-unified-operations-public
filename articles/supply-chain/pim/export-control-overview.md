@@ -1,13 +1,12 @@
 ---
 title: Advanced export management overview
 description: Learn about the advanced export management solution that lets you manage, track, and check export compliance with an outline on jurisdictions.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 08/29/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

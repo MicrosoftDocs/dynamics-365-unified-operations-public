@@ -4,11 +4,10 @@ description: Learn about how you can stay compliant with the user licensing requ
 author: VolkerDeuss
 ms.author: gned
 ms.topic: how-to
-ms.date: 04/02/2024
+ms.date: 12/26/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
@@ -37,7 +36,7 @@ The rest of this article describes the different tools that you can use to ensur
 
 ## License requirement per role
 
-The **Assign roles to user** dialog box that's opened from the **Users** page can help you understand the impact on user licensing when roles are assigned. You can also use it to get an overview of the licensing requirements for each role. You can use the dialog box itself or export data to Excel for further analysis. Custom roles can require licenses for more than one application.
+The **Assign roles to user** dialog box that's opened from the **System Administration** \> **Security** \> **Users** page can help you understand the impact on user licensing when roles are assigned. You can also use it to get an overview of the licensing requirements for each role. You can use the dialog box itself or export data to Excel for further analysis. Custom roles can require licenses for more than one application.
 
 If a role has unexpected licensing requirements, you can use the **View permissions** page to understand what security resources and grants are driving the requirements.
 
@@ -77,7 +76,7 @@ You can use the **Role to user assignment** report or the **Assign users to role
 For internal security and to help avoid licensing requirements for users who have left or aren't actively using the finance and operations apps, we recommend that you disable those users on the **Users** page.
 
 > [!NOTE]
->  The System Administrator role is a special role in Microsoft Dynamics AX that grants users full access to manage system artifacts. Users assigned this role cannot be restricted or modified by other roles and are exempt from licensing requirements. This means that individuals with this role don'tt need to purchase more licenses to configure and administer Dynamics 365 applications.
+>  The System Administrator role is a special role in finance and operations apps that grants users full access to manage system artifacts. Users assigned to this role cannot be restricted or modified by other roles and are exempt from licensing requirements. This means that individuals with this role don't need to purchase additional licenses to configure and administer Dynamics 365 applications.
 
 ## User license counts report
 

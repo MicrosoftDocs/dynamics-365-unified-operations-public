@@ -1,16 +1,12 @@
 ---
 title: Calculations for product configuration models FAQ
 description: Learn about calculations for product configuration models and explains how to use calculations together with constraints.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 11/03/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntimeConfigurator
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
 ---
 

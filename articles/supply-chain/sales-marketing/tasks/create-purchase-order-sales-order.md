@@ -1,16 +1,14 @@
---- 
+---
 title: Create a purchase order from a sales order
 description: Learn how to create a purchase order that is based on a sales order, including a step-by-step process for creating purchases orders from sales orders. 
-author: Henrikan
-ms.author: henrikan
-ms.topic: how-to
-ms.date: 06/26/2019
-ms.custom:
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 08/26/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Create a purchase order from a sales order
@@ -19,46 +17,45 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure shows you how to create a purchase order that is based on a sales order. The product's quantities on the purchase order are then designated to fulfill the demand of the originating sales order. Fulfilling sales demand this way is an alternative to a more comprehensive and optimized method of Distribution Requirements Planning. You can run this procedure in demo data company USMF or on your own data.
 
-
 ## Create a purchase order from a sales order
+
 1. Go to **Sales and marketing > Sales orders > All sales orders**.
-2. Click **New**.
-3. In the **Customer account** field, click the drop-down button to open the lookup.
-4. In the list, find and select the desired record.
-5. Click **OK**.
-6. In the **Item number** field, click the drop-down button to open the lookup.
-7. In the list, find and select the desired record. If you're using USMF, you could select D0001.  
-8. In the **Quantity** field, enter a number.
-9. Click **Add line**.
-10. In the **Item number** field, click the drop-down button to open the lookup.
-11. In the list, find and select the desired record. If you're using USMF, you could select T0020.  
-12. In the list, click the link in the selected row.
-13. In the **Quantity** field, enter a number.
-14. Click **Save**.
-15. On the **Action Pane**, click **Sales order**.
-16. Click **Purchase order**. The **Create purchase order** page lists all the open sales order lines which have been copied from the sales order. You can review the order details, and if required, you can modify selected details such purchase quantity and pricing terms, before you create the purchases. 
-17. Select the **Include all option**.
+1. Select **New**.
+1. In the **Customer account** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. Select **OK**.
+1. In the **Item number** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record. If you're using USMF, you could select *D0001*.  
+1. In the **Quantity** field, enter a number.
+1. Select **Add line**.
+1. In the **Item number** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record. If you're using USMF, you could select *T0020*.  
+1. In the list, select the link in the selected row.
+1. In the **Quantity** field, enter a number.
+1. Select **Save**.
+1. On the Action Pane, select **Sales order**.
+1. Select **Purchase order**. The **Create purchase order** page lists all the open sales order lines that have been copied from the sales order. You can review the order details, and if necessary, you can modify selected details such purchase quantity and pricing terms, before you create the purchases.
+1. Select the **Include all option**.
     - If you want to generate purchase orders for only a subset of the sales order lines, select these individually.  
-    - The **Vendor account** field may or may not already be populated with a vendor number. If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied  to the line. Otherwise, you must enter a vendor manually.  In this guide, regardless of whether the **Vendor account** field already contains a value or not, the following steps instruct you to select a new vendor which is different for each line.  
-18. In the **Vendor account** field, click the drop-down button to open the lookup.
-19. In the list, find and select the desired record.
-20. In the list, click the link in the selected row.
-21. Select the second order line.
-22. In the **Vendor account** field, click the drop-down button to open the lookup.
-23. In the list, find and select the desired record.
-24. In the list, click the link in the selected row.
-25. Click **Validate**.
-26. Click **OK**. The message informs you that one or more purchase orders have been created. The system generates a separate purchase order for each vendor that you specified for the sales order lines. This means that if several sales order lines are to be supplied by the same vendor, a single purchase order with multiple lines will be generated.  
+    - The **Vendor account** field might or may might already be populated with a vendor number. If the default vendor is set up for the product (on the associated Item coverage), then this vendor will be copied  to the line. Otherwise, you must enter a vendor manually. In this article, regardless of whether the **Vendor account** field already contains a value or not, the following steps instruct you to select a new vendor that is different for each line.  
+1. In the **Vendor account** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select the second order line.
+1. In the **Vendor account** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **Validate**.
+1. Select **OK**. The message informs you that one or more purchase orders have been created. The system generates a separate purchase order for each vendor that you specified for the sales order lines. This means that if several sales order lines are to be supplied by the same vendor, a single purchase order with multiple lines will be generated.  
 
 ## Review purchase orders created from sales orders
-1. On the **Action Pane**, click **General**.
-2. Click **Related orders**. The **Related orders** page lists all the orders that were created from the sales order. In this example, there are two purchase orders generated for two different vendors respectively. 
-3. Click to follow the link in the **Purchase order** field. Each purchase order line is associated with the sales order line that led to the purchase. The relation to the sales order is indicated on the **Product tab** in the **Line details** Fasttab, in the **Reference type**, **Reference number**, and **Reference lot** fields.  
-4. Expand or collapse the **Line details** section.
-5. Click the **Product** tab.
+
+1. On the Action Pane, select **General**.
+1. Select **Related orders**. The **Related orders** page lists all the orders that were created from the sales order. In this example, there are two purchase orders generated for two different vendors respectively.
+1. Select to follow the link in the **Purchase order** field. Each purchase order line is associated with the sales order line that led to the purchase. The relation to the sales order is indicated on the **Product tab** in the **Line details** FastTab, in the **Reference type**, **Reference number**, and **Reference lot** fields.  
+1. Expand or collapse the **Line details** section.
+1. Select the **Product** tab.
     - The **Reference lot** guarantees that the costs from the current purchase are charged on the attached sales order.  
     - You can navigate to the originating sales order by opening the link in the **Reference number** field.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

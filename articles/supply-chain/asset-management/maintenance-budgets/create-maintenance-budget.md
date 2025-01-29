@@ -1,16 +1,13 @@
 ---
 title: Create maintenance budgets
 description: Learn how to create a maintenance budget in Asset Management, including a step-by-step process for creating maintenance budgets.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/13/2019
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2019-08-30
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Create maintenance budgets

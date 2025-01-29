@@ -2,16 +2,15 @@
 title: Work with modules
 description: This article describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.search.industry: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Work with modules

@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 05/17/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-05-17
 ms.search.form:
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Assign step icons and titles for the Warehouse Management mobile app
@@ -426,7 +423,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 
 You then construct a `WHSMobileAppStepInfo` object, and set the icon and/or title directly.
 
-## Additional resources
+## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Mobile device user settings](mobile-device-user-settings.md)

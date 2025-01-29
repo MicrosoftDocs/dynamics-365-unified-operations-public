@@ -1,13 +1,12 @@
 ---
 title: Mobile device container packing policies
 description: Learn about mobile device container packing policies, which let you control the packing process that's supported by the Warehouse Management mobile app.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 01/30/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -16,13 +15,6 @@ ms.search.form:
 Mobile device container packing policies let you control the packing process that's supported by the Warehouse Management mobile app.
 
 For more information about how packing containers work with the Warehouse Management mobile app, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). For an example that shows how to set up and use this functionality, see [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
-
-## Prerequisites
-
-To use this feature, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.32 or later.
-- The feature that's named *Pack containers using the Warehouse Management mobile app* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
 ## Set up mobile device container packing policies
 
@@ -86,7 +78,7 @@ For a mobile device container packing policy to take effect, you must assign it 
     - **Activity code** – This field must be set to *Pack inventory into containers*.
     - **Packing policy ID** – Select the mobile device container packing policy to use with the menu item.
 
-## Additional resources
+## Related information
 
 - [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)
 - [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md)

@@ -1,13 +1,12 @@
 ---
 title: Transform data
 description: Learn how to transform the imported data in a selected table into time series. You can then use the time series to create a forecast or do calculations.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

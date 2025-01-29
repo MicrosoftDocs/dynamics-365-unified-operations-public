@@ -2,16 +2,15 @@
 title: Identity management pages and modules
 description: This article covers identity management pages and modules in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/01/2021
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2021-01-15
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Identity management pages and modules

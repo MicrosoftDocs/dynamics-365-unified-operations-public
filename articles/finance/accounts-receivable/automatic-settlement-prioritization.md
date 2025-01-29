@@ -1,8 +1,8 @@
 ---
 title: Automatic settlement and prioritization
 description: Learn about how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 01/30/2019
 ms.reviewer: twheeloc

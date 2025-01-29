@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.38
 # New financial dimension sets
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Finance version 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available. When you turn on this feature, the process of creating new balances is initiated. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
 
@@ -53,7 +52,7 @@ The below table describes the old data model and the new data model used for thi
 | GeneralLedgerBalance, GeneralLedgerMainAccountBalance | DimensionFocusBalance | FocusDimensionHierarchy and FocusLedgerDimension are removed from the balance tables. The data is now aggregated by the original GeneralJournalAccountEntry.LedgerDimension value (no new DimensionAttributeValueCombination records created for balances any longer). <br> The GeneralLedgerMainAccountBalance stores balances at the main account level only as a performance optimization as the primary use case scenario. |
 | GeneralLedgerBalanceReportingDimension | DimensionAttributeValueCombination, DimensionAttributeValueGroupCombination, DimensionAttributeValueGroup, DimensionAttributeValue, DimensionAttributeLevelValue, etc. | New tables store segment values of the dimension attribute value natural key values in hierarchical order based on the dimension set. |
 | GeneralLedgerBalanceReportingDimensionReference | DimensionFocusLedgerDimensionReference | The new table is the link between the original ledger account and reporting account structure per dimension set. |
-| GeneralLedgerBalanceUnprocessedTransactions | DimensionFocusUnporcessedTransactions | Records to perform incremental update of balances no longer created per dimension set. |
+| GeneralLedgerBalanceUnprocessedTransactions | DimensionFocusUnprocessedTransactions | Records to perform incremental update of balances no longer created per dimension set. |
 
 
 For more information, see [Financial dimensions](financial-dimensions.md).

@@ -1,8 +1,8 @@
 ---
 title: Manage shipping containers
 description: Learn how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 
@@ -86,7 +86,7 @@ The following table describes the buttons that are available on the **General** 
 | Receipts list | Post a receipt list for all purchase order lines in the shipping container.  |
 | Product Receipt | View the product receipt record, if it's used. The product receipt process will be used only if the goods don't use goods-in-transit functionality. |
 | Item arrival | View the item arrival journal for the shipping container, if that journal is used. |
-| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. For more information, see [Multi-leg journey setup](multi-leg-journey-setup.md). |
+| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. Learn more in [Multi-leg journey setup](multi-leg-journey-setup.md). |
 | Tracking | View or update shipment tracking. |
 | Goods in transit orders | You can open the **Goods in transit** page directly from the container. That page shows the goods-in-transit records for the selected shipping container only. |
 
@@ -103,14 +103,14 @@ The following table describes the settings that are available on the **General**
 | Shipping container | The name of the shipping container. |
 | Voyage | The voyage that is associated with the shipping container. |
 | Shipping container type | Enter the shipping container type. This field must be set. You can use it to determine the cost for freight, for example, by selecting the auto cost that is associated with the shipping container type. |
-| Vessel | Enter or select the vessel. If the vessel isn't listed as a value, you can enter the vessel ID as free text. In that case, the main table isn't updated so that the vessel ID can be selected in this field later. For more information, see [Vessels](shipping-information-setup.md#vessels). |
-| Unit type | Unit types are used as an additional means of grouping and identifying shipping containers. They're shown and selected on the shipping container page. For more information, see [Set up unit types](shipping-container-setup.md#unit-types). |
-| Refrigeration type | Refrigeration types are used as an additional means of grouping and identifying shipping containers, usually refrigerated containers. They're shown and selected on the shipping container page. For more information, see [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
+| Vessel | Enter or select the vessel. If the vessel isn't listed as a value, you can enter the vessel ID as free text. In that case, the main table isn't updated so that the vessel ID can be selected in this field later. Learn more in [Vessels](shipping-information-setup.md#vessels). |
+| Unit type | Unit types are used as an additional means of grouping and identifying shipping containers. They're shown and selected on the shipping container page. Learn more in [Set up unit types](shipping-container-setup.md#unit-types). |
+| Refrigeration type | Refrigeration types are used as an additional means of grouping and identifying shipping containers, usually refrigerated containers. They're shown and selected on the shipping container page. Learn more in [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
 | Measurement | This field enables a measurement to be specified in the **Landed cost** module. Measurements are often used by organizations that don't know the individual volume or weight of goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight in kilograms or the cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected, or it can be manually entered. |
 | Measurement unit | The unit of measure that applies to the number in the **Measurement** field. |
 | Actual weight | You can record the actual weight of the carton or container. This value can be used for verification against the maximum weight that is allowed in the setup of a shipping container. |
 | Number of cartons | The number of cartons is automatically updated if the parameter is selected. |
-| Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
+| Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. Learn more in [Description of goods](shipping-information-setup.md#description-of-goods). |
 | House air waybill/Bill of lading | You can specify the house air waybill or bill of lading for the shipping container. |
 | Remarks | Additional information that is related to the shipping container. |
 | Returnable | A value that indicates whether the shipping container can be returned after the voyage. |

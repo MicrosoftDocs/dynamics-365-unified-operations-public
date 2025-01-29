@@ -2,16 +2,16 @@
 title: User-defined certificate profiles for retail stores
 description: This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/03/2023
-ms.topic: article
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2020-10-09
-ms.dyn365.ops.version: 10.0.15
-ms.search.industry: Retail
 ms.search.form: RetailFormLayout, RetailParameters
+ms.custom: 
+  - bap-template
 ---
 # User-defined certificate profiles for retail stores
 

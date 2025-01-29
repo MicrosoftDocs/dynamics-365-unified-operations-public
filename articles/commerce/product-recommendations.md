@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Product recommendations overview
 description: This article provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
-author: Moonma
+author: moonma
 ms.date: 10/19/2023
 ms.topic: overview
-# optional metadata
-
-ms.search.form:
-# ROBOTS:
 audience: Application User
-# ms.devlang:
-ms.reviewer: josaw
-# ms.tgt_pltfrm:
-
-ms.assetid:
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: moonma
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+  - bap-template
 ---
 
 # Product recommendations overview

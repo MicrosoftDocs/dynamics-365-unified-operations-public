@@ -3,11 +3,11 @@ title: Business events in financial period close
 description: This article explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 author: Sunil-Garg
 ms.author: sunilg
-ms.topic: article
-ms.date: 10/11/2019
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 01/23/2025
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global 
 ms.search.validFrom: Platform update 26
 # ms.search.form: [Operations AOT form name to tie this article to]
@@ -68,13 +68,9 @@ The following example describes the general steps for subscribing to a change-ba
 
     When the task is updated, the business event triggers Power Automate. At that point, after the payload has been parsed, you will know basic information about the task. In this step, the custom data entity is used to retrieve more information about the task.
 
-    <img alt="Retrieving the task" src="../../media/Image5.png" width="70%">
-
 4. Retrieve approvers from the Microsoft Excel file, based on the criteria.
 
     Next, you must determine the list of approvers, so that you can send the approval request in the appropriate manner. This list is a custom Excel file in a SharePoint Online library. In this step, you query the Excel file to get the list of approvers. You also get the links to the attachments for each task, so that you can send the attachments to the approvers.
-
-    <img alt="Retrieving approvers" src="../../media/Image6.png" width="70%">
 
 5. Prepare to send the request for approval.
 
@@ -83,8 +79,6 @@ The following example describes the general steps for subscribing to a change-ba
     <img alt="Preparing to send the request for approval, part 1" src="../../media/Image7.png" width="70%">
 
     <img alt="Preparing to send the request for approval, part 2" src="../../media/Image8.png" width="70%">
-
-    <img alt="Preparing to send the request for approval, part 3" src="../../media/Image9.png" width="70%">
 
 6. Start the approval process.
 
@@ -101,10 +95,6 @@ The following example describes the general steps for subscribing to a change-ba
 8. Update the task with the approval outcome.
 
     Based on the outcome of the approval process, the task is updated with the result.
-
-    <img alt="Updating the task, part 1" src="../../media/Image12.png" width="70%">
-
-    <img alt="Updating the task, part 2" src="../../media/Image13.png" width="70%">
 
 ## Conclusion
 

@@ -3,11 +3,12 @@ title: Field type
 description: Learn about the Field type, which includes the container, generic, getDataSource, and hidden properties and various methods.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Field type

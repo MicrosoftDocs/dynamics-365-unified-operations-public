@@ -1,14 +1,14 @@
 ---
 title: Create a new trade agreement
 description: Learn how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer.
-author: Henrikan
-ms.author: henrikan
-ms.topic: how-to
-ms.date: 06/27/2023
-ms.custom: bap-template
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
+ms.topic: how-to
+ms.date: 08/26/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Create a new trade agreement
@@ -23,7 +23,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 2. Select **New**.
 3. In the **Name** field, select the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
-5. On **Action Pane**, select **Lines**.
+5. On Action Pane, select **Lines**.
 6. In the **Party code type** field, select *Table*. In this example, you're updating the price for a specific customer, which means you must choose *Table*. If you were updating the product's list price, you would select *All*, so that the new price is valid for all customers. If you were differentiating prices among different customer segments, then you would select *Group*. To select *Group*, you must have set up customer price groups.  
 7. In the **Account selection** field, select the drop-down button to open the lookup.
 8. In the list, find and select the desired record.
@@ -46,13 +46,13 @@ This procedure shows you how to create a trade agreement where you register a ne
 
 1. Go to **Product information management > Products > Released products**.
 2. In the list, find and select the product whose price you have just updated.
-3. On the **Action Pane**, select **Sell**.
+3. On the Action Pane, select **Sell**.
 4. Select **View trade agreements**. Review the details of the price trade agreement you have just created.
 5. Close the page.
 
-## Additional resources
+## Related information
 
-### Whitepaper
+### White paper
 
 For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management).
 

@@ -1,13 +1,12 @@
 ---
 title: Warehouse-specific inventory transactions
 description: Learn about warehouse-specific inventory transactions, which are database records that store information about how inventory is stored in the warehouse.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSParameters, WHSWarehouseTransactions
 ---
 
@@ -35,7 +34,7 @@ Warehouse transactions differ from inventory transactions in several ways. Here 
 
 Before you can use this feature, the following prerequisites must be in place:
 
-- You must update any customizations that rely on inventory transactions that will be replaced by warehouse transactions. For more information, see the [Audit and update your customizations to support warehouse transactions](#audit-customizations) section of this article.
+- You must update any customizations that rely on inventory transactions that will be replaced by warehouse transactions. Learn more in the [Audit and update your customizations to support warehouse transactions](#audit-customizations) section of this article.
 - You must be running Dynamics 365 Supply Chain Management version 10.0.32 or later.
 - If you are running Supply Chain Management version 10.0.35 or earlier, the feature that's named *Warehouse-specific inventory transactions* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In newer versions, this feature is fully integrated into the product, so it's either mandatory or no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -43,7 +42,7 @@ Before you can use this feature, the following prerequisites must be in place:
 
 After you enable the *Warehouse-specific inventory transactions* feature, the following changes will occur in your system:
 
-- The system will no longer generate inventory transactions for warehouse operations. It will use warehouse transactions instead. Therefore, any customizations and extensions that rely on the relevant inventory transactions for warehouse operations must be updated. This change affects only those warehouse scenarios that you configure to use warehouse transactions. (For more information, see the [Choose which scenarios should use warehouse transactions](#choose-scenarios) section of this article.)
+- The system will no longer generate inventory transactions for warehouse operations. It will use warehouse transactions instead. Therefore, any customizations and extensions that rely on the relevant inventory transactions for warehouse operations must be updated. This change affects only those warehouse scenarios that you configure to use warehouse transactions. (Learn more in the [Choose which scenarios should use warehouse transactions](#choose-scenarios) section of this article.)
 - Several existing methods will no longer be called when warehouse operations are processed.
 
 When you try to enable the feature, the system performs a set of checks to identify extensions that might break because of these changes. If any issues are found, you receive an error message that identifies the extension and explains how it must be updated. If you receive such a message when you try to enable the feature, follow these steps.
@@ -73,7 +72,7 @@ Source document transactions will still be represented by using inventory transa
 
 The **Warehouse transactions** page shows both warehouse transactions and inventory transactions. By contrast, the **Inventory transactions** page shows only inventory transactions. Therefore, only the **Warehouse transactions** page shows all the transactions that are related to your warehouse operations. For example, in a sales picking scenario, if you want to view all transactions that are related to the sales order, you must open the **Warehouse transactions** page. It will show both the sales order inventory transactions and work-related warehouse transactions. The **Inventory transactions** page will show only the sales order transactions.
 
-The purpose of the **Warehouse transactions** page is to show all the transactions that are relevant to managing the warehouse. It doesn't show inventory transactions that are in *Ordered* or *On order* status. You can open it from several places in the system, including the **On-hand** pages and the **Warehouse inventory transactions** page. 
+The purpose of the **Warehouse transactions** page is to show all the transactions that are relevant to managing the warehouse. It doesn't show inventory transactions that are in *Ordered* or *On order* status. You can open it from several places in the system, including the **On-hand** pages and the **Warehouse inventory transactions** page.
 
 For example, to open the **Warehouse transactions** page from the **On-hand** page for a selected product, follow these steps.
 
@@ -135,6 +134,6 @@ The `WHSInventoryTransactionTable` table includes the following four types of tr
 
 `InventTrans`-based inventory wasn't designed to represent inventory operations (such as *issue*, *receipt*, and *reservation*) over a set of items. License plates (such as target license plates in warehouse work) are one example of such a *set of items*. From the perspective of the `InventTrans`-based inventory stack, a license plate is just a dimension similar to other storage dimensions in `InventDim`. The concept of item sets in the new inventory stack aims to address this gap. During initial picks, an item set is constructed, and subsequent operations (such as *put to stage*, *pick from stage*, and *put-away to bay door*) reuse that item set. This approach avoids recording redundant information about items being moved. However, license plates are still used in the new system.
 
-## Additional resources
+## Related information
 
 - For more information about this feature, consider joining the [Warehouse Inventory Transactions](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=120106196992&view=all) Yammer group, where you can find useful guides, get our latest updates, and post any questions you may have about using warehouse transactions.

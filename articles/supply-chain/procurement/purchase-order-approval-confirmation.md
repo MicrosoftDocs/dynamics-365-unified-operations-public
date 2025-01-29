@@ -1,13 +1,12 @@
 ---
 title: Approve and confirm purchase orders
 description: Learn about the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 05/02/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ---
 
@@ -73,7 +72,7 @@ To cancel the whole quantity on a PO line, you should cancel the delivery remain
 
 If a PO is under change management, any change, such as cancellation of the order or the delivery remainder, must be submitted to the workflow system and approved before the process can be completed and the inventory transactions can be updated as canceled.
 
-## Additional resources
+## Related information
 
 - [Purchase order overview](purchase-order-overview.md)
 - [Create purchase orders](purchase-order-creation.md)

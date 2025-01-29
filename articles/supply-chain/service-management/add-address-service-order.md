@@ -1,15 +1,12 @@
 ---
 title: Add an address to a service order   
 description: Learn how to add a customer address to a service order, including a step-by-step process for creating a customer address for a service order.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 06/15/2020
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Add an address to a service order
@@ -32,7 +29,7 @@ To add an address to a service order, follow these steps:
 
 1. Expand the **Address** FastTab, and then select **Add address** from the FastTab toolbar.
 
-1. In the **New address** dialog, enter a unique name for the address and complete the remaining fields. 
+1. In the **New address** dialog, enter a unique name for the address and complete the remaining fields.
 
     > [!WARNING]
     > If you enter the same name as an existing address, the information that you enter in the remaining fields will overwrite information for the existing address.
@@ -51,9 +48,8 @@ To add an alternative address to a service order, follow these steps:
 
 1. Expand the **Address** FastTab, and then select **Other address** from the FastTab toolbar.
 
-1. In the **Address selection** dialog, select **Service orders** from the drop-down list above the gried.
+1. In the **Address selection** dialog, select **Service orders** from the drop-down list above the grid.
 
 1. Select an address, and then select **OK** to copy it to your service order.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

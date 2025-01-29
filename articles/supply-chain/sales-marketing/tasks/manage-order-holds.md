@@ -1,8 +1,8 @@
 ---
 title: Manage order holds
 description: Learn how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds with a process for setting up order holds.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans, MCRHoldCheckOutOverride, MCRHoldCodeTable, MCRItemListCopying, MCRItemListTable, MCROMHoldList
 ms.topic: how-to

@@ -1,16 +1,13 @@
 ---
 title: Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
 description: Learn how to integrate the Asset management module to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 04/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-04-28
 ms.search.form:
-ms.dyn365.ops.version: 10.0.12
 ---
 
 # Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
@@ -102,7 +99,7 @@ To associate a guide with a maintenance checklist template, follow these steps.
 > [!IMPORTANT]
 > There is a known issue where, when you associate a maintenance checklist template with a default maintenance job type, the guide that is linked to the template doesn't appear on the **Associated guides** FastTab of the **Maintenance job type defaults** page. However, the guide will appear after that job type is applied to a work order on the **Associated guides** FastTab.
 
-## See also
+## Related information
 
 - [Dual-write overview](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Asset management overview](index.md)

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 04/19/2024
 ms.custom: evergreen
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-09-08
 ms.search.form:
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
@@ -43,11 +40,11 @@ If you want to turn any of these features on or off, you must do so in [feature 
 |---|---|---|
 | Production control | On-hand information in production orders to release page | Adds a column for the on-hand inventory quantity for the line item in the lines section on the **Production orders to release** page. |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. Learn more in [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### Bug fixes
 

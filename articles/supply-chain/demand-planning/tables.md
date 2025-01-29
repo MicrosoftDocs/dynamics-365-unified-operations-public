@@ -1,13 +1,12 @@
 ---
 title: View and customize tables for holding imported data
 description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: overview
 ms.date: 02/20/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

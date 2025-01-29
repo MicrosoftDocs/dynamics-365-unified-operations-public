@@ -1,13 +1,12 @@
 ---
 title: Install, enable, and set up Demand planning
 description: Learn how to install, enable, and set up Demand planning in Microsoft Dynamics 365 Supply Chain Management, including prerequisites.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 02/24/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -21,9 +20,11 @@ This article describes how to install, enable, and set up Demand planning in Mic
 
 To use Demand planning with Supply Chain Management, you must be running one of the following versions of Supply Chain Management:
 
-- Supply Chain Management version 10.0.36, build 10.0.1695.83
-- Supply Chain Management version 10.0.37, build 10.0.1725.60
+- Supply Chain Management version 10.0.36, build 10.0.1695.83 or later
+- Supply Chain Management version 10.0.37, build 10.0.1725.60 or later
 - Supply Chain Management version 10.0.38 (any build) or later
+
+To use Demand planning in a production environment, each relevant user must have a license for it. Learn more in [Demand planning license requirements](demand-planning-licensing.md).
 
 > [!IMPORTANT]
 > **Demand planning no longer supports Supply Chain Management *Cloud hosted* environments.**
@@ -52,7 +53,7 @@ Follow these steps to install Demand planning in Power Platform admin center.
 
 Follow these steps to enable and configure Demand planning in Supply Chain Management.
 
-1. In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the *Demand Planning* feature.
+1. In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the *Demand Planning* feature. (As of Supply Chain Management version 10.0.40, it's turned on by default.)
 1. Go to **System administration** \> **Setup** \> **Demand planning app parameters**.
 1. On the **General** tab, in the **Demand planning app URL** field, enter the URL where Demand planning is installed.
 1. Go to **Master Planning** \> **Setup** \> **Master planning parameters**.

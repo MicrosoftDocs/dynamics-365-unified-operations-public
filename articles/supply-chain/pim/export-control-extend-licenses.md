@@ -1,13 +1,12 @@
 ---
 title: Extend export control license functionality
 description: Learn about what's useful for developers who are extending license functionality for implementing export controls with an outline on license evaluations.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 08/29/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

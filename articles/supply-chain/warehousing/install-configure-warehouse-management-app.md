@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
@@ -27,7 +26,9 @@ The Warehouse Management mobile app is only for your internal business use. You 
 The Warehouse Management mobile app is available for Microsoft Windows, Google Android, and Apple iOS operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
-- Android 5.0 or later
+- Android:
+    - Warehouse Management mobile app version 3.x requires Android 5.0 or later
+    - Warehouse Management mobile app version 4.x requires Android 7.0 or later
 - iOS 13.0 or later
 
 ### External URLs required by the app
@@ -293,7 +294,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 - If you use user-based authentication, see [User-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - If you use service-based authentication (deprecated), see [Service-based authentication](warehouse-app-authenticate-service-based.md#revoke)
 
-## Additional resources
+## Related information
 
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)

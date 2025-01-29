@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 12/02/2020
 ms.custom: 
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-12-02
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.14
 ---
 
 # Intercompany planning
@@ -36,8 +32,8 @@ If you run master planning from a master plan that includes planned downstream d
 
 To use intercompany planning, you must prepare your system in the following way:
 
-1. The relevant products must be released in all the relevant companies. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
-1. Downstream demand must be covered by purchases from a vendor that has an intercompany relation to the upstream company and relevant default inventory dimensions (site and warehouse) on the customer. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. The relevant products must be released in all the relevant companies. Learn more in [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Downstream demand must be covered by purchases from a vendor that has an intercompany relation to the upstream company and relevant default inventory dimensions (site and warehouse) on the customer. Learn more in [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
 1. The master plan in the upstream company must include planned downstream demand, and the relevant company and master plan must be specified in the downstream plans.
 
 ## Include planned downstream demand

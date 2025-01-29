@@ -6,9 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 02/20/2023
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.31
 ---
 
 # Planning Optimization release process and release history
@@ -27,6 +24,8 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.</p> <p>Support for dimension-based configuration.</p> <p>Support for using the *Transactions - reduction key* method to reduce demand and supply forecasts in the current period based on invoiced and delivered sales orders.</p> | No feature management required. Features required | November  8-16, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | October  1–8, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | May  20–28, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | March  15–20, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |
@@ -57,7 +56,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 | <p>Support for master plans with **Scheduling method** set to *Operations scheduling*</p><p>On the **Route groups** page, respect settings for the **Activation**, **Working time**, and **Capacity** check boxes for rows with a **Route/job type** of *Setup* or *Process* </p><p>General performance, quality, and stability improvements</p> | <p>Operations scheduling is available in feature management as of version 10.0.20</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | September  9–17, 2021 |
 | General performance, quality, and stability improvements | No feature management required | August 25–30, 2021 |
 | <p>Added **Lead time** field to planned orders.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | August 12–17, 2021 |
-| <p>Added resource type requirements for infinite capacity scheduling</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling</p><p>For more information, see [Scheduling with infinite capacity](infinite-capacity-planning.md)</p> | <p>Available in feature management as of version 10.0.20</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6–12, 2021 |
+| <p>Added resource type requirements for infinite capacity scheduling</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling</p><p>Learn more in [Scheduling with infinite capacity](infinite-capacity-planning.md)</p> | <p>Available in feature management as of version 10.0.20</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6–12, 2021 |
 | General quality improvements | No feature management required | July 6–12, 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

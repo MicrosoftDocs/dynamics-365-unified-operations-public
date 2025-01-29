@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 01/03/2018
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2017-01-03
 ms.search.form: WHSMobileAppField
-ms.dyn365.ops.version: AX 8.0.0
 ---
 
 # Scan bar codes using a camera in the Warehouse Management mobile app
@@ -22,7 +19,7 @@ This article explains how to set up the Warehouse Management mobile app to scan 
 
 In the display settings of the Warehouse Management mobile app, you can select if the camera should be used for bar code scanning. If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**.
 
-To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**. When this option is selected, a camera can be used for scanning in the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**. When this option is selected, a camera can be used for scanning in the Warehouse Management mobile app. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
 ## Supported bar code formats
 

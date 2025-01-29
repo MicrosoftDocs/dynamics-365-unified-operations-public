@@ -1,16 +1,13 @@
 ---
 title: Transportation management miscellaneous charges
 description: Learn how transportation-generated charges must be associated with a charge code and that you should have one setup for each relevant charges module setting.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
 ms.date: 10/16/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-10-16
 ms.search.form: TMSMiscellaneousCharge
-ms.dyn365.ops.version: 10.0.14
 ---
 
 # Transportation management miscellaneous charges

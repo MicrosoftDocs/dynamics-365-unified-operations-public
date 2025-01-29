@@ -1,16 +1,12 @@
 ---
 title: Set up a product configuration model
 description: Learn about the steps for setting up and creating a product configuration model with a table that defines various tasks.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: PCProductConfigurationModelListPage
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 ---
 

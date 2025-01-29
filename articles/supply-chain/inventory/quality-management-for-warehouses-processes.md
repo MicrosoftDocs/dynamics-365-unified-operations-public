@@ -1,16 +1,14 @@
 ---
 title: Quality management for warehouse processes
 description: Learn about the Quality management for warehouse processes feature, including key benefits and an outline on enabling a warehouse for quality management
-author: yufei-huang
-ms.author: yufeihuang
-ms.topic: article
-ms.date: 03/23/2021
-ms.custom:
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-04-02
-ms.search.form:
-ms.dyn365.ops.version: 10.0.10
+ms.search.form: InventLocation, InventTestAssociationTable, InventItemSampling
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Quality management for warehouse processes
@@ -96,10 +94,10 @@ When the *Quality management for warehouse processes* feature is turned on, the 
 
 | Search group | Description |
 |---|---|
-| Group 1 | For each quality association, check the **Reference type**, **Event type**, and **Execution match** values against the item. If there is a match against the source document line, move on to group 2. |
-| Group 2 | For each quality association, check the **Item code** value (*Table*, *Group*, or *All*) against the item. *Table* is more specific than *Group*, and *Group* is more specific than *All*. If there is a match for *Table* (a specific item), move on to group 3. If there is no match for *Table*, search for a match for *Group*. If there is no match for *Group*, *All* applies. If there is a match, move on to group 3. |
+| Group 1 | For each quality association, check the **Reference type**, **Event type**, and **Execution match** values against the item. If there's a match against the source document line, move on to group 2. |
+| Group 2 | For each quality association, check the **Item code** value (*Table*, *Group*, or *All*) against the item. *Table* is more specific than *Group*, and *Group* is more specific than *All*. If there's a match for *Table* (a specific item), move on to group 3. If there's no match for *Table*, search for a match for *Group*. If there's no match for *Group*, *All* applies. If there's a match, move on to group 3. |
 | Group 3 | For each quality association, check the **Account code** and **Resource code** values against the item. The logic that is applied resembles the logic that is applied for the **Item code** value. |
-| Group 4 | For each quality association, check the **Applicable warehouse type** value (*Quality management for warehouse processes only* or *All*) against the item. If the **Enable quality order for warehouse processes** option is set to *Yes* for the warehouse on the source document, and the item on the source document line is set to *Use warehouse management processes*, both associations where there is a match for *Quality management for warehouse processes only* and associations where there is a match for *All* will be applicable in parallel, if both exist. If the **Enable quality order for warehouse processes** option is set to *No* for the warehouse on the source document, and the item on the source document line is set to *Use warehouse management processes*, only quality management will be applicable. |
+| Group 4 | For each quality association, check the **Applicable warehouse type** value (*Quality management for warehouse processes only* or *All*) against the item. If the **Enable quality order for warehouse processes** option is set to *Yes* for the warehouse on the source document, and the item on the source document line is set to *Use warehouse management processes*, both associations where there's a match for *Quality management for warehouse processes only* and associations where there's a match for *All* will be applicable in parallel, if both exist. If the **Enable quality order for warehouse processes** option is set to *No* for the warehouse on the source document, and the item on the source document line is set to *Use warehouse management processes*, only quality management will be applicable. |
 
 For example, you've defined a warehouse where the **Enable quality order for warehouse processes** option is set to *Yes*, and you have two quality associations that are defined for the *Purchase* reference type: one for all items and one for the *Registration* event type. The only difference between the two quality associations is the **Applicable warehouse type** value: it's set to *All* for one quality association and *Quality management for warehouse processes only* for the other. In this case, both quality associations are equally specific, and both will be applicable.
 
@@ -127,7 +125,7 @@ The creation of quality order work is unrelated to the quality association setup
 
 Each quality association must reference an item sampling. An item sampling defines the quantity that will be sent for quality control. It can be set up so that it applies only to quality associations where the **Applicable warehouse type** value is *Quality management for warehouse processes only*. If the **Sampling scope** value for an item sampling is *Load* or *Shipment*, or the **Quantity specification** value is *Full license plate*, the item sampling can be referenced only by quality associations where the **Applicable warehouse type** value is *Quality management for warehouse processes only*.
 
-If you define an item sampling that uses the *Quality management for warehouse processes only* applicable warehouse type, you will receive an error if you try to reference it from a quality association that doesn't use the *Quality management for warehouse processes* feature.
+If you define an item sampling that uses the *Quality management for warehouse processes only* applicable warehouse type, you'll receive an error if you try to reference it from a quality association that doesn't use the *Quality management for warehouse processes* feature.
 
 > [!NOTE]
 > Item sampling that uses full blocking isn't supported for quality associations where the **Applicable warehouse type** field is set to *Quality management for warehouse processes only*.
@@ -143,7 +141,7 @@ To set up item sampling, go to **Inventory management \> Setup \> Quality contro
 - **Shipment** – Shipments will be used as the basis for evaluating whether and how a quality order and/or work is created. This value is available only when the *Quality management for warehouse processes* feature is turned on.
 
 > [!NOTE]
-> When the **Sampling scope** field is set to *Load* or *Shipment*, the load entity and shipment entities will be used, if they are available. If they aren't available, the order entity will be used.
+> When the **Sampling scope** field is set to *Load* or *Shipment*, the load entity and shipment entities will be used, if they're available. If they aren't available, the order entity will be used.
 
 The *Quality management for warehouse processes* feature also introduces the *Full license plate* value for the **Quantity specification** field. This value supports the creation of quality order work and quality item sampling work, based on license plates. When you select this value, the following changes occur:
 
@@ -170,14 +168,14 @@ The **Reference type** value for the following examples is *Purchase*, and the *
 
 | Sampling scope | Quantity specification | Per updated quantity | Per storage dimension | Break count by item | Per nth license plate | Result |
 |---|---|---|---|---|---|---|
-| Order | Full license plate | Yes *(locked/not editable)* | <p>Location: Yes</p><p>License Plate: Yes *(locked/not editable)*</p> | No | 3 | <p>**Order line quantity: 100 EA**</p><ol><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP1<p>Quality item sampling work for 20 EA</p><p>Quality order 1 for 20 EA</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP2<p>Purchase order work for 20 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP3<p>Purchase order work for 20 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP4<p>Quality item sampling work for 20 EA</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP5<p>Purchase order work for 20 EA (put-away)</p></li></ol> |
-| Order | Fixed quantity = 1 | Yes | <p>Location: Yes</p><p>License Plate: Yes</p> | No | Not applicable | <p>**Order line quantity: 100**</p><ol><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP1<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP2<p>Quality Item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP3<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP4<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP5<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (put-away)</p></li></ol> |
-| Order | Percent = 10 | No | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 100 EA**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 10 EA</p><p>Quality order 1 for 10 EA</p><p>Purchase order work for 40 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Purchase order work for 50 EA (put-away)</p></li></ol> |
-| Load | Percent = 5 | Yes *(locked/not editable)* | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 500 EA**</p><p>**Two loads: first load 200 EA, second load 300 EA**</p><ol><li>Register receipt in the Warehouse Management mobile app for first load for 100 EA<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 95 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for first load for 100 EA<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 95 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for second load for 300 EA<p>Quality item sampling work for 15 EA</p><p>Quality order 1 for 15 EA</p><p>Purchase order work for 285 EA (put-away)</p></li></ol> |
-| Order | Percent = 10 | Yes | <p>Location: Yes</p><p>License Plate: Yes</p> | No | Not applicable | <p>**Order line quantity: 100**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 (put-away)</p></li></ol> |
-| Load | Full license plate | Yes *(locked/not editable)* | <p>Location: Yes</p><p>License Plate: Yes *(locked/not editable)*</p> | No | 3 | <p>**Two items:**</p><ul><li>**Order line quantity for item A: 120 EA (4 pallets)**</li><li>**Order line quantity for item B: 90 EA (3 pallets)**</li></ul><p>**One load, two load lines with each order line**</p><ol><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP1<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP2<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP3<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP4<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP5<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP6<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP7<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li></ol> |
-| Load | Full license plate | Yes *(locked/not editable)* | <p>Location: Yes</p><p>License Plate: Yes *(locked/not editable)*</p> | Yes | 3 | <p>**Two items:**</p><ul><li>**Order line quantity for item A: 120 EA (4 pallets)**</li><li>**Order line quantity for item B: 90 EA (3 pallets)**</li></ul><p>**One load, two load lines with each order line**</p><ol><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP1<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP2<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP3<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP4<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP5<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP6<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP7<p>Purchase order work for 30 EA (put-away)</p></li></ol> |
-| Load | Percent = 10 | Yes *(locked/not editable)* | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 100 EA**</p><p>**No loads are created. Order scope is applied.**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (put-away)</p></li></ol> |
+| Order | Full license plate | Yes *(locked/not editable)* | <p>Location: Yes</p><p>License Plate: Yes *(locked/not editable)*</p> | No | 3 | <p>**Order line quantity: 100 EA**</p><ol><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP1<p>Quality item sampling work for 20 EA</p><p>Quality order 1 for 20 EA</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP2<p>Purchase order work for 20 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP3<p>Purchase order work for 20 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP4<p>Quality item sampling work for 20 EA</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP5<p>Purchase order work for 20 EA (putaway)</p></li></ol> |
+| Order | Fixed quantity = 1 | Yes | <p>Location: Yes</p><p>License Plate: Yes</p> | No | Not applicable | <p>**Order line quantity: 100**</p><ol><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP1<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP2<p>Quality Item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP3<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP4<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 20 EA, LP5<p>Quality item sampling work for 1 EA</p><p>Quality order 1 for 1 EA</p><p>Purchase order work for 19 EA (putaway)</p></li></ol> |
+| Order | Percent = 10 | No | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 100 EA**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 10 EA</p><p>Quality order 1 for 10 EA</p><p>Purchase order work for 40 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Purchase order work for 50 EA (putaway)</p></li></ol> |
+| Load | Percent = 5 | Yes *(locked/not editable)* | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 500 EA**</p><p>**Two loads: first load 200 EA, second load 300 EA**</p><ol><li>Register receipt in the Warehouse Management mobile app for first load for 100 EA<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 95 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for first load for 100 EA<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 95 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for second load for 300 EA<p>Quality item sampling work for 15 EA</p><p>Quality order 1 for 15 EA</p><p>Purchase order work for 285 EA (putaway)</p></li></ol> |
+| Order | Percent = 10 | Yes | <p>Location: Yes</p><p>License Plate: Yes</p> | No | Not applicable | <p>**Order line quantity: 100**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 (putaway)</p></li></ol> |
+| Load | Full license plate | Yes *(locked/not editable)* | <p>Location: Yes</p><p>License Plate: Yes *(locked/not editable)*</p> | No | 3 | <p>**Two items:**</p><ul><li>**Order line quantity for item A: 120 EA (4 pallets)**</li><li>**Order line quantity for item B: 90 EA (3 pallets)**</li></ul><p>**One load, two load lines with each order line**</p><ol><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP1<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP2<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP3<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP4<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP5<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP6<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP7<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li></ol> |
+| Load | Full license plate | Yes *(locked/not editable)* | <p>Location: Yes</p><p>License Plate: Yes *(locked/not editable)*</p> | Yes | 3 | <p>**Two items:**</p><ul><li>**Order line quantity for item A: 120 EA (4 pallets)**</li><li>**Order line quantity for item B: 90 EA (3 pallets)**</li></ul><p>**One load, two load lines with each order line**</p><ol><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP1<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP2<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP3<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP4<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP5<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP6<p>Purchase order work for 30 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP7<p>Purchase order work for 30 EA (putaway)</p></li></ol> |
+| Load | Percent = 10 | Yes *(locked/not editable)* | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 100 EA**</p><p>**No loads are created. Order scope is applied.**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (putaway)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (putaway)</p></li></ol> |
 
 When a worker validates one of the quality orders that are shown in the previous table, the system automatically generates quality order work to move inventory from the quality control location to the location that is defined in the location directive for the *Quality order* work order type. You can set up any location for this purpose, such as a return or storage location, depending on the test result for the quality order. For an example of this setup, see the [example scenario](#example-scenario) at the end of this article.
 
@@ -229,11 +227,11 @@ In the following example, the **Reference type** value is *Purchase*.
     - **Test group:** *Cone*
     - **Item sampling:** *10%*
 
-A purchase order for a quantity of 10 of item A0001 is now created for vendor 104. Then a purchase order line that has a quantity of 10 is registered as received on one license plate by using the Warehouse Management mobile app. Here is the result:
+A purchase order for a quantity of 10 of item A0001 is now created for vendor 104. Then a purchase order line that has a quantity of 10 is registered as received on one license plate by using the Warehouse Management mobile app. Here's the result:
 
-- There is one quality order from the first quality association for the *Enclosure* test group. The quantity is 5. There is no quality order from the second quality association, because the criteria for the first quality association are more specific relative to the *Enclosure* test group.
-- There is one quality order for the third quality association for the *Impedance* test group. The quantity is 10. There is no quality order from the fourth quality association, because the criteria for the first quality association are more specific relative to the *Impedance* test group.
-- There is one quality order for the fifth quality association for the *Cone* test group. The quantity is 1.
+- There's one quality order from the first quality association for the *Enclosure* test group. The quantity is 5. There's no quality order from the second quality association, because the criteria for the first quality association are more specific relative to the *Enclosure* test group.
+- There's one quality order for the third quality association for the *Impedance* test group. The quantity is 10. There's no quality order from the fourth quality association, because the criteria for the first quality association are more specific relative to the *Impedance* test group.
+- There's one quality order for the fifth quality association for the *Cone* test group. The quantity is 1.
 
 In connection with the creation of one quality order for each of the three quality associations, quality item sampling work is also created. The registered quantity is only 10. However, because of the item sampling setup, the sum of the quality order quantities that are created for the *Quality management for warehouse processes only* applicable warehouse type is 16, which exceeds the physical registered quantity of 10. Therefore, work won't be created for the full quality order quantities (16), because only 10 are physically available for movement to the quality control location. The priority that is used to create quality item sampling work follows the order of quality order creation:
 
@@ -272,7 +270,7 @@ You can cancel the work that is created for quality item sampling. To control wh
 
 ## Cross-docking
 
-You can have a quality association setup that creates item sampling work. However, when cross-docking exists in parallel with a quality association that creates quality item sampling work, if there is only enough quantity to satisfy cross-docking, only item sampling work is created. In cases where the **Enable quality order for warehouse processes** option set to *Yes* for the receiving warehouse, and the **Applicable warehouse type** field is set to *Quality management for warehouse processes only* for a quality association, the creation of quality item sampling work takes precedence over the creation of cross-docking work. If the quantity exceeds the requirement for cross-docking, the system still creates only item sampling work.
+You can have a quality association setup that creates item sampling work. However, when cross-docking exists in parallel with a quality association that creates quality item sampling work, if there's only enough quantity to satisfy cross-docking, only item sampling work is created. In cases where the **Enable quality order for warehouse processes** option set to *Yes* for the receiving warehouse, and the **Applicable warehouse type** field is set to *Quality management for warehouse processes only* for a quality association, the creation of quality item sampling work takes precedence over the creation of cross-docking work. If the quantity exceeds the requirement for cross-docking, the system still creates only item sampling work.
 
 ## Destructive testing
 
@@ -294,7 +292,7 @@ To work through this scenario, you must prepare your system in the following way
 
 ### Quality-in setup – Move to the quality control location
 
-You must now prepare a basic setup that will enable your system to support the *Quality Management for warehouse processes* feature for warehouse 51. (The demo data defines a quality management location that is named *QMS*. That location is referenced several times in this scenario.) You will prepare the following elements, as described in the subsections of this section:
+You must now prepare a basic setup that will enable your system to support the *Quality Management for warehouse processes* feature for warehouse 51. (The demo data defines a quality management location that is named *QMS*. That location is referenced several times in this scenario.) You'll prepare the following elements, as described in the subsections of this section:
 
 - Work class
 - Work template
@@ -424,12 +422,12 @@ Create a quality association that will use the new item sampling.
 To complete the setup to move goods to the quality control location, you must make the quality item sampling work available from a mobile device menu item.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select the **Purchase Put-away** mobile device menu item.
+1. Select the **Purchase Putaway** mobile device menu item.
 1. On the **Work classes** FastTab, add the *QualityIn* work class ID.
 
 #### Summary: Your setup to move goods to quality control
 
-You've now defined a quality association that uses the *Quality management for warehouse processes* feature to trigger the creation of a quality order. You've set up the work and location data for warehouse 51 to ensure that specific work is created when purchase registration is done for item M9201. This setup ensures that every third license plate that is registered will be moved to a quality location (*QMS*), and that a quality order will be created for the license plate quantity. Everything else will be moved to put-away instead of the quality control location.
+You've now defined a quality association that uses the *Quality management for warehouse processes* feature to trigger the creation of a quality order. You've set up the work and location data for warehouse 51 to ensure that specific work is created when purchase registration is done for item M9201. This setup ensures that every third license plate that is registered will be moved to a quality location (*QMS*), and that a quality order will be created for the license plate quantity. Everything else will be moved to putaway instead of the quality control location.
 
 ### Process quality management work
 
@@ -459,11 +457,11 @@ You've now defined a quality association that uses the *Quality management for w
 1. Back in the web client, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Find and open your purchase order.
 1. In the **Purchase order lines** section, select the line for item number *M9201*, and then select **Purchase order lines \> Work details**.
-1. Notice that the second and third work headers that were created are regular put-away work, whereas the first and the fourth work headers are quality item sampling work. This result is consistent with the item sampling setup, which is configured to sample every third license plate.
+1. Notice that the second and third work headers that were created are regular putaway work, whereas the first and the fourth work headers are quality item sampling work. This result is consistent with the item sampling setup, which is configured to sample every third license plate.
 
 #### Move to the quality control location
 
-You will now move the license plates to their designated locations. The first and fourth license plates will go to the quality control location, whereas the second and third license plates will go directly to storage.
+You'll now move the license plates to their designated locations. The first and fourth license plates will go to the quality control location, whereas the second and third license plates will go directly to storage.
 
 1. Go to a mobile device or emulator that is running the Warehouse Management mobile app, and sign in to warehouse 51 by using *51* as the user ID and *1* as the password.
 1. Go to **Inbound \> Purchase put away**, and put away each license plate from the previous procedure until you've closed all the work.
@@ -476,7 +474,7 @@ You've now run the quality item sampling work for the first and fourth license p
 
 When workers report quality order results, the system automatically generates work.
 
-You will now continue with the required base setup of the work class, work template, and location directive to enable quality management for warehouse processes, so that the required work can be created to move the quality order quantity from the quality control location to a designated warehouse location.
+You'll now continue with the required base setup of the work class, work template, and location directive to enable quality management for warehouse processes, so that the required work can be created to move the quality order quantity from the quality control location to a designated warehouse location.
 
 #### Work class for quality-out
 
@@ -580,10 +578,10 @@ You will now continue with the required base setup of the work class, work templ
 #### Mobile device menu items for quality-out
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select the **QMS put-away** mobile device menu item.
+1. Select the **QMS putaway** mobile device menu item.
 1. On the **Work classes** FastTab, add the *QualityPut* work class ID.
 
-Warehouse workers will now be able to pick quality order work by using the **QMS Put-away** menu item. Goods that failed quality control goods can be put in a return location, and goods that passed can be put in the bulk-001 location.
+Warehouse workers will now be able to pick quality order work by using the **QMS Putaway** menu item. Goods that failed quality control goods can be put in a return location, and goods that passed can be put in the bulk-001 location.
 
 #### Summary: Your setup to move goods from quality control
 
@@ -613,7 +611,7 @@ You've set up the work and location data for warehouse 51, to ensure that work i
 > [!NOTE]
 > Consider adding the quality-out entry to a mobile device menu item where the activity code is *Display open work list*. For an example, see the mobile device menu item that is named **Work list** in the demo data. First add the *Quality order* work class to a user-directed menu item, because this work class is required for work to be shown in the work list. Then add the *Quality order* work class to the **Work list** menu item. Users who have access to the work list will then be able to pick and process the work that is automatically generated by quality order validation.
 
-## Additional resources
+## Related information
 
 - [Quality and nonconformance management overview](quality-management-processes.md)
 

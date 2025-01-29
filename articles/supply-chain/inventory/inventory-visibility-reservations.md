@@ -6,10 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 03/03/2023
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-08-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Inventory Visibility reservations
@@ -61,13 +58,13 @@ Follow these steps to turn on the reservation feature in UI version 2.
 1. On the navigation pane, select **Soft Reservation**.
 1. On the **Data source settings** tile, select **Manage**.
 1. Set the **Enable feature** option to *True*.
-1. The **Filter unconfigured dimensions** option controls how the system behaves if a user submits reservation requests that include dimensions that aren't specified on the **Reservation dimensions** FastTab. (For more information, see the [Configure reservation mappings and dimensions](#config-mappings-dimensions) section of this article.) Select one of the following values:
+1. The **Filter unconfigured dimensions** option controls how the system behaves if a user submits reservation requests that include dimensions that aren't specified on the **Reservation dimensions** FastTab. (Learn more in the [Configure reservation mappings and dimensions](#config-mappings-dimensions) section of this article.) Select one of the following values:
 
     - *True* – Reservation requests that include dimensions that aren't defined on the **Reservation dimensions** FastTab succeed, but undefined dimensions are ignored.
     - *False* – Reservation requests that include dimensions that aren't defined on the **Reservation dimensions** FastTab fail.
 
     > [!IMPORTANT]
-    > If you've enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature in Supply Chain Management, you must set the **Filter unconfigured dimensions** option to *True*. For more information, see the [Integrate soft reservations and offsets with Supply Chain Management](#offset-scm) section.
+    > If you've enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature in Supply Chain Management, you must set the **Filter unconfigured dimensions** option to *True*. Learn more in the [Integrate soft reservations and offsets with Supply Chain Management](#offset-scm) section.
 
 1. On the toolbar, select **Save**.
 1. If you changed the setting of the **Filter unconfigured dimensions** option, you must reverse all existing reservations to preserve data consistency. Use the [clean up reservation data API](inventory-visibility-api.md#clean-up-reservation-data) to clean up existing soft reservation records.
@@ -317,11 +314,22 @@ When you use the *Inventory Visibility integration with soft reservation on sale
         - **Offset quantity** – The total offset quantity, including both offset success and in-progress quantities.
         - **Pending to offset quantity** – The quantity that skipped soft reservation and proceeded directly to hard reservation or further physical inventory consumption.
 
-1. To view and edit the soft reservation status of a sales line, select the line on the **Sales order lines** FastTab, and then, on the **Line details** FastTab, select the **General** tab. If your system is set to block or warn when a soft reservation couldn't be made, you might see a block notice here. To help avoid the risk of overselling, we strongly recommend that you don't choose to override the soft reservation validation unless overrides are permitted in your business.
+1. To view and edit the soft reservation blocking level of a sales line, select the relevant line on the **Sales order lines** FastTab. Then, expand the **Line details** FastTab and open its **General** tab. The **Soft reservation blocking level** field indicates the blocking level for the selected sales line. The default setting for all new order lines is set on the **Inventory visibility integration parameters** page, but you can edit it for individual sales lines as needed. The following values are possible:
+
+    - *Ignore* – You won't be blocked or receive a warning if you reserve physical or reserve ordered without a soft reservation.
+    - *Warning* – You'll receive a warning, but won't be blocked, if you reserve physical or reserve ordered without a soft reservation.
+    - *Blocking* – You must have a soft reservation before you can reserve physical or reserve ordered.
+
+    If a line is set to block or warn when a soft reservation couldn't be made, you might see a block notice here. To help avoid the risk of overselling, we strongly recommend that you don't choose to override the soft reservation validation unless overrides are permitted in your business.
 
     When a soft reservation is successfully made, a soft reservation ID is automatically returned and recorded for each sales line.
 
     By default, the soft reservation offset is triggered when the line reaches a hard reservation status (*Reserve physical* or *Reserve ordered*) or later. Sales lines that show a valid soft reservation ID and a qualifying trigger status will automatically be added to the offset batch queue.
+
+1. To view the soft reservation status of a sales order line, select the relevant line on the **Sales order lines** FastTab. Then, expand the **Line details** FastTab and open its **General** tab. The **Soft reservation status** field shows the stage of the soft reservation process for the selected sales order line. The following values are possible:
+   - *Not started* – The soft reservation process is waiting to start.
+   - *Unfinished* – A soft reservation was attempted, but not all quantities were successfully posted. Some or all quantities might have failed to post, or some quantities might have been successfully soft reserved with other reservations still waiting to finish.
+   - *Succeeded* – All quantities were successfully soft reserved.
 
 > [!NOTE]
 > If you must reverse a successful soft reservation, open the relevant sales order, and then select **Revert reservation directly** or **Revert reservation by batch** at the sales order or sales line level.

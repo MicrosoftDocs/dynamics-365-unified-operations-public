@@ -1,13 +1,12 @@
 ---
 title: Warehouse management only mode overview
 description: Learn about Warehouse management only mode, which enables the integration of warehouse management functionality in Microsoft Dynamics 365 Supply Chain Management.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: overview
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -22,13 +21,11 @@ ms.search.form:
 
 Warehouse management only mode uses lightweight source documents that are dedicated to inbound and outbound shipment orders. Because these documents focus exclusively on warehouse management, they can replace multiple types of more general-purpose documents (such as sales orders, purchase orders, and transfer orders) from a pure warehouse management perspective.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Deployment options
 
 Warehouse management only mode provides several deployment options to support the business needs of running your [warehouse management](warehouse-management-overview.md) processes.
 
-You can [start a free trial of Dynamics 365 Supply Chain Management](https://go.microsoft.com/fwlink/?linkid=2252982) via the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview). You can then try out an implementation as shown in the following high-level diagram of the elements and processes of an integrated system. For more information, see [this example that shows how to use inbound and outbound shipment orders](wms-only-mode-example.md).
+You can [start a free trial of Dynamics 365 Supply Chain Management](https://go.microsoft.com/fwlink/?linkid=2252982) via the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview). You can then try out an implementation as shown in the following high-level diagram of the elements and processes of an integrated system. Learn more in [this example that shows how to use inbound and outbound shipment orders](wms-only-mode-example.md).
 
 :::image type="content" source="media/wms-only-high-level-integrations.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-high-level-integrations.svg":::
 
@@ -64,7 +61,7 @@ The following high-level processes aren't supported out of the box when Warehous
 
 | Process | Description |
 |---|---|
-| Inbound Warehouse Management mobile app flows | <p>The Warehouse Management mobile app flows for inbound shipment orders don't support:</p><ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management) where the receiving process is handled against a container.</li><li>[Sales return orders](sales-returns.md) that support return reason codes and disposition codes as part of the flow for the **Return order receiving (and put away)** mobile device menu item. Instead, you must use the [blind return process](sales-returns-unannounced.md).</li></ul> |
+| Inbound Warehouse Management mobile app flows | <p>The Warehouse Management mobile app flows for inbound shipment orders don't support:</p><ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management) where the receiving process is handled against a container.</li><li>[Sales return orders](../sales-marketing/sales-returns.md) that support return reason codes and disposition codes as part of the flow for the **Return order receiving (and put away)** mobile device menu item. Instead, you must use the [blind return process](sales-returns-unannounced.md).</li></ul> |
 | Production flows | Inbound and outbound shipment orders don't support production order, batch order, or kanban processing, including material consumption and reporting as finished via the Warehouse Management mobile app. In addition, you can't use [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md) in combination with inbound and outbound shipment orders. |
 | Transportation management processes | The transportation management engines that are currently supported for purchase order loads aren't supported for the inbound shipment order processes. Note that charges can't be assigned, and direct invoicing can't be processed, for either inbound shipment orders or outbound shipment orders. Therefore, the apportionment weight engine can't be used to generate freight bills. |
 | Creation of orders from the warehouse app | The process of creating outbound shipment orders from the Warehouse Management mobile app isn't supported. (That process resembles the *Create transfer order from license plates* process for mobile devices.) |

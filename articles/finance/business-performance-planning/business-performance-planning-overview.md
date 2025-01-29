@@ -4,7 +4,7 @@ description: Learn about business performance planning in Microsoft Dynamics 365
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/28/2023
+ms.date: 11/20/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

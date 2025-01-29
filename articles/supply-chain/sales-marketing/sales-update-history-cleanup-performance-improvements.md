@@ -1,15 +1,12 @@
 ---
 title: Schedule sales history data cleanup
 description: Learn how you can help improve system performance by scheduling the Sales update history cleanup periodic task to run at a regular interval.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-09-29
 ms.search.form:
-ms.dyn365.ops.version: 10.0.19
 ---
 
 # Schedule sales history data cleanup
@@ -36,10 +33,7 @@ The feature improves the existing cleanup job in the following ways:
 
 After enabling the feature, the **Sales update history cleanup** batch job (**Sales and marketing \> Period tasks \> Cleanup \> Sales update history cleanup**) will run as it did before, but with better performance and for a maximum of 2 hours. This means it might need to run several times to clean up all the data for a specific retention time frame.
 
-Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Sales and marketing*
-- **Feature name:** *Sales history cleanup performance improvements*
+To use this feature, it must be enabled for your system. As of version 10.0.41, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off. If you're running a version older than 10.0.43, then admins can turn this functionality on or off by searching for the *Sales history cleanup performance improvements* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Clean up sales update history based on age
 

@@ -1,15 +1,12 @@
 ---
 title: Create an intercompany sales order for internal use
 description: Learn how to Create an intercompany sales order for internal use, including an outline and step-by-step process for manually creating intercompany sales orders.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Create an intercompany sales order for internal use

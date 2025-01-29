@@ -1,13 +1,12 @@
 ---
 title: Service-based authentication for the Warehouse Management mobile app
 description: Learn how to configure the Warehouse Management app to connect to your Dynamics 365 Supply Chain Management environment using service-based authentication.
-author: JTOne123
-ms.author: pavlodatsiuk
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 10/18/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
@@ -80,7 +79,7 @@ To enable Supply Chain Management to use your Microsoft Entra ID application, fo
 > [!TIP]
 > One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
 >
-> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
+> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (Learn more in [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using a certificate or client secret
 
@@ -98,7 +97,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
 
-## Additional resources
+## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)

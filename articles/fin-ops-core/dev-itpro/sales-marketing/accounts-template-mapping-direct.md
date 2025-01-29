@@ -1,8 +1,8 @@
 ---
 title: Synchronize accounts directly from Sales to customers in Supply Chain Management 
 description: Learn about the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/10/2024
 ms.custom: 

@@ -3,13 +3,14 @@ title: Fields and Field Groups subpattern
 description: Learn about the Field and Field Groups form subpattern, including overviews on usage, wireframes, models, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 11/09/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Fields and Field Groups subpattern
@@ -28,9 +29,6 @@ Field and Field Groups is the most common data entry subpattern and uses a dynam
 -   Groups containing Fields
 -   Can contain other subpatterns:
     -   Horizontal fields and button group
-
-## Wireframe
-[![Wireframe for Field and Field Groups.](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -67,13 +65,10 @@ The verification checklist shows the steps for manually verifying that the form 
 -   **Standard form guidelines:**
     -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Fields and Field Groups guidelines:**
-    -   The fields in groups should flow across the entire page. [![Example of fields in groups flowing across page.](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
+    -   The fields in groups should flow across the entire page. 
     -   When possible, remove unnecessary field group labels.
     -   Verify that you have an understandable grouping for your fields.
     -   Either all fields should be in Groups that have labels, or no Group labels should be shown.
-
-## Examples
-Form: **InventLocation (LocationNames)** [![Example of InventLocation form.](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
 
 ## Resources
 ### Typically used by patterns
@@ -84,17 +79,12 @@ Form: **InventLocation (LocationNames)** [![Example of InventLocation form.](./m
 -   [Details Transaction](details-transaction-form-pattern.md)
 
 ## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 
 -   Tooling must allow explicit use of the HorizontalFieldsButtonsGroup subpattern instead of mimicking content in the pattern definition.
 
-### AX 2012 content
 
-**InventLocation** [![Example of form.](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

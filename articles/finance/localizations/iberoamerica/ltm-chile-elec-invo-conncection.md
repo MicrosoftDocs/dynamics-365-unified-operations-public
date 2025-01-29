@@ -1,10 +1,10 @@
 ---
 title: Get started with Electronic invoicing for Chile
-description: Learn how to set up Microsoft Dynamics 365 Finance and Regulatory Configuration Service (RCS) to use Chilean electronic invoice formats.
+description: Learn how to get started with Electronic invoicing for Chile in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
-ms.author: v-federicohe
+ms.author: ankviklis
 ms.topic: article
-ms.date: 07/29/2024 
+ms.date: 01/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md). For the last-mile integration with the Chilean Tax Authorities, Microsoft is partnering with Edicom.
+This article provides information to help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Chilean Tax Authorities, Microsoft is partnering with Edicom.
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/chile) authorized certification provider (PAC) according to the [regulatory requirements in Chile](https://www.sii.cl/servicios_online/1039-1182.html).
 
@@ -23,14 +23,15 @@ After you configure Electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> The new Electronic invoicing Globalization feature for Chile (outbound flow) requires that you run 365 Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later. The feature can only be imported into the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
+> The new Electronic invoicing Globalization feature for Chile (outbound flow) requires that you run Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later. The feature can only be imported into the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
 
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 1. Ensure that the settings for the Chilean legal entity are in place. For more information, see [Set up legal entity and tax information for Chile](ltm-chile-set-up-legal-entity-tax-information.md).
-1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/e-invoicing-service-overview.md).
+1. [Configure electronic invoice parameters for Chile](ltm-chile-conf-electronic-invoice.md).
+1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
 1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in Feature management:
 
@@ -38,7 +39,9 @@ Before you begin the procedures in this article, the following prerequisites mus
     - E-Invoicing service workspace designer
     - Execute update actions for submitted documents
 
-1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
+[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md),
+[Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Customer invoice context model
     - Inventory e-invoice (CL)
@@ -57,13 +60,15 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow for issuing the following sales documents:
 
-- Invoice - cod 33, Factura Electrónica
-- Packing slip (e-shipping guide) - cod 52, Guía de Despacho Electrónica
-- Debit note - cod 56, Nota de Débito Electrónica
-- Credit note - cod 61, Nota de Crédito Electrónica
-- Export invoice - cod 110, Factura de Exportación
-- Export debit note - cod 111, Nota de Débito de Exportación
-- Export credit note - cod 112, Nota de Crédito de Exportación
+| Name | Code | Original name |
+|---|---|---|
+| Invoice | 33 | Factura Electrónica |
+| Packing slip (e-shipping guide) | 52 | Guía de Despacho Electrónica |
+| Debit note | 56 | Nota de Débito Electrónica |
+| Credit note | 61 | Nota de Crédito Electrónica |
+| Export invoice | 110 | Factura de Exportación |
+| Export debit note | 111 | Nota de Débito de Exportación |
+| Export credit note | 112 | Nota de Crédito de Exportación |
 
 Some parameters of the feature are published with default values. Before you deploy the Electronic invoicing feature to the service environment, add a feature that is based on the Microsoft-provided feature, and complete the common parameters on the **Feature parameters** tab. Review the default values, and update them as required, so that they better reflect your business operations.
 
@@ -73,7 +78,7 @@ For Chile, there are at least three interactions with Edicom in the pipeline: fi
 > The configuration of common parameters is simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is available only as of version 10.0.41.
 
 > [!IMPORTANT]
-> The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
+> The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
 
 1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
@@ -116,11 +121,23 @@ To review the processing pipeline, on the **Setups** tab, go to **Feature setup*
 1. **Process response** – Process the received response to determine whether a terminal state has been reached.
 
     - If the status response indicates a failure, the pipeline is terminated, and the submission is marked as failed.
-	- Even if the status response indicates successful submission to the Chilean Internal Revenue Service (SII), the pipeline can't be completed yet, because customers or buyers in Chile can reject invoices for up to eight days. During this time, the pipeline is kept on hold in a **Pending execute update action** state. If a response is received that indicates customer rejection of the invoice, it's detected during the **Process response** step, and the pipeline is marked as failed.
+    - Even if the status response indicates successful submission to the Chilean Internal Revenue Service (SII), the pipeline can't be completed yet, because customers or buyers in Chile can reject invoices for up to eight days. During this time, the pipeline is kept on hold in a **Pending execute update action** state. If a response is received that indicates customer rejection of the invoice, it's detected during the **Process response** step, and the pipeline is marked as failed.
 
 1. **Terminate pipeline** – Wait the specified number of days, and then terminate the pipeline. In the out-of-box default setup, the pipeline is terminated with a **Completed** status if more than nine days pass since the invoice was submitted. If there are no rejections, the **Terminate pipeline** step marks the pipeline as completed.
 
 ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
+
+> [!NOTE]
+> There is a similar setup for each format that is included in the **Chilean electronic invoice (CL)** feature. For Chile, there are six setups: five for sales documents (outbound flow) and one for import vendor invoices (inbound flow).
+> 
+> - Sales invoice derived
+> - Project invoices derived
+> - Export sales invoice derived
+> - Export project invoices derived
+> - Sales packing slips derived
+> - Import vendor invoice
+>
+> ![Screenshot that shows the six setups for Chile.](ltm-chl-e-invoice-setups.png)
 
 ### Applicability rules
 
@@ -192,9 +209,9 @@ If no business rejection or acceptance is received from the buyer after nine day
 
 ## More resources
 
-- [Electronic Invoicing service overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
+- [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
+- [Get started with Electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
+- [Setting up Electronic Invoicing](../global/gs-e-invoicing-set-up-overview.md)
 - [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
 - [Dynamics 365 Country expansion: localizations for LATAM countries | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
 - [Dynamics 365 Country expansion: localizations for LATAM countries | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)

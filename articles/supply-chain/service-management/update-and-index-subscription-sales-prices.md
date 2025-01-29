@@ -1,49 +1,33 @@
 ---
 title: Update and index subscription sales prices 
 description: Learn how to update and index subscription sales prices, including a step-by-step processes for updating subscription sales prices and additional resources.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Update and index subscription sales prices 
+# Update and index subscription sales prices
 
 [!include [banner](../includes/banner.md)]
 
+1. Go to **Service management** \> **Service subscriptions** \> **All service subscriptions**.
 
-1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**.
+2. Select the subscription to update the index or base price for.
 
-2.  Select the subscription to update the index or base price for.
+3. Select **Index**. In the **Change** field, indicate how to update the base price or index, and whether the update must use a percentage or a new value. You can select from the following options:
 
-3.  Click **Index**. In the **Change** field, indicate how to update the base price or index, and whether the update must use a percentage or a new value. You can select from the following options:
-    
       - **Index by a percentage**
-    
       - **Index to**
-    
       - **Base price by percentage**
-    
       - **Base price to**
 
-4.  Click **OK**.
+4. Select **OK**.
 
 The base price or index of the subscription is updated with the specified value.
-
-## See also
-
-[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

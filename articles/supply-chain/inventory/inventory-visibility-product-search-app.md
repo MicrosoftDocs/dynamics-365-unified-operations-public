@@ -1,13 +1,12 @@
 ---
 title: Search for products using the Inventory Visibility app
 description: Learn how to search for products by using the Inventory Visibility app in Microsoft Power Apps, including definitions for various benefits.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
 ms.date: 11/20/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -67,7 +66,7 @@ To search for products by using only a product number or product name, follow th
 > [!NOTE]
 > You can't combine attribute search criteria with quick search criteria. If you do one type of search and then do the other type of search, the first search results are cleared.
 
-## Additional resources
+## Related information
 
 - [Use the Inventory Visibility app](inventory-visibility-power-platform.md)
 - [Set up product search for Inventory Visibility](inventory-visibility-product-search.md)

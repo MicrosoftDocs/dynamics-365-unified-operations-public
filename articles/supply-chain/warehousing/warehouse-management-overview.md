@@ -1,8 +1,8 @@
 ---
 title: Warehouse management overview
 description: Learn how to use Warehouse management to monitor and automate warehouse processes, including a detailed list of warehouse management processes and resources. 
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 
@@ -54,7 +54,7 @@ You must configure components for inbound and outbound warehouse process workflo
 - Cluster picking
 - Simple cross docking
 
-## Additional resources
+## Related information
 
 ### What's new and in development
 
@@ -64,6 +64,11 @@ Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app
 
 You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
 
+## White papers
+
+The following white papers explore various aspects of warehouse management in Dynamics 365 Supply Chain Management:
+
+- [Reservations in Warehouse management](https://www.microsoft.com/download/details.aspx?id=43284)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

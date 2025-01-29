@@ -1,16 +1,13 @@
 ---
 title: Work orders and fixed assets
 description: Learn about work orders and fixed assets in Asset Management, including a step-by-step process describing the relation between assets and work orders.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-09-30
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Work orders and fixed assets
@@ -33,7 +30,7 @@ The following procedure describes the relation between assets, work orders, work
 
 ![Figure 2.](media/25-work-orders.png)
 
-2. When you set up work order types on the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments. See also [Work order types](../setup-for-work-orders/work-order-types.md).
+2. When you set up work order types on the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments. Learn more in [Work order types](../setup-for-work-orders/work-order-types.md).
 
 ![Figure 3.](media/26-work-orders.png)
 

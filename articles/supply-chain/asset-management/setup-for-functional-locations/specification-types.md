@@ -1,15 +1,12 @@
 ---
 title: Maintenance attribute types
 description: Learn how to create attribute types in Asset Management, including an outline and step-by-step process on creating attribute types. 
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/24/2019
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: EntAssetFunctionalLocationTypeCopy, EntAssetAttributeType, EntAssetAttributeTypeValue, EntAssetFunctionalLocationType
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 

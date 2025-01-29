@@ -1,15 +1,12 @@
 ---
 title: Product configuration model calculations
 description: Learn how to create calculations for attributes in a product configuration model, including prerequisites and a step-by-step process.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 03/18/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-03-18
 ms.search.form: PCProductConfigurationModelListPage, PCProductConfigurationModelDetails
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Product configuration model calculations
@@ -24,7 +21,7 @@ Calculations are used in a product configuration model to calculate the configur
 
 ## Create a calculation
 
-A calculation consists of an expression and a target attribute. For more information, see [Calculations for product configuration models FAQ](calculate-product-configuration-models.md).
+A calculation consists of an expression and a target attribute. Learn more in [Calculations for product configuration models FAQ](calculate-product-configuration-models.md).
 
 To create a calculation for an existing product model, follow these steps.
 
@@ -98,7 +95,7 @@ If the `textAttribute` value has a solver value that equals *1aa*, this expressi
 > - The conditional statement must use the solver value of the attribute.
 > - Only fixed-list text attributes can be used in calculations.
 
-## See also
+## Related information
 
 - [Calculations for product configuration models FAQ](calculate-product-configuration-models.md)
 - [Add an expression constraint to a product configuration model](tasks/add-expression-constraint-product-configuration-model.md)

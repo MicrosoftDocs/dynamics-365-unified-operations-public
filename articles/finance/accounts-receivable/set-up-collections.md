@@ -1,8 +1,8 @@
 ---
 title: Set up collections
 description: Learn how to set up the collections functionality, including an overview on setting up aging period definitions.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 08/22/2017
 ms.reviewer: twheeloc

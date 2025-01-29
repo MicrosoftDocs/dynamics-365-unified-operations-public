@@ -2,17 +2,15 @@
 title: Manage ratings and reviews
 description: This article explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 author: gvrmohanreddy
-ms.date: 10/09/2020
-ms.topic: article
+ms.date: 09/20/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: anupamar
 ms.search.validFrom: 2019-10-01
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Manage ratings and reviews
@@ -72,8 +70,6 @@ To find and delete customer data in Commerce site builder, follow these steps.
 1. In the **Search for users by email address** box, enter the customer's email address, and then select **Search**.
 1. If the customer has any review activity (for example, review submissions, votes about the helpfulness of another customer's reviews, or comments about another customer's review), the results are shown. For each item, there is a **Delete** button.
 1. For each item that must be deleted, select **Delete**. When you're prompted for confirmation, select **Yes**. 
-	
-![Deleting customer data.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - It can take up to seven days for data to be completely removed from the system. Moderators should notify customers about this delay.

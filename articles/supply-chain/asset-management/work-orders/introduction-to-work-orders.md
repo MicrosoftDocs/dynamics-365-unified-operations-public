@@ -1,8 +1,8 @@
 ---
 title: Introduction to work orders
 description: Access an overview of work orders in Asset Management, which are used to manage maintenance jobs, provide required information, and register consumption.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: how-to
 ms.date: 05/22/2024
 ms.custom:
@@ -43,7 +43,7 @@ The illustration below shows an example of the **All work orders** list page.
 
 To view a list of only active work orders, select **Asset management** > **Work orders** > **Active work orders**.
 
-To view a list of work order jobs that contain assets that are installed on functional locations that you're related to as a worker, select **Asset management** > **Work orders** > **My functional location work order maintenance jobs**. (The relation between workers and functional locations is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+To view a list of work order jobs that contain assets that are installed on functional locations that you're related to as a worker, select **Asset management** > **Work orders** > **My functional location work order maintenance jobs**. (The relation between workers and functional locations is set up on the **Workers** page. Learn more in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
 
 Here are some ways that you can use the **All work orders** page:
 

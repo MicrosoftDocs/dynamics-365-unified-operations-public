@@ -1,16 +1,13 @@
 ---
 title: Calculate capacity load on scheduled work orders
 description: Learn how to calculate capacity load on scheduled work orders in Asset Management, including an outline and step-by-step process.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/19/2019
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form:
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Calculate capacity load on scheduled work orders

@@ -6,10 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 04/20/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-07-28
 ms.search.form: ReqTransOverview
-ms.dyn365.ops.version: 10.0.20
 ---
 
 # Net requirements and pegging information with the deprecated master planning engine

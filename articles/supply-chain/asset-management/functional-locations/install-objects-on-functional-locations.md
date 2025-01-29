@@ -1,15 +1,12 @@
 ---
 title: Install assets on functional locations
 description: Learn how to install assets on functional locations in Asset Management, including an outline and process for installing asset structures on functional locations.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/25/2019
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
@@ -63,8 +60,8 @@ You can set up functional location stages and functional location types to handl
 
 Before you can automatically create an asset on a functional location, the following setup data must be available:
 
-- Create a functional location type to handle the automatic creation of an asset. In the **Asset type** field, select an asset type. For more information, see [Functional location types](../setup-for-functional-locations/functional-location-types.md).
-- Create a functional location lifecycle state to handle the automatic creation of an asset. Set the **Create asset** option to **Yes**. For more information, see [Functional location lifecycle states](../setup-for-functional-locations/functional-location-stages.md).
+- Create a functional location type to handle the automatic creation of an asset. In the **Asset type** field, select an asset type. Learn more in [Functional location types](../setup-for-functional-locations/functional-location-types.md).
+- Create a functional location lifecycle state to handle the automatic creation of an asset. Set the **Create asset** option to **Yes**. Learn more in [Functional location lifecycle states](../setup-for-functional-locations/functional-location-stages.md).
 
 After the setup data is available, you're ready to create an asset.
 

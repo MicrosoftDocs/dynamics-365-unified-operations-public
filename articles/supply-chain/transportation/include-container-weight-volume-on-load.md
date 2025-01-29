@@ -1,15 +1,12 @@
 ---
 title: Include container weight and volume on load
 description: Learn how to set up and apply functionality to include container weight and volume on loads, including an outline on where this functionality applies.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
 ms.date: 05/26/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2017-09-20
 ms.search.form: TMSRateRouteWorkbench, TMSDriverLogListPage, TMSTransportationTender
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Include container weight and volume on load

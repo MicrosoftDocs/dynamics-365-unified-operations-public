@@ -1,13 +1,12 @@
 ---
 title: Checkout module
-description: This article describes how to add a checkout module to a page and set the required properties.
+description: This article describes how to add a checkout module to a page and set the required properties in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2024
-ms.topic: article
-audience: Application User
+ms.date: 01/03/2025
+ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template
@@ -17,7 +16,7 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to add a checkout module to a page and set the required properties.
+This article describes how to add a checkout module to a page and set the required properties in Microsoft Dynamics 365 Commerce.
 
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 
@@ -71,6 +70,7 @@ A checkout module shows an order summary and provides the functionality for plac
 | Enable customer reference | **True** or **False** |  If this optional property is set to **True**, then a customer can provide a reference number during checkout, which gets saved to the order header. This feature is available as of the Commerce version 10.0.40 release.|
 | Enable customer requisition | **True** or **False** | If this optional property is set to **True**, then a customer can provide a requisition number during checkout, which gets saved to the order header. Customers view this information on their order history and can filter their orders using this number. This feature is available as of the Commerce version 10.0.40 release.|
 | Enable cart note | **True** or **False** | If this optional property is set to **True**, then a customer can provide delivery instructions or any other information during checkout. This information gets saved as a note attachment to the order header. This feature is available as of the Commerce version 10.0.40 release. |
+| Default Note Title | Text string | The default title for Notes created and attached to order headers. This property value must be populated if the **Enable cart note** property is set to **True**. This feature is available as of the Commerce version 10.0.40 release. |
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 

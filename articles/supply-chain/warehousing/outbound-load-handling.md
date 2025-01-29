@@ -1,13 +1,12 @@
 ---
 title: Warehouse handling of outbound loads for sales, transfer, and outbound shipment orders
 description: This article describes the warehouse handling process for outbound loads for sales, transfer, and outbound shipment orders.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
 ms.topic: conceptual
 ms.date: 07/29/2024
-ms.search.region: Global
 ms.custom: bap-template
 ---
 

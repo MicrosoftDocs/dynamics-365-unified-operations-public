@@ -1,13 +1,12 @@
 ---
 title: Import data into Demand planning
 description: Learn how to import data from different sources and file types, and also data that is stored in a Microsoft Azure data lake.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
-ms.date: 10/19/2023
+ms.date: 08/28/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -35,7 +34,7 @@ To update your data by running an existing data import profile, follow these ste
     The details page for the selected profile appears. It contains the following tabs:
 
     - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
-    - **Configure provider** – This tab lets you view and edit the settings that are specific to the data provider that the profile uses.  For information about how to work with the settings on this tab, see the [Create and manage data import profiles](#create-and-manage-data-import-profiles) section.
+    - **Configure provider** – This tab lets you view and edit the settings that are specific to the data provider that the profile uses. For information about how to work with the settings on this tab, see the [Create and manage data import profiles](#create-and-manage-data-import-profiles) section.
     - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, the provider that was used, the table that was updated, and the number of records that were imported. Links to more information are provided.
 
@@ -58,15 +57,20 @@ To import directly from Supply Chain Management (and other finance and operation
 1. On the Action Pane, select **New**.
 1. On the **Select data provider** page, select the **Microsoft finance and operations apps** tile.
 1. A setup wizard is opened. On the **Get started** page, enter a name and description for the new profile. Then select **Next**.
-1. On the **Configure data provider** page, in the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
-1. The **Entity selection** page lists every Supply Chain Management data entity that the solution supports out of the box. It also shows which Demand planning table each data entity maps to. Turn on the **Enabled** option for each entity that you want to import from for the new profile. All Supply Chain Management data entities are supported and can be imported. Note that a table must previously be created in Demand planning before you can map the fields.
+1. On the **Configure connection** page, in the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
+1. The **Entity selection** page lets you map **Source** data entities from Supply Chain Management to **Target** tables in Demand planning. It initially lists all of the mappings that the solution supports out of the box. You can edit the list, remap fields, and add more mappings as needed. You can make the following settings here:
+    - For each listed **Source** entity that you want to import, set **Synchronize** to *Yes*. If you set **Synchronize** to *No*, the profile will ignore that entity when it runs.
+    - To delete all data from a listed **Target** table each time the profile runs, set **Delete data** to *Yes*.
+    - Source entities that include company-specific data provide a drop-down dialog box in the **Company** column. To limit the import to only include data from one or more specific companies (data entities), select those companies here. This feature supports all data entities that contain a *Data area ID* field, including custom-built data entities. If none of the listed source entities include company-specific data, then the **Company** column is hidden.
+    - To view or edit the field mappings for any listed entity, select that entity and then select **Edit** from the toolbar. Then use the **Add mapping** dialog to map source entity fields to target table fields.
+    - To add an unlisted entity, select **Add** from the toolbar. Use the **Add mapping** dialog to identify the **Source** entity and **Target** table. Then map the required source entity fields to their matching target table fields. The target table and fields must already exist in Demand planning (learn more in [View and customize tables for holding imported data](tables.md)).
 1. Select **Next**.
 1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
 1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. You're returned to the **Active Import Data Profiles** page, which now shows the new profile in the list. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data import profiles](#existing-import-profiles) section.
 
-### Create an import profile for importing from exported files through Power Query
+### Create an import profile for importing data through Power Query
 
 To import from a text or workbook file that was exported from an external system, create an import profile that uses one of the *Power Query* data providers. The provider that you use must match the format of the exported file, but the procedure is the same.
 

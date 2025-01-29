@@ -1,22 +1,18 @@
 ---
 title: Reason codes for service orders   
 description: Use reason codes to help explain the status of a service order when the stage of a service order is updated, including a step-by-step process. 
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAStageTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Reason codes for service orders   
+# Reason codes for service orders 
 
 [!include [banner](../includes/banner.md)]
-
 
 You can use reason codes to help explain the status of a service order when the stage of a service order is updated. For example, if you cancel a service order, you can select a reason code for the cancellation.
 
@@ -26,18 +22,14 @@ To view information about reason codes that are used to track the progress of se
 
 Reason codes are optional. You can decide whether to require a reason code when you update a service order to a specific service stage.
 
-1.  Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
+1. Go to **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
 
-2.  In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.
+2. On the **Service stages** page, select a service stage, and then select the **Reason** check box for the service stage.
 
-3.  Close the form to save your changes.
+3. Close the page to save your changes.
 
-## See also
+## Related information
 
-[Set up service order stages](set-up-service-order-stages.md)
-
-
-
-
+- [Set up service order stages](set-up-service-order-stages.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

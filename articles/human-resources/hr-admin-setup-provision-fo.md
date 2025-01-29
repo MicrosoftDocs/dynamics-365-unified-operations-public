@@ -37,7 +37,7 @@ Before you start to provision a new environment, the following prerequisites mus
 
 ## Provision a Human Resources trial environment
 
-Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance includes the Human Resources capabilities. For more information about Dynamics 365 Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
+Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. For more information about Dynamics 365 finance and operations trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
 
 ## Plan Human Resources environments
 

@@ -1,16 +1,13 @@
 ---
 title: Scheduled execution
 description: Learn about scheduled execution in Asset Management, including a step-by-step process for setting up generic lines that aren't limited to specific work order types.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/13/2019
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2019-08-30
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Scheduled execution

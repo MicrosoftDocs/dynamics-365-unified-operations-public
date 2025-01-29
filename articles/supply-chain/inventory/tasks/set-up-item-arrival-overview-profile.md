@@ -1,17 +1,13 @@
 --- 
 title: Set up an item arrival overview profile
 description: Learn about the setup of an arrival overview profile, including a step-by-step process using the USMF demo data company.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 07/30/2019
 ms.reviewer: kamaybac
 ms.collection: get-started   
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: WMSArrivalOverviewProfile
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up an item arrival overview profile

@@ -29,7 +29,7 @@ In general, the revenue recognition process can be used to perform these tasks:
 * Allocate revenue, to help ensure that the appropriate revenue price is recognized, based on the value of the components on multi-element orders.
 * Defer revenue, based on a revenue schedule that represents the contractual time frame and percentages for recognizing revenue over time.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36be7c1f-dabe-4dc9-ad1d-c0f4480f4701]
 
 The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -49,4 +49,3 @@ If a contractual change causes a new sales order line to be added either to the 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

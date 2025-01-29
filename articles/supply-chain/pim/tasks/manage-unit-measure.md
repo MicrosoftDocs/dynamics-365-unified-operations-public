@@ -1,13 +1,12 @@
 ---
 title: Manage units of measure
 description: Learn how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/08/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
 ---
 
@@ -70,7 +69,7 @@ To define translations for the ID or symbol and the description for a unit of me
 1. In the **Text** field, enter the translation of the unit ID or symbol in the selected language.
 1. On the Action Pane, select **Save**.
 1. Close the page.
-1. On the **Action Pane**, select **Translated unit descriptions**.
+1. On the Action Pane, select **Translated unit descriptions**.
 
     The **Translated unit descriptions** page appears. You use this page to define language-specific descriptions for the selected unit.
 
@@ -113,6 +112,6 @@ To define rules for conversions between units of measure, follow these steps.
 1. Close the page.
 
 > [!TIP]
-> You can also set up unit conversions per product variant. For more information, see [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
+> You can also set up unit conversions per product variant. Learn more in [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

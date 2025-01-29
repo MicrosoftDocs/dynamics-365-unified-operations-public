@@ -6,10 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 08/02/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-08-02
 ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Make finished goods physically available before posting to journals
@@ -21,13 +18,6 @@ When a worker reports a manufactured item as finished, the system registers it a
 The following illustration shows how processes for posting journals are invoked both with and without deferred posting.
 
 ![The report-as-finished process with and without deferred journal posting.](media/deferred-posting-flowchart.png "The report-as-finished process with and without deferred journal posting")
-
-## Turn on deferred journal posting for your system
-
-Before you can use deferred journal posting, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Production control*
-- **Feature name:** *Make finished goods physically available before posting to journals*
 
 ## Set up journal posting options for reporting as finished
 

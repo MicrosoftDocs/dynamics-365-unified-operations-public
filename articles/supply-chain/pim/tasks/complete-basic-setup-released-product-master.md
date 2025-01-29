@@ -1,13 +1,12 @@
 ---
 title: Complete basic setup of a released product master
 description: Learn how to complete the minimum setup that is required before the product master can be used in BOM versions, including a step-by-step process.  
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/10/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac  
-ms.search.region: Global
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup 
 ---
 

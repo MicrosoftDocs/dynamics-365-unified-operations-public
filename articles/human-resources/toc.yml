@@ -31,14 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.42
+          href: ./get-started/hr-whats-new-10-0-42.md
         - name: Human Resources 10.0.41
           href: ./get-started/hr-whats-new-10-0-41.md
         - name: Human Resources 10.0.40
           href: ./get-started/hr-whats-new-10-0-40.md
         - name: Human Resources 10.0.39 
           href: ./get-started/hr-whats-new-10-0-39.md  
-        - name: Human Resources 10.0.38      
-          href: ./get-started/hr-whats-new-10-0-38.md   
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -103,8 +103,6 @@ items:
           href: data-entity.md
         - name: Throttling FAQ
           href: dev-itpro/hr-admin-integration-throttling-faq.md
-        - name: Configure Dataverse integration
-          href: hr-admin-integration-common-data-service.md
         - name: Dataverse tables
           href: hr-developer-entities.md
         - name: Configure Dataverse virtual tables

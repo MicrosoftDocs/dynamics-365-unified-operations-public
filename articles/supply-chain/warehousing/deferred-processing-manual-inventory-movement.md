@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-04-27
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Deferred processing of manual inventory movement
@@ -76,7 +73,7 @@ The batch job will process the warehouse app events according to the recurrence 
 
 The details of the message contain the details of the movement (for example, the "from" and "to" locations).
 
-For more information, see [Warehouse app event processing](warehouse-app-events.md).
+Learn more in [Warehouse app event processing](warehouse-app-events.md).
 
 ## Configure the mobile device menu to skip the deferred processing policy
 
@@ -86,7 +83,7 @@ For details about how to configure the mobile device menu to skip the deferred p
 
 For details about the impact on closed work dates, see [Deferred processing of warehouse work](deferred-put.md).
 
-## Additional resources
+## Related information
 
 - [Deferred processing of warehouse work](deferred-put.md)
 - [Warehouse app event processing](warehouse-app-events.md)

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 03/21/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -29,7 +28,7 @@ When the system determines which supply to peg, it doesn't just consider the lea
 Before you can use dynamic positive days, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
-- The feature that's named *Dynamic positive days for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Dynamic positive days for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ## Set up your system to use dynamic positive days
 

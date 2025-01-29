@@ -3,14 +3,15 @@ title: Wizard form pattern
 description: Learn about the Wizard form pattern, including overviews on usage, wireframes, pattern changes, models, UX guidelines, and examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Wizard form pattern
@@ -22,10 +23,6 @@ This article provides information about the Wizard form pattern. A wizard is a s
 ## Usage
 
 A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages. Wizards are especially useful for complex or infrequent tasks that the user might have difficulty learning or doing, or for tedious, frequently performed tasks.
-
-## Wireframe
-
-[![Wireframe for Wizard form.](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -80,19 +77,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   FactBoxes
     -   FastTabs
 
-## Examples
-Form: **WrkCtrBulkResReqEditWizard** 
-
-![Wizard example.](./media/wizard2.png)
-
 ## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
--   None
 
 ### AX 2012 content
 
@@ -101,9 +86,7 @@ This section will have answers to frequently asked questions that are related to
 -   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)
 -   [MSDN Guidelines for Wizard Development \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)
 
-#### AX 2012 example
 
-[![Previous version example.](./media/wizard3.png)](./media/wizard3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

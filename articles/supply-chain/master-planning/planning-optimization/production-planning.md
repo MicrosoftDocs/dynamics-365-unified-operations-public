@@ -4,12 +4,9 @@ description: Learn about planning for production and explains how to modify plan
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 08/09/2022
+ms.date: 12/09/2024
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-12-15
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Production planning
@@ -32,6 +29,21 @@ BOM information is honored during master planning. The plan output includes mate
 
 During master planning, the current, active BOM is used to determine the materials that are required for production. This step is done through all levels of the BOM structure that is related to the required production order. Material requirement is fulfilled by using available on-hand inventory, existing on-order supply, and approved planned orders. If additional material is required anywhere, a planned order is created to cover the demand.
 
+When searching for an appropriate BOM version to use for an item in a coverage group that has the **[Use the specified BOM or formula version](../coverage-settings.md)** option turned off, the system takes several parameters into account (including the validity period of the BOM version, whether BOM version is active/approved, and the applicable quantity). The chosen BOM version isn't reconsidered after a receipt is scheduled in cases where a planned production order is delayed or scheduled to start earlier or later.
+
+When a BOM component is replenished using a production/batch order, the validity date used to search for its applicable BOM/formula version is determined after its parent order is scheduled. The validity date is based on the scheduled start or end date of an operation from the parent planned production order schedule (by default, the start date of the first operation). The scheduled start and end dates are determined after the parent production order is scheduled. If the parent planned production order is delayed later in the planning process and its scheduled start/end date times must be pushed forward because a subcomponent order is delayed, the BOM version for the subcomponent isn't reconsidered and is still based on the original scheduling attempt (backward in most cases) of the parent planned production order.
+
+Individual BOM lines also have validity periods, which are evaluated after a planned production order is scheduled, so the system uses the corresponding operation start or end dates to check for validity. Even though a BOM version and its lines might have the same validity periods, different dates are used to evaluate them. For a BOM version, the system uses the demand requirement date. For a BOM line, the system uses the scheduled start of the planned production order for the finished good.
+
+The system takes the following actions:
+
+1. Create a planned production order to replenish demand and selects a BOM version to use.
+1. Schedule the order without reevaluating the BOM version, even if the date shifts as a result of scheduling.
+1. Assess the BOM lines for the selected BOM version to ensure they are valid for the scheduled dates.
+1. Create BOM line requirements for the valid BOM lines only.
+1. If required by the planning settings, cover BOM line requirements with supply down to the specific BOM level.
+1. Evaluate whether supply of the lower BOM levels will affect the delivery schedule for any parent production orders and adjusts the schedules accordingly.
+
 ## Scheduling during firming
 
 Planned production orders include the route ID that is required for production scheduling. However, scheduling support during the planning run for planned orders is pending. The route ID is used to schedule planned production orders during firming. Therefore, the lead time on planned production orders can differ from the lead time on related scheduled, firmed production orders that are generated from them, as described here:
@@ -53,7 +65,7 @@ If you want to change information on a planned order and see the impact on the r
 2. Approve the planned order.
 3. Run master planning.
 
-When you run master planning, you should not use filters if planned production orders are included. For more information, see the [Filters](#filters) section later in this article.
+When you run master planning, you should not use filters if planned production orders are included. Learn more in the [Filters](#filters) section later in this article.
 
 > [!NOTE]
 > If the delivery date of the planned order is changed to a later date, the demand might be pegged against a new planned order. This behavior occurs when the new supply date causes a delay for the pegged demand but, according to the lead time settings, the delay can be avoided.

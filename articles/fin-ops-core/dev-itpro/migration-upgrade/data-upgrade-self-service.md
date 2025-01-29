@@ -55,11 +55,11 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
 6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
-7. Enable and start the SQL Server Agent on the source database server.
 
     > [!NOTE]
-    > A user should have the **DB\_Owner** privilege in the source database and should have access to the master database and the source database.
+    > The SQL login used for the toolkit needs to have **sysadmin** server role assigned. You can use an existing SQL login or create a new one as needed. 
 
+7. Enable and start the SQL Server Agent on the source database server.
 8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
@@ -113,7 +113,6 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there might be situations where you want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.  
     - **snapshotPostPublication** – This option adds a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
 
-
 > [!NOTE]
 > Don't set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
 
@@ -160,7 +159,7 @@ After the validation is successful, the application presents a set of menu optio
     - Replication snapshot path (for example, **D:\\SQLServer\\Snapshot**)
 
     > [!IMPORTANT]
-    > You must use SQL Server authentication. You can't use a domain sign-in.
+    > You must use a login based on SQL Server native authentication, you can't use a domain sign-in. As stated in previously in this document, this login must be assigned to the **syadmin** role.
     > 
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your AX 2012 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be in the local disk of the machine. Avoid using shared paths.
     > 

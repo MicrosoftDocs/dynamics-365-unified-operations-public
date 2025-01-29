@@ -1,16 +1,13 @@
 ---
 title: Service object groups 
 description: Object groups are useful for sorting and filtering the data about objects for reports and statistics, including outlines and examples.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/11/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceObjectGroups
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Service object groups
@@ -60,19 +57,16 @@ Create groups that you can assign service objects to. Service objects are invent
 
 To create service object groups, follow these steps:
 
-1. Click **Service management > Setup > Service objects > Service object groups**.
+1. Go to **Service management > Setup > Service objects > Service object groups**.
 
-2. Click **New** to create a new service object group.
+2. Select **New** to create a new service object group.
 
 3. Enter a unique name for the service object group and, optionally, a description.
 
-You can assign service objects to the group by using the **Service objects** form. 
+You can assign service objects to the group by using the **Service objects** page.
 
-## See also
+## Related information
 
-[Create service objects](create-service-objects.md)
-
-
-
+- [Create service objects](create-service-objects.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

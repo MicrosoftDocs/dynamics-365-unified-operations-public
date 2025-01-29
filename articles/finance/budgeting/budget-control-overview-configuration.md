@@ -4,7 +4,8 @@ description: Learn about the budget control feature and how to configure budget 
 author: music727  
 ms.author: mibeinar
 ms.topic: overview
-ms.date: 08/06/2024
+ms.date: 1/29/2025
+
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
@@ -96,15 +97,22 @@ Next, on the **Define budget control rules** tab, you must create specific rules
 
 ### Select main accounts
 
-If **Main account** isn't selected as a budget control dimension on the **Define parameters** page, but specific expenditures are being managed, you can select those expenditures on the **Select main accounts** tab. If **Main account** is selected as a budget control dimension, no entries are required.
+If **Main account** isn't selected as a budget control dimension on the **Define parameters** page, but specific expenditures are being managed, you can select those expenditures on the **Select main accounts** tab. The **Select main accounts** option ensures budget control checks are only performed for selected main accounts (or not performed on unselected main accounts) even when **Main account** is not part of **Defined parameters** in budget control. 
 
-### Define budget groups
+Example: 
+On the **Define parameters** page, **Budget control dimensions** is selected, the budget is controlled only at *Business Unit* and *Department* level.
 
-Next, on the **Define budget groups** tab, you can optionally define unique combinations of financial dimensions where budget resources are pooled for secondary budget checking. You can create a single record that includes the whole organization, or you can define multiple groups to represent individual departments or cost centers.
+![Define parameters](./media/budgetcontrolconfiguration.png) 
 
-### Define message levels
+In this example, budget control is required on all accounts, except 600120, which shouldn't have budget control enabled. This scenario could be achieved by marking all main accounts, except 600120, in **Select main accounts** tab.
 
-If budget control warning messages should be suppressed for any user groups, you can specify those groups on the **Define message levels** page. Members of the user groups will continue to receive error messages when they exceed the available budget funds, based on their over-budget permissions.
+![Select main accounts](./media/budgetcontrolconfigurationmainaccounts.png)
+
+If a purchase order is created for expenses associated to main account 600120, then the budget check isn't performed for these lines, every other main account that's selected in the **Select main accounts** tab is contolled. In this example *FREIGHT* procurement category is associated to the main account 600120.
+
+![Purchase order](./media/budgetcheckpurchaseorder.png) 
+
+When the **Main account** is selected as a budget control dimension, no configurations in **Select main accounts** tab are required. 
 
 ### Activate budget control
 

@@ -1,16 +1,13 @@
 ---
 title: Asset fault analysis
 description: Learn about asset fault analysis in Asset Management, including a step-by-step process and examples using group by symptoms.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/23/2019
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetObjectFaultCalculate 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Asset fault analysis

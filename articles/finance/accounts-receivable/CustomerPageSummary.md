@@ -4,7 +4,7 @@ description: This article describes how the customer page summary feature shows 
 author: EricWang
 ms.author: wangchen
 ms.topic: conceptual
-ms.date: 06/05/2024
+ms.date: 09/15/2024
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User
@@ -48,6 +48,16 @@ To view the summary data, a user must have at least one of the following menu it
 1. On the **All** tab, select **Customer page summary**.
 1. Select **Learn more** to learn more about the AI terms.
 1. Select **Enable**.
+
+## Turn AI summaries with Copilot on or off
+
+Administrators can control if this AI summary feature is available. 
+1. Go to **Feature management**.
+2. Search for **Customer summary – Customer page summary**.
+3. This feature is turned on by default, but it can be turned off.
+
+For more informatoin, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
 
 ## View summary text
 

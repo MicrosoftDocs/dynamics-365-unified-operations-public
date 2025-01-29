@@ -1,13 +1,12 @@
 ---
 title: Create configuration rules
 description: Learn how configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/10/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac  
-ms.search.region: Global
 ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Document routing label layouts
 description: Learn how to use formatting methods to print values on labels with outlines on turn this feature on or off and custom number formats.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 
@@ -125,7 +125,7 @@ You can combine this format with other types that were described earlier in this
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## Additional resources
+## Related information
 
 For more information about how to set up and print labels, see the following articles:
 

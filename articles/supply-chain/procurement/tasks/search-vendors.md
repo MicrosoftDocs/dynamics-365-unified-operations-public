@@ -1,17 +1,13 @@
 --- 
 title: Search for vendors
 description: Learn how to search for vendors based on specific criteria, including a step-by-step process using the USMF demo data company. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: VendSearchCriterion, VendSearchAddCategory, VendSearchAddReviewCriterionGroup, VendSearchResults, VendSearchAddReviewCriterion 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Search for vendors

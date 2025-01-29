@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Module CSS optimization
 description: This article describes how to use the module CSS optimization feature in Microsoft Dynamics 365 Commerce to help reduce the overall CSS bundle size of an e-commerce page and improve page performance.
 author: samjarawan
-ms.date: 08/05/2022
+ms.date: 07/31/2024
 ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgriffin
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+  - bap-template
 
 ---
 # Module CSS optimization

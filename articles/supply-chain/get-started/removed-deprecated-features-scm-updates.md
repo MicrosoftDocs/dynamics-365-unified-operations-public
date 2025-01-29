@@ -4,10 +4,9 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: conceptual
-ms.date: 06/14/2024
+ms.date: 01/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -25,7 +24,51 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.43 release
+
+### "Adjustment out" mobile device menu items must now use process guide
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Adjustment out* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Adjustment out* work creation process. The ability to turn off this option is being removed from the product. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Adjustment out* work creation process will be made mandatory in Supply Chain Management version 10.0.45. Approximately one year after the release of version 10.0.45, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile device menu items for adjustment in and adjustment out](../warehousing/reason-codes-for-counting-journals.md#setup-adjustment-in-out). |
+
+### "Spot cycle counting" mobile device menu items must now use process guide
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Spot cycle counting* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Spot cycle counting* work creation process. The ability to turn off this option is being removed from the product. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Spot cycle counting* work creation process will be enabled by default in Supply Chain Management version 10.0.45, and it will be made mandatory in version 10.0.47. Approximately one year after the release of version 10.0.47, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md). |
+
+## Features removed or deprecated in the Supply Chain Management 10.0.42 release
+
+### Register material consumption on the production floor execution interface (WMS-enabled) (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The *Register material consumption on the production floor execution interface (WMS-enabled)* feature (previously in preview) has been replaced by the *Register material consumption as complete and edit dimensions on the production floor execution interface* feature. |
+| **Replaced by another feature?**  | Yes. The *Register material consumption on the production floor execution interface (WMS-enabled)* feature (previously in preview) has been replaced by the *[Register material consumption as complete and edit dimensions on the production floor execution interface](../production-control/production-floor-execution-configure.md#material-consumption)* feature, which also adds the ability to use the production floor execution interface to register material consumption for WMS-enabled items. |
+| **Product areas affected** | Supply Chain Management – Production control |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. As of Supply Chain Management version 10.0.41, if you never enabled the old *Register material consumption on the production floor execution interface (WMS-enabled)* feature, then you'll only see the newer *Register material consumption as complete and edit dimensions on the production floor execution interface* feature in feature management. If you previously enabled the old feature, you'll still be able to use it, but you'll soon be contacted by Microsoft Support with instructions on how to replace it with the newer feature. |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
+
+### Pricing management module (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The Pricing management module (previously in preview) is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
+| **Replaced by another feature?**  | Yes, the Pricing management module is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
+| **Product areas affected** | Supply Chain Management – Pricing management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated and will be removed in a future release. It is replaced by the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md), which offers nearly all of the same functionality as the deprecated Pricing management module, plus several important enhancements. Both the deprecated pricing management module and the Unified pricing management module use similar or identical navigation paths in the Supply Chain Management user interface, so only one of these modules can be active at a time. As of Supply Chain Management version 10.0.41, if you never enabled the deprecated pricing management module in your environment, only the Unified pricing management module will be available to you. If you have enabled the deprecated pricing management module, you can continue to use it until it is removed, but we recommend that you transition to the Unified pricing management module as soon as possible to take advantage of the new features and enhancements that it offers. For help transitioning from the deprecated pricing management module to the Unified pricing management module, please contact Microsoft Support. |
 
 ### Job card terminal
 
@@ -103,7 +146,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | No replacement is planned. We recommend that customers integrate with Dynamics 365 Sales. |
 | **Product areas affected** | Supply Chain Management – sales and marketing |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p>Deprecated. As of December 1, 2023, Microsoft will discontinue support for synchronizing contacts, appointments, and tasks between Supply Chain Management and Outlook. In addition, security updates will no longer be provided for these features.</p><p>This functionality is being discontinued because the existing integration is based on SOAP. However, Exchange Web Service (EWS) is transitioning from SOAP to REST and will support only REST going forward. There are no plans to add REST support for Outlook integration in Supply Chain Management.</p><p>As of May 1, 2024, it will no longer be possible to synchronize the following types of records between Supply Chain Management and Outlook:</p><ul><li>Contacts</li><li>Appointment activities</li><li>Task activities</li></ul><p>To prepare for this change, redesign any extensions that you've made to any of these capabilities to remove the dependency.</p><p>To support customer relations management scenarios, consider integrating Dynamics 365 Sales with Outlook and/or using dual-write to synchronize contacts for customer accounts between Supply Chain Management and Dynamics 365 Sales. (For more information, see [Integrated customer master](../../fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping.md).)</p> |
+| **Status** | <p>Deprecated. As of December 1, 2023, Microsoft will discontinue support for synchronizing contacts, appointments, and tasks between Supply Chain Management and Outlook. In addition, security updates will no longer be provided for these features.</p><p>This functionality is being discontinued because the existing integration is based on SOAP. However, Exchange Web Service (EWS) is transitioning from SOAP to REST and will support only REST going forward. There are no plans to add REST support for Outlook integration in Supply Chain Management.</p><p>As of May 1, 2024, it will no longer be possible to synchronize the following types of records between Supply Chain Management and Outlook:</p><ul><li>Contacts</li><li>Appointment activities</li><li>Task activities</li></ul><p>To prepare for this change, redesign any extensions that you've made to any of these capabilities to remove the dependency.</p><p>To support customer relations management scenarios, consider integrating Dynamics 365 Sales with Outlook and/or using dual-write to synchronize contacts for customer accounts between Supply Chain Management and Dynamics 365 Sales. (Learn more in [Integrated customer master](../../fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping.md).)</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.29 release
 
@@ -115,7 +158,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, the [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) functionality is being replaced by the [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md) functionality. |
 | **Product areas affected** | Supply Chain Management – inventory |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p>Removed. The *Stock transfer orders that have tax on the transfer price* functionality has been removed as of October 2023. Customers must instead use the improved functionality, *Stock transfer orders for India*. For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
+| **Status** | <p>Removed. The *Stock transfer orders that have tax on the transfer price* functionality has been removed as of October 2023. Customers must instead use the improved functionality, *Stock transfer orders for India*. Learn more in [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.19 release
 
@@ -161,7 +204,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management – Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization is not supported with on-premises deployments. |
-| **Status**                         | Deprecated. On April 1, 2022, support for manufacturing scenarios was discontinued for the built-in master planning engine for Supply Chain Management. As of that date, Microsoft stopped all active development on manufacturing scenarios for the built-in planning engine, stopped releasing new features, and only released critical bug fixes.  Since that date, all companies that require support for manufacturing scenarios have been required to use Planning Optimization for their master planning calculations. For more information, see [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Since April 2022, only companies with on-premises deployments of Supply Chain Management have been able to continue using the built-in master planning engine for manufacturing scenarios. However, as of March 2023, Microsoft has now fully discontinued all support for the built-in master planning engine for all types of deployments. Hereafter, Microsoft will only provide support for critical blocking issues (which result in no planned orders being created or the continuous failure of built-in master planning). The built-in master planning engine is now referred to as the *deprecated master planning engine*. |
+| **Status**                         | Deprecated. On April 1, 2022, support for manufacturing scenarios was discontinued for the built-in master planning engine for Supply Chain Management. As of that date, Microsoft stopped all active development on manufacturing scenarios for the built-in planning engine, stopped releasing new features, and only released critical bug fixes.  Since that date, all companies that require support for manufacturing scenarios have been required to use Planning Optimization for their master planning calculations. Learn more in [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Since April 2022, only companies with on-premises deployments of Supply Chain Management have been able to continue using the built-in master planning engine for manufacturing scenarios. However, as of March 2023, Microsoft has now fully discontinued all support for the built-in master planning engine for all types of deployments. Hereafter, Microsoft will only provide support for critical blocking issues (which result in no planned orders being created or the continuous failure of built-in master planning). The built-in master planning engine is now referred to as the *deprecated master planning engine*. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.11 release
 
@@ -173,7 +216,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management – Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization isn't supported for on-premises deployments. |
-| **Status**                         | Removed. On April 1, 2021, support for distribution scenarios was discontinued for the built-in master planning engine for Supply Chain Management. Since then, customers running distribution scenarios have been required to use Planning Optimization for master planning calculations. For more information, see [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Since April 2021, only companies with on-premises deployments of Supply Chain Management have been able to continue using the built-in master planning engine for distribution scenarios. However, as of March 2023, Microsoft has now fully discontinued all support for the built-in master planning engine for all types of deployments. Hereafter, Microsoft will only provide support for critical blocking issues (which result in no planned orders being created or the continuous failure of built-in master planning). The built-in master planning engine is now referred to as the *deprecated master planning engine*. |
+| **Status**                         | Removed. On April 1, 2021, support for distribution scenarios was discontinued for the built-in master planning engine for Supply Chain Management. Since then, customers running distribution scenarios have been required to use Planning Optimization for master planning calculations. Learn more in [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Since April 2021, only companies with on-premises deployments of Supply Chain Management have been able to continue using the built-in master planning engine for distribution scenarios. However, as of March 2023, Microsoft has now fully discontinued all support for the built-in master planning engine for all types of deployments. Hereafter, Microsoft will only provide support for critical blocking issues (which result in no planned orders being created or the continuous failure of built-in master planning). The built-in master planning engine is now referred to as the *deprecated master planning engine*. |
 
 ## Previous announcements about removed or deprecated features
 

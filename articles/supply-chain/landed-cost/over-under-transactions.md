@@ -1,8 +1,8 @@
 ---
 title: Over/under transactions
 description: Learn how to set up the details of policies for over/under transactions, so that the system can determine how to manage over-processing of goods.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

@@ -1,23 +1,20 @@
 ---
 title: Consolidate inventory transactions
 description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 04/11/2024
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-03-01
 ms.search.form: InventTransArchiveProcessForm
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Consolidate inventory transactions
 
 [!include [banner](../../includes/banner.md)]
 
-Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transaction consolidation* feature to consolidate data about inventory transactions to help improve system performance.
+Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how to consolidate data about inventory transactions to help improve system performance.
 
 > [!NOTE]
 > Only financially updated inventory transactions can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
@@ -27,11 +24,7 @@ When you consolidate inventory transactions, all related transactions are moved 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
 > [!NOTE]
-> After consolidating your inventory transactions, you can further optimize storage and system performance my using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. For more information, see [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
-
-## Turn on the feature in your system
-
-If your system doesn't already include the feature that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transaction consolidation* feature. This feature can't be disabled after being enabled.
+> After consolidating your inventory transactions, you can further optimize storage and system performance by using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. Learn more in [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
 ## Things to consider before you consolidate inventory transactions
 
@@ -42,6 +35,7 @@ Before you consolidate inventory transactions, you should consider the following
 - Standard cost conversion can't be done for consolidated periods.
 - Inventory reports that are sourced from inventory transactions are affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
 - Inventory forecasts might be affected if they're run during the time horizon of consolidated periods.
+- All necessary actions (such as potential returns) on sales orders and their related inventory transactions should be completed before consolidating a period.
 
 ## Prerequisites
 
@@ -102,6 +96,7 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
+- **Progress details** – Open a log that shows the progress of your inventory consolidation jobs.
 
 ## Extend your code to support custom fields
 
@@ -209,3 +204,7 @@ final class InventTransArchiveSqlStatementHelper_Extension
     }
 }
 ```
+
+## Learn more
+
+- [Consolidate inventory transactions FAQ](inventory-transactions-consolidation-faq.md)

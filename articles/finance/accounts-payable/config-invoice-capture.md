@@ -1,10 +1,10 @@
 ---
 title: Configure the Invoice capture solution
 description: Learn about how to configure the Invoice capture solution, including a step-by-step process that outlines various system preferences.
-author: sunfzam
+author: leizi2015
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 11/20/2023
+ms.date: 08/05/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -23,16 +23,19 @@ After the Invoice capture solution is installed, default configurations for usin
 
 ## System preference
 
-1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages.
+1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages. However, it can't handle more complex invoice layouts. For those layouts, customers can introduce their own models by uploading additional sample invoices, tagging the fields, and training the model. Additionally, customers can define new model fields and map them to the fields in Invoice capture. These additional captured fields can then be transferred to Dynamics 365 Finance to fulfill specific business requirements. A custom invoice model is built on top of the prebuilt model. However, before you apply it, you should be aware of the following limitations:
 
-    > [!NOTE]
-    > In a future release, customers can create their own custom prebuilt models to handle invoices that have more complex layouts. After a model is published, additional mapping is required to map the model fields to the invoice files.
+    - Key-value pairs aren't returned, and the **Map key-value pair fields** icon is disabled.
+    - Confidence scores aren't returned.
+    - The position of invoice lines isn't returned.
+    - Only one decimal precision formatting is allowed when a new currency field is defined.
+    - Currency codes aren't returned. This limitation might affect the derivation of the currency code.
 
-2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
-3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
+2. **Channel for file upload** – The channel that's used to directly upload invoice files.
+3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. In this case, invoice file processing is halted at the **Received files** stage.
 4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
-5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
-6. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day.
+5. **Use continuous learning** – Select this option to turn on the continuous learning feature. The continuous learning feature tries to record patterns between the invoice context and manually selected entities. Immediately after the invoice is successfully transferred, the relationship is recorded and applied to any invoice that arrives in the future and has the same context. 
+6. **Auto invoice cleanup** – Select this option to automatically clean up transferred invoices and voided invoices that are older than 180 days every day. The job deletes both the invoice data and the original invoice file.
 
 ## Manage processing rules
 
@@ -49,7 +52,9 @@ In invoice capture processing, different derivation rules are applied to ensure 
     - Purchase order number: "P.O.125", Format: "USMF-\#\#\#\#\#\#\#\#", Formatted purchase order number: "USMF-00000125"
     - Purchase order number: "125", Format: "PO-\#\#\#\#\#\#\#\#", Formatted purchase order number: "PO-00000125"
 
-- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from invoice master data in Dynamics 365 Finance. The logic is applied only for cost invoices, because the currency code must be identical to the currency code on the purchase order.
+- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from invoices of the **Cost** type in Dynamics 365 Finance. For purchase order invoices, if the currency codes on the derived purchase orders are unique, those currency codes are used for the invoices.
+- **User confidence score** – Select this parameter to skip the validation of confidence scores.
+- **Validate unit of measure for PO invoice** – Select this parameter to ensure the consistency of the unit of measure between the invoice line and its associated purchase order line.
 - **Validate total sales tax amount** – Select this parameter to validate the consistency between the sales tax amount on the **Sales tax** card and the total sales tax amount. If there's no sales tax line, the validation logic is skipped.
 - **Validate total amount** – Select this parameter to confirm alignment between the calculated total invoice amount and the captured total amount.
 
@@ -59,6 +64,8 @@ In invoice capture processing, different derivation rules are applied to ensure 
     *Total amount* == *Sum (line amount)* + *Sum (charge lines)* &minus; *ABS(Discount)* + *Total sales tax*
 
     If there's no invoice line, or if the sum of the line amount is zero, the total amount validation is skipped.
+
+- **Credit note process** – Select the **Support credit note** parameter to automatically classify a document as a credit note if the document header contains terms such as **Credit note** or **Credit memo**.
 
 ## Manage file filters (optional)
 
@@ -111,7 +118,7 @@ In **Manage vendors**, there are three options to sync the vendor accounts:
 - **Sync all** – all vendor accounts are synced. This will potentially cause a performance issue.
 - **Sync by legal entity** – The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
 - **Sync by selection** – Administrators can search and select one or multiple vendors and sync the selected vendors.
-    
+
 An Accounts payable administrator can initiate the vendor synchronization manually or in real time. To enable real-time synchronization, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Invoice capture**.

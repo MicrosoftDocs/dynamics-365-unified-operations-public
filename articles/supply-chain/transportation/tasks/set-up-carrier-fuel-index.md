@@ -1,18 +1,13 @@
 --- 
 title: Set up a carrier fuel index
 description: Learn how to create a fuel index region, a fuel index and a carrier fuel index, including step-by-step processes using the USMF demo data company. 
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up a carrier fuel index

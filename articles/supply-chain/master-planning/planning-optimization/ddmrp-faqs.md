@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 11/24/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -61,7 +60,7 @@ Yes, DDMRP works with any functionality that the deprecated master planning engi
 
 ### Is the Demand Driven Institute part of Microsoft?
 
-No, the Demand Driven Institute is a separate organization that developed the DDMRP methodology. Microsoft developed the functionality that supports the DDMRP methodology in Supply Chain Management, and our solution has been certified by the Demand Driven Institute. For more information, see the [Demand Driven institute website](https://www.demanddriveninstitute.com/).
+No, the Demand Driven Institute is a separate organization that developed the DDMRP methodology. Microsoft developed the functionality that supports the DDMRP methodology in Supply Chain Management, and our solution has been certified by the Demand Driven Institute. Learn more at the [Demand Driven institute website](https://www.demanddriveninstitute.com/).
 
 ### Which Demand Driven Institute certifications are recommended for consulting teams?
 
@@ -80,7 +79,7 @@ When you're choosing where to put decoupling points in your supply chain, consid
 - **Sales order visibility horizon** – Add buffers at points where you must quickly react to meet new demand.
 - **Market potential lead time** – Add buffers at points where you can sell items at a higher price if the lead time is shorter.
 
-For more information, see [Inventory positioning](ddmrp-inventory-positioning.md).
+Learn more in [Inventory positioning](ddmrp-inventory-positioning.md).
 
 ### Are negative and positive days considered for coverage code decoupling points?
 

@@ -1,15 +1,12 @@
 ---
 title: Generate variants for engineering products
 description: Learn how to generate variants for engineering products, including an outline on generating one or more new variants of engineering products.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/08/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-06-08
 ms.search.form:
-ms.dyn365.ops.version: 10.0.20
 ---
 
 # Generate variants for engineering products

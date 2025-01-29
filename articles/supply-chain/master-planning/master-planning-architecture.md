@@ -3,12 +3,12 @@ title: Master planning system architecture
 description: Learn about the system architecture used to process master plans in Supply Chain Management, including outlines on architecture and data flow.
 author: t-benebo
 ms.author: benebotg
-ms.topic: conceptual
-ms.date: 11/11/2022
-ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: ReqCreatePlanWorkspace
+ms.topic: how-to
+ms.date: 12/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Master planning system architecture
@@ -17,7 +17,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 In Supply Chain Management, master planning is managed by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management, which enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
 
-To use Planning Optimization, you must install the Planning Optimization Add-in from your project in Microsoft Dynamics Lifecycle Services (LCS) and turn on the Planning Optimization functionality in Supply Chain Management. For more information, see [Get started with master planning](planning-optimization/get-started.md).
+To use Planning Optimization, you must install the Planning Optimization Add-in from your project in Microsoft Dynamics Lifecycle Services (LCS) and turn on the Planning Optimization functionality in Supply Chain Management. Learn more in [Get started with master planning](planning-optimization/get-started.md).
 
 The following illustration shows the advantage of running Planning Optimization during office hours.
 

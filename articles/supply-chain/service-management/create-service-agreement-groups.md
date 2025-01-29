@@ -1,15 +1,14 @@
 ---
 title: Create service agreement groups  
 description: Access a procedure that shows how to create service agreement groups, including a step-by-step process for setting up service agreement groups.
-author: ChristianRytt
-ms.author: crytt
-ms.topic: article
-ms.date: 06/15/2020
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAAgreementGroup
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create service agreement groups
@@ -28,9 +27,8 @@ Service agreement groups are useful for sorting and filtering service agreements
 > [!NOTE]
 > If a service agreement group is defined in the **Service agreement group** field of the **Service management parameters** page, the program suggests this group for all new service agreements that you create.
 
-## Related articles
+## Related information
 
-[Service agreement overview](service-agreement-groups.md)
-
+- [Service agreement overview](service-agreement-groups.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

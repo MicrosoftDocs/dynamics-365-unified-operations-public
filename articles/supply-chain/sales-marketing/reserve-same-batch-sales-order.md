@@ -1,16 +1,12 @@
 ---
 title: Reserve the same batch for a sales order
 description: Learn how to set up a product to allow reservation of inventory against a single batch of inventory, including definitions of various groups.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 03/17/2020
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ---
 

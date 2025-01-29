@@ -4,7 +4,7 @@ description: Learn about tips and tricks for working with the GitHub repos and M
 author: edupont04
 ms.author: edupont
 ms.topic: article
-ms.date: 04/13/2023
+ms.date: 07/17/2024
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Operations
 
 This article describes how to contribute to our content in our [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) GitHub repo.
 
-For information about how to create Markdown files in GitHub repos, see the [Docs contributor guide](/contribute/). For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).
+ For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).
 
 ## Contribute to the content
 
@@ -24,25 +24,15 @@ One benefit of GitHub is that you can contribute to the core content that the Mi
 
 You can also contribute and make edits to the existing documentation. To get started, select the **Edit** button (pencil symbol) in a article. The following video shows how you can contribute to the Microsoft documentation.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=beb8146a-fbc8-4dbb-a78d-2a38039e6981]
 
 > [!NOTE]
-> Microsoft currently accepts pull requests only to the Dynamics-365-Unified-Operations-public repo.
+> Microsoft currently accepts pull requests only to the source files in English (US).
 
-### Get started with GitHub
+Learn how to get started with Markdown files in GitHub repos in the [Microsoft Learn contributor guide](/contribute/content/how-to-write-overview). Find tips and tricks that are particular to Dynamics 365 documentation at [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute).
 
-To join Microsoft in the world of GitHub and Markdown, you must be familiar with some new terminology and tools. The following list outlines the main steps, but you can find additional content, tools, and ideas in the [GitHub documentation](https://help.github.com/en/github) and other forums.
-
-1. Sign up for GitHub.
-
-    For more information, see [GitHub account setup](/contribute/get-started-setup-github) and [Install content authoring tools](/contribute/get-started-setup-tools) in the Docs contributor guide.
-
-2. Fork the appropriate repo.
-
-    If you want to supplement Microsoft's content, then you do not need a fork of our repo. If you will customize Microsoft content using the MarkDown format, we recommend that you manually fork the relevant repo and use your favorite MarkDown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
-
-    > [!TIP]
-    > You aren't required to make your GitHub repos public. When you fork a public repo, in the settings for the new repo, you can specify whether the repo is public, private, or available only to specific GitHub accounts.
+> [!TIP]
+> You aren't required to make your GitHub repos public. When you fork a public repo, in the settings for the new repo, you can specify whether the repo is public, private, or available only to specific GitHub accounts.
 
 ### Markdown format
 
@@ -67,8 +57,8 @@ You can use the [Dynamics 365 Translation Service](../lifecycle-services/transla
 
 ## See also
 
-[Docs contributor guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Microsoft Learn contributor guide](/contribute/)  
+[Learn Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
