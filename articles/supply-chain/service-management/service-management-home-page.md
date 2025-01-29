@@ -1,8 +1,8 @@
 ---
 title: Service management overview
 description: Use Service management to establish service agreements and service subscriptions and handle service orders and customer inquiries.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable
 ms.topic: overview

@@ -1,178 +1,188 @@
 {
   "redirections": [
     {
-      "source_path": "articles/finance/localizations/global/e-invoicing-faq.md",
-      "redirect_url": "dynamics365//finance/localizations/global/gs-e-invoicing-faq",
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-overview",
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/finance/localizations/global/e-invoicing-faq.md",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-faq",
+      "redirect_document_id": "false"
+    },
+     {
+      "source_path": "articles//human-resources/hr-admin-integration-common-data-service.md",
+      "redirect_url": "/dynamics365/human-resources/hr-dataverse-integration",
+      "redirect_document_id": "false"
+    },    
+    {
       "source_path": "articles/finance/localizations/global/rcs-overview.md",
-      "redirect_url": "dynamics365/localizations/global/workspace/merge-rcs-to-gsw",
+      "redirect_url": "/dynamics365/localizations/global/workspace/merge-rcs-to-gsw",
       "redirect_document_id": "false"
     },    
     {
       "source_path": "articles/finance/localizations/global/rcs-globalization-feature.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/rcs-global-repo-upload.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },  
     {
       "source_path": "articles/finance/localizations/dev-itpro/rcs-delete-environment.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/rcs-lcs-repo-dep-faq.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/enhanced-filtering-global-repo.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/rcs-global-repo-share-configuration.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/discontinuing-configurations-rcs-global-repo.md",
-      "redirect_url": "dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/copilot/chat-with-fno-data",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/chat-with-fno-data",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-connected-applications.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-customer-certificates-secrets.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-parameters#create-a-key-vault-reference",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-parameters#create-a-key-vault-reference",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-service-environments.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-create-sharepoint-connection.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-sharepoint-connection",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-sharepoint-connection",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-key-vault-azure-portal.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-azure-resources.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-rcs.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-sign-up-install.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-overview.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-administration-integration-components.md",
-      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-administration-integration-components",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-administration-integration-components",
       "redirect_document_id": "false"
     },   
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-service-overview.md",
-      "redirect_url": "dynamics365/finance//localizations/global/gs-e-invoicing-service-overview",
+      "redirect_url": "/dynamics365/finance//localizations/global/gs-e-invoicing-service-overview",
       "redirect_document_id": "false"
     },   
     {
       "source_path": "articles/finance/cash-bank-management/letters-of-credit.md",
-      "redirect_url": "dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
+      "redirect_url": "/dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
       "redirect_document_id": "false"
     },     
     {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/human-resources/hr-admin-setup-provision.md",
-      "redirect_url": "dynamics365/human-resources/hr-admin-setup-provision-fo",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-setup-provision-fo",
       "redirect_document_id": "false"
     },    
     {
       "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-ax2012.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-vcruntime.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md",
-      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
       "redirect_document_id": "false"
     }, 
     {
@@ -287,7 +297,7 @@
     },    
     {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
-      "redirect_url": "dynamics365/fin-ops-core/fin-ops",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops",
       "redirect_document_id": "false"
     },
     {
@@ -297,37 +307,37 @@
     },
     {
       "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
-      "redirect_url": "dynamics365/finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
+      "redirect_url": "/dynamics365/finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/norway/emea-pol-vat-declaration.md",
-      "redirect_url": "dynamics365/fin-ops-core/localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay",
+      "redirect_url": "/dynamics365/fin-ops-core/localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/ltm-set-up-legal-entity-tax-uruguay.md",
-      "redirect_url": "dynamics365/fin-ops-core/localizations/poland/emea-pol-vat-declaration",
+      "redirect_url": "/dynamics365/fin-ops-core/localizations/poland/emea-pol-vat-declaration",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/link-your-environment.md",
-      "redirect_url": "fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
+      "redirect_url": "/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md",
-      "redirect_url": "fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
+      "redirect_url": "/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md",
-      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37",
+      "redirect_url": "/fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md",
-      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
+      "redirect_url": "/fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
       "redirect_document_id": "false"
     },    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",

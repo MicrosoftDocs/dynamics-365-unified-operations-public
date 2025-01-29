@@ -151,7 +151,7 @@ Learn more in [Product owners](product-owner.md).
 
 In older versions of Supply Chain Management, when you release a product, only the first active BOM or formula (as of the date of release) will be released. If there are no active BOMs or formulas, the engineering version won't be released.
 
-Starting in Supply Chain Management version 10.0.34, it's now possible to release multiple BOMs or formulas. To enable this new functionality, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the *Release multiple BOMs/formulas for Engineering Change Management* feature.
+Starting in Supply Chain Management version 10.0.34, it's now possible to release multiple BOMs or formulas. To enable this new functionality, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the *Release multiple BOMs/formulas for Engineering Change Management* feature. As of Supply Chain Management version 10.0.43, this feature is mandatory and can't be turned off.
 
 When the *Release multiple BOMs/formulas for Engineering Change Management* feature is enabled, all BOMs or formulas that are active for a product will be released when you release the product. This functionality can be relevant, for example, if you have multiple active formulas that apply for various from quantities. You'll be able to view the different BOMs or formulas and their respective routes on the BOM designer when releasing on the **Release product structure** page and when reviewing the release on **Open product releases** page.
 

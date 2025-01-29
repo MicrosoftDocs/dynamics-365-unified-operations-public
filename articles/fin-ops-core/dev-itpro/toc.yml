@@ -1815,8 +1815,24 @@ items:
         href: sysadmin/sys-admin-tools-network-printer.md
       - name: Monitoring and telemetry using Application Insights
         items:  
-        - name: Overview
-          href: sysadmin/monitoring-and-telemetry-appinsights.md
+        - name: Monitoring and Telemetry using Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+          href: monitoring-telemetry/index.yml
+        - name: Monitoring and telemetry overview
+          href: monitoring-telemetry/monitoring-overview.md
+        - name: Available telemetry
+          href: monitoring-telemetry/monitoring-available-telemetry.md
+        - name: Gather monitoring requirements
+          href: monitoring-telemetry/monitoring-gathering-requirements.md
+        - name: Get started with telemetry for finance and operations apps
+          href: monitoring-telemetry/monitoring-getting-started.md
+        - name: Analyze and monitor telemetry with KQL
+          href: monitoring-telemetry/monitoring-analyze-telemetry-KQL.md
+        - name: Use telemetry-based alerts
+          href: monitoring-telemetry/monitoring-analyze-telemetry-driven-alerts.md
+        - name: Add custom telemetry signals
+          href: monitoring-telemetry/monitoring-developer-add-custom-signals.md
+        - name: Understand and control costs
+          href: monitoring-telemetry/monitoring-understanding-and-controlling-cost.md
       - name: Security
         items:
         - name: Role-based security
@@ -1845,7 +1861,29 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
-        - name: Active Directory security groups
+        - name: Security governance (preview)
+          items:
+            - name: Set up security categories
+              href: ../fin-ops-core/fin-ops/sysadmin/security-category.md
+            - name: Set up security governance parameters
+              href: ../fin-ops-core/fin-ops/sysadmin/setup-security-gov-para.md 
+            - name: Set up a process hierarchy, roles, and privileges
+              href: ../fin-ops-core/fin-ops/sysadmin/setup-process-role-hierarchy.md        
+            - name: Security tasks under process hierarchy
+              href: ../fin-ops-core/fin-ops/sysadmin/usg-security-tasks-detailed.md          
+            - name: Security entry points under process hierarchy
+              href: ../fin-ops-core/fin-ops/sysadmin/entry-point-detailed.md
+            - name: Roles violating segregation of duties
+              href: ../fin-ops-core/fin-ops/sysadmin/roles-violating-sod.md
+            - name: Manage temporary roles 
+              href: ..fin-ops-core/fin-ops/sysadmin/temp-role-mgmt.md
+            - name: Security version management
+              href: ../fin-ops-core/fin-ops/sysadmin/security-version.md
+            - name: Privileged user management
+              href: ../fin-ops-core/fin-ops/sysadmin/priv-user-mgmt.md            
+            - name: Available reports for security
+              href: ../fin-ops-core/fin-ops/sysadmin/security-reports.md            
+        - name: Entra ID security groups
           href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management
           href: sysadmin/import-export-customized-security.md
@@ -1911,6 +1949,8 @@ items:
         href: sysadmin/configure-manage-database-log.md
       - name: Build OData metadata cache when the AOS starts
         href: sysadmin/odata-warmup.md
+      - name: Understand Interactive Application Object Server (AOS) restarts
+        href: sysadmin/interactive-aos-restart.md
       - name: Setting Up Azure Key Vault client
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
@@ -2289,6 +2329,8 @@ items:
           href: copilot/enable-copilot-generative-help.md
         - name: Add knowledge to generative help and guidance with Copilot
           href: copilot/extend-copilot-generative-help.md
+        - name: Enable enhanced user feedback for Copilot and related experiences (preview)
+          href: copilot/enable-copilot-feedback.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview

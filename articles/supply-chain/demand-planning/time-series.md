@@ -1,32 +1,36 @@
 ---
-title: Time series and planning data
-description: Learn about time series, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
+title: Time series, worksheets, and planning data
+description: Learn about time series, worksheets, and planning data, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 10/19/2023
+ms.date: 11/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Time series and planning data
+# Time series, worksheets, and planning data
 
 [!include [banner](../includes/banner.md)]
 
-Time series represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
+Time series, worksheets, and planning data represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 
-## <a name="explore"></a>Explore time series
+- *Time series* is a term that describes the type of data that forecasts, calculations, and transformations consume and create. Each time series is a collection of data values that are plotted against a series at regular time intervals. Both planning data and worksheets contain time series data.
+- *Planning data* is the processed and categorized output that forecasts, calculations, and transformations create. Demand planning presents planning data by using both a chart and a grid of values. It also provides tools for organizing, analyzing, editing, combining, and presenting this data. Every planning data record is categorized as containing *Forecast*, *Demand*, *Financials*, or *Miscellaneous* data, based on how it was created.
+- *Worksheets* let you view, modify, and combine various types, versions, and views of planning data. You can create and switch between any number of worksheets for each planning data record. You can also share worksheets with other users or keep them private for yourself.
 
-To view all your time series, on the navigation pane, select **Planning data** \> **All**. (Alternatively, select an appropriate time series category under **Planning data**.)
+## <a name="explore"></a>Explore planning data and worksheets
 
-To open a series, select its name in the **Name** column. The following illustration highlights the features on the **Output** tab of the time series details page.
+To view all your planning data, on the navigation pane, select **Planning data** \> **All**. Alternatively, select an appropriate planning data category under **Planning data**. To view shared worksheets, on the navigation pane, select **Home** \> **Worksheets**.
+
+To open a worksheet or planning data record, select its name in the **Name** column. The following illustration highlights the features on the **Output** tab of the time series details page.
 
 :::image type="content" source="media/time-series-elements.svg" alt-text="Screenshot of time series elements on the Output tab of the time series details page." lightbox="media/time-series-elements.svg":::
 
 Legend:
 
-1. **Data view selector** – On this menu, you can save the current view (including all filters, overlaid series, and other selections) as a saved view. If you've already saved one or more views, you can load them from here.
+1. **Create and select worksheets** – You can use this menu to save the current view (including all filters, overlaid series, and other selections) as a worksheet in the current planning data record. If you've already saved one or more worksheets, you can use this menu to load them. Each worksheet that's created from this menu is also listed on the **Worksheets** page (available at **Home** \> **Worksheets** on the navigation pane). Each worksheet has a share setting that lets you share it with other users or keep it private to yourself. You can also use this menu to delete worksheets.
 1. **Current filters** – If you've applied any filters to the data, they're listed next to the **Add filter** button as colored blocks. You can remove any listed filter by selecting its **Close** button (**X**).
 1. **Add filter** – Open a menu where you can choose to filter the time series by any combination of date or dimension values. This filtering affects the key performance indicators (KPIs) that are shown on the **Insights** FastTab, the chart that's shown on the **Timeline** FastTab, and the values that are available on the **Time series values** FastTab. Filters that you add from here are added to the current filters list (2).
 1. **Insights** – This FastTab shows KPIs for the current time series, including total quantity, average quantity, and standard deviation of quantity. These values reflect the filter settings.

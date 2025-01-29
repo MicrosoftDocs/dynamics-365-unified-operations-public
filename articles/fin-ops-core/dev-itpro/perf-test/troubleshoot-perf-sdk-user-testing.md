@@ -61,7 +61,6 @@ You might receive the error message for one of the following reasons:
 
 - The certificate thumbprint that you copied into the CloudEnvironment.Config and wif.config files includes invisible Unicode characters. To determine whether the thumbprint contains invisible Unicode characters, paste it into a Unicode code converter, and see whether extra characters appear in the **HTML/XML** field. For example, you can use the Unicode converter that is available at <https://r12a.github.io/apps/conversion/>.
 
-    [![Unicode conversion.](./media/troubleshoot-perf-sdk-01.jpg)](./media/troubleshoot-perf-sdk-01.jpg)
 
 - The certificate wasn't installed on the Application Object Server (AOS) machine. To verify that the certificate can be found on the AOS machine, run the following Microsoft Windows PowerShell script.
 
@@ -74,7 +73,6 @@ You might receive the error message for one of the following reasons:
 
 - If this issue occurs when you run load tests, the setup scripts might not have installed the corresponding .pfx file correctly. Verify that the password that is specified in the CloudCtuFakeACSInstall.cmd file matches the password that was set when the certificate was created.
 
-    [![Password in the .cmd file.](./media/troubleshoot-perf-sdk-02.jpg)](./media/troubleshoot-perf-sdk-02.jpg)
 
 ## No endpoint is listening
 
@@ -113,8 +111,7 @@ Three scenarios can cause this error:
 
 - The System Administrator role isn't assigned to the user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file. To verify that you've specified the correct user, sign in to the endpoint, and view the user's roles.
 
-    [![Users page.](./media/troubleshoot-perf-sdk-03.jpg)](./media/troubleshoot-perf-sdk-03.jpg)
-
+  
 - The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user.
 
 - If your finance and operations apps were deployed in 21Vianet, make sure that you have specified **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
@@ -133,13 +130,11 @@ Three known scenarios can cause this error:
 
 - The test users are created by running MS.Dynamics.Performance.CreateUsers.exe without any arguments. For example, if the CreateUsers script is run without any arguments, the email addresses of test users that are created won't be correctly formatted. If these users are used to run the tests, the tests will generate the forbidden request error. You can verify that this scenario is causing the error by viewing the users. The incorrect email addresses of the test users will resemble the email addresses in the following illustration.
 
-    [![List of incorrect user email addresses.](./media/troubleshoot-perf-sdk-04.jpg)](./media/troubleshoot-perf-sdk-04.jpg)
 
     To resolve the issue, delete the test users who have incorrectly formatted email addresses. Rerun the CreateUsers script, and specify the user count and company.
 
 - The number of users that you specify in the **UserCount** field in the CloudEnvironment.Config file exceeds the number of test users that you created by using MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created at least as many test users as you request in the CloudEnvironment.Config file.
 
-    [![CloudEnvironment.Config file.](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
 - If your finance and operations apps were deployed in 21Vianet, make sure that your development and performance testing environments are in Platform Update for 10.0.11 or above.
 
@@ -192,8 +187,6 @@ This issue occurs when the CloudEnvironment.Config file isn't present when the t
 \<solution path\>\\TestResults\\\<your test run\>\\Out
 
 If the file is missing, add it to the deployment items in the test settings.
-
-[![Deployment items in the Test Settings dialog box.](./media/troubleshoot-perf-sdk-06.jpg)](./media/troubleshoot-perf-sdk-06.jpg)
 
 ## InteractiveClientId was not specified in the settings
 
@@ -302,7 +295,7 @@ Replace all instances of **"MS.Dynamics.TestTools.CloudCommonTestUtilities.Authe
 
 ![Sample load test status.](./media/troubleshoot-perf-sdk-10.jpg)
 
-![Sample load test output.](./media/troubleshoot-perf-sdk-11.jpg)]
+![Sample load test output.](./media/troubleshoot-perf-sdk-11.jpg)
 
 ### Solution - Multiple warning messages before and after multi-user testing
 

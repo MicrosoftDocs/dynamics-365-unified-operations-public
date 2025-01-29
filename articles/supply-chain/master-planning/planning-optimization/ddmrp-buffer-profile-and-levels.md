@@ -3,25 +3,27 @@ title: Buffer profile and levels
 description: Learn about buffer profiles and levels, which determine the minimum and maximum stock levels that should be kept for each decoupling point.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
-ms.date: 06/30/2022
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
+ms.topic: conceptual
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Buffer profile and levels
 
 [!include [banner](../../includes/banner.md)]
 
-After you've identified your decoupling points (key items that you will strategically keep in stock), you must decide how much stock (buffer) you will keep at each of them. This task is the second step of Demand Driven Materials Resource Planning (DDMRP).
+After you've identified your decoupling points (key items that you'll strategically keep in stock), you must decide how much stock (buffer) you'll keep at each of them. This task is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
 ## Buffer levels and zones
 
 In DDMRP, each stock buffer is defined by using three values: the minimum quantity, the maximum quantity, and the reorder point. These values establish three difference zones, which are identified by the following color codes:
 
 - **Red zone** – The area below the minimum quantity. The minimum quantity is also referred to as "top of red," and your planning strategy should be designed to ensure that stock levels are always above this point.
-- **Yellow zone** – The area between the minimum quantity and the reorder point. The reorder point is also referred to as "top of yellow". When this point is reached, the system should reorder.
-- **Green zone** – The area between the reorder point and the maximum quantity. The maximum quantity is also referred to as "top of green". This point is the maximum level that the stock will be replenished to.
+- **Yellow zone** – The area between the minimum quantity and the reorder point. The reorder point is also referred to as "top of yellow." When this point is reached, the system should reorder.
+- **Green zone** – The area between the reorder point and the maximum quantity. The maximum quantity is also referred to as "top of green." This point is the maximum level that the stock will be replenished to.
 
 The following illustration shows the three colored zones and how they relate to the minimum quantity, maximum quantity, and reorder point.
 
@@ -140,7 +142,7 @@ The system will round the red zone to 104 pieces (ea), because pieces are counte
 
 ![Example of red zone calculation.](media/ddmrp-example-calc-red.png "Example of red zone calculation")
 
-The green zone calculation also includes the components from the yellow zone equation, but it allows for a minimum order size, order cycle, and lead time factor. For this example, assume that there is no order cycle (therefore, you don't have any time constraints about how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
+The green zone calculation also includes the components from the yellow zone equation, but it allows for a minimum order size, order cycle, and lead time factor. For this example, assume that there's no order cycle (therefore, you don't have any time constraints about how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
 
 - *Minimum order quantity* = 10
 - *ADU* × *Order cycle* = 0
@@ -156,11 +158,11 @@ The following illustration summarizes these zone calculation results by using th
 
 ## <a name="dynamic-adjustments"></a>Dynamic adjustments
 
-Dynamic adjustments let you apply a *demand adjustment factor* during periods of high or low demand. This factor multiplies the ADU in all calculations for the selected period. The buffer zones are then modified in turn. You will usually apply this factor after you generate your initial buffer values, so that you can fine-tune them over time and in response to changing conditions. This task is the third step of DDMRP.
+Dynamic adjustments let you apply a *demand adjustment factor* during periods of high or low demand. This factor multiplies the ADU in all calculations for the selected period. The buffer zones are then modified in turn. You'll usually apply this factor after you generate your initial buffer values, so that you can fine-tune them over time and in response to changing conditions. This task is the third step of DDMRP.
 
 For example, there might be more demand for a pillow product in August as people head out on vacation. Therefore, sales are expected to be higher. In this case, you can change the **Demand adjustment factor** value for the product to *1.5* for all the weeks in August.
 
-In this way, you can calculate buffer values over time and then adjust them based on more than just the information that the system has. In a full DDMRP implementation, you will calculate new buffer values every day through a batch job and automatically accept the values. You will then run planning as a batch job and review the planned orders every day to refill the buffers.
+In this way, you can calculate buffer values over time and then adjust them based on more than just the information that the system has. In a full DDMRP implementation, you will calculate new buffer values every day through a batch job and automatically accept the values. You'll then run planning as a batch job and review the planned orders every day to refill the buffers.
 
 ## Implement buffers in Supply Chain Management
 
@@ -234,7 +236,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 1. Select the time period where you want to calculate buffer values. (Usually, this time period will be the period that includes today.) The row that you select must already have non-zero values in the **Average daily usage** and **Decoupled lead time** columns.
 1. Edit the **Demand adjustment factor** field for one or more rows as required. The system will apply this factor to the **Average daily usage** value in all buffer calculations where that value is used. This factor lets you adjust for the way that demand fluctuates by date (for example, for holidays or seasonal items).
 1. On the Action Pane, on the **Buffer values** tab, select **Calculate min, max and reorder point quantities**. The system calculates and fills in the **Calculated min**, **Calculated reorder point**, and **Calculated max** columns in the grid on the **Item coverage** page.
-1. When you've finished reviewing the calculated values, you must apply them. Otherwise, they will have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, on the **Buffer values** tab, in the **Take action** group, select one of the following buttons:
+1. When you've finished reviewing the calculated values, you must apply them. Otherwise, they'll have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, on the **Buffer values** tab, in the **Take action** group, select one of the following buttons:
 
     - **Accept all calculations** – Apply all calculated values in the grid.
     - **Accept calculations for selected rows** – Apply calculated values for the selected rows only.
@@ -243,7 +245,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 
 ### Schedule automatic buffer value calculations
 
-After you've fully set up your DDMRP settings and confirmed that they work as expected, you will probably want to set up a batch job to periodically recalculate ADU and related buffer values as required, based on actual consumption data and/or updated forecasts. This procedure applies only to items where you choose to allow the system to [automatically calculate your buffer zones](#set-up-buffers).
+After you've fully set up your DDMRP settings and confirmed that they work as expected, you'll probably want to set up a batch job to periodically recalculate ADU and related buffer values as required, based on actual consumption data and/or updated forecasts. This procedure applies only to items where you choose to allow the system to [automatically calculate your buffer zones](#set-up-buffers).
 
 Follow these steps to schedule automatic buffer value calculations.
 

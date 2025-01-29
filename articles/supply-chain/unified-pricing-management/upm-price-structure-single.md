@@ -14,7 +14,7 @@ ms.search.form: GUPPriceComponentCodeSetup, GUPParameters
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.34 GA -->
 
 This article explains how to configure a company to use a single price structure, and how to set up that structure. The purpose of a price structure is to define the order that the system calculates each type of price adjustment in, and to define other options for each price component code, such as concurrency and compounding rules.
 

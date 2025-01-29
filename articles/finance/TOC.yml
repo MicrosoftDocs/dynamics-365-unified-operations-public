@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.43 (January)
+                  href: get-started/whats-new-changed-10-0-43.md
                 - name: Finance 10.0.42 (December)
                   href: get-started/whats-new-changed-10-0-42.md
                 - name: Finance 10.0.41 (September)  
                   href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
-                - name: Finance 10.0.39 (April)
-                  href: get-started/whats-new-changed-10-0-39.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -676,14 +676,16 @@
                   href: budgeting/budget-funds-available.md
                 - name: Budget analysis report
                   href: public-sector/budget-analysis-report.md
+                - name: Budget control statistics vs. Budget analysis report
+                  href: budget-control-statistics-and-budget-analysis-report.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
           items:
-            - name: Petty cash
-              href: cash-bank-management/Petty-cash.md
             - name: Cash and bank management home page
               href: cash-bank-management/cash-bank-management.md
+            - name: Petty cash
+              href: cash-bank-management/Petty-cash.md
             - name: Cash flow forecasting
               href: cash-bank-management/cash-flow-forecasting.md
             - name: Troubleshoot Cash flow forecasting setup
@@ -706,6 +708,14 @@
               href: cash-bank-management/settlement-overview.md
             - name: Settlement overview for centralized payments
               href: cash-bank-management/settlement-overview-centralized-payments.md
+            - name: Prepayment invoices vs. prepayments
+              href: accounts-payable/prepayments-invoices-vs-prepayments.md
+            - name: Handling cash discounts for overpayments
+              href: cash-bank-management/cash-discount-handling-overpayments.md
+            - name: Set up centralized payments
+              href: cash-bank-management/set-up-centralized-payments.md
+            - name: Automatic settlement and prioritization
+              href: accounts-receivable/automatic-settlement-prioritization.md
             - name: Letters of credit
               items:
                 - name: Letters of credit and import collections
@@ -719,63 +729,61 @@
                 - name: Import letter of credit
                   href: cash-bank-management/tasks/import-letter-credit.md
             - name: Letters of guarantee
-              href: cash-bank-management/letters-of-guarantee.md
-            - name: Letter of guarantee transaction
-              href: cash-bank-management/tasks/letter-guarantee-transaction.md
-            - name: Create a bank facility agreement for the letter of guarantee
-              href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-            - name: Set up bank facilities and posting profiles for letters of guarantee
-              href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-            - name: Postdated checks
-              href: cash-bank-management/postdated-checks.md
-            - name: Set up postdated checks
-              href: cash-bank-management/tasks/set-up-postdated-checks.md
-            - name: Register and post a postdated check for a customer
-              href: cash-bank-management/tasks/register-post-postdated-check-customer.md
-            - name: Register and post a postdated check for a vendor
-              href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
-            - name: Settle a postdated check from a customer
-              href: cash-bank-management/tasks/settle-postdated-check-customer.md
-            - name: Settle a postdated check for a vendor
-              href: cash-bank-management/tasks/settle-postdated-check-vendor.md
-            - name: Check number validation
-              href: cash-bank-management/check-number-validation.md
-            - name: Create checks that have Blank status
-              href: cash-bank-management/create-check-with-blank-status.md
-            - name: Prepayment invoices vs. prepayments
-              href: accounts-payable/prepayments-invoices-vs-prepayments.md
-            - name: Handling cash discounts for overpayments
-              href: cash-bank-management/cash-discount-handling-overpayments.md
-            - name: Set up centralized payments
-              href: cash-bank-management/set-up-centralized-payments.md
-            - name: Automatic settlement and prioritization
-              href: accounts-receivable/automatic-settlement-prioritization.md
-            - name: Reconcile a bank account
-              href: cash-bank-management/reconcile-bank-account.md
-            - name: Advanced bank reconciliation
+              items: 
+                - name: Letters of guarantee
+                  href: cash-bank-management/letters-of-guarantee.md
+                - name: Letter of guarantee transaction
+                  href: cash-bank-management/tasks/letter-guarantee-transaction.md
+                - name: Create a bank facility agreement for the letter of guarantee
+                  href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+                - name: Set up bank facilities and posting profiles for letters of guarantee
+                  href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
+            - name: Checks
               items:
-                - name: Advanced bank reconciliation overview
-                  href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Advanced bank reconciliation setup process
-                  href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Set up bank reconciliation matching rules
-                  href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-                - name: Set up advanced bank reconciliation import process using Electronic reporting
-                  href: accounts-payable/import-bai2-er.md
-                - name: Reconcile bank statements by using advanced bank reconciliation
-                  href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Clear reversal bank statements
-                  href: cash-bank-management/clear-reverse-bank-stmt-trx.md
-                - name: Clear reversal company transactions
-                  href: cash-bank-management/clear-reverse-comp-trans.md
-                - name: Generate vouchers in the reconcilation worksheet
-                  href: cash-bank-management/vouchers-adv-bank-rec.md
-                - name: Apply cash in the reconcilation worksheet
-                  href: cash-bank-management/apply-cash-adv-bank-rec.md
-                - name: Clear bridging payments using advanced bank reconciliation
-                  href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
-                - name: Update the bank journal composite entity
-                  href: dev-itpro/upgrade-bank-journal-composite-entity.md
+                - name: Check number validation
+                  href: cash-bank-management/check-number-validation.md
+                - name: Create checks that have Blank status
+                  href: cash-bank-management/create-check-with-blank-status.md
+                - name: Postdated checks
+                  href: cash-bank-management/postdated-checks.md
+                - name: Set up postdated checks
+                  href: cash-bank-management/tasks/set-up-postdated-checks.md
+                - name: Register and post a postdated check for a customer
+                  href: cash-bank-management/tasks/register-post-postdated-check-customer.md
+                - name: Register and post a postdated check for a vendor
+                  href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
+                - name: Settle a postdated check from a customer
+                  href: cash-bank-management/tasks/settle-postdated-check-customer.md
+                - name: Settle a postdated check for a vendor
+                  href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+            - name: Bank account reconciliation
+              items:
+                - name: Reconcile a bank account - Simple bank account reconciliation
+                  href: cash-bank-management/reconcile-bank-account.md
+                - name: Advanced bank reconciliation
+                  items:
+                    - name: Advanced bank reconciliation overview
+                      href: cash-bank-management/advanced-bank-reconciliation-overview.md
+                    - name: Advanced bank reconciliation setup process
+                      href: cash-bank-management/configure-advanced-bank-reconciliation.md
+                    - name: Set up bank reconciliation matching rules
+                      href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+                    - name: Set up advanced bank reconciliation import process using Electronic reporting
+                      href: accounts-payable/import-bai2-er.md
+                    - name: Reconcile bank statements by using advanced bank reconciliation
+                      href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
+                    - name: Clear reversal bank statements
+                      href: cash-bank-management/clear-reverse-bank-stmt-trx.md
+                    - name: Clear reversal company transactions
+                      href: cash-bank-management/clear-reverse-comp-trans.md
+                    - name: Generate vouchers in the reconcilation worksheet
+                      href: cash-bank-management/vouchers-adv-bank-rec.md
+                    - name: Apply cash in the reconcilation worksheet
+                      href: cash-bank-management/apply-cash-adv-bank-rec.md
+                    - name: Clear bridging payments using advanced bank reconciliation
+                      href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
+                    - name: Update the bank journal composite entity
+                      href: dev-itpro/upgrade-bank-journal-composite-entity.md
         - name: Cost accounting
           items:
             - name: Cost accounting home page
@@ -1086,6 +1094,8 @@
                       href: general-ledger/financial-dimensions.md
                     - name: Define financial dimensions
                       href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Highly variable dimensions
+                      href: cost-accounting/high-var-dimensions.md  
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
@@ -1892,6 +1902,8 @@
                       href: general-ledger/tasks/view-posted-sales-tax-transactions.md
                     - name: Print the Sales tax payment by code report
                       href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: Financial reason
+                      href: localizations/europe/emea-financial-reason.md
                     - name: Sales tax troubleshooting
                       items:
                         - name: Tax isn't calculated or the tax amount is zero
@@ -2008,6 +2020,10 @@
                       href: localizations/belgium/emea-bel-intrastat.md
                     - name: VAT declaration
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
+                - name: Bolivia
+                  items:
+                  - name: Configure for Sales Vat Books for Bolivia
+                    href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
@@ -2414,6 +2430,28 @@
                       href: localizations/denmark/emea-dnk-saf-t.md
                     - name: Accounting basis (Regnskab Basis) electronic report for Denmark
                       href: localizations/denmark/emea-dnk-accounting-basis.md
+                - name: Ecuador
+                  items:
+                  - name: Configure Ecuadorian sales VAT book printing
+                    href: localizations/iberoamerica/ltm-Ecaudor-sales-vat-book.md
+                  - name: Configure Ecuadorian purchase payment methods printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-payment-methods.md
+                  - name: Configure Ecuadorian purchase refunds report printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-refunds-report.md
+                  - name: Configure Ecuadorian purchase VAT book details printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
+                  - name: Configure Ecuadorian purchase withholding book printing
+                    href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
+                  - name: Configure electronic invoice parameters for Ecuador
+                    href: localizations/iberoamerica/ltm-ecuador-conf-electronic-invoice.md
+                  - name: Configure printing for the Ecuador Sales book by establishment report
+                    href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
+                  - name: Configure Simplified transactional appendix (ATS) printing
+                    href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
+                  - name: Post Ecuadorian refund invoice transactions
+                    href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
+                  - name: Set up a legal entity and tax information for Ecuador
+                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Ecuador.md
                 - name: Egypt
                   items:
                     - name: Egypt overview
@@ -2594,8 +2632,6 @@
                           href: localizations/emea-date-vendor-vat-register.md
                     - name: View transactions on settlement
                       href: localizations/europe/emea-transactions-settlement-form.md
-                    - name: Financial reason
-                      href: localizations/europe/emea-financial-reason.md
                 - name: Finland
                   items:
                     - name: Finland overview
@@ -3396,72 +3432,82 @@
                   items:
                     - name: Latin America overview
                       href: localizations/iberoamerica/latam-overview.md
-                    - name: Latin America parameters
-                      href: localizations/iberoamerica/ltm-core-latam-parameters.md
-                    - name: Field list configuration for Latin America
-                      href: localizations/iberoamerica/ltm-core-field-master-lists.md
-                    - name: Taxpayer types for Latin America
-                      href: localizations/iberoamerica/ltm-core-taxpayer-type.md
-                    - name: Tax ID types for Latin America
-                      href: localizations/iberoamerica/ltm-core-tax-id-type.md
-                    - name: Tax application for Latin America
-                      href: localizations/iberoamerica/ltm-core-tax-application.md
-                    - name: Tax and legal attributes for Latin America
-                      href: localizations/iberoamerica/ltm-tax-legal-attributes.md
-                    - name: Document classes for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class.md
-                    - name: Document class types for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-type.md
-                    - name: Document class letter for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-letter.md
-                    - name: Document class sales point for Latin America
-                      href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
-                    - name: Customer sets for Latin America
-                      href: localizations/iberoamerica/ltm-core-customers-set.md
-                    - name: Vendor set configuration
-                      href: localizations/iberoamerica/ltm-core-vendors-set.md
-                    - name: Address setup for Latin America
-                      href: localizations/iberoamerica/ltm-core-address-setup.md
-                    - name: Sales point prefixes for Latin America
-                      href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
-                    - name: Sales point relation for sales documents and remission
-                      href: localizations/iberoamerica/ltm-core-point-relation.md
-                    - name: Sales invoice posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-sales-invoice-posting-latam.md
-                    - name: Purchase invoice posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-purchase-invoice-posting.md
-                    - name: Inventory transfer order for posting for Latin America
-                      href: localizations/iberoamerica/ltm-core-transfer-order-posting.md
-                    - name: Post bank expenses for Latin America
-                      href: localizations/iberoamerica/ltm-core-bank-expenses.md
-                    - name: Post packing slips for Latin America
-                      href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
-                    - name: Configure journal names for Latin America
-                      href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
-                    - name: Value query for Latin America
-                      href: localizations/iberoamerica/ltm-core-value-query.md
-                    - name: Configure electronic document references
-                      href: localizations/iberoamerica/ltm-electronic-doc-references.md
-                    - name: VAT book printing configuration
-                      href: localizations/iberoamerica/ltm-vat-book.md
-                    - name: Print payment checks
-                      href: localizations/iberoamerica/ltm-check-printing.md
-                    - name: Configure the layout of a printed invoice for Latin America
-                      href: localizations/iberoamerica/ltm-invoice-layout-print.md
-                    - name: Print a Ledger Posting report for LATAM
-                      href: localizations/iberoamerica/ltm-ledger-posting-report.md
-                    - name: SSRS Reports/Services references configuration for Latin America
-                      href: localizations/iberoamerica/ltm-ssrsreport-services.md
-                    - name: Printing configurations for General Ledger LATAM
-                      href: localizations/iberoamerica/ltm-general-ledger.md
-                    - name: Set up transaction posting for Latin America
-                      href: localizations/iberoamerica/ltm-post-transactions.md
-                    - name: Use LATAM functionality for checks
-                      href: localizations/iberoamerica/ltm-checks-in-latam.md
-                    - name: Use the LATAM extension in customer payments journals
-                      href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
-                    - name: Use the LATAM extension in vendor payments journals
-                      href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - name: Latin America Get started
+                      items:
+                      - name: Latin America parameters
+                        href: localizations/iberoamerica/ltm-core-latam-parameters.md
+                      - name: Set up transaction posting for Latin America
+                        href: localizations/iberoamerica/ltm-post-transactions.md
+                    - name: Tax and legal attributes
+                      items:
+                      - name: Tax and legal attributes for Latin America
+                        href: localizations/iberoamerica/ltm-tax-legal-attributes.md
+                      - name: Taxpayer types for Latin America
+                        href: localizations/iberoamerica/ltm-core-taxpayer-type.md
+                      - name: Tax ID types for Latin America
+                        href: localizations/iberoamerica/ltm-core-tax-id-type.md
+                      - name: Address setup for Latin America
+                        href: localizations/iberoamerica/ltm-core-address-setup.md
+                      - name: Customer set for Latin America
+                        href: localizations/iberoamerica/ltm-core-customers-set.md
+                      - name: Vendor set configuration
+                        href: localizations/iberoamerica/ltm-core-vendors-set.md              
+                    - name: Document classification configurations
+                      items:
+                      - name: Document class letter for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-letter.md
+                      - name: Document class types for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-type.md
+                      - name: Document classes for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class.md
+                      - name: Document class sales point for Latin America
+                        href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
+                      - name: Sales point prefixes for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
+                      - name: Sales point relation for sales documents and remission
+                        href: localizations/iberoamerica/ltm-core-point-relation.md
+                      - name: Field list configuration for Latin America
+                        href: localizations/iberoamerica/ltm-core-field-master-lists.md
+                      - name: Configure journal names for Latin America
+                        href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
+                      - name: Configure electronic document references
+                        href: localizations/iberoamerica/ltm-electronic-doc-references.md
+                    - name: Latam extension in transactions
+                      items:
+                      - name: Sales invoice posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-invoice-posting-latam.md
+                      - name: Purchase invoice posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-purchase-invoice-posting.md
+                      - name: Inventory transfer order for posting for Latin America
+                        href: localizations/iberoamerica/ltm-core-transfer-order-posting.md
+                      - name: Post bank expenses for Latin America
+                        href: localizations/iberoamerica/ltm-core-bank-expenses.md
+                      - name: Post packing slips for Latin America
+                        href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
+                      - name: Use LATAM functionality for checks
+                        href: localizations/iberoamerica/ltm-checks-in-latam.md
+                      - name: Use the LATAM extension in customer payments journals
+                        href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
+                      - name: Use the LATAM extension in vendor payments journals
+                        href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
+                    - name: Inquiries and Reports
+                      items:
+                      - name: Value query for Latin America
+                        href: localizations/iberoamerica/ltm-core-value-query.md
+                      - name: Print payment checks
+                        href: localizations/iberoamerica/ltm-check-printing.md
+                      - name: Configure the layout of a printed invoice for Latin America
+                        href: localizations/iberoamerica/ltm-invoice-layout-print.md
+                      - name: SSRS Reports/Services references configuration for Latin America
+                        href: localizations/iberoamerica/ltm-ssrsreport-services.md                  
+                      - name: Printing configurations for General Ledger LATAM
+                        href: localizations/iberoamerica/ltm-general-ledger.md                    
+                      - name: Print a Ledger Posting report for LATAM
+                        href: localizations/iberoamerica/ltm-ledger-posting-report.md
+                      - name: VAT book printing configuration
+                        href: localizations/iberoamerica/ltm-vat-book.md
+                      - name: Tax application for Latin America
+                        href: localizations/iberoamerica/ltm-core-tax-application.md                                    
                 - name: Latvia
                   items:
                     - name: Latvia overview
@@ -4341,6 +4387,8 @@
                   href: business-performance-analytics/install-bpa.md
                 - name: Configure security in business performance analytics
                   href: business-performance-analytics/set-up-security.md
+                - name: Custom report import, export, and migration
+                  href: business-performance-analytics/custom-reports.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model
@@ -5075,8 +5123,6 @@
                   href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Cost controlling
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
-                - name: Expense management
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Inventory on-hand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Invoice approvals

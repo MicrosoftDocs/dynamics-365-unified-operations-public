@@ -1,8 +1,8 @@
 ---
 title: Service orders  
 description: Access an overview of how to work with service orders, including outlines on creating service orders and monitoring the progress of service orders.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable
 ms.topic: how-to
@@ -27,13 +27,13 @@ You can create service orders based on a service agreement and the lines that ar
 You can also create service orders individually, without associating them with an agreement. These service orders can be used to handle unscheduled or one-time service visits. For example, in the month of March, your customer wants service to be performed on two machines, in addition to the machines that are specified in the service agreement. For this task, you create service orders but do not associate them with an agreement.
 
 > [!NOTE]
-> To create service orders that are not associated with a service agreement, you must select the **Allow without service agreement** check box in the **Service management parameters** page.
+> To create service orders that are not associated with a service agreement, you must select the **Allow without service agreement** check box on the **Service management parameters** page.
 
 ### Scenario
 
 The following scenario describes another situation where it is useful to create a service order that is not associated with a service agreement.
 
-The company dispatcher receives a call requesting emergency service on an elevator. There is no time to set up a service agreement and a project for the service. Therefore, the dispatcher creates a service order directly in the **Service orders** page, attaches the service order to an existing project, and creates the service order lines. The dispatcher also creates a task or object relation for an existing service order, to record work that is not related to the service agreement. Learn more in [Create service orders manually](create-service-orders-manually.md) and [Create service task relations](create-service-task-relations.md).
+The company dispatcher receives a call requesting emergency service on an elevator. There is no time to set up a service agreement and a project for the service. Therefore, the dispatcher creates a service order directly on the **Service orders** page, attaches the service order to an existing project, and creates the service order lines. The dispatcher also creates a task or object relation for an existing service order, to record work that is not related to the service agreement. Learn more in [Create service orders manually](create-service-orders-manually.md) and [Create service task relations](create-service-task-relations.md).
 
 ## Monitor the progress of service orders
 
@@ -61,7 +61,7 @@ One of the other service orders that was generated for the month of January beco
 
 ## Post from projects
 
-At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** page and posts the service orders that have been completed.
+At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project on the **Projects** page and posts the service orders that have been completed.
 
 ## Delete service orders
 
