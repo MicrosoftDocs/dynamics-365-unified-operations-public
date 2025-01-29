@@ -71,7 +71,7 @@ At a minimum, an on-premises production environment requires:
 - One machine running SQL Server Integration Services (SSIS) 
 - One machine running Management Reporter (MR)
 - One machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
-- Two or more machines running SQL Server (Database Engine)
+- Two or more machines running SQL Server (Database Engine), failover is only supported in an active or passive configuration. 
 - Two or more machines running Active Directory
 
 ## Service Fabric
