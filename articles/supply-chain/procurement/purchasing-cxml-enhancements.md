@@ -3,11 +3,12 @@ title: Purchasing cXML Enhancements
 description: The Purchasing cXML Enhancements feature builds on the existing external catalog functionality, PunchOut, that is used for purchase requisitions.
 author: ShriramSivasankaran
 ms.author: shriramsiv
-ms.topic: article
-ms.date: 08/03/2020
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
+ms.topic: how-to
+ms.date: 11/18/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Purchasing cXML Enhancements
@@ -47,7 +48,7 @@ Go to **Procurement and sourcing \> Setup \> cXML management \> cXML parameters*
     - **Test** – In this mode, the batch job can be running, and the XML document for the message is generated, but it isn't sent. Instead, it's saved on the purchase order request for review purposes. This mode is helpful when you're in an initial implementation, and you want to see how data is entered in the cXML message. You might also want to generate sample messages that you can send to vendors for initial validation.
     - **Live** – In this mode, the feature uses the [external catalog settings](#external-catalog-setup) to physically transmit each document to the vendor.
 
-- **Send purchase request updates** – Set this option to *Yes* to send an update message for purchase orders. Set it to *No* to prevent the message from being sent. Most vendors prefer not to receive update messages. Instead, they require that customers contact them by phone or email if a purchase order should be changed. This parameter is a global parameter, and no override can be specified on the external catalog for each vendor. A purchase order will be marked as updated if you post a second confirmation on a purchase order, but the first confirmation has already been sent and acknowledged by the vendor. If there is a second confirmation, but the first confirmation hasn't been sent, the second confirmation will be treated as a new document. You can confirm a purchase order as many times as you want until one confirmation is sent. The next confirmation will then be treated as an update message.
+- **Send purchase request updates** – Set this option to *Yes* to send an update message for purchase orders. Set it to *No* to prevent the message from being sent. Most vendors prefer not to receive update messages. Instead, they require that customers contact them by phone or email if a purchase order should be changed. This parameter is a global parameter, and no override can be specified on the external catalog for each vendor. A purchase order will be marked as updated if you post a second confirmation on a purchase order, but the first confirmation has already been sent and acknowledged by the vendor. If there's a second confirmation, but the first confirmation hasn't been sent, the second confirmation will be treated as a new document. You can confirm a purchase order as many times as you want until one confirmation is sent. The next confirmation will then be treated as an update message.
 - **Send purchase request delete** – Set this option to *Yes* to send a delete message for purchase orders. Set it to *No* to prevent the message from being sent. Most vendors prefer not to receive delete messages. Instead, they require that customers contact them by phone or email if a purchase order was sent by mistake. This parameter is a global parameter, and no override can be specified on the external catalog for each vendor. A purchase order will be marked as deleted if you cancel the purchase order in Supply Chain Management.
 - **Archive file** – Specify the file path where you want to export and save archived cXML documents. The path is used when you run the purge function from the **Purchase order request** page.
 - **Max characters for street line** – Enter the maximum number of characters that can be used in the street field for addresses in the cXML document. This global parameter affects all vendors unless an override is specified on the external catalog properties.
@@ -89,10 +90,10 @@ Every time that you add one or more properties to the grid, use the right column
 Use the default properties in the following way:
 
 - **BUYER\_COOKIE** – This tracking field can be used to indicate specific information for your company. Unless you have an agreement with the vendor about how this property is used, it doesn't have very much meaning when sending a purchase order. Therefore, you should set it to a simple value.
-- **DELIVERTO** – When the shipping address is entered in the document from the purchase order, the **Attention information** field is used to set the **DeliverTo** field in the XML message. If you require that this value be a requester name, and you will set the requester field on the purchase order header, enter the value *REQUESTER* for this property, so that the requester name will be entered in the **DeliverTo** field in the XML. In this case, the primary email address and phone number that are used will be from the requester instead of the orderer.
+- **DELIVERTO** – When the shipping address is entered in the document from the purchase order, the **Attention information** field is used to set the **DeliverTo** field in the XML message. If you require that this value be a requester name, and you'll set the requester field on the purchase order header, enter the value *REQUESTER* for this property, so that the requester name will be entered in the **DeliverTo** field in the XML. In this case, the primary email address and phone number that are used will be from the requester instead of the orderer.
 - **DEPLOYMENTMODE** – Set this property as required by the vendor. The values are usually *PRODUCTION* or *TEST*. Set the value based on your communication with the vendor. Usually, it must match the intended system behind the **ORDERCHECKURL** value that the vendor indicates as a test or production system.
-- **FIXEDBILLADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the vendor differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you will use only one address with the vendor, and that the address is set up in the vendor's system. The billing address is the primary invoice address that is specified for the legal entity in Supply Chain Management.
-- **FIXEDSHIPADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the vendor differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you will use only one address with the vendor, and that the address is set up in the vendor's system. The shipping address is the address that is specified on the header of the purchase order. Most vendors accept only header addresses, not line addresses. Although there are fields for line addresses in the XML, they will be set to the header address.
+- **FIXEDBILLADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the vendor differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you'll use only one address with the vendor, and that the address is set up in the vendor's system. The billing address is the primary invoice address that is specified for the legal entity in Supply Chain Management.
+- **FIXEDSHIPADDRESSID** – When the **addressID** field in the XML message is set, it picks up the location that is specified on the address. If the ID value that you've communicated to the vendor differs from the value on the address location for some reason, you can force an override by specifying the value here. The assumption is that you'll use only one address with the vendor, and that the address is set up in the vendor's system. The shipping address is the address that is specified on the header of the purchase order. Most vendors accept only header addresses, not line addresses. Although there are fields for line addresses in the XML, they'll be set to the header address.
 - **FROM\_DOMAIN** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **FROM\_IDENTITY** – Enter the value that is used to send purchase order documents. This value is supplied by your vendor.
 - **ORDERCHECKURL** – Enter the URL to transmit the purchase order documents to. This URL starts with `https://` and is supplied by your vendor.
@@ -160,20 +161,20 @@ To add extrinsic elements to an external catalog, follow these steps.
 1. Select the relevant catalog.
 1. On the **Message format** FastTab, in the **Extrinsics** section, select **Add** to add a row to the grid for each extrinsic element that you want to include. On each row, set the following fields:
 
-    - **Name** – Enter a name for the element. This value will become the value of the **name** attribute for the **Extrinsic** XML element that is created by each row. Usually, you will work with your vendor to agree on the name for each extrinsic element.
+    - **Name** – Enter a name for the element. This value will become the value of the **name** attribute for the **Extrinsic** XML element that is created by each row. Usually, you'll work with your vendor to agree on the name for each extrinsic element.
     - **Value** – Select a value for the element. This value will become the value of the XML element that is created by each row. The following values are available:
 
         - **User name** – Use the name of the user who is doing the PunchOut. This name is the sign-in name for Supply Chain Management.
         - **User email** – Use the email address of the user who is doing the PunchOut. This address is the address that the user has set up on the **Account** tab of the **User options** page.
         - **Random value** – Use a unique random value.
         - **User full name** – Use the full name of the contact person who is associated with the user who is accessing the external catalog.
-        - **Firstname** – Use the first name of the contact person who is associated with the user who is accessing the external catalog.
-        - **Lastname** – Use the last name of the contact person who is associated with the user who is accessing the external catalog.
+        - **Firstname** – Use the given name of the contact person who is associated with the user who is accessing the external catalog.
+        - **Lastname** – Use the family name of the contact person who is associated with the user who is accessing the external catalog.
         - **Phone number** – Use the primary phone number of the contact person who is associated with the user who is accessing the external catalog.
 
 ![Extrinsic element settings.](media/cxml-extrinsics.png "Extrinsic element settings")
 
-The user or admin won't see the extrinsic elements, because they aren't added until the user does a PunchOut. They will automatically be inserted between the **BuyerCookie** and **BrowserFromPost** elements in the cXML setup request message. Therefore, you don't have to set them manually in the XML when you set up the external catalog.
+The user or admin won't see the extrinsic elements, because they aren't added until the user does a PunchOut. They'll automatically be inserted between the **BuyerCookie** and **BrowserFromPost** elements in the cXML setup request message. Therefore, you don't have to set them manually in the XML when you set up the external catalog.
 
 ![Extrinsic elements added to the XML.](media/cxml-extrinsics-xml.png "Extrinsic elements added to the XML")
 
@@ -187,7 +188,7 @@ When you create a purchase order from a purchase requisition that came from a Pu
 
 ![Example of an external reference number.](media/cxml-line-details.png "Example of an external reference number")
 
-When you've finished filling in all the details for the purchase order, be sure to confirm it. No message is sent unless the purchase order is confirmed. To confirm a purchase order, on the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**. 
+When you've finished filling in all the details for the purchase order, be sure to confirm it. No message is sent unless the purchase order is confirmed. To confirm a purchase order, on the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
 
 After the purchase order is confirmed, you can view the status of the confirmation through the **Purchase order confirmations** journals. On the Action Pane, on the **Purchase** tab, in the **Journals** group, select **Purchase order confirmations**.
 
@@ -267,6 +268,5 @@ To view the content of a vendor acknowledgment or error response, select the **R
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

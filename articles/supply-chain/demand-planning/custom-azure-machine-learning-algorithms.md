@@ -4,7 +4,7 @@ description: Learn how to use custom Microsoft Azure Machine Learning algorithms
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 11/15/2023
+ms.date: 11/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -79,5 +79,5 @@ Follow these steps to set up a forecast that uses your own Azure Machine Learnin
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
 1. After you've created and saved the profile, select the **Forecast model** tab. (Learn more in [Design forecast models](design-forecast-models.md).)
-1. Set up your model. Include a **Finance and operations – Azure Machine Learning** tile in the position where you want to run your algorithm.
-1. Complete the model by adding a **Save** block.
+1. Set up your model. Include a *Finance and operations – Azure Machine Learning* step in the position where you want to run your algorithm.
+1. Complete the model by adding a *Save* step.

@@ -4,7 +4,7 @@ description: This article describes how to complete the prerequisites for Busine
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 05/20/2024
+ms.date: 12/17/2024
 
 ms.custom:
 ms.reviewer: twheeloc 
@@ -127,8 +127,6 @@ Before you install Business performance analytics, the following setup is requir
 1. Go to <https://admin.powerplatform.microsoft.com/>.
 2. Select **Environments**.
 3. Select the environment where business performance analytics is installed.
-4. Select **Settings** > **Product** > **Features**.
-5. Enable **Enable Finance and Operations User Impersonation in Dataverse**.
-6. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**.
-7. Find **Finance and Operations Virtual Entity** and check if any updates are available.
-8. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).
+4. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**.
+5. Find **Finance and Operations Virtual Entity** and check if any updates are available.
+6. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).

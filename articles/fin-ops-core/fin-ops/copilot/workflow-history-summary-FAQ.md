@@ -6,7 +6,7 @@ ms.author: jchrist
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 6/15/2023
+ms.date: 1/23/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 ---

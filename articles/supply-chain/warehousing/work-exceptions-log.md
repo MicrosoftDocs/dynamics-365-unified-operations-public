@@ -79,3 +79,4 @@ To clean up the work exceptions log, follow these steps.
 When the job finishes execution, the system shows a notification of how many records were removed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

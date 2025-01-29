@@ -3,12 +3,12 @@ title: Costing versions overview
 description: Learn about costing versions, how to maintain them, and the types of data that you can include in them, with an outline on standard or planned costs.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: overview
-ms.date: 05/16/2023
 ms.reviewer: kamaybac
-ms.collection: get-started
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
-ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
+ms.topic: overview
+ms.date: 12/02/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Costing versions overview
@@ -27,13 +27,13 @@ A costing version can support a standard cost inventory model for items, where t
 
 ### Planned costs
 
-A costing version can contain a set of planned cost records about items and manufacturing processes. A costing version that contains planned costs is often used to support cost calculation simulations, such as simulations of the effect that cost changes to purchased materials or manufacturing processes has on the calculated costs of manufactured items. The item cost records for planned costs can also be used to support an actual cost inventory model by providing the initial values for item costs. These values include the calculation of planned costs for manufactured items.
+A costing version can contain a set of planned cost records about items and manufacturing processes. A costing version that contains planned costs is often used to support cost calculation simulations, such as simulations of the effect that cost changes to purchased materials or manufacturing processes have on the calculated costs of manufactured items. The item cost records for planned costs can also be used to support an actual cost inventory model by providing the initial values for item costs. These values include the calculation of planned costs for manufactured items.
 
 ## Entering costs
 
 Data maintenance for cost records in a costing version involves entering costs for purchased items and for items that are transferred between sites. Additional data maintenance for manufacturers involves entering costs for cost categories that are associated with routing operations, entering calculation formulas for the indirect costs that reflect manufacturing overhead, and calculating costs for manufactured items.
 
-The item cost data in a costing version consists of one or more cost records for each item. When an item cost record is first entered, it has **Pending** status and an intended effective date. When you activate the item cost record, the status is updated to **Active**, and the effective date is updated to the activation date. Different item cost records can reflect different sites, effective dates, or statuses. When you calculate costs for manufactured items for a future date, the bill of materials (BOM) calculation uses cost records that have the relevant effective date, regardless of whether the status is **Pending** or **Active**. An item's current active cost record is used to estimate production order costs and to value inventory transactions under a standard costing inventory model. The maintenance of cost records for cost categories and indirect cost calculation formulas resembles the maintenance of item cost records.
+The item cost data in a costing version consists of one or more cost records for each item. When an item cost record is first entered, it has *Pending* status and an intended effective date. When you activate the item cost record, the status is updated to *Active*, and the effective date is updated to the activation date. Different item cost records can reflect different sites, effective dates, or statuses. When you calculate costs for manufactured items for a future date, the bill of materials (BOM) calculation uses cost records that have the relevant effective date, regardless of whether the status is *Pending* or *Active*. An item's current active cost record is used to estimate production order costs and to value inventory transactions under a standard costing inventory model. The maintenance of cost records for cost categories and indirect cost calculation formulas resembles the maintenance of item cost records.
 
 Two blocking policies for a costing version determine whether pending costs can be maintained and whether the pending cost can be activated. Use the blocking policies to permit data maintenance, and then use them to prevent data maintenance for cost records in a costing version.
 
@@ -53,7 +53,7 @@ The main reason for enabling purchase price data is to define purchase price rec
 
 To enable purchase price content, you first define a BOM calculation group that contains a cost price model for the item’s purchase price, and assign the BOM calculation group to purchased items. You then use a cost price model for the BOM calculation group when you perform BOM calculations that use planned costs to calculate the sales price of manufactured items.
 
-The purchase price records for items are also used as reference information. By changing the status of an item’s purchase price record from **Pending** to **Active**, you can update the item’s base purchase price. However, the base purchase price isn't site-specific and can be manually overridden. The item's base purchase price is used as a default purchase price on purchase orders.
+The purchase price records for items are also used as reference information. By changing the status of an item’s purchase price record from *Pending* to *Active*, you can update the item’s base purchase price. However, the base purchase price isn't site-specific and can be manually overridden. The item's base purchase price is used as a default purchase price on purchase orders.
 
 ## Related information
 

@@ -28,7 +28,7 @@ The *Period charges* feature introduces the following changes to your system:
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that's named *Period charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Period charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (As of Supply Chain Management version 10.0.42, it's turned on by default)
 
 ## Configure period charges
 

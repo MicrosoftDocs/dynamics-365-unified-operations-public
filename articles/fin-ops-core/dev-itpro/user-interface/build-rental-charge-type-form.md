@@ -3,10 +3,11 @@ title: Build the Rental Charge Type form
 description: Learn about building rental charge type forms, including prerequisites, key concepts, and overviews on various forms.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 01/23/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -116,10 +117,7 @@ Use Visual Studio to build and run the **FmtChargeType** form.
     | cleaning               | Cleaning fee    |
 
 5.  In the Action Pane, click **Save**.
-6.  Refresh the browser to see the new record in the list. The following illustration shows how the form should look.
-
-    [![Screen shot of how the form should look.](./media/rentalcharge5.png)](./media/rentalcharge5.png)
-
+6.  Refresh the browser to see the new record in the list. 
 7.  The form opens in view mode. Click **Edit** in the Action Pane to switch the form into edit mode. To return to view mode, click **Options** and then **Read mode**.
 
 

@@ -34,7 +34,7 @@ Tax Calculation is a highly scalable tax engine that's designed to support you i
 - Support list code determination.
 - Support tax calculation parameters at the tax jurisdiction level.
 
-To use Tax Calculation, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services. Then complete the setup in [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/) (RCS), and enable Tax Calculation in Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
+To use Tax Calculation, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services. Then complete the setup in Globalization Studio, and enable Tax Calculation in Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
 
 > [!NOTE]
 > For new environments that have version 10.0.39 and later, installation of the TCS add-in in Lifecycle Services isn't required.

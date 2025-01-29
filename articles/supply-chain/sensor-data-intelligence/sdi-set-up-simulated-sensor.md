@@ -17,11 +17,14 @@ ms.search.form:
 
 If you want to test Sensor Data Intelligence without installing any physical sensors, you can use the *Raspberry PI Azure IoT Online Simulator* service to emulate sensor signals and send them to your Internet of Things (IoT) solution on Microsoft Azure. For more information about the simulator, see [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
 
+> [!WARNING]
+> This procedure describes how to set up a simulated sensor for *testing purposes*. It uses resource owner password credential (ROPC) authentication, which you should only implement in a test environment. Microsoft recommends against using this type of authentication in any production system. You should always use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries security risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable.
+
 ## Video instructions
 
 The following video shows how to set up a simulated sensor for testing. The remaining sections in this article provide the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE588g6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=73e8b915-2b43-4285-9100-9bd2a4ed1be6]
 
 ## Create a device in Azure IoT Hub
 

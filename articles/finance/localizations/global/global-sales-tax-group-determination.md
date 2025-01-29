@@ -41,10 +41,7 @@ When sales tax is calculated for a purchase order that has the EUR currency and 
 
 ## Adjust execution sequence
 
-In the 10.0.28 update, you can adjust the execution sequence of the applicability rules which are equally weighted.
-
-> [!NOTE]
-> In RCS, the **Tax calculation service feature setup new UI** feature must be enabled in Feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
+You can adjust the execution sequence of the applicability rules which are equally weighted.
 
 ### Example
 

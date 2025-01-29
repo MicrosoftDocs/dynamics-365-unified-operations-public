@@ -1,7 +1,7 @@
 ---
 title: Electronic reporting (ER) overview
 description: Learn about the Electronic reporting tool through an overview. It describes key concepts, supported scenarios, and formats that are part of the solution.
-author: kfend
+author: twheeloc
 ms.author: filatovm
 ms.topic: overview
 ms.date: 11/02/2021
@@ -120,13 +120,11 @@ Note that this repository type is accessible in the following environments:
 
 For more information, see [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md).
 
-An **RCS** repository provides access to the list of configurations of a specific instance of [Configuration service (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current instance so you can use them for electronic reporting.
+An **RCS** repository provides access to the list of configurations of a specific instance of Configuration service (RCS) that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current instance so you can use them for electronic reporting.
 
-For more information, see [Import Electronic reporting (ER) configurations from RCS](./rcs-download-configurations.md).
 
-A **Global repository** repository provides access to the list of configurations within the global repository in the [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). This type of ER repository can only be registered for the Microsoft provider. From the global repository, you can import the latest versions of ER configurations into the current instance.
+A **Global repository** repository provides access to the list of configurations within the global repository in the Configuration service. This type of ER repository can only be registered for the Microsoft provider. From the global repository, you can import the latest versions of ER configurations into the current instance.
 
-For more information, see [Import Electronic reporting (ER) configurations from Global repository of Configuration service](./er-download-configurations-global-repo.md).
 
 An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using the corresponding ER repository.
 
@@ -223,7 +221,7 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 ## <a name="list-of-configurations"></a>List of ER configurations that have been released in Finance
 
-The list of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. On the **Discontinuation details** FastTab, you can review the information about configurations that have been discontinued or that are no longer being maintained. 
+The list of ER configurations for Finance is constantly updated. Open the **Global repository** to review the list of ER configurations that are currently supported. On the **Discontinuation details** FastTab, you can review the information about configurations that have been discontinued or that are no longer being maintained. 
 
 ![Content of the Global repository on the Configuration repository page.](./media/er-overview-03.gif)
 

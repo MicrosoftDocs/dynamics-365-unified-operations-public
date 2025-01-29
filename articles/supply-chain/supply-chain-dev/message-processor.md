@@ -1,13 +1,14 @@
 ---
 title: Create and process message queues and message types
 description: Learn how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types.
-author: Henrikan
-ms.author: henrikan
-ms.topic: how-to
-ms.date: 11/02/2022
-ms.custom: bap-template
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
+ms.topic: how-to
+ms.date: 11/18/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Create and process message queues and message types
@@ -64,7 +65,7 @@ You can use the fields at the top of the **Message processor messages** page to 
 
 To view detailed information about a message, select it in the grid, and then select the **Log** or **Message content** tab under the message grid, where each processing event is shown.
 
-The text on the **Message content** tab depends on the **Message type** value. Therefore, the text length will vary. A typical message content text will start with an opening brace (**{**) and end with a closing brace (**}**). In between will be field names (for example, `journalId`), each of which is followed by a colon and a value (for example, *USMF-123456*).
+The text on the **Message content** tab depends on the **Message type** value. Therefore, the text length varies. A typical message content text will start with an opening brace (**{**) and end with a closing brace (**}**). In between will be field names (for example, `journalId`), each of which is followed by a colon and a value (for example, *USMF-123456*).
 
 The toolbar on the **Log** tab includes the following buttons:
 

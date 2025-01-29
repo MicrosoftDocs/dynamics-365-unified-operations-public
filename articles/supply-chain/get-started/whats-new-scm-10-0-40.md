@@ -26,7 +26,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled using the Power Apps maker portal.  |
+| Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot](../demand-planning/demand-planning-copilot.md) | Enabled using the Power Apps maker portal.  |
 | Copilot and AI innovation | [Generate context-aware insights for warehouse workers](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/generate-context-aware-insights-warehouse-workers) | [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md) | <p>Feature management:<br>*Context-aware worker summary screen in WMA*</p><p>Requires Warehouse Management mobile app version 2.3.2.0 or later.</p><p>Requires Supply Chain Management version 10.0.40 with proactive quality update 1 (PQU-1) or later.</p> |
 | Copilot and AI innovation | AI summaries with Copilot | [AI summaries with Copilot](copilot-summaries-overview.md) | <p>Feature management:</p><ul><li>*Product summary when hovering on item*</li><li>*Product details summary*</li><li>*Purchase order summary*</li><li>*Sales order summary*</li><li>*Vendor summary*</li></ul><p>Requires Supply Chain Management version 10.0.40 with PQU-1 or later.</p> |
 | Planning | Item substitution for bills of materials in Planning Optimization | [Item substitution for formulas and bills of materials](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution for bill of materials in Planning optimization* |
@@ -72,6 +72,18 @@ The following table lists features that were introduced as public preview featur
 | Module | Feature name | More information |
 |---|---|---|
 | Warehouse management | *Warehouse management only mode* | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) |
+
+## Features turned on by default in this release
+
+The following table lists the features that became turned on by default in version 10.0.40. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Cost management | Clean up "Potential conflicts - inventory and general ledger" and "Potential conflicts - work in process and general ledger" report data | [Feature enhancements included in this release](#enhancements) |
+| Inventory and warehouse management | Correct item that is not visible in released products form manually | [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md)<br><br>[Feature enhancements included in this release](#enhancements) |
+| Master planning | Demand Planning | [Demand planning home page](../demand-planning/demand-planning-home-page.md)<br><br>[Install, enable, and set up Demand planning](../demand-planning/install-demand-planning.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
+| Master planning | Use rounding for unit of measures in Planning Optimization | [Feature enhancements included in this release](#enhancements) |
+| Warehouse management | Over-pick materials for production orders and batch orders | [Over-pick materials for production and batch orders](../warehousing/over-pick-materials-for-production-and-batch-orders.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
 
 ## Related information
 

@@ -3,14 +3,15 @@ title: Workspace form pattern
 description: Learn about workspace form patterns, including overviews on usage, wireframes, pattern changes, models, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 03/03/2022
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Workspace form pattern
@@ -31,12 +32,6 @@ Workspaces are intended to be the primary way that users navigate to tasks and s
 - (Obsolete) **Workspace** – This pattern is mentioned only for the sake of completeness and can't be used after version 10.0.25. We recommend that any remaining uses of this pattern be migrated to one of the other patterns.
 
 The rest of this article will focus on the **Operational workspace** patterns.
-
-## Wireframe
-
-### Operational workspace
-
-[![Wireframe for operational workspace.](./media/verticalOperationalWorkspace.png)](./media/verticalOperationalWorkspace.png)
 
 ## Pattern changes for finance and operations apps
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
@@ -111,14 +106,6 @@ The verification checklist shows the steps for manually verifying that the form 
         -   Only a single field can be put under the page title
         -   The remaining filters must be in a workspace configuration dialog.
 
-## Example
-
-### Operational workspace
-
-Form: **FMClerkWorkspace** 
-
-[![Operational workspace example.](./media/reservationManagementVertical.png)](./media/reservationManagementVertical.png)
-
 ## Migration of workspaces to be vertical
 As of version 10.0.25, the workspace form patterns and related subpatterns have been adjusted so that content sections are stacked vertically and are collapsible. The out-of-box workspaces were migrated to the latest visuals. However, for other workspaces, you must follow the steps in this section to change the orientation to vertical and maintain visual consistency with the rest of the application.
 
@@ -173,14 +160,6 @@ After you've completed the metadata migration to a vertical workspace, you will 
     1. Opt the form out of the new grid control, because only card lists that use the legacy grid support a horizontal flow. This opt-out will apply to all grids on the form. However, because most lists in a workspace are on a dedicated form part, the opt-out will typically affect only the desired card list. For detailed instructions, see [Opting out individual pages from using the new grid](../../fin-ops/get-started/grid-capabilities.md#developer-opting-out-individual-pages-from-using-the-new-grid).
     2. For the Grid control control, ensure that **Style=List**, **ExtendedStyle=cardList**, **VisibleColumnsMode=Fixed**, and **VisibleColumns=0**. Note that you might have to temporarily change the grid style to **Auto** to change the settings for the visible column properties.
 
-## Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-## Open issues
-
--   None
-
 ## AX 2012 content
 
 ### AX 2012 links
@@ -188,9 +167,8 @@ This section will have answers to frequently asked questions that are related to
 -   [MSDN Role Center Page Reference \[AX 2012\]](/dynamicsax-2012/developer/role-center-page-reference)
 -   [MSDN Role Center User Experience Guidelines \[AX 2012\]](/dynamicsax-2012/developer/role-center-user-experience-guidelines)
 
-### AX 2012 example
 
-[![Previous version workspace example.](./media/workspace5.png)](./media/workspace5.png)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

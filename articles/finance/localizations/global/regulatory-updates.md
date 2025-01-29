@@ -42,7 +42,7 @@ For the latest regulatory update plans, refer to the following table.
 | Estonia | January 2024 | 10.0.36HF, 10.0.37HF,  10.0.38HF, 10.0.39 | Estonia - VAT return form, structure and specifications change 2024. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Denmark | August 2023 | 10.0.37 | [Accounting basis (Regnskab Basis) electronic report for Denmark](../denmark/emea-dnk-accounting-basis.md) |
 | Switzerland | July 2023 | 10.0.36 | [VAT declaration](../switzerland/emea-che-vat-declaration-switzerland.md) - 2024 |
-| Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](../poland/emea-pol-standard-audit-file-saf.md#jpk-fa) project advance invoice handling |
+| Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](../poland/emea-pol-standard-audit-file-saf-fa.md) project advance invoice handling |
 | Poland | July 2023 | 10.0.36 | [VAT declaration - JPK-V7](../poland/emea-pol-vdek.md) - supplementary package based on ideas |
 | United Arab Emirates | June 2023 | 10.0.36 | [FTA VAT Audit File (AE)](../mea/uae-faf.md) redesign to "SAF-T General model mapping" and [SAF-T feature](../../general-ledger/standard-audit-file.md) |
 | France | June 2023 | 10.0.36 | [VAT declaration](../france/emea-fra-VAT-declaration-preview-France.md) - 2023 |

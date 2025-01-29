@@ -14,7 +14,7 @@ ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.34 GA -->
 
 *Customer price attribute groups* and *product price attribute groups* let you create logic to define groups of customers and products, respectively. The membership of each group is based on the values of attributes that you assign to that group. These groups can make it easier to set up collections of customers and products that you can target in your pricing rules.
 

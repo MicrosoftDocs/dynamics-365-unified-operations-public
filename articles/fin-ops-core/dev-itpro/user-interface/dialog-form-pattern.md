@@ -3,14 +3,15 @@ title: Dialog form pattern
 description: Learn about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 10/08/2018
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Dialog form pattern
@@ -35,25 +36,6 @@ For more detail about the various dialog sizes, see the table in the appendix of
 -   **Dialog w/FastTabs** – This closely resembles the Dialog w/tabs pattern but uses FastTabs instead of regular tabs to organize the information.
 -   **Dialog w/double tabs** – This closely resembles the Dialog w/tabs pattern but has a second Tab control immediately after the first one.
 -   **Dialog (read only)** – This pattern is for informational forms that aren't editable. The user can still switch between tabs or a view selector, but direct manipulation of input fields isn't allowed. This dialog variation also includes a **Close** button instead of **OK** and **Cancel** buttons.
-
-## Wireframe
-The following sections show the wireframes for the four dialog types that are included in this article.
-
-### Dialog
-
-[![Wireframe for dialog.](./media/dialogform1.png)](./media/dialogform1.png)
-
-### Dialog w/tabs and Dialog w/FastTabs
-
-[![Wireframe for dialog with tabs and FastTabs.](./media/dialogform2.png)](./media/dialogform2.png)
-
-### Dialog w/double tabs
-
-[![Wireframe for dialog with double tabs.](./media/dialogform3.png)](./media/dialogform3.png)
-
-### Dialog (read only)
-
-[![Wireframe for dialog (read only).](./media/dialogform4.png)](./media/dialogform4.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -186,37 +168,6 @@ A dialog should **not** have these elements:
 
 -   FactBoxes
 
-## Examples
-### Dialog (basic)
-
-Form: **ProjTableCreate** (Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and then click **New**.) 
-
-[![Example of basic dialog.](./media/dialogform5.png)](./media/dialogform5.png)
-
-### Dialog w/tabs
-
-Form: **CaseDetailCreate** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then click **New**.) 
-
-[![Example of dialog with tabs.](./media/dialogform6.png)](./media/dialogform6.png)
-
-### Dialog w/FastTabs
-
-This example shows a modified version of the **CaseDetailCreate** form, because the product currently includes no examples of forms that use this pattern. 
-
-[![Example of dialog with FastTabs.](./media/dialogform7.png)](./media/dialogform7.png)
-
-### Dialog w/double tabs
-
-Form: **PurchTableReferences** (Click **Accounts payable** &gt; **Common** &gt; **Purchase orders** &gt; **All purchase orders**, and then click **General** &gt; **Related information** &gt; **Related orders**.) 
-
-[![Example of dialog with double tabs.](./media/dialogform8.png)](./media/dialogform8.png)
-
-### Dialog (read only)
-
-Form: **SalesTablePostings** (Click **Accounts receivable** &gt; **Common** &gt; **Sales orders** &gt; **All sales orders**, and then click **General** &gt; **Related information** &gt; **Postings**.) 
-
-[![Example of dialog (read only).](./media/dialogform9.png)](./media/dialogform9.png)
-
 ## Appendix
 ### Frequently asked questions
 
@@ -244,9 +195,7 @@ This section will have answers to frequently asked questions that are related to
 | Custom controls     | Yes                                                                                                                    | Yes                                     | Yes                                       | Yes                                                                  |                                                                                                                                                                                                          |
 | Grid                | Yes, but no horizontal scrolling                                                                                       | Yes, but no horizontal scrolling        | Yes, but no horizontal scrolling          | Yes                                                                  | The maximum number of columns depends on the width of the fields in the column. Therefore, the width is defined by *x* × 100% field size.                                                                |
 
-### AX 2012 content
 
-[![Previous version content.](./media/dialogform10.png)](./media/dialogform10.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

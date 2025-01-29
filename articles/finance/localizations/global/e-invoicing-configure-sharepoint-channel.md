@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../../includes/banner.md)]
 
-As a prerequisite to configuring a Microsoft SharePoint channel to process incoming documents, complete the steps described that are described in [Configure a SharePoint connection](e-invoicing-create-sharepoint-connection.md).
+As a prerequisite to configuring a Microsoft SharePoint channel to process incoming documents, complete the steps described that are described in [Configure a SharePoint connection](gs-e-invoicing-create-sharepoint-connection.md).
 
 You can then use the SharePoint channel to import electronic vendor invoices from files that are stored in your SharePoint folders.
 

@@ -4,7 +4,7 @@ description: Learn about the budget control feature and how to configure budget 
 author: jchrist  
 ms.author: jchrist
 ms.topic: overview
-ms.date: 09/23/2024
+ms.date: 12/03/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
@@ -98,15 +98,15 @@ If **Main account** isn't selected as a budget control dimension on the **Define
 Example: 
 On the **Define parameters** page, **Budget control dimensions** is selected, the budget is controlled only at *Business Unit* and *Department* level.
 
-![Define parameters](https://github.com/user-attachments/assets/3ec1b1ec-7fae-4140-8f37-e9701141f4e9)
+![Define parameters](./media/budgetcontrolconfiguration.png) 
 
 In this example, budget control is required on all accounts, except 600120, which shouldn't have budget control enabled. This scenario could be achieved by marking all main accounts, except 600120, in **Select main accounts** tab.
 
-![Select main accounts](https://github.com/user-attachments/assets/58a412a0-2fdd-48d0-b6f0-12011436819b)
+![Select main accounts](./media/budgetcontrolconfigurationmainaccounts.png)
 
 If a purchase order is created for expenses associated to main account 600120, then the budget check isn't performed for these lines, every other main account that's selected in the **Select main accounts** tab is contolled. In this example *FREIGHT* procurement category is associated to the main account 600120.
 
-![Purchase order](https://github.com/user-attachments/assets/d2373486-e454-498f-8358-c24b8e758e37)
+![Purchase order](./media/budgetcheckpurchaseorder.png) 
 
 When the **Main account** is selected as a budget control dimension, no configurations in **Select main accounts** tab are required. 
 

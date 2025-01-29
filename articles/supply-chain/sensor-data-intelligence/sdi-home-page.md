@@ -3,10 +3,12 @@ title: Sensor Data Intelligence home page (preview)
 description: Access an overview of Sensor Data Intelligence. Organizations can use this feature to drive business processes in Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.form:
+ms.topic: overview
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Sensor Data Intelligence home page (preview)
@@ -45,4 +47,4 @@ The following architectural diagram provides an overview of the solution and its
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
 > [!NOTE]
-> For more information about about how to connect sensors to the Azure IOT Hub, see [Azure industrial IoT analytics guidance](/azure/architecture/guide/iiot-guidance/iiot-architecture).
+> For more information about how to connect sensors to the Azure IoT Hub, see [Azure industrial IoT analytics guidance](/azure/architecture/guide/iiot-guidance/iiot-architecture).

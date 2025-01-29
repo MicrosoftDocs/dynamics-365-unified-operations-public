@@ -3,14 +3,14 @@ title: Page design guidelines
 description: Learn about page design guidelines for mobile apps, including answers to various questions about list views and other aspects of mobile design.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Page design guidelines
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 3
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
-Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions will help you decide how you should design your forms and pages.
+Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions help you decide how you should design your forms and pages.
 
 ### How do I create a list view for an entity in the mobile app?
 
@@ -46,7 +46,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
 ### How do I create list-to-details navigation for an entity in the mobile app?
 
-1.  Make sure that you've created both a list view page and a details view page for the entity by using the designer.
+1.  Make sure that you create both a list view page and a details view page for the entity by using the designer.
 2.  Make sure that the entity for the list view is the same as the entity for the details view. In other words, the table that is bound to the grid on the form that is used for the list view must be the same table that is the Master Root Data Source on the form that is used for the details view.
 3.  Make sure that the form that is used for the details view can be filtered on a unique key field by using the filter pane.
 4.  In the designer, make sure that the list view page is linked to the details view page. Click the list, open the properties, and then set the details view page by using the lookup. 
@@ -61,9 +61,9 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
     ![Binding the referenced field to the referenced entity’s data source.](media/relatedentityform.png)
 
-4.  Make sure that you've created a separate details view page for the entity that is being referenced.
-5.  Make sure that the reference field has been added to the page.
-6.  In the designer, make sure that the reference field has been linked to the details view for the referenced entity. For example, in the following illustration, Vehicle-details is the details view page for the referenced entity.
+4.  Make sure that you create a separate details view page for the entity that is being referenced.
+5.  Make sure that the reference field is added to the page.
+6.  In the designer, make sure that the reference field is linked to the details view for the referenced entity. For example, in the following illustration, Vehicle-details is the details view page for the referenced entity.
 
      ![Linking the reference field to the details view for the referenced entity.](media/referencepagedesigner.png)
 
@@ -104,7 +104,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 ###### How do I read data from a hidden page?
 
 1.  Identify or create a page that contains the controls with the data that you want.
-2.  Refer to the following code example, which hides the page from the navigation menus, and accesses data on the page using the provided APIs. Note that 'My-Hidden-Page' and 'My-Field-Id' are the names of the page and control, respectively, and can be found when viewing the corresponding page in the designer.
+2.  Refer to the following code example, which hides the page from the navigation menus, and accesses data on the page using the provided APIs. "My-Hidden-Page" and "My-Field-Id" are the names of the page and control, respectively, and can be found when viewing the corresponding page in the designer.
 
     ```xpp
     function main(metadataService, dataService, cacheService, $q) {
@@ -129,7 +129,7 @@ The number of records returned in a list page is controlled by the **List fetch 
 
 1. In the Mobile App designer,add a page containing a grid and select some fields from the grid.
 2. Click the **Grid** node and then click **Properties**.
-3. The **Control properties** dialog box will contain a default fetch size of 50 records.
+3. The **Control properties** dialog contains a default fetch size of 50 records.
 4. Adjust the fetch size as needed.
 
 
