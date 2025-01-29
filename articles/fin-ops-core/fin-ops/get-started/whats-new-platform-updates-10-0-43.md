@@ -15,7 +15,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.43 of finance and operations apps. This version has a build number of XXXXXX and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.43 of finance and operations apps. This version has a build number of 7.0.7521.23 and is available on the following schedule:
 
 - **Preview of release:** January 2025
 - **General availability of release (self-update):** March 2025
@@ -39,7 +39,7 @@ This section will contain a table that lists the enhancements that are included 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXXX).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=985753).
 
 ### Dynamics 365: 2024 release wave 2 plan
 
