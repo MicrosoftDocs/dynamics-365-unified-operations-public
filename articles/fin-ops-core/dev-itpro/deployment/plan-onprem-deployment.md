@@ -71,7 +71,7 @@ At a minimum, an on-premises production environment requires:
 - One machine running SQL Server Integration Services (SSIS) 
 - One machine running Management Reporter (MR)
 - One machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
-- Two or more machines running SQL Server (Database Engine)
+- Two or more machines running SQL Server (Database Engine), failover is only supported in an active\passive configuration. 
 - Two or more machines running Active Directory
 
 ## Service Fabric
@@ -154,7 +154,7 @@ In general, the compute tiers scale out and should be set up in an N+1 fashion, 
 
 #### High availability
 
-You should always utilize SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node.
+You should always utilize SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node. Failover is only supported in an active\passive configuration. 
 
 #### Active Directory Federation Services (AD FS)
 For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity). A [sizing spreadsheet](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.
