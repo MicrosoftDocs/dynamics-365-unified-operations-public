@@ -20,7 +20,7 @@ ms.collection:
 
 Copilot provides in-app help and guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation through the extensive capabilities of finance and operations apps.
 
-[<img src="media/copilot-homepage-explain-worflow.png" alt="Screenshot of the Copilot help pane in the user experience." title="Screenshot of the Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
+:::image type="content" source="media/copilot-homepage-explain-worflow.png" alt-text="Screenshot of the Copilot help pane in the user experience." lightbox="media/copilot-homepage-explain-worflow.png":::
 
 ## How Copilot works for in-app help and guidance
 
@@ -28,7 +28,10 @@ Copilot transforms the support experience by introducing a conversational sideca
 
 When generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: at the top of each page.
 
-[<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
+:::image type="content" source="media/copilot-help-welcome.png" alt-text="Copilot help pane in the user experience." lightbox="media/copilot-help-welcome.png":::
+
+> [!TIP]
+> Users can provide feedback to Copilot by selecting the thumbs-up or thumbs-down buttons in the sidecar. You can add support for written feedback by turning on [enhanced user feedback for Copilot](../../dev-itpro/copilot/enable-copilot-feedback.md). This feedback helps improve the quality of the responses that Copilot generates.
 
 ## Powered by generative AI
 

@@ -19,6 +19,9 @@ AI summaries with Microsoft Copilot are available on many of the most-used pages
 
 The information that Copilot provides depends on the current page and user context. For example, the information can vary based on the other pages that the user works with the most, and it's limited based on the user's security roles and permissions.
 
+> [!TIP]
+> Users can provide feedback to Copilot by selecting the thumbs-up or thumbs-down buttons shown under the summaries. You can add support for written feedback by turning on [enhanced user feedback for Copilot](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md). This feedback helps improve the quality of the summaries that Copilot generates.
+
 ## TechTalk video
 
 For a video overview of all of the features described in this topic, watch [Copilot Capabilities in Dynamics 365 Finance and SCM | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=QQN7tZYr1jc).
