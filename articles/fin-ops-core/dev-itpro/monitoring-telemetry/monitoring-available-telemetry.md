@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that is available in the Monitorin
 author: kennysaelen
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/20/2025
+ms.date: 01/29/2025
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
@@ -65,9 +65,10 @@ This telemetry can be visualized by using the Power BI dashboards that are provi
 
 ## DMF errors
 
-Errors from the Data Management Framework (DMF) are logged to the exceptions table in Application Insights. These errors include issues that are encountered during data import and export operations. Customer can use this information for the following purposes:
+Errors from the Data Management Framework (DMF) are logged to the Custom Events table in Application Insights (Since lot of DMF errors coudl be user errors live invalid/missing data etc. We do not want to mix those with exceptions and have false flags for system exceptions). These errors include issues that are encountered during data import and export operations. Customer can use this information for the following purposes:
 
 - Quickly identify and address integration issues.
 - Monitor the health of data pipelines.
-
+- For a list of DMF errors, see [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md).
+- 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
