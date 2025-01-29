@@ -226,41 +226,39 @@ To view and edit Rebate management transactions by using the rebate workbench, f
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.43 GA -->
 
-When vendor rebate deals are listed over multiple lines (such as when the output is split by financial dimension), it can become cumbersome to manage multiple entries and vendor accounts for the same vendor. To improve efficiency when generating payable invoices for vendor accounts, you can consolidate multiple ledger lines for the same vendor into a single vendor line with several ledger lines.
+Sometimes, vendor rebate deals are listed over multiple lines (for example, because the output is split by financial dimension). In these cases, it can be cumbersome to manage multiple entries and vendor accounts for the same vendor. To improve efficiency when payable invoices are generated for vendor accounts, you can consolidate multiple ledger lines for the same vendor into a single vendor line that has several ledger lines.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 #### Turn on vendor invoice consolidation
 
-To set your system to consolidate vendor invoices, it must meet the following requirements:
+Before you can set your system to consolidate vendor invoices, it must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
-- The feature that is named *Consolidate vendor invoices for the same vendor in vendor rebate deals* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Consolidate vendor invoices for the same vendor in vendor rebate deals* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 #### How vendor invoice consolidation works
 
-You can configure the system to divide rebates by financial dimension for reporting purposes, which causes the system to split the output into several lines when you post a rebate. The splitting is based on the financial dimensions of each source transaction (purchase order line or sales order line).
+You can configure the system to divide rebates by financial dimension for reporting purposes. The system then splits the output into several lines when you post a rebate. The split is based on the financial dimensions of each source transaction (purchase order line or sales order line).
 
-The following procedure shows how to see the effects of vendor invoice consolidation.
+The following procedure explains how to view the effects of vendor invoice consolidation.
 
 1. Go to **Rebate management** \> **Setup** \> **Rebate management parameters**.
-1. Open the **Rebate management** tab.
-1. Set **Process by dimension** to *Yes*. Your system is now set to divide rebates by financial dimension for reporting purposes.
-1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals** and open an active vendor rebate deal.
-1. On the Action Pane, open the **Rebate management deals** tab and select **Process \> Rebate management**.
-1. Because of the **Process by dimension** setting, the system divides the output, with each line showing a debit or credit account with its ledger account code. This could cause reconciliation issues, especially when multiple lines point to the same vendor. To see the output, on the Action Pane, open the **Rebate management deals** tab and select **Transactions**.
-1. At the top of the grid, set **Show** to *Posted*.
-1. Select a transaction and then, on the Action Pane, select **Target transactions**.
-1. Select the target transaction line and then select **View details**.
-1. The output journal lines are now displayed.
+1. On the **Rebate management** tab, set the **Process by dimension** option to *Yes*. Your system is now set to divide rebates by financial dimension for reporting purposes.
+1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals**, and open an active vendor rebate deal.
+1. On the Action Pane, on the **Rebate management deals** tab, select **Process** \> **Rebate management**.
+1. Because of the **Process by dimension** setting, the system divides the output. Each line shows a debit or credit account together with its ledger account code. This situation can cause reconciliation issues, especially when multiple lines point to the same vendor. To view the output, on the Action Pane, on the **Rebate management deals** tab, select **Transactions**.
+1. At the top of the grid, set the **Show** field to *Posted*.
+1. Select a transaction, and then, on the Action Pane, select **Target transactions**.
+1. Select the target transaction line, and then select **View details**. The output journal lines are shown.
 
-    Without vendor consolidation, you would see multiple vendor invoices for the same vendor in vendor rebate deals, as shown in the following screenshot.
+    Without vendor consolidation, there are multiple vendor invoices for the same vendor in vendor rebate deals, as shown in the following screenshot.
 
-    :::image type="content" source="media/vendor-invoice-journal-without-consolidation.png" alt-text="Screenshot showing a vendor invoice journal without consolidation" lightbox="media/vendor-invoice-journal-without-consolidation.png":::
+    :::image type="content" source="media/vendor-invoice-journal-without-consolidation.png" alt-text="Screenshot showing a vendor invoice journal without consolidation." lightbox="media/vendor-invoice-journal-without-consolidation.png":::
 
-    With vendor consolidation, you see just one vendor line with multiple ledger lines, as shown in the following screenshot. This consolidation makes it easier for businesses to consolidate and send rebate output to their vendors and to report in the rebate related journals.
+    With vendor consolidation, there is just one vendor line that has multiple ledger lines, as shown in the following screenshot. This consolidation makes it easier for businesses to consolidate and send rebate output to their vendors and to report in the rebate related journals.
 
-    :::image type="content" source="media/vendor-invoice-journal-with-consolidation.png" alt-text="Screenshot showing a vendor invoice journal with consolidation" lightbox="media/vendor-invoice-journal-with-consolidation.png":::
+    :::image type="content" source="media/vendor-invoice-journal-with-consolidation.png" alt-text="Screenshot showing a vendor invoice journal with consolidation." lightbox="media/vendor-invoice-journal-with-consolidation.png":::
 
 ## Post rebate transactions
 
