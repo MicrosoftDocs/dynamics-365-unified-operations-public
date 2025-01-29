@@ -5,7 +5,6 @@ author: music727
 ms.author: mibeinar
 ms.topic: overview
 ms.date: 1/29/2025
-
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
@@ -113,6 +112,20 @@ If a purchase order is created for expenses associated to main account 600120, t
 ![Purchase order](./media/budgetcheckpurchaseorder.png) 
 
 When the **Main account** is selected as a budget control dimension, no configurations in **Select main accounts** tab are required. 
+
+### Define budget groups
+
+You can define **Budget groups** to create a budget pool, or a collection of financial dimension values whose budgets are pooled for a secondary budget check. 
+The financial dimension combinations found in the **Budget control rule** are checked for budget amounts. If a financial dimension combination is also found in a **Budget group**, a second budget check is performed at the budget group level.
+
+> [!Important]
+> The **User group budget permissions** parameter defined on the **Budget control rules** determines if both budget rules and budget groups are checked for specific scneario for certain dimension combinations. If over budget permissions are defined as **Prevent budget group check when budget funds are not available**, the **budget group** checks aren't performed.
+
+If you want a budget to be checked for specific rule/scenario you can adjust:
+ - the **Budget group** criteria to exclude specific dimension combinations that you don't want checked at both budget control rules and budget control groups level.
+   or
+ - the **User group budget permissions**.
+
 
 ### Activate budget control
 
