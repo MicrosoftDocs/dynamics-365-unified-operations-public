@@ -36,7 +36,9 @@ The following Copilot features are currently available in finance and operations
 
     - [Generative help and guidance with Copilot](copilot-generative-help.md)
     - [Workflow history summary](../organization-administration/workflow-history-summary.md)
+    - [Enhanced user feedback for Copilot and related experiences](../../dev-itpro/copilot/enable-copilot-feedback.md)
     - [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md)
+
 
 - For Dynamics 365 Commerce:
 
