@@ -4,7 +4,7 @@ description: Learn how you can use temporary role management to assign temporary
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/25/2025
+ms.date: 01/29/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -40,8 +40,8 @@ The process for temporary role sessions has these steps.
 
 When you create a new temporary role session, set the type to **Merge** or **Replace**.
 
-- **Merge** – Add the temporary roles to the existing roles of the user account. Once the temporary roles session is over, user will retain their original roles and added temporary roles will be revoked.  
-- **Replace** – Replace the existing roles of the user account with the temporary roles. Once the temporary roles session is over, user will be re-assigned with their original roles and temporarily assigned roles will be revoked. 
+- **Merge** – Add the temporary roles to the existing roles of the user account. After the temporary roles session is over, users retain their original roles and the added temporary roles are revoked.  
+- **Replace** – Replace the existing roles of the user account with the temporary roles. After the temporary roles session is over, users are reassigned their original roles and temporarily assigned roles are revoked. 
 
 For both session types, the user account returns to its original roles when the session ends.
 
