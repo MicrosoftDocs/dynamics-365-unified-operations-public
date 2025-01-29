@@ -3,15 +3,15 @@ title: Troubleshoot the Office integration
 description: Access answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 04/12/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: twheeloc
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: OfficeAppParameters, SysEmailParameters
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
+ms.custom: 
+  - bap-template
 ---
 
 # Troubleshoot the Office integration
@@ -42,7 +42,7 @@ For more information, see the "Troubleshooting issue" section later in this arti
 
 ### How can I force an update of Office?
 
-If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels)). In this case, you can [use the Office Deployment Tool to move to the Current channel](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. The easiest method is to use the Office Deployment Tool to switch to the Current channel. In this case, the latest updates will be installed immediately.
+If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels)). In this case, you can [use the Office Deployment Tool to move to the Current channel](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. The easiest method is to use the Office Deployment Tool to switch to the Current channel. In this case, the latest updates are installed immediately.
 
 ### Why can't you tell me what version of Office or Excel a particular issue is fixed in?
 
@@ -73,22 +73,22 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the Open Data Protocol (OData) service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF and DIXF are often limited to administrators. Additionally, you might consider exploring the available [reporting and analytic features](../analytics/bi-reporting-home-page.md) in the product.
 
-When the previously mentioned options can't be used, you might consider the Export to Excel functionality, which can be useful for retrieving data from calculated columns (display methods), columns that have formatted values, and data from temporary tables. Because the export process uses the data from the active form to retrieve data, Export to Excel will return the data exactly as it is shown in the grid. Additionally, it will return only the data that matches the current set of filters.
+When the previously mentioned options can't be used, you might consider the Export to Excel functionality, which can be useful for retrieving data from calculated columns (display methods), columns that have formatted values, and data from temporary tables. Because the export process uses the data from the active form to retrieve data, Export to Excel will return the data exactly as it's shown in the grid. Additionally, it only returns the data that matches the current set of filters.
 
 Export to Excel does have its own set of limitations. First, this mechanism takes more time to export than the options that go through the OData service, and the time to export can be significant for larger exports. Secondly, the export of data to Excel is a memory-intensive process that can cause out-of-memory errors to occur and servers to stop responding, especially if the organization increases the export row limit beyond the default value. Export to Excel isn't intended for auditing purposes. When very large datasets must be exported from the system, data management is recommended.
 
 > [!WARNING]
 > Although organizations can increase the default Export to Excel row limit (50,000 records), we **strongly recommend** that you **not** raise this limit above 100,000 records. Depending on the characteristics of the environment and the specific grid that is being exported, even that limit might be too high and might cause memory issues.
 
-Because an export from Excel can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
+Because an export from Excel can take some time, it's recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option ensures that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
 ### Why is the Publish button in the Excel Add-in unavailable? 
 
-Hover over the **Publish** button to get more information as to why publishing currently isn't supported. Typically when this occurs, it is because all key and required fields must be present to publish data back to the entity, in which case you should open the designer and make sure all the key fields are bound.  
+Hover over the **Publish** button to get more information as to why publishing currently isn't supported. Typically when this occurs, it's because all key and required fields must be present to publish data back to the entity, in which case you should open the designer and make sure all the key fields are bound.  
 
 ### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
 
-For all environments, including on-premises, the Excel and Word Add-ins, and the libraries they use, are loaded from multiple Internet locations and therefore will only run when the Internet is available. For on-premises environments, when the Internet is not available, the Open in Excel options are hidden because the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Add-in. 
+All environments including on-premises, the Excel and Word Add-ins, and the libraries they use, are loaded from multiple Internet locations and only run when the Internet is available. For on-premises environments, when the Internet isn't available, the Open in Excel options are hidden because the Excel Add-in doesn't run without access to the Content Delivery Network (CDN) that houses the Excel Add-in. 
 
 ### Can the Excel Add-in and Word Add-in be made available to users using Centralized Deployment?
 
@@ -106,8 +106,8 @@ In case a change back to Office Store is needed, the standard values are:
 - **Store Type**: Office Store
 
 > [!NOTE]
->- **Name**, **Version**, and **Notes** are values that provide information but they are not needed to run the Excel Add-in.
->- These same values are also used for the Word Add-in when it is run from the Document Templates form.
+>- **Name**, **Version**, and **Notes** are values that provide information but they aren't needed to run the Excel Add-in.
+>- These same values are also used for the Word Add-in when it's run from the Document Templates form.
 
 If you encounter issues with Centralized Deployment for some users, it could be one of these problems:
 -	One or more users are members in a group that is more restrictive than others
@@ -123,11 +123,11 @@ If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName an
 
 ### Why are date and time values in UTC in the Excel Add-in?
 
-The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
+The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there's no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
 
 ### When is Skype integration supported?
 
-Skype integration is available for environments in the public cloud. For environments outside of the public cloud, including on-premises environments, Skype integration is not currently supported. 
+Skype integration is available for environments in the public cloud. For environments outside of the public cloud, including on-premises environments, Skype integration isn't currently supported. 
 
 ## Troubleshooting issues
 
@@ -138,15 +138,15 @@ Skype integration is available for environments in the public cloud. For environ
 **Explanation:** This issue usually occurs due to one of the following reasons:
 
 -   Incorrect sign in
--   Add-in registration data has not been initialized in the environment
+-   Add-in registration data hasn't been initialized in the environment
 -   OData issues 
 
 **Fix:** 
 -  **Incorrect sign in**: The most likely cause of this issue is that the user is signed in as the wrong user. This can happen if the user has multiple accounts and the browser uses the wrong user context. Before trying any other fix, you should sign out of the add-in using the user menu in the upper-right corner and then sign back in to the add-in. If the issue continues to persist, ensure registration data is properly initialized, as noted in the following fix. 
 
--  **Registration data not initialized**: If the issue wasn't addressed by signing back in to the add-in, another potential cause is that the environment doesn't yet have the add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, select the appropriate **Initialize** button on that tab. 
+-  **Registration data not initialized**: If the issue wasn't addressed by signing back in to the add-in, another potential cause is that the environment doesn't yet have the add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there's data populated in each tab. If any tab has an empty grid, select the appropriate **Initialize** button on that tab. 
 
--  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with finance and operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
+-  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with finance and operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
 
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
 
@@ -162,7 +162,7 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Issue:** During sign in to the Excel Add-in, you receive the following error message: "Microsoft EntraSTS65001: The user or administrator has not consented to use the application with ID XYZ."
 
-**Explanation:** Typically, this issue occurs because Microsoft Microsoft Entra ID can't find the Microsoft Entra application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](../analytics/configure-power-bi-integration.md), a Microsoft Entra application was added that has the App ID URI set to the environment URL. 
+**Explanation:** Typically, this issue occurs because Microsoft Entra ID can't find the Microsoft Entra application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](../analytics/configure-power-bi-integration.md), a Microsoft Entra application was added that has the App ID URI set to the environment URL. 
 
 **Fix:** Make sure that no Microsoft Entra apps have the App ID URI set to the environment URL. App ID URIs should be fabricated, unique URIs, such as `https://contosoAXPowerBI`.
 
@@ -180,7 +180,7 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Explanation:** You receive this error message if the client is open in Internet Explorer, and the user clicks **Open** immediately after selecting the **Open in Excel** option. The way that Internet Explorer handles temporary Internet files causes an issue in Excel. This issue, in turn, causes API calls to fail. 
 
-**Workaround:** The recommendation is to use Microsoft Edge or another modern browser. These browsers tend to save files to a Downloads folder by default, which mitigates the issue. If you are using Internet Explorer, which is now deprecated, when you open a workbook, select **Save** first, and then select **Open**. The file will then be opened from your Downloads folder.  
+**Workaround:** The recommendation is to use Microsoft Edge or another modern browser. These browsers tend to save files to a Downloads folder by default, which mitigates the issue. If you're using Internet Explorer, which is now deprecated, when you open a workbook, select **Save** first, and then select **Open**. The file will then be opened from your Downloads folder.  
 
 **Long-term fix:** We are working with the Office team to understand this issue so that it can be fixed in Excel.
 
@@ -243,7 +243,7 @@ The following URLs are accessed for authentication.
 
 **Issue:** The "Record for id GUID not found" error can display when copying a database from one environment to another. 
 
-**Explanation:** Copying the database is problematic for document templates, record attachments, and other files that are stored in Azure blob storage. When the database is copied from one environment to another, the files are not copied along with the records, so the files that the application tries to access are not found. 
+**Explanation:** Copying the database is problematic for document templates, record attachments, and other files that are stored in Azure blob storage. When the database is copied from one environment to another, the files aren't copied along with the records, so the files that the application tries to access aren't found. 
 
 **Solution:** For document templates, the solution is to identify the templates that are needed and load a copy of those template files into the target environment.
 

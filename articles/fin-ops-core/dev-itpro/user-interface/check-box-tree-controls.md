@@ -3,14 +3,15 @@ title: Check box support in tree controls
 description: Learn about using check box controls in the tree control, including code examples for various check box types.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Check box support in tree controls

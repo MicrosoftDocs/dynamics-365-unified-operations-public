@@ -28,7 +28,7 @@ Engineering change management helps you plan and manage product versioning, and 
 - Engineering change requests that are supported by workflows
 - Engineering change orders that are supported by workflows
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5580ff02-3710-47ca-a022-7f9a8ea9c3c3]
 
 The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -88,4 +88,3 @@ After you turn on the basic engineering change management features and enable th
 | Variant generation for engineering products | <p>This feature lets you generate variants for engineering products, based on available dimension values.</p><p>Learn more in [Generate variants for engineering products](engineering-variants.md).</p> |  On by default as of version 10.0.25.<br><br>Mandatory as of version 10.0.32. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

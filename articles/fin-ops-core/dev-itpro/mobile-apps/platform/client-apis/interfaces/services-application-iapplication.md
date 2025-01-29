@@ -3,11 +3,12 @@ title: Application type
 description: Learn about the application type, which represents a runtime instance of an application, including the minVersion property and appInit method.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Application type

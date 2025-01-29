@@ -3,14 +3,15 @@ title: List Page form pattern
 description: Learn about the List Page form pattern. A list page presents a set of data, so that you can find and work with a specific record.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # List Page form pattern
@@ -22,9 +23,6 @@ This article provides information about the List Page form pattern. A list page 
 ## Usage
 
 A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. The use of this pattern is now discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
-
-## Wireframe
-[![Wireframe.](./media/listpage1-1024x576.png)](./media/listpage1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -93,9 +91,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document in the ActionPane guidelines section.
 -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
-## Examples
-Form: **SalesTableListPage** [![List Page example.](./media/listpage2-1024x510.png)](./media/listpage2.png)
-
 ## Appendix
 ### Frequently asked questions
 
@@ -124,9 +119,6 @@ This section will have answers to frequently asked questions that are related to
 -   [MSDN AX 2012 List Page User Experience Guidelines](/dynamicsax-2012/developer/list-page-user-experience-guidelines)
 -   [MSDN AX 2012 List Page Forms](/dynamicsax-2012/developer/list-page-forms)
 
-#### AX 2012 example
-
-[![Example.](./media/listpage3-1024x671.png)](./media/listpage3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

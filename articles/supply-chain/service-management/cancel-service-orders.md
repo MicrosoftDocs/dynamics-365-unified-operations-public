@@ -1,12 +1,12 @@
 ---
 title: Cancel service orders  
 description: You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable
 ms.topic: how-to
-ms.date: 11/15/2024
+ms.date: 01/06/2025
 ms.custom: 
   - bap-template
 ---
@@ -20,7 +20,7 @@ You can cancel a service order or service order line from the service order itse
 > [!NOTE]
 > Service orders cannot be canceled if the stage of the service order does not allow cancellation, if the service order has item requirements, or if the service order has already been posted.
 
-## Cancel a service order in the Service orders form
+## Cancel a service order on the Service orders page
 
 1. Go to **Service management \> Service orders \> Service orders**.
 1. Select the service order.

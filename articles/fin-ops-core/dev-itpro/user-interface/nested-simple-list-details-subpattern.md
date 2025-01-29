@@ -3,14 +3,15 @@ title: Nested Simple List and Details subpattern
 description: Learn about the Nested Simple List and Details (NSL+D) subpattern, used to display information about a secondary or child entity.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Nested Simple List and Details subpattern
@@ -26,10 +27,6 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 -   You may not nest an NSL+D subpattern within another NSL+D subpattern.
 -   The NSL+D subpattern uses a Toolbar for contextual actions.
 -   The details portion of the NSL+D subpattern is simpler than the SL+D pattern. The NSL+D subpattern uses only groups, whereas the SL+D pattern organizes content into FastTabs.
-
-## Wireframe
-
-![Wireframe for Simple List and Details pattern.](./media/nestedsimplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -82,10 +79,6 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Display the grid columns as the first fields in the Details Header Group, in the same order that they are displayed in the grid.
     -   When a record is added, focus should go to the first field in the details section.
 
-## Examples
-Form: **HcmJob** (**TaskTabPage**) 
-[![Nested Simple List and Details sub-pattern example.](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
-
 ## Resources
 ### Typically used by patterns
 
@@ -95,18 +88,12 @@ Form: **HcmJob** (**TaskTabPage**)
 -   [Details Transaction](details-transaction-form-pattern.md)
 
 ## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 
 -   **The details area of the nested pattern should not have FastTabs. The framework should verify/enforce this.**
     -   Currently we aren't allowing tabs of any kind inside this pattern.
 
-### AX 2012 content
-
-[![Example.](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

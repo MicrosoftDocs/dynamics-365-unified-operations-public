@@ -4,14 +4,14 @@ description: Access answers to frequently asked questions about the finance and 
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 09/11/2019
+ms.date: 12/31/2024
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Client FAQ

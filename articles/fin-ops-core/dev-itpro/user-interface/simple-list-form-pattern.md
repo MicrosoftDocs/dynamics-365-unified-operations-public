@@ -3,14 +3,15 @@ title: Simple List form pattern
 description: Learn about the Simple List form pattern. This pattern is used to maintain data for simple entities, including overviews on usage, pattern changes, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 47f02822-51d5-4db2-8d99-2706548301e5
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Simple List form pattern
@@ -22,10 +23,6 @@ This article provides information about the Simple List form pattern. This patte
 ## Usage
 
 The Simple List pattern is used to maintain data for simple entities. Simple entities are entities that have six or fewer fields and no parent/child relationships. There are some exceptions where entities that have up to 15 fields are still considered simple entities.
-
-## Wireframe
-
-[![Wireframe.](./media/simplelist1-1024x578.png)](./media/simplelist1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -85,26 +82,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   There should not be any duplicate **New** or **Delete** buttons.
 -   The page title should be in a plural form.
 -   When there is no data, the grid should not automatically add a new record.
-
-## Examples
-Form: **CustGroup** 
-
-[![Simple List example.](./media/simplelist2-1024x524.png)](./media/simplelist2.png) 
-
-**Note:** We plan to extend the grid lines to the right and bottom edges in a future client deliverable.
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None at this time.
-
-### AX 2012 content
-
-[![AX 2012 example.](./media/simplelist3.png)](./media/simplelist3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

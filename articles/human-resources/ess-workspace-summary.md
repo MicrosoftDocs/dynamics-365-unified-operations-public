@@ -4,7 +4,7 @@
 title: Employee self service leave summary
 description: This article provides an overview of the Employee self service leave summary feature.
 author: jcart
-ms.date: 06/18/2024
+ms.date: 01/17/2025
 ms.topic: overview
 ms.reviewer: twheeloc
 # optional metadata

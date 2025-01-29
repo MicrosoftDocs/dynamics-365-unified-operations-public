@@ -1,8 +1,8 @@
 ---
 title: Subscription sales prices  
-description: When you create a subscription, the sales price is derived from the sales price setup that was created in the Sales price (subscription) form.
-author: ChristianRytt
-ms.author: crytt
+description: When you create a subscription, the sales price is derived from the sales price setup that was created on the Sales price (subscription) page.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
@@ -14,9 +14,9 @@ ms.search.form: SMASalespriceSubscription
 
 [!include [banner](../includes/banner.md)]
 
-When you create a subscription, the sales price is derived from the sales price setup that was created in the **Sales price (subscription)** form.
+When you create a subscription, the sales price is derived from the sales price setup that was created on the **Sales price (subscription)** page.
 
-In the **Sales price (subscription)** form, you can create sales prices for a specific subscription or you can create sales prices that apply more broadly. For a sales price to be applied to a subscription, the period code and the currency of the subscription must be identical to the period code and the currency of the sales price.
+On the **Sales price (subscription)** page, you can create sales prices for a specific subscription or you can create sales prices that apply more broadly. For a sales price to be applied to a subscription, the period code and the currency of the subscription must be identical to the period code and the currency of the sales price.
 
 If the period code and currency are identical for the subscription and the sales price, subscription sales prices are selected on the basis of the priorities listed in the following table. A blank cell in the table indicates an empty field and an X indicates a value that is equal to the value in the subscription from which the transaction is generated.
 
@@ -119,7 +119,7 @@ When you create a subscription fee, the sales price is based on the sales price 
 
 ## Example
 
-You want to set up subscription sales prices of EUR 500 for a new project 9030. In the **Sales price (subscription)** form, you create a subscription sales price line as indicated in the following table.
+You want to set up subscription sales prices of EUR 500 for a new project 9030. On the **Sales price (subscription)** page, you create a subscription sales price line as indicated in the following table.
 
 <table>
 <colgroup>
@@ -154,7 +154,6 @@ You want to set up subscription sales prices of EUR 500 for a new project 9030. 
 </tr>
 </tbody>
 </table>
-
 
 Note that the **Category** and **Subscription** fields are empty.
 
@@ -199,14 +198,13 @@ You then create the following subscriptions.
 </tbody>
 </table>
 
-
 Now you create subscription fees for both subscriptions in the subscription group Sub1:
 
-1.  Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+1. Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
-2.  In the **Subscription groups** form, click **Function** \> **Create subscription fee**.
+2. On the **Subscription groups** page, select **Function** \> **Create subscription fee**.
 
-3.  In the **Create subscription fee** form, enter the appropriate information. Learn more in [Create subscription fee transactions](create-subscription-fee-transactions.md).
+3. On the **Create subscription fee** page, enter the appropriate information. Learn more in [Create subscription fee transactions](create-subscription-fee-transactions.md).
 
 Subscription fees that have a sales price of EUR 500 are created for both subscriptions, as shown in the following table.
 
@@ -256,7 +254,6 @@ Subscription fees that have a sales price of EUR 500 are created for both subscr
 </tr>
 </tbody>
 </table>
-
 
 Later, you decide that you want to specify sales prices for the category SubCat1 for project 9030. Therefore, you create a new sales price line that has a sales price of EUR 550 for the combination of project 9030 and fee category SubCat1. There are now two subscription sales price lines for project 9030, as shown in the following table.
 
@@ -356,6 +353,6 @@ In the first transaction for subscription 00020\_135, the sales price of EUR 550
 
 ## Related information
 
-[Update and index subscription sales prices](update-and-index-subscription-sales-prices.md)
+- [Update and index subscription sales prices](update-and-index-subscription-sales-prices.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

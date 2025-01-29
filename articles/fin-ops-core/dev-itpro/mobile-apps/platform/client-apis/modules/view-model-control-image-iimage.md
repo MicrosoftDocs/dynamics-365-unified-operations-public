@@ -3,11 +3,12 @@ title: Image module
 description: Image control for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Image module
