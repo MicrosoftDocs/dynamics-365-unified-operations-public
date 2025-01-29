@@ -4,7 +4,7 @@ description: Learn scripts that you can use to resolve issues in on-premises env
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 10/07/2024
+ms.date: 12/02/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: Developer
@@ -512,8 +512,8 @@ foreach ($component in $configJson.components)
         $component.parameters.ssrsSslCertificateThumbprint.value = $ssrsSslCertificateThumbprint
 		$component.parameters.ssrsHttpsPort.value = 443
 		$component.parameters.reportingServers.value = $component.parameters.ssrsServerFqdn.value
-		$component.parameters.infrastructure.principalUserAccountType = "ManagedServiceAccount"
-		$component.parameters.infrastructure.principalUserAccountName = $principalUserAccountName
+		$component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+		$component.parameters.infrastructure.principalUserAccountName.value = $principalUserAccountName
     }
 
     $updatedComponents += $component

@@ -29,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 | Copilot and AI innovation | Customize the conversational help provided by Copilot | [Add knowledge to generative help and guidance with Copilot](../../fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help.md) | Enabled using Copilot Studio. |
 | Production control | Register material consumption as complete and edit dimensions on the production floor execution interface | [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md)<br><br>[How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*Register material consumption as complete and edit dimensions on the production floor execution interface* |
 | Procurement and sourcing | Support contract lifecycle management in source to pay by flexible integration | [Contract lifecycle management overview (preview)](../procurement/contract-lifecycle-management/clm-overview.md) | Feature management:<br>*(Preview) Integrate with external contract lifecycle management systems* |
-| Sales and marketing | Seamless sync with Dynamics 365 Sales | [Enable and configure seamless sync with Dynamics 365 Sales (preview)](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md) | Feature management:<br>*Automatically synchronize line data and totals with Dynamics 365 Sales* |
+| Sales and marketing | Seamless sync with Dynamics 365 Sales | [Enable and configure seamless sync with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md)<br><br>[Display seamless sync information on custom forms in Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/seamless-sync-info-on-custom-forms.md) | Feature management:<br>*Automatically synchronize line data and totals with Dynamics 365 Sales* |
 | Sales and marketing | [Roll out multifaceted pricing strategies](/dynamics365/release-plan/2024wave2/commerce/dynamics365-commerce/roll-out-multifaceted-pricing-strategies-unified-pricing-management-module) | [Unified pricing management overview (preview)](../unified-pricing-management/upm-pricing-management-overview.md) | Feature management:<br>*(Preview) Unified pricing management* |
 | System administration | [Keep conversations going with Copilot follow-up questions](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/keep-conversations-going-ai-generated-follow-ups) | [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md) | Feature management:<br>*(Preview) Follow-up questions in the Copilot sidecar* |
 
@@ -55,6 +55,14 @@ The following table lists the features that were introduced as public preview fe
 |---|---|---|
 | Inventory and warehouse management | *Inventory Visibility integration with inventory adjustment posting* | [Enable Inventory Visibility for Commerce](../inventory/inventory-visibility-commerce-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
 | Inventory and warehouse management | *Inventory Visibility integration with inventory adjustment offset* | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md)<br><br>[Enable Inventory Visibility for Commerce](../inventory/inventory-visibility-commerce-enable.md)<br><br>[Sync external inventory adjustments through Inventory Visibility](../inventory/inventory-visibility-sync-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
+
+## Features turned on by default in this release
+
+The following table lists the features that became turned on by default in version 10.0.42. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Sales and marketing | *Period charges* | [Period charges](../sales-marketing/period-charges.md) |
 
 ## New and updated documentation resources
 

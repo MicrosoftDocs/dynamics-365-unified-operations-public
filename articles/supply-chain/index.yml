@@ -336,7 +336,7 @@ additionalContent:
         text: Order promising
       - url: /dynamics365/supply-chain/sales-marketing/sales-agreements
         text: Sales agreements
-      - url: /dynamics365/supply-chain/warehousing/sales-returns
+      - url: /dynamics365/supply-chain/sales-marketing/sales-returns
         text: Sales returns
       - url: /dynamics365/supply-chain/sales-marketing/customer-portal-overview
         text: Customer portal

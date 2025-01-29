@@ -3,14 +3,15 @@ title: Custom Filter Group subpattern
 description: Learn about custom filter group subpatterns, including overviews on usage, wireframes, models, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 04/22/2020
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Custom Filter Group subpattern
@@ -32,15 +33,6 @@ Two patterns are described in this document. The only difference between these p
 
 -   **Custom Filters** – In this subpattern, the QuickFilter control is optional.
 -   **Custom and Quick Filters** – In this subpattern, the QuickFilter control is mandatory.
-
-## Wireframes
-### Custom Filters
-
-[![Custom filters group 1.](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
-
-### Custom and Quick Filters
-
-![Custom and quick filters group 2.](./media/customfiltergroup2.png)
 
 ## Model
 ### Custom Filters – High-level structure
@@ -92,19 +84,6 @@ The verification checklist shows the steps for manually verifying that the form 
         -   **Exception:** When you use a check box–style Boolean, the label can be left on, even though other fields don't show a label.
     -   There should not be more than five controls in the custom filter group.
 
-## Examples
-### Custom Filters
-
-Form: **LedgerJournalTable (TopFields)** 
-
-![Custom filters group 3.](./media/customfiltergroup3.png)
-
-### Custom and Quick Filters
-
-Form: **CustTable** **(CustomFilterGroup)** 
-
-[![Custom and quick filters group 4.](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
-
 ## Resources
 ### Typically used by form patterns
 
@@ -138,10 +117,6 @@ This section will have answers to frequently asked questions that are related to
 
 -   [MSDN AX 2012 How to Add Controls to the Filter Pane](/dynamicsax-2012/developer/how-to-add-controls-to-the-filter-pane)
 -   [MSDN AX 2012 List Page Overview – section Filter Pane](/dynamicsax-2012/developer/list-page-overview)
-
-#### AX 2012 example
-
-[![Example.](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

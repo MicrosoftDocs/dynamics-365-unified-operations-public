@@ -192,6 +192,15 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExe
 BODY
 {"executionId":"<executionId>"}
 ```
+
+GetExecutionIdByMessageId can be used to get the Execution ID. The API take the enqueued message ID and return the Execution ID.
+
+```Console
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionIdByMessageId
+BODY
+{"_messageId":"<messageId>"}
+```
+
 ## Automatic retry support during batch node restarts
 
 Automatic retry support for recurring data jobs has been implemented to enable retries when a batch restarts. This feature is available starting from PU64.
@@ -209,7 +218,7 @@ There's one regular batch job (Job1) that creates a new runtime child job(Job2) 
 > [!NOTE]
 > If you've customized your code that involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you may encounter issues with the recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
  
- 
+
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.

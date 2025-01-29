@@ -38,13 +38,11 @@ There's currently no timeline for full removal of the deprecated built-in planni
 
 Planning Optimization is now the standard master planning engine and must be used for all new cloud deployments. Starting with Supply Chain Management version 10.0.32, the first time you enable planning processes for any legal entity, the system will require you to install and enable Planning Optimization if you haven't already done so.
 
-Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new deployments. There is no manual way to enable the deprecated master planning engine for these environments. However, Microsoft customers who require planning support for any of the following features will be permitted to use the deprecated master planning engine as a temporary solution until Planning Optimization supports them:
+Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new deployments. There is no manual way to enable the deprecated master planning engine for these environments. However, Microsoft customers who require planning support for the following feature will be permitted to use the deprecated master planning engine as a temporary solution until Planning Optimization supports it:
 
 - Lean manufacturing
-- Dimension-based configuration
-- Catch-weight
 
-If you require any of these features, please submit a support ticket that describes your needs and Microsoft Support will enable the deprecated master planning engine for your environment. This is only a temporary solution until Planning Optimization supports these features. No other reasons will be considered for enabling deprecated planning on new environments.
+If you require this feature, please submit a support ticket that describes your needs and Microsoft Support will enable the deprecated master planning engine for your environment. This is only a temporary solution until Planning Optimization supports this feature. No other reasons will be considered for enabling deprecated planning on new environments.
 
 ## Adding a new legal entity to an existing environment
 

@@ -97,9 +97,9 @@ public boolean isLate()
 }
 ```
 
-## Unsupported statements: changeSite, pause, and window
+## Unsupported statements: pause and window
 
-The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
+The **pause** and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
 
 ## Ignored statements: server and client
 

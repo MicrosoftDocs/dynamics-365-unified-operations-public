@@ -3,11 +3,12 @@ title: Quality check
 description: Learn about the Quality check feature. This feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 07/16/2020
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form:  WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Quality check
@@ -92,7 +93,7 @@ Work classes are used to direct and/or limit the type of work order lines that w
 
 1. On the **Valid put location types** FastTab, leave the **Location type** field blank.
 
-    If you select a location type, you limit the locations where items can be put after they are picked. This field is used when a location directive tries to resolve the location, or when a warehouse worker manually specifies the location for the mobile device menu item.
+    If you select a location type, you limit the locations where items can be put after they're picked. This field is used when a location directive tries to resolve the location, or when a warehouse worker manually specifies the location for the mobile device menu item.
 
 For more information about work classes and how to create them, see [Create a work class](tasks/create-work-class.md).
 
@@ -180,7 +181,7 @@ Location directives are rules that help identify pick and put locations for inve
     - **Site:** *5*
     - **Warehouse:** *51*
 
-1. On the Action Pane select **Save** to save your directive and make the **Lines** FastTab available.
+1. On the Action Pane, select **Save** to save your directive and make the **Lines** FastTab available.
 1. On the **Lines** FastTab, select **New** to add a line to the grid.
 1. On the new line, set the following values. Accept the default values for the remaining fields.
 
@@ -290,9 +291,9 @@ After the purchase order has been created, it can be received by using the **PO 
 1. Go to **Inbound \> PO line receiving**.
 1. In the **PONUM** field, enter the purchase order number.
 1. Confirm the purchase order number.
-1. In the **LINENUM** field, enter the number of the purchase order line that is being received. Because the order has only one line in this scenario, you will enter *1* in the **LINENUM** field for each receiving step.
+1. In the **LINENUM** field, enter the number of the purchase order line that is being received. Because the order has only one line in this scenario, you'll enter *1* in the **LINENUM** field for each receiving step.
 1. Confirm the line number.
-1. In the **QTY** field, enter the quantity to receive. Because the purchase order is for three pallets (*PL*) in this scenario, and there are three receiving steps, you will enter *1* in the **QTY** field for each receiving step.
+1. In the **QTY** field, enter the quantity to receive. Because the purchase order is for three pallets (*PL*) in this scenario, and there are three receiving steps, you'll enter *1* in the **QTY** field for each receiving step.
 1. Confirm the quantity.
 
     The **Quality check** page that appears has no entry fields. It has only the confirmation (check mark) button at the bottom and the Menu button (**≡**) at the top. (The Menu button is sometimes referred to as the hamburger or the hamburger button.) To expedite the quality check process, when the pallet passes the quality check, the user just confirms the **Quality check** page.
@@ -381,6 +382,5 @@ For this scenario, pallet 3 will be accepted.
 1. Select the Menu button (**≡**) at the top of the page, and then, on the menu, select **Cancel** to return to the menu.
 
 You can now close the mobile app.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

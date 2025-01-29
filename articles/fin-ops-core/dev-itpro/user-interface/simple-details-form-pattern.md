@@ -3,14 +3,15 @@ title: Simple Details form pattern
 description: Learn about the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: ee67618d-edc8-4bc5-bccc-6872c4af6273
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Simple Details form pattern
@@ -27,10 +28,6 @@ The Simple Details pattern is used when only a simple set of fields must be pres
 -   **Simple Details w/Fast Tabs** – This is the Simple Details pattern that should be used when fields are organized into FastTabs.
 -   **Simple Details w/Standard Tabs** – This is the Simple Details pattern that should be used when fields are organized into traditional tabs.
 -   **Simple Details w/Panorama** – This is the Simple Details pattern that should be used when information is intended to be displayed in a panorama format.
-
-## Wireframe
-
-[![Simple Details wireframe.](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
 
 ## Pattern changes
 There are no planned changes for the use of this pattern in the current version of Microsoft Dynamics AX.
@@ -104,35 +101,7 @@ The verification checklist shows the steps for manually verifying that the form 
 -   The form page should display a Form Caption that accurately describes the entity.
     -   The Form Caption should be in a singular form.
 
-## Examples
-### Simple Details w/Toolbar and Fields
-
-Form: **AgreementLine** 
-
-[![Simple Details with Toolbar and Fields.](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
-
-### Simple Details w/FastTabs
-
-Form: **PlanActivityServiceDetails** 
-
-[![Simple Details with FastTab.](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
-
-### Simple Details w/Standard Tabs
-
-Form: **HcmEmploymentDateManager** (Click **Human Resources** &gt; **Common** &gt; **Workers** &gt; **Workers**, click **General** &gt; **Versions** &gt; **Employment History**, and then click **Date Manager**.) 
-
-[![Simple Details with Standard Tabs.](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
-
-### Simple Details w/Panorama
-
-Form: **PdsMRCEventTracker** 
-
-[![Simple Details with Panorama.](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
-
 ## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 

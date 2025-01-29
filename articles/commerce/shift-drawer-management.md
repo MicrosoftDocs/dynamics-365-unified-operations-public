@@ -2,7 +2,7 @@
 title: Shift and cash drawer management
 description: This article describes how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 09/25/2024
+ms.date: 11/19/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -114,7 +114,8 @@ The *close shift* operation calculates shift totals and overage/shortage amounts
 Enabling the **Require starting amounts and tender declaration** POS functionality profile setting enforces the starting amount and tender declaration actions before the shift can be closed. 
 
 > [!NOTE]
-> Starting with Commerce version 10.0.40, only devices with a cash drawer configured are subject to **Require starting amounts and tender declaration** setting validation.
+> - Starting with Commerce version 10.0.40, only devices with a cash drawer configured are subject to the **Require starting amounts and tender declaration** setting validation.
+> - If all cash drawers under **POS hardware profile** are configured as "None" you must define at least one cash drawer as "Manual" to trigger the **Require starting amounts and tender declaration** setting validation.
 
 ### Print X
 

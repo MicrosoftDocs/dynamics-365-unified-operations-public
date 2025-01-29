@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/19/2024 
+ms.date: 01/10/2025 
 ms.reviewer: johnmichalak
 ---
 
@@ -39,7 +39,9 @@ Before you begin the procedures in this article, the following prerequisites mus
     - E-Invoicing service workspace designer
     - Execute update actions for submitted documents
 
-1. Ensure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+1. Ensure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
+[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md),
+[Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Customer invoice context model
     - Inventory e-invoice (PA)
@@ -196,9 +198,9 @@ For Panama, the **Process response** action completes the pipeline after a few m
 
 ## More resources
 
-- [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
+- [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
+- [Get started with Electronic invoicing service administration](../global/gs-e-invoicing-administration-integration-components.md)
+- [Setting up Electronic Invoicing](../global/gs-e-invoicing-set-up-overview.md)
 - [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
 - [Dynamics 365 Country expansion: localizations for LATAM countries | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
 - [Dynamics 365 Country expansion: localizations for LATAM countries | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)

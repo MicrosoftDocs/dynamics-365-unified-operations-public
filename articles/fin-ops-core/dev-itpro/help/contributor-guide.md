@@ -24,7 +24,7 @@ One benefit of GitHub is that you can contribute to the core content that the Mi
 
 You can also contribute and make edits to the existing documentation. To get started, select the **Edit** button (pencil symbol) in a article. The following video shows how you can contribute to the Microsoft documentation.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=beb8146a-fbc8-4dbb-a78d-2a38039e6981]
 
 > [!NOTE]
 > Microsoft currently accepts pull requests only to the source files in English (US).

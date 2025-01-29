@@ -4,7 +4,7 @@
 title: Configure integration with dataverse tables
 description: This article describes the integration between Microsoft Dynamics 365 Human Resources and Dataverse.
 author: anschmidt  
-ms.date: 02/23/2023
+ms.date: 01/15/2025
 ms.topic: article
 # optional metadata
 
@@ -384,14 +384,13 @@ In the following template mapping tables, the name of the task indicates the ent
 | ISSUINGAGENCYID                | cdm\_issuingagencyid.cdm\_name                       |
 | WORKERNUMBER                   | cdm\_workerid.cdm\_workernumber                      |
 
-### Compensation structure to Compensation Structure
+### Compensation structure V2 to Compensation Structure
 
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | AMOUNT                         | cdm\_amount                                         |
 | GRID                           | cdm\_compensationgridid.cdm\_name                    |
 | LEVELID                        | cdm\_compensationlevelid.cdm\_name                   |
-| REFERENCEPOINTLINENUMBER       | cdm\_referencepointid.cdm\_linenumber                |
 | REFERENCESETUP                 | cdm\_referencepointid.cdm\_referencepointsetupid.cdm\_name |
 | REFERENCEPOINT                 | cdm\_referencepointid.cdm\_name                      |
 
@@ -926,8 +925,8 @@ In the following template mapping tables, the name of the task indicates the ent
 | Compensation Reference Point Setup       | cdm\_name, cdm\_companyid.cdm\_companycode |
 | Compensation Reference Point Setup Line  | cdm\_name, cdm\_referencepointsetupid.cdm\_name, cdm\_referencepointsetupid.cdm\_companyid.cdm\_companycode |
 | Compensation Region                      | cdm\_name |
-| Compensation Structure                   | cdm\_compensationlevelid.cdm\_name, cdm\_referencepointid.cdm\_name, cdm\_referencepointid.cdm\_referencepointsetupid.cdm\_name, cdm\_referencepointid.cdm\_referencepointsetupid.cdm\_companyid.cdm\_companycode, cdm\_companyid.cdm\_companycode, cdm\_compensationgridid.cdm\_name, cdm\_compensationgridid.cdm\_companyid.cdm\_companycode |
-| Compensation Variable Plan               | cdm\_name, cdm\_companyid.cdm\_companycode |
+| Compensation Structure                   | cdm_companyid.cdm_companycode, cdm_compensationgridid.cdm_companyid.cdm_companycode, cdm_compensationgridid.cdm_name, cdm_compensationlevelid.cdm_name,
+cdm_referencepointid.cdm_name, cdm_referencepointid.cdm_referencepointsetupid.cdm_name, cdm_referencepointid.cdm_referencepointsetupid.cdm_companyid.cdm_companycode, cdm_referencepointsetupid.cdm_companyid.cdm_companycode|
 | Compensation Variable Plan Level         | cdm\_companyid.cdm\_companycode, cdm\_compensationvariableplanid.cdm\_name, cdm\_compensationvariableplanid.cdm\_companyid.cdm\_companycode, cdm\_compensationlevelid.cdm\_name |
 | Compensation Variable Plan Type          | cdm\_name, cdm\_companyid.cdm\_companycode |
 | Currency                                 | isocurrencycode |

@@ -4,7 +4,7 @@ description: Learn about the parameter configuration for Latin America, includin
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 12/03/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak	
 ---
@@ -26,11 +26,10 @@ This article provides a description of the Latin America (LATAM) parameter confi
 
     | Option                        | Description |
     |-------------------------------|-------------|
+    | Enable additional authorization code   | Activate an additional field in the **Sales CA** form. | 
     | Enable sales return account   | Activate the alternative ledger account for return sales orders. |
     | Enable project return account | Activate the alternative ledger account for return project sales. |
-    | Enable line control           | If the maximum number of lines on a sales order is exceeded, a warning message should be shown. |
 
-3. In the **Max amount of lines** field, enter the maximum number of lines that are allowed before the warning message is shown.
 4. On the **Mandatory document class in journal** tab, activate the options for each group as required. When you activate an option, the **Document class** field in the LATAM extended information from journal entries becomes mandatory.
 5. On the **Value** tab, update the following fields to configure how payment methods behave with transactions.
 
