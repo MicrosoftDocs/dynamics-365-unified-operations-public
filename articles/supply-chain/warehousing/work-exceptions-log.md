@@ -1,5 +1,5 @@
 ---
-title: View and manage the work exceptions log (preview)
+title: View and manage the work exceptions log
 description: Learn about the work exceptions log. The system registers work-related errors in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows.
 author: Mirzaab
 ms.author: mirzaab
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# View and manage the work exceptions log (preview)
+# View and manage the work exceptions log
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 Work exceptions are work-related errors that can occur during warehouse operations (such as discrepancies in inventory or missing goods at a given location). The system registers these exceptions in the work exceptions log, which lets managers track and diagnose issues related to warehouse workflows such as pick or pack procedures.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Example of how a worker can create a work exception
 
@@ -61,11 +57,18 @@ Work exceptions can also be shown on other pages, such as the **Outbound work mo
 
 :::image type="content" source="media/locations-with-open-exceptions-form.png" alt-text="The Locations with open work exceptions page." lightbox="media/locations-with-open-exceptions-form.png":::
 
-## Clean up the work exceptions log
+## Clean up the work exceptions log (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
 
 Even after they're resolved, the system keeps all log entries until they are explicitly removed. Cleaning out old work exceptions helps make it easier for users to search for locations with open work exceptions and improves the performance of pages that show work exceptions.
 
 The system provides a clean-up batch job to help you delete multiple entries in the work exceptions log once they're resolved or no longer necessary. When you set up the job, you'll set the criteria for selecting which entries should be deleted (for example, according to the status and/or age of each entry). When the job runs, it removes all work exceptions that match the criteria.
+
+This feature requires Supply Chain Management version 10.0.43 or later.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 To clean up the work exceptions log, follow these steps.
 
@@ -79,4 +82,3 @@ To clean up the work exceptions log, follow these steps.
 When the job finishes execution, the system shows a notification of how many records were removed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
