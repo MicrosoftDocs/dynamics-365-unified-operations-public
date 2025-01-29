@@ -17,62 +17,62 @@
     },    
     {
       "source_path": "articles/finance/localizations/global/rcs-overview.md",
-      "redirect_url": "/dynamics365/localizations/global/workspace/merge-rcs-to-gsw",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/merge-rcs-to-gsw",
       "redirect_document_id": "false"
     },    
     {
       "source_path": "articles/finance/localizations/global/rcs-globalization-feature.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/rcs-global-repo-upload.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },  
     {
       "source_path": "articles/finance/localizations/dev-itpro/rcs-delete-environment.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     }, 
     {
       "source_path": "articles/finance/localizations/global/rcs-lcs-repo-dep-faq.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/enhanced-filtering-global-repo.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/rcs-global-repo-share-configuration.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/global/discontinuing-configurations-rcs-global-repo.md",
-      "redirect_url": "/dynamics365/finance/localizations/global/global/workspace/gsw-features",
+      "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
     },
     {
@@ -341,127 +341,127 @@
       "redirect_document_id": "false"
     },    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
-      "redirect_url": "../apac/fixed-asset-depreciation-allocation",
+      "redirect_url": "/dynamics365/finance/localizations/apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/apac-aus-bank-file-formats.md",
-      "redirect_url": "australia/apac-aus-bank-file-formats",
+      "redirect_url": "/dynamics365/finance/localizationsaustralia/apac-aus-bank-file-formats",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/apac-aus-business-activity-statement.md",
-      "redirect_url": "australia/apac-aus-business-activity-statement",
+      "redirect_url": "/dynamics365/finance/localizationsaustralia/apac-aus-business-activity-statement",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/apac-aus-low-value-pool-depreciation.md",
-      "redirect_url": "australia/apac-aus-low-value-pool-depreciation",
+      "redirect_url": "/dynamics365/finance/localizationsaustralia/apac-aus-low-value-pool-depreciation",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/apac-aus-payment-times-report.md",
-      "redirect_url": "australia/apac-aus-payment-times-report",
+      "redirect_url": "/dynamics365/finance/localizationsaustralia/apac-aus-payment-times-report",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/australia.md",
-      "redirect_url": "australia/australia",
+      "redirect_url": "/dynamics365/finance/localizationsaustralia/australia",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/tasks/add-bas-report-boxes.md",
-      "redirect_url": "../australia/add-bas-report-boxes",
+      "redirect_url": "/dynamics365/finance/localizations/australia/add-bas-report-boxes",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/tasks/set-up-reason-codes-australia-bas.md",
-      "redirect_url": "../australia/set-up-reason-codes-australia-bas",
+      "redirect_url": "/dynamics365/finance/localizations/australia/set-up-reason-codes-australia-bas",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/austria.md",
-      "redirect_url": "austria/austria",
+      "redirect_url": "/dynamics365/finance/localizations/austria/austria",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-cross-border-services-report.md",
-      "redirect_url": "austria/emea-aut-cross-border-services-report",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-cross-border-services-report",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-eu-sales-list.md",
-      "redirect_url": "austria/emea-aut-eu-sales-list",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-eu-sales-list",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-half-year-depreciation.md",
-      "redirect_url": "austria/emea-aut-half-year-depreciation",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-half-year-depreciation",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-intrastat.md",
-      "redirect_url": "austria/emea-aut-intrastat",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-intrastat",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-packing-material-fee-calculation.md",
-      "redirect_url": "austria/emea-aut-packing-material-fee-calculation",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-packing-material-fee-calculation",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-purchase-duties.md",
-      "redirect_url": "austria/emea-aut-purchase-duties",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-purchase-duties",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-vat-declaration-austria.md",
-      "redirect_url": "austria/emea-aut-vat-declaration-austria",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-aut-vat-declaration-austria",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-reporting-multiple-vat-registrations-at.md",
-      "redirect_url": "austria/emea-reporting-multiple-vat-registrations-at",
+      "redirect_url": "/dynamics365/finance/localizations/austria/emea-reporting-multiple-vat-registrations-at",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/belgium.md",
-      "redirect_url": "belgium/belgium",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/belgium",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-annual-vat-listing-of-domestic-sales.md",
-      "redirect_url": "belgium/emea-bel-annual-vat-listing-of-domestic-sales",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-annual-vat-listing-of-domestic-sales",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-coda-bank-statement-import.md",
-      "redirect_url": "belgium/emea-bel-coda-bank-statement-import",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-coda-bank-statement-import",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-eu-sales-list.md",
-      "redirect_url": "belgium/emea-bel-eu-sales-list",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-eu-sales-list",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-export-ledger-transactions.md",
-      "redirect_url": "belgium/emea-bel-export-ledger-transactions",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-export-ledger-transactions",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-intervat-tax-declaration.md",
-      "redirect_url": "belgium/emea-bel-intervat-tax-declaration",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-intervat-tax-declaration",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-intrastat.md",
-      "redirect_url": "belgium/emea-bel-intrastat",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-intrastat",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/emea-bel-prodcom-report.md",
-      "redirect_url": "belgium/emea-bel-prodcom-report",
+      "redirect_url": "/dynamics365/finance/localizations/belgium/emea-bel-prodcom-report",
       "redirect_document_id": "false"
     },
     {
