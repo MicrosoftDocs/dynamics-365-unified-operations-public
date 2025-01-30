@@ -27,7 +27,7 @@ This article provides links to documentation resources for the United Arab Emira
 
 ## Activate the UAE functionality
 
-Country-specific or region-specific functionality for the UAE is activated by using the **Localized functionality region** configuration for legal entities. If the company address is used to detect the **Localized functionality region** configuration, make sure that the country/region code of the legal entity's primary address is set to **ARE** on the **Legal entities** page.
+Country/region specific functionality for the UAE is activated by using the **Localized functionality region** configuration for legal entities. If the company address is used to detect the **Localized functionality region** configuration, make sure that the country/region code of the legal entity's primary address is set to **ARE** on the **Legal entities** page.
 
 [![Country/region code of the primary address set to ARE on the Legal entities page.](../media/uae_vat_01.jpg)]
 
