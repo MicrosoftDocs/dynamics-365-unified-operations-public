@@ -54,13 +54,13 @@ To add a node or nodes to your existing environment, follow these steps:
 1. Run the following command to ensure that the Service Fabric diagnostic store is accessible by the new node:
 
     ```powershell
-    .\Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -FileShareReference "sfDiagnostics"
     ```
 
 1. Run the following command to ensure that the new node has all prerequisites installed:
 
     ```powershell
-    .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -MSIFilePath \\dc1\MSIs -ForcePushLBDScripts
+    .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -MSIFilePath <file-path> -ForcePushLBDScripts
     .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
