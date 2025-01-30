@@ -2434,6 +2434,8 @@
                       href: localizations/denmark/emea-dnk-accounting-basis.md
                 - name: Ecuador
                   items:
+                  - name: Ecuador overview
+                    href: localizations/iberoamerica/ecuador.md
                   - name: Configure Ecuadorian sales VAT book printing
                     href: localizations/iberoamerica/ltm-Ecaudor-sales-vat-book.md
                   - name: Configure Ecuadorian purchase payment methods printing
