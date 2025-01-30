@@ -3611,7 +3611,7 @@
         href: landed-cost/inbound-tracking.md
       - name: Estimate and manage landed costs
         href: landed-cost/estimate-manage-landed-costs.md
-      - name: In-transit processing
+      - name: Goods-in-transit processing and receiving
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
