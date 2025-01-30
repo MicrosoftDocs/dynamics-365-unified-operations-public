@@ -62,7 +62,7 @@ This article describes how to use the invoice register to create invoices. Then 
     
 
 ## Import an invoice with automatic posting of invoice register journal
-When receiving a vendor invoice, the initial step registers the invoice in the invoice register. This reflects the immediate accrual amount, which aligns with some country-specific or region-specific tax registration requirements. The process includes receipt matching, validating 3-way matching, and workflow approval for pending vendor invoices in the invoice pool. 
+When receiving a vendor invoice, the initial step registers the invoice in the invoice register. This reflects the immediate accrual amount, which aligns with some country/region specific tax registration requirements. The process includes receipt matching, validating 3-way matching, and workflow approval for pending vendor invoices in the invoice pool. 
 
 The **Vendor invoice automation with tax registration** feature automates the invoice register process for imported vendor invoices through the Data Management Framework (DMF). The **VENDORINVOICETYPE** field on vendor invoice header entity determines to generate a standard pending vendor invoice or post the invoice register journal in advance. When the field is **InvoicePool**, an invoice register journal is created and posted. The pending vendor invoice is generated in the invoice pool.
 
