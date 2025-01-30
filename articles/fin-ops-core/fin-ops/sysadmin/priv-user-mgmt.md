@@ -35,6 +35,10 @@ New privileged user sessions are initiated by a system administrator.
 > [!NOTE]
 > The maximum duration for a privileged user session is 24 hours.
 
+[!NOTE]
+> It is recommended that privileged user sessions should be allocated to only high privileged user accounts within company and each privileged account should have unique functions. It is expected that these privileged accounts will remain disabled when not in use. 
+
+
 ## Audit logs
 
 Use the **Audit logs** to view all actions that are performed on a given session request. The grid captures the following details:
