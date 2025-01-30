@@ -1,6 +1,6 @@
 ---
-title: What's new or changed in Dynamics 365 Finance 10.0.43 (January 2025)
-description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.43 preview release distributed in January 2025.
+title: What's new or changed in Dynamics 365 Finance 10.0.43 (March 2025)
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.43 preview release.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
@@ -12,7 +12,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.43 (January 2025)
+# What's new or changed in Dynamics 365 Finance 10.0.43 (March 2025)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
