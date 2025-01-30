@@ -65,7 +65,7 @@ This telemetry can be visualized by using the Power BI dashboards that are provi
 
 ## DMF errors
 
-Errors from the Data Management Framework (DMF) are logged to the Custom Events table in Application Insights and the exceptions which bubble up to the x++ layer are sent to Exceptions table. As we mature this feature in DMF and start to expose more DMF events through Application Insights, this might change. The logged error will have an error code associated with it. Learn more about the details for the error codes in the [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md) article.
+Errors from the Data Management Framework (DMF) are logged to the Custom Events table in Application Insights and the exceptions which bubble up to the x++ layer are sent to Exceptions table. As we mature this feature in DMF and start to expose more DMF events through Application Insights, this feature might change. The logged error has an error code associated with it. Learn more about the details for the error codes in the [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md) article.
 
 - Quickly identify and address integration issues.
 - Monitor the health of data pipelines.
