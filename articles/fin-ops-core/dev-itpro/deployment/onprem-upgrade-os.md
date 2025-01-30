@@ -53,7 +53,7 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
 
     ```powershell
     # Host URL is your DNS record\host name for accessing the AOS
-    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group">
+    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group"> -D365FOVersion <version>
     ```
 
 #### Upgrade an AD FS farm
@@ -77,7 +77,7 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 
     ```powershell
     # Host URL is your DNS record\host name for accessing the AOS
-    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group">
+    .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group"> -D365FOVersion <version>
     ```
 
     Your new farm/instance is now ready to be used by Finance + Operations (on-premises).
@@ -96,7 +96,7 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 To correctly support authentication with the Office add-ins, AD FS on Windows Server 2019 or later requires that you set up Cross Origin Resource Sharing (CORS) headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you aren't sure whether you're missing the configuration, run the following script.
 
 ```powershell
-.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json" -D365FOVersion <version>
 ```
 
 ## Upgrade a node in your Service Fabric cluster

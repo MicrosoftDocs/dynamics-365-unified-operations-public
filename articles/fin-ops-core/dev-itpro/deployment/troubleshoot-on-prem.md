@@ -901,7 +901,7 @@ You can also use Psping to try to reach the remote server. For information about
 If you're having issues during authentication with the Workflow editor or the Excel add-ins, use the following script to verify your configuration.
 
 ```powershell
-.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json" -D365FOVersion <version>
 ```
 
 ### Redirect sign-in questions and issues
@@ -1195,7 +1195,7 @@ Follow these steps to configure the local agent with the updated tenant.
 
 You receive the following error when you deploy another environment:
 
-> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
+> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` -D365FOVersion <version> New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
 
 You can skip or modify the following sections in the deployment instructions.
 
