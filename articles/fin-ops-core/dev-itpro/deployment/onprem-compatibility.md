@@ -66,6 +66,13 @@ Finance + Operations (on-premises) supports a limited set of collations. The fol
 | Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and later |
 | SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
 
+### High Availability 
+
+You should always utilize SQL Server in either a cluster or mirroring setup for production environments. 
+
+> [!IMPORTANT]
+> Database failover is only supported in an active or passive configuration. Read-only replicas aren't supported. 
+
 ## Active Directory Federation Services (AD FS)
 
 Active Directory Federation Services (AD FS) is a server role that can be installed on a machine running Windows Server. 

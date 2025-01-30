@@ -84,7 +84,10 @@ To understand your sizing requirements, you need to know the peak volume of tran
 
 ### High availability
 
-We recommend always utilizing SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node.
+We recommend always utilizing SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node. 
+
+> [!NOTE]
+> Failover is only supported in an active or passive configuration. Read-only replicas aren't supported.  
 
 ### Active Directory Federation Services (AD FS)
 
