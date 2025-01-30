@@ -78,13 +78,13 @@ The delivery of a goods-in-transit order can be date-tracked by using the **Trac
 
 If you want to use landed cost with goods-in-transit orders enabled, the following configurations must be in place:
 
-- Goods-in-transit management must be set to *Yes* on the terms of delivery.
+- **Goods-in-transit management** must be set to *Yes* on the terms of delivery.
 - Terms of delivery must be set on the purchase or transfer order header.
 - Additional goods-in-transit and under-delivery warehouses must be set up.
 
 Learn more in [Goods-in-transit processing](in-transit-processing.md).
 
-If want to use landed cost without goods-in-transit orders enabled, Goods-in-transit management should be set to *No*, and no additional warehouses must be configured. In addition, terms of delivery aren't required on the purchase or transfer order.
+If want to use landed cost without goods-in-transit orders enabled, **Goods in transit management** should be set to *No* on the terms of delivery, and no additional warehouses must be configured. Also, terms of delivery aren't required on the purchase or transfer order.
 
 The costing, financial, and inventory impact of posting estimated and actual costs depends on configurations that are set in the **Landed cost** module. Learn more in [Landed cost parameters setup](landed-cost-parameters.md) and [Costing parameter values setup](costing-parameters-setup.md).
 
@@ -128,7 +128,7 @@ Learn more in [Warehouse handling of inbound loads for purchase and inbound ship
 
 #### Goods receipt for landed cost when goods-in-transit order are enabled
 
-To receive goods when goods-in-transit orders are enabled, you can use goods-in-transit receiving-specific menu items in the warehouse mobile app, post an arrival journal or receive the goods via the goods-in-transit order. Which receipt method to use depends on whether or not advanced warehousing and serial/batch tracking are enabled.
+To receive goods when goods-in-transit orders are enabled, you can use goods-in-transit receiving-specific menu items in the warehouse mobile app, post an arrival journal, or receive the goods via the goods-in-transit order. The receipt method you should use depends on whether or not warehouse management processes (WMS) and serial/batch tracking are enabled.
 
 Learn more in [Goods-in-transit processing](in-transit-processing.md).
 
