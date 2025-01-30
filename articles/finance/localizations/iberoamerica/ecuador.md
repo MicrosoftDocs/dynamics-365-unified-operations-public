@@ -2,7 +2,7 @@
 title: Ecuador overview
 description: Learn about Microsoft Dynamics 365 Finance documentation resources for Ecuador, including links that direct to resources about electronic invoicing. 
 author: Cpicon85
-ms.author: Cpicon85
+ms.author: v-cpicon
 ms.topic: overview
 ms.date: 01/30/2025
 ms.reviewer: johnmichalak
