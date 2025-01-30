@@ -3,53 +3,35 @@ title: Service object groups
 description: Object groups are useful for sorting and filtering the data about objects for reports and statistics, including outlines and examples.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/11/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceObjectGroups
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Service object groups
 
 [!include [banner](../includes/banner.md)]
 
-Object groups are useful for sorting and filtering the data about objects for
-reports and statistics. For example, you can group objects by geographical
-location or by type.
+Object groups are useful for sorting and filtering the data about objects for reports and statistics. For example, you can group objects by geographical location or by type.
 
 ## Group by geographical location
 
-You can use this grouping method to show where the various different objects
-that your company services are located. Grouping objects by geographical
-location can also be useful if, for example, you must identify the objects that
-your company already provides services for in a particular country/region.
+You can use this grouping method to show where the various different objects that your company services are located. Grouping objects by geographical location can also be useful if, for example, you must identify the objects that your company already provides services for in a particular country/region.
 
 ## Example of grouping by geographical location
 
-A customer from Belgium calls your service center and wants to create a service
-agreement for an object, ABC. You have attached an object group for geographical
-location, Belgium, to all objects that are serviced in Belgium. By using this
-group as a filter, you can quickly search to see whether you already have a
-record for ABC in the program, or whether you must set up a new object.
+A customer from Belgium calls your service center and wants to create a service agreement for an object, ABC. You have attached an object group for geographical location, Belgium, to all objects that are serviced in Belgium. By using this group as a filter, you can quickly search to see whether you already have a record for ABC in the program, or whether you must set up a new object.
 
 ## Group by type
 
-You can use this grouping method to show the types of objects that your company
-services. Grouping objects by type can also be useful if, for example, you want
-to create a new object based on similar objects that already exist in the
-program.
+You can use this grouping method to show the types of objects that your company services. Grouping objects by type can also be useful if, for example, you want to create a new object based on similar objects that already exist in the program.
 
 ## Example of grouping by type
 
-A customer calls and wants to set up a service agreement for an air conditioning
-machine, HIJ. You do not already have a record for this machine. However, you
-have set up an object group titled Air Conditioners, and you have attached this
-group to all air conditioning objects. Therefore, you can quickly search for and
-identify all other air conditioning machines and use the template information
-from these objects to create service agreement lines for HIJ. By using object
-groups in this manner, you can quickly set up new objects and determine the
-service tasks that must be performed on them.
+A customer calls and wants to set up a service agreement for an air conditioning machine, HIJ. You don't already have a record for this machine. However, you have set up an object group titled Air Conditioners, and you have attached this group to all air conditioning objects. Therefore, you can quickly search for and identify all other air conditioning machines and use the template information from these objects to create service agreement lines for HIJ. By using object groups in this manner, you can quickly set up new objects and determine the service tasks that must be performed on them.
 
 ## Create service object groups
 
@@ -57,7 +39,7 @@ Create groups that you can assign service objects to. Service objects are invent
 
 To create service object groups, follow these steps:
 
-1. Go to **Service management > Setup > Service objects > Service object groups**.
+1. Go to **Service management** \> **Setup** \> **Service objects** \> **Service object groups**.
 
 2. Select **New** to create a new service object group.
 

@@ -82,7 +82,7 @@ If you're using landed cost, and goods-in-transit orders are enabled, the follow
 - Terms of delivery must be set on the purchase or transfer order header.
 - Additional goods-in-transit and under-delivery warehouses must be set up.
 
-Learn more in [Goods-in-transit processing](in-transit-processing.md).
+Learn more in [Goods-in-transit processing and receiving](in-transit-processing.md).
 
 If you're using landed cost, and enable goods-in-transit orders are *not* enabled, no additional warehouses must be configured. In addition, terms of delivery aren't required on the purchase or transfer order.
 
@@ -116,7 +116,7 @@ Learn more in [Estimate and manage landed costs](estimate-manage-landed-costs.md
 
 As part of the landed cost flow, the purchase or transfer order invoice must be posted. During this mandatory step, estimated landed costs are also posted. Learn more in [Estimate and manage landed costs](estimate-manage-landed-costs.md).
 
-For goods-in-transit-enabled orders, posting of the order invoice also generates a goods-in-transit order. Learn more in [Goods-in-transit processing](in-transit-processing.md).
+For goods-in-transit-enabled orders, posting of the order invoice also generates a goods-in-transit order. Learn more in [Goods-in-transit processing and receiving](in-transit-processing.md).
 
 ### Receive goods
 
@@ -130,7 +130,7 @@ Learn more in [Warehouse handling of inbound loads for purchase and inbound ship
 
 To receive goods when goods-in-transit orders are enabled, you can use transit-specific menu items in the warehouse mobile app. You can either post an arrival journal or receive the goods via the goods-in-transit order.
 
-Learn more in [Goods-in-transit processing](in-transit-processing.md).
+Learn more in [Goods-in-transit processing and receiving](in-transit-processing.md).
 
 #### Processing of over and under transactions
 
