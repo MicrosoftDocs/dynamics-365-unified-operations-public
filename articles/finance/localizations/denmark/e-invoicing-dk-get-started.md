@@ -41,7 +41,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Activate the integration between Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
 - In the Azure key vault, create the secret for the token that grants authorization to access the infrastructure of the provider of electronic document delivery service, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
 
-## Country/Region-specific configuration for the Danish electronic invoice (DK) feature
+## Country/Region specific configuration for the Danish electronic invoice (DK) feature
 
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
 
