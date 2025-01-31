@@ -15,9 +15,7 @@ audience: Application User
 
 ## Before you install
 
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in these regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
-
-Support for the following regions will be added by January 2025: India, Brazil, East Asia, UAE, Norway, South Africa, and Switzerland.
+Business performance analytics is generally available in public cloud the following countries and regions: APAC, Australia, Canada, EMEA, India, Japan, North America, Norway, South Africa, South America, Switzerland, United Arab Emirates, United Kingdom.
 
 ### System requirements
 
