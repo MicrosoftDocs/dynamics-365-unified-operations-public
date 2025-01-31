@@ -1,12 +1,12 @@
 ---
 title: Backflush costing
 description: Learn about the concept of backflush costing that is used for Lean manufacturing, including an outline on configuring backflush costing.
-author: prasungoel
-ms.author: prasungoel
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 ms.topic: how-to
-ms.date: 04/10/2017
+ms.date: 01/31/2025
 ms.custom: 
   - bap-template
 ---
@@ -77,7 +77,7 @@ The WIP model of Lean manufacturing lets you use the kanban handling unit status
 - **Assigned** - The kanban can have consumed material that is accounted in WIP.
 - **Received** - If the kanban refers to a last activity where **Update inventory on receipt** is set to *No*, it represents a full handling unit of a product or a semi-finished product that isn't registered to inventory.
 
-Note that material in WIP isn't visible in inventory on-hand overviews. However, it's visible in the kanban quantity overviews.
+Material in WIP isn't visible in inventory on-hand overviews. However, it's visible in the kanban quantity overviews.
 
 ## Consuming products in WIP
 
