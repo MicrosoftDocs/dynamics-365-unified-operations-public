@@ -65,6 +65,9 @@ To link Business performance analytics data to your organization's Fabric worksp
 
     > [!NOTE]
     > The workspace must be in the same Azure region as the Dataverse environment.
+    
+    > [!IMPORTANT]
+    > Ensure that you use the correct workspace ID. The workspace ID is the GUID found in the URL when you open the workspace. Do not use a workspace identity ID, as it is not the same and will cause issues with BPA linking, resulting in 'workspace not found' errors.
 
 5. Select **Connect**.
 
