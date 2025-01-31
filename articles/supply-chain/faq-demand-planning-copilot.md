@@ -66,7 +66,7 @@ When you use this feature, follow these recommendations:
 - Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Before you make decisions about modifications to the demand plan, always review and study the generated response, and compare it with actual demand plan data.
 
-### Related information
+## Related information
 
 - [Analyze demand plans with Copilot](demand-planning/demand-planning-copilot.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

@@ -3,11 +3,12 @@ title: Product identifiers
 description: Learn about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: how-to
-ms.date: 12/08/2022
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Product identifiers
@@ -34,7 +35,7 @@ The item number is the product identifier that is used by a specific legal entit
 
 Additionally, a product variant can't be uniquely identified by an item number. It always requires the combination of an item number and all the product dimensions that are defined on the product master. This requirement can become cumbersome and can slow down the identification processes. For this reason too, we recommend that you use the unique product number instead the item number whenever you can.
 
-Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** &gt; **Setup** &gt; **Search** &gt; **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to **Yes**, the lookup will show not only product masters but product variants. Learn more in [Search for products and product variants during order entry](search-products-product-variants.md).
+Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** \> **Setup** \> **Search** \> **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to *Yes*, the lookup will show not only product masters but product variants. Learn more in [Search for products and product variants during order entry](search-products-product-variants.md).
 
 Additionally, you'll be able to search and filter on the product number, the product name and description, and the product dimension IDs of the product variant. When you select a variant, the related item number and all product dimension IDs will be selected. Therefore, you can more easily find and select the correct variant. This setting is highly recommended if you use product variants and the unique product number as the primary identifiers for products. The only exception might be the fashion industry, where the business processes often require that you select the master before you select a variant. You should carefully evaluate this option before you implement the numbering system.
 
@@ -61,22 +62,22 @@ You can maintain the external product identifiers by released product, released 
 
 On the **Released products** page, follow one of these steps.
 
-- For customers, on the **Sell** tab, in the **Related information** group, select **External item description**.
-- For vendors, on the **Purchase** tab, in the **Related information** group, select **External item description**.
+- For customers, on the Action Pane, open the **Sell** tab and, in the **Related information** group, select **External item description**.
+- For vendors, on the Action Pane, open the **Purchase** tab and, in the **Related information** group, select **External item description**.
 
 On the **External item descriptions** page, you can associate the customer's or vendor's item number with a released product. This association must be done for each legal entity. The following information can be captured. Unfortunately, the labels are slightly misleading in the current version of Supply Chain Management. However, these labels might be changed in a future version.
 
 | Field | Corresponding customer information | Corresponding vendor information |
-|-------|------------------------------------|----------------------------------|
+|--|--|--|
 | External item number | The customer's item number | The vendor's item number |
 | Description | The name that the customer associates with the item | The name that the vendor associates with the item |
 | External item text | The customer's item description | The vendor's item description |
 
 If many customers or vendors use the same item numbers (as with a purchase association or a commerce group, for example), you can create groups of customer or vendors to simplify the maintenance of external product information.
 
-- For customer groups, go to **Sales** &gt; **Setup** &gt; **Items** &gt; **External item description** to create and maintain the groups and the related item numbers. To associate customers with a group, go to **Accounts receivable** &gt; **Customers** &gt; **All customers**, and then, on the **Sales order defaults** FastTab, specify a value in the **Item - customer group** field.
-- For vendor groups, go to **Procurement and sourcing** &gt; **Setup** &gt; **External item description group** to create and maintain the groups the related item numbers. To associate vendors with a group, go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**, and then, on the **Purchase order defaults** FastTab, specify a value in the **Item - vendor group** field.
- 
+- For customer groups, go to **Sales** \> **Setup** \> **Items** \> **External item description** to create and maintain the groups and the related item numbers. To associate customers with a group, go to **Accounts receivable** \> **Customers** \> **All customers**, and then, on the **Sales order defaults** FastTab, specify a value in the **Item - customer group** field.
+- For vendor groups, go to **Procurement and sourcing** \> **Setup** \> **External item description group** to create and maintain the groups the related item numbers. To associate vendors with a group, go to **Accounts payable** \> **Vendors** \> **All vendors**, and then, on the **Purchase order defaults** FastTab, specify a value in the **Item - vendor group** field.
+
 ## Bar codes
 
 If you want to use a bar code scanner to identify products, the product identifier must meet the requirements of the bar code standard that is used. Therefore, bar codes don't typically contain the raw product number but a number that is generated specifically for the selected bar code technology. You can maintain multiple bar codes by bar code type. You can even associate the same bar code with multiple products and then select the actual active association when you scan a bar code.
@@ -85,17 +86,17 @@ Before you define bar codes, you can define one or more bar code setups. The bar
 
 We recommend that you use the bar code setup to maintain Global Trade Item Number (GTIN) or International Article Number (EAN) codes.
 
-To maintain bar codes, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **Bar codes**.
+To maintain bar codes, on the **Released products** page Action Pane, open the **Manage inventory** tab and, in the **Warehouse** group, select **Bar codes**.
 
 ## GTIN codes
 
 In e-commerce, it's crucial that all parties speak a common language and refer to products by using a common set of identifiers. Therefore, some industries rely on the [GTIN](https://www.gs1.org/id-keys/gtin), which is a global item number system that is facilitated by GS1.
 
-We recommend that you maintain the GTIN as a bar code. However, you can also maintain it on the **Item - GTIN** page. To open this page, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**. The GTIN isn't maintained as a global number. Instead, it's maintained by legal entity.
+We recommend that you maintain the GTIN as a bar code. However, you can also maintain it on the **Item - GTIN** page. To open this page, on the **Released products** page Action Pane, open the **Manage inventory** tab and, in the **Warehouse** group, select **GTIN codes**. The GTIN isn't maintained as a global number. Instead, it's maintained by legal entity.
 
 In Supply Chain Management, you define packaging variants in the warehouse operations by defining specific units of measure. For example, an item might be stored in pieces, in bundles of six, in trays of 18, or in full pallets. A specific unit of measure will be defined for each of these packaging variants. Because the GTIN is typically related to the packaging unit of a product, the **Item - GTIN** page lets you maintain multiple GTIN codes per product and unit of measure. However, you can't use the same GTIN code more than one time for different items or product variants of a legal entity.
 
-To maintain **GTIN codes**, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN**.
+To maintain **GTIN codes**, on the **Released products** page Action Pane, open the **Manage inventory** tab and, in the **Warehouse** group, select **GTIN**.
 
 ## External codes
 
@@ -106,11 +107,11 @@ Unfortunately, there's no standard functionality that lets you search for produc
 ## Data entities that are used to import and export product identifiers
 
 | Entity name | Import identifiers | Export identifiers | Comments |
-|-------------|--------------------|--------------------|----------|
+|--|--|--|--|
 | Products V2 | Product number, product search name, product name, product description | Product number, product search name, product name, product description | Depending on the settings of the entity and the number sequence for the product number, the product number can be automatically created at the time of import. |
 | Product variants | Product number, product search name, product name, product description | Product number, product search name, product name, product description | Depending on the product nomenclature template, the product number can be automatically created at the time of import. However, you can import any unique product number, and that product number doesn't have to follow the structure of the product nomenclature templates. |
 | Product translations | Product name, product description | Product name, product description | This entity overwrites any language. When the name or description of a legal entity's primary language is overwritten, the name and description of the product itself is changed. |
-| Released product creation V2 | Item number, product number, item search name| Item number, product number, item search name, product search name, product name | This entity can be a challenge when number sequences are used during the creation of new released products. Both the **Item number** number sequence and the **Product number** number sequence have an influence. However, the **Item number** number sequence is per legal entity, whereas the **Product number** number sequence is global. Therefore, we don't recommend that you use the **Item number** number sequence when you deploy new released products. Obviously, when the entity is used to release an existing product, the product number must be given in the entity. For more information, see the "Product and item number sequences" section in this article. |
+| Released product creation V2 | Item number, product number, item search name | Item number, product number, item search name, product search name, product name | This entity can be a challenge when number sequences are used during the creation of new released products. Both the *Item number* number sequence and the *Product number* number sequence have an influence. However, the *Item number* number sequence is per legal entity, whereas the *Product number* number sequence is global. Therefore, we don't recommend that you use the *Item number* number sequence when you deploy new released products. Obviously, when the entity is used to release an existing product, the product number must be given in the entity. For more information, see the "Product and item number sequences" section in this article. |
 | Released product variants | Item number, product dimensions, product number | Product number, product search name, product name, product description, product dimensions | Like the **Product variants** entity, this entity can be used to create new products that either follow the product nomenclature template or use their own product numbers for the variant. |
 | External item description for customers | Customer item number, customer item name, customer description, customer account | Customer item number, customer item name, customer description, customer account | A group of customers (for example, a buyer association) can be aggregated into one group by using the **External item description customer groups** entity. |
 | External item description for vendors | Vendor item number, vendor item name, vendor description, vendor account | Vendor item number, vendor item name, vendor description, vendor account | A group of vendors (for example, a sales association or industry organization) can be aggregated into one group by using the **External item description vendor groups** entity. |
@@ -125,27 +126,27 @@ Unfortunately, there's no standard functionality that lets you search for produc
 
 You can define two different number sequences:
 
-- The **Product number** number sequence for the global product number
-- The **Item number** number sequence for the item number per legal entity
+- The *Product number* number sequence for the global product number
+- The *Item number* number sequence for the item number per legal entity
 
 > [!NOTE]
-> You should use the item number as a separate identifier only when you migrate different legal entities from different sources that had different numbering systems. You should always try to use a product identifier that is unique across all legal entities. Therefore, you should set the **Manual** option to **Yes** for the **Item number** number sequence. In this way, the item number will follow the product number on creation. If Supply Chain Management isn't the leading system for new product numbers, you should set the **Manual** option to **Yes** for both the **Item number** and **Product number** number sequences.
+> You should use the item number as a separate identifier only when you migrate different legal entities from different sources that had different numbering systems. You should always try to use a product identifier that is unique across all legal entities. Therefore, you should set the **Manual** option to *Yes* for the *Item number* number sequence. In this way, the item number will follow the product number on creation. If Supply Chain Management isn't the leading system for new product numbers, you should set the **Manual** option to *Yes* for both the *Item number* and *Product number* number sequences.
 
 When you use the **Released product creation V2** entity to create products, multiple settings can affect how the number sequences are used to create the product number and item number:
 
-- Settings of the **Product number** number sequence
-- Settings of the **Item number** number sequence
-- The mapping of the item number 
+- Settings of the *Product number* number sequence
+- Settings of the *Item number* number sequence
+- The mapping of the item number
 - The mapping of the product number
 
 The following table provides an overview of the results of import and manual creation when specific combinations of the number sequence and field mapping settings.
 
 | Product number number sequence | Item number number sequence | Mapping of the item number | Mapping of the product number | Result of entity import | Result of manual creation | Conclusion |
-|--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manual = No | Manual = No | No mapping | No mapping | Product numbers use the **Product number** number sequence. Item numbers use the **Item number** number sequence. | Product numbers use the **Product number** number sequence. Item numbers use the **Item number** number sequence. | With this configuration, product numbers will follow the product number sequence and item numbers will follow the item number sequence. However, this configuration won't work if there's more than one item (row) to be imported. |
-| Manual = No | Manual = Yes | Auto generate | No mapping | Both product numbers and item numbers use the **Item number** number sequence. | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers will follow the product number sequence. This is the recommended approach to import bulk products with the Released product creation V2 data entity.<br><br>You can only use this approach when bulk importing items (several rows) and when you aren't creating items through the user interface. If you need both to bulk import and to create products through the user interface, use the procedure in the next row of this table instead. To transition from using a bulk import approach to using the user interface to manually, import and create products, you must manually adjust the **Next number** in the item number number sequence to match the **Next number** in the product number number sequence. Then you could switch to the approach in the next row of this table. |
-| Manual = No | Manual = Yes | No mapping | No mapping | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers will use the product number sequence. However, this configuration won't work if there's more than one item (row) to be imported.<br><br>You must use this approach if you need both to import products using the entities (only one row can be imported at a time) and to create products through the user interface. |
-| Manual = Yes | Not applicable | Not applicable | Auto generate | You receive the following error message: "Number sequence can't be detected." | According to the **Item number** number sequence | This setting isn't supported for import. |
+|--|--|--|--|--|--|--|
+| Manual = No | Manual = No | No mapping | No mapping | Product numbers use the *Product number* number sequence. Item numbers use the *Item number* number sequence. | Product numbers use the *Product number* number sequence. Item numbers use the *Item number* number sequence. | With this configuration, product numbers will follow the product number sequence and item numbers will follow the item number sequence. However, this configuration won't work if there's more than one item (row) to be imported. |
+| Manual = No | Manual = Yes | Auto generate | No mapping | Both product numbers and item numbers use the *Item number* number sequence. | Both product numbers and item numbers use the *Product number* number sequence. | Both product numbers and item numbers will follow the product number sequence. This is the recommended approach to import bulk products with the Released product creation V2 data entity.<br><br>You can only use this approach when bulk importing items (several rows) and when you aren't creating items through the user interface. If you need both to bulk import and to create products through the user interface, use the procedure in the next row of this table instead. To transition from using a bulk import approach to using the user interface to manually, import and create products, you must manually adjust the **Next number** in the item number number sequence to match the **Next number** in the product number number sequence. Then you could switch to the approach in the next row of this table. |
+| Manual = No | Manual = Yes | No mapping | No mapping | Both product numbers and item numbers use the *Product number* number sequence. | Both product numbers and item numbers use the *Product number* number sequence. | Both product numbers and item numbers will use the product number sequence. However, this configuration won't work if there's more than one item (row) to be imported.<br><br>You must use this approach if you need both to import products using the entities (only one row can be imported at a time) and to create products through the user interface. |
+| Manual = Yes | Not applicable | Not applicable | Auto generate | You receive the following error message: "Number sequence can't be detected." | According to the *Item number* number sequence | This setting isn't supported for import. |
 
 ## Product entity identifier (Export all product identifiers)
 
@@ -159,7 +160,7 @@ Follow these steps to configure the environment.
 
 1. Select the category hierarchy for Dataverse. On the **Category hierarchy role associations** page, if no hierarchy is associated with the **Common data service** role, you must create a new association. Select the **Common data service** role, and then associate the category hierarchy that represents the product portfolio that should be synchronized to Dataverse.
 2. Select the legal entity for global product master data. On the **Product information management parameters** page, on the **Product attributes** tab, select the master company where the product and item identifiers are primarily maintained.
-3. Define the identifier code types and codes that should be exported. Go to **Product information management** &gt; **Setup** &gt; **Product identifier codes**. To generate the identifier code types, select **Generate codes**. A code type entry is generated for each type for identifier that is found in the selected legal entity.
+3. Define the identifier code types and codes that should be exported. Go to **Product information management** \> **Setup** \> **Product identifier codes**. To generate the identifier code types, select **Generate codes**. A code type entry is generated for each type for identifier that is found in the selected legal entity.
 
     For bar codes, a code type is generated for each bar code setup. For external codes, a code type is generated for each external code class.
 
@@ -169,8 +170,8 @@ Follow these steps to configure the environment.
 
 You can now use the **Product entity common data service identifier entity**, **Product entity identifier code**, and **Product entity identifier scope** data entities to export the identifiers for any target system.
 
-## Related article
+## Related information
 
-[Search for products and product variants during order entry](search-products-product-variants.md)
+- [Search for products and product variants during order entry](search-products-product-variants.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
