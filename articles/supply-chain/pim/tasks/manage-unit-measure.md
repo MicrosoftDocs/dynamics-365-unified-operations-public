@@ -3,11 +3,12 @@ title: Manage units of measure
 description: Learn how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: how-to
-ms.date: 12/08/2022
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Manage units of measure
@@ -18,7 +19,7 @@ This article describes how to define a unit of measure, provide translations for
 
 ## Open the Units page
 
-To create and work with the units of measure that are available in your system, go to **Organization administration \> Setup \> Units \> Units**.
+To create and work with the units of measure that are available in your system, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 
 The remaining sections of this article describe what you can do on the **Units** page.
 
