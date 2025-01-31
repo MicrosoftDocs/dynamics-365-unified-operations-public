@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Privileged user management lets system administrators schedule a session for selected user accounts. All user interactions are recorded in Dynamics 365 finance and operations apps during that session, if the user decides to continue using Dynamics 365 finance and operations after reading the consent on the landing page. This feature is useful when some elevated privileged accounts are used for auditing purposes. It helps ensure that users aren't performing any unauthorized activities in the system and keeps a recording of it, in case it is later needed for audit or compliance reviews.
+Privileged user management lets system administrators schedule a session for selected user accounts. All user interactions are recorded in Dynamics 365 finance and operations apps during that session, if the user decides to continue using Dynamics 365 finance and operations after reading the consent on the landing page. This feature is useful when some elevated privileged accounts are used for auditing purposes. It helps ensure that users aren't performing any unauthorized activities in the system and keeps a recording of it, in case it's later needed for audit or compliance reviews.
 
 System administrators can choose to enable or disable the given user account once the session begins. As soon as the session ends, the account returns to its original state.
 
@@ -56,9 +56,9 @@ The **User log** captures all the sessions where the selected user account signs
 
 ## Recordings
 
-When a system administrator schedules a privileged user session for a user account, they are immediately presented with a notice that the Task recorder utility will be used to record the user's user interface  interactions in finance and operations apps. If system administrator decides to proceed with setting up the session for a particular user, they are agreeing to record the selected user's session in the finance and operations app. Task recorder captures the type of user action (for example, button selection, value entry, or navigation). It also captures any data that is related to that action.
+When a system administrator schedules a privileged user session for a user account, they're immediately presented with a notice that the Task recorder utility will be used to record the user's user interface  interactions in finance and operations apps. If system administrator decides to proceed with setting up the session for a particular user, they're agreeing to record the selected user's session in the finance and operations app. Task recorder captures the type of user action (for example, button selection, value entry, or navigation). It also captures any data that is related to that action.
 
-When system users who are assigned to a privileged user session sign into finance and operations apps, they are immediately presented with a consent message at the top of the page. After reading the consent message, if they decided to continue the session, it's consent and as they use the apps, the session is recorded. If they don't agree with the consent, they must immediately close the application.
+When system users who are assigned to a privileged user session sign into finance and operations apps, they are immediately presented with a consent message at the top of the page. After reading the consent message, if they decided to continue the session, it's agreeing to the consent and the session is recorded. If they don't agree with the consent, they must immediately close the application.
 
 A separate recording is created for each session. The recordings are stored on the **Recordings** tab of the **Privileged user management** page and all recordings exist until manually deleted by system administrator. System administrators can download each recording by selecting it and then selecting **Download**. This capability is helpful when audits or compliance reviews must be done for a user's interactions.
 
