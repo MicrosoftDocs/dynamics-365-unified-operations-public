@@ -73,6 +73,6 @@ The *Analyze demand plans with Copilot* feature is on by default. Follow these s
 1. In the dropdown list, select *Yes* to enable the feature for the current environment, or select *No* to disable it.
 1. Select **Save**.
 
-### Related information
+## Related information
 
 - [Responsible AI FAQ for Analyze demand plans with Copilot](../faq-demand-planning-copilot.md)
