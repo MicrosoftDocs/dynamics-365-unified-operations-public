@@ -227,9 +227,12 @@ When a new release of Business performance analytics is available, you can updat
 2. In your environment, go to **Installed apps**.
 3. Select **Update available**.
 
-### During public preview, what can I expect each time that data is restored from production to sandbox?
+### Why does Data Lake storage consumption grow steadily while using BPA, and what solutions are being implemented to address this issue?
+Some customers may observe that Data Lake storage consumption grows steadily more often than others due to operating on significant amounts of data, while others may never experience this issue. This happens because older BPA releases rely on staging-table references that block file deletion, causing multiple transform output files to accumulate over time. The BPA engineering team proactively checks for potential capacity concerns every two weeks and intervenes to remove old temporary files if usage approaches critical thresholds. Customers must open a support incident upon noticing storage constraints for more frequent manual cleanup by Microsoft engineers.
 
-As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics. Any new data changes done in the Dynamics 365 finance and operations apps UI can still be seen in Business performance analytics. The preceding limitation is only for changes via data movement from production to sandbox.
+In the BPA January 2025 update, a routine is introduced which removes staging file dependencies and implements a 3-day retention policy to regularly clear older files. After upgrading to BPA version 2.0.29241185 or later, Microsoft will enable the auto-cleanup flight in each environment, drastically reducing reliance on manual cleanup processes. The solution for this issue is the latest BPA update, making automatic purging a regular process and minimizing manual interventions.
+
+> [!IMPORTANT] Customers affected by storage capacity growth after completing the update to BPA version 2.0.29241185 or later should create a Support Request with a request to enable the temporary files cleanup routine for their environment.
 
 ### How do I receive the latest news about Business performance analytics?
 
