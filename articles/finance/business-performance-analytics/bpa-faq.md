@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 12/16/2024
+ms.date: 02/03/2025
 ---
 
 # Business performance analytics FAQ
@@ -227,12 +227,13 @@ When a new release of Business performance analytics is available, you can updat
 2. In your environment, go to **Installed apps**.
 3. Select **Update available**.
 
-### Why does Data Lake storage consumption grow steadily while using BPA, and what solutions are being implemented to address this issue?
-Some customers may observe that Data Lake storage consumption grows steadily more often than others due to operating on significant amounts of data, while others may never experience this issue. This happens because older BPA releases rely on staging-table references that block file deletion, causing multiple transform output files to accumulate over time. The BPA engineering team proactively checks for potential capacity concerns every two weeks and intervenes to remove old temporary files if usage approaches critical thresholds. Customers must open a support incident upon noticing storage constraints for more frequent manual cleanup by Microsoft engineers.
+### Why does Data Lake storage consumption grow steadily while using Business performance analytics, and what solutions are being implemented to address this issue?
+Some customers may observe that Data Lake storage consumption grows steadily more often than others due to operating on significant amounts of data, while others may never experience this issue. This happens because older Business performance analytics releases rely on staging-table references that block file deletion, causing multiple transform output files to accumulate over time. The Business performance analytics engineering team proactively checks for potential capacity concerns every two weeks and intervenes to remove old temporary files if usage approaches critical thresholds. Customers must open a support incident upon noticing storage constraints for more frequent manual cleanup by Microsoft engineers.
 
-In the BPA January 2025 update, a routine is introduced which removes staging file dependencies and implements a 3-day retention policy to regularly clear older files. After upgrading to BPA version 2.0.29241185 or later, Microsoft will enable the auto-cleanup flight in each environment, drastically reducing reliance on manual cleanup processes. The solution for this issue is the latest BPA update, making automatic purging a regular process and minimizing manual interventions.
+In the Business performance analytics January 2025 update, a routine is introduced which removes staging file dependencies and implements a 3-day retention policy to regularly clear older files. After upgrading to Business performance analytics version 2.0.29241185 or later, Microsoft enables the auto-cleanup flight in each environment, drastically reducing reliance on manual cleanup processes. 
 
-> [!IMPORTANT] Customers affected by storage capacity growth after completing the update to BPA version 2.0.29241185 or later should create a Support Request with a request to enable the temporary files cleanup routine for their environment.
+> [!IMPORTANT]
+> Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
 
 ### How do I receive the latest news about Business performance analytics?
 
