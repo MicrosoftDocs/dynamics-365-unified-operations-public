@@ -5,7 +5,7 @@ description: This article explains how to link your Business performance analyti
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 8/28/2024
+ms.date: 2/03/2025
 ms.topic: article
 ms.custom:
 ms.search.form: business-performance-analytics
@@ -67,7 +67,7 @@ To link Business performance analytics data to your organization's Fabric worksp
     > The workspace must be in the same Azure region as the Dataverse environment.
     
     > [!IMPORTANT]
-    > Ensure that you use the correct workspace ID. The workspace ID is the GUID found in the URL when you open the workspace. Do not use a workspace identity ID, as it is not the same and will cause issues with BPA linking, resulting in 'workspace not found' errors.
+    > Confirm that you're using the correct workspace ID. The workspace ID is the GUID found in the URL when you open the workspace. Don't use a workspace identity ID, as it's not the same and causes issues with Business performance analytics linking and results in **Workspace not found** errors.
 
 5. Select **Connect**.
 
