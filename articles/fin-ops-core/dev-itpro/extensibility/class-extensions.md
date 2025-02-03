@@ -1,12 +1,12 @@
 ---
 title: Class extension model in X++
-description: Learn about the new class extension model in X++, including overviews on the effective class concept and extension class variations.
+description: Learn about the class extension model in X++, including overviews on the effective class concept and extension class variations.
 author: pvillads
 ms.author: pvillads
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/13/2024
+ms.date: 02/03/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
@@ -22,7 +22,7 @@ This article describes the class extension model in X++.
 
 Extension is a term used for features that let you extend existing artifacts in a new model. There are rich ways to extend the both X++ code and metadata. This article describes how X++ code can be extended, so that you can add methods and state to artifacts that are defined in other models without recompiling those models. 
 
-A similar code extension mechanism already exists for X++ and is modeled after the corresponding feature in C\#. This extension mechanism allows a class to be designated as an extension class through a naming convention and by hosting public static methods. These classes are a programming utility concept that allows you to add methods to existing types, namely the type of the first parameter to the extension method. In this way, the method is "extending" the new class with a method that it was not born with. This article describes the next step in that direction, which offers a more capable and natural extension story. In object-oriented programming, the term *extend* has a well-defined meaning. When we say, "class B extends class A," we mean that B inherits from A, that A is B's parent class, and the usual object-oriented rules are implied. In fact, this term is even used in the X++ syntax that is used in class declarations to express this relationship. At the same time, we use the term *extension* to talk about metadata that has contributions from several models. To avoid further overloading the term *extend*, we will instead use the term *class augmentation* to designate the relationship between a class A in a base model and a class B in a model that depends on it, where B provides additional functionality to class A in the context of that model. Nevertheless, we will also continue to use the term *extension class*, because it is so prevalent.
+A similar code extension mechanism already exists for X++ and is modeled after the corresponding feature in C\#. This extension mechanism allows a class to be designated as an extension class through a naming convention and by hosting public static methods. These classes are a programming utility concept that allows you to add methods to existing types, namely the type of the first parameter to the extension method. In this way, the method is "extending" the new class with a method that it didn't originally have. This article describes the next step that offers a more capable and natural extension story. In object-oriented programming, the term *extend* has a well-defined meaning. When we say, "class B extends class A," we mean that B inherits from A, that A is B's parent class, and the usual object-oriented rules are implied. In fact, this term is even used in the X++ syntax that is used in class declarations to express this relationship. The term *extension* can describe metadata that has contributions from several models. To avoid further overloading the term *extend*, the *class augmentation* term is used to designate the relationship between a class A in a base model and a class B in a model that depends on it, where B provides additional functionality to class A in the context of that model. We'll continue to use the term *extension class*, because it is so prevalent.
 
 ## The effective class concept
 It's useful to have a term for a class that consists of the public members of the augmented artifact and all the public members of all the class extensions that augment that artifact. This class is called the effective class in a given model. The following illustration shows an artifact, **MyArtifact**, that is defined in a base model, **MyModel**, and two dependent models that have extension classes for **MyArtifact**.
@@ -72,7 +72,7 @@ Any number of extension classes can augment a given artifact in a particular mod
 Any class that inherits from an augmented class also inherits the effective class. In other words, the classes that inherit from a class that has extensions inherit the methods that are defined in the extension classes.
 
 ## Constructors
-Pleae find below a description of restrictions and requirements for constructors in extension classes.
+Below is a description of restrictions and requirements for constructors in extension classes.
 
 ### Instance constructors
 
