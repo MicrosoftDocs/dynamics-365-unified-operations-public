@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/onprem-remove-reinstall-AOS-node.md",
+      "redirect_url": "/dynamics365//fin-ops-core/dev-itpro/deployment/onprem-add-remove-node.md",
+      "redirect_document_id": "false"
+    },    
+    {
       "source_path": "articles/finance/localizations/apac/apac-aus-nzl-electronic-invoices.md",
       "redirect_url": "/dynamics365/finance/localizations/apac/gs-apac-aus-nzl-electronic-invoices",
       "redirect_document_id": "false"
