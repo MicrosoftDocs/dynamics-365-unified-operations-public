@@ -1,11 +1,11 @@
 ---
 # required metadata
 title: Updating Service Fabric clusters for Microsoft Dynamics 365 Finance and Operations (on-premises) environments
-description: Learn how to add or remove a node to your existing Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
+description: Learn how to update your Service Fabric cluster for Microsoft Dynamics 365 Finance and Operations (on-premises) environments.
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 01/30/2025
+ms.date: 02/03/2025
 ms.custom:
 ms.reviewer: 
 audience: IT Pro
