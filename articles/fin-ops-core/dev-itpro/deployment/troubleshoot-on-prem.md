@@ -1262,7 +1262,7 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 
 You might receive the following error:
 
-> Updates to existing credential with KeyId '\<key\>' is not allowed
+> Updates to existing credential with KeyId '\<key\>' isn't allowed.
 
 The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.
 
