@@ -390,7 +390,7 @@ After the commands have been run, restart your AOS nodes from Service Fabric Exp
 > [!WARNING]
 > Make sure that the old data encryption certificate isn't removed before all encrypted data has been re-encrypted, and that it hasn't expired. Otherwise, data might be lost.
 
-## <a name="appendix-b"></a>Appendix A
+## <a name="appendix-a"></a>Appendix A
 
 Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations as the Service Fabric cluster automatically switches to using new certificates once they're available in the machine. Service Fabric won't accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names, see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
 

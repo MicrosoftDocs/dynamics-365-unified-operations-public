@@ -1,11 +1,11 @@
 ---
 # required metadata
 title: Updating Service Fabric clusters for Microsoft Dynamics 365 Finance and Operations (on-premises) environments
-description: Learn how to add or remove a node to your existing Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
+description: Learn how to update your Service Fabric cluster for Microsoft Dynamics 365 Finance and Operations (on-premises) environments.
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 01/30/2025
+ms.date: 02/03/2025
 ms.custom:
 ms.reviewer: 
 audience: IT Pro
@@ -40,16 +40,16 @@ To update the Service Fabric runtime for your cluster, follow these steps:
     ```
 
     > [!NOTE]
-    > If your cluster has heavily restricted outbound internet access, you might not have the runtime pre-downloaded. In this case, please follow the steps in [Upgrade clusters that have no connectivity to download the latest code and configuration](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server#upgrade-clusters-that-have-no-connectivity-to-download-the-latest-code-and-configuration) before proceeding.
+    > If your cluster has heavily restricted outbound internet access, you might not have the runtime predownloaded. In this case, follow the steps in [Upgrade clusters that have no connectivity to download the latest code and configuration](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server#upgrade-clusters-that-have-no-connectivity-to-download-the-latest-code-and-configuration) before proceeding.
 
-1. The command above will return a list of available Service Fabric runtime versions. To update the cluster to a specific version, run the following command:
+1. The command above returns a list of available Service Fabric runtime versions. To update the cluster to a specific version, run the following command:
 
     ```powershell
     # Update the Service Fabric runtime version
     Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion <version> -Monitored -FailureAction Rollback
     ```
 
-1. (optional) If your cluster has a single node for any node type, you can use the following command to skip the PreUpgradeSafetyCheck check, which can cause a timeout:
+1. (optional) If your cluster has a single node for any node type, you can use the following command to skip the PreUpgradeSafetyCheck check, which can cause a time out:
 
     ```powershell
     # If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
@@ -73,7 +73,7 @@ Connect-ServiceFabricCluster
 # Start the cluster configuration upgrade with the new configuration file
 Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
 
-# If you have a node type with a single node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
+# If you have a node type with a single node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will time out
 Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
 
 # To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout

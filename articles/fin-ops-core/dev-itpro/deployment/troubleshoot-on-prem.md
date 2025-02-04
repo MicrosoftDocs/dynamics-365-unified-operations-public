@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 02/03/2025
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
@@ -956,7 +956,7 @@ After you have the network log, you can analyze the claims that are returned to 
     >
     > ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
 
-1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken)
+1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken).
 1. Paste the value of the **id_token** parameter in the **Encoded JWT Token** field. It's automatically decoded.
 1. Check the results in the Payload: Data and Claims section, and follow these steps:
 
@@ -1189,7 +1189,7 @@ Follow these steps to configure the local agent with the updated tenant.
 
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
+    ``` 
 
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
@@ -1262,7 +1262,7 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 
 You might receive the following error:
 
-> Updates to existing credential with KeyId '\<key\>' is not allowed
+> Updates to existing credential with KeyId '\<key\>' isn't allowed.
 
 The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.
 

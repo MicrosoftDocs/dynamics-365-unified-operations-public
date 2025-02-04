@@ -5,7 +5,7 @@ description: Learn how to add or remove a node to your existing Microsoft Dynami
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 01/30/2025
+ms.date: 02/03/2025
 ms.custom:
 ms.reviewer: 
 audience: IT Pro
@@ -26,7 +26,7 @@ This article goes over how to add or remove a node from your existing Microsoft 
 
 To add a node or nodes to your existing environment, follow these steps:
 
-1. Ensure that you download the latest infrastructure scripts. For information, see [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts). You will need at least version 2.23.0 of the scripts to carry out these steps.
+1. Ensure that you download the latest infrastructure scripts. For information, see [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts). You need at least version 2.23.0 of the scripts to carry out these steps.
 
 1. Update the ConfigTemplate.xml file with the new node information.
 
@@ -36,7 +36,7 @@ To add a node or nodes to your existing environment, follow these steps:
     .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -AddNodeTypes
     ```
 
-1. If the previous command generates a configuration file and does not state that all node types already exist in the cluster you will have to update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
+1. If the previous command generates a configuration file and doesn't state that all node types already exist in the cluster you'll have to update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 1. Run the following commands to generate the prerequisites for the new node:
 
@@ -101,7 +101,7 @@ To remove a node or nodes from your existing environment, follow these steps:
 
 1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
-1. Once the Service Fabric cluster configuration has been updated, you have to cleanup the nodes from the cluster configuration:
+1. Once the Service Fabric cluster configuration has been updated, you have to clean up the nodes from the cluster configuration:
     ```powershell
     .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CleanupRemoveNode
     ```
