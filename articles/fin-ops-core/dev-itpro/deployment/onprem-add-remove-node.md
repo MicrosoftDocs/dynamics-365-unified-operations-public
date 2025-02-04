@@ -64,6 +64,12 @@ To add a node or nodes to your existing environment, follow these steps:
     .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
+1. Validate that your node meets all prerequisites by running the following command:
+
+    ```powershell
+    .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
 1. Run the following command to add the new node to the Service Fabric cluster. This command should be run from an existing node in the cluster:
 
     ```powershell
@@ -71,6 +77,8 @@ To add a node or nodes to your existing environment, follow these steps:
     ```
     > [!NOTE]
     > The command above should be run once for each new node that you want to add to the cluster.
+
+1. Wait for all the nodes to be added to the cluster and for any services to be deployed to the new nodes.
 
 1. Run the following command to generate an updated cluster configuration file:
 
