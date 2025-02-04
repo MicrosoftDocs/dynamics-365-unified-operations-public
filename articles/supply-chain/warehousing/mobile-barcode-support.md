@@ -8,7 +8,6 @@ ms.date: 05/30/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: BarcodeSetup  
 ---
 

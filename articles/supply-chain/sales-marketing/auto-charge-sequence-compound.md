@@ -1,14 +1,12 @@
 ---
 title: Auto charge compounding and sequencing
 description: Advanced auto charges let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 10/31/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: MarkupAutoSetup, CustParameters, SalesTableListPage, SalesTable, MarkupTrans, SalesTotals
 ---
 
@@ -336,7 +334,7 @@ The following example shows the effects of the **Combine charges on combined inv
 
 ## Pricing management
 
-The features that are described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search for auto charges. Therefore, it also changes some of the behavior that's described in this article. When the **Pricing management** module is [enabled](../pricing-management/pricing-management-enable.md), charges that are set up at **Accounts receivable** \> **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** \> **During-sales pricing** \> **Charges setup** \> **Auto charges**.
+The features that are described in this article work together with the [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). Pricing management introduces changes to the setup and search for auto charges. Therefore, it also changes some of the behavior that's described in this article. When the Unified pricing management module is [enabled](../unified-pricing-management/upm-pricing-management-enable.md), charges that are set up at **Accounts receivable** \> **Charges setup** don't apply. Instead, only charges that are set up on the auto charges page that's specific to the **Pricing management** module apply to sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management** \> **During-sales pricing** \> **Charges setup** \> **Auto charges**.
 
 ## Limitations
 

@@ -59,7 +59,7 @@ Electronic reporting (ER) is the tool that you use to configure electronic docum
 To learn more, see the following topics:
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
-- [MManage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 
 ## Financial reporting

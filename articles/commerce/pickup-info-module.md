@@ -2,16 +2,15 @@
 title: Pickup information module
 description: This article covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/06/2020
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2020-09021
-ms.dyn365.ops.version: Release 10.0.15
-ms.search.industry: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Pickup information module

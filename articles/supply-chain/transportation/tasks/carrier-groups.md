@@ -1,18 +1,13 @@
 --- 
 title: Carrier groups
 description: Learn how to set up data for carrier groups, which are collections of shipping carriers and carrier services, included a step-by-step process.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 10/30/2020
 ms.custom:
 ms.reviewer: kamaybac    
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-10-30
 ms.search.form: TMSCarrierGroup 
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Carrier groups

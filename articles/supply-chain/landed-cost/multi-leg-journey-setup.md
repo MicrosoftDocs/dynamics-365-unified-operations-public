@@ -1,17 +1,14 @@
 ---
 title: Multi-leg journey setup
 description: Learn how to set up multi-leg journeys for the Landed cost module, including an outline on legs and a table that defines various fields.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 12/04/2020
-ms.custom:
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-12-04
 ms.search.form: ITMLegTable, ITMJourneyTable, ITMActivityTable
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Multi-leg journey setup
@@ -22,7 +19,7 @@ This article describes how to set up multi-leg journeys for the **Landed cost** 
 
 ## Legs
 
-Legs are used to identify separate parts of a journey. Each leg is built by selecting the "to" and "from" shipping ports, and the transportation method that is used for that leg. Lead times can be associated with each leg. Lead times can help track a shipment and can also be used to calculate the estimated delivery date of the goods on a voyage. Additionally, when a leg of a journey is completed, the status of the voyage, shipping container, and associated purchase order lines can be updated through the tracking control setup. Legs can be used by a single journey template, or they can be reused by multiple journey templates. Container loading, customs, and local transport are generally set up as legs, and a non-specific shipping port is used for them.
+Legs are used to identify separate parts of a journey. Each leg is built by selecting the "to" and "from" shipping ports, and the transportation method that is used for that leg. Lead times can be associated with each leg. Lead times can help track a shipment and can also be used to calculate the estimated delivery date of the goods on a voyage. Additionally, when a leg of a journey is completed, the status of the voyage, shipping container, and associated purchase order lines can be updated through the tracking control setup. Legs can be used by a single journey template, or they can be reused by multiple journey templates. Container loading, customs, and local transport are generally set up as legs, and a nonspecific shipping port is used for them.
 
 To work with legs, go to **Landed cost \> Multi-leg journey setup \> Legs**. There, you can view, open, create, and delete records for legs. The following table describes the fields that are available for each record.
 

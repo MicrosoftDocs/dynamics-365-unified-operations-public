@@ -3,29 +3,27 @@ title: Buffer profile and levels
 description: Learn about buffer profiles and levels, which determine the minimum and maximum stock levels that should be kept for each decoupling point.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
-ms.date: 06/30/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-06-30
 ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
-ms.dyn365.ops.version: 10.0.28
+ms.topic: conceptual
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Buffer profile and levels
 
 [!include [banner](../../includes/banner.md)]
 
-After you've identified your decoupling points (key items that you will strategically keep in stock), you must decide how much stock (buffer) you will keep at each of them. This task is the second step of Demand Driven Materials Resource Planning (DDMRP).
+After you've identified your decoupling points (key items that you'll strategically keep in stock), you must decide how much stock (buffer) you'll keep at each of them. This task is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
 ## Buffer levels and zones
 
 In DDMRP, each stock buffer is defined by using three values: the minimum quantity, the maximum quantity, and the reorder point. These values establish three difference zones, which are identified by the following color codes:
 
 - **Red zone** – The area below the minimum quantity. The minimum quantity is also referred to as "top of red," and your planning strategy should be designed to ensure that stock levels are always above this point.
-- **Yellow zone** – The area between the minimum quantity and the reorder point. The reorder point is also referred to as "top of yellow". When this point is reached, the system should reorder.
-- **Green zone** – The area between the reorder point and the maximum quantity. The maximum quantity is also referred to as "top of green". This point is the maximum level that the stock will be replenished to.
+- **Yellow zone** – The area between the minimum quantity and the reorder point. The reorder point is also referred to as "top of yellow." When this point is reached, the system should reorder.
+- **Green zone** – The area between the reorder point and the maximum quantity. The maximum quantity is also referred to as "top of green." This point is the maximum level that the stock will be replenished to.
 
 The following illustration shows the three colored zones and how they relate to the minimum quantity, maximum quantity, and reorder point.
 
@@ -116,7 +114,7 @@ The first factor is the *lead time factor*. The value is a decimal value from 0 
 - **Medium lead time:** 0.41–0.60
 - **Short lead time:** 0.61–1.00
 
-The second factor is the *variability factor*. The value is a decimal value from 0 to 1. The higher the demand variability is, the lower the value should be. The Demand Driven Institute recommends the following ranges:
+The second factor is the *variability factor*. The value is a decimal value from 0 to 1. The higher the demand variability is, the higher the value should be. The Demand Driven Institute recommends the following ranges:
 
 - **Low variability:** 0.20–0.40
 - **Medium variability:** 0.41–0.60
@@ -144,7 +142,7 @@ The system will round the red zone to 104 pieces (ea), because pieces are counte
 
 ![Example of red zone calculation.](media/ddmrp-example-calc-red.png "Example of red zone calculation")
 
-The green zone calculation also includes the components from the yellow zone equation, but it allows for a minimum order size, order cycle, and lead time factor. For this example, assume that there is no order cycle (therefore, you don't have any time constraints about how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
+The green zone calculation also includes the components from the yellow zone equation, but it allows for a minimum order size, order cycle, and lead time factor. For this example, assume that there's no order cycle (therefore, you don't have any time constraints about how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
 
 - *Minimum order quantity* = 10
 - *ADU* × *Order cycle* = 0
@@ -160,11 +158,11 @@ The following illustration summarizes these zone calculation results by using th
 
 ## <a name="dynamic-adjustments"></a>Dynamic adjustments
 
-Dynamic adjustments let you apply a *demand adjustment factor* during periods of high or low demand. This factor multiplies the ADU in all calculations for the selected period. The buffer zones are then modified in turn. You will usually apply this factor after you generate your initial buffer values, so that you can fine-tune them over time and in response to changing conditions. This task is the third step of DDMRP.
+Dynamic adjustments let you apply a *demand adjustment factor* during periods of high or low demand. This factor multiplies the ADU in all calculations for the selected period. The buffer zones are then modified in turn. You'll usually apply this factor after you generate your initial buffer values, so that you can fine-tune them over time and in response to changing conditions. This task is the third step of DDMRP.
 
 For example, there might be more demand for a pillow product in August as people head out on vacation. Therefore, sales are expected to be higher. In this case, you can change the **Demand adjustment factor** value for the product to *1.5* for all the weeks in August.
 
-In this way, you can calculate buffer values over time and then adjust them based on more than just the information that the system has. In a full DDMRP implementation, you will calculate new buffer values every day through a batch job and automatically accept the values. You will then run planning as a batch job and review the planned orders every day to refill the buffers.
+In this way, you can calculate buffer values over time and then adjust them based on more than just the information that the system has. In a full DDMRP implementation, you will calculate new buffer values every day through a batch job and automatically accept the values. You'll then run planning as a batch job and review the planned orders every day to refill the buffers.
 
 ## Implement buffers in Supply Chain Management
 
@@ -175,7 +173,7 @@ This section describes how to implement your buffer zone strategy in Microsoft D
 Follow these steps to set up buffer values for a decoupling point.
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Select a released item that is set up as a decoupling point. (For more information, see [Inventory positioning](ddmrp-inventory-positioning.md).)
+1. Select a released item that is set up as a decoupling point. (Learn more in [Inventory positioning](ddmrp-inventory-positioning.md).)
 1. On the Action Pane, on the **Plan** tab, select **Item coverage**.
 1. On the **Item coverage** page, select an item coverage record that creates a decoupling point. (This record will show the name of a coverage group that is set up to create decoupling points.)
 1. Select the **General** tab.
@@ -193,13 +191,13 @@ Follow these steps to set up buffer values for a decoupling point.
 
     - **Order cycle** – Specify the number of days that must pass between purchase orders for the item. Set the value to *0* (zero) if no order restrictions exist. This field affects the maximum quantity buffer, as previously discussed in this article.
     - **Average daily usage** – You can optionally enter an estimated ADU for the item. This field is for informational purposes only. Usually, the value is automatically calculated as part of the buffer calculations.
-    - **Order spike threshold** – Specify the minimum number of daily sales of the item that qualify as a sales spike (unusually high demand). The system uses this field to increase the reorder quantity of planned orders in periods of high demand. For more information, see [Demand-driven planning](ddmrp-planning.md).
+    - **Order spike threshold** – Specify the minimum number of daily sales of the item that qualify as a sales spike (unusually high demand). The system uses this field to increase the reorder quantity of planned orders in periods of high demand. Learn more in [Demand-driven planning](ddmrp-planning.md).
 
 ### <a name="calc-lead-time"></a>Calculate or enter decoupled lead times
 
 For items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers), follow these steps to calculate or enter decoupled lead times for a decoupling point item.
 
-1. Open the **Item coverage** page for your decoupling point item. (For more information, see [Set up buffers for a decoupling point item](#set-up-buffers).)
+1. Open the **Item coverage** page for your decoupling point item. (Learn more in [Set up buffers for a decoupling point item](#set-up-buffers).)
 1. Select an item coverage record that creates a decoupling point.
 1. Select the **Buffer values** tab.
 1. If no time periods are shown in the grid, on the Action Pane, on the **Buffer values** tab, select **Add time periods**. The system fills the grid with rows for each daily or weekly time period, depending on whether the **Min, max, and re-order point period** field for the [coverage group](ddmrp-inventory-positioning.md) is set to *Daily* or *Weekly*. The system will add enough rows to reach the time fence that is specified for the coverage group that is assigned to the item.
@@ -217,7 +215,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 
 For items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers), follow these steps to calculate or enter the ADU for a decoupling point item.
 
-1. Open the **Item coverage** page for your decoupling point item. (For more information, see [Set up buffers for a decoupling point item](#set-up-buffers).)
+1. Open the **Item coverage** page for your decoupling point item. (Learn more in [Set up buffers for a decoupling point item](#set-up-buffers).)
 1. Select an item coverage record that creates a decoupling point.
 1. Select the **Buffer values** tab.
 1. If no time periods are shown in the grid, on the Action Pane, on the **Buffer values** tab, select **Add time periods**. The system fills the grid with rows for each daily or weekly time period, depending on whether the **Min, max, and re-order point period** field for the [coverage group](ddmrp-inventory-positioning.md) is set to *Daily* or *Weekly*. In addition, default values for the **Lead time factor** and **Variability factor** fields are taken from the coverage group. You can edit these values for each row as required.
@@ -238,7 +236,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 1. Select the time period where you want to calculate buffer values. (Usually, this time period will be the period that includes today.) The row that you select must already have non-zero values in the **Average daily usage** and **Decoupled lead time** columns.
 1. Edit the **Demand adjustment factor** field for one or more rows as required. The system will apply this factor to the **Average daily usage** value in all buffer calculations where that value is used. This factor lets you adjust for the way that demand fluctuates by date (for example, for holidays or seasonal items).
 1. On the Action Pane, on the **Buffer values** tab, select **Calculate min, max and reorder point quantities**. The system calculates and fills in the **Calculated min**, **Calculated reorder point**, and **Calculated max** columns in the grid on the **Item coverage** page.
-1. When you've finished reviewing the calculated values, you must apply them. Otherwise, they will have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, on the **Buffer values** tab, in the **Take action** group, select one of the following buttons:
+1. When you've finished reviewing the calculated values, you must apply them. Otherwise, they'll have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, on the **Buffer values** tab, in the **Take action** group, select one of the following buttons:
 
     - **Accept all calculations** – Apply all calculated values in the grid.
     - **Accept calculations for selected rows** – Apply calculated values for the selected rows only.
@@ -247,7 +245,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 
 ### Schedule automatic buffer value calculations
 
-After you've fully set up your DDMRP settings and confirmed that they work as expected, you will probably want to set up a batch job to periodically recalculate ADU and related buffer values as required, based on actual consumption data and/or updated forecasts. This procedure applies only to items where you choose to allow the system to [automatically calculate your buffer zones](#set-up-buffers).
+After you've fully set up your DDMRP settings and confirmed that they work as expected, you'll probably want to set up a batch job to periodically recalculate ADU and related buffer values as required, based on actual consumption data and/or updated forecasts. This procedure applies only to items where you choose to allow the system to [automatically calculate your buffer zones](#set-up-buffers).
 
 Follow these steps to schedule automatic buffer value calculations.
 

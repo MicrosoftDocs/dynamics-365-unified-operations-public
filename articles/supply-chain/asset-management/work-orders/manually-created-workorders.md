@@ -1,17 +1,13 @@
 ---
 title: Manually created work orders
 description: Learn how to create work orders manually in Asset Management, including a step-by-step process for creating work orders.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-09-30
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Manually created work orders

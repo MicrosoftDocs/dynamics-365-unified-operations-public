@@ -2,16 +2,15 @@
 title: Set up new environments, Azure DevOps, and branches for projects
 description: This article describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
 author: andreashofmann1
-ms.date: 05/03/2023
-ms.topic: article
+ms.date: 11/26/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: Retail 7.3
-ms.search.industry: Retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Set up new environments, Azure DevOps, and branches for projects
@@ -239,7 +238,7 @@ The download of the files can take a few minutes.
 
 Regardless of whether there are customizations in the code branches, the following steps prepare your development box so that you can write and run code. Some steps are optional, depending on the customizations that are planned.
 
-1. Install your favorite development tools. For information about one automated script, see [Auto-Installing most needed dev tools in 5 mins with Chocolatey](https://dynamicsnotes.com/auto-installing-most-needed-dev-tools-in-5-mins/).
+1. Install your favorite development tools.
 2. To help reduce the compile time, exclude the code folders from Microsoft Windows Defender.
 3. If there is already code in the **Dev/Metadata** folder, build all Commerce models. Select all the models, and then select **Database sync**.
 4. To speed up the development experience, switch to Microsoft Internet Information Services (IIS). For instructions, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This step can be done only on the Tier 1 VM where you have administrative privileges (cloud-hosted environment).
@@ -262,7 +261,7 @@ Regardless of whether there are customizations in the code branches, the followi
 
 6. Make sure that you can sign in to Commerce by using your user account. If you aren't the Admin user in the production database, run the Admin provisioning tool to take ownership. (This tool is in the **PackagesLocalDirectory/bin** folder.)
 7. Verify that Commerce Data Exchange (CDX) data synchronization works. In Commerce, go to **Download sessions**. You should see many applied sessions. If you don't see them, select job **9999**, and run it.
-8. Install TypeScript version 2.2.2 from <https://www.microsoft.com/download/details.aspx?id=48593>.
+8. Install the latest version of TypeScript.
 9. Do a full build of the Retail SDK from a command prompt.
 
     1. Open an MSbuild command prompt for Microsoft Visual Studio 2015 as an administrator.

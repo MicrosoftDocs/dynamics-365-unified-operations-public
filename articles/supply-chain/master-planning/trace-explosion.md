@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.date: 06/20/2017
 ms.topic: article
 ms.reviewer: kamaybac
-audience: Application User 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqTransExplosion
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ---
 
@@ -30,7 +25,7 @@ By enabling tracing, you can view information about the factors that contributed
 
 You can view details about futures and actions for a selected order. On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane. Tracing occurs when you explode an order. To start tracing for the order, click **Update**, and then select the **Enable trace** check box. You can use the **Find text** field to search the log for specific information. Search results are highlighted in the tree.
 
-## Additional resources
+## Related information
 
 - [Master plans overview](master-plans.md)
 

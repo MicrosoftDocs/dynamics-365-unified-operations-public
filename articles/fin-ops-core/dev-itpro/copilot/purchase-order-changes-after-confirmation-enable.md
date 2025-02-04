@@ -4,14 +4,14 @@ description: Learn how to enable Copilot support for the Confirmed purchase orde
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 07/06/2023
+ms.date: 08/30/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
 audience: Application User
 ms.search.region: Global
-ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
+ms.search.form: PurchTableChangeReviewWorkspace
 ---
 
 # Enable Copilot support for managing changes to confirmed purchase orders

@@ -1,17 +1,13 @@
 ---
 title: Target entities
 description: Learn how to get an overview of target entities, related entity types, and stages tables in Asset Management, including a step-by-step process.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.custom:
 ms.date: 09/26/2019
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form:
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Target entities

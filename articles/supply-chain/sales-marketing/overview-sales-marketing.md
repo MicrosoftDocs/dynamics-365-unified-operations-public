@@ -1,14 +1,13 @@
 ---
 title: Sales and marketing overview
 description: Learn how to use sales and marketing to obtain, store, and use various types of data in the sales flow, including original sales initiative and additional sales.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: overview
 ms.date: 05/02/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -108,11 +107,18 @@ A free text invoice is an invoice that isn't related to a sales order. It contai
 
 A pro forma invoice is an invoice that is prepared as an estimate of the actual invoice amount before the invoice is posted. You can print a pro forma invoice for either a customer invoice or a free text invoice.
 
-### Additional resources
+## Related information
 
-#### Blogs
+### Blogs
 
 You can find an overview of a sales process in the post
 [How sales work in Dynamics 365 Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+### White papers
+
+The following white papers explore various aspects of sales and marketing in Dynamics 365 Supply Chain Management:
+
+- [Trade agreements](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

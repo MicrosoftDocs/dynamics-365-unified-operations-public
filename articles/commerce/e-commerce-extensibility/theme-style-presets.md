@@ -2,16 +2,15 @@
 title: Configure theme style presets
 description: This article explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
-ms.date: 06/29/2020
-ms.topic: article
+ms.date: 08/14/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Configure theme style presets
@@ -81,41 +80,19 @@ The following example shows a style preset instance file for a dark theme. The f
     "$type": "styleDefinition",
     "name": "modern-dark",
     "friendlyName": "modern dark",
-    "description": "This is a spring modern light theme template style preset",
+    "description": "This is a spring modern dark theme template style preset",
     "global": {
-        "brandPrimaryColor": {
-            "friendlyName": "Brand primary",
-            "description": "Brand primary color",
-            "type": "string",
-            "format": "color",
-            "default": "#AAAAAA",
-            "group": "Colors"
-        },
-        "brandSecondaryColor": {
-            "friendlyName": "Brand secondary",
-            "description": "Brand secondary color",
-            "type": "string",
-            "format": "color",
-            "default": "#CCCCCC",
-            "group": "Colors"
-        },
-        "textDefaultColor": {
-            "friendlyName": "Text default",
-            "description" : "Text default color",
-            "type": "string",
-            "format": "color", 
-            "default": "#555555",
-            "group": "Colors" 
-        },
-        "backgroundDefaultColor": {
-            "friendlyName": "Background default",
-            "description" : "Background default color",
-            "type": "string",
-            "format": "color",
-            "default": "#000000",
-            "group": "Colors"         
-        },
-        ...
+        "brandPrimaryColor": "#AAAAAA",
+        "brandSecondaryColor": "#606060",
+        "borderRadius": "0"
+    },
+    "modules": {
+        "header": {
+            "categoryColor": "#000",
+            "expandedCategoryColor": "#000"
+        }
+    }
+}
 ```
 
 ## Localize style preset names and descriptions

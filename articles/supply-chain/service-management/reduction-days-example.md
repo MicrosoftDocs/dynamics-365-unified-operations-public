@@ -1,17 +1,13 @@
 ---
 title: Reduction days example   
 description: Learn about creating a subscription transaction for a customer's maintenance subscription with a table that shows dates for subscriptions.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -101,8 +97,8 @@ You create a new transaction of the **Reduction days** type, as described in the
 
 When the transactions for March 2011 are invoiced, the sales price of EUR 200 is reduced by EUR 12.90. The chargeable amount for the subscription transaction is therefore EUR 187.10, and two transactions are invoiced at a total of EUR 187.10.
 
-## See also
+## Related information
 
-[Reduce the days on subscription fees](reduce-the-days-on-subscription-fees.md)
+- [Reduce the days on subscription fees](reduce-the-days-on-subscription-fees.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

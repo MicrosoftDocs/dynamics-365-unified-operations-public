@@ -1,16 +1,12 @@
 ---
 title: Creating intercompany purchase and sales orders in several companies
 description: Learn how to create intercompany purchase orders or sales orders in several companies for both trading companies and production companies.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Creating intercompany purchase and sales orders in several companies
@@ -19,8 +15,8 @@ ms.dyn365.ops.version: 10.0.22
 
 Microsoft Dynamics 365 Supply Chain Management is not limited to handling only one production company and several sales companies. All companies that are set up for intercompany can be both trading companies and production companies.
 
-If more companies can deliver the same item, you can freely choose whom to buy from, and updates are processed even if one sales order becomes several purchase orders.
-
+If several companies can deliver the same item, you can freely choose whom to buy from, and updates are processed even if one sales order becomes several purchase orders. Usually, when you explode a bill of materials (BOM) version, demand is generated for the BOM lines in the sales order. However, neither product bundle items nor BOM explosions are supported for intercompany sales orders or intercompany purchase orders.
+ 
 In the same way that you automatically create one intercompany purchase order, you can create an original sales order in your company and then have several intercompany vendor companies fulfill the order by creating more than one intercompany purchase order. Microsoft Dynamics 365 Supply Chain Management automatically creates intercompany sales orders in the vendor companies.
 
 To do this, all the companies must be set up as trading relationships. The vendor companies must be set up in Microsoft Dynamics 365 Supply Chain Management as intercompany vendors, and they must be the primary vendor for the relevant item. On the sales order, in **Header view**, you must select the **Autocreate intercompany orders** field and the **Direct delivery** field on the **Intercompany settings** FastTab. This is the default setting.

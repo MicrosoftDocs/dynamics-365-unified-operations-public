@@ -1,15 +1,14 @@
 ---
 title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception. Learn about product configuration.
-author: t-benebo
-ms.author: benebotg
-ms.topic: overview
-ms.date: 01/06/2023
-ms.custom: bap-template
+author: sgmsft
+ms.author: shwgarg
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
+ms.topic: overview
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Product configuration overview
@@ -127,7 +126,7 @@ The last and most important step in the finalization process is to create a vers
 
 A dedicated application programming interface (API) has been implemented, so that partners and others who have a developer license can extend the capabilities of a product configuration model. The main goal has been to establish a mechanism that lets partners and customers who use the existing Product Builder migrate the code that is embedded in Product Builder models to the API. In this way, they can migrate their models from Product Builder to a product configuration. However, new partners and customers can also benefit from using the API to extend new product configuration models.
 
-The API is implemented by using a set of **PCAdaptor** classes that expose the data structure of the product configuration models. An instance of the **PCAdaptor** class must be created for each model that will be extended. After a configuration session is completed, the system checks for an instance of this class and runs it if it's found.  
+The API is implemented by using a set of `PCAdaptor` classes that expose the data structure of the product configuration models. An instance of the `PCAdaptor` class must be created for each model that will be extended. After a configuration session is completed, the system checks for an instance of this class and runs it if it's found.  
 
 The following API flow diagram outlines the process.  
 

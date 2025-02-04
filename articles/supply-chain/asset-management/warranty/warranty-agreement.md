@@ -1,17 +1,13 @@
 ---
 title: Warranty agreements
 description: Learn about warranty agreements in Asset Management, including an outline and step-by-step process for creating a warranty agreement.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/24/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-30
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Warranty agreements

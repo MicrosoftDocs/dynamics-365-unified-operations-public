@@ -2,9 +2,9 @@
 title: Year-end close
 description: Learn about the required setup and steps for running the general ledger year-end close process, including an outline on defining year-end close templates. 
 author: MOAAMER
-ms.author: kweekley
+ms.author: moaamer 
 ms.topic: article
-ms.date: 03/22/2024
+ms.date: 09/25/2024
 ms.custom: evergreen 
 ms.reviewer: twheeloc
 audience: Application User
@@ -33,6 +33,7 @@ On the **Main account** page:
 
 - Verify that the **Main account type** field is correctly set for each main account. The main account type determines whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the opening transaction.
 - The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the **Opening account** field. Typically, this field is used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.
+- In Microsoft Dynamics 365 Finance version 10.0.41, the **Validate year-end close** feature performs validation checks before the year-end close to detect issues and suggest a resolution. It ensures accurate ledger balances in both accounting and reporting currencies, advises you about best practices for managing large dimension sets, and improves the year-end close experience. You must select the target legal entity and the target year. 
 
 On the **General ledger parameters** page under **Fiscal year close**:
 
@@ -41,13 +42,10 @@ On the **General ledger parameters** page under **Fiscal year close**:
 - The **Set fiscal year status to permanently closed** option is used to set the fiscal year to a permanently closed status. Use this option carefully, because periods that have a permanently closed status can't be reopened. Therefore, adjustments can't be posted to the fiscal year. As a best practice, this option should be set to **No**.
 - The **Voucher number must be filled in** option has been removed. A voucher is now required when the year-end close process is run. At that time, the voucher number is manually entered.
 
-On the **Fiscal calendar** page:
-
-- The next fiscal year must exist before the year-end close is run. Otherwise, the beginning balances can't be created in the opening period.
-
 On the **Ledger calendar** page:
 
-- Optional: Each fiscal period for the fiscal year that is being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
+-  Optional: Each fiscal period for the fiscal year that's being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
+-  Optional: If **Budget control** is being used, the purchase order year-end process should be completed before closing the period or putting it **On hold**. All non-closed budget-controlled documents must be closed or moved to a new year before the year-end can be completed. For information about how purchase orders are processed at the year-end, see [Purchase order year-end process](../budgeting/purchase-order-year-end-process.md).
 
 On the **Year-end close template setup** page:
 
@@ -65,7 +63,7 @@ After the legal entities are added, define the retained earnings main accounts f
 
 The **Financial dimension** tab is used to define which financial dimensions will be used on the opening transaction. Note that the setup on this tab applies only to the legal entity that is selected in the **Legal entities** grid. You must repeat the setup for each legal entity in the grid.
 
-The **Transfer balance sheet dimensions** option is used to specify whether the financial dimensions on transactions that are posted to balance sheet accounts should be maintained on the opening transaction. As a best practice, this option should be set to **Yes**. The setting for the balance sheet dimensions doesn't affect existing balances in the retained earnings ledger accounts. Those balances are determined by the profit and loss dimensions that are defined in the next section. For example, fiscal year 2019 was the first year that was closed, and the **Close all** option was used to select the **Department** and **Cost center** dimensions for closing. In this case, a separate retained earnings account was created for each combination of a department and a cost center. When the year-end close is run for fiscal year 2020, the retained earnings from the previous year remain exactly as they were posted, even if the **Transfer balance sheet dimensions** is set to **No**. Balances that are posted to retained earnings from previous year-end closes are never changed.
+The **Transfer balance sheet dimensions** option is used to specify whether the financial dimensions on transactions that are posted to balance sheet accounts should be maintained on the opening transaction. As a best practice, this option should be set to **Yes**. The setting for the balance sheet dimensions doesn't affect existing balances in the retained earnings ledger accounts. Those balances are determined by the profit and loss dimensions that are defined in the next section. For example, fiscal year 2019 was the first year that was closed, and the **Close all** option was used to select the **Department** and **Cost center** dimensions for closing. In this case, a separate retained earnings account was created for each combination of a department and a cost center. When the year-end close is run for fiscal year 2020, the retained earnings from the previous year remain exactly as they were posted, even if the **Transfer balance sheet dimensions** option is set to **No**. Balances that are posted to retained earnings from previous year-end closes are never changed.
 
 The **Transfer profit and loss dimensions** section is used to specify which financial dimensions on transactions that are posted to profit and loss accounts will be transferred to the retained earnings main account. First, identify the financial dimensions that are relevant to the selected legal entity. These financial dimensions include any financial dimension that was posted against during the year, even if the financial dimension isn't part of an active account structure. Next, define each dimension as either **Close single** or **Close all**. The default option is **Close all**. This option maintains the original financial dimension values from posted transactions and uses them to create the opening balances for the retained earnings account. Separate retained earnings beginning balances will be created for each unique combination of financial dimension values. If **Close single** is selected, all posted transactions that have that financial dimension will be summarized into a retained earnings beginning balance for the dimension value that is entered in the field that appears after **Close single**. For example, all transactions for the fiscal year were posted with the account structure **Main account - Department**. For the **Department** financial dimension on the template, **Close single** is selected, and **100** is entered as the dimension value. If the total income of all transactions that are posted to departments 200, 300, and 400 is $100,000, one opening balance will be created for **Retained earnings - 100**. If you select **Close single** but leave the financial dimension value blank, all transactions will be posted to retained earnings, and the dimension value will be blank.
 

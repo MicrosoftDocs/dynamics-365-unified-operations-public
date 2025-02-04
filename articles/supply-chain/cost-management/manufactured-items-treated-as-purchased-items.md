@@ -1,17 +1,12 @@
 ---
 title: Set up products that can be produced or procured
 description: Products can be sourced in various ways -  they can be produced (manufactured) or procured (purchased). Learn about what to consider when multi-sourcing.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqGroup, ReqItemTable
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: acc608b7-2cad-4fba-afee-9b7cc93761ec
 ---
 

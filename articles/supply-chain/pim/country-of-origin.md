@@ -1,14 +1,12 @@
 ---
 title: Country of origin
 description: Learn about the country of origin feature, which lets you link a product to its country/region of origin and keep track of its product certifications.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/20/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:  COOVendorCerts
 ---
 

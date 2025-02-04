@@ -1,15 +1,14 @@
 ---
 title: Integrate with Microsoft Sustainability Manager
 description: Learn how to integrate Microsoft Dynamics 365 Supply Chain Management with Microsoft Sustainability Manager, including prerequisites.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: how-to
-ms.date: 11/28/2023
-ms.custom: bap-template
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: TMSParameters, TMSMethod
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Integrate with Microsoft Sustainability Manager
@@ -25,7 +24,7 @@ Before you can use the features that are described in this article, your system 
 - You must be running Dynamics 365 Supply Chain Management version 10.0.38 or later.
 - You must have a valid subscription for Microsoft Sustainability Manager.
 - You must be running Microsoft Sustainability Manager version 2.14.0.355 or later.
-- The feature that's named *Integrate Microsoft Sustainability Manager with transportation management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Integrate Microsoft Sustainability Manager with transportation management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ## Enable impersonation in Microsoft Power Platform
 
@@ -50,7 +49,7 @@ To enable carbon emission calculations, you must map the transportation methods 
 1. For each transportation method that's listed on the page, use the **Transportation Mode in Microsoft Sustainability Manager** field to identify the matching transportation mode in Microsoft Sustainability Manager.
 
     > [!NOTE]
-    > The transportation modes that are listed in the **Transportation Mode in Microsoft Sustainability Manager** field are taken from United States Environment Protection Agency Greenhouse Gas Emissions Factors Hub (EPA GHG Emissions Factors Hub). Microsoft Sustainability Manager uses these modes in its transportation and distribution calculation model. For more information, see [GHG Emissions Factors Hub](https://www.epa.gov/climateleadership/ghg-emission-factors-hub).
+    > The transportation modes that are listed in the **Transportation Mode in Microsoft Sustainability Manager** field are taken from United States Environment Protection Agency Greenhouse Gas Emissions Factors Hub (EPA GHG Emissions Factors Hub). Microsoft Sustainability Manager uses these modes in its transportation and distribution calculation model. Learn more in [GHG Emissions Factors Hub](https://www.epa.gov/climateleadership/ghg-emission-factors-hub).
 
 1. On the Action Pane, select **Save**.
 

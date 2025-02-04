@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/13/2024
+ms.date: 10/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -34,8 +34,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: **Tax Identification Number (TIN)** and **Business Registration Number (BRN)**.
 - Obtain **Client ID** and **Client secret** values in the [Inland Revenue Board of Malaysia (IRBN)](https://www.hasil.gov.my/) (Lembaga Hasil Dalam Negeri Malaysia \[LHDN\]). These values serve as credentials that are used to establish a secure connection to the IRBN portal.
 - Obtain a digital signature certificate from one of the [Malaysian certification authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). This certificate is used for digital signing of generated electronic invoices.
-- Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- Become familiar with electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of electronic invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Configure Azure Key Vault
 
@@ -48,6 +48,8 @@ Add the following required elements in the key vault:
 - The certificate that's used for digital signing of outgoing electronic invoices.
 
 ## Configure Key Vault parameters for electronic invoicing
+
+To configure Key Vault parameters for electronic invoicing, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section.
@@ -66,11 +68,13 @@ Add the following required elements in the key vault:
 
 Some of the parameters from the **Malaysian electronic invoicing (MY)** electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
+To configure the electronic invoicing feature, follow these steps.
+
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup, and then select **Edit**.
-1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Sign document for Malaysia** action.
+1. <a id="FeatureSetup"></a>On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Sign document for Malaysia** action.
 1. In the **Parameters** section, select the **Certificate name** parameter, and then, in the **Value** field, select the name of the [digital certificate](#DigCert) that you created.
 1. In the **Processing pipeline** section, select the **Integrate with MyInvois (Submit document)** action.
 1. In the **Parameters** section, select the **Client secret** parameter, and then, in the **Value** field, select the name of the [secret](#ClSec) that you created.
@@ -91,7 +95,9 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 
 ## Configure electronic document parameters
 
-1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+To configure electronic document parameters, follow these steps.
+
+1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
     > After you import the **Malaysian electronic invoicing (MY)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
@@ -130,6 +136,7 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     > - Project invoices
     > - Self invoices that are based on vendor invoices from foreign vendors
     > - Credit notes and debit notes for all the previously described invoice types
+    > - Refund notes, which represent credit notes for already paid invoices.
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes on the **Electronic document parameters** page, and then close the page.
@@ -147,9 +154,16 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
+## <a id="SST"></a>Configure Sales and Service Tax numbers
+
+To configure Sales and Service Tax (SST) numbers, follow the instructions in [GST/SST registration number](apac-mys-gst.md#gstsst-registration-number).
+
+> [!NOTE]
+> Make sure that the configured SST registration number is in the **VAT ID** registration category.
+
 ## Configure electronic document property types
 
-Follow these steps to configure the electronic document property type that's required to define the taxpayer activity code.
+To configure the electronic document property type that's required to define the taxpayer activity code, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
@@ -161,6 +175,8 @@ Follow these steps to configure the electronic document property type that's req
 1. In the **Type** field, enter **ActivityDescription**. You must enter the value exactly as it appears here.
 1. On the Action Pane, select **Applicability**.
 1. In the **Table name** field, select **CompanyInfo**.
+1. Select **New** to create the record for another applicable table.
+1. In the **Table name** field, select **VendTable**.
 1. Save and close the **Electronic document property type applicability setup** page.
 1. Save and close the **Electronic document property types** page.
 
@@ -168,7 +184,7 @@ Follow these steps to configure the electronic document property type that's req
 
 ## Configure address structure
 
-Follow these steps to configure the structure of the postal address to define all required elements.
+To configure the structure of the postal address to define all required elements, follow these steps.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. Make sure that all the following mandatory elements are configured:
@@ -185,11 +201,15 @@ Follow these steps to configure the structure of the postal address to define al
 
 ### Enter the address
 
+To enter the address, follow these steps.
+
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity.
 1. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 
 ### Enter the registration numbers
+
+To enter the registration numbers, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's TIN.
@@ -197,8 +217,13 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
 1. In the **Registration number** field, enter a valid BRN registration number for the selected legal entity.
+1. Select **Add** to create another registration ID, if required.
+1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected legal entity.
 
 ### Enter a business activity code and description
+
+To enter a business activity code and description, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
@@ -207,15 +232,22 @@ Follow these steps to configure the structure of the postal address to define al
 1. Select the line where the **Type** field is set to **ActivityDescription**.
 1. In the **Value** field, enter the taxpayer business activity description.
 
+> [!NOTE]
+> The contact information for the legal entity is automatically retrieved from the related **Person** that is associated with the current user in Dynamics 365 Finance.
+
 ## Configure customer data
 
 ### Enter the address
+
+To enter the address, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
 
 ### Enter the contact person
+
+To enter the contact person, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -226,18 +258,73 @@ Follow these steps to configure the structure of the postal address to define al
 
 ### Enter the registration numbers
 
+To enter the registration numbers, follow these steps.
+
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the customer.
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid BRN registration number for the selected customer. 
+1. In the **Registration number** field, enter a valid BRN registration number for the selected customer.
+1. Select **Add** to create another registration ID, if required.
+1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected customer.
 
     > [!NOTE]
     > For **foreign** customers, actual tax registration numbers aren't always mandatory. If no tax registration numbers are defined for them, the following general numbers are used:
     >
     > - **EI00000000020** is used as the customer's **TIN**.
-    > - **NA** is used as the customer's **BRN**.
+    > - **NA** is used as the customer's **BRN** and **SST**.
+
+### Additional property configuration
+
+**Customizable electronic document property types** can be used to extend the properties of legal entities, customers, vendors, and invoice journals. Users can configure them to cover some specific scenarios through configuration only. No coding is required.
+
+To configure additional buyer and journal properties, follow these additional configuration steps.
+
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
+1. Select **New** to create an electronic document property type.
+1. In the **Type** field, enter **BuyerRegistrationName**. You must enter the value exactly as it appears here.
+1. On the Action Pane, select **Applicability**.
+1. In the **Table name** field, select **CustInvoiceJour**.
+1. To create the record for another applicable table, select **New**.
+1. In the **Table name** field, select **CustTable** as required.
+1. Save your changes, and close the **Electronic document property type applicability setup** page.
+1. Repeat steps 2 through 8 for the remaining properties:
+
+    - BuyerTIN
+    - BuyerBRN
+    - BuyerAddressLine
+    - BuyerCityName
+    - BuyerCountrySubentityCode
+    - BuyerIdentificationCode
+    - BuyerTelephone
+    - BuyerSST
+    - BuyerTTX
+    - BuyerNRIC
+    - BuyerPASSPORT
+    - BuyerARMY
+
+1. Save your changes, and close the **Electronic document property types** page.
+
+![Screenshot that shows the electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
+
+To enter the values for the previously described electronic document properties at the customer level, follow these steps.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select a customer, and then, on the Action Pane, on the **Customer** tab, select **Electronic document properties**.
+1. For each property that must be overridden in the electronic invoice, enter the required value in the **Value** field.
+
+To enter the values for the electronic document properties at the invoice level, follow these steps.
+
+1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Select a required invoice, and then, on the Action Pane, on the **Invoice** tab, select **Electronic document properties**.
+1. For each property that must be overridden in the electronic invoice, enter the required value in the **Value** field.
+
+> [!NOTE]
+> Non-blank values in the previously described electronic document properties override the corresponding default values that are automatically populated from either customer or invoice master data.
+>
+> Values must be entered for the electronic document properties before electronic invoices are submitted to the authorities.
 
 ## Configure funding sources
 
@@ -257,11 +344,15 @@ If business processes assume that self invoices are issued, you must also config
 
 ### Enter the address
 
+To enter the address, follow these steps.
+
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor.
 1. On the **Addresses** FastTab, add a valid address for the selected vendor.
 
 ### Enter the contact person
+
+To enter the contact person, follow these steps.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor.
@@ -272,18 +363,34 @@ If business processes assume that self invoices are issued, you must also config
 
 ### Enter the registration numbers
 
+To enter the registration numbers, follow these steps.
+
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the vendor.
 1. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor. 
+1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor.
+1. Select **Add** to create another registration ID, if required.
+1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected vendor.
 
     > [!NOTE]
     > For **foreign** vendors, actual tax registration numbers aren't always mandatory. If no tax registration numbers are defined for them, the following general numbers are used:
     >
     > - **EI00000000030** is used as the vendor's **TIN**.
-    > - **NA** is used as the vendor's **BRN**.
+    > - **NA** is used as the vendor's **BRN** and **SST**.
+
+### Enter a business activity code and description
+
+To enter a business activity code and descriptions, follow these steps.
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Select a vendor, and then, on the Action Pane, on the **Vendor** tab, select **Electronic document properties**.
+1. Select the line where the **Type** field is set to **ActivityCode**.
+1. In the **Value** field, enter the business activity code.
+1. Select the line where the **Type** field is set to **ActivityDescription**.
+1. In the **Value** field, enter the business activity description.
 
 > [!NOTE]
 > A Malaysian Standard Industrial Classification (MSIC) code might not be applicable to foreign vendors. In this case, the fixed value **00000** is used for the activity code, and the value **NA** is used as the activity description.
@@ -298,7 +405,7 @@ Make sure that the following ER format configurations are imported:
 - Project invoice (MY)
 - Self invoice (MY)
 
-Follow these steps to complete the configuration.
+To complete the configuration, follow these steps.
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
 1. On the **Configurations** page, select the **Sales invoice (MY)** format configuration.
@@ -316,7 +423,7 @@ Follow these steps to complete the configuration.
 
 ## Configure sales tax codes
 
-To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system.
+To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system by following these steps.
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
 1. Add the required exempt codes together with descriptions.
@@ -326,6 +433,19 @@ To cover scenarios for non-taxable, zero-rated, or exempted operations, define t
 1. In the **Exempt code** field, reference one of the exempt codes that you created in step 1.
 1. Save your changes, and close the page.
 
+## Configure units of measure
+
+To configure units of measure, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+1. Select a unit ID, and then select **External codes**.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that is equal to the selected unit ID.
+1. In the **Standard code** column, select the checkbox.
+1. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to the required codification.
+
+    > [!NOTE]
+    > For scenarios where no specific units of measure are assumed, the default value **EA** is used.
+
 ## Issue electronic invoices
 
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
@@ -334,14 +454,103 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Configure printable invoice layouts
 
-Follow these steps to enable QR codes printing in full and simplified invoices.
+To enable QR code printing in full and simplified invoices, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
+If you use project invoices, follow these steps.
+
+1. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
+1. Select **Print management**.
+1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, reference the **PSAProjInvoice.ReportFull\_MY** or **PSAProjInvoice.ReportSimplified\_MY** layout.
+1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, reference the **PSAContractLineInvoice.ReportFull\_MY** or **PSAContractLineInvoice.ReportSimplified\_MY** layout.
+
+If you use self invoices, follow these steps.
+
+1. Go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
+1. Select **Print management**.
+1. Select the **Vendor invoice** report, and then, in the **Report format** field, reference the **VendInvoiceDocument.ReportMY** layout.
+
 > [!NOTE]
-> The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of MyInvois system, where you can find the details of the related electronic invoice.
+> The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of **MyInvois** system, where you can find the details of the related electronic invoice.
 > 
-> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the MyInvois system.
+> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **MyInvois** system.
+
+## Batch submission of electronic invoices
+
+In addition to submitting electronic invoices individually, as described in the previous sections, you can submit posted invoices in batches as consolidated electronic invoices.
+
+By default, all invoices that originate from retail operations can be consolidated, but they can't be submitted individually. Nevertheless, you can force specific retail-related invoices to be submitted individually.
+
+To activate batch submission of invoices, enable the **Electronic document batch submission** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Configure electronic document parameters
+
+Before you begin to configure electronic document parameters for batch submission, import the **Consolidated Invoice Model Mapping (MY)** ER configuration from the repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+
+To configure electronic document parameters for batch submission, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic document** tab, on the **Electronic reporting** FastTab, add a record for the **Customer Invoice journal** table name.
+1. In the **Batch submission** column, select the checkbox.
+1. In the **Document context** column, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
+1. In the **Electronic document model mapping** column, select the **Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
+1. On the **Batch submission id** FastTab, in the **Number sequence** field, select the number sequence that should be used to number the batches that are generated. The number sequence that you select must be continuous.
+
+![Screenshot that shows the configuration of electronic document parameters for batch submission.](apac-mys-e-doc-parameters.jpg)
+
+### Configure the electronic invoicing feature
+
+To configure the electronic invoicing feature, follow these steps.
+
+1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature (version **10** or later) as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+
+    > [!NOTE]
+    > Make sure that the **Consolidated invoice (MY)** ER format configuration is imported after you import the **Malaysian electronic invoicing (MY)** Globalization feature. If it isn't imported, manually import it. This format configuration is based on the **Invoices Communication Model** configuration and also on the **Consolidated Invoice Model Mapping (MY)** configuration that you imported in the previous section.
+   
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
+1. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, select **Edit**, and configure the following processing pipeline action parameters.
+
+    > [!NOTE]
+    > Configure these parameters just as you configured them for the **[Sales invoice derived](#FeatureSetup)** feature setup.
+
+    | Processing pipeline action | Parameters to configure |
+    |---|---|
+    | Sign document for Malaysia | <ul><li>Certificate name</li></ul> |
+    | Integrate with MyInvois (Submit document) | <ul><li>Client secret</li><li>Client ID</li><li>Web service URL</li><li>Login service URL</li><li>Environment type</li></ul> |
+    | Integrate with MyInvois (Get document) | <ul><li>Client secret</li><li>Client ID</li><li>Web service URL</li><li>Login service URL</li><li>Environment type</li></ul> |
+
+1. Select **Save**, and close the page.
+1. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+
+### Issue consolidated electronic invoices
+
+To generate and submit electronic invoices in batches for posted Customer invoices, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
+1. To submit invoices in batches, set the **Submit document batch** option to **Yes**. To submit retail invoices individually, set the **Submit retail invoices individually** option to **Yes**.
+
+    > [!IMPORTANT]
+    > Batch submission and individual submission are mutually exclusive and can't be run simultaneously. During a given run, only batch submissions or individual submissions can be processed.
+    >
+    > If you must submit some retail invoices individually, you must do the individual submission **before** the batch submission. All individually submitted retail invoices will be excluded from batches.
+
+    ![Screenshot that shows the Submit electronic documents dialog box set up for batch submission.](apac-mys-e-invoice-batch.jpg)
+
+1. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
+1. Select **OK** to start submission.
+
+To inquire about the submission results, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
+1. In the **Document type** field, select **Batch submission**.
+1. Select a specific batch that has one of the following statuses: **Scheduled**, **Completed**, or **Failed**.
+1. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. 
+1. On the Action Pane, select **Inquiries** \> **Batch submission invoices** to view the invoices that were submitted in the selected batch.
+
+> [!NOTE]
+> Because of restrictions that the authorities impose on the size of submitted data, the maximum number of invoices that can be included in one batch is 60. If more than 60 invoices are being processed, multiple batches are automatically generated.

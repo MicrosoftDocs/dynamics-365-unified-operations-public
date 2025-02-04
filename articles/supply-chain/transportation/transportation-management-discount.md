@@ -1,17 +1,13 @@
 ---
 title: Transportation management discounts
 description: Learn about the options for setting up discounts for transportation charges and management, with more information on setting up multiple qualifiers.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
 ms.date: 10/16/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-10-16
 ms.search.form:
-ms.dyn365.ops.version: 10.0.14
 ---
 
 # Transportation management discounts

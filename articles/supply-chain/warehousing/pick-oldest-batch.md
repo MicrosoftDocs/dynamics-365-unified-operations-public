@@ -3,33 +3,27 @@ title: Pick oldest batch on a mobile device
 description: Learn how you set up and apply the options to pick the oldest batch from a mobile device with an outline on setting up the configuration for pick oldest batch.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
-ms.date: 05/26/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form:  WHSRFMenuItem
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: how-to
+ms.date: 09/24/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Pick oldest batch on a mobile device
 
 [!include [banner](../includes/banner.md)]
 
-You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.  
+You can configure mobile device menu items to allow workers to pick any batch, or to force or warn them to pick the oldest batch in their current location. The option effects pick work for batch below items.
 
-## Where it applies
-Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.
+To set this option for a mobile device menu item, follow these steps:
 
-## How to set up the configuration for Pick oldest batch 
-For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.
-
-**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.
-
-**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch. If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control. 
--	**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select. To be allowed to continue the work, the worker can select the same license plate or batch again.  
--	**Force**: Workers will continue to receive the message that there is an older batch to pick.
-
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
+1. Select or create a menu item that has **Use existing work** set to *Yes*.
+1. On the **General** FastTab, set **Pick oldest batch** to one of the following values:
+    - *None* – Workers aren't shown any messages and can pick any batch in their location.
+    - *Warn* – When picking batch-controlled items, the app shows a list of the batch(es) with the oldest expiration date. If the location is license plate controlled, the app shows a list of license plates that have the oldest batch. If a worker chooses an unlisted license plate or batch, the app shows a warning that tells the worker that an older batch is available. The worker can choose to continue with the selected batch or license plate, even though it isn't the oldest, by confirming the action.
+    - *Force* – Works the same way as a *Warn*, except the worker is only allowed to continue after selecting the oldest batch or license plate.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

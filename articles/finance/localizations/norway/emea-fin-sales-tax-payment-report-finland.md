@@ -183,7 +183,7 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 
 ![Total list of sales tax payment versions in the settlement period.](../media/3_Sales_tax_reporting.png)
 
-## Additional information
+## Related information
 
 If you set up reverse charges according to [Reverse charge VAT](../global/emea-reverse-charge.md), you can get data about the reporting codes on the **Sales tax payment by code** report.
 

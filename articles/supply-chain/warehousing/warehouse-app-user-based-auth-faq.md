@@ -1,14 +1,12 @@
 ---
 title: User-based authentication FAQ
 description: Access answers to many of the most frequently asked questions about user-based authentication (device code flow) for the Warehouse Management mobile app.
-author: JTOne123
-ms.author: pavlodatsiuk
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: conceptual
 ms.date: 11/01/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -20,7 +18,7 @@ This article provides answers to many of the most frequently asked questions abo
 
 ## When do I have to switch to user-based authentication?
 
-Support for service-based authentication (client secret and certificate) will be removed from the Warehouse Management mobile app on July 15, 2024. After that date, you'll have to use user-based authentication (such as device code flow) to connect the Warehouse Management mobile app to Microsoft Dynamics 365 Supply Chain Management. For more information, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
+Support for service-based authentication (client secret and certificate) will be removed from the Warehouse Management mobile app on July 15, 2024. After that date, you'll have to use user-based authentication (such as device code flow) to connect the Warehouse Management mobile app to Microsoft Dynamics 365 Supply Chain Management. Learn more in [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
 ## Where can I learn more about user-based authentication?
 
@@ -66,7 +64,7 @@ Device code flow provides a two-step process that authenticates users on devices
 
 Device code flow is a user-based authentication method that lets you enter a Microsoft Entra ID user name and password to sign in from a device. After the app is signed in, individual workers still sign in by entering their Supply Chain Management worker ID.
 
-For more information, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
+Learn more in [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
 ## How many Microsoft Entra ID apps do I have to register in Azure?
 
@@ -85,10 +83,10 @@ You can choose any of the scenarios that are described in the following table. Y
 | Scenario | Notes |
 |---|---|
 | Use the same Microsoft Entra ID for all devices | <p>*Not recommended.*</p><p>This scenario, where you use a single Microsoft Entra ID user for all your devices, is less secure than other scenarios. It can lead to confusion in Supply Chain Management. For example, all warehouse processes are associated with a single system user, even when multiple warehouse workers use multiple warehouse devices to process work.</p> |
-| Use a unique Microsoft Entra ID for each device | <p>Each worker must manually sign in to the app when they start to use the device.</p><p>When you set up one Microsoft Entra ID user for each device, it's easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (For more information, see [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) |
+| Use a unique Microsoft Entra ID for each device | <p>Each worker must manually sign in to the app when they start to use the device.</p><p>When you set up one Microsoft Entra ID user for each device, it's easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (Learn more in [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) |
 | Use a unique Microsoft Entra ID for each worker | [Single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) is supported. Therefore, a worker who signs in to a device is automatically signed in to the Warehouse Management mobile app and all other apps that use the same Microsoft Entra ID. |
 
-For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
+Learn more in [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
 ## Do I have to map users on the Microsoft Entra ID applications page in Supply Chain Management when I use user-based authentication?
 
@@ -104,7 +102,7 @@ No. The maximum session time-out period is 90 days.
 
 ## Will the current worker sign-in page change or be removed?
 
-Although the worker sign-in page is required in some authentication scenarios, it can be skipped in others (for example, when a [default user ID](mobile-device-work-users.md#set-wma-users) is set for the warehouse worker account). For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
+Although the worker sign-in page is required in some authentication scenarios, it can be skipped in others (for example, when a [default user ID](mobile-device-work-users.md#set-wma-users) is set for the warehouse worker account). Learn more in [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
 ## How can I sign out a device?
 
@@ -116,7 +114,7 @@ Follow these steps to sign out the Microsoft Entra ID account that's signed in o
 
 ## Can I just use the Microsoft Entra ID as a worker and skip the worker sign-in page?
 
-Yes. You can map Microsoft Entra ID users to worker IDs in Supply Chain Management. Workers can then authenticate the app with Supply Chain Management and sign in as a worker at the same time. For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
+Yes. You can map Microsoft Entra ID users to worker IDs in Supply Chain Management. Workers can then authenticate the app with Supply Chain Management and sign in as a worker at the same time. Learn more in [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
 ## Can I mass deploy the mobile app with user-based authentication?
 
@@ -130,4 +128,4 @@ If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you
 
 ## Will user-based authentication work with Dynamics 365 Finance + Operations (on-premises)?
 
-The Warehouse Management mobile app will continue to work with Dynamics 365 Finance + Operations (on-premises), even after service-based authentication is removed. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Azure. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. For more information, see [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+The Warehouse Management mobile app will continue to work with Dynamics 365 Finance + Operations (on-premises), even after service-based authentication is removed. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Azure. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. Learn more in [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

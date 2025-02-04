@@ -1,16 +1,12 @@
 ---
 title: Business documents supported by Global Inventory Accounting
 description: Access a list of the business documents that are supported by Global Inventory Accounting, including a detailed example for purchase order documents.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/18/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-06-18
 ms.search.form:
-ms.dyn365.ops.version: 10.0.20
 ---
 
 # Business documents supported by Global Inventory Accounting

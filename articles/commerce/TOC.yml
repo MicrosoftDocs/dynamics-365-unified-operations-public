@@ -14,12 +14,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.43 (January 2025)
+          href: get-started/whats-new-commerce-10-0-43.md
+        - name: Commerce 10.0.42 (December 2024)
+          href: get-started/whats-new-commerce-10-0-42.md
+        - name: Commerce 10.0.41 (September 2024)
+          href: get-started/whats-new-commerce-10-0-41.md
         - name: Commerce 10.0.40 (June 2024)
           href: get-started/whats-new-commerce-10-0-40.md
-        - name: Commerce 10.0.39 (April 2024)
-          href: get-started/whats-new-commerce-10-0-39.md
-        - name: Commerce 10.0.38 (February 2024)
-          href: get-started/whats-new-commerce-10-0-38.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -40,6 +42,8 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
       - name: Deploy a demo environment
         href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
+      - name: Deploy a Commerce trial (Preview) environment
+        href: dev-itpro/commerce-trial.md
       - name: One Version service updates
         items:
         - name: One Version service updates overview
@@ -400,8 +404,6 @@
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
-          - name: Task recorder and help for Store Commerce
-            href: task-recorder-retail-pos.md
           - name: Create financial dimensions for POS registers and configure dimension values on registers
             href: tasks/create-financial-dimensions-pos.md
           - name: Create POS permissions group
@@ -446,7 +448,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows
+            - name: Check out faster with optimized payment flows (preview)
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
@@ -456,10 +458,6 @@
                 href: dev-itpro/data-sharing-gift-cards.md
               - name: Cash out gift card balance for a retail customer
                 href: dev-itpro/gift-card-cash-out.md
-          - name: RSAT
-            items:
-            - name: Test recorder and Regression suite automation tool for Store Commerce for web
-              href: dev-itpro/pos-rsat.md
           - name: Sales associates
             items:
             - name: Track commissions in the POS using sales groups
@@ -490,6 +488,8 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
+            - name: Offline reliability toast notifications in Store Commerce
+              href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
             - name: Dynamics 365 Commerce authentication flows
@@ -612,6 +612,8 @@
               href: dev-itpro/google-pay-adyen.md
             - name: Set up Apple Pay with Adyen
               href: dev-itpro/apple-pay-adyen.md
+            - name: Enable Tap to Pay on iPhone
+              href: dev-itpro/tap-to-pay-iphone.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -918,6 +920,8 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
+        - name: Purge Commerce transactions
+          href: purge-transactions.md
       - name: Sales orders
         items:
         - name: Create call center orders
@@ -1588,26 +1592,6 @@
           href: localizations/dev-itpro/emea-aut-fi-sample.md
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/dev-itpro/emea-aut-fi-sample-sdk.md
-      - name: Brazil
-        items:
-        - name: Commerce localization for Brazil
-          href: localizations/brazil/latam-bra-commerce-localization.md
-        - name: Set up and deploy Commerce localization for Brazil
-          href: localizations/brazil/latam-bra-deployment.md
-        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-nfce.md
-        - name: Manage customer information in POS for Brazil
-          href: localizations/brazil/latam-bra-customer-information.md
-        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-nfce-cancel-return.md
-        - name: Postponed registration of NFC-e documents issued in offline contingency mode
-          href: localizations/brazil/latam-bra-nfce-contingency-mode.md
-        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters
-          href: localizations/brazil/latam-bra-retail-statements.md
-        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-cf-e-sat.md
-        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-adyen.md
       - name: Eastern Europe
         items:
         - name: Common
@@ -1636,7 +1620,7 @@
             href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
-        - name: Cash register functionality
+        - name: Cash register functionality (preview)
           href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/france/emea-fra-fi-deployment.md
@@ -1686,20 +1670,6 @@
           href: localizations/dev-itpro/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md
-      - name: Russia
-        items:
-        - name: Commerce localization for Russia
-          href: localizations/russia/rus-commerce-localization.md
-        - name: Set up Commerce localization for Russia
-          href: localizations/russia/rus-commerce-setup.md
-        - name: Prepayments in Commerce for Russia
-          href: localizations/russia/rus-commerce-prepayments.md
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/russia/rus-simplified-address.md
-        - name: Fiscal printer integration sample for Russia
-          href: localizations/russia/rus-fpi-sample.md
-        - name: Customer information management for Russia
-          href: localizations/russia/rus-customer-information.md
       - name: Saudi Arabia
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
@@ -2856,6 +2826,8 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
+          - name: Store Commerce Hardware station extensibility for Android devices
+            href: dev-itpro/store-comm-android-extensibility.md            
       - name: E-commerce
         items:
         - name: Overview
@@ -3072,44 +3044,18 @@
           items:
           - name: Create Commerce payment packaging for finance and operations deployment
             href: dev-itpro/payment-connector-package.md
-      - name: Retail SDK (Legacy)
-        items:
-        - name: Overview
-          items:
-          - name: Retail software development kit (SDK)
-            href: dev-itpro/retail-sdk/retail-sdk-overview.md
-          - name: Retail software development kit (SDK) extensibility samples
-            href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-          - name: Retail SDK FAQ
-            href: dev-itpro/retail-sdk/sdk-faq.md
-          - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
-            href: dev-itpro/retail-sdk/migrate-sdk.md
-        - name: Environment setup
-          items:
-          - name: Development in cloud-hosted environments without admin access
-            href: dev-itpro/cloud-dev-box.md
-          - name: Retail SDK build pipeline
-            href: dev-itpro/retail-sdk/sdk-build-pipeline.md
-          - name: Set up a Visual Studio 2017 build agent to build MPOS
-            href: dev-itpro/retail-sdk/mpos-build-agent.md
-          - name: Run POS samples
-            href: dev-itpro/pos-run-samples.md
-        - name: Reference
-          items:
-          - name: E-commerce platform software development kit (SDK)
-            href: dev-itpro/ecommerce-platform-sdk.md
-          - name: Configure online stores
-            href: dev-itpro/configure-online-store.md
-          - name: Configure authentication providers
-            href: dev-itpro/configure-authentication-providers.md
-        - name: Packaging and deployment
-          items:
-          - name: Create deployable packages
-            href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-          - name: Sign MPOS appx with a code signing certificate
-            href: dev-itpro/pos-app-signing-certificate.md
-          - name: Set up POS hybrid app on Android and iOS
-            href: dev-itpro/hybridapp.md
+    - name: Copilot capabilities in Commerce
+      items:
+      - name: Store report insights by Copilot
+        href: copilot-pos-report-insights.md
+      - name: Customer insights by Copilot
+        href: copilot-pos-customer-insights.md
+      - name: Enable Copilot statement posting summaries
+        href: copilot-statement-summaries.md
+      - name: Use Copilot in site builder to enrich product detail pages
+        href: copilot-site-builder.md
+      - name: Streamline your merchandising process with Copilot-based insights
+        href: copilot-based-merch-insights.md
     - name: Responsible AI FAQs
       items: 
       - name: Overview
@@ -3118,6 +3064,8 @@
         href: responsible-ai/faqs-copilot-site-builder.md
       - name: FAQ for Copilot AI summarization in Commerce headquarters
         href: responsible-ai/faqs-ai-summarization-hq.md
+      - name: FAQ for Copilot-based insights
+        href: responsible-ai/faqs-ai-copilot-store-comm-summaries.md
     - name: Dynamics 365 Commerce troubleshooting and FAQs
       href: commerce-troubleshooting.md
   - name: Development and administration for finance and operations apps

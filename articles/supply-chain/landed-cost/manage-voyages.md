@@ -1,15 +1,14 @@
 ---
 title: Manage voyages
 description: Learn how to work with voyages, which typically represent vessels, including outlines on the All voyages page and its action pane.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: how-to
-ms.date: 08/09/2023
-ms.custom: bap-template
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: ITMTableListPage, ITMTable
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Manage voyages
@@ -17,6 +16,9 @@ ms.search.form: ITMTableListPage, ITMTable
 [!include [banner](../../includes/banner.md)]
 
 A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
+
+> [!TIP]
+> This article provides reference information that describes all of the settings available on the **Voyages** and **All voyages** pages. For step-by-step guides to creating and managing voyages, see [Create a voyage](/training/modules/work-with-landed-cost-supply-chain-management/create-voyage) and [Manage a voyage](/training/modules/work-with-landed-cost-supply-chain-management/manage-voyage), which are training units from the [Work with landed cost in Dynamics 365 Supply Chain Management](/training/modules/work-with-landed-cost-supply-chain-management/) training module.
 
 ## The All voyages page
 
@@ -58,7 +60,7 @@ The following table describes the actions that are available on the **Manage** t
 | Button | Description |
 |---|---|
 | Documents received | Update the voyage so that the **Documents received** option is set to *Yes*. You can use this button to lock the item and/or purchase line so that it can't be updated further. |
-| In transit | Update the **Voyage status** field to the in-transit status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. There's no further logic on this process. A voyage can also be automatically updated to the in-transit status, based on settings in the [Tracking control center](delivery-information-setup.md).
+| In transit | Update the **Voyage status** field to the in-transit status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. There's no further logic on this process. A voyage can also be automatically updated to the in-transit status, based on settings in the [Tracking control center](delivery-information-setup.md). |
 | Ready for costing | Update the **Voyage status** field to the ready for costing status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. A voyage can be costed when all the invoices have been processed (both stock invoices and voyage cost invoices) and the goods have been received. If the estimated costs that are associated with a voyage haven't been costed, an error occurs when you try to process the costing of a voyage. |
 | Costed | Clean up any costing irregularities after an invoice exists for all purchase orders and voyage costs. When you select this button, the **Voyage update - Costed** dialog box appears. There, you can select to post on the standard financial date or specify a posting date, and then run the action. You can rerun the action as many times as you want. You can also use the **Voyage update - Costed** dialog box to establish a schedule to run the action as a periodic task (batch job). We recommend that you regularly run the action by setting it up as a batch job. |
 | Post receipts list | Post a receipt list for all purchase order lines in the voyage.  |
@@ -79,7 +81,7 @@ The following table describes the buttons that are available on the **General** 
 
 | Button | Description |
 |---|---|
-| Receipts list | Open a list of product receipts for all purchase order lines in the voyage.  If no product receipt lists have been processed, this button is unavailable. |
+| Receipts list | Open a list of product receipts for all purchase order lines in the voyage. If no product receipt lists have been processed, this button is unavailable. |
 | Product receipt | Open the product receipt record for the purchase order lines that are associated with the voyage, if that record is used. If no product receipts have been posted, this button is unavailable. The product receipt process won't be used if you're using goods-in-transit processing. |
 | Item arrival | Open the item arrival journal, if it's used. |
 | Tracking | Open the **Inbound tracking** page, where you can update the expected arrival date of goods in a shipping container and a voyage, and subsequently update the expected delivery dates of purchase order lines. |
@@ -100,7 +102,7 @@ The **Voyage lines** FastTab in the **Lines** view of a voyage is related to the
 
 #### Information on the Line details FastTab
 
-The **Line details** FastTab in the **Lines** view of a voyage provides more information about the line that is currently selected on the **Voyage lines** FastTab. Note that this FastTab includes details about the position that each line occupies in the container, and its declared quantity.
+The **Line details** FastTab in the **Lines** view of a voyage provides more information about the line that is currently selected on the **Voyage lines** FastTab. This FastTab includes details about the position that each line occupies in the container, and its declared quantity.
 
 ### <a name="header-view"></a>Header view of the voyage details page
 

@@ -1,12 +1,13 @@
 ---
 title: Update LCS Connection authentication tasks to MSAL in Azure Pipelines
 description: Learn about how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
-author: josaw1
-ms.author: josaw
-ms.topic: article
-ms.date: 11/30/2021
+author: pathaku
+ms.author: pathaku
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 10/23/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
@@ -31,13 +32,13 @@ To add the MSAL.PS install task to the build of your YML or Classic pipeline, se
 
 ## Update existing tasks
 
-To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=classic). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
+To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
 
 | Task name | Minimum version that uses MSAL |
 | --- | --- |
-| [Dynamics Lifecycle Services (LCS) Asset Download](pipeline-asset-download.md) | 2.\* or later |
+| [Dynamics Lifecycle Services (LCS) Asset Download](pipeline-asset-download.md) | 1.\* or later |
 | [Dynamics Lifecycle Services (LCS) Asset Upload](pipeline-asset-upload.md) | 1.\* or later |
-| [Dynamics Lifecycle Services (LCS) Asset Deployment](pipeline-deploy-asset.md) | 1.\* or later |
+| [Dynamics Lifecycle Services (LCS) Asset Deployment](pipeline-deploy-asset.md) | 2.\* or later |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

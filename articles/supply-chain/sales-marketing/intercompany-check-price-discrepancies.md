@@ -1,16 +1,12 @@
 ---
 title: Check intercompany order price discrepancies
 description: Learn how to check intercompany order price discrepancies, including a step-by-step process for price discrepancies on intercompany orders.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Check intercompany order price discrepancies

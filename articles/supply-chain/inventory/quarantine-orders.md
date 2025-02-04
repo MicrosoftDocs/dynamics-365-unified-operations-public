@@ -1,17 +1,14 @@
 ---
 title: Quarantine orders
 description: Learn how to use quarantine orders to block inventory, including an outline and step-by-step process on quarantine on-hand inventory.
-author: yufei-huang
-ms.author: yufeihuang
-ms.topic: article
-ms.date: 03/23/2021
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
-ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Quarantine orders
@@ -52,11 +49,11 @@ Quarantine orders can have the following statuses:
 
 ### Created
 
-When a quarantine order has been created manually, but the item isn't yet in the quarantine warehouse, the quarantine order has a status of **Created**. Two inventory transactions are generated. One transaction is an issue transaction that can have a status of **On order**, **Reserved physical**, or **Picked**. The other transaction is a receipt transaction that can have a status of **Ordered** or **Registered** at the quarantine warehouse. You can reserve, pick, and register updates to the inventory by using the usual processes.
+When a quarantine order has been created manually, but the item isn't yet in the quarantine warehouse, the quarantine order has a status of *Created*. Two inventory transactions are generated. One transaction is an issue transaction that can have a status of *On order*, *Reserved physical*, or *Picked*. The other transaction is a receipt transaction that can have a status of *Ordered* or *Registered* at the quarantine warehouse. You can reserve, pick, and register updates to the inventory by using the usual processes.
 
 ### Started
 
-When a quarantine order has a status of **Started**, the inventory is transferred from the regular warehouse to the quarantine warehouse, and two inventory transactions are generated. One transaction has a status of **Deducted**, and the other transaction has a status of **Received**. At the same time, two inventory transactions are created to handle the return transfer. These transactions aren't dated. One transaction has a status of **Reserved physical**, and the other transaction has a status of **Ordered**.
+When a quarantine order has a status of *Started*, the inventory is transferred from the regular warehouse to the quarantine warehouse, and two inventory transactions are generated. One transaction has a status of *Deducted*, and the other transaction has a status of *Received*. At the same time, two inventory transactions are created to handle the return transfer. These transactions aren't dated. One transaction has a status of *Reserved physical*, and the other transaction has a status of *Ordered*.
 
 ### Reported as finished
 
@@ -70,7 +67,7 @@ When a quarantine order is ended, the item is moved from the quarantine warehous
 
 As part of the quarantine order process, you can scrap inventory. When you process scrap, the status of the inventory is set to *Sold* by an issue transaction from the quarantine warehouse.
 
-## Additional resources
+## Related information
 
 - [Inventory blocking](inventory-blocking.md)
 

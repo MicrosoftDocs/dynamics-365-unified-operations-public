@@ -1,17 +1,14 @@
 ---
 title: Manage folios
 description: Learn how to work with folios, which typically consist of one vendor's goods for one entity or company per shipment, including an outline on action panes.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 12/14/2020
-ms.custom:
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-12-14
 ms.search.form: ITMFolioTable, ITMFolioTableListPage
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Manage folios
@@ -34,7 +31,7 @@ The following table describes the buttons that are available directly on the Act
 |---|---|
 | New | Create a folio. |
 | Delete | Delete the open or selected folio. |
-| Voyage costs | Open the **Voyage costs** page, where you can view and add folio-level costs to all the goods in the voyage. When folio costs are manually added to the voyage, they are automatically added to the cost inquiry page and apportioned to every good according to the method that is specified on the **Voyage costs** page. |
+| Voyage costs | Open the **Voyage costs** page, where you can view and add folio-level costs to all the goods in the voyage. When folio costs are manually added to the voyage, they're automatically added to the cost inquiry page and apportioned to every good according to the method that is specified on the **Voyage costs** page. |
 
 ### Buttons on the Manage tab
 
@@ -49,7 +46,7 @@ The following table describes the buttons that are available on the **Manage** t
 | Receive transfer order | Post a transfer order receipt for all transfer order lines that are related to the current folio in the related shipment. |
 | Receive goods in transit | Receive all order lines that are in transit in the folio. |
 | Documents received | Update the setting of the **Documents received** option to *Yes*. You can use this button to lock the item and/or purchase line so that it can't be updated further. |
-| Find auto costs | Find relevant voyage costs. If these costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?" Note that voyage costs that are attached to the folio and that have been invoiced won't be overwritten. |
+| Find auto costs | Find relevant voyage costs. If these costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?" Voyage costs that are attached to the folio and that have been invoiced won't be overwritten. |
 | Create arrival journal | Generate an arrival journal for organizations by using advanced warehouse features. You can select **Initialize quantity** (recommended), **Create from goods in transit**, and/or **Create from purchase orders**. The last option depends on whether goods-in-transit processing is being used. |
 | Accrue costs | Accrue costs where a cost type has a ledger account specified for the debit. This button is typically used when the stock is in transit, or when goods have been received and invoiced. |
 
@@ -79,17 +76,17 @@ The following table describes the fields that are available on the **General** F
 | Customs broker | Select the customs broker for the folio. Customs brokers are defined on the vendor. They enable created costs to be determined automatically. |
 | House air waybill/Bill of lading | Specify the house air waybill or bill of lading that applies to the folio. |
 | Company | The legal entity (company) that is associated with the folio. |
-| Cargo control number | This field is used by customs departments in some countries or regions. |
+| Cargo control number | This field is used by customs departments in some countries/regions. |
 | Measurement | This field enables a measurement to be specified in the **Landed cost** module. Measurements are often used by organizations that don't know the individual volume or weight of goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight or cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected or manually entered. |
 | Measurement unit | The unit that applies to the specified measurement. |
 | Number of cartons | The number of cartons in the folio. This field can be automatically updated, depending on the parameter selection. |
 | Vendor account | Select the vendor that is associated with the folio. This field is for informational purposes only. It doesn't affect any functionality. |
 | Name | The name of the selected vendor account. |
 | Remarks | Enter any additional information that is related to the folio. |
-| Description of goods | Select a goods description to help identify the folio. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
+| Description of goods | Select a goods description to help identify the folio. Learn more in [Description of goods](shipping-information-setup.md#description-of-goods). |
 | Valuation date | This field is related to the duty entry page. The **Landed cost** module will use the customs exchange rate for the date that you set here. The default value is the date on the duty entry page. |
-| Customs ID | Enter the customs ID. The customs departments in countries or regions provide this ID. |
-| Tariff code | Enter a tariff code to associate with the folio. This code is typically required (and defined) by the country or region that you're shipping to. |
+| Customs ID | Enter the customs ID. The customs departments in countries/regions provide this ID. |
+| Tariff code | Enter a tariff code to associate with the folio. This code is typically required (and defined) by the country/region that you're shipping to. |
 
 ### Settings on the Delivery FastTab
 
@@ -137,7 +134,7 @@ The following table describes the buttons that are available on the **Lines** Fa
 | Button | Description |
 |---|---|
 | Remove | Remove the selected purchase order line from the voyage. |
-| Inventory \> Transactions | View inventory transactions for the selected purchase order line. Note that if you're using goods in transit, the original order and the goods-in-transit orders are also shown. |
+| Inventory \> Transactions | View inventory transactions for the selected purchase order line. If you're using goods in transit, the original order and the goods-in-transit orders are also shown. |
 | Inventory \> Display dimensions | Open a dialog box where you can select the inventory dimensions that appear for the transactions that you view. |
 | Refresh | Update information that is related to the line amount, weight, or volume of the selected purchase order line. |
 

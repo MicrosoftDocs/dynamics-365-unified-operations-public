@@ -75,8 +75,6 @@ This article provides an example of a business event.
 
     Depending on the format of field, the value must be converted to **String** format. This conversion isn't required if the format of the field is already **String**. For example, because the format of **AssignedWorkerPersonnelNumber** is **String**, the field value is used.
 
-    ![Configuring Get a record.](./media/get-record4.png)
-
 12. Use the **Outlook** (or **Teams**) connector to send notifications.
 13. Select **Add dynamic content** to add dynamic content to the notification.
 

@@ -4,14 +4,15 @@
 title: View version history to revert pages and fragments
 description: This article describes how to view the version history for a page or fragment and revert to an older version in Microsoft Dynamics 365 Commerce site builder.
 author: phinneyridge
-ms.date: 06/21/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # View version history to revert pages and fragments

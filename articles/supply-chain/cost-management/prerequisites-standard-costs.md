@@ -1,14 +1,13 @@
 ---
 title: Prerequisites for standard costs
 description: Learn about the basic steps for using standard costs, including a step-by-step process for setting up standard costs and additional resources. 
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventStdCostConv, CostingVersion
 ---
 
@@ -54,7 +53,7 @@ To set up standard costs, follow these steps.
 
     Customers who want to change their existing items to a standard cost inventory model must use the **Standard cost conversions** page.
 
-## Additional resources
+## Related information
 
 ### Help articles
 

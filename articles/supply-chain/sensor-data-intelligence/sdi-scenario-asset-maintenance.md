@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Asset maintenance scenario (preview)
@@ -25,7 +21,7 @@ The *asset maintenance* scenario lets you use sensor data to create counter reco
 
 The following video shows how to set up and try out the asset maintenance scenario using standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md). The remaining sections in this article provide the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58aRW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=24d48e9f-b79f-4b78-832a-3ee9a6958cad]
 
 ## Prepare demo data for the asset maintenance scenario
 
@@ -35,7 +31,7 @@ In this section, you will set up the *AK-101, Air knife* asset in demo data as a
 
 ### Set up a sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Create an asset counter to track production hours
 

@@ -4,13 +4,11 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/02/2024
+ms.date: 01/10/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2023-12-01
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.37
 ---
 
@@ -27,7 +25,7 @@ This article explains how to configure and use the Electronic Invoicing service 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - Your company must have a separate signed service agreement with an ISV that will provide electronic document delivery service. Additionally, you must obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV last-mile connector.
-- Become familiar with Electronic invoicing functionality. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Become familiar with Electronic invoicing functionality. For more information, see [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Consult the list of available country/region-specific [Electronic invoicing features](e-invoicing-country-specific-availability.md). The capability to use the ISV last-mile connector for submission complements this list.
 
 ## Integration with Edicom
@@ -140,14 +138,24 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
+### Electronic invoicing in Chile
+
+For more information about electronic invoicing in Chile, see:
+[Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
+[Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
+
 ### Electronic invoicing in Denmark
 
 For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
 
+### Electronic invoicing in Panama
+
+For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+
 ## Additional resources
 
-- [Electronic invoicing administration and integration components](../global/e-invoicing-administration-integration-components.md)
-- [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md)
-- [Work with Globalization features](../global/e-invoicing-working-globalization-features.md)
+- [Electronic invoicing administration and integration components](../global/gs-e-invoicing-administration-integration-components.md)
+- [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md)
+- [Work with Globalization features](../global/gs-e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

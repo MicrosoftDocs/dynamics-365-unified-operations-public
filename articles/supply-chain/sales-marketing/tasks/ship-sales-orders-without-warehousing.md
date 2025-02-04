@@ -1,17 +1,13 @@
 --- 
 title: Ship sales orders without warehousing
 description: Learn how to update a sales order when products are shipped to the customer, including a process for posting packing slips for orders. 
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 08/20/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User  
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Ship sales orders without warehousing

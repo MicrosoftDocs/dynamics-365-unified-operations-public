@@ -1,15 +1,14 @@
 ---
 title: Register driver check-in and check-out for an appointment
 description: Learn how to register a driver check-in and a driver check-out, and how to interpret the appointment status with an outline for selecting an appointment.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: how-to
-ms.date: 11/17/2023
-ms.custom: bap-template 
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Register driver check-in and check-out for an appointment

@@ -1,13 +1,12 @@
 ---
 title: Enable Inventory Visibility for Commerce
 description: This article describes how to set up Inventory Visibility for Microsoft Dynamics 365 Commerce Scale Units (CSUs).
-author: yufeihuang
+author: yufei-huang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form: InventInventoryDataService, KeyVaultParameters
 ms.topic: how-to
 ms.date: 06/21/2024
-audience: Application User
 ms.custom: 
   - bap-template
 ---
@@ -82,7 +81,7 @@ To create a key vault to hold the client secret for Inventory Visibility, follow
     - **Upload options** – Select *Manual*.
     - **Name** – Enter a name for the secret (for example, *commerce-iv-01-secret*). Copy the value, paste it into your temporary text file, and label it.
     - **Secret value** – Enter the client secret value that you used when you installed the Inventory Visibility add-in (as mentioned in the [Prerequisites](#prerequisites) section).
-    - **Content type** – Enter *application/vnd.ms-StorageConnectionString*.
+    - **Content type** – This is an optional field. The suggested value is *application/vnd.bag-3rdPartyHostedSecretNoRotation*.
     - **Set activation date** – Select this checkbox, and then enter the first date when this secret should be valid.
     - **Set expiration date** – Select this checkbox, and then enter the last date when this secret should be valid.
     - **Enabled** – Set this option to *Yes*.

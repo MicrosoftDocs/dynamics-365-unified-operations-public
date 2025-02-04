@@ -1,17 +1,13 @@
 ---
 title: Attribute-based sales prices for constraint-based product configuration
 description: Learn how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 10/2/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-08-17
 ms.search.form:
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Attribute-based sales prices for constraint-based product configuration
@@ -76,7 +72,7 @@ To add explicit prices in an additional currency:
     > The **Condition** field for the expression rules is "owned" by the default currency, which means that you can't modify the condition for other currencies. You also can't add new expression rules while a currency other than the default currency is selected as the **Current currency**.
 1. Edit values in the **Expression** column as needed for the current currency.
 
-In the example below, _EUR_ is the default currency, and _USD_ has been added as an additional currency.
+In the example below, *EUR* is the default currency, and *USD* has been added as an additional currency.
 
 ![Example of a model with multiple currencies.](media/prod-config-rules-currency-example.png "Example of a model with multiple currencies")
 
@@ -115,7 +111,7 @@ To set up selection criteria for price models:
 
     ![Price model criteria.](media/prod-config-price-model-criteria.png "Price model criteria")
 
-1. Select the row for the query you want to define and then select **Edit** on the **Action Pane**. The query designer dialog box opens. It works like most query designers in Supply Chain Management. Use it to define the conditions under which the price model for the row you selected should be applied.
+1. Select the row for the query you want to define and then select **Edit** on the Action Pane. The query designer dialog box opens. It works like most query designers in Supply Chain Management. Use it to define the conditions under which the price model for the row you selected should be applied.
 
 1. Repeat steps 4-5 for each query you require.
     > [!TIP]
@@ -135,6 +131,5 @@ The final step is to specify attribute-based sales prices for the product model 
 1. On the Action Pane, open the **Model** tab and, from the **Product model details** group, select **Versions**.
 1. The **Versions** page opens. Make sure the **Pricing method** is set to **Attribute based**.
     ![Set the pricing method to attribute based.](media/prod-config-versions.png "Set the pricing method to attribute based")
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

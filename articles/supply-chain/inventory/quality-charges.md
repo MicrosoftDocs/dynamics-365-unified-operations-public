@@ -1,17 +1,12 @@
 ---
 title: Charges for nonconformance operations
 description: Learn how to create quality charges that can be used with operations for a nonconformance, including examples of quality charges.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-06-17
 ms.search.form: InventTestMiscCharges
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
@@ -43,7 +38,7 @@ A fee structure is defined for each circumstance and specified in the contract. 
 
 For details about how to add operations to a nonconformance and apply charges to them, see [Operations for nonconformances](quality-operations.md).
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

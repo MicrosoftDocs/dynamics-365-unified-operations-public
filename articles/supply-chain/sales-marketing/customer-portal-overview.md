@@ -1,14 +1,13 @@
 ---
 title: Customer portal for Dynamics 365 Supply Chain Management overview
 description: Learn about the Customer portal and integration in modern supply chains, including outlines on who should use it and how it works.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: overview
 ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -32,7 +31,7 @@ The Customer portal template has all the customization capabilities that the por
 
 ## Video
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b39bd847-38bc-4a21-af49-a86795085fc5]
 
 The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

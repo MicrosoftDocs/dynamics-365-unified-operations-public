@@ -1,12 +1,11 @@
 ---
 title: Execution restrictions for specific data export projects
 description: Learn about execution restrictions for specific data export projects in older, out-of-service environments, with a link to more information for supported versions.
-author: peakerbl
-ms.author: johnmichalak
+author: pnghub
+ms.author: gned
 ms.topic: article
-ms.date: 05/12/2022
+ms.date: 07/12/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-05-12
 ---

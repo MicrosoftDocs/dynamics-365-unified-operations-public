@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 09/17/2024
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
 ms.search.validFrom: 2016-11-30
@@ -17,6 +17,9 @@ ms.dyn365.ops.version: Version 1611
 # VAT statement details for Latvia
 
 [!include [banner](../../includes/banner.md)]
+
+> [!NOTE]
+> This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Latvia)](emea-lva-vat-declaration-latvia.md).
 
 This article explains how to set up the VAT statement for legal entities in Latvia.
 

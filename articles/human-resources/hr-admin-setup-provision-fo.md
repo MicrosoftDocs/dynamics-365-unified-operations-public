@@ -33,11 +33,11 @@ This article explains how to provision a new production environment for Microsof
 Before you start to provision a new environment, the following prerequisites must be in place:
 
 - You've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
-- The global administrator has signed in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) and created a new finance and operations project.
+- Sign into [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) as the designated service account user and created a new finance and operations project.
 
 ## Provision a Human Resources trial environment
 
-Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance includes the Human Resources capabilities. For more information about Dynamics 365 Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
+Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. For more information about Dynamics 365 finance and operations trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
 
 ## Plan Human Resources environments
 
@@ -86,7 +86,7 @@ For information about the languages and geographies that are supported for Human
 
 ## Grant access to the environment
 
-By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles).
+By default, the designated service account user who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles).
 
 ## Additional resources
 You can learn more about how to use and manage projects in LCS on the finance and operations app infrastructure by using the following resources:

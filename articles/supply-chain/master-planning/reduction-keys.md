@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.date: 04/15/2020
 ms.topic: article
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ---
 
@@ -223,7 +218,7 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
 
 When you select **Transactions - reduction key** or **Transactions - dynamic period** as the method for reducing forecast requirements, you can specify which transactions reduce the forecast. On the **Coverage groups** page, on the **Other** FastTab, in the **Reduce forecast by** field, select **All transactions** if all transactions should reduce the forecast or **Orders** if only sales orders should reduce the forecast.
 
-## Additional resources
+## Related information
 
 - [Master plans overview](master-plans.md)
 

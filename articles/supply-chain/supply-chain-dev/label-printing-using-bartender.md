@@ -1,14 +1,13 @@
 ---
 title: Print labels using the Seagull Scientific BarTender® label service solution
 description: Learn how to set up and print labels by using the Seagull Scientific BarTender® label service solution, including prerequisites.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ---
 
@@ -36,7 +35,7 @@ To use the features that are described in this article, you must be running Supp
 Before you can access BarTender Cloud through its REST API, you must get a copy of your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center. Be sure to make a note of the token, because you'll have to enter it later.
 
 > [!NOTE]
-> Personal access tokens expire after 30 days. You'll have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
+> Personal access tokens expire after a fixed number of days. You'll have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
 
 ## Configure Supply Chain Management to print to printers managed by BarTender Cloud
 
@@ -150,7 +149,7 @@ You can now create label printers and label layouts.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the beginning of the full Librarian name has already been coded in the variable label template.
 > - When you create a variable-based label layout, **Variable name** in the **Data variables** grid can't be the same as **Variable name** in the **System variables** grid.
 
-## Additional resources
+## Related information
 
 - [Print labels using an external service](label-printing-using-external-label-service.md)
 - [Label Layouts](../warehousing/print-license-plate-labels-using-label-layouts.md)

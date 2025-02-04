@@ -1,22 +1,21 @@
 ---
 title: Calendars and master planning
-description: Learn about supply chain calendars and how they affect master planning, including an definition of a calendar and outlines of various values.
+description: Learn about supply chain calendars and how they affect master planning, including a definition of a calendar and outlines of various values.
 author: t-benebo
 ms.author: benebotg
-ms.topic: how-to
-ms.date: 11/24/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WorkCalendarTable, VendTable
+ms.topic: how-to
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Calendars and master planning
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of supply chain calendars and how they affect master planning. The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
+This article provides an overview of supply chain calendars and how they affect master planning. The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding assigning, using, and updating calendars are given.
 
 ## Definition of a calendar
 
@@ -43,6 +42,9 @@ The coverage group can be assigned on different pages:
 - On the **Released product details** page of an item. To view the coverage group for an item, go to **Product information management** \> **Products** \> **Released products**, and select the item to open the **Released product details** page. The **Plan** FastTab shows the item coverage group.
 - On the **Item coverage** page. On the **Released product details** page, select **Item coverage** to open the **Item coverage** page. The **Overview** tab shows different parameters for replenishment, depending on the site, warehouse, and product dimensions. The coverage group for each item is inherited from the coverage group on the **Released product details** page. However, you can override it by selecting **Use specific settings** or **Override group setting** on the **General** tab.
 - On the **Master planning parameters** page. If no coverage group is assigned to an item on the previously mentioned pages, master planning uses the general coverage group that's set in the **General coverage group** field on the **Master planning parameters** page (**Master planning** \> **Setup** \> **Master planning parameters**).
+
+> [!NOTE]
+> If no calendar is defined for the coverage group of an item, Planning Optimization uses the calendar of the default coverage group defined on the **Master Planning Parameters** page.
 
 #### Define the lead time for a purchased item
 
@@ -149,7 +151,7 @@ To determine the shipping and receipt dates for the planned transfer, the system
 
 ## Using calendars in master planning
 
-### Assignment of SCM calendars
+### Assign calendars
 
 It's important to set the calendars to identify the working days of the company. The best practice is to set a calendar for each element that has different working days. In other words, set all external calendars (customer and vendor) and all internal calendars (warehouse, coverage group, and mode of delivery) that are related to the company.
 
@@ -163,7 +165,7 @@ If no warehouse calendars are set, the legal entity calendar can be used as a so
 
 It's important to consider that a coverage group calendar overrides receipt dates in master planning. Therefore, we recommend that you use coverage group calendars cautiously. They're especially useful in cases where replenishment must be done on specific days of the week.
 
-### Updating SCM-related calendars
+### Update calendars
 
 Although it's important that all relevant calendars are assigned in their appropriate place (vendor, customer, warehouse, mode of delivery, or coverage group), it's equally important to update them so that they reflect changes. The system defines the production, transfer, purchase, and sales order dates based on the combination of assigned calendars.
 

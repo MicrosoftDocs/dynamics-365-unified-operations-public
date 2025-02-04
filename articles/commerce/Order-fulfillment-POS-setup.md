@@ -1,19 +1,17 @@
 ---
-# required metadata
-
 title: Set up order fulfillment for stores
 description: This article describes how to set up store order fulfillment in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 11/29/2023
-ms.topic: article
+ms.topic: how-to
 ms.search.form:  RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2017-10-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Set up order fulfillment for stores

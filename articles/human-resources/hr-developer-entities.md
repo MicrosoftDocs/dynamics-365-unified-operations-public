@@ -35,7 +35,7 @@ Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility an
 
 The following Dataverse tables are available based on Human Resources entities.
 
-For more information about the known issues, see [Issue search in Lifecycle Services (LCS)](/dev-itpro/lifecycle-services/issue-search-lcs).
+For more information about the known issues, see [Issue search in Lifecycle Services (LCS)](../dev-itpro/lifecycle-services/issue-search-lcs.md).
 
 ## Benefit tables
 

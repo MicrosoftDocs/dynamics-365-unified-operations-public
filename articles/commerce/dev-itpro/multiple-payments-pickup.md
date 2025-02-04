@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Multiple available payment methods for in-store pickup
 description: This article covers the capabilities of Microsoft Dynamics 365 Commerce point of sale (POS) when one or more pre-existing payment methods can be used against a transaction.
 author: BrianShook
 ms.date: 12/03/2021
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
+ms.topic: how-to
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgriffin
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2021-11-15
-ms.dyn365.ops.version: 
-
+ms.custom: 
+  - bap-template
 ---
 
 # Multiple available payment methods for in-store pickup

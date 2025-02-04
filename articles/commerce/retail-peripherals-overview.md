@@ -1,32 +1,42 @@
 ---
 title: Peripherals
-description: This article explains the concepts that are related to Microsoft Dynamics 365 Commerce peripherals. 
+description: This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. 
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/11/2024
-ms.topic: conceptual
-ms.custom: 
-  - bap-template
-audience: Application User
-ms.reviewer: johnmichalak
+ms.date: 08/07/2024
+ms.topic: overview
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Peripherals
 
 [!include[banner](includes/banner.md)]
 
-This article explains the concepts that are related to Microsoft Dynamics 365 Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Prerequisites
 
-When running Dynamics 365 Commerce version 10.0.41, you must add the following registry entries to support Transport Layer Security (TLS) 1.3.
-- TLS 1.2\Server:Enabled=0
+When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
 - TLS 1.3\Server:Enabled=1
-- TLS 1.2\Client:Enabled=0
 - TLS 1.3\Client:Enabled=1
+- TLS 1.2\Server:Enabled=0
+- TLS 1.2\Client:Enabled=0
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
+
+When configuring hardware station for Commerce versions 10.0.41 and earlier, you must add the following registry entries to support TLS 1.2:
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
 - TLS 1.1\Server:Enabled=0
 - TLS 1.1\Client:Enabled=0
 - TLS 1.0\Server:Enabled=0
@@ -81,11 +91,11 @@ POS peripherals are typically divided into classes. This section describes and g
 
 ### Printer
 
-Printers include traditional POS receipt printers and full-page printers. Printers are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces. Up to two printers can be used at the same time. This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers. Customer orders, which carry more information, are printed on a full-page printer. Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth.
+Printers include traditional POS receipt printers and full-page printers. Printers are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces. Epson and Star are the preferred receipt printer original equipment manufacturers (OEMs). For other OEMs, you must create extensions to integrate with them. Up to two printers can be used at the same time. This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers. Customer orders, which carry more information, are printed on a full-page printer. Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth. 
 
 ### Scanner
 
-Up to two barcode scanners can be used at the same time. This capability supports scenarios where a scanner that is more mobile is required to scan large or heavy items, whereas a fixed embedded scanner is used for most standard-sized items, to speed up checkout times. Scanners can be supported through OPOS, Universal Windows Platform (UWP), or keyboard wedge interfaces. USB or Bluetooth can be used to connect a scanner to a computer.
+Up to two barcode scanners can be used at the same time. This capability supports scenarios where a scanner that is more mobile is required to scan large or heavy items, whereas a fixed embedded scanner is used for most standard-sized items, to speed up checkout times. Scanners can be supported through OPOS, Universal Windows Platform (UWP), or keyboard wedge interfaces. Scanning on Store Commerce for iOS is only supported via the keyboard wedge interface, so the scanner Store Commerce uses for iOS must have the ability to send the scan data as individual keystrokes. USB or Bluetooth can be used to connect a scanner to a computer.
 
 ### MSR
 
@@ -93,7 +103,7 @@ One USB magnetic stripe reader (MSR) can be set up by using OPOS drivers. If you
 
 ### Cash drawer
 
-Two cash drawers can be supported per hardware profile. This capability enables two active shifts per register to be available at the same time. In the case of a shared shift, or a cash drawer that is used by multiple mobile POS devices at the same time, only one cash drawer is allowed per hardware profile. Cash drawers can be connected directly to a computer via USB, connected to a network, or connected to a receipt printer via an RJ12 interface. In some cases, cash drawers can also be connected via Bluetooth.
+Two cash drawers can be supported per hardware profile. This capability enables two active shifts per register to be available at the same time. In the case of a shared shift, or a cash drawer that is used by multiple mobile POS devices at the same time, only one cash drawer is allowed per hardware profile. Cash drawers can be connected directly to a computer via USB, connected to a network, or connected to a receipt printer via an RJ12 interface. In some cases, cash drawers can also be connected via Bluetooth. Epson and Star are the preferred cash drawers OEMs. For other OEMs, you must create extensions to integrate with them.
 
 ### Line display
 
@@ -127,7 +137,7 @@ Commerce supports the OPOS industry standard as the primary peripheral device pl
 -   **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. Therefore, the testing helps guarantee that if Commerce supports a device class through OPOS, many device types are supported provided that the manufacturer provides a service object that's built for OPOS. You don't have to explicitly test each device type.
 -   **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
-[![Control object and service object.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
+![Control object and service object.](./media/retail_peripherals_overview01.png)
 
 Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
 
@@ -244,7 +254,7 @@ To enable the **Keep connection open** setting in Commerce headquarters version 
 1. In headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**.
 1. In the left pane, select a hardware profile.
 1. On the **POS hardware profile** form, on the **Printer** FastTab, set the **Keep connection open** option to **Yes**.
-1. Run the **1070 (Channel configuration)** job. 
+1. Run the **1090** distribution schedule job to synchronize the updated hardware profile to the store.
 
 > [!NOTE]
 > Only use this configuration with a dedicated hardware profile for OPOS printers, cash drawers, and line display devices.
@@ -557,7 +567,7 @@ This configuration can be used for all Modern POS clients that have a hardware s
 5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
 6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
 7.  Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md).
-8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
+8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
 9.  Sign in to Modern POS, and select **Perform nondrawer operations**.
 10. Start the **Manage hardware stations** operation.
 11. Select **Manage**.
@@ -612,25 +622,43 @@ The hardware station installer automatically makes the following registry edits 
 - Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used. 
 
 ### SSL and TLS
-By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
 
-1. Press the Windows logo key+R to open a **Run** window.
-2. In the **Open** field, type **Regedit**, and then select **OK**.
-3. If a **User Account Control** message box appears, select **Yes**.
-4. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys are automatically entered to allow for TLS 1.3 only:
+By default, SSL and all versions of TLS except TLS 1.3 are disabled starting with Commerce version 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead.
 
-    - TLS 1.2\\Server:Enabled=0
-    - TLS 1.3\\Server:Enabled=1
-    - TLS 1.2\\Client:Enabled=0
-    - TLS 1.3\\Client:Enabled=1
-    - TLS 1.1\\Server:Enabled=0
-    - TLS 1.1\\Client:Enabled=0
-    - TLS 1.0\\Server:Enabled=0
-    - TLS 1.0\\Client:Enabled=0
-    - SSL 3.0\\Server:Enabled=0
-    - SSL 3.0\\Client:Enabled=0
-    - SSL 2.0\\Server:Enabled=0
-    - SSL 2.0\\Client:Enabled=0
+To edit or enable these values, follow these steps:
+
+1. Select the Windows key + R to open a **Run** command window.
+1. In the **Open** field, enter "Regedit", and then select **OK**.
+1. If a **User Account Control** dialog appears, select **Yes**.
+1. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
+
+   The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only:
+
+    - TLS 1.3\Server:Enabled=1
+    - TLS 1.3\Client:Enabled=1
+    - TLS 1.2\Server:Enabled=0
+    - TLS 1.2\Client:Enabled=0
+    - TLS 1.1\Server:Enabled=0
+    - TLS 1.1\Client:Enabled=0
+    - TLS 1.0\Server:Enabled=0
+    - TLS 1.0\Client:Enabled=0
+    - SSL 3.0\Server:Enabled=0
+    - SSL 3.0\Client:Enabled=0
+    - SSL 2.0\Server:Enabled=0
+    - SSL 2.0\Client:Enabled=0
+
+   The following keys are automatically entered for Commerce versions 10.0.41 and earlier to allow for TLS 1.2 only:
+
+    - TLS 1.2\Server:Enabled=1
+    - TLS 1.2\Client:Enabled=1
+    - TLS 1.1\Server:Enabled=0
+    - TLS 1.1\Client:Enabled=0
+    - TLS 1.0\Server:Enabled=0
+    - TLS 1.0\Client:Enabled=0
+    - SSL 3.0\Server:Enabled=0
+    - SSL 3.0\Client:Enabled=0
+    - SSL 2.0\Server:Enabled=0
+    - SSL 2.0\Client:Enabled=0
 
 No additional network ports should be open, unless they're required for known, specified reasons.
 
@@ -678,7 +706,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 
 Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal application programming interface (API)](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 

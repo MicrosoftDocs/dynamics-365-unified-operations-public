@@ -1,17 +1,13 @@
 --- 
 title: Create batch attributes for a product
 description: Learn how to create a batch attribute, assign default value ranges, and include the attribute in a group, including a step-by-step process. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom:   
 ms.reviewer: kamaybac
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: PdsBatchAttrib
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create batch attributes for a product

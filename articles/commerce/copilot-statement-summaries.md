@@ -2,13 +2,12 @@
 title: Enable Copilot statement posting summaries
 description: This article describes how to enable Microsoft Copilot-generated statement posting summaries in Dynamics 365 Commerce.
 author: Shajain
-ms.date: 06/13/2024
+ms.date: 01/22/2025
 ms.topic: how-to
 ms.collection: 
   - bap-ai-copilot
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain

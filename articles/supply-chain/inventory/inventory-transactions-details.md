@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: InventTrans, InventTransDetails
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
   - evergreen
@@ -16,6 +15,9 @@ ms.custom:
 # Inventory transaction details
 
 Use the **Transactions details** page to view details of any selected inventory transaction.
+
+> [!TIP]
+> Many transactions and updates are categorized as being either *physical* or *financial*. You can learn more about these categories in [Physical and financial updates](../cost-management/physical-financial-updates.md).
 
 ## Open the Transaction details page
 

@@ -3,13 +3,12 @@ title: Platform updates for version 10.0.25 of finance and operations apps (Apri
 description: Learn about the features that are included in the platform updates for version 10.0.25 of finance and operations apps released in April 2022.
 author: sericks007
 ms.author: sericks
-ms.topic: conceptual
-ms.date: 04/12/2024
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
+ms.date: 04/12/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-01-31
 ---
@@ -37,7 +36,7 @@ For more information about how to use Feature management, see [Feature managemen
 | Web client  | [Upgrade jQuery UI to 1.13.0](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/open-source-software-update-upgrade-jquery-ui-1130) | | Feature management<br>(*Upgrade jQuery UI to 1.13.0*)|
 | Web client  | [Saved views support for dialogs](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-dialogs)  | [Building forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md)  | Feature management<br>(*Saved views support for dialogs*)  |
 | Web client  | [Allow queries to be saved to views on Task Single and Task Double pages](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#queries-on-views-on-task-pages)  | [Building forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md)  | Feature management<br>(*Allow queries to be saved to views on Task Single and Task Double pages*)  |
-| Web client  | [(Preview) Saved views support for workspaces](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-workspaces)  | <ul><li>[Building forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md)</li><li>[Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace)</li></ul>  | Feature management<br>(*Saved views support for workspaces*)  |
+| Web client  | [(Preview) Saved views support for workspaces](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-workspaces)  | <ul><li>[Building forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md)</li><li>[Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md#add-tiles-lists-and-links-to-a-workspace)</li></ul>  | Feature management<br>(*Saved views support for workspaces*)  |
 | Web client  | <p>**Improved sort support for grouped grids**</p><p>When a user has grouped data in a grid by one or more columns, sorting on a non-grouped column will now leave the grouping intact and will sort the data inside each group based on the selected column</p> | [Grid capabilities](../../dev-itpro/get-started/grid-capabilities.md#sorting-grouped-data) | Default for the **Grouping in grids** feature in Feature management |
 | Developer tools | <p>**Opt out individual grids from *Typing ahead of the system***</p><p>For forms with coding patterns that do not work well with the *Typing ahead of the system capability* of the new grid, developers can now opt out of an individual grid from asynchronous row validation and back to the legacy synchronous behavior.</p> | [Grid capabilities](../../dev-itpro/get-started/grid-capabilities.md) | Developer opt-in |
 | Developer tools  | <p>**X++ unit testing with different values**</p><p>X++ unit tests can now take advantage of the SysTestRow attribute to re-use a test method with multiple different values.</p>  | [SysTestRow attribute for testing multiple values](../../dev-itpro/perf-test/systest-row.md) | Default   |

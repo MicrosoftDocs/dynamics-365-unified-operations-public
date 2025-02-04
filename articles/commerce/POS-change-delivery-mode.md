@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Change mode of delivery in POS
 description: This article describes how to configure and use the change mode of delivery operation in POS.
 author: hhainesms
 ms.date: 03/01/2020
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
+ms.topic: how-to
 audience: Application User
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: hhaines
+ms.author: shajain
 ms.search.validFrom: 2020-02-20
-ms.dyn365.ops.version: Release 10.0.11
-
+ms.custom: 
+  - bap-template
 ---
 
 # Change mode of delivery in POS

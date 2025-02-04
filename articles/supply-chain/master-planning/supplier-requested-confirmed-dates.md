@@ -1,15 +1,14 @@
 ---
 title: Calculate requested ship dates for purchase orders
-description: Learn how the system calculates requested ship dates for purchase orders, including prerquisites and an outline on receipt dates on purchase orders.
+description: Learn how the system calculates requested ship dates for purchase orders, including prerequisites and an outline on receipt dates on purchase orders.
 author: t-benebo
 ms.author: benebotg
-ms.topic: how-to
-ms.date: 11/16/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: VendCustTransportPoint2Point, SrmParameters, VendTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Calculate requested ship dates for purchase orders
@@ -29,11 +28,11 @@ To calculate requested shipment dates for purchase orders, your system must meet
 - You must be running Dynamics 365 Supply Chain Management version 10.0.38 or later.
 - You must be using Planning Optimization, not the [deprecated master planning engine](deprecated-master-planning-overview.md).
 
-Additional requirements apply based on which version of Supply Chain Management you are running, as described in the following subsections.
+Additional requirements apply based on which version of Supply Chain Management you're running, as described in the following subsections.
 
 ### Supply Chain Management versions 10.0.38 or 10.0.39
 
-If you are running Supply Chain Management version 10.0.38 or 10.0.39, the feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+If you're running Supply Chain Management version 10.0.38 or 10.0.39, the feature named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Supply Chain Management version 10.0.40 or later
 
@@ -106,6 +105,7 @@ To set up addresses for a vendor, follow these steps.
 1. On the **Addresses** FastTab, add and remove addresses as you require. If more than one address is specified on the **Addresses** FastTab, when the system uses the purchase transport days setup to calculate the shipping date, it uses the address where the **Primary** option is set to *Yes* as the shipping point.
 
 > [!TIP]
+>
 > - The vendor address is applied to the purchase order and used as the shipping point for purchase transport days.
 > - The receiving point for purchase transport days is the second factor that's used to calculate the shipping date. The delivery address depends on the setup, and a default value can be taken from the company, site, or warehouse. Any update to the site or warehouse for a purchase order header or line triggers a recalculation of the shipping date, because the new site or warehouse might have a different delivery address.
 
@@ -119,7 +119,7 @@ The following calendars are relevant for ship and receipt date calculations:
 
 The purchase and vendor ship calendars are considered when the ship date is calculated. The warehouse (item coverage group) calendar is used when the receipt date is calculated.
 
-For more information, see [Calendars and master planning](supply-chain-calendars-master-planning.md).
+Learn more in [Calendars and master planning](supply-chain-calendars-master-planning.md).
 
 The following examples show how calendars affect the calculation of requested ship and receipt dates for purchase orders.
 
@@ -195,7 +195,7 @@ This section describes how and when the system calculates and recalculates reque
 
 The requested ship date calculation considers lead time (lead time per vendor if it's set up on trade agreements), the mode of delivery, and the vendor ship calendar. The lead time is the time that the vendor takes to produce the item. It doesn't include transport days (from vendor to company).
 
-You can configure how the system handles requested ship dates that are in the past. For more information, see the [Specify whether requested ship dates can be in the past](#parameters) section.
+You can configure how the system handles requested ship dates that are in the past. Learn more in the [Specify whether requested ship dates can be in the past](#parameters) section.
 
 ### Order date of planned purchase orders
 
@@ -227,7 +227,7 @@ This section provides examples that show how requested ship and receipt dates fo
 
 These scenarios have the following prerequisites:
 
-- You system must meet all the feature prerequisites that are listed in the [Prerequisites](#prerequisites) section of this article.
+- Your system must meet all the feature prerequisites that are listed in the [Prerequisites](#prerequisites) section of this article.
 - The **Purchase transport days** page must be configured with at least one receiving address, shipping address, and number of transport days. The addresses must match the vendors and receiving warehouses that you use for these scenarios.
 - Unless otherwise specified, all calendars must have all days open.
 - On the **Procurement and sourcing parameters** page, on the **Delivery** tab, the **Requested ship date in the past** field must be set to *None*.
@@ -248,13 +248,13 @@ In this scenario, there are two purchase transport days from the vendor shipping
     - **Requested receipt date** – The value is a date that's two days later than the **Requested ship date** value for the purchase order. The system calculates this date based on your setup on the **Purchase transport days** page. The following settings can also affect the calculation:
 
         - If the product that's ordered has lead time, the system adds that lead time to the transport time when it calculates the receipt date. (Therefore, the formula is *Requested ship date* = *Requested ship date* &plus; *Product lead time*.)
-        - The vendor ship calendar and warehouse calendar can also affect the date calculation by allowing for closing times at one or both locations. (For more information, see the [How calendars affect ship and receipt date calculations](#calendars) section.)
+        - The vendor ship calendar and warehouse calendar can also affect the date calculation by allowing for closing times at one or both locations. (Learn more in the [How calendars affect ship and receipt date calculations](#calendars) section.)
 
     Any update to the **Requested ship date** or **Requested receipt date** value causes the system to recalculate the dates. An update to the **Requested ship date** value triggers a forward calculation of the **Requested receipt date** value, and an update to the **Requested receipt date** value triggers a backward calculation of the **Requested ship date** value.
 
 ### Example scenario 2: Purchase order with dates in the past
 
-This scenario shows how the system handles requested ship dates that are in the past, based on the **Requested ship date in the past** setting. (For more information, see the [Specify whether requested ship dates can be in the past](#parameters) section.)
+This scenario shows how the system handles requested ship dates that are in the past, based on the **Requested ship date in the past** setting. (Learn more in the [Specify whether requested ship dates can be in the past](#parameters) section.)
 
 The default value of the **Requested ship date in the past** field is *None*. In this case, requested ship dates in the past are always allowed, and no warning is shown. This scenario shows what happens if you change the value to *Disallow with warning*. In this case, a warning message is always shown if requested ship dates are in the past. The system then finds the next earliest ship date that's after the current date.
 

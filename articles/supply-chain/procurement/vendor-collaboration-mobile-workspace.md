@@ -1,16 +1,12 @@
 ---
 title: Vendor collaboration mobile workspace
 description: Learn about the Vendor collaboration mobile workspace, which helps your vendors stay up to date about the purchase orders that have been sent to them for approval.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.dyn365.ops.version: Version 1611
 ms.search.form: 
-ms.search.validFrom: 2016-11-30
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ---
 
@@ -100,13 +96,6 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </tr>
 </tbody>
 </table>
-
-## Download and install the mobile app
-
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.

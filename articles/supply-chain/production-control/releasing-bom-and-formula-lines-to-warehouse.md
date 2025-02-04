@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 10/30/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2017-12-31
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
-ms.dyn365.ops.version: 7.3
 ---
 
 # Release BOM and formula lines to the warehouse
@@ -20,7 +16,7 @@ ms.dyn365.ops.version: 7.3
 This article describes the process for releasing raw material for bill of materials (BOM) lines and formula lines to the warehouse. When you release a BOM or formula line to the warehouse, the system first determines whether material is already available at the production input location on the shop floor where the material will be consumed for the production process.
 
 - If the material is available at the production input location, it's picked from that location immediately after the signal is given for the release of material to the warehouse.
-- If the material isn't available at the production input location, the material release indicates that material must be moved from locations in the warehouse to the production input location. The material is moved via warehouse work for raw material picking. Therefore, warehouse processes for raw material picking must be configured. For more information, see [Replenishment overview](../warehousing/replenishment.md) and [Control warehouse work by using work templates and location directives](../warehousing/control-warehouse-location-directives.md).
+- If the material isn't available at the production input location, the material release indicates that material must be moved from locations in the warehouse to the production input location. The material is moved via warehouse work for raw material picking. Therefore, warehouse processes for raw material picking must be configured. Learn more in [Replenishment overview](../warehousing/replenishment.md) and [Control warehouse work by using work templates and location directives](../warehousing/control-warehouse-location-directives.md).
 
 ## Methods for releasing BOM and formula lines
 

@@ -1,8 +1,8 @@
 ---
 title: Customer aging snapshots
 description: Learn about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 10/10/2022
 ms.reviewer: twheeloc

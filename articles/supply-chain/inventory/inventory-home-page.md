@@ -1,14 +1,13 @@
 ---
 title: Inventory management overview
 description: Learn how you can use inventory management to perform inbound operations, quality assurance, inventory activities, outbound operations, and inventory control.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: overview
 ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventParameters
 ---
 
@@ -30,7 +29,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 [![Inventory learning map.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
-## Additional resources
+## Related information
 
 ### What's new and in development
 
@@ -38,7 +37,7 @@ Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app
 
 ### Inventory accounting
 
-To learn more, see [Inventory close](../cost-management/inventory-close.md).
+Learn more in [Inventory close](../cost-management/inventory-close.md).
 
 ### Manufacturing and Supply Chain Management blogs
 

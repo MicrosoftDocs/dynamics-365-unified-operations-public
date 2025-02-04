@@ -1,17 +1,13 @@
 ---
 title: Manual update of asset counters
 description: Learn about manual update of asset counters in Asset Management and counters, which are used to create registrations on an asset.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-09-30
 ms.search.form: EntAssetCounter 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Manual update of asset counters

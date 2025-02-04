@@ -1,8 +1,8 @@
 ---
 title: Cost management Power BI content
 description: Learn about what is included in the Cost management Power BI content, including learning about how to report pages that are included in the Power BI content.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 03/16/2018
 ms.reviewer: kamaybac

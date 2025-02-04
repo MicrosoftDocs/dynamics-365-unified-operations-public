@@ -6,11 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 07/06/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-07-06
 ms.search.form: WHSRFMenuItem
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Over-picking for sales orders and transfer orders

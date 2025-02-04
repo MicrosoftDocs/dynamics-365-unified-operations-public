@@ -6,12 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 ---
 
@@ -29,7 +24,7 @@ Scheduling can be triggered automatically if you set the **Automatic planning qu
 This concept enables kanban sizes to be reduced below the actual economic batch sizes. For example, the economic batch size for a specific item (or item family) is 30. Instead of creating kanbans that use the product quantity, 30, you can configure the kanban rule so that it has a product quantity of 10 and an **Automatic planning quantity** value of **3**. Although automatic planning schedules the kanban jobs for the work cell only when three unplanned jobs exist, it's fully transparent to the planner and the shop floor supervisor that two unplanned jobs might be awaiting execution. The planner or shop floor manager can then take those two jobs into production by manually planning them or creating additional kanbans.
 
 ## Manual scheduling
-For manual scheduling, Microsoft Dynamics AX 2012 introduced the kanban scheduling board. Manual scheduling can be combined with automatic scheduling. The kanban scheduling board lets you plan and unplan jobs, moved them in sequence, or move them from period to period. Jobs that are based on a kanban rule where the **Automatic planning** value is more than **0** can be manually unplanned. However, these jobs will be replanned when the next automatic planning event occurs (that is, when a new kanban is created). The following options are available for manual scheduling:
+For manual scheduling, finance and operations introduced the kanban scheduling board. Manual scheduling can be combined with automatic scheduling. The kanban scheduling board lets you plan and unplan jobs, moved them in sequence, or move them from period to period. Jobs that are based on a kanban rule where the **Automatic planning** value is more than **0** can be manually unplanned. However, these jobs will be replanned when the next automatic planning event occurs (that is, when a new kanban is created). The following options are available for manual scheduling:
 
 -   **Schedule** schedules the selected jobs according to their due date. (This option resembles automatic planning.)
 -   **Schedule forward from date** tries to schedule the selected jobs according to their due date but constrains the result by using the specified earliest start date.
@@ -57,7 +52,7 @@ The available capacity by day or week is defined by the calendar that is assigne
 
 The **Kanban job scheduling** list page contains a FactBox that shows the available and booked period capacity for the selected work cell. Depending on the selected schedule periods in the production flow model, the periods show days or weeks.
 
-## Additional resources
+## Related information
 
 
 

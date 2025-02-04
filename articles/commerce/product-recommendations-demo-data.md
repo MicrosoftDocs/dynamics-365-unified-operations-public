@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: Create recommendations with demo data
 description: This article provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using prepopulated, customizable demo data.
 author: bebeale
-ms.date: 04/21/2023
-ms.topic: article
-# optional metadata
-
+ms.date: 07/26/2024
+ms.topic: how-to
 ms.search.form: RetailStoreTable, RetailTillLayout
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.custom: 
+  - bap-template
 ---
 
 # Create recommendations with demo data

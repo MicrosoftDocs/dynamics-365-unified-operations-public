@@ -2,16 +2,16 @@
 title: Migrate from legacy Commerce functionality for France
 description: This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
-ms.date: 08/23/2022
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: France
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2021-03-01
-ms.dyn365.ops.version: 10.0.18
-ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+ms.custom: 
+  - bap-template
 ---
 # Migrate from legacy Commerce functionality for France
 

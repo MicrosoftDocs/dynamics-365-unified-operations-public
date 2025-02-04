@@ -4,7 +4,7 @@ description: Learn about the Invoice capture solution, including a table that ou
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 2/01/2024
+ms.date: 11/21/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

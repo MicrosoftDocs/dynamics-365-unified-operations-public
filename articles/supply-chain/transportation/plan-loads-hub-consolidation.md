@@ -1,19 +1,14 @@
 ---
 title: Plan loads using hub consolidation overview
 description: Learn about the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: overview
-ms.date: 07/25/2019
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-ms.collection: get-started
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-02-28
 ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Plan loads using hub consolidation overview
@@ -32,7 +27,7 @@ The following diagram shows an example of hub consolidation. In this case, sales
 
 [![Hub consolidation.](./media/hubconsol.jpg)](./media/hubconsol.jpg)
 
-To consolidate the two loads in a hub before they are delivered to the customer, on the **Outbound load planning workbench** page, in the **Transportation** field, select **Hub consolidation**. When you select the correct hub for each load, the loads will have the hub as the *drop off* destination. You will also have two *transportation request lines* in the **Supply and Demand** section on the **Outbound load planning workbench** page. You can then add these two lines to a new load. This new load will have both sales order lines, and will also have the hub as the *pick up* address and customer A as the *drop off* destination. The three loads are then ready to be rated and routed like any other load. You can select whatever shipping carrier the system suggests for each load.
+To consolidate the two loads in a hub before they're delivered to the customer, on the **Outbound load planning workbench** page, in the **Transportation** field, select **Hub consolidation**. When you select the correct hub for each load, the loads will have the hub as the *drop off* destination. You'll also have two *transportation request lines* in the **Supply and Demand** section on the **Outbound load planning workbench** page. You can then add these two lines to a new load. This new load will have both sales order lines, and will also have the hub as the *pick up* address and customer A as the *drop off* destination. The three loads are then ready to be rated and routed like any other load. You can select whatever shipping carrier the system suggests for each load.
 
 You can use a similar method to consolidate loads for multiple transfer orders. In this case, customer A in the preceding diagram is a warehouse.
 

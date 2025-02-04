@@ -1,14 +1,13 @@
 ---
 title: Costing parameter values setup
 description: When you set up the Landed cost module, you can define several sets of common values when you select costing parameter values in other parts of the app.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: ITMCostTypeTable, ITMCostTypeGroup, ITMCostTransferGroup, ITMCostTemplateTable, ITMVolumetricDivisorTable
 ---
 

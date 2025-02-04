@@ -29,24 +29,20 @@ Here are two of the many benefits of this approach:
 
 The following is an overview of the procedures that you must complete:
 
-1. Create a new Event Grid article.
-2. Create a new key vault to store the key for the Event Grid article.
+1. Create a new Event Grid topic.
+2. Create a new key vault to store the key for the Event Grid topic.
 3. Register an Azure app that has permission to access the key vault.
 4. Configure the parameters of the endpoint.
 5. Consume the business event.
 
-## Procedure 1: Create a new Event Grid article
+## Procedure 1: Create a new Event Grid topic
 
 1. Sign in to the Azure portal.
 2. Select **All services \> Integration \> Event Grid Topics**.
-3. Select **Add** to create a new Event Grid article. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
+3. Select **Add** to create a new Event Grid topic. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
 4. After deployment is completed, select the new Event Grid. On the property blade, select **Overview**, and make a note of the **Topic Endpoint** value. You need this value later.
-
-    <img alt="Event grid article" src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
-
 5. Back on the property blade, select **Access keys**, and copy the **Key 1** value. You need this value when you configure the key vault in the next procedure.
 
-    <img alt="Event grid access key" src="../../media/BEF-Howto-EventGrid-04.png" width="70%">
 
 ## Procedure 2: Create a key vault
 
@@ -58,13 +54,7 @@ In this procedure, you create a key vault to store the key that you copied in th
     <img alt="New Key Vault" src="../../media/BEF-Howto-Keyvault-02.png" width="50%">
 
 3. Select **Overview**, then copy and save the **DNS Name** value for the key vault. You use this value later.
-
-    <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
-
 4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the **Key 1** value that you saved earlier.
-
-    <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
-
 5. Select **Create**.
 
 ## Procedure 3: Register a new application
@@ -75,20 +65,12 @@ In this procedure, you register a new application with Microsoft Entra ID, and g
 2. Select **App registrations (preview) \> New registration**, and then enter a name for your application.
 3. Select **Register**.
 4. Select your new application, and then select **Certificates & secrets \> New client secret**. Enter a name for your secret, and set the secret so that it never expires. Then select **Add**.
-
-    <img alt="Azure App secret " src="../../media/BEF-Howto-Keyvault-07.png" width="50%">
-
 5. Copy and save your new secret. You use it later.
 
     > [!IMPORTANT]
     > Secrets are visible only one time. If you forget to copy the secret, you have to delete it and create a new secret.
 
-    <img alt="Copy App secret " src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
-
 6. Select **Overview**, and copy and save the application ID. You use this value later.
-
-    <img alt="Copy App Id " src="../../media/BEF-Howto-Keyvault-09.png" width="70%">
-
 7. Select **All services \> Security \> Key vaults**.
 8. Select the key vault that you created earlier, and then select **Access policies \> Add new**.
 9. On the **Principal** blade, select your new registered application. Select the check boxes for the **Get** and **List** secret permissions to retrieve key vault secrets.
@@ -105,9 +87,6 @@ In this procedure, you register a new application with Microsoft Entra ID, and g
 4. Select **Azure Event Grid**.
 5. Select **Next**.
 6. Set the required parameter values.
-
-    <img alt="Event grid endpoint" src="../../media/BEF-Howto-EventGrid-06.png" width="50%">
-
 7. Select **OK**.
 
 ## Procedure 5: Consume a business event
@@ -116,11 +95,9 @@ The business scenario involves sending an email message whenever a free text inv
 
 1. Select the business event catalog and look for **free text invoice posted** business event.
 2. Then activate the business event for USMF company. Once activated, a test message is sent to validate the configuration and cache the connection.
-3. To verify that the test message has been received, in the Azure portal, select your Event Grid article, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
+3. To verify that the test message has been received, in the Azure portal, select your Event Grid topic, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
 
-    <img alt="Event grid metrics" src="../../media/BEF-Howto-EventGrid-08.png" width="70%">
-
-    When both metrics have a value of at least **1**, you create a new logic app to subscribe to your Event Grid article.
+    When both metrics have a value of at least **1**, you create a new logic app to subscribe to your Event Grid topic.
 
 4. Select **All services \> Integration \> Logic Apps**.
 5. Create a new logic app in your resource group.
@@ -132,7 +109,7 @@ The business scenario involves sending an email message whenever a free text inv
 
     <img alt="Event grid trigger" src="../../media/BEF-Howto-EventGrid-11.png" width="50%">
 
-8. Select your subscription, select **Microsoft.EventGrid.Topics** as the resource type, and select the name of the Event Grid article that you created in procedure 1.
+8. Select your subscription, select **Microsoft.EventGrid.Topics** as the resource type, and select the name of the Event Grid topic that you created in procedure 1.
 
     <img alt="Event grid trigger parameters" src="../../media/BEF-Howto-EventGrid-12.png" width="50%">
 

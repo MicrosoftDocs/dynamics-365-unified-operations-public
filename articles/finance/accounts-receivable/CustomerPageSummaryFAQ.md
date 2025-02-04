@@ -4,7 +4,7 @@ description: This article answers some frequently asked questions about the Cust
 author: EricWang
 ms.author: wangchen
 ms.topic: conceptual
-ms.date: 06/03/2024
+ms.date: 01/31/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User

@@ -1,14 +1,13 @@
 ---
 title: Weighted average with physical value and marking
 description: Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average received item value.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ---
 

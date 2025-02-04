@@ -1,17 +1,12 @@
 ---
 title: Quality management test groups
 description: Learn how to create test groups, so that multiple tests can be used with quality orders in Microsoft Dynamics 365 Supply Chain Management.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-06-17
 ms.search.form: InventTestGroup
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
@@ -27,7 +22,7 @@ You assign several policies to a test group, such as a sampling plan, an accepta
 
 The test group that is assigned to a quality order defines the default set of tests that must be performed on the specified item. However, you can add, delete, or change tests for the quality order. Test results are reported for each test on a quality order.
 
-When you define a test group, you can optionally specify an item sampling. Item samplings are used to define the amount of the product that must be tested. For more information, see [Quality management item sampling](quality-item-sampling.md). You can also indicate whether the tests in a test group are destructive. In a destructive test, the item sampling is destroyed, and the quantity is removed from the on-hand inventory.
+When you define a test group, you can optionally specify an item sampling. Item samplings are used to define the amount of the product that must be tested. Learn more in [Quality management item sampling](quality-item-sampling.md). You can also indicate whether the tests in a test group are destructive. In a destructive test, the item sampling is destroyed, and the quantity is removed from the on-hand inventory.
 
 ## Example of a test group
 
@@ -43,7 +38,7 @@ To create a test group, follow these steps.
     - **Test group** – Enter a unique ID or name for the test group.
     - **Description** – Enter a detailed description of the test group.
     - **Acceptable quality level** – Enter the total percentage of test results that must pass for the group of tests to be considered passed.
-    - **Item sampling** – Select an item sampling. For more information, see [Quality management item sampling](quality-item-sampling.md).
+    - **Item sampling** – Select an item sampling. Learn more in [Quality management item sampling](quality-item-sampling.md).
     - **Destructive** – Select this check box to indicate that the test group will destroy the items that are tested.
 
 1. While the new row is still selected, select the **General** tab in the upper part of the page. Some of the settings for the test group that is selected on the **Overview** tab are repeated here. In addition, you can set the following fields for the group:
@@ -125,7 +120,7 @@ To add a quantitative test to a test group, follow these steps.
 
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Quality management test instruments](quality-management-processes.md)
 - [Quality management tests](quality-management-processes.md)

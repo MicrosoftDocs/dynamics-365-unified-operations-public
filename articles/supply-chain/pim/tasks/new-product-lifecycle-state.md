@@ -1,17 +1,13 @@
 --- 
 title: Create a new product lifecycle state
 description: Learn how to create a new product lifecycle state, which documents the lifecycle state of a release product, including a step-by-step process. 
-author: t-benebo 
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/05/2017
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create a new product lifecycle state

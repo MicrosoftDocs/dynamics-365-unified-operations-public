@@ -3,13 +3,12 @@ title: What's new or changed in Dynamics 365 Finance and Operations version 8.0 
 description: Learn about new or changed features in Dynamics 365 Finance and Operations version 8.0. This version was released in April 2018.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: whats-new
 ms.date: 07/12/2024
 ms.custom: 
   - bap-template
   - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0

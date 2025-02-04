@@ -6,8 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution
 ms.topic: how-to
-ms.date: 06/14/2024
-audience: Application User
+ms.date: 11/11/2024
 ms.custom: 
   - bap-template
 ---
@@ -76,6 +75,10 @@ To view all jobs that have been started by the signed-in worker, regardless of t
 
 ![My jobs tab.](media/pfei-my-jobs-tab.png "My jobs tab")
 
+## Project tabs
+
+The project tabs **All project jobs**, **Projects**, **Project budget**, and **Project activities** allow workers to register the time spent on production-related activities. Workers can select a project-related activity from the list and log its start. The activity is marked as completed when the worker registers another activity, such as an indirect task or another project activity. The time registered by the worker is recorded under the projects associated with these activities.
+
 ## My machine tab
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
@@ -87,7 +90,7 @@ The **My machine** tab has the following columns. The numbers correspond to the 
 1. **Machine asset** – Select the machine asset that you want to track. Start typing a name to select from a list of matching assets, or select the magnifying-glass icon to select from a list of all assets associated with the resources that are within the filter of the job list.
 
     > [!NOTE]
-    > Supply Chain Management users can assign a resource to each asset as needed using the **All assets** page (on the **Fixed asset** tab, using the **Resource** drop-down list). For more information, see [Create an asset](../asset-management/objects/create-an-object.md).
+    > Supply Chain Management users can assign a resource to each asset as needed using the **All assets** page (on the **Fixed asset** tab, using the **Resource** drop-down list). Learn more in [Create an asset](../asset-management/objects/create-an-object.md).
 
 1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters are shown at the top of the **Asset management** tab. The **Settings** menu (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter. The lookup field lists all of the counters associated to the asset selected at the top of the **Asset management** page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, then you should set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, then you should set it to **Actual**. Select **OK** to save your settings and close the dialog box.
 
@@ -149,8 +152,8 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
 
 Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
@@ -171,7 +174,7 @@ Workers follow these steps to register tracked components.
 
 ## Adjust material consumption and make material reservations (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
 > [!NOTE]
@@ -187,7 +190,7 @@ Workers can specify the quantity to adjust by selecting **Adjust material**. Thi
 - In the **Report progress** dialog box
 - On the toolbar on the right
 
-For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
+For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#material-consumption).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -222,21 +225,11 @@ The following actions can be performed:
 
 ### Adjust material from the primary or secondary toolbar
 
-The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
+The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (Learn more in [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
-### Adjust material consumption for catch weight items (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
-> [!NOTE]
-> This feature is generally available (GA) for non-WMS items, but is still in preview for WMS-enabled items.
+### Adjust material consumption for catch weight items
 
 Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system will validate that the specified weight of the boxes is within the defined minimum and maximum threshold that defined on the released product.
-
-For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Reserve materials
 
@@ -278,13 +271,13 @@ For example, Shannon, a floor worker at Contoso, wants to attend a company meeti
 - **Shannon is working on one or more active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms the selection. A message that appears informs Shannon about jobs that are in progress. From the message, Shannon can choose to complete or stop the jobs before going to the meeting.
 - **Shannon doesn't have any active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms the selection. Shannon is now registered as being at the meeting.
 
-In both scenarios, after confirming the selection, Shannon goes to either the sign-in page or a page that will wait for the confirmation that Shannon has returned from the indirect activity. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
+In both scenarios, after confirming the selection, Shannon goes to either the sign-in page or a page that will wait for the confirmation that Shannon has returned from the indirect activity. The page that appears depends on the configuration of the production floor execution interface. (Learn more in [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
 ## Registering breaks
 
 Workers can register breaks. Breaks can be flexibly defined, as described in [Pay based on registrations](pay-based-on-registrations.md).
 
-A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that will wait for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
+A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that will wait for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (Learn more in [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
 ## View the "My day" dialog
 

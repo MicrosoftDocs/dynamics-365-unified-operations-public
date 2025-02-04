@@ -4,7 +4,7 @@ items:
   - name: Dynamics 365 Human Resources  
     items:
     - name: Dynamics 365 Human Resources documentation
-      href: index.yml
+      href: index.yml 
     - name: Welcome to Dynamics 365 Human Resources 
       href: welcome.md  
     - name: Human Resources infrastructure merge
@@ -31,14 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.43
+          href: ./get-started/hr-whats-new-10-0-43.md
+        - name: Human Resources 10.0.42
+          href: ./get-started/hr-whats-new-10-0-42.md
+        - name: Human Resources 10.0.41
+          href: ./get-started/hr-whats-new-10-0-41.md
         - name: Human Resources 10.0.40
           href: ./get-started/hr-whats-new-10-0-40.md
-        - name: Human Resources 10.0.39 
-          href: ./get-started/hr-whats-new-10-0-39.md  
-        - name: Human Resources 10.0.38      
-          href: ./get-started/hr-whats-new-10-0-38.md   
-        - name: Human Resources 10.0.37        
-          href: ./get-started/hr-whats-new-10-0-37.md   
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -103,8 +103,6 @@ items:
           href: data-entity.md
         - name: Throttling FAQ
           href: dev-itpro/hr-admin-integration-throttling-faq.md
-        - name: Configure Dataverse integration
-          href: hr-admin-integration-common-data-service.md
         - name: Dataverse tables
           href: hr-developer-entities.md
         - name: Configure Dataverse virtual tables
@@ -555,6 +553,32 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+        - name: Human Resources Recruiting app (preview)
+          items:
+          - name: Configure the Human Resources recruiting app
+            items:
+            - name: Set up the HR Recruiting app 
+              href: hr-recruit-setup.md 
+            - name: Onboard users to use the HR Recruiting app 
+              href: hr-recruit-onboard.md 
+            - name: Configuration in the HR Recruiting app   
+              href: hr-recruit-configuration.md
+            - name: Configure the careers site in the HR Recruiting app
+              href: hr-recruit-career.md 
+          - name: Use the Human Resources recruiting app
+            items: 
+            - name: Use the dashboard in the HR Recruiting app 
+              href: hr-recruit-dashboard.md 
+            - name: Set up job ads in the HR Recruiting app
+              href: hr-recruit-job-ad.md
+            - name: Use the careers site in the HR Recruiting app
+              href: hr-recruit-career-site.md 
+            - name: Set up prospects in the HR Recruiting app
+              href: hr-recruit-prospect.md 
+            - name: Applicants in HR recruiting app 
+              href: hr-recruit-applicant.md 
+            - name: Set up panel members in the HR Recruiting app
+              href: hr-recruit-panel.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
@@ -747,6 +771,8 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
+      - name: Set up electronic reporting to print preformance reviews
+        href: perf-mgmt-print.md
       - name: Skills
         items:
         - name: Configure skills
@@ -789,9 +815,9 @@ items:
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-    - name: Human Resources app (preview)
+    - name: Human Resources app for leave and absence
       items:
-        - name: Human Resources app (preview)
+        - name: Human Resources app for leave and absence
           href: hr-app.md
     - name: Use the Workflow system
       items:

@@ -3,15 +3,15 @@
 title: Ways to add content
 description: This article provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
-ms.date: 08/01/2023
-ms.topic: article 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+  - bap-template
 ---
 
 # Ways to add content
@@ -24,7 +24,7 @@ There are many ways to change the look, feel, and content of your site. Dependin
 
 The following video provides an overview of site builder content management. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1834A]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e6193c35-fc6f-454e-b5b3-b66eb7649c93]
 
 The following articles are good jumping off points to start understanding how to add and manage site content. Most of the articles listed focus on areas of your site that don't require a developer. Some address basic content editing, while others focus on site administrator tasks. Each of these articles will denote specific tasks might require SDK work. Each article assumes that you have already provisioned a site and been granted access to the site builder toolset for your site.
 

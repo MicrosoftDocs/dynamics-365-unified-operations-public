@@ -1,17 +1,14 @@
 ---
 title: Shipping containers
 description: Learn how to set up shipping containers for the Landed cost module, including an outline on setting up container types and a table defining various fields.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 12/09/2020
-ms.custom:
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-12-09
 ms.search.form: ITMContainerTypeTable, ITMContainerTable, ITMContainerUnitTypeTable, ITMRefrigerationTypeTable, ITMContainersListPage, ITMContainers
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Shipping container setup
@@ -47,9 +44,10 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 | Field | Description |
 |---|---|
 | Shipping container | Enter a unique identification name/number for the shipping container. |
-| Shipping container type | Select the type of shipping container. For more information, see the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
+| Shipping container type | Select the type of shipping container. Learn more in the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
 
 > [!NOTE]
+>
 > - The shipping container setup is optional. Typically, you will use it only if your company owns its own shipping containers or often reuses the same shipping containers.
 > - No check digits are calculated for shipping container numbers.
 

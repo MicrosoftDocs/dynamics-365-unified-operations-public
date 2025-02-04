@@ -1,17 +1,14 @@
 ---
 title: Delivery information setup
 description: Learn how to set up delivery information for the Landed cost module, including outlines on shipping ports and tracking control centers.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 12/09/2020
-ms.custom:
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-12-09
 ms.search.form: ITMPortTable, ITMLeadTimeTable, ITMLegTable
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Delivery information setup
@@ -22,7 +19,7 @@ This article describes how to set up delivery information for the **Landed cost*
 
 ## Shipping ports
 
-Shipping ports identify where goods are being shipped from and to. For each voyage, a "to" port and a "from" port are defined, based on the journey that is selected for the voyage vessel. Shipping ports are used to build the legs of a journey and also the voyage activities. They are typically defined by using the name of the city and the country or region where the physical shipping port is located.
+Shipping ports identify where goods are being shipped from and to. For each voyage, a "to" port and a "from" port are defined, based on the journey that is selected for the voyage vessel. Shipping ports are used to build the legs of a journey and also the voyage activities. They're typically defined by using the name of the city and the country/region where the physical shipping port is located.
 
 To work with shipping ports, go to **Landed cost \> Delivery information setup \> Shipping ports**. There, you can view, add, and remove records for your shipping ports. The following table describes the fields that are available for each record.
 
@@ -48,7 +45,7 @@ The following table shows the fields that are available for all three create typ
 | Source table, Source field | These fields identify a source table and field in the database. The rule will load the value in the field and then use it in the way that is defined by other settings of the rule. |
 | Target table, Target field | These fields identify a destination table and field in the database. The rule will load the value in the field and then use it (or overwrite it) in the way that is defined by other settings of the rule. |
 | Activity | This field identifies the type of activity that should be applied to a shipping container that is matched by a rule. |
-| Matching criteria | This field determines how the system identifies a match for a rule. In each instance, the system reviews the data in the source and destination tables to determine whether and when a field should be updated in the target table.<p>For example, the source table is *Voyages*, and the target table is *Purchase header* or *Purchase lines*. The *Voyages* table has a **From port** value of *Hong Kong Special Administrative Region*, and the *Purchase header* table has a **From port** value of *Shanghai*. A rule is then created that has *Hong Kong Special Administrative Region* as the "from" port. In this case, the values of the **Matching criteria** field will work in the following way:</p><ul><li>**Both** – The target field won't be updated, because one of the two ports don't match.</li><li>**Source** – The target field will be updated, because the source table's "from" port is *Hong Kong Special Administrative Region*.</li><li>**Target** – The target field won't be updated, because the destination table's "from" port is *Shanghai* (not *Hong Kong Special Administrative Region*).</li></ul> |
+| Matching criteria | This field determines how the system identifies a match for a rule. In each instance, the system reviews the data in the source and destination tables to determine whether and when a field should be updated in the target table.<p>For example, the source table is *Voyages*, and the target table is *Purchase header* or *Purchase lines*. The *Voyages* table has a **From port** value of *Hong Kong Special Administrative Region*, and the *Purchase header* table has a **From port** value of *Shanghai*. A rule is then created that has *Hong Kong Special Administrative Region* as the "from" port. In this case, the values of the **Matching criteria** field will work in the following way:</p><ul><li>**Both** – The target field won't be updated, because one of the two ports doesn't match.</li><li>**Source** – The target field will be updated, because the source table's "from" port is *Hong Kong Special Administrative Region*.</li><li>**Target** – The target field won't be updated, because the destination table's "from" port is *Shanghai* (not *Hong Kong Special Administrative Region*).</li></ul> |
 | Copy action | The available values are *Copy* and *Default*. Select *Copy* to copy the value in the source field to the destination field. Select *Default* to set a static value for the destination field. |
 | Default | When the **Copy action** field is set to *Default*, the **Default** field defines the default value of the destination field. For example, if the action is related to a port update, and the **Copy action** field is set to *Default*, the **Default** field identifies a port. |
 | Leg | This field identifies the leg of the journey that the specified action occurs for, such as loading or customs. |

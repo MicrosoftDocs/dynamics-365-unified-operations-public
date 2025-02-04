@@ -1,17 +1,15 @@
 ---
 title: USMCA certification of origin
 description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: article
-ms.date: 08/09/2022
-ms.custom:
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-10-23
 ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
-ms.dyn365.ops.version: 10.0.16
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # USMCA certification of origin
@@ -70,11 +68,11 @@ The following table describes the types of information that are included in the 
 
 | Certifying&nbsp;party | Description |
 |---|---|
-| *\[Blank\]* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**: Blank</li><li>**Importer details**: Blank</li><ul>|
-| *Exporter* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Uses the address details for the legal entity.</li><li>**Producer details**: Blank</li><li>**Importer details**: Uses the invoice account for the related sales order.</li><ul>|
-| *Exporter and Producer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Uses the address details for the legal entity.</li><li>**Producer details**: Uses the address details for the legal entity.</li><li>**Importer details**: Uses the invoice account for the related sales order.</li><ul>|
-| *Importer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**: Blank</li><li>**Importer details**:  Uses the address details for the legal entity.</li><ul>|
-| *Producer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**:  Uses the address details for the legal entity.</li><li>**Importer details**: Blank</li><ul>|
+| *\[Blank\]* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise, it uses the shipping site address, if available; otherwise, it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**: Blank</li><li>**Importer details**: Blank</li><ul>|
+| *Exporter* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise, it uses the shipping site address, if available; otherwise, it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Uses the address details for the legal entity.</li><li>**Producer details**: Blank</li><li>**Importer details**: Uses the invoice account for the related sales order.</li><ul>|
+| *Exporter and Producer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise, it uses the shipping site address, if available; otherwise, it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Uses the address details for the legal entity.</li><li>**Producer details**: Uses the address details for the legal entity.</li><li>**Importer details**: Uses the invoice account for the related sales order.</li><ul>|
+| *Importer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise, it uses the shipping site address, if available; otherwise, it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**: Blank</li><li>**Importer details**:  Uses the address details for the legal entity.</li><ul>|
+| *Producer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for the shipping warehouse, if available; otherwise, it uses the shipping site address, if available; otherwise, it uses the address of the legal entity selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**:  Uses the address details for the legal entity.</li><li>**Importer details**: Blank</li><ul>|
 
 ### Has various producers
 
@@ -109,14 +107,10 @@ The IDs of sales invoices related to shipments are printed on the document irres
 The document provides several sections that list specific item details, which are:
 
 - **SKU number**: Prints the item number of the released product.
-
 - **Description**: Prints either the description or name for the released product. If a description in the user's language exists, then this is printed. If no such description exists, then the name in the user's language is printed. If that name doesn't exist, then the item name is printed.
-
 - **Harmonized System (HS) Tariff Classification**: Prints the Harmonized Tariff Schedule associated to the product. You can set up these schedules by going to **Transportation Management \> Setup \> Transportation standard \> Harmonized Tariff Schedules**.
-
-- **Origin criterion:** You must manually enter data in this section the first time you release the document.
-
-- **Country of origin:** Prints the country of origin, which you apply by going to **Product information management \> Setup \> Product compliance \> Country of origin** (see also [Country of origin](../pim/country-of-origin.md)). The ISO code for the country of origin is printed based on the country/region of destination in the shipment delivery address and the item. If no country of origin data has been set up, then this value reverts back to the setting found at **Released product \> Foreign trade \> Origin**. If still no country of origin data is found, then you must manually enter the country of origin after generating the document.
+- **Origin criterion**: You must manually enter data in this section the first time you release the document.
+- **Country of origin**: Prints the country of origin, which you apply by going to **Product information management \> Setup \> Product compliance \> Country of origin**. (Learn more in [Country of origin](../pim/country-of-origin.md).) The International Organization for Standardization (ISO) code for the country of origin is printed, based on the country/region of destination in the shipment delivery address and the item. If no country of origin data is set up, the value reverts to the setting that is found at **Released product \> Foreign trade \> Origin**. If no country of origin data is found there, you must manually enter the country of origin after you generate the document.
 
 ### Certifier signature and date
 
@@ -129,6 +123,5 @@ The user signing the certification must manually enter the number of pages (for 
 ### Page numbers
 
 Current page and number of pages printed at the bottom of the document.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

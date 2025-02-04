@@ -1,17 +1,13 @@
 ---
 title: Maintenance downtime activities
 description: Learn how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/27/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Maintenance downtime activities

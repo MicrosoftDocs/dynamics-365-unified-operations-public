@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 01/24/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-01-24
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.25
 ---
 
 # Planned orders simplified

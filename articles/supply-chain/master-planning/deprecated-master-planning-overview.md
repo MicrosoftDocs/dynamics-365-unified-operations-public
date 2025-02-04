@@ -7,8 +7,6 @@ ms.topic: overview
 ms.date: 11/11/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -27,7 +25,7 @@ If you currently use the deprecated master planning engine, you should start pla
 
 We recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
 
-Before you switch to Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization/planning-optimization-fit-analysis.md).
+Before you switch to Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. Learn more in [Planning Optimization fit analysis](planning-optimization/planning-optimization-fit-analysis.md).
 
 ## When will the deprecated planning engine be removed?
 

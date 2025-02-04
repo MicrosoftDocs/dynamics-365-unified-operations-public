@@ -1,17 +1,13 @@
 ---
 title: Release product structures
 description: Learn how you can release complete product structures in addition to releasing products together with their engineering versions.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Release product structures
@@ -45,7 +41,7 @@ When you turn on engineering change management on your system, the release produ
 
 ## Product acceptance
 
-**Product acceptance** is a key parameter that influences the release process. You can set this parameter for each company by going to **Engineering change management \> Setup \> Engineering change management parameters**. For more information, see [Engineering change management parameters](engineering-parameters.md).
+**Product acceptance** is a key parameter that influences the release process. You can set this parameter for each company by going to **Engineering change management \> Setup \> Engineering change management parameters**. Learn more in [Engineering change management parameters](engineering-parameters.md).
 
 ### Automatic product acceptance
 
@@ -131,7 +127,7 @@ For each row that is shown on the **Option parameters for engineering products**
 | Template BOM | When a product that has a BOM is released, the lines of the specified template BOM will be added. This field is useful for adding local components, such as packaging or instructions in the local language. |
 | Template route | When a product that has a route is released, the lines of the specified template will be added. |
 | Copy effectivity | Select whether effectivity dates should be copied from the engineering company to the operational company when you release products. |
-| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (For more information, see [Manage changes to engineering products](engineering-change-management.md).)
+| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (Learn more in [Manage changes to engineering products](engineering-change-management.md).)
 
 ### Review each product when you release it
 
@@ -149,13 +145,13 @@ This behavior applies only when a product is directly selected for release. Prod
 
 For example, product X is assigned to the *Design cabinets* product owner group. Product X is also part of the BOM of product Y, which is assigned to the *Design speakers* product owner group. If a user from the *Design speakers* product owner group releases product Y and its BOM, product X will be released together with product Y.
 
-For more information, see [Product owners](product-owner.md).
+Learn more in [Product owners](product-owner.md).
 
 ## Release multiple BOMs/formulas
 
 In older versions of Supply Chain Management, when you release a product, only the first active BOM or formula (as of the date of release) will be released. If there are no active BOMs or formulas, the engineering version won't be released.
 
-Starting in Supply Chain Management version 10.0.34, it's now possible to release multiple BOMs or formulas. To enable this new functionality, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the *Release multiple BOMs/formulas for Engineering Change Management* feature.
+Starting in Supply Chain Management version 10.0.34, it's now possible to release multiple BOMs or formulas. To enable this new functionality, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the *Release multiple BOMs/formulas for Engineering Change Management* feature. As of Supply Chain Management version 10.0.43, this feature is mandatory and can't be turned off.
 
 When the *Release multiple BOMs/formulas for Engineering Change Management* feature is enabled, all BOMs or formulas that are active for a product will be released when you release the product. This functionality can be relevant, for example, if you have multiple active formulas that apply for various from quantities. You'll be able to view the different BOMs or formulas and their respective routes on the BOM designer when releasing on the **Release product structure** page and when reviewing the release on **Open product releases** page.
 

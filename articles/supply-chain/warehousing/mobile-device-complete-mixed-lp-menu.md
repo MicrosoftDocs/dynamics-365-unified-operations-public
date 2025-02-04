@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 03/19/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSRFMenuItem
 ---
 
@@ -52,9 +50,9 @@ Follow these steps to create a mobile device menu item that runs the *Complete m
 1. Follow one of these steps:
 
     - To create a standalone menu item that workers can use to complete any existing license plate: Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**, and add the new menu item to an appropriate place in your mobile device menu structure.
-    - To add the capability to complete a license plate as part of a larger, existing flow (such as the flow for sales returns): Add the new menu item as a detour of the existing flow. For instructions, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md#enable-detours-in-your-system).
+    - To add the capability to complete a license plate as part of a larger, existing flow (such as the flow for sales returns): Add the new menu item as a detour of the existing flow. For instructions, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
 
-## Additional resources
+## Related information
 
 - For information about how to receive shipments by using mixed license plates, see [Mixed license plate receiving](mixed-license-plate-receiving.md).
 - For information about to manage return orders, see [Receive unannounced sales returns](sales-returns-unannounced.md).

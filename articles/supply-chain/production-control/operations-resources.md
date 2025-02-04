@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability, WrkCtrResourceGroup, WrkCtrResourceAbilityMap, OpResCapacityPlanningWorkspace, WrkCtrCapResGraph, WrkCtrResourceRequirementPart, WrkCtrCapResGraphDialog, WrkCtrResourceCopy, WrkCtrCapResStatistic
 ---
 
@@ -39,7 +38,7 @@ A calendar can be assigned to an operations resource and describes the capacity 
 
 ## Resource capabilities
 
-A capability is the ability of an operations resource to perform a particular activity. You can assign one or more capabilities to an operations resource. The scheduling engine will then allocate resources by matching the resource requirements of each activity to the capabilities of the available operations resources. Capabilities can be assigned to all types of operations resources (*Tool*, *Vendor*, *Machine*, *Human resources*, *Location*, or *Facility*). To assign capabilities to operations resources for a limited time, define a start date and an expiration date on the capability assignment. For more information, see [Resource capabilities](resource-capabilities.md).
+A capability is the ability of an operations resource to perform a particular activity. You can assign one or more capabilities to an operations resource. The scheduling engine will then allocate resources by matching the resource requirements of each activity to the capabilities of the available operations resources. Capabilities can be assigned to all types of operations resources (*Tool*, *Vendor*, *Machine*, *Human resources*, *Location*, or *Facility*). To assign capabilities to operations resources for a limited time, define a start date and an expiration date on the capability assignment. Learn more in [Resource capabilities](resource-capabilities.md).
 
 ## Resource groups
 

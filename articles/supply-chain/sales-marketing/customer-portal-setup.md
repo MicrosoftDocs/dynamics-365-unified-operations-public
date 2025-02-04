@@ -1,14 +1,13 @@
 ---
 title: Install, set up, and update the Customer portal
 description: Learn about licensing details and setup instructions for the Customer portal, including outlines on licensing requirements and dependencies.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -20,8 +19,8 @@ ms.search.form:
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. Learn more in the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. Learn more in the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## Dependencies on dual-write and Power Apps portals
 
@@ -63,7 +62,7 @@ After provisioning is completed, you can access the Customer portal on the **Act
 
 Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You'll have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
 
-## Additional resources
+## Related information
 
 To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
 

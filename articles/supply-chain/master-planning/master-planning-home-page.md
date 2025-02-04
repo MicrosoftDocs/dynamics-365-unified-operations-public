@@ -3,13 +3,12 @@ title: Master planning home page
 description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals.
 author: t-benebo
 ms.author: benebotg
-ms.topic: overview
-ms.date: 01/06/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: ReqCreatePlanWorkspace
+ms.topic: overview
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Master planning home page
@@ -25,11 +24,11 @@ Master planning uses the information to calculate the requirements and generate 
 
 The three main planning processes are:
 
-- **Master planning** - The master plan calculates net requirements. It's based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it's the *Net requirements plan*. For more information, see [Master plans overview](master-plans.md).
+- **Master planning** - The master plan calculates net requirements. It's based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it's the *Net requirements plan*. Learn more in [Master plans overview](master-plans.md).
 
-- **Forecast planning** - The forecast schedule calculates gross requirements. It's based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity. For more information, see [Demand forecasting overview](introduction-demand-forecasting.md).
+- **Forecast planning** - The forecast schedule calculates gross requirements. It's based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity. Learn more in [Demand forecasting overview](introduction-demand-forecasting.md).
 
-- **Intercompany master planning** - The intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, but also for long-term, planned (not yet firmed) demand and supply. For more information, see [Intercompany planning](planning-optimization/Intercompany-planning.md).
+- **Intercompany master planning** - The intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, but also for long-term, planned (not yet firmed) demand and supply. Learn more in [Intercompany planning](planning-optimization/Intercompany-planning.md).
 
 Companies can change the output of the plan. They can run regenerative, net change, or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
 
@@ -41,7 +40,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 [![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
-## Additional resources
+## Related information
 
 ### Roadmaps
 
@@ -54,7 +53,7 @@ You can find opinions, news, and other information about Master planning and oth
 
 ### Webinars
 
-[Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
+[Use Azure Machine Learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### Tech conference recordings
 
@@ -62,7 +61,5 @@ You can find opinions, news, and other information about Master planning and oth
 - [Get started with Planning Optimization](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/get-started-with-planning-optimization-for-dynamics-365-supply-chain-management-march-1-2021)
 - [Demand forecasting series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/demand-forecasting-with-azure-machine-learning-series)
 - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 04/19/2024
 ms.custom: evergreen
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-02-01
 ms.search.form:
-ms.dyn365.ops.version: 10.0.25
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
@@ -33,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 | Inventory&nbsp;and&nbsp;logistics | [Hazardous materials enhancements](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Coming soon | Feature management:<br>*Hazardous materials enhancements* |
 | Inventory&nbsp;and&nbsp;logistics | [Packing work for packing stations](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | [Packing work for packing outbound containers and processing shipments](../warehousing/packing-work.md) | Feature management:<br>*Packing work for packing stations* |
 | Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) | Feature management:<br>*Scan GS1 barcodes* |
-| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*Register material consumption on the production floor execution interface (non-WMS)*<br><br>And/or:<br><br>Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* |
+| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*Register material consumption on the production floor execution interface (non-WMS)* |
 | Planning | [Planning Optimization centralized calendar maintenance](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Calendars and master planning](../master-planning/supply-chain-calendars-master-planning.md) | Enabled by default |
 | Planning | [Planning Optimization suggestions to optimize existing supply](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Action messages](../master-planning/action-messages.md) | Enabled by default |
 | Planning | Planned orders simplified | [Planned orders simplified](../master-planning/planning-optimization/planned-orders-simplified.md ) | Feature management:<br>*Planned orders simplified* |
@@ -51,7 +47,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Procurement and sourcing | Display legacy default RFQ reply field settings | This feature reintroduces the legacy default request for quotation (RFQ) reply field settings, which were previously removed from the user interface. These settings don't provide any functionality out of the box, but can be customized to provide it as required. Enable this feature if your organization has already added functionality for the default RFQ reply field settings or is planning to. When this feature is enabled, you can access the settings by going to the **Procurement and sourcing parameters** page, opening the **Request for quotation** tab, and selecting **Default request for quotation reply fields**. |
 | Procurement and sourcing | Merge financial dimensions from the vendor with active dimension link financial dimension on the purchase order | This feature lets you merge financial dimensions from vendors with active dimension link financial dimensions after purchase requisition approval if you set up a link between a financial dimension and the site inventory dimension. Purchase order creation and demand consolidation purchasing policy rules can be set up to drive the decision for merging financial dimensions from vendors with active dimension link financial dimension on the purchase order header level. |
 | Production control | (Russia) Enable default location setup for production formula/BOM and automatic GTD reservation/consumption in production | The feature enables additional options for production from imported raw materials (Russian localization only):<ul><li>Option to set the automatic default location for production formulas and bills of material on both resource groups and warehouses.</li><li>Automatic reservation of raw materials by the *GTD number* dimension at WMS-activated warehouses according to the non-WMS reservation algorithm. This applies in cases where a work policy for *Raw material picking* exists with **Work creation method** set to *Never* and the warehouse, location and item number setup matches the inventory transactions of the production (batch) order.</li><li>Automatic consumption of raw materials by *GTD number* dimension upon picking list posting, according to the acquired reservation described previously.</li></ul> |
-| Warehouse management | Scale unit support for inbound and outbound warehouse orders | This feature causes the system to create outbound warehouse orders during the release-to-warehouse process, and to create inbound warehouse orders when transfer orders are posted as shipped. The system then synchronizes each inbound or outbound warehouse order to the scale unit responsible for shipping or receiving the order. Note that after enabling this feature, your warehouse execution workloads must be upgraded. For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>This feature requires the *Decouple putaway work from ASNs* feature and will enable the capability of receiving transfer orders using the license plate receiving process on the Warehouse Management mobile app. |
+| Warehouse management | Scale unit support for inbound and outbound warehouse orders | This feature causes the system to create outbound warehouse orders during the release-to-warehouse process, and to create inbound warehouse orders when transfer orders are posted as shipped. The system then synchronizes each inbound or outbound warehouse order to the scale unit responsible for shipping or receiving the order. Note that after enabling this feature, your warehouse execution workloads must be upgraded. Learn more in [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>This feature requires the *Decouple putaway work from ASNs* feature and will enable the capability of receiving transfer orders using the license plate receiving process on the Warehouse Management mobile app. |
 
 ## Feature state changes in this release
 
@@ -177,11 +173,11 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Wave batch job details](../warehousing/wave-processing.md) | On by default |
 | Warehouse management | [Wave execution notifications](../warehousing/wave-execution-notifications.md) | On by default |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of finance and operations apps (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.25 includes platform updates. Learn more in [Platform updates for version 10.0.25 of finance and operations apps (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### Bug fixes
 

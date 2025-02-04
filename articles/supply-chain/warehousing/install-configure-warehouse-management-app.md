@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
@@ -28,7 +26,9 @@ The Warehouse Management mobile app is only for your internal business use. You 
 The Warehouse Management mobile app is available for Microsoft Windows, Google Android, and Apple iOS operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
-- Android 5.0 or later
+- Android:
+    - Warehouse Management mobile app version 3.x requires Android 5.0 or later
+    - Warehouse Management mobile app version 4.x requires Android 7.0 or later
 - iOS 13.0 or later
 
 ### External URLs required by the app
@@ -131,6 +131,7 @@ You can import connection settings from either a file or a QR code. For both app
 | `"IsDefaultConnection"` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `"CertificateThumbprint"` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
 | `"UseBroker"` | <p>(Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication. Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. It works with the following authentication systems:</p><ul><li>Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only)</li><li>Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal))</li><li>[Integrated Windows authentication (IWA)](/entra/identity-platform/msal-authentication-flows#integrated-windows-authentication-iwa)</li></ul> |
+| `"DomainName"` | (Optional) This parameter applies only to the `"UsernamePassword"` connection type. It allows you to implement a simplified sign-in process. If you don't set this field, workers must always enter their full Microsoft Entra ID user principal name (UPN) to sign in. A UPN has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Even if you set the domain name here, workers can still sign in using their full UPN.) |
 | `"AuthCloud"` | <p>Specify the type of Microsoft Entra ID app registration to authenticate with:</p><ul><li>`"AzureGlobal"` – Authenticate by using a global Microsoft Entra ID application that's registered and maintained by Microsoft (recommended). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app, and you shouldn't specify `"ActiveDirectoryTenant"` or `"ActiveDirectoryClientAppId"` values for this connection.</li><li>`"Manual"` – Authenticate through your own custom Microsoft Entra ID app registration. If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify `"ActiveDirectoryTenant"` and `"ActiveDirectoryClientAppId"` values for this connection.</li></ul> |
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
@@ -293,7 +294,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 - If you use user-based authentication, see [User-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - If you use service-based authentication (deprecated), see [Service-based authentication](warehouse-app-authenticate-service-based.md#revoke)
 
-## Additional resources
+## Related information
 
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)

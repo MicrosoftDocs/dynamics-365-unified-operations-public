@@ -1,16 +1,12 @@
 ---
 title: Price simulation
 description: Learn about price simulation for quotations, which helps you evaluate the effect of deductions on the future sales price during the quotation process.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ---
 

@@ -2,17 +2,16 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 05/24/2024
+ms.date: 07/17/2024
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: Release 10.0.11
-ms.assetid: 
-ms.search.industry: Retail
 ms.search.form: RetailITWorkspace
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce architecture overview
@@ -35,7 +34,7 @@ The headless commerce engine powers all native Dynamics 365 Commerce channels, i
 
 ### Interconnected business processes
 
-The platform that is shared among the various Dynamics 365 business applications, such as Dynamics 365 Commerce, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, provides a set of interconnected business processes that users can immediately benefit from. All back-office capabilities across these applications are built on the same web experience and data stores. Therefore, there is a seamless flow of business processes across various functions in the organization, but custom integrations across applications and services aren't required. The out-of-box integration between the headless commerce engine and the back office further expands the coverage of these interconnected business processes across the back office and commerce channels.
+The platform that is shared among the various Dynamics 365 business applications, such as Dynamics 365 Commerce, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, provides a set of interconnected business processes that users can immediately benefit from. All back-office capabilities across these applications are built on the same web experience and data stores. Therefore, there's a seamless flow of business processes across various functions in the organization, but custom integrations across applications and services aren't required. The out-of-box integration between the headless commerce engine and the back office further expands the coverage of these interconnected business processes across the back office and commerce channels.
 
 ### Unified data
 
@@ -43,11 +42,11 @@ Dynamics 365 Commerce provides a unified data solution through out-of-the-box in
 
 ### Powered by AI and analytics
 
-Because of the accessible, persistent, up-to-date, and unified organizational data that is available in Data Lake Storage, the whole organization has a "single source of truth" that analytics, artificial intelligence (AI), and machine learning (ML) can be applied on top of. In this way, the organization can derive insights and get key performance indicators (KPIs) that can be used optimize and automate business processes across all channels.
+Because of the accessible, persistent, up-to-date, and unified organizational data that is available in Data Lake Storage, the whole organization has a "single source of truth" that analytics, artificial intelligence (AI), and machine learning (ML) can be applied on top of. In this way, the organization can derive insights and get key performance indicators (KPIs) that can be used to optimize and automate business processes across all channels.
 
 #### Business and transactional analytical reports in POS and Commerce headquarters
 
-The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take avantage of insights across all channels.
+The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take advantage of insights across all channels.
 
 The highcharts-based reports on POS are real-time, enabling store associates to analyze their channel's transactional and other POS activities at the conclusion of a transaction. This contrasts with the out-of-the-box reports in Commerce headquarters, which enable retailers to view analytical reports for transactional activity across all channels, once the data is synced. Commerce headquarters reports are specifically designed for channel managers who focus on sales performance to predict trends and uncover insights, allowing them to drill down in reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more.
 
@@ -109,6 +108,9 @@ To facilitate cloud and edge computing scenarios, a Commerce Scale Unit is avail
 
 Multiple Commerce Scale Units can be associated with each environment. Each Commerce Scale Unit can be independently serviced and updated, and each can serve one or more channels across one or more legal entities. Each Commerce Scale Unit can be deployed to any of the supported Azure regions, and multiple Commerce Scale Units can be deployed to the same region. The independent nature of each Commerce Scale Unit allows for phased rollout of updates across a collection of channels.
 
+> [!WARNING]
+> Using or relying on outbound Internet Protocol (IP) addresses for cloud-hosted CSUs isn't supported. IP addresses can change at any time and shouldn't be used as a stable identifier of network traffic. Dependence on any IP value for cloud-hosted CSUs might negatively impact your environment.
+
 #### Commerce Scale Units (self-hosted)
 
 The ability to bring the Commerce Scale Units to edge computing helps accommodate scenarios where internet connectivity is poor or unreliable. For retailers, this approach typically means having a physical footprint in their stores. By using a Commerce Scale Unit (self-hosted), retailers can bring the same business logic and capabilities that run in the Azure cloud into their stores. In these cases, although in-store connectivity is presumably more reliable, self-management of these components will involve additional overhead in terms of monitoring and updates. For more information, see [Select an in-store topology](retail-in-store-topology.md).
@@ -135,7 +137,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Customer Insights
 
-Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](clienteling-overview.md#integrate-customer-insights-with-commerce).
+Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they're valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](clienteling-overview.md#integrate-customer-insights-with-commerce).
 
 #### Azure cognitive search
 
@@ -143,7 +145,7 @@ Dynamics 365 Customer Insights helps you gain a deeper understanding of your cus
 
 #### Product recommendations
 
-Dynamics 365 Commerce can be used to show product recommendations on the e-commerce website and POS devices. These product recommendations are items that a customer might be interested in, and they are based on the purchase trends of other customers in online and brick-and-mortar stores.
+Dynamics 365 Commerce can be used to show product recommendations on the e-commerce website and POS devices. These product recommendations are items that a customer might be interested in, and they're based on the purchase trends of other customers in online and brick-and-mortar stores.
 
 Product recommendations let customers easily and quickly find products that they might want to purchase, and cross-selling and upselling can be used to help customers find additional products that they didn't originally intend to buy. When recommendations are used to assist with product discovery, they can help create more conversion opportunities, increase sales revenue, and enhance customer satisfaction and retention. For more information, see [Product recommendations overview](../product-recommendations.md).
 

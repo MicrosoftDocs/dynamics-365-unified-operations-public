@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 01/07/2020
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqDemPlanForecastDetails
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ---
 
@@ -30,7 +25,7 @@ Supply Chain Management calculates the following types of forecast accuracy:
 > [!NOTE]
 > If you use the Demand forecasting Microsoft Azure Machine Learning, the calculation of internal model accuracy is based on the test data set. To specify the size of the test data set, set the **TEST\_SET\_SIZE\_PERCENT** parameter on the **Demand forecasting parameters** page. For example, if you set the value to **20**, the last 20 percent of the historical data will be used to calculate the internal model accuracy.
 
-## Additional resources
+## Related information
 
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
 - [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)

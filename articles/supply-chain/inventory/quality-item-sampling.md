@@ -1,18 +1,13 @@
 --- 
 title: Quality management item sampling
 description: Learn how to set up item sampling and how it is used as part of a quality association, including an outline and step-by-step process for setting up item sampling.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: how-to
 ms.date: 03/23/2021
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventItemSampling
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Quality management item sampling

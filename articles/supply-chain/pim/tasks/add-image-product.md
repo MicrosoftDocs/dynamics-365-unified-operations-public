@@ -1,33 +1,26 @@
 --- 
 title: Add an image to a product
-description: Learn how to add an image to a product The demo data company used to create this task is USMF, including a step-by-step process. 
-author: t-benebo
-ms.author: benebotg
+description: Learn how to add an image to a product.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 09/03/2024
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: EcoResProductDetailsExtended, EcoResProductPerCompanyImagePart, EcoResProductImage, DocumentUpload
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Add an image to a product
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to add an image to a product The demo data company used to create this task is USMF.
+This procedure shows how to add an image to a product.
 
-1. Go to Product information management > Products > Released products.
-2. Expand the Product image FactBox.
-3. In the list, find and select the desired record.
-    * For example, select the item number C0002.  
-4. Click Change image.
-5. Click New.
-    * Click Browse. Find the image that you want to use, select it, and then close the dialog box.    
-
-
+1. Go to **Product information management** \> **Products** \> **Released products**.
+1. In the grid, find and select the product you want to add an image for.
+1. On the far-right pane, select the **Related information** button :::image type="icon" source="../media/related-information-button.png" border="false"::: to open the **Related information** pane (also called the FactBox pane).
+1. On the **Related information** pane, expand the **Product image** FastTab.
+1. Select **Change image** to open the **Product images** dialog, where you can upload an image or select an existing one from the gallery.
+1. Select **OK** to apply the image and close the dialog.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

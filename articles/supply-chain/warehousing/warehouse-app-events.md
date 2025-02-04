@@ -1,17 +1,13 @@
 ---
 title: Warehouse app events
 description: Learn about the warehouse app event processing used to process warehouse app event messages as part of a batch job with an outline on setting up batch jobs.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 09/02/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-10-09
 ms.search.form: WHSMobileDeviceQueueEvent 
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Warehouse app event processing

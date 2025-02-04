@@ -1,14 +1,13 @@
 ---
 title: FIFO with physical value and marking
 description: Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the date of the transactions.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ---
 

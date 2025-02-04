@@ -1,16 +1,12 @@
 ---
 title: Change or delete an original intercompany sales order
 description: Learn about changing and deleting an original sales order functionality, including a table that defines results for various operations.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Change or delete an original intercompany sales order

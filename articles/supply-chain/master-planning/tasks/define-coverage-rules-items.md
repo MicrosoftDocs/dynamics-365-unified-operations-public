@@ -1,25 +1,12 @@
 --- 
-# required metadata 
- 
 title: Define coverage rules for items
 description: This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
 author: t-benebo
 ms.date: 07/01/2019
 ms.topic: how-to 
- 
-# optional metadata 
- 
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable   
-audience: Application User 
-# ms.devlang:  
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define coverage rules for items
 
@@ -72,7 +59,7 @@ Create a new product by doing the following:
 
 Set up default order settings by doing the following:
 
-1. On the **Action Pane**, select **Plan**.
+1. On the Action Pane, select **Plan**.
 1. Under **Order settings**, select **Default order settings**.
 1. Under **Purchase order**, in the **Default site** field, type the site used as default when purchase orders are created.
 1. In the **Default warehouse** field, type the site where the item is stored.
@@ -101,7 +88,7 @@ Add an item to a coverage group by doing the following:
 
 Create item coverage rules by doing the following:
 
-1. On the **Action Pane**, select **Plan**.
+1. On the Action Pane, select **Plan**.
 1. Under **Coverage**, select **Item coverage**.
 1. Select **New**.
 1. Select the **General** tab.

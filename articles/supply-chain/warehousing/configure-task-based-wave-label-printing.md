@@ -1,16 +1,12 @@
 ---
 title: Schedule wave label printing during wave
 description: Learn how to set up and use the functionality for task-based wave label printing with a process for manually enabling the new wave step method.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 12/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-06-09
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
-ms.dyn365.ops.version: 10.0.16
 ---
 
 # Schedule wave label printing during wave
@@ -70,7 +66,7 @@ If wave label generation fails (for example, if conversion of the work quantity 
 1. Follow the on-screen instructions to send the labels for printing.
 1. On the Action Pane, on the **Wave** tab, in the **Wave** group, select **Release** to manually release the work for the selected wave.
 
-## Additional resources
+## Related information
 
 - [Wave label printing](configure-wave-label-printing.md)
 - [Schedule work creation during wave](configure-wave-schedule-work-creation.md)

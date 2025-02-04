@@ -1,17 +1,13 @@
 ---
 title: Hazardous materials inquiries and reports
 description: Learn how to work with the various reports that are related to hazardous materials, including an outline and process on setting up hazardous materials reporting.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/10/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-06-10
 ms.search.form:
-ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials inquiries and reports
@@ -58,7 +54,7 @@ To view this report, go to **Product information management \> Inquiries and rep
 
 For more information about how to set stock limits on a released product, see [Set stock limits for hazardous products](hazmat-items.md#stock-limits).
 
-The regulation that is used for stock limits is defined on the **Warehouse management parameters** page. Go to **Warehouse management \> Setup \> Warehouse management parameters**, and then, on the **Reports** tab, in the **Hazardous materials stock limit**, specify a regulation code. For more information, see the [Set up hazardous materials reporting](#set-up) section earlier in this article.
+The regulation that is used for stock limits is defined on the **Warehouse management parameters** page. Go to **Warehouse management \> Setup \> Warehouse management parameters**, and then, on the **Reports** tab, in the **Hazardous materials stock limit**, specify a regulation code. Learn more in the [Set up hazardous materials reporting](#set-up) section earlier in this article.
 
 ## Verified gross mass report
 

@@ -3,7 +3,7 @@ title: What's new or changed in on-premises deployments of Dynamics 365 Finance 
 description: Learn about new or changed features in on-premises deployments of Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.2 with platform update 12.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: whats-new
 ms.date: 07/12/2024
 ms.custom: 
   - bap-template

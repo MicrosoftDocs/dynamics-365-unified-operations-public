@@ -1,16 +1,14 @@
 ---
 title: Weighted average date with Include physical value and marking
 description: Weighted average date is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of received items.
-author: JennySong-SH
-ms.author: yanansong
-ms.topic: article
-ms.date: 03/04/2022
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: conceptual
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Weighted average date with Include physical value and marking
@@ -19,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 *Weighted average date* is an inventory model that is based on an average that is calculated by multiplying each component (item transaction) by a factor (cost price) that reflects its importance (quantity) on each day in the period. In other words, this inventory model assigns the cost of issue transactions based on the mean value of all inventory that is received each day, plus any on-hand inventory from the previous day.
 
-When you run an inventory closing by using the weighted average date inventory model, two methods can be used to create a settlement. Typically, all receipts are settled against a virtual issue that holds the total received quantity and value. This virtual issue has a corresponding virtual receipt that the issues are settled from. In this way, all issues get the same average cost each day. The virtual issue and the virtual receipt can be considered a virtual transfer. This virtual transfer is referred to as *weighted average inventory closing transfer*. Therefore, this settlement method is known as a *weighted average summarized settlement*. If there is only one receipt, all issues can be settled from it, and no virtual transfer is created. This settlement method is referred to as *direct settlement*. Any inventory that is on hand after the inventory close is performed is valued at the weighted average from the last day of the previous period and included in the weighted average date calculation in the next period.
+When you run an inventory closing by using the weighted average date inventory model, two methods can be used to create a settlement. Typically, all receipts are settled against a virtual issue that holds the total received quantity and value. This virtual issue has a corresponding virtual receipt that the issues are settled from. In this way, all issues get the same average cost each day. The virtual issue and the virtual receipt can be considered a virtual transfer. This virtual transfer is referred to as *weighted average inventory closing transfer*. Therefore, this settlement method is known as a *weighted average summarized settlement*. If there's only one receipt, all issues can be settled from it, and no virtual transfer is created. This settlement method is referred to as *direct settlement*. Any inventory that is on hand after the inventory close is performed is valued at the weighted average from the last day of the previous period and included in the weighted average date calculation in the next period.
 
 You can override the weighted average date principle by marking inventory transactions so that a specific item receipt is settled against a specific issue. A periodic inventory close is required when you use the weighted average date inventory model to create settlements and adjust the value of issues according to the weighted average date principle. Until you run the inventory close, issue transactions are valued at the running average when the physical and financial updates occurred. Unless you're using marking, the running average is calculated when the physical or financial update is performed.
 
@@ -92,7 +90,7 @@ The following diagram shows this series of transactions and the effects of using
 
 ## Weighted average date summarized settlement when the Include physical value option isn't used
 
-When there are multiple receipts in a period, weighted average date uses the summarized settlement principle, where all receipts in a single day are summarized into a transaction that is named *weighted average inventory closing*. All the receipts for the day will be settled against the issue of the newly created inventory transaction. All issues for the day will be settled against the receipt of the new inventory transaction. If there is remaining on-hand inventory value after the inventory close, the on-hand inventory value is included in the receipt transaction of the weighted average inventory closing transactions.
+When there are multiple receipts in a period, weighted average date uses the summarized settlement principle, where all receipts in a single day are summarized into a transaction that is named *weighted average inventory closing*. All the receipts for the day will be settled against the issue of the newly created inventory transaction. All issues for the day will be settled against the receipt of the new inventory transaction. If any on-hand inventory value remains after the inventory close, the on-hand inventory value is included in the receipt transaction of the weighted average inventory closing transactions.
 
 The diagram that follows shows these transactions:
 
@@ -124,7 +122,7 @@ The diagram that follows shows these transactions:
 - 7b. Weighted average inventory close transaction financial receipt is created as the offset for financially posted issues.
 
     - Transaction 3b is settled for a quantity of 1 with a settled amount of USD 16.00. This transaction isn't adjusted because it's the weighted average of financially posted transactions on December 1 (12/1).
-    - Transaction 7b is created for a quantity of 2 with a financial amount of USD 32.00 and a settled amount of USD 16.00 to offset transaction 3b. This transaction offsets the sum of the one issue transaction that is financially updated in the period. The transaction remains open because there is still one on hand.
+    - Transaction 7b is created for a quantity of 2 with a financial amount of USD 32.00 and a settled amount of USD 16.00 to offset transaction 3b. This transaction offsets the sum of the one issue transaction that is financially updated in the period. The transaction remains open because there's still one on hand.
 
 The following diagram shows this series of transactions and the effects of using the weighted average inventory model and the summarized settlement principle, but without using the **Include physical value** option.
 
@@ -219,7 +217,7 @@ The diagram that follows shows these transactions:
 - 7b. Weighted average inventory close transaction financial receipt is created as the offset for financially posted issues.
 
     - Transaction 3b is settled for a quantity of 1 with a settled amount of USD 16.00. This transaction isn't adjusted because it's the weighted average of financially posted transactions on December 1 (12/1).
-    - Transaction 7b is created for a quantity of 2 with a financial amount of USD 32.00 and a settled amount of USD 16.00 to offset transaction 3b. This transaction offsets the sum of the one issue transaction that is financially updated in the period. The transaction remains open because there is still one on hand.
+    - Transaction 7b is created for a quantity of 2 with a financial amount of USD 32.00 and a settled amount of USD 16.00 to offset transaction 3b. This transaction offsets the sum of the one issue transaction that is financially updated in the period. The transaction remains open because there's still one on hand.
 
 The following diagram shows this series of transactions and the effects of using the weighted average inventory model and the summarized settlement principle without the **Include physical value** option.
 
@@ -242,7 +240,7 @@ The following diagram shows this series of transactions and the effects of using
 
 Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to make sure of the exact cost of the inventory when the transaction is posted or the inventory close is performed.
 
-For example, your Customer Service department accepted a rush order from an important customer. Because it's a rush order, you will have to pay more for this item to service your customer's request. You must be sure that the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice.
+For example, your Customer Service department accepted a rush order from an important customer. Because it's a rush order, you'll have to pay more for this item to service your customer's request. You must be sure that the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice.
 
 When the purchase order is posted, the inventory is received at a cost of USD 120.00. If the sales order document is marked to the purchase order before the packing slip or invoice is posted, COGS will be USD 120.00 instead of the current running average cost for the item. If the marking occurs after sales order packing slip or invoice is posted, the COGS will be posted at the running average cost price.
 

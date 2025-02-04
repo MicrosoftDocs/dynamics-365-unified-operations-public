@@ -1,17 +1,13 @@
 --- 
 title: Create a default product lifecycle state
 description: Learn how to create a default product lifecycle state as well as how to associate the default state with released products.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/05/2017
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form:
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create a default product lifecycle state

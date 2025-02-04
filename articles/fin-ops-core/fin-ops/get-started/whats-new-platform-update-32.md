@@ -3,16 +3,14 @@ title: What's new or changed in Platform update 32 for finance and operations ap
 description: Learn about the features that are in preview in Platform update 32 for finance and operations apps added in the February 2020 update. 
 author: sericks007
 ms.author: sericks
-ms.topic: conceptual
-ms.date: 04/12/2024
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
+ms.date: 04/12/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-11-30
-ms.search.form: 
 ms.dyn365.ops.version: Platform update 32
 ---
 

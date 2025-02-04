@@ -1,16 +1,12 @@
 ---
 title: Vendor collaboration with customers
 description: Learn how you can use vendor collaboration to work with POs and monitor consignment inventory, including a list of workspaces.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 09/15/2020
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-11-01
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
-ms.dyn365.ops.version: 10.0.15
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ---
 
@@ -94,15 +90,7 @@ People who work in the public sector can see open and expired RFQs that have bee
 
     If you've been invited to bid, you can find the same RFQ on the **New bid invitations** page. Sometimes, you might want to bid on an open RFQ, but you haven't been invited to bid. In this case, you might be able to invite yourself, provided that the customer has enabled self-invitation for the RFQ case. 
 
-    The **New bid invitations** page can provide a filter that lets you view the open RFQs and identify those that contain lines that match your approved procurement categories. To make this filter available, you must turn on the *Let vendors search for RFQs by procurement category* feature in your system. Admins can use the **Feature management** workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
-
-    - **Module:** *Accounts payable*
-    - **Feature name:** *Let vendors search for RFQs by procurement category* <!-- KFM: I don't see this here, is this right? -->
-
-    You can enhance the accessibility of the **Open published requests for quotations** link by turning on the *Display the "Open published requests for quotation" link as a tile* feature. This feature converts the link to a tile and moves it to a prominent location so that it's easy to find. Admins can use the **Feature management** workspace to check the status of this feature and turn it on if it's required. (As of Supply Chain Management version 10.0.21, the feature is turned on by default.) There, the feature is listed in the following way:
-
-    - **Module:** *Procurement and sourcing*
-    - **Feature name:** *Display the "Open published requests for quotation" link as a tile*
+    The **New bid invitations** page provides a filter that lets you view the open RFQs and identify those that contain lines that match your approved procurement categories.
 
 - Select the **Closed published requests for quotations** link to see a list of closed RFQs that are available to the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
 
@@ -140,7 +128,7 @@ As a vendor, you can access part of the information that the customer maintains 
 
 The accessible information is the vendor name, addresses, contact information, contact persons and their contact information, identification numbers, tax registration numbers, procurement categories that the vendor is approved to sell to the customer in, and information about certifications.
 
-## Additional resources
+## Related information
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 

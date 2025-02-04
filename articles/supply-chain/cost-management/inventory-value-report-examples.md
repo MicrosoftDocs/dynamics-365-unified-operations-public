@@ -1,16 +1,14 @@
 ---
 title: Inventory value report examples and logic
-description: Acess examples of results that are presented on each type of inventory value report. Inventory value reports provide details about your inventory amounts.
-author: JennySong-SH
-ms.author: yanansong
-ms.topic: article
-ms.date: 10/19/2021
+description: Access examples of results that are presented on each type of inventory value report. Inventory value reports provide details about your inventory amounts.
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-10-19
-ms.search.form:
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: 
+ms.topic: how-to
+ms.date: 12/02/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory value report examples and logic

@@ -5,7 +5,7 @@ author: moaamer
 ms.author: moaamer
 ms.topic: article
 ms.date: 08/10/2021
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -17,7 +17,6 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 # Create monthly journal entries in a batch
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 This article explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded. Batch processing can be used to create journal entries from multiple schedules. These journal entries can include lease payments, liability amortization, right-of-use (ROU) asset amortization, and executory cost expenses. You can also use batch processing to do the initial recognition of multiple leases at the same time, or to create transition adjustments for multiple leases at the same time.

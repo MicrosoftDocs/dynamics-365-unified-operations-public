@@ -1,15 +1,14 @@
 ---
 title: Sales agreements overview
 description: Learn about sales agreements, which are a contract that commits the customer to buy products in a specific quantity or for a specific amount over time.
-author: Henrikan
-ms.author: henrikan
-ms.topic: overview
-ms.date: 03/06/2023
-ms.custom: bap-template
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
+ms.topic: overview
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Sales agreements overview

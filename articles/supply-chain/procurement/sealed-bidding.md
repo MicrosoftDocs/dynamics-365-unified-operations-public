@@ -1,26 +1,24 @@
 ---
 title: Sealed bidding for RFQs
-description: Learn how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel with an outline on setup and configuration.
-author: Henrikan
-ms.author: henrikan
-ms.topic: article
-ms.date: 08/02/2021
+description: Learn how to set up sealed bidding to keep vendor bid replies secret until they're unsealed by purchasing personnel with an outline on setup and configuration.
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-08-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
+ms.topic: how-to
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Sealed bidding for RFQs
 
 [!include [banner](../includes/banner.md)]
 
-Sealed bidding keeps vendor bid replies secret until they are unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are first available to be unsealed upon bid expiry. Before a bid is unsealed, only users who have dedicated user roles and who represent the vendor can access it.
+Sealed bidding keeps vendor bid replies secret until they're unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are first available to be unsealed upon bid expiry. Before a bid is unsealed, only users with dedicated user roles and who represent the vendor can access it.
 
 > [!IMPORTANT]
-> Modifying or extending forms, or creating new forms or business logic may defeat the protection Microsoft provides for sealed bidding. You bear the risk of using any modifications, extensions, new forms or business logic, or the inability to use the sealed bidding feature due to such modifications, extensions, new forms, or business logic.  Microsoft is not responsible for any damages arising from any modifications or extensions to forms, or any new forms or business logic that you create, or any third party creates for you. Microsoft does not provide technical or other support for any modifications, extensions, new forms, or business logic made by you or any third party on your behalf. You are solely responsible for complying with all applicable laws or regulations concerning sealed bidding.
+> Modifying or extending forms, or creating new forms or business logic can defeat the protection Microsoft provides for sealed bidding. You bear the risk of using any modifications, extensions, new forms or business logic, or the inability to use the sealed bidding feature due to such modifications, extensions, new forms, or business logic. Microsoft isn't responsible for any damages arising from any modifications or extensions to forms, or any new forms or business logic that you create, or any third party creates for you. Microsoft doesn't provide technical or other support for any modifications, extensions, new forms, or business logic made by you or any third party on your behalf. You are solely responsible for complying with all applicable laws or regulations concerning sealed bidding.
 
 ## How bids are kept secure
 
@@ -34,7 +32,7 @@ This section describes the prerequisites that must be in place before you can se
 
 When you use sealed bidding, only users who are set as the contact person for a vendor can view, edit, and submit bids for that vendor until the bidding period expires. These users must have the **Vendor (external)** role, and they must be set as a contact person for the vendor account. The contact person must also have permission to do vendor collaboration, as described in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
-Because users who have appropriate permissions and who are set up as vendor contacts can access the sealed bids for a vendor, it's important to track who those users are. The system admin who sets up users and security roles is responsible for limiting access to sealed bids to those users who are really allowed to view them.
+Because users who have appropriate permissions and who are set up as vendor contacts can access the sealed bids for a vendor, it's important to track who those users are. The system admin who sets up users and security roles is responsible for limiting access to sealed bids to those users who are allowed to view them.
 
 ### Step 2: Enable the sealed bidding feature
 
@@ -53,17 +51,17 @@ Supply Chain Management uses encryption keys to protect all sealed bids and keep
 
 Every bid retrieves its own secret key. This key is used every time that a user views, updates, or unseals the bid.
 
-Key Vault generates the key that is used to retrieve the secret when the vendor selects **Bid** in the vendor collaboration interface. The key then expires after a fixed time that the procurement manager sets on the **Procurement and Sourcing Parameters** page in Supply Chain Management. After the key expires, nobody will be able to view, edit, or unseal the bid. Therefore, it's important to configure key expiration so that there is enough time for the bidding process to be completed.
+Key Vault generates the key that is used to retrieve the secret when the vendor selects **Bid** in the vendor collaboration interface. The key then expires after a fixed time that the procurement manager sets on the **Procurement and Sourcing Parameters** page in Supply Chain Management. After the key expires, nobody will be able to view, edit, or unseal the bid. Therefore, it's important to configure key expiration so that there's enough time for the bidding process to be completed.
 
-In the next three steps, you will set up the connection to Key Vault. First, you will set up a key vault to use with sealed bidding. Next, you will configure Supply Chain Management to communicate with the key vault. Finally, you will set the expiration time for the key.
+In the next three steps, you'll set up the connection to Key Vault. First, you'll set up a key vault to use with sealed bidding. Next, you'll configure Supply Chain Management to communicate with the key vault. Finally, you'll set the expiration time for the key.
 
 ### Step 4: Set up a key vault to use with sealed bidding
 
 To set up your key vault, follow these steps. The order of the steps is important.
 
 1. If you haven't already set up an Azure subscription that is separate from the subscription where you're running Supply Chain Management, set it up.
-1. Set up a key vault in your separate Azure storage. For more information, see [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
-1. Set up your Supply Chain Management app to work as a client for your key vault. For more information, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client).
+1. Set up a key vault in your separate Azure storage. Learn more in [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
+1. Set up your Supply Chain Management app to work as a client for your key vault. Learn more in [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client).
 
 ### Step 5: Configure Key Vault parameters in Supply Chain Management
 
@@ -93,7 +91,7 @@ To set the expiration time that is applied to the key that is generated for ever
 1. In the **Encryption key expiration day offset** field, enter the number of days that every encryption key should be valid after it's issued. After the encryption key expires, nobody will be able to view, edit, or unseal the sealed bid that uses it.
 
 > [!TIP]
-> The value of the **Encryption key expiration day offset** field should not be less than the value of the **Days offset** field.
+> The value of the **Encryption key expiration day offset** field shouldn't be less than the value of the **Days offset** field.
 
 ### <a name="set-default-bid-type"></a>Step 7: Set the default bid type
 
@@ -101,14 +99,14 @@ Every RFQ case has a bid type. The bid type defines whether that RFQ case provid
 
 #### RFQ cases that don't have a solicitation type
 
-To set the default bid type that is assigned to new RFQ cases that aren't assigned a solicitation type when they are created, follow these steps.
+To set the default bid type that is assigned to new RFQ cases that aren't assigned a solicitation type when they're created, follow these steps.
 
 1. Go to **Procurement and sourcing parameters \> Setup \> Procurement and sourcing parameters**.
 1. On the **Request for quotation** tab, set the **Bid type** field to *Sealed*.
 
 #### RFQ cases that have a solicitation type
 
-To set the default bid type that is assigned to new RFQ cases that are assigned a solicitation type when they are created, follow these steps.
+To set the default bid type that is assigned to new RFQ cases that are assigned a solicitation type when they're created, follow these steps.
 
 1. Go to **Procurement and sourcing \> Setup \> Request for Quotation \> Solicitation type**.
 1. Create a new solicitation type, or select an existing solicitation type where you want to use a bid type of *Sealed*.
@@ -123,9 +121,9 @@ To set the default bid type that is assigned to new RFQ cases that are assigned 
 Sealed bidding follows almost the same process that is described in [Requests for quotation (RFQs) overview](request-quotations.md). The main difference is that the bid data and its attachments are kept encrypted until the bid is unsealed.
 
 > [!IMPORTANT]
-> [Questionnaires](/dynamicsax-2012/appuser-itpro/view-and-respond-to-questionnaires) are not encrypted and should not be used to collect sensitive information
+> [Questionnaires](/dynamicsax-2012/appuser-itpro/view-and-respond-to-questionnaires) aren't encrypted and shouldn't be used to collect sensitive information
 
-Here is an outline of the process:
+Here's an outline of the process:
 
 1. You create and send an RFQ to one or more vendors.
 1. Vendors respond by submitting their sealed bid.
@@ -152,7 +150,7 @@ You can't change the bid type after an RFQ case is sent.
 Vendors that respond to a sealed bid use the same procedure that they use to respond to open bids, as outlined in [Working with RFQs in the Vendor bidding workspace](vendor-collaboration-work-customers-dynamics-365-operations.md#working-with-rfqs-in-the-vendor-bidding-workspace). For detailed instructions about how to work with both open bids and sealed bids, see [Enter and compare RFQ bids and award contracts](tasks/enter-compare-rfq-bids-award-contracts.md). The only difference between processing for sealed bids and processing for open bids is that, until the bidding period has expired, procurement professionals can't open a vendor's sealed bid. Only a contact person for the vendor can open that vendor's sealed bid.
 
 > [!IMPORTANT]
-> For sealed bidding, vendors can upload attachments only in PDF format. No other formats will be accepted.
+> For sealed bidding, vendors can upload attachments only in PDF format. No other formats are accepted.
 
 After a registered vendor user selects **Bid** on a sealed-bid RFQ, they can enter their bid data, and that data will be kept secure. Vendors can save their work as they prepare a bid, return to it as often as required, and then submit it when it's ready. Vendors can also view their bid after they submit it. If vendors must change their bid after they submit it, they can recall it, update it, and resubmit it at any time until the bidding period expires.
 

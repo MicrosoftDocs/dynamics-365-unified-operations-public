@@ -1,18 +1,14 @@
---- 
+---
 title: Create and maintain an inventory blocking
 description: Learn how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.
-author: yufei-huang
-ms.author: yufeihuang
-ms.topic: how-to
-ms.date: 03/23/2021
-ms.custom:
-ms.reviewer: kamaybac   
-audience: Application User   
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
+author: johanhoffmann
+ms.author: johanho
+ms.reviewer: kamaybac
 ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create and maintain an inventory blocking

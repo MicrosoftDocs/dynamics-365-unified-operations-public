@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 01/10/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -27,7 +25,7 @@ For each coverage group, you can specify how strictly the system should peg safe
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
-- The feature that's named *Strict safety stock pegging for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Strict safety stock pegging for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ## Set safety stock pegging options
 

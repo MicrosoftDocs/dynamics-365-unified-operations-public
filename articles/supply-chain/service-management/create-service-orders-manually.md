@@ -1,96 +1,71 @@
 ---
 title: Create service orders manually   
-description: Learn how you can create service orders manually by using a service agreement or by using the service orders form, including step-by-step processes. 
-author: ChristianRytt
-ms.author: crytt
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
+description: Learn how you can create service orders manually by using a service agreement or by using the service orders page, including step-by-step processes. 
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
-# Create service orders manually    
+# Create service orders manually
 
 [!include [banner](../includes/banner.md)]
 
-
-You can create service orders manually by using a service agreement or by using the **Service orders** form. You can also create a service order from a project.
+You can create service orders manually by using a service agreement or by using the **Service orders** page. You can also create a service order from a project.
 
 > [!TIP]
-> <P>You can use automated processes to create service orders. 
+> You can use automated processes to create service orders.
 
 ## Create a service order manually from a service agreement
 
-1.  Select **Service management** \> **Service agreements** \> **Service agreements**.
+1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Select a service agreement or create a new service agreement.
+1. Select the **Deliver** tab and in the **Create** group select **Planned service orders** to open the **Create service orders** page.
 
-2.  Select a service agreement or create a new service agreement.
+## Create a service order manually on the Service orders page
 
-3.  Select the **Deliver** tab and in the **Create** group select **Planned service orders** to open the **Create service orders** form.
-
-## Create a service order manually in the Service orders form
-
-1.  Select **Service management** \> **Service orders** \> **Service orders**.
-
-2.  Select **New** to create a new service order.
-
-3.  Create service order lines for the service order.
+1. Go to **Service management** \> **Service orders** \> **Service orders**.
+1. Select **New** to create a new service order.
+1. Create service order lines for the service order.
 
 > [!NOTE]
-> <P>If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement. If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</P>
+> If the **Allow without service agreement** check box on the **Service management parameters** page is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement. If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.
 
 ## Create a service order from a project
 
-1.  Go to **Project management and accounting** \> **Projects** \> **All projects**.
-
-2.  In the **Projects** form, on the **Action Pane**, select the **Manage** tab \> select **Service** \> **Service orders**.
-
-3.  Follow the previous procedure to create a service order manually in the **Service orders** form. The **Project ID** field displays the project reference.
+1. Go to **Project management and accounting** \> **Projects** \> **All projects**.
+1. On the **Projects** page, on the Action Pane, select the **Manage** tab \> select **Service** \> **Service orders**.
+1. Follow the previous procedure to create a service order manually on the **Service orders** page. The **Project ID** field displays the project reference.
 
 > [!NOTE]
-> <P>If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement. If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</P>
+> If the **Allow without service agreement** check box on the **Service management parameters** page is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement. If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.
 
-## Create a service order from the Sales order form
+## Create a service order from the Sales order page
 
-You can create a service order from the **Sales orders** form by using the **Create a new service order based on the sales order** wizard.
+You can create a service order from the **Sales orders** page by using the **Create a new service order based on the sales order** wizard.
 
-1.  Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
-
-2.  Open the relevant sales order.
-
-3.  On the **Sales order** tab, select **Service order** to start the **Create a new service order based on the sales order** wizard.
-
-4.  Select **Next \>**, and then complete the following steps on the **Select agreement for service order** page:
-    
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Open the relevant sales order.
+1. On the **Sales order** tab, select **Service order** to start the **Create a new service order based on the sales order** wizard.
+1. Select **Next \>**, and then complete the following steps on the **Select agreement for service order** page:
       - Use the **Service agreement** field to select the service agreement with which the new service order should be associated.
-    
       - Optional: Use the **Project ID** field to associate this service order with a particular project.
 
-5.  Select **Next \>**, and then complete the following steps on the **Create service order** page:
-    
+1. Select **Next \>**, and then complete the following steps on the **Create service order** page:
       - Enter a date and time for the service call to begin in the **Preferred service time** field.
-    
       - Optional: Modify the text in the **Description** field. By default, this field contains the description of the service agreement that you selected on the previous page.
-    
       - In the **Responsible** field, select the ID of the employee who is responsible for the agreement, and if you know what it is, enter the ID of the customer's preferred technician for the service call.
-    
       - In the **Contact ID** field, select the person in the customer's company who should be contacted regarding this service order.
 
-6.  Select **Next \>**, and then select **Finish**.
+1. Select **Next \>**, and then select **Finish**.
 
+## Related information
 
-## See also
-
-[Service orders](service-orders.md)
-
-[Create service orders automatically](create-service-orders-automatically.md)
-
-[Create service orders (class form)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
-
-
+- [Service orders](service-orders.md)
+- [Create service orders automatically](create-service-orders-automatically.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

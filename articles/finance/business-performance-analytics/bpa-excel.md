@@ -5,8 +5,8 @@ description: This article provides information about the business performance an
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 05/23/2024
-ms.topic: welcome
+ms.date: 07/26/2024
+ms.topic: article
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
@@ -14,8 +14,6 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # Business performance analytics Excel add-in
-
-[This article is prerelease documentation and is subject to change.]
 
 The business performance analytics Microsoft Excel add-in exposes the same business performance analytics dataset that's available on the Power BI embedded report in the Excel desktop app.
 
@@ -29,6 +27,24 @@ The business performance analytics Microsoft Excel add-in exposes the same busin
 - The business performance analytics Excel add-in isn't supported in Excel Online or Excel for Mac.
 - We recommend that you use the 64-bit version of Excel. In that version, the workbook size is limited only by the available memory and system resources. For the 32-bit version, the workbook size is limited to 2 gigabytes (GB).
 - Customers must upgrade to Current Channel for Microsoft Office updates. Otherwise, the Excel add-in won't work as expected. For more information, see [Release notes for Current Channel](/officeupdates/current-channel).
+
+### Create a Microsoft Excel Report
+1.	Go to **Reports** in business performance analytics.
+2.	Click **New report**, enter a name of the report.
+3.	In the **Report type** field, select **Excel**. 
+4.	Click **Create**. If this the first time creating an Excel report, install the **Business performance analytics Excel add-in**. If you have installed the add-in and created Excel reports before, an updated version of the add-in may be installed if available. 
+5.	A new Excel report is downloaded to your local device. Open the report.
+6.	The report appears as a blank pivot table with the business performance analytics dataset connected.
+7.	You may be required to sign in again using your business performance analytics credentials.
+8.	Drag and drop any fields in the pivot table and build the report.
+9.	When finished, save the changes to the business performance analytics app.
+
+
+### Save the Excel Report
+1.	To save the Excel report to business performance analytics, go to the **Business performance analytics** ribbon on the top Excel pane.
+2.	Click **Save**. Your changes are saved to business performance analytics. You must click **Save** to reflect the changes in the business performance analytics app.
+
+
 
 ### Limitations and considerations
 

@@ -8,7 +8,6 @@ ms.date: 05/31/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: 
 ---
 
@@ -36,7 +35,7 @@ The Warehouse Management mobile app automatically supports intent output for bar
 To configure your mobile device to use this feature, look for the following settings:
 
 - **Intent output** – Enable the functionality on your device.
-- **Intent action** – Set the value to *com.microsft.warehousemanagement.BARCODE*.
+- **Intent action** – Set the value to *com.microsoft.warehousemanagement.BARCODE*.
 - **Intent type** – Set the value to *Broadcast intent*.
 - **Intent category** – Leave the default value.
 - **Extra key** – The Warehouse Management mobile app requires that bar code data arrives as a string value for the `com.symbol.datawedge.data_string` key. For Zebra and ProGlove devices, you don't have to specify this value, because the devices use this key name by default. However, you might have to specify the value for other devices.

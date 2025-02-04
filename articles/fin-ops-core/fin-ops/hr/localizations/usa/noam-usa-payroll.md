@@ -21,10 +21,14 @@ ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
 
 [!include [banner](../../../../../finance/includes/banner.md)]
 
+> [!NOTE]
+> The US Payroll module is for legal entities with a primary address in the United States and have employees subject to US payroll laws.
+
 US payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. US payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 
 > [!NOTE]
-> Starting in Dynamics 365 Finance 10.0.40, tax updates are being retired for the US payroll feature. The current US payroll feature will still work, but tax updates aren't available. Customers should consult with their implementation partner to find the best solution for their payroll needs going forward. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).
+> Starting in Dynamics 365 Finance 10.0.40, tax updates are being retired for the US payroll feature. The current US payroll feature will still work, but tax updates aren't available. Customers should consult with their implementation partner to find the best solution for their payroll needs going forward. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance) and [Deprecation of US payroll tax updates](noam-usa-deprecate-payroll-tax.md).
+
 
 ## Payroll setup
 

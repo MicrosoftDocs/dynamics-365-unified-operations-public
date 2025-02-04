@@ -1,18 +1,14 @@
---- 
+---
 title: Set up an appointment for a load
 description: Learn how to set up and plan a dock appointment for a load typically done by transportation coordinators, including a step-by-step process. 
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
-ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
+author: lisascholz91
+ms.author: lisascholz
+ms.reviewer: kamaybac
 ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-ms.dyn365.ops.version: AX 7.0.0 
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Set up an appointment for a load

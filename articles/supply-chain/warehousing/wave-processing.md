@@ -1,14 +1,13 @@
 ---
 title: Wave creation and processing
 description: Learn how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage, WHSProdWaveTable
 ---
 
@@ -27,7 +26,7 @@ For sales orders and kanban orders, inventory must be reserved before the order 
 - Require that all materials are reserved before an order can be released to the warehouse.
 - Allow production orders to be released to the warehouse even though all materials can't be reserved. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available. For example, this is useful if you have the materials that you need to start a production, and can wait until the additional materials become available.
 
-You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed. For more information, see [Warehouse parameters for wave processing](wave-warehouse-parameters.md).
+You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed. Learn more in [Warehouse parameters for wave processing](wave-warehouse-parameters.md).
 
 ## Create and process a wave
 
@@ -37,7 +36,7 @@ The following diagram shows the flow for how shipping waves are created, process
 
 ### Prerequisites
 
-Before you start, a wave template must be available for the type of wave you want to create (shipping, production, or kanban). The wave template establishes many settings for how the wave will be generated and processed, including which steps must be done manually and which are done automatically. For more information, see [Wave templates](wave-templates.md).
+Before you start, a wave template must be available for the type of wave you want to create (shipping, production, or kanban). The wave template establishes many settings for how the wave will be generated and processed, including which steps must be done manually and which are done automatically. Learn more in [Wave templates](wave-templates.md).
 
 ### Create a wave
 
@@ -145,7 +144,7 @@ Automated containerization creates containers and the picking work for shipments
 
 ## Work with the scheduled work creation
 
-When the *Schedule work creation* feature is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. For more information, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
+When the *Schedule work creation* feature is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. Learn more in [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
 
 The following flowchart shows how planned work is created during wave processing.
 
@@ -204,7 +203,7 @@ The way the system displays your wave processing status messages depends on how 
 - When **Create wave processing history log** is set to *No*, the load line status messages are shown in the Action center.
 - When **Create wave processing history log** is set to *Yes*, the load line status messages are shown on the **Wave processing history log** page. To view the log, go to **Warehouse management \> Outbound waves \> Wave processing history log**.
 
-## Additional resources
+## Related information
 
 - [Configure wave processing example](tasks/configure-wave-processing.md)
 - [Wave templates](wave-templates.md)

@@ -1,25 +1,12 @@
 --- 
-# required metadata 
- 
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
 author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
- 
-# optional metadata 
- 
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob   
-audience: Application User 
-# ms.devlang:  
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a schedule for a site
 

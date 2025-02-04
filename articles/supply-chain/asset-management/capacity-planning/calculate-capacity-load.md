@@ -1,17 +1,13 @@
 ---
 title: Calculate capacity load
 description: Learn how to calculate capacity load in Asset Management, including a step-by-step process detailing the process of calculating capacity loads.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/16/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetCapacityLoad, EntAssetWorkOrderCapacityLoadCalculate, EntAssetWorkOrderCapacityLoad 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Calculate capacity load

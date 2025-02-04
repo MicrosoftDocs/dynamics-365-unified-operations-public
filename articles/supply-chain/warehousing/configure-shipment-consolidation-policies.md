@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 09/07/2022
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-05-01
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSOutboundLoadPlanningWorkbench
-ms.dyn365.ops.version: 10.0.3
 ---
 
 # Configure shipment consolidation policies
@@ -311,7 +307,7 @@ The following scenarios illustrate how you could use the shipment consolidation 
 - Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
 
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 

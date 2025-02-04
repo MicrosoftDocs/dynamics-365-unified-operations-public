@@ -1,40 +1,41 @@
 --- 
 title: Set up transportation constraints for an item
 description: This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 08/27/2024
 ms.custom:
 ms.reviewer: kamaybac    
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up transportation constraints for an item
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator. You can use this procedure in the USMF demo data company or on your own data.
+This procedure sets up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator.
 
+## Create an item constraint
 
-## Create an item constaint
-1. Go to Constraints.
-2. Click New.
-3. In the Item constraint field, type a value.
-4. In the Name field, type a value.
-5. In the Site field, enter or select a value.
-6. In the Warehouse field, enter or select a value.
-7. In the Item number field, enter or select a value.
-8. In the Hub field, enter or select a value.
-9. In the Constraint action field, select an option.
-10. Click Save.
-11. Close the page.
-
-
+1. Go to **Transportation management** \> **Setup** \> **Routing** \> **Constraints**.
+1. Open the **Item** tab.
+1. On the toolbar, select **New**. Enter values for the following columns of the new row:
+    - **Item constraint** – Enter a unique identifier for the constraint.
+    - **Name** – Enter a name for the constraint.
+    - **Site** – Select the site where the constraint applies.
+    - **Warehouse** – Select a warehouse where the constraint applies.
+    - **Item number** – Select the item number the constraint applies to.
+1. With the new row still selected, make the following settings at the bottom of the page:
+    - **Shipping carrier** – Select the shipping carrier the constraint applies to.
+    - **Carrier service** – Select the carrier service the constraint applies to.
+    - **Mode** – Select the mode of delivery where the constraint applies.
+    - **Transportation method** – Select the transportation method where the constraint applies.
+    - **Hub** – Select the hub where the constraint applies.
+    - **Constraint action** – Select the type of constraint to apply.
+    - **Effective start date** – Select the first date where the constraint applies.
+    - **Effective end date** – Select the last date where the constraint applies.
+1. Select **Save**.
+1. Close the page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

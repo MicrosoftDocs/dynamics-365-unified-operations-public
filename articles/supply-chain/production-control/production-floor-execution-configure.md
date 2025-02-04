@@ -6,8 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/19/2024
-audience: Application User
+ms.date: 11/11/2024
 ms.custom: 
   - bap-template
 ---
@@ -29,34 +28,28 @@ This article describes the various options for configuring a production floor ex
 
 The production floor execution interface is always available in Supply Chain Management. But several optional features can be turned on or off for your system. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
 
-### Register material consumption (preview)
+### <a name="material-consumption"></a>Register material consumption
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
 
-This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
+There are two versions of this feature. One supports items that *are not* enabled to use warehouse management processes (WMS). The other supports items that *are* enabled to use WMS.
 
-> [!IMPORTANT]
->
-> - *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* is a preview feature. *Register material consumption on the production floor execution interface (non-WMS)* is generally available.
-> - Preview features are subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+- The *Register material consumption on the production floor execution interface (non-WMS)* feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers, but only for non-WMS items.
 
-There are two versions of this feature. One supports items that *are not* enabled to use warehouse management processes (WMS). The other supports items that *are* enabled to use WMS. To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
+- The *Register material consumption as complete and edit dimensions on the production floor execution interface* feature enables workers to use the production floor execution interface to adjust material consumption, batch and serial numbers, and license plates for both non-WMS and WMS-enabled items. It also enables workers to mark the consumption of a specific material as completed by marking an **End** flag on the line item for a material.
 
-- *Register material consumption on the production floor execution interface (non-WMS)* (As of Supply Chain Management version 10.0.32, this feature is turned on by default.)
-- *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*
+To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
+
+- *Register material consumption on the production floor execution interface (non-WMS)* (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off.)
+- *Register material consumption as complete and edit dimensions on the production floor execution interface* (This feature adds support for WMS-enabled items. It requires Supply Chain Management version 10.0.42 or later.)
 
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ### <a name="tracked-components"></a>Tracked components (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
 
 This feature lets workers and managers register batch/serial numbers for materials and components that are used in manufacturing processes. They can then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
@@ -92,7 +85,7 @@ The following settings are available on the **General** FastTab:
 - **Report quantity at clock-out** – Set this option to *Yes* to prompt workers to report feedback about jobs that are in progress when they clock out. When this option is set to *No*, workers won't be prompted.
 - **Lock employee** – When this option is set to *No*, workers will be signed out immediately after they make a registration (such as a new job). The interface will then return to the sign-in page. When this option is set to *Yes*, workers will stay signed in to the production floor execution interface. However, a worker can manually sign out so that another worker can sign in while the production floor execution interface continues to run under the same system user account.
 - **Use the actual time of registration** – Set this option to *Yes* to set the time for each new registration to the exact time when the worker submitted the registration. When this option is set to *No*, the sign-in time is used instead. You will usually want to set this option to *Yes* if you've set the **Lock employee** and/or **Single worker** option to *Yes* in cases where workers often remain signed in for longer periods.
-- **Single worker** – Set this option to *Yes* if only one worker uses each production floor execution interface where this configuration is active. When this option is set to *Yes*, the **Lock employee** option is automatically set to *Yes*. In addition, this setting removes the requirement (and ability) for the worker to sign in by using a badge ID or personnel number. Instead, the worker signs in to Microsoft Dynamics 365 Supply Chain Management by using a system user account that is linked to a *time registered worker*, and gets signed in to the production floor execution interface as that worker at the same time. See also [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
+- **Single worker** – Set this option to *Yes* if only one worker uses each production floor execution interface where this configuration is active. When this option is set to *Yes*, the **Lock employee** option is automatically set to *Yes*. In addition, this setting removes the requirement (and ability) for the worker to sign in by using a badge ID or personnel number. Instead, the worker signs in to Microsoft Dynamics 365 Supply Chain Management by using a system user account that is linked to a *time registered worker*, and gets signed in to the production floor execution interface as that worker at the same time. Learn more in [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
 - **Enable numpad** – Set this option to *Yes* to add a numpad to the sign-in screen, which allows workers to enter their badge ID or personal number using a touch-screen numpad. Set this option to *No* to hide the numpad.
 - **Allow locking the touchscreen** – Set this option to *Yes* to allow workers to lock the touchscreen of the production floor execution interface so that they can sanitize it. When this option is set to *Yes*, a **Lock screen for sanitizing** button is added to the sign-in page. When a worker selects this button, the touchscreen is temporarily locked to prevent unintended input. A countdown timer is also shown. The worker can then safely clean the device and the screen. When the countdown is completed, the touchscreen is automatically unlocked.
 - **Screen lock duration** – When the **Allow locking touchscreen** option is set to *Yes*, use this option to specify the number of seconds that the touchscreen should be locked for sanitizing. The duration must be between 5 and 120 seconds.

@@ -9,8 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -189,11 +187,11 @@ We have recently added or significantly updated the following help articles. The
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
 | Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of Finance and Operations apps (April 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. Learn more in [Platform updates for version 10.0.32 of Finance and Operations apps (April 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
 
 ### Bug fixes
 

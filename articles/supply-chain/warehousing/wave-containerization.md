@@ -1,14 +1,13 @@
 ---
 title: Containerization
 description: Learn how to automate the containerization of loads, which create containers and the picking work for shipments when a wave is processed.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 ---
 
@@ -33,7 +32,7 @@ You must set up one or more shipping wave templates for containerization. Wave t
 - How to create picking work. This is determined by the wave methods. The wave template must include the **containerization** method.
 - How to match items or allocation lines with a wave.
 
-For more information, see [Wave templates](wave-templates.md).
+Learn more in [Wave templates](wave-templates.md).
 
 ## Create container types
 
@@ -88,7 +87,7 @@ To set up a container build template, follow these steps.
       - **Outbound order allocation line** ─ Pack allocation lines that are created for [outbound shipment orders](wms-only-mode-exchange-data.md#inbound-outbound-shipment-order-messages).
 
         > [!NOTE]
-        > To use nesting containers, you must make the containerization method repeatable. For more information, see [Wave templates](wave-templates.md).
+        > To use nesting containers, you must make the containerization method repeatable. Learn more in [Wave templates](wave-templates.md).
 
 1. On the **General** FastTab, in the **Wave step code** field, enter the unique identifier of the wave process method that links the container build template to steps in a wave template.
 1. Select the **Allow split picks** check box to allow workers to pack items from a work order in separate containers. This requires that the entire quantity fits in the container. The largest unit of measure in the allocation line is always used.

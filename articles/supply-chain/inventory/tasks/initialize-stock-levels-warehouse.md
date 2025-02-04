@@ -1,18 +1,13 @@
 --- 
 title: Initialize stock levels in the warehouse
 description: Learn how to get the on-hand inventory updated manually using an Inventory movement journal, inluding a step-by-step process.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to 
 ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User   
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup   
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Initialize stock levels in the warehouse

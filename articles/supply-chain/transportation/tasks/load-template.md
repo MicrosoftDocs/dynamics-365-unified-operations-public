@@ -1,18 +1,14 @@
---- 
+---
 title: Load templates
 description: Learn how to set up load templates, and how to associate a load template with a new load, including a step-by-step process.
-author: Weijiesa
-ms.author: weijiesa
-ms.topic: how-to
-ms.date: 10/30/2020
-ms.custom:
-ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-10-30
+author: lisascholz91
+ms.author: lisascholz
+ms.reviewer: kamaybac
 ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-ms.dyn365.ops.version: 10.0.15
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Load templates
@@ -41,7 +37,7 @@ This article describes how to set up load templates, and how to associate a load
 
 ## Associate a load template with a new load
 
-1. Go to one of the following pages, depending on whether you are setting up an inbound or outbound load:
+1. Go to one of the following pages, depending on whether you're setting up an inbound or outbound load:
     - **Transportation management > Planning > Inbound load planning workbench**.
     - **Transportation management > Planning > Outbound load planning workbench**.
 
@@ -50,6 +46,5 @@ This article describes how to set up load templates, and how to associate a load
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.
 1. Select **OK** to apply the template.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

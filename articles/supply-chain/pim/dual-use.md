@@ -1,17 +1,13 @@
 ---
 title: Dual-use goods
 description: Learn how to keep track of products that are identified as dual-use goods and store certificate numbers for each relevant product and destination country/region.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 07/15/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-07-15
 ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
-ms.dyn365.ops.version: 10.0.9
 ---
 
 # Dual-use goods

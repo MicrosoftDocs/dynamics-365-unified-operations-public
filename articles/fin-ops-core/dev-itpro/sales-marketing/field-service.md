@@ -1,10 +1,10 @@
 ---
 title: Integration with Microsoft Dynamics 365 Field Service overview
 description: Learn about the Integration with Microsoft Dynamics 365 Field Service, including an overview of system requirements.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: overview
-ms.date: 06/10/2024
+ms.date: 07/24/2024
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -20,13 +20,13 @@ ms.search.validFrom: 2017-07-8
 
 
 Supply Chain Management enables synchronization of business processes between Dynamics 365 Supply Chain Management and Dynamics 365 Field Service. The integration scenarios are configured by using extensible Data integrator templates and Microsoft Dataverse to enable the synchronization of business processes.
-Standard templates can be used to create custom integration projects, where additional standard and custom columns and tables can be mapped to adjust the integration and meet specific business needs. 
+Standard templates can be used to create custom integration projects, where more standard and custom columns and tables can be mapped to adjust the integration and meet specific business needs. 
 
 The field service integration builds on top of the existing prospect-to-cash functionality.
 
 ![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/field-service-integration.png)
 
-The first phase  of the integration between Field Service and Supply Chain Management is focused on enabling work orders and agreements in Field Service to be invoiced in Supply Chain Management. The supported flow starts in Field Service, where information from work orders is synchronized to Supply Chain Management as sales orders. In Supply Chain Management, the sales orders are invoiced to generate invoice documents. In addition, the information from Field Service agreement invoices is synchronized to Supply Chain Management. The Microsoft Dynamics 365 Data integrator synchronizes data by using customizable projects. Standard templates can be used to create custom integration projects where additional standard and custom columns, and also tables, can be mapped to adjust the integration and meet specific requirements.
+The first phase  of the integration between Field Service and Supply Chain Management is focused on enabling work orders and agreements in Field Service to be invoiced in Supply Chain Management. The supported flow starts in Field Service, where information from work orders is synchronized to Supply Chain Management as sales orders. In Supply Chain Management, the sales orders are invoiced to generate invoice documents. In addition, the information from Field Service agreement invoices is synchronized to Supply Chain Management. The Microsoft Dynamics 365 Data integrator synchronizes data by using customizable projects. Standard templates can be used to create custom integration projects where more standard and custom columns, and also tables, can be mapped to adjust the integration and meet specific requirements.
 
 The first phase of the integration between Field Service and Supply Chain Management enables synchronization of the following items:
 
@@ -38,7 +38,7 @@ To see an example of how you can synchronize a work order between Field Service 
 
 ## Integration with Field Service, including inventory and project information
 
-The additional functionality in this second phase focused on giving field technicians insight about the inventory information from Supply Chain Management, allowing them to update inventory levels and do material transfers. In addition, companies installing or servicing sold goods will benefit from better control and visibility to the full sales and service process with integration from projects.
+The functionality in this second phase focused on giving field technicians insight about the inventory information from Supply Chain Management, allowing them to update inventory levels and do material transfers. In addition, companies installing or servicing sold goods benefit from better control and visibility to the full sales and service process with integration from projects.
 
 ### Functionality includes integration of:
 - Warehouse information
@@ -71,6 +71,8 @@ To use the Field Service integration solution, you must install the following co
 
 - Field Service (version 8.2.0.286) or a later version on Dynamics 365 9.1.x - Released November 2018
 - Prospect to Cash (P2C) solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+  > [!NOTE]
+  > The P2C solution is incompatible with Dual-write and this integration is layered on top of the P2C solution, meaning it can't be used in conjuction with Dual-write.
 - 'Field Service Integration, Project and Inventory' solution for Dynamics 365, version 2.0.0.0 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
 
 

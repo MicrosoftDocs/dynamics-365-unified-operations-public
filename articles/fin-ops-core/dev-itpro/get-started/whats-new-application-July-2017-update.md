@@ -3,13 +3,12 @@ title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise 
 description: Learn about new or changed features in Microsoft Dynamics 365 Finance and Operations, Enterprise edition. This version was released in July 2017.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: whats-new
 ms.date: 07/12/2024
 ms.custom: 
   - bap-template
   - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update

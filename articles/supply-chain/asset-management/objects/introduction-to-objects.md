@@ -1,8 +1,8 @@
 ---
 title: Introduction to assets
 description: Access an overview of assets in Asset Management, including a table that defines various button names and an outline on the All assets list page.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 ms.topic: overview
@@ -21,7 +21,7 @@ An asset is automatically updated with related information. For example, this re
 
 ## All assets
 
-Select **Asset management** \> **Assets** \> **All assets**. The **All assets** list page shows all assets and some of the information that is related to them. To view only active assets, select **Active assets**. To view only assets that are installed on the functional locations that you're related to as a maintenance worker, select **My active assets**. (This relation is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+Select **Asset management** \> **Assets** \> **All assets**. The **All assets** list page shows all assets and some of the information that is related to them. To view only active assets, select **Active assets**. To view only assets that are installed on the functional locations that you're related to as a maintenance worker, select **My active assets**. (This relation is set up on the **Workers** page. Learn more in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
 
 In the **All assets** grid view, select a link in the **Asset** column to view the details of the selected record. To edit the record, select the **Edit** button. The details view shows detailed information that is related to the asset. A **Related information** pane on the right contains additional asset-related information. Expand the pane to show the related information for the selected asset.
 

@@ -1,17 +1,13 @@
 --- 
 title: Create a released product for a single company
 description: Learn how to create a single released product in the context of a single legal unit, including a step-by-step process for creating released products. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom: 
 ms.reviewer: kamaybac    
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create a released product for a single company

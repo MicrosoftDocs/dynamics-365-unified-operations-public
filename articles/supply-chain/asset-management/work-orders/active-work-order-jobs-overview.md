@@ -1,16 +1,12 @@
 ---
 title: Active work order maintenance jobs overview
 description: Learn about active work order maintenance jobs overview in Asset Management, including a step-by-step process for opening the list page.
-author: johanhoffmann
-ms.author: johanho
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: overview
 ms.date: 10/15/2019
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-09-30
 ms.search.form:
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Active work order maintenance jobs overview

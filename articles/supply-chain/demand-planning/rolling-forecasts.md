@@ -1,16 +1,12 @@
 ---
 title: Rolling forecasts
 description: Learn about rolling forecasts, which let you establish a regular schedule that your time series follow to automatically update and extend their forecast horizon.
-author: t-benebo
-ms.author: benebotg
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: overview
-ms.date: 03/12/2024
+ms.date: 11/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.collection:
-  - bap-ai-copilot
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -64,11 +60,11 @@ To schedule a process, follow these steps.
 
     - **None** – The process isn't scheduled to run automatically. You must manually run it.
     - **Recurring** – The process is triggered at a specific date and time, according to the configured schedule (daily, weekly, or monthly).
-<!--KFM: Add this when event-triggered processes are supported:
+    <!--KFM: Add this when event-triggered processes are supported:
     - **Event triggered** – The process is triggered when a certain event occurs, such as when new historical data exists (such as for transformations) or when there's a new version of the input time series for the given process. -->
 
 1. In the **Set run date recurrence** section, define when and how often the process should run, and set the start and end dates that it should run during.
 1. In the **Output settings** section, follow one of these steps to specify how you want to save the output of the process:
 
     - To create a new time series after each run, set the **Save output as** field to *Create new time series*. Then, in the **Time series name** field, enter a base name for the new time series. In the **Append to name** field, select a dynamic suffix to add to the base name, so that each time series has a unique name. You can use the run date, the run month, or the run month and year as the suffix.
-    - To add a new version to an existing time series after each run, set the **Save output as** field to *New version of the same time series*. Then set the **Use existing time series** field to the target time series. (The target time series must already exist.) We recommend that you also select the **Save current as a version before overwriting** checkbox to maintain the traceability of the whole process and ensure that the system doesn't accidentally overwrite any version work that's in progress. For more information about how time series versions work, see [Time series and planning data](time-series.md).
+    - To add a new version to an existing time series after each run, set the **Save output as** field to *New version of the same time series*. Then set the **Use existing time series** field to the target time series. (The target time series must already exist.) We recommend that you also select the **Save current as a version before overwriting** checkbox to maintain the traceability of the whole process and ensure that the system doesn't accidentally overwrite any version work that's in progress. For more information about how time series versions work, see [Time series, worksheets, and planning data](time-series.md).

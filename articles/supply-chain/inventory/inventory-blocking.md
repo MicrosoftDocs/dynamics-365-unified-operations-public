@@ -1,14 +1,13 @@
 ---
 title: Inventory blocking
 description: Learn how to work with inventory blocking, which is part of the quality inspection process in Supply Chain Management, with an outline on manually blocking items.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventBlocking, InventQualityOrderTable
 ---
 
@@ -91,7 +90,7 @@ To simplify the inventory transactions when quality orders that sample inventory
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Additional resources
+## Related information
 
 - [Create and maintain an inventory blocking](tasks/create-maintain-inventory-blocking.md)
 - [Quality management processes](quality-management-processes.md)

@@ -1,14 +1,12 @@
 ---
 title: Set up a min-max replenishment process
 description: Learn how to set up a new replenishment process that uses the minimum/maximum replenishment strategy, including a step-by-step process. 
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 12/13/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 ---
 
@@ -41,7 +39,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 1. Go to **Warehouse management > Setup > Location directives**. Location directives are used to determine where items should be picked from in the replenishment process.
 2. In the **Work order type** field, select *Replenishment*.
-3. On the **Action Pane**, select **New**.
+3. On the Action Pane, select **New**.
 4. In the **Name** field, type a value.
 5. In the **Work type** field, select *Pick*.
 6. In the **Site** field, enter or select a value. If you're using USMF, you can select site 2.  
@@ -56,7 +54,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 15. In the list, mark the selected row.
 16. In the **Name** field, type a value.
 17. Select **Save**.
-18. On the **Action Pane**, select **Edit query**. You can edit this query to add restrictions where inventory can be selected from in the replenishment process. For example, it could be that inventory should only be used from the Bulk area of the warehouse.
+18. On the Action Pane, select **Edit query**. You can edit this query to add restrictions where inventory can be selected from in the replenishment process. For example, it could be that inventory should only be used from the Bulk area of the warehouse.
 19. Select **OK**.
 20. Close the page.
 
@@ -64,7 +62,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 1. Go to **Warehouse management > Setup > Work > Work templates**. The work template is used to guide the system as to how the min/max replenishment work must be created. As a minimum, there must be a work template line for a pick and a put. The work template will say that it's Invalid until all the necessary information has been filled in. 
 2. In the **Work order type** field, select *Replenishment*.
-3. On the **Action Pane**, select **New**.
+3. On the Action Pane, select **New**.
 4. In the **Work template** field, type a value.
 5. Select **Save**.
 6. In the **Work template details**, select **New**.
@@ -83,7 +81,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 ## Create a new replenishment template
 
 1. Go to **Warehouse management > Setup > Replenishment > Replenishment templates**. The replenishment template is used to define the items and quantities, and the location to replenish.
-2. On the **Action Pane**, select **New**.
+2. On the Action Pane, select **New**.
 3. In the **Replenish template** field, type a value. Give the template a name to indicate that it's for min/max replenishment.  
 4. In the **Description** field, type a value.
 5. Select the **Allow wave demand to use unreserved quantities** check box. If you select this option, it enables wave demand replenishment to consume quantities that are related to min/max replenishment. For example, this might be useful if the min/max replenishment work isn't processed immediately, to avoid unnecessary demand replenishment work from being created.

@@ -1,46 +1,34 @@
 ---
 title: Prioritize service orders   
 description: Learn how to prioritize service orders, including a step-by-step process for saving and prioritizing service orders and additional resources.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMADispatchBoard
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
-
-# Prioritize service orders 
+# Prioritize service orders
 
 [!include [banner](../includes/banner.md)]
 
+1. Go to **Service management** \> **Periodic** \> **Dispatch board**.
 
-1.  Click **Service management** \> **Periodic** \> **Dispatch board**.
+2. Select **Advanced** to display the Gantt chart at the top of the page and the tabs in the lower pane.
 
-2.  Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.
+3. Expand each dispatch team list.
 
-3.  Expand each dispatch team list.
+4. Select the color-coded graphic that represents a service activity.
 
-4.  Select the color-coded graphic that represents a service activity.
+5. On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.
 
-5.  On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.
+6. Select **Save**.
 
-6.  Click **Save**.
+## Related information
 
-## See also
-
-[Dispatch board](dispatch-board.md)
-
-[View the status of service orders](view-the-status-of-service-orders.md)
-
-  
-
-
-
+- [Dispatch board](dispatch-board.md)
+- [View the status of service orders](view-the-status-of-service-orders.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

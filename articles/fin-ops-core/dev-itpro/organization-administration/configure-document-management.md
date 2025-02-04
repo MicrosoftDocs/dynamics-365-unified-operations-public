@@ -3,7 +3,7 @@ title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
 ms.author: jasongre
-ms.date: 06/21/2024
+ms.date: 01/02/2025
 ms.topic: article
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -56,7 +56,7 @@ With this updated SharePoint authentication mechanism, batch connections utilize
 
 ``` powershell
 
-Import-Module Microsoft.Graph
+Import-Module Microsoft.Graph.Applications
    
 # The parameter for TenantId needs to be changed
 Connect-MgGraph -TenantId microsoft.onmicrosoft.com -Scopes 'Application.ReadWrite.All'
@@ -64,10 +64,10 @@ Connect-MgGraph -TenantId microsoft.onmicrosoft.com -Scopes 'Application.ReadWri
 # These AppIds do not change as they are the first party application IDs
 $erpServicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '00000015-0000-0000-c000-000000000000'"
 $sharePointServicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '00000003-0000-0ff1-ce00-000000000000'"
-$spAppRole = $erpServicePrincipal.AppRoles | where {$_.Value -eq 'Sites.ReadWrite.All'}
+$spAppRole = $sharePointServicePrincipal.AppRoles | where {$_.Value -eq 'Sites.ReadWrite.All'}
     
 # Assign the SharePoint 'Sites.ReadWrite.All' permission to the Microsoft Dynamics 365 finance and operations application
-New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $erpServicePrincipal.Id -PrincipalId $erpServicePrincipal.Id -ResourceId $erpServicePrincipal.Id -AppRoleId $spAppRole.Id
+New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $erpServicePrincipal.Id -PrincipalId $erpServicePrincipal.Id -ResourceId $sharePointServicePrincipal.Id -AppRoleId $spAppRole.Id
 ```
 > [!IMPORTANT]
 > Interactive connections will utilize the logged-in user's context.

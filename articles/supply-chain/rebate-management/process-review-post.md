@@ -8,7 +8,6 @@ ms.date: 05/15/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: TAMRebateDeal
 ---
 
@@ -182,7 +181,7 @@ To view and edit Rebate management transactions using the rebate deals list page
 
     - To verify the total value of all claimed transactions on the page, view the **Claimed amount** field.
     - To view more information about any transaction, select it, and then select the **General**, **Financial dimension**, or **Dimension** tab.
-    - To view any reductions that apply, select **Reduction transactions** on the Action Pane. For more information, see [Rebate reduction principles](rebate-reduction-principle.md).
+    - To view any reductions that apply, select **Reduction transactions** on the Action Pane. Learn more in [Rebate reduction principles](rebate-reduction-principle.md).
     - To mark transactions as either claimed or unclaimed if you're using a claims process, select the relevant rows, and then, on the Action Pane, select one of the following commands. (You enable claims processes on the [**Rebate management parameters** page](rebate-management-parameters.md).)
 
         - **Set claimed \> All** – Mark all transactions as claimed.
@@ -222,13 +221,52 @@ To view and edit Rebate management transactions by using the rebate workbench, f
 > [!NOTE]
 > If you're using a claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period.
 
-## Post rebates transactions
+### Consolidate vendor invoices for the same vendor in vendor rebate deals (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
+
+Sometimes, vendor rebate deals are listed over multiple lines (for example, because the output is split by financial dimension). In these cases, it can be cumbersome to manage multiple entries and vendor accounts for the same vendor. To improve efficiency when payable invoices are generated for vendor accounts, you can consolidate multiple ledger lines for the same vendor into a single vendor line that has several ledger lines.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+#### Turn on vendor invoice consolidation
+
+Before you can set your system to consolidate vendor invoices, it must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- The feature that is named *Consolidate vendor invoices for the same vendor in vendor rebate deals* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+#### How vendor invoice consolidation works
+
+You can configure the system to divide rebates by financial dimension for reporting purposes. The system then splits the output into several lines when you post a rebate. The split is based on the financial dimensions of each source transaction (purchase order line or sales order line).
+
+The following procedure explains how to view the effects of vendor invoice consolidation.
+
+1. Go to **Rebate management** \> **Setup** \> **Rebate management parameters**.
+1. On the **Rebate management** tab, set the **Process by dimension** option to *Yes*. Your system is now set to divide rebates by financial dimension for reporting purposes.
+1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals**, and open an active vendor rebate deal.
+1. On the Action Pane, on the **Rebate management deals** tab, select **Process** \> **Rebate management**.
+1. Because of the **Process by dimension** setting, the system divides the output. Each line shows a debit or credit account together with its ledger account code. This situation can cause reconciliation issues, especially when multiple lines point to the same vendor. To view the output, on the Action Pane, on the **Rebate management deals** tab, select **Transactions**.
+1. At the top of the grid, set the **Show** field to *Posted*.
+1. Select a transaction, and then, on the Action Pane, select **Target transactions**.
+1. Select the target transaction line, and then select **View details**. The output journal lines are shown.
+
+    Without vendor consolidation, there are multiple vendor invoices for the same vendor in vendor rebate deals, as shown in the following screenshot.
+
+    :::image type="content" source="media/vendor-invoice-journal-without-consolidation.png" alt-text="Screenshot showing a vendor invoice journal without consolidation." lightbox="media/vendor-invoice-journal-without-consolidation.png":::
+
+    With vendor consolidation, there is just one vendor line that has multiple ledger lines, as shown in the following screenshot. This consolidation makes it easier for businesses to consolidate and send rebate output to their vendors and to report in the rebate related journals.
+
+    :::image type="content" source="media/vendor-invoice-journal-with-consolidation.png" alt-text="Screenshot showing a vendor invoice journal with consolidation." lightbox="media/vendor-invoice-journal-with-consolidation.png":::
+
+## Post rebate transactions
 
 To post the value of a processed provision, rebate management amount, and write-off, you must run the posting process. The posting process marks the provision, rebate management, or write-off transactions as posted, and creates the target transaction. If you don't have to review the target transaction, these transactions can be set up so that they're automatically posted.
 
 ### Set up the system to post all target transactions automatically
 
-To set up your system to post all target transactions as soon as they're generated by a posting provision, rebate management amount, and write-off, turn on the **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
+To set up your system to post all target transactions as soon as they're generated by a posting provision, rebate management amount, and write-off, turn on the **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. Learn more in [Rebate management parameters](rebate-management-parameters.md).
 
 ### Post transactions for all lines for one or more deals
 
@@ -333,7 +371,7 @@ When you post a Rebate management transaction that has one of the following **Pa
 
 After a target transaction is created and posted, it will be available as an open transaction on the **Deduction workbench** page (**Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**). Open transactions have a **Claim type** value of *Rebate management*, and a **Rebate transaction number** value is available to enable traceability. The date is set to the posting date of the Rebate management target transaction. To use the deduction workbench to settle open transactions to existing deductions for the same customer account, select **Maintain \> Match** on the Action Pane.
 
-For more information, see [Manage deductions using the deduction workbench](deduction-workbench.md).
+Learn more in [Manage deductions using the deduction workbench](deduction-workbench.md).
 
 ## Purge unposted transactions
 
