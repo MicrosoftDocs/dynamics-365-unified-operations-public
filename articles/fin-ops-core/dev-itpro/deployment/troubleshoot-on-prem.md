@@ -1189,7 +1189,7 @@ Follow these steps to configure the local agent with the updated tenant.
 
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
+    ``` 
 
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
