@@ -4,7 +4,7 @@ description: Learn about how to update the local agent, including a table that o
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 01/24/2024
+ms.date: 02/04/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
