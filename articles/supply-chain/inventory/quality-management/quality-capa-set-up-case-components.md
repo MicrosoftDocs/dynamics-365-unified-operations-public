@@ -19,32 +19,32 @@ Before you can begin creating and working with CAPA cases, you must set up the c
 
 ## Set up CAPA worker groups
 
-CAPA worker groups let you group users together for CAPA purposes. You can assign a CAPA work group to each activity and stage in your CAPA process. The system uses them to validate worker assignments and can use them to set default workers when a specific worker isn't assigned.
+CAPA worker groups let you group users together for CAPA purposes. You can assign a CAPA work group to each activity and stage in your CAPA process. The system uses them to validate worker assignments and can use them to set default workers when a specific worker isn't assigned. <!-- KFM: Clarify a bit better what an "assignment" is. -->
 
 > [!TIP]
-> To get started quickly, you can load a set of standard CAPA worker groups from a template provided with Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](quality-capa-admin.md). <!-- KFM: Confirm this. -->
+> To get started quickly, you can load a set of standard CAPA worker groups from a template provided with Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](quality-capa-admin.md).
 
 To set up your CAPA worker groups, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA worker groups**.
-1. Use the buttons on the Action Pane to add and remove worker groups as needed. You can't delete worker groups that are assigned to CAPA case activities.
+1. Use the buttons on the Action Pane to add, remove, and edit worker groups as needed. (You can't delete worker groups that are assigned to CAPA case activities.)
 1. For your new or selected worker group, make the following settings in the header:
 
     - **CAPA worker group** – Enter a name for the worker group. Common examples include *Investigator*, *Implementer*, *Approver* and*Verifier*.
     - **Name** – Enter a short description of the worker group.
 
 1. Use the settings on the **Group settings** FastTab to set up the group, including details related to whether all members of the group can change the stage of a CAPA case and whether the CAPA administrator should be an implied member and/or default worker for the group. Make the following settings:
-    - **Allow any member to change stage** – Select this check box if all workers within this CAPA worker group are allowed to change the stage of the CAPA case. Clear this checkbox if you if you want to limit which workers within the group can advance the stage of the CAPA Case.
-    - **Implied member of this worker group** – Select this check box if the CAPA administrator, assigned on the Inventory management parameters, should be an implied member of this CAPA worker group. Alternatively, the CAPA administrator can be assigned to the CAPA worker group but if the CAPA administrator is changed, this will require more maintenance. <!-- KFM: This setting seemed to be ignored during the original bug bash with Traci. Does it work? -->
+    - **Allow any member to change stage** – Select this check box if all workers within this CAPA worker group are allowed to change the stage of CAPA cases assigned to this group. Clear this checkbox if you if you want to limit which workers within the group can advance the stage of the CAPA Case.
+    - **Implied member of this worker group** – Select this check box if the CAPA administrator, assigned on the Inventory management parameters, should be an implied member of this CAPA worker group. Alternatively, the CAPA administrator can be assigned to the CAPA worker group but if the CAPA administrator is changed, this will require more maintenance.
     - **Default worker** – Select this check box if the CAPA administrator should be the default worker for this CAPA worker group. <!-- KFM: This setting seemed to be ignored during the original bug bash with Traci. Does it work? -->
 
 1. Use the **Worker assignments** FastTab to add and remove workers in the group.
     - Too add a worker, use the **New** button the **Overview** tab or go to the **Assign** tab and use the right arrow button move workers into the **Selected workers** list.
     - To remove a worker, use the **Delete** button on the **Overview** tab or go to the **Assign** tab and use the left arrow button move workers out of the **Selected workers** list.
 
-1. Set the following options for each worker in the group:
-    - **Allowed** – If the the **Allow any member to change stage** checkbox is cleared on the **Group settings** FastTab, then select the **Allowed** checkbox for each worker that should be allowed to advance CAPA cases to the next stage. If the **Allow any member to change stage** checkbox is selected, then the **Allowed** checkbox on the **Worker assignments** FastTab has no effect.
-    - **Default worker** – If the the **Default worker** checkbox is cleared on the **Group settings** FastTab, then select this check box for the worker that should be the default worker for this CAPA worker group. The default worker is used when creating a CAPA case and when advancing CAPA cases to the next stage.
+1. On the **Overview** tab of the **Worker assignments** FastTab, set the following options for each worker in the group:
+    - **Allowed** – If the the **Allow any member to change stage** checkbox is cleared on the **Group settings** FastTab, then select the **Allowed** checkbox for each worker that should be allowed to advance CAPA cases to the next stage. If the **Allow any member to change stage** checkbox is selected, then the **Allowed** checkbox on the **Worker assignments** FastTab is disabled.
+    - **Default worker** – If the the **Default worker** checkbox is cleared on the **Group settings** FastTab, then select this check box for the worker that should be the default worker for this CAPA worker group. The default worker is used when creating a CAPA case and when advancing CAPA cases to the next stage. You can at most one default worker per CAPA worker group. If you set this option for a worker, then the **Default worker** option will automatically be turned off for all other workers (including for the admin in the **Group settings** FastTab). 
 
 ## Set up CAPA categories
 
@@ -54,55 +54,59 @@ To set up your CAPA categories, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA categories**.
 1. Use the buttons on the Action Pane to add and remove categories as needed. You can't delete categories that are assigned to active CAPA cases. For each category, make the following settings:
-    - **CAPA category** – Enter the name of the CAPA category. Typical general category groupings include *Product*, *Vendor*, and *Customer*. Typical detailed category groupings include *Bulk production*, *Production labeling*, *Packaging production*, and *Production resource*.
+    - **CAPA category** – Enter the name of the CAPA category. The name must be unique.
     - **Description** – Enter a description of the CAPA category.
-    - **CAPA subcategory type** – Select the subcategory for the CAPA category. It includes several predefined subcategories (*None*, *Customer*, *Vendor*, and *Product*). It also includes the *User defined* subcategory type, which lets you choose from a collection of custom subcategory types that you've created for your company. The next procedure describes how to set up your custom subcategory types.
+    - **CAPA subcategory type** – Select a subcategory for the CAPA category. It includes several predefined subcategories (*None*, *Customer*, *Vendor*, and *Product*). It also includes the *User defined* subcategory type, which lets users choose from a collection of custom subcategory types when they create a CAPA case using this category. The next procedure describes how to set up your custom subcategory types.
 
-To set up your user-defined CAPA subcategory types, follow these steps.
+To set up CAPA subcategories for a categories with a *User defined* subcategory type, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA categories**.
-1. <!-- KFM: select a category? -->On the Action Pane, select **User defined CAPA subcategory.**
+1. Select the category you want to define subcategories for. It must have **CAPA subcategory type** set to *User defined*.
+1. On the Action Pane, select **User defined CAPA subcategory**.
 1. Use the buttons on the Action Pane to add and remove subcategories as needed. For each subcategory, make the following settings:
     - **CAPA subcategory** – Enter the name of the subcategory.
     - **Description** – Enter a short description of the subcategory.
 
 ## Set up CAPA resolutions
 
-<!-- KFM: Not included in vendor docs. Explain the purpose of these, possibly with example values. -->
+CAPA resolutions let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolutions to identify and categorize typical reasons CAPA cases can be resolved. <!-- KFM: More to say? Examples? -->
+
+To set up your CAPA resolutions, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolutions**. Then use the buttons in the Action Pane to create and delete resolutions as needed. For each resolution, enter a name and description.
 
 ## Set up CAPA source codes
 
-CAPA source codes let you categorize the source of a CAPA case. You can use source codes to track the source of a CAPA case, such as *Internal audit*, *External audit*, *Ad-hoc testing*, and so on.
+CAPA source codes let users select a source for each CAPA case. You can use source codes to track the source of each case, such as *Internal audit*, *External audit*, *Ad-hoc testing*, and so on.
 
-To set up your CAPA source codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA source codes**. Then use the buttons in the Action Pane to create and delete source codes as needed. For each source code, make the following settings:
-
-- **CAPA source code name** – Enter the name of the source code.
-- **CAPA source code Description** – Enter a short description of the source code.
-
-<!-- KFM: check the above labels. -->
+To set up your CAPA source codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA source codes**. Then use the buttons in the Action Pane to create and delete source codes as needed. For each source code, enter a name and description.
 
 ## Set up CAPA types
 
-<!-- KFM: Not included in vendor docs. Explain the purpose of these, possibly with example values. -->
+CAPA types let users select a type to categorize each CAPA case.  <!-- KFM: Introduce these. What are they for? Examples? -->
 
-## Set up Major/Minor classification codes
+To set up your CAPA types, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA types**. Then use the buttons in the Action Pane to create and delete CAPA types as needed. For each CAPA type, enter a name and description.
 
-<!-- KFM: Not included in vendor docs. Explain the purpose of these, possibly with example values. -->
+## Set up Major/minor classification codes
 
-## Set up CAPA root cause codes
+CAPA types let users select a major/minor classification code for each CAPA case.  <!-- KFM: Introduce these. What are they for? Examples? -->
 
-<!-- KFM: Not included in vendor docs. Explain the purpose of these, possibly with example values. -->
+To set up your major/minor classification codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **Major/minor classification codes**. Then use the buttons in the Action Pane to create and delete classification codes as needed. For each code, enter a name and description.
+
+## Set up CAPA root causes
+
+CAPA root cause codes let users select the root cause of an issue when they resolve a CAPA case. <!-- KFM: More to say? Examples? -->
+
+To set up your CAPA root cause codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**. Then use the buttons in the Action Pane to create and delete root causes as needed. For each root cause, enter a name and description.
 
 ## CAPA processes
 
-CAPA processes are hierarchical processes that let you manage and resolve CAPA cases. Each CAPA process comprises a series of stages, each of which can include one or more automatically generated activities. When you create CAPA case, you'll assign a CAPA process required to guide it to completion.
+CAPA processes are hierarchical processes that let you manage and resolve CAPA cases. Each CAPA process comprises a series of sequential stages, each of which can include one or more automatically generated activities. When you create a CAPA case, you'll assign the CAPA process required to guide it to completion.
 
 > [!TIP]
 > To get started quickly, you can load a set of standard CAPA processes from a template provided with Supply Chain Management. You can use the standard processes as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](quality-capa-admin.md).
 
 ### Manage and approve CAPA processes
 
-To set up and manage your CAPA processes (regardless of whether you started by loading the template), follow these steps.
+To name, describe, and approve your CAPA processes, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 1. The **CAPA processes** page opens, showing a list of existing CAPA processes. The following information is shown for the selected process:
@@ -114,9 +118,15 @@ To set up and manage your CAPA processes (regardless of whether you started by l
     - To add a new process, select **New**.
     - To delete a selected process, select **Delete**.
     - To edit the name, description or approval status of a selected process, select **Edit**.
-    - To view and edit the details of an existing process, select it from the list and, on the Action Pane, open the **Process** tab and select **Details**.
 
 ### Configure CAPA process details
+
+To define the stages and activities that make up a CAPA process, follow these steps.
+
+1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
+1. Select or create the CAPA process you want to work with.
+1. On the Action Pane, open the Process tab and select **Details**.
+1. <!-- KFM: continue here.... -->
 
 When you create a new CAPA process or open the details of an existing one, as described in the previous procedure, you'll see a page with two panes. The left pane shows a hierarchical list of stages and activities that make up the process. Stages are at the top level, and each stage can include one or more activities nested below it. The right pane shows details about the selected stage or activity.
 
