@@ -26,6 +26,7 @@ This article explains how to update the local agent. The latest version of the l
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.4.0               | This version upgrades the Service Fabric SDK and upgrades the Azure Storage libraries | February 2025| Not applicable  |
 | 3.3.0               | This version adds node tag management capabilities to the local agent. | January 2024 | Not applicable |
 | 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
 | 3.2.2               | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
@@ -49,6 +50,11 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.4.0
+- This version upgrades the Service Fabric SDK to version 7.0.
+- Upgrades the Azure Storage libraries.
+- Adds better LCS error handling in the Bridge service.
 
 ## What's new in local agent 3.3.0
 - This version adds a new feature to manage Service Fabric dynamic node tags. This requires some additional setup that is provided with version 2.20.0 of the infrastructure scripts.

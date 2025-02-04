@@ -26,7 +26,7 @@ This article goes over how to add or remove a node from your existing Microsoft 
 
 To add a node or nodes to your existing environment, follow these steps:
 
-1. Ensure that you download the latest infrastructure scripts. For information, see [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts). You need at least version 2.23.0 of the scripts to carry out these steps.
+1. Ensure that you download the latest infrastructure scripts. For information, see [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts). You need at least version 2.23.1 of the scripts to carry out these steps.
 
 1. Update the ConfigTemplate.xml file with the new node information.
 
