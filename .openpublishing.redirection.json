@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/onprem-remove-reinstall-AOS-node.md",
-      "redirect_url": "/dynamics365//fin-ops-core/dev-itpro/deployment/onprem-add-remove-node.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/onprem-add-remove-node",
       "redirect_document_id": "false"
     },    
     {
