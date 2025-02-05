@@ -22,11 +22,11 @@ ms.assetid:
 This article explains how to update the local agent. The latest version of the local agent is version 3.3.0, which was released in January 2024.
 
 > [!IMPORTANT]
-> Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
+> Do not update the local agent during a servicing operation, even if the preparation phase has been completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
-| 3.4.0               | This version upgrades the Service Fabric SDK and upgrades the Azure Storage libraries | February 2025| Not applicable  |
+| 3.4.0               | This version upgrades the Microsoft Azure Service Fabric SDK and the Azure Storage libraries. | February 2025 | Not applicable |
 | 3.3.0               | This version adds node tag management capabilities to the local agent. | January 2024 | Not applicable |
 | 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
 | 3.2.2               | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
@@ -41,7 +41,7 @@ This article explains how to update the local agent. The latest version of the l
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. | May 2020 | June 30, 2023 |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. | December 2019 | April 30, 2023 |
 | 2.3.1               | This version fixes orchestration service crashes that may occur during cleanup on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of predeployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). | September 2019 | April 30, 2023 |
-| 2.3.0               | This version adds support for pre and post-deployment scripts. | August 2019 | April 30, 2023 |
+| 2.3.0               | This version adds support for predeployment and post-deployment scripts. | August 2019 | April 30, 2023 |
 | 2.2.0               | This version fixes locked DLLs during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. | July 2019 | January 31, 2023 |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This update fixes an issue where files are fully downloaded, but the logic would still consider them missing a few bytes and therefore fail the download. | July 2019 | January 31, 2023 |
 | 2.1.1               | This version fixes an issue that occurs when the download fails and the Microsoft Dynamics Lifecycle Services **Maintain** button isn't available. Other changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | February 2019 | January 31, 2023 |
@@ -53,8 +53,8 @@ This article explains how to update the local agent. The latest version of the l
 
 ## What's new in local agent 3.4.0
 - This version upgrades the Service Fabric SDK to version 7.0.
-- Upgrades the Azure Storage libraries.
-- Adds better LCS error handling in the Bridge service.
+- It upgrades the Azure Storage libraries.
+- It adds better Lifecycle Services error handling in the Bridge service.
 
 ## What's new in local agent 3.3.0
 - This version adds a new feature to manage Service Fabric dynamic node tags. This requires some additional setup that is provided with version 2.20.0 of the infrastructure scripts.
@@ -177,7 +177,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ### Clean up the existing local agent
 
-1. Fine the folder that you previously installed the local agent from.
+1. Find the folder that you previously installed the local agent from.
 1. In a PowerShell window, navigate to that folder, and run the following command.
 
     ```Console
