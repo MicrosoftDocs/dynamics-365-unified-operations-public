@@ -15,11 +15,11 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-Before you can begin creating and working with CAPA cases, you must set up the components needed to categorize and process CAPA cases.
+Before you can begin creating and working with corrective and preventive action (CAPA) cases, you must set up the components needed to categorize and process CAPA cases.
 
 ## Set up CAPA worker groups
 
-CAPA worker groups let you group users together for CAPA purposes. You can assign a CAPA work group to each activity and stage in your CAPA process. The system uses them to validate worker assignments and can use them to set default workers when a specific worker isn't assigned. <!-- KFM: Clarify a bit better what an "assignment" is. -->
+CAPA worker groups let you group users together for CAPA purposes. You can assign a CAPA work group to each activity and stage in your CAPA process. The system uses worker groups to validate worker assignments and each group can include a default worker to use when a specific worker isn't assigned. When a CAPA case, CAPA process stage, or CAPA process activity assigned to a worker or worker group becomes active, then the system sends that worker or worker group an email notification to let them know.
 
 > [!TIP]
 > To get started quickly, you can load a set of standard CAPA worker groups from a template provided with Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](quality-capa-admin.md).
@@ -48,7 +48,7 @@ To set up your CAPA worker groups, follow these steps.
 
 ## Set up CAPA categories
 
-CAPA categories allow you to group similar case types together. Organizing CAPA cases by category can help employees identify known solutions, such as knowledge articles, for when similar issues frequently occur. This information is also used by the *Trending analysis by category* feature so employees can review whether the frequency of specific issues is declining over time.
+CAPA categories allow you to group similar case types together. Organizing CAPA cases by category can help employees identify known solutions, such as knowledge articles, for when similar issues frequently occur. This information is also used by the *Trending analysis by category* feature so managers can review whether the frequency of specific issues is declining over time.
 
 To set up your CAPA categories, follow these steps.
 
@@ -56,7 +56,7 @@ To set up your CAPA categories, follow these steps.
 1. Use the buttons on the Action Pane to add and remove categories as needed. You can't delete categories that are assigned to active CAPA cases. For each category, make the following settings:
     - **CAPA category** – Enter the name of the CAPA category. The name must be unique.
     - **Description** – Enter a description of the CAPA category.
-    - **CAPA subcategory type** – Select a subcategory for the CAPA category. It includes several predefined subcategories (*None*, *Customer*, *Vendor*, and *Product*). It also includes the *User defined* subcategory type, which lets users choose from a collection of custom subcategory types when they create a CAPA case using this category. The next procedure describes how to set up your custom subcategory types.
+    - **CAPA subcategory type** – Select a subcategory for the CAPA category. It includes several predefined subcategories (*None*, *Customer*, *Vendor*, and *Product*). It also includes the *User defined* subcategory type, which lets users choose from a collection of custom subcategories when they create a CAPA case using this type of category. The next procedure describes how to set up your custom subcategories.
 
 To set up CAPA subcategories for a categories with a *User defined* subcategory type, follow these steps.
 
@@ -97,7 +97,7 @@ CAPA root cause codes let users select the root cause of an issue when they reso
 
 To set up your CAPA root cause codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**. Then use the buttons in the Action Pane to create and delete root causes as needed. For each root cause, enter a name and description.
 
-## CAPA processes
+## Set up CAPA processes
 
 CAPA processes are hierarchical processes that let you manage and resolve CAPA cases. Each CAPA process comprises a series of sequential stages, each of which can include one or more automatically generated activities. When you create a CAPA case, you'll assign the CAPA process required to guide it to completion.
 
@@ -112,7 +112,7 @@ To name, describe, and approve your CAPA processes, follow these steps.
 1. The **CAPA processes** page opens, showing a list of existing CAPA processes. The following information is shown for the selected process:
     - **Name** – The name of the selected CAPA process. This is read-only for existing processes.
     - **Description** – A short description of the selected CAPA process.
-    - **Approved** – Indicates whether the selected CAPA process is approved for use in managing CAPA cases. <!-- KFM: mention what role is needed to be able to change this. --> Only approved CAPA processes are available to users when they create and process a CAPA case.
+    - **Approved** – Indicates whether the selected CAPA process is approved for use in managing CAPA cases. <!-- KFM: mention what role is needed to be able to change this. --> Only approved CAPA processes are available to users when they create and process a CAPA case. You can keep this set to *No* while developing a new process, and then change it to *Yes* when you're ready to start using it.
 
 1. Use buttons on the Action Pane to add and remove processes.
     - To add a new process, select **New**.
@@ -125,39 +125,34 @@ To define the stages and activities that make up a CAPA process, follow these st
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 1. Select or create the CAPA process you want to work with.
-1. On the Action Pane, open the Process tab and select **Details**.
-1. <!-- KFM: continue here.... -->
+1. On the Action Pane, open the **Process** tab and select **Details**.
 
-When you create a new CAPA process or open the details of an existing one, as described in the previous procedure, you'll see a page with two panes. The left pane shows a hierarchical list of stages and activities that make up the process. Stages are at the top level, and each stage can include one or more activities nested below it. The right pane shows details about the selected stage or activity.
+    You now see a page where you can create or edit the structure of your selected process. The page has two panes. The left pane shows a hierarchical list of stages and activities that make up the process. The top level is the process itself. The second level are the stages, and each stage can include one or more activities nested below it. You can create sub-stages as deeper levels if you want to, but usually, you'll just have one level of stages. The right pane shows details about the selected stage or activity. Workers must complete the stages in order, from top to bottom, but all activities belonging to a stage can be done in order order or even simultaneously. Some activities can be set to mandatory, meaning they must be completed before the process can continue to the next stage.
 
-#### FastTabs
+    If you're creating a new process that should be similar to an existing process, then you can get started quickly by copying that process. To do so, open the **Process** tab on the Action Pane and select **Copy from**. Then select the process you want to copy.
 
-- **General** – Set up and view general information about the CAPA process and activity. The information includes the purpose of the activity, start and end dates and time for performing the activity, and CAPA worker group and worker responsible for the activity.
-- **Exit criteria** – Set up and view the exit criteria for the selected CAPA process. Activities identified as required must be completed before you can exit the process.
+1. Set up your top-level stages. To add a new stage at the bottom of the current stages list, select the top level heading (the process name) and on the Action Pane, select **New** \> **Create level**. (You can create a sub-stage for an existing stage by selecting the parent stage and selecting **New** \> **Create level**.) For each stage, enter the following information in the right pane:
+    - **Name** – This is a read-only field. For a new stage, it takes it's value from the the text you enter in the **Purpose** field and can't be changed later.
+    - **Activity number** – This is a read-only field. It's automatically generated. <!-- KFM: What is the link for? It seems like it's only relevant for active cases, so why is it active here? -->
+    - **CAPA worker group** – Select or view the CAPA worker group that identifies the group of CAPA workers responsible for this activity. By default, this group is also assigned to the activities belonging to the stage, but you can override it for each stage if necessary.
+    - **Responsible** – Select worker from the selected worker group who is responsible for this activity. If none is specified, the default worker assigned for the selected worker group is used. when the CAPA case is being processed.
+    - **Notify group** – Choose who should be notified by email when the stage becomes active. Select *Yes* to notify the entire worker group. Select *No* to just notify the responsible worker. Select *Inherit* to inherit this setting from a parent stage in the hierarchy.
+    - **Email status updates** – Choose whether to also send email to the responsible worker or group the stage is closed or reopened. Choose *Yes*, *No*, or *Inherit*.
+    - **Print on report** – Choose wether to include information about this stage in the printed CAPA case report. Choose *Yes*, *No*, or *Inherit*.
+    - **Check for required activities** – Select this check box to specify whether activities belonging to this stage and marked as mandatory must be completed before the stage can be closed.
 
-#### Buttons
+1. Add activities to each stage. To add an activity at the bottom of the current list of activities for a stage, select the stage and on the Action Pane, select **New** \> **Create action**, **New** \> **Create appointment**, **New** \> **Create event**, or **New** \> **Create task**, depending on which type of activity it should be. The activity types all work in approximately the same way, though each has slightly different scheduling settings available for it. For each activity, enter the following information in the right pane:
+    - The **Name**, **Purpose**, and **Activity number** fields all work the same way as they do for stages.
+    - Use the **Required** field to mark an activity as mandatory. Mandatory activities must be completed before the parent stage can be closed, provided that the **Check for required activities** setting is set to *Yes* for the parent stage.
+    - Use the scheduling fields (like **Start time** and **End time**) to set the start and end dates and times for the activity. These fields are used to calculate when the activity should be performed based on the start and end dates of the CAPA case. Scheduling field availability varies by activity type.
+    - Set notification options as needed. These settings all work the same way as they do for stages and are set to inherit their settings from the parent stage by default.
 
-- **New** – Create a new CAPA process.
-- **Delete** – Delete a CAPA process.
-- **Save as** – Save the current process to a new name.
-- **Functions** – Save the current process or copy an existing CAPA process to a template.
-- **Inquiry** – Open the **All CAPA cases** form to view all CAPA cases using the selected CAPA Process for your company.
-- **Actions (From the Hierarchy)** – From the hierarchy directly or by using the Actions button, levels and activities can be added to the tree. Options include: Create level, Create action, Create appointment, Create event, Create task, Delete, Details. There are four types of activities used by CAPA cases: Action, Appointment, Event and Task.
+1. Continue working until you've set up all the elements you need for your process. Then, on the Action Pane, select **Save**.
 
-#### Fields
+### View all cases that use a selected CAPA process
 
-- **Name** – Enter or view the name for the CAPA process.
-- **Description** – Enter or view a brief description of the CAPA process.
-- **Approved** – Select this check box if the CAPA process is approved for use in managing CAPA cases.
-- **Name** – View the stage/activity name.
-- **Activity number** – View the activity number that is assigned to the activity associated with the process. This number is generated automatically.
-- **Purpose** – Enter or view the name or description for the purpose of the activity.
-- **Calculated start in (days)** – Enter or view the number of days from the start date of a CAPA case on which the activity should begin.
-- **Calculated end in (days)** – Enter or view the number of days from the end date of a CAPA case on which the activity should end.
-- **Start time** – Enter or view the start time for the activity.
-- **End time** – Enter or view the end time for the activity.
-- **Notes** – Enter or view free-form notes about the specific CAPA case activity.
-- **CAPA worker group** – Select or view the CAPA worker group that identifies the group of CAPA workers responsible for this activity. When you enter a CAPA worker group for the Stage it will default to the activities within that stage unless indicated otherwise on the Activity.
-- **Responsible** – Select or view the identifier for the worker who is responsible for this activity. If one is not specified, the default from the CAPA worker group will be used when the CAPA case is being processed. If entered, the worker selected is validated based on the CAPA worker group assigned. IF the CAPA administration is an implied member of the group, then the CAPA administrator can be manually entered as the responsible worker if desired.
-- **Notify group** – Enter or view if the entire CAPA worker group should be notified when stages are advanced. Select Yes, if the group should be notified. Select No, if just the responsible should be notified. Select Inherit, if this determination has been decided at a higher level in the hierarchy. This is used for email notifications when the stage is advanced. This field on the CAPA worker group of the stage being advanced to is the determining factor.
-- **Check for required activities** – Select this check box to specify that certain activities in this CAPA process must be completed before the process can be closed.
+To see all CAPA cases that use a selected CAPA process, follow these steps.
+
+1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
+1. Select or open the CAPA process you want to look for.
+1. On the Action Pane, open the **Process** tab and select **All cases** or **All CAPA cases**. <!-- KFM: what is the difference? -->
