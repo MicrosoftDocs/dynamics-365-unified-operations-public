@@ -111,6 +111,8 @@ Follow these steps to create a custom label layout that uses data from a label l
 
     > [!NOTE]
     > Use `dsparams.parameter-name` to refer to label layout data source parameters.
+    >
+    > In the above example, when the print dialog is opened, the user will be able to enter the number of labels to be printed in the *Quantity of labels* field.
 
 1. On the Action Pane, select **Save**.
 
