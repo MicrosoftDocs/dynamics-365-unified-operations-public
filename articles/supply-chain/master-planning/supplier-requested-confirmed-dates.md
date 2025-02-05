@@ -1,13 +1,14 @@
 ---
 title: Calculate requested ship dates for purchase orders
-description: Learn how the system calculates requested ship dates for purchase orders, including prerquisites and an outline on receipt dates on purchase orders.
+description: Learn how the system calculates requested ship dates for purchase orders, including prerequisites and an outline on receipt dates on purchase orders.
 author: t-benebo
 ms.author: benebotg
-ms.topic: how-to
-ms.date: 11/16/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: VendCustTransportPoint2Point, SrmParameters, VendTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Calculate requested ship dates for purchase orders
@@ -27,11 +28,11 @@ To calculate requested shipment dates for purchase orders, your system must meet
 - You must be running Dynamics 365 Supply Chain Management version 10.0.38 or later.
 - You must be using Planning Optimization, not the [deprecated master planning engine](deprecated-master-planning-overview.md).
 
-Additional requirements apply based on which version of Supply Chain Management you are running, as described in the following subsections.
+Additional requirements apply based on which version of Supply Chain Management you're running, as described in the following subsections.
 
 ### Supply Chain Management versions 10.0.38 or 10.0.39
 
-If you are running Supply Chain Management version 10.0.38 or 10.0.39, the feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+If you're running Supply Chain Management version 10.0.38 or 10.0.39, the feature named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Supply Chain Management version 10.0.40 or later
 
@@ -104,6 +105,7 @@ To set up addresses for a vendor, follow these steps.
 1. On the **Addresses** FastTab, add and remove addresses as you require. If more than one address is specified on the **Addresses** FastTab, when the system uses the purchase transport days setup to calculate the shipping date, it uses the address where the **Primary** option is set to *Yes* as the shipping point.
 
 > [!TIP]
+>
 > - The vendor address is applied to the purchase order and used as the shipping point for purchase transport days.
 > - The receiving point for purchase transport days is the second factor that's used to calculate the shipping date. The delivery address depends on the setup, and a default value can be taken from the company, site, or warehouse. Any update to the site or warehouse for a purchase order header or line triggers a recalculation of the shipping date, because the new site or warehouse might have a different delivery address.
 
@@ -225,7 +227,7 @@ This section provides examples that show how requested ship and receipt dates fo
 
 These scenarios have the following prerequisites:
 
-- You system must meet all the feature prerequisites that are listed in the [Prerequisites](#prerequisites) section of this article.
+- Your system must meet all the feature prerequisites that are listed in the [Prerequisites](#prerequisites) section of this article.
 - The **Purchase transport days** page must be configured with at least one receiving address, shipping address, and number of transport days. The addresses must match the vendors and receiving warehouses that you use for these scenarios.
 - Unless otherwise specified, all calendars must have all days open.
 - On the **Procurement and sourcing parameters** page, on the **Delivery** tab, the **Requested ship date in the past** field must be set to *None*.

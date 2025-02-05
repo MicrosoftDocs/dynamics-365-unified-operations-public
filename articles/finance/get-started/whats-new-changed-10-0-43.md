@@ -1,10 +1,10 @@
 ---
-title: What's new or changed in Dynamics 365 Finance 10.0.43 (January 2025)
-description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.43 preview release distributed in January 2025.
+title: What's new or changed in Dynamics 365 Finance 10.0.43 (March 2025)
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.43 preview release.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 01/25/2025
+ms.date: 01/29/2025
 ms.custom:   
   - bap-template
   - evergreen
@@ -12,7 +12,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.43 (January 2025)
+# What's new or changed in Dynamics 365 Finance 10.0.43 (March 2025)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -45,6 +45,11 @@ This section contains a table that lists the enhancements that are included in t
 | Accounts receivable | Removal of duplicate and overlapping indexes | Removal of duplicate and overlapping indexes reduces a spacing issue in the database and therefore increases efficiency. | Default |
 | Accounts receivable | Financial dimension posting error on sales orders | This feature ensures that the financial dimensions for automatic transactions inherit the financial dimensions from the sales order. Therefore, it fixes an issue that is caused by missing financial dimensions during posting to the rounding difference account from a sales order. | Feature management |
 | Accounts receivable | Improve the performance of settlement and selection of invoices for matching | A performance improvement addresses the delay in enabling **Post** during the settlement and selection of invoices for matching. | Default |
+| General Ledger | Enable financial tags for Accounting source explorer | This feature extends the financial tags feature and enables tags in Accounting source explorer. | Feature management |
+| General Ledger | Navigate to the original document from Documents pending accounting | This change allows navigation back to the original document that's found on the **Documents pending accounting** page. | Default |
+| General Ledger | Default dimension sharing enabled for master company sharing  | This change allows default dimension data to be included in the master company sharing functionality. This is enabled for dimensions that are defined as global values. | Default |
+| Fixed assets | Automate split transaction posting from main book to derived books | When a fixed asset split transaction is posted to the main asset book, a corresponding split transaction is generated and posted to the designated derived books, based on the configuration set in the **Asset book** page.| Feature management |
+| Fixed assets |Propagate the **Allow depreciation when placed in service and disposal are in the same fiscal year** from fixed asset parameters for all newly created asset books. |The **Allow depreciation when placed in service and disposal are in the same fiscal year** option is visible on **Fixed assets parameters** and the default for newly created asset books. | Feature management |
 | Subscription billing | Mass stubbing | The **Mass stubbing** page is updated with an **Add renewal term** button. This button can be used to add a renewal term for usage billing schedule lines that are set for automatic renewal. | Default | 
 | Subscription billing | Generate invoice | Performance is improved during the creation of an invoice proposal for billing schedule lines that are deferred. | Default|
 | Tax | Enable applicability rules value lookup for tax calculation | This feature enables applicability rule value lookup for tax calculation. Users can select conditions and output values by using a dropdown list instead of entering free text. This feature is controlled by the **Enable lookups in applicability rules** parameter in Tax feature setup. | Parameter |
@@ -67,6 +72,9 @@ The following table lists the features that are turned on by default in version 
 | Selection of advance invoices for reversing while posting sales order credit note | Mandatory | Accounts receivable |
 | (Lithuania) Do not add the VAT keyword to the beginning of the invoice title | Mandatory | Accounts receivable |
 | Enable tax adjustment on consolidated invoice for Japan | On by default | Accounts receivable |
+|Prevent fixed asset acquisition from project purchase order when business rules for fixed assets determination are configured	|Enabled by default|	Fixed assets|
+|(Belgium) Fixed Asset report - Enable fiscal calendar filter|	Mandatory	|Fixed assets|
+|(Japan) Use asset depreciation rates for depreciable asset declaration report calculations|	Mandatory	|Fixed assets|
 
 ## Features removed from Feature management
 
