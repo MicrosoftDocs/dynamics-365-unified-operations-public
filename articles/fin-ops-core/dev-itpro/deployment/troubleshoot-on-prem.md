@@ -1195,7 +1195,7 @@ Follow these steps to configure the local agent with the updated tenant.
 
 You receive the following error when you deploy another environment:
 
-> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` -D365FOVersion <version> New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
+> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` -D365FOVersion \<version\> New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
 
 You can skip or modify the following sections in the deployment instructions.
 
