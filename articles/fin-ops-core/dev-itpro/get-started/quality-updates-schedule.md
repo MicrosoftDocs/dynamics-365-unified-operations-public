@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 01/29/2025
+ms.date: 02/05/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -37,7 +37,7 @@ For information about the maintenance windows for each region, see [What are the
 
 > [!IMPORTANT]
 > 1. The PQU build for every train is typically published to Lifecycle Services after the change cutoff date that's shown in the following high-level PQU train schedule. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. 
-> 2. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4), or Premium performance test (tier5) sandbox didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
+> 2. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4) sandbox, or Premium performance test (tier5) sandbox didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
 > 3. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments opted-in for the First release program (station 1) will receive updates on the following weekend of the station 1 schedule.
 
 ## High-level PQU train schedule
@@ -62,7 +62,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.40 PQU-5 | October 30, 2024 | November 4, 2024 to December 15, 2024| Canceled |
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Completed |
 | 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| In-Progress |
-| 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| Not Started |
+| 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| In-Progress |
 | 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| Not Started |
 | 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Completed |
 | 10.0.41 PQU-2 | November 8, 2024 | November 11, 2024 to January 5, 2025| Canceled |
@@ -111,24 +111,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-6 train schedule
-
-**App version: 10.0.1935.184**
-
-**Platform version: 7.0.7279.186**
-
-**Unified Environment Provisioning Application Version: 10.0.40.8**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | December 9 to December 12, 2024 | NA |
-| Station 2 | December 16 to December 19, 2024 | January 11 to January 12, 2025 |
-| Station 3 | December 17 to December 20, 2024 | January 11 to January 12, 2025 |
-| Station 4 | January 7 to January 10, 2024 | January 18 to January 19, 2025 |
-| Station 5 | January 13 to January 16, 2025 | January 25 to January 26, 2025 |
-| Station 6 | January 14 to January 17, 2025 | January 25 to January 26, 2025 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-7 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-7 train schedule
 
 **App version: 10.0.1935.200**
 
@@ -144,6 +127,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | January 27 to January 30, 2024 | February 8 to February 9, 2025 |
 | Station 5 | February 3 to February 6, 2025 | February 15 to February 16, 2025 |
 | Station 6 | February 4 to February 7, 2025 | February 15 to February 16, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-8 train schedule
+
+**App version: 10.0.1935.208**
+
+**Platform version: 7.0.7279.202**
+
+**Unified Environment Provisioning Application Version: 10.0.40.10**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | February 10 to February 13, 2025 | NA |
+| Station 2 | February 17 to February 20, 2025 | March 1 to March 2, 2025 |
+| Station 3 | February 18 to February 21, 2025 | March 1 to March 2, 2025 |
+| Station 4 | February 24 to February 27, 2024 | March 8 to March 9, 2025 |
+| Station 5 | March 3 to March 6, 2025 | March 15 to March 16, 2025 |
+| Station 6 | March 4 to March 7, 2025 | March 15 to March 16, 2025 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.41 Release-3 train schedule
 
@@ -184,7 +184,7 @@ The following table shows the high-level train schedule. It includes a descripti
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments begins with advance notifications to customers.
 > 
-> Quality updates always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update spans four days. It just means that we can't pre-determine which set of environments is updated on a given day within the four-day range. All updates are done during dark hours, with near-zero downtime. Updates definitively end within the dark-hour window of a given region.
+> Quality updates always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update spans four days. It just means that we can't predetermine which set of environments is updated on a given day within the four-day range. All updates are done during dark hours, with near-zero downtime. Updates definitively end within the dark-hour window of a given region.
 
 ## More information
 
