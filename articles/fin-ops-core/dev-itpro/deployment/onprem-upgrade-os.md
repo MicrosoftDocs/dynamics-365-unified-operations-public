@@ -118,7 +118,7 @@ This method is the simplest option, because you deactivate the node, upgrade the
 
 1. In Service Fabric Explorer, deactivate (restart) the node that you want to upgrade.
 1. Do an in-place upgrade by following the instructions in [Upgrade Windows Server 2016 to Windows Server 2019](/windows-server/upgrade/upgrade-2016-to-2019).
-1. After the node is backed up, use the **Test-D365FOConfiguration.ps1** script to ensure that the upgrade didn't restore prerequisites to their default values. If the test script raises issues, run the **Configure-Prereqs.ps1** and **Complete-Prereqs.ps1** scripts to fix them.
+1. After the node is back up, use the **Test-D365FOConfiguration.ps1** script to ensure that the upgrade didn't restore prerequisites to their default values. If the test script raises issues, run the **Configure-Prereqs.ps1** and **Complete-Prereqs.ps1** scripts to fix them.
 1. In Service Fabric Explorer, activate the node.
 1. Wait until the node is healthy again, and then repeat this procedure for the next nodes.
 
