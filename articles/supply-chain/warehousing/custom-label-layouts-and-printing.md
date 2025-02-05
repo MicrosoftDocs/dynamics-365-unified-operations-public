@@ -47,6 +47,9 @@ Follow these steps to define the data source that's used for a custom label and 
     - **Custom label root table** – Select the table that should be used as the main data source for the label (for example, *WMSLocation* to print labels for locations, *InventTable* to print labels for products, or *CustTable* to print labels for customers).
     - **Join type** – Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there is no data in the related table.
 
+    > [!NOTE]
+    > Forms that don't have a data source or use a temporary table as a data source can't use the custom labels (for example, the *Registration* form on the purchase orders uses *TmpInventTransWMS* as a data source, so custom labels can't be printed for that table). Instead, a *Regular* table must be used.
+
 1. On the Action Pane, select **Save**.
 
 1. If you want the custom label to include information from related tables, follow these steps to set up the required joins:
