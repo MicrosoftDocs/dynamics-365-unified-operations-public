@@ -4,7 +4,7 @@ description: Learn about the management of Electronic reporting destinations, th
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 08/28/2022
+ms.date: 02/05/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -63,7 +63,7 @@ After you create a reference, you can create a file destination for each **Folde
 
 Next, in the **Destination settings** dialog box, you can enable and disable individual destinations for the file destination. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it. 
 
-You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that is used to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive, and another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) the Excel file to PDF format and send the PDF file by email.
+You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that's used to generate an outbound document in Excel format. One destination can be configured to store the original Excel file in the ER jobs archive, and another destination can be configured to simultaneously convert the Excel file to PDF format and send the PDF file by email. Learn more in [Archive](er-destination-type-archive.md), [Email](er-destination-type-email.md) and [Convert](#OutputConversionToPDF) .
 
 [![Configuring multiple destinations for a single format element.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
@@ -138,14 +138,14 @@ The PDF conversion option can be turned on for **Excel\\File** and  **Common\\Fi
 
 ### Limitations
 
-In versions of Finance before version 10.0.43, the PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. This solution has the following limitations:
+In versions earlier than Dynamics 365 Finance version 10.0.43, the PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. This solution has the following limitations:
 
 - the PDF conversion option is available for cloud deployments and on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
 - the PDF document that is produced is limited to a maximum length of 300 pages.
 
-In version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
+In Dynamics 365 Finance version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
 
-Here are the advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled:
+The advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled are:
 
 - The PDF document that is produced isn't limited to 300 pages.
 - The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
