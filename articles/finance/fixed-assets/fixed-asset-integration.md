@@ -4,7 +4,7 @@ description: Fixed assets can be integrated with General ledger, Inventory manag
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 09/25/2024
+ms.date: 02/05/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
