@@ -136,6 +136,17 @@ When a print job is run, the system uses the following sequence to identify whic
 1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See [Related information](#related-information) for more information.
 1. If no override or default printer is found, no label is printed.
 
+## Advanced scenarios
+
+The functionality described above can be also used for some more advanced scenarios, like reprinting a licence plate label that was created in one warehouse on a printer located in another warehouse.
+
+### Reprinting a label in a different warehouse
+
+One way to reprint a label in a different warehouse is to setup a default label printer in the **Default label printers** form for a user, location or a device in another warehouse. For example, for a given **Printer stock type** and **User ID** *25* printer *Printer25* is set in the **Printer name** field. This will mean that when that user is reprinting labels that were orignally created in warehouse *24*, they will now be sent to printer *Printer25* instead of the printer defined in the **Document routing** for warehouse *24*.
+
+> [!IMPORTANT]
+> There must be a valid **Document routing** setup based on the field values on the license plate label (for example, **Warehouse**), even in the case a different printer will be used later on. For example, if the label was originally created in warehouse *24*, then there must be a **Document routing** record for warehouse *24* with the same **Layout ID** which has the matching **Printer stock type** as the default printer for the other user, location or a device.
+
 ## Related information
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
