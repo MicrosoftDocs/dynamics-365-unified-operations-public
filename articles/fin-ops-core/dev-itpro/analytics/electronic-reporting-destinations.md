@@ -63,7 +63,7 @@ After you create a reference, you can create a file destination for each **Folde
 
 Next, in the **Destination settings** dialog box, you can enable and disable individual destinations for the file destination. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it. 
 
-You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that's used to generate an outbound document in Excel format. One destination can be configured to store the original Excel file in the ER jobs archive, and another destination can be configured to simultaneously convert the Excel file to PDF format and send the PDF file by email. Learn more in [Archive](er-destination-type-archive.md), [Email](er-destination-type-email.md) and [Convert](#OutputConversionToPDF) .
+You can create **multiple file destinations** for each output component of the same format. For example, you can use this capability to configure file destinations for a file component that's used to generate an outbound document in Excel format. One destination can be configured to store the original Excel file in the ER jobs archive, and another destination can be configured to simultaneously convert the Excel file to PDF format and send the PDF file by email. Learn more in [Archive](er-destination-type-archive.md), [Email](er-destination-type-email.md), and [Convert](#OutputConversionToPDF) .
 
 [![Configuring multiple destinations for a single format element.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
@@ -162,12 +162,12 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 ### Use the PDF conversion component in ER format configurations
 
-You can use PDF conversion directly in format configurations. In this case, you don't have to use the [**Convert to PDF**](#ConvertToPDF) checkbox on the **Electronic reporting destination** page. A format component, **PDF Converter**, is availble.
+You can use PDF conversion directly in format configurations. In this case, you don't have to use the [**Convert to PDF**](#ConvertToPDF) checkbox on the **Electronic reporting destination** page. A format component, **PDF Converter**, is available.
 
 [![PDF Converter component in formats.](./media/ERformatPDFconverter.jpg)](./media/ERformatPDFconverter.jpg)
 
 > [!NOTE]
-> The **PDF Converter** component can be added only in the format configurations of a **PDF** format type, or when the format type isn't explicitly defined but is left blank. The **PDF Converter** component can contain only one **Excel\\File** sub-component.
+> The **PDF Converter** component can be added only in the format configurations of a **PDF** format type, or when the format type isn't explicitly defined but is left blank. The **PDF Converter** component can contain only one **Excel\\File** subcomponent.
 
 ### <a name="SelectPdfPageOrientation"></a> Select a page orientation for PDF conversion
 
@@ -202,7 +202,7 @@ On the **General** FastTab, in the **Send folder as** field, select one of the f
 - **Separate files** – Deliver every file of a generated zip file as an individual file.
 
     > [!NOTE]
-    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output to be quite large.
+    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output to be large.
 
 [![Configuring a destination for a Folder format component.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
@@ -250,7 +250,7 @@ You must select the length unit for setting page margins:
 ![Set up page layout properties on the Electronic reporting destination page.](./media/er_destinations-set-page-layout-properties.png)
 
 > [!TIP]
-> When a margin value is nominated in centimeters and specified with multiple decimals, it's rounded at runtime to the nearest value with 1 decimal point.
+> When a margin value is nominated in centimeters and specified with multiple decimals, it's rounded at runtime to the nearest value with one decimal point.
 >
 > When a margin value is nominated in millimeters and specified with decimals, it's rounded at runtime for Excel to the nearest integer value with no decimal point.
 >
@@ -290,7 +290,7 @@ The formula is specific to the ER configuration. For example, if you use the ISO
 
 ### One of my format configurations contains multiple files that are grouped into one folder (for example, Folder1 contains File1, File2, and File3). How do I set up destinations so that Folder1.zip isn't created at all, File1 is sent by email, File2 is sent to SharePoint, and I can open File3 immediately after the configuration is run?
 
-Your format must first be available in the ER configurations. If this prerequisite is met, open the **Electronic reporting destination** page, and create a new reference to the configuration. You must then have four file destinations, one for each output component. Create the first file destination, give it a name such as **Folder**, and select a file name that represents a folder in your configuration. Then select **Settings**, and make sure that all the destinations are disabled. For this file destination, the folder won't be created. By default, because of hierarchical dependencies between files and parent folders, the files will behave in the same way. In other words, they won't be sent anywhere. To override that default behavior, you must create three more file destinations, one for each file. In the destination settings for each, you must enable the destination that the file should be sent to.
+Your format must first be available in the ER configurations. If this prerequisite is met, open the **Electronic reporting destination** page, and create a new reference to the configuration. You must then have four file destinations, one for each output component. Create the first file destination, give it a name such as **Folder**, and select a file name that represents a folder in your configuration. Then select **Settings**, and make sure that all the destinations are disabled. For this file destination, the folder won't be created. By default, because of hierarchical dependencies between files and parent folders, the files behave in the same way. In other words, they won't be sent anywhere. To override that default behavior, you must create three more file destinations, one for each file. In the destination settings for each, you must enable the destination that the file should be sent to.
 
 ## Additional resources
 
