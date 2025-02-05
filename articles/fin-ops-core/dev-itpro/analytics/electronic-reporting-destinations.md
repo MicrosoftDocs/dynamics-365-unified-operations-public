@@ -239,7 +239,7 @@ The following properties can be configured in an ER destination for a format com
     - Right
 
 > [!NOTE]
-> The page orientation of the template that's configured in this way must be aligned with the [page orientation for PDF conversion](#select-a-page-orientation-for-pdf-conversion) if the PDF conversion is configured.
+> The page orientation of the template that's configured in this way must be aligned with the page orientation for PDF conversion if the PDF conversion is configured.
 
 You must select the length unit for setting page margins:
 
