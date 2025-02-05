@@ -123,7 +123,7 @@ For example, you configure vendor payment processing so that the **ISO20022 Cred
 
 [![Configuring process handling for file destination failure.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
-If you clear the **Stop processing on failure** checkbox for the **CoveringLetter** component in the destination, a payment will be considered successfully processed even if the covering letter isn't successfully delivered by email. The status of the payment will be changed from **None** to **Sent** even if the covering letter can't be sent because, for example, the email address of the recipient or sender is missing or incorrect.
+If you clear the **Stop processing on failure** checkbox for the **CoveringLetter** component in the destination, a payment is considered successfully processed even if the covering letter isn't successfully delivered by email. The status of the payment will be changed from **None** to **Sent** even if the covering letter can't be sent because, for example, the email address of the recipient or sender is missing or incorrect.
 
 ## <a name="OutputConversionToPDF"></a>Output conversion to PDF
 
@@ -132,7 +132,7 @@ You can use the PDF conversion option to convert output in Microsoft Office (Exc
 The PDF conversion option can be turned on for **Excel\\File** and  **Common\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
 
 > [!NOTE]
-> Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component will expose the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
+> Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component exposes the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
 > 
 > If you turn on the PDF conversion option for a format component, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
 
