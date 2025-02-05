@@ -45,7 +45,7 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
 1. Do an in-place upgrade by following the instructions in [Upgrade Windows Server 2016 to Windows Server 2019](/windows-server/upgrade/upgrade-2016-to-2019).
 
     > [!NOTE]
-    > You'll receive a warning that states that you must reconfigure your AD FS role after the upgrade is completed. Because you've collected the information that's required to recreate the application group, this warning isn't an issue. If you have additional applications, be sure to back up the client IDs so that you can reuse them when you recreate the applications later.
+    > You'll receive a warning that states that you must reconfigure your AD FS role after the upgrade is completed. Because you've collected the information that's required to re-create the application group, this warning isn't an issue. If you have additional applications, be sure to back up the client IDs so that you can reuse them when you re-create the applications later.
 
 1. After the machine has been upgraded, open Server Manager, and complete the configuration of AD FS.
 1. Configure AD FS by following the instructions in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). However, don't run the **Publish-ADFSApplicationGroup.ps1** script.
@@ -103,7 +103,7 @@ To correctly support authentication with the Office add-ins, AD FS on Windows Se
 
 In Service Fabric standalone clusters, upgrade of a node's operating system is a machine-specific operation. (A node can be either a virtual machine \[VM\] or a physical machine.) There are two methods for doing an in-place upgrade for a node. In the first method, the upgrade operation preserves data and the operating system configuration. In the second method, the upgrade operation doesn't preserve data and the operating system configuration. You can also create new nodes and then add them to the cluster.
 
-All the methods that are described in this section keeps your cluster up and running, and won't affect the availability of the service, provided that you don't upgrade all the nodes at the same time.
+All the methods that are described in this section keep your cluster up and running, and won't affect the availability of the service, provided that you don't upgrade all the nodes at the same time.
 
 Regardless of the method that you use to upgrade the nodes, consider upgrading all the nodes in a node type before you proceed to another node type.
 
@@ -118,13 +118,13 @@ This method is the simplest option, because you deactivate the node, upgrade the
 
 1. In Service Fabric Explorer, deactivate (restart) the node that you want to upgrade.
 1. Do an in-place upgrade by following the instructions in [Upgrade Windows Server 2016 to Windows Server 2019](/windows-server/upgrade/upgrade-2016-to-2019).
-1. After the node is back-up, use the **Test-D365FOConfiguration.ps1** script to ensure that the upgrade didn't restore prerequisites to their default values. If the test script raises issues, run the **Configure-Prereqs.ps1** and **Complete-Prereqs.ps1** scripts to fix them.
+1. After the node is backed up, use the **Test-D365FOConfiguration.ps1** script to ensure that the upgrade didn't restore prerequisites to their default values. If the test script raises issues, run the **Configure-Prereqs.ps1** and **Complete-Prereqs.ps1** scripts to fix them.
 1. In Service Fabric Explorer, activate the node.
 1. Wait until the node is healthy again, and then repeat this procedure for the next nodes.
 
 ### Do an in-place upgrade that doesn't preserve operating system data
 
-During the operating system upgrade, you remove all data. Therefore, the node has a fresh operating system installation. You'll have to complete all the configuration steps for each node before you add it back to the cluster.
+During the operating system upgrade, you remove all data. Therefore, the node has a fresh operating system installation. You must complete all the configuration steps for each node before you add it back to the cluster.
 
 1. In Service Fabric Explorer, deactivate (remove data for) the node that you want to upgrade.
 1. Remove the node from the cluster by following the instructions in [Remove a node](./onprem-remove-reinstall-aos-node.md#remove-a-node).
