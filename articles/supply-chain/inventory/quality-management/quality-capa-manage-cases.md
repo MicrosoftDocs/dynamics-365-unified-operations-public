@@ -79,3 +79,10 @@ The details page has the following FastTabs:
 - **Resolution** – <!-- KFM: Description needed -->
 
 ### Work through a CAPA process
+
+A CAPA process guides workers who are assigned to a case through the steps needed to resolve it. The process defines a series of stages that must be completed in order. Each stage can comprise of one or more activities that can be completed in any order (or simultaneously). Some activities might be mandatory. All mandatory activities must be completed before the process can continue to the next stage. 
+
+The CAPA process automatically assigns a worker or worker group to each stage and activity. The system uses email to notify each responsible worker or worker group when a case, stage, or activity is assigned to them. The email includes links that allow the worker to open the case, stage, or activity directly from the message.
+
+
+| Change stage                                                                                   | Change the position in the CAPA process flow from one level or stage to another, based on completing the tasks, actions, and activities associated with that stage.                     | Once a stage is advanced to, the activities associated with that stage are visible and the responsible workers are notified via an email notification. |
