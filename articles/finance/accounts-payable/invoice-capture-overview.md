@@ -2,9 +2,9 @@
 title: Invoice capture solution overview
 description: Learn about the Invoice capture solution, including a table that outlines actions, system, and role names for various roles.
 author: sunfzam
-ms.author: zezhangzhao
+ms.author: Shiellas
 ms.topic: overview
-ms.date: 11/21/2024
+ms.date: 02/06/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -54,3 +54,10 @@ To use the Invoice capture solution, the following licenses must be considered f
 - **Power Apps license (per user)** – If users don't have a full Dynamics 365 Finance license and want to access Invoice capture, a Power Apps license is needed with the **InvoiceCaptureOperator** role assigned in Dynamics 365 Finance. 
 - **Azure Data Lake Storage subscription** – Usually, Dynamics 365 Finance customers don't have to subscribe to more Azure Data Lake storage if the 20-gigabyte (GB) Dataverse file license is sufficient to persist the original invoice documents. Different apps share this Dataverse file storage. Extra subscriptions might be needed if the Dataverse file capacity isn't sufficient. The same applies to Dataverse database storage (default capacity: 10 GB).
 - **Invoice processing fee based on number of invoices** – Dynamics 365 Finance customers are entitled to 100 invoice capture transactions per tenant per month. If customers need more transactions, they must purchase extra Electronic Invoicing stock keeping units (SKUs) at 300 US dollars (USD) for 1,000 transactions per tenant per month. The transaction capacity is available on a monthly, use-it-or-lose-it basis, and customers must purchase for peak capacity.
+
+### Licensing FAQ 
+How are the number of invoices calculated for the monthly quota? Are received files included?  
+ - No, only the captured invoices are going to be considered as valid transactions. In case the file has been filtered by the file filter setting it won't be counted. 
+
+Is there a supported list of environment types for invoice capture? 
+ - Invoice capture is supported when the integrated Dataverse environment exists. This should include Partner Tier 2 environments. Learn more in [Enable power platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
