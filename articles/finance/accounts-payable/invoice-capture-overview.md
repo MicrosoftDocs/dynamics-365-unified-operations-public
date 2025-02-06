@@ -2,7 +2,7 @@
 title: Invoice capture solution overview
 description: Learn about the Invoice capture solution, including a table that outlines actions, system, and role names for various roles.
 author: sunfzam
-ms.author: Shiellas
+ms.author: shielas
 ms.topic: overview
 ms.date: 02/06/2025
 ms.reviewer: twheeloc
