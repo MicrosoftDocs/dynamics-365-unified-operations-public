@@ -400,10 +400,10 @@ additionalContent:
         - title: Dynamics 365 Commerce
           summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
           url: /dynamics365/commerce/
-        - title: Microsoft Supply Chain Center
-          summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
-          url: /supply-chain-platform/supply-chain-center/
-        - title: Microsoft Dynamics 365 Intelligent Order Management
+        - title: Dynamics 365 Human Resources
+          summary: Connect people and operations data to optimize workforce costs and take care of your employees.
+          url: /dynamics365/human-resources/
+        - title: Dynamics 365 Intelligent Order Management
           summary: Intelligent Order Management is a suite of capabilities to help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
           url: https://learn.microsoft.com/dynamics365/intelligent-order-management/
         - title: Microsoft Power Platform
