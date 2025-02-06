@@ -19,11 +19,11 @@ ms.dyn365.ops.version: 10.0.38
 
 In Microsoft Dynamics 365 Finance version 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available. When you turn on this feature, the process of creating new balances is initiated. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
 
-This feature enables the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently and use less space. Therefore, the trial balance can show current balance data more quickly. The feature uses process automation to keep the balance amounts up to date.
+This feature enables the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently and use less space. Therefore, the trial balance can show current balance data more quickly. The feature uses process automation to keep the balance amounts up to date. You can find the background process automation named **General ledger balances process** that will run every 5 minutes by default. 
 
 ## View balance status
 
-Use the **Balance status** button to view the current calculation state of the financial dimension set. The page that appears shows the status of the dimension set balance for each legal entity. It also shows the date and time when the dimension set was last updated by the automatic background process.
+Use the **Balance status** button to view the current calculation state of the financial dimension set. The page that appears shows the status of the dimension set balance for each legal entity. It also shows the date and time when the dimension set was last updated by the automatic background process. 
 
 ## Enable balances
 
@@ -43,6 +43,9 @@ Use the **Rebuild balances** button on the balance status page to re-create bala
 ## Delete a dimension set
 
 If you no longer require a dimension set, you can use the **Delete** button to remove it. Don't delete and re-create dimension sets as a workaround for potential issues with the balance data for a specific dimension set. Re-creation of a dimension set is costly. For help with issues, contact support.
+
+## Trial balance and reporting
+Once the feature is on you will notice small changes to the trial balance page and reports such as the Dimension statement report that utilize dimension sets to display ledger balance data. Each of these will notify the user how current the balance data is.  By default this will be a number between 0 and 5 minutes since background process has run. 
 
 ## Techincal information 
 The below table describes the old data model and the new data model used for this feature. The outcome is less data to store resulting in faster performance for some queries such as ones used for the trial balance inquiry page. 
