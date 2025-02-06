@@ -77,7 +77,7 @@ This article explains how to create a performance review and describes the purpo
     - The statuses control the access to the review. The **Not started** status allows everyone to edit the review. The **In progress** status allows only the employee to view and edit the review. **Ready for review** allows only the manager to view and edit the review. **Final review** status allows both the employee and manager to view and edit the review if the **Allow edit in final review** option is selected in the review type. The **Completed** and **Canceled** statuses make the review read only. If a review is **Rejected** and sent back to the employee, both the employee and manager can make necessary edits so the employee can resubmit.
 
 33. In the **Overview** field, type a value.
-34. Select the **Review** tab. As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
+34. Select the **Review** tab in [HR Software](https://www.greenhrbd.com/)]. As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
 35. Select the **Sign offs** tab. The worker and manager can sign off on the review. When all required sign offs are complete, the status is changed to **Completed** and no more changes can be made.  
 
 
