@@ -67,7 +67,7 @@ Regardless of where you are when you create your new CAPA case, the **New CAPA c
 - **Priority** – Select the CAPA case priority.
 - **CAPA process** – Select the CAPA process that should be followed to resolve this case. The CAPA process defines a series of stages, which must be completed in order, and activities, which should be completed within each stage before continuing to the next one. The process is used to guide the workers who are assigned to the case through the steps needed to resolve it.
 
-If you'd like to add a log entry to the case, open the **Case log** tab and enter the details of the log entry. 
+If you'd like to add a log entry to the case, open the **Case log** tab and enter the details of the log entry. You can view and add log entries from the details page for a CAPA case.
 
 When you're done, select **OK** to create the case and open its details.
 
