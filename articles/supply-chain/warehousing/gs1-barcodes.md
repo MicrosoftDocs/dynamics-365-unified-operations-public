@@ -263,6 +263,11 @@ To set up and customize your bar code data policies, follow these steps.
 > [!NOTE]
 > For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
 
+> [!IMPORTANT]
+> When the **Auto Submit** option is enabled, the scanned information is immediately sent to the system. Once the information is successfully transmitted, the mobile device will display a new screen, ready for the next input. This feature allows for a quick and efficient scanning process. The device will only display data after scanning if user interaction is required.
+>
+> Enable the **Allow overwriting** option when the scanned information needs to replace the default data in the system. For example, if there is a purchase order for 10 pieces, but you only need to scan 5 pieces, this option will allow the scanned data to override the default quantity.
+
 ## Assign bar code data policies to mobile device menu items
 
 By default, all mobile device menu items provide input fields where workers can scan a single value, according to the generic bar code data setup. If you want workers to be able to scan more than one field value in a single scan for any mobile device menu item, you must assign a bar code data policy by following these steps.
