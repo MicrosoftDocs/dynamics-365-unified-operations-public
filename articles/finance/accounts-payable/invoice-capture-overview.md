@@ -60,4 +60,9 @@ How are the number of invoices calculated for the monthly quota? Are received fi
  - No, only the captured invoices are going to be considered as valid transactions. In case the file has been filtered by the file filter setting it won't be counted. 
 
 Is there a supported list of environment types for invoice capture? 
- - Invoice capture is supported when the integrated Dataverse environment exists. This should include Partner Tier 2 environments. Learn more in [Enable power platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
+ - Invoice capture is supported when the integrated Dataverse environment exists. This should include Partner Tier 2 environments. Learn more in [Enable power platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+
+If a role doesn't have the invoice capture license, are they able to view or logging to invoice capture?  
+ - The **Invoice capture operator** role is only applied in Dynamics 365 Finance. It doesn't block users to login to Invoice capture. However, the corresponding access to the virtual entities is missed and the user receives an error. 
+
+ 
