@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1575bf87-8fce-4678-8163-076e11e2124e)---
+---
 title: Peripherals
 description: This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. 
 author: anush6121
@@ -659,11 +659,11 @@ Only trusted certificate authorities should be used to obtain certificates that 
 ## Peripheral simulator
 For information, see [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md).
 
-## Considerations for Choosing Peripheral Device OEMs and Models
+## Considerations for choosing peripheral device OEMs and models
 
 The Store Commerce app is hardware agnostic. The peripheral device manufacturers or models listed below are known to work with Store commerce app. However, products from other manufacturers may work as well.
 
-Most point of sale peripherals whose manufacturer provides OPOS drivers will work seamlessly with Store Commerce app for Windows. OPOS peripherals can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
+Most point of sale peripherals whose manufacturers provide OPOS drivers will work seamlessly with Store Commerce app for Windows. OPOS peripherals can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
 > [!NOTE]
 > Shared IIS hardware station only supports printers, payment terminals, and cash drawers.
 
@@ -674,7 +674,7 @@ Please consider the manufacturers or models in this list as suggestions rather t
 ### Printers and Cash drawers
 Epson and Star OEMs are recommended for printers and cash drawers. Verify specific model details against the latest offerings from the manufacturers. Most cash drawers from other OEMs that can connect to a printer's d/k port will work with Store Commerce.
 
-While other OEMs may work with Store Commerce make sure to extensively test to ensure all scenarios work as expected. [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md) can be a resource used for initial basic testing.
+While printers and cash drawers from other OEMs may work with Store Commerce make sure to extensively test to ensure all scenarios work as expected. [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md) can be a resource used for initial basic testing.
 
 ### Network peripherals
 Network-addressable Epson and Star Micronics receipt printers and cash drawers are supported and can be used over a network either directly through the Interprocess Communications (IPC) hardware station that is built into the Store Commerce for Windows application or through the shared IIS hardware station for Store Commerce for android and iOS applications.
