@@ -24,7 +24,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-## Features removed or deprecated in the Supply Chain Management 10.0.44 release
+## Features removed or deprecated in the Supply Chain Management 10.0.43 release
 
 ### The "Work creation number" number sequence has been removed
 
@@ -34,9 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?** | Yes, the *Work creation number* number sequence and been replaced by the *Work creation ID* number sequence. The *Work creation ID* number sequence is designed to avoid conflicts with other number sequences. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | The newer *Work creation ID* number sequence has been available as a replacement for *Work creation number* for some time. For all currently available versions of Supply Chain Management (not just version 10.0.44 and later), you should always use the *Work creation ID* number sequence to generate work creation identification numbers. Although the *Work creation number* sequence is still present in the demo data, it's no longer used by the system and production data doesn't include the *Work creation number* number sequence. You can set up the *Work creation ID* number sequence on the **Warehouse management parameters** page. |
-
-## Features removed or deprecated in the Supply Chain Management 10.0.43 release
+| **Status** | The newer *Work creation ID* number sequence has been available as a replacement for *Work creation number* for some time. For all currently available versions of Supply Chain Management (not just version 10.0.43 and later), you should always use the *Work creation ID* number sequence to generate work creation identification numbers. Although the *Work creation number* sequence is still present in the demo data, it's no longer used by the system and production data doesn't include the *Work creation number* number sequence. You can set up the *Work creation ID* number sequence on the **Warehouse management parameters** page. |
 
 ### "Adjustment out" mobile device menu items must now use process guide
 
