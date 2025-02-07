@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Work split functionality lets you split large work IDs (that is, work orders that have several lines) into several smaller work IDs that you can then assign to multiple warehouse workers. In this way, the same work creation number can be picked simultaneously by several warehouse workers.
+Work split functionality lets you split large work IDs (that is, work orders that have several lines) into several smaller work IDs that you can then assign to multiple warehouse workers. In this way, the same work creation ID can be picked simultaneously by several warehouse workers.
 
 > [!IMPORTANT]
 > You can split only work orders that have a status of *Open* or *In-progress*.
@@ -46,9 +46,9 @@ The *Work split* feature adds the following two buttons to the **Work** tab on t
 > - The work is associated with a cluster.
 > - The work order type is something other than one of the following types:
 >
->    - Sales orders
->    - Raw material picking
->    - Transfer issue
+>     - Sales orders
+>     - Raw material picking
+>     - Transfer issue
 >
 > - The work is currently being split by another user. If you try to open the splitting page for work that is already being split by another user, you receive the following error message: "The work with ID \#\#\#\# is currently being split. Retry in a few minutes. If you continue to receive this message, contact a supervisor."
 
@@ -95,7 +95,7 @@ To split work, follow these steps.
         - Work priority
         - Work pool ID
         - Wave ID
-        - Work creation number
+        - Work creation ID
 
     - The following fields aren't copied to the new work ID:
 
@@ -137,6 +137,5 @@ If you try to use the Warehouse Management mobile app to run picking work agains
 ## Other blocked operations
 
 Any operations that modify work lines, work inventory transactions, or replenishment links that are related to work that is being split will fail, and the following error message will be shown: "The work with ID \#\#\#\# is currently being split."
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
