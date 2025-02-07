@@ -17,9 +17,9 @@ manager:
 
 [Introduction to Advanced Quality Management 5](introduction-to-advanced-quality-management.md)
 
-[Corrective Action and Preventive Action (CAPA) 6](corrective-action-and-preventive-action-capa.md)
+[Corrective and preventive action (CAPA) 6](corrective-action-and-preventive-action-capa.md)
 
-[Corrective action and preventive action (CAPA) overview 6](corrective-action-and-preventive-action-capa.md-overview)
+[Corrective and preventive action (CAPA) overview 6](corrective-action-and-preventive-action-capa.md-overview)
 
 [Electronic signature requirement for CAPA case closure 23](electronic-signature-requirement-for-capa-case-closure.md)
 

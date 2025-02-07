@@ -1647,6 +1647,16 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
+      - name: Corrective and preventive action (CAPA) management
+        items:
+        - name: CAPA management overview
+          href: inventory/capa-overview.md
+        - name: CAPA management administration
+          href: inventory/capa-admin.md
+        - name: Set up CAPA case components
+          href: inventory/capa-set-up-case-components.md
+        - name: Manage CAPA cases
+          href: inventory/capa-manage-cases.md
       - name: Inventory operations
         items:
         - name: Inventory journals

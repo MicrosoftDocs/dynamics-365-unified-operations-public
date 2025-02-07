@@ -1,5 +1,5 @@
 ---
-title: CAPA administration
+title: CAPA management administration
 description:
 author: johanhoffmann
 ms.author: johanho
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# CAPA administration
+# CAPA management administration
 
 [!include [banner](../../includes/banner.md)]
 
@@ -20,8 +20,10 @@ ms.custom:
 To use CAPA management features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: Do we need any of the other new feature? Signatures maybe? -->
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- If you also want to require electronic signature for closing CAPA cases, then feature that is named *(Preview) Electronic signature improvements* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
+<!-- KFM: Do we need any of the other new feature? Signatures maybe? -->
 <!-- KFM: describe here how to set up Outlook integration? If not, then where? -->
 
 ## Set up CAPA parameters
@@ -48,3 +50,37 @@ To get started quickly, you can load a set of standard CAPA processes and worker
     - **Name** – Leave set to *CAPAProcessTemplate* (the template provided by default) unless you have another template available that you want to load. <!-- KFM: Confirm this. There are lots of strange options available here, and *CAPAProcessTemplate* isn't actually one of them if you change it; what's going on?-->
 
 1. Select **OK**.
+
+## Require an electronic signature to close, cancel, or reopen a CAPA case
+
+You can set up the CAPA feature so that it requires an electronic signature from any user that closes, cancels, and/or reopens a CAPA case.
+
+An electronic signature confirms the identity of a person who is about to start or approve a computing process. In some industries, an electronic signature is as legally binding as a handwritten one.
+
+### Set up the electronic signature feature
+
+CAPA cases use the standard electronic signature feature provided for Microsoft finance and operations apps. You must configure the feature and issue certificates to each relevant user before you can use it. To learn more, see [Electronic signatures overview](../../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) and [Set up electronic signatures](../../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md).
+
+### Turn the electronic signature requirement for CAPA cases on or off
+
+To set up the electronic signature requirements for CAPA cases, follow these steps:
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
+1. In the left pane, select the row with **Name** *Close/Cancel CAPA case*.
+1. In the right pane, set **Signature required** to *Yes* to turn on the feature. Set it to *No* to turn off the feature.
+
+### Status changes that require a signature
+
+The following table describes which CAPA case status changes require a signature when you turn on the signature requirement for CAPA cases.
+
+| Initial status | New status | Signature required |
+|----------------|------------|--------------------|
+| Opened         | In Process | NO                 |
+| Opened         | Canceled   | YES                |
+| In Process     | Opened     | NO                 |
+| In Process     | Canceled   | YES                |
+| In Process     | Closed     | YES                |
+| Canceled       | Opened     | YES                |
+| Canceled       | In Process | YES                |
+| Closed         | Opened     | YES                |
+| Closed         | In Process | YES                |

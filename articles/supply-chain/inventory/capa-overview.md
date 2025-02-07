@@ -1,6 +1,6 @@
 ﻿---
-title: Corrective action and preventive action (CAPA) overview
-description: Corrective action and preventive action (CAPA) management lets you create and maintain records of the corrective or preventive actions taken to manage and resolve non-conformities or defects involving products.
+title: Corrective and preventive action (CAPA) management overview
+description: Corrective and preventive action (CAPA) management lets you create and maintain records of the corrective or preventive actions taken to manage and resolve non-conformities or defects involving products.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -11,11 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Corrective action and preventive action (CAPA) overview
+# Corrective and preventive action (CAPA) management overview
 
 [!include [banner](../../includes/banner.md)]
 
-Corrective action and preventive action (CAPA) management lets you create and maintain records of the actions taken to manage and resolve non-conformities or defects. By planning, tracking, and analyzing CAPA cases, you can develop efficient processes that can also help to resolve similar issues. CAPA management provides for a formal and controlled process for managing various types of issues arising from manufacturing, engineering, quality, or data quality sources.
+Corrective and preventive action (CAPA) management lets you create and maintain records of the actions taken to manage and resolve non-conformities or defects. By planning, tracking, and analyzing CAPA cases, you can develop efficient processes that can also help to resolve similar issues. CAPA management provides for a formal and controlled process for managing various types of issues arising from manufacturing, engineering, quality, or data quality sources.
 
 CAPA management:
 
@@ -45,3 +45,5 @@ The following table describes tasks that employees can perform when they work wi
 | **Update the stage of a CAPA case** | Update the stage in the process of working a CAPA case, for example from *Evaluation* to*Investigation*. |
 | **Close a CAPA case** | Change the status of an *Opened* case to *Closed* to indicate that the issue has been resolved. |
 | **Rank a knowledge article** | Rank a knowledge article to indicate if it was successful in helping to close a case. |
+
+<!-- KFM: Not documented for CAPA: Service level agreement, Product change (Check completeness, Approve and activate changes), and Print CAPA case details -->
