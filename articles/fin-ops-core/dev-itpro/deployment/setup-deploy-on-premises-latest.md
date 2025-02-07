@@ -909,7 +909,7 @@ Connect to a server that's hosting your AD&nbsp;FS instance or farm, open Window
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -D365FOVersion <version>
 ```
 
 ![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
@@ -1025,7 +1025,7 @@ Follow the instructions in the error message to enable the **Allow delegation fr
 If AD&nbsp;FS is installed with a non-English version of Windows Server 2016, the **Permit everyone** access control policy is created in the local language. Invoke the cmdlet in the following way to specify the **AccessControlPolicyName** parameter.
 
 ```powershell
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>' -D365FOVersion <version>
 ```
 
 ## Additional resources

@@ -4,7 +4,7 @@ description: Learn about how to update the local agent, including a table that o
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 01/24/2024
+ms.date: 02/04/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -22,10 +22,11 @@ ms.assetid:
 This article explains how to update the local agent. The latest version of the local agent is version 3.3.0, which was released in January 2024.
 
 > [!IMPORTANT]
-> Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
+> Do not update the local agent during a servicing operation, even if the preparation phase has been completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.4.0               | This version upgrades the Microsoft Azure Service Fabric SDK and the Azure Storage libraries. | February 2025 | Not applicable |
 | 3.3.0               | This version adds node tag management capabilities to the local agent. | January 2024 | Not applicable |
 | 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
 | 3.2.2               | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
@@ -36,11 +37,11 @@ This article explains how to update the local agent. The latest version of the l
 | 2.7.2               | This version includes a fix for deploying older application versions. | October 2021 | June 30, 2023 |
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. | October 2021 | June 30, 2023 |
 | 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. | August 2021 | June 30, 2023 |
-| 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. | October 2020 | June 30, 2023 |
+| 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning time-out. | October 2020 | June 30, 2023 |
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. | May 2020 | June 30, 2023 |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. | December 2019 | April 30, 2023 |
 | 2.3.1               | This version fixes orchestration service crashes that may occur during cleanup on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of predeployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). | September 2019 | April 30, 2023 |
-| 2.3.0               | This version adds support for pre and post-deployment scripts. | August 2019 | April 30, 2023 |
+| 2.3.0               | This version adds support for predeployment and post-deployment scripts. | August 2019 | April 30, 2023 |
 | 2.2.0               | This version fixes locked DLLs during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. | July 2019 | January 31, 2023 |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This update fixes an issue where files are fully downloaded, but the logic would still consider them missing a few bytes and therefore fail the download. | July 2019 | January 31, 2023 |
 | 2.1.1               | This version fixes an issue that occurs when the download fails and the Microsoft Dynamics Lifecycle Services **Maintain** button isn't available. Other changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | February 2019 | January 31, 2023 |
@@ -49,6 +50,11 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.4.0
+- This version upgrades the Service Fabric SDK to version 7.0.
+- It upgrades the Azure Storage libraries.
+- It adds better Lifecycle Services error handling in the Bridge service.
 
 ## What's new in local agent 3.3.0
 - This version adds a new feature to manage Service Fabric dynamic node tags. This requires some additional setup that is provided with version 2.20.0 of the infrastructure scripts.
@@ -71,7 +77,7 @@ This article explains how to update the local agent. The latest version of the l
 - This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We'll consider bringing back checkpoints once the Azure Storage libraries support it again.
 - Artifact management logic has been improved, and downloading existing artifacts again should no longer take place.
 - Filehash validation has been added to ensure artifacts in the artifact store match exactly what is in the Lifecycle Services artifact store.
-- The MSAL libraries are now used to authenticate with Microsoft Microsoft Entra ID.
+- The MSAL libraries are now used to authenticate with Microsoft Entra ID.
 - Detection of the local agent being deprecated with clear messaging in Service Fabric Explorer.
 
 > [!IMPORTANT]
@@ -114,8 +120,8 @@ This article explains how to update the local agent. The latest version of the l
 ## What's new in local agent 2.6.0
 
 - Local agent 2.6.0 uptakes a new Service Fabric SDK and runtime.
-- This release fixes a bug where, if refresh state is triggered when the environment is stuck in the Downloading phase, the environment would automatically move to a deployed state without updating the environment. In this situation, the refresh state marks the Downloading phase as failed.
-- The timeout for provisioning an application has been increased.
+- This release fixes a bug where, if refresh state is triggered when the environment is stuck in the Downloading phase, the environment would automatically move to a deployed state without updating the environment. In this situation, the refresh state marks the downloading phase as failed.
+- The time-out for provisioning an application has been increased.
 
 > [!IMPORTANT]
 > This release is only compatible with 7.x Service Fabric clusters.
@@ -128,24 +134,24 @@ This article explains how to update the local agent. The latest version of the l
 ## What's new in local agent 2.4.0
 
 - Local agent 2.4.0 now requires the .NET Framework version 4.7.2 to uptake the newest changes from Lifecycle Services. To meet the newest requirements, be sure to run the latest infrastructure scripts that are available in Lifecycle Services.
-- This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
+- This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded time-out.
 
 ## What's new in local agent 2.3.0
 
 - Local agent 2.3.0 enables the execution of custom [pre- and post- deployment scripts](../../dev-itpro/lifecycle-services/pre-post-scripts.md).
 - It fixes the problem introduced in 2.2.0 with deploying older platform updates.
-- This release removes the monitoring agent and introduces a new service called LBDTelemetry, that is used to install the ETWManifests.
+- This release removes the monitoring agent and introduces a new service called LBDTelemetry, that's used to install the ETWManifests.
 
 > [!IMPORTANT]
-> This release requires that a new local agent configuration file be downloaded from Lifecycle Services. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) article if you encounter problems. 
+> This release requires that a new local agent configuration file be downloaded from Lifecycle Services. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) article if you encounter problems. 
 
 ## What's new in local agent 2.1.0
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.
 
 ## What's new in local agent 2.0.0
 - Local agent 2.0.0 can deploy Platform update 12.
-- It enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) until the first deployment of Platform update 12 succeeds.
-- It disables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) on the first successful deployment of Platform update 12. After deployment succeeds, you can use the regular update experience to update the environment.
+- It enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) until the first deployment of platform update 12 succeeds.
+- It disables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) on the first successful deployment of platform update 12. After deployment succeeds, you can use the regular update experience to update the environment.
 
 > [!NOTE]
 > Local agent 2.0.0 **cannot** deploy Platform update 8 and Platform update 11. You must have version 1.1.0 to deploy those platform updates.
@@ -153,7 +159,7 @@ This article explains how to update the local agent. The latest version of the l
 ## Download the latest local agent and configuration from Lifecycle Services
 
 > [!NOTE]
-> If you require an older version of the local agent for your current deployments, download it from the Asset library in Lifecycle Services. To download Local agent version 1.1.0, go to **Shared Asset Library > Model** and click on Dynamics 365 Finance and Operations (on-premises) - Local agent v1.1.0**.
+> If you require an older version of the local agent for your current deployments, download it from the Asset library in Lifecycle Services. To download Local agent version 1.1.0, go to **Shared Asset Library > Model** and click on Dynamics 365 Finance + Operations (on-premises) - Local agent v1.1.0**.
 >
 > You must have version 2.0.0 or later to deploy Platform update 12 and complete update flows.
 
@@ -171,7 +177,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ### Clean up the existing local agent
 
-1. Fine the folder that you previously installed the local agent from.
+1. Find the folder that you previously installed the local agent from.
 1. In a PowerShell window, navigate to that folder, and run the following command.
 
     ```Console
@@ -200,9 +206,9 @@ This article explains how to update the local agent. The latest version of the l
 
 ## Local agent expiration dates
 
-After the date when a local agent becomes expired, it can no longer communicate with Lifecycle Services. Therefore, you have to update your local agent to a supported version. Going forward, we plan to support only a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point, the oldest version that doesn't have an expiration date will receive an expiration date. The expiration date will be set a few months into the future, so that customers have time to upgrade to a newer version.
+After the date when a local agent becomes expired, it can no longer communicate with Lifecycle Services. Therefore, you have to update your local agent to a supported version. Going forward, we plan to support only a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point, the oldest version that doesn't have an expiration date receives an expiration date. The expiration date is set a few months into the future, so that customers have time to upgrade to a newer version.
 
 > [!NOTE]
-> A released local agent version will be supported for at least six months.
+> A released local agent version is supported for at least six months.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,14 +42,16 @@ additionalContent:
     items:
     - title: Guidance
       links:
-      - url: /dynamics365/guidance/implementation-guide/overview
-        text: Dynamics 365 implementation guidance
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=/dynamics365/context/supply-chain
-        text: Implementation lifecycle management
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=/dynamics365/context/supply-chain
-        text: Implementation FAQ
-      - url: /dynamics365/guidance/implementation-guide/security
-        text: Security strategy
+      - text: Security, compliance, and privacy
+        url: /dynamics365/get-started/security
+      - text: Implementation guide
+        url: /dynamics365/guidance/implementation-guide/overview
+      - text: Implementation tools and samples
+        url: /dynamics365/guidance/resources/
+      - text: Migrate from on-premises to online
+        url: /dynamics365/guidance/migrate/overview
+      - text: End-to-end business processes
+        url: /dynamics365/guidance/business-processes/overview
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=/dynamics365/context/supply-chain
