@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.43 (March 2025)
+          href: get-started/whats-new-scm-10-0-43.md         
         - name: Supply Chain Management 10.0.42 (December 2024)
           href: get-started/whats-new-scm-10-0-42.md
         - name: Supply Chain Management 10.0.41 (September 2024)
           href: get-started/whats-new-scm-10-0-41.md
         - name: Supply Chain Management 10.0.40 (June 2024)
           href: get-started/whats-new-scm-10-0-40.md
-        - name: Supply Chain Management 10.0.39 (April 2024)
-          href: get-started/whats-new-scm-10-0-39.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -368,10 +368,6 @@
           items: 
           - name: Goods in transit from vendor
             href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
-    - name: Distributed hybrid topology
-      items:
-      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
-        href: cloud-edge/cloud-edge-landing-page.md
     - name: Approval management mobile app
       items:
       - name: Approvals Management mobile app overview
@@ -437,7 +433,7 @@
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
           href: asset-management/objects/create-an-object.md
-        - name: Change the asset type of existing assets (preview)
+        - name: Change the asset type of existing assets
           href: asset-management/objects/change-asset-type.md
         - name: Multi-level assets
           href: asset-management/objects/multi-level-objects.md
@@ -615,12 +611,6 @@
           href: asset-management/asset-management-mobile-app/maintenance-requests.md
         - name: Asset Management mobile app FAQs and known issues
           href: asset-management/asset-management-mobile-app/asset-management-app-faq.md
-      - name: Asset management from the now-deprecated mobile app
-        items: 
-        - name: Set up the Asset management mobile workspace
-          href: asset-management/set-up-asset-management-mobile.md
-        - name: Use the Asset management mobile workspace
-          href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
       - name: Target entities
@@ -697,8 +687,6 @@
         href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?context=/dynamics365/context/supply-chain
       - name: Use content pack for Microsoft Power BI reporting
         href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?context=/dynamics365/context/supply-chain
-      - name: Use cost control workspace for finance and operations mobile application
-        href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Global Inventory Accounting
       items:
       - name: Global Inventory Accounting home page
@@ -873,7 +861,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
       - name: Power Automate Process Mining content
         items:
-        - name: Analyze warehouse material movement through process mining (preview)
+        - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
@@ -1711,8 +1699,6 @@
           href: inventory/tasks/correct-inventory-tracking-information.md
         - name: Register serial number in the sales process
           href: sales-marketing/register-serial-numbers-sales-process.md
-        - name: Inventory on-hand mobile workspace
-          href: inventory/inventory-on-hand-mobile-workspace.md
       - name: Outbound process
         items:
         - name: Outbound process overview
@@ -2083,13 +2069,17 @@
         items:
         - name: Work with forecast profiles
           href: demand-planning/forecast-profiles.md
+        - name: Demand forecasting algorithms
+          href: demand-planning/forecast-algorithm-types.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
+        - name: Forecast with signals (preview)
+          href: demand-planning/forecasts-with-signals.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
       - name: Use phase in/out functionality to simulate planned changes
         href: demand-planning/phase-in-out.md
-      - name: Time series and planning data
+      - name: Time series, worksheets, and planning data
         href: demand-planning/time-series.md
       - name: Limit time series edits with time fences
         href: demand-planning/time-fences.md
@@ -2099,42 +2089,6 @@
         href: demand-planning/export-data.md
       - name: Rolling forecasts
         href: demand-planning/rolling-forecasts.md
-    - name: Mobile app (deprecated)
-      items:
-      - name: Mobile app home page
-        href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
-      - name: Mobile workspaces
-        items:
-        - name: Available mobile workspaces
-          href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
-        - name: Asset management
-          href: asset-management/asset-management-mobile-workspace.md
-        - name: Company directory
-          href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Cost controlling
-          href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Expense management
-          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
-        - name: Inventory on-hand
-          href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Invoice approvals
-          href: ../fin-ops-core/fin-ops/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: My team
-          href: ../fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
-        - name: Project time entry
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
-        - name: Project timesheet
-          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
-        - name: Purchase order approval
-          href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Sales orders
-          href: sales-marketing/sales-orders-mobile-workspace.md?context=/dynamics365/context/supply-chain
-        - name: Vendor collaboration
-          href: procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/supply-chain
-      - name: Publish mobile workspaces
-        href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Office integration
       items:
       - name: Office integration overview
@@ -2299,10 +2253,6 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Pricing management (deprecated)
-      items:
-      - name: The Pricing management module is deprecated and no longer available to new customers
-        href: pricing-management/pricing-management-overview.md
     - name: Unified pricing management (preview)
       items:
       - name: Unified pricing management module overview
@@ -2417,8 +2367,6 @@
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
-        - name: Purchase order approval mobile workspace
-          href: procurement/purchase-order-mobile-workspace.md
         - name: Create and invoice an intercompany purchase order for internal use
           href: sales-marketing/intercompany-purchase-order-for-internal-use.md
         - name: Check intercompany order price discrepancies
@@ -2519,8 +2467,6 @@
           href: procurement/purchasing-cxml-enhancements.md
         - name: Use external catalogs for PunchOut e-procurement
           href: procurement/use-external-catalogs-for-punchout.md
-        - name: Vendor collaboration mobile workspace
-          href: procurement/vendor-collaboration-mobile-workspace.md
         - name: Approve vendors for specific procurement categories
           href: procurement/tasks/approve-vendors-specific-procurement-categories.md
         - name: Approve vendors for specific products
@@ -3133,8 +3079,6 @@
           href: sales-marketing/register-serial-numbers-sales-process.md
         - name: Reservation from same batch
           href: sales-marketing/reserve-same-batch-sales-order.md
-        - name: Sales orders mobile workspace
-          href: sales-marketing/sales-orders-mobile-workspace.md
         - name: Ship orders as direct deliveries
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
@@ -3677,7 +3621,7 @@
         href: landed-cost/inbound-tracking.md
       - name: Estimate and manage landed costs
         href: landed-cost/estimate-manage-landed-costs.md
-      - name: In-transit processing
+      - name: Goods-in-transit processing and receiving
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
@@ -4089,6 +4033,8 @@
           href: warehousing/gs1-barcodes.md
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
+        - name: View and manage the work exceptions log
+          href: warehousing/work-exceptions-log.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes
@@ -4097,7 +4043,7 @@
           href: warehousing/warehouse-transactions.md
         - name: Optimize location directive queries
           href: warehousing/location-directives-optimize.md
-        - name: Analyze warehouse material movement through process mining (preview)
+        - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
         - name: Warehousing telemetry
           items:
@@ -4137,6 +4083,52 @@
         href: inventory/extend-on-hand-entities.md
       - name: Create and process message queues and message types
         href: supply-chain-dev/message-processor.md
+    - name: Distributed hybrid topology (deprecated)
+      items:
+      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
+        href: cloud-edge/cloud-edge-landing-page.md
+    - name: Pricing management (deprecated)
+      items:
+      - name: The Pricing management module is deprecated and no longer available to new customers
+        href: pricing-management/pricing-management-overview.md
+    - name: Mobile app (deprecated)
+      items:
+      - name: Mobile app home page
+        href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
+      - name: Mobile workspaces
+        items:
+        - name: Available mobile workspaces
+          href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
+        - name: Set up the Asset management mobile workspace
+          href: asset-management/set-up-asset-management-mobile.md
+        - name: Use the Asset management mobile workspace
+          href: asset-management/asset-management-mobile-workspace.md
+        - name: Company directory
+          href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Cost controlling
+          href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Expense management
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
+        - name: Inventory on-hand
+          href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Invoice approvals
+          href: ../fin-ops-core/fin-ops/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: My team
+          href: ../fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Project mobile applications overview
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
+        - name: Project time entry
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
+        - name: Project timesheet
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
+        - name: Purchase order approval
+          href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Sales orders
+          href: sales-marketing/sales-orders-mobile-workspace.md?context=/dynamics365/context/supply-chain
+        - name: Vendor collaboration
+          href: procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/supply-chain
+      - name: Publish mobile workspaces
+        href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Responsible AI 
       items:
       - name: Overview

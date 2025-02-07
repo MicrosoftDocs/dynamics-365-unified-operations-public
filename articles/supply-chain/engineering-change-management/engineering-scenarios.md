@@ -3,11 +3,12 @@ title: Engineering change management feature walkthrough
 description: Learn about an end-to-end walkthrough that shows how to work with engineering change management with an outline on setting up for the sample scenario.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
-ms.date: 08/05/2022
-ms.custom:
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: EngChgEngineeringOrganization, EcoResProductDimensionGroup, EcoResProductLifecycleState, EngChgProductVersionNumberRule, EngChgProductReleasePolicy, EngChgProductCategoryDetails, EngChgProductParameters, EcoResProductDetailsExtended, SalesTableListPage, SalesTable, EngChgEcmRequestListPage, EngChgEcmRequestDetails, EngChgEcmHeaderDetails
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Engineering change management feature walkthrough
@@ -42,7 +43,7 @@ Work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-s
 
 An engineering organization owns the engineering data, and is responsible for product design and product changes. To set up your engineering organizations, follow these steps.
 
-1. Go to **Engineering change management &gt; Setup &gt; Engineering organizations**.
+1. Go to **Engineering change management** \> **Setup** \> **Engineering organizations**.
 1. Select **New** to add a row to the grid, and set the following values for it:
 
     - **Engineering organization:** *DEMF*
@@ -52,7 +53,7 @@ An engineering organization owns the engineering data, and is responsible for pr
 
 ### Set up the version product dimension group
 
-1. Go to **Product information management &gt; Setup &gt; Dimensions and variant groups &gt; Product dimension groups**.
+1. Go to **Product information management** \> **Setup** \> **Dimensions and variant groups** \> **Product dimension groups**.
 1. Select **New** to create a product dimension group.
 1. Set the **Name** field to *Version*.
 1. Select **Save** to save the new dimension and load values onto the **Product dimensions** FastTab.
@@ -64,7 +65,7 @@ An engineering organization owns the engineering data, and is responsible for pr
 
 As an engineering product goes through its lifecycle, it's important that you be able to control which transactions are allowed for each lifecycle state. To set up the product lifecycle states, follow these steps.
 
-1. Go to **Engineering change management &gt; Setup &gt; Product lifecycle state**.
+1. Go to **Engineering change management** \> **Setup** \> **Product lifecycle state**.
 1. Select **New** to add a lifecycle state, and set the following values for it:
 
     - **State:** *Operational*
@@ -87,7 +88,7 @@ As an engineering product goes through its lifecycle, it's important that you be
 
 ### Set up a version number rule
 
-1. Go to **Engineering change management &gt; Setup &gt; Product version number rule**.
+1. Go to **Engineering change management** \> **Setup** \> **Product version number rule**.
 1. Select **New** to add a rule, and set the following values for it:
 
     - **Name:** *Auto*
@@ -98,7 +99,7 @@ As an engineering product goes through its lifecycle, it's important that you be
 
 ### Set up a product release policy
 
-1. Go to **Engineering change management &gt; Setup &gt; Product release policies**.
+1. Go to **Engineering change management** \> **Setup** \> **Product release policies**.
 1. Select **New** to add a release policy, and set the following values for it:
 
     - **Name:** *Components*
@@ -128,11 +129,11 @@ As an engineering product goes through its lifecycle, it's important that you be
 
     ![Adding a product release policy.](media/product-release-policy.png "Adding a product release policy")
 
-### Set up an engineering product category 
+### Set up an engineering product category
 
 Engineering product categories provide the basis for creating engineering products (that is, products that are versioned and controlled through engineering change management). To set up engineering product categories, follow these steps.
 
-1. Go to **Engineering change management &gt; Engineering product category details**.
+1. Go to **Engineering change management** \> **Engineering product category details**.
 1. Select **New** to create a category.
 1. On the **Details** FastTab, set the following values:
 
@@ -156,7 +157,7 @@ Engineering product categories provide the basis for creating engineering produc
 ### Set up product acceptance conditions
 
 1. Use the company picker on the right side of the navigation bar to switch to the *USMF* legal entity (company).
-1. Go to **Engineering change management &gt; Setup &gt; Engineering change management parameters**.
+1. Go to **Engineering change management** \> **Setup** \> **Engineering change management parameters**.
 1. On the **Release control** tab, in the **Product acceptance** section, set the **Product acceptance** field to *Manual*.
 
     ![Setting up product acceptance conditions.](media/engineering-change-management-parameters.png "Setting up product acceptance conditions")
@@ -168,8 +169,8 @@ An engineering product is a product that is versioned and controlled through eng
 1. Make sure that you're in the legal entity of your engineering organization (*DEMF* for this example). Use the company picker on the right side of the navigation bar as required.
 1. Open the **Released products** page by following one of these steps:
 
-    - Go to **Product information management &gt; Products &gt; Released products**.
-    - Go to **Engineering change management &gt; Common &gt; Released products**.
+    - Go to **Product information management** \> **Products** \> **Released products**.
+    - Go to **Engineering change management** \> **Common** \> **Released products**.
 
 1. On the Action Pane, on the **Product** tab, in the **New** group, select **Engineering product**.
 1. In the **New product** dialog box, set the following values:
@@ -230,7 +231,7 @@ An engineering product is a product that is versioned and controlled through eng
 The product has now been designed by the Engineering department. For this example, the product is a prototype that engineering has designed for a customer. Because the customer is a customer of the *USMF* legal entity, the product must be released to that legal entity.
 
 1. Keep the legal entity set to *DEMF*. (Use the company picker on the right side of the navigation bar as required.)
-1. Go to **Product information management &gt; Products &gt; Released products**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select product *Z0001*.
 1. On the Action Pane, on the **Product** tab, in the **Maintain** group, select **Release product structure** to open the **Release products** wizard.
 1. On the **Select engineering products to release** page, select the **Select** check box for product *Z0001*.
@@ -267,7 +268,7 @@ Because you set the **Product acceptance** field to *Manual* on the **Engineerin
 To review the product and release it in the *USMF* company, follow these steps.
 
 1. Set the legal entity to *USMF*. (Use the company picker on the right side of the navigation bar.)
-1. Go to **Engineering change management &gt; Common &gt; Product releases &gt; Open product releases**.
+1. Go to **Engineering change management** \> **Common** \> **Product releases** \> **Open product releases**.
 
     The **Open product releases** page shows product *Z0001*, which has a status of *Pending acceptance*.
 
@@ -281,14 +282,14 @@ To review the product and release it in the *USMF* company, follow these steps.
 
     ![Product release details.](media/product-release-details-2.png "Product release details")
 
-1. When you've finished reviewing the information, you're ready to accept the product and, in this way, release it in the *USMF* company. On the Action Pane, select **Actions &gt; Accept**.
-1. The product is now released in the *USMF* company. Go to **Product information management &gt;Products &gt; Released products**. You should see item *Z0001*.
+1. When you've finished reviewing the information, you're ready to accept the product and, in this way, release it in the *USMF* company. On the Action Pane, select **Actions** \> **Accept**.
+1. The product is now released in the *USMF* company. Go to **Product information management &gt;Products** \> **Released products**. You should see item *Z0001*.
 
 ## Use the product in transactions in the local company
 
 The master data manager for the *USMF* company wants to make sure that the product is in a *Prototype* state, to ensure that users will be warned if they accidentally add it to processes that they are working on.
 
-1. Go to **Product information management &gt; Products &gt; Released products**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select product *Z0001* to open its details page. (You can use the filter to find the product.)
 1. On the Action Pane, on the **Engineer** tab, in the **Engineering change management** group, select **Engineering versions**.
 1. On the **Engineering versions** page, select version number *V-01* to open its details page.
@@ -301,7 +302,7 @@ The master data manager for the *USMF* company wants to make sure that the produ
 
 The product can now be sold to a customer. To add the product to a sales order, follow these steps.
 
-1. Go to **Sales and marketing &gt; Sales orders &gt; All sales orders**.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. On the Action Pane, select **New**.
 1. In the **Create sales order** dialog box, set the **Customer account** field to *US-0002*, and then select **OK**.
 1. The new sales order is opened. On the **Sales order lines** FastTab, add a row, and set the **Item number** field to *Z000* for it.
@@ -315,9 +316,9 @@ The product can now be sold to a customer. To add the product to a sales order, 
 
 The product was sent to a customer, but the customer wasn't completely satisfied and provides feedback that includes suggestions for improvement. While the customer is speaking with a sales clerk on the phone, the sales clerk can request the changes that the customer is describing.
 
-1. Go to **Sales and marketing &gt; Sales orders &gt; All sales orders**.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Find and open the sales order that you created in the previous exercise.
-1. On the **Sales order lines** FastTab, select **Engineering change management &gt; New engineering change request**.
+1. On the **Sales order lines** FastTab, select **Engineering change management** \> **New engineering change request**.
 
     ![Creating an engineering change request from a sales order.](media/sales-order-eng-change-request.png "Creating an engineering change request from a sales order")
 
@@ -329,7 +330,7 @@ The product was sent to a customer, but the customer wasn't completely satisfied
     - **Category:** set change
     - **Severity:** *Medium*
 
-1. On the **Information** FastTab, select **New &gt; Note** to add a note to the grid.
+1. On the **Information** FastTab, select **New** \> **Note** to add a note to the grid.
 1. In the **Description** field for the new note, indicate that item *D0003* should be deleted from the BOM. If you must add more information for the note, you can enter text in the **Notes** field.
 
     ![Engineering change request.](media/eng-change-request.png "Engineering change request")
@@ -344,10 +345,10 @@ The sales clerk knows that the product is important and was designed especially 
 The engineer now reviews the request from the customer and creates a change order for the product.
 
 1. Because the engineer works in the *DEMF* company, set the legal entity to *DEMF*. (Use the company picker on the right side of the navigation bar.)
-1. Go to **Engineering change management &gt; Common &gt; Engineering change requests**.
+1. Go to **Engineering change management** \> **Common** \> **Engineering change requests**.
 1. Open change request *555*.
 1. Review the information, and then approve the change. On the Action Pane, on the **Change request** tab, in the **Change status** group, select **Approve**.
-1. Go to **Engineering change management &gt; Common &gt; Engineering change orders**.
+1. Go to **Engineering change management** \> **Common** \> **Engineering change orders**.
 1. On the Action Pane, select **New** to create a change order, and set the following values for it:
 
     - **Change order:** *555*
@@ -356,7 +357,7 @@ The engineer now reviews the request from the customer and creates a change orde
     - **Priority:** *Low*
     - **Severity:** *Medium*
 
-1. On the **Impacted products** FastTab, select **New &gt; Add existing product** to add a row to the grid, and set the following values for it:
+1. On the **Impacted products** FastTab, select **New** \> **Add existing product** to add a row to the grid, and set the following values for it:
 
     - **Product:** *Z0001*
     - **Impact:** *New version*

@@ -3,14 +3,15 @@ title: Section Tabbed List subpattern
 description: Learn about the Section Tabbed List subpattern, including overviews on usage, wireframes, pattern changes, models, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Section Tabbed List subpattern
@@ -22,9 +23,6 @@ This article provides information about the Section Tabbed List subpattern. This
 ## Usage
 
 The Section Tabbed List subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
-
-## Wireframe
-[![Section Tabbed List wireframe.](./media/sectiontabbedlistwireframe.png)](./media/sectiontabbedlistwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -55,20 +53,6 @@ The verification checklist shows the steps for manually verifying that the form 
 
 -   At least one list should be present in the tabbed list section.
 -   Each Form Part Control should point to a form that uses one of the [Form Part Section List](section-list-form-pattern.md) patterns.
-
-## Examples
-Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation**) 
-
-[![Tabbed List Section example.](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

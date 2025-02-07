@@ -99,7 +99,7 @@ If you're using VMware, you must implement the fixes that are documented on the 
 The hardware configuration includes the following components:
 
 - A standalone Service Fabric cluster that's based on Windows Server VMs
-- SQL Server (Both Clustered SQL and Always-On are supported.)
+- SQL Server (Both Clustered SQL and Always-On are supported, in an active\passive failover capacity)
 - AD&nbsp;FS for authentication
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server
@@ -198,7 +198,7 @@ Before you start the setup process, the following prerequisites must be in place
 
 - Active Directory Domain Services (AD&nbsp;DS) must be installed and configured in your network.
 - AD&nbsp;FS must be deployed.
-- SQL Server must be installed on the SSRS machines.
+- SQL Server must be installed on the SSRS machines for the reporting services databases.
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD&nbsp;CS is installed and configured in your network.
 
@@ -225,7 +225,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 ### <a name="plancert"></a>Step 2. Plan and acquire your certificates
 
-Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD&nbsp;CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
+Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/what-is-an-ssl-certificate), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD&nbsp;CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
 Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in Lifecycle Services include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you'll be instructed to run the creation scripts during later steps in this article. As has been mentioned, these certificates can be used only for testing purposes.
 

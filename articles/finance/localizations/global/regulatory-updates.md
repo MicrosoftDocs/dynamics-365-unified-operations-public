@@ -33,6 +33,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Poland | November 2024 | 10.0.40HF, 10.0.41HF, 10.0.42HF, 10.0.43 | [SAF Accounting Books Income Tax - JPK_KR_PD](../poland/emea-pol-standard-audit-file-saf-pd.md) |
 | Japan | September 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | Japan consumption Tax return report layout change - 2024 for periods after October 1, 5th year of Reiwa. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
 | Norway | August 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | [Standard Audit File for Tax (SAF-T) for Norway](../norway/emea-nor-satndard-audit-file-for-tax.md) version 1.30 required from January 1, 2025. |
 | France | March 2024 | 10.0.40 | [VAT declaration](../france/emea-fra-VAT-declaration-preview-France.md) - 2024 |
@@ -42,7 +43,7 @@ For the latest regulatory update plans, refer to the following table.
 | Estonia | January 2024 | 10.0.36HF, 10.0.37HF,  10.0.38HF, 10.0.39 | Estonia - VAT return form, structure and specifications change 2024. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Denmark | August 2023 | 10.0.37 | [Accounting basis (Regnskab Basis) electronic report for Denmark](../denmark/emea-dnk-accounting-basis.md) |
 | Switzerland | July 2023 | 10.0.36 | [VAT declaration](../switzerland/emea-che-vat-declaration-switzerland.md) - 2024 |
-| Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](../poland/emea-pol-standard-audit-file-saf.md#jpk-fa) project advance invoice handling |
+| Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](../poland/emea-pol-standard-audit-file-saf-fa.md) project advance invoice handling |
 | Poland | July 2023 | 10.0.36 | [VAT declaration - JPK-V7](../poland/emea-pol-vdek.md) - supplementary package based on ideas |
 | United Arab Emirates | June 2023 | 10.0.36 | [FTA VAT Audit File (AE)](../mea/uae-faf.md) redesign to "SAF-T General model mapping" and [SAF-T feature](../../general-ledger/standard-audit-file.md) |
 | France | June 2023 | 10.0.36 | [VAT declaration](../france/emea-fra-VAT-declaration-preview-France.md) - 2023 |

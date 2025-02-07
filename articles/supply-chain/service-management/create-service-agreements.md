@@ -1,8 +1,8 @@
 ---
 title: Create service agreements
 description: Learn how to use features in the Service management and the Project management and accounting modules to create service agreements.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAAgreementTable
 ms.topic: how-to
@@ -41,10 +41,10 @@ or manually creating the service-agreement lines.
 1. Select **Project management and accounting**.
 1. Select **All projects**.
 1. Select the project from the list.
-1. On the **Action Pane**, select **Manage**. In the **New** Action group, select **Service** and select **Service agreement**.
+1. On the Action Pane, select **Manage**. In the **New** Action group, select **Service** and select **Service agreement**.
 1. Follow the steps in the section titled **Create a service agreement** as described earlier in this article to enter the project reference.
 
-## Related articles
+## Related information
 
 - [Develop and establish service agreements overview](service-agreements.md)
 

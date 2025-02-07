@@ -3,11 +3,12 @@ title: Master plans overview
 description: Learn how to use various master plans to support your company's daily working operations with an outline on strategies and parameters used to set up master plans.
 author: t-benebo
 ms.author: benebotg
-ms.topic: overview
-ms.date: 01/05/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace, ReqParameters, ReqPlanSched
+ms.topic: overview
+ms.date: 12/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Master plans overview

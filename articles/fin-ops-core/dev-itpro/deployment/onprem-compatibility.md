@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 09/10/2024
+ms.date: 01/28/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-06-30
@@ -50,7 +50,6 @@ This section covers the following SQL Server components:
 | Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
 | Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
 | Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
-| Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
@@ -66,6 +65,13 @@ Finance + Operations (on-premises) supports a limited set of collations. The fol
 |-------------------------------------------------|------------------|---------------|
 | Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and later |
 | SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
+
+### High Availability 
+
+You should always utilize SQL Server in either a cluster or mirroring setup for production environments. 
+
+> [!IMPORTANT]
+> Database failover is only supported in an active or passive configuration. Read-only replicas aren't supported. 
 
 ## Active Directory Federation Services (AD FS)
 
@@ -92,8 +98,6 @@ Your Service Fabric cluster should always be on a supported version according to
 | Service Fabric runtime 10.0 | 10.0.41        |
 | Service Fabric runtime 8.2  | 10.0.30        |
 | Service Fabric runtime 8.0  | 10.0.24        |
-| Service Fabric runtime 7.2  | 10.0.17        |
-| Service Fabric runtime 7.1  | 10.0.14        |
 
 ## Minimum Microsoft .NET Framework runtime
 

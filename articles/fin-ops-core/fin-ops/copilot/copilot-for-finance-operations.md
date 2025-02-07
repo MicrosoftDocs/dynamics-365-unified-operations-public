@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 08/02/2024
+ms.date: 01/27/2025
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -26,17 +26,19 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 
 - **Sidecar** – Copilot sits alongside the application as a *sidecar* and provides conversational support to the user. The sidecar is the primary Copilot interface in finance and operations apps. It provides a natural language chat experience that helps users work with application functionality and data. For example, the [generative help and guidance with Copilot](copilot-generative-help.md) feature is provided as a sidecar.
 - **Embedded** – These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
-- **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md).
+- **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md).
 
-## Available Copilot features for finance and operations apps
+## Available Copilot features in finance and operations apps
 
 The following Copilot features are currently available in finance and operations apps:
 
 - For all finance and operations apps:
 
-    - [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md)
     - [Generative help and guidance with Copilot](copilot-generative-help.md)
     - [Workflow history summary](../organization-administration/workflow-history-summary.md)
+    - [Enhanced user feedback for Copilot and related experiences](../../dev-itpro/copilot/enable-copilot-feedback.md)
+    - [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md)
+
 
 - For Dynamics 365 Commerce:
 
@@ -59,14 +61,21 @@ The following Copilot features are currently available in finance and operations
 - For Dynamics 365 Supply Chain Management:
 
     - [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)
-    - [Analyze demand plans with Copilot (preview)](../../../supply-chain/demand-planning/demand-planning-copilot.md)
+    - [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md)
     - [Inquire into inventory with Copilot (preview)](../../../supply-chain/inventory/inventory-visibility-copilot-api.md)
     - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
     - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
 
 ## Responsible AI
 
-Microsoft is committed to applying [responsible AI practices](../../dev-itpro/responsible-ai/responsible-ai-overview.md) with Copilot. We ensure user privacy through stringent data protection measures and oversee content generation to maintain relevance and safety.
+Microsoft is committed to applying [responsible AI practices](../../dev-itpro/responsible-ai/responsible-ai-overview.md) with Copilot. We ensure user privacy through stringent data protection measures and oversee content generation to maintain relevance and safety. To learn more about responsible AI practices in Microsoft finance and operations apps, read the following articles:
+
+- [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview)
+- [Responsible AI FAQs for Dynamics 365 Supply Chain Management](/dynamics365/supply-chain/responsible-ai-overview)
+- [Responsible AI FAQs for Dynamics 365 Finance](/dynamics365/finance/transparency-note)
+- [Responsible AI FAQs for Dynamics 365 Human Resources](/dynamics365/human-resources/transpar-note-hr)
+- [Responsible AI FAQs for Microsoft Dynamics 365 Commerce](/dynamics365/commerce/responsible-ai/responsible-ai-overview)
+- [Responsible AI FAQs for Microsoft Dynamics 365 Project Operations](/dynamics365/project-operations/responsible-ai/responsible-ai-overview)
 
 ## Next steps
 

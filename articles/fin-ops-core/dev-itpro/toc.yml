@@ -15,6 +15,8 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.43 (January 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
         - name: Platform updates for version 10.0.42 (December 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
         - name: Platform updates for version 10.0.41 (September 2024)
@@ -315,6 +317,8 @@ items:
           items:
           - name: Archive Dynamics 365 Finance General ledger
             href: sysadmin/archive-gl.md
+          - name: Archive Dynamics 365 customer invoice data
+            href: sysadmin/archive-custinvoices.md
           - name: Archive Dynamics 365 Finance Tax transactions
             href: sysadmin/archive-taxtrans.md
           - name: Archive Dynamics 365 Supply Chain Sales orders
@@ -1315,9 +1319,9 @@ items:
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md
               - name: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md
-              - name: Enable and configure seamless sync with Dynamics 365 Sales (preview)
+              - name: Enable and configure seamless sync with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md
-              - name: Display seamless sync information on custom forms in Dynamics 365 Sales (preview)
+              - name: Display seamless sync information on custom forms in Dynamics 365 Sales
                 href: data-entities/dual-write/seamless-sync-info-on-custom-forms.md  
               - name: Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/prospects-in-prospect-to-cash-enable.md                
@@ -1813,8 +1817,24 @@ items:
         href: sysadmin/sys-admin-tools-network-printer.md
       - name: Monitoring and telemetry using Application Insights
         items:  
-        - name: Overview
-          href: sysadmin/monitoring-and-telemetry-appinsights.md
+        - name: Monitoring and Telemetry using Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management
+          href: monitoring-telemetry/index.yml
+        - name: Monitoring and telemetry overview
+          href: monitoring-telemetry/monitoring-overview.md
+        - name: Available telemetry
+          href: monitoring-telemetry/monitoring-available-telemetry.md
+        - name: Gather monitoring requirements
+          href: monitoring-telemetry/monitoring-gathering-requirements.md
+        - name: Get started with telemetry for finance and operations apps
+          href: monitoring-telemetry/monitoring-getting-started.md
+        - name: Analyze and monitor telemetry with KQL
+          href: monitoring-telemetry/monitoring-analyze-telemetry-KQL.md
+        - name: Use telemetry-based alerts
+          href: monitoring-telemetry/monitoring-analyze-telemetry-driven-alerts.md
+        - name: Add custom telemetry signals
+          href: monitoring-telemetry/monitoring-developer-add-custom-signals.md
+        - name: Understand and control costs
+          href: monitoring-telemetry/monitoring-understanding-and-controlling-cost.md
       - name: Security
         items:
         - name: Role-based security
@@ -1843,7 +1863,29 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
-        - name: Active Directory security groups
+        - name: Security governance (preview)
+          items:
+            - name: Set up security categories
+              href: ../fin-ops/sysadmin/security-category.md
+            - name: Set up security governance parameters
+              href: ../fin-ops/sysadmin/setup-security-gov-para.md 
+            - name: Set up a process hierarchy, roles, and privileges
+              href: ../fin-ops/sysadmin/setup-process-role-hierarchy.md        
+            - name: Security tasks under process hierarchy
+              href: ../fin-ops/sysadmin/usg-security-tasks-detailed.md          
+            - name: Security entry points under process hierarchy
+              href: ../fin-ops/sysadmin/entry-point-detailed.md
+            - name: Roles violating segregation of duties
+              href: ../fin-ops/sysadmin/roles-violating-sod.md
+            - name: Manage temporary roles 
+              href: ../fin-ops/sysadmin/temp-role-mgmt.md
+            - name: Security version management
+              href: ../fin-ops/sysadmin/security-version.md
+            - name: Privileged user management
+              href: ../fin-ops/sysadmin/priv-user-mgmt.md            
+            - name: Available reports for security
+              href: ../fin-ops/sysadmin/security-reports.md            
+        - name: Entra ID security groups
           href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management
           href: sysadmin/import-export-customized-security.md
@@ -1909,6 +1951,8 @@ items:
         href: sysadmin/configure-manage-database-log.md
       - name: Build OData metadata cache when the AOS starts
         href: sysadmin/odata-warmup.md
+      - name: Understand Interactive Application Object Server (AOS) restarts
+        href: sysadmin/interactive-aos-restart.md
       - name: Setting Up Azure Key Vault client
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
@@ -2275,8 +2319,8 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Chat with finance and operations data on Microsoft 365 Copilot
-        href: m365-copilot/chat-with-fno-data-on-m365copilot.md
+      - name: Chat with finance and operations data
+        href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
         items:
         - name: Enable Copilot capabilities in finance and operations apps
@@ -2287,6 +2331,8 @@ items:
           href: copilot/enable-copilot-generative-help.md
         - name: Add knowledge to generative help and guidance with Copilot
           href: copilot/extend-copilot-generative-help.md
+        - name: Enable enhanced user feedback for Copilot and related experiences (preview)
+          href: copilot/enable-copilot-feedback.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview
@@ -2311,8 +2357,6 @@ items:
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
-      - name: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
-        href: ../fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
       - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)

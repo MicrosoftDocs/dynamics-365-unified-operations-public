@@ -1,8 +1,8 @@
 ---
 title: Service level agreements overview
 description: In a service level agreement, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAServicelevelagreement
 ms.topic: how-to
@@ -39,7 +39,7 @@ Service orders that you create automatically aren't attached to an SLA.
 ## Apply the service level agreement to the service agreement
 
 1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
-1. Select the service agreement that you want to apply the SLA to, and then select **Edit** on the **Action Pane**.
+1. Select the service agreement that you want to apply the SLA to, and then select **Edit** on the Action Pane.
 1. In the **Service level agreement** field, select the SLA that you want to assign.
 
 ## Apply the service level agreement to the service agreement group

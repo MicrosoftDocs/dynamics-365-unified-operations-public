@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 11/01/2024
+ms.date: 1/02/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -29,6 +29,10 @@ There might be customer or vendor payments on bank statements in the app. This f
 - Import a bank statement.
 - As of version 10.0.42, if the **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** feature is enabled, a prepayment option and a posting profile option are available when users generate a customer payment journal and a vendor payment journal from the bank reconciliation worksheet. Users can also configure those two options in the setup of reconciliation matching rules.
 - As of version 10.0.42, if the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
+
+> [!NOTE]
+> When applying cash in advanced bank reconciliation, only journal names without approval workflow enabled are supported.
+
 
 ## Complete cash application on the reconciliation worksheet
 
@@ -143,4 +147,4 @@ To enter default descriptions for bank reconciliation postings, follow these ste
 2. There is a description type **Bank - reconciliation worksheet** in the list.
 3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 
-![image](https://github.com/user-attachments/assets/a703067e-8ce5-4fba-a032-336cce84c496)
+![Default descriptions](./media/defaultdescriptions.PNG)

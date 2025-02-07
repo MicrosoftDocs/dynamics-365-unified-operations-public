@@ -4,11 +4,10 @@ description: Learn about how you can stay compliant with the user licensing requ
 author: VolkerDeuss
 ms.author: gned
 ms.topic: how-to
-ms.date: 04/02/2024
+ms.date: 12/26/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
@@ -37,7 +36,7 @@ The rest of this article describes the different tools that you can use to ensur
 
 ## License requirement per role
 
-The **Assign roles to user** dialog box that's opened from the **Users** page can help you understand the impact on user licensing when roles are assigned. You can also use it to get an overview of the licensing requirements for each role. You can use the dialog box itself or export data to Excel for further analysis. Custom roles can require licenses for more than one application.
+The **Assign roles to user** dialog box that's opened from the **System Administration** \> **Security** \> **Users** page can help you understand the impact on user licensing when roles are assigned. You can also use it to get an overview of the licensing requirements for each role. You can use the dialog box itself or export data to Excel for further analysis. Custom roles can require licenses for more than one application.
 
 If a role has unexpected licensing requirements, you can use the **View permissions** page to understand what security resources and grants are driving the requirements.
 

@@ -4,7 +4,7 @@ description: Learn about how to set up customer-managed keys for finance and ope
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 07/19/2023
+ms.date: 12/06/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:

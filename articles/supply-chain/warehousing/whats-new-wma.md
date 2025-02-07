@@ -18,6 +18,18 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 3.0.6.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Fixed an issue that affected the connection on Android devices.
+
+## Version 3.0.5.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Fixed an issue that affected the wireless network connection monitor.
+
 ## Version 3.0.4.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:

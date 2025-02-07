@@ -34,7 +34,7 @@ This procedure shows you how to set up and enable sales commission calculation a
 13. Go to **Sales and marketing > Commissions > Sales groups**.
     - A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.  
     - In the USMF demo data company, there's a sales group called *Sales reps US*.  
-14. On the **Action Pane**, select **General**.
+14. On the Action Pane, select **General**.
 15. Select **Sales rep.**. The Sales rep. page displays a list of the company's sales people who are associated with a specific commission group. You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value. The total commission share across all employees must not exceed 100.
 16. In the list, mark the selected row.
 17. Select **Edit**.

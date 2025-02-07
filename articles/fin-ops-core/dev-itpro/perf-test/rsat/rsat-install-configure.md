@@ -4,7 +4,7 @@ description: Learn about how to install and configure the Regression suite autom
 author: FrankDahl
 ms.author: fdahl
 ms.topic: article
-ms.date: 11/27/2023
+ms.date: 11/25/2024
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -20,10 +20,6 @@ This article contains information about how to install and configure the Regress
 
 ## Prerequisites
 
-### Test environment (Prerequisite)
-
-Your test environment must be running Platform update 15 or newer. The Regression suite automation tool must have access to your test environment via a web browser.
-
 ### Excel
 
 You need Microsoft Excel installed to edit test parameters.
@@ -36,7 +32,8 @@ You must have an Azure DevOps project to store and manage your test cases, test 
 
 RSAT is designed to be installed on any Windows 10 or later computer and connect remotely via a web browser to an environment.
 
-![Client computer and environment.](media/client-environment.png)
+> [!NOTE]
+> If you are using RSAT on a Cloud Hosted Environment (CHE) or VHD Development image, the tool runs on Windows Server 2019 or later.
 
 To enable secure authentication, RSAT must authenticate access with the Dynamics 365 finance and operations apps environment that's being tested. There are two options for authenticating access: certificate-based authentication and user-based authentication.
 
@@ -50,9 +47,6 @@ User-based authentication requires some setup steps. For more information, see [
 
 Download the .msi file from the [Regression Suite Automation Tool Download](https://www.microsoft.com/download/details.aspx?id=57357) to your machine and double-click it to run the installer.
 
-> [!NOTE]
-> If you're using Azure DevOps Server, download and install version 1.210.48249.4 or later.
-
 ### Selenium and Browser Drivers
 
 RSAT requires Selenium and web browser driver libraries. RSAT prompts you if needed libraries are missing and automatically installs them for you. Select Yes when you see the following (or similar) messages.
@@ -65,10 +59,7 @@ RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13
 
 ## Configuration
 
-1. Open RSAT from your desktop.
-
-    ![RSAT desktop icon.](media/desktop-icon.png)
-
+1. Open the **Regression Suite Automation Tool** application from your desktop icon.
 2. Select the **Settings** tab on the upper left to configure RSAT.
 
     ![RSAT settings.](media/rsat-settings.png)
@@ -100,7 +91,6 @@ Configure your connection to the test environment.
 + **SOAP Hostname** – The SOAP hostname of the test environment.
 
     + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
-    + For demo and development environments (also known as one-box environments), add a **soap** suffix to the hostname. For example, if your hostname is `myhost.cloudax.dynamics.com`, use `myhost.soap.cloudax.dynamics.com` as the SOAP hostname.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
 
 + **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
@@ -167,10 +157,11 @@ After creating the certificate, configure AOS to trust the test automation conne
 
     ![Open wif.config.](media/open-wif-config.png)
 
-5. Update the **wif.config** file by adding a new authority entry, as shown in the following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
+5. Update the **wif.config** file by adding a new authority entry. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
+
+   Paste the following section after this line in the **wif.config**: `<issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">`
 
     ```xml
-    <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">
         <authority name="CN=127.0.0.1">
             <keys>
                 <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
@@ -222,34 +213,6 @@ If you aren't familiar with this process, get help from your system administrato
 + Windows SDK Signing Tools for Desktop Apps
 + Windows SDK for UWP-Managed Apps. -->
 
-### Generate the certificate
-
-You must generate the certificate file on the RSAT client computer. **The certificate must be generated on the same computer that the test tool is running on.** To generate the certificate file, follow these steps:
-
-1. Create the **C:\Temp** folder if it does not already exist on your computer.
-2. Open a command-line window as Administrator.
-3. Go to the folder where you installed the Windows SDK. Your exact folder may be different, depending on where you installed the windows SDK. You can also use Windows Kits 8.1.
-
-    ```Console
-    cd c:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64
-    ```
-
-4. Run the following command. When you're prompted to enter a private key password, enter **None**.
-
-    ```Console
-    makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
-    ````
-
-### Install the certificate to the Trusted Root
-
-To install the certificate, follow these steps:
-
-1. Double-click **authCert.cer** to install the certificate.
-2. Select **Install Certificate**.
-3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities** and select **Next** through each screen.
-4. Leave the **Password** field blank.
-5. In the **Certificate** dialog box, browse to **Details** and look for **Thumbprint**.
-6. Copy and save the thumbprint. You need it to configure the AOS as described earlier in this article.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

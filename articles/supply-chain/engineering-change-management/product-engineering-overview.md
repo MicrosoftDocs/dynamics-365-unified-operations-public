@@ -3,10 +3,12 @@ title: Engineering change management overview
 description: Access an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: overview
-ms.date: 08/09/2022
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
+ms.topic: overview
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Engineering change management overview
@@ -19,7 +21,7 @@ Today's manufacturers require strong product data management, version control, a
 
 Engineering change management brings structure and discipline to the product data management process, and enables products to be defined, released, and revised in a controlled manner that is supported by workflows. Through product versions and engineering change management, you can document, assess the impact of, and apply engineering changes throughout the whole lifecycle of a product.
 
-Engineering change management helps you plan and manage product versioning, and manage product lifecycles and engineering changes. Here is a list of its main features:
+Engineering change management helps you plan and manage product versioning, and manage product lifecycles and engineering changes. Here's a list of its main features:
 
 - Product versioning
 - Enhanced product release functionality that lets you maintain product master data in one legal entity (the engineering company) and publish the fully configured released product to other legal entities
@@ -28,17 +30,17 @@ Engineering change management helps you plan and manage product versioning, and 
 - Engineering change requests that are supported by workflows
 - Engineering change orders that are supported by workflows
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5580ff02-3710-47ca-a022-7f9a8ea9c3c3]
 
 The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Number sequence requirements
 
-To use engineering change management, both the BOM number sequence and the formula number sequence (if you are using formulas) must be set to *Automatic* on the **Number sequences** page.
+To use engineering change management, both the BOM number sequence and the formula number sequence (if you're using formulas) must be set to *Automatic* on the **Number sequences** page.
 
 ## Turn on the engineering change management features for your system
 
-Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration keys. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension* feature and its configuration key. After those prerequisites are set up as required, you will be able to turn on additional optional features for engineering change management.
+Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration keys. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension* feature and its configuration key. After those prerequisites are set up as required, you'll be able to turn on additional optional features for engineering change management.
 
 As of Supply Chain Management version 10.0.36, both the *Engineering Change Management* and *Product dimension version* features are mandatory and can't be turned off. The engineering change management license keys are also turned on by default in version 10.0.36 and later, but you can turn them off if you don't use the feature. The product version dimension key is turned on by default for new systems, but it remains turned off by default for systems that have been upgraded from versions earlier than 10.0.36.
 
@@ -70,7 +72,7 @@ Next, turn on the configuration keys by following these steps. As of Supply Chai
     > When you turn on the **Product dimension - Version** key for an existing system, some functionality could become broken or stop working as expected if you've installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you might have to update those solutions so that they include the version dimension in their references to the inventory dimensions. See [The version product dimension](../pim/product-dimensions.md#version-dim) for details.
 
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. The database must be synchronized to ensure that the configuration keys are properly updated to reflect your changes. If you changed any of the key settings, do one of the following steps, depending on which type of environment you are working on:
+1. The database must be synchronized to ensure that the configuration keys are properly updated to reflect your changes. If you changed any of the key settings, do one of the following steps, depending on which type of environment you're working on:
     - **For Tier 1 (development) environments**: Open your project in Microsoft Visual Studio and then select **Dynamics 365 \> Synchronize database \> Synchronize**.
     - **For Tier 2 (and higher) environments**: The database syncs automatically after you put the environment in and out of maintenance mode, so you can skip this step.
 
@@ -88,4 +90,3 @@ After you turn on the basic engineering change management features and enable th
 | Variant generation for engineering products | <p>This feature lets you generate variants for engineering products, based on available dimension values.</p><p>Learn more in [Generate variants for engineering products](engineering-variants.md).</p> |  On by default as of version 10.0.25.<br><br>Mandatory as of version 10.0.32. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -4,7 +4,7 @@ description: This article describes how to complete the prerequisites for Busine
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 05/20/2024
+ms.date: 02/03/2025
 
 ms.custom:
 ms.reviewer: twheeloc 
@@ -15,9 +15,7 @@ audience: Application User
 
 ## Before you install
 
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in these regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
-
-Support for the following regions will be added by January 2025: India, Brazil, East Asia, UAE, Norway, South Africa, and Switzerland.
+Business performance analytics is generally available in public cloud the following countries and regions: APAC, Australia, Canada, EMEA, India, Japan, North America, Norway, South Africa, South America, Switzerland, United Arab Emirates, and United Kingdom.
 
 ### System requirements
 
@@ -127,8 +125,6 @@ Before you install Business performance analytics, the following setup is requir
 1. Go to <https://admin.powerplatform.microsoft.com/>.
 2. Select **Environments**.
 3. Select the environment where business performance analytics is installed.
-4. Select **Settings** > **Product** > **Features**.
-5. Enable **Enable Finance and Operations User Impersonation in Dataverse**.
-6. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**.
-7. Find **Finance and Operations Virtual Entity** and check if any updates are available.
-8. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).
+4. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**.
+5. Find **Finance and Operations Virtual Entity** and check if any updates are available.
+6. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).

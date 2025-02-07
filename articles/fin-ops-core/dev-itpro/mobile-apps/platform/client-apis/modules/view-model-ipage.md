@@ -3,11 +3,12 @@ title: Page module
 description: Learn about the Page module, an interface that encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Page module

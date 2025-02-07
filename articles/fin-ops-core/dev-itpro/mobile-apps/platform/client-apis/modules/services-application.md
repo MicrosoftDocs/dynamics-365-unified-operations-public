@@ -3,11 +3,12 @@ title: Application module
 description: Learn about the application module, a unit of runtime execution with sandboxing around concepts and data used inside of it.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Application module

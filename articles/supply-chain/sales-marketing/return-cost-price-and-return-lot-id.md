@@ -27,7 +27,7 @@ By default, when you add items to a return order, the items are returned to inve
 
 1. Go to **Sales and marketing** \> **Sales returns** \> **All return orders**.
 
-1. On the **Action Pane**, in the **New** group, select **Return order**.
+1. On the Action Pane, in the **New** group, select **Return order**.
 
 1. In the **Create return order** form, select a customer account, and then select **OK**.
 
@@ -43,11 +43,11 @@ This is the preferred method to use to create return lines. To use the cost of t
 
 1. Go to **Sales and marketing** \> **Sales returns** \> **All return orders**.
 
-1. On the **Action Pane**, in the **New** group, select **Return order**.
+1. On the Action Pane, in the **New** group, select **Return order**.
 
 1. In the **Create return order** form, select a customer account, and then select **OK**.
 
-1. In the **Return order - RMA number: %1, %2** form, on the **Action Pane**, select **Find sales order**.
+1. In the **Return order - RMA number: %1, %2** form, on the Action Pane, select **Find sales order**.
 
 1. In the **Find sales order** form, select the invoice line to return, and then select **OK**.
 
@@ -65,7 +65,7 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
     1. On the **Purchase** FastTab, in the **Price** field, type 10.00 as the cost price of the item.
 
-    1. On the **Action Pane**, select **Dimension groups**. In the **Storage dimension group** field, select **Site and Warehouse only**. In the **Tracking dimension group** field, select **No active tracking dimensions**.
+    1. On the Action Pane, select **Dimension groups**. In the **Storage dimension group** field, select **Site and Warehouse only**. In the **Tracking dimension group** field, select **No active tracking dimensions**.
 
 1. Create a purchase order for 10 pieces of the Test item at 6.00 per piece, and then post an invoice for the purchase order.
 

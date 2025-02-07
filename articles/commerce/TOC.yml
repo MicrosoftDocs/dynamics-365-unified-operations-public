@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.43 (January 2025)
+          href: get-started/whats-new-commerce-10-0-43.md
         - name: Commerce 10.0.42 (December 2024)
           href: get-started/whats-new-commerce-10-0-42.md
         - name: Commerce 10.0.41 (September 2024)
@@ -486,6 +488,8 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
+            - name: Offline reliability toast notifications in Store Commerce
+              href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
             - name: Dynamics 365 Commerce authentication flows
@@ -608,6 +612,8 @@
               href: dev-itpro/google-pay-adyen.md
             - name: Set up Apple Pay with Adyen
               href: dev-itpro/apple-pay-adyen.md
+            - name: Enable Tap to Pay on iPhone
+              href: dev-itpro/tap-to-pay-iphone.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -914,6 +920,8 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
+        - name: Purge Commerce transactions
+          href: purge-transactions.md
       - name: Sales orders
         items:
         - name: Create call center orders

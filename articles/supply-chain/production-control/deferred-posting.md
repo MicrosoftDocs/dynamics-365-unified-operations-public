@@ -19,13 +19,6 @@ The following illustration shows how processes for posting journals are invoked 
 
 ![The report-as-finished process with and without deferred journal posting.](media/deferred-posting-flowchart.png "The report-as-finished process with and without deferred journal posting")
 
-## Turn on deferred journal posting for your system
-
-Before you can use deferred journal posting, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Production control*
-- **Feature name:** *Make finished goods physically available before posting to journals*
-
 ## Set up journal posting options for reporting as finished
 
 Workers can report items as finished by using any of the following clients:

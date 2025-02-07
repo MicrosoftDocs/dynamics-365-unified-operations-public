@@ -3,11 +3,12 @@ title: List module
 description: Learn about the list module, a list is a control that contains any numbers of rows, including the List, ListDesign, ListMetadata, and Row types.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # List module

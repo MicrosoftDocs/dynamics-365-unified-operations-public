@@ -3,9 +3,12 @@ title: Differences between Planning Optimization and the deprecated master plann
 description: Learn about features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
-ms.date: 01/09/2023
 ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 12/06/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Differences between Planning Optimization and the deprecated master planning engine
@@ -17,7 +20,6 @@ Planning Optimization results (including planned orders, quantities, and dates) 
 | Feature | How Planning Optimization differs from deprecated master planning |
 |---|---|
 | Forecasts for today's date | Planning Optimization doesn't consider forecasts for today's date, though they were considered by the deprecated master planning engine. |
-| Catch weight products | Catch-weight products are considered usual products. Planned orders don't include a value for the catch-weight requirement quantity.|
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
 | Forecast planning | Forecast planning isn't supported. We recommend that you use master planning where a forecast model is assigned to the master plan. |
 | Number sequences for planned orders | Number sequences for planned orders aren't supported. Planned order numbers are generated on the service side. The planned order number is normally shown with 10 digits, but the sequence is actually built on 20 characters, with 10 digits allocated for the planning run count and the other 10 digits for the planned orders count. |
@@ -37,11 +39,12 @@ Planning Optimization results (including planned orders, quantities, and dates) 
 | Copy static to dynamic plan | Planning Optimization doesn't copy static plans to dynamic plans, regardless of the setting on the **Master planning parameters** page. In general, this operation is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. |
 | Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days, see [Delay tolerance (negative days)](delay-tolerance.md) |
 | Planned orders in the past | Planning Optimization never plans orders in the past, regardless of the **Requested date** setting. If you do set a **Requested date** that's in the past, the system will keep your setting, but will set the **Required date** to *Today*. |
-| Dimension-based configuration | Planning Optimization doesn't support dimension-based configured products. Planning Optimization won't explode bills of material for these products. |
 | Definition/meaning of safety stock | <p>In Planning Optimization, [safety stock](../safety-stock-replenishment.md) isn't actual demand. For each coverage group, you can specify how strictly the system should peg safety stock as demand against the planned order that's created for it. (Learn more in [Safety stock pegging options](../safety-stock-pegging.md).) Coverage groups that use strict safety stock pegging work just like all groups in the deprecated engine where the **Fulfill minimum** field is set to *Today's date + procurement time*.</p><p>In the deprecated master planning engine, safety stock is demand, the same as other demand types. You can specify when safety stock will be fulfilled.</p> |
 | When safety stock is fulfilled | <p>In Planning Optimization, safety stock is always fulfilled on *today's date* + *procurement time*, regardless of the item coverage setting.</p><p>In the deprecated master planning engine, item coverage settings include a **Fulfill minimum** field that defines when the safety stock must be fulfilled. (Learn more in [Safety stock fulfillment with the deprecated master planning engine](../safety-stock-replenishment-in-deprecated-engine.md).) |
 | Forecast plan time fence | When deciding which demand and supply forecast entries to take into consideration, Planning Optimization always takes the lower of the following two values: *coverage time fence* or *forecast plan time fence*.  The deprecated planning engine always uses the *forecast plan time fence*. Planning Optimization therefore guarantees that all demand forecast entries that are included in a plan will be covered with the supply. |
 | Issue margin | When the issue margin can be met, Planning Optimization applies its value to the *receipt requirement date*, not the *issue requirement date*; if the margin can't be met, Planning Optimization pushes the issue requirement date forward. The deprecated planning engine always adjusts the *issue requirement date* by the value of the issue margin. Planning Optimization therefore treats the issue margin more correctly, as a shipping-time buffer that affects how far in advance receipt is required. Learn more in [Safety margins](safety-margins.md). |
+| Vendor calendar lead time | Planning Optimization doesn't consider closed days from the vendor's calendar when calculating lead times for delivery dates. It only considers the coverage group calendar when calculating lead times. Learn more in [Calendar matrix for Planning Optimization](safety-margins.md#calendar-setup-overview-matrix). |
+| Zero positive days | Setting positive days to one in Planning Optimization provides the same behavior as setting positive days to zero in the deprecated master planning engine. |
 
 ## Related information
 

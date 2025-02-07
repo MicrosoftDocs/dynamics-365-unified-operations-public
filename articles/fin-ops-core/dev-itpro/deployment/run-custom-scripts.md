@@ -3,14 +3,13 @@ title: Run custom X++ scripts with zero downtime
 description: Learn how to upload and run deployable packages that contain custom X++ scripts without having to suspend your system.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: article
-ms.date: 12/16/2021
-audience: Developer
 ms.reviewer: kamaybac
+ms.search.form: AppConsistencyCustomScriptListPage
+ms.topic: how-to
+ms.date: 01/30/2025
 ms.search.region: Global
-ms.search.validFrom: 2021-12-16
-ms.search.form:
-ms.dyn365.ops.version: 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Run custom X++ scripts with zero downtime
@@ -29,13 +28,13 @@ The benefit of using an X++ script to correct minor data inconsistences is that 
 > - Data migration or other long-running processes
 > - Correction of data that can be corrected through other means, such as regular business processes, data consistency tools, or other self-service tools
 >
-> The feature lets authorized users change entities and their records directly, without having to run the business logic that is associated with those entities. These changes can cause data integrity issues. Therefore, your organization might require that you obtain approval and signoff from internal and external auditors (or other equivalent stakeholders) before and/or after you run a script. For compliance reasons, changes that affect some characteristics might also have to be disclosed in external reports (such as financial statements) or reported to government authorities. Your organization is solely responsible for any changes that are made to its data via this feature, any approval and signoff or disclosure of those changes, and compliance with applicable laws. You bear all the risks of using this feature.
+> The feature lets authorized users change entities and their records directly, without having to run the business logic that is associated with those entities. These changes can cause data integrity issues. Therefore, your organization might require that you obtain approval and sign-off from internal and external auditors (or other equivalent stakeholders) before and/or after you run a script. For compliance reasons, changes that affect some characteristics might also have to be disclosed in external reports (such as financial statements) or reported to government authorities. Your organization is solely responsible for any changes that are made to its data via this feature, any approval and sign-off or disclosure of those changes, and compliance with applicable laws. You bear all the risks of using this feature.
 
 All deployable packages that are uploaded into the system go through a mandatory workflow. As a safety precaution, and to help ensure segregation of duties, the user who uploads a deployable package isn't allowed to approve it for the next steps in the workflow. Another user must approve it. However, after the package is approved, the user who uploaded it will be allowed to complete the remaining steps.
 
 The system requires that all deployable packages go through a test run. Before the script will be allowed to run on production data, a user must validate that the output is correct by selecting **Accept test log**. If the output isn't correct, the user must mark the package as failed by selecting **Abandon**. In this case, the script won't be allowed to run on production data.
 
-Every uploaded package is saved in the system and goes through a defined workflow of events. For each event, the system keeps a log that includes a timestamp and the identity of the person who performed the event. In this way, the system ensures that there is an audit trail.
+Every uploaded package is saved in the system and goes through a defined workflow of events. For each event, the system keeps a log that includes a timestamp and the identity of the person who performed the event. In this way, the system ensures that there's an audit trail.
 
 As the following illustration shows, the system provides details about how each deployable package was run in X++ and which entities were touched.
 
@@ -102,7 +101,7 @@ class MyScriptClassForIssueXYZ
 
 The following list describes some best practices for successfully writing, implementing, and running a script. The list isn't exhaustive, and it should be considered only guidance.
 
-- **Do** write a success message at the end of the script. In this way, you will be able to see that the script ran without exceptions.
+- **Do** write a success message at the end of the script. In this way, you'll be able to see that the script ran without exceptions.
 - **Do** add explicit handling of the transaction scope.
 - **Do** use existing business logic, such as `update()` methods, but **do not** bypass business logic by using `doUpdate()`, `doInsert()`, and `doDelete()` methods. This approach will help ensure that dependent data is handled correctly. It will also significantly reduce the risk of further data inconsistencies.
 - **Do** assert the company context. This approach will expose common mistakes as a script runs. For example, it will reveal whether the script is being run in the wrong company.
@@ -116,7 +115,7 @@ Use the following procedure to upload and run a script.
 
 1. In your finance and operations app, go to **System administration \> Periodic tasks \> Database \> Custom scripts**.
 1. Select **Upload**.
-1. Select the deployable package that you created as described earlier in this article. You will be prompted to specify the purpose of the script.
+1. Select the deployable package that you created as described earlier in this article. You'll be prompted to specify the purpose of the script.
 1. The script must now be approved by a user other than the user who uploaded it. The approver must follow these steps:
 
     1. Go to **System administration \> Periodic \> Data base \> Custom scripts**.
@@ -146,4 +145,3 @@ Your selection in the last step defines the final state for the script. You can 
 Instead of deploying your deployable package through the user interface for your finance and operations app, as described in the previous section, you can upload it to LCS and use the regular procedure to deploy it. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 Although this approach has fewer restrictions, it provides less error protection. Additionally, because it requires a restart of all servers, it will cause some downtime.
-

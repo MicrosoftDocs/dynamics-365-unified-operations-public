@@ -4,7 +4,7 @@ description: Access links to the release plans, major announcements, and documen
 author: jaredha
 ms.author: jaredha
 ms.topic: whats-new
-ms.date: 10/24/2024
+ms.date: 01/24/2025
 ms.custom: 
   - bap-template
   - evergreen
@@ -20,6 +20,29 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## January 2025
+
+### Global address book
+
+The January regular release of dual-write GAB solution 3.5.2.131 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Changed the conditions for contact entity business rules to prevent trigger conflicts | Added validation for the company name when contacts are created, to prevent trigger conflicts. | Bug fix |
+| Support for offline functionality in **Postal address** entity main page | Updated JavaScript logic to read records in offline mode. | Bug fix |
+| Address swapping fix while changing from **Prospect** to **Customer** | Fixed a race condition in a handler file that caused addresses to be swapped when the type was changed from **Prospect** to **Customer**. | Bug fix |
+| Add **Party menu** option for dual-write GAB | Added party menu options in the Sales hub and Customer service hub to enable navigation to party-related information alongside **Accounts** and **Contacts**. | General availability |
+
+#### GAB solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.2.161 | 3.5.2.263 |
+| Dynamics365GABExtended | Yes | 3.5.2.161 | 3.5.2.263 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.2.161 | 3.5.2.263 |
+| Dynamics365GABPartyAnchor | Yes | 3.5.2.161 | 3.5.2.263 |
+| Dynamics365GABPartyCommon | Yes | 3.5.2.161 | 3.5.2.263 |
 
 ## October 2024
 

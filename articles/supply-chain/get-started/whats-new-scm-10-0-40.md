@@ -41,7 +41,7 @@ The following table lists the features that are included in this release. We mig
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 Some of these features aren't visible on your system until you turn them on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) using the name listed here for the *Feature management name* (additional configuration may also be needed). Features that don't show a feature management name are visible by default as of this version of Supply Chain Management, but typically add a new configuration option that you need to set to use the new functionality.
 
@@ -72,6 +72,18 @@ The following table lists features that were introduced as public preview featur
 | Module | Feature name | More information |
 |---|---|---|
 | Warehouse management | *Warehouse management only mode* | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) |
+
+## Features turned on by default in this release
+
+The following table lists the features that became turned on by default in version 10.0.40. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Cost management | Clean up "Potential conflicts - inventory and general ledger" and "Potential conflicts - work in process and general ledger" report data | [Feature enhancements included in this release](#enhancements) |
+| Inventory and warehouse management | Correct item that is not visible in released products form manually | [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md)<br><br>[Feature enhancements included in this release](#enhancements) |
+| Master planning | Demand Planning | [Demand planning home page](../demand-planning/demand-planning-home-page.md)<br><br>[Install, enable, and set up Demand planning](../demand-planning/install-demand-planning.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
+| Master planning | Use rounding for unit of measures in Planning Optimization | [Feature enhancements included in this release](#enhancements) |
+| Warehouse management | Over-pick materials for production orders and batch orders | [Over-pick materials for production and batch orders](../warehousing/over-pick-materials-for-production-and-batch-orders.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
 
 ## Related information
 

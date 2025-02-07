@@ -55,7 +55,7 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 Copilot shows a maximum of ten results. These results are ordered by significance. Results of equal significance are ordered arbitrarily. Although there might be additional results that have the same significance as the tenth result, Copilot doesn't indicate that those results exist.
 
-The AI-generated results are always presented in US English.
+As of January 2025, AI-generated results are available in all languages supported by Demand planning.
 
 AI-generated content should not be used without manual review or supervision.
 
@@ -66,7 +66,7 @@ When you use this feature, follow these recommendations:
 - Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Before you make decisions about modifications to the demand plan, always review and study the generated response, and compare it with actual demand plan data.
 
-### Related information
+## Related information
 
 - [Analyze demand plans with Copilot](demand-planning/demand-planning-copilot.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
