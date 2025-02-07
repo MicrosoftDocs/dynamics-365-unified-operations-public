@@ -67,36 +67,6 @@ To set up CAPA subcategories for a categories with a *User defined* subcategory 
     - **CAPA subcategory** – Enter the name of the subcategory.
     - **Description** – Enter a short description of the subcategory.
 
-## Set up CAPA resolutions
-
-CAPA resolutions let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolutions to identify and categorize typical reasons CAPA cases can be resolved. <!-- KFM: More to say? Examples? -->
-
-To set up your CAPA resolutions, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolutions**. Then use the buttons in the Action Pane to create and delete resolutions as needed. For each resolution, enter a name and description.
-
-## Set up CAPA source codes
-
-CAPA source codes let users select a source for each CAPA case. You can use source codes to track the source of each case, such as *Internal audit*, *External audit*, *Ad-hoc testing*, and so on.
-
-To set up your CAPA source codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA source codes**. Then use the buttons in the Action Pane to create and delete source codes as needed. For each source code, enter a name and description.
-
-## Set up CAPA types
-
-CAPA types let users select a type to categorize each CAPA case.  <!-- KFM: Introduce these. What are they for? Examples? -->
-
-To set up your CAPA types, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA types**. Then use the buttons in the Action Pane to create and delete CAPA types as needed. For each CAPA type, enter a name and description.
-
-## Set up Major/minor classification codes
-
-CAPA types let users select a major/minor classification code for each CAPA case.  <!-- KFM: Introduce these. What are they for? Examples? -->
-
-To set up your major/minor classification codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **Major/minor classification codes**. Then use the buttons in the Action Pane to create and delete classification codes as needed. For each code, enter a name and description.
-
-## Set up CAPA root causes
-
-CAPA root cause codes let users select the root cause of an issue when they resolve a CAPA case. <!-- KFM: More to say? Examples? -->
-
-To set up your CAPA root cause codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**. Then use the buttons in the Action Pane to create and delete root causes as needed. For each root cause, enter a name and description.
-
 ## Set up CAPA processes
 
 CAPA processes are hierarchical processes that let you manage and resolve CAPA cases. Each CAPA process comprises a series of sequential stages, each of which can include one or more automatically generated activities. When you create a CAPA case, you'll assign the CAPA process required to guide it to completion.
@@ -156,3 +126,33 @@ To see all CAPA cases that use a selected CAPA process, follow these steps.
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 1. Select or open the CAPA process you want to look for.
 1. On the Action Pane, open the **Process** tab and select **All cases** or **All CAPA cases**. <!-- KFM: what is the difference? -->
+
+## Set up CAPA resolutions
+
+CAPA resolutions let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolutions to identify and categorize typical reasons CAPA cases can be resolved. <!-- KFM: More to say? Examples? -->
+
+To set up your CAPA resolutions, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolutions**. Then use the buttons in the Action Pane to create and delete resolutions as needed. For each resolution, enter a name and description.
+
+## Set up CAPA source codes
+
+CAPA source codes let users select a source for each CAPA case. You can use source codes to track the source of each case, such as *Internal audit*, *External audit*, *Ad-hoc testing*, and so on.
+
+To set up your CAPA source codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA source codes**. Then use the buttons in the Action Pane to create and delete source codes as needed. For each source code, enter a name and description.
+
+## Set up CAPA types
+
+CAPA types let users select a type to categorize each CAPA case.  <!-- KFM: Introduce these. What are they for? Examples? -->
+
+To set up your CAPA types, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA types**. Then use the buttons in the Action Pane to create and delete CAPA types as needed. For each CAPA type, enter a name and description.
+
+## Set up Major/minor classification codes
+
+CAPA types let users select a major/minor classification code for each CAPA case.  <!-- KFM: Introduce these. What are they for? Examples? -->
+
+To set up your major/minor classification codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **Major/minor classification codes**. Then use the buttons in the Action Pane to create and delete classification codes as needed. For each code, enter a name and description.
+
+## Set up CAPA root causes
+
+CAPA root cause codes let users select the root cause of an issue when they resolve a CAPA case. <!-- KFM: More to say? Examples? -->
+
+To set up your CAPA root cause codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**. Then use the buttons in the Action Pane to create and delete root causes as needed. For each root cause, enter a name and description.
