@@ -92,20 +92,6 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     
 ## ===========================
 
-## Configure the import channel
-
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
-1. Open the **DataChannel** definition for editing in the designer.
-1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel. Make a note of the value, because you will use it in later configuration steps.
-
-    :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
-
-1. Save your changes and complete the derived configuration.
-
-
 ## Configure the electronic invoicing feature
 
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
@@ -165,6 +151,19 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 1. Select **Save**, and close the page.
 
 ## =======================================
+
+## Configure the integration channels
+
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
+1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
+1. Open the **DataChannel** definition for editing in the designer.
+1. In the **Data sources** tree, expand the **$Context\_Channel** container.
+1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel. Make a note of the value, because you will use it in later configuration steps.
+
+    :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
+
+1. Save your changes and complete the derived configuration.
 
 ## Use the country-specific configuration for the Danish electronic invoice (DK) feature
 
