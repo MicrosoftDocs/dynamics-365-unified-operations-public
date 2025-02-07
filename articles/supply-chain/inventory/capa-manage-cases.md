@@ -91,7 +91,7 @@ A CAPA process guides workers who are assigned to a case through each of the ste
 
 The CAPA process automatically assigns a worker or worker group to each stage and activity (according to how the process is configured). The system uses email to notify each responsible worker or worker group when a case, stage, or activity is assigned to them. The email includes links that allow the worker to open the case, stage, or activity directly from the message. Workers can always keep an eye on which cases and activities are assigned to them by going to the **CAPA management** dashboard.
 
-CAPA processes are defined by an administrator or manager and are applied to cases as they are created using the **CAPA process** field for the CAPA record. You can have as many processes defined as your company needs (learn more in [Set up CAPA case components](quality-capa-set-up-case-components.md)).
+CAPA processes are defined by an administrator or manager and are applied to cases as they are created using the **CAPA process** field for the CAPA record. You can have as many processes defined as your company needs (learn more in [Set up CAPA case components](capa-set-up-case-components.md)).
 
 When a case has a process assigned, the workflow is as follows:
 

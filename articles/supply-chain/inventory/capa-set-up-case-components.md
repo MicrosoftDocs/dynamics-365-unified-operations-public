@@ -22,7 +22,7 @@ Before you can begin creating and working with corrective and preventive action 
 CAPA worker groups let you group users together for CAPA purposes. You can assign a CAPA work group to each activity and stage in your CAPA process. The system uses worker groups to validate worker assignments and each group can include a default worker to use when a specific worker isn't assigned. When a CAPA case, CAPA process stage, or CAPA process activity assigned to a worker or worker group becomes active, then the system sends that worker or worker group an email notification to let them know.
 
 > [!TIP]
-> To get started quickly, you can load a set of standard CAPA worker groups from a template provided with Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](quality-capa-admin.md).
+> To get started quickly, you can load a set of standard CAPA worker groups from a template provided with Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](capa-admin.md).
 
 To set up your CAPA worker groups, follow these steps.
 
@@ -102,7 +102,7 @@ To set up your CAPA root cause codes, go to **Inventory management** \> **Setup*
 CAPA processes are hierarchical processes that let you manage and resolve CAPA cases. Each CAPA process comprises a series of sequential stages, each of which can include one or more automatically generated activities. When you create a CAPA case, you'll assign the CAPA process required to guide it to completion.
 
 > [!TIP]
-> To get started quickly, you can load a set of standard CAPA processes from a template provided with Supply Chain Management. You can use the standard processes as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](quality-capa-admin.md).
+> To get started quickly, you can load a set of standard CAPA processes from a template provided with Supply Chain Management. You can use the standard processes as-is or modify them to meet your specific needs as described in the rest of this section. For instructions, go to [CAPA administration](capa-admin.md).
 
 ### Manage and approve CAPA processes
 

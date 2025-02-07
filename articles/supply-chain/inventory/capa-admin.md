@@ -1,6 +1,6 @@
 ---
 title: CAPA management administration
-description:
+description: Learn how to set up corrective and preventive action (CAPA) management features in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -33,7 +33,7 @@ Before users can start to set up and use CAPA features, you must make a few admi
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. Open the **Quality management** tab.
 1. Make the following settings:
-    - **CAPA administrator** – Choose the worker who should administer the CAPA program. For each [CAPA worker group](quality-capa-set-up-case-components.md), you can choose to set the CAPA administrator chosen here as an automatic group member and/or default worker.<!-- KFM: More info would help. What powers does this user have? Why do we need this? Mention whether this is mandatory to use CAPA. -->
+    - **CAPA administrator** – Choose the worker who should administer the CAPA program. For each [CAPA worker group](capa-set-up-case-components.md), you can choose to set the CAPA administrator chosen here as an automatic group member and/or default worker.<!-- KFM: More info would help. What powers does this user have? Why do we need this? Mention whether this is mandatory to use CAPA. -->
     - **Use case management workflow** – Choose whether to allow the case management workflow to work with CAPA cases. <!-- KFM: More info would help. What does this mean, what effect does it have? -->
     - **Require CAPA type** – Choose whether users must specify a CAPA type when creating a CAPA case. If set to *No*, then the CAPA type setting is optional. <!-- KFM: My guess. Please confirm. -->
     - **Empty case category** – <!-- KFM: description needed. What is this for? Any advice for which value to choose? Mention whether this is mandatory to use CAPA.  -->
@@ -42,7 +42,7 @@ Before users can start to set up and use CAPA features, you must make a few admi
 
 ## Load standard worker groups and processes from the template
 
-To get started quickly, you can load a set of standard CAPA processes and worker groups from a template provided with Supply Chain Management. You can use the standard records as-is or modify them to meet your specific needs. Learn more about how to work with CAPA processes in [Set up CAPA case components](quality-capa-set-up-case-components.md).
+To get started quickly, you can load a set of standard CAPA processes and worker groups from a template provided with Supply Chain Management. You can use the standard records as-is or modify them to meet your specific needs. Learn more about how to work with CAPA processes in [Set up CAPA case components](capa-set-up-case-components.md).
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **Create standard CAPA process templates**.
 1. In the **Create standard CAPA process templates** dialog, make the following settings:
@@ -59,7 +59,7 @@ An electronic signature confirms the identity of a person who is about to start 
 
 ### Set up the electronic signature feature
 
-CAPA cases use the standard electronic signature feature provided for Microsoft finance and operations apps. You must configure the feature and issue certificates to each relevant user before you can use it. To learn more, see [Electronic signatures overview](../../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) and [Set up electronic signatures](../../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md).
+CAPA cases use the standard electronic signature feature provided for Microsoft finance and operations apps. You must configure the feature and issue certificates to each relevant user before you can use it. To learn more, see [Electronic signatures overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) and [Set up electronic signatures](../../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md).
 
 ### Turn the electronic signature requirement for CAPA cases on or off
 
