@@ -1,6 +1,11 @@
 {
   "redirections": [
-     {   
+    {   
+      "source_path": "articles/finance/localizations/global/e-invoicing-feature-setup.md",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-feature-setup",
+      "redirect_document_id": "false" 
+    },
+    {   
       "source_path": "articles/finance/localizations/global/e-invoicing-create-new-globalization-feature.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-new-globalization-feature",
       "redirect_document_id": "false" 
