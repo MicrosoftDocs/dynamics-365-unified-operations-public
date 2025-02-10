@@ -36,7 +36,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 1. You must enable the following features in Feature management:
 
     - Electronic invoicing integration
-    - E-Invoicing service workspace designer
+    - Electronic invoicing integration resubmit document from failed action
     - Execute update actions for submitted documents
 
 1. Ensure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
