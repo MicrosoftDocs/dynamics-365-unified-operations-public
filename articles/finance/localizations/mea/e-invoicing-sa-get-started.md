@@ -36,7 +36,7 @@ Before you begin the procedures in this article, complete the following prerequi
 - In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 - Enable the **CustomerPaymentMethodEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 - Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see [Create a connected application](../global/e-invoicing-connected-applications.md#create-a-connected-application).
-- Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing features into RCS from the Global repository. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+- Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing features into RCS from the Global repository. For more information, see [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Sales e-invoice (SA)
