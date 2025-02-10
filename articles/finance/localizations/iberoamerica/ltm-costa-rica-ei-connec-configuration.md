@@ -23,7 +23,7 @@ After you configure Electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> The new Electronic invoicing Globalization feature for Costa Rica (outbound flow) requires that you run 365 Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later.
+> The new Electronic invoicing Globalization feature for Costa Rica (outbound flow) requires that you run 365 Finance version 10.0.40 or later.
 
 ## Prerequisites
 
@@ -62,7 +62,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## Country/region-specific configuration for Electronic invoicing for Costa Rica
 
-The **Costa Rican electronic invoice (CR) "E-Invoicing for Costa Rica: ISV last-mile connector with Edicom"** feature represents an outbound flow for issuing the following sales documents:
+The **Costa Rica electronic invoice (CRI) "E-Invoicing for Costa Rica: ISV last-mile connector with Edicom"** feature represents an outbound flow for issuing the following sales documents:
 
 |Name|Code|Original Name|
 |----|----|-------------|
@@ -79,9 +79,9 @@ For Costa Rica, there are at least three interactions with Edicom in the pipelin
 > The configuration for common parameters is simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is available only as of version 10.0.41.
 
 > [!IMPORTANT]
-> The **Costa Rican electronic invoice (CR)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Costa Rica.
+> The **Costa Rica electronic invoice (CRI)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Costa Rica.
 
-1. Import the latest version of the **Costa Rican electronic invoice (CR)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Costa Rica electronic invoice (CRI)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, confirm that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API:
@@ -118,10 +118,10 @@ To review the processing pipeline, on the **Setups** tab, go to **Feature setup*
     - If the status response indicates a failure, the pipeline is terminated, and the submission is marked as failed.
 	- If the status response indicates successful submission to the Costa Rican virtual tax administration (ATV), the pipeline is terminated. 
     > [!NOTE]
-    > Customers or buyers in Costa Rica can reject invoices for up to eight days. But there is not a standar way to get this information from Costa Rican virtual tax administration (ATV). So the **Costa Rican electronic invoice (CR)** globalization feature doesn't not support this scenario. 
+    > Customers or buyers in Costa Rica can reject invoices for up to eight days. But there is not a standar way to get this information from Costa Rican virtual tax administration (ATV). So the **Costa Rica electronic invoice (CRI)** globalization feature doesn't not support this scenario. 
 
 > [!NOTE]
-> For each format included in the **Costa Rican electronic invoice (CR)** feature there is a similiar setup. For Costa Rica there are eight. All for sales documents (Outbound flow).
+> For each format included in the **Costa Rica electronic invoice (CRI)** feature there is a similiar setup. For Costa Rica there are eight. All for sales documents (Outbound flow).
 
 So in case for Costa Rica the setups are:
 - Inventory Export Invoice
