@@ -303,7 +303,7 @@
               - name: Activate and set up integration with Electronic Invoicing
                 href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
               - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
               - name: Work with Electronic Invoicing
                 items:
                 - name: Submit electronic documents to Electronic Invoicing
