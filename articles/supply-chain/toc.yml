@@ -281,7 +281,7 @@
             - name: Import a feature from the Global repository
               href: ../finance/localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
             - name: Create a new Globalization feature
-              href: ../finance/localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Work with configurations
               href: ../finance/localizations/global/e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
