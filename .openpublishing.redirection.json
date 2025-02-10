@@ -1,6 +1,10 @@
 {
   "redirections": [
      {   
+      "source_path": "articles/finance/localizations/global/e-invoicing-configure-email-for-exchange.md",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-configure-email-for-exchange",
+      "redirect_document_id": "false" 
+    },{   
       "source_path": "articles/finance/localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature",
       "redirect_document_id": "false" 
