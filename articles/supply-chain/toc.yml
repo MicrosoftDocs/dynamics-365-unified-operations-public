@@ -287,7 +287,7 @@
             - name: Work with feature setup
               href: ../finance/localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
             - name: Complete, publish, and deploy a Globalization feature
-              href: ../finance/localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Share with other organizations
               href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
