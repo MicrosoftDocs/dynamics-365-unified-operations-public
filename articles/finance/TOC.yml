@@ -1684,6 +1684,8 @@
                               href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Costa Rica
+                          href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Egypt
@@ -2340,7 +2342,7 @@
                   items:
                     - name: Costa Rica overview
                       href: localizations/iberoamerica/costa-rica.md
-                    - name: Set up electronic invoicing in Costa Rica
+                    - name: Get started with Electronic Invoicing for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
