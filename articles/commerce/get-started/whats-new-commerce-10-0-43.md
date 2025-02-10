@@ -32,7 +32,8 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Globalization | Enable identical receipt copy printing for France | This feature enables printing an identical duplicate of the original receipt to comply with NF 525 regulatory requirements. When enabled, the receipt copy reproduces all data exactly as it appeared on the original, including details such as the store address at the time of the transaction. | Admins
-
+| Point of sale | Proactive toast notifications for offline reliability | This feature supports new toast notification framework in Store commerce and notifies the store employees  when there is offline authentication failure, weak or missing WI-FI or a seamless offline switch | Admins
+| Point of sale | New network connection health chart  | This feature introduces three new network health charts for connection history, connection types and WIFI signal strength over a 24 hour period. | Admins
 
 
 ## Resources
