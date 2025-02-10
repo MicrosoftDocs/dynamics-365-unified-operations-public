@@ -304,7 +304,7 @@ Follow these steps to enter responses for specific pending vendor invoices.
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update the authorization credential that's required for response submission via the ISV last-mile connector.
 
 1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 5** or later. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md#create-a-feature-that-is-based-on-an-existing-feature).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md#create-a-feature-based-on-an-existing-feature).
 3. On the **Versions** tab, verify that **Draft** is selected.
 4. On the **Setups** tab, in the grid, select the **Application Response OIOUBL** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
