@@ -22,8 +22,11 @@ Cross-company data sharing concept allows you to share company specific master, 
 
 Two data sharing concepts are available:
 
+> [!NOTE]
+> Master Company Data Sharing is GA in 10.0.43.
+
 - Duplicate record sharing (DRS) is a concept where creating, updating, or deleting of records in for any company in the policy is copied/replicated across all companies in the policy. Updates of fields is replicated if selected for sharing in the policy. DRS was the first sharing type made available.
-- Master company sharing, also known as single record sharing (SRS), is a concept where a single physical record belonging to a master company is virtually shared across child companies. Create, update, or delete in any company in the policy updates the single records used across all companies. Master company sharing is currently in preview.
+- Master company sharing, also known as single record sharing (SRS), is a concept where a single physical record belonging to a master company is virtually shared across child companies. Create, update, or delete in any company in the policy updates the single records used across all companies.
 
 ## Why should you consider cross-company data sharing?
 
@@ -50,7 +53,7 @@ Data sharing is based on configuration of Data sharing policies. Policies let yo
 
 The same company and table can only be in one enabled policy. It's possible to share the same table in more than policy. This can be required when the limits of records or companies are reached for DRS, or to create policies for tables that need to be shared differently per country/region.
 
-## When to consider duplicate record versus master company sharing (preview)?
+## When to consider duplicate record versus master company sharing ?
 
 Duplicate record sharing comes with several advantages, and you should always select this option whenever possible. This is an important consideration as once master company sharing is enabled, there's no way to reduce the scope or to stop sharing.
 
@@ -141,12 +144,12 @@ Sharing can be stopped by removed for one or more companies before you can updat
 
 To stop sharing tables, you must disable the policy and then remove the tables. The same is true when deleting an entire policy. For all of these scenarios, synchronization stops for the excluded scope, but existing records will remain. Sharing stops automatically at enable or update when the number of records for a table or number of companies exceed the maximum limits.  
 
-## Master company sharing (preview)
+## Master company sharing
 
 Master company sharing is enabled by using the master company data sharing feature in the Feature management module. The feature must be enabled while in Maintenance mode.
 
 > [!NOTE]
-> Because it is not possible to stop or reduce the sharing scope, it's strongly recommended to thoroughly test and validate master company data sharing policies, prior to enabling the same configuration in a production environment. Currently being in preview mode, this feature is not supported by Microsoft Support for production use.
+> Because it is not possible to stop or reduce the sharing scope, it's strongly recommended to thoroughly test and validate master company data sharing policies, prior to enabling the same configuration in a production environment.
 
 All possible fields are selected by default when a table is added to a master company sharing policy. This includes all foreign key fields for all tables that are supported for master company sharing. Master company policies can’t be disabled; therefore, it's especially important to manually add all tables that otherwise are added automatically based on the default foreign key fields. This is the only way to fully understand the table and field sharing scope that are enabled. Automatically added tables aren't visible in the Configure cross-company data sharing form. One example is that the Vendors table is added when the Customer table is added based on foreign key relation, unless the Vendors table is already shared using DRS.
 
