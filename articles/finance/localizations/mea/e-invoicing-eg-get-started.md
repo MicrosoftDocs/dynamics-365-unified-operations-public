@@ -86,7 +86,7 @@ For both options, the parameters are the same. If you're setting up your first f
 22. Select **Save**, and close the page.
 23. Close the page.
 
-To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md)
+To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md)
 
 ## Privacy notice
 
