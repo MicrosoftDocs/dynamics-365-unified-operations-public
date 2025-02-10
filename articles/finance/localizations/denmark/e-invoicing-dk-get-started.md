@@ -79,7 +79,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 Some additional parameters must be configured directly in Finance.
 
 1. In the **Feature management** workspace, make sure that the **Export channels for electronic invoicing integration** feature is enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-2. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** Electronic reporting (ER) configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+2. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** Electronic reporting (ER) configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 3. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 4. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 5. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
@@ -321,7 +321,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 
 ### Configure electronic document parameters
 
-1. Make sure that the latest country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Make sure that the latest country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add a record for the **VendInvoiceInfoTable** table name.
 4. Set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
