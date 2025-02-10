@@ -144,13 +144,17 @@ For more information about electronic invoicing in Chile, see:
 [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
 [Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
 
+### Electronic invoicing in Costa Rica
+
+For more information about electronic invoicing in Costa Rica, [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
+
 ### Electronic invoicing in Denmark
 
 For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
 
 ### Electronic invoicing in Panama
 
-For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+For more information about electronic invoicing in Panama, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
 
 ## Additional resources
 

@@ -23,23 +23,25 @@ After you configure Electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> The new Electronic invoicing Globalization feature for Costa Rica (outbound flow) requires that you run 365 Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later. The feature can only be imported into the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
+> The new Electronic invoicing Globalization feature for Costa Rica (outbound flow) requires that you run 365 Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later.
 
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
-1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. Ensure that the settings for the Costa Rican legal entity are in place. For more information, see [Set up legal entity and tax information for Costa Rica](set-up-legal-entity-tax-costa-rica.md).
 1. [Configure electronic invoice parameters for Costa Rica](ltm-costa-rica-electronic-invoice-conf.md).
+1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
+1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in Feature management:
 
     - Electronic invoicing integration
     - E-Invoicing service workspace designer
     - Execute update actions for submitted documents
 
-1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+1. Make sure that the following Electronic reporting (ER) format configurations are imported.  For more information, see:
+[Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md),
+[Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Inventory e-invoice (CR)
     - Inventory Credit Note (CRI)
