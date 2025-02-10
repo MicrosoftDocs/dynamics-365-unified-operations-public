@@ -113,7 +113,7 @@ When tax invoices are cleared, ZATCA generates a QR code that contains the digit
 
 Follow these steps to complete the configuration.
 
-1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md)
+1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md)
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Fiscal transaction document** table names. 
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
