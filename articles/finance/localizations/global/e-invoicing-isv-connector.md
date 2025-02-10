@@ -4,7 +4,7 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/10/2025
+ms.date: 02/10/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -146,7 +146,7 @@ For more information about electronic invoicing in Chile, see:
 
 ### Electronic invoicing in Costa Rica
 
-For more information about electronic invoicing in Costa Rica, [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
+For more information about electronic invoicing in Costa Rica, see [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
 
 ### Electronic invoicing in Denmark
 

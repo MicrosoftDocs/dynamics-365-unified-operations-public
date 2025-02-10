@@ -4,7 +4,7 @@ description: Learn how to set up Microsoft Dynamics 365 Finance to use electroni
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: article
-ms.date: 02/15/2024 
+ms.date: 02/10/2025 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Costa Rica. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Costa Rican Tax Authorities, Microsoft is partnering with Edicom.
+This article provides information to help you get started with Electronic invoicing for Costa Rica. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Costa Rican Tax Authorities, Microsoft is partnering with Edicom.
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/costa-rica) authorized certification provider (PAC) according to the [regulatory requirements in Costa Rica](https://www.hacienda.go.cr/).
 
@@ -118,10 +118,10 @@ To review the processing pipeline, on the **Setups** tab, go to **Feature setup*
     - If the status response indicates a failure, the pipeline is terminated, and the submission is marked as failed.
 	- If the status response indicates successful submission to the Costa Rican virtual tax administration (ATV), the pipeline is terminated. 
     > [!NOTE]
-    > Customers or buyers in Costa Rica can reject invoices for up to eight days. But there is not a standar way to get this information from Costa Rican virtual tax administration (ATV). So the **Costa Rica electronic invoice (CRI)** globalization feature doesn't not support this scenario. 
+    > Customers or buyers in Costa Rica can reject invoices for up to eight days. But there is not a standard way to get this information from Costa Rican virtual tax administration (ATV). So the **Costa Rica electronic invoice (CRI)** globalization feature doesn't not support this scenario. 
 
 > [!NOTE]
-> For each format included in the **Costa Rica electronic invoice (CRI)** feature there is a similiar setup. For Costa Rica there are eight. All for sales documents (Outbound flow).
+> For each format included in the **Costa Rica electronic invoice (CRI)** feature there is a similar setup. For Costa Rica there are eight. All for sales documents (Outbound flow).
 
 So in case for Costa Rica the setups are:
 - Inventory Export Invoice
@@ -143,7 +143,7 @@ and each type can be generated in two places - sales and project orders - so use
 
 ### Variables
 
-The following variables are used in the outbound data flow actions of the Costa Ricaan feature (these variables are provided out of the box):
+The following variables are used in the outbound data flow actions of the Costa Rican feature (these variables are provided out of the box):
 - **BusinessDocumentDataModel** – The Business Document Data model variable that is received from Finance or Supply Chain Management and transformed into the format that is required for submission.
 - **SignedXML** – The signed XML variable that is sent back to Finance or Supply Chain Management. This variable contains the base64-encoded response body from the **Get Signed XML from Edicom** step. It's used in the response types to save the signed XML that is obtained from Edicom as an attachment to the invoice journal. It's also used to generate printable reports through QR codes.
 

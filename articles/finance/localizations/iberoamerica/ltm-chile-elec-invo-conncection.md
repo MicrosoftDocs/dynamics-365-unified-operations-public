@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Chile in Mic
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: article
-ms.date: 01/10/2025
+ms.date: 02/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
