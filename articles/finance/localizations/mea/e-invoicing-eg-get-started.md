@@ -54,7 +54,7 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
 
 There are parameters that must be set up in your Finance or Supply Chain Management environment. You can complete this setup in either of two places:
 
-- Directly in your Finance or Supply Chain Management environment. For more information, see [Setup Electronic Invoicing parameters](../global/e-invoicing-set-up-parameters.md).
+- Directly in your Finance or Supply Chain Management environment. For more information, see [Setup Electronic Invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 - In RCS. In the scope of electronic invoicing feature setup, you can define all parameters and then deploy them directly to your Finance or Supply Chain Management environment when you deploy the electronic invoicing feature.
 
 For both options, the parameters are the same. If you're setting up your first feature in the Electronic Invoicing service, we recommend that you follow these steps to set up the parameters in RCS and then deploy them to your connected application.
