@@ -40,7 +40,7 @@ To create an electronic invoicing feature, follow these steps.
 8. In the **Configurations** grid, browse to and select the format configurations that are required for the processing pipeline (for example, to generate electronic invoice files or process responses from external web services).
 9. Select **OK**. You can now use the configurations in actions of the processing pipeline. For more information, see [Work with configurations](e-invoicing-work-configurations.md).
 10. To add an electronic invoicing feature setup, create it on the **Setups** tab of the **New feature** page. For more information, see [Work with feature setups](e-invoicing-feature-setup.md).
-11. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md).
+11. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete, publish, and deploy a Globalization feature](gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Create file format configurations that are derived from the existing invoice model
 
@@ -84,4 +84,4 @@ The new file format configurations must be shared with the Microsoft domain befo
     - Review the configurations, in case you must customize the ER formats and their binding with format mappings for the feature version.
     - Review the setup, in case you must customize the **Actions** tab, **Applicability rules** tab, or **Variables** tab for the feature version.
 
-9. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md).
+9. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete, publish, and deploy a Globalization feature](gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
