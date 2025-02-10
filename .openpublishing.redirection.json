@@ -1,6 +1,11 @@
 {
   "redirections": [
     {   
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-parameters.md",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-parameter",
+      "redirect_document_id": "false" 
+    },
+    {   
       "source_path": "articles/finance/localizations/global/e-invoicing-import-feature-global-repository.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-import-feature-global-repository",
       "redirect_document_id": "false" 
