@@ -71,7 +71,7 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the country/region-specific ER configurations that are required for Poland are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md).
+1. Make sure that the country/region-specific ER configurations that are required for Poland are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Advance invoice** table names.
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
