@@ -1888,7 +1888,7 @@ items:
             - name: Available reports for security
               href: ../fin-ops/sysadmin/security-reports.md 
             - name: Security governance faq
-              href: ../fin-ops/sysadmin/security-goverance-faq.md
+              href: ../fin-ops/sysadmin/security-governance-faq.md
         - name: Entra ID security groups
           href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management
