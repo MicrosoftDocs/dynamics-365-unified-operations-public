@@ -4,7 +4,7 @@ description: Learn about the available reports for security.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/25/2025
+ms.date: 02/11/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -50,6 +50,10 @@ The **License summary** report helps users understand how many entry points for 
 - **Privilege license** – A list of all privileges, together with details about things such as licenses, operations, and activities. You can use this list to check each privilege's access and verify the license level.
 - **User license summary** – Analyze user licenses, and verify the details that are needed to assign licenses and optimize them for usability.
 - **Security summary** – Analyze user licenses, roles, duties, and privileges so that you can optimize the environment to ensure that each user or a group of users is granted appropriate access.
+> [!NOTE]
+> Under **Security Summary** report, there are various licenses with editable boxes at the top of the page. These **Page filters** that are available for this report where users can apply the maximum threshold value for specific license type(s) and filter the data underneath to limit entry points count up to that selected threshold value. These filters can be helpful when system administrators are looking for roles with very few entry points per license type. 
+
+For example: **Set max. threshold on operations** = 20, **Activity** = 20. The report displays roles where these two licenses are granted. Administrators can take this data and decide if such roles still required because they have access to very few entry points. 
 
 ## Role audit trail report
 
