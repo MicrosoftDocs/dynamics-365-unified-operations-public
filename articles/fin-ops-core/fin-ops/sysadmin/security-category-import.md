@@ -1,13 +1,13 @@
 --- 
 title: Security category export/import
-description: Learn about how you can utilize the backup and restore processes related to category. 
+description: Learn how to use the backup and restore processes that are related to security categories. 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: how-to
 ms.date: 02/07/2025
 ms.custom:
 ms.reviewer: twheeloc 
-audience: Application User  
+audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: SysSecSegregationOfDutiesRule
@@ -18,34 +18,41 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Security categories offer both backup as XML and restore from XML options. For more information about the import process, see [Set up security categories](security-category.md#import-an-existing-category). This article describes various scenarios that system administrators can perform.
+Security categories offer options for both backing up as XML and restoring from XML. Learn more about the import process in [Import an existing category](security-category.md#import-an-existing-category). This article describes various scenarios that system administrators can handle.
 
-## Backup as XML
+## Back up as XML
+
 1. Go to **System administration** \> **Security governance** \> **Security category**.
-2. Confirm security categories are set up prior to the backup.  
-3. Select the **Security category** and click **Backup as XML**. 
-> [!IMPORTANT] 
-> You can either back up the selected category or **all** categories available. Partial selection of the list for backup isn't allowed.  
-4. The action opens a new dialog. Expand the **Parameters** FastTab.
-5. Under **Type** dropdown, there are three options:
- - **User security governance** - This option generates a complete XML of security category and it's related configuration from the **Process hierarchy** page. If a category has multiple hierarchy, tasks, duties, privileges, entry points, or roles defined under it, this option includes only objects created on the **Process hierarchy** page. It excludes all objects created under the **Core security configuration**. For example: **Hierarchy, tasks, entry points** are included and **duties, privileges, roles** are excluded in the XML. 
- - **Security configuration** - This option generates complete XML of security category and it's related configurations only from **Core security configuration**. If a category has multiple hierarchies, tasks, duties, privileges, entry points, roles, etc. defined under it, this option includes only objects which are created on the core security configuration and excludes all objects limited to the **Process hierarchy** page. For example: **duties, privileges, roles** are included in the XML and **hierarchy, tasks, entry points** are excluded in the XML.
- - **Governance + configuration** - This option generates complete XML of security categories and it's related configurations from both the **Process hierarchy** page and **Core security configuration** perspective. If a category has multiple hierarchies, tasks, duties, privileges, entry points, roles, etc. defined under it, this option includes everything created on the core security configuration and all objects limited to the **Process hierarchy** page. For example: everything including **hierarchy, tasks, duties, privileges, entry points, roles**.
-6. Select **Types** and click **OK** button.
-7. This prompts you to save an **XML** file on your local browser. 
+1. Before you start the backup, confirm that security categories are set up.
+1. Select a security category, and then select **Backup as XML**.
+
+    > [!IMPORTANT]
+    > You can back up either a single selected category or all available categories. You can't individually select multiple categories for backup at the same time.
+
+1. In the dialog that appears, on the **Parameters** FastTab, in the **Type** field, select one of the following values:
+
+    - **User security governance** – Generate a complete XML file of the security category and its related configuration from the **Process hierarchy** page. If multiple hierarchies, tasks, duties, privileges, entry points, or roles are defined under the category, the XML includes only objects that were created on the **Process hierarchy** page. It excludes all objects that were created under **Core security configuration**. For example, the XML includes the hierarchy, tasks, and entry points, but it excludes duties, privileges, and roles.
+    - **Security configuration** – Generate a complete XML file of the security category and its related configurations from **Core security configuration**. If multiple hierarchies, tasks, duties, privileges, entry points, roles, and so on, are defined under the category, the XML includes only objects that were created under **Core security configuration**. It excludes all objects that are limited to the **Process hierarchy** page. For example, the XML includes duties, privileges, and roles, but it excludes the hierarchy, tasks, and entry points.
+    - **Governance + configuration** – Generate a complete XML file of the security category and its related configurations from the **Process hierarchy** page and under **Core security configuration**. If multiple hierarchies, tasks, duties, privileges, entry points, roles, and so on, are defined under the category, the XML includes everything that was created under **Core security configuration** and also all objects that are limited to the **Process hierarchy** page. For example, the XML includes everything, such as the hierarchy, tasks, duties, privileges, entry points, and roles.
+
+1. Select **Types**, and then select **OK**.
+1. When you're prompted, save the XML file in your local browser.
 
 ## Restore from XML
-1. Go to **System administration** \> **Security governance** \> **Security category**.  
-2. Click **Restore from XML** and a dialog opens.
-3. Within this dialog, there are multiple selections: **File, Type, Security related action**. 
-4. In the file browse option, enter a path to a valid format **XML** file.
-5. Select the **Type** and **Security related action** values.
- - **Security related action** is applicable when **Type = User security governance**.
- - **Create** - Restore and publish XML of security category.
- - **Clear** - Restore XML of security category.
- - **None** - Restore XML of security category.
 
-## Bulk create proceess hierarchy
-System administrators can use **Restore from XML** to create an entire hierarchy under a **security category**. For this, generate the XML file in the right format with desired hierarchy under a category. It can include multiple processes in a hierarchy tree, security tasks under each process (optional). Though generating the XML is manual process, it can still be a faster approach of creating the hierarchy if accurate template of the XML is followed. Mostly, creating a template is copy-paste with right metadata. Make sure each category has unique name.    
+1. Go to **System administration** \> **Security governance** \> **Security category**.
+1. Select **Restore from XML**.
+1. In the dialog that appears, use the file browsing option to specify the path of an XML file that has a valid format.
+1. In the **Type** field, select a value.
+1. If you selected **User security governance** in the **Type** field, in the **Security related action** field, select one of the following values:
+
+    - **Create** – Restore and publish the XML of the security category.
+    - **Clear** – Restore the XML of the security category.
+    - **None** – Restore the XML of the security category.
+
+## Bulk-create a process hierarchy
+
+System administrators can use the **Restore from XML** feature to create an entire hierarchy under a security category. For this approach, generate the XML file in the correct format, with the desired hierarchy under a category. The hierarchy can optionally include multiple processes in a hierarchy tree and security tasks under each process. Although generation of the XML is a manual process, this approach to creating a hierarchy can still be faster if an accurate template of the XML is followed. Template creation mostly involves copying and pasting with the correct metadata. Make sure that each category has a unique name.
+
 > [!TIP] 
-> Create one category through user interface and then use the **Backup as XML** feature to download initial file. Use this file to modify and create new desired category with hierarchy. 
+> Create one category through the user interface (UI), and use the **Backup as XML** feature to download the initial file. Then modify the category in this file to create the new category that has the desired hierarchy.
