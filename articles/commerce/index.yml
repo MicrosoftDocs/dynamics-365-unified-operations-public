@@ -8,8 +8,8 @@ metadata:
   title: Dynamics 365 Commerce documentation
   description: Use Commerce to deliver unified, personalized, and seamless buying experiences for customers and partners.  
   ms.topic: hub-page
-  author: v-chrgriffin
-  ms.author: josaw
+  author: v-chgri
+  ms.author: v-chrgriffin
   ms.date: 02/11/2025 
   ms.custom: bap-template
   hide_bc: true
