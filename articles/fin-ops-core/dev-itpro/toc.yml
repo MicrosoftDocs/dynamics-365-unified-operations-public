@@ -1886,7 +1886,7 @@ items:
             - name: Privileged user management
               href: ../fin-ops/sysadmin/priv-user-mgmt.md            
             - name: Available reports for security
-              href: ../fin-ops/sysadmin/security-reports.md
+              href: ../fin-ops/sysadmin/security-reports.md 
             - name: Security governance faq
               href: ../fin-ops/sysadmin/security-goverance-faq.md
         - name: Entra ID security groups
