@@ -3,7 +3,7 @@ title: X++ compile-time functions
 description: Learn about and access compile-time functions and describes their syntax, parameters, and return values. via an overview.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 11/03/2017
 ms.reviewer: johnmichalak
 audience: Developer
