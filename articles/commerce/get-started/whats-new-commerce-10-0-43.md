@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.43 (January 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.43. 
 author: johnmichalak
-ms.date: 01/27/2025
+ms.date: 02/11/2025
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -31,10 +31,10 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Globalization | Enable identical receipt copy printing for France | This feature enables printing an identical duplicate of the original receipt to comply with NF 525 regulatory requirements. When enabled, the receipt copy reproduces all data exactly as it appeared on the original, including details such as the store address at the time of the transaction. | Admins
-| Point of sale | Proactive toast notifications for offline reliability | This feature supports new toast notification framework in Store commerce and notifies the store employees  when there is offline authentication failure, weak or missing WI-FI or a seamless offline switch | Admins
-| Point of sale | New network connection health chart  | This feature introduces three new network health charts for connection history, connection types and WIFI signal strength over a 24 hour period. | Admins
-
+| Globalization | Enable identical receipt copy printing for France | This feature enables printing an identical duplicate of the original receipt to comply with NF 525 regulatory requirements. When enabled, the receipt copy reproduces all data exactly as it appeared on the original, including details such as the store address at the time of the transaction. | Admins |
+| Payments | Minimize fraud in e-commerce transactions by using Adyen's risk management capabilities through the Adyen connector. | Adyen's risk management system empowers customers to effectively detect, mitigate, analyze, and monitor fraud and disputes. Each e-commerce transaction undergoes a thorough risk evaluation process to assess the potential risk associated with the payment. The risk management capabilities must be enabled by Adyen. No additional configuration is needed in Dynamics 365 Commerce. | Admins |
+| Point of sale | New network connection health chart  | This feature introduces three new network health charts for connection history, connection types and WIFI signal strength over a 24 hour period. | Admins |
+| Point of sale | Proactive toast notifications for offline reliability | This feature supports the toast notification framework in Store Commerce and notifies store employees when there's an offline authentication failure, weak or missing WI-FI, or a seamless offline switch. | Admins |
 
 ## Resources
 
