@@ -25,19 +25,19 @@ ms.dyn365.ops.version: 10.0.4
 6. In the **Offset account type** field, select **Ledger**. Then, in the **Offset account** field, select a value.
 7. Select **Tax information**.
 8. On the **GST** tab, in the **HSN code** field, select a value.
-9. Select the **Customer tax information** tab, and then select **Tax document**.
-10. Select **Header**, and then select **Tax document**.
-11. In the **Transaction type** field, select **Revised**.
-12. In the **Original transaction id** field, select a value.
-13. In the **Original transaction date** field, select a value.
-14. Select **OK**.
+9. Select **Ok**.
 
 ## Validate the tax details
 
-1. Select **Tax document**
-2. Select **Close**.
-3. Select **Post** \> **Post**.
-4. Close the message that you receive.
+1. Select **Tax document**.
+2. Select **Header**, and then expand **Tax document** fastTab.
+3. In the **Transaction type** field, select **Revised**.
+4. In the **Original transaction id** field, select a value.
+5. In the **Original transaction date** field, select a value.
+6. In the **Tax details** fastTab verify tax amount. 
+7. Select **Close**.
+8. Select **Post** \> **Post**.
+9. Close the message that you receive.
 
 ## Validate the financial entries
 
