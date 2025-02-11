@@ -48,7 +48,7 @@ Follow these steps to define the data source that's used for a custom label and 
     - **Join type** – Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there is no data in the related table.
 
     > [!NOTE]
-    > Forms that don't have a data source or use a temporary table as a data source can't use the custom labels (for example, the *Registration* form on the purchase orders uses *TmpInventTransWMS* as a data source, so custom labels can't be printed for that table). Instead, a *Regular* table must be used.
+    > Forms that don't have a data source or that use a temporary table as a data source can't use custom labels (for example, the **Registration** page for purchase orders uses `TmpInventTransWMS` as a data source, so custom labels can't be printed for that table). Instead, you must use a standard table.
 
 1. On the Action Pane, select **Save**.
 
@@ -112,7 +112,7 @@ Follow these steps to create a custom label layout that uses data from a label l
     > [!NOTE]
     > Use `dsparams.parameter-name` to refer to label layout data source parameters.
     >
-    > In the above example, when the print dialog is opened, the user will be able to enter the number of labels to be printed in the *Quantity of labels* field.
+    > In this example, the print dialog will provide a **Quantity of labels** field, which lets the user specify the number of labels to print.
 
 1. On the Action Pane, select **Save**.
 

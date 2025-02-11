@@ -138,14 +138,14 @@ When a print job is run, the system uses the following sequence to identify whic
 
 ## Advanced scenarios
 
-The functionality described above can be also used for some more advanced scenarios, like reprinting a licence plate label that was created in one warehouse on a printer located in another warehouse.
+You can also use the functionality described in this article for more advanced scenarios, such reprinting a license plate label that was created in one warehouse on a printer located in another warehouse.
 
-### Reprinting a label in a different warehouse
+### Reprint a label in a different warehouse
 
-One way to reprint a label in a different warehouse is to setup a default label printer in the **Default label printers** form for a user, location or a device in another warehouse. For example, for a given **Printer stock type** and **User ID** *25* printer *Printer25* is set in the **Printer name** field. This will mean that when that user is reprinting labels that were orignally created in warehouse *24*, they will now be sent to printer *Printer25* instead of the printer defined in the **Document routing** for warehouse *24*.
+One way to reprint a label in a different warehouse is to use the **Default label printers** page to set up a default label printer for a user, location, or device in another warehouse. For example, for a given **Printer stock type**, **User ID** *25* has **Printer name** set to *Printer25*. This means that when user *25* is reprinting labels that were originally created in warehouse *24*, they will now be sent to printer *Printer25* instead of the printer defined on the **Document routing** page for warehouse *24*.
 
 > [!IMPORTANT]
-> There must be a valid **Document routing** setup based on the field values on the license plate label (for example, **Warehouse**), even in the case a different printer will be used later on. For example, if the label was originally created in warehouse *24*, then there must be a **Document routing** record for warehouse *24* with the same **Layout ID** which has the matching **Printer stock type** as the default printer for the other user, location or a device.
+> A valid document routing setup must exist based on the field values on the license plate label (for example, *Warehouse*), even when a different printer will be used later. For example, if the label was originally created in warehouse *24*, then there must be a document routing record for warehouse *24* with the same **Layout ID** and **Printer stock type** as the default printer for the other user, location, or device.
 
 ## Related information
 
