@@ -1,8 +1,8 @@
 ---
 title: Create a purchase order governed by budget
 description: Learn how to create a purchase order that is checked for available budget, including a process for reviewing the budget control configuration. 
-author: prasungoel
-ms.author: prasungoel
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 06/15/2020
 ms.reviewer: kamaybac

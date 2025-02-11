@@ -2370,7 +2370,7 @@
         - name: Create a purchase order
           href: procurement/tasks/create-purchase-order.md
         - name: Create a purchase order governed by budget
-          href: cost-management/tasks/create-purchase-order-governed-by-budget.md
+          href: procurement/tasks/create-purchase-order-governed-by-budget.md
         - name: Create a purchase order with a delivery schedule
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
