@@ -234,14 +234,16 @@
           href: dev-itpro/retail-in-store-topology.md
         - name: Commerce Data Exchange
           items:
-          - name: Commerce Data Exchange best practices
-            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange and commerce channel communications
             href: dev-itpro/define-retail-channel-communications-cdx.md
+          - name: Commerce Data Exchange best practices
+            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
           - name: Sort Commerce Data Exchange packages by primary index
             href: dev-itpro/CDX-package-sort.md
+          - name: Download sessions
+            href: dev-itpro/download-sessions.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
