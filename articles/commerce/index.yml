@@ -8,9 +8,9 @@ metadata:
   title: Dynamics 365 Commerce documentation
   description: Use Commerce to deliver unified, personalized, and seamless buying experiences for customers and partners.  
   ms.topic: hub-page
-  author: v-chgri
+  author: v-chrgriffin
   ms.author: josaw
-  ms.date: 08/17/2023 
+  ms.date: 02/11/2025 
   ms.custom: bap-template
   hide_bc: true
 
@@ -40,8 +40,9 @@ highlightedContent:
 additionalContent: 
   sections:
   - title: Implement
-# Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
-# Each card should have at least three and no more than five links. Do not include a "See also" link.
+# Guidance is the first card under Implement. On this card, include links for Security and compliance, Implementation guide, Implementation tools and samples, and migration guide (if relevant). 
+# Each card should have at least three and no more than five links.
+# If your docset has more appropriate articles to link to that the template has, then replace the links.
     items:
     - title: Guidance 
       links: 
@@ -49,8 +50,6 @@ additionalContent:
         text: Dynamics 365 implementation guidance
       - url: /dynamics365/guidance/implementation-guide/process-focused-solution-implementation-lifecycle
         text: Implementation lifecycle management
-      - url: /dynamics365/adoption/adoption-guide
-        text: Adoption frameworks
       - url: /dynamics365/guidance/implementation-guide/security
         text: Security
     - title: Try/Buy/Deploy
