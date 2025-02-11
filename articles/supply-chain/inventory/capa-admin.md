@@ -1,5 +1,5 @@
 ---
-title: CAPA management administration
+title: CAPA management administration (preview)
 description: Learn how to set up corrective and preventive action (CAPA) management features in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
@@ -11,9 +11,13 @@ ms.custom:
   - bap-template
 ---
 
-# CAPA management administration
+# CAPA management administration (preview)
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
+
+This topic describes how to enable and set up corrective and preventive action (CAPA) management features in Dynamics 365 Supply Chain Management.
 
 ## Prerequisites
 

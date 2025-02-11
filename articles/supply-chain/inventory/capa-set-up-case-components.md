@@ -1,5 +1,5 @@
 ﻿---
-title: Set up CAPA case components
+title: Set up CAPA case components (preview)
 description: Before you can begin creating and working with CAPA cases, you must set up the components needed to categorize and process CAPA cases.
 author: johanhoffmann
 ms.author: johanho
@@ -11,9 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Set up CAPA case components
+# Set up CAPA case components (preview)
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Before you can begin creating and working with corrective and preventive action (CAPA) cases, you must set up the components needed to categorize and process CAPA cases.
 

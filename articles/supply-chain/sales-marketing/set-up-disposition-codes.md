@@ -28,6 +28,8 @@ To set up a disposition code, follow these steps.
 1. If you want to associate any customer charges with this disposition code, select the **Charges** button to open the **Set up charges** form.
 1. If you want to define any external codes to match with the company's own disposition codes, select the **External codes** button to open the **External codes** form.
 
+<!-- KFM: Add a mention here about **Check for quality association** option for disposition codes. -->
+
 ## Related information
 
 - [Return reason codes and disposition codes](disposition-and-return-reason-codes.md)

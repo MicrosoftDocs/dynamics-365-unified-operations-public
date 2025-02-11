@@ -39,6 +39,8 @@ For a given business process, the quality association record identifies the even
 
 To work with quality associations, go to **Inventory management \> Setup \> Quality control \> Quality associations**. The following examples show how a quality association record is defined for the variations in each business process. For each example, the following table summarizes the events and conditions that are defined by a quality association record.
 
+<!-- KFM: I think we need to add the new triggering events to this table (sales return and transfer order). Is that all we need to do for this functionality? BTW, I'm not sure this table helps very much. The UI shows what our options are. I think maybe all we need is a simple bullet list of the supported reference types, maybe also with event types specified. It would make this topic much easier to overview without this big table in the way. -->
+
 <table>
 <thead>
 <tr>
@@ -230,73 +232,25 @@ To work with quality associations, go to **Inventory management \> Setup \> Qual
 
 The following table provides more information about how quality orders can be generated for specific types of processes.
 
-<div class="tableSection">
-<table>
-<thead>
-<tr>
-<th>Type of process</th>
-<th>When quality orders can be automatically generated</th>
-<th>When quality orders can be generated if destructive testing is required</th>
-<th>Condition information</th>
-<th>Manual generation information</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Purchase order</td>
-<td>Before or after a receipts list or product receipt for the material that is received is posted</td>
-<td>After the product receipt for the material that is received is posted, because the material must be available for destructive testing</td>
-<td>The requirement for a quality order can reflect a specific site, item, or vendor, or a combination of these conditions.</td>
-<td>A manually generated quality order that refers to a purchase order can use information in a quality association record, such as the test sampling plan.</td>
-</tr>
-<tr>
-<td>Inbound shipment order</td>
-<td>As part of the registration process (warehouse receiving)</td>
-<td>As part of the registration process (warehouse receiving)</td>
-<td>The requirement for a quality order can reflect a specific site, item, or consigner, or a combination of these conditions.</td>
-<td>A manually generated quality order that refers to an inbound shipment order can use information in a quality association record, such as the test sampling plan.</td>
-</tr>
-<tr>
-<td>Quarantine order</td>
-<td>Before or after the quarantine order is reported as finished or ended</td>
-<td>Quality orders that require destructive tests can't be generated. It's assumed that the quarantine order functionality handles the disposition of the material that is destroyed.</td>
-<td>The requirement for a quality order can reflect a specific site, item, or vendor, or a combination of these conditions.</td>
-<td>A manually generated quality order that refers to a quarantine order can use information in a quality association record, such as the test sampling plan.</td>
-</tr>
-<tr>
-<td>Sales order</td>
-<td>Before a scheduled picking process or packing slip update for the items that are being shipped</td>
-<td>At any step</td>
-<td>The requirement for a quality order can reflect a specific site, item, or customer, or a combination of these conditions.</td>
-<td>A manually generated quality order that refers to a sales order can use information in a quality association record, such as the test sampling plan.</td>
-</tr>
-<tr>
-<td>Production order</td>
-<td>Before or after the finished quantity for the production order is reported</td>
-<td>After the finished quantity for the production order is reported</td>
-<td>The requirement for a quality order can reflect a specific site or item, or a combination of these conditions.</td>
-<td>A manually generated quality order that refers to a production order can use information in a quality association record, such as the test sampling plan.</td>
-</tr>
-<tr>
-<td>Production order that has a route operation</td>
-<td>Before or after the report is finished for an operation</td>
-<td>After the reporting production is finished for the last operation</td>
-<td>The requirement for a quality order can reflect a specific site, item, or operations resource, or a combination of these conditions.</td>
-<td>A manually generated quality order that refers to a route operation can use information in a quality association record, such as the test sampling plan.</td>
-</tr>
-<tr>
-<td>Inventory</td>
-<td>A quality order can't be automatically generated for a transaction in an inventory journal or for transfer order transactions.</td>
-<td></td>
-<td></td>
-<td>A quality order must be manually created for an item's inventory quantity. Physical on-hand inventory is required.</td>
-</tr>
-</tbody>
-</table>
-</div>
+<!-- KFM: this table is easier to digest. Maybe we should keep this and add the two new processes ( sales return and transfer order) -->
+
+| Type of process | When quality orders can be automatically generated | When quality orders can be generated if destructive testing is required | Condition information | Manual generation information |
+|--|--|--|--|--|
+| Purchase order | Before or after a receipts list or product receipt for the material that is received is posted | After the product receipt for the material that is received is posted, because the material must be available for destructive testing | The requirement for a quality order can reflect a specific site, item, or vendor, or a combination of these conditions. | A manually generated quality order that refers to a purchase order can use information in a quality association record, such as the test sampling plan. |
+| Inbound shipment order | As part of the registration process (warehouse receiving) | As part of the registration process (warehouse receiving) | The requirement for a quality order can reflect a specific site, item, or consigner, or a combination of these conditions. | A manually generated quality order that refers to an inbound shipment order can use information in a quality association record, such as the test sampling plan. |
+| Quarantine order | Before or after the quarantine order is reported as finished or ended | Quality orders that require destructive tests can't be generated. It's assumed that the quarantine order functionality handles the disposition of the material that is destroyed. | The requirement for a quality order can reflect a specific site, item, or vendor, or a combination of these conditions. | A manually generated quality order that refers to a quarantine order can use information in a quality association record, such as the test sampling plan. |
+| Sales order | Before a scheduled picking process or packing slip update for the items that are being shipped | At any step | The requirement for a quality order can reflect a specific site, item, or customer, or a combination of these conditions. | A manually generated quality order that refers to a sales order can use information in a quality association record, such as the test sampling plan. |
+| Production order | Before or after the finished quantity for the production order is reported | After the finished quantity for the production order is reported | The requirement for a quality order can reflect a specific site or item, or a combination of these conditions. | A manually generated quality order that refers to a production order can use information in a quality association record, such as the test sampling plan. |
+| Production order that has a route operation | Before or after the report is finished for an operation | After the reporting production is finished for the last operation | The requirement for a quality order can reflect a specific site, item, or operations resource, or a combination of these conditions. | A manually generated quality order that refers to a route operation can use information in a quality association record, such as the test sampling plan. |
+| Inventory | A quality order can't be automatically generated for a transaction in an inventory journal or for transfer order transactions. |  |  | A quality order must be manually created for an item's inventory quantity. Physical on-hand inventory is required. |
 
 > [!NOTE]
 > When you filter quality associations for the *Inbound shipment order* reference type, and the **Account code** value is *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
+
+<!-- KFM: Maybe add a section here about adding an assigned worker and/or quality order priority. We may need a topic about how to set up the priority values. Explain more about what happens when a worker is assigned; is it just a field on the quality order or is there an email and/or other notification?  -->
+
+<!-- KFM: Add a section here about **Check for quality association** option for disposition codes. -->
+
 
 ## Examples of automatic generation of quality orders
 
@@ -418,8 +372,7 @@ In production, if you set the **Event type** field to *Report as finished* and t
 <li>Quality order 2 for 1 of batch number b2, serial number s2</li>
 <li>Quality order 3 for 1 of batch number b3, serial number s3</li>
 <li>Quality order 4 for 1 of batch number b4, serial number s4</li>
-</ul>
-<ul>
+
 <li>Quality order 5 for 2, without a reference to a batch number and a serial number</li>
 </ul>
 </li>

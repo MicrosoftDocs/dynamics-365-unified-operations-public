@@ -1619,6 +1619,10 @@
             href: inventory/quality-quarantine-zones.md
           - name: Nonconformance diagnostic types
             href: inventory/quality-diagnostic-types.md
+          - name: Nonconformance root cause codes (preview)
+            href: inventory/quality-root-cause-codes.md
+          - name: Nonconformance work groups (preview)
+            href: inventory/quality-nonconformance-workgroup.md
           - name: Nonconformance operations
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
@@ -1635,7 +1639,7 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
-      - name: Corrective and preventive action (CAPA) management
+      - name: Corrective and preventive action (CAPA) management (preview)
         items:
         - name: CAPA management overview
           href: inventory/capa-overview.md
