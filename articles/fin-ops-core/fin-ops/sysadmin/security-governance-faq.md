@@ -1,6 +1,6 @@
 ---
 title: Security governance FAQ
-description: This frequently asked questions article answers to some frequently asked questions about Security governance. 
+description: Get answers to frequently asked questions about security governance.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -19,41 +19,40 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article provides answers to the most frequently asked questions about security governance feature, set up, and usage. 
+This article provides answers to the most frequently asked questions about the security governance feature, how it's set up, and how it's used.
 
-## Can this feature be used for hiding some fields on a page or control the editability of certain fields on a page for certain roles?
-For most fields, you need to do custom implementation of business logic to control the permissions. If there's an entrypoint behind the selected field, then it can be controlled through user security governance feature. 
+## Can the feature be used to hide specific fields on a page or control the ability of some roles to edit specific fields on a page?
 
-## Does this tool integrates with any version control system to maintain various XMLs or AXTR files generated during the usage of it?
-No, it's not integrated directly with any version control. It's recommended to control all files through a version control so that system administrators can maintain copies of files or task recordings files. It's helpful for compliance audits, users just need to compare the security versions with approved security architecture. 
+For most fields, you must do a custom implementation of the business logic to control the permissions. However, if there is an entry point behind the selected field, it can be controlled through the user security governance feature.
 
-## Will the process hierarchy work with customized menu items if they're mapped to privileges?
-Yes, it works with custom menu items. 
+## Is the feature integrated with any version control system to maintain the various XML or AXTR files that are generated during use?
+
+No, security governance isn't integrated directly with any version control. We recommend that you control all files through version control, so that system administrators can maintain copies of files or task recording files. This approach is helpful for compliance audits, because users just have to compare the security versions with the approved security architecture.
+
+## Does the process hierarchy work with customized menu items that are mapped to privileges?
+
+Yes, the process hierarchy works with custom menu items.
 
 ## Is temporary role management captured in the security audit trail?
-Yes, any role changes happening for an active user account, are captured in the **Security audit trail** report. 
 
-## Does it work with user groups or user access assigned through Azure AD?
-No. Security governance uses the user created directly within Dynamics 365 finance and operations security administration module.
+Yes. Any role changes that are made for an active user account are captured on the **Security audit trail** report.
 
-## By disabling any user in Entra app, will it also disable the same user in Dynamics 365 finance and operations?
-No. At this time, these user management systems aren't integrated. 
+## Does the feature work with user groups or user access that is assigned through Microsoft Azure Active Directory (Azure AD)?
 
-## Is the task recording within security governance session recording is similar to the AX 2012 Security development tool?
-Yes, it's similar as security development tool with some new technical changes.  
+No. Security governance uses the user that is created directly in the **Security administration** module in Dynamics 365 finance and operations apps.
 
-## Is there a feature that includes usage information by user, not just users having the right licenses but also how often are they logging in and using the system?
-Yes. The **User aging report** provides this information.  
+## If a user is disabled in the Microsoft Entra app, is that user also disabled in finance and operations apps?
 
-## Where can we see the user license utilization?
-The **License summary** report displays licenses usage by various factors like by role, user, duty, or privilege. 
+No. The two user management systems aren't currently integrated.
 
+## Is the task recording functionality in security governance session recording similar to the Dynamics AX 2012 Security development tool?
 
+Yes, the task recording functionality is similar to the Security development tool. However, it includes some new technical changes.
 
+## Is there any feature that includes usage information by user, and that shows not only users who have the correct licenses, but also how often those users sign in and use the system?
 
+Yes. The **User aging** report provides this information.
 
+## Where can I view information about user license utilization?
 
-
-
-
-
+The **License summary** report shows license use by factors such as role, user, duty, or privilege.
