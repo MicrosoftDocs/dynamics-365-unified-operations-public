@@ -1,6 +1,6 @@
 ---
 title: Security governance FAQ
-description: Learn how to set up security categories that are used to create the process hierarchy and security configuration.
+description: This frequently asked questions article answers to some frequently asked questions about Security goverance. 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
