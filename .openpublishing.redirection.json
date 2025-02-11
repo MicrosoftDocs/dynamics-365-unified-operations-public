@@ -1,16 +1,16 @@
 {
   "redirections": [
-     {   
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/onprem-remove-reinstall-AOS-node.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/onprem-add-remove-node",
-      "redirect_document_id": "false" 
+      "redirect_document_id": "false"
     },
     {
       "source_path": "articles/finance/localizations/apac/apac-aus-nzl-electronic-invoices.md",
       "redirect_url": "/dynamics365/finance/localizations/apac/gs-apac-aus-nzl-electronic-invoices",
       "redirect_document_id": "false"
-     },
-     {
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-overview",
       "redirect_document_id": "false"
@@ -20,16 +20,16 @@
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-faq",
       "redirect_document_id": "false"
     },
-     {
+    {
       "source_path": "articles//human-resources/hr-admin-integration-common-data-service.md",
       "redirect_url": "/dynamics365/human-resources/hr-dataverse-integration",
       "redirect_document_id": "false"
-    },    
+    },
     {
       "source_path": "articles/finance/localizations/global/rcs-overview.md",
       "redirect_url": "/dynamics365/finance/localizations/global/workspace/merge-rcs-to-gsw",
       "redirect_document_id": "false"
-    },    
+    },
     {
       "source_path": "articles/finance/localizations/global/rcs-globalization-feature.md",
       "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
@@ -39,12 +39,12 @@
       "source_path": "articles/finance/localizations/global/rcs-global-repo-upload.md",
       "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
-    },  
+    },
     {
       "source_path": "articles/finance/localizations/dev-itpro/rcs-delete-environment.md",
       "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/rcs-lcs-repo-dep-faq.md",
       "redirect_url": "/dynamics365/finance/localizations/global/workspace/gsw-features",
@@ -104,82 +104,82 @@
       "source_path": "articles/finance/localizations/global/e-invoicing-customer-certificates-secrets.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-parameters#create-a-key-vault-reference",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-service-environments.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-create-sharepoint-connection.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-sharepoint-connection",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-key-vault-azure-portal.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-azure-resources.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-rcs.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-sign-up-install.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-set-up-overview.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-administration-integration-components.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-administration-integration-components",
       "redirect_document_id": "false"
-    },   
+    },
     {
       "source_path": "articles/finance/localizations/global/e-invoicing-service-overview.md",
       "redirect_url": "/dynamics365/finance//localizations/global/gs-e-invoicing-service-overview",
       "redirect_document_id": "false"
-    },   
+    },
     {
       "source_path": "articles/finance/cash-bank-management/letters-of-credit.md",
       "redirect_url": "/dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
       "redirect_document_id": "false"
-    },     
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/human-resources/hr-admin-setup-provision.md",
       "redirect_url": "/dynamics365/human-resources/hr-admin-setup-provision-fo",
       "redirect_document_id": "false"
-    },    
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-ax2012.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
@@ -189,22 +189,22 @@
       "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-vcruntime.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/human-resources//hr-admin-integration-linkedin.md",
       "redirect_url": "/dynamics365/human-resources/welcome",
       "redirect_document_id": "false"
-    },     
+    },
     {
       "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
       "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/perf-test/perfsdk-tutorial-lbd.md",
       "redirect_url": "https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9",
@@ -239,72 +239,72 @@
       "source_path": "articles/finance/business-performance-analytics/field-mappings.md",
       "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
       "redirect_document_id": "false"
-    },      
+    },
     {
       "source_path": "articles/human-resources/hr-teams-leave-app.md",
       "redirect_url": "/human-resources/hr-app",
       "redirect_document_id": "false"
-    },   
+    },
     {
       "source_path": "articles/human-resources/hr-admin-teams-leave-app.md",
       "redirect_url": "/human-resources/hr-app",
       "redirect_document_id": "false"
-    },   
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/add-change-acctg-rprtg-crrncy.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/add-change-accounting-reporting-currency",
       "redirect_document_id": "false"
-    },    
-     {
+    },
+    {
       "source_path": "articles/finance/cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled",
       "redirect_url": "/troubleshoot/dynamics-365/finance/cash-bank-management/settlement-overview-resolve-issues",
       "redirect_document_id": "false"
-    }, 
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer",
       "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
       "redirect_document_id": "false"
-    }, 
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-issues-connecting-to-financial-reporting",
       "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/unable-to-connect-financial-reporting-server",
       "redirect_document_id": "false"
     },
-     {
+    {
       "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer",
       "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
       "redirect_document_id": "false"
-    },     
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/cant-reverse-transctns.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/cant-reverse-transactions",
       "redirect_document_id": "false"
-    },  
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/yec-mssng-open-blnces.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/year-end-close-miss-opening-balances",
       "redirect_document_id": "false"
-    },  
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
       "redirect_document_id": "false"
-    },        
-     {
+    },
+    {
       "source_path": "articles/finance/general-ledger/dimension-default-values.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",
       "redirect_document_id": "false"
-    },    
+    },
     {
       "source_path": "articles/finance/general-ledger/posting-fail-imbalance.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/posting-fail-imbalance",
       "redirect_document_id": "false"
-    },     
+    },
     {
       "source_path": "articles/finance/general-ledger/open-fincl-jrnls-in-office.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/custom-excel-template-financial-journals-not-available",
       "redirect_document_id": "false"
-    },    
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
       "redirect_url": "/dynamics365/fin-ops-core/fin-ops",
@@ -349,7 +349,8 @@
       "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md",
       "redirect_url": "/fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
       "redirect_document_id": "false"
-    },    {
+    },
+    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
       "redirect_url": "/dynamics365/finance/localizations/apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
@@ -7389,7 +7390,6 @@
       "redirect_url": "../../fin-ops-core/dev-itpro/sales-marketing/synchronize-work-orders",
       "redirect_document_id": "false"
     },
-
     {
       "source_path": "articles/finance/localizations/tax-engine-trouble-shooting.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/tax/troubleshoot-tax-engine-gte-issues",
@@ -7520,7 +7520,6 @@
       "redirect_url": "/troubleshoot/dynamics-365/finance/budgeting/position-budgeting-set-up-issues",
       "redirect_document_id": "false"
     },
-
     {
       "source_path": "articles/commerce/troubleshoot/customer-record-not-appearing.md",
       "redirect_url": "/troubleshoot/dynamics-365/commerce/commerce-headquarters-operations/customer-record-not-appearing",
@@ -7666,7 +7665,6 @@
       "redirect_url": "/troubleshoot/dynamics-365/commerce/site-builder-content-management/products-categories-unavailable",
       "redirect_document_id": "false"
     },
-
     {
       "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-asset-classification-values.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-home-page",
@@ -7691,7 +7689,7 @@
       "source_path": "articles/commerce/dev-itpro/create-retail-experience-app.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/store-commerce",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/gdpr.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy",
@@ -8652,7 +8650,6 @@
       "redirect_url": "/dynamics365/human-resources/index",
       "redirect_document_id": "false"
     },
-
     {
       "source_path": "articles/fin-ops-core/dev-itpro/database/replication-setup.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service",
@@ -9158,7 +9155,6 @@
       "redirect_url": "/dynamicsax-2012/appuser-itpro/working-with-purge-objects-and-archive-objects-idmf",
       "redirect_document_id": "false"
     },
-
     {
       "source_path": "articles/supply-chain/inventory/enable-nonconformance-management.md",
       "redirect_url": "enable-quality-management",
@@ -27753,17 +27749,17 @@
       "source_path": "articles/commerce/get-started/learning-catalog-solution-architect.md",
       "redirect_url": "/training/dynamics365/commerce",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "articles/finance/get-started/learning-catalog.md",
       "redirect_url": "/training/dynamics365/finance",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "articles/finance/get-started/learning-catalog-bdm.md",
       "redirect_url": "/training/dynamics365/finance",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "articles/finance/get-started/learning-catalog-business-user.md",
       "redirect_url": "/training/dynamics365/finance",
@@ -27778,7 +27774,7 @@
       "source_path": "articles/finance/get-started/learning-catalog-administrator.md",
       "redirect_url": "/training/dynamics365/finance",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "articles/finance/get-started/learning-catalog-developer.md",
       "redirect_url": "/training/dynamics365/finance",
@@ -27793,7 +27789,7 @@
       "source_path": "articles/finance/get-started/learning-catalog-functional-consultant.md",
       "redirect_url": "/training/dynamics365/finance",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "articles/finance/get-started/learning-catalog-solution-architect.md",
       "redirect_url": "/training/dynamics365/finance",
@@ -27854,7 +27850,7 @@
       "redirect_url": "/training/dynamics365/scm",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/BPA-self-help-2.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-budget-err00002",
       "redirect_document_id": false
@@ -27864,37 +27860,37 @@
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-self-help-3.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-main-account-in-budget-err00003",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-self-help-4.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-journal-entries-err00004",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-self-help-5.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/mismatch-between-debits-and-credits-err00005",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-self-help-6.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-data-err00006",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-self-help-7.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-transaction-header-err00007",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-self-help-1.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-general-ledger-err00001",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
       "redirect_document_id": false
@@ -28193,17 +28189,17 @@
       "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-faq.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
       "redirect_document_id": false
     },
-    {    
+    {
       "source_path": "articles/commerce/dev-itpro/retail-sdk/migrate-sdk.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
       "redirect_document_id": false
-    },     
+    },
     {
       "source_path": "articles/commerce/dev-itpro/cloud-dev-box.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
@@ -28337,6 +28333,11 @@
     {
       "source_path": "articles/supply-chain/warehousing/sales-returns.md",
       "redirect_url": "/dynamics365/supply-chain/sales-marketing/sales-returns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/create-purchase-order-governed-by-budget.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/tasks/create-purchase-order-governed-by-budget",
       "redirect_document_id": false
     }
   ]
