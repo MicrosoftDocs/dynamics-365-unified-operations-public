@@ -37,7 +37,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | None | This default value doesn't enable an activity or inquiry. |
 | About | View information about the system, such as the version number, the warehouse ID, and the worker who is currently logged on. |
 | Change warehouse | Change the warehouse that a worker is logged on to. |
-| Location inquiry | View information about all items and quantities for a location. For license plate controlled locations, the data will be sorted in descending order by the license plate number. The items, whether for license plate controlled or non-license plate controlled locations, will be sorted in the order that SQL Server finds most optimal, which in most cases will be by physical quantity, but this order may vary. |
+| Location inquiry | View information about all items and quantities for a location. For license plate controlled locations, data is sorted by license plate number in descending order. The items (for both license plate controlled and non-license plate controlled locations) are usually sorted by physical quantity, but may vary based on what SQL Server finds most optimal. |
 | License plate inquiry | View the quantity of items on a license plate and the location of the license plate. |
 | Start production order | Start a production order. |
 | Production scrap | Enter the quantity of scrap that was created during production for each bill of materials (BOM) line. |
