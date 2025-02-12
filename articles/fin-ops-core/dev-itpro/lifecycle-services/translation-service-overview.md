@@ -31,6 +31,9 @@ The following illustration shows, at a high level, how the service works.
 
 ![How DTS works.](./media/dts-overview.png "How DTS works")
 
+> [!NOTE]
+> Use of this reature requires a for finance and operations apps, Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Project Operations.
+
 ## Recycling existing translations
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).
 
