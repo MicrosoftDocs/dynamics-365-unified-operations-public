@@ -681,7 +681,7 @@ Network-addressable Epson and Star Micronics receipt printers and cash drawers a
 
 Refer to [Support for network peripherals](dev-itpro/network-peripherals.md) for more details and how to configure network peripherals with Store Commerce.
 
-### Payment terminal
+### Payment terminals and PIN pads
 
 Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
