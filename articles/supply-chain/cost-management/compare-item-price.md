@@ -3,12 +3,12 @@ title: Compare item prices storage report
 description: Learn how to generate a Compare item prices storage report and then browse and/or export the result, including an outline on toggling the Compare prices feature.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 08/05/2022
-ms.custom:
-ms.reviewer: kamaybac 
+ms.reviewer: kamaybac
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
-ms.assetid:
+ms.topic: how-to
+ms.date: 02/11/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Compare item prices storage report
@@ -31,25 +31,26 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 Follow these steps to generate and store a **Compare item prices storage** report:
 
-1. Go to **Cost management > Inquiries and reports > Predetermined cost reports > Compare item prices storage**.
+1. Go to **Cost management** \> **Inquiries and reports** \> **Predetermined cost reports** \> **Compare item prices storage**.
 
 1. Select **New** to open the **Compare item prices** pane. Set the following options to define which prices to compare in your report:
 
     - On the **Parameters** FastTab, give the report a unique **Name** and use the fields in the **Pending prices to compare** and **Prices used for comparison** sections to define which prices and dates to compare.
     - On the **Records to include** FastTab, set up filters and constraints to define which data to include in the report.
     - On the **Run in the background** FastTab, set up how, when, and the frequency at which you want to generate the report.
+
     > [!NOTE]
     > This report is always executed as part of a batch job.
 
 1. Select **OK** to apply your settings and close the pane.
 
-1. After the batch job is completed, it will be listed on the **Compare item prices storage** page. You may need to refresh the page to see the report.
+1. After the batch job is completed, it will be listed on the **Compare item prices storage** page. You might need to refresh the page to see the report.
 
 ## Explore the Compare item prices storage report
 
-After you've generated a report, you can view and explore it at any time as follows:
+After generating a report, you can view and explore it at any time as follows:
 
-1. Go to **Cost management > Inquiries and reports > Predetermined cost reports > Compare item prices storage**.
+1. Go to **Cost management** \> **Inquiries and reports** \> **Predetermined cost reports** \> **Compare item prices storage**.
 
 1. Select a report from the list.
 
@@ -61,7 +62,7 @@ After you've generated a report, you can view and explore it at any time as foll
 1. After the selected view opens, you can do the following:
 
     - Select almost any column heading to sort or filter the table by values in that column, just as with most standard forms in Supply Chain Management. Note, you can't sort or filter the **Net change price %** column because it's a calculated field.
-    - Select **Dimension display** to open a pane where you can choose which dimension column to include on the form. Set **Save setup** to **Yes** if you'd like to save these settings so they will be preserved the next time you open the report. Select **OK** to apply your settings and close.
+    - Select **Dimension display** to open a pane where you can choose which dimension column to include on the form. Set **Save setup** to *Yes* if you'd like to save these settings so they'll be preserved the next time you open the report. Select **OK** to apply your settings and close.
     - Select any row in the form and then select **View details** to see more information about the selected item. You'll be able to drill down into the data from here.
     - Select any row in the form and then select **View comparison chart** to see an interactive graphical representation of your results as they relate to your selected item. You can explore these results by selecting various graphical elements in the chart and chart legend.
     - Select any row in the form and then select **View calculation details** to see more information about calculations related to the selected item. You'll be able to drill down into the data from here.
@@ -72,7 +73,7 @@ Each report that you generate is stored in the **Compare item prices** data enti
 
 The following is an example of how to export a **Compare item prices storage** report:
 
-1. Go to **System administration > Workspaces > Data management**.
+1. Go to **System administration** \> **Workspaces** \> **Data management**.
 
 1. Select the **Export** button in the **Data management** section.
 
@@ -88,9 +89,9 @@ The following is an example of how to export a **Compare item prices storage** r
 1. Usually you'll export one report at a time. To do this, set up a **Filter** for the row you just added to the **Inquiry** pane. This will let you define which reports from the **Compare item prices** entity that you want to include in your export. Set the following filter options to export a single report:
 
     - On the **Range** tab, select **Add** to add a new row.
-    - Set **Table** to **Compare item prices**.
-    - Set **Derived table** to **Compare item prices**.
-    - Set **Field** to the field that you want to filter by. Usually you'll use **Execution name** or **Execution time**.
+    - Set **Table** to *Compare item prices*.
+    - Set **Derived table** to *Compare item prices*.
+    - Set **Field** to the field that you want to filter by. Usually you'll use *Execution name* or *Execution time*.
     - Set **Criteria** to the value from your selected field that you want to look for (either the name of the report or the time the report was generated).
     - If necessary, add more rows to the **Range** table until you have uniquely identified the report that you're looking for.
 
@@ -103,6 +104,5 @@ The following is an example of how to export a **Compare item prices storage** r
 1. The **Execution summary** page opens, where you can see the status of your export job and a list of entities that were exported. Select the **Compare item prices** entity listed in the **Entity processing status** area and then select **Download file** to download the data exported from that entity.
 
 For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

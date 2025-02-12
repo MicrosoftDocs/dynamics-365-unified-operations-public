@@ -3,11 +3,12 @@ title: Enable Power BI for Global Inventory Accounting
 description: Learn how to enable Microsoft Power BI for Global Inventory Accounting, including prerequisites and an outline and step-by-step process on setup.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: how-to
-ms.date: 02/03/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: PowerBIConfiguration
+ms.topic: how-to
+ms.date: 02/11/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Enable Power BI for Global Inventory Accounting
@@ -40,7 +41,7 @@ To set up the Power BI integration, follow these steps.
         1. Select the **Global Inventory Accounting** Power BI report file.
     1. Configure the **Global Inventory Accounting** Power BI report by following these steps:
         1. Go to **My workspace**, find the data set for Global Inventory Accounting, and then, from the **Options** menu, select **Settings**.
-        1. In **Settings for Global Inventory Accounting**, expand **Parameters**, and update all parameters as required. These settings will let Power BI report use the data in your Dataverse. In particular, be sure to check the following settings:
+        1. In **Settings for Global Inventory Accounting**, expand **Parameters**, and update all parameters as required. These settings let Power BI report use the data in your Dataverse. In particular, be sure to check the following settings:
             - Overwrite the default **Dataverse URL** values using the values found under **Power platform environment information** in LCS (in the **Power platform integration** section).
             - Overwrite the default **Environment ID** values using the values found under **Environment details** in LCS (in the **Manage environment** section).
             - Select the **Edit credentials** link next to the **CDS** label in the **Data source credentials** section. Then sign in to your Dataverse account using the **OAuth2** authentication method.
