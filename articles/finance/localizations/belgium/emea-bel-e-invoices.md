@@ -160,14 +160,17 @@ To identify a company by its VAT number, follow these steps.
     The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
     > [!NOTE]
-    > 
+    > schemeID="9925 - Belgium VAT number" CompanyEndpointType CustomerEndpointType
+
+[Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/)
 
 ### Units of measure
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
+3. AAAAAAAAAAAAAAAAAAAAAAAAA standard
+4. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
+5. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [the recommendation list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
 ### Sales tax codes
 
@@ -175,7 +178,7 @@ When you generate electronic invoices in OIOUBL format, the tax information in t
 
 The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
 
-The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
+The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/). 
 
 EXEMPTS !!!!!!!!!!!!!!!!!!!!
 
