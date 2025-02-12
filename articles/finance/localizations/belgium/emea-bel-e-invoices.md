@@ -164,23 +164,27 @@ To identify a company by its VAT number, follow these steps.
 
 [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/)
 
+Contacts!!!!!!!!!!!!!!!!!!!
+
 ### Units of measure
 
+To configure units of measure, follow these steps.
+
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit ID in the list, and then select **External codes**.
-3. AAAAAAAAAAAAAAAAAAAAAAAAA standard
-4. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-5. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [the recommendation list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
+1. Select a unit ID, and then select **External codes**.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that is equal to the selected unit ID.
+1. In the **Standard code** column, select the checkbox.
+1. In the **Value** section, in the **Value** field, enter the external code according to [the required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
+
+    > [!NOTE]
+    > For scenarios where no specific units of measure are assumed, the default value **EA** is used.
 
 ### Sales tax codes
 
-When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
-
-The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
-
-The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/). 
-
-EXEMPTS !!!!!!!!!!!!!!!!!!!!
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/). 
 
 ### Buyer reference
 
