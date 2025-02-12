@@ -121,10 +121,12 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 > [!NOTE]
 > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
     
-4. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
-5. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
-6. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
-7. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+4. On the **Integration channels** tab, in the **Channels** section, select **Add** to created a new channel.
+5. In the **Channel** field, enter the **EdiStatus** value ZZZZZZZZZZZZZZZZZZZZZZZ. The system will use it as the channel for outgoing electonic invoices submission.
+6. In the **Company** field, select a required legal entity.
+7. In the **Document context** field, select the ****.
+8. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
+9. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
 ![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
     
