@@ -63,7 +63,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - <a id="Tok"></a>The **token** element of the **Secret** type.
 
 > [!NOTE]
-> The values in the **Name** column should match the names of the secrets that are described in the previous section.
+> The value in the **Name** column should match the name of the secret that are described in the previous section.
 
 ## Import the electronic invoicing feature
 
@@ -121,16 +121,24 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 > [!NOTE]
 > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
     
-4. On the **Integration channels** tab, in the **Channels** section, select **Add** to created a new channel.
-5. In the **Channel** field, enter the **EdiStatus** value ZZZZZZZZZZZZZZZZZZZZZZZ. The system will use it as the channel for outgoing electonic invoices submission.
+4. On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
+5. In the **Channel** field, enter the **EdiStatus** value. You must enter the value exactly as it appears here. The system will use it as the channel for outgoing electonic invoices submission.
 6. In the **Company** field, select a required legal entity.
-7. In the **Document context** field, select the ****.
-8. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
-9. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+7. In the **Document context** field, select the **Data channel context** mapping from the **Customer invoice context model** configuration.
+8. In the **Channel type** field, select the **Export** value.
+9. In the **Channels** section, select **Add** to create another channel.
+10. In the **Channel** field, enter the **EdiImport** value. You must enter the value exactly as it appears here. The system will use it as the channel for incoming electonic invoices import.
+11. In the **Company** field, select a required legal entity.
+12. In the **Document context** field, select the **Data channel context** mapping from the **Import invoice context model** configuration.
+13. In the **Channel type** field, select the **Import** value.
+14. In the **Import sources** section, select **Add** to create an import source.
+15. in the **Name** field, enter the **ResponseXml** value. You must enter the value exactly as it appears here.
+16. In the **Data entity name** field, select the **Vendor invoice header** entity.
+17. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import** configuration.
+18. Select **Save**, and close the page. 
 
 ![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
     
-8. Select **Save**, and close the page.
 
 ## =======================================
 
