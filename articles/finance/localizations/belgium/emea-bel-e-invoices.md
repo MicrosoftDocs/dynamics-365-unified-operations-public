@@ -139,9 +139,27 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 
 ![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
     
-## Finance business data configuration
+## Configure address structure
 
-Follow the configuration steps described in this chapter to setup the Microsoft Dynamics 365 Finance data required for proper system functioning.
+To configure the structure of the postal address to define all required elements, follow these steps.
+
+1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
+1. Make sure that at least the following mandatory elements are configured:
+
+    - Country code
+    - Postal code
+    - City name
+    - Street
+
+## Configure legal entity data
+
+### Enter the address
+
+To enter the address, follow these steps.
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. Select a legal entity.
+1. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 
 ### Seller identification
 
@@ -151,6 +169,30 @@ To identify a company by its VAT number, follow these steps.
 1. On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
 
     The VAT number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
+
+> [!NOTE]
+> The contact information for the legal entity is automatically retrieved from the related **Person** that is associated with the current user in Dynamics 365 Finance.
+
+## Configure customer data
+
+### Enter the address
+
+To enter the address, follow these steps.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select a customer.
+1. On the **Addresses** FastTab, add a valid address for the selected customer.
+
+### Enter the contact person
+
+To enter the contact person, follow these steps.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select a customer.
+1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
+
+    > [!NOTE]
+    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Buyer identification
 
