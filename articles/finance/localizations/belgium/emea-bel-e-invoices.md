@@ -118,18 +118,17 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 
 ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](emea-bel-einoices-docs.jpg)
 
-    > [!NOTE]
-    > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
-
-
-1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
-1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
-1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
-1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+> [!NOTE]
+> If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
+    
+4. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
+5. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
+6. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
+7. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
 ![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
     
-1. Select **Save**, and close the page.
+8. Select **Save**, and close the page.
 
 ## =======================================
 
