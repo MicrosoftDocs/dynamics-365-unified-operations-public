@@ -4,7 +4,7 @@ description: Learn about financial tags rules with Microsoft Power Fx formulas.
 author: rcarlson
 ms.author: rcarlson
 ms.topic: article
-ms.date: 11/01/2024
+ms.date: 02/12/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
