@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.topic: how-to
-ms.date: 02/04/2025
+ms.date: 02/12/2025
 ms.custom: 
   - bap-template
 ---
