@@ -6,7 +6,7 @@ ms.author: wangchen
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 02/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
@@ -34,7 +34,7 @@ Tax Calculation is a highly scalable tax engine that's designed to support you i
 For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
 
 ## Versions
-We recommend that you import and set up your Tax Calculation configuration with the version that matches your Finance or Supply Chain Management version.
+We recommend that you import and set up your Tax Calculation configuration with the version that matches your Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management version.
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
@@ -54,7 +54,7 @@ Here is an outline of the data flow process for Tax Calculation.
 2. In the **Globalization Studio** workspace in Finance, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
 3. After the tax feature setup is finalized, change the **Feature version status** to _Completed_. 
 4. In **Tax calculation parameters**, select which tax feature setup version to use for a specific legal entity.
-5. In Finance and Supply Chain Management, operate transactions as usual. When Tax Calculation is needed, the client will collect information from the transaction, such as the sales order or purchase order, and package the information as payload. A request will then be sent to calculate the tax.
+5. In Finance and Supply Chain Management, operate transactions as usual. When Tax Calculation is needed, the client collects information from the transaction, such as the sales order or purchase order, and packages the information as payload. A request is then sent to calculate the tax.
 6. The tax calculation request is received from the client and the calculation is completed. The tax result is then returned to the client.
 7. The Dynamics 365 client receives the tax result and presents the tax calculation result on a sales tax page.
 
@@ -67,7 +67,7 @@ The following table lists the transactions supported in the corresponding versio
 | Version | Transactions |
 |---------|--------------|
 | 10.0.43 | Customer advance invoice<br>Vendor advance invoice<br>Interest note<br>Collection letter |
-| 10.0.42 | Slip jounal (Cash)<br>[ITA] Customs declaration journal |
+| 10.0.42 | Slip journal (Cash)<br>[ITA] Customs declaration journal |
 | 10.0.41 | Write-off journal<br>Prepayment customer invoice (Sales order) |
 | 10.0.40 | [POL] Single Administrative Document (SAD) |
 | 10.0.39 | Prepayment handling |
