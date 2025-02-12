@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 06/11/2024
+ms.date: 02/12/2025
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -59,7 +59,7 @@ You can [view archived data](archive-view.md) in Dataverse long term retention w
 You can also view the archived data from within the finance and operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
 
 ## I export finance and operations application data to my own data lake. If I archive data from my live finance and operations application tables, will the archived data be removed from my own data lake?
-Dataverse long-term retention is not supported on Bring Your Own Database (BYOD), and data preservation in BYOD is not guaranteed.
+Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD), and data preservation in BYOD isn't guaranteed.
 
 ## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
 
