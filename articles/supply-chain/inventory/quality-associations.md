@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 02/12/2025
 ms.custom: 
   - bap-template
 ---
