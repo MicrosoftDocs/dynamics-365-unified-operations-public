@@ -101,7 +101,7 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with **Edicom** services.
 
-    - **Service ID** – The service ID (Domain) number obtained from Edicom and used for company identification.
+    - **Service ID** – The service ID (Domain) number obtained from Edicom is used for company identification.
     - **Group** – The group code is used for internal routing within the Edicom infrastructure.
     - **Destination** – The destination is constructed from the service ID number concatenated with the string **_EDIWIN**. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
     - **Token** – select the name of the [token](#Tok) that you previously created.
@@ -139,55 +139,37 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 
 ![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
     
-
-## =======================================
-
 ## Finance business data configuration
 
-Follow the configuration steps in [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md). Start from the [Configure parameters](../norway/emea-dnk-e-invoices.md#configure-parameters) section.
+Follow the configuration steps described in this chapter to setup the Microsoft Dynamics 365 Finance data required for proper system functioning.
 
 ### Seller identification
 
-Companies that submit electronic invoices can be identified by their CVR number or their [Global Location Number (GLN)](https://en.gs1.dk/services/gln). The GLN is also known as a European article numbering (EAN) location number.
-
-To identify a company by its CVR number, follow these steps.
+To identify a company by its VAT number, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. On the **Bank account information** FastTab, in the **Codes** section, in the **Routing number** field, make sure that a valid CVR number is entered for the legal entity.
+1. On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
 
-    The CVR number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
-
-To identify a company by its GLN, follow these steps.
-
-1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
-1. Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **Registration IDs** on the Action Pane.
-1. On the **Registration ID** FastTab, add the **EAN** registration type that you created.
-1. In the **Registration number** field, enter a valid GLN.
-
-    The GLN is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
-
-    > [!NOTE]
-    > The GLN has higher priority than the CVR number. If both numbers are configured at the same time, the GLN is used.
+    The VAT number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
 
 ### Buyer identification
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-1. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure that a valid GLN is entered for the customer.
+1. On the **Invoice and delivery** FastTab, in the **SALES TAX** section, in the **Tax exempt number** field, make sure that a valid VAT number is entered for the customer.
 
-    The GLN is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
+    The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
     > [!NOTE]
-    > If no GLN is defined, the customer's tax exempt number is used.
+    > 
 
-### Configure units of measure
+### Units of measure
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
 4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
 
-### Configure sales tax codes
+### Sales tax codes
 
 When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
 
@@ -196,6 +178,35 @@ The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears
 The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 
 EXEMPTS !!!!!!!!!!!!!!!!!!!!
+
+### Buyer reference
+
+According to PEPPOL requirements, when you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter either a customer reference or a customer requisition. 
+
+#### Free text invoices
+
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+2. Create a new invoice, or select an existing invoice.
+3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and/or **Customer reference** fields.
+
+#### Sales orders
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Create a new sales order, or select an existing sales order. 
+3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and/or **Customer reference** fields.
+
+#### Project invoices
+
+1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+2. Create a new project contract, or select an existing project contract.
+3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
+4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and/or **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
+5. To enter customer requisition and/or reference values directly on the project invoice proposal, follow these steps:
+
+    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
+    2. Create a new invoice proposal, or select an existing invoice proposal.
+    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
+
 
 ### <a id="FormatType"></a>Configure the output format type
 
