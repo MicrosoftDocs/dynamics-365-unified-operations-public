@@ -4,7 +4,7 @@ description: Learn about the function of the Inventory On-hand mobile app and ho
 author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
 ms.date: 02/11/2025
 ms.custom: 
