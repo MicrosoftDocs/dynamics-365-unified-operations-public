@@ -36,7 +36,7 @@ For each failed job, the table will also provide an associated Error ID. These E
 
 ## Download sessions troubleshooting
 
-When a job running as a part of the a download session fails, a dynamic Error ID is generated based on the type of the error. Using the table below administrators can troubleshooot and address issues related to download sessions based on the Error ID.
+When a job running as a part of the a download session fails, a dynamic Error ID is generated based on the type of the error. Using the table below administrators can troubleshoot and address issues related to download sessions based on the Error ID.
 
 | Error ID | Description |
 |-------|-------------|
