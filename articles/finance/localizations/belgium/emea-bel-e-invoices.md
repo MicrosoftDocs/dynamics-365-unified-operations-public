@@ -142,72 +142,6 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 
 ## =======================================
 
-## Configure the integration channels
-
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. <a id="Context"></a>Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
-1. Open the **DataChannel** definition for editing in the designer.
-1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel. Make a note of the value, because you will use it in later configuration steps.
-
-    :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
-
-1. Save your changes and complete the derived configuration.
-
-## Use the country-specific configuration for the Danish electronic invoice (DK) feature
-
-Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
-
-To review and update the parameters for the **Danish electronic invoice (DK)** electronic invoicing feature, follow these steps.
-
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 4** or later. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
-1. On the **Versions** tab, verify that **Draft** is selected.
-1. On the **Setups** tab, in the grid, select the **Sales invoice OIOUBL** feature setup, and then select **Edit**.
-1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
-1. In the **Parameters** section, select **Domain**, and then enter the service ID number that you obtained.
-1. Select **Application**, and then enter the same service ID number.
-1. Select **Destination**, and then enter the service ID number concatenated with the string "\_EDIWIN." For example, if the service ID number is **123456**, enter **123456\_EDIWIN**.
-1. Select **Group**, and then enter the group code that you obtained.
-1. Select **Auth token**, and then select the name of the secret that you created for the token.
-1. Select **Save**, and close the page.
-1. Repeat steps 4 through 11 for each of the following feature setups if your business process assumes the involvement of the related types of documents:
-
-    - Sales credit note OIOUBL
-    - Project invoice OIOUBL
-    - Project credit note OIOUBL
-    - Sales invoice PEPPOL
-    - Sales credit note PEPPOL
-    - Project invoice PEPPOL
-    - Project credit PEPPOL
-
-1. On the **Setups** tab, in the grid, select the **Get status** feature setup, and then select **Edit**.
-1. On the **Export channel** tab, in the **Parameters** section, select **Auth token**, and then select the name of the secret that you created for the token.
-1. Select **Domain**, and then enter the service ID number that you obtained.
-1. Select **Application**, and then enter the same service ID number.
-1. Select **Group**, and then enter the group code that you obtained.
-1. Select **Data channel**, and then enter the name of the [integration channel](#ExChannel) that is configured on the **Electronic document parameters** page in Finance.
-1. Select **Save**, and close the page.
-
-## Finance configuration
-
-Some additional parameters must be configured directly in Finance.
-
-To configure the additional parameters directly in Finance, follow these steps.
-
-1. In the **Feature management** workspace, make sure that the **Export channels for electronic invoicing integration** feature is enabled. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-1. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** Electronic reporting (ER) configurations that are required for Denmark are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
-1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-1. <a id="ExChannel"></a>In the **Integration channels** section, add a record for the channel that is used for electronic invoice submission in batch mode.
-1. In the **Channel** column, enter **EdiStatus**. This channel name is used by default, but you can use a different channel name as you require. In this case, you must enter the same name in the value of the **$Context\_Channel** variable in the **DataChannel** definition in the **Customer invoice context model** ER configuration. You must also enter it in the parameters and applicability rules of the related feature setup.
-1. In the **Company** column, select a required legal entity code.
-1. In the **Document context** column, refer to the **Customer invoice context model** configuration by using the **Data channel context** definition.
-1. In the **Channel type** column, select **Export**.
-1. Save your changes, and close the page.
-
 ## Finance business data configuration
 
 Follow the configuration steps in [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md). Start from the [Configure parameters](../norway/emea-dnk-e-invoices.md#configure-parameters) section.
@@ -245,6 +179,23 @@ To identify a company by its GLN, follow these steps.
 
     > [!NOTE]
     > If no GLN is defined, the customer's tax exempt number is used.
+
+### Configure units of measure
+
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+2. Select a unit ID in the list, and then select **External codes**.
+3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
+4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
+
+### Configure sales tax codes
+
+When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
+
+The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
+
+The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
+
+EXEMPTS !!!!!!!!!!!!!!!!!!!!
 
 ### <a id="FormatType"></a>Configure the output format type
 
