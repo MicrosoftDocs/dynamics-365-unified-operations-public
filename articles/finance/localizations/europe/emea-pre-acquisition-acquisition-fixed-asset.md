@@ -25,7 +25,7 @@ This article explains how to set up and post fixed asset pre-acquisitions.
 Before you can post a pre-acquisition, you must complete the following setup:
 
 -   On the **Fixed assets parameters** page, set the **Allow pre-acquisitions** option to **Yes**.
--   On the **Fixed asset posting profiles** page, set up a fixed asset posting profile for the pre-acquisition posting type.
+-   On the **Fixed Assets** page, go to **Setup** \> **Fixed asset posting profiles** and set up a fixed asset posting profile for the pre-acquisition posting type.
 
 ## Post a preacquisition of a fixed asset
 1.  On the **Fixed assets** page, create a new journal, and enter all applicable information, as required.
