@@ -108,45 +108,27 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 
     ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Belgium.](emea-bel-einoices-feature-parameters.jpg)
 
-## ===========================
-
-1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
-1. On the **Applicability rules** tab, in the **Set up applicability rule** section, in the **Value** field, enter the [name of the data channel](#ImpChn) that you previously defined.
-1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
-1. Select **Save**, and close the page.
 1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Project invoice**, and **Advance invoice** table names.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
-    :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page."::: 
+![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](emea-bel-einoices-docs.jpg)
 
     > [!NOTE]
-    > If you have created the [derived analogues](#Context) of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
+    > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
 
-1. For the **Customer Invoice journal** table name, select **Response types**.
-1. Select **New** to create a response type, and enter the following values:
 
-    - In the **Response type** field, enter **ResponseData** (the default value).
-    - In the **Submission status** field, select **Pending**.
-    - In the **Model mapping** field, select **KSeF response data import format (PL)**.
-
-    :::image type="content" source="e-inv-pol-response-type.jpg" alt-text="Screenshot of the setup of the new response type on the Electronic document tab of the Electronic document parameters page.":::
-
-    > [!NOTE]
-    > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
-
-1. Repeat steps 4 and 5 for the **Project invoice** and **Advance invoice** table names.
 1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [name of the data channel](#ImpChn) that you previously defined.
 1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
 1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
-    :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
-
+![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
+    
 1. Select **Save**, and close the page.
 
 ## =======================================
