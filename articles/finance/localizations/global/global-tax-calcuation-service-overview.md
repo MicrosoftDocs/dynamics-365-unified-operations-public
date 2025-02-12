@@ -91,8 +91,8 @@ Tax Calculation can be run with supported localization features. The following t
 | 10.0.22 | <ul><li>Australia</li><li>Bahrain</li><li>Canada</li><li>Egypt</li><li>Hong Kong SAR</li><li>Kuwait</li><li>New Zealand</li><li>Oman</li><li>Qatar</li><li>Saudi Arabic</li><li>South Africa</li><li>United Arab Emirates</li></ul> |
 | 10.0.21 | <ul><li>Austria</li><li>Belgium</li><li>Denmark</li><li>Estonia</li><li>Finland</li><li>France</li><li>Germany</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Sweden</li><li>Switzerland</li><li>United Kingdom</li><li>United States</li></ul> |
 
-    > [!NOTE]
-    > For any country/region not localized by Microsoft, Tax Calculation can also be enabled and run with other global features.
+> [!NOTE]
+> For any country/region not localized by Microsoft, Tax Calculation can also be enabled and run with other global features.
 
 ## Related resources
 
