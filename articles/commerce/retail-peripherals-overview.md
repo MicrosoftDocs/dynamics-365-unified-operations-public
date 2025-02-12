@@ -619,12 +619,12 @@ To edit or enable these values, follow these steps:
 1. If a **User Account Control** dialog appears, select **Yes**.
 1. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
 
-   The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only:
+   The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for only TLS 1.3 or TLS 1.2:
 
     - TLS 1.3\Server:Enabled=1
     - TLS 1.3\Client:Enabled=1
-    - TLS 1.2\Server:Enabled=0
-    - TLS 1.2\Client:Enabled=0
+    - TLS 1.2\Server:Enabled=1
+    - TLS 1.2\Client:Enabled=1
     - TLS 1.1\Server:Enabled=0
     - TLS 1.1\Client:Enabled=0
     - TLS 1.0\Server:Enabled=0
@@ -663,7 +663,7 @@ For information, see [Peripheral simulator for Commerce](dev-itpro/retail-periph
 
 The Store Commerce app is hardware agnostic. The peripheral device manufacturers or models listed below are known to work with Store commerce app. However, products from other manufacturers may work as well.
 
-Most point of sale peripherals whose manufacturers provide OPOS drivers will work seamlessly with Store Commerce app for Windows. OPOS peripherals can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
+Most point-of-sale peripherals whose manufacturers provide OPOS drivers will work seamlessly with Store Commerce app for Windows. Peripherals with OPOS drivers can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
 > [!NOTE]
 > Shared IIS hardware station only supports printers, payment terminals, and cash drawers.
 
@@ -676,7 +676,7 @@ Epson and Star OEMs are recommended for printers and cash drawers. Verify specif
 
 While printers and cash drawers from other OEMs may work with Store Commerce make sure to extensively test to ensure all scenarios work as expected. [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md) can be a resource used for initial basic testing.
 
-### Network peripherals
+#### Network peripherals
 Network-addressable Epson and Star Micronics receipt printers and cash drawers are supported and can be used over a network either directly through the Interprocess Communications (IPC) hardware station that is built into the Store Commerce for Windows application or through the shared IIS hardware station for Store Commerce for android and iOS applications.
 
 Refer to [Support for network peripherals](dev-itpro/network-peripherals.md) for more details and how to configure network peripherals with Store Commerce.
@@ -688,10 +688,19 @@ Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen
 You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 ### Bar code scanners
-Most bar code scanners that can function as a HID or keyboard wedge device will work with Store Commerce app. 
+Most bar code scanners that can function as a keyboard wedge device or have OPOS drivers will work with Store Commerce app. Make sure to extensively test to ensure all scenarios work as expected.
 
 ### MSRs
-Most magnetic stripe readers that can function as a HID or keyboard wedge device will work with Store Commerce app.
+Most magnetic stripe readers that can function as a keyboard wedge device or have OPOS drivers will work with Store Commerce app. Make sure to extensively test to ensure all scenarios work as expected.
+
+### Line display
+Epson and HP Integrated line displays connected via OPOS interface work with Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
+
+### Scale
+Datalogic scale devices connected via OPOS interface work with Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
+
+### Signature capture
+Scriptel signature capture devices connected via OPOS interface work with Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
 ## Troubleshooting
 ### Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
