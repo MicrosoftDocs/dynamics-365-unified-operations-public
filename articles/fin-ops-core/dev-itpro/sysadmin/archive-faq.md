@@ -2,7 +2,7 @@
 title: Finance and operations apps archive with Dataverse long term retention FAQ
 description: Access answers to frequently asked questions about archiving data in finance and operations apps with Dataverse.
 author: pnghub
-ms.author: gned
+ms.author: brijeshjoshi
 ms.topic: conceptual
 ms.date: 02/12/2025
 ms.custom: 
