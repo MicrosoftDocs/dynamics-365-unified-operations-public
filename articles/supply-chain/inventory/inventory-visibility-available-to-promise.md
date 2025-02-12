@@ -55,22 +55,17 @@ Follow these steps to turn on the *On-hand change schedule* feature in Power App
 1. On the navigation pane, select **Feature management**.
 1. On the **Available to promise** tile, select **Manage**.
 1. Set the **Enable feature** option to *True* to turn on the ATP feature.
-1. Set the **Schedule for 180 days** option to *True* to support the longer ATP schedule period (180 days).
-
-    > [!IMPORTANT]
-    > By default, the ATP feature is limited to seven days. The seven-day ATP and 180-day ATP features are separate and independent of each other. Schedule changes that you create or modify by using the seven-day ATP feature won't take effect when you turn on the 180-day ATP feature. If you've used the seven-day ATP feature and want to migrate to the 180-day feature, we recommend that you delete the old data and repost your on-hand change schedule after you enable the 180-day feature.
-
 1. Set the **Max schedule period (days)** field to the number of days that users can view and submit scheduled on-hand changes. Users who query for stock information will get the on-hand quantity, scheduled on-hand changes, and ATP for each day in the defined period, starting from the current date. The maximum value for this field is 180 days. By default, it's set to 30 days. Therefore, you can schedule changes for up to 30 days from today.
 
     > [!IMPORTANT]
     > The schedule period includes the current date. Therefore, users can schedule on-hand changes to occur any time from the current date (the day when the change is submitted) through (schedule period – 1) days in the future.
 
-1. In the **Schedule measures** section, set up schedule measures. You can use existing calculated measures as schedule measures, or you can create new ones. When you query Inventory Visibility, the ATP value is provided for defined calculated measures, based on the scheduled changes of component physical measures. In the **Schedule measures** section, select **New on-hand change schedule configuration V2** on the toolbar to add a new calculated measure binding for ATP. The calculated measure is what you want to use to find the currently available on-hand quantity. For information about how to create a calculated measure, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures).
+1. In the **Schedule Measures** section, set up schedule measures. You can use existing calculated measures as schedule measures, or you can create new ones. When you query Inventory Visibility, the ATP value is provided for defined calculated measures, based on the scheduled changes of component physical measures. In the **Schedule Measures** section, select **New OnHand Change Schedule Configuration V2** on the toolbar to add a new calculated measure binding for ATP. The calculated measure is what you want to use to find the currently available on-hand quantity. For information about how to create a calculated measure, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures).
 
     > [!IMPORTANT]
     > The default ATP calculated formula is for reference. You can modify and add other data sources and physical measures to set up the correct ATP calculation for your business.
 
-1. In the **ATP index set configuration** section, set up your ATP index. The ATP index resembles the *product index hierarchy* that lets you group query results by specific dimensions. For example, if you set *ColorId* and *SizeId* as your ATP index set, query results will be grouped by color and size. You can have multiple index sets.
+1. In the **ATP Index Set Configuration** section, set up your ATP index. The ATP index resembles the *product index hierarchy* that lets you group query results by specific dimensions. For example, if you set *ColorId* and *SizeId* as your ATP index set, query results will be grouped by color and size. You can have multiple index sets.
 
     > [!IMPORTANT]
     > The default *ColorId* and *SizeId* index is for reference. You can remove dimensions and add other dimensions.
@@ -79,30 +74,6 @@ Follow these steps to turn on the *On-hand change schedule* feature in Power App
 1. When you've finished configuring all the required settings, select **Update Configuration** under **Admin Settings** on the navigation pane.
 
 Learn more in [Complete and update the configuration](inventory-visibility-configuration.md).
-
-### Turn on and set up on-hand change scheduling and ATP in UI version 1
-
-This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
-
-Follow these steps to turn on the *On-hand change schedule* feature in Power Apps and configure the ATP settings.
-
-1. Sign in to Power Apps, and open the **Inventory Visibility** app.
-1. Open the **Configuration** page.
-1. On the **Feature Management** tab, turn on the *Available to promise* feature.
-1. Select the **ATP Setting** tab.
-1. When you query Inventory Visibility, it will provide a result that includes each ATP calculated measure that you add here. Select **Add** to add a new calculated measure for ATP.
-1. Set the following fields:
-
-    - **Data Source** – Select the data source that's associated with the calculated measure.
-    - **Calculated Measure** – Select the calculated measure that's associated with the selected data source, and that you want to use to find the currently available on-hand quantity.
-    - **Schedule Period** – Enter the number of days that users can view and submit scheduled on-hand changes when the selected calculated measure is used. Users who query for stock information will get the on-hand quantity, scheduled on-hand changes, and ATP for each day in this period, starting with the current date. Select an integer between 1 and 7.
-
-    > [!IMPORTANT]
-    > The schedule period includes the current date. Therefore, users can schedule on-hand changes to occur any time from the current date (the day when the change is submitted) through (schedule period – 1) days in the future.
-
-1. Select **Save**.
-1. Repeat steps 5 through 7 until you've added all the calculated measures that you require for ATP.
-1. When you've finished configuring all the required settings, select **Update Configuration**.
 
 ## How the on-hand change schedule and ATP calculations work
 
@@ -407,10 +378,10 @@ The following example shows a request body that contains a single on-hand change
 
 You can query scheduled on-hand changes and ATP results by submitting either a `POST` request or a `GET` request to the appropriate API URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section).
 
-In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results. By default, the query returns all ATP-related data from today. You can specify `ATPFromDate` and `ATPToDate` to narrow the results. (The "to" and "from" dates just filter the result. They don't affect how ATP is calculated.)
+In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results. By default, the query returns all ATP-related data from today. You can specify `ATPFromDate` and `ATPToDate` to narrow the results. (The "to" and "from" dates just filter the result. They don't affect how ATP is calculated.) Parameter `groupByValues` is required to match exactly one of your ATP index sets.
 
-- If you're submitting the request by using the `GET` method, set this parameter in the URL.
-- If you're submitting the request by using the `POST` method, set this parameter in the request body.
+- If you're submitting the request by using the `GET` method, set these parameters in the URL.
+- If you're submitting the request by using the `POST` method, set these parameters in the request body.
 
 > [!NOTE]
 > Regardless of whether the `returnNegative` parameter is set to *true* or *false* in the request body, the result will include negative values when you query for scheduled on-hand changes and ATP results. These negative values will be included because, if only demand orders are scheduled, or if supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. If negative values weren't included, the results would be confusing. For more information about this option and how it works for other types of queries, see [Inventory Visibility public APIs](inventory-visibility-api.md#query-with-post-method).
