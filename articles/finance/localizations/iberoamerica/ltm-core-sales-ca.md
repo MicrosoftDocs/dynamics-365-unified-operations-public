@@ -1,6 +1,6 @@
 ---
-title: Sales Authorization Code for Latin America
-description: Learn about the required configuration and usage of the Sales CA functionality for Latin America.
+title: Sales authorization code for Latin America
+description: Learn how to configure and use the Sales CA functionality for Latin America.
 author: Fhernandez0088
 ms.date: 02/12/2025
 ms.topic: how-to
@@ -9,53 +9,56 @@ ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ---
 
-# Sales Authorization Code for Latin America
+# Sales authorization code for Latin America
 
-This article explains how to configure and use the **Sales CA** functionality for Latin America.
+This article explains how to configure and use the sales authorization code (Sales CA) functionality for Latin America. This functionality lets you use the field for the Sales CA number in the **LATAM** section of purchase and sales invoices to assign an additional number to a selected invoice.
 
-This functionality allows you to assign an additional number to a purchase or sales invoice in **Sales CA** field in the **LATAM** section of the selected invoice.
+The Sales CA number can be assigned either manually or automatically.
 
-This number can be assigned manually or automatically.
+## Manual assignment of Sales CA numbers
 
-## Prerequisites to enter a manual Sales CA number
+### Prerequisites
 
-Before you can assign a manual **Sales CA** number to a purchase or sales invoice, the following prerequisites must be met:
+Before you can manually assign Sales CA numbers to purchase or sales invoices, the following prerequisites must be met:
 
-- The company/region of the legal entity must be in a LATAM supported country.
-- The LATAM general and the country specific features must be enabled.
-- In the **Document class** configuration, set the **Require CA number** slider to **Yes**.
-- In the **Document class** configuration, set the entry type of the document mask to **Manual**.
+- The company/region of the legal entity must be in a LATAM-supported country.
+- Both the general LATAM feature and the country/region-specific LATAM feature must be enabled.
+- In the **document class** configuration, set the **Require CA number** option to **Yes**.
+- In the **document class** configuration, set the entry type of the document mask to **Manual**.
 
 Learn more in [Document classes for Latin America](ltm-core-document-class.md).
 
-## Enter a manual Sales CA number in a sales or purchase invoice
+### Manually assign a Sales CA number to a sales or purchase invoice
 
-When manually posting a purchase or sales invoice in the LATAM section, complete the **CA number** and the **CA due date** fields.
+When you manually post a purchase or sales invoice, in the **LATAM** section, set the **CA number** and **CA due date** fields.
 
-After completing the rest of the information needed, post the invoice and the number is recorded in the transaction.
+After you complete the rest of the required information, post the invoice. The Sales CA number is recorded in the transaction.
 
-## Prerequisites to enter an automatic Sales CA number
+## Automatic assignment of Sales CA numbers
 
-Before you can assign an automatic **Sales CA** number to a purchase or sales invoice, the following prerequisites must be met:
+### Prerequisites
 
-- The company/region of the legal entity must be in a LATAM supported country.
-- The LATAM general and the country specific features must be enabled.
-- In the **Document class** configuration, set the **Require CA number** slider to **Yes**.
-- In the **Document class** configuration, set the entry type of the document mask to **Auto**.
-- In the **Sales point prefix** configuration that you want to use, set the **Validate CA** slider to **Yes**.
+Before Sales CA numbers can be automatically assigned to purchase or sales invoices, the following prerequisites must be met:
+
+- The company/region of the legal entity must be in a LATAM-supported country.
+- Both the general LATAM feature and the country/region-specific LATAM feature must be enabled.
+- In the **document class** configuration, set the **Require CA number** option to **Yes**.
+- In the **document class** configuration, set the entry type of the document mask to **Auto**.
+- In the **sales point prefix** configuration that you want to use, set the **Validate CA** option to **Yes**.
 
 Learn more in [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
 
-## Automatic Sales CA configuration
+### Configure automatic assignment of Sales CA numbers
 
-1. Go to the **Document class sales point** of the **Document class** that you want to with the invoice and select **Sales CA** in the top menu.
-2. Select **New**.
-3. In the **Authorization code (CA)** field, enter the authorization code desired.
-4. Enter the period when the Sales CA will be valid in the **Date from** and **Date to** fields.
-5. Enter the document number interval where the Sales CA will be valid.
+1. Go to the document class sales point of the document class that you want to use with the invoice.
+1. On the Action Pane, select **Sales CA**.
+1. Select **New**.
+1. In the **Authorization code (CA)** field, enter the desired authorization code.
+1. In the **Date from** and **Date to** fields, define the period when the Sales CA number will be valid.
+1. Enter the document number interval that the Sales CA number will be valid for.
 
-Learn more in [Document class sales point for Latin America](ltm-core-document-class-sales-point.md)
+Learn more in [Document class sales point for Latin America](ltm-core-document-class-sales-point.md).
 
-## Automatically assign a Sales CA number in a sales or purchase invoice.
+### Automatically assign a Sales CA number to a sales or purchase invoice
 
-When posting an invoice, in the LATAM section select the document class and sales point configured with the Sales CA setup and the fields **CA number** and **CA due date** should appear filled with the Sales CA number and due date previously configured.
+When you post a purchase or sales invoicee, in the **LATAM** section, select the document class and sales point that are configured in the Sales CA number setup. The **CA number** and **CA due date** fields should automatically be set to the Sales CA number and due date that you previously configured.
