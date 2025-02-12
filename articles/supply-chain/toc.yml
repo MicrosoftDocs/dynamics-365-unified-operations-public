@@ -277,17 +277,17 @@
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
-              href: ../finance/localizations/global/e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
             - name: Import a feature from the Global repository
-              href: ../finance/localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
             - name: Create a new Globalization feature
-              href: ../finance/localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Work with configurations
-              href: ../finance/localizations/global/e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
-              href: ../finance/localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
             - name: Complete, publish, and deploy a Globalization feature
-              href: ../finance/localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Share with other organizations
               href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
@@ -303,7 +303,7 @@
               - name: Activate and set up integration with Electronic Invoicing
                 href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
               - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
               - name: Work with Electronic Invoicing
                 items:
                 - name: Submit electronic documents to Electronic Invoicing
