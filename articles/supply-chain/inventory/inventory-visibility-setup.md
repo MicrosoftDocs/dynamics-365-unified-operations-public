@@ -129,8 +129,8 @@ Follow these steps to install the Inventory Visibility Add-in.
 1. Select the environment where you want to install the add-in.
 1. On the top bar, select **Resources** \> **Dynamics 365 apps**.
 1. Select **Install App**.
-1. Select *Dynamics 365 Finance and Operations Platform Tools*. This app provides platform support for IV registration. If you have more than one license that provides access to this app, there might be multiple entries for the same app. In this case, select any entry that has a status of **Enabled**. Then select **Next**.
-1. Agree to the terms of service and select **Install**. Wait for the installation to be completed before you move on to the next step. When the installation is completed, the value in the **Status** column changes from *Installing* to *Installed*.
+1. Select the *Dynamics 365 Finance and Operations Platform Tools* app. This app provides platform support for registering Inventory Visibility. If you have more than one license that provides access to this app, there might be multiple entries for it. In this case, select any entry that has a status of **Enabled**. Then select **Next**.
+1. Agree to the terms of service and select **Install**. Wait for the installation to finish before you move on to the next step. When the installation finishes, the value in the **Status** column changes from *Installing* to *Installed*.
 1. Select **Install App**.
 1. Find *Dynamics 365 Inventory Visibility* in the list, and select **Next**.
 1. Set the following fields for your environment:

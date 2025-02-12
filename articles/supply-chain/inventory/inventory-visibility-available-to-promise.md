@@ -378,7 +378,7 @@ The following example shows a request body that contains a single on-hand change
 
 You can query scheduled on-hand changes and ATP results by submitting either a `POST` request or a `GET` request to the appropriate API URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section).
 
-In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results. By default, the query returns all ATP-related data from today. You can specify `ATPFromDate` and `ATPToDate` to narrow the results. (The "to" and "from" dates just filter the result. They don't affect how ATP is calculated.) Parameter `groupByValues` is required to match exactly one of your ATP index sets.
+In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results. By default, the query returns all ATP-related data from today. You can specify `ATPFromDate` and `ATPToDate` to narrow the results. (The "to" and "from" dates just filter the result. They don't affect how ATP is calculated.) The value of the `groupByValues` parameter must exactly match one of your ATP index sets.
 
 - If you're submitting the request by using the `GET` method, set these parameters in the URL.
 - If you're submitting the request by using the `POST` method, set these parameters in the request body.
