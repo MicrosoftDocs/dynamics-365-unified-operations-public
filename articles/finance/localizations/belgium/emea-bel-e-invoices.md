@@ -90,26 +90,25 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - **Vendor invoice Mapping to destination**
     - **Import invoice context model**
     
-## ===========================
-
 ## Configure the electronic invoicing feature
 
-Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+Some of the parameters from the **Belgian electronic invoice (BE)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
-To review and update the **Polish electronic invoice (PL)** electronic invoicing feature configuration, follow these steps.
+To review and update the **Belgian electronic invoice (BE)** electronic invoicing feature configuration, follow these steps.
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then  Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Create a copy of the previously imported **Belgian electronic invoice (BE)** Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Polish KSEF services.
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with **Edicom** services.
 
-    - **EnvironmentName** – select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
-    - **PolishClientID** – select the name of the [client ID](#ClID) that you previously created.
-    - **PolishImportDataChannel** – enter the [name of the data channel](#ImpChn) that you previously defined.
-    - **PolishPublicKey** – select the name of the [public key](#PK) that you previously created.
-    - **PolishToken** – select the name of the [token](#Tok) that you previously created.
+    - **Service ID** – The service ID (Domain) number obtained from Edicom and used for company identification.
+    - **Group** – The group code is used for internal routing within the Edicom infrastructure.
+    - **Destination** – The destination is constructed from the service ID number concatenated with the string **_EDIWIN**. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
+    - **Token** – select the name of the [token](#Tok) that you previously created.
 
-    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Poland.](e-inv-pol-feature-parameters.jpg)
+    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Belgium.](emea-bel-einoices-feature-parameters.jpg)
+
+## ===========================
 
 1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
 1. On the **Applicability rules** tab, in the **Set up applicability rule** section, in the **Value** field, enter the [name of the data channel](#ImpChn) that you previously defined.
