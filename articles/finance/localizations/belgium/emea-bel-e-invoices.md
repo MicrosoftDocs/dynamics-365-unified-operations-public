@@ -202,10 +202,43 @@ To enter the contact person, follow these steps.
     The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
-> For both, Seller and Buyer identification, the schema **9925** (Belgium VAT number) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there is a necessity to redefine the default schema then perform the steps described in the next chapter. Otherwise you can ignore the next chapter.
+> For both, Seller and Buyer identification, the schema **9925** (Belgium VAT number) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there is a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
 
+## Configure identification schemas
 
-CompanyEndpointType CustomerEndpointType
+Follow the configuration steps in this section only if you need to redefine the default identification schemas for Sellers and/or Buyers.
+
+### Configure electronic document properties
+
+To configure electronic document properties, follow these steps.
+
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
+1. In the **Type** field, enter **CompanyEndpointType**. You must enter the value exactly as it appears here. It will be used for the **Seller** identification schema definition.
+1. Select **Applicability** to add an applicable table.
+1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Legal entities** table name.
+1. Save your changes, and return to the **Electronic document property types** page.
+1. Select **New** to created another Electronic document property type.
+1. In the **Type** field, enter **CustomerEndpointType**. You must enter the value exactly as it appears here. It will be used for the **Buyer** identification schema definition.
+1. Select **Applicability** to add an applicable table.
+1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Customers** table name.
+1. Save your changes, and return to the **Electronic document property types** page.
+1. Save your changes, and close the page.
+
+    ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
+
+### Enter the Seller schema code
+
+To enter the Seller schema code, follow these steps.
+
+!!!!!!!!!!!!!!!!!!!!!!! =========================
+
+### Enter the Buyer schema codes
+
+To enter the Buyer schema codes, follow these steps.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
+1. In the **Value** column, enter **PEPPOL**. You must enter the value exactly as it appears here.
 
 ## Configure units of measure
 
@@ -254,39 +287,6 @@ According to PEPPOL requirements, when you register free text invoices, invoices
     1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
     2. Create a new invoice proposal, or select an existing invoice proposal.
     3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
-
-
-### <a id="FormatType"></a>Configure the output format type
-
-By default, all outgoing electronic invoices are generated in OIOUBL format for all customers. However, by using configurable electronic document property types, you can configure electronic invoices so that they are generated in PEPPOL format for specific customers.
-
-> [!NOTE]
-> Follow the configuration steps in this section only if you must also generate electronic invoices in PEPPOL format. If you generate them only in OIOUBL format, you can skip these steps.
-
-#### Configure electronic document properties
-
-To configure electronic document properties, follow these steps.
-
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
-1. In the **Type** field, enter **FormatType**. You must enter the value exactly as it appears here.
-1. Select **Applicability** to add an applicable table.
-1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Customers** table name.
-1. Save your changes, and return to the **Electronic document property types** page.
-
-    ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
-
-#### Enter the type of format
-
-To enter the type of format for specific customers, follow these steps.
-
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
-1. In the **Value** column, enter **PEPPOL**. You must enter the value exactly as it appears here.
-
-    > [!NOTE]
-    > The system generates electronic invoices in PEPPOL format only if you enter the value **PEPPOL** here. If you enter a different value, or no value, electronic invoices are generated in the default OIOUBL format.
-
-    ![Screenshot that shows PEPPOL entered in the Value column on the Electronic document properties page.](../media/emea_dk_format_type.jpg)
 
 ## Issue electronic invoices
 
