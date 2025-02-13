@@ -37,11 +37,11 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 Starting with version 0.2.1239020 of the **Dynamics 365 finance and operations tools** extension, it is possible to deploy packages to local business data environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You will then be able to select **Software deployable package for on-premises environments** under the **Type of asset** field.
 
 > [!NOTE]
-> The entire pipeline run will take more than one hour, so you shouldn't use the free Microsoft-hosted agents as they will timeout.
+> The entire pipeline run takes more than one hour, so you shouldn't use the free Microsoft-hosted agents as they will time out.
 
 ## Dynamics 365 Commerce Cloud Scale Unit (CSU) extension and e-Commerce package deployment
 
-Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deployment** task supports deploying Commerce packages. A new field type called **Type of asset** has been added to select the Commerce package deployment type. The values available for this field are:
+Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deployment** task supports deploying Commerce packages. A new field type called **Type of asset** is added to select the Commerce package deployment type. The values available for this field are:
 
 - **Software deployable package - Finance and Operation environment deployment** (default value)
 - **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** 
@@ -68,7 +68,7 @@ The following table describes the options that are available for this task.
 | Commerce Cloud Scale Unit Name | No | Enter the name of the Commerce Cloud Scale Unit environment, you can find the environment name in the environment's details page, under **Environment FEATURES** \> **Commerce** \> **Manage** \> **Commerce deployment & setup** \> **Commerce scale units**. If the package type is selected as **Commerce Cloud Scale Unit Extension** then the value for the field **Commerce Cloud Scale Unit Name** is mandatory. |
 | e-Commerce Environment Name | No | Enter the name of the e-Commerce environment, you can find the environment name in the environment's details page, under **Environment FEATURES** \> **Commerce** \> **Manage** \> **Commerce deployment & setup** \> **e-Commerce.** If the package type is selected as **e-Commerce Package** then value for the field **e-Commerce Environment Name** is mandatory. |
 | Name for the update | Yes | Enter the name that is shown for the update in the environment history in Dynamics Lifecycle Services. |
-| Wait for Completion | Cleared (No) | Use this check box to instruct the task to wait until the deployment of the asset has either succeeded or failed. If it's cleared (**No**), the task will only start the deployment. If the task is instructed to wait, a pipeline time-out might occur during long-running deployments. For more information about time-out options, see [Timeouts](/azure/devops/pipelines/process/phases#timeouts). |
+| Wait for Completion | Cleared (No) | Use this check box to instruct the task to wait until the deployment of the asset has either succeeded or failed. If it's cleared (**No**), the task will only start the deployment. If the task is instructed to wait, a pipeline time-out might occur during long-running deployments. For more information about time-out options, see [time-outs](/azure/devops/pipelines/process/phases#timeouts). |
 
 > [!NOTE]
 > The LCS File Asset ID can be obtained dynamically by using the output variable from the [Dynamics Lifecycle Services Asset Upload](pipeline-asset-upload.md) task. To get LCS File Asset ID, use FileAssetId. For example: $(\<VARIABLENAME\>.FileAssetId). For more information, see [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks).

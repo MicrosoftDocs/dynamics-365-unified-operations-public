@@ -1,8 +1,8 @@
 ---
 title: Update LCS Connection authentication tasks to MSAL in Azure Pipelines
 description: Learn about how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
-author: pathaku
-ms.author: pathaku
+author: snamilikonda
+ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
