@@ -1,6 +1,6 @@
 ---
 title: User security governance overview 
-description: Learn about user security governance in Microsoft Dynamics 365 finance and operations.
+description: Learn about user security governance in Microsoft Dynamics 365.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
@@ -19,15 +19,13 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-User security governance helps organizations create their security architecture that is closely aligned with their business processes, keeping robust governance, efficient user management, and cost-effective licensing
-strategies. Advanced security and role management features empower organizations to apply precise role management, advanced audit capabilities, and comprehensive license optimization tools, while maintaining a 
-seamless user experience in Microsoft Dynamics 365. 
+User security governance helps organizations create security architecture that is closely aligned with their business processes. This feature empowers organizations to apply precise role management, advanced audit capabilities, and comprehensive license optimization tools. 
 
 User security governance provides the following capabilities: 
  - Detailed segregation of duty and separation of privileges reports​
- - Promote process-based security roles, duty and/or privilege
- - Easily allows new roles/ duties from the existing objects through import processes​
- - Provide temporary role capabilities​
+ - Process-based security roles, duty and/or privilege
+ - Allows new roles/ duties from the existing objects through import processes​
+ - Provides temporary role capabilities​
  - Privileged user management enables dedicated accounts to gain time-bound access​
 
 
