@@ -23,7 +23,8 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 
 
 
-> [!NOTE] (Not required for Version 2.\* and later.) Only Version 1.\* of the download task requires availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the download task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
+> [!NOTE] 
+> (Not required for Version 2.\* and later.) Only Version 1.\* of the download task requires availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the download task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
 

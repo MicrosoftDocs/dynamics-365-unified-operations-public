@@ -49,7 +49,8 @@ Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deploy
 
 Selecting either the **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** or **e-Commerce Package - e-Commerce environment deployment** options will override previous deployments. If you have multiple CSU extensions packages, then all CSU packages must be merged as one package for deployment.
 
-> [!NOTE] (Not required for Version 4.\* and later.) Versions 2.\* and 3.\* of the deployment task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the deployment task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
+> [!NOTE]
+> (Not required for Version 4.\* and later.) Versions 2.\* and 3.\* of the deployment task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the deployment task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
 
@@ -70,7 +71,7 @@ The following table describes the options that are available for this task.
 | Wait for Completion | Cleared (No) | Use this check box to instruct the task to wait until the deployment of the asset has either succeeded or failed. If it's cleared (**No**), the task will only start the deployment. If the task is instructed to wait, a pipeline time-out might occur during long-running deployments. For more information about time-out options, see [Timeouts](/azure/devops/pipelines/process/phases#timeouts). |
 
 > [!NOTE]
-> The LCS File Asset ID can be obtained dynamically by using the output variable from the [Dynamics Lifecycle Services Asset Upload](pipeline-asset-upload.md) task. To get LCS File Asset ID, use FileAssetId. For example: $(<TASK NAME>.FileAssetId). For more information, see [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks).
+> The LCS File Asset ID can be obtained dynamically by using the output variable from the [Dynamics Lifecycle Services Asset Upload](pipeline-asset-upload.md) task. To get LCS File Asset ID, use FileAssetId. For example: $(\<VARIABLENAME\>.FileAssetId). For more information, see [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
