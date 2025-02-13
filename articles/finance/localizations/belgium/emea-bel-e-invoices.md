@@ -309,58 +309,13 @@ You can inquire about the results of the submission by going to **Organization a
 
 ## Receive incoming electronic invoices
 
-To import incoming invoices in OIOUBL and PEPPOL formats, follow these additional configuration steps for the same version of the **Danish electronic invoice (DK)** electronic invoicing feature that is used for outgoing invoice submission.
-
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
-1. On the **Versions** tab, verify that **Draft** is selected.
-1. On the **Setups** tab, in the grid, select **Incoming OIOUBL**, and then select **Edit**.
-1. <a id="ImportChannel"></a>On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. For the OIOUBL format, the default channel name is **EdiOIOUBL**. For the PEPPOL format, it's **EdiPEPPOL**. In both cases, make a note of the value, because you must use it in later configuration steps.
-1. Select the **Service ID** parameter, and then select the name of the secret that contains the service ID number.
-1. Select the **Group** parameter, and then select the name of the secret that contains the group code.
-1. Select the **Token** parameter, and then select the name of the secret that you created for the token.
-1. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you defined earlier.
-1. Select **Save**, and close the page.
-1. If an import in PEPPOL format is also required, repeat steps 4 through 10 for the **Incoming PEPPOL** feature setup.
-1. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
+To import incoming invoices .........................................................
 
 ### Finance configuration
 
 Some additional parameters must be configured directly in Finance.
 
 To configure the additional parameters directly in Finance, follow these steps.
-
-1. Make sure that the latest version of the **Vendor invoice import (DK)** ER configuration is imported.
-
-    > [!NOTE]
-    > The **Vendor invoice import (DK)** format configuration is used for import invoices in OIOUBL format. It's based on the parent **Vendor invoice import** format configuration that implements invoice import in PEPPOL format. The formats use the **Invoice model** and **Vendor invoice Mapping to destination** configurations. All additional configurations that are required are automatically imported.
-
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select **Customer invoice context model**.
-1. Select **Create configuration**, and then, in the dropdown dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-
-    > [!NOTE]
-    > The derived configuration must differ from the configuration that is used for the invoice *submission* setup.
-
-1. Open the derived configuration to edit it in the designer, and then select **Map model to datasource**.
-1. Open the **DataChannel** definition to edit it in the designer.
-1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. In the **Value** field, select **Edit**, and then enter the [import channel](#ImportChannel) name.
-1. Save your changes, and complete the derived configuration.
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [import channel](#ImportChannel) name that you created earlier.
-1. In the **Channels** section, in the **Company** field, select a required legal entity.
-1. In the **Document context** field, select the **Customer invoice context model** configuration.
-1. In the **Import sources** section, in the **Name** field, enter the same **ResponseXml** name that is used in the variable for **Decoded file** in the import feature setup.
-
-    ![Screenshot that shows the ResponseXml variable in the import feature setup.](../media/isv_connector_responseXML.jpg)
-
-1. In the **Data entity name** field, select **Vendor invoice header**.
-1. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
-
-    ![Screenshot that shows Vendor invoice import (DK) referenced in the Model mapping field.](../media/isv_connector_import_channel.jpg)
-
-1. If import in PEPPOL format is also required, create another import channel, and repeat steps 3 through 15 for it. In step 15, reference the **Vendor invoice import** configuration.
-1. Select **Save**, and close the page.
 
 ### Configure Finance business data
 
@@ -382,106 +337,6 @@ To receive electronic invoices, follow these steps.
 To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
 To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
-
-## Send responses for received electronic invoices
-
-After incoming vendor invoices are successfully received, you can respond to invoice issuers about the decision to accept or reject the received invoices. Rejection responses can be sent for both incoming invoice formats, OIOUBL and PEPPOL. Acceptance responses aren't assumed. If no rejection response is sent during an agreed-on time, the invoices are considered automatically accepted.
-
-For the PEPPOL format, a receipt acknowledgement message can also be sent. This message is a technical confirmation of invoice receipt. The invoices can still be rejected later from a business perspective.
-
-### Configure responses
-
-Responses can be configured by using electronic document property types in the same manner as [format types](#FormatType).
-
-#### Configure electronic document properties
-
-To configure electronic document properties, follow these steps.
-
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
-1. In the **Type** field, enter **RejectResponse**. You must enter the value exactly as it appears here.
-1. Select **Applicability** to add an applicable table.
-1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
-1. Save your changes, and return to the **Electronic document property types** page.
-1. Select **New** to create another electronic document property type.
-1. In the **Type** field, enter **MessageResponse**. You must enter the value exactly as it appears here.
-1. Select **Applicability** to add an applicable table.
-1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
-1. Save your changes, and return to the **Electronic document property types** page.
-1. Select the existing [FormatType](#FormatType) electronic document property type.
-1. Select **Applicability** to add an applicable table.
-1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Vendors** table name.
-
-    > [!NOTE]
-    > The same electronic document property type is used to determine which response type is generated for a specific vendor: **OIOUBL application response** or **PEPPOL invoice level response**.
-
-1. Save your changes, and return to the **Electronic document property types** page.
-
-    ![Screenshot that shows the property type added on the Electronic document property types page for responses.](../media/emea_dk_response_types_setup.jpg)
-
-#### Define responses formats
-
-To identify which response format type is used for a specific vendor, follow these steps.
-
-1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-1. Select a specific vendor in the list, and then, on the Action Pane, on the **Vendor** tab, in the **Properties** group, select **Electronic document properties**.
-1. In the **Value** column, enter **PEPPOL**. You must enter the value exactly as it appears here.
-
-    > [!NOTE]
-    > The system generates invoice-level responses in PEPPOL format only if you enter the value **PEPPOL** here. If you enter a different value, or no value, application responses are generated in the default OIOUBL format.
-
-#### Enter responses
-
-To enter responses for specific pending vendor invoices, follow these steps.
-
-1. Go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
-1. Select a specific pending vendor invoice in the list, and then, on the Action Pane, on the **Vendor invoice** tab, in the **Properties** group, select **Electronic document properties**.
-1. Select the **RejectResponse** type.
-1. In the **Value** column, enter the rejection reason. This text is sent back to the invoice issuer as justification for the rejection. **OIOUBL application response** or **PEPPOL invoice level response** messages are generated and sent only if you enter a non-empty value. 
-1. Select the **MessageResponse** type.
-1. In the **Value** column, enter any text that should be used as an acknowledgement message. This text is sent back to the invoice issuer as confirmation of invoice receipt. **PEPPOL message level response** messages are generated and sent only if you enter a non-empty value.
-
-### Configure electronic invoicing feature setups
-
-Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update the authorization credentials that are required for response submission via the ISV last-mile connector.
-
-To review and update the authorization credentials, follow these steps.
-
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 5** or later. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create a feature based on an existing feature](../global/gs-e-invoicing-create-new-globalization-feature.md#create-a-feature-based-on-an-existing-feature).
-1. On the **Versions** tab, verify that **Draft** is selected.
-1. On the **Setups** tab, in the grid, select the **Application Response OIOUBL** feature setup, and then select **Edit**.
-1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
-1. In the **Parameters** section, select **Domain**, and then enter the service ID number that you obtained.
-1. Select **Application**, and then enter the same service ID number.
-1. Select **Destination**, and then enter the service ID number concatenated with the string "\_EDIWIN." For example, if the service ID number is **123456**, enter **123456\_EDIWIN**.
-1. Select **Group**, and then enter the group code that you obtained.
-1. Select **Auth token**, and then select the name of the secret that you created for the token.
-1. Select **Save**, and close the page.
-1. Repeat steps 4 through 11 for each of the following feature setups if your business process assumes that responses are sent in PEPPOL format:
-
-    - Invoice Response PEPPOL
-    - Message Response PEPPOL
-
-### Configure electronic document parameters
-
-To configure electronic document parameters, follow these steps.
-
-1. Make sure that the latest country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. In the **Electronic document** section, add a record for the **VendInvoiceInfoTable** table name.
-1. Set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-1. In the **Company** column, you can select a legal entity code to limit the applicability of this electronic document type. If you don't select a value, electronic documents of this type are processed in all legal entities.
-1. Save your changes, and close the page.
-
-### Send responses
-
-To generate and submit responses, follow these steps.
-
-1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
-1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
-
-You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. In the **Document type** field, select **Vendor invoices** to filter only responses submissions. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 ## Additional resources
 
