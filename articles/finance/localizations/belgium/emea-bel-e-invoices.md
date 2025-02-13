@@ -325,7 +325,7 @@ You must configure the following types of master data to provide a match for inc
 - Products
 - Units
 
-Follow the configuration steps in [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md). Start from the [Configure vendor data](../denmark/emea-dnk-vend-e-invoice.md#configure-vendor-data) section.
+Follow the configuration steps in [Import vendor electronic invoices](../europe/emea-peppol-import.md). Start from the [Configure vendor data](../europe/emea-peppol-import.md#configure-vendor-data) section.
 
 ### Receive electronic invoices
 
@@ -340,8 +340,7 @@ To view successfully received invoices, go to **Accounts payable** \> **Invoices
 
 ## Additional resources
 
-- [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md)
-- [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md)
+- [Import vendor electronic invoices](../europe/emea-peppol-import.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
