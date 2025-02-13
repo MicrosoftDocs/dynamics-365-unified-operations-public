@@ -231,8 +231,8 @@ To configure electronic document properties, follow these steps.
 To enter the Seller schema code, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities** and select a legal entity.
-1. 
-!!!!!!!!!!!!!!!!!!!!!!! =========================
+1. Select **Electronic document properties** from the Action Pane.
+1. In the **Value** column, enter the required Seller schema code.
 
 ### Enter the Buyer schema codes
 
@@ -240,8 +240,10 @@ To enter the Buyer schema codes, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
-1. In the **Value** column, enter the required schema code.
+1. In the **Value** column, enter the required Buyer schema code.
 
+> [!NOTE]
+> The schema codes definend via the Electronic document property types have a higher priority then the default **9925** schema code.
 
 ## Configure units of measure
 
