@@ -224,7 +224,7 @@ To configure electronic document properties, follow these steps.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-    ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
+    ![Screenshot that shows the property type added on the Electronic document property types page.](emea-bel-einoices-schemas.jpg)
 
 ### Enter the Seller schema code
 
