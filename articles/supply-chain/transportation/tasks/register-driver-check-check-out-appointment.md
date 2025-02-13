@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to register a driver check-in and a driver check-out, which represent a driver arriving at or leaving a facility. The procedures can be done either within the Finance and Operations user interface or on the Warehouse Mobile App. See [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse)
+This article describes how to register a driver check-in and a driver check-out, which represent a driver arriving at or leaving a facility. The procedures can be done either within the Finance and Operations user interface or on the Warehouse Mobile App. See [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse) for how to add these menu items to the Warehouse Management mobile app.
 
 This feature is used to keep track of whether loads have been picked up or dropped off, as well as whether carriers are arriving and departing within the agreed-upon appointments. It will calculate and show if carriers are late in checking in and/or out.
 
@@ -45,7 +45,7 @@ If the driver check-in was registered within the scheduled appointment window, t
 
 ## Register driver check-out
 
-Once loading or unloading has finished and the driver has left the facility, you can register this by using the **Driver check-out** functionality. This can be done through the Finance and Operations user interface or the Warehouse Mobile App.
+Once loading or unloading has finished and the driver has left the facility, you can register this by using the **Driver check-out** functionality. This can be done through the web client or the Warehouse Management mobile app.
 
 Via web client:
 
@@ -78,8 +78,8 @@ Select **Display completed and canceled appointments** to show previous closed a
 | *Late on check out* | The driver checked in but hasn't checked out, and the alert interval has now expired. |
 
 These statuses help warehouse and transportation managers to:
-1.	Track the status of ongoing shipments and be able to follow up with carriers on any loads that are deviating from the plan.
-2.	Identify trends in timeliness of certain carriers by having data on how many times each carrier was late.
+1.	Track the status of ongoing shipments and be able to follow up with carriers on any loads that are deviating from the plan as well as to mitigate delays.
+2.	Identify trends in timeliness of each carrier.
 3.	Identify potential problems in own warehouse operations through late check-outs caused by delays in loading or unloading.
 
 
