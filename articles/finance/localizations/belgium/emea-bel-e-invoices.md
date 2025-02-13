@@ -295,15 +295,17 @@ According to PEPPOL requirements, when you register free text invoices, invoices
 
 ## Issue electronic invoices
 
+AAAAAAAAAAAAAAAAAAAAAAAAA==================================================================AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more about how to generate electronic invoices in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 > [!IMPORTANT]
-> In current implementations, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of Danish electronic invoices requires that you complete the following additional steps.
+> In current implementations, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of electronic invoices requires that you complete the following additional steps.
 
 To submit the generated electronic invoices in batch mode, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
+1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
