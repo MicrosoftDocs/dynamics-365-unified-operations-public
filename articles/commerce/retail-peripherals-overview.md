@@ -15,7 +15,6 @@ ms.custom:
 # Peripherals
 
 [!include[banner](includes/banner.md)]
-[!include[banner](includes/preview-banner.md)]
 
 This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
