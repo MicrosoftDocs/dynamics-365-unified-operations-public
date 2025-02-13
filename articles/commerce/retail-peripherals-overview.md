@@ -3,7 +3,7 @@ title: Peripherals
 description: This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. 
 author: anush6121
 ms.author: anvenkat
-ms.date: 08/07/2024
+ms.date: 02/13/2024
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -50,7 +50,7 @@ When configuring hardware station for Commerce versions 10.0.41 and earlier, you
 
 ### POS registers
 
-Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that is used at the register, the store to which the register is mapped, and the visual experience for the user who signs in to that register.
+Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. The POS register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that is used at the register, the store to which the register is mapped, and the visual experience for the user who signs in to that register.
 
 ### Devices
 
@@ -91,7 +91,7 @@ POS peripherals are typically divided into classes. This section describes and g
 
 ### Printer
 
-Printers include traditional POS receipt printers and full-page printers. Printers are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces. Epson and Star are the preferred receipt printer original equipment manufacturers (OEMs). For other OEMs, you must create extensions to integrate with them. Up to two printers can be used at the same time. This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers. Customer orders, which carry more information, are printed on a full-page printer. Receipt printers can be connected directly to a computer via USB, connected to a  via Ethernet, or connected via Bluetooth. 
+Printers include traditional POS receipt printers and full-page printers. Printers are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces. Epson and Star are the preferred receipt printer original equipment manufacturers (OEMs). For other OEMs, you must create extensions to integrate with them. Up to two printers can be used at the same time. This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers. Customer orders, which carry more information, are printed on a full-page printer. Receipt printers can be connected directly to a computer via USB, connected via Ethernet, or connected via Bluetooth. 
 
 ### Scanner
 
@@ -661,25 +661,26 @@ For information, see [Peripheral simulator for Commerce](dev-itpro/retail-periph
 
 ## Considerations for choosing peripheral device OEMs and models
 
-The Store Commerce app is hardware agnostic. The peripheral device manufacturers or models listed below are known to work with Store commerce app. However, products from other manufacturers may work as well.
+The Store Commerce app is hardware agnostic. The peripheral device manufacturers or models listed below are known to work with the Store Commerce app. However, products from other manufacturers may work as well.
 
-Most point-of-sale peripherals whose manufacturers provide OPOS drivers will work seamlessly with Store Commerce app for Windows. Peripherals with OPOS drivers can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
+Most POS peripherals whose manufacturers provide OPOS drivers work seamlessly with Store Commerce for Windows. Peripherals with OPOS drivers can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
+
 > [!NOTE]
-> Shared IIS hardware station only supports printers, payment terminals, and cash drawers.
+> Shared IIS hardware stations only support printers, payment terminals, and cash drawers.
 
-Store Commerce for Android and iOS devices can also leverage network-connected payment terminals, printers and cash drawers. Additionally, bar code scanners that support Bluetooth connectivity can be paired with devices running Store Commerce for Windows, Android and iOS and used in HID mode.
+Store Commerce for Android and iOS devices can also use network-connected payment terminals, printers, and cash drawers. Barcode scanners that support Bluetooth connectivity can be paired with devices running Store Commerce for Windows, Android, and iOS that are used in human interface device (HID) mode.
 
-Please consider the manufacturers or models in this list as suggestions rather than recommendations.
+Consider the manufacturers or models in the following list as suggestions rather than recommendations.
 
-### Printers and Cash drawers
-Epson and Star OEMs are recommended for printers and cash drawers. Verify specific model details against the latest offerings from the manufacturers. Most cash drawers from other OEMs that can connect to a printer's d/k port will work with Store Commerce.
+### Printers and cash drawers
+Microsoft supports Epson and Star OEMs for printers and cash drawers. Verify specific model details against the latest offerings from the manufacturers. Most cash drawers from other OEMs that can connect to a printer's drawer kick (D/K) port work with Store Commerce.
 
-While printers and cash drawers from other OEMs may work with Store Commerce make sure to extensively test to ensure all scenarios work as expected. [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md) can be a resource used for initial basic testing.
+While printers and cash drawers from other OEMs may work with Store Commerce, make sure to extensively test to ensure that all scenarios work as expected. You can use the [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md) as a resource used for initial basic testing.
 
 #### Network peripherals
-Network-addressable Epson and Star Micronics receipt printers and cash drawers are supported and can be used over a network either directly through the Interprocess Communications (IPC) hardware station that is built into the Store Commerce for Windows application or through the shared IIS hardware station for Store Commerce for android and iOS applications.
+Microsoft supports network-addressable Epson and Star Micronics receipt printers and cash drawers. These receipt printers and cash drawers can be used over a network either directly through the Interprocess Communications (IPC) hardware station built into the Store Commerce for Windows application, or through the shared IIS hardware station for Store Commerce for Android and iOS applications.
 
-Refer to [Support for network peripherals](dev-itpro/network-peripherals.md) for more details and how to configure network peripherals with Store Commerce.
+For information on how to configure network peripherals with Store Commerce, see [Support for network peripherals](dev-itpro/network-peripherals.md).
 
 ### Payment terminals and PIN pads
 
@@ -687,20 +688,20 @@ Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen
 
 You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
-### Bar code scanners
-Most bar code scanners that can function as a keyboard wedge device or have OPOS drivers will work with Store Commerce app. Make sure to extensively test to ensure all scenarios work as expected.
+### Barcode scanners
+Most barcode scanners that can function as a keyboard wedge device or have OPOS drivers will work with the Store Commerce app. Make sure to extensively test to ensure that all scenarios work as expected.
 
 ### MSRs
-Most magnetic stripe readers that can function as a keyboard wedge device or have OPOS drivers will work with Store Commerce app. Make sure to extensively test to ensure all scenarios work as expected.
+Most magnetic stripe readers that can function as a keyboard wedge device or have OPOS drivers will work with the Store Commerce app. Make sure to extensively test to ensure that all scenarios work as expected.
 
 ### Line display
-Epson and HP Integrated line displays connected via OPOS interface work with Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
+Epson and HP integrated line displays connected via the OPOS interface work with the Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
 ### Scale
-Datalogic scale devices connected via OPOS interface work with Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
+Datalogic scale devices connected via the OPOS interface work with the Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
 ### Signature capture
-Scriptel signature capture devices connected via OPOS interface work with Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
+Scriptel signature capture devices connected via the OPOS interface work with the Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
 ## Troubleshooting
 ### Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
