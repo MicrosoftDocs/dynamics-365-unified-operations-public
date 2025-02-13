@@ -202,9 +202,9 @@ To enter the contact person, follow these steps.
     The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
-> For both, Seller and Buyer identification, the schema **9925** (Belgium VAT number) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/)
+> For both, Seller and Buyer identification, the schema **9925** (Belgium VAT number) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there is a necessity to redefine the default schema then perform the steps described in the next chapter. Otherwise you can ignore the next chapter.
 
-Contacts!!!!!!!!!!!!!!!!!!!
+
 CompanyEndpointType CustomerEndpointType
 
 ## Configure units of measure
