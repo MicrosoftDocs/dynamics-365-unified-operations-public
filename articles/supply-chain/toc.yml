@@ -3699,6 +3699,8 @@
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch, serial, and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
+          - name: Warehouse mobile device tracking dimensions and license plate picking behavior
+            href: warehousing/warehouse-mobile-device-tracking-dimensions-license-plate-picking-behavior.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
           - name: Piece picking confirmation
