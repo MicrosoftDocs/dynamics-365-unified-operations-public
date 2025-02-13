@@ -15,7 +15,9 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio are managed in one container.
+A folio a subset of a container and is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio are managed in one container. One container can have many folios, but a folio cannot be spread across several containers.
+
+Folios should be used to split the goods within a container into different sections. When the container is being loaded, goods belonging to one folio will be loaded in one go. Separate loads of purchase line items will generate different folios. Therefore, a new folio will automatically be created when new lines are added to a container.
 
 To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. This page shows a list of all current folios. You can use the buttons on the Action Pane to create, delete, and work with folios. Select any folio in the list to view its details on the **Folios** page.
 
