@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to register a driver check-in and a driver check-out, which represent a driver arriving at or leaving a facility. The procedures can be done either within the Finance and Operations user interface or on the Warehouse Mobile App. See [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse) for how to add these menu items to the Warehouse Management mobile app.
+This article describes how to register a driver check-in and a driver check-out, which represent a driver arriving at or leaving a facility. The procedures can be done either within the web client or on the Warehouse Management mobile app. See [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse) for how to add these menu items to the Warehouse Management mobile app.
 
 This feature is used to keep track of whether loads have been picked up or dropped off, as well as whether carriers are arriving and departing within the agreed-upon appointments. It will calculate and show if carriers are late in checking in and/or out.
 
@@ -28,7 +28,7 @@ Before you start, an appointment must be set up for a load.
 
 ## Register driver check-in
 
-This can be done through the Finance and Operations user interface or the Warehouse Management mobile app:.
+This can be done through the web client or the Warehouse Management mobile app:.
 
 Via the web client:
 1. Select **Driver check-in**.
