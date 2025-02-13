@@ -49,13 +49,11 @@ Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deploy
 
 Selecting either the **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** or **e-Commerce Package - e-Commerce environment deployment** options will override previous deployments. If you have multiple CSU extensions packages, then all CSU packages must be merged as one package for deployment.
 
-## Make sure that MSAL.PS is installed
-
-Versions 2.\* and later of the deployment task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the deployment task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
+> [!NOTE] (Not required for Version 4.\* and later.) Versions 2.\* and 3.\* of the deployment task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the deployment task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
 
-To add the task to the build of your YML or Classic pipeline, search the task list for **Dynamics Lifecycle Services (LCS) Asset Deployment**. If your target environments include self-service environments, be sure to select task version 1.\* or later.
+To add the task to the build of your YML or Classic pipeline, search the task list for **Dynamics Lifecycle Services (LCS) Asset Deployment**. If your target environments include self-service environments, be sure to select task version 4.\* or later.
 
 The following table describes the options that are available for this task.
 
