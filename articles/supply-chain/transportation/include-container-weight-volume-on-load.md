@@ -24,6 +24,8 @@ load. Items that are outside a container can also be part of a load. Based on
 these conditions, the system calculates values for the weight and volume on the
 load by considering the weight and volume of both containers and items.
 
+The units used here for the weight and volume are based on the system units in the specific legal entity.
+
 If the calculated values aren’t precise, you can adjust them by entering the
 actual values for the weight and volume on the load. The values for the weight
 and volume are used in transportation management processes. For example, the
@@ -36,6 +38,8 @@ check-in.
 The functionality for including the container weight and volume on a load
 applies in transportation management processes, such as the rate route
 workbench, transportation tenders, and driver check-in.
+
+When creating a load on the Rate Route Workbench, the **Load template assignment** pop-up page opens, which requires a **Load template ID** to be entered. At the bottom of this page under the Details, Weight and Volume tabs, you will see total quantity, weight and volume of the load as well as your capacity utilization on the selected **Load template ID**. For example, if you select a 40' container as a **Load template ID**, the system will use the configured weight and volume capacity of this container size. Here you will see if you are approaching the weight and/or volume limits of the load template. The system will notify you if you do exceed either on the maximum allowable weight or volume.
 
 ## How it is set up
 
