@@ -101,7 +101,7 @@ No, a batch job can't be set up through the user interface (UI) for this report.
 
 No, the security governance feature supports no such scenario.
 
-## In some cases, it's necessary to go to a lower level before access works. Does this work to the finer level?
+## In some cases, it's necessary to go to a lower level before access works. Does this work to a lower level?
 
 Security roles that are defined in security governance go at the lowest level, which is the entry point. 
 
