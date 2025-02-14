@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: ITMTableListPage, ITMTable
 ms.topic: how-to
-ms.date: 01/31/2025
+ms.date: 02/14/2025
 ms.custom: 
   - bap-template
 ---
@@ -217,5 +217,6 @@ The **Landed cost** module includes several voyage-related periodic tasks that c
 - **Ready for costing** – This task lets you set the **Voyage status** field to the ready for costing status that's established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. You'll typically set up this task to run on a regular schedule.
 - **Costed** – This task lets you set the **Voyage status** field to the costed status that's established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time, provided that they have been costed but haven't yet been updated on the voyage. You'll typically set up this task to run on a regular schedule.
 
-###Purchase order clean up periodic task
-The Purchase order clean up periodic task deletes purchase orders that have not been added to a voyage. It is designed to reduce transaction counts and improve general performance. This task can be found under **Landed cost \> Periodic tasks \> Clean up  /> Purchasae order clean up**.
+## Purchase order clean up periodic task
+
+The *Purchase order clean up* periodic task deletes purchase orders that haven't been added to a voyage. It helps to reduce transaction counts and improve general performance. To run or schedule the task, go to **Landed cost \> Periodic tasks \> Clean up  /> Purchase order clean up**.

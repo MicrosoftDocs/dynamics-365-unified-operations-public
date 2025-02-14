@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
 ms.topic: how-to
-ms.date: 01/31/2025
+ms.date: 02/14/2025
 ms.custom: 
   - bap-template
 ---
@@ -15,58 +15,69 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to register a driver check-in and a driver check-out, which represent a driver arriving at or leaving a facility. The procedures can be done either within the web client or on the Warehouse Management mobile app. See [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse) for how to add these menu items to the Warehouse Management mobile app.
+This article describes how to register driver check-in and check-out events, which represent drivers arriving to or leaving from a facility. The events can be registered using either the web client or the Warehouse Management mobile app. To learn how to add the required menu items to the Warehouse Management mobile app, go to [Set up mobile devices for warehouse work](/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse).
 
-This feature is used to keep track of whether loads have been picked up or dropped off, as well as whether carriers are arriving and departing within the agreed-upon appointments. It will calculate and show if carriers are late in checking in and/or out.
+This feature lets you keep track of whether loads have been picked up or dropped off, and to confirm whether carriers are arriving and departing within the agreed-upon appointments. It calculates and shows whether carriers are late when checking in and/or out.
 
 Before you start, an appointment must be set up for a load.
 
-## Select an appointment
+## Select or open an appointment
+
+To select or open an appointment in the web client, follow these steps.
 
 1. Go to **Transportation management** \> **Planning** \> **Dock appointment scheduling** \> **Driver check-in and check-out**.
-2. Select an appointment.
+1. Set the **Display completed and canceled appointments** check box as needed, depending on whether you'd like to see previous closed appointments in the grid.
+1. Select an appointment.
 
 ## Register driver check-in
 
-This can be done through the web client or the Warehouse Management mobile app:.
+You can register driver check-in using either the web client or the Warehouse Management mobile app.
 
-Via the web client:
+To check in a driver using the web client, follow these steps.
+
+1. Select an appointment, as described previously.
+1. On the Action Pane, select **Driver check-in**.
+1. Enter the **Actual start date/time at location** to reflect the actual time the driver checked in.
+1. Fill out the fields on the **The driver's information** dialog as needed.
+1. Select **OK**.
+
+To check in a driver using the Warehouse Management mobile app, follow these steps.
+
 1. Select **Driver check-in**.
-2. Enter the **Actual start date/time at location** to reflect the actual time the driver checked in.
-3. Optionally, select a **Shipping carrier** and **Location**, and enter a **Trailer number**, **Notes**, **Tractor number**, **Driver name**, **Driver license** and/or **Shipping container ID**.
-5. Select **OK**.
+2. Scan or enter the load or appointment ID.
+3. Select **Enter**.
 
-Via Warehouse Management mobile app:
-1. Select **Driver check-in**
-2. Scan or enter the load or appointment ID
-3. Select **Enter**
-
-If the driver check-in was registered within the scheduled appointment window, then the status of the appointment will change to *Checked in*. 
+If the driver check-in was registered within the scheduled appointment window, then the **Appointment status** changes to *Checked in*.
 
 ## Register driver check-out
 
-Once loading or unloading has finished and the driver has left the facility, you can register this by using the **Driver check-out** functionality. This can be done through the web client or the Warehouse Management mobile app.
+After loading or unloading has finished and the driver has left the facility, you can check out the driver using either the web client or the Warehouse Management mobile app.
 
-Via web client:
+To check out a driver using the web client, follow these steps.
 
-1. Select **Driver check-out**.
-2. Optionally, select or edit **Shipping carrier** and **Location**, and enter or edit a **Trailer number**, **Notes**, **Tractor number**, **Driver name**, **Driver license** and/or **Shipping container ID**.
-3. Select **OK**.
+1. Select an appointment, as described previously.
+1. On the Action Pane, select **Driver check-out**.
+1. Fill out the fields on the **The driver's information** dialog as needed.
+1. Select **OK**.
 
-Via Warehouse Management mobile app:
+To check out a driver using the Warehouse Management mobile app, follow these steps.
+
 1. Select **Driver check-out**
 2. Scan or enter the load or appointment ID
 3. Select **Enter**
 
-If driver check-in and check-out are done within or before the scheduled appointments, the appointment status will change to *Completed*.
+If driver check-in and check-out are done within or before the scheduled appointments, the **Appointment status** changes to *Completed*.
 
 ## Appointment status
 
-The **Appointment status** field indicates how actual driver check-in and check-out times compare to the scheduled times. The feature will also calculate and show if carriers are late in checking in and/or out.
+For each record listed on the **Driver check-in and check-out** page, the **Appointment status** field indicates how actual driver check-in and check-out times compare to the scheduled times. The feature also calculates and shows if carriers were late checking in and/or out.
 
-Select **Display completed and canceled appointments** to show previous closed appointments.
+> [!TIP]
+> Select the **Display completed and canceled appointments** check box to display closed appointments in the grid.
 
-| Status | Description |
+The following table describes the possible **Appointment status** that an appointment can have.
+
+| Appointment status | Description |
 |--------|-------------|
 | *Waiting* | The driver hasn't checked in but isn't yet late. |
 | *Checked in* | The driver checked in but hasn't checked out and isn't yet late checking out. |
@@ -77,10 +88,10 @@ Select **Display completed and canceled appointments** to show previous closed a
 | *Late on check in* | The driver hasn't checked in and is now late. |
 | *Late on check out* | The driver checked in but hasn't checked out, and the alert interval has now expired. |
 
-These statuses help warehouse and transportation managers to:
-1.	Track the status of ongoing shipments and be able to follow up with carriers on any loads that are deviating from the plan as well as to mitigate delays.
-2.	Identify trends in timeliness of each carrier.
-3.	Identify potential problems in own warehouse operations through late check-outs caused by delays in loading or unloading.
+These statuses help warehouse and transportation managers to do the following tasks:
 
+1. Track the status of ongoing shipments, follow up with carriers on loads that deviated from the plan, and  mitigate delays.
+1. Identify trends in the timeliness of each carrier.
+1. Identify potential problems in your own warehouse operations that are resulting in late check-outs caused by delays in loading or unloading.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
