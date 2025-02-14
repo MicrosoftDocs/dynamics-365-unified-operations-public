@@ -32,18 +32,18 @@ User security governance provides the following capabilities:
 ## User security governance features
 
 User security governance provides the following functionality: 
- - Design process-based security roles, duty and/or privilege ​
+ - Design process-based security roles, duty and/or privilege. Learn more in [Set up a process hierarchy, roles, and privileges](/setup-process-role-hierarchy.md). ​
  - Position/responsibility-based user role designer​
- - Added tools for creating new roles/duties from the existing objects through import processes and merge duties ​
- - Automate temporary role assignments​
- - Privileged user management enables dedicated accounts to gain time-bound elevated privilege​
- - Segregation of duties and separation of privileges continuous monitoring. Define threshold and control the creation of duties/privileges with overlapping entry points.  ​
+ - Tools for creating new roles/duties from the existing objects through import processes and merge duties ​
+ - Automate temporary role assignments​. Learn more in [Temporary role management](temp-role-mgmt).
+ - Privileged user management enables dedicated accounts to gain time-bound elevated privilege​. Learn more in [Privileged user management](priv-user-mgmt.md).
+ - Segregation of duties and separation of privileges continuous monitoring. Define threshold and control the creation of duties/privileges with overlapping entry points. Learn more in [Roles violating segragation of duties](roles-violating-sod).  ​
  - Allow to draft and eventually convert defined roles to AOT project​
  - User aging report
- - Role, duty, and privilege versioning​
+ - Role, duty, and privilege versioning​. Learn more in [Security version managment](security-version.md).
           - Compare versions ​
           - Restore previous versions​
  - Duty subtraction function ​
- - Export of security configuration to xml​
- - Security audit trail to track changes done in user security governance​
- - New reports with license indicators by role, duty, privilege, and entry points. ​
+ - Export of security configuration to xml​. Learn more in [Security category export/import](security-category-import).
+ - Security audit trail to track changes done in user security governance​. Learn more in [Set up secruity governance parameters](setup-security-gov-para).
+ - New reports with license indicators by role, duty, privilege, and entry points. ​Learm more in [Available reports for security](/security-reports.md).
