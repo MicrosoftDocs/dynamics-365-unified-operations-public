@@ -4,13 +4,12 @@ description: Learn how to customize tax configurations to extend master data loo
 author: kai-cloud
 ms.author: pashao
 ms.topic: article
-ms.date: 10/28/2021
+ms.date: 02/14/2025
 ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 
