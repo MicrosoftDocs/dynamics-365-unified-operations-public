@@ -97,13 +97,10 @@ When you're testing your solutions for compatibility with the version dimension,
 1. **Maps:** If any maps use the inventory dimensions, the corresponding relation mapping to these maps must be updated so that they include the version dimension. In the extended model or table extensions, look out for tables where the fields include inventory dimensions.
 1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-commerce applications. These Commerce-specific applications don't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions won't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
 
-#### Turn on the version dimension
+#### Turn on the version dimension configuration key
 
-Before you can use the version dimension, it must be turned on for your system. This task requires admin permissions. 
-Please note, if you are not seeing this feature in Feature management workspace, this means that this functionality is enabled for everyone and there is no more feature flag.
+Before you can use the version dimension, its configuration key must be turned on for your system. This task requires admin permissions.
 
-1. Go to **System administration \> Workspaces \> Feature management**.
-1. Turn on the feature that is named *Product dimension version*. (As of Supply Chain Management 10.0.36, this feature is mandatory and can't be turned off.) Learn more in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Put your system into [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, expand **Trade**, and select the check box for **Product dimension - Version**.
