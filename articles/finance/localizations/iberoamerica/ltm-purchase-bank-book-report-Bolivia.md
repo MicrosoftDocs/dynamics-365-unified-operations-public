@@ -33,13 +33,24 @@ Before you complete the steps in this article to generate the report, the follow
 > Document class type for each payment media must have selected **unique per entry**. Learn more in document class type
 
 - Configure Latam extension in Bank group field of the bank account associated with the payment media. That will bring the information related to Bank account number and tax identification.
-- 
+  
 ## Configuration for payment of invoice transactions:
+
+Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and follow these steps:
+   1. Select a document class that represent invoice **Factura** and check that you have completed the required fields for this type of document. Learn more in [configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
+   2. On the Action Pane, select **Tax application**.
+      1. In the **Tax application id** value that has been created **LB**
+      2. In the **Tax application code** field, enter **4** as transaction type
+      3. In the **letter code** field, enter **FC** for invoices.
+      4. In the **user define fiel 2** field, enter **2** as type supporting document.
 
 
 ## Configuration for other payments 
 
-|Document class|Tax application|Tax application code|Letter code|user define fiel 2|
+Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and follow these steps:
+
+   
+
 
 ## Set up application-specific parameters
 
@@ -49,10 +60,8 @@ To configure application-specific parameters, follow these steps.
 3. On the **Application specific parameters** page, on the **Lookups** tab, select **ApplicablePaymentDocuments**.
 4. In the **Conditions** FastTab, select **Add**.
 5. In the **Lookup result** field, select **Yes**
-6. In Document classification Id (VoucherClassId) select the document class that represents a payment. 
-7. If you have another document class that represents a payment Repeat steps 4, 5 and 6  
-
-To ensure that the report shows the transactions that meet the configured conditions, complete the **Lookup result** fields as **Not Applicable** or **No** with **blank** and **non-blank** conditions
+6. In Document classification Id select the document class that represents a payment order. 
+7. If you have another document class that represents a payment order repeat steps 4, 5 and 6  
 
 ## Run Purchase Bank Book BO report:
 
