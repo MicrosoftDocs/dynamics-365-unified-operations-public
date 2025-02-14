@@ -29,9 +29,9 @@ User security governance provides the following capabilities:
  - Privileged user management enables dedicated accounts to gain time-bound access​
 
 
-## User security governance capabilities
+## User security governance features
 
-User security governance provides the following capabilities: 
+User security governance provides the following functionality: 
  - Design process-based security roles, duty and/or privilege ​
  - Position/responsibility-based user role designer​
  - Added tools for creating new roles/duties from the existing objects through import processes and merge duties ​
