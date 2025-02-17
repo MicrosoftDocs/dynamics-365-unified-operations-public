@@ -42,9 +42,9 @@ Some of the key industry-specific capabilities of the solution are:
 
 - **Electronic signature requirement for CAPA case closure** – This feature allows users to establish CAPA case closure and cancellation as a trigger for an electronic signature sign-off. Learn more in [CAPA management administration (preview)](capa-admin.md)
 
-- **Flexible sampling plans** – This feature enables companies to inspect a fraction of a lot, or to skip lots altogether, to realize reduced quality and material handling costs, faster material throughput, and less redundant and destructive testing.
+- **Flexible sampling plans** – This feature enables companies to inspect a fraction of a lot, or to skip lots altogether, to realize reduced quality and material handling costs, faster material throughput, and less redundant and destructive testing. Learn more in [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md)
 
-- **Approved customer lists (ACL)** – This feature provides greater control over what products a given customer can buy and when they can buy them, which is especially important with a product line that involves controlled substances and branded products.
+- **Approved customer lists (ACL)** – This feature provides greater control over what products a given customer can buy and when they can buy them, which is especially important with a product line that involves controlled substances and branded products. Learn more in [Approved customer lists (preview)](../sales-marketing/approved-customer-lists.md)
 
 - **Electronic signature** – This feature enhancement provides greater security of the digital signatures to meet the latest government requirements and regulations.
 

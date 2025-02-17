@@ -1629,6 +1629,8 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Flexible sampling plans (preview)
+          href: inventory/quality-flexible-sampling-plans.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
         - name: Inspect the quality of goods
@@ -3253,6 +3255,8 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
+      - name: Approved customer lists (preview)
+        href: sales-marketing/approved-customer-lists.md
       - name: Credit limits for customers
         href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
