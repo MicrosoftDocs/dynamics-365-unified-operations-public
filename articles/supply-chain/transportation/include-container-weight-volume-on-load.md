@@ -54,6 +54,6 @@ container is used.
     \> **Setup** \> **Containers** \> **Container groups**, and then enter a
     value in the **Container utilization percentage** field.
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-To set up the dimensions of a **Load template ID**, see [Load templates][https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/tasks/load-template].
+
+To set up the dimensions of a **Load template ID**, see [Load templates]</dynamics365/supply-chain/transportation/tasks/load-template>.
