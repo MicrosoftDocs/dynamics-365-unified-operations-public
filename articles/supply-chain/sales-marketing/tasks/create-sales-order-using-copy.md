@@ -23,7 +23,9 @@ You can use the procedure in demo data company USMF. Sales orders are typically 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 2. Select **Sales order**.
 3. Select Copy | From all 
-4. Select the existing sales order and sales order lines. 
+4. Select the header from existing sales orders.
+5. Select the sales order lines. 
+6. Select **OK**.
 ---
 
 #### **Parameters:**
@@ -54,9 +56,9 @@ You can use the procedure in demo data company USMF. Sales orders are typically 
 
 ---
 
-5. Select **OK**.
+
 
 > [!TIP]
-> For examples that show how sales totals and discounts are calculated when prices include and exclude sales tax, including information about how related values are shown in the **Totals** dialog box, see [Calculate sales totals when prices include sales tax](../sales-tax-calculation.md).
+> For procedure that shows the standard sales order creation, see [Create Sales order](create-sales-orders.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
