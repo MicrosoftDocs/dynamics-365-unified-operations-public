@@ -108,12 +108,12 @@ This section explains how default dimensions are copied between entities.
 
 Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. Each page or process determines the precedence based on its business logic. Some default dimensions may have higher precedence and replace other default dimensions, while others may be merged together.
 
-Users can define whether a main account has a Not fixed or Fixed value for each financial dimension used across all account structures for the ledger.
+To define whether a main account has a Not fixed or Fixed value for each financial dimension used across all account structures for the ledger.
 
 #### To configure default dimensions:
 
-#### Navigate to General Ledger → Chart of Accounts → Accounts → Main Account.
-In the Legal entities override fast tab, select the appropriate legal entity and click on Default dimension.
+1. Go **General Ledger** \> **Chart of Accounts** \> **Accounts** \> **Main Account**.
+2. In the **Legal entities** override fast tab, select the appropriate legal entity and click on **Default dimension**.
 
 #### Specify the default dimensions for an account:
 If a financial dimension is Fixed, the specified value (including a blank value) overrides transaction values at the time of posting.
