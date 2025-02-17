@@ -44,24 +44,33 @@ After the product receipt has been processed on the PO, the PO status is set to 
 
 You can access this page from the **Receipt** action group on the **Purchase order** page. The information in the journals includes details about the quantities, dates, and dimensions.
 
-## Auto posting product receipt
+## Auto posting product receipts
 
-In order automatically post product receipts for multiple purchase orders, users need to navigate to Procurement and sourcing -> Purchase orders-> Receiving products -> Post Product receipt. In this posting product receipt page user need to click on Setting->Select
+To automatically post product receipts for multiple purchase orders, follow these steps.
 
-![image](https://github.com/user-attachments/assets/de96cbf0-0a5b-4fdc-81eb-91981da86e48)
+1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving products** \> **Post Product receipt**.
+1. In the **Posting product receipt** dialog, on the **Settings** FastTab toolbar, select **Select**.
+1. In the **Purchase update** dialog, use the **Range** tab to specify selection criteria for finding the purchase orders you want to post. <!-- KFM: I think this is what we are doing here. Please confirm. -->
+1. Select **OK** to return to the **Posting product receipt** dialog. The purchase orders that match the criteria you specified are displayed on the **Overview** FastTab.
+1. On the **Overview** FastTab, enter the product receipt identifier in the **Product receipt** column for each purchase order in the grid. This setting enables the system to post the product receipt. <!-- KFM: I assumed these details. Please confirm. I also assumed we should to this before setting up the batch job--true? -->
 
-User can set the criteria by selecting appropriate values in the table, derived table and field columns. Click on "OK"
-Users need to configure the batch job Batch processing overview | Microsoft Learn and provide the product receipt identifier also for every selected line to post the product receipts for respective purchase order lines.
+    A product receipt identifier must be specified when each product is received. It's typically a reference to the packing slip from the supplier. This identifier is required for accounting because it enables checks or audits of supplier packing slips against what has been received and the accounted inventory or expense. <!-- KFM: I think this comment belongs here, but I'm  not sure. Please confirm or move it again. -->
 
-During product receipt, you must specify a product receipt identifier, which is typically a reference to the packing slip from the supplier. This identifier is required for accounting, because it enables checks or audits of supplier packing slips against what has been received, and the accounted inventory or expense.
+1. Select **Batch** to open the **Batch processing** dialog, where you can set up the [batch job](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) that will do the posting. <!-- KFM: what should we set up here? What settings are important? -->
 
-After the product receipt has been processed on the PO, the PO status is set to Received to indicate that the invoice can be processed for the order.
+1. Select **OK** to return to the **Posting product receipt** dialog.
+1. Select **OK** to close the **Posting product receipt** dialog.
 
-Users can also "correct" or "cancel" the product receipts from the product receipt journal form.
-Note: You can only reduce the received quantity while trying to correct the product receipt. To raise the quantity, post a new product receipt journal.
+After the system finishes processing product receipts for a purchase order, it sets the purchase order status to *Received* to indicate that the invoice can be processed for the order.
 
-## Auto posting product receipts in case of WMS processes:
-https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/inbound-load-handling
+You can correct or cancel a product receipt from the product receipt journal page. <!-- KFM: tell how to get there. -->
+
+> [!NOTE]
+> You can only reduce the received quantity while correcting a product receipt. To raise the quantity, post a new product receipt journal.
+
+## Auto post product receipts when using WMS
+
+Auto posting product receipts works differently if you are using warehouse management processes (WMS). Learn more in [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md).
 
 ## Related information
 
