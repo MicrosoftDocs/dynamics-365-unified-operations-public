@@ -4,14 +4,13 @@ description: Learn how to create a sales order, using Copy | 'From all'  and 'Fr
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 17/02/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ---
 
-# Create sales orders
+# Create Sales Order using Copy from All
 
 [!include [banner](../../includes/banner.md)]
 
