@@ -86,9 +86,9 @@ You can reverse posted netting transactions by selecting **Reverse netting** on 
 2. Select **Netting history**.
 3. Select the netting transaction, and then select **Reverse netting**.
 
-## Print netting advice
+## View netting history and print netting advice
 
-You can print netting advice for selected customer invoices and vendor invoices. The advice can then be shared with the customer or vendor as a notification for netting.
+You can see the cleared netting pairs during manual and automatic netting for selected netting agreement in the **Netting history** form. In addition, you can print netting advice for selected customer invoices and vendor invoices. The advice can then be shared with the customer or vendor as a notification for netting.
 
 1. Go to **Cash and bank management** \> **Netting** \> **Customer and vendor balances netting**.
 2. Select **Netting history**.
@@ -127,5 +127,6 @@ Here is an example of the vouchers that are generated. For this example, USMF is
 |---------------------|--------|--------|
 | Intercompany credit |        | 100.00 |
 | Accounts payable    | 100.00 |        |
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
