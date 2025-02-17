@@ -23,8 +23,8 @@ You can use the procedure in demo data company USMF. Sales orders are typically 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 2. Select **Sales order**.
 3. Select Copy | From all 
-4. Select the header from existing sales orders.
-5. Select the sales order lines. 
+4. Identify and select the sales order from which you want to copy lines.
+5. Select the sales order lines.
 6. Select **OK**.
 ---
 
