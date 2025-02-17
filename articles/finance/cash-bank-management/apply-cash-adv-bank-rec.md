@@ -113,6 +113,9 @@ To use matching rules to automatically generate customer payments without settli
 13. Select either a matching rule or a matching rule set that contains the matching rule.
 14. Select **OK** to run the automatic matching.
 
+> [!NOTE]
+> If the feature **Payment journal cancellation from bank reconciliation worksheet** is enabled, the **Cancel payment** button is available for users to reverse incorrectly posted customer payment journals from reconciliation worksheet. If invoice has been settled during the journal posting (manually or using reconciliation rules), the invoice is also unsettled at the time of payment cancellation. 
+
 ### Generate vendor payments
 
 To use matching rules to automatically generate vendor payments without settling vendor invoices, follow these steps.
