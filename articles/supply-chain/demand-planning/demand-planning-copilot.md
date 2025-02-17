@@ -32,7 +32,7 @@ To use Copilot to analyze demand plans, you must be running the general availabi
 
 The *Analyze demand plans with Copilot* feature is available in all regions.
 
-The *Analyze demand plans with Copilot* feature is available only in English.
+As of January 2025, the *Analyze demand plans with Copilot* feature is available in all languages supported by Demand planning.
 
 ## Ask Copilot to analyze your data
 
