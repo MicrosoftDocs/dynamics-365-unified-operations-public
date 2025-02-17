@@ -4,7 +4,7 @@ description: Learn how to share released-product data across companies to reduce
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 02/17/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -23,7 +23,14 @@ Organizations that have many companies (legal entities) and a large product port
 
 ## Get the cross-company product sharing public preview
 
-To sign up for the public preview for this feature, email the environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that is responsible for the feature will send you a follow-up email to get in contact, evaluate whether your business is a match for the functionality, and finally evaluate whether you can join the preview.
+As of Supply Chain Management version 10.0.43 or later, this feature can be enabled via feature management workspace. 
+Please follow these steps to enable this Cross-company product sharing (preview)
+
+1.	Go to the Feature management workspace, and turn on the “Master company data sharing” feature.
+2.	Go to the Feature management workspace, and turn on the “(Preview) Cross-company data sharing for products “feature. 
+
+
+For older versions than 10.0.43,  you would need to email the environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that is responsible for the feature will enable this feature for your environment. 
 
 ## Get started with cross-company data sharing
 
@@ -51,9 +58,15 @@ Before you enable cross-company data sharing for products, work through the foll
 
 ## Set up your system for product sharing
 
-After you contact Microsoft, if you're accepted for the preview, Microsoft will enable a flight for you. You can then set up your system to share products across companies.
+As of Supply Chain Management version 10.0.43 or later, this feature can be enabled via feature management workspace. 
+Please follow these steps to enable this Cross-company product sharing (preview)
 
-To set up your system for product sharing, follow these steps.
+1.	Go to the Feature management workspace, and turn on the “Master company data sharing” feature.
+2.	Go to the Feature management workspace, and turn on the “(Preview) Cross-company data sharing for products “feature. 
+
+For older versions lower then 10.0.43, After you contact Microsoft, Microsoft will enable a flight for you. You can then set up your system to share products across companies as per below steps.
+
+To set up your system for product sharing, follow these steps for versions lower then 10.0.43
 
 1. Enable the following flights. If you don't know how to complete this step, contact Microsoft Support.
 
