@@ -1583,6 +1583,8 @@
       items:
       - name: Inventory management overview
         href: inventory/inventory-home-page.md
+      - name: Advanced quality management overview (preview)
+        href: inventory/advanced-quality-management-overview.md
       - name: Arrival
         items:
         - name: Arrival overview
