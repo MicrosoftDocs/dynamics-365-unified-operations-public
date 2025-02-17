@@ -21,16 +21,16 @@ Organizations that have many companies (legal entities) and a large product port
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Get the cross-company product sharing public preview
+## Prerequisites
 
-As of Supply Chain Management version 10.0.43 or later, this feature can be enabled via feature management workspace. 
-Please follow these steps to enable this Cross-company product sharing (preview)
+To use the features described in this article, your system must meet the following requirements:
 
-1.	Go to the Feature management workspace, and turn on the “Master company data sharing” feature.
-2.	Go to the Feature management workspace, and turn on the “(Preview) Cross-company data sharing for products “feature. 
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+    - *Master company data sharing*
+    - *(Preview) Cross-company data sharing for products*
 
-
-For older versions than 10.0.43,  you would need to email the environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that is responsible for the feature will enable this feature for your environment. 
+If you are running Supply Chain Management version 10.0.42 or older and would like to use this feature, then send an email with your environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that's responsible for the feature will then enable it for your environment. You must also follow the instructions provided in the [Set up your system for product sharing in version 10.0.42 and older](#old-version-setup) section later in this article.
 
 ## Get started with cross-company data sharing
 
@@ -56,17 +56,9 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
 - **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this article, and prepare your system as required.
 
-## Set up your system for product sharing
+## <a name="old-version-setup"></a>Set up your system for product sharing in version 10.0.42 and older
 
-As of Supply Chain Management version 10.0.43 or later, this feature can be enabled via feature management workspace. 
-Please follow these steps to enable this Cross-company product sharing (preview)
-
-1.	Go to the Feature management workspace, and turn on the “Master company data sharing” feature.
-2.	Go to the Feature management workspace, and turn on the “(Preview) Cross-company data sharing for products “feature. 
-
-For older versions lower then 10.0.43, After you contact Microsoft, Microsoft will enable a flight for you. You can then set up your system to share products across companies as per below steps.
-
-To set up your system for product sharing, follow these steps for versions lower then 10.0.43
+As mentioned in the [prerequisites](#prerequisites), if you are running Supply Chain Management version 10.0.42 or older, you can only enable this feature with assistance from the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). After the team enables the feature for you, you must also complete the following procedure. Don't do this if you are running version 10.0.43 or later.
 
 1. Enable the following flights. If you don't know how to complete this step, contact Microsoft Support.
 
@@ -304,7 +296,7 @@ If you already have existing products in the system before you enable the single
 
 ## Modifying policies
 
-It isn't possible to add more fields to a data sharing policy after it has been created and enabled. 
+It isn't possible to add more fields to a data sharing policy after it has been created and enabled.
 
 ## More information about cross-company data sharing
 
