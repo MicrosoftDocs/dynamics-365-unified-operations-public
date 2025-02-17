@@ -21,7 +21,7 @@ Supervisors can do a material availability check for work orders. This process i
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.37 or later.
-- The feature that's named *Material availability check on maintenance work orders* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Material availability check on maintenance work orders* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ## How the material availability check works
 

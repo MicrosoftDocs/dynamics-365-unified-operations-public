@@ -55,8 +55,8 @@ This section and its subsections apply when you're using [Inventory Visibility U
 Follow these steps to turn on the reservation feature in UI version 2.
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
-1. On the navigation pane, select **Soft Reservation**.
-1. On the **Data source settings** tile, select **Manage**.
+1. On the navigation pane, select **Feature Management**.
+1. On the **Soft Reservation** tile, select **Manage**.
 1. Set the **Enable feature** option to *True*.
 1. The **Filter unconfigured dimensions** option controls how the system behaves if a user submits reservation requests that include dimensions that aren't specified on the **Reservation dimensions** FastTab. (Learn more in the [Configure reservation mappings and dimensions](#config-mappings-dimensions) section of this article.) Select one of the following values:
 

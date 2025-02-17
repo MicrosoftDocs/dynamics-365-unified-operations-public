@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.43 (March 2025)
+          href: get-started/whats-new-scm-10-0-43.md         
         - name: Supply Chain Management 10.0.42 (December 2024)
           href: get-started/whats-new-scm-10-0-42.md
         - name: Supply Chain Management 10.0.41 (September 2024)
@@ -275,17 +277,17 @@
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
-              href: ../finance/localizations/global/e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
             - name: Import a feature from the Global repository
-              href: ../finance/localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
             - name: Create a new Globalization feature
-              href: ../finance/localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Work with configurations
-              href: ../finance/localizations/global/e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
-              href: ../finance/localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
             - name: Complete, publish, and deploy a Globalization feature
-              href: ../finance/localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Share with other organizations
               href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
@@ -301,7 +303,7 @@
               - name: Activate and set up integration with Electronic Invoicing
                 href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
               - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
               - name: Work with Electronic Invoicing
                 items:
                 - name: Submit electronic documents to Electronic Invoicing
@@ -2368,7 +2370,7 @@
         - name: Create a purchase order
           href: procurement/tasks/create-purchase-order.md
         - name: Create a purchase order governed by budget
-          href: cost-management/tasks/create-purchase-order-governed-by-budget.md
+          href: procurement/tasks/create-purchase-order-governed-by-budget.md
         - name: Create a purchase order with a delivery schedule
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
@@ -3609,7 +3611,7 @@
         href: landed-cost/inbound-tracking.md
       - name: Estimate and manage landed costs
         href: landed-cost/estimate-manage-landed-costs.md
-      - name: In-transit processing
+      - name: Goods-in-transit processing and receiving
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
@@ -3695,8 +3697,10 @@
             href: warehousing/over-pick-materials-for-production-and-batch-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
-          - name: Batch, serial, and license plate confirmation
+          - name: Batch, serial, license plate, and location confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
+          - name: Warehouse mobile device tracking dimensions and license plate picking behavior
+            href: warehousing/warehouse-mobile-device-tracking-dimensions-license-plate-picking-behavior.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
           - name: Piece picking confirmation

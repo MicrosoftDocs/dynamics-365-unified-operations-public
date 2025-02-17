@@ -3,11 +3,12 @@ title: Product dimensions
 description: Learn about product dimensions, with outlines on product variants, setting up product dimensions, version product dimensions, and examples.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: how-to
-ms.date: 01/06/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Product dimensions
@@ -88,13 +89,13 @@ When you're testing your solutions for compatibility with the version dimension,
 
 1. **References to obsolete API calls:** In its introduction of the version dimension, Microsoft has tried to make as few APIs as possible obsolete. The few APIs that have been made obsolete will issue a warning when you turn on the **Product dimension - version** configuration key. Calls to those APIs must be fixed in your extended solutions before you turn on the version dimension in a production system. Here are the version-specific obsolete APIs:
 
-    - RetailTransactionServiceInventory::getProductRecordId
-    - EcoResProductNumberIdentifiedProductVariantEntity::find
-    - EGAISAlcoholProduction_RU::findByItemDim
-    - PCVariantConfiguration::findByProductMasterAndDimensions
+    - `RetailTransactionServiceInventory::getProductRecordId`
+    - `EcoResProductNumberIdentifiedProductVariantEntity::find`
+    - `EGAISAlcoholProduction_RU::findByItemDim`
+    - `PCVariantConfiguration::findByProductMasterAndDimensions`
 
 1. **Maps:** If any maps use the inventory dimensions, the corresponding relation mapping to these maps must be updated so that they include the version dimension. In the extended model or table extensions, look out for tables where the fields include inventory dimensions.
-1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-Commerce applications. These Commerce-specific applications won't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions won't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
+1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-commerce applications. These Commerce-specific applications don't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions won't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
 
 #### Turn on the version dimension
 

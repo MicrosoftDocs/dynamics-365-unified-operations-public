@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.43 (March)
+                  href: get-started/whats-new-changed-10-0-43.md
                 - name: Finance 10.0.42 (December)
                   href: get-started/whats-new-changed-10-0-42.md
                 - name: Finance 10.0.41 (September)  
                   href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
-                - name: Finance 10.0.39 (April)
-                  href: get-started/whats-new-changed-10-0-39.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -676,6 +676,8 @@
                   href: budgeting/budget-funds-available.md
                 - name: Budget analysis report
                   href: public-sector/budget-analysis-report.md
+                - name: Budget control statistics vs. Budget analysis report
+                  href: budgeting/budget-control-statistics-and-budget-analysis-report.md
                 - name: Purchase order year-end process
                   href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
@@ -1682,6 +1684,8 @@
                               href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Costa Rica
+                          href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Egypt
@@ -2020,6 +2024,8 @@
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
                 - name: Bolivia
                   items:
+                  - name: Configure printing for Purchase Vat Books for Bolivia
+                    href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                 - name: Brazil
@@ -2336,7 +2342,7 @@
                   items:
                     - name: Costa Rica overview
                       href: localizations/iberoamerica/costa-rica.md
-                    - name: Set up electronic invoicing in Costa Rica
+                    - name: Get started with Electronic Invoicing for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
@@ -2430,6 +2436,8 @@
                       href: localizations/denmark/emea-dnk-accounting-basis.md
                 - name: Ecuador
                   items:
+                  - name: Ecuador overview
+                    href: localizations/iberoamerica/ecuador.md
                   - name: Configure Ecuadorian sales VAT book printing
                     href: localizations/iberoamerica/ltm-Ecaudor-sales-vat-book.md
                   - name: Configure Ecuadorian purchase payment methods printing
@@ -2440,12 +2448,20 @@
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-vat-book-report.md
                   - name: Configure Ecuadorian purchase withholding book printing
                     href: localizations/iberoamerica/ltm-Ecuador-purchase-withholdings.md
+                  - name: Configure electronic invoice parameters for Ecuador
+                    href: localizations/iberoamerica/ltm-ecuador-conf-electronic-invoice.md
                   - name: Configure printing for the Ecuador Sales book by establishment report
                     href: localizations/iberoamerica/ltm-Ecuador-sales-book-establishment.md
+                  - name: Configure sales and purchase invoices for Ecuador
+                    href: localizations/iberoamerica/ltm-Configure-invoices-Ecuador.md
                   - name: Configure Simplified transactional appendix (ATS) printing
                     href: localizations/iberoamerica/ltm-Ecuador-ATS-report.md
+                  - name: Create customer and vendor records with an address in Ecuador
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-Ecuador.md
                   - name: Post Ecuadorian refund invoice transactions
                     href: localizations/iberoamerica/ltm-Ecuadorian-refund-invoice.md
+                  - name: Set up a legal entity and tax information for Ecuador
+                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Ecuador.md
                 - name: Egypt
                   items:
                     - name: Egypt overview
@@ -3456,6 +3472,8 @@
                         href: localizations/iberoamerica/ltm-core-document-class.md
                       - name: Document class sales point for Latin America
                         href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
+                      - name: Sales Authorization Code for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-ca.md
                       - name: Sales point prefixes for Latin America
                         href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
                       - name: Sales point relation for sales documents and remission
@@ -5117,8 +5135,6 @@
                   href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Cost controlling
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
-                - name: Expense management
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Inventory on-hand
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Invoice approvals

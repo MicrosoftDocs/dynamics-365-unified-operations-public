@@ -99,7 +99,7 @@ If you're using VMware, you must implement the fixes that are documented on the 
 The hardware configuration includes the following components:
 
 - A standalone Service Fabric cluster that's based on Windows Server VMs
-- SQL Server (Both Clustered SQL and Always-On are supported.)
+- SQL Server (Both Clustered SQL and Always-On are supported, in an active\passive failover capacity)
 - AD&nbsp;FS for authentication
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server
@@ -198,7 +198,7 @@ Before you start the setup process, the following prerequisites must be in place
 
 - Active Directory Domain Services (AD&nbsp;DS) must be installed and configured in your network.
 - AD&nbsp;FS must be deployed.
-- SQL Server must be installed on the SSRS machines.
+- SQL Server must be installed on the SSRS machines for the reporting services databases.
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD&nbsp;CS is installed and configured in your network.
 
@@ -909,7 +909,7 @@ Connect to a server that's hosting your AD&nbsp;FS instance or farm, open Window
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -D365FOVersion <version>
 ```
 
 ![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
@@ -1025,7 +1025,7 @@ Follow the instructions in the error message to enable the **Allow delegation fr
 If AD&nbsp;FS is installed with a non-English version of Windows Server 2016, the **Permit everyone** access control policy is created in the local language. Invoke the cmdlet in the following way to specify the **AccessControlPolicyName** parameter.
 
 ```powershell
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>' -D365FOVersion <version>
 ```
 
 ## Additional resources

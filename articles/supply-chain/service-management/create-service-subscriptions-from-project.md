@@ -3,11 +3,12 @@ title: Create service subscriptions from a project
 description: Learn how you can create a service subscription from a project in Project management and accounting, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMASubscriptionTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create service subscriptions from a project

@@ -4,7 +4,7 @@ description: This article describes how the customer page summary feature shows 
 author: EricWang
 ms.author: wangchen
 ms.topic: conceptual
-ms.date: 09/15/2024
+ms.date: 01/31/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User
