@@ -42,10 +42,10 @@ Starting in Supply Chain Management version 10.0.41, the deprecated master plann
 
 - Lean manufacturing
 
-Only if you require this feature (Lean Manufacturing), please submit a support ticket to Microsoft Support. 
+If you require support for lean manufacturing (only), please submit a support ticket to Microsoft Support.
 
 > [!NOTE]
-> This is only a temporary solution until Planning Optimization supports this feature. No other reasons will be considered for enabling deprecated planning on new environments.
+> This is only a temporary solution until Planning Optimization supports lean manufacturing. No reason other than requiring lean manufacturing support will be considered for enabling deprecated planning on a new environment.
 
 ## Adding a new legal entity to an existing environment
 
