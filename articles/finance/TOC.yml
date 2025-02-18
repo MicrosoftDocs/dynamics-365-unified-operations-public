@@ -1128,6 +1128,8 @@
                       href: budgeting/fiscal-calendars-fiscal-years-periods.md
                     - name: Configure ledgers
                       href: general-ledger/configure-ledger.md
+                    - name: Ledger and subledger overview
+                      href: general-ledger/ledger-subledger.md
                     - name: Change the accounting or reporting currency
                       href: /troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency
                     - name: Change or reassign a ledger calendar
