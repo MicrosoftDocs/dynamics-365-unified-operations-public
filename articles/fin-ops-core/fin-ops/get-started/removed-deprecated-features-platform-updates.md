@@ -112,7 +112,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | This change reaches your environment beginning last week of September 2024. |
+| **Status**                         | Latest Update - Public Cloud: Deprecation has been completed. For Sovereign Cloud: This change reaches your environment beginning last week of February 2025. |
 
 ## Feature deprecation effective July 2024
 
