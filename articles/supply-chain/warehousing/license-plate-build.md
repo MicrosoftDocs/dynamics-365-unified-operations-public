@@ -17,7 +17,7 @@ ms.search.form:  LicensePlate. WHSWorker
 This article explains how to set up the Warehouse Management mobile app so that it supports using license plate building, complemented with an example scenario.
 
 > [!NOTE]
-> #### What is a License plate?
+>
 > A license plate is a unique identifier assigned to a group of items, streamlining the process of managing them. Instead of handling each item individually, a license plate enables tracking them as a single unit.
 
 This functionality allows you to assign multiple license plates to a single parent license plate, effectively nesting them. The advantage of nesting license plates is that it enables the movement of a larger group of inventory in one go, streamlining the warehouse worker's processes.
