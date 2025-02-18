@@ -24,22 +24,18 @@ load. Items that are outside a container can also be part of a load. Based on
 these conditions, the system calculates values for the weight and volume on the
 load by considering the weight and volume of both containers and items.
 
-The units used for weight and volume are based on the configured system units for the specific legal entity.
+## Where it is used
 
-If the calculated values aren’t precise, you can adjust them by entering the
-actual values for the weight and volume on the load. The values for the weight
-and volume are used in transportation management processes. For example, the
+The functionality for including the container weight and volume on a load
+applies in transportation management processes. For example, the
 values are used in the rate route workbench, where they help define the rate and
 route for loads, and they are also used for transportation tenders and driver
 check-in.
 
-When creating a load on the Rate Route Workbench, you can see and track how capacity utilization against the maximum weight and/or volume of the chosen **Load template ID**. On the **Load template assignment** pop-up page that opens when creating a load, the Details, Weight and Volume tabs show the total quantity, weight and volume of the load. The Weight and Volume tabs will also show how close to the maximum defined weight and volume for the selected **Load template ID** you are getting, and the system will also notify you if you do exceed either the maximum allowable weight or volume.
+When creating a load on the Rate Route Workbench, you can also see and track how capacity utilization against the maximum weight and/or volume of the chosen **Load template ID**. On the **Load template assignment** pop-up page that opens when creating a load, the Details, Weight and Volume tabs show the total quantity, weight and volume of the load respectively. The Weight and Volume tabs will also show how close to the maximum defined weight and volume for the selected **Load template ID** you are getting, and the system will also notify you if you do exceed either the maximum allowable weight or volume.
 
-## Where it applies
-
-The functionality for including the container weight and volume on a load
-applies in transportation management processes, such as the rate route
-workbench, transportation tenders, and driver check-in.
+If the calculated values aren’t precise, you can adjust them by entering the
+actual values for the weight and volume on the load. 
 
 ## How it is set up
 
@@ -54,6 +50,8 @@ container is used.
     \> **Setup** \> **Containers** \> **Container groups**, and then enter a
     value in the **Container utilization percentage** field.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
 To set up the dimensions of a **Load template ID**, see [Load templates]</dynamics365/supply-chain/transportation/tasks/load-template>.
+
+Note that the units used for weight and volume are based on the configured system units for the specific legal entity.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
