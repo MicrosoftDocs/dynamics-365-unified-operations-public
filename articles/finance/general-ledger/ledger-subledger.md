@@ -37,11 +37,11 @@ modified.
 
 For more information on configuring the ledger, see [Configure ledgers](configure-ledger.md).  
  
-### What is a subledger? 
+## What is a subledger? 
 
 A subledger captures the detailed financial postings of any document created in a module. The subledger postings are summarized and eventually posted to the General ledger. Examples of subledgers in Dynamics 365 finance and operations apps are Accounts payable, Accounts receivable, Inventory, Fixed assets, and Production. 
 
-### Set up subledger postings 
+## Set up subledger postings 
 
 Subledger postings in an area are defined in the **Posting profile** for the module. 
 To set up posting profiles in Dynamics 365 finance and operations apps, follow these steps: 
@@ -52,7 +52,7 @@ To set up posting profiles in Dynamics 365 finance and operations apps, follow t
 
 For more information on Posting profiles, see [Posting profiles overview](pstg-prfles-ovrvw.md).   
 
-### Link between a subledger and a ledger 
+## Link between a subledger and a ledger 
 
 When a transaction is posted within a particular module, it creates a subledger journal to capture the accounting impact of the transaction. The subledger journal contains list of all affected ledger accounts, 
 and the respective posting amount by debit and credit entries. 
@@ -75,7 +75,7 @@ The net of all postings to the General ledger is aggregated using main account t
  
 By account structure, either balance sheet or profit and loss. When generating financial reports, transactions are displayed per legal entity. 
 
-### Product receipt subledger and ledger postings  
+## Product receipt subledger and ledger postings  
 
 After a **Product receipt journal** is created for a **Purchase order** in Dynamics 365 finance and operations, the **Vouchers** tab displays the **Ledger account postings** for the **Product receipt**. 
 In the **Voucher transactions** view, the **View subledger journal** tab can be used to show the subledger details including:
