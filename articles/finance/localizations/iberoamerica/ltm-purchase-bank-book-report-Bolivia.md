@@ -16,8 +16,8 @@ This article explains how to set up and generate reports for purchase Bank books
 Banking in Bolivia consists in the presentation of a specific report for all those purchase transacctions equal to or higher than the amount determined according to the regulations. These operations must be carried out through any of the institutions of the Financial System. Banking reports obliges individuals and companies to carry out their transactions necessarily through banks when they exceed the defined amount. 
 Transaction does not refer to the invoice amount or payment amount, it refers to the agreement between parties
 
-![Purchase bank book](./media/LTM-Purchase-bank-book.PNG)
 
+![Purchase bank book](media/LTM-Purchase-bank-book.png)
 
 ## Prerequisites
 
