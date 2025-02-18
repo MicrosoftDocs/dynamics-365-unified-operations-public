@@ -4,6 +4,7 @@ description: Learn how to create a sales order, using Copy | 'From all'  and 'Fr
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
+ms.date: 02/18/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
