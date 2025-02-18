@@ -27,7 +27,7 @@ This article describes how to set up distributed order management (DOM) function
 To enable the DOM configuration key, follow these steps.
 
 1. In Commerce headquarters, go to **System administration \> Setup \> License configuration**.
-1. On the **Configuration keys** tab, expand the **Commerce** node, and then select the **Distributed Order Management** checkbox.
+1. On the **Configuration keys** tab, expand the **Retail** node, and then select the **Distributed Order Management** checkbox.
 
 ## Configure DOM parameters
 
