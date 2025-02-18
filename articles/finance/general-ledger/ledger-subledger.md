@@ -20,8 +20,8 @@ ms.dyn365.ops.version: 8.1
 
 ## What is a ledger? 
 
-A ledger captures the collection of main accounts in a defined structure. It represents the General ledger (GL) for a legal entity where all the financial transactions are summarized and posted. This serves as 
-the basis for statutory finance reports (Balance Sheet, Profit & Loss statement etc.) preparation and tax reporting. 
+A ledger captures the collection of main accounts in a defined structure. It represents the General ledger for a legal entity where all the financial transactions are summarized and posted. This serves as 
+the basis for statutory finance reports (Balance sheet, Profit and loss statements) preparation and tax reporting. 
 
 ## Set up a ledger 
 
@@ -29,7 +29,7 @@ For each legal entity in Microsoft Dynamics 365 Finance, details about the ledge
 
 The main components of the ledger are: 
  - Chart of accounts, fiscal calendar, and financial dimension.
- - Account structure applicable for the ledger. An Account structure is a collection of main accounts by type and reporting requirements. For example, Balance sheet account structure contains list of main
+ - Account structure applicable for the ledger. An Account structure is a collection of main accounts by type and reporting requirements. For example, the Balance sheet account structure contains list of main
 accounts pertaining to assets, liabilities, and owners equity.
  - Accounting currency, reporting currency, and exchange rate type.  
 
@@ -40,8 +40,7 @@ For more information on configuring the ledger, see [Configure ledgers](configur
  
 ### What is a subledger? 
 
-A subledger captures the detailed financial postings of any document created in a module. The subledger postings are summarized and eventually posted to the General ledger. Examples of subledgers in Dynamics 365 
-are Accounts payable, Accounts receivable, Inventory, Fixed assets, and Production. 
+A subledger captures the detailed financial postings of any document created in a module. The subledger postings are summarized and eventually posted to the General ledger. Examples of subledgers in Dynamics 365 finance and operations apps are Accounts payable, Accounts receivable, Inventory, Fixed assets, and Production. 
 
 ### Set up subledger postings 
 
@@ -63,12 +62,19 @@ The total debit and credit amounts must be balanced. This principle states that 
 For example, a product receipt for $100 in purchase, results in a $100 debit to Inventory account and an equivalent credit of $100 to the Purchase accrual account. In this way, each transaction posted in a module
 with accounting impact is recorded to the General ledger. 
 
-Postings in the General ledger follow the ledger's account structure, fiscal calendar, and posting rules. When posting transactions in the General ledger, only accounts from the chart of accounts defined in the
+General ledger postings follow the ledger's account structure, fiscal calendar, and posting rules. When posting transactions in the General ledger, only accounts from the chart of accounts defined in the
 ledger are used.  
 
 To view transactions posted to the main account, go to **General ledger** > **Inquiries and reports** > **Voucher transactions**.   
 
-The net of all postings to the General ledger is aggregated using main account types. Asset, Liability, Revenue, Expense, or Cost of goods sold and by account structure, Balance sheet, Proft and loss. When generating financial reports, transactions are displayed per legal entity. 
+The net of all postings to the General ledger is aggregated using main account types: 
+ - asset
+ - liability
+ - revenue
+ - expense
+ - cost of goods sold
+ 
+And by account structure, either balance sheet or proft and loss. When generating financial reports, transactions are displayed per legal entity. 
 
 ### Product receipt subledger and ledger postings  
 
