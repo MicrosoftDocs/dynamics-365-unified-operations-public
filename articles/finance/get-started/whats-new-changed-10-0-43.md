@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 01/29/2025
+ms.date: 02/18/2025
 ms.custom:   
   - bap-template
   - evergreen
@@ -36,8 +36,9 @@ This section contains a table that lists the features that are included in this 
 | Cash and bank management |Payment journal cancellation from bank reconciliation worksheet | Cancel customer payment journals directly from the Modern bank reconciliation worksheet. It simplifies the reconciliation process by enabling easy reversals and ensuring accurate financial records. | Feature management |
 | Subscription billing| Performance improvement for consumption quantity update | This feature enhances the performance of recurring contract billing when the consumption quantity is updated on the billing detail line for a usage-based billing schedule line. | Feature management |
 | Electronic reporting | (Preview) In-app PDF conversion for configurable business documents | <p>This feature facilitates the seamless conversion of configurable business documents from Word or Excel formats to PDF. It supports a wide range of business scenarios and gives users the flexibility to generate and distribute professional-grade PDF documents directly in the app.</p><p>Because this feature uses Application Object Server (AOS) resources, external conversion services aren't required. By taking advantage of in-app capabilities to ensure efficient and secure document processing, this feature reduces dependency on third-party tools while it also maintains high performance and reliability.</p><p>Learn more in [Output conversion to PDF](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md#OutputConversionToPDF).</p> | Feature management |
-| Regulatory reporting | (Production ready preview) Security enhancements in UK MTD VAT integration (cloud-based deployments only) | <p>This feature is a *Production Ready Preview* feature for companies that use direct integration of their cloud-based Finance instance with Making Tax Digital for Value-Added Tax (MTD VAT) APIs of His Majesty's Revenue and Customs (HMRC).</p><p>When you enable the feature, your **UK MTD VAT TEST** and **UK MTD VAT returns** electronic messaging processing is automatically updated to enhance the security of your Finance integration for direct VAT return submissions for your UK VAT registration. The following actions of the **Web service** type have been changed to executable classes: retrieve VAT obligations, test retrieve VAT obligations, submit VAT return, test submit VAT return, request VAT liabilities, and request VAT payments.</p><p>After this feature is enabled, it can't be disabled.</p><p>Learn more in [Making Tax Digital – VAT return submission in the United Kingdom](https://go.microsoft.com/fwlink/?linkid=2289346).</p> | Feature management |
-| Regulatory reporting | (Preview) SAF Accounting Books Income Tax - JPK_KR_PD | JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a new reporting standard in Poland that is mandatory for businesses as of January 1, 2025. It requires that taxpayers submit detailed accounting books in a structured electronic format. Large taxpayers must report the new SAF Accounting Books Income Tax - JPK_KR_PD for the first time in March 2026, which is their deadline for filing their 2025 tax returns. Learn more in [SAF Accounting Books Income Tax - JPK_KR_PD](../localizations/poland/emea-pol-standard-audit-file-saf-pd.md). | Electronic reporting (ER) configurations | 
+| Regulatory reporting | (Production ready preview) Security enhancements in UK MTD VAT integration (cloud-based deployments only) | <p>This feature is a *Production Ready Preview* feature for companies that use direct integration of their cloud-based Finance instance with Making Tax Digital for Value-Added Tax (MTD VAT) APIs of His Majesty's Revenue and Customs (HMRC).</p><p>When you enable the feature, your **UK MTD VAT TEST** and **UK MTD VAT returns** electronic messaging processing is automatically updated to enhance the security of your Finance integration for direct VAT return submissions for your UK VAT registration. The following actions of the **Web service** type were changed to executable classes: retrieve VAT obligations, test retrieve VAT obligations, submit VAT return, test submit VAT return, request VAT liabilities, and request VAT payments.</p><p>After this feature is enabled, it can't be disabled.</p><p>Learn more in [Making Tax Digital – VAT return submission in the United Kingdom](https://go.microsoft.com/fwlink/?linkid=2289346).</p> | Feature management |
+| Regulatory reporting | (Preview) SAF Accounting Books Income Tax - JPK_KR_PD | JPK_KR_PD (Jednolity Plik Kontrolny – Księgi Rachunkowe Podatnika) is a new reporting standard in Poland that is mandatory for businesses as of January 1, 2025. It requires that taxpayers submit detailed accounting books in a structured electronic format. Large taxpayers must report the new SAF Accounting Books Income Tax - JPK_KR_PD for the first time in March 2026, which is their deadline for filing their 2025 tax returns. Learn more in [SAF Accounting Books Income Tax - JPK_KR_PD](../localizations/poland/emea-pol-standard-audit-file-saf-pd.md). | Electronic reporting (ER) configurations |
+| System Administration | Master Company Data Sharing | Master company sharing, also known as single record sharing (SRS), is a concept where a single physical record belonging to a master company is virtually shared across child companies. Create, update, or delete in any company in the policy updates the single records used across all companies. After this feature is enabled, it can't be disabled | Feature management |
 
 ## Feature enhancements included in this release
 
@@ -69,7 +70,7 @@ This section contains a table that lists the enhancements that are included in t
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in version 10.0.43. Most features that have been turned on automatically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
+The following table lists the features that are turned on by default in version 10.0.43. Most features that were turned on automatically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that were turned on automatically might be removed from Feature management and become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features are never automatically enabled in less than one year, unless they're determined to be essential.
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
@@ -85,7 +86,7 @@ The following table lists the features that are turned on by default in version 
 | Enable exchange rate types for sales tax | On by default | Tax |
 | Packing slip date as the delivery date for the advanced Tax calculation (tax rate determination) | On by default | Tax |
 | Selection of advance invoices for reversing while posting sales order credit note | Mandatory | Accounts receivable |
-| (Lithuania) Do not add the VAT keyword to the beginning of the invoice title | Mandatory | Accounts receivable |
+| (Lithuania) Don't add the VAT keyword to the beginning of the invoice title | Mandatory | Accounts receivable |
 | Enable tax adjustment on consolidated invoice for Japan | On by default | Accounts receivable |
 |Prevent fixed asset acquisition from project purchase order when business rules for fixed assets determination are configured	|Enabled by default|	Fixed assets|
 |(Belgium) Fixed Asset report - Enable fiscal calendar filter|	Mandatory	|Fixed assets|
@@ -93,7 +94,7 @@ The following table lists the features that are turned on by default in version 
 
 ## Features removed from Feature management
 
-The following table lists the features that have been removed from Feature management in version 10.0.43.
+The following table lists the features that were removed from Feature management in version 10.0.43.
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
@@ -105,7 +106,7 @@ The following table lists the features that have been removed from Feature manag
 | (Mexico) Add fields for customs information on free text invoice lines | The related functionality is enabled out of the box. | Accounts receivable |
 | Reset the workflow status for free text invoices from Unrecoverable to Draft | The related functionality is enabled out of the box. | Accounts receivable |
 
-## Additional resources
+## More information
 
 ### Platform updates for finance and operations apps
 
