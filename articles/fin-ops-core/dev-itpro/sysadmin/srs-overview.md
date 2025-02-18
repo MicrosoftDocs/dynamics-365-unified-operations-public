@@ -4,9 +4,8 @@ description: Learn about cross-company data sharing. This is a mechanism for sha
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
-ms.date: 02/15/2022
+ms.date: 02/18/2025
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-01-27
 ms.search.form: SysDataSharingConfiguration
