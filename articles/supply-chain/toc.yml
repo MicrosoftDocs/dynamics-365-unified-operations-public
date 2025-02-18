@@ -4027,6 +4027,8 @@
           href: warehousing/transfer-orders-warehouse.md
         - name: View and manage the work exceptions log
           href: warehousing/work-exceptions-log.md
+        - name: User-configurable queries in warehouse management
+          href: warehousing/user-configurable-queries-in-warehouse-management.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes
