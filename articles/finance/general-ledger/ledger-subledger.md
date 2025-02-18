@@ -1,5 +1,5 @@
 ---
-title: Ledgers and subledgers 
+title: Ledger and subledger overview 
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations 
 author: kweekley
 ms.author: kweekley
@@ -14,7 +14,7 @@ ms.search.form: Ledger
 ms.dyn365.ops.version: 8.1
 ---
 
-# Ledgers and subledgers
+# Ledger and subledger overview
 
 [!include [banner](../includes/banner.md)]
 
