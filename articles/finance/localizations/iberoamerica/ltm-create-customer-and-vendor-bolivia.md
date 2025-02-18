@@ -17,8 +17,8 @@ The Bolivian customer and vendor configuration contains the fiscal information t
 
 Before you create records for customers and vendors who are located in Bolivia, the following setup must be completed:
 
-- Address formats that are specific to Bolivia. Configure Address format according to the structure country, state, counties, etc. For more information, see [Address setup](global-address-book-address-setup.md)
-- Create the tax codes that will be used for value-added tax (VAT), including VAT  13%, VAT 0%, etc. For more information, see [Sales tax calculation methods](sales-tax-calculation-methods-origin-field.md)
+- Address formats that are specific to Bolivia. Configure Address format according to the structure country, state, counties, etc. For more information, see [Address setup](../../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md)
+- Create the tax codes that will be used for value-added tax (VAT), including VAT  13%, VAT 0%, etc. For more information, see [Sales tax calculation methods](../../general-ledger/sales-tax-calculation-methods-origin-field.md)
 - Sales tax groups that contain the tax codes that were created.
 - Item sales tax groups that contain the tax codes that were created.
 - Create Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on.  For more information, see [Configure sales and purchase invoices for Bolivia](ltm-configure-invoices-Bolivia.md).
