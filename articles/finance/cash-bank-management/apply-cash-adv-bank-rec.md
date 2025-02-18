@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 1/02/2025
+ms.date: 2/18/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -114,7 +114,7 @@ To use matching rules to automatically generate customer payments without settli
 14. Select **OK** to run the automatic matching.
 
 > [!NOTE]
-> If the feature **Payment journal cancellation from bank reconciliation worksheet** is enabled, the **Cancel payment** button is available for users to reverse incorrectly posted customer payment journals from reconciliation worksheet. If invoice has been settled during the journal posting (manually or using reconciliation rules), the invoice is also unsettled at the time of payment cancellation. 
+> If the **Payment journal cancellation from bank reconciliation worksheet** feature is enabled, the **Cancel payment** button is available to reverse incorrectly posted customer payment journals from the reconciliation worksheet. If the invoice has been settled during the journal posting (manually or using reconciliation rules), the invoice is also unsettled at the time of payment cancellation. 
 
 ### Generate vendor payments
 
