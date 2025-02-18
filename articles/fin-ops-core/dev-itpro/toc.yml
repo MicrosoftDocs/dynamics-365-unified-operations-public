@@ -1865,6 +1865,8 @@ items:
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
         - name: Security governance (preview)
           items:
+            - name: User security governance overview
+              href: ../fin-ops/sysadmin/security-gov-overview.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
             - name: Import security categories
