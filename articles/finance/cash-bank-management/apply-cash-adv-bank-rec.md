@@ -1,6 +1,6 @@
 ---
 title: Cash application in advanced bank reconciliation
-description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and a step-by-step processes.
+description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
@@ -146,7 +146,7 @@ To use matching rules to automatically generate vendor payments without settling
 If the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are available in advanced bank reconciliation. 
 
 To enter default descriptions for bank reconciliation postings, follow these steps:
-1. Go to **General Ledger** \> **Journal setup**  \> **Default descrptions** or **Organization administration** \> **Default descrptions**.
+1. Go to **General Ledger** \> **Journal setup**  \> **Default descriptions** or **Organization administration** \> **Default descriptions**.
 2. There is a description type **Bank - reconciliation worksheet** in the list.
 3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 
