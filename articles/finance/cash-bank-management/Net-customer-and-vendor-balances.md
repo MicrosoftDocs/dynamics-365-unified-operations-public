@@ -4,7 +4,7 @@ description: Learn about customer and vendor balance netting in Microsoft Dynami
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 09/03/2024
+ms.date: 02/18/2025
 ms.custom:
 ms.search.form: 
 ms.reviewer: twheeloc
@@ -88,7 +88,7 @@ You can reverse posted netting transactions by selecting **Reverse netting** on 
 
 ## View netting history and print netting advice
 
-You can see the cleared netting pairs during manual and automatic netting for selected netting agreement in the **Netting history** form. In addition, you can print netting advice for selected customer invoices and vendor invoices. The advice can then be shared with the customer or vendor as a notification for netting.
+You can see the cleared netting pairs during manual and automatic netting for selected netting agreement in the **Netting history** page. You can print netting advice for selected customer invoices and vendor invoices. The advice can then be shared with the customer or vendor as a notification for netting.
 
 1. Go to **Cash and bank management** \> **Netting** \> **Customer and vendor balances netting**.
 2. Select **Netting history**.
