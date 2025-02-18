@@ -20,8 +20,7 @@ ms.dyn365.ops.version: 8.1
 
 ## What is a ledger? 
 
-A ledger captures the collection of main accounts in a defined structure. It represents the General ledger for a legal entity where all the financial transactions are summarized and posted. This serves as 
-the basis for statutory finance reports (Balance sheet, Profit and loss statements) preparation and tax reporting. 
+A ledger captures the collection of main accounts in a defined structure. It represents the General ledger for a legal entity where all the financial transactions are summarized and posted. This is the basis for statutory finance reports (Balance sheet, Profit and loss statements) preparation and tax reporting. 
 
 ## Set up a ledger 
 
@@ -74,7 +73,7 @@ The net of all postings to the General ledger is aggregated using main account t
  - expense
  - cost of goods sold
  
-And by account structure, either balance sheet or proft and loss. When generating financial reports, transactions are displayed per legal entity. 
+By account structure, either balance sheet or profit and loss. When generating financial reports, transactions are displayed per legal entity. 
 
 ### Product receipt subledger and ledger postings  
 
