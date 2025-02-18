@@ -25,23 +25,23 @@ the basis for statutory finance reports (Balance Sheet, Profit & Loss statement 
 
 ## Set up a ledger 
 
-For each legal entity in Microsoft Dynamics 365 Finance, details about the ledger must be configured. To set up a ledger settings, go to **General ledger** > **Ledger setup** > **Ledger**.  
+For each legal entity in Microsoft Dynamics 365 Finance, details about the ledger must be configured. To set up ledger settings, go to **General ledger** > **Ledger setup** > **Ledger**.  
 
 The main components of the ledger are: 
- - Charts of accounts, fiscal calendar and financial dimension.
+ - Chart of accounts, fiscal calendar, and financial dimension.
  - Account structure applicable for the ledger. An Account structure is a collection of main accounts by type and reporting requirements. For example, Balance sheet account structure contains list of main
-accounts pertaining to Assets, Liabilities and Owners equity.
- - Accounting currency, Reporting currency, and exchange rate type.  
+accounts pertaining to assets, liabilities, and owners equity.
+ - Accounting currency, reporting currency, and exchange rate type.  
 
-When setting up a ledger, it's important to define the above components after thorough review as it's not possible to change Chart of accounts and the currency. The Fiscal calendar and Account structure can be 
+When setting up a ledger, it's important to define the above components after thorough review as it's not possible to change chart of accounts and the currency. The Fiscal calendar and Account structure can be 
 modified. 
 
-For more information on configuring the Ledger, see [Configure ledgers](configure-ledger.md).  
+For more information on configuring the ledger, see [Configure ledgers](configure-ledger.md).  
  
 ### What is a subledger? 
 
 A subledger captures the detailed financial postings of any document created in a module. The subledger postings are summarized and eventually posted to the General ledger. Examples of subledgers in Dynamics 365 
-are Accounts payable, Accounts receivable, Inventory, Fixed assets,  and Production. 
+are Accounts payable, Accounts receivable, Inventory, Fixed assets, and Production. 
 
 ### Set up subledger postings 
 
@@ -63,13 +63,12 @@ The total debit and credit amounts must be balanced. This principle states that 
 For example, a product receipt for $100 in purchase, results in a $100 debit to Inventory account and an equivalent credit of $100 to the Purchase accrual account. In this way, each transaction posted in a module
 with accounting impact is recorded to the General ledger. 
 
-Postings in the General ledger follow the ledger's account structure, fiscal calendar and posting rules. When posting transactions in the General ledger, only accounts from the Chart of Accounts defined in the
+Postings in the General ledger follow the ledger's account structure, fiscal calendar, and posting rules. When posting transactions in the General ledger, only accounts from the chart of accounts defined in the
 ledger are used.  
 
 To view transactions posted to the main account, go to **General ledger** > **Inquiries and reports** > **Voucher transactions**.   
 
-The net of all postings to the General ledger is aggregated by main account types. Asset, Liability, Revenue, Expense, or Cost of goods sold and by account structure, Balance sheet, Proft and loss. When generating
-the requisite financial reports, transactions are displayed per legal entity. 
+The net of all postings to the General ledger is aggregated using main account types. Asset, Liability, Revenue, Expense, or Cost of goods sold and by account structure, Balance sheet, Proft and loss. When generating financial reports, transactions are displayed per legal entity. 
 
 ### Product receipt subledger and ledger postings  
 
