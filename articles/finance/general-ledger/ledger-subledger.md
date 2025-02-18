@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-# What is a ledger? 
+## What is a ledger? 
 
 A ledger captures the collection of main accounts in a defined structure. It represents the General ledger (GL) for a legal entity where all the financial transactions are summarized and posted. This serves as 
 the basis for statutory finance reports (Balance Sheet, Profit & Loss statement etc.) preparation and tax reporting. 
@@ -36,7 +36,7 @@ accounts pertaining to Assets, Liabilities and Owners equity.
 When setting up a ledger, it's important to define the above components after thorough review as it's not possible to change Chart of accounts and the currency. The Fiscal calendar and Account structure can be 
 modified. 
 
-For more information on configuring the Ledger, see [Configure ledgers](configure-ledger).  
+For more information on configuring the Ledger, see [Configure ledgers](configure-ledger.md).  
  
 ### What is a subledger? 
 
@@ -52,7 +52,7 @@ To set up posting profiles in Dynamics 365 finance and operations apps, follow t
  - Inventory: **Inventory management** > **Posting** > **Posting**.
  - Production groups: **Production control** > **Production** > **Production groups**. 
 
-For more information on Posting profiles, see [Posting profiles overview](pstg-prfles-ovrvw). n  
+For more information on Posting profiles, see [Posting profiles overview](pstg-prfles-ovrvw.md).   
 
 ### Link between a subledger and a ledger 
 
