@@ -48,6 +48,8 @@ Before making payments for supplier invoices, verify that the Document class set
       3. In the **letter code** field, enter **FC** for invoices.
       4. In the **user define fiel 2** field, enter **2** as type supporting document.
 
+In case of successive tract contract you might change  **letter code** field to **CS** and enable concept 3 field of the document class to add contrat number.
+
 ### Configuration for other payments 
 
 When you need to make payments to suppliers for purchases that do not have an invoice but require withholdings, check the following configuration:
@@ -64,6 +66,7 @@ When you need to make payments to suppliers for real estate purchases, check the
       2. In the **Tax application code** field, enter **2** as transaction type
       3. In the **user define fiel 2** field, enter **430** as type supporting document.    
 
+In case of successive tract contract you might add **letter code** field to **CS** and enable concept 3 field of the document class to add contrat number.
 
 ## Set up application-specific parameters
 
