@@ -326,14 +326,14 @@ Follow the configuration steps in [Import vendor electronic invoices](../europe/
 
 ### Receive electronic invoices
 
-After you complete all the required configuration steps, you can receive incomig electronic invoices in the **PEPPOL** format.
+After you complete all the required configuration steps, you can receive incoming electronic invoices in the **PEPPOL** format.
 
 To receive electronic invoices, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 1. Select **OK**, and then close the page.
 
-To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
+To view the receipt logs for processed electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
 To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 
