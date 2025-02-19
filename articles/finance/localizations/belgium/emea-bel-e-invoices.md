@@ -121,7 +121,7 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 > [!NOTE]
 > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
     
-4. On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
+4. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
 5. In the **Channel** field, enter the **EdiStatus** value. You must enter the value exactly as it appears here. The system will use it as the channel for outgoing electonic invoices submission.
 6. In the **Company** field, select a required legal entity.
 7. In the **Document context** field, select the **Data channel context** mapping from the **Customer invoice context model** configuration.
@@ -138,7 +138,10 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 18. Select **Save**, and close the page. 
 
 ![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
-    
+
+> [!NOTE]
+> If you need to use other integration channels, different from **EdiStatus** and **EdiImport**, then you must do additional configuration of the feature and the context configurations.
+
 ## Configure address structure
 
 To configure the structure of the postal address to define all required elements, follow these steps.
@@ -295,19 +298,19 @@ According to PEPPOL requirements, when you register free text invoices, invoices
 
 ## Issue electronic invoices
 
-AAAAAAAAAAAAAAAAAAAAAAAAA==================================================================AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more about how to generate electronic invoices in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 > [!IMPORTANT]
 > In current implementations, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of electronic invoices requires that you complete the following additional steps.
 
-To submit the generated electronic invoices in batch mode, follow these steps.
+To submit the generated electronic invoices, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
 
 You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+
+ ![Screenshot that shows the submission log.](emea-bel-einoices-submission-log.jpg)
 
 ## Receive incoming electronic invoices
 
