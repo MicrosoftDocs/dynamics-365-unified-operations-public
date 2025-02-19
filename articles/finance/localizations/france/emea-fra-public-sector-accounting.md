@@ -40,6 +40,8 @@ Additional setup steps for specific features are covered in the article for each
     -   To meet public sector regulatory requirements in France, set spending thresholds for purchases in the procurement categories that are defined by the Clé de Contrôle Marché. A **Spending thresholds by category** policy rule that is used with purchasing policies lets you use effective date attributes, predicted expenditure amounts, and threshold amounts to support required procurement practices. The policy rule also ensures the efficient and effective use of public funds.
 
 
+>[!NOTE]
+> The **Commitment** functionality does not support transactions related to Projects. Please consider using [General budget reservations](../finance/localizations/finance/public-sector/general-budget-reservation-tasks.md) instead.
 
 
 
