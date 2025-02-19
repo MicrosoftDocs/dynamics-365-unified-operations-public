@@ -71,6 +71,7 @@ To set up your flexible sampling plans, follow these steps.
     - **Fail action level** – Enter or view the level of action that is initiated when the quantity in the **Number of fails** field is reached. This action indicates that more testing is required. If the **Consecutive** check box is also selected, then the number of fails must be consecutive fails to initiate the action. For example, if two consecutive quality orders fail at Level 3, then the action defined may require that testing start over at Level 1. You can assign any prior level that is currently defined in the flexible sampling plan that is at least equal to or less than the current level.
     - **Fail action code** – Select the action code that defines the action to take when the failure criteria is met or exceeded for the flexible sampling plan. All of the actions return the test sampling process to the fail action level.
 
+## Set up the quality association for the flexible sampling plan
 
 
 You set up new flexible sampling plans on the **Flexible sampling plans** page. Each plan is made up of different testing levels that identify the testing process, such as which test group and/or item sampling, and the order in which the levels are performed. For each plan you create, if the **Alert** or **Expire AVL/Alert** option is set up for a plan level, then you can assign an alert role to be notified if the specified number of failures for that level is reached.
