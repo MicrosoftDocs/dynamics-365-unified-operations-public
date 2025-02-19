@@ -138,7 +138,11 @@ In this procedure, you'll do a location inquiry by using the Warehouse Managemen
 1. You can now follow the standard task flow to complete the movement. After the work is completed, open the actions menu, and select **Cancel**.
 1. You're returned to the **Location inquiry** page. The values aren't automatically updated. Therefore, you must manually refresh the page to see the changes from the movement detour.
 
+## <a name="scenario-3"></a>Sample scenario 3: Movement by template with data inquiry detour
+
 > [!NOTE]
 > Multi-level detours enable you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table.
 >
 > Auto-submit detour steps can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step by auto submitting the page, as shown in [*Sample scenario 1: Sales picking where a location inquiry acts as a detour*](#scenario-1).
+>
+> The number of auto-submits essentially corresponds to the number of times the OK button is clicked. If a mobile app flow has defaulting mechanics, auto-submit for detours can cause variations in behavior based on on-hand data composition. An example shown is:  [*Sample scenario 3: Movement by template with data inquiry detour*](#scenario-3).
