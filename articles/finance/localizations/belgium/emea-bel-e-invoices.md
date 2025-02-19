@@ -314,15 +314,7 @@ You can inquire about the results of the submission by going to **Organization a
 
 ## Receive incoming electronic invoices
 
-To import incoming invoices .........................................................
-
-### Finance configuration
-
-Some additional parameters must be configured directly in Finance.
-
-To configure the additional parameters directly in Finance, follow these steps.
-
-### Configure Finance business data
+To import incoming invoices, some additional parameters must be configured directly in Microsoft Dynamics 365 Finance.
 
 You must configure the following types of master data to provide a match for incoming electronic invoices:
 
@@ -333,6 +325,8 @@ You must configure the following types of master data to provide a match for inc
 Follow the configuration steps in [Import vendor electronic invoices](../europe/emea-peppol-import.md). Start from the [Configure vendor data](../europe/emea-peppol-import.md#configure-vendor-data) section.
 
 ### Receive electronic invoices
+
+After you complete all the required configuration steps, you can receive incomig electronic invoices in the **PEPPOL** format.
 
 To receive electronic invoices, follow these steps.
 
@@ -345,7 +339,7 @@ To view successfully received invoices, go to **Accounts payable** \> **Invoices
 
 ## Additional resources
 
-- [Import vendor electronic invoices](../europe/emea-peppol-import.md)
+- [Electronic invoicing coverage for supported and planned countries and regions](../global/e-invoicing-coverage.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
