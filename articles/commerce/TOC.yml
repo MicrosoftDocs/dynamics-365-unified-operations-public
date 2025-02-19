@@ -422,8 +422,6 @@
               href: pos-healthcheck.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
-            - name: Peripheral compatibility
-              href: dev-itpro/Compatible-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in Store Commerce
