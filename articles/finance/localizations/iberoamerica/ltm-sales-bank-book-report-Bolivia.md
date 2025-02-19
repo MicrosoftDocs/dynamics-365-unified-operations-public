@@ -11,12 +11,12 @@ ms.author: v-cpicon
 
 # Configure printing for Sales Bank Books for Bolivia
 
-This article explains how to set up and generate reports for sales bank books for Bolivia.
+This article explains how to set up and generate report sales bank book for Bolivia.
 
 The bank book in Bolivia is a report that allows detailing all those customer payments equal to or greater than the amount established by the regulations of the National Tax Service (Servicio de Impuestos Nacionales). The report will allow downloading the information on a monthly basis about customer payments for sales of goods and/or services with the presentation structure requested by the tax authority.
 
 
-![Sales bank book report diagram]()
+![Sales bank book report diagram](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ltm-sales-bank-book-report-Bo-cpicon85/articles/finance/localizations/media/LTM-Sales-bank-book.BO.png)
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Before you complete the steps in this article to generate the report, the follow
 - Both the country/region-specific LATAM feature for Bolivia and the general LATAM feature must be enabled.
 - You must download the specific report from the Global repository. For more information, see [Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md). 
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
-- You must create a tax application to use on the report for example Tax application id **LB** Tax application description **Libro Bancarizacion**. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
+- You must create a tax application to use on the report for example Tax application id **LB** and Tax application description **Libro Bancarizacion**. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - Create field list 10 and in the reference code section add two options  **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master.md)
 
 ## Common configurations for all transactions types
