@@ -1,6 +1,6 @@
 ---
-title: Ledger and subledger overview 
-description: Learn about ledgers and subledgers in Dynamics 365 finance and operations 
+title: Ledger and subledger overview
+description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
 author: kweekley
 ms.author: kweekley
 ms.topic: article
@@ -18,73 +18,73 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-## What is a ledger? 
+## What is a ledger?
 
-A ledger captures the collection of main accounts in a defined structure. It represents the General ledger for a legal entity where all the financial transactions are summarized and posted. This is the basis for statutory finance reports (Balance sheet, Profit and loss statements) preparation and tax reporting. 
+A *ledger* captures the collection of main accounts in a defined structure. It represents the general ledger for a legal entity, where all the financial transactions are summarized and posted. Therefore, it serves as the basis for the preparation of statutory finance reports (balance sheets and profit and loss statements) and tax reporting.
 
-## Set up a ledger 
+## Set up a ledger
 
-For each legal entity in Microsoft Dynamics 365 Finance, details about the ledger must be configured. To set up ledger settings, go to **General ledger** > **Ledger setup** > **Ledger**.  
+For each legal entity in Microsoft Dynamics 365 Finance, details about the ledger must be configured. To configure ledger settings, go to **General ledger** \> **Ledger setup** \> **Ledger**.
 
-The main components of the ledger are: 
- - Chart of accounts, fiscal calendar, and financial dimension.
- - Account structure applicable for the ledger. An Account structure is a collection of main accounts by type and reporting requirements. For example, the Balance sheet account structure contains list of main
-accounts pertaining to assets, liabilities, and owners equity.
- - Accounting currency, reporting currency, and exchange rate type.  
+A ledger has the following the main components:
 
-When setting up a ledger, it's important to define the above components after thorough review as it's not possible to change chart of accounts and the currency. The Fiscal calendar and Account structure can be 
-modified. 
+- The chart of accounts, fiscal calendar, and financial dimensions.
+- The *account structure* that is applicable to the ledger. An account structure is a collection of main accounts by type and reporting requirements. For example, the balance sheet account structure contains a list of main accounts that are relevant to assets, liabilities, and owner equity.
+- The accounting currency, reporting currency, and exchange rate type.
 
-For more information on configuring the ledger, see [Configure ledgers](configure-ledger.md).  
- 
-## What is a subledger? 
+When you set up a ledger, it's important that you do a thorough review before you define these components. The chart of accounts and the currency can't be changed later. However, the fiscal calendar and account structure can be changed.
 
-A subledger captures the detailed financial postings of any document created in a module. The subledger postings are summarized and eventually posted to the General ledger. Examples of subledgers in Dynamics 365 finance and operations apps are Accounts payable, Accounts receivable, Inventory, Fixed assets, and Production. 
+Learn more about how to configure a ledger in [Configure ledgers](configure-ledger.md).
 
-## Set up subledger postings 
+## What is a subledger?
 
-Subledger postings in an area are defined in the **Posting profile** for the module. 
-To set up posting profiles in Dynamics 365 finance and operations apps, follow these steps: 
- - Account payable: **Account payable** > **Setup **> **Vendor posting profile**. 
- - Account receivable: **Account receivable** > **Setup** > **Customer posting profile**.
- - Inventory: **Inventory management** > **Posting** > **Posting**.
- - Production groups: **Production control** > **Production** > **Production groups**. 
+A *subledger* captures the detailed financial postings of any document that is created in a module. The subledger postings are summarized and eventually posted to the general ledger. Examples of subledgers in Dynamics 365 finance and operations apps include Accounts payable, Accounts receivable, Inventory, Fixed assets, and Production.
 
-For more information on Posting profiles, see [Posting profiles overview](pstg-prfles-ovrvw.md).   
+## Set up subledger postings
 
-## Link between a subledger and a ledger 
+Subledger postings in an area are defined in the *posting profile* for the module.
 
-When a transaction is posted within a particular module, it creates a subledger journal to capture the accounting impact of the transaction. The subledger journal contains list of all affected ledger accounts, 
-and the respective posting amount by debit and credit entries. 
+To set up posting profiles in finance and operations apps, follow these steps.
 
-The total debit and credit amounts must be balanced. This principle states that every transaction to an account has an equal and opposite entry to another account. 
-For example, a product receipt for $100 in purchase, results in a $100 debit to Inventory account and an equivalent credit of $100 to the Purchase accrual account. In this way, each transaction posted in a module
-with accounting impact is recorded to the General ledger. 
+- **Accounts payable:** Go to **Accounts payable** \> **Setup ** \> **Vendor posting profile**.
+- **Accounts receivable:** Go to **Accounts receivable** \> **Setup** \> **Customer posting profile**.
+- **Inventory:** Go to **Inventory management** \> **Posting** \> **Posting**.
+- **Production groups:** Go to **Production control** \> **Production** \> **Production groups**.
 
-General ledger postings follow the ledger's account structure, fiscal calendar, and posting rules. When posting transactions in the General ledger, only accounts from the chart of accounts defined in the
-ledger are used.  
+Learn more about posting profiles in [Posting profiles overview](pstg-prfles-ovrvw.md).
 
-To view transactions posted to the main account, go to **General ledger** > **Inquiries and reports** > **Voucher transactions**.   
+## Link between a subledger and a ledger
 
-The net of all postings to the General ledger is aggregated using main account types: 
- - asset
- - liability
- - revenue
- - expense
- - cost of goods sold
- 
-By account structure, either balance sheet or profit and loss. When generating financial reports, transactions are displayed per legal entity. 
+When a transaction is posted in a module, a subledger journal is created to capture the accounting impact of that transaction. This subledger journal contains a list of all affected ledger accounts and the corresponding posting amount by debit and credit entries.
 
-## Product receipt subledger and ledger postings  
+The total debit and credit amounts must be balanced. This principle requires that every transaction to an account has an equal and opposite entry to another account. For example, a product receipt for $100 in purchases results in a $100 debit to the Inventory account and an equivalent credit of $100 to the Purchase accrual account. In this way, every transaction that is posted in a module and has an accounting impact is recorded to the general ledger.
 
-After a **Product receipt journal** is created for a **Purchase order** in Dynamics 365 finance and operations, the **Vouchers** tab displays the **Ledger account postings** for the **Product receipt**. 
-In the **Voucher transactions** view, the **View subledger journal** tab can be used to show the subledger details including:
- - subledger journal number
- - posting type
- - ledger accounts
- - Debit or credit amounts
- - currency
+General ledger postings follow the ledger's account structure, fiscal calendar, and posting rules. When transactions are posted in the general ledger, only accounts from the chart of accounts that is defined in the ledger are used.
 
-The total Debit and Credit amounts must be equal for the subledger. 
+To view transactions that are posted to the main account, go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 
-**Voucher transactions** includes a **Transaction** list that displays all the documents posted to the selected main account. 
+The net of all postings to the general ledger is aggregated by using main account types:
+
+- Asset
+- Liability
+- Revenue
+- Expense
+- Cost of goods sold
+
+By account structure, either balance sheet or profit and loss. When financial reports are generated, they show transactions by legal entity.
+
+## Product receipt subledger and ledger postings
+
+After a Product receipt journal is created for a purchase order in finance and operations apps, the **Vouchers** tab shows the ledger account postings for the product receipt.
+
+In the **Voucher transactions** view, the **View subledger journal** tab can be used to view the subledger details. Here are some examples of these details:
+
+- Subledger journal number
+- Posting type
+- Ledger accounts
+- Debit or credit amounts
+- Currency
+
+The total debit and credit amounts must be equal for the subledger.
+
+The **Voucher transactions** view includes a **Transaction** list that shows all the documents that were posted to the selected main account.
