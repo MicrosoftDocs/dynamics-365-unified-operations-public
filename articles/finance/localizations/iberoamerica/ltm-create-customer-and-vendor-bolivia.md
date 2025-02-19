@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Bolivia
 
+[!include [banner](../../includes/banner.md)]
+
 The Bolivian customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
@@ -77,3 +79,5 @@ To create a record for a vendor in Bolivia, follow these steps.
 
 > [!NOTE]
 > This procedure describes the main settings that are required for localization. You can set other fields that are required for other Dynamics 365 Finance features that you must use.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
