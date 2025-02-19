@@ -2,7 +2,7 @@
 title: Configure printing for Purchase bank Books for Bolivia
 description: Learn about the required configuration for printing a Purchase Bank Book report for Bolivia. 
 author: Cpicon85
-ms.date: 02/14/2025
+ms.date: 02/19/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -16,7 +16,7 @@ This article explains how to set up and generate reports for purchase Bank books
 The bank book in Bolivia is a report that allows detailing all those purchase payments equal to or greater than the amount established by the regulations of the National Tax Service (Servicio de Impuestos Nacionales). The report will allow downloading the information on a monthly basis about the payments of purchase transactions of goods and/or services with the presentation structure requested by the tax authority.
 
 
-![Purchase bank book report diagram](./media/LTM-Purchase-bank-book.png)
+![Purchase bank book report diagram](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/ltm-purchase-bank-book-report-Bo-cpicon85/articles/finance/localizations/media/LTM-Purchase-bank-book.png)
 
 ## Prerequisites
 
