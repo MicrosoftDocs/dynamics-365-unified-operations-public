@@ -73,7 +73,7 @@ To create a record for a vendor in Bolivia, follow these steps.
 1. In the **LATAM** section, enter the following information:
    - In the **Vendor set** field, select a set that contains the document classes to use with the vendor.
    - In the **Taxpayer type** field, select a taxpayer that represents the organization. 
-   - In the **Based in country/región** field, select **Bolivia**.
+   - In the **Based in country/regin** field, select **Bolivia**.
       - In the **Country document type** field, select a tax ID type. For example, select **NIT**.
 - Complete the **Country document number** field with the vendor's tax ID number.
 
