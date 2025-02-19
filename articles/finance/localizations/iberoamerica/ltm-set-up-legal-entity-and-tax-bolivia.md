@@ -1,0 +1,36 @@
+---
+title: Setup a legal entity and tax information for Bolivia
+description: This topic provides information about the legal entity configuration for Bolivia and its tax information. 
+author: Cpicon85
+ms.date: 02/10/2025
+ms.topic: Article
+ms.reviewer: johnmichalak
+ms.author: v-cpicon
+ms.custom: bap-template
+---
+# Set up a legal entity and tax information for Bolivia
+This article explains how to set up a legal entity and tax information for a company that´s located in Bolivia using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal atributes that are required for the rest of the LATAM configuration.
+Before you begin, open the **Feature management** workspace, and verify that the **LATAM globalization expansion** and **LATAM globalization expansion – Bolivia** features are enabled. If it isn’t enabled, enable it. After you're sure that the feature is enabled, complete the following procedures.
+
+# Create a legal entity
+1. Go to **Organization administration > Organizations > Legal entities >** and select **New**
+2. In the address setup, set up the address format for Bolivia.
+3. Go to **Organization administration > Setup > LATAM > LATAM parameters**.
+4. On the **Concept and notes** tab, in the **Legal entity** section set a field as **Activity**
+> This procedure describes the main settings that are required for localization. You can set other fields as required for other Finance features that you must use.
+> 
+# Setup tax information
+1. [Create a document class letter](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class-letter) without a prefix. This document class letter will be used in taxpayer and document class configurations.
+2. Go to **Organization administration > Setup > LATAM > Tax ID type**.
+3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **NIT** (Unique Taxpayer Registry), which is one of the tax ID types for Bolivia.
+4. In the **Format** field, enter **XXXXXXXXXX** for NIT. Learn more in [Tax ID types for Latin America ](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type )
+5. Go to **Organization administration > Global address book > Addresses**, select the country where the company is set, and then select **LATAM** to add the NIT tax ID type. Learn more in [Address setup for Latin America](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-address-setup).
+6. Go to **Organization administration > Setup > LATAM > Taxpayer type**, and select **New** to create a record that represents organizations.
+7. In the **Type** field, select **Persona juridica**. Then add the tax ID type and the document class letter that you created. Learn more in [Taxpayer types for Latin America](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-taxpayer-type)
+8. Go to **Organization administration > Organizations > Legal entities**, and then, in the **LATAM** section, configure the following entity tax and legal information:
+- In the **Taxpayer type field**, select **Persona juridica** to represent an organization.
+- In the **Based in country/región** field, select **Bolivia**.
+- In the **Country document type** field, select **NIT**.
+- Complete the country document number, including the tax ID number of the company.
+- In the **Concept and notes** section, in the first field, enter the company activity.
+
