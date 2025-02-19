@@ -28379,6 +28379,11 @@
       "source_path": "articles/supply-chain/cost-management/tasks/create-purchase-order-governed-by-budget.md",
       "redirect_url": "/dynamics365/supply-chain/procurement/tasks/create-purchase-order-governed-by-budget",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/compatible-peripherals.md",
+      "redirect_url": "/dynamics365/commerce/retail-peripherals-overview",
+      "redirect_document_id": false
+    }    
   ]
 }
