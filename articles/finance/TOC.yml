@@ -2033,7 +2033,7 @@
                   - name: Create customer and vendor records with an address in Bolivia
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
                   - name: Set up a legal entity and tax information for Bolivia
-                    href: ltm-set-up-legal-entity-and-tax-bolivia.md
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-bolivia.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
