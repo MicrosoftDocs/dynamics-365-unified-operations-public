@@ -31,7 +31,7 @@ If you're unfamiliar with Git, you might want to review some Git terminology in 
 
 The GitHub UI supports the creation of new files and dragging and dropping images. However, when you work in the UI, managing branches can be confusing so we recommend that you install the tools and learn the commands for creating and managing topics. 
 
-* [Creating files on Github](https://github.com/blog/1327-creating-files-on-github)
+* [Creating files on GitHub](https://github.com/blog/1327-creating-files-on-github)
 * [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
 
 ## Ways to contribute
