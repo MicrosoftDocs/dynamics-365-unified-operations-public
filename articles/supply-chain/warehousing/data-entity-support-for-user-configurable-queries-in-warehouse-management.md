@@ -11,31 +11,33 @@ ms.search.form: DataManagementWorkspace, WHSWaveTemplateTable, WHSWorkTemplateTa
 
 # Data entity support for user-configurable queries in warehouse management
 
-One of the challenges with the user-configurable queries has been the interaction with the data entities. As the queries are packed in a way that is not readable by the user, it was difficult to make changes to them through the data entities. This has been solved with the introduction of the special JSON fields to the warehouse data entities which have user-configurable queries. All the relevant warehouse entities have been updated with the JSON field support.
+One of the challenges with the user-configurable queries is the interaction with the data entities. The queries are packed in a way that isn't readable by the user, it's difficult to make changes to them through the data entities. The introduction of the special JSON fields to the warehouse data entities which have user-configurable queries has addressed this issue. All the relevant warehouse entities are updated with the JSON field support.
 
 ## Example
 
-As an example, we are going to use a newly created **Location directive actions** query.
+As an example, we're going to use a newly created **Location directive actions** query.
 
 ### Setup location directive action
-1. Open the **Location directives** form (**Warehouse management** > **Setup** > **Location directives**).
-1. Set **Work order type** to *Sales orders*.
-1. Click **New** in the **Action Pane** to create a new location directive.
-1. Set **Name** to *JSON test*.
-1. Set **Work type** to **Pick**.
-1. Click **Save** in the **Action Pane**.
-1. Click **New** in the **Lines** fast tab.
-1. Set **To quantity** to *999*.
-1. Click **Save** in the **Action Pane**.
-1. Click **New** in the **Location Directive Actions** fast tab.
-1. Set **Name** to *JSON test action*.
-1. Click **Save** in the **Action Pane**.
-1. Follow the [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) guide to setup the data entities.
-1. Export the newly created location directive action with the *Warehouse location directive line actions V3* data entity, for example in the *XML-Element* format.
+
+To set up location directive action, follow these steps:
+1. Go to **Warehouse management** > **Setup** > **Location directives**.
+2. Set **Work order type** to *Sales orders*.
+3. To create a new location directive, click **New** in the **Action Pane** 
+4. In the **Name** field, enter *JSON test*.
+5. In the **Work type** field, select **Pick**.
+6. Click **Save**.
+7. In the **Lines** FastTab, click **New**.
+8. In the **To quantity** field, enter *999*.
+9. Click **Save**.
+10. In the **Location Directive Actions** FastTab, click **New**.
+11. In the **Name** field, enter *JSON test action*.
+12. Click **Save**.
+13. To set up the data entities, see [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
+14. Export the newly created location directive action with the *Warehouse location directive line actions V3* data entity, for example, in the *XML-Element* format.
 
 ### Review the exported file
 
-If you open the exported XML file, it's content will look something like below. Notice the new *ACTIONQUERYJSON* field.
+If you open the exported XML file, its content looks something like below. Notice the new *ACTIONQUERYJSON* field.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -58,4 +60,4 @@ If you open the exported XML file, it's content will look something like below. 
 </Document>
 ```
 
-The new JSON field contains all the tables, relations, sortings and ranges in a user-readable format. Learn more in [User-configurable queries in warehouse management](user-configurable-queries-in-warehouse-management.md) article.
+The new JSON field contains all the tables, relations, sortings, and ranges in a user-readable format. Learn more in [User-configurable queries in warehouse management](user-configurable-queries-in-warehouse-management.md) article.
