@@ -33,16 +33,16 @@ To configure the **Restrict to sales unit** in your product, follow these steps:
 Consider the following scenario:
  - A product, *item-one* with inventory unit in **Pieces**.
  - A sales unit in **Box**.
- - A conversion of *1 Box* is equals to *5 Pieces*.
+ - A conversion of *1 Box* is equals to *five Pieces*.
  - The **Restrict to unit** set to *Sales unit*.
  - A sales order for *item-one*, with *10 Pieces*.
 
-When releasing the order to warehouse, there could be 2 scenarios:
+When releasing the order to warehouse, there could be two scenarios:
 1. If the reserved quantity is the full quantity, *10 Pieces*, the sales order is released to warehouse successfully.
-1. If the reserved quantity is, *7 Pieces*, which results in one full box and almost half of the other, the release of the sales order to warehouse fails, showing an error message to the customer.
+1. If the reserved quantity is, *seven Pieces*, which result in one full box and almost half of the other, the release of the sales order to warehouse fails, showing an error message to the customer.
 
 > [!NOTE]
 > There's an exception to the expected behavior of the **Restrict to sales unit** functionality.
 > When the **Automatic release of sales orders** functionality is enabled with the **Quantity to release** option set to **All**. This setup ignores the **Restrict to sales unit** functionality.
 
-- For information about the **Automatic release of sales orders** functionality, see [Automatic release to the warehouse](release-to-warehouse-process#automatic-release-to-the-warehouse).
+- For information about the **Automatic release of sales orders** functionality, see [Automatic release to the warehouse](release-to-warehouse-process#automatic-release-to-the-warehouse.md).
