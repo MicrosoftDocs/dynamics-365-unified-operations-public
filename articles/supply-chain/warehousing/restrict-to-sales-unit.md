@@ -45,4 +45,4 @@ When releasing the order to warehouse, there could be two scenarios:
 > There's an exception to the expected behavior of the **Restrict to sales unit** functionality.
 > When the **Automatic release of sales orders** functionality is enabled with the **Quantity to release** option set to **All**. This setup ignores the **Restrict to sales unit** functionality.
 
-- For information about the **Automatic release of sales orders** functionality, see [Automatic release to the warehouse](automatic-release-to-the-warehouse#release-to-warehouse-process.md).
+- For information about the **Automatic release of sales orders** functionality, see [Automatic release to the warehouse](automatic-release-to-the-warehouse#release-to-warehouse-process).
