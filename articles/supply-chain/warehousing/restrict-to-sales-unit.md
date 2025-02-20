@@ -34,15 +34,15 @@ To configure the **Restrict to sales unit** in your product, follow these steps:
 
 ## Example of releasing a sales order with conversion of units
 Consider the following scenario:
-1. A product, *item-one* with inventory unit in **Pcs**.
+1. A product, *item-one* with inventory unit in **Pieces**.
 1. A sales unit in **Box**.
-1. A conversion of *1 Box* is equals to *5 Pcs*.
+1. A conversion of *1 Box* is equals to *5 Pieces*.
 1. The **Restrict to unit** set to *Sales unit*.
-1. A sales order for *item-one*, with *10 Pcs*.
+1. A sales order for *item-one*, with *10 Pieces*.
 
 When trying to release the order to warehouse, there could be 2 scenarios:
-1. If the reserved quantity is the full quantity, in this case, *10 Pcs*, the sales order is released to warehouse successfully.
-1. If the reserved quantity is, for example, *7 Pcs* which results in one full box and almost half of the other, the releasing of the sales order to warehouse fails, showing an error message to the customer.
+1. If the reserved quantity is the full quantity, in this case, *10 Pieces*, the sales order is released to warehouse successfully.
+1. If the reserved quantity is, for example, *7 Pieces* which result in one full box and almost half of the other, the releasing of the sales order to warehouse fails, showing an error message to the customer.
 
 > [!NOTE]
 >
