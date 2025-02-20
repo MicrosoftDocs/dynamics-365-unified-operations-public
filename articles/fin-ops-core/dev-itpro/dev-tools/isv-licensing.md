@@ -4,7 +4,7 @@ description: Learn about the independent software vendor (ISV) licensing feature
 author: pnghub
 ms.author: kkhajuria
 ms.topic: article
-ms.date: 02/18/2025
+ms.date: 02/20/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
