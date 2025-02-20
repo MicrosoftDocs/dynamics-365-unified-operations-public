@@ -32,7 +32,7 @@ A ledger has the following the main components:
 - The *account structure* that is applicable to the ledger. An account structure is a collection of main accounts by type and reporting requirements. For example, the balance sheet account structure contains a list of main accounts that are relevant to assets, liabilities, and owner equity.
 - The accounting currency, reporting currency, and exchange rate type.
 
-When you set up a ledger, it's important that you do a thorough review before you define these components. The chart of accounts and the currency can't be changed later. However, the fiscal calendar and account structure can be changed.
+When you set up a ledger, it's important that you do a thorough review before you define these components. The chart of accounts and the currencies can't be changed later. However, the fiscal calendar and account structure can be changed.
 
 Learn more about how to configure a ledger in [Configure ledgers](configure-ledger.md).
 
@@ -71,7 +71,7 @@ The net of all postings to the general ledger is aggregated by using main accoun
 - Expense
 - Cost of goods sold
 
-By account structure, either balance sheet or profit and loss. When financial reports are generated, they show transactions by legal entity.
+and by account structure, either balance sheet or profit and loss. When financial reports are generated, they show transactions by legal entity.
 
 ## Product receipt subledger and ledger postings
 
