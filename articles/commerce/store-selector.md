@@ -33,12 +33,12 @@ The store selector module lets users enter a location (city, state, address, and
 
 For the store selector to display available stores, the fulfillment group must be set up in Commerce headquarters. For more information, see [Set up fulfillment groups](customer-orders-overview.md#set-up-fulfillment-groups).
 
-In addition, for each store in the fulfillment group, the latitude and longitude of the store location must be defined in headquarters.
+In addition, for each store in the fulfillment group, the latitude and longitude of the retail store must be defined in headquarters.
 
-To enter the latitude and longitude values for a store location in Commerce headquarters, follow these steps.
+To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps.
 
-1. Go to **Inventory management \> Setup \> Inventory breakdown**.
-1. Select the warehouse location in the left pane.
+1. Go to **Organization administration \> Organizations  \> Operating unit**.
+1. Search by the operating unit number.
 1. On the **Addresses** FastTab, select **Advanced**.
 
     ![Example of store details in headquarters.](./media/Store-address.png)
@@ -48,7 +48,8 @@ To enter the latitude and longitude values for a store location in Commerce head
 
     ![Example of latitude and longitude setup for a store in headquarters.](./media/Store-latitude-longitude.png)
 
-1. On the Action Pane, select **Save**. 
+1. On the Action Pane, select **Save**.
+1. Run the 1070 **Channel configuration** distribution schedule job.
 
 ### Hide a store from the store selector module
 
