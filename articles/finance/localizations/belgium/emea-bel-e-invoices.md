@@ -312,6 +312,9 @@ You can inquire about the results of the submission by going to **Organization a
 
  ![Screenshot that shows the submission log.](emea-bel-einoices-submission-log.jpg)
 
+> [!NOTE]
+> Submited electronic invoices will be also available in your [Ediwin](https://ediwin.edicomgroup.com/) portal, in the **Outbound** folder and its subfolders, where you can monitor further processing of the documents.
+
 ## Receive incoming electronic invoices
 
 To import incoming invoices, some additional parameters must be configured directly in Microsoft Dynamics 365 Finance.
@@ -327,6 +330,9 @@ Follow the configuration steps in [Import vendor electronic invoices](../europe/
 ### Receive electronic invoices
 
 After you complete all the required configuration steps, you can receive incoming electronic invoices in the **PEPPOL** format.
+
+> [!NOTE]
+> You can review incoming electronic invoices in the **Inbound** folder and its subfolders, in your [Ediwin](https://ediwin.edicomgroup.com/) portal.
 
 To receive electronic invoices, follow these steps.
 
