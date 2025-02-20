@@ -30,7 +30,7 @@ As an example, we are going to use a newly created **Location directive actions*
 1. Click **New** in the **Location Directive Actions** fast tab.
 1. Set **Name** to *JSON test action*.
 1. Click **Save** in the **Action Pane**.
-1. Follow the [Data entities overview](../fin-ops-core/dev-itpro/data-entities/data-entities.md) guide to setup the data entities.
+1. Follow the [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) guide to setup the data entities.
 1. Export the newly created location directive action with the *Warehouse location directive line actions V3* data entity, for example in the *XML-Element* format.
 
 ### Review the exported file
