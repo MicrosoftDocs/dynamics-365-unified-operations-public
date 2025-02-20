@@ -140,6 +140,85 @@ In this procedure, you'll do a location inquiry by using the Warehouse Managemen
 
 ## <a name="scenario-3"></a>Sample scenario 3: Movement by template with data inquiry detour
 
+This scenario shows how to configure movement by template with data inquiry. 
+
+### Enable sample data
+
+To use the specified sample records and values to work through this scenario, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
+
+In this procedure, you'll configure a data inquiry detour for the **Movement by template** menu item in the 'scan location or license plate' step.
+
+### Configure an item data inquire mobile device menu item for the scenario 3
+
+Create the **Item data inquire** mobile device menu item by following this steps.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items.**
+1. On the Action Pane, select New to add a mobile device menu item.
+1. Set the following values for the new menu item:
+    - **Menu item name:** Item data inquire
+    - **Title:** Look up inventory dimensions by items
+    - **Mode:** Indirect
+1. On the **General** FastTab, set the following values:
+    - **Activity code:** Data inquiry
+    - **Use process guide:** Yes (This value is automatically selected.)
+    - **Table name:** InventSum (You want to look up inventory dimensions from this table.)
+1. You must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select Field list.
+1. On the Field list page, set the following values:
+    - **Display field 1:** ItemId (This field will be shown as the header for each card.)
+    - **Display field 2:** InventColorId
+    - **Display field 3:** InventSizeId
+    - **Display field 4:** WMSLocationId
+1. On the Action Pane, select **Save**. Then close the page.
+
+Please note that the **Item data inquire** mobile device menu item should be added to mobile device menu before it can be used as part of a detour process. 
+
+### Create a menu-specific override and configure the detour for scenario 3
+
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
+1. Find and select the step ID that is named *LocOrLP*.
+1. On the Action Pane, select **Add step configuration**.
+1. In the drop-down dialog box, use the **Menu item** field to find and select *Movement by template*.
+1. Select **OK**.
+1. The details page for the override that you just created appears. On the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog box, select **Item data inquiry** as the detour that will be made available in the Warehouse Management mobile app.
+1. Select **OK**.
+1. On the **Available detours (menu items)** FastTab, select the detour that you just added, and then select **Bring back from Items data inquiry** section.
+1. Select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+    - **Copy from Items Inquiry:** *Item number*
+    - **Paste in Movement by template:** *Item*
+    - **Auto submit:** *Yes*
+1. Select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+    - **Copy from Items Inquiry:** *Size*
+    - **Paste in Movement by template:** *Size*
+    - **Auto submit:** *Yes*
+1. Select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+    - **Copy from Items Inquiry:** *Color*
+    - **Paste in Movement by template:** *Color*
+    - **Auto submit:** *Yes*
+1. Select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+    - **Copy from Items Inquiry:** *Location*
+    - **Paste in Movement by template:** *Loc / LP*
+    - **Auto submit:** *No*
+1. Select **OK**.
+
+The detour is now fully configured. A button to start the **Item data inquiry** detour will now appear on the 'scan location or license plate' step for the **Movement by template** menu item.
+
+### Create a new product master item T-Shirt and add on-hand for scenario 3
+Create new product master item T-shirt with size and color variants. Add one on-hand entry for this item for warehouse 24 for 1 specific size and color.
+
+### Do a movement by template on a mobile device and use the detour
+
+In this procedure, you'll do a movement by template using the Warehouse Management mobile app. You'll then use the detour to find item, color, size and location which will be used to complete the movement.
+
+1. Open the Warehouse Management mobile app, and sign in to warehouse 24. (In the standard demo data, sign in by using *24* as the user ID and *1* as the password.)
+1. Select the **Movement by template** menu item.
+1. On the first step that contains the text **Scan location or license plate**, you should see a new detour button that is labeled **Item data inquiry**. click it.
+1. The detour is started. 
+1. The first detour step is **Item number** - specify the 'T-shirt' and confirm.
+1. Now you should be presented with 1 card which contains information about location, color and size of the existing on-hand entry. Click on it.
+1. You've returned to the **movement by template** flow and see the **Work completion** message.
+
+Please note that although the detour was configured to auto-submit only the item, size, and color, the system also auto-populated the location and quantity. This happened because, based on the on-hand data distribution, the system could determine the size, location, and quantity from the specified color. In the detour, there were three auto-submit controls, corresponding to three **OK** button clicks. Since the location and quantity were defaulted upon returning from the detour, they were automatically confirmed as well.
+
 > [!NOTE]
 > Multi-level detours enable you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table.
 >
