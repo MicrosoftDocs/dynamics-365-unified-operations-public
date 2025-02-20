@@ -38,7 +38,7 @@ In addition, for each store in the fulfillment group, the latitude and longitude
 To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps.
 
 1. Go to **Organization administration \> Organizations  \> Operating unit**.
-1. Search by the operating unit number.
+1. Search by the operating unit number in the left pane.
 1. On the **Addresses** FastTab, select **Advanced**.
 
     ![Example of store details in headquarters.](./media/Store-address.png)
