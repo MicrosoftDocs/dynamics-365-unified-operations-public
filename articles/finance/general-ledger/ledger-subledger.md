@@ -1,8 +1,8 @@
 ---
 title: Ledger and subledger overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
-author: kweekley
-ms.author: kweekley
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 02/18/2025
 ms.custom:
@@ -46,7 +46,7 @@ Subledger postings in an area are defined in the *posting profile* for the modul
 
 To set up posting profiles in finance and operations apps, follow these steps.
 
-- **Accounts payable:** Go to **Accounts payable** \> **Setup ** \> **Vendor posting profile**.
+- **Accounts payable:** Go to **Accounts payable** > **Setup** > **Vendor posting profile**.
 - **Accounts receivable:** Go to **Accounts receivable** \> **Setup** \> **Customer posting profile**.
 - **Inventory:** Go to **Inventory management** \> **Posting** \> **Posting**.
 - **Production groups:** Go to **Production control** \> **Production** \> **Production groups**.
@@ -63,15 +63,7 @@ General ledger postings follow the ledger's account structure, fiscal calendar, 
 
 To view transactions that are posted to the main account, go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 
-The net of all postings to the general ledger is aggregated by using main account types:
-
-- Asset
-- Liability
-- Revenue
-- Expense
-- Cost of goods sold
-
-and by account structure, either balance sheet or profit and loss. When financial reports are generated, they show transactions by legal entity.
+The net of all postings to the general ledger is aggregated by using main account types, asset, liability, revenue, expense, cost of goods sold, and by account structure, either balance sheet or profit and loss. When financial reports are generated, they show transactions by legal entity.
 
 ## Product receipt subledger and ledger postings
 
