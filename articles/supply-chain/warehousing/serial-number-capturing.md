@@ -11,7 +11,7 @@ ms.search.form: EcoResTrackingDimensionGroup
 
 # Serial number capturing
 
-This article explains how to use the **Capture serial number** setting in the **Tracking dimension groups** form for items which use the warehouse management processes. Depending on the setting, even if the items have the serial number activated, the actual serial number value on the inventory transactions (on-hand inventory) won't be populated until later in the process.
+This article explains how to use the **Capture serial number** setting in the **Tracking dimension groups** page for items which use the warehouse management processes. Depending on the setting, even if the items have the serial number activated, the actual serial number value on the inventory transactions (on-hand inventory) won't be populated until later in the process.
 
 Here are several articles describing a similar, but slightly different serial number setting for the **Active in sales process** case:
 - [Working with serialized items](/sales-marketing/register-serial-numbers-sales-process.md)
