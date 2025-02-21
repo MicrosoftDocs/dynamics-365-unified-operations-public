@@ -1,7 +1,7 @@
 ---
 title: Ledger and subledger overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
-author: kweekley
+author: prasungoel
 ms.author: prasungoel
 ms.topic: article
 ms.date: 02/18/2025
