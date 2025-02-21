@@ -41,6 +41,7 @@ Use the following procedure to set up promoted fields.
     > - You can only promote the fields that are shown in the **Available fields** list. You can't add new fields from here.
     > - For a given step, you should only promote fields that are displayed by default in the mobile app for that step. If you promote a field that isn't shown in the app, that setting has no effect.
     > - If you've promoted one or more fields, then only those fields will be shown on the main page of the app. However, workers can still view the remaining fields by opening the details page.
+    > - If the promoted field has a null value, it will not be displayed.
 
 1. Select **OK** to apply your settings. Your selected fields are now listed on the **Select promoted fields** FastTab.
 
