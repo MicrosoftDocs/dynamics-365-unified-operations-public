@@ -2,7 +2,7 @@
 title: Ledger and subledger overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
 author: kweekley
-ms.author: kweekley
+ms.author: prasungoel
 ms.topic: article
 ms.date: 02/18/2025
 ms.custom:
@@ -46,7 +46,7 @@ Subledger postings in an area are defined in the *posting profile* for the modul
 
 To set up posting profiles in finance and operations apps, follow these steps.
 
-- **Accounts payable:** Go to **Accounts payable** \> **Setup ** \> **Vendor posting profile**.
+- **Accounts payable:** Go to **Accounts payable** > **Setup** > **Vendor posting profile**.
 - **Accounts receivable:** Go to **Accounts receivable** \> **Setup** \> **Customer posting profile**.
 - **Inventory:** Go to **Inventory management** \> **Posting** \> **Posting**.
 - **Production groups:** Go to **Production control** \> **Production** \> **Production groups**.
