@@ -36,6 +36,9 @@ Confirmation applies in the following scenarios:
 >
 > For location confirmation, the location confirmation step is skipped if the location is manually entered on the mobile device. For example, during the manual inventory movement process, the system won't prompt for location confirmation even if it's enabled in the menu item.
 
+> [!IMPORTANT]
+> If the entire quantity from a location or license plate is picked, the worker is not asked to enter batch or serial numbers, regardless of how many batch or serial numbers are available on hand. This is a standard tracking behavior that cannot be overridden. Please refer to [Warehouse mobile device tracking dimensions and license plate  picking behavior](warehouse-mobile-device-tracking-dimensions-license-plate-picking-behavior.md) for more information.
+
 ## Set up batch, serial, license plate and location confirmation
 
 You can configure batch, serial, license plate, and location confirmation from the **Mobile device menu items** page.
