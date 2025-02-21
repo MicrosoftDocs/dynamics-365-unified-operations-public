@@ -11,7 +11,7 @@ ms.search.form: EcoResTrackingDimensionGroup
 
 # Serial number capturing
 
-This article explains how to use the **Capture serial number** setting in the **Tracking dimension groups** page for items which use the warehouse management processes. Depending on the setting, even if the items have the serial number activated, the actual serial number value on the inventory transactions (on-hand inventory) won't be populated until later in the process.
+This article explains how to use the **Capture serial number** setting in the **Tracking dimension groups** page for items which use the warehouse management processes. Depending on the setting, even if the items have the serial number activated, the actual serial number value on the inventory transactions (on-hand inventory) isn't populated until later in the process.
 
 Here are several articles describing a similar, but slightly different serial number setting for the **Active in sales process** case:
 - [Working with serialized items](../sales-marketing/register-serial-numbers-sales-process.md)
@@ -21,7 +21,7 @@ Here are several articles describing a similar, but slightly different serial nu
 
 ## Capture serial number during picking
 
-Your business process might require knowing the exact serial number that's picked for a sales or a transfer order at the time of picking. To enable this setup, go to the **Tracking dimension group**, select **Serial number** and set the **Capture serial number** to **Picking**.
+Your business process might require knowing the exact serial number that's picked for a sales or a transfer order at the time of picking. To enable this setup, go to the **Tracking dimension group**, select **Serial number**, and set the **Capture serial number** to **Picking**.
 
 > [!NOTE]
 > When the field is set to **Picking**, the **Blank receipt allowed** and **Blank issue allowed** fields are automatically selected and disabled for editing.
@@ -30,7 +30,7 @@ In the case when on-hand inventory is added, the user isn't asked to enter the s
 
 ## Capture serial number during packing
 
-Your business process might require that need to know the exact serial number that's picked for a sales or a transfer order at the time when the packing is performed. To enable this setup, go to **Tracking dimension group**, select **Serial number** and set the **Capture serial number** to **Packing**.
+Your business process might require that need to know the exact serial number that's picked for a sales or a transfer order at the time when the packing is performed. To enable this setup, go to **Tracking dimension group**, select **Serial number**, and set the **Capture serial number** to **Packing**.
 
 > [!NOTE]
 > When the field is set to **Packing**, the **Blank receipt allowed** and **Blank issue allowed** fields are automatically selected and disabled for editing.
@@ -42,4 +42,4 @@ In this case when the on-hand inventory is added, the user isn't asked to enter 
 The default setting for the **Capture serial number** field is **None**. In this case, the user isn't prompted to capture the serial number in the picking or packing process. Instead, the serial number is captured during the receiving process even if **Blank receipt allowed** is enabled. The serial number must be part of the inventory transactions (on-hand inventory) from the very beginning.
 
 > [!NOTE]
-> Depending on other settings, users might not be asked to capture the serial number during the receiving process if the serial number is generated in some other way. For example, if serial number auto-generation is enabled through the tracking number group.
+> Depending on other settings, users might not be asked to capture the serial number during the receiving process if the serial number is generated in some other way. For example, if serial number autogeneration is enabled through the tracking number group.
