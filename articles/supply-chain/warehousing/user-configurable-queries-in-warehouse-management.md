@@ -11,13 +11,13 @@ ms.search.form: SysQueryForm, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLoc
 
 # Introduction
 
-The Warehouse management module has many setup pages the set up is done in the User-configurable queries. 
-Typical examples are: 
+The **Warehouse management** module has many pages that need to be set up for User-configurable queries. 
+Some typical examples are: 
  - **Edit query** button in the **Work templates**
  - **Location directives** pages
- - **Select products** button on the **Replenishment templates** page.
+ - **Select products** button on the **Replenishment templates** page
 
-The purpose of these queries is to limit the data being processed, either due to the business requirements or in some cases for performance reasons. The exact behavior of the query, how are the results of the query are used, depends on the functional areas it's used in, but most follow the same basic structure and behavior. The logic is similar to regular SQL queries, so having knowledge about them is helpful. We'll show the basic overview of the functionality.
+The purpose of these queries is to limit the data being processed, either due to the business requirements or performance reasons. The exact behavior of the query, how are the results of the query are used, depends on the functional areas it's used in, but most follow the same basic structure and behavior. The logic is similar to regular SQL queries. 
 
 Example forms:
 **SysQueryForm**, **Wave template**, **Work templates**, **Location directives**, **Labor standards**, **Document routing**, **Wave label templates**, **Wave label layouts**, **Label layout data source**, **Container label routing**, **Wave filters**, **Mobile device menu items**, **Cluster profiles**, **Wave load building templates**, **Cross docking templates**, **Container build templates**, **Replenishment templates**, **Slotting templates**, **Outbound sorting template**, **Cycle count plans**, **Cycle counting threshold**, **Shipment consolidation policies**, **Shipment consolidation templates**.
@@ -26,23 +26,23 @@ Example buttons:
 **Edit query**, **Select items**, **Select locations**, **Select products**, **Select product variants**, **Select locations to replenish**, **Select zones to replenish**, **Define product query**, **Define product variant query**.
 
 > [!IMPORTANT]
-> The most common mistake users make in these queries is adding table joins and expecting that the functionality only applies to those added records. For example, a sales table is joined to the **Location directive action** query, that the **Location directive action** would only be applicable when processing those sales orders that fulfill the user defined criteria.
-> The system can only add filters to the tables that are in the default query. If the user adds a join to sales orders, this record won't add a filter to the sales order being released", for example.
+> The most common mistake in queries is adding table joins and expecting the functionality to apply only to the added records. For example, a sales table is joined to the **Location directive action** query, the **Location directive action** only applies when processing those sales orders that fulfill the user defined criteria.
+> The system only adds filters to the tables that are in the default query. If the user adds a join to sales orders, this record won't add a filter to the sales order being released.
 
 ## Basic query structure
 
 ### Ranges
 
-Ranges are basically filters used to limit which records are returned from the query. They are explicitly applied to the individual table fields, and implicitly when join relations are used.
+Ranges are filters used to limit which records are returned from the query. They are explicitly applied to the individual table fields, and implicitly when join relations are used.
 
 ### Joins
 
-Joins are applied between two tables and decide how the data between them is filtered and potentially combined. There can be multiple joins to the same table.
+Joins are applied between two tables to determine how the data between them is filtered and potentially combined. There can be multiple joins to the same table.
 
 The queries in X++ support several different joins: *InnerJoin*, *OuterJoin*, *ExistsJoi*n and *NoExistsJoin*. However, only *ExistsJoin* (the default value regardless of the join mode, like *1:n* or *n:1*) and *NoExistsJoin* (*NotExist*) are available in the User-configurable queries.
 
 > [!NOTE]
-> There are some special cases where dedicated functionality was developed to support inner or outer joins in User-configurable queries, like in the **Label layout data** source form, but those are usually not available.
+> There are special cases where dedicated functionality was developed to support inner or outer joins in User-configurable queries, like in the **Label layout data** source page, but those are usually not available.
 > If the default query has those types of joins, the user can add ranges to them. Any new table joins added through the UI can only be exists or not exists joins.
 > The user isn't able to see which type of join is used in the default query.
 
