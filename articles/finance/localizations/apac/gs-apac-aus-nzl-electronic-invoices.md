@@ -24,7 +24,7 @@ This article provides information that will help you get started with Electronic
 After you configure Electronic invoicing, you can generate XML files of electronic invoices by using the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format specification with the Australian and New Zealand extension.
 
 > [!NOTE]
-> The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management. For on-premises deployments, see [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md).
+> The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management. For on-premises deployments, see [Customer electronic invoices in Australia and New Zealand](gs-apac-aus-nzl-e-invoices.md).
 
 ## Prerequisites
 
@@ -137,6 +137,6 @@ To download the XML files of electronic invoices for successfully processed invo
 ## Additional resources
 
 - [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
-- [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md)
+- [Customer electronic invoices in Australia and New Zealand](gs-apac-aus-nzl-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
