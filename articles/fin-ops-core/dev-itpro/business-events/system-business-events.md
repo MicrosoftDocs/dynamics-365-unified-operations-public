@@ -2,7 +2,7 @@
 title: Batch business events
 description: Learn about batch business events and how to use them, including a table that outlines the modules for various business events.
 author: matapg007
-ms.author: matgupta
+ms.author: snaganalla
 ms.topic: how-to
 ms.date: 02/25/2025
 # ms.custom: NotInTOC
