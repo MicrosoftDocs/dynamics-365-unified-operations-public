@@ -60,4 +60,7 @@ The events have the following payload.
 | MajorVersion | Major version |
 | MinorVersion | Minor version |
 
+### Note
+Batch job business events should be activated for all legal entities because a batch job tasks can be configured to execute in different legal entities.
+
 To get the current catalog and schema of business events, go to **System administration \> Setup \> Business events**.
