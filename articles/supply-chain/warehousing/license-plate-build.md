@@ -1,5 +1,5 @@
 ---
-title: License plate build via the Warehouse Management mobile app
+title: License plate build on the warehouse app
 description: Learn about the License plate build menu item and how it can streamline warehouse operations by nesting license plates.
 author: Atapiabailon
 ms.author: atapiabailon
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:  LicensePlate. WHSWorker
 ---
 
-# License plate build via the Warehouse Management mobile app
+# License plate build on the warehouse app
 
 [!include [banner](../includes/banner.md)]
 
