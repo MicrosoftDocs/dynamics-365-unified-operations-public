@@ -1633,7 +1633,7 @@
                             - name: Configure a SharePoint connection
                               href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                             - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
+                              href: localizations/global/gs-e-invoicing-set-up-azure-resources-automation.md
                     - name: Work with Globalization features
                       items:
                         - name: Work with Globalization features overview
@@ -1965,7 +1965,7 @@
                     - name: Payment times reporting schema
                       href: localizations/australia/apac-aus-payment-times-report.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/apac-aus-nzl-e-invoices.md
+                      href: localizations/apac/gs-apac-aus-nzl-e-invoices.md
                     - name: Taxable Payments Annual Report
                       href: localizations/australia/apac-aus-tpar.md
                 - name: Austria
@@ -3655,7 +3655,7 @@
                     - name: GST declaration form GST101A for New Zealand (NZ-00003)
                       href: localizations/new-zealand/apac-nzl-gst-declaration.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/apac-aus-nzl-e-invoices.md
+                      href: localizations/apac/gs-apac-aus-nzl-e-invoices.md
                 - name: Nicaragua
                   items:
                     - name: Nicaragua overview
