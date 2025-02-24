@@ -1,10 +1,10 @@
 ---
 title: Generate a voucher in advanced bank reconciliation
 description: Learn how to generate vouchers in advanced bank reconciliation, including prerequisites and an outline on on generating a voucher on the reonciliation worksheet.
-author: EricWangChen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 01/22/2024
+ms.date: 02/24/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -28,7 +28,7 @@ There might be bank statement transactions that aren't related to specific custo
 - Set up bank transaction types.
 - Set up number sequences for the **Bank statement reversal** reference in Cash and bank management parameters.
 - Import a bank statement.
-- If the feature **Enable offset account financial dimensions for general ledger voucher posting during bank account reconciliation** is enabled, users can define offset financial dimensions for general ledger voucher that is posted manually during bank account reconciliation or automatically if reconciliation rule for voucher generation is created.
+- If the **Enable offset account financial dimensions for general ledger voucher posting during bank account reconciliation** feature is enabled, users can define offset financial dimensions for general ledger vouchers posted manually during bank account reconciliation or automatically if a reconciliation rule for voucher generation is created.
 
 ## Generate a voucher on the reconciliation worksheet
 
