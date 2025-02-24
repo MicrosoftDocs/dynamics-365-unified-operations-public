@@ -150,7 +150,7 @@ For more information about electronic invoicing in Costa Rica, see [Get started 
 
 ### Electronic invoicing in Denmark
 
-For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
+For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
 
 ### Electronic invoicing in Panama
 
