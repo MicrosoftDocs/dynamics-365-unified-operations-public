@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 2012
 
 2. Select the process to upload the task recording to. 
 
-    ![Selecting a process.](./media/select-upload.PNG "Selecting a process")
+    ![Selecting a process.](./media/select-upload.png "Selecting a process")
 
 3. On the **Overview** pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
     
