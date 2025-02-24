@@ -1,11 +1,11 @@
 ---
 title: Currency revaluation for Accounts payable and Accounts receivable
 description: Learn about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable.
-author: ericwangchen
-ms.author: wangchen
+author: music727
+ms.author: mibeiner
 ms.topic: article
-ms.date: 10/24/2022
-ms.reviewer: kfend
+ms.date: 02/24/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -23,7 +23,7 @@ Fluctuations in exchange rates cause the theoretical value (book value) of open 
 The theoretical value, or book value, of open transactions in foreign currencies varies over time because of fluctuations in exchange rates. To update the value of open transactions in Accounts payable and Accounts receivable, run the foreign currency revaluation process. Foreign currency revaluation can be run for both Accounts payable and Accounts receivable. The process uses a new exchange rate to revalue the open amounts, or not settled amounts, on a specified date. The differences between the original posted amounts and the revalued amounts will cause an unrealized gain or loss for each open transaction. The Accounts payable and Accounts receivable subledgers are then updated to reflect the unrealized gain or loss, and an accounting entry is posted to General ledger.
 
 >[!NOTE]
-> If the feature **Enable process automation for accounts receivable and accounts payable foreign currency revaluation** is enabled, process automation for AP and AR foreign currency revaluations are available. For more details, please see [Process automation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/process-automation).
+> If the **Enable process automation for accounts receivable and accounts payable foreign currency revaluation** feature is enabled, process automation for Accounts payable and Accounts receivable foreign currency revaluations are available. For more details, see [Process automation](/fin-ops-core/fin-ops/sysadmin/process-automation).
 
 ## Simulate a foreign currency revaluation
 Before you revalue foreign currency amounts on open transactions, you can run a simulation report of the foreign currency revaluation for the same date and method. To run the simulation report, on the **Foreign currency revaluation** page, click the **Simulation** button. The report provides a preview of the unrealized gain or loss amount, based on the parameters that are defined for the simulation.
