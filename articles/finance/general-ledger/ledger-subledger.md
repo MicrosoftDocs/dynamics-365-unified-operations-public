@@ -26,7 +26,7 @@ A *ledger* captures the collection of main accounts in a defined structure. It r
 
 For each legal entity in Microsoft Dynamics 365 Finance, details about the ledger must be configured. To configure ledger settings, go to **General ledger** \> **Ledger setup** \> **Ledger**.
 
-A ledger has the following the main components:
+A ledger has the following main components:
 
 - The chart of accounts, fiscal calendar, and financial dimensions.
 - The *account structure* that is applicable to the ledger. An account structure is a collection of main accounts by type and reporting requirements. For example, the balance sheet account structure contains a list of main accounts that are relevant to assets, liabilities, and owner equity.
@@ -57,7 +57,7 @@ Learn more about posting profiles in [Posting profiles overview](pstg-prfles-ovr
 
 When a transaction is posted in a module, a subledger journal is created to capture the accounting impact of that transaction. This subledger journal contains a list of all affected ledger accounts and the corresponding posting amount by debit and credit entries.
 
-The total debit and credit amounts must be balanced. This principle requires that every transaction to an account has an equal and opposite entry to another account. For example, a product receipt for $100 in purchases results in a $100 debit to the Inventory account and an equivalent credit of $100 to the Purchase accrual account. In this way, every transaction that is posted in a module and has an accounting impact is recorded to the general ledger.
+The total debit and credit amounts must be balanced. The double entry bookkeeping principle requires that every transaction to an account has an equal and opposite entry to another account. For example, a product receipt for $100 in purchases results in a $100 debit to the Inventory account and an equivalent credit of $100 to the Purchase accrual account. In this way, every transaction that is posted in a module and has an accounting impact is recorded to the general ledger.
 
 General ledger postings follow the ledger's account structure, fiscal calendar, and posting rules. When transactions are posted in the general ledger, only accounts from the chart of accounts that is defined in the ledger are used.
 
@@ -65,9 +65,9 @@ To view transactions that are posted to the main account, go to **General ledger
 
 The net of all postings to the general ledger is aggregated by using main account types, asset, liability, revenue, expense, cost of goods sold, and by account structure, either balance sheet or profit and loss. When financial reports are generated, they show transactions by legal entity.
 
-## Product receipt subledger and ledger postings
+## Example: Product receipt subledger and ledger postings
 
-After a Product receipt journal is created for a purchase order in finance and operations apps, the **Vouchers** tab shows the ledger account postings for the product receipt.
+After a **Product receipt journal** is posted for a purchase order in finance and operations apps, the **Vouchers** tab shows the ledger account postings for the product receipt.
 
 In the **Voucher transactions** view, the **View subledger journal** tab can be used to view the subledger details. Here are some examples of these details:
 
