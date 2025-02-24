@@ -16,6 +16,9 @@ ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 
 Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they're ready to be migrated.
 
+> [!NOTE]
+> This is only possible when using intercompany set up.
+
 ## Companies where planning processes are disabled
 
 Starting with release 10.0.32, you must install the Planning optimization add-in before you can enable planning processes, even if you plan to use the deprecated master planning engine. If the company where you want to use deprecated master planning has planning processes disabled, follow these steps to enable them:
