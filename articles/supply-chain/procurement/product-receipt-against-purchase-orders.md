@@ -50,20 +50,23 @@ To automatically post product receipts for multiple purchase orders, follow thes
 
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving products** \> **Post Product receipt**.
 1. In the **Posting product receipt** dialog, on the **Settings** FastTab toolbar, select **Select**.
-1. In the **Purchase update** dialog, use the **Range** tab to specify selection criteria for finding the purchase orders you want to post. <!-- KFM: I think this is what we are doing here. Please confirm. -->
+1. In the **Purchase update** dialog, use the **Range** tab to specify selection criteria for finding the purchase orders you want to post.
 1. Select **OK** to return to the **Posting product receipt** dialog. The purchase orders that match the criteria you specified are displayed on the **Overview** FastTab.
-1. On the **Overview** FastTab, enter the product receipt identifier in the **Product receipt** column for each purchase order in the grid. This setting enables the system to post the product receipt. <!-- KFM: I assumed these details. Please confirm. I also assumed we should to this before setting up the batch job--true? -->
+1. On the **Overview** FastTab, enter the product receipt identifier in the **Product receipt** column for each purchase order in the grid. This setting enables the system to post the product receipt.
 
     A product receipt identifier must be specified when each product is received. It's typically a reference to the packing slip from the supplier. This identifier is required for accounting because it enables checks or audits of supplier packing slips against what has been received and the accounted inventory or expense. <!-- KFM: I think this comment belongs here, but I'm  not sure. Please confirm or move it again. -->
 
-1. Select **Batch** to open the **Batch processing** dialog, where you can set up the [batch job](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) that will do the posting. <!-- KFM: what should we set up here? What settings are important? -->
+1. Select **Batch** to open the **Batch processing** dialog, where you can set up the [batch job](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) that will do the posting.
 
 1. Select **OK** to return to the **Posting product receipt** dialog.
 1. Select **OK** to close the **Posting product receipt** dialog.
 
-After the system finishes processing product receipts for a purchase order, it sets the purchase order status to *Received* to indicate that the invoice can be processed for the order.
+After the system finishes processing product receipts for all line in the Purchase Order, it sets the purchase order status to *Received* to indicate that the invoice can be processed for the order.
 
-You can correct or cancel a product receipt from the product receipt journal page. <!-- KFM: tell how to get there. -->
+You can correct or cancel a product receipt from the product receipt journal page.
+
+1. Go to **Procurement and sourcing** \> **Purchase orders** \>**Receiving Products**/> **Product Receipts**/>**Product receipt**.
+1. On the **Overview** FastTab, correct or cancel Product Receipts.
 
 > [!NOTE]
 > You can only reduce the received quantity while correcting a product receipt. To raise the quantity, post a new product receipt journal.
