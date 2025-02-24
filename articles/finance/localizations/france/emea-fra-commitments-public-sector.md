@@ -25,7 +25,7 @@ When commitments are used as part of the budgeting process, each purchase agreem
 >The **Commitment type** field on the **Purchase agreement** page is not related to the commitment document. That field only specifies whether the purchase agreement is based on a value or a quantity.
 
 >[!NOTE]
-> The **Commitment** functionality does not support transactions related to Projects. Please consider using [General budget reservations](../finance/localizations/finance/public-sector/general-budget-reservation-tasks.md) instead.
+> The **Commitment** functionality does not support transactions related to Projects. 
 
 
 ## Set up budget control and related prerequisites
