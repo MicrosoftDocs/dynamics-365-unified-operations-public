@@ -78,7 +78,20 @@ The two out-of-box network health checks listed below are always included in the
 | Retail Server connectivity | The Retail Server connectivity health check verifies that the terminal can communicate with Retail Server and the channel database, and verifies that real-time service calls can be made to Commerce headquarters. |
 | Network latency            | The network latency health check tests the network latency between the terminal and Retail Server. The test returns the average latency for 10 calls to Retail Server in a five-second period. |
 
+#### Network latency health check
+
+Network latency health check results are categorized as shown in the following table.
+
+| Latency range       | Meaning                                                      |
+| ------------------- | ------------------------------------------------------------ |
+| 0–50 ms             | **Good** – Your network latency is low and not likely to be the source of any performance related issues. |
+| 50–100 ms           | **Acceptable** – Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
+| Above 100 ms | <p>**Poor** – Your network latency is likely degrading your point of sale operations. Although latency in the 100–150 ms range might not cause noticeable performance degradation for common operations, latency above 150 ms slows down most operations.</p><p>To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection.</p> |
+
+### Health check charts
+
 The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period.
+To access these charts, select the **Network health check** you want to run, in the about tab optn the Connectivity Insights
 
 - **History of connectivity** – Provides insights about whether the connectivity was with **internet access**, **local access** with no internet, or **no access** at all. The chart shows an hourly view for a 24-hour period. However, the period can be narrowed to minutes to provide insights into any network fluctuations that occurred during a specific period when app issues were noticed.
 
@@ -91,19 +104,6 @@ The following health check charts are added to provide more insights into networ
 - **Wi-Fi signal strength** – Provides insights into the quality of the Wi-Fi signal strength for a 24-hour period. The period can be narrowed to minutes to provide detailed insights into any Wi-Fi fluctuations that might be responsible for app issues during specific times of a day.
 
     :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot that shows an example of a Wi-Fi signal strength chart on the Connectivity health report page.":::
-
-To access these charts, select the **View connection history report** link on the **About** tab.
-
-
-#### Network latency health check
-
-Network latency health check results are categorized as shown in the following table.
-
-| Latency range       | Meaning                                                      |
-| ------------------- | ------------------------------------------------------------ |
-| 0–50 ms             | **Good** – Your network latency is low and not likely to be the source of any performance related issues. |
-| 50–100 ms           | **Acceptable** – Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
-| Above 100 ms | <p>**Poor** – Your network latency is likely degrading your point of sale operations. Although latency in the 100–150 ms range might not cause noticeable performance degradation for common operations, latency above 150 ms slows down most operations.</p><p>To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection.</p> |
 
 ### Extending health checks
 
