@@ -228,6 +228,8 @@
               items:
                 - name: Invoice capture overview
                   href: accounts-payable/invoice-capture-overview.md
+                - name: What's new or changed in Invoice capture
+                  href: get-started/whats-new-invoice-capture.md
                 - name: Invoice capture install
                   href: accounts-payable/install-invoice-capture.md
                 - name: Configure Invoice capture
