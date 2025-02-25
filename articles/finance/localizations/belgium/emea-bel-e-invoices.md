@@ -26,7 +26,7 @@ This article provides information to help you get started with Electronic invoic
 
 Watch the following overview of Belgian electronic invoicing implementation in Dynamics 365 Finance.
 
-                               > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
+ > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
 
 ## Prerequisites
 
