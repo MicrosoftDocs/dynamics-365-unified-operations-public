@@ -24,7 +24,7 @@ The process for setting up Microsoft Azure resources for Electronic invoicing ha
 - Run an Azure PowerShell script.
 - Deploy an Azure Resource Manager (ARM) template.
 
-If you prefer to use the Azure portal UI, continue with this article. If you prefer to use the PowerShell script or an ARM template, see [Create Azure resources using Azure PowerShell or ARM templates](gs-e-invoicing-set-up-azure-resources-automation.md).
+If you prefer to use the Azure portal UI, continue with this article. If you prefer to use the PowerShell script or an ARM template, see [Create Azure resources using Azure PowerShell or ARM templates](gs-e-invoicing-set-up-azure-resources.md).
 
 ## Create an Azure key vault in the Azure portal
 
