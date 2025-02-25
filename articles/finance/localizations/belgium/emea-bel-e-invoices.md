@@ -24,6 +24,10 @@ This article provides information to help you get started with Electronic invoic
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
 
+Watch the following video to learn ...... electronic invoices into Dynamics 365 Finance.
+
+> [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
+
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
