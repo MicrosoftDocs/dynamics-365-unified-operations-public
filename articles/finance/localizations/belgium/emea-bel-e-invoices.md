@@ -4,12 +4,12 @@ description: Learn how to get started with Electronic invoicing for Belgium in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/05/2025
+ms.date: 04/01/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
-ms.search.validFrom: 2025-05-05
+ms.search.validFrom: 2025-04-01
 ms.dyn365.ops.version: AX 10.0.45
 ---
 
@@ -24,9 +24,9 @@ This article provides information to help you get started with Electronic invoic
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
 
-Watch the following video to learn ...... electronic invoices into Dynamics 365 Finance.
+Watch the following overview of Belgian electronic invoicing implementation in Dynamics 365 Finance.
 
-> [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
+                               > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
 
 ## Prerequisites
 
