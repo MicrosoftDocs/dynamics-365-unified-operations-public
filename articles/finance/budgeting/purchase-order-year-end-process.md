@@ -46,11 +46,11 @@ Budget control is often enabled when encumbrances are created for purchase order
 
 The **Process and carry forward budget** year-end option can be used only if budget control is enabled. Learn more in [Budget control overview](budget-control-overview-configuration.md).
 
-### Enable the encumbrance process
+### Enable the encumbrance process (public sector)
 
 The encumbrance process must be enabled before encumbrances for purchase orders can be recorded in the general ledger, and before you can successfully run the purchase order year-end process. For more information, see [Encumber purchase orders](/dynamicsax-2012/appuser-itpro/encumber-purchase-orders).
 
-### Set up posting definitions
+### Set up posting definitions (public sector)
 
 On the **Posting definitions** page, set up the following posting definitions in the **Purchasing** module, as required:
 
@@ -59,7 +59,7 @@ On the **Posting definitions** page, set up the following posting definitions in
 
 Learn more in [Posting definitions](../general-ledger/posting-definitions.md).
 
-### Assign posting definitions to transaction posting types
+### Assign posting definitions to transaction posting types (public sector)
 
 Use the **Transaction posting definitions** page to assign posting definitions to the transaction posting definitions that correspond to them. You can also define the criteria that originating transactions must meet before a specific posting definition can be used.
 
