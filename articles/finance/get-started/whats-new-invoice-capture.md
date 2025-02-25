@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Invoice capture 
+title: What's new or changed in Invoice capture
 description: Learn about features that are either new or changed in Invoice capture.
 author: shielas  
 ms.author: shielas
@@ -22,58 +22,51 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
+This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
 
 ## February 2025
 
-### Invoice capture
+The February release of the Invoice capture solution version 1.9.1.X contains the following features and bug fixes.
 
-The February release of the invoice capture solution version 1.9.1.X contains the following features and bug fixes.
-| Feature | Description | 
-| ---|---|
-| Feature | Addition of currency code as an attribute for OCR recognition. AI builder starts recognising currency code as an attribute from invoice as a part of OCR recognition process. |
-| Bug fix | Formatting issues while identifying purchase order. |
-| Bug fix | Continuous learning fails to identify item when description contains special characters. |
-| Bug fix |Configuration group page keeps loading when the Dynamics 365 finanace and operations environment is disabled. |
+| Feature | Description |
+| --- |--- |
+| Feature | Added *currency code* as an attribute for optical character recognition (OCR). AI builder now recognizes *currency code* as an attribute from invoices as part of the OCR process. |
+| Bug fix | Fixed formatting issues that occur while a purchase order is being identified. |
+| Bug fix | Fixed an issue where continuous learning fails to identify items if the description contains special characters. |
+| Bug fix | Fixed an issue where the **Configuration group** page keeps loading when the Dynamics 365 finance and operations environment is disabled. |
 
-### December 2024
+## December 2024
 
-The December release of the invoice capture solution version 1.9.0.X contains the following features and bug fixes.
+The December release of the Invoice capture solution version 1.9.0.X contains the following features and bug fixes.
 
-| Feature | Description | 
-| ---|---|
-| Feature | Automatically remove invalid field value - If you enable this feature, a value is automatically removed if it doesn't exist in the lookup list. This eliminates the need to manually remove values during the review, streamlining the process. |
-| Feature |Synchronize vendors based on filter conditions - You can set filter conditions to only synchronize vendors that are suitable for inclusion in Invoice capture.|
-| Feature |Synchronize deleted legal entities and vendor accounts - When legal entities or vendor accounts are deleted in Dynamics 365 Finance, they have an **Inactive** status. The inactive legal entities or vendor vendors aren't going to be derived during Invoice capture processing. Invoices with inactive legal entities or vendor accounts can't be transferred to Dynamics 365 finance and operations.|
-| Feature |Continuous learning for decimal format - The system learns from the historical record and automatically applies the correct decimal format on the **Amount** fields. Users should manually correct the first incoming invoice and do the successful transfer.|
+| Feature | Description |
+| --- |--- |
+| Feature | Automatically remove invalid field value – If you enable this feature, values are automatically removed if they don't exist in the lookup list. This feature eliminates the need to manually remove values during the review. Therefore, it streamlines the process. |
+| Feature | Synchronize vendors based on filter conditions – You can set filter conditions to sync only vendors that are suitable for inclusion in Invoice capture. |
+| Feature | Synchronize deleted legal entities and vendor accounts – When legal entities or vendor accounts are deleted in Dynamics 365 Finance, they have an **Inactive** status. Inactive legal entities or vendor accounts aren't derived during Invoice capture processing. Invoices that have inactive legal entities or vendor accounts can't be transferred to finance and operations apps. |
+| Feature | Continuous learning for decimal format – The system learns from the historical record and automatically applies the correct decimal format to the **Amount** fields. Users should manually correct the first incoming invoice and do a successful transfer. |
 
+## September 2024 
 
-### September 2024 
-
-The September release of the invoice capture solution version 1.8.0.X contains the following features and bug fixes.
+The September release of the Invoice capture solution version 1.8.0.X contains the following features and bug fixes.
 
 | Feature | Description | 
-| ---|---|
-| Bug fix | Date format: This release addresses a date formatting issue caused by ambiguity in date recognition. With the updated version, when a user corrects the date on the first invoice, the corresponding date format is automatically applied to the future invoice if it is coming from the same vendor. This functionality is enabled when the **Using continuous learning** parameter is active.
-|Bug fix |Resizing side-by-side viewer column - Users can now adjust column widths within the side-by-side viewer.|
-| Bug fix |Item number validation - Validation errors occur when an item number in the linked purchase line contains different variants, despite showing the same item number as the one in the purchase order, this blocked the invoice processing. |
-| Bug fix |**Charges code** field - The **Charges code** field was not available when customer defines an own custom field and its technical field group is set to **Charge**.|
- 
-
+| --- |--- |
+| Bug fix | Date format – This release addresses a date formatting issue that is caused by ambiguity in date recognition. In the updated version, when a user corrects the date on the first invoice from a vendor, the corresponding date format is automatically applied to future invoices from the same vendor. This functionality is enabled when the **Using continuous learning** parameter is active. |
+|Bug fix | Resizing side-by-side viewer column – Users can now adjust column widths in the side-by-side viewer. |
+| Bug fix | Item number validation – Validation errors occur if an item number on the linked purchase line contains different variants. Even though the item number matches the one on the purchase order, invoice processing is blocked. |
+| Bug fix | **Charges code** field – The **Charges code** field wasn't available if customers define a custom field, and its technical field group is set to **Charge**. |
 
 ### August 2024
-The August release of the invoice capture solution version 1.7.0.X contains the following features and bug fixes.
+
+The August release of the Invoice capture solution version 1.7.0.X contains the following features and bug fixes.
 
 | Feature | Description | 
-| ---|---|
-| Feature | Improved **Link invoice line to purchase line** page to display purchase line options even when the item number or expense type isn't specified.|
-| Feature | Added a group access level above the legal entity in Channel definition, enabling support for cases where a single AP clerk manages multiple legal entities. |
-| Feature | When long documents are stuck in processing, users can reset the status of received files. |
-| Bug Fix | Resolved the real-time vendor sync issue.|
-| Bug Fix |Fixed an issue with the SBS viewer that sometimes resulted in a blank page.|
-| Bug Fix |Corrected the display of the legal entity when syncing using the **Sync by selection** option.|
-| Bug Fix |Addressed the issue where **Void** wasn't available in the **Captured invoice list** page when multiple invoices were selected.|
-
-
- 
-
+| --- |--- |
+| Feature | Improved the **Link invoice line to purchase line** page so that it shows purchase line options even when the item number or expense type isn't specified. |
+| Feature | Added a group access level above the legal entity in the channel definition. This feature supports cases where a single Accounts Payable (AP) clerk manages multiple legal entities. |
+| Feature | Add the ability for users to reset the status of received files when long documents are stuck in processing. |
+| Bug Fix | Fixed the real-time vendor synchronization issue. |
+| Bug Fix | Fixed an issue with the side-by-side viewer that sometimes resulted in a blank page. |
+| Bug Fix | Corrected the display of the legal entity when synchronization is done by using the **Sync by selection** option. |
+| Bug Fix | Addressed the issue where **Void** wasn't available on the **Captured invoice list** page when multiple invoices were selected. |
