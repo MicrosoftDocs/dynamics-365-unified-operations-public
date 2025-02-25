@@ -60,6 +60,6 @@ The events have the following payload.
 | MinorVersion | Minor version |
 
 > [!NOTE]
-? Batch job business events should be activated for all legal entities because a batch job tasks can be configured to run in different legal entities.
+> Batch job business events should be activated for all legal entities because a batch job tasks can be configured to run in different legal entities.
 
 To get the current catalog and schema of business events, go to **System administration \> Setup \> Business events**.
