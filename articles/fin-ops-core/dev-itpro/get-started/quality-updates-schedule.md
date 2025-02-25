@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 02/05/2025
+ms.date: 02/25/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -159,8 +159,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 2 | March 10 to March 13, 2025 | March 22 to March 23, 2025 |
 | Station 3 | March 11 to March 14, 2025 | March 22 to March 23, 2025 |
 | Station 4 | March 17 to March 20, 2025 | March 29 to April 30, 2025 |
-| Station 5 | March 24 to March 27, 2025 | April 5 to March 6, 2025 |
-| Station 6 | March 25 to March 28, 2025 | April 5 to March 6, 2025 |
+| Station 5 | March 24 to March 27, 2025 | April 5 to April 6, 2025 |
+| Station 6 | March 25 to March 28, 2025 | April 5 to April 6, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.42 Release-1 train schedule
 
