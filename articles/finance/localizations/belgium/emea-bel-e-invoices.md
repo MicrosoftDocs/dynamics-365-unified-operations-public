@@ -314,8 +314,6 @@ To submit the generated electronic invoices, follow these steps.
 
 You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
- ![Screenshot that shows the submission log.](emea-bel-einoices-submission-log.jpg)
-
 > [!NOTE]
 > Submited electronic invoices will be also available in your [Ediwin](https://ediwin.edicomgroup.com/) portal, in the **Outbound** folder and its subfolders, where you can monitor further processing of the documents.
 
