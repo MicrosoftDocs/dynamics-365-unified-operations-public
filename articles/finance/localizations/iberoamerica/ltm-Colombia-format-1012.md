@@ -4,7 +4,7 @@ description: Learn how to set up and issue a format 1012 file for Colombia, incl
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: article
-ms.date: 11/30/2023
+ms.date: 02/26/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -69,13 +69,13 @@ Follow these steps to set up the parameters for the report.
 10. In the **Document classification Id** field select the document class used in the transactions that are included in the report.
 
     > [!NOTE]
-    > For each lookup complete the conditions with **N/A** for **Blank** and **Not blank**.
+    > For each lookup, complete the conditions with **N/A** for **Blank** and **Not blank**.
 
 ## Issue a format 1012 file
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 2. In the **Format mapping** field, select **Format 1012**.
 3. Select **OK**.
-4. Complete the **Tax appliation Id** field with the code created for this report.
+4. Complete the **Tax application Id** field with the code created for this report.
 5. Select the date range. 
 6. Select **OK**.
