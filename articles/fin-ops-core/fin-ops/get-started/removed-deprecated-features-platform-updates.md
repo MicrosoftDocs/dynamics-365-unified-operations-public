@@ -26,6 +26,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
+## Feature deprecation effective January 2025
+
+### Azure Active Directory Authentication Library (ADAL)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The Active Directory Authentication Library (ADAL) does not meet the needs for safe authentication and is no longer maintained. |
+| Replaced by another feature?     | Microsoft Authentication Library (MSAL) | 
+| What do you need to do?          | We have removed the reference to the assembly implementing ADAL. This will cause compilation errors if ADAL APIs are referenced from your code. You must port your code and replace ADAL references with Microsoft Authentication Library (MSAL) as described in [Migrate applications to the Microsoft Authentication Library](/entra/identity-platform/msal-migration).
+| Product areas affected             | All code that references ADAL APIs |
+| Deployment option                  | All |
+| **Status**                         | Effective as of version 10.0.43 |
 
 ## Feature deprecation effective October 2024
 
