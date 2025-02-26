@@ -116,7 +116,7 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 ### From goods-in-transit orders
 
-Quality orders can be set up to get automatically created when a goods-in-transit order is received. This makes it possible to initiate the quality control process for goods-in-transit orders, ensuring that products undergo stringent quality checks throughout transit and guaranteeing the delivery of high-quality goods that are received at the warehouse. During the quality control process, inventory from goods-in-transit orders can be blocked to prevent the shipment of defective products. This function aligns with regulatory compliance and helps to mitigate legal risks.
+Quality orders can be set up to get automatically created when a goods-in-transit order is received if using the Landed Cost module. This makes it possible to initiate the quality control process for goods-in-transit orders, ensuring that products undergo stringent quality checks throughout transit and guaranteeing the delivery of high-quality goods that are received at the warehouse. During the quality control process, inventory from goods-in-transit orders can be blocked to prevent the shipment of defective products. This function aligns with regulatory compliance and helps to mitigate legal risks.
 
 #### Set up and work with quality orders for goods-in-transit orders
 
