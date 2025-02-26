@@ -111,6 +111,9 @@ If a device is lost or compromised, you can revoke its authentication by followi
 - User-based authentication: [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
 
+> [!NOTE]
+> Please note that [Shared Device Mode](https://learn.microsoft.com/en-us/entra/identity-platform/msal-shared-devices) authentication is currently not supported for the Warehouse Mobile App. 
+
 ## Configure the application by importing connection settings
 
 To make it easier to maintain and deploy the application on many mobile devices, you can import the connection settings instead of manually entering them on each device. This section explains how to create and import the settings.
