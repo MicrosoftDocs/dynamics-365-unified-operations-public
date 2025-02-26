@@ -27,6 +27,13 @@ Before you print the report, the following prerequisites must be met:
     For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 - Configure Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Create a tax application code to use with this report. Learn more in [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application).
+
+## Additional configuration
+
+- Set the document id code in the tax application of the country document type of the 3rd party in transactions for this report. Learn more in [Tax ID types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type).
+
+- Set the country id code in the tax application for the country address of the 3rd party in transactions for this report.
 
 ## Configure application-specific parameters
 
@@ -57,20 +64,18 @@ Follow these steps to set up the parameters for the report.
     > [!NOTE]
     > The ledger accounts that are selected in this configuration must be used in the company transactions that are included on the report.
 
-8. In the **Lookups** section, select the second lookup, **COMP1012**. This lookup refers to the payment method document class that's used to post transactions for each concept in the **MainAccountGroup** lookup.
-9. In the **Conditions** section, add a line. In the **Lookup result** field, select one of the following concepts:
+8. In the **Lookups** section, select the second lookup, **PaymentMethodId**. This lookup refers to the payment method document class that's used to post transactions for each concept in the **MainAccountGroup** lookup.
+9. In the **Conditions** section, add a line. In the **Lookup result** field, select **PaymentMethodClass**.
+10. In the **Document classification Id** field select the document class used in the transactions that are included in the report.
 
-    - **DEP BCO** – Bank deposits.
-    - **EFE CAJA CLP** – Cash national currency.
-    - **EFE CAJA USD** – Cash USD.
-    - **EFECTIVO**
-    - **EFECTIVO MN**
-    - **TRB** – Wire transfers.
+    > [!NOTE]
+    > For each lookup complete the conditions with **N/A** for **Blank** and **Not blank**.
 
 ## Issue a format 1012 file
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 2. In the **Format mapping** field, select **Format 1012**.
 3. Select **OK**.
-4. Select the date range. 
-5. Select **OK**.
+4. Complete the **Tax appliation Id** field with the code created for this report.
+5. Select the date range. 
+6. Select **OK**.
