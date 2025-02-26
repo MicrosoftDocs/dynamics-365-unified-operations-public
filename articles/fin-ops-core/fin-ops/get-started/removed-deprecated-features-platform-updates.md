@@ -3,7 +3,7 @@ title: Removed or deprecated platform features
 description: Learn about features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: conceptual  
 ms.custom: 
   - bap-template
 ms.date: 02/25/2025
