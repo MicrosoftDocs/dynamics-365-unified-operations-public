@@ -191,7 +191,7 @@ In addition, Dynamics 365 Finance can automatically import incoming electronic d
 
 Furthermore, for documents received in the OIOUBL format, Dynamics 365 Finance can send application responses. For those received in the PEPPOL format, it can send message-level responses about the reception acknowledgement and invoice-level responses about the acceptance decision. 
 
-For more information, see [Get started with Electronic invoicing for Denmark](../../../finance/localizations/denmark/e-invoicing-dk-get-started.md). 
+For more information, see [Get started with Electronic invoicing for Denmark](../../../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md). 
 
 #### Support the possibility of reconciling the company's bookkeeping with the company's bank account (Annex 2, 3, a–c and d–e) 
 
