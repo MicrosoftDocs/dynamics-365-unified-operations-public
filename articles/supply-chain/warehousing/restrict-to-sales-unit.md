@@ -1,52 +1,60 @@
 ---
-title: Restrict to sales unit
-description: Learn about the Restrict to sales unit functionality for products.
-
-ms.author: atapiabailon
+title: Restrict to sales unit
+description: Learn about the Restrict to sales unit functionality for products.
+ms.author: atapiabailon
 author: Atapiabailon
-ms.date: 02/20/2025
+ms.date: 02/20/2025
 ms.topic: article
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductDetailsExtendedGrid, WHSAutoReleaseToWarehouse
----
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductDetailsExtendedGrid, WHSAutoReleaseToWarehouse
 
-# Restrict to sales unit
-
+---
 
 
-This article describes the *Restrict to sales unit* functionality and provides an example scenario.
+# Restrict to sales unit
 
-The *Restrict to sales unit* functionality is designed to ensure that products are sold in a specific, predefined unit. This functionality applies exclusively to sales orders. It specifies the exact unit that a product should be sold in. If the reservation of a product on a sales order leads to incomplete sales units, the release of the sales order to the warehouse is blocked. An error message indicates that the sales order can't be processed because of the incomplete sales units.
+This article describes the *Restrict to sales unit* functionality and provides an example scenario.
 
-To configure the *Restrict to sales unit* functionality for a product, follow these steps.
-
-1. Go to **Product information management** \> **Products**.
 
-1. On the **Warehouse** FastTab, in the **Release to warehouse** section, in the **Restrict to unit** field, select *Sales unit*.
-1. Select **Save**.
+The *Restrict to sales unit* functionality is designed to ensure that products are sold in a specific, predefined unit. This functionality applies exclusively to sales orders. It specifies the exact unit that a product should be sold in. If the reservation of a product on a sales order leads to incomplete sales units, the release of the sales order to the warehouse is blocked. An error message indicates that the sales order can't be processed because of the incomplete sales units.
 
-> [!IMPORTANT]
+
 To configure the *Restrict to sales unit* functionality for a product, follow these steps.
-
-## Example: Releasing a sales order with conversion of units
-
 
-
-- Product *item-one* has *Pieces* as the inventory unit.
-- The sales unit is *Box*.
+
+
+1. Go to **Product information management** \> **Products**.
+
+
+1. On the **Warehouse** FastTab, in the **Release to warehouse** section, in the **Restrict to unit** field, select *Sales unit*.
+
+1. Select **Save**.
+
+
+> [!IMPORTANT]
+
+To configure the *Restrict to sales unit* functionality for a product, follow these steps.
+
+
+## Example: Releasing a sales order with conversion of units
+
+
+
+
+
+
+- Product *item-one* has *Pieces* as the inventory unit.
+
+- The sales unit is *Box*.
+
 1. In the list, select a product to view the product details.
 1. Select **Save**.
 
 > The **Unit** field on the **Sell** FastTab of the product details defines the sales unit that the *Restrict to sales unit* functionality uses.
 - The **Restrict to unit** field is set to *Sales unit*.
 - Product *item-one* has *Pieces* as the inventory unit.
-
 - The **Restrict to unit** field is set to *Sales unit*.
-
 - If the reserved quantity is the full quantity, *10 Pieces*, the sales order is successfully released to the warehouse.
-
-
-
 
 When the sales order is released to the warehouse, the outcome depends on the reserved quantity:
 
