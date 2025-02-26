@@ -118,8 +118,6 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 Quality orders can be set up to get automatically created when a goods-in-transit order is received if using the Landed Cost module. This makes it possible to initiate the quality control process for goods-in-transit orders, ensuring that products undergo stringent quality checks throughout transit and guaranteeing the delivery of high-quality goods that are received at the warehouse. During the quality control process, inventory from goods-in-transit orders can be blocked to prevent the shipment of defective products. This function aligns with regulatory compliance and helps to mitigate legal risks.
 
-#### Set up and work with quality orders for goods-in-transit orders
-
 To automatically create a quality order based on a goods-in-transit order, enable the feature **Enable Quality Control for Goods In-Transit Order**. See [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md). In addition, quality associations must be configured.
 
 If you want a quality order to be created for only the quantity that is received, enable the parameter **Per Updated Quantity** in **Inventory management > Setup > Quality control > Item sampling**. 
@@ -128,12 +126,6 @@ Users can view, manually create or update quality orders directly from the goods
 
 - Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
 - Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
-
-#### Over and under-receive a goods-in-transit order with quality orders enabled
-
-When under-receiving a goods-in-transit order, a quality order will be created for the actual quantity that has been received if the parameter **Per Updated Quantity** is enabled. If this parameter is disabled, a quality order will be created based on the order quantity of the goods-in-transit order.
-
-When over-receiving a goods-in-transit order, the system may either automatically create a purchase order or a movement journal for the quantity that has been over-delivered. In this case, a quality order will be created based on the original quantity of the goods-in-transit order. If a purchase order has been automatically generated and you want the over-delivered quantity to also go through the quality check process, you will need to add an additional quality association for this newly created purchase order. If a movement journal has been automatically created, you can manually create a quality order for this over-delivered amount in the goods-in-transit order form.
 
 ## Advanced actions for quality orders
 
