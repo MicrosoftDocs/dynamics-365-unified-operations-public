@@ -69,7 +69,7 @@ Follow these steps to set up the parameters for the report.
 10. In the **Document classification Id** field select the document class used in the transactions that are included in the report.
 
     > [!NOTE]
-    > For each lookup, complete the conditions with **N/A** for **Blank** and **Not blank**.
+    > For each **Lookup**, add two conditions where the **Lookup result** is **N/A** for both. The **Main account ID** for the first condition should be **"Blank"** and the Main account ID** for the second condition should be **"Not blank"**. 
 
 ## Issue a format 1012 file
 
