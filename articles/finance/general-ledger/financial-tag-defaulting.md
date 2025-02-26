@@ -22,8 +22,6 @@ Financial tag rules provide a powerful way to enter default value or automatical
 
 This feature is available as of Microsoft Dynamics 365 Finance version 10.0.42. It's available in Feature management. In each new release, more document entry points are implemented.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 Currently, the following journals are supported for financial tag rules:
 
 - General journal
@@ -35,6 +33,9 @@ Currently, the following journals are supported for financial tag rules:
 - Allocation journal
 - Reporting currency adjustment journal
 - Invoice journal (vendor)
+- Vendor payment journal
+- Customer payment journal
+- Fixed asset journal
 
 ## Setup
 
