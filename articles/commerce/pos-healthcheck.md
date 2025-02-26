@@ -89,7 +89,14 @@ Network latency health check results are categorized as shown in the following t
 
 ### Health check charts
 
-The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period. To access these charts, select the **Network health check** you want to run, in the about tab optn the Connectivity Insights.
+The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period. 
+
+To access a health check chart in Store Commerce, follow these steps.
+
+1. Go to the **Available tests** page.
+1. Select the checkbox for the network health check that you want to run.
+1. In the **Details** pane on the right, select the **About** tab.
+1. Select **View connectivity insights**.   
 
 - **History of connectivity** – Provides insights about whether the connectivity was with **internet access**, **local access** with no internet, or **no access** at all. The chart shows an hourly view for a 24-hour period. However, the period can be narrowed to minutes to provide insights into any network fluctuations that occurred during a specific period when app issues were noticed.
 
