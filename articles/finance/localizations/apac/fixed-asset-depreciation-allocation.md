@@ -4,7 +4,7 @@ description: In Japan, the depreciation expenses of a particular fixed asset can
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 02/26/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: China (PRC), Japan
@@ -21,43 +21,38 @@ ms.search.form:
 
 In Japan, the depreciation expenses of a particular fixed asset can be shared among multiple departments. 
 
+This task was created using the demo data company JPMF and walks you through setting up fixed asset depreciation allocation. 
 
+## Create a fixed asset allocation rule
 
-This task walks you through setting up fixed asset depreciation allocation. 
+To create a fixed asset allocation rule, follow these steps.
 
-
-
-This task was created using the demo data company JPMF.
-
-
-## Create a Fixed asset allocation rule
-1. Go to Fixed assets > Setup > Depreciation allocation rules.
-2. Click New.
-3. In the Rule ID field, type a value.
-4. In the Description field, type a value.
-5. In the Dimension name field, type a value.
-6. Click Add.
-7. In the BusinessUnit field, type a value.
-    * Enter the information for the first allocation target.  
-8. In the Percentage field, enter a number.
-    * The total of all the allocation target must be 100.  
-9. In the Offset account field, specify the desired values.
-10. Click Add.
-11. In the BusinessUnit field, type a value.
-12. In the Percentage field, enter a number.
-    * The total of all the allocation target must be 100.  
-13. In the Offset account field, specify the desired values.
-14. Click Save.
+1. Go to **Fixed assets \> Setup \> Depreciation allocation rules**.
+1.  Select **New**.
+1.  In the **Rule ID** field, enter a value.
+1.  In the **Description** field, enter a value.
+1.  In the **Dimension name** field, enter a value.
+1.  Select **Add**.
+1.  In the **BusinessUnit** field, enter a value for the first allocation target.  
+1.  In the **Percentage** field, enter a number. The total percentage of all the allocation targets must be 100.  
+1.  In the **Offset account** field, enter a value.
+1. Select **Add**.
+1. In the **BusinessUnit** field, enter a value.
+1.  In the **Percentage** field, enter a number. The total percentage of all the allocation targets must be 100.  
+1.  In the **Offset account** field, enter a value.
+1.  Select **Save**.
 
 ## Assign a fixed asset allocation rule to a posting profile
-1. Go to Fixed assets > Setup > Fixed asset posting profiles.
-2. Click Edit.
-3. In the Transaction type field, select 'Depreciation'.
-4. In the list, find and select the desired record.
-    * Select the record that you want to link the allocation rule to.  
-5. Expand the Depreciation allocation rules section.
-6. In the Asset allocation rule for depreciation field, type a value.
-7. Click Save.
+
+To assign a fixed asset allocation rule to a posting profile, follow these steps.
+
+1. Go to **Fixed assets \> Setup \> Fixed asset posting profiles**.
+1. Select **Edit**.
+1. In the **Transaction type** field, select **Depreciation**.
+1. In the list, find and select the desired record to which you want to link the allocation rule.  
+1. Expand the **Depreciation allocation rules** section.
+1. In the **Asset allocation rule for depreciation** field, enter a value.
+1. Select **Save**.
 
 
 
