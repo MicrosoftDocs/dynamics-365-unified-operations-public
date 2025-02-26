@@ -20,7 +20,7 @@ ms.search.validFrom: 2019-03-31
 
 This article describes the health check operation in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-Retail stores can be complex environments where many applications and devices are used. As operations grow, it can become difficult to ensure that operations always run smoothly, because of dependencies on, for example, peripherals that can break or accidentally become unplugged over the course of a day. Troubleshooting for issues that are related to devices and services can be costly for larger merchants and equally frustrating for smaller operations.
+Retail stores can be complex environments where many applications and devices are used. As operations grow, it can become difficult to ensure that operations always run smoothly. For example, dependencies on peripherals that can break or accidentally become unplugged can disrupt operations. Troubleshooting issues that are related to devices and services can be costly for larger merchants and equally frustrating for smaller operations.
 
 Dynamics 365 Commerce includes a health check operation that can help prevent some of this cost and frustration. The health check operation can help retailers detect issues before they occur by providing a method for testing devices directly from the POS outside of normal operations, and two tests for network-related issues.
 
@@ -33,9 +33,9 @@ Dynamics 365 Commerce includes a health check operation that can help prevent so
 
 ## Health check operation
 
-The health check operation is operation 717 on the **POS Operations** page in Commerce Headquarters. It can be used while the POS is in non-drawer mode. However, a hardware station must be active.
+The health check operation is operation 717 on the **POS Operations** page in Commerce Headquarters. It can be used while the POS is in nondrawer mode. However, a hardware station must be active.
 
-The health check operation can be accessed by point of sale users in two ways:
+POS users can access the health check operation in two ways:
 
 - By selecting the **Health check** button on the **Settings** page.
 - By adding a tile to your screen layout button grid and associating the health check operation with that tile. 
@@ -64,7 +64,7 @@ When the health check operation is initiated in the POS, a pane on the right lis
 
 The **Last check** column shows when the health check was last done for each device.
 
-If a device passes the health check (that is, if no errors are encountered), the device's status is shown as **OK**. If the health check fails, the status indicates that there was an error. In this case, the pane on the right provides details that are related to the error, or it instructs the user to contact the system admin.
+If a device passes the health check (that is, if no errors are encountered), the device's status is shown as **OK**. If the health check fails, the status indicates that there was an error. In this case, the **Details** pane provides details related to the error, or instructs the user to contact the system administrator.
 
 Some devices, such as the OPOS keylock, don't have out-of-box health check tests. If no health check test is detected for a device that is used, the status is **Not supported**.
 
