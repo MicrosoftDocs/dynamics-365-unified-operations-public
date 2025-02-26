@@ -27,11 +27,11 @@ Before you print the report, the following prerequisites must be met:
     For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 - Configure Electronic reporting (ER) parameters. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-- Create a tax application code to use with this report. Learn more in [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application).
+- Create a tax application code to use with this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 
 ## Additional configuration
 
-- Set the document id code in the tax application of the country document type of the 3rd party in transactions for this report. Learn more in [Tax ID types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type).
+- Set the document id code in the tax application of the country document type of the 3rd party in transactions for this report. Learn more in [Tax ID types for Latin America](ltm-core-tax-id-type.md).
 
 - Set the country id code in the tax application for the country address of the 3rd party in transactions for this report.
 
