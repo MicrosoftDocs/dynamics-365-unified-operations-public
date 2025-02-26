@@ -20,6 +20,9 @@ ms.search.form: RetailSharedParameters
 
 Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
 
+> [!IMPORTANT]
+> Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. Learn more about the deprecation [here](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1). We will be adding support for Azure Maps to D365 Commerce in upcoming releases. 
+
 ## Enable Bing Maps
 
 1. Go to **Commerce shared Parameters** > **Bing Maps**.
