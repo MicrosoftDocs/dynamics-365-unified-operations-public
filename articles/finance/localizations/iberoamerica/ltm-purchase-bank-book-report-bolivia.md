@@ -11,6 +11,8 @@ ms.author: v-cpicon
 
 # Configure printing for purchase bank books for Bolivia
 
+[!include[banner](../../includes/banner.md)]
+
 This article explains how to set up and generate reports for purchase bank books for Bolivia.
 
 The bank book in Bolivia is a report that details purchase payments equal to or greater than the amount established by the regulations of the National Tax Service (Servicio de Impuestos Nacionales). The report downloads the information about the payments of purchase transactions of goods and services with the presentation structure requested by the tax authority on a monthly basis.
@@ -35,35 +37,35 @@ Before you can generate the report, the following prerequisites must be met:
 -	You must configure a document class payment media called **payment documents**, and configure the tax application code accordingly if it's a check, a bank transfer, a deposit, etc. The Document class type for each payment media must have selected **unique per entry**. Learn more in [Document class type configuration](ltm-core-document-class-type.md).
 - Configure Latam extension in Bank group field of the bank account associated with the payment media. That will bring the information related to Bank account number and tax identification.
   
-### Configuration for payment of invoice transactions
+### Configure payment of invoice transactions
 
 Before making payments for supplier invoices, verify that the Document class settings are configured according to the following steps: 
 
-1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** select a document class that represent invoice **Factura** and check that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
-1. On the Action Pane, select **Tax application**.
-   1. In the **Tax application id** value that has been created **LB**
-   1. In the **Tax application code** field, enter **4** as transaction type
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** select a document class that represent invoice **Factura** and check that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md).
+1. On the Action pane, select **Tax application**.
+   1. In the **Tax application ID** value that has been created **LB**.
+   1. In the **Tax application code** field, enter **4** as the transaction type.
    1. In the **letter code** field, enter **FC** for invoices.
    1. In the **user define field 2** field, enter **2** as type supporting document.
 
 In case of successive tract contract you might change **letter code** field to **CS** and enable concept 3 field of the document class to add contract number.
 
-### Configuration for other payments 
+### Configure other payments 
 
 When you need to make payments to suppliers for purchases that do not have an invoice but require withholdings, check the following configuration:
 
-1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** select a document class that represent supporting document for purchase with withholdings **Compras con retencion**. Check that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and select a document class that represents a supporting document for purchase with withholdings **Compras con retencion**. Verify that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
 1. On the Action Pane, select **Tax application**.
-   1. In the **Tax application id** value that has been created **LB**
-   1. In the **Tax application code** field, enter **1** as transaction type
+   1. In the **Tax application id** value that has been created **LB**.
+   1. In the **Tax application code** field, enter **1** as transaction type.
    1. In the **user define field 2** field, enter **410** as type supporting document.
 
-When you need to make payments to suppliers for real estate purchases, check the following configuration:
+When you need to make payments to suppliers for real estate purchases, verify the following configuration:
 
-1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** Select a document class that represent supporting document for real estate purchases **Compra de inmuebles**. Check that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and select a document class that represents a supporting document for real estate purchases **Compra de inmuebles**. Verify that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
 1. On the Action Pane, select **Tax application**.
-   1. In the **Tax application id** value that has been created **LB**
-   1. In the **Tax application code** field, enter **2** as transaction type
+   1. In the **Tax application id** value that has been created **LB**.
+   1. In the **Tax application code** field, enter **2** as transaction type.
    1. In the **user define field 2** field, enter **430** as type supporting document.    
 
 In case of successive tract contract you might add **letter code** field to **CS** and enable concept 3 field of the document class to add contract number.
@@ -71,17 +73,19 @@ In case of successive tract contract you might add **letter code** field to **CS
 ## Set up application-specific parameters
 
 To configure application-specific parameters, follow these steps.
+
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
 1. Select **Purchase Bank Book BO**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** tab, select **ApplicablePaymentDocuments**.
 1. In the **Conditions** FastTab, select **Add**.
-1. In the **Lookup result** field, select **Yes**
+1. In the **Lookup result** field, select **Yes**.
 1. In Document classification Id select the document class that represents a payment order. 
 1. If you have another document class that represents a payment order repeat steps 4, 5, and 6.  
 
 ## Run Purchase Bank Book BO report:
 
 To generate the **Purchase bank Book BO** report, follow these steps.
+
 1. Go to **Tax > Inquiries and reports > LATAM > Tax reporting**.
 1. In the **Format mapping field**, enter or select a value.
 1. Select OK.
@@ -90,4 +94,4 @@ To generate the **Purchase bank Book BO** report, follow these steps.
 1. In the To date field, enter a date.
 1. Select OK.
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
