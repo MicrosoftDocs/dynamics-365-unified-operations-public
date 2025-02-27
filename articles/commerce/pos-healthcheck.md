@@ -2,7 +2,7 @@
 title: Health check for POS peripherals and services
 description: This article describes the health check operation in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: ritakimani
-ms.date: 02/26/2025
+ms.date: 02/27/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -91,13 +91,6 @@ Network latency health check results are categorized as shown in the following t
 
 The following health check charts are added to provide more insights into network connectivity and performance. They also help admins analyze any app issues that might be linked to network connectivity during a specific period. 
 
-To access a health check chart in Store Commerce, follow these steps.
-
-1. Go to the **Available tests** page.
-1. Select the checkbox for the network health check that you want to run.
-1. In the **Details** pane on the right, select the **About** tab.
-1. Select **View connectivity insights**.   
-
 - **History of connectivity** – Provides insights about whether the connectivity was with **internet access**, **local access** with no internet, or **no access** at all. The chart shows an hourly view for a 24-hour period. However, the period can be narrowed to minutes to provide insights into any network fluctuations that occurred during a specific period when app issues were noticed.
 
     :::image type="content" source="media/connectivityhistory.jpg" alt-text="Screenshot that shows an example of a History of connectivity chart on the Connectivity health report page.":::
@@ -110,7 +103,14 @@ To access a health check chart in Store Commerce, follow these steps.
 
     :::image type="content" source="media/WIFIsignalstrength.jpg" alt-text="Screenshot that shows an example of a Wi-Fi signal strength chart on the Connectivity health report page.":::
 
-### Extending health checks
+To access a health check chart in Store Commerce, follow these steps.
+
+1. Go to the **Available tests** page.
+1. Select the checkbox for the network health check that you want to run.
+1. In the **Details** pane on the right, select the **About** tab.
+1. Select **View connectivity insights**.
+
+### Extend health checks
 
 The out-of-box health check tests are configured to provide some user-friendly messages for typical errors. However, not all scenarios are covered. Through extensibility, merchants can map user-friendly messages to errors that might be specific to their environment.
 
