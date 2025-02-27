@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 This article provides information to help you get started with Electronic invoicing for Singapore. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the Singaporean extension of the [PEPPOL International (PINT)](https://www.peppolguide.sg/billing/) format in Microsoft Dynamics 365 Finance using the last-mile connector.
 
-![Screenshot that shows e-invoices flow for Singapore.](../media/emea-bel-einoices-flow.jpg)
+![Screenshot that shows e-invoices flow for Singapore.](../media/apac-sgp-einoices-flow.jpg)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
