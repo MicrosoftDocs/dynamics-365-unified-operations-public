@@ -187,7 +187,7 @@ To identify a company by its VAT number, follow these steps.
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
 
-    The VAT number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
+    The Unique Entity Number (UEN) is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
 
 > [!NOTE]
 > The contact information for the legal entity is automatically retrieved from the related **Person** that is associated with the current user in Dynamics 365 Finance.
@@ -218,10 +218,10 @@ To enter the contact person, follow these steps.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 1. On the **Invoice and delivery** FastTab, in the **SALES TAX** section, in the **Tax exempt number** field, make sure that a valid VAT number is entered for the customer.
 
-    The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
+    The Unique Entity Number (UEN) is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
-> For both, Seller and Buyer identification, the schema **9925** (Belgium VAT number) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there is a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
+> For both, Seller and Buyer identification, the schema **0195** (Singapore UEN identifier) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there is a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
 
 ## Configure identification schemas
 
