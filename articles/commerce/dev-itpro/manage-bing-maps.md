@@ -21,7 +21,7 @@ ms.search.form: RetailSharedParameters
 Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
 
 > [!IMPORTANT]
-> Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. Learn more about the deprecation [here](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1). We will be adding support for Azure Maps to D365 Commerce in upcoming releases. 
+> Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**. Learn more about the deprecation [here](https://www.microsoft.com/en-us/maps/bing-maps/discontinued-services?msockid=0f45df6be4b865532bd6cc06e57f64a1). We are adding support for Azure Maps to Dynamics 365 Commerce in upcoming releases.
 
 ## Enable Bing Maps
 
@@ -38,8 +38,8 @@ obtain a key.
 
 ## Privacy notice
 
-If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](https://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](https://go.microsoft.com/?linkid=9710837).  
+If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you'll be redirected to [www.bing.com/maps](https://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](https://go.microsoft.com/?linkid=9710837).  
   
-Administrators can turn the Bing Maps feature on or off under **Commerce shared Parameters** > **Bing Maps**. Turning the Bing Maps app off makes the feature unavailable in this application.
+Administrators can turn the Bing Maps feature on or off under **Commerce shared Parameters** > **Bing Maps**. Turning off the Bing Maps feature makes the feature unavailable in this Dynamics 365 Commerce.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
