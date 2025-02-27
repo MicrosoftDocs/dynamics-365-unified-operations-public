@@ -96,9 +96,9 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     
 ## Configure the electronic invoicing feature
 
-Some of the parameters from the **Belgian electronic invoice (BE)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+Some of the parameters from the **Singaporean electronic invoice (SG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
-To review and update the **Belgian electronic invoice (BE)** electronic invoicing feature configuration, follow these steps.
+To review and update the **Singaporean electronic invoice (SG)** electronic invoicing feature configuration, follow these steps.
 
 1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then  Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the previously imported **Belgian electronic invoice (BE)** Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -145,6 +145,18 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 
 > [!NOTE]
 > If you need to use other integration channels, different from **EdiStatus** and **EdiImport**, then you must do additional configuration of the feature and the context configurations.
+
+## Configure registration numbers
+
+If the mentioned below registration types and registration categories already exist, you can skip this procedure.
+
+### Configure UEN Number
+
+To configure the registration number which represents the Unique Entity Number (UEN), follow the steps described in this chapter: [UEN of the business user](apac-sgp-iras-audit-file.md#company-uen)
+
+### Configure GST Number
+
+To configure the registration number which represents the Goods and Services Tax (GST), follow the steps described in this chapter: [GST Registration Number of the business user](apac-sgp-iras-audit-file.md#company-gst)
 
 ## Configure address structure
 
