@@ -49,7 +49,7 @@ You can import the Globalization solution by following these steps.
 A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Dataverse enables. Therefore, you can import single and filtered configurations.
 
 > [!NOTE]
-> To use the Dataverse configuration repository, make sure that the "Dataverse repository" feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39, however, it may be disabled in your environment.
+> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39, however, it may be disabled in your environment.
 
 ### Open the Dataverse configuration repository
 
