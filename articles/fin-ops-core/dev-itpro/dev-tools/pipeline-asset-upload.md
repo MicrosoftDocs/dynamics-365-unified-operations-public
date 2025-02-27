@@ -4,9 +4,8 @@ description: Learn about how you can upload assets to the Asset library in Micro
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 03/05/2020
+ms.date: 02/27/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0

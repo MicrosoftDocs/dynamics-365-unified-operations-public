@@ -4,9 +4,8 @@ description: Learn about how you can deploy assets from the Asset library in Mic
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 01/17/2024
+ms.date: 02/27/2025
 ms.reviewer: twheeloc
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
