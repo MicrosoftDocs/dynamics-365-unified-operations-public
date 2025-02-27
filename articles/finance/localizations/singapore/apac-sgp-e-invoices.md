@@ -150,11 +150,11 @@ To review and update the **Singaporean electronic invoice (SG)** electronic invo
 
 If the mentioned below registration types and registration categories already exist, you can skip this procedure.
 
-### Configure UEN Number
+### <a id="UEN"></a>Configure UEN Number
 
 To configure the registration number which represents the Unique Entity Number (UEN), follow the steps described in this chapter: [UEN of the business user](apac-sgp-iras-audit-file.md#company-uen)
 
-### Configure GST Number
+### <a id="GST"></a>Configure GST Number
 
 To configure the registration number which represents the Goods and Services Tax (GST), follow the steps described in this chapter: [GST Registration Number of the business user](apac-sgp-iras-audit-file.md#company-gst)
 
@@ -182,12 +182,18 @@ To enter the address, follow these steps.
 
 ### Seller identification
 
-To identify a company by its VAT number, follow these steps.
+To enter the registration numbers, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
+1. On the Action Pane, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
+1. In the **Registration type** field, select the [Unique Entity Number (UEN)](#UEN) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid UEN registration number for the selected legal entity.
+1. Select **Add** to create another registration ID.
+1. In the **Registration type** field, select the [Goods and Services Tax (GST)](#GST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid GST registration number for the selected legal entity.
 
-    The Unique Entity Number (UEN) is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
+    The **UEN** number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element and the **GST** number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
 
 > [!NOTE]
 > The contact information for the legal entity is automatically retrieved from the related **Person** that is associated with the current user in Dynamics 365 Finance.
@@ -215,10 +221,18 @@ To enter the contact person, follow these steps.
 
 ### Buyer identification
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-1. On the **Invoice and delivery** FastTab, in the **SALES TAX** section, in the **Tax exempt number** field, make sure that a valid VAT number is entered for the customer.
+To enter the registration numbers, follow these steps.
 
-    The Unique Entity Number (UEN) is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
+1. In the **Registration type** field, select the [Unique Entity Number (UEN)](#UEN) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid BRN registration number for the selected customer.
+1. Select **Add** to create another registration ID, if required.
+1. In the **Registration type** field, select the [Goods and Services Tax (GST)](#GST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected customer.
+
+   The **UEN** number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element and the **GST** number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
 > For both, Seller and Buyer identification, the schema **0195** (Singapore UEN identifier) will be used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there is a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
