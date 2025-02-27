@@ -110,7 +110,7 @@ To access a health check chart in Store Commerce, follow these steps.
 1. In the **Details** pane on the right, select the **About** tab.
 1. Select **View connectivity insights**.
 
-### Extending health checks
+### Extend health checks
 
 The out-of-box health check tests are configured to provide some user-friendly messages for typical errors. However, not all scenarios are covered. Through extensibility, merchants can map user-friendly messages to errors that might be specific to their environment.
 
