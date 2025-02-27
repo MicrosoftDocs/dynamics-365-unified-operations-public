@@ -17,26 +17,26 @@ ms.dyn365.ops.version: AX 10.0.45
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Belgium. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format in Microsoft Dynamics 365 Finance using the last-mile connector.
+This article provides information to help you get started with Electronic invoicing for Singapore. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the Singaporean extension of the [PEPPOL International (PINT)](https://www.peppolguide.sg/billing/) format in Microsoft Dynamics 365 Finance using the last-mile connector.
 
-![Screenshot that shows e-invoices flow for Belgium.](../media/emea-bel-einoices-flow.jpg)
+![Screenshot that shows e-invoices flow for Singapore.](../media/emea-bel-einoices-flow.jpg)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
 
-Watch the following overview of Belgian electronic invoicing implementation in Dynamics 365 Finance.
+Watch the following overview of Singaporean electronic invoicing implementation in Dynamics 365 Finance.
 
-> [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
+> [!VIDEO zzz]
 
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-- The company must be a registered tax payer in Belgium.
-- The company must have a signed agreement with the provider of electronic document delivery service that secures electronic document interchange in the PEPPOL format.
+- The company must be a registered tax payer in Singapore.
+- The company must have a signed agreement with the provider of electronic document delivery service that secures electronic document interchange in the PEPPOL (PINT) format.
 - Among the registered profile IDs, the company should have the following profile that Microsoft Dynamics 365 Finance uses for electronic document interchange:
 
-    - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** – This profile is used to interchange documents in PEPPOL format.
+    - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** – This profile is used to interchange documents in PEPPOL (PINT) format.
 
 - The company must obtain, from the service provider, the required credentials to enable integration of the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
 
@@ -71,8 +71,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Belgian electronic invoice (BE)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Belgian electronic invoice (BE)** Globalization feature import.
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Singaporean electronic invoice (SG)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Singaporean electronic invoice (SG)** Globalization feature import.
 
     - **Invoice model**
     - **Invoice model mapping**
