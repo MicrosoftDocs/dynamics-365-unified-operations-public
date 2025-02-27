@@ -228,6 +228,8 @@
               items:
                 - name: Invoice capture overview
                   href: accounts-payable/invoice-capture-overview.md
+                - name: What's new or changed in Invoice capture
+                  href: get-started/whats-new-invoice-capture.md
                 - name: Invoice capture install
                   href: accounts-payable/install-invoice-capture.md
                 - name: Configure Invoice capture
@@ -1128,6 +1130,8 @@
                       href: budgeting/fiscal-calendars-fiscal-years-periods.md
                     - name: Configure ledgers
                       href: general-ledger/configure-ledger.md
+                    - name: Ledger and subledger overview
+                      href: general-ledger/ledger-subledger.md
                     - name: Change the accounting or reporting currency
                       href: /troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency
                     - name: Change or reassign a ledger calendar
@@ -1631,7 +1635,7 @@
                             - name: Configure a SharePoint connection
                               href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                             - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
+                              href: localizations/global/gs-e-invoicing-set-up-azure-resources.md
                     - name: Work with Globalization features
                       items:
                         - name: Work with Globalization features overview
@@ -1963,7 +1967,7 @@
                     - name: Payment times reporting schema
                       href: localizations/australia/apac-aus-payment-times-report.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/apac-aus-nzl-e-invoices.md
+                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
                     - name: Taxable Payments Annual Report
                       href: localizations/australia/apac-aus-tpar.md
                 - name: Austria
@@ -2026,10 +2030,16 @@
                   items:
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
+                  - name: Configure sales and purchase invoices for Bolivia
+                    hrem: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
                   - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                   - name: Configure printing for Purchase Bank Books for Bolivia
                     href: localizations/iberoamerica/ltm-purchase-bank-book-report-bolivia.md
+                  - name: Create customer and vendor records with an address in Bolivia
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
+                  - name: Set up a legal entity and tax information for Bolivia
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-bolivia.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
@@ -3474,6 +3484,8 @@
                         href: localizations/iberoamerica/ltm-core-document-class.md
                       - name: Document class sales point for Latin America
                         href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
+                      - name: Sales Authorization Code for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-ca.md
                       - name: Sales point prefixes for Latin America
                         href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
                       - name: Sales point relation for sales documents and remission
@@ -3647,7 +3659,7 @@
                     - name: GST declaration form GST101A for New Zealand (NZ-00003)
                       href: localizations/new-zealand/apac-nzl-gst-declaration.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/apac-aus-nzl-e-invoices.md
+                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
                 - name: Nicaragua
                   items:
                     - name: Nicaragua overview

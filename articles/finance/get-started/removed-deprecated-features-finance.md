@@ -159,7 +159,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | This feature is no longer required in the new version of the globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Reason for deprecation/removal** | This feature is no longer required in the new version of the globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/gs-e-invoicing-id-get-started.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
@@ -170,7 +170,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | This solution is no longer required in the new version of the globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Reason for deprecation/removal** | This solution is no longer required in the new version of the globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/gs-e-invoicing-id-get-started.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
