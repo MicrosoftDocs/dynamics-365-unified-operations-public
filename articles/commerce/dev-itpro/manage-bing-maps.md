@@ -24,7 +24,7 @@ Learn how you can manage Bing Maps for your application. When Bing Maps is turne
 
 ## Enable Bing Maps
 
-1. Go to **Commerce shared Parameters** > **Bing Maps**.
+1. Go to **Commerce shared Parameters \> Bing Maps**.
 2. Select **Enable Bing Maps** to turn on Bing Maps functionality.
 
 ## Enter a Bing Maps key
@@ -32,13 +32,13 @@ Learn how you can manage Bing Maps for your application. When Bing Maps is turne
 Go to the [Bing Maps licensing page](https://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to
 obtain a key.
 
-1. Go to **Commerce shared Parameters** > **Bing Maps**.
+1. Go to **Commerce shared Parameters \> Bing Maps**.
 2. Enter the license key in the **Bing Maps Key** field.
 
 ## Privacy notice
 
 If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you select Bing Maps within this application, you're redirected to [www.bing.com/maps](https://www.bing.com/maps). Your use of Bing Maps is governed by the [Bing Maps End User Terms of Use](https://go.microsoft.com/?linkid=9710837).  
   
-Administrators can turn the Bing Maps feature on or off in Commerce headquarters by going to **Commerce shared Parameters \> Bing Maps**. Turning off the Bing Maps feature makes the feature unavailable in this instance Dynamics 365 Commerce.
+Administrators can turn the Bing Maps feature on or off in Commerce headquarters by going to **Commerce shared Parameters \> Bing Maps**. Turning off the Bing Maps feature in headquarters makes the feature unavailable in that instance Dynamics 365 Commerce.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
