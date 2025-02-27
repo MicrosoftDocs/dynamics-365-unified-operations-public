@@ -71,15 +71,15 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Singaporean electronic invoice (SG)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Singaporean electronic invoice (SG)** Globalization feature import.
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Singaporean electronic invoice (SG)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Singaporean electronic invoice (SG)** globalization feature import.
 
     - **Invoice model**
     - **Invoice model mapping**
-    - **PEPPOL Sales e-invoice** 
-    - **PEPPOL Sales e-credit note**
-    - **PEPPOL Project e-invoice**
-    - **PEPPOL Project e-credit note**
+    - **PINT Sales e-invoice** 
+    - **PINT Sales e-credit note**
+    - **PINT Project e-invoice**
+    - **PINT Project e-credit note**
     - **Customer invoice context model**
     - **Response message model**
     - **Edicom Response Processing**
@@ -110,7 +110,7 @@ To review and update the **Singaporean electronic invoice (SG)** electronic invo
     - **Destination** – The destination is constructed from the service ID number concatenated with the string **_EDIWIN**. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
     - **Token** – select the name of the [token](#Tok) that you previously created.
 
-    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Belgium.](emea-bel-einoices-feature-parameters.jpg)
+    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Singapore.](emea-bel-einoices-feature-parameters.jpg)
 
 1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
