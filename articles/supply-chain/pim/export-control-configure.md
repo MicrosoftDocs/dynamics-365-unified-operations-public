@@ -4,7 +4,7 @@ description: Learn how to enable and configure advanced export management in Mic
 author: sgmsft
 ms.author: shwgarg
 ms.topic: how-to
-ms.date: 02/15/2024
+ms.date: 02/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: COOExportControlParameters
