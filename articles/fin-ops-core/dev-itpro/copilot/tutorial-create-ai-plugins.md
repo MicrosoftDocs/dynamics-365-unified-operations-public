@@ -193,20 +193,20 @@ In your unified developer environment, you must create a class in X++ that is ca
    - **Custom API:** Calculate customer balance
    - **Description:** Calculates the current balance for a customer in the local currency defined for the customer
 
-## Step 3: Add the plugin as an action in your copilot
+## Step 4: Add the plugin as an action in your copilot
 
 1. Open [Copilot Studio](https://web.powerva.microsoft.com), and select your environment.
 1. Select an existing custom copilot, or create a new custom copilot.
 1. In the copilot, on the **Actions** menu, select **Add an action**.
 1. On the **Choose an action** page, search for and select the **Calculate customer balance** plugin operation.
 1. On the **Review and Finish** page, in the **Review inputs and outputs** section, select **Edit**.
-1. Under **Additional inputs**, select **Add**, and then select the **mserp_CustomAPICalculateCustomerBalance_accountNumber** input.
+1. Under **Additional inputs**, select **Add**, and then select the **cr689_CustomAPICalculateCustomerBalance_accountNumber** input.
 1. Select **Save** and then **Finish**.
 
 > [!NOTE]
 > This tutorial assumes that you enabled generative mode in your copilot for plugin orchestration. If you use the default classic mode in your copilot, you must complete the extra step of creating a topic in the copilot to invoke the action. For more information, see [Configure the copilot to invoke the action](copilot-ai-plugins.md#configure-the-copilot-to-invoke-the-action).
 
-## Step 4: Test the new plugin action
+## Step 5: Test the new plugin action
 
 To test the plugin, you can use the **Test your copilot** pane in Copilot Studio. Alternatively, you can publish the copilot to a channel, such as Teams. In the chat pane, enter prompts to ask about customer balances from your finance and operations environment. For example, ask, "What is the current balance for customer account US-001?"
 
