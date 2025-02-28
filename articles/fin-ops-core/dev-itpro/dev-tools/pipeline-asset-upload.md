@@ -4,9 +4,8 @@ description: Learn about how you can upload assets to the Asset library in Micro
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 03/05/2020
+ms.date: 02/27/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
@@ -21,9 +20,8 @@ This article assumes you have a working knowledge of [Azure Pipelines](/azure/de
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 
-## Make sure that MSAL.PS is installed
-
-Versions 1.\* and later of the upload task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the upload task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
+> [!NOTE]
+> (Not required for Version 2.\* and later.) Version 1.\* of the upload task requires availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the upload task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
 
