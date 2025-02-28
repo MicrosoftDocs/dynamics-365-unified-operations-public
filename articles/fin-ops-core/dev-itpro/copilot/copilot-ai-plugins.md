@@ -162,6 +162,12 @@ For each class, follow these steps.
 
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
+After creating and deploying the classes and security objects, you can verify the configuration by viewing the custom API in the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. The grid includes every class that meets the following criteria:
+
+- It implements the `ICustomApi` interface.
+- It contains the `[CustomApi]` attribute.
+- It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
+
 > [!NOTE]
 > The menu item for the class must be assigned to a security role. Otherwise, the custom API, AI plugin, and AI plugin operation records aren't created in Dataverse. <br><p>
 > After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. This is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. You can do this by adding the class runner to your environment URL:<br><p>
@@ -169,26 +175,9 @@ For each class, follow these steps.
 
 ## Generate the Copilot plugin
 
-After the operation is defined in X++ and deployed in your finance and operations environment, you must generate the custom API and AI plugin in Dataverse. The AI plugin is added to the Dataverse plugin registry and can then be added to copilots as an action. The plugin is configured to invoke the custom API, which runs the code that is defined in X++.
+After the operation is defined in X++ and deployed in your finance and operations environment, you must create the custom API and AI plugin in Dataverse. The AI plugin must be added to the Dataverse plugin registry, making it available to be added to agents as an action. The plugin is configured to invoke the custom API, which runs the code that is defined in X++.
 
-To generate the custom API and AI plugin, follow these steps.
 
-1. Open the finance and operations apps client for the environment where you deployed your new X++ class.
-1. Open the **Synchronize Dataverse Custom APIs** page (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). If the menu navigation isn't available in your environment, you can go directly to the menu item by adding the `mi=CustomApiTable` parameter to the environment URL. Here's an example:
-
-    `https://<environment>.operations.dynamics.com/?cmp=USMF&mi=CustomApiTable`
-
-1. On the list page, ensure that your class is included in the grid. The grid includes every class that meets the following criteria:
-
-    - It implements the `ICustomApi` interface.
-    - It contains the `[CustomApi]` attribute.
-    - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
-
-1. Select the **Synchronize** action.
-
-The synchronization process synchronizes all listed classes with Dataverse and adds them to the **Dynamics 365 ERP Virtual Entities** solution. You can confirm that the classes were created and added to the solution in the **Custom API** list, together with the associated request parameters and response properties.
-
-For each class that also contains the `[AIPluginOperationAttribute]` attribute, a record for the AI plugin is created in the same solution. An `AIPlugin` record is created for each security role that is configured in finance and operations apps. This record contains an assigned class that has the `[AIPluginOperationAttribute]` attribute. The associated `AIPluginOperaton` records are linked to the plugin.
 
 ## Add the action to your copilot
 
