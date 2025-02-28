@@ -1,6 +1,6 @@
 ---
 title: Original invoice reference (Eastern Europe)
-description: This article describes how to create sales orders and corrective lines in a credit note for a sales order in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create sales orders and corrective lines in a credit note for a sales order in Estonia with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create sales orders and corrective lines in a credit note for a sales order in Microsoft Dynamics 365 Commerce.
+This article describes how to create sales orders and corrective lines in a credit note for a sales order in Estonia with Microsoft Dynamics 365 Finance.
 
 The following procedures use the demo data company DEMF with a primary address in Poland.
 
@@ -24,7 +24,7 @@ The following procedures use the demo data company DEMF with a primary address i
 
 To create a sales order, follow these steps.
 
-1. In Commerce headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
@@ -46,7 +46,7 @@ To create a sales order, follow these steps.
 
 To create a sales order for a sales order, follow these steps.
 
-1. In Commerce headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a value.
 1. Select **OK**.
