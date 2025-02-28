@@ -27,9 +27,9 @@ Before you can generate the report, the following prerequisites must be met:
 - The legal entity's address must be in Bolivia.
 - Both the country/region-specific LATAM feature for Bolivia and the general LATAM feature must be enabled.
 - Download the specific report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md). 
-- Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+- Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Create a tax application to use on the report, for example, Tax application ID **LB** Tax application description **Libro Bancarizacion**. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
-- Create Field list 10, and in the reference code section add two options **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master.md).
+- Create Field list 10, and in the reference code section add two options **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 
 ## Common configurations for all transaction types
 
