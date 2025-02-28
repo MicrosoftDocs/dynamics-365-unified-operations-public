@@ -198,7 +198,7 @@ After creating the API, you need to add parameters to the API. To create request
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
 2. Enter the following detail for the parameter:
    - **Custom API:** Select the Custom API you created.
-   - **Unique Name:** Use the format **<Your solution's prefix>_\<Name of the X++ class for the action>_\<Name of the data member for the CustomAPIRequestParameter property in your class>**. For example, `jch_CustomAPICalculateCustomerBalance_accountNumber`.
+   - **Unique Name:** Use the format **\<Your solution's prefix>\_<Name of the X++ class for the action>_\<Name of the data member for the CustomAPIRequestParameter property in your class>**. For example, `jch_CustomAPICalculateCustomerBalance_accountNumber`.
    - The **Name** and **Display Name** should be the name of the data member for the property in your X++ class.
    - **Description:** The description for the property defined in your class.
    - **Type:** Select the data type for the property.
@@ -211,7 +211,7 @@ Response properties are the outputs of the action. To create response properties
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Response Property**.
 2. Enter the following detail for the parameter:
    - **Custom API:** Select the Custom API you created.
-   - **Unique Name:** Use the format **<Your solution's prefix>_\<Name of the class for the action>_\<Name of the data member for the CustomAPIResponseProperty property in the class>**. For example, `jch_CustomAPICalculateCustomerBalance_balance`.
+   - **Unique Name:** Use the format **\<Your solution's prefix>\_<Name of the X++ class for the action>_\<Name of the data member for the CustomAPIResponseProperty property in your class>**. For example, `jch_CustomAPICalculateCustomerBalance_balance`.
    - The **Name** and **Display Name** should be the name of the data member for the property in the X++ class.
    - **Description:** The description for the property defined in the class.
    - **Type:** The data type for the property.
