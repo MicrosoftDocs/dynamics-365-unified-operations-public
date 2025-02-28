@@ -35,11 +35,11 @@ Some of the functionality that's referred to in this article might not yet be av
 | Paraguay | Available  | Available |
 | Uruguay | Available | Available |
 | Bolivia | Not planned | 2024 wave 2 |
-| Dominican Republic | Not planned | 2024 wave 2 |
 | Ecuador | Not planned | 2024 wave 2 |
-| Peru | Not planned  | 2024 wave 2 |
-| Venezuela | Not planned | 2024 wave 2 |
-| Argentina | 2025 wave 1 | 2025 wave 2 |
+| Dominican Republic | Not planned | 2025 wave 1 |
+| Peru | Not planned  | 2025 wave 1 |
+| Venezuela | Not planned | 2025 wave 1 |
+| Argentina | 2025 wave 2 | 2026 wave 1 |
 
 ## See also
 
