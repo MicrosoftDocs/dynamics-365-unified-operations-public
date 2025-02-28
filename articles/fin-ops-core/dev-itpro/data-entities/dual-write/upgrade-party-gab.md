@@ -4,7 +4,7 @@ description: Learn how to upgrade dual-write data to the party and global addres
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
-ms.date: 09/22/2023
+ms.date: 02/22/2025
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
@@ -301,6 +301,14 @@ This section describes the setup that is required before you run the Party posta
     + msdyn_vendor Update
 
         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor
+          
+    +	Customeraddress
+        + Create
+            + Microsoft.Dynamics.GABExtended.Plugins.CreatePartyAddress: Create of customeraddress
+        + Update
+            + Microsoft.Dynamics.GABExtended.Plugins.CreatePartyAddress: Update of customeraddress
+        + Delete
+            + Microsoft.Dynamics.GABExtended.Plugins.DeleteCustomerAddress: Delete of customeraddress
 
     + msdyn_partypostaladdress
 
