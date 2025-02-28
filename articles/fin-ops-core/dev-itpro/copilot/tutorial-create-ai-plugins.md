@@ -24,8 +24,9 @@ You're creating an AI plugin that calculates the balance of a customer account i
 Here's an overview of the steps in this tutorial:
 
 1. In your unified developer environment, create a class in X++ to define the plugin operation. Add security privileges for the new class.
-1. In your finance and operations environment, run the process to generate the AI plugin and related plugin operations in Dataverse.
-1. Add the AI plugin as an action in your custom copilot.
+2. In Dataverse, create a Custom API to invoke the X++ class.
+3. In Dataverse, create the AI plugin and related plugin operations.
+4. Add the AI plugin as an action in your custom copilot.
 
 ## Prerequisites
 
@@ -136,28 +137,61 @@ In your unified developer environment, you must create a class in X++ that is ca
     - **Name:** CustomAPICalculateCustomerBalance
     - **Object Type:** MenuItemAction
     - **Object Name:** CustomAPICalculateCustomerBalance
+    - **Access Level:** Create
 
 1. Create a **Security Role** item that is named **SalesTeamCopilotRole**.
 1. Add a privilege to the new role. Set the properties for it so that they reference the **CopilotCalculateCustomerBalancePrivilege** privilege that you created.
 1. Save, build, and deploy the code to your finance and operations environment.
 
-## Step 2: Generate the AI plugin in Dataverse
+## Step 2: Create the Dataverse Custom API
 
-1. In finance and operations apps, open the **Synchronize Dataverse Custom APIs** page (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). If the menu navigation isn't available in your environment, you can go directly to the menu item by adding the `&mi=CustomApiTable` parameter to the environment URL. Here's an example:
+1. Open the [Power Apps maker portal](https://make.powerapps.com).
+2. Create a new solution with the **Display name** of **Demo Sales Copilot**. Select the **Publisher** for the copilot, and note the **Prefix** of the selected publisher. For example, `cr689` if you use the CDS Default Publisher. Use the prefix for your selected solution when creating the objects in the solution, replacing `cr689` where needed.
+3. On the action ribbon in the solution, select **New \> More \> Other \> Custom API**.
+4. Enter the following detail for the Custom API, and save:
+   - **Unique Name:** cr689_CustomAPICalculateCustomerBalance
+   - **Name:** Calculate customer balance
+   - **Display Name:** Calculate customer balance
+   - **Description:** Calculates the current balance for a customer in the local currency defined for the customer
+   - **Binding Type:** Global
+   - **Plugin Type:** Microsoft.Dynamics.Fno.Copilot.Plugins.InvokeFnoCustomAPI
+5. On the action ribbon in the solution, select **New \> More \> Other \> Custom API Request Parameter**.
+6. Enter the following detail for the Custom API Request Parameter, and save:
+   - **Custom API:** Calculate customer balance
+   - **Unique Name:** cr689_CustomAPICalculateCustomerBalance_accountNumber
+   - **Name:** accountNumber
+   - **Display Name:** accountNumber
+   - **Description:** The customer account number
+   - **Type:** String
+   - **Is Optional:** No
+7. On the action action ribbon in the solution, select **New \> More \> Other \> Custom API Response Property**.
+8. Enter the following detail for the Custom API Response Property, and save:
+   - **Custom API:** Calculate customer balance
+   - **Unique Name:** cr689_CustomAPICalculateCustomerBalance_balance
+   - **Name:** balance
+   - **Display Name:** balance
+   - **Description:** The current customer account balance
+   - **Type:** Decimal
+9. Repeat steps 7 and 8 to create the Custom API Response Properties for each of the two remaining output parameters, **currencyCode** and **customerFound**, using the names, descriptions, and data types from the X++ class above.
 
-    `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=CustomApiTable`
+## Step 3: Create the AI plugin in Dataverse
 
-1. On the list page, ensure that the **CustomAPICalculateCustomerBalance** class is listed.
-1. Select the **Synchronize** action.
-
-You can now confirm that the custom API and AI plugins were created in your Dataverse environment.
-
-1. Open [Power Apps](https://make.powerapps.com).
-1. Open the **Dynamics 365 ERP Virtual Entities** solution, and confirm the following details:
-
-    - The **mserp_xppapi_SalesTeamCopilotRole** record was created in the **AIPlugin** list.
-    - The **Calculate customer balance** record was created in the **AIPluginOperation** list.
-    - The **Calculate customer balance** record was created in the **Custom API list**, together with related **Custom API Request Parameter** and **Custom API Response Property** records.
+1. On the action ribbon in your solution, select **New \> More \> Other \> AI Plugin**.
+2. Enter the following detail for the AI Plugin record, and save:
+   - **Name:** cr689_SalesTeamCopilotRole
+   - **PluginType:** Dataverse
+   - **HumanName:** Sales Team Copilot
+   - **HumanDescription:** This plugin provides actions for the sales team
+   - **ModelName:** Sales Team Copilot
+   - **ModelDescription:** This plugin provides actions for the sales team
+3. On the action ribbon in your solution, select **New \> More \> Other \> AI Plugin Operation**.
+4. Enter the following detail for the AI Plugin Operation record, and save:
+   - **Name:** cr689_CustomAPICalculateCustomerBalance
+   - **AIPlugin:** cr689_SalesTeamCopilotRole
+   - **OperationId:** cr689_CustomAPICalculateCustomerBalance
+   - **AI Plugin Operation Export Key:** aiplugin.name=cr689_SalesTeamCopilotRole,operationid=cr689_CustomAPICalculateCustomerBalance
+   - **Custom API:** Calculate customer balance
+   - **Description:** Calculates the current balance for a customer in the local currency defined for the customer
 
 ## Step 3: Add the plugin as an action in your copilot
 
