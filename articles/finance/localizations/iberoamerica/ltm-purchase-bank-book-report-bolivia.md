@@ -2,7 +2,7 @@
 title: Configure printing for purchase bank books for Bolivia
 description: Learn about the required configuration for printing a Purchase Bank Book report for Bolivia. 
 author: Cpicon85
-ms.date: 02/27/2025
+ms.date: 02/28/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -31,7 +31,7 @@ Before you can generate the report, the following prerequisites must be met:
 - Create a tax application to use on the report, for example, Tax application ID **LB** Tax application description **Libro Bancarizacion**. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - Create Field list 10, and in the reference code section add two options **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master.md).
 
-## Common configurations for all transactions types
+## Common configurations for all transaction types
 
 -	Create a document class called **orden de pago**, and enable Field list 10 as required. Field list 10 lets you indicate if the transaction should be included or not in the report.
 -	You must configure a document class payment media called **payment documents**, and configure the tax application code accordingly if it's a check, a bank transfer, a deposit, etc. The Document class type for each payment media must have selected **unique per entry**. Learn more in [Document class type configuration](ltm-core-document-class-type.md).
@@ -62,7 +62,7 @@ When you need to make payments to suppliers for purchases that do not have an in
 
 When you need to make payments to suppliers for real estate purchases, verify the following configuration:
 
-1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and select a document class that represents a supporting document for real estate purchases **Compra de inmuebles**. Verify that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
+1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and select a document class that represents a supporting document for real estate purchases **Compra de inmuebles**. Verify that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md).
 1. On the Action Pane, select **Tax application**.
    1. In the **Tax application id** value that has been created **LB**.
    1. In the **Tax application code** field, enter **2** as transaction type.
@@ -72,7 +72,7 @@ In case of successive tract contract you might add **letter code** field to **CS
 
 ## Set up application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps.
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
 1. Select **Purchase Bank Book BO**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group select **Setup**.
@@ -84,7 +84,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run Purchase Bank Book BO report:
 
-To generate the **Purchase bank Book BO** report, follow these steps.
+To run the **Purchase bank Book BO** report, follow these steps.
 
 1. Go to **Tax > Inquiries and reports > LATAM > Tax reporting**.
 1. In the **Format mapping field**, enter or select a value.
