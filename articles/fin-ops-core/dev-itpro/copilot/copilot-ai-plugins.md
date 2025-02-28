@@ -211,18 +211,34 @@ Response properties are the outputs of the action. To create response properties
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Response Property**.
 2. Enter the following detail for the parameter:
    - **Custom API:** Select the Custom API you created.
-   - **Unique Name:** Use the format **<Your solution's prefix>_\<Name of the class for the action>_\<Name of the data member for the CustomAPIResponseProperty property in the class>**. For example, **jch_CustomAPICalculateCustomerBalance_balance**.
+   - **Unique Name:** Use the format **<Your solution's prefix>_\<Name of the class for the action>_\<Name of the data member for the CustomAPIResponseProperty property in the class>**. For example, `jch_CustomAPICalculateCustomerBalance_balance`.
    - The **Name** and **Display Name** should be the name of the data member for the property in the X++ class.
    - **Description:** The description for the property defined in the class.
    - **Type:** The data type for the property.
 3. Save and close.
 
 ### Create the AI plugin
-The AI Plugin is the grouping of AI operations associated with the security role. This is the registration for the plugin in the Dataverse plugin registry. The AI plugin can have multiple AI plugin operations for the role.
+The AI Plugin is the grouping of AI operations associated with the security role. This is the registration for the plugin in the Dataverse plugin registry. The AI plugin can have multiple AI plugin operations for the role. The plugin should be based on a specific security role. Users with access to the plugin should have permissions to perform all operations in the plugin.
+
+1. In your solution, select **New** \> **More** \> **Other** \> **AIPlugin**.
+2. Enter the following details for the AI plugin record:
+   - **Name:** Use the format **\<Your solution prefix>_\<Name of the security role>**. For example `jch_SalesTeamCopilotRole`.
+   - **PluginType:** Dataverse
+   - **ModelName:** Use the label for the security role in finance and operations apps. This is what will display for the plugin in Copilot Studio.
+   - For the **ModelDescription** and **HumanDescription** Provide a description for the plugin and related operations.
+3. Save and close.
 
 ### Create the AI plugin operation
 The AI plugin operation is the registration in the Dataverse plugin registry of the business operation defined in your X++ class. The operation is assigned to an AI plugin in the registry, making it available to be added as an action in an agent. The operation is associated with the Custom API, ensuring the right logic is invoked when the action is included in an agent.
 
+1. In your solution, select **New** \> **More** \> **Other** \> **AIPluginOperation**.
+2. Enter the following details for the AI plugin operation record:
+   - **Name:** Use the format **\<Your solution prefix>_<Name of the X++ class for the operation>**. For example, `jch_CustomAPICalculateCustomerBalance`.
+   - **AIPlugin:** Select the AIPlugin record you created.
+   - **OperationId:** Use the format **\<Your solution prefix>_<Name of the X++ class for the operation>**.
+   - **AI Plugin Operation Export Key:** Use the format **aiplugin.name=\<Name of the AIPlugin>,operationid=\<Name of the AI Plugin Operation>**. For example, `aiplugin.name=jch_SalesTeamCopilotRole,operationid=jch_CustomAPICalculateCustomerBalance`.
+   - **Description:** The description of the operation from the X++ class.
+3. Save and close.
 
 ## Add the action to your copilot
 
