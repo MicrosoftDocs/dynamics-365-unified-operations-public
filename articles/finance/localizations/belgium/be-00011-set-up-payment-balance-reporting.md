@@ -1,12 +1,12 @@
 ---
 title: Set up payment balance reporting (Belgium)
-description: This article describes how to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium in Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up BLWI information for Belgium with Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 02/27/2025
+ms.date: 02/28/2025
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-06-30
@@ -16,7 +16,7 @@ ms.search.validFrom: 2016-06-30
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium in Microsoft Dynamics 365 Commerce.
+This article describes how to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium with Microsoft Dynamics 365 Finance.
 
 Use the following procedures to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. These procedures were created using the USSI demo data company.
 
@@ -26,7 +26,7 @@ This functionality is available for legal entities that have their primary addre
 
 To set up a BLWI country/region group, follow these steps.
 
-1. In Commerce headquarters, go to **Tax \> Setup \> Foreign trade \> BLWI country/region groups**.
+1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Foreign trade \> BLWI country/region groups**.
 1. Select **New**.
 1. In the **Group ID** field, enter a value.
 1. In the **Description** field, enter a value.
@@ -41,7 +41,7 @@ To set up a BLWI country/region group, follow these steps.
 
 To set up BLWI currencies, follow these steps.
 
-1. In Commerce headquarters, go to **Tax \> Setup \> Foreign trade \> BLWI currencies**.
+1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Foreign trade \> BLWI currencies**.
 1. Select **New**.
 1. In the **Currency** field, enter or select a value.
 1. Select the **Report in this currency** checkbox.
@@ -51,7 +51,7 @@ To set up BLWI currencies, follow these steps.
 
 To set up BLWI parameters, follow these steps.
 
-1. In Commerce headquarters, go to **Tax \> Setup \> Foreign trade \> BLWI parameters**.
+1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Foreign trade \> BLWI parameters**.
 1. In the **BLWI** field, select **Yes**. This parameter should be activated before you post customer/vendor transactions, so that the transactions are transferred to the payment balance.  
 1. In the **Email** field, enter a value.
 1. In the **Name** field, enter a value.
@@ -64,7 +64,7 @@ To set up BLWI parameters, follow these steps.
 
 To set up payment survey codes, follow these steps.
 
-1. In Commerce headquarters, go to **Tax \> Setup \> Foreign trade \> Payment survey codes**.
+1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Foreign trade \> Payment survey codes**.
 2. Select **New**.
 3. In the **Survey code** field, enter a value.
 4. In the **Month/Quarter** field, select an option.
