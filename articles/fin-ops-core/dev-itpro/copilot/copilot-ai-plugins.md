@@ -182,14 +182,14 @@ There are three objects that need to be created in Dataverse to call the code in
 ### Create the Dataverese Custom API
 The [Dataverse Custom API](https://learn.microsoft.com/power-apps/developer/data-platform/custom-api) is the API object with the request and response parameters to invoke the X++ class in finance and operations apps. To create the Custom API:
 
-#### Create the API object
+#### Create the API
 1. Open your solution in the [Power Apps maker portal](https://make.powerapps.com).
 2. Select **New** \> **More** \> **Other** \> **Custom API**.
 3. On the **New Custom API** page, enter the following detail:
-   - **Unique Name:** The unique name must be in the format of **<Your solution's prefix>_<Name of the X++ class for the action>**. For example, **jch_CustomAPICalculateCustomerBalance**.
+   - **Unique Name:** The unique name must be in the format of **<Your solution's prefix>_<Name of the X++ class for the action>**. For example, `jch_CustomAPICalculateCustomerBalance`.
    - **Name** and **Display Name** should be a friendly name to identify the custom API.
    - **Description:** The description for the business operation performed by the API. This should be the same as the description provided in the X++ class.
-   - **Plugin Type**: Select **Microsoft.Dynamics.Fno.Copilot.Plugins.InvokeFnoCustomAPI**.
+   - **Plugin Type**: Select `Microsoft.Dynamics.Fno.Copilot.Plugins.InvokeFnoCustomAPI`.
 4. Save and close the new Custom API.
 
 #### Add request parameters to the API
@@ -198,7 +198,7 @@ After creating the API, you need to add parameters to the API. To create request
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
 2. Enter the following detail for the parameter:
    - **Custom API:** Select the Custom API you created.
-   - **Unique Name:** Use the format **<Your solution's prefix>_<Name of the X++ class for the action>_\<Name of the data member for the CustomAPIRequestParameter property in your class>**. For example, **jch_CustomAPICalculateCustomerBalance_accountNumber**.
+   - **Unique Name:** Use the format **<Your solution's prefix>_\<Name of the X++ class for the action>_\<Name of the data member for the CustomAPIRequestParameter property in your class>**. For example, `jch_CustomAPICalculateCustomerBalance_accountNumber`.
    - The **Name** and **Display Name** should be the name of the data member for the property in your X++ class.
    - **Description:** The description for the property defined in your class.
    - **Type:** Select the data type for the property.
@@ -243,9 +243,6 @@ The AI plugin operation is the registration in the Dataverse plugin registry of 
 ## Add the action to your copilot
 
 For each operation that is listed in the plugin registry, you can add the action to any copilot that is connected to the registry in Copilot Studio. For example, you can add the action to Copilot for finance and operations apps or custom copilots.
-
-> [!NOTE]
-> You can't currently add the plugins to some Microsoft copilots, such as Copilot for Microsoft 365.
 
 To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps.
 
