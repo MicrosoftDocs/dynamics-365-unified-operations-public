@@ -180,7 +180,7 @@ After the operation is defined in X++ and deployed in your finance and operation
 There are three objects that need to be created in Dataverse to call the code in finance and operations apps: a Dataverse Custom API, an AI Plugin, and an AI Plugin Operation. The objects should be created in your Power Apps solution that deploys with your agent or extension.
 
 ### Create the Dataverse Custom API
-The [Dataverse Custom API](/power-apps/developer/data-platform/custom-api.md) is the API object with the request and response parameters to invoke the X++ class in finance and operations apps. To create the Custom API:
+The [Dataverse Custom API](/power-apps/developer/data-platform/custom-api) is the API object with the request and response parameters to invoke the X++ class in finance and operations apps. To create the Custom API:
 
 #### Create the API
 1. Open your solution in the [Power Apps maker portal](https://make.powerapps.com).
