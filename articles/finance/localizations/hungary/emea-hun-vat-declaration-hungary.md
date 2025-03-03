@@ -1,3 +1,4 @@
+---
 title: VAT declaration (Hungary)
 description: Learn how to set up the value-added tax (VAT) declaration 65A with Summary report 65M for Hungary in XML format, including an overview on VAT declarations.
 author: liza-golub
@@ -7,7 +8,6 @@ ms.custom:
   - bap-template
 ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-
 ---
 
 # VAT declaration (Hungary)
