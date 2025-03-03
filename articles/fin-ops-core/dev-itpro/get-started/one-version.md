@@ -284,6 +284,10 @@ After the service update is applied by Microsoft, you receive a notification tha
 - **Pending Package Sign off** – If a package is pending sign off, Microsoft won't apply the service update to production.
 - **Deployment Failure** – If there was a deployment failure, the environment is rolled back to the original state.
 
+### Can an environment be brought back to its previous state if there are issues after a service update is applied?
+
+As with other code promotions, rollbacks cannot be done after a service update is applied. Microsoft uses flighting and features to help mitigate the risk of updates and enable rapid enabling and disabling of new functionality. See [Feature management and flighting](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview#feature-management-and-flighting)
+
 ### If there's a failure, can I reschedule the update to be automatically applied?
 
 No, you can't reschedule the update. However, you can apply the package when it's convenient, just as you might schedule any other update.
