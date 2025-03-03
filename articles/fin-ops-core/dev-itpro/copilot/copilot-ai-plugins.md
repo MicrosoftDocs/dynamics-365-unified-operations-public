@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/24/2024
+ms.date: 03/03/2025
 
 ---
 
@@ -146,7 +146,7 @@ You must also define an accessor method for the properties to get and set the va
 
 #### Define the operation
 
-Use the `run` method of the `ICustomAPI` interface to define the code that runs when the operation is invoked. This code is the business logic that defines the action that is run for the AI operation. In this method, set the values of any response properties that should be returned to Copilot Studio when the operation is completed.
+To define the code that runs when the operation is invoked, use the `run` method of the `ICustomAPI` interface. This code is the business logic that defines the action that is run for the AI operation. In this method, set the values of any response properties that should be returned to Copilot Studio when the operation is completed.
 
 ## Define plugin security
 
@@ -177,10 +177,10 @@ After creating and deploying the classes and security objects, you can verify th
 
 After the operation is defined in X++ and deployed in your finance and operations environment, you must create the custom API and AI plugin in Dataverse. The AI plugin must be added to the Dataverse plugin registry, making it available to be added to agents as an action. The plugin is configured to invoke the custom API, which runs the code that is defined in X++.
 
-There are three objects that need to be created in Dataverse to call the code in finance and operations apps: a Dataverse Custom API, an AI Plugin, and an AI Plugin Operation. The objects should be created in your Power Apps solution that will be deployed with your agent or extension.
+There are three objects that need to be created in Dataverse to call the code in finance and operations apps: a Dataverse Custom API, an AI Plugin, and an AI Plugin Operation. The objects should be created in your Power Apps solution that deploys with your agent or extension.
 
-### Create the Dataverese Custom API
-The [Dataverse Custom API](https://learn.microsoft.com/power-apps/developer/data-platform/custom-api) is the API object with the request and response parameters to invoke the X++ class in finance and operations apps. To create the Custom API:
+### Create the Dataverse Custom API
+The [Dataverse Custom API](/power-apps/developer/data-platform/custom-api.md) is the API object with the request and response parameters to invoke the X++ class in finance and operations apps. To create the Custom API:
 
 #### Create the API
 1. Open your solution in the [Power Apps maker portal](https://make.powerapps.com).
@@ -188,12 +188,12 @@ The [Dataverse Custom API](https://learn.microsoft.com/power-apps/developer/data
 3. On the **New Custom API** page, enter the following detail:
    - **Unique Name:** The unique name must be in the format of **<Your solution's prefix>_<Name of the X++ class for the action>**. For example, `jch_CustomAPICalculateCustomerBalance`.
    - **Name** and **Display Name** should be a friendly name to identify the custom API.
-   - **Description:** The description for the business operation performed by the API. This should be the same as the description provided in the X++ class.
+   - **Description:** The description for the business operation performed by the API. This description should be the same as the description provided in the X++ class.
    - **Plugin Type**: Select `Microsoft.Dynamics.Fno.Copilot.Plugins.InvokeFnoCustomAPI`.
 4. Save and close the new Custom API.
 
 #### Add request parameters to the API
-After creating the API, you need to add parameters to the API. To create request parameters, follow the steps below for each **CustomAPIRequestParameter** property in your X++ class:
+After creating the API, you need to add parameters to the API. To create request parameters, follow these steps for each **CustomAPIRequestParameter** property in your X++ class:
 
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
 2. Enter the following detail for the parameter:
@@ -206,7 +206,7 @@ After creating the API, you need to add parameters to the API. To create request
 3. Save and close the custom API request parameter.
   
 #### Add response properties to the API
-Response properties are the outputs of the action. To create response properties, follow the steps below for each **CustomAPIResponseProperty** property in your class:
+Response properties are the outputs of the action. To create response properties, follow these steps for each **CustomAPIResponseProperty** property in your class:
 
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Response Property**.
 2. Enter the following detail for the parameter:
@@ -224,7 +224,7 @@ The AI Plugin is the grouping of AI operations associated with the security role
 2. Enter the following details for the AI plugin record:
    - **Name:** Use the format **\<Your solution prefix>_\<Name of the security role>**. For example `jch_SalesTeamCopilotRole`.
    - **PluginType:** Dataverse
-   - **ModelName:** Use the label for the security role in finance and operations apps. This is what will display for the plugin in Copilot Studio.
+   - **ModelName:** Use the label for the security role in finance and operations apps. This is the label that displays for the plugin in Copilot Studio.
    - For the **ModelDescription** and **HumanDescription** Provide a description for the plugin and related operations.
 3. Save and close.
 

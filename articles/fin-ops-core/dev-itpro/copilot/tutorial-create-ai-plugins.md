@@ -164,7 +164,7 @@ In your unified developer environment, you must create a class in X++ that is ca
    - **Description:** The customer account number
    - **Type:** String
    - **Is Optional:** No
-7. On the action action ribbon in the solution, select **New \> More \> Other \> Custom API Response Property**.
+7. On the action ribbon in the solution, select **New \> More \> Other \> Custom API Response Property**.
 8. Enter the following detail for the Custom API Response Property, and save:
    - **Custom API:** Calculate customer balance
    - **Unique Name:** cr689_CustomAPICalculateCustomerBalance_balance
