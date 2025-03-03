@@ -4,7 +4,7 @@ description: Learn how to discard a freight bill when creating a vendor invoice 
 author: lisascholz91
 ms.author: lisascholz
 ms.topic: article
-ms.date: 02/27/2025
+ms.date: 03/03/2025
 ms.reviewer: twheeloc
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 ---
