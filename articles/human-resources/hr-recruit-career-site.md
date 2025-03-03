@@ -4,7 +4,7 @@
 title: Use the careers site in the HR Recruiting app (preview)
 description: This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 03/03/2025
 ms.topic: article
 # optional metadata
 
@@ -48,6 +48,9 @@ If you don't yet have an account, select **Create one**. After an account is cre
 > Before you can sign in or create an account, you must agree to the privacy policy.
 
 An icon that contains the candidate's initials appears in the upper-right corner of the page. This icon indicates that the candidate is signed in. It can also be used to access the candidate's profile and settings. 
+
+> [!NOTE]
+> When a user selects the **Remember me** option while logging into their account, the server stores a cookie for future logins. This allows the user to remain logged in without signing in again, as long as they haven't signed out. If the browser closes unexpectedly, the user remains logged in until they manually log out from the session.
  
 ## Create a profile
 
