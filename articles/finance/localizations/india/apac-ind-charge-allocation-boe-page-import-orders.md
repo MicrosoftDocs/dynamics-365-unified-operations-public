@@ -4,7 +4,7 @@ description: Learn about about charge allocation for import orders, including ou
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 03/21/2022
+ms.date: 03/03/2025
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User 
