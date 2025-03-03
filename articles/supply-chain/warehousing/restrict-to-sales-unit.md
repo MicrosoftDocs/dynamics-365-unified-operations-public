@@ -27,11 +27,9 @@ To configure the *Restrict to sales unit* functionality for a product, follow th
 
 
 > [!IMPORTANT]
-To configure the *Restrict to sales unit* functionality for a product, follow these steps.
-
+> To configure the *Restrict to sales unit* functionality for a product, follow these steps.
 
 ## Example: Releasing a sales order with conversion of units
-
 
 - Product *item-one* has *Pieces* as the inventory unit.
 - The sales unit is *Box*.
