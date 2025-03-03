@@ -2,7 +2,7 @@
 title: Printing configuration for Sales Bank Book Bolivia
 description: Learn about the required configuration for printing a Sales Bank Book report for Bolivia. 
 author: Cpicon85
-ms.date: 02/27/2025
+ms.date: 03/03/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
