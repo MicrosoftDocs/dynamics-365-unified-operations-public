@@ -286,7 +286,7 @@ After the service update is applied by Microsoft, you receive a notification tha
 
 ### Can an environment be brought back to its previous state if there are issues after a service update is applied?
 
-As with other code promotions, rollbacks can't be done after a service update is applied. Microsoft uses flighting and features to help mitigate the risk of updates and enable rapid enabling and disabling of new functionality. For more informatoin, see [Feature management and flighting](/fin-ops/get-started/feature-management/feature-management-overview.md#feature-management-and-flighting).
+As with other code promotions, rollbacks can't be done after a service update is applied. Microsoft uses flighting and features to help mitigate the risk of updates and enable rapid enabling and disabling of new functionality. For more informatoin, see [Feature management and flighting](../../fin-ops/get-started/feature-management/feature-management-overview.md#feature-management-and-flighting).
 
 ### If there's a failure, can I reschedule the update to be automatically applied?
 
