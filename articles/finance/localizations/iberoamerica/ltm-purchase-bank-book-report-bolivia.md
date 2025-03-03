@@ -29,13 +29,13 @@ Before you can generate the report, the following prerequisites must be met:
 - Download the specific report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md). 
 - Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Create a tax application to use on the report, for example, Tax application ID **LB** Tax application description **Libro Bancarizacion**. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
-- Create Field list 10, and in the reference code section add two options **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
+- Create a field called **List 10**, and in the reference code section add two codes **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 
 ## Common configurations for all transaction types
 
 -	Create a document class called **orden de pago**, and enable Field list 10 as required. Field list 10 lets you indicate if the transaction should be included or not in the report.
--	You must configure a document class payment media called **payment documents**, and configure the tax application code accordingly if it's a check, a bank transfer, a deposit, etc. The Document class type for each payment media must have selected **unique per entry**. Learn more in [Document class type configuration](ltm-core-document-class-type.md).
-- Configure Latam extension in Bank group field of the bank account associated with the payment media. That will bring the information related to Bank account number and tax identification.
+-	You must configure a document class payment media called **payment documents**, and configure the tax application code accordingly if it's a check, a bank transfer, a deposit, etc. Select **unique per entry** for the document class type of each payment media. Learn more in [Document class type configuration](ltm-core-document-class-type.md).
+- Set up a bank account and complete the settings in the **LATAM** section.
   
 ### Configure payment of invoice transactions
 
@@ -43,12 +43,12 @@ Before making payments for supplier invoices, verify that the Document class set
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** select a document class that represent invoice **Factura** and check that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md).
 1. On the Action pane, select **Tax application**.
-   1. In the **Tax application ID** value that has been created **LB**.
+   1. In the **Tax application ID** field, verify the **LB** value is entered.
    1. In the **Tax application code** field, enter **4** as the transaction type.
    1. In the **letter code** field, enter **FC** for invoices.
    1. In the **user define field 2** field, enter **2** as type supporting document.
 
-In case of successive tract contract you might change **letter code** field to **CS** and enable concept 3 field of the document class to add contract number.
+In case of a successive tract contract, you might change **letter code** field to **CS** and enable concept 3 field of the document class to add contract number.
 
 ### Configure other payments 
 
@@ -56,7 +56,7 @@ When you need to make payments to suppliers for purchases that do not have an in
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and select a document class that represents a supporting document for purchase with withholdings **Compras con retencion**. Verify that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md)
 1. On the Action Pane, select **Tax application**.
-   1. In the **Tax application id** value that has been created **LB**.
+   1. In the **Tax application ID** field, verify the **LB** value is entered.
    1. In the **Tax application code** field, enter **1** as transaction type.
    1. In the **user define field 2** field, enter **410** as type supporting document.
 
@@ -64,11 +64,11 @@ When you need to make payments to suppliers for real estate purchases, verify th
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**, and select a document class that represents a supporting document for real estate purchases **Compra de inmuebles**. Verify that you have completed the required fields for this type of document. Learn more in [Configure purchase invoices for Bolivia](ltm-Configure-invoices-Bolivia.md).
 1. On the Action Pane, select **Tax application**.
-   1. In the **Tax application id** value that has been created **LB**.
+   1. In the **Tax application ID** field, verify the **LB** value is entered.
    1. In the **Tax application code** field, enter **2** as transaction type.
    1. In the **user define field 2** field, enter **430** as type supporting document.    
 
-In case of successive tract contract you might add **letter code** field to **CS** and enable concept 3 field of the document class to add contract number.
+In case of successive tract contract you might add a **Letter code** field with the value of **CS**. Next, in the **CONCEPTS** section, in the **Concept label 3** field add the contract number.
 
 ## Set up application-specific parameters
 
