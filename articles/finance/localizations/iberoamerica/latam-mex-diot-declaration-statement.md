@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 03/04/2025
 ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
@@ -110,7 +110,7 @@ To generate the DIOT declaration statement, click **Tax** &gt; **Declarations** 
 </tr>
 <tr class="even">
 <td>Declare fiscal effects</td>
-<td>The <strong>Declare fiscal effects</strong> field is mandatory. Starting from the year 2025 it is mandatory to affirm that fiscal effects were given to the receipts that support the transactions carried out with the supplier. Select <strong>Yes</strong> to affirm that fiscal effects were given to the receipts that support the transactions carried out with the suppliers in the reporting period.</td>
+<td>The <strong>Declare fiscal effects</strong> field is mandatory. Starting in the year 2025 it is mandatory to affirm that fiscal effects were given to the receipts that support the transactions carried out with the supplier. Select <strong>Yes</strong> to affirm that fiscal effects were given to the receipts that support the transactions carried out with the suppliers in the reporting period.</td>
 </tr>
 </tbody>
 </table>
