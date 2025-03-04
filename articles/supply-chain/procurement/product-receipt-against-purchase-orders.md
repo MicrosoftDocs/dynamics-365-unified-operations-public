@@ -44,6 +44,26 @@ After the product receipt has been processed on the PO, the PO status is set to 
 
 You can access this page from the **Receipt** action group on the **Purchase order** page. The information in the journals includes details about the quantities, dates, and dimensions.
 
+## Auto posting product receipt
+
+In order automatically post product receipts for multiple purchase orders, users need to navigate to Procurement and sourcing -> Purchase orders-> Receiving products -> Post Product receipt. In this posting product receipt page user need to click on Setting->Select
+
+![image](https://github.com/user-attachments/assets/de96cbf0-0a5b-4fdc-81eb-91981da86e48)
+
+User can set the criteria by selecting appropriate values in the table, derived table and field columns. Click on "OK"
+Users need to configure the batch job Batch processing overview | Microsoft Learn and provide the product receipt identifier also for every selected line to post the product receipts for respective purchase order lines.
+
+During product receipt, you must specify a product receipt identifier, which is typically a reference to the packing slip from the supplier. This identifier is required for accounting, because it enables checks or audits of supplier packing slips against what has been received, and the accounted inventory or expense.
+
+After the product receipt has been processed on the PO, the PO status is set to Received to indicate that the invoice can be processed for the order.
+
+Users can also "correct" or "cancel" the product receipts from the product receipt journal form.
+Note: You can only reduce the received quantity while trying to correct the product receipt. To raise the quantity, post a new product receipt journal.
+
+## Auto posting product receipts in case of WMS processes:
+Warehouse handling of inbound loads for purchase and inbound shipment orders - Supply Chain Management | Dynamics 365 | Microsoft Learn
+
+
 ## Related information
 
 - [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md)
