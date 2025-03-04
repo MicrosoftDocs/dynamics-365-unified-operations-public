@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create and post free text invoices for customers using OIOUBL electronic invoicing for Denmark with Microsoft Dynamics 365 Finance.
+This article describes how to create and post free text invoices for customers using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing for Denmark with Microsoft Dynamics 365 Finance.
 
 The following procedures walk you through how to create and post free text invoices for customers using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing. They were created using the demo data company USMF with a legal entity primary address in Denmark.
 
