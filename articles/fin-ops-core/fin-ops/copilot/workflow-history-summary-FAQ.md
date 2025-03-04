@@ -23,6 +23,8 @@ Workflow history summary is a feature in Dynamics 365 Finance that is powered by
 
 The summary uses existing workflow history information in a customer's Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
+[!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
+
 ## What is Workflow history summary's intended use?
 
 Workflow approvers use this feature to view a summary of the workflow on the **Workflow history** page. This summary helps improve efficiency by bringing the most important information to the top of the page in a concise form. Recent workflow history consists of the workflow's most recent approve or reject request change records or resubmit records.
