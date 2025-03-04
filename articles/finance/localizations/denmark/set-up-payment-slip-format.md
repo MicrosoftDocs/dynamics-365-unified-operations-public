@@ -4,7 +4,7 @@ description: This article describes how to attach printed payment slips to invoi
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 02/04/2025
+ms.date: 03/04/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
