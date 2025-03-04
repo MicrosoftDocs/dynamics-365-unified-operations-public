@@ -48,7 +48,7 @@ To use this feature, the user must be assigned an employee role in Dynamics 365 
 
 The **Summary by Copilot** field appears in the **My information** tab of the **Employee self service** workspace. The summary includes the current time off balances for leave types with a carry forward rule associated. It also includes the time off subject to forfeiture based on current time off balances and upcoming time off requests.
 
-[!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
+[!INCLUDE[rai-feedback-mechanism.md](../includes/rai-feedback-mechanism.md)]
 
 ##See also
 [Employee self service leave summary FAQ](ess-transp-faq.md)
