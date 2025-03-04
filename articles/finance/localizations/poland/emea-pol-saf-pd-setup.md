@@ -108,15 +108,12 @@ To report required account tags in ZOiS section of JPK_KR_PD, you can use **Fina
 
 You must create dedicated **Financial dimension** for each of the account tag type applicable in your organization: S_12_1, S_12_2, S_12_3. For each of the created **Financial dimension** create all the account tag values applicable to your organization according to regulations in Poland as **Financial dimension values**.
 
-When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information how to create and use Financial dimension set, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new).
+When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new).
 
 > [!IMPORTANT]
-> When you create the **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report it is important that you add the Main account as the first dimension in the set, S_12_1 as the second, S_12_2 if applicable as the next after the S_12_1 and the S_12_3 next to the S_12_2 if used or S_12_1 if the S_12_2 is not used. The order of dimensions in the dimension set is crucial for proper reporting of account tags in the ZOiS and Dziennik sections of the JPK_KR_PD report.
+> When you create the **Financial dimension set** dedicated to ZOiS section of the JPK_KR_PD report it is important that you add the **Main account** as the first dimension in the set, S_12_1 as the second, S_12_2 if applicable as the next after the S_12_1 and the S_12_3 next to the S_12_2 if used or S_12_1 if the S_12_2 is not used. The order of dimensions in the dimension set is crucial for proper reporting of account tags in the ZOiS and Dziennik sections of the JPK_KR_PD report.
 
 ### <a id="consolidation-accounting-groups"></a>Option 2: Using Consolidation accounting groups
-
-
-In addition to this requirement, if your organization uses a non-standard chart of accounts in Poland, the SAF Accounting Books Income Tax - JPK_KR_PD must reflect information that is aligned with the standard chart of accounts that is used in Poland.
 
 Use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association between main accounts in Finance and applicable values of **S_12_1**, **S_12_2**, **S_12_3**, and standard main accounts in Poland.
 
@@ -124,6 +121,9 @@ Use the [Consolidation account groups and additional consolidation accounts](../
 1. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify the applicable value of the **S_12_3** enumeration. This value is reported in the **S_12_3** element in the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
 You must create as many consolidation account groups as are required to cover the different account tag enumeration lists that are applicable to your organization's business operations. If your organization uses a non-standard chart of accounts in Poland, you should create a separate consolidation account group to establish the association between the main accounts and the standard chart of accounts that is used in Poland.
+
+
+In addition to this requirement, if your organization uses a non-standard chart of accounts in Poland, the SAF Accounting Books Income Tax - JPK_KR_PD must reflect information that is aligned with the standard chart of accounts that is used in Poland.
 
 ## <a id="asp-setup"></a>Configure application-specific parameters for the format of the report
 
