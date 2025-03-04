@@ -3768,12 +3768,18 @@
                           href: localizations/poland/emea-pol-vdek-reporting.md
                         - name: Details of specific business scenarios in the JPK-V7 report
                           href: localizations/poland/emea-pol-vdek-scenarios.md
+                    - name: SAF Accounting Books Income Tax - JPK_KR_PD
+                      items:
+                        - name: SAF Accounting Books Income Tax - JPK_KR_PD overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
+                        - name: Prepare for JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-setup.md
+                        - name: JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-reporting.md
                     - name: Standard audit file (JPK)
                       items:
                         - name: Standard audit file (JPK) overview
                           href: localizations/poland/emea-pol-standard-audit-file-saf.md
-                        - name: SAF Accounting Books Income Tax - JPK_KR_PD
-                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
                         - name: SAF Bank statement file - JPK_WB
                           href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
                         - name: SAF Inventory file - JPK_MAG
