@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create and post a sales order invoice for a customer using OIOUBL electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
+This article describes how to create and post a sales order invoice for a customer using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 
 The following procedures walk you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. It is based on OIOUBL e-invoice example which is common for Denmark, Austria, and Norway, and was created using the demo data company USMF with a legal entity primary address in Denmark.
 
