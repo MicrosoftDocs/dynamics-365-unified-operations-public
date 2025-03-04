@@ -15,18 +15,21 @@ ms.dyn365.ops.version: Version 1611
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ---
 
-## Prepare for JPK_KR_PD reporting
+# Prepare for JPK_KR_PD reporting
 
 Before you can generate a SAF Accounting Books Income Tax - JPK_KR_PD, you must complete the following setup.
 
-1. [Set up a sales tax authority](#tax-authorities).
-2. [Import Electronic reporting (ER) configurations](#er-import).
-3. [Set up the ER format in General ledger parameters for preview](#er-format-setup).
-4. [Set up consolidation accounting groups](#consolidation-accounting-groups).
-5. [Configure application-specific parameters for the format of the report](#asp-setup).
-6. [Set up Electronic messaging processing](#em-import).
+1. [Set up a sales tax authority](#tax-authorities)
+2. [Import Electronic reporting (ER) configurations](#er-import)
+3. [Import a package of data entities that includes a predefined electronic message setup](#em-import)
+4. [Set up account tags for trial balance (S_12_1, S_12_2, S_12_3 fields of ZOiS)](#acc-tags)
+   - [Option 1: Using Financial dimensions and Financial dimension set](#fin-dim)
+   - [Option 2: Using Consolidation accounting groups](#consolidation-accounting-groups)
+5. [Set up Financial dimension set and Financial dimensions for Income Tax Register RPD](#rpd)
+6. [Configure application-specific parameters for the format of the report](#asp-setup)
+7. [Set up General ledger parameters for preview the JPK_KR_PD in Excel](#er-format-setup)
 
-### <a id="tax-authorities"></a>Set up a sales tax authority
+## <a id="tax-authorities"></a>Set up a sales tax authority
 
 You can find general information about how to set up a sales tax authority in [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
 
@@ -37,7 +40,7 @@ To set up the **Authority identification** for sales tax authorities, follow the
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 2. In the **Authority identification** field, specify the code of the tax office competent for the taxpayer's registered office. This code will be reported in the **\<KodUrzedu\>** field of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
-### <a id="er-import"></a>Import ER configurations
+## <a id="er-import"></a>Import ER configurations
 
 In Microsoft Dynamics 365 Finance, import the following ER configurations from Dataverse. Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -45,24 +48,45 @@ In Microsoft Dynamics 365 Finance, import the following ER configurations from D
 |---|---|---|
 | Standard Audit File (SAF-T) | Model | The common data model for different audit reports. |
 | General ledger data model mapping | Model mapping | The model mapping that provides general source mapping for several electronic reports for Poland. |
-| JPK_KR_PD XML (PL) - *Preview* | Format | (Preview) Standard Audit File Accounting Books Income Tax, JPK_KR_PD. |
-
-> [!NOTE]
-> The **JPK_KR_PD XML (PL) - Preview** ER configuration is provided only for early adoption and preparation for the new reporting requirements. This preview doesn't include the RDP component and is subject to further updates. It will eventually be replaced with the finalized **JPK_KR_PD XML (PL)** format. We recommend that users use this version only for preliminary familiarization.
+| JPK_KR_PD XML (PL) | Format | Standard Audit File Accounting Books Income Tax, JPK_KR_PD. |
+| JPK_KR_PD Excel (PL) | Format | Preview format for Standard Audit File Accounting Books Income Tax. |
 
 Import the most recent versions of the configurations. The version description usually includes the number of the Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!IMPORTANT]
-> If your organization is using other JPK reports, and the **Default for model mapping** option is set to **Yes** for the **Standard Audit File model mapping** configuration, you can keep that setting. In this case, when the **JPK_KR_PD XML (PL)** format is run from the **SAF Accounting Book Income Tax** menu item, it automatically uses the **General ledger data model mapping** configuration. To run the **JPK_KR_PD XML (PL)** format from other places in Finance, set the **Default for model mapping** option to **Yes** for the **General ledger data model mapping** configuration instead.
+> If your organization is using other JPK reports, and the **Default for model mapping** option is set to **Yes** for the **Standard Audit File model mapping** configuration, you can keep that setting. In this case, when the **JPK_KR_PD XML (PL)** or **JPK_KR_PD Excel (PL)** format is run from the **SAF Accounting Book Income Tax** menu item or from Electronic messages page (using JPK_KR_PD Electronic message processing), it automatically uses the **General ledger data model mapping** configuration. To run the **JPK_KR_PD XML (PL)** or **JPK_KR_PD Excel (PL)** format from other places in Finance, set the **Default for model mapping** option to **Yes** for the **General ledger data model mapping** configuration instead.
 
-### <a id="er-format-setup"></a>Set up the ER format in General ledger parameters
+## <a id="em-import"></a>Import a package of data entities that includes a predefined electronic message setup
 
-To set up the ER format in General ledger parameters, follow these steps.
+The process of setting up the Electronic messaging functionality for JPK_KR_PD reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
-1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the **JPK_KR_PD XML (PL)** ER format.
+1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_KR_PD EM setup.zip** in the list of data package files, and download it to your computer.
+2. After the **PL JPK_KR_PD EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK_KR_PD report from, and then go to **Workspaces** \> **Data management**.
 
-### <a id="consolidation-accounting-groups"></a>Set up consolidation accounting groups
+    Before you import setup data from the package of data entities, you must make sure that the data entities in your application are refreshed and synced.
+
+3. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+4. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+5. Before the data entities are used for the first time to import the data from the package, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch.
+6. Save the mapping.
+7. Repeat steps 3 through 6 for each data entity in the package.
+
+For more information about Data management, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+
+You must now import data from the **PL JPK_KR_PD EM setup.zip** file into the selected company.
+
+1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
+2. On the **Select entities** FastTab, select **Add file**.
+3. Select **Upload and add**, select the **PL JPK_KR_PD EM setup.zip** file on your computer, and upload it.
+4. When entities from the package are listed in the grid, select **Close**.
+5. On the Action Pane, select **Import** to start to import data from the data entities.
+
+You will receive a notification in **Messages**, or you can manually refresh the page to view the progress of the data import. When the import process is completed, the **Execution summary** page shows the results.
+
+> [!IMPORTANT]
+> Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
+
+## <a id="acc-tags"></a>Set up account tags for trial balance: S_12_1, S_12_2, S_12_3 fields of ZOiS
 
 Depending on the business needs of your organization, you might have to include the following information in the **ZOiS** (Turnover and balance statement) part of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
@@ -71,6 +95,26 @@ Depending on the business needs of your organization, you might have to include 
 | S_12_1 | Account tag resulting from the regulation on the additional scope of data to be supplemented in the accounting records (optional field for entities applying IFRS) | Znacznik konta wynikający z rozporządzenia w sprawie dodatkowego zakresu danych, o które należy uzupełnić prowadzone księgi rachunkowe (pole opcjonalne dla jednostek stosujących MSSF) |
 | S_12_2 | Additional account tag resulting from the regulation on the additional scope of data to be supplemented in the accounting records (optional field) | Dodatkowy znacznik konta wynikający z rozporządzenia w sprawie dodatkowego zakresu danych, o które należy uzupełnić prowadzone księgi rachunkowe (pole opcjonalne) |
 | S_12_3 | Additional account tag resulting from the regulation on the additional scope of data to be supplemented in the accounting records (PD) (optional field) | Dodatkowy znacznik konta wynikający z rozporządzenia w sprawie dodatkowego zakresu danych, o które należy uzupełnić prowadzone księgi rachunkowe (PD) (pole opcjonalne) |
+
+There are two options supported in Finance to report account tags in JPK_KR_PD:
+- *Option 1: Using Financial dimensions and Financial dimension set*. In this approach, necessary account tags are set up as **Financial dimensions** within the system. These dimensions are applied at the ledger transaction level, ensuring that each transaction carries the appropriate classification. This method provides flexibility, as it allows account tagging at the transaction level, enabling detailed financial analysis and reporting. 
+- *Option 2: Using Consolidation accounting groups*. This approach requires creating **Consolidation account groups**, with the number of groups matching the different account tag enumeration lists applicable to the organization’s operations. Account tags are directly assigned to each main account in the system. Unlike the first option, this method does not require additional attributes at the ledger transaction level, simplifying the tagging process.
+
+The decision on which option to use depends on your organization’s structure, reporting requirements, and the level of detail needed for financial tracking.
+
+### <a id="fin-dim"></a>Option 1: Using Financial dimensions and Financial dimension set
+
+To report required account tags in ZOiS section of JPK_KR_PD, you can use **Financial dimensions**. For more information about how to create and use **Financial dimensions** in Finance, see [Financial dimensions](../general-ledger/financial-dimensions).
+
+You must create dedicated **Financial dimension** for each of the account tag type applicable in your organization: S_12_1, S_12_2, S_12_3. For each of the created **Financial dimension** create all the account tag values applicable to your organization according to regulations in Poland as **Financial dimension values**.
+
+When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information how to create and use Financial dimension set, see [Financial dimension sets](../general-ledger/financial-dimension-sets). The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../general-ledger/financial-dimension-set-new).
+
+> [!IMPORTANT]
+> When you create the **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report it is important that you add the Main account as the first dimension in the set, S_12_1 as the second, S_12_2 if applicable as the next after the S_12_1 and the S_12_3 next to the S_12_2 if used or S_12_1 if the S_12_2 is not used. The order of dimensions in the dimension set is crucial for proper reporting of account tags in the ZOiS and Dziennik sections of the JPK_KR_PD report.
+
+### <a id="consolidation-accounting-groups"></a>Option 2: Using Consolidation accounting groups
+
 
 In addition to this requirement, if your organization uses a non-standard chart of accounts in Poland, the SAF Accounting Books Income Tax - JPK_KR_PD must reflect information that is aligned with the standard chart of accounts that is used in Poland.
 
@@ -81,7 +125,7 @@ Use the [Consolidation account groups and additional consolidation accounts](../
 
 You must create as many consolidation account groups as are required to cover the different account tag enumeration lists that are applicable to your organization's business operations. If your organization uses a non-standard chart of accounts in Poland, you should create a separate consolidation account group to establish the association between the main accounts and the standard chart of accounts that is used in Poland.
 
-### <a id="asp-setup"></a>Configure application-specific parameters for the format of the report
+## <a id="asp-setup"></a>Configure application-specific parameters for the format of the report
 
 Application-specific parameters of the **JPK_KR_PD** format in ER facilitate the mapping of your financial data to the required values that are defined by the **JPK_KR_PD** schema.
 
@@ -97,7 +141,7 @@ To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in 
 1. Repeat steps 5 through 7 for each additional lookup field.
 1. When all the lookup fields are set up, select **Completed** in the **State** field, and save the configuration.
 
-#### OpisDziennika - Journal description
+### OpisDziennika - Journal description
 
 Use the free-text **OpisDziennika** lookup field to define the mapping of the journal description of general journal entries in Finance to the values that will be reported in the **D_2** field of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
@@ -113,7 +157,7 @@ The following condition is available for mapping in this lookup field.
 
 As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
 
-#### ZOiSTyp - Turnover and balance statement type
+### ZOiSTyp - Turnover and balance statement type
 
 Use the **ZOiSTyp** lookup field to define the type of ZOiS that is applicable for your organization. In the **Lookup result** column, select **ZOiSTyp**. Then, in the **Turnover and balance statement type** column, select which ZOiS type is applicable for your organization. The following values are available.
 
@@ -128,11 +172,11 @@ Use the **ZOiSTyp** lookup field to define the type of ZOiS that is applicable f
 | ZOiS7 | Turnover and balance statement for other entities | Zestawienie obrotów i sald dla jednostek pozostałych |
 | ZOiS8 | Turnover and balance statement for entities applying IFRS| Zestawienie obrotów i sald dla jednostek stosujących MSSF |
 
-#### KodUrzedu - Tax authority identification
+### KodUrzedu - Tax authority identification
 
 Use the **KodUrzedu** lookup field to define which tax authority should be reported in the **\<KodUrzedu\>** field. In the **Lookup result** column, select **KodUrzedu**. Then, in the **Tax authority identification** column, select which of the tax authorities that are set up in your legal entity should be used on the report.
 
-#### PodatnikZnacznik - Taxpayer tag
+### PodatnikZnacznik - Taxpayer tag
 
 Use the **PodatnikZnacznik** lookup field to specify the tag that is applicable to your organization. In the **Lookup result** column, select **PodatnikZnacznik**. Then, in the **Taxpayer tag** column, select which tag is applicable to your organization. The following values are available.
 
@@ -142,7 +186,7 @@ Use the **PodatnikZnacznik** lookup field to specify the tag that is applicable 
 | IFRS | Tag for taxpayer using IFRS | Znacznik dla podatnika stosującego MSSF |
 | StandardPL | Standart Polish CIT | Standardowy polski CIT |
 
-#### ZnacznikKonta - Account tags and Polish chart of accounts
+### ZnacznikKonta - Account tags and Polish chart of accounts
 
 Use the **ZnacznikKonta** lookup field to define which of the previously set up consolidation accounting groups that are applicable to your organization should be reported in which fields of the SAF Accounting Books Income Tax - JPK_KR_PD. In the **Lookup result** column, select the **PL_CoA** report tag for the standard chart of accounts. Then, in the **Consolidation group** column, select which consolidation accounting group should be used for the selected tag. The following lookup result values are available.
 
@@ -153,7 +197,7 @@ Use the **ZnacznikKonta** lookup field to define which of the previously set up 
 | S_12_3 | Additional account tag resulting from the regulation on the additional scope of data to be supplemented in the accounting records (PD) (optional field) | Dodatkowy znacznik konta wynikający z rozporządzenia w sprawie dodatkowego zakresu danych, o które należy uzupełnić prowadzone księgi rachunkowe (PD) (pole opcjonalne) |
 | PL_CoA | Consolidation account groups for Polish chart of accounts | Grupy kont konsolidacyjnych dla polskiego planu kont | 
 
-#### RodzajDowodu - Accounting voucher type
+### RodzajDowodu - Accounting voucher type
 
 Use the free-text **RodzajDowodu** lookup field to define the mapping of the type of accounting voucher of general journal entries in Finance to the values that should be reported in the **D_5** field of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
@@ -169,36 +213,11 @@ The following condition is available for mapping in this lookup field.
 
 As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
 
-### <a id="em-import"></a>Set up Electronic messaging processing
+## <a id="er-format-setup"></a>Set up General ledger parameters for preview the JPK_KR_PD in Excel
 
-The process of setting up the Electronic messaging functionality for JPK-V7 reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
+Users of a legal entity with primary address in Poland can review their JPK_KR_PD by using the **General ledger** > **Inquires and reports** > **Standard Audit File for Tax (SAF-T)** > **SAF Accounting Books Income Tax** menu item. However the RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing). We receommend using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
 
-1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_V7 EM setup.zip** in the list of data package files, and download it to your computer.
-2. After the **PL JPK_V7 EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK-V7 report from, and then go to **Workspaces** \> **Data management**.
+To set up the ER format that is run by the **SAF Accounting Books Income Tax** menu item, set up **General ledger parameters** using these steps.
 
-    Before you import setup data from the package of data entities, you must make sure that the data entities in your application are refreshed and synced.
-
-3. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
-4. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
-5. Before the data entities are used for the first time to import the data from the package, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch.
-6. Save the mapping.
-7. Repeat steps 3 through 6 for each data entity in the package.
-
-For more information about Data management, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
-
-You must now import data from the **PL JPK_V7 EM setup.zip** file into the selected company.
-
-1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
-2. On the **Select entities** FastTab, select **Add file**.
-3. Select **Upload and add**, select the **PL JPK_V7 EM setup.zip** file on your computer, and upload it.
-4. When entities from the package are listed in the grid, select **Close**.
-5. On the Action Pane, select **Import** to start to import data from the data entities.
-
-    ![PL JPK_V7 EM setup page](../media/import-data-entities.jpg)
-
-You will receive a notification in **Messages**, or you can manually refresh the page to view the progress of the data import. When the import process is completed, the **Execution summary** page shows the results.
-
-![Execution summary page](../media/data-entities-imported.jpg)
-
-> [!IMPORTANT]
-> Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the **JPK_KR_PD Excel (PL)** ER format.
