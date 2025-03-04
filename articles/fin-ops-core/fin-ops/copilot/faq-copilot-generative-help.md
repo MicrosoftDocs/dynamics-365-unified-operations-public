@@ -33,6 +33,8 @@ The capabilities of *Generative help and guidance with Copilot* include providin
 
 Future enhancements might allow direct navigation and suggest actions within the application to further streamline user tasks.
 
+If an Administrator has enabled [user feedback for Copilot and related experiences](../,,/dev-itpro/copilot/enable-copilot-feedback.md), users can share their feedback directly with Microsoft. Learn more about how Microsoft's [in-prod9/dev-itpro/copilot/enable-copilot-feedback0uct feedback system](/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide) works and how to [../../enable user feedback for Copilot and related experiences] in finance and operations apps.
+
 ## What is the intended use of Generative help and guidance with Copilot?
 
 The intended use of *Generative help and guidance with Copilot* is to provide users with an interactive, AI-powered support tool within finance and operations apps.
