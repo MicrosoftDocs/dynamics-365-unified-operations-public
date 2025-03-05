@@ -25,9 +25,10 @@ Before you can generate a SAF Accounting Books Income Tax - JPK_KR_PD, you must 
 4. [Set up account tags for trial balance (S_12_1, S_12_2, S_12_3 fields of ZOiS)](#acc-tags)
    - [Option 1: Using Financial dimensions and Financial dimension set](#fin-dim)
    - [Option 2: Using Consolidation accounting groups](#consolidation-accounting-groups)
-5. [Set up Financial dimension set and Financial dimensions for Income Tax Register RPD](#rpd)
-6. [Configure application-specific parameters for the format of the report](#asp-setup)
-7. [Set up General ledger parameters for preview the JPK_KR_PD in Excel](#er-format-setup)
+5. [Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)](#rpd)
+6. [Set up standard chart of accounts (optional, for companies with not Polish chart of accounts)](#standard-coa)
+7. [Configure application-specific parameters for the format of the report](#asp-setup)
+8. [Set up General ledger parameters for preview the JPK_KR_PD in Excel](#er-format-setup)
 
 ## <a id="tax-authorities"></a>Set up a sales tax authority
 
@@ -115,15 +116,22 @@ When all the applicable **Financial dimensions** are created, set up **Financial
 
 ### <a id="consolidation-accounting-groups"></a>Option 2: Using Consolidation accounting groups
 
-Use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association between main accounts in Finance and applicable values of **S_12_1**, **S_12_2**, **S_12_3**, and standard main accounts in Poland.
+When chart of accounts (CoA) of your legal entity contains enough details to cover all the account tags applicable to your organization, use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association between main accounts in Finance and applicable values of **S_12_1**, **S_12_2**, **S_12_3**.
 
 1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). For example, create a group that is named **S_12_3**.
-1. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify the applicable value of the **S_12_3** enumeration. This value is reported in the **S_12_3** element in the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD.
+2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify the applicable value of the **S_12_3** enumeration. This value is reported in the **S_12_3** element in the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD.
 
-You must create as many consolidation account groups as are required to cover the different account tag enumeration lists that are applicable to your organization's business operations. If your organization uses a non-standard chart of accounts in Poland, you should create a separate consolidation account group to establish the association between the main accounts and the standard chart of accounts that is used in Poland.
+You must create as many consolidation account groups as are required to cover the different account tag enumeration lists that are applicable to your organization's business operations. 
 
+## <a id="rpd"></a>Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)
+
+## <a id="standard-coa"></a>Set up standard chart of accounts (optional, for companies with not Polish chart of accounts)
+
+use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association between main accounts in Finance and standard main accounts in Poland.
 
 In addition to this requirement, if your organization uses a non-standard chart of accounts in Poland, the SAF Accounting Books Income Tax - JPK_KR_PD must reflect information that is aligned with the standard chart of accounts that is used in Poland.
+
+If your organization uses a non-standard chart of accounts in Poland, you should create a separate consolidation account group to establish the association between the main accounts and the standard chart of accounts that is used in Poland.
 
 ## <a id="asp-setup"></a>Configure application-specific parameters for the format of the report
 
