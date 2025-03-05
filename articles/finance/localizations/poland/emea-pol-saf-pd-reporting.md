@@ -18,7 +18,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 In Finance, you have two options for generating the SAF Accounting Books Income Tax - JPK_KR_PD report, depending on your needs:
 
-- *Option 1: Using EM Processing*. This method provides the full scope of the report, including the Tax Register (RPD) section. It also allows you to preview the file in Excel, making it easier to review and validate data before submission.
+- *Option 1: Using electronic messages*. This method provides the full scope of the report, including the Tax Register (RPD) section. It also allows you to preview the file in Excel, making it easier to review and validate data before submission.
 - *Option 2: Using the Standard Audit File Accounting Books Income Tax menu item*. This option offers a quick way to review the accounting book and triale balance sections of the report.
 
 ## Generate JPK_KR_PD from Electronic messages
