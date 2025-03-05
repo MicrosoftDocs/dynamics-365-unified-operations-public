@@ -255,7 +255,7 @@ As the last two lines, add lines that have the conditions **Not blank** and **Bl
 
 ## <a id="er-format-setup"></a>Set up General ledger parameters for preview the JPK_KR_PD in Excel
 
-Users of a legal entity with primary address in Poland can review their JPK_KR_PD by using the **General ledger** > **Inquires and reports** > **Standard Audit File for Tax (SAF-T)** > **SAF Accounting Books Income Tax** menu item. However the RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing). We receommend using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
+Users of a legal entity with primary address in Poland can review their JPK_KR_PD by using the **General ledger** > **Inquires and reports** > **Standard Audit File for Tax (SAF-T)** > **SAF Accounting Books Income Tax** menu item. However the RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing). We recommend using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
 
 To set up the ER format that is run by the **SAF Accounting Books Income Tax** menu item, set up **General ledger parameters** using these steps.
 
