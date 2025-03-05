@@ -30,7 +30,7 @@ The JPK_KR_PD reporting process is predefined by the data entities that are [del
 The **PL JPK_KR_PD EM setup.zip** package provides a setup for the JPK_KR_PD processing that supports the process of JPK_KR_PD reporting. This process consists of the following steps:
 
 - **Tworzyć (Create)**: Create an electronic message for JPK_KR_PD reporting.
-- **Oblicz RPD JPK_KR_PD (Calculate RPD JPK_KR_PD)**: Calculate the values of the RPD figures based on **Financial dimension set**.
+- **Oblicz RPD (Calculate RPD JPK_KR_PD)**: Calculate the values of the RPD figures based on **Financial dimension set**.
 - **Podgląd w programie Excel (Preview in Excel format)**: Generate the JPK_KR_PD report in Microsoft Excel format for preview.
 - **Wygeneruj plik (Generate file)**: Generate an XML file in JPK_KR_PD format.
 - **Zmień status (Change status)**: Change the status of the electronic message. 
