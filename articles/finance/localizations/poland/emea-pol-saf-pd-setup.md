@@ -165,15 +165,21 @@ Application-specific parameters of the **JPK_KR_PD** format in ER facilitate the
 
 To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps.
 
-1. Open the **Electronic reporting** workspace**.
-1. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD XML (PL)**.
-1. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
-1. On the left side of **Application specific parameters** page, select the latest version of the format.
-1. On the **Lookups** FastTab, select a lookup field in the list. Detailed descriptions of all the lookup fields of the **JPK_KR_PD XML (PL)** format are provided after this procedure.
-1. On the **Conditions** FastTab, define the required conditions, and specify the values in the **Lookup result** column.
-1. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
-1. Repeat steps 5 through 7 for each additional lookup field.
-1. When all the lookup fields are set up, select **Completed** in the **State** field, and save the configuration.
+1. Open the **Electronic reporting** workspace.
+2. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD XML (PL)**.
+3. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
+4. On the left side of **Application specific parameters** page, select the latest version of the format.
+5. On the **Lookups** FastTab, select a lookup field in the list. Detailed descriptions of all the lookup fields of the **JPK_KR_PD XML (PL)** format are provided after this procedure.
+6. On the **Conditions** FastTab, define the required conditions, and specify the values in the **Lookup result** column.
+7. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
+8. Repeat steps 5 through 7 for each additional lookup field.
+9. When all the lookup fields are set up, select **Completed** in the **State** field, and save the configuration.
+10. Click **Export** button on the Action pane to export the application-specific parameters as an XML file and close the **Application specific parameters** page.
+11. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD Excel (PL)**.
+12. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
+13. On the left side of **Application specific parameters** page, select the latest version of the format.
+14. Click **Import** button on the Action pane and select the XML files saved on the step 10.
+15. Select **Completed** in the **State** field, and save the configuration.
 
 ### OpisDziennika - Journal description
 
