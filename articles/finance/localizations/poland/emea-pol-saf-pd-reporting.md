@@ -49,8 +49,15 @@ If you [configured Finance to automatically calculate the amounts](emea-pol-saf-
 
 1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
 2. Select **JPK_KR_PD**, and then, select the electronic message created by the previouse **Tworzyć JPK_KR_PD** action and click **Collect data** button.
-3. In the **Run processing** dialog box, the **Oblicz RPD JPK_KR_PD** action is selected. Click **OK** button to proceed. The process of RPD figures calculation uses the **Performance enhancement for general ledger dimension set balance calculation** feature, thus the performance should be similar to performance of the trial balance inquiry. However, you can enable calculation in batch mode if necessary.
-4. When the **Oblicz RPD JPK_KR_PD** action is completed, the values of **Additional fields** of the electronic message are calculated. You can review then on the **Message additional fields** FastTab.
+3. In the **Run processing** dialog box, the **Oblicz RPD JPK_KR_PD** action is selected. Click **OK** button to proceed.
+4. In the **Additional fields evaluation parameters** dialog box, review the parameters. You can adjust the parameters if necessary. The process of RPD figures calculation uses the **Performance enhancement for general ledger dimension set balance calculation** feature, thus the performance should be similar to performance of the trial balance inquiry. However, you can enable calculation in batch mode if necessary. Click **OK** to proceed.
+6. When the **Oblicz RPD JPK_KR_PD** action is completed, the values of **Additional fields** of the electronic message are calculated. You can review then on the **Message additional fields** FastTab.
+
+You can review the parameters of the executable class that were specified for each execution of the **Oblicz RPD JPK_KR_PD** action.
+
+1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
+2. Select **JPK_KR_PD**, and then, select the electronic message, expand the **Action log** FastTab, select the **Oblicz RPD JPK_KR_PD** action for which you want to review the parameters.
+3. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page to see the parameters that were used by the **Oblicz RPD JPK_KR_PD** action.
 
 ### Generate the JPK_KR_PD report in Microsoft Excel format for preview - Podgląd w programie Excel
 
