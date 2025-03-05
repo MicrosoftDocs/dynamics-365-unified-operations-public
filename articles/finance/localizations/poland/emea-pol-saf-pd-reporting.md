@@ -127,7 +127,7 @@ Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File f
 | To date | Specify the last date to export reporting data for. |
 | Print with zero balances | By default, the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD includes main accounts that have a non-zero opening balance and/or transactions in the reporting period. Select this checkbox if you also want to include main accounts that have a zero opening balance and no turnover during the reporting period. | 
 | Purpose of submission | <p>Select one of the following values to specify the purpose of the report submission:</p><ul><li>JPK for the first time</li><li>JPK correction</li></ul> |
-| Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li></ul><p> RPD option supported when report is run from Electronic messaging only.</p> |
+| Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li></ul><p> RPD option supported when report is run from Electronic messages only.</p> |
 | Include closing transactions | Select this parameter to include closing transactions in the data that is exported. |
 | Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
 | Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
