@@ -27,6 +27,83 @@ The JPK_KR_PD reporting process is predefined by the data entities that are [del
 
  ![JPK_KR_PD electronic messages processing diagram.](../media/emea-pol-jpk-kr-pd-em-processing.png)
 
+The **PL JPK_KR_PD EM setup.zip** package provides a setup for the JPK_KR_PD processing that supports the process of JPK_KR_PD reporting. This setup consists of the following steps:
+
+- **Tworzyć (Create)**: Create an electronic message for JPK_KR_PD reporting.
+- **Oblicz RPD JPK_KR_PD (Calculate RPD JPK_KR_PD)**: Calculate the values of the RPD figures based on **Financial dimension set**.
+- **Podgląd w programie Excel (Preview in Excel format)**: Generate the JPK_KR_PD report in Microsoft Excel format for preview.
+- **Wygeneruj plik (Generate file)**: Generate an XML file in JPK_KR_PD format.
+- **Zmień status (Change status)**: Change the status of the electronic message. 
+
+### Create an electronic message for JPK_KR_PD reporting - Tworzyć
+
+1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
+2. Select **JPK_KR_PD**, and then, on the **Messages** FastTab, select **New**.
+3. In the **Run processing** dialog box, select **OK**.
+4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK_KR_PD report for.
+5. On the **Message additional fields** FastTab, you can manually specify values for the RPD figures to be reported in JPK_KR_PD report. If you specify the values of the RPD figures manually, make sure they are provided in the format expected by the report schema.
+
+### Calculate the values of the RPD figures based on Financial dimension set - Oblicz RPD JPK_KR_PD
+
+If you [configured Finance to automatically calculate the amounts](emea-pol-saf-pd-setup#rpd) for the Income Tax Register (RPD) section of the SAF Accounting Books Income Tax – JPK_KR_PD report as the balance based on a specific combination of Financial dimension set values, you can run the **Oblicz RPD JPK_KR_PD** action. Users can review the automatically calculated amounts before generating the electronic file.
+
+1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
+2. Select **JPK_KR_PD**, and then, select the electronic message created by the previouse **Tworzyć JPK_KR_PD** action and click **Collect data** button.
+3. In the **Run processing** dialog box, the **Oblicz RPD JPK_KR_PD** action is selected. Click **OK** button to proceed. The process of RPD figures calculation uses the **Performance enhancement for general ledger dimension set balance calculation** feature, thus the performance should be similar to performance of the trial balance inquiry. However, you can enable calculation in batch mode if necessary.
+4. When the **Oblicz RPD JPK_KR_PD** action is completed, the values of **Additional fields** of the electronic message are calculated. You can review then on the **Message additional fields** FastTab.
+
+### Generate the JPK_KR_PD report in Microsoft Excel format for preview - Podgląd w programie Excel
+
+When all the data is ready in the system, follow these steps to generate the JPK_KR_PD report in Excel format.
+
+1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
+2. In the **Run processing** dialog box, in the **Action** field, select **Podgląd w programie Excel JPK_KR_PD**. The following parameters are available on the report dialog.
+
+| Parameter | Description |
+|---|---|
+| From date | Specify the first date to export reporting data for. |
+| To date | Specify the last date to export reporting data for. |
+| Print with zero balances | By default, the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD includes main accounts that have a non-zero opening balance and/or transactions in the reporting period. Select this checkbox if you also want to include main accounts that have a zero opening balance and no turnover during the reporting period. | 
+| Purpose of submission | <p>Select one of the following values to specify the purpose of the report submission:</p><ul><li>JPK for the first time</li><li>JPK correction</li></ul> |
+| Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li><li>RPD</li></ul> |
+| Include closing transactions | Select this parameter to include closing transactions in the data that is exported. |
+| Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
+| Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
+
+3. To run report generation in a batch, specify parameters on the **Run in the background** FastTab. When the report is generated, it's attached to the electronic message as a file.
+4. Select **OK**.
+5. To view the file, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page.
+6. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
+
+### Generate an XML file in JPK_KR_PD format - Wygeneruj plik
+
+When all the data is ready in the system, follow these steps to generate an JPK_KR_PD file in XML format.
+
+1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
+2. In the **Run processing** dialog box, in the **Action** field, select **Wygeneruj plik JPK_KR_PD**. The following parameters are available on the report dialog.
+
+| Parameter | Description |
+|---|---|
+| From date | Specify the first date to export reporting data for. |
+| To date | Specify the last date to export reporting data for. |
+| Print with zero balances | By default, the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD includes main accounts that have a non-zero opening balance and/or transactions in the reporting period. Select this checkbox if you also want to include main accounts that have a zero opening balance and no turnover during the reporting period. | 
+| Purpose of submission | <p>Select one of the following values to specify the purpose of the report submission:</p><ul><li>JPK for the first time</li><li>JPK correction</li></ul> |
+| Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li><li>RPD</li></ul> |
+| Include closing transactions | Select this parameter to include closing transactions in the data that is exported. |
+| Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
+| Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
+
+3. To run report generation in a batch, in the **Run processing** dialog box, specify parameters on the **Run in the background** FastTab.
+4. Select **OK**.
+
+The action log is related to the electronic message log information about the user who generated the JPK_KR_PD and performed other actions with the electronic message.
+
+When an XML file for the JPK_KR_PD report is generated, it's attached to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
+
+### Change the status of the electronic message - Zmień status
+
+When the JPK_KR_PD report is successfully completed, use the **Zmień status** action to change the status to **Zgłoszone JPK_KR_PD**. Electronic message in this status does not allow to regenerate report. You can still revert the status back to **Wygenerowane JPK_KR_PD** if necessary.
+
 ## Generate JPK_KR_PD using menu item
 
 You can generate a SAF Accounting Books Income Tax - JPK_KR_PD using **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File Accounting Books Income Tax** menu item.
