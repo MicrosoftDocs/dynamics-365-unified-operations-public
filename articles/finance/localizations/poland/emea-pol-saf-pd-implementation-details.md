@@ -21,14 +21,14 @@ This topic provides some implementation details of JPK_KR_PD reporting.
 ## The journal entry number (D_1)
 
 The **Dziennik** section of the JPK_KR_PD report corresponds to the Journal (General Ledger Journal) and includes detailed records of all accounting entries. 
-It provides a list of transactions recorded in the accounting books for a given period.
+It provides a list of transactions recorded in the accounting books for a given period (General Journal Accounting Entries).
 The **D_1** field of the **Dziennik** section represents the journal entry number, assigned continuously in the financial year.
 
 It is recommended to use the **Journalize transactions** periodic task before you report the JPK_KR_PD. 
 For more information about the **Journalize transactions** periodic task, see [Journalize posted journal entries](../../general-ledger/tasks/journalize-posted-journal-entries.md).
 
-When **Journalize transactions** periodic task was executed for detailed records of all accounting entries, the D_1 field represents the number from journalized journal. 
-If the **Journalize transactions** periodic task was not executed for some records of all accounting entries, the Voucher value is reported in D_1 field of this record.
+When **Journalize transactions** periodic task was executed for detailed records of accounting entries, the **D_1** field represents the number from journalized journal. 
+If the **Journalize transactions** periodic task was not executed for some records of accounting entries, the **Voucher** value is reported in **D_1** field of this record.
 
 ## Date of the economic transaction (D_6)
 
