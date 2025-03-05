@@ -91,7 +91,7 @@ When the data from the **PL JPK_KR_PD EM setup.zip** file is imported to your le
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings** page.
 2. Select **Wygenerowanie JPK_KR_PD** executable class and click **Parameters** of the Action pane.
-3. On the **Parameters** dialog, click **OK** button to to activate the executable class.
+3. On the **Parameters** dialog, click **OK** button to activate the executable class.
 
 Parameters of the **Obliczanie pól dodatkowych RPD** executable class are initiated on the [Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)](#rpd) step later in this topic.
 
