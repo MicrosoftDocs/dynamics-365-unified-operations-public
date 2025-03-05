@@ -4,7 +4,7 @@ description: Learn about which features are supported in Cloud and on-premises, 
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 01/08/2025
+ms.date: 03/05/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -32,9 +32,9 @@ The following tables list the application areas. Cloud and on-premises support i
 
 | **Area**             | **Feature**                | **Cloud** | **On-premises** |
 |---------------------|-----------------------------|-----------|-----------------|
-| AI and Copilot features | [Generative Help and Guidance](../../fin-ops/copilot/copilot-generative-help) | Yes | No |
-| | [Any copilot capabilities](../../fin-ops/copilot/copilot-for-finance-operations) | Yes | No |
-|  | [Summary generations](../../../supply-chain/get-started/copilot-summaries-overview) | Yes | No |
+| AI and Copilot features | [Generative Help and Guidance](../../fin-ops/copilot/copilot-generative-help.md) | Yes | No |
+| | [Any copilot capabilities](../../fin-ops/copilot/copilot-for-finance-operations.md) | Yes | No |
+|  | [Summary generations](../../../supply-chain/get-started/copilot-summaries-overview.md) | Yes | No |
 |  | AI Agents | Yes | No |
 
 ## Dynamics 365 Finance
