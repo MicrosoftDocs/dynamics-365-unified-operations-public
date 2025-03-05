@@ -27,7 +27,7 @@ The JPK_KR_PD reporting process is predefined by the data entities that are [del
 
  ![JPK_KR_PD electronic messages processing diagram.](../media/emea-pol-jpk-kr-pd-em-processing.png)
 
-The **PL JPK_KR_PD EM setup.zip** package provides a setup for the JPK_KR_PD processing that supports the process of JPK_KR_PD reporting. This setup consists of the following steps:
+The **PL JPK_KR_PD EM setup.zip** package provides a setup for the JPK_KR_PD processing that supports the process of JPK_KR_PD reporting. This process consists of the following steps:
 
 - **Tworzyć (Create)**: Create an electronic message for JPK_KR_PD reporting.
 - **Oblicz RPD JPK_KR_PD (Calculate RPD JPK_KR_PD)**: Calculate the values of the RPD figures based on **Financial dimension set**.
