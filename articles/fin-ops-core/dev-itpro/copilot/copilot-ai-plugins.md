@@ -246,7 +246,7 @@ Response properties are the outputs of the action. To create response properties
 
 ### Create the AI plugin
 
-The AI plugin is the grouping of AI operations that are associated with the security role. This is the registration for the plugin in the Dataverse plugin registry. The AI plugin can have multiple AI plugin operations for the role. The plugin should be based on a specific security role. Users who have access to the plugin should have permissions to perform all operations in it.
+The AI plugin is the grouping of AI operations that are associated with the security role. The AI plugin record is the registration for the plugin in the Dataverse plugin registry. The plugin should be based on a specific security role. Users who have access to the plugin should have permissions to perform all operations in it.
 
 1. In your solution, select **New** \> **More** \> **Other** \> **AIPlugin**.
 1. On the **New AIPlugin** page, enter the following details for the AI plugin record:
