@@ -3901,6 +3901,8 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for license plate build in the warehouse 
+            href: warehousing/license-plate-build.md
           - name: Set up a mobile device menu item for moving items in the warehouse
             href: warehousing/mobile-device-movement-menu.md
           - name: Set up a mobile device menu item for moving items by template
