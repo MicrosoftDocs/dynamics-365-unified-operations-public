@@ -26,7 +26,7 @@ Before you can generate a SAF Accounting Books Income Tax - JPK_KR_PD, you must 
    - [Option 1: Using Financial dimensions and Financial dimension set](#fin-dim)
    - [Option 2: Using Consolidation accounting groups](#consolidation-accounting-groups)
 5. [Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)](#rpd)
-6. [Set up standard chart of accounts (optional, for companies with not Polish chart of accounts)](#standard-coa)
+6. [Set up standard chart of accounts (optional, for companies using non-standard chart of accounts in Poland)](#standard-coa)
 7. [Configure application-specific parameters for the format of the report](#asp-setup)
 8. [Set up General ledger parameters for preview the JPK_KR_PD in Excel](#er-format-setup)
 
@@ -109,11 +109,14 @@ To report required account tags in ZOiS section of JPK_KR_PD, you can use **Fina
 
 You must create dedicated **Financial dimension** for each of the account tag type applicable in your organization: S_12_1, S_12_2, S_12_3. For each of the created **Financial dimension** create all the account tag values applicable to your organization according to regulations in Poland as **Financial dimension values**.
 
-When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled when you are using **Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.
+When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets).
+
+> [!NOTE]
+> The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled when you are using **Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.
 
 > [!IMPORTANT]
 > When you create the **Financial dimension set** dedicated to ZOiS section of the JPK_KR_PD report it is important that you add the **Main account** as the first dimension in the set, S_12_1 as the second, S_12_2 if applicable as the next after the S_12_1 and the S_12_3 next to the S_12_2 if used or S_12_1 if the S_12_2 is not used. The order of dimensions in the dimension set is crucial for proper reporting of account tags in the ZOiS and Dziennik sections of the JPK_KR_PD report.
-> ![Setting t**Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.](../media/emea-pol-jpk-kr-pd-financial-dimension-set.png)
+> ![Setting **Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.](../media/emea-pol-jpk-kr-pd-financial-dimension-set.png)
 
 ### <a id="consolidation-accounting-groups"></a>Option 2: Using Consolidation accounting groups
 
@@ -126,13 +129,27 @@ You must create as many consolidation account groups as are required to cover th
 
 ## <a id="rpd"></a>Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)
 
-## <a id="standard-coa"></a>Set up standard chart of accounts (optional, for companies with not Polish chart of accounts)
+You can set up your Finance to calculate automatically the amounts for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report. User is able to review the automatically calculated amounts before the electronic file is generated.
 
-use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association between main accounts in Finance and standard main accounts in Poland.
+To automatically calculate the RPD amounts, you must set up a **Financial dimension set**. This can be one already used in your organization, the one used for the ZOiS section, or a completely new one. For more information about how to create and use **Financial dimensions** in Finance, see [Financial dimensions](../../general-ledger/financial-dimensions). For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). 
 
-In addition to this requirement, if your organization uses a non-standard chart of accounts in Poland, the SAF Accounting Books Income Tax - JPK_KR_PD must reflect information that is aligned with the standard chart of accounts that is used in Poland.
+> [!NOTE]
+> The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled when you are using **Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.
+> ![Setting **Financial dimension set** for Income Tax Register (RPD) of JPK_KR_PD.](../media/emea-pol-jpk-kr-pd-rpd-setup.png)
 
-If your organization uses a non-standard chart of accounts in Poland, you should create a separate consolidation account group to establish the association between the main accounts and the standard chart of accounts that is used in Poland.
+
+When **Financial dimension set** for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report is set up, you can establish the rules of automatic collection of the RPD amounts. 
+
+Follow these steps to establish the rules of automatic collection of the RPD amounts.
+
+1. Go to 
+
+## <a id="standard-coa"></a>Set up standard chart of accounts (optional, for companies using non-standard chart of accounts in Poland)
+
+When your organization uses non-standard chart of accounts (CoA) in Poland and the SAF Accounting Books Income Tax - JPK_KR_PD must reflect information that is aligned with the standard chart of accounts that is used in Poland, use the [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create the association between main accounts in Finance and standard main accounts in Poland.
+
+1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group) to establish the association between the main accounts and the standard chart of accounts that is used in Poland.
+2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify the applicable value of the standard chart of accounts in Poland. This value is reported in the **S_1** element in the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD. The value that you specify in **Consolidation account name** field is reported in the **S_2** element in the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD. You must establish an association between all main accounts in Finance that are used for posting operations within the legal entity from which the JPK_KR_PD file will be generated.
 
 ## <a id="asp-setup"></a>Configure application-specific parameters for the format of the report
 
