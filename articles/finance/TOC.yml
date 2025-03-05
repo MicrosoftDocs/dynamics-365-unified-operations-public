@@ -3776,6 +3776,8 @@
                           href: localizations/poland/emea-pol-saf-pd-setup.md
                         - name: JPK_KR_PD reporting
                           href: localizations/poland/emea-pol-saf-pd-reporting.md
+                        - name: Implementation details of JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-implementation-details.md
                     - name: Standard audit file (JPK)
                       items:
                         - name: Standard audit file (JPK) overview
