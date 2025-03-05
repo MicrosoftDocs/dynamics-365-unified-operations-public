@@ -23,7 +23,7 @@ In Finance, you have two options for generating the SAF Accounting Books Income 
 
 ## Generate JPK_KR_PD from Electronic messages
 
-The JPK_KR_PD reporting process is predefined by the data entities that are [delivered in the PL JPK_KR_PD setup.zip package](emea-pol-saf-pd-setup#em-import). The following illustration shows an overview of the process.
+The JPK_KR_PD reporting process is predefined by the data entities that are [delivered in the PL JPK_KR_PD setup.zip package](emea-pol-saf-pd-setup.md#em-import). The following illustration shows an overview of the process.
 
  ![JPK_KR_PD electronic messages processing diagram.](../media/emea-pol-jpk-kr-pd-em-processing.png)
 
