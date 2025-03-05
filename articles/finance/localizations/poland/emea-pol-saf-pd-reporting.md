@@ -45,7 +45,7 @@ The **PL JPK_KR_PD EM setup.zip** package provides a setup for the JPK_KR_PD pro
 
 ### Calculate the values of the RPD figures based on Financial dimension set - Oblicz RPD JPK_KR_PD
 
-If you [configured Finance to automatically calculate the amounts](emea-pol-saf-pd-setup#rpd) for the Income Tax Register (RPD) section of the SAF Accounting Books Income Tax – JPK_KR_PD report as the balance based on a specific combination of Financial dimension set values, you can run the **Oblicz RPD JPK_KR_PD** action. Users can review the automatically calculated amounts before generating the electronic file.
+If you [configured Finance to automatically calculate the amounts](emea-pol-saf-pd-setup.md#rpd) for the Income Tax Register (RPD) section of the SAF Accounting Books Income Tax – JPK_KR_PD report as the balance based on a specific combination of Financial dimension set values, you can run the **Oblicz RPD JPK_KR_PD** action. Users can review the automatically calculated amounts before generating the electronic file.
 
 1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
 2. Select **JPK_KR_PD**, and then, select the electronic message created by the previouse **Tworzyć JPK_KR_PD** action and click **Collect data** button.
