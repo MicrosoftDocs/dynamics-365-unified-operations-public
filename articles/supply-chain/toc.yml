@@ -3739,6 +3739,8 @@
             href: warehousing/manual-order-line-picking-exception-handling.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
+          - name: Serial number capturing
+            href: warehousing/serial-number-capturing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
