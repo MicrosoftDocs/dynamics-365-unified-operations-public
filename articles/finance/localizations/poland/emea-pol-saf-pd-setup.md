@@ -109,10 +109,11 @@ To report required account tags in ZOiS section of JPK_KR_PD, you can use **Fina
 
 You must create dedicated **Financial dimension** for each of the account tag type applicable in your organization: S_12_1, S_12_2, S_12_3. For each of the created **Financial dimension** create all the account tag values applicable to your organization according to regulations in Poland as **Financial dimension values**.
 
-When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new).
+When all the applicable **Financial dimensions** are created, set up **Financial dimension set** dedicated to ZOiS section of JPK_KR_PD report. For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled when you are using **Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.
 
 > [!IMPORTANT]
 > When you create the **Financial dimension set** dedicated to ZOiS section of the JPK_KR_PD report it is important that you add the **Main account** as the first dimension in the set, S_12_1 as the second, S_12_2 if applicable as the next after the S_12_1 and the S_12_3 next to the S_12_2 if used or S_12_1 if the S_12_2 is not used. The order of dimensions in the dimension set is crucial for proper reporting of account tags in the ZOiS and Dziennik sections of the JPK_KR_PD report.
+> ![Setting t**Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.](../media/emea-pol-jpk-kr-pd-financial-dimension-set.png)
 
 ### <a id="consolidation-accounting-groups"></a>Option 2: Using Consolidation accounting groups
 
