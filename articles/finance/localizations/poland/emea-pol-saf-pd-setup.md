@@ -129,7 +129,10 @@ You must create as many consolidation account groups as are required to cover th
 
 ## <a id="rpd"></a>Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)
 
-You can set up your Finance to calculate automatically the amounts for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report. User is able to review the automatically calculated amounts before the electronic file is generated.
+You can configure Finance to automatically calculate the amounts for the Income Tax Register (RPD) section of the SAF Accounting Books Income Tax – JPK_KR_PD report as the balance based on a specific combination of **Financial dimension set** values. Users can review the automatically calculated amounts before generating the electronic file.
+
+> [!NOTE]
+> The RPD amounts are calculated by an executable class action of JPK_KR_PD Electronic messaging processing and calculated amounts are attached to an **Electronic message** as values of **Additional fields**. It is important that you complete the [Import a package of data entities that includes a predefined electronic message setup](#em-import) of the setup before you can proceed to establish the rules of automatic collection of the RPD amounts.
 
 To automatically calculate the RPD amounts, you must set up a **Financial dimension set**. This can be one already used in your organization, the one used for the ZOiS section, or a completely new one. For more information about how to create and use **Financial dimensions** in Finance, see [Financial dimensions](../../general-ledger/financial-dimensions). For more information on how to create and use the **Financial dimension sets**, see [Financial dimension sets](../../general-ledger/financial-dimension-sets). 
 
@@ -137,12 +140,17 @@ To automatically calculate the RPD amounts, you must set up a **Financial dimens
 > The JPK_KR_PD solution uses the **Performance enhancement for general ledger dimension set balance calculation** feature. To learn more about the feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new). The **Performance enhancement for general ledger dimension set balance calculation** feature must be enabled when you are using **Financial dimensions** and **Financial dimension set** for account tags of ZOiS section of JPK_KR_PD.
 > ![Setting **Financial dimension set** for Income Tax Register (RPD) of JPK_KR_PD.](../media/emea-pol-jpk-kr-pd-rpd-setup.png)
 
-
 When **Financial dimension set** for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report is set up, you can establish the rules of automatic collection of the RPD amounts. 
 
 Follow these steps to establish the rules of automatic collection of the RPD amounts.
 
-1. Go to 
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings** page.
+2. Select **Obliczanie pól dodatkowych RPD** executable class and click **Parameters** of the Action pane.
+3. In **Financial dimension set** field select the **Financial dimension set** created for Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report.
+4. In **Posting layer** field select one or many posting layers that must be included in amounts collection for RPD.
+5. Mark **Include closing transactions** check box if you wnat to include closing transactions in RPD figures calculation. 
+6. For every RPD figure that you want to be automatically calulated as the balance based on a specific combination of values of the selected **Financial dimension set**, select the corresponding **Additional field** and specify the **Range** of applicble **Financial dimension** values.
+7. When all the RPD figures setup is completed, click **OK** button to save settings. User will be able to see and adjust if necessary these settings every time they calculate the RPD figures.
 
 ## <a id="standard-coa"></a>Set up standard chart of accounts (optional, for companies using non-standard chart of accounts in Poland)
 
