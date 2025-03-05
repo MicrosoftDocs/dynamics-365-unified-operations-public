@@ -87,6 +87,14 @@ You will receive a notification in **Messages**, or you can manually refresh the
 > [!IMPORTANT]
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
 
+When the data from the **PL JPK_KR_PD EM setup.zip** file is imported to your legal entity, follow these steps to activate the executable classes parameters.
+
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings** page.
+2. Select **Wygenerowanie JPK_KR_PD** executable class and click **Parameters** of the Action pane.
+3. On the **Parameters** dialog, click **OK** button to to activate the executable class.
+
+Parameters of the **Obliczanie pól dodatkowych RPD** executable class are initiated on the [Set up Financial dimension set and Financial dimensions for Income Tax Register (RPD)](#rpd) step later in this topic.
+
 ## <a id="acc-tags"></a>Set up account tags for trial balance: S_12_1, S_12_2, S_12_3 fields of ZOiS
 
 Depending on the business needs of your organization, you might have to include the following information in the **ZOiS** (Turnover and balance statement) part of the SAF Accounting Books Income Tax - JPK_KR_PD.
