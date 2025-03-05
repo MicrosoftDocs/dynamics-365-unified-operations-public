@@ -21,6 +21,12 @@ In Finance, you have two options for generating the SAF Accounting Books Income 
 - *Option 1: Using EM Processing*. This method provides the full scope of the report, including the Tax Register (RPD) section. It also allows you to preview the file in Excel, making it easier to review and validate data before submission.
 - *Option 2: Using the Standard Audit File Accounting Books Income Tax menu item*. This option offers a quick way to review the accounting book and triale balance sections of the report.
 
+## Generate JPK_KR_PD from Electronic messages
+
+The JPK_KR_PD reporting process is predefined by the data entities that are [delivered in the PL JPK_KR_PD setup.zip package](emea-pol-saf-pd-setup#em-import). The following illustration shows an overview of the process.
+
+ ![JPK_KR_PD electronic messages processing diagram.](../media/emea-pol-jpk-kr-pd-em-processing.png)
+
 ## Generate JPK_KR_PD using menu item
 
 You can generate a SAF Accounting Books Income Tax - JPK_KR_PD using **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File Accounting Books Income Tax** menu item.
