@@ -68,11 +68,11 @@ When all the data is ready in the system, follow these steps to generate the JPK
 
 | Parameter | Description |
 |---|---|
-| From date | Specify the first date to export reporting data for. |
-| To date | Specify the last date to export reporting data for. |
 | Print with zero balances | By default, the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD includes main accounts that have a non-zero opening balance and/or transactions in the reporting period. Select this checkbox if you also want to include main accounts that have a zero opening balance and no turnover during the reporting period. | 
 | Purpose of submission | <p>Select one of the following values to specify the purpose of the report submission:</p><ul><li>JPK for the first time</li><li>JPK correction</li></ul> |
+| Language | Select the language in which you would like to preview JPK_KR_PD in Excel. |
 | Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li></ul> |
+| Financial dimension set | If you are [using **Financial dimensions** and **Financial dimension set**](emea-pol-saf-pd-setup.md#fin-dim) for account tags in the trial balance (ZOiS), select the **Financial dimension set** that is used. This parameter is not used in case the [**Consolidation accounting groups** are used](emea-pol-saf-pd-setup.md#consolidation-accounting-groups) for account tags of ZOiS. |
 | Include closing transactions | Select this parameter to include closing transactions in the data that is exported. |
 | Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
 | Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
@@ -91,11 +91,10 @@ When all the data is ready in the system, follow these steps to generate an JPK_
 
 | Parameter | Description |
 |---|---|
-| From date | Specify the first date to export reporting data for. |
-| To date | Specify the last date to export reporting data for. |
 | Print with zero balances | By default, the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD includes main accounts that have a non-zero opening balance and/or transactions in the reporting period. Select this checkbox if you also want to include main accounts that have a zero opening balance and no turnover during the reporting period. | 
 | Purpose of submission | <p>Select one of the following values to specify the purpose of the report submission:</p><ul><li>JPK for the first time</li><li>JPK correction</li></ul> |
 | Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li></ul> |
+| Financial dimension set | If you are [using **Financial dimensions** and **Financial dimension set**](emea-pol-saf-pd-setup.md#fin-dim) for account tags in the trial balance (ZOiS), select the **Financial dimension set** that is used. This parameter is not used in case the [**Consolidation accounting groups** are used](emea-pol-saf-pd-setup.md#consolidation-accounting-groups) for account tags of ZOiS. |
 | Include closing transactions | Select this parameter to include closing transactions in the data that is exported. |
 | Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
 | Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
