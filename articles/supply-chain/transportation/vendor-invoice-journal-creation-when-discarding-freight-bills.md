@@ -1,6 +1,6 @@
 ---
 title: Vendor invoice journal creation when discarding freight bills
-description: Learn how to discard a freight bill when creating a vendor invoice journal.
+description: Learn how to create vendor invoice journals when you discard freight bills.
 author: lisascholz91
 ms.author: lisascholz
 ms.topic: article
@@ -11,14 +11,12 @@ ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSu
 
 # Vendor invoice journal creation when discarding freight bills
 
-This article provides guidance on how to create vendor invoice journals when discarding freight bills used in Microsoft Dynamics 365 Supply Chain Management.
+This article provides guidance about how to create vendor invoice journals when you discard freight bills that are used in Microsoft Dynamics 365 Supply Chain Management.
 
-Beginning in Dynamics 365 Supply Chain Management version 10.0.42, you can use the **Freight bill discard vendor invoice journal creation policy** parameter in the **Transportation management parameters** page to control when are the vendor invoice journals created. The default option (*Only for reconciliation reasons with pay the freight vendor*) is the journals are only created for reconciliation reasons when pay the freight vendor enabled.
+As of Supply Chain Management version 10.0.42, you can use the **Freight bill discard vendor invoice journal creation policy** field on the **Transportation management parameters** page to control when vendor invoice journals are created. The default setting, *Only for reconciliation reasons with pay the freight vendor*, creates journals only for reconciliation reasons when functionality for paying the freight vendor is enabled.
 
-## How to set up vendor invoice journal creation policy to always create journals
+## Set up the vendor invoice journal creation policy to always create journals
 
-1. Go to **Transportation management** > **Setup** > **Transportation management parameters**.
-1. Select the **General** tab.
-1. Expand the **Vendor invoice** FastTab.
-1. In the **Freight bill discard vendor invoice journal creation policy** parameter, select **Always**. 
-1. Save the changes.
+1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. On the **General** tab, on the **Vendor invoice** FastTab, in the **Freight bill discard vendor invoice journal creation policy** field, select *Always*.
+1. Save your changes.
