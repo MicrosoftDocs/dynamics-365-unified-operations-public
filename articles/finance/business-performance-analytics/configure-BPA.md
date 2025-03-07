@@ -18,7 +18,7 @@ audience: Application User
 Business performance analytics is generally available in public cloud the following countries and regions: APAC, Australia, Canada, EMEA, India, Japan, North America, Norway, South Africa, South America, Switzerland, United Arab Emirates, and United Kingdom.
 
 > [!NOTE]
-> Business Performance Analytics is currently unavailable in France due to regulatory limitations, as the initial release is only available in English (EN-US). Additional language support will be introduced in future release waves. Please stay informed throught our monthly Customer Advisory Boards (https://aka.ms/BPACAB)
+> Business performance analytics is currently unavailable in France due to regulatory limitations. The initial release is only available in English (EN-US). Additional language support will be introduced in future release waves. You can stay informed throught our monthly customer advisory board (https://aka.ms/BPACAB).
 
 
 ### System requirements
