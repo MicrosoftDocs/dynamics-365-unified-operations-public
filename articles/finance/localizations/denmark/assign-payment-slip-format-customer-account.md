@@ -4,7 +4,7 @@ description: This article describes how to set up the payment slip attachment fo
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
