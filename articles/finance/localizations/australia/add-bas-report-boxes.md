@@ -4,7 +4,7 @@ description: This article describes how to add BAS report boxes and generate the
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Australia
 ms.search.validFrom: 2016-06-30
