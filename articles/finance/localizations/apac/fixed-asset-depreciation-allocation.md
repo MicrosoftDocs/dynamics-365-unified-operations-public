@@ -4,7 +4,7 @@ description: This article describes how to create a fixed asset allocation rule 
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: China (PRC), Japan
