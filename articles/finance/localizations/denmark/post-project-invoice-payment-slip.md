@@ -1,10 +1,10 @@
 --- 
 title: Post a project invoice with a payment slip
-description: This article describes how to post a project invoice with a payment slip in a specified format for Denmark with Microsoft Dynamics 365 Finance. 
+description: This article describes how to post a project invoice with a payment slip in a specified format in Denmark with Microsoft Dynamics 365 Finance. 
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 03/04/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to post a project invoice with a payment slip in a specified format for Denmark with Microsoft Dynamics 365 Finance. 
+This article describes how to post a project invoice with a payment slip in a specified format in Denmark with Microsoft Dynamics 365 Finance. 
 
 You can post a project invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment. This functionality is available for legal entities whose primary address is in Denmark.
 
