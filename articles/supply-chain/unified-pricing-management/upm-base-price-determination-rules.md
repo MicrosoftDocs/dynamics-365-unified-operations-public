@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
+<!-- KFM: Preview until 10.0.43 GA -->
 
 This article describes the price determination rules for calculating the sales order base price.
 

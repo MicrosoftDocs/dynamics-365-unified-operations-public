@@ -1,5 +1,5 @@
 ---
-title: Unified pricing management module overview
+title: Unified pricing management module overview (preview)
 description: Get an overview of the Unified pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,9 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Unified pricing management module overview
+# Unified pricing management module overview (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.43 GA -->
 
 This article provides an overview of the **Unified pricing management** module for Microsoft Dynamics 365 Supply Chain Management. For a video overview, go to [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
 
