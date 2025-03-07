@@ -331,9 +331,9 @@
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic invoicing for Saudi Arabia
-              href: ../finance/localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Setup direct integration of Italian FatturaPA with SDI
-              href: ../finance/localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Use the electronic invoicing service to import vendor invoices
               href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing
@@ -3739,6 +3739,8 @@
             href: warehousing/manual-order-line-picking-exception-handling.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
+          - name: Serial number capturing
+            href: warehousing/serial-number-capturing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -3899,6 +3901,8 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for license plate build in the warehouse 
+            href: warehousing/license-plate-build.md
           - name: Set up a mobile device menu item for moving items in the warehouse
             href: warehousing/mobile-device-movement-menu.md
           - name: Set up a mobile device menu item for moving items by template
@@ -4029,6 +4033,8 @@
           href: warehousing/work-exceptions-log.md
         - name: User-configurable queries in warehouse management
           href: warehousing/user-configurable-queries-in-warehouse-management.md
+        - name: Data entity support for user-configurable queries in warehouse management
+          href: warehousing/data-entity-support-for-user-configurable-queries-in-warehouse-management.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes

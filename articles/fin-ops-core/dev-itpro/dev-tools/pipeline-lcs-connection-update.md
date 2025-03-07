@@ -1,12 +1,12 @@
 ---
 title: Update LCS Connection authentication tasks to MSAL in Azure Pipelines
 description: Learn about how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
-author: pathaku
-ms.author: pathaku
+author: snamilikonda
+ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 10/23/2024
+ms.date: 02/27/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update LCS Connection authentication tasks to MSAL in Azure Pipelines
 
-By default, new versions of the Microsoft Azure DevOps tasks for Dynamics 365 support the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview#languages-and-frameworks) and use it by default for authentication. To support these new versions, the MSAL PowerShell libraries (MSAL.PS) must be installed on any agent that runs the tasks. For self-hosted agents, the MSAL.PS library can be [manually installed from the PowerShell Gallery](https://github.com/AzureAD/MSAL.PS/#msalps). For any agent, including agents that are hosted in Azure DevOps, Microsoft provides a task that installs the MSAL.PS library for you every time that the pipeline is run.
+By default, new versions of the Microsoft Azure DevOps tasks for Dynamics 365 support the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview#languages-and-frameworks) and use it by default for authentication.
 
 ## Update existing service connections
 
@@ -24,6 +24,8 @@ For existing service connections, the **Authentication Endpoint** setting must b
 For more information about how to set up a connection, see [Create an LCS connection in Azure Pipelines](pipeline-lcs-connection.md).
 
 ## Add the MSAL.PS install task to a pipeline
+
+### [!NOTE] This is not required anymore with the latest versions of the tasks.
 
 To add the MSAL.PS install task to the build of your YML or Classic pipeline, search the task list for **Install MSAL.PS to enable authentication**. There are no options or settings for this task. Make sure that this install task is run on every agent before you run any task that requires authentication with Microsoft Dynamics Lifecycle Services (LCS),
 
