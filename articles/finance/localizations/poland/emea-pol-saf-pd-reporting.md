@@ -1,12 +1,12 @@
 ---
 title: JPK_KR_PD reporting
-description: This article explains how to report JPK_KR_PD in legal entities in Poland.
+description: Learn about how to report JPK_KR_PD in legal entities in Poland.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/26/2024
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -14,7 +14,11 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ms.dyn365.ops.version: Version 1611
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ---
+
+
 # SAF Accounting Books Income Tax - JPK_KR_PD reporting
+
+[!INCLUDE[banner](../../includes/banner.md)]
 
 In Finance, you have two options for generating the SAF Accounting Books Income Tax - JPK_KR_PD report, depending on your needs:
 
@@ -144,3 +148,5 @@ To review batch jobs or find a generated file, follow these steps.
 When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 
 Learn more about how to configure a destination for each ER format configuration and its output component in [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

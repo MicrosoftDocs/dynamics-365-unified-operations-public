@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 11/26/2024
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -16,7 +16,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ---
 # Implementation details of JPK_KR_PD reporting
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article provides implementation details for JPK_KR_PD reporting.
 
