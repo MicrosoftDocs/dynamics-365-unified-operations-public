@@ -1,12 +1,12 @@
 ---
 title: Set up payment balance reporting (Belgium)
-description: This article describes how to set up BLWI information for Belgium with Microsoft Dynamics 365 Finance.
+description: This article describes how to set up BLWI information in Belgium with Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/05/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-06-30
@@ -16,7 +16,7 @@ ms.search.validFrom: 2016-06-30
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium with Microsoft Dynamics 365 Finance.
+This article describes how to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information in Belgium with Microsoft Dynamics 365 Finance.
 
 Use the following procedures to set up BLWI information for Belgium. These procedures were created using the USSI demo data company.
 
