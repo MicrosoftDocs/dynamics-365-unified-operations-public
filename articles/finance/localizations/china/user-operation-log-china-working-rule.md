@@ -1,10 +1,10 @@
 ---
 title: CN-00016 User operation log by China working rule
-description: This article describes how to generate a user operation log for China with Microsoft Dynamics 365 Finance.
+description: This article describes how to generate a user operation log for China in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/06/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to generate a user operation log for China with Microsoft Dynamics 365 Finance.
+This article describes how to generate a user operation log for China in Microsoft Dynamics 365 Finance.
 
 Based on the criteria that you specify, user operations are tracked and recorded in a log, including the type of operation, username, and time and date.
 
