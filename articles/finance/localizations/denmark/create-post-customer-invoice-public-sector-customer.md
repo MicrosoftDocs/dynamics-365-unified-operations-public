@@ -4,7 +4,7 @@ description: This article describes how to create and post a sales order invoice
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
