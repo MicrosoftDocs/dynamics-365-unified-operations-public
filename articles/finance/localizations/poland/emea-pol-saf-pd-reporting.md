@@ -15,7 +15,6 @@ ms.dyn365.ops.version: Version 1611
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ---
 
-
 # SAF Accounting Books Income Tax - JPK_KR_PD reporting
 
 [!INCLUDE[banner](../../includes/banner.md)]
@@ -68,7 +67,11 @@ You can review the parameters of the executable class that were specified for ea
 When all the data is ready in the system, follow these steps to generate the JPK_KR_PD report in Excel format.
 
 1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
-2. In the **Run processing** dialog box, in the **Action** field, select **Podgląd w programie Excel JPK_KR_PD**. The following parameters are available on the report dialog.
+2. In the **Run processing** dialog box, in the **Action** field, select **Podgląd w programie Excel JPK_KR_PD**. 
+3. To run report generation in a batch, enable the **Batch processing** ckeckbox on the **Run in the background** FastTab and specify the batch parameters.
+4. Use the **Action parameters** button on the **Run in the background** FastTab to specificy the report parameters for the batch processing.
+5. In the interactive mode (the **Batch processing** ckeckbox is **Off**), the report parameters are available on the next report dialog.
+6. The following parameters are available on the report dialog.
 
 | Parameter | Description |
 |---|---|
@@ -81,34 +84,42 @@ When all the data is ready in the system, follow these steps to generate the JPK
 | Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
 | Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
 
-3. To run report generation in a batch, specify parameters on the **Run in the background** FastTab. When the report is generated, it's attached to the electronic message as a file.
-4. Select **OK**.
-5. To view the file, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page.
-6. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
+5. Select **OK** to start the report generation.
+6. When the report is generated, it's attached to the electronic message as a file. To view the file, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page.
+7. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
+
+You can review the report parameters after the report is generated. To see the parameters used for a specific report execution, select **Action parameters** on the **Action log** FastTab for the **Podgląd w programie Excel JPK_KR_PD** action. 
 
 ### Generate an XML file in JPK_KR_PD format - Wygeneruj plik
 
 When all the data is ready in the system, follow these steps to generate an JPK_KR_PD file in XML format.
 
 1. On the **Electronic messages** page, on the **Messages** FastTab, select **Generate report**.
-2. In the **Run processing** dialog box, in the **Action** field, select **Wygeneruj plik JPK_KR_PD**. The following parameters are available on the report dialog.
+2. In the **Run processing** dialog box, in the **Action** field, select **Wygeneruj plik JPK_KR_PD**.
+3. To run report generation in a batch, enable the **Batch processing** ckeckbox on the **Run in the background** FastTab and specify the batch parameters.
+4. Use the **Action parameters** button on the **Run in the background** FastTab to specificy the report parameters for the batch processing.
+5. In the interactive mode (the **Batch processing** ckeckbox is **Off**), the report parameters are available on the next report dialog.
+6. The following parameters are available on the report dialog.
 
 | Parameter | Description |
 |---|---|
 | Print with zero balances | By default, the **ZOiS** section of the SAF Accounting Books Income Tax - JPK_KR_PD includes main accounts that have a non-zero opening balance and/or transactions in the reporting period. Select this checkbox if you also want to include main accounts that have a zero opening balance and no turnover during the reporting period. | 
 | Purpose of submission | <p>Select one of the following values to specify the purpose of the report submission:</p><ul><li>JPK for the first time</li><li>JPK correction</li></ul> |
+| Language | Select the language in which you would like to preview JPK_KR_PD in Excel. |
 | Report composition | <p>Select one or more of the following values to specify the sections of the report that you want to generate:</p><ul><li>ZOiS</li><li>Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent)</li><li>RPD</li></ul> |
 | Financial dimension set | If you are [using **Financial dimensions** and **Financial dimension set**](emea-pol-saf-pd-setup.md#fin-dim) for account tags in the trial balance (ZOiS), select the **Financial dimension set** that is used. This parameter is not used in case the [**Consolidation accounting groups** are used](emea-pol-saf-pd-setup.md#consolidation-accounting-groups) for account tags of ZOiS. |
 | Include closing transactions | Select this parameter to include closing transactions in the data that is exported. |
 | Include reversal | Select this parameter to include reversed transactions in the data that is exported. |
 | Posting layer | Select one or more posting layers to consider transactions from. This parameter affects all parts of the report. |
 
-3. To run report generation in a batch, in the **Run processing** dialog box, specify parameters on the **Run in the background** FastTab.
-4. Select **OK**.
+5. Select **OK** to start the report generation.
+6. When the report is generated, it's attached to the electronic message as a file. To view the file, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page.
 
 The action log is related to the electronic message log information about the user who generated the JPK_KR_PD and performed other actions with the electronic message.
 
 When an XML file for the JPK_KR_PD report is generated, it's attached to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
+
+You can review the report parameters after the report is generated. To see the parameters used for a specific report execution, select **Action parameters** on the **Action log** FastTab for the **Wygeneruj plik JPK_KR_PD** action. 
 
 ### Change the status of the electronic message - Zmień status
 
