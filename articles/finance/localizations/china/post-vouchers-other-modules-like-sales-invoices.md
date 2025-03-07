@@ -1,10 +1,10 @@
 ---
 title: Post vouchers from other modules, like sales invoices
-description: This article describes how to post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices in China with Microsoft Dynamics 365 Finance.
+description: This article describes how to post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices for China in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/06/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -19,13 +19,13 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices in China with Microsoft Dynamics 365 Finance.
+This article describes how to post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices for China in Microsoft Dynamics 365 Finance.
 
 You can post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices. When you post from these sources, the default Chinese voucher type and Chinese voucher number will be assigned to those financial vouchers.
 
 The following procedures walk you through posting Chinese vouchers from the Inventory movement journal and from a sales invoice.
 
-Before you can complete these procedures you must add the current fiscal year to the current fiscal calendar. The procedures were created using the demo data company CNMF.
+Before you can complete these procedures, you must add the current fiscal year to the current fiscal calendar. The procedures were created using the demo data company CNMF.
 
 ## Post Chinese vouchers from an inventory movement journal
 
