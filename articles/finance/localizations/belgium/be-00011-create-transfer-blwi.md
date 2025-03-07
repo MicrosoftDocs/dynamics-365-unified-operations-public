@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-06-30
@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-06-30
 
 This article describes how to create and transfer transactions to the Belgisch Luxemburgs Wissel Instituut (BLWI) in Belgium with Microsoft Dynamics 365 Finance.
 
-The following procedure walks you through creating BLWI report for Belgium. This procedure was created using the demo data company USSI. This functionality is available for legal entities whose primary address is in the Belgium. You must set up a registration ID for Belgium and fill in the registration number in order to create BLWI declaration.
+The following procedure walks you through creating BLWI report for Belgium. This procedure was created using the demo data company USSI. The functionality is available for legal entities whose primary address is in the Belgium. You must set up a registration ID for Belgium and fill in the registration number in order to create BLWI declaration.
 
 To create and transfer transaction to the BLWI, you must first set up BLWI information.
 
