@@ -1,10 +1,10 @@
 --- 
 title: Create and post a project invoice for a public sector customer
-description: This article describes how to create and post a project invoice for a customer using OIOUBL electronic invoicing for Denmark with Microsoft Dynamics 365 Finance.
+description: This article describes how to create and post a project invoice for a customer using OIOUBL electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 03/04/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create and post a project invoice for a customer using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing for Denmark with Microsoft Dynamics 365 Finance.
+This article describes how to create and post a project invoice for a customer using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 
 The following procedures walk you through how to create and post a project invoice for a customer using OIOUBL electronic invoicing. The procedures wer created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
 
