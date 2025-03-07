@@ -6,7 +6,7 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2016-06-30
@@ -16,7 +16,7 @@ ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to specify number sequences for payment references and create payment reference numbers Estonia with Microsoft Dynamics 365 Finance.
+This article describes how to specify number sequences for payment references and create payment reference numbers in Estonia with Microsoft Dynamics 365 Finance.
 
 The following procedures walk you through generating the payment references. The procedures were created using the demo data company DEMF with the country/region of legal entity primary address updated to be Estonia.
 
