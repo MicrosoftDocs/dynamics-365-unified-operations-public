@@ -4,8 +4,6 @@ description: This article describes how to attach fiscal document texts to a sal
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
