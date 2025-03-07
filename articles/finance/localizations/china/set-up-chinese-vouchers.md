@@ -4,7 +4,7 @@ description: This article describes how to set up Chinese vouchers using specifi
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/06/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -19,7 +19,7 @@ ms.custom:
 
 This article describes how to set up Chinese vouchers using specific demo data in Microsoft Dynamics 365 Finance.
 
-Chinese voucher numbers are the foundation for Chinese financial reporting. You must set them up before you do any financial transaction posting. You can set up the vouchers one at a time or you can use the **Voucher type** setup wizard.
+Chinese voucher numbers are the foundation for Chinese financial reporting. You must set them up before you do any financial transaction posting. You can set up the vouchers one at a time or you can use the Voucher type setup wizard.
 
 The following procedures walk you through how to set up Chinese vouchers with specific demo data. These procedures were created using the demo data company CNMF.
 
