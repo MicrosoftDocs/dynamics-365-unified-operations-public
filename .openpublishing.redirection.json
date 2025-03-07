@@ -1,6 +1,11 @@
 {
   "redirections": [
     {   
+      "source_path": "articles/human-resources/hr-infrastructure-merge.md",
+      "redirect_url": "/dynamics365/finance/human-resources/hr-cust-migration",
+      "redirect_document_id": "false" 
+    },    
+    {   
       "source_path": "articles/finance/localizations/apac/apac-aus-nzl-e-invoices.md",
       "redirect_url": "/dynamics365/finance/localizations/gs-apac-aus-nzl-e-invoices",
       "redirect_document_id": "false" 
