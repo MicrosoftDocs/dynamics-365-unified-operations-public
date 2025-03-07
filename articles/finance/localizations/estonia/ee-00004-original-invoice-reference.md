@@ -4,7 +4,7 @@ description: This article describes how to create sales orders and corrective li
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2016-06-30
