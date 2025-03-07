@@ -9,8 +9,6 @@ items:
       href: welcome.md  
     - name: Human Resources infrastructure merge
       items:
-      - name: Human Resources infrastructure merge overview
-        href: hr-infrastructure-merge.md
       - name: Human Resources infrastructure customer migration
         href: hr-cust-migration.md  
       - name: Human Resources customer migration FAQ

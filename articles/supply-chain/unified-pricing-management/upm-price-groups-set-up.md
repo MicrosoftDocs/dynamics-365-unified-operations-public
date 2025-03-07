@@ -16,7 +16,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-<!-- KFM: Preview until 10.0.34 GA -->
+<!-- KFM: Preview until 10.0.43 GA -->
 
 To create and manage the [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps.
 
