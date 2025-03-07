@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 02/28/2025
+ms.date: 03/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-06-30
@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-06-30
 
 This article describes how to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium with Microsoft Dynamics 365 Finance.
 
-Use the following procedures to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. These procedures were created using the USSI demo data company.
+Use the following procedures to set up BLWI information for Belgium. These procedures were created using the USSI demo data company.
 
 This functionality is available for legal entities that have their primary address in Belgium. Before you can complete this procedure, you must set up the registration ID for Belgium and enter the registration number that should be used to create the BLWI declaration.
 
