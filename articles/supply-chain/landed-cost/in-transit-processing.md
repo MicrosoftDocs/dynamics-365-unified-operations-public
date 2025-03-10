@@ -77,11 +77,11 @@ To work with goods-in-transit orders, go to **Landed cost** \> **Periodic tasks*
 
 ## Receiving stock from the goods-in-transit warehouse
 
-You can receive goods from a goods-in-transit order in several ways, depending on the setup of your system:
+You can receive goods from a goods-in-transit order in several ways:
 
-- If batch/serial number tracking isn't enabled for items, you can use in-transit receiving.
-- If both batch/serial number tracking and advanced warehouse management are enabled for items, you can use a mobile device to receive goods from a goods-in-transit order.
-- If batch/serial number tracking is enabled for items, but advanced warehouse management isn't enabled, you can post an arrival journal to register the receipt of goods.
+- If advanced warehouse management is not enabled for items, you can use in-transit receiving or post an arrival journal.
+- If both advanced warehouse management and batch/serial number tracking are enabled for items, you can use a mobile device to receive goods from a goods-in-transit order.
+- If advanced warehouse management is enabled for items, but batch/serial number tracking is not, you can use a mobile device or post an arrival journal to register the receipt of goods from a goods-in-transit order.
 
 The following illustration presents the preceding information in the form of a flow diagram to show when you should use each type of receipt method to receive goods-in-transit orders.
 
@@ -101,7 +101,7 @@ You can do in-transit receiving from any of the following pages:
 
 ### Arrival journal
 
-You can also receive goods by creating an arrival journal. You can create an arrival journal directly from the voyage page. The best practices that your organization has established determine whether the arrival journal is used to receive goods.
+You can also receive goods by creating an arrival journal. You can create an arrival journal directly from the voyage page. 
 
 1. Open the voyage, container, or folio.
 1. On the Action Pane, on the **Manage** tab, in the **Functions** group, select **Create arrival journal**.
@@ -111,11 +111,6 @@ You can also receive goods by creating an arrival journal. You can create an arr
     - **Create from order lines** – Set this option to *Yes* to set the default quantity in the arrival journal from the purchase order lines. The default quantity in the arrival journal can be set in this way only if the quantity on the purchase order line matches the quantity on the goods-in-transit order.
 
 1. Process the arrival journal as described in [Register item receipts with an item arrival journal](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
-
-> [!NOTE]
-> The arrival journal is generally used in situations where locations and batch/serial tracking are used, but warehouse management isn't used.
->
-> Default receipt locations should not be specified on the order lines if a putaway location will be specified in the arrival journal.
 
 ### Warehouse mobile device receiving
 
@@ -199,7 +194,4 @@ To work with posting profiles, go to **Inventory management** \> **Setup** \> **
 
 ## Cancel or reverse a goods-in-transit order
 
-To reverse the creation of a goods-in-transit order and the movement of items to the goods-in-transit warehouse, follow these steps.
-
-1. Move the received goods out of the goods-in-transit warehouse by using a movement journal.
-1. Depreciate the on-hand stock on the purchase order warehouse.
+To reverse the creation of a goods-in-transit order and the movement of items to the goods-in-transit warehouse, move the received goods out of the goods-in-transit warehouse by using a movement journal.
