@@ -35,6 +35,7 @@ This section will contain a table that lists the enhancements that are included 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Data Management | Automatic retry support for DMF batch jobs | Data management batch jobs were sometimes failing without completing the import/export operations due to batch node restarts. To address this issue, retry support was implemented to allow automatic retries if a batch restarts. For more information, see https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/data-entities/data-import-export-job | Default
  
 
 ### Bug fixes
