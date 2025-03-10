@@ -142,6 +142,21 @@ You can run a job one time by selecting the **Import** or **Export** button afte
 > [!NOTE]
 > An import or an export job can be run by selecting the **Import** or **Export** button. This action schedules a batch job to run only once. The job may not execute immediately if batch service is throttling due to the load on the batch service. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if the batch does not start due to throttling. The jobs can also be scheduled to execute at a later time. This can be done by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. Using a batch is the recommended option because it also helps with large volumes of data that need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective.
 
+## Automatic retry support during batch node restarts
+Automatic retry support for import/export in batch job has been implemented to enable retries when a batch restarts. This feature is available starting from PU66. 
+Here is an overview of the changes made. (Using the export flow as an example, a similar design was also applied to import) -
+
+Previous Design: There was one regular batch job with one runtime batch task.
+
+![image](https://github.com/user-attachments/assets/06c4ab10-bad3-4f62-826d-20f9c786962a)
+
+New Design: There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1.
+
+![image](https://github.com/user-attachments/assets/91f7e4ec-aa8e-4486-9b11-4c56fa7bd83c)
+
+> [!NOTE]
+> If you've customized your code that involves DMFBatchImporter, DMFImportTaskScheduler, DMFBatchExporter, DMFExportTaskScheduler classes, you may encounter issues with the import/export in batch feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
+
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
 
