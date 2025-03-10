@@ -41,7 +41,7 @@ Learn more about how to configure a ledger in [Configure ledgers](configure-ledg
 
 ## What is a subledger?
 
-Most documents that are posted affect a *subledger* or a *module*. A subledger captures the detailed accounting impact of the document posting. Examples of subledgers in Dynamics 365 finance and operations apps include Accounts payable, Accounts receivable, Inventory, Fixed assets, Tax, and Production. Each subledger captures the document details that are relevant to it. For example, when a customer invoice is posted, the customer's balance is captured in the **Accounts receivable** module, the tax codes and amounts are captured in the **Tax** module, and the cost of inventory that was sold is captured in the **Inventory**/**Costing** modules. 
+Most documents that are posted affect a *subledger* or a *module*. A subledger captures the detailed accounting impact of the document posting. Examples of subledgers in Dynamics 365 finance and operations apps include Accounts payable, Accounts receivable, Inventory, Fixed assets, Tax, and Production. Each subledger captures the document details that are relevant to it. For example, when a customer invoice is posted, the customer's balance is captured in the **Accounts receivable** module, the tax codes and amounts are captured in the **Tax** module, and the cost of inventory that was sold is captured in the **Inventory**/**Costing** modules.
 
 In addition, each source document maintains the subledger journal account entries, which represent the detailed accounting entries of the document. The subledger journal account entries are ultimately transferred to the ledger.
 
@@ -62,7 +62,7 @@ Learn more about posting profiles in [Posting profiles overview](pstg-prfles-ovr
 
 ## Link between a subledger and a ledger
 
-When a source document is posted, the subledger journal account entry captures the accounting impact of that document. This subledger accounting contains the affected ledger accounts and the corresponding debit and credit amounts. The ledger accounts in the subledger journal account entries are created by using the posting profiles for the main accounts and financial dimensions from the document. The resulting ledger account (main account &plus; financial dimension values) adheres to the chart of accounts and account structures that are defined in the ledger.
+When a source document is posted, the subledger journal account entry captures the accounting impact of that document. This subledger accounting contains the affected ledger accounts and the corresponding debit and credit amounts. The ledger accounts in the subledger journal account entries are created by using the posting profiles for the main accounts and the financial dimensions from the document. The resulting ledger account (main account &plus; financial dimension values) adheres to the chart of accounts and account structures that are defined in the ledger.
 
 The total debit and credit amounts must be balanced. According to the requirements of the double-entry bookkeeping principle, every transaction that is posted to an account must have an equal and opposite entry in another account. For example, a product receipt for $100 in purchases results in a $100 debit to the Inventory account and an equivalent credit of $100 to the Purchase accrual account.
 
