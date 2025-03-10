@@ -4033,6 +4033,8 @@
           href: warehousing/transfer-orders-warehouse.md
         - name: View and manage the work exceptions log
           href: warehousing/work-exceptions-log.md
+        - name: User-configurable queries in warehouse management
+          href: warehousing/user-configurable-queries-in-warehouse-management.md
         - name: Data entity support for user-configurable queries in warehouse management
           href: warehousing/data-entity-support-for-user-configurable-queries-in-warehouse-management.md
       - name: Warehousing administration
