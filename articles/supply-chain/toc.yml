@@ -3679,6 +3679,8 @@
           href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse
           href: warehousing/release-to-warehouse-process.md
+        - name: Restrict to sales unit
+          href: warehousing/restrict-to-sales-unit.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
