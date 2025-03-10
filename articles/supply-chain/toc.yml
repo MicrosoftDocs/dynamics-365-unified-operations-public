@@ -3567,6 +3567,8 @@
           href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
+        - name: Vendor invoice journal creation when discarding freight bills
+          href: transportation/vendor-invoice-journal-creation-when-discarding-freight-bills.md
     - name: Landed cost
       items:
       - name: Landed cost module overview
@@ -3677,6 +3679,8 @@
           href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse
           href: warehousing/release-to-warehouse-process.md
+        - name: Restrict to sales unit
+          href: warehousing/restrict-to-sales-unit.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
@@ -4031,6 +4035,8 @@
           href: warehousing/transfer-orders-warehouse.md
         - name: View and manage the work exceptions log
           href: warehousing/work-exceptions-log.md
+        - name: User-configurable queries in warehouse management
+          href: warehousing/user-configurable-queries-in-warehouse-management.md
         - name: Data entity support for user-configurable queries in warehouse management
           href: warehousing/data-entity-support-for-user-configurable-queries-in-warehouse-management.md
       - name: Warehousing administration
