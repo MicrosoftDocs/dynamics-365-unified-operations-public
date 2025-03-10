@@ -3567,6 +3567,8 @@
           href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
+        - name: Vendor invoice journal creation when discarding freight bills
+          href: transportation/vendor-invoice-journal-creation-when-discarding-freight-bills.md
     - name: Landed cost
       items:
       - name: Landed cost module overview
