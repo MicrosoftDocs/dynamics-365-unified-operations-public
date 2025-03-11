@@ -149,12 +149,10 @@ Here is an overview of the changes made. (Using the export flow as an example, a
 
 Previous Design: There was one regular batch job with one runtime batch task.
 
-:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
 ![image](https://github.com/user-attachments/assets/06c4ab10-bad3-4f62-826d-20f9c786962a)
 
 New Design: There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1.
 
-:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
 ![image](https://github.com/user-attachments/assets/91f7e4ec-aa8e-4486-9b11-4c56fa7bd83c)
 
 > [!NOTE]
