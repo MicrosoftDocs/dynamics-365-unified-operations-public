@@ -88,7 +88,7 @@ When all the data is ready in the system, follow these steps to generate the JPK
 6. When the report is generated, it's attached to the electronic message as a file. To view the file, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page.
 7. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
 
-You can review the report parameters after the report is generated. To see the parameters used for a specific report execution, select **Action parameters** on the **Action log** FastTab for the **Podgląd w programie Excel JPK_KR_PD** action. 
+You can review the report parameters after the report is generated in batch. To see the parameters used for a specific report execution in batch, select **Action parameters** on the **Action log** FastTab for the **Podgląd w programie Excel JPK_KR_PD** action. When the report was generated in interactive mode, the **Action parameters** button on the **Action log** FastTab is not available. 
 
 ### Generate an XML file in JPK_KR_PD format - Wygeneruj plik
 
@@ -119,7 +119,7 @@ The action log is related to the electronic message log information about the us
 
 When an XML file for the JPK_KR_PD report is generated, it's attached to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
 
-You can review the report parameters after the report is generated. To see the parameters used for a specific report execution, select **Action parameters** on the **Action log** FastTab for the **Wygeneruj plik JPK_KR_PD** action. 
+You can review the report parameters after the report is generated in batch. To see the parameters used for a specific report execution in batch, select **Action parameters** on the **Action log** FastTab for the **Wygeneruj plik JPK_KR_PD** action. When the report was generated in interactive mode, the **Action parameters** button on the **Action log** FastTab is not available. 
 
 ### Change the status of the electronic message - Zmień status
 
