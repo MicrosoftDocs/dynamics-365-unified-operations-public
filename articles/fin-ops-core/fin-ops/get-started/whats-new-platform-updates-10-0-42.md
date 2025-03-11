@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.42 of finance and operations apps (Dece
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.42 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 11/04/2024
+ms.date: 03/11/2025
 ms.topic: whats-new
 ms.custom: 
   - bap-template
