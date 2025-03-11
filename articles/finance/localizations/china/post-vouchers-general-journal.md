@@ -4,7 +4,7 @@ description: This article describes how to post Chinese vouchers using the gener
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -29,7 +29,7 @@ Before you can complete this procedure, ensure that you've created all of the ne
 
 To post vouchers from general ledger journals, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Journal entries \> General journals**.
+1. In Dynamics 365 Finance, go to **General ledger \> Journal entries \> General journals**.
 1. Select **New**.
 1. In the list, mark the selected row.
 1. In the **Name** field, enter or select a value.

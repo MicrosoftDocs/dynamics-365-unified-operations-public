@@ -4,7 +4,7 @@ description: This article describes how to set up the payment slip attachment fo
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -23,7 +23,7 @@ The following procedure walks you through how to set up the payment slip attachm
 
 To assign a payment slip format to a customer account, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Customers \> All customers**.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, mark the selected row.
 1. In the list, select the link in the selected row.
 1. Expand or collapse the **Invoice and delivery** section.

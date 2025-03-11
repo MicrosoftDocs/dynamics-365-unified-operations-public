@@ -4,7 +4,7 @@ description: This article describes how to post a project invoice with a payment
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -25,7 +25,7 @@ Before you can complete this procedure, you must first set up a payment slip for
 
 To post a project invoice with a payment slip, follow these steps. 
 
-1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Customers \> All customers**.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
 1. Expand or collapse the **Invoice and delivery** section.

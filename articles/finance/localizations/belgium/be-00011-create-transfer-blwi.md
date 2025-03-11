@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.search.validFrom: 2016-06-30
@@ -26,7 +26,7 @@ Customer/vendor transactions marked with one of the chosen payment purpose codes
 
 To create and transfer transaction to the BLWI, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Tax \> Declarations \> Foreign trade \> BLWI**.
+1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Foreign trade \> BLWI**.
 2. Select **Transfer**.
 3. In the **Survey code** field, enter or select a value.
 4. In the **Date** field, enter a date.

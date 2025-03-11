@@ -4,7 +4,7 @@ description: This article describes how to generate a user operation log for Chi
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -27,7 +27,7 @@ The following procedures demonstrate how to set up criteria for tracking bank ac
 
 To set up the database log, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **System administration \> Setup \> Database log setup**.
+1. In Dynamics 365 Finance, go to **System administration \> Setup \> Database log setup**.
 1. Select **New**.
 1. Select **Next**.
 1. In the tree, expand **Bank**.
@@ -43,7 +43,7 @@ To set up the database log, follow these steps.
 
 To create a new bank account for demonstration purposes, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Cash and bank management \> Bank statement reconciliation \> Bank accounts**.
+1. In Dynamics 365 Finance, go to **Cash and bank management \> Bank statement reconciliation \> Bank accounts**.
 1. Select **New**.
 1. In the **Bank account** field, enter a value.
 1. In the **Bank account number** field, enter a value.
@@ -54,7 +54,7 @@ To create a new bank account for demonstration purposes, follow these steps.
 
 To print the user operation log report, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **System administration \> Inquiries \> User operation log inquiry**.
+1. In Dynamics 365 Finance, go to **System administration \> Inquiries \> User operation log inquiry**.
 1. In the tree, expand **Bank**.
 1. In the tree, check **Bank\Bank accounts**.
 1. Expand the **By user** section.

@@ -4,7 +4,7 @@ description: This article describes how to check all posted vouchers in a fiscal
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -29,7 +29,7 @@ The following procedures show how to check all posted vouchers in a fiscal perio
 
 To stop a fiscal period, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Calendars \> Ledger calendars**.
+1. In Dynamics 365 Finance, go to **General ledger \> Calendars \> Ledger calendars**.
 1. In the **Fiscal year** field, enter or select a value.
 1. In the list, find and select the desired record.
 1. In the list, mark the selected row.
@@ -43,7 +43,7 @@ To stop a fiscal period, follow these steps.
 
 To check whether posted vouchers have continuity voucher numbers, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Inquiries and reports \> Voucher transactions**.
+1. In Dynamics 365 Finance, go to **General ledger \> Inquiries and reports \> Voucher transactions**.
 1. In the **Criteria** field, enter or select a value.
 1. Select **OK**.
 
@@ -51,7 +51,7 @@ To check whether posted vouchers have continuity voucher numbers, follow these s
 
 To run the Chinese voucher continuity check process, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Periodic tasks \> Chinese voucher continuity check**.
+1. In Dynamics 365 Finance, go to **General ledger \> Periodic tasks \> Chinese voucher continuity check**.
 1. In the **Print out the result of renumbering** field, select **Yes**.
 1. In the **Period start** field, enter a date.
 1. Select **OK**.

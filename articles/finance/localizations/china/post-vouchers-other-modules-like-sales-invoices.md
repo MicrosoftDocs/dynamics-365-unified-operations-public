@@ -4,7 +4,7 @@ description: This article describes how to post Chinese vouchers from the genera
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -31,7 +31,7 @@ Before you can complete these procedures, you must add the current fiscal year t
 
 To post Chinese vouchers from an inventory movement journal, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Inventory management \> Journal entries \> Items \> Movement**.
+1. In Dynamics 365 Finance, go to **Inventory management \> Journal entries \> Items \> Movement**.
 1. Select **New**.
 1. In the **Name** field, enter or select a value.
 1. Select **OK**.
@@ -66,7 +66,7 @@ To post Chinese vouchers from an inventory movement journal, follow these steps.
 
 To post Chinese vouchers from a sales invoice, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a value.
 1. Expand the **General** section.

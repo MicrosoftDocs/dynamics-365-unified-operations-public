@@ -4,7 +4,7 @@ description: This article describes how to set up Chinese vouchers using specifi
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -27,7 +27,7 @@ The following procedures walk you through how to set up Chinese vouchers with sp
 
 To set up a Chinese voucher type, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Journal setup \> Chinese voucher type \> Voucher type**.
+1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Chinese voucher type \> Voucher type**.
 1. Select **New**.
 1. In the **Voucher type** field, enter a value.
 1. In the **Voucher type number** field, enter a value. This value is used as the **Type ID** in the GB/T24589 export file.  
@@ -78,14 +78,14 @@ To set up a Chinese voucher type, follow these steps.
 
 To set up additional parameters, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Ledger setup \> General ledger parameters**. On the **General ledger parameters** page, you must first enable **Chinese voucher**, and then allow duplicate vouchers in the fiscal year. Chinese vouchers must be renumbered starting from "1" for each fiscal period.  
+1. In Dynamics 365 Finance, go to **General ledger \> Ledger setup \> General ledger parameters**. On the **General ledger parameters** page, you must first enable **Chinese voucher**, and then allow duplicate vouchers in the fiscal year. Chinese vouchers must be renumbered starting from "1" for each fiscal period.  
 1. In the **Check for voucher used** field, select an option.
 
 ## Set up the print layout
 
 To set up the print layout, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **General ledger \> Journal setup \> Chinese voucher type \> Print layout**.
+1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Chinese voucher type \> Print layout**.
 1. Select **New**.
 1. In the **Print layout group** field, enter a value.
 1. In the **Description** field, enter a value.

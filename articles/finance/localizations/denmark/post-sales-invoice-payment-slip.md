@@ -4,7 +4,7 @@ description: This article describes how to post a free text invoice with a payme
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak  
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -25,7 +25,7 @@ Before you can complete this procedure, you must first set up a payment slip for
 
 To post a sales invoice with a payment slip, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, select the drop-down button to open the lookup.
 1. In the list, find and select the desired record. You should set up the associated payment attachment in customer invoice for the selected customer first.  

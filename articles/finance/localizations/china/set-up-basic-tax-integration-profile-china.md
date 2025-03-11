@@ -4,7 +4,7 @@ description: This article describes how to set up a tax integration profile, upd
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -27,7 +27,7 @@ Before you can execute the procedure, you must complete the following procedures
 
 To set up basic tax integration profile for China, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Tax integration \> Tax integration profiles**.
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Tax integration \> Tax integration profiles**.
 1. Select **New**.
 1. In the **Profile ID** field, enter a value.
 1. In the **Profile name** field, enter a value.

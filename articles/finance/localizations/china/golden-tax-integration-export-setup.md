@@ -4,7 +4,7 @@ description: This article describes how to configure the export format for golde
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -27,7 +27,7 @@ After you complete this procedure, your next steps are to update the **Format ma
 
 To configure the export format for golden tax integration, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **All workspaces \> Electronic reporting**.
+1. In Dynamics 365 Finance, go to **All workspaces \> Electronic reporting**.
 1. In the list, select **Microsoft**.
 1. Select **Repositories**.
 1. Select **Open**.

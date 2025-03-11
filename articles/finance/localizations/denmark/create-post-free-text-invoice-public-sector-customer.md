@@ -4,7 +4,7 @@ description: This article describes how to create and post free text invoices fo
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak   
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -30,7 +30,7 @@ Before you can execute these procedures, you must complete the following procedu
 
 To create and post a free text invoice for a public sector customer, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a value. A customer selected for the free text invoice must be enabled for electronic invoicing.  
 1. Select a free text invoice header view.

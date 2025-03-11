@@ -4,7 +4,7 @@ description: This article describes how to create and post a project invoice for
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -30,7 +30,7 @@ Before you can complete this procedure, you must complete the following procedur
 
 To update a project contract, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Project management and accounting \> Projects \> Project contracts**.
+1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> Project contracts**.
 1. Use the Quick Filter to find records. For example, filter on the **Project contract ID** field with a value of "000057". Select a project contract that has a customer funding source that's enabled for electronic invoicing.  
 1. Open details for a project contract.
 1. Expand the **Funding sources** section.
@@ -45,7 +45,7 @@ To update a project contract, follow these steps.
 
 To create a project transaction, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Project management and accounting \> Item tasks \> Item requirements**.
+1. In Dynamics 365 Finance, go to **Project management and accounting \> Item tasks \> Item requirements**.
 1. Select **New**.
 1. In the **Project ID** field, enter or select a value. For example, you can enter "000057" as a project ID.  
 1. In the **Item number** field, enter or select a value. For example, you can enter "D0001" as an item number.  
@@ -61,7 +61,7 @@ To create a project transaction, follow these steps.
 
 To create a proposal and post an invoice, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Project management and accounting \> Project invoices \> Project invoice proposals**.
+1. In Dynamics 365 Finance, go to **Project management and accounting \> Project invoices \> Project invoice proposals**.
 1. Select **New**.
 1. Select **Invoice** proposal.
 1. In the **Project** field, enter or select a value.
@@ -74,7 +74,7 @@ To create a proposal and post an invoice, follow these steps.
 
 To generate an OIOUBL project invoice, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Project management and accounting \> Project invoices \> Project invoices**.
+1. In Dynamics 365 Finance, go to **Project management and accounting \> Project invoices \> Project invoices**.
 1. Use the Quick Filter to find records. For example, filter on the **Project contract ID** field with a value of "000057".
 1. On the Action Pane, select **Project invoice**.
 1. Select **Send**.
@@ -84,7 +84,7 @@ To generate an OIOUBL project invoice, follow these steps.
 
 To view an OIOUBL electronic invoice, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
+1. In Dynamics 365 Finance, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
 1. Select **Show files**.
 1. Select **Open**.
 

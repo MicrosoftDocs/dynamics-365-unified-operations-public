@@ -4,7 +4,7 @@ description: This article describes how to create and post a sales order invoice
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -32,7 +32,7 @@ Before you can execute the following procedures, you must first complete the fol
 
 To create a sales order, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Accounts receivable \> Orders \> All sales orders**.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
 1. In the **Customer account** field, enter or select a customer enabled for electronic invoicing.  
 1. Select **OK**.
@@ -49,7 +49,7 @@ To create a sales order, follow these steps.
 
 To post an invoice for a sales order, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, on the Action Pane, select **Invoice**.
+1. In Dynamics 365 Finance, on the Action Pane, select **Invoice**.
 1. Select **Invoice**.
 1. Expand the **Parameters** section.
 1. In the **Quantity** field, select **All**.
@@ -60,7 +60,7 @@ To post an invoice for a sales order, follow these steps.
 
 To generate a OIOUBL electronic invoice, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, select **Invoice**.
+1. In Dynamics 365 Finance, select **Invoice**.
 1. On the Action Pane, select **Invoice**.
 1. Select **Send**.
 1. Select **Original**.
@@ -69,7 +69,7 @@ To generate a OIOUBL electronic invoice, follow these steps.
 
 To view a OIOUBL electronic invoice, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
+1. In Dynamics 365 Finance, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
 1. Select **Show files**.
 1. Select **Open**.
 

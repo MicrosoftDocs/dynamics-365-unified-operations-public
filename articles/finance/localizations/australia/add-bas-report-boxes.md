@@ -4,7 +4,7 @@ description: This article describes how to add BAS report boxes and generate the
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Australia
 ms.search.validFrom: 2016-06-30
@@ -28,7 +28,7 @@ Before you can execute the following procedures, you must define the additional 
 
 To add BAS report boxes and print the Australia BAS, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Tax \> Declarations \> Sales tax \> Additional BAS report boxes**.
+1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Additional BAS report boxes**.
 1. Select **New**.
 1. In the **Settlement period** field, select the drop-down button to open the lookup.
 1. In the list, find and select the desired record.
@@ -67,7 +67,7 @@ To add BAS report boxes and print the Australia BAS, follow these steps.
 
 To generate the Australian BAS, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Tax \> Declarations \> Sales tax \> Australian BAS**.
+1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Australian BAS**.
 1. In the **Settlement period** field, select the drop-down button to open the lookup.
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
