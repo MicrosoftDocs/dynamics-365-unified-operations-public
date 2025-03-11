@@ -2,11 +2,11 @@
 title: Data import and export jobs overview
 description: Learn about how to use the Data management workspace to create and manage data import and export jobs with the outline on the import and export process.
 author: pnghub
-ms.author: gned
+ms.author: priysharma
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 10/21/2024
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -143,15 +143,18 @@ You can run a job one time by selecting the **Import** or **Export** button afte
 > An import or an export job can be run by selecting the **Import** or **Export** button. This action schedules a batch job to run only once. The job may not execute immediately if batch service is throttling due to the load on the batch service. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if the batch does not start due to throttling. The jobs can also be scheduled to execute at a later time. This can be done by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. Using a batch is the recommended option because it also helps with large volumes of data that need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective.
 
 ## Automatic retry support during batch node restarts
-Automatic retry support for import/export in batch job has been implemented to enable retries when a batch restarts. This feature is available starting from PU66. 
+Automatic retry support for import/export in batch job is implemented to enable retries when a batch restarts. This feature is available starting from version 10.0.42.
+
 Here is an overview of the changes made. (Using the export flow as an example, a similar design was also applied to import) -
 
 Previous Design: There was one regular batch job with one runtime batch task.
 
+:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
 ![image](https://github.com/user-attachments/assets/06c4ab10-bad3-4f62-826d-20f9c786962a)
 
 New Design: There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1.
 
+:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
 ![image](https://github.com/user-attachments/assets/91f7e4ec-aa8e-4486-9b11-4c56fa7bd83c)
 
 > [!NOTE]
