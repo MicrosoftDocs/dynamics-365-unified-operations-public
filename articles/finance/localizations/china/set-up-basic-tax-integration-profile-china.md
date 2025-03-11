@@ -1,64 +1,67 @@
 ---
 title: Set up basic tax integration profile for China
-description: Learn how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China.
+description: This article describes how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
 ms.search.form: TaxProfileTable_CN, HcmWorkerLookUp, UnitOfMeasureLookup, CustTable, LogisticsPostalAddress, TaxGroupLookup, VATInvoiceDescTable_CN
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Set up basic tax integration profile for China
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China.
+This article describes how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China in Microsoft Dynamics 365 Finance.
 
-Before you can complete this procedure, you must complete the Golden tax integration import setup procedure and the Maintain golden tax export format procedure.
+The following procedure was created using the demo data company CNMF.
 
-This procedure was created using the demo data company CNMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
+Before you can execute the procedure, you must complete the following procedures:
+- Golden tax integration import setup
+- Maintain golden tax export format procedure
 
-1. Go to Tax > Setup > Tax integration > Tax integration profiles.
-2. Click New.
-3. In the Profile ID field, type a value.
-4. In the Profile name field, type a value.
-5. In the Sales tax code field, enter or select a value.
-6. Select Yes in the Validate amount limit field.
-7. In the Maximum invoice amount field, enter a number.
-8. Select Yes in the Include tax field.
-9. In the Default commodity field, type a value.
-10. In the Invoice auditor field, enter or select a value.
-11. In the Payment collector field, enter or select a value.
-12. In the Format mapping field, enter or select a value.
-13. Select Yes in the Non-deductible VAT invoices field.
-14. Expand the Default value of description and unit section.
-15. Click New.
-16. In the list, mark the selected row.
-17. In the Description field, type a value.
-18. In the Unit field, enter or select a value.
-19. Go to Accounts receivable > Customers > All customers.
-20. Select a customer.
-21. Click Registration IDs.
-22. Click Add.
-23. In the Registration type field, enter or select a value.
-24. ResolveChanges the Registration type.
-25. In the Registration number field, type a value.
-26. Click Save.
-27. Close the page.
-28. Expand the Invoice and delivery section.
-29. Click Edit.
-30. In the Sales tax group field, enter or select a value.
-31. Go to Tax > Setup > Tax integration > VAT invoice description.
-32. Click New.
-33. In the VAT invoice description ID field, type a value.
-34. In the Description field, type a value.
-35. In the Unit field, enter or select a value.
-36. Click Save.
+To set up basic tax integration profile for China, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Tax integration \> Tax integration profiles**.
+1. Select **New**.
+1. In the **Profile ID** field, enter a value.
+1. In the **Profile name** field, enter a value.
+1. In the **Sales tax code** field, enter or select a value.
+1. In the **Validate amount limit** field, select **Yes**.
+1. In the **Maximum invoice amount** field, enter a number.
+1. In the **Include tax** field, select **Yes**.
+1. In the **Default commodity** field, enter a value.
+1. In the **Invoice auditor** field, enter or select a value.
+1. In the **Payment collector** field, enter or select a value.
+1. In the **Format mapping** field, enter or select a value.
+1. In the Non-deductible VAT invoices field, select **Yes**.
+1. Expand the **Default value of description and unit** section.
+1. Select **New**.
+1. In the list, mark the selected row.
+1. In the **Description** field, enter a value.
+1. In the **Unit** field, enter or select a value.
+1. Go to **Accounts receivable \> Customers \> All customers**.
+1. Select a customer.
+1. Select **Registration IDs**.
+1. Select **Add**.
+1. In the **Registration type** field, enter or select a value.
+1. In the **Registration number** field, enter a value.
+1. Select **Save**.
+1. Close the page.
+1. Expand the **Invoice and delivery** section.
+1. Select **Edit**.
+1. In the **Sales tax group** field, enter or select a value.
+1. Go to **Tax \> Setup \> Tax integration \> VAT invoice description**.
+1. Select **New**.
+1. In the **VAT invoice description ID** field, enter a value.
+1. In the **Description** field, enter a value.
+1. In the **Unit** field, enter or select a value.
+1. Select **Save**.
 
 
 
