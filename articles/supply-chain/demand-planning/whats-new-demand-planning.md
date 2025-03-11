@@ -15,9 +15,38 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.0.0.2502
+
+### New features introduced in version 1.0.0.2502
+
+This version of Demand planning adds several new features, as described in the following subsections.
+
+#### Autodetect seasonality is now available for all forecast algorithms (preview)
+
+Automatic seasonality pattern detection was introduced in Demand planning version 1.0.01700, but was previously only available for the ARIMA [forecast algorithm](forecast-algorithm-types.md). In this version, it's now available for all forecast algorithms.
+
+#### Time freeze
+
+*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions available in each forecast and are easy to maintain.
+
+#### Generative insights into seasonality patterns (preview)
+
+Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provides a confidence score and describes the seasonality pattern using natural language. The system also indicates the proportion of planning items that follow the pattern.
+
+#### Simplified security role dependencies
+
+It's no longer necessary to assign the *Basic user* security role to all users of Demand planning. Instead, Demand planning now incorporates all privileges from the *App Opener* security role into the *Demand planning contributor* and *Demand planning manager* security roles. Learn more in [Security roles and row-level security in Demand planning](users-access.md).
+
+### New fixes and improvements in version 1.0.0.2502
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- New demo data with seasonal clusters.
+
 ## Version 1.0.0.1700
 
-### New feature introduced in version 1.0.01700
+### New features introduced in version 1.0.01700
 
 This version of Demand planning adds several new features, as described in the following subsections.
 
