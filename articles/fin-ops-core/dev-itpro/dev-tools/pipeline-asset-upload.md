@@ -21,7 +21,7 @@ This article assumes you have a working knowledge of [Azure Pipelines](/azure/de
 > Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 
 > [!NOTE]
-> Versions 1.\*  and lower of the upload task are deprecated. Please update the task version to the latest available.
+> Versions 1.\*  and lower of the task are obsolete. Please update the task version to the latest available.
 
 > [!NOTE]
 > (Not required for Version 2.\* and later.) Version 1.\* of the upload task requires availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the upload task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).

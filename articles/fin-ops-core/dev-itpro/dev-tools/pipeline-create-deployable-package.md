@@ -22,6 +22,9 @@ This article assumes a working knowledge of [Azure Pipelines](/azure/devops/pipe
 > - Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 > - This Azure DevOps task requires that the X++ compiler tools be available on the agent. Either run this task on a build virtual machine (VM) agent, or use the Compiler Tools NuGet package. For more information about the NuGet package and how to install it in a pipeline, see [Build automation using Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md).
 
+> [!NOTE]
+> Versions 1.\*  and lower of the task are obsolete. Please update the task version to the latest available.
+
 ## Add the task to a pipeline
 
 To add the task to the build of your YML or Classic pipeline, search the task list for **Create Deployable Package**. The following table describes the options that are available for this task.
@@ -51,6 +54,9 @@ Compared to the legacy packaging on the build virtual machine, the packaging tas
 > If your source control repositores includes third-party binaries such as ISV modules, the packaging step has specifically includes those binaries. See the examples section of this article.
 
 ## Examples of search patterns
+
+> [!NOTE]
+> Ensure the leaf directory names resolved in the search have unique names to avoid deployment issues.
 
 The following example assumes the **Location of the X++ binaries to package** property is set to its default value of `$(Build.BinariesDirectory)`, which is the location where the X++ compiler produces the binaries.
 

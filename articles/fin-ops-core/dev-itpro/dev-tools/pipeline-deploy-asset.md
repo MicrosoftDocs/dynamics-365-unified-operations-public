@@ -31,6 +31,9 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 > [!NOTE]
 > The Azure DevOps pipeline must be run by a user with the **Environment manager** [role](../lifecycle-services/configure-lcs-security.md#configuring-project-security) in the corresponding Dynamics Lifecycle Services project.
 
+> [!NOTE]
+> Versions 3.\*  and lower of the task are obsolete. Please update the task version to the latest available.
+
 ## Dynamics 365 for Finance + Operations (on-premises) package deployment
 
 Starting with version 0.2.1239020 of the **Dynamics 365 finance and operations tools** extension, it is possible to deploy packages to local business data environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You can select **Software deployable package for on-premises environments** under the **Type of asset** field.
