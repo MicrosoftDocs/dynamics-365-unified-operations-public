@@ -41,6 +41,14 @@ Here are general guidelines for setting up a mobile device menu item for creatin
     - **Ship confirm** - Automates the ship confirmation process.
     - **Release and ship confirm** - Automates both the release to warehouse and ship confirmation processes.
 
+1. Use the **Validate license plate policy** setting to decide what validation will be performed against the license plate during the transfer order creation. Choose one of the following:
+
+    - **None** - No license plate validation will be performed on the mobile device.
+    - **Error** - The license plate validation will validate the selected license plate cannot be a target license plate on an open or in process work or license plate contains item with blocking status.
+
+>[!NOTE]
+> One of the ideas for the **Validate license plate policy** setting is to have the process be as fast as possible. That is why no validations are done by default (the **None** option). The assumption is that the warehouse worker will know if the license plate can be transfer to another warehouse.
+
 ## Add the mobile device menu item to a menu
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**
