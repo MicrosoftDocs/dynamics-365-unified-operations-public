@@ -4,7 +4,7 @@ description: Learn about how to implement multiple LCS projects and production e
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 02/03/2022
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -28,7 +28,7 @@ Every LCS implementation project that runs on the same Microsoft Entra tenant mu
 
 Because the licenses are associated with the Microsoft Entra tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. The allocation of licenses to LCS projects is described in [Edit the licenses allocated to projects](#edit-the-licenses-allocated-to-projects).
 
-For additional information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+For more information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 ## Disadvantages of multiple LCS projects
 
