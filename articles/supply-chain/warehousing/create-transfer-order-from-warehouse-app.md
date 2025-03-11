@@ -47,7 +47,7 @@ Here are general guidelines for setting up a mobile device menu item for creatin
     - *Error* – Check whether the selected license plate is a valid target for open or in-process work and whether it contains any items with blocking status.
 
 >[!NOTE]
-> The **Validate license plate policy** setting is intended to help speed up the process, which is why it's set to *None* by default (which skips license plate validation). This setting assumes that the warehouse worker knows whether the license plate can be transferred to another warehouse.
+> The **Validate license plate policy** setting is intended to help speed up the process, which is why it's set to skip license plate validation by default (*None*). The *None* value assumes that the warehouse worker knows whether the license plate can be transferred to another warehouse.
 
 ## Add the mobile device menu item to a menu
 
