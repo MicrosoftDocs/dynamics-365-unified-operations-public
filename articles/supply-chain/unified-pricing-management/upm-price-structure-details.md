@@ -45,6 +45,6 @@ Follow these steps to create and configure a price structure.
     - **Mandatory** – For price trees where the **Enable mandatory check** option is set to *Yes*, use this checkbox to mark each price component code that's mandatory in the sales order. If a price component code isn't applicable, an error will be shown.
 
     > [!NOTE]
-    > If you use multiple price structures, they can't include price component codes where the **Price component** field is set to *Auto charge*. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management. In other words, if an auto charge rule record is applicable, the auto charge will apply to the sales order.
+    > If you use multiple price structures, they can't include price component codes where the **Price component** field is set to *Auto charge*. Instead, the system will apply the standard auto charge logic. In other words, if an auto charge rule record is applicable, the auto charge will apply to the sales order.
 
 1. When you've set up all the lines that you need in your price structure, select **Save** on the Action Pane.

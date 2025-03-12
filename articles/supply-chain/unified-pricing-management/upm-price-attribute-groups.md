@@ -92,7 +92,7 @@ To add, edit, or delete a price attribute group, follow these steps.
 
     - **Friendly name** – Enter a descriptive or common name for the group. For new groups, the value initially matches the value that you entered in the **Price attribute group** field, but you can change it.
     - **Description** – Enter a short description of the group.
-    - **Help text** – Enter help text that will be shown to describe the group on other pages of Microsoft Dynamics 365 Supply Chain Management.
+    - **Help text** – Enter help text that will be shown to describe the group.
     - **Sales order matching scope** – If you're creating a new group, select the [scope](#scopes) (*Header* or *Line*) where this group will apply. This field becomes read-only after you save the group.
 
 1. On the Action Pane, select **Save**.

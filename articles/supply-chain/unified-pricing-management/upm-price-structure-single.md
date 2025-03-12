@@ -43,4 +43,4 @@ To set up the price structure for a company that uses a single structure, follow
 Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure or multiple price structures.
 
 - *If you're using a single price structure*, you can add the price component code for auto charges in the price trees.
-- *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic in Supply Chain Management to determine which auto charges apply to the sales order.
+- *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic to determine which auto charges apply to the sales order.
