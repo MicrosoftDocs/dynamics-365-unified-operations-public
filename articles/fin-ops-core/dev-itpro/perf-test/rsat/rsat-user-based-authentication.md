@@ -34,7 +34,7 @@ After this setup is completed, access to finance and operations apps test enviro
 
 When tests are run, RSAT requires passwords for test user accounts from parameter files. Test cases that don't have a test user account in parameter files are run by using the admin user from RSAT settings. RSAT then needs a password for that user too.
 
-An Azure key vault must be used to safely maintain passwords. Each company must create and grant access for the key vault that's used with RSAT.
+An Azure Key Vault must be used to safely maintain passwords. Each company must create and grant access for the key vault that's used with RSAT.
 
 The key vault is created as a resource under a subscription in the Azure portal. A user who has technical experience in your organization and the required access must create the key vault. The key vault is centrally created once and then shared by RSAT client installations.
 

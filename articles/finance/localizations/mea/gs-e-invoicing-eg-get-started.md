@@ -33,7 +33,7 @@ Before you begin the procedures in this article, complete the following prerequi
 - Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
 
 > [!NOTE]
-> Egyptian authorities provide the certificate for digital signing with the required key. They provide this certificate only as a hardware token device that can't be added to an Azure key vault. However, Dynamics 365 Finance enables files to be written to and read from an Azure file share, and that file share can be configured to enable external signing of electronic documents. To learn more, go to the Egyptian tax authority's website by using the link that is provided in [Egyptian eInvoicing & eReceipt SDK - Frequently asked questions](https://sdk.invoicing.eta.gov.eg/faq/).
+> Egyptian authorities provide the certificate for digital signing with the required key. They provide this certificate only as a hardware token device that can't be added to an Azure Key Vault. However, Dynamics 365 Finance enables files to be written to and read from an Azure file share, and that file share can be configured to enable external signing of electronic documents. To learn more, go to the Egyptian tax authority's website by using the link that is provided in [Egyptian eInvoicing & eReceipt SDK - Frequently asked questions](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## Configure the electronic invoicing feature
 

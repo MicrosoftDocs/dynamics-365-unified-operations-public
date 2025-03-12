@@ -439,7 +439,7 @@ $azureTemplate = @"
       "clientAppSecret": {
         "type": "String",
         "metadata": {
-          "description": "Specifies the Azure App ID client secret to in azure key vault."
+          "description": "Specifies the Azure App ID client secret to in Azure Key Vault."
         }
       },
       "clientAppSpObjectId": {

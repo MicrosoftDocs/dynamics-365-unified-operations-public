@@ -20,7 +20,7 @@ This article provides information about the components that are related to the a
 
 ## Microsoft Azure
 
-You use Microsoft Azure to set up a storage account and create secrets for an Azure key vault. These resources must be set up in your Azure subscription. They're fully owned and managed by you.
+You use Microsoft Azure to set up a storage account and create secrets for an Azure Key Vault. These resources must be set up in your Azure subscription. They're fully owned and managed by you.
 
 A storage account is a mandatory component of the Electronic Invoicing service. It's used to store all electronic files that Electronic invoicing processes or generates. Here are some examples of these files:
 

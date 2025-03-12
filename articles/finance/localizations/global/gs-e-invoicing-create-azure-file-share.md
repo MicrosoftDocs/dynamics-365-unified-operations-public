@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-Electronic documents that the Electronic Invoicing service generates can be stored in a Microsoft Azure file share that is provisioned under a storage account. To ensure that Electronic invoicing can access the file share, you must provide the connection string to the Electronic Invoicing service. In addition, to ensure that the connection string is securely stored, don't provide it directly. Instead, store it in an Azure key vault, and provide an Azure Key Vault secret.
+Electronic documents that the Electronic Invoicing service generates can be stored in a Microsoft Azure file share that is provisioned under a storage account. To ensure that Electronic invoicing can access the file share, you must provide the connection string to the Electronic Invoicing service. In addition, to ensure that the connection string is securely stored, don't provide it directly. Instead, store it in an Azure Key Vault, and provide an Azure Key Vault secret.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ To get the connection string, follow these steps.
 
     ![Screenshot that shows Azure file share connection strings.](../media/azure-file-share-connection-string.png)
 
-1. Store the **Connection string** value in a Key Vault secret. Learn how to set up Key Vault in [Configure an Azure key vault in the Azure portal](../global/gs-e-invoicing-create-azure-key-vault-azure-portal.md).
+1. Store the **Connection string** value in a Key Vault secret. Learn how to set up Key Vault in [Configure an Azure Key Vault in the Azure portal](../global/gs-e-invoicing-create-azure-key-vault-azure-portal.md).
 1. Refer to the Key Vault secret in Key Vault parameters. Learn more in [Configure Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 
 > [!IMPORTANT]
