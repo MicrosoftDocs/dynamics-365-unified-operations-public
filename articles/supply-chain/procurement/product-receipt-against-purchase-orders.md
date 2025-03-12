@@ -63,10 +63,11 @@ To automatically post product receipts for multiple purchase orders, follow thes
 
 After the system finishes processing product receipts for all lines in the purchase order, it sets the purchase order status to *Received* to indicate that the invoice can now be processed for the order.
 
-You can correct or cancel a product receipt from the product receipt journal page.
+To correct or cancel a product receipt, follow these steps.
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving Products** \> **Product Receipts** \> **Product receipt**.
-1. On the **Overview** FastTab, correct or cancel the product receipt as needed.
+1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving Products** \> **Product receipt**. The **Product receipt journal** page opens.
+1. On the **Overview** tab, select the product receipt that you want to correct or cancel.
+1. On the **Overview** tab toolbar, select **Correct** to make corrections or **Cancel** to cancel the product receipt.
 
 > [!NOTE]
 > When correcting a product receipt, you can only reduce the received quantity. To raise the quantity, you must post a new product receipt journal.
