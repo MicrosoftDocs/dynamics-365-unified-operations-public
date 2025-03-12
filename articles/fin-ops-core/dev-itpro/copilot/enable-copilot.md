@@ -44,7 +44,7 @@ The following illustration shows the components that are needed to use Copilot s
 
 ## Regional requirements
 
-Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see [Explore Copilot products by geography and languages](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
 
 ## Microsoft Power Platform requirements
 
