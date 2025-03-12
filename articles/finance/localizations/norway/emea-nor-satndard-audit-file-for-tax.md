@@ -55,8 +55,8 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 > The **Performance improvement for Norwegian SAF-T report** feature leverages new data sources introduced by the [**Performance enhancement for general ledger dimension set balance calculation**](../../general-ledger/financial-dimension-set-new.md) feature. Ensure that the **Performance enhancement for general ledger dimension set balance calculation** is enabled before activating the **Performance improvement for Norwegian SAF-T report** feature.
 >
 > Together with **Performance improvement for Norwegian SAF-T report** feature, it is recommended to use following or higher version of ER configurations:
-- SAF-T Format (NO) **190.176**
-- SAF-T Financial data model mapping **190.138**
+> - SAF-T Format (NO) **190.176**
+> - SAF-T Financial data model mapping **190.138**
 
 ### <a name="import"></a> Import ER configurations
 
