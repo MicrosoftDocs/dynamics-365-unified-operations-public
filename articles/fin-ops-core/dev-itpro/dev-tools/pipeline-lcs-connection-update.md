@@ -6,7 +6,7 @@ ms.author: snamilikonda
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 02/27/2025
+ms.date: 03/12/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
@@ -19,10 +19,9 @@ By default, new versions of the Microsoft Azure DevOps tasks for Dynamics 365 su
 
 ## Update existing service connections
 
-For existing service connections, 
-**Authentication Endpoint** setting must be updated to `https://login.microsoftonline.com/organizations`. If you're using a national cloud, see [National clouds](/azure/active-directory/develop/authentication-national-cloud) to find your relevant endpoint. The correct authentication endpoint will be set by default when you create a new service connection. The setting must be updated only for national clouds.
+For existing service connections, the **Authentication Endpoint** setting must be updated to `https://login.microsoftonline.com/organizations`. If you're using a national cloud, learn more in [National clouds](/azure/active-directory/develop/authentication-national-cloud) to find your relevant endpoint. The correct authentication endpoint is set by default when you create a new service connection. The setting must be updated only for national clouds.
 
-**Dynamics Lifecycle Services API Endpoint** – Provide the endpoint. If your Dynamics Lifecycle Services project is deployed in local geographies, ensure you are using the correct Dynamics Lifecycle Services API endpoint address. See [Supported geographies and endpoints](../deployment/deployment-options-geo.md#supported-geographies-and-endpoints) to find the correct API endpoint.
+**Dynamics Lifecycle Services API Endpoint** – Provide the endpoint. If your Lifecycle Services project is deployed in local geographies, ensure you are using the correct Lifecycle Services API endpoint address. Use the correct endpoint, learn more in [Supported geographies and endpoints](../deployment/deployment-options-geo.md#supported-geographies-and-endpoints).
 
 For more information about how to set up a connection, see [Create an LCS connection in Azure Pipelines](pipeline-lcs-connection.md).
 
