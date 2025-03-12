@@ -1,5 +1,5 @@
 ---
-title: Turn on the Unified pricing management module for your system (preview)
+title: Turn on the Unified pricing management module for your system
 description: Learn how to turn on the Unified pricing management module for your system. Information about prerequisites is included.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Turn on the Unified pricing management module for your system (preview)
+# Turn on the Unified pricing management module for your system
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 ## Prerequisites
 

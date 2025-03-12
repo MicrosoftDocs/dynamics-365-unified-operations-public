@@ -1,5 +1,5 @@
 ---
-title: Base price versions (preview)
+title: Base price versions
 description: Learn how base price versions work in Unified pricing management, including outlines on determining the base price and base price determination exceptions.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,12 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 ---
 
-# Base price versions (preview)
+# Base price versions
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.43 GA -->
 
 This article describes how base price versions work in Unified pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the level of the stock keeping unit (SKU). Unified pricing management lets you build selling prices by using *cost-plus pricing*. When you use cost-plus pricing, you first build a price structure that starts with the base price.
 

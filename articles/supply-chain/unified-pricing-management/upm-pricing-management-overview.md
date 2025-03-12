@@ -1,5 +1,5 @@
 ---
-title: Unified pricing management module overview (preview)
+title: Unified pricing management module overview
 description: Get an overview of the Unified pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Unified pricing management module overview (preview)
+# Unified pricing management module overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 This article provides an overview of the **Unified pricing management** module for Microsoft Dynamics 365 Supply Chain Management. For a video overview, go to [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
 
@@ -37,8 +35,6 @@ Supply Chain Management uses [Commerce Scale Unit (CSU) Core](../../commerce/dev
 - Simulate prices, and show detailed price calculations.
 - Use enhanced discount budget controls to help avoid margin leakage from fund consumption.
 - Use the [CSU-based pricing API](../../commerce/pricing-apis.md) for Dynamics 365 Commerce to enable pricing calculations to be retrieved by a native Commerce point of sale (POS) system and/or consumed by external applications to support different pricing scenarios.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Pricing components
 

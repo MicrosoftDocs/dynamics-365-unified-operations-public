@@ -1,5 +1,5 @@
 ---
-title: Customer and product price attribute groups (preview)
+title: Customer and product price attribute groups
 description: Learn how to configure customer and product price attribute groups for the Unified pricing management module, including usage examples.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ---
 
-# Customer and product price attribute groups (preview)
+# Customer and product price attribute groups
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 *Customer price attribute groups* and *product price attribute groups* let you create logic to define groups of customers and products, respectively. The membership of each group is based on the values of attributes that you assign to that group. These groups can make it easier to set up collections of customers and products that you can target in your pricing rules.
 
