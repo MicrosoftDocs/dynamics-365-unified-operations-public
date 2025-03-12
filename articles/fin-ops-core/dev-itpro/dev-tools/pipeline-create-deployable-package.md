@@ -34,7 +34,7 @@ To add the task to the build of your YML or Classic pipeline, search the task li
 | --- | --- | --- |
 | X++ Tools Path | Yes | The path of the location of the X++ tools. This location is either the **PackagesLocalDirectory\\bin** folder location on a build VM, or the location of the extracted NuGet file of the Compiler Tools NuGet package. |
 | Location of the X++ binaries to package | Yes | The path that contains the folders that contain all the binaries for the X++ packages (modules) that you want to include in the deployable package. If this task is used in a build pipeline, this folder is typically the same as the compiler output folder. |
-| Search pattern for binaries to package | Yes | Provide a name matching pattern for X++ package (module) names inside the path that is specified in the **Location of the X++ binaries to package** option. You can also specify a list of names instead of search patterns, or you can specify exclusion filters so that, for example, test packages aren't included. The search pattern looks for folders and validates that they contain a `bin` sub-folder with X++ assemblies. For more information, see [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns).  |
+| Search pattern for binaries to package | Yes | Provide a name matching pattern for X++ package (module) names inside the path that is specified in the **Location of the X++ binaries to package** option. You can also specify a list of names instead of search patterns, or you can specify exclusion filters so that, for example, test packages aren't included. The search pattern looks for folders and validates that they contain a `bin` subfolder with X++ assemblies. For more information, see [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns).  |
 | Filename and path for the deployable package | Yes | The path and file name of the deployable package. The output file is a zip file, and the file name typically includes version information to make the file easy to identify. |
 
 > [!NOTE]
@@ -49,10 +49,10 @@ When this task is run on the build VM, NuGet is already available, and no action
 
 ## Search for binaries to package
 
-Compared to the legacy packaging on the build virtual machine, the packaging task has to specify which modules to package and where to find them. In a standard pipeline, X++ modules under compilation are output in the binaries folder of the Azure DevOps agent. The packaging task by default looks in this folder for any X++ binaries. The search looks for folder names. The task checks inside these folders if there is a `/bin/` subfolder with X++ assemblies.
+Compared to the legacy packaging on the build virtual machine, the packaging task has to specify which modules to package and where to find them. In a standard pipeline, X++ modules under compilation are output in the binaries folder of the Azure DevOps agent. The packaging task by default looks in this folder for any X++ binaries. The search looks for folder names. The task checks inside these folders for a `/bin/` subfolder with X++ assemblies.
 
 > [!NOTE]
-> If your source control repositores include third-party binaries such as ISV modules, the packaging step has specifically included those binaries. See the examples section of this article.
+> If your source control repositories include third-party binaries such as ISV modules, the packaging step includes those binaries. See the examples section of this article.
 
 ## Examples of search patterns
 
@@ -64,7 +64,7 @@ The following example assumes the **Location of the X++ binaries to package** pr
 | Search pattern | Description |
 | --- | --- |
 | `*` | Find all X++ binaries in `$(Build.BinariesDirectory)`. This is the default value. |
-| `*`<br/>`!*Tests` | Find all X++ binaries, exclude any module names that end in `Tests`. |
+| `*`<br/>`!*Tests` | Find all X++ binaries, and exclude any module names that end in `Tests`. |
 | `MyPackage` | Find a module named `MyPackage` in the `$(Build.BinariesDirectory)` folder. |
 | `*`<br/>`$(Build.SourcesDirectory)\Metadata\MyBinaryPackage` | Include all X++ binaries in `$(Build.BinariesDirectory)`, and a module named `MyBinaryPackage` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
 | `*`<br/>`!*Tests`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV1`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV2` | Include all X++ binaries in `$(Build.BinariesDirectory)`, exclude any modules where the names end in `Tests`, and include two modules named `MyISV1` and `MyISV2` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
@@ -73,7 +73,7 @@ The following example assumes the **Location of the X++ binaries to package** pr
 
 #### In the Create Deployable Package step, what is the workaround for when I get the "There is not enough space on the disk" error?
 
-If the agent running the pipeline runs out of disk space during the **Create Deployable Package** step, the workaround is to introduce a delete files task in the pipeline just before this task to delete the contents of the `$(Build.SourcesDirectory)`. This task then creates space if no other part of the pipeline is using those files. The **Create Deployable Package** step is not dependent on the model source files because it's dependent on the build output from the build step.
+If the agent running the pipeline runs out of disk space during the **Create Deployable Package** step, the workaround is to introduce a delete files task in the pipeline just before this task to delete the contents of the `$(Build.SourcesDirectory)`. This task then creates space if no other part of the pipeline is using those files. The **Create Deployable Package** step isn't dependent on the model source files because it's dependent on the build output from the build step.
 
 
 
