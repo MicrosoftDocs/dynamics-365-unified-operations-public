@@ -151,6 +151,10 @@ This step reflects an invoice that is received from the vendor in Supply Chain M
 
 <!--KFM: Add link to new topic when available. -->
 
+## Landed Cost and direct delivery
+
+Direct delivery follows the standard behavior if goods-in-transit orders are not enabled. If enabled, they can be used only if a purchase order line that links to a direct delivery sales order is not split across multiple voyages and/or shipping containers. 
+
 ## Limitations of the Landed cost module
 
 Currently, the **Landed cost** module doesn't support the following items:

@@ -17,9 +17,9 @@ ms.custom:
 
 This article describes how to work with goods-in-transit orders. This type of order is used only by the **Landed cost** module. When an order or voyage is set up to use goods-in-transit processing, you don't have to wait until goods are received in the warehouse before you can invoice them. Instead, the goods are invoiced when they leave the vendor's warehouse or port of origin, and the financial costs are recognized when the voyage begins. This functionality lets you correctly take ownership of inventory, because goods often become the property of your organization when they leave the shipping port.
 
-When goods-in-transit orders are used, the financially updated items are received in an interim warehouse that is known as a *goods-in-transit warehouse*. The goods stay in this warehouse until they can be received at the final destination warehouse (that is, the warehouse that is defined on the purchase or transfer order line). They can't be manually removed. When a goods-in-transit order is invoiced, goods are immediately moved to the goods-in-transit warehouse to signify the change in ownership.
+When goods-in-transit orders are used, the financially updated items are received in an interim warehouse that is known as a *goods-in-transit warehouse*. The goods stay in this warehouse until they can be received at the final destination warehouse (that is, the warehouse that is defined on the purchase order line). They can't be manually removed. When a goods-in-transit order is invoiced, goods are immediately moved to the goods-in-transit warehouse to signify the change in ownership.
 
-As long as the items are in transit, they aren't available in inventory and can't be picked from inventory for a delivery. However, you can view the goods-in-transit inventory. You can also use the goods for master planning. In this case, use the confirmed delivery date on the purchase or transfer order line as the expected date when the inventory will be available for consumption. The following sections describe the setup that is required to process inventory and voyages by using the goods-in-transit concept and functionality.
+As long as the items are in transit, they aren't available in inventory and can't be picked from inventory for a delivery. However, you can view the goods-in-transit inventory. You can also use the goods for master planning. In this case, use the confirmed delivery date on the purchase order line as the expected date when the inventory will be available for consumption. The following sections describe the setup that is required to process inventory and voyages by using the goods-in-transit concept and functionality.
 
 ## Required setup for goods-in-transit orders
 
@@ -44,7 +44,7 @@ Landed cost adds two new types of warehouse: *goods in transit* and *under-deliv
 
 The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse. That warehouse will be used to process the goods on goods-in-transit orders before they are received at the final destination warehouse.
 
-When the purchase or transfer order invoice is posted for a voyage that is enabled for goods-in-transit functionality, inventory is purchased in the receiving warehouse. It's then immediately transferred to the configured goods-in-transit warehouse. This transfer signifies the change in ownership of the goods that haven't yet physically arrived at the destination warehouse.
+When the purchase order invoice is posted for a voyage that is enabled for goods-in-transit functionality, inventory is purchased in the receiving warehouse. It's then immediately transferred to the configured goods-in-transit warehouse. This transfer signifies the change in ownership of the goods that haven't yet physically arrived at the destination warehouse.
 
 In general, one goods-in-transit warehouse is enough for each site if Site and Warehouse are the only inventory dimensions that are used for inventory management. If the Location inventory dimension is also used, a goods-in-transit warehouse must be set up for each combination of a site and warehouse, so that the default location can also be specified.
 
@@ -66,12 +66,12 @@ You can review and manage goods-in-transit orders directly in the **Landed cost*
 
 To manage goods in transit, Landed cost uses a two-step procedure:
 
-1. When a purchase or transfer order is invoiced, a goods-in-transit order is created. A status of *In transit* is assigned to it.
+1. When a purchase order is invoiced, a goods-in-transit order is created. A status of *In transit* is assigned to it.
 
     > [!NOTE]
     > After the goods-in-transit order is created, the invoice date can't be changed.
 
-1. The goods-in-transit order is processed on the **Goods in transit orders** page. It's then received in the warehouse that is specified on the purchase or transfer order. At that point, the status is changed to *Received*.
+1. The goods-in-transit order is processed on the **Goods in transit orders** page. It's then received in the warehouse that is specified on the purchase order. At that point, the status is changed to *Received*.
 
 To work with goods-in-transit orders, go to **Landed cost** \> **Periodic tasks** \> **Goods in transit orders**.
 
@@ -131,15 +131,15 @@ The configuration settings for these processes resemble the settings for the [pu
 
 Workers using the Warehouse Management mobile app can register the receipt of goods in transit even when multiple orders are associated with the same voyage, container, item number, and purchase order number. To do so, the worker starts by entering the voyage, container, item, and order numbers, and can then select the relevant goods-in-transit order from a drop-down list.
 
-#### Differences in mobile device receiving for a goods-in-transit order flow versus a standard purchase or transfer order flow
+#### Differences in mobile device receiving for a goods-in-transit order flow versus a standard purchase order flow
 
-The receipt process for goods-in-transit orders via the **Landed cost** module on a mobile device isn't always consistent with the receipt process for purchase or transfer orders when Landed cost and goods-in-transit orders aren't enabled.
+The receipt process for goods-in-transit orders via the **Landed cost** module on a mobile device isn't always consistent with the receipt process for purchase orders when Landed cost and goods-in-transit orders aren't enabled.
 
 Here are some examples of the differences:
 
-- The **Voyage** and **Shipping Container** fields must be set for goods-in-transit receiving. By contrast, these fields aren't needed for standard purchase and transfer order receiving.
+- The **Voyage** and **Shipping Container** fields must be set for goods-in-transit receiving. By contrast, these fields aren't needed for standard purchase order receiving.
 - *Assign putaway cluster* functionality for the putaway process isn't available for goods-in-transit receiving.
-- In the normal receipt process that doesn't involve goods-in-transit orders, the worker can cancel in-process work. The license plate is then automatically deregistered. By contrast, putaway work can't be canceled at mid-stage for goods-in-transit receiving. In this situation, a transfer journal must be used to move items back to the receiving location. The registration must then be manually undone.
+- In the normal receipt process that doesn't involve goods-in-transit orders, the worker can cancel in-process work. The license plate is then automatically deregistered. By contrast, putaway work can't be canceled at mid-stage for goods-in-transit receiving. In this situation, a movement journal must be used to move items back to the receiving location. The registration must then be manually undone.
 
 #### <a name="batch-serial"></a>Receive goods-in-transit orders by using a mobile device when serial/batch numbers are enabled
 
@@ -178,7 +178,7 @@ If you cancel a work header for an over transaction that has already been regist
 
 ### Marking for goods-in-transit stock
 
-Goods-in-transit transactions are marked to the purchase or transfer order transactions. They are then considered in inventory closing and are reflected in the inventory aging report as zero-on-hand items that have inventory value.
+Goods-in-transit transactions are marked to the purchase order transactions. They are then considered in inventory closing and are reflected in the inventory aging report as zero-on-hand items that have inventory value.
 
 > [!NOTE]
 > If sales orders are marked to purchase orders to reserve incoming stock, goods-in-transit orders will be split if a purchase order line is marked to multiple sales order lines. Any goods-in-transit order that is split must be manually received one by one.
@@ -191,7 +191,3 @@ To work with posting profiles, go to **Inventory management** \> **Setup** \> **
 
 - *Landed cost, goods-in-transit* – Specify the posting rules for goods-in-transit management.
 - *Landed cost, cost charge accrual* – Specify the posting rules for charge account accrual.
-
-## Cancel or reverse a goods-in-transit order
-
-To reverse the creation of a goods-in-transit order and the movement of items to the goods-in-transit warehouse, move the received goods out of the goods-in-transit warehouse by using a movement journal.
