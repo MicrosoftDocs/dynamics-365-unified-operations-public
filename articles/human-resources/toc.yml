@@ -1175,6 +1175,8 @@ items:
     items:
     - name: Overview 
       href: transpar-note-hr.md
+    - name: Employee self service leave summary FAQ
+      href: ess-transp-faq.md
     - name: Employee self service workspace summary
       href: ess-workspace-summary.md
   - name: Development and administration for finance and operations apps 
