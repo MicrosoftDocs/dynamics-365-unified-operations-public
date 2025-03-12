@@ -18,7 +18,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 # Budget funds available
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 This article explains the **Only track amounts in the budget funds available calculation** parameter and provides information that helps you configure budget control to optimize management of your organization's financial resources.
 
