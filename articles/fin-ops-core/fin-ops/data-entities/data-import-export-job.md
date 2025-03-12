@@ -149,11 +149,11 @@ Here is an overview of the changes made. (Using the export flow as an example, a
 
 Previous Design: There was one regular batch job with one runtime batch task.
 
-![image](https://github.com/user-attachments/assets/06c4ab10-bad3-4f62-826d-20f9c786962a)
+![image](media/previous-design.jpg)
 
 New Design: There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1.
 
-![image](https://github.com/user-attachments/assets/91f7e4ec-aa8e-4486-9b11-4c56fa7bd83c)
+![image](media/new-design.jpg)
 
 > [!NOTE]
 > If you've customized your code that involves DMFBatchImporter, DMFImportTaskScheduler, DMFBatchExporter, DMFExportTaskScheduler classes, you may encounter issues with the import/export in batch feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
