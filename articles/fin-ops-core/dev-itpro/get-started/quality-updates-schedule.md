@@ -172,7 +172,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | March 17 to March 21, 2025 | NA |
+| Station 1 | March 17 to March 20, 2025 | NA |
 | Station 2 | March 24 to March 27, 2025 | April 5 to April 6, 2025 |
 | Station 3 | March 25 to March 28, 2025 | April 5 to April 6, 2025 |
 | Station 4 | March 31 to April 3, 2025 | April 12 to April 13, 2025 |
