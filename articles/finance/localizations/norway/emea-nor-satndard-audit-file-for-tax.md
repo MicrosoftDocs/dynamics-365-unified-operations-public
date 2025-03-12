@@ -43,7 +43,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 
     - **Optimize datasets memory consumption at ER reports runtime**
     - **Performance improvement for Norwegian SAF-T report**. This feature is available in 10.0.44 version of Finance and is recommended to improve the report performance.
-    - **Performance enhancement for general ledger dimension set balance calculation**. This feature must be enabled if you are enabling the **Performance improvement for Norwegian SAF-T report** feature. For more information about **Performance enhancement for general ledger dimension set balance calculation** feature, see [New financial dimension sets](../../finance/general-ledger/financial-dimension-set-new.md)
+    - **Performance enhancement for general ledger dimension set balance calculation**. This feature must be enabled if you are enabling the **Performance improvement for Norwegian SAF-T report** feature. For more information about **Performance enhancement for general ledger dimension set balance calculation** feature, see [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md)
 3. Select **Enable now**.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 > - 10.0.42:
 > - 10.0.41:
 >
-> The **Performance improvement for Norwegian SAF-T report** feature leverages new data sources introduced by the [**Performance enhancement for general ledger dimension set balance calculation**](../../finance/general-ledger/financial-dimension-set-new.md) feature. Ensure that the **Performance enhancement for general ledger dimension set balance calculation** is enabled before activating the **Performance improvement for Norwegian SAF-T report** feature.
+> The **Performance improvement for Norwegian SAF-T report** feature leverages new data sources introduced by the [**Performance enhancement for general ledger dimension set balance calculation**](../../general-ledger/financial-dimension-set-new.md) feature. Ensure that the **Performance enhancement for general ledger dimension set balance calculation** is enabled before activating the **Performance improvement for Norwegian SAF-T report** feature.
 >
 > Together with **Performance improvement for Norwegian SAF-T report** feature, it is recommended to use following or higher version of ER configurations:
 - SAF-T Format (NO) **190.176**
