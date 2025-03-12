@@ -16,7 +16,7 @@ ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, Vend
 
 This article describes the various options for registering products as received.
 
-Product receipt is the process of recording that products that were ordered have been received, so that the purchase order (PO) lines can then be processed for invoicing. In some cases, products go through preregistration, where additional information from the supplier is recorded before the products are received. When products arrive, they're first marked as **Registered**. The products might then go through other processes, such as quality management, before they're finally marked as **Received**.
+Product receipt is the process of recording that products that were ordered were received so that the purchase order (PO) lines can be processed for invoicing. In some cases, products go through preregistration, where additional information from the supplier is recorded before the products are received. When products arrive, they're first marked as **Registered**. The products might then go through other processes, such as quality management, before they're finally marked as **Received**.
 
 ## Preregistration (ASN)
 
@@ -52,28 +52,28 @@ To automatically post product receipts for multiple purchase orders, follow thes
 1. In the **Posting product receipt** dialog, on the **Settings** FastTab toolbar, select **Select**.
 1. In the **Purchase update** dialog, use the **Range** tab to specify selection criteria for finding the purchase orders you want to post.
 1. Select **OK** to return to the **Posting product receipt** dialog. The purchase orders that match the criteria you specified are displayed on the **Overview** FastTab.
-1. On the **Overview** FastTab, enter the product receipt identifier in the **Product receipt** column for each purchase order in the grid. This setting enables the system to post the product receipt.
+1. On the **Overview** FastTab, enter the product receipt identifier in the **Product receipt** column for each purchase order in the grid. This information enables the system to post the product receipt.
 
-    A product receipt identifier must be specified when each product is received. It's typically a reference to the packing slip from the supplier. This identifier is required for accounting because it enables checks or audits of supplier packing slips against what has been received and the accounted inventory or expense. <!-- KFM: I think this comment belongs here, but I'm  not sure. Please confirm or move it again. -->
+    A product receipt identifier must be specified when each product is received. It's typically a reference to the packing slip from the supplier. This identifier is required for accounting because it enables supplier packing slips to be checked against what was received and against the accounted inventory or expense.
 
 1. Select **Batch** to open the **Batch processing** dialog, where you can set up the [batch job](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) that will do the posting.
 
 1. Select **OK** to return to the **Posting product receipt** dialog.
 1. Select **OK** to close the **Posting product receipt** dialog.
 
-After the system finishes processing product receipts for all line in the Purchase Order, it sets the purchase order status to *Received* to indicate that the invoice can be processed for the order.
+After the system finishes processing product receipts for all lines in the purchase order, it sets the purchase order status to *Received* to indicate that the invoice can now be processed for the order.
 
 You can correct or cancel a product receipt from the product receipt journal page.
 
-1. Go to **Procurement and sourcing** \> **Purchase orders** \>**Receiving Products**/> **Product Receipts**/>**Product receipt**.
-1. On the **Overview** FastTab, correct or cancel Product Receipts.
+1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving Products** \> **Product Receipts** \> **Product receipt**.
+1. On the **Overview** FastTab, correct or cancel the product receipt as needed.
 
 > [!NOTE]
-> You can only reduce the received quantity while correcting a product receipt. To raise the quantity, post a new product receipt journal.
+> When correcting a product receipt, you can only reduce the received quantity. To raise the quantity, you must post a new product receipt journal.
 
 ## Auto post product receipts when using WMS
 
-Auto posting product receipts works differently if you are using warehouse management processes (WMS). Learn more in [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md).
+Auto posting works differently if you're using warehouse management processes (WMS). Learn more in [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md).
 
 ## Related information
 
