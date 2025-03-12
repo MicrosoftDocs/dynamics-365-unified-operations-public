@@ -27,13 +27,36 @@ This article includes country/region-specific information about how to set up th
 
 To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, complete the following setup tasks:
 
-1. [Import Electronic reporting (ER) configurations](#import).
-2. [Set up the organization registration number](#organization-number).
-3. [Set up the tax registration numbers of the company](#registration-number).
-4. [Set up the ER format on the **General ledger parameters** page](#parameters).
-5. [Associate sales tax codes used in Finance with Norwegian standard value-added tax (VAT) codes](#sales).
-6. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#mainaccounts).
-7. [Enable features in Feature management](#features).
+1. [Enable features in Feature management](#features).
+2. [Import Electronic reporting (ER) configurations](#import).
+3. [Set up the organization registration number](#organization-number).
+4. [Set up the tax registration numbers of the company](#registration-number).
+5. [Set up the ER format on the **General ledger parameters** page](#parameters).
+6. [Associate sales tax codes used in Finance with Norwegian standard value-added tax (VAT) codes](#sales).
+7. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#mainaccounts).
+8. [Complete the configuration of application-specific parameters](#asp)
+
+### <a name="features"></a>Enable features in Feature management
+
+1. Go to **Feature management** > **All**.
+2. In the feature list, find and select the following features:
+
+    - **Optimize datasets memory consumption at ER reports runtime**
+    - **Performance improvement for Norwegian SAF-T report**. This feature is available in 10.0.44 version of Finance and is recommended to improve the report performance.
+    - **Performance enhancement for general ledger dimension set balance calculation**. This feature must be enabled if you are enabling the **Performance improvement for Norwegian SAF-T report** feature. For more information about **Performance enhancement for general ledger dimension set balance calculation** feature, see [New financial dimension sets](../finance/general-ledger/financial-dimension-set-new.md)
+3. Select **Enable now**.
+
+> [!NOTE]
+> To enhance SAF-T report performance for legal entities with a primary address in Norway, we recommend enabling the **Performance improvement for Norwegian SAF-T report** feature. This feature is available in Finance version 10.0.44 and also in the following builds of earlier versions:
+> - 10.0.43:
+> - 10.0.42:
+> - 10.0.41:
+>
+> The **Performance improvement for Norwegian SAF-T report** feature leverages new data sources introduced by the **Performance enhancement for general ledger dimension set balance calculation** feature. Ensure that the **Performance enhancement for general ledger dimension set balance calculation** is enabled before activating the **Performance improvement for Norwegian SAF-T report** feature.
+>
+> Together with **Performance improvement for Norwegian SAF-T report** feature, it is recommended to use following or higher version of ER configurations:
+- SAF-T Format (NO) **190.176**
+- SAF-T Financial data model mapping **190.138**
 
 ### <a name="import"></a> Import ER configurations
 
@@ -79,12 +102,10 @@ If the VAT registration number isn't specified among the registration IDs of the
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (NO)**.
 
-![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page.](../media/nor-saf-gl-parameters.jpg)
-
 > [!NOTE]
-> If you enable the [**Standard Audit File for Tax (SAF-T) electronic report**](../../general-ledger/standard-audit-file.md) feature in the **Feature management** workspace, the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page will include the **Use common menu item** checkbox in addition to the **Standard Audit File for Tax (SAF-T)** field.
+> In legal entities with primary address in Norway, the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page will include the **Use common menu item** checkbox in addition to the **Standard Audit File for Tax (SAF-T)** field.
 >
-> To run the **SAF-T Format (NO)** ER configuration, you must *clear* the **Use common menu item** checkbox. Select the **Use common menu item** checkbox only if you plan to use an ER configuration that can be run directly from the **Electronic reporting** workspace and doesn't require any data preprocessing on the Finance app side.
+> To run the **SAF-T Format (NO)** ER configuration, you must *clear* the **Use common menu item** checkbox. Select the **Use common menu item** checkbox only if you plan to use an ER configuration that can be run directly from the **Electronic reporting** workspace and doesn't require any data preprocessing on the Finance app side. For more information about common **Standard Audit File for Tax (SAF-T)** feature, see [**Standard Audit File for Tax (SAF-T) electronic report**](../../general-ledger/standard-audit-file.md).
 
 ### <a name="sales"></a> Associate sales tax codes used in Finance with Norwegian standard VAT codes
 
@@ -162,16 +183,15 @@ To associate the main accounts that are used in Finance with Norwegian standard 
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 
-### <a name="features"></a>Enable features in Feature management
+### <a name="asp"></a> Complete the configuration of application-specific parameters
 
-1. Go to **Feature management** > **All**.
-2. In the feature list, find and select the following features:
+Regardless of whether you use the options to associate standard tax codes and standard main accounts with application-specific parameters, you must complete the configuration of the application-specific parameters.
 
-    - **Optimization of query data source creation time during execution of ER reports**
-    - **Optimize datasets memory consumption at ER reports runtime**
-    - **Dimension attributes values collection optimization in 'MasterFiles' report section of SAF-T for Norway**
-
-3. Select **Enable now**.
+1. In the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** ER format. 
+2. Make sure that the company you are working in is the company for which you want to set up the **Application specific parameters**.
+3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
+5. Change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ## Generate the Norwegian SAF-T Financial data report
 
@@ -203,12 +223,30 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
     Where *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Currency* represents the document currency.
 
-6. Select **Include zero lines** to include documents that have a zero amount on the report. This option is available as of Finance version 10.0.37. In the **Consolidation account group** field, select the name of the consolidation account group that you created and set up for [Norwegian standard accounts or an Income statement](#mainaccounts).
-7. Select the **Use grouping category** checkbox to force **GroupingCategory** and **GroupingCode** nodes to be generated instead of the **StandardAccountID** element in the **GeneralLedgerAccounts** node. This checkbox is available as of Finance version 10.0.37. The value of **GroupingCategory** is copied from the name of the consolidation account group. **Use grouping category** parameter is mandatory as of January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30. It is recommended to use following or higher version of ER configurations:
+6. Select **Include zero lines** to include documents that have a zero amount on the report.
+7. In the **Consolidation account group** field, select the name of the consolidation account group that you created and set up for [Norwegian standard accounts or an Income statement](#mainaccounts). This parameter is mandatory as of Janury 1, 2025.
+8. Select the **Use grouping category** checkbox to force **GroupingCategory** and **GroupingCode** nodes to be generated instead of the **StandardAccountID** element in the **GeneralLedgerAccounts** node. The value of **GroupingCategory** is copied from the name of the consolidation account group. **Use grouping category** parameter is mandatory as of January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30. It is recommended to use following or higher version of ER configurations:
 - SAF-T Format (NO) **175.137**
 - SAF-T Financial data model mapping **175.92**
+9. In the **Execution mode** parameter select one of the following available options:
+  - **Single file**. The SAF-T will be generated as one file that includes all the section: Header, MasterFiles, GeneralLedgerEntries.
+  - **Separate files**. The SAF-T will be generated as two ore more files:
+    * *Header and MasterFiles*. This file includes the header information and all the MasterFiles.
+    * *Header and GeneralLedgerEntries*. This file can be automatically split into multiple files depending on the data volume included in the reporting period. The files are split to comply with the 2 GB of source XML data limitation specified as the Altinn portal and file size limitations.
+  - **Only master files**. The SAF-T will be generated including the Header and MasterFiles sections only.
+  - **Only general ledger entries**. The SAF-T will be generated including the Header and GeneralLedgerEntries sections only. This file can be automatically split into multiple files depending on the data volume included in the reporting period. The files are split to comply with the 2 GB of source XML data limitation specified as the Altinn portal and file size limitations.
 
 You can also apply filters for the **Main accounts** and **General journal entry** fields by using **Records to include** FastTab in the dialog box for the report.
+
+A SAF-T for a long period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. Therefore, we recommend that you use batch jobs. The dialog box for the SAF-T report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+To review batch jobs or find a generated file, follow these steps.
+
+1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+2. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.
+3. To view a file, select **Show files**, find the file that you need, and then select **Open**.
+
+Learn more about how to configure a destination for each ER format configuration and its output component in [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 ## Report naming and splitting
 
