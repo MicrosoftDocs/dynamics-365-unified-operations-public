@@ -25,7 +25,7 @@ The following procedure uses the BRMF demo company.
 
 To to create a purchase request for quotation (RFQ), follow these steps.
 
-1. Go to **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
+1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
 1. Select **New**.
 1. In the **Document title** field, enter a value.
 1. In the **Site** field, enter or select a value.
