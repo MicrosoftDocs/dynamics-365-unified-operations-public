@@ -25,7 +25,7 @@ The following procedure uses the BRMF demo company.
 
 To post a fiscal document you receive from the acquisition of inventory goods where PIS/COFINS taxes are deducted, follow these steps.
 
-1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
+1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.
 1. In the **Vendor account** field, enter or select a value.
 1. Select **OK**.
