@@ -73,7 +73,9 @@ To set up your flexible sampling plans, follow these steps.
 
 ## Set up the quality association for the flexible sampling plan
 
-Quality orders using flexible sampling plans are set up to be automatically generated using a quality assoication. Learn more about managing quality assoications in [Quality associations](quality-associations.md)
+Quality orders using flexible sampling plans are set up to be automatically generated using a quality assoication. 
+
+Learn more about managing quality assoications in [Quality associations](quality-associations.md)
 
 ## The Flexible sampling plan activities page
 

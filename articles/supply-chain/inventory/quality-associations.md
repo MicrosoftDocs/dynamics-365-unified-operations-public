@@ -69,6 +69,11 @@ The following table provides more information about how quality orders can be ge
 <!-- KFM: Add a section here about **Check for quality association** option for disposition codes. -->
 
 
+## Quality associations and flexible sampling plans
+
+Instead of selecting a fixed **Test group** and **Item sampling** you can set up a flexible sampling plan, which is a test strategy that based on successful test validation allows you to change both test and sample sizes over times. To use **Flexible sampling** in the **Specification** FastTab, select **Flexible sampling** and then a **Flexible sampling plan code**. Learn more about how to set up **Flexible sampling plans** here: [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md)
+
+
 ## Examples of automatic generation of quality orders
 
 ### Purchasing
