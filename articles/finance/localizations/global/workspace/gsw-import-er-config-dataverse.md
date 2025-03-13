@@ -4,7 +4,7 @@ description: Learn how to import Electronic reporting (ER) configurations from M
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 11/06/2024
+ms.date: 03/13/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
