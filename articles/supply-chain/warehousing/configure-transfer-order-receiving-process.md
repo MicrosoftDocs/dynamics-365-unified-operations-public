@@ -1,8 +1,8 @@
 ---
 title: Configure transfer order receiving process
 description: Learn how to configure the receiving process for a warehouse.
-author: Samuel Oliveira
-ms.author: sservulo
+author: sservulo
+ms.author: samuoliveira
 ms.topic: conceptual
 ms.date: 03/10/2025
 ms.custom: bap-template
@@ -21,7 +21,8 @@ This article explains how to configure the receiving process for a warehouse. It
 This parameter makes it possible to split the registration and cost-update processes for transfer orders, which lets receiving clerks use the Warehouse Management mobile app to update a transfer order receipt without waiting for any financial background processing, regardless of the receiving flow. If the process is split, the transfer order receiving can be done manually or as part of a scheduled batch job after the registration.
 
 Available options and effect to the system:
-|*Option*|*Effect*|
+
+|Option|Effect|
 |---|---|
 |Combine the registration and receiving|Both registration and receiving are executed together.|
 |Split the registration and receiving for license plate receiving|Registration and receiving are executed separately for license plate receiving.|
@@ -34,7 +35,8 @@ To change this parameter, go to the **Warehouse management parameters** \> **Gen
 This parameter changes when the associated ASN data is deleted during the transfer order receiving process. It was introduced to cover scenarios where ASN data is required beyond default settings on the receiving process, for example when partially receiving a transfer order with multiple license plates from both mobile device and form.
 
 Available options and effect to the system:
-|*Option*|*Effect*|
+
+|Option|Effect|
 |---|---|
 |Default|ASN is deleted in the following cases:<br/> - On put away work creation or cancellation;<br/> - On mobile application receiving, if work policy is set to not create work;<br/> - On transfer order line registration from the form;<br/> - On transfer order receipt posting;|
 |On transfer order status received|ASN is deleted in the following cases:<br/> - On put away work creation or cancellation;<br/> - On mobile application receiving, if work policy is set to not create work;<br/> - When transfer order status is updated to "Received";|
