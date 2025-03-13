@@ -24,7 +24,7 @@ The following procedure uses the BRMF demo company.
 
 To cancel an incorrect purchase complementary fiscal document and provide a reason for the cancellation, follow these steps.
 
-1. Go to **Accounts payable \> Fiscal documents \> All purchase complementary fiscal documents**.
+1. In Dynamics 365 Finance, go to **Accounts payable \> Fiscal documents \> All purchase complementary fiscal documents**.
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
 1. Select **Cancel fiscal document** to open the drop dialog.
