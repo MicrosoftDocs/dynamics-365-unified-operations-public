@@ -6,7 +6,7 @@ description: This article describes the download sessions used with Commerce Dat
 author: aneesmsft
 ms.date: 02/06/2025
 ms.topic: how-to
-ms.search.form: RetailCDXDownloadSessionDataStore
+ms.search.form:
 audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -33,16 +33,4 @@ The **Enhanced download sessions** feature provides multiple improvements to hel
 When the Enhanced download sessions feature is enabled, the Download sessions form will show a summary to help administrators quickly identify issues that may be affecting multiple channels and devices and impacting the offline readiness of stores. This includes top failing jobs, top suspended jobs, and top errors. The summary will also provide inline filters to quickly view the impacted jobs with just a single click.
 
 For each failed job, the table will also provide an associated Error ID. These Error IDs are dynamically generated and automatically linked to relevant articles. This enables administrators to easily access up-to-date documentation and troubleshooting guides to address the issues.
-
-## Download sessions troubleshooting
-
-When a job running as a part of the a download session fails, a dynamic Error ID is generated based on the type of the error. Using the table below administrators can troubleshoot and address issues related to download sessions based on the Error ID.
-
-| Error ID | Description |
-|-------|-------------|
-| CDX-48B-436F84 | TBD |
-| CDX-53A-B40F45 | TBD |
-
-
-
 
