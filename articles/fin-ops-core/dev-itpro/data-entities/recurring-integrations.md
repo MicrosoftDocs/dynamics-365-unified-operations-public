@@ -6,7 +6,7 @@ ms.author: gned
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 10/23/2024
+ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
@@ -75,7 +75,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 For more information, see [Process and consume data packages in the finance and operations solutions](../lcs-solutions/process-data-packages-lcs-solutions.md).
 
 > [!NOTE]
-> Parallel package imports using Recurring integration or Package REST APIs are only supported if the 'Enhanced parallel package import' option is enabled. To enable it, go to Data Management -> Framework Parameters -> Compatibility Options -> Enhanced Parallel Package Import.
+> Parallel package imports using Recurring integration or Package REST APIs are only supported if the **Enhanced parallel package import** option is enabled. To enable **Enhanced parallel package import**, go to **Data Management \> Framework Parameters \> Compatibility Options \> Enhanced Parallel Package Import**.
 
 ## Manage recurring data jobs
 1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.
@@ -84,7 +84,7 @@ For more information, see [Process and consume data packages in the finance and 
     ![Manage scheduled data jobs.](./media/image013.jpg)
 
 > [!NOTE]
-> Recurring job for 'copy into legal entity' related project is not supported.
+> The recurring job for **Copy into legal entity** related to the project isn't supported.
 
 ## Clean up recurring data job messages
 
