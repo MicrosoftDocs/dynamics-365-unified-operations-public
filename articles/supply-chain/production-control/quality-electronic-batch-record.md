@@ -88,37 +88,32 @@ When using the Batch production record inquiry from the Production control modul
 
 The inquiry will contain the BOM/Formula version that was used in the production process along with the proposed ingredient quantities that were estimated to complete the production. This information will also contain the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredient that may have been substituted during the production process. The Batch Production Record will give the user the ability to view the Inventory batch attributes and any Quality orders for the produced items as well as the Inventory batch attributes, Vendor batch details and Quality orders for the raw material items used in the production process.
 
-| **Path: Production control** \> **Inquiries** \> **Electronic batch records** \> **Batch production record** |  |  |
-|-------------------------|-------------------------|-------------------------|
-| **Label Name** | **Description** | **Examples/Hints** |
-| **Criteria** |  |  |
-| Item number | <blockquote></br>Select the item for which to list the manufacturing information</br></blockquote> | Field drop down will only list items with a 'Production type' of BOM, Formula or Planning item. |
-| Batch production record | <blockquote></br>Select the Batch production record ID for a corresponding Batch or Production order</br></blockquote> | Required field. If selected before the item number, the Item number field will default to the item number of the Batch or Production order related to the Batch production record ID. |
-| **FastTabs** |  |  |
-| Production order | <blockquote></br>Shows the Batch or Production order related to the specified Batch production record ID</br></blockquote> |  |
-| Report as finished | <blockquote></br>Shows the produced items (including co/by products for formula items) for the Batch or Production order related to the specified Batch production record ID</br></blockquote> | Tab will be populated when the RAF production journal has been created.</br>Use the Inventory batch attributes button to open the Inventory batch attributes form to view the attribute information for the selected record.</br>Inventory batch attributes button will only be active if there is Batch number for the selected record.</br>Use the Quality orders button to view the Quality orders for the selected record. |
-| BOM/Formula | <blockquote></br>List the raw material items used in the production of the selected item</br></blockquote> |  |
-| Picking list | <blockquote></br>Shows the information from the Picking list production journal of the Batch or Production order</br></blockquote> | Tab will be populated when the Picking list production journal has been created.</br>Use the Inventory batch attributes button to open the Inventory batch attributes form to view the attribute information for the selected record.</br>Inventory batch attributes button will only be active if there is Batch number for the selected record.</br>Use the Vendor batch details button to open the Batches form to view the vendor batch information for the selected record.</br>Vendor batch details button will only be active if there is Batch number for the selected record.</br>Use the Quality orders button to view the Quality orders for the selected record. |
-| Route | <blockquote></br>List the Route version used on the Batch or Production order</br></blockquote> |  |
-| Route card | <blockquote></br>Shows the information from the Route card production journal of the Batch or Production order</br></blockquote> | Tab will be populated when the Route card production journal has been created. |
-| Job card | <blockquote></br>Shows the information from the Job card production journal of the Batch or Production order</br></blockquote> | Tab will be populated when the Job card production journal has been created. |
-| **Tabs** |  |  |
-| Overview (Report as finished) | <blockquote></br>List the lines for each produced item based on the Report as finished production journal</br></blockquote> | If there were multiple (partial) RAFs, then the overview tab will list each line. |
-| Transactions (Report as finished) | <blockquote></br>List the individual transaction lines for the produced items from the Inventory Registration</br></blockquote> |  |
-| Overview (Picking list) | <blockquote></br>List the lines for each raw material item based on the Picking list production journal</br></blockquote> | If there were multiple (partial) Picking or if there is an Automatic reservation (ex. at Estimation), then the overview tab will list each line. |
-| Transactions (Picking list) | <blockquote></br>List the individual transaction lines for each raw material item from the Inventory Reservation</br></blockquote> |  |
+- **Path: Production control > Inquiries > Electronic batch records > Batch production record**
+- **Label Name** – **Description** – **Examples/Hints**
+- **Criteria**
+  - **Item number** – Select the item for which to list the manufacturing information – Field drop down will only list items with a 'Production type' of BOM, Formula or Planning item.
+  - **Batch production record** – Select the Batch production record ID for a corresponding Batch or Production order – Required field. If selected before the item number, the Item number field will default to the item number of the Batch or Production order related to the Batch production record ID.
+- **FastTabs**
+  - **Production order** – Shows the Batch or Production order related to the specified Batch production record ID
+  - **Report as finished** – Shows the produced items (including co/by products for formula items) for the Batch or Production order related to the specified Batch production record ID – Tab will be populated when the RAF production journal has been created. Use the Inventory batch attributes button to open the Inventory batch attributes form to view the attribute information for the selected record. Inventory batch attributes button will only be active if there is Batch number for the selected record. Use the Quality orders button to view the Quality orders for the selected record.
+  - **BOM/Formula** – List the raw material items used in the production of the selected item
+  - **Picking list** – Shows the information from the Picking list production journal of the Batch or Production order – Tab will be populated when the Picking list production journal has been created. Use the Inventory batch attributes button to open the Inventory batch attributes form to view the attribute information for the selected record. Inventory batch attributes button will only be active if there is Batch number for the selected record. Use the Vendor batch details button to open the Batches form to view the vendor batch information for the selected record. Vendor batch details button will only be active if there is Batch number for the selected record. Use the Quality orders button to view the Quality orders for the selected record.
+  - **Route** – List the Route version used on the Batch or Production order
+  - **Route card** – Shows the information from the Route card production journal of the Batch or Production order – Tab will be populated when the Route card production journal has been created.
+  - **Job card** – Shows the information from the Job card production journal of the Batch or Production order – Tab will be populated when the Job card production journal has been created.
+- **Tabs**
+  - **Overview (Report as finished)** – List the lines for each produced item based on the Report as finished production journal – If there were multiple (partial) RAFs, then the overview tab will list each line.
+  - **Transactions (Report as finished)** – List the individual transaction lines for the produced items from the Inventory Registration
+  - **Overview (Picking list)** – List the lines for each raw material item based on the Picking list production journal – If there were multiple (partial) Picking or if there is an Automatic reservation (ex. at Estimation), then the overview tab will list each line.
+  - **Transactions (Picking list)** – List the individual transaction lines for each raw material item from the Inventory Reservation
 
 ### Using Batch Production Record reports
 
 The Batch production record report gives the user the ability to view/print a report using the Batch production record ID. The simplified version of the report will contain the same information reflected on the Batch production record Inquiry. On the General tab of the report, the user will have the ability to include more information for both the produced items and/or the raw material item. For the produced items, the user can choose to include the Quality order information as well as the Batch attribute value information on the report. For the raw material items, the user can choose to include the Quality order information, the Batch attribute value information as well as the Vendor batch details information on the report.
 
-| **Path: Production control** \> **Reports** \> **Electronic batch records** \> **Batch production record** |  |  |
-|-------------------------|-------------------------|-------------------------|
-| **Label Name** | **Description** | **Examples/Hints** |
-| **Field** |  |  |
-| Batch production record | <blockquote></br>Select the Batch production record ID for a corresponding Batch or Production order</br></blockquote> |  |
-| Quality orders (Produced items) | <blockquote></br>Select to include the Quality orders for the produced items</br></blockquote> |  |
-| Batch attribute values (Produced items) | <blockquote></br>Select to include the Batch attribute values for the batches of the produced items</br></blockquote> |  |
-| Quality orders (Ingredients) | <blockquote></br>Select to include the Quality orders for the raw material items</br></blockquote> |  |
-| Batch attribute values (Ingredients) | <blockquote></br>Select to include the Batch attribute values for the batches of the raw material items</br></blockquote> |  |
-| Vendor batch details (Ingredients) | <blockquote></br>Select to include the Vendor batch details for the batches of the raw material items</br></blockquote> |  |
+- **Batch production record** – Select the Batch production record ID for a corresponding Batch or Production order
+- **Quality orders (Produced items)** – Select to include the Quality orders for the produced items
+- **Batch attribute values (Produced items)** – Select to include the Batch attribute values for the batches of the produced items
+- **Quality orders (Ingredients)** – Select to include the Quality orders for the raw material items
+- **Batch attribute values (Ingredients)** – Select to include the Batch attribute values for the batches of the raw material items
+- **Vendor batch details (Ingredients)** – Select to include the Vendor batch details for the batches of the raw material items
