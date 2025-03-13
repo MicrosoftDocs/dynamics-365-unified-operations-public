@@ -22,7 +22,7 @@ Use the following procedure to create a purchase complementary fiscal document t
 
 To create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, follow these steps.
 
-1. Go to **Accounts payable \> Fiscal documents \> All fiscal documents**.
+1. In Dynamics 365 Finance, go to **Accounts payable \> Fiscal documents \> All fiscal documents**.
 1. In the list, find and select the desired record.
 1. In the list, select the link in the selected row.
 1. Select **Complementary fiscal document**.
