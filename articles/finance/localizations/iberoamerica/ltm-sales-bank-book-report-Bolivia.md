@@ -2,7 +2,7 @@
 title: Configure printing for sales bank books for Bolivia
 description: Learn about the required configuration for printing a sales bank book report for Bolivia.
 author: Cpicon85
-ms.date: 03/03/2025
+ms.date: 03/13/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -25,7 +25,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 - The legal entity's address must be in Bolivia.
 - Both the country/region-specific LATAM feature for Bolivia and the general LATAM feature must be enabled.
-- Download the specific report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](gsw-import-er-config-dataverse.md).
+- Download the specific report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](../gsw-import-er-config-dataverse.md).
 - Configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - Create a tax application to use on the report. For example, the tax application ID might be **LB**, and the description might be **Libro Bancarizacion**. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - Create a field that is named **List 10**. In the **Reference code** section, add two options: **YES** and **NO**. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
