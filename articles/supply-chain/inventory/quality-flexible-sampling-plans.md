@@ -56,7 +56,7 @@ To set up your flexible sampling plans, follow these steps.
 
 1. Use the grid on the **Details** FastTab to set up the plan. Use the buttons on the Action Pane to add and remove lines in the grid. For new or selected lines make the follwoing settings:
 
-    - **Level** – Select or view the level number assigned to this activity. The plan will be procssed in the desending order of the levels.
+    - **Level** – Select or view the level number assigned to this activity. The plan will be processed in the descending order of the levels.
     - **Item sampling** – Select or view the **Item sampling** that determines the sampling size of the quality order for the activity, for example a 10 percent sampling or a 50-unit quantity sampling.
     - **Test group** – Select or view the **Test group** that determines the set of tests of the quality order for the activity.
     - **Rounds** – Set or view the number of testing rounds for the specific flexible sampling plan level that must pass quality order validation to advance to the next level. Once you select a level for the **Last level** field, any **Rounds** value you entered for that level is removed from the plan. It is removed from the plan intentionally to allow the last level to continue indefinitely until several failures regress the plan to a prior level. **Note:** The last level in the testing plan does not allow rounds because all future tests would then remain at this level indefinitely until the appropriate number of fails is met to revert the plan to a prior level. Assume a quality association has been set up to test purchase order registrations for a certain vendor. The vendor's flexible sampling plan requires that 10% of every registration be tested for 5 rounds. So if I receive 100 units, then a quality order is generated to test 10 of those units. The quality order for the first registration passes. However, the second quality order fails, but the next three pass. If round 6 passes, then the first level in the plan is accomplished as the number of passed rounds required has been met.
@@ -77,6 +77,8 @@ Quality orders using the flexible sampling plans are set up to be automatically 
 
 
 
+Learn more in [Quality associations](quality-associations.md).
+
 You set up new flexible sampling plans on the **Flexible sampling plans** page. Each plan is made up of different testing levels that identify the testing process, such as which test group and/or item sampling, and the order in which the levels are performed. For each plan you create, if the **Alert** or **Expire AVL/Alert** option is set up for a plan level, then you can assign an alert role to be notified if the specified number of failures for that level is reached.
 
 After you set up the criteria for each of the plan's levels, you then establish the quality association for the plan to identify the testing activities (for example, purchases, specific vendor account, and specific item) and to generate quality orders based on test results. You establish the quality association on the **Specifications** FastTab on the **Quality associations** page.
@@ -84,26 +86,6 @@ After you set up the criteria for each of the plan's levels, you then establish 
 **Example:** A manufacturing company currently uses item sampling functionality for testing goods received in shipments. However, to reduce costs associated with testing, they need greater flexibility in their testing approach. The company's testing statistics over the past year show minimal exceptions were found during their inspections of a particular item. To reduce costs, they decide to implement flexible sampling. With flexible sampling they can not only vary or reduce the sampling size based on prior testing results, but they can skip certain lots from testing as well.
 
 To set up a new flexible sampling plan, go to **Inventory management** \> **Setup** \> **Quality control** \> **Flexible sampling plans**. Then use the buttons and settings described in the following subsections.
-
-### Buttons on the Flexible sampling plans page
-
-- **New** – Add a new flexible sampling plan.
-- **Delete** – Delete a flexible sampling plan. **Note:** You cannot delete a flexible sampling plan code if dependent quality orders are currently using the plan or if activity is being tracked against the plan. To delete the plan you must first delete any dependent quality orders as well as any tracking activity.
-- **Copy plan** – Copy an existing flexible sampling plan to use in creating a new plan. For example, you might copy an existing plan that is like the plan you want to create, which reduces the time involved in setting up the new plan.
-- **View activities** – View the activities associated with a flexible sampling plan. These activities might include which test groups and samplings were used to create the quality orders, as well as any quality tests that were skipped based on the criteria defined in the plan.
-
-### Fields on the Flexible sampling plans page
-
-- **Flexible sampling plan code** – Define the identifier for a new flexible sampling plan.
-- **Description** – Enter or view a brief description for the new flexible sampling plan.
-- **Alert role** – Select or view the role for the employee who is to receive alerts when certain types of quality failures occur.
-- **Last level** – Select the level number for the last activity to be performed in this flexible sampling plan process. The last level is open ended, and you cannot specify several rounds for this level.
-- **Approved** – Check if the plan is approved. You can only approve a plan if the plan has a last level and the fail and pass action level on all the plan lines are set and identify valid levels in the plan. If there is a fail action code then the plan must also have an alert role. Only approved plans are available for selection on Quality associations
-
-    - **Alert** — Return the test sampling to the Fail action level and issue an alert to the alert role specified.
-    - **Expire/AVL/Alert** — Return the test sampling to the Fail action level, issue an alert to the alert role specified, and change the vendor or item in the **Approved Vendor List** (AVL) to **Expired** if the quality association is purchasing and an AVL is in effect for that vendor.
-    - **None** — Return the test sampling to the Fail action level specified for the current level.
-- **Pass action level** – Enter or view the level of action that is initiated when the tests pass for this line. You can assign any level that is currently defined in the flexible sampling plan.
 
 ## Track activities for flexible sampling plans
 
