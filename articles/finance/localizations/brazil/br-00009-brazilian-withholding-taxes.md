@@ -22,7 +22,7 @@ The following procedure walks you through how to set up a withholding tax code, 
 
 To set up withholding taxes, follow these steps. 
 
-1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Withholding tax \> Withholding tax settlement periods**.
+1. In Dynamics 365 Finance, go to **Tax \> Setup \> Withholding tax \> Withholding tax settlement periods**.
 1. Select **New**.
 1. In the **Settlement period** field, enter a value.
 1. In the **Description** field, enter a value.

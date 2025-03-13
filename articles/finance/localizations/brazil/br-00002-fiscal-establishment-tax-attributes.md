@@ -22,7 +22,7 @@ The following procedure walks through how to create one or more fiscal establish
 
 To create one or more fiscal establishments for a legal entity, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Organization administration \> Organizations \> Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. In the **Name** field, select the link.
 1. Expand the **Addresses** section.
 1. Select **Add**.

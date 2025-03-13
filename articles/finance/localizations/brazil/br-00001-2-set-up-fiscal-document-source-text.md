@@ -23,7 +23,7 @@ The following procedure uses the BRMF demo company.
 
 To set up fiscal document source texts, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Organization administration \> Document management \> Document types**.
+1. In Dynamics 365 Finance, go to **Organization administration \> Document management \> Document types**.
 1. Select **New**.
 1. In the **Type** field, enter a value.
 1. In the **Name** field, enter a value.

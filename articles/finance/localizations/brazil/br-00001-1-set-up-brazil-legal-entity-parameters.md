@@ -22,7 +22,7 @@ The following procedure walks you through how to set up Brazilian legal entity p
 
 To set up Brazilian legal entity parameters, follow these steps.
 
-1. In Dynamics 365 Finance headquarters, go to **Organization administration \> Setup \> Brazilian parameters**.
+1. In Dynamics 365 Finance, go to **Organization administration \> Setup \> Brazilian parameters**.
 1. In the **Enable CFPS code** field, select **Yes**.
 1. Select the financial dimension to use for the cost center during the absorption cost calculation.
 1. Select the financial dimension to use for fiscal establishment during the absorption cost calculation.
