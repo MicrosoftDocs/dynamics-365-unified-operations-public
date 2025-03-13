@@ -2243,7 +2243,7 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Unified pricing management (preview)
+    - name: Unified pricing management
       items:
       - name: Unified pricing management module overview
         href: unified-pricing-management/upm-pricing-management-overview.md
@@ -2465,7 +2465,7 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
-      - name: Integrate with contract lifecycle management systems (preview)
+      - name: Integrate with contract lifecycle management systems
         items:
         - name: Contract lifecycle management integration overview
           href: procurement/contract-lifecycle-management/clm-overview.md
@@ -2795,7 +2795,7 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
-          - name: Register and track batch/serial numbers for finished products and their components (preview)
+          - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
@@ -2971,7 +2971,7 @@
             href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Register and track batch/serial numbers for finished products and their components (preview)
+          - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Production feedback
             href: production-control/production-feedback.md

@@ -47,14 +47,9 @@ You can change the following settings for a deal after it has been activated:
 
 In addition, rebate lines can be removed.
 
-## Resubmit a workflow (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+## Resubmit a workflow
 
 Sometimes, you might have to resubmit a workflow for a deal because of missing or incorrect data, an activated or updated rebate deal, modified rebate rules, or an extension of the original rebate period. To resubmit a workflow, you must first deactivate the active deal, then edit it as required, and finally reactivate it.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 
