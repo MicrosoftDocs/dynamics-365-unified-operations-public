@@ -48,9 +48,9 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 
 > [!NOTE]
 > To enhance SAF-T report performance for legal entities with their primary address in Norway, we recommend enabling the **Performance improvement for Norwegian SAF-T report** feature. This feature is available in Finance version 10.0.44 and also in the following builds of earlier versions:
-> - 10.0.43:
-> - 10.0.42:
-> - 10.0.41:
+> - **10.0.43**: 10.0.2177.**60**
+> - **10.0.42**: 10.0.2095.**136**
+> - **10.0.41**: 10.0.2015.**209**
 >
 > The **Performance improvement for Norwegian SAF-T report** feature leverages new data sources introduced by the [**Performance enhancement for general ledger dimension set balance calculation**](../../general-ledger/financial-dimension-set-new.md) feature. Ensure that the **Performance enhancement for general ledger dimension set balance calculation** is enabled before activating the **Performance improvement for Norwegian SAF-T report** feature.
 >
