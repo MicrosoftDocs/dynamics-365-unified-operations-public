@@ -242,7 +242,7 @@
             href: dev-itpro/CDX-Troubleshooting.md
           - name: Sort Commerce Data Exchange packages by primary index
             href: dev-itpro/CDX-package-sort.md
-          - name: Download sessions
+          - name: Download sessions overview
             href: dev-itpro/download-sessions.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
