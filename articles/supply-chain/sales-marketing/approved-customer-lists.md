@@ -105,7 +105,7 @@ Then use the buttons and settings described in the following subsections.
 
 Customer and item groups allow you to set up groups of customers and groups of items to expedite the approval process when the same set of items are approved for a specific customer, a group of customers, or all customers. If the approved item group is associated to an approved customer group, every customer in the group is authorized to purchase every item in the approved item group. To set up the groups go to
 
-- **Sales and marketing > Setup > Approved customer list > **Approved customer groups**.
+- **Sales and marketing > Setup > Approved customer list > Approved customer groups**.
 - **Product information management > Setup > Approved customer list > Approved item groups** 
 
 ## View and maintain approved items from the customer account
