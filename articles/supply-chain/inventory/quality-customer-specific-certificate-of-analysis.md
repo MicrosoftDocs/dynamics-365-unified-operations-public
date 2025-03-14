@@ -75,10 +75,28 @@ You can mark product and customer specific batch attributes to be included into 
 
 Once the customer COA requirements are established on the test group, the requirements will default to all quality orders that use that test group, but the requirements can be modified on the quality order directly. In the example below, if the COA was printed for Customer US-002, T1 would not be included. For all customers in COA-CG1, when the COA was generated for one of them, this test would be included, customer specific batch attribute range would be used, if available, instead of the standard range and if the test passed, the actual result would be replaced with the verbiage: Within spec.
 
-
 ## Using Customer COA requirements
 
 The customer COA requirements will be utilized whenever a customer specific COA is generated. A customer specific COA can be generated from the Inventory management menu, a Quality order, an Inventory batch, or automatically from the Sales order Packing slip process. From the menu, a specific quality order, or a specific Inventory batch, the customer specific COA will be triggered by the user choosing a customer account for the COA. Once a customer account is selected and the print option is chosen, the system will automatically look at the customer COA requirements for the specific customer selected and the details of the COA will be adjusted based on the specific requirements for that customer. Standard print destination options are available such as printing the COA to the screen, printer, file or email. If the standard COA is desired, then no customer account should be selected. This will trigger the system to generate the standard COA and the Customer COA requirements will not be utilized. When generating COA's from the Packing slip posting process, only customer specific COA's are generated for all item/batch combinations on the sales orders that have quality orders identified. The default print destination from this process is defined on the Inventory management parameters under Print Management for Customer specific COA's. The chart below identifies multiple ways to access the COA.
+
+## How to access the customer specific COA
+
+The customer specific COA can be accessed from the following menu path's
+
+1. From the menu directly 
+**Inventory management > Inquiries > Quality management > Certificate of analysis** - You can print both the Standard COA and Customer specific COA (triggered by selecting a specific customer account). You must select a quality order in both cases.
+
+1. From a quality order
+**Inventory management > Periodic > Quality management > Quality order > Ribbon: Inquiries > Certificate of analysis** - You can print both the standard COA and customer specific COA (triggered by selecting a specific customer account). Since access is from a quality order, the Quality order is assumed in both cases.
+
+1. From an inventory batch
+**Inventory management > Inquiries> Dimensions > Batches > Ribbon: Inquiries > Certificate of analysis** - You can print both the standard COA and the customer specific COA (triggered by selecting a specific customer account). Since access is from an inventory batch, the Certificate of analysis Quality order (found on the General tab) on the Inventory Batch is used in both cases to generate the COA. If the Certificate of analysis quality order needs to be updated, the ribbon action **Reset COA Quality order** can be used to change the quality order that drives the details of the COA.
+
+1. As part of processing the Sales order packing slip
+**Sales and marketing > Common > Sales orders > All sales orders > Ribbon: Pick and pack > Generate > Packing slip** or 
+**Sales and marketing > Periodic > Sales update > Packing slip** (Add new orders to the list, select the checkbox to Print customer specific Certificate of analysis.) - Only customer specific COA's are printed from this process. Based on the customer placing the order, the system will print a customer specific COA for every item/batch combination on the order that has a Certificate of analysis Quality order specified on the Batch. No COA will be printed for items not batch-controlled or for items where the batch does not have a Quality order specified.
+Note: The option to Print Customer specific COA is initially defaulted from the Accounts Receivable parameters from the Updates tab. This parameter will default to new customers. The checkbox on the Packing slip process form will default from the customer if processing for a single order. If processing for multiple orders, this checkbox will need to be selected if printing customer specific COA's are desired
+
 
 | **<u>Options</u>** | **<u>Menu path</u>** | **<u>Helpful hints</u>** |
 |-------------------------|-------------------------|-------------------------|
