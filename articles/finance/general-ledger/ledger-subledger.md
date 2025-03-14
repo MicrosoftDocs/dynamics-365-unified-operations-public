@@ -1,5 +1,5 @@
 ---
-title: Ledger and subledger accounting overview
+title: Ledger and subledger accounting entries overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
 author: prasungoel
 ms.author: prasungoel
@@ -41,11 +41,11 @@ Learn more about how to configure a ledger in [Configure ledgers](configure-ledg
 
 ## What is a subledger?
 
-Most documents that are posted affect a *subledger* or a *module*. A subledger captures the detailed accounting impact of the document posting. Examples of subledgers in Dynamics 365 finance and operations apps include Accounts payable, Accounts receivable, Inventory, Fixed assets, Tax, and Production. Each subledger captures the document details that are relevant to it. For example, when a customer invoice is posted, the customer's balance is captured in the **Accounts receivable** module, the tax codes and amounts are captured in the **Tax** module, and the cost of inventory that was sold is captured in the **Inventory**/**Costing** modules.
+Most documents that are posted affect a *subledger* or a *module*. Examples of subledgers in Dynamics 365 finance and operations apps include Accounts payable, Accounts receivable, Inventory, Fixed assets, Tax, and Production. Each subledger captures the document details that are relevant to it. For example, when a customer invoice is posted, the customer's balance is captured in the **Accounts receivable** module, the tax codes and amounts are captured in the **Tax** module, and the cost of inventory that was sold is captured in the **Inventory**/**Costing** modules.
 
-In addition, each source document maintains the subledger journal account entries, which represent the detailed accounting entries of the document. The subledger journal account entries are ultimately transferred to the ledger.
 
-## Set up subledger postings
+## What are subledger journal account entries? 
+Each source document maintains the subledger journal account entries, which represent the detailed accounting entries of the document. The subledger journal account entries are ultimately transferred to the ledger.  
 
 The subledger journal account entries are created through accounting rules that are defined through the posting profile for each module. Posting profiles use the main accounts from the chart of accounts that is defined in the ledger setup.
 
