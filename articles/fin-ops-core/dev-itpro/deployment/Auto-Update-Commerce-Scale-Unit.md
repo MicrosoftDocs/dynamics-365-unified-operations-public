@@ -30,18 +30,18 @@ The following limitations currently exist. Microsoft plans to resolve them in up
 
 ## Downtime duration and impact
 
-Updates to Commerce headquarters and CSU (cloud) are applied sequentially. Downtime duration is typically one hour, but varies by data volume and region. To estimate downtime duration in your production environment, you can either self-update a CSU in your sandbox User Acceptance Testing (UAT) environment, or review the total update duration for both Commerce headquarters and CSU in Lifecycle Services (LCS).
+Updates to Commerce headquarters and CSU (cloud) are applied sequentially. Downtime duration is typically one hour, but varies by data volume and region. To estimate downtime duration in your production environment, you can either self-update a CSU in your sandbox user acceptance testing (UAT) environment, or review the total update duration for both Commerce headquarters and CSU in Lifecycle Services (LCS).
 
 > [!NOTE]
 > Downtime duration varies for each update and data volume. To estimate a realistic downtime duration, ensure that your sandbox UAT environment has the same data as your production environment by following the steps in [Refresh database](../database/database-refresh.md). You also need to apply the same update in the sandbox UAT environment that you plan to estimate the downtime duration for.
 
-For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with CSU continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../commerce/pos-operations.md).
+For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet, or while the cloud environment is updated. Stores operating with CSU continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../commerce/pos-operations.md).
 
 ## Version support and backward compatibility
 
-All in-store components must run released software that is less than 12 months old to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
+All in-store components must run released software that is less than 12 months old to maintain support. Customers are responsible for updating self-hosted components such as components installed in stores or in privately managed datacenters, and ensuring that the installed versions of these components are actively supported.
 
-Updates to components that are hosted in the cloud continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, CSU, and Hardware Station) for 12 months after the release date for that version. Self-hosted components don't need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence, allowing time to roll out updates to stores.
+Updates to components hosted in the cloud continue to preserve backward compatibility with component versions that are self-hosted by the retailer such as Modern Point of Sale, CSU, and Hardware Station for 12 months after the release date for that version. Self-hosted components don't need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence, allowing time to roll out updates to stores.
 
 ## Updating in-store components
 
