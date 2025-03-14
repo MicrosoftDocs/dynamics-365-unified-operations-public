@@ -17,7 +17,9 @@ This article explains how to set up and generate reports for purchase bank books
 
 The bank book in Bolivia details purchase payments that equal or exceed the amount that is established by the regulations of the National Tax Service (Servicio de Impuestos Nacionales). The **Purchase Bank Book BO** report downloads information about payments of purchase transactions for goods and services on a monthly basis. The downloaded information is in the presentation structure that is requested by the tax authority.
 
-![Purchase bank book report diagram.](../media/LTM-Purchase-bank-book.png)
+The following diagram shows the process flow for the Purchase Band Book BO report. When the localization settings for a banking transaction indicate the payment needs to be reported, it is included on the report.
+
+![Purchase bank book report diagram.](../media/LTM-Purchase-bank-book-V1.png)
 
 ## Prerequisites
 
