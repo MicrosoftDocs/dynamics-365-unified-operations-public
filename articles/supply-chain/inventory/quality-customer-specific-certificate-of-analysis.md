@@ -11,64 +11,70 @@ manager:
 
 # Customer specific certificate of analysis
 
-A Certificate of Analysis (COA) is a document provided to customers who require documentation of items they purchase. The COA describes specific tests performed to confirm the quality of a given item lot. It should list tests performed, the tolerance/outcome allowed for each test, results of the tests on a sample of that item lot, and lot expiration date.
+Supply Chain Management provides the ability to create a basic Certificate of Analysis (COA) from the quality order or from the menu directly after selecting a quality order. Learn more about how to use the basic COA here: [Quality orders](quality-orders.md)
 
-Supply Chain Management provides the ability to create a basic Certificate of Analysis from the quality order or from the menu directly after selecting a quality order. On the Test group, there is a flag on the test to indicate whether that test should be included on the COA. There is currently no ability to vary the content of the COA by customer and there is no ability to automatically create/print a COA at sales order packing slip posting time.
-
-The Customer specific Certificate of analysis feature addresses some of the gaps in the current COA feature. The new feature has the following main components:
+This article describes how you can vary the content of the COA by customer and automatically create/print a COA at sales order packing slip posting time. The customer specific COA has the following main components:
 
 - A way to group customers for COA-related purposes and set up COA customer requirements on Test groups and Quality orders.
 
-- Setup and support application of COA Customer requirements by Customer/Group/All:
+- Setup customer specific COA requirements by grouped by Customer, groups of customers, or for all customers to:
 
-    - Include/Exclude by test
+    - Include or exclude specific tests from the report
 
-    - Use Customer-specific min/max ranges
+    - Include customer-specific minimum and maximum ranges for test results.
 
-    - Suppress min/max values
+    - Suppress mimum and maximum test values
 
-    - Replace actual pass/fail test results with standard verbiage
+    - Replace actual passed or failed test results with verbiage
 
-- Optionally, print independent batch attributes and their values
+- Make is optionally to include batch attributes and their values in the report.
 
-- Setup and support application of COA Customer requirements by Customer/Group/All for:
+- Setup customer specific COA requirements grouped by customer, group of customers, or all customers from quality orders that are
 
-    - From Quality order manually
+    - Manually created
 
-    - From Sales order packing slip post automatically
+    - Created automatically when a sales order packing slip is posted
 
-    - From Inventory batch manually
+    - Created manually from an inventory batch
 
-    - From Inventory management menu directly
+    - Created direcely from the **Inventory management** menu
 
-- Visibility to additional details on the COA Report
 
 ## Setting up and maintaining Customer COA requirements
 
-Customers can be grouped for COA purposes by assigning the customer to a COA Customer group. COA customer groups can be created from this menu path: Inventory management** \> **Setup** \> **Certificate of analysis** \> **COA Customer group. Customers can be added to a given group from this form or from the customer directly.
+Customers can be grouped for COA purposes by assigning the customer to a **COA Customer group**. To create and add customers to a **COA customer groups** go to: **Inventory management > Setup > Certificate of analysis > COA Customer group**.
 
-On a given test group, by quality test, customer COA requirements can be defined for all customers, a COA customer group or specific customers. When setting up these requirements, the user can specify whether given tests can be excluded from the COA, if minimum and maximum values should be suppressed, if customer specific batch attribute ranges should be printed instead of standard ranges and / or if actual test results, pass or fail, should be replaced with standard verbiage instead of actual results.
+To set up **Customer specific COA requirements** go to **Inventory management > Setup > Quality control > Test groups** or **Inventory management > Periodic > Quality management > Quality orders > Line > Customer COA requirements**
+
+Select a test in the test group and then select **Customer COA requirement** button on the toolbar. In the **Customer CAO requirement** page, you can now set up the customer specific requirements for the specific test. 
+
+To add a new requirement for the test select **New** in the Actionpane. The fields for **Test group** and **Test** will be automatically filled out. If the test is associated a batch attribute, that attribute is reflected in the field **Attribute**. Fill out the fields in the grid:
+
+**Customer code** - Choose **All** to make the requirement applicable for all customers, **Group** for a group of customers, and **Table** for a specific customer.
+ 
+**Customer releation** - Dependent on your selection in **Customer code** select a **COA Customer group** or a specific **Customer account**.
+
+**Exclude** - Indicates if the test should appear on customer specific COA. All tests are assumed to be included except those specifically marked as excluded.
+
+**Use customer specific ranges** - Indicates whether the customer specific batch attribute range should be used for the customer specific COA. If no customer specific batch attribute range if found, then the standard range will print.
+
+**Supress Min/Max values** - Indicates if the minimum and maximum values of the Test should be suppressed on the customer specific COA. For example, for a given test, let's assume that the minimum is 1 and the Maximum is 10 and the Result is 1. For certain customers, it might be desirable that the range does not display at all, not to draw attention to the fact that the result just passed the quality test.
+
+**Replace pass results** - When populated, the verbiage will replace the test results on the customer specific COA if the test is passed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as "Within specifications" for a pass.
+
+**Replace fail results** - When populated, the verbiage will replace the test results on the customer's COA if the test is failed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as *Outside acceptable range* for a failure.
+
+## Include product and customer specific batch attributes in COA
+
+You can mark product and customer specific batch attributes to be included into the COA, even if they are not included in testing through a quality order. 
+
+1. Go to **Product information management > All released products**
+1. In the **All released products** list page filter on a batch enabled product
+1. Under the **Manage inventory** tab, go to the **Batch attributes** field group and select either **Product specific** or **Customer specific**
+1. Select the field **Include in COA independent of Quality order**
 
 Once the customer COA requirements are established on the test group, the requirements will default to all quality orders that use that test group, but the requirements can be modified on the quality order directly. In the example below, if the COA was printed for Customer US-002, T1 would not be included. For all customers in COA-CG1, when the COA was generated for one of them, this test would be included, customer specific batch attribute range would be used, if available, instead of the standard range and if the test passed, the actual result would be replaced with the verbiage: Within spec.
 
-| **Path: Inventory management** \> **Setup** \> **Quality control** \> **Test groups** \> **Line** \> **Customer COA requirements OR Path: Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders** \> **Line** \> **Customer COA requirements** |                                                                                                                                        |                                                                                                                                                                                                                                                                                                        |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Label Name**                                                                                                                                                                                                                                            | **Description**                                                                                                                        | **Examples/Hints**                                                                                                                                                                                                                                                                                     |
-| Test group                                                                                                                                                                                                                                                | The name of the test group.                                                                                                            |                                                                                                                                                                                                                                                                                                        |
-| Test                                                                                                                                                                                                                                                      | The name of the test                                                                                                                   | There can be multiple tests on a given test group or quality order. The Customer COA requirements can be different by test.                                                                                                                                                                            |
-| Attribute                                                                                                                                                                                                                                                 | The name of the batch attribute associated with the test.                                                                              | If no batch attribute is provided, then the ribbon actions related to batch attributes will be disabled.                                                                                                                                                                                               |
-| Customer code                                                                                                                                                                                                                                             | Customer specific COA requirements can be entered for all customers, a COA customer group or a specific customer.                      | Valid values are Table, Group, All.                                                                                                                                                                                                                                                                    |
-| Customer relation                                                                                                                                                                                                                                         | Select either a specific COA customer group or a specific customer. Options will be based on the selection of the Customer code field. | If All is selected as the Customer code, then no value is entered in this field. If Group is selected as the Customer code, then valid values would be any COA customer group. IF Customer is selected as the Customer code, then valid values would be any customer.                                  |
-| Exclude                                                                                                                                                                                                                                                   | Indicates if the test should appear on customer's COA.                                                                                 | Generally speaking, all tests are assumed to be included except those specifically marked here as excluded.                                                                                                                                                                                            |
-| Use customer specific batch attribute ranges                                                                                                                                                                                                              | Indicates whether the customer specific batch attribute range should be used for the customer's COA.                                   | If no customer specific batch attribute range if found, then the standard range will print.                                                                                                                                                                                                            |
-| Suppress Min/Max values                                                                                                                                                                                                                                   | Indicates if the Minimum and Maximum values of the Test should be suppressed on the customer's COA.                                    | For example, for a given test, let's assume that the Minimum is 1 and the Maximum is 10 and the Result is 1. For certain customers, it might be desirable that the Range does not display at all so not to draw attention to the fact that the result just passed the quality test.                    |
-| Replace pass results                                                                                                                                                                                                                                      | When populated, the verbiage will replace the test results on the customer's COA if the test is passed.                                | Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as "Within specifications" for a pass.                                                                                                                                                   |
-| Replace fail results                                                                                                                                                                                                                                      | When populated, the verbiage will replace the test results on the customer's COA if the test is failed.                                | Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as "Outside acceptable range" for a failure.                                                                                                                                             |
-| **Buttons**                                                                                                                                                                                                                                               |                                                                                                                                        |                                                                                                                                                                                                                                                                                                        |
-| New                                                                                                                                                                                                                                                       | Add a new requirement line.                                                                                                            | When creating new COA requirements, remember that the most specific reference found for a given test will be used. For example, if I have a record for a specific customer and one for ALL and the COA is being generated for the specific customer; those requirements will be used on the report.    |
-| Delete                                                                                                                                                                                                                                                    | Delete the selected requirement line.                                                                                                  |                                                                                                                                                                                                                                                                                                        |
-| Batch attributes – Product specific                                                                                                                                                                                                                       | Open the product specific batch attribute form for the batch attribute on the Test group test.                                         | Note: If accessed from the Quality order form, will have the option to view the Product specific or Product/Customer specific batch attribute. If accessed from the Test group, since a customer is not known, only the Product specific batch attribute will be accessible. These are inquiries only. |
-| Batch attributes – Customer specific                                                                                                                                                                                                                      | Open the product and customer specific batch attribute form for the batch attribute on the Test group test.                            |                                                                                                                                                                                                                                                                                                        |
 
 ## Using Customer COA requirements
 
