@@ -30,6 +30,20 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.43 release
 
+### Sales tax report for Belgium, Purchase sales tax transactions, Sales tax transactions re sales, Additional sales tax report boxes (design based on reporting codes), Belgium report layout
+
+[Reconciliation reports for Belgium](../localizations/belgium/emea-bel-reconciliation-reports.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration (Belgium)](../localizations/belgium/emea-bel-vat-declaration-belgium.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By March 15, 2026, the **Sales tax report for Belgium**, **Purchase sales tax transactions**, **Sales tax transactions re sales**, **Additional sales tax report boxes** (design based on reporting codes), **Belgium report layout** won't be supported. New **VAT declaration XML (BE)** and **VAT declaration Excel (BE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
+## Features removed or deprecated in the Finance 10.0.43 release
+
 ### Making Tax Digital – VAT return submission in the United Kingdom for on-premises deployments
 
 | &nbsp;  | &nbsp;  |
