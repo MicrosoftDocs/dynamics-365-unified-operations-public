@@ -1,11 +1,9 @@
 ---
-# required metadata
-
 title: Download sessions
-description: This article describes the download sessions used with Commerce Data Exchange
+description: This article provides an overview of the download sessions used with Commerce Data Exchange in Microsoft Dynamics 365 Commerce.
 author: aneesmsft
-ms.date: 02/06/2025
-ms.topic: how-to
+ms.date: 03/18/2025
+ms.topic: overview
 ms.search.form:
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -18,19 +16,23 @@ ms.custom:
 
 # Download sessions
 
-Master data, such as customer, product, and pricing from [Headquarters](commerce-architecture.md#dynamics-365-commerce-headquarters) is made available in various channels, such as online stores or brick-and-mortar stores using [Commerce Data Exchange (CDX)](define-retail-channel-communications-cdx.md). 
+[!include[banner](includes/banner.md)]
 
-To distribute master data, CDX periodically creates download sessions. A download session can be full (all data) or incremental (new and updated data). As a part of each download session, one or more jobs are run. Each job has a specific purpose such as distributing the customer data or the product data. Successful completion of these download sessions and jobs is critical for store operations. 
+This article provides an overview of the download sessions used with Commerce Data Exchange (CDX) in Microsoft Dynamics 365 Commerce.
 
-Administrators view and monitor this download activity using the Download sessions form in Headquarters. The Download sessions form displays detailed information including the job name, channel database, session number, status, and more. It helps administrators ensure that data is successfully being synchronized with [Commerce Scale Units (CSUs)](../../fin-ops-core/dev-itpro/deployment/Initialize-Retail-Channels.md) and that point-of-sale (POS) devices are offline-ready to handle network or service disruptions.
+Master data, such as customer, product, and pricing from [Dynamics 365 Commerce headquarters](commerce-architecture.md#dynamics-365-commerce-headquarters) is made available in various channels, such as online stores or brick-and-mortar stores using [CDX](define-retail-channel-communications-cdx.md). 
+
+To distribute master data, CDX periodically creates download sessions. A download session can be full (all data) or incremental (new and updated data). One or more jobs are run as part of each download session. Each job has a specific purpose such as distributing customer or product data. Successful completion of these download sessions and jobs is critical for store operations. 
+
+Administrators can view and monitor download activity using the **Download sessions** form in headquarters. This form displays detailed information including the job name, channel database, session number, and status. The form also helps administrators ensure that data is being successfully synchronized with [Commerce Scale Units (CSUs)](../../fin-ops-core/dev-itpro/deployment/Initialize-Retail-Channels.md), and that point-of-sale (POS) devices are offline-ready to handle network or service disruptions.
 
 ## Enhanced download sessions
 
-Many organizations using Dynamics 365 Commerce have multiple channels (and corresponding channel databases) and offline-enabled POS devices. With download sessions running at frequent scheduled intervals for each of these channels and devices, the list of download sessions often becomes very long. This makes it difficult for administrators to proactively monitor and troubleshoot issues that may be impacting download sessions and consequently the offline readiness of devices and stores.
+Many organizations using Dynamics 365 Commerce have multiple channels with corresponding channel databases and offline-enabled POS devices. With download sessions running at frequent scheduled intervals for each of these channels and devices, the list of download sessions often becomes very long. This long list of download sessions makes it difficult for administrators to proactively monitor and troubleshoot issues that may be impacting download sessions and consequently the offline readiness of devices and stores.
 
-The **Enhanced download sessions** feature provides multiple improvements to help administrators proactively and productively monitor download sessions. To enable it administrators can use the "Enhanced download sessions" feature flag in headquarters' [Feature Management workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace).
+The Enhanced download sessions feature provides multiple improvements to help administrators proactively and productively monitor download sessions. Administrators can enable the **Enhanced download sessions** feature flag in the headquarters [Feature management workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) at **Systems administration \> Workspaces \> Feature management**.
 
-When the Enhanced download sessions feature is enabled, the Download sessions form will show a summary to help administrators quickly identify issues that may be affecting multiple channels and devices and impacting the offline readiness of stores. This includes top failing jobs, top suspended jobs, and top errors. The summary will also provide inline filters to quickly view the impacted jobs with just a single click.
+When administrators enable the Enhanced download sessions feature, the **Download sessions** form displays a summary to help quickly identify issues that may be affecting multiple channels and devices and impacting the offline readiness of stores. These issues include top failing jobs, top suspended jobs, and top errors. The summary also provides inline filters to quickly view the impacted jobs.
 
-For each failed job, the table will also provide an associated Error ID. These Error IDs are dynamically generated and automatically linked to relevant articles. This enables administrators to easily access up-to-date documentation and troubleshooting guides to address the issues.
+For each failed job, the table provides an associated Error ID. Error IDs are dynamically generated and automatically linked to relevant articles. This allows administrators to easily access up-to-date documentation and troubleshooting guides to address the issues.
 
