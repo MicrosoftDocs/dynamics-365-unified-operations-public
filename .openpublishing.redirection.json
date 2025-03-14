@@ -1,6 +1,51 @@
 {
   "redirections": [
     {   
+      "source_path": "articles/human-resources/hr-infrastructure-merge.md",
+      "redirect_url": "/dynamics365/finance/human-resources/hr-cust-migration",
+      "redirect_document_id": "false" 
+    },    
+    {   
+      "source_path": "articles/finance/localizations/apac/apac-aus-nzl-e-invoices.md",
+      "redirect_url": "/dynamics365/finance/localizations/gs-apac-aus-nzl-e-invoices",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/denmark/e-invoicing-dk-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/denmark/gs-e-invoicing-dk-get-started",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-azure-resources-automation.md",
+      "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources-automation",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/indonesia/e-invoicing-id-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/indonesia/gs-e-invoicing-id-get-started",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/italy/e-invoicing-ita-fatturapa-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/mea/e-invoicing-sa-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/mea/gs-e-invoicing-sa-get-started",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/mea/e-invoicing-sa-onboarding.md",
+      "redirect_url": "/dynamics365/finance/localizations/mea/gs-e-invoicing-sa-onboarding",
+      "redirect_document_id": "false" 
+    },
+    {   
+      "source_path": "articles/finance/localizations/poland/e-invoicing-pol-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/gs-poland/e-invoicing-pol-get-started",
+      "redirect_document_id": "false" 
+    },
+    {   
       "source_path": "articles/finance/localizations/global/e-invoicing-working-globalization-features.md",
       "redirect_url": "/dynamics365/finance/localizations/global/gs-e-invoicing-working-globalization-features",
       "redirect_document_id": "false" 

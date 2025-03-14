@@ -33,6 +33,8 @@ The capabilities of *Generative help and guidance with Copilot* include providin
 
 Future enhancements might allow direct navigation and suggest actions within the application to further streamline user tasks.
 
+[!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
+
 ## What is the intended use of Generative help and guidance with Copilot?
 
 The intended use of *Generative help and guidance with Copilot* is to provide users with an interactive, AI-powered support tool within finance and operations apps.

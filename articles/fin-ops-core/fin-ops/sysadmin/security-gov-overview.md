@@ -42,7 +42,6 @@ User security governance provides the following functionality:
 - Draft and eventually convert defined roles to an Application Object Tree (AOT) project.
 - Use the user aging report.
 - Manage versions of roles, duties, and privileges. Learn more in [Security version management](security-version.md).
-
     - Compare versions.
     - Restore previous versions.
 

@@ -23,10 +23,7 @@ To set up Rebate management posting profiles for customers and vendors, go to **
 
 The remaining sections of this article describe how to use the available fields when you create or edit a profile.
 
-## Create a profile that sends rebates to the original transaction account (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+## Create a profile that sends rebates to the original transaction account
 
 You can configure rebate management posting profiles to send rebates as output to the original transaction account from the related sales order or purchase order. Before you can use this capability, your system must meet the following requirements:
 
@@ -34,8 +31,6 @@ You can configure rebate management posting profiles to send rebates as output t
 - The feature that is named *Enable posting of vendor rebate outputs to purchase order vendors* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 To set up this functionality, select the appropriate value in the **Use account source** field of your posting profile, as described later in this article.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Posting profile header
 

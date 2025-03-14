@@ -1,5 +1,5 @@
 ---
-title: Set up price groups for Unified pricing management (preview)
+title: Set up price groups for Unified pricing management
 description: Learn how to set up price groups with attributes for Unified pricing management.
 author: sherry-zheng
 ms.author: chuzheng
@@ -11,12 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Set up price groups for Unified pricing management (preview)
+# Set up price groups for Unified pricing management
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 To create and manage the [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps.
 

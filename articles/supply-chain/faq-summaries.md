@@ -28,6 +28,8 @@ The information that Copilot provides depends on the current page and user conte
 
 AI summaries with Copilot use Copilot to generate natural-language summaries of information that's available on the pages where they appear and other related pages. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content. Summaries and content are generated from data records that are stored in the system, including products, purchase orders, and vendors.
 
+[!INCLUDE[rai-feedback-mechanism.md](../includes/rai-feedback-mechanism.md)]
+
 ## What is the intended use of AI summaries with Copilot?
 
 This section describes the intended use for each of the available summaries.

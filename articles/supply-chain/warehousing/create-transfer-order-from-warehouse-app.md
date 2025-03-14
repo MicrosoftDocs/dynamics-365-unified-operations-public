@@ -24,22 +24,30 @@ Here are general guidelines for setting up a mobile device menu item for creatin
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select **New** to add a new menu item. Then make the following settings to get started:
 
-    - **Menu item name** - Assign a name as it should appear in Supply Chain Management.
-    - **Title** - Assign a menu name as it should be presented to workers in the Warehouse Management mobile app.
-    - **Mode** - Set to *Indirect* (this menu item will not create work).
-    - **Activity code** - Set to *Create transfer order from license plates* to enable the warehouse workers to create a transfer order based on one or more scanned license plates.
+    - **Menu item name** – Assign a name as it should appear in Supply Chain Management.
+    - **Title** – Assign a menu name as it should be presented to workers in the Warehouse Management mobile app.
+    - **Mode** – Set to *Indirect* (this menu item won't create work).
+    - **Activity code** – Set to *Create transfer order from license plates* to enable the warehouse workers to create a transfer order based on one or more scanned license plates.
 
 1. Use the **Transfer order line creation policy** setting to control how transfer order lines will be created by this menu item. The lines will be created/updated based on the on-hand inventory registered for the scanned license plates. Choose one of the following values:
 
-    - **No reservation** - The transfer order lines will not be reserved.
-    - **License plate guided with line reservation** – The transfer order lines will be reserved and use the License plate guided strategy option, which stores the relevant license plate IDs associated with the order lines. Located license plate ID values can therefore be used as part of the work creation process for the transfer order lines.
+    - *No reservation* – The transfer order lines won't be reserved.
+    - *License plate guided with line reservation* – The transfer order lines will be reserved and use the License plate guided strategy option, which stores the relevant license plate IDs associated with the order lines. Located license plate ID values can therefore be used as part of the work creation process for the transfer order lines.
 
-1. Use the **Outbound shipment policy** setting to add more automation to the outbound transfer order shipment process, as needed. When a worker selects the **Complete order** button, the app creates the *Complete order* warehouse app event, which will save the value you choose here in the **Outbound shipment policy** field for each line in the current transfer order. Later, when the event queue is processed by a batch job to create the transfer order, the value stored in this field can be read by the batch job, and may therefore control how that job processes each line. Choose one of the following:
+1. Use the **Outbound shipment policy** setting to add more automation to the outbound transfer order shipment process, as needed. When a worker selects the **Complete order** button, the app creates the *Complete order* warehouse app event, which will save the value you choose here in the **Outbound shipment policy** field for each line in the current transfer order. Later, when the event queue is processed by a batch job to create the transfer order, the value stored in this field can be read by the batch job, and might therefore control how that job processes each line. Choose one of the following values:
 
-    - **None** - No automated processing is done.
-    - **Release to warehouse** - Automates the release to warehouse process.
-    - **Ship confirm** - Automates the ship confirmation process.
-    - **Release and ship confirm** - Automates both the release to warehouse and ship confirmation processes.
+    - *None* – No automated processing is done.
+    - *Release to warehouse* – Automates the release to warehouse process.
+    - *Ship confirm* – Automates the ship confirmation process.
+    - *Release and ship confirm* – Automates both the release to warehouse and ship confirmation processes.
+
+1. Use the **Validate license plate policy** setting to decide whether the system should validate the license plate when creating a transfer order. Choose one of the following values:
+
+    - *None* – Don't validate the license plate.
+    - *Error* – Check whether the selected license plate is a valid target for open or in-process work and whether it contains any items with blocking status.
+
+>[!NOTE]
+> The **Validate license plate policy** setting is intended to help speed up the process, which is why it's set to skip license plate validation by default (*None*). The *None* value assumes that the warehouse worker knows whether the license plate can be transferred to another warehouse.
 
 ## Add the mobile device menu item to a menu
 
@@ -56,7 +64,7 @@ The Warehouse Management mobile app has a simple process for creating transfer o
 1. Select **Complete order**.
 
 >[!NOTE]
-> It is possible for multiple workers to assign license plates intended for the same transfer order by using the **Select transfer order** button to select an existing, unprocessed, transfer order number from the warehouse app event queue. For information about how to find the transfer order number values, see [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
+> It's possible for multiple workers to assign license plates intended for the same transfer order by using the **Select transfer order** button to select an existing, unprocessed, transfer order number from the warehouse app event queue. For information about how to find the transfer order number values, see [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
 
 ## Example scenario
 
@@ -70,7 +78,7 @@ In addition to setting up the create transfer order in the mobile device menu it
 
 ### Example Scenario blueprint
 
-You are a retailer and have multiple license plates, each containing a mix of items placed at a specific location within one of your warehouses (*Warehouse 51*). You would like to enable the process that allows workers to create a transfer order to another warehouse (*Warehouse 61*) for a collection of scanned license plates. You will automatically ship-update the transfer order as soon as the last license plate for the order has been identified.
+You're a retailer and have multiple license plates, each containing a mix of items placed at a specific location within one of your warehouses (*Warehouse 51*). You would like to enable the process that allows workers to create a transfer order to another warehouse (*Warehouse 61*) for a collection of scanned license plates. You'll automatically ship-update the transfer order as soon as the last license plate for the order has been identified.
 
 ![Automated transfer order process example.](media/create-transfer-order-from-app-example.png "Automated transfer order process example")
 
@@ -100,9 +108,9 @@ This section explains how to enable a work template to automatically process the
 1. In the **Work template** field, enter *51 Auto process LP*.
 1. In the **Work template description** field, enter *51 Auto process LP*.
 1. Select the **Automatically process** check box. This must be selected in order for any automation steps to be processed.
-1. In the demo data, there already exists a work template *51 Transfer*, edit the **Sequence number** field so that the new work template has a lower sequence number than the existing work template *51 Transfer*.
+1. In the demo data, there already exists a work template *51 Transfer*. Edit the **Sequence number** field so that the new work template has a lower sequence number than the existing work template *51 Transfer*.
 1. Select **Save** in the toolbar to enable the **Work Template Details** FastTab.
-1. In the **Work Template Details** FastTab, select **New** in the toolbar. You will add two lines.
+1. In the **Work Template Details** FastTab, select **New** in the toolbar. You'll add two lines.
 1. In the **Work type** field, select *Pick*.
 1. In the **Work class ID** field, select *TransfOut*.
 1. Select **New** in the **Work Template Details** toolbar.
@@ -154,7 +162,7 @@ This section explains how to set up a scheduled batch job to process warehouse a
 
 ### Set up a batch job to release transfer orders automatically
 
-This section explains how to set up a scheduled batch job to release the transfer orders that have been marked as "ready to release".
+This section explains how to set up a scheduled batch job to release the transfer orders that have been marked as *Ready to release*.
 
 1. Go to **Warehouse management \> Release to warehouse \> Automatic release of transfer orders**.
 1. In the dialog box, expand the **Records to include** section.
@@ -173,7 +181,7 @@ This section explains how to set up a scheduled batch job to release the transfe
 
 ### Set up the "Process outbound shipment" batch job
 
-This section explains how to set up a scheduled batch job to run the outbound shipment confirmation for loads ready to ship related to transfer order lines that are "ready to ship".
+This section explains how to set up a scheduled batch job to run the outbound shipment confirmation for loads ready to ship related to transfer order lines that are marked as *Ready to ship*.
 
 1. Go to **Warehouse management \> Periodic tasks \> Process outbound shipments**.
 1. Expand the **Records to include** section.
@@ -189,7 +197,7 @@ This section explains how to set up a scheduled batch job to run the outbound sh
 1. In the list of table relations, filter or search on the **Relation** column for *Invent Transfer Additional Fields (Record-ID)*.
 1. Focus on the table relation in the list then press the **Select** button.
 1. Select the **Range** tab.
-1. In the **Range** query tables, you will set up three query criteria ranges. Select the **Add** button to add a line.
+1. In the **Range** query tables, you'll set up three query criteria ranges. Select the **Add** button to add a line.
 1. Add a range for the table **Loads**. Set **Field** to *Load status* and set **Criteria** to *Loaded*.
 1. Add another range for the table **Invent Transfer Additional Fields**. Set **Field** to *Outbound shipment policy* and set **Criteria** to *Release and ship confirm*.
 1. Add another range for the table **Load details**. Set **Field** to *Reference* and set **Criteria** to *Transfer order shipment*.
@@ -207,7 +215,7 @@ This section explains how to set up a scheduled batch job to run the outbound sh
 
 ### Add on-hand on a license plate
 
-As a starting point for this scenario, you will need to have a license plate containing physical available inventory on hand.
+As a starting point for this scenario, you'll need to have a license plate containing physical available inventory on hand.
 
 | Item | Warehouse | Inventory status | Location | License plate | Quantity |
 | --- | --- | --- | --- | --- | --- |
@@ -217,7 +225,7 @@ As a starting point for this scenario, you will need to have a license plate con
 Add physical inventory on hand quantities by using the following values:
 
 > [!NOTE]
-> You will need to create the license plate and use locations that allow you to carry mixed items, like LP-010.
+> You'll need to create the license plate and use locations that allow you to carry mixed items, like LP-010.
 
 ### Create and process transfer orders from the warehouse app
 
@@ -235,9 +243,9 @@ For the mentioned example, two **Warehouse app events** (*Create transfer order*
 
 You can view the event queue and events messages generated by the Warehouse Management mobile app by going to **Warehouse management \> Enquiries and reports \> Mobile device logs \> Warehouse app events**.
 
-The *Create transfer order* event messages will receive the status *Waiting*, which means that the **Process warehouse app events** batch job will not pick up and process the event messages. As soon as the event message updates to status *Queued*, the batch job will process the events. This will happen at the same time as the creation of the *Complete transfer order* event (when a worker selects the **Complete order** button on the Warehouse Management mobile app). When the *Create transfer order* event messages has been processed, the status is updated to *Completed* or *Failed*. When the *Complete transfer order* status is updated to *Completed*, all the related events are deleted from the queue.
+The *Create transfer order* event messages will receive the status *Waiting*, which means that the **Process warehouse app events** batch job won't pick up and process the event messages. As soon as the event message updates to status *Queued*, the batch job will process the events. This will happen at the same time as the creation of the *Complete transfer order* event (when a worker selects the **Complete order** button on the Warehouse Management mobile app). When the *Create transfer order* event messages has been processed, the status is updated to *Completed* or *Failed*. When the *Complete transfer order* status is updated to *Completed*, all the related events are deleted from the queue.
 
-Because the **Warehouse app events** for the creation of transfer order data will not be processed by the batch job before the messages are updated to status *Queued*, you will need to look up the requested transfer order numbers as part of the **Identifier** field. The **Identifier** field is in the header of the **Warehouse app events** page.
+Because the **Warehouse app events** for the creation of transfer order data won't be processed by the batch job before the messages are updated to status *Queued*, you'll need to look up the requested transfer order numbers as part of the **Identifier** field. The **Identifier** field is in the header of the **Warehouse app events** page.
 
 As part of the warehouse event processing, the creation of the transfer order line might fail. In this case, the state of the event message is updated to *Failed* and you can use the **Batch log** information to learn why and take action to correct any problems.
 
@@ -281,7 +289,7 @@ No, a license plate can only be added to one transfer order at the time.
 
 No, you can't add more license plates to a transfer order that has a **Complete transfer order** warehouse app event.
 
-#### How can I find existing transfer orders to be used via the "Select transfer order" button in the Warehouse Management mobile app, if the order has not yet been created in the backend system?
+#### How can I find existing transfer orders to be used via the "Select transfer order" button in the Warehouse Management mobile app, if the order hasn't yet been created in the backend system?
 
 You can make it possible for workers to look up transfer order numbers in the Warehouse Management mobile app by using its [data inquiry](warehouse-app-data-inquiry.md) capability. For example, you could create a [detour](warehouse-app-detours.md) mobile device menu item that queries for the data displayed on the web client's **Warehouse app events** page (`WHSMobileDeviceQueueMessageCollection`) as part of the *Select order - MobileDeviceQueueMessageCollectionIdentifierId* step. The transfer order number matches the value shown in the **Identifier** field. Learn more in [Inquire into the warehouse app events](#inquire-the-warehouse-app-events).
 
