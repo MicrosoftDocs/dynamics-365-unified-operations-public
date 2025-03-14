@@ -1,5 +1,5 @@
 ---
-title: Download sessions
+title: Download sessions overview
 description: This article provides an overview of the download sessions used with Commerce Data Exchange in Microsoft Dynamics 365 Commerce.
 author: aneesmsft
 ms.date: 03/18/2025
@@ -14,7 +14,7 @@ ms.custom:
   - bap-template
 ---
 
-# Download sessions
+# Download sessions overview
 
 [!include[banner](../includes/banner.md)]
 
