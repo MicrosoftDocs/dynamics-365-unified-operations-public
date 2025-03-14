@@ -4,7 +4,7 @@ description: Learn how to set up a process hierarchy, assign various tasks, and 
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/13/2025
+ms.date: 03/14/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -83,21 +83,27 @@ To create a role, follow these steps.
 1. In the **Description** field, enter a value.
 1. Save the role.
 
- ## Merge option under Security tasks
+## Merge option under security tasks
+The **Merge** operation merges the entry points from the selected tasks into the destination task.
  
-Under **Security tasks**, there is a function to perform **Merge** operation.  
+To merge tasks, follow these steps:   
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security process role maintain**.
-2. Go to **Security tasks**, and select more than one tasks which you would like to merge together.
-3. Currently, the task selected last will be designated as **destination** and all other tasks selected before it will merge into the destination.
-4. The primary goal of **merge** operation is to merge **entry points** from selected tasks into the destination task.
-5. There are 2 choices which user will get while doing the merge **1) merge entry points and delete underlying duties and privileges from the selected tasks 2) merge entry points from selected tasks into destination but preserve the underlying duties and privileges.**
-6. To use the merge operation, more than one tasks selection is mandatory.
-7. This feature is very useful in scenarios where consolidation of tasks is recommended for a given role.
+2. Go to **Security tasks**, and select more than one tasks to merge together.
+3. Currently, the task selected last is designated as **destination** and all other tasks selected before are merged into the destination.
+
+Two merge options are avilable: 
+1) merge entry points and delete underlying duties and privileges from the selected tasks.
+2) merge entry points from selected tasks into destination and preserve the underlying duties and privileges.
+
+To use the merge operation, more than one task needs to be selected. 
+This feature is very useful in scenarios where consolidation of tasks is recommended for a given role.
 
 ## Synchronize security governance process hierarchy with core security configuration
 
-**Synchronize** function allow to sync any changes done directly into security duties and privileges within the core security configuration form, which were initially created under the **Security governance** process hierarchy. 
-Basically, when duties, privileges and roles are created from the Security governance and published to core security configuration, there are possibilities of editing them within Security configuration. It can be done by either adding or removing entry points. By doing this, now the security object is different between two forms. To bring back all changes from security configuration into security governance, one can use the **Synchronize** feature by selecting a process hierarchy level. 
+**Synchronize** function syncs any changes done directly into security duties and privileges on the **Core security configuration** page.  
+When duties, privileges, and roles are created from Security governance and published to core security configuration, users can edited them in Security configuration by either adding or removing entry points. By doing this, the security object is different between two pages. 
+
+To restore changes from security configuration into security governance, use the **Synchronize** feature by selecting a process hierarchy level. 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security process role maintain**.
-2. On the header, look for **Synchronize** action
-3. Click on it to use the feature
+2. On the header, select **Synchronize** to use the feature. 
+
