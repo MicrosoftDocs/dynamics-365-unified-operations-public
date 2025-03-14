@@ -34,5 +34,5 @@ The Enhanced download sessions feature provides multiple improvements to help ad
 
 When administrators enable the Enhanced download sessions feature, the **Download sessions** form displays a summary to help quickly identify issues that may be affecting multiple channels and devices and impacting the offline readiness of stores. These issues include top failing jobs, top suspended jobs, and top errors. The summary also provides inline filters to quickly view the impacted jobs.
 
-For each failed job, the table provides an associated Error ID. Error IDs are dynamically generated and automatically link to relevant articles, which allows administrators to easily access up-to-date documentation and troubleshooting guides to address the issues.
+For each failed job, the table provides an associated Error ID. Error IDs are dynamically generated and automatically link to relevant articles, allowing administrators to easily access up-to-date documentation and troubleshooting guides to address the issues.
 
