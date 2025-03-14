@@ -17,7 +17,9 @@ This article explains how to set up and generate reports for sales bank books fo
 
 The bank book in Bolivia details all customer payments that equal or exceed the amount that is established by the regulations of the National Tax Service (Servicio de Impuestos Nacionales). The **Sales bank Book BO** report can be used to download information about customer payments for sales of goods and/or services on a monthly basis. The downloaded information is in the presentation structure that is requested by the tax authority.
 
-![Sales bank book report diagram.](../media/LTM-Sales-bank-book.BO.png)
+The following diagram shows the process flow for the Purchase Band Book BO report. When the localization settings for a banking transaction indicate the payment needs to be reported, it is included on the report.
+
+![Sales bank book report diagram.](../media/LTM-Sales-bank-book-V1.png)
 
 ## Prerequisites
 
