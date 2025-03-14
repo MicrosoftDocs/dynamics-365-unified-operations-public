@@ -2034,6 +2034,8 @@
                     hrem: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
                   - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
+                  - name: Configure printing for Purchase Bank Books for Bolivia
+                    href: localizations/iberoamerica/ltm-purchase-bank-book-report-bolivia.md
                   - name: Create customer and vendor records with an address in Bolivia
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
                   - name: Set up a legal entity and tax information for Bolivia
