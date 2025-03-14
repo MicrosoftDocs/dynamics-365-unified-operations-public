@@ -70,7 +70,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Belgian electronic invoice (BE)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version (**5** or later) of the **Belgian electronic invoice (BE)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting configurations are successfully imported as result of the **Belgian electronic invoice (BE)** Globalization feature import.
 
     - **Invoice model**
