@@ -16,7 +16,7 @@ ms.custom:
 
 # Download sessions
 
-[!include[banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 This article provides an overview of the download sessions used with Commerce Data Exchange (CDX) in Microsoft Dynamics 365 Commerce.
 
