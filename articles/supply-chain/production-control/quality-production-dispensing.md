@@ -21,7 +21,15 @@ Production dispensing uses the following three principles
 - - 
 ## Setting up Production dispensing
 
-To use **Production dispensing** you must enable the feature select the feature for the desired company or site. For that company or site, you can also configure a parameter to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. The final selection allows the identification of a folder/directory on the server for the placement of ASCII files from weight scales.
+To enable **Production dispensing** and configure for over-dispensing use the following path
+
+- **Production control > Setup > Production control parameters > Tab: Standard update > Group: Dispensing** 
+- **Production control > Setup > Production control parameters by site > Tab: Standard update > Group: Dispensing** 
+
+- **Enable dispensing for production** - Select to enable the feature. 
+- **Allow over-dispensing with reverse pick** - Select to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. The final selection allows the identification of a folder/directory on the server for the placement of ASCII files from weight scales.
+
+
 
 If the Picking list is created at Release, the user will still have to go through the Start process on the batch or production orders. Upon Starting the order, the user will have to select the Dispensing ticket journal name and select Never as the Automatic BOM consumption; if not, the Picking journal will be created again.
 
