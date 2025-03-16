@@ -9,13 +9,19 @@ ms.author: johanho
 manager: 
 ---
 
-# Production Dispensing
+# Production dispensing
 
-Three basic principles drive the design of Production dispensing – unidirectional flow of materials and personnel, segregation of hazardous and non-hazardous materials, separation of storage and manufacturing items and spaces. In the past, convenience dictated the placement of dispensing areas, traditionally located right near warehouses where the materials were stored. Today, the dispensing area is viewed as the entry point to manufacturing and the transition point for materials coming from the warehouse and entering process areas, so specific criteria will determine the best location. Some materials can be weighed into intermediate bulk containers, such as corn starch or lactose used as fillers and binders for the formation of tablets and the filling of capsules. Some materials need to be transferred to production in its original container and may need to be dedicated until dispensing has been completed.
+Production dispensing uses the following three principles
 
-## Setting up Production Dispensing
+- **Unidirectional flow of materials and personnel**
+- **Segregation of hazardous and non-hazardous materials**
+- **Separation of storage and manufacturing items and spaces**
+- 
+- . The dispensing area is a critical component in manufacturing, serving as the entry point for materials transitioning from the warehouse into process areas. The optimal location for this area is determined by specific criteria to ensure efficiency and safety. In the dispensing process, materials such as corn starch or lactose, which are used as fillers and binders for tablet formation and capsule filling, can be weighed into intermediate bulk containers. This step ensures precise measurement and easy handling. Other materials may need to be transferred to production in their original containers, requiring dedicated handling until the dispensing is completed to maintain integrity and prevent contamination. This careful management of materials at the dispensing stage is essential for maintaining quality and consistency in the manufacturing process.
+- - 
+## Setting up Production dispensing
 
-To activate Production Dispensing you must select the feature for the desired company or site. For that company or site, you can also configure a parameter to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. The final selection allows the identification of a folder/directory on the server for the placement of ASCII files from weight scales.
+To use **Production dispensing** you must enable the feature select the feature for the desired company or site. For that company or site, you can also configure a parameter to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. The final selection allows the identification of a folder/directory on the server for the placement of ASCII files from weight scales.
 
 If the Picking list is created at Release, the user will still have to go through the Start process on the batch or production orders. Upon Starting the order, the user will have to select the Dispensing ticket journal name and select Never as the Automatic BOM consumption; if not, the Picking journal will be created again.
 
