@@ -11,13 +11,11 @@ manager:
 
 # Quick results entry
 
- **Quick result entry** offers an efficient way to enter test results on a quality order. Data for all tests is consolidated on one page, with defaulted quantities based on the quality order quantity and  details about minimum, maximum and target values for each test on the Quality order.
+ As an alternative to entering quality order test results line-by-line (using the **quality order line results** page opened from the **Results** menu in the quality order line section), you can use the **Quick result entry** page. This page consolidates data from all tests into a single view, streamlining the process. Quantities are automatically populated based on the quality order quantity, along with details about minimum, maximum, and target values.
 
 ## Using Quick result entry
 
-When entering results for quality order tests, the standard quality order page can be used. This option is accessible from the results ribbon on the quality order line. Alternatively, the Quick results page can be used. This page is opened from a menu item in the ribbon on the quality order header. It is indicates from a field on the quality order line, whether test results have already been entered for the appropriate test line.
-
-In the ribbon of the Quick results entry page you have the following five options
+This **Quick result entry** page is opened from a menu item in the ribbon on the quality order header. On the quality order line the field **Test results exists** indicates whether test results have already been entered for the appropriate test line. In the ribbon of the Quick results entry page you have the following five options
 
 - **New** and **Delete** - Options to separate the test results entered for different quantities. For example, if the quality order quantity is 5, using the **New** action, a total of five lines can be entered for that test so that a different test result can be entered for each quantity. The sum of the quantities for each test must still equal the total quantity of the quality order.  
 - **Split** - Provides the ability to split an existing line into multiple lines. When you open the dialog you have two options
