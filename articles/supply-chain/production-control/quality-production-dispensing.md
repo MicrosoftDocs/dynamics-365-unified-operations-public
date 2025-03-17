@@ -79,12 +79,16 @@ If the Picking list is created at Release, the user will still have to go throug
 
 There are three modes of issuing materials that are supported by Production Dispensing. The first mode, the proposed quantity of the material is dispensed from the raw material warehouse. This proposed quantity is then added to the manufacturing batch for production.
 
-
-
+:::image type="content" source="media/Dispensing - Image 1.png" alt-text="":::
 
 The second mode, a planned transfer order is automatically generated when there is insufficient quantity of the material in the dispensing warehouse. The proposed amount is dispensed from the container in the dispensing warehouse and then added to the manufacturing batch for production. The remainder of the material in the dispensing warehouse is retained there for other batch or production orders.
 
+:::image type="content" source="media/Dispensing - Image 2.png" alt-text="":::
+
 The third mode, an amount is picked from the raw material warehouse and entered as the Consumption or picked amount. An amount within the tolerance of the proposed quantity is dispensed and then added to the manufacturing batch for production. The remainder (Dispensed quantity minus the Consumption quantity) is then returned to the raw material warehouse using an automatically generated reverse pick list (dispensing ticket).
+
+:::image type="content" source="media/Dispensing - Image 3.png" alt-text="":::
+
 
 Once you have released or started the batch or production order the ingredients will be added to pick lists. If the ingredient is configured as a dispensed item, then it will appear on a dispensing ticket and non-dispensed items will appear of a normal pick list. Once the batch or production order is released/started the user can tell whether there are open pick lists or dispensing tickets by viewing that information on the Production Order List Page.
 
