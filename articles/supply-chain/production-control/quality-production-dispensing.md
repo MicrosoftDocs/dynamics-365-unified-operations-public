@@ -11,24 +11,66 @@ manager:
 
 # Production dispensing
 
-Production dispensing uses the following three principles
+Production dispensing is a feature designed to meet regulated and controlled requirements for dispensing ingredients and materials in production processes, commonly found in industries such as life sciences and pharmaceuticals. It includes support for
 
-- **Unidirectional flow of materials and personnel**
-- **Segregation of hazardous and non-hazardous materials**
-- **Separation of storage and manufacturing items and spaces**
+* Identifying products with special dispensing requirements.
+* Ensuring secure separation between material picking activities and product dispensing, as dispensing often needs to occur in highly regulated and restricted areas, such as clean rooms.
+* Restricting dispensing activities to authorized personnel.
+* Setting up rules for dispensed products, including thresholds for over- and under-dispensing.
+* Configuring confirmation of dispensing activities with an electronic signature.
+
+## Enable Production dispensing
+
+You set up **Production dispensing** in the **Production control** or **Production control by site** parameters. Use the following path
+
+- **Production control > Setup > Production control parameters > Tab: Standard update > Group: Dispensing** or **Production control > Setup > Production control parameters by site > Tab: Standard update > Group: Dispensing** 
+
+Under the field group **Dispensing** you will find following two parameters
+
+* **Enable dispensing for production** - Select to enable using production dispensing in a production flow.
+
+* **Allow over-dispensing with reverse pick** - Select to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. 
+* 
+## Setup a dispense pick journal
+
+First, create a journal name for dispensing
+
+1. Go to **Production control > Setup > Production journal names**
+1. Select **New** to create a new journal name for dispensing
+1. Fill out following information
+    1. - **Name** and **Description
+    1. Select field **Dispensing ticket**
+
+Make the new journal name for dispensing as the default journal name for dispensing activities
+
+1. Go to **Production control > Setup > Production control parameters > Tab: Journals > Field group: Default journal names**
+1. In the field **Dispensing ticket**, select the default journal name for dispensing activities.
+
+## Set up a product for the dispensing process
+
+On the definition of the released products, you will find following settings for production dispensing
+
+Go to **Product information management > Products > Released products > FastTab: Manage inventory > Field group: Dispensing**
+- **Dispensing control** - Select this option to enable dispensing control for the product.
+- **Under dispensing** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity.
+- **Over dispensing** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity.
+- **Authorized personnel** - Indication that only authorized personnel can do production dispensing.
 - 
-- . The dispensing area is a critical component in manufacturing, serving as the entry point for materials transitioning from the warehouse into process areas. The optimal location for this area is determined by specific criteria to ensure efficiency and safety. In the dispensing process, materials such as corn starch or lactose, which are used as fillers and binders for tablet formation and capsule filling, can be weighed into intermediate bulk containers. This step ensures precise measurement and easy handling. Other materials may need to be transferred to production in their original containers, requiring dedicated handling until the dispensing is completed to maintain integrity and prevent contamination. This careful management of materials at the dispensing stage is essential for maintaining quality and consistency in the manufacturing process.
-- - 
-## Setting up Production dispensing
+## Set up on BOM and Formula lines 
 
-To enable **Production dispensing** and configure for over-dispensing use the following path
+On BOM and Formula lines you can override the thresholds for over- and under dispensing from the product.
 
-- **Production control > Setup > Production control parameters > Tab: Standard update > Group: Dispensing** 
-- **Production control > Setup > Production control parameters by site > Tab: Standard update > Group: Dispensing** 
+Use the following procedure to override the thresholds
 
-- **Enable dispensing for production** - Select to enable the feature. 
-- **Allow over-dispensing with reverse pick** - Select to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. The final selection allows the identification of a folder/directory on the server for the placement of ASCII files from weight scales.
-
+1. Go to **Product information management > Products > Released products**
+1. Select a product that is defined for batch production.
+1. In the toolbar under the **Engineering** tab, select the **Formula versions**
+1. In the **Formula versions** page, under the **Formulas** tab select **Formula** to open the **Formula** page.
+1. Expand the **Lines details** FastTab and select the tab **Setup**
+1. Under the **Dispensing** field group find the following parameters
+- **Allow over-dispensing with reverse pick** - ??
+- **Overdispense** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. The value will override the value specified in the same field on the release products. 
+- **Underdispense** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity. The value will override the value specified in the same field on the release products.
 
 
 If the Picking list is created at Release, the user will still have to go through the Start process on the batch or production orders. Upon Starting the order, the user will have to select the Dispensing ticket journal name and select Never as the Automatic BOM consumption; if not, the Picking journal will be created again.
@@ -36,6 +78,9 @@ If the Picking list is created at Release, the user will still have to go throug
 ## Using Production Dispensing
 
 There are three modes of issuing materials that are supported by Production Dispensing. The first mode, the proposed quantity of the material is dispensed from the raw material warehouse. This proposed quantity is then added to the manufacturing batch for production.
+
+
+
 
 The second mode, a planned transfer order is automatically generated when there is insufficient quantity of the material in the dispensing warehouse. The proposed amount is dispensed from the container in the dispensing warehouse and then added to the manufacturing batch for production. The remainder of the material in the dispensing warehouse is retained there for other batch or production orders.
 
@@ -51,42 +96,41 @@ The machine operator would now select the Dispensing option on the Dispensing Ti
 
 The Dispensing Ticket production journal lines form contains a grid in the upper portion of the form that lists the dispensed ingredients. When selected, the grid in the lower portion of the form allows for entry of one or more dispensed weights that can be averaged and posted. Once the weights are entered, the procedure would be to click the 'Post dispensed' button, the Confirm menu button, optionally the Validate menu button, and finally the Post menu button.
 
-| **Path: Production control** \> **Common** \> **All production orders** \> **Dispensing ticket** \> **Dispensing** |  |  |
-|-------------------------|-------------------------|-------------------------|
-| **Label Name** | **Description** | **Examples/Hints** |
-| **Overview - Upper** |  |  |
-| Dispensed item | <blockquote></br>The dispensed item from the dispensing ticket picking list</br></blockquote> | Select the dispensed item for which to enter dispensed weights |
-| Proposal | <blockquote></br>The amount, in the BOM unit, that is expected to be consumed, based on the estimated production orders. The field displays a value only if you specified that the material consumption of the production must be entered manually for the item.</br></blockquote> |  |
-| Consumption | <blockquote></br>Feedback about the actual consumption, in the BOM unit.</br></blockquote> |  |
-| Dispensed | <blockquote></br>The amount that is being issued for production.</br></blockquote> | This will be the resultant value after you post the dispensed weight(s). |
-| **Tabs** |  |  |
-| Overview | <blockquote></br>View or enter the posting date for physical item picking, the production number, and the lot ID. The remaining fields provide an overview of the status of the lines in the picking list journal. This overview includes the item number that is used for production, the configuration, the warehouse where the item is stored, the proposal, and the unit. The overview can also indicate whether the item is finished.</br></blockquote> |  |
-| General | <blockquote></br>View or enter general identifying information. This information includes the journal number, bill of material (BOM), inventory quantity, and information about scrap and end reporting for the selected journal line.</br></blockquote> |  |
-| Reference | <blockquote></br>View related inventory references and BOM information for the selected journal line.</br></blockquote> |  |
-| Financial dimensions | <blockquote></br>View information about financial dimensions, such as the default dimensions and where the dimensions are used in account structures and advanced rule structures.</br></blockquote> |  |
-| Inventory dimensions | <blockquote></br>View the inventory dimensions for the selected journal line.</br></blockquote> |  |
-| **Buttons** |  |  |
-| Confirm | <blockquote></br>Check the dispensed – net amount for the journal line. Also updates the journal line "Dispensed" field with the posted dispensed quantity on the form.</br></blockquote> |  |
-| Validate | <blockquote></br>Check the journal for required information before you post it.</br></blockquote> |  |
-| Post | <blockquote></br>Check for errors and then post the journal.</br></blockquote> |  |
-| Inventory | <blockquote></br>Check inventory information for the journal line. This information includes inventory transactions, the available inventory for the selected item, and reservations.</br></blockquote> |  |
-| Print | <blockquote></br>Print the information that is on the journal line.</br></blockquote> |  |
-| **Overview - Lower** |  |  |
-| Dispensed – net | <blockquote></br>Enter the net amount that is being issued to production</br></blockquote> |  |
-| Include in validation | <blockquote></br>Check to include the weight in the averaging calculation</br></blockquote> |  |
-| Date and time | <blockquote></br>The current date and time when the weight was entered.</br></blockquote> |  |
-| User ID | <blockquote></br>The User ID of the individual who is entering the weights.</br></blockquote> |  |
-| Gross | <blockquote></br>The gross or total amount of weight being considered.</br></blockquote> |  |
-| Tare | <blockquote></br>The tare or unladen weight being considered.</br></blockquote> |  |
-| Scales | <blockquote></br>The Test Instrument that is used to identify the specific scale equipment related to the entered weight.</br></blockquote> |  |
-| **Tabs** |  |  |
-| General | <blockquote></br>View or enter general weight line information. This information includes the gross, tare, and net dispensed reporting for the selected journal line.</br></blockquote> |  |
-| **Buttons** |  |  |
-| Add | <blockquote></br>Allows additional weight lines to be entered for the journal line.</br></blockquote> |  |
-| Remove | <blockquote></br>Removes the selected weight line from the journal.</br></blockquote> |  |
-| Net weight from scales | <blockquote></br>Populates the Dispensed – net weight field from an ASCII text file in the server directory.</br></blockquote> |  |
-| Gross weight from scales | <blockquote></br>Populates the Gross weight field from an ASCII text file in the server directory.</br></blockquote> |  |
-| Tare weight from scales | <blockquote></br>Populates the Tare weight field from an ASCII text file in the server directory.</br></blockquote> |  |
-| Post dispensed | <blockquote></br>Calculates the average weight of the lines marked with 'Include in validation'</br></blockquote> |  |
+- **Path: Production control > Common > All production orders > Dispensing ticket > Dispensing**
+- **Label Name** – **Description** – **Examples/Hints**
+- **Overview - Upper**
+  - **Dispensed item** – The dispensed item from the dispensing ticket picking list – Select the dispensed item for which to enter dispensed weights
+  - **Proposal** – The amount, in the BOM unit, that is expected to be consumed, based on the estimated production orders. The field displays a value only if you specified that the material consumption of the production must be entered manually for the item.
+  - **Consumption** – Feedback about the actual consumption, in the BOM unit.
+  - **Dispensed** – The amount that is being issued for production. – This will be the resultant value after you post the dispensed weight(s).
+- **Tabs**
+  - **Overview** – View or enter the posting date for physical item picking, the production number, and the lot ID. The remaining fields provide an overview of the status of the lines in the picking list journal. This overview includes the item number that is used for production, the configuration, the warehouse where the item is stored, the proposal, and the unit. The overview can also indicate whether the item is finished.
+  - **General** – View or enter general identifying information. This information includes the journal number, bill of material (BOM), inventory quantity, and information about scrap and end reporting for the selected journal line.
+  - **Reference** – View related inventory references and BOM information for the selected journal line.
+  - **Financial dimensions** – View information about financial dimensions, such as the default dimensions and where the dimensions are used in account structures and advanced rule structures.
+  - **Inventory dimensions** – View the inventory dimensions for the selected journal line.
+- **Buttons**
+  - **Confirm** – Check the dispensed – net amount for the journal line. Also updates the journal line "Dispensed" field with the posted dispensed quantity on the form.
+  - **Validate** – Check the journal for required information before you post it.
+  - **Post** – Check for errors and then post the journal.
+  - **Inventory** – Check inventory information for the journal line. This information includes inventory transactions, the available inventory for the selected item, and reservations.
+  - **Print** – Print the information that is on the journal line.
+- **Overview - Lower**
+  - **Dispensed – net** – Enter the net amount that is being issued to production
+  - **Include in validation** – Check to include the weight in the averaging calculation
+  - **Date and time** – The current date and time when the weight was entered.
+  - **User ID** – The User ID of the individual who is entering the weights.
+  - **Gross** – The gross or total amount of weight being considered.
+  - **Tare** – The tare or unladen weight being considered.
+  - **Scales** – The Test Instrument that is used to identify the specific scale equipment related to the entered weight.
+- **Tabs**
+  - **General** – View or enter general weight line information. This information includes the gross, tare, and net dispensed reporting for the selected journal line.
+- **Buttons**
+  - **Add** – Allows additional weight lines to be entered for the journal line.
+  - **Remove** – Removes the selected weight line from the journal.
+  - **Net weight from scales** – Populates the Dispensed – net weight field from an ASCII text file in the server directory.
+  - **Gross weight from scales** – Populates the Gross weight field from an ASCII text file in the server directory.
+  - **Tare weight from scales** – Populates the Tare weight field from an ASCII text file in the server directory.
+  - **Post dispensed** – Calculates the average weight of the lines marked with 'Include in validation'
 
 If the user had posted the form above, with the Consumption quantity greater than the Proposal quantity and the Dispensed quantity less than the Consumption quantity (and the item is configured to allow over-dispensing with reverse pick list) then the posting will automatically generate an adjustment picking list journal. The user can select the line that indicates the new journal number and then an 'Open the adjustment journal' button will appear.
