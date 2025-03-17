@@ -4,7 +4,7 @@ description: Learn how administrators can enable basic Copilot capabilities in f
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 02/13/2025
 ms.custom:
  - bap-template
 ms.reviewer: johnmichalak
@@ -44,7 +44,7 @@ The following illustration shows the components that are needed to use Copilot s
 
 ## Regional requirements
 
-Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see [Explore Copilot products by geography and languages](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
 
 ## Microsoft Power Platform requirements
 

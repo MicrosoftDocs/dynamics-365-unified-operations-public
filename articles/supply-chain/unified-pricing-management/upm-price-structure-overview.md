@@ -1,5 +1,5 @@
 ---
-title: Price structure overview (preview)
+title: Price structure overview
 description: Get an overview of price structures in Unified pricing management, including information about price component types and concurrency rules.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ---
 
-# Price structure overview (preview)
+# Price structure overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
 
 When a sales order is placed, you can review the detailed price breakdown, including the price component. The breakdown corresponds to the price structure that you configured. The price details provide an audit record that shows how the price was determined. They can serve as a starting point for future price investigation.
 

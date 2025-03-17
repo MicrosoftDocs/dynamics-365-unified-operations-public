@@ -46,10 +46,7 @@ To use this functionality, turn on one or both of the following features in [Fea
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
 
-### <a name="tracked-components"></a>Tracked components (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+### <a name="tracked-components"></a>Tracked components
 
 This feature lets workers and managers register batch/serial numbers for materials and components that are used in manufacturing processes. They can then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
@@ -60,8 +57,6 @@ Before you can use this feature, your system must meet the following requirement
 - You must make the feature available to workers by adding a **Tracked components** button to the appropriate tab and toolbar, as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 For more information about this feature, see [Register batch/serial numbers for finished products and their components (preview)](production-floor-execution-use.md#tracked-components).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Work with production floor execution configurations
 

@@ -1,6 +1,6 @@
 ---
 title: Calculate tax on purchase quotations (Brazil)
-description: Learn how you can create a purchase request for quotation (RFQ), and when you enter the vendor reply, you can enter applicable fiscal information.
+description: This article describes how to create a purchase request for quotation in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
@@ -10,7 +10,6 @@ ms.date: 06/21/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
 
@@ -18,42 +17,46 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 [!include [banner](../../includes/banner.md)]
 
-You can create a purchase request for quotation (RFQ), and when you enter the vendor reply, you can enter applicable fiscal information. When the RFQ is accepted, a purchase order is created that has the same fiscal information that is entered in the RFQ. This recording uses the BRMF demo company.
+This article describes how to create a purchase request for quotation (RFQ) in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to Procurement and sourcing > Requests for quotations > All requests for quotations.
-2. Click New.
-3. In the Document title field, type a value.
-4. In the Site field, enter or select a value.
-5. In the Warehouse field, enter or select a value.
-6. Click OK.
-7. In the list, mark the selected row.
-8. In the Item number field, enter or select a value.
-9. In the Lines or header field, select an option.
-10. Expand the Vendor section.
-11. In the list, mark the selected row.
-12. In the Vendor account field, enter or select a value.
-13. Click Save.
-14. Click Send.
-15. Click OK.
-16. Close the page.
-17. Close the page.
-18. Go to Procurement and sourcing > Requests for quotations > Request for quotations follow-up > Request for quotation replies.
-19. In the list, click the link in the selected row.
-20. Click Edit.
-21. In the Quantity field, enter a number.
-22. In the Unit field, enter or select a value.
-23. In the Unit price field, enter a number.
-24. Expand the Line details section.
-25. Click the Fiscal information tab.
-26. In the CFOP field, enter or select a value.
-27. Click the Other tab.
-28. Click Totals.
-29. Click OK.
-30. Click Save.
-31. Click Accept.
-32. Click OK.
-33. Close the page.
-34. Close the page.
+You can create an RFQ and enter the applicable fiscal information when you enter the vendor reply. When the RFQ is accepted, a purchase order is created that has the same fiscal information that is entered in the RFQ. 
+
+The following procedure uses the BRMF demo company.
+
+To to create a purchase request for quotation (RFQ), follow these steps.
+
+1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
+1. Select **New**.
+1. In the **Document title** field, enter a value.
+1. In the **Site** field, enter or select a value.
+1. In the **Warehouse** field, enter or select a value.
+1. Select **OK**.
+1. In the list, mark the selected row.
+1. In the **Item number** field, enter or select a value.
+1. In the **Lines or header** field, select an option.
+1. Expand the **Vendor** section.
+1. In the list, mark the selected row.
+1. In the **Vendor account** field, enter or select a value.
+1. Select **Save**.
+1. Select **Send**.
+1. Select **OK**.
+1. Close the page.
+1. Go to **Procurement and sourcing \> Requests for quotations \> Request for quotations follow-up \> Request for quotation replies**.
+1. In the list, select the link in the selected row.
+1. Select **Edit**.
+1. In the **Quantity** field, enter a number.
+1. In the **Unit** field, enter or select a value.
+1. In the **Unit price** field, enter a number.
+1. Expand the **Line details** section.
+1. Select the **Fiscal information** tab.
+1. In the **CFOP** field, enter or select a value.
+1. Select the **Other** tab.
+1. Select **Totals**.
+1. Select **OK**.
+1. Select **Save**.
+1. Select **Accept**.
+1. Select **OK**.
+1. Close the page.
 
 
 

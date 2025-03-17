@@ -1,16 +1,15 @@
 ---
 title: Receive vendor fiscal documents (products) (Brazil)
-description: You can post a fiscal document that you received from the acquisition of inventory goods, where PIS/COFINS taxes are deducted from the tax assessment payment.
+description: This article describes how to post a fiscal document you receive from the acquisition of inventory goods where PIS/COFINS taxes are deducted from the tax assessment payment in Brazil with Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
 
@@ -18,38 +17,42 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 [!include [banner](../../includes/banner.md)]
 
-You can post a fiscal document that you received from the acquisition of inventory goods, where the ICMS, IPI, and PIS/COFINS taxes are deducted from the tax assessment payment. This recording uses the BRMF demo company.
+This article describes how to post a fiscal document you receive from the acquisition of inventory goods where PIS/COFINS taxes are deducted from the tax assessment payment in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to Procurement and sourcing > Purchase orders > All purchase orders.
-2. Click New.
-3. In the Vendor account field, enter or select a value.
-4. Click OK.
-5. Click Add line.
-6. In the list, mark the selected row.
-7. In the Item number field, enter or select a value.
-8. In the CFOP field, enter or select a value.
-9. In the Site field, enter or select a value.
-10. In the Warehouse field, enter or select a value.
-11. In the Quantity field, enter a number.
-12. Click Save.
-13. On the Action Pane, click Purchase.
-14. Click Confirm.
-15. Close the page.
-16. Close the page.
-17. Go to Accounts payable > Purchase orders > All purchase orders.
-18. In the list, click the link in the selected row.
-19. On the Action Pane, click Invoice.
-20. Click Invoice.
-21. Click Default from: Product receipt quantity to open the drop dialog.
-22. In the Default quantity for lines field, select an option.
-23. Click OK.
-24. In the Document model field, enter or select a value.
-25. In the Access key field, type a value.
-26. In the Invoice date field, enter a date.
-27. Click Save.
-28. Click Post.
-29. Close the page.
-30. Close the page.
+You can post a fiscal document that you received from the acquisition of inventory goods, where the ICMS, IPI, and PIS/COFINS taxes are deducted from the tax assessment payment. 
+
+The following procedure uses the BRMF demo company.
+
+To post a fiscal document you receive from the acquisition of inventory goods where PIS/COFINS taxes are deducted, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
+1. Select **New**.
+1. In the **Vendor account** field, enter or select a value.
+1. Select **OK**.
+1. Select **Add line**.
+1. In the list, mark the selected row.
+1. In the **Item number** field, enter or select a value.
+1. In the **CFOP** field, enter or select a value.
+1. In the **Site** field, enter or select a value.
+1. In the **Warehouse** field, enter or select a value.
+1. In the **Quantity** field, enter a number.
+1. Select **Save**.
+1. On the Action Pane, select **Purchase**.
+1. Select **Confirm**.
+1. Close the page.
+1. Go to **Accounts payable \> Purchase orders \> All purchase orders**.
+1. In the list, select the link in the selected row.
+1. On the Action Pane, select **Invoice**.
+1. Select **Invoice**.
+1. Select **Default from: Product receipt quantity** to open the drop dialog.
+1. In the **Default quantity for lines** field, select an option.
+1. Select **OK**.
+1. In the **Document model** field, enter or select a value.
+1. In the **Access key** field, enter a value.
+1. In the **Invoice date** field, enter a date.
+1. Select **Save**.
+1. Select **Post**.
+1. Close the page.
 
 
 

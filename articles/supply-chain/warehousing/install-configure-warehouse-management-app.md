@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/27/2024
+ms.date: 02/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
@@ -110,6 +110,9 @@ If a device is lost or compromised, you can revoke its authentication by followi
 
 - User-based authentication: [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
+
+> [!NOTE]
+> Note that [Shared Device Mode](/entra/identity-platform/msal-shared-devices) authentication isn't currently supported for the Warehouse Management mobile app. 
 
 ## Configure the application by importing connection settings
 

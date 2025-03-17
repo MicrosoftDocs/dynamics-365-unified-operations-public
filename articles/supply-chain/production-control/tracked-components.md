@@ -1,5 +1,5 @@
 ---
-title: Register and track batch/serial numbers for finished products and their components (preview)
+title: Register and track batch/serial numbers for finished products and their components
 description: Learn how workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes.
 author: johanhoffmann
 ms.author: johanho
@@ -11,19 +11,14 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Register and track batch/serial numbers for finished products and their components (preview)
+# Register and track batch/serial numbers for finished products and their components
 
 [!INCLUDE [banner](../includes/banner.md)]
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
 
 Workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes. They can also then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
 > [!TIP]
 > You can also track batch/serial numbers for materials and components using the [Traceability Add-in for Dynamics 365 Supply Chain Management (preview)](../traceability/traceability-overview.md), which offers a graphical browser interface and an API for integration with external systems.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

@@ -25,7 +25,9 @@ AI summarization in Commerce headquarters helps business users make better decis
 
 ## What can AI summarization in Commerce headquarters do?
 
-The feature is powered by Azure Open AI Service's large language model. It uses the information from posted and unposted statements to generate a summary. This summary includes insights such as the number of affected transactions, the total sales amount of those statements, and risks such as transactions that have returns without receipts, expense transactions, and price overrides. The AI summary is also shown for merchandisers, to provide insights about product misconfigurations. 
+The feature is powered by Azure Open AI Service's large language model. It uses the information from posted and unposted statements to generate a summary. This summary includes insights such as the number of affected transactions, the total sales amount of those statements, and risks such as transactions that have returns without receipts, expense transactions, and price overrides. The AI summary is also shown for merchandisers, to provide insights about product misconfigurations.
+
+[!INCLUDE[rai-feedback-mechanism.md](../../includes/rai-feedback-mechanism.md)]
 
 ## What is the intended use of AI summarization in Commerce headquarters?
 

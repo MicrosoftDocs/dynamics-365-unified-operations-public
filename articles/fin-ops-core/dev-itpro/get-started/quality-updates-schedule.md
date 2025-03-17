@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 02/05/2025
+ms.date: 03/13/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -61,19 +61,19 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.40 PQU-4 | October 2, 2024 | October 7, 2024 to November 10, 2024| Completed |
 | 10.0.40 PQU-5 | October 30, 2024 | November 4, 2024 to December 15, 2024| Canceled |
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Completed |
-| 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| In-Progress |
-| 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| In-Progress |
-| 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| Not Started |
+| 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| Completed |
+| 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| Completed |
+| 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| In-Progress |
 | 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Completed |
 | 10.0.41 PQU-2 | November 8, 2024 | November 11, 2024 to January 5, 2025| Canceled |
-| 10.0.41 PQU-3 | December 31, 2024 | January 6, 2025 to February 9, 2025| In-Progress |
-| 10.0.41 PQU-4 | January 29, 2025 | February 3, 2025 to March 9, 2025| In-Progress |
-| 10.0.41 PQU-5 | February 26, 2025 | March 3, 2025 to April 6, 2025| Not Started |
+| 10.0.41 PQU-3 | December 31, 2024 | January 6, 2025 to February 9, 2025| Completed |
+| 10.0.41 PQU-4 | January 29, 2025 | February 3, 2025 to March 9, 2025| Completed |
+| 10.0.41 PQU-5 | February 26, 2025 | March 3, 2025 to April 6, 2025| In-Progress |
 | 10.0.41 PQU-6 | March 26, 2025 | March 31, 2025 to May 4, 2025| Not Started |
 | 10.0.41 PQU-7 | April 23, 2025 | April 28, 2025 to June 1, 2025| Not Started |
 | 10.0.41 PQU-8 | May 23, 2025 | June 2, 2025 to July 6, 2025| Not Started |
-| 10.0.42 PQU-1 | February 12, 2025 | February 17, 2025 to March 23, 2025| Not Started |
-| 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| Not Started |
+| 10.0.42 PQU-1 | February 12, 2025 | February 18, 2025 to March 23, 2025| In-Progress |
+| 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| In-Progress |
 | 10.0.42 PQU-3 | April 9, 2025 | April 14, 2025 to May 8, 2025| Not Started |
 | 10.0.42 PQU-4 | May 7, 2025 | May 12, 2025 to June 15, 2025| Not Started |
 | 10.0.42 PQU-5 | June 4, 2025 | June 9, 2025 to July 13, 2025| Not Started |
@@ -111,73 +111,73 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-7 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-9 train schedule
 
-**App version: 10.0.1935.200**
+**App version: 10.0.1935.220**
 
-**Platform version: 7.0.7279.196**
+**Platform version: 7.0.7279.204**
 
-**Unified Environment Provisioning Application Version: 10.0.40.9**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | January 13 to January 16, 2025 | NA |
-| Station 2 | January 20 to January 23, 2025 | February 1 to February 2, 2025 |
-| Station 3 | January 21 to January 25, 2025 | February 1 to February 2, 2025 |
-| Station 4 | January 27 to January 30, 2024 | February 8 to February 9, 2025 |
-| Station 5 | February 3 to February 6, 2025 | February 15 to February 16, 2025 |
-| Station 6 | February 4 to February 7, 2025 | February 15 to February 16, 2025 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-8 train schedule
-
-**App version: 10.0.1935.208**
-
-**Platform version: 7.0.7279.202**
-
-**Unified Environment Provisioning Application Version: 10.0.40.10**
+**Unified Environment Provisioning Application Version: 10.0.40.11**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | February 10 to February 13, 2025 | NA |
-| Station 2 | February 17 to February 20, 2025 | March 1 to March 2, 2025 |
-| Station 3 | February 18 to February 21, 2025 | March 1 to March 2, 2025 |
-| Station 4 | February 24 to February 27, 2024 | March 8 to March 9, 2025 |
-| Station 5 | March 3 to March 6, 2025 | March 15 to March 16, 2025 |
-| Station 6 | March 4 to March 7, 2025 | March 15 to March 16, 2025 |
+| Station 1 | March 10 to March 13, 2025 | NA |
+| Station 2 | March 17 to March 20, 2025 | March 29 to March 30, 2025 |
+| Station 3 | March 18 to March 21, 2025 | March 29 to March 30, 2025 |
+| Station 4 | March 24 to March 27, 2024 | April 5 to April 6, 2025 |
+| Station 5 | March 31 to April 3, 2025 | April 12 to April 13, 2025 |
+| Station 6 | April 1 to April 4, 2025 | April 12 to April 13, 2025 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.41 Release-3 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-5 train schedule
 
-**App version: 10.0.2015.145**
+**App version: 10.0.2015.190**
 
-**Platform version: 7.0.7367.133**
+**Platform version: 7.0.7367.155**
 
-**Unified Environment Provisioning Application Version: 10.0.41.6**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | January 6 to January 9, 2024 | NA |
-| Station 2 | January 13 to January 16, 2024 | January 25 to January 26, 2025 |
-| Station 3 | January 14 to January 27, 2024 | January 25 to January 26, 2025 |
-| Station 4 | January 20 to January 23, 2024 | February 1 to February 2, 2025 |
-| Station 5 | January 27 to January 30, 2025 | February 8 to February 9, 2025 |
-| Station 6 | January 28 to January 31, 2025 | February 8 to February 9, 2025 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-4 train schedule
-
-**App version: 10.0.2015.165**
-
-**Platform version: 7.0.7367.145**
-
-**Unified Environment Provisioning Application Version: 10.0.41.7**
+**Unified Environment Provisioning Application Version: 10.0.41.8**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | February 3 to February 6, 2024 | NA |
-| Station 2 | February 10 to February 13, 2024 | February 22 to February 23, 2025 |
-| Station 3 | February 11 to February 14, 2024 | February 22 to February 23, 2025 |
-| Station 4 | February 17 to February 20, 2024 | March 1 to March 2, 2025 |
-| Station 5 | February 24 to February 27, 2025 | March 8 to March 9, 2025 |
-| Station 6 | February 25 to February 28, 2025 | March 8 to March 9, 2025 |
+| Station 1 | March 3 to March 6, 2025 | NA |
+| Station 2 | March 10 to March 13, 2025 | March 22 to March 23, 2025 |
+| Station 3 | March 11 to March 14, 2025 | March 22 to March 23, 2025 |
+| Station 4 | March 17 to March 20, 2025 | March 29 to April 30, 2025 |
+| Station 5 | March 24 to March 27, 2025 | April 5 to April 6, 2025 |
+| Station 6 | March 25 to March 28, 2025 | April 5 to April 6, 2025 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.42 Release-1 train schedule
+
+**App version: 10.0.2095.113**
+
+**Platform version: 7.0.7452.94**
+
+**Unified Environment Provisioning Application Version: 10.0.42.4**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | February 18 to February 21, 2025 | NA |
+| Station 2 | February 24 to February 27, 2025 | March 08 to March 09, 2025 |
+| Station 3 | February 25 to February 28, 2025 | March 08 to March 09, 2025 |
+| Station 4 | March 03 to March 06, 2025 | March 15 to March 16, 2025 |
+| Station 5 | March 10 to March 13, 2025 | March 22 to March 23, 2025 |
+| Station 6 | March 11 to March 14, 2025 | March 22 to March 23, 2025 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.42 Release-2 train schedule
+
+**App version: 10.0.2095.129**
+
+**Platform version: 7.0.7452.105**
+
+**Unified Environment Provisioning Application Version: 10.0.42.5**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | March 17 to March 20, 2025 | NA |
+| Station 2 | March 24 to March 27, 2025 | April 5 to April 6, 2025 |
+| Station 3 | March 25 to March 28, 2025 | April 5 to April 6, 2025 |
+| Station 4 | March 31 to April 3, 2025 | April 12 to April 13, 2025 |
+| Station 5 | April 7 to April 10, 2025 | April 19 to April 20, 2025 |
+| Station 6 | April 8 to April 11, 2025 | April 19 to April 20, 2025 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

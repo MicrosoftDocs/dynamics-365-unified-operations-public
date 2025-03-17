@@ -221,14 +221,9 @@ To view and edit Rebate management transactions by using the rebate workbench, f
 > [!NOTE]
 > If you're using a claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period.
 
-### Consolidate vendor invoices for the same vendor in vendor rebate deals (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.43 GA -->
+### Consolidate vendor invoices for the same vendor in vendor rebate deals
 
 Sometimes, vendor rebate deals are listed over multiple lines (for example, because the output is split by financial dimension). In these cases, it can be cumbersome to manage multiple entries and vendor accounts for the same vendor. To improve efficiency when payable invoices are generated for vendor accounts, you can consolidate multiple ledger lines for the same vendor into a single vendor line that has several ledger lines.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 #### Turn on vendor invoice consolidation
 
