@@ -36,7 +36,7 @@ For other environments (listed below), you must use Remote Desktop Protocol (RDP
 
 ## Key concepts
 
-Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](apply-deployable-package-system.md#packages-runbooks-and-the-axupdateinstaller-in-depth) at the end of this article.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. Learn more in [Packages, runbooks, and the AXUpdateInstaller in depth](apply-deployable-package-system.md#packages-runbooks-and-the-axupdateinstaller-in-depth) at the end of this article.
 
 ## Supported package types
 
@@ -63,8 +63,8 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
     - Types of packages
 
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help ensure that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
-- **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
-- **Make sure that the application binary update package is applied to your dev/build environment AFTER it is applied to your sandbox and production environment** - If the application binary package is applied on your dev/build environment and this raises the platform build version to be higher than your target sandbox or production environment, you will be blocked from applying any AOT packages that are produced from this dev/build environment. To apply AOT packages produced from a dev/build environment, your dev/build instance must be equal to or lower than your target environments.
+- **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid more hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
+- **Make sure that the application binary update package is applied to your dev/build environment AFTER it is applied to your sandbox and production environment** - If the application binary package is applied on your dev/build environment and this raises the platform build version to be higher than your target sandbox or production environment, you are blocked from applying any AOT packages that are produced from this dev/build environment. To apply AOT packages produced from a dev/build environment, your dev/build instance must be equal to or lower than your target environments.
 
 ## Apply a package to a nonproduction environment by using LCS
 
@@ -93,7 +93,7 @@ If package deployment fails, see [Troubleshoot package application issues](deplo
 
 ## Applying updates and extensions
 
-If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have initialized Cloud Scale Unit, you will also need to update Commerce channel components. For more information, see [Update Retail Cloud Scale Unit](Update-retail-channel.md).
+If you're updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have initialized Cloud Scale Unit, you also need to update Commerce channel components. For more information, see [Update Retail Cloud Scale Unit](Update-retail-channel.md).
 
 If you're using components (such as Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Modern POS (MPOS)](../../../commerce/retail-modern-pos-device-activation.md).
 
@@ -109,7 +109,7 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 
 **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
-## Additional resources
+## More information
 
 [Install deployable packages from the command line](install-deployable-package.md)
 
