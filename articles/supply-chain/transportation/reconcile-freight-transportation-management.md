@@ -23,7 +23,7 @@ Freight rates are calculated by the rate engine associated with the relevant shi
 
 Freight bills and invoices must then be matched, which is the process of finding the freight bills that correspond to each freight invoice. Match the invoice lines one-by-one (manual matching), or match all available invoices at once (auto matching). Handle any variances between the freight bill and the invoice using the reconciliation reason codes setup for both manual and automatic reconciliation.
 
-:::image type="content" source="media/freight-reconcilation-process.jpg" alt="Freight reconciliation process." lightbox="media/freight-reconcilation-process.jpg":::
+:::image type="content" source="media/freight-reconcilation-process.jpg" alt-text="Freight reconciliation process." lightbox="media/freight-reconcilation-process.jpg":::
 
 ## Enable freight reconciliation
 
@@ -41,7 +41,7 @@ Upon the ship confirm action, the freight bill is generated and freight charges 
 
 If you're reconciling freight manually, match each invoice line with the freight bill line or lines for the load being invoiced. Do this matching on the **Freight bill and invoice matching** page. If the amount on the invoice line doesn't match the freight bill amount, select a reconciliation reason for the difference. If there are multiple reasons for reconciliation, split the unmatched amount across them. The reconciliation reason determines how the difference amounts are posted in the general ledger. When the reconciliation of the whole invoice amount is accounted for, it's submitted for approval, and then the journal is posted. The following illustration shows how to generate a freight invoice and do freight reconciliation.
 
-:::image type="content" source="media/processflowforfreightreconciliation.jpg" alt="Freight reconciliation tasks." lightbox="media/processflowforfreightreconciliation.jpg":::
+:::image type="content" source="media/processflowforfreightreconciliation.jpg" alt-text="Freight reconciliation tasks." lightbox="media/processflowforfreightreconciliation.jpg":::
 
 ### Select a load to reconcile
 
