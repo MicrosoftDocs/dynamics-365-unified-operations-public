@@ -2028,6 +2028,8 @@
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
                 - name: Bolivia
                   items:
+                  - name: Bolivia overview
+                    href: localizations/iberoamerica/bolivia.md
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure sales and purchase invoices for Bolivia
