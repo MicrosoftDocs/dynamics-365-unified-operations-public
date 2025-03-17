@@ -8,7 +8,7 @@ ms.topic: overview
 ms.date: 03/17/2025
 audience: Application User
 ms.search.region: Global
-ms.search.form: DefaultDashboard, SysUserSetup, WorkflowWorkListAssignedToMe,
+ms.search.form: DefaultDashboard, SysUserSetup, WorkflowWorkListAssignedToMe
 ms.custom: bap-template
 ms.collection:
   - evergreen
@@ -20,7 +20,7 @@ ms.collection:
 
 This articles describes the purpose and use cases for the default dashboard, its content such as app tiles and workspaces and how to personalize it.
 
-![Default Dashboard as it appears to an administrator.](./media/default-dashboard.png)](./media/default-dashboard.png)
+[![Default Dashboard as it appears to an administrator.](./media/default-dashboard.png)](./media/default-dashboard.png)
 
 The Default Dashboard is a [dashboard](../../dev-itpro/user-interface/page-navigation.md#dashboard) kind of page in finance and operations apps that is by default set at the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md). It comes pre-configured with a set uf useful components that help users to navigate within the application, such as  workspaces, in a simple visual experience. Components, such as workspaces and apps, will only be shown if the user has given respective permissions.
 

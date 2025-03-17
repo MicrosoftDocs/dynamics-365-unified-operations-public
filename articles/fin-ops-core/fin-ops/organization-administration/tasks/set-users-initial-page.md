@@ -14,7 +14,6 @@ ms.collection:
   - evergreen
 ---
 
-
 # Set a user's preferred initial page
 
 [!include [banner](../../includes/banner.md)]
