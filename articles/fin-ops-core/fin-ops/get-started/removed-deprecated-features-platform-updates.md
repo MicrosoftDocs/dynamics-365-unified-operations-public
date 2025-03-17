@@ -3,10 +3,10 @@ title: Removed or deprecated platform features
 description: Learn about features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: conceptual  
 ms.custom: 
   - bap-template
-ms.date: 10/25/2024
+ms.date: 03/17/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -26,6 +26,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
+## Feature deprecation effective January 2025
+
+### Azure Active Directory Authentication Library (ADAL)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The Active Directory Authentication Library (ADAL) doesn't meet the needs for safe authentication and is no longer maintained. |
+| Replaced by another feature?     | Microsoft Authentication Library (MSAL) | 
+| What do you need to do?          | The reference to the assembly implementing ADAL was removed. This removal causes compilation errors if the ADAL APIs are referenced from your code. You must port your code and replace ADAL references with Microsoft Authentication Library (MSAL) as described in [Migrate applications to the Microsoft Authentication Library](/entra/identity-platform/msal-migration).
+| Product areas affected             | All code that references ADAL APIs |
+| Deployment option                  | All |
+| **Status**                         | Effective as of version 10.0.43 |
 
 ## Feature deprecation effective October 2024
 
@@ -68,7 +80,7 @@ Detailed information about objects in finance and operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
 | **Replaced by another feature?**   | Microsoft Entra ID based authentication. |
-| **What do you need to do?**        | This change impacts the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Switch to public API rather than reading it directly from config. <br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
+| **What do you need to do?**        | This change has an impact on the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Use the public API instead of reading directly from the configuration. The [OdbcConnection](/dotnet/api/dynamics.ax.application.odbcconnection) is no longer supported, Please migrate to the supported connection types: [Connection](/dotnet/api/dynamics.ax.application.connection) or [UserConnection](/dotnet/api/dynamics.ax.application.userconnection).<br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
@@ -112,7 +124,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | This change reaches your environment beginning last week of September 2024. |
+| **Status**                         | Latest Update - Public Cloud: Deprecation has been completed. For Sovereign Cloud: This change reaches your environment beginning last week of February 2025. |
 
 ## Feature deprecation effective July 2024
 
@@ -157,7 +169,7 @@ To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-
 |------------|--------------------|
 | **Reason for deprecation/removal** | [Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps) that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant is no longer authenticated. Finance and operations APIs will start to fail from these apps in deprecated environments. |
 | **Replaced by another feature?**   | No. To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). If application onboarding isn't expected, remove that app or replace with a compliant app that has a client service principal in tenant. |
-|   What do you need to do?          | Step 1. Review your onboarded applications: <br><br> <li>Go to **System administration** > **Setup** > **Microsoft Entra ID application**, or **Azure Active Directory applications** to review onboarded applications</li><li> For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).<br><br>Step 2. Provision Application Service Principal: <br><br> <li> Create a Service Principal in your Microsoft Entra ID tenant for above listed applications. [Follow these steps](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=admin-consent-url). Skip provisioning for Microsoft applications and those already provisioned with a service principal ID.</li><li> Remove or replace any unexpected application onboarding with a compliant app.<br><br>Step 3. Review the configured Endpoint: <br><br> <li> Make sure the access token being acquired should be from your Tenanted endpoint not organization endpoint _https://login.microsoftonline.com/{yourtenant}_ and not your organization endpont _https://login.microsoftonline.com/organizations_.  |
+|   What do you need to do?          | Step 1. Review your onboarded applications: <br><br> <li>Go to **System administration** > **Setup** > **Microsoft Entra ID application**, or **Azure Active Directory applications** to review onboarded applications</li><li> For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).<br><br>Step 2. Provision Application Service Principal: <br><br> <li> Create a Service Principal in your Microsoft Entra ID tenant for above listed applications. [Follow these steps](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=admin-consent-url). Skip provisioning for Microsoft applications and those already provisioned with a service principal ID.</li><li> Remove or replace any unexpected application onboarding with a compliant app.<br><br>Step 3. Review the configured Endpoint: <br><br> <li> Make sure the access token being acquired should be from your tenant endpoint `https://login.microsoftonline.com/{yourtenant}` and not  your organization endpoint `https://login.microsoftonline.com/organizations`. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for nonproduction environments and by April 2024 for production environments. Platform update 63 and Dynamics 365 finance version 10.0.39 and later |

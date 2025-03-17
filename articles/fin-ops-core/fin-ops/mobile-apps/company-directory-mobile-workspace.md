@@ -61,12 +61,6 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </tbody>
 </table>
 
-## Download and install the mobile app
-Download and install the finance and operations mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
-
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.
 2.  Enter your Microsoft Dynamics 365 URL.

@@ -3,10 +3,12 @@ title: Messaging APIs - Action center, message bar, and message details
 description: Learn about the messaging system in finance and operations apps, with overviews on backwards compatibility with code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 10/15/2021
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 01/21/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

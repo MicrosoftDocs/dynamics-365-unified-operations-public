@@ -4,7 +4,7 @@ description: Learn about which features are supported in Cloud and on-premises, 
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 01/14/2021
+ms.date: 03/05/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -28,6 +28,15 @@ Information about the [development and administration features](#development-and
 
 The following tables list the application areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
+## All Dynamics 365 finance and operations apps
+
+| **Area**             | **Feature**                | **Cloud** | **On-premises** |
+|---------------------|-----------------------------|-----------|-----------------|
+| AI and Copilot features | [Generative Help and Guidance](../../fin-ops/copilot/copilot-generative-help.md) | Yes | No |
+| | [Any copilot capabilities](../../fin-ops/copilot/copilot-for-finance-operations.md) | Yes | No |
+|  | [Summary generations](../../../supply-chain/get-started/copilot-summaries-overview.md) | Yes | No |
+|  | AI Agents | Yes | No |
+
 ## Dynamics 365 Finance
 
 | **Area**             | **Feature**                | **Cloud** | **On-premises** |
@@ -48,8 +57,8 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | ER: Integration with SharePoint                                                           | Yes       | No              |
 |                                      | ER: Integration with Regulatory Configuration Services (RCS)                              | Yes       | No              |
 |                                      | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No        | Yes             |
-|                                      | Integration with PowerBI.com                                                              | Yes       | No              |
-|                                      | Integration with PowerBI Desktop                                                          | No        | Yes             |
+|                                      | Integration with Power BI.com                                                              | Yes       | No              |
+|                                      | Integration with Power BI Desktop                                                          | No        | Yes             |
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |

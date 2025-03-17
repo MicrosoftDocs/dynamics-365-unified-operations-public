@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 03/04/2025
 ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
@@ -39,7 +39,8 @@ Unmanaged vendors are vendors that don't have their details registered as vendor
 To define sales tax codes to make additional information fields available for an unmanaged vendor in journal transactions, you must specify a sales tax code that was set up to allow for additional information in the journal.
 
 ## DIOT report configuration
-This section describes how to define the concepts and attach the sales tax codes that are required to generate the DIOT declaration statement. In Finance, a concept represents purchase transaction amounts that are grouped under different VAT percentages, as specified by the tax authorities in Mexico. In the DIOT text file, the total amounts are grouped for each vendor, based on the concepts that were previously defined. These concepts are reported in columns 8 through 22 of the DIOT layout format. The other columns of the report are automatically filled in based on vendor information such as the RFC, type of operation, and other related data.
+This section describes how to define the concepts and attach the sales tax codes that are required to generate the DIOT declaration statement. In Finance, a concept represents purchase transaction amounts that are grouped under different VAT percentages, as specified by the tax authorities in Mexico. In the DIOT text file, the total amounts are grouped for each vendor, based on the concepts that were previously defined. These concepts are reported in columns 8 through 53 of the DIOT layout format. The other columns of the report are automatically filled in based on vendor information such as the RFC, type of operation, and other related data.
+For reporting periods starting from January 2025, in the last column the **Declare fiscal effects** (**01** - Yes, **02** - No) field is reported.
 
 ### Example of concepts
 
@@ -49,7 +50,7 @@ This section describes how to define the concepts and attach the sales tax codes
 | 2          | The base amount of purchases at VAT 15% (settled) | 9                                               |
 | 3          | VAT amount non recoverable at 16% or 15%          | 10                                              |
 
-You can create new concepts on the **DIOT declaration** page. However, you can create only 15 concepts. The first concept should be order number 8 and the last should be order number 22. You can start to create the concepts in a different order, but you must complete all of them (8 through 22) to prevent inconsistencies in the government validation tool. For each concept, you must specify a column type. Specify a column type of **None** if the column has been deprecated. Some columns no longer apply and must be reported with a **0,00** amount. If the check box isn't selected, the DIOT declaration statement shows the complete net amount or the tax amount. Additionally, for each column, you can indicate the non-deductible percentage of the net amount or tax amount that is shown in the DIOT declaration statement.
+You can create new concepts on the **DIOT declaration** page. However, you can create only 46 concepts. The first concept should be order number 8 and the last should be order number 53. You can start to create the concepts in a different order, but you must complete all of them (8 through 53) to prevent inconsistencies in the government validation tool. For each concept, you must specify a column type. Specify a column type of **None** if the column has been deprecated. Some columns no longer apply and must be reported with a **0,00** amount. If the check box isn't selected, the DIOT declaration statement shows the complete net amount or the tax amount. Additionally, for each column, you can indicate the non-deductible percentage of the net amount or tax amount that is shown in the DIOT declaration statement.
 
 #### Example
 
@@ -106,6 +107,10 @@ To generate the DIOT declaration statement, click **Tax** &gt; **Declarations** 
 <tr class="even">
 <td>Upper limit</td>
 <td>Enter the upper threshold amount for the global vendor. For a global vendor, the total payment amount that must be declared is less than or equal to the value in this field. For a domestic vendor, the total payment amount that must be declared is more than the value in this field.</td>
+</tr>
+<tr class="even">
+<td>Declare fiscal effects</td>
+<td>The <strong>Declare fiscal effects</strong> field is mandatory. Starting in the year 2025 it is mandatory to affirm that fiscal effects were given to the receipts that support the transactions carried out with the supplier. Select <strong>Yes</strong> to affirm that fiscal effects were given to the receipts that support the transactions carried out with the suppliers in the reporting period.</td>
 </tr>
 </tbody>
 </table>

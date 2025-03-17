@@ -3,14 +3,15 @@ title: Control the text that Task Recorder generates for a control
 description: Learn about how Task recorder determines what instruction label to generate for controls, including a case study with code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9b75a1e3-cc76-4a2f-ae30-7e5a485b30b1
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Control the text that Task Recorder generates for a control

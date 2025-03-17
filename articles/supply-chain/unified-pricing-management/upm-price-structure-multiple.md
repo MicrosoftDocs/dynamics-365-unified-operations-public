@@ -1,5 +1,5 @@
 ---
-title: Set up a company to use multiple price structures (preview)
+title: Set up a company to use multiple price structures
 description: Learn how to set up multiple price structures in a company, including a step-by-step process for configuring a company to use multiple price structures.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPParameters
 ---
 
-# Set up a company to use multiple price structures (preview)
+# Set up a company to use multiple price structures
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 This article explains how to set up multiple price structures in a company. The purpose of a price structure is to define the order that the system calculates each type of price adjustment in, and to define other options for each price component code, such as concurrency and compounding rules.
 
@@ -60,4 +58,4 @@ Follow these steps to create and configure a price structure.
 Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure or multiple price structures.
 
 - *If you're using a single price structure*, you can add the price component code for auto charges in the price tree.
-- *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic in Supply Chain Management to determine which auto charges apply to the sales order.
+- *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic to determine which auto charges apply to the sales order.

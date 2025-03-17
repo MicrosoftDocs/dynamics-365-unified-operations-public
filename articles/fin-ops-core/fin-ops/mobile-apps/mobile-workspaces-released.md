@@ -26,7 +26,7 @@ This article lists the mobile workspaces that are available for use with the fin
 |----------------------|---------------|--------------|
 |[Company directory](company-directory-mobile-workspace.md)| Allows you to view and contact other employees in your organization.| Retire |    
 |[My team](manager-self-service-mobile-workspace.md)| You can view your direct reports and extended staff, as well as send praise for individuals in your reporting chain.| Retire |     
-|[Invoice approval](invoice-approval-mobile-workspace.md)| Provides a listing of invoices that have been assigned to you through the vendor invoice header workflow process.| Replace   |
+|[Invoice approval](invoice-approval-mobile-workspace.md)| Provides a listing of invoices that have been assigned to you through the vendor invoice header workflow process.| Retire   |
 | [Expense management](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) | You can capture and upload a receipt, so that you can attach it to an expense report later. The mobile workspace also lets you quickly create an expense line by using an attached receipt. | Replace |
 | [Purchase order approval](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | View and respond to purchase orders with actions such as approve or reject. | Replace |
 | [Project time entry](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) | You can enter and save time against a project by using your mobile device. | <p>Replacement available</p><p>[Microsoft Dynamics 365 Project Timesheet](/dynamics365/project-operations/prod-pma/project-timesheet)</p> |

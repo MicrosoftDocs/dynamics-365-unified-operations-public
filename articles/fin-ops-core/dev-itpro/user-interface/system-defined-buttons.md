@@ -3,14 +3,15 @@ title: System-defined buttons
 description: Learn about system-defined buttons, including a table that provides button name macros for various common buttons.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 11/09/2017
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # System-defined buttons

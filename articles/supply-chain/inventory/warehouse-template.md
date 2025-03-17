@@ -3,11 +3,12 @@ title: Set up a warehouse by using a warehouse configuration template
 description: Learn how to set up a warehouse by using a warehouse configuration template, including scenarios where configuration templates can be helpful.
 author: Weijiesa
 ms.author: weijiesa
-ms.topic: article
-ms.date: 11/16/2017
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
+ms.topic: how-to
+ms.date: 02/11/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Set up a warehouse by using a warehouse configuration template
@@ -34,7 +35,7 @@ For this scenario, the configuration setup for a warehouse and some transaction 
 > [!NOTE]
 > It's important that you include other related setup data when you copy a configuration setup. For example, you want to set up products by copying the setup from a test environment. However, you can't set up a fixed picking location for a product before that product is created. Although individual configuration templates don't support this type of dependency, there are default data templates that support it. You can easily include these default data templates in a configuration process.
 
-### Export a default warehouse template 
+### Export a default warehouse template
 
 1. Open the **Data management** workspace.
 
@@ -68,7 +69,7 @@ You can download a zip file for the data package. This file contains all the dat
 1. In the destination environment, make sure that you're in the company that you want to import the warehouse data into.
 
     > [!NOTE]
-    > Before you do the import, you should identify any data dependencies. For example, the **Warehouse management** template includes a data entity that is named **Warehouse disposition codes**. This entity contains data that is related to the **Disposition codes** setup page (**Warehouse management** > **Setup** > **Mobile device** > **Disposition codes**). If an existing setup already handles the return process for sales orders, the **Return disposition code** field contains a value. The disposition code in this field is related to the **Disposition code** data entity, which is part of the **Sales and marketing** template. If the data from the **Disposition code** data entity isn't imported before the data from the **Warehouse disposition codes** field, the import will fail.
+    > Before you do the import, you should identify any data dependencies. For example, the **Warehouse management** template includes a data entity that is named **Warehouse disposition codes**. This entity contains data that is related to the **Disposition codes** setup page (**Warehouse management** \> **Setup** \> **Mobile device** \> **Disposition codes**). If an existing setup already handles the return process for sales orders, the **Return disposition code** field contains a value. The disposition code in this field is related to the **Disposition code** data entity, which is part of the **Sales and marketing** template. If the data from the **Disposition code** data entity isn't imported before the data from the **Warehouse disposition codes** field, the import will fail.
 
 2. In the **Data management** workspace, select **Import**.
 3. Create a new import project.
@@ -82,6 +83,5 @@ To learn more about how to use warehouse template to copy the configuration of a
 ## Related article
 
 [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

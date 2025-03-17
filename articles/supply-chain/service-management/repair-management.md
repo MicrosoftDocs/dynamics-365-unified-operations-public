@@ -1,8 +1,8 @@
 ---
 title: Repair management
 description: Group problems systematically to help with the suggestion of solutions that have been successful in the past. Learn about repair management.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 ms.topic: how-to

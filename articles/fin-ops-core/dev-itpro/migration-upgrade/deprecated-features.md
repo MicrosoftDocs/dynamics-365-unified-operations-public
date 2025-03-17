@@ -1,15 +1,15 @@
 ---
 title: Removed or deprecated features in previous releases
 description: Learn about features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
-author: sericks007
-ms.author: sericks
-ms.topic: article
-ms.date: 02/16/2021
+author: johnmichalak
+ms.author: johnmichalak
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 12/23/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28 
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ---
@@ -77,7 +77,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **setUtcString()** method. Developers should be using the **setUtcDateTime()** method instead. |
 
-### Blocklist report (IT) – Feature reference IT-00001
+### Blacklist report (IT) – Feature reference IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

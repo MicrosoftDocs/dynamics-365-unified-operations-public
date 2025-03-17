@@ -2,12 +2,13 @@
 title: Available geographies for Dynamics 365 finance and operations apps
 description: Learn about the supported geographies and endpoints for Microsoft Dynamics 365 finance and operations apps, including an overview of data residency.
 author: ShaileshNikam-MSFT
-ms.author: shailesn
-ms.topic: article
-ms.date: 05/10/2023
+ms.author: epegors
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 01/22/2025
 ms.reviewer: johnmichalak
-audience: IT Pro
-ms.search.region: Global
+ms.search.region: global
 ms.search.validFrom: 2022-04-28
 ---
 
@@ -39,6 +40,8 @@ The following table lists the Lifecycle Services geographies and endpoints.
 | South Africa | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) | `https://lcsapi.sa.lcs.dynamics.com` | `https://NAME.operations.sa.dynamics.com/` |
 | Switzerland | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) | `https://lcsapi.ch.lcs.dynamics.com` | `https://NAME.operations.ch.dynamics.com/` |
 | United Arab Emirates | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) | `https://lcsapi.uae.lcs.dynamics.com` | `https://NAME.operations.uae.dynamics.com/` |
+| US Government Community Cloud | [https://gov.lcs.microsoftdynamics.us/](https://gov.lcs.microsoftdynamics.us/) | `https://lcsapi.gov.lcs.microsoftdynamics.us` | `https://NAME.operations.gov.microsoftdynamics.us/` |
+| US Government Community Cloud High | [https://high.lcs.microsoftdynamics.us/](https://high.lcs.microsoftdynamics.us/) | `https://lcsapi.high.lcs.microsoftdynamics.us` | `https://NAME.operations.high.microsoftdynamics.us/` |
 
 ## Feature availability across geographies
 
@@ -47,6 +50,7 @@ Microsoft strives to maintain functional parity between our commercially availab
 * [Microsoft Business Application Feature Availability - Americas](https://aka.ms/bapfunctionalparityamericas)
 * [Microsoft Business Application Feature Availability - EMEA](https://aka.ms/bapfunctionalparityemea)
 * [Microsoft Business Application Feature Availability - APAC](https://aka.ms/bapfunctionalparityapac)
+* [Microsoft Business Application Feature Availability - United States Government](https://aka.ms/BAPFunctionalParity)
 
 For more information about these exceptions, or for questions about regional services, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/).
 

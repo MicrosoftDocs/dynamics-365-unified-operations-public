@@ -3,14 +3,15 @@ title: Section Power BI subpattern
 description: Learn about the Section PowerBI subpattern, including overviews on usage, wireframes, models, UX guidelines, and examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Section Power BI subpattern
@@ -22,9 +23,6 @@ This article provides information about the Section PowerBI subpattern. This sub
 ## Usage
 
 The Section PowerBI subpattern is used as part of the Operational Workspace pattern, specifically for the panorama section that contains the PowerBI control.
-
-## Wireframe
-[![Section PowerBI wireframe.](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -45,9 +43,6 @@ Apply Section PowerBI to the appropriate tab page in the workspace.
 ## UX guidelines
 None
 
-## Examples
-Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) PowerBI must be configured before the form can appear. (For information about how to configure PowerBI, see the Appendix.)
-
 ## Appendix
 ### Related articles
 
@@ -56,10 +51,8 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
 -   **How do I configure PowerBI for integration with my workspace?**
-    -   See the [Configure Power BI integration for workspaces](../analytics/configure-power-bi-integration.md) article.
+    -   See [Configure Power BI integration for workspaces](../analytics/configure-power-bi-integration.md).
 
 ### Open issues
 

@@ -2,9 +2,8 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 10/10/2024
+ms.date: 01/23/2025
 ms.topic: overview
-audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -39,7 +38,7 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
+The following list describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
 
@@ -77,13 +76,18 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ### Dynamics 365 Retail POS version 10.0.41
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_105p9 | adyen_v1_109p2 |
+| adyen_v1_105p9 | adyen_v1_109 |
+
+# [10.0.42](#tab/10-0-42)
+### Dynamics 365 Retail POS version 10.0.42
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_109 | adyen_v1_109 |
 
 ---
 
 > [!NOTE]
 > - Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
-> - For Adyen firmware versions 59p7 through 62p9, the **gift card cash out** operation requests PIN entry twice in scenarios where the gift card is manually entered. This issue is not reproduced when the gift card is swiped. Adyen is investigating. 
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
@@ -91,7 +95,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=748efff6-7d33-4378-a273-b6f97938f461]
 
 ### Supported payment instruments
 
@@ -145,7 +149,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Givex | ✔ | ✔ |
 | Stored Value Solutions (SVS) | ✔ | ✔ |
 
-To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
+To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete more steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
 #### Digital wallet support status
 
@@ -163,7 +167,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | WeChat Pay | ✔ | No |
 
 > [!NOTE]
-> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For inormation on setup and known limitations, see [Wallet payment support](wallets.md).
+> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For information on setup and known limitations, see [Wallet payment support](wallets.md).
 
 #### Supported card present input methods
 

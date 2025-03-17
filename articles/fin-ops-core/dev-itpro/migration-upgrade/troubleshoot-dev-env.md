@@ -5,7 +5,7 @@ author: ttreen
 ms.author: ttreen
 ms.topic: article
 ms.date: 08/08/2024
-ms.reviewer: johnmichalakffin
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 

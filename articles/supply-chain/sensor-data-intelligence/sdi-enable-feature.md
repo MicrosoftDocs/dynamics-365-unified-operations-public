@@ -21,7 +21,7 @@ This article explains how to turn on Sensor Data Intelligence for your system.
 
 The following video shows how to turn on the Sensor Data Intelligence feature and [deploy the required Azure resources](sdi-deploy-iot-solution-on-azure.md). The other section in this article provides the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=90804485-5a57-475a-aa9e-753df28dd0d4]
 
 ## Procedure
 

@@ -3,10 +3,12 @@ title: Build extensible controls
 description: Learn about how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 11/09/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 01/23/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -50,9 +52,6 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 5. In the **Select the file to import** dialog box, browse to **C:\FMLab**, click **FMTutorialDataModel.axpp**, and then click **Open**.
 6. In the **Project file location** field, enter **C:\FMLab**.
 7. Select the **Overwrite Elements** check box and the **Current solution** option. The following screen shot shows the completed **Import Project** dialog box. 
-
-   [![Completed Import Project dialog box.](./media/ext1.png)](./media/ext1.png)
-
 8. Click **OK**.
 9. In Solution Explorer, under the **FMTutorial** project, expand **Classes**.
 10. Right-click **FMTDataHelper**, and then click **Set as Startup Object**.
@@ -74,9 +73,6 @@ Before you begin to build the contact control, look at the appearance of the cur
 
 1.  In Solution Explorer, expand **Forms**, right-click **FMTClerkWorkspace**, and then click **Set as Startup Object**.
 2.  Press Ctrl+F5 to open the **Fleet management clerk** page in Microsoft Edge. As the following screen shot shows, the data on this page appears as a simple grid in a list style that contains several string and date controls. 
-
-    [![Screen shot of Fleet management clerk page.](./media/ext2-1024x515.png)](./media/ext2.png)
-
 3.  Exit Microsoft Edge.
 
 ## Modify the build class for the contact control

@@ -4,7 +4,7 @@ description: Learn about rolling forecasts, which let you establish a regular sc
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: overview
-ms.date: 03/12/2024
+ms.date: 11/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -67,4 +67,4 @@ To schedule a process, follow these steps.
 1. In the **Output settings** section, follow one of these steps to specify how you want to save the output of the process:
 
     - To create a new time series after each run, set the **Save output as** field to *Create new time series*. Then, in the **Time series name** field, enter a base name for the new time series. In the **Append to name** field, select a dynamic suffix to add to the base name, so that each time series has a unique name. You can use the run date, the run month, or the run month and year as the suffix.
-    - To add a new version to an existing time series after each run, set the **Save output as** field to *New version of the same time series*. Then set the **Use existing time series** field to the target time series. (The target time series must already exist.) We recommend that you also select the **Save current as a version before overwriting** checkbox to maintain the traceability of the whole process and ensure that the system doesn't accidentally overwrite any version work that's in progress. For more information about how time series versions work, see [Time series and planning data](time-series.md).
+    - To add a new version to an existing time series after each run, set the **Save output as** field to *New version of the same time series*. Then set the **Use existing time series** field to the target time series. (The target time series must already exist.) We recommend that you also select the **Save current as a version before overwriting** checkbox to maintain the traceability of the whole process and ensure that the system doesn't accidentally overwrite any version work that's in progress. For more information about how time series versions work, see [Time series, worksheets, and planning data](time-series.md).

@@ -19,9 +19,9 @@ This procedure shows you how to create a bank account for a vendor. You can use 
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 2. Select the vendor that you want to create a bank account for, and then select the link on the **Vendor account ID** field.
-3. On the **Action Pane**, select **Vendor**.
+3. On the Action Pane, select **Vendor**.
 4. Select **Bank accounts**.
-5. On the **Action Pane**, select **New**.
+5. On the Action Pane, select **New**.
 6. In the **Bank account** field, type a value. This ID will be used to identify the bank account on the vendor record.  
 7. In the **Name** field, type a value.
 8. In the **Bank groups** field, enter or select a value.

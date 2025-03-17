@@ -3,14 +3,14 @@ title: Navigation search
 description: Learn about how to use the search functionality to navigate to pages, including an outline on how to quickly navigate to particular pages.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 08/11/2021
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: twheeloc
 audience: Application User
-ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
+ms.custom: 
+  - bap-template
 ---
 
 # Navigation search
@@ -25,8 +25,6 @@ To use this feature, click the **Search** icon to display the **Search** box. Yo
 
 > [!NOTE]
 > The **Search** box helps you find and navigate to pages. The **Search** box doesn't help you find specific data or actions.
-
-![search-box.](media/navigation-search.png "Search box")
 
 ## Quickly navigate to a particular page
 

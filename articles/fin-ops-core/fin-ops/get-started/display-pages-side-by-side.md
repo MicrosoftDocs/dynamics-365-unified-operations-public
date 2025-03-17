@@ -3,14 +3,15 @@ title: Show pages side-by-side using the Open in new window feature
 description: Learn about how to display pages side-by-side, including a step-by-step process about showing pages side-by-side using the Open in new window feature.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 11/20/2020
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: fc589d76-3927-4486-ab83-e86b9b47ba2c
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Show pages side-by-side using the Open in new window feature
@@ -19,15 +20,9 @@ ms.assetid: fc589d76-3927-4486-ab83-e86b9b47ba2c
 
 This article explains how to display pages side by side.
 
-You may want to view multiple pages side by side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to validate or enter lines in more than one journal, you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.
-
-Continuing with the example mentioned above, when viewing the lines, you can click the **Open in new window** icon.
-
-[![Click the Open in new window icon.](./media/open-in-new-window-icon.png)](./media/open-in-new-window-icon.png)
+You may want to view multiple pages side by side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to validate or enter lines in more than one journal you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.
 
 Clicking the **Open in new window** icon opens the lines page in a new, pop-up browser, and then navigates the original browser back in history to the page that displayed the list of journals. You can then display both pages side by side. After viewing a journal, you can change the selected journal on the journal list page, and the lines page in the pop-up window will automatically display the lines of the newly selected journal.
-
-[![You can display pages side-by-side.](./media/pages-show-side-by-side.png)](./media/pages-show-side-by-side.png)
 
 The dynamic linking and refreshing happens due to the relations that exist between the data that is backing these pages. If the system is not aware of the relation between the data, the pop-up window will not refresh automatically in response to a change in the window it originated from.
 

@@ -3,13 +3,14 @@ title: Table of Contents form pattern
 description: Learn about the Table of Contents form pattern, which is used when two or more related forms are required for setup configuration.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Table of Contents form pattern
@@ -21,10 +22,6 @@ This article provides information about the Table of Contents form pattern. This
 ## Usage
 
 The Table of Contents pattern should be used when two or more logically related forms are required for setup configuration. The vertical arrangement of tabs implies the order of completion. This form pattern is also used for collections of unrelated items, such as tab pages that have a different root entity per tab. This form pattern contains a collection of smaller content regions, each of which follows a container subpattern such as Toolbar and List, Nested Simple List and Details, or Fields and Field Groups.
-
-## Wireframe
-
-[![Table of Contents wireframe.](./media/toc1.png)](./media/toc1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -74,7 +71,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines are consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Table of contents guidelines:**
 
@@ -92,17 +89,10 @@ The verification checklist shows the steps for manually verifying that the form 
     -   FactBoxes.
     -   Standard tabs on a TOC tab page.
 
-## Examples
-Form: **CustParameters** 
-
-[![Table of Contents example.](./media/toc2.png)](./media/toc2.png)
-
 ## Appendix
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
--   **What do I do with ‘Global’ buttons?**
+-   **What do I do with "Global" buttons?**
     -   There have been several cases where a button is required in order to initialize data or sync information between services. Because we allow only system buttons on the standard Action Pane in this pattern, we recommend that these buttons go in one of two places:
         -   On the tab page that the action is most closely related to.
         -   If a place doesn’t exist, on a toolbar on the first tab page of the pattern.
@@ -111,11 +101,6 @@ This section will have answers to frequently asked questions that are related to
 
 -   None
 
-### AX 2012 content
-
-[![Example for Accounts receivable parameters.](./media/toc3.png)](./media/toc3.png)
-
-[![Example of Benefit elements.](./media/toc4.png)](./media/toc4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

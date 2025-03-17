@@ -3,11 +3,12 @@ title: FileUploaderDesign type
 description: Learn about the FileUploaderDesign type, a file uploader design object type that include the alignItems, alignSelf, bindings, border, and other properties.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # FileUploaderDesign type

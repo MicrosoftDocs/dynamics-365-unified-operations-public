@@ -68,13 +68,13 @@ An alert rule has five components:
 
 ### How to use alerts to monitor filtered data
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f9d42474-b1ab-40a1-a938-06175dfa9554]
 
 The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Alert rule options
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=24a11730-58ba-4054-9b20-9b708073999a]
 
 The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

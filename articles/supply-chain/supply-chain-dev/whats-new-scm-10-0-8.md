@@ -44,7 +44,7 @@ The following features are included in this release. The feature titles link to 
 - [Warehouse release rule](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Wave status visualization](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
 - [Wave template grouping](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Learn more in [Wave template grouping](../warehousing/wave-template-grouping.md).
-- [Work line details](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Learn more in [Work line details](../warehousing/work-line-details.md) and the [Work line details](https://www.microsoft.com/videoplayer/embed/RE4fcYN) video.
+- [Work line details](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Learn more in [Work line details](../warehousing/work-line-details.md) and the [Work line details](https://learn-video.azurefd.net/vod/player?id=b4e8f933-7303-4b00-93f4-09b08e5b7100) video.
 - [Zone threshold replenishment](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Learn more in [Zone threshold replenishment](../warehousing/zone-threshold-replenishment.md).
 
 ## Related information

@@ -57,7 +57,7 @@ The products sold by your organization may come in variants differentiated by di
 
 ## Review the order totals
 
-1. On the **Action Pane**, select **Sales order**.
+1. On the Action Pane, select **Sales order**.
 2. Select **Totals**.
 
     The **Totals** dialog box displays details about the entire order. This includes the subtotal amount, which is a sum of all line net amounts adjusted for eventual line discounts, the total invoice amount, which is a subtotal amount adjusted for eventual order-level discount, charges, and sales tax, the customer credit limit situation, and more. The invoice amount is the amount that will appear on the customer's invoice document.

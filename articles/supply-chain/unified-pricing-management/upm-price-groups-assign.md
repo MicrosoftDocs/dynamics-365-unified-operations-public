@@ -1,5 +1,5 @@
 ---
-title: Assign price groups (preview)
+title: Assign price groups
 description: Learn now to assign price groups for trade agreements, adjustments, and discounts.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,12 +12,9 @@ ms.custom:
 ---
 
 
-# Assign price groups (preview)
+# Assign price groups
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 ## Assign price groups to trade agreements
 

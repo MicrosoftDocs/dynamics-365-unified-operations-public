@@ -4,9 +4,8 @@ description: Access links to topics about development, including an overview for
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/13/2022
+ms.date: 12/05/2024
 ms.reviewer: twheeloc
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

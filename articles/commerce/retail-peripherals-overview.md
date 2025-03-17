@@ -3,9 +3,8 @@ title: Peripherals
 description: This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. 
 author: anush6121
 ms.author: anvenkat
-ms.date: 08/07/2024
+ms.date: 02/13/2024
 ms.topic: overview
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
@@ -21,11 +20,11 @@ This article provides an overview of the concepts related to Microsoft Dynamics 
 
 ## Prerequisites
 
-When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
+When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3 and 1.2:
 - TLS 1.3\Server:Enabled=1
 - TLS 1.3\Client:Enabled=1
-- TLS 1.2\Server:Enabled=0
-- TLS 1.2\Client:Enabled=0
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
 - TLS 1.1\Server:Enabled=0
 - TLS 1.1\Client:Enabled=0
 - TLS 1.0\Server:Enabled=0
@@ -51,11 +50,11 @@ When configuring hardware station for Commerce versions 10.0.41 and earlier, you
 
 ### POS registers
 
-Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that is used at the register, the store to which the register is mapped, and the visual experience for the user who signs in to that register.
+Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**. The POS register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that is used at the register, the store to which the register is mapped, and the visual experience for the user who signs in to that register.
 
 ### Devices
 
-Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**. A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client used, and the application package that is deployed to a specific device. 
+Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**. A device is an entity that represents a physical instance of a device mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client used, and the application package that is deployed to a specific device. 
 
 Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Android, and Retail Modern POS – iOS.
 
@@ -92,7 +91,7 @@ POS peripherals are typically divided into classes. This section describes and g
 
 ### Printer
 
-Printers include traditional POS receipt printers and full-page printers. Printers are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces. Epson and Star are the preferred receipt printer original equipment manufacturers (OEMs). For other OEMs, you must create extensions to integrate with them. Up to two printers can be used at the same time. This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers. Customer orders, which carry more information, are printed on a full-page printer. Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth. 
+Printers include traditional POS receipt printers and full-page printers. Printers are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces. Epson and Star are the preferred receipt printer original equipment manufacturers (OEMs). For other OEMs, you must create extensions to integrate with them. Up to two printers can be used at the same time. This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers. Customer orders, which carry more information, are printed on a full-page printer. Receipt printers can be connected directly to a computer via USB, connected via Ethernet, or connected via Bluetooth. 
 
 ### Scanner
 
@@ -135,15 +134,15 @@ Payment device support is implemented through the payment connector. Payment dev
 
 Commerce supports the OPOS industry standard as the primary peripheral device platform to help ensure that the largest range of devices can be used with Commerce. The OPOS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for peripheral devices. OPOS is a widely adopted implementation of the OLE for POS standard. It was developed in the mid-1990s and has been updated several times since then. OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems. OPOS controls handle communication between compatible hardware and the POS software. An OPOS control consists of two parts:
 
--   **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. Therefore, the testing helps guarantee that if Commerce supports a device class through OPOS, many device types are supported provided that the manufacturer provides a service object that's built for OPOS. You don't have to explicitly test each device type.
+-   **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. The testing helps guarantee that if Commerce supports a device class through OPOS, many device types are supported if that the manufacturer provides a service object built for OPOS. You don't have to explicitly test each device type.
 -   **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
-[![Control object and service object.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
+![Control object and service object.](./media/retail_peripherals_overview01.png)
 
 Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
 
 > [!NOTE]
-> OPOS support doesn't guarantee support for all devices that have OPOS drivers. Commerce must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
+> OPOS support doesn't guarantee support for all devices that have OPOS drivers. Commerce must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. In general, the quality of service objects varies.
 
 ### Windows
 
@@ -156,25 +155,12 @@ Receipt printing at the POS is optimized for OPOS. OPOS tends to be faster than 
 
 If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Commerce.
 
-### Plug and play devices
-
-When a plug and play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the "Speaker" class type and treats that device as a speaker. No additional setup is required. 
-
-In the case of POS peripherals, many USB devices can be plugged in and recognized by the Windows OS as Human Interface Devices (HIDs). However, Windows might not be able to determine the capabilities that the device provides, because the device doesn't specify the class or type of device. In Windows 10, device classes for barcode scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows listens for events from the device at the appropriate times.
-
-Modern POS supports UWP MSRs and scanners. Therefore, when Modern POS is ready for input from one of these devices, and a device that belongs to one of the device classes is connected, that device can be used. For example, if a plug and play barcode scanner is plugged into a Windows 10 computer, and barcode sign-in is configured for Modern POS, the barcode scanner becomes active on the sign-in page. No additional setup is required.
-
-Additional classes of POS peripherals are being added to Windows, such as classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
-
-> [!NOTE] 
-> Certain USB devices may become unresponsive or unreliable when managed by a Windows 10 power management feature called [USB Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend). If a USB peripheral becomes unresponsive, it may be necessary to disable the selective suspend feature for that device. For more information, see [Enabling Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
-
 ### Keyboard wedge
 
 Keyboard wedge devices send data to the computer as if that data were typed on a keyboard. Therefore, by default the field that is active at the POS receives the data that is scanned or swiped. In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field. For example, a barcode might be scanned into a field that is intended for input of credit card data. In many cases, there's logic at the POS that determines whether the data that is scanned or swiped is a barcode or card swipe. Therefore, the data is handled correctly. However, when devices are set up as OPOS instead of keyboard wedge devices, there's more control over how the data from those devices is consumed, because more is known about the device that the data originates from. For example, data from a barcode scanner is automatically recognized as a barcode, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.
 
 > [!NOTE]
-> When keyboard wedge scanners are used in the POS, they must be programmed to send a carriage return, or **Enter** event, after the last scanned character. If this configuration isn't done, keyboard wedge scanners won't function properly. Consult documentation provided by your device manufacturer for details on how to append the carriage return event.  
+> When keyboard wedge scanners are used in the POS, they must be programmed to send a carriage return, or **Enter** event, after the last scanned character. If this configuration isn't done, keyboard wedge scanners don't function properly. For details on how to append the carriage return event, consult the documentation provided by your device manufacturer.  
 
 ### Device printers
 
@@ -198,21 +184,21 @@ To use the dedicated hardware station, follow these steps.
 1. Sign out of Modern POS. Then sign back in, and open a shift. The peripherals that are configured in the hardware profile are now usable. 
 
 > [!NOTE]
-> You only need a single hardware station with record type **Dedicated**. Do not set a hardware profile or EFT value on the record; the values will be set on the **POS Register** form. 
+> You only need a single hardware station with record type **Dedicated**. Don't set a hardware profile or EFT value on the record; the values are set on the **POS Register** form. 
 
 ### Shared
 
 Also sometimes referred to as the "IIS" hardware station, "IIS" implying that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When the shared hardware station is used, the peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 
 
-The shared hardware station can be used to allow multiple point of sale clients to share peripherals or can be used to manage a committed set of peripherals for a single point of sale. 
+The shared hardware station can be used to allow multiple point of sale clients to share peripherals or can be used to manage a committed set of peripherals for a single POS. 
 
 When a hardware station is used to support sharing of peripherals between multiple POS clients, only cash drawers, receipt printers, and payment terminals should be used. You can't directly connect stand-alone barcode scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts occur when multiple POS devices try to claim those peripherals at the same time. Here's how conflicts are managed for supported devices:
 
 -   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. Issues can occur if a cash drawer is called while the drawer is already open. A cash drawer that is used in a shared hardware station configuration should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
 -   **Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device. Some devices have internal memory or pooling that can prevent this issue. If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.
--   **Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later. Usually, cashiers can see that a terminal is already being used and wait until the other transaction is completed before they try to tender again.
+-   **Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already in use, a message notifies the cashier that the terminal is in use and asks the cashier to try again later. Usually, cashiers can see that a terminal is in use and will wait until the other transaction is completed before they try to tender again.
 
-Validation is planned for a future release, to detect whether unsupported devices are set up for a hardware profile that is mapped to a shared hardware station. If any unsupported devices are detected, the user receives a message that states that the devices aren't supported for shared hardware stations. In the case of shared hardware stations, the **Select upon tendering** option is set to **Yes** at the register level. The POS user is then prompted to select a hardware station when a tender is selected for a transaction at the POS. When the hardware station is selected only at the time of tender, the hardware station selection is added directly to the POS workflow for mobile scenarios. As an additional benefit, the line display on the payment terminal isn't used for shared scenarios. If the payment terminal is used as a line display, other users might be blocked from using that terminal until the transaction is completed. In mobile scenarios, lines might be added to a transaction over a longer period. Therefore, the **Select upon tendering** option is required in order to ensure optimum device availability.
+Validation to detect whether unsupported devices are set up for a hardware profile that's mapped to a shared hardware station is planned for a future release. If any unsupported devices are detected, the user receives a message that states that the devices aren't supported for shared hardware stations. In the case of shared hardware stations, the **Select upon tendering** option is set to **Yes** at the register level. The POS user is then prompted to select a hardware station when a tender is selected for a transaction at the POS. When the hardware station is selected only at the time of tender, the hardware station selection is added directly to the POS workflow for mobile scenarios. As an additional benefit, the line display on the payment terminal isn't used for shared scenarios. If the payment terminal is used as a line display, other users might be blocked from using that terminal until the transaction is completed. In mobile scenarios, lines might be added to a transaction over a longer period. Therefore, the **Select upon tendering** option is required in order to ensure optimum device availability.
 
 ### Network peripherals
 
@@ -388,7 +374,7 @@ Network peripherals can be supported directly through the hardware station that 
 ### All Modern POS clients that have a committed "Shared" IIS hardware station
 
 > [!NOTE]
-> When the IIS hardware station is "committed" there is a one-to-one relationship between the POS client and the hardware station.
+> When a IIS hardware station is "committed," there's a one-to-one relationship between the POS client and the hardware station.
 
 <table>
 <colgroup>
@@ -471,7 +457,7 @@ Network peripherals can be supported directly through the hardware station that 
 ### All Modern POS clients that share an IIS hardware station
 
 > [!NOTE]
-> When the IIS hardware station is "shared," multiple devices can use the hardware station at the same time. For this scenario, you should use only the devices that are listed in the following table. If you try to share devices that aren't listed here, such as barcode scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral. In the future, such a configuration will be explicitly prevented.
+> When the IIS hardware station is "shared," multiple devices can use the hardware station at the same time. For this scenario, you should use only the devices that are listed in the following table. If you try to share devices that aren't listed (such as barcode scanners and MSRs), errors occur when multiple devices try to claim the same peripheral. Such a configuration will be explicitly prevented in a future release.
 
 <table>
 <colgroup>
@@ -545,7 +531,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 ### Modern POS for Android with an IPC (built-in) hardware station
 
-**New for 10.0.8** - Epson network printers and cash drawers connected to those printers via DK port are now supported for the Modern POS for Android app. For details, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
+**New for 10.0.8** - Epson network printers and cash drawers connected to those printers via drawer kick (DK) port are supported for the Modern POS for Android app. For details, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
 
 ### All Modern POS clients that have a committed, shared IIS hardware station
 
@@ -633,12 +619,12 @@ To edit or enable these values, follow these steps:
 1. If a **User Account Control** dialog appears, select **Yes**.
 1. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
 
-   The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only:
+   The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for only TLS 1.3 or TLS 1.2:
 
     - TLS 1.3\Server:Enabled=1
     - TLS 1.3\Client:Enabled=1
-    - TLS 1.2\Server:Enabled=0
-    - TLS 1.2\Client:Enabled=0
+    - TLS 1.2\Server:Enabled=1
+    - TLS 1.2\Client:Enabled=1
     - TLS 1.1\Server:Enabled=0
     - TLS 1.1\Client:Enabled=0
     - TLS 1.0\Server:Enabled=0
@@ -668,183 +654,54 @@ Cross-origin resource sharing must be disabled and must specify the allowed orig
 Only trusted certificate authorities should be used to obtain certificates that are used on computers that run the hardware station.
      
 > [!NOTE]
-> It's very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
+> It's important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
 ## Peripheral simulator
 For information, see [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md).
 
-## Microsoft-tested peripheral devices
-### IPC (built-in) hardware station
+## Considerations for choosing peripheral device OEMs and models
 
-The following peripherals were tested by using the IPC hardware station that is built into Modern POS for Windows.
+The Store Commerce app is hardware agnostic. The peripheral device manufacturers or models listed in this article are known to work with the Store Commerce app. However, products from other manufacturers may work as well.
 
-#### Printer
-
-| Manufacturer | Model    | Interface | Comments                |
-| ------------ | -------- | --------- | ----------------------- |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88IV | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| HP           | H300     | OPOS      | Powered USB             |
-| Star         | TSP650II | Custom    | Connected via network   |
-| Star         | mPOP     | OPOS      | Connected via Bluetooth |
-| Toshiba      | HSP100   | OPOS      |                         |
-| Toshiba      | HSP150   | OPOS      |                         |
+Most POS peripherals whose manufacturers provide OPOS drivers work seamlessly with Store Commerce for Windows. Peripherals with OPOS drivers can also be used with Store Commerce for mobile, but a shared IIS hardware station is required.
 
 > [!NOTE]
-> The Star TSP 100 printer isn't supported for the built-in hardware station. The built-in hardware station uses a 64-bit process, which isn't compatible with existing Star TP 100 drivers. 
+> Shared IIS hardware stations only support printers, payment terminals, and cash drawers.
 
-#### Barcode scanner
+Store Commerce for Android and iOS devices can also use network-connected payment terminals, printers, and cash drawers. Barcode scanners that support Bluetooth connectivity can be paired with devices running Store Commerce for Windows, Android, and iOS that are used in human interface device (HID) mode.
 
-| Manufacturer  | Model         | Interface | Comments |
-| ------------- | ------------- | --------- | -------- |
-| Datalogic     | Magellan 8400 | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
-| Symbol        | LS2208        | OPOS      |          |
+Consider the manufacturers or models in the following list as suggestions rather than recommendations.
 
-#### Payment terminals and PIN pads
+### Printers and cash drawers
+Microsoft supports Epson and Star OEMs for printers and cash drawers. Verify specific model details against the latest offerings from the manufacturers. Most cash drawers from other OEMs that can connect to a printer's DK port work with Store Commerce.
 
-Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal application programming interface (API)](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
+While printers and cash drawers from other OEMs may work with Store Commerce, make sure to extensively test to ensure that all scenarios work as expected. You can use the [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md) as a resource used for initial basic testing.
 
-You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
+#### Network peripherals
+Microsoft supports network-addressable Epson and Star Micronics receipt printers and cash drawers. These receipt printers and cash drawers can be used over a network either directly through the Interprocess Communications (IPC) hardware station built into the Store Commerce for Windows application, or through the shared IIS hardware station for Store Commerce for Android and iOS applications.
 
-#### Cash drawer
+For information on how to configure network peripherals with Store Commerce, see [Support for network peripherals](dev-itpro/network-peripherals.md).
 
-| Manufacturer | Model     | Interface | Comments                |
-|--------------|-----------|-----------|-------------------------|
-| Star         | mPOP      | OPOS      | Connected via Bluetooth |
-| APG          | Atwood    | Custom    | Connected via network   |
-| Star         | SMD2-1317 | OPOS      |                         |
-| HP           | QT457AA   | OPOS      |                         |
-| Epson        |           | Custom    | Connected to network Epson printer via DK port |
-
-#### Line display
-
-| Manufacturer | Model    | Interface | Comments |
-| ------------ | -------- | --------- | -------- |
-| Epson        | DM-D110  | OPOS      |          |
-| HP           | T-series | OPOS      |          |
-
-#### Signature capture
-
-| Manufacturer | Model  | Interface | Comments |
-|--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
-
-#### Scale
-
-| Manufacturer | Model         | Interface | Comments |
-|--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
-
-#### MSR
-
-| Manufacturer | Model       | Interface | Comments |
-|--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
-
-### Dedicated IIS hardware station
-
-The following peripherals were tested by using a dedicated (not shared) IIS hardware station together with Modern POS for Windows and Cloud POS.
-
-#### Printer
-
-| Manufacturer | Model    | Interface | Comments                |
-| ------------ | -------- | --------- | ----------------------- |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88IV | OPOS      |                         |
-| HP           | H300     | OPOS      | Powered USB             |
-| Star         | TSP650II | Custom    | Connected via network   |
-| Star         | mPOP     | OPOS      | Connected via Bluetooth |
-| Toshiba      | HSP100   | OPOS      |                         |
-| Toshiba      | HSP150   | OPOS      |                         |
-
-#### Barcode scanner
-
-| Manufacturer  | Model         | Interface | Comments |
-| ------------- | ------------- | --------- | -------- |
-| Datalogic     | Magellan 8400 | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
-| Symbol        | LS2208        | OPOS      |          |
-
-#### Payment terminals and PIN pads
+### Payment terminals and PIN pads
 
 Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
 You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
-#### Cash drawer
+### Barcode scanners
+Most barcode scanners that can function as a keyboard wedge device or have OPOS drivers work with the Store Commerce app. Make sure to extensively test to ensure that all scenarios work as expected.
 
-| Manufacturer | Model     | Interface | Comments              |
-|--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Custom    | Connected via network |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
-| Epson        |           | Custom    | Connected to network Epson printer via DK port |
+### MSRs
+Most magnetic stripe readers that can function as a keyboard wedge device or have OPOS drivers work with the Store Commerce app. Make sure to extensively test to ensure that all scenarios work as expected.
 
-#### Line display
+### Line display
+Epson and HP integrated line displays connected via the OPOS interface work with the Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
-| Manufacturer  | Model   | Interface | Comments |
-|---------------|---------|-----------|----------|
-| HP integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+### Scale
+Datalogic scale devices connected via the OPOS interface work with the Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
-#### Signature capture
-
-| Manufacturer | Model  | Interface | Comments |
-|--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
-
-#### Scale
-
-| Manufacturer | Model         | Interface | Comments |
-|--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
-
-#### MSR
-
-| Manufacturer | Model       | Interface | Comments |
-|--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
-
-### Shared IIS hardware station
-
-The following peripherals were tested by using a shared IIS hardware station together with Modern POS for Windows and Cloud POS. 
-
-> [!NOTE]
-> Only a printer, payment terminal, and cash drawer are supported.
-
-#### Printer
-
-| Manufacturer | Model    | Interface | Comments                |
-| ------------ | -------- | --------- | ----------------------- |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88IV | OPOS      |                         |
-| HP           | H300     | OPOS      | Powered USB             |
-| Star         | mPOP     | OPOS      | Connected via Bluetooth |
-| Toshiba      | HSP100   | OPOS      |                         |
-| Toshiba      | HSP150   | OPOS      |                         |
-
-#### Payment terminal
-
-Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
-
-You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
-
-#### Cash drawer
-
-| Manufacturer | Model     | Interface | Comments              |
-|--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Custom    | Connected via network |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
-| Epson        |           | Custom    | Connected to network Epson printer via DK port |
-
+### Signature capture
+Scriptel signature capture devices connected via the OPOS interface work with the Store Commerce app. Verify specific model details against the latest offerings from the manufacturers.
 
 ## Troubleshooting
 ### Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing

@@ -3,14 +3,15 @@ title: Section Chart form pattern
 description: Learn about the Section Chart form pattern, including overviews on usage, wireframes, pattern changes, models, UX guidelines, and examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Section Chart form pattern
@@ -22,9 +23,6 @@ This article provides information about the Section Chart form pattern. This pat
 ## Usage
 
 The Section Chart form pattern is intended to be used primarily in conjunction with the Operational Workspace pattern. Specifically, the chart section or summary section contains Form Part Controls that point to forms that contain charts. These referenced forms are intended to use the Section Chart pattern.
-
-## Wireframe
-[![Wireframe for Section Chart form pattern.](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
 ## Pattern changes for finance and operations apps
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -47,21 +45,8 @@ Apply the Section Chart pattern to the appropriate form/container.
 -   [Section stacked chart](section-stacked-chart-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. None
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
-## Examples
-Form: **FmBiChartPart\_VehicleByModel** (**All workspaces** &gt; **Reservation Management** (see the **Statistics** section) 
-
-[![Example of Section Chart form pattern.](./media/sectionchartexample.png)](./media/sectionchartexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

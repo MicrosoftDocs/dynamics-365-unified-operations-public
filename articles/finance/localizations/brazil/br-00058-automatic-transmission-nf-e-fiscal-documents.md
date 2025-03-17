@@ -1,6 +1,6 @@
 ---
 title: Automatic transmission of NF-e fiscal documents (Brazil)
-description: Learn how to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled.
+description: This article describes how to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled in Brazil with Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
@@ -10,7 +10,6 @@ ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
 
@@ -18,52 +17,57 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 [!include [banner](../../includes/banner.md)]
 
-Use the following procedure to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled, or if you generate a correction letter. You can set up a batch group and email templates for an NF-e. You must create separate email templates for an approved NF-e, a canceled NF-e, and a correction letter. You can then create a batch process to send the NF-e by email. This task uses the BRMF demo company.
+This article describes how to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to System administration > Setup > Batch group.
-2. Click New.
-3. In the Group field, type a value.
-4. In the Description field, type a value.
-5. Click Save.
-6. Close the page.
-7. Go to System administration > Periodic tasks > Email processing > Batch.
-8. Expand the Run in the background section.
-9. Select Yes in the Batch processing field.
-10. In the Batch group field, enter or select a value.
-11. Click Recurrence.
-12. Select the No end date option.
-13. In the Count field, enter a number.
-14. In the Time zone field, select an option.
-15. Click OK.
-16. Click OK.
-17. Go to Organization administration > Setup > Email templates.
-18. Click New.
-19. In the Email ID field, type a value.
-20. In the Sender email field, type a value.
-21. In the Sender name field, type a value.
-22. In the Default language code field, enter or select a value.
-23. In the Lines or header field, select an option.
-24. In the Batch group field, enter or select a value.
-25. In the Email description field, type a value.
-26. In the Lines or header field, select an option.
-27. Click Save.
-28. In the list, mark the selected row.
-29. In the Subject field, type a value.
-30. In the Language field, enter or select a value.
-31. Click Edit.
-32. In the WritableContent field, type a value.
-33. Click OK.
-34. Click Save.
-35. Close the page.
-36. Close the page.
-37. Go to Organization administration > Organizations > Fiscal establishments > Fiscal establishments.
-38. Use the Quick Filter to find records. For example, filter on the Fiscal establishment ID field with a value of 'Matriz'.
-39. Expand the NF-e and NFC-e federal section.
-40. Click Edit.
-41. In the Approved NF-e field, enter or select a value.
-42. Select Yes in the Attach the DANFE as PDF file to  email field.
-43. Click Save.
-44. Close the page.
+Use the following procedure to set up email parameters to automatically send an NF-e to a vendor or customer after the NF-e is approved or canceled, or if you generate a correction letter. You can set up a batch group and email templates for an NF-e. You must create separate email templates for an approved NF-e, a canceled NF-e, and a correction letter. You can then create a batch process to send the NF-e by email. 
+
+This task uses the BRMF demo company.
+
+To set up email parameters to automatically send an NF-e to a vendor or customer after the NF-e is approved or canceled, follow these steps.
+
+1. In Dynamics 365 Finance, go to **System administration \> Setup \> Batch group**.
+1. Select **New**.
+1. In the **Group** field, enter a value.
+1. In the **Description** field, enter a value.
+1. Select **Save**.
+1. Close the page.
+1. Go to **System administration \> Periodic tasks \> Email processing \> Batch**.
+1. Expand the **Run in the background** section.
+1. In the **Batch processing** field, select **Yes**.
+1. In the **Batch group** field, enter or select a value.
+1. Select **Recurrence**.
+1. Select the **No end date** option.
+1. In the **Count** field, enter a number.
+1. In the **Time zone** field, select an option.
+1. Select **OK**.
+1. Select **OK**.
+1. Go to **Organization administration \> Setup \> Email templates**.
+1. Select **New**.
+1. In the **Email ID** field, enter a value.
+1. In the **Sender email** field, enter a value.
+1. In the **Sender name** field, enter a value.
+1. In the **Default language** code field, enter or select a value.
+1. In the **Lines or header** field, select an option.
+1. In the **Batch group** field, enter or select a value.
+1. In the **Email description** field, enter a value.
+1. In the **Lines or header** field, select an option.
+1. Select **Save**.
+1. In the list, mark the selected row.
+1. In the **Subject** field, enter a value.
+1. In the **Language** field, enter or select a value.
+1. Select **Edit**.
+1. In the **WritableContent** field, enter a value.
+1. Select **OK**.
+1. Select **Save**.
+1. Close the page.
+1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Fiscal establishments**.
+1. Use the Quick Filter to find records. For example, filter on the **Fiscal establishment ID** field with a value of "Matriz".
+1. Expand the **NF-e and NFC-e federal** section.
+1. Select **Edit**.
+1. In the **Approved NF-e** field, enter or select a value.
+1. In the **Attach the DANFE as PDF file to email** field, select **Yes**.
+1. Select **Save**.
+1. Close the page.
 
 
 

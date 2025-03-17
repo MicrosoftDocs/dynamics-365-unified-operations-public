@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/27/2024
+ms.date: 02/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
@@ -26,7 +26,9 @@ The Warehouse Management mobile app is only for your internal business use. You 
 The Warehouse Management mobile app is available for Microsoft Windows, Google Android, and Apple iOS operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
-- Android 5.0 or later
+- Android:
+    - Warehouse Management mobile app version 3.x requires Android 5.0 or later
+    - Warehouse Management mobile app version 4.x requires Android 7.0 or later
 - iOS 13.0 or later
 
 ### External URLs required by the app
@@ -108,6 +110,9 @@ If a device is lost or compromised, you can revoke its authentication by followi
 
 - User-based authentication: [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
+
+> [!NOTE]
+> Note that [Shared Device Mode](/entra/identity-platform/msal-shared-devices) authentication isn't currently supported for the Warehouse Management mobile app. 
 
 ## Configure the application by importing connection settings
 

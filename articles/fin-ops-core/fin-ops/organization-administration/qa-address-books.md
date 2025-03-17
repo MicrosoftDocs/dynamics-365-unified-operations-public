@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions related to address boo
 author: msftbrking
 ms.author: brking
 ms.topic: article
-ms.date: 03/13/2024
+ms.date: 01/07/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -106,5 +106,9 @@ For more information about how to change the location owner of an imported addre
 ## If the party type is Legal entity or Team, will the global address book synchronize the customer record?
 
 No, the global address book won't synchronize the customer. Because Customer's V3 mapping supports only the **Person** party type for contacts and **Organization** party type for accounts, the record doesn't reach Dataverse, and no errors are displayed. A separate party record of the **Person** or **Organization** types must be created.
+
+>[!Note]
+> Data can't be deleted using excel due to dependency on the platform. Users can remove addresses using the **Manage addresses** page.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

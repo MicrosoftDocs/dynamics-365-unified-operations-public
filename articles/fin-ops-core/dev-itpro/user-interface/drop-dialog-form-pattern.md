@@ -3,14 +3,15 @@ title: Drop Dialog form pattern
 description: Learn about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 10/08/2018
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 94ffa218-de7d-4d13-9a8a-461cad0970b3
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Drop Dialog form pattern
@@ -25,15 +26,6 @@ The Drop Dialog pattern is used to initiate actions when the number of fields is
 
 -   **Drop dialog** – This is the basic Drop dialog pattern. If your Drop dialog is editable, this is the correct pattern to use.
 -   **Drop dialog (read only)** – This Drop dialog pattern is for informational forms that aren't editable. This variation doesn't have an **OK** button.
-
-## Wireframe
-### Drop dialog (basic)
-
-[![Basic Drop dialog pattern.](./media/dropdialog1.png)](./media/dropdialog1.png)
-
-### Drop dialog (read only)
-
-[![Read-only Drop dialog pattern.](./media/dropdialog2.png)](./media/dropdialog2.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -104,7 +96,7 @@ The verification checklist shows you the steps for manually verifying that the f
     -   The label of the default button should be a verb that implements the action that is described in the main instruction. For example, if the main instruction is “Create new product,” the button label should be **Create**. If there is no appropriate verb for the button, use **OK**.
     -   The commit button area should have specific commit button labels that make sense on their own and are a response to the main instruction.
 
-A Drop dialog should **not** have the following:
+A Drop dialog shouldn't have the following:
 
 -   A toolbar or ActionPane anywhere in the Drop dialog.
 -   Buttons that navigate to another page or open other dialogs. (Enhanced previews are allowed.)
@@ -113,21 +105,7 @@ A Drop dialog should **not** have the following:
 -   FactBoxes.
 -   FastTabs.
 
-## Examples
-### Drop dialog (basic)
-
-Form: **CustCollectionsNewActivityAction** (Click **Accounts receivable** &gt; **Common** &gt; **Collections** &gt; **Collections**, select a row to move to details, and then click **Action**.) 
-
-[![Example of basic Drop dialog.](./media/dropdialog3.png)](./media/dropdialog3.png)
-
-### Drop dialog (read only)
-
-This pattern isn't currently used in the product.
-
 ## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 
@@ -136,9 +114,6 @@ This section will have answers to frequently asked questions that are related to
 -   **Should buttons be left-aligned or right-aligned?**
     -   Right-aligned. The pattern is currently enforcing this.
 
-### AX 2012 content
-
-[![Example of Drop dialog.](./media/dropdialog4.png)](./media/dropdialog4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

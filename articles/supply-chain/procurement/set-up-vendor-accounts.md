@@ -32,6 +32,10 @@ To speed up the process of creating vendor accounts, you can create templates. T
 
 You can also create a user template for your own use. You can't delete a vendor that is associated with other records, such as contacts or products.
 
+## Create, edit, and manage vendor accounts
+
+To create, edit, and manage vendor accounts, go to **Procurement and sourcing** \> **Vendors** \> **All vendors**. Learn more in [Set up vendor accounts](set-up-vendor-accounts.md).
+
 ## Vendor account numbers
 
 The account number is a unique identifier for a vendor. You can set up account numbers so that they're generated automatically when you create a vendor. You can also configure the number sequence so that account numbers are entered manually. For example, you might want to use the vendor’s telephone number as the identifier.

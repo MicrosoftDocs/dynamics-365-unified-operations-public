@@ -6,7 +6,7 @@ ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 ms.topic: overview
-ms.date: 12/02/2024
+ms.date: 01/30/2025
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about costing versions, how to maintain them, and the types of data that you can include in them. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.
+This article provides information about costing versions, how to maintain them, and the types of data that you can include in them.
 
 A costing version can serve one or more purposes, depending on the data that the costing version contains. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs. A costing version can contain a set of standard cost records or a set of planned cost records that are based on the costing type that is assigned to the costing version.
 
@@ -35,7 +35,10 @@ Data maintenance for cost records in a costing version involves entering costs f
 
 The item cost data in a costing version consists of one or more cost records for each item. When an item cost record is first entered, it has *Pending* status and an intended effective date. When you activate the item cost record, the status is updated to *Active*, and the effective date is updated to the activation date. Different item cost records can reflect different sites, effective dates, or statuses. When you calculate costs for manufactured items for a future date, the bill of materials (BOM) calculation uses cost records that have the relevant effective date, regardless of whether the status is *Pending* or *Active*. An item's current active cost record is used to estimate production order costs and to value inventory transactions under a standard costing inventory model. The maintenance of cost records for cost categories and indirect cost calculation formulas resembles the maintenance of item cost records.
 
-Two blocking policies for a costing version determine whether pending costs can be maintained and whether the pending cost can be activated. Use the blocking policies to permit data maintenance, and then use them to prevent data maintenance for cost records in a costing version.
+Two blocking policies for a costing version determine whether pending costs can be maintained and whether the pending cost can be activated. Use the blocking policies to permit data maintenance, and then use them to prevent data maintenance for cost records in a costing version. The following blocking policies can prevent pending costs from being updated or modified until they are finalized:
+
+- *Block* – Prevents pending costs from being edited in or added to a cost version.
+- *Block activation* – Prevents pending costs from being activated.
 
 A costing version can also contain data about item sales prices or purchase prices for BOM calculation purposes.
 

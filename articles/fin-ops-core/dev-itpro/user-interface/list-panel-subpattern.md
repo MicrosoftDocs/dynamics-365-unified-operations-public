@@ -3,13 +3,14 @@ title: List Panel subpattern
 description: Learn about the List Panel form subpattern, which manages two lists that move data between each other, including overviews on usage, wireframes, and pattern changes.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # List Panel subpattern
@@ -24,9 +25,6 @@ List Panel is the subpattern that application teams use to manage two lists that
 
 -   TabPage control
 -   Group control
-
-## Wireframe
-[![List Panel wireframe.](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -82,11 +80,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   **Standard form guidelines:**
     -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
-## Examples
-Form: **SalesSummaryParameters (GroupQuotation)** 
-
-[![List Panel example for SalesSummaryParameters.](./media/listpanel3.png)](./media/listpanel3.png)
-
 ## Resources
 ### Typically used by patterns
 
@@ -96,18 +89,7 @@ Form: **SalesSummaryParameters (GroupQuotation)**
 -   [Dialog](dialog-form-pattern.md)
 -   [Wizard](wizard-form-pattern.md)
 
-## Appendix
-### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
--   None
-
-### AX 2012 content
-
-[![List Panel example.](./media/listpanel4.png)](./media/listpanel4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

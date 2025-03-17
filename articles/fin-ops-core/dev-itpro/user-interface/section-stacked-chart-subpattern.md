@@ -3,14 +3,15 @@ title: Section Stacked Chart subpattern
 description: Learn about the Section Stacked Chart subpattern, including overviews on usage, wireframes, pattern changes, models, and UX guidelines.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Section Stacked Chart subpattern
@@ -22,9 +23,6 @@ This article provides information about the Section Stacked Chart subpattern. Th
 ## Usage
 
 The Section Stacked Chart subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains one or two charts.
-
-## Wireframe
-[![Wireframe for Section Stacked Chart.](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -53,19 +51,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   There should be no more than two charts in this section.
 -   Each Form Part Control should point to a form that uses the [Section Chart](section-chart-form-pattern.md) pattern.
 
-## Examples
-Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
-
-[![Section Stacked Chart example.](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

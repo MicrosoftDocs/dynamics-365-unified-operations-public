@@ -3,13 +3,11 @@ title: Filters and Toolbar subpatterns
 description: Learn about the Filters and Toolbar subpatterns, which show filters and actions inside panorama sections that host lists and charts.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
 ---
 
@@ -34,15 +32,6 @@ Two subpatterns are described in this article:
 
 -   **Filters and Toolbar - Inline** – In this subpattern, any defined actions appear on the same line as the filter fields.
 -   **Filters and Toolbar - Stacked** – In this subpattern, any defined actions appear on a separate line below the filter fields.
-
-## Wireframe
-### Filters and Toolbar - Inline
-
-[![Wireframe for filters and toolbar--inline.](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
-
-### Filters and Toolbar - Stacked
-
-[![Wireframe for filter and toolbar--stacked.](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
 ## Model
 ### Filters and Toolbar - Inline: High-level structure
@@ -91,25 +80,8 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Include only frequently used commands that help users complete tasks in the workspace.
     -   No more than three actions should appear on the Toolbar. One action on the Toolbar can be used as a drop-down list of up to three additional actions.
 
-## Examples
-### Filters and Toolbar - Inline
-
-Form: **HcmWorkforceManagement**  &gt; **HcmOpenPositionsPart** (**All workspaces** &gt; **Workforce management**) 
-
-[![Example of filter and toolbar--inline.](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
-
-### Filters and Toolbar - Stacked
-
-Form: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**All workspaces** &gt; **Workforce management**) 
-
-[![Example of filter and toolbar--stacked.](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
-
 ## Appendix
 ### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
 
 **Why does the Inline variant allow for an arbitrary number of filter fields, but the Stacked variant allows a maximum of three (a QuickFilter and two custom filters)?**
 

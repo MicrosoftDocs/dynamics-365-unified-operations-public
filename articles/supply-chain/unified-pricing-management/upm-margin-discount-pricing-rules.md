@@ -1,5 +1,5 @@
 ---
-title: Pricing rules for discounts and margin price adjustments (preview)
+title: Pricing rules for discounts and margin price adjustments
 description: Learn how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, and free-item discounts.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
 ---
 
-# Pricing rules for discounts and margin price adjustments (preview)
+# Pricing rules for discounts and margin price adjustments
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 This article explains how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts, and free-item discounts.
 

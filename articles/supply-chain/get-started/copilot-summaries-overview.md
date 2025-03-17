@@ -1,12 +1,12 @@
 ---
 title: AI summaries with Copilot
 description: This article provides an overview of the various types of Microsoft Copilot-generated summaries that are available in Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
+author: cabeln
+ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 08/30/2024
+ms.date: 02/12/2025
 ms.custom: 
   - bap-template
 ms.collection:
@@ -18,6 +18,9 @@ ms.collection:
 AI summaries with Microsoft Copilot are available on many of the most-used pages in Dynamics 365 Supply Chain Management. These summaries provide a quick overview of the most important information that's related to the page, personalized for the current user. Summaries can include information such as the number of lines on a purchase order, the number of items in a warehouse, or the number of overdue invoices for a vendor.
 
 The information that Copilot provides depends on the current page and user context. For example, the information can vary based on the other pages that the user works with the most, and it's limited based on the user's security roles and permissions.
+
+> [!TIP]
+> Users can provide feedback to Copilot by selecting the thumbs-up or thumbs-down buttons shown under the summaries. You can add support for written feedback by turning on [enhanced user feedback for Copilot](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md). This feedback helps improve the quality of the summaries that Copilot generates.
 
 ## TechTalk video
 

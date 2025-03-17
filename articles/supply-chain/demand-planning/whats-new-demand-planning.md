@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: conceptual
-ms.date: 09/25/2024
+ms.date: 11/29/2024
 ms.custom: 
   - bap-template
 ---
@@ -15,31 +15,60 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.0.0.2502
+
+### New features introduced in version 1.0.0.2502
+
+This version of Demand planning adds several new features, as described in the following subsections.
+
+#### Autodetection of seasonality patterns is now available for all forecast algorithms (preview)
+
+Automatic detection of seasonality patterns was introduced in Demand planning version 1.0.01700, but it was previously available only for the ARIMA [forecast algorithm](forecast-algorithm-types.md). In this version, it's now available for all forecast algorithms.
+
+#### Time freeze rules
+
+*Time freeze rules* let demand planning managers establish policies that prevent forecast calculations from recalculating and overwriting manual adjustments in an existing forecast during a specified date range. Time freeze rules are based on the dimensions that are available in each forecast, and they are easy to maintain.
+
+#### Generative insights into seasonality patterns (preview)
+
+Generative insights provide AI-generated insights into your data. The initial preview of the feature provides generative insights into your seasonality patterns. Visual displays make it easy for planners to understand seasonality data and make business decisions based on it. Information is clustered (grouped) according to the detected seasonality patterns. For each cluster, generative insights provide a confidence score and describe the seasonality pattern in natural language. The system also indicates the proportion of planning items that follow the pattern.
+
+#### Simplified security role dependencies
+
+The *Basic user* security role no longer has to be applied to all users of Demand planning. Instead, Demand planning now incorporates all privileges from the *App Opener* security role into the *Demand planning contributor* and *Demand planning manager* security roles. Learn more in [Security roles and row-level security in Demand planning](users-access.md).
+
+### New fixes and improvements in version 1.0.0.2502
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability
+- New demo data that includes seasonal clusters
+
 ## Version 1.0.0.1700
 
-### New feature introduced in version 1.0.01700
+### New features introduced in version 1.0.01700
 
 This version of Demand planning adds several new features, as described in the following subsections.
 
 #### Select input for forecasts and calculations at the model level
 
-In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* action card, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and/or dimensions (such as products and locations). As with all action cards, you access these settings by opening the **Actions** menu (ellipsis button) on the card.
+In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* step, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and/or dimensions (such as products and locations). As with all steps, you access these settings by opening the **Actions** menu (ellipsis button) on the card. Learn more in [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
 
-#### Apply input filters in calculation profiles
+#### Apply input filters in calculation models
 
-You can now filter the input used in calculation profiles. Filters can be based on dates and/or dimensions (such as products and locations). It was already possible to apply filters in forecast profiles.
+You can now filter the input used in calculation models. Filters can be based on dates and/or dimensions (such as products and locations). It was already possible to apply filters in forecast models. Learn more in [Design calculation models](design-calculation-models.md).
 
 #### Analyze demand plans with Copilot
 
-Copilot cursor prompts in Demand planning let you explore specific data points or data ranges in a forecast or time series. Each prompt presents a set of predefined questions that you can ask Copilot, which then returns insights into notable shifts, trends, anomalies, or deviations across multiple dimensions. Copilot replies using natural-language summaries and visuals, which make it easy for you to digest the information and use it to make informed decisions.
+Copilot cursor prompts in Demand planning let you explore specific data points or data ranges in a forecast or time series. Each prompt presents a set of predefined questions that you can ask Copilot, which then returns insights into notable shifts, trends, anomalies, or deviations across multiple dimensions. Copilot replies using natural-language summaries and visuals, which make it easy for you to digest the information and use it to make informed decisions. Learn more in [Analyze demand plans with Copilot](demand-planning-copilot.md).
 
 #### Forecast with signals (preview)
 
-One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* action card, which lets planners include any signal (such as inflation or weather data) as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* action card lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release.
+One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* step, which lets planners include any signal (such as inflation or weather data) as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* step lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release. Learn more in [Forecast with signals](forecasts-with-signals.md).
 
 #### Autodetect seasonality patterns (preview)
 
-Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy.
+Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy. Automatic seasonality detection is only available when you use the ARIMA [forecast algorithm](forecast-algorithm-types.md). Learn more in [Design forecast models](design-forecast-models.md#forecast-steps).
 
 ### New fixes and improvements in version 1.0.0.1700
 

@@ -3,14 +3,15 @@ title: Extensible control layout guidelines
 description: Learn about extensible control layout guidelines, including dos and don'ts for acheiving desired layouts with an outline on layout binding handlers.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 04/27/2020
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Extensible control layout guidelines

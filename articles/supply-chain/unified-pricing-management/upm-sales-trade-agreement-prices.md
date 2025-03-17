@@ -1,5 +1,5 @@
 ---
-title: Sales trade agreement prices (preview)
+title: Sales trade agreement prices
 description: Learn about sales trade agreement prices, including an outline on configuring sales trade agreements and concurrence rules.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,18 +10,16 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ---
 
-# Sales trade agreement prices (preview)
+# Sales trade agreement prices
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 *Sales trade agreement prices* are negotiated prices for specific products that apply to specific customers. For sales where a sales trade agreement applies, this price takes priority over the item base price.
 
-Unified pricing management uses the standard *Trade agreement price - sales price* side in Microsoft Dynamics 365 Supply Chain Management, but it's enhanced with price attributes.
+Unified pricing management uses the standard *Trade agreement price - sales price* side, but it's enhanced with price attributes.
 
 > [!NOTE]
-> Unified pricing management respects [Supply Chain Management *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Unified pricing management will use the sales agreement. If no sales agreement applies, Unified pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Unified pricing management. Instead, Unified pricing management provides a new approach to defining discount rules.
+> Unified pricing management respects [standard *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Unified pricing management will use the sales agreement. If no sales agreement applies, Unified pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Unified pricing management. Instead, Unified pricing management provides a new approach to defining discount rules.
 
 ## Configure sales trade agreements, including concurrence rules
 

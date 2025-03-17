@@ -32,7 +32,7 @@ Power users can use web-friendly design tools to customize the analytical report
 
 ### Edit embedded reports in analytical workspaces
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ea74f876-1a5f-49cc-b692-6a7bacf12ea3]
 
 The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -100,4 +100,3 @@ The Power BI service requires explicit permission from the user to allow access 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

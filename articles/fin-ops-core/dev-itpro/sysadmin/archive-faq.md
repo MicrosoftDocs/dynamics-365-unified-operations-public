@@ -2,9 +2,9 @@
 title: Finance and operations apps archive with Dataverse long term retention FAQ
 description: Access answers to frequently asked questions about archiving data in finance and operations apps with Dataverse.
 author: pnghub
-ms.author: gned
+ms.author: brijeshjoshi
 ms.topic: conceptual
-ms.date: 06/11/2024
+ms.date: 02/12/2025
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -59,10 +59,7 @@ You can [view archived data](archive-view.md) in Dataverse long term retention w
 You can also view the archived data from within the finance and operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
 
 ## I export finance and operations application data to my own data lake. If I archive data from my live finance and operations application tables, will the archived data be removed from my own data lake?
-
-Application data copied to your own data lake using [Azure Synapse Link,](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) isn't deleted from your data lake when you archive with Dataverse long term retention.
-
-Application data that's copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](../analytics/export-entities-to-your-own-database.md) or [Export to data lake](../data-entities/finance-data-azure-data-lake.md) are deleted from your data lake when you archive with Dataverse long term retention.
+Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD), and data preservation in BYOD isn't guaranteed.
 
 ## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
 

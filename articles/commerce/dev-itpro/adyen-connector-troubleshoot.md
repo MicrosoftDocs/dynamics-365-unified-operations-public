@@ -2,16 +2,16 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen
 description: This article provides troubleshooting guidance for common issues related to the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 02/01/2023
-ms.topic: article
+ms.date: 12/11/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: rassadi
+ms.author: shajain
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Troubleshoot Dynamics 365 Payment Connector for Adyen
@@ -24,14 +24,15 @@ This article provides troubleshooting guidance for common issues related to the 
 
 ### General issues
 
-For all general issues, you should always consult the Store Commerce app or IIS Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
+For all general issues, you should always consult the Store Commerce app or Internet Information Services (IIS) Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
 
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-ModernPOS
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
+- **Windows Logs \> Application \> Filter Current Log**</br>
+(On the **Event sources** drop-down list, select **Microsoft Dynamics - Store Commerce**.)
+- **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station**
 
 ### Failing payment transactions
 
-When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS will contain a PSP reference number(PSP is the reference ID provided by Adyen used to uniquely identify each transaction). Provide this reference number when you contact Adyen support for help with specific transactions.
+When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS contain a payment service provider (PSP) reference ID. The PSP reference ID is provided by Adyen to identify each transaction. Provide this reference ID when you contact Adyen support for help with specific transactions.
 
 ### The EFT terminal ID isn't set
 
@@ -39,7 +40,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <tbody>
 <tr>
 <td><strong>Title</strong></td>
-<td>EFT Terminal ID is not set</td>
+<td>EFT Terminal ID isn't set</td>
 </tr>
 <tr>
 <td><strong>Symptom</strong></td>
@@ -50,7 +51,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <td>This issue can occur when the <strong>EFT POS Register Number</strong> field isn't set on the register or the IIS Hardware Station. It can also occur if the value is set but isn't correctly synced to the POS terminal. Finally, it can also occur when the value is cached.</td>
 </tr>
 <td><strong>Fix</strong></td>
-<td>Follow the instructions in <a href="adyen-connector-setup.md#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a>. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedules. If the issue isn't resolved, consider reactivating the Store Commerce app, because the value of the <strong>EFT POS Register Number</strong> field might be cached and might need to be reset.</td>
+<td>Follow the instructions in <a href="adyen-connector-setup.md#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a>. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedule jobs. If the issue isn't resolved, consider reactivating the Store Commerce app, because the value of the <strong>EFT POS Register Number</strong> field may be cached and might need to be reset.</td>
 </tr>
 </tbody>
 </table>
@@ -61,7 +62,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <tbody>
 <tr>
 <td><strong>Title</strong></td>
-<td>Config is not updated</td>
+<td>Config isn't updated</td>
 </tr>
 <tr>
 <td><strong>Symptom</strong></td>

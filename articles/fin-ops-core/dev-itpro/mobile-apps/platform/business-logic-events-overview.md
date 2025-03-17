@@ -4,13 +4,13 @@ description: Learn about code that executes in business logic can make runtime m
 author: jasongre
 ms.author: jasongre
 ms.topic: overview
-ms.date: 05/24/2022
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Business logic events

@@ -3,11 +3,12 @@ title: EventHook type<T>
 description: Learn about the EventHook type, including learning about the subscribe, unsubscribe, and unsubscribeAll methods and parameters.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # EventHook type&lt;T&gt;

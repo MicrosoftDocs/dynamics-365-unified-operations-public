@@ -59,7 +59,7 @@ Create a new product by doing the following:
 
 Set up default order settings by doing the following:
 
-1. On the **Action Pane**, select **Plan**.
+1. On the Action Pane, select **Plan**.
 1. Under **Order settings**, select **Default order settings**.
 1. Under **Purchase order**, in the **Default site** field, type the site used as default when purchase orders are created.
 1. In the **Default warehouse** field, type the site where the item is stored.
@@ -88,7 +88,7 @@ Add an item to a coverage group by doing the following:
 
 Create item coverage rules by doing the following:
 
-1. On the **Action Pane**, select **Plan**.
+1. On the Action Pane, select **Plan**.
 1. Under **Coverage**, select **Item coverage**.
 1. Select **New**.
 1. Select the **General** tab.

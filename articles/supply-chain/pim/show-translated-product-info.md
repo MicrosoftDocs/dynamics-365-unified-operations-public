@@ -22,7 +22,7 @@ By entering product translations and configuring the system to show them in the 
 
 The following video provides an introduction to this feature.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59tCd]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4c9d7e56-36f7-49e8-a6de-ed0c8feed1e5]
 
 ## Turn the feature on or off in your system
 

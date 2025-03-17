@@ -3,13 +3,14 @@ title: Image Preview subpattern
 description: Learn about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Image Preview subpattern
@@ -29,9 +30,6 @@ Image Preview can be used for most images that appear within a form container, e
 -   Can contain subpatterns:
     -   Fields and Field Groups
     -   Fill text
-
-## Wireframe
-[![Wireframe of Image Preview.](./media/imagepreview1.png)](./media/imagepreview1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -75,11 +73,6 @@ The verification checklist shows the steps for manually verifying that the form 
 -   **Image Preview guidelines:**
     -   Any fields should be placed to the right of the image.
 
-## Examples
-Form: **RetailVisualProfile** **(Login)** 
-
-[![Example of Image Preview for RetailVisualProfile.](./media/imagepreview2.png)](./media/imagepreview2.png)
-
 ## Resources
 ### Typically used by patterns
 
@@ -89,18 +82,6 @@ Form: **RetailVisualProfile** **(Login)**
 -   [Simple List and Details](simple-list-details-form-pattern.md)
 -   [Table of Contents](table-of-contents-form-pattern.md)
 
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None.
-
-### AX 2012 content
-
-[![Example of Image Preview.](./media/imagepreview3.png)](./media/imagepreview3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

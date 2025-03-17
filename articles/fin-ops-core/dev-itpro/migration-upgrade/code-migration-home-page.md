@@ -3,14 +3,15 @@ title: Code migration and upgrade home page
 description: Access links to topics about code migration, including sections dedicating to key concepts, learning paths, and additional concepts.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 03/22/2021
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Code migration and upgrade home page

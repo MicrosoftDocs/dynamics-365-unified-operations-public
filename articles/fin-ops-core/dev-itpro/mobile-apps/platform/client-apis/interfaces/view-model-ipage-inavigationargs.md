@@ -3,11 +3,12 @@ title: NavigationArgs type
 description: Learn about the NavigationArgs type, which includes the label, options, params, replace, to, and url properties.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # NavigationArgs type

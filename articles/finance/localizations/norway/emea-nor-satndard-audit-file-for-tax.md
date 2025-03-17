@@ -4,7 +4,7 @@ description: Learn how to set up and generate the Standard Audit File for Tax (S
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 11/06/2024
+ms.date: 01/24/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -103,8 +103,8 @@ If you use option 1, the report doesn't consider option 2. If any of the sales t
 2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and then select **SAF-T Format (NO)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. On the **Application specific parameters** page, select the latest version of the format that you want to define conditions for.
-5. On the **Lookups** FastTab, select the **StandardTaxCodes\_Lookup** lookup, and define the appropriate conditions.
-6. On the **Conditions** FastTab, define which tax codes must correspond to a specific lookup result.
+5. On the **Lookups** FastTab, select the **StandardTaxCodes\_Lookup** lookup, and define the appropriate conditions. 
+6. On the **Conditions** FastTab, define which tax codes must correspond to a specific lookup result. Use "NA" lookup result for those tax codes that have no Norwegian standard VAT code and must be reported as "NA" in SAF-T.
 7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
 #### Option 2: Associate sales tax codes used in Finance with Norwegian standard VAT codes by using the External codes functionality
@@ -161,9 +161,6 @@ To associate the main accounts that are used in Finance with Norwegian standard 
     ![Standard account field on the Main accounts page.](../media/nor-saf-standard-main-accounts-appsppar.jpg)
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
-
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### <a name="features"></a>Enable features in Feature management
 

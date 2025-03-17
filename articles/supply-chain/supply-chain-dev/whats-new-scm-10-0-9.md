@@ -32,15 +32,15 @@ The following features are included in this release. The feature titles link to 
 
 - [Calculate PO delivery date based on lead times and working days (public sector)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
 
-- [Catch weight product processing with warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Learn more in [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
+- [Catch weight product processing with warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Learn more in [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and the [Catch weight product improvements](https://learn-video.azurefd.net/vod/player?id=506d0ac9-e3cc-4751-995c-ef8e6f4c6ca4) video.
 
 - [Compare item price storage](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage)<br> - Learn more in [Compare item prices storage report](../cost-management/compare-item-price.md).
 
 - [Consolidate shipment enhancements](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 
-- [Cross-docking](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - Learn more in the [Planned cross docking](https://www.microsoft.com/videoplayer/embed/RE4f7LF) video.
+- [Cross-docking](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - Learn more in the [Planned cross docking](https://learn-video.azurefd.net/vod/player?id=867f8c7e-7a87-488d-9016-b129fe196191) video.
 
-- Further catch weight integration [10.0.1](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Learn more in [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
+- Further catch weight integration [10.0.1](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Learn more in [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://learn-video.azurefd.net/vod/player?id=506d0ac9-e3cc-4751-995c-ef8e6f4c6ca4) video.
 
 - [Fixed assets integration with Asset Management lifecycle](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Learn more in [Integrate asset management with fixed assets](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
 
@@ -54,7 +54,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Inventory value report storage](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Learn more in [Inventory value storage report](../cost-management/inventory-value-report-storage.md)
 
-- [Master planning progress Gantt chart](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Learn more in [Monitor a master planning run](../master-planning/tasks/monitor-master-planning-run.md) and the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
+- [Master planning progress Gantt chart](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Learn more in [Monitor a master planning run](../master-planning/tasks/monitor-master-planning-run.md) and the [MRP performance and usability improvements](https://learn-video.azurefd.net/vod/player?id=68ed1e1c-8d4f-4ed2-a1fe-2b19029de251) video.
 
 - [New data entities for the manufacturing area](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
@@ -62,13 +62,13 @@ The following features are included in this release. The feature titles link to 
 
 - [Packing vs. storage dimensions](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
-- [Parallelized firming of planned orders](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Learn more in [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md) and the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
+- [Parallelized firming of planned orders](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Learn more in [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md) and the [MRP performance and usability improvements](https://learn-video.azurefd.net/vod/player?id=68ed1e1c-8d4f-4ed2-a1fe-2b19029de251) video.
 
 - [Planning optimization for distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Learn more in [Master planning home page](../master-planning/master-planning-home-page.md).
 
 - [Purchase agreement enhancements](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Learn more in [Purchase agreements](../procurement/purchase-agreements.md).
 
-- [Put-away clusters](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - For more information, see  the [Put away clustering](https://www.microsoft.com/videoplayer/embed/RE4f5aB) video.
+- [Put-away clusters](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - For more information, see  the [Put away clustering](https://learn-video.azurefd.net/vod/player?id=93a244a0-d990-4e2d-8687-0a22e91865bf) video.
 
 - [Put to wall/Put to store](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Learn more in [Put to wall - put to store](../warehousing/put-to-wall-put-to-store.md).
 

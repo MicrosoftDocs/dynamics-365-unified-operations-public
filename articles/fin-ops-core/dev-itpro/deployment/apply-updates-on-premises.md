@@ -6,7 +6,7 @@ ms.author: peterfriis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/06/2024
+ms.date: 1/03/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
@@ -28,6 +28,9 @@ For more information about how to find the updates that you can apply to your on
 You can apply updates to an on-premises environment either during deployment or after the deployment is completed.
 
 While an on-premises environment is being deployed, you can select to deploy a custom package in the **Advanced** settings. For more information about how to apply customizations or application X++ updates, see [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
+
+> [!NOTE]
+> Merged packages, which include both platform and custom code, are restricted to use during quality updates only. They can't be utilized when updating to a newer service update. For instance, if you are updating from Dynamics 365 finance version 10.0.41 to 10.0.42, the service update must be applied before using a merged package.
 
 To apply updates to an on-premises environment after it's deployed, follow these steps.
 

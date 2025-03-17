@@ -3,14 +3,15 @@ title: Form Part Section List form patterns
 description: Learn about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Form Part Section List form patterns
@@ -25,15 +26,6 @@ The Form Part Section List form patterns are workspace-specific patterns that ar
 
 -   **Form Part Section List** – This is the default Section pattern. It allows for a single list of data, together with an optional header group that contains filters and/or actions.  Most content areas in the tabbed section of a workspace will use this pattern.
 -   **Form Part Section List - Double** – This variant enables a second list of data to appear to the right of the primary list. By default, the secondary list is hidden. To show it, the user clicks a button on the Toolbar above the primary list.
-
-## Wireframe
-### Form Part Section List
-
-[![Wireframe for Form Part Section List form pattern.](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
-
-### Form Part Section List - Double
-
-[![Wireframe for Form Part Section List--Double form pattern.](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
 ## Pattern changes for finance and operations apps
 These patterns did not exist for Microsoft Dynamics AX 2012.
@@ -92,28 +84,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Tabular grids show no more than eight fields.
 -   **Form Part Section List - Double guidelines**
     -   If both lists have actions and/or filters, both list must use the same [Filters and Toolbar](filters-toolbar-subpattern.md) subpattern (either the Stacked variant or the Inline variant).
-
-## Examples
-### Form Part Section List
-
-Form: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**All workspaces** &gt; **Purchase order receipt and follow-up**) 
-
-[![Form Part Section List example.](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
-
-### Form Part Section List - Double
-
-Form: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**All workspaces** &gt; **Ledger budgets and forecasts**) 
-
-[![Form Part Section List--Double example.](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None
+ 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

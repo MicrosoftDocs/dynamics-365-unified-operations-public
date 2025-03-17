@@ -3,7 +3,7 @@ title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
 ms.author: jasongre
-ms.date: 06/21/2024
+ms.date: 01/02/2025
 ms.topic: article
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -56,7 +56,7 @@ With this updated SharePoint authentication mechanism, batch connections utilize
 
 ``` powershell
 
-Import-Module Microsoft.Graph
+Import-Module Microsoft.Graph.Applications
    
 # The parameter for TenantId needs to be changed
 Connect-MgGraph -TenantId microsoft.onmicrosoft.com -Scopes 'Application.ReadWrite.All'

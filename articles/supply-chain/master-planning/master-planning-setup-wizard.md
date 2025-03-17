@@ -16,7 +16,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 This article provides a guide for the **Master planning setup wizard**. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e574dd27-fecc-4163-a4e8-e3eaa5687574]
 
 The [Master planning setup wizard in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

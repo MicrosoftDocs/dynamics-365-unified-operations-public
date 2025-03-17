@@ -1,5 +1,5 @@
 ---
-title: Customer and product price attribute groups (preview)
+title: Customer and product price attribute groups
 description: Learn how to configure customer and product price attribute groups for the Unified pricing management module, including usage examples.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ---
 
-# Customer and product price attribute groups (preview)
+# Customer and product price attribute groups
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 *Customer price attribute groups* and *product price attribute groups* let you create logic to define groups of customers and products, respectively. The membership of each group is based on the values of attributes that you assign to that group. These groups can make it easier to set up collections of customers and products that you can target in your pricing rules.
 
@@ -103,7 +101,7 @@ To add, edit, or delete a price attribute group, follow these steps.
 
     - **Friendly name** – Enter a descriptive or common name for the group. For new groups, the value initially matches the value that you entered in the **Price attribute group** field, but you can change it.
     - **Description** – Enter a short description of the group.
-    - **Help text** – Enter help text that will be shown to describe the group on other pages of Microsoft Dynamics 365 Supply Chain Management.
+    - **Help text** – Enter help text that will be shown to describe the group.
     - **Sales order matching scope** – This read-only field indicates whether the group applies to the overall order header values or to individual order line values. If you're creating a customer price attribute group, the value is always *Header*. If you're creating a product price attribute group, the value is always *Line*. For more information about order matching scopes, see [Price attribute groups](upm-price-attribute-groups.md).
 
 1. On the Action Pane, select **Save**.

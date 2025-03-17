@@ -4,10 +4,9 @@ description: Acess resources that are available for system administrators, inclu
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 11/20/2020
+ms.date: 12/05/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: SystemAdministrationWorkspaceForm

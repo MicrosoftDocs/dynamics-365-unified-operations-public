@@ -3,14 +3,14 @@ title: Form design requirements
 description: Learn about form design requirements and guidelines for mobile apps, including design considerations and code examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Platform update 3
+ms.custom: 
+  - bap-template
 ---
 
 # Form design requirements

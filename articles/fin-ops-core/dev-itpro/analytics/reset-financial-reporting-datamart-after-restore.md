@@ -3,10 +3,11 @@ title: Reset the Financial reporting data mart
 description: Learn how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance, including definitions for exporting and importing reports.
 author: aprilolson
 ms.author: aolson
-ms.topic: article
-ms.date: 11/08/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 01/24/2024
 ms.reviewer: twheeloc
-audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
@@ -38,7 +39,7 @@ To reset the data mart, in Report designer, on the **Tools** menu, select **Rese
 
 ##### Integration attempts
 
-The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You know that the data mart must be reset if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
+The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. In this situation, the data won't be reported on.
 
 ##### Data status
 

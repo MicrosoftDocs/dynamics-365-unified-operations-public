@@ -1,5 +1,5 @@
 ---
-title: Enable and configure seamless sync with Dynamics 365 Sales (preview)
+title: Enable and configure seamless sync with Dynamics 365 Sales
 description: Learn how to enable, configure, and use seamless sync when Microsoft Dynamics 365 Sales is integrated with the pricing engine in Dynamics 365 Supply Chain Management. 
 author: AditiPattanaik
 ms.author: adpattanaik
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Enable and configure seamless sync with Dynamics 365 Sales (preview)
+# Enable and configure seamless sync with Dynamics 365 Sales
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.42 GA -->
 
 Microsoft Dynamics 365 Supply Chain Management includes a sophisticated pricing engine that handles trade agreements for prices and discounts. This pricing engine uses complex rules to determine the best price for a given order or quotation. When Supply Chain Management is integrated with Dynamics 365 Sales, you can either [sync on demand by using the Supply Chain Management pricing engine](pricing-engine.md) or use *seamless sync*, as described in this article.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 With seamless sync, users who work on sales orders and sales quotations in Sales can view the results of calculations that the Supply Chain Management pricing engine does, without having to take any extra steps to get prices, discounts, and totals. As the users work in Sales, all the necessary data and calculation results are seamlessly synced between systems as required.
 

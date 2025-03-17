@@ -3,11 +3,12 @@ title: Part type
 description: Learn about the part type, a container control that contains only a page, allowing for a page to be embedded within a page.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
+ms.topic: how-to
+ms.date: 12/31/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Part type

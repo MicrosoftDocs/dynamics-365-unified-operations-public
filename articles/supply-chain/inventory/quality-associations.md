@@ -3,11 +3,12 @@ title: Quality associations
 description: Learn how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders related to your sales.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 03/23/2021
 ms.reviewer: kamaybac
 ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Quality associations
@@ -29,7 +30,7 @@ You must define a quality association for each variation in a business process t
 
 The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders.
 
-Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order. Alternatively, subsequent processes, such as purchase order invoicing, can be blocked.
+Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there's an open quality order. Alternatively, subsequent processes, such as purchase order invoicing, can be blocked.
 
 > [!NOTE]
 > While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the setting of the **Full blocking** field on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line. Learn more in [Quality management item sampling](quality-item-sampling.md).

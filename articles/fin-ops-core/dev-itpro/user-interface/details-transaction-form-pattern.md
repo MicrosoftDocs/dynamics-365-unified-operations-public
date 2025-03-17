@@ -3,14 +3,15 @@ title: Details Transaction form pattern
 description: Learn about the Details Transaction form pattern. Using this pattern, users can switch between a Header view and a Line view.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.date: 01/03/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Details Transaction form pattern
@@ -22,19 +23,6 @@ This article provides information about the Details Transaction form pattern. Fo
 ## Usage
 
 A details form with lines (Details Transaction form) consists of one form that can have two details views that the user can switch between. The Header view contains all fields that are related to or part of the header. The Line view contains the lines grid, line details, and a section that contains a collection of the most important header fields.
-
-## Wireframe
-### Line view
-
-[![Wireframe: Line view.](./media/detailstransaction1-1024x575.png)](./media/detailstransaction1.png)
-
-### Header view
-
-[![Wireframe: Header view.](./media/detailstransaction2-1024x576.png)](./media/detailstransaction2.png)
-
-### Grid view
-
-[![Wireframe: Grid view.](./media/detailstransaction3-1024x575.png)](./media/detailstransaction3.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -151,21 +139,6 @@ The verification checklist shows the steps for manually verifying that the form 
         -   Additional grid guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
     -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
-## Example
-Form: **SalesTable**
-
-#### Line view
-
-[![Details Transaction example: Line view.](./media/detailstransaction4-1024x508.png)](./media/detailstransaction4.png)
-
-#### Header view
-
-[![Details Transaction example: Header view.](./media/detailstransaction5-1024x509.png)](./media/detailstransaction5.png)
-
-#### Grid view
-
-[![Details Transaction example: Grid view.](./media/detailstransaction6-1024x509.png)](./media/detailstransaction6.png)
-
 ## Appendix
 ### Frequently asked questions
 
@@ -190,20 +163,6 @@ None currently.
 
 -   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](/dynamicsax-2012/developer/details-form-with-lines-user-experience-guidelines)
 -   [MSDN Details Form \[AX 2012\]](/dynamicsax-2012/developer/details-forms)
-
-#### AX 2012 example
-
-##### Line view
-
-[![AX 2012 example: Line view.](./media/detailstransaction7-1024x727.png)](./media/detailstransaction7.png)
-
-##### Header view
-
-[![AX 2012 example: Header view.](./media/detailstransaction8-1024x727.png)](./media/detailstransaction8.png)
-
-##### Grid view
-
-[![AX 2012 example: Grid view.](./media/detailstransaction9-1024x727.png)](./media/detailstransaction9.png)
 
 
 

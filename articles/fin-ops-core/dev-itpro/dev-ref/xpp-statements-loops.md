@@ -3,7 +3,7 @@ title: Comments, using, and print statements
 description: Learn about comments, using, and print statements in X++, including examples and descriptions for each statement type.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 08/27/2021
 ms.reviewer: johnmichalak
 audience: Developer

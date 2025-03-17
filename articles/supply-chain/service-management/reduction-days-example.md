@@ -1,8 +1,8 @@
 ---
 title: Reduction days example   
 description: Learn about creating a subscription transaction for a customer's maintenance subscription with a table that shows dates for subscriptions.
-author: ChristianRytt
-ms.author: crytt
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
@@ -99,6 +99,6 @@ When the transactions for March 2011 are invoiced, the sales price of EUR 200 is
 
 ## Related information
 
-[Reduce the days on subscription fees](reduce-the-days-on-subscription-fees.md)
+- [Reduce the days on subscription fees](reduce-the-days-on-subscription-fees.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

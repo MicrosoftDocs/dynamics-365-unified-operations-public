@@ -4,14 +4,14 @@ description: Learn about how to create custom fields through the user interface 
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 09/15/2023
-ms.custom:
+ms.date: 12/31/2024
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2018-1-31
 ms.search.form: SysCustomFieldManageFields
-ms.dyn365.ops.version: Platform update 13
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Create and work with custom fields
