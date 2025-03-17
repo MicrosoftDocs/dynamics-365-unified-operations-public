@@ -20,11 +20,11 @@ ms.custom:
 
 This article provides an overview of the download sessions that are used with Commerce Data Exchange (CDX) in Microsoft Dynamics 365 Commerce.
 
-[CDX](define-retail-channel-communications-cdx.md) is used to make master data such as customer, product, and pricing data from [Dynamics 365 Commerce headquarters](commerce-architecture.md#dynamics-365-commerce-headquarters) available in various channels, such as online stores or brick-and-mortar stores.
+[CDX](define-retail-channel-communications-cdx.md) is used to make master data from [Dynamics 365 Commerce headquarters](commerce-architecture.md#dynamics-365-commerce-headquarters) available in various channels. For example, it distributes customer, product, and pricing data to online stores or brick-and-mortar stores.
 
 To distribute master data, CDX periodically creates download sessions. A download session can be full (all data) or incremental (new and updated data only). As part of each download session, one or more jobs are run. Each job has a specific purpose, such as distributing customer data or product data. Successful completion of these download sessions and jobs is critical for store operations.
 
-Administrators can view and monitor download activity by using the **Download sessions** form in headquarters. This form shows detailed information, including the job name, channel database, session number, and status. The form also helps administrators ensure that data is being successfully synchronized with [Commerce Scale Units (CSUs)](../../fin-ops-core/dev-itpro/deployment/Initialize-Retail-Channels.md), and that point-of-sale (POS) devices are offline-ready to handle network or service disruptions.
+Administrators can view and monitor download activity by using the **Download sessions** form in headquarters. This form shows detailed information, including the job name, channel database, session number, and status. It also helps administrators ensure that data is being successfully synchronized with [Commerce Scale Units (CSUs)](../../fin-ops-core/dev-itpro/deployment/Initialize-Retail-Channels.md), and that point-of-sale (POS) devices are offline-ready to handle network or service disruptions.
 
 ## Enhanced download sessions
 
