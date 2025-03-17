@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Belgium in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 03/01/2025
+ms.date: 03/17/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -31,7 +31,7 @@ Watch the following overview of Belgian electronic invoicing implementation in D
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-- The company must be a registered tax payer in Belgium.
+- The company must be a registered taxpayer in Belgium.
 - The company must have a signed agreement with the provider of electronic document delivery service that secures electronic document interchange in the PEPPOL format.
 - Among the registered profile IDs, the company should have the following profile that Microsoft Dynamics 365 Finance uses for electronic document interchange:
 
@@ -125,12 +125,12 @@ To review and update the **Belgian electronic invoice (BE)** electronic invoicin
 > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
     
 4. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
-5. In the **Channel** field, enter the **EdiStatus** value. You must enter the value exactly as it appears here. The system will use it as the channel for outgoing electonic invoices submission.
+5. In the **Channel** field, enter the **EdiStatus** value. You must enter the value exactly as it appears here. The system will use it as the channel for outgoing electronic invoices submission.
 6. In the **Company** field, select a required legal entity.
 7. In the **Document context** field, select the **Data channel context** mapping from the **Customer invoice context model** configuration.
 8. In the **Channel type** field, select the **Export** value.
 9. In the **Channels** section, select **Add** to create another channel.
-10. In the **Channel** field, enter the **EdiImport** value. You must enter the value exactly as it appears here. The system will use it as the channel for incoming electonic invoices import.
+10. In the **Channel** field, enter the **EdiImport** value. You must enter the value exactly as it appears here. The system will use it as the channel for incoming electronic invoices import.
 11. In the **Company** field, select a required legal entity.
 12. In the **Document context** field, select the **Data channel context** mapping from the **Import invoice context model** configuration.
 13. In the **Channel type** field, select the **Import** value.
@@ -249,7 +249,7 @@ To enter the Buyer schema codes, follow these steps.
 1. In the **Value** column, enter the required Buyer schema code.
 
 > [!NOTE]
-> The schema codes definend via the Electronic document property types have a higher priority then the default **9925** schema code.
+> The schema codes defined via the Electronic document property types have a higher priority then the default **9925** schema code.
 
 ## Configure units of measure
 
@@ -314,7 +314,7 @@ To submit the generated electronic invoices, follow these steps.
 You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 > [!NOTE]
-> Submited electronic invoices will be also available in your [Ediwin](https://ediwin.edicomgroup.com/) portal, in the **Outbound** folder and its subfolders, where you can monitor further processing of the documents.
+> Submitted electronic invoices will be also available in your [Ediwin](https://ediwin.edicomgroup.com/) portal, in the **Outbound** folder and its subfolders, where you can monitor further processing of the documents.
 
 ## Receive incoming electronic invoices
 
