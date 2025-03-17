@@ -34,23 +34,20 @@ If you're using custom roles in Supply Chain Management, you must manually assig
 
 ## Assign security roles for accessing Demand planning on Power Platform
 
-When you install Demand planning on Power Platform, it creates several security roles to control access to its various features. To be able to access Demand planning, users must sign in a Power Platform user account that has the security roles for the features they need.
+When you install Demand planning on Power Platform, it creates and updates several security roles to control access to its various features. To be able to access Demand planning, users must sign in a Power Platform user account that has the security roles for the features they need.
 
 The following security roles are used by Demand planning. Some of them are standard for Power Platform, while others are specific to Demand planning.
 
-- **Basic User**
-    - This is a standard security role that's included with Power Platform.
-    - All users of Demand planning must have this role in order to access the app.
-
-- **System Administrator**  
-    - This is a standard security role that's included with Power Platform. It also grants access to admin features within Demand planning.
-    - Install the app, add users, assign roles, manage teams, and so on.
-    - View, create, and manage tables, relations, and data.
-    - Create and manage imports and exports.
-    - View and create transformations based on requests from the demand planning manager.
-    - Monitor jobs (imports, calculations, forecasts, transformations, and exports).
+- **Demand Planning Contributor**
+    - This role is added when you install Demand planning.
+    - Grants access to Demand planing.
+    - View worksheets (see shared worksheets and save their own views).
+    - Controlled by row-level access and can edit data they have access to.
+    - Collaborate using Microsoft Teams and in-app comments.
 
 - **Demand Planning Manager**
+    - This role is added when you install Demand planning.
+    - Grants access to Demand planning and all features that are available to the *Demand Planning Contributor* role.
     - Configure demand planning (role-level security, time fences, worksheets).
     - View and create planning data (forecasts and calculations).
     - View and create tables and import data from excel.
@@ -58,10 +55,22 @@ The following security roles are used by Demand planning. Some of them are stand
     - View and create worksheets.
     - Export plans when they're ready to share with Supply Chain Management.
 
-- **Demand Planning Contributor**
-    - View worksheets (see shared worksheets and save their own views).
-    - Controlled by row-level access and can edit data they have access to.
-    - Collaborate using Microsoft Teams and in-app comments.
+- **System Administrator**  
+    - This is a standard security role that's included with Power Platform.
+    - Grants access to Demand planning and all features that are available to the *Demand Planning Manager*, *Demand Planning Contributor*, and *Basic User* roles.
+    - Grants access to admin features within Demand planning.
+    - Install the app, add users, assign roles, manage teams, and so on.
+    - View, create, and manage tables, relations, and data.
+    - Create and manage imports and exports.
+    - View and create transformations based on requests from the demand planning manager.
+    - Monitor jobs (imports, calculations, forecasts, transformations, and exports).
+
+- **Basic User**
+    - This is a standard security role that's included with Power Platform.
+    - This role isn't required to access Demand planning, nor does it grant access to Demand planning.
+    - For users that also have the *Demand Planning Manager* and/or *Demand Planning Contributor* roles, the *Basic User* role adds the following privileges in Demand planning:
+        - Export data to Microsoft Excel.
+        - Access core business tables such as accounts, contacts, and so on.
 
 - **Demand Planning Service Role**
     - An internal role required by Demand planning, which uses this role for internal operations.
