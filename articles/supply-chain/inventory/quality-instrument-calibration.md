@@ -9,11 +9,11 @@ ms.author: johanho
 manager: 
 ---
 
-# Instrument Calibration
+# Instrument calibration
 
 Certain test instruments that are used during quality control processes need to be regularly calibrated. Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration of an instrument allows people to have a safe working environment and produces valid data for future reference. Instruments that are not calibrated regularly can result in product which has incorrectly passed or failed quality control tests. This new feature adds capability around tracking individual test instrument tags, supports an on-going calibration process for the instrument tag and tracks usage of given tags against the quality order tests.
 
-The Instrument Calibration feature found within Supply Chain Management offers enhanced quality management capability by providing robust functionality around test instrument tracking and calibration. The added functionality will give users the ability to:
+The instrument calibration feature found within Supply Chain Management offers enhanced quality management capability by providing robust functionality around test instrument tracking and calibration. The added functionality will give users the ability to:
 
 - Track additional quality details related to Test instrument tags, such as Calibration groups, Test departments and Test owners.
 - Track additional information on the Test instrument tag and support new actions triggered from the Test instrument tag.
