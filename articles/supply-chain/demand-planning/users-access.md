@@ -73,6 +73,7 @@ The following security roles are used by Demand planning. Some of them are stand
         - Access core business tables such as accounts, contacts, and so on.
 
 - **Demand Planning Service Role**
+    - This role is added when you install Demand planning.
     - An internal role required by Demand planning, which uses this role for internal operations.
     - You should never assign this role to a human user.
 
