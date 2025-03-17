@@ -3,11 +3,12 @@ title: Accruing subscriptions
 description: With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 04/30/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMASubscriptionGroup
+ms.topic: how-to
+ms.date: 03/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Accruing subscriptions
@@ -59,61 +60,18 @@ You must set up an invoicing period code. Unless you want to accrue revenue in t
 
 The following table provides an overview of which accrual periods can be set up for each invoicing period:
 
-<table>
-<colgroup>
-<col />
-<col />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Invoicing period</p></th>
-<th><p>Accrual period</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Years</strong></p></td>
-<td><ul>
-<li><p><strong>Years</strong></p></li>
-<li><p><strong>Quarter</strong></p></li>
-<li><p><strong>Month</strong></p></li>
-<li><p><strong>Day</strong></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><strong>Quarter</strong></p></td>
-<td><ul>
-<li><p><strong>Quarter</strong></p></li>
-<li><p><strong>Month</strong></p></li>
-<li><p><strong>Day</strong></p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Month</strong></p></td>
-<td><ul>
-<li><p><strong>Month</strong></p></li>
-<li><p><strong>Day</strong></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><strong>Week</strong></p></td>
-<td><ul>
-<li><p><strong>Day</strong></p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Day</strong></p></td>
-<td><ul>
-<li><p><strong>Day</strong></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Invoicing period | Accrual period |
+|-------------------------|-----------------------|
+| Years | <ul> <li>Years</li> <li>Quarter</li> <li>Month</li> <li>Day</li> </ul> |
+| Quarter | <ul> <li>Quarter</li> <li>Month</li> <li>Day</li> </ul> |
+| Month | <ul> <li>Month</li> <li>Day</li> </ul> |
+| Week | <ul> <li>Day</li> </ul> |
+| Day | <ul> <li>Day</li> </ul> |
 
 Setting up the invoicing period is a mandatory part of the overall subscription group setup. You can decide whether to also set up an accrual period for the subscription group. If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field. This field is found on the **Accrue subscription revenue** page, when you accrue subscription revenue. However, the accrual period is optional information about the subscription group.
 
 > [!NOTE]
-> Use the following path to open the **Accrue subscription revenue** page. Go to **Service management** &gt; **Periodic** &gt; **Service subscriptions** &gt; **Accrue subscription revenue**.
+> Use the following path to open the **Accrue subscription revenue** page. Go to **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.
 
 ## Transactions
 
