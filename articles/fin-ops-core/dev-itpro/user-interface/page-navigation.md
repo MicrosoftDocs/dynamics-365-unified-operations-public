@@ -8,6 +8,7 @@ ms.date: 01/03/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: DefaultDashboard, SysUserSetup
 ms.custom: 
   - bap-template
   - evergreen
@@ -29,15 +30,19 @@ The primary navigation concepts are:
 -   Tiles
 -   Navigation search
 
-The dashboard is a new concept, whereas the navigation pane and workspaces are updates to existing concepts. To implement the navigation concepts, the user interface model uses several standard page types. When you create an application, you should follow the conventions for these pages to present a consistent experience for the user. The following sections provide more detail about the pages that underlie these concepts, and include information about the modeling of these and other types of pages.
+The dashboard is a page concept with static content, that complements navigation pane and workspaces. To implement the navigation concepts, the user interface model uses several standard page types. When you create an application, you should follow the conventions for these pages to present a consistent experience for the user. The following sections provide more detail about the pages that underlie these concepts, and include information about the modeling of these and other types of pages.
 
 ## Dashboard
-The dashboard is the first page that users see when they access the client. The dashboard contains tiles that show important details from the system. Content that was previously displayed in Cues on Role Center pages in Microsoft Dynamics AX 2012 is now available on the dashboard. You can return to the dashboard at any time by clicking **Dynamics 365** on the navigation bar at the top of the application frame. 
+Finance and operations apps contain several out-of-the box dashboards. Among som eof those, one can be set as the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) in the user settings. By default this is the [Default Dashboard](../../fin-ops//user-interface/default-dashboard.md). The Initial Page is the first page that users see when they access the client. The dashboard contains tiles that show important details from the system. Content that was previously displayed in Cues on Role Center pages in Microsoft Dynamics AX 2012 is now available on the dashboard. You can return to the dashboard at any time by clicking Home icon in the left side navigation bar.
 
-The dashboard primarily consists of a large section of workspace tiles. There might also be a Getting Started tool, which isn't shown in the preceding screenshot. The dashboard's workspace tile section is built from a menu structure that has its root in the **NavPaneMenu** menu. The menu is modified by a set of menu extensions, and those extensions contain one or more tile references that correspond to the tiles that users see in that section.
+The dashboard primarily consists of a large section of workspace tiles. There might also be a Getting Started tool or introduction of new experience concepts. The dashboard's workspace tile section is built from a menu structure that has its root in the **NavPaneMenu** menu. The menu is modified by a set of menu extensions, and those extensions contain one or more tile references that correspond to the tiles that users see in that section.
 
 ## Navigation pane
-The navigation pane provides access to workspaces, main menu elements, recently opened forms, and user-defined favorites.  The user can open the navigation pane by clicking the **Show navigation pane** button under the navigation bar. The navigation pane consists of four collapsible sections. The **Favorites** section provides quick access to the list of forms the user has explicitly marked as a favorite. Marking a form as a favorite is accomplished by clicking the star icon next to the form in the navigation pane. The **Recent** section lists the forms the user has most recently visited. The set of workspaces a user has access to is conveniently shown in the **Workspaces** section. Finally, the **Modules** section provides the full list of modules. Clicking on a module will open the right side of the navigation pane, where the user can navigate to the desired page in that module.  
+The left side expandable navigation pane provides access to the initial page for the user, workspaces, modules, recently opened forms, and user-defined favorites. The user can expand the navigation pane by clicking on any of the icons in the collapsed navigation pane.
+
+The **Initial Page** is the page that opens by default when the user open the finance and operations app. It typically is the **Default Dashboard** or the [**Immersive Home**](../../fin-ops/copilot/immersive-home.md). Users can customize the initial page in the [user options]().
+
+The navigation pane consists of four collapsible sections. The **Favorites** section provides quick access to the list of forms the user has explicitly marked as a favorite. Marking a form as a favorite is accomplished by clicking the star icon next to the form in the navigation pane. The **Recent** section lists the forms the user has most recently visited. The set of workspaces a user has access to is conveniently shown in the **Workspaces** section. Finally, the **Modules** section provides the full list of modules. Clicking on a module will open the right side of the navigation pane, where the user can navigate to the desired page in that module.  
 
 Like the workspace tiles on the dashboard, the elements that are listed in the navigation pane are generated at runtime, based on a menu structure. The same root menu (**NavPaneMenu**) that defines the set of workspaces on the dashboard also defines the navigation pane. Here's an example of the logical structure for the navigation pane:
 

@@ -10,7 +10,7 @@ ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
+ms.search.form: CustParameters, CustPosting, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
