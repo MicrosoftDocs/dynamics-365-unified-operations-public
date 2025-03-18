@@ -19,6 +19,7 @@ ms.collection:
 [!include [banner](../../includes/banner.md)]
 
 The following article explains how a user for himself or the System Administrator role can set the initial page in the application for a user. The Initial Page is the first page that users see when they access the client.
+By default the initial page is set to the [Default Dashboard](../../user-interface/default-dashboard.md).
 
 As a System Administrator to set the initial page for a user:
 

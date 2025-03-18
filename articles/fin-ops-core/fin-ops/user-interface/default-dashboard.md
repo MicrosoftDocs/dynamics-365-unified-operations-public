@@ -47,7 +47,7 @@ The related Apps area shows tiles for Dynamics 365 apps available to the user to
 
 ## Workspaces
 
-The workspaces components shoes one tile for each workspace. Workspace tiles will show the information that have been pinned to the dashboard. To pin information to the dashboard open the Workspace and right click on a blue tile in the workspace, select **Personalize:...** and the **Pin to dashboard**.
+The workspaces component shows one tile for each workspace. Workspace tiles will highlight the information that have been pinned to the dashboard. To pin information to the dashboard open the Workspace and right click on a blue tile in the workspace, select **Personalize:...** and the **Pin to dashboard**.
 
 ## People search
 

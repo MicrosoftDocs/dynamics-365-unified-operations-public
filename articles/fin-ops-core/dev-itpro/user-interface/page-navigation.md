@@ -1,14 +1,14 @@
 ---
 title: Navigation concepts
 description: Learn about the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
-author: jasongre
+author: jasongre, cabeln
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 01/03/2025
+ms.date: 03/17/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: DefaultDashboard, SysUserSetup
+ms.search.form: DefaultDashboard, SysUserSetup, ImmersiveHome
 ms.custom: 
   - bap-template
   - evergreen
@@ -20,24 +20,27 @@ ms.custom:
 
 This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 
-## Navigation concepts
+## Navigation concept overview
 
 The primary navigation concepts are:
 
--   Dashboard
--   Navigation pane
--   Workspaces
--   Tiles
--   Navigation search
+- Dashboard
+- Navigation pane
+- Workspaces
+- Tiles
+- Navigation search
 
-The dashboard is a page concept with static content, that complements navigation pane and workspaces. To implement the navigation concepts, the user interface model uses several standard page types. When you create an application, you should follow the conventions for these pages to present a consistent experience for the user. The following sections provide more detail about the pages that underlie these concepts, and include information about the modeling of these and other types of pages.
+The dashboard page, navigation pane and workspaces complement each other to implement the navigation concepts and user interface model using several page types. When you create an application, you should follow the conventions for these pages to present a consistent experience for the user. The following sections provide more detail about the pages that underlie these concepts, and include information about the modeling of these and other types of pages.
 
 ## Dashboard
-Finance and operations apps contain several out-of-the box dashboards. Among som eof those, one can be set as the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) in the user settings. By default this is the [Default Dashboard](../../fin-ops//user-interface/default-dashboard.md). The Initial Page is the first page that users see when they access the client. The dashboard contains tiles that show important details from the system. Content that was previously displayed in Cues on Role Center pages in Microsoft Dynamics AX 2012 is now available on the dashboard. You can return to the dashboard at any time by clicking Home icon in the left side navigation bar.
+
+A dashboard page is typically used as landing page or navigation hub. These pages can reflect business domains or landing pages for users.
+Finance and operations apps contain several out-of-the box dashboards. Some of these qualify  to be  set as the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) for a user. By default this is the [Default Dashboard](../../fin-ops//user-interface/default-dashboard.md). The dashboard contains tiles that show important details from the system. Content that was previously displayed in Cues on Role Center pages in Microsoft Dynamics AX 2012 is now available on the dashboard. You can return to the dashboard at any time by clicking Home icon in the left side navigation bar.
 
 The dashboard primarily consists of a large section of workspace tiles. There might also be a Getting Started tool or introduction of new experience concepts. The dashboard's workspace tile section is built from a menu structure that has its root in the **NavPaneMenu** menu. The menu is modified by a set of menu extensions, and those extensions contain one or more tile references that correspond to the tiles that users see in that section.
 
 ## Navigation pane
+
 The left side expandable navigation pane provides access to the initial page for the user, workspaces, modules, recently opened forms, and user-defined favorites. The user can expand the navigation pane by clicking on any of the icons in the collapsed navigation pane.
 
 The **Initial Page** is the page that opens by default when the user open the finance and operations app. It typically is the **Default Dashboard** or the [**Immersive Home**](../../fin-ops/copilot/immersive-home.md). Users can customize the initial page in the [user options]().
@@ -56,7 +59,8 @@ Workspaces are activity-oriented pages that are designed to increase a user's pr
 Workspaces are simply a different type of modeled forms. The system differentiates workspaces by **Form.Design.Style**=**Workspace** (this value is defined as part of the Workspace form pattern). A workspace consists of a caption (which is defined on **Form.Design.Caption**) and a panorama (that is, a tab control). A panorama contains sections of content that are relevant to the task for which the workspace is intended. These sections are modeled as tab pages. The first section will generally be a set of tiles that users can click to begin new tasks or access lists of items. The second section contains a set of relevant lists for the activity. The last section contains a number of links to pages that are important but not frequently used for this activity. In between the list and links section are a few optional sections that might contain charts and graphs. One important distinction of workspaces is that they do not have a data source. If the content (such as a list or chart) requires a data source, you must model that content on an independent form of type **Form part**, and then reference that form part on the workspace. Form parts can be hosted on other forms, and each can have its own data source.
 
 ## Tiles
-Windows 8 introduced the concept of tiles, and you will see them used in the client. A tile is a rectangular button that behaves like a menu item button. It is used to navigate to or open pages. In addition, tiles can display relevant data, such as counts or key performance indicators (KPIs). A tile can include images that provide the user with additional visual context. You can create the following types of tiles.
+
+A tile is a rectangular button that behaves like a menu item button. It is used to navigate to or open pages. In addition, tiles can display relevant data, such as counts or key performance indicators (KPIs). A tile can include images that provide the user with additional visual context. You can create the following types of tiles.
 
 | Type     | Example                                                                                                                                                           | Description                                                                                                                                  |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

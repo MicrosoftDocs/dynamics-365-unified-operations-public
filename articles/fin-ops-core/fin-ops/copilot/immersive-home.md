@@ -26,7 +26,13 @@ The **Immersive Home** is aiming to become the  modern, AI-first landing page th
 
 ## The components of Immersive Home
 
+The Immersive Home is composed using a new library of controls for adaptive experiences in Dynamics 365 business applications following the Fluent design patterns. Adaptive experiences aim not only to modernize user experiences but also to bring dynamic approaches that move away from static forms towards experiences that bring relevant work to the user.
+
+The first release of Immersive Home features Greeting and work summary, recommendations related to AI agents, and a center focus on work items. It also includes Agent activity overviews and a ranked view of spaces, initially the classic Workspaces in Finance and Operations.
+
 ## Greeting and summary
+
+The greeting at the top of the page welcomes the user by name and provides a concise summary of relevant work items and recommendations to address. This helps the user to get a quick overview of the immediate tasks at hand.  
 
 ## Recommendation area
 
@@ -56,4 +62,14 @@ Activity cards show:
 
 ## The Agent Activity area
 
+The agent activity area will be shown only if the use of AI agents has been enabled in the environment. For each activated agent it shows a section where the agent presents its key activity metrics. This could be the number of cases processed, email sent, or metrics such as estimated time saved for the user.
+
+Typically agents provide a dedicated task space, where the user can go into more detail on what the agent has been doing, work hand in hand with the agent, and configure or teach the agent. The chevron at the top right of each agent activity card navigates to the specific agent task space.
+
+At the bottom of the Agent Activity area navigate to agent life cycle management related views. The **View activity** link navigates to the holistic tracing list of all agent activities. The **View agents** link opens the repository of all currently running agents and the library of all agents available to the user for activation.
+
 ## The Workspaces area
+
+The workspaces section shows a list of ranked tiles for each workspace. The ranking takes into account the recency of the last use by the user. Favorit workspaces will rank at the top.  
+
+Workspace tiles will highlight the information that have been pinned to the dashboard. To pin information to the dashboard open the Workspace and right click on a blue tile in the workspace, select **Personalize:...** and the **Pin to dashboard**.
