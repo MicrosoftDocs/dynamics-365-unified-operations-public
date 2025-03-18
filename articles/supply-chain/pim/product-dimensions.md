@@ -6,7 +6,7 @@ ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ms.topic: how-to
-ms.date: 01/31/2025
+ms.date: 03/18/2025
 ms.custom: 
   - bap-template
 ---
