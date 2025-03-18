@@ -1,5 +1,5 @@
 ---
-title: Continue to use deprecated master planning for existing    companies
+title: Continue to use deprecated master planning with existing companies
 description: Learn how to continue using the deprecated master planning engine for existing companies until they're ready to be migrated.
 author: t-benebo
 ms.author: benebotg
@@ -10,14 +10,14 @@ ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ---
 
-# Continue to use deprecated master planning for existing companies
+# Continue to use deprecated master planning with existing companies
 
 [!include [banner](../../includes/banner.md)]
 
-Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new legal entites(companies) within existing deployment. There is no manual way to enable the deprecated master planning engine for these companies. However, for the exisiting companies it is possivle to continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they're ready to be migrated. 
+Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is blocked for all new legal entities (companies) added to existing deployments. There is no manual way to enable the deprecated master planning engine for these companies. However, for existing companies, it is possible to continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they're ready to be migrated.
 
-> [!NOTE]
-> This is only possible when existing company has already been using deprecated master planning.
+> [!IMPORTANT]
+> The deprecated master planning engine is only available to existing companies that are already using it.
 
 ## Companies where planning processes are disabled
 
