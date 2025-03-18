@@ -75,6 +75,8 @@ As a standard product dimension, version will behave similarly to the existing p
 
 ### <a name="enable-version-dim"></a>Turn on the version dimension
 
+As of Supply Chain Management version 10.0.36, the version dimension is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn on the version dimension for your system, then follow the advice and procedures in this section.
+
 #### Before you turn on the version dimension
 
 When you turn on the version dimension, some functionality could become broken or stop working as expected if you've installed other solutions that add customizations to the inventory dimensions. For the version dimension to be fully functional, you might have to update those solutions so that they include the version dimension in their references to the inventory dimensions.
@@ -99,7 +101,7 @@ When you're testing your solutions for compatibility with the version dimension,
 
 #### Turn on the version dimension configuration key
 
-Before you can use the version dimension, its configuration key must be turned on for your system. This task requires admin permissions.
+Before you can use the version dimension, its configuration key must be turned on for your system. As of Supply Chain Management version 10.0.36, the key is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn the version dimension on or off, follow these steps. This task requires admin permissions.
 
 1. Put your system into [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
