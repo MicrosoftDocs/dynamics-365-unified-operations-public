@@ -957,7 +957,7 @@ After you have the network log, you can analyze the claims that are returned to 
     > ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
 
 1. Go to [JWT Decoder](https://jwt.ms).
-1. Paste the value of the **id_token** parameter into the **JWT Token** field. The value is automatically decoded.
+1. Paste the value of the **id_token** parameter into the **JWT** field. The value is automatically decoded.
 1. Review the results in the **Decoded Token and Claims** section, and follow these steps:
 
     - Make sure that the **upn** value matches the user name.
