@@ -4,11 +4,11 @@ description: Learn about the freight reconciliation process, including outlines 
 author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
-ms.date: 06/07/2024
+ms.date: 03/18/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge, TMSCarrierCodeLookup, DefaultDashboard
+ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge, TMSCarrierCodeLookup, DefaultDashboard, WHSLoadPlanningWorkbench, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ---
 
 # Reconcile freight in transportation management
@@ -91,9 +91,7 @@ If you choose to run automatic reconciliation, you must handle any invoices that
 
 To use automatic reconciliation, you must specify the schedule for reconciliation, and the invoices and shipping carriers to use. The automatic matching of the invoice lines and freight bills is done according to the setup of the audit master and freight bill type.
 
-### Set up automatic reconciliation
-
-#### Set up vendor invoice parameters
+### Set up vendor invoice parameters
 
 Go to **Transportation management** \> **Setup** \> **Transportation management parameters** \> **Vendor invoice** to enable automatic creation and/or posting of the vendor invoice journal during the automatic reconciliation process. Enable the parameter **Write vendor invoice journal** for the system to create an invoice journal to reconcile any differences between the freight bill and freight invoice. Enable the parameter **Post journal** for the system to also post this journal once it has been approved by the user defined in the **Workflow user** field.
 
@@ -101,11 +99,11 @@ Enable the parameter **Automatically match and pay the freight invoice** to run 
 
 The parameter **Match interval** defines the schedule for automatic reconciliation or matching. The minimum standard recommended setup is 120 seconds if enabling the *automatically match and pay* process.
 
-#### Set up billing groups
+### Set up billing groups
 
 Billing groups are user-defined categories that can be used to reflect the categories of charges present on the invoices you receive from carriers. These can be set up in  **Transportation management** \> **Setup** \> **Freight reconciliation** \> **Billing group** and require specifying a billing group ID and name, both of which are free-text fields.
 
-#### Set up the freight bill type
+### Set up the freight bill type
 
 The freight bill type defines how freight bills and carrier invoices should be matched. They define specific criteria that are mandatory and optional to be populated and match on freight bills and invoices for the auto matching process to consider them.
 
@@ -121,7 +119,7 @@ The freight bill type defines how freight bills and carrier invoices should be m
     - *No* – The value selected in the **Description** field can be blank on the freight bill or the carrier invoice.  
 1. Select **Save**.
 
-#### Set up the freight bill type assignment
+### Set up the freight bill type assignment
 
 The freight bill type assignment is used to specify which freight bill type is used for a particular carrier. It determines which freight bill type the system uses to determine the matching requirements when an invoice is received. Leave the *Site* and *Warehouse* fields blank if the carriers ship from or to multiple sites and warehouses within the same legal entity.
 
@@ -133,7 +131,7 @@ The freight bill type assignment is used to specify which freight bill type is u
 1. In the **Freight bill type** field, select the freight bill type that you created earlier.
 1. Close the page.
 
-#### Set up the audit master
+### Set up the audit master
 
 The audit master defines the tolerance limits for automatic freight reconciliation. It specifies by how much the monetary amounts on the freight bill and the carrier invoice can differ and still allow reconciliation to occur. It also defines how to handle discrepancies.
 
