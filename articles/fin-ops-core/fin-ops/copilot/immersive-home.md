@@ -63,6 +63,13 @@ Activity cards show:
 - Action buttons to complete the activity
 - Navigation link to the activity-related task or workspace
 
+> [!NOTE]
+> Activity cards include a feedback mechanism. 
+>
+> Users can share feedback about their experience managing activities in Immersive Home directly with Microsoft if an administrator enables user feedback for Copilot and related experiences. Learn more about how Microsoft's in-product feedback system works in [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control). 
+>
+>Learn more about how to enable user feedback for Copilot and related experiences in finance and operations apps in [**Enable enhanced user feedback for Copilot and related experiences**](/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot-feedback).
+  
 ## The Agent Activity area
 
 The agent activity area will be shown only if the use of AI agents has been enabled in the environment. For each activated agent it shows a section where the agent presents its key activity metrics. This could be the number of cases processed, email sent, or metrics such as estimated time saved for the user.
