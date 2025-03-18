@@ -31,17 +31,17 @@ The **Immersive Home** is aiming to become the  modern, AI-first landing page th
 
 The Immersive Home is composed using a new library of controls for adaptive experiences in Dynamics 365 business applications following the Fluent design patterns. Adaptive experiences aim not only to modernize user experiences but also to bring dynamic approaches that move away from static forms towards experiences that bring relevant work to the user.
 
-The first release of Immersive Home features Greeting and work summary, recommendations related to AI agents, and a center focus on work items. It also includes Agent activity overviews and a ranked view of spaces, initially the classic Workspaces in Finance and Operations.
+The first release of Immersive Home features Greeting and work summary, suggestions related to AI agents, and a center focus on work items. It also includes Agent activity overviews and a ranked view of spaces, initially the classic Workspaces in Finance and Operations.
 
 ## Greeting and summary
 
-The greeting at the top of the page welcomes the user by name and provides a concise summary of relevant work items and recommendations to address. This helps the user to get a quick overview of the immediate tasks at hand.  
+The greeting at the top of the page welcomes the user by name and provides a concise summary of relevant work items and suggestions to address. This helps the user to get a quick overview of the immediate tasks at hand.  
 
-## Recommendation area
+## Suggestions area
 
-The recommendation area presents relevant callouts to the users, such as taking an agent skill into service in a specific user task or provide additional instructions to make the agent's service in a task more beneficial.
+The suggestion area presents relevant callouts to the users, such as taking an agent skill into service in a specific user task or provide additional instructions to make the agent's service in a task more beneficial.
 
-Each recommendation typically provides an action that guides the user to follow the recommendation and take the necessary steps.
+Each suggestion typically provides an action that guides the user to follow the suggestion and take the necessary steps.
 
 ## The Work items area
 
