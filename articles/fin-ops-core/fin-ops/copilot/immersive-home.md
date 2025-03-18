@@ -21,7 +21,7 @@ ms.collection:
 This articles describes the Immersive Home, how it helps you work hand in hand with AI agents and stay focused on the most important work items assigned to you.
 
 > [!NOTE]
-> The Immersive Home is being added in the **10.0.44 release in public preview**. To enable Immersive Home navigate to the Feature Management workspace, and enable the feature **'Immersive Home'**.  
+> The Immersive Home is being added in the **10.0.45 release in public preview**. To enable Immersive Home navigate to the Feature Management workspace, and enable the feature **'Immersive Home'**.  
 
 The **Immersive Home** is aiming to become the  modern, AI-first landing page that adapts to user’s most important work, aids the decision making, and reduces the need to navigate elsewhere to complete common tasks. It is a modern option for the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) in finance and operations apps, which gives access to enabling, monitoring, teaching and interacting with AI agents.
 
