@@ -43,6 +43,8 @@ If you're reconciling freight manually, match each invoice line with the freight
 
 :::image type="content" source="media/processflowforfreightreconciliation.jpg" alt-text="Freight reconciliation tasks." lightbox="media/processflowforfreightreconciliation.jpg":::
 
+## Reconcile freight manually
+
 ### Select a load to reconcile
 
 1. Go to one of the following pages, depending on whether you are reconciling an inbound or outbound load:

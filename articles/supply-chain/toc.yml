@@ -3561,10 +3561,6 @@
             href: transportation/tasks/register-driver-check-check-out-appointment.md
       - name: Reconcile freight
         items:
-        - name: Set up automatic freight reconciliation
-          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-        - name: Reconcile freight manually
-          href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
     - name: Landed cost
