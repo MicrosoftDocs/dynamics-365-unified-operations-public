@@ -331,9 +331,9 @@
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic invoicing for Saudi Arabia
-              href: ../finance/localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Setup direct integration of Italian FatturaPA with SDI
-              href: ../finance/localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Use the electronic invoicing service to import vendor invoices
               href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing
@@ -2243,7 +2243,7 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Unified pricing management (preview)
+    - name: Unified pricing management
       items:
       - name: Unified pricing management module overview
         href: unified-pricing-management/upm-pricing-management-overview.md
@@ -2465,7 +2465,7 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
-      - name: Integrate with contract lifecycle management systems (preview)
+      - name: Integrate with contract lifecycle management systems
         items:
         - name: Contract lifecycle management integration overview
           href: procurement/contract-lifecycle-management/clm-overview.md
@@ -2795,7 +2795,7 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
-          - name: Register and track batch/serial numbers for finished products and their components (preview)
+          - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
@@ -2971,7 +2971,7 @@
             href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Register and track batch/serial numbers for finished products and their components (preview)
+          - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Production feedback
             href: production-control/production-feedback.md
@@ -3563,6 +3563,8 @@
         items:
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
+        - name: Vendor invoice journal creation when discarding freight bills
+          href: transportation/vendor-invoice-journal-creation-when-discarding-freight-bills.md
     - name: Landed cost
       items:
       - name: Landed cost module overview
@@ -3673,6 +3675,8 @@
           href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse
           href: warehousing/release-to-warehouse-process.md
+        - name: Restrict to sales unit
+          href: warehousing/restrict-to-sales-unit.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
@@ -3735,6 +3739,8 @@
             href: warehousing/manual-order-line-picking-exception-handling.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
+          - name: Serial number capturing
+            href: warehousing/serial-number-capturing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -3895,6 +3901,8 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for license plate build in the warehouse 
+            href: warehousing/license-plate-build.md
           - name: Set up a mobile device menu item for moving items in the warehouse
             href: warehousing/mobile-device-movement-menu.md
           - name: Set up a mobile device menu item for moving items by template
@@ -4023,6 +4031,10 @@
           href: warehousing/transfer-orders-warehouse.md
         - name: View and manage the work exceptions log
           href: warehousing/work-exceptions-log.md
+        - name: User-configurable queries in warehouse management
+          href: warehousing/user-configurable-queries-in-warehouse-management.md
+        - name: Data entity support for user-configurable queries in warehouse management
+          href: warehousing/data-entity-support-for-user-configurable-queries-in-warehouse-management.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes

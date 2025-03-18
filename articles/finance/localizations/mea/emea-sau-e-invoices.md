@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.21
 
 According to Saudi Arabian legal requirements, invoices that are issued to customers must be generated in an electronic format. To generate electronic invoices, the following two-part system configuration is required.
 
-- **Electronic invoicing service** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md).
+- **Electronic invoicing service** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](gs-e-invoicing-sa-get-started.md).
 - **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
@@ -164,6 +164,6 @@ When you've completed all the required configuration steps, you can generate ele
 
 ## Related topics
 
-- [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md)
+- [Get started with the Electronic invoicing add-in for Saudi Arabia](gs-e-invoicing-sa-get-started.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

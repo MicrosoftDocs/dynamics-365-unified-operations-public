@@ -105,6 +105,9 @@ To configure your system to use the Planning Optimization Add-in for master plan
     - *No* – The deprecated master planning engine is used for master planning for all companies.
 
 > [!NOTE]
+> Starting in Supply Chain Management version 10.0.41, the deprecated master planning engine is unavailable for all new deployments. There is no manual way to enable the deprecated master planning engine for these environments. Learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md).
+
+> [!IMPORTANT]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

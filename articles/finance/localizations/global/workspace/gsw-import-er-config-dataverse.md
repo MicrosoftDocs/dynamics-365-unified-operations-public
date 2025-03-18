@@ -4,7 +4,7 @@ description: Learn how to import Electronic reporting (ER) configurations from M
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 11/06/2024
+ms.date: 03/13/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -47,6 +47,9 @@ You can import the Globalization solution by following these steps.
 ## Import configurations from Dataverse
 
 A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Dataverse enables. Therefore, you can import single and filtered configurations.
+
+> [!NOTE]
+> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39, however, it may be disabled in your environment.
 
 ### Open the Dataverse configuration repository
 
