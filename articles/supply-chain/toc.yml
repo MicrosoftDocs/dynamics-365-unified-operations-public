@@ -3085,6 +3085,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Create a sales order using copy from all
+          href: sales-marketing/tasks/create-sales-order-using-copy.md
         - name: Calculate sales totals when prices include sales tax
           href: sales-marketing/sales-tax-calculation.md
         - name: Manage order holds
