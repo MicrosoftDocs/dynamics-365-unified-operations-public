@@ -1,6 +1,6 @@
 ---
 title: Issue customer fiscal documents (fixed assets) (Brazil)
-description: This article describes how to issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
+description: This article describes how to issue a fiscal document for a customer who bought a fixed asset from a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
@@ -16,9 +16,9 @@ ms.search.validFrom: 2016-06-30
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
+This article describes how to issue a fiscal document for a customer who bought a fixed asset from a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 
-You can issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment. In this case, the fiscal document is issued from the free text invoice. 
+You can issue a fiscal document for a customer who bought a fixed asset from a fiscal establishment. In this case, the fiscal document is issued from the free text invoice. 
 
 The following procedure uses the BRMF demo company.
 
