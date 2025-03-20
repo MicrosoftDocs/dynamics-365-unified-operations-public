@@ -11,66 +11,62 @@ manager:
 
 # Production dispensing
 
-Production dispensing is a feature designed to meet regulated and controlled requirements for dispensing ingredients and materials in production processes, commonly found in industries such as life sciences and pharmaceuticals. It includes support for
+Production dispensing meets regulated and controlled requirements for dispensing ingredients and materials in production processes commonly found in industries such as life sciences and pharmaceuticals. It includes support for
 
-* Identifying products with special dispensing requirements.
-* Ensuring secure separation between material picking activities and product dispensing, as dispensing often needs to occur in highly regulated and restricted areas, such as clean rooms.
-* Restricting dispensing activities to authorized personnel.
-* Setting up rules for dispensed products, including thresholds for over- and under-dispensing.
-* Configuring confirmation of dispensing activities with an electronic signature.
+- Identifying products with special dispensing requirements.
+- Ensuring secure separation between material picking activities and product dispensing, as dispensing often needs to occur in highly regulated and restricted areas, such as clean rooms.
+- Restricting dispensing activities to authorized personnel.
+- Setting up rules for dispensed products, including thresholds for over- and under-dispensing.
+- Configuring confirmation of dispensing activities with an electronic signature.
 
-## Enable Production dispensing
+## Set up a dispense pick journal
 
-You set up **Production dispensing** in the **Production control** or **Production control by site** parameters. Use the following path
-
-- **Production control > Setup > Production control parameters > Tab: Standard update > Group: Dispensing** or **Production control > Setup > Production control parameters by site > Tab: Standard update > Group: Dispensing** 
-
-Under the field group **Dispensing** you will find following two parameters
-
-* **Enable dispensing for production** - Select to enable using production dispensing in a production flow.
-
-* **Allow over-dispensing with reverse pick** - Select to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list. 
-* 
-## Setup a dispense pick journal
-
-First, create a journal name for dispensing
+A journal is used for dispensing materials to production and batch orders. You must set up at least one journal for this purpose. 
 
 1. Go to **Production control > Setup > Production journal names**
-1. Select **New** to create a new journal name for dispensing
-1. Fill out following information
-    1. - **Name** and **Description
-    1. Select field **Dispensing ticket**
+1. Select **New** to create a new journal name for dispensing.
+1. Enter **Name** and **Description**.
+1. Leave the all other settings at their default values.
 
-Make the new journal name for dispensing as the default journal name for dispensing activities
 
-1. Go to **Production control > Setup > Production control parameters > Tab: Journals > Field group: Default journal names**
-1. In the field **Dispensing ticket**, select the default journal name for dispensing activities.
+## Enable and configure production dispensing
 
+You must turn on the feature and make basic global configuration.
+
+1. Go to **Production control > Setup > Production control parameters** 
+1. Open the **Standard update** tab
+1. Make the following settings:
+    - **Enable dispensing for production** - Set to *Yes* to enable using production dispensing in a production flow.
+    - **Allow over-dispensing with reverse pick** - Set to *Yes* to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list.
+1. Open the **Journals** tab and make the following setting
+    - **Dispensing ticket** - Select the journal name you created. This will be the default journal for dispensed products.
+ 
 ## Set up a product for the dispensing process
 
-On the definition of the released products, you will find following settings for production dispensing
+To use a dispensing process, you must configure dispensing options for each relevant product. 
 
-Go to **Product information management > Products > Released products > FastTab: Manage inventory > Field group: Dispensing**
-- **Dispensing control** - Select this option to enable dispensing control for the product.
-- **Under dispensing** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity.
-- **Over dispensing** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity.
-- **Authorized personnel** - Indication that only authorized personnel can do production dispensing.
-- 
-## Set up on BOM and Formula lines 
+1. Go to **Product information management > Products > Released products**
+1. Open a product that you want to set up for dispensing.
+1. Expand the **Manage inventory** FastTab.
+1. From the **Dispensing**Field group make the following settings: 
+    - **Dispensing control** - Select this option to enable dispensing control for the product.
+    - **Under dispensing** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity.
+    - **Over dispensing** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity.
+    - **Authorized personnel** - Indication that only authorized personnel can do production dispensing.
+    - 
+## Set up on BOM and Formula lines for the dispensing process 
 
 On BOM and Formula lines you can override the thresholds for over- and under dispensing from the product.
 
-Use the following procedure to override the thresholds
-
 1. Go to **Product information management > Products > Released products**
 1. Select a product that is defined for batch production.
-1. In the toolbar under the **Engineering** tab, select the **Formula versions**
+1. In the toolbar under the **Engineering** tab, select the **Formula versions**.
 1. In the **Formula versions** page, under the **Formulas** tab select **Formula** to open the **Formula** page.
-1. Expand the **Lines details** FastTab and select the tab **Setup**
+1. Expand the **Lines details** FastTab and select the tab **Setup**.
 1. Under the **Dispensing** field group find the following parameters
-- **Allow over-dispensing with reverse pick** - ??
-- **Overdispense** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. The value will override the value specified in the same field on the release products. 
-- **Underdispense** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity. The value will override the value specified in the same field on the release products.
+    - **Allow over-dispensing with reverse pick** - ??
+    - **Overdispense** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. The value will override the value specified in the same field on the release products. 
+    - **Underdispense** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity. The value will override the value specified in the same field on the release products.
 
 
 If the Picking list is created at Release, the user will still have to go through the Start process on the batch or production orders. Upon Starting the order, the user will have to select the Dispensing ticket journal name and select Never as the Automatic BOM consumption; if not, the Picking journal will be created again.
