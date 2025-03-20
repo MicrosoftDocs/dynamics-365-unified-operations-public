@@ -2001,7 +2001,7 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
-          - name: Continue to use deprecated master planning for some companies
+          - name: Continue to use deprecated master planning with existing companies
             href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
@@ -3561,10 +3561,6 @@
             href: transportation/tasks/register-driver-check-check-out-appointment.md
       - name: Reconcile freight
         items:
-        - name: Set up automatic freight reconciliation
-          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-        - name: Reconcile freight manually
-          href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
         - name: Vendor invoice journal creation when discarding freight bills
