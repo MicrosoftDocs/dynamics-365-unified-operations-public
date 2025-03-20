@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 03/12/2025
 ms.custom: 
   - bap-template
 ---
@@ -39,193 +39,8 @@ For a given business process, the quality association record identifies the even
 
 To work with quality associations, go to **Inventory management \> Setup \> Quality control \> Quality associations**. The following examples show how a quality association record is defined for the variations in each business process. For each example, the following table summarizes the events and conditions that are defined by a quality association record.
 
-<!-- KFM: I think we need to add the new triggering events to this table (sales return and transfer order). Is that all we need to do for this functionality? BTW, I'm not sure this table helps very much. The UI shows what our options are. I think maybe all we need is a simple bullet list of the supported reference types, maybe also with event types specified. It would make this topic much easier to overview without this big table in the way. -->
+<!-- Johanho: Add a prerequsite section and also a list of association types -->
 
-<table>
-<thead>
-<tr>
-<th>Reference type</th>
-<th>Event type</th>
-<th>Execution</th>
-<th>Event blocking</th>
-<th>Document reference</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Inventory</td>
-<td>Not applicable</td>
-<td>Not applicable</td>
-<td>None</td>
-<td>All</td>
-</tr>
-<tr>
-<td rowspan="7">Sales</td>
-<td rowspan="4">Picking process is scheduled</td>
-<td rowspan="4">Before</td>
-<td>None</td>
-<td rowspan="22">Specific ID, Group, or All only</td>
-</tr>
-<tr>
-<td>Picking process</td>
-</tr>
-<tr>
-<td>Packing slip</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td rowspan="3">Packing slip</td>
-<td rowspan="3">Before</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Packing slip</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td rowspan="15">Purchase</td>
-<td rowspan="7">Receipt list</td>
-<td rowspan="4">Before</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Receipt list</td>
-</tr>
-<tr>
-<td>Product receipt</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td rowspan="3">After</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Product receipt</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td rowspan="3">Registration</td>
-<td rowspan="3">Not applicable</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Product receipt</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td rowspan="5">Product receipt</td>
-<td rowspan="3">Before</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Product receipt</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td rowspan="2">After</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Invoice</td>
-</tr>
-<tr>
-<td>Inbound shipment order</td>
-<td>Registration</td>
-<td>Not applicable</td>
-<td>None</td>
-<td>Specific ID, Group, or All only</td>
-</tr>
-<tr>
-<td rowspan="8">Production</td>
-<td rowspan="3">Registration</td>
-<td rowspan="3">Not applicable</td>
-<td>None</td>
-<td rowspan="12">All</td>
-</tr>
-<tr>
-<td>Report as finished</td>
-</tr>
-<tr>
-<td>End</td>
-</tr>
-<tr>
-<td rowspan="5">Report as finished</td>
-<td rowspan="3">Before</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Report as finished</td>
-</tr>
-<tr>
-<td>End</td>
-</tr>
-<tr>
-<td rowspan="2">After</td>
-<td>None</td>
-</tr>
-<tr>
-<td>End</td>
-</tr>
-<tr>
-<td rowspan="4">Quarantine</td>
-<td rowspan="3">Report as finished</td>
-<td rowspan="2">Before</td>
-<td>Report as finished</td>
-</tr>
-<tr>
-<td>End</td>
-</tr>
-<tr>
-<td>After</td>
-<td>End</td>
-</tr>
-<tr>
-<td>End</td>
-<td>Before</td>
-<td>End</td>
-</tr>
-<tr>
-<td rowspan="3">Route operation</td>
-<td rowspan="3">Report as finished</td>
-<td rowspan="2">Before</td>
-<td>None</td>
-<td rowspan="3">Specific ID, Group, or All, and specific Resource, Group, or All</td>
-</tr>
-<tr>
-<td>Report as finished</td>
-</tr>
-<tr>
-<td>After</td>
-<td>None</td>
-</tr>
-<tr>
-<td rowspan="3">Co-product production</td>
-<td>Registration</td>
-<td>Not applicable</td>
-<td rowspan="3">None</td>
-<td rowspan="3">All</td>
-</tr>
-<tr>
-<td rowspan="2">Report as finished</td>
-<td>Before</td>
-</tr>
-<tr>
-<td>After</td>
-</tr>
-</tbody>
-</table>
 
 > [!NOTE]
 > The *Quality management for warehouse processes* feature adds capabilities for quality order processing for production where the **Event type** field is set to *Report as finished* and the **Execution** field is set to *After*, and for purchases where the **Event type** field is set to *Registration*. Learn more in [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
@@ -243,6 +58,8 @@ The following table provides more information about how quality orders can be ge
 | Production order | Before or after the finished quantity for the production order is reported | After the finished quantity for the production order is reported | The requirement for a quality order can reflect a specific site or item, or a combination of these conditions. | A manually generated quality order that refers to a production order can use information in a quality association record, such as the test sampling plan. |
 | Production order that has a route operation | Before or after the report is finished for an operation | After the reporting production is finished for the last operation | The requirement for a quality order can reflect a specific site, item, or operations resource, or a combination of these conditions. | A manually generated quality order that refers to a route operation can use information in a quality association record, such as the test sampling plan. |
 | Inventory | A quality order can't be automatically generated for a transaction in an inventory journal or for transfer order transactions. |  |  | A quality order must be manually created for an item's inventory quantity. Physical on-hand inventory is required. |
+| Sales return | A quality order is generated when the packing slip on the sales return order is posted. | After the product receipt for the material that is received is posted, because the material must be available for destructive testing. | Before the packing slip is posted on the return order, the quantity on the return line must be registered. You do that from the Update line menu where you select Registration. This will open the Assign disposition code menu, where you must select one of the appicable disposition codes from the drop down. The chosen disposition code must be setup to search for an applicable quality association. This is enabled by setting the Check for quality association check mark in on the definition of the disposition code. | |
+| Transfer order | There are three options for generating a quality order. When you do the picking, when you ship the product, or when you recieve it. | After registration of the receipt of the material, because the material must be available for destructive testing. | | |
 
 > [!NOTE]
 > When you filter quality associations for the *Inbound shipment order* reference type, and the **Account code** value is *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
@@ -250,6 +67,11 @@ The following table provides more information about how quality orders can be ge
 <!-- KFM: Maybe add a section here about adding an assigned worker and/or quality order priority. We may need a topic about how to set up the priority values. Explain more about what happens when a worker is assigned; is it just a field on the quality order or is there an email and/or other notification?  -->
 
 <!-- KFM: Add a section here about **Check for quality association** option for disposition codes. -->
+
+
+## Quality associations and flexible sampling plans
+
+Instead of selecting a fixed **Test group** and **Item sampling** you can set up a flexible sampling plan, which is a test strategy that based on successful test validation allows you to change both test and sample sizes over times. To use **Flexible sampling** in the **Specification** FastTab, select **Flexible sampling** and then a **Flexible sampling plan code**. Learn more about how to set up **Flexible sampling plans** here: [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md)
 
 
 ## Examples of automatic generation of quality orders
