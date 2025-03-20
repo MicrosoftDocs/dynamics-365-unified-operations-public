@@ -34,7 +34,7 @@ To create and post tax adjustment transactions, follow these steps.
 1. In the **Adjustment type** field, select an option.
 1. In the **Adjustment code** field, enter or select a value.
 1. In the **Description** field, enter or select a value.
-1. In the **Amou**nt** field, enter a number.
+1. In the **Amount** field, enter a number.
 1. Select **Post**.
 1. Close the page.
 1. Go to **Financial books \> Common \> Tax assessment \> ICMS**.
