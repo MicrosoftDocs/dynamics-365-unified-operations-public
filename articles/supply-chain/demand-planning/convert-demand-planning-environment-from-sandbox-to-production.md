@@ -25,7 +25,7 @@ Although the process for environment conversion is the same for every Microsoft 
 
 ### Remove sandbox connections
 
-After you convert a Demand planning environment from sandbox to production, the environment can no longer connect to its sandbox sources of data, including the previous instance of Dynamics 365 Supply Chain Management or Power Query tables. This behavior makes sense from a security standpoint, because it prevents accidental leakage of production data. However, one result is that some of your configurations, such as import or export profiles, no longer work as you expect. Therefore, you should delete all existing import and export profiles before you convert the environment to production. Then re-create them after the conversion is completed. Configure the new profiles so that they point to production sources of data.
+After you convert a Demand planning environment from sandbox to production, the environment can no longer connect to its sandbox sources of data. (Those sources include the previous instance of Dynamics 365 Supply Chain Management and Power Query tables.) This behavior makes sense from a security standpoint, because it prevents accidental leakage of production data. However, one result is that some of your configurations, such as import or export profiles, no longer work as you expect. Therefore, you should delete all existing import and export profiles before you convert the environment to production. Then re-create them after the conversion is completed. Configure the new profiles so that they point to production sources of data.
 
 To delete import and export profiles, follow these steps.
 
