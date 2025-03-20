@@ -50,7 +50,7 @@ Some of the key industry-specific capabilities of the solution are:
 
 - **Electronic Batch Record (EBR)** – This feature enables users to view all the versions, methods, and characteristics for consumed BOM and Formula items. This is referred to as a Master Manufacturing Record that maintains all the methods that could be utilized to produce the item. This feature also allows users to view and print reports of the actual versions, test values, attribute values, quality order results of all the items produced and the ingredients consumed. This is referred to as a Batch Production Record that captures the actual version and methods used to produce the item.
 
-- **Instrument calibration** – This new feature adds capability around tracking individual test instrument tags, supports an on-going calibration process for the instrument tag and tracks usage of given tags against the quality order tests.
+- **Instrument calibration** – This new feature adds capability around tracking individual test instrument tags, supports an on-going calibration process for the instrument tag and tracks usage of given tags against the quality order tests. Learn more in [Instrument calibration](quality-management/ConvertedFromWord/instrument-calibration.md).
 
 - **Quality associations for return and transfer orders** – This feature enhances the capability of quality associations by offering the ability to automatically create quality orders triggered from a sales return or a transfer order. Learn more in [Quality associations](quality-associations.md).
 
