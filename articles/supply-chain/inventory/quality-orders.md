@@ -118,7 +118,7 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 If you use the **Landed cost** module, you can set up the system so that quality orders are automatically created when goods-in-transit orders are received. The quality control process can then be initiated for the goods-in-transit orders. This process ensures that products undergo stringent quality checks throughout transit. Therefore, it ensures that high-quality goods are received at the warehouse. During the quality control process, inventory from goods-in-transit orders can be blocked to prevent the shipment of defective products. This function is aligned with regulatory compliance and helps mitigate legal risks.
 
-To automatically create quality orders based on goods-in-transit orders, enable the *Enable Quality Control for Goods In-Transit Order* feature. For more information, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md). In addition, quality associations must be configured.
+To automatically create quality orders based on goods-in-transit orders, enable the *Enable Quality Control for Goods In-Transit Order* feature. For more information, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md). In addition, [quality associations](quality-associations.md) must be configured.
 
 To create quality orders for the received quantity only, set the **Per updated quantity** option to *Yes* on the **Item sampling** page (**Inventory management \> Setup \> Quality control \> Item sampling**).
 
