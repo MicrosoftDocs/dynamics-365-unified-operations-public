@@ -30,7 +30,7 @@ To create a tax assessment for the ICMS tax for a selected booking period, follo
 1. In the **Month** field, select an option.
 1. In the **Year** field, enter a number.
 1. Select **OK**.
-1. Select Sync.
+1. Select **Sync**.
 1. Select **OK**.
 1. Close the page.
 1. Go to **Fiscal books \> Common \> Tax assessment \> ICMS**.
@@ -44,7 +44,7 @@ To create a tax assessment for the ICMS tax for a selected booking period, follo
 1. In the list, mark the selected row.
 1. In the **Due date** field, enter a date.
 1. Expand the **General** section.
-1. In the**Authority** field, enter or select a value.
+1. In the **Authority** field, enter or select a value.
 1. Select **Post**.
 1. Close the page.
 
