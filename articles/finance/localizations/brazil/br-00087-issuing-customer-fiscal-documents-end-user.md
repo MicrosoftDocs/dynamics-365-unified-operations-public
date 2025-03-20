@@ -1,6 +1,6 @@
 ---
 title: Issue customer fiscal documents (for end users) (Brazil)
-description: This article describes how to issue a fiscal document to a customer who bought goods from the fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
+description: This article describes how to issue a fiscal document to a customer who bought goods from a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
@@ -16,9 +16,9 @@ ms.search.validFrom: 2016-06-30
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to issue a fiscal document to a customer who bought goods from the fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
+This article describes how to issue a fiscal document to a customer who bought goods from a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 
-You can issue a fiscal document to a customer who bought goods from the fiscal establishment. The calculation of the ICMS tax base amount considers the IPI tax amount. 
+You can issue a fiscal document to a customer who bought goods from a fiscal establishment. The calculation of the ICMS tax base amount considers the IPI tax amount. 
 
 The following procedure uses the BRMF demo company.
 
