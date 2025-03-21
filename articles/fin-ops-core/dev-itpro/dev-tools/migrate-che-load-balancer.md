@@ -1,6 +1,6 @@
 ---
 title: Migrate a CHE load balancer 
-description: Learn how to migrate a CHE load balancer.
+description: Learn how to migrate a CHE load balancer for existing CHE environments.
 author: pranavjani
 ms.author: pranavjani
 ms.topic: how-to 
@@ -22,7 +22,7 @@ On March 28, 2025, all new CHE environments are configured with a load balancer 
 
 ## Migrate existing CHE environments
 
-Before proceeding with migration, it's crucial to ensure that you the necessary permissions and contributor access to the subscription. This allows you to upgrade the load balancer without encountering any permission-related issues. Once you verify your access, you can proceed with setting the required variables and executing the migration commands.
+Before proceeding with migration, it's crucial to ensure that you have the necessary permissions and contributor access to the subscription. This access allows you to upgrade the load balancer without encountering any permission-related issues. Once you verify your access, you can proceed with setting the required variables and executing the migration commands.
 
 To migrate existing CHE environments, follow these steps.
 
@@ -58,7 +58,7 @@ To migrate existing CHE environments, follow these steps.
    $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name $backendPoolName
    ```
  
-1. Connect the NIC (network interface card) with the backend pool to link all virtual machines (VM) to the standard load balancer.
+1. To link all virtual machines (VM) to the standard load balancer, connect the NIC (network interface card) with the backend pool.
 
    ```powershell
    $nic = Get-AzNetworkInterface -ResourceGroupName $resourceGroupName
