@@ -18,7 +18,7 @@ This article describes the *Packing* work order type, which manages work for pac
 Packing work is automatically created when inventory that is related to source document work is put in locations of the *Packing location* type. The work consists of two lines, one for *Pick* and one for *Put*, and is automatically maintained as part of a container close/reopen process.
 
 > [!NOTE]
-> The intention behind the packing work is that it should be automatically maintained by the system and not directly by the user. Therefore, some fields, like the **User ID**, might not be populated as for other work order types.
+> Packing work is usually maintained automatically by the system rather than directly by a user. Therefore, some fields (such as **User ID**) might not be populated like they are for other work order types.
 
 For more information about how to set up and use the container packing process, see [Pack containers for shipment](packing-containers.md).
 
