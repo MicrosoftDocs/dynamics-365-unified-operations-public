@@ -58,7 +58,7 @@ To migrate existing CHE environments, follow these steps.
    $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name $backendPoolName
    ```
  
-1. To link all virtual machines (VM) to the standard load balancer, connect the NIC (network interface card) with the backend pool.
+1. Link all virtual machines (VM) to the standard load balancer, connect the NIC (network interface card) with the backend pool.
 
    ```powershell
    $nic = Get-AzNetworkInterface -ResourceGroupName $resourceGroupName
