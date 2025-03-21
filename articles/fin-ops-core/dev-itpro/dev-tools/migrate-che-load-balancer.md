@@ -1,6 +1,6 @@
 ---
 title: Migrate a CHE load balancer 
-description: 
+description: Learn how to migrate a CHE load balancer.
 author: pranavjani
 ms.author: pranavjani
 ms.topic: how-to 
@@ -12,19 +12,19 @@ ms.reviewer: johnmichalak
 
 # Migrate a CHE load balancer
 
-Azure has announced the retirement of classic load balancers. To ensure the continued provisioning of CHE environments, we have implemented following actions:
+Microsoft Azure announced the retirement of classic load balancers. To ensure the continued provisioning of CHE environments, Microsoft has implemented provisioning for new CHE environments, and migrating existing CHE environments.
 
-## Provisioning for New CHE Environments
+## Provision new CHE environments
 
-Starting from March 28th, 2025, all new CHE environments will be configured with load balancer and public IP address utilizing the standard SKU. This transition also helps to enhance the performance and reliability of our cloud infrastructure.
+On March 28, 2025, all new CHE environments are configured with a load balancer and public IP address that utilizes the standard SKU. This transition helps enhance the performance and reliability of our cloud infrastructure.
 
 ## Migrate existing CHE environments
 
-Before proceeding with the migration, it is crucial to ensure that you have the necessary permissions and contributor access to the subscription. This will allow you to upgrade the load balancer without encountering any permission-related issues. Once you have verified your access, you can proceed with setting the required variables and executing the migration commands.
+Before proceeding with migration, it's crucial to ensure that you have the necessary permissions and contributor access to the subscription. This allows you to upgrade the load balancer without encountering any permission-related issues. Once you verify your access, you can proceed with setting the required variables and executing the migration commands.
 
 To migrate existing CHE environments, follow these steps.
 
-1. Set  subscription id, resource group, and load balancer name variables
+1. Set  subscription ID, resource group, and load balancer name variables
 
    ```powershell
    $resourceGroupName = “<resourcegroup-name>”
@@ -33,13 +33,13 @@ To migrate existing CHE environments, follow these steps.
                     $outboundRuleName= "http-outbound-rule"
                     $backendPoolName = "vm-backend-pool"
    ```
-1. Ensure you have selected the correct subscription ID associated with the Basic Load Balancer by executing the following command:
+1. Ensure you have selected the correct subscription ID associated with the Basic Load Balancer by running the following command:
 
    ```powershell
    Select-AzSubscription –Subscription $subscriptionId
    ```
 
-1. Execute the following commands to initiate the load balancer migration. This command will Install the load balancer upgrade module and upgrades the basic load balancer and IP address to the standard SKU.
+1. Run the following commands to initiate the load balancer migration. This command installs the load balancer upgrade module, and upgrades the basic load balancer and IP address to the standard SKU.
 
    ```powershell
    Install-Module -Name AzureBasicLoadBalancerUpgrade -Scope CurrentUser -   Repository PSGallery -Force
@@ -47,7 +47,7 @@ To migrate existing CHE environments, follow these steps.
    ```
 
    > [!NOTE]
-   > The Basic Load Balancer supports outbound traffic by default, allowing seamless internet access for your virtual machines. However, the Standard SKU Load Balancers do not automatically permit outbound access for backend pool members. Therefore, you need to take additional steps to enable this critical functionality and ensure that your virtual machines can communicate with the internet for updates, data transfer, and other essential operations:
+   > The Basic Load Balancer supports outbound traffic by default, allowing seamless internet access for your virtual machines. However, the standard SKU load balancers don't automatically permit outbound access for backend pool members. Therefore, you need to take additional steps to enable this critical functionality and ensure that your virtual machines can communicate with the internet for updates, data transfer, and other essential operations:
 
 1. Create the backend pool.
 
@@ -56,7 +56,7 @@ To migrate existing CHE environments, follow these steps.
    $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name $backendPoolName
    ```
  
-1. Connect the NIC (network interface) with the backend pool to link all VMs to the Standard Load Balancer.
+1. Connect the NIC (network interface card) with the backend pool to link all virtual machines (VM) to the standard load balancer.
 
    ```powershell
    $nic = Get-AzNetworkInterface -ResourceGroupName $resourceGroupName
@@ -76,10 +76,12 @@ To migrate existing CHE environments, follow these steps.
    Set-AzNetworkInterface -NetworkInterface $nic
    ```
 
-Backend Pool should be created with following configurations:
+The backend oool should be created with following configurations:
+
   
-## Notes
-- If any of the above commands fail or encounter issues during execution, please refer to this comprehensive guide: [Upgrade a basic load balancer with PowerShell](/azure/load-balancer/upgrade-basic-standard-with-powershell).
-- For customers having multiple CHE environments, please ensure the successful migration of one of the CHE environments before proceeding with bulk migrations.
-- Learn about Standard sku load balancer related pricing in [Load Balancing pricing](https://azure.microsoft.com/en-in/pricing/details/load-balancer).
+## More information
+
+- If any of the above commands fail or encounter an issue, refer to this comprehensive guide: [Upgrade a basic load balancer with PowerShell](/azure/load-balancer/upgrade-basic-standard-with-powershell).
+- For customers with multiple CHE environments, ensure the successful migration of one of the CHE environments before proceeding with bulk migrations.
+- Learn about standard sku load balancer pricing in [Load Balancing pricing](https://azure.microsoft.com/pricing/details/load-balancer).
 
