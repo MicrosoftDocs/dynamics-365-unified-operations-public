@@ -45,7 +45,7 @@ Information about on-hand inventory is stored separately for each level in the r
 The following illustration shows the data model for the setup of a reservation hierarchy and its relation to the 
 inventTable table.
 
-:::image type="content" source="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png" alt-text="Setup of reservation hierarchies":::
+:::image type="content" source="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png" alt-text="Setup of reservation hierarchies" lightbox="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png":::
 
 The definitions of reservation hierarchies are stored in the WHSReservationHierarchy and WHSReservationHierarchyElement tables.These are shared tables. A reservation hierarchy can be associated with one item within a company.
 
@@ -166,7 +166,7 @@ The **InventAvailabilityProvider** class provides numerous other APIs that are u
 
 The following illustration shows the various classes and interfaces that are used to provide and encapsulate the calculations. Note that, for the sake of simplicity, some details have been omitted.
 
-:::image type="content" source="media/inventory-reservation-hierarchies-encapsulations.png" alt-text="Encapsulation of the calculations":::
+:::image type="content" source="media/inventory-reservation-hierarchies-encapsulations.png" alt-text="Encapsulation of the calculations" lightbox="media/inventory-reservation-hierarchies-encapsulations.png":::
 
 ## <a name="reservation-strategies"></a>Reservation strategies
 
