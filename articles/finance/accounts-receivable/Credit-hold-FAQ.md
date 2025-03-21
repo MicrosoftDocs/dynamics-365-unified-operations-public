@@ -61,4 +61,4 @@ Sales orders are blocked if blocking rules and credit management checkpoints are
 
 ### Credit management check skipped for intercompany sales orders 
 
-Starting in Dynamics 365 Finance version 10.0.43, if the **Intercompany sales order exclusion from credit management** feature is enabled, the blocking rules for the legal entity of the intercompany sales order is skipped. The **Exclude from credit management** is enabled by default on the sales order header for intercompany sales order. If you want to enforce credit limit checks for specific orders, disable the exclusion property. 
+Starting in Dynamics 365 Finance version 10.0.43, if the **Intercompany sales order exclusion from credit management** feature is enabled, the blocking rules for the legal entity of the intercompany sales order are skipped. The **Exclude from credit management** is enabled by default on the sales order header for intercompany sales order. If you want to enforce credit limit checks for specific orders, disable the exclusion property. 
