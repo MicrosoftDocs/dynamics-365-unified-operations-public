@@ -31,7 +31,28 @@ A journal is used for dispensing materials to production and batch orders. You m
 
 ## Enable and configure production dispensing
 
-You must turn on the feature and make basic global configuration.
+You must turn on the feature and make basic configuration. 
+
+### Set up workers who are authorized for production dispensing
+
+To restrict the dispensing process to specific workers follow these steps
+
+1. 
+
+### Set up a measuring device
+
+To set up a **Measuring device** follow theses steps.
+
+1. Go to **Inventory management > Setup > Quality control > Measuring devices**
+1. Select **New** and fill out following information
+    - **Measuring device** - Identification of the measuring device used in the dispensing process.
+    - **Description**- Description of the device.
+    - **Test instrument tag** - Select a tag define for the test instrument. Read more about **Test instrument tags** and **Test instrument calibration** here: <!-- TO-DO: JOHANHO Insert link to instrument calibration- :  -->
+
+[!NOTE] - The **Measuring device** you define only serves as information about the name of the device you will be using in the dispense process. 
+
+
+### Required set up in the production control parameters
 
 1. Go to **Production control > Setup > Production control parameters** 
 1. Open the **Standard update** tab
@@ -40,10 +61,14 @@ You must turn on the feature and make basic global configuration.
     - **Allow over-dispensing with reverse pick** - Set to *Yes* to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list.
 1. Open the **Journals** tab and make the following setting
     - **Dispensing ticket** - Select the journal name you created. This will be the default journal for dispensed products.
+1. Open the **General** tab to make the following setting
+    - **Default measuring device** - In the drop down, select the measuring device that should be defaulted in the **Dispense ticket** page.
  
-## Set up a product for the dispensing process
+### Set up a product for the dispensing process
 
 To use a dispensing process, you must configure dispensing options for each relevant product. 
+
+[!NOTE] - Only products enabled for the advanced processes can enabled for the dispensing process.
 
 1. Go to **Product information management > Products > Released products**
 1. Open a product that you want to set up for dispensing.
@@ -53,8 +78,8 @@ To use a dispensing process, you must configure dispensing options for each rele
     - **Under dispensing** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity.
     - **Over dispensing** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity.
     - **Authorized personnel** - Indication that only authorized personnel can do production dispensing.
-    - 
-## Set up on BOM and Formula lines for the dispensing process 
+   
+### Set up on BOM and Formula lines for the dispensing process 
 
 On BOM and Formula lines you can override the thresholds for over- and under dispensing from the product.
 
@@ -72,6 +97,35 @@ On BOM and Formula lines you can override the thresholds for over- and under dis
 If the Picking list is created at Release, the user will still have to go through the Start process on the batch or production orders. Upon Starting the order, the user will have to select the Dispensing ticket journal name and select Never as the Automatic BOM consumption; if not, the Picking journal will be created again.
 
 ## Using Production Dispensing
+
+
+
+Use the following procedure to create a production or batch order where the dispensing process is used.
+
+1. Go to **Production control > Production orders > All production orders** 
+1. To create a new order select **New production order** or **New batch order** from the toolbar. 
+1. In the dialog, select a product with a BOM or Formula that has at least on product enabled for dispensing.
+1. Select **Create** to confirm the creation of the order and then select **Estimate** to bring the order in the estimated state.
+1. In the toolbar, select **Estimate** and confirm the dialog.
+1. In the toolbar, select **Release**. 
+1. In the **Release dialog** select the **General** tab.
+1. In the **Picking list journal section** make the following selections
+    - **Picking list** - Select a picking list from the drop down.
+    - **Dispensing ticket** - Select a dispensing ticket from the drop down.
+ [!NOTE] - You can set up the journals names to default in **Default values** dialog.   
+1. Select **OK** in the release dialog to confirm the release step for the order.
+1. Back on the **All production orders** list page, notice the value in the two columns
+    - **Picking list status** = *Open*.
+    - **Dispensing ticket status** = *Open*.
+    These two fields indicates that an un-posted **Picking list journal** and **Dispensing ticket** exist. The **Picking list journal** contains all the **BOM** and **Formula** lines for products not enabled for dispensing. The **Dispensing ticket** is a journal, much similar to the production picking list journal, with the items on the BOM or Formula which are enabled for dispensing.
+1. To manage the dispensing process, select **Dispensing ticket** under the **View** tab. 
+1. 
+
+    1. select the **View** tab in the toolbar.
+1. In the **Journals** section, you have following two options to manage the dispensing process
+    - **Dispensing pick journal** - 
+
+
 
 There are three modes of issuing materials that are supported by Production Dispensing. The first mode, the proposed quantity of the material is dispensed from the raw material warehouse. This proposed quantity is then added to the manufacturing batch for production.
 
