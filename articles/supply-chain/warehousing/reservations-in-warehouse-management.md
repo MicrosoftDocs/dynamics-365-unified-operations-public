@@ -195,7 +195,7 @@ The reservation system supports multiple reservation strategies in sequential or
 
 The following illustration shows the classes that are used to implement the reservation strategies, and the main consumers of the classes. Note that, for the sake of simplicity, some details have been omitted. 
 
-:::image type="content" source="media/inventory-reservation-hierarchies-strategy-classes.png" alt-text="Implementation of reservation strategies":::
+:::image type="content" source="media/inventory-reservation-hierarchies-strategy-classes.png" alt-text="Implementation of reservation strategies" lightbox="media/inventory-reservation-hierarchies-strategy-classes.png":::
 
 The implementation is easy to extend, because the instantiation uses the SysExtension framework.
 
