@@ -40,14 +40,12 @@ The level with the lowest value in the Reservation hierarchy level column is the
 
 Information about on-hand inventory is stored separately for each level in the reservation hierarchy.
 
-// TODO - REMOVE as the documentation is deprecated??? - For detailed information about how to set up reservation hierarchies, see Set up reservation hierarchies.
-
 ### Details about the implementation of reservation hierarchies
 
 The following illustration shows the data model for the setup of a reservation hierarchy and its relation to the 
 inventTable table.
 
-//TODO add the diagram?? for the data model?
+:::image type="content" source="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png" alt-text="Setup of reservation hierarchies":::
 
 The definitions of reservation hierarchies are stored in the WHSReservationHierarchy and WHSReservationHierarchyElement tables.These are shared tables. A reservation hierarchy can be associated with one item within a company.
 
@@ -61,21 +59,8 @@ Based on the reservation hierarchy, you can make reservations on different level
 For example, you make a reservation only on the site level. In this case, inventory blocking can be used to block a 
 quantity of an item on a given site.
 
-The following illustration shows how inventory transactions look when inventory is blocked.
-
-// TODO add image here????
-
-As the illustration shows, the reservation is physical but is made only on the site level.
-
 As another example, you make reservations for a sales order created on site 4 and warehouse 42, which is a warehouse 
 that is enabled for WHS processes, and for the **Available** inventory status. For this example, the reservation is made only on the inventory status level.
-
-The following illustration shows how the inventory transactions look when reservations are made at the inventory status 
-level.
-
-//TODO add image????
-
-As the illustration shows, the reservation is physical but is made only on the inventory status level.
 
 ### Impact of the reservation hierarchy setup
 
@@ -177,11 +162,11 @@ this.OrderedSum = availability.orderedSum();
 
 ```
 
-The InventAvailabilityProvider class provides numerous other APIs that are used to determine the availability based on various types of input. The existing InventOnHandQty class has been updated so that it also provides correct results for items that are enabled for warehouse management processes. 
+The **InventAvailabilityProvider** class provides numerous other APIs that are used to determine the availability based on various types of input. The existing **InventOnHandQty** class has been updated so that it also provides correct results for items that are enabled for warehouse management processes. 
 
 The following illustration shows the various classes and interfaces that are used to provide and encapsulate the calculations. Note that, for the sake of simplicity, some details have been omitted.
 
-//TODO add the diagram????
+:::image type="content" source="media/inventory-reservation-hierarchies-encapsulations.png" alt-text="Encapsulation of the calculations":::
 
 ## <a name="reservation-strategies"></a>Reservation strategies
 
@@ -210,7 +195,7 @@ The reservation system supports multiple reservation strategies in sequential or
 
 The following illustration shows the classes that are used to implement the reservation strategies, and the main consumers of the classes. Note that, for the sake of simplicity, some details have been omitted. 
 
-//TODO add the diagram?????
+:::image type="content" source="media/inventory-reservation-hierarchies-strategy-classes.png" alt-text="Implementation of reservation strategies":::
 
 The implementation is easy to extend, because the instantiation uses the SysExtension framework.
 
