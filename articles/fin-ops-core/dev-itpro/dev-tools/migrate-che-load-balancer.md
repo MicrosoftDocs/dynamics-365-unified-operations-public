@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # Migrate a CHE load balancer
 
+[!INCLUDE[banner](../includes/banner.md)]
+
 Microsoft Azure announced the retirement of classic load balancers. To ensure the continued provisioning of CHE environments, Microsoft implemented provisioning for new CHE environments, and migrating existing CHE environments.
 
 ## Provision new CHE environments
@@ -85,3 +87,4 @@ The backend pool should be created with following configurations:
 - If you have multiple CHE environments, ensure the successful migration of one of the CHE environments before proceeding with bulk migrations.
 - Learn about standard sku load balancer pricing in [Load Balancing pricing](https://azure.microsoft.com/pricing/details/load-balancer).
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
