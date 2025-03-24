@@ -15,8 +15,7 @@ Production Dispensing ensures compliance with regulated and controlled standards
 
 - Establishing a process that separates material picking activities from product dispensing.
 - Identifying and configuring products for the dispensing process.
-- Defining minimum and maximum thresholds for dispensing.
-- Restricting dispensing activities to authorized personnel and requiring a digital signature for verifying dispensed quantities.
+- Restricting dispensing activities to authorized personnel and option to require a digital signature for verifying dispensed products.
 
 Follow the these steps to enable and configure the feature
 
