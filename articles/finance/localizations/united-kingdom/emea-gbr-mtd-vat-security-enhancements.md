@@ -48,7 +48,7 @@ Learn more about how to import ER configurations in [Import Electronic reporting
 
 To comply with security requirements, it is essential to enable the **Electronic Invoicing add-in**. This add-in acts as an intermediary, ensuring secure storage and management of credentials required for software authorization within the HMRC APIs. Enabling this functionality is a crucial step in maintaining a secure and compliant integration between Dynamics 365 Finance and the HMRC web service for VAT return submissions.
 
-Learn more about how to [Enable the E-Invoicing Add-In](../../finance/localizations/global/gs-e-invoicing-set-up-overview#install-the-add-in-for-electronic-invoicing-microservices)
+Learn more about how to [Enable the E-Invoicing Add-In](../localizations/global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices)
 
 ## How to enable the feature
 
