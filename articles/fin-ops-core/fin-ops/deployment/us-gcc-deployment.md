@@ -48,15 +48,15 @@ Some features won't be available for deployment in GCC, or they won't be availab
 
 ## Frequently asked questions
 
-### Are Dynamics 365 Finance and Dynamics 365 Supply Chain Management supported in GCC-High?
+### Are Dynamics 365 Finance and Dynamics 365 Supply Chain Management supported in GCC and GCC-High environments?
 
-Yes. Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported in both GCC and GCC High.
+Yes. Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported in both US Government Community Cloud (GCC) and GCC-High environments.
 
-### Can I deploy Copilot features with Finance and Supply Chain Management in GCC?
+### Can I deploy Copilot features in GCC and GCC-High environments?
 
-Yes, you can deploy Copilot features with Finance and Supply Chain Management in GCC environments. However, please note that Copilot capabilities will not be deployed by default in GCC and GCC-High environments. These features will only become available once the required Copilot apps have been installed by the administrator.
+Yes, you can deploy Copilot features for Dynamics 365 Finance and Dynamics 365 Supply Chain Management in US Government Community Cloud (GCC) and GCC-High environments. However, Copilot capabilities aren't deployed by default in these environments. Copilot features are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
 
- [Read more about how to enable Copilot features in Dynamics 365 finance and operations apps.](../../dev-itpro/copilot/enable-copilot.md)
+Learn more in [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md).
 
 ### Can I use public Azure DevOps with Finance and Supply Chain Management in GCC?
 
@@ -86,5 +86,3 @@ Yes. However, if your partner uses a non-GCC identity, the support ticket will b
 - [Cloud deployment overview](../../dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
-
