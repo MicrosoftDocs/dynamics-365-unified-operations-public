@@ -211,8 +211,7 @@ If the item and warehouse are enabled for warehouse management processes, and if
 
 ### Details about the implementation of synchronization between receipts and issues
 
-The logic that determines how the dimensions are synchronized is implemented in the following methods on the 
-inventMovement class:
+The logic that determines how the dimensions are synchronized is implemented in the following methods on the inventMovement class, but there may be new methods added that also needs to be considered:
 - getInventDimForReservedTransPhysChange
 - getInventDimForIssueTransFromReceipt
 
