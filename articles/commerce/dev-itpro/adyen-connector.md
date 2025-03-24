@@ -315,6 +315,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
 | [Wallet Payments](../wallets.md) |  | ✔<br>(Starting with 10.0.20) |
 | [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
+| Adyen Risk management for online payments |  | ✔<br>(Starting with 10.0.43) |
 
 ## Next steps
 
