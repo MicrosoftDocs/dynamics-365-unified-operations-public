@@ -17,9 +17,14 @@ ms.custom:
 
 This procedure shows you how to set up a rate master. The logistic manager usually sets up rate masters, depending on the contracts signed with the carriers. In this scenario you'll set up a rate master for an air carrier. The demo data company used to create this procedure is USMF.
 
+You have to set up one rate master per shipping carrier, but you need to set up one per carrier service.
+
+
 ## Set up break master
 
-1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Break master**. Break masters are used to define the pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions.  
+Break masters are used to define the pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions. If the shipping carrier charges a certain rate per mile or weight for example, the break master can be used to reflect this.
+
+1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Break master**.   
 1. Select **New**.
 1. In the **Break master** field, enter a value.
 1. In the **Name** field, enter a value.
