@@ -29,36 +29,36 @@ To migrate existing CHE environments, follow these steps.
 1. Set  subscription ID, resource group, and load balancer name variables
 
    ```powershell
-   $resourceGroupName = “<resourcegroup-name>”
-   $loadBalancerName = “<loadbalancer-name>”
-   $subscriptionId = “<subscription-id>”
-                    $outboundRuleName= "http-outbound-rule"
-                    $backendPoolName = "vm-backend-pool"
+   $resourceGroupName = "<resourcegroup-name>"
+   $loadBalancerName = "<loadbalancer-name>"
+   $subscriptionId = "<subscription-id>"
+   $outboundRuleName= "http-outbound-rule"
+   $backendPoolName = "vm-backend-pool"
    ```
-1. Ensure you selected the correct subscription ID associated with the Basic Load Balancer by running the following command:
+2. Ensure you selected the correct subscription ID associated with the Basic Load Balancer by running the following command:
 
    ```powershell
    Select-AzSubscription –Subscription $subscriptionId
    ```
 
-1. Run the following commands to initiate the load balancer migration. This command installs the load balancer upgrade module, and upgrades the basic load balancer and IP address to the standard SKU.
+3. Run the following commands to initiate the load balancer migration. This command installs the load balancer upgrade module, and upgrades the basic load balancer and IP address to the standard SKU.
 
    ```powershell
-   Install-Module -Name AzureBasicLoadBalancerUpgrade -Scope CurrentUser -   Repository PSGallery -Force
+   Install-Module -Name AzureBasicLoadBalancerUpgrade -Scope CurrentUser -Repository PSGallery -Force
    Start-AzBasicLoadBalancerUpgrade -ResourceGroupName $resourceGroupName -BasicLoadBalancerName $loadBalancerName
    ```
 
    > [!NOTE]
    > The Basic Load Balancer supports outbound traffic by default, allowing seamless internet access for your virtual machines. However, the standard SKU load balancers don't automatically permit outbound access for backend pool members. Therefore, you need to take other steps to enable this critical functionality and ensure that your virtual machines can communicate with the internet for updates, data transfer, and other essential operations:
 
-1. Create the backend pool.
+4. Create the backend pool.
 
    ```powershell
    $loadBalancer = Get-AzLoadBalancer -ResourceGroupName $resourceGroupName -Name $loadBalancerName
    $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name $backendPoolName
    ```
  
-1. Link all virtual machines (VM) to the standard load balancer, connect the NIC (network interface card) with the backend pool.
+5. Link all virtual machines (VM) to the standard load balancer, connect the NIC (network interface card) with the backend pool.
 
    ```powershell
    $nic = Get-AzNetworkInterface -ResourceGroupName $resourceGroupName
@@ -66,7 +66,7 @@ To migrate existing CHE environments, follow these steps.
    $ipConfig.LoadBalancerBackendAddressPools.Add($backendPool)
    ```   
 
-1. Add the backend pool to the load balancer.
+7. Add the backend pool to the load balancer.
 
    ```powershell
    $loadBalancer.BackendAddressPools.Add($backendPool)
@@ -79,6 +79,9 @@ To migrate existing CHE environments, follow these steps.
    ```
 
 The backend pool should be created with following configurations:
+- **BackendPoolConfiguration** with NIC type.
+- **IP configurations** with list of all virtual machine(s) that need outbound connectivity.
+- **Used by** section should contain http-outbound-rule in the list.
 
   
 ## More information
