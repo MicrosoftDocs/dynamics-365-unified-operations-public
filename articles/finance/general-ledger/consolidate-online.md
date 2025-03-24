@@ -30,7 +30,7 @@ After the consolidation templates are set up, use the **Consolidate online** pag
 1. In the **Template** field, select the consolidation template.
 
     > [!NOTE]
-    > We don't recommend that you set the **Rebuild balances during consolidation** option to **Yes**. Instead, rebuild balances as a separate batch job.
+    > We don't recommend that you set the **Rebuild balances during consolidation** option to **Yes**. Instead, rebuild balances as a separate batch job but only if the feature **Performance enhancement for general ledger dimension set balance calculation** is not enabled. When this feature is enabled the rebuild balances is updated by the process automation background process and does not need to be run manually. 
 
 1. By default, the **Description** field is set to the template name, but you can edit the value.
 1. To run the consolidation as a batch job, set the **Batch process** option to **Yes**, and update the fields as required.
