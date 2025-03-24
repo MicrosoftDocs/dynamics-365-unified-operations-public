@@ -4,7 +4,7 @@ description: The Landed cost module helps businesses streamline inbound shipping
 author: lisascholz91
 ms.author: lisascholz
 ms.topic: overview
-ms.date: 01/27/2025
+ms.date: 03/24/2025
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -96,7 +96,6 @@ The following diagram shows the process flow for landed cost when goods-in-trans
 
 :::image type="content" source="media/landed-cost-without-git-orders.png" alt-text="Diagram that shows the process flow for landed cost without goods-in-transit orders enabled." lightbox="media/landed-cost-without-git-orders.png":::
 
-
 ### Create the voyage
 
 After the voyage is created, you can add the purchase order lines to a new or existing shipping container in the voyage.
@@ -113,24 +112,25 @@ Learn more in [Estimate and manage landed costs](estimate-manage-landed-costs.md
 
 #### Post estimated costs for landed cost with purchase orders
 
-If landed cost is used with purchase orders as the inbound demand source document, when posting the purchase order invoice, estimated landed costs are also posted. Learn more in [Estimate and manage landed costs](estimate-manage-landed-costs.md).
+If you use purchase orders as the inbound demand source document, then estimated landed costs are also posted when you post a purchase order invoice. Learn more in [Estimate and manage landed costs](estimate-manage-landed-costs.md).
 
-If goods in transit is enabled, invoicing process will generate the goods-in-transit order.
+If goods-in-transit is enabled, then the invoicing process generates the required goods-in-transit orders.
 
 #### Post estimated costs for landed cost with transfer orders
-Transfer orders can be used with landed cost only if goods-in-transit orders are not enabled. In this scenario, instead of posting an invoice, you instead use the *Ship transfer order* functionality to post estimated costs.
+
+Transfer orders can be used with landed cost only if goods-in-transit orders aren't enabled. In this scenario, instead of posting an invoice, you instead use the *Ship transfer order* functionality to post estimated costs.
 
 ### Receive goods
 
 #### Goods receipt for landed cost when goods-in-transit orders aren't enabled
 
-When goods in transit is not enabled, you can use the **Post product receipt** functionality on the purchase order. The process resembles the normal process for purchase order receiving.
+When goods-in-transit isn't enabled, you can use the **Post product receipt** functionality on the purchase order. The process resembles the normal process for purchase order receiving.
 
 Learn more in [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md).
 
 #### Goods receipt for landed cost when goods-in-transit order are enabled
 
-To receive goods when goods-in-transit orders are enabled, you can use goods-in-transit receiving-specific menu items in the Warehouse Management mobile app, post an arrival journal, or receive the goods via the goods-in-transit order. The receipt method you should use depends on whether or not advanced warehouse management processes (WMS) and serial/batch tracking are enabled.
+To receive goods when goods-in-transit orders are enabled, you can use goods-in-transit receiving-specific menu items in the Warehouse Management mobile app, post an arrival journal, or receive the goods via the goods-in-transit order. The receipt method you should use depends on whether or not warehouse management processes (WMS) and serial/batch tracking are enabled.
 
 Learn more in [Goods-in-transit processing and receiving](in-transit-processing.md).
 
@@ -144,8 +144,6 @@ Learn more in [Over/under transactions](over-under-transactions.md).
 
 This step reflects an invoice that is received from the vendor in Supply Chain Management. During this step, actual costs are posted.
 
-<!--KFM: Add link to new topic when available. -->
-
 ## Limitations of the Landed cost module
 
 Currently, the **Landed cost** module doesn't support the following items:
@@ -155,4 +153,6 @@ Currently, the **Landed cost** module doesn't support the following items:
 - Purchase orders that include service/non-stocked items
 - Non-deductible tax as part of the voyage costs
 - Transfer orders with goods-in-transit orders enabled
-- Direct delivery and goods in transit: For landed cost, direct delivery follows the standard behavior if goods-in-transit is not enabled. If goods in transit is enabled for a direct delivery order, the goods in transit processes are skipped. This means that the items will not be received in the goods in transit warehouse. Posting the purchase order invoice will automatically generate the product receipt and also update the transactions on the sales order. Also, if a purchase order that links to a direct delivery sales order is split across multiple voyages and/or shipping containers, the direct delivery processes will also not work.
+- Direct delivery and goods in transit
+    - If goods-in-transit isn't enabled for a direct delivery order, direct delivery for landed cost follows the standard behavior.
+    - If goods-in-transit is enabled for a direct delivery order, the goods-in-transit processes are skipped. This means that the items will not be received in the goods-in-transit warehouse. Posting a purchase order invoice automatically generates the product receipt and also updates the transactions on the sales order. Also, if a purchase order that links to a direct delivery sales order is split across multiple voyages and/or shipping containers, the direct delivery processes won't work.

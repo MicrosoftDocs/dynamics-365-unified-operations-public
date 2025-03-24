@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
 ms.topic: how-to
-ms.date: 01/27/2025
+ms.date: 03/24/2025
 ms.custom: 
   - bap-template
 ---
@@ -42,7 +42,7 @@ When you enable the **Landed cost** module, the standard *warehouses* entity is 
 
 Landed cost adds two new types of warehouse: *goods in transit* and *under-delivery*. Warehouses of both types can be selected as default warehouses. Successful processing of goods-in-transit orders requires that both the goods-in-transit warehouse and the under-delivery warehouse be configured on the **Warehouses** page. Then, for each default warehouse that will be used with Landed cost and goods in transit, the goods-in-transit warehouse and under-delivery warehouse must be selected for the available warehouses of each type.
 
-The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse. That warehouse will be used to process the goods on goods-in-transit orders before they are received at the final destination warehouse.
+The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse. That warehouse will be used to process the goods on goods-in-transit orders before they're received at the final destination warehouse.
 
 When the purchase order invoice is posted for a voyage that is enabled for goods-in-transit functionality, inventory is purchased in the receiving warehouse. It's then immediately transferred to the configured goods-in-transit warehouse. This transfer signifies the change in ownership of the goods that haven't yet physically arrived at the destination warehouse.
 
@@ -58,7 +58,7 @@ The following table describes the fields that the **Landed cost** module adds to
 | Under delivery warehouse | Identify the under-delivery warehouse that is related to the main warehouse. |
 
 > [!NOTE]
-> Warehouses that have a **Type** value of *Goods in transit* or *Under* can't be enabled for advanced warehouse management processes (WMS). If you try to set the **Use warehouse management processes** option to *Yes* for warehouses of one of these types, you receive the following error message: "Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled."
+> Warehouses that have a **Type** value of *Goods in transit* or *Under* can't be enabled for warehouse management processes (WMS). If you try to set the **Use warehouse management processes** option to *Yes* for warehouses of one of these types, you receive the following error message: "Landed cost goods in transit warehouse and under warehouse shouldn't use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter can't be disabled."
 
 ## Goods-in-transit orders
 
@@ -79,9 +79,9 @@ To work with goods-in-transit orders, go to **Landed cost** \> **Periodic tasks*
 
 You can receive goods from a goods-in-transit order in several ways:
 
-- If advanced warehouse management is not enabled for items, you can use in-transit receiving or post an arrival journal.
-- If both advanced warehouse management and batch/serial number tracking are enabled for items, you can use a mobile device to receive goods from a goods-in-transit order.
-- If advanced warehouse management is enabled for items, but batch/serial number tracking is not, you can use a mobile device or post an arrival journal to register the receipt of goods from a goods-in-transit order.
+- If warehouse management processes (WMS) isn't enabled for items, you can use in-transit receiving or post an arrival journal.
+- If both WMS and batch/serial number tracking are enabled for items, you can use a mobile device to receive goods from a goods-in-transit order.
+- If WMS is enabled for items, but batch/serial number tracking isn't, you can use a mobile device or post an arrival journal to register the receipt of goods from a goods-in-transit order.
 
 The following illustration presents the preceding information in the form of a flow diagram to show when you should use each type of receipt method to receive goods-in-transit orders.
 
@@ -101,7 +101,7 @@ You can do in-transit receiving from any of the following pages:
 
 ### Arrival journal
 
-You can also receive goods by creating an arrival journal. You can create an arrival journal directly from the voyage page. 
+You can also receive goods by creating an arrival journal. You can create an arrival journal directly from the voyage page.
 
 1. Open the voyage, container, or folio.
 1. On the Action Pane, on the **Manage** tab, in the **Functions** group, select **Create arrival journal**.
@@ -178,14 +178,14 @@ If you cancel a work header for an over transaction that has already been regist
 
 ### Marking for goods-in-transit stock
 
-Goods-in-transit transactions are marked to the purchase order transactions. They are then considered in inventory closing and are reflected in the inventory aging report as zero-on-hand items that have inventory value.
+Goods-in-transit transactions are marked to the purchase order transactions. They're then considered in inventory closing and are reflected in the inventory aging report as zero-on-hand items that have inventory value.
 
 > [!NOTE]
 > If sales orders are marked to purchase orders to reserve incoming stock, goods-in-transit orders will be split if a purchase order line is marked to multiple sales order lines. Any goods-in-transit order that is split must be manually received one by one.
 
 ## Posting rules for landed cost
 
-Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they are received.
+Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they're received.
 
 To work with posting profiles, go to **Inventory management** \> **Setup** \> **Posting** \> **Posting**. On the **Purchase Order** tab, the following new posting rules are available:
 
