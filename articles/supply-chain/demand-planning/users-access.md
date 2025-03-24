@@ -59,7 +59,7 @@ The following security roles are used by Demand planning. Some of them are stand
     - This is a standard security role that's included with Power Platform.
     - This role isn't required to access Demand planning, nor does it grant access to Demand planning.
     - For users that also have the *Demand Planning Manager* and/or *Demand Planning Contributor* roles, the *Basic User* role adds the following privileges in Demand planning:
-        - Export data to Microsoft Excel.
+        - Export any data table to Microsoft Excel using buttons in the Demand planning user interface.
         - Access core business tables such as accounts, contacts, and so on.
 
 - **System Administrator**  
