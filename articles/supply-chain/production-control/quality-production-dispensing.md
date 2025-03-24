@@ -21,7 +21,7 @@ Follow the these steps to enable and configure the feature
 
 ## Set up a dispense pick journal
 
-This journal is used for dispensing materials to production and batch orders. You must set up at least one journal for this purpose. 
+You need to set up a journal for dispensing materials to production and batch orders. Follow these steps to set up a journal. 
 
 1. Go to **Production control > Setup > Production journal names**
 1. Select **New** to create a new journal name for dispensing.
