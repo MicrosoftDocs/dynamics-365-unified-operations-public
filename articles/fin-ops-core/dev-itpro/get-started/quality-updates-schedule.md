@@ -159,8 +159,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 2 | April 7 to April 10, 2025 | April 19 to April 20, 2025 |
 | Station 3 | April 8 to April 11, 2025 | April 19 to April 20, 2025 |
 | Station 4 | April 14 to April 17, 2025 | April 26 to April 27, 2025 |
-| Station 5 | April 21 to April 24, 2025 | April 3 to April 4, 2025 |
-| Station 6 | April 22 to April 25, 2025 | April 3 to April 4, 2025 |
+| Station 5 | April 21 to April 24, 2025 | May 3 to May 4, 2025 |
+| Station 6 | April 22 to April 25, 2025 | May 3 to May 4, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.42 Release-2 train schedule
 
