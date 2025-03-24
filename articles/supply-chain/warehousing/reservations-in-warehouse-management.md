@@ -19,9 +19,9 @@ This article describes the functionality for reservations that is introduced in 
 
 The Warehouse management (WHS) solution introduces functionality for reserving items and materials.
 
-The reservation functionality can be used only for items that are enabled for warehouse management processes. However, if an item is itself enabled for warehouse management processes, it can be used both in warehouses that are enabled for warehouse management processes and warehouses that are not. The behavior in reservation scenarios is different, depending on the warehouse setup. Later sections of this article will provide more details about the differences.
+The reservation functionality can be used only for items that are enabled for warehouse management processes. However, if an item is itself enabled for warehouse management processes, it can be used to both in warehouses that are enabled for warehouse management processes and warehouses that are not. The behavior in reservation scenarios is different, depending on the warehouse setup. Later sections of this article provide more details about the differences.
 
-The functionality is built on reservation hierarchies and is intended to support the following:
+The functionality is built on reservation hierarchies and is intended to support the following cases:
 - Flexible warehouse operations
 - Postponement of reservation details
 - Clear separation of which inventory dimensions can be specified, and when they can be specified
@@ -47,7 +47,7 @@ inventTable table.
 
 :::image type="content" source="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png" alt-text="Setup of reservation hierarchies" lightbox="media/inventory-reservation-hierarchies-setup-of-reservation-hierarchies.png":::
 
-The definitions of reservation hierarchies are stored in the WHSReservationHierarchy and WHSReservationHierarchyElement tables.These are shared tables. A reservation hierarchy can be associated with one item within a company.
+The definitions of reservation hierarchies are stored in the WHSReservationHierarchy and WHSReservationHierarchyElement tables. These are shared tables. A reservation hierarchy can be associated with one item within a company.
 
 The **WHSReservationHierarchyProvider** class provides a large number of APIs that are useful when you work with and 
 query the reservation hierarchy for an item.
@@ -73,7 +73,7 @@ dimensions either above or below the location level.
 
 |Dimension placement|Description|
 |-------------------|-----------|
-|Dimension above location | The inventory dimension above the location level must be determined before the Warehouse management functionality can be used. Therefore, this typically happens during order processing or by letting the reservation system determine the dimensions.<br><br> If a dimension is above the location level, warehouse workers cannot change this dimension, because it is considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker cannot pick a batch that is different from the one that he or she was instructed to pick.  |
+|Dimension above location | The inventory dimension above the location level must be determined before the Warehouse management functionality can be used. Therefore, this typically happens during order processing or by letting the reservation system determine the dimensions.<br><br> If a dimension is above the location level, warehouse workers cannot change this dimension, because it is considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker cannot pick a batch that is different from the one that they were instructed to pick.  |
 |Batch above location | Process industry functionality for batches requires that the Batch number dimension be above the Location dimension in the reservation hierarchy. When this is the case, all functionality for First Expiry First Out (FEFO), same batch, batch disposition codes, and batch attributes is supported. |
 |Dimensions below location | WHS and warehouse workers can determine the Location dimension and the dimensions below it. <br><br>The Location dimension and any dimensions below it should not be entered on sales and transfer lines if you expect work to be created. For example, if the Batch number dimension is below the Location dimension, it should not be specified on the sales line. Otherwise, WHS cannot create work to carry out the pick and pack operations. |
 
@@ -85,7 +85,7 @@ When you set up a reservation hierarchy, the key is to determine which dimension
 
 |Dimension placement|Description|
 |-|-|
-|Dimension above location | The inventory dimension above the location level must be determined before the Warehouse management functionality can be used. Therefore, this typically happens during order processing or by letting the reservation system determine the dimensions. <br><br> If a dimension is above the location level, warehouse workers cannot change this dimension, because it is considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker cannot pick a batch that is different from the one that he or she was instructed to pick. |
+|Dimension above location | The inventory dimension above the location level must be determined before the Warehouse management functionality can be used. Therefore, this typically happens during order processing or by letting the reservation system determine the dimensions. <br><br> If a dimension is above the location level, warehouse workers cannot change this dimension, because it is considered a strict picking requirement. For example, if the Batch number dimension is above the location level, a worker cannot pick a batch that is different from the one that they were instructed to pick. |
 |Batch above location| Process industry functionality for batches requires that the Batch number dimension be above the Location dimension in the reservation hierarchy. When this is the case, all functionality for First Expiry First Out (FEFO), same batch, batch disposition codes, and batch attributes is supported |
 |Dimensions below location | WHS and warehouse workers can determine the Location dimension and the dimensions below it. <br><br>The Location dimension and any dimensions below it should not be entered on sales and transfer lines if you expect work to be created. For example, if the Batch number dimension is below the Location dimension, it should not be specified on the sales line. Otherwise, WHS cannot create work to carry out the pick and pack operations. |
 
@@ -207,7 +207,7 @@ When an inventory transaction is marked or reserved ordered, the inventory dimen
 For items that are enabled for warehouse management processes, the synchronization differs from the standard 
 behavior. When work must be created, the source line transactions can be reserved only until the level above the location level. If all dimensions are synchronized, work cannot be created. Therefore, dimensions above the location level are not synchronized for all scenarios.
 
-If the item and warehouse are enabled for warehouse management processes, and if the issue type is a type that can generate work, such as a sales line, only dimensions above the location level are synchronized. This means that if an item uses batch numbers, and the batch number is placed below the location in the eservation hierarchy, the batch number is not synchronized from receipt to issue transactions.
+If the item and warehouse are enabled for warehouse management processes, and if the issue type is a type that can generate work, such as a sales line, only dimensions above the location level are synchronized. This means that if an item uses batch numbers, and the batch number is placed below the location in the Reservation hierarchy, the batch number is not synchronized from receipt to issue transactions.
 
 ### Details about the implementation of synchronization between receipts and issues
 
@@ -218,6 +218,6 @@ The logic that determines how the dimensions are synchronized is implemented in 
 
 > [!NOTE]
 >
-> When using the inventory reservation hierarchy of the Batch-below[location] type, and selling batch-tracked products for enabled warehouse management processes (WMS), a **Flexible warehouse-level dimension reservation policy** should be set, so reservations can be done to those products.
+> When products use the inventory reservation hierarchy of the Batch-below[location] type, and are batch-tracked for warehouse management processes (WMS), a **Flexible warehouse-level dimension reservation policy** should be set, so reservations can be done to those products.
 >
 > To learn more about the *Flexible warehouse-level dimension reservation policy*, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md)
