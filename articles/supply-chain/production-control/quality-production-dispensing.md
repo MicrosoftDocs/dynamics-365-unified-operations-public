@@ -89,7 +89,7 @@ To use a dispensing process, you must configure dispensing options for each rele
    
 ## Set up on BOM and Formula lines for the dispensing process 
 
-On BOM and Formula lines you can override the thresholds for over- and under dispensing from the product.
+On BOM and Formula lines you can override the thresholds for over- and under dispensing from the product. Follow these steps to override.
 
 1. Go to **Product information management > Products > Released products**
 1. Select a product that is defined for batch production.
@@ -101,8 +101,6 @@ On BOM and Formula lines you can override the thresholds for over- and under dis
     - **Overdispense** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. The value will override the value specified in the same field on the release products. 
     - **Underdispense** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity. The value will override the value specified in the same field on the release products.
 
-
-If the Picking list is created at Release, the user will still have to go through the Start process on the batch or production orders. Upon Starting the order, the user will have to select the Dispensing ticket journal name and select Never as the Automatic BOM consumption; if not, the Picking journal will be created again.
 
 ## Using Production Dispensing
 
