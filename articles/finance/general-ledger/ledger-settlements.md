@@ -121,6 +121,12 @@ It's important that you export the data to Excel before you unsettle records. Wh
 
 For more information about how to use the **Review cross-year settlements** page to help you with year-end close processes, see [Awareness between ledger settlement feature before year-end close using the inquiry page](ledger-settlement-yec-inquiry-before.md) and [Awareness between ledger settlement feature after year-end close using the inquiry page](ledger-settlement-yec-inquiry-after.md).
 
+## Review missing settlement accounts
+
+In Finance version 10.0.44 missing settlement accounts can be reviewed using the **Review missing settlement accounts** page. From the **Ledger settlements** page select **Review missing settlement accounts** in the action pane. Select the fiscal year and the page displays any ledger accounts that have ledger settlements but they are missing from the **Ledger settlement** page in General ledger parameters. In the **Review missing settlement accounts** page use the button **Add to Ledger settlement accounts** to add the missing accounts to the Ledger settlements page in General ledger parameters. If there are no missing accounts the message "No missing ledger settlement accounts found" is displayed at the top of the page. 
+
+If accounts have been ledger settled but the accounts are no longer set up in the **Ledger settlements** page in General ledger parameters, this can cause the year-end close to fail. If you can see ledger settlements in the **Ledger settlement inquiry** page but not in Ledger settlements, one reason is the account is no longer setup in the **Ledger settlements** page in General ledger parameters. 
+
 ## Post foreign currency realized gains/losses for ledger settlements
 
 In Finance version 10.0.36, the **Post foreign currency realized gains/losses for ledger settlements** feature is available in the **Feature management** workspace. This feature calculates and posts foreign currency realized gains and losses for settlements from the **Ledger settlements** page when the reporting currency values of the debits and credits differ. In Finance version 10.0.38, support has been added for calculating and posting foreign currency realized gains and losses for settlement when the accounting currency values of the debits and credits differ. Before you can enable the **Post foreign currency realized gains/losses for ledger settlements** feature, the **Awareness between ledger settlement and year-end close** feature must be enabled. 
