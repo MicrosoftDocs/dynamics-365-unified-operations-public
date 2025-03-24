@@ -62,7 +62,15 @@ The following table lists the Dynamics 365 apps that must be present in your Pow
 | Copilot summaries in Supply Chain Management and Copilot summaries in Commerce | Copilot in Dynamics 365 Supply Chain Management |
 | Copilot summaries in Finance | Copilot in Dynamics 365 Finance |
 
-Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, the apps might not yet be installed. To check for and install the required apps, follow these steps.
+Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, or if you are running a government cloud version of finance and operations, the apps might not yet be installed.
+
+> [!NOTE]
+> In [**GCC** and **GCC-High** environments](../../fin-ops/deployment/us-gcc-deployment.md) within the government cloud, the required Copilot apps for Dynamics 365 will not be installed by default in the Dataverse environment. However, Copilot features controlled through Feature management, such as Summarizations, will remain enabled by default.
+>
+> Copilot capabilities will only become available in GCC and GCC-High environments once the specified Copilot apps have been installed by the administrator.
+
+
+To check for and install the required apps, follow these steps.
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your environment to open its detailed view.

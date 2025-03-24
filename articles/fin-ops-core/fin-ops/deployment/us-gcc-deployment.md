@@ -52,6 +52,12 @@ Some features won't be available for deployment in GCC, or they won't be availab
 
 Yes. Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported in both GCC and GCC High.
 
+### Can I deploy Copilot features with Finance and Supply Chain Management in GCC?
+
+Yes, you can deploy Copilot features with Finance and Supply Chain Management in GCC environments. However, please note that Copilot capabilities will not be deployed by default in GCC and GCC-High environments. These features will only become available once the required Copilot apps have been installed by the administrator.
+
+ [Read more about how to enable Copilot features in Dynamics 365 finance and operations apps.](../../dev-itpro/copilot/enable-copilot.md)
+
 ### Can I use public Azure DevOps with Finance and Supply Chain Management in GCC?
 
 Yes, you can use public Azure DevOps services if you don't have requirements for a solution that is certified by the Federal Risk and Authorization Management Program (FEDRAMP). Alternatively, you can use Azure DevOps Server.
