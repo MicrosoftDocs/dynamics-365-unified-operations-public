@@ -16,8 +16,6 @@ ms.search.validFrom: 2021-11-09
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 Select Microsoft Dynamics 365 United States (US) Government products are available to qualified government and private entities. Those entities are limited to the following types:
 
 - US federal, state, local, tribal, and territorial government entities

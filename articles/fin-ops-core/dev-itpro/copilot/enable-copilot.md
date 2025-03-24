@@ -62,12 +62,12 @@ The following table lists the Dynamics 365 apps that must be present in your Pow
 | Copilot summaries in Supply Chain Management and Copilot summaries in Commerce | Copilot in Dynamics 365 Supply Chain Management |
 | Copilot summaries in Finance | Copilot in Dynamics 365 Finance |
 
-Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, or if you are running a government cloud version version of your finance and operations apps, the apps might not yet be installed.
+Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, or if you're running a government cloud version of your finance and operations apps, the apps might not yet be installed.
 
 > [!NOTE]
-> In [US Government Community Cloud (GCC) and GCC-High environments](../../fin-ops/deployment/us-gcc-deployment.md), the required Copilot apps aren't installed in the Dataverse environment by default. However, Copilot features controlled through [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) in finance and operations apps (such as [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)) remain enabled by default.
+> In [US Government Community Cloud (GCC) and GCC-High environments](../../fin-ops/deployment/us-gcc-deployment.md), the required Copilot apps aren't installed in Dataverse by default. Copilot features controlled through [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) in finance and operations apps (such as [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)) remain enabled by default, but they won't work as expected until the required apps are installed in Dataverse.
 >
-> Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the specified Copilot apps.
+> Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
 
 To check for and install the required apps, follow these steps.
 
