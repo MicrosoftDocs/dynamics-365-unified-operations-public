@@ -50,6 +50,14 @@ Sales order summaries are similar to purchase order summaries, but for sales ord
 
 Intelligent vendor summaries include information about vendor on-hold status, active contracts, rebates, open purchase orders, outliers, and risks. Each summary indicates the vendor's account number, vendor currency, and accounting currency. Purchase orders, posted vendor invoices, and payment status information are provided. Overdue vendor invoices, purchasing agreements, and active rebates are also shown. Risks arise from overdue purchase lines, delivery trends, vendor history, and potential foreign exchange losses from outstanding invoices.
 
+### Traceability activity summaries
+
+Traceability can collect activity events across the supply chain and product life cycle, but quickly getting a picture of a tracked object’s history might not be easy for users. Copilot can provide an initial summary of a large number of activity events for a single tracked object.
+
+### Traceability where-used summaries
+
+Traceability provides a comprehensive where-used insight report, enabling users to track the usage of items across various processes. Copilot offers a detailed summary at both the item number and quantity levels, allowing for precise analysis.
+
 ## How were AI summaries with Copilot evaluated? What metrics are used to measure performance?
 
 AI summaries with Copilot underwent substantial testing before they were released. They rely on user feedback to report inappropriate content.
