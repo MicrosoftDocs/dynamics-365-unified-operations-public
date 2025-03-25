@@ -140,4 +140,4 @@ The authorization lasts 100 days. After the authorization expires, it is initiat
 
 When the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature is enabled in your Finance you do not need to authorize from the **Web application** page. The authorization from the **Web application** page is not available any longer. System automatically controls the authorization period (100 days) and initiates it when necessary during a request to an HMRC's endpoint. 
 
-Client ID and Client secret that were previously available on the **Web application** page are not used any longer. This information is automatically provided by the E-invoicing service during transferring the requests to HMRC's endpoints. 
+**Client ID** and **Client secret** fields that were previously available on the **Web application** page are not used any longer in **UK MTD VAT TEST** and **UK MTD VAT returns**. This information is automatically provided by the E-invoicing add-in during transferring the requests to HMRC's endpoints. 
