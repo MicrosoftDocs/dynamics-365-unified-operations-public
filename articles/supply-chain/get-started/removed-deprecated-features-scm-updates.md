@@ -24,19 +24,17 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-
 ## Features removed or deprecated in the Supply Chain Management 10.0.44 release
 
-### The "Rename item number"  has been removed
+### Rename item number (preview)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The *Rename item number*  number is primary key and is used across multiple systems. This feature could cause data inconsistencies across multiple systems & apps integration scenarios leading to data integrity & data corruption issues. |
-| **Replaced by another feature?** | No
+| **Reason for deprecation/removal** | The item number field is a primary key that is used across multiple systems. The *(Preview) Rename item number* feature allowed users to edit the item number field, but we found that the feature could cause data inconsistencies across multiple systems and in apps-integration scenarios, leading to data integrity and data corruption issues. The feature was previously in preview and was never made generally available for use in production environments. |
+| **Replaced by another feature?** | No |
 | **Product areas affected** | Supply Chain Management – Product information management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | The Rename Item number feature for Microsoft Dynamics 365 Supply Chain Management will not be available in feature management workspace 10.0.44 onwards. This capability will be completely removed for all customers. We would advise Customers to use alternate ways in case they have a use case to Rename Item number e.g delete and creating a new item, make use of renaming attributes names, search names, product names etc. |
-
+| **Status** | The *(Preview) Rename item number* feature was removed from the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace in Dynamics 365 Supply Chain Management version 10.0.44 and is no longer available. The capability is completely removed for all customers. If you need to rename an item number, we recommend that you use alternate methods, such as deleting and creating a new item, renaming attributes, or renaming search names, product names, and other item-related fields. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.43 release
 
