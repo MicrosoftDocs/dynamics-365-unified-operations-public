@@ -112,8 +112,8 @@ To validate the integration from your sandbox with sandbox MTD endpoint of HMRC,
 Once the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature is enabled on your production Finance, your environment is ready to work with MTD endpoints of HMRC.
 
 For integration with production MTD endpoints of HMRC, you need to authorize with the User ID and Password. 
-* User ID – The name that is used to access HMRC while an authorization code is being requested.
-* Password – The password that is used to access HMRC while an authorization code is being requested.
+* <b>User ID</b> – The name that is used to access HMRC while an authorization code is being requested.
+* <b>Password</b> – The password that is used to access HMRC while an authorization code is being requested.
 
 To validate the integration from your production with production MTD endpoint of HMRC, follow these steps.
 
@@ -134,4 +134,10 @@ To validate the integration from your production with production MTD endpoint of
 15. On this step, the authorization is completed and the VAT obligation request starts. You will see the **Fraud prevention headers** dialog. Click **Submit** to continue.
 16. As a result of the successful VAT obligation request to HMRC's production endpoint you can see thenew electronic messages are created on the **Messages** FastTab.
 
+The authorization lasts 100 days. After the authorization expires, it is initiated again automatically when a request to an HMRC's endpoint is initiated. You do not need to re-authorize from the **Web application** page.
+
 ## Further details
+
+When the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature is enabled in your Finance you do not need to authorize from the **Web application** page. The authorization from the **Web application** page is not available any longer. System automatically controls the authorization period (100 days) and initiates it when necessary during a request to an HMRC's endpoint. 
+
+Client ID and Client secret that were previously available on the **Web application** page are not used any longer. This information is automatically provided by the E-invoicing service during transferring the requests to HMRC's endpoints. 
