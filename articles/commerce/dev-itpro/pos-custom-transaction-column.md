@@ -51,7 +51,7 @@ This article explains how to add a new custom column to a POS transaction page u
 3. Under the **POS.Extensions** project create a new folder named **CustomColumnExtensions**.
 4. Under **CustomColumnExtensions**, create a new folder named **Cart**.
 5. Under **Cart**, create a new folder named **LinesGrid**.
-6. In the **LinesGrid** folder, add a new Typescript file and name it **CustomColumn1Configuration.ts**.
+6. In the **LinesGrid** folder, add a new TypeScript file and name it **CustomColumn1Configuration.ts**.
 7. Add the following **import** statements to import the relevant entities and context.
 
     ```typescript

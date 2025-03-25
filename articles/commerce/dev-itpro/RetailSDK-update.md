@@ -142,7 +142,7 @@ After you have upgraded all of the components, deploy the Commerce deployable pa
 ## Upgrade the channel extension from 7.2 to a higher version
 The steps mentioned  in the previous section, **Upgrade the channel extension from 7.3 to higher versions**, will remain same for all the components except the Commerce proxy. In 7.2, you must have completed inline changes in the proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
 
-To upgrade your proxy to 7.3, complete the steps in the article, [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
+To upgrade your proxy to 7.3, complete the steps in the article, [TypeScript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
 
 ## Upgrade the channel extension from 7.1 to a higher version
 In 7.1, you should have completed most of the POS and Proxy customizations inline. To upgrade to higher a application release, you should move all of your inline changes to extensions. If it is a binary hotfix upgrade, then you must perform a code merge with the new Retail SDK and then regenerate the package.

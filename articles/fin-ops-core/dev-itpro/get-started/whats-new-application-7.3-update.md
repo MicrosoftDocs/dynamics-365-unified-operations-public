@@ -243,7 +243,7 @@ For more information, see [Product lifecycle state](../../../supply-chain/pim/pr
 
 Previously you needed to modify the retail proxy project inline to generate the Retail proxy to support your new CRT/RS extension in POS offline mode or e-Commerce extensions. Now, you can generate proxy without any inline changes as a completely new extension. We also added support for multiple ISV/Partner extension proxies without any code merge between the extension proxies. This will help you with a seamless upgrade for proxy extensions.
 
-For more information, see [Retail Typescript and C# proxies](/dynamics365/commerce/dev-itpro/typescript-proxy-retail-pos).
+For more information, see [Retail TypeScript and C# proxies](/dynamics365/commerce/dev-itpro/typescript-proxy-retail-pos).
 
 ## Safety stock replenishment enhancements
 
