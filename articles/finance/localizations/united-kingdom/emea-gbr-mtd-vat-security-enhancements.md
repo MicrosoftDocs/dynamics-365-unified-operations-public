@@ -20,6 +20,10 @@ This enhancement involves the adoption of an Electronic Invoicing service as an 
 
 This topic explains how to enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature in you Finance and what changes to the user experience are introduced with this feature. This feature does not introduce any changes to on-premises deployments of  Dynamics 365 Finance.
 
+> [!IMPORTANT]
+> This is a production ready preview feature.
+> This feature is subject to supplemental terms of use. By enabling this feature, you are confirming that you have read and understand the preview feature terms and conditions. [View preview terms](https://go.microsoft.com/fwlink/?linkid=2105274).
+
 > [!NOTE]
 > The direct integration with external endpoints provided by HMRC for submission of the VAT return from **on-premises deployments** of  Dynamics 365 Finance **won’t be accessible by June 6, 2025**. For more information, see [Features removed or deprecated in the Finance 10.0.43 release](../../get-started/removed-deprecated-features-finance.md#making-tax-digital--vat-return-submission-in-the-united-kingdom-for-on-premises-deployments).
 >
@@ -33,7 +37,7 @@ Prerequisites are essential requirements and foundational elements needed before
 
 The **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature is introduce in **10.0.43** version of Finance.
 
-It is also available in the following lower versions:
+It is also available in the following lower versions of Finance:
 
 <li> <b>10.0.41</b> - 10.0.2015.<b>155</b>
 <li> <b>10.0.42</b> - 10.0.2095.<b>77</b>
@@ -42,10 +46,10 @@ It is also available in the following lower versions:
 
 To work with the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature the following or higher versions of Electronic Reporting (ER) configurations must be imported in your Finance:
 
-<li> MTD VAT model mapping - version 46.74, under the Electronic Messages framework model
-<li> MTD VAT authorization format (UK) - version 46.17, under the Electronic Messages framework model
-<li> MTD VAT web request headers format (UK) - version 46.48, under the Electronic Messages framework model
-<li> MTD VAT interoperation (UK) - version 31.11, under the Tax declaration model
+<li> MTD VAT model mapping - version **46.74**, under the Electronic Messages framework model
+<li> MTD VAT authorization format (UK) - version **46.17**, under the Electronic Messages framework model
+<li> MTD VAT web request headers format (UK) - version **46.48**, under the Electronic Messages framework model
+<li> MTD VAT interoperation (UK) - version **31.11**, under the Tax declaration model
 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -56,6 +60,10 @@ To comply with security requirements, it is essential to enable the **Electronic
 Learn more about how to [Enable the E-Invoicing Add-In](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 
 ## How to enable the feature
+
+To enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature in your Finance, follow these steps.
+
+1. Go to 
 
 ## How to proceed once the feature is activated
 
