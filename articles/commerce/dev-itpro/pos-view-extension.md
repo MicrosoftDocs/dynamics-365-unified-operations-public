@@ -101,7 +101,7 @@ Sample code for custom filter extensions is available in the Retail SDK (...\Ret
 3. In the **POS.Extensions** project, create a folder that is named **SearchExtension**.
 4. In the **SearchExtension** folder, create a folder that is named **ViewExtensions**.
 5. In the **ViewExtensions** folder, create a folder that is named **Search**.
-6. In the **Search** folder, create a Typescript file that is named **CustomCustomerSearchColumns.ts**.
+6. In the **Search** folder, create a TypeScript file that is named **CustomCustomerSearchColumns.ts**.
 7. In the **CustomCustomerSearchColumns.ts** file, add the following **import** statements to import the relevant entities and context.
 
     ```typescript
@@ -231,7 +231,7 @@ Sample code for custom filter extensions is available in the Retail SDK (...\Ret
     }
     ```
 
-19. You will now add a custom app bar button in the search view to open a dialog box that contains details about the selected customer. In the **ViewExtensions** folder, create a Typescript file that is named **ViewCustomerSummaryCommand.ts**.
+19. You will now add a custom app bar button in the search view to open a dialog box that contains details about the selected customer. In the **ViewExtensions** folder, create a TypeScript file that is named **ViewCustomerSummaryCommand.ts**.
 20. In the **ViewCustomerSummaryCommand.ts** file, add the following **import** statements to import the relevant entities and context.
 
     ```typescript

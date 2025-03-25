@@ -45,7 +45,7 @@ The following table lists the screen layout designer based-views that support cu
 
 The following example demonstrates how to add a custom control to one of the  existing POS views using extensions. For example, suppose  you want to show the product availability information in the product details view by adding custom data list that has four columns - Location, Inventory, Reserved, and Ordered.
 
-A custom control is an HTML page with the custom information to be displayed. A corresponding Typescript file contains the logic for the control. 
+A custom control is an HTML page with the custom information to be displayed. A corresponding TypeScript file contains the logic for the control. 
 
 1. Open Visual Studio 2015 in administrator mode.
 2. Open Modern POS from **\RetailSDK\POS**.

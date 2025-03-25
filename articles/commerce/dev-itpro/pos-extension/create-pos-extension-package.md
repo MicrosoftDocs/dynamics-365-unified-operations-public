@@ -60,9 +60,9 @@ This article explains how to create a Point of Sale (POS) extension package proj
     3. Select the package, select **Install**, and then select the latest stable version.
 
         > [!TIP]
-        > For the best integrated development environment (IDE) experience, make sure that the version of the TypeScript Tools for Visual Studio that you install matches the version of the TypeScript NuGet package. If you selected version 4.2.3 of Microsoft.TypeScript.MSBuild, you can install Typescript 4.2.3 for Visual Studio.
+        > For the best integrated development environment (IDE) experience, make sure that the version of the TypeScript Tools for Visual Studio that you install matches the version of the TypeScript NuGet package. If you selected version 4.2.3 of Microsoft.TypeScript.MSBuild, you can install TypeScript 4.2.3 for Visual Studio.
         >
-        > Links for the Visual Studio Typescript tool are available in [TypeScript/releases on GitHub](https://github.com/microsoft/TypeScript/releases).
+        > Links for the Visual Studio TypeScript tool are available in [TypeScript/releases on GitHub](https://github.com/microsoft/TypeScript/releases).
 
 8. Add a reference to the Retail SDK NuGet package:
 

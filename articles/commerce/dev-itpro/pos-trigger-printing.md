@@ -237,7 +237,7 @@ To implement a trigger, follow these steps.
 2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
 3. Under the **POS.Extensions** project, create a new folder named **SuspendReceiptSample**.
 4. Under **SuspendReceiptSample**, create new folder named **TriggersHandlers**.
-5. In the **TriggersHandlers** folder, add a new Typescript file named **PostSuspendTransactionTrigger.ts**.
+5. In the **TriggersHandlers** folder, add a new TypeScript file named **PostSuspendTransactionTrigger.ts**.
 6. Add the following **import** statements to import the relevant entities and context.
 
    ```typescript
