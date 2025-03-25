@@ -4,7 +4,7 @@ description: Learn how to use the Ledger settlements page to settle ledger trans
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 11/08/2024
+ms.date: 03/25/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -123,9 +123,14 @@ For more information about how to use the **Review cross-year settlements** page
 
 ## Review missing settlement accounts
 
-As of Finance release 10.0.44, missing settlement accounts can be reviewed using the **Review missing settlement accounts** page. From the **Ledger settlements** page select **Review missing settlement accounts** in the action pane. Select the fiscal year and the page displays any ledger accounts that have ledger settlements but they are missing from the **Ledger settlement** page in General ledger parameters. In the **Review missing settlement accounts** page use the button **Add to Ledger settlement accounts** to add the missing accounts to the Ledger settlements page in General ledger parameters. If there are no missing accounts the message "No missing ledger settlement accounts found" is displayed at the top of the page. 
+As of Finance release 10.0.44, missing settlement accounts can be reviewed using the **Review missing settlement accounts** page. 
+To review missing settlement accounts, follow these steps:
+1. On the **Ledger settlements** page, select **Review missing settlement accounts** in the action pane.
+2. Select the fiscal year. The page displays ledger accounts that have ledger settlements but are missing from the **Ledger settlement** page in General ledger parameters.
+3. On the **Review missing settlement accounts** page, click **Add to Ledger settlement accounts** to add the missing accounts to the **Ledger settlements** page in General ledger parameters.
+4. If there are no missing accounts, the **No missing ledger settlement accounts found** message is displayed at the top of the page. 
 
-If accounts have been ledger settled but the accounts are no longer set up in the **Ledger settlements** page in General ledger parameters, this can cause the year-end close to fail. If you can see ledger settlements in the **Ledger settlement inquiry** page but not in Ledger settlements, one reason is the account is no longer setup in the **Ledger settlements** page in General ledger parameters. 
+If accounts are ledger settled but the accounts aren't set up on the **Ledger settlements** page in General ledger parameters, this can cause the year-end close to fail. If you see ledger settlements in the **Ledger settlement inquiry** page but not in **Ledger settlements**, one reason is the account isn't set up on the **Ledger settlements** page in General ledger parameters. 
 
 ## Post foreign currency realized gains/losses for ledger settlements
 
