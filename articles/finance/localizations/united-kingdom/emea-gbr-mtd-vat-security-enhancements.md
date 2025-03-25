@@ -18,7 +18,12 @@ ms.dyn365.ops.version: AX 10.0.43
 To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. 
 This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs.
 
-This topic explains how to enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature in you Finance and what changes to the user experience are introduced with this feature.
+This topic explains how to enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature in you Finance and what changes to the user experience are introduced with this feature. This feature does not introduce any changes to on-premises deployments of  Dynamics 365 Finance.
+
+> [!NOTE]
+> The direct integration with external endpoints provided by HMRC for submission of the VAT return from **on-premises deployments** of  Dynamics 365 Finance **won’t be accessible by June 6, 2025**. For more information, see [Features removed or deprecated in the Finance 10.0.43 release](../../finance/get-started/removed-deprecated-features-finance.md#making-tax-digital--vat-return-submission-in-the-united-kingdom-for-on-premises-deployments).
+>
+> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. It’s still possible to generate in batch the report (VAT 100) in Excel and JSON formats. For more information, see [Features removed or deprecated in the Finance 10.0.43 release](../../finance/get-started/removed-deprecated-features-finance.md#batch-submission-of-vat-returns-in-the-uk-via-making-tax-digital-for-vat-in-cloud-deployments).
 
 ## Prerequisites
 
