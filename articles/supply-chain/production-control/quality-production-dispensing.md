@@ -47,19 +47,6 @@ To enable **Electronic signature** for posting the production picking list journ
     - **Post picking list production journal (non-dispensing)**
 1. Set the field **Signature required** to *true* for both requirements.
 
-## Set up a measuring device
-
-To set up a **Measuring device** follow theses steps.
-
-1. Go to **Inventory management > Setup > Quality control > Measuring devices**
-1. Select **New** and fill out following information
-    - **Measuring device** - Identification of the measuring device used in the dispensing process.
-    - **Description**- Description of the device.
-    - **Test instrument tag** - Select a tag define for the test instrument. Read more about **Test instrument tags** and **Test instrument calibration** here: <!-- TO-DO: JOHANHO Insert link to instrument calibration- :  -->
-
-[!NOTE] - The **Measuring device** you define only serves as information about the name of the device you will be using in the dispense process. 
-
-
 ## Required set up in the production control parameters
 
 1. Go to **Production control > Setup > Production control parameters** 
@@ -70,7 +57,7 @@ To set up a **Measuring device** follow theses steps.
 1. Open the **Journals** tab and make the following setting
     - **Dispensing ticket** - Select the journal name you created. This will be the default journal for dispensed products.
 1. Open the **General** tab to make the following setting
-    - **Default measuring device** - In the drop down, select the measuring device that should be defaulted in the **Dispense ticket** page.
+    - **Default measuring device** - In the drop down, select the measuring device that should be defaulted in the **Dispense ticket** page. If you have not defined a device, go to Go to **Inventory management > Setup > Quality control > Measuring devices** to set it up.  
  
 ## Set up a product for the dispensing process
 
