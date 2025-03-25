@@ -4,7 +4,7 @@ description: Learn how to clear bridge payaments in advanced bank reconciliation
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 01/22/2024
+ms.date: 03/25/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -25,8 +25,8 @@ A bridging payment is a payment that's posted to the general ledger in two steps
 Before you use the **Automatic clear bridged transactions through advanced bank reconciliation** feature, all bridging payments must be cleared in the general journal. This feature automatically clears bridging payments when the advanced bank reconciliation worksheet is marked as reconciled.
 
 > [!NOTE]
-> The posting date for the bank transactions for automatic bridged processing is using the minimum date between cut-off day and the current system date.
-> 
+> The posting date for the bank transactions for automatic bridged processing uses the earlier date between the cut-off day and the system date.
+ 
 ## Prerequisites
 
 - Turn on the **Automatic clear bridged transactions through advanced bank reconciliation** feature in the **Feature management** workspace.
