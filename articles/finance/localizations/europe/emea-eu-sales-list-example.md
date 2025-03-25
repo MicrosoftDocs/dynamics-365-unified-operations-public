@@ -21,7 +21,7 @@ The following procedure uses the DEMF legal entity. It also uses Germany as a co
 
 ## Setup
 
-### Set up country/region parameters
+#### Set up country/region parameters
 
 To set up country/region parameters, follow these steps.
 
@@ -37,7 +37,7 @@ To set up country/region parameters, follow these steps.
 1. In the **Sales tax** field, enter "ES"".
 1. On the Action Pane, select **Save**.
 
-### Set up company information
+#### Set up company information
 
 To set up company information, follow these steps.
 
@@ -127,7 +127,7 @@ To create a customer's VAT registration number, follow these steps.
 1. Close the page.
 1. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **SE100200300400**.
 
-#### Import electronic reporting configurations
+### Import electronic reporting configurations
 
 To import electronic reporting configurations, follow these steps.
 
@@ -138,7 +138,7 @@ To import electronic reporting configurations, follow these steps.
     - EU Sales list by rows report
     - EU Sales list (DE)
 
-#### Set up foreign trade parameters
+### Set up foreign trade parameters
 
 To set up foreign trade parameters, follow these steps.
 
@@ -164,7 +164,7 @@ To set up foreign trade parameters, follow these steps.
 
 1. On the **Number sequences** tab, verify that the **Number sequence code** field is set (not blank) for the **EU sales list** reference.
 
-#### Set up sales tax codes and sales tax groups
+### Set up sales tax codes and sales tax groups
 
 To set up sales tax codes and sales tax groups, follow these steps.
 
@@ -180,7 +180,7 @@ To set up sales tax codes and sales tax groups, follow these steps.
 1. Verify that the **FULL** item sales tax group includes the **EUS** sales tax code.
 1. In the **Reporting type** field, select **Item**.
 
-#### Set up customer information
+### Set up customer information
 
 To set up customer information, follow these steps.
 
@@ -199,7 +199,7 @@ To set up customer information, follow these steps.
 1. In the **Primary** field, select **Yes**.
 1. Select **OK**.
 
-#### Create a free text invoice
+### Create a free text invoice
 
 To create a free text invoice, follow these steps.
 
@@ -237,6 +237,8 @@ To set up vendor information, follow these steps.
 1. Select **OK**.
 1. Close the page.
 
+### Set up VAT IDs
+
 #### Create a registration type for a company code
 
 To create a registration type for a company code, follow these steps.
@@ -254,7 +256,7 @@ To match the registration type with a registration category, follow these steps.
 1. On the Action Pane, select **New** to create a link between a registration type and a registration category.
 1. For the **VAT ID** registration type for Germany, select the **VAT ID** registration category.
 
-#### Create a vendor's VAT registration number
+### Create a vendor's VAT registration number
 
 To create a vendor's VAT registration number, follow these steps.
 
@@ -271,7 +273,7 @@ To create a vendor's VAT registration number, follow these steps.
 1. On the Action Pane, select **Save**.
 1. Close the page.
 
-#### Set up foreign trade parameters
+### Set up foreign trade parameters
 
 To set up foreign trade parameters, follow these steps.
 
@@ -281,7 +283,7 @@ To set up foreign trade parameters, follow these steps.
 1. In the **Country/region** field, select **DEU**.
 1. In the **Country/region type** field, select **EU**.
 
-#### Set up sales tax codes and sales tax groups
+### Set up sales tax codes and sales tax groups
 
 To set up sales tax codes and sales tax groups, follow these steps.
 
@@ -295,7 +297,7 @@ To set up sales tax codes and sales tax groups, follow these steps.
 1. Verify that the **FULL** item sales tax group includes the **EUS** sales tax code.
 1. In the **Reporting type** field, select **Item**.
 
-#### Create a vendor invoice
+### Create a vendor invoice
 
 To create a vendor invoice, follow these steps.
 
@@ -316,7 +318,7 @@ To create a vendor invoice, follow these steps.
 
 ## Work with the EU sales list
 
-#### Transfer transactions
+### Transfer transactions
 
 To transfer transactions, follow these steps.
 
@@ -331,14 +333,14 @@ To transfer transactions, follow these steps.
 
    ![EU sales list](../media/EUSL_example.png)
 
-#### Generate the EU sales list report
+### Generate the EU sales list report
 
 To generate the EU sales list report, follow these steps.
 
 1. On the **EU sales list** page, on the Action Pane, select **Reporting**.
 1. In the **EU sales list reporting** dialog, on the **Parameters** FastTab, set the fields to generate a report for a specific country or region.
 
-#### Mark EU sales list lines as reported
+### Mark EU sales list lines as reported
 
 To mark EU sales list lines as reported, follow these steps.
 
@@ -348,7 +350,7 @@ To mark EU sales list lines as reported, follow these steps.
 1. Select **OK**.
 1. To view the reported transactions, in the **Selection** field, select **Reported**.
 
-#### Mark EU sales list lines as closed
+### Mark EU sales list lines as closed
 
 To mark EU sales list lines as closed, follow these steps.
 
