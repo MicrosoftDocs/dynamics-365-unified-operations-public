@@ -14,19 +14,19 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../includes/banner.md)]
 
-Microsoft Azure announced the retirement of classic load balancers. To ensure the continued provisioning of CHE environments, Microsoft implemented provisioning for new CHE environments, and migrating existing CHE environments.
+Microsoft Azure announced the retirement of classic load balancers. To ensure that CHE environments can continue to be provisioned, Microsoft implemented provisioning for new CHE environments and migration for existing CHE environments.
 
 ## Provision new CHE environments
 
-On March 28, 2025, all new CHE environments are configured with a load balancer and public IP address that utilizes the standard SKU. This transition helps enhance the performance and reliability of our cloud infrastructure.
+As of March 28, 2025, all new CHE environments are configured with a load balancer and a public IP address that uses the standard stock-keeping unit (SKU). This transition helps enhance the performance and reliability of our cloud infrastructure.
 
 ## Migrate existing CHE environments
 
-Before proceeding with migration, it's crucial to ensure that you have the necessary permissions and contributor access to the subscription. This access allows you to upgrade the load balancer without encountering any permission-related issues. Once you verify your access, you can proceed with setting the required variables and executing the migration commands.
+Before you migrate, it's crucial to ensure that you have the necessary permissions and contributor access to the subscription. This access allows you to upgrade the load balancer without encountering any permission-related issues. After you verify your access, you can set the required variables and run the migration commands.
 
 To migrate existing CHE environments, follow these steps.
 
-1. Set  subscription ID, resource group, and load balancer name variables
+1. Set the variables for the subscription ID, resource group name, and load balancer name.
 
    ```powershell
    $resourceGroupName = "<resourcegroup-name>"
@@ -35,13 +35,14 @@ To migrate existing CHE environments, follow these steps.
    $outboundRuleName= "http-outbound-rule"
    $backendPoolName = "vm-backend-pool"
    ```
-2. Ensure you selected the correct subscription ID associated with the Basic Load Balancer by running the following command:
+
+1. Run the following command to ensure that you specified the correct subscription ID that is associated with the basic load balancer.
 
    ```powershell
-   Select-AzSubscription –Subscription $subscriptionId
+   Select-AzSubscription -Subscription $subscriptionId
    ```
 
-3. Run the following commands to initiate the load balancer migration. This command installs the load balancer upgrade module, and upgrades the basic load balancer and IP address to the standard SKU.
+1. Run the following commands to initiate the load balancer migration. This command installs the load balancer upgrade module. It also upgrades the basic load balancer and IP address to the standard SKU.
 
    ```powershell
    Install-Module -Name AzureBasicLoadBalancerUpgrade -Scope CurrentUser -Repository PSGallery -Force
@@ -49,24 +50,24 @@ To migrate existing CHE environments, follow these steps.
    ```
 
    > [!NOTE]
-   > The Basic Load Balancer supports outbound traffic by default, allowing seamless internet access for your virtual machines. However, the standard SKU load balancers don't automatically permit outbound access for backend pool members. Therefore, you need to take other steps to enable this critical functionality and ensure that your virtual machines can communicate with the internet for updates, data transfer, and other essential operations:
+   > The basic load balancer supports outbound traffic by default. Therefore, it enables seamless internet access for your virtual machines (VMs). However, the standard SKU load balancers don't automatically permit outbound access for backend pool members. To enable this critical functionality, you must complete the remaining steps of this procedure. In this way, you ensure that your VMs can communicate with the internet for updates, data transfers, and other essential operations.
 
-4. Create the backend pool.
+1. Create the backend pool.
 
    ```powershell
    $loadBalancer = Get-AzLoadBalancer -ResourceGroupName $resourceGroupName -Name $loadBalancerName
    $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name $backendPoolName
    ```
- 
-5. Link all virtual machines (VM) to the standard load balancer, connect the NIC (network interface card) with the backend pool.
+
+1. Link all VMs to the standard load balancer, and connect the network interface card (NIC) with the backend pool.
 
    ```powershell
    $nic = Get-AzNetworkInterface -ResourceGroupName $resourceGroupName
    $ipConfig = $nic.IpConfigurations | Where-Object { $_.PrivateIpAddress -ne $null }
    $ipConfig.LoadBalancerBackendAddressPools.Add($backendPool)
-   ```   
+   ```
 
-7. Add the backend pool to the load balancer.
+1. Add the backend pool to the load balancer.
 
    ```powershell
    $loadBalancer.BackendAddressPools.Add($backendPool)
@@ -78,16 +79,16 @@ To migrate existing CHE environments, follow these steps.
    Set-AzNetworkInterface -NetworkInterface $nic
    ```
 
-The backend pool should be created with following configurations:
-- **BackendPoolConfiguration** with NIC type.
-- **IP configurations** with list of all virtual machine(s) that need outbound connectivity.
-- **Used by** section should contain http-outbound-rule in the list.
+The backend pool that is created should have following configuration:
 
-  
+- **BackendPoolConfiguration** should be of the **NIC** type.
+- **IP configurations** should list all VMs that need outbound connectivity.
+- The **Used by** section should contain **http-outbound-rule** in the list.
+
 ## More information
 
-- If any of the above commands fail or encounter an issue, refer to this comprehensive guide: [Upgrade a basic load balancer with PowerShell](/azure/load-balancer/upgrade-basic-standard-with-powershell).
-- If you have multiple CHE environments, ensure the successful migration of one of the CHE environments before proceeding with bulk migrations.
-- Learn about standard sku load balancer pricing in [Load Balancing pricing](https://azure.microsoft.com/pricing/details/load-balancer).
+- If any of the preceding commands fails or encounters an issue, refer to the comprehensive guide, [Upgrade a basic load balancer with PowerShell](/azure/load-balancer/upgrade-basic-standard-with-powershell).
+- If you have multiple CHE environments, ensure the successful migration of *one* of them before you move on to bulk migrations.
+- Learn about pricing for the standard SKU load balancers in [Load Balancer pricing](https://azure.microsoft.com/pricing/details/load-balancer).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
