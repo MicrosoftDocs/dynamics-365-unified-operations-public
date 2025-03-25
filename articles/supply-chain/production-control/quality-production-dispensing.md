@@ -123,5 +123,4 @@ The following procedure provides an example of using **Production dispensing** w
 1. Select **Post dispensed** to complete the registered values for dispensing. This process will calculate the average of registered values and update it in the field **Dispensed** for the product in the **Journal lines** section. Notice, that you will get an error in this process, if the dispensed a quantity exceeds the thresholds defined on the product.
 1. When you have completed all the lines in the **Dispensing ticket**, select **Confirm** from the toolbar. This action will update the calculated value in the **Dispensed** field in the **Dispensing pick journal**.
 1. After confirming the dispensed quantities, select **Post** which will post the **Dispensing pick list** journal with the dispensed quantities. This action will also create a **Dispensing adjustment** journal with a proposal to return a quantity that equals the difference between the quantity that has been staged to the production order and the quantity that has been dispensed. 
-1. 
 
