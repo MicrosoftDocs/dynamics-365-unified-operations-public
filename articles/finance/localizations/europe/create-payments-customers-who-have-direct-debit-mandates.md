@@ -7,7 +7,8 @@ ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 03/27/2025
-ms.reviewer: johnmichalak    
+ms.reviewer: johnmichalak
+ms.search.region: Global 
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, SysQueryForm, CustPaymProposalEdit, BankAccountTableLookUp
 ---
@@ -22,7 +23,7 @@ The following procedures show how to generate an ISO20022 direct debit payment f
 
 Before completing these procedures, you must first import customer payment electronic reporting configurations, configure method of payments, and set up your company and customer information. 
 
-The following procedures use the BRMF demo company.
+The following procedures use the DEMF demo company.
 
 ## Post a free text invoice with direct debit information
 
