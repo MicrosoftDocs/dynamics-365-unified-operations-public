@@ -18,7 +18,7 @@ Before you create records for customers and vendors who are located in the Domin
 - Create the tax codes that will be used for Tax on Transfers of Industrialized Goods and Services (ITBIS), including ITBIS 18%, 0%, etc. 
 - Sales tax groups that contain the tax codes that were created.
 - Item sales tax groups that contain the tax codes that were created.
-- Create Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. Learn more in [Configure sales and purchase invoices for the Dominican Republic](agregar link).
+- Create Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. Learn more in [Configure sales and purchase invoices for the Dominican Republic](ltm-Configure-invoices-Dominican Republic.md).
 - A customer and vendor set that contains all the document classes that will be used.
 - A tax ID for each type of tax identification that your customers and vendors have.
 - A taxpayer type for each type of taxpayer that your customers and vendors have.
