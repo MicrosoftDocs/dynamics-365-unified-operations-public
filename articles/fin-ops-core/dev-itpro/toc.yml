@@ -637,6 +637,8 @@ items:
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
           href: dev-tools/development-system-requirements.md
+        - name: Migrate a CHE load balancer
+          href: dev-tools/migrate-che-load-balancer.md
       - name: X++ Application lifecycle management
         items: 
         - name: Version control, metadata search, and navigation
