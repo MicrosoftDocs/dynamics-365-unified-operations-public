@@ -623,6 +623,8 @@
         href: ../finance/cost-accounting/terms-cost-accounting.md?context=/dynamics365/context/supply-chain
       - name: Fiscal calendars, fiscal years, and periods
         href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?context=/dynamics365/context/supply-chain
+      - name: Ledger and subledger accounting overview
+        href: ../finance/general-ledger/ledger-subledger.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions
         href: ../finance/general-ledger/financial-dimensions.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions and posting

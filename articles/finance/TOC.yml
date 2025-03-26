@@ -794,6 +794,8 @@
               href: cost-accounting/terms-cost-accounting.md
             - name: Fiscal calendars, fiscal years, and periods
               href: budgeting/fiscal-calendars-fiscal-years-periods.md
+            - name: Ledger and subledger accounting overview
+              href: general-ledger/ledger-subledger.md
             - name: Financial dimensions
               href: general-ledger/financial-dimensions.md
             - name: Financial dimensions and posting
