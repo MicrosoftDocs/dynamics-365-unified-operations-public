@@ -1,5 +1,5 @@
 ---
-title: Manage Azure Maps for your organization (preview)
+title: Manage Azure Maps for your organization
 description: Learn how to manage Microsoft Azure Maps in Dynamics 365 Commerce.
 author: ritakimani1
 ms.date: 03/26/2025
@@ -13,10 +13,9 @@ ms.custom:
   - bap-template
 ---
 
-# Manage Azure Maps for your organization (preview)
+# Manage Azure Maps for your organization
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to manage Microsoft Azure Maps in Dynamics 365 Commerce.
 
