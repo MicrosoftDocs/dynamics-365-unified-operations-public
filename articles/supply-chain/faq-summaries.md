@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 11/07/2024
+ms.date: 03/26/2025
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
@@ -52,11 +52,11 @@ Intelligent vendor summaries include information about vendor on-hold status, ac
 
 ### Traceability activity summaries
 
-Traceability can collect activity events across the supply chain and product life cycle, but quickly getting a picture of a tracked object’s history might not be easy for users. Copilot can provide an initial summary of a large number of activity events for a single tracked object.
+The Traceability Add-in for Dynamics 365 Supply Chain Management can collect activity events across the supply chain and product lifecycle, but quickly getting a picture of a tracked object's history isn't always easy. Copilot provides an initial summary of a large number of activity events for a single tracked object.
 
 ### Traceability where-used summaries
 
-Traceability provides a comprehensive where-used insight report, enabling users to track the usage of items across various processes. Copilot offers a detailed summary at both the item number and quantity levels, allowing for precise analysis.
+Traceability provides a comprehensive where-used insight report, which lets you track the usage of items across various processes. Copilot offers a detailed summary at both the item-number and quantity levels, allowing for precise analysis.
 
 ## How were AI summaries with Copilot evaluated? What metrics are used to measure performance?
 
