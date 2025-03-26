@@ -11,30 +11,67 @@ manager:
 
 # Instrument calibration
 
-Certain test instruments that are used during quality control processes need to be regularly calibrated. Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration of an instrument allows people to have a safe working environment and produces valid data for future reference. Instruments that are not calibrated regularly can result in product which has incorrectly passed or failed quality control tests. This new feature adds capability around tracking individual test instrument tags, supports an on-going calibration process for the instrument tag and tracks usage of given tags against the quality order tests.
+Certain test instruments that are used during quality control processes need to be regularly calibrated. Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration of an instrument allows people to have a safe working environment and produces valid data for future reference. Instruments that are not calibrated regularly can result in product that has incorrectly passed or failed quality control tests. This feature makes it possible to track individual test instrument tags, supports an ongoing calibration process for instrument tags, and tracks usage of each tag against quality order tests.
 
-The instrument calibration feature found within Supply Chain Management offers enhanced quality management capability by providing robust functionality around test instrument tracking and calibration. The added functionality will give users the ability to:
+<!-- KFM: "tags" appear to be a key concept. We should introduce and define them here. -->
 
-- Track additional quality details related to Test instrument tags, such as Calibration groups, Test departments and Test owners.
-- Track additional information on the Test instrument tag and support new actions triggered from the Test instrument tag.
-- Track Test instrument type and Tag number on the quality order line and automatically assign Tag number if desired. The user can also be notified if the selected tool is not available.
-- Define whether the Test instrument tag requires calibration and if so, to track additional details about the calibration such as Calibration users, Calibration dates, Calibration tools, Calibration procedure and Calibration history.
-- Specify whether the Test instrument tag is to be calibrated based on Usage or Periodic schedule.
-    - If the calibration takes place based on Usage, then the user can define the usage triggers. A periodic utility will evaluate if the current usage is equal to or greater than the trigger usage count and then mark the instrument for calibration and create a calibration record.
-    - If the calibration takes place based on Periodic schedule, then the user can define the frequency of calibrations based on daily, monthly or yearly buckets. A schedule will be generated based on these frequencies and will populate the next calibration date field. A periodic utility will create calibration records for those instruments where the Next calibration date has been met.
+The instrument calibration feature provides robust functionality around test instrument tracking and calibration. It lets you:
 
-- Support calibration reporting such as Calibration Certificate and Calibration Schedule Report.
-- Support the ability to print Calibration labels as needed.
+- Track additional quality details related to test instrument tags (such as calibration groups, test departments and test owners).
+- Track additional information on each test instrument tag and trigger actions from the tag.
+- Track the test instrument type and tag number on each quality order line and automatically assign a tag number if desired. You can also be notified when a selected tool is not available.
+- Define whether each test instrument tag requires calibration and, if so, track additional details about the calibration (such as calibration users, calibration dates, calibration tools, calibration procedure and calibration history).
+- Specify whether each test instrument tag is to be calibrated based on usage or periodic schedule.
+    - If calibration takes place based on usage, then you can define the usage triggers. A periodic utility evaluates the current usage and if it's  equal to or greater than the trigger usage count, it marks the instrument for calibration and creates a calibration record.
+    - If the calibration takes place based on a periodic schedule, then you can set the frequency of calibrations using daily, monthly, or yearly buckets. The system generates a schedule is generated based on these frequencies and updates the next calibration date field. A periodic utility creates calibration records for those instruments where the next calibration date has been met.
 
-## Set up Instrument Calibration
+- Generate calibration reports such as calibration certificates and calibration schedule reports.
+- Print calibration labels as needed.
 
-Parameters drive several components for instrument calibration. The following are the Inventory management parameters found under Quality management used by the Instrument calibration feature. The first three checks are used when processing a quality order that uses a calibrated test instrument. The system can optionally check with an error or a warning if the selected test instrument tag is currently being calibrated, if the maximum usage for the instrument tag has been exceeded and/or if the lifetime maximum usage for the instrument tag has been exceeded. If configured to do so, the system can automatically attempt to assign available test instrument tags to quality order lines when created. If not assigned automatically, they will need to be assigned manual for tests that use test instrument tags. The last four fields for the Test instrument calibration parameters are used as defaults for printing calibration labels. Calibration labels can be printed from a given test instrument tag or a given calibration record. The Calibration label will use a layout that is set as a parameter and defaulted to the test instrument type. The label can be printed to a file or to a ZPL printer. These parameters set up the default values for this data that can be overridden at printing time.
+## Prerequisites
 
-To accommodate the added functionality, the **Test instrument** form has been modified to allow the user to specify if the instrument type requires a Tag. On this standard form, there are three new fields used with instrument calibration. **Tag number required** needs to be selected to trigger additional functionality around tracking test instrument tags.**Used for calibration** indicates that this type of instrument is a tool used when calibrating. The **Calibration label layout** identifies what the Calibration label should look like when printed. To add tags to the instrument, the user will have to select the **Tag number required** field. To add tags to the instrument, the user can either click the Test instrument tags ribbon action or go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instrument tags**.
+To use instrument calibration features in Supply Chain Management, your system must meet the following requirements:
 
-For additional tracking of test instrument tags, **test locations** can optionally be defined and subsequently associated to a test instrument tag. Test locations can be used to identify the location where this test instrument tag is tested.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: more here? right FM? -->
 
-### Set up calibration groups
+## Set up instrument calibration parameters
+
+To set options that affect the way instruction calibration works across the system, follow these steps:
+
+1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Open the **Quality management** tab.
+1. Make the following settings in the **Test instrument calibration** field group.
+    - **Automatically assign test instrument tag number on quality order line** – Set this option to *Yes* if the system should attempt to automatically assign the best available test instrument tag to new quality order test lines. If you set this to *No*, then tags must be assigned manually for tests that use test instrument tags.
+    - If not assigned automatically, they will need to be assigned manual for tests that use test instrument tags
+    - **Check if test instrument is being calibrated** – Select the action to take from a quality order when the test instrument tag assigned to a line result has a usage status of *Calibration*. This is a default for new test instrument tags. Choose one of the following values.
+        - *No check* – Skip this check.
+        - *Warning only* – If the instrument is being calibrated, then show a warning message but allow the instruction to be used.
+        - *Not allowed* – If the instrument is being calibrated, then show an error messages that says the instrument can't be used.
+    - **Check for maximum usage before calibration when assigning tag numbers** – Select the action to take from a quality order when the maximum usage before calibration is exceeded for a given test instrument tag. Choose one of the following values.
+        - *No check* – Skip this check.
+        - *Warning only* – If the instrument is due for calibration, then show a warning message but allow the instruction to be used.
+        - *Not allowed* – If the instrument is due for calibration, then show an error messages that says the instrument can't be used.
+    - **Check for lifetime usage maximum when assigning tag numbers** – Select the action to take from a quality order when the lifetime usage maximum is exceeded for a given test instrument tag. Choose one of the following values.
+        - *No check* – Skip this check.
+        - *Warning only* – If the instrument has exceeded it's lifetime usage maximum, then show a warning message but allow the instruction to be used.
+        - *Not allowed* – If the instrument has exceeded it's lifetime usage maximum, then show an error messages that says the instrument can't be used.
+    - **Skip check for test instrument on open quality order** – Set this option to *No* to check whether a chosen test instrument tag is already assigned to an open quality order. Set to *Yes* to skip this check. <!-- KFM: What happens if we fail this check? What is the purpose of this check? -->
+    - **Label layout** – Select the label layout to use when printing calibration labels. <!-- KFM: We probably need a section or topic that explains how/where to create these layouts. Seems like we can generate a sample layout from the navigator. -->
+    - **Print destination** – Choose where to print calibration labels.  Choose one of the following values.
+        - *Printer* – Print physical labels to a printer.
+        - *File* – Save labels to a file. <!-- KFM: Where can I find these? How do I use them? -->
+    - **Printer name** – If you set **Print destination** to *Printer*, then select the name of the printer to use here.
+
+## Set up test instruments
+
+Use the **Test instruments** page to define and view details about the devices that are used to perform calibration and tests on quality orders. Test instruments help quality workers know which device or tool they should use to calibrate instructions and perform other types of tests. For each test instrument that you define, you can choose whether the instrument is used for calibration, whether a tag number is required, and which label layout to use when printing calibration labels. Learn more in [Quality management test instruments](quality-test-instruments.md).
+
+<!-- KFM: The original doc mentions test locations here, but never mentions them again. Should we document these?  "For additional tracking of test instrument tags, **test locations** can optionally be defined and subsequently associated to a test instrument tag. Test locations can be used to identify the location where this test instrument tag is tested." -->
+
+## Set up calibration groups
+
+<!-- KFM: Intro needed. What is a calibration group and why do I need them? -->
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Calibration groups**.
 1. Create or edit a calibration group.
@@ -50,8 +87,8 @@ For additional tracking of test instrument tags, **test locations** can optional
       - *Year* – Select this option to specify that the frequency specified will be based on years.
     - **Calibration period frequency** – The numeric frequency of when the instrument is to be calibrated. Note: This field will only be active and is required when the Calibration method is Periodic. For example, if Calibration period is Month, then a 3 in this field represents the fact that the instrument tag should be calibrated every 3 months.
     - **Calibration usage update method** – The usage method to be used when updating current usage of the test instrument based on the usage of the quality order test line. Note: This field is only active and is required when the Calibration method is Usage. For example:
-      - *Fixed increment* – Select this option to update the usage count by the specified Usage increment each time a Quality order with the Instrument tag is validated.
-      - *Test quantity* – Select this option to update the usage count by the specified test quantity of a Quality order test each time a Quality order with the Instrument tag is validated.
+      - *Fixed increment* – Select this option to update the usage count by the specified Usage increment each time a quality order with the Instrument tag is validated.
+      - *Test quantity* – Select this option to update the usage count by the specified test quantity of a quality order test each time a quality order with the Instrument tag is validated.
     - **Usage increment** – The increment by which to increase the usage count of an instrument each time it is used. Note: This field is only active and is required when the Calibration method is Usage and the Calibration usage update method is Fixed increment. For example, with a usage increment of 2, you can indicate that with every validated quality order, no matter how many units are tested, the usage count should be updated twice.
     - **Usage count trigger for calibration** – The numeric value used to trigger a calibration for a given instrument. The instrument can still be used until the Maximum usage before calibration is met. Note: This field is only active and is required when the Calibration method is Usage. For example, if the usage count trigger is 100, then after a given test instrument tag reaches 100 usages, when run, the periodic job to create calibration records will create one for this test instrument tag.
     - **Maximum usage before calibration** – The maximum number of times the instrument tag should be used before it is calibrated. Note: This field is only active and is required when the Calibration method is Usage. For example, the usage count trigger could be 100 but the maximum usage before calibration could be 125. This means that calibration could be triggered after 100 but the tag can still be used, until it reaches 125 usages. Inventory management parameter is used to determine if the quality order checks for maximum usage before calibration.
@@ -59,9 +96,9 @@ For additional tracking of test instrument tags, **test locations** can optional
 
 When a given test instrument tag is identified as one that is calibrated, then a **calibration procedure** may be attached to the test instrument tag. The procedure provides details on exactly how the tag should be calibrated. The calibration procedure also can track if an external vendor is involved in the calibration process. This data is stored for informational purposes. Attachments can also be added to the Calibration procedure. If attachments are available, they will be transferred from the procedure to the test instrument tag to associated calibration records.
 
-### Set up test instrument tags
+## Set up test instrument tags
 
-The main element of this feature revolves around the test instrument tag. A given test instrument type can have many tags, which uniquely defines the instrument. This form supports many details about the test instrument tag. For example, the tag will specify data such as the Manufacturer, Warranty number, Acquisition date and Specifications. The instrument tag can also be designated for Calibration. When calibration is required, a Calibration group defines the method and calibration details regarding the test instrument tag.
+The main element of this feature is the *test instrument tag*. A given test instrument type can have many tags, which uniquely defines the instrument. This form supports many details about the test instrument tag. For example, the tag will specify data such as the manufacturer, warranty number, acquisition date and specifications. The instrument tag can also be designated for Calibration. When calibration is required, a Calibration group defines the method and calibration details regarding the test instrument tag.
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instrument tags**.
 1. Create or edit a test instrument tag.
@@ -73,9 +110,9 @@ The main element of this feature revolves around the test instrument tag. A give
     - **Instrument description** – The description of the Test instrument. The description of the type of instrument.
     - **Instrument usage status** – The current status of the selected Test instrument tag. Valid values are Available, Calibration and Out of service.
     - **Check if test instrument is being calibrated** – The action to take on a quality order when the Instrument usage status of the selected tag is Calibration. Defaults from the Quality management tab of the Inventory and warehouse management parameters to new Test instrument tags but can be changed by test instrument tag. The available options are:
-        - *Not allowed* – When selected, if the selected tag is being calibrated, it will not be allowed to be used on a Quality order test.
-        - *Warning only* – When selected, if the selected tag is being calibrated, it will be allowed to be used on a Quality order test with a warning message.
-        - *No check* – When selected, if the selected tag is being calibrated, it will be allowed to be used on a Quality order test.
+        - *Not allowed* – When selected, if the selected tag is being calibrated, it will not be allowed to be used on a quality order test.
+        - *Warning only* – When selected, if the selected tag is being calibrated, it will be allowed to be used on a quality order test with a warning message.
+        - *No check* – When selected, if the selected tag is being calibrated, it will be allowed to be used on a quality order test.
     - **Restricted use** – Indicates if the selected test instrument is for restricted use. Informational purposes only.
     - **Used for calibration** – Indicates if the selected test instrument is used in a calibration process. Note: Field is not editable; defaults from the Test instrument form. If used for calibration, then it can be entered as a Calibration tool while calibrating an instrument.
 
@@ -97,8 +134,8 @@ The main element of this feature revolves around the test instrument tag. A give
 
     - **Calibration required** – Indicates if calibration is required for the test instrument. If not selected, then the entire FastTab is not editable.
     - **Calibration procedure name** – The name of the procedure used for calibration of the test instrument.
-    - **External calibrating vendor** – The account number of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the Calibration procedures form.
-    - **External vendor name** – The name of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the Calibration procedures form.
+    - **External calibrating vendor** – The account number of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the **Calibration procedures** page.
+    - **External vendor name** – The name of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the **Calibration procedures** page.
     - **Calibration start date** – The date that calibration calculations should be driven from for the first calibration. For example, if the Calibration method is periodic and performed every 3 months, this date represents the 3 months from what date. This date should default to the current date for a new record and can be changed up until the point that a calibration is performed on the instrument.
     - **Usage count since last calibration** – The number of times this instrument has been used since its last calibration. This field applies only when the Calibration method is Usage and is used to determine when the next calibration is due. When the instrument is calibrated/approved, this value shall be reset to zero.
     - **Lifetime usage count** – Represents the number of times the instrument tag has been used over its lifetime; used to determine when lifetime usage is reached. If the associated Calibration method is Usage, then this field is populated by the system but can be overridden by the Override usage data Functions ribbon action. If the associated Calibration method is Manual or Periodic, then this field will not be populated by the system but can still be changed by using the Override usage data Functions ribbon action.
@@ -145,7 +182,7 @@ The **Test instrument tags** page provides the following buttons on its Action P
 - **Print** – Select to print either a Calibration label or Calibration certificate.
 - **Attachments** – Select to add/view/modify documents attached to the selected instrument tag.
 
-## Using Instrument calibration process
+## Calibrate an instrument
 
 To automatically create a record of the calibration of a test instrument, there is a batch job called Create calibration record that is available for the user to execute as needed. The user will have the ability to run the job based on a specific Approval date, Calibration method, Tag number or several other options.
 
@@ -172,9 +209,9 @@ The **Test instrument calibration record detail** form allows recording of all a
     - **Instrument usage status** – Indicates the current status of the Test instrument tag. From this form, it is a display field and will display as Available, Calibration or Out of Service.
     - **Calibration procedure name** – The calibration procedure used on the selected calibration record. This will default from the test instrument tag but can be changed on the calibration record.
     - **Description** – The description of the calibration procedure.
-    - **External calibrating vendor** – The account number of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the Calibration procedures form.
-    - **External vendor name** – The name of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the Calibration procedures form.
-    - **Calibration procedure** – The procedures as specified on the Calibration procedure form. Field is not editable; defaults from the Calibration procedures form.
+    - **External calibrating vendor** – The account number of the external vendor used with the associated calibration procedure. Field is not editable; defaults from the **Calibration procedures** page.
+    - **External vendor name** – The name of the external vendor used with the associated Calibration procedure. Field is not editable; defaults from the **Calibration procedures** page.
+    - **Calibration procedure** – The procedures as specified on the Calibration procedure form. Field is not editable; defaults from the **Calibration procedures** page.
     - **Started by** – The user that started the calibration. This field is updated by the Start calibration action.
     - **Started date** – The date the calibration was started. This field is updated by the Start calibration action.
     - **Completion assignee** – The user responsible for assigning the user that will complete the calibration. This field defaults from the test instrument tag but can be modified.
@@ -207,17 +244,17 @@ The **Calibrate test instruments** page provides the following buttons on its Ac
 - **Print – Calibration certificate** – Select to print the calibration certificate for the selected calibration record. The Calibration record has to either be completed or approved in order to print a Calibration certificate.
 - **Attachments** – Select to add/view/modify documents attached to the selected calibration record.
 
-## Using Instrument Calibration Tags on a Quality order
+## Apply instrument calibration tags to a quality order
 
-The specification of a test instrument on a Quality order line has been expanded to include the selection of a test instrument tag. When a test instrument that is selected for use on a Quality order requires a tag, the Quality order cannot be validated without the selection of a tag on the quality order result line.
+The specification of a test instrument on a quality order line has been expanded to include the selection of a test instrument tag. When a test instrument that is selected for use on a quality order requires a tag, the quality order cannot be validated without the selection of a tag on the quality order result line.
 
-There is an added field in the Inventory and warehouse management parameters called Automatically assign test instrument tag number on quality order line that when selected, will sort through the tags for the instrument and select the best available tag for the quality test. If this parameter is not selected, the user will have to manually select a tag on the Quality order line or the Quality order results line when the quality order is updated.
+There is an added field in the Inventory and warehouse management parameters called Automatically assign test instrument tag number on quality order line that when selected, will sort through the tags for the instrument and select the best available tag for the quality test. If this parameter is not selected, the user will have to manually select a tag on the quality order line or the quality order results line when the quality order is updated.
 
 If a tag has an Instrument usage status of Out of service, then it will not be available for selection. If the tag has an Instrument usage status of Calibration, depending on the specific of the tag, it may or may not be available for selection on the Quality test. Additionally, depending on parameter validations, the system might also optionally either warn or send an error to the user, if the chosen test instrument tag has exceeded its maximum usage and/or its lifetime usage. Also, if the chosen test instrument tag is currently being used on an open quality order, a warning message will also be provided to the user.
 
 Once validated, if the chosen test instrument tag is calibrated based on Usage, then the usage counts on the test instrument tag are updated based on the quality order. The current usage count and the lifetime usage count will be incremented by either the test quantity or the usage increment depending on the details of the calibration group on the test instrument tag.
 
-## Printing Calibration Reports
+## Print calibration reports
 
 There are three calibration related reports provided:
 

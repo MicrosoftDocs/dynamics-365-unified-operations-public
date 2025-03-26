@@ -29,10 +29,10 @@ To use the features described in this article, your system must meet the followi
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-    - *Approved customer list* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
-    - *Dispense management* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
-    - *Electronic signature improvements* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
-    - *Advanced quality management* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
+    - *(Preview) Approved customer list* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
+    - *(Preview) Dispense management* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
+    - *(Preview) Electronic signature improvements* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
+    - *(Preview) Advanced quality management* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
 
 ## Key features of advanced quality management
 
