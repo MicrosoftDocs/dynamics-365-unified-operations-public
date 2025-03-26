@@ -126,7 +126,7 @@ To validate the integration from your production with production MTD endpoint of
 7. In the **Run processing** dialog box, the **Retrieve VAT obligations** action is automatically defined, and information is filled in by the system. Select **OK**.
 8. See the warning message in the dialog: *By selecting this action, a request will be sent to HMRC's **production** endpoint. Do you want to proceed?* This message informs the user which endpoint (sandbox or production) the request will be sent to. Click **Yes** to proceed or **No** to cancel.
 9. In the next dialog you can see the **System administrator consent**. It is shown only for the first time the integration is enabled in your Finance. Select **Agree** to proceed or **Disagree** to cancel.
-10. You are transferred to `https://test-www.tax.service.gov.uk/oauth/…` page for authorization, click **Continue**.
+10. You are transferred to the HMRC's web portal for authorization, click **Continue**.
 11. In HMRC portal, click **Sign in** and provide your user ID and password.
 12. In HMRC portal, click **Give permission**.
 13. In HMRC portal, on the next page, the authorization code is shown. Click **Copy** to copy the code to the clipboard.
