@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/24/2024
+ms.date: 03/03/2025
 
 ---
 
@@ -146,7 +146,7 @@ You must also define an accessor method for the properties to get and set the va
 
 #### Define the operation
 
-Use the `run` method of the `ICustomAPI` interface to define the code that runs when the operation is invoked. This code is the business logic that defines the action that is run for the AI operation. In this method, set the values of any response properties that should be returned to Copilot Studio when the operation is completed.
+To define the code that runs when the operation is invoked, use the `run` method of the `ICustomAPI` interface. This code is the business logic that defines the action that is run for the AI operation. In this method, set the values of any response properties that should be returned to Copilot Studio when the operation is completed.
 
 ## Define plugin security
 
@@ -162,40 +162,138 @@ For each class, follow these steps.
 
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
+After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. The grid includes every class that meets the following criteria:
+
+- It implements the `ICustomApi` interface.
+- It contains the `[CustomApi]` attribute.
+- It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
+
 > [!NOTE]
-> The menu item for the class must be assigned to a security role. Otherwise, the custom API, AI plugin, and AI plugin operation records aren't created in Dataverse. <br><p>
-> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. This is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. You can do this by adding the class runner to your environment URL:<br><p>
+> The menu item for the class must be assigned to a security role. Otherwise, the custom API, AI plugin, and AI plugin operation records aren't created in Dataverse.
+>
+> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. This is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. You can do this by adding the class runner to your environment URL:
+>
 > `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=SysClassRunner&cls=SysFlushAOD`
 
-## Generate the Copilot plugin
+## Create the Copilot plugin
 
-After the operation is defined in X++ and deployed in your finance and operations environment, you must generate the custom API and AI plugin in Dataverse. The AI plugin is added to the Dataverse plugin registry and can then be added to copilots as an action. The plugin is configured to invoke the custom API, which runs the code that is defined in X++.
+After the operation is defined in X++ and deployed in your finance and operations environment, you must create the custom API and AI plugin in Dataverse. The AI plugin must be added to the Dataverse plugin registry to make it available so that it can be added to agents as an action. The plugin is configured to invoke the custom API, which runs the code that is defined in X++.
 
-To generate the custom API and AI plugin, follow these steps.
+Three objects must be created in Dataverse to call the code in finance and operations apps: a Dataverse custom API, an AI plugin, and an AI plugin operation. These objects should be created in the Power Apps solution that is deployed with your agent or extension.
 
-1. Open the finance and operations apps client for the environment where you deployed your new X++ class.
-1. Open the **Synchronize Dataverse Custom APIs** page (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). If the menu navigation isn't available in your environment, you can go directly to the menu item by adding the `mi=CustomApiTable` parameter to the environment URL. Here's an example:
+### Create the Dataverse custom API
 
-    `https://<environment>.operations.dynamics.com/?cmp=USMF&mi=CustomApiTable`
+The [Dataverse custom API](/power-apps/developer/data-platform/custom-api) is the API object that has the request and response parameters that are used to invoke the X++ class in finance and operations apps. Complete the procedures in this section to create the custom API.
 
-1. On the list page, ensure that your class is included in the grid. The grid includes every class that meets the following criteria:
+#### Create the API
 
-    - It implements the `ICustomApi` interface.
-    - It contains the `[CustomApi]` attribute.
-    - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
+1. In [Power Apps](https://make.powerapps.com), open your solution.
+1. Select **New** \> **More** \> **Other** \> **Custom API**.
+1. On the **New Custom API** page, enter the following details for the API:
 
-1. Select the **Synchronize** action.
+    - **Unique Name**: The unique name must be in the following format:
 
-The synchronization process synchronizes all listed classes with Dataverse and adds them to the **Dynamics 365 ERP Virtual Entities** solution. You can confirm that the classes were created and added to the solution in the **Custom API** list, together with the associated request parameters and response properties.
+        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the action*\>
 
-For each class that also contains the `[AIPluginOperationAttribute]` attribute, a record for the AI plugin is created in the same solution. An `AIPlugin` record is created for each security role that is configured in finance and operations apps. This record contains an assigned class that has the `[AIPluginOperationAttribute]` attribute. The associated `AIPluginOperaton` records are linked to the plugin.
+        For example, enter **jch_CustomAPICalculateCustomerBalance**.
+
+    - **Name** and **Display Name**: Enter a friendly name to identify the custom API.
+    - **Description**: Enter a description of the business operation that the API performs. This description should match the description that is provided in the X++ class.
+    - **Plugin Type**: Select **Microsoft.Dynamics.Fno.Copilot.Plugins.InvokeFnoCustomAPI**.
+
+1. Save and close the new custom API.
+
+#### Add request parameters to the API
+
+After you create the API, you must add parameters to it. To create request parameters, follow these steps for each `CustomAPIRequestParameter` property in your X++ class.
+
+1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
+1. On the **New Custom API Request Parameter** page, enter the following details for the parameter:
+
+    - **Custom API**: Select the custom API that you created.
+    - **Unique Name**: Use the following format:
+
+        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the action*\>\_\<*Name of the data member for the CustomAPIRequestParameter property in your class*\>
+
+        For example, enter **jch_CustomAPICalculateCustomerBalance_accountNumber**.
+
+    - **Name** and **Display Name**: You should enter the name of the data member for the property in your X++ class.
+    - **Description**: Enter a description of the property that is defined in your class.
+    - **Type**: Select the data type of the property.
+    - **Is Optional**: Select whether the property is a required or optional input for the action.
+
+1. Save and close the custom API request parameter.
+
+#### Add response properties to the API
+
+Response properties are the outputs of the action. To create response properties, follow these steps for each `CustomAPIResponseProperty` property in your X++ class.
+
+1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Response Property**.
+1. On the **New Custom API Response Property** page, enter the following details for the parameter:
+
+    - **Custom API**: Select the custom API that you created.
+    - **Unique Name**: Use the following format:
+
+        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the action*\>\_\<*Name of the data member for the CustomAPIResponseProperty property in your class*\>
+
+        For example, enter **jch_CustomAPICalculateCustomerBalance_balance**.
+
+    - **Name** and **Display Name**: You should enter the name of the data member for the property in your X++ class.
+    - **Description**: Enter a description of the property that is defined in your class.
+    - **Type**: Select the data type of the property.
+
+1. Save and close the custom API response property.
+
+### Create the AI plugin
+
+The AI plugin is the grouping of AI operations that are associated with the security role. The AI plugin record is the registration for the plugin in the Dataverse plugin registry. The plugin should be based on a specific security role. Users who have access to the plugin should have permissions to perform all operations in it.
+
+1. In your solution, select **New** \> **More** \> **Other** \> **AIPlugin**.
+1. On the **New AIPlugin** page, enter the following details for the AI plugin record:
+
+    - **Name**: Use the following format:
+
+        \<*Your solution's prefix*\>\_\<*Name of the security role*\>
+
+        For example, enter **jch_SalesTeamCopilotRole**.
+
+    - **PluginType**: Select **Dataverse**.
+    - **ModelName**: Use the label for the security role in finance and operations apps. This label is shown for the plugin in Copilot Studio.
+    - **ModelDescription** and **HumanDescription**: Provide a description of the plugin and related operations.
+
+1. Save and close the AI plugin record.
+
+### Create the AI plugin operation
+
+The AI plugin operation is the registration in the Dataverse plugin registry for the business operation that is defined in your X++ class. The operation is assigned to an AI plugin in the registry. It then becomes available so that it can be added as an action in an agent. The operation is associated with the custom API to ensure that the correct logic is invoked when the action is included in an agent.
+
+1. In your solution, select **New** \> **More** \> **Other** \> **AIPluginOperation**.
+1. On the **New AIPluginOperation** page, enter the following details for the AI plugin operation record:
+
+    - **Name**: Use the following format:
+
+        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the operation*\>
+
+        For example, enter **jch_CustomAPICalculateCustomerBalance**.
+
+    - **AIPlugin**: Select the `AIPlugin` record that you created.
+    - **OperationId**: Use the following format:
+
+        \<*Your solution's prefix*\>\_\<*Name of the X++ class for the operation*\>
+
+    - **AI Plugin Operation Export Key**: Use the following format:
+
+        aiplugin.name=\<*Name of the AI plugin*\>,operationid=\<*Name of the AI plugin operation*\>
+
+        For example, enter **aiplugin.name=jch_SalesTeamCopilotRole,operationid=jch_CustomAPICalculateCustomerBalance**.
+
+    - **Description**: Enter a description of the operation from your X++ class.
+
+1. Save and close the AI plugin operation record.
 
 ## Add the action to your copilot
 
 For each operation that is listed in the plugin registry, you can add the action to any copilot that is connected to the registry in Copilot Studio. For example, you can add the action to Copilot for finance and operations apps or custom copilots.
-
-> [!NOTE]
-> You can't currently add the plugins to some Microsoft copilots, such as Copilot for Microsoft 365.
 
 To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps.
 

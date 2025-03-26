@@ -2,7 +2,7 @@
 title: Configure Ecuadorian purchase refunds printing
 description: Learn how to configure the Ecuadorian purchase refunds report for printing.
 author: Fhernandez0088
-ms.date: 12/30/2024
+ms.date: 01/17/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -29,6 +29,12 @@ Before you can generate and print the report, the following prerequisites must b
 - You must post vendor payments. Learn more in [Use the LATAM extension in vendor payments journals](/dynamics365/finance/localizations/iberoamerica/ltm-latam-in-vendor-payment).
 - You must post refund invoices. Learn more in [Ecuadorian refund invoice transactions posting](ltm-Ecuadorian-refund-invoice.md).
 
+## Additional configuration required for Ecuadorian Purchases refunds report:
+
+- You must create and use a **Tax Application** code for this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
+- You must configure the **Vendor identification ID type code** in the **Tax application** of the vendor **Tax Id type** as specified by the regulation. Learn more in [Document classes for Latin America](ltm-core-document-class.md)
+- You must configure the **Document type code** in the **Tax application** field of the **Document class types** used in transactions as specified by the regulation. Learn more in [Document class type for Latin America](ltm-core-document-class-type.md).
+
 ## Configure application-specific parameters
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in the transactions. Depending on the country/region that you want to configure the report for, the applicable conditions are shown.
@@ -36,7 +42,7 @@ Lookups and conditions are designed so that you can select the combination of do
 To configure application-specific parameters, follow these steps.
 
 1. Open the **Electronic Reporting** workspace, and select **Reporting configurations**.
-1. Select **Purchases refunds**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. Select the **EC Purchases Refund** format, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Lookups** FastTab, in the **Name** column, select **TaxType**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select a value.
@@ -45,7 +51,7 @@ To configure application-specific parameters, follow these steps.
 1. On the **Lookups** FastTab, in the **Name** column, select **VendorApplicableInvoices**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **Yes**.
-1. In the **Document classification Id** field, select a value.
+1. In the **Document classification Id** field, select a value (add all document classes involved in refund transactions except for the used in balance transactions).
 1. Repeat steps 10 and 11 to add as many more document classes as you need.
 1. On the **Lookups** FastTab, in the **Name** column, select **ApplicableWithholdings**.
 1. On the **Conditions** FastTab, select **Add**.
@@ -61,8 +67,9 @@ To configure application-specific parameters, follow these steps.
 To generate the purchase refunds report, follow these steps.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
-1. In the **Format mapping** field, select **Purchases refunds**.
+1. In the **Format mapping** field, select **EC Purchases Refund **.
 1. Select **OK**.
+3. In the parameters section, complete the **Tax application Id** field with the **Tax application** code created for this report.
 1. In the **From date** and **To date** fields, enter the date range to include on the report.
 1. Select **OK**.
 

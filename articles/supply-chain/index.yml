@@ -42,14 +42,16 @@ additionalContent:
     items:
     - title: Guidance
       links:
-      - url: /dynamics365/guidance/implementation-guide/overview
-        text: Dynamics 365 implementation guidance
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=/dynamics365/context/supply-chain
-        text: Implementation lifecycle management
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=/dynamics365/context/supply-chain
-        text: Implementation FAQ
-      - url: /dynamics365/guidance/implementation-guide/security
-        text: Security strategy
+      - text: Security, compliance, and privacy
+        url: /dynamics365/get-started/security
+      - text: Implementation guide
+        url: /dynamics365/guidance/implementation-guide/overview
+      - text: Implementation tools and samples
+        url: /dynamics365/guidance/resources/
+      - text: Migrate from on-premises to online
+        url: /dynamics365/guidance/migrate/overview
+      - text: End-to-end business processes
+        url: /dynamics365/guidance/business-processes/overview
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=/dynamics365/context/supply-chain
@@ -258,16 +260,16 @@ additionalContent:
         text: Bills of materials and formulas
     - title: Engineering change management
       links: 
-      - url: /dynamics365/supply-chain/engineering-change-management/engineering-scenarios
-        text: Engineering change management feature walkthrough
-      - url: /dynamics365/supply-chain/engineering-change-management/engineering-org-data-ownership-rules
-        text: Engineering companies and data ownership rules
-      - url: /dynamics365/supply-chain/engineering-change-management/engineering-versions-product-category
-        text: Engineering versions and engineering product categories
+      - url: /dynamics365/supply-chain/engineering-change-management/product-engineering-overview
+        text: Engineering change management overview
+      - url: /dynamics365/supply-chain/engineering-change-management/release-product-structure
+        text: Release product structures
       - url: /dynamics365/supply-chain/engineering-change-management/engineering-change-management
         text: Manage changes to engineering products
-      - url: /dynamics365/supply-chain/engineering-change-management/manage-formula-changes
-        text: Manage changes in formulas and their ingredients
+      - url: /dynamics365/supply-chain/engineering-change-management/engineering-scenarios
+        text: Engineering change management feature walkthrough
+      - url: /dynamics365/supply-chain/engineering-change-management/engineering-versions-product-category
+        text: Engineering versions and engineering product categories
     - title: Procurement and sourcing
       links: 
       - url: /dynamics365/supply-chain/procurement/procurement-sourcing
@@ -366,10 +368,12 @@ additionalContent:
       links:
       - url: /dynamics365/finance/cost-accounting/cost-accounting-home-page?context=/dynamics365/context/supply-chain
         text: Cost accounting overview
-      - url: /dynamics365/finance/cost-accounting/tasks/map-cost-element-dimension?context=/dynamics365/context/supply-chain
-        text: Map a cost element dimension
+      - url: /dynamics365/finance/cost-accounting/terms-cost-accounting?context=/dynamics365/context/supply-chain
+        text: Cost accounting terminology
       - url: /dynamics365/finance/cost-accounting/overhead-calculation?context=/dynamics365/context/supply-chain
         text: Overhead calculation
+      - url: /dynamics365/finance/cost-accounting/dimension-hierarchy?context=/dynamics365/context/supply-chain
+        text: Dimension hierarchy
     - title: Cost management  
       links: 
       - url: /dynamics365/supply-chain/cost-management/cost-management-home-page
@@ -400,10 +404,10 @@ additionalContent:
         - title: Dynamics 365 Commerce
           summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
           url: /dynamics365/commerce/
-        - title: Microsoft Supply Chain Center
-          summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
-          url: /supply-chain-platform/supply-chain-center/
-        - title: Microsoft Dynamics 365 Intelligent Order Management
+        - title: Dynamics 365 Human Resources
+          summary: Connect people and operations data to optimize workforce costs and take care of your employees.
+          url: /dynamics365/human-resources/
+        - title: Dynamics 365 Intelligent Order Management
           summary: Intelligent Order Management is a suite of capabilities to help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
           url: https://learn.microsoft.com/dynamics365/intelligent-order-management/
         - title: Microsoft Power Platform

@@ -4,7 +4,7 @@ description: Learn about the features of billing schedules, such as pricing meth
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 11/04/2021
+ms.date: 02/04/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -58,14 +58,14 @@ The net amount is calculated in the following way:
 
 **Example 2**
 
-The invoice quantity is 100, and the standard pricing method is used. Because the invoice quantity is in the 0–100 price quantity range, the unit price is 1.50.
+The invoice quantity is 100, and the standard pricing method is used. Because the invoice quantity is in the 100–200 price quantity range, the unit price is 1.25.
 
 > [!NOTE]
-> The invoice quantity is in the 0–100 range instead of the 100–200 range because, in the standard quantity matching behavior, a quantity matches if it's *more than or equal to* the "from" quantity and *less than* the "to" quantity.
+> The invoice quantity is in the 100–200 range instead of the 0–100 range because, in the standard quantity matching behavior, a quantity matches if it's *more than or equal to* the "from" quantity and *less than* the "to" quantity.
 
 The net amount is calculated in the following way:
 
-*Net amount* = (100 &times; 1.50) &divide; 1 = 150
+*Net amount* = (100 &times; 1.25) &divide; 1 = 125
 
 ### Tier pricing
 

@@ -4,7 +4,7 @@ description: Learn how to upgrade dual-write data to the party and global addres
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
-ms.date: 09/22/2023
+ms.date: 02/22/2025
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
@@ -14,8 +14,6 @@ ms.search.validFrom: 2021-03-31
 # Upgrade to the party and global address book model
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 The [Microsoft Azure Data Factory templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) help you upgrade the following existing data in dual-write to the party and global address book model: data in the **Account**, **Contact**, and **Vendor** tables, and postal and electronic addresses.
 
@@ -301,6 +299,14 @@ This section describes the setup that is required before you run the Party posta
     + msdyn_vendor Update
 
         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor
+          
+    +	Customeraddress
+        + Create
+            + Microsoft.Dynamics.GABExtended.Plugins.CreatePartyAddress: Create of customeraddress
+        + Update
+            + Microsoft.Dynamics.GABExtended.Plugins.CreatePartyAddress: Update of customeraddress
+        + Delete
+            + Microsoft.Dynamics.GABExtended.Plugins.DeleteCustomerAddress: Delete of customeraddress
 
     + msdyn_partypostaladdress
 

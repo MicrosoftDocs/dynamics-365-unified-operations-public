@@ -4,7 +4,7 @@ description: Learn how administrators can enable basic Copilot capabilities in f
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 02/13/2025
 ms.custom:
  - bap-template
 ms.reviewer: johnmichalak
@@ -44,7 +44,7 @@ The following illustration shows the components that are needed to use Copilot s
 
 ## Regional requirements
 
-Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see [Explore Copilot products by geography and languages](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
 
 ## Microsoft Power Platform requirements
 
@@ -62,7 +62,14 @@ The following table lists the Dynamics 365 apps that must be present in your Pow
 | Copilot summaries in Supply Chain Management and Copilot summaries in Commerce | Copilot in Dynamics 365 Supply Chain Management |
 | Copilot summaries in Finance | Copilot in Dynamics 365 Finance |
 
-Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, the apps might not yet be installed. To check for and install the required apps, follow these steps.
+Usually, all the required apps are already installed in your environment. However, if you only recently enabled Power Platform Integration for your environment, or if you're running a government cloud version of your finance and operations apps, the apps might not yet be installed.
+
+> [!NOTE]
+> In [US Government Community Cloud (GCC) and GCC-High environments](../../fin-ops/deployment/us-gcc-deployment.md), the required Copilot apps aren't installed in Dataverse by default. Copilot features controlled through [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) in finance and operations apps (such as [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)) remain enabled by default, but they won't work as expected until the required apps are installed in Dataverse.
+>
+> Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
+
+To check for and install the required apps, follow these steps.
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your environment to open its detailed view.
@@ -101,6 +108,7 @@ As was previously mentioned, most Copilot features in finance and operations app
 | All finance and operations apps | Basic Copilot support | There are no additional requirements. |
 | All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copilot-generative-help.md). |
 | All finance and operations apps | Workflow history summary | [Turn on Copilot support for the Workflow history page](../../fin-ops/organization-administration/workflow-history-summary.md) |
+| All finance and operations apps | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences](enable-copilot-feedback.md) |
 | Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md). |
 | Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md). |
 | Dynamics 365 Finance | Customer page summary | [Enable customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md). |

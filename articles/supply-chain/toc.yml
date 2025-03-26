@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.43 (March 2025)
+          href: get-started/whats-new-scm-10-0-43.md         
         - name: Supply Chain Management 10.0.42 (December 2024)
           href: get-started/whats-new-scm-10-0-42.md
         - name: Supply Chain Management 10.0.41 (September 2024)
@@ -275,17 +277,17 @@
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
-              href: ../finance/localizations/global/e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
             - name: Import a feature from the Global repository
-              href: ../finance/localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
             - name: Create a new Globalization feature
-              href: ../finance/localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Work with configurations
-              href: ../finance/localizations/global/e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
-              href: ../finance/localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
             - name: Complete, publish, and deploy a Globalization feature
-              href: ../finance/localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Share with other organizations
               href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
@@ -301,7 +303,7 @@
               - name: Activate and set up integration with Electronic Invoicing
                 href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
               - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
               - name: Work with Electronic Invoicing
                 items:
                 - name: Submit electronic documents to Electronic Invoicing
@@ -329,9 +331,9 @@
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic invoicing for Saudi Arabia
-              href: ../finance/localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Setup direct integration of Italian FatturaPA with SDI
-              href: ../finance/localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Use the electronic invoicing service to import vendor invoices
               href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing
@@ -609,12 +611,6 @@
           href: asset-management/asset-management-mobile-app/maintenance-requests.md
         - name: Asset Management mobile app FAQs and known issues
           href: asset-management/asset-management-mobile-app/asset-management-app-faq.md
-      - name: Asset management from the now-deprecated mobile app
-        items: 
-        - name: Set up the Asset management mobile workspace
-          href: asset-management/set-up-asset-management-mobile.md
-        - name: Use the Asset management mobile workspace
-          href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
       - name: Target entities
@@ -627,6 +623,8 @@
         href: ../finance/cost-accounting/terms-cost-accounting.md?context=/dynamics365/context/supply-chain
       - name: Fiscal calendars, fiscal years, and periods
         href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?context=/dynamics365/context/supply-chain
+      - name: Ledger and subledger accounting overview
+        href: ../finance/general-ledger/ledger-subledger.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions
         href: ../finance/general-ledger/financial-dimensions.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions and posting
@@ -691,8 +689,6 @@
         href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?context=/dynamics365/context/supply-chain
       - name: Use content pack for Microsoft Power BI reporting
         href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?context=/dynamics365/context/supply-chain
-      - name: Use cost control workspace for finance and operations mobile application
-        href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
     - name: Global Inventory Accounting
       items:
       - name: Global Inventory Accounting home page
@@ -1695,8 +1691,6 @@
           href: inventory/tasks/correct-inventory-tracking-information.md
         - name: Register serial number in the sales process
           href: sales-marketing/register-serial-numbers-sales-process.md
-        - name: Inventory on-hand mobile workspace
-          href: inventory/inventory-on-hand-mobile-workspace.md
       - name: Outbound process
         items:
         - name: Outbound process overview
@@ -2009,7 +2003,7 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
-          - name: Continue to use deprecated master planning for some companies
+          - name: Continue to use deprecated master planning with existing companies
             href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
@@ -2049,6 +2043,8 @@
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
+        - name: Convert a Demand planning environment from sandbox to production
+          href: demand-planning/convert-demand-planning-environment-from-sandbox-to-production.md
       - name: Import data
         items:
         - name: View and customize tables for holding imported data
@@ -2251,7 +2247,7 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Unified pricing management (preview)
+    - name: Unified pricing management
       items:
       - name: Unified pricing management module overview
         href: unified-pricing-management/upm-pricing-management-overview.md
@@ -2365,8 +2361,6 @@
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
-        - name: Purchase order approval mobile workspace
-          href: procurement/purchase-order-mobile-workspace.md
         - name: Create and invoice an intercompany purchase order for internal use
           href: sales-marketing/intercompany-purchase-order-for-internal-use.md
         - name: Check intercompany order price discrepancies
@@ -2380,7 +2374,7 @@
         - name: Create a purchase order
           href: procurement/tasks/create-purchase-order.md
         - name: Create a purchase order governed by budget
-          href: cost-management/tasks/create-purchase-order-governed-by-budget.md
+          href: procurement/tasks/create-purchase-order-governed-by-budget.md
         - name: Create a purchase order with a delivery schedule
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
@@ -2467,8 +2461,6 @@
           href: procurement/purchasing-cxml-enhancements.md
         - name: Use external catalogs for PunchOut e-procurement
           href: procurement/use-external-catalogs-for-punchout.md
-        - name: Vendor collaboration mobile workspace
-          href: procurement/vendor-collaboration-mobile-workspace.md
         - name: Approve vendors for specific procurement categories
           href: procurement/tasks/approve-vendors-specific-procurement-categories.md
         - name: Approve vendors for specific products
@@ -2477,7 +2469,7 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
-      - name: Integrate with contract lifecycle management systems (preview)
+      - name: Integrate with contract lifecycle management systems
         items:
         - name: Contract lifecycle management integration overview
           href: procurement/contract-lifecycle-management/clm-overview.md
@@ -2807,7 +2799,7 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
-          - name: Register and track batch/serial numbers for finished products and their components (preview)
+          - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
@@ -2983,7 +2975,7 @@
             href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Register and track batch/serial numbers for finished products and their components (preview)
+          - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Production feedback
             href: production-control/production-feedback.md
@@ -3081,8 +3073,6 @@
           href: sales-marketing/register-serial-numbers-sales-process.md
         - name: Reservation from same batch
           href: sales-marketing/reserve-same-batch-sales-order.md
-        - name: Sales orders mobile workspace
-          href: sales-marketing/sales-orders-mobile-workspace.md
         - name: Ship orders as direct deliveries
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
@@ -3575,12 +3565,10 @@
             href: transportation/tasks/register-driver-check-check-out-appointment.md
       - name: Reconcile freight
         items:
-        - name: Set up automatic freight reconciliation
-          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-        - name: Reconcile freight manually
-          href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
+        - name: Vendor invoice journal creation when discarding freight bills
+          href: transportation/vendor-invoice-journal-creation-when-discarding-freight-bills.md
     - name: Landed cost
       items:
       - name: Landed cost module overview
@@ -3625,7 +3613,7 @@
         href: landed-cost/inbound-tracking.md
       - name: Estimate and manage landed costs
         href: landed-cost/estimate-manage-landed-costs.md
-      - name: In-transit processing
+      - name: Goods-in-transit processing and receiving
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
@@ -3691,6 +3679,8 @@
           href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse
           href: warehousing/release-to-warehouse-process.md
+        - name: Restrict to sales unit
+          href: warehousing/restrict-to-sales-unit.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
@@ -3711,8 +3701,10 @@
             href: warehousing/over-pick-materials-for-production-and-batch-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
-          - name: Batch, serial, and license plate confirmation
+          - name: Batch, serial, license plate, and location confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
+          - name: Warehouse mobile device tracking dimensions and license plate picking behavior
+            href: warehousing/warehouse-mobile-device-tracking-dimensions-license-plate-picking-behavior.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
           - name: Piece picking confirmation
@@ -3751,6 +3743,8 @@
             href: warehousing/manual-order-line-picking-exception-handling.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
+          - name: Serial number capturing
+            href: warehousing/serial-number-capturing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -3911,6 +3905,8 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for license plate build in the warehouse 
+            href: warehousing/license-plate-build.md
           - name: Set up a mobile device menu item for moving items in the warehouse
             href: warehousing/mobile-device-movement-menu.md
           - name: Set up a mobile device menu item for moving items by template
@@ -4039,6 +4035,10 @@
           href: warehousing/transfer-orders-warehouse.md
         - name: View and manage the work exceptions log
           href: warehousing/work-exceptions-log.md
+        - name: User-configurable queries in warehouse management
+          href: warehousing/user-configurable-queries-in-warehouse-management.md
+        - name: Data entity support for user-configurable queries in warehouse management
+          href: warehousing/data-entity-support-for-user-configurable-queries-in-warehouse-management.md
       - name: Warehousing administration
         items:
         - name: Message processor messages for warehouse management processes
@@ -4103,7 +4103,9 @@
         items:
         - name: Available mobile workspaces
           href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
-        - name: Asset management
+        - name: Set up the Asset management mobile workspace
+          href: asset-management/set-up-asset-management-mobile.md
+        - name: Use the Asset management mobile workspace
           href: asset-management/asset-management-mobile-workspace.md
         - name: Company directory
           href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain

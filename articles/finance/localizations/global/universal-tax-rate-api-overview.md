@@ -65,7 +65,7 @@ To enable a tax solution provider, follow these steps.
     - Enable external tax solution providers for Tax calculation service
     - Globalization features
     - Enable Globalization feature setup for Tax calculation service
-    - Electronic reporting globalization feature Json import/export
+    - Electronic reporting globalization feature JSON import/export
 
 1. Engage and select one [tax solution provider](#available-tax-solution-providers). Install the independent software vendor (ISV) application when the tax solution provider requires it for the complete and extended functionality.
 1. [Set up a client ID and client secret](./universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md) for the application access credentials that your tax solution provider provides.

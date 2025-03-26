@@ -4,7 +4,7 @@ description: Learn how the Collections coordinator summary feature shows AI-gene
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: conceptual
-ms.date: 05/29/2024
+ms.date: 01/21/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
 audience: Application User

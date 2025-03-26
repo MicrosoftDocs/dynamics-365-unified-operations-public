@@ -3,10 +3,12 @@ title: Build the Customer form
 description: Learn about building the Customer form, including prerequisites, key concepts, setup, and overviews on various projects.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 01/23/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -48,10 +50,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 4.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 5.  In the **Select the file to import** window, browse to **C:\FMLab**, click FMTutorialDataModel.axpp, and then click **Open**.
 6.  In the **Project file location** text box, enter **C:\FMLab**.
-7.  Select the **Overwrite Elements** option and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
-
-    ![Completed Import Project dialog box.](./media/custform2.png)
-
+7.  Select the **Overwrite Elements** option and the **Current solution** radio button.
 8.  Click **OK**.
 9.  In **Solution Explorer**, expand **Classes**, and under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
 10. On the **Build** menu, click **Rebuild Solution**. You use the rebuild to make sure all files in the project are built regardless of timestamps. You can view the build progress in the Output window.
@@ -114,10 +113,7 @@ Use Visual Studio to create the **FmtCustomer** form. You’ll use a template to
 Run the form to verify that it loads correctly.
 
 1.  In **Solution Explorer**, right-click **FmtCustomer**, and then click **Set as Startup Object**.
-2.  Press **Ctrl+F5**. The grid view should render like the following illustration. 
-
-    [![Illustration of grid view with customers.](./media/custform4-1024x567.png)](./media/custform4.png)
-
+2.  Press **Ctrl+F5**.
 3.  On the application bar, click **Open in Microsoft Office** &gt; **Export to Excel &gt; Customers** to send the information in the grid view to a Microsoft Excel spreadsheet. (If a dialog appears asking if you’re sure you want to leave the page, click “Leave this page”.) When asked, click **Open** to view the data in Excel.
 4.  Close Excel.
 5.  Click **Tony** to navigate to the details view for that record. 
@@ -229,30 +225,19 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 ## View the details form
 Run the form to see the Details view and the Grid view.
 
-1.  Press **Ctrl+F5** to run the project. The following illustration shows how the grid view appears.
-
-    [![Illustration of grid view.](./media/custform23-1024x599.png)](./media/custform23.png)
-
+1.  Press **Ctrl+F5** to run the project.
 2.  Click **Phil** to go to the details view for that record. 
-
 3.  Click the **Show list** button on the left side of the form to open the navigation list. 
-
-    [![Form opened to show navigation list.](./media/custform25-1024x597.png)](./media/custform25.png)
-
 4.  To go back to the grid view, click **Close** (or the browser Back button).
 5.  Return to Visual Studio.
 
 ## Add subpatterns
 1.  In Visual Studio, in the Form designer, right-click **FmtCustomer**, point to **Addins**, and then select **Form statistics**. 
 
-    [![Form statistics selected in Form designer.](./media/custform26.png)](./media/custform26.png) 
-
     The **Form Statistics** add-in provides several useful data points about the state of the form. This includes:
     -   **Pattern=Unspecified count** – The number of nodes for which no form pattern or subpattern has been applied.
     -   **Pattern=Custom count** – The number of nodes for which a custom pattern was applied, meaning the structure did not fit with any existing pattern.
     -   **Pattern coverage** – The percentage of controls on the form that are covered by the form pattern or a subpattern. A value of 100% indicates a fully covered form. 
-
-        [![Dialog box showing data about the form.](./media/custform27.png)](./media/custform27.png)
 
 2.  To complete pattern coverage for this form, the Pattern=Unspecified count should be zero. Use the Visual Studio form search to find all instances of “unspecified “in the form. 
 
@@ -265,14 +250,8 @@ Run the form to see the Details view and the Grid view.
 
 5.  Press **Ctrl+S** to save the form.
 6.  Repeat step 1 to run the **Form Statistics** add-in a second time to verify the form is fully covered by patterns. 
-
-    [![Dialog box showing 100% pattern coverage.](./media/custform30.png)](./media/custform30.png)
-
 7.  Press **Ctrl+F5** to run the project and see the updated form.
 8.  Click **Adrian** to go to the details view. The following illustration shows how the details view now appears after applying the Fields and Field Groups subpattern so that the fields lay out responsively. By changing the browser width, you’ll see how the field layout adjusts to better fill the width of the browser. 
-
-    [![Details view after applying Fields and Field Groups subpattern.](./media/custform31-1024x674.png)](./media/custform31.png)
-
 9.  Return to Visual Studio
 
 ## Determine the amount of remaining patterns work in a model

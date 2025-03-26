@@ -3,10 +3,11 @@ title: Build navigation
 description: Learn about build navigation, including key concepts and outlines on setups and overviews on various workspaces.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 01/23/2025
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -113,12 +114,7 @@ Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do 
 5.  In **Solution Explorer** or **Application Explorer**, locate the **FMTClerkWorkspace** tile, and drag it onto the newly created submenu. Click **Save**.
 6.  Right-click **FMTutorial**, and then click **Rebuild**.
 7.  Press **Ctrl+F5** to run the project. After you build and run the project, the navigation pane will contain a link to the new workspace. Open the navigation pane by clicking the navigation pane button (three lines) at the top right of the application window. 
-
-    [![Screen shot of navigation pane button.](./media/nav2.png)](./media/nav2.png)
-
 8.  When you open the navigation pane, select **All workspaces**, and scroll down in the list after it opens. You should see the following new Reservation management tutorial workspace in the list. 
-
-    [![Screen shot showing Reservation management tutorial in list.](./media/nav3.png)](./media/nav3.png)
 
 ### Add the form to the main menu structure
 
@@ -161,12 +157,7 @@ Now you’ll add a new main menu section that contains a tile that points to the
 17. Right-click **FMTutorial**, and then click **Build**.
 18. Press **Ctrl+F5** to run the project.
 19. Go to the main menu section you just modified. Open the navigation pane and scroll down until you see the new top-level **Fleet management tutorial** menu. You may need to clear your browser cache by pressing **Ctrl+F5**. 
-
-    [![Screen shot of Fleet management tutorial menu in navigation pane.](./media/nav4.png)](./media/nav4.png)
-
 20. Click **Fleet management tutorial** &gt; **Workspaces** to expand that submenu. Your navigation pane should look like the following. 
-
-    [![Screen shot of navigation pane.](./media/nav5.png)](./media/nav5.png) 
 
     If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
 

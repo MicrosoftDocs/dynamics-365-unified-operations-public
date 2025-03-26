@@ -20,9 +20,8 @@ Before you can  use this feature, you must enable it for your system and consoli
 
 ### Turn on the features in Supply Chain Management
 
-If your system doesn't already include the features described in this article, go to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on both the following features:
+If your system doesn't already include the features described in this article, go to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following feature:
 
-- *Inventory transaction consolidation* – This feature consolidates inventory transactions by moving them from the `InventTrans` table to the `InventTransArchive` table.
 - *Archive with Dataverse long term retention* – This feature moves archived inventory transactions from the `InventTransArchive` table to  Dataverse long term retention and replicates the data to the `InventTransArchiveHistory` table.
 
 ### Considerations before you purge inventory transactions

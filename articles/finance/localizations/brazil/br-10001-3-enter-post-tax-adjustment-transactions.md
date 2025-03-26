@@ -1,45 +1,45 @@
 ---
 title: Enter and post tax adjustment transactions (Brazil)
-description: Learn how to create and post tax adjustment transactions, including a step-by-step process using the BRMF demo company.
+description: This article describes how to create and post tax adjustment transactions in Brazil with Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 03/20/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Enter and post tax adjustment transactions (Brazil)
 
 [!include [banner](../../includes/banner.md)]
 
-Use this procedure to create and post tax adjustment transactions. This task uses the BRMF demo company.
+This article describes how to create and post tax adjustment transactions in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to Financial books > Journals > General tax adjustment/benefit/incentive.
-2. Click New.
-3. In the list, mark the selected row.
-4. In the Name field, enter or select a value.
-5. Click Lines.
-6. In the list, mark the selected row.
-7. In the Date field, enter a date.
-8. In the Fiscal establishment ID field, enter or select a value.
-9. In the Tax type field, enter or select a value.
-10. In the Adjustment type field, select an option.
-11. In the Adjustment code field, enter or select a value.
-12. In the Description field, enter or select a value.
-13. In the Amount field, enter a number.
-14. Click Post.
-15. Click Post.
-16. Close the page.
-17. Close the page.
-18. Go to Financial books > Common > Tax assessment > ICMS.
-19. Click Adjustment.
-20. Close the page.
-21. Close the page.
+Use the following procedure to create and post tax adjustment transactions. The procedure uses the BRMF demo company.
+
+To create and post tax adjustment transactions, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Financial books \> Journals \> General tax adjustment/benefit/incentive**.
+1. Select **New**.
+1. In the list, mark the selected row.
+1. In the **Name** field, enter or select a value.
+1. Select **Lines**.
+1. In the list, mark the selected row.
+1. In the **Date** field, enter a date.
+1. In the **Fiscal establishment ID** field, enter or select a value.
+1. In the **Tax type** field, enter or select a value.
+1. In the **Adjustment type** field, select an option.
+1. In the **Adjustment code** field, enter or select a value.
+1. In the **Description** field, enter or select a value.
+1. In the **Amount** field, enter a number.
+1. Select **Post**.
+1. Close the page.
+1. Go to **Financial books \> Common \> Tax assessment \> ICMS**.
+1. Select **Adjustment**.
+1. Close the page.
 
 
 

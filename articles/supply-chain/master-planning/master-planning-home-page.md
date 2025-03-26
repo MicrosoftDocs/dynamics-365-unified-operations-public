@@ -3,11 +3,12 @@ title: Master planning home page
 description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals.
 author: t-benebo
 ms.author: benebotg
-ms.topic: overview
-ms.date: 01/06/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
+ms.topic: overview
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Master planning home page
@@ -52,7 +53,7 @@ You can find opinions, news, and other information about Master planning and oth
 
 ### Webinars
 
-[Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
+[Use Azure Machine Learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### Tech conference recordings
 
@@ -60,7 +61,5 @@ You can find opinions, news, and other information about Master planning and oth
 - [Get started with Planning Optimization](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/get-started-with-planning-optimization-for-dynamics-365-supply-chain-management-march-1-2021)
 - [Demand forecasting series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/demand-forecasting-with-azure-machine-learning-series)
 - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
