@@ -1,6 +1,6 @@
 ---
 title: Export and import transactions for General ledger consolidation for Brazil
-description: This article describes how to export and import transactions for general ledger consolidation for Brazil with Microsoft Dynamics 365 Finance.
+description: This article describes how to export and import transactions for General ledger consolidation for Brazil with Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
@@ -17,13 +17,13 @@ ms.search.form: LedgerConsolidate
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to export and import transactions for general ledger consolidation for Brazil with Microsoft Dynamics 365 Finance.
+This article describes how to export and import transactions for General ledger consolidation for Brazil with Microsoft Dynamics 365 Finance.
 
 You can transfer general ledger transactions from the source company to the consolidated account of a consolidated company without consolidating the transactions.
 
 To export and import transactions for general ledger consolidation, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Export company balances** page.
+1. In Dynamics 365 Finance, go to the **Export company balances** page.
 1. In the **From:** field, enter a start date.
 1. In the **To:** field. enter a start date. 
 1. In the **Include actual amounts** field, select **Yes**. 
