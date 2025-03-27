@@ -1,6 +1,6 @@
 ---
 title: EEU-00047 Advance payment to employee
-description: This article describes how to set up and register transactions for an advance holder in Brazil with Microsoft Dynamics 365 Finance.
+description: This article describes how to set up and register transactions for an advance holder in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and register transactions for an advance holder in Brazil with Microsoft Dynamics 365 Finance.
+This article describes how to set up and register transactions for an advance holder in Microsoft Dynamics 365 Finance.
 
 The following procedures demonstrate how to set up and register transactions for an advance holder. The procedures were created using the demo data company DEMF with a primary address in Lithuania, and only work for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.
 
