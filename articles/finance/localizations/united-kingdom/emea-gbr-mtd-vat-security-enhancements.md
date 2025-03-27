@@ -143,4 +143,4 @@ When the **\[Production Ready Preview\] Security enhancements in UK MTD VAT inte
 
 **Client ID** and **Client secret** fields that were previously available on the **Web application** page aren't used any longer in **UK MTD VAT TEST** and **UK MTD VAT returns**. This information is automatically provided by the E-invoicing add-in while transferring the requests to HMRC's endpoints. 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
