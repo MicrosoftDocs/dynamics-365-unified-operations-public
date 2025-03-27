@@ -75,6 +75,6 @@ To make a forward search, follow these steps:
 1. Select the **Trace** button for your selected node. The app now shows a high-level genealogy list.
 1. Until now, you've been working on the **Graphic view** tab. The table views provide another way to view and explore your data. Select **Table view – where used** to see a table view of your forward search. Two copilot-generated summaries are provided here: one that summarizes items that directly consume the selected material and another that summarizes all items that consume the selected material. To see a full list of items associated with either summary, select the appropriate summary.
 
-   :::image type="content" source="media/item-directly-consumption.png" alt-text="Example of forward search results in the graphic view" lightbox="media/item-directly-consumption.png":::
+   :::image type="content" source="media/item-directly-consumption.png" alt-text="Directly consuming items on the 'Table view – where used' tab." lightbox="media/item-directly-consumption.png":::
 
-   :::image type="content" source="media/item-indirectly-consumption.png" alt-text="Example of forward search results in the graphic view" lightbox="media/item-indirectly-consumption.png":::
+   :::image type="content" source="media/item-indirectly-consumption.png" alt-text="All consuming items on the 'Table view – where used' tab" lightbox="media/item-indirectly-consumption.png":::
