@@ -1,6 +1,6 @@
 ---
 title: EUR-00002 Generate an EU Intrastat declaration
-description: 
+description: Learn how to export the Intrastat declaration in the electronic file format and preview the declaration data in a Microsoft Excel format.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
