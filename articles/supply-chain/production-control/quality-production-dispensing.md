@@ -17,7 +17,7 @@ Production Dispensing ensures compliance with regulated and controlled standards
 - Identifying and configuring products for the dispensing process.
 - Restricting dispensing activities to authorized personnel and option to require a digital signature for verifying dispensed products.
 
-Follow the these steps to enable and configure the feature
+Follow these steps to enable and configure the feature
 
 ## Set up a dispense pick journal
 
@@ -34,7 +34,7 @@ You can control access to the production dispensing process by assigning the **P
 
 1. Go to **System administration > Users > Users**
 1. Open the user you want to enable for the **Production dispensing**
-1. In the **Users's roles** section select **Assign roles**
+1. In the **Users's roles** section, select **Assign roles**
 1. From the list, select the role **Production dispenser** and select **OK**
 
 ## Enable Electronic signature for production dispensing
@@ -42,7 +42,7 @@ You can control access to the production dispensing process by assigning the **P
 To enable **Electronic signature** for posting the production picking list journal for dispensed and non-dispensed products, use the following steps
 
 1. Go to **Organization administration > Setup > Electronic signature > Electronic signature requirements**
-1. Select the the name of the following **Electronic signature requirements** 
+1. Select the name of the following **Electronic signature requirements** 
     - **Post dispensing ticket production journal**
     - **Post picking list production journal (non-dispensing)**
 1. Set the field **Signature required** to *true* for both requirements.
@@ -55,26 +55,26 @@ To enable **Electronic signature** for posting the production picking list journ
     - **Enable dispensing for production** - Set to *Yes* to enable using production dispensing in a production flow.
     - **Allow over-dispensing with reverse pick** - Set to *Yes* to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list.
 1. Open the **Journals** tab and make the following setting
-    - **Dispensing ticket** - Select the journal name you created. This will be the default journal for dispensed products.
+    - **Dispensing ticket** - Select the journal name you created. This journal is the default journal for dispensed products.
 1. Open the **General** tab to make the following setting
-    - **Default measuring device** - In the drop down, select the measuring device that should be defaulted in the **Dispense ticket** page. If you have not defined a device, go to Go to **Inventory management > Setup > Quality control > Measuring devices** to set it up.  
+    - **Default measuring device** - In the drop-down, select the measuring device that should be defaulted in the **Dispense ticket** page. If you haven't defined a device, go to Go to **Inventory management > Setup > Quality control > Measuring devices** to set it up.  
  
 ## Set up a product for the dispensing process
 
 To use a dispensing process, you must configure dispensing options for each relevant product. 
 
-[!NOTE] - Only products enabled for the advanced processes can enabled for the dispensing process.
+[!NOTE] - Only products enabled for the advanced warehouse processes can be enabled for the dispensing process.
 
 1. Go to **Product information management > Products > Released products**
 1. Open a product that you want to set up for dispensing.
 1. Expand the **Manage inventory** FastTab.
-1. From the **Dispensing**Field group make the following settings: 
+1. From the **Dispensing**Field group, make the following settings: 
     - **Dispensing control** - Select this option to enable dispensing control for the product.
     - **Under dispensing** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity.
     - **Over dispensing** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity.
     - **Authorized personnel** - Indication that only authorized personnel can do production dispensing.
    
-## Set up on BOM and Formula lines for the dispensing process 
+## Required set up on BOM and Formula lines 
 
 On BOM and Formula lines you can override the thresholds for over- and under dispensing from the product. Follow these steps to override.
 
@@ -83,7 +83,7 @@ On BOM and Formula lines you can override the thresholds for over- and under dis
 1. In the toolbar under the **Engineering** tab, select the **Formula versions**.
 1. In the **Formula versions** page, under the **Formulas** tab select **Formula** to open the **Formula** page.
 1. Expand the **Lines details** FastTab and select the tab **Setup**.
-1. Under the **Dispensing** field group find the following parameters
+1. Under the **Dispensing** field group, find the following parameters
     - **Allow over-dispensing with reverse pick** - ??
     - **Overdispense** - The percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. The value will override the value specified in the same field on the release products. 
     - **Underdispense** - The percentage by which the dispensed quantity is allowed to be less than the proposed quantity. The value will override the value specified in the same field on the release products.
