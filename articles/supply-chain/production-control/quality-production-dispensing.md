@@ -98,7 +98,7 @@ On BOM and formula lines, you can override the thresholds for over and under dis
 1. Go to **Product information management > Products > Released products**.
 1. Select a product that is configured for batch production.
 1. On the Action Pane, open the **Engineer** tab and select **Formula versions**.
-1. The **Formula versions** page opens. ONn this list pane, select the formula version you want to set up for dispensing.
+1. The **Formula versions** page opens. On this list pane, select the formula version you want to set up for dispensing.
 1. On the Action pane, open the **Formulas** tab and select **Formula**.
 1. The **Formula** page opens. Expand the **Formula lines** FastTab and select a line for which you want to set up dispensing options.
 1. Expand the **Lines details** FastTab and open the **Setup** tab.
@@ -129,7 +129,7 @@ The following scenario shows and example of how to use production dispensing whe
 1. On the Action Pane, open the **Production order** tab and select **Estimate**. Select **OK** in the dialog to move the order to the *Estimated* state.
 1. On the Action Pane, open the **Production order** tab and select **Release**. Make the following settings in the dialog. <!-- KFM: I don't see the following settings here, but it could be because I haven't set everything up right. -->
     - **Picking list** – Select a picking list.
-    - **Dispensing ticket** – Select a dispensing ticket. 
+    - **Dispensing ticket** – Select a dispensing ticket.
 
     > [!NOTE]
     > You can set up the journal names to default in **Default values** dialog. <!-- KFM: I'm not sure what this is referring to. -->
@@ -147,6 +147,6 @@ The following scenario shows and example of how to use production dispensing whe
 1. Close journal and return to the **All production orders** page.
 1. Select the production order you are working with. On the Action Pane, open the **View** tab and select **Dispensing tickets**.  <!-- KFM: This is read-only for me. I couldn't get any further here.  -->
 1. In the **Dispensing details** section, select **New** to create a new line for the dispensed quantity for the product. You can create multiple lines, which will then represents multiple measurements for the same dispensed amount.
-1. Select **Post dispensed** to complete the registered values for dispensing. This process will calculate the average of registered values and update it in the field **Dispensed** for the product in the **Journal lines** section. Notice, that you will get an error in this process, if the dispensed a quantity exceeds the thresholds defined on the product.
-1. When you have completed all the lines in the **Dispensing ticket**, select **Confirm** from the toolbar. This action will update the calculated value in the **Dispensed** field in the **Dispensing pick journal**.
-1. After confirming the dispensed quantities, select **Post** which will post the **Dispensing pick list** journal with the dispensed quantities. This action will also create a **Dispensing adjustment** journal with a proposal to return a quantity that equals the difference between the quantity that has been staged to the production order and the quantity that has been dispensed.
+1. Select **Post dispensed** to complete the registered values for dispensing. This process calculates the average of registered values and updates the **Dispensed** field for the product in the **Journal lines** section. You'll get an error in this process if the dispensed quantity exceeds the thresholds defined on the product.
+1. When you have completed all the lines in the **Dispensing ticket**, select **Confirm** from the toolbar. This action updates the calculated value in the **Dispensed** field in the **Dispensing pick journal**.
+1. After confirming the dispensed quantities, select **Post**, which posts the **Dispensing pick list** journal with the dispensed quantities. This action also creates a **Dispensing adjustment** journal with a proposal to return a quantity that equals the difference between the quantity that has been staged to the production order and the quantity that has been dispensed.
