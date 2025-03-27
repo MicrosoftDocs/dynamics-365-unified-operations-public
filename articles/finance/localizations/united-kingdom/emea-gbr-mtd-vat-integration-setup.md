@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/05/2024
+ms.date: 03/27/2025
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-30
@@ -20,9 +20,9 @@ ms.dyn365.ops.version: AX 10.0.22
 > [!NOTE]
 > To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs.
 >
-> For more information about transition of cloud-based deployments to the **/[Production Ready Preview/] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature, see [Security enhancements in UK MTD VAT integration](emea-gbr-mtd-vat-security-enhancements.md).
+> Learn about the transition of cloud-based deployments to the **/[Production Ready Preview/] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature in [Security enhancements in UK MTD VAT integration](emea-gbr-mtd-vat-security-enhancements.md).
 >
-> **These services won’t be accessible from on-premises deployments by June 6, 2025**. For more information, see [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/12/04/dynamics-365-finance-uk-mtd-vat-integration-deprecation/).
+> **These services won’t be accessible from on-premises deployments by June 6, 2025**. Learn more in [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/12/04/dynamics-365-finance-uk-mtd-vat-integration-deprecation/).
 >
 > By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. It’s still possible to generate in batch the report (VAT 100) in Excel and JSON formats.
 
