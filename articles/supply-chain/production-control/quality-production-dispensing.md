@@ -24,7 +24,7 @@ Dispensing materials to a production order involves allocating and providing the
     - Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
     - Configure the system to automatically return any remaining, un-dispensed material back to inventory.
     - Restrict the dispensing process to workers who are authorized to perform it, ensuring that only trained and qualified personnel handle the materials.
-    - Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here:
+    - Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here: [Electronic signatures overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 - Manage a mix of dispensed and non-dispensed items on a single production order. Non-dispensed products are registered as consumed in the production picking list journal. For items configured for the dispense process, the *Dispensing ticket* and *Dispensing pick journal* are used. Workers use the dispensing ticket to register and confirm the quantities of material dispensed to the production order, and the Dispensing pick journal is used to register the dispensed quantity as consumed.
 
 This article describes how to set up and use production dispensing in Dynamics 365 Supply Chain Management.
@@ -51,8 +51,6 @@ All users who should be able to dispense products in the production process must
 
 ## Enable electronic signatures for production dispensing
 
-<!-- KFM: Briefly describe why and where the signatures are used from a dispensing perspective. -->
-
 To require electronic signatures from users that post the production picking list journal for dispensed and non-dispensed products, follow these steps.
 
 1. Go to **Organization administration > Setup > Electronic signature > Electronic signature requirements**.
@@ -61,6 +59,17 @@ To require electronic signatures from users that post the production picking lis
 1. On the list pane, select the row with a **Name** of *Post picking list production journal (non-dispensing)*.
 1. Set **Signature required** to *Yes*.
 1. On the Action Pane, select **Save**.
+
+## Set up measuring devices
+
+You can create a catalog of measuring devices used in the dispensing process. This will typically be a scale. Every dispense ticket can have a measuring device assigned to it, and you can set up a default device in the production control parameters. To create a measuring device, follow these steps.
+
+1. Go to **Inventory management > Setup > Quality control > Measuring devices**
+1. Use buttons in the action pane to add, edit, or delete a measuring device.
+1. Make the following settings for your new or selected device
+    - **Name**
+    - **Description**
+    - **Test instrument tag** - Unique identifier of the measuring device and lets you track it's calibration history. Learn more about instrument calibration here: [Instrument Calibration](../inventory/quality-management/ConvertedFromWord/instrument-calibration.md).
 
 ## Set up production control parameters
 
