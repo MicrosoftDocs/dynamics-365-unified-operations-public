@@ -13,16 +13,19 @@ ms.custom:
 
 # Production dispensing
 
-Production dispensing ensures compliance with regulated and controlled standards for dispensing ingredients and materials in production processes, particularly in industries such as life sciences and pharmaceuticals. Its main capabilities include:
+When dealing with hazardous materials or sensitive components, accurate dispensing minimizes the risk of contamination, preserving the integrity of the materials and ensuring the safety of both the product and personnel. 
 
-- Establish a process that separates material picking activities from product dispensing.
-- Identify and configure products for the dispensing process.
-- Restrict dispensing activities to authorized personnel.
-- Require a digital signature for verifying dispensed products (optional).
+Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. Production dispensing is essential in certain environments for several reasons. 
 
-<!-- KFM: Maybe mention the over and under dispensing restrictions and overrides. They seem central to the functionality. Maybe define the term "dispensing" a bit better; set the context more specifically. -->
-
-<!-- KFM: The term "dispensing ticket" appears often in this article. We should introduce and explain that concept here. I have no idea... -->
+- In highly regulated industries, such as pharmaceuticals or chemicals, precise dispensing ensures compliance with strict guidelines and standards, maintaining product quality and safety.  
+- When dealing with hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages. 
+- For expensive materials, precise dispensing helps prevent waste and fraud, reducing costs and ensuring efficient resource utilization. Additionally, accurate dispensing contributes to consistent product quality, meeting customer expectations, and protecting workers and the environment by handling dangerous substances correctly.
+- To support the regulated dispensing process, you can:
+    - Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
+    - Configure the system to automatically return any remaining, un-dispensed material back to inventory.
+    - Restrict the dispensing process to workers who are authorized to perform it, ensuring that only trained and qualified personnel handle the materials.
+    - Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here:
+- Manage a mix of dispensed and non-dispensed items on a single production order. Non-dispensed products are registered as consumed in the production picking list journal. For items configured for the dispense process, the *Dispensing ticket* and *Dispensing pick journal* are used. Workers use the dispensing ticket to register and confirm the quantities of material dispensed to the production order, and the Dispensing pick journal is used to register the dispensed quantity as consumed.
 
 This article describes how to set up and use production dispensing in Dynamics 365 Supply Chain Management.
 
@@ -33,7 +36,7 @@ Set up a journal for dispensing materials to production and batch orders. Follow
 1. Go to **Production control > Setup > Production journal names**.
 1. Select **New** to create a new journal name for dispensing.
 1. Enter a **Name** and **Description**.
-1. Set **Dispensing tickets** to *Yes*. <!-- KFM: I think this is required. Right? -->
+1. Set **Dispensing tickets** to *Yes*. 
 1. Leave the all other settings at their default values.
 1. On the Action Pane, select **Save**.
 
