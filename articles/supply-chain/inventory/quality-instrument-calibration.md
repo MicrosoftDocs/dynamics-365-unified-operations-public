@@ -11,22 +11,18 @@ manager:
 
 # Instrument calibration
 
-Some test instruments that are used during quality control processes need to be regularly calibrated. Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration helps ensure a safe working environment and produces valid data for future reference. Using test instruments that aren't calibrated regularly can result in false-positive and/or false-negative quality control tests. The instrument calibration feature in Supply Chain Management makes it possible to track individual test instruments, supports an ongoing calibration process, and tracks usage of each test instrument against quality order tests.
+Some of the test instruments that you use during quality control processes probably need to be regularly calibrated. Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration helps ensure a safe working environment and produces valid data for future reference. Using test instruments that aren't calibrated regularly can result in false-positive and/or false-negative quality control tests. The instrument calibration feature in Supply Chain Management makes it possible to track the calibration schedule and history of individual test instruments, supports an ongoing calibration process, and can track the usage of each test instrument based on the completion quality order tests.
 
-Instrument calibration is primarily managed through *test instrument tags*, each of which represents a specific physical test instrument. Each tag holds settings for and information about its test instrument, such as as the manufacturer, warranty number, acquisition date, and specifications. Test instrument tags also indicate weather an instrument requires calibration and, if so, assign a calibration group (which defines the calibration schedule), a calibration procedure (which provides instructions, possibly with attached documents), and other calibration details.
+Instrument calibration is primarily managed through *test instrument tags*, each of which represents a specific physical test instrument. Each tag holds settings for and information about its test instrument, such as as the manufacturer, warranty number, acquisition date, and specifications. Test instrument tags also indicate weather an instrument requires calibration and, if so, assign it to a calibration group (which defines the calibration schedule), a calibration procedure (which provides instructions, possibly with attached documents), and other calibration details.
 
-The instrument calibration feature provides robust functionality around test instrument tracking and calibration. It lets you:
+You can define the calibration schedule for each test instrument tag in one of two ways:
 
-- Track quality details related to test instrument tags (such as calibration groups, test departments and test owners).
-- Track information on each test instrument tag and trigger actions from the test instrument tag.
-- Track the test instrument type and test instrument tag number on each quality order line and automatically assign a test instrument tag number if desired. You can also be notified when a selected tool is not available.
-- Define whether each test instrument tag requires calibration and, if so, track additional details about the calibration (such as calibration users, calibration dates, calibration tools, calibration procedure and calibration history).
-- Specify whether each test instrument tag is to be calibrated based on usage or periodic schedule.
-    - If calibration takes place based on usage, then you can define the usage triggers. A periodic utility evaluates the current usage and if it's  equal to or greater than the trigger usage count, it marks the instrument for calibration and creates a calibration record.
-    - If the calibration takes place based on a periodic schedule, then you can set the frequency of calibrations using daily, monthly, or yearly buckets. The system generates a schedule is generated based on these frequencies and updates the next calibration date field. A periodic utility creates calibration records for those instruments where the next calibration date has been met.
+- Based on usage – The system tracks how many times the test instrument tag has been used and automatically creates calibration records when the usage count reaches a specified threshold.
+- Based on a periodic schedule – The system tracks the date of the last calibration and automatically creates calibration records when the next scheduled calibration date is reached.
 
-- Generate calibration reports such as calibration certificates and calibration schedule reports.
-- Print calibration labels as needed.
+The feature also lets you generate and print calibration reports such as calibration certificates and calibration schedule reports.
+
+You can design calibration labels layouts that you can print out as attach to each individual test instrument as needed.
 
 ## Prerequisites
 
