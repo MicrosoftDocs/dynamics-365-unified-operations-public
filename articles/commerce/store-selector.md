@@ -2,7 +2,7 @@
 title: Store selector module
 description: This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 03/27/2025
+ms.date: 03/28/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -78,14 +78,14 @@ The store selector module supports a **Pick up in store** mode that shows a list
 
 The store selector module can be added to a buy box module on a PDP to show stores where a product is available for pickup. It can also be added to a cart module. In this case, the store selector module shows pickup options for each line item in the cart. The store selector module can also be added to other pages or modules via extensions and customizations.
 
-For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module won't be shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module isn't shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 The following image shows an example of a store selector module used on a PDP.
 
 ![Example of a store selector module used on a PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
-> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
+> In Commerce version 10.0.16 and later, a feature can be enabled that allows an organization to define multiple pickup modes of delivery options for customers. If this feature is enabled, the store selector module and other Commerce modules are enhanced to allow the shopper to choose from potentially multiple pickup delivery options if configured. To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
 
 ## Find stores mode
 
