@@ -2,7 +2,7 @@
 title: Omnichannel media management overview
 description: This article provides an overview of omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/26/2023
+ms.date: 03/27/2025
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
