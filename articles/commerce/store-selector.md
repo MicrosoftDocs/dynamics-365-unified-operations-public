@@ -2,7 +2,7 @@
 title: Store selector module
 description: This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/01/2024
+ms.date: 03/27/2025
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
