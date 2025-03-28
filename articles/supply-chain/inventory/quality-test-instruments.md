@@ -30,6 +30,9 @@ You're performing various tests on electrical components. Some tests are for the
     - **Test instrument** – Enter a unique ID or name for the test instrument.
     - **Description** – Enter a detailed description of the test instrument.
     - **Unit** – Select the unit that the instrument measures results in. The **Precision** field is automatically set, based on the unit that you select.
+    - **Tag number required** – Select this check box for test instrument types that require users to enter a tag number. This triggers additional functionality around tracking test instrument tags. To view, create, and edit the available tags, select **Test instrument tags** on the Action Pane. Learn more in [Instrument Calibration](quality-management/ConvertedFromWord/instrument-calibration.md).
+    - **Used for calibration** – Select this check box for test instrument types that are used for calibration. Learn more in [Instrument Calibration](quality-management/ConvertedFromWord/instrument-calibration.md).
+    - **Calibration label layout** – For test instrument types that have **Tag number required** set to *Yes*, select the layout to use for printing calibration labels. Learn more in [Instrument Calibration](quality-management/ConvertedFromWord/instrument-calibration.md).
 
 1. Close the page.
 
@@ -37,5 +40,6 @@ You're performing various tests on electrical components. Some tests are for the
 
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)
+- [Instrument Calibration](quality-management/ConvertedFromWord/instrument-calibration.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
