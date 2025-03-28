@@ -130,7 +130,7 @@ The **Overview** section is common to most environment types. It provides a filt
 
 The **Activity** tab lets you query raw logs. It provides predefined queries for the most common events and metrics to help you monitor your environment. Here are some examples of the predefined queries that are available:
 
-- Slow queries
+- Long queries
 - Deadlocks
 - Crashes
 - Financial reporting issues
