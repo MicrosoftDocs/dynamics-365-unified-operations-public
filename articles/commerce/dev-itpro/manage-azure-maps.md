@@ -2,7 +2,7 @@
 title: Manage Azure Maps for your organization
 description: Learn how to manage Microsoft Azure Maps in Dynamics 365 Commerce.
 author: ritakimani1
-ms.date: 03/26/2025
+ms.date: 03/28/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -22,7 +22,7 @@ This article describes how to manage Microsoft Azure Maps in Dynamics 365 Commer
 When Azure Maps is enabled in Commerce headquarters, you can use it with the Commerce distributed order management (DOM) feature.
 
 > [!NOTE]
-> Azure Maps is only available for DOM in the D365 Commerce 10.0.43 release. Azure Maps will be made available for Store locator on E-commerce and Store Commerce app in upcoming releases.
+> Azure Maps is only available for DOM in the Commerce 10.0.43 release. Azure Maps will be made available for store locator functionality in Commerce and the Store Commerce app in upcoming releases.
 
 ## Enable Azure Maps
 
@@ -34,7 +34,7 @@ To enable Azure Maps, follow these steps.
 ## Enter an Azure Maps key
 
 > [!NOTE]
-> You are expected to obtain your own Azure Maps license and key. Learn how to obtain an Azure Maps license and key on the [Azure Maps pricing](https://azure.microsoft.com/pricing/details/azure-maps/) page and in [Manage authentication in Azure Maps](/azure/azure-maps/how-to-manage-authentication).
+> You must obtain your own Azure Maps license and key. For information on how to obtain an Azure Maps license and key, see [Azure Maps pricing](https://azure.microsoft.com/pricing/details/azure-maps/) and [Manage authentication in Azure Maps](/azure/azure-maps/how-to-manage-authentication).
 
 To enter an Azure Maps key, follow these steps.
 
