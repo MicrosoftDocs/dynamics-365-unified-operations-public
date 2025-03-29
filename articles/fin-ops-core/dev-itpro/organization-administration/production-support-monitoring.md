@@ -4,10 +4,9 @@ description: Learn about the types of support that are involved in the project l
 author: PedroTubal
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/12/2021
+ms.date: 03/28/2025
 ms.custom: NotInTOC
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31
 ms.search.form:
