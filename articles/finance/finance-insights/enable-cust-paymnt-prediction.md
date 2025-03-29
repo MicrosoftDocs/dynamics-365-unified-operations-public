@@ -23,15 +23,29 @@ This article explains how to configure the Customer payment predictions feature 
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) article.
 
+    
+> [!NOTE]
+> ⚠️ **Important: Data Requirements for Customer Payment Predictions**
+>
+> To successfully train the predictions model, your environment must contain **at least 100 settled customer transactions** from the past **6 to 9 months**.  
+>
+> These 100+ transactions must be distributed across **all three buckets**:
+> - **On-time**: At least 30 transactions
+> - **Late**: At least 30 transactions
+> - **Very late**: At least 30 transactions
+>
+> ✅ Transactions can include:
+> - **Free text invoices**
+> - **Sales orders**
+> - **Customer payments**
+>
+> ❌ If these data conditions are not met, the prediction model will **not** train properly.
 1. Configure the Customer payment insights feature:
 
     1. Go to **Credit and collections \> Setup \> Finance insights \> Customer payment predictions**.
     2. On the **Finance insights configuration** page, on the **Customer payment predictions** tab, select **View the data fields used in the prediction model** to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
         To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
-        
-   > [!NOTE]
-   > The **Customer payment predictions** feature requires more than 100 settled transactions in the previous six to nine months for the model to train successfully. This data must be spread across the **On-time**, **Late**, and **Very late** buckets with a minimum of 30 settled transactions in each bucket. The transactions can include free text invoices, sales orders, and customer payments.  
      
 
     2. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.
