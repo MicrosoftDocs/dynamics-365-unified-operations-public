@@ -13,11 +13,11 @@ manager:
 
 Supply Chain Management provides the ability to create a basic Certificate of Analysis (COA) from the quality order or from the menu directly after selecting a quality order. Learn more about how to use the basic COA here: [Quality orders](quality-orders.md)
 
-This article describes how you can vary the content of the COA to meet customer specific requirement and automatically print the COA when issuing a sales order packing slip. The customer specific COA has the following main components:
+This article explains how to customize the content of the Certificate of Analysis (COA) to meet specific customer requirements and automatically print the COA when generating a sales order packing slip.
 
 ## Setting up a COA customer group
 
-Customers can be grouped for COA purposes by assigning the customer to a COA Customer group. To create and add customers to a COA customer groups follow these steps.
+To manage Certificates of Analysis (COA) for different customers, you can group customers by assigning them to COA customer groups. To create and add customers to a COA customer group, follow these steps.
 
 1. Go to: **Inventory management > Setup > Certificate of analysis > COA Customer group**.
 1. Use buttons in the action pane to add, edit, or delete a COA customer group.
