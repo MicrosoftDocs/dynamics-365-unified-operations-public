@@ -9,7 +9,7 @@ ms.author: johanho
 manager: 
 ---
 
-# Customer specific certificate of analysis
+# Customer specific certificate of analysis (COA)
 
 Supply Chain Management provides the ability to create a basic Certificate of Analysis (COA) from the quality order or from the menu directly after selecting a quality order. Learn more about how to use the basic COA here: [Quality orders](quality-orders.md)
 
