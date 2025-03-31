@@ -1,6 +1,6 @@
 ---
-title: \[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)
-description: Learn how to enable the \[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature.
+title: "[Production Ready Preview] Security enhancements in UK MTD VAT integration (cloud-based deployments only)"
+description: "Learn how to enable the [Production Ready Preview] Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature."
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
