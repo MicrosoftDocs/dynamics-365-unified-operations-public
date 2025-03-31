@@ -1,6 +1,6 @@
 ---
 title: Health check view for offline readiness
-description: This article describes Health check view for offline readiness.
+description: Learn about Health check view for offline readiness.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
@@ -11,3 +11,5 @@ ms.custom:
 ---
 
 # Health check view for offline readiness
+
+This article contains information about the Health check view for offline readiness.
