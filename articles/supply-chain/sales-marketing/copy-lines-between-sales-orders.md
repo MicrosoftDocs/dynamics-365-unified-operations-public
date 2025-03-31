@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCopying, SalesTable
 ms.topic: how-to
-ms.date: 03/19/2025
+ms.date: 03/31/2025
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-The *copy from all* feature lets you copy sales order lines. This feature is useful when you need to create order that is similar to an existing one.
+The *copy from all* feature lets you copy sales order lines between sales orders. This feature is useful when you need to create order that is similar to an existing one.
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Either [create a new sales order](create-sales-orders.md) or open an existing sales order to which you want to copy lines.
@@ -27,15 +27,16 @@ The *copy from all* feature lets you copy sales order lines. This feature is use
     - **Recalculate price** – Choose whether the net amount of the copied lines should be recalculated based on current prices and trade agreements. Set this option to *Yes* to recalculate the prices.
     - **Copy precisely** – Choose whether the copied lines should be exact copies of the selected lines, including all order information such as sales tax, ledger accounts, and dimensions. Set this option to *Yes* to retain all the original details without any modifications.
     - **Delete order lines** – Choose whether previously entered order lines for the current order should be deleted before copying the new lines. Set this option to *Yes* to replace the existing order lines with the copied lines.
-    - **Copy order header** – Choose whether to copy information from the selected order header to the current order. This will update the current order header information such as customer details, delivery terms, and payment terms with the selected order.
+    - **Copy order header** – Choose whether to copy information from the selected order header to the current order. Set this option to *Yes* to copy order header information such as customer details, delivery terms, and payment terms with the selected order.
 
 1. Expand the **Sales orders** FastTab and choose which order lines (possibly header information) you want to copy.
     - In the **Headers** grid, find and select the sales order that you want to copy lines from. You can only copy from one order at a time.
     - In the **Lines** grid, select the checkbox for each line that you want to copy. To select all the lines at once, select the checkbox in **Select all** column for your selected order in the **Header** grid.
 
-    Note: You can copy other related records and fields in the similar way using the other FastTabs on the page. 
+    > [!NOTE]
+    > You can copy other related records and fields in a similar way using the other FastTabs on the page.
 
 1. Select **OK** to close the dialog.
-1. Your selected sales order lines (and possibly header information) is now copied to the current order.
+1. Your selected sales order lines (and possibly header information) are now copied to the current order.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
