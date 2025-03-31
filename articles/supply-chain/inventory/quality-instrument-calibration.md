@@ -11,18 +11,18 @@ manager:
 
 # Instrument calibration
 
-Some of the test instruments that you use during quality control processes probably need to be regularly calibrated. Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration helps ensure a safe working environment and produces valid data for future reference. Using test instruments that aren't calibrated regularly can result in false-positive and/or false-negative quality control tests. The instrument calibration feature in Supply Chain Management makes it possible to track the calibration schedule and history of individual test instruments, supports an ongoing calibration process, and can track the usage of each test instrument based on the completion quality order tests.
+Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration of test instruments helps ensure a safe working environment and produces valid data for future reference. Using test instruments that aren't calibrated regularly can result in false-positive and/or false-negative quality control tests. The instrument calibration feature in Supply Chain Management makes it possible to track the calibration schedule and history of individual test instruments, supports an ongoing calibration process, and can track the usage of each test instrument based on the completion quality order tests.
 
-Instrument calibration is primarily managed through *test instrument tags*, each of which represents a specific physical test instrument. Each tag holds settings for and information about its test instrument, such as as the manufacturer, warranty number, acquisition date, and specifications. Test instrument tags also indicate weather an instrument requires calibration and, if so, assign it to a calibration group (which defines the calibration schedule), a calibration procedure (which provides instructions, possibly with attached documents), and other calibration details.
+Instrument calibration is primarily managed through *test instrument tags*, each of which is a digital record that represents a specific physical test instrument. Each tag holds settings for and information about its test instrument. Each test instrument tag also includes a calibration history, indicates weather an instrument requires calibration, assigns a calibration group (which defines the calibration schedule), provides a calibration procedure (possibly including attached documents), and manages other calibration details.
 
-You can define the calibration schedule for each test instrument tag in one of two ways:
+You can define the calibration schedule for the tags in each calibration group in one of two ways:
 
-- Based on usage – The system tracks how many times the test instrument tag has been used and automatically creates calibration records when the usage count reaches a specified threshold.
-- Based on a periodic schedule – The system tracks the date of the last calibration and automatically creates calibration records when the next scheduled calibration date is reached.
+- Based on usage (such as every 1,000 uses) – The system tracks how many times the test instrument tag has been used (assigned to a quality order) and automatically creates calibration records when the usage count reaches a specified threshold.
+- Based on a periodic schedule (such as monthly) – The system tracks the date of the last calibration and automatically creates a calibration record when the next scheduled calibration date is reached.
 
 The feature also lets you generate and print calibration reports such as calibration certificates and calibration schedule reports.
 
-You can design calibration labels layouts that you can print out as attach to each individual test instrument as needed.
+You can design calibration labels layouts that you can print and attach each individual test instruments as needed.
 
 ## Prerequisites
 
@@ -33,14 +33,13 @@ To use instrument calibration features in Supply Chain Management, your system m
 
 ## Set up instrument calibration parameters
 
-To set options that affect the way instruction calibration works across the system, follow these steps:
+The **Inventory and warehouse management parameters** page includes options that affect the way instruction calibration works across the system. Follow these steps to set them up.
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. Open the **Quality management** tab.
 1. Make the following settings in the **Test instrument calibration** field group.
     - **Automatically assign test instrument tag number on quality order line** – Set this option to *Yes* if the system should attempt to automatically assign the best available test instrument tag to new quality order test lines. If you set this to *No*, then test instrument tags must be assigned manually when needed.
-    - If not assigned automatically, they will need to be assigned manual for tests that use test instrument tags
-    - **Check if test instrument is being calibrated** – Select the action to take from a quality order when the test instrument tag assigned to a line result currently has a usage status of *Calibration* (which indicates that the instrument is being calibrated and might therefore not be available for use). This is a default for new test instrument tags. Choose one of the following values.
+    - **Check if test instrument is being calibrated** – Select the action to take when the test instrument tag assigned to a quality order line has a usage status of *Calibration* (which indicates that the instrument is being calibrated and therefore can't be used). This establishes the default setting for new test instrument tags. Choose one of the following values.
         - *No check* – Skip this check.
         - *Warning only* – If the instrument is being calibrated, then show a warning message but allow the instruction to be used.
         - *Not allowed* – If the instrument is being calibrated, then show an error messages that says the instrument can't be used.
