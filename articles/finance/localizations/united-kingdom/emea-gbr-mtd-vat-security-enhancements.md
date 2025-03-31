@@ -78,7 +78,7 @@ To enable the **\[Production Ready Preview\] Security enhancements in UK MTD VAT
 >
 > After this feature is enabled, it can't be disabled.
 
-If the status of the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature is shown as unavailable (error), the prerequisites might not be met. If the prerequisites are met, but the feature is still unavailable, contact customer support.
+If the status of the  feature is shown as unavailable (error), the prerequisites might not be met. If the prerequisites are met, but the feature is still unavailable, contact customer support.
 
 ## Steps after the feature is activated in your sandbox environment
 
