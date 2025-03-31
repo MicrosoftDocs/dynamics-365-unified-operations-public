@@ -18,15 +18,15 @@ ms.dyn365.ops.version: AX 10.0.22
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs.
+> To meet security requirements, we are implementing modifications to the direct system-to-system integration of Microsoft Dynamics 365 Finance with the HMRC web service that is used to submit value-added tax (VAT) returns for companies that are registered for VAT in the United Kingdom. These changes involve the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials that are essential for software authorization in the HMRC APIs.
 >
-> Learn about the transition of cloud-based deployments to the **/[Production Ready Preview/] Security enhancements in UK MTD VAT integration \(cloud-based deployments only\)** feature in [Security enhancements in UK MTD VAT integration](emea-gbr-mtd-vat-security-enhancements.md).
+> Learn about the transition of cloud-based deployments to the **\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in [\[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)](emea-gbr-mtd-vat-security-enhancements.md).
 >
-> **These services won’t be accessible from on-premises deployments by June 6, 2025**. Learn more in [Deprecation and removal of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/12/04/dynamics-365-finance-uk-mtd-vat-integration-deprecation/).
+> **By June 6, 2025, these services will no longer be accessible from on-premises deployments.** Learn more in [Deprecation of VAT return direct submission to UK MTD in Dynamics 365 Finance for on-premises deployments](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/12/04/dynamics-365-finance-uk-mtd-vat-integration-deprecation/).
 >
-> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. It’s still possible to generate in batch the report (VAT 100) in Excel and JSON formats.
+> By June 6, 2025, we plan to end support for **batch-mode submission** of VAT returns in the **Making Tax Digital** feature. However, the report (**VAT 100**) in Excel and JavaScript Object Notation (JSON) formats can still be generated in batch mode.
 
-After your company is [signed up for the Making Tax Digital (MTD) service for value-added tax (VAT) in Her Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/vat-record-keeping/sign-up-for-making-tax-digital-for-vat), complete the following tasks. These tasks will prepare your Microsoft Dynamics 365 Finance environment to interoperate with HMRC's web service to retrieve information about your company's VAT obligations and submit VAT returns.
+After your company is [signed up for the Making Tax Digital (MTD) service for value-added tax (VAT) in His Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/vat-record-keeping/sign-up-for-making-tax-digital-for-vat), complete the following tasks. These tasks will prepare your Microsoft Dynamics 365 Finance environment to interoperate with HMRC's web service to retrieve information about your company's VAT obligations and submit VAT returns.
 
 - [Import and set up Electronic reporting (ER) configurations](#configurations).
 - [Set up application-specific parameters for the VAT Declaration format](#declaration).
@@ -78,11 +78,11 @@ For more information about how to download ER configurations from the Microsoft 
 
 ## <a id="declaration"></a>Set up application-specific parameters for the VAT Declaration format
 
-Nine boxes on the VAT declaration for the UK must contain values that are calculated based on the tax transactions that are relevant to the VAT settlement period that the company used during the reporting period.
+Nine boxes on the VAT declaration for the United Kingdom must contain values that are calculated based on the tax transactions that are relevant to the VAT settlement period that the company used during the reporting period.
 
 Tax transactions can have different combinations of criteria, such as the transaction direction, the tax code, the country or region code of the tax code, and the tax type. The combination of criteria depends on the nature of the original business operation that caused tax transaction posting.
 
-Application-specific parameters let users influence the collection of tax transactions that must be considered during the calculation of the reporting value in each box on the VAT declaration. For the VAT declaration for the UK, there is a **ReportFieldLookup** application-specific parameter. The following table describes the result values that are available for this parameter.
+Application-specific parameters let users influence the collection of tax transactions that must be considered during the calculation of the reporting value in each box on the VAT declaration. For the VAT declaration for the United Kingdom, there is a **ReportFieldLookup** application-specific parameter. The following table describes the result values that are available for this parameter.
 
 | Result value | Calculation that the result value is used in | Default setup of the classifier value |
 |--------------|----------------------------------------------|---------------------------------------|
@@ -111,7 +111,7 @@ For each value, users can define a set of sales tax codes together with a classi
 | SalesReverseChargeCreditNote    | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
 | SalesReverseCharge              | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
 
-For more information about how boxes on the VAT declaration for the UK use the result values that are defined for the **ReportFieldLookup** application-specific parameter, see [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md).
+For more information about how boxes on the VAT declaration for the United Kingdom use the result values that are defined for the **ReportFieldLookup** application-specific parameter, see [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md).
 
 Before you use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats, set up the **ReportFieldLookup** application-specific parameter. You can download an example of this setup from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary) that includes the setup for the **Result values** which are provided in the **Default setup of the classifier value** column in the first table of this section.
 
@@ -142,13 +142,13 @@ Before you use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK
 
 > [!IMPORTANT]
 > - The setup of **ReportFieldLookup** is company specific.
-> - Before you start to set up **ReportFieldLookup**, be sure to select the legal entity in which you want to generate the VAT declaration for the UK.
-> - If you want to generate the VAT declaration for the UK from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity.
+> - Before you start to set up **ReportFieldLookup**, be sure to select the legal entity in which you want to generate the VAT declaration for the United Kingdom.
+> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity.
 > - The setup of **ReportFieldLookup** is mandatory for all legal entities that report VAT as a VAT group.
 
 ## <a id="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
 
-[By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), header data must be submitted for the MTD VAT application programming interfaces (APIs) in the UK. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers that include the public IP address of the client and the public IP address of the server.
+[By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), header data must be submitted for the MTD VAT application programming interfaces (APIs) in the United Kingdom. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers that include the public IP address of the client and the public IP address of the server.
 
 To enable Finance to collect client and server public IP addresses, as of 10.0.22 version, you must set up the **ExternalServiceEndpoints\_LOOKUP** application-specific parameter for the **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model** in the **Electronic reporting** workspace.
 
@@ -210,7 +210,7 @@ For more information about the predefined setup that is included in the data ent
 
 ## <a id="vrn"></a>Set up the VAT registration number of the company that is reporting VAT
 
-As of version 4 (KB4617940), the **UK MTD VAT setup** package provides the **Tax registration number** additional field for both **UK MTD VAT returns** and **UK MTD VAT TEST** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the MTD VAT feature in Finance. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in the UK. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
+As of version 4 (KB4617940), the **UK MTD VAT setup** package provides the **Tax registration number** additional field for both **UK MTD VAT returns** and **UK MTD VAT TEST** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the MTD VAT feature in Finance. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in the United Kingdom. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
 Follow these steps to define the VAT registration number that the MTD VAT feature in Finance must use to interoperate with HMRC's MTD VAT API and submit VAT returns.
 
@@ -236,10 +236,10 @@ This part of the setup for the MTD VAT feature is mandatory only for companies t
 To prepare Finance to report a VAT return for a VAT group, make sure that your business processes and the system setup meet the following conditions:
 
 - Tax information from all the subsidiaries is registered in the same system (in this case, Finance).
-- The system correctly reflects all the tax transactions in accordance with the rules and principles of the UK.
+- The system correctly reflects all the tax transactions in accordance with the rules and principles of the United Kingdom.
 - Settlement periods for all the legal entities that are involved in the VAT group are identically defined according to the period intervals that are defined in the HMRC online account.
 - VAT settlement, and the [Settle and post sales tax](../../general-ledger/tasks/create-sales-tax-payment.md) job, are completed in each subsidiary legal entity.
-- [Application-specific parameters for the VAT Declaration format](#declaration) are setup for each subsidiary legal entity. The setup configurations are completed for both **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats.
+- [Application-specific parameters for the VAT Declaration format](#declaration) are set up for each subsidiary legal entity. The setup configurations are completed for both **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats.
 - A [**VAT 100** report](#format) is correctly generated in paper format in each subsidiary legal entity.
 - One legal entity is set up for interoperation with HMRC according to the information in this article, and users can request VAT obligations from this legal entity for the VAT group.
 - [Sales tax settlement periods for the **Populate VAT return records** action](#settlement) are defined for each subsidiary legal entity. 
@@ -328,7 +328,7 @@ If security roles aren't defined for a web application, only a system admin can 
 
 ## <a id="sending-headers"></a>Send fraud prevention data
 
-[By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), header data must be submitted for the MTD VAT APIs in the UK. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. These headers might include location information and other personal identifiers, such as IP addresses. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+[By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), header data must be submitted for the MTD VAT APIs in the United Kingdom. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. These headers might include location information and other personal identifiers, such as IP addresses. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 
 The MTD VAT feature in Finance supports the fraud prevention headers that HMRC requires for **WEB\_APP\_VIA\_SERVER** (for requests that are run in non-batch mode) and **BATCH\_PROCESS\_DIRECT** (for requests that are run in batch mode). As of Finance version 10.0.22, KB4623487, v.3.0 is supported.
 
