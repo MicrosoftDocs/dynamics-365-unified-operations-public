@@ -1,6 +1,6 @@
 ---
-title: [Production Ready Preview] Security enhancements in UK MTD VAT integration (cloud-based deployments only)
-description: Learn how to enable the [Production Ready Preview] Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature.
+title: \[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)
+description: Learn how to enable the \[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only) feature.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
@@ -13,7 +13,7 @@ ms.search.validFrom: 2025-03-25
 ms.dyn365.ops.version: AX 10.0.43
 ---
 
-# [Production Ready Preview] Security enhancements in UK MTD VAT integration (cloud-based deployments only)
+# \[Production Ready Preview\] Security enhancements in UK MTD VAT integration (cloud-based deployments only)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
