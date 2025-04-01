@@ -29,13 +29,13 @@ Configure the following pages to use them in future sales transactions:
 
 Follow these steps to complete the configuration.
 
-1. Create the **document class type** that represents the fiscal documents that will be used in future transactions. Examples include invoices, credit notes, debit notes, and packing slips. Learn more in [Document class type for Latin America](ltm-core-document-class-type).
+1. Create the **document class type** that represents the fiscal documents that will be used in future transactions. Examples include invoices, credit notes, debit notes, and packing slips. Learn more in [Document class type for Latin America](ltm-core-document-class-type.md).
 2. Create document class letters according to the requirements of the Dominican fiscal authorities
-3. Create at least one **Sales point prefix** to use in the document classes numeration. This sales point should match the document mask of the document class that it will be assigned to. Learn more in [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes).
+3. Create at least one **Sales point prefix** to use in the document classes numeration. This sales point should match the document mask of the document class that it will be assigned to. Learn more in [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
 4. Create the **document classes** that are required for the commercial activity of the company according to the requirements of the Dominican fiscal authorities.
-5. Set the **document mask** with the required number of characters for the sales point and the document number. Set the entry to automatic, and mandatory for both the prefix and the document number. Learn more in [Document classes for Latin America](ltm-core-document-class).
-6. Create a **document class sales point** in every document class that belongs to the company. On the **Document class point** page, select a sale point and a number sequence. The length of the sales point prefix must match the length of the document mask prefix, and the length of the number sequence must match the length of the document mask. Learn more in [Document class sales point for Latin America](ltm-core-document-class-sales-point)
-7. Create a **Customer set**, and add the document classes that you created in the previous steps. The customer set contains the document classes that can be used in a customer transaction when it's assigned to its LATAM configuration. Learn more in [Customer sets for Latin America](ltm-core-customers-set).
+5. Set the **document mask** with the required number of characters for the sales point and the document number. Set the entry to automatic, and mandatory for both the prefix and the document number. Learn more in [Document classes for Latin America](ltm-core-document-class.md).
+6. Create a **document class sales point** in every document class that belongs to the company. On the **Document class point** page, select a sale point and a number sequence. The length of the sales point prefix must match the length of the document mask prefix, and the length of the number sequence must match the length of the document mask. Learn more in [Document class sales point for Latin America](ltm-core-document-class-sales-point.md)
+7. Create a **Customer set**, and add the document classes that you created in the previous steps. The customer set contains the document classes that can be used in a customer transaction when it's assigned to its LATAM configuration. Learn more in [Customer sets for Latin America](ltm-core-customers-set.md).
 
 ## Vendor invoice configuration
 

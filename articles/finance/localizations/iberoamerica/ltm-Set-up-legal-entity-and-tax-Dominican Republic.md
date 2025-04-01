@@ -41,7 +41,7 @@ To set up up tax information, follow these steps.
 4. In the **Format** field, enter **XXXXXXXXX** for **RNC** tax ID type . Learn more in [Address setup for Latin America](ltm-core-tax-id-type).
 5. Go to **Organization administration > Global address book > Addresses**, select the country where the company is set, and then select **LATAM** to add the RNC tax ID type. Learn more in [Address setup for Latin America](ltm-core-address-setup).
 6. Go to **Organization administration > Setup > LATAM > Taxpayer type**, and select **New** to create a record that represents organizations.
-7. In the **Type** field, select **Persona jurídica**. Then add the tax ID type and the document class letter that you created. Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type).
+7. In the **Type** field, select **Persona jurídica**. Then add the tax ID type and the document class letter that you created. Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
 8. Go to **Organization administration > Organizations > Legal entities**
 9. In the **LATAM** section, configure the following entity tax and legal information:
    - In the **Taxpayer type** field, select **Persona jurídica** to represent an organization.

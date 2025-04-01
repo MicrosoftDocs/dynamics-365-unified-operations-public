@@ -21,7 +21,7 @@ The Dominican Republic customer and vendor configuration contains the fiscal inf
 
 Before you create records for customers and vendors who are located in the Dominican Republic, the following setup must be completed:
 
-- Set up address formats that are specific to the Dominican Republic. Use Address setup to configure provinces, municipalities, sectors, etc. Learn more in [Address setup](ltm-core-address-setup).
+- Set up address formats that are specific to the Dominican Republic. Use Address setup to configure provinces, municipalities, sectors, etc. Learn more in [Address setup](ltm-core-address-setup.md).
 - Create the tax codes that will be used for Tax on Transfers of Industrialized Goods and Services (ITBIS), including ITBIS 18%, 0%, etc. 
 - Sales tax groups that contain the tax codes that were created.
 - Item sales tax groups that contain the tax codes that were created.
