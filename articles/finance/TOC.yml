@@ -2035,7 +2035,7 @@
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure sales and purchase invoices for Bolivia
-                    hrem: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
+                    href: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
                   - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                   - name: Configure printing for sales bank books for Bolivia
