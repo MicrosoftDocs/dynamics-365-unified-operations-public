@@ -1,21 +1,24 @@
 ---
 title: Create customer and vendor records with an address in Dominican Republic
-description: This topic provides information about creation Customers and Vendors records with an address in Dominican Republic. 
-author: Cpicon85
+description: Learn about creation Customers and Vendors records with an address in Dominican Republic. 
+author: cpicon85
 ms.date: 03/24/2025
-ms.topic: Article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.author: v-cpicon
-ms.custom: bap-template
+
 ---
 
 # Create customer and vendor records with an address in Dominican Republic
+
+[!INCLUDE[banner](../includes/banner.md)]
 
 The Dominican Republic customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
 
-Prerequisites
 Before you create records for customers and vendors who are located in the Dominican Republic, the following setup must be completed:
 
 - Set up address formats that are specific to the Dominican Republic. Use Address setup to configure provinces, municipalities, sectors, etc. Learn more in [Address setup](ltm-core-address-setup).
@@ -72,3 +75,5 @@ To create a record for a vendor in Dominican Republic, follow these steps.
     - Complete the **Country document number** field with the vendor's tax ID number.
 
 > This procedure describes the main settings that are required for localization. You can set other fields that are required for other Finance features that you must use..
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

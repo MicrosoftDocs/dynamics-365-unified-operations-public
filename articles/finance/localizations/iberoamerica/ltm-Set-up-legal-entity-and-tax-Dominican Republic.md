@@ -1,15 +1,19 @@
 ---
 title: Setup a legal entity and tax information for Dominican Republic
-description: This topic provides information about the legal entity configuration for Dominican Republic and its tax information. 
-author: Cpicon85
+description: Learn about the legal entity configuration for Dominican Republic and its tax information. 
+author: cpicon85
 ms.date: 03/24/2025
-ms.topic: Article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.author: v-cpicon
-ms.custom: bap-template
+
 ---
 
 # Set up a legal entity and tax information for Dominican Republic
+
+[!INCLUDE[banner](../includes/banner.md)]
 
 This article explains how to set up a legal entity and tax information for a company that is located in Dominican Republic by using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 
@@ -19,13 +23,17 @@ Before you begin, open the **Feature management** workspace, and verify that the
 
 ## Create a legal entity
 
+To create a legal entity, follow these steps.
+
 1. Go to **Organization administration > Organizations > Legal entities** and select **New**.
 2. In the address setup, set up the address format for the Dominican Republic.
 3. Go to **Organization administration > Setup > LATAM > LATAM parameters**.
 4. On the **Concept and notes** tab, in the **Legal entity** section, set a field as **Activity**.
 > This procedure describes the main settings that are required for localization. You can set other fields as required for other Finance features that you must use.
 
-## Setup up tax information
+## Set up up tax information
+
+To set up up tax information, follow these steps.
 
 1. [Create a document class letter](ltm-core-document-class-letter) with the letters that you will user (B, E, etc). This document class letter is used in taxpayer and document class configurations. 
 2. Go to **Organization administration > Setup > LATAM > Tax ID type**.
@@ -41,3 +49,5 @@ Before you begin, open the **Feature management** workspace, and verify that the
    - In the **Country document type** field, select **RNC**.
    - Complete the country document number, including the tax ID number of the company.
    - In the **Concept and notes** section, in the first field, enter the company activity.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

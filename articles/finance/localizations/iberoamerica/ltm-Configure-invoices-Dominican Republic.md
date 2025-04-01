@@ -1,16 +1,18 @@
 ---
 title: Configure sales and purchase invoices for Dominican Republic
- 
-description: This topic provides information about sales and purchase invoices for Dominican Republic. 
-author: Cpicon85
+description: Learn about sales and purchase invoices for Dominican Republic. 
+author: cpicon85
 ms.date: 03/24/2025
-ms.topic: Article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.author: v-cpicon
-ms.custom: bap-template
+
 ---
 # Configure sales and purchase invoices for Dominican Republic
 
+[!INCLUDE[banner](../includes/banner.md)]
 
 This article explains how to start to use fiscal documents that are specific to the Dominican Republic through the Latin American (LATAM) features in purchase and sales transactions. The LATAM localization uses the concept of *document classes* to refer to fiscal documents such as Invoice, credit and debit note, and so on. These documents may need to be completed with certain information such as the typification, sales point, branch, invoice number structure, and additional fields that should be completed.
 
@@ -38,8 +40,11 @@ Follow these steps to complete the configuration.
 ## Vendor invoice configuration
 
 Vendor invoices have the same configuration requirements as sales invoices, except automatically generated numeration isn't required.
+
 1. Go to **Organization administration > Setup > LATAM > Document class**, and create one document class for each fiscal document that the company receives from vendors. Examples include purchase invoices, purchase credit notes, and purchase debit notes.
 2. Add a document class type.
 3. Add a document class letter.
 4. On each **Document class** page, in the **Journal names** section, add the journal names that the document classes can be used in.
 5. Configure the document mask as required by the Dominican normative. Use the required number of characters for the sales point and the document number.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
