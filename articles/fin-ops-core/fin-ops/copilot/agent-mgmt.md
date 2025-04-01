@@ -1,11 +1,10 @@
 ---
 title: Agent management (preview)
 description: This article describes the Agent management feature in Dynamics 365 finance and operations.
-author: jinniew
-ms.author: jiwo
+author: twheeloc
+ms.author: jkhaira
 ms.topic: conceptual
 ms.date: 03/27/2025
-
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
