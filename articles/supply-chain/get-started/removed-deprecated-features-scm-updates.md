@@ -30,7 +30,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The item number field is a primary key that is used across multiple systems. The *(Preview) Rename item number* feature allowed users to edit the item number field, but we found that the feature could cause data inconsistencies across multiple systems and in apps-integration scenarios, leading to data integrity and data corruption issues. The feature was previously in preview and was never made generally available for use in production environments. |
+| **Reason for deprecation/removal** | The item number field is a primary key that is used across multiple systems. The *(Preview) Rename item number* feature allowed users to edit the item number field, but we found that the feature could cause data inconsistencies in multi-system and apps-integration scenarios, leading to data integrity and data corruption issues. The feature was previously in preview and was never made generally available for use in production environments. |
 | **Replaced by another feature?** | No |
 | **Product areas affected** | Supply Chain Management – Product information management |
 | **Deployment option** | Cloud and on-premises |
