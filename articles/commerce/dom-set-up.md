@@ -2,7 +2,7 @@
 title: Set up DOM
 description: Learn how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 03/27/2025
+ms.date: 04/01/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
