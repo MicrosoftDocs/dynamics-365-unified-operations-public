@@ -2452,6 +2452,14 @@
                       href: localizations/denmark/emea-dnk-saf-t.md
                     - name: Accounting basis (Regnskab Basis) electronic report for Denmark
                       href: localizations/denmark/emea-dnk-accounting-basis.md
+                - name: Dominican Republic
+                  items: 
+                  - name: Configure sales and purchase invoices for Dominican Republic
+                    href: localizations/iberoamerica/ltm-Configure-invoices-Dominican Republic.md
+                  - name: Create customer and vendor records with an address in Dominican Republic
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-Dominican Republic.md
+                  - name: Setup a legal entity and tax information for Dominican Republic
+                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Dominican Republic.md
                 - name: Ecuador
                   items:
                   - name: Ecuador overview
