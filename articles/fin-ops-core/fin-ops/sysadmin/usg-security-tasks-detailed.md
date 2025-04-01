@@ -45,6 +45,3 @@ Use existing tasks as a starting to create new tasks.
 
 Create a new duty that is based on an existing entry point by removing specific processes from that entry point. Select **Entry points subtraction**, and then select an existing user account, role, privilege, or duty to view the entry points. You can remove any entry points that you don't want to create in the new tasks.
 
-## Load from file
-
-Use an existing XML backup file to create new tasks. When you copy tasks from one company to another, first export the tasks from the source company in XML format. Then import them into the destination company.
