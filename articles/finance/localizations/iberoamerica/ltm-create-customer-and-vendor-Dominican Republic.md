@@ -8,9 +8,13 @@ ms.reviewer: johnmichalak
 ms.author: v-cpicon
 ms.custom: bap-template
 ---
+
+# Create customer and vendor records with an address in Dominican Republic
+
 The Dominican Republic customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
-# Prerequisites
+## Prerequisites
+
 Prerequisites
 Before you create records for customers and vendors who are located in the Dominican Republic, the following setup must be completed:
 
@@ -23,7 +27,8 @@ Before you create records for customers and vendors who are located in the Domin
 - A tax ID for each type of tax identification that your customers and vendors have.
 - A taxpayer type for each type of taxpayer that your customers and vendors have.
 
-# Create a record for a customer in Dominican Republic
+## Create a record for a customer in Dominican Republic
+
 To create a record for a customer in Bolivia, follow these steps.
 
 1. Go to **Accounts receivable > Customers > All customers**, and select **New**.
@@ -45,9 +50,10 @@ To create a record for a customer in Bolivia, follow these steps.
 
 > This procedure describes the main settings that are required for localization. You can set other fields that are required for other Microsoft Dynamics 365 Finance features that you must use..
 
-# Create a record for a vendor in Dominican Republic
+## Create a record for a vendor in Dominican Republic
 
 To create a record for a vendor in Dominican Republic, follow these steps.
+
 1. Go to **Accounts payable > Vendors > All vendors**, and select **New**.
 2. In the **Type** field, select Organization for Persona Jurídica or Person for Persona Natural
 3. In the **Vendor group** field, select a local group.

@@ -13,17 +13,20 @@ ms.custom: bap-template
 
 This article explains how to set up a legal entity and tax information for a company that is located in Dominican Republic by using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 
-# Prerequisites
+## Prerequisites
+
 Before you begin, open the **Feature management** workspace, and verify that the **LATAM globalization expansion** and **LATAM globalization expansion – Dominican Republic** features are enabled. If it isn’t enabled, enable it. After you're sure that the feature is enabled, complete the following procedures.
 
-# Create a legal entity
+## Create a legal entity
+
 1. Go to **Organization administration > Organizations > Legal entities** and select **New**.
 2. In the address setup, set up the address format for the Dominican Republic.
 3. Go to **Organization administration > Setup > LATAM > LATAM parameters**.
 4. On the **Concept and notes** tab, in the **Legal entity** section, set a field as **Activity**.
 > This procedure describes the main settings that are required for localization. You can set other fields as required for other Finance features that you must use.
 
-# Setup up tax information
+## Setup up tax information
+
 1. [Create a document class letter](ltm-core-document-class-letter) with the letters that you will user (B, E, etc). This document class letter is used in taxpayer and document class configurations. 
 2. Go to **Organization administration > Setup > LATAM > Tax ID type**.
 3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **RNC** (Registro Nacional de Contribuyentes), which is one of the tax ID types for  Dominican Republic.
