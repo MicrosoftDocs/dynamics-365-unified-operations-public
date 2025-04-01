@@ -2455,11 +2455,11 @@
                 - name: Dominican Republic
                   items: 
                   - name: Configure sales and purchase invoices for Dominican Republic
-                    href: localizations/iberoamerica/ltm-Configure-invoices-Dominican Republic.md
+                    href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
                   - name: Create customer and vendor records with an address in Dominican Republic
-                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-Dominican Republic.md
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-dominican-republic.md
                   - name: Setup a legal entity and tax information for Dominican Republic
-                    href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Dominican Republic.md
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-dominican-republic.md
                 - name: Ecuador
                   items:
                   - name: Ecuador overview

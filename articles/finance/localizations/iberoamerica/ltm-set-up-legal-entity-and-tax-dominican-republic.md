@@ -35,11 +35,11 @@ To create a legal entity, follow these steps.
 
 To set up up tax information, follow these steps.
 
-1. [Create a document class letter](ltm-core-document-class-letter) with the letters that you will user (B, E, etc). This document class letter is used in taxpayer and document class configurations. 
+1. [Create a document class letter](ltm-core-document-class-letter.md) with the letters that you will user (B, E, etc). This document class letter is used in taxpayer and document class configurations. 
 2. Go to **Organization administration > Setup > LATAM > Tax ID type**.
 3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **RNC** (Registro Nacional de Contribuyentes), which is one of the tax ID types for  Dominican Republic.
-4. In the **Format** field, enter **XXXXXXXXX** for **RNC** tax ID type . Learn more in [Address setup for Latin America](ltm-core-tax-id-type).
-5. Go to **Organization administration > Global address book > Addresses**, select the country where the company is set, and then select **LATAM** to add the RNC tax ID type. Learn more in [Address setup for Latin America](ltm-core-address-setup).
+4. In the **Format** field, enter **XXXXXXXXX** for **RNC** tax ID type . Learn more in [Address setup for Latin America](ltm-core-tax-id-type.md).
+5. Go to **Organization administration > Global address book > Addresses**, select the country where the company is set, and then select **LATAM** to add the RNC tax ID type. Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 6. Go to **Organization administration > Setup > LATAM > Taxpayer type**, and select **New** to create a record that represents organizations.
 7. In the **Type** field, select **Persona jurídica**. Then add the tax ID type and the document class letter that you created. Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
 8. Go to **Organization administration > Organizations > Legal entities**
