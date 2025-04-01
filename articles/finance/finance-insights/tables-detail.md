@@ -64,10 +64,5 @@ The Cashflow Forecast feature estimates future liquidity by modeling expected in
 
 These tables are used by forecasting jobs to project expected cash availability and to help finance teams plan more effectively.
 
-## Related Features
-
-- [Evaluate the initial customer payment prediction model](evaluate-payment-model.md)
-- [Set up Cashflow Forecasting](setup-cashflow-forecast.md)
-- [Finance Insights overview](finance-insights-overview.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
