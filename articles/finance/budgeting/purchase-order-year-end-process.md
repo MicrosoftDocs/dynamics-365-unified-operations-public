@@ -4,7 +4,7 @@ description: Learn about the required steps for running the purchase order year-
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 01/29/2025
+ms.date: 04/1/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -90,7 +90,7 @@ To enable purchase orders to be retrieved during the purchase order year-end pro
 - Purchase orders have a **Confirmed** state, or they have reserved budget values (encumbrance).
 - A purchase order is open or partially invoiced.
 - The purchase order approval workflow is completed.
-- No draft invoices exist for the purchase order. Purchase orders with draft invoices will be visible in the retrieved purchase order form, but the draft invoices must be deleted or posted before you start the year-end process.
+- No draft invoices exist for the purchase order. Purchase orders with draft invoices are visible on the **Retrieved purchase order** page, but the draft invoices must be deleted or posted before you start the year-end process.
 - The purchasing status is **Backorder** or **Received**.
 - The last accounting event for the purchase order is in the fiscal year that is selected during the purchase order year end. For example, if **2023** is selected, the accounting date of the last accounting event must be in 2023. Otherwise, the purchase order is excluded.
 - Both the current fiscal year period and the next fiscal year period are open.
