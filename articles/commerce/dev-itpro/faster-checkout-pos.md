@@ -36,7 +36,7 @@ The modernized UI experience for the **Credit Card**, **Cash**, and **Check** pa
 
 
 > [!NOTE]
-> If you have customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and you would like to continue using those user experiences, you don't need to disable the feature flag. Instead you should contact Microsoft support to disable the new user experiences for these individual payment methods.
+> If you have customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and you would like to continue using those user experiences, then you don't need to disable the feature flag. Instead you should contact Microsoft support to disable the new user experiences for these individual payment methods and thus still benefit from the additional functionality provided by the other payment methods.
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
@@ -50,9 +50,14 @@ The new **Pay Card** payment flow shows the transaction amount that is due, toge
 - **Swipe card** directs the payment action to the payment terminal, so that input can be received directly from the terminal.
 - **Enter manually** directs the payment action to the payment terminal, so that the customer or sales associate can manually enter the card number at the terminal. This method is useful if the chip or magnetic stripe on a customer's card is unreadable.
 
+![Pay by card experience](../media/PayCards2.png "Pay by card experience")
+
+
 The **Payment amount** screen is then presented. This screen allows for subamount entry if the customer wants to pay a different amount than the preset transaction total. 
 
 New symbols appear in the payment pane to show the sales associate what is occurring on the terminal. The terminal presents a symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also shown while the terminal processes the transaction against the payment gateway.
+
+![New symbols for payment methods](../media/newPayUX1.png "New symbols for payment methods")
 
 If the transaction is successful, the resulting screen shows the change that is due. Alternatively, if a subamount was paid, the user is returned to the transaction screen for next steps. Any payment errors that are encountered during processing are shown directly in the new payments pane.
 
@@ -87,6 +92,7 @@ Select **OK** to set the change for the button property that you're updating. Wh
 
 ## Pay with gift card
 
-The **Pay with gift card** payment flow automatically triggers the balance check to show the cashier the gift card balance information on POS before using the gift card for payment. This saves the additional clicks that cashier needs to usually do to help the customer know their gift card balance. 
+The **Pay with gift card** payment flow automatically triggers the balance check to show the cashier the gift card balance information on POS before using the gift card for payment. This prevents the additional clicks that cashier usually needs to do to help the customer know their gift card balance. 
+![Gift card balance display](../media/payUXGiftcard.png "Display gift card balance before using the gift card")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
