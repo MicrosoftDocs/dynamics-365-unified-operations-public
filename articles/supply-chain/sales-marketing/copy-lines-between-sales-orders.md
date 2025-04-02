@@ -24,7 +24,7 @@ The *copy from all* feature lets you copy sales order lines between sales orders
 
     - **Quantity factor** – Specify the factor that the quantity for the selected order lines should be increased or decreased by.
     - **Invert sign** – Specify whether inverted (negative) quantities should be created for the copied lines. Set this option to *Yes* to create a return order or a negative-quantity order by reversing the sign of the copied lines.
-    - **Copy charges** – Specify whether order line charges should be copied. Set this option to *Yes* to include any additional charges from the original order lines and/or header. If the **Copy order header** option is also set to *Yes*, order header charges will also be copied.
+    - **Copy charges** – Specify whether order line charges should be copied. Set this option to *Yes* to include any additional charges from the original order lines and/or header. If the **Copy order header** option is also set to *Yes*, order header charges are also copied.
     - **Recalculate price** – Specify whether the net amount of the copied lines should be recalculated based on current prices and trade agreements. Set this option to *Yes* to recalculate the prices.
     - **Copy precisely** – Specify whether the copied lines should be exact copies of the selected lines. Exact copies include all order information, such as sales tax, ledger accounts, and dimensions. Set this option to *Yes* to retain all the original details without any modifications.
     - **Delete order lines** – Specify whether previously entered order lines for the current order should be deleted before the new lines are copied. Set this option to *Yes* to replace the existing order lines with the copied lines.
