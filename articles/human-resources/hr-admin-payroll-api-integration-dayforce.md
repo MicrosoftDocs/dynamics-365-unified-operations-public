@@ -3,8 +3,8 @@
 
 title: API-based payroll integration with Ceridian Dayforce
 description: This article describes the API-based payroll integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
-author: TulsiJhaveri 
-ms.author: tulsijhaveri
+author: twheeloc 
+ms.author: twheeloc
 ms.date: 09/15/2023
 ms.topic: how-to
 ms.custom: 
