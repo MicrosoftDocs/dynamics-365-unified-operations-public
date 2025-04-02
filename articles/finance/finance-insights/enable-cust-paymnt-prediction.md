@@ -24,22 +24,15 @@ This article explains how to configure the Customer payment predictions feature 
 > Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) article.
 
     
-> [!NOTE]
-> ⚠️ **Important: Data Requirements for Customer Payment Predictions**
+> [!Important]
+> If the following data conditions aren't met, the prediction model won't train properly.
 >
-> To successfully train the predictions model, your environment must contain **at least 100 settled customer transactions** from the past **6 to 9 months**.  
->
-> These 100+ transactions must be distributed across **all three buckets**:
-> - **On-time**: At least 30 transactions
-> - **Late**: At least 30 transactions
-> - **Very late**: At least 30 transactions
->
-> ✅ Transactions can include:
-> - **Free text invoices**
-> - **Sales orders**
-> - **Customer payments**
->
-> ❌ If these data conditions are not met, the prediction model will **not** train properly.
+> To successfully train the prediction model, your environment must contain at least 100 settled customer transactions from the past six to nine months.  
+> These transactions must be distributed across the following three buckets with at least 30 free text invoices, sales order, or customer payment transactions in each:
+> - **On-time** 
+> - **Late**
+> - **Very late** 
+
 
 1. Configure the Customer payment insights feature:
 
