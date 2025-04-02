@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Check out faster with optimized payment flows (preview)
+# Check out faster with optimized payment flows 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -31,15 +31,17 @@ Before you can transition to the upgraded payment flow experience, the following
 
 ## Feature availability
 
-The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42. The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42 and the new experience for **Pay by Loyalty** is available with 10.0.44 The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
 
-Updates for the **Loyalty Card** payment method will be rolled out in a future release. 
+
 
 > [!NOTE]
 > If you have customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and you would like to continue using those user experiences, you don't need to disable the feature flag. Instead you should contact Microsoft support to disable the new user experiences for these individual payment methods.
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
+
+Apart from unifying the various payment experiences, here are some of the additional capabilities that these new payment experiences enable:
 
 ## Pay card
 
@@ -82,5 +84,9 @@ Pay exact functionality is configured in the button grid menus for the correspon
 We recommend that you update the button's **Button text** field in the **Appearance** section of the button grid properties to clearly indicate to the sales associate that the button is a pay exact button for the payment method.
 
 Select **OK** to set the change for the button property that you're updating. When you finish configuring your buttons, close the button designer to apply the changes. Then go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**, and select **Run now** to run the **1070 (Channel configuration)** and **1090 (Registers)** jobs.
+
+## Pay with gift card
+
+The **Pay with gift card** payment flow automatically triggers the balance check to show the cashier the gift card balance information on POS before using the gift card for payment. This saves the additional clicks that cashier needs to usually do to help the customer know their gift card balance. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
