@@ -2037,7 +2037,7 @@
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
                   - name: Configure sales and purchase invoices for Bolivia
-                    hrem: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
+                    href: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
                   - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
                   - name: Configure printing for sales bank books for Bolivia
@@ -2454,6 +2454,14 @@
                       href: localizations/denmark/emea-dnk-saf-t.md
                     - name: Accounting basis (Regnskab Basis) electronic report for Denmark
                       href: localizations/denmark/emea-dnk-accounting-basis.md
+                - name: Dominican Republic
+                  items: 
+                  - name: Configure sales and purchase invoices for Dominican Republic
+                    href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
+                  - name: Create customer and vendor records with an address in Dominican Republic
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-dominican-republic.md
+                  - name: Setup a legal entity and tax information for Dominican Republic
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-dominican-republic.md
                 - name: Ecuador
                   items:
                   - name: Ecuador overview
