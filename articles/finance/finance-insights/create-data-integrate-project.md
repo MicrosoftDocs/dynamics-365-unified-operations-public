@@ -44,12 +44,12 @@ This article explains how to create a data integration project.
 
     6. Select the appropriate organization mapping.
     7. Select **Create**.
-    > [!NOTE]
-    > The use of Dynamics 365 Data Integration connections has been deprecated. You can continue using existing connections, but **new connections can no longer be created**.  
-    > 
-    > Please update your data integration projects to use the **Dataverse (Legacy)** connector.
 
-5. Open the [Power Apps environments](https://admin.powerapps.com/environments), and follow these steps:  
+> [!NOTE]
+> The use of Dynamics 365 Data Integration connections has been deprecated. You can continue using existing connections, but new connections can't be created.
+> Update your data integration projects to use the **Dataverse (Legacy)** connector.
+
+6. Open the [Power Apps environments](https://admin.powerapps.com/environments), and follow these steps:  
 
     1. Create a single data integration project for each of the following templates by using the connection set that you just created:
 
