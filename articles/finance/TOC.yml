@@ -1444,6 +1444,8 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Create data integrator project
                   href: finance-insights/create-data-integrate-project.md
+                - name: Tables used by Payment prediction and cash flow forecast
+                  href: finance-insights/tables-detail.md
                 - name: Refine and improve your predictions
                   items:
                     - name: Results of machine learning models
