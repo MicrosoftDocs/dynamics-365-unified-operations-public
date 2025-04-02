@@ -27,6 +27,14 @@ After the device has been prepared, the sign-in page appears on it. This page sh
 
 The remaining sections of this article describe how workers interact with the interface.
 
+## Override the default display color theme
+
+Individual workers can choose their preferred theme by clicking on the worker photo area and selecting "Color theme" from the drop-down menu.
+
+![Change a color theme by worker.](media/pfe-change-color-theme-menu.png "Change a color theme by worker")
+
+In the opened dialog, they can select a new theme and preview the colors (the theme is applied immediately). Once the theme is selected, it is saved in user preferences and will be applied the next time the worker clocks in, regardless of the current device's settings.
+
 ## All jobs tab
 
 The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*. (This tab name is customizable and may be different for your system.)
@@ -55,13 +63,16 @@ The **Active jobs** tabs shows a list of all jobs that the signed-in worker has 
 The active jobs list has the following columns:
 
 - **Selection column** – The leftmost column uses check marks to indicate jobs that have been selected by the worker. Workers can select multiple jobs in the list at the same time. To select all the jobs in the list, select the check mark in the column header. When a single job is selected, details about that job are shown in the lower part of the page.
+- **Job ID** – This column shows the uniq job ID for a job.
 - **Order** – This column shows the production order number for a job.
+- **Oper. No.** – This column shows the operation number of the operation that a job is part of.
 - **Description** – This column shows a description of the operation that a job is part of.
 - **Requested** – This column shows the quantity that a job is planned to produce.
 - **Started** – This column shows the quantity that has already been started for a job.
 - **Completed** – This column shows the quantity that has already been completed for a job.
 - **Scrapped** – This column shows the quantity that has already been scrapped for a job.
 - **Remaining** – This column shows the quantity that remains to be completed for a job.
+- **Unit** – This column shows the unit of masure of quantity for a job.
 
 ## My jobs tab
 
@@ -116,6 +127,10 @@ When a worker completes or partially completes a job, they can report good quant
 
 ![Report progress dialog box.](media/pfei-report-progress-dialog.png "Report progress dialog box")
 
+Workers reporting job progress can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time.
+
+![Report progress dialog box list view.](media/pfei-report-progress-dialog-list-view.png "Report progress dialog box list view")
+
 ## Reporting good quantities on batch orders that have co-products and by-products
 
 Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
@@ -148,7 +163,7 @@ Workers can use the production floor execution interface to report progress on b
 
 When a worker completes or partially completes a job, they can report scrap by selecting a job on the **Active jobs** tab and then selecting **Report scrap**. Then, in the **Report scrap** dialog box, the worker enters the scrap quantity by using the numeric keyboard. The worker also selects a reason (*None*, *Machine*, *Operator*, or *Material*).
 
-![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
+Workers reporting job scrap can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time.
 
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components
 

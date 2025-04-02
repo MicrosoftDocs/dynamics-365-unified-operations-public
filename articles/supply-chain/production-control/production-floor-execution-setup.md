@@ -56,19 +56,6 @@ To allow a worker to override the default job filters that have been set up for 
 
 For more information about how to set up worker accounts to access the production floor execution interface, see [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
 
-## Allow a worker to override the default display color theme
-Individual workers can choose their preferred theme by clicking on the worker photo area and selecting "Color theme" from the drop-down menu.
-
-![Change a color theme by worker.](media/pfe-change-color-theme-menu.png "Change a color theme by worker")
-
-In the opened dialog, they can select a new theme and preview the colors (the theme is applied immediately).
-
-![Select preferred color theme.](media/pfe-select-preferred-color-theme.png "Select preferred color theme")
-
-Once the theme is selected, it is saved in user preferences and will be applied the next time the worker clocks in, regardless of the current device's settings.
-
-![Light color theme on the main form.](media/pfe-light-color-theme-main-form.png "Light color theme on the main form")
-
 ## Run the interface in full-screen mode
 
 Often, you'll run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
