@@ -97,7 +97,8 @@ The **Pay with gift card** payment flow automatically triggers the balance check
 
 ## Pay with loyalty
 
-The **Pay with loyalty** payment flow allows the cashiers to initiate the customer search experience if the customer is not already added to the transaction. Alternatively, if the customer is added to the transaction, then the cashier can now view the loyalty cards associated to the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to perform all the actions that the customers usually ask after a payment process is started.
-![Pay by loyalty](../media/payLoyaltyUX.png "Search a customer from loyalty payment and view associated loyalty cards")
+The **Pay with loyalty** payment flow allows the cashiers to initiate the customer search experience if the customer is not already added to the transaction. Alternatively, if the customer is added to the transaction, then the cashier can now view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
+
+![Pay by loyalty](../media/PayLoyaltyUX.png "Search a customer from loyalty payment and view associated loyalty cards")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
