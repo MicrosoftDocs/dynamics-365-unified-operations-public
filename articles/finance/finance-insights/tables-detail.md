@@ -1,5 +1,5 @@
 ---
-title: Tables used by Payment prediction and cash flow forecast
+title: Tables used by Customer payment predictions and cash flow forecast
 description: Learn about the key data tables leveraged by the Payment prediction and cash flow forecast features in Dynamics 365 Finance.
 author: wei-msft
 ms.author: zhuw
@@ -14,15 +14,15 @@ ms.dyn365.ops.version: AX 10.0.8
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
-# Tables used by Payment prediction and cash flow forecast
+# Tables used by Customer payment predictions and cash flow forecast
 
 [!include [banner](../includes/banner.md)]
 
-This article outlines the data tables used by the **Payment prediction** and **cash flow forecast** features in Dynamics 365 Finance. These features are part of Finance insights and helps financial professionals forecast customer payments and manage future cash positions using AI-driven models.
+This article outlines the data tables used by the Customer payment predictions and cash flow forecast features in Dynamics 365 Finance. These features are part of Finance insights and helps financial professionals forecast customer payments and manage future cash positions using AI-driven models.
 
-## Payment prediction tables
+## Customer payment predictions tables
 
-Payment prediction uses machine learning to forecast if customer invoices will be paid on time, late, or very late. The prediction model uses a variety of tables to collect historical data on transactions, payment terms, and customer behavior.
+Customer payment predictions uses machine learning to forecast if customer invoices will be paid on time, late, or very late. The prediction model uses a variety of tables to collect historical data on transactions, payment terms, and customer behavior.
 
 | Table name | Description |
 |------------|-------------|
