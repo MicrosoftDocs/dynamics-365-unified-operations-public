@@ -40,7 +40,7 @@ To use the features described in this article, your system must meet the followi
 
 To set up your flexible sampling plans, follow these steps.
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Flexible sampling plans**
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Flexible sampling plans**.
 
 1. For your new or selected sampling plan, make the following settings in the header:
 
@@ -58,7 +58,7 @@ To set up your flexible sampling plans, follow these steps.
 
 1. Use the grid on the **Details** FastTab to set up the plan. Use the buttons on the Action Pane to add and remove lines in the grid. For new or selected lines make the following settings:
 
-    - **Level** – Select or view the level number assigned to this activity. The plan will be procssed in the desending order of the levels.
+    - **Level** – Select or view the level number assigned to this activity. The plan will be processed in the descending order of the levels.
     - **Item sampling** – Select or view the **Item sampling** that determines the sampling size of the quality order for the activity, for example a 10 percent sampling or a 50-unit quantity sampling.
     - **Test group** – Select or view the **Test group** that determines the set of tests of the quality order for the activity.
     - **Rounds** – Set or view the number of testing rounds for the specific flexible sampling plan level that must pass quality order validation to advance to the next level. Once you select a level for the **Last level** field, any **Rounds** value you entered for that level is removed from the plan. It is removed from the plan intentionally to allow the last level to continue indefinitely until several failures regress the plan to a prior level. **Note:** The last level in the testing plan does not allow rounds because all future tests would then remain at this level indefinitely until the appropriate number of fails is met to revert the plan to a prior level. Assume a quality association has been set up to test purchase order registrations for a certain vendor. The vendor's flexible sampling plan requires that 10% of every registration be tested for 5 rounds. So if I receive 100 units, then a quality order is generated to test 10 of those units. The quality order for the first registration passes. However, the second quality order fails, but the next three pass. If round 6 passes, then the first level in the plan is accomplished as the number of passed rounds required has been met.

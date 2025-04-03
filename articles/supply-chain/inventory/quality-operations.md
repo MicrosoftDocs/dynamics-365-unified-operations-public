@@ -6,7 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-ms.search.form: InventTestOperations, InventTestRelatedOperations
+ms.search.form: InventTestOperations, InventTestRelatedOperations, QMSInventTestOperationGroup
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 

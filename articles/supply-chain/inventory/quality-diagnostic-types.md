@@ -6,7 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 04/25/2025
 ms.reviewer: kamaybac
-ms.search.form: InventTestDiagnosticType, InventTestCorrection
+ms.search.form: InventTestDiagnosticType, InventTestCorrection, QMSInventTestDiagnosticGroup
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 

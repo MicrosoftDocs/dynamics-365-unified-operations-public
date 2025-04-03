@@ -4,7 +4,7 @@ description: Production Dispensing ensures compliance with regulated and control
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: SIGProcSetup, QMSScalesDevice, ProdParameters, EcoResProductDetailsExtended, ProdJournalName, QMSScalesDevice
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 
@@ -33,10 +33,10 @@ This article describes how to set up and use production dispensing in Dynamics 3
 
 Set up a journal for dispensing materials to production and batch orders. Follow these steps to set up a journal.
 
-1. Go to **Production control > Setup > Production journal names**.
+1. Go to **Production control** \> **Setup** \> **Production journal names**.
 1. Select **New** to create a new journal name for dispensing.
 1. Enter a **Name** and **Description**.
-1. Set **Dispensing tickets** to *Yes*. 
+1. Set **Dispensing tickets** to *Yes*.
 1. Leave the all other settings at their default values.
 1. On the Action Pane, select **Save**.
 
@@ -44,7 +44,7 @@ Set up a journal for dispensing materials to production and batch orders. Follow
 
 All users who should be able to dispense products in the production process must be assigned the *Production dispenser* security role. To assign the role, follow the following steps.
 
-1. Go to **System administration > Users > Users**.
+1. Go to **System administration** \> **Users** \> **Users**.
 1. Open the user you want to enable for production dispensing.
 1. In the **Users's roles** section select **Assign roles**.
 1. From the list, select the role *Production dispenser* and select **OK**.
@@ -53,7 +53,7 @@ All users who should be able to dispense products in the production process must
 
 To require electronic signatures from users that post the production picking list journal for dispensed and non-dispensed products, follow these steps.
 
-1. Go to **Organization administration > Setup > Electronic signature > Electronic signature requirements**.
+1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
 1. On the list pane, select the row with a **Name** of *Post dispensing ticket production journal*.
 1. Set **Signature required** to *Yes*.
 1. On the list pane, select the row with a **Name** of *Post picking list production journal (non-dispensing)*.
@@ -64,7 +64,7 @@ To require electronic signatures from users that post the production picking lis
 
 You can create a catalog of measuring devices used in the dispensing process. This will typically be a scale. Every dispense ticket can have a measuring device assigned to it, and you can set up a default device in the production control parameters. To create a measuring device, follow these steps.
 
-1. Go to **Inventory management > Setup > Quality control > Measuring devices**
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Measuring devices**
 1. Use buttons in the action pane to add, edit, or delete a measuring device.
 1. Make the following settings for your new or selected device
     - **Name**
@@ -75,7 +75,7 @@ You can create a catalog of measuring devices used in the dispensing process. Th
 
 Several settings on the **Production control parameters** page must be configured to enable production dispensing and configure how it works on your system. Follow these steps to set up the parameters.
 
-1. Go to **Production control > Setup > Production control parameters**.
+1. Go to **Production control** \> **Setup** \> **Production control parameters**.
 1. Open the **Standard update** tab.
 1. Make the following settings:
     - **Enable dispensing for production** – Set to *Yes* to enable using production dispensing in a production flow.
@@ -83,7 +83,7 @@ Several settings on the **Production control parameters** page must be configure
 1. Open the **Journals** tab and make the following setting.
     - **Dispensing tickets** – Select the journal name you created for the dispensing pick journal. This is the default journal for dispensed products.
 1. Open the **General** tab to make the following setting.
-    - **Default measuring device** – Select the measuring device that should be defaulted in the **Dispense ticket** page <!-- KFM: Explain why we need to specify a measuring device here. What does this have to do with dispensing? --> . <!-- KFM: The **Dispense ticket** page is not described anywhere. What is it for? Should we have a section about this? --> If you have not defined a device, go to **Inventory management > Setup > Quality control > Measuring devices** to set it up <!-- KFM: The **Measuring devices** page is not described anywhere. What is it for? Is it added as part of this feature? Should we have a section about this? -->.  
+    - **Default measuring device** – Select the measuring device that should be defaulted in the **Dispense ticket** page <!-- KFM: Explain why we need to specify a measuring device here. What does this have to do with dispensing? --> . <!-- KFM: The **Dispense ticket** page is not described anywhere. What is it for? Should we have a section about this? --> If you have not defined a device, go to **Inventory management** \> **Setup** \> **Quality control** \> **Measuring devices** to set it up <!-- KFM: The **Measuring devices** page is not described anywhere. What is it for? Is it added as part of this feature? Should we have a section about this? -->.  
 1. On the Action Pane, select **Save**.
 
 ## Set up a product for the dispensing process
@@ -93,7 +93,7 @@ To use a dispensing process, you must configure dispensing options for each rele
 > [!NOTE]
 > Only products enabled for warehouse management processes (WMS) can enabled for the dispensing process.
 
-1. Go to **Product information management > Products > Released products**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Open a product that you want to set up for dispensing.
 1. Expand the **Manage inventory** FastTab.
 1. From the **Dispensing** field group, make the following settings:
@@ -107,7 +107,7 @@ To use a dispensing process, you must configure dispensing options for each rele
 
 On BOM and formula lines, you can override the thresholds for over and under dispensing. Follow these steps to override. <!-- KFM: We 0ny describe formulas in this procedure. Are BOMs set up differently? -->
 
-1. Go to **Product information management > Products > Released products**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select a product that is configured for batch production.
 1. On the Action Pane, open the **Engineer** tab and select **Formula versions**.
 1. The **Formula versions** page opens. On this list pane, select the formula version you want to set up for dispensing.
@@ -127,15 +127,15 @@ In a normal production run, workers use the production picking list journal to r
 The following scenario shows and example of how to use production dispensing where the picking list journal for non-dispensed products and the dispensing ticket for dispensed products are created at production order release. After completing the dispensing ticket, the system creates a picking list journal for the remaining material that was staged for the dispensing process.
 
 1. Make sure the required settings for using production dispensing are set up as described in the previous sections.
-1. Go to **Production control > Setup > Production control parameters**.
+1. Go to **Production control** \> **Setup** \> **Production control parameters**.
 1. Open the **Standard update** tab and make the following setting.
     - **Allow over-dispensing with reverse pick** – Set to *true*.
-1. Go to **Product information management > Products > Released products** and create a finished good with a bill of material that contains at least one product enabled for dispensing and one product that is not enabled for dispensing. <!-- KFM: Can we name a product from USMF that meets these requirements? I don't know how to set this up, which means I can't complete this procedure. -->
+1. Go to **Product information management** \> **Products** \> **Released products** and create a finished good with a bill of material that contains at least one product enabled for dispensing and one product that is not enabled for dispensing. <!-- KFM: Can we name a product from USMF that meets these requirements? I don't know how to set this up, which means I can't complete this procedure. -->
 1. For the product enabled for dispensing, make the following settings.
     - **Allow over-dispensing with reverse pick** – Set to *true*.
     - **Overdispense** – Set to *10* percent.
     - **Underdispense** – Set to *10* percent.
-1. Go to **Production control > Production orders > All production orders**.
+1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Select **New production order** or **New batch order** to create a new order for the finished product defined previously.
 1. Open or select the new production order. <!-- KFM: I think we need to do this here. -->
 1. On the Action Pane, open the **Production order** tab and select **Estimate**. Select **OK** in the dialog to move the order to the *Estimated* state.

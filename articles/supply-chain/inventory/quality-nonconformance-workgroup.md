@@ -4,7 +4,7 @@ description:
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: QMSInventNonConformanceWorkGroup
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 

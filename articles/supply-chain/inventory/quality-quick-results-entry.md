@@ -1,26 +1,48 @@
 ﻿---
-title: 
-description: 
-ms.date: 04/25/2025
-ms.topic: how-to
-ms.service: 
+title: Enter quality test results quickly (preview)
+description: Learn how to use the quick result entry page, which consolidates data from all tests into a single view to streamline the entry process.
 author: johanhoffmann
 ms.author: johanho
-manager: 
+ms.reviewer: kamaybac
+ms.search.form: InventQualityOrderTable, QMSInventQualityOrderLineResults
+ms.topic: how-to
+ms.date: 04/25/2025
+ms.custom: 
+  - bap-template
 ---
 
-# Quick results entry
+# Enter quality test results quickly (preview)
 
- As an alternative to entering quality order test results line-by-line (using the **quality order line results** page opened from the **Results** menu in the quality order line section), you can use the **Quick result entry** page. This page consolidates data from all tests into a single view, streamlining the process. Quantities are automatically populated based on the quality order quantity, along with details about minimum, maximum, and target values.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
-## Using Quick result entry
+The **Quick result entry** page adds speed and flexibility when entering quality order test results (compared to using the **Quality order line results** page). The **Quick result entry** page consolidates data from all tests into a single view, which streamlines the result-entry process. Quantities are automatically populated based on the quality order quantities, along with other details such as minimum, maximum, and target values.
 
-This **Quick result entry** page is opened from a menu item in the ribbon on the quality order header. On the quality order line the field **Test results exists** indicates whether test results have already been entered for the appropriate test line. In the ribbon of the Quick results entry page you have the following five options
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-- **New** and **Delete** - Options to separate the test results entered for different quantities. For example, if the quality order quantity is 5, using the **New** action, a total of five lines can be entered for that test so that a different test result can be entered for each quantity. The sum of the quantities for each test must still equal the total quantity of the quality order.  
-- **Split** - Provides the ability to split an existing line into multiple lines. When you open the dialog you have two options
-    - **Single line split** - Split the selected line into two lines where the sum of the quantities matches the total quantity on the selected line. For example, if the line quantity was 8 and a Split quantity of 3 is entered, the result will be two lines, one with quantity of 3 and one with a quantity of 5. Different test results can then be entered for both lines.
-    - **Multi lines split** - This can be used to quickly create rows with the same test quantity. The Result quantity per line needs to be entered. The system then will determine the total number of results lines based on the result quantity per line. For example, if the current line has a quantity of 8 and the result quantity per line entered is 2, the system will automatically create 4 lines where there was one, each with a quantity of 2. If the number is not even, the system will do as many rows as possible with the residual in the last row. For example, if the current line has a quantity of 8 and the Result quantity per line entered is 3, the system will create 3 result lines, two lines with the quantity of 3 and the 3rd line with the residual quantity of 2 for a total quantity of 8. [!NOTE] If the item is a catch weight item (CW), you must enter the catch weight quantity  instead of the standard quantity.
-- **Skip** - Skip the test so that it is not included in determining if the validation of the quality order passes of fails.
--  **Validate** - Performs the required validation for the selected line. This action also determines if the line is a pass or a fail. 
-- **Reset test result** - Eliminates the test result value for the line. This action also deselects the checkbox on the test line that indicates is test results exist given no other lines for that test have test results entered. 
+## Prerequisites
+
+To use the features described in this article, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: more here? right FM? -->
+
+## Enter quality test results
+
+To enter quality test results using the **Quick result entry** page, follow these steps:
+
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** > **Quality orders**.
+1. Select a quality order and then select **Quick result entry** on the Action Pane.
+1. The **Quick result entry** page opens, showing the tests that are associated with the selected quality order. Use the following buttons on the Action Pane to prepare the form for entering results:
+
+    - **New** and **Delete** – Use these options to separate the test results entered for different quantities. For example, if the quality order quantity is *5*, using the **New** action, a total of five lines can be entered for that test so that a different test result can be entered for each quantity. The sum of the quantities for each test must still equal the total quantity of the quality order.  <!-- KFM: This doesn't make any sense to me. Is this right? -->
+    - **Split** - Split an existing line into multiple lines. This button opens a dialog where you can specify the following options:
+        - **Split quantity** – Split the selected line into two lines, with one line containing the quantity specified here and the second line containing the remaining quantity. For example, if the line quantity was *8* you enter *3* int this field, the result will be two lines, one with quantity of *3* and one with a quantity of *5*.
+        - **Result quantity per line** – Split the selected line into multiple lines, each containing the specified test quantity. For example, if the current line has a quantity of *8* and you enter *2* here, the line is split into four lines, each with quantity *2*. If the quantity doesn't divide evenly, the last row will contain the remainder required to ensure the total quantity remains the same as the original quantity. For example, if the current line has a quantity of *8* and you set this field to *3*, the system creates three result lines, two lines with the quantity of *3* and the third line with the residual quantity of *2* for a total quantity of *8*. If the item is a catch weight item, you must enter the catch weight quantity instead of the standard quantity.
+    - **Skip** – Skip the selected test so that it doesn't affect whether the quality order passes of fails.
+    - **Validate** – Validate the selected line. This action also determines whether the line is passes or fails.
+    - **Reset test result** – Eliminates the test result for the selected line.
+
+1. Fill out test results for each line.
+1. Select the Back button to return to the **Quality orders** page.
+1. On the Action Pane, select **Validate** to finalize the quality order with the appropriate status based on the line results (*Pass* or *Fail*). <!-- KFM: seems relevant to mention this step. Agree? Anything else to do here? -->
