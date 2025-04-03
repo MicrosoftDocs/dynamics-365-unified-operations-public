@@ -182,6 +182,11 @@ Because the first push is always a full push, we do not recommend that you do an
 
 We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
+>[!NOTE]
+> If you notice that the incremental push setting is acting like a full push in certain scenarios, there are two possible reasons:
+> 1. If the entity is being exported for the first time using incremental push, it will behave as a full push.
+> 2. If the incremental push export doesn't run within the retention period, to prevent data loss, the export will automatically fallback to the full push setting.
+
 ### Timeouts
 The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. You can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**. These timeouts are company specific and must be set separately for each company.
 
