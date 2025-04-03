@@ -1,10 +1,9 @@
 ---
-title: Check out faster with optimized payment flows (preview)
+title: Check out faster with optimized payment flows
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/25/2024
+ms.date: 04/03/2025
 ms.topic: overview
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: v-chrgriffin
@@ -31,17 +30,15 @@ Before you can transition to the upgraded payment flow experience, the following
 
 ## Feature availability
 
-The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42 and the new experience for **Pay by Loyalty** is available with 10.0.44 The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
-
-
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42.<!-- The **Pay by Loyalty** experience is available starting with Commerce version 10.0.44.--> The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
 
 > [!NOTE]
-> If you have customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and you would like to continue using those user experiences, then you don't need to disable the feature flag. Instead you should contact Microsoft support to disable the new user experiences for these individual payment methods and thus still benefit from the additional functionality provided by the other payment methods.
+> If you've customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and want to continue using those user experiences, you don't need to disable the feature flag. You should instead contact Microsoft support to disable the new user experiences for these individual payment methods while still benefiting from the additional functionality provided by the other payment methods.
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
 
-Apart from unifying the various payment experiences, here are some of the additional capabilities that these new payment experiences enable:
+Apart from unifying the various payment experiences, the following sections describe some of the additional capabilities that the new payment experiences enable.
 
 ## Pay card
 
@@ -51,7 +48,6 @@ The new **Pay Card** payment flow shows the transaction amount that is due, toge
 - **Enter manually** directs the payment action to the payment terminal, so that the customer or sales associate can manually enter the card number at the terminal. This method is useful if the chip or magnetic stripe on a customer's card is unreadable.
 
 ![Pay by card experience](../media/PayCards2.png "Pay by card experience")
-
 
 The **Payment amount** screen is then presented. This screen allows for subamount entry if the customer wants to pay a different amount than the preset transaction total. 
 
@@ -92,12 +88,13 @@ Select **OK** to set the change for the button property that you're updating. Wh
 
 ## Pay with gift card
 
-The **Pay with gift card** payment flow automatically triggers the balance check to show the cashier the gift card balance information on POS before using the gift card for payment. This prevents the additional clicks that cashier usually needs to do to help the customer know their gift card balance. 
+The **Pay with gift card** payment flow automatically triggers the balance check to show cashiers the gift card balance information on POS before using the gift card for payment. This action prevents the additional clicks that cashiers usually need to do to help customers determine their gift card balance. 
+
 ![Gift card balance display](../media/payUXGiftcard.png "Display gift card balance before using the gift card")
 
 ## Pay with loyalty
 
-The **Pay with loyalty** payment flow allows the cashiers to initiate the customer search experience if the customer is not already added to the transaction. Alternatively, if the customer is added to the transaction, then the cashier can now view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
+The **Pay with loyalty** payment flow allows cashiers to initiate the customer search experience if a customer isn't already added to the transaction. Alternatively, if the customer is added to the transaction, then a cashier can view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
 
 ![Pay by loyalty](../media/PayLoyaltyUX.png "Search a customer from loyalty payment and view associated loyalty cards")
 
