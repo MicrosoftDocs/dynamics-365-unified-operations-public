@@ -91,11 +91,13 @@ Select **OK** to set the change for the button property that you're updating. Wh
 The **Pay with gift card** payment flow automatically triggers the balance check to show cashiers the gift card balance information on POS before using the gift card for payment. This action prevents the additional clicks that cashiers usually need to do to help customers determine their gift card balance. 
 
 ![Gift card balance display](../media/payUXGiftcard.png "Display gift card balance before using the gift card")
-
+<!--
 ## Pay with loyalty
 
 The **Pay with loyalty** payment flow allows cashiers to initiate the customer search experience if a customer isn't already added to the transaction. Alternatively, if the customer is added to the transaction, then a cashier can view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
 
 ![Pay by loyalty](../media/PayLoyaltyUX.png "Search a customer from loyalty payment and view associated loyalty cards")
+-->
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
