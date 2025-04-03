@@ -32,3 +32,63 @@ The purge job runs as a batch job. There can be only one active job per legal en
 The following image shows an example of the **Purge commerce sales transactions** dialog box, the navigation that is used to open it, and the details of the purge batch job that runs.
 
 ![Screenshot that shows the Purge commerce transactions dialog box, the navigation to it, and the details of the purge batch job.](media/Purge_commerce_transactions_1.png)
+
+## Tables purged by the Purge commerce sales transactions job
+
+The Purge commerce sales transactions job deletes the content from the following tables:
+
+- RetailTransactionTable
+- RetailTransactionCashManagementTrans
+- RetailTransactionFiscalCustomer
+- RetailTransactionSupplementaryInvoice
+- RetailTransactionTable_RU
+- RetailTransactionBankedTenderTrans
+- RetailTransactionValidationError
+- RetailTransactionTenderDeclarationTrans
+- RetailTransactionTaxMeasure
+- RetailTransactionSalesTrans
+- RetailTransactionPaymentTrans
+- RetailTransactionPaymentTrans_BR
+- RetailTransactionSafeTenderTrans
+- RetailTransactionPaymentRefundableAmounts
+- RetailTransactionAdditionalAddressTrans
+- RetailTransactionAddressTrans
+- RetailTransactionAffiliationTrans
+- RetailTransactionAttributeTrans
+- RetailTransactionChargeTaxMeasure
+- RetailTransactionChargeTaxTrans
+- RetailTransactionChargeTaxTransGTE
+- RetailTransactionCustomerAccountDepositTrans
+- RetailTransactionDiscountTrans
+- RetailTransactionFiscalTrans
+- RetailTransactionFiscalTransExtendedData
+- RetailTransactionIncomeExpenseTrans
+- RetailTransactionInfocodeTrans
+- RetailTransactionKitsDisassemblyTrans
+- RetailTransactionLoyaltyRewardPointTrans
+- RetailTransactionMarkupTrans
+- RetailTransactionNoteTrans
+- RetailTransactionOrderInvoiceTrans
+- RetailTransactionTaxTrans_IN
+- RetailTransactionTaxTrans
+- RetailTransactionTaxTransGTE
+- RetailEodStatementControllerLog
+- RetailEodStatementEventLog
+- RetailEodTransactionAggregationHeader
+- RetailEodTransactionAggregationTrans
+- RetailEodTransactionError
+- RetailEodTransactionBankedTenderTrans
+- RetailEodTransactionIncomeExpenseTrans
+- RetailEodTransactionInfocodeTrans
+- RetailEodTransactionOrderInvoiceTrans
+- RetailEodTransactionPaymentTrans
+- RetailEodTransactionSafeTenderTrans
+- RetailEodTransactionSalesTrans
+- RetailEodTransactionTable
+- RetailEodTransactionTenderDeclarationTrans
+- RetailStatementJour
+- RetailStatementTrans
+- RetailStatementVoucher
+
+> [!NOTE]
+> Two more tables **RetailTransactionPriceTrans** and **RetailReceiptsContent** will be added to the above list in the upcoming releases.
