@@ -22,7 +22,7 @@ You use the **Test instruments** page to define and view details about the instr
 
 You're performing various tests on electrical components. Some tests are for the voltage output of the components, one test is for their temperature, and one test is for their weight. Different tools, devices, or equipment are used to perform each test. For example, a voltage meter is used to measure voltage, a thermometer is used to measure temperature, and a scale is used to measure weight. You can configure each of these device types as a test instrument and indicate the unit of measure that the test results should be recorded in. For example, results from a voltage meter are recorded in volts, results from a thermometer are recorded in degrees Fahrenheit or degrees Celsius, and results from a scale are recorded in pounds or kilograms.
 
-## Prerequisites for instrument calibration (preview)
+## Prerequisites for calibration-related settings (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->

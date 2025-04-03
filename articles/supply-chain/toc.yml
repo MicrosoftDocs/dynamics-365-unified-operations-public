@@ -1629,12 +1629,18 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Test instrument calibration (preview)
+          href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans (preview)
           href: inventory/quality-flexible-sampling-plans.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
+        - name: Customer specific certificate of analysis (COA) (preview)
+          href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
-          href: inventory/tasks/inspect-quality-goods.md  
+          href: inventory/tasks/inspect-quality-goods.md
+        - name: Enter quality test results quickly (preview)
+          href: inventory/quality-quick-results-entry.md
         - name: Create and process a nonconformance
           href: inventory/tasks/create-process-non-conformance.md
         - name: Work with quarantine orders

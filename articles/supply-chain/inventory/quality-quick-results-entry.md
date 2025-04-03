@@ -40,7 +40,7 @@ To enter quality test results using the **Quick result entry** page, follow thes
         - **Split quantity** – Split the selected line into two lines, with one line containing the quantity specified here and the second line containing the remaining quantity. For example, if the line quantity was *8* you enter *3* int this field, the result will be two lines, one with quantity of *3* and one with a quantity of *5*.
         - **Result quantity per line** – Split the selected line into multiple lines, each containing the specified test quantity. For example, if the current line has a quantity of *8* and you enter *2* here, the line is split into four lines, each with quantity *2*. If the quantity doesn't divide evenly, the last row will contain the remainder required to ensure the total quantity remains the same as the original quantity. For example, if the current line has a quantity of *8* and you set this field to *3*, the system creates three result lines, two lines with the quantity of *3* and the third line with the residual quantity of *2* for a total quantity of *8*. If the item is a catch weight item, you must enter the catch weight quantity instead of the standard quantity.
     - **Skip** – Skip the selected test so that it doesn't affect whether the quality order passes of fails.
-    - **Validate** – Validate the selected line. This action also determines whether the line is passes or fails.
+    - **Validate** – Validate the selected line. This action also evaluates whether the line is passes or fails. This action is not required. Validation for all rows is performed automatically when the form is closed.
     - **Reset test result** – Eliminates the test result for the selected line.
 
 1. Fill out test results for each line.

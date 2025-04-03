@@ -17,6 +17,8 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
+<!-- KFM: This needs to go into the TOC. But where? -->
+
 When dealing with hazardous materials or sensitive components, accurate dispensing minimizes the risk of contamination, preserving the integrity of the materials and ensuring the safety of both the product and personnel.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
@@ -84,7 +86,7 @@ You can create a catalog of measuring devices used in the dispensing process. Th
 1. Make the following settings for your new or selected device
     - **Name**
     - **Description**
-    - **Test instrument tag** - Unique identifier of the measuring device and lets you track it's calibration history. Learn more about instrument calibration here: [Instrument Calibration](../inventory/quality-management/ConvertedFromWord/instrument-calibration.md).
+    - **Test instrument tag** – Unique identifier of the measuring device and lets you track it's calibration history. Learn more about instrument calibration in [Test instrument calibration (preview)](../inventory/quality-instrument-calibration.md).
 
 ## Set up production control parameters
 
