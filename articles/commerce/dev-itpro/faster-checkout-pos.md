@@ -42,20 +42,18 @@ Apart from unifying the various payment experiences, the following sections desc
 
 ## Pay card
 
-The new **Pay Card** payment flow shows the transaction amount that is due, together with **Swipe card** and **Enter manually** input methods.
+The new **Pay Card** payment flow shows the transaction amount that is due and the **Swipe card** and **Enter manually** input methods, as shown in the following example image.
 
 - **Swipe card** directs the payment action to the payment terminal, so that input can be received directly from the terminal.
 - **Enter manually** directs the payment action to the payment terminal, so that the customer or sales associate can manually enter the card number at the terminal. This method is useful if the chip or magnetic stripe on a customer's card is unreadable.
 
-<!-- ![Pay by card experience](../media/PayCards2.png "Pay by card experience")-->
-:::image type="content" source="<../media/PayCards2.png" alt-text="Pay by card experience":::
+:::image type="content" source="../media/PayCards2.png" alt-text="Pay with card flyout showing the Swipe card and Enter manually input methods.":::
 
 The **Payment amount** screen is then presented. This screen allows for subamount entry if the customer wants to pay a different amount than the preset transaction total. 
 
-New symbols appear in the payment pane to show the sales associate what is occurring on the terminal. The terminal presents a symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also shown while the terminal processes the transaction against the payment gateway.
+New symbols appear in the payment pane to show the sales associate what is occurring on the terminal, as shown in the following example image. The terminal presents a symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also shown while the terminal processes the transaction against the payment gateway.
 
-<!-- ![New symbols for payment methods](../media/newPayUX1.png "New symbols for payment methods")-->
-:::image type="content" source="../media/newPayUX1.png" alt-text="New symbols for payment methods":::
+:::image type="content" source="../media/newPayUX1.png" alt-text="Pay flyout showing new symbols for payment methods.":::
 
 If the transaction is successful, the resulting screen shows the change that is due. Alternatively, if a subamount was paid, the user is returned to the transaction screen for next steps. Any payment errors that are encountered during processing are shown directly in the new payments pane.
 
@@ -92,16 +90,14 @@ Select **OK** to set the change for the button property that you're updating. Wh
 
 The **Pay with gift card** payment flow automatically triggers the balance check to show cashiers the gift card balance information on POS before using the gift card for payment. This action prevents the additional clicks that cashiers usually need to do to help customers determine their gift card balance. 
 
-<!-- ![Gift card balance display](../media/payUXGiftcard.png "Display gift card balance before using the gift card")-->
-:::image type="content" source="../media/payUXGiftcard.png" alt-text="Display gift card balance before using the gift card":::
-<!--
+:::image type="content" source="../media/payUXGiftcard.png" alt-text="Display gift card balance before using the gift card.":::
+
 ## Pay with loyalty
 
-The **Pay with loyalty** payment flow allows cashiers to initiate the customer search experience if a customer isn't already added to the transaction. Alternatively, if the customer is added to the transaction, then a cashier can view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
+The **Pay with loyalty** payment flow allows cashiers to initiate the customer search experience if a customer isn't already added to the transaction, as shown in the following example image. Alternatively, if the customer is added to the transaction, then a cashier can view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
 
-![Pay by loyalty](../media/PayLoyaltyUX.png "Search a customer from loyalty payment and view associated loyalty cards")
-:::image type="content" source="../media/PayLoyaltyUX.png" alt-text="Search a customer from loyalty payment and view associated loyalty cards":::
--->
+:::image type="content" source="../media/PayLoyaltyUX.png" alt-text="Search for a customer from the Pay with loyalty program screen and view the associated loyalty cards.":::
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
