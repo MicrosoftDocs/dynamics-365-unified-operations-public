@@ -52,10 +52,27 @@ After the refresh completes, the application analytical workspaces and reports w
 
 ## If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com
 
-After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
+Refresh the Entity store measurements as described above.
+
+The reports deployed to PowerBI.com may produce errors like below,
+
+- The credentials provided for the SQL source are invalid
+- Login failed for user <user_name>
+- A connection could not be made to the data source with the Name of '{"protocol":"tds","address":{"server":"spartan-srv-tip-d365opstip-074e5b077b83.database.windows.net","database":"db_d365opstip_hxqtcbpvlskm_edw_20250401_09155818_bf4d"},"authentication":null,"query":null}'.
+Please try again later or contact support. If you contact support, please provide these details.
+
+These errors may occur when the credentials of Entity store database got rotated and PowerBI.com reports still configured with old credentials.
+
+To resolve this issue, user can follow either one of the solution mentioned below
+
+1. Deploy a sample report using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**. This will fix the above errors for any other Entity store based reports in PowerBI.com
+   - You can use the sample report - 
+   - This action need to be performed by all the PowerBI.com users who got this issue.
+
+2. Redeploy the report that have this issue using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
 
 > [!NOTE]
-> Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete the report and the related dataset, and then redeploy the report after the maintenance activity is completed.
+> For any other errors with PowerBI.com reports after the maintenance activity or above solution didn't fix the issue, you may need to delete the report and the related dataset, and then redeploy the report using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
