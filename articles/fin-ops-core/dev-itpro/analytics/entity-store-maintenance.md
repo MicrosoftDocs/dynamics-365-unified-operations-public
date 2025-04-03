@@ -65,13 +65,14 @@ Please try again later or contact support. If you contact support, please provid
 
 These errors may occur when the credentials of Entity store database got rotated and PowerBI.com reports still configured with old credentials.
 
-To resolve this issue, user can follow either one of the solution mentioned below
+To resolve this issue, user can follow one of the solutions mentioned below
 
-1. Deploy a sample report using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**. This will fix the above errors for any other Entity store based reports in PowerBI.com
+1. Redeploy the report with this issue using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
+   - Please note, this action will overwrite the current report and any customizations made will be lost. If there are customizations in PowerBI.com, export the report as a PBIX file and upload it to LCS for redeployment.
+
+2. Deploy a sample report using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**. This will fix the above errors for any other Entity store based reports in PowerBI.com
    - You can use this [sample report](<media/Sample report to fix FnO PowerBI creds issue.pbix>).
-   - This action need to be performed by all the PowerBI.com users who got this issue.
-
-2. Redeploy the report that have this issue using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
+   - Users encountering this issue need to perform this action individually.
 
 > [!NOTE]
 > For any other errors with PowerBI.com reports after the maintenance activity or above solution didn't fix the issue, you may need to delete the report and the related dataset, and then redeploy the report using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
