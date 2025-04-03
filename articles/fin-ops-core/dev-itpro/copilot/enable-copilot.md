@@ -69,8 +69,10 @@ Usually, all the required apps are already installed in your environment. Howeve
 >
 > Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
 
-> [!NOTE]
+
 > [Copilot and AI agents](../copilot/enable-copilot.md) aren't supported in [developer environments that were deployed through Lifecycle Services](../dev-tools/access-instances.md#cloud-environment-that-is-provisioned-through-lifecycle-services).
+> [Copilot and AI agents](../copilot/enable-copilot.md) aren't supported in [developer environments that were deployed through Lifecycle Services](../dev-tools/access-instances.md#cloud-environment-that-is-provisioned-through-lifecycle-services).
+
 
 To check for and install the required apps, follow these steps.
 
