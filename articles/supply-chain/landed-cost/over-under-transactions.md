@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity that is specified on the purchase or transfer order lines that are associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that are used to handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified.
+When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity that is specified on the purchase order lines that are associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that are used to handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified.
 
 By setting up the details of over/under transaction policies, you enable the system to determine how to manage the over-processing and under-processing of goods at the time of receipt. An over or under transaction will in some cases trigger an automatic action, and other times require manual action to resolve. You can also manually manage over and under inventory by using the **Over/under transactions** page.
 
@@ -29,8 +29,8 @@ The following diagram shows a flowchart of the process the system uses to determ
 
 The diagram highlights the following steps of the process:
 
-1. When goods are received, the system first compares the total monetary amount of the received purchase or transfer order with the original purchase or transfer order and checks whether this difference is within or outside of the configured amount tolerance.
-1. If the difference is within the amount tolerance, the system then checks the percentage tolerance against the individual purchase or transfer order line.
+1. When goods are received, the system first compares the total monetary amount of the received purchase with the original purchase order and checks whether this difference is within or outside of the configured amount tolerance.
+1. If the difference is within the amount tolerance, the system then checks the percentage tolerance against the individual purchase order line.
 1. The system checks whether the received amount or quantity is larger or smaller than the ordered amount or quantity.
 1. Based on this analysis, the system determines whether there has been an over or under delivery and carries out the relevant tasks as needed.
 
@@ -129,21 +129,24 @@ The following items are received and, as a result, the following actions are tak
 The following items are received and, as a result, the following actions are taken (as shown in the flowchart shown earlier in this article).
 
 - Total order: Purchase order total value is $2950.
-    - Step 1: Purchase order is *outside of* the amount tolerance. <!-- KFM: So, according to the flowchart, shouldn't we create a journal or PO and then quit here? Why do we continue to the lines? -->
+    - Step 1: Purchase order is *outside of* the amount tolerance. This means that Step 2 is skipped. <!-- KFM: So, according to the flowchart, shouldn't we create a journal or PO and then quit here? Why do we continue to the lines? -->
 
 - Line 1: 20 pcs ($2000)
-    - Step 2: The difference between the quantity of the original and received purchase order line is *outside of* the percentage threshold.
     - Step 3: The received quantity of the purchase order line is *greater than* the original purchase order line.
     - Step 4: It's an over-delivery, so the system creates:
         - An over transaction
         - A purchase order
 
 - Line 2: 19 pcs ($950)
-    - Step 2: The difference between the quantity of the original and received purchase order line is *within* the percentage threshold.
     - Step 3: The received quantity of the purchase order line is *less than* the original purchase order line.
     - Step 4: It's an under-delivery, so the system creates:
         - An under transaction
         - A movement journal
+
+> [!NOTE]
+> When an over-delivery automatically triggers the creation of a purchase order, the system also posts a product receipt. However, invoices must alwaysbe posted manually for these purchase orders.
+> Under and over delivery quantities will not impact the estimated landed costs. This means that the auto costs calculated for the voyage or container will not be re-distributed across the actual quantities that are received.
+> When receiving with the Warehouse Management mobile app, the user will not be notified in case of an over or under delivery.
 
 ## Set up over/under transactions
 
@@ -171,7 +174,7 @@ To configure the tolerances, go to **Landed cost** \> **Over/under setup** \> **
 | Percentage tolerance | Enter the percentage tolerance that should be applied to an individual purchase order line quantity. This is an optional field. |
 
 > [!NOTE]
-> The system will first check whether the total amount of the received purchase or transfer order falls within the amount tolerance. If it does, the system will then check the percentage tolerance to manage over/under delivery scenarios.
+> The system will first check whether the total amount of the received purchase order falls within the amount tolerance. If it does, the system will then check the percentage tolerance to manage over/under delivery scenarios.
 
 ### Over/under reasons
 
@@ -237,7 +240,7 @@ To view your over/under transactions, select the **Overview** tab in the upper p
 | Voyage | The voyage that the purchase line was attached to. |
 | Shipping container | The container that the purchase line was attached to. |
 | Arrival journal | The arrival journal that the over/under line was generated from. |
-| Reference | A reference to either the purchase order or the transfer order that is associated with the over/under transaction. |
+| Reference | A reference to the purchase order that is associated with the over/under transaction. |
 | Number | The purchase order that is referenced in the over/under transaction. |
 | Vendor account | The vendor that the over or under is related to. |
 | Goods in transit number | The goods-in-transit number, if applicable. |
