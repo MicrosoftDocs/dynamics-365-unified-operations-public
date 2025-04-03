@@ -1,10 +1,10 @@
 ---
 title: Bring your own database (BYOD)
 description: Learn  how to export entities to your own Azure SQL database, including information about creating a SQL database and configuring the entity export option.
-author: sericks007
-ms.author: sericks
+author: priyanshasharma28087
+ms.author: priysharma
 ms.topic: article
-ms.date: 09/17/2024
+ms.date: 04/03/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
