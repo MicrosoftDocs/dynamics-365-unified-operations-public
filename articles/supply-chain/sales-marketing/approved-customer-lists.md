@@ -30,7 +30,9 @@ For example, one of your long-time customers, Super Club, can purchase only thei
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Approved customer list* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: Confirm feature requirements -->
+    - *(Preview) Advanced quality management*
+    - *(Preview) Approved customer list*
 
 ## Setting up approved customers
 

@@ -1,5 +1,5 @@
 ﻿---
-title: Production dispensing
+title: Production dispensing (preview)
 description: Production Dispensing ensures compliance with regulated and controlled standards for dispensing ingredients and materials in production processes, particularly in industries such as life sciences and pharmaceuticals.
 author: johanhoffmann
 ms.author: johanho
@@ -11,14 +11,20 @@ ms.custom:
   - bap-template
 ---
 
-# Production dispensing
+# Production dispensing (preview)
 
-When dealing with hazardous materials or sensitive components, accurate dispensing minimizes the risk of contamination, preserving the integrity of the materials and ensuring the safety of both the product and personnel. 
+[!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
-Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. Production dispensing is essential in certain environments for several reasons. 
+When dealing with hazardous materials or sensitive components, accurate dispensing minimizes the risk of contamination, preserving the integrity of the materials and ensuring the safety of both the product and personnel.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. Production dispensing is essential in certain environments for several reasons.
 
 - In highly regulated industries, such as pharmaceuticals or chemicals, precise dispensing ensures compliance with strict guidelines and standards, maintaining product quality and safety.  
-- When dealing with hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages. 
+- When dealing with hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages.
 - For expensive materials, precise dispensing helps prevent waste and fraud, reducing costs and ensuring efficient resource utilization. Additionally, accurate dispensing contributes to consistent product quality, meeting customer expectations, and protecting workers and the environment by handling dangerous substances correctly.
 - To support the regulated dispensing process, you can:
     - Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
@@ -28,6 +34,15 @@ Dispensing materials to a production order involves allocating and providing the
 - Manage a mix of dispensed and non-dispensed items on a single production order. Non-dispensed products are registered as consumed in the production picking list journal. For items configured for the dispense process, the *Dispensing ticket* and *Dispensing pick journal* are used. Workers use the dispensing ticket to register and confirm the quantities of material dispensed to the production order, and the Dispensing pick journal is used to register the dispensed quantity as consumed.
 
 This article describes how to set up and use production dispensing in Dynamics 365 Supply Chain Management.
+
+## Prerequisites
+
+To use the features described in this article, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: Confirm feature requirements -->
+    - *(Preview) Advanced quality management*
+    - *(Preview) Dispense management*
 
 ## Set up a dispensing pick journal
 

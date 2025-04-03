@@ -13,7 +13,22 @@ ms.custom:
 
 ## Electronic batch records (EBR) (preview)
 
+[!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
+
 Electronic batch records are a requirement of the 21 CFR Part 11 requirement placed on Life Science industries, and pharmaceutical industries. Extensions are required to standard Supply Chain Management functionality to enable the consolidation of production related data to meet those requirements. EBR is composed of two major functions. One function is the Master Manufacturing Record (MMR) which documents all the way an item might be produced and the various ways the characteristics might be measured. The other function is the Batch Production Record (BPR) which documents the specific way an item was produced and the actual value of the characteristic's measurements. It also details the characteristics and quantities of the ingredients used to produce the item.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Prerequisites
+
+To use the features described in this article, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: Confirm feature requirements -->
+    - *(Preview) Advanced quality management*
+    - *(Preview) Electronic signature improvements*
 
 ## Set up EBR
 
