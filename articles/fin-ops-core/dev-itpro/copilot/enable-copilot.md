@@ -52,6 +52,9 @@ To use Copilot features in finance and operations apps, [Power Platform Integrat
 
 Usually, if Power Platform Integration is enabled, all the required Copilot features are automatically deployed to your environment. If the features don't work as expected, the information in the following subsections might help you troubleshoot any issues.
 
+> [!NOTE]
+> [Copilot and AI agents](../copilot/enable-copilot.md) aren't supported in [developer environments that were deployed through Lifecycle Services](../dev-tools/access-instances.md#cloud-environment-that-is-provisioned-through-lifecycle-services).
+
 ### Confirm that the required Dynamics 365 apps are installed
 
 The following table lists the Dynamics 365 apps that must be present in your Power Platform environment before you can use each Copilot feature.
