@@ -68,7 +68,7 @@ These errors may occur when the credentials of Entity store database got rotated
 To resolve this issue, user can follow either one of the solution mentioned below
 
 1. Deploy a sample report using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**. This will fix the above errors for any other Entity store based reports in PowerBI.com
-   - You can use this [sample report](media/Sample-report-to-fix-FnO-PowerBI-creds-issue.pbix).
+   - You can use this [sample report](<media/Sample report to fix FnO PowerBI creds issue.pbix>).
    - This action need to be performed by all the PowerBI.com users who got this issue.
 
 2. Redeploy the report that have this issue using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
