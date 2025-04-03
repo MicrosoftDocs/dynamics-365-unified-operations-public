@@ -53,6 +53,9 @@ To deploy a cloud development environment in your Lifecycle Services project:
 
 ## Cloud environment that is provisioned through Lifecycle Services
 
+> [!NOTE]
+> [Copilot and AI Agents](../copilot/enable-copilot.md) are not supported in [Finance and Operations Developer environments that have been deployed through Lifecycle Services](../dev-tools/access-instances.md#cloud-environment-that-is-provisioned-through-lifecycle-services).
+
 When a cloud environment is provisioned through Lifecycle Services:
 + The user who requests the cloud environment is provisioned as the administrator in that environment.
 + User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in Lifecycle Services.
