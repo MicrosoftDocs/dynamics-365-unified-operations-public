@@ -1,17 +1,25 @@
 ﻿---
 title: Test instrument calibration (preview)
 description: Learn how to track the calibration schedule and history of individual test instruments, run an ongoing calibration process, and track the usage and calibration status of each test instrument.
-ms.date: 04/25/2025
-ms.topic: how-to
-ms.service: 
 author: johanhoffmann
 ms.author: johanho
-manager: 
+ms.reviewer: kamaybac
+ms.search.form: InventParameters, QMSInventTestLocation, InventTestInstrument, QMSInventTestDepartment, QMSInventCalibrationProcedure, QMSInventCalibrationGroup, QMSInventTestInstrumentTag, QMSInventInstrumentCalibrationDetail, QMSInventTestCalibrationReopenHistory, InventTestGroup, InventQualityOrderTable, QMSInventCalibrationLabelLayout
+ms.topic: how-to
+ms.date: 04/25/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Test instrument calibration (preview)
 
+[!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
+
 Calibration is the process of evaluating and adjusting the precision and accuracy of measurement equipment and is usually defined as a performance comparison against a standard of known accuracy. Proper calibration of test instruments helps ensure a safe working environment and produces valid data for future reference. Using test instruments that aren't calibrated regularly can result in false-positive and/or false-negative quality control tests. The instrument calibration feature in Supply Chain Management makes it possible to track the calibration schedule and history of individual test instruments, supports an ongoing calibration process, and can track the usage of each test instrument based on the completion of quality order tests.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Instrument calibration is primarily managed through *test instrument tags*, each of which is a digital record that represents a specific physical test instrument. Each tag holds settings for and information about its test instrument. Each test instrument tag also includes a calibration history, indicates weather an instrument requires calibration, assigns a calibration group (which defines the calibration schedule), provides a calibration procedure (possibly including attached documents), and manages other calibration details.
 
@@ -52,11 +60,11 @@ The **Inventory and warehouse management parameters** page includes options that
         - *Warning only* – If the instrument has exceeded it's lifetime usage maximum, then show a warning message but allow the instruction to be used.
         - *Not allowed* – If the instrument has exceeded it's lifetime usage maximum, then show an error messages that says the instrument can't be used.
     - **Skip check for test instrument on open quality order** – Set this option to *No* to prevent test instrument tags that are already assigned to open quality orders from being assigned to a new quality orders. Set to *Yes* to skip this check, which might allow a test instrument tag to be assigned to more than open quality order at a time.
-    - **Label layout** – Select the label layout to use when printing calibration labels. <!-- KFM: We probably need a section or topic that explains how/where to create these layouts. Seems like we can generate a sample layout from the navigator. -->
-    - **Print destination** – Choose where to print calibration labels.  Choose one of the following values.
+    - **Label layout** – Select the default calibration label layout to assign to new test instrument type records. Learn more in [Design and print calibration labels](#calibration-labels).
+    - **Print destination** – Choose the default for where to print calibration labels. Choose one of the following values.
         - *Printer* – Print physical labels to a printer.
-        - *File* – Save labels to a file. <!-- KFM: Where can I find these? How do I use them? -->
-    - **Printer name** – If you set **Print destination** to *Printer*, then select the name of the printer to use here.
+        - *File* – Download ans save labels as a ZPL file.
+    - **Printer name** – If you set **Print destination** to *Printer*, then select the name of the default printer to use to print out calibration labels.
 
 ## <a name="instrument-types"></a>Set up test instrument types
 
@@ -129,7 +137,7 @@ To set up a calibration group, follow these steps:
 > [!NOTE]
 > Use the **Inventory and warehouse management parameters** page to configure how the system reacts when **Maximum usage before calibration** and **Lifetime usage maximum** values are met (you can choose to do nothing, show a warning but still allow the instrument to be used, or show an error and block the instrument from being used). Learn more in [Set up instrument calibration parameters](#parameters).
 
-## Set up test instrument tags
+## <a name="tags"></a>Set up test instrument tags
 
 Each physical test instrument is represented in Supply Chain Management by a *test instrument tag* record. The test instrument tag is used to track the calibration schedule and history of the test instrument, and it can be assigned to quality order tests. For example, the test instrument tag specifies data such as the manufacturer, warranty number, acquisition date, and specifications.
 
@@ -278,30 +286,113 @@ To perform a calibration, follow these steps:
 
 ## Reopen an approved calibration record
 
-If you need to edit an approved calibration record, open the record and, in the Action Pane, go to the **Calibrate instrument** tab and select **Reopen calibration**. This clears out the completed and approved fields and writes a reopen calibration history record. The calibration record returns to the *Open* state can now be edited and completed as usual.
+If you need to edit an approved calibration record, follow these steps.
 
-To view a history of reopened calibration records, go to **Inventory management** \> **Inquiries and reports** \> **Quality management** \> **Calibration reopen history log**.
+1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Calibrate test instruments**.
+1. Find and select the relevant calibration record. The record must be in the *Fail* or *Approved* state.
+1. On the Action Pane, open the **Calibrate instruments** tab and select **Reopen calibration**. This clears out the completed and approved fields and creates a *reopen calibration history* record. The calibration record returns to the *Open* state can now be edited and completed as usual.
 
-## Apply test instrument tags to a quality order
+To view a history of reopened calibration records, do one of the following steps:
 
-The specification of a test instrument on a quality order line has been expanded to include the selection of a test instrument tag. When a test instrument that is selected for use on a quality order requires a test instrument tag, the quality order cannot be validated without the selection of a test instrument tag on the quality order result line.
+- Go to **Inventory management** \> **Inquiries and reports** \> **Quality management** \> **Calibration reopen history log**.
+- Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Calibrate test instruments**. On the Action Pane, open the **Calibrate instruments** tab and select **Calibration reopen history log**.
 
-There is an added field in the Inventory and warehouse management parameters called Automatically assign test instrument tag number on quality order line that when selected, will sort through the test instrument tags for the instrument and select the best available test instrument tag for the quality test. If this parameter is not selected, the user will have to manually select a test instrument tag on the quality order line or the quality order results line when the quality order is updated.
+## Apply test instrument types and tags to a quality order
 
-If a test instrument tag has an Instrument usage status of Out of service, then it will not be available for selection. If the test instrument tag has an Instrument usage status of Calibration, depending on the specific of the test instrument tag, it may or may not be available for selection on the Quality test. Additionally, depending on parameter validations, the system might also optionally either warn or send an error to the user, if the chosen test instrument tag has exceeded its maximum usage and/or its lifetime usage. Also, if the chosen test instrument tag is currently being used on an open quality order, a warning message will also be provided to the user.
+Quality tests are set up and managed using [quality orders](quality-orders.md), which define what to test and how. Each quality order is assigned a [test group](quality-test-groups.md), which defines which tests to make and which [test instrument type](quality-test-instruments.md) to use for each test. When you assign a test group to a quality order, each line from the selected test group becomes a line in the new quality order, which also inherits the test instrument type from the test group. On creating the quality order, a specific test instrument tag can (and in some cases must) be assigned to each line, thereby specifying the specific physical instrument to be used for that test.
 
-Once validated, if the chosen test instrument tag is calibrated based on Usage, then the usage counts on the test instrument tag are updated based on the quality order. The current usage count and the lifetime usage count will be incremented by either the test quantity or the usage increment depending on the details of the calibration group on the test instrument tag.
+To view and assign [test instrument types](quality-test-instruments.md) for a test group, follow these steps:
 
-## Print calibration reports
+1. Go to **Inventory management \> Setup \> Quality control \> Test groups**.
+1. Create or select the test group that you want to use.
+1. On the bottom of the page, open the **Overview** tab.
+1. Create or select a test group line.
+1. On the bottom of the page, open the **Test** tab.
+1. In the **Test instrument** field,  select the test instrument type.
 
-There are three calibration related reports provided:
+To view and assign [test instrument tags](#tags) for a quality order, follow these steps:
 
-- Test instrument calibration certificates
-- Test instrument calibration labels
-- Test instrument calibration schedule
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Quality orders**.
+1. Create or select the quality order that you want to use.
+1. On the bottom of the page, open the **Overview** tab. This tab lists a line for each test required by the quality order, including lines inherited from the **Test group** assigned to the quality order. Additional lines can be added manually as needed.
+1. On the **Overview** tab, select a quality order line and then switch to the **Test** tab.
+1. Use the **Tag number** field to view or set the test instrument tag for the selected quality order line.
 
-Calibration certificates can also be generated in mass directly from the menu path: **Inventory management** \> **Reports** \> **Quality management** \> **Test instrument calibration certificates**. The Calibration certificates and the Calibration labels can both be printed from a test instrument tag or from a specific calibration record. If printed from the test instrument tag, they include details from the last closed calibration. If printed from a specific calibration record, it will print details from that specific calibration.
+Here are some guidelines for using test instrument types and tags on quality orders:
 
-Once generated, it can be saved to a file or printed directly to a printer of your choosing. Here is an example of a Calibration certificate:
+- If your system has the **Automatically assign test instrument tag number on quality order line** option enabled on the [**Inventory and warehouse management parameters** page](#parameters), then when a new quality order is created, the system sorts through the test instrument tags for each selected instrument type and select the best available test instrument tag for the quality test. If this option isn't enabled, you must manually assign test instrument tags as needed.
+- When a test instrument type selected for use on a quality order line is set to require a test instrument tag, then the quality order line must have a test instrument tag selected before the quality order can be validated.
+- Test instrument tags that have an **Instrument usage** status of *Out of service* aren't available for selection.
+- Test instrument tags that have an **Instrument usage** status of *Calibration* might be available for selection on the quality test, depending on how the test instrument tag is set up.
+- Depending on how you've set up the system to validate test instrument tags, the system might show a warning or error, if a chosen test instrument tag is already being using for another open quality order, has exceeded its maximum usage, and/or has exceeded its lifetime usage.
+- When a quality order is validated, if a chosen test instrument tag is calibrated based on usage, then the usage counts on the test instrument tag are updated based on the quality order. The current usage count and the lifetime usage count will be incremented by either the test quantity or the usage increment depending on the details of the calibration group on the test instrument tag.
 
-Test instrument calibration labels assume the use of a label printer. The calibration label layout uses ZPL code to generate the label. When printing a Calibration label, it generates ZPL code that can be immediately recognized and printed by a ZPL Printer in a specified layout or a ZPL reader can be used to view it. When choosing the ribbon action to Print Calibration label, the default destination will come from the Inventory parameters but can be modified at printing time and it supports the option to print the code to a file or to send it directly to a ZPL printer for immediate printing. This layout can be defined using the Calibration label layout setup and can support different layouts for different test instrument types. Test instrument calibration schedule report can be printed directly from the menu path: **Inventory management** \> **Reports** \> **Quality management** \> **Test instrument calibration schedule**. The print destination supports the option to print the report to the screen or directly to a printer of your choice. This report is designed to provide a list of test instruments that need to be calibrated. However, the selection criteria provided supports many options such as by owner or calibration method. By using the Show all due today option, it will create a list of test instrument tags where the Next calibration due date is before today
+## <a name="calibration-labels"></a>Design and print calibration labels
+
+Use calibration labels to attach calibration information directly to physical test instruments. 
+
+### Set up calibration label layouts
+
+Calibration label layouts are designed and printed using the ZPL (Zebra Programming Language) format, which is a standard format for printing labels on Zebra printers. Calibration labels can include information such as the test instrument tag number, the test instrument type, the calibration procedure name, and the next calibration date.
+
+To get started quickly, you can generate a pre-designed ZPL layout for a calibration label. This layout is designed to be used with Zebra printers and can be modified as needed. To add the pre-designed ZPL layout layout to your system, go to **Inventory management** \> **Setup** \> **Quality control** \> **Create sample calibration labels**. The system then generates a label layout named *SampleLabel_2X1*.
+
+To customize the standard layout or create new ones, follow these steps:
+
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Calibration label layout**.
+1. Use the buttons in the Action Pane to create, edit, and delete label layouts as needed.
+1. For your new or selected layout, enter details in the header such as name, description, dimensions, and other options.
+1. Use the large field on the **Label layout** FastTab to design your label layout. Refer to a ZPL reference for how to do it.
+1. The page helps you find the codes needed to insert field values. To add a field value to your layout, follow these steps:
+    1. Set **Use fields from** to the type of database record you want to use a field from (*Test instrument tags* or *Test instrument calibration records*)
+    1. Select a field name from the **Labels** list.
+    1. Select **Insert at end of text** to add the reference code to the end of the label layout text.
+    1. Use copy and paste to move the reference code to the desired location in the label layout text.
+
+### Assign layouts to test instrument types
+
+When you print a calibration label, the system uses the layout that is assigned to the test instrument type of the test instrument tag. Learn how to assign a layout to a test instrument type in [Quality management test instruments](quality-test-instruments.md).
+
+### Print calibration labels
+
+To print calibration labels for a physical test instrument, follow these steps:
+
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instrument tags**.
+1. Select the test instrument tag for which you want to print a calibration label.
+1. In the Action Pane, open the **Print** tab and select **Calibration label**.
+1. The **Print calibration label** dialog opens. Make the following settings:
+    - **Print destination** – Select *Printer* to print the label directly to a printer or *File* to download and save the label locally as a ZPL file.
+    - **Name** – If you choose to print to a printer, then select the printer to use here.
+
+## Print calibration certificates
+
+Calibration certificates document the calibration process and results for a test instrument. They are used to verify that the test instrument has been calibrated according to the specified procedures and standards. Calibration certificates can be printed for each calibration record, and they include information such as the test instrument tag number, the calibration procedure name, the calibration result, the name of the person who did the calibration, and the next calibration date.
+
+To print a certificate for the last closed calibration for a test instrument tag, follow these steps:
+
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instrument tags**.
+1. Select the test instrument tag for which you want to print a calibration label.
+1. In the Action Pane, open the **Print** tab and select **Calibration certificate**.
+1. The certificate is now generated and shown on your screen. From here, you can view, print, and/or export it.
+
+To print a certificate for any selected calibration record, follow these steps:
+
+1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Calibrate test instruments**.
+1. Select the test calibration record for which you want to print a calibration label.
+1. In the Action Pane, open the **Calibrate instruments** tab and, from the **Print** group, select **Calibration certificate**.
+1. The certificate is now generated and shown on your screen. From here, you can view, print, and/or export it.
+
+## View or print the calibration schedule
+
+The calibration schedule report provides a list of test instruments that need to be calibrated. However, you can customize the provided selection criteria to support many other uses, such as by filtering by owner or calibration method. By using the Show all due today option, it will create a list of test instrument tags where the Next calibration due date is before today.
+
+To print a calibration schedule report, follow these steps:
+
+1. Go to **Inventory management** \> **Inquiries and reports** \> **Quality management** \> **Test instrument calibration schedule**. The **Test instrument calibration schedule** dialog opens.
+1. On the **Parameters** FastTab, set **Show all due today** to one of the following values:
+    - *Yes* – Show only those test instrument tags whose next calibration date is before today.
+    - *No* – Allow all test instruments tags to be shown, regardless of when they are due for calibration.
+1. On the **Destination** FastTab, choose where to send the report (*Screen*, *Printer*, *File*, or *Email*). The current destination is shown here (default is *Screen*). To change the destination, select **Change**, then choose a new destination and make settings related to your choice.
+1. On the **Records to include** FastTab, set up filters and constraints to define which test instrument tags to include. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
+1. On the **Run in the background** FastTab, specify how, when, and how often to run the job. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. Select **OK** to apply your settings and close the dialog box.

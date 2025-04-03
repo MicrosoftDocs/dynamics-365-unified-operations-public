@@ -4,7 +4,7 @@ description: Learn how to use and create diagnostic types that can be used with 
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 03/23/2021
+ms.date: 04/25/2025
 ms.reviewer: kamaybac
 ms.search.form: InventTestDiagnosticType, InventTestCorrection
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -54,7 +54,7 @@ To use diagnostic groups, your system must meet the following requirements:
 
 ### Manage diagnostic groups
 
-1. Go to **Inventory management \> Setup \> Quality management \> Diagnostic groups groups**.
+1. Go to **Inventory management \> Setup \> Quality management \> Diagnostic groups**.
 1. Use the buttons on the Action Pane to create, delete, or edit groups shown in the list pane.
 1. In the heading of a new or selected group, enter a name and description for the group.
 1. On the **Diagnostic** FastTab, use the toolbar buttons to add and remove diagnostics that belong to the current the group. For each row, select a diagnostic to be performed and the worker who should perform it.

@@ -4,7 +4,7 @@ description:
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: QMSInventFlexSamplingPlan, QMSInventFlexSamplingTrackingListPage
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 
@@ -44,19 +44,19 @@ To set up your flexible sampling plans, follow these steps.
 
 1. For your new or selected sampling plan, make the following settings in the header:
 
-    - **Flexible sampling plan code** - Enter a name for the sampling plan. 
+    - **Flexible sampling plan code** - Enter a name for the sampling plan.
     - **Name**  – Enter a short description of the sampling plan.
     - **Alert role** - Select a security role to be notified when a specified number of failures for a level is reached.
-    - **Last level** - Select the level number for the last activity to be performed in this flexible sampling plan process. 
+    - **Last level** - Select the level number for the last activity to be performed in this flexible sampling plan process.
     - **Approved** - Set the plan in the approved state.
 
 1. On the Action Pane you have following option.
     - **Add** Add a new sampling plan.
     - **Delete** Remove an existing plan. (You can't delete a plan if quality orders are using the plan or if activities are being tracked against it.)
     - **Copy plan** - Copy content from another plan to the selected plan.
-    - **View activities** - Opens the **Flexible sampling plan activities** page where you can can get summaries and detailed information about the plan activities. 
+    - **View activities** - Opens the **Flexible sampling plan activities** page where you can can get summaries and detailed information about the plan activities.
 
-1. Use the grid on the **Details** FastTab to set up the plan. Use the buttons on the Action Pane to add and remove lines in the grid. For new or selected lines make the follwoing settings:
+1. Use the grid on the **Details** FastTab to set up the plan. Use the buttons on the Action Pane to add and remove lines in the grid. For new or selected lines make the following settings:
 
     - **Level** – Select or view the level number assigned to this activity. The plan will be procssed in the desending order of the levels.
     - **Item sampling** – Select or view the **Item sampling** that determines the sampling size of the quality order for the activity, for example a 10 percent sampling or a 50-unit quantity sampling.
@@ -73,17 +73,16 @@ To set up your flexible sampling plans, follow these steps.
 
 ## Set up the quality association for the flexible sampling plan
 
-Quality orders using flexible sampling plans are set up to be automatically generated using a quality assoication. 
+Quality orders using flexible sampling plans are set up to be automatically generated using a quality association.
 
-Learn more about managing quality assoications in [Quality associations](quality-associations.md)
+Learn more about managing quality associations in [Quality associations](quality-associations.md)
 
-## The Flexible sampling plan activities page
+## View flexible sampling plan activities
 
 Open the **Flexible sampling plan activities** page by selecting the **View activities** button in the action pane on the **Flexible sampling plan** page. This page provides and overview of in which quality associations flexible sampling plans are used.
 
-***Buttons on the Flexible sampling plan activities page***
+The following buttons are provided on the **Flexible sampling plan activities** page
 
 - **Flexible sampling plan activity summary** – View a summary of activity for the selected flexible sampling plan.
 - **Flexible sampling plan activity details** – View the specific details of the flexible sampling plan you select. In this page you can view how the activities in the plan has been progressing through the levels of the plan. For each activity the quality order used for the activity is indicated. A color codes a related text is describing the pass and fail criteria for each levels. As an example, if a quality order has failed, this is indicated with a read color, and you can also see if the test is reverted to a previous level that requires more testing of in case of a failed quality order. From this page you can also open pages with summaries and details about activities, and view charts with statistics about quality order testing performance.
 - **Flexible sampling plans** – View the specific activity details for the flexible sampling plan you select. You can also create a new flexible sampling plan from this page.
-

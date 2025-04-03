@@ -1,6 +1,6 @@
 ﻿---
 title: Set up CAPA case components (preview)
-description: Before you can begin creating and working with CAPA cases, you must set up the components needed to categorize and process CAPA cases.
+description: Learn how to set up the components needed to categorize and process CAPA cases.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac

@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
 ms.topic: how-to
-ms.date: 03/12/2025
+ms.date: 04/25/2025
 ms.custom: 
   - bap-template
 ---
@@ -25,6 +25,18 @@ A quality association defines all the following information for a quality order 
 - The sampling plan
 
 You must define a quality association for each variation in a business process that requires automatic generation of quality orders. For example, a quality order can be generated in the business processes for purchase orders, quarantine orders, sales orders, and production orders.
+
+## Prerequisites for sales returns and transfer orders (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+Most of the features described in this article are available as a standard part of all current versions of Supply Chain Management. However, if you want to set up quality associations for sales returns and transfer orders, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: more here? right FM? -->
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Working with quality associations
 
@@ -47,8 +59,6 @@ To work with quality associations, go to **Inventory management \> Setup \> Qual
 
 The following table provides more information about how quality orders can be generated for specific types of processes.
 
-<!-- KFM: this table is easier to digest. Maybe we should keep this and add the two new processes ( sales return and transfer order) -->
-
 | Type of process | When quality orders can be automatically generated | When quality orders can be generated if destructive testing is required | Condition information | Manual generation information |
 |--|--|--|--|--|
 | Purchase order | Before or after a receipts list or product receipt for the material that is received is posted | After the product receipt for the material that is received is posted, because the material must be available for destructive testing | The requirement for a quality order can reflect a specific site, item, or vendor, or a combination of these conditions. | A manually generated quality order that refers to a purchase order can use information in a quality association record, such as the test sampling plan. |
@@ -58,8 +68,8 @@ The following table provides more information about how quality orders can be ge
 | Production order | Before or after the finished quantity for the production order is reported | After the finished quantity for the production order is reported | The requirement for a quality order can reflect a specific site or item, or a combination of these conditions. | A manually generated quality order that refers to a production order can use information in a quality association record, such as the test sampling plan. |
 | Production order that has a route operation | Before or after the report is finished for an operation | After the reporting production is finished for the last operation | The requirement for a quality order can reflect a specific site, item, or operations resource, or a combination of these conditions. | A manually generated quality order that refers to a route operation can use information in a quality association record, such as the test sampling plan. |
 | Inventory | A quality order can't be automatically generated for a transaction in an inventory journal or for transfer order transactions. |  |  | A quality order must be manually created for an item's inventory quantity. Physical on-hand inventory is required. |
-| Sales return | A quality order is generated when the packing slip on the sales return order is posted. | After the product receipt for the material that is received is posted, because the material must be available for destructive testing. | Before the packing slip is posted on the return order, the quantity on the return line must be registered. You do that from the Update line menu where you select Registration. This will open the Assign disposition code menu, where you must select one of the appicable disposition codes from the drop down. The chosen disposition code must be setup to search for an applicable quality association. This is enabled by setting the Check for quality association check mark in on the definition of the disposition code. | |
-| Transfer order | There are three options for generating a quality order. When you do the picking, when you ship the product, or when you recieve it. | After registration of the receipt of the material, because the material must be available for destructive testing. | | |
+| Sales return | A quality order is generated when the packing slip on the sales return order is posted. | After the product receipt for the material that is received is posted, because the material must be available for destructive testing. | Before the packing slip is posted on the return order, the quantity on the return line must be registered. You do that from the Update line menu where you select Registration. This will open the **Assign disposition code** menu, where you must select one of the applicable disposition codes from the drop down. The chosen disposition code must be setup to search for an applicable quality association. This is enabled by setting the Check for quality association check mark in on the definition of the disposition code. | |
+| Transfer order | There are three options for generating a quality order. When you do the picking, when you ship the product, or when you receive it. | After registration of the receipt of the material, because the material must be available for destructive testing. | | |
 
 > [!NOTE]
 > When you filter quality associations for the *Inbound shipment order* reference type, and the **Account code** value is *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
@@ -68,11 +78,9 @@ The following table provides more information about how quality orders can be ge
 
 <!-- KFM: Add a section here about **Check for quality association** option for disposition codes. -->
 
-
 ## Quality associations and flexible sampling plans
 
-Instead of selecting a fixed **Test group** and **Item sampling** you can set up a flexible sampling plan, which is a test strategy that based on successful test validation allows you to change both test and sample sizes over times. To use **Flexible sampling** in the **Specification** FastTab, select **Flexible sampling** and then a **Flexible sampling plan code**. Learn more about how to set up **Flexible sampling plans** here: [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md)
-
+Instead of selecting a fixed **Test group** and **Item sampling** you can set up a flexible sampling plan, which is a test strategy that based on successful test validation allows you to change both test and sample sizes over times. To use flexible sampling, expand the **Specification** FastTab, select **Flexible sampling** and then a **Flexible sampling plan code**. Learn more in [Flexible sampling plans (preview)](quality-flexible-sampling-plans.md).
 
 ## Examples of automatic generation of quality orders
 

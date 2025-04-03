@@ -1,6 +1,6 @@
 ---
 title: Advanced quality management overview (preview)
-description: 
+description: Learn about the advanced quality management features in Supply Chain Management.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
