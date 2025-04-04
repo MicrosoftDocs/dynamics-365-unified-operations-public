@@ -1,5 +1,5 @@
 --- 
-title: Setup method of payment for ISO20022 direct debit
+title: Set up method of payment for ISO20022 direct debit
 description: Learn how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting in Microsoft Dynamics 365 Finance.
 author: kailiang
 ms.author: kailiang
@@ -13,7 +13,7 @@ ms.search.validFrom: 2016-06-30
 ms.search.form: CustPaymMode
 ---
 
-# Setup method of payment for ISO20022 direct debit
+# Set up method of payment for ISO20022 direct debit
 
 [!include [banner](../../includes/banner.md)]
 
