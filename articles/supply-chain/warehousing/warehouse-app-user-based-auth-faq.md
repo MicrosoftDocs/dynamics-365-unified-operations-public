@@ -132,4 +132,4 @@ The Warehouse Management mobile app will continue to work with Dynamics 365 Fina
 
 ## Will WMA authentication work with entra conditional access?
 
-The Warehouse Management mobile app does not support Entra contidional access. even after service-based authentication is removed. 
+The Warehouse Management mobile app does not support Entra contidional access. 
