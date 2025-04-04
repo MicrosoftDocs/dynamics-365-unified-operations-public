@@ -29,10 +29,10 @@ To use the features described in this article, your system must meet the followi
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-    - *(Preview) Approved customer list* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
-    - *(Preview) Dispense management* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
-    - *(Preview) Electronic signature improvements* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
-    - *(Preview) Advanced quality management* – <!-- KFM: briefly list/describe the capabilities added by this feature -->
+    - *(Preview) Approved customer list* – Allows administrators to set up rules that restrict the sale of specific products to specific customers. The feature applies to sales orders, sales quotations, and sales agreements.
+    - *(Preview) Dispense management* – Allows users to separate dispensing activities from picking activities, ensuring effective management of controlled and regulated products. It supports over-picking with residual products returned to inventory, identifies items needing dispensing control, and requires authorized personnel for dispensing. Additionally, it captures electronic signatures for dispensing postings, establishes dispensing tolerance parameters, generates pick lists/dispensing tickets at production release, and allows issuing more than the proposed quantity.
+    - *(Preview) Electronic signature improvements* – Introduces new electronic signature requirements for various management tasks, including dispense management, CAPA management, instrument calibration, and validation of quality orders. It also defines pass-key expiration and passphrase constraints for electronic signatures.
+    - *(Preview) Advanced quality management* – Integrates advanced quality capabilities throughout the Supply Chain Management solution. Key features include: optimized testing strategies (flexible sampling plans, skip-lot testing, new quality order triggers, and instrument calibration), regulatory compliance (customer-specific certificates of analysis (COA), and enhancements to electronic signatures), digitized manufacturing for precision and compliance (electronic batch record), continuous improvement and risk mitigation (corrective and preventive actions (CAPA) management and enhancements to non-conformance), and enhanced user experience (simplified entry of quality test results and new workspaces for quality management).
 
 ## Key features of advanced quality management
 

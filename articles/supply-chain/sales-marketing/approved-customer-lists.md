@@ -47,11 +47,11 @@ When you set up new approved customer/item relationships, you also establish the
 
 ## Establishing ACL check methods
 
-When you approve a product for a customer, you also set up an ACL check method at both the customer level and the item level to confirm that this customer is approved to purchase this item. This process of verifying the customer/item combination is referred to as the ACL check method. To set the ACL check method for products and customers go to: 
+When you approve a product for a customer, you also set up an ACL check method at both the customer level and the item level to confirm that this customer is approved to purchase this item. This process of verifying the customer/item combination is referred to as the ACL check method. To set the ACL check method for products and customers go to:
 
-- **Product information management > Products > Released products**. Open the **Sell** FastTab and select the method in the field **Approved customer list check method**.
+- **Product information management** \> **Products** \> **Released products**. Open the **Sell** FastTab and select the method in the field **Approved customer list check method**.
 
-- **Sales and marketing > Customers > All customers** - Open the **Sales order defaults** FastTab and select the method in the field **Approved customer list check method**.
+- **Sales and marketing** \> **Customers** \> **All customers** - Open the **Sales order defaults** FastTab and select the method in the field **Approved customer list check method**.
 
 This method determines the action taken if you select a customer and/or item that is not listed in the item's approved customer list. It also confirms that the transaction date is within the effective approval period specified for the customer and the item. You can set up the check method to issue a warning or to prevent the transaction from being processed.
 
@@ -63,9 +63,9 @@ The check methods include the following:
 
 The ACL check method is applicable for the following document types
 
-- **Sales agreements** 
-- **Sales quotations**
-- **Sales orders**
+- Sales agreements
+- Sales quotations
+- Sales orders
 
 Based on the ACL check method, only items authorized for the selected customer account are permitted for the document.
 
@@ -73,8 +73,8 @@ Based on the ACL check method, only items authorized for the selected customer a
 
 To set up and maintain customers who are approved to purchase one or more products, use the **Approved customer list setup** page, which you can open by following either of the following navigation paths:
 
-- **Product information management > Setup > Approved customer list > Approved customer list setup**
-- **Sales and marketing > Setup > Approved customer list > Approved customer list setup**
+- **Product information management** \> **Setup** \> **Approved customer list** \> **Approved customer list setup**
+- **Sales and marketing** \> **Setup** \> **Approved customer list** \> **Approved customer list setup**
 
 Then use the buttons and settings described in the following subsections.
 
@@ -106,24 +106,23 @@ Then use the buttons and settings described in the following subsections.
 
 Customer and item groups allow you to set up groups of customers and groups of items to expedite the approval process when the same set of items are approved for a specific customer, a group of customers, or all customers. If the approved item group is associated to an approved customer group, every customer in the group is authorized to purchase every item in the approved item group. To set up the groups go to
 
-- **Sales and marketing > Setup > Approved customer list > Approved customer groups**.
-- **Product information management > Setup > Approved customer list > Approved item groups** 
+- **Sales and marketing** \> **Setup** \> **Approved customer list** \> **Approved customer groups**
+- **Product information management** \> **Setup** \> **Approved customer list** \> **Approved item groups**
 
 ## View and maintain approved items from the customer account
 
-From the customer record, you have different options to view and maintain approved items for that customer account. Go to **Sales and marketing > Customers > All customers > Tab: Sell > Group: Approved item** and select one of the following menu items
+From the customer record, you have different options to view and maintain approved items for that customer account. Go to **Sales and marketing** \> **Customers** \> **All customers** \> **Tab: Sell** \> **Group: Approved item** and select one of the following menu items
 
-- **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list. 
+- **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list.
 - **Approved items** -  Open the **Approved customer list by customer** page showing items approved for the customer account. This list is similar to the **Setup** page, except that all items defined in **Approved items groups** are unfolded to their item numbers. Use the fields **Effective** and **Expiration** to filter the list based on a specified **Effective date** or **Expiration date**.
 
 - **Effective period** - Open the **Approved customer list expiration** page showing items approved for the customer. By default this list shows approved items that has an expiration date. The date in the **As of** field is defaulted to *todays date*, so it shows by default approved items where the approval is not expired as of *todays date*. You can change the date to a different date in the future. Select **Include never expired** to show also approved items that are set up with no expiration date.
- 
 
 ## View and maintain approved customers from the released product master
 
-From the product master, you have different options to view and maintain approved customers. Go to  **Product information management > Products > Released products > Tab: Sell > Group: Approved customers** and select one of the following menu items
+From the product master, you have different options to view and maintain approved customers. Go to  **Product information management** \> **Products** \> **Released products** \> **Tab: Sell** \> **Group: Approved customers** and select one of the following menu items
 
-- **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list. 
+- **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list.
 - **Approved customers** -  Open the **Approved customer list by item** page showing customers approved for the item. This list is similar to the **Setup** page, except that all customers defined in **Approved customer groups** are unfolded to their item customer accounts. Use the fields **Effective** and **Expiration** to filter the list based on a specified **Effective date** or **Expiration date**.
 
 - **Effective period** - Open the **Approved customer list expiration** page showing customers approved for the item. By default this list shows approved customers that are set up with an expiration date. The date in the **As of** field is defaulted to *todays date*, so it shows by default approved customers where the approval is not expired as of *todays date*. You can change the date to a different date in the future. Select **Include never expired** to show also approved customers that are set up with no expiration date.

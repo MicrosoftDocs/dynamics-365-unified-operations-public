@@ -19,9 +19,12 @@ ms.custom:
 
 <!-- KFM: This topic needs to go into the TOC. But where? -->
 
-Electronic batch records are a requirement of the 21 CFR Part 11 requirement placed on Life Science industries, and pharmaceutical industries. Extensions are required to standard Supply Chain Management functionality to enable the consolidation of production related data to meet those requirements.
+Electronic batch records (EBRs) are required by the *21 CFR Part 11* regulations, which apply to the life science and pharmaceutical industries.
 
-EBR is composed of two major functions. One function is the master manufacturing record (MMR) which documents all the way an item might be produced and the various ways the characteristics might be measured. The other function is the batch production record (BPR) which documents the specific way an item was produced and the actual value of the characteristic's measurements. It also details the characteristics and quantities of the ingredients used to produce the item.
+EBRs have two major components:
+
+- Master manufacturing record (MMR) – Documents all the ways an item might be produced and the various ways its characteristics might be measured.
+- Batch production record (BPR) – Documents the specific way an item was produced and the actual value of the characteristic's measurements. It also details the characteristics and quantities of the ingredients used to produce the item.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -55,11 +58,11 @@ You can configure electronic signature requirements to the following production 
 
 - Picking list journal
 - Route and job card journals
-- Report as finished journal.
+- Report as finished journal
 
-When the **Post route card production journal** E-signature requirement is selected, a notification will be made to the user that the posting of route card journals can no longer be performed automatically by Starting the batch or production order. Likewise, selecting **Post picking list production journal (non-dispensing)** e-signature requirement is selected, a notification that the posting of Picking list journals can no longer be performed automatically by Starting the batch or production order. Also, the report as finished option of the batch or production order will be disabled. To Report as finish a batch or production order, the user will have to use the Report as finished production journal. This is due to the need to capture the electronic signature of the individuals who are posting those activities.
+When the **Post route card production journal** e-signature requirement is selected, a notification will be made to the user that the posting of route card journals can no longer be performed automatically by Starting the batch or production order. Likewise, selecting **Post picking list production journal (non-dispensing)** e-signature requirement is selected, a notification that the posting of Picking list journals can no longer be performed automatically by Starting the batch or production order. Also, the report as finished option of the batch or production order will be disabled. To Report as finish a batch or production order, the user will have to use the Report as finished production journal. This is due to the need to capture the electronic signature of the individuals who are posting those activities.
 
-When the **Validate quality order** E-signature requirement is selected, a signature will be required upon the validation of quality orders. The signature will be required at the validation of the overall quality order, not the validation of the individual test of the quality order.
+When the **Validate quality order** e-signature requirement is selected, a signature will be required upon the validation of quality orders. The signature will be required at the validation of the overall quality order, not the validation of the individual test of the quality order.
 
 ### Configuring work instructions for BOM and formula items
 
