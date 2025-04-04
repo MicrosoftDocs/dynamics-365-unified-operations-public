@@ -1,4 +1,4 @@
-   --- 
+--- 
 title: FR-00004 Protest and post a bill of exchange journal
 description: Learn how to protest a bill of exchange for a legal entity whose primary address is in France in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
