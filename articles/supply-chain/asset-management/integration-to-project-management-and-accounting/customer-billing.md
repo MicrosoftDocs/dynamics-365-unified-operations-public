@@ -20,6 +20,7 @@ The *Work order billing* feature lets you create, process, and bill maintenance 
 - Select a customer and view the assets that customer owns when you create a work order.
 - Set up a parent project for each customer.
 - Register hours, items, expenses, and fees against the work order, and then create an invoice proposal for the customer later.
+- Check customer credit limit before dispatching a work order.
 
 In addition, the feature provides the following functionality:
 
@@ -28,7 +29,11 @@ In addition, the feature provides the following functionality:
 
 ## Turn the work order billing feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Work order billing* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use the work order billing feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Work order billing* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## Turn the credit limit feature on or off
+
+To use the credit limit feature, it must be turned on for your system. Admins can turn this functionality on or off by searching for the *Credit limit check on work order dispatch* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Example scenario
 
@@ -161,5 +166,23 @@ In this section, you will continue to work on the work order that you worked on 
 1. In the **Create invoice proposal** dialog box, in the **Project transactions** section, select the **Select** check box for every line  that you want to invoice.
 1. Select **OK** to close the dialog box and view the new invoice proposal.
 
+## Credit limit check
+The credit limit check feature checks on work order dispatch whether the forecast for the work order is going to cause the customer's outstanding credit to exceed their credit limit. If the credit limit is exceeded, a warning or error is triggered based on the feature's configuration.
+
+### Enabling credit limit check on work orders
+To use the credit limit check, first enable the feature in feature management as described above.
+
+### Configuring credit limit check
+Then go to **Asset Management \> Setup \> Asset management parameters \> Work Orders**, and check the **Credit limit check** toggle, and set the message type to either **warning** or **error**.
+
+### Message types
+- **Warning**: If the forecasted total of a work order exceeds the customer's credit limit, a warning is displayed. The user can override the warning and proceed with dispatching the work order.
+- **Error**: If the forecasted total of a work order exceeds the customer's credit limit, an error is displayed. The user cannot proceed with the dispatch process.
+
+### Setting customer credit limits
+Navigate to **Credits and collections \> Customers \> All customers**. Select a customer (if you follow the example above, it would be *US-013* (*Pelican Wholesales*)) and on the **Credit and collections** FastTab enter their credit limit. The customer's total outstanding credit is calculated as the sum of outstanding sales orders and project credit (work orders accrue toward project credit).
+
+### Dispatching work orders
+During dispatch, if the forecasted total of a work order causes the customer's credit limit to be exceeded, a warning or error will be shown to the user based on the configured message type.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
