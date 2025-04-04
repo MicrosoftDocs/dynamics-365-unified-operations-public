@@ -80,7 +80,7 @@ The following items are received and, as a result, the following actions are tak
     - Step 2: The difference between the quantity of the original and received purchase order line is *within* the percentage tolerance threshold.
     - Step 3: The received quantity of the purchase order line is *greater than* the original purchase order line.
     - Step 4: It's an over-delivery,so the system creates:
-        - An over transaction <!-- KFM: should the flowchart show these as actions too? -->
+        - An over transaction
         - A movement journal
 
 #### Scenario 2
@@ -129,7 +129,7 @@ The following items are received and, as a result, the following actions are tak
 The following items are received and, as a result, the following actions are taken (as shown in the flowchart shown earlier in this article).
 
 - Total order: Purchase order total value is $2950.
-    - Step 1: Purchase order is *outside of* the amount tolerance. This means that Step 2 is skipped. <!-- KFM: So, according to the flowchart, shouldn't we create a journal or PO and then quit here? Why do we continue to the lines? -->
+    - Step 1: Purchase order is *outside of* the amount tolerance. This means that Step 2 is skipped.
 
 - Line 1: 20 pcs ($2000)
     - Step 3: The received quantity of the purchase order line is *greater than* the original purchase order line.
@@ -144,9 +144,11 @@ The following items are received and, as a result, the following actions are tak
         - A movement journal
 
 > [!NOTE]
-> When an over-delivery automatically triggers the creation of a purchase order, the system also posts a product receipt. However, invoices must alwaysbe posted manually for these purchase orders.
-> Under and over delivery quantities will not impact the estimated landed costs. This means that the auto costs calculated for the voyage or container will not be re-distributed across the actual quantities that are received.
-> When receiving with the Warehouse Management mobile app, the user will not be notified in case of an over or under delivery.
+> When an over-delivery automatically triggers the creation of a purchase order, the system also posts a product receipt. However, invoices must always be posted manually for these purchase orders.
+>
+> Under- and over-delivery quantities don't impact the estimated landed costs. This means that auto costs calculated for a voyage or container won't be redistributed across the actual quantities that are received.
+>
+> When receiving with the Warehouse Management mobile app, workers aren't notified when an over- or under-delivery occurs.
 
 ## Set up over/under transactions
 
