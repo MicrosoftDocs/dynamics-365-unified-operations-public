@@ -45,8 +45,8 @@ To enable vendor invoice declaration, follow these steps.
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Vendor invoice declaration**.
 1. Select **New**.
 1. In the **Invoice declaration** field, enter "SubC".
-1. In the Description field, enter "Sub-contractor".
-1. In the Reporting code field, enter "06".
+1. In the **Description** field, enter "Sub-contractor".
+1. In the **Reporting code** field, enter "06".
 1. Select **New**.
 1. In the **Invoice declaration** field, enter "Gift".
 1. In the **Description** field, enter "Gifts".
