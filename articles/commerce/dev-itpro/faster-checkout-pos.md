@@ -2,7 +2,7 @@
 title: Check out faster with optimized payment flows
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/03/2025
+ms.date: 04/25/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -30,7 +30,7 @@ Before you can transition to the upgraded payment flow experience, the following
 
 ## Feature availability
 
-The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42.<!-- The **Pay by Loyalty** experience is available starting with Commerce version 10.0.44.--> The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42. The **Pay by Loyalty** experience is available starting with Commerce version 10.0.44. The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
 
 > [!NOTE]
 > If you've customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and want to continue using those user experiences, you don't need to disable the feature flag. You should instead contact Microsoft support to disable the new user experiences for these individual payment methods while still benefiting from the additional functionality provided by the other payment methods.
@@ -91,13 +91,13 @@ Select **OK** to set the change for the button property that you're updating. Wh
 The **Pay with gift card** payment flow automatically triggers the balance check to show cashiers the gift card balance information on POS before using the gift card for payment. This action prevents the additional clicks that cashiers usually need to do to help customers determine their gift card balance. 
 
 :::image type="content" source="../media/payUXGiftcard.png" alt-text="Display gift card balance before using the gift card.":::
-<!--
+
 ## Pay with loyalty
 
 The **Pay with loyalty** payment flow allows cashiers to initiate the customer search experience if a customer isn't already added to the transaction, as shown in the following example image. Alternatively, if the customer is added to the transaction, then a cashier can view the loyalty cards associated with the customer. The cashier can either select the associated loyalty cards or scan/type a different loyalty card that the customer wants to use for the payment. This helps the cashier to efficiently perform all the actions that the customers usually ask after a payment process is started.
 
 :::image type="content" source="../media/PayLoyaltyUX.png" alt-text="Search for a customer from the Pay with loyalty program screen and view the associated loyalty cards.":::
--->
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
