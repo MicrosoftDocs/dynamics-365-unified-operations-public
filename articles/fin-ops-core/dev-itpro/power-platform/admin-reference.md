@@ -128,7 +128,7 @@ The next step in the process is to provide Dataverse with the finance and operat
 
     - **Microsoft Entra Application Secret** - The secret generated above.
 
-    - **Microsoft Entra Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the Microsoft Entra application representing finance and operations, and should always be this same value).
+    - **Microsoft Entra Resource** - The URL at which you can access finance and operations.
 
 4.  Save the changes.
 
