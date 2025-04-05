@@ -2702,7 +2702,7 @@
                           href: localizations/france/emea-fra-titres-de-recette-public-sector.md
                         - name: Vendor invoice payment holds
                           href: localizations/france/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                    - name: Approve and post draw bill of exchange
+                    - name: Draw up, approve, and post a bill of exchange
                       href: localizations/france/fr-00004-approve-post-draw-bill-exchange.md
                     - name: Chronological invoices vouchers
                       href: localizations/france/emea-fra-chronological-invoices-vouchers.md
@@ -2736,17 +2736,17 @@
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
                       href: localizations/france/emea-fra-apply-penalty-customer-payment-past-due.md
-                    - name: Post protest draw bill of exchange journal
+                    - name: Protest and post a bill of exchange journal
                       href: localizations/france/fr-00004-post-protest-draw-bill-exchange-journal.md
-                    - name: Post re-draw bill of exchange journal
+                    - name: Post a redraw bill of exchange journal
                       href: localizations/france/fr-00004-post-re-draw-bill-exchange-journal.md
                     - name: Print lump sum recovery text on a customer invoice
                       href: localizations/france/emea-fra-print-lump-sum-recovery-text.md
                     - name: RB/SL depreciation
                       href: localizations/france/emea-fra-rbsl-depreciation.md
-                    - name: Set up method of payment
+                    - name: Set up methods of payment
                       href: localizations/france/fr-00004-setup-method-payment.md
-                    - name: Update method of payment on customer
+                    - name: Update method of payment for a customer
                       href: localizations/france/fr-00004-update-method-payment-customer.md
                     - name: VAT declaration
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
