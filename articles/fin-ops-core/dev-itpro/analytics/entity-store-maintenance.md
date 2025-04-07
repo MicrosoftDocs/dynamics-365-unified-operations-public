@@ -4,7 +4,7 @@ description: Learn about procedures that must be completed after entity store ma
 author: MilindaV2
 ms.author: milindav
 ms.topic: article
-ms.date: 04/09/2021
+ms.date: 04/09/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
@@ -54,28 +54,28 @@ After the refresh completes, the application analytical workspaces and reports w
 
 Refresh the Entity store measurements as described above.
 
-The reports deployed to PowerBI.com may produce errors like below,
+The reports deployed to PowerBI.com may produce the following errors:
 
-- The credentials provided for the SQL source are invalid
-- Login failed for user <user_name>
+- The credentials provided for the SQL source are invalid.
+- Login failed for user <user_name>.
 - A connection could not be made to the data source with the Name of '{"protocol":"tds","address":{"server":"testsqlserver.database.windows.net","database":"test_edw_database"},"authentication":null,"query":null}'.
-Please try again later or contact support. If you contact support, please provide these details.
+Try again later or contact support. If you contact support, provide these details:
 
 ![PowerBI.com report with connection issue.](media/EntityStore-PowerBI-Creds-Issue.png)
 
-These errors may occur when the credentials of Entity store database got rotated and PowerBI.com reports still configured with old credentials.
+These errors can occur if the credentials of Entity store database are rotated and PowerBI.com reports still configured with old credentials.
 
-To resolve this issue, user can follow one of the solutions mentioned below
+To resolve this issue, follow one of the following solutions:
 
-1. Redeploy any of the reports where you have encountered the failure, using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
-   - Please be aware that this action will overwrite the current report and any customizations not taken to LCS as PBIX will be lost. If there are customizations in PowerBI.com, export the report as a PBIX file and upload it to LCS for redeployment.
+1. Redeploy the reports where you have encountered the failure. Go to **System Administration** \> **Setup** \> **Deploy Power BI files**.
+   - This action overwrites the current report and any customizations not in LCS as PBIX are lost. If there are customizations in PowerBI.com, export the report as a PBIX file and upload it to LCS for redeployment.
 
-2. Deploy a sample report using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**. This will fix the above errors for any other Entity store based reports in PowerBI.com
-   - You can use this [sample report](<media/Sample report to fix FnO PowerBI creds issue.pbix>).
+2. Deploy a sample report. Go to **System Administration** \> **Setup** \> **Deploy Power BI files**. This fixes the above errors for any Entity store based reports in PowerBI.com
+   - Use this [sample report](<media/Sample report to fix FnO PowerBI creds issue.pbix>).
    - Users encountering this issue need to perform this action individually.
 
 > [!NOTE]
-> For any other errors with the PowerBI.com reports after maintenance activity or if the above solution didn't resolve the issue, you may need to delete the report and the related dataset, and then redeploy the report using **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**. As mentioned above any customizations not taken to LCS as PBIX will be lost by this action.
+> For errors with the PowerBI.com reports after maintenance activity or if the above solution didn't resolve the issue, you may need to delete the report and the related dataset, and redeploy the report. To redeploy the report, go to **System Administration** \> **Setup** \> **Deploy Power BI files**. Any customizations not in LCS as PBIX are lost by this action.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
