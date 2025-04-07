@@ -56,7 +56,7 @@ The configuration enables exchange rates to be imported for five different excha
 | ------ | -------------------------------------------------------------------------------|                        
 | **Banknote buying** | Specify the exchange rate type for *Banknote buying*. |
 | **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
-| **Cross rate** | Specify the exchange rate type for *Cross rate*. |
+| **Cross rate** | Specify whether cross rates are included in the exchange rate type selected in the **Accounting currency exchange rate type** field on the **General ledger > Ledger setup > Ledger** page. If the parameter is set to **Yes**, cross rate values will be included in the exchange rate type selected in the **Accounting currency exchange rate type** field. |
 | **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
 | **Forex buying** | Specify the exchange rate type for *Forex buying*. |
 | **Forex selling** | Specify the exchange rate type for *Forex selling*. |
