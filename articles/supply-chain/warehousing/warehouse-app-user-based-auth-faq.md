@@ -129,3 +129,7 @@ If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you
 ## Will user-based authentication work with Dynamics 365 Finance + Operations (on-premises)?
 
 The Warehouse Management mobile app will continue to work with Dynamics 365 Finance + Operations (on-premises), even after service-based authentication is removed. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Azure. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. Learn more in [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
+## Can I authenticate using Microsoft Entra Conditional Access?
+
+No. The Warehouse Management mobile app doesn't support Microsoft Entra Conditional Access.
