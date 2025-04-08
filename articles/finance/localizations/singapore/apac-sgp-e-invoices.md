@@ -167,7 +167,6 @@ To configure the structure of the postal address to define all required elements
 
     - Country code
     - Postal code
-    - City name
     - Street
 
 ## Configure legal entity data
@@ -276,7 +275,7 @@ To enter the Buyer schema codes, follow these steps.
 1. In the **Value** column, enter the required Buyer schema code.
 
 > [!NOTE]
-> The schema codes definend via the Electronic document property types have a higher priority then the default **9925** schema code.
+> The schema codes definend via the Electronic document property types have a higher priority then the default **0195** schema code.
 
 ## Configure units of measure
 
@@ -297,34 +296,6 @@ To configure units of measure, follow these steps.
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
 4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/). 
-
-## Buyer reference
-
-According to PEPPOL requirements, when you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter either a customer reference or a customer requisition. 
-
-### Free text invoices
-
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a new invoice, or select an existing invoice.
-3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and/or **Customer reference** fields.
-
-### Sales orders
-
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a new sales order, or select an existing sales order. 
-3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and/or **Customer reference** fields.
-
-### Project invoices
-
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2. Create a new project contract, or select an existing project contract.
-3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
-4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and/or **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
-5. To enter customer requisition and/or reference values directly on the project invoice proposal, follow these steps:
-
-    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
-    2. Create a new invoice proposal, or select an existing invoice proposal.
-    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
 
 ## Issue electronic invoices
 
