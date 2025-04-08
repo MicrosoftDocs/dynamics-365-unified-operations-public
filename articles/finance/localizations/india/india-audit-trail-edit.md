@@ -1,6 +1,6 @@
 ---
 title: Audit trail and edit logs for accounting software in India
-description: Learn about the new Indian tax legislation guidelines for accounting software, including overviews on legislation and compliance.
+description: Learn about the new Indian tax requirements of the Rule (3) of Companies (Accounts) Rules.
 author: liza-golub
 ms.author: egolub
 ms.topic: conceptual
@@ -15,8 +15,7 @@ ms.search.region: India
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information intended to aid an organization to meet the requirements of the Rule (3) of Companies (Accounts) Rules, 2014 and its amendments G.S.R. 205(E) dated 24.03.2021, G.S.R. 247(E) dated 
-01.04.2021, G.S.R. 235(E) dated 31.03.2022, issued by the Indian Ministry of Corporate Affairs (MCA).  
+This article provides information intended to aid an organization to meet the requirements of the Rule (3) of Companies (Accounts) Rules, 2014 and its amendments G.S.R. 205(E) dated 24.03.2021, G.S.R. 247(E) dated 01.04.2021, G.S.R. 235(E) dated 31.03.2022, issued by the Indian Ministry of Corporate Affairs (MCA).  
 
 Microsoft Dynamics 365 Finance has been designed to help customers meet the requirements defined by the MCA for accounting software to record an audit trail of financial transactions. Record-change logging is 
 available in Dynamics 365 Finance that exceeds the requirements of the legislation and allows additional tracking of changes made to records outside the formal “book of accounts”. 
@@ -107,7 +106,7 @@ and perform additional backups of the Books of Account if they wish.
 physically located in India.
  - A customer's representative who has an administrator role in Dynamics 365  Finance can check where the database is deployed by looking at the Database backup location field in Lifecycle Services.
  - Databases are protected by Microsoft Power Platform's automatic backups of production environments. These backups are kept for up to 28 days. For more information, see Back up and restore environments. The
-underlying technology is Azure SQL Database. For more information, see [Automated backups in Azure SQL database](/azure/azure-sql/database/automated-backups-overview?view=azuresql).
+underlying technology is Azure SQL Database. For more information, see [Automated backups in Azure SQL database](/azure/azure-sql/database/automated-backups-overview).
  - Administrators can view evidence about which environments have daily backups enabled. They can capture a screenshot to create a log of this evidence.
  - Administrators in Lifecycle Services can use the Environment Metadata API to create a daily log of evidence that pertains to the database backup location and the enabled status of daily backup. For more
 information, see [Fetch environment metadata](../../../fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata.md). Any software that supports HTTP and RESTful APIs can be used for this task. 
