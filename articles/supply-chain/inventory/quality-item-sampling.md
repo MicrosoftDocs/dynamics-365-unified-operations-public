@@ -25,7 +25,8 @@ Follow these steps to set up item sampling.
 1. In the **Item sampling** field, enter a value.
 1. In the **Description** field, enter a value.
 1. In the **Value** field, enter a number. This value is related to the quantity specification value that is selected in the adjacent field.
-1. In the **Process** section, select the **Full blocking** check box if the whole lot or order line quantity should be blocked if a test is failed. If this check box is cleared, only the items in the quality order will be blocked if a test is failed.
+1. On the **Process** FastTab, set **Full blocking** to *Yes* if the whole lot or order line quantity should be blocked if a test is failed. Set this option to *No* if only the items in the quality order should be blocked if a test is failed.
+1. On the **Process** FastTab, enable each dimension (such as **License plate** or **Batch number**) that should be populated automatically on the **Inventory dimensions** tab of a quality order.
 1. Select **Save**.
 1. Close the page.
 

@@ -31,7 +31,7 @@ When you use this feature, the arrival and quality check occur in the following 
 This process can also be set up so that all scanned license plates are immediately diverted to the quality check location.
 
 > [!NOTE]
-> For license plate, serial number, or any other dimension to be automatically populated on the **Inventory dimensions** tab of a quality order, they must be turned on for the relevant record on the **Item sampling** page **Process** FastTab (**Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**).
+> For license plate, serial number, or any other dimension to be automatically populated on the **Inventory dimensions** tab of a quality order, they must be turned on for the relevant record on the **Item sampling** page **Process** FastTab (**Inventory management** \> **Setup** \> **Quality control** \> **Item sampling**). Learn more in [Quality management item sampling](quality-item-sampling.md).
 
 ## Turn the Quality check feature on or off
 
