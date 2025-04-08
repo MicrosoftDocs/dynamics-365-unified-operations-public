@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual  
 ms.custom: 
   - bap-template
-ms.date: 04/04/2025
+ms.date: 04/09/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -27,6 +27,16 @@ This list is intended to help you consider these removals and deprecations for y
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
 ## Feature deprecation effective April 2025
+
+### Dynamics Translation Service support ends on June 30, 2025
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** |  Dynamics Translation Service (DTS) reaches the end-of-support on June 30, 2025, and is longer available after this date. If you are an existing user of the DTS, you can longer access DTS after June 30, 2025. Furthermore, you can no longer retrieve translation request outputs stored in DTS. The service will be removed from Dynamics Lifecycle Services and the extensions will be unpublished.  |
+| **Replaced by another feature?**   | Consider using alternative tools and translation services, such as [Custom Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/overview), for future translation needs.   |
+| **What do you need to do?**        |  For DTS users, it is recommended to download any applicable translation request output files for future recycling before June 30, 2025. </br?</br> Users of the DTS Azure DevOps extension should remove the tasks from any build pipelines prior to June 30, 2025, otherwise these tasks will fail because the service is unreachable after June 30, 2025. For more information about this deprecation, please contact your Microsoft representative or dtssup@microsoft.com  |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Dynamics Translation Service support ends on June 30, 2025 |
 
 ### Disable storage account key access to finance and operations managed storage accounts
 
