@@ -37,9 +37,9 @@ Dynamics 365 Finance defines the books of account as the official accounting ent
 GeneralJournalAccountEntry tables, together with their related references. The transaction records contain the date, amount, text, created date, and created by fields. An accounting entry can only be corrected 
 by adding new reversing and correcting entries, not by changing the existing records. There is no capability provided to users in Dynamics 365 Finance to alter these records.  
 
-For information on viewing transactions, see [View journal entries and transactions](/finance/general-ledger/view-journal-entries-transactions.md). 
+For information on viewing transactions, see [View journal entries and transactions](../../general-ledger/view-journal-entries-transactions.md). 
 
-While the software is intended to help customers meet the requirements of the legislation, it is the responsibility of the customer to operate in accordance with the legislation and ensure its practices and policies meet the requirements. For example, to achieve the in-country requirements in the legislation, the customer must select the India geo when first provisioning the environment to ensure data is maintained within India. For information on data residency practices and data retention policies, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md). . 
+While the software is intended to help customers meet the requirements of the legislation, it is the responsibility of the customer to operate in accordance with the legislation and ensure its practices and policies meet the requirements. For example, to achieve the in-country requirements in the legislation, the customer must select the India geo when first provisioning the environment to ensure data is maintained within India. For information on data residency practices and data retention policies, see [Data retention, deletion, and destruction in Microsoft 365](../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md). . 
 
 ### The information in the electronic records will remain complete and unaltered
 
@@ -71,7 +71,7 @@ customer leaves Dynamics 365 Finance.
 The customer selects which geography Dynamics 365 Finance is deployed to by using Microsoft Dynamics Lifecycle Services (Lifecyle Services). Dynamics 365 Finance is generally available in datacenters in various 
 geographical locations around the world. Although Microsoft might replicate data to other regions of the selected geographical location for data durability, customer data won't be replicated or moved outside the
 geographical location. Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications if region-wide outage occurs. For more 
-information, see [Business continuity and disaster recovery for Dynamics 365 SaaS apps](power-platform/admin/business-continuity-disaster-recovery.md).  
+information, see [Business continuity and disaster recovery for Dynamics 365 SaaS apps](/power-platform/admin/business-continuity-disaster-recovery).  
 
 ### Books of account must remain accessible in India 
 
@@ -91,12 +91,12 @@ statements. If books of accounts are maintained in the cloud, the address that t
 
 I. Accessibility requirement 
 Books of account and other relevant documents that are maintained in electronic mode in Dynamics 365 Finance and accessible in India for later reference. Access to the data and functionality of Dynamics 365 
-Finance is determined by the role-based security concept. For more information, see [Role-based security](/fin-ops-core/dev-itpro/sysadmin/role-based-security.md). 
+Finance is determined by the role-based security concept. For more information, see [Role-based security](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md). 
 
 II. Daily backup requirement 
 To use Dynamics 365 Finance, companies must deploy a Dynamics 365 Finance environment through Lifecycle Services. Dynamics 365 Finance environments are deployed in a customer-selected Azure region where customer
 data is stored. Companies that use Dynamics 365 Finance choose where they want to deploy their environments when they create the environment through Lifecycle Services. Although Microsoft might replicate data to
-other regions within the geographical location for data durability, customer data isn't replicated or moved outside the geographical location. For more information, see [Azure paired regions](azure/reliability/regions-paired#azure-paired-regions.md). The specific activities that are required to meet the daily backup requirement may vary, based on the geographical location (whether inside or outside of India) that was chosen for deployment of Dynamics 365 Finance environments. 
+other regions within the geographical location for data durability, customer data isn't replicated or moved outside the geographical location. For more information, see [Azure paired regions](/azure/reliability/regions-paired#azure-paired-regions). The specific activities that are required to meet the daily backup requirement may vary, based on the geographical location (whether inside or outside of India) that was chosen for deployment of Dynamics 365 Finance environments. 
 
 ### Dynamics 365 Finance environments that are deployed in India 
 
@@ -110,13 +110,13 @@ physically located in India.
 underlying technology is Azure SQL Database. For more information, see [Automated backups in Azure SQL database](/azure/azure-sql/database/automated-backups-overview?view=azuresql).
  - Administrators can view evidence about which environments have daily backups enabled. They can capture a screenshot to create a log of this evidence.
  - Administrators in Lifecycle Services can use the Environment Metadata API to create a daily log of evidence that pertains to the database backup location and the enabled status of daily backup. For more
-information, see [Fetch environment metadata](fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata). Any software that supports HTTP and RESTful APIs can be used for this task. 
- - Administrators can restore their environments to a specific point in time in the past by using Lifecycle Services. For more information, see [Database point-in-time restore](/fin-ops-core/dev-itpro/database/database-point-in-time-restore). 
+information, see [Fetch environment metadata](../../../fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata.md). Any software that supports HTTP and RESTful APIs can be used for this task. 
+ - Administrators can restore their environments to a specific point in time in the past by using Lifecycle Services. For more information, see [Database point-in-time restore](../../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md). 
 
 
 ### Changes to software 
 Like any major ERP system, Dynamics 365 Finance allows customers to further extend the functionality of the system through code. If the customer chooses to extend or change how the system behaves, it is the
-customer’s responsibility to ensure their changes are compliant with the India tax legislation guidelines. For more information, see [Best practices for healthy application lifecycle management practices](/dynamics365/guidance/implementation-guide/application-lifecycle-management-product.md). It is the customer’s responsibility to demonstrate to auditors that their application
+customer’s responsibility to ensure their changes are compliant with the India tax legislation guidelines. For more information, see [Best practices for healthy application lifecycle management practices](/dynamics365/guidance/implementation-guide/application-lifecycle-management-product). It is the customer’s responsibility to demonstrate to auditors that their application
 lifecycle management practices comply with the guidelines and do not allow rogue code to negatively change product behavior. Examples include requiring code reviews on all changes, only deploying software 
 updates from official branches, and requiring signoff on the release of product extensions to production. 
 
@@ -131,7 +131,7 @@ If a Dynamics 365 Finance environment is deployed outside of India, a company ca
 
  - Option 1 - Geo to geo migration 
 Under some conditions, to fulfill India's daily backup requirement, a company that operates in India and has its Dynamics 365 Finance environment deployed outside of India can consider migrating the Dynamics 365
-Finance environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a Dynamics 365 Finance environment that contains data necessary to
+Finance environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](../../../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a Dynamics 365 Finance environment that contains data necessary to
 fulfill the daily backup requirement is migrated to a datacenter in India, the approach that is described in the Dynamics 365 Finance environments that are deployed in India section is applicable. 
 
  - Option 2 - Multi-instance installation 
