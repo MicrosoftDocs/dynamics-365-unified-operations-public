@@ -39,7 +39,7 @@ by adding new reversing and correcting entries, not by changing the existing rec
 
 For information on viewing transactions, see [View journal entries and transactions](../../general-ledger/view-journal-entries-transactions.md). 
 
-While the software is intended to help customers meet the requirements of the legislation, it is the responsibility of the customer to operate in accordance with the legislation and ensure its practices and policies meet the requirements. For example, to achieve the in-country requirements in the legislation, the customer must select the India geo when first provisioning the environment to ensure data is maintained within India. For information on data residency practices and data retention policies, see [Data retention, deletion, and destruction in Microsoft 365](../../../compliance/assurance/assurance-data-retention-deletion-and-destruction-overview.md). . 
+While the software is intended to help customers meet the requirements of the legislation, it is the responsibility of the customer to operate in accordance with the legislation and ensure its practices and policies meet the requirements. For example, to achieve the in-country requirements in the legislation, the customer must select the India geo when first provisioning the environment to ensure data is maintained within India. For information on data residency practices and data retention policies, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).  
 
 ### The information in the electronic records will remain complete and unaltered
 
@@ -131,7 +131,7 @@ If a Dynamics 365 Finance environment is deployed outside of India, a company ca
 
  - Option 1 - Geo to geo migration 
 Under some conditions, to fulfill India's daily backup requirement, a company that operates in India and has its Dynamics 365 Finance environment deployed outside of India can consider migrating the Dynamics 365
-Finance environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](../../../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a Dynamics 365 Finance environment that contains data necessary to
+Finance environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](../../../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md). When a Dynamics 365 Finance environment that contains data necessary to
 fulfill the daily backup requirement is migrated to a datacenter in India, the approach that is described in the Dynamics 365 Finance environments that are deployed in India section is applicable. 
 
  - Option 2 - Multi-instance installation 
@@ -145,13 +145,13 @@ For Dynamics 365 Finance environments that are deployed outside of India, compan
 relevant documents from their Dynamics 365 Finance to a data lake in a datacenter in India. For more information, see [What is Azure Synapse Link for Dataverse?](/power-apps/maker/data-platform/export-to-data-lake).
 
 This service enables the selection of both standard and custom Dynamics 365 Finance entities and tables. It supports continuous replication of entity and table data, including create, update, and delete (CUD) 
-transactions. For more information, see [Create an Azure Synapse Link for Dataverse with Azure Data Lake](power-apps/maker/data-platform/azure-synapse-link-data-lake). 
+transactions. For more information, see [Create an Azure Synapse Link for Dataverse with Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake). 
 
 >[!Note]
 > We recommend that you use Dynamics 365 Finance tables for data replication to Data Lake Storage. 
 
 1. Enable Data Lake Storage - Data Lake Storage is a powerful Microsoft-provided cloud service that lets you store and analyze large volumes of data. For more information, see [Introduction to Azure Data Lake
-Storage Gen2](azure/storage/blobs/data-lake-storage-introduction). To fulfill the daily backup requirement, create a storage account in India to use with your Azure Data Lake Storage instance. For more information, see [Create an Azure storage account](azure/storage/common/storage-account-create?tabs=azure-portal). 
+Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). To fulfill the daily backup requirement, create a storage account in India to use with your Azure Data Lake Storage instance. For more information, see [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). 
 
 >[!Note]
 > Beginning August 15, 2024, when you select tables in the Dynamics 365 Finance for replication in your organization's Azure Synapse Data Lake Storage in India, the data from these selected tables will be
@@ -164,7 +164,7 @@ the Tables directory in the left pane. For more information, see [Choose f
 3. Data replication - Data from Dynamics 365 Finance is continuously replicated to Azure Synapse Data Lake Storage by using Azure Synapse Link. The data is stored in Common Data Model format to ensure semantic
 consistency across apps and deployments. 
 
-4. Query and transform - After the data is exported, you can use tools such as Apache Spark to query and transform it. For more information, see [Transform Azure Synapse Link for Dataverse data with Apache Spark](power-apps/maker/data-platform/azure-synapse-link-spark). 
+4. Query and transform - After the data is exported, you can use tools such as Apache Spark to query and transform it. For more information, see [Transform Azure Synapse Link for Dataverse data with Apache Spark](/power-apps/maker/data-platform/azure-synapse-link-spark). 
 
 >[!Important]
 > Determining the scope of data sources for books of accounts and other relevant books and papers that are maintained in electronic mode for data replication to fulfill the daily backup requirement in a specific
