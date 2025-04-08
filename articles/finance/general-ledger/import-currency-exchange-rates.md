@@ -52,15 +52,25 @@ The configuration enables exchange rates to be imported for five different excha
 - Forex buying
 - Forex selling
 
+Exchange rate types can be imported into the system individually, excluding cross rates.
+Cross rates can be imported in addition to the other currency exchange rates.
+If cross rates are not imported, the system will generate an error message during ledger posting processes.
+To ensure that cross rates are correctly imported into the system, the **Cross rate** parameter is set to **Yes** by default in the configuration.
+
+>[!NOTE]
+>If the **Cross rate** parameter is set to **Yes**, cross rates will be imported in addition to currency exchange rates of the exchange rate type that is selected on the **Import currency exchange rates** dialog page. The cross rates will have the >same exchange rate type. Otherwise, if the parameter is not set to **Yes**, cross rates will not be imported from CBRT.
+
+
 | **Key** | **Value** |
 | ------ | -------------------------------------------------------------------------------|                        
 | **Banknote buying** | Specify the exchange rate type for *Banknote buying*. |
 | **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
-| **Cross rate** | Specify whether cross rates are included in the exchange rate type selected in the **Accounting currency exchange rate type** field on the **General ledger > Ledger setup > Ledger** page. If the parameter is set to **Yes**, cross rate values will be included in the exchange rate type selected in the **Accounting currency exchange rate type** field. |
+| **Cross rate** | If the parameter is set to **Yes**, cross rates will be imported in addition to currency exchange rates.|
 | **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
 | **Forex buying** | Specify the exchange rate type for *Forex buying*. |
 | **Forex selling** | Specify the exchange rate type for *Forex selling*. |
 | **ServiceOnDateUrl** | Specify the URL information to be used to download exchange rates from CBRT. |
+
 
 ## Import currency exchange rates
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.
