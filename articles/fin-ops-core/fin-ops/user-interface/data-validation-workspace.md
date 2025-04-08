@@ -4,7 +4,7 @@ description: Learn about the Data validation checklist workspace, which lets you
 author: bking
 ms.author: bking
 ms.topic: article
-ms.date: 01/12/2018
+ms.date: 06/05/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

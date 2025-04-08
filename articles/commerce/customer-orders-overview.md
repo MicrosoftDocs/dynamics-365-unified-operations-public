@@ -4,18 +4,18 @@
 title: Customer orders in point of sale (POS)
 description: This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 08/04/2023
-ms.topic: article
+ms.date: 06/25/2023
+ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ["260594"]
 ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Customer orders in point of sale (POS)
@@ -38,20 +38,20 @@ Before you try to use customer order functionality in POS, ensure that you compl
 
 ### Configure modes of delivery
 
-To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery that can be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery that can be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
+To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery to be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery to be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
 
 ### Set up fulfillment groups
 
 Some stores or warehouse locations might not be able to fulfill customer orders. By configuring fulfillment groups, an organization can specify which stores and warehouse locations are shown as options to users who create customer orders in POS. Fulfillment groups are configured on the **Fulfillment groups** page. Organizations can create as many fulfillment groups as they require. After a fulfillment group is defined, link it to a store by selecting **Fulfillment group assignment** from the **Set up** tab on the Action Pane of the **Stores** page.
 
-In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse and store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. This functionality allows for added flexibility when determining which warehouses can be selected for customer orders with items to ship, and which stores can be selected for customer orders with items to pick up. To use these configuration options, turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse that's linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
+In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse and store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. This functionality allows for added flexibility when determining which warehouses can be selected for customer orders with items to ship, and which stores can be selected for customer orders with items to pick up. To use these configuration options, turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
 
 ### Configure channel settings
 
 When you work with customer orders in POS, you must consider some of the settings of the store channel. These settings are found on the **Stores** page in headquarters.
 
 - **Warehouse** – This field indicates the warehouse that is used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, Microsoft encourages the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
-- **Shipping Warehouse** - This field indicates the warehouse that is used when decrementing inventory for customer orders to be shipped from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** has been enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer utilized, since the user picks the specific warehouse to ship the order from when the order is created.
+- **Shipping Warehouse** - This field indicates the warehouse that is used when decrementing inventory for customer orders to be shipped from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** is enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer utilized, since the user picks the specific warehouse to ship the order from when the order is created.
 - **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
 - **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
 - **Use customer-based tax** – This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.
@@ -60,7 +60,7 @@ When you work with customer orders in POS, you must consider some of the setting
 
 Before you try to create customer orders in POS, you must configure the appropriate parameters in headquarters. These parameters can be found on the **Customer orders** tab of the **Commerce parameters** page.
 
-- **Default order type** – You can specify the order type that is assigned by default to customer orders that are created in POS. These customer orders can be either sales orders or quotation orders. Regardless of the default order type, users can still create both sales orders and customer orders from POS.
+- **Default order type** – This legacy property isn't supported.
 - **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
      > [!NOTE]
      > The deposit percentage setting is ignored if a business-to-business (B2B) type customer belonging to a customer hierarchy is added to the customer order. For such customers, the default deposit percentage is always set to zero, but the cashier can override the deposit percentage using the **Deposit override** operation.
@@ -71,7 +71,7 @@ Before you try to create customer orders in POS, you must configure the appropri
 - **Cancellation charge code** – Specify the Accounts receivable charge code that should be used when a cancellation charge is applied to canceled customer orders through POS. The charge code defines the financial posting logic for the cancellation charge.
      > [!NOTE]
      > When advanced auto charges features aren't enabled, it is recommended that you create a dedicated charge code for cancellation charges instead of reusing the shipping charge code, since the latter may result in unexpected behavior when the system selects the sales tax group for the charge. It is also recommended that you choose a cancellation charge code name and description that makes it clear to cashiers that the cancellation charge code is only to be used for cancellations.
-- **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users are prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an Accounts receivable charge code that are applied to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
+- **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users are prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an accounts receivable charge code to apply to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
 - **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omnichannel advanced auto charges](./omni-auto-charges.md).
 
 ### Update transaction screen layouts in POS
@@ -117,7 +117,7 @@ To create a customer order for products that the customer will pick up, follow t
 4. Select the store location where the customer will pick up the selected products.
 5. Select a date when the item will be picked up.
 6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-7. If the full order total wasn't paid, select whether the customer will provide payment later (at pickup), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
+7. If the full order total wasn't paid, select whether the customer provides payment later (at pickup), or whether a credit card is tokenized now and used and captured at the time of pickup.
 
 ### Edit an existing customer order
 
@@ -140,7 +140,7 @@ In version 10.0.17 and later, users can edit eligible orders through the POS app
 
 #### Pricing impact when orders are edited
 
-When orders are placed in POS or on a Commerce e-commerce site, customers commit to an amount. This amount includes a price, and it might also include a discount. A customer who places an order and then contacts the call center later to change that order (for example, to add another item) will have specific expectations about the application of discounts. Even if the promotions on the existing order lines have expired, the customer expects that the discounts that were originally applied to those lines to remain in effect. However, if no discount was in effect when the order was originally placed, but a discount has gone into effect since then, the customer expects the new discount to be applied to the changed order. Otherwise, the customer might just cancel the existing order and then create a new order where the new discount is applied. As this scenario shows, prices and discounts that customers have committed to must be preserved. At the same time, POS and call center users must have the flexibility to recalculate prices and discounts for sales order lines as required.
+When orders are placed in POS or on a Commerce e-commerce site, customers commit to an amount. This amount includes a price, and it might also include a discount. A customer who places an order and then contacts the call center later to change that order (for example, to add another item) has specific expectations about the application of discounts. Even if the promotions on the existing order lines are expired, the customer expects that the discounts that were originally applied to those lines to remain in effect. However, if no discount was in effect when the order was originally placed, but a discount has gone into effect since then, the customer expects the new discount to be applied to the changed order. Otherwise, the customer might just cancel the existing order and then create a new order where the new discount is applied. As this scenario shows, prices and discounts that customers have committed to must be preserved. At the same time, POS and call center users must have the flexibility to recalculate prices and discounts for sales order lines as required.
 
 When orders are recalled and edited in POS, the prices and discounts of the existing order lines are considered "locked." In other words, they don't change, even if some order lines are canceled or changed, or new order lines are added. To change the prices and discounts of existing sales lines, the POS user must select **Recalculate**. The price lock is then removed from the existing order lines. However, before the Commerce version 10.0.21 release, this capability wasn't available in the call center. Instead, any changes to order lines caused prices and discounts to be recalculated.
 

@@ -5,7 +5,7 @@ author: josaw
 ms.author: josaw
 ms.topic: article
 ms.date: 06/27/2023
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-04-30

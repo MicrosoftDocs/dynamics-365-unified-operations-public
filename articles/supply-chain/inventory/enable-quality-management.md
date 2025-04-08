@@ -1,27 +1,14 @@
 ---
-# required metadata
-
 title: Enable quality and nonconformance management
-description: This article provides an overview of the process for setting up and configuring quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management.
-author: yufeihuang
-ms.date: 03/23/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome, InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement, InventTestRelatedOperations
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+description: Learn about the process for setting up and configuring quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management.
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome, InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement, InventTestRelatedOperations
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Enable quality and nonconformance management
@@ -44,7 +31,7 @@ Follow these steps to enable quality management on your system.
 
 ## Quality management configuration process
 
-Before you can start to use the quality management features and generate quality orders, you must configure the system and prerequisites. Here is a list of the steps that are required to configure quality management.
+Before you can start to use the quality management features and generate quality orders, you must configure the system and prerequisites. Here's a list of the steps that are required to configure quality management.
 
 1. [Enable quality and nonconformance management](#enable-qm).
 1. Optional: [Configure test instruments](quality-test-instruments.md).
@@ -58,7 +45,7 @@ After the configuration is completed, you can start to create and process qualit
 
 ## Nonconformance management configuration process
 
-Before you can start to use the nonconformance management features and generate nonconformances, you must configure the system and prerequisites. Here is a list of the steps that are required to configure nonconformance management.
+Before you can start to use the nonconformance management features and generate nonconformances, you must configure the system and prerequisites. Here's a list of the steps that are required to configure nonconformance management.
 
 1. [Enable quality and nonconformance management](#enable-qm).
 1. [Configure workers who are responsible for approving nonconformances](quality-responsible-workers.md).
@@ -70,7 +57,7 @@ Before you can start to use the nonconformance management features and generate 
 
 After the configuration is completed, you can start to create and process nonconformances. For more information about how to create and work with nonconformances, see [Create and process nonconformances](tasks/create-process-non-conformance.md).
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

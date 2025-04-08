@@ -1,27 +1,14 @@
 ---
-# required metadata
-
 title: Transportation management zone master
-description: This article explains how transport management lets you divide geographic locations into zones.
-author: Weijiesa
-ms.date: 10/16/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: TMSZoneMaster
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how transport management lets you divide geographic locations into zones, including definitions for various pricing modules.
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: weijiesa
-ms.search.validFrom: 2020-01-09
-ms.dyn365.ops.version: 10.0.14
-
+ms.search.form: TMSZoneMaster
+ms.topic: how-to
+ms.date: 02/12/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Transportation management zone master
@@ -35,6 +22,5 @@ Transport management lets you divide geographic locations into zones. Dividing l
 - **Optimize route planning** – By assigning specific route plans to specific zones.
 
 You define zones based on the metadata field values (such as country/region, zip code range, or carrier service) that qualify each zone. Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

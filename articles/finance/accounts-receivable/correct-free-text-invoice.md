@@ -1,8 +1,8 @@
 ---
 title: Correct a free text invoice
 description: Learn how to correct a free text invoice that has been posted and reissue it as a corrected invoice, including definitions for different invoice types.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 10/24/2022
 ms.reviewer: twheeloc

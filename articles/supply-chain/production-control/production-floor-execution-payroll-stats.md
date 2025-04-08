@@ -1,16 +1,12 @@
 ---
 title: Show vacation balances in the production floor execution interface
-description: This article provides an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics to provide workers an overview of their vacation balance for the current year.
+description: Acesss an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics.
 author: johanhoffmann
-ms.date: 04/22/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2022-04-22
-ms.dyn365.ops.version: 10.0.XX
+ms.topic: article
+ms.date: 04/22/2022
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Show vacation balances in the production floor execution interface

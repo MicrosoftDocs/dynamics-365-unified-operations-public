@@ -1,10 +1,10 @@
 --- 
 title: Set up Accounts payable invoice matching validation
 description: Learn about on how to set up Accounts payable invoice matching validation, including an outline on determining which validations to use. 
-author: twheeloc
-ms.author: twheeloc
+author: sunfzam
+ms.author: Raynezou
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 06/14/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -31,11 +31,11 @@ Four different types of matching validation are available.
 ## Set up parameters to enable invoice matching validation
 1. Go to **Accounts payable > Setup > Accounts payable parameters**.
 2. Select the **Invoice validation** tab.
-3. Select or clear the **Enable invoice matching validation** check box.
+3. Select or clear the **Enable invoice matching validation** checkbox.
     * Select if approval is required before an invoice that contains discrepancies for invoice matching can be posted. If set to **Allow with warning**, visual indication displays when a discrepancy for invoice matching exceeds the tolerance. However, you will be able to post the invoice. To use workflows together with invoice matching validation, make sure that the **Post invoice with discrepancies** field is set to **Allow with warning** to avoid having to approve multiple times.  
-    * In the **Automatically update invoice header match status** field, select whether matching will be performed automatically during invoice data entry. The recommended setting is **Yes**, unless you are experiencing data entry performance concerns. Disabling automatic updates may enable faster system performance because the invoice matching validation will be bypassed during data entry. The data entry clerk needs to manually update the invoice's match status to see the invoice matching validation results when this is set to **No**.  
+    * In the **Automatically update invoice header match status** field, select if matching will be performed automatically during invoice data entry. The recommended setting is **Yes**, unless you're experiencing data entry performance concerns. Disabling automatic updates may enable faster system performance because the invoice matching validation will be bypassed during data entry. The data entry clerk needs to manually update the invoice's match status to see the invoice matching validation results when this is set to **No**.  
 4. Set **Invoice totals matching**.
-5. Select or clear the **Match invoice totals** check box to match actual invoice totals with expected totals.
+5. Select or clear the **Match invoice totals** checkbox to match actual invoice totals with expected totals.
     * Select whether an icon is displayed if a discrepancy for invoice matching exceeds the tolerance. You can select to display the icon when a positive discrepancy exceeds the tolerance, or when either a positive or a negative discrepancy exceeds the tolerance.  
     * For example, the tolerance is 5 percent, and the total invoice amount on the purchase order is 100.00. Therefore, a price match icon is displayed if the total invoice amount on the invoice exceeds 105.00. If you select **If greater than or less than tolerance**, the icon is also displayed if the invoice amount is less than 95.00.  
 6. In the **Invoice totals tolerance percentage** field, enter the percentage variance that's acceptable. This value is the default value for the company. This value can be overridden for specific vendors, using the **Invoice Totals Tolerances** page. For information about how to override the invoice totals tolerance percentage for a specific vendor, see the [Set up invoice totals matching tolerance for vendors](set-up-accounts-payable-invoice-matching-validation.md#set-up-invoice-totals-matching-tolerance-for-vendors) section later in this article.

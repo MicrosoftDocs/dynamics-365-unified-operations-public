@@ -2,16 +2,15 @@
 title: Payment module
 description: This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/28/2024
-ms.topic: article
+ms.date: 09/20/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.14
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Payment module
@@ -72,9 +71,6 @@ The following illustration shows an example of the PayPal iframe element invoked
 |Is primary payment|  **True** or **False** | If **True**, any error messages are generated from the primary payment connector on the checkout page. If both Adyen and PayPal payment connectors are configured, set Adyen to **True**.|
 |Use connector id| **True** or **False** | Use this property if multiple payment connectors are configured for the site. If **True**, connectors must use the connector ID for payment correlation.|
 |Use browser set language code for iframe element|  **True** or **False** | (Adyen only) If **True**, the Adyen iframe element renders the language based on the site user's browser context instead of using the language code of the Commerce channel configured for the site.|
-
-The following illustration shows an example of the **Supported Tender Types** value set to "PayPal" in the payment connector configuration in Commerce headquarters.
-![Example of supported tender types in Commerce headquarters.](./media/ecommerce-paymenttendertypes.png)
 
 ## Billing address
 

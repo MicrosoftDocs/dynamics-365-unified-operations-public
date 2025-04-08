@@ -2,11 +2,11 @@
 title: Configure the global address book
 description: Use this procedure to set the default values and security policies for the global address book, including a step-by-step procedure. 
 author: msftbrking
-ms.author: brking
+ms.author: anisagrawal
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.custom:
-ms.reviewer: sericks 
+ms.reviewer: johnmichalak 
 audience: Application User   
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30

@@ -5,7 +5,7 @@ author: matapg007
 ms.author: matgupta
 ms.topic: article
 ms.date: 12/19/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-05-19

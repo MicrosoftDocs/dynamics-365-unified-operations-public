@@ -3,15 +3,15 @@ title: AD FS Microsoft 365 compatibility
 description: Learn how to use the instances of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft 365.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 01/13/2020
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-07-31 
-# ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 28 
+ms.service: dynamics-365-op
 ---
 
 # AD FS Microsoft 365 compatibility

@@ -1,15 +1,14 @@
 ---
 title: Set up vendor accounts
-description: This article describes the types of information that you must specify when you create a new vendor account.
-author: Henrikan
-ms.author: henrikan
+description: Learn about the types of information that you must specify when you create a new vendor account, including an outline on vendor account numbers.
+author: ShriramSivasankaran
+ms.author: shriramsiv
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
-ms.topic: how-to
-ms.date: 01/09/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Set up vendor accounts
@@ -33,13 +32,17 @@ To speed up the process of creating vendor accounts, you can create templates. T
 
 You can also create a user template for your own use. You can't delete a vendor that is associated with other records, such as contacts or products.
 
+## Create, edit, and manage vendor accounts
+
+To create, edit, and manage vendor accounts, go to **Procurement and sourcing** \> **Vendors** \> **All vendors**. Learn more in [Set up vendor accounts](set-up-vendor-accounts.md).
+
 ## Vendor account numbers
 
 The account number is a unique identifier for a vendor. You can set up account numbers so that they're generated automatically when you create a vendor. You can also configure the number sequence so that account numbers are entered manually. For example, you might want to use the vendor’s telephone number as the identifier.
 
 ## Vendor organizations and individual vendors
 
-When you create a new vendor account, you must select whether the vendor is an organization or a person. Your selection affects the information that you must fill in for the vendor. For a person, this information includes the first name, last name, and title. For an organization, this information includes the organization number and the number of employees.
+When you create a new vendor account, you must select whether the vendor is an organization or a person. Your selection affects the information that you must fill in for the vendor. For a person, this information includes the first name, family name, and title. For an organization, this information includes the organization number and the number of employees.
 
 ## Addresses
 
@@ -83,7 +86,7 @@ You can put a vendor on hold for various transaction types. The following option
 - *Payment* – No payments can be generated for the vendor.
 - *Requisition* – Purchase requisitions can't be created for the vendor, and requisition lines already created before the vendor was set on hold can't be converted to a purchase order. Requisition lines for the vendor will be canceled if your policy is set to create purchase orders automatically.
 - *Never* – The vendor is never put on hold for inactivity.
-- *Purchase order* – Purchase orders can't be created for the vendor, but you can still proceed with any open invoices or payments to the vendor. This option is available only when the *Put vendor on hold for purchase orders* feature is turned on. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. For more information about this feature, see [What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)](../get-started/whats-new-scm-10-0-29.md).
+- *Purchase order* – Purchase orders can't be created for the vendor, but you can still proceed with any open invoices or payments to the vendor.
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.
 

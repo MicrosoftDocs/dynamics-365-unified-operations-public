@@ -4,13 +4,15 @@
 title: Optimize images
 description: This article explains how you can help improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce.
 author: mssle
-ms.date: 01/28/2022
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sheaton
+ms.author: asharchw
 ms.search.validFrom: 2021-09-20
+ms.custom: 
+  - bap-template
 ---
 
 # Optimize images

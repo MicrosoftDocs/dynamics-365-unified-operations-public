@@ -11,7 +11,8 @@ metadata:
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
   ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/15/2024 #Required; mm/dd/yyyy format.
+  ms.date: 11/10/2024 #Required; mm/dd/yyyy format.
+  ms.custom: evergreen
   hide_bc: true
 
 # highlightedContent section (optional)
@@ -303,7 +304,7 @@ additionalContent:
         text: Globalization services
       - url: /dynamics365/finance/localizations/rcs-overview
         text: Regulatory configuration service
-      - url: /dynamics365/finance/localizations/e-invoicing-service-overview
+      - url: /dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Electronic invoicing
       - url: /dynamics365/finance/localizations/global-tax-calcuation-service-overview
         text: Tax Calculation 

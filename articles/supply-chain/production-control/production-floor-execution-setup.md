@@ -1,25 +1,14 @@
 ---
-# required metadata
-
 title: Set up a device to run the production floor execution interface
-description: The production floor execution interface is set up for every device on the production floor. Companies typically set up each device differently, depending on the purpose that the device serves. For example, a company might have one device in the reception area, where workers clock in and clock out, and another on the shop floor, where workers manage their jobs.
+description: Learn how companies typically set up each device differently, depending on the purpose that the device serves with an outline on setting the configurations.
 author: johanhoffmann
-ms.date: 10/05/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
-ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
+ms.reviewer: kamaybac
+ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Set up a device to run the production floor execution interface
@@ -63,9 +52,11 @@ To allow a worker to override the default job filters that have been set up for 
 1. Select a worker in the list to open that worker's **Time registration workers** page.
 1. On the **Time registration** tab, set the **Set filters** option to *Yes*.
 
+For more information about how to set up worker accounts to access the production floor execution interface, see [Set up worker accounts to use the production floor execution interface](production-floor-execution-worker-accounts.md).
+
 ## Run the interface in full-screen mode
 
-Often, you will run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
+Often, you'll run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
 
 - To hide the navigation pane that is shown in Supply Chain Management, add the following text to the end of the URL in the browser's address bar: `\&limitednav=true`.
 - To also hide the browser's address bar, use the browser's native full-screen mode. (For instructions, see your browser's documentation.)
@@ -79,6 +70,5 @@ The upper part of the following illustration shows how the interface looks by de
 By default, the production floor execution interface automatically signs out if nobody uses it for 12 hours. A Supply Chain Management user must then sign in again. However, you can extend the time-out limit to up to 90 days.
 
 To extend the time-out limit, sign in to Supply Chain Management, and go to **System administration \> Users \> Session extensions**. Specify the Supply Chain Management user account that is used to sign in to the device, and the number of hours that the session should stay active for.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

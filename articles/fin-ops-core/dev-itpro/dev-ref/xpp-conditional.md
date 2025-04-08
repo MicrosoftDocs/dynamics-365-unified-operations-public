@@ -3,9 +3,9 @@ title: X++ conditional statements
 description: Learn about conditional statements in X++, including outlines and examples of if, if..else, and switch statements.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 06/17/2019
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

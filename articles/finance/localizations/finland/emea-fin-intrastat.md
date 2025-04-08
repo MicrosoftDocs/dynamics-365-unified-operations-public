@@ -1,12 +1,13 @@
 ---
 title: Finnish Intrastat
 description: Learn about the Finnish Intrastat report, including an outline on setting up VAT IDs table that defines various fields.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 12/14/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: 
 ms.search.region: Global
 ms.search.validFrom: 
 ---

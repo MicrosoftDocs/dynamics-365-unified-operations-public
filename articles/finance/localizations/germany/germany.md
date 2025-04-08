@@ -4,9 +4,10 @@ description: Access an overview of Dynamics 365 Finance functionality that is sp
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 05/09/2022
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Germany
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1

@@ -1,16 +1,12 @@
 ---
 title: Synchronize intercompany customer information
-description: This article explains synchronization of customer information for intercompany orders
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn about the synchronization of customer information for intercompany orders, including an outline on how you can always change synchronization field values.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ---
 
 # Synchronize intercompany customer information

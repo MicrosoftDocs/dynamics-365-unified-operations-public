@@ -1,16 +1,12 @@
 ---
 title: Action messages
-description: An action message is a system-generated suggestion to change an existing planned or firmed order.
+description: An action message is a system-generated suggestion to change an existing planned or firmed order. Learn about select action messages.
 author: t-benebo
-ms.date: 03/18/2022
-ms.topic: article
-ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 10.0.27
+ms.topic: article
+ms.date: 03/18/2022
+ms.reviewer: kamaybac
+ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
 ---
 
 # Action messages

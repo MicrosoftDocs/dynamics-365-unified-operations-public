@@ -4,9 +4,9 @@ description: Learn about how process automation allows simple scheduling of proc
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 06/29/2022
+ms.date: 06/10/2024
 ms.custom: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-06-30

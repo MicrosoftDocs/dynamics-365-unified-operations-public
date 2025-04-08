@@ -3,10 +3,11 @@ title: Update how amounts are displayed on reports and documents
 description: Learn about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 01/18/2022
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/24/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-11-30
 ms.search.form: Currency

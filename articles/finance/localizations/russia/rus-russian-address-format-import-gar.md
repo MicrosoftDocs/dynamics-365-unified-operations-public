@@ -1,24 +1,16 @@
 ---
-# required metadata
 title: Import from State Address Register (GAR)
-description: This article explains how to import addresses in the State Address Register (GAR) format.
-author: epodkolz
-ms.date: 06/29/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form:  
-audience: Application User
-# ms.devlang: 
+description: Learn how to import addresses in the State Address Register (GAR) format, including a step-by-step process for enabling the Import from GAR feature.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom:
 ms.dyn365.ops.version: Version 10.0.29
-
 ---
 
 # Import from State Address Register (GAR)
@@ -94,7 +86,7 @@ For more information about how to import ER configurations, see [Download ER con
 
 ## GAR import
 
-1. Download the database from [https://fias.nalog.ru/Updates](https://fias.nalog.ru/Updates).
+1. Download the database from [https://fias.nalog.ru/Frontend](https://fias.nalog.ru/Frontend).
 2. Go to **Organization administration** \> **Global address book** \> **Import from GAR**.
 3. Select **Import from GAR**.
 4. In the **Import from GAR** dialog box, on the **Parameters** FastTab, select **Browse** to select the zip archive.

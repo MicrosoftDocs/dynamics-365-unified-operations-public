@@ -4,7 +4,7 @@ description: Learn about the Party and global address book functionality of dual
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
-ms.date: 08/22/2023
+ms.date: 08/05/2024
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
@@ -21,9 +21,8 @@ ms.search.validFrom: 2021-02-22
 
 ## Party
 
-A party is a person or an organization that is involved in a business. When the party concept is used, a person or an organization can play more than one role in a business (for example, worker, customer, vendor, or contact). The role is based on the context and purpose. Here are some examples of roles from two fictitious companies, Contoso and Fabrikam:
+A party is a person or an organization that is involved in a business. When the party concept is used, a person or an organization can play more than one role in a business (for example, customer, vendor, or contact). The role is based on the context and purpose. Here are some examples of roles from two fictitious companies, Contoso and Fabrikam:
 
-+ **Worker** – An employee. An example is an employee of Contoso.
 + **Vendor** – A supplier organization, or a sole proprietor who supplies goods or services to a business. For example, if Fabrikam sells supplies to Contoso, Fabrikam is a vendor of Contoso.
 + **Contact** – A person to contact. For example, if Contoso buys supplies from Fabrikam, employees at Contoso will reach out to the contact at Fabrikam.
 + **Customer** – A person or company that buys things from a company. For example, if Contoso buys supplies from Fabrikam, Contoso is a customer of Fabrikam.
@@ -142,15 +141,10 @@ During the lead qualification process, you can provide both a business phone num
 ## Setup
 
 1. Open your customer engagement app environment.
-
 2. Install all prerequisite solutions, as described in [Separated Dual-write Application Orchestration package](separated-solutions.md).
-
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
-
 4. Open the finance and operations app. Navigate to the Data Management module and select the Dual-write tab. The dual-write administration page opens.
-
-5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution](link-your-environment.md) function.
-
+5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution]((../../dev-itpro/power-platform/enable-power-platform-integration.md) function.
 6. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
 
     + CDS Contacts V2 and Contacts (refers to customer contacts)
@@ -256,7 +250,6 @@ During the lead qualification process, you can provide both a business phone num
 > If the supply chain dual write solution version is 2.3.4.203 or later, the plugin will be disabled by plugin owners.
 > If the supply chain dual write solution version is 2.3.4.203 or earlier, disable the plugin by contacting support.
 > If you uninstalled the party and global address book solution, then you must re-enable the plugin.
-> To re-enable the plugin, contact support. 
 > 
 > The `msdyn_*partynumber` field (a single line text field) that is included in the **Account**, **Contact** and **Vendor** tables should not be used going forward. The label name has a prefix of **(Deprecated)** for clarity. Instead, use the **msdyn_partyid** field. The field is a lookup to the **msdyn_party** table.
 >
@@ -304,9 +297,10 @@ A postal address or an electronic address can serve more than one purpose. For e
 
 + In finance and operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
 + In finance and operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn't currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the finance and operations app is synchronized to Dataverse along with its address.
-+ In finance and operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
++ In finance and operations apps, you can create a contact record from the **Add Contact** page. When you try to create a new contact from the **View Contact** page, the action fails. This is a known issue.
 
     ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
-
-+ **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
-+ You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the finance and operations app.
+  
++ Finance and operations apps provides lookups for County/Region, Zip code, City, State, and County. Customer engagement apps uses free text. 
++ **Initial sync** doesn't support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
++ You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse doesn't support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record results in an error as it is future-dated and not current in the finance and operations app.

@@ -3,10 +3,12 @@ title: Configure expenditure reviewers
 description: Learn about how to use expenditure reviewers to dynamically select the user that a workflow task, approval, or manual decision is assigned to.
 author: rachel-profitt
 ms.author: raprofit
-ms.topic: article
-ms.date: 06/25/2021
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 06/19/2024
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-06-24
 ---
@@ -14,8 +16,6 @@ ms.search.validFrom: 2021-06-24
 # Configure expenditure reviewers
 [!include[banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 You can set up dynamic expenditure reviewers to route expenditures for review, based on either the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine who the expenditure should be routed to.
 

@@ -1,17 +1,16 @@
 ---
-# required metadata
 title: Create returns in POS
 description: This article describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 10/20/2023
-ms.topic: article
+ms.date: 10/31/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: shajain
 ms.search.validFrom: 2020-02-20
-ms.dyn365.ops.version: Release 10.0.20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create returns in POS
@@ -125,7 +124,7 @@ A return location can be a warehouse, a location in a warehouse, or even a speci
 Before you can set up return locations, you must set up the following elements:
 
 - **Retail info codes** – Prompts at the POS register that are set up in the **Retail** module. For more information, see [Setting up info codes](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
-- **Sales and marketing reason codes** – Prompts at the POS register that are set up in the **Sales and marketing** module. For more information, see [Setting up reason codes](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Sales and marketing reason codes** – Prompts at the POS register that are set up in the **Sales and marketing** module. For more information, see [Set up return reason codes](../supply-chain/sales-marketing/set-up-return-reason-code.md).
 - **Inventory locations** – The places where inventory is kept. For more information, see [Setting up inventory locations](/dynamicsax-2012/appuser-itpro/about-locations).
 	
 ### Set up return locations
@@ -166,6 +165,31 @@ To set up return locations, follow these steps.
 
 1. Go to the **Retail and Commerce \> Commerce product hierarchy**.
 1. On the **Manage inventory category properties** FastTab, in the **Return location** field, select a return location. Because multiple return location policies can be defined for the same store, the value that you select here determines the return location policy that is used.
+
+## Known issues
+
+### When you perform a global return, the return transaction doesn't reflect previously returned quantities
+
+ISSUE: When you perform a global return, the return transaction doesn't reflect previously returned quantities. 
+
+For example, this issue can occur when you execute the following steps.
+
+1. Perform a sale in store A of an item with a quantity of five (5).
+1. Perform a return on this sale in store A for a quantity of two (2).
+1. Pull the transactions to headquarters.
+1. Try to do a return on the original sale from step 1 in store B. After you enter the receipt number, the POS displays a quantity of five (5), instead of the expected quantity of three (3).
+
+CAUSE: This issue arises when multiple CSUs are in use. In this example, store A uses one CSU and store B uses another CSU. Each CSU has its own database, so store A doesn't have information about transactions made in store B, and store B doesn't have information about transactions made in store A.
+
+#### Mitigation steps
+
+To mitigate this issue, follow these steps.
+
+1. In Commerce headquarters, enable the **Improved user experience for POS returns** feature in the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
+2. Run the **Update return quantities** job at high frequency.
+3. Run the **Return quantities (1200)** distribution schedule job to update the stores at high frequency.
+
+When you execute these steps, the returned quantities are synced between CSUs and all returns should then reflect returned quantities from other stores. Steps 2 and 3 ensure that information from each CSU is frequently sent to headquarters via Real-time Service (RTS) calls.
 
 ## Additional resources
 

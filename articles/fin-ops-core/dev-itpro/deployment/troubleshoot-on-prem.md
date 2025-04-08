@@ -3,12 +3,14 @@ title: Troubleshoot on-premises deployments
 description: Access troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises), including an overview of monitoring deployment.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 05/04/2023
-audience: Developer, IT Pro
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 02/03/2025
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
+ms.service: dynamics-365-op
 ---
 # Troubleshoot on-premises deployments
 
@@ -259,6 +261,23 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 
 > [!NOTE]
 > The **Cleanup** command doesn't remove any files that were put in the file share. The file share can be reused.
+
+If you have errors with the **Cleanup** command, use the following PowerShell script as an alternative to remove the local agent:
+
+```powershell
+$applicationNamesLocalAgent = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
+$applicationTypeNamesLocalAgent = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
+
+Connect-ServiceFabricCluster
+
+Get-ServiceFabricApplication | `
+    Where-Object { $_.ApplicationName -in $applicationNamesLocalAgent } | `
+    Remove-ServiceFabricApplication -Force
+
+Get-ServiceFabricApplicationType | `
+    Where-Object { $_.ApplicationTypeName -in $applicationTypeNamesLocalAgent } | `
+    Unregister-ServiceFabricApplicationType -Force
+```
 
 ## An error occurs when local agent services are started
 
@@ -540,7 +559,7 @@ Follow these steps to upgrade Service Fabric in Windows PowerShell.
     > **-UpgradeReplicaSetCheckTimeout** is used to skip PreUpgradeSafetyCheck for SSRS and Management Reporter. For more information, see [Service Fabric service upgrade not working](https://github.com/Azure/service-fabric-issues/issues/595). You might also want to use **-UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800**. For more information, see [Application upgrade parameters](/azure/service-fabric/service-fabric-application-upgrade-parameters).
 
     ```powershell
-    Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
+    Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 10.1.2338.9590 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
     ```
 
 4. Get the upgrade status.
@@ -882,7 +901,7 @@ You can also use Psping to try to reach the remote server. For information about
 If you're having issues during authentication with the Workflow editor or the Excel add-ins, use the following script to verify your configuration.
 
 ```powershell
-.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json" -D365FOVersion <version>
 ```
 
 ### Redirect sign-in questions and issues
@@ -937,9 +956,9 @@ After you have the network log, you can analyze the claims that are returned to 
     >
     > ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
 
-1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken)
-1. Paste the value of the **id_token** parameter in the **Encoded JWT Token** field. It's automatically decoded.
-1. Check the results in the Payload: Data and Claims section, and follow these steps:
+1. Go to [JWT Decoder](https://jwt.ms).
+1. Paste the value of the **id_token** parameter into the **JWT** field. The value is automatically decoded.
+1. Review the results in the **Decoded Token and Claims** section, and follow these steps:
 
     - Make sure that the **upn** value matches the user name.
     - Make sure that the **unique_name** value is the Active Directory user that is being tested.
@@ -1170,13 +1189,13 @@ Follow these steps to configure the local agent with the updated tenant.
 
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
+    ``` 
 
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
 You receive the following error when you deploy another environment:
 
-> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
+> .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` -D365FOVersion \<version\> New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
 
 You can skip or modify the following sections in the deployment instructions.
 
@@ -1243,7 +1262,7 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 
 You might receive the following error:
 
-> Updates to existing credential with KeyId '\<key\>' is not allowed
+> Updates to existing credential with KeyId '\<key\>' isn't allowed.
 
 The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.
 

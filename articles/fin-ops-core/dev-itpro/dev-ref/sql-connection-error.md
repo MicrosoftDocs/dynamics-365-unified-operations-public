@@ -3,9 +3,9 @@ title: SQL connection error X++ exception
 description: Learn about the SQL connection error exception types in X++, including an overview of the TransientSqlConnectionError exception.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 09/27/2018
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-10-01

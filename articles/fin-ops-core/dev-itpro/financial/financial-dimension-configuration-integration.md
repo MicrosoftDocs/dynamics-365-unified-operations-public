@@ -4,8 +4,8 @@ description: Learn about the Financial dimension configuration for integrating a
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 12/01/2017
-ms.reviewer: kfend
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
 ms.search.region: Global

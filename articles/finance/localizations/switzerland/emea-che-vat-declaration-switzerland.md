@@ -1,16 +1,18 @@
 ---
 title: VAT declaration (Switzerland)
-description: This article provides information about how to set up and generate a value-added tax declaration for Switzerland.
+description: Learn about how to set up and generate a value-added tax declaration for Switzerland, including an outline and process on configuring system parameters.
 author: liza-golub
-ms.date: 09/15/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Switzerland
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Switzerland
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
+ms.dyn365.ops.version: Version 1611
 ---
 
 # VAT declaration (Switzerland)
@@ -133,9 +135,6 @@ Open the **Electronic reporting** workspace, and import the following versions o
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Set up application-specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
-
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 #### Set up Turnover lookup
 

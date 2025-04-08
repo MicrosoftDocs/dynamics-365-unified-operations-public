@@ -1,5 +1,5 @@
 ---
-title: Analytical Workspaces (using Power BI Embedded) (contains video)
+title: Analytical Workspaces (using Power BI Embedded)
 description: Learn about how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
 author: sericks007
 ms.author: sericks
@@ -39,7 +39,7 @@ The following screenshot shows an operational workspace.
 
 ## Edit embedded reports in analytical workspaces
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ea74f876-1a5f-49cc-b692-6a7bacf12ea3]
 
 The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

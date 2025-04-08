@@ -5,13 +5,14 @@ title: Limit payment token usage
 description: This article describes the feature that limits how payment tokens are used in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 10/20/2022
-ms.topic: article
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2022-09-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Limit payment token usage

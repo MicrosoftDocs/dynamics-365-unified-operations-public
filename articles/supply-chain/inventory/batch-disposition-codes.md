@@ -1,16 +1,12 @@
 ---
 title: Use batch disposition codes to mark batches as available or unavailable
-description: This article describes how to set up and use batch disposition codes to mark batches as available or unavailable for use in master planning, reservation, picking, and/or shipping.
+description: Learn how to set up and use batch disposition codes to mark batches as available or unavailable for use in master planning, reservation, picking, and/or shipping.
 author: t-benebo
-ms.date: 09/16/2022
-ms.topic: article
-ms.search.form: PdsDispositionMaster, InventBatch
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2022-09-16
-ms.dyn365.ops.version: 10.0.29
+ms.topic: article
+ms.date: 09/16/2022
+ms.reviewer: kamaybac
+ms.search.form: PdsDispositionMaster, InventBatch
 ---
 
 # Use batch disposition codes to mark batches as available or unavailable

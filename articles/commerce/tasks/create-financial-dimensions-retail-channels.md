@@ -1,25 +1,16 @@
 --- 
-# required metadata 
- 
 title: Create financial dimensions for retail channels and configure dimension values on stores
 description: This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. 
 author: jashanno
 ms.date: 11/14/2016
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:   
+ms.topic: how-to   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 # Create financial dimensions for retail channels and configure dimension values on stores
 

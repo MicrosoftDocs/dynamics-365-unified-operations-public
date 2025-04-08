@@ -1,15 +1,13 @@
 ---
 title: EU Sales list for Estonia
 description: Learn about the European Union (EU) sales list report for Estonia, including outlines on setup and how to work with the EU sales list.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 05/31/2022
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for Estonia

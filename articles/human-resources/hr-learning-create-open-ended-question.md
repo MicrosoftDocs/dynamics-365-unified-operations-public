@@ -4,7 +4,7 @@
 title: Create an open-ended question
 description: Open-ended questions enable respondents to provide their own response. 
 author: twheeloc
-ms.date: 01/03/2022
+ms.date: 07/03/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

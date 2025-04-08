@@ -3,14 +3,13 @@ title: Certificate rotation
 description: Learn how to place existing certificates and update the references within the environment to use the new certificates.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 08/16/2023
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 01/30/2025
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global 
 ms.search.validFrom: 2019-04-30
-# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 25 
 ---
 
@@ -33,7 +32,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Update your infrastructure scripts by following the steps in [Update your Infrastructure Scripts](obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 
-1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert). Specifically, follow these steps.
+1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-latest.md#configurecert). Specifically, follow these steps.
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -63,7 +62,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Continue to [set up VMs](setup-deploy-on-premises-pu41.md#setupvms). Here are the specific steps that are required for this process:
+1. Continue to [set up VMs](setup-deploy-on-premises-latest.md#setupvms). Here are the specific steps that are required for this process:
 
     1. Export the scripts that must be run on each VM.
 
@@ -78,7 +77,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         # If remoting, only execute
         # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
-        .\Configure-PreReqs.ps1
+        .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
         ```
 
     3. Run the following script to ensure that all prerequisites are completed. Perform this step as an administrator.
@@ -98,7 +97,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-1. Run the following PowerShell command so that you have values that can be used in Lifecycle Services later. For more information, see [Deploy your on-premises environment from Lifecycle Services](setup-deploy-on-premises-pu41.md#deploy).
+1. Run the following PowerShell command so that you have values that can be used in Lifecycle Services later. For more information, see [Deploy your on-premises environment from Lifecycle Services](setup-deploy-on-premises-latest.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -106,7 +105,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Activate new certificates within Service Fabric cluster
 
-To make the certificate rotation process easier, Microsoft highly recommends that you use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, follow the steps in [Appendix B](#appendix-b) later in this article.
+To make the certificate rotation process easier, Microsoft highly recommends that you use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, follow the steps in [Appendix A](#appendix-a) later in this article.
 
 ### <a name=""></a>Service Fabric cluster with certificate common names
 
@@ -129,7 +128,7 @@ If you've changed the certificate common name, you must upgrade your Service Fab
     > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
     > ```
 
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
+1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 #### Service Fabric with certificates that are expired
 
@@ -172,7 +171,7 @@ If you have to update the list of issuers, you must do the update while the exis
     .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
     ```
 
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
+1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 ### <a name=""></a>Service Fabric cluster defined with certificate thumbprints
 
@@ -184,7 +183,7 @@ If you have to update the list of issuers, you must do the update while the exis
     .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateThumbprints
     ```
 
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
+1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 #### Service Fabric with or without expired certificates (cluster not accessible)
 
@@ -224,12 +223,12 @@ You must reinstall the LocalAgent in the following situations:
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Follow the steps in [Configure Lifecycle Services connectivity for the tenant](setup-deploy-on-premises-pu41.md#configurelcs).
+1. Follow the steps in [Configure Lifecycle Services connectivity for the tenant](setup-deploy-on-premises-latest.md#configurelcs).
 
     > [!NOTE] 
     > If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu41.md#configureconnector), specifically the following changes:
+1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-latest.md#configureconnector), specifically the following changes:
 
     - Client certificate thumbprint
     - Server certificate thumbprint
@@ -350,7 +349,7 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 ## Update other certificates as needed
 
-1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu41.md#setupsql).
+1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-latest.md#setupsql).
 
 2. Check to be sure that the Active Directory Federation Service (ADFS) certificate hasn't expired.
 
@@ -364,7 +363,7 @@ This procedure should be completed after a successful certificate rotation or be
     .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldThumbprints
     ```
 
-2. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
+2. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 ## <a name="aftercertrotation"></a>After certificate rotation
 
@@ -393,33 +392,6 @@ After the commands have been run, restart your AOS nodes from Service Fabric Exp
 
 ## <a name="appendix-a"></a>Appendix A
 
-After you generate the updated Service Fabric cluster configuration, run the following PowerShell commands to apply the upgrade to your Service Fabric cluster.
-
-```powershell
-# Connect to the Service Fabric Cluster
-Connect-ServiceFabricCluster
-
-# Get path of ClusterConfig.json for following command
-# Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
-Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
-
-# If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
-Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
-
-# To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout
-Get-ServiceFabricClusterUpgrade
-
-# While monitoring the status of the upgrade, if UpgradeReplicaSetCheckTimeout was reset to the default (example 49710.06:28:15), run the following command again
-Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
-
-# When UpgradeState shows RollingForwardCompleted, the upgrade is finished
-```
-
-> [!NOTE] 
-> You might receive the following error message: "Upgrading from two different certificates to two different certificates isn't allowed." This message indicates that you didn't clean up old Service Fabric certificates during the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section earlier in this article, and then repeat the steps in this section.
-
-## <a name="appendix-b"></a>Appendix B
-
 Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations as the Service Fabric cluster automatically switches to using new certificates once they're available in the machine. Service Fabric won't accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names, see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
 
 1. Run the following script to generate an updated cluster configuration file.
@@ -435,6 +407,6 @@ Using certificate common names instead of thumbprints to describe your Service F
     > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -DoNotRestrictCertificateIssuers
     > ```
 
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a).
+1. Update the Service Fabric cluster with the new configuration file. For more information, see [Update the Service Fabric cluster configuration](./onprem-update-sfcluster.md#update-the-service-fabric-cluster-configuration).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

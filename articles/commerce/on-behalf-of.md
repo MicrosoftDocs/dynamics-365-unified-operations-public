@@ -4,14 +4,15 @@
 title: Enable on behalf of (OBO) functionality
 description: This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: mariash529
-ms.date: 08/09/2023
-ms.topic: article
+ms.date: 09/20/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2023-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Enable on behalf of (OBO) functionality
@@ -49,8 +50,6 @@ To sign in to a B2B site by using OBO functionality, follow these steps.
     ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners-org-new.png)
 
 1. On the next page, search for and select the buyer that you want to work on behalf of.
-
-     ![Example of the Select a Business Partner User page.](media/obo-select-business-partners-users4.png).
 
 After this procedure is completed, you (as the account manager) now represent the buyer that you selected, and have full access to their account information, pricing, catalog information, and discounts. You can add items to the cart and create an order. Completed orders are easily distinguished from regular orders, because they're prefixed with the account manager's name.
 

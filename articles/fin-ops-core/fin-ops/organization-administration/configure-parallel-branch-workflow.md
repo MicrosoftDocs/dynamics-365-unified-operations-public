@@ -18,9 +18,6 @@ ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 To configure a parallel branch, complete the following procedures in the workflow editor.
 
 A parallel branch is essentially a workflow that runs in the context of a parent workflow.

@@ -4,8 +4,8 @@ description: Learn about the default reports for trial balances, including an ou
 author: jinniew
 ms.author: jiwo
 ms.topic: article
-ms.date: 05/26/2021
-ms.reviewer: kfend 
+ms.date: 06/16/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -26,25 +26,25 @@ Three trial balance reports are available in Financial reporting.
 
 | Default report                                 | What it does                                                                            |
 |------------------------------------------------|--------------------------------------------------------------------------------------|
-| Detailed Trial Balance - Default               | Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.                  |
-| Summary Trial Balance – Default                | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.                                        |
-| Summary Trial Balance Year Over Year – Default | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year. |
+| Detailed trial balance - default               | Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.                  |
+| Summary trial balance – default                | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.  |
+| Summary trial balance year over year – default | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year. |
 
 ## Building blocks
 The trial balance financial reports use the following building blocks.
 
 | Default report                                 | Row definition          | Column definition                              |
 |------------------------------------------------|-------------------------|------------------------------------------------|
-| Detailed Trial Balance - Default               | Trial Balance - Default | Detailed Trial Balance - Default               |
-| Summary Trial Balance – Default                | Trial Balance - Default | Summary Trial Balance - Default                |
-| Summary Trial Balance Year Over Year – Default | Trial Balance - Default | Summary Trial Balance Year Over Year - Default |
+| Detailed trial balance - default               | Trial balance - default | Detailed trial balance - default               |
+| Summary trial balance – default                | Trial balance - default | Summary trial balance - default                |
+| Summary trial balance year over year – default | Trial balance - default | Summary trial balance year over year - default |
 
 > [!NOTE] 
-> When running the **Trial Balance** report in Financial reporting, be sure to select the check boxes for **Display rows with no amounts** and **Display reports with no active rows** on the **Settings** tab.
+> When running the **Trial balance** report in Financial reporting, be sure to select the checkboxes for **Display rows with no amounts** and **Display reports with no active rows** on the **Settings** tab.
 
 ### Row definition
 
-The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.
+The row definition, Trial balance – default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial balance – default row definition so that it includes rows for all accounts, follow these steps.
 
 1.  Click **Edit**, and then click **Insert rows from dimensions**. The **Insert rows from dimensions** command lets you choose the dimensions that you want to have in your row definition. For this row definition, you're going to use **Main account**.
 2.  Make sure that **Main account** contains all ampersands (&), and then click **OK**.
@@ -55,13 +55,13 @@ The row definition now contains all the main accounts for your default legal ent
 
 Each trial balance report uses a different column definition. These column definitions contain different types of columns to provide different levels of detail and financial data.
 
--   **Detailed Trial Balance – Default column types:**
+-   **Detailed trial balance – default column types:**
     -   **DESC** – The description from the row definition
     -   **ACCT** – Account codes
     -   **ATTR (3)** – Attributes:
-        -   Transaction Date
+        -   Transaction date
         -   Voucher
-        -   Journal Description
+        -   Journal description
     -   **FD** – Financial data that contains only debits
     -   **FD** – Financial data that contains only credits
     -   **CALC** – The net difference
@@ -94,7 +94,7 @@ Each trial balance report uses a different column definition. These column defin
 
 [View financial reports](view-financial-reports.md)
 
-[Dynamics Financial Reporting Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics financial reporting blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

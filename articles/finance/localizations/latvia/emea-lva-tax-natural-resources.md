@@ -1,16 +1,17 @@
 ---
 title: Tax on natural resources report
-description: This article explains how to set up and generate the Tax on natural resources (NR Tax) report.
-author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
+description: Learn how to set up and generate the Tax on natural resources (NR Tax) report, including prerequisites and an outline on reporting groups.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/25/2024
 ms.reviewer: johnmichalak
 ms.search.region: Latvia
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: LvNRTaxItemGroupLookup
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Tax on natural resources report

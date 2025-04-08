@@ -1,5 +1,5 @@
 ---
-title: Select analytical workspaces from Power BI  (contains video)
+title: Select analytical workspaces from Power BI
 description: Learn how to select a report that is hosted in Power BI and use it for an application workspace and how to revert to the standard solution.
 author: sericks007
 ms.author: sericks
@@ -37,7 +37,7 @@ Here are some of the top motivations for selecting reports that are hosted on Po
 
 ### Embed a PowerBI.com report in an analytical workspace
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3lP5m]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ecad8101-d1a3-4045-bf49-8703338f355a]
 
 The [How to embed PowerBI.com reports](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

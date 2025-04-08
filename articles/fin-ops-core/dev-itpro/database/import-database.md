@@ -51,7 +51,7 @@ Specific activities must be completed when you import a database backup into a s
 * Make sure that batch jobs are set to a status of **Waiting**.
 * Make sure that users are re-enabled.
 * Make sure that dual-write is relinked if necessary.
-* Make sure that dual-write is relinked if necessary.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Make sure that dual-write is relinked if necessary.  To set up a new link on the target environment after this operation is successful, see [Enable Power Platform Integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Environment admin
 

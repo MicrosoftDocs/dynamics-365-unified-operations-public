@@ -1,16 +1,16 @@
 ---
 title: Unique certification
-description: This article provides information about the Unique certification for companies in Italy.
-author: mrolecki
-ms.date: 03/22/2022
+description: Learn about the Unique certification for companies in Italy, including prerequisites and an outline on setting up the unique certification.
+author: liza-golub
+ms.author: egolub
 ms.topic: article
-audience: Application User
+ms.date: 03/04/2025
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Italy
-ms.author: mrolecki
 ms.search.validFrom: 2020-06-01
-ms.dyn365.ops.version: 10.0.9
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.9
 ---
 
 # Unique certification
@@ -29,7 +29,6 @@ In Italy, withholding tax agents must electronically communicate the Unique cert
 The following prerequisites must be met before the functionality can be used:
 
 - The primary address of the legal entity must be in Italy.
-- The **Unique certification** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up the Unique certification
 

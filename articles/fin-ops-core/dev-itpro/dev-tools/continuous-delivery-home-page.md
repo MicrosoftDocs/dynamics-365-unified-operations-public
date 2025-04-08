@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: conceptual
 ms.date: 10/16/2019
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
 ms.search.region: Global

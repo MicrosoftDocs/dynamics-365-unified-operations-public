@@ -1,31 +1,36 @@
 ---
 title: Cross-company product sharing (preview)
-description: This article explains how to share released-product data across companies (legal entities), to reduce the volume of data that must be maintained and simplify the task of maintaining product master data.
-author: t-benebo
-ms.author: benebotg
+description: Learn how to share released-product data across companies to reduce the volume of data that must be maintained and simplify maintaining product master data.
+author: sgmsft
+ms.author: shwgarg
+ms.topic: how-to
+ms.date: 02/17/2025
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
-ms.date: 01/30/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Cross-company product sharing (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice.-->
 
 Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Get the cross-company product sharing public preview
+## Prerequisites
 
-To sign up for the public preview for this feature, email the environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that is responsible for the feature will send you a follow-up email to get in contact, evaluate whether your business is a match for the functionality, and finally evaluate whether you can join the preview.
+To use the features described in this article, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+    - *Master company data sharing*
+    - *(Preview) Cross-company data sharing for products*
+
+If you are running Supply Chain Management version 10.0.42 or older and would like to use this feature, then send an email with your environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that's responsible for the feature will then enable it for your environment. You must also follow the instructions provided in the [Set up your system for product sharing in version 10.0.42 and older](#old-version-setup) section later in this article.
 
 ## Get started with cross-company data sharing
 
@@ -37,7 +42,7 @@ Single record sharing and duplicate record sharing work in the following way:
 When you share product information across companies, the sharing works in the following way:
 
 - The released products table (`Inventtable`) must use *single record sharing*.
-- For related tables (which typically hold policies for handing a product, such as the bar code setup and the cost group), you must decide whether you want to use *single record sharing* or *duplicate record sharing*. In most cases, you'll probably decide to use duplicate record sharing for related tables, because single record sharing imposes several restrictions that duplicate record sharing doesn't impose. (For more information, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).)
+- For related tables (which typically hold policies for handing a product, such as the bar code setup and the cost group), you must decide whether you want to use *single record sharing* or *duplicate record sharing*. In most cases, you'll probably decide to use duplicate record sharing for related tables, because single record sharing imposes several restrictions that duplicate record sharing doesn't impose. (Learn more in [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).)
 
 Before you continue to read this article, we recommend that you read [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) to learn more about how data sharing works in Supply Chain Management.
 
@@ -51,11 +56,9 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
 - **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this article, and prepare your system as required.
 
-## Set up your system for product sharing
+## <a name="old-version-setup"></a>Set up your system for product sharing in version 10.0.42 and older
 
-After you contact Microsoft, if you're accepted for the preview, Microsoft will enable a flight for you. You can then set up your system to share products across companies.
-
-To set up your system for product sharing, follow these steps.
+As mentioned in the [prerequisites](#prerequisites), if you are running Supply Chain Management version 10.0.42 or older, you can only enable this feature with assistance from the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). After the team enables the feature for you, you must also complete the following procedure. Don't do this if you are running version 10.0.43 or later.
 
 1. Enable the following flights. If you don't know how to complete this step, contact Microsoft Support.
 
@@ -208,7 +211,7 @@ To assign the default unit for a company, follow these steps.
 The **Released products** page shows physical dimensions for each released product. These dimensions include weight and height. However, the unit for the measurements isn't shown on the page and is therefore implicit. The unit that is used for each measurement is the system unit in each unit class. Because these system units are cross-company, there are no specific actions or limitations that you must consider in this area.
 
 > [!NOTE]
-> The system unit for each class is set up on the unit itself, and only one unit in the unit class can be a system unit. If no unit is set up as the system unit, the value of the fields will have no meaning, and processes (such as warehousing) that rely on the existence of a system unit can't be completed. For more information, see [Manage units of measure](tasks/manage-unit-measure.md).
+> The system unit for each class is set up on the unit itself, and only one unit in the unit class can be a system unit. If no unit is set up as the system unit, the value of the fields will have no meaning, and processes (such as warehousing) that rely on the existence of a system unit can't be completed. Learn more in [Manage units of measure](tasks/manage-unit-measure.md).
 
 ### Bills of materials, formulas, and routes
 
@@ -236,7 +239,7 @@ Dynamics 365 Commerce isn't supported when you use cross-company data sharing fo
 
 ### Financial dimensions
 
-Fields that reference financial dimensions (for example, the Ledger or Default dimension) can't be shared across companies. This limitation is a restriction of cross-company data sharing. For more information, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).
+Fields that reference financial dimensions (for example, the Ledger or Default dimension) can't be shared across companies. This limitation is a restriction of cross-company data sharing. Learn more in [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).
 
 ### Vendors
 
@@ -293,7 +296,7 @@ If you already have existing products in the system before you enable the single
 
 ## Modifying policies
 
-It isn't possible to add more fields to a data sharing policy after it has been created and enabled. 
+It isn't possible to add more fields to a data sharing policy after it has been created and enabled.
 
 ## More information about cross-company data sharing
 

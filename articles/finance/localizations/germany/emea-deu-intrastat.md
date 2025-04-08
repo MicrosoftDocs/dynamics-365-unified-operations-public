@@ -1,12 +1,13 @@
 ---
 title: German Intrastat
 description: Learn about Intrastat declaration in Germany, including a table that shows the fields that are included in the German Intrastat declaration.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/09/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 
 ---
@@ -15,7 +16,7 @@ ms.search.validFrom:
 
 [!include [banner](../../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The German Intrastat declaration contains information about the trade of goods for reporting. The report is formatted according to the guidelines of the German authorities that are presented on the [6.2 File declarations in INSTAT/XML format](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html) page.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The German Intrastat declaration contains information about the trade of goods for reporting. The report is formatted according to the guidelines of the German authorities.
 
 The following table shows the fields that are included in the German Intrastat declaration.
 

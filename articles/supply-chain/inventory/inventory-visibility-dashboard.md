@@ -1,15 +1,13 @@
 ---
 title: Inventory Visibility Power BI dashboard
-description: This topic describes how to download a sample Microsoft Power BI dashboard file and connect to your Inventory Visibility instance and other data sources. In this way, you can visualize your inventory levels across regions, entities, and channels.
-author: yufeihuang
+description: Learn how to download a sample Microsoft Power BI dashboard file and connect to your Inventory Visibility instance and other data sources.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 07/31/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Inventory Visibility Power BI dashboard
@@ -27,7 +25,7 @@ The dashboard lets you perform the following tasks:
 
 ## License requirements
 
-Because the dashboard is a standard Power BI file (.pbix file), you must have a Power BI license to use it. For more information, see [Power Bi licensing guide](https://powerbi.microsoft.com/pricing/).
+Because the dashboard is a standard Power BI file (.pbix file), you must have a Power BI license to use it. Learn more in [Power Bi licensing guide](https://powerbi.microsoft.com/pricing/).
 
 ## Download the dashboard and connect it to Inventory Visibility
 
@@ -40,7 +38,7 @@ Because the dashboard is a standard Power BI file (.pbix file), you must have a 
     1. Replace the value of the `EnvironmentURL` parameter with the base URL of your Dataverse environment (for example, `example.crm.dynamics.com`).
     1. Refresh the query to update the results.
 
-1. To load data from your entities, create a new data source, and name it *pbi* to indicate that it's your Power BI data source. (For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).) To reduce the size of the response body, information from this data source is excluded from results.
+1. To load data from your entities, create a new data source, and name it *pbi* to indicate that it's your Power BI data source. (Learn more in [Configure Inventory Visibility](inventory-visibility-configuration.md).) To reduce the size of the response body, information from this data source is excluded from results.
 
 ## Default KPIs
 

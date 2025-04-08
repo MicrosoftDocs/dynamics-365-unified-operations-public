@@ -26,11 +26,11 @@ This article explains how to set up a client ID and a client secret for the Univ
 
 ## Prerequisites
 
-Before you can access a tax provider's service, you must set up your client ID and client secret for the Universal Tax Rate API. Your tax provider provides these values. When you receive them, store them in a Microsoft Azure key vault, and configure Key Vault parameters for Dynamics 365 finance and operations apps. After you set up the client ID and client secret in the key vault, you can select the corresponding Key Vault secret name in the tax feature setup.
+Before you can access a tax provider's service, you must set up your client ID and client secret for the Universal Tax Rate API. Your tax provider provides these values. When you receive them, store them in a Microsoft Azure Key Vault, and configure Key Vault parameters for Dynamics 365 finance and operations apps. After you set up the client ID and client secret in the key vault, you can select the corresponding Key Vault secret name in the tax feature setup.
 
 ## Create a key vault in the Azure portal
 
-All the secrets and certificates that are used in the Tax Calculation service must be stored in an Azure key vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets instead of using the secrets and certificates directly. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
+All the secrets and certificates that are used in the Tax Calculation service must be stored in an Azure Key Vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets instead of using the secrets and certificates directly. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
 
 ### Create a key vault
 
@@ -56,12 +56,8 @@ To create a key vault, follow these steps.
 1. Select **Review \+ Create**.
 1. After the deployment is completed, expand the **Deployment details** section, and select the **Key vault** detail.
 
-    :::image type="content" source="../media/items.png" alt-text="Screenshot of the TaxProvider-vault Overview page with the Deployment details expanded and the key vault highlighted.":::
-
     > [!NOTE]
     > Copy and save the **Vault URI** value. You must enter it in the **Key Vault URL** field when you complete the procedure in the [Set up Key Vault parameters in finance and operations apps](#set-up-key-vault-parameters-in-finance-and-operations-apps) section.
-
-    :::image type="content" source="../media/items1.png" alt-text="Screenshot of the key vault details with the Vault URI field highlighted.":::
 
 1. Select **Next**, and set the **Permission model** field to **Vault access policy**.
 1. Select **Secrets**, and then select **Generate/Import**.
@@ -97,15 +93,10 @@ To create an app registration, follow these steps.
 1. In Azure AD, search for **register**, and then select **App registrations**.
 1. Set the **Name** and **Supported account types** fields, and then select **Register**.
 1. Copy and save the **Application (client) ID** value. It should be specified in the application. In the [Set up Key Vault parameters in finance and operations apps](#set-up-key-vault-parameters-in-finance-and-operations-apps) section, it's referred to as the **Key Vault client** parameter.
-
-    :::image type="content" source="../media/items6.png" alt-text="Screenshot of the TaxProviderKeyVaultAccess page with the Application (client) ID field highlighted.":::
-
 1. Create a new client secret.
 
     > [!NOTE]
     > The client secret is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. In the [Set up Key Vault parameters in finance and operations apps](#set-up-key-vault-parameters-in-finance-and-operations-apps) section, it's referred to as the **Key Vault secret key** parameter.
-
-    :::image type="content" source="../media/items7.png" alt-text="Screenshot of the Certificates & secrets page with the New client secret button highlighted.":::
 
 #### Set up the access policy of the key vault
 

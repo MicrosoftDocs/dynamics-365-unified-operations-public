@@ -37,14 +37,14 @@ Connecting, or linking as it's also referred, a finance and operations apps envi
 The following prerequisites must be in place before you set up the Microsoft Power Platform integration:
 
 - Make sure that at least 1 gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup fails. To view your capacity, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
-- Validate the governance policy of your tenant in Power Platform admin center. To do this validation, you must have either the **Global administrator** role or the **Power Platform administrator** role.
+- Validate the governance policy of your tenant in Power Platform admin center. To do this validation, you must have either the **Tenant administrator** role or the **Power Platform administrator** role.
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     2. In the left navigation, select **Settings** to open the **Power Platform settings** page.
 
     :::image type="content" source="media/ppi-ppac-governance-environmentcreation.png" alt-text="Screenshot of the Power Platform settings page.":::
 
-- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Microsoft Entra ID. To make this change, you must be assigned to the **Global administrator** role.
+- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Microsoft Entra ID. To make this change, you must be assigned to the **Tenant administrator** role.
 
     - Dynamics 365 Service Admin
     - Power Platform Admin

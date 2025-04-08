@@ -3,12 +3,14 @@ title: Outbound inventory operation in POS
 description: This article describes the capabilities of the point of sale (POS) outbound inventory operation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
 ms.date: 01/30/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: hhaines
-
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.search.validFrom: 2019-02-11
+ms.author: yufeihuang
+ms.custom: 
+  - bap-template
 ---
 
 # Outbound inventory operation in POS

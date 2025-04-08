@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: article
 ms.date: 01/14/2021
 ms.custom:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-10-31
@@ -14,6 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.x
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # In-place upgrade process for on-premises environments

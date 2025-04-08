@@ -3,9 +3,9 @@ title: X++ operators
 description: Learn about the operators supported in X++, including an overview of assignment operators with code examples and descriptions.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 12/02/2019
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

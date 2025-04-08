@@ -1,23 +1,18 @@
 ---
 title: Deploy an IoT solution on Azure (preview)
-description: Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. This article explains how to deploy an Internet of Things (IoT) solution on your Azure subscription. 
+description: Sensor Data Intelligence uses data from sensors connected to Microsoft Azure. Learn how to deploy an Internet of Things (IoT) solution on your Azure subscription.
 author: johanhoffmann
-ms.date: 09/02/2022
-ms.topic: article
-ms.search.form: IoTIntCoreAzureResourceDeploymentWizard
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2022-09-02
-ms.dyn365.ops.version: 10.0.30
+ms.topic: article
+ms.date: 09/02/2022
+ms.reviewer: kamaybac
+ms.search.form: IoTIntCoreAzureResourceDeploymentWizard
 ---
 
 # Deploy an IoT solution on Azure (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
@@ -40,7 +35,7 @@ To deploy and administer Azure components for Sensor Data Intelligence, your Azu
 
 The following video shows how to [turn on the Sensor Data Intelligence feature](sdi-enable-feature.md) and deploy the required Azure resources. The other section in this article provides the same instructions in a text-based format.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=90804485-5a57-475a-aa9e-753df28dd0d4]
 
 ## Procedure
 
@@ -84,4 +79,4 @@ Follow these steps to deploy the required resources on Azure.
 Azure resources for Sensor Data Intelligence are now deployed on your Azure subscription.
 
 > [!NOTE]
-> At any time, you can view or edit the connection information that is saved in Supply Chain Management by opening the **Sensor Data Intelligence parameters** page. For more information, see [Sensor Data Intelligence parameters](sdi-parameters.md).
+> At any time, you can view or edit the connection information that is saved in Supply Chain Management by opening the **Sensor Data Intelligence parameters** page. Learn more in [Sensor Data Intelligence parameters](sdi-parameters.md).

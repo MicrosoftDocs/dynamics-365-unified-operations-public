@@ -4,7 +4,7 @@
 title: Task management
 description: This article explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/06/2022
+ms.date: 07/01/2024
 ms.topic: article
 # optional metadata
 
@@ -24,8 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Task management
-
-
 Task management lets you create tasks that must be completed to hire (onboard), terminate (offboard), and transfer (transition) employees. Task management uses the concept of checklists. A checklist is of a list of onboarding, offboarding, or transition tasks. Task management uses checklists to group tasks together, and to assign them to individuals or groups. The checklist functionality for onboarding, offboarding, and transitions is similar.
 
 ## Checklist overview

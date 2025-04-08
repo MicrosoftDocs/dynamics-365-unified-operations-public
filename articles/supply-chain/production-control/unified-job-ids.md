@@ -1,16 +1,12 @@
 ---
 title: Unified number sequence for job IDs
-description: This feature provides a single, unified number sequence that generates job IDs for the Production control, Manufacturing execution, and Time and attendance modules.
+description: Learn about a single, unified number sequence that generates job IDs for the Production control, Manufacturing execution, and Time and attendance modules.
 author: johanhoffmann
-ms.date: 03/25/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2021-03-05
-ms.dyn365.ops.version: 10.0.16
+ms.topic: article
+ms.date: 03/25/2021
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Unified number sequence for job IDs
@@ -30,7 +26,7 @@ After enabling this feature, the existing **Job identification** number-sequence
 To set up the unified number sequence for job IDs:
 
 1. Turn on the feature as described in the previous section.
-1. Either identify the number sequence you want to use for your unified job IDs, or create a new one. For more information, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
+1. Either identify the number sequence you want to use for your unified job IDs, or create a new one. Learn more in [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 1. Go to the **Production control parameters**, **Manufacturing execution parameters**, or **Time and attendance parameters** page. It doesn't matter which one you choose because when you make this setting on any of those pages, all of the other pages will update automatically.
 1. Open the **Number sequences** tab on your selected parameters page.
 1. Assign the **Number sequence code** that you identified previously to the **Unified job IDs** row of the grid.

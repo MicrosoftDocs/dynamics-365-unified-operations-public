@@ -1,16 +1,12 @@
 ---
 title: Create and invoice an intercompany sales order for an external customer
-description: This article explains how to create and invoice an intercompany sales order for an external customer
-author: Henrikan
-ms.date: 09/01/2021
+description: Learn how to create and invoice an intercompany sales order for an external customer with an outline on creating original sales orders for external customers.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: 2021-09-01
-ms.dyn365.ops.version: 10.0.22
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ---
 
 # Create and invoice an intercompany sales order for an external customer

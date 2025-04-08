@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Add or update a robots.txt file
 description: This article describes how to create, edit, upload, and validate the robots.txt file for each domain that is hosted in Microsoft Dynamics 365 Commerce.
 author: mssle
-ms.date: 07/08/2022
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sheaton
+ms.author: asharchw
 ms.search.validFrom: 2021-09-20
+ms.custom: 
+  - bap-template
 ---
 
 # Add or update a robots.txt file

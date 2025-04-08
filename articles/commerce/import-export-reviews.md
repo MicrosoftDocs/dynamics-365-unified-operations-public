@@ -3,12 +3,14 @@ title: Import and export ratings and reviews
 description: This article describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 01/12/2022
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: anupamar
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Import and export ratings and reviews

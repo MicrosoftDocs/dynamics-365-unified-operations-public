@@ -3,14 +3,14 @@ title: Manage payment authorizations
 description: This article provides an overview of payment authorization expiration ranges and common payment authorization parameters in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/18/2023
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2021-06-28
-ms.dyn365.ops.version: 10.0.31
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 # Manage payment authorizations
 

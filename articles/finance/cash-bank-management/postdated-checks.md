@@ -1,11 +1,11 @@
 ---
 title: Postdated checks
 description: Learn about support for postdated checks. Postdated checks are issued to make and receive payments on a future date, including details for various scenarios.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.date: 01/12/2018
-ms.reviewer: kfend
+ms.date: 05/23/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

@@ -1,15 +1,14 @@
 ---
 title: Document routing label layouts
-description: This article describes how to use formatting methods to print values on labels.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
+description: Learn how to use formatting methods to print values on labels with outlines on turn this feature on or off and custom number formats.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 ---
 
 # Document routing label layouts
@@ -126,7 +125,7 @@ You can combine this format with other types that were described earlier in this
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## Additional resources
+## Related information
 
 For more information about how to set up and print labels, see the following articles:
 

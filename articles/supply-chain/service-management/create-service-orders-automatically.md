@@ -1,38 +1,26 @@
 ---
-# required metadata
-
 title: Create service orders automatically   
-description: You can create service orders for one service agreement or for several service agreements.
-author: sorenva
-ms.date: 01/19/2023
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how you can create service orders for one service agreement or for several service agreements, including a step-by-step process.
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: SMAServiceOrderTable
+ms.topic: how-to
+ms.date: 03/17/2025
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+  - bap-template
+  - evergreen
 ---
 
 # Create service orders automatically
 
 [!include [banner](../includes/banner.md)]
 
-You can create service orders for one service agreement or for several service agreements. When they are created, you can view your service orders in the **Service orders** form.
+You can create service orders for one service agreement or for several service agreements. When they're created, you can view your service orders on the **Service orders** page.
 
-Service orders are created only for the valid period of the service agreement. If the interval that you specify in the **Create service orders** form is before the starting date or after the ending date of the service agreement, service orders are created only for the part of the interval that is within the service agreement dates.
+Service orders are created only for the valid period of the service agreement. If the interval that you specify on the **Create service orders** page is before the starting date or after the ending date of the service agreement, service orders are created only for the part of the interval that is within the service agreement dates.
 
-When you create service orders manually or automatically from the service agreement line, the service order must be in the time interval that is defined by the starting and ending dates for the line, unless you do not specify an ending date on the line.
+When you create service orders manually or automatically from the service agreement line, the service order must be in the time interval that is defined by the starting and ending dates for the line, unless you don't specify an ending date on the line.
 
 ## Create service orders automatically for a service agreement
 
@@ -51,7 +39,7 @@ When you create service orders manually or automatically from the service agreem
 1. Select **Select** to make selections to add or remove criteria to use to create service orders.
 1. Select **OK**.
 
-## Additional resources
+## Related information
 
 - [Service orders](service-orders.md)
 - [Automatically create service orders](auto-create-service-orders.md)

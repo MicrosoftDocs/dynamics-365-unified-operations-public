@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: Singapore overview
-description: This article provides links to documentation resources for Singapore. 
-author: kfend
-ms.date: 06/20/2022
+description: Access links to documentation resources for Singapore, including links to resources about Reverse charge VAT and audit files.
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.custom: 
+  - bap-template
+ms.date: 12/23/2024
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Singapore
-# ms.search.industry: 
-ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Singapore overview
@@ -33,7 +26,6 @@ This article provides links to documentation resources for Singapore.
 
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/singapore.html)
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

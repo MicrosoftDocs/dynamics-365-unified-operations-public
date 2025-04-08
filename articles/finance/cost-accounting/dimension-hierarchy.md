@@ -2,7 +2,7 @@
 title: Dimension hierarchy
 description: Learn about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 author: AndersEvenGirke
-ms.author: twheeloc
+ms.author: aevengir
 ms.topic: article
 ms.date: 06/16/2017
 ms.custom:

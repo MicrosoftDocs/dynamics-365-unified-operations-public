@@ -5,7 +5,7 @@ author: kfend
 ms.date: 06/19/2017
 ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-06-30

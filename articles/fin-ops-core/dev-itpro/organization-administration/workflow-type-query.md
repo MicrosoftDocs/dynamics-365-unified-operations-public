@@ -2,7 +2,7 @@
 title: Create a query for a workflow type
 description: Learn about how to create a query for a workflow type, including a step-by-step process that walks you thorugh the process.
 author: josaw1
-ms.author: tfehr
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/19/2019
 ms.reviewer: twheeloc
@@ -16,9 +16,6 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 # Create a query for a workflow type 
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Before you create a workflow type, you must create a query that will access the table fields for the workflow document. This article describes how to create a query for a workflow type.
 

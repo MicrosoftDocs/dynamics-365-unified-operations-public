@@ -4,13 +4,12 @@ description: Learn how to configure a connection so that Electronic invoicing ca
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/29/2024
 ms.custom: 
+  - bap-template
+ms.date: 09/13/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2024-01-29
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.39
 ---
 
@@ -18,11 +17,11 @@ ms.dyn365.ops.version: 10.0.39
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-The Electronic Invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that Electronic invoicing can access a specific SharePoint site, you must provide the site credentials to the Electronic Invoicing service. Additionally, to ensure that the credentials are securely stored, don't provide them directly. Instead, store them in an Azure key vault, and provide a Key Vault secret.
+The Electronic Invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that Electronic invoicing can access a specific SharePoint site, you must provide the site credentials to the Electronic Invoicing service. Additionally, to ensure that the credentials are securely stored, don't provide them directly. Instead, store them in an Azure Key Vault, and provide a Key Vault secret.
 
 ## Grant access to a SharePoint folder
 
-1. Create an app registration in the tenant where Regulatory Configuration Service (RCS) is installed.
+1. Create an app registration in the tenant where the Dynamics 365 Finance environment is installed.
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
     1. Go to **App registrations**.
@@ -39,8 +38,8 @@ The Electronic Invoicing service can read files from Microsoft SharePoint folder
     - Follow the [password policy recommendations](/microsoft-365/admin/misc/password-policy-recommendations).
     - Set up rotation of passwords. During rotation, create a new client secret for the app registration, update the key vault, and then delete the old secret.
 
-1. Save the **App Registration secret** and **Application (client) ID** values as two new secrets in the key vault in the setup of your Electronic invoicing environment.
-1. Add the secrets that you created to the Key Vault parameters in the setup of your Electronic invoicing environment in RCS.
+1. Save the **App Registration secret** and **Application (client) ID** values as two new secrets in the key vault in the setup of your Electronic invoicing parameters.
+1. Add the secrets that you created to the Key Vault parameters in the setup of your Electronic invoicing parameters. For more information, see [Configure Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
 1. In the Azure portal, grant access to SharePoint. This step should be completed by the tenant administrator.
 
     1. Select the app registration that you created.

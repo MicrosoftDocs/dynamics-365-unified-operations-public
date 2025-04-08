@@ -3,10 +3,11 @@ title: Bank statement and payment reconciliation for the EU
 description: Learn about the functionality that you can use to reconcile payment information from banks in formats that are used by European countries/regions.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.search.validFrom: 2016-11-30
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Purchase of exempted goods
-description: This article provides information about the purchase of exempted goods.
-author: EricWangChen
+description: Learn about the purchase of exempted goods, including step-by-step processes for validating tax details and posting purchase invoices.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Purchase of exempted goods

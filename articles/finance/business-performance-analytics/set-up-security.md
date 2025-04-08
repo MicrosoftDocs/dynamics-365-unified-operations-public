@@ -16,9 +16,6 @@ audience: Application User
 
 The setup of security in the Business performance analytics app is a critical step in ensuring the security of your organization's data. This article provides an overview of the setup process for role-based, dimension, and report security, and explains how to add users to the app.
 
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of Business performance analytics, contact <bpaquestions@service.microsoft.com>.
-
 ## Admin role
 
 The first user who signs in to the app is assigned the **BPA admin** role. This role allows the user to access the **Administrator** section of Business performance analytics, where they can set up security.

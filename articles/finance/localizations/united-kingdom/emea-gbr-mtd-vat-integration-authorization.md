@@ -1,13 +1,14 @@
 ---
 title: Authorize your Finance environment to interoperate with HMRC's MTD web service
-description: This article explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
-author: AdamTrukawka
-ms.date: 08/17/2021
-ms.topic: article
-audience: Application User
+description: Learn how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with the Making Tax Digital web service of Her Majesty's Revenue and Customs.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 12/05/2024
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
-ms.author: atrukawk
 ms.search.validFrom: 2021-08-07
 ---
 
@@ -16,6 +17,11 @@ ms.search.validFrom: 2021-08-07
 [!include [banner](../../includes/banner.md)]
 
 This article explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
+
+> [!NOTE]
+> To meet security requirements, we are implementing modifications to the Dynamics 365 Finance direct system-to-system integration with the HMRC web service for submitting VAT returns for companies registered for VAT in the UK. This enhancement involves the adoption of an Electronic Invoicing service as an intermediary that facilitates secure access to the storage of credentials essential for software authorization within the HMRC APIs. **These services won’t be accessible from on-premises deployments by June 6, 2025**.
+>
+> By June 6, 2025, we plan to no longer support **batch mode for submission** of VAT return in the **Making Tax Digital** feature. It’s still possible to generate in batch the report (VAT 100) in Excel and JSON formats.
 
 Two parameters uniquely identify each web application on the HMRC side:
 

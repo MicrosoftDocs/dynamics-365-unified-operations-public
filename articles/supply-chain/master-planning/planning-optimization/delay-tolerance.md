@@ -1,15 +1,11 @@
 ---
 title: Delay tolerance (negative days)
-description: This article provides information about the delay tolerance calculation and how it affects planned order creation in Planning Optimization.
+description: Learn about the delay tolerance calculation and how it affects planned order creation in Planning Optimization with an outline on toggling delay tolerance.
 author: t-benebo
-ms.date: 08/09/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-07-30
-ms.dyn365.ops.version: 10.0.21
+ms.topic: article
+ms.date: 08/09/2022
+ms.reviewer: kamaybac
 ---
 
 # Delay tolerance (negative days)
@@ -24,7 +20,7 @@ The delay tolerance functionality enables Planning Optimization to consider the 
 To make the delay tolerance functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features:
 
 - *Negative days for Planning Optimization* – This feature enables negative days settings for coverage groups and item coverage. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.
-- *Make-to-order supply automation* – This feature enables negative days settings for master plans. (As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off.) For more information, see [Make-to-order supply automation](../make-to-order-supply-automation.md).
+- *Make-to-order supply automation* – This feature enables negative days settings for master plans. (As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off.) Learn more in [Make-to-order supply automation](../make-to-order-supply-automation.md).
 
 ## Delay tolerance in Planning Optimization
 

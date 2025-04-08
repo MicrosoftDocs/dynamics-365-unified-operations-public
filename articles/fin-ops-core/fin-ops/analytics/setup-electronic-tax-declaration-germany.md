@@ -5,7 +5,7 @@ author: kfend
 ms.author: filatovm
 ms.topic: how-to
 ms.date: 08/29/2018
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Germany
 ms.search.validFrom: 2016-06-30

@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: Small parcel shipping
-description: This article provides information about the small parcel shipping (SPS) feature. This feature enables Microsoft Dynamics 365 Supply Chain Management to submit details about a packed container to the carrier, and then receive a shipping label, shipping rate, and tracking number back from that carrier.
+description: Learn about the small parcel shipping (SPS) feature, which enables Microsoft Dynamics 365 Supply Chain Management to submit details about packed containers.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-01-08
-ms.dyn365.ops.version: 10.0.16
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 ---
 
 # Small parcel shipping
@@ -36,10 +23,6 @@ The shipping rate that is returned is added to the associated sales order as a m
 ## Prepare your system to support SPS
 
 Before you can start to use SPS functionality, you must turn on the SPS feature in Feature management, add your rate engine, and set up the **Transportation management** and **Warehouse management** modules to support it.
-
-### Turn the SPS feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Small parcel shipping* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Deploy and set up rate engines
 
@@ -167,7 +150,7 @@ Follow these steps to set up a carrier service account.
 
 Follow these steps to set up a container packing policy.
 
-1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. For more information, see [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
+1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. Learn more in [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
 1. Go to **Warehouse Management \> Setup \> Containers \> Container packing policies**.
 1. On the Action Pane, select **New** to add a container packing policy.
 1. On the header of the new policy, set the following values:

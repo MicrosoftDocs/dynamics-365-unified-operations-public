@@ -1,15 +1,15 @@
 ---
 title: Italy overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Italy.
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Italy, including links directing to resources about tax books and Intrastat.
 author: liza-golub
-ms.date: 03/04/2024
+ms.author: egolub
 ms.topic: overview
+ms.date: 03/04/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Italy
-ms.author: egolub
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

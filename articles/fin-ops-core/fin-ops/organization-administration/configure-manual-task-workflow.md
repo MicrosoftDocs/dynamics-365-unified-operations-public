@@ -18,9 +18,6 @@ ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to configure the properties for a manual task.
 
 To configure a manual task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties for the manual task.

@@ -1,16 +1,15 @@
 ---
 title: Fixed receipt price
-description: This article explains how you can configure and use fixed receipt prices in Microsoft Dynamics 365 Supply Chain Management. 
+description: Learn how you can configure and use fixed receipt prices in Microsoft Dynamics 365 Supply Chain Management with an outline on fixed receipt prices. 
 author: rachel-profitt
-ms.date: 04/25/2022
-ms.topic: article
-ms.search.form: InventPosting, InventItemGroup, InventModelGroup
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: raprofit
-ms.search.validFrom: 2022-04-25
-ms.dyn365.ops.version: 10.0.27
+ms.reviewer: kamaybac
+ms.search.form: InventPosting, InventItemGroup, InventModelGroup
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Fixed receipt price
@@ -23,7 +22,7 @@ ms.dyn365.ops.version: 10.0.27
 
 When you select the **Fixed receipt price** checkbox on the **Item model group** page for an item, the system uses the receipt price as a standard cost for the inventory receipt. If the purchase price and the default item cost price that is configured for a product differ, the difference is posted to the **Fixed receipt price profit** or **Fixed receipt price loss** account and offset to the **Fixed receipt price offset** account that you specify on the **Inventory posting profile** page.
 
-Because the **Fixed receipt price** option is used in conjunction with different inventory models (such as first in, first out (FIFO); last in, first out (LIFO); and weighted average), the *Inventory close and adjustment* process will still create settlements and adjustments according to the inventory principle that you select on the **Item model group** page. However, adjustments are made only to issues from inventory.
+Because the **Fixed receipt price** option is used with different inventory models (such as first in, first out (FIFO); last in, first out (LIFO); and weighted average), the *Inventory close and adjustment* process will still create settlements and adjustments according to the inventory principle that you select on the **Item model group** page. However, adjustments are made only to issues from inventory.
 
 For example, you've configured a product with an item model group where the **Inventory model** field is set to *FIFO* and the **Fixed receipt price** option is selected. When you receive inventory through a purchase order, the inventory value is set to the value of the item's default cost price at the time of product receipt. When you invoice the purchase order, if the invoice price is different, the system posts the default cost price on the released product to the inventory account. It posts the difference to the fixed receipt price profit or loss account. Later, when you sell or consume the product, the system uses the running average for the item at the time when the sales order invoice was posted (unless you use marking).
 

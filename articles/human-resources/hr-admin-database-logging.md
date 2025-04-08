@@ -18,7 +18,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jaredha
+ms.author: ajitchandran
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
 

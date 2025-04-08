@@ -1,27 +1,24 @@
 ---
-title: Register and track batch/serial numbers for finished products and their components (preview)
-description: This article explains how workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes and associate those numbers with the batch/serial numbers of the products that are produced.
+title: Register and track batch/serial numbers for finished products and their components
+description: Learn how workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/29/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
-# Register and track batch/serial numbers for finished products and their components (preview)
+# Register and track batch/serial numbers for finished products and their components
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: preview until further notice -->
-
 Workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes. They can also then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+> [!TIP]
+> You can also track batch/serial numbers for materials and components using the [Traceability Add-in for Dynamics 365 Supply Chain Management (preview)](../traceability/traceability-overview.md), which offers a graphical browser interface and an API for integration with external systems.
 
 ## Prerequisites
 
@@ -93,6 +90,7 @@ The **Components** section lists the components of the finished product that's s
 - **Pick** – Manually pick the quantity that's planned for consumption, as specified in the **Consumption** field.
 - **Adjust consumption** – Generate a production picking list journal to manually adjust the consumption. In this case, the quantity that's specified in the **Consumption** field is automatically entered in the picking list journal.
 
-## Additional resources
+## Related information
 
 - [How workers use the production floor execution interface](production-floor-execution-use.md#tracked-components)
+- [Traceability overview (preview)](../traceability/traceability-overview.md)

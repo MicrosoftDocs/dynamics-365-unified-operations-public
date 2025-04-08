@@ -3,10 +3,11 @@ title: Invoice issue deadline
 description: Learn how to set up parameters to calculate the due dates for issuing customer invoices and vendor invoices in the European Union (EU).
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-02-28
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W

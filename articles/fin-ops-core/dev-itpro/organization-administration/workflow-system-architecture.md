@@ -18,9 +18,6 @@ ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article describes the architecture of the workflow system.
 
 The workflow infrastructure consists of two components that are hosted on the Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.

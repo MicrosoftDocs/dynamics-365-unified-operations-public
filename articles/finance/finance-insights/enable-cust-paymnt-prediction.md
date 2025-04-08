@@ -4,7 +4,7 @@ description: Learn how to configure the Customer payment predictions feature in 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: article
-ms.date: 10/11/2023
+ms.date: 06/11/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -23,15 +23,23 @@ This article explains how to configure the Customer payment predictions feature 
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) article.
 
+    
+> [!Important]
+> If the following data conditions aren't met, the prediction model won't train properly.
+>
+> To successfully train the prediction model, your environment must contain at least 100 settled customer transactions from the past six to nine months.  
+> These transactions must be distributed across the following three buckets with at least 30 free text invoices, sales order, or customer payment transactions in each:
+> - **On-time** 
+> - **Late**
+> - **Very late** 
+
+
 1. Configure the Customer payment insights feature:
 
     1. Go to **Credit and collections \> Setup \> Finance insights \> Customer payment predictions**.
     2. On the **Finance insights configuration** page, on the **Customer payment predictions** tab, select **View the data fields used in the prediction model** to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
         To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
-        
-   > [!NOTE]
-   > The **Customer payment predictions** feature requires more than 100 transactions in the previous six to nine months. The transactions can include free text invoices, sales orders, and customer payments. This data must be spread across the **On-time**, **Late**, and **Very late** settings.    
      
 
     2. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.

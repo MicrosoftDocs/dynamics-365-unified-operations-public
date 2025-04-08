@@ -4,9 +4,9 @@ description: Learn about composite data types in X++, which include arrays, cont
 author: josaw1
 ms.search.region: Global
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 08/27/2021
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

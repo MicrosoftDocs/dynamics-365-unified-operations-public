@@ -4,19 +4,17 @@ description: Learn about dual-write, which provides near-real-time interaction b
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: overview
-ms.date: 02/06/2020
-ms.reviewer: sericks
+ms.date: 06/06/2024
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-01-06
+ms.custom: evergreen
 ---
 
 # Dual-write overview
 
 [!include [banner](../../includes/banner.md)]
-
-
-
 
 
 ## What is dual-write?

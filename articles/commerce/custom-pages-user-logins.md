@@ -2,16 +2,15 @@
 title: Set up custom pages for user sign-ins
 description: This article describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Microsoft Entra business-to-consumer (B2C) tenants.
 author: brianshook
-ms.date: 03/17/2021
-ms.topic: article
+ms.date: 09/18/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Set up custom pages for user sign-ins
@@ -142,8 +141,6 @@ To update the "Sign up and sign in" policy with custom page information, follow 
     1. For **Email Address** attribute, it is recommended to leave the default value **Yes** selected in the **Requires Verification** column. This option ensures that users signing up with a given email address verify that they own the email address.
     1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Optional** column.
 1. Select **Save**.
-
-    ![Configuration of the local account sign up page policy.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### Update the "Profile editing" policy with custom page information
 

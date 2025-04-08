@@ -2,16 +2,15 @@
 title: Ratings and reviews modules
 description: This article covers ratings and reviews modules used on product details pages in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: asharchw
 ms.search.validFrom: 2020-10-31
-ms.dyn365.ops.version: Release 10.0.6
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Ratings and reviews modules

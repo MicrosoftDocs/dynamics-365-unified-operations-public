@@ -3,9 +3,9 @@ title: X++ variables
 description: Learn about variables in X++, which point to memory locations where specific data types are stored, with variable examples.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 08/27/2021
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

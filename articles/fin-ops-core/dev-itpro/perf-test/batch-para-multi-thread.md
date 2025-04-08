@@ -4,7 +4,7 @@ description: Learn about batch parallelism and multi-threading in Microsoft Dyna
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 02/20/2024
+ms.date: 06/07/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -54,23 +54,29 @@ When global journals are posted, if the selected journals span multiple companie
 The journal posting process has the following changes when the top picking pattern is used:
 
 - Adding a journal:
+
     - Every individual journal is added to the journal posting job.
     - When journals are split into multiple journals, the split journals are added to the journal posting job.
 
 - Retrieving a journal:
+
     - The journal posting process retrieves one journal from the queue and posts it.
 
 - Deleting a record:
+
     - The journal posting process cleans up all records that are older than 14 days.
     - The process removes records from the posting queue after the record is retrieved.
 
 - Posting:
+
     - Each batch task continues to post journals until all journals are posted from the posting queue.
 
- - Batch job history:
-    -    Top picking posting mechanism splits the posting process into multiple parallel sub-tasks to improve the overall performance. If one of the sub-tasks fails, other tasks will continue to work, the overall status of the batch job will show as **Ended**.
-    -    To see the job history, go to batch job history, drill down on batch job Id, and **InfoLog** section. For more information, see [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md).
-  
+- Batch job history:
+
+    - The top picking posting mechanism splits the posting process into multiple parallel sub-tasks to improve the overall performance. If one of the sub-tasks fails, other tasks continue to work. The overall status of the batch job is shown as **Ended**.
+    - For all log messages, go to the batch job history, and select **Log** to view the full message.
+    - To view the log for an individual batch task, go to the batch job history, select **View tasks**, and then select **Log** for the individual batch task.
+    - For more information, see [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md).
 
 ### Related classes and tables
 

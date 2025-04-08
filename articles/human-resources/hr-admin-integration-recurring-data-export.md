@@ -98,8 +98,6 @@ The bulk of the exercise involves creating the logic app.
         > [!NOTE]
         > The Human Resources service doesn't yet provide a connector that exposes all the APIs that make up the DMF package REST API, such as **ExportToPackage**. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Microsoft Entra connector. This connector uses Microsoft Entra ID for authentication and authorization to Human Resources.
 
-        ![HTTP with Microsoft Entra connector.](media/integration-logic-app-http-aad-connector-step.png)
-
     2. Sign in to your Human Resources environment through the HTTP with Microsoft Entra connector.
     3. Set up an HTTP **POST** request to call the **ExportToPackage** DMF REST API.
 
@@ -116,8 +114,6 @@ The bulk of the exercise involves creating the logic app.
                 "legalEntityId":"USMF"
             }
             ```
-
-        ![Invoke an HTTP request action.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.

@@ -1,19 +1,22 @@
 ---
-# required metadata
-
 title: Experimentation in Dynamics 365 Commerce
 description: Experimentation enables the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support is enabled for e-commerce pages and entities within a page.
 author: sushma-rao 
-ms.date: 06/07/2022
+ms.date: 07/26/2024
 ms.topic: overview
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sushmar
+ms.author: asharchw
 ms.search.validFrom: 2020-09-30
+ms.custom: 
+  - bap-template
 ---
 
 # Experimentation in Dynamics 365 Commerce
+
+[!include [banner](includes/banner.md)]
+
 Use experimentation in Dynamics 365 Commerce to validate hypotheses about the effectiveness of your e-Commerce pages and make decisions with data-driven confidence. Commerce supports A/B testing on pages, modules, and fragments and enables you to measure the impact of proposed changes to your website.
 
 You can create, edit, and manage page and content treatments known as **variations** in Commerce site builder. Commerce integrates with third-party services that you can use to create experiments and treatment assignments. Real-time event streams captured in Commerce enable the analytics that define the experiment results in the third-party service. You can then leverage these analytics to help support or refute your hypothesis.

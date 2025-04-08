@@ -1,16 +1,12 @@
 ---
 title: Style the production floor execution interface
-description: The article explains how to configure form controls so that the default production floor execution styles are applied to them.
+description: Learn how to configure form controls so that the default production floor execution styles are applied to them with an outline on forms and dialogs.
 author: johanhoffmann
-ms.date: 11/08/2021
-ms.topic: article
-ms.search.form:
-audience: Developer, IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2021-02-22
-ms.dyn365.ops.version: 10.0.15
+ms.topic: article
+ms.date: 11/08/2021
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Style the production floor execution interface
@@ -337,7 +333,7 @@ In Visual Studio, a grid, detail part, and quick filter can be created by using 
 
 ![Typical code structure that aligns a grid, detail part, and quick filter.](../production-control/media/pfe-styles-header-code-structure2.png "Typical code structure that aligns a grid, detail part, and quick filter")
 
-## Additional resources
+## Related information
 
 - [Customize the production floor execution interface](../supply-chain-dev/production-floor-execution-customize.md)
 - [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)

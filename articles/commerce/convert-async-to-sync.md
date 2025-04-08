@@ -2,13 +2,15 @@
 title: Convert asynchronous customers to synchronous customers
 description: This article explains how to convert asynchronous customers to synchronous customers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 12/10/2021
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: asharchw
 ms.search.validFrom: 2021-12-17
+ms.custom: 
+  - bap-template
 ---
 
 # Convert asynchronous customers to synchronous customers

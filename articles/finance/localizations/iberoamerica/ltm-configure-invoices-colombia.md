@@ -1,12 +1,12 @@
 ---
 title: Configure sales and purchase invoices for Colombia
-description: This article explains how to configure sales and purchase invoices for a company in Colombia.
+description: Learn how to configure sales and purchase invoices for a company in Colombia, including an outline and process for sales invoice configuration.
 author: Cpicon85
-ms.date: 12/08/2023
-ms.topic: how-to
-ms.reviewer: johnmichalak
 ms.author: v-cpicon
+ms.topic: how-to
+ms.date: 12/08/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure sales and purchase invoices for Colombia

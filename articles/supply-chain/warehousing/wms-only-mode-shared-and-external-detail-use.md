@@ -1,15 +1,13 @@
 ---
 title: Work with Warehouse management only mode in Supply Chain Management
-description: This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner
+description: Learn how to use Warehouse only mode to perform day-to-day warehousing tasks, including an outline on monitoring integrations.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/27/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner
 ---
 
 # Work with Warehouse management only mode in Supply Chain Management
@@ -17,8 +15,6 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 
 This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Monitor the integration
 

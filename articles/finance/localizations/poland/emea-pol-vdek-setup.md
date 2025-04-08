@@ -1,13 +1,15 @@
 ---
 title: Prepare for JPK-V7 reporting
-description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
+description: Learn about how to set up a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland, with an outline on import and setting up ER configurations.
 author: liza-golub
-ms.date: 07/12/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Poland
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
@@ -55,8 +57,6 @@ For more information about how to download ER configurations from the Microsoft 
 
 Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7 report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7 report. The JPK-V7 format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
 
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 The format includes the following lookup fields for setup.
 

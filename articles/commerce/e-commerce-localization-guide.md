@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Dynamics 365 Commerce e-commerce localization guide
 description: This article describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels.
 author: bicyclingfool
-ms.date: 04/29/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce e-commerce localization guide

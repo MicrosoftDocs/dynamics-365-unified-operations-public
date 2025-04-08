@@ -1,12 +1,13 @@
 ---
 title: Service electronic fiscal document for Brazil
 description: Learn about the service electronic fiscal document for Brazil, including prerequisites and an overview on how to export and import RPS files.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 10/31/2017
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: BrazilParameters, ConfDefGroups_BR, ConfDefGroupWizard_BR, ConfDefLayout_BR, ConfExportDialog_BR, FiscalDocumentType_BR, RPSExport_BR, RPSImport_BR, TaxServiceCode_BR

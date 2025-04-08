@@ -1,16 +1,16 @@
 ---
 title: Add custom buttons to the POS header bar
-description: This article explains how to add a new custom button to the POS header bar.
+description: This article explains how to add a new custom button to the POS header bar in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/16/2020
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2020-09-16
-ms.dyn365.ops.version: AX 10.0.14
-ms.assetid: 
+ms.custom: 
+  - bap-template
 ---
 
 # Add custom buttons to the POS header bar

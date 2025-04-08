@@ -6,7 +6,7 @@ ms.author: fdahl
 ms.topic: article
 ms.date: 06/21/2018
 ms.custom:
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-06-30

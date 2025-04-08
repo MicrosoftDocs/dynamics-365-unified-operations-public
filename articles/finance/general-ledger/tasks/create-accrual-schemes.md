@@ -1,10 +1,10 @@
 --- 
 title: Create accrual schemes
 description: Learn how to create an accrual scheme, including a step-by-step process for a task that uses the USMF demo company to navigate from general ledger to accrual schemes. 
-author: aprilolson
-ms.author: aolson
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 06/17/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User   

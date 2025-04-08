@@ -1,16 +1,14 @@
 ---
 title: VAT declaration (Netherlands)
-description: This article provides information about VAT declaration for Netherlands.
-author: AdamTrukawka
-ms.date: 02/09/2022
-ms.topic: article
-audience: Application User
+description: Learn about VAT declaration for Netherlands, including outlines on setting up VAT declaration for Netherlands and previewing VAT declarations in Excel.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.search.form: 
+
 ---
 
 # VAT declaration for Netherlands
@@ -369,9 +367,6 @@ To import Electronic reporting (ER) configurations, go to **Workspaces** \> **El
 ### Set up application specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. 
-
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 To set up report fields, follow these steps:
 

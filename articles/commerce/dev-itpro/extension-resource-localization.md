@@ -2,15 +2,15 @@
 title: Localize Commerce extension resources and label files
 description: This article explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
 author: josaw1
-ms.date: 02/01/2023
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: aneesa
 ms.search.validFrom: 2018-05-31
-ms.dyn365.ops.version: 8.0.1
-ms.search.industry: retail
+ms.custom: 
+  - bap-template
 ---
 
 # Localize Commerce extension resources and label files

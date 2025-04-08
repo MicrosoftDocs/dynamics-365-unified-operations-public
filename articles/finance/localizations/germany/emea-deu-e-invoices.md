@@ -1,9 +1,11 @@
 ---
 title: Customer electronic invoices in Germany (DE-00022)
 description: Learn how to set up and process customer electronic invoices in Germany, including prerequisites and an outline on customer electronic invoices.
-author: mrolecki
-ms.author: mrolecki
-ms.topic: article
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 10/05/2020
 ms.reviewer: johnmichalak
 audience: Application User

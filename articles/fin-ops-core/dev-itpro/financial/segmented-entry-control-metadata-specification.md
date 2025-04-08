@@ -3,14 +3,14 @@ title: Design-time metadata for Segmented Entry controls
 description: Learn about the design-time metadata properties for Segmented Entry controls, including a table outlining property details.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: tfehr
-audience: Developer
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.assetid: b8c5d7a4-ee2b-4ab1-b042-88472b97f035
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

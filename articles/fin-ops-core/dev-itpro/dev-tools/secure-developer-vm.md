@@ -3,7 +3,7 @@ title: Secure one-box development environments
 description: Learn about how to help secure one-box developer environments, including outlines on default congigurations and how to deploy to a custom virtual network.
 author: mnordick
 ms.author: mnordick
-ms.date: 05/10/2024
+ms.date: 07/01/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -61,7 +61,8 @@ The following table shows the regional instances of Lifecycle Services.
 | Geography | Lifecycle Services URL | Lifecycle Services IP addresses |
 |---|---|---|
 | United States/Public | lcs.dynamics.com | 191.239.20.104<br>40.76.5.241<br>40.112.209.123<br>40.121.208.21<br>40.118.145.241 |
-| Azure Government | gov.lcs.microsoftdynamics.us | 52.227.70.23<br>13.72.15.62<br>23.97.12.187<br>13.72.20.213 |
+| Azure Government/GCC | gov.lcs.microsoftdynamics.us | 20.141.106.7<br>20.141.192.69 |
+| Azure Government/GCC High | high.lcs.microsoftdynamics.us | 52.245.167.30<br>20.141.241.11 |
 | China | lcs.dynamics.cn | 40.73.5.94<br>40.73.64.218<br>40.112.209.123<br>40.121.208.21 |
 | Europe | eu.lcs.dynamics.com | 40.114.140.114<br>40.115.104.173 |
 | France | fr.lcs.dynamics.com | 40.89.132.81<br>40.89.155.166<br>40.89.130.72<br>52.136.130.60<br>52.136.130.76 |
@@ -118,7 +119,7 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId.
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId. Do not remove the spn:00000015-0000-0000-c000-000000000000 entry.
     ```
     <securityTokenHandlerConfiguration>
     <audienceUris>

@@ -5,7 +5,7 @@ author: kfend
 ms.author: filatovm
 ms.topic: conceptual
 ms.date: 04/02/2020
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

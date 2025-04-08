@@ -1,19 +1,19 @@
 ---
 title: Sales tax settlement and numbering of pages in sales tax books
-description: This article explains sales tax settlement and the numbering of pages in sales tax books for legal entities in Italy.
+description: Learn about sales tax settlement and the numbering of pages in sales tax books for legal entities in Italy, including a description of various fields.
 author: liza-golub
-ms.date: 03/04/2024
+ms.author: egolub
 ms.topic: conceptual
+ms.date: 03/04/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Italy
-ms.author: egolub
 ms.search.validFrom: 2016-11-30
+ms.search.form: TaxAuthority, TaxPeriod
 ms.dyn365.ops.version: Version 1611
 ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
-ms.search.form: TaxAuthority, TaxPeriod
 ---
 
 # Sales tax settlement and numbering of pages in sales tax books

@@ -5,12 +5,12 @@ author: BrianShook
 ms.date: 01/08/2020
 ms.topic: overview
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: 
+ms.custom: 
+  - bap-template
 ---
 
 # Compliance overview

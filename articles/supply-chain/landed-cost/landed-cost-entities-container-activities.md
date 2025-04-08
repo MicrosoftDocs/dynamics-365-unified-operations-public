@@ -1,16 +1,12 @@
 ---
 title: Container activities entity
-description: This article provides information about container activities, which are used to track the progress of shipping containers. 
-author: yufeihuang
-ms.date: 05/27/2022
+description: Learn about container activities, which are used to track the progress of shipping containers with a table that defines various names. 
+author: lisascholz91
+ms.author: lisascholz
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 05/27/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yufeihuang
-ms.search.validFrom: 2022-05-27
-ms.dyn365.ops.version: 10.0.28
+ms.search.form:
 ---
 
 # Container activities entity

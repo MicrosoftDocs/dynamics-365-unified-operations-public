@@ -1,13 +1,13 @@
 ---
 title: Headless commerce architecture
 description: This article describes the architecture of the headless commerce.
-author: josaw1
+author: aneesa
 ms.date: 06/03/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: aneesa
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: AX 10.0.16
 ---

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Sales where prices include and exclude tax
-description: This article provides information about sales where the prices on some order lines include sales tax and the prices on other order lines exclude sales tax.
-author: EricWangChen
+description: Learn about sales where the prices on some order lines include sales tax and the prices on other order lines exclude sales tax.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Sales where prices include and exclude tax

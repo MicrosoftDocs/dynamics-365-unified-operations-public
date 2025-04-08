@@ -2,10 +2,10 @@
 title: Integrate procurement between Supply Chain Management and Field Service
 description: Learn about how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
 author: RamaKrishnamoorthy
-ms.author: tfehr
+ms.author: ramasri
 ms.topic: article
 ms.date: 11/11/2020
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-11-11
@@ -15,8 +15,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Integrate procurement between Supply Chain Management and Field Service
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-[!include [banner](../../dev-itpro/includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management provides robust procurement functionality. Dynamics 365 Field Service offers similar functionality that supports the purchasing processes that are associated with the service process. The functionality in these two apps is integrated through dual-write, and the resulting cross-functional use cases are enabled through table mappings, solution logic, views, and forms.
 

@@ -1,15 +1,14 @@
 ---
 title: EU Sales list for Latvia
-description: This article provides information about the European Union (EU) sales list report for Latvia.
-author: AdamTrukawka
-ms.date: 05/31/2022
-ms.topic: article
-audience: Application User
+description: Learn about the European Union (EU) sales list report for Latvia, including a step-by-step process for setting up foreign trade parameters.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 ---
 
 # EU Sales list for Latvia

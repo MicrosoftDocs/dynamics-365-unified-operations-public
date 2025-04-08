@@ -1,22 +1,21 @@
 ---
 title: Sales tax for Saudi Arabia
 description: This article provides information about sales taxes for Saudi Arabia.
-author: AdamTrukawka
-ms.date: 02/15/2018
-ms.topic: article
-audience: Application User
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # Sales tax for Saudi Arabia
 
 [!include[banner](../../includes/banner.md)]
 
-This article walks you through the process of setting up sales taxes for Saudi Arabia. Before you read this article, you might find it helpful to read [Sales tax overview](../../general-ledger/indirect-taxes-overview.md). For information about regulatory requirements for Saudi Arabia, see [VAT for Saudi Arabia (Government website)](https://www.vat.gov.sa/).
+This article walks you through the process of setting up sales taxes for Saudi Arabia. Before you read this article, you might find it helpful to read [Sales tax overview](../../general-ledger/indirect-taxes-overview.md). 
 
 ## Setting up sales tax for Saudi Arabia
 
@@ -105,7 +104,6 @@ The following illustration shows an example of the **Sales tax payment by code**
 ## Additional resources
 
 - [Create a sales tax payment](../../general-ledger/tasks/create-sales-tax-payment.md)
-- [FAQ: VAT returns (Government website)](https://www.vat.gov.sa/en/e-services/vat-returns)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Seamless offline switch for gift card and credit memo operations
 description: This article provides an overview of improvements that provide a seamless offline switch for specific payment types. 
 author: BrianShook
 ms.date: 02/11/2020
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.topic: how-to
 audience: Application user
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 20120-02-28
-ms.dyn365.ops.version: 10.0.8
-
+ms.custom: 
+  - bap-template
 ---
 
 # Seamless offline switch for gift card and credit memo operations

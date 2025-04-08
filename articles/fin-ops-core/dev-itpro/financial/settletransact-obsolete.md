@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: article
 ms.date: 06/01/2019
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-06-01
@@ -17,7 +17,6 @@ ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 ## CustTrans::settleTransact is obsolete
 
@@ -116,7 +115,7 @@ CustTrans::settleTransact(recipientCustVendTable);
 ```X++
 //Mark for settlement
 SpecTransExecutionContext specTransExecutionContext = SpecTransExecutionContext::newFromSource(custTable);
-specTransManager = SpecTransManager::construct(specTransExecutionContext.parmSpecContext());
+specTransManager = SpecTransManager::newFromSpec(specTransExecutionContext.parmSpecContext());
 
 specTransManager.insert(…) //Invoice(s)
 specTransManager.insert(…) //Payment(s)

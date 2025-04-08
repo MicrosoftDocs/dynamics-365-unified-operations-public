@@ -1,13 +1,14 @@
 ---
 title: EU Sales list for Hungary
-description: This article provides information about the European Union (EU) sales list report for Hungary.
-author: AdamTrukawka
-ms.date: 06/09/2022
-ms.topic: article
-audience: Application User
+description: Learn about the European Union (EU) sales list report for Hungary, including outlines on setup and how to work with the EU sales list.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
 ms.search.region: 
-ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

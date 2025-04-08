@@ -1,21 +1,22 @@
 ---
-title: Cash register functionality for France
+title: Cash register functionality for France (preview)
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 06/11/2023
-ms.topic: article
+ms.date: 01/28/2025
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: France
-ms.author: josaw
+ms.author: ritakimani
 ms.search.validFrom: 2018-02-28
-ms.dyn365.ops.version: 7.3.2
-ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+ms.custom: 
+  - bap-template
 ---
-# Cash register functionality for France
+# Cash register functionality for France (preview)
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [banner](../../../finance/includes/preview-banner.md)]
 
 This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
@@ -23,14 +24,19 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.27**):
+- **Microsoft Dynamics 365 Commerce, version 10.0**:
 
     - Certificate category: B
     - Certificate number: 0498
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog box. You can open this dialog box by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog box shows the certified software name and version, the certification category, and the NF 525 certificate number.
+You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog. You can open this dialog by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog shows the certified software name and version, the certification category, and the NF 525 certificate number.
+
+ > [!NOTE]
+  > - To comply with NF 525 certification requirements for updating software versions, we use a separate NF 525 specific version. The current NF 525 certified version is **Microsoft Dynamics 365 Commerce, version 10.0**, which maps to the global major Dynamics 365 Commerce version **10.0**. For more information on Microsoft's versioning approach, see [NF 525 compliance documentation](#nf-525-compliance-documentation). 
+  > - Microsoft ensures the authenticity and security of the Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and hasn't been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
+  > - Microsoft maintains source code for all supported versions of Dynamics 365 Commerce in a secure version control system that is in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
 
 ### NF 525 compliance documentation
 
@@ -40,7 +46,7 @@ The following table shows the Dynamics 365 Commerce documentation that is relate
 |----------|-------------|-------|
 | <p>High-level design</p><p>Technical architecture</p> | This documentation describes the software product, its components, and data flows, and also the technical design of the product. | <p>[Commerce home page](../../welcome.md) and nested links</p><p>[Dynamics 365 Commerce architecture overview](../../dev-itpro/commerce-architecture.md)</p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france)</p> |
 | <p>Functional specification</p><p>User documentation</p> | This documentation describes the functions of the software. | <p>[Commerce home page](../../welcome.md) and nested links</p><p>[France-specific POS features](#france-specific-pos-features)</p> |
-| Versioning strategy | <p>This documentation describes the versioning approach and the version management procedure for the software product.</p><p>The current major Dynamics 365 Commerce version is **10.0**. Service updates for this version are indicated by a consecutive number after the version number: **10.0.X**. For more information about the software lifecycle policy and service updates, use the links in this table.</p> | <p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p><p>[Software lifecycle policy and cloud releases](../../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)</p><p>[Service update availability](../../../fin-ops-core/dev-itpro/get-started/public-preview-releases.md)</p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)</p><p>[What's new or changed in Dynamics 365 Commerce](../../get-started/whats-new-home-page.md)</p><p>[Dynamics 365 Commerce component versioning requirements](../../dev-itpro/arch-component-versioning.md)</p> |
+| Versioning strategy | <p>This documentation describes the versioning approach and the version management procedure for the software product.</p><p>The current major Dynamics 365 Commerce version is **10.0**. Service updates for this version are indicated by a consecutive number after the version number: **10.0.X**. For more information about the software lifecycle policy and service updates, use the links in this table.</p>| <p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p><p>[Software lifecycle policy and cloud releases](../../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)</p><p>[Service update availability](../../../fin-ops-core/dev-itpro/get-started/public-preview-releases.md)</p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)</p><p>[What's new or changed in Dynamics 365 Commerce](../../get-started/whats-new-home-page.md)</p><p>[Dynamics 365 Commerce component versioning requirements](../../dev-itpro/arch-component-versioning.md)</p> |
 | Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../../fin-ops-core/fin-ops/lcs/country-region.md) |
 | Maintenance documentation | This documentation describes implementation and maintenance of the software solution. | <p>[Service description](../../../fin-ops-core/dev-itpro/get-started/service-description.md)</p><p>[Before you buy](../../../fin-ops-core/fin-ops/get-started/before-you-buy.md)</p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)</p><p>[Implementation lifecycle management home page](../../../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md)</p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../../dev-itpro/Synchronize-installers.md)</p><p>[Set up Commerce for France](#set-up-commerce-for-france)</p><p>[Compliance checklist](#compliance-checklist)</p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/support/)</p><p>[Submit service requests](../../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)</p><p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p> |
 | Auditor documentation | This documentation describes how to access the data, the files, and the process that are used by the authorities. | [Fiscal archive for France](emea-fra-fiscal-archive.md) |
@@ -80,18 +86,27 @@ The following France-specific POS features are enabled when the primary address 
 
 If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
 
-- Sign-in
-- Sign-out
-- Printing a copy of a receipt
-- Starting offline mode
-- Ending offline mode
-- Applying a manager override
-- Voiding a transaction 
-- Voiding a transaction line
-- Closing a shift
-- Cleanup of transactions from the channel database
-- Applying a major update of the software with compliance impact
+| Event | NF 525 Jet Code |
+|----------|-------------|
+| Sign-in | 80 |
+| Sign-out | 40 |
+| Printing a copy of a receipt | 155 |
+| Returns | 326 |
+| Starting offline mode | 70 |
+| Ending offline mode | 120 |
+| Applying a manager override | 130 |
+| Voiding a transaction  | 320 |
+| Voiding a transaction line | #323 |
+| Closing a shift | 50 |
+| Period tax archiving | 20 |
+| Fiscal year archiving | 30 |
+| Annual or year-end closing | 60 |
+| Cleanup of transactions from the channel database | 200 |
+| Applying a major update of the software with compliance impact | 250 |
 
+> [!NOTE]
+> Audit event logs are only applicable to changes made in the POS, so changes made in Commerce headquarters aren't included in the logs.
+    
 ### Digital signing overview
 
 The following types of records (transactions and events) are digitally signed in POS:
@@ -114,9 +129,8 @@ The signature is created and recorded in the channel database at the same time t
 1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Commerce headquarters, together with the transaction or event.
 
 > [!NOTE]
-> The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
->
-> You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
+> - The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
+> - You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 256-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
 ### Digital signing of sales and return transactions
 
@@ -206,18 +220,18 @@ You can view the event signature, together with the event data that was used to 
 
 Receipts for France can include additional information that was implemented by using custom fields:
 
-- **Transaction type** – You can add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
-- **Sequential number of signed sales transaction** – A receipt can include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
-- **Extract from digital signature** – A receipt can include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+- **Transaction type** – You should add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
+- **Sequential number of signed sales transaction** – A receipt should include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
+- **Extract from digital signature** – A receipt should include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
 - Information about a receipt copy:
 
-    - **Reprint message** – A receipt copy can include a "Copy" caption.
+    - **Reprint message** – A receipt copy should include a "Copy" caption.
     - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
     - **Reprint date** – A receipt copy can include the date of the copy.
     - **Reprint time** – A receipt copy can include the time of the copy in either the 12-hour format or the 24-hour format.
     - **Reprint signature** – A receipt copy can include an extract from the digital signature of the copy.
 
-- **Line count** – A receipt can include the number of printed item lines on the receipt.
+- **Line count** – A receipt should include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
 
     - Prepayments (customer account deposits)
@@ -225,8 +239,8 @@ Receipts for France can include additional information that was implemented by u
     - Issuing a gift card
     - Adding funds to a gift card
 
-- **Certification data** – A receipt can include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-- **Software version** – A receipt can include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
+- **Certification data** – A receipt should include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+- **Software version** – A receipt should include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
 
 ### Restricting the duration of shifts
 
@@ -339,9 +353,10 @@ You must also specify the following settings for France. Note that you must run 
 
 You must enable the following features in the **Feature management** workspace:
 
-- (France) Enable additional audit events in POS
-- (France) Enable additional information in end-of-day statements in POS
-- (France) Enable exporting Z-Report to file
+- (France) Enable additional audit events in POS.
+- (France) Enable additional information in end-of-day statements in POS.
+- (France) Enable exporting Z-Report to file.
+- (France) Enable identical receipt copy printing (starting with the Commerce 10.0.43 release).
 
 ### Set up the legal entity
 
@@ -391,6 +406,7 @@ On the **Language text** page, add the following records for the labels of the c
 | en-US       | 900013  | Reprint time 12H          |
 | en-US       | 900014  | Reprint time 24H          |
 | en-US       | 900015  | Reprint digital signature |
+| en-US       | 900016  | Software version          |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
@@ -411,10 +427,14 @@ On the **Custom fields** page, add the following records for the custom fields f
 | REPRINTTIME12H_FR               | Receipt | 900013          |
 | REPRINTTIME24H_FR               | Receipt | 900014          |
 | REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
+| SOFTWAREVERSION_FR              | Receipt | 900016          |
+| VATID_FR                        | Receipt | 900017          |
+| SIRETNUMBER_FR                  | Receipt | 900018          |
+
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+NF 525 compliance requires that receipts shouldn't be printed by default and should only be printed by customer request. To comply with this requirement, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -432,6 +452,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Footer:** Add the following fields:
 
     - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+    - **Sum All Discounts** – This field prints the receipt's total discount.
     - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
     - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
     - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
@@ -444,7 +465,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
     - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
-    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
+    - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
@@ -522,15 +543,15 @@ Depending on your purposes, you can download the ER configurations for the Z rep
 
 You must download the following versions (or later versions) of the configurations:
 
-- **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.3** data model mapping
-- **Retail Z-Report (FR).version.24.23.3** format
-- **Retail data archive (FR).version.2.5** format
+- **Retail channel data.version.24** data model
+- **Archiving DMM.version.24.97** data model mapping
+- **Retail Z-Report (FR).version.24.24.4** format
+- **Retail data archive (FR).version.24.24** format
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
-- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
+- **Z-Report export format** – Select the **Retail Z-Report (FR)** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR)** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 
@@ -540,7 +561,7 @@ After you import the configurations, select ER formats for the Z report and arch
 To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable France-specific data to be transmitted from POS to Commerce headquarters, you must reinitialize the Commerce scheduler.
 
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../../enable-configure-retail-functionality.md).
-1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
+1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog, select **OK**.
 
 ### Configure channel components
 
@@ -676,7 +697,7 @@ To validate a digitally signed audit event, follow these steps.
     1. Sign in to POS, and open a new shift.
     1. Open the **Settings** page.
     1. Under **France**, in the **NF 525 certification** section, select **View details**.
-    1. In the **NF 525 certification** dialog box, review the software name and version, the certification category, and the NF 525 certificate number.
+    1. In the **NF 525 certification** dialog, review the software name and version, the certification category, and the NF 525 certificate number.
     1. On the **Current transaction** page, add several items, and pay the exact amount.
     1. Return to **Home**, and select **Show journal**.
     1. On the **Transaction journal** page, select the previous sales transaction, and return one item from it. Pay the exact amount.

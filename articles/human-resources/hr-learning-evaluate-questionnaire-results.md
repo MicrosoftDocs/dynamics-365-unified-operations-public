@@ -4,7 +4,7 @@
 title: View and evaluate the results of questionnaires
 description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/01/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

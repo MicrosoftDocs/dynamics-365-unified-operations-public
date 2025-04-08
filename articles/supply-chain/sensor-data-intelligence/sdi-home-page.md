@@ -1,23 +1,20 @@
 ---
 title: Sensor Data Intelligence home page (preview)
-description: This article provides an overview of Sensor Data Intelligence. Organizations can use this feature to drive business processes in Microsoft Dynamics 365 Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor.
+description: Access an overview of Sensor Data Intelligence. Organizations can use this feature to drive business processes in Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
-ms.date: 09/02/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2022-09-02
-ms.dyn365.ops.version: 10.0.30
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Sensor Data Intelligence home page (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enables organizations to drive business processes in Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor. It's an updated, renamed version of the *IoT Intelligence* feature that was previously available for Supply Chain Management.
@@ -29,7 +26,7 @@ Sensor Data Intelligence lets you perform the following tasks:
 - Deploy components on your own subscription, so that you have more flexibility to manage Azure components.
 - Configure, scale, and extend the solution as business logic that runs on Azure components. Those components are now managed on your own subscription. Therefore, you can customize them as required to meet your unique business needs.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Business scenarios
 
@@ -50,4 +47,4 @@ The following architectural diagram provides an overview of the solution and its
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
 > [!NOTE]
-> For more information about about how to connect sensors to the Azure IOT Hub, see [Azure industrial IoT analytics guidance](/azure/architecture/guide/iiot-guidance/iiot-architecture).
+> For more information about how to connect sensors to the Azure IoT Hub, see [Azure industrial IoT analytics guidance](/azure/architecture/guide/iiot-guidance/iiot-architecture).

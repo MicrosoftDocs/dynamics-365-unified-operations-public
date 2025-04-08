@@ -1,25 +1,13 @@
 ---
-# required metadata
-
 title: Credit limits for customers
-description: This article provides an overview of how credit limits work in Dynamics 365 Supply Chain Management.
-author: Henrikan
-ms.date: 11/16/2023
+description: Access an overview of how credit limits work in Dynamics 365 Supply Chain Management, including answers to questions about checking credit limits.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: CustParameters 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/16/2023
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.form: CustParameters
 ---
 
 # Credit limits for customers
@@ -98,7 +86,7 @@ Information about a customer’s balance and remaining credit amount is calculat
 and stored when you create an aging snapshot, and is displayed in the
 **Collections** page. The amounts that are displayed in the **Collections** page
 might not include all transaction activity until a new aging snapshot is
-created. For more information, see [Collections and credit in Accounts
+created. Learn more in [Collections and credit in Accounts
 receivable](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 Depending on the documents that are selected, information about a customer’s

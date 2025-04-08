@@ -1,10 +1,10 @@
 ---
 title: Reconcile bank statements by using advanced bank reconciliation
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance.
-author: EricWangChen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 04/20/2024
+ms.date: 01/07/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -19,6 +19,14 @@ ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 [!include [banner](../includes/banner.md)]
 
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains the reconciliation process.
+
+> [!NOTE]
+> Some of the functionality that this article describes applies only when the **Modern bank reconciliation** feature is turned off. If the feature is turned on, the process flow is different, and the following extra functionality is available:
+>
+> - Bank statement validation and confirmation.
+> - Improvements to bank reconciliation matching rules. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), and [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
+> - Customer and vendor journal posting directly from the bank reconciliation worksheet.
+> - Generation of general ledger vouchers directly from the bank reconciliation worksheet.
 
 ## Import an electronic bank statement by using Electronic reporting
 
@@ -41,8 +49,8 @@ A **Reconcile after import** option is available. When you set this option to **
 You can also use Electronic reporting (ER) to periodically import your bank statements from a SharePoint folder. To import bank statements, follow these steps.
 
 1. Configure SharePoint for a bank statement format. For more information, see [Configure data import from SharePoint](../../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?context=%2Fdynamics365%2Fcontext%2Ffinance).
-1. In Feature management, enable the **Automatic importing bank statement from SharePoint folder** feature.
-1. Enable batch processing during the bank statement import, and configure recurrence settings. Bank statements can then be imported from the configured SharePoint folder in the statement format.
+2. In Feature management, enable the **Automatic importing bank statement from SharePoint folder** feature.
+3. Enable batch processing during the bank statement import, and configure recurrence settings. Bank statements can then be imported from the configured SharePoint folder in the statement format.
 
 ## Import an electronic bank statement by using data entities
 
@@ -101,6 +109,11 @@ Bank statement validation verifies the following details:
 
 When the validation is completed, the status of the bank statement is updated to **Validated**. A bank statement must be validated before it can be reconciled.
 
+If the **Modern bank reconciliation** feature is turned on, the **Validate** and **Confirm** buttons are available on the bank statement header.
+
+- **Validate** – Verify the bank statement data.
+- **Confirm** – Update the bank statement status to **Confirmed**.
+
 ## Reconcile the bank statement
 After you've imported an electronic bank statement and validated the statement on the **Bank statements** page, you can reconcile the bank statement by using the **Bank reconciliation** and **Bank reconciliation worksheet** pages. 
 
@@ -114,8 +127,8 @@ You can enable additional filtering capabilities and a new grid for new transact
 
 There are three ways to match or reconcile bank statement transactions:
 
-- Match the transactions with Operations bank transactions.
-- Match the transactions with a reversal bank statement transaction.
+- Match the statement transactions with bank transactions that are posted in Finance.
+- Match the statement transactions with a reversal bank statement transaction.
 - Mark the transactions as **New**, so that they can be posted later as a bank transaction in Finance.
 
 To manually match transactions, select the transactions in the **Bank statement transactions** grid, select the corresponding transactions in the **Operations bank transactions** grid, and then select **Match**. The selected transactions are moved from the upper grids for unmatched transactions to the lower grids for matched transactions. Additionally, the matched and unmatched total amounts are updated. You can have one-to-one, many-to-one, and many-to-many transaction matches. Matches must follow the rules for allowed date differences and transaction type mapping. These rules are set on the **Cash and bank management parameters** page.
@@ -138,17 +151,23 @@ Bank statement transactions that you marked as **New** on the reconciliation wor
 
 To view the voucher of a new transaction on a **Bank statement** page, turn on the **Display vouchers in bank statement** feature.
 
+If the **Modern bank reconciliation** feature is enabled, users can generate general ledger vouchers directly from the reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
+
 ## Post customer and vendor payment journals from bank statements and reconciliation worksheets
 
-In Dynamics 365 Finance version 10.0.36, the **Generate customer and vendor payments from bank statement and reconciliation** feature is available. This feature enhances the bank statement and reconciliation worksheet. You can post customer and vendor payment journals directly from selected bank statement lines. The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet.
+If the **Modern bank reconciliation** feature is enabled, the bank statement and reconciliation worksheets are enhanced. Here's some of the extra functionality that is provided:
 
-To use the feature, follow these steps.
+- You can post customer and vendor payment journals directly from selected bank statement lines.
+- The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet.
+
+To use this functionality, follow these steps:
 
 1. On the **Bank accounts** setup page, on the **Reconciliation** FastTab, enter the **Default customer payment journal** and **Default vendor payment journal** names.
-2. On the **Bank statement** page or the **Bank reconciliation worksheet** page, select the required bank statement lines.
-3. Select **Generate payment journal** to generate and post the payment journal.
 
-> [!NOTE]
-> The **Generate customer and vendor payments from bank statement and reconciliation** feature is in preview in version 10.0.36 and is available only in sandbox environments.
+    > [!NOTE]
+    > You can't specify journal names that an approval workflow is enabled for.
+
+2. On the **Bank statement** or **Bank reconciliation worksheet** page, select the required bank statement lines.
+3. Select **Generate payment journal** to generate and post the payment journal.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Configure number sequences for warehouse flows
-description: This article provides an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
+description: Access an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
 author: Mirzaab
-ms.date: 06/10/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSNumberSequenceExt
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.2
-
+ms.topic: article
+ms.date: 06/10/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form: WHSNumberSequenceExt
 ---
 
 # Configure number sequences for warehouse flows

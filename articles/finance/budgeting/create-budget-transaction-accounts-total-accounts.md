@@ -1,11 +1,11 @@
 ---
 title: Create a budget from transaction accounts and total accounts
 description: Learn about the process for creating budgets based on total accounts and how to turn on budget control for total accounts, if budget control is required.
-author: kfend
-ms.author: kfend
+author: twheeloc  
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/20/2017
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -24,7 +24,7 @@ Both budget plan and budget register entry documents allow for budgeting on main
 
 For the **Generate budget plan from General ledger** periodic process, on the **Source** tab, you can specify the **Total** main account type as a criterion. In this case, each total main account will be included in the target budget plan, and the amount will equal the total amount of the range of selected main accounts. 
 
-You can activate budget control for main accounts of the **Total** type. This functionality is supported through the use of budget groups. For each total main account, the budget that should be controlled for a budget group must be created on the **Budget control configuration **page. The criteria that you specify must include the total main account and the range of accounts. To speed up the process of creating budget groups, you can take advantage of the Budget control groups data entity. 
+You can activate budget control for main accounts of the **Total** type. This functionality is supported through the use of budget groups. For each total main account, the budget that should be controlled for a budget group must be created on the **Budget control configuration** page. The criteria that you specify must include the total main account and the range of accounts. To speed up the process of creating budget groups, you can take advantage of the Budget control groups data entity. 
 
 When a budget is used in reporting, such as on a financial statement, the budget sum for the total account consists of the following amounts:
 

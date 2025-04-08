@@ -5,7 +5,7 @@ author: panolte
 ms.author: kfend
 ms.topic: article
 ms.date: 04/26/2019
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30

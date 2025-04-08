@@ -3,21 +3,20 @@ title: What's new or changed in Dynamics 365 Finance 10.0.18 (May 2021)
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.18 preview release distributed in May 2021.
 author: kfend
 ms.author: kfend
-ms.topic: article
-ms.date: 03/05/2021
-ms.custom: 
+ms.topic: whats-new
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
 ms.reviewer: kfend 
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-02-25
-ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 
 # Preview features in Dynamics 365 Finance 10.0.18 (May 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.18. This version has a build number of 10.0.793 and is available as follows:
 

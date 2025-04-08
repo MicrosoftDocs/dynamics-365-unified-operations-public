@@ -37,7 +37,7 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 The following video provides an overview of ratings and reviews capabilities in Dynamics 365 Commerce.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3203014a-c3b2-4e4c-ad2c-032eb266d45d]
 
 ## Additional resources
 

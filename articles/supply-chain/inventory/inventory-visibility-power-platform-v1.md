@@ -1,16 +1,12 @@
 ---
 title: Use the Inventory Visibility app UI version 1
-description: This article describes how to use the Inventory Visibility app when UI version 1 is active.
-author: yufeihuang
-ms.date: 09/15/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Learn how to use the Inventory Visibility app when UI version 1 is active with a step-by-step process for authenticating with the Inventory Visibility service.
+author: yufei-huang
 ms.author: yufeihuang
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.topic: article
+ms.date: 09/15/2022
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Use the Inventory Visibility app UI version 1
@@ -157,7 +153,7 @@ Use the **Onhand query** tab of the **Operational visibility** page to query rea
 Use the **Reservation posting** tab of the **Operational visibility** page to make soft reservations of inventory.
 
 > [!IMPORTANT]
-> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
+> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and submit a soft reservation.
 

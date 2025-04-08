@@ -18,9 +18,6 @@ ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 Use the following procedure to configure the properties of the approval process.
 
 To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.

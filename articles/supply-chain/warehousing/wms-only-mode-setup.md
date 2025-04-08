@@ -1,19 +1,17 @@
 ---
 title: Enable and configure Warehouse management only mode
-description: This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+description: Learn how to configure Warehouse management only mode by setting up source systems, master data, and business events with an outline on configuring source systems.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/27/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/10/2023
+ms.reviewer: kamaybac
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 
 # Enable and configure Warehouse management only mode
@@ -99,8 +97,8 @@ To enable warehouse workers to use the Warehouse Management mobile app to regist
 - *Inbound shipment order line receiving (and put away)*
 - *Inbound shipment order item receiving (and put away)*
 
-For more information, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
 ## Set up master data and business events
 
-To enable Supply Chain Management to exchange meaningful information with an external system, some master and reference data must be synced between the two systems. This data includes released products, item model groups, and countries/regions. You must also set up business events to manage the exchange of information between the two systems. For more information, see [Exchange data between systems](wms-only-mode-exchange-data.md).
+To enable Supply Chain Management to exchange meaningful information with an external system, some master and reference data must be synced between the two systems. This data includes released products, item model groups, and countries/regions. You must also set up business events to manage the exchange of information between the two systems. Learn more in [Exchange data between systems](wms-only-mode-exchange-data.md).

@@ -1,13 +1,13 @@
 ---
 title: Customer electronic invoices
-description: This article provides information about the management of customer electronic invoices for Italy.
+description: Learn about the management of customer electronic invoices for Italy, including prerequisites and an outline on setting up electronic invoices.
 author: AdamTrukawka
-ms.date: 02/28/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Italy
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/28/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ---
 
 # Customer electronic invoices

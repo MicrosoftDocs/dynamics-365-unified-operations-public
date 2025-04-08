@@ -3,9 +3,11 @@ title: Write best practice rules
 description: Learn how you can author best practice rules in C#, for both metadata and X++ code, including various code examples.
 author: pvillads
 ms.author: pvillads
-ms.topic: article
-ms.date: 11/03/2017
-ms.reviewer: josaw
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

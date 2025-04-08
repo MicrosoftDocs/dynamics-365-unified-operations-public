@@ -5,7 +5,7 @@ author: raanandm
 ms.author: raanandm
 ms.topic: article
 ms.date: 03/20/2024
-ms.reviewer: cwithfourplus
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2024-03-20

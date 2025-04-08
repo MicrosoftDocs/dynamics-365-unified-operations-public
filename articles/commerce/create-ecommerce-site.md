@@ -2,18 +2,15 @@
 title: Create an e-commerce site
 description: This article describes the steps and information required to create a new e-commerce site in Dynamics 365 Commerce site builder.
 author: bicyclingfool
-ms.date: 03/10/2022
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
-ms.search.form: 
+  - bap-template
 ---
 
 # Create an e-commerce site

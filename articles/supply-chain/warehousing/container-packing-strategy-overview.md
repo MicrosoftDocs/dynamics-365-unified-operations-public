@@ -1,17 +1,13 @@
 ---
 title: Container packing strategies
-description: This article describes the differences between container packing strategies and provides examples.
+description: Learn about the differences between container packing strategies and provides examples with an example of the flow for container packing strategies.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.author: mirzaab
 ms.topic: article
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench
-audience: Application User
+ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.collection: get-started
-ms.search.region: Global
-ms.author: mirzaab
-ms.search.validFrom: 2021-06-11
-ms.dyn365.ops.version: 10.0.19
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench
 ---
 
 # Container packing strategies
@@ -360,6 +356,6 @@ The following procedure lets you verify the shipments that have been created. Us
 1. On the Action Pane, on the **Transportation** tab, select **View containers**.
 1. Confirm that the items from the sales orders were containerized into two different containers.
 
-## Additional resources
+## Related information
 
 - [Containerization](wave-containerization.md)

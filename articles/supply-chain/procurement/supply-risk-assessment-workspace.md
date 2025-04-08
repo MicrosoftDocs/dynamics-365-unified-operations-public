@@ -1,15 +1,13 @@
 ---
 title: Actionable workspace for discovering and handling supplier risks
-description: This article describes the Supply Risk Assessment workspace, which provides a direct view of top key insights that are related to supplier performance and related risks. It also provides embedded reports for detailed performance and risk analysis.
+description: Learn aboutthe Supply Risk Assessment workspace, which provides a direct view of top key insights that are related to supplier performance and related risks.
 author: cabeln
 ms.author: cabeln
+ms.topic: how-to
+ms.date: 05/22/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: 
-ms.topic: how-to
-ms.date: 10/27/2022 
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
 ---
 
 # Actionable workspace for discovering and handling supplier risks
@@ -60,7 +58,7 @@ Each tile shows the number of items that were ordered and the number of items th
 
 ![Vendors not OTIF tab on the Details and impact FastTab.](media/sra-details-impact.png "Vendors not OTIF tab on the Details and impact FastTab")
 
-Select a tile to view the list of order lines that have been counted by that tile.
+Select a tile to view the list of order lines that were counted by that tile.
 
 ### Links FastTab
 

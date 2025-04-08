@@ -1,8 +1,8 @@
 ---
 title: SPED fiscal 2020 - Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
 description: Learn how to use the complement and compensation of ICMS-ST for the 2020 calendar year, including a process for the Responsible for withholding the ICMS-ST field.
-author: gionoder
-ms.author: johnmichalak
+author: ankviklis
+ms.author: ankviklis
 ms.topic: article
 ms.date: 12/09/2019
 ms.custom: 

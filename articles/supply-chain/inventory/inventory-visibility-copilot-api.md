@@ -1,25 +1,22 @@
 ---
 title: Inquire into inventory with Copilot (preview)
-description: The inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function. The functionality is available both from inside the Inventory Visibility app and through APIs (which developers can code against to create an interactive inventory chatbot for their own applications and web sites).
-author: Weijiesa
-ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form:
+description: Learn how the inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
-ms.date: 11/07/2023
-audience: Application User
-ms.search.region: Global
+ms.date: 11/11/2024
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+ms.search.form:
 ---
 
 
 # Inquire into inventory with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The inventory visibility service interacts with Copilot in Dynamics 365 Supply Chain Management to provide a natural-language inventory search feature. It lets users ask questions about inventory and receive answers in real time. The functionality is available both from inside the Inventory Visibility app and through APIs (which developers can code against to create an interactive inventory chatbot for their own applications and web sites). By using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
@@ -41,7 +38,7 @@ And Copilot could respond with the following answer:
 >
 > This is AI-generated content. AI-generated content can contain mistakes – please review.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -114,6 +111,6 @@ The following example shows sample body content.
 
 You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
 
-## See also
+## Related information
 
 - [Responsible AI FAQ for Inquire into inventory with Copilot (preview)](../faq-inventory-query.md)

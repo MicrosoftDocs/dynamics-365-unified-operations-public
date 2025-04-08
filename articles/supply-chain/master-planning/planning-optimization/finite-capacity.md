@@ -1,16 +1,12 @@
 ---
 title: Finite capacity planning and scheduling
-description: Finite capacity planning and scheduling helps you understand how much work can be produced during a specific period when limitations on different resources are taken into consideration.
+description: Finite capacity planning and scheduling helps you understand how much work can be produced during a specific period when limitations are taken into consideration.
 author: t-benebo
-ms.date: 09/19/2022
-ms.topic: article
-ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2022-09-19
-ms.dyn365.ops.version: 10.0.29
+ms.topic: article
+ms.date: 09/19/2022
+ms.reviewer: kamaybac
+ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
 ---
 
 # Finite capacity planning and scheduling

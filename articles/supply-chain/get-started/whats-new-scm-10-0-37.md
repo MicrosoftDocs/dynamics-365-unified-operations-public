@@ -1,17 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.37. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.37 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
 ms.date: 04/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)
@@ -48,16 +46,16 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Cost management | Cleanup redundant data from price calculation | Lets you remove redundant data from price calculation procedures. This includes data that may have been generated from incomplete, terminated, or cancelled jobs when running calculations from costing versions. |
-| Inventory and warehouse management | Reset the inventory journal workflow which status is unrecoverable | Lets you change the status of an inventory journal workflow from *Unrecoverable* to *Cancelled*, which then allows you to edit the workflow as needed. This feature is turned on by default. |
+| Inventory and warehouse management | Reset the inventory journal workflow which status is unrecoverable. | Lets you change the status of an inventory journal workflow from *Unrecoverable* to *Cancelled*, which then allows you to edit the workflow as needed. This feature is turned on by default. |
 | Production control | Leverage production order defaults in manufacturing execution system integration | Enables the configuration set up on the **Production order defaults** page to apply when [integrating with external manufacturing execution systems (MES)](../production-control/mes-integration.md). |
 | Sales and marketing | (Preview) Pricing management - Allow applying adjustments to standard trade agreements | Allows sales managers to choose whether or not to apply adjustments to standard trade agreements. |
 | Sales and marketing | (Preview) Skip Completion for pricing management enhanced orders | When this feature is enabled, you no longer need to select **Complete** to proceed with a a sales order that uses Pricing management features. However, you still need to select **Recalculate** to update outdated sales line prices. Funds aren't supported for sales orders where the user opted to skip order completion. |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps (November 2023)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. Learn more in [Platform updates for version 10.0.37 of finance and operations apps (November 2023)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md).
 
 ### Bug fixes
 

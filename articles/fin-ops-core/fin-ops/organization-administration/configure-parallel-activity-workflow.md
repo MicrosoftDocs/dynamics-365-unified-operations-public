@@ -18,9 +18,6 @@ ms.assetid: 6d0656df-b5af-4001-96e6-6f0fcc44d022
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 To configure a parallel activity, complete the following procedures in the workflow editor.
 
 A parallel activity consists of workflow branches that run at the same time.

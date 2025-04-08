@@ -2,16 +2,15 @@
 title: Work with style presets
 description: This article describes how to work with site style presets in Microsoft Dynamics 365 Commerce site builder.
 author: phinneyridge
-ms.date: 05/28/2020
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Work with style presets

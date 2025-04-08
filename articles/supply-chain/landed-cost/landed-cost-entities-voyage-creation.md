@@ -1,16 +1,14 @@
 ---
 title: Voyage creation entities
-description: This article provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
-author: yufeihuang
-ms.date: 05/27/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
+description: Learn about voyage creation data entities, which group the data entities that are required to create a working voyage with a table providing mappings for names.
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yufeihuang
-ms.search.validFrom: 2022-05-27
-ms.dyn365.ops.version: 10.0.28
+ms.search.form:
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Voyage creation entities
@@ -74,7 +72,7 @@ The value that is passed to the data entity as the **Voyage ID** (`ShipId`) valu
 - If manual entry is enabled, a new record is created that uses the passed value.
 - If manual entry isn't enabled, the next number in the assigned number sequence is used instead of the passed value.
 
-During the import session, the placeholder value that is imported as the voyage ID is retained. This behavior ensures that shipping container and voyage lines that reference the placeholder are included in the voyage, and that they are updated to reflect the value that is assigned from the number sequence.
+During the import session, the placeholder value that is imported as the voyage ID is retained. This behavior ensures that shipping container and voyage lines that reference the placeholder are included in the voyage, and that they're updated to reflect the value that is assigned from the number sequence.
 
 ### Automatic cost transactions
 
@@ -202,7 +200,7 @@ The value that is passed to the data entity as the **Folio ID** (`FolioId`) valu
 - If manual entry is enabled, a new record is created that uses the passed value.
 - If manual entry isn't enabled, the next number in the assigned number sequence is used instead of the passed value.
 
-During the import session, the placeholder value that is imported as the folio ID is retained. This behavior ensures that voyage lines that reference the placeholder are correctly associated, and that they are updated to reflect the value that is assigned from the number sequence.
+During the import session, the placeholder value that is imported as the folio ID is retained. This behavior ensures that voyage lines that reference the placeholder are correctly associated, and that they're updated to reflect the value that is assigned from the number sequence.
 
 ### Field validations
 

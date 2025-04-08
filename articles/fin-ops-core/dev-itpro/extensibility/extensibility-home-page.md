@@ -5,7 +5,7 @@ author: FrankDahl
 ms.author: fdahl
 ms.topic: conceptual
 ms.date: 05/14/2019
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
 ms.search.region: Global

@@ -1,15 +1,13 @@
 ---
 title: Run planning for a subset of items
-description: This article explains how to run planning for a subset of items by using plan filters and runtime filters. 
+description: Learn how to run planning for a subset of items by using plan filters and runtime filters, including an outline and process on applying a filter plan. 
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace, ReqPlanSched
 ms.topic: how-to
 ms.date: 01/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace, ReqPlanSched
 ---
 
 # Run planning for a subset of items

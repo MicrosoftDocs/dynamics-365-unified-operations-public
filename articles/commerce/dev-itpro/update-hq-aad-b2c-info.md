@@ -2,14 +2,15 @@
 title: Update Commerce headquarters with the new Microsoft Entra B2C information
 description: This article describes how to update Microsoft Dynamics 365 Commerce headquarters with new Microsoft Entra business-to-consumer (B2C) information.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Update Commerce headquarters with the new Microsoft Entra B2C information

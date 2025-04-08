@@ -5,7 +5,7 @@ author: joshsantana
 ms.author: joshsantana
 ms.topic: article
 ms.date: 04/14/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-11-19

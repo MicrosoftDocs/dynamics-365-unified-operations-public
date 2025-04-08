@@ -4,7 +4,7 @@ description: Learn about how to reconcile a bank account, including a step-by-st
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 03/16/2024
+ms.date: 10/10/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -28,7 +28,7 @@ You can't reconcile a bank statement with a bank account if any of the checks or
 
 3. Select **Transactions** to open the **Account reconciliation** page.
 
-4. For each transaction that is included on the bank statement, select the **Cleared** checkbox if the amount in Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
+4. For each transaction that is included on the bank statement, select the **Cleared** checkbox if the amount in Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports. 
     
 
 >[!NOTE]
@@ -37,6 +37,7 @@ You can't reconcile a bank statement with a bank account if any of the checks or
 
 
 To select the **Cleared** checkbox for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
+If all transactions in the list can be cleared, select **Mark all as cleared**.
 
 5.  If the amount for a bank account transaction doesn't correspond to the amount for the transaction on the bank statement, enter the amount of the correction in the **Correction amount** field.
     

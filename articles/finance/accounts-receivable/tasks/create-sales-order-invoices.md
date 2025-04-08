@@ -1,8 +1,8 @@
 --- 
 title: Create sales order invoices
 description: Learn about how to invoice a sales order, including merging invoices and batch processing. A step-by-step process for creating invoices from sales orders is provided.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: how-to
 ms.date: 03/25/2023
 ms.custom:

@@ -5,7 +5,7 @@ author: moaamer
 ms.author: moaamer
 ms.topic: article
 ms.date: 03/18/2022
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -17,13 +17,13 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 # Adjust leases
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 The article explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change. Asset leasing complies with the guidance that Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16) provide about lease modifications. ASC 842-20-15-1 defines a lease modification as any change to the terms and conditions of a contract that causes a change in the scope of, or the consideration for, a lease. Paragraph 39 of IFRS 16 states that a lessee must revalue the lease liability so that it reflects changes to the lease payments.
 
 For organizations that adhere to ASC 842 or IFRS 16, a lease is remeasured to reflect a change in the present value of the future minimum lease payments (PVFMLP). If the PVFMLP increases, the journal entry that is created will be a debit to the right-of-use (ROU) asset account and a credit to the lease liability account for the difference between the new PVFMLP and the previous PVFMLP. If the PVFMLP decreases, the journal entry will be a debit to the lease liability account and a credit to the ROU asset account for the difference.
 
-If the adjustment decreases the ROU asset past 0 (zero), the remainder will be credited to the gain on lease modification posting account that is specified on the **Lease posting accounts** page. The system accounts for these transactions and other adjustment entries, such as classification changes, initial direct costs, lease incentives, prepayments, and dismantling costs that arise from lease modifications.
+If the adjustment decreases the ROU asset past 0 (zero), the remainder is credited to the gain on lease modification posting account that is specified on the **Lease posting accounts** page. The system accounts for these transactions and other adjustment entries, such as classification changes, initial direct costs, lease incentives, prepayments, and dismantling costs that arise from lease modifications.
 
 For specific guidance about lease adjustment transactions, we recommend that you see IFRS 16 and ASC 842.
 
@@ -59,16 +59,16 @@ To open the **Lease adjustment** wizard from the **Lease adjustments** page, for
 9.	Select **Submit to workflow** to submit the lease adjustment to the workflow system if the lease adjustment workflow is active and the adjustment hasn't yet been approved. For more information about how to use the lease adjustment workflow, see [Use lease adjustments workflows](use-create-lease-wrkflw.md).
 
     > [!NOTE]
-    > At this point, the system recalculates the adjustment variables to verify that no transactions have been posted against the lease since the adjustment overview and adjustment journal entry were first calculated. If any values change, the adjustment overview grid is updated, and you can review the information before you resubmit the lease adjustments to the workflow system.
+    > At this point, the adjustment variables are recalculated to verify that no transactions have been posted against the lease since the adjustment overview and adjustment journal entry were first calculated. If any values change, the adjustment overview grid is updated, and you can review the information before you resubmit the lease adjustments to the workflow system.
 
 10.	If a workflow isn't active, or if the lease adjustment has been approved, select **Finish** to process the changes and post the adjustment journal entry.
 
     > [!NOTE] 
-    > At this point, the system recalculates the adjustment variables to verify that no transactions have been posted against the lease since the adjustment overview and adjustment journal entry were first calculated. If any values change, the adjustment overview grid is updated, and you can review the changes before you select **Finish**. If the workflow is active and the lease adjustment has been approved, any changes to the adjustment overview will cause the approval status to be set back to **Not submitted**. In this case, you should resubmit the lease adjustment to the workflow system.
+    > At this point, the adjustment variables are recalculated to verify that no transactions have been posted against the lease since the adjustment overview and adjustment journal entry were first calculated. If any values change, the adjustment overview grid is updated, and you can review the changes before you select **Finish**. If the workflow is active and the lease adjustment has been approved, any changes to the adjustment overview causes the approval status to be set back to **Not submitted**. In this case, you should resubmit the lease adjustment to the workflow system.
 
     On the **Lease adjustments** page, the adjustment status is now set to **Completed**.
 
-    On the **Lease adjustments** page, you can still view the **Adjustment overview** and **Adjustment entry preview** FastTabs. The lease details and date information are shown in the version history of that lease.
+    On the **Lease adjustments** page, you can view the **Adjustment overview** and **Adjustment entry preview** FastTabs. The lease details and date information are shown in the version history of that lease.
 
     A new lease version and a new set of schedules are now created by using the modified information. 
 
@@ -111,7 +111,7 @@ This section explains how to use the lease adjustment workflow. The lease adjust
 9.	Select the lease ID of the lease adjustment, and then select **Adjustment wizard**.
 10.	Select **Next** until you reach the last page of the wizard, and then select **Finish**.
 
-The system recalculates the carrying values of the lease to ensure that the adjustment variables that were approved are current. If there are any changes, the approval status is set back to **Draft**, and you should resubmit the lease adjustment to the workflow system.
+The carrying values of the lease are recalculated to ensure that the adjustment variables that were approved are current. If there are any changes, the approval status is set to **Draft**, and you should resubmit the lease adjustment to the workflow system.
 
 ## View lease versions
 

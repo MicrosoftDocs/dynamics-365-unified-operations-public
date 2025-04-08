@@ -3,14 +3,15 @@ title: Configure the Warehousing app for on-premises deployments
 description: Learn about the prerequisites for the warehousing app for on-premises deployments, including an overview of certification.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 04/05/2022
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global 
 ms.search.validFrom: 2017-12-04
-ms.search.form: 
 ms.dyn365.ops.version: 7.3
+ms.service: dynamics-365-op
 ---
 
 # Configure the Warehousing app for on-premises deployments

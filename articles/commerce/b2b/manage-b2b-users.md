@@ -1,17 +1,16 @@
 ---
 title: Manage business partner users on B2B e-commerce websites
 description: This article describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
-author: josaw1
+author: BrianShook
 ms.date: 11/02/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.14
-ms.search.industry: retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Manage business partner users on B2B e-commerce websites
@@ -112,7 +111,7 @@ To onboard business partners and users in Commerce headquarters, follow these st
 1. Select the **Admin** role for the customer that should be designated as the administrator.
 1. Repeat this process to add more customers to the hierarchy.
 
-## Additional information
+## Related information
 
 - All the jobs that are mentioned in this article can be configured to run on a schedule in a batch format. The expectation is that business partners will configure batch jobs as required.
 - Currently, only one user/customer record can be designated as an administrator user, and that role can be changed only in Commerce headquarters. There is no support for self-service capabilities that let business partners to designate multiple administrators or change administrators from B2B e-commerce websites.

@@ -1,11 +1,11 @@
 ---
 title: Letters of guarantee
 description: Learn about letters of guarantee, in which a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.date: 10/24/2022
-ms.reviewer: kfend
+ms.date: 05/24/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

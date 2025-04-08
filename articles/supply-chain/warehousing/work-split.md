@@ -1,25 +1,13 @@
 ---
-# required metadata
-
 title: Work split
-description: This article provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
+description: Learn about work split functionality. This functionality lets you split large work orders into several work orders that you can then assign to multiple workers.
 author: Mirzaab
-ms.date: 10/15/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
-ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: 10.0.8
+ms.topic: article
+ms.date: 10/15/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Work split
@@ -58,9 +46,9 @@ The *Work split* feature adds the following two buttons to the **Work** tab on t
 > - The work is associated with a cluster.
 > - The work order type is something other than one of the following types:
 >
->    - Sales orders
->    - Raw material picking
->    - Transfer issue
+>     - Sales orders
+>     - Raw material picking
+>     - Transfer issue
 >
 > - The work is currently being split by another user. If you try to open the splitting page for work that is already being split by another user, you receive the following error message: "The work with ID \#\#\#\# is currently being split. Retry in a few minutes. If you continue to receive this message, contact a supervisor."
 
@@ -149,6 +137,5 @@ If you try to use the Warehouse Management mobile app to run picking work agains
 ## Other blocked operations
 
 Any operations that modify work lines, work inventory transactions, or replenishment links that are related to work that is being split will fail, and the following error message will be shown: "The work with ID \#\#\#\# is currently being split."
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

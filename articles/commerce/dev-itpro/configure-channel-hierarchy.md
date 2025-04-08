@@ -2,17 +2,15 @@
 title: Configure a channel to use a channel navigation hierarchy
 description: This article describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/01/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom:
-ms.assetid:
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure a channel to use a channel navigation hierarchy

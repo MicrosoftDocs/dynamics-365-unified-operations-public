@@ -4,12 +4,12 @@ description: Learn about how you can use Fiscal books and the electronic message
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 08/09/2023
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
-ms.search.form: 
 ms.dyn365.ops.version: 8.1
 ---
 

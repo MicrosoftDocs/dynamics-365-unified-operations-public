@@ -4,7 +4,7 @@
 title: Payroll employee
 description: This article provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
 author: jcart
-ms.date: 08/25/2021
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: ajitchandran
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---

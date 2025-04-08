@@ -1,15 +1,13 @@
 ---
 title: Set up master plans for the deprecated planning engine
-description: This article describes various important strategies and parameters that are used to set up master plans when you are using the deprecated planning engine.
+description: Learn about various important strategies and parameters that are used to set up master plans when you are using the deprecated planning engine.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace
 ms.topic: conceptual
 ms.date: 01/05/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
 ---
 
 # Set up master plans for the deprecated planning engine
@@ -103,7 +101,7 @@ The net change minimized planning method generates planned orders to cover only 
 
 Other aspects of setting up master plans (including Scheduling methods, time fences, positive days, and negative days) work the same way when using the deprecated planning engine as they do when using Planning Optimization. For more information about these topics, see [Master plans overview](master-plans.md).
 
-## Additional resources
+## Related information
 
 - [Coverage settings](coverage-settings.md)
 - [Separating tactical and operative planning for master scheduling](https://community.dynamics.com/ax/b/dynamicsaxmanufacturingrdteamblog/posts/separating-tactical-and-operative-planning-for-master-scheduling)

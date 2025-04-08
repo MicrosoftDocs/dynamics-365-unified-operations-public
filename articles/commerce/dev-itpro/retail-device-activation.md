@@ -2,16 +2,16 @@
 title: Point of sale (POS) device activation
 description: This article explains how to use guided device activation for Store Commerce for web and the Store Commerce app for Windows, Android, and iOS in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/03/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
 ms.search.form: RetailSharedParameters, RetailDevice
+ms.custom: 
+  - bap-template
 ---
 
 # Point of sale (POS) device activation

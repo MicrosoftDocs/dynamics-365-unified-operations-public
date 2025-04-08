@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Comparison of ETW and EventLog logger functionality
 description: This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger and the EventLog logger in Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 01/30/2023
-ms.topic: article
+ms.date: 09/18/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.search.region: global
-ms.author: stuharg
-ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: asharchw
+ms.reviewer: v-chrgriffin
 ms.search.validFrom: 2022-12-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Comparison of ETW and EventLog logger functionality
@@ -66,23 +65,17 @@ Because the ETW logger has limited support for structured logging, all new event
 | LogInformation                 | GenericStructuredLoggingInformation | 65003    |
 | LogDebug                       | GenericStructuredLoggingDebug       | 65004    |
 
-Because of manifest limitations, only generic properties and the most frequently used properties are logged as separate event data entries. The remaining properties are logged as aggregated JavaScript Object Notation (JSON) objects, as shown in the following example illustration.
-
-![ETW new logs structure.](media\ETWNewLogsStructure.png)
+Because of manifest limitations, only generic properties and the most frequently used properties are logged as separate event data entries. The remaining properties are logged as aggregated JavaScript Object Notation (JSON) objects.
 
 ### EventLog
 
 #### Legacy events
 
-For the EventLog logger, legacy Event Viewer events are logged in legacy format for backward compatibility. For example, only a formatted message is logged, as shown in the following example illustration.
-
-![EventLog legacy logs structure.](media\EventLogLegacyLogsStructure.png)
+For the EventLog logger, legacy Event Viewer events are logged in legacy format for backward compatibility. For example, only a formatted message is logged.
 
 #### New events
 
-For the EventLog logger, new Event Viewer events are logged in structured format to provide more information, and to enable precise filtering and querying. For example, both the formatted message and all properties from state and scope are logged as separate event data entries, as shown in the following example illustration.
-
-![EventLog new logs structure.](media\EventLogNewLogsStructure.png)
+For the EventLog logger, new Event Viewer events are logged in structured format to provide more information, and to enable precise filtering and querying. For example, both the formatted message and all properties from state and scope are logged as separate event data entries.
 
 ## Query and filter structured events
 
@@ -110,7 +103,7 @@ Event Viewer enables a subset of XPath queries to be used for filtering. You can
 
 To search for specific events by using the ETW logger, you can query by event name via XPath, as shown in the following example illustration and XML code block.
 
-![ETW filtering by event name.](\media\ETWFilterByEventName.png)
+![ETW filtering by event name.](media\ETWFilterByEventName.png)
 
 ````xml
 <QueryList>

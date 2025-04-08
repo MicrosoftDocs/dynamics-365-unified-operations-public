@@ -4,7 +4,7 @@ description: Learn how to import Globalization features from the Dataverse repos
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/29/2024
+ms.date: 01/10/2025
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Application User
@@ -22,6 +22,20 @@ The Dataverse repository contains Electronic invoicing features that are shared 
 
 To start to work with Electronic invoicing features that are shared with your configuration provider, import them into your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment from the Dataverse repository. Then review the feature details, such as the Electronic reporting (ER) configurations and processing pipelines.
 
+## Set up integration with Dataverse
+
+To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment. For more information, see the following articles:
+
+- [Enable Power Platform Integration](../../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
+- [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
+- [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md)
+
+You should also add a security role to access tables in Dataverse by following these steps:
+
+1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
+2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles).
+
 ## Import a feature from the Dataverse repository
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
@@ -31,7 +45,16 @@ To start to work with Electronic invoicing features that are shared with your co
 
 To view the imported Electronic invoicing feature, make sure that the correct configuration provider is selected. By default, features that the active configuration provider created are filtered out. You can adjust the filter to view features that were created by other configuration providers, such as Microsoft.
 
+> [!NOTE]
+> It may take up to two weeks for a new Electronic invoicing feature released by Microsoft or a new version of a feature released by Microsoft to appear in the Dataverse repository. If the feature update is expected but does not appear in the Dataverse repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center (PPAC) portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in PPAC.
+
 You can now work with the imported feature. You can review its details and create a new feature by using the imported feature as a template.
 
 > [!NOTE]
 > You can modify a feature only if it was created by the configuration provider that's currently active. You can create a new feature by using the original feature as a base. You can then make the required changes or set up the parameters.
+
+## Additional information
+
+- [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

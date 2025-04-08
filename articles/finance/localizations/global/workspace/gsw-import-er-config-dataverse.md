@@ -1,10 +1,10 @@
 ---
 title: Import Electronic reporting (ER) configurations from Dataverse
 description: Learn how to import Electronic reporting (ER) configurations from Microsoft Dataverse, including an overview on importing the Globalization solution.
-author: filatovm
-ms.author: filatovm
+author: EvgenyPopovMBS
+ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 01/29/2023
+ms.date: 03/13/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -19,15 +19,25 @@ ms.reviewer: johnmichalak
 
 This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse.
 
-## Set up integration with Dataverse and import the Globalization solution
+## Set up integration with Dataverse
 
-To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
+To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment. For more information, see the following articles:
+
+- [Enable Power Platform Integration](../../../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
+- [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
+- [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md)
+
+You should also add a security role to access tables in Dataverse by following these steps:
 
 1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
 2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
-3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles). 
+3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles).
 
-You can now import the Globalization solution by following these steps.
+## Import the Globalization solution
+
+This functionality uses the [Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview).
+
+You can import the Globalization solution by following these steps.
 
 1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on AppSource.
 1. Select **Get it now**.
@@ -37,6 +47,9 @@ You can now import the Globalization solution by following these steps.
 ## Import configurations from Dataverse
 
 A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Dataverse enables. Therefore, you can import single and filtered configurations.
+
+> [!NOTE]
+> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39, however, it may be disabled in your environment.
 
 ### Open the Dataverse configuration repository
 
@@ -65,6 +78,9 @@ To open the Dataverse configuration repository, follow these steps.
 1. Select **Open** to view the list of ER configurations for the selected repository.
 
 ## Import a single configuration
+
+> [!NOTE]
+> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER configuration released by Microsoft to appear in the Dataverse configuration repository. If the configuration update is expected but does not appear in the Dataverse configuration repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center (PPAC) portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in PPAC.
 
 To import a single configuration, follow these steps.
 
@@ -97,6 +113,6 @@ To import filtered configurations, follow these steps.
 ## Related resources
 
 - [Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
-- [Globalization feature components](../e-invoicing-working-globalization-features.md)
+- [Globalization feature components](../gs-e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

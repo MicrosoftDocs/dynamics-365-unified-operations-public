@@ -5,7 +5,7 @@ author: nedb
 ms.author: nedb
 ms.topic: article
 ms.date: 06/15/2020
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-01-01

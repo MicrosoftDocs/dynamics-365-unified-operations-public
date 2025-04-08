@@ -3,13 +3,14 @@ title: Optimize inventory data
 description: This article describes how to configure batch jobs to optimize channel-side calculation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
 ms.date: 01/30/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: hhaines
-ms.search.validFrom: 2020-02-11
-
+ms.author: yufeihuang
+ms.search.validFrom: 2019-02-11
+ms.custom: 
+  - bap-template
 ---
 # Optimize inventory data
 

@@ -32,10 +32,6 @@ ms.dyn365.ops.version: Human Resources
 Customer migration is a "lift-and-shift migration" (movement) of a customer database to the finance and operations infrastructure. Automated migration tooling is used for it. The result is a new finance and operations environment that uses the customer's Human Resources database.
 
 
-#### Human Resources migration office hours
- 
-As has been announced, the infrastructure for the standalone Human Resources application is scheduled to be discontinued after December 31, 2023. Customers might have questions about Human Resources migration. We invite you to office hours to discuss any questions. If you're interested in joining office hours, email <dyn365hrmigration@microsoft.com>.
-
 #### Human Resources migration TechTalk
  
 To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
@@ -71,7 +67,7 @@ The first step is to create a new finance and operations Implementation project 
 
 To create a new project, follow these steps.
 
-1. Sign in to Lifecycle Services as the global administrator or the designated service account user.
+1. Sign in to Lifecycle Services as the designated service account user.
 2. On the Lifecycle Services home page, select **Create/new (+)**.
 3. Select finance and operations apps as the product.
 4. In the **Project purpose** field, select **Implementation**.
@@ -108,7 +104,7 @@ After a new Lifecycle Services project has been created, and the project onboard
 
 #### Migrate the sandbox environment
 
-1. Sign in to Lifecycle Services as the global administrator or the designated service account user.
+1. Sign in to Lifecycle Services as the designated service account user.
 
     > [!NOTE]
     > We recommend that you use a named user account. The signed-in user should have the **Project owner** or **Environment manager** security role in the standalone Human Resources Lifecycle Services project.
@@ -166,7 +162,7 @@ After you've finished migrating and validating a sandbox environment, follow the
 
 #### Migrate the production environment
 
-1. Sign in to Lifecycle Services as the global administrator or the designated service account user.
+1. Sign in to Lifecycle Services as the designated service account user.
 
     > [!NOTE]
     > We recommend that you use a named user account. The signed-in user should have the **Project owner** or **Environment manager** security role in the Lifecycle Services project.

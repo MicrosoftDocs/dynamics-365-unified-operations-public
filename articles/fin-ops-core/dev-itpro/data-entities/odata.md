@@ -1,11 +1,11 @@
 ---
 title: Open Data Protocol (OData)
 description: Learn about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views, including a table that provides webpages for various topics.
-author: sericks007
-ms.author: sericks
+author: sumadhey
+ms.author: sumadhey
 ms.topic: article
-ms.date: 06/19/2020
-ms.reviewer: johnmichalak
+ms.date: 11/01/2024
+ms.reviewer: twheeloc
 audience: Developer
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global

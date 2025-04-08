@@ -1,25 +1,13 @@
 --- 
-# required metadata 
- 
 title: Quality management item sampling
-description: This article describes how to set up item sampling.
-author: yufeihuang
+description: Learn how to set up item sampling and how it is used as part of a quality association, including an outline and step-by-step process for setting up item sampling.
+author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 03/23/2021
-ms.topic: how-to 
- 
-# optional metadata 
- 
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.form: InventItemSampling
-audience: Application User 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Quality management item sampling
@@ -37,7 +25,8 @@ Follow these steps to set up item sampling.
 1. In the **Item sampling** field, enter a value.
 1. In the **Description** field, enter a value.
 1. In the **Value** field, enter a number. This value is related to the quantity specification value that is selected in the adjacent field.
-1. In the **Process** section, select the **Full blocking** check box if the whole lot or order line quantity should be blocked if a test is failed. If this check box is cleared, only the items in the quality order will be blocked if a test is failed.
+1. On the **Process** FastTab, set **Full blocking** to *Yes* if the whole lot or order line quantity should be blocked if a test is failed. Set this option to *No* if only the items in the quality order should be blocked if a test is failed.
+1. On the **Process** FastTab, enable each dimension (such as **License plate** or **Batch number**) that should be populated automatically on the **Inventory dimensions** tab of a quality order.
 1. Select **Save**.
 1. Close the page.
 

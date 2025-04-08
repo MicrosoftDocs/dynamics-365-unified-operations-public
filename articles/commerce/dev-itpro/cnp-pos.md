@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Process credit cards without a hardware station
 description: This article describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
 author: BrianShook
 ms.date: 02/01/2023
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.topic: how-to
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
-ms.search.validFrom: 2020-08-31
-ms.dyn365.ops.version: AX 7.0.1
-
+ms.author: shajain
+ms.custom: 
+  - bap-template
 ---
 
 # Process credit cards without a hardware station

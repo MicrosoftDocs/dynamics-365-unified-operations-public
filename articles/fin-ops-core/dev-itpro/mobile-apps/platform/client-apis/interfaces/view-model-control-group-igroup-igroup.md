@@ -3,11 +3,12 @@ title: Group type
 description: Learn about the Group type, a group container control type that contains the container, generic, getDataSource, and hidden properties and various methods.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/24/2022
-ms.reviewer: josaw
-audience: Developer
+ms.topic: how-to
+ms.date: 12/31/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Group type

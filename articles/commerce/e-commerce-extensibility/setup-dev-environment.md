@@ -2,16 +2,15 @@
 title: Set up a development environment
 description: This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/21/2024
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Set up a development environment
 
@@ -140,7 +139,10 @@ To preview a specific module (for example, product-feature) in a local web brows
     
 ## Adding an SSL certificate
 
-The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment that works against localhost. You can find these files inside the **.ssl** folder under the root SDK folder.  Note that *yarn start* must be run at least once for these files to be generated.
+The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment that works against localhost. You can find these files inside the **.ssl** folder under the root SDK folder.  
+
+> [!NOTE]
+> The *yarn start* command must be run at least once for these files to be generated.
 
 To install a new certificate on a developer environment, replace the public key (cert.pem) and private key (key.pem) files with your own.
 

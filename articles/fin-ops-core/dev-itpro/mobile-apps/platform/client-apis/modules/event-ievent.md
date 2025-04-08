@@ -3,11 +3,12 @@ title: Event module
 description: Learn about the Event module, which includes the EventHook type, the IEventListener type alias, and various methods.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
-ms.date: 05/26/2022
-ms.reviewer: josaw
-audience: Developer
+ms.topic: how-to
+ms.date: 12/31/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Event module

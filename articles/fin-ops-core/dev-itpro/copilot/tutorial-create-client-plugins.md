@@ -6,7 +6,7 @@ ms.author: jaredha
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 4/26/2024
+ms.date: 06/12/2024
 audience: Developer
 ms.search.region: Global
 ms.custom: bap-template
@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-*Client plugins*, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. Developers can extend the Copilot chat capabilities in finance and operations apps by defining plugins that convert the functionality, operations, and business logic of the X++ code base into actions that users can invoke through natural language. For more information about client plugins and syntax, see [Create client plugins for Copilot in finance and operations apps](create-client-plugins.md).
+*Client plugins*, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. Developers can extend the Copilot chat capabilities in finance and operations apps by defining plugins that convert the functionality, operations, and business logic of the X++ code base into actions that users can invoke through natural language. For more information about client plugins and syntax, see [Create client plugins for Copilot in finance and operations apps](copilot-client-plugins.md).
 
 ## Scenario
 
@@ -50,7 +50,7 @@ In your unified developer environment, create an X++ class that defines the navi
     [DataContract]
     [SysCopilotChatGlobalAction]
     [SysCopilotChatActionDefinition(
-        identifierStr(MS.ServerForm.CopilotExample.ClientNavigate),
+        identifierStr(MS.PA.CopilotExample.ClientNavigate),
         'Navigate',
         'Navigates to or opens a defined form in the application client',
         menuItemActionStr(SysCopilotChatCustomNavigateAction), MenuItemType::Action)]
@@ -121,7 +121,7 @@ For this example, you create two topics in the **Copilot in Finance and Operatio
 
 4. Create an **Event activity** node that invokes the X++ class.
 
-    - In the **Name** field, enter **MS.ServerForm.CopilotExample.ClientNavigate**.
+    - In the **Name** field, enter **MS.PA.CopilotExample.ClientNavigate**.
     - In the **Value** field, enter the following Power Fx formula.
 
         ```powerapps-dot
@@ -138,7 +138,7 @@ The second topic receives the output parameters that are returned from the X++ c
 1. In the **Copilot in finance and operations** chatbot, create a topic.
 
     - Set the trigger type to **Event received**. For more information, see [Changing the trigger for a topic](/microsoft-copilot-studio/authoring-triggers#changing-the-trigger-for-a-topic).
-    - In the **On Event Activity properties** pane, set the **Event name** property to **MS.ServerForm.CopilotExample.ClientNavigate**.
+    - In the **On Event Activity properties** pane, set the **Event name** property to **MS.PA.CopilotExample.ClientNavigate**.
 
 2. In the new topic, create a **Parse value** node to parse the JavaScript Object Notation (JSON) string from the event payload.
 

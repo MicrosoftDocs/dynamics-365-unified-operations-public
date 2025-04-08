@@ -2,9 +2,9 @@
 title: Set up withholding tax
 description: Learn how to set up withholding tax on vendors that do not create sales tax transaction, including a step-by-step process.
 author: twheeloc
-ms.author: kfend
+ms.author: twheeloc
 ms.topic: how-to
-ms.date: 05/23/2023  
+ms.date: 05/23/2024  
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User  

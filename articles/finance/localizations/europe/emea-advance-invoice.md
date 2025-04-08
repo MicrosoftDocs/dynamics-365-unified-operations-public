@@ -1,8 +1,8 @@
 ---
 title: Advance invoices for Eastern Europe
 description: Learn about advance invoices for Eastern Europe, which are documents that you create for customers or vendors. It states the amount that must be prepaid.
-author: EvgenyPopovMBS
-ms.author: evgenypopov
+author: prabhatb
+ms.author: prabhatb
 ms.topic: article
 ms.date: 07/05/2022
 ms.reviewer: johnmichalak

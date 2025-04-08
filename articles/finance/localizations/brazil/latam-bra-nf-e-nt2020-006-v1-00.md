@@ -1,12 +1,13 @@
 ---
 title: NT2020.006 – Intermediary sales digital platform for NF-e
 description: Learn how to tag intermediary digital sales for NF-e, including a step-by-step outline on enabling the technical note in Dynamics 365 Finance.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 07/27/2021
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: 8

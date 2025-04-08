@@ -3,8 +3,10 @@ title: Tax reconciliation report for Iceland and Norway
 description: Learn how to set up and generate the Tax reconciliation report for legal entities that have a primary address in Iceland or Norway.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 07/11/2023
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Iceland, Norway

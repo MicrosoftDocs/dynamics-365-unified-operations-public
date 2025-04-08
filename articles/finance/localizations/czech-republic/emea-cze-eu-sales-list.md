@@ -3,8 +3,10 @@ title: EU Sales list for Czech Republic
 description: Learn about the European Union (EU) sales list report for Czech Republic including step-by-step processes on setting up address formats and sales tax authorities.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 06/09/2022
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: 

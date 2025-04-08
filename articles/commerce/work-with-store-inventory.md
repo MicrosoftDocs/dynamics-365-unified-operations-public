@@ -1,25 +1,24 @@
 ---
-# required metadata
-
 title: Store inventory management
-description: This article describes the types of documents that you can use to manage inventory.
+description: This article describes the types of documents that you can use to manage inventory in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 09/13/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.search.region: Global
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce inventory management
 
 [!include [banner](includes/banner.md)]
+
+This article describes the types of documents that you can use to manage inventory in Microsoft Dynamics 365 Commerce.
 
 When you work with inventory in Microsoft Dynamics 365 Commerce and use any of the Commerce applications that are connected to a Commerce Scale Unit (CSU), it's important to know that the order processing logic in CSU provides limited support for some inventory dimensions and some inventory item types. Commerce applications don't support the full range of item configuration capabilities that is available through the item configuration options in Dynamics 365 Supply Chain Management.
 

@@ -1,16 +1,12 @@
 ---
 title: Negative days and dynamic negative days
-description: This article provides information about negative days and dynamic negative days, and how you can use them to help your business.
+description: Learn about negative days and dynamic negative days, and how you can use them to help your business, including outlines on various scenarios.
 author: t-benebo
-ms.date: 05/25/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2019-06-07
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: article
+ms.date: 05/25/2021
+ms.reviewer: kamaybac
+ms.search.form: 
 ---
 
 <!-- KFM: Split this up. non-dynamic for deprecated MP, and "dynamic" for new standard PO. -->
@@ -237,7 +233,7 @@ MRP creates a planned order that is attached to the first sales order. Then, as 
 
 To help guarantee that the correct values are entered for your business, you must think in terms of both functionality and MRP running time. Therefore, it can take a little trial and error to determine the optimal values.
 
-## See also
+## Related information
 
 For more discussion, see the original [More about (dynamic) negative days](/archive/blogs/axmfg/more-about-dynamic-negative-days) blog post.
 

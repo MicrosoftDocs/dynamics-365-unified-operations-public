@@ -2,13 +2,15 @@
 title: Delay exact price and discount calculation for improved performance
 description: This article describes the delayed price calculation capability that is available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
 author: boycezhu
-ms.date: 09/09/2021
-ms.topic: article
+ms.date: 08/20/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: boycez
+ms.author: yanansong
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Delay exact price and discount calculation for improved performance
@@ -41,13 +43,7 @@ Now, when items are added to a transaction, multiline discounts aren't calculate
 
 To enable delayed price and discount calculation for call center, follow these steps.
 
-1. In Commerce headquarters, go to **Workspaces \> Feature management**.
-1. Enable the **Prevent unintentional price calculation for commerce order** feature. This feature is a prerequisite for the delayed price and discount calculation capability.
-
-    > [!NOTE]
-    > For new deployments, the **Prevent unintentional price calculation for commerce order** feature is enabled by default.
-
-1. Go to **Commerce parameters \> Prices and discounts**.
+1. In Commerce headquarters, go to **Commerce parameters \> Prices and discounts**.
 1. In the **Miscellaneous** section, enable the **Manually calculate multi-line prices and discounts** configuration.
 
 Now, when a sales order or sales quotation is created or edited in the call center, the exact price and discount calculation for it will be delayed. The pricing engine will consider only the sales line that is being added or edited, and will ignore all other sales lines. The net amount for an item includes the price calculation and simple discounts (discount percentage or amount off on an individual item). However, mix and match, threshold, and quantity discounts won't be applied. Call center users who want to view the exact price, including all discounts, can select one of three buttons: **Recalculate**, **Totals**, or **Complete**.

@@ -2,17 +2,15 @@
 title: Store selector module
 description: This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
-ms.topic: article
+ms.date: 03/28/2025
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2020-02-10
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Store selector module
@@ -35,13 +33,13 @@ The store selector module lets users enter a location (city, state, address, and
 
 For the store selector to display available stores, the fulfillment group must be set up in Commerce headquarters. For more information, see [Set up fulfillment groups](customer-orders-overview.md#set-up-fulfillment-groups).
 
-In addition, for each store in the fulfillment group, the latitude and longitude of the store location must be defined in headquarters.
+In addition, for each store in the fulfillment group, the latitude and longitude of the retail store must be defined in headquarters.
 
-To enter the latitude and longitude values for a store location in Commerce headquarters, follow these steps.
+To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps.
 
-1. Go to **Inventory management \> Setup \> Inventory breakdown**.
-1. Select the warehouse location in the left pane.
-1. On the **Addresses** FastTab, select **Advanced**.
+1. Go to **Organization administration \> Organizations  \> Operating unit**.
+1. Search by the operating unit number in the left pane.
+1. On the **Addresses** FastTab, select **More options -> Advanced**.
 
     ![Example of store details in headquarters.](./media/Store-address.png)
 
@@ -50,7 +48,8 @@ To enter the latitude and longitude values for a store location in Commerce head
 
     ![Example of latitude and longitude setup for a store in headquarters.](./media/Store-latitude-longitude.png)
 
-1. On the Action Pane, select **Save**. 
+1. On the Action Pane, select **Save**.
+1. Run the 1070 **Channel configuration** distribution schedule job.
 
 ### Hide a store from the store selector module
 
@@ -79,14 +78,14 @@ The store selector module supports a **Pick up in store** mode that shows a list
 
 The store selector module can be added to a buy box module on a PDP to show stores where a product is available for pickup. It can also be added to a cart module. In this case, the store selector module shows pickup options for each line item in the cart. The store selector module can also be added to other pages or modules via extensions and customizations.
 
-For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module won't be shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module isn't shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 The following image shows an example of a store selector module used on a PDP.
 
 ![Example of a store selector module used on a PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
-> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
+> In Commerce version 10.0.16 and later, a feature can be enabled that allows an organization to define multiple pickup modes of delivery options for customers. If this feature is enabled, the store selector module and other Commerce modules are enhanced to allow the shopper to choose from potentially multiple pickup delivery options if configured. To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
 
 ## Find stores mode
 

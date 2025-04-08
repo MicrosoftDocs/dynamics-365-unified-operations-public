@@ -1,42 +1,21 @@
 ---
-# required metadata
-
 title: Project attached to service agreement 
-description: You can attach service agreements to projects of every type except the Time project type.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how you can attach service agreements to projects of every type except the Time project type with an outline on registering service order transactions.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SMAParameters
 ---
 
-
-# Project attached to service agreement 
+# Project attached to service agreement
 
 [!include [banner](../includes/banner.md)]
 
-
 You can attach service agreements to projects of every type except the **Time project** type.
 
-You register and post all service order transactions through the project that you attach to the service agreement. You specify the journals in which these transactions are registered and posted on the **Journals** link in the **Service management parameters** form.
-
-  
-
-
-
+You register and post all service order transactions through the project that you attach to the service agreement. You specify the journals in which these transactions are registered and posted on the **Journals** link on the **Service management parameters** page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,15 +1,13 @@
 ---
 title: Monitor Warehouse Management usage and performance
-description: The Supply Chain Management tenant and the Warehouse Management mobile app emit telemetry data, which lets you monitor and analyze the activities and general health of your system. You can use the information to diagnose issues and analyze operations that affect performance.
+description: The Supply Chain Management tenant emit telemetry data, which lets you monitor and analyze the activities and general health of your system.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 09/14/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Monitor Warehouse Management usage and performance
@@ -39,7 +37,7 @@ In Application Insights, telemetry data from Supply Chain Management tenants and
 
 ## View telemetry data in Application Insights
 
-As an alternative to Power BI, you can view your telemetry data directly in Application Insights. Telemetry is stored in Azure Monitor Logs in the `customEvents` table. You can view the collected data by writing log queries in the Kusto Query Language (KQL). For more information, see [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs) and [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
+As an alternative to Power BI, you can view your telemetry data directly in Application Insights. Telemetry is stored in Azure Monitor Logs in the `customEvents` table. You can view the collected data by writing log queries in the Kusto Query Language (KQL). Learn more in [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs) and [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 
 As a simple example, follow these steps.
 

@@ -1,8 +1,8 @@
 --- 
 title: Create a main account
 description: Learn how to add a main account to an existing chart of accounts with a step-by-step process that uses the USMF demo company.
-author: aprilolson
-ms.author: aolson
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: how-to
 ms.date: 03/29/2023
 ms.custom:

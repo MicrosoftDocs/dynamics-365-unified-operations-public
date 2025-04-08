@@ -5,7 +5,7 @@ author: t-benebo
 ms.author: benebotg
 ms.topic: article
 ms.date: 10/09/2019
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2019-08-15

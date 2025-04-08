@@ -4,16 +4,13 @@ description: Learn about reports that are related to the record-to-report value 
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 05/20/2023
+ms.date: 05/20/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
 ---
 
 # Reports in Business performance analytics
-
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 This article describes the financial reports that are available out of the box in Business performance analytics. These reports were designed to provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. To better understand these reports, stakeholders can use the slicer, filter pane, and drill-in functions. The availability of these functions depends on the report. Slicers are filters that are available directly on the report page, whereas the filter pane must be opened before users can access the filters in it. When users hover over a table, the drill-in functionality is available in the upper right. Users must first select the direction that they want to drill in. They can then select a data point to reference where they want to drill from.
 

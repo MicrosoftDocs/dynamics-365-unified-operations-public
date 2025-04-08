@@ -6,7 +6,7 @@ ms.author: filatovm
 ms.topic: article
 ms.date: 05/31/2022
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

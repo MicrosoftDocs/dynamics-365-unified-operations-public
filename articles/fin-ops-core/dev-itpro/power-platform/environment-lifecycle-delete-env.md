@@ -4,8 +4,9 @@ description: Learn about how to delete environments when finance and operations 
 author: abunduc-ms
 ms.author: abunduc
 ms.topic: conceptual
-ms.date: 06/02/2023
-ms.custom: bap-template
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ---
 

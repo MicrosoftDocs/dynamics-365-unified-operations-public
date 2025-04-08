@@ -18,9 +18,6 @@ ms.assetid: 3237347e-71d5-4569-bc9a-0d0fc9410b78
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to configure a line-item workflow element.
 
 To configure a line-item workflow element, in the workflow editor, right-click the element, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the line-item workflow element.

@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Inventory aging report examples and logic
-description: This article presents some examples that show how to interpret the results of an Inventory aging report.
-author: JennySong-SH
-ms.date: 5/29/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
-# ROBOTS:
-audience: Application User
-# ms.devlang: 
+description: Learn about inventory aging reports and logic, including examples that show how to interpret the results of an Inventory aging report.
+author: prasungoel
+ms.author: prasungoel
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
+ms.topic: how-to
+ms.date: 12/02/2024
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2020-5-29
-ms.dyn365.ops.version: 
-
+  - bap-template
 ---
 
 # Inventory aging report examples and logic
@@ -54,14 +40,14 @@ For the example system, the inventory model for the released products is *FIFO*,
 
 The example system contains the following inventory transactions for a released product that has the item number *1000*.
 
-| Reference      | Site | Warehouse | Receipt   | Issue | Physical date | Financial date | Quantity | Cost amount | Physical cost amount |
-|----------------|------|-----------|-----------|-------|---------------|----------------|----------|-------------|----------------------|
-| Purchase order | 1    | 11        | Purchased |       | March 15      | March 15       | 10       | 1,000       | 1,000                |
-| Purchase order | 2    | 21        | Purchased |       | March 15      | March 15       | 10       | 2,000       | 2,000                |
-| Purchase order | 1    | 11        | Received  |       | April 15      |                | 5        |             | 375                  |
-| Transfer order | 1    | 11        |           | Sold  | May 2         | May 2          | -5       | -458.33     | -458.33              |
-| Transfer order | 1    | 12        | Purchased |       | May 2         | May 2          | 5        | 458.33      | 458.33               |
-| Sales order    | 1    | 12        |           | Sold  | May 3         | May 3          | -1       | -91.67      | -91.67               |
+| Reference | Site | Warehouse | Receipt | Issue | Physical date | Financial date | Quantity | Cost amount | Physical cost amount |
+|--|--|--|--|--|--|--|--|--|--|
+| Purchase order | 1 | 11 | Purchased |  | March 15 | March 15 | 10 | 1,000 | 1,000 |
+| Purchase order | 2 | 21 | Purchased |  | March 15 | March 15 | 10 | 2,000 | 2,000 |
+| Purchase order | 1 | 11 | Received |  | April 15 |  | 5 |  | 375 |
+| Transfer order | 1 | 11 |  | Sold | May 2 | May 2 | -5 | -458.33 | -458.33 |
+| Transfer order | 1 | 12 | Purchased |  | May 2 | May 2 | 5 | 458.33 | 458.33 |
+| Sales order | 1 | 12 |  | Sold | May 3 | May 3 | -1 | -91.67 | -91.67 |
 
 ## How quantities and amounts in each period bucket are calculated
 
@@ -364,6 +350,5 @@ The new report will resemble the following example.
 </tr>
 </tfoot>
 </table>
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

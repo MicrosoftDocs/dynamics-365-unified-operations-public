@@ -4,7 +4,7 @@ description: Learn about deferral schedules in revenue and expense deferrals, in
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/29/2024
+ms.date: 01/22/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -33,7 +33,7 @@ You can use the **All deferral schedules** or **Active deferral schedules** page
 6. In the list of lines, select any lines that you don't want to process, and then select **Remove**.
 7. Select whether you want to summarize the recognition journal entry.
 8. In the **Transaction date** section, you can override the transaction date with a specific date to process the transaction. The transaction date can be specified for closed periods.
-9. To do the processing as part of a batch, select **Batch**. In the **Batch processing** dialog box, set the parameters for the batch, and then select **OK** to return to the **Recognition processing** page. The revenue recognition will be processed later, when the batch is processed.
+9. To do the processing as part of a batch, select **Batch**. In the **Batch processing** dialog box, set the parameters for the batch, and then select **OK** to return to the **Recognition processing** page. The revenue recognition is processed later, when the batch is processed.
 10. Select **Process**. If you didn't add the transaction to a batch, all lines are immediately processed. Otherwise, the lines will be processed when the batch is processed.
 
 ## Modify a schedule
@@ -84,6 +84,9 @@ To put a deferral schedule on hold, follow these steps.
 2. On the **Place hold** page, select whether you want to transfer the balance from the deferral account or the hold account.
 3. If you selected to transfer the balance, select the journal name in the **Journal name** field, select the hold account in the **On hold account** field, and specify the transaction date in the **Transaction date** field.
 4. Select **OK**.
+
+>[!NOTE]
+> The **Deferral balance** report doesn't display the billing schedules that are currently on hold. To view the report, go to **Revenue and expense deferral** > **Inquiries and reports** > **Deferral balance**. 
 
 ## Remove a hold from a deferral schedule
 

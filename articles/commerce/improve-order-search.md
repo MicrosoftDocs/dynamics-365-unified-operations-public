@@ -2,14 +2,15 @@
 title: Improve the performance of Commerce order search
 description: This article explains how to help improve the performance of Commerce order search by enabling the use of intermediate order totals in Microsoft Dynamics 365 Commerce.
 author: ashishMSFT
-ms.date: 01/03/2022
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Improve the performance of Commerce order search

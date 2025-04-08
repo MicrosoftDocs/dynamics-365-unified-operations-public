@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Commerce Data Exchange implementation guidance
 description: This article provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
 ms.date: 02/01/2023
-ms.topic: article
-# optional metadata
-
+ms.topic: how-to
 ms.search.form: RetailTerminalTable, RetailDevice
-# ROBOTS:
 audience: IT Pro
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm:
-ms.custom:
-ms.assetid:
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: aneesa
 ms.search.validFrom: 2020-08-31
-ms.dyn365.ops.version: 10.0.12
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce Data Exchange implementation guidance

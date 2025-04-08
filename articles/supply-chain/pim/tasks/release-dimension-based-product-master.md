@@ -1,15 +1,13 @@
 ---
 title: Release a dimension-based product master
-description: This procedure shows how to release a product master, which will be used for the dimension-based configurations. 
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductListPage, EcoResProductRelease   
+description: Learn how to release a product master, which will be used for the dimension-based configurations, including a step-by-step process. 
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/10/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac 
+ms.search.form: EcoResProductListPage, EcoResProductRelease  
 ---
 
 # Release a dimension-based product master

@@ -1,10 +1,10 @@
 ---
 title: Synchronize agreement invoices in Field Service to free text invoices in Supply Chain Management
 description: Learn about the templates and underlying tasks that are used to synchronize agreement invoices in Dynamics 365 Field Service.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-ms.date: 04/10/2018
+ms.date: 06/10/2024
 ms.custom:
 ms.reviewer: kamaybac
 audience: IT Pro
@@ -91,11 +91,11 @@ The following illustrations show the template mapping in Data integration.
 
 ### Agreement invoices (Field Service to Supply Chain Management): Invoice headers
 
-[![Template mapping in Data integration for invoice headers.](../../../supply-chain/sales-marketing/media/FSFreeTextInvoice1.png)](/media/FSFreeTextInvoice1.png)
+![Template mapping in Data integration for invoice headers.](../../../supply-chain/sales-marketing/media/FSFreeTextInvoice1.png)
 
 ### Agreement invoices (Field Service to Supply Chain Management): Invoice lines
 
-[![Template mapping in Data integration for invoice lines.](../../../supply-chain/sales-marketing/media/FSFreeTextInvoice2.png)](/media/FSFreeTextInvoice2.png)
+![Template mapping in Data integration for invoice lines.](../../../supply-chain/sales-marketing/media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,16 +2,15 @@
 title: System requirements for a Dynamics 365 Commerce online extensibility development environment
 description: This article lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
 author: samjarawan
-ms.date: 08/18/2020
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # System requirements for a Dynamics 365 Commerce online extensibility development environment
 

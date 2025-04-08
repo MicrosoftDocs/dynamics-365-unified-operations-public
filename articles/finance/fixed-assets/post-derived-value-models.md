@@ -4,8 +4,8 @@ description: Learn how to use derived books, which include transactions that are
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: kfend
+ms.date: 08/12/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -26,7 +26,9 @@ When you post transactions for a book that contains derived books, the derived b
 -   Other values for the transaction type can also apply. For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.
 
 > [!WARNING]
-> Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process. 
+> Depreciation that is posted in the derived book is the same amount that was posted for the primary book. If the depreciation methods differ between the books, you should not use the derived process to generate depreciation transactions.
+
+In version 10.0.41, the **Consider split transaction in derived books posting** feature automates the process of splitting transactions from the main book to designated derived books based on asset book configurations. This feature ensures accurate recording across primary and secondary ledgers without manual input. It also helps maintain consistency. After the feature is enabled, split transactions are automatically posted according to the predefined settings in the asset book. Therefore, no manual intervention is required, derived books remain updated in real time.
 
 ## Example 
 The following information describes how to set up acquisition transactions with the derived book functionality.
@@ -41,7 +43,7 @@ The books then can be attached to specific fixed assets.
 
 When an acquisition is posted for a fixed asset with book VM 1, the acquisition is posted not only on VM 1, but also on the derived book VM 2. The status of both fixed asset books is updated to Open.
 
-> [!NOTE]                                                                                                         
+> [!NOTE]
 > If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.
 
 For more information, see [Derived books](derived-books.md).

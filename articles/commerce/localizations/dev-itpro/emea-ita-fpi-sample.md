@@ -2,13 +2,15 @@
 title: Fiscal printer integration sample for Italy
 description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2018-11-01
+ms.custom: 
+  - bap-template
 ---
 # Fiscal printer integration sample for Italy
 
@@ -17,7 +19,7 @@ ms.search.validFrom: 2018-11-01
 
 This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 
-The Commerce functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printers from Epson, and enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
+The Commerce functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](https://www.epson.eu/en_EU/support/sc/fp-90iii/s/s2276) printers from Epson, and enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from Epson. For information about how to get the fiscal printer and operate it, contact [Epson Italia S.p.A.](https://www.epson.it)
 

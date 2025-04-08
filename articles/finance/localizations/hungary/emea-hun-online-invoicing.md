@@ -1,16 +1,17 @@
 ---
 title: Online invoicing system
-description: This article describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
+description: Learn how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: AdamTrukawka
-ms.date: 09/20/2021
-ms.topic: article
-audience: Application User
+ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.region: Hungary
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 10.0.0
 ms.search.form: AssetParameters
+ms.dyn365.ops.version: 10.0.0
 ---
 
 # Online invoicing system
@@ -60,9 +61,6 @@ For more information about how to download ER configurations from the Microsoft 
 The format that is used to report invoice data to the Hungarian Online Invoicing System requires specific values from enumerated lists for some elements (for example, units of measure or line expression indicators). For these elements, before you start to use RTIR, you must set up application-specific parameters that the **RTIR Invoice Data (HU)** format will use.
 
 When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
-
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### Line expression indicator
 
@@ -581,7 +579,7 @@ For more information, see [Archive printed customer invoices with hash numbers](
 
 After you've finished, any posted and printed invoices for the specified customers will have an attachment where the **Type** field is set to **File** and the **Restriction** field is set to **External**. To review attachments, select **Document handling**. The **General** FastTab of the **Document handling** page shows the hash number that is related to an invoice. If an attachment that was created for an invoice has a hash number, when the invoice is reported to the Online invoicing system, it will include the hash number value that is stored in the system.
 
-### Additional information
+### Related information
 
 To ensure correct reporting of system data in the Online invoicing system, create one credit note for each invoice. Avoid scenarios where one credit note is created for multiple invoices.
 

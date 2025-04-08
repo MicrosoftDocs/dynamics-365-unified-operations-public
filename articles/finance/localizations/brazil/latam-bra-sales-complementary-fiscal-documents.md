@@ -1,12 +1,13 @@
 ---
 title: Sales complementary fiscal documents for Brazil
 description: Learn about sales complementary invoice for the Brazilian localization, including prerequisites, examples, and an outline on sales complementary fiscal documents.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/08/2017
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: BrazilParameters, FBFiscalDocument_BR, SalesComplementaryInvoice, SalesComplementaryInvoiceCancel_BR, SalesComplementaryInvoiceListPage
@@ -45,7 +46,7 @@ Before you can create or post sales complementary fiscal documents, the followin
 -   **Sales tax code for PIS** – Specify the sales tax code that is used for the Programa de Integração Social (PIS) tax calculation amount.
 
 ## Examples
-[![Examples of an original invoice and sales complementary fiscal documents of each of the three types.](../media/salescomplementary-1024x409.png)]
+![Examples of an original invoice and sales complementary fiscal documents of each of the three types.](../media/salescomplementary-1024x409.png)]
 
 For more information, see the following topics:
 

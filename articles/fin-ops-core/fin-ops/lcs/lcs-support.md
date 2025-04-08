@@ -17,9 +17,6 @@ ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to get help with finance and operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>

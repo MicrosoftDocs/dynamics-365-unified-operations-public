@@ -2,16 +2,15 @@
 title: Adventure Works theme overview
 description: This article gives an overview of the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 12/03/2021
+ms.date: 08/02/2024
 ms.topic: overview
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.8
-ms.search.industry: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Adventure Works theme overview

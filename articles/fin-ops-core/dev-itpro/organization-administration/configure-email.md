@@ -4,7 +4,7 @@ description: The behavior of the email subsystem is influenced by a combination 
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 01/04/2024
+ms.date: 08/24/2024
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -47,7 +47,7 @@ For customers who use Office 365, Microsoft Graph is the recommended email provi
 You must have the following permissions to set up the Microsoft Graph integration:
 
 - You must be a system administrator in the application to link the Dynamics 365 finance and operations environment to Microsoft Graph.
-- You must be an administrator for your Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform the first part of the configuration for you.
+- You must be an administrator for your Microsoft Entra ID account. If you aren't the administrator, an administrative user must perform the first part of the configuration for you.
 
 #### One-time registration process
 
@@ -58,7 +58,7 @@ To create an app, follow these steps.
     > [!NOTE]
     > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
-2. Go to **Azure Active Directory** \> **App registrations** \> **New application**.
+2. Go to **Microsoft Entra ID** \> **App registrations** \> **New application**.
 3. Enter the following values:
 
     - **Name** – Enter the name of your app.
@@ -178,7 +178,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </table>
 
 > [!NOTE]
-> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. The Microsoft Graph email provider can be used if a more modern integration is desired. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) doesn't affect the use of SMTP in finance and operations apps, because "SMTP AUTH will still be available when Basic authentication is permanently disabled."
+> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. The Microsoft Graph email provider can be used if a more modern integration is desired. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) only impacts the use of Office 365 SMTP servers. Other SMTP servers that still support basic authentication won't be impacted by this Office 365 deprecation.
 
 ## [Administrator] Email distributor batch process
 

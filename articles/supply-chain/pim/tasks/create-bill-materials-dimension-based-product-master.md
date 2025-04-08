@@ -1,15 +1,13 @@
 ---
 title: Create a bill of materials for a dimension-based product master
-description: This article shows how to create a bill of materials for a dimension-based product master.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp   
+description: Learn how to create a bill of materials for a dimension-based product master, including an outline and step-by-step process for selecting the product.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/10/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac 
+ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp  
 ---
 
 # Create a bill of materials for a dimension-based product master

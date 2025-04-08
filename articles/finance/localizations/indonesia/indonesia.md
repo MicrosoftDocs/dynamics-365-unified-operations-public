@@ -1,13 +1,14 @@
 ---
 title: Indonesia overview
-description: This article provides an overview of functionality that is specific to Indonesia.
+description: Learn about functionality that is specific to Indonesia with links to resources about VAT declarations, invoicing, and withholding tax reports.
 author: AdamTrukawka
-ms.date: 12/09/2021
+ms.author: atrukawk
 ms.topic: overview
-audience: Application User
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
 ms.search.region: Indonesia
-ms.author: atrukawk
 ms.search.validFrom: 2021-09-30
 ms.dyn365.ops.version: 10.0.20
 ---

@@ -1,56 +1,38 @@
 ---
-# required metadata
-
 title: Attach inventory items to service objects  
-description: This article explains how to attach an inventory item to a service object.
-author: sorenva
-ms.date: 05/01/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how to attach an inventory item to a service object, including a step-by-step process for attaching inventory items to service objects.
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: SMAServiceObjectTable
+ms.topic: how-to
+ms.date: 03/17/2025
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+  - bap-template
+  - evergreen
 ---
 
 
-# Attach inventory items to service objects    
+# Attach inventory items to service objects
 
 [!include [banner](../includes/banner.md)]
 
-
 This article explains how to attach an inventory item to a service object. When you attach an item to a service object, you can control and report the service activities that are performed for the item.
 
-Before you can attach items to service objects, you must create the items in the **Released product details** form. 
+Before you can attach items to service objects, you must create the items on the **Released product details** page.
 
 Use the following steps to attach an inventory item to a service object:
 
-1.  Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.
+1. Go to **Service management** \> **Setup** \> **Service objects** \> **Service objects**.
 
-2.  In the **Item number** field, select the item to attach to the service object.
+2. In the **Item number** field, select the item to attach to the service object.
 
-3.  Save the service object.
+3. Save the service object.
 
 The item is now attached to the service object, and any inventory dimensions specified for the item are also copied to the service object.
 
-## See also
+## Related information
 
-[Service objects overview](service-objects.md)
-
-  
-
-
-
+- [Service objects overview](service-objects.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

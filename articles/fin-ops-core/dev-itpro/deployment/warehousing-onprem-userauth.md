@@ -8,6 +8,7 @@ ms.date: 10/18/2023
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
+ms.service: dynamics-365-op
 ---
 
 # User-based authentication for the Warehouse Management mobile app in on-premises deployments

@@ -6,7 +6,7 @@ ms.author: kfend
 ms.topic: article
 ms.date: 04/28/2023
 ms.custom: bap-template
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

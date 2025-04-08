@@ -1,16 +1,14 @@
 ---
 title: Federal Accounting Standard 27-2021
-description: This article provides information about the Federal Accounting Standard 27-2021 for Russia.
-author: AdamTrukawka
-ms.date: 01/28/2022
-ms.topic: article
-audience: Application User
+description: Learn about the Federal Accounting Standard 27-2021 for Russia, including technical options to help customers adapt their business processes.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.search.form: 
+
 ---
 
 # Federal Accounting Standard 27-2021

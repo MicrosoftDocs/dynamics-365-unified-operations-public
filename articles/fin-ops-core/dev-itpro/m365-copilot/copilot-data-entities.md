@@ -4,7 +4,7 @@ description: Access a list of the entities eligible for copilot, organized by al
 author: RamaKrishnamoorthy 
 ms.author: ramasri
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 08/29/2024
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot 

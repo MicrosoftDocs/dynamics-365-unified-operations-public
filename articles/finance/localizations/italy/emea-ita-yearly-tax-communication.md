@@ -1,18 +1,18 @@
 ---
 title: Yearly tax communication
-description: This article provides information about the yearly tax communication report in Italy.
+description: Learn about the yearly tax communication report in Italy, including an outline on setting up the Yearly tax communication report.
 author: liza-golub
-ms.date: 03/04/2024
+ms.author: egolub
 ms.topic: conceptual
+ms.date: 03/04/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Italy
-ms.author: egolub
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: 
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Yearly tax communication

@@ -4,12 +4,10 @@ description: Learn about the data management framework's package REST API, inclu
 author: pnghub
 ms.author: gned
 ms.topic: article
-ms.date: 11/04/2022
+ms.date: 08/22/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-03-31
-ms.search.form: 
 ms.dyn365.ops.version: Platform update 5
 ---
 
@@ -234,7 +232,9 @@ The **ImportFromPackage** API is used to initiate an import from the data packag
 There's an async version of this API **ImportFromPackageAsync**. The specifications are the same. It will be required to capture the execution ID returned and the latter call the **GetExecutionSummaryStatus** API to determine when the execution has completed.   
 
 > [!NOTE]
-> The **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
+> The **ImportFromPackage** API supports composite entities. However, the limitation is that package that consists of a composite data entity must only have that one composite data entity.
+>
+> The XMLField tags must be mapped to entities in manifest file for mapping to load correctly.    
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
@@ -287,11 +287,11 @@ The following APIs are used to export files (data packages).
 
 The **ExportToPackagePreview** API is used to preview an export of a data package with a large number of records. This API is applicable to both cloud deployments and on-premises deployments.
 
-There's an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. It will be required to capture the execution ID returned and the latter call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
+There's an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. It's required to capture the execution ID returned and the latter call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
-- The number of records returned are limited using the **count** parameter.
+- The number of records returned is limited using the **count** parameter.
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackagePreview
@@ -324,10 +324,10 @@ HTTP/1.1 200 OK
 |--------------------------|-------------|
 | string definitionGroupId | The name of the data project for export. |
 | string packageName       | The name of the exported data package. |
-| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
+| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID is created. |
 | bool reExecute           | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
 | string legalEntityId     | The legal entity for the data import. |
-| count                    | The number of records to return. No top count condition will be applied if set to zero. |
+| count                    | The number of records to return. No top count condition is applied if set to zero. |
 	
 **Output parameters**
 
@@ -339,7 +339,7 @@ HTTP/1.1 200 OK
 
 The **ExportToPackage** API is used to initiate an export of a data package. This API is applicable to both cloud deployments and on-premises deployments.
 
-There's an async version of this API **ExportToPackageAsync**. The specifications are the same. It will be required to capture the execution ID returned and the latter call the **GetExecutionSummaryStatus** API to determine when the execution has completed. 
+There's an async version of this API **ExportToPackageAsync**. The specifications are the same. It is required to capture the execution ID returned and the latter call the **GetExecutionSummaryStatus** API to determine when the execution has completed. 
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
@@ -374,7 +374,7 @@ HTTP/1.1 200 OK
 |--------------------------|-------------|
 | string definitionGroupId | The name of the data project for export. |
 | string packageName       | The name of the exported data package. |
-| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
+| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID is created. |
 | bool reExecute           | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
 | string legalEntityId     | The legal entity for the data import. |
 	
@@ -421,7 +421,7 @@ HTTP/1.1 200 OK
 
 ## Status check API	
 
-The following APIs are used to check status. They are used during both import flows and export flows.
+The following APIs are used to check status. They're used during both import flows and export flows.
 
 ### GetExecutionSummaryStatus
 
@@ -480,7 +480,7 @@ HTTP/1.1 200 OK
 </table>
 
 > [!NOTE]
-> The file in Blob storage will remain there for seven days. It will then be automatically deleted.
+> The file in Blob storage remains there for seven days. It will then be automatically deleted.
 
 ## Getting the list of errors
 GetExecutionErrors can be used to get the list of errors in a job execution. The API takes the Execution ID as the parameter, and returns a set of error messages in a JSON list.

@@ -1,11 +1,12 @@
 ---
 title: Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 04/24/2024
+ms.date: 10/29/2024
 ms.collection:
   - bap-ai-copilot
 ms.custom:
   - responsible-ai-faqs
+  - copilot-learning-hub
 ms.topic: article
 author: cabeln
 ms.author: cabeln
@@ -31,6 +32,8 @@ The feature is built on top of *Generative Answers* and inherits the [Responsibl
 The capabilities of *Generative help and guidance with Copilot* include providing real-time, context-aware assistance within finance and operations apps. It simplifies complex tasks by interpreting user queries and pulling relevant information from an extensive pool of public documentation.
 
 Future enhancements might allow direct navigation and suggest actions within the application to further streamline user tasks.
+
+[!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
 
 ## What is the intended use of Generative help and guidance with Copilot?
 
@@ -67,8 +70,9 @@ Additionally, system administrators should monitor usage patterns to ensure the 
 
 ## See also
 
-- [Overview of Copilot capabilities in finance and operations apps](copilot-for-finance-operations.md)
-- [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
+- [Generative help and guidance with Copilot](copilot-generative-help.md)
+- [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
+- [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
 - [Responsible AI FAQ for generative answers in Copilot Studio](/microsoft-copilot-studio/faqs-generative-answers)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

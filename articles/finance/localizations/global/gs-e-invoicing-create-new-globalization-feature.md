@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.39
 
 You can create an Electronic invoicing feature from scratch, or you can base it on an existing feature. When you create a feature from scratch, you must manually add Electronic reporting (ER) configurations and other components, such as the feature setup and application setup details. When you create a feature that's based on an existing feature, the new feature inherits all the base feature's configurations and parameters. You can review what's copied from the base feature to the new feature.
 
-## Create a feature that's based on an existing feature
+## Create a feature based on an existing feature
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. In the **Configuration provider** field, make sure that your active configuration provider is selected. In this way, the new Electronic invoicing feature will appear in the list after it's created. If your active configuration provider isn't selected, the new feature will be filtered out of the list.

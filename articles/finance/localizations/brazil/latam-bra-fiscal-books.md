@@ -4,10 +4,11 @@ description: Learn about fiscal books, one of three projects that make up the Pu
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 07/25/2019
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: FBBookingPeriodCreate_BR, FBBookingPeriodListPage_BR, FBBookingPeriodLookup_BR, FBBookingPeriodWizard_BR

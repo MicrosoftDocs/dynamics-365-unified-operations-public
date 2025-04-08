@@ -4,7 +4,7 @@ description: Learn about the setup of the Fixed assets module, including outline
 author: moaamer
 ms.author: saraschi
 ms.topic: article
-ms.date: 01/19/2023
+ms.date: 08/12/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -65,14 +65,17 @@ The **Capitalization threshold** field determines the assets that are depreciate
 
 One important option is named **Automatically create depreciation adjustment amounts with disposal**. When you set this option to **Yes**, the asset depreciation is automatically adjusted, based on the depreciation settings at the time of asset disposal. Another option lets you deduct cash discounts from the acquisition amount when you acquire fixed assets by using a vendor invoice.
 
-The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system will verify that the same asset book hasn’t been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
+The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system will verify that the same asset book hasn't been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
 
-The **Post disposal transactions in detail** determines which disposal scrap/sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
- - If this option is set to **Yes**, the disposal sale/scrap posting process will validate the posting profile that the posting profile has all posting types. 
- - If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile that **Acquisition value** is defined in the posting profile.  
+**Post disposal transactions in detail** determines which disposal scrap/sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
 
-[!NOTE]
->You can’t define the both options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting.
+- If this option is set to **Yes**, the disposal sale/scrap posting process will validate the posting profile to ensure that it has all posting types. 
+- If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile to ensure that the **Acquisition value** field is defined in it.
+
+In Microsoft Dynamics 365 Finance version 10.0.41, the **Allow depreciation when placed in service and disposal are in the same fiscal year** parameter is available on the **Fixed assets parameters** page. When this parameter is enabled, depreciation is calculated when an asset is both put into service and disposed of within the same fiscal year. This setting becomes the default behavior for any new asset books created that are created afterwards. However, the setting can be modified at the level of the individual asset book as required. Note that changes that are made at the asset book level apply only to new asset books that are created after the modification. They don't retroactively affect asset books that already exist in the system. 
+
+> [!NOTE]
+> You can't define both the options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting.
 
 On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when the invoice is posted. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition won't be posted. Posting must be done as a separate step, from the Fixed assets journal. The **Create asset during product receipt or invoice posting** option lets you create a new asset during posting. Therefore, the asset doesn't have to be set up as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
 

@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2023-09-28
 # ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 62
+ms.service: dynamics-365-op
 ---
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises) automated diagnostics collection

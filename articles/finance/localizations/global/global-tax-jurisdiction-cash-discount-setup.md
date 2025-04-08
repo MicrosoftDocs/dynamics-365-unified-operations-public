@@ -1,14 +1,13 @@
 ---
 title: Tax jurisdiction parameters for cash discount calculation setup
 description: Learn about the setup of cash discount calculation options, including a table that outlines setup for various parameters.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 04/05/2022
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.23
 ---
 
@@ -37,7 +36,7 @@ The following illustration shows the parameter setup for both options.
 > [!NOTE]
 > The **Deduct Cash Discount Before Tax Calculation** and **Calculate Cash Discount On Amount Including Tax** parameters are mutually exclusive.
 >
-> Currently, the tax calculation setup in Regulatory Configuration Service (RCS) doesn't support cross-measure validation. The validation is done in Finance when the parameters from the Tax calculation service are retrieved.
+> Currently, the tax calculation feaure setup doesn't support cross-measure validation. The validation is done in Finance when the parameters from the Tax calculation service are retrieved.
 > 
 > For a tax jurisdiction code, don't set both the **Deduct Cash Discount Before Tax Calculation** parameter and the **Calculate Cash Discount On Amount Including Tax** parameter to **Yes** on the **Tax calculation** page.
 
@@ -65,6 +64,5 @@ The following table shows the results of the cash discount and sales tax calcula
 | Cash discount amount | 47.60 (= 1,190 × 4%) | 40 (= 1,000 × 4%) |
 
 > [!IMPORTANT]
-> In the 10.0.23 monthly update, the functionality is supported only for sales order operations and only for sales orders that contain one sales tax code per sales order line.
+> The functionality is supported for sales order, purchase order, vendor invoice, and free text invoice operations.
 > 
-> In the 10.0.24 monthly update, the functionality is supported for sales order, purchase order, vendor invoice, and free text invoice operations.

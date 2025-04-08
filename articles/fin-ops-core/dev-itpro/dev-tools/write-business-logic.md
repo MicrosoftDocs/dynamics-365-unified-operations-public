@@ -4,9 +4,10 @@ description: This tutorial illustrates the interoperability between C# and X++. 
 author: pvillads
 ms.author: pvillads
 ms.topic: article
-ms.date: 02/07/2020
-ms.reviewer: josaw
-audience: Developer
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

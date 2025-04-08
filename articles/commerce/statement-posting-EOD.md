@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Improvements to statement posting functionality
 description: This article describes improvements that have been made to the statement posting feature.
 author: analpert
 ms.date: 05/18/2022
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global 
-ms.author: analpert
+ms.author: shajain
 ms.search.validFrom: 2018-04-30
+ms.custom: 
+  - bap-template
 ---
 
 # Improvements to statement posting functionality

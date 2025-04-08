@@ -1,22 +1,23 @@
 ---
 title: Create a B2C application
-description: This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
+description: This article describes how to create a Microsoft Dynamics 365 Commerce business-to-consumer (B2C) application in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 12/04/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create a B2C application
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
+This article describes how to create a Microsoft Dynamics 365 Commerce business-to-consumer (B2C) application in the Microsoft Azure portal.
 
 Once you create your B2C tenant, you'll create a B2C application within your new Microsoft Entra tenant to interact with Commerce.
 
@@ -29,7 +30,7 @@ To create the B2C application, follow these steps.
 1. For **Permissions**, select **Grant admin consent to openid and offline_access permissions**.
 1. Select **Register**.
 1. Select the newly created application and navigate to the **Authentication** menu. 
-1. If a reply URL is entered, under **Implicit grant and hybrid flows** select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. If a reply URL wasn't entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application. The **Implicit grant and hybrid flows** section is then available to select both the **Access tokens** and **ID tokens** options.
+1. If a reply URL is entered, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You are now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application. 
 1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
 For additional reference on App Registrations in Microsoft Entra ID B2C, see [The new App registrations experience for Microsoft Entra ID B2C](/azure/active-directory-b2c/app-registrations-training-guide)

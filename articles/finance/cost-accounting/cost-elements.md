@@ -2,7 +2,7 @@
 title: Cost element dimensions
 description: As one of the core pillars in Cost accounting, cost element dimensions are used to categorize and track where costs flow to.
 author: AndersEvenGirke
-ms.author: twheeloc
+ms.author: aevengir
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: twheeloc

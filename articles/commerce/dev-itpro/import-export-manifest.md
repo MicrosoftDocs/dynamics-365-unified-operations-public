@@ -2,14 +2,15 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/15/2024
-ms.topic: article
+ms.date: 08/23/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: asharchw
 ms.search.validFrom: 2023-03-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Bulk import and export digital assets using manifests
@@ -214,9 +215,10 @@ To bulk export an asset manifest, follow these steps.
 1. In site builder, go to the site or omnichannel that you want to export the manifest from.
 1. Go to **Media library**.
 1. Select the assets that you want to export, and then select **Bulk export**. Alternatively, to export all media assets, select **Export entire library**.
-1. Enter a name and description for the export job, review the selected media, and then select **Export**.
-
-You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. Enter a name and description for the export job, review the selected media, and then select **Export**. You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. When the export job is complete, go to **Job \> Past jobs**.
+1. Select the completed export job.
+1. In the right pane, select **Download manifest** to download the manifest to your local machine.
 
 ### Bulk export a product media assignment manifest
 
@@ -228,9 +230,10 @@ To bulk export a product media assignment manifest, follow these steps.
 1. Select **Export media assignments for all products** or **Export media assignments for specific products**, and then select **Next**.
 1. If you selected **Export media assignments for specific products**, under **All products**, select the products that you want to export the media assignments from, and then select **Next**. If you selected **Export media assignments for all products**, skip ahead to step 6.
 1. If you want to export all locales, not just the currently selected locale, select the **Export all locales** checkbox.
-1. Select **Export product media**.
-
-You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. Select **Export product media**. You can monitor the job status at **Site settings \> Jobs** or by selecting **Go to job** in the job notification.
+1. When the export job is complete, go to **Job \> Past jobs**.
+1. Select the completed export job.
+1. In the right pane, select **Download manifest** to download the manifest to your local machine.
 
 ## Additional resources
 

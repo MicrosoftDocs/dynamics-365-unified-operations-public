@@ -3,10 +3,12 @@ title: Tax reporting by reporting codes
 description: Learn about general information about how to set up and generate the tax statement, including a tax statement overview.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 03/24/2022
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/17/2024
 ms.reviewer: johnmichalak
-audience: Application User
+
 ms.search.region: Australia, Japan, Latvia, Lithuania
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
@@ -21,8 +23,6 @@ This article describes the general approach for setting up and generating the ta
 
 - Australia
 - Japan
-- Latvia
-- Lithuania
 
 ## Tax statement overview
 
@@ -237,7 +237,5 @@ The tax statement for each country/region must meet the requirements of that cou
 |----------------|------------------------|
 | Australia      | [Business activity statement (BAS)](../australia/apac-aus-business-activity-statement.md) |
 | Japan          | [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
-| Latvia         | [VAT statement details for Latvia](../latvia/emea-lva-vat-statement-details.md) |
-| Lithuania      | [VAT statement details for Lithuania](../lithuania/emea-ltu-vat-statement-details.md) |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

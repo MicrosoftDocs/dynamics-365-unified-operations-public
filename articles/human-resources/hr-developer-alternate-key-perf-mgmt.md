@@ -2,7 +2,7 @@
 title: Alternate keys in performance management tables
 description: This article discribes new alternate keys in performance management tables.
 author: twheeloc
-ms.author: RAM.Magadum
+ms.author: twheeloc
 ms.reviewer: twheeloc
 ms.search.form:
 ms.topic: how-to

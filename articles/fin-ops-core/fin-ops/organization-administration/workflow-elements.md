@@ -18,9 +18,6 @@ ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article describes the various elements that make up a workflow.
 
 A workflow consists of elements. The sections that follow describe each type of element.

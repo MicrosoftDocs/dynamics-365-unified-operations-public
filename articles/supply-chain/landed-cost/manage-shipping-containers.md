@@ -1,42 +1,32 @@
 ---
-# required metadata
-
 title: Manage shipping containers
-description: This article describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
-author: Weijiesa
-ms.date: 03/03/2023
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ITMContainersListPage, ITMContainers
-audience: Application User
-# ms.devlang: 
+description: Learn how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together.
+author: lisascholz91
+ms.author: lisascholz
+ms.topic: how-to
+ms.date: 02/14/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2020-12-14
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: ITMContainersListPage, ITMContainers
 ---
 
 # Manage shipping containers
 
 [!include [banner](../../includes/banner.md)]
 
-Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
+Shipping containers are used to group together goods that are physically grouped together. They're also used in cases where costs must be shared only across those goods, usually because they're physically together.
 
 ## Create shipping containers for voyages
 
-You create a shipping container by opening or creating the voyage where you will use it, and then assigning the purchase order lines that the shipping container will include. Follow these steps to create a shipping container for a voyage.
+You create a shipping container by opening or creating the voyage where you'll use it, and then assigning the purchase order lines that the shipping container will include. Follow these steps to create a shipping container for a voyage.
 
 1. Follow one of these steps:
 
     - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page is opened and shows the new or selected voyage.
     - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
+    > [!NOTE]
+    > To improve performance of the **Voyage Editor** page, we recommend that you select a narrow date range and filter either by purchase or transfer order ID.
 
 1. Use the filters at the top of the **Voyage editor** page to find the inbound order that you want to create the shipping container for. If you created the voyage from the **All purchase orders** page, the purchase order that you selected there will already be selected in the filter here. However, you can adjust the filters as you want.
 1. On the Action Pane, select **Generate data** to update the list of orders on the **Inbound orders** FastTab, based on your current filter settings. (Each time that you change the filter settings, you must select **Generate data** to update the inbound order list.)
@@ -51,7 +41,7 @@ You create a shipping container by opening or creating the voyage where you will
 
     [<img src="media/create-shipping-container.png" alt="Create shipping container dialog box." title="Create shipping container dialog box" width="720" />](media/create-shipping-container.png)
 
-1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance.
+1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance compared to using the **Voyage Editor** page.
 
     > [!NOTE]
     > The **Run in the background** tab is available only if the *Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)
@@ -84,7 +74,7 @@ The following table describes the buttons that are available on the **Manage** t
 | Post invoice | Post an invoice for all purchase order lines in the shipping container.  |
 | Ship transfer order | Post a transfer order shipment for all transfer order lines in the shipping container. Only those lines in the shipping container that are a type of transfer order appear in the dialog box. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines in the shipping container. The receive dialog box is the simplest way to receive goods in a shipping container or voyage, and is one of three available options. You can also receive via arrival journals or mobile device processing. |
-| Create arrival journal | You can generate an arrival journal for organizations by using advanced warehouse features. The options are _Initialize quantity_ (recommended), and either _Create from goods in transit_ or _Create from purchase orders_. The last two options depend on whether goods-in-transit processing is being used. |
+| Create arrival journal | You can generate an arrival journal for organizations by using advanced warehouse features. The options are *Initialize quantity* (recommended), and either *Create from goods in transit* or *Create from purchase orders*. The last two options depend on whether goods-in-transit processing is being used. |
 | Rename | Open a dialog box where you can rename a selected shipping container. |
 | Change journey template | Change the journey template. After you change the journey template, you might have to select **Find auto costs** or manually add costs again, because the shipment costs will be deleted. |
 | Convert to rental | Convert a selected shipping container into a rental shipping container. |
@@ -98,7 +88,7 @@ The following table describes the buttons that are available on the **General** 
 | Receipts list | Post a receipt list for all purchase order lines in the shipping container.  |
 | Product Receipt | View the product receipt record, if it's used. The product receipt process will be used only if the goods don't use goods-in-transit functionality. |
 | Item arrival | View the item arrival journal for the shipping container, if that journal is used. |
-| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. For more information, see [Multi-leg journey setup](multi-leg-journey-setup.md). |
+| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. Learn more in [Multi-leg journey setup](multi-leg-journey-setup.md). |
 | Tracking | View or update shipment tracking. |
 | Goods in transit orders | You can open the **Goods in transit** page directly from the container. That page shows the goods-in-transit records for the selected shipping container only. |
 
@@ -115,14 +105,14 @@ The following table describes the settings that are available on the **General**
 | Shipping container | The name of the shipping container. |
 | Voyage | The voyage that is associated with the shipping container. |
 | Shipping container type | Enter the shipping container type. This field must be set. You can use it to determine the cost for freight, for example, by selecting the auto cost that is associated with the shipping container type. |
-| Vessel | Enter or select the vessel. If the vessel isn't listed as a value, you can enter the vessel ID as free text. In that case, the main table isn't updated so that the vessel ID can be selected in this field later. For more information, see [Vessels](shipping-information-setup.md#vessels). |
-| Unit type | Unit types are used as an additional means of grouping and identifying shipping containers. They are shown and selected on the shipping container page. For more information, see [Set up unit types](shipping-container-setup.md#unit-types). |
-| Refrigeration type | Refrigeration types are used as an additional means of grouping and identifying shipping containers, usually refrigerated containers. They are shown and selected on the shipping container page. For more information, see [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
+| Vessel | Enter or select the vessel. If the vessel isn't listed as a value, you can enter the vessel ID as free text. In that case, the main table isn't updated so that the vessel ID can be selected in this field later. Learn more in [Vessels](shipping-information-setup.md#vessels). |
+| Unit type | Unit types are used as an additional means of grouping and identifying shipping containers. They're shown and selected on the shipping container page. Learn more in [Set up unit types](shipping-container-setup.md#unit-types). |
+| Refrigeration type | Refrigeration types are used as an additional means of grouping and identifying shipping containers, usually refrigerated containers. They're shown and selected on the shipping container page. Learn more in [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
 | Measurement | This field enables a measurement to be specified in the **Landed cost** module. Measurements are often used by organizations that don't know the individual volume or weight of goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight in kilograms or the cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected, or it can be manually entered. |
 | Measurement unit | The unit of measure that applies to the number in the **Measurement** field. |
 | Actual weight | You can record the actual weight of the carton or container. This value can be used for verification against the maximum weight that is allowed in the setup of a shipping container. |
 | Number of cartons | The number of cartons is automatically updated if the parameter is selected. |
-| Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
+| Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. Learn more in [Description of goods](shipping-information-setup.md#description-of-goods). |
 | House air waybill/Bill of lading | You can specify the house air waybill or bill of lading for the shipping container. |
 | Remarks | Additional information that is related to the shipping container. |
 | Returnable | A value that indicates whether the shipping container can be returned after the voyage. |
@@ -192,7 +182,7 @@ The following table describes the buttons that are available on the **Lines** Fa
 | Button | Description |
 |---|---|
 | Remove | Remove the selected purchase order line from the voyage. |
-| Inventory \> Transactions | View inventory transactions for the selected purchase order line. Note that if you're using goods in transit, the original order and the goods-in-transit orders are also shown. |
+| Inventory \> Transactions | View inventory transactions for the selected purchase order line. If you're using goods in transit, the original order and the goods-in-transit orders are also shown. |
 | Inventory \> Display dimensions | Open a dialog box where you can select the inventory dimensions that appear for the transactions that you view. |
 | Refresh | Update information that is related to the line amount, weight, or volume of the selected purchase order line. |
 

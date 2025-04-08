@@ -3,14 +3,15 @@ title: Phased Rollout (N-1) installation, configuration, and cutover guide
 description: This article explains how to set up Phased Rollout (N-1) components so that your channel components can work with Microsoft Dynamics 365 Commerce headquarters.
 author: aneesa
 ms.date: 04/02/2024
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2017-07-31
-ms.dyn365.ops.version: Retail July 2017 update
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
+ms.custom: 
+  - bap-template
 ---
 
 # Phased Rollout (N-1) installation, configuration, and cutover guide

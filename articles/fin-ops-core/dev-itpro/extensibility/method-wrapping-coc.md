@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: article
 ms.date: 12/18/2018
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-08-21

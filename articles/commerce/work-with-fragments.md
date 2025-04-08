@@ -2,16 +2,15 @@
 title: Work with fragments
 description: This article describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 02/03/2022
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.search.industry: retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 # Work with fragments 

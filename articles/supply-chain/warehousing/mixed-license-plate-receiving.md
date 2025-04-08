@@ -1,15 +1,13 @@
 ---
 title: Mixed license plate receiving
-description: This article describes how to use mixed license plate receiving to register and create work for multiple items with a mobile device.
+description: Learn how to use mixed license plate receiving to register and create work for multiple items with a mobile device with an outline on where it applies.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
 ms.topic: how-to
 ms.date: 01/29/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
 ---
 
 # Mixed license plate receiving
@@ -105,7 +103,7 @@ If you set the **Label printing on confirming receiving** option so that labels 
 - *Error*
 - *Received*
 
-If an *Execute deferred receiving* batch job fails, the related **Mixed license plate receiving status** field is set to *Error*. To view the reason for the failure, select the failed job, and then select **Processing errors**. Take the appropriate action to address the error (for example, by updating a line quantity or deleting a line). Then manually rerun the process by selecting **Complete license plate**.
+If an *Execute deferred receiving* batch job fails, the related **Mixed license plate receiving status** field is set to *Error*. To view the reason for the failure, select **Mixed license plate receiving batch jobs**, and then select **Batch job log**. Take the appropriate action to address the error (for example, by updating a line quantity or deleting a line). Then manually rerun the process by selecting **Complete license plate**.
 
 > [!TIP]
 > If you want the page to show the **Receiving processing ID** value that's used for each background processing task, use the [personalization tools](../../fin-ops-core/dev-itpro/get-started/personalize-user-experience.md) to add the column to the **Mixed license plate receiving** grid.

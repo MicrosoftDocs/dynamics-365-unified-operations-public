@@ -47,7 +47,7 @@ Use this procedure to create a collection letter sequence. This task uses the US
 23. In the **Minimum overdue balance** field, enter a number.
 24. In the **Days** field, enter a number.
 25. Select the **Block** check box to stop the customer from additional deliveries and invoicing. To unblock the account, select **No** in the **Invoicing and delivery on hold** field on the **Customers** page.  
-26. Expand the **Note** fastTab.
+26. Expand the **Note** FastTab.
 27. Enter the text to appear on the collection letter for the selected collection letter code. You can translate this text in to multiple languages using the **Translations** menu above the note box.  
 
 

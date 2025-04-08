@@ -4,7 +4,7 @@
 title: Create variable compensation plans
 description: This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

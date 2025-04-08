@@ -13,6 +13,7 @@ ms.search.form: SysAbout
 ms.dyn365.ops.version: Platform update 2
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Software Lifecycle Policy for Microsoft Dynamics 365 Finance + Operations (on-premises)

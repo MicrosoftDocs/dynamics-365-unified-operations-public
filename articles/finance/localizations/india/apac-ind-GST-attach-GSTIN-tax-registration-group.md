@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Attach the GSTIN to a tax registration group
-description: This article explains how to attach the Goods and Services Tax Identification Number (GSTIN) to a tax registration group. This task is part of the master data setup that is required to make the India localization solution for GST available.
-author: EricWangChen
+description: Learnhow to attach the Goods and Services Tax Identification Number (GSTIN) to a tax registration group, including an outline on the master data setup process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Attach the GSTIN to a tax registration group

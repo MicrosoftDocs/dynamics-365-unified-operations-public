@@ -1,15 +1,13 @@
 ---
 title: Work with advanced export management for products, sales orders, and quotations
-description: Learn how to work with advanced export management for products and sales orders, and sales quotations.
-author: t-benebo
-ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended
+description: Learn how to work with advanced export management for products and sales orders, and sales quotations with an outline on setting up jurisdictions.
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 02/15/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended
 ---
 
 # Work with advanced export management for products, sales orders, and sales quotations

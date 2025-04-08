@@ -25,7 +25,7 @@ For a physical transaction (product receipt) to post to the general ledger on a 
 
 The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
 
-- Cost of purchases materials received
+- Cost of purchased materials received
 - Purchase expenditure, uninvoiced
 - Purchase, accrual
 

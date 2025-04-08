@@ -1,8 +1,8 @@
 ---
 title: Customer prepayments
 description: Learn about how to set up and process customer prepayments (also known as customer deposits), including an outline on creating customer posting profiles for prepayments.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 11/21/2022
 ms.reviewer: twheeloc

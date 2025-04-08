@@ -1,15 +1,13 @@
 ---
 title: Inventory Visibility diagnostic tool
-description: This article describes how to set up and use the Inventory Visibility diagnostic tool. This tool helps you identify and fix discrepancies between on-hand inventory records in Microsoft Dynamics 365 Supply Chain Management and the Inventory Visibility service.
-author: yufeihuang
+description: Learn how to set up the Inventory Visibility diagnostic tool, which helps you identify discrepancies between inventory records and the inventory visibility service.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 01/11/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Inventory Visibility diagnostic tool
@@ -20,7 +18,7 @@ This article describes how to set up and use the Inventory Visibility diagnostic
 
 ## Set up the Inventory Visibility diagnostic tool
 
-The Inventory Visibility diagnostic tool is turned on by default, and no extra steps are required to make it available. However, the tool requires that Inventory Visibility is set up for your system and the data synchronization batch job is running. For more information, see [Set up Inventory Visibility in Supply Chain Management](inventory-visibility-setup.md#setup-dynamics-scm).
+The Inventory Visibility diagnostic tool is turned on by default, and no extra steps are required to make it available. However, the tool requires that Inventory Visibility is set up for your system and the data synchronization batch job is running. Learn more in [Set up Inventory Visibility in Supply Chain Management](inventory-visibility-setup.md#setup-dynamics-scm).
 
 ## Use the Inventory Visibility diagnostic tool
 

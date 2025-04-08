@@ -1,26 +1,18 @@
 ---
-# required metadata
-
 title: Add product recommendations on POS
 description: This article describes using product recommendations on a point of sale (POS) device.
 author: bebeale
-ms.date: 04/21/2023
-ms.topic: article
-# optional metadata
-
+ms.date: 08/01/2024
+ms.topic: how-to
 ms.search.form: RetailParameters
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - bap-template
 ---
 
 # Add product recommendations on POS

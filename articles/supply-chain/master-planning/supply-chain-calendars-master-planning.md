@@ -1,22 +1,21 @@
 ---
 title: Calendars and master planning
-description: This article provides an overview of supply chain calendars and how they affect master planning.
+description: Learn about supply chain calendars and how they affect master planning, including a definition of a calendar and outlines of various values.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: WorkCalendarTable, VendTable
 ms.topic: how-to
-ms.date: 11/24/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 01/24/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Calendars and master planning
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of supply chain calendars and how they affect master planning. The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
+This article provides an overview of supply chain calendars and how they affect master planning. The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding assigning, using, and updating calendars are given.
 
 ## Definition of a calendar
 
@@ -44,6 +43,16 @@ The coverage group can be assigned on different pages:
 - On the **Item coverage** page. On the **Released product details** page, select **Item coverage** to open the **Item coverage** page. The **Overview** tab shows different parameters for replenishment, depending on the site, warehouse, and product dimensions. The coverage group for each item is inherited from the coverage group on the **Released product details** page. However, you can override it by selecting **Use specific settings** or **Override group setting** on the **General** tab.
 - On the **Master planning parameters** page. If no coverage group is assigned to an item on the previously mentioned pages, master planning uses the general coverage group that's set in the **General coverage group** field on the **Master planning parameters** page (**Master planning** \> **Setup** \> **Master planning parameters**).
 
+> [!NOTE]
+> If no calendar is defined for the coverage group of an item, Planning Optimization uses the calendar of the default coverage group defined on the **Master Planning Parameters** page.
+
+#### Define the lead time for a purchased item
+
+You specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.
+
+> [!NOTE]
+> The **Working days** checkbox for purchase lead time indicates working days as counted on the coverage group calendar. For example, a coverage group calendar set to allow delivery only on Tuesdays, with a lead time of 10 days and the **Working days** checkbox selected, indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered. Therefore, in most cases, you shouldn't select **Working days** for purchase order lead times.
+
 ### Calendars for a vendor
 
 #### Vendor working days and shipping days
@@ -54,14 +63,6 @@ You can set up calendars that define each vendor's standard operating hours (tha
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select the vendor that you want to assign the calendars to.
 1. To set the standard operating hours for the vendor, on the **Purchase order defaults** FastTab, in the **Purchase calendar** field, select a calendar.
 1. The days when the vendor can ship orders might differ from the standard operating hours. To set the shipping days, on the **Invoice and delivery** FastTab, in the **Ship calendar** field, select a calendar. For more information about this field and how it's used, see [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md).
-
-#### Define the lead time for a purchased item
-
-You specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.
-
-> [!NOTE]
-> The **Working days** under purchase lead time indicates the working days of the vendor. For example, a calendar for delivery only on Tuesdays with a lead time of 10 days and working days checkbox selected indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered.
-Thus, in most cases it isn't recommended to select working days for purchase order lead times.
 
 #### Define lead times from the trade agreements page
 
@@ -150,7 +151,7 @@ To determine the shipping and receipt dates for the planned transfer, the system
 
 ## Using calendars in master planning
 
-### Assignment of SCM calendars
+### Assign calendars
 
 It's important to set the calendars to identify the working days of the company. The best practice is to set a calendar for each element that has different working days. In other words, set all external calendars (customer and vendor) and all internal calendars (warehouse, coverage group, and mode of delivery) that are related to the company.
 
@@ -164,7 +165,7 @@ If no warehouse calendars are set, the legal entity calendar can be used as a so
 
 It's important to consider that a coverage group calendar overrides receipt dates in master planning. Therefore, we recommend that you use coverage group calendars cautiously. They're especially useful in cases where replenishment must be done on specific days of the week.
 
-### Updating SCM-related calendars
+### Update calendars
 
 Although it's important that all relevant calendars are assigned in their appropriate place (vendor, customer, warehouse, mode of delivery, or coverage group), it's equally important to update them so that they reflect changes. The system defines the production, transfer, purchase, and sales order dates based on the combination of assigned calendars.
 

@@ -1,16 +1,12 @@
 ---
 title: Conventions
-description: This article describes how to set up conventions to establish how costs should be accounted in Global Inventory Accounting.
-author: JennySong-SH
-ms.date: 06/18/2021
+description: Learn how to set up conventions to establish how costs should be accounted in Global Inventory Accounting, including an outline on various fields.
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
+ms.date: 06/18/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: yanansong
-ms.search.validFrom: 2021-06-18
-ms.dyn365.ops.version: 10.0.20
+ms.search.form:
 ---
 
 # Conventions

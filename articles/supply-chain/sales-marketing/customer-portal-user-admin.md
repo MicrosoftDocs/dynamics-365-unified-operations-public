@@ -1,25 +1,13 @@
 ---
-# required metadata
-
-title: Create and manage Customer portal users (contains video)
-description: This article explains how to create Customer portal user accounts and set permissions for them.
-author: Henrikan
-ms.date: 07/31/2020
+title: Create and manage Customer portal users
+description: Learn how to create Customer portal user accounts and set permissions for them, including outlines on the prerequisite setup and the invitation process.
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 07/31/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
-ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
+ms.search.form:
 ---
 
 # Create and manage Customer portal users
@@ -34,7 +22,7 @@ Before a user can use a website, a contact record must be created for that user.
 When users self-register, contact records are automatically created for them. Therefore, you can't ensure that a user selects the correct customer account and legal entity. On the other hand, the invitation process lets an admin assign the correct customer account and legal entity to the contact record before an invitation is sent. If you're thinking about customizing the solution so that users can self-register, be sure to consider the possible consequences.
 
 ## Video
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5a9d44db-29b0-429b-ad96-22951664353c]
 
 The [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -57,7 +45,7 @@ Before you invite a customer to join the Customer portal, make sure that the cus
 
 After a contact is created, you should be able to see it in Supply Chain Management.
 
-For more information, see [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
+Learn more in [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
 ## Out-of-box web roles and table permissions
 

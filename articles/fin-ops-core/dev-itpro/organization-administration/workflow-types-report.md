@@ -18,9 +18,6 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article points you to a report that lists the available workflow types.
 
 To create a workflow, you must first select the *type* of workflow that you want to create. For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions. For more information about creating a workflow, see [Create workflows overview](../../fin-ops/organization-administration/create-workflow.md).

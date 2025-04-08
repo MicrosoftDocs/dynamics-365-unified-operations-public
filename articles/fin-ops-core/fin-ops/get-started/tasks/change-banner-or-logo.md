@@ -4,21 +4,19 @@ description: Learn about the steps that system administrators can use to update 
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 06/21/2019
+ms.date: 12/31/2024
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: OMLegalEntity, DefaultDashboard
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Change the banner or logo
 
 [!include [banner](../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. The demo data company used to create this procedure is USMF.
 

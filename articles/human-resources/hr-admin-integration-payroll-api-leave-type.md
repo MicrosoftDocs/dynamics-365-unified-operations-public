@@ -3,8 +3,8 @@
 
 title: Leave type
 description: This article provides details and an example query for the leave type entity in Dynamics 365 Human Resources.
-author: marcelbf
-ms.date: 06/25/2021
+author: ajitchandran
+ms.date: 06/25/2024
 ms.topic: article
 # optional metadata
 
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: marcelbf
+ms.author: ajitchandran
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
 ---

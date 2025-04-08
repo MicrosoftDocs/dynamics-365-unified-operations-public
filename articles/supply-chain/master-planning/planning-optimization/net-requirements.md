@@ -1,16 +1,12 @@
 ---
 title: Net requirements and pegging information
-description: This article provides information about calculated net requirements and pegging information.
+description: Learn about calculated net requirements and pegging information, including an outline on the various methods of opening the net requirements page.
 author: t-benebo
-ms.date: 7/28/2021
-ms.topic: article
-ms.search.form: ReqTransOverview
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.20
+ms.topic: article
+ms.date: 7/28/2021
+ms.reviewer: kamaybac
+ms.search.form: ReqTransOverview
 ---
 
 # Net requirements and pegging information

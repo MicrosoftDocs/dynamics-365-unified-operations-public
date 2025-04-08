@@ -139,7 +139,6 @@ If you created a new Azure DevOps project earlier, configure the LCS project to 
     > [!NOTE]
     > Although VSTS is now known as Azure DevOps, to connect LCS to your Azure DevOps project, use the old URL. For example, the Azure DevOps URL that is used in this tutorial is `https://dev.azure.com/D365FOFastTrack/`. However, in the following illustration, it's entered as `https://D365FOFastTrack.visualstudio.com/`.
 
-    ![Step 1 in Setup Visual Studio Team Services.](./media/setup_rsa_tool_13.png)
 
 5. Select **Continue**.
 6. In the **Visual Studio Team Services project** field, select the VSTS project on the selected site to link with the LCS project. The **Process template** field is set to **Agile** by default. For a custom template, review the best practice guidance in the [Create a new Azure DevOps project](#create-a-new-azure-devops-project) section. Then select **Continue**.
@@ -511,8 +510,6 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
     - **Test run timeout** – Specify the time-out period, in minutes, for test runs. When the time-out period elapses, all active windows are closed, and pending test cases fail.
     - **Test action timeout** – This field controls the time-out period, in minutes, for Finance and Operation environment server requests. Usually, the default value (2 minutes) should be enough. However, for slower environments, you might want to increase the value if errors that are related to time-outs occur.
     - **Company name** – Enter the company name to use as your default company when Excel parameter files are created. You can change the company later by editing the Excel parameter file.
-
-    ![Settings dialog box.](./media/setup_rsa_tool_62.png)
 
 4. Select **Apply** to apply and save your settings.
 

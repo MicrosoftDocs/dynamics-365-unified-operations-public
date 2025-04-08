@@ -5,7 +5,7 @@ author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
 ms.date: 06/20/2017
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-07-01

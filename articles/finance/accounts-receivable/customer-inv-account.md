@@ -1,8 +1,8 @@
 ---
 title: Customer and invoice accounts
 description: Learn about customer and invoice accounts in Microsoft Dynamics 365 Finance, including an outline on sales order fields with examples.
-author: Prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 02/20/2024
 ms.reviewer: twheeloc

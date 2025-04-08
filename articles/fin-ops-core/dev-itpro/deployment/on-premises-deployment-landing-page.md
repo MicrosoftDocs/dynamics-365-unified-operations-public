@@ -1,17 +1,19 @@
 ---
 title: On-premises deployment home page
 description: Access information and links to content about on-premises deployments, including resources for getting started, onboarding, commerce, and upgrades.
-author: sericks007
-ms.author: sericks
-ms.topic: article
-ms.date: 07/01/2021
+author: johnmichalak
+ms.author: johnmichalak
+ms.topic: landing-page
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 06/07/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2016-08-30
-ms.search.form: 
 ms.dyn365.ops.version: Platform update 8
+ms.service: dynamics-365-op
 ---
 # On-premises deployment home page
 

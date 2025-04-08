@@ -6,7 +6,7 @@ ms.author: shielas
 ms.topic: article
 ms.date: 05/24/2022
 ms.custom:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
@@ -60,13 +60,6 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </tr>
 </tbody>
 </table>
-
-## Download and install the mobile app
-
-Download and install the finance and operations mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.

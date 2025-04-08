@@ -3,14 +3,14 @@ title: What's new or changed in Dynamics 365 Finance 10.0.15 (January 2021)
 description: Learn about the features that are either new or changed in the Dynamics 365 Finance version 10.0.15 preview release released in January 2021.
 author: kfend
 ms.author: kfend
-ms.topic: article
-ms.date: 10/01/2020
+ms.topic: whats-new
+ms.date: 07/15/2024
 ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kfend
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-08-31
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.15
 ---
 

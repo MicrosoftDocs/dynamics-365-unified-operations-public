@@ -65,7 +65,7 @@ To enable a tax solution provider, follow these steps.
     - Enable external tax solution providers for Tax calculation service
     - Globalization features
     - Enable Globalization feature setup for Tax calculation service
-    - Electronic reporting globalization feature Json import/export
+    - Electronic reporting globalization feature JSON import/export
 
 1. Engage and select one [tax solution provider](#available-tax-solution-providers). Install the independent software vendor (ISV) application when the tax solution provider requires it for the complete and extended functionality.
 1. [Set up a client ID and client secret](./universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md) for the application access credentials that your tax solution provider provides.
@@ -101,11 +101,7 @@ To enable a tax solution provider, follow these steps.
 
 ## Supported countries/regions
 
-The Universal Tax Rate API can be run for supported localization features. The following table lists the countries/regions for a legal entity's primary address.
-
-| Version | Country/region |
-|---|---|
-| 10.0.39 | United States |
+The Universal Tax Rate API can be enabled for for any country/region.
 
 For more information about supported countries/regions, contact your tax solution providers.
 
@@ -114,7 +110,7 @@ For more information about supported countries/regions, contact your tax solutio
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
 - [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
-- [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (planned)
+- [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (available)
 
 For additional details on release information, available solutions, and supported countries/regions, we recommend reaching out to your tax solution providers.
 

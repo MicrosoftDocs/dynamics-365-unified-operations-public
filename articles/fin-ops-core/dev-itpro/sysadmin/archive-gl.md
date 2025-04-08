@@ -1,5 +1,5 @@
 ---
-title: Archive Dynamics 365 Finance General ledger data (preview)
+title: Archive Dynamics 365 Finance General ledger data
 description: Learn about how to archive Microsoft Dynamics 365 Finance General ledger data, including prerequisites and an overview on setting up archival jobs.
 author: pnghub
 ms.author: gned
@@ -8,9 +8,7 @@ ms.date: 4/10/2024
 ms.custom:
 ms.reviewer: twheeloc
 ---
-# Archive Dynamics 365 Finance General ledger data (preview)
-
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+# Archive Dynamics 365 Finance General ledger data
 
 This article explains how to archive Microsoft Dynamics 365 Finance General ledger data.
 

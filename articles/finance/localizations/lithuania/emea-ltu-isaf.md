@@ -1,18 +1,18 @@
 ---
 title: i.SAF reporting for Lithuania
-description: This article explains how to set up and work with the i.SAF report for legal entities in Lithuania.
+description: Learn how to set up and work with the i.SAF report for legal entities in Lithuania, including an overview on setting up Electronic Reporting configurations.
 author: liza-golub
-ms.date: 03/18/2024
+ms.author: egolub
 ms.topic: how-to
+ms.date: 03/18/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Lithuania
-ms.author: egolub
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # i.SAF reporting for Lithuania

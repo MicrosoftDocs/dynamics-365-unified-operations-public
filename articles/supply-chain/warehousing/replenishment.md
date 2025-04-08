@@ -1,15 +1,14 @@
 ---
 title: Replenishment overview
-description: This article describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
-author: perlynne
-ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
+description: Learn about the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 ---
 
 # Replenishment overview

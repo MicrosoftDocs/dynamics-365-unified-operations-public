@@ -2,14 +2,15 @@
 title: Work with publish groups
 description: This article describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 08/01/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-12-12
-
+ms.custom: 
+  - bap-template
 ---
 
 # Work with publish groups
@@ -28,7 +29,7 @@ Companies can incur costs from slow or invalidated content rollouts that don't g
 
 The following video provides an overview of the publish group feature.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjZ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ee4b9a2c-3f68-4d61-bbf5-7058cddf04f8]
 
 ## When to use publish groups
 

@@ -1,14 +1,13 @@
 ---
 title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: This article explains the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
-author: EvgenyPopovMBS
-ms.date: 07/05/2023
+author: ilikond
+ms.author: ikondratenko
+ms.date: 09/03/2024
 ms.topic: article
-audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
-ms.author: josaw
 ms.search.validFrom: 2022-11-21
 
 ---
@@ -47,7 +46,7 @@ The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follo
 1. CRT calculates the invoice hash, digitally signs the e-invoice data, and generates a QR code that includes the invoice hash and digital signature data. CRT also updates the XML invoice with the invoice hash and digital signature data. The e-invoice, the invoice hash, the QR code, and other information are saved in the channel database in a fiscal transaction that's linked to the sales transaction.
 1. POS requests a sales receipt from CRT. CRT builds the receipt, including the QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
 1. Commerce headquarters uses Commerce Data Exchange (CDX) to download the sales transaction data together with fiscal transactions from CSU. The data is stored in the headquarters database throughout the life of your production environment.
-1. Commerce headquarters extracts the simplified e-invoice in the XML format from the fiscal transaction that's linked to the sales transaction. It then submits the e-invoice to ZATCA. The submission is done by integrating with the [Electronic Invoicing service](../../../finance/localizations/mea/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities that are available to Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../../finance/localizations/mea/emea-sau-e-invoices.md).
+1. Commerce headquarters extracts the simplified e-invoice in the XML format from the fiscal transaction that's linked to the sales transaction. It then submits the e-invoice to ZATCA. The submission is done by integrating with the [Electronic Invoicing service](../../../finance/localizations/mea/gs-e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities that are available to Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../../finance/localizations/mea/emea-sau-e-invoices.md).
 
 ## Set up Commerce for Saudi Arabia
 
@@ -151,7 +150,7 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 
 ### Configure the digital signature parameters
 
-To digitally sign and submit simplified e-invoices, you must obtain so-called Cryptographic Stamp Identifiers (CSIDs) from ZATCA. CSIDs are in the form of digital certificates. For more information about how to obtain CSIDs, see [Electronic invoicing onboarding in Saudi Arabia](../../../finance/localizations/mea/e-invoicing-sa-onboarding.md). You must obtain a CSID for each POS register that you will use, because sequential numbering and digital signing of simplified e-invoices are done per POS register.
+To digitally sign and submit simplified e-invoices, you must obtain so-called Cryptographic Stamp Identifiers (CSIDs) from ZATCA. CSIDs are in the form of digital certificates. For more information about how to obtain CSIDs, see [Electronic invoicing onboarding in Saudi Arabia](../../../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md). You must obtain a CSID for each POS register that you will use, because sequential numbering and digital signing of simplified e-invoices are done per POS register.
 
 The digital certificates that will be used to digitally sign simplified e-invoices are stored in Key Vault. For the offline mode of the Store Commerce app, signing can also be done by using a digital certificate that's stored in the local storage of the machine that the Store Commerce app is installed on. The [User-defined certificate profiles for retail stores](../global/certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../../dev-itpro/manage-secrets.md) feature.
 
@@ -165,12 +164,7 @@ After you configure certificate profiles, follow these steps.
 
 ### Specify ER configurations
 
-Depending on your purposes, you can download the ER configurations for electronic invoicing from the following sources:
-
-- If you don't have to customize the ER configurations that are provided by Microsoft or create your own ER configurations, you can import the Microsoft-provided configurations from Microsoft Dynamics Lifecycle Services. For more information, see [Import a configuration from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-- If you must customize the ER configurations that are provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Service (RCS) environment. For more information about how to work with RCS, see [Import ER configurations from RCS](../../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
-
-You must download the latest versions of the following configurations:
+You must download the latest versions of the following configurations from the Dataverse repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 - E-invoice generation configurations:
 
@@ -201,7 +195,7 @@ You must also configure legal entity–specific parameters of the e-invoice form
 
 ### Configure e-invoice submission
 
-Before you set up e-invoice submission parameters for Commerce, configure the Electronic invoicing service so that it can be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../../finance/localizations/mea/e-invoicing-sa-get-started.md). To support the configuration of CSIDs per POS register, follow these steps for each POS register in your Electronic Invoicing environment.
+Before you set up e-invoice submission parameters for Commerce, configure the Electronic invoicing service so that it can be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../../finance/localizations/mea/gs-e-invoicing-sa-get-started.md). To support the configuration of CSIDs per POS register, follow these steps for each POS register in your Electronic Invoicing environment.
 
 1. Add a corresponding CSID certificate to the Key Vault parameters of the environment.
 1. Create a feature setup of the **Processing pipeline** type for the electronic invoicing feature. To complete this step, configure the first feature setup, and then create new feature setups by copying them from the first one and modifying the parameters.
@@ -220,10 +214,6 @@ In Commerce headquarters, follow these steps to set up e-invoice submission para
     1. Select number sequences for submitted file names and batch submission IDs.
 
 1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
-1. On the **Electronic Invoicing** tab, set the following fields:
-
-    1. In the **Endpoint URL** field, specify the endpoint URL of the Electronic invoicing service instance that you're using.
-    1. In the **Environment** field, specify the name of your Electronic Invoicing environment in RCS.
 
 ### Enable the digital signature in offline mode
 

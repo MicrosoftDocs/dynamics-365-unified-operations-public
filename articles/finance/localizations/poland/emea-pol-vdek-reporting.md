@@ -1,13 +1,15 @@
 ---
 title: JPK-V7 reporting
-description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
+description: Learn how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland, including an outline on initial assumptions for the JPK-V7 report.
 author: liza-golub
-ms.date: 07/11/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Poland
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
@@ -29,7 +31,7 @@ The PL JPK_V7 EM setup.zip package provides a setup for the **JPK-V7M** (if your
 ## Initial assumptions for the JPK-V7 report
 
 The implementation of the JPK-V7 report is based on the same example in the article, [Prepare for JPK-V7 reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
-For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
+For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf-vat.md).
 
 The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7 report.
 

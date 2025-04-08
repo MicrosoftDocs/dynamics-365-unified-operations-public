@@ -1,11 +1,12 @@
 ---
 title: Bank statement file import troubleshooting
 description: Learn how to fix issues are caused by small differences in the bank statement file, including outlines on timezone differences and transformations.
-author: kfend
-ms.author: kfend
+author: EricWangChen
+ms.author: wangchen
 ms.topic: article
-ms.date: 03/29/2021
-ms.reviewer: kfend
+ms.date: 05/23/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2016-02-28

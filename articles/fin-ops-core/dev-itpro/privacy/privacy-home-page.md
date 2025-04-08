@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: article
 ms.date: 08/01/2023
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
 ms.search.region: Global
@@ -31,7 +31,6 @@ Your first step in responding to a request for data will usually be to use the P
 
 ## Product-specific considerations
 
-- [Respond to requests for personal data in AX 2012](privacy-ax2012.md)
 - [Respond to requests for personal data in Human Resources](respond-dsr-request-talent.md)
 - [General Data Protection Regulation overview](privacy-guide.md)
 - [Privacy data requests for Lifecycle Services (LCS)](privacy-lcs.md)

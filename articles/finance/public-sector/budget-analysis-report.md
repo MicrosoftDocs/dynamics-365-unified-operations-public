@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: Budget analysis report
-description: This article describes the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify.
-author: v-kiarnd
-ms.date: 07/08/2019
+description: Learn about the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity.
+author: music727
+ms.author: mibeinar
 ms.topic: article
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 01/03/2025
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: twheeloc
 ms.search.validFrom: 2019-6-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Budget analysis report
@@ -30,13 +23,13 @@ You can use the **Budget analysis** report to generate a summarized report that 
 
 The report can be sorted by fund and then account number. Within each fund, the report shows subtotals, based on the financial dimension set that you selected to group by. When you use the navigation pane to review activity, the grouping determines how activity is shown there.
 
-The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a Profit and Loss account type won't be included in the report. The report also doesn't include net totals. (Net totals are calculated as revenue minus expenses.)
+The report includes all accounts that have activity in the date range for either revenue or expenditure account types. Any account marked as a **Profit and Loss** account type won't be included in the report. The report also doesn't include net totals (net totals are calculated as revenue minus expenses).
 
 To view more information about an account, select the account name or number to open the **Budget analysis inquiry** page. You can view all the transactions that contribute to the amount on the report. To view the transactions, you can show drill-down report links on the report. Select a link to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances. The drill-down reports can optionally include pending transactions.
 
 ## Filter the data on this report
 
-When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. For more information, see the "How to work with reports" section of this article.
+When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. 
 
 | Field | Description |
 |---|---|

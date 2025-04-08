@@ -1,22 +1,21 @@
 ---
 title: Calculate material consumption
-description: This article provides information about various options that are related to the calculation of material consumption. 
+description: Learn about various options that are related to the calculation of material consumption, including an outline on variable and constant consumption. 
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 ms.topic: how-to
-ms.date: 02/02/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 06/28/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Calculate material consumption
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about various options that are related to the calculation of material consumption. 
+This article provides information about various options that are related to the calculation of material consumption.
 
 The following options that are related to the calculation of material consumption are available on the **Setup** and **Step consumption** tabs on the **Line details** FastTab of the **Bill of materials** page.
 
@@ -48,7 +47,7 @@ Typically, you select *Measurement* as the rounding-up mechanism when the raw ma
 1. Number of multiples that are required for 10 pieces of the finished good: 10 ÷ 2 = 5 pieces
 1. Total consumption:  4.5 × 5 = 22.5 meters of metal tube
 
-It's assumed that 0.5 meter of tube is scrapped for every five pieces of tube that are consumed.
+It's assumed that 0.5 meters of tube is scrapped for every five pieces of tube that are consumed.
 
 ### Consumption
 

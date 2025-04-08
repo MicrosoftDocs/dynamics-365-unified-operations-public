@@ -3,9 +3,11 @@ title: Mitigate a SQL injection attack
 description: Learn how to mitigate SQL injection attacks in X++, including code examples of a scenario with an issue and solution.
 author: pvillads
 ms.author: pvillads
-ms.topic: article
-ms.date: 02/21/2023
-ms.reviewer: josaw
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-12-01
@@ -16,7 +18,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview-banner](../includes/preview-banner.md)]
 
 An SQL injection attack occurs when malicious data values are passed to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you aren't careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in finance and operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
 

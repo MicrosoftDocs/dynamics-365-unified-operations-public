@@ -2,14 +2,15 @@
 title: Configure your B2C tenant in Commerce site builder
 description: This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 09/19/2024
+ms.topic: how-to 
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure your B2C tenant in Commerce site builder
@@ -29,10 +30,6 @@ To collect the required application information, follow these steps.
 1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. You will enter this ID later as the **Client GUID** in site builder.
 1. Select **Redirect URIs** and collect the reply URL shown for your site (the reply URL entered at setup).
 1. Go to **Home \> Microsoft Entra B2C – User flows**, and then collect the full names of each user flow policy.
-
-The following image shows an example of the **Microsoft Entra ID B2C - App registrations** overview page.
-
-![Microsoft Entra ID B2C - App registrations overview page with the Application (client) ID highlighted](../media/ClientGUID_Application_AzurePortal.png)
 
 The following image shows an example of user flow policies on the **Microsoft Entra B2C – User flows (policies)** page.
 

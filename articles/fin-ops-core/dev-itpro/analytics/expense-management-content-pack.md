@@ -6,7 +6,7 @@ ms.author: kfend
 ms.topic: article
 ms.date: 03/18/2019
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.industry: Manufacturing

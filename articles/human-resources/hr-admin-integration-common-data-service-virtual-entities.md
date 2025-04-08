@@ -151,8 +151,6 @@ The next step is to configure the virtual table data source in the Power Apps en
 
    - **Microsoft Entra Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   ![Microsoft HR Data Source.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
-
 9. Select **Save & Close**.
 
 ### Grant app permissions in Human Resources

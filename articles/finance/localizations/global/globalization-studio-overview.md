@@ -1,15 +1,14 @@
 ---
 title: Globalization Studio overview
 description: Learn about the Globalization Studio, including outlines on no-code/low-code globalization tools and services and multi-country localization content.
-author: Filatovm
-ms.author: wangchen
-ms.topic: article
-ms.date: 09/19/2022
+author: filatovm
+ms.author: filatovm
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 2022-09-20
-ms.dyn365.ops.version: 10.0.30
+
 ---
 
 # Globalization Studio overview 

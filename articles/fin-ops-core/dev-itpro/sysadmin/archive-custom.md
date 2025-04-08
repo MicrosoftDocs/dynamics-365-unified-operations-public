@@ -1,19 +1,17 @@
 ---
-title: Archive customization (preview)
-description: Learn about how the archive feature in Microsoft Dynamics 365 Finance supports table customizations, including code examples.
+title: Archive customization
+description: Learn about how the archive feature in Microsoft Dynamics 365 finance and operations apps supports table customizations, including code examples.
 author: pnghub
-ms.author: gned
+ms.author: fangzhan
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 03/24/2025
 ms.custom:
 ms.reviewer: twheeloc
 
 ---
 # Archive customization (preview)
 
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
-
-This article describes how the archive feature in Microsoft Dynamics 365 Finance supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
+This article describes how the archive feature in Microsoft Dynamics 365 finance and operations apps supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
 
 ## Add custom fields in history tables and business intelligence entities
 
@@ -27,14 +25,14 @@ Transactions records are moved to the history tables. The schema of a history ta
 
 ### Business entity
 
-Dataverse interacts with Dynamics 365 Finance and Operations. These virtual entities are used to retrieve data from the Finance and Operations database and save it to the corresponding tables in the Dataverse long term retention.
+Dataverse interacts with finance and Operations. These virtual entities are used to retrieve data from the finance and operations database and save it to the corresponding tables in the Dataverse long term retention.
 
 > [!IMPORTANT]
 > Don't add relationships between the entities.
 
 ### Step 1: Add fields to the history table via extensions
 
-The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in Finance, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
+The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in finance and operations apps, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
 
 ### Step 2: Add fields to BI entities via extensions
 
@@ -92,7 +90,7 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
         return builder.completeArchiveJobPostRequest(; 
 ```
 
-### Finance table names in live, history, and Dataverse-managed data lake tables
+### Finance and operations table names in live, history, and Dataverse-managed data lake tables
 
 | Scenario | Live table | History table | BI entity | Dataverse-managed data lake table |
 |---|---|---|---|---|
@@ -120,3 +118,69 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 | | SALESTABLE\_RU | SALESTABLEHISTORY\_RU | SalestableruBiEntity | mserp\_SalestableruBiEntity |
 | | SALESTABLE\_W | SALESTABLEHISTORY\_W | SalestablewBiEntity | mserp\_SalestablewBiEntity |
 | Supply Chain Management Inventory transaction | INVENTTRANSARCHIVE | INVENTTRANSARCHIVEHISTORY | InventtransarchiveBiEntity | mserp\_InventTransArchiveBiEntity |
+| Supply Chain Management Inventory Journal | INVENTJOURNALTABLE | INVENTJOURNALTABLEHISTORY | InventjournaltableBiEntity | mserp\_InventjournaltableBiEntity |
+| | INVENTJOURNALTABLE_IN | INVENTJOURNALTABLE_INHISTORY | InventjournaltableinBiEntity | mserp\_InventjournaltableinBiEntity |
+| | INVENTJOURNALTRANS | INVENTJOURNALTRANSHISTORY | InventjournaltransBiEntity | mserp\_InventjournaltransBiEntity |
+| | INVENTJOURNALTRANS_IN | INVENTJOURNALTRANS_INHISTORY | InventjournaltransinBiEntity | mserp\_InventjournaltransinBiEntity |
+| Finance Tax Trans | TAXTRANS | TAXTRANSHISTORY | TaxtransBiEntity | mserp\_TaxtransBiEntity |
+| | TAXTRANS\_BR | TAXTRANSHISTORY\_BR | TaxtransbrBiEntity | mserp\_TaxtransbrBiEntity |
+| | TAXTRANSGENERALJOURNALACCOUNTENTRY | TAXTRANSGENERALJOURNALACCOUNTENTRYHISTORY | TaxtransgeneraljournalaccountentryBiEntity | mserp\_TaxtransgeneraljournalaccountentryBiEntity |
+| | TAXTRANS\_IN | TAXTRANSHISTORY\_IN | TaxtransinBiEntity | mserp\_TaxtransinBiEntity |
+| | TAXTRANS_IT | TAXTRANSHISTORY\_IT | TaxtransitBiEntity | mserp\_TaxtransitBiEntity |
+| | TAXTRANS_REPORTING | TAXTRANSHISTORY_REPORTING | TaxtransreportingBiEntity | mserp\_TaxtransreportingBiEntity |
+| | TAXTRANS\_RU | TAXTRANSHISTORY\_RU | TaxtransruBiEntity | mserp\_TaxtransruBiEntity |
+| | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRY | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRYHISTORY | TaxtranssubledgerjournalaccountentryBiEntity | mserp\_TaxtranssubledgerjournalaccountentryBiEntity |
+| | TAXTRANS\_TH | TAXTRANSHISTORY\_TH | TaxtransthBiEntity | mserp\_TaxtransthBiEntity |
+| | TAXTRANS\_W | TAXTRANSHISTORY\_W | TaxtranswBiEntity | mserp\_TaxtranswBiEntity | 
+| Commerce transaction | RetailTransactionTable | RetailTransactionTableHistory | RetailTransactionTableBIEntity | mserp\_RetailTransactionTableBIEntity |
+| | RetailTransactionCashManagementTrans | RetailTransactionCashManagementTransHistory | RetailTransactionCashManagementTransBIEntity | mserp\_RetailTransactionCashManagementTransBIEntity |
+| | RetailTransactionFiscalCustomer | RetailTransactionFiscalCustomerHistory | RetailTransactionFiscalCustomerBIEntity | mserp\_RetailTransactionFiscalCustomerBIEntity |
+| | RetailTransactionSupplementaryInvoice | RetailTransactionSupplementaryInvoiceHistory | RetailTransactionSupplementaryInvoiceBIEntity | mserp\_RetailTransactionSupplementaryInvoiceBIEntity |
+| | RetailTransactionTable\_RU | RetailTransactionTable\_RUHistory | RetailTransactionTable\_RUBIEntity | mserp\_RetailTransactionTable\_RUBIEntity |
+| | RetailTransactionBankedTenderTrans | RetailTransactionBankedTenderTransHistory | RetailTransactionBankedTenderTransBIEntity | mserp\_RetailTransactionBankedTenderTransBIEntity |
+| | RetailTransactionValidationError | RetailTransactionValidationErrorHistory | RetailTransactionValidationErrorBIEntity | mserp\_RetailTransactionValidationErrorBIEntity |
+| | RetailTransactionTenderDeclarationTrans | RetailTransactionTenderDeclarationTransHistory | RetailTransactionTenderDeclarationTransBIEntity | mserp\_RetailTransactionTenderDeclarationTransBIEntity |
+| | RetailTransactionTaxMeasure | RetailTransactionTaxMeasureHistory | RetailTransactionTaxMeasureBIEntity | mserp\_RetailTransactionTaxMeasureBIEntity |
+| | RetailTransactionSalesTrans | RetailTransactionSalesTransHistory | RetailTransactionSalesTransBIEntity | mserp\_RetailTransactionSalesTransBIEntity |
+| | RetailTransactionPaymentTrans | RetailTransactionPaymentTransHistory | RetailTransactionPaymentTransBIEntity | mserp\_RetailTransactionPaymentTransBIEntity |
+| | RetailTransactionPaymentTrans\_BR | RetailTransactionPaymentTrans\_BRHistory | RetailTransactionPaymentTrans\_BRBIEntity | mserp\_RetailTransactionPaymentTrans\_BRBIEntity |
+| | RetailTransactionSafeTenderTrans | RetailTransactionSafeTenderTransHistory | RetailTransactionSafeTenderTransBIEntity | mserp\_RetailTransactionSafeTenderTransBIEntity |
+| | RetailTransactionPaymentRefundableAmounts | RetailTransactionPaymentRefundableAmountsHistory | RetailTransactionPaymentRefundableAmountsBIEntity | mserp\_RetailTransactionPaymentRefundableAmountsBIEntity |
+| | RetailTransactionAdditionalAddressTrans | RetailTransactionAdditionalAddressTransHistory | RetailTransactionAdditionalAddressTransBIEntity | mserp\_RetailTransactionAdditionalAddressTransBIEntity |
+| | RetailTransactionAddressTrans | RetailTransactionAddressTransHistory | RetailTransactionAddressTransBIEntity | mserp\_RetailTransactionAddressTransBIEntity |
+| | RetailTransactionAffiliationTrans | RetailTransactionAffiliationTransHistory | RetailTransactionAffiliationTransBIEntity | mserp\_RetailTransactionAffiliationTransBIEntity |
+| | RetailTransactionAttributeTrans | RetailTransactionAttributeTransHistory | RetailTransactionAttributeTransBIEntity | mserp\_RetailTransactionAttributeTransBIEntity |
+| | RetailTransactionChargeTaxMeasure | RetailTransactionChargeTaxMeasureHistory | RetailTransactionChargeTaxMeasureBIEntity | mserp\_RetailTransactionChargeTaxMeasureBIEntity |
+| | RetailTransactionChargeTaxTrans | RetailTransactionChargeTaxTransHistory | RetailTransactionChargeTaxTransBIEntity | mserp\_RetailTransactionChargeTaxTransBIEntity |
+| | RetailTransactionChargeTaxTransGTE | RetailTransactionChargeTaxTransGTEHistory | RetailTransactionChargeTaxTransGTEBIEntity | mserp\_RetailTransactionChargeTaxTransGTEBIEntity |
+| | RetailTransactionCustomerAccountDepositTrans | RetailTransactionCustomerAccountDepositTransHistory | RetailTransactionCustomerAccountDepositTransBIEntity | mserp\_RetailTransactionCustomerAccountDepositTransBIEntity |
+| | RetailTransactionDiscountTrans | RetailTransactionDiscountTransHistory | RetailTransactionDiscountTransBIEntity | mserp\_RetailTransactionDiscountTransBIEntity |
+| | RetailTransactionFiscalTrans | RetailTransactionFiscalTransHistory | RetailTransactionFiscalTransBIEntity | mserp\_RetailTransactionFiscalTransBIEntity |
+| | RetailTransactionFiscalTransExtendedData | RetailTransactionFiscalTransExtendedDataHistory | RetailTransactionFiscalTransExtendedDataBIEntity | mserp\_RetailTransactionFiscalTransExtendedDataBIEntity |
+| | RetailTransactionIncomeExpenseTrans | RetailTransactionIncomeExpenseTransHistory | RetailTransactionIncomeExpenseTransBIEntity | mserp\_RetailTransactionIncomeExpenseTransBIEntity |
+| | RetailTransactionInfocodeTrans | RetailTransactionInfocodeTransHistory | RetailTransactionInfocodeTransBIEntity | mserp\_RetailTransactionInfocodeTransBIEntity |
+| | RetailTransactionKitsDisassemblyTrans | RetailTransactionKitsDisassemblyTransHistory | RetailTransactionKitsDisassemblyTransBIEntity | mserp\_RetailTransactionKitsDisassemblyTransBIEntity |
+| | RetailTransactionLoyaltyRewardPointTrans | RetailTransactionLoyaltyRewardPointTransHistory | RetailTransactionLoyaltyRewardPointTransBIEntity | mserp\_RetailTransactionLoyaltyRewardPointTransBIEntity |
+| | RetailTransactionMarkupTrans | RetailTransactionMarkupTransHistory | RetailTransactionMarkupTransBIEntity | mserp\_RetailTransactionMarkupTransBIEntity |
+| | RetailTransactionNoteTrans | RetailTransactionNoteTransHistory | RetailTransactionNoteTransBIEntity | mserp\_RetailTransactionNoteTransBIEntity |
+| | RetailTransactionOrderInvoiceTrans | RetailTransactionOrderInvoiceTransHistory | RetailTransactionOrderInvoiceTransBIEntity | mserp\_RetailTransactionOrderInvoiceTransBIEntity |
+| | RetailTransactionTaxTrans\_IN | RetailTransactionTaxTrans\_INHistory | RetailTransactionTaxTrans\_INBIEntity | mserp\_RetailTransactionTaxTrans\_INBIEntity |
+| | RetailTransactionTaxTrans | RetailTransactionTaxTransHistory | RetailTransactionTaxTransBIEntity | mserp\_RetailTransactionTaxTransBIEntity |
+| | RetailTransactionTaxTransGTE | RetailTransactionTaxTransGTEHistory | RetailTransactionTaxTransGTEBIEntity | mserp\_RetailTransactionTaxTransGTEBIEntity |
+| | RetailEodStatementControllerLog | RetailEodStatementControllerLogHistory | RetailEodStatementControllerLogBIEntity | mserp\_RetailEodStatementControllerLogBIEntity |
+| | RetailEodStatementEventLog | RetailEodStatementEventLogHistory | RetailEodStatementEventLogBIEntity | mserp\_RetailEodStatementEventLogBIEntity |
+| | RetailEodTransactionAggregationHeader | RetailEodTransactionAggregationHeaderHistory | RetailEodTransactionAggregationHeaderBIEntity | mserp\_RetailEodTransactionAggregationHeaderBIEntity |
+| | RetailEodTransactionAggregationTrans | RetailEodTransactionAggregationTransHistory | RetailEodTransactionAggregationTransBIEntity | mserp\_RetailEodTransactionAggregationTransBIEntity |
+| | RetailEodTransactionError | RetailEodTransactionErrorHistory | RetailEodTransactionErrorBIEntity | mserp\_RetailEodTransactionErrorBIEntity |
+| | RetailEodTransactionBankedTenderTrans | RetailEodTransactionBankedTenderTransHistory | RetailEodTransactionBankedTenderTransBIEntity | mserp\_RetailEodTransactionBankedTenderTransBIEntity |
+| | RetailEodTransactionIncomeExpenseTrans | RetailEodTransactionIncomeExpenseTransHistory | RetailEodTransactionIncomeExpenseTransBIEntity | mserp\_RetailEodTransactionIncomeExpenseTransBIEntity |
+| | RetailEodTransactionInfocodeTrans | RetailEodTransactionInfocodeTransHistory | RetailEodTransactionInfocodeTransBIEntity | mserp\_RetailEodTransactionInfocodeTransBIEntity |
+| | RetailEodTransactionOrderInvoiceTrans | RetailEodTransactionOrderInvoiceTransHistory | RetailEodTransactionOrderInvoiceTransBIEntity | mserp\_RetailEodTransactionOrderInvoiceTransBIEntity |
+| | RetailEodTransactionPaymentTrans | RetailEodTransactionPaymentTransHistory | RetailEodTransactionPaymentTransBIEntity | mserp\_RetailEodTransactionPaymentTransBIEntity |
+| | RetailEodTransactionSafeTenderTrans | RetailEodTransactionSafeTenderTransHistory | RetailEodTransactionSafeTenderTransBIEntity | mserp\_RetailEodTransactionSafeTenderTransBIEntity |
+| | RetailEodTransactionSalesTrans | RetailEodTransactionSalesTransHistory | RetailEodTransactionSalesTransBIEntity | mserp\_RetailEodTransactionSalesTransBIEntity |
+| | RetailEodTransactionTable | RetailEodTransactionTableHistory | RetailEodTransactionTableBIEntity | mserp\_RetailEodTransactionTableBIEntity |
+| | RetailEodTransactionTenderDeclarationTrans | RetailEodTransactionTenderDeclarationTransHistory | RetailEodTransactionTenderDeclarationTransBIEntity | mserp\_RetailEodTransactionTenderDeclarationTransBIEntity |
+| | RetailStatementJour | RetailStatementJourHistory | RetailStatementJourBIEntity | mserp\_RetailStatementJourBIEntity |
+| | RetailStatementTrans | RetailStatementTransHistory | RetailStatementTransBIEntity | mserp\_RetailStatementTransBIEntity |
+| | RetailStatementVoucher | RetailStatementVoucherHistory | RetailStatementVoucherBIEntity | mserp\_RetailStatementVoucherBIEntity |

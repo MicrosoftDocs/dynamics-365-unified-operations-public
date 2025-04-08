@@ -3,10 +3,11 @@ title: Turn off model customization and deprecate functionality
 description: Learn about the process of disabling customization of a model. By following this process, you make it ineligible for over-layering.
 author: pvillads
 ms.author: pvillads
-ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: josaw
-audience: Developer
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1

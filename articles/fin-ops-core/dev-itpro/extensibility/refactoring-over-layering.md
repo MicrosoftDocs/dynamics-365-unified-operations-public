@@ -5,7 +5,7 @@ author: CGarty
 ms.author: CGarty
 ms.topic: article
 ms.date: 05/01/2018
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-04-01

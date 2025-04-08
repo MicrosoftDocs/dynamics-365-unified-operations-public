@@ -25,13 +25,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Remove an instance
 
-_**Applies To:** Human Resources on the stand-alone infrastructure_ 
-
-> [!NOTE]
-> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
-> The finance and operations app infrastructure supports the deletion of an environment. For more information about how to delete an environment, see [Delete an environment](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
+> For more information about how to delete an environment, see [Delete an environment](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 This article explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
@@ -56,7 +52,7 @@ Because a single Human Resources environment is contained in a single Power Apps
 
 
 > [!Important]
-> Before removing the Power Apps environment, ensure it is not being used for data integrations outside the scope of Human Resources. Also note that the default Power Apps environments cannot be removed. 
+> Before removing the Power Apps environment, ensure it's not being used for data integrations outside the scope of Human Resources. Note that the default Power Apps environments can't be removed. 
 
 To remove the entire Power Apps environment, including Human Resources and the associated apps and flows:
 

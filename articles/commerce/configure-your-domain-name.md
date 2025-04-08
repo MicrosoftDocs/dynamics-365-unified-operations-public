@@ -2,19 +2,15 @@
 title: Configure your domain name
 description: This article explains how to configure a domain name for a Microsoft Dynamics 365 e-commerce site.
 author: josaw1
-ms.date: 09/28/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
-ms.search.region: global
-ms.author: josaw
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-ms.search.form: 
-
+  - bap-template
 ---
 
 # Configure your domain name

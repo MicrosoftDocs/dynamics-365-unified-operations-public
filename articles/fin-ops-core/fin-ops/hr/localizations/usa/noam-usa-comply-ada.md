@@ -19,8 +19,6 @@ ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
 [!include [banner](../../../../../finance/includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
-
 This article describes features that can help your organization comply with the Americans with Disabilities Act (ADA). This information applies only to legal entities that do business in the United States.
 
 You can use the following features to manage information that can help you comply with the ADA.

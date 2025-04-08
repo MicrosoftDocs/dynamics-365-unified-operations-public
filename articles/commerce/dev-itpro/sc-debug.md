@@ -2,14 +2,15 @@
 title: Debug Store Commerce extensions using Visual Studio Code
 description: This article describes how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
 author: josaw1
-ms.date: 04/21/2022
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2022-03-30
-ms.dyn365.ops.version: AX 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Debug Store Commerce extensions using Visual Studio Code
@@ -46,9 +47,9 @@ To debug Store Commerce extensions by Using Visual Studio Code, follow these ste
 1. Inside the **.vscode** folder, create a new file that is named **launch.json**.
 1. In the **launch.json** file, add the following configurations to build and debug the Store Commerce extensions:
 
-    - **Debug Store Commerce** – This configuration will open the Store Commerce app and attach the extension code to it for debugging.
-    - **Build and Debug Store Commerce** - This configuration will build the extension code, deploy the extension, open the Store Commerce app, and attach the extension code to it for debugging.
-    - **Attach debugger to Store Commerce** - This configuration will attach the extension code to the Store Commerce app for debugging, but it won't open the Store Commerce app.
+    - **Debug Store Commerce** – This configuration opens the Store Commerce app and attaches the extension code to it for debugging.
+    - **Build and Debug Store Commerce** - This configuration builds the extension code, deploys the extension, opens the Store Commerce app, and attaches the extension code to it for debugging.
+    - **Attach debugger to Store Commerce** - This configuration attaches the extension code to the Store Commerce app for debugging, but doesn't open the Store Commerce app.
 
 1. Copy the following configuration code, paste it into the **launch.json** file, and then save the file.
 
@@ -89,7 +90,7 @@ To debug Store Commerce extensions by Using Visual Studio Code, follow these ste
     }
     ```
 
-1. Inside the **.vscode** folder, create a new file that is named **tasks.json**. You will use this file to create the configurations to build and install the Store Commerce app.
+1. Inside the **.vscode** folder, create a new file that is named **tasks.json**. You use this file to create the configurations to build and install the Store Commerce app.
 1. Copy the following configuration code, and paste it into the **tasks.json** file.
 
     ```json
@@ -123,7 +124,7 @@ To debug Store Commerce extensions by Using Visual Studio Code, follow these ste
 
 ### msbuild error
 
-You might receive the following error message: "msbuild : The term 'msbuild' is not recognized as the name of a cmdlet, function, script file, or operable program." In this case, close Visual Studio Code. Then open the Visual Studio developer command prompt, go to the solution directory, and enter **code** to reopen Visual Studio Code and set the correct msbuild version.
+You might receive the following error message: "msbuild : The term 'msbuild' isn't recognized as the name of a cmdlet, function, script file, or operable program." In this case, close Visual Studio Code. Then open the Visual Studio developer command prompt, go to the solution directory, and enter **code** to reopen Visual Studio Code and set the correct msbuild version.
 
 ### JSON file comment extension
 

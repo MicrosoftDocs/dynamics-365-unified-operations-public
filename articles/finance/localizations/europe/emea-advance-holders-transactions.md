@@ -3,10 +3,11 @@ title: Advance holder transactions
 description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 Finance, including an outline on creating purchase orders with advance holder details.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-11-30
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU

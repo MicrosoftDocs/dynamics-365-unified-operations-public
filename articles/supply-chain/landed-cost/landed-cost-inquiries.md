@@ -1,26 +1,14 @@
 ---
-# required metadata
-
 title: Landed cost inquiries
-description: This article describes how to find and use the various types of inquiries that are available for the Landed cost module.
-author: Weijiesa
-ms.date: 02/01/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ITMLine, ITMItemTracking, ITMContainerActivityTracking, ITMContainerTracking
-audience: Application User
-# ms.devlang: 
+description: Learn how to find and use the various types of inquiries that are available for the Landed cost module with a table that defines various columns.
+author: lisascholz91
+ms.author: lisascholz
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: weijiesa
-ms.search.validFrom: 2021-02-21
-ms.dyn365.ops.version: 10.0.17
+ms.search.form: ITMLine, ITMItemTracking, ITMContainerActivityTracking, ITMContainerTracking
+ms.topic: how-to
+ms.date: 02/12/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Landed cost inquiries

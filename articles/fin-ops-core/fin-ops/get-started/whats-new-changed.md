@@ -3,12 +3,13 @@ title: What's new or changed in finance and operations apps home page
 description: Access links to resources that can help you learn about the new features in the latest finance and operations applications.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: whats-new
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.date: 03/08/2024
-ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-09-30
 ms.search.form: DefaultDashboard

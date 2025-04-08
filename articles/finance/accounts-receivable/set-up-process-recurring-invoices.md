@@ -1,8 +1,8 @@
 ---
 title: Set up and process recurring invoices
 description: Learn how to set up and process recurring invoices. You can use recurring invoices if you must invoice customers for the same amount on a regular basis.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 03/22/2023
 ms.reviewer: twheeloc

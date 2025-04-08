@@ -3,8 +3,10 @@ title: VAT statement details for Estonia
 description: Learn how to set up a VAT statement for legal entities in Estonia, including outlines on setting up sales tax authorites and sales tax reporting codes.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Estonia

@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Product comparison modules
 description: This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 10/03/2022
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
+ms.custom: 
+  - bap-template
 ---
 
 # Product comparison modules

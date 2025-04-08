@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Create and process nonconformances
-description: This article describes how to perform nonconformance management based on an existing quality order.
-author: yufeihuang
-ms.date: 03/23/2021
-ms.topic: how-to
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
-# ms.devlang:  
+description: Learn how to perform nonconformance management based on an existing quality order, including a step-by-step process for creating a nonconformance.
+author: johanhoffmann
+ms.author: johanho
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: InventNonConformanceTable, InventQualityOrderTable
+ms.topic: how-to
+ms.date: 01/06/2025
+ms.custom: 
+  - bap-template
 ---
+
 # Create and process nonconformances
 
 [!include [banner](../../includes/banner.md)]
@@ -225,7 +215,7 @@ To close a nonconformance, follow these steps.
 1. You're prompted to confirm your selection. Select **Yes** to continue.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](../quality-management-processes.md)
 - [Enable quality and nonconformance management](../enable-quality-management.md)

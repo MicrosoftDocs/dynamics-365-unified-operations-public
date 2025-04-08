@@ -1,18 +1,17 @@
 ---
 title: Electronic invoicing for Egypt
-description: This article provides information that will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: gionoder
-ms.date: 02/09/2022
+description: Learna bout what will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+author: ikondratenko
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 02/09/2022
 ms.reviewer: johnmichalak
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: AX 10.0.12
 ms.collection: get-started
-ms.assetid: 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-07-08
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.12
 ---
 
 # Electronic invoicing for Egypt
@@ -39,8 +38,8 @@ Before you begin the procedures in this article, complete the following prerequi
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
 
-1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup.
 5. Select **Edit**.
@@ -55,7 +54,7 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
 
 There are parameters that must be set up in your Finance or Supply Chain Management environment. You can complete this setup in either of two places:
 
-- Directly in your Finance or Supply Chain Management environment. For more information, see [Setup Electronic Invoicing parameters](../global/e-invoicing-set-up-parameters.md).
+- Directly in your Finance or Supply Chain Management environment. For more information, see [Setup Electronic Invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 - In RCS. In the scope of electronic invoicing feature setup, you can define all parameters and then deploy them directly to your Finance or Supply Chain Management environment when you deploy the electronic invoicing feature.
 
 For both options, the parameters are the same. If you're setting up your first feature in the Electronic Invoicing service, we recommend that you follow these steps to set up the parameters in RCS and then deploy them to your connected application.
@@ -87,7 +86,7 @@ For both options, the parameters are the same. If you're setting up your first f
 22. Select **Save**, and close the page.
 23. Close the page.
 
-To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md)
+To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md)
 
 ## Privacy notice
 

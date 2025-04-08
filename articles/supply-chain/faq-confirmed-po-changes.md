@@ -1,15 +1,15 @@
 ---
 title: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
-description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the Confirmed purchase orders with changes workspace in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 11/16/2023
-ms.collection:
-  - bap-ai-copilot
-ms.custom:
-  - responsible-ai-faqs
-ms.topic: article
+description: Access answers to frequently asked questions about the AI technology that's used in the Confirmed purchase orders with changes workspace.
 author: cabeln
 ms.author: cabeln
+ms.topic: article
+ms.date: 02/13/2025
+ms.custom:
+  - responsible-ai-faqs
 ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Responsible AI FAQ for the Confirmed purchase orders with changes workspace
@@ -54,7 +54,7 @@ When you use the feature, follow these recommendations:
 - Always review generated summaries, and study the detailed lists of changes and impacts, before you make decisions about reconfirming purchase orders.
 - Always review generated communication drafts before you send them by email or post them to a Teams message.
 
-## See also
+## Related information
 
 - [Review and accept changes to confirmed purchase orders](procurement/purchase-order-changes-after-confirmation.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

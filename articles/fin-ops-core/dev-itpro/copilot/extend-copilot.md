@@ -4,7 +4,7 @@ description: Learn about how to extend Copilot capabilities in finance and opera
 author: jaredha
 ms.author: jaredha
 ms.topic: overview
-ms.date: 02/08/2024
+ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -20,7 +20,7 @@ ms.search.form:
 
 Copilot in finance and operations apps provides AI-powered assistance that helps application users through a sidecar chat experience that includes natural language guidance and actions. Copilot builds on contextual experiences that enrich the application. Here are some examples of the skills that Copilot capabilities can include:
 
-- Provide guidance about app features and functionality, such as [generative help and guidance with Copilot](enable-copliot-generative-help.md).
+- Provide guidance about app features and functionality, such as [generative help and guidance with Copilot](enable-copilot-generative-help.md).
 - Answer questions about your data.
 - Recommend and perform client actions.
 - Automate operations.

@@ -2,15 +2,13 @@
 title: Cycle counting example scenarios
 description: This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 06/08/2021
-ms.topic: article
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: 10.0.20
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 ---
 
 # Cycle counting example scenarios
@@ -174,7 +172,7 @@ Follow these steps to review the cycle counting differences.
 1. Find and select the cycle counting work that you looked at earlier. (For example, set a filter on the **Work pool ID** column to find records that have a value of *CycleCount*.) Notice that the **Work status** field for this work is now set to *Pending review*.
 
     > [!NOTE]
-    > For the work user account that you used to do the counting work, the **Cycle count supervisor** option is set to *No*, and the **Maximum percentage limit**, **Maximum quantity limit**, and **Maximum value limit** fields are all set to *0* (zero). Therefore, all counting differences that this user reports must be manually approved, and the **Work status** field for the related work is set to *Pending review*. If the counted value were within the deviation limits (as specified in the **Maximum percentage limit** or **Maximum quantity limit** fields on the **Work users** page), or if the **Cycle count supervisor** option were set to *Yes* for the user, the work would have automatically been closed.
+    > For the work user account that you used to do the counting work, the **Cycle count supervisor** option is set to *No*, and the **Maximum percentage limit**, **Maximum quantity limit**, and **Maximum value limit** fields are all set to *0* (zero). Therefore, all counting differences that this user reports must be manually approved, and the **Work status** field for the related work is set to *Pending review*. If the counted value were within the deviation limits (as specified in the **Maximum percentage limit** or **Maximum quantity limit** fields on the **Work users** page), or if the **Cycle count supervisor** option were set to *Yes* for the user, the work would have automatically been closed. When a cycle count supervisor adds a new item or license plate, the count is automatically approved. For other users, the cycle counting work is assigned the *Pending review* work status, regardless of the **Maximum percentage limit**, **Maximum quantity limit**, and **Maximum value limit** settings.
 
 1. On the Action Pane, on the **Work** tab, select **Cycle counting**.
 1. On the Action Pane, select **Accept count**.
@@ -249,7 +247,7 @@ Follow these steps to review the cycle counting differences.
 
 ## Scenario 3: Spot cycle counting
 
-The on-hand record states that there is an on-hand quantity of item *L0101* at location *01A02R2S2B*. The warehouse worker is at location *01A02R2S1B*. Although this location should be empty, it's full. Therefore, the warehouse worker immediately does a spot count of this location.
+The on-hand record states that there's an on-hand quantity of item *L0101* at location *01A02R2S2B*. The warehouse worker is at location *01A02R2S1B*. Although this location should be empty, it's full. Therefore, the warehouse worker immediately does a spot count of this location.
 
 ### Do cycle counting work for scenario 3
 
@@ -339,7 +337,7 @@ Follow these steps to set up a cycle count plan.
 1. On the Action Pane, select **Process cycle counting plan**.
 1. In the **Cycle count plans** dialog box, on the **Run in the background** FastTab, set the **Batch processing** option to *Yes*.
 1. Select **Recurrence**.
-1. In the **Define recurrence** dialog box, set up the batch job so that it begins immediately and runs once every minute, and so that there is no end date.
+1. In the **Define recurrence** dialog box, set up the batch job so that it begins immediately and runs once every minute, and so that there's no end date.
 1. Select **OK** to close the **Define recurrence** dialog box.
 1. Select **OK** to close the **Cycle count plans** dialog box.
 

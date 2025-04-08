@@ -1,59 +1,38 @@
 ---
-# required metadata
-
 title: Set up dispatch teams   
-description: This article describes how to create a dispatch team.
-author: sorenva
-ms.date: 05/01/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMADispatchTeamTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how to create a dispatch team, including a step-by-step process for creating a service order and dispatching teams to activities in service orders.
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.search.form: SMADispatchTeamTable
+ms.topic: how-to
+ms.date: 03/17/2025
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+  - bap-template
+  - evergreen
 ---
 
 
-# Set up dispatch teams 
+# Set up dispatch teams
 
 [!include [banner](../includes/banner.md)]
 
-
 This article describes how to create a dispatch team. After you create a dispatch team, you can assign workers to the team. When you create a service order, you can then relate a member of a dispatch team to an activity in the service order.
 
-1.  Click **Service management** \> **Setup** \> **Dispatch teams**.
+1. Go to **Service management** \> **Setup** \> **Dispatch teams**.
 
-2.  In the **Dispatch teams** form, click **New** to create a new team.
+2. On the **Dispatch teams** page, select **New** to create a new team.
 
-3.  In the **Dispatch team** field, enter a unique name for the dispatch team.
+3. In the **Dispatch team** field, enter a unique name for the dispatch team.
 
-4.  In the **Owner** field, select the employee who is responsible for this team.
-    
+4. In the **Owner** field, select the employee who is responsible for this team.
 
     > [!NOTE]
-    > <P>You can select only employees in this field. You can’t select vendors.</P>
+    > You can select only employees in this field. You can’t select vendors.
 
-
-
-5.  Optional: In the **Description** field, enter a brief description for this dispatch team.
-
+5. Optional: In the **Description** field, enter a brief description for this dispatch team.
 
 > [!NOTE]
-> <P>You can assign a worker to this dispatch team in the <STRONG>Worker</STRONG> form. For more information about how to assign a worker to a dispatch team, see <A href="/dynamicsax-2012//dispatch-workers-form">Dispatch workers (form)</A>.</P>
-
-
-
-
+> You can assign a worker to this dispatch team on the **Worker** page. Learn more in [Set up a preferred technician](set-up-preferred-technician.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

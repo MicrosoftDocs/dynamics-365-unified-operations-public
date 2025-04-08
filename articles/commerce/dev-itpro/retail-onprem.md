@@ -9,7 +9,7 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-06-20
-
+ms.service: dynamics-365-op
 ---
 
 # Commerce capabilities that are available in on-premises deployments

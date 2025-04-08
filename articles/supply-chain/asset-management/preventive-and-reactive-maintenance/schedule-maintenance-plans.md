@@ -1,15 +1,14 @@
 ---
 title: Schedule maintenance plans
-description: This article explains schedule maintenance plans in Asset Management.
-author: johanhoffmann
-ms.author: johanho
+description: Learn about schedule maintenance plans in Asset Management, including a step-by-step process for scheduling calendar entries based on maintenance plans.
+author: jodahlMSFT
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 01/09/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 06/28/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Schedule maintenance plans

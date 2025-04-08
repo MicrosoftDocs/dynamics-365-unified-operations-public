@@ -1,15 +1,13 @@
 ---
 title: Asset Management mobile app FAQs and known issues
-description: This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
-author: johanhoffmann
-ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
+description: Access answers to several frequently asked questions (FAQs) about the Asset Management mobile app, including questions about supported platforms and devices.
+author: jodahlMSFT
+ms.author: jodahl
 ms.topic: overview
 ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Asset Management mobile app FAQs and known issues
@@ -24,7 +22,7 @@ The Asset Management mobile app runs within the Power Apps mobile app. All platf
 
 ## Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. For more information, see the [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
 
 ## What versions of Supply Chain Management support the app?
 
