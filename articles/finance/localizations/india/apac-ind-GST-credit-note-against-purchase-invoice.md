@@ -6,11 +6,10 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/04/2019
+ms.date: 04/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.dyn365.ops.version: 10.0.4
 ---
 
 # Create a credit note against a purchase invoice
