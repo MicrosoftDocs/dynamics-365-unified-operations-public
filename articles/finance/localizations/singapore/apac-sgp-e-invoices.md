@@ -24,10 +24,6 @@ This article provides information to help you get started with Electronic invoic
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
 
-Watch the following overview of Singaporean electronic invoicing implementation in Dynamics 365 Finance.
-
-> [!VIDEO zzz]
-
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
@@ -120,7 +116,7 @@ To review and update the **Singaporean electronic invoice (SG)** electronic invo
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
-![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](emea-bel-einoices-docs.jpg)
+![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](../belgium/emea-bel-einoices-docs.jpg)
 
 > [!NOTE]
 > If you have created the derived analogues of the mentioned above Electronic Reporting configurations then use it instead of standard ones.
@@ -141,7 +137,7 @@ To review and update the **Singaporean electronic invoice (SG)** electronic invo
 17. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import** configuration.
 18. Select **Save**, and close the page. 
 
-![Screenshot of the integration channels configuration in Electronic document parameters.](emea-bel-einoices-channels.jpg)
+![Screenshot of the integration channels configuration in Electronic document parameters.](../belgium/emea-bel-einoices-channels.jpg)
 
 > [!NOTE]
 > If you need to use other integration channels, different from **EdiStatus** and **EdiImport**, then you must do additional configuration of the feature and the context configurations.
