@@ -22,6 +22,7 @@ Before you can use this feature, your system must meet the following requirement
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.37 or later.
 - The feature that's named *Material availability check on maintenance work orders* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
+- To use the aggregated material availability check the feature *Aggregated material availability check* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## How the material availability check works
 
@@ -120,5 +121,15 @@ After you've confirmed that all materials are available for a work order, you ca
 1. Select **Update work order state** on the toolbar.
 1. In the **Update work order state** dialog box, select the next work order state for the selected work orders.
 1. Select **OK** to confirm the change.
+
+## Aggregated material availability check
+
+To gain an overview of the total material requirements by spare part and warehouse dimension across all selected work orders, follow these steps:
+
+1. Navigate to the Aggregated on-hand inventory tab.
+1. Here, you will be able to view the inventory levels and the total material requirements summed across the selected work orders.
+1. This consolidated view allows you to easily identify and assess any deficiencies in the inventory.
+
+By using this feature, you can ensure that you have a comprehensive understanding of your material needs and can take proactive measures to address any shortages.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
