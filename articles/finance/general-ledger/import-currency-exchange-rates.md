@@ -48,18 +48,14 @@ The configuration enables exchange rates to be imported for five different excha
 
 - Banknote buying
 - Banknote selling
-- Cross rate
 - Forex buying
 - Forex selling
 
-Exchange rate types can be imported into the system individually, excluding cross rates.
-Cross rates can be imported in addition to the other currency exchange rates.
-If cross rates are not imported, the system will generate an error message during ledger posting processes.
-To ensure that cross rates are correctly imported into the system, the **Cross rate** parameter is set to **Yes** by default in the configuration.
+In addition, cross rates can be imported together with currency exchange rates if the value of the **Cross rate** key of the CBRT provider is set to **Yes**. 
+The cross rates will have the same exchange rate type that is selected on the **Import currency exchange rates** dialog page.
 
 >[!NOTE]
->If the **Cross rate** parameter is set to **Yes**, cross rates will be imported in addition to currency exchange rates of the exchange rate type that is selected on the **Import currency exchange rates** dialog page. The cross rates will have the >same exchange rate type. Otherwise, if the parameter is not set to **Yes**, cross rates will not be imported from CBRT.
-
+>If cross rates are not imported, an error message will be generated during ledger posting. To ensure that cross rates are correctly imported, the value of the **Cross rate** key is set to **Yes** by default in the configuration of the CBRT provider.
 
 | **Key** | **Value** |
 | ------ | -------------------------------------------------------------------------------|                        
