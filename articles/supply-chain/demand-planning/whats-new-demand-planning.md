@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: conceptual
-ms.date: 11/29/2024
+ms.date: 04/08/2025
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,74 @@ ms.custom:
 # What's new or changed in Demand planning
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 1.0.0.2794
+
+### New feature introduced in version 1.0.0.2794
+
+This version of Demand planning adds several new features, as described in the following subsections.
+
+#### Copilot grid cursor
+
+The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also displayed to help make it easier to understand the changes.
+
+#### New operator in rules: select all
+
+To improve efficiency and make it easier to formulate queries, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze* and *row level access*.
+
+The following table shows an example of how the *select all* operator can be used in a time fence rule. These rules result in all products having a two-month time fence except *Product A*, which has a three-month time fence.
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Conditions</th>
+      <th colspan="4">Ruling</th>
+    </tr>
+    <tr>
+      <th>Table</th>
+      <th>Column</th>
+      <th>Operator</th>
+      <th>Value</th>
+      <th>Time Bucket</th>
+      <th>Time Bucket Size</th>
+      <th>Role</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product</td>
+      <td>Product Name</td>
+      <td>Select all</td>
+      <td>N/A</td>
+      <td>Monthly</td>
+      <td>2&nbsp;Months</td>
+      <td>All</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Product</td>
+      <td>Product Name</td>
+      <td>Equals</td>
+      <td>Product&nbsp;A</td>
+      <td>Monthly</td>
+      <td>3&nbsp;Months</td>
+      <td>All</td>
+      <td>Active</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Multiple roles for time freezes
+
+Demand planning now lets you assign multiple rules to forecast calculations action cards. Each rule can have a different time-freeze horizon, which prevents a continuous forecast calculation from updating during the selected periods.
+
+### New fixes and improvements in version 1.0.0.2794
+
+This version of Demand planning introduces the following fixes and improvements.
+
+- Increased stability
+- New demo data with seasonal clusters
 
 ## Version 1.0.0.2502
 
