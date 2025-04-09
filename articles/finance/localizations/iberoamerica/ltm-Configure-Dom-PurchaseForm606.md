@@ -2,11 +2,11 @@
 title: Configure printing for Goods and Services Purchases Submission Form 606
 description: Learn about the required configuration for printing Goods and Services Purchases Submission Form 606  Dominican Republic
 author: Cpicon85
-ms.date: 03/04/2025
+ms.date: 04/09/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Configure printing Goods and Services Purchases 606 report of Dominican Republic.
@@ -17,12 +17,12 @@ This article explains how to configure Goods and Services Purchase Submission Fo
 Before you complete the steps in this article to generate the report, the following prerequisites must be met:
 - The legal entity's address must be in Dominican Republic.
 - Both the country/region-specific LATAM feature for Dominican Republic and the general LATAM feature must be enabled.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md). 
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
 
 ## Aditional configurations required for Goods and Services Purchase Submission Form (606) report:
 - You must create tax application as F606 to use on the report. See [Tax application for Latin America](../ltm-core-tax-application.md).
-- Configure master field list: first **list 2** for Type of Goods and Services Purchased with its respective code and then, configure field **list 3** for Method of Payment with its respective code in tax application code. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists).
+- Configure master field list: first **list 2** for Type of Goods and Services Purchased with its respective code and then, configure field **list 3** for Method of Payment with its respective code in tax application code. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 - You must create sales tax codes, one for purchases and one for services that will be used for Tax on Transfers of Industrialized Goods and Services (ITBIS), including ITBIS 18% and ITBIS 0% (goods and services respectively). Also remember to use a code, for ITBIS taken to cost and one for ITBIS subject to proportionality.
 - Once you create sales tax codes,
    - Go to Tax> indirect tax  > sales tax > sales tax codes.
