@@ -18,7 +18,7 @@ Before you complete the steps in this article to generate the report, the follow
 - The legal entity's address must be in Dominican Republic.
 - Both the country/region-specific LATAM feature for Dominican Republic and the general LATAM feature must be enabled.
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
 
 ## Aditional configurations required for Goods and Services Sales Submission Form (607):
 - You must create tax application as F607 to use on the report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
