@@ -52,7 +52,5 @@ To validate the tax details, follow these steps.
 
 To validate the financial entries, select **Inquiries \> Voucher**.
 
-![Example.](../media/Annotation-2019-05-20-161336.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
