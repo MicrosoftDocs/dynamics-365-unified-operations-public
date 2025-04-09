@@ -16,7 +16,7 @@ This article explains how to configure CCancelled Tax Receipts form 608 report. 
 Before you complete the steps in this article to generate the report, the following prerequisites must be met:
 - The legal entity's address must be in Dominican Republic.
 - Both the country/region-specific LATAM feature for Dominican Republic and the general LATAM feature must be enabled.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md). 
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
 
 ## Additional configurations required for Cancelled Tax Receipts Form (608):
