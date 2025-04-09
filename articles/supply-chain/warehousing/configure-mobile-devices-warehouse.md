@@ -438,6 +438,16 @@ The following table describes these options.
 <td>Show work line list</td>
 <td>Select an option for how workers will be able to view and interact with the lines for the currently selected picking work. For more information about this option, see <a href="pick-line-overview.md">Set up a mobile device menu item to provide a pick line overview</a>.</td>
 </tr>
+<tr class="odd">
+<td>Display tracking dimension control for last on-hand</td>
+<td>Select an option to determine how the <strong>tracking dimension below location control</strong> is displayed for the last on-hand item, including <strong>batch below number</strong> and <strong>serial below number</strong>. It has no impact on tracking dimension above location, such as batch above number or serial above number display.
+<ul>
+<li><strong>Default from warehouse management parameters</strong> – The mobile menu follows the configuration in <strong>Warehouse management parameter > General > Mobile device menu item display inventory dimensions</strong>. See <a href="mobile-device-parameters.md#mobile-device-menu-item-display-inventory-dimensions-fasttab-on-the-general-tab">Mobile device menu item display inventory dimensions FastTab on the General tab</a>.</li>
+<li><strong>Display tracking dimension control</strong> – The current mobile menu always displays the tracking dimension below location control (batch below number or serial below number), regardless of the warehouse management parameters setting.</li>
+<li><strong>Hide tracking dimension control</strong> – The current mobile menu always hides the tracking dimension below location control (batch below number or serial below number), regardless of the warehouse management parameters setting.</li>
+</ul>
+<strong>Note:</strong> This setting only takes effect if the menu item is used to process the supported work order type(s) (currently only <strong>sales order</strong>). Other work order types (e.g. transfer order, purchase order) are not supported.</td>
+</tr>
 </tbody>
 </table>
 
