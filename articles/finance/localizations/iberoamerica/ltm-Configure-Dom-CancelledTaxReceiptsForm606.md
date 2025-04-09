@@ -2,11 +2,11 @@
 title: Configure printing for Cancelled Tax Receipts Submission Form 608
 description: Learn about the required configuration for printing report of Cancelled Tax Receipts Submission Form 608 of Dominican Republic 
 author: Cpicon85
-ms.date: 03/04/2025
+ms.date: 04/09/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Configure printing for Cancelled Tax Receipts form 608 report of Dominican Republic.
@@ -16,13 +16,13 @@ This article explains how to configure CCancelled Tax Receipts form 608 report. 
 Before you complete the steps in this article to generate the report, the following prerequisites must be met:
 - The legal entity's address must be in Dominican Republic.
 - Both the country/region-specific LATAM feature for Dominican Republic and the general LATAM feature must be enabled.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse). 
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md). 
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
 
 ## Additional configurations required for Cancelled Tax Receipts Form (608):
 - You must create tax application as F608 to use on the report. See [Tax application for Latin America](ltm-core-tax-application.md).
 - You must create and configure a **document class** for cancellation purposes. In this document in tax application option, add the letter **A** in letter code field. Learn more in [Document classes for Latin America]( ltm-core-document-class.md)
-- Configure master **field list 7** to add and classify the Type of cancellation of your sales. In this form you could add  its respective code in tax application option.Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists).
+- Configure master **field list 7** to add and classify the Type of cancellation of your sales. In this form you could add  its respective code in tax application option.Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 - You must configure in the document class of sales cancellation in additional data section select **field list 7** as required. 
 
 ## Configure application-specific parameters
