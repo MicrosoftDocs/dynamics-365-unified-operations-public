@@ -2,15 +2,13 @@
 title: Configure Dataverse virtual entities
 description: Learn about how to configure virtual entities for finance and operations apps in Microsoft Dataverse, including overviews on authentication and authorization.
 author: pnghub
-ms.author: gned
+ms.author: abhijanand
 ms.topic: article
-ms.date: 03/12/2024
+ms.date: 04/09/2025
 ms.custom: NotInToc
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-05-31
-ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 
@@ -128,7 +126,7 @@ The next step in the process is to provide Dataverse with the finance and operat
 
     - **Microsoft Entra Application Secret** - The secret generated above.
 
-    - **Microsoft Entra Resource** - The URL at which you can access finance and operations.
+    - **Microsoft Entra Resource** - The URL at which you can access finance and operations apps.
 
 4.  Save the changes.
 
