@@ -66,20 +66,21 @@ Some stores in a fulfillment group might not be valid pickup locations. To ensur
 >
 > Until Azure Maps becomes available as a module in E-Commerce version version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
 
-## Bing Maps integration
+## Azure Maps integration
 
-The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
+The store selector module is integrated with the [Azure Maps REST application programming interfaces (APIs)](/azure/azure-maps/how-to-use-ts-rest-sdk) to use Azure Maps's Fuzzy Search features. An Azure Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
 
-For the Autosuggest REST API, you must ensure that the following URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md). 
+For the Azure Maps REST SDK, you must ensure that the following URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md).
 
-- To the **connect-src** directive, add **&#42;.bing.com**.
-- To the **img-src** directive, add **&#42;.virtualearth.net**.
-- To the **script-src** directive, **add &#42;.bing.com, &#42;.virtualearth.net**.
-- To the **script style-src** directive, add **&#42;.bing.com**.
+- To the **child-src** directive, add **blob:**.
+- To the **connect-src** directive, add **https://atlas.microsoft.com/** and **https://js.monitor.azure.com/**.
+- To the **font-src** directive, add **https://atlas.microsoft.com/**.
+- To the **script-src** directive, add **https://atlas.microsoft.com/**.
+- To the **style-src** directive, add **https://atlas.microsoft.com/**.
 
 ## Pickup in store mode
 
-The store selector module supports a **Pick up in store** mode that shows a list of stores where a product is available for pickup. It also shows store hours and product inventory for each store in the list. The store selector module requires the context of a product to render product availability and to let the user add the product to the cart, if the product's delivery mode is set to **pickup** at the selected store. For more information, see [Inventory settings](inventory-settings.md). 
+The store selector module supports a **Pick up in store** mode that shows a list of stores where a product is available for pickup. It also shows store hours and product inventory for each store in the list. The store selector module requires the context of a product to render product availability and to let the user add the product to the cart, if the product's delivery mode is set to **pickup** at the selected store. For more information, see [Inventory settings](inventory-settings.md).
 
 The store selector module can be added to a buy box module on a PDP to show stores where a product is available for pickup. It can also be added to a cart module. In this case, the store selector module shows pickup options for each line item in the cart. The store selector module can also be added to other pages or modules via extensions and customizations.
 
@@ -96,13 +97,13 @@ The following image shows an example of a store selector module used on a PDP.
 
 The store selector module also supports a **Find stores** mode. This mode can be used to create a store locations page that shows available stores and their information. In this mode, the store selector module works without product context and can be used as a standalone module on any site page. In addition, if the relevant settings are turned on for the module, users can select a store as their preferred store. When a store is selected as a user's preferred store, the store ID is maintained in the browser cookie. Therefore, the user must accept a cookie consent message.
 
-The following illustration shows an example of a store selector module that is used together with a map module on a store locations page.
+The following illustration shows an example of a store selector module that is used together with an azure maps module on a store locations page.
 
-![Example of a store selector module and a map module on a store locations page.](./media/ecommerce-Storelocator.PNG)
+![Example of a store selector module and azure map module on a store locations page.](./media/ecommerce-Storelocator-azure.PNG)
 
 ## Render a map
 
-The store selector module can be used together with the map module to show the store locations on a map. For more information about the map module, see [Map module](map-module.md)
+The store selector module can be used together with the azure maps module to show the store locations on a map. For more information about the azure maps module, see [Azure Maps module](azure-map-module.md)
 
 ## Store selector module properties
 
@@ -113,9 +114,9 @@ The store selector module can be used together with the map module to show the s
 | Style | **Dialog** or **Inline** | The module can be rendered either inline or in a dialog box. |
 | Set as preferred store | **True** or **False** | When this property is set to **True**, users can set a preferred store. This feature requires that users accept a cookie consent message. |
 | Show all stores | **True** or **False** | When this property is set to **True**, users can bypass the **Search radius** property and view all stores. |
-| Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Bing Autosuggest API. |
+| Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Azure Fuzzy Search API. |
 | Search radius | Number | This property defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used. |
-| Terms of service | URL |  This property specifies the terms of service URL that is required to use the Bing Maps service. |
+| Terms of service | URL |  This property specifies the terms of service URL that is required to use the Azure Maps service. |
 
 ## Site settings
 
@@ -153,7 +154,7 @@ To configure the store selector module to show available stores for a store loca
 1. Set the **Search radius** value in miles.
 1. Set other properties, such as **Set as preferred store**, **Show all stores**, and **Enable auto suggestion**, as you require.
 1. In the **Container with 2 columns** slot, select the ellipsis (**...**), and then select **Add module**.
-1. In the **Select modules** dialog box, select the **Map** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Azure Maps** module, and then select **OK**.
 1. In the module's properties pane, set any additional properties as you require.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
  
@@ -171,11 +172,11 @@ To configure the store selector module to show available stores for a store loca
 
 [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
+[Manage Azure Maps for your organization](./dev-itpro/manage-azure-maps.md)
 
-[Bing Maps REST APIs](/bingmaps/rest-services/)
+[Azure Maps REST SDK](/azure/azure-maps/how-to-use-ts-rest-sdk)
 
-[Maps module](map-module.md)
+[Azure Maps module](azure-map-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
