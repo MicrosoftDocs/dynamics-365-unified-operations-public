@@ -18,11 +18,11 @@ Before you complete the steps in this article to generate the report, the follow
 - The legal entity's address must be in Dominican Republic.
 - Both the country/region-specific LATAM feature for Dominican Republic and the general LATAM feature must be enabled.
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md). 
-- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
+- You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters).
 
 ## Aditional configurations required for Goods and Services Sales Submission Form (607):
 - You must create tax application as F607 to use on the report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
-- Configure master field list 1 to add and classify the Type of Income of your sales. In this form you could add  its respective code in tax application option. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists).
+- Configure master field list 1 to add and classify the Type of Income of your sales. In this form you could add  its respective code in tax application option. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 - You must create sales tax codes that will be used for Tax on Transfers of Industrialized Goods and Services (ITBIS), including ITBIS 18% and ITBIS 0% (goods and services respectively) . 
 - You must create and configure one document class payment media for each type, for example, cash, bank transfer, etc. Learn more in [Document classes for Latin America](ltm-core-document-class.md). Then, in tax application option you must configure with one of the following list:
   
