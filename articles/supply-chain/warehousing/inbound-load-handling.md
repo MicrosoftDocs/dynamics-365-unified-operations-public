@@ -109,7 +109,7 @@ When the warehouse worker has completed the putaway work, the system records and
 
 ## <a name="receive-complete-confirm"></a>Mark a load as receive complete
 
-Background processes, workers, and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. For more information about the **Load receive complete** processes, see [Load receive complete](load-receive-complete.md)
+Background processes, workers, and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. Learn more in [Mark loads as completely received](load-receive-complete.md).
 
 ## <a name="post-registered-quantities"></a>Post registered product quantities against purchase orders
 

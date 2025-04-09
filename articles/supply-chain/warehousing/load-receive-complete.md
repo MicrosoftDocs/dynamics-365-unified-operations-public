@@ -1,20 +1,21 @@
 ---
-title: Load receive complete
+title: Mark loads as completely received
 description: Learn about the receive complete process for inbound loads for purchase and inbound shipment orders, including a step-by-step process.
 author: Atapiabailon
 ms.author: atapiabailon
-ms.topic: how-to
-ms.date: 05/03/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WhsInboundReceivingCompleted
+ms.topic: how-to
+ms.date: 04/09/2025
+ms.custom: 
+  - bap-template
 ---
 
-# Load receive complete
+# Mark loads as completely received
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the load receive complete options and how the receiving completed periodic task works
+This article describes the options for marking loads as receive complete and how the *Receiving completed* periodic task works.
 
 ## <a name="receive-complete-confirm"></a>Mark a load as receive complete
 
@@ -32,50 +33,51 @@ Follow these steps to choose how loads related to purchase orders are finalized.
     - *Disabled* – Loads won't indicate whether inbound receiving is complete. With this setting, you run the risk that the *Update product receipts* cost update periodic task could run in the middle of an inbound registration process.
     - *Enabled* – After the *Receiving completed* process is run, loads are updated with a **Load receiving completed date and time** value (and related shipments are assigned a **Packing slip ID**). The *Update product receipts* cost update periodic task checks for these values to make sure it only processes loads that are received, which is especially important if you allow over-receiving or under-receiving.
     - *Enabled with auto post* – This option works just like the *Enabled* option, but the **Load status** value is also updated to *Received*, and the **Product receipt processing status** field on the load becomes available for use with the subsequent *Product receipt* posting process. You can't use this setting if you allow multiple product receipts per load.
-1. If you set the **Load receiving completed confirmation policy for purchase orders** field to *Enabled* or *Enabled with auto post* and want the *Receiving completed* process to run automatically, setup the **Receiving completed periodic task** described in this article.
-
-## <a name="receiving-completed-periodic-task"></a> Receiving completed periodic task
-
-Use the **Receiving completed**  periodic task to run the receiving completed process of loads for purchase orders automatically.
-
-The **Receiving completed** periodic task is only available if the value of the **Load receiving completed confirmation policy for purchase orders** is set to *Enabled* or *Enabled with auto post*.
-
-The **Receiving completed** periodic task comes with the following options:
-
-|Parameter                 |Description|
-|--------------------------|-----------|
-|Accept quantity exceptions| Choose whether to accept any differences between the quantities you received and the quantities on the load line: select No to reject the differences and cancel the confirmation process. Select Yes to continue processing.|
-|Records to include        | Choose which loads should be included in the periodic task. Customize this value by clicking on the *filter* button and using user-configurable queries. For more information about user-configurable queries, see [User configurable queries in warehouse management](user-configurable-queries-in-warehouse-management.md). |
-|Run in the background     | Choose if you want the task to run in the background as a batch process, and set up its recurrence. |
+1. If you set the **Load receiving completed confirmation policy for purchase orders** field to *Enabled* or *Enabled with auto post* and want the *Receiving completed* process to run automatically, set up the *Receiving completed* periodic task described in this article.
 
 > [!NOTE]
-> You can use the **Load status** and **Product receipt processing status** field values as filter criteria for the *Update product receipts* cost update periodic task. In addition, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process might be able to use the recorded packing slip ID as part of the *Update product receipts* periodic task.
+> When you set up the *Update product receipts* cost update periodic task, you can use the **Load status** and **Product receipt processing status** field values as filter criteria. In addition, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process might be able to use the recorded packing slip ID as part of the *Update product receipts* periodic task.
 
-To set up the **Receiving completed** periodic task, follow the next steps:
+## <a name="receiving-completed-periodic-task"></a>Automatically run the receiving completed process
 
-1. Navigate to **Warehouse management \> Periodic tasks  \> Receiving completed**
-1. A dialog box is shown in the screen, with different parameters that you can set up according to your business processes.
-1. Select whether you want to accept quantity exceptions or no by toggling the check box with title **Accept quantity exceptions**.
-1. Select the records to include, you can set up custom conditions by clicking on the **filter** button.
-1. Select if the periodic task should run in the background and its recurrence.
+The *Receiving completed* periodic task runs the receiving completed process of loads for purchase orders automatically. To set up the task to run automatically, follow these steps.
 
-## Example user-configurable query for the Receive completed periodic task
+1. On the Warehouse management parameters page, set the **Load receiving completed confirmation policy for purchase orders** field to *Enabled* or *Enabled with auto post*. The *Receiving completed* periodic task is only available if this field is set to one of these values. Learn more in [Mark a load as receive complete](#receive-complete-confirm).
+1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**. The **Receiving completed** dialog opens.
+1. On the **Parameters** FastTab, use the **Accept quantity exceptions** setting to choose whether to accept any differences between the quantities you received and the quantities on the load line. Select *No* to reject the differences and cancel the confirmation process. Select *Yes* to continue processing.
+1. On the **Records to include** FastTab, set up filters and constraints to define which loads to process. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
+1. On the **Run in the background** FastTab, specify how, when, and how often to run the task. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. Select **OK**.
 
-### Example: Only include loads with fully completed work
+## Example: Only include loads with fully completed work
 
-To only include loads with fully completed work, you need to configure the user-configurable query in the following way:
-1. Access the user-configurable query by clicking the *filter* button under the *Records to include* section on the **Received completed** dialog box.
-1. Select the *Joins* tab.
-1. Select the *Loads* join, use the *NotExist* join mode with WHSLoadTable -> WHSWorkTable relation, confirm the selection.
-1. Select the *Range* tab.
-1. Select the *Add* button, and set the following values: Table as *Work (NotExist)*, Field as *Work status* and as the Criteria select all the statuses that don't denote an open work, for example, Open, In process, Pending review and Combined.
-1. Select the *Add* button, and set the following values: Table as *Load*, Field as *Load receiving completed date and time* and as the Criteria select two double quotes, the two double quotes denote an empty value.
-1. Select the ok button and run the **Receive completed periodic task**.
+To set up the *Receiving completed* periodic task to only include loads with fully completed work, configure the task as follows:
 
+1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**.
+1. Expand the **Records to include** FastTab.
+1. Select the **Filter** button to open the query editor dialog.
+1. Open the **Joins** tab.
+1. Select the *Loads* join in the list.
+1. In the toolbar, select **Add table join**.
+1. Set **Show details** to *Yes*.
+1. Select the row with **Join mode** *NotExist* and **Table relation description** *WHSLoadTable -> WHSWorkTable*.
+1. In the toolbar, select **Select**.
+1. Open the **Range** tab.
+1. In the toolbar, select **Add** to add a new line and make the following settings for the new line.
+    - **Table** – Select *Work (NotExist)*.
+    - **Field** – Select *Work status*.
+    - **Criteria** – Select all the statuses that don't denote an open work record (for example, *Open*, *In process*, *Pending review*, and *Combined*). <!-- KFM: Those look like statuses that DO denote an open work record. I might misunderstand something here. Please confirm this list, thanks. -->
+1. In the toolbar, select **Add** to add a new line and make the following settings for the new line.
+    - **Table** – Select *Load*.
+    - **Field** – Select *Load receiving completed date and time*.
+    - **Criteria** – Enter two double quotes to denote an empty value.
 
-> [!IMPORTANT]
->
-> Add the *Load receiving completed date and time* in the query range to avoid already received loads to be part of the process every time the **Receive completed** periodic task runs. If you don't add this value to the query range, the process is going to be slower every time.
+    > [!TIP]
+    > Because the query only finds records that have an empty value in the *Load receiving completed date and time* field, the task won't consider already received loads. If you don't include this setting, the task will get slower each time it runs.
+
+1. Select **OK**.
+1. Set other options for the task as described in the previous section.
+1. Select **OK** to save and run the task.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3643,7 +3643,7 @@
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
-        - name: Load receive complete
+        - name: Mark loads as completely received
           href: warehousing/load-receive-complete.md
         - name: Create or modify an inbound load
           href: warehousing/create-or-modify-an-inbound-load.md
