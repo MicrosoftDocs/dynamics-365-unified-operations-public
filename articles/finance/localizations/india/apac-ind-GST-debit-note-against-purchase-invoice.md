@@ -20,7 +20,7 @@ This article explains how to create a debit note against a purchase order invoic
 
 To create a debit note against a purchase invoice, follow these steps.
 
-1. Go to **General ledger** \> **Journals** \> **General journal**.
+1. In Dynamics 365 Finance, go to **General ledger** \> **Journals** \> **General journal**.
 1. Create a journal, and name it.
 1. Select **Lines**.
 1. In the **Account type** field, select **Vendor**. 
