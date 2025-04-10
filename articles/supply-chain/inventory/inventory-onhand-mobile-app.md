@@ -1,8 +1,8 @@
 ---
 title: Inventory On-hand mobile app
 description: Learn about the function of the Inventory On-hand mobile app and how to onboard it, including prerequisites and system requirements.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
