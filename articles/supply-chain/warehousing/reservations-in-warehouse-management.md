@@ -199,6 +199,6 @@ The logic that determines how dimensions are synchronized is implemented in the 
 - `getInventDimForIssueTransFromReceipt`
 
 > [!NOTE]
-> When products use the inventory reservation hierarchy of the *Batch-below\[location\]* type and are batch-tracked for WMS, a *flexible warehouse-level dimension reservation policy* should be set, so that reservations can be done for those products.
+> When products use an inventory reservation hierarchy of the *Batch-below\[location\]* type and are batch tracked for WMS, you should set a *flexible warehouse-level dimension reservation policy*. In this way, you ensure that reservations can be done for those products.
 >
 > Learn more about the flexible warehouse-level dimension reservation policy in [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
