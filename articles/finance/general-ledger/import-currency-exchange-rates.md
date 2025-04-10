@@ -4,7 +4,7 @@ description: Learn about the requirements for importing foreign exchange referen
 author: RyanCCarlson2 
 ms.author: rcarlson
 ms.topic: article
-ms.date: 2/12/2025
+ms.date: 4/10/2025
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -51,17 +51,17 @@ The configuration enables exchange rates to be imported for four different excha
 - Forex buying
 - Forex selling
 
-In addition, cross rates can be imported together with currency exchange rates if the value of the **Cross rate** key of the CBRT provider is set to **Yes**. 
-The cross rates will have the same exchange rate type that is selected on the **Import currency exchange rates** dialog page.
+Cross rates can be imported with currency exchange rates if the value of the **Cross rate** key of the CBRT provider is **Yes**. 
+The cross rates will have the same exchange rate type selected on the **Import currency exchange rates** dialog page.
 
 >[!NOTE]
->If cross rates are not imported, an error message will be generated during ledger posting. To ensure that cross rates are correctly imported, the value of the **Cross rate** key is set to **Yes** by default in the configuration of the CBRT provider.
+>If cross rates aren't imported, an error message is generated during ledger posting. To ensure that cross rates are correctly imported, the value of the **Cross rate** key is set to **Yes** by default in the configuration of the CBRT provider.
 
 | **Key** | **Value** |
 | ------ | -------------------------------------------------------------------------------|                        
 | **Banknote buying** | Specify the exchange rate type for *Banknote buying*. |
 | **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
-| **Cross rate** | If the parameter is set to **Yes**, cross rates will be imported in addition to currency exchange rates.|
+| **Cross rate** | If the parameter is set to **Yes**, cross rates are imported in addition to currency exchange rates.|
 | **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
 | **Forex buying** | Specify the exchange rate type for *Forex buying*. |
 | **Forex selling** | Specify the exchange rate type for *Forex selling*. |
