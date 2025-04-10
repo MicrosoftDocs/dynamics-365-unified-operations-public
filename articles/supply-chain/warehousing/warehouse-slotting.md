@@ -197,7 +197,7 @@ For each sales order template that you create, follow these steps to add a line 
     In the query for the second line, you will now specify the criteria that are used to determine what locations the demand for that line can be slotted to.
 
 1. Select the line where the **Sequence** field is set to *2*.
-1. Select **Edit query**.
+1. Select **Edit query** (this has been renamed to **Select slot locations** from the 10.0.44 release).
 1. On the **Range** tab, select **Add** to add a line to the grid.
 1. On the new line, set the following values:
 
