@@ -66,7 +66,7 @@ To set up the *Receiving completed* periodic task to only include loads with ful
 1. In the toolbar, select **Add** to add a new line and make the following settings for the new line.
     - **Table** – Select *Work (NotExist)*.
     - **Field** – Select *Work status*.
-    - **Criteria** – Select all the statuses that don't denote an open work record (for example, *Open*, *In process*, *Pending review*, and *Combined*). <!-- KFM: Those look like statuses that DO denote an open work record. I might misunderstand something here. Please confirm this list, thanks. -->
+    - **Criteria** – Select all the statuses that don't denote an open work record. For example, you might select *Skipped*, *Closed*, and *Canceled*.
 1. In the toolbar, select **Add** to add a new line and make the following settings for the new line.
     - **Table** – Select *Load*.
     - **Field** – Select *Load receiving completed date and time*.
