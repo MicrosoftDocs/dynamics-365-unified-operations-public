@@ -1,8 +1,8 @@
 ---
 title: Inventory locations
 description: Inventory locations determine where items are stored and picked from in warehouses that don't use warehouse management processes (WMS).
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: WMSLocation, WMSBlockingCause, WHSLocation
 ms.topic: how-to
