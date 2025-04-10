@@ -43,6 +43,10 @@ The process requires the following information (at a minimum):
 - **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value.
 - **Shipment ID** or **License plate ID** – These values are used to validate which inventory items should be packed. The process depends on the mobile device menu item's **[Packing policy ID](warehouse-app-pack-containers-policies.md)** setting.
 
+If you want to keep track of container line packing details, such as the worker ID, packing quantity. You can go to **Warehouse management parameters** \> **Packing** and enable **Create container line packing details**. This is useful when there are multiple workers processing a container line and you want to keep track of it.
+ 
+ To view the logs, navigate to **Warehouse management** \> **Packing and containerization** \> **Containers**, where you can click **Container line packing details** button to view details for the selected container line, or **Container lines packing details** button to view details for all the container lines in the selected container.
+
 > [!NOTE]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
@@ -55,6 +59,8 @@ To create containers by using the Warehouse Management mobile app, workers must 
 - **Container type ID** – This value is used to identify the maximum physical volume and maximum weight capacity of the container.
 - **Container ID** – This value is a unique number that identifies the shipping container.
 
+ID of the worker who created the container is recorded in the **Created by** field in overview grid in **Warehouse management** \> **Packing and containerization** \> **Containers**.
+
 > [!NOTE]
 > A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
@@ -64,6 +70,8 @@ Workers can trigger the *Container closing* process directly, by using a Warehou
 
 - **Container ID** – The container that is being closed.
 - **Weight** – The weight of the container. The system assigns a default value, based on the item master weight definition.
+
+ID of the worker who closed the container is recorded in the **Closed by** field in overview grid in **Warehouse management** \> **Packing and containerization** \> **Containers**.
 
 ## Supported and unsupported processes
 
