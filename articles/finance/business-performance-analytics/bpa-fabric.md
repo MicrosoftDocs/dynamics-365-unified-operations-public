@@ -107,8 +107,6 @@ This section shows how you can create a custom Power BI dataset that extends the
  >[!Important]
 > We recommend not using the .pbix file from the Maker Portal, it's not parameterized and requires extra set up to connect to your shortcuts.
 
-    - In [Power BI](https://app.powerbi.com), open your workspace, and upload the Business performance analytics dataset from the location that you downloaded it to in step 3.
-
 1. Connect the dataset to the lakehouse.
 
     1. In the workspace, under the lakehouse, find the SQL Analytics Endpoint, and copy the SQL connection string.
