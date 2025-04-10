@@ -23,13 +23,13 @@ This version of Demand planning adds several new features, as described in the f
 
 #### Copilot grid cursor
 
-The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also displayed to help make it easier to understand the changes.
+The *Copilot grid cursor* offers detailed insights into a selected cell's value, including its original value, manual adjustments, and full adjustment history. User comments are also shown, to help make the changes easier to understand.
 
-#### New operator in rules: select all
+#### New operator in rules: Select all
 
-To improve efficiency and make it easier to formulate queries, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze* and *row level access*.
+To improve efficiency and make queries easier to formulate, Demand planning now provides a *select all* operator. The new operator is available in the following policies: *time fence*, *time freeze* and *row level access*.
 
-The following table shows an example of how the *select all* operator can be used in a time fence rule. These rules result in all products having a two-month time fence except *Product A*, which has a three-month time fence.
+The following table provides an example that shows how the *select all* operator can be used in a time fence rule. As a result of the rules, all products except *Product A* have a two-month time fence. *Product A* has a three-month time fence.
 
 <table>
   <thead>
@@ -42,8 +42,8 @@ The following table shows an example of how the *select all* operator can be use
       <th>Column</th>
       <th>Operator</th>
       <th>Value</th>
-      <th>Time Bucket</th>
-      <th>Time Bucket Size</th>
+      <th>Time bucket</th>
+      <th>Time bucket size</th>
       <th>Role</th>
       <th>Status</th>
     </tr>
@@ -51,21 +51,21 @@ The following table shows an example of how the *select all* operator can be use
   <tbody>
     <tr>
       <td>Product</td>
-      <td>Product Name</td>
+      <td>Product name</td>
       <td>Select all</td>
-      <td>N/A</td>
+      <td>Not applicable</td>
       <td>Monthly</td>
-      <td>2&nbsp;Months</td>
+      <td>2&nbsp;months</td>
       <td>All</td>
       <td>Active</td>
     </tr>
     <tr>
       <td>Product</td>
-      <td>Product Name</td>
+      <td>Product name</td>
       <td>Equals</td>
       <td>Product&nbsp;A</td>
       <td>Monthly</td>
-      <td>3&nbsp;Months</td>
+      <td>3&nbsp;months</td>
       <td>All</td>
       <td>Active</td>
     </tr>
@@ -74,11 +74,11 @@ The following table shows an example of how the *select all* operator can be use
 
 #### Multiple roles for time freezes
 
-Demand planning now lets you assign multiple rules to forecast calculations action cards. Each rule can have a different time-freeze horizon, which prevents a continuous forecast calculation from updating during the selected periods.
+Demand planning now lets you assign multiple rules to forecast calculation action cards. Each rule can have a different time freeze horizon. In this way, updates to a continuous forecast calculation are prevented during the selected periods.
 
 ### New fixes and improvements in version 1.0.0.2794
 
-This version of Demand planning introduces the following fixes and improvements.
+This version of Demand planning introduces the following fixes and improvements:
 
 - Increased stability
 - New demo data with seasonal clusters
@@ -163,14 +163,14 @@ This version of Demand planning introduces the following fixes and improvements:
 
 ### New features introduced in version 1.0.0.1232
 
-Forecast calculation job-run records now provide an **Explainability** tab, which lists each combination of dimensions (such as item variant, warehouse location, and so on) the forecast was calculated for. For each combination, it shows the forecast algorithm that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy.  Learn more in [Work with forecast profiles](forecast-profiles.md).
+Forecast calculation job-run records now provide an **Explainability** tab, which lists each combination of dimensions (such as item variant, warehouse location, and so on) the forecast was calculated for. For each combination, it shows the forecast algorithm that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy. Learn more in [Work with forecast profiles](forecast-profiles.md).
 
 ### New fixes and improvements in version 1.0.0.1232
 
 This version of Demand planning introduces the following fixes and improvements:
 
 - Increased stability.
-- Transformation jobs that include the **Country/Region** column are now processed correctly. Previously, these jobs failed with an error.  
+- Transformation jobs that include the **Country/Region** column are now processed correctly. Previously, these jobs failed with an error.
 - Improved the **Microsoft finance and operations apps** export data provider.
 - Improved error messages shown during transformation, calculation, forecast, export, and import operations.
 - Improved translation coverage in supported languages.
