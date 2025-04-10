@@ -13,8 +13,6 @@ ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_JP
   - AssetUndepreciatedBalancedSchedule_JP
-ms.custom: 
-  - bap-template
 ---
 
 # Change the depreciation method during the asset life for book
