@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 11/11/2024
+ms.date: 04/25/2025
 ms.custom: 
   - bap-template
 ---
@@ -42,6 +42,7 @@ To use this functionality, turn on one or both of the following features in [Fea
 
 - *Register material consumption on the production floor execution interface (non-WMS)* (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off.)
 - *Register material consumption as complete and edit dimensions on the production floor execution interface* (This feature adds support for WMS-enabled items. It requires Supply Chain Management version 10.0.42 or later.)
+- *Add lines to the adjust materials dialog* (Allows workers to add and delete material lines in the **Adjust Materials** dialog on the Production Floor Execution interface. It requires Supply Chain Management version 10.0.44 or later.)
 
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
@@ -57,6 +58,34 @@ Before you can use this feature, your system must meet the following requirement
 - You must make the feature available to workers by adding a **Tracked components** button to the appropriate tab and toolbar, as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 For more information about this feature, see [Register batch/serial numbers for finished products and their components (preview)](production-floor-execution-use.md#tracked-components).
+
+### Select color themes on production floor execution interface (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.44 GA -->
+
+When configuring the production floor execution interface, supervisors can select one of several default color themes, ranging from dark to light. Each worker can also select their own preferred theme, which overrides the default each time that worker signs in.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that's named *Select color themes on production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### List view for reporting job scrap from the production floor execution interface (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.44 GA -->
+
+Workers reporting job scrap from the production floor execution interface can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that's named *List view for reporting job scrap from the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Work with production floor execution configurations
 
@@ -83,11 +112,15 @@ Use the settings on the **Tab selection** FastTab to select which tabs the produ
 
 ### The Login FastTab
 
+The following settings are available on the **Login** FastTab:
+
 - **Enable numpad** – Set this option to *Yes* to add a numpad to the sign-in screen, which allows workers to enter their badge ID or personal number using a touch-screen numpad. Set this option to *No* to hide the numpad.
 - **Allow locking the touchscreen** – Set this option to *Yes* to allow workers to lock the touchscreen of the production floor execution interface so that they can sanitize it. When this option is set to *Yes*, a **Lock screen for sanitizing** button is added to the sign-in page. When a worker selects this button, the touchscreen is temporarily locked to prevent unintended input. A countdown timer is also shown. The worker can then safely clean the device and the screen. When the countdown is completed, the touchscreen is automatically unlocked.
 - **Screen lock duration** – When the **Allow locking touchscreen** option is set to *Yes*, use this option to specify the number of seconds that the touchscreen should be locked for sanitizing. The duration must be between 5 and 120 seconds.
 
 ### The Main view FastTab
+
+The following settings are available on the **Main view** FastTab:
 
 - **Enable search** – Set this option to *Yes* to include a search field on the jobs list. Workers can find a specific job by entering the job ID, or they can find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or scanning a bar code.
 - **Enable search by project ID** – Set this option to *Yes* to enable workers to search by project ID (in addition to job ID and order ID) in the search field of the production floor execution interface. You can set this option to *Yes* only when the **Enable search** option is also set to *Yes*.
@@ -98,6 +131,7 @@ Use the settings on the **Tab selection** FastTab to select which tabs the produ
 
 The following settings are available on the **Report progress** FastTab:
 
+- **Skip product selection** – Set this option to *Yes* to skip the page where workers identify which items they want to report progress on (formula item, co-products, and by-products). If you choose to skip this page, workers will go straight to the page where they specify the finished quantity and dimensions of each produced formula item, co-product, and by-product. <!-- KFM: I added this because I saw it in the UI. Are we keeping this? -->
 - **Enable adjust material** – Set this option to *Yes* to include the **Adjust material** button in the **Report progress** dialog box. Workers can select this button to adjust material consumption for the job.
 - **Default remaining quantity** – Set this option to *Yes* to pre-fill the expected remaining quantity for a production job in the **Report progress** dialog box.
 - **Generate license plate** – Set this option to *Yes* to generate a new license plate every time that a worker uses the production floor execution interface to report as finished. The license plate number is generated from a number sequence that is set up on the **Warehouse management parameters** page. When this option is set to *No*, workers must specify an existing license plate when they report as finished.
@@ -114,6 +148,5 @@ A batch job periodically cleans entries in the references table for devices that
 1. On the Action Pane, select **Clean up client configurations**.
 1. In the **Clean up client configuration** dialog box, set the **Number of days** field to the number of days of inactivity (before today) to consider. You will remove all configurations and sign-in records for devices that haven't been active during that time.
 1. Select **OK** to clean up the relevant configurations, based on the **Number of days** setting.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
