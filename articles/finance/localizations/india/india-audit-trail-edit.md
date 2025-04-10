@@ -122,7 +122,7 @@ updates from official branches, and requiring signoff on the release of product 
 ### Live site  
 
 Microsoft’s policies and practices related to protection of production systems and engagement in live site issues at the request of customers are described in the [Azure + Dynamics 365 + Online Services –
-Public & Government SOC 1 Type II Report]( which is regularly updated. Any back-end changes to product or data are made in accordance with the policies and practices described in this report. 
+Public & Government SOC 1 Type II Report](https://servicetrust.microsoft.com/DocumentPage/12d47f3e-ad90-4e63-a505-1cfd6c24145a) which is regularly updated. Any back-end changes to product or data are made in accordance with the policies and practices described in this report. 
 
 ### Dynamics 365 Finance environments that are deployed outside of India 
 
@@ -130,8 +130,7 @@ If a Dynamics 365 Finance environment is deployed outside of India, a company ca
 
  - Option 1 - Geo to geo migration 
 Under some conditions, to fulfill India's daily backup requirement, a company that operates in India and has its Dynamics 365 Finance environment deployed outside of India can consider migrating the Dynamics 365
-Finance environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](../../../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md). When a Dynamics 365 Finance environment that contains data necessary to
-fulfill the daily backup requirement is migrated to a datacenter in India, the approach that is described in the Dynamics 365 Finance environments that are deployed in India section is applicable. 
+Finance environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](../../../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md). When a Dynamics 365 Finance environment that contains data necessary to fulfill the daily backup requirement is migrated to a datacenter in India, the approach that is described in the Dynamics 365 Finance environments that are deployed in India section is applicable. 
 
  - Option 2 - Multi-instance installation 
 Under some conditions, a company that operates in India and has its Dynamics 365 Finance environment deployed outside of India can consider a multi-instance installation, where the Indian legal entities are
