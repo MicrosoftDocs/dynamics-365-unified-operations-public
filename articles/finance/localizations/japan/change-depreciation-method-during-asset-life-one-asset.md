@@ -45,8 +45,8 @@ To change the depreciation profile for a fixed asset, follow these steps.
 ## View the undepreciated balance schedule for fixed assets
 
 To view the undepreciated balance schedule for fixed assets, go to **Fixed assets \> Setup \> Depreciation rate schedules \> Undepreciated balance schedules**.
-    - The corresponding data must exist for the depreciation profile update.  
-    - The **From method**, **To method**, **Service life**, and **Years passed** values determine which record to apply to the asset change.  
+- The corresponding data must exist for the depreciation profile update.  
+- The **From method**, **To method**, **Service life**, and **Years passed** values determine which record to apply to the asset change.  
 
 
 
