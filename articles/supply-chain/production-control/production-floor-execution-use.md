@@ -46,13 +46,19 @@ The job list has the following columns. The numbers correspond to the numbers in
 1. **Selection column** – The leftmost column uses check marks to indicate jobs that have been selected by the worker. Workers can select multiple jobs in the list at the same time. To select all the jobs in the list, select the check mark in the column header. When a single job is selected, details about that job are shown in the lower part of the page.
 1. **Job status column** – This column uses symbols to indicate the status of each job. Jobs that have no symbol in this column have a status of *Not started*. A green triangle indicates jobs that have a status of *Started*. Two yellow vertical lines indicate jobs that have a status of *Stopped*.
 1. **High priority column** – This column uses exclamation marks to indicate jobs that have high priority.
+1. **Job ID** – This column shows the uniq job ID for a job.
 1. **Order** – This column shows the production order number for a job.
+1. **Oper. No.** – This column shows the operation number of the operation that a job is part of.
 1. **Description** – This column shows a description of the operation that a job is part of.
+1. **Product** – This column shows the product number of the item that is being produced by a job.
 1. **Requested** – This column shows the quantity that a job is planned to produce.
 1. **Started** – This column shows the quantity that has already been started for a job.
 1. **Completed** – This column shows the quantity that has already been completed for a job.
 1. **Scrapped** – This column shows the quantity that has already been scrapped for a job.
 1. **Remaining** – This column shows the quantity that remains to be completed for a job.
+1. **Unit** – This column shows the unit of measure of quantity for a job.
+
+Additional columns might be shown to support catch weight items if the catch weight configuration key is enabled for your system.
 
 ## Active jobs tab
 
@@ -60,22 +66,7 @@ The **Active jobs** tabs shows a list of all jobs that the signed-in worker has 
 
 ![Active jobs tab.](media/pfei-active-jobs-tab.png "Active jobs tab")
 
-The active jobs list has the following columns:
-
-- **Selection column** – The leftmost column uses check marks to indicate jobs that have been selected by the worker. Workers can select multiple jobs in the list at the same time. To select all the jobs in the list, select the check mark in the column header. When a single job is selected, details about that job are shown in the lower part of the page.
-- **Job ID** – This column shows the uniq job ID for a job.
-- **Order** – This column shows the production order number for a job.
-- **Oper. No.** – This column shows the operation number of the operation that a job is part of.
-- **Description** – This column shows a description of the operation that a job is part of.
-- **Product** – This column shows the product number of the item that is being produced by a job.
-- **Requested** – This column shows the quantity that a job is planned to produce.
-- **Started** – This column shows the quantity that has already been started for a job.
-- **Completed** – This column shows the quantity that has already been completed for a job.
-- **Scrapped** – This column shows the quantity that has already been scrapped for a job.
-- **Remaining** – This column shows the quantity that remains to be completed for a job.
-- **Unit** – This column shows the unit of measure of quantity for a job.
-
-Additional columns might be shown to support catch weight items if the catch weight configuration key is enabled for your system.
+The **Active jobs** list shows the same columns as the **All jobs** list.
 
 ## My jobs tab
 
