@@ -46,7 +46,7 @@ This article contains information about the new Health check view for offline re
 
  ## Healthcheck Operation
 
-The healthcheck operation can be initiated from the current health check page or from the database connection status. 
+The healthcheck operation can be initiated from the current health check page or from the database connection status. The healthcheck operation will be availabe for all devices with offline capability installed.
 
 When initiated, the operation performs the following checks:
 
