@@ -116,6 +116,9 @@ In the label layout in the preceding example, only the license plate ID (`$Licen
     - **Label layout data source ID** – Enter a name for the data source (for example, *LPPlusPurchOrder*).
     - **Description** – Enter a short description of the data source (for example, *License plate + Purchase order*).
     - **Label layout type** – Select *License plate label*.
+    - **Join type** - Select the type of join for the data source. Options are:
+       - **Inner**: Converts the joins to inner joins. This is the default behavior.
+       - **Outer**: Converts the joins to outer joins, which helps to avoid the need for multiple label layout data sources. For example, a license plate label with a join to batch requires two label layout data sources: one for items that are batch enabled and one for those that are not.
 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Edit query**.
