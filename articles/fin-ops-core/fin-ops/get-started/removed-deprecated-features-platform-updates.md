@@ -28,7 +28,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective April 2025
 
-### Microsoft Dynamics 365 Translation Service support ends on October 15, 2025
+### <a id="dts-deprecation"></a>Microsoft Dynamics 365 Translation Service support ends on October 15, 2025
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
