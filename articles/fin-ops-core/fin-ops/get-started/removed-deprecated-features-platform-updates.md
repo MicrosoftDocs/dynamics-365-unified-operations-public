@@ -28,15 +28,17 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective April 2025
 
-### Dynamics Translation Service support ends on June 30, 2025
+### Microsoft Dynamics 365 Translation Service support ends on October 15, 2025
+
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** |  Dynamics Translation Service (DTS) reaches the end-of-support on June 30, 2025, and is longer available after this date. If you are an existing user of the DTS, you can longer access DTS after June 30, 2025. Furthermore, you can no longer retrieve translation request outputs stored in DTS. The service will be removed from Dynamics Lifecycle Services and the extensions will be unpublished.  |
-| **Replaced by another feature?**   | Consider using alternative tools and translation services, such as [Custom Translator](/azure/ai-services/translator/custom-translator/overview), for future translation needs.   |
-| **What do you need to do?**        |  For DTS users, it is recommended to download any applicable translation request output files for future recycling before June 30, 2025. </br?</br> Users of the DTS Azure DevOps extension should remove the tasks from any build pipelines prior to June 30, 2025, otherwise these tasks will fail because the service is unreachable after June 30, 2025. For more information about this deprecation, please contact your Microsoft representative or dtssup@microsoft.com  |
-| **Product areas affected**         | Finance and operations apps |
+| **Reason for deprecation/removal** |  Microsoft Dynamics 365 Translation Service (DTS) is deprecated. This service will reach end-of-support on October 15, 2025, and will no longer be available after this date. If you are an existing user of the Dynamics 365 Translation Service, you will no longer be able to access it after October 15, 2025. This includes retrieval of translation request outputs stored in the Dynamics 365 Translation Service. The service will be removed from Dynamics Lifecycle Services and the extensions will be unpublished.  |
+| **Replaced by another feature?**   | Consider using alternative tools and translation services, such as [Microsoft Custom Translator](/azure/ai-services/translator/custom-translator/overview), for future translation needs.   |
+| **What do you need to do?**        |   It is recommended to download any applicable translation request output files for future recycling before October 15, 2025.
+Users of the Azure DevOps extension should remove the tasks from any build pipelines prior to October 15, 2025, otherwise these tasks will fail since our service will be unreachable after October 15, 2025. Consider using alternative tools and translation services, such as the Microsoft Custom Translator, for future translation needs. For more information about this deprecation, please contact your Microsoft representative or send an email to dtssup@microsoft.com.  |
+| **Product areas affected**         | Business Central, finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Dynamics Translation Service support ends on June 30, 2025 |
+| **Status**                         | Dynamics 365 Translation Service deprecated, and will reach end-of-support on October 15, 2025 |
 
 ### Anonymous access is disabled for Finance and Operations managed storage accounts.
 
