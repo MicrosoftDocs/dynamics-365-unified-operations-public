@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for Cancelled Tax Receipts form 608 report of Dominican Republic.
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to configure CCancelled Tax Receipts form 608 report. This report will allow you to detail cancelled tax receipts.
 
