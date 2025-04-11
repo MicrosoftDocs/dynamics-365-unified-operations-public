@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual  
 ms.custom: 
   - bap-template
-ms.date: 04/09/2025
+ms.date: 04/11/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -38,7 +38,18 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Dynamics Translation Service support ends on June 30, 2025 |
 
-### Disable storage account key access to finance and operations managed storage accounts
+### Anonymous access is disabled for Finance and Operations managed storage accounts.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | As part of our ongoing commitment to strengthening security, a recent review has identified that some storage accounts are currently configured to allow anonymous access. To enhance the protection of data, we are disabling anonymous access for the storage accounts. Anonymous access presents a potential security risk. |
+| Replaced by another feature?     | None | 
+| What do you need to do?          | <p>This change allows for greater control and security where you can manage access policies. For more details, visit [Create & Secure Your Own Storage Account](/azure/storage/common/storage-account-create?tabs=azure-portal). </p><p>Use secure access methods instead of public url's: Replace public URLs with User Delegation SAS urls. For more details, visit [Grant Limited Access with SAS](/azure/storage/common/storage-sas-overview).</p> |
+| Product areas affected             | Any integration/interaction with a finance and operations managed storage account is affected. |
+| Deployment option                  | All |
+| **Status**                         | The anonymous access will be disabled for sandbox environment starting April 15, 2025, through April 30, 2025. Followed by disabling anonymous access on production environments, starting May 5, 2025, and onwards. Any workflows relying on public blob containers may be affected. |
+
+### Disable storage account key access to Finance and Operations managed storage accounts
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

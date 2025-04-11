@@ -1,8 +1,8 @@
 ---
 title: Create a new warehouse layout
 description: Learn how to set up information about the locations in a warehouse, including an outline and step-by-step process on setting the default location capacity. 
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 ms.topic: how-to
