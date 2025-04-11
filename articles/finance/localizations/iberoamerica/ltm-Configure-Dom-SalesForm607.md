@@ -62,7 +62,7 @@ To configure application-specific parameters, follow these steps.
 1. Back to **Lookups** tab, select **TaxType**.
 1. In the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **ITBIS**.
-1. In Tax Code select all  sales tax code created for ITBIS tax.
+1. In **Tax Code** select all sales tax code created for ITBIS tax.
 1. Repeat steps 15 and 16 for each column of the report.
 
 To ensure that the report shows the transactions that meet the configured conditions, complete the **Lookup result** fields as **Not Applicable** or **No** with **blank** and **non-blank** conditions
@@ -72,11 +72,11 @@ To ensure that the report shows the transactions that meet the configured condit
 To generate the **Format 607 DO** report, follow these steps.
 
 1. Go to **Tax > Inquiries and reports > LATAM > Tax reporting**.
-1. In the Format mapping field, enter or select a value.
+1. In the **Format mapping** field, enter or select a value.
 1. Select **OK**.
-1. In the TAX application Id field, specify the tax application code that you created for this report.
-1. In the **From** date field, enter a date.
-1. In the To date field, enter a date.
+1. In the **TAX application ID** field, specify the tax application code that you created for this report.
+1. In the **From date** field, enter a date.
+1. In the **To date** field, enter a date.
 1. Select **OK**.
    
 You can generate the excel file performing the same configuration in **Format 607 (Excel)DO**
