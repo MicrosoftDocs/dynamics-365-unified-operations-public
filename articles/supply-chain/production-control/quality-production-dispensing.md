@@ -144,7 +144,7 @@ After releasing the batch or production order as described in the previous secti
 
 1. Open the **Dispensing ticket** from the **View** tab on the production or batch order.
 1. In the **Journal** column, click on the journal that you want to open.
-1. In the **Dispensing details** section, select **New** to create a new line for registering a dispensed quantity. If you are making multiple measurements of the same portion of the material you are dispensing, then you can create a new line for each distinct measurement. 
+1. In the **Dispensing details** section, select **New** to create a new line for registering a dispensed quantity. If you are making multiple measurements of the same portion of the material you are dispensing, you can create a new line for each distinct measurement. 
 1. In the Action Pane in the **Dispensing details** section, select **Post dispensed** to calculate the average value of the registered measurements. The calculated average value will be updated on the line item for the dispensed material in the **journal lines** section in the **Dispensed** field.  
 1. In the Action Pane, select **Confirm** to transfer the value for the calculated dispensed quantity to the **Dispensing pick journal**.
 1. In the Action Pane, you can select **Post** to post the **Dispensing pick journal** which will register the dispensed quantity as consumed in inventory.
@@ -152,73 +152,20 @@ After releasing the batch or production order as described in the previous secti
 
 ## Option to auto-create dispensing pick journal for reverting remaining material from the dispense process
 
-By setting the **Allow over-dispensing with reverse pick** configuration as described in a previous section, the system can automatic generate dispensing pick list that will reverse material that has been over-picked for the dispensing process. This is relevant when you stage the material it's full handling unit such as a container to the location where the dispensing operation is done. Given the configuration for allowing over-dispensing with revers pick is set, follow these steps to use it.
+By setting the **Allow over-dispensing with reverse pick** configuration as described in a previous section, the system can automatically generate a dispensing pick list that will reverse material that has been over-picked for the dispensing process. This can be relevant when you stage material in full handling unit, such as a container or bag, to the location where the dispensing operation is done. Follow these steps to use it, if you have set the option for **Allow over-dispensing with reverse pick** that is described in a previous section.
 
-1. Generate the **Dispensing ticket** and **Dispense pick journal** as by releasing the production or batch order as described in previous step.
+1. Generate the **Dispensing ticket** and **Dispense pick journal** by releasing the production or batch order as described in the previous step.
 1. Select **Dispense pick journal** from the **View** tab on the order.
 1. In the **Journal** column, click on the Journal you want to open.
 1. In the **Journal lines** section, increase the quantity in the **Consumption** field to match the quantity of the material that you want to stage to the dispensing area.
-1. Close the **Dispense pick journal.
-1. Select **Dispensing ticket** from the **View tab on the order.
-1. In the **Dispensing details** section, select **New** to create lines for measurements of the dispensed material.
-1. Select **Post dispensed** to update the **Dispensed** field for the material in the **Journal lines** section.
+1. Close the dispense pick journal.
+1. Select **Dispensing ticket** from the **View** tab on the order.
+1. In the **Dispensing details** section, select **New** to create lines for the measurements of the dispensed material.
+1. Select **Post dispensed** to update the **Dispensed** field on the material line in the **Journal lines** section.
 1. In the Action Pane, select **Confirm** to transfer the value from the calculated dispensed quantity to the **Dispensing pick journal**
 1. In the Action Pane, select **Post** to post the **Dispense pick journal**
 1. Navigate back to batch order page.
 1. Under the **View** tab, select **All** in the **Journals** field group.
 1. Select the journal with the description starting with *Dispensing adjustment for..*
-1. Open the journal, and the line item with a negative quantity that represents the difference between the quantity that was registered as staged and what was confirmed and posted as dispensed. 
-1. Post this journal to update the inventory with the remaining quantity from the dispense process.
-
-
-## Example scenario: Using production dispensing
-
-The following scenario shows and example of how to use production dispensing where the picking list journal for non-dispensed products. This procedure use the *USPI* demo data.
-
-1. Open Supply Chain Management and select the *USPI* demo data company.
-1. Go to **Production control** \> **Setup** \> **Production control parameters**.
-1. Open the **Standard update** tab and make the following setting.
-    - **Enable dispensing for production** – Set to *Yes* 
-    - **Allow over-dispensing with reverse pick** – Set to *Yes*.
-1. Go to **Product information management** \> **Products** \> **Released products**
-1. Use the filter field to find product *M5005*
-1. Open the product details page and expand the **Manage inventory** FastTab
-1. Under the **Dispensing** field group make the following setting 
-    - **Allow over-dispensing with reverse pick** – Set to *true*.
-    - **Overdispense** – Set to *10* percent.
-    - **Underdispense** – Set to *10* percent.
-1. In the released products list page, use the filter field to find product *P4000*.
-1. In the action pane, under the Engineer tab, select Formula versions.
-1. Select **Approval** and make the following setting in the dialog:
-    - **Remove approval** - set to *No*.
-    - Confirm the dialog with **OK**
-1. In the action pane, select **New** \> **Formula and formula version** and make the following settings in the dialog:
-    - **Formula number** - Set to *4711*
-    - **Name** - *Dispensing*
-    - **Copy** - Set to *Yes*
-    - **Site** - Set to *1*
-    - Confirm the dialog with **OK**
-1. In the Action Pane, on the **Formulas** tab, select **Formula**.
-1. In the **Formula lines** section, select **New** to add product *M5005* to the formula.
-1. Go to **Production control** \> **Production orders** \> **All production orders**.
-1. Select **New batch order** and make the following settings in the dialog.
-    - **Item number** - Set to *P4000*.
-    - Leave all other fields in the dialog with their default values.
-1. Confirm with **OK**
-1. On the Action Pane, open the **Production order** tab and select **Estimate**. Select **OK** in the dialog to move the order to the *Estimated* state.
-1. On the Action Pane, open the **Production order** tab and select **Release**. Make the following settings in the dialog.
-    - **Picking list** – Select a picking list name from the list.
-    - **Dispensing ticket** – Select a dispensing ticket name from the list.
-1. Select **OK** in the release dialog to confirm the release step for the order.
-1. Return to the **All production orders** list page. Notice the values in the following two columns.
-    - **Picking list status** = *Open*.
-    - **Dispensing ticket status** = *Open*.
-1. On the Action Pane, open the **View** tab and select **Dispensing pick journal**.
-1. Open the relevant journal in the grid.
-1. Change the quantity in the **Consumption** field to a value that is greater then the value in the **Proposal** field. The quantity in the **Consumption** field represents the amount of material you have staged to the process.
-1. Close journal and return to the **All production orders** page.
-1. Select the production order you are working with. On the Action Pane, open the **View** tab and select **Dispensing tickets**.  
-1. In the **Dispensing details** section, select **New** to create a new line for the dispensed quantity for the product. You can create multiple lines, which will then represents multiple measurements for the same dispensed amount.
-1. Select **Post dispensed** to complete the registered values for dispensing. This process calculates the average of registered values and updates the **Dispensed** field for the product in the **Journal lines** section. You'll get an error in this process if the dispensed quantity exceeds the thresholds defined on the product.
-1. When you have completed all the lines in the **Dispensing ticket**, select **Confirm** from the toolbar. This action updates the calculated value in the **Dispensed** field in the **Dispensing pick journal**.
-1. After confirming the dispensed quantities, select **Post**, which posts the **Dispensing pick list** journal with the dispensed quantities. This action also creates a **Dispensing adjustment** journal with a proposal to return a quantity that equals the difference between the quantity that has been staged to the production order and the quantity that has been dispensed.
+1. Open the journal, and notice that the journal line has a negative quantity that is calculated as the difference between the quantity that was registered as staged and the quantity that was confirmed and posted as dispensed. 
+1. Post this journal to update the inventory with the quantity that was over-picked for the dispense process.
