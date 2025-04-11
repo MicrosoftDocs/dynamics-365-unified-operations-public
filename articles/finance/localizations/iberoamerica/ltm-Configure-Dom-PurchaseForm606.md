@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing Goods and Services Purchases 606 report of Dominican Republic.
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to configure Goods and Services Purchase Submission Form (606) so it can be printed. Purchase transactions records that companies use to keep a detailed record of their operations indicate the vendor information and document details. If applicable, they also indicate the corresponding taxes and tax withholdings, including local and foreign transactions and other mandatory information that the regulations specify.
 
