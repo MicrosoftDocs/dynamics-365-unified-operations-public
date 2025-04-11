@@ -3001,6 +3001,10 @@
             href: production-control/production-feedback.md
           - name: Time and attendance registration
             href: production-control/time-attendance-registrations.md
+          - name: Electronic batch records (EBR) (preview)
+            href: production-control/quality-electronic-batch-record.md
+          - name: Production dispensing (preview)
+            href: production-control/quality-production-dispensing.md
         - name: Manage financials in production
           items:
           - name: Allocate time to jobs in a job bundle
