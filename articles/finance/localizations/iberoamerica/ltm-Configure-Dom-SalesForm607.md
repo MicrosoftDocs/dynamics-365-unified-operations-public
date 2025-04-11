@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for report of sales of Goods and services Form 607 for Dominican Republic.
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to configure the Goods and Services Sales Submission Form (607) so it can be printed. Sales transactions records that companies use keep a detailed record of their operations. For each transaction, these records indicate the customer information and document details. If applicable, the records also indicate the corresponding taxes and tax withholdings.
 
