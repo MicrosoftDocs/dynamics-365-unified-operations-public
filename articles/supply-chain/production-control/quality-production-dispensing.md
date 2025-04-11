@@ -19,22 +19,22 @@ ms.custom:
 
 <!-- KFM: This needs to go into the TOC. But where? -->
 
-When dealing with hazardous materials or sensitive components in production processes, accurate dispensing of materials minimizes the risk of contamination, preserving the integrity of the materials and ensuring the safety of both the product and personnel.
+When dealing with hazardous materials or sensitive components in production processes, accurate dispensing of materials is crucial. It minimizes the risk of contamination, preserves the integrity of the materials, and ensures the safety of both the product and personnel.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. Production dispensing is essential in certain environments for several reasons.
+Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. This is essential in certain environments for several reasons.
 
-- In highly regulated industries, such as pharmaceuticals or chemicals, precise dispensing ensures compliance with strict guidelines and standards, maintaining product quality and safety.  
-- When dealing with hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages.
+- In highly regulated industries, such as pharmaceuticals or chemicals, precise dispensing ensures compliance with strict guidelines and standards, maintaining product quality and safety. 
+- When handling hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages
 - For expensive materials, precise dispensing helps prevent waste and fraud, reducing costs and ensuring efficient resource utilization. Additionally, accurate dispensing contributes to consistent product quality, meeting customer expectations, and protecting workers and the environment by handling dangerous substances correctly.
-- To support the regulated dispensing process, you can:
-    - Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
-    - Configure the system to automatically return any remaining, un-dispensed material back to inventory.
-    - Restrict the dispensing process to workers who are authorized to perform it, ensuring that only trained and qualified personnel handle the materials.
-    - Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here: [Electronic signatures overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
+To support the regulated dispensing process, you can:
+- Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
+- Configure the system to automatically return any remaining, un-dispensed material back to inventory.
+- Restrict the dispensing process to workers who are authorized to perform it, ensuring that only trained and qualified personnel handle the materials.
+- Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here: [Electronic signatures overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
-Workers use the *Dispensing ticket* page to manage the dispense of material to production and batch orders. In the page they register the amount of material to be dispensing, and confirm confirm the amount. After confirmation, the dispensed quantities are registered as consumed in the *Dispensing pick journal*. Materials that are not configured for dispensing, are issued through the production picking list journal. 
+Workers use the *Dispensing ticket* page to manage the dispensing of material to the production or batch order. On this page, they register and confirm the amount of material to be dispensed. After confirmation, the dispensed quantities are registered as consumed in the *Dispensing pick journal*. Materials that are not configured for dispensing on the production or batch order are issued through the production picking list journal.
 
 ## Prerequisites
 
@@ -115,8 +115,7 @@ To use a dispensing process, you must configure dispensing options for each rele
     - **Dispensing control** – Set to *Yes* to enable dispensing control for the product.
     - **Underdispense** – Set the threshold in percent by which the dispensed quantity is allowed to be less than the proposed quantity. This configuration ensures that when workers enter the dispensed quantity in the dispense ticket on a production order, the system validates that the quantity does not fall below the defined threshold.
     - **Overdispense** – et the threshold in percent by which the dispensed quantity is allowed to be larger than the proposed quantity. This configuration ensures that when workers enter the dispensed quantity in the dispense ticket on a production order, the system validates that the quantity does not go above the defined threshold.
-    - **Authorized personnel** – Set to *Yes* to only allow authorized personnel to dispense materials for production. <!-- KFM: How do we know/control which users are authorized? -->
-1. On the Action Pane, select **Save**.
+    - **Authorized personnel** – Set to *Yes* to only allow workers who are assigned the Production dispenser security role to do dispensing.
 
 ## Set up BOM and formula lines for the dispensing process
 
@@ -145,14 +144,14 @@ The following scenario shows and example of how to use production dispensing whe
 1. Open the **Standard update** tab and make the following setting.
     - **Allow over-dispensing with reverse pick** – Set to *true*.
 1. Go to **Product information management** \> **Products** \> **Released products**
-1. Create a new product *DIS-0001*, and enable it for the dispensing as described in previous the sections. Make sure the product has the following setting for dispensing
+1. Enable a product for dispensing as described in previous the sections. Make sure the product has the following setting for dispensing
     - **Allow over-dispensing with reverse pick** – Set to *true*.
     - **Overdispense** – Set to *10* percent.
     - **Underdispense** – Set to *10* percent.
 1. In the released products list page set a filter on product *P4000*.
 1. In the action pane, under the Engineer tab, select Formula versions.
 1. In the action pane, under the Formula tab, select Formula.
-1. In the Formula lines section, select New to and add product *DIS-0001* to the formula for product *P4000*.
+1. In the Formula lines section, select New to and add the product enabled for dispensing to the formula for product *P4000*.
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Select **New production order** or **New batch order** to create a new order for product *P4000*.
 1. On the Action Pane, open the **Production order** tab and select **Estimate**. Select **OK** in the dialog to move the order to the *Estimated* state.
