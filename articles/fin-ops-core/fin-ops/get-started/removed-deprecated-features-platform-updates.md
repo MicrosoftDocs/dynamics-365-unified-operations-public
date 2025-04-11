@@ -38,7 +38,7 @@ Detailed information about objects in finance and operations apps can be found i
 Users of the Azure DevOps extension should remove the tasks from any build pipelines prior to October 15, 2025, otherwise these tasks will fail since our service will be unreachable after October 15, 2025. Consider using alternative tools and translation services, such as the Microsoft Custom Translator, for future translation needs. For more information about this deprecation, contact your Microsoft representative or send an email to dtssup@microsoft.com.  |
 | **Product areas affected**         | Business Central, finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Dynamics 365 Translation Service deprecated, and will reach end-of-support on October 15, 2025 |
+| **Status**                         | Dynamics 365 Translation Service deprecated, and will reach end-of-support on October 15, 2025. |
 
 ### Anonymous access is disabled for Finance and Operations managed storage accounts.
 
