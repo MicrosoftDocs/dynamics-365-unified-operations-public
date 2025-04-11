@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 2012
 # What's new in Dynamics Translation Service
 
 [!include[banner](../includes/banner.md)]
-[!INCLUDE[dts-deprecation](../../includes/dts-deprecation.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
