@@ -1,6 +1,6 @@
 ---
 title: Agent management (preview)
-description: This article describes the Agent management feature in Dynamics 365 finance and operations.
+description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
 ms.topic: conceptual
@@ -14,96 +14,111 @@ audience: Application User
 
 [!include [preview-banner](../includes/preview-banner.md)]
 
-This article describes the Agent management feature in Dynamics 365 finance and operations.
+This article describes the **Agent management** feature in Microsoft Dynamics 365 finance and operations apps.
 
-## Overview 
+The **Agent management** feature in finance and operations apps enables autonomous, AI-powered agents to perform predefined tasks in your business ecosystem. Users can discover, configure, and manage agents that automate routine operational tasks.
 
-The Agent management feature in Dynamics 365 Finance and Operations enables autonomous agents to perform predefined tasks within your business ecosystem. Here, users can discover, configure, and manage AI-powered
-agents that can automate routine operational tasks. 
+## Prerequisites
 
-### Prerequisites 
+Before you can use the **Agent management** feature, a Power Platform admin center administrator must ensure that the following prerequisites are met:
 
-Before using Agent management, a Power Platform Admin Center (PPAC) administrator must ensure the following prerequisites are met: 
- - The environment must have a Dataverse instance linked.
- - The environment must have the "Copilot for Finance and Operations apps" solution (logical name: msdyn_fnocopilot) installed. Minimum accepted version is 1.0.03006.1.
- - The Copilot feature flag must be turned on in the Power Platform Admin Center.
-   - Go to the Power Platform admin center > **Environments**.
-   - Select your environment, click **Settings**.
-   - On this page, select **Product**, click **Features**.
-   - Confirm **Copilot** feature flag is turned on.  
- - Billing must be enabled. In Power Platform admin center, go to **Billing** > **Licenses**. Select **Copilot Studio** and create a new billing plan if necessary.
-Then, assign credits to the relevant environment. Find more details here. 
+- A Dataverse instance must be linked to the environment.
+- The **Copilot for Finance and Operations apps** solution (logical name: msdyn\_fnocopilot) must be installed in the environment. The minimum accepted version is 1.0.03006.1.
+- The **Copilot** feature flag must be turned on in the Power Platform admin center.
 
-A Dynamics 365 Finance and Operations administrator must ensure the following additional prerequisites are met: 
- - The **Immersive Home** feature must be enabled in the **Feature management** workspace in your Dynamics 365 finance and operations environment.
- - The **Agent Management** feature must be activated in the **Feature management** workspace. 
+    1. In the Power Platform admin center, go to **Environments**.
+    1. Select your environment, and then select **Settings**.
+    1. Select **Product**, and then select **Features**.
+    1. Confirm that the **Copilot** feature flag is turned on.
 
-### Navigation options 
+- Billing must be enabled.
 
-Users can access Agent-related pages through: 
- - Immersive Home - The Immersive home is the primary navigation hub for discovering and managing agents.
+    1. In the Power Platform admin center, go to **Billing** \> **Licenses**. 
+    1. Select **Copilot Studio**.
+    1. Create a new billing plan as necessary.
+    1. Assign credits to the relevant environment. Learn more in [title](url).
 
-It provides direct access to:  
- - **Agent activity** page using the **View Activity** on the top right of the Immersive Home.
- - **Agents** page with **Manage** and **Library** tabs using **View agents** on the top right of the Immersive Home. 
+A Dynamics 365 finance and operations apps administrator must ensure that the following additional prerequisites are met:
 
- - Search bar - provides quick access by searching for:  
-**Agents**
-**Agent activity**
+- The **Immersive Home** feature must be enabled in the **Feature management** workspace in your finance and operations environment.
+- The **Agent Management** feature must be activated in the **Feature management** workspace.
 
+## Navigation options
 
-### Configuring agents 
+You can access agent-related pages from the following places:
 
-Users can discover and activate new agents using the 
- - **Library** tab
-     - Browse available agent templates
-     - Preview agent capabilities
-     - Select and configure new agents for deployment 
- - **Manage** tab
-    - View currently active agents
-    - Edit existing agent configurations
-    - Activate or deactivate individual agent tasks 
+- **Immersive Home** – The Immersive Home is the primary navigation hub for discovering and managing agents. Use **View Activity** in the upper right of the Immersive Home to go directly to the following agent-related pages:
 
->[!Note]
-> Administrators can turn off relevant agent features using feature management that affects all users, effectively turning off autonomous agents across the entire organization. 
+    - **Agents** – This page include **Manage** and **Library** tabs.
+    - **Agent activity**
 
-### Set up agents the first time  
+- **Search bar** – Quickly access the agent-related pages by entering the following search terms:
 
-When setting up an agent for the first time, users are automatically guided through a configuration wizard. This wizard helps you set agent parameters and define task-specific preferences. 
+    - **Agents**
+    - **Agent activity**
 
-### Track agent activity 
+## Discover and activate agents
 
-The **Agent activity** page provides a comprehensive log of actions performed by autonomous agents: 
- - Displays agent interactions and task completions.
- - This data is stored in the **Copilot for Finance and Operations Agent Activity** Dataverse entity with logical name msdyn_erpagentactivity.
- - Retains activity history for up to 90 days by default. After 90 days, a Dataverse system job deletes these records. 
+You can discover and activate new agents by using the following tabs on the **Agent** page:
 
-### Customizing activity retention 
+- **Library**
 
-Administrators can modify the activity history retention period by adjusting the **Delete Copilot for finance and operations Agent activity records older than 90 days** Dataverse system job. Environment administrators can see all system jobs by using the Power Platform environment settings app. 
+    - Browse available agent templates.
+    - Preview agent capabilities.
+    - Select and configure new agents for deployment.
 
->[Note]
-> The system job is created after any records exist in your environment in the msdyn_erpagentactivity Dataverse entity. The system job isn't created until there is data to clean up. 
+- **Manage**
 
-#### Additional considerations 
- - Billing and credits
-     - Your organization is billed for each deployed agent.
-     - If your organization exhausts its allocated credits, agents may be temporarily deactivated.
-     - Contact your organization's administrator to renew credits and restore agent functionality. 
+    - View agents that are currently active.
+    - Edit existing agent configurations.
+    - Activate or deactivate individual agent tasks.
 
- - Limitations in current preview 
-    - Extensibility of the feature isn't supported
-    - No direct UI-based administrative override for individual user actions
-    - Administrators can use batch jobs to cancel agent actions for individual users
-      
-#### Using batch jobs to cancel agent actions  
-The current UI provides limited administrative oversight, system administrators can use batch jobs to monitor agent activities for all users and cancel individual agent actions run on behalf of a user.  
-To cancel agents actions using a batch, follow these steps:
+> [!NOTE]
+> Administrators can turn off relevant agent features through Feature management. This action affects all users. Therefore, it effectively turns off autonomous agents across the entire organization.
+
+## Set up agents for the first time
+
+When you set up an agent for the first time, you're automatically guided through a configuration wizard. This wizard helps you set agent parameters and define task-specific preferences.
+
+## Track agent activity
+
+The **Agent activity** page provides a comprehensive log of actions that autonomous agents perform.
+
+- The page shows agent interactions and task completions.
+- The data is stored in the **Copilot for Finance and Operations Agent Activity** Dataverse entity (logical name: msdyn\_erpagentactivity).
+- By default, activity history is retained for up to 90 days. However, administrators can modify the retention period, as described in the next section. After the retention period expires, a Dataverse system job deletes the records. 
+
+## Customize activity retention
+
+Administrators can modify the retention period for activity history by adjusting the **Delete Copilot for finance and operations Agent activity records older than 90 days** Dataverse system job. Environment administrators can view all system jobs by using the Power Platform environment settings app.
+
+> [!NOTE]
+> The system job is created after records exist in the msdyn\_erpagentactivity Dataverse entity in your environment. In other words, it isn't created until there is data to clean up.
+
+## Additional considerations
+
+- **Billing and credits**
+
+    - Your organization is billed for each deployed agent.
+    - If your organization exhausts its allocated credits, agents might be temporarily deactivated.
+    - Contact your organization's administrator to renew credits and restore agent functionality.
+
+- **Limitations in the current preview**
+
+    - Extensibility of the feature isn't supported.
+    - There is no direct UI-based administrative override for individual user actions.
+    - Administrators can use batch jobs to cancel agent actions for individual users, as described in the next section.
+
+## Use batch jobs to cancel agent actions
+
+The current UI provides limited administrative oversight. System administrators can use batch jobs to monitor agent activities for all users and cancel individual agent actions that are run on behalf of a user.
+
+If you're an administrator, follow these steps to cancel agent actions.
+
 1. Go to **Batch jobs**.
-2. Search by **Job description** to search by the Agent name or the **Created by** section to search by individual usernames.
-3. Administrators can choose to delete batch jobs associated with an Agent or user to cancel Agent actions. 
+1. Use the **Job description** section to search by agent name or the **Created by** section to search by individual user name.
+1. To cancel agent actions, delete batch jobs that are associated with the agent or user that you found in the previous step.
 
-#### Support and feedback 
-As this is a preview release, we welcome your feedback to improve the **Agent management** feature. Report any issues or suggestions through the standard Dynamics 365 support channels. You may also be prompted to provide in-product feedback.  
+## Support and feedback
 
- 
+Because this release is a preview release, we welcome your feedback. We will use it to improve the **Agent management** feature. Report any issues or suggestions through the standard Dynamics 365 support channels. You might also be prompted to provide in-product feedback.
