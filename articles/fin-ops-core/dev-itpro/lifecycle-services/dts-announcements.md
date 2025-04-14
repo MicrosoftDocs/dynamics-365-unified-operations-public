@@ -4,11 +4,9 @@ description: Learn about new or changed features in the Microsoft Dynamics Trans
 author: joshsantana
 ms.author: joshsantana
 ms.topic: overview
-ms.date: 03/07/2023
+ms.date: 04/14/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
-ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ---
 
