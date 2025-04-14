@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up the Interview schedule feature in Dynamics 365 Human Resources (preview)
-description: This article describes the Interview schedule feature in Dynamics 365 Human Resources. 
+title: Set up the Interview schedule feature in Dynamics 365 Human Resources Recruiting add-on (preview)
+description: This article describes the Interview schedule feature in Dynamics 365 Human Resources Recruiting add-on. 
 author: twheeloc
 ms.date: 04/14/2025
 ms.topic: article
@@ -23,10 +23,10 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up the Interview schedule feature in Dynamics 365 Human Resources (preview)
+# Set up the Interview schedule feature in Dynamics 365 Human Resources Recruiting add-on (preview)
 [This article is prerelease documentation and is subject to change.]
 
-This article describes the Interview schedule feature in Dynamics 365 Human Resources.
+This article describes the Interview schedule feature in Dynamics 365 Human Resources Recruiting add-on.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -37,7 +37,8 @@ pursuing opportunities with the company.
 We have developed an efficient and well-organized interview scheduling system that reduces the time spent on manual coordination and communication and provides candidates with a more positive experience. This
 system enables recruiters to book panel members' calendars, share available slots with candidates, send notifications, and issue meeting invitations. 
 
-Note: Outlook and MS Teams licenses are required. 
+>[Note]
+> Outlook and MS Teams licenses are required. 
 
 ## Find time slots  
 
