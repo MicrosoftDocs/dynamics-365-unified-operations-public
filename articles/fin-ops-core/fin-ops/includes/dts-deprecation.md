@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> We're announcing the deprecation of the Dynamics 365 Translation Service (DTS). This service will reach end-of-support on October 15, 2025, and will no longer be available after this date. Learn more in [](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#dts-deprecation).
+> We're announcing the deprecation of the Dynamics 365 Translation Service (DTS). This service will reach end-of-support on October 15, 2025, and will no longer be available after this date. Learn more in [](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#dts-deprecation).
