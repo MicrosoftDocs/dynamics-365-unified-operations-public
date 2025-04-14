@@ -8,6 +8,8 @@ ms.date: 04/14/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
+ms.collection: 
+ - bap-ai-copilot
 ---
 
 # Agent management (preview)
