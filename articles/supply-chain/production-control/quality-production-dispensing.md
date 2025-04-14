@@ -19,23 +19,22 @@ ms.custom:
 
 <!-- KFM: This needs to go into the TOC. But where? -->
 
-When dealing with hazardous materials or sensitive components, accurate dispensing minimizes the risk of contamination, preserving the integrity of the materials and ensuring the safety of both the product and personnel.
+When dealing with hazardous materials or sensitive components in production processes, accurate dispensing of materials is crucial. It minimizes the risk of contamination, preserves the integrity of the materials, and ensures the safety of both the product and personnel.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. Production dispensing is essential in certain environments for several reasons.
+Dispensing materials to a production order involves allocating and providing the necessary raw materials or components required for the production process. This is essential in certain environments for several reasons.
 
-- In highly regulated industries, such as pharmaceuticals or chemicals, precise dispensing ensures compliance with strict guidelines and standards, maintaining product quality and safety.  
-- When dealing with hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages.
+- In highly regulated industries, such as pharmaceuticals or chemicals, precise dispensing ensures compliance with strict guidelines and standards, maintaining product quality and safety. 
+- When handling hazardous or sensitive materials, the dispensing process is often carried out in a clean room. In this controlled environment, a sealed box is transferred from the warehouse to the clean room, where it is unsealed and the materials are dispensed. After dispensing, the box is sealed again and returned to the warehouse. This process ensures that the materials remain uncontaminated and safe throughout the handling and dispensing stages
 - For expensive materials, precise dispensing helps prevent waste and fraud, reducing costs and ensuring efficient resource utilization. Additionally, accurate dispensing contributes to consistent product quality, meeting customer expectations, and protecting workers and the environment by handling dangerous substances correctly.
-- To support the regulated dispensing process, you can:
-    - Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
-    - Configure the system to automatically return any remaining, un-dispensed material back to inventory.
-    - Restrict the dispensing process to workers who are authorized to perform it, ensuring that only trained and qualified personnel handle the materials.
-    - Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here: [Electronic signatures overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
-- Manage a mix of dispensed and non-dispensed items on a single production order. Non-dispensed products are registered as consumed in the production picking list journal. For items configured for the dispense process, the *Dispensing ticket* and *Dispensing pick journal* are used. Workers use the dispensing ticket to register and confirm the quantities of material dispensed to the production order, and the Dispensing pick journal is used to register the dispensed quantity as consumed.
+To support the regulated dispensing process, you can:
+- Set up thresholds for over and under dispensing. This ensures that the correct quantities are dispensed, maintaining compliance and quality.
+- Configure the system to automatically return any remaining, un-dispensed material back to inventory.
+- Restrict the dispensing process to workers who are authorized to perform it, ensuring that only trained and qualified personnel handle the materials.
+- Set up requirements for workers to sign off the dispensed quantities using an electronic signature. An electronic signature is sometimes required to ensure the authenticity and integrity of a process. It provides a secure and verifiable way to confirm that the correct actions have been performed by authorized personnel, maintaining compliance with regulatory standards. Learn more about the use of electronic signatures here: [Electronic signatures overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
-This article describes how to set up and use production dispensing in Dynamics 365 Supply Chain Management.
+Workers use the *Dispensing ticket* page to manage the dispensing of material to the production or batch order. On this page, they register and confirm the amount of material to be dispensed. After confirmation, the dispensed quantities are registered as consumed in the *Dispensing pick journal*. Materials that are not configured for dispensing on the production or batch order are issued through the production picking list journal.
 
 ## Prerequisites
 
@@ -68,7 +67,7 @@ All users who should be able to dispense products in the production process must
 
 ## Enable electronic signatures for production dispensing
 
-To require electronic signatures from users that post the production picking list journal for dispensed and non-dispensed products, follow these steps.
+To mandate electronic signatures for users posting the *Dispensing pick journal*, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
 1. On the list pane, select the row with a **Name** of *Post dispensing ticket production journal*.
@@ -93,89 +92,80 @@ You can create a catalog of measuring devices used in the dispensing process. Th
 Several settings on the **Production control parameters** page must be configured to enable production dispensing and configure how it works on your system. Follow these steps to set up the parameters.
 
 1. Go to **Production control** \> **Setup** \> **Production control parameters**.
-1. Open the **Standard update** tab.
-1. Make the following settings:
+1. Open the **Standard update** tab and make the following settings:
     - **Enable dispensing for production** – Set to *Yes* to enable using production dispensing in a production flow.
     - **Allow over-dispensing with reverse pick** – Set to *Yes* to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list.
-1. Open the **Journals** tab and make the following setting.
+1. Open the **Journals** tab and make the following setting:
     - **Dispensing tickets** – Select the journal name you created for the dispensing pick journal. This is the default journal for dispensed products.
-1. Open the **General** tab to make the following setting.
-    - **Default measuring device** – Select the measuring device that should be defaulted in the **Dispense ticket** page <!-- KFM: Explain why we need to specify a measuring device here. What does this have to do with dispensing? --> . <!-- KFM: The **Dispense ticket** page is not described anywhere. What is it for? Should we have a section about this? --> If you have not defined a device, go to **Inventory management** \> **Setup** \> **Quality control** \> **Measuring devices** to set it up <!-- KFM: The **Measuring devices** page is not described anywhere. What is it for? Is it added as part of this feature? Should we have a section about this? -->.  
-1. On the Action Pane, select **Save**.
+1. Open the **General** tab to make the following setting:
+    - **Default measuring device** – Select the measuring device that should be defaulted in the **Dispense ticket** page.
 
 ## Set up a product for the dispensing process
 
 To use a dispensing process, you must configure dispensing options for each relevant product.
 
-> [!NOTE]
-> Only products enabled for warehouse management processes (WMS) can enabled for the dispensing process.
+> [!NOTE] 
+> Only products that are not enabled for warehouse management processes (WMS) can be enabled for the dispensing process.
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
-1. Open a product that you want to set up for dispensing.
+1. Create a new product or open an existing product that you want to set up for dispensing.
 1. Expand the **Manage inventory** FastTab.
-1. From the **Dispensing** field group, make the following settings:
+1. From the **Dispensing** field group, make the following settings.
     - **Dispensing control** – Set to *Yes* to enable dispensing control for the product.
-    - **Underdispense** – Enter the percentage by which the dispensed quantity is allowed to be less than the proposed quantity. <!-- KFM: Proposed by whom? How, where? -->
-    - **Overdispense** – Enter the percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. <!-- KFM: Proposed by whom? How, where? -->
-    - **Authorized personnel** – Set to *Yes* to only allow authorized personnel to dispense materials for production. <!-- KFM: How do we know/control which users are authorized? -->
-1. On the Action Pane, select **Save**.
+    - **Underdispense** – Set the threshold in percent by which the dispensed quantity is allowed to be less than the proposed quantity. This configuration ensures that when workers enter the dispensed quantity in the **Dispensing ticket** on a production order, the system validates that the quantity does not fall below the defined threshold.
+    - **Overdispense** – Set the threshold in percent by which the dispensed quantity is allowed to be larger than the proposed quantity. This configuration ensures that when workers enter the dispensed quantity in the **Dispensing ticket** on a production order, the system validates that the quantity does not go above the defined threshold.
+    - **Authorized personnel** – Set to *Yes* to only allow workers who are assigned the *Production dispenser* security role to do dispensing.
+  
+> [!NOTE] 
+> When you add a BOM or Formula line with a product enabled for dispensing, the above mentioned thresholds set for over- and under dispensing are inherited to the BOM or Formula line. On the BOM and Formula lines, you can override the inherited values. The overridden values on the BOM and formula lines will always be used in the validation of the dispensed quantity in the dispense process.
 
-## Set up BOM and formula lines for the dispensing process
+## Generate the dispensing ticket and dispensing pick journal
 
-On BOM and formula lines, you can override the thresholds for over and under dispensing. Follow these steps to override. <!-- KFM: We 0ny describe formulas in this procedure. Are BOMs set up differently? -->
+For a production or batch order with BOM or Formula lines enabled for dispensing, follow these steps to create the **Dispensing ticket** and **Dispensing pick journal**  
 
-1. Go to **Product information management** \> **Products** \> **Released products**.
-1. Select a product that is configured for batch production.
-1. On the Action Pane, open the **Engineer** tab and select **Formula versions**.
-1. The **Formula versions** page opens. On this list pane, select the formula version you want to set up for dispensing.
-1. On the Action pane, open the **Formulas** tab and select **Formula**.
-1. The **Formula** page opens. Expand the **Formula lines** FastTab and select a line for which you want to set up dispensing options.
-1. Expand the **Lines details** FastTab and open the **Setup** tab.
-1. Under the **Dispensing** field group, make the following settings. <!-- KFM: These settings are read-only for me. Why?! -->
-    - **Allow over-dispensing with reverse pick** – Set to *Yes* to allow for the over-dispensing or over-picking of material and then have the remainder returned to inventory with an automatically generated pick list.
-    - **Overdispense** – Enter the percentage by which the dispensed quantity is allowed to be larger than the proposed quantity. This setting overrides the over-dispensing value specified for the released product.
-    - **Underdispense** – Enter the percentage by which the dispensed quantity is allowed to be less than the proposed quantity. This setting overrides the under-dispensing value specified for the released product.
-1. On the Action Pane, select **Save**.
-
-## Example scenario: Using production dispensing
-
-In a normal production run, workers use the production picking list journal to register the amount of materials consumed for a production order. For orders that have materials configured for dispensing, workers use the dispensing ticket journal to register the dispensed amounts prior to consumption. For orders using the dispensing process, the dispensing ticket and the production picking list journal can be configured to be created when the order is *Released*, as opposed to normal production runs, which creates the ticket and journal when the order is *Started*. The production dispensing feature also offers an option to return remaining material that was staged to the production area for dispensing. You enable this option in the production control parameters and on the product configured for dispensing.
-
-The following scenario shows and example of how to use production dispensing where the picking list journal for non-dispensed products and the dispensing ticket for dispensed products are created at production order release. After completing the dispensing ticket, the system creates a picking list journal for the remaining material that was staged for the dispensing process.
-
-1. Make sure the required settings for using production dispensing are set up as described in the previous sections.
-1. Go to **Production control** \> **Setup** \> **Production control parameters**.
-1. Open the **Standard update** tab and make the following setting.
-    - **Allow over-dispensing with reverse pick** – Set to *true*.
-1. Go to **Product information management** \> **Products** \> **Released products** and create a finished good with a bill of material that contains at least one product enabled for dispensing and one product that is not enabled for dispensing. <!-- KFM: Can we name a product from USMF that meets these requirements? I don't know how to set this up, which means I can't complete this procedure. -->
-1. For the product enabled for dispensing, make the following settings.
-    - **Allow over-dispensing with reverse pick** – Set to *true*.
-    - **Overdispense** – Set to *10* percent.
-    - **Underdispense** – Set to *10* percent.
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
-1. Select **New production order** or **New batch order** to create a new order for the finished product defined previously.
-1. Open or select the new production order. <!-- KFM: I think we need to do this here. -->
-1. On the Action Pane, open the **Production order** tab and select **Estimate**. Select **OK** in the dialog to move the order to the *Estimated* state.
-1. On the Action Pane, open the **Production order** tab and select **Release**. Make the following settings in the dialog. <!-- KFM: I don't see the following settings here, but it could be because I haven't set everything up right. -->
-    - **Picking list** – Select a picking list.
-    - **Dispensing ticket** – Select a dispensing ticket.
+1. Select **New production order** or **New batch order** and make the following settings in the dialog.
+    - **Item number** - Select a product with and approved BOM or formula version with items enabled for dispensing.
+    - Leave all other fields in the dialog with its default value.
+1. Select **OK** to create the order.
+1. From the Action Pane, select **Estimate** to set the order in the *Estimated* state.
+1. From the Action Pane, select **Release** and make the following settings in the **General** tab in the dialog.
+    - **Picking list** - Select a name for the picking list from the drop down list.
+    - **Dispensing tickets** - Select a name for the dispensing tickets from the drop down list.
+1. Confirm the dialog with **OK** to move the order to the *Released* state.
+1. In the Action Pane in the batch order page, select the **View** tab
+1. In the **Journals** field group, select make the following selections.
+    - **Dispensing ticket** - Opens the dispensing ticket that was created when the batch order was released.
+    - **Dispensing pick journal** - Opens the dispensing pick journal that was created when the batch order was released.
 
-    > [!NOTE]
-    > You can set up the journal names to default in **Default values** dialog. <!-- KFM: I'm not sure what this is referring to. -->
+## Working with the dispensing ticket and dispensing pick journal
 
-1. Select **OK** in the release dialog to confirm the release step for the order.
-1. Return to the **All production orders** list page. Notice the values in the following two columns.
-    - **Picking list status** = *Open*.
-    - **Dispensing ticket status** = *Open*.
+After releasing the batch or production order as described in the previous sections, workers can open the **Dispensing ticket** to register the amount of materials dispensed for the order.
 
-    These two fields indicate the existence of an un-posted picking list journal and an un-posted dispensing ticket. <!-- KFM: I don't see this.  -->
+1. Open the **Dispensing ticket** from the **View** tab on the production or batch order.
+1. In the **Journal** column, click on the journal that you want to open.
+1. In the **Dispensing details** section, select **New** to create a new line for registering a dispensed quantity. If you are making multiple measurements of the same portion of the material you are dispensing, you can create a new line for each distinct measurement. 
+1. In the Action Pane in the **Dispensing details** section, select **Post dispensed** to calculate the average value of the registered measurements. The calculated average value will be updated on the line item for the dispensed material in the **journal lines** section in the **Dispensed** field.  
+1. In the Action Pane, select **Confirm** to transfer the value for the calculated dispensed quantity to the **Dispensing pick journal**.
+1. In the Action Pane, you can select **Post** to post the **Dispensing pick journal** which will register the dispensed quantity as consumed in inventory.
+1. Instead of posting the dispensing pick journal from the dispensing ticket, you can also post it directly fro the dispensing pick journal page. 
 
-1. On the Action Pane, open the **View** tab and select **Dispensing pick journal**.
-1. Open the relevant journal in the grid.
-1. Change the quantity in the **Consumption** field to a value that is greater then the value in the **Proposal** field. The quantity in the **Consumption** field represents the amount of material you have staged to the process.
-1. Close journal and return to the **All production orders** page.
-1. Select the production order you are working with. On the Action Pane, open the **View** tab and select **Dispensing tickets**.  <!-- KFM: This is read-only for me. I couldn't get any further here.  -->
-1. In the **Dispensing details** section, select **New** to create a new line for the dispensed quantity for the product. You can create multiple lines, which will then represents multiple measurements for the same dispensed amount.
-1. Select **Post dispensed** to complete the registered values for dispensing. This process calculates the average of registered values and updates the **Dispensed** field for the product in the **Journal lines** section. You'll get an error in this process if the dispensed quantity exceeds the thresholds defined on the product.
-1. When you have completed all the lines in the **Dispensing ticket**, select **Confirm** from the toolbar. This action updates the calculated value in the **Dispensed** field in the **Dispensing pick journal**.
-1. After confirming the dispensed quantities, select **Post**, which posts the **Dispensing pick list** journal with the dispensed quantities. This action also creates a **Dispensing adjustment** journal with a proposal to return a quantity that equals the difference between the quantity that has been staged to the production order and the quantity that has been dispensed.
+## Option to auto-create dispensing pick journal for reverting remaining material from the dispense process
+
+By setting the **Allow over-dispensing with reverse pick** configuration as described in a previous section, the system can automatically generate a dispensing pick list that will reverse material that has been over-picked for the dispensing process. This can be relevant when you stage material in full handling unit, such as a container or bag, to the location where the dispensing operation is done. Follow these steps to use it, if you have set the option for **Allow over-dispensing with reverse pick** that is described in a previous section.
+
+1. Generate the **Dispensing ticket** and **Dispense pick journal** by releasing the production or batch order as described in the previous step.
+1. Select **Dispense pick journal** from the **View** tab on the order.
+1. In the **Journal** column, click on the Journal you want to open.
+1. In the **Journal lines** section, increase the quantity in the **Consumption** field to match the quantity of the material that you want to stage to the dispensing area.
+1. Close the dispense pick journal.
+1. Select **Dispensing ticket** from the **View** tab on the order.
+1. In the **Dispensing details** section, select **New** to create lines for the measurements of the dispensed material.
+1. Select **Post dispensed** to update the **Dispensed** field on the material line in the **Journal lines** section.
+1. In the Action Pane, select **Confirm** to transfer the value from the calculated dispensed quantity to the **Dispensing pick journal**
+1. In the Action Pane, select **Post** to post the **Dispense pick journal**
+1. Navigate back to batch order page.
+1. Under the **View** tab, select **All** in the **Journals** field group.
+1. Select the journal with the description starting with *Dispensing adjustment for..*
+1. Open the journal, and notice that the journal line has a negative quantity that is calculated as the difference between the quantity that was registered as staged and the quantity that was confirmed and posted as dispensed. 
+1. Post this journal to update the inventory with the quantity that was over-picked for the dispense process.
