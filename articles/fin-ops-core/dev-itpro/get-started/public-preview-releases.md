@@ -4,13 +4,11 @@ description: Learn about service update availability and the different release o
 author: hmahl
 ms.author: hmahl
 ms.topic: article
-ms.date: 11/04/2024
+ms.date: 04/14/2025
 ms.custom: evergreen
 ms.reviewer: johnmichalak
-audience: IT Pro 
 ms.search.region: Global
 ms.search.validFrom: 2017-10-31
-ms.search.form:
 ms.dyn365.ops.version: Platform update 11
 ---
 
@@ -23,7 +21,7 @@ Microsoft is committed to delivering predictable service updates. These service 
 Customers can take up to four service updates per year and are required to take a minimum of two per year. Customers can choose to pause one update at a time. A pause of a service update can apply to the designated user acceptance testing (UAT) sandbox environment, the production environment, or both environments. After the pause window ends, if the customer hasn't self-updated to a supported service update, Microsoft automatically applies the latest update, based on the configuration in Microsoft Dynamics Lifecycle Services. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 > [!NOTE]
-> Service updates are provided four times annually. autoupdates occur in February, April, July, and October.
+> Service updates are provided four times annually. Autoupdates occur in February, April, July, and October.
 
 ## Targeted release schedule (dates subject to change)
 
@@ -56,7 +54,7 @@ In the following table:
 >
 > **Release naming convention as of the 10.0.38 release**
 >
-> The first half of the release label refers to the calendar year and quarter when the auto update production start date is scheduled. The second part is the product version as it appears in Lifecycle Services. An asterisk (\*) at the end of the label indicates a major release. For example: **CY25Q4: 10.0.45\*** is product version 10.0.45 that's made available for auto update in the fourth quarter of 2025. It's a major update (the "October" release).
+> The first half of the release label refers to the calendar year and quarter when the auto update production start date is scheduled. The second part is the product version as it appears in Lifecycle Services. An asterisk (\*) at the end of the label indicates a major release. For example: **CY25Q4: 10.0.45\*** is product version 10.0.45 that's made available for autoupdate in the fourth quarter of 2025. It's a major update (the "October" release).
 > 
 > Previews and preview updates are available as a deployable package in the Shared asset library in Lifecycle Services. For more information, see [One Version service updates FAQ](one-version.md).
 
@@ -70,17 +68,17 @@ Service updates contain both application changes and platform changes that are c
 
 ## Release processes
 
-The Dynamics 365 team designs,  develops and validates each new release.  Extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. 
+The Dynamics 365 team designs, develops, and validates each new release. Extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. 
 
-All customers who take advantage of the preview have early access to the upcoming service update. The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft. During the preview phase, customers must deploy the service update in a development/test environment. The preview release can't be used in production. After release, customers can download the package from the Shared Asset Library in Lifecycle Services. Customers must agree to the program terms at the time of installation. Sign-up for access to preview packages is no longer required. One scheduled update to the preview build is included as standard with every release.
+All customers who take advantage of the preview have early access to the upcoming service update. The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft. During the preview phase, customers must deploy the service update in a development/test environment. The preview release can't be used in production. After release, customers can download the package from the Shared Asset Library in Lifecycle Services. Customers must agree to the program terms at the time of installation. Sign up for access to preview packages is no longer required. One scheduled update to the preview build is included as standard with every release.
 
 The First Release program is available to all finance and operations apps customers. There are two ways to participate:  
 
-- **Microsoft Managed Update**s: Fill out the [First Release Program: Microsoft Dynamics 365 Finance and Operations applications](https://aka.ms/FirstReleaseFnO) form and receive a service update that Microsoft automatically deploys, first in a UAT sandbox and then in production after seven days. It is not possible to pause these updates.  
+- **Microsoft Managed Update**s: Fill out the [First Release Program: Microsoft Dynamics 365 Finance and Operations applications](https://aka.ms/FirstReleaseFnO) form and receive a service update that Microsoft automatically deploys, first in a UAT sandbox and then in production after seven days. It isn't possible to pause these updates.  
 
-- **Customer Initiated Updates**: Customers can pull the First Release build into their UAT sandbox from LCS for testing and into production, without auto-deployment from Microsoft.  
+- **Customer Initiated Updates**: Customers can pull the First Release build into their UAT sandbox from Lifecycle Services for testing and into production, without autodeployment from Microsoft.  
 
-Typically, the First Release build is the same as the generally available (GA) build. However, if critical issues arise that cannot be hot fixed, a new First Release build will be declared, and customers are informed through various communication channels, including Viva Engage and Lifecycle Services.  Microsoft will restart the sandbox and production environments and deploy any newly declared First Release build for customers that receive Microsoft managed updates.  Customers that initiate updates should deploy newly declared First Release builds that are available on Lifecycle Services.  
+Typically, the First Release build is the same as the generally available (GA) build. However, if critical issues arise that can't be fixed with a hot fix, a new First Release build is declared, and customers are informed through various communication channels, including Viva Engage and Lifecycle Services.  Microsoft restarts the sandbox and production environments and deploy any newly declared First Release build for customers that receive Microsoft managed updates.  Customers that initiate updates should deploy newly declared First Release builds that are available on Lifecycle Services.  
 
 The service update is made generally available through the Action Center in Lifecycle Services. When the service update is available, customers can manually apply it to all environments, including production. If the service update isn't applied to the designated sandbox or production environment, Microsoft automatically applies it, based on the update settings for the Lifecycle Services project. To learn more, see [Configure service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
