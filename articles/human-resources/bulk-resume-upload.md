@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on (preview)
-description: This article describe the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on.
+description: This article describes the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on.
 author: twheeloc
 ms.date: 04/14/2025
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 [This article is prerelease documentation and is subject to change.]
 
-This article describe the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on.
+This article describes the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
