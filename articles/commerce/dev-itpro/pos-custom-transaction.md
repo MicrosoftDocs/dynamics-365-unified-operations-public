@@ -54,7 +54,7 @@ You can add more information to a transaction page by using custom controls. You
 2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
 3. In the **POS.Extensions** project, create a folder that is named **CustomControlExtensions**.
 4. In the **CustomControlExtensions** folder, create a folder that is named **Cart**.
-5. In the **Cart** folder, create a Typescript file that is named **CartViewController.ts**.
+5. In the **Cart** folder, create a TypeScript file that is named **CartViewController.ts**.
 6. In the **CartViewController.ts** file, add the following **import** statement to import the relevant entities and context.
 
     ```typescript
@@ -164,7 +164,7 @@ You can add more information to a transaction page by using custom controls. You
         </html>
         ```
 
-12. In the **Cart** folder, create a Typescript file that is named **LineDetailsCustomControl.ts**.
+12. In the **Cart** folder, create a TypeScript file that is named **LineDetailsCustomControl.ts**.
 13. In the **LineDetailsCustomControl.ts** file, add the logic to bind the line details information.
 14. Import the POS entities and type extensions to use the reference type in the constructor and other events.
 

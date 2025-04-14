@@ -53,7 +53,7 @@ You might also have to change the following setting in the Retail Server web.con
 
 You will need the Retail SDK to generate proxy files. If you are using a Tier 1 development VM environment, make sure that you have the latest Retail SDK installed. For more information, see [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md).
 
-For information about how Retail extensions can be called from Retail POS, see [Typescript and C# proxies for Retail point of sale (POS)](../dev-itpro/typescript-proxy-retail-pos.md). That article explains how to create a proxy file by using a command that resembles the following command.
+For information about how Retail extensions can be called from Retail POS, see [TypeScript and C# proxies for Retail point of sale (POS)](../dev-itpro/typescript-proxy-retail-pos.md). That article explains how to create a proxy file by using a command that resembles the following command.
  
 ```Console
 K:\RetailSDK\References\microsoft.dynamics.commerce.tools.coreproxygenerator\10.14.20128.1\tools>CommerceProxyGenerator.exe ..\..\..\microsoft.dynamics.commerce.tools.extensionsproxygenerator\9.22.20167.4\tools\Microsoft.Dynamics.Retail.RetailServerLibrary.dll k:\WarrantySample\Contoso.RetailServer.WarrantySample.dll /application:typescriptextensions

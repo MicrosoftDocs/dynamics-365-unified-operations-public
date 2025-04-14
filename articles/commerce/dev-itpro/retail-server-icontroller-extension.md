@@ -274,7 +274,7 @@ private async Task<CommerceEntity> GetStoreDayHoursAsync(GetStoreHoursDataReques
 
     `https://RS-URL/Commerce/$metadata`
 
-2. To call the Retail Server extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
+2. To call the Retail Server extension in your client, you must generate the client TypeScript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
 You don't have to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you're using Retail SDK version 10.0.10 or earlier.
 
@@ -282,9 +282,9 @@ You don't have to add or include any **EdmModelExtender** files in the extension
 
 To debug the RS extension project in Visual Studio. Go to **Debug > Attach to Process**. Select w3wp.exe (the IIS process for Retail Server). If there are multiple w3wp.exe processes, use the correct process based on the process ID. The retail server process ID can be found using **IIS > Worker processes** or by using the command prompt and the tasklist command.
 
-## Generate the Typescript proxy for POS
+## Generate the TypeScript proxy for POS
 
-The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manger class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
+The POS uses the TypeScript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manger class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
 
 ### Steps to generate the proxy files
 
@@ -309,7 +309,7 @@ The POS uses the Typescript proxy to access the Retail Server APIs and CRT entit
 
 ## Retail server extension in offline
 
-A Retail Server extension built using the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in an offline implementation. You don't need to generate a separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this library. This extension must only generate the Typescript proxy. SDK samples can be found in the  **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
+A Retail Server extension built using the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in an offline implementation. You don't need to generate a separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this library. This extension must only generate the TypeScript proxy. SDK samples can be found in the  **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
 
 The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** configuration  file.
 
