@@ -46,7 +46,7 @@ Before you can generate the **Format 606 DO** report, the following prerequisite
 To configure application-specific parameters, follow these steps.
 
 1. Go to **Organization administration** \> **Workspace**, and select **Reporting configurations**.
-1. In the **LTM Tax** report, select **Format 606 DO**. Then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group select **Setup**.
+1. In the **LTM Tax** report, select **Format 606 DO**. Then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** tab, select **VendorApplicableInvoices**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **Yes**.
