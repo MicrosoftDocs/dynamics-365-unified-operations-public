@@ -4,7 +4,7 @@ description: This article describes the Agent management feature in Microsoft Dy
 author: twheeloc
 ms.author: jkhaira
 ms.topic: conceptual
-ms.date: 03/27/2025
+ms.date: 04/14/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -36,7 +36,7 @@ Before you can use the **Agent management** feature, a Power Platform admin cent
     1. In the Power Platform admin center, go to **Billing** \> **Licenses**. 
     1. Select **Copilot Studio**.
     1. Create a new billing plan as necessary.
-    1. Assign credits to the relevant environment. Learn more in [title](url).
+    1. Assign credits to the relevant environment. Learn more in [AI Builder licensing and credit management](/ai-builder/credit-management).
 
 A Dynamics 365 finance and operations apps administrator must ensure that the following additional prerequisites are met:
 
