@@ -14,6 +14,7 @@ ms.search.validFrom: 2023-03-22
 # Dynamics Lifecycle Services API - Authentication
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 This article provides an overview of the Microsoft Entra setup for calling Lifecycle Services APIs including Dynamics Translation Service API. To access resources available using the API, you must get a bearer token from Microsoft Entra and send it as a header along with each request. 
 
