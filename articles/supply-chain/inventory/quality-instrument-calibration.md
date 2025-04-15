@@ -21,7 +21,7 @@ Calibration is the process of evaluating and adjusting the precision and accurac
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-Instrument calibration is primarily managed through *test instrument tags*, each of which is a digital record that represents a specific physical test instrument. Each tag holds settings for and information about its test instrument. Each test instrument tag also includes a calibration history, indicates weather an instrument requires calibration, assigns a calibration group (which defines the calibration schedule), provides a calibration procedure (possibly including attached documents), and manages other calibration details.
+Instrument calibration is primarily managed through *test instrument tags*, each of which is a digital record that represents a specific physical test instrument. Each tag holds settings for and information about its test instrument. Each test instrument tag also includes a calibration history, indicates whether an instrument requires calibration, assigns a calibration group (which defines the calibration schedule), provides a calibration procedure (possibly including attached documents), and manages other calibration details.
 
 You can define the calibration schedule for the tags in each calibration group in one of two ways:
 
@@ -57,14 +57,14 @@ The **Inventory and warehouse management parameters** page includes options that
         - *Not allowed* – If the instrument is due for calibration, then show an error messages that says the instrument can't be used.
     - **Check for lifetime usage maximum when assigning tag numbers** – Select the action to take from a quality order when the lifetime usage maximum is exceeded for a given test instrument tag. Choose one of the following values.
         - *No check* – Skip this check.
-        - *Warning only* – If the instrument has exceeded it's lifetime usage maximum, then show a warning message but allow the instruction to be used.
-        - *Not allowed* – If the instrument has exceeded it's lifetime usage maximum, then show an error messages that says the instrument can't be used.
+        - *Warning only* – If the instrument has exceeded its lifetime usage maximum, then show a warning message but allow the instruction to be used.
+        - *Not allowed* – If the instrument has exceeded its lifetime usage maximum, then show an error messages that says the instrument can't be used.
     - **Skip check for test instrument on open quality order** – Set this option to *No* to prevent test instrument tags that are already assigned to open quality orders from being assigned to a new quality orders. Set to *Yes* to skip this check, which might allow a test instrument tag to be assigned to more than open quality order at a time.
     - **Label layout** – Select the default calibration label layout to assign to new test instrument type records. Learn more in [Design and print calibration labels](#calibration-labels).
     - **Print destination** – Choose the default for where to print calibration labels. Choose one of the following values.
         - *Printer* – Print physical labels to a printer.
-        - *File* – Download ans save labels as a ZPL file.
-    - **Printer name** – If you set **Print destination** to *Printer*, then select the name of the default printer to use to print out calibration labels.
+        - *File* – Download and save labels as a ZPL file.
+    - **Printer name** – If you set **Print destination** to *Printer*, then select the name of the default printer to use to print calibration labels.
 
 ## <a name="instrument-types"></a>Set up test instrument types
 
@@ -121,18 +121,18 @@ To set up a calibration group, follow these steps:
       - *Manual* – Manually calibrate the instrument on an ad-hoc basis.
       - *Usage* – Calibrate the instrument based on how many times it's been used.
       - *Periodic* – Calibrate the instrument on a regular schedule based on calendar days, months, or years.
-    - **Calibration period** – This field is only active when **Calibration method** is *Periodic*. Select the unit by which you will define number of days between calibrations.  Choose one of the following values:
+    - **Calibration period** – This field is only active when **Calibration method** is *Periodic*. Select the unit by which you'll define number of days between calibrations. Choose one of the following values:
       - *Day* – Specify the period using days.
       - *Month* – Specify the period using months.
       - *Year* – Specify the period using years.
-    - **Calibration period frequency** – This field is only active when **Calibration method** is *Periodic*. Enter the amount of time to wait between calibrations, using the unit selected for **Calibration period**.  For example, if test instrument tags for this group are assigned to instruments that should be calibrated every three months, set **Calibration period** to *Month* and **Calibration period frequency** to *3*.
+    - **Calibration period frequency** – This field is only active when **Calibration method** is *Periodic*. Enter the amount of time to wait between calibrations, using the unit selected for **Calibration period**. For example, if test instrument tags for this group are assigned to instruments that should be calibrated every three months, set **Calibration period** to *Month* and **Calibration period frequency** to *3*.
     - **Calibration usage update method** – This field is only active when **Calibration method** is *Usage*. The usage method to be used when updating current usage of the test instrument based on the usage of the quality order test line.
       - *Fixed increment* – Each time a quality order with a test instrument tag from this group is validated, update the test instrument tag's usage count by the specified **Usage increment**.
       - *Test quantity* – Each time a quality order with a test instrument tag from this group is validated, update the test instrument tag's usage count by the test quantity specified in that quality order.
     - **Usage increment** – This field is only active when **Calibration method** is *Usage* and **Calibration usage update method** is *Fixed increment*. Specify the increment by which to increase the usage count of a test instrument tag each time an instrument is used. For example, if **Usage increment** is set to *2*, the usage count for a test instrument tag in this group is increased by two for every validated quality order that includes that test instrument tag, no matter how many units are tested.
     - **Usage count trigger for calibration** – This field is only active when **Calibration method** is *Usage*. Enter the usage value that triggers a calibration for test instrument tags in this group. The instrument can still be used until the **Maximum usage before calibration** is met. For example, if **Usage count trigger for calibration** is *100*, and a test instrument tag from this group reaches 100 usages, then the periodic job that creates calibration records will create one for that test instrument tag the next time the job runs.
     - **Maximum usage before calibration** – This field is only active when **Calibration method** is *Usage*. Enter the maximum number of times a test instrument tag from this group can be used before it must be calibrated. For example, the **Usage count trigger for calibration** could be *100* while the **Maximum usage before calibration** is 125. This means that calibration is triggered after 100 uses but the instrument can still be used until it reaches 125 usages.
-    - **Lifetime usage maximum** – This field is only active when **Calibration method** is *Usage*. Enter the maximum number of times an instrument can be used before being taken out of service.  For example, if **Lifetime usage maximum** is *10,000*, then test instrument tags in this group that reach 10,000 uses are marked as out of service and can no longer be calibrated.
+    - **Lifetime usage maximum** – This field is only active when **Calibration method** is *Usage*. Enter the maximum number of times an instrument can be used before being taken out of service. For example, if **Lifetime usage maximum** is *10,000*, then test instrument tags in this group that reach 10,000 uses are marked as out of service and can no longer be calibrated.
 
 > [!NOTE]
 > Use the **Inventory and warehouse management parameters** page to configure how the system reacts when **Maximum usage before calibration** and **Lifetime usage maximum** values are met (you can choose to do nothing, show a warning but still allow the instrument to be used, or show an error and block the instrument from being used). Learn more in [Set up instrument calibration parameters](#parameters).
@@ -146,7 +146,7 @@ Each physical test instrument is represented in Supply Chain Management by a *te
 1. View and make the following settings in the header for your new or selected test instrument tag.
 
     - **Tag number** – Enter a unique identify name, number, or code for the instrument.
-    - **Test instrument type** – Select the type or category of the test instrument. The test instrument for which the test instrument tag is associated with. Examples could include Scale, Thermometer, Oximeter, and so on.  The test instrument type establishes options such as whether the instrument is used for calibration, whether a test instrument tag is required to identify which specific physical instrument to use, and which layout to use when printing calibration labels. Learn more in [Set up test instrument types](#instrument-types).
+    - **Test instrument type** – Select the type or category of the test instrument. The test instrument for which the test instrument tag is associated with. Examples could include Scale, Thermometer, Oximeter, and so on. The test instrument type establishes options such as whether the instrument is used for calibration, whether a test instrument tag is required to identify which specific physical instrument to use, and which layout to use when printing calibration labels. Learn more in [Set up test instrument types](#instrument-types).
     - **Instrument usage status** – Shows the current usage status of the test instrument. The field is read-only, but you can manually change the status to *Out of service* or *Available* using the buttons in the **Update usage status** tab of the Action Pane. The field shows one of the following values:
         - *Available* – The test instrument is ready to be assigned to a new quality order.
         - *Calibration* – The test instrument is currently being calibrated. This status is set automatically when an open (in-progress) calibration record exists for this test instrument tag.
@@ -156,7 +156,7 @@ Each physical test instrument is represented in Supply Chain Management by a *te
 
     - **Description** – Enter a brief description of this instrument.
     - **Instrument description** – Shows the description of the instrument type that is selected in the **Test instrument type** field. This field is read-only.
-    - **Used for calibration** – Indicates whether the selected test instrument is used to calibrate other instruments. This setting is read-only here and is inherited from the the selected **Test instrument type**.
+    - **Used for calibration** – Indicates whether the selected test instrument is used to calibrate other instruments. This setting is read-only here and is inherited from the selected **Test instrument type**.
     - **Skip check for test instrument on open quality order** – Set this option to *No* to prevent test instrument tags that are already assigned to open quality orders from being assigned to a new quality orders. Set to *Yes* to skip this check, which might allow a test instrument tag to be assigned to more than open quality order at a time.
     - **Restricted use** – Set to *Yes* if this test instrument is restricted. This is for information only.
     - **Check if test instrument is being calibrated** – Select the action to take on a quality order when the **Instrument usage status** of the instrument is *Calibration*. The default value for new tags is established on the [**Inventory and warehouse management parameters** page](#parameters), but you can change it for each individual test instrument tag. The available options are:
@@ -172,32 +172,32 @@ Each physical test instrument is represented in Supply Chain Management by a *te
     - **Test area** – Select the test area that this test instrument is associated with. This field is a standard Supply Chain Management field that is being reused on this form based on standard logic.
     - **Test department** – Select the department that is responsible for this test instrument. Learn more in [Set up test departments](#departments).
     - **Test location** – Select the location where this test instrument can be found. Learn more in [Set up test locations](#locations).
-    - **Unit** – Indicates the unit that this instrument measures in (such as grams or milliliters). This setting is read-only here and is inherited from the the selected **Test instrument type**.
-    - **Precision** – Indicates the precision of a measurement (the number of digits that are used to express that value) that can be used when recording results from this test instrument. This setting is read-only here and is inherited from the the selected **Test instrument type**.
+    - **Unit** – Indicates the unit that this instrument measures in (such as grams or milliliters). This setting is read-only here and is inherited from the selected **Test instrument type**.
+    - **Precision** – Indicates the precision of a measurement (the number of digits that are used to express that value) that can be used when recording results from this test instrument. This setting is read-only here and is inherited from the selected **Test instrument type**.
 
 1. Expand the **Calibration details** FastTab, which contains information specific to the calibration of the test instrument tag. The following fields are available here.
 
     - **Calibration required** – Choose whether calibration is required for this test instrument. The other fields on this FastTab are only editable when this option is set to *Yes*.
     - **Calibration procedure name** – Select name of the procedure used for calibration of this test instrument. The procedure provides instructions for how to calibrate the instrument. To read the procedure, select this link. If the selected procedure includes attached documents, then select the **Attachments** icon (paperclip) at the right side of the Action Pane to see them. Learn more in [Set up calibration procedures](#procedures).
-    - **External calibrating vendor** – If an external vendor is used for calibrating this instrument, then this field indicates the account number of that vendor. This setting is read-only here and is inherited from the the selected **Calibration procedure name**.
-    - **External vendor name** – If an external vendor is used for calibrating this instrument, then this field indicates the name of that vendor. This setting is read-only here and is inherited from the the selected **Calibration procedure name**.
+    - **External calibrating vendor** – If an external vendor is used for calibrating this instrument, then this field indicates the account number of that vendor. This setting is read-only here and is inherited from the selected **Calibration procedure name**.
+    - **External vendor name** – If an external vendor is used for calibrating this instrument, then this field indicates the name of that vendor. This setting is read-only here and is inherited from the selected **Calibration procedure name**.
     - **Calibration start date** – The date of the first calibration. Other calibration dates are calculated relative to this date.
     - **Usage count since last calibration** – Indicates the number of times this instrument has been used since its last calibration. This field applies only when the **Calibration method** is *Usage* and is used to determine when the next calibration is due. When the instrument is calibrated and approved, this value is reset to zero. This field is usually read-only, but you can make it editable from the Action Pane by opening the **Functions** tab and selecting **Override usage data**.
     - **Lifetime usage count** – Indicates the number of times the test instrument tag has been used over its lifetime. This field is usually read-only, but you can make it editable from the Action Pane by opening the **Functions** tab and selecting **Override usage data**.
     - **Calibration group** – Select the calibration group that this instrument belongs to. The calibration group establishes the calibration method (manual, periodic, or usage) and related settings that establish the calibration schedule (how often the instrument should be calibrated). Settings from the selected group are shown nearby (read-only), which depend on which calibration method the group uses. Learn more in [Set up calibration groups](#groups).
-    - **Completion assignee** – Select the user who is generally assigned to complete the calibration of this instrument.
-    - **Approval assignee** – Select the user who is generally assigned to approve the calibration of this instrument.
+    - **Completion assignee** – Select the user who is usually assigned to complete the calibration of this instrument.
+    - **Approval assignee** – Select the user who is usually assigned to approve the calibration of this instrument.
     - **Started date** – Indicates the date when the most recent instrument calibration was started.
     - **Completion date** – Indicates the date when the most recent instrument calibration was completed.
     - **Calibration result** – Indicates the date result of the most recent instrument calibration.
-    - **Approval date** – Indicates the date date when the most recent instrument calibration was approved.
-    - **Next calibration date** – Indicates the date date when the next instrument calibration is scheduled. This field applies only when the **Calibration method** is *Periodic* or *Manual*. If you'r using the manual calibration method, this field is editable. For the periodic calibration method, this field is automatically calculated using the most recent calibration **Approval date** plus the calibration group schedule settings. If you need to reschedule the automatically calculated **Next calibration date**, then go to the Action Pane, open the **Functions** tab and select **Reschedule calculations**. Here are a few examples of how dates are calculated:
-        - If the last closed calibration **Approval date** is *Jan 1, 2025*, the **Calibration period** is *Day*, and the **Calibration period frequency** is *10*, then the **Next calibration date** calculates to be *Jan 11, 2025*.
-        - If the last closed calibration **Approval date** is *Jan 1, 2025*, the **Calibration period** is *Month*, and the **Calibration period frequency** is *3*, then the **Next calibration date** calculates to be *Apr 1, 2025*.
-        - If the last closed calibration **Approval date** is *Jan 1, 2025*, the **Calibration period** is *Year*, and the **Calibration period frequency** is *1*, then the **Next calibration date** calculates to be *Jan 1, 2026*.
+    - **Approval date** – Indicates the date when the most recent instrument calibration was approved.
+    - **Next calibration date** – Indicates the date when the next instrument calibration is scheduled. This field applies only when the **Calibration method** is *Periodic* or *Manual*. If you're using the manual calibration method, this field is editable. For the periodic calibration method, this field is automatically calculated using the most recent calibration **Approval date** plus the calibration group schedule settings. If you need to reschedule the automatically calculated **Next calibration date**, then go to the Action Pane, open the **Functions** tab and select **Reschedule calculations**. Here are a few examples of how dates are calculated:
+        - If the last closed calibration **Approval date** is *January 1, 2025*, the **Calibration period** is *Day*, and the **Calibration period frequency** is *10*, then the **Next calibration date** calculates to be *January 11, 2025*.
+        - If the last closed calibration **Approval date** is *January 1, 2025*, the **Calibration period** is *Month*, and the **Calibration period frequency** is *3*, then the **Next calibration date** calculates to be *April 1, 2025*.
+        - If the last closed calibration **Approval date** is *January 1, 2025*, the **Calibration period** is *Year*, and the **Calibration period frequency** is *1*, then the **Next calibration date** calculates to be *January 1, 2026*.
     - - **Date calibration certificate printed** – Indicates the date when the Instrument calibration certificate was last printed.
 
-1. Expand each of the following FastTabs and enter information as needed. These fields are for information only and are not used in any calculations or processes.
+1. Expand each of the following FastTabs and enter information as needed. These fields are for information only and aren't used in any calculations or processes.
     - **Manufacturer data** – Enter information specific to the instrument and its manufacturer.
     - **Test procedures** – Add additional test procedures here to support the calibration procedures.
     - **Specifications** – Add additional specifications.
@@ -221,7 +221,7 @@ You can manually create a calibration record for a test instrument tag at any ti
 
 ## Schedule a batch job to automatically create calibration records when needed
 
-The *Create calibration records* batch job automatically creates calibration records for test instrument tags that are due for calibration. The batch job can be scheduled to run on a regular basis (for example, daily or weekly) or it can be run manually as needed. Each time the batch job runs, it checks each test instrument tag and creates an open calibration record for each tag that meets the following criteria:
+The *Create calibration records* batch job automatically creates calibration records for test instrument tags that are due for calibration. The batch job can be scheduled to run regularly (for example, daily or weekly) or it can be run manually as needed. Each time the batch job runs, it checks each test instrument tag and creates an open calibration record for each tag that meets the following criteria:
     - If the **Calibration method** is *Usage*, then the job checks the **Usage count since last calibration** and **Maximum usage before calibration** fields to determine if a calibration record should be created.
     - If the **Calibration method** is *Periodic*, then the job checks the **Next calibration date** field to determine if a calibration record should be created.
 
@@ -252,9 +252,9 @@ To perform a calibration, follow these steps:
     - **Instrument usage status** – Indicates the current status of the test instrument tag (*Available*, *Calibration* or *Out of Service*).
     - **Calibration procedure name** – The calibration procedure to use. By default, this matches the procedure selected for test instrument tag but you can change it here. Learn more in [Set up calibration procedures](#procedures).
     - **Description** – Describes the calibration procedure.
-    - **External calibrating vendor** – If an external vendor is used for calibrating this instrument, then this field indicates the account number of that vendor. This setting is read-only here and is inherited from the the selected **Calibration procedure name**.
-    - **External vendor name** – If an external vendor is used for calibrating this instrument, then this field indicates the name of that vendor. This setting is read-only here and is inherited from the the selected **Calibration procedure name**.
-    - **Calibration procedure** – The procedures as specified on the Calibration procedure form. This setting is read-only here and is inherited from the the selected **Calibration procedure name**.
+    - **External calibrating vendor** – If an external vendor is used for calibrating this instrument, then this field indicates the account number of that vendor. This setting is read-only here and is inherited from the selected **Calibration procedure name**.
+    - **External vendor name** – If an external vendor is used for calibrating this instrument, then this field indicates the name of that vendor. This setting is read-only here and is inherited from the selected **Calibration procedure name**.
+    - **Calibration procedure** – The procedures as specified on the Calibration procedure form. This setting is read-only here and is inherited from the selected **Calibration procedure name**.
     - **Started by** – The user that started the calibration. This field is updated when you **Start calibration** action.
     - **Started date** – The date the calibration was started. This field is updated by the **Start calibration** action.
     - **Completion assignee** – The user responsible for assigning the user that will complete the calibration. This field defaults from the test instrument tag but can be modified.
@@ -269,15 +269,15 @@ To perform a calibration, follow these steps:
     - **Calibration notes** – Additional notes about the calibration. The default information comes from the test instrument tag but can be updated during calibration.
     - **Attachments** – If additional calibration instructions are available as attached documents, then the **Attachments** icon (paperclip) at the right side of the Action Pane shows a badge with the number of attachments. Select this icon to open the **Attachments for Calibration procedures** page, where you can view, add, and describe documents attached to your calibration record.
 
-1. If you'd like to record details about the specific instruments required or used to calibrate the test instrument, go to the Action Pane, open the **Calibrate instruments** tab and select **Assign calibration tools**. Then use the **Calibration tools used** page to record each instrument. Make the following settings for each instrument you add here: <!-- KFM: Does anything happen with this info? I can't see it listed anywhere after calibration is finished. -->
-    - **Calibration tool** – Select the test instrument type for the instrument to be used. For a test instrument type to be listed here here, it must have **Use for calibration** set to *Yes*. Learn more in [Quality management test instruments](quality-test-instruments.md).
+1. If you'd like to record details about the specific instruments required or used to calibrate the test instrument, go to the Action Pane, open the **Calibrate instruments** tab, and select **Assign calibration tools**. Then use the **Calibration tools used** page to record each instrument. Make the following settings for each instrument you add here: <!-- KFM: Does anything happen with this info? I can't see it listed anywhere after calibration is finished. -->
+    - **Calibration tool** – Select the test instrument type for the instrument to be used. For a test instrument type to be listed here, it must have **Use for calibration** set to *Yes*. Learn more in [Quality management test instruments](quality-test-instruments.md).
     - **Calibration tool tag number** – To identify a specific physical test instrument, then select its test instrument tag number here. This value is required if the selected **Calibration tool** has **Requires test instrument tag** set to *Yes*. <!-- KFM: will this result in incrementing the usage count of this tag when calibration is marked as complete? -->
 
-1. To start the calibration, go to the Action Pane, open the **Calibrate instruments** tab and select **Start calibration**. Then select **OK** in the dialog. This updates the **Started by** and **Started date** fields on the calibration record.
-1. Do your calibration tests as required. When you're done testing, go to the Action Pane, open the **Calibrate instruments** tab and select **Complete calibration**. Then make the following settings in the **Calibration action** dialog.
+1. To start the calibration, go to the Action Pane, open the **Calibrate instruments** tab, and select **Start calibration**. Then select **OK** in the dialog. This updates the **Started by** and **Started date** fields on the calibration record.
+1. Do your calibration tests as required. When you're done testing, go to the Action Pane, open the **Calibrate instruments** tab, and select **Complete calibration**. Then make the following settings in the **Calibration action** dialog.
     - **Calibration result** – Select the result of the calibration. Choose one of the following values:
         - *Pass* – The instrument passed the calibration.
-        - *Limited pass* – The instrument can still be used but within a limited scope.
+        - *Limited pass* – The instrument can still be used, but within a limited scope.
         - *Fail* – The instrument failed the calibration.
     - **Update associated test instrument tag status to 'Out of service'** – Set to *Yes* if the instrument failed the calibration and you want to mark it as out of service. This option is only available when the **Calibration result** is set to *Fail*.
 
@@ -335,7 +335,7 @@ Use calibration labels to attach calibration information directly to physical te
 
 Calibration label layouts are designed and printed using the ZPL (Zebra Programming Language) format, which is a standard format for printing labels on Zebra printers. Calibration labels can include information such as the test instrument tag number, the test instrument type, the calibration procedure name, and the next calibration date.
 
-To get started quickly, you can generate a pre-designed ZPL layout for a calibration label. This layout is designed to be used with Zebra printers and can be modified as needed. To add the pre-designed ZPL layout layout to your system, go to **Inventory management** \> **Setup** \> **Quality control** \> **Create sample calibration labels**. The system then generates a label layout named *SampleLabel_2X1*.
+To get started quickly, you can generate a pre-designed ZPL layout for a calibration label. This layout is designed to be used with Zebra printers and can be modified as needed. To add the pre-designed ZPL layout to your system, go to **Inventory management** \> **Setup** \> **Quality control** \> **Create sample calibration labels**. The system then generates a label layout named *SampleLabel_2X1*.
 
 To customize the standard layout or create new ones, follow these steps:
 
@@ -366,7 +366,7 @@ To print calibration labels for a physical test instrument, follow these steps:
 
 ## Print calibration certificates
 
-Calibration certificates document the calibration process and results for a test instrument. They are used to verify that the test instrument has been calibrated according to the specified procedures and standards. Calibration certificates can be printed for each calibration record, and they include information such as the test instrument tag number, the calibration procedure name, the calibration result, the name of the person who did the calibration, and the next calibration date.
+Calibration certificates document the calibration process and results for a test instrument. They're used to verify that the test instrument has been calibrated according to the specified procedures and standards. Calibration certificates can be printed for each calibration record, and they include information such as the test instrument tag number, the calibration procedure name, the calibration result, the name of the person who did the calibration, and the next calibration date.
 
 To print a certificate for the last closed calibration for a test instrument tag, follow these steps:
 
@@ -384,14 +384,14 @@ To print a certificate for any selected calibration record, follow these steps:
 
 ## View or print the calibration schedule
 
-The calibration schedule report provides a list of test instruments that need to be calibrated. However, you can customize the provided selection criteria to support many other uses, such as by filtering by owner or calibration method. By using the Show all due today option, it will create a list of test instrument tags where the Next calibration due date is before today.
+The calibration schedule report provides a list of test instruments that need to be calibrated. However, you can customize the provided selection criteria to support many other uses, such as by filtering by owner or calibration method. If you use the *Show all due today* option, it creates a list of test instrument tags where the Next calibration due date is before today.
 
 To print a calibration schedule report, follow these steps:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **Quality management** \> **Test instrument calibration schedule**. The **Test instrument calibration schedule** dialog opens.
 1. On the **Parameters** FastTab, set **Show all due today** to one of the following values:
     - *Yes* – Show only those test instrument tags whose next calibration date is before today.
-    - *No* – Allow all test instruments tags to be shown, regardless of when they are due for calibration.
+    - *No* – Allow all test instruments tags to be shown, regardless of when they're due for calibration.
 1. On the **Destination** FastTab, choose where to send the report (*Screen*, *Printer*, *File*, or *Email*). The current destination is shown here (default is *Screen*). To change the destination, select **Change**, then choose a new destination and make settings related to your choice.
 1. On the **Records to include** FastTab, set up filters and constraints to define which test instrument tags to include. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
 1. On the **Run in the background** FastTab, specify how, when, and how often to run the job. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
