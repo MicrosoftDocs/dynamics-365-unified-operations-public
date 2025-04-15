@@ -56,10 +56,10 @@ When initiated, the health check operation performs the following checks:
 
 ### View health check results
 
-The results of the health check operation are displayed in a pane on the right side of the point of sale (POS) screen. Each health check operation's status is shown, indicating whether it passed or failed. If a health check fails, the system provides detailed information to help troubleshoot the issue.
+The results of the health check operation are displayed in a pane on the right side of the point of sale (POS) screen, as shown in the following example image.
 
 :::image type="content" source="dev-itpro/media/offlinehealthchecklearn.jpg" alt-text="Image showing the Available tests page with test results for the Offline database status test.":::
 
-
+Each health check operation's status is shown, indicating whether it passed or failed. If a health check fails, the system provides detailed information to help troubleshoot the issue.
   
 
