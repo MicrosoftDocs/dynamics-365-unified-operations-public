@@ -17,12 +17,12 @@ ms.search.form: SysMessageQueueSetup, DiagnosticsValidationRule, ProcessSchedule
 
 ### Optimization Advisor
 
-A new diagnostic rule has been added to [Optimization Advisor](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/optimization-advisor-overview) called '***Check for aged processed or cancelled messages***'. 
+A new diagnostic rule has been added to [Optimization Advisor](../../fin-ops-core/fin-ops/sysadmin/optimization-advisor-overview.md) called '***Check for aged processed or cancelled messages***'. 
 
 By default, this rule runs on a monthly basis, detecting processed or cancelled messages older than a specified number of days. When the system identifies an old message, it creates a new opportunity with details about the number of processed or cancelled messages found. By clicking '***Take action***', users are redirected to the message queue setup form.
 
 ### Process Automation
-In [Process Automation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/process-automation), a background task named '***Cleanup job for the message processor***'.  By default, this task runs daily but can be modified according to user preferences. A batch job is created to execute the cleanup, deleting messages based on the setup in the message queue setup form.
+In [Process Automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md), a background task named '***Cleanup job for the message processor***'.  By default, this task runs daily but can be modified according to user preferences. A batch job is created to execute the cleanup, deleting messages based on the setup in the message queue setup form.
 
 
 ## Setup message cleanup
@@ -34,7 +34,7 @@ There are two new fields that are added to this form:
 
 These fields have a default value of '0', meaning no cleanup will occur if the default value is set.
 
-Once the setup is complete for a message queue, a background task can be initialized in Process Automation. Click on **Initialize process automations** to initialize a background task. 
+Once the setup is complete for a message queue, a background task can be initialized in Process Automation. Click on **Initialize process automation** to initialize a background task. 
 
 When the background task is created, the system automatically creates a batch job to start processing the cleanup functionality for messages.
 
