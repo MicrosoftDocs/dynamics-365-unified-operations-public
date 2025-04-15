@@ -43,7 +43,7 @@ In addition to the financial reports, you can use the following ledger reports t
 -   **Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency. It also shows each line of the journal that was used as an offset.
 
 > [!NOTE]
-> To use the hyperlinks to drill back to the vouchers/journals on the above reports enable the following features in the Feature management workspace. Go to **Workspaces > Feature management** and then select the **All** tab. Make sure **Enable drill through links on Report PDF viewer control.** and **Report Drill through links** are both enabled. 
+> To use the hyperlinks to drill back to the vouchers/journals on the above reports, enable the **Enable drill through links on Report PDF viewer control** and **Report Drill through links** features in the Feature management workspace.
 
 
 ## Additional resources
