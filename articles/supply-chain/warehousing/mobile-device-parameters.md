@@ -37,9 +37,9 @@ The global mobile device settings are found on the **Mobile device** FastTab on 
 
 ## Mobile device menu item display inventory dimensions FastTab on the General tab
 
-In this fast tab, you can configure how **tracking dimension below location** is displayed in the mobile app, including **batch below number** and **serial below number**. It has no impact on tracking dimension above location, such as batch above number or serial above number display.
+In this fastTab, you can configure how **tracking dimension below location** is displayed in the mobile app, including **batch below number** and **serial below number**. It has no impact on tracking dimension above location, such as batch above number or serial above number display.
 
-The **Display tracking dimension control for last on-hand** setting applies to the entire **work order type**, meaning it affects all mobile device menu items if they are used to process this work order type. Currently, this feature is supported only for **sales orders** — other work order types (e.g. transfer order, purchase order) are not supported. The setting has two options:
+The **Display tracking dimension control for last on-hand** setting applies to the entire **work order type**, meaning it affects all mobile device menu items if they're used to process this work order type. Currently, this feature is supported only for **sales orders**—other work order types (for example, transfer order, purchase order) aren't supported. The setting has two options:
 
 - **Display tracking dimension control**. The mobile app always displays the tracking dimension below location control (batch below number or serial below number) when processing this work order type.
 - **Hide tracking dimension control**. The mobile app always hides the tracking dimension below location control (batch below number or serial below number) when processing this work order type.
@@ -47,18 +47,18 @@ The **Display tracking dimension control for last on-hand** setting applies to t
 Consider the following scenario:
 
 - A batch below item whsbb.
-- A sales order is placed for whsbb with a quantity of 2 eaches.
-- The available on-hand inventory for whsbb is 2 eachs (the last batch in stock).
+- A sales order is placed for whsbb with a quantity of two eaches.
+- The available on-hand inventory for whsbb is two eachs (the last batch in stock).
 
 If the setting is configured to **Hide tracking dimension control** (Default configuration):
 
-- The system will automatically assign the batch number behind the scene and proceed.
-- The mobile app will not display batch number control.
-- User can not confirm or edit batch number in the mobile app, even if batch number confirmation is enabled.
+- The system automatically assigns the batch number behind the scene and proceed.
+- The mobile app won't display batch number control.
+- User cannot confirm or edit batch number in the mobile app, even if batch number confirmation is enabled.
 
 If the setting is configured to **Display tracking dimension control**:
 
-- The mobile app will display an **empty** batch number control.
+- The mobile app displays an **empty** batch number control.
 - The user must manually enter the batch number.
 
-To configure this setting for an individual mobile device menu item, navigate to the **mobile device menu item** \> set the **Display tracking dimension control for last on-hand** field, where you can override the setting here. Similarly, it will only take effect if the menu item is used to process the supported work order type (currently only sales order). For more details, see <a href="configure-mobile-devices-warehouse.md#additional-menu-item-options">Additional menu item options</a>.
+To configure this setting for an individual mobile device menu item, navigate to the **mobile device menu item** \> set the **Display tracking dimension control for last on-hand** field, where you can override the setting here. Similarly, it only takes effect if the menu item is used to process the supported work order type (currently only sales order). For more information, see <a href="configure-mobile-devices-warehouse.md#additional-menu-item-options">Additional menu item options</a>.
