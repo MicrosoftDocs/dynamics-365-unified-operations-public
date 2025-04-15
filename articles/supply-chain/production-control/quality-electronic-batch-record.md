@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-## Electronic batch records (EBR) (preview)
+# Electronic batch records (EBR) (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

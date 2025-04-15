@@ -1,6 +1,6 @@
 ---
 title: Nonconformance work groups (preview)
-description:
+description: Use nonconformance work groups to establish group names that you can assign to your nonconformance records to make it easier to classify your nonconformances.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac

@@ -38,12 +38,12 @@ You can use electronic signatures for critical business processes. Some processe
 
 ### Prerequisites for passphrase constraints (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 Most electronic signature features are standard for all current versions of Supply Chain Management. However, passphrase constraints and the ability to require comments have been added more recently. To use these enhancements, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Electronic signature improvements* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *(Preview) Electronic signature improvements* must be turned on in [feature management](../../get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

@@ -1,10 +1,10 @@
 ﻿---
 title: Approved customer lists (preview)
-description: 
+description: Control which products specific customers can buy and when they can buy them, which is especially important with a product line that involves controlled substances or branded products.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: QMSApprovedCustomerList, QMSApprovedCustomerGroup, QMSApprovedItemGroup
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 
@@ -16,8 +16,6 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
-
-<!-- KFM: This topic has a huge amount of redundancy. Most lists of field settings are probably unnecessary. We should instead be able to briefly describe each place in the system where we can create and check for approved items. I suppose this topic could be about a quarter as long as it is. But I might be wrong, I couldn't try any of this because Helix is down.  -->
 
 You may often sell products and services on a recurring basis to certain customers or groups of customers who have been approved for these purchases based on their prior and on-going business relationship. By pre-approving customers, you not only expedite the sales order process and shipment of the product, but you also validate that the product is sold only to those customers who are allowed to purchase it. This also prevents a product from being sold to customers who are not authorized to buy it.
 
@@ -100,7 +98,7 @@ Then use the buttons and settings described in the following subsections.
     - **All** – All customers are designated.
 - **Customer relation** – Select or view the identification for the customer or approved customer group.
 - **Effective** – Select or view the effective date on which the ACL approval to purchase the item or items starts. The default is the current date.
-- **Expiration** – Select or view the date on which the ACL's approval to purchase the item or items expires. The default is **Never**.
+- **Expiration** – Select or view the date on which the ACL's approval to purchase the item or items expires. The default is *Never*.
 
 ## Set up approved customer groups and approved item groups
 
@@ -111,25 +109,31 @@ Customer and item groups allow you to set up groups of customers and groups of i
 
 ## View and maintain approved items from the customer account
 
-From the customer record, you have different options to view and maintain approved items for that customer account. Go to **Sales and marketing** \> **Customers** \> **All customers** \> **Tab: Sell** \> **Group: Approved item** and select one of the following menu items
+From the customer record, you have different options to view and maintain approved items for that customer account. 
 
-- **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list.
-- **Approved items** -  Open the **Approved customer list by customer** page showing items approved for the customer account. This list is similar to the **Setup** page, except that all items defined in **Approved items groups** are unfolded to their item numbers. Use the fields **Effective** and **Expiration** to filter the list based on a specified **Effective date** or **Expiration date**.
+1. Go to **Sales and marketing** \> **Customers** \> **All customers**.
+1. Select the customer you want to set up.
+1. On the Action Pane, open the **Sell** tab and select one of the following buttons from the **Approved customer** group.
 
-- **Effective period** - Open the **Approved customer list expiration** page showing items approved for the customer. By default this list shows approved items that has an expiration date. The date in the **As of** field is defaulted to *todays date*, so it shows by default approved items where the approval is not expired as of *todays date*. You can change the date to a different date in the future. Select **Include never expired** to show also approved items that are set up with no expiration date.
+    - **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list.
+    - **Approved items** -  Open the **Approved customer list by customer** page showing items approved for the customer account. This list is similar to the **Setup** page, except that all items defined in **Approved items groups** are unfolded to their item numbers. Use the fields **Effective** and **Expiration** to filter the list based on a specified **Effective date** or **Expiration date**.
+    - **Effective period** - Open the **Approved customer list expiration** page showing items approved for the customer. By default this list shows approved items that has an expiration date. The date in the **As of** field is defaulted to *todays date*, so it shows by default approved items where the approval is not expired as of *todays date*. You can change the date to a different date in the future. Select **Include never expired** to show also approved items that are set up with no expiration date.
 
 ## View and maintain approved customers from the released product master
 
-From the product master, you have different options to view and maintain approved customers. Go to  **Product information management** \> **Products** \> **Released products** \> **Tab: Sell** \> **Group: Approved customers** and select one of the following menu items
+From the product master, you have different options to view and maintain approved customers. 
 
-- **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list.
-- **Approved customers** -  Open the **Approved customer list by item** page showing customers approved for the item. This list is similar to the **Setup** page, except that all customers defined in **Approved customer groups** are unfolded to their item customer accounts. Use the fields **Effective** and **Expiration** to filter the list based on a specified **Effective date** or **Expiration date**.
+1. Go to  **Product information management** \> **Products** \> **Released products**.
+1. Select the product you want to set up.
+1. On the Action Pane, open the **Sell** tab and select one of the following buttons from the **Approved customer** group.
 
-- **Effective period** - Open the **Approved customer list expiration** page showing customers approved for the item. By default this list shows approved customers that are set up with an expiration date. The date in the **As of** field is defaulted to *todays date*, so it shows by default approved customers where the approval is not expired as of *todays date*. You can change the date to a different date in the future. Select **Include never expired** to show also approved customers that are set up with no expiration date.
+    - **Setup** - Open the **Approved customer list** page filtered by the customer account. In this context, when you create a new line item, you only need to specify specific items or **Approved item groups**, the customer account is fixed to the account from where you opened the list.
+    - **Approved customers** -  Open the **Approved customer list by item** page showing customers approved for the item. This list is similar to the **Setup** page, except that all customers defined in **Approved customer groups** are unfolded to their item customer accounts. Use the fields **Effective** and **Expiration** to filter the list based on a specified **Effective date** or **Expiration date**.
+    - **Effective period** - Open the **Approved customer list expiration** page showing customers approved for the item. By default this list shows approved customers that are set up with an expiration date. The date in the **As of** field is defaulted to *todays date*, so it shows by default approved customers where the approval is not expired as of *todays date*. You can change the date to a different date in the future. Select **Include never expired** to show also approved customers that are set up with no expiration date.
 
-## Configure the date validation for the Approved Customer List
+## Configure the date validation for the approved customer list
 
-When entering effective and expiration dates for an Approved Customer List record there is validation performed when the check method is not set to *No check*. The dates are validation for the various documents based on the configuration selection you make in the Sales and marketing parameters page.
+When entering effective and expiration dates for an approved customer list record, validation is performed when the check method is not set to *No check*. The dates are validated for the various documents based on the configuration selection you make in the **Sales and marketing parameters** page.
 
 **Date type** – The date on the document that is selected for validation against the ACL record. The values are:
 

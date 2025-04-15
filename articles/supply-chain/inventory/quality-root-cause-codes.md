@@ -1,6 +1,6 @@
 ---
 title: Correction root cause codes (preview)
-description:
+description: Use nonconformance root cause codes to establish standard codes for root causes associated with corrections for nonconformance issues that are often applied at your company.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
