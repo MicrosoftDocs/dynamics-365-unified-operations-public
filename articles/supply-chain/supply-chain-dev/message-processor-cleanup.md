@@ -1,6 +1,6 @@
 ---
-title: Cleanup functionality third-party manufacturing execution systems
-description: Learn how you can set up cleanup job for message processor
+title: Cleanup for message processor
+description: Learn how you can set up a cleanup job for message processor
 author: juhnkim
 ms.author: juhnkim
 ms.topic: how-to
@@ -11,9 +11,7 @@ ms.reviewer: kamaybac
 ms.search.form: SysMessageQueueSetup, DiagnosticsValidationRule, ProcessScheduleSeries
 ---
 
-# Cleanup functionality third-party manufacturing execution systems
-
-## Functionality Description
+## Cleanup functionality 
 
 ### Optimization Advisor
 
@@ -37,6 +35,5 @@ These fields have a default value of 0, meaning no cleanup will occur if the def
 Once the setup is complete for a message queue, a background task can be initialized in Process Automation. Click on **Initialize process automation** to initialize the background task. 
 
 When the background task is created, the system automatically creates a batch job to start processing the cleanup functionality for messages.
-
 
 
