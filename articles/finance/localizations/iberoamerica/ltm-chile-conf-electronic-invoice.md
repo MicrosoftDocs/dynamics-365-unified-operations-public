@@ -80,6 +80,26 @@ The following steps go through the information that the XML tags require, in the
     - **Field list 7:** Add elements that have the options for remission types and their codes according to the Chilean normative.
     - **Field list 8:** Add elements that have the options for products transfer types and their codes according to the Chilean normative.
 
+17. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**, and configure the primary address for each warehouse used.
+
 After you complete these steps, you can issue electronic invoices from free text invoices, sales orders, and projects.
+
+## Inventory transfer format for internal products movements
+The inventory transfer format (**Invent transfer (CL)**) should be printed from the Electronic Reporting configuration:
+## Prerequisites
+1. You must download the specific report configurations from the Dataverse configuration repository for Chile Electronic Invoices (**Invent transfer (CL)**). 
+
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse)
+2. You must configure the Electronic reporting (ER) parameters. 
+
+Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+3. Enable the general LATAM feature and the specific LATAM feature for Chile.
+4. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting** and configure the format application specific parameters setting the tax codes for taxed (no) and not taxed (yes) transactions.
+
+## Print the Inventory transfer format for Chile
+1. Go **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. Select the format report **Invent transfer (CL)**.
+3. Select the latest version and select **Run**.
+4. Enter the filters desired and then select **Ok** to print.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
