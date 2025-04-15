@@ -62,7 +62,7 @@ Break masters define a pricing structure and its breakpoints. The pricing struct
 
 ## Set up a rate master
 
-Rate masters represent carrier rates. Each rate master can be associated with only one rating metadata ID, but have multiple rate bases and rate base assignments. These define different price points for each carrier depending on destinations, services or different rate bases.
+Rate masters represent carrier rates. Each rate master can be associated with only one rating metadata ID, but have multiple rate bases and rate base assignments.
 
 1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
 1. On the Action Pane, select **New**.
@@ -102,14 +102,15 @@ Then enter values for the following settings for the new row. <!-- KFM: here we 
 
 ### Set up rate base assignments
 
+Rate base assignments allow you to create several different price points for each carrier depending on destinations, services, or different rate bases. You set them up under each rate master through the **Rate base assignments** Fasttab.
+
 1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
 1. On the **Rate base assignments** FastTab toolbar, select **New** to add a new row to the grid. Then enter values for the following settings for the new row. <!-- KFM: here we should introduce the purpose of this FastTab. I think it's the conditions for selecting a rate base, but I'm not sure. -->
     - **Name** – This field is used to specify a unique identifier for the rate base assignment. <!-- KFM: Description needed -->
     - **Rate base** – The rate base field is used to define the basis on which the rates are calculated. <!-- KFM: Description needed. This is also a required field! So we have a chicken/egg problem when it comes to defining rate masters and rate bases. We need to resolve this somehow. -->
     - **Service** – This field specifies the type of service associated with the rate base assignment. It could refer to different levels of service such as standard, expedited, or overnight delivery<!-- KFM: Description needed -->
     - **Effective start date and time** – This field indicates the date and time when the rate base assignment becomes active. It ensures that the rates are applied correctly from the specified start time. <!-- KFM: Description needed -->
-    - **Effective end date and time** – his field specifies the date and time when the rate base assignment expires. It helps in managing the validity period of the rates and ensures that outdated rates are not applied. <!-- KFM: Description needed -->
-
+    - **Effective end date and time** – This field specifies the date and time when the rate base assignment expires. It helps in managing the validity period of the rates and ensures that outdated rates are not applied. <!-- KFM: Description needed -->
 1. Fill out the remaining fields in the new row to define <!-- KFM: ... whatever we are doing here... -->. The available columns vary based on what you selected in the **Rating metadata ID** field.
 1. On the Action Pane, select **Save**.
 
