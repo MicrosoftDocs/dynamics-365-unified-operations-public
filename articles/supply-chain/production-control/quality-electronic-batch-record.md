@@ -93,19 +93,45 @@ Each of these journal types provides the following e-signature options: <!-- KFM
 - **Post picking list production journal (non-dispensing)** – When this option is set to *Yes*, the system notifies users that picking list journals are no longer posted automatically when starting a batch or production order. Also, the report as finished option of the batch or production order is disabled. To report a batch or production order as finish, you must use the report as finished production journal. This is because the system must capture the electronic signature of the individuals who are posting those activities.
 - **Validate quality order** – When this option is set to *Yes*, the system requires a signature when validating an overall quality order, but not when validating individual tests of a quality order.
 
-### Add work instructions to BOM and formula items
+### Add work instructions to formula items
 
-To establish work instructions for an ingredient line, you must edit the formula line. When EBR is in use, the editing of formula lines is blocked for approved formulas. To add work instructions to a BOM or formula line, follow these steps.
+To add work instructions to a formula line, follow these steps.
 
-1. Open the formula or the bill of material page. The BOM/formula version is shown in the lower portion of the page and the BOM/formula lines are shown in the upper portion of the page. <!-- KFM: I couldn't find these pages. Could not confirm this procedure. I suspect it is incorrect. -->
-1. Select **Approve** \> **Remove approval**.
-1. Select **Lines** to display the multiple ingredient lines for the selected BOM/formula.
-1. Select the desired ingredient and open the **Work instructions** tab.
-1. Select **New** on the **Work instructions** tab toolbar to add a new work instruction for the selected ingredient.
+1. Go to **Product information management \> **Products** \> **Released products**.
+1. Open or select the item that uses the formula that you want to add instructions to.
+1. On the Action Pane, open the **Engineer** tab and select **Formula versions**.
+1. From the list pane, select the formula version that you want to edit.
+1. On the Action Pane, open the **Formulas** tab and select **Formula**.
+1. If your formula has **Approved** set to *Yes* on the **Formula header** FastTab, you must remove the approval before you can edit it. Follow these steps:
+    1. On the Action Pane, open the **Formula** tab and select **Approve formula**.
+    1. In the dialog, set **Remove approval** to *Yes*.
+    1. Select *OK*.
+1. On the **Formula lines** FastTab, select the line you want to add instructions to.
+1. On the **Line details** FastTab, open the **Work instructions** tab.
+1. Select **Add** on the **Work instructions** tab toolbar to add a new work instruction for the selected line.
 1. Set **Type** to *Note* and enter a short **Description**.
 1. In the lower text box, enter the required work instructions or other comments.
+1. On the Action Pane, select **Save**.
 
- <!-- KFM: Add steps to re-approve? -->
+### Add work instructions to BOM items
+
+To add work instructions to a BOM line, follow these steps.
+
+1. Go to **Product information management \> **Products** \> **Released products**.
+1. Open or select the item that uses the BOM that you want to add instructions to.
+1. On the Action Pane, open the **Engineer** tab and select **BOM versions**.
+1. From the list pane, select the BOM version that you want to edit.
+1. On the Action Pane, open the **Bill of materials** tab and select **Bills of materials**.
+1. If your BOM has **Approved** set to *Yes* on the **Bill of materials header** FastTab, you must remove the approval before you can edit it. Follow these steps:
+    1. On the Action Pane, open the **Bill of materials** tab and select **Approval**.
+    1. In the dialog, set **Remove approval** to *Yes*.
+    1. Select *OK*.
+1. On the **Bill of materials lines** FastTab, select the line you want to add instructions to.
+1. On the **Line details** FastTab, open the **Work instructions** tab.
+1. Select **Add** on the **Work instructions** tab toolbar to add a new work instruction for the selected line.
+1. Set **Type** to *Note* and enter a short **Description**.
+1. In the lower text box, enter the required work instructions or other comments.
+1. On the Action Pane, select **Save**.
 
 ### Add work instructions for routes
 
@@ -145,7 +171,7 @@ EBR is composed of the following two major functions.
 
 - **Master manufacturing record (MMR)** – Documents all the methods that might be used to produce an item and the various ways its characteristics might be measured. This query contains all the BOM/formula versions that are approved to use in the manufacturing of that item. It also includes the various approved route versions. This information also includes quality associations referenced by the production process of the item. These quality associations result in quality orders being generated automatically for the item. If the item is an ingredient, there might be quality associations referenced for that ingredient that might generate quality orders during an inspection. Other characteristics might be referenced for the ingredients or produced items that indicate the type of characteristic that is being measured, which might be related to a particular inventory batch dimension or information related to the vendor that supplied the ingredient.
 
-- **Batch production record (BPR)** – Documents the specific way the item was produced and the value of each characteristic. It also details the characteristics and quantities of the ingredients used to produce the item. This query contains the BOM/formula version that was used in the production process along with the proposed ingredient quantities that were estimated to complete the production. This information also contains the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredients that may have been substituted during the production process.
+- **Batch production record (BPR)** – Documents the specific way the item was produced and the value of each characteristic. It also details the characteristics and quantities of the ingredients used to produce the item. This query contains the BOM/formula version that was used in the production process along with the proposed ingredient quantities that were estimated to complete the production. This information also contains the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredients that were substituted during the production process.
 
 Where the MMR maintains the types of characteristics that would be measured for the item, the BPR maintains the actual values of those measured characteristics. The BPR contains the actual detail of the quality orders that were referenced by the quality associations in the MMR.
 
@@ -193,13 +219,14 @@ To run a BPR query, follow these steps.
 
 ### Generate a batch production record report
 
-<!-- KFM: This section doesn't make sense. Instructions are needed (I suppose you select **Batch production report (BPR)** in the Action Pane of the **Batch production record** page. I don't know what the list at the end of the section is referring to (options for generating the report?). I couldn't generate a report because I don't have data. -->
+The batch production record report lets you view and/or print a report for a batch production record ID. A simplified version of the report contains the same information reflected on a batch production record query.
 
-The batch production record report lets you view and/or print a report for a batch production record ID. A simplified version of the report contains the same information reflected on a batch production record query. On the **General** tab of the report, you can choose to include more information for both the produced items and/or the raw material item. For the produced items, you can choose to include the quality order information and the batch attribute value information. For the raw material items, you can choose to include the quality order information, the batch attribute value information, and the vendor batch details information on the report.
+To generate a batch production record report, follow these steps.
 
-- **Batch production record** – Select the batch production record ID for a corresponding batch or production order.
-- **Quality orders (Produced items)** – Select to include the quality orders for the produced items.
-- **Batch attribute values (Produced items)** – Select to include the batch attribute values for the batches of the produced items.
-- **Quality orders (Ingredients)** – Select to include the quality orders for the raw material items.
-- **Batch attribute values (Ingredients)** – Select to include the batch attribute values for the batches of the raw material items.
-- **Vendor batch details (Ingredients)** – Select to include the Vendor batch details for the batches of the raw material items.
+1. Run a BPR query to find the relevant batch production record, as described in the previous section.
+1. On the Action Pane, select **Batch production report (BPR)**.
+1. In the dialog, expand the **Parameters** FastTab and choose which details you want to include in the report.
+1. On the **Destination** FastTab, choose whether to view the report on screen, print it, save it as a file, or email it.
+1. Select **OK** to generate the report.
+
+<!-- KFM: Add a section that describes how to find the batch production record from a production order or batch order? Other places? -->
