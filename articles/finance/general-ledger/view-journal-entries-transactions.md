@@ -42,6 +42,9 @@ In addition to the financial reports, you can use the following ledger reports t
 -   **Transaction list by date** – This report shows all the transactions by date, together with the journal number, voucher, and ledger account. It also shows the transactions in the transaction, accounting, and reporting currencies.
 -   **Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency. It also shows each line of the journal that was used as an offset.
 
+> [!NOTE]
+> To use the hyperlinks to drill back to the vouchers/journals on the above reports, enable the **Enable drill through links on Report PDF viewer control** and **Report Drill through links** features in the Feature management workspace.
+
 
 ## Additional resources
 - [General ledger account balances](general-ledger-account-balances.md) 
