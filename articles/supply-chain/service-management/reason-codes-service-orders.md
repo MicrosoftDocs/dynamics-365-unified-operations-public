@@ -3,14 +3,16 @@ title: Reason codes for service orders
 description: Use reason codes to help explain the status of a service order when the stage of a service order is updated, including a step-by-step process. 
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAStageTable
+ms.topic: how-to
+ms.date: 03/17/2025
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
-# Reason codes for service orders 
+# Reason codes for service orders
 
 [!include [banner](../includes/banner.md)]
 

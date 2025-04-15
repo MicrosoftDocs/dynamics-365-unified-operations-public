@@ -637,6 +637,8 @@ items:
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
           href: dev-tools/development-system-requirements.md
+        - name: Migrate a CHE load balancer
+          href: dev-tools/migrate-che-load-balancer.md
       - name: X++ Application lifecycle management
         items: 
         - name: Version control, metadata search, and navigation
@@ -1865,8 +1867,12 @@ items:
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
         - name: Security governance (preview)
           items:
+            - name: User security governance overview
+              href: ../fin-ops/sysadmin/security-gov-overview.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
+            - name: Import security categories
+              href: ../fin-ops/sysadmin/security-category-import.md
             - name: Set up security governance parameters
               href: ../fin-ops/sysadmin/setup-security-gov-para.md 
             - name: Set up a process hierarchy, roles, and privileges
@@ -1884,7 +1890,9 @@ items:
             - name: Privileged user management
               href: ../fin-ops/sysadmin/priv-user-mgmt.md            
             - name: Available reports for security
-              href: ../fin-ops/sysadmin/security-reports.md            
+              href: ../fin-ops/sysadmin/security-reports.md 
+            - name: Security governance faq
+              href: ../fin-ops/sysadmin/security-governance-faq.md
         - name: Entra ID security groups
           href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management

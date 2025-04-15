@@ -3,16 +3,13 @@ title: Cost management Power BI content
 description: Learn about what is included in the Cost management Power BI content, including learning about how to report pages that are included in the Power BI content.
 author: prasungoel
 ms.author: prasungoel
-ms.topic: article
-ms.date: 03/16/2018
 ms.reviewer: kamaybac
-audience: IT Pro
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
-ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
-ms.search.industry: Manufacturing
+ms.topic: how-to
+ms.date: 03/17/2025
+ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Cost management Power BI content
@@ -27,7 +24,7 @@ This Power BI content provides a categorized format that helps you monitor the p
 
 The Power BI content is built on the **CostObjectStatementCacheMonthly** aggregated measurement, which has the **CostObjectStatementCache** table as its primary data source. This table is managed by the Data set cache framework. By default, the table is updated every 24 hours, but you can change the update frequency or enable manual updates in the configuration of the data set cache. Manual updates can be run in either the **Cost administration** workspace or the **Cost analysis** workspace.
 
-After every update of the **CostObjectStatementCache** table, the **CostObjectStatementCacheMonthly** aggregated measurement must updated before data in the Power BI visualizations is updated.
+After every update of the **CostObjectStatementCache** table, the **CostObjectStatementCacheMonthly** aggregated measurement must be updated before data in the Power BI visualizations is updated.
 
 ## Accessing the Power BI content
 
@@ -48,7 +45,7 @@ The **Cost analysis** workspace contains the following tabs:
 
 ## Report pages that are included in the Power BI content
 
-The **Cost management** Power BI content includes a set of report pages that consist of a set of metrics. These metrics are visualized as charts, tiles, and tables. 
+The **Cost management** Power BI content includes a set of report pages that consist of a set of metrics. These metrics are visualized as charts, tiles, and tables.
 
 The following tables provide an overview of the visualizations in the **Cost management** Power BI content.
 
@@ -184,7 +181,6 @@ The following table shows the key calculated measurements in the Power BI conten
 
 The following key dimensions are used as filters to slice the aggregate measurements, so that you can achieve greater granularity and gain deeper analytical insights.
 
-
 | Entity                                                  | Examples of attributes                          |
 |---------------------------------------------------------|-------------------------------------------------|
 | Products                                                | Product number, Product name, Unit, Item groups |
@@ -193,6 +189,4 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
 | Site                                                    | ID, Name, Address, State, Country/Region               |
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

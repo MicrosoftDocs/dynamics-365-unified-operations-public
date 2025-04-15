@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 02/14/2025
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
@@ -49,7 +49,7 @@ This article explains how to customize tax configurations by using [data fields 
 
 ## Implement tax features in the customized tax configuration
 
-1. In Regulatory Configuration Service (RCS), go to **Globalization Features** > **Tax**.
+1. In Finance, go to **Globalization Features** > **Tax**.
 2. Select **Add**, enter information about the new feature, and then select **Create feature**.
 3. On the **Versions** tab, select the feature, and then select **Edit**.
 4. On the **General** tab, in the **Configuration version** field, select the customized tax configuration and version.

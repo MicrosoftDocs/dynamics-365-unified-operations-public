@@ -3,11 +3,12 @@ title: Automatically create service orders
 description: Learn how you can generate service orders that are based on a service agreement for the valid period of the service agreement.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable
+ms.topic: how-to
+ms.date: 03/17/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Automatically create service orders
@@ -26,10 +27,10 @@ Service orders are generated automatically from the following settings:
 
 - The **Combine service orders** option on the service agreement header. This option defines whether service order lines generated from a service agreement, combines service orders according to employee, service task, service object, or service agreement. Learn more in [Combine service orders](combine-service-orders.md).
 
-- The **Time window** option on the service agreement line. The time window defines how far a service order line can move with regard to its calculated date. Learn more in [Time windows](time-windows.md).
+- The **Time window** option on the service agreement line. The time window defines how far a service order line can move relative to its calculated date. Learn more in [Time windows](time-windows.md).
 
 > [!NOTE]
-> If the day that is specified for a service order is not open in the calendar that you have selected on the **Service management parameters** page, a message will indicate that there is a calendar conflict. You can safely ignore the message; the service order will be created, even though the day is closed on the calendar.
+> If the day that is specified for a service order isn't open in the calendar selected on the **Service management parameters** page, a message indicates that there's a calendar conflict. You can safely ignore the message; the service order will still be created even though the day is closed on the calendar.
 
 ## Example 1
 

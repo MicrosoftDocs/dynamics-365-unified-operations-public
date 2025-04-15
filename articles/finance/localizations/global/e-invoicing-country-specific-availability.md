@@ -4,7 +4,7 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 09/04/2024
+ms.date: 02/10/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -31,7 +31,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Belgium | Belgian electronic invoice (BE) | Sales invoices and project invoices |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
-| Costa Rica | LATAM e-invoice CR | Sales invoices and project invoices |
+| Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) | Sales invoices and project invoices |
 | Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia | Estonian electronic invoice (EE) | Sales invoices and project invoices |
@@ -54,9 +54,6 @@ The following table shows the Electronic invoicing globalization features that a
 
 > [!IMPORTANT]
 > We were planning to transition NF-e/NFS-e and CFDI to our Electronic Invoicing service. For quite a while, the features and formats for NF-e/NFS-e have been in preview in Brazil, and those for CFDI have been in preview in Mexico. However, because of a lack of interest in adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing service platform in those countries. The format of these documents won't contain the latest compliance changes that were published since the preview release. In the meantime, we recommend continuing that you use our built-in X++ implementations in Brazil and Mexico. **These implementations are kept up to date with the legislation.** For more information, see [Brazil NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
-
-> [!NOTE]
-> In current implementations in Costa Rica, the globalization feature in the preceding table only generates electronic invoices and stores their XML files on the service side. It doesn't submit the invoices. Submission of Panamanian electronic invoices requires integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md). However, the integration hasn't yet been released for that country.
 
 ## Preview features
 

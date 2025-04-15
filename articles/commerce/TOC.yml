@@ -234,14 +234,16 @@
           href: dev-itpro/retail-in-store-topology.md
         - name: Commerce Data Exchange
           items:
-          - name: Commerce Data Exchange best practices
-            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange and commerce channel communications
             href: dev-itpro/define-retail-channel-communications-cdx.md
+          - name: Commerce Data Exchange best practices
+            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
           - name: Sort Commerce Data Exchange packages by primary index
             href: dev-itpro/CDX-package-sort.md
+          - name: Download sessions overview
+            href: dev-itpro/download-sessions.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
@@ -422,8 +424,6 @@
               href: pos-healthcheck.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
-            - name: Peripheral compatibility
-              href: dev-itpro/Compatible-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in Store Commerce
@@ -448,7 +448,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows (preview)
+            - name: Check out faster with optimized payment flows
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
@@ -656,6 +656,8 @@
             href: configure-emailed-receipt-formats.md
           - name: Add a QR code or bar code to transactional and receipt emails
             href: add-qr-code-barcode-email.md
+        - name: Manage Azure Maps for your organization
+          href: dev-itpro/manage-azure-maps.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
@@ -794,6 +796,72 @@
           href: pricing-examples.md
         - name: Pricing extensions
           href: pricing-extensions.md          
+      - name: Unified pricing management
+        items:
+        - name: Unified pricing management module overview
+          href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
+        - name: Turn on the Unified pricing management module for your system
+          href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
+        - name: Price attributes
+          items:
+          - name: Price attributes overview
+            href: ../supply-chain/unified-pricing-management/upm-price-attributes-overview.md?context=/dynamics365/context/commerce
+          - name: Price attributes for products, customers, and orders
+            href: ../supply-chain/unified-pricing-management/upm-price-attributes-setup.md?context=/dynamics365/context/commerce
+          - name: Price attribute groups
+            href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
+          - name: Customer and product price attribute groups
+            href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
+        - name: Price groups
+          items:
+          - name: Price groups overview
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-overview.md?context=/dynamics365/context/commerce
+          - name: Set up price groups for Unified pricing management
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-set-up.md?context=/dynamics365/context/commerce
+          - name: Assign price groups
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-assign.md?context=/dynamics365/context/commerce
+          - name: Price group priorities
+            href: ../supply-chain/unified-pricing-management/upm-price-groups-priorities.md?context=/dynamics365/context/commerce
+        - name: Price component codes
+          items:
+          - name: Price component codes
+            href: ../supply-chain/unified-pricing-management/upm-price-component-code.md?context=/dynamics365/context/commerce
+          - name: Price component code posting
+            href: ../supply-chain/unified-pricing-management/upm-price-component-posting.md?context=/dynamics365/context/commerce
+        - name: Price structures
+          items:
+          - name: Price structure overview
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-overview.md?context=/dynamics365/context/commerce
+          - name: Set up company to use a single price structure
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-single.md?context=/dynamics365/context/commerce
+          - name: Set up company to use a multiple price structures
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-multiple.md?context=/dynamics365/context/commerce
+          - name: Arrange price component codes into a price structure
+            href: ../supply-chain/unified-pricing-management/upm-price-structure-details.md?context=/dynamics365/context/commerce
+        - name: Base prices and sales trade agreements
+          items:
+          - name: Vendor list price and price adjustments
+            href: ../supply-chain/unified-pricing-management/upm-vendor-list-price.md?context=/dynamics365/context/commerce
+          - name: Sales order base price determination rules
+            href: ../supply-chain/unified-pricing-management/upm-base-price-determination-rules.md?context=/dynamics365/context/commerce
+          - name: Base price versions
+            href: ../supply-chain/unified-pricing-management/upm-base-price-versions.md?context=/dynamics365/context/commerce
+          - name: Sales trade agreement prices
+            href: ../supply-chain/unified-pricing-management/upm-sales-trade-agreement-prices.md?context=/dynamics365/context/commerce
+        - name: Discounts and margin price adjustments
+          items:
+          - name: Margin price adjustments
+            href: ../supply-chain/unified-pricing-management/upm-margin-price-adjustments.md?context=/dynamics365/context/commerce
+          - name: Discounts
+            href: ../supply-chain/unified-pricing-management/upm-discounts.md?context=/dynamics365/context/commerce
+          - name: Pricing rules for discounts and margin price adjustments
+            href: ../supply-chain/unified-pricing-management/upm-margin-discount-pricing-rules.md?context=/dynamics365/context/commerce
+        - name: Concurrency within and across price component codes
+          items:
+          - name: Resolving concurrency within price component codes
+            href: ../supply-chain/unified-pricing-management/upm-concurrence-within-codes.md?context=/dynamics365/context/commerce
+          - name: Resolving concurrency across price component codes
+            href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview

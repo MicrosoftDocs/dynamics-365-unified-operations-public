@@ -1,59 +1,60 @@
 ---
 title: Issue customer fiscal documents (for end users) (Brazil)
-description: Learn how you can issue a fiscal document to a customer who bought goods from the fiscal establishment, including a step-by-step process using the BRMF demo company.
+description: This article describes how to issue a fiscal document to a customer who bought goods from a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 03/20/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.search.industry: Manufacturing;Distribution;Service industries
 ---
 
 # Issue customer fiscal documents (for end users) (Brazil)
 
 [!include [banner](../../includes/banner.md)]
 
-You can issue a fiscal document to a customer who bought goods from the fiscal establishment. The calculation of the ICMS tax base amount considers the IPI tax amount. This recording uses the BRMF demo company.
+This article describes how to issue a fiscal document to a customer who bought goods from a fiscal establishment in Brazil with Microsoft Dynamics 365 Finance.
 
-1. Go to Accounts receivable > Customers > All customers.
-2. Use the Quick Filter to find records. For example, filter on the Account field with a value of 'BRMF-000004'.
-3. In the list, click the link in the selected row.
-4. Expand the Fiscal information section.
-5. Click Edit.
-6. Select Yes in the Final user field.
-7. Click Save.
-8. Close the page.
-9. Close the page.
-10. Go to Sales and marketing > Sales orders > All sales orders.
-11. Click New.
-12. In the Customer account field, enter or select a value.
-13. Click OK.
-14. Click Add line.
-15. In the list, mark the selected row.
-16. In the Item number field, enter or select a value.
-17. In the Quantity field, enter a number.
-18. In the Site field, enter or select a value.
-19. In the Warehouse field, enter or select a value.
-20. In the CFOP field, enter or select a value.
-21. Expand the Line details section.
-22. Click the Fiscal information tab.
-23. In the Fiscal document type field, enter or select a value.
-24. Click Save.
-25. Click Invoice.
-26. In the Quantity field, select an option.
-27. Select Yes in the Print invoice field.
-28. Click OK.
-29. Click Yes.
-30. Close the page.
-31. Close the page.
-32. Close the page.
-33. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
-34. Click OK.
+You can issue a fiscal document to a customer who bought goods from a fiscal establishment. The calculation of the ICMS tax base amount considers the IPI tax amount. 
+
+The following procedure uses the BRMF demo company.
+
+To issue a fiscal document to a customer who bought goods from the fiscal establishment, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. Use the Quick Filter to find records. For example, filter on the **Account** field with a value of "BRMF-000004".
+1. In the list, select the link in the selected row.
+1. Expand the **Fiscal information** section.
+1. Select **Edit**.
+1. In the **Final user** field, select **Yes**.
+1. Select **Save**.
+1. Close the page.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Select **OK**.
+1. Select **Add line**.
+1. In the list, mark the selected row.
+1. In the **Item number** field, enter or select a value.
+1. In the **Quantity** field, enter a number.
+1. In the **Sit** field, enter or select a value.
+1. In the **Warehouse** field, enter or select a value.
+1. In the **CFOP** field, enter or select a value.
+1. Expand the **Line details** section.
+1. Select the **Fiscal information** tab.
+1. In the **Fiscal document type** field, enter or select a value.
+1. Select **Save**.
+1. Select **Invoice**.
+1. In the **Quantity field**, select an option.
+1. In the **Print invoice field**, select **Yes**.
+1. Select **OK**.
+1. Select **Yes**.
+1. Close the page.
+1. Go to **Accounts receivable \> Fiscal documents \> Electronic fiscal documents \> Export/import NF-e process**.
+1. Select **OK**.
 
 
 

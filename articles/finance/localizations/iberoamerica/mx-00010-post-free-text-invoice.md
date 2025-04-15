@@ -1,51 +1,56 @@
 ---
 title: MX-00010 Post a free text invoice
-description: Learn how to use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method.
+description: Learn how to create and post a customer invoice as an electronic invoice in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 04/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, EInvoiceCFDIJournal_AR
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # MX-00010 Post a free text invoice
 
 [!include [banner](../../includes/banner.md)]
 
-Use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method. You must to be logged in a Mexican legal entity. This task guide was created using the MXMF demo data company.
+This article explains how to use the **Free text invoice** form to create and post an electronic Comprobante Fiscal Digital por Internet (CFDI) customer invoice in Microsoft Dynamics 365 Finance.
 
+To use the following procedure, you must be signed in to a Mexican legal entity. 
+
+The procedure was created using the MXMF demo data company.
 
 ## Post and issue a CFDI electronic invoice
-1. Go to Accounts receivable > Invoices > All free text invoices.
-2. Click New.
-3. In the Customer account field, click the drop-down button to open the lookup.
-4. In the list, find and select the desired record.
-5. In the list, click the link in the selected row.
-6. In the Description field, type a value.
-7. In the Main account field, specify the desired values.
-8. In the Sales tax group field, type a value.
-9. In the Item sales tax group field, type a value.
-10. In the Unit price field, enter a number.
-11. Expand or collapse the Line details section.
-12. Click the Electronic invoices tab.
-13. In the Property number field, type a value.
-    * You must specify the property registration number provided by the Mexican government when you create the free text invoice for a leasing service.  
-14. Click Post.
-15. Click OK.
-    * After you press OK, the customer invoice is posted and scheduled in a specific batch processing for issuing electronic invoices (CFDI).  
-16. Close the page.
-17. Go to Accounts receivable > Invoices > E-Invoices > Export/import electronic invoice process.
-18. Click OK.
-    * This batch job executes the connection with the PAC web services to get the approval or cancellation of a CFDI electronic invoice. The task in the batch can run manually or scheduled by specific period of time.       After you press OK, a web connection with the  is established in order to get the validation and digital signature. If the electronic invoice is approved,  the PAC sends the response XML message and the status of the electronic invoice is set to Approved. An email is automatically sent out to the customer with the XML and PDF file attached. Send mail and Send report file - PDF checkboxes must be enable in the electronic invoice parameters. Otherwise, you can email or print a PDF report based on customer's request by using Inquire and Reports > CFDI (electronic invoices) menu.    
-19. Go to Accounts receivable > Inquiries and reports > CFDI (electronic invoices).
-20. In the list, mark the selected row.
-21. In the list, click the link in the selected row.
+
+To post and issue a CFDI electronic invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. Select **New**.
+1. In the **Customer account** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. In the **Description** field, enter a value.
+1. In the **Main account** field, enter a value.
+1. In the **Sales tax group** field, enter a value.
+1. In the **tem sales tax group** field, enter a value.
+1. In the **Unit price** field, enter a number.
+1. Expand or collapse the **Line details** section.
+1. Select the **Electronic invoices** tab.
+1. In the **Property number** field, enter a value. When you create the free text invoice for a leasing service, you must specify the property registration number provided by the Mexican government.  
+1. Select **Post**.
+1. Select **OK**. The customer invoice is posted and scheduled in a specific batch processing job for issuing electronic invoices.  
+1. Close the page.
+1. Go to **Accounts receivable \> Invoices \> E-Invoices \> Export/import electronic invoice process**.
+1. Select **OK**.
+    > [!NOTE]
+    > - This batch job executes the connection with the Proveedor autorizado de certificación (PAC) web service to obtain the approval or cancellation of a CFDI electronic invoice. The task in the batch job can run manually, or be scheduled by specific period of time. After you select **OK**, a web connection with the PAC is established in order to get the validation and digital signature. If the electronic invoice is approved, the PAC sends the response XML message and the status of the electronic invoice is set to **Approved**. An email is automatically sent out to the customer with the XML and PDF file attached.
+    > - You can select the **Send mail** and **Send report file - PDF** in the electronic invoice parameters. Alternatively, you can email or print a PDF report based on customer's request by using the **Inquire and Reports \> CFDI (electronic invoices)** menu.    
+1. Go to **Accounts receivable \> Inquiries and reports \> CFDI (electronic invoices)**.
+1. In the list, mark the selected row.
+1. In the list, select the link in the selected row.
 
 
 

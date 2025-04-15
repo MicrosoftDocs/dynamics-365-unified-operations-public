@@ -1,5 +1,5 @@
 ---
-title: Vendor list prices and price adjustments (preview)
+title: Vendor list prices and price adjustments
 description: Learn about vendor list prices, which come from a vendor price catalogue and can be used as the foundation for calculating the sales price of an item.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Vendor list prices and price adjustments (preview)
+# Vendor list prices and price adjustments
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
 
 In some cases, Unified pricing management can derive a product's sales price from the vendor's list price or procurement price. For example, this functionality can be used for the trade of items in the retail and distribution industry, where products are procured from vendors and sold to customers.
 

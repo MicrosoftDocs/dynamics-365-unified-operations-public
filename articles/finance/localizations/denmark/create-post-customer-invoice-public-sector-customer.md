@@ -1,72 +1,77 @@
 --- 
 title: Create and post a customer invoice for a public sector customer
-description: Learn about creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing, including an outline on creating a sales order.
+description: This article describes how to create and post a sales order invoice for a customer using OIOUBL electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak 
-audience: Application User  
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, ContactPersonLookup, SalesEditLines,  CustInvoiceJournal, ERFormatMappingRunJobTable
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # Create and post a customer invoice for a public sector customer
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. 
+This article describes how to create and post a sales order invoice for a customer using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 
+The following procedures walk you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. It is based on OIOUBL e-invoice example which is common for Denmark, Austria, and Norway, and was created using the demo data company USMF with a legal entity primary address in Denmark.
 
+## Prerequisites
 
-It was created using the demo data company USMF with a legal entity primary address in Denmark.
-
-
-
-This is the fifth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country/region specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
-
-
-
-Before you can complete this procedure, you must complete the following procedures: 'Import OIOUBL electronic invoicing electronic reporting configurations', 'Set up OIOUBL electronic invoicing' and 'Set up a customer account for OIOUBL electronic invoicing'.
-
+Before you can execute the following procedures, you must first complete the following procedures:
+- Import OIOUBL electronic invoicing electronic reporting configurations
+- Set up OIOUBL electronic invoicing
+- Set up a customer account for OIOUBL electronic invoicing
 
 ## Create a sales order
-1. Go to Accounts receivable > Orders > All sales orders.
-2. Click New.
-3. In the Customer account field, enter or select a value.
-    * Select a customer that is enabled for electronic invoicing.  
-4. Click OK.
-5. Select a sales order header view.
-6. In the Contact field, enter or select a value.
-7. In the Customer requisition field, type a value.
-8. In the Customer reference field, type a value.
-9. Expand the Setup section.
-10. Select a sales order line view.
-11. In the Item number field, enter or select a value.
-    * You may use an item number 'D0001'.  
-12. Click Save.
+
+To create a sales order, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a customer enabled for electronic invoicing.  
+1. Select **OK**.
+1. Select a sales order header view.
+1. In the **Contact** field, enter or select a value.
+1. In the **Customer requisition** field, enter a value.
+1. In the **Customer reference** field, enter a value.
+1. Expand the **Setup** section.
+1. Select a sales order line view.
+1. In the **Item number** field, enter or select a value. You can use the item number "D0001".  
+1. Select **Save**.
 
 ## Post an invoice for a sales order
-1. On the Action Pane, click Invoice.
-2. Click Invoice.
-3. Expand the Parameters section.
-4. In the Quantity field, select 'All'.
-5. Click OK.
-6. Click OK.
+
+To post an invoice for a sales order, follow these steps.
+
+1. In Dynamics 365 Finance, on the Action Pane, select **Invoice**.
+1. Select **Invoice**.
+1. Expand the **Parameters** section.
+1. In the **Quantity** field, select **All**.
+5. Select **OK**.
+6. Select **OK**.
 
 ## Generate OIOUBL electronic invoice
-1. Click Invoice.
-2. On the Action Pane, click Invoice.
-3. Click Send.
-4. Click Original.
+
+To generate a OIOUBL electronic invoice, follow these steps.
+
+1. In Dynamics 365 Finance, select **Invoice**.
+1. On the Action Pane, select **Invoice**.
+1. Select **Send**.
+1. Select **Original**.
 
 ## View an OIOUBL electronic invoice
-1. Go to Organization administration > Electronic reporting > Electronic reporting jobs.
-2. Click Show files.
-3. Click Open.
+
+To view a OIOUBL electronic invoice, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
+1. Select **Show files**.
+1. Select **Open**.
 
 
 

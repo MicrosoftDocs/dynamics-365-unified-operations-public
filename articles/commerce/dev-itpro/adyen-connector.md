@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 01/23/2025
+ms.date: 03/25/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -25,7 +25,7 @@ This article provides an overview of the Microsoft Dynamics 365 Payment Connecto
 |---|---|
 | Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Commerce (and associated components) and a payment service. The connector that is described in this article was implemented by using the standard payments software development kit (SDK). |
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
-| Card not present | Refers to payment transactions where a physical card isn't present, such as e-Commerce or Call Center scenarios. In these scenarios, the payment-related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
+| Card not present | Refers to payment transactions where a physical card isn't present, such as Commerce or Call Center scenarios. In these scenarios, the payment-related information is entered manually either on a Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
 ## Supported features, functionality, versions, and terminals
 
@@ -42,11 +42,6 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 
 ---
 
-# [10.0.36](#tab/10-0-36)
-### Dynamics 365 Retail POS version 10.0.36
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_91p2 | adyen_v1_91p15 |
 
 # [10.0.37](#tab/10-0-37)
 ### Dynamics 365 Retail POS version 10.0.37
@@ -84,10 +79,16 @@ The following list describes the minimum and maximum Adyen firmware versions tha
 | --- | --- |
 | adyen_v1_109 | adyen_v1_109 |
 
+# [10.0.43](#tab/10-0-43)
+### Dynamics 365 Retail POS version 10.0.43
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_109 | adyen_v1_115 |
+
 ---
 
 > [!NOTE]
-> - Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
+> - Adyen may release minor version updates after Microsoft tests the major version. As long as a major version is supported, it's acceptable to have minor version updates within the same major version. These updates are normally targeted fixes and don't meet the bar for full retesting as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in the documentation. 
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
@@ -101,7 +102,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 
 #### Supported debit and credit cards
 
-| Brand | Variant | Card present | e-Commerce | Call Center |
+| Brand | Variant | Card present | Commerce | Call Center |
 |---|---|:-:|:-:|:-:|
 | MasterCard | Credit | ✔ | ✔ | ✔ |
 | MasterCard | Debit | ✔ | ✔ | ✔ |
@@ -314,6 +315,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
 | [Wallet Payments](../wallets.md) |  | ✔<br>(Starting with 10.0.20) |
 | [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
+| Adyen risk management for online payments |  | ✔<br>(Starting with 10.0.43) |
 
 ## Next steps
 

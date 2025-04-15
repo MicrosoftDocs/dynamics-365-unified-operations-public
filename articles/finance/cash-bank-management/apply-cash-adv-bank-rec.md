@@ -1,10 +1,10 @@
 ---
 title: Cash application in advanced bank reconciliation
-description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and a step-by-step processes.
+description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 1/02/2025
+ms.date: 2/18/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -113,6 +113,9 @@ To use matching rules to automatically generate customer payments without settli
 13. Select either a matching rule or a matching rule set that contains the matching rule.
 14. Select **OK** to run the automatic matching.
 
+> [!NOTE]
+> If the **Payment journal cancellation from bank reconciliation worksheet** feature is enabled, the **Cancel payment** button is available to reverse incorrectly posted customer payment journals from the reconciliation worksheet. If the invoice has been settled during the journal posting (manually or using reconciliation rules), the invoice is also unsettled at the time of payment cancellation. 
+
 ### Generate vendor payments
 
 To use matching rules to automatically generate vendor payments without settling vendor invoices, follow these steps.
@@ -143,7 +146,7 @@ To use matching rules to automatically generate vendor payments without settling
 If the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are available in advanced bank reconciliation. 
 
 To enter default descriptions for bank reconciliation postings, follow these steps:
-1. Go to **General Ledger** \> **Journal setup**  \> **Default descrptions** or **Organization administration** \> **Default descrptions**.
+1. Go to **General Ledger** \> **Journal setup**  \> **Default descriptions** or **Organization administration** \> **Default descriptions**.
 2. There is a description type **Bank - reconciliation worksheet** in the list.
 3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 

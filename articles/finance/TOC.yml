@@ -228,6 +228,8 @@
               items:
                 - name: Invoice capture overview
                   href: accounts-payable/invoice-capture-overview.md
+                - name: What's new or changed in Invoice capture
+                  href: get-started/whats-new-invoice-capture.md
                 - name: Invoice capture install
                   href: accounts-payable/install-invoice-capture.md
                 - name: Configure Invoice capture
@@ -792,6 +794,8 @@
               href: cost-accounting/terms-cost-accounting.md
             - name: Fiscal calendars, fiscal years, and periods
               href: budgeting/fiscal-calendars-fiscal-years-periods.md
+            - name: Ledger and subledger accounting overview
+              href: general-ledger/ledger-subledger.md
             - name: Financial dimensions
               href: general-ledger/financial-dimensions.md
             - name: Financial dimensions and posting
@@ -1128,6 +1132,8 @@
                       href: budgeting/fiscal-calendars-fiscal-years-periods.md
                     - name: Configure ledgers
                       href: general-ledger/configure-ledger.md
+                    - name: Ledger and subledger overview
+                      href: general-ledger/ledger-subledger.md
                     - name: Change the accounting or reporting currency
                       href: /troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency
                     - name: Change or reassign a ledger calendar
@@ -1438,6 +1444,8 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Create data integrator project
                   href: finance-insights/create-data-integrate-project.md
+                - name: Tables used by Customer payment predictions and cash flow forecast
+                  href: finance-insights/tables-detail.md
                 - name: Refine and improve your predictions
                   items:
                     - name: Results of machine learning models
@@ -1631,7 +1639,7 @@
                             - name: Configure a SharePoint connection
                               href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                             - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
+                              href: localizations/global/gs-e-invoicing-set-up-azure-resources.md
                     - name: Work with Globalization features
                       items:
                         - name: Work with Globalization features overview
@@ -1678,12 +1686,16 @@
                           href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+                        - name: Belgium
+                          href: localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/finance
                         - name: Chile
                           items:
                             - name: Get started with Electronic invoicing for Chile
                               href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Costa Rica
+                          href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/finance                        
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Egypt
@@ -1961,7 +1973,7 @@
                     - name: Payment times reporting schema
                       href: localizations/australia/apac-aus-payment-times-report.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/apac-aus-nzl-e-invoices.md
+                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
                     - name: Taxable Payments Annual Report
                       href: localizations/australia/apac-aus-tpar.md
                 - name: Austria
@@ -2022,10 +2034,22 @@
                       href: localizations/belgium/emea-bel-vat-declaration-belgium.md
                 - name: Bolivia
                   items:
+                  - name: Bolivia overview
+                    href: localizations/iberoamerica/bolivia.md
                   - name: Configure printing for Purchase Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-Bolivia-purchase-vat-book.md
+                  - name: Configure sales and purchase invoices for Bolivia
+                    href: localizations/iberoamerica/ltm-configure-invoices-bolivia.md
                   - name: Configure for Sales Vat Books for Bolivia
                     href: localizations/iberoamerica/ltm-bolivia-sales-vat-book.md
+                  - name: Configure printing for sales bank books for Bolivia
+                    href: localizations/iberoamerica/ltm-sales-bank-book-report-Bolivia.md
+                  - name: Configure printing for Purchase Bank Books for Bolivia
+                    href: localizations/iberoamerica/ltm-purchase-bank-book-report-bolivia.md
+                  - name: Create customer and vendor records with an address in Bolivia
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-bolivia.md
+                  - name: Set up a legal entity and tax information for Bolivia
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-bolivia.md
                 - name: Brazil
                   items:
                     - name: Brazil overview
@@ -2340,7 +2364,7 @@
                   items:
                     - name: Costa Rica overview
                       href: localizations/iberoamerica/costa-rica.md
-                    - name: Set up electronic invoicing in Costa Rica
+                    - name: Get started with Electronic Invoicing for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Costa Rica
                       href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
@@ -2432,6 +2456,14 @@
                       href: localizations/denmark/emea-dnk-saf-t.md
                     - name: Accounting basis (Regnskab Basis) electronic report for Denmark
                       href: localizations/denmark/emea-dnk-accounting-basis.md
+                - name: Dominican Republic
+                  items: 
+                  - name: Configure sales and purchase invoices for Dominican Republic
+                    href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
+                  - name: Create customer and vendor records with an address in Dominican Republic
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-dominican-republic.md
+                  - name: Setup a legal entity and tax information for Dominican Republic
+                    href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-dominican-republic.md
                 - name: Ecuador
                   items:
                   - name: Ecuador overview
@@ -2670,7 +2702,7 @@
                           href: localizations/france/emea-fra-titres-de-recette-public-sector.md
                         - name: Vendor invoice payment holds
                           href: localizations/france/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                    - name: Approve and post draw bill of exchange
+                    - name: Draw up, approve, and post a bill of exchange
                       href: localizations/france/fr-00004-approve-post-draw-bill-exchange.md
                     - name: Chronological invoices vouchers
                       href: localizations/france/emea-fra-chronological-invoices-vouchers.md
@@ -2704,17 +2736,17 @@
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
                       href: localizations/france/emea-fra-apply-penalty-customer-payment-past-due.md
-                    - name: Post protest draw bill of exchange journal
+                    - name: Protest and post a bill of exchange journal
                       href: localizations/france/fr-00004-post-protest-draw-bill-exchange-journal.md
-                    - name: Post re-draw bill of exchange journal
+                    - name: Post a redraw bill of exchange journal
                       href: localizations/france/fr-00004-post-re-draw-bill-exchange-journal.md
                     - name: Print lump sum recovery text on a customer invoice
                       href: localizations/france/emea-fra-print-lump-sum-recovery-text.md
                     - name: RB/SL depreciation
                       href: localizations/france/emea-fra-rbsl-depreciation.md
-                    - name: Set up method of payment
+                    - name: Set up methods of payment
                       href: localizations/france/fr-00004-setup-method-payment.md
-                    - name: Update method of payment on customer
+                    - name: Update method of payment for a customer
                       href: localizations/france/fr-00004-update-method-payment-customer.md
                     - name: VAT declaration
                       href: localizations/france/emea-fra-VAT-declaration-preview-France.md
@@ -2815,7 +2847,7 @@
                     - name: Scope of the Indian localizations
                       href: localizations/india/apac-ind-scope.md
                     - name: Audit trail and edit logs for accounting software
-                      href: localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md
+                      href: localizations/india/india-audit-trail-edit.md
                     - name: Electronic invoices in India
                       href: localizations/india/apac-ind-e-invoices.md
                     - name: Indirect taxes
@@ -3470,6 +3502,8 @@
                         href: localizations/iberoamerica/ltm-core-document-class.md
                       - name: Document class sales point for Latin America
                         href: localizations/iberoamerica/ltm-core-document-class-sales-point.md
+                      - name: Sales Authorization Code for Latin America
+                        href: localizations/iberoamerica/ltm-core-sales-ca.md
                       - name: Sales point prefixes for Latin America
                         href: localizations/iberoamerica/ltm-core-sales-point-prefixes.md
                       - name: Sales point relation for sales documents and remission
@@ -3643,7 +3677,7 @@
                     - name: GST declaration form GST101A for New Zealand (NZ-00003)
                       href: localizations/new-zealand/apac-nzl-gst-declaration.md
                     - name: Customer electronic invoices
-                      href: localizations/apac/apac-aus-nzl-e-invoices.md
+                      href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
                 - name: Nicaragua
                   items:
                     - name: Nicaragua overview
@@ -4208,6 +4242,8 @@
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-declaration.md
                         - name: Generate a VAT declaration in paper format (VAT 100 report)
                           href: localizations/united-kingdom/emea-gbr-mtd-vat-integration-vat100.md
+                        - name: Security enhancements in UK MTD VAT integration
+                          href: localizations/united-kingdom/emea-gbr-mtd-vat-security-enhancements.md
                     - name: Statistics on payment practices report
                       href: localizations/united-kingdom/emea-gbr-statistics-on-payment-practices-report.md
                     - name: EU sales list

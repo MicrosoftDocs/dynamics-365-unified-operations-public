@@ -4,7 +4,7 @@ description: Learn about the available reports for security.
 author: saurabhgupta
 ms.author: saurabhgupta
 ms.topic: article
-ms.date: 01/25/2025
+ms.date: 02/11/2025
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -22,7 +22,6 @@ ms.dyn365.ops.version: Version 7.0.0
 The following reports are available to help with security, licenses, roles, and duties:
 
 - **User activity aging** – This report tracks sign-in information.
-- **License summary** – This report shows the number of entry points for each license level.
 - **Role audit trail** – This report shows the history of a role that is assigned and unassigned to users.
 - **Security analysis** – This report provides information about various roles and their privilege access levels. It shows how many users belong to each role and the change history of duties, roles, and privileges.
 
@@ -37,19 +36,6 @@ To define and customize day ranges for the **User activity aging** report, follo
 1. Go to **System administration** \> **Security governance setup** \> **Parameters**.
 1. On the **User aging periods** tab, configure all five day ranges as you require.
 1. Select **Save**.
-
-## License summary report
-
-The **License summary** report helps users understand how many entry points for each license level are applied to users, roles, duties, and privileges. This information can be used to identify opportunities for optimization in the organization.
-
-- **Recalculate prices** – Recalculate the prices of the licenses that are used for users, roles, duties, and privileges.
-- **Rebuild licenses** – Rebuild the licenses that are used for users, roles, duties, and privileges. All users who have a small number of entry points at the operational license level might have their access redesigned and might be moved to the activity or team member level.
-- **User license** – A list of all users, together with details about things such as licenses, operations, and activities. You can use this list to check each user's access and verify the license level.
-- **Role license** – A list of all roles, together with details about things such as licenses, operations, and activities. You can use this list to check each role's access and verify the license level.
-- **Duty license** – A list of all duties, together with details about things such as licenses, operations, and activities. You can use this list to check each duty's access and verify the license level.
-- **Privilege license** – A list of all privileges, together with details about things such as licenses, operations, and activities. You can use this list to check each privilege's access and verify the license level.
-- **User license summary** – Analyze user licenses, and verify the details that are needed to assign licenses and optimize them for usability.
-- **Security summary** – Analyze user licenses, roles, duties, and privileges so that you can optimize the environment to ensure that each user or a group of users is granted appropriate access.
 
 ## Role audit trail report
 
