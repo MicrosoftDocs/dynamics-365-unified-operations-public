@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-|   |   |   |   |
+| Loyalty upsell prompt | The Loyalty Upsell Prompt feature is designed to assist store associates in informing customers about their loyalty program status and tier qualifying points. This feature aims to enhance customer engagement and satisfaction, resulting in increased loyalty, repeat purchases, and overall sales.  |   | To enable this feature, navigate to the feature management workspace and enable **Retail Loyalty Upsell Prompt**.  |
 
 ## Resources
 
