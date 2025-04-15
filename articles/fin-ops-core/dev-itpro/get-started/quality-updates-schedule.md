@@ -185,7 +185,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7521.156**
 
-**Unified Environment Provisioning Application Version: 10.0.43.4**
+**Unified Environment Provisioning Application Version: 10.0.43.5**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
