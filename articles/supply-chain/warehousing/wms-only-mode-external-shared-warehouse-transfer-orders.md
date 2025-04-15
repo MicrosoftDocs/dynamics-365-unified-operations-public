@@ -1,7 +1,7 @@
 ---
 title: Transfer orders in Warehouse management only mode with external shared warehouses
 description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management to handle transfer orders when you use external shared warehouses. This article highlights aspects of the transfer orders process that works differently when used to transfer to or from external shared warehouse.
-author: mq55qm
+author: jususnja
 ms.author: jususnja
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSEWManagementSystem, InventTransferOrder
