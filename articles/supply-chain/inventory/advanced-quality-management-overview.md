@@ -54,54 +54,44 @@ Some of the key industry-specific capabilities of the solution are:
 
 - **Quality associations for return and transfer orders** – This feature enhances the capability of quality associations by offering the ability to automatically create quality orders triggered from a sales return or a transfer order. Learn more in [Quality associations](quality-associations.md).
 
-- **Customer-specific COAs** – This feature supports the setup and application of customer certificate of analysis (COA) requirements. The specific customer will drive details such as whether a specific test should be included, if minimum/maximum values should be suppressed, if customer-specific batch attribute ranges should be used instead of the standard range and if results (pass and/or fail) should be replaced with standard verbiage. In addition, customer-specific COA's can be generated automatically from the sales order packing slip posting process. Learn more in [Customer specific certificate of analysis (COA)](quality-customer-specific-coa.md)
+- **Customer-specific COAs** – This feature supports the setup and application of customer certificate of analysis (COA) requirements. The specific customer will drive details such as whether a specific test should be included, if minimum/maximum values should be suppressed, if customer-specific batch attribute ranges should be used instead of the standard range and if results (pass and/or fail) should be replaced with standard verbiage. In addition, customer-specific COA's can be generated automatically from the sales order packing slip posting process. Learn more in [Customer specific certificate of analysis (COA) (preview)](quality-customer-specific-coa.md)
 
-- **Production dispensing** – This feature enables users to segregate the dispensing area and activities from the picking activities. Learn more in [Production dispensing](../production-control/quality-production-dispensing.md).
+- **Production dispensing** – This feature enables users to segregate the dispensing area and activities from the picking activities. Learn more in [Production dispensing (preview)](../production-control/quality-production-dispensing.md).
 
-- **Quick test results entry** – This feature enables users to very quickly and easily enter test results on a quality order from a consolidated view which includes visibility to test minimum, maximum and target values. Learn more in [Quick Results Entry](quality-quick-results-entry.md).
+- **Quick test results entry** – This feature enables users to very quickly and easily enter test results on a quality order from a consolidated view which includes visibility to test minimum, maximum and target values. Learn more in [Quick Results Entry (preview)](quality-quick-results-entry.md).
 
-## Quality Order Usability Improvements
+## Quality order usability improvements
 
-Advanced quality management adds several usability improvements to the quality order process. The option to skip a quality order test has been added. When a decision is made not to perform a test on a given quality order, that can now be noted on the quality order without losing visibility to the original test. When a test is skipped, all validations on the test is by-passed and the test is changed to not be included in results so that AQL calculations are still performed on the remaining tests. Quality order "Priority" Level and "Assigned to" tester are new data elements on the quality order that can be used to sort and filter on the quality work that needs to be completed. Result notes can now also be recorded for a given test result line. Finally, test instrument tags are always checked to see if the selected tag is already on an open quality order. This validation is not important to all businesses so now there is a parameter that drives this functionality, and the validation can be skipped if not required.
+Advanced quality management adds several usability improvements to the quality order process. The option to skip a quality order test has been added. When a decision is made not to perform a test on a given quality order, that can now be noted on the quality order without losing visibility to the original test. When a test is skipped, all validations on the test is by-passed and the test is changed to not be included in results so that acceptable quality level (AQL) calculations are still performed on the remaining tests. Quality order **Priority** Level and **Assigned to** tester are new data elements on the quality order that can be used to sort and filter on the quality work that needs to be completed. Result notes can now also be recorded for a given test result line. Finally, test instrument tags are always checked to see if the selected tag is already on an open quality order. This validation isn't important to all businesses so now there is a parameter that drives this functionality, and the validation can be skipped if not required.
 
-### Skip Test Option has been Added
+### Skip tests when needed
 
-It is a common business process to create a test group that has a certain number of tests but when executing that test group within a Quality order, some tests are purposefully skipped. Prior to this feature, the user would need to delete those tests if they did not want to enter in test results. Some businesses would prefer to mark the test as Skipped instead of deleting it so that it can be logged as an audit trail that it was decided to skip it. When a test is skipped, all results data is cleared and becomes uneditable and no validation needs to be done on its associated test result data such as tag numbers and test result values. Also, the skipped test is excluded from Acceptable Quality Level (AQL) calculations. Additionally, a test can be unskipped which basically returns the test back to its original state and test results can be entered as usual.
+It is a common business process to create a test group that has a certain number of tests but when executing that test group within a quality order, some tests are purposefully skipped. Prior to this feature, you were required to delete tests you didn't want to enter results for. Some businesses prefer to mark the test as *Skipped* instead of deleting it so that it can be logged as an audit trail that it was decided to skip it. When a test is skipped, all results data is cleared and becomes uneditable and no validation needs to be done on its associated test result data such as tag numbers and test result values. Also, the skipped test is excluded from AQL calculations. Tests can be un-skipped if needed, which returns the test back to its original state and test results can be entered as usual.
 
-### Using Skip from Quality Order Test Line
+#### Skip tests from a quality order test line
 
-To mark a Test as Skipped, you need to select the desired test line(s) and select the Skip ribbon action from the line. If test results have already been entered, the user will receive a warning message. If OK is selected from the warning message, then all results data is removed. The test result icon, order line result, and batch attribute values are cleared. The Update inventory batch attribute and Include results checkboxes are both unchecked and the Skip test checkbox is checked. No editing can be done on the test while it is in this Skip state. To Unskip a test that was previously skipped, you merely need to select the line and choose the Skip option again. This will put the line back into its original state. Note: When using the Unskip, it is always wise to confirm all values on the test line are correct before validating the quality order.
+To mark a test as *Skipped*, select the desired test line(s) and select the **Skip** on the Action Pane. If test results have already been entered, you receive a warning message. The test result icon, order line result, and batch attribute values are cleared. The **Update inventory batch attribute** and **Include results** checkboxes are both cleared and the **Skip test** checkbox is selected. No editing can be done on the test while it is in the *Skip* state. To un-skip a test that was previously skipped, select the line and choose the **Skip** option again. This will put the line back into its original state.
 
-### Using Skip from Quick Results Entry
+#### Skip tests during quick results entry
 
-Using the Skip option from Quick Results Entry works the same way with a few minor exceptions. Multi-select is not allowed from Quick Results Entry and if there are multiple rows of result data for the same test, the Skip option collapses them back to their original quantities before updating the data and making the line not editable.
+When you use the skip option from quick results entry, multi-select is not allowed from and if there are multiple rows of result data for the same test, the skip option collapses them back to their original quantities before updating the data and making the line not editable.
 
-### Quality Order Priority and Assigned To Tester has been Added
+### Quality order priority and tester assignment
 
-The effort to perform quality order testing can be extensive. Often, the work needs to be prioritized and assigned out to appropriate testing resources. To improve this process, we have added the following fields to the Quality Order Header: "Priority" and "Assigned To". These data elements by default are found on the General tab within the Assignment group box but can be personalized to the grid if sorting and filtering is desired. The Priority field is free-format and can be user defined based on business requirements. For example, a business might choose numbers between 0-100 where 100 are the most important. The Assigned to field needs to be assigned to a valid worker. Both fields are optional. Additionally, we added a Test Outcome Description field and a Result Note to the Quality Order Line Test Results to improve usability.
+Quality orders now include the following fields on the **General** tab: **Quality order priority** and **Worker**. The **Quality order priority** field is free-format and can be user-defined based on business requirements. For example, a business might choose numbers between 0-100 where 100 are the most important. The **Worker** field needs to be assigned to a valid worker. Both fields are optional. 
 
-### Option to Not Validate Test Instrument Tag Assigned to Open Quality Order
+Quality orders also now include fields for entering a test outcome description and result notes for each test line.
 
-Currently, if a Quality order test is set up with a Test Instrument that uses Tags, the system will always check to see if a selected test instrument tag is already on an open quality order. If the selected test instrument tag is found on an open quality order, a warning message is always displayed to the user. Some businesses don't need this validation so a parameter is added in Inventory Management to indicate that this validation can be skipped. This parameter on Inventory and warehouse management parameters from the Quality management tab will default to all new test instrument tags. This parameter can also be modified on a test instrument tag basis. When validating a quality order, if this flag is selected on a chosen test instrument tag and that tag is currently assigned to an open quality order, then no warning message will be triggered on validation.
+### Skip test instrument tags validation
 
-| **Path: Inventory management** \> **Setup** \> **Inventory and Warehouse Management Parameters** |  |  |
-|--|--|--|
-| **Label Name** | **Description** | **Examples/Hints** |
-| **Quality management tab** |  |  |
-| Skip check for test instrument on open quality order | Select this option if you want the system to skip the validation related to if the selected test instrument tag is already assigned to an open quality order. If selected, that validation is bypassed, and no warning message is triggered. If not selected, then the validation is performed, and a warning message may be triggered. This value will default from the parameters for new test instrument tags but can be changed on an individual tag. | Selected or deselected. Prior releases, the system functioned as if this flag was never selected. Used as a default to test instrument tags. To skip the validation, this field must be selected on the test instrument tag. |
+Previously, the system always checked whether all test instrument tags selected for use on a new quality order were already assigned to an existing open quality order. If the selected test instrument tag was found on an open quality order, a warning message was always displayed. This check is now optional. The setting to skip the validation is made on a per-tag basis, but you can also set a default value, which applies for all new tags.
 
-| **Path: Inventory management** \> **Setup** \> **Quality Control** \> **Test instrument tags** |  |  |
-|--|--|--|
-| **Label Name** | **Description** | **Examples/Hints** |
-|  |  |  |
-| Skip check for test instrument on open quality order | Select this option if you want the system to skip the validation related to if the selected test instrument tag is already assigned to an open quality order. If selected, that validation is bypassed, and no warning message is triggered. If not selected, then the validation is performed, and a warning message may be triggered. This value will default from the parameters for new test instrument tags but can be changed on an individual tag. | Selected or deselected. Prior releases, the system functioned as if this flag was never selected. |
+To set the validation option for each tag, go to **Inventory management** \> **Setup** \> **Quality Control** \> **Test instrument tags** and make the following setting for each tag:
 
-| **Path: Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders and Quick Result Entry** |  |  |
-|--|--|--|
-| **Label Name** | **Description** | **Examples/Hints** |
-|  |  |  |
-| Skip test | This is a not-editable field that is updated by the Skip ribbon action. If selected, then the test has been skipped, no test results will be entered, and this test line will not go through standard quality order test line validations. | The default value for this field is NOT Selected. |
-| Priority | Assign a priority to the Quality order for testing | Is user defined. For example, you might decide that the lower the number, the higher the priority. |
-| Assigned to | Use to assign the user responsible for the Quality order testing. | Must be a valid worker. |
-| Outcome description | Is the associated description of the chosen Test Outcome. |  |
-| Result note | Enter any additional notes for the test results. |  |
+- **Skip check for test instrument on open quality order** – Set to *Yes* to skip the validation that checks whether the selected tag is already assigned to an open quality order (no warning message is triggered). Set to *No* if the system should run the check and display a warning message if the tag is already assigned to an open quality order. 
+
+To set the default validation setting for all new tags, go to **Path: Inventory management** \> **Setup** \> **Inventory and Warehouse Management Parameters**. Open the **Quality management** tab and make the following setting:
+
+- **Skip check for test instrument on open quality order** – Choose whether all new test instrument tags should be set to skip the validation by default. You can still change this setting for individual tags.
+
+Learn more in [Test instrument calibration (preview)](quality-instrument-calibration.md).

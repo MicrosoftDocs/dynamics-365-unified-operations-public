@@ -17,8 +17,6 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-<!-- KFM: This needs to go into the TOC. But where? -->
-
 When dealing with hazardous materials or sensitive components in production processes, accurate dispensing of materials is crucial. It minimizes the risk of contamination, preserves the integrity of the materials, and ensures the safety of both the product and personnel.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
