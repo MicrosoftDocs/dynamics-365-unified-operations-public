@@ -61,7 +61,7 @@ If the setting is configured to *Display tracking dimension control*:
 - The mobile app displays an *empty* batch number control.
 - The user must manually enter the batch number.
 
-You can overwrite this default setting for any individual mobile device menu item that supports it by going to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items** (learn more in [Additional menu item options](configure-mobile-devices-warehouse.md#additional-menu-item-options)).
+You can overwrite this default setting for any individual mobile device menu item that supports it by going to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**. Learn more in [Additional menu item options](configure-mobile-devices-warehouse.md#additional-menu-item-options).
 
 > [!NOTE]
 > This setting only affects menu items that process a supported work order type (currently only sales orders). Other work order types (such as transfer order, purchase order) aren't supported.
