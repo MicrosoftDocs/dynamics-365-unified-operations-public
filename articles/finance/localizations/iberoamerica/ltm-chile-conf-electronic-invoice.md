@@ -4,7 +4,7 @@ description: Learn how to configure the information required to generate the ele
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: article
-ms.date: 10/20/2023
+ms.date: 04/16/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -85,21 +85,23 @@ The following steps go through the information that the XML tags require, in the
 After you complete these steps, you can issue electronic invoices from free text invoices, sales orders, and projects.
 
 ## Inventory transfer format for internal products movements
-The inventory transfer format (**Invent transfer (CL)**) should be printed from the Electronic Reporting configuration:
-## Prerequisites
-1. You must download the specific report configurations from the Dataverse configuration repository for Chile Electronic Invoices (**Invent transfer (CL)**). 
 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse)
-2. You must configure the Electronic reporting (ER) parameters. 
+The inventory transfer format (**Invent transfer (CL)**) should be printed from the Electronic Reporting configuration.
 
-Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-3. Enable the general LATAM feature and the specific LATAM feature for Chile.
-4. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting** and configure the format application specific parameters setting the tax codes for taxed (no) and not taxed (yes) transactions.
+### Prerequisites
 
-## Print the Inventory transfer format for Chile
-1. Go **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. Select the format report **Invent transfer (CL)**.
-3. Select the latest version and select **Run**.
-4. Enter the filters desired and then select **Ok** to print.
+1. You must download the specific report configurations from the Dataverse configuration repository for Chile Electronic Invoices (**Invent transfer (CL)**). Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+1. You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+1. Enable the general LATAM feature and the specific LATAM feature for Chile.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting** and configure the format application specific parameters setting the tax codes for taxed (no) and not taxed (yes) transactions.
+
+### Print the Inventory transfer format for Chile
+
+To print the Inventory transfer format for Chile, follow these steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+1. Select the format report **Invent transfer (CL)**.
+1. Select the latest version and select **Run**.
+1. Enter the desired filters, and select **Ok**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
