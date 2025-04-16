@@ -19,9 +19,9 @@ For more information about how to set up warehouse workers, see [Manage warehous
 
 ## Open the Warehouse management parameters page
 
-To open the **Warehouse management parameters** page, go to **Warehouse management \> Setup \> Warehouse management parameters**. You can then set the fields that are related to mobile device work, as described in the next section of this article.
+To open the **Warehouse management parameters** page, go to **Warehouse management \> Setup \> Warehouse management parameters**. You can then set the fields that are related to mobile device work.
 
-## Mobile device FastTab on the General tab
+## Global mobile device settings
 
 The global mobile device settings are found on the **Mobile device** FastTab on the **General** tab of the **Warehouse management parameters** page. The following fields are available.
 
@@ -35,7 +35,7 @@ The global mobile device settings are found on the **Mobile device** FastTab on 
 | Allow purchase order line registration when in external review | Set this option to *Yes* if workers should be able to use a mobile device to register order lines for purchase orders that have an **Approval status** value of *In external review*. Set this option to *No* to prevent workers from registering lines for purchase orders that are in external review. |
 | Enable RSAT support | The field enables the Warehouse Management mobile app task validator, which logs and validates each step that the app performs. Because this process can significantly slow down system performance, you should enable the validator only during testing. You should never enable it in a production environment. |
 
-## Mobile device menu item display inventory dimensions FastTab on the General tab
+## Inventory dimension display options
 
 On the **Mobile device menu item display inventory dimensions** FastTab, you can configure how *tracking dimension below location* is displayed in the mobile app, including *batch below number* and *serial below number*. It has no impact on tracking dimension above location, such as *batch above number* or *serial above number* display.
 
