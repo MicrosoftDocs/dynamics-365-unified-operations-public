@@ -59,7 +59,7 @@ Users without required license (s) will lose access to the application and will 
 
 ## Any changes to trial, demos or any other non-production environments?
 
-No. Users don’t require additional licensing to access non-production environments. For more information about trials, visit [Unified admin trials](/power-platform/admin/unified-experience/admin-trials).
+No. Users don’t require additional licensing to access non-production environments.  Valid product licenses must exist in the tenant that deploys non-production environments, including developer environments. For more information about subscription-based trials, visit [Unified admin trials](/power-platform/admin/unified-experience/admin-trials).
 
 ## Which security roles will be enforced?
 
@@ -67,7 +67,7 @@ All users and security roles defined in the licensing guide are enforced. Respec
 
 ## Are system admins, partners, developers or other non-business related roles excluded from the enforcement?
 
-System Admins don’t require a license in F&O. For individual user license requirements, please check the Licensing Model section below. For additional information, you may consult the Dynamics 365 Licensing Guide. 
+Users with the Power Platform administrator or Dynamics 365 administrator roles assigned in Microsoft Entra do not require a product license to deploy environments, however a valid product license must exist in the tenant that will own the enviornment.  Additionally, users in the Finance and Operations application with the System Administrator role assigned don’t require a license to administer the application. For individual user license requirements, please check the Licensing Model section below. For additional information, you may consult the Dynamics 365 Licensing Guide. 
 
 ## How do I receive notifications about missing licenses or users without licenses?
 
