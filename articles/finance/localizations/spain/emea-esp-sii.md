@@ -606,7 +606,7 @@ To correctly report both the preceding scenarios that involve a VAT rate of 0.00
 
 > [!IMPORTANT]
 > The **Other** tax type was added specifically for the sales scenarios and is not intended for purchase transactions. For zero-tax vendor invoices lines, use the **VAT 0%** tax type instead.
-> 
+
 ### Intra-community sales tax reporting to the SII system
 
 According to SII system rules, an extended set of parameters must be used when intra-community invoices are reported to the SII system. To submit additional information in a specific format for intra-community invoices, **SII** processing in Finance fills in the **OperacionesIntracomunitarias** message item type for invoices that were previously reported as standard invoices. The **GenerateMessageItem** action runs the **SIIGenerateItems** executable class. Based on the following criteria, it identifies invoices as invoices of the **OperacionesIntracomunitarias** message item type:
