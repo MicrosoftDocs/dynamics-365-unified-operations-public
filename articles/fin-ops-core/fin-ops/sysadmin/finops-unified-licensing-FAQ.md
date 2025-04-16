@@ -59,7 +59,7 @@ Users without required license (s) will lose access to the application and will 
 
 ## Any changes to trial, demos or any other non-production environments?
 
-No. Non-production environment is already enforced through Sandbox Tier Licenses. Every non-production environment (trial, demo, or otherwise) must be licensed.  Users don’t require additional licensing to access non-production environments. 
+No. Users don’t require additional licensing to access non-production environments. For more information about trials, visit [Unified admin trials](/power-platform/admin/unified-experience/admin-trials).
 
 ## Which security roles will be enforced?
 
