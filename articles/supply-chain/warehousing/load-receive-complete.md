@@ -1,12 +1,12 @@
 ---
 title: Mark loads as completely received
 description: Learn about the receive complete process for inbound loads for purchase and inbound shipment orders, including a step-by-step process.
-author: Atapiabailon
-ms.author: atapiabailon
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WhsInboundReceivingCompleted
 ms.topic: how-to
-ms.date: 04/09/2025
+ms.date: 04/25/2025
 ms.custom: 
   - bap-template
 ---
