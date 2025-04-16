@@ -1,52 +1,52 @@
 ---
-title: Configure transfer order receiving process
+title: Configure the transfer order receiving process
 description: Learn how to configure the receiving process for a warehouse.
-author: sservulo
-ms.author: samuoliveira
-ms.topic: conceptual
-ms.date: 03/10/2025
-ms.custom: bap-template
-ms.reviewer: TBD
+author: Mirzaab
+ms.author: mirzaab
+ms.reviewer: kamaybac
 ms.search.form: WHSParameters, WHSTransferOrderReceivingProcess, WHSTransferOrderReceivingASNCleanupPolicy
+ms.topic: how-to
+ms.date: 04/25/2025
+ms.custom: 
+  - bap-template
 ---
 
-# Configure transfer order receiving process
+# Configure the transfer order receiving process
+
+[!include [banner](../includes/banner.md)]
 
 This article explains how to configure the receiving process for a warehouse. It includes information about parameters available to warehouse receiving and how to configure them.
 
-## Warehouse transfer order receiving parameters
+## Prerequisites
 
-### Transfer order receiving process
+The **Transfer order receiving process** setting is a standard part of all current versions of Supply Chain Management. However, for the **Transfer order receiving ASN cleanup** setting to be available, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 
-This parameter makes it possible to split the registration and cost-update processes for transfer orders, which lets receiving clerks use the Warehouse Management mobile app to update a transfer order receipt without waiting for any financial background processing, regardless of the receiving flow. If the process is split, the transfer order receiving can be done manually or as part of a scheduled batch job after the registration.
+## Configure the receiving process for a warehouse
 
-Available options and effect to the system:
+To configure the receiving process for a warehouse, follow these steps.
 
-|Option|Effect|
-|---|---|
-|Combine the registration and receiving|Both registration and receiving are executed together.|
-|Split the registration and receiving for license plate receiving|Registration and receiving are executed separately for license plate receiving.|
-|Split the registration and receiving for all flows|Registration and receiving are executed separately for all flows.<br/> Note: Choosing Split the registration and receiving for all flows option is recommended. This option was introduced to cover all flows, as Split the registration and receiving for license plate applies only to that particular case.|
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**
+1. Open the **General** tab.
+1. Make the following settings on the **Receiving** FastTab.
+    - **Transfer order receiving process** – This setting lets you choose to split the registration and cost-update processes for transfer orders, which lets receiving clerks use the Warehouse Management mobile app to update a transfer order receipt without waiting for any financial background processing, regardless of the receiving flow. If the process is split, the transfer order receiving can be done manually or as part of a scheduled batch job after the registration. Choose one of the following options:
+        - *Combine the registration and receiving* – Execute registration and receiving together.
+        - *Split the registration and receiving for license plate receiving* – Execute registration and receiving separately for license plate receiving.
+        - *Split the registration and receiving for all flows* – Execute registration and receiving separately for all flows.  
 
-To change this parameter, go to the **Warehouse management parameters** \> **General** \> **Receiving** and set `Transfer order receiving process` to the required value.
+        **Note:** We recommend using the *Split the registration and receiving for all flows* option because it covers all flows, while the *Split the registration and receiving for license plate* option applies only to that particular case.
 
-### Transfer order receiving ASN cleanup
+    - **Transfer order receiving ASN cleanup** – This setting lets you choose when the associated advance shipping notice (ASN) data is deleted during the transfer order receiving process. It covers scenarios where ASN data is required beyond default settings on the receiving process, for example when partially receiving a transfer order with multiple license plates using both the Warehouse Management mobile app and the web client. Choose one of the following options:
+        - *Default* – ASN is deleted in the following cases:  
+            - On putaway work creation or cancellation.  
+            - On mobile application receiving, if the work policy is set to not create work.  
+            - On transfer order line registration from the web client.  
+            - On transfer order receipt posting.  
 
-This parameter changes when the associated ASN data is deleted during the transfer order receiving process. It was introduced to cover scenarios where ASN data is required beyond default settings on the receiving process, for example when partially receiving a transfer order with multiple license plates from both mobile device and form.
+        - *On transfer order status received* – ASN is deleted in the following cases:  
+            - On putaway work creation or cancellation.  
+            - On mobile application receiving, if work policy is set to not create work.  
+            - When transfer order status is updated to *Received*.
 
-Available options and effect to the system:
-
-|Option|Effect|
-|---|---|
-|Default|ASN is deleted in the following cases:<br/> - On put away work creation or cancellation;<br/> - On mobile application receiving, if work policy is set to not create work;<br/> - On transfer order line registration from the form;<br/> - On transfer order receipt posting;|
-|On transfer order status received|ASN is deleted in the following cases:<br/> - On put away work creation or cancellation;<br/> - On mobile application receiving, if work policy is set to not create work;<br/> - When transfer order status is updated to "Received";|
-
-To change this parameter, go to the **Warehouse management parameters** \> **General** \> **Receiving** and set `Transfer order receiving ASN cleanup` to the required value.
-
-This parameter requires Supply Chain Management version 10.0.44 or later.
-
-## More information
+## Related information
 
 - For more information about license plate receiving using mobile device, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
