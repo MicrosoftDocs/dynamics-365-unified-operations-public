@@ -11,6 +11,8 @@ ms.author: v-federicohe
 
 # Set up and generate an electronic ledger posting report for Peru
 
+[!include [banner](../../includes/banner.md)]
+
 This article explains how to set up and generate an electronic ledger posting report for Peru in Microsoft Dynamics 365 Finance.
 
 The electronic ledger posting report is a digital accounting record that compiles and classifies all the economic transactions of a company in a chronological and detailed manner.
