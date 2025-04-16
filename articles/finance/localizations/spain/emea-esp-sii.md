@@ -604,6 +604,9 @@ To correctly report both the preceding scenarios that involve a VAT rate of 0.00
 
 ![Sales tax codes page.](../media/emea-esp-sii-zero-percent-vat-rates.png)
 
+> [!IMPORTANT]
+> The **Other** tax type was added specifically for the abovemantioned sales scenarios and is not intended for purchase transactions. For zero-tax vendor invoices lines, please use the **VAT 0%** tax type instead.
+> 
 ### Intra-community sales tax reporting to the SII system
 
 According to SII system rules, an extended set of parameters must be used when intra-community invoices are reported to the SII system. To submit additional information in a specific format for intra-community invoices, **SII** processing in Finance fills in the **OperacionesIntracomunitarias** message item type for invoices that were previously reported as standard invoices. The **GenerateMessageItem** action runs the **SIIGenerateItems** executable class. Based on the following criteria, it identifies invoices as invoices of the **OperacionesIntracomunitarias** message item type:
@@ -640,6 +643,9 @@ To distinguish the acquisition of goods between investments and non-investments 
 
 This set up drives the fulfilling of the Bien 'Inversion' tag in the received invoices files.
 
+### Set up **Reverse charge** when this mechanism applies to the transaction.
+In the context of Spain's SII system, the **InversionSujetoPasivo** node in the **SII Invoice Received Format (ES)** indicates that the reverse charge mechanism applies to a particular transaction. 
+To include this node in the XML, **Reverse charge** should be set to **Yes** in **Tax > Setup > Sales tax > Spanish VAT book**.
 
 ## <a name="multiple-vat"></a>Reporting to the SII system of Spain for multiple VAT registrations
 
