@@ -38,7 +38,7 @@ The following Copilot features are currently available in finance and operations
     - [Workflow history summary](../organization-administration/workflow-history-summary.md)
     - [Enhanced user feedback for Copilot and related experiences](../../dev-itpro/copilot/enable-copilot-feedback.md)
     - [Chat with finance and operations data](../../dev-itpro/copilot/chat-with-fno-data.md)
-
+    - [Immersive Home (preview)](immersive-home.md)
 
 - For Dynamics 365 Commerce:
 

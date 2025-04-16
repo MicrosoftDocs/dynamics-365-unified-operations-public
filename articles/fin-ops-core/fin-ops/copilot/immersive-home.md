@@ -16,16 +16,18 @@ ms.collection:
 
 # Immersive Home (preview)
 
-[!include [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This articles describes the Immersive Home, how it helps you work hand in hand with AI agents and stay focused on the most important work items assigned to you.
 
-> [!NOTE]
-> The Immersive Home is being added in the **10.0.45 release in public preview**. To enable Immersive Home navigate to the Feature Management workspace, and enable the feature **'Immersive Home'**.  
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The **Immersive Home** is aiming to become the  modern, AI-first landing page that adapts to user’s most important work, aids the decision making, and reduces the need to navigate elsewhere to complete common tasks. It is a modern option for the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) in finance and operations apps, which gives access to enabling, monitoring, teaching and interacting with AI agents.
 
 [![Screenshot of the Immersive Home experience.](./media/immersive-home.png)](./media/immersive-home.png)
+
+> [!NOTE]
+> The Immersive Home is being added in the **10.0.45 release in public preview**. To enable Immersive Home navigate to the Feature Management workspace, and enable the feature **'Immersive Home'**.  
 
 ## The components of Immersive Home
 
@@ -83,3 +85,7 @@ At the bottom of the Agent Activity area navigate to agent life cycle management
 The workspaces section shows a list of ranked tiles for each workspace. The ranking takes into account the recency of the last use by the user. Favorit workspaces will rank at the top.  
 
 Workspace tiles will highlight the information that have been pinned to the dashboard. To pin information to the dashboard open the Workspace and right click on a blue tile in the workspace, select **Personalize:...** and the **Pin to dashboard**.
+
+## See also
+
+- [Responsible AI FAQ for Immersive Home in finance and operations apps (preview)](faq-immersive-home.md)

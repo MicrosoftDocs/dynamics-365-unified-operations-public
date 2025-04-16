@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for Immersive Home (Preview) finance and operations apps
+title: Responsible AI FAQ for Immersive Home in finance and operations apps (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in connection to Immersive Home. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 04/02/2025
 ms.collection:
@@ -13,31 +13,41 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Immersive Home (Preview) in finance and operations apps
+# Responsible AI FAQ for Immersive Home in finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in relation to the *Immersive Home* feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 ## What is Immersive Home?
 
-The [**Immersive Home**](./immersive-home.md) is aiming to become the  modern, AI-first landing page that adapts to user’s most important work, aids the decision making, and reduces the need to navigate elsewhere to complete common tasks.
+The [*Immersive Home*](immersive-home.md) is a modern, AI-first landing page that adapts to each user's most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks.
 
 ## What are capabilities of Immersive Home?
 
-The capabilities of *Immersive Home* include promoting suggested agents that could help the user in their tasks, a ranked list of work items assigned by agents and workflows, summary of agent activities, access to agent management surfaces, individual agent task space where user can work hand in hand with agents, and spaces that cover multiple tasks and Job-to-be-done's.  
+The capabilities of *Immersive Home* include the following features
+
+- Promotes suggested agents that could help the user in their tasks
+- Shows a ranked list of work items assigned by agents and workflows
+- Shows a summary of agent activities
+- Provides access to agent management surfaces
+- Provides an individual agent task space where user can work hand in hand with agents
+- Provides spaces that cover multiple tasks and jobs to be done
 
 [!INCLUDE[rai-feedback-mechanism.md](../../../includes/rai-feedback-mechanism.md)]
 
 ## What is the intended use of Immersive Home?
 
-The intended use of *Immersive Home* is to provide users with an  AI-first modern landing page within finance and operations apps.
+The intended use of *Immersive Home* is to provide users with an AI-first modern landing page within finance and operations apps.
 
-It's designed bring work to the user, and keep users in the loop with what agents are doing for the user and in relevant work domains.
+It's designed to bring work to the user and keep users in the loop with what agents are doing for the user and in relevant work domains.
 
 ## How was Immersive Home evaluated? What metrics are used to measure performance?
 
-The evaluation of *Immersive Home* was conducted through rigorous testing across various scenarios within finance and operations apps and Ai agents such as in Procurement and Finance. Performance metrics include accuracy of information provided, user satisfaction ratings, reduction in support ticket volumes, and overall impact on user productivity and application usability.
+The evaluation of *Immersive Home* was conducted through rigorous testing across various scenarios within finance and operations apps and AI agents such as for procurement and finance. Performance metrics include accuracy of information provided, user satisfaction ratings, reduction in support ticket volumes, and overall impact on user productivity and application usability.
 
 If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report). Your feedback helps improve the functionality.
 
