@@ -1837,6 +1837,10 @@ items:
           href: monitoring-telemetry/monitoring-developer-add-custom-signals.md
         - name: Understand and control costs
           href: monitoring-telemetry/monitoring-understanding-and-controlling-cost.md
+      - name: Unified licensing
+        items:
+        - name: Unified Licensing and Improved User License Validation FAQ
+          href: sysadmin/finops-unified-licensing-FAQ.md
       - name: Security
         items:
         - name: Role-based security
