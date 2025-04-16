@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/19/2024
+ms.date: 04/16/2025
 ms.reviewer: johnmichalak
 
 ---
@@ -605,7 +605,7 @@ To correctly report both the preceding scenarios that involve a VAT rate of 0.00
 ![Sales tax codes page.](../media/emea-esp-sii-zero-percent-vat-rates.png)
 
 > [!IMPORTANT]
-> The **Other** tax type was added specifically for the abovemantioned sales scenarios and is not intended for purchase transactions. For zero-tax vendor invoices lines, please use the **VAT 0%** tax type instead.
+> The **Other** tax type was added specifically for the sales scenarios and is not intended for purchase transactions. For zero-tax vendor invoices lines, use the **VAT 0%** tax type instead.
 > 
 ### Intra-community sales tax reporting to the SII system
 
@@ -644,8 +644,10 @@ To distinguish the acquisition of goods between investments and non-investments 
 This set up drives the fulfilling of the Bien 'Inversion' tag in the received invoices files.
 
 ### Set up **Reverse charge** when this mechanism applies to the transaction.
-In the context of Spain's SII system, the **InversionSujetoPasivo** node in the **SII Invoice Received Format (ES)** indicates that the reverse charge mechanism applies to a particular transaction. 
-To include this node in the XML, **Reverse charge** should be set to **Yes** in **Tax > Setup > Sales tax > Spanish VAT book**.
+
+In the context of Spain's SII system, the **InversionSujetoPasivo** node in the **SII Invoice Received Format (ES)** indicates the reverse charge mechanism applies to a particular transaction.
+
+To include this node in the XML, go to **Tax > Setup > Sales tax > Spanish VAT book** and set **Reverse charge** to **Yes**.
 
 ## <a name="multiple-vat"></a>Reporting to the SII system of Spain for multiple VAT registrations
 
