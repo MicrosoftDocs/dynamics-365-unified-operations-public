@@ -28,7 +28,7 @@ To create a nonconformance, follow these steps.
 1. In the **Create non conformance** dialog box, in **Problem type** field, select the type of problem that was found during the inspection process.
 1. Select **OK**.
 
-<!-- KFM: Maybe add a section about how to read (and enter) notes. (Notes are added as an attachment opened using the paperclip icon on the menu bar) -->
+<!-- KFM-AQM: Maybe add a section about how to read (and enter) notes. (Notes are added as an attachment opened using the paperclip icon on the menu bar) -->
 
 ## Approve or reject a nonconformance
 
@@ -66,9 +66,9 @@ To create an operation for a nonconformance, follow these steps.
     > You can add or update operations only for nonconformances that are approved.
 
 1. On the Action Pane, select **Related operations**.
-1. On the **Related operations** page add rows to the grid in one or both of the following ways:
+1. On the **Related operations** page, add rows to the grid in one or both of the following ways:
     - To add a single row to the grid, select **New** on the Action pane.
-    - To add all the operations from a [predefined operations group](../quality-operations.md), select **Add operations from a group** on the Action pane.
+    - To add all the operations from a [predefined operations group](../quality-operations.md), select **Add operations from a group** on the Action Pane.
 
 1. Set the following fields for each row:
 

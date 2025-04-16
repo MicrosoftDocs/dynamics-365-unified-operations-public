@@ -26,7 +26,7 @@ Supply Chain Management provides the ability to create a basic certificate of an
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM: more here? right FM? -->
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: more here? right FM? -->
 
 ## Set up a COA customer group
 
@@ -34,7 +34,7 @@ To manage COA for different customers, you can group customers by assigning them
 
 1. Go to: **Inventory management** \> **Setup** \> **Certificate of analysis** \> **Certificate of analysis customer groups**.
 1. Use buttons in the action pane to add, edit, or delete a COA customer group.
-1. Make the following selections for your new or selected COA customer group
+1. Make the following selections for your new or selected COA customer group.
     - **COA customer group** - Identification of the COA customer group.
     - **Description** - Description of the COA customer group.
 
@@ -46,19 +46,19 @@ To set up customer-specific COA requirements on test groups follow these steps:
 1. In the lower section of the page, select a test.
 1. In the tool bar, select customer COA requirements to open the customer COA requirements page.
 1. Use the buttons in the action pane to add, edit, or delete a customer COA requirement.
-1. When making a new customer COA requirement the fields test and test group will be automatically filled our. The field Attribute will be filled out if the test is associated a Batch attribute. 
+1. When making a new customer COA requirement the fields test and test group will be automatically filled our. The **Attribute** field is filled out if the test is associated a Batch attribute.
 1. Fill out the fields in the grid to complete the creation of the requirement.
-    - **Customer code** - Choose **All** to make the requirement applicable for all customers, **Group** for a group of customers, and **Table** for a specific customer.
-    - **Customer relation** - Dependent on your selection in **Customer code** select a **COA customer group** or a specific **Customer account**.
+    - **Customer code** - Choose *All* to make the requirement applicable for all customers, *Group* for a group of customers, and *Table* for a specific customer.
+    - **Customer relation** - Dependent on your selection in **Customer code** select a *COA customer group* or a specific *Customer account*.
     - **Exclude** - Indicates if the test should appear on customer-specific COA. All tests are assumed to be included except those specifically marked as excluded.
     - **Use customer specific ranges** - Indicates whether the customer specific batch attribute range should be used for the customer-specific COA. If no customer specific batch attribute range if found, then the standard range will print.
     - **Suppress Min/Max values** - Indicates if the minimum and maximum values of the Test should be suppressed on the customer-specific COA. For example, for a given test, let's assume that the minimum is 1 and the Maximum is 10 and the Result is 1. For certain customers, it might be desirable that the range doesn't display at all, not to draw attention to the fact that the result just passed the quality test.
-    - **Replace pass results** - When populated, the verbiage will replace the test results on the customer-specific COA if the test is passed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as "Within specifications" for a pass.
+    - **Replace pass results** - When populated, the verbiage will replace the test results on the customer-specific COA if the test is passed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as *Within specifications* for a pass.
     - **Replace fail results** - When populated, the verbiage will replace the test results on the customer's COA if the test is failed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as *Outside acceptable range* for a failure.
 
 ## Set up and maintain customer COA requirements from a quality order
 
-You can also set up and maintain customer COA requirements from a quality order. To do so, follow these steps.
+To set up and maintain customer COA requirements from a quality order, follow these steps.
 
 1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders**
 1. Select a quality order
@@ -70,7 +70,7 @@ You can also set up and maintain customer COA requirements from a quality order.
 
 You can mark product and customer specific batch attributes to be included into the COA, even if they aren't included in testing through a quality order.
 
-1. Go to **Product information management** \> **All released products**. <!-- KFM: I can't find this path. I checked **Released products**, but couldn't find any of the other settings listed below either. -->
+1. Go to **Product information management** \> **All released products**. <!-- KFM-AQM: I can't find this path. I checked **Released products**, but couldn't find any of the other settings listed below either. -->
 1. In the **All released products** list page, filter on a batch enabled product.
 1. Under the **Manage inventory** tab, go to the **Batch attributes** field group and select either **Product specific** or **Customer specific**.
 1. Select the field **Include in COA independent of quality order**.

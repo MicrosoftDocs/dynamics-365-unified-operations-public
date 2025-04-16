@@ -42,6 +42,12 @@ To set up your flexible sampling plans, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Flexible sampling plans**.
 
+1. On the Action Pane you have following option.
+    - **Add** – Add a new sampling plan.
+    - **Delete** – Remove an existing plan. (You can't delete a plan if quality orders are using the plan or if activities are being tracked against it.)
+    - **Copy plan** – Copy content from another plan to the selected plan.
+    - **View activities** – Opens the **Flexible sampling plan activities** page where you can get summaries and detailed information about the plan activities.
+
 1. For your new or selected sampling plan, make the following settings in the header:
 
     - **Flexible sampling plan code** – Enter a name for the sampling plan.
@@ -49,12 +55,6 @@ To set up your flexible sampling plans, follow these steps.
     - **Alert role** – Select a security role to be notified when a specified number of failures for a level is reached.
     - **Last level** – Select the level number for the last activity to be performed in this flexible sampling plan process.
     - **Approved** – Set the plan in the approved state.
-
-1. On the Action Pane you have following option.
-    - **Add** – Add a new sampling plan.
-    - **Delete** – Remove an existing plan. (You can't delete a plan if quality orders are using the plan or if activities are being tracked against it.)
-    - **Copy plan** – Copy content from another plan to the selected plan.
-    - **View activities** – Opens the **Flexible sampling plan activities** page where you can get summaries and detailed information about the plan activities.
 
 1. Use the grid on the **Details** FastTab to set up the plan. Use the buttons on the Action Pane to add and remove lines in the grid. For new or selected lines make the following settings:
 
