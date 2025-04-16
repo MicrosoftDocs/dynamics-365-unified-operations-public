@@ -105,6 +105,49 @@ To quickly delete all journal lines in a journal, go to **Functions** > **Delete
 >[!Note]
 > Dynamics 365 finance and operations doesn't allow the deletion of posted transactions. 
 
+### Load ledger transactions
+Use this function to transfer selected ledger transactions into the current journal. This function uses existing, posted vouchers to create new vouchers. Select **General ledger > Journals > General journal**. Enter a new or select an existing journal and click Lines. Then select **Functions > Load ledger transactions**.
+
+Use the Voucher list to select how you want to assign voucher numbers to the loaded transactions. 
+ - Original voucher number – The new/loaded vouchers will have the same voucher number as the original vouchers.
+ - Same new voucher number for all vouchers – All new/loaded vouchers will have the same voucher number.
+ - New voucher number per voucher – The new/loaded vouchers will each have a new voucher number.
+ - New voucher number per transaction – Each line in the new/loaded vouchers will have a different voucher number.
+
+The Original voucher number can only be used if the General ledger parameter **Check for voucher used** is set to **Accept duplicates** or **Warn in case of duplicates**.
+
+Example
+The original journal batch number has vouchers GNJL00164 and GNJL001065
+
+[![Original journal batch.](/media/OrigJournal.png](./media/OrigJournal.png)
+
+If **Load ledger transactions** is completed using **New voucher number per voucher** the new journal batch has vouchers GNJL001067 and GNJL001068.
+[![New voucher number per voucher.](/media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
+
+If **Load ledger transactions** is completed using **New voucher number per transaction** the new journal batch has voucher numbers per line, GNJL001069, GNJL001070, GNJL001071, and GNJL001072. This journal batch will not post as is because the vouchers are not balanced. This method could be used if you wish to add offset account types to the vouchers before posting. 
+[![New voucher number per voucher.](/media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
+
+Set **Accrued transactions** to Yes to include accrued transactions. 
+
+Set **Invert sign** to Yes to reverse the sign for the amount that is loaded into the journal. If the **Invert sign** is set to Yes and **Voucher** is set to **New voucher number per
+voucher** or **New voucher number per transaction**, the description text “Void of ‘xxx’,” where ‘xxx’ means the original voucher number, is displayed automatically for the created transactions. 
+To change the posting date of the loaded transactions, select the **Unit** and **Number of units**. For example, if you select Months in the Unit field and you enter 1 in the Number of units field, the posting date for the loaded transactions is June 1 if the original posting date is May 1. 
+
+Use the **Filter** button to restrict which transactions to load into the journal. 
+
+To restrict using voucher numbers use the General journal entry table and Voucher field. 
+
+The default query includes a Journal number field but this refers to the Journal entry number, not the Journal batch number. To add the Journal batch number to the query, do the following: 
+ 1. In the query select the **Joins** tab
+ 2. Expand the **General journal account entry** table
+ 3. Select the **General journal entry** table
+ 4. Select **Add table join**
+ 5. Highlight the **Ledger entry journal** and then **Select**. This will add the Ledger entry journal under the Fiscal calendar period.
+ 6. Select the **Range** tab
+ 7. Select **Add** and then in the Table column select **Ledger entry journal**. The Derived table will default with the same table.
+ 8. In the **Field** column select **Journal batch number**.
+ 9. Now you can enter a journal batch number to load into the journal. 
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
