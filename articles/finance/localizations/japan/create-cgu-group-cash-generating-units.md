@@ -4,7 +4,7 @@ description: In Japan, an impairment on fixed assets can be based on either indi
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/17/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan
