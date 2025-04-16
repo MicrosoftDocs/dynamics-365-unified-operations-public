@@ -118,14 +118,13 @@ The Original voucher number can only be used if the General ledger parameter **C
 
 Example
 The original journal batch number has vouchers GNJL00164 and GNJL001065
-
-[![Original journal batch.](/media/OrigJournal.png](./media/OrigJournal.png)
+[![Original_journal_batch.](./media/OrigJournal.png](./media/OrigJournal.png)
 
 If **Load ledger transactions** is completed using **New voucher number per voucher** the new journal batch has vouchers GNJL001067 and GNJL001068.
-[![New voucher number per voucher.](/media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
+[![New voucher number per voucher.](./media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
 
 If **Load ledger transactions** is completed using **New voucher number per transaction** the new journal batch has voucher numbers per line, GNJL001069, GNJL001070, GNJL001071, and GNJL001072. This journal batch will not post as is because the vouchers are not balanced. This method could be used if you wish to add offset account types to the vouchers before posting. 
-[![New voucher number per voucher.](/media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
+[![New voucher number per voucher.](./media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
 
 Set **Accrued transactions** to Yes to include accrued transactions. 
 
