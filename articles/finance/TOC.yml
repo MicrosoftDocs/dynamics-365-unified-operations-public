@@ -4158,6 +4158,10 @@
                       href: localizations/thailand/apac-tha-sales-vat-report.md
                     - name: Withholding tax
                       href: localizations/thailand/apac-tha-withholding-tax.md
+                - name: Türkiye
+                  items:
+                    - name: Continuous serial numbering of packing slips and invoices 
+                      href: localizations/turkey/emea-tur-serial-numbering.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
