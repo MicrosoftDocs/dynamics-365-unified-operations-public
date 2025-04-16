@@ -1840,7 +1840,7 @@ items:
       - name: Unified licensing
         items:
         - name: Unified Licensing and Improved User License Validation FAQ
-          href: sysadmin/finops-unified-licensing-faq.md
+          href: fin-ops/sysadmin/finops-unified-licensing-faq.md
       - name: Security
         items:
         - name: Role-based security
