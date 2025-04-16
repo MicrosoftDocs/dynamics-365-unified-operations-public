@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Finance and Operations apps Unified Licensing FAQ
+title: Unified Licensing FAQ
 description: Answers to various frequently asked questions regarding Dynamics 365 Finance and Operations apps Licensing.
 author: ceian
 ms.author: ceian
@@ -14,7 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.44
 ---
 
-# Microsoft Dynamics 365 Finance and Operations apps Unified Licensing and Improved User License Validation FAQ
+# Unified Licensing and Improved User License Validation FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
