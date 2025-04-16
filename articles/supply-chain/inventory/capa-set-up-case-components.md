@@ -38,7 +38,7 @@ To set up your CAPA worker groups, follow these steps.
 1. Use the settings on the **Group settings** FastTab to set up the group, including details related to whether all members of the group can change the stage of a CAPA case and whether the CAPA administrator should be an implied member and/or default worker for the group. Make the following settings:
     - **Allow any member to change stage** – Select this check box if all workers within this CAPA worker group are allowed to change the stage of CAPA cases assigned to this group. Clear this checkbox if you if you want to limit which workers within the group can advance the stage of the CAPA Case.
     - **Implied member of this worker group** – Select this check box if the CAPA administrator, assigned on the Inventory management parameters, should be an implied member of this CAPA worker group. Alternatively, the CAPA administrator can be assigned to the CAPA worker group but if the CAPA administrator is changed, this will require more maintenance.
-    - **Default worker** – Select this check box if the CAPA administrator should be the default worker for this CAPA worker group. <!-- KFM-AQM: This setting seemed to be ignored during the original bug bash with Traci. Does it work? -->
+    - **Default worker** – Select this check box if the CAPA administrator should be the default worker for this CAPA worker group.
 
 1. Use the **Worker assignments** FastTab to add and remove workers in the group.
     - Too add a worker, use the **New** button the **Overview** tab or go to the **Assign** tab and use the right arrow button move workers into the **Selected workers** list.
@@ -84,7 +84,7 @@ To name, describe, and approve your CAPA processes, follow these steps.
 1. The **CAPA processes** page opens, showing a list of existing CAPA processes. The following information is shown for the selected process:
     - **Name** – The name of the selected CAPA process. This is read-only for existing processes.
     - **Description** – A short description of the selected CAPA process.
-    - **Approved** – Indicates whether the selected CAPA process is approved for use in managing CAPA cases. <!-- KFM-AQM: mention what role is needed to be able to change this. --> Only approved CAPA processes are available to users when they create and process a CAPA case. You can keep this set to *No* while developing a new process, and then change it to *Yes* when you're ready to start using it.
+    - **Approved** – Indicates whether the selected CAPA process is approved for use in managing CAPA cases. Only approved CAPA processes are available to users when they create and process a CAPA case. You can keep this set to *No* while developing a new process, and then change it to *Yes* when you're ready to start using it.
 
 1. Use buttons on the Action Pane to add and remove processes.
     - To add a new process, select **New**.
@@ -105,7 +105,7 @@ To define the stages and activities that make up a CAPA process, follow these st
 
 1. Set up your top-level stages. To add a new stage at the bottom of the current stages list, select the top level heading (the process name) and on the Action Pane, select **New** \> **Create level**. (You can create a sub-stage for an existing stage by selecting the parent stage and selecting **New** \> **Create level**.) For each stage, enter the following information in the right pane:
     - **Name** – This is a read-only field. For a new stage, it takes it's value from the the text you enter in the **Purpose** field and can't be changed later.
-    - **Activity number** – This is a read-only field. It's automatically generated. <!-- KFM-AQM: What is the link for? It seems like it's only relevant for active cases, so why is it active here? -->
+    - **Activity number** – This is a read-only field. It's automatically generated.
     - **CAPA worker group** – Select or view the CAPA worker group that identifies the group of CAPA workers responsible for this activity. By default, this group is also assigned to the activities belonging to the stage, but you can override it for each stage if necessary.
     - **Responsible** – Select worker from the selected worker group who is responsible for this activity. If none is specified, the default worker assigned for the selected worker group is used. when the CAPA case is being processed.
     - **Notify group** – Choose who should be notified by email when the stage becomes active. Select *Yes* to notify the entire worker group. Select *No* to just notify the responsible worker. Select *Inherit* to inherit this setting from a parent stage in the hierarchy.
@@ -127,11 +127,11 @@ To see all CAPA cases that use a selected CAPA process, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 1. Select or open the CAPA process you want to look for.
-1. On the Action Pane, open the **Process** tab and select **All cases** or **All CAPA cases**. <!-- KFM-AQM: what is the difference? -->
+1. On the Action Pane, open the **Process** tab and select **All cases** or **All CAPA cases**.
 
 ## Set up CAPA resolutions
 
-CAPA resolutions let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolutions to identify and categorize typical reasons CAPA cases can be resolved. <!-- KFM-AQM: More to say? Examples? -->
+CAPA resolutions let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolutions to identify and categorize typical reasons CAPA cases can be resolved.
 
 To set up your CAPA resolutions, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolutions**. Then use the buttons in the Action Pane to create and delete resolutions as needed. For each resolution, enter a name and description.
 
@@ -143,18 +143,18 @@ To set up your CAPA source codes, go to **Inventory management** \> **Setup** \>
 
 ## Set up CAPA types
 
-CAPA types let users select a type to categorize each CAPA case.  <!-- KFM-AQM: Introduce these. What are they for? Examples? -->
+CAPA types let users select a type to categorize each CAPA case.
 
 To set up your CAPA types, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA types**. Then use the buttons in the Action Pane to create and delete CAPA types as needed. For each CAPA type, enter a name and description.
 
 ## Set up Major/minor classification codes
 
-CAPA types let users select a major/minor classification code for each CAPA case.  <!-- KFM-AQM: Introduce these. What are they for? Examples? -->
+CAPA types let users select a major/minor classification code for each CAPA case.
 
 To set up your major/minor classification codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **Major/minor classification codes**. Then use the buttons in the Action Pane to create and delete classification codes as needed. For each code, enter a name and description.
 
 ## Set up CAPA root causes
 
-CAPA root cause codes let users select the root cause of an issue when they resolve a CAPA case. <!-- KFM-AQM: More to say? Examples? -->
+CAPA root cause codes let users select the root cause of an issue when they resolve a CAPA case.
 
 To set up your CAPA root cause codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**. Then use the buttons in the Action Pane to create and delete root causes as needed. For each root cause, enter a name and description.

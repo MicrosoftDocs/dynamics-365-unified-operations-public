@@ -39,7 +39,7 @@ Workers use the *Dispensing ticket* page to manage the dispensing of material to
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: Confirm feature requirements -->
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - *(Preview) Advanced quality management*
     - *(Preview) Dispense management*
 

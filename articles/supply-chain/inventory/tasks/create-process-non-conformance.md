@@ -28,8 +28,6 @@ To create a nonconformance, follow these steps.
 1. In the **Create non conformance** dialog box, in **Problem type** field, select the type of problem that was found during the inspection process.
 1. Select **OK**.
 
-<!-- KFM-AQM: Maybe add a section about how to read (and enter) notes. (Notes are added as an attachment opened using the paperclip icon on the menu bar) -->
-
 ## Approve or reject a nonconformance
 
 To approve or reject a nonconformance, follow these steps.

@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Advanced quality management is a suite of quality-management features introduced in Supply Chain Management version 10.0.44. It enhances the quality management features that were already available by adding many new tools that address core issues that manufacturers face to meet the U.S. Food and Drug Administration's (FDA) Quality System Regulation 21 CFR Part 11, cGMP and other various regulatory and international standards such as ISO and Six Sigma. <!-- KFM-AQM: is this too narrow a description? Should we describe this has having broader applications? Mention here (and/or in Prerequisites) that these features mostly require the Inventory module (not WMS)? -->
+Advanced quality management is a suite of quality-management features introduced in Supply Chain Management version 10.0.44. It enhances the quality management features that were already available by adding many new tools that address core issues that manufacturers face to meet the U.S. Food and Drug Administration's (FDA) Quality System Regulation 21 CFR Part 11, cGMP and other various regulatory and international standards such as ISO and Six Sigma.
 
 :::image type="content" source="media/advanced-quality-management-overview.png" alt-text="Overview of advanced quality management features." lightbox="media/advanced-quality-management-overview.png":::
 

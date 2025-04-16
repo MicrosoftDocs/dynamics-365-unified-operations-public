@@ -34,7 +34,7 @@ You must define a quality association for each variation in a business process t
 Most of the features described in this article are available as a standard part of all current versions of Supply Chain Management. However, if you want to set up quality associations for sales returns and transfer orders, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: more here? right FM? -->
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -73,10 +73,6 @@ The following table provides more information about how quality orders can be ge
 
 > [!NOTE]
 > When you filter quality associations for the *Inbound shipment order* reference type, and the **Account code** value is *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
-
-<!-- KFM-AQM: Maybe add a section here about adding an assigned worker and/or quality order priority. We may need a topic about how to set up the priority values. Explain more about what happens when a worker is assigned; is it just a field on the quality order or is there an email and/or other notification?  -->
-
-<!-- KFM-AQM: Add a section here about **Check for quality association** option for disposition codes. -->
 
 ## Quality associations and flexible sampling plans
 

@@ -49,5 +49,3 @@ The following table describes tasks that employees can perform when they work wi
 | **Update the stage of a CAPA case** | Update the stage in the process of working a CAPA case, for example from *Evaluation* to*Investigation*. |
 | **Close a CAPA case** | Change the status of an *Opened* case to *Closed* to indicate that the issue has been resolved. |
 | **Rank a knowledge article** | Rank a knowledge article to indicate if it was successful in helping to close a case. |
-
-<!-- KFM-AQM: Not documented for CAPA: Service level agreement, Product change (Check completeness, Approve and activate changes), and Print CAPA case details -->

@@ -37,7 +37,7 @@ You can design calibration labels layouts that you can print and attach each ind
 To use test instrument calibration features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: more here? right FM? -->
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="parameters"></a>Set up instrument calibration parameters
 
@@ -269,9 +269,9 @@ To perform a calibration, follow these steps:
     - **Calibration notes** – Additional notes about the calibration. The default information comes from the test instrument tag but can be updated during calibration.
     - **Attachments** – If additional calibration instructions are available as attached documents, then the **Attachments** icon (paperclip) at the right side of the Action Pane shows a badge with the number of attachments. Select this icon to open the **Attachments for Calibration procedures** page, where you can view, add, and describe documents attached to your calibration record.
 
-1. If you'd like to record details about the specific instruments required or used to calibrate the test instrument, go to the Action Pane, open the **Calibrate instruments** tab, and select **Assign calibration tools**. Then use the **Calibration tools used** page to record each instrument. Make the following settings for each instrument you add here: <!-- KFM-AQM: Does anything happen with this info? I can't see it listed anywhere after calibration is finished. -->
+1. If you'd like to record details about the specific instruments required or used to calibrate the test instrument, go to the Action Pane, open the **Calibrate instruments** tab, and select **Assign calibration tools**. Then use the **Calibration tools used** page to record each instrument. Make the following settings for each instrument you add here:
     - **Calibration tool** – Select the test instrument type for the instrument to be used. For a test instrument type to be listed here, it must have **Use for calibration** set to *Yes*. Learn more in [Quality management test instruments](quality-test-instruments.md).
-    - **Calibration tool tag number** – To identify a specific physical test instrument, then select its test instrument tag number here. This value is required if the selected **Calibration tool** has **Requires test instrument tag** set to *Yes*. <!-- KFM-AQM: will this result in incrementing the usage count of this tag when calibration is marked as complete? -->
+    - **Calibration tool tag number** – To identify a specific physical test instrument, then select its test instrument tag number here. This value is required if the selected **Calibration tool** has **Requires test instrument tag** set to *Yes*.
 
 1. To start the calibration, go to the Action Pane, open the **Calibrate instruments** tab, and select **Start calibration**. Then select **OK** in the dialog. This updates the **Started by** and **Started date** fields on the calibration record.
 1. Do your calibration tests as required. When you're done testing, go to the Action Pane, open the **Calibrate instruments** tab, and select **Complete calibration**. Then make the following settings in the **Calibration action** dialog.

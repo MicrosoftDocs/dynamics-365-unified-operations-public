@@ -26,7 +26,7 @@ Supply Chain Management provides the ability to create a basic certificate of an
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: more here? right FM? -->
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up a COA customer group
 
@@ -66,14 +66,16 @@ To set up and maintain customer COA requirements from a quality order, follow th
 1. From the action pane, select customer COA requirements
 1. Follow the same steps for adding, deleting, or editing customer COA requirements as described in previous section about test groups.
 
-## Include product and customer specific batch attributes in COA
+## Include product- and customer-specific batch attributes in COA
 
 You can mark product and customer specific batch attributes to be included into the COA, even if they aren't included in testing through a quality order.
 
-1. Go to **Product information management** \> **All released products**. <!-- KFM-AQM: I can't find this path. I checked **Released products**, but couldn't find any of the other settings listed below either. -->
-1. In the **All released products** list page, filter on a batch enabled product.
-1. Under the **Manage inventory** tab, go to the **Batch attributes** field group and select either **Product specific** or **Customer specific**.
-1. Select the field **Include in COA independent of quality order**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
+1. In the **All released products** list page, find and select or open the batch-enabled product you want to set up.
+1. On the Action Pane, open the **Manage inventory** tab and, from the **Batch attributes** group, select either **Product specific** or **Customer specific**.
+1. Select an existing attribute from the list pane or create a new one.
+1. To include your new or selected attribute in COA, set **Include in COA independent of quality order** to *Yes*.
+1. Repeat the previous steps for each attribute you want to include in the COA.
 
 Once the customer COA requirements are set for a test group, they'll automatically apply to all quality orders using that test group. However, these requirements can be adjusted directly on the quality order if needed.
 

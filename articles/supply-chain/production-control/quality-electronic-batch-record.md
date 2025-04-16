@@ -29,13 +29,11 @@ Electronic batch records (EBRs) are required by the *21 CFR Part 11* regulations
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: Confirm feature requirements -->
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - *(Preview) Advanced quality management*
     - *(Preview) Electronic signature improvements*
 
 ## Turn electronic signature requirements for EBR on or off
-
-<!-- KFM-AQM: I assumed this section. Please confirm. -->
 
 To set up the electronic signature requirements for the types of records used for EBR, follow these steps:
 
@@ -55,8 +53,6 @@ To set up the electronic signature requirements for the types of records used fo
 1. In the right pane, set **Signature required** to *Yes* to require signatures from users who perform actions related to this feature. Set it to *No* to turn off the requirement.
 1. Repeat from step 2 for each feature you want to turn electronic signatures on or off for.
 
-<!-- KFM-AQM: Add section about setting up ES reason codes? these are mentioned in the bug bash video (27:13). -->
-
 ## Set up EBR
 
 To enable EBR, follow these steps.\
@@ -68,8 +64,6 @@ To enable EBR, follow these steps.\
     - **Include batch expiration on BPR** – Choose whether the batch expiration date should be included in the BPR report.
     - **Suppress work instructions on EBR** – Choose whether to suppress the work instruction section in the PBR report when there aren't any work instructions.
     - **Allow BPR to print multiple reports at once** – Choose whether to allow multiple PBRs to be printed in a single report. If this is set to *No*, then only one BPR can be printed per report.
-
-<!-- KFM-AQM: In the bug bash video, they go to **Print management** tab and do some setup that I don't see on my system. Should we add that here? Why don't I see it?  -->
 
 ### Set up a number sequence for the EBR
 
@@ -87,7 +81,7 @@ You can configure electronic signature requirements to support EBR for the follo
 - Route and job card journals
 - Report as finished journal
 
-Each of these journal types provides the following e-signature options: <!-- KFM-AQM: It isn't clear where these settings are. -->
+Each of these journal types provides the following e-signature options:
 
 - **Post route card production journal** – When this option is set to *Yes*, the system notifies users that route card journals are no longer posted automatically when starting a batch or production order.
 - **Post picking list production journal (non-dispensing)** – When this option is set to *Yes*, the system notifies users that picking list journals are no longer posted automatically when starting a batch or production order. Also, the report as finished option of the batch or production order is disabled. To report a batch or production order as finish, you must use the report as finished production journal. This is because the system must capture the electronic signature of the individuals who are posting those activities.
@@ -228,5 +222,3 @@ To generate a batch production record report, follow these steps.
 1. In the dialog, expand the **Parameters** FastTab and choose which details you want to include in the report.
 1. On the **Destination** FastTab, choose whether to view the report on screen, print it, save it as a file, or email it.
 1. Select **OK** to generate the report.
-
-<!-- KFM-AQM: Add a section that describes how to find the batch production record from a production order or batch order? Other places? -->

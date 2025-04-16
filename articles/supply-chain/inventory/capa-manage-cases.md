@@ -52,7 +52,6 @@ To view and work only with the CAPA cases that you are responsible for, use one 
 When you open a CAPA case record from the workspace or any list page, the details page provides the following FastTabs. Use the fields and settings on each FastTab to view or edit information about the CAPA case.
 
 - **General** – View or edit general information about the selected CAPA case. Many of these values are set when the case is created, as described earlier in this article.
-- **Service level agreement** – <!-- KFM-AQM: description needed -->
 - **Email notifications** – View, add, and edit people who should be emailed when selected events occur with the current capa case (such as when the case or one of its activities changes status to *Closed*, *Canceled*, or *Reopened*).
 - **Case log** – View, add, or edit information about the CAPA case. The system adds log entries automatically when certain events occur, such as when the case is created, when it changes status, or when activities are completed. You can also add log entries manually.
 - **Associations** – View or edit information about records that are associated with the CAPA case. Examples of the records that can be associated to a CAPA case include: sales order, item, vendor, batch order. Often, one or more these associations are set automatically based on where the user was when creating the case, but you can add more of them as you work with the case.
@@ -65,7 +64,7 @@ When you open a CAPA case record from the workspace or any list page, the detail
 You can create CAPA cases from many different pages in the system, including pages where you work with records from which CAPA cases might originate, such as customers, vendors, sales orders, purchase orders, return orders, and released products. You can also create them from the **All CAPA cases** and **My CAPA cases** pages.  When you create a CAPA case from a related or originating record, the case is linked to that record automatically.
 
 1. Go to the customer, vendor, sales order, purchase order, return order, or released product record from which the CAPA case originates.
-1. Depending on what page you're working on, do one of the following steps. <!-- KFM-AQM: there might be more of these (?) -->
+1. Depending on what page you're working on, do one of the following steps.
     - For customers or vendors – On the **General** tab of the Action Pane, in the **New** group, select **CAPA case**.
     - For sales orders, purchase orders, or return orders – On the **General** tab of the Action Pane, in the **CAPA** group, select **Create CAPA case**.
     - For released products – On the **General** tab of the Action Pane, in the **Maintain CAPA cases** group, select **Create CAPA case**.
@@ -110,7 +109,7 @@ When a case has a process assigned, the workflow is as follows:
     - Go to the **CAPA management** workspace and open any tab that lists CAPA cases (such as **My open cases**). Select a case and then choose **View activities** from the toolbar. All activities for the selected CAPA case that belong to stages that have been started so far are listed here. Select an activity to go to its details page
     - Open the details of a CAPA case. On the Action Pane, open the **CAPA case** tab and select **Case process**. Navigate the process tree, expand a stage, and select an activity (the tree only shows activities for stages that have been started until now). Select the **Activity number** link to view the details for that activity.
 
-1. The worker now works on the activity, enters notes into the details page for the activity, and fills out the form as needed. When the worker is done, they close the activity (mark it as complete). There are several ways to close an activity: <!-- KFM-AQM: I don't think we need to document the various fields and FastTabs on this page, so I've removed those details from this draft. Agree? -->
+1. The worker now works on the activity, enters notes into the details page for the activity, and fills out the form as needed. When the worker is done, they close the activity (mark it as complete). There are several ways to close an activity:
     - From the **CAPA management** workspace, select the activity on any tab where it appears and select **Set as complete** from the toolbar.
     - From the activity details page, open the **Activity** tab on the Action Pane and select **Set as complete**.
     - From the activity details page, open the **Status** FastTab and set **Closed** to *Yes*.
@@ -133,11 +132,7 @@ When a case has a process assigned, the workflow is as follows:
 > 1. Expand the **Process tree** FastTab to see the list of stages in the current process.
 > 1. From here, you  can expand any stage to see the activities that belong to it, provided that the stage has been started so its activities have been created. You can right-click on an activity to open its details.
 
-<!-- KFM-AQM: Maybe add a section about how to print CAPA reports -->
-
 ## Analyze CAPA case statistics
-
-<!-- KFM-AQM: I modified this section to provide more instructions but describe fewer specific fields. Agree? -->
 
 Supply Chain Management provides graphical displays that let you analyze CAPA case generation and progress. Use these statistics to identify trends, frequent issues, bottlenecks, and areas for improvement in your CAPA processes.
 

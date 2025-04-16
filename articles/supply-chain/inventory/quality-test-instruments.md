@@ -30,7 +30,7 @@ You're performing various tests on electrical components. Some tests are for the
 Most of the features described in this article are available as a standard part of all current versions of Supply Chain Management. However, the calibration-related settings (**Tag number required**, **Used for calibration**, and **Calibration label layout** fields) add the following requirements
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!-- KFM-AQM: more here? right FM? -->
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Learn more in [Test instrument calibration (preview)](quality-instrument-calibration.md).
 
