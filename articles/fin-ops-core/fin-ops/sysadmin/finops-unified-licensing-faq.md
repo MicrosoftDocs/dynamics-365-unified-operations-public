@@ -53,7 +53,7 @@ The recommended practice is to assign licenses in the [Microsoft 365 admin cente
 The recommended practice is to
 - Assign one Base license per user and assign Attach licenses for any additional workload as needed.
 - Regularly review license assignments to remove unused or misaligned seats.
-    - Run the **Dormant Users – Security Account Report** (available within Dynamics 365 Finance and Operations) to identify users who haven’t logged in recently. Best practice is to regularly review and clean up access:
+    - Run the **Dormant Users – Security Account Report** (available within Dynamics 365 Finance and Operations) to identify users who have not logged in recently. Best practice is to regularly review and clean up access:
         - Every **30 days** for high-turnover departments or sensitive environments
         - Every **60 days** as a general hygiene check
         - Every **180 days** to find long-term dormant accounts
@@ -73,7 +73,7 @@ To ensure that all user license assignments adhere to the licensing requirements
 Users with the Power Platform administrator or Dynamics 365 service administrator role do not require a license in Finance and Operations apps. For individual user license requirements, consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
 ## Do external users need a license?
-No. External users, such as suppliers accessing vendor portals, don’t require a license to access the application. External users accessing the application indirectly through third-party system or interface must be appropriately licensed. For more information on the requirements and what constitutes an external user, refer to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+No. External users, such as suppliers accessing vendor portals, don’t require a license to access the application. External users accessing the application indirectly through third-party system or interface must be appropriately licensed. For more information on the requirements and what constitutes an external user, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 ## Is Local Business Data (LBD) / on-premises licensing part of the scope for validation?
 
@@ -81,7 +81,7 @@ No. User license validation is applicable to cloud solutions only.
 
 ## How do I receive notifications about missing licenses or users without licenses?
 
-Users will see in-product banners and administrators will receive email alerts highlighting licensing requirements. Administrators will be able to check all users, roles, assignments and licensing status in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/).
+Users will see in-product banners and administrators will receive email alerts highlighting licensing requirements. Administrators will be able to check all users, roles, assignments, and licensing status in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/).
 
 ## How do administrators know which users will be blocked from the system starting August 30, 2025?
 
@@ -103,7 +103,7 @@ Yes. [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.
 
 ## What is "User Security Governance" and when will it be generally available? 
 
-[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance see the [FAQ](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
+[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance, see the [FAQ](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
 
 ## How do Finance and Operations administrators view license requirements in Dynamics 365 Lifecycle Services?
 
@@ -120,7 +120,7 @@ The User Security Governance License usage summary report is the in-product view
 
 ## Why are we seeing inconsistencies across Microsoft Entra ID (Microsoft 365 admin center) and Power Platform admin center (PPAC) reporting?
 
-Differences between [Microsoft 365 admin center](https://admin.microsoft.com/) and [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting are often due to indirect-based licensing, multiple user accounts, or sync timing delays (which can take up to 72 hours). PPAC only reflects users with individually assigned licenses—indirect assignments won’t appear. If these mismatches are impacting your ability to reconcile license usage or reporting, open a support case through **Support > New service request** in either [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests) for resolution.
+Differences between [Microsoft 365 admin center](https://admin.microsoft.com/) and [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting are often due to indirect-based licensing, multiple user accounts, or sync timing delays (which can take up to 72 hours). PPAC only reflects users with individually assigned licenses—indirect assignments will not appear. If these mismatches are impacting your ability to reconcile license usage or reporting, open a support case through **Support > New service request** in either [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests) for resolution.
 
 ## How should Microsoft 365 administrators proceed if the users listed in the Microsoft 365 admin center do not match those in the Power Platform admin center reporting?
 
@@ -139,8 +139,8 @@ In Dynamics 365 Finance and Operations apps, users are assigned to security role
 
 - **Any Base** is a roll-up category used in PPAC reporting to indicate that a user needs at least one Base license within a specific Base group—either **Base 1** or **Base 2**.
 - 
-    - **Any Base** within **Base 1**: If a user has roles that require Commerce, Finance, or Supply Chain Management, they’ll appear under Any Base — meaning any one of those Base 1 licenses would satisfy the required license for that user.
-    - **Any Base** within **Base 2**: If a user has roles that require Human Resources or Project Operations, they’ll appear under Any Base — meaning any one of those Base 2 licenses would satisfy the required license for that user. 
+    - **Any Base** within **Base 1**: If a user has roles that require Commerce, Finance, or Supply Chain Management, they will appear under **Any Base** — meaning any one of those **Base 1** licenses would satisfy the required license for that user.
+    - **Any Base** within **Base 2**: If a user has roles that require Human Resources or Project Operations, they’ll appear under **Any Base** — meaning any one of those **Base 2** licenses would satisfy the required license for that user. 
 
 This categorization helps summarize where a Base license is needed without specifying the exact SKU, while still respecting the separation between **Base 1** and **Base 2** license families.
 
@@ -148,7 +148,7 @@ This categorization helps summarize where a Base license is needed without speci
 
 No. Users with full user licenses (for exmaple, Supply Chain Management, Finance, Human Resources) do not need a **Team Members** license to view cross-workload. Base licenses already provide the necessary access to view and interact with data across different workloads within Dynamics 365. **Team Members** and **Operations - Activity** use rights are nested under the base and attach licenses. 
 
-## If a user is assigned with 'Operations – Activity' license and the actual security role requires a full user license (e.g. Supply Chain Management, Finance, Commerce), will they be restricted from accessing the necessary features?
+## If a user is assigned with 'Operations – Activity' license and the actual security role requires a full user license (for example, Supply Chain Management, Finance, Commerce), will they be restricted from accessing the necessary features?
 
 Yes, users with an **Operations - Activity** license will be restricted if their security role requires a full license. They will need to be assigned in [Microsoft 365 admin center](https://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
 
@@ -160,7 +160,7 @@ The highest license requirement applies. In case security roles span multiple wo
 
 Yes. If the user is not assigned to the correct license(s), he/she will be notified and will eventually lose access to specific functionalities on August 30, 2025.
 
-## I have a user that needs three licenses: Finance, Supply Chain Management, and Human Resources. The report recommends a Finance Base + Supply Chain Management Attach + Human Resources Attach. Isn't that the same thing as an Human Resources Base + Supply Chain Management Attach + Finance Attach?
+## I have a user that needs three licenses: Finance, Supply Chain Management, and Human Resources. The report recommends a Finance Base + Supply Chain Management Attach + Human Resources Attach. Is that the same thing as an Human Resources Base + Supply Chain Management Attach + Finance Attach?
 
 When purchasing multiple Dynamics 365 applications for a single user, the first application license must be the highest priced license. For detailed information and combinations, refer to the [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) for the base applications and their qualifying products for attach licensing.
 
