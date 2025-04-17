@@ -24,11 +24,11 @@ Before you can print an electronic accounting plan for Peru, the following prere
 - The legal entity's address must be in country/region Peru.
 - You must enable the country/region-specific LATAM feature for Peru and the general LATAM feature.
 - You must download the specific report configurations from the Dataverse configuration repository. 
-- You must import the following electronic reporting (ER) configurations. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
+- You must import the following electronic reporting (ER) configurations. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
     - Ledger accounting LATAM
     - Electronic accounting plan
 - You must configure the electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-- You must create a *tax application code* to use in this report. Learn more in [Tax application for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application).
+- You must create a *tax application code* to use in this report. Learn more in [Tax application for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application).
 - You must configure the application code associated with the transaction currency according to the fiscal regulation.
 - You must configure the tax application code associated with the type of country document ID according to the fiscal regulation.
 - You must configure the tax application code for the different document classes used in transactions (for example, payment methods, invoices, credit notes, and debit notes) according to the fiscal regulation. 
