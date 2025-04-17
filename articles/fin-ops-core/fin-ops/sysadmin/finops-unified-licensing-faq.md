@@ -29,7 +29,7 @@ To learn more about the licensing model, visit the [Dynamics 365 Licensing Page]
  Two key developments are scheduled for April 30, 2025:
 - Users lacking proper licenses will receive notifications within Dynamics 365 Finance and Operations (F&O), directing them to request licensing from their administrator.
 - Administrators will have access to improved license reporting in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), offering comprehensive insights into license usage across all roles.
-No enforcement actions, such as users losing access, are planned for April 30th.
+No enforcement actions, such as users losing access, are planned for April 30, 2025.
 
 ## When will licenses start getting enforced?
 
@@ -59,14 +59,19 @@ The recommended practice is to
 
 ## What is the best way to prepare for user license validation ahead of August 30, 2025?
 
-To ensure that all user license assignments adhere to the licensing requirements: begin by reviewing per‑user license assignments in [Microsoft 365 admin center](https://admin.microsoft.com/); then verify each user’s security roles and assignments within Dynamics 365 Finance and Operations to confirm alignment with licensing entitlements; next, cross‑reference these results with your User Security Governance reports to identify and remediate any discrepancies; and finally, evaluate the user license level reporting in [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) or in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
+To ensure that all user license assignments adhere to the licensing requirements: 
+
+- Begin by reviewing per‑user license assignments in [Microsoft 365 admin center](https://admin.microsoft.com/). 
+- Then verify each user’s security roles and assignments within Dynamics 365 Finance and Operations to confirm alignment with licensing entitlements.
+- Next, cross‑reference these results with your User Security Governance reports to identify and remediate any discrepancies.
+- Finally, evaluate the user license level reporting in [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) or in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
 ## Are system admin related roles included in user license validation?
 
-Users with the Power Platform administrator or Dynamics 365 service administrator role don’t require a license in F&O. For individual user license requirements, please consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+Users with the Power Platform administrator or Dynamics 365 service administrator role don’t require a license in F&O. For individual user license requirements, consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
 ## Do external users need a license?
-No. External users, such as suppliers accessing vendor portals, don’t require a license to access the application. External users accessing the application indirectly through third-party system or interface must be appropriately licensed. For more information on the requirements and what constitutes an external user, please refer to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+No. External users, such as suppliers accessing vendor portals, don’t require a license to access the application. External users accessing the application indirectly through third-party system or interface must be appropriately licensed. For more information on the requirements and what constitutes an external user, refer to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 ## Is Local Business Data (LBD) / on-premises licensing part of the scope for validation?
 
@@ -96,7 +101,7 @@ Yes. [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.
 
 ## What is "User Security Governance" and when will it be generally available? 
 
-[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance please see the [FAQ](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
+[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance see the [FAQ](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
 
 ## How do Finance and Operations administrators view license requirements in Dynamics 365 Lifecycle Services?
 
@@ -113,7 +118,7 @@ The User Security Governance License usage summary report is the in-product view
 
 ## Why are we seeing inconsistencies across Microsoft Entra ID (Microsoft 365 admin center) and Power Platform admin center (PPAC) reporting?
 
-Differences between [Microsoft 365 admin center](https://admin.microsoft.com/) and [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting are often due to indirect-based licensing, multiple user accounts, or sync timing delays (which can take up to 72 hours). PPAC only reflects users with individually assigned licenses—indirect assignments won’t appear. If these mismatches are impacting your ability to reconcile license usage or reporting, please open a support case through Support > New service request in either [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests) for resolution.
+Differences between [Microsoft 365 admin center](https://admin.microsoft.com/) and [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting are often due to indirect-based licensing, multiple user accounts, or sync timing delays (which can take up to 72 hours). PPAC only reflects users with individually assigned licenses—indirect assignments won’t appear. If these mismatches are impacting your ability to reconcile license usage or reporting, open a support case through **Support > New service request** in either [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests) for resolution.
 
 ## How should Microsoft 365 administrators proceed if the users listed in the Microsoft 365 admin center do not match those in the Power Platform admin center reporting?
 
@@ -137,11 +142,11 @@ In Dynamics 365 Finance and Operations apps, users are assigned to security role
 
 This categorization helps summarize where a Base license is needed without specifying the exact SKU, while still respecting the separation between **Base 1** and **Base 2** license families.
 
-## Do users with full user licenses (e.g. Supply Chain Management) need a Team Members license to view cross-workload forms or tables? In other words, is a Team Member license required if users already have a Base Supply Chain Management license?
+## Do users with full user licenses (for example, Supply Chain Management) need a Team Members license to view cross-workload forms or tables? In other words, is a Team Member license required if users already have a Base Supply Chain Management license?
 
-No. Users with full user licenses (e.g., Supply Chain Management, Finance, Human Resources) do not need a **Team Members** license to view cross-workload. Base licenses already provide the necessary access to view and interact with data across different workloads within Dynamics 365. **Team Members** and **Operations - Activity** use rights are nested under the base and attach licenses. 
+No. Users with full user licenses (for exmaple, Supply Chain Management, Finance, Human Resources) do not need a **Team Members** license to view cross-workload. Base licenses already provide the necessary access to view and interact with data across different workloads within Dynamics 365. **Team Members** and **Operations - Activity** use rights are nested under the base and attach licenses. 
 
-## If a user is assigned with “Operations – Activity” license and the actual security role requires a full user license (e.g. Supply Chain Management, Finance, Commerce), will they be restricted from accessing the necessary features?
+## If a user is assigned with 'Operations – Activity' license and the actual security role requires a full user license (e.g. Supply Chain Management, Finance, Commerce), will they be restricted from accessing the necessary features?
 
 Yes, users with an **Operations - Activity** license will be restricted if their security role requires a full license. They will need to be assigned in [Microsoft 365 admin center](https://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
 
@@ -149,13 +154,13 @@ Yes, users with an **Operations - Activity** license will be restricted if their
 
 The highest license requirement applies. In case security roles span multiple workloads, this user will require more than one full user license. For example, if a user has **Buying agent** and **Accounts Payable** security roles, this user will need both Supply Chain Management (Base) and Finance (Attach) licenses. 
 
-## If a user is assigned a “Operations – Activity” or “Team Members” license but requires a Base License (Supply Chain Management, Finance, etc.), will he/she be restricted to access?
+## If a user is assigned a 'Operations – Activity' or 'Team Members' license but requires a Base License (Supply Chain Management, Finance, etc.), will he/she be restricted to access?
 
 Yes. If the user is not assigned to the correct license(s), he/she will be notified and will eventually lose access to specific functionalities on August 30, 2025.
 
 ## I have a user that needs three licenses: Finance, Supply Chain Management, and Human Resources. The report recommends a Finance Base + Supply Chain Management Attach + Human Resources Attach. Isn't that the same thing as an Human Resources Base + Supply Chain Management Attach + Finance Attach?
 
-When purchasing multiple Dynamics 365 applications for a single user, the first application license must be the highest priced license. For detailed information and combinations, please refer to the [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) for the base applications and their qualifying products for attach licensing.
+When purchasing multiple Dynamics 365 applications for a single user, the first application license must be the highest priced license. For detailed information and combinations, refer to the [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) for the base applications and their qualifying products for attach licensing.
 
 ## If user has custom security roles, how will this be enforced?
 
