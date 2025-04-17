@@ -9,7 +9,9 @@ ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ---
 
-# Configuration for Printed General Ledger for Peru
+# Set up and generate a printed general ledger report for Peru
+
+[!include [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a printed general ledger report for Peru in Microsoft Dynamics 365 Finance.
 
@@ -35,7 +37,7 @@ Before you complete the steps in this article to generate and print the report, 
     1. In the **Format mapping** field, select **General ledger PE**.
     1. In the list of report/service types, enable **General Ledger**.
 
-## Print the General Ledger report for Peru
+## Print the general ledger report for Peru
 
 To print the general ledger report for Peru, follow these steps.
 
