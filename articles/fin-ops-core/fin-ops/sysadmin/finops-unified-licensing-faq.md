@@ -103,7 +103,7 @@ Yes. [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.
 
 ## What is "User Security Governance" and when will it be generally available? 
 
-[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance see the [FAQ](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
+[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance see the [FAQ](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
 
 ## How do Finance and Operations administrators view license requirements in Dynamics 365 Lifecycle Services?
 
