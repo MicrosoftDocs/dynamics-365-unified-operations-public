@@ -12,7 +12,7 @@ ms.search.validFrom: 2025-04-18
 ms.dyn365.ops.version: 10.0.44
 ---
 
-# Unified Licensing and Improved User License Validation FAQ
+# User security improvements and Improved User License Validation FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
 
