@@ -4,7 +4,7 @@
 title: Set up job ads in the HR Recruiting app (preview)
 description: This article explains how to set up job ads in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 04/17/2025
 ms.topic: article
 # optional metadata
 
@@ -156,13 +156,25 @@ The business process flow of a job ad has the following stages:
  
 ## Post a new job ad
 
-To post a new job ad, follow these steps.
+To post a new job ad using a recruiting reguest, follow these steps:
+1.	Create recruiting request in D365 Human resources. Learn more at [Recruit job candidates](hr-personnel-recruit). 
+2.	Select **Job Ads** from the left menu pane.
+3.	Choose **+ New**.
+4.	Select a recruiting request. All the information that's added as a part of recruiting request is extracted and displayed in the relevant fields.
+5.	Fill other required field.
+6.	Click **Save**.
+7.	Go to the **Hiring team** tab and add hiring team members.
+8.	Go to the **Hiring process** tab and select a hiring template.
+9.	Go to the **Approvals** tab and (optional) turn on the **Approval required** tab and add approvers.
+10.	Move the business process flow from draft to the next stage. 
 
-1. Select **Job ads**.
-1. Select **New**.
-1. Fill in the required fields.
-1. Select **Save**.
-1. On the **Hiring team** tab, add hiring team members.
-1. On the **Hiring process** tab, select a hiring template.
-1.  If approval is required, on the **Approvals** tab, select **Approval required**, and add approvers.
-1. Go to **Business process flow**, and move the job ad from the **Draft** stage to the next stage.
+To post a new ob ad without a recruiting request, follow these steps:
+1. Select **Job ads** from the left menu pane.
+2. Click **+New**.
+3. Fill in all the required field.
+4. Click **Save**.
+5. Go to the **Hiring team** tab and add hiring team members.
+6. Go to the **Hiring process** tab and pick a hiring template.
+7. Go to the **Approvals** tab and (optional) turn on the **Approval required** tab and add approvers.
+8. Move the business process flow from draft to the next stage.
+
