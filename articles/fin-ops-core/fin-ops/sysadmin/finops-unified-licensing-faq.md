@@ -65,7 +65,7 @@ To ensure that all user license assignments adhere to the licensing requirements
 
 ## Are system admins or other non-business related roles excluded from user license validation?
 
-Users with the Power Platform administrator or Dynamics 365 service administrator role assigned in Microsoft Entra do not require a user license. Additionally, users in the relevant Dynamics 365 Finance and Operations application with the System Administrator role assigned do not require a license to administer the application. For additional information, consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+Users with the Power Platform administrator or Dynamics 365 service administrator role do not require a user license. Additionally, users in the relevant Dynamics 365 Finance and Operations application with the System Administrator role assigned do not require a license to administer the application. Other business roles may require a license defined in the licensing guide. For additional information, consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
 ## Do external users need a license?
 
