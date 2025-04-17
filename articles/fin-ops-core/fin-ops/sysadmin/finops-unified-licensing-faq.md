@@ -53,11 +53,8 @@ The recommended practice is to assign licenses in the [Microsoft 365 admin cente
 The recommended practice is to
 - Assign one Base license per user and assign Attach licenses for any additional workload as needed.
 - Regularly review license assignments to remove unused or misaligned seats.
-    - Run the **Dormant Users – Security Account Report** (available within Dynamics 365 Finance and Operations) to identify users who have not logged in recently. Best practice is to regularly review and clean up access:
-        - Every **30 days** for high-turnover departments or sensitive environments
-        - Every **60 days** as a general hygiene check
-        - Every **180 days** to find long-term dormant accounts
-        - Remove or deprovision licenses for users who no longer need access to the system to reduce unnecessary cost and maintain security compliance.
+    - Run the **Dormant Users – Security Account Report** (available within Dynamics 365 Finance and Operations) to identify users who have not logged in recently. 
+    - Best practice is to regularly review and clean up access and remove or deprovision licenses for users who no longer need access to the system to reduce unnecessary cost and maintain security compliance.
 
 ## What is the best way to prepare for user license validation ahead of August 30, 2025?
 
