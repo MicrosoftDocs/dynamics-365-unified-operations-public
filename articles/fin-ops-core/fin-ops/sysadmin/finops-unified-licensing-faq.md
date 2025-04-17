@@ -44,7 +44,7 @@ Users without the required license (s) will lose access to the application and w
 
 ## What are the recommended practices for Microsoft 365 administrators to assign licenses?
 
-For step-by-step instructions, see: [Assign licenses using the Licenses page](https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#assign-licenses-by-using-the-licenses-page)
+For step-by-step instructions, see: [Assign licenses using the Licenses page](https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#assign-licenses-by-using-the-licenses-page&preserve-view=true)
 
 The recommended practice is to assign licenses in the [Microsoft 365 admin center](https://admin.microsoft.com/) at least 24 hours before the user needs access. This ensures that the license assignment has time to fully propagate across Microsoft systems, including **Dynamics 365**, **Power Platform**, and **Microsoft Entra ID**. Delays in assignment can lead to access or reporting issues. 
 
