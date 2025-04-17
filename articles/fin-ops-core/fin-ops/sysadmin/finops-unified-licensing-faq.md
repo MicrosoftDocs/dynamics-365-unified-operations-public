@@ -29,7 +29,9 @@ To learn more about the licensing model, visit the [Dynamics 365 Licensing Page]
  Two key developments are scheduled for April 30, 2025:
 - Users lacking proper licenses will receive notifications within Dynamics 365 Finance and Operations, directing them to request licensing from their administrator.
 - Administrators will have access to improved license reporting in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), offering comprehensive insights into license usage across all roles.
-No enforcement actions, such as users losing access, are planned for April 30, 2025.
+
+> [!NOTE]
+> No enforcement actions, such as users losing access, are planned for April 30, 2025.
 
 ## When will licenses start getting enforced?
 
