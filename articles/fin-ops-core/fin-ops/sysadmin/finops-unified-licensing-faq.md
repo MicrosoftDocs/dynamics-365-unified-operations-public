@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.44
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article provides answers to the most frequently asked questions about simplified licensing and improved user license validation for Dynamics 365 Finance and Operations apps.
+This article provides answers to the most frequently asked questions about the per user license validation requirements for Dynamics 365 Finance and Operations apps.
 
 ## How can I learn more about the licensing model?
 
