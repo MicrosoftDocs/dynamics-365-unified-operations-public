@@ -100,7 +100,7 @@ The ability to recall a journal in a workflow that has a status of "unrecoverabl
 ### Delete journal lines
 In Dynamics 365 Finance version 10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process, for unposted journals, to be scheduled. This lets users continue other work instead of waiting for the delete processing to complete. 
 
-To quickly delete all journal lines in a journal, go to **Functions** > **Delete journal lines**. This function affects extensions on the **LedgerJournalTrans** table. It's **Delete** method. The set of lines are removed without calling each line's **Delete** method. 
+To quickly delete all journal lines in a journal, go to **Functions** > **Delete journal lines**. This function affects extensions using the **Delete** method on the **LedgerJournalTrans** table. The set of lines are removed without calling each line's **Delete** method. 
 
 >[!Note]
 > Dynamics 365 finance and operations doesn't allow the deletion of posted transactions. 
@@ -116,15 +116,18 @@ Use the Voucher list to select how you want to assign voucher numbers to the loa
 
 The Original voucher number can only be used if the General ledger parameter **Check for voucher used** is set to **Accept duplicates** or **Warn in case of duplicates**.
 
-Example
+#### Example using Load ledger transactions
 The original journal batch number has vouchers GNJL00164 and GNJL001065
-[![Original_journal_batch.](./media/OrigJournal.png](./media/OrigJournal.png)
+
+[![Original journal batch.](./media/Orig-Journal.png)](./media/Orig-Journal.png)
 
 If **Load ledger transactions** is completed using **New voucher number per voucher** the new journal batch has vouchers GNJL001067 and GNJL001068.
-[![New voucher number per voucher.](./media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
+
+[![New voucher number per voucher.](./media/New-Voucher-Number-Per-Voucher.png)](./media/New-Voucher-Number-Per-Voucher.png)
 
 If **Load ledger transactions** is completed using **New voucher number per transaction** the new journal batch has voucher numbers per line, GNJL001069, GNJL001070, GNJL001071, and GNJL001072. This journal batch will not post as is because the vouchers are not balanced. This method could be used if you wish to add offset account types to the vouchers before posting. 
-[![New voucher number per voucher.](./media/NewVoucherPerVoucher.png](./media/NewVoucherPerVoucher.png)
+
+[![New voucher number per transaction.](./media/New-Voucher-Number-Per-Trans.png)](./media/New-Voucher-Number-Per-Trans.png)
 
 Set **Accrued transactions** to Yes to include accrued transactions. 
 
