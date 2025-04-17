@@ -33,7 +33,7 @@ No enforcement actions, such as users losing access, are planned for April 30th.
 
 ## When will licenses start getting enforced?
 
-Starting August 30, 2025, all Dynamics 365 Finance and Operations customers must assign the required user licenses directly through the [Microsoft 365 admin center](http://admin.microsoft.com/) for the following applications:
+Starting August 30, 2025, all Dynamics 365 Finance and Operations customers must assign the required user licenses directly through the [Microsoft 365 admin center](https://admin.microsoft.com/) for the following applications:
 - [Microsoft Dynamics 365 Finance](https://www.microsoft.com/en-us/dynamics-365/products/finance)
 - [Microsoft Dynamics 365 Supply Chain Management](https://www.microsoft.com/en-us/dynamics-365/products/supply-chain-management)
 - [Microsoft Dynamics 365 Commerce](https://www.microsoft.com/en-us/dynamics-365/products/commerce)
@@ -44,9 +44,9 @@ Users without the required license (s) will lose access to the application and w
 
 ## What are the recommended practices for Microsoft 365 administrators to assign licenses?
 
-For step-by-step instructions, see: [Assign licenses using the Licenses page](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#assign-licenses-by-using-the-licenses-page)
+For step-by-step instructions, see: [Assign licenses using the Licenses page](https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#assign-licenses-by-using-the-licenses-page)
 
-The recommended practice is to assign licenses in the [Microsoft 365 admin center](http://admin.microsoft.com/) at least 24 hours before the user needs access. This ensures that the license assignment has time to fully propagate across Microsoft systems, including **Dynamics 365**, **Power Platform**, and **Microsoft Entra ID**. Delays in assignment can lead to access or reporting issues. 
+The recommended practice is to assign licenses in the [Microsoft 365 admin center](https://admin.microsoft.com/) at least 24 hours before the user needs access. This ensures that the license assignment has time to fully propagate across Microsoft systems, including **Dynamics 365**, **Power Platform**, and **Microsoft Entra ID**. Delays in assignment can lead to access or reporting issues. 
 
 The recommended practice is to
 - Assign one Base license per user and assign Attach licenses for any additional workload as needed.
@@ -86,7 +86,7 @@ Administrators can assign and manage Dynamics 365 user licenses in [Microsoft 36
 
 For deeper workload-specific insights:
 
-- [User Security Governance License Usage Summary Report](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) – Available within Finance and Operations, this built-in report maps defined security roles to required license types, allowing administrators to proactively review licensing requirements and optimize user access based on actual security configuration.
+- [User Security Governance License Usage Summary Report](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) – Available within Finance and Operations, this built-in report maps defined security roles to required license types, allowing administrators to proactively review licensing requirements and optimize user access based on actual security configuration.
 - [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations): Offers detailed reporting for license requirements and usage specific to Dynamics 365 Finance and Operations as well as other applications for user role assignments, and operational context, and is primarily designed for managing environments within Power Platform.
 - [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/): Useful for reviewing Finance and Operations environment configuration, project and implementation management.  It also highlights the exact same Dynamics 365 Finance and Operations license consumption and usage as Power Platform admin center.
 
@@ -96,7 +96,7 @@ Yes. [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.
 
 ## What is "User Security Governance" and when will it be generally available? 
 
-[User Security Governance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance please see the [FAQ](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
+[User Security Governance](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It is currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. For more information on User Security Governance please see the [FAQ](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/security-governance-faq) section. 
 
 ## How do Finance and Operations administrators view license requirements in Dynamics 365 Lifecycle Services?
 
@@ -107,19 +107,19 @@ The User Security Governance License usage summary report is the in-product view
 
 ## What is the difference between the Microsoft 365 admin center and the Power Platform admin center? 
 
-**[Microsoft 365 admin center](http://admin.microsoft.com/)** is primarily focused on managing users, licenses, and organizational settings across services like Exchange, Teams, SharePoint, and Dynamics 365. Administrators may assign licenses, configure user accounts via Microsoft Entra ID, and handle tenant-wide security and compliance settings in this platform. 
+**[Microsoft 365 admin center](https://admin.microsoft.com/)** is primarily focused on managing users, licenses, and organizational settings across services like Exchange, Teams, SharePoint, and Dynamics 365. Administrators may assign licenses, configure user accounts via Microsoft Entra ID, and handle tenant-wide security and compliance settings in this platform. 
 
 **[Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/)** is primarily focused on managing environments, storage capacity, analytics, licensing reporting and governance for Power Platform services like Power Apps, Power Automate, Dataverse, and Dynamics 365 Finance & Operations. Admins can monitor usage, manage environments, enforce data policies, and view role-to-license mappings. 
 
 ## Why are we seeing inconsistencies across Microsoft Entra ID (Microsoft 365 admin center) and Power Platform admin center (PPAC) reporting?
 
-Differences between [Microsoft 365 admin center](http://admin.microsoft.com/) and [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting are often due to indirect-based licensing, multiple user accounts, or sync timing delays (which can take up to 72 hours). PPAC only reflects users with individually assigned licenses—indirect assignments won’t appear. If these mismatches are impacting your ability to reconcile license usage or reporting, please open a support case through Support > New service request in either [Microsoft 365 admin center](http://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests) for resolution.
+Differences between [Microsoft 365 admin center](https://admin.microsoft.com/) and [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting are often due to indirect-based licensing, multiple user accounts, or sync timing delays (which can take up to 72 hours). PPAC only reflects users with individually assigned licenses—indirect assignments won’t appear. If these mismatches are impacting your ability to reconcile license usage or reporting, please open a support case through Support > New service request in either [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests) for resolution.
 
 ## How should Microsoft 365 administrators proceed if the users listed in the Microsoft 365 admin center do not match those in the Power Platform admin center reporting?
 
-If the users listed in [Microsoft 365 admin center](http://admin.microsoft.com/) do not match those in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend opening a Microsoft Support case to investigate further. This discrepancy may be caused by sync issues, indirect-based licensing behavior, or backend reporting delays — all of which can be reviewed in a support case.
+If the users listed in [Microsoft 365 admin center](https://admin.microsoft.com/) do not match those in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend opening a Microsoft Support case to investigate further. This discrepancy may be caused by sync issues, indirect-based licensing behavior, or backend reporting delays — all of which can be reviewed in a support case.
 
-Customers can open a support case through the [Microsoft 365 admin center](http://admin.microsoft.com/) under **Support > New service request**, or directly from [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests).
+Customers can open a support case through the [Microsoft 365 admin center](https://admin.microsoft.com/) under **Support > New service request**, or directly from [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests).
 
 ## What is Base 1, Base 2, and Any Base labeling in Power Platform admin center user license level reporting? 
 
@@ -143,7 +143,7 @@ No. Users with full user licenses (e.g., Supply Chain Management, Finance, Human
 
 ## If a user is assigned with “Operations – Activity” license and the actual security role requires a full user license (e.g. Supply Chain Management, Finance, Commerce), will they be restricted from accessing the necessary features?
 
-Yes, users with an **Operations - Activity** license will be restricted if their security role requires a full license. They will need to be assigned in [Microsoft 365 admin center](http://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
+Yes, users with an **Operations - Activity** license will be restricted if their security role requires a full license. They will need to be assigned in [Microsoft 365 admin center](https://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
 
 ## What happens if a user has multiple security roles?
 
@@ -171,4 +171,4 @@ Not initially. User license validation timelines may differ for those environmen
 
 ## Who can I contact for additional help?
 
-Review the latest [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](http://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or Partner for support.
+Review the latest [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or Partner for support.
