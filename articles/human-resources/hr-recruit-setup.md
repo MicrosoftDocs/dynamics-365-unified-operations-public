@@ -4,7 +4,7 @@
 title: Set up the HR Recruiting app (preview)
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2024
+ms.date: 04/17/2025
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
 
@@ -118,6 +118,31 @@ To activate connections and flows for the Recruiting app, follow these steps.
     > [!NOTE]
     > Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
 
+### Recruiting flows
+
+|Name|	Description |
+|Email notification flow 	|The primary process for dispatching email notifications utilizes predefined email templates. Used in different workflows based on the scenario.|
+|Job Ad Approval flow	|Notify approvers via Teams/Outlook for job ad approval.|
+|Job Ad in app approval flow	|Manages in-app approvals and automatically completes the Teams/Outlook workflows if they have already been initiated.|
+|Publish candidate to Dynamics 365 finance and operations	|When **Ready to hire** is clicked, the candidate's details are forwarded to the Dynamics 365 Human Resources.|
+|When a candidate status changes in Dynamics 365 finance and operations	|Syncs candidate status from Dynamics 365 Human Resources back to the recruiting add-on app.|
+|Prospect invite to apply	|When a candidate is added as a prospect and invited to apply, an email notification is sent asking them to apply for the job.|
+|On delete of Aaplicant |	Deletes applicant and clears related Hire table records.|
+|When an applicant is deleted|	Delete candidate information in Dynamics 365 Human Resources when an applicant is removed.|
+|When an application is created	|When an application is created, it triggers the email notification flow to send a confirmation email to the candidate.|
+|When an application is rejected or withdrawn|	When an application is either rejected or withdrawn, the email notification flow is triggered to inform the candidate of their application status.|
+|Portal create attachments in note table|	This process is initiated when a resume is attached to create a record in the note table. It is used in the recruitment add-on.|
+|Portal create candidate flow|	When users sign up, the flow creates a record in the candidate table, and their personal information is populated based on that.|
+|Portal update candidate type|	This process identifies whether a candidate is external or internal at sign-in and updates the candidate type column accordingly.|
+|Portal update contact from candidate	|This flow updates the contact table when the first name, last name, middle name, and email fields in the candidate table are filled.|
+|Post adaptive card flow	|This flow allows panel members to select and submit their preferred slots for interview scheduling.|
+|Retrieve feature control setting	|This flow retrieves the feature control value using the namespace and feature control name.|
+|Resume parse flow	|Upon uploading a resume, the flow triggers a plugin that parses the resume and returns parsed data to populate candidate details automatically on the pages.|
+|Pass Panel time slots|	This flow tracks the slots chosen for different panel members for a job.|
+|Send meeting invite|	The flow is utilized to send meeting invitations to candidates and interviewers.|
+|Create intermediate table candidatae slots	|This is used to monitor the slots that are sent to candidates.|
+|Email lots to candidate and send to plugin|	To send email with options to candidates|
+
 ## Activate the careers site
 
 **Prerequisite:** The Recruiting add-on app must be installed in Dataverse.
@@ -135,6 +160,13 @@ To activate the careers site, follow these steps.
 
     > [!NOTE]
     > To ensure that future updates can be installed, don't modify the input of the **Reactivated website** field.
+6. Click on **Edit**, **Set up** > **Cloud flows**.
+7. An error message is displayed: "One or more cloud flows are not registered for your site. Click the icon for each flow to register them."
+8. Click the icon to register both the flows.
+9. Click **Pages** from left pane.
+10. In other pages, you see duplicate **Screening questions**. Delete one of them.
+11. Click **Sync**. 
+
 
 Site activation might take up to 10 minutes. After the site activated, it's available on the **Active sites** tab.
 
