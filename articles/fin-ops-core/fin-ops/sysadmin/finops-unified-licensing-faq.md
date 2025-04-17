@@ -18,6 +18,10 @@ ms.dyn365.ops.version: 10.0.44
 
 This article addresses the most common questions about per‑user license validations and focuses specifically on answering questions regarding license requirements for Dynamics 365 Finance and Operations apps.
 
+On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Starting April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. For users that have not yet been assigned a license, they will start to see an in-product notification asking them to contact their administrator to request license assignment.
+
+**Beginning August 30, 2025** users will require an assigned license to access the Dynamics 365 finance and operations applications. We are giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
+
 ## How can I learn more about the licensing model?
 
 To learn more about the licensing model, visit the [Dynamics 365 Licensing Page](/Licensing/product-licensing/dynamics365) to find comprehensive resources, including the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) or reach out to your Microsoft account team or your implementation partner for support. 
