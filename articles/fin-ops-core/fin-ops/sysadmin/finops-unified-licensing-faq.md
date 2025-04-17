@@ -162,9 +162,9 @@ Yes. If the user is not assigned to the correct license(s), he/she will be notif
 
 When purchasing multiple Dynamics 365 applications for a single user, the first application license must be the highest priced license. For detailed information and combinations, refer to the [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) for the base applications and their qualifying products for attach licensing.
 
-## If user has custom security roles, how will this be enforced?
+## If user has custom security roles, how does per user license validation work?
 
-All users and security roles are enforced. When using custom security roles, respective duties and privileges that comprise these roles will determine the licensing requirements. 
+All users and security roles are validated for each user. When using custom security roles, respective duties and privileges that comprise these roles will determine the licensing requirements. 
 
 ## How do I determine the right license from Power Platform admin center reporting?
 
