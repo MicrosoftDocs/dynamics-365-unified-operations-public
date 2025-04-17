@@ -35,7 +35,7 @@ This section contains a table that lists the features that are included in this 
 |Asset leasing |Ability to assign sales tax group and item tax group on the asset lease |This feature introduces **Sales tax group** and **Item sales tax group** fields in the lease/lease book. When a lease book is marked as **Pay to vendor**, these defined values are automatically copied to the vendor invoice journal created from the payment schedule. If a vendor or main account already specifies a sales tax group or item sales tax group, the system defaults to those; otherwise, it applies the default values defined on the lease.| Feature management |
 |Asset leasing | Add cancel option to the lease termination |The **Lease termination proposal cancellation** feature adds a **Cancel** option, allowing users to revoke termination proposals. When triggered, the **Proposal status** updates to **Canceled** and resets the lease book, enhancing flexibility and ensuring accurate, controlled lease management.| Feature management |
 |General ledger| Year-end close job status verification |To ensure a year-end close job is truly running and not stuck in an error state from a batch crash or restart, a batch job is add to the Ledger fiscal close service history table. This allows us to verify if the batch job is active and safely reset its status when needed.| Feature management |
-
+|General ledger | Review missing settlement accounts |This page displays any ledger accounts that have ledger settlements but are missing from the Ledger settlement page in General ledger parameters. Learn more at [Ledger settlements](general-ledger/ledger-settlements.md). | Default |
 
 
 
