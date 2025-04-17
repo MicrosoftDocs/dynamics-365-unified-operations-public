@@ -134,9 +134,7 @@ In Dynamics 365 Finance and Operations apps, users are assigned to security role
 
 
 - **Base 1**: Refers to users assigned a core full user license for one of the following Finance and Operations apps (Commerce, Finance, Supply Chain Management).
-
 - **Base 2**: Refers to users assigned a core full license for one following Finance and Operations apps (Human Resources, Project Operations)
-
 - **Any Base** is a roll-up category used in PPAC reporting to indicate that a user needs at least one Base license within a specific Base group—either **Base 1** or **Base 2**.
 - 
     - **Any Base** within **Base 1**: If a user has roles that require Commerce, Finance, or Supply Chain Management, they will appear under **Any Base** — meaning any one of those **Base 1** licenses would satisfy the required license for that user.
