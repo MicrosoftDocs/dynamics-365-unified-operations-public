@@ -27,7 +27,7 @@ To learn more about the licensing model, visit the [Dynamics 365 Licensing Page]
 ## What is changing on April 30, 2025?
 
  Two key developments are scheduled for April 30, 2025:
-- Users lacking proper licenses will receive notifications within Dynamics 365 Finance and Operations (F&O), directing them to request licensing from their administrator.
+- Users lacking proper licenses will receive notifications within Dynamics 365 Finance and Operations, directing them to request licensing from their administrator.
 - Administrators will have access to improved license reporting in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), offering comprehensive insights into license usage across all roles.
 No enforcement actions, such as users losing access, are planned for April 30, 2025.
 
@@ -68,7 +68,7 @@ To ensure that all user license assignments adhere to the licensing requirements
 
 ## Are system admin related roles included in user license validation?
 
-Users with the Power Platform administrator or Dynamics 365 service administrator role don’t require a license in F&O. For individual user license requirements, consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+Users with the Power Platform administrator or Dynamics 365 service administrator role do not require a license in Finance and Operations apps. For individual user license requirements, consult the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
 ## Do external users need a license?
 No. External users, such as suppliers accessing vendor portals, don’t require a license to access the application. External users accessing the application indirectly through third-party system or interface must be appropriately licensed. For more information on the requirements and what constitutes an external user, refer to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
