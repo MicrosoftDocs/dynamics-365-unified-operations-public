@@ -41,8 +41,8 @@ Before you can print an electronic general ledger report for Peru, the following
     1. In the **Data model definition** field, select MagneticGeneralLedger.
     1. In the **Format mapping** field, select Electronic General Ledger Peru.
     1. In the list of report/service types, enable **General Ledger**.
-    1. In the list of parameters, in the **Name** column, add "TaxApplicationId".
-    1. In the list of parameters, in the **Value** column, add the tax application code.
+    1. In the list of parameters, in the **Name** column, enter "TaxApplicationId".
+    1. In the list of parameters, in the **Value** column, enter the tax application code.
 
 ## Print the ledger posting report for Peru
 
