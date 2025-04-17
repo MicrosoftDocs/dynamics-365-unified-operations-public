@@ -137,10 +137,10 @@ In Dynamics 365 Finance and Operations apps, users are assigned to security role
 - **Base 2**: Refers to users assigned a core full license for one following Finance and Operations apps (Human Resources, Project Operations)
 - **Any Base** is a roll-up category used in PPAC reporting to indicate that a user needs at least one Base license within a specific Base group—either **Base 1** or **Base 2**.
 - 
-    - **Any Base** within **Base 1**: If a user has roles that require Commerce, Finance, or Supply Chain Management, they will appear under **Any Base** — meaning any one of those **Base 1** licenses would satisfy the required license for that user.
-    - **Any Base** within **Base 2**: If a user has roles that require Human Resources or Project Operations, they will appear under **Any Base** — meaning any one of those **Base 2** licenses would satisfy the required license for that user. 
+    - **Any Base** within **Base 1**: If a user has roles that require **Commerce**, or **Finance**, or **Supply Chain Management**, they will appear under **Any Base** — meaning any one of those **Base 1** licenses would satisfy the required license for that user.
+    - **Any Base** within **Base 2**: If a user has roles that require **Human Resources** or **Project Operations**, they will appear under **Any Base** — meaning any one of those **Base 2** licenses would satisfy the required license for that user. 
 
-This categorization helps summarize where a Base license is needed without specifying the exact SKU, while still respecting the separation between **Base 1** and **Base 2** license families.
+This categorization helps summarize where a Base license is needed without specifying the exact product, while still capturing the separation between **Base 1** and **Base 2** license families.
 
 ## Do users with full user licenses (for example, Supply Chain Management) need a Team Members license to view cross-workload forms or tables? In other words, is a Team Member license required if users already have a Base Supply Chain Management license?
 
