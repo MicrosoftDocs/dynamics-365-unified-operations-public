@@ -28,6 +28,7 @@ This section contains a table that lists the features that are included in this 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System Administration | User security governance | User security governance includes advanced features that provide useful tools for System Administrators. These tools help in creating a security architecture that aligns closely with business processes. They also assist with role management, license auditing, enhanced role audit trails, and security configuration versioning. Additionally, they manage privileged users and temporary role assignments. Some useful reports around license usage for cost optimization, users' activity and licenses consumption, segregation of duties violations, etc. are included. For more information, see [Security governance](https://go.microsoft.com/fwlink/?linkid=2285853) | Feature Management|
+| Web client | Upgrade of the HTML control | This feature upgrades the version of CKEditor used by the HTML editor control in finance and operations applications to version 5 (from version 4), aligning to the version used in other Dynamics 365 products. The feature is scheduled to transition to on-by-default with the 10.0.44 release and become mandatory with the 10.0.45 release. | Feature management |
 
 ## Feature enhancements included in this release
 
