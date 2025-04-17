@@ -18,7 +18,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 [!include [banner](../includes/banner.md)]
 
-This article describes capabilities that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
+This article describes capabilities that can help make general journal processing easier. It can also help ensure that correct data is captured and internal control isn't compromised.  
 
 ## Journal names
 
@@ -47,7 +47,7 @@ The Microsoft Excel add-in for journal entry provides an additional level of aut
 
 On the **Periodic journals** page, you can set up recurring journals to automate journal processing. 
 
-You can use voucher templates at any time. On the **General journals** page, select a **Journal voucher** page, the **Save** and **Select voucher template** actions are available under **Functions** for the voucher lines.
+You can use voucher templates at any time. On the **General journals** page, select a **Journal voucher** page, the **Save**, and **Select voucher template** actions are available under **Functions** for the voucher lines.
 
 ### Related setup
 The following setup isn't specific to general journals, but helps ensure that data entry is correct data and easy.
@@ -57,21 +57,20 @@ The following setup isn't specific to general journals, but helps ensure that da
 The main account setup provides many options for general journal processing:
 
 -   **DC/CR requirement** – Use this option if a main account is limited to debit or credit transactions. The setup is verified when a journal is validated or posted.
-
 -   **Default offset account**
 -   **Suspended** – Suspend a main account for data entry across all companies or for a specific company/legal entity.
 -   **Do not allow manual entry** – Prevent users from manually entering a value for the account in journals.
 -   **Default/Validate currency**
 -   **Legal entity override** – This setup is specific to the defined company/legal entity:
     -   **Default/Validate sales tax**
-    -   **Default dimension** – **Not fixed** or **Fixed value**. **Fixed value** will help ensure that all postings for this main account always use any dimension value that is set up as **Fixed**.
+    -   **Default dimension** – **Not fixed** or **Fixed value**. **Fixed value** helps ensure that all postings for this main account always use any dimension value that is set up as **Fixed**.
 -   **Posting validation**
     -   **User validation** – This option controls which users are allowed to post to a main account.
     -   **Posting type validation** – This option controls which posting types are allowed for a main account.
 
 ### Accounting structures and advanced rules structures
 
-Accounting structures and advanced rules structures are extremely important for ensuring that the data that is required for financial reporting and performance tracking is captured during general journal processing and any documentation. Accounting structures and advanced rules structures let you tailor the data entry experience. You can allow data entry only for financial dimensions that are relevant in each situation, and can also enforce the requirement that required and accurate data always be captured.
+Accounting structures and advanced rules structures are important for ensuring that the data that is required for financial reporting and performance tracking is captured during general journal processing and any documentation. Accounting structures and advanced rules structures let you tailor the data entry experience. You can allow data entry only for financial dimensions that are relevant in each situation, and can also enforce the requirement that required and accurate data always be captured.
 
 For more information, see the following topics:
 - [Plan your chart of accounts](plan-chart-of-accounts.md) 
@@ -82,17 +81,17 @@ For more information, see the following topics:
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
 ### Global general journals
-The **Global general journal** allows entry of a journal into any legal entities defined in your environment without having to switch companies before creating the journal. At the top of the **Global general journal** page, the **New journal** button allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the created journal will open the standard journal lines page that is the same as opening it from the **General journal** page.  
+The **Global general journal** allows entry of a journal into any legal entities defined in your environment without having to switch companies before creating the journal. At the top of the **Global general journal** page, the **New journal** button allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the created journal opens the standard journal lines page that is the same as opening it from the **General journal** page.  
 >[!NOTE] 
->In Dynamics 365 Finance release 10.0.34, a new feature **Enable the Global general journal page to select multiple companies for posting** allows the selecting of mulitple journals for posting across any legal entities. The posting process will create a single batch job per each legal entity to complete the posting. 
+>In Dynamics 365 Finance release 10.0.34, a new feature **Enable the Global general journal page to select multiple companies for posting** allows the selecting of multiple journals for posting across any legal entities. The posting process creates a single batch job per each legal entity to complete the posting. 
 
 ### Simulate posting
 You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the journal is tested for specific error conditions. If you use the **Simulate posting** function, all of the same processes that are run during posting are run without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal. 
 
-**Simulate posting** isn't available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
+**Simulate posting** isn't available for batch processing. However, there's code available to simulate posting in batch and developers can extend the code to add that functionality.  
 
 ### Journal unlock
-A button is available on the journal page to unlock a journal that has a status of "locked by system" set to **Yes**. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal unlock button** on the **Feature management** page. 
+A button is available on the journal page to unlock a journal that has a status of "locked by system" set to **Yes**. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the **Journal unlock button** feature on the **Feature management** page. 
 
 ### Workflow recall 
 The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the **Resetting the workflow status for journals** feature on the **Feature management** page.
@@ -122,7 +121,7 @@ The **Original voucher number** can only be used if the General ledger parameter
 
 #### Example
 
-The following example using the **Load ledger transactions**. 
+The following example uses the **Load ledger transactions** feature. 
 
 1. The original journal batch number has vouchers GNJL00164 and GNJL001065.
 
