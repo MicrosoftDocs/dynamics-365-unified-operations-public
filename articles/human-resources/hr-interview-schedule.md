@@ -75,7 +75,7 @@ After the booking is submitted, the slot status is updated to **Confirmed**.
 1. Select **New**.
 1. Select the job ad that the interview must be scheduled for.
 
-    All the hiring members are shown as a panel members.
+    All the hiring members are shown as panel members.
 
 1. Select one or more panel members.
 1. Select **Find slots**.
