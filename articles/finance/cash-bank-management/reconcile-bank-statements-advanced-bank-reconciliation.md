@@ -24,7 +24,8 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 > Some of the functionality that this article describes applies only when the **Modern bank reconciliation** feature is turned off. If the feature is turned on, the process flow is different, and the following extra functionality is available:
 >
 > - Bank statement validation and confirmation.
-> - Improvements to bank reconciliation matching rules. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), and [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
+> - Improvements to bank reconciliation matching rules. 
+For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md), [Clear reversal bank statement transactions](clear-reverse-bank-stmt-trx.md), [Clear reversal company transactions](clear-reverse-comp-trans.md), [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md) and [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md).
 > - Customer and vendor journal posting directly from the bank reconciliation worksheet. For more information, see [Cash application in advanced bank reconciliation](apply-cash-adv-bank-rec.md).
 > - Generation of general ledger vouchers directly from the bank reconciliation worksheet. For more information, see [Generate a voucher in advanced bank reconciliation](vouchers-adv-bank-rec.md).
 
