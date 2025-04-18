@@ -23,9 +23,9 @@ In Japan, consolidated invoices can be enabled to fit the Japanese business prac
 
 The following procedures walk you through how to set up and configure consolidated invoice functionality. The procedures ere created using the demo data company JPMF.
 
-## Configure Accounts payable parameters for consolidated invoices
+## Configure accounts payable parameters for consolidated invoices
 
-To Configure accounts payable parameters for consolidated invoices, follow these steps.
+To configure accounts payable parameters for consolidated invoices, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Accounts payable parameters**.
 1. Expand the **Vendor** section.
