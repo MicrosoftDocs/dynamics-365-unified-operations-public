@@ -577,6 +577,10 @@ items:
               href: hr-recruit-applicant.md 
             - name: Set up panel members in the HR Recruiting app
               href: hr-recruit-panel.md
+          - name: Upload resumes
+            items:
+            - name: Bulk upload resumes
+              href: bulk-resume-upload.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
