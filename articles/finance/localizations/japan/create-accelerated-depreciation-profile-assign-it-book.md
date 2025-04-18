@@ -27,12 +27,12 @@ Before you complete the procedures, you must first select the **Fixed Asset** co
 
 ## Create a depreciation profile
 
-To , follow these steps.
+To create a depreciation profile, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
 1. Select **New**.
 1. In the **Depreciation profile** field, enter a value.
-1. Note the **Depreciation profile** value to reference later
+1. Note the **Depreciation profile** value to reference later.
 1. In the **Name** field, enter a value.
 1. In the **Method** field, select "Accelerated".
 1. Select **Save**.
