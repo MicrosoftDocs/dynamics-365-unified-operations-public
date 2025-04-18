@@ -35,7 +35,11 @@ This section contains a table that lists the features that are included in this 
 |Asset leasing |Ability to assign sales tax group and item tax group on the asset lease |This feature introduces **Sales tax group** and **Item sales tax group** fields in the lease/lease book. When a lease book is marked as **Pay to vendor**, these defined values are automatically copied to the vendor invoice journal created from the payment schedule. If a vendor or main account already specifies a sales tax group or item sales tax group, the system defaults to those; otherwise, it applies the default values defined on the lease.| Feature management |
 |Asset leasing | Add cancel option to the lease termination |The **Lease termination proposal cancellation** feature adds a **Cancel** option, allowing users to revoke termination proposals. When triggered, the **Proposal status** updates to **Canceled** and resets the lease book, enhancing flexibility and ensuring accurate, controlled lease management.| Feature management |
 |General ledger| Year-end close job status verification |To ensure a year-end close job is truly running and not stuck in an error state from a batch crash or restart, a batch job is add to the Ledger fiscal close service history table. This allows us to verify if the batch job is active and safely reset its status when needed.| Feature management |
-|General ledger | Review missing settlement accounts |This page displays any ledger accounts that have ledger settlements but are missing from the Ledger settlement page in General ledger parameters. Learn more at [Ledger settlements](general-ledger/ledger-settlements.md). | Default |
+|General ledger | Review missing settlement accounts |This page displays any ledger accounts that have ledger settlements but are missing from the Ledger settlement page in General ledger parameters. Learn more at [Ledger settlements](../general-ledger/ledger-settlements.md). | Default |
+| Cash and bank management | **Bank transactions** page performance improvement | This feature introduces performance enhancements on the **Bank transactions** page. The introduced changes allow users to optionally set default filters to show only transactions meeting the criteria. By enabling this feature, users are able to access the bank documents form directly from the **Bank account** page. | Feature management | 
+| Cash and bank management | Enable process automation for bank foreign currency revaluation | By enabling this feature, users are able to run bank foreign currency revaluation using process automation. | Feature management |  
+| Cash and bank management | Accounts payable enable settle with priority | This feature enhances the Accounts payable module by introducing settlement priority. It allows users to assign a predetermined order to transactions, which can be applied during both manual and automatic settlements. | Feature management | 
+ 
 
 
 
@@ -45,6 +49,8 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Cash and bank management | Modern bank reconciliation | To prevent the import of duplicate bank statements, we check for a combination of AccountNo, StatementID, FromDate, and ToDate. If these elements match an existing bank statement, it is considered a duplicate and isn't imported. This ensures that each bank statement file is unique and avoids redundancy. | Default |
+| Cash and bank management | Customer and vendor netting | The **Netting history** feature provides a comprehensive overview of all netted transactions between customer and vendor pairs, ensuring transparency and ease of tracking. | Feature management |
 
 
 ## Features turned on by default in this release
