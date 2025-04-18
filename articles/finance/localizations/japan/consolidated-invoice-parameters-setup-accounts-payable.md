@@ -4,7 +4,7 @@ description: Learn how to set up and configure consolidated invoices for Japan i
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 04/17/2025
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
