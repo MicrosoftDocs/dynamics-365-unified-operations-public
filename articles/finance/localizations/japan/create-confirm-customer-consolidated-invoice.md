@@ -4,7 +4,7 @@ description: Learn how to consolidate customer invoices each month to calculate 
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 04/17/2025
+ms.date: 04/18/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak   
