@@ -80,7 +80,7 @@ To install the Recruiting add-on app for the first time, follow these steps.
 
 1. Sign in to [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcmrecruiting-preview?flightCodes=4b09efddad8943cb82af3713c574a021) as an admin.
 2. Select **Dynamics 365 Human Resources recruiting add-on**, and then select **Get it now**.
-3. Select **Environments**, and then search for and select your environment.
+3. Select **Environments** and then search for and select your environment.
 4. Select the checkboxes to agree to the privacy statement and legal terms.
 5. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 6. Select your environment, and then select the mandatory checkboxes.
@@ -110,7 +110,7 @@ To activate connections and flows for the Recruiting app, follow these steps.
     - **Recruiting approvals connection:** Add the **Approvals** connector.
     - **Recruiting dataverse connection:** Add the **Microsoft Dataverse** connector.
 
-8. Go to **Solutions**, and select the **Managed** solution.
+8. Go to **Solutions** and select the **Managed** solution.
 9. Select **HCM recruiting flows**.
 10. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
 11. Repeat steps 8 through 10 for **HCM Recruiting**.
@@ -128,7 +128,7 @@ To activate connections and flows for the Recruiting app, follow these steps.
 |Publish candidate to Dynamics 365 finance and operations	|When **Ready to hire** is clicked, the candidate's details are forwarded to the Dynamics 365 Human Resources.|
 |When a candidate status changes in Dynamics 365 finance and operations	|Syncs candidate status from Dynamics 365 Human Resources back to the recruiting add-on app.|
 |Prospect invite to apply	|When a candidate is added as a prospect and invited to apply, an email notification is sent asking them to apply for the job.|
-|On delete of Aaplicant |	Deletes applicant and clears related Hire table records.|
+|On delete of Applicant |	Deletes applicant and clears related Hire table records.|
 |When an applicant is deleted|	Delete candidate information in Dynamics 365 Human Resources when an applicant is removed.|
 |When an application is created	|When an application is created, it triggers the email notification flow to send a confirmation email to the candidate.|
 |When an application is rejected or withdrawn|	When an application is either rejected or withdrawn, the email notification flow is triggered to inform the candidate of their application status.|
@@ -141,7 +141,7 @@ To activate connections and flows for the Recruiting app, follow these steps.
 |Resume parse flow	|Upon uploading a resume, the flow triggers a plugin that parses the resume and returns parsed data to populate candidate details automatically on the pages.|
 |Pass Panel time slots|	This flow tracks the slots chosen for different panel members for a job.|
 |Send meeting invite|	The flow is utilized to send meeting invitations to candidates and interviewers.|
-|Create intermediate table candidatae slots	|This is used to monitor the slots that are sent to candidates.|
+|Create intermediate table candidate slots	|This is used to monitor the slots that are sent to candidates.|
 |Email lots to candidate and send to plugin|	To send email with options to candidates|
 
 ## Activate the careers site
