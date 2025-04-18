@@ -55,10 +55,10 @@ You will also find the following sections.
 ```xml
 <Section Name="OfficeApps">
     <Parameter Name="AppInsightsKey" Value="" />
-    <Parameter Name="AuthClientId" Value="d8230a86-015d-4c14-bcd6-c7fb65176b16" />
+    <Parameter Name="AuthClientId" Value="00001111-aaaa-2222-bbbb-3333cccc4444" />
 </Section>
 <Section Name="OpenIDConnect">
-    <Parameter Name="ClientID" Value="d8230a86-015d-4c14-bcd6-c7fb65176b16" />
+    <Parameter Name="ClientID" Value="00001111-aaaa-2222-bbbb-3333cccc4444" />
     <Parameter Name="Metadata" Value="https://ADFS.contoso.com/adfs/.well-known/openid-configuration" />
 </Section>
 <Section Name="Provisioning">
