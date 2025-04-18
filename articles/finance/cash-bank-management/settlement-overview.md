@@ -1,10 +1,10 @@
 ---
 title: Settlement overview
 description: Learn about the settlement process, including outliens about transaction types that can be settled and the timing and process for settling them.
-author: twheeloc
-ms.author: twheeloc
+author: music727
+ms.author: mibeinar
 ms.topic: overview
-ms.date: 05/06/2024
+ms.date: 04/18/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
