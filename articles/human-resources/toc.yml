@@ -581,6 +581,10 @@ items:
             items:
             - name: Set up interview schedules
               href: hr-interview-schedule.md
+          - name: Upload resumes
+            items:
+            - name: Bulk upload resumes
+              href: bulk-resume-upload.md
     - name: Time and attendance
       items:
       - name: Time and attendance information

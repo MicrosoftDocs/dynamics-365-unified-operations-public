@@ -2460,6 +2460,12 @@
                   items: 
                   - name: Configure sales and purchase invoices for Dominican Republic
                     href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
+                  - name: Configure printing for Goods and Services Purchases Submission Form 606
+                    href: localizations/iberoamerica/ltm-Configure-Dom-PurchaseForm606.md
+                  - name: Configure printing for Goods and Services sales Submission Form 607
+                    href: localizations/iberoamerica/ltm-Configure-Dom-SalesForm607.md
+                  - name: Configure printing for Cancelled Tax Receipts Submission Form 608
+                    href: localizations/iberoamerica/ltm-Configure-Dom-CancelledTaxReceiptsForm606.md
                   - name: Create customer and vendor records with an address in Dominican Republic
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-dominican-republic.md
                   - name: Setup a legal entity and tax information for Dominican Republic
@@ -3788,12 +3794,20 @@
                           href: localizations/poland/emea-pol-vdek-reporting.md
                         - name: Details of specific business scenarios in the JPK-V7 report
                           href: localizations/poland/emea-pol-vdek-scenarios.md
+                    - name: SAF Accounting Books Income Tax - JPK_KR_PD
+                      items:
+                        - name: SAF Accounting Books Income Tax - JPK_KR_PD overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
+                        - name: Prepare for JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-setup.md
+                        - name: JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-reporting.md
+                        - name: Implementation details of JPK_KR_PD reporting
+                          href: localizations/poland/emea-pol-saf-pd-implementation-details.md
                     - name: Standard audit file (JPK)
                       items:
                         - name: Standard audit file (JPK) overview
                           href: localizations/poland/emea-pol-standard-audit-file-saf.md
-                        - name: SAF Accounting Books Income Tax - JPK_KR_PD
-                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
                         - name: SAF Bank statement file - JPK_WB
                           href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
                         - name: SAF Inventory file - JPK_MAG

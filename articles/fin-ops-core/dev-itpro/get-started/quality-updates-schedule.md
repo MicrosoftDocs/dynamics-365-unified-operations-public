@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 03/24/2025
+ms.date: 04/14/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -181,15 +181,15 @@ The following table shows the high-level train schedule. It includes a descripti
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-1 train schedule
 
-**App version: 10.0.2177.77**
+**App version: 10.0.2177.83**
 
-**Platform version: 7.0.7521.136**
+**Platform version: 7.0.7521.156**
 
-**Unified Environment Provisioning Application Version: 10.0.43.3**
+**Unified Environment Provisioning Application Version: 10.0.43.5**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | April 14 to April 17, 2025 | NA |
+| Station 1 | April 17 to April 17, 2025 | NA |
 | Station 2 | April 21 to April 24, 2025 | May 3 to May 4, 2025 |
 | Station 3 | April 22 to April 25, 2025 | May 3 to May 4, 2025 |
 | Station 4 | April 28 to May 1, 2025 | May 10 to May 11, 2025 |
