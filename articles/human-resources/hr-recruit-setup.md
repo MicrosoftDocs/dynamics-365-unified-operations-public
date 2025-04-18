@@ -123,12 +123,12 @@ To activate connections and flows for the Recruiting app, follow these steps.
 |Name|	Description |
 |-----|--------|
 |Email notification flow 	|The primary process for dispatching email notifications utilizes predefined email templates. Used in different workflows based on the scenario.|
-|Job Ad Approval flow	|Notify approvers via Teams/Outlook for job ad approval.|
-|Job Ad in app approval flow	|Manages in-app approvals and automatically completes the Teams/Outlook workflows if they have already been initiated.|
+|Job ad approval flow	|Notify approvers via Teams/Outlook for job ad approval.|
+|Job ad in app approval flow	|Manages in-app approvals and automatically completes the Teams or Outlook workflows if they have already been initiated.|
 |Publish candidate to Dynamics 365 finance and operations	|When **Ready to hire** is clicked, the candidate's details are forwarded to the Dynamics 365 Human Resources.|
 |When a candidate status changes in Dynamics 365 finance and operations	|Syncs candidate status from Dynamics 365 Human Resources back to the recruiting add-on app.|
 |Prospect invite to apply	|When a candidate is added as a prospect and invited to apply, an email notification is sent asking them to apply for the job.|
-|On delete of Applicant |	Deletes applicant and clears related Hire table records.|
+|On delete of applicant |	Deletes applicant and clears related Hire table records.|
 |When an applicant is deleted|	Delete candidate information in Dynamics 365 Human Resources when an applicant is removed.|
 |When an application is created	|When an application is created, it triggers the email notification flow to send a confirmation email to the candidate.|
 |When an application is rejected or withdrawn|	When an application is either rejected or withdrawn, the email notification flow is triggered to inform the candidate of their application status.|
@@ -138,11 +138,11 @@ To activate connections and flows for the Recruiting app, follow these steps.
 |Portal update contact from candidate	|This flow updates the contact table when the first name, last name, middle name, and email fields in the candidate table are filled.|
 |Post adaptive card flow	|This flow allows panel members to select and submit their preferred slots for interview scheduling.|
 |Retrieve feature control setting	|This flow retrieves the feature control value using the namespace and feature control name.|
-|Resume parse flow	|Upon uploading a resume, the flow triggers a plugin that parses the resume and returns parsed data to populate candidate details automatically on the pages.|
-|Pass Panel time slots|	This flow tracks the slots chosen for different panel members for a job.|
-|Send meeting invite|	The flow is utilized to send meeting invitations to candidates and interviewers.|
-|Create intermediate table candidate slots	|This is used to monitor the slots that are sent to candidates.|
-|Email lots to candidate and send to plugin|	To send email with options to candidates|
+|Resume parse flow	|Upon uploading a resume, the flow triggers a plugin that parses the resume and returns parsed data to populate candidate details automatically.|
+|Pass panel time slots|	Tracks the slots chosen for different panel members for a job.|
+|Send meeting invite|	Sends meeting invitations to candidates and interviewers.|
+|Create intermediate table candidate slots	| Monitors the slots that are sent to candidates.|
+|Email lots to candidate and send to plugin|	Send email with options to candidates.|
 
 ## Activate the careers site
 
