@@ -103,7 +103,7 @@ Yes. [Power Platform admin center](https://admin.powerplatform.microsoft.com/bil
 
 ## How do finance and operations apps administrators view license requirements in Lifecycle Services?
 
-[Lifecycle Services](https://lcs.dynamics.com/) dashboards display which users are correctly licensed and highlight any discrepancies for administrators. Beginning April 30, 2025 [Lifecycle Services)](https://lcs.dynamics.com/) will have licensing reporting identical to [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
+[Lifecycle Services](https://lcs.dynamics.com/) dashboards display which users are correctly licensed and highlight any discrepancies for administrators. Beginning April 30, 2025 [Lifecycle Services](https://lcs.dynamics.com/) will have licensing reporting identical to [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
 ## How can finance and operations apps administrators check the right level of license required?
 
