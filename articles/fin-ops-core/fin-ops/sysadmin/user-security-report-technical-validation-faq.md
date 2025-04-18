@@ -27,7 +27,7 @@ On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics
 
 ## How can I learn more about the licensing model?
 
-To learn more about the licensing model, visit the [Dynamics 365 Licensing Page](/Licensing/product-licensing/dynamics365) to find comprehensive resources, including the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) or reach out to your Microsoft account team or your implementation partner for support. 
+To learn more about the licensing model, visit the [Dynamics 365 Licensing Page](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365) to find comprehensive resources, including the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233) or reach out to your Microsoft account team or your implementation partner for support. 
 
 ## What is changing on April 30, 2025?
 
@@ -51,7 +51,7 @@ Users without the required licenses will lose access to the application and are 
 
 ## What are the recommended practices for Microsoft 365 administrators to assign licenses?
 
-For step-by-step instructions, see: [Assign licenses using the Licenses page](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#assign-licenses-by-using-the-licenses-page).
+For step-by-step instructions, see: [Assign licenses using the Licenses page](/microsoft-365/admin/manage/assign-licenses-to-users#assign-licenses-by-using-the-licenses-page).
 
 The recommended practice is to assign licenses in the [Microsoft 365 admin center](https://admin.microsoft.com/) at least 24 hours before the user needs access. This ensures that the license assignment has time to fully propagate across Microsoft systems, including **Dynamics 365**, **Power Platform**, and **Microsoft Entra ID**. Delays in assignment can lead to access or reporting issues. 
 
