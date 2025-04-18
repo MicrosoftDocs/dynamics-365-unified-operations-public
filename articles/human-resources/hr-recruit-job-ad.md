@@ -157,7 +157,7 @@ The business process flow of a job ad has the following stages:
 ## Post a new job ad
 
 To post a new job ad using a recruiting reguest, follow these steps:
-1.	Create recruiting request in D365 Human resources. Learn more at [Recruit job candidates](hr-personnel-recruit). 
+1.	Create recruiting request in Dynamics 365 Human resources. Learn more at [Recruit job candidates](hr-personnel-recruit.md). 
 2.	Select **Job Ads** from the left menu pane.
 3.	Choose **+ New**.
 4.	Select a recruiting request. All the information that's added as a part of recruiting request is extracted and displayed in the relevant fields.
