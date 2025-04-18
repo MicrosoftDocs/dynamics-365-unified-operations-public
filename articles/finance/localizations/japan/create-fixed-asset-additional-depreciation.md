@@ -25,7 +25,7 @@ The following procedure walks you through how to create a fixed asset with addit
 
 Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
-## Create a fixed assset and assign an additional depreciation profile to it
+## Create a fixed asset and assign an additional depreciation profile to it
 
 To create a fixed assset and assign an additional depreciation profile to it, follow these steps.
 
