@@ -1,107 +1,94 @@
 ---
 title: Define asset idle period and validate depreciation process
-description: Learn how to define fixed asset idle period, including step-by-step processes for assigning number sequences and assigning idle periods.
+description: Learn how to define the fixed asset idle period and validate depreciation process for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetParameters, AssetIdlePeriodAssign_JP, AssetTable, AssetBook, AssetIdlePeriodUpdate_JP, AssetProfile, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Define asset idle period and validate depreciation process
 
 [!include [banner](../../includes/banner.md)]
 
-Use this task to learn how to define fixed asset idle period. 
+Learn how to define the fixed asset idle period and validate depreciation process for Japan in Microsoft Dynamics 365 Finance.
 
-Validate profile and proposal.
+The following procedures use the JPMF demo company data.
 
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
+## Assign a fixed assets number sequence
 
-In order to complete this task, the Fixed Assets configuration key must be selected.
+To assign a fixed assets number sequence, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed assets parameters**.
+1. Select the **Number sequences** tab.
+1. In the list, find and select the fixed asset record.
+1. In the **Number sequence code** field, enter or select a value.
+1. Select **Save**.
+1. Close the page.
 
+## Assign an idle period for a fixed asset
 
-This task uses the JPMF demo company data.
+To assign an idle period for a fixed asset, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Assign idle period to a fixed asset**.
+1. Select **New**.
+1. In the **Description** field, enter a value.
+1. Expand the **General** section.
+1. In the **From date** field, enter a date.
+1. In the **To date** field, enter a date.
+1. In the **Reason** field, enter a value.
+1. Expand the **Idle Periods** section.
+1. Select **New**.
+1. In the **Fixed asset group** field, enter "EQUP-M".  
+1. In the **Fixed asset number** field, enter "EQUPM-000024".  
+1. In the **Book** field, enter "200NDB_CUR".  
+1. Select **Save**.
+1. Select **Confirm**.
+1. Close the page.
 
-## Assign number sequence in FA parameter form
-1. Go to Fixed assets > Setup > Fixed assets parameters.
-2. Click the Number sequences tab.
-3. In the list, find and select the desired record.
-    * Reference = Fixed asset idle period  
-4. In the Number sequence code field, enter or select a value.
-5. Click Save.
-6. Close the page.
+## Validate a fixed asset book
 
-## Assign idle period for a Fixed asset
-1. Go to Fixed assets > Periodic tasks > Assign idle period to a fixed asset.
-2. Click New.
-3. In the Description field, type a value.
-4. Expand the General section.
-5. In the From date field, enter a date.
-    * From date = 01/01/2016  
-6. In the To date field, enter a date.
-    * To date = 12/31/2017  
-7. In the Reason field, type a value.
-8. Expand the Idle Periods section.
-9. Click New.
-10. In the Fixed asset group field, enter or select a value.
-    * EQUP-M  
-11. In the Fixed asset number field, enter or select a value.
-    * EQUPM-000024  
-12. In the Book field, enter or select a value.
-    * 200NDB_CUR  
-13. Click Save.
-14. Click Confirm.
-15. Close the page.
+To validate a fixed asset book, follow these steps.
 
-## Validate Fixed asset book
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. In the list, find and select the desired record.
-    * EQUPM-000024  
-3. Click Books.
-4. In the list, find and select the desired record.
-    * 200NDB_CUR  
-5. Click Functions.
-6. Click Update idle periods.
-    * Validate the idle period created for the fixed asset book is listed  
-7. Close the page.
-8. Click Profile.
-    * Validate the profile displays zero depreciation for the idle period  
-9. Close the page.
-10. Close the page.
-11. Close the page.
+1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
+1. In the list, find and select the "EQUPM-000024" record.  
+1. Select **Books**.
+1. In the list, find and select the "200NDB_CUR" record.
+1. Select **Functions**.
+1. Select **Update idle periods**. Validate that the idle period created for the fixed asset book is listed. 
+1. Close the page.
+1. Select **Profile**. Validate that the profile displays zero depreciation for the idle period.  
+1. Close the page.
 
-## Execute depreciation proposal
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, enter or select a value.
-4. Click Save.
-5. Click Lines.
-6. Click Proposals.
-7. Click Depreciation proposal.
-8. In the To date field, enter a date.
-    * To date = 12/31/2017  
-9. Expand the Records to include section.
-10. Click Filter.
-11. Click Reset.
-12. In the list, mark the selected row.
-    * Field = Fixed asset number  
-13. In the Criteria field, enter or select a value.
-    * EQUPM-000024  
-14. In the list, find and select the desired record.
-    * Field = Book  
-15. In the Criteria field, enter or select a value.
-    * 200NDB_CUR  
-16. Click OK.
-17. Click OK.
-    * Validate no depreciation journal is created for the idle period  
+## Execute a depreciation proposal
+
+To execute a depreciation proposal, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter or select a name.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Depreciation proposal**.
+1. In the **To date** field, enter a date.
+1. Expand the **Records to include** section.
+1. Select **Filter**.
+1. Select **Reset**.
+1. In the list, mark the selected row.
+1. In the **Criteria** field, enter "EQUPM-000024".  
+1. In the list, find and select the desired record.
+1. In the **Criteria** field, enter "200NDB_CUR".  
+1. Select **OK**.
+1. Select **OK**. Validate that no depreciation journal is created for the idle period. 
 
 
 
