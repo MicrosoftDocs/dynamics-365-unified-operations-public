@@ -20,7 +20,7 @@ This article addresses frequently asked questions about feature user license val
 
 On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Beginning April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. Users that haven't been assigned a license start to see an in-product notification asking them to contact their administrator to request license assignment.
 
-**Beginning August 30, 2025** users require an assigned license to access finance and operations apps. We're giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there is no disruption, and no action is needed from their administrator.
+**Beginning August 30, 2025** users require an assigned license to access finance and operations apps. We're giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, theres no disruption, and no action is needed from their administrator.
 
 > [!IMPORTANT]
 > At this time, user license validation is only applicable to commercial cloud solutions.
@@ -34,7 +34,7 @@ To learn more about the licensing model, visit the [Dynamics 365 Licensing Page]
 Two key developments are scheduled for April 30, 2025:
 
 - Users lacking proper licenses receive notifications within finance and operations apps, directing them to request licensing from their administrator.
-- Administrators have access to improved license reporting in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Microsoft Dynamics 365 Lifecycle Services](https://lcs.dynamics.com/), offering comprehensive insights into license usage across security roles.
+- Administrators have access to improved license reporting in [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Microsoft Dynamics 365 Lifecycle Services](https://lcs.dynamics.com/), offering comprehensive insights into license usage across security roles.
 
   > [!IMPORTANT]
   > No user license validations actions, such as users losing access, are planned for April 30, 2025.
@@ -135,7 +135,7 @@ In finance and operations apps, users are assigned to security roles based on th
 
 This **Any Base** categorization helps summarize where a Base license is needed without specifying the exact product license, while still capturing the separation between **Base 1** and **Base 2** license families.
 
-## If a user is assigned with 'Operations – Activity' license and the actual security role requires a full user license (for example, Supply Chain Management, Finance, Commerce), are they restricted from accessing the necessary features?
+## If a user is assigned with an 'Operations – Activity' license and the actual security role requires a full user license (for example, Supply Chain Management, Finance, Commerce), are they restricted from accessing the necessary features?
 
 Yes, users with an **Operations - Activity** license are restricted if their security role requires a full license. They need to be assigned in [Microsoft 365 admin center](https://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
 
@@ -143,7 +143,7 @@ Yes, users with an **Operations - Activity** license are restricted if their sec
 
 The highest license requirement applies. In case security roles span multiple workloads, this user requires more than one full user license. For example, if a user has **Buying agent** and **Accounts Payable** security roles, this user needs both Supply Chain Management (Base) and Finance (Attach) licenses. 
 
-## If a user is assigned a 'Operations – Activity' or 'Team Members' license but requires a Base License (Supply Chain Management, Finance, etc.), are they restricted to access?
+## If a user is assigned an 'Operations – Activity' or 'Team Members' license but requires a Base License (Supply Chain Management, Finance, etc.), are they restricted to access?
 
 Yes. If the user isn't assigned to the correct licenses, they're notified and will eventually lose access to specific functionalities on August 30, 2025.
 
@@ -158,6 +158,6 @@ To determine whether a user _requires_ a license, customers should review the CS
 
 ## Who can I contact for more help?
 
-Review the licensing model [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or your implementation partner for support. 
+Review the licensing model in the [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or your implementation partner for support. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
