@@ -1,6 +1,6 @@
 ---
-title: User Security report and technical validation for finance and operations apps FAQ
-description: Answers to various frequently asked questions regarding integrated license management and respective requirements for Dynamics 365 Finance and Operations apps.
+title: User security role reporting and technical validation for Dynamics 365 finance and operations apps FAQ
+description: Answers to various frequently asked questions regarding integrated license management and respective requirements for Dynamics 365 finance and operations apps.
 author: ceian
 ms.author: ceian
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.validFrom: 2025-04-18
 ms.dyn365.ops.version: 10.0.44
 ---
 
-# User Security report and technical validation for Finance and Operations apps FAQ
+# User security role reporting and technical validation for Dynamics 365 finance and operations apps FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article addresses the most common questions about feature enforcement for user security role and focuses specifically on answering questions regarding respective licensing assignment and report for Dynamics 365 Finance and Operations apps.
+This article addresses the most common questions about feature user license validation for user security roles and focuses specifically on answering questions regarding respective licensing assignment and reporting for Dynamics 365 finance and operations apps.
 
 On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Starting April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. For users that haven't yet been assigned a license, they'll start to see an in-product notification asking them to contact their administrator to request license assignment.
 
 **Beginning August 30, 2025** users will require an assigned license to access finance and operations applications. We're giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
 
 > [!IMPORTANT]
-> Enforcement is applicable to commercial cloud solutions. Government cloud and on-premises offerings are excluded from this initial stage.
+> At this time, user license validation is only applicable to commercial cloud solutions.
 
 ## How can I learn more about the licensing model?
 
@@ -36,9 +36,9 @@ To learn more about the licensing model, visit the [Dynamics 365 Licensing Page]
 - Administrators have access to improved license reporting in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Microsoft Dynamics 365 Lifecycle Services](https://lcs.dynamics.com/), offering comprehensive insights into license usage across security roles.
 
 > [!IMPORTANT]
-> No enforcement actions, such as users losing access, are planned for April 30, 2025.
+> No user license validations actions, such as users losing access, are planned for April 30, 2025.
 
-## When will licenses start getting enforced?
+## When will user licenses start getting validated?
 
 Starting August 30, 2025, all finance and operations customers must assign the required user licenses directly through the [Microsoft 365 admin center](https://admin.microsoft.com/) for the following applications:
 - [Microsoft Dynamics 365 Finance](https://www.microsoft.com/dynamics-365/products/finance)
@@ -47,7 +47,7 @@ Starting August 30, 2025, all finance and operations customers must assign the r
 - [Microsoft Dynamics 365 Project Operations](https://www.microsoft.com/dynamics-365/products/project-operations)
 - [Microsoft Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)
 
-Users without the required licenses will lose access to the application and are prompted to request the necessary licenses from their administrator.
+Users without the required licenses will lose access to the application and will be prompted to request the necessary licenses from their administrator.
 
 ## What are the recommended practices for Microsoft 365 administrators to assign licenses?
 
@@ -86,7 +86,7 @@ Administrators can assign and manage Dynamics 365 user licenses in [Microsoft 36
 
 For deeper workload-specific insights:
 
-- [User Security Governance License Usage Summary Report](security-gov-overview.md) – Available within Finance and Operations, this built-in report maps defined security roles to required license types, allowing system administrators to proactively review licensing requirements, and manage user access based on actual security configuration.
+- [User Security Governance License Usage Summary Report](security-gov-overview.md) – Available within finance and operations apps, this built-in report maps defined security roles to required license types, allowing system administrators to proactively review licensing requirements, and manage user access based on actual security configuration.
 - [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations): Provides detailed reporting for license requirements and usage specific to finance and operations apps as well as other applications for user role assignments, and operational context. It's primarily designed for managing. 
 - [Lifecycle Services](https://lcs.dynamics.com/): Used for reviewing finance and operations app environment configuration and managing projects and implementations. Lifecycle Services also provides the same information about finance and operations license consumption and usage that is available in the Power Platform admin center.
 
@@ -96,9 +96,9 @@ Yes. [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.
 
 ## What is "User Security Governance" and when is it be generally available? 
 
-[User Security Governance](security-gov-overview.md) is a feature that provides Finance and Operations administrators with greater visibility and control over user security. It's currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. Learn about user security governance in [Security governance FAQ](security-governance-faq.md) section. 
+[User Security Governance](security-gov-overview.md) is a feature that provides finance and operations app administrators with greater visibility and control over user security. It's currently in Public Preview with Dynamics 365 version 10.0.43, and general availability is targeted for July 2025 with version 10.0.44. Learn about user security governance in [Security governance FAQ](security-governance-faq.md) section. 
 
-## How do Finance and Operations administrators view license requirements in Lifecycle Services?
+## How do finance and operations app administrators view license requirements in Lifecycle Services?
 
 [Lifecycle Services](https://lcs.dynamics.com/) dashboards display which users are correctly licensed and highlight any discrepancies for administrators. Starting April 30, 2025 [Lifecycle Services)](https://lcs.dynamics.com/) will have licensing reporting identical to [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
@@ -119,11 +119,11 @@ Customers can open a support case through the [Microsoft 365 admin center](https
 
 ## What is Base 1, Base 2, and Any Base labeling in Power Platform admin center user license level reporting? 
 
-In finance and operations apps, users are assigned to security roles based on their responsibilities in the organization and their participation in business processes. The Finance and Operations administrator grants access to the duties that users in a role perform, not to the program elements that users must use. These roles, duties, and privileges are enabled by licenses which are labeled as **Base 1**, **Base 2**, and **Any Base** in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting. These terms appear in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting to help summarize finance and operations license requirements across different scenarios:
+In finance and operations apps, users are assigned to security roles based on their responsibilities in the organization and their participation in business processes. The finance and operations administrator grants access to the duties that users in a role perform, not to the program elements that users must use. These roles, duties, and privileges are enabled by licenses which are labeled as **Base 1**, **Base 2**, and **Any Base** in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting. These terms appear in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting to help summarize finance and operations license requirements across different scenarios:
 
 
-- **Base 1**: Refers to users assigned a core full user license for one of the following Finance and Operations apps (Commerce, Finance, Supply Chain Management).
-- **Base 2**: Refers to users assigned a core full license for one following Finance and Operations apps (Human Resources, Project Operations)
+- **Base 1**: Refers to users assigned a core full user license for one of the following finance and operations apps (Commerce, Finance, Supply Chain Management).
+- **Base 2**: Refers to users assigned a core full license for one following finance and operations apps (Human Resources, Project Operations)
 - **Any Base** is a roll-up category used in PPAC reporting to indicate that a user needs at least one Base license within a specific Base group—either **Base 1** or **Base 2**.
   
     - **Any Base** within **Base 1**: If a user has roles that require **Commerce**, or **Finance**, or **Supply Chain Management**, they appear under **Any Base**---meaning any one of those **Base 1** licenses would satisfy the required license for that user.
@@ -150,10 +150,10 @@ When you use custom security roles, respective duties, and privileges that compr
 
 ## How do I determine the right license from Power Platform admin center reporting?
 
-To determine whether a user _requires_ a license, customers should review the CSV export from the Finance and Operations User license level report in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations). Specifically, look at the **RequiredUserLicenseQuantity** column and corresponding result for each user. The report is designed to avoid double-counting when a user already holds a qualifying base license.
+To determine whether a user _requires_ a license, customers should review the CSV export from the finance and operations user license level report in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations). Specifically, look at the **RequiredUserLicenseQuantity** column and corresponding result for each user. The report is designed to avoid double-counting when a user already holds a qualifying base license.
 
 ## Who can I contact for more help?
 
-Review the licensing model [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or Partner for support.
+Review the licensing model [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or your implementation partner for support. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
