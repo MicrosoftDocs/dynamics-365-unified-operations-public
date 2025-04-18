@@ -65,13 +65,13 @@ The following table describes the fields that you can set on the **Serial number
 | --- | --- |
 | Format name | Specify the name of the serial format.|
 | 1.field name | Select the value that appears in the first part of the serial number format.|
-| 1.seperator | Specify the characters or symbols that are used to divide the first and second parts of a preprinted serial number. |
+| 1.separator | Specify the characters or symbols that are used to divide the first and second parts of a preprinted serial number. |
 | 2.field name | Select the value that appears in the second part of the serial number format.|
-| 2.seperator | Specify the characters or symbols that are used to divide the second and third parts of a preprinted serial number. |
+| 2.separator | Specify the characters or symbols that are used to divide the second and third parts of a preprinted serial number. |
 | 3.field name | Select the value that appears in the third section of the serial number format.|
-| 3.seperator | Specify the characters or symbols that are used to divide the third and fourth parts of a preprinted serial number.|
+| 3.separator | Specify the characters or symbols that are used to divide the third and fourth parts of a preprinted serial number.|
 | 4.field name | Select the value that appears in the fourth section of the serial number format.|
-| 4.seperator | Specify the characters or symbols that are used to divide the fourth and fifth parts of a preprinted serial number. |
+| 4.separator | Specify the characters or symbols that are used to divide the fourth and fifth parts of a preprinted serial number. |
 | 5.field name | Select the value that appears in the fifth section of the serial number format.|
 | Format | Specifies how the serial number format is structured based on the selections in each column.|
 
@@ -82,9 +82,9 @@ For the five ***x*.field name** fields (**1.field name**, **2.field name**, …*
 - **Number** – Select this option to specify that the unique serial number appears in the corresponding part of the serial number format.
 - **None** – Select this option to specify that there is no value in the corresponding part of the serial number format.
 
-The serial number format is then formed by sequentially combining the values of the ***x*.field name** and ***x*.seperator** fields in the following way:
+The serial number format is then formed by sequentially combining the values of the ***x*.field name** and ***x*.separator** fields in the following way:
 
-**1.field name** + **1.seperator** + **2.field name** + **2.seperator** + **3.field name** + **3.seperator** + **4.field name** + **4.seperator** + **5.field name**
+**1.field name** + **1.separator** + **2.field name** + **2.separator** + **3.field name** + **3.separator** + **4.field name** + **4.separator** + **5.field name**
 
 For example, to generate a 16-digit preprinted serial number (such as *AAA2025000000001*) that complies with legal regulations, follow these steps.
 
@@ -92,9 +92,13 @@ For example, to generate a 16-digit preprinted serial number (such as *AAA202500
 1. On the **Serial number formats** tab, select **New**.
 1. In the **Format name** field, enter a name.
 1. In the **1.field name** field, select *Serial prefix*.
+1. Leave the **1.separator** field blank.
 1. In the **2.field name** field, select *Fiscal year*.
+1. Leave the **2.separator** field blank.
 1. In the **3.field name** field, select *Number*.
+1. Leave the **3.separator** field blank.
 1. In the **4.field name** field, select *None*.
+1. Leave the **4.separator** field blank.
 1. In the **5.field name** field, select *None*.
 1. Select **Save**.
 
