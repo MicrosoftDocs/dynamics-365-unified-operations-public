@@ -146,7 +146,7 @@ Yes. If the user isn't assigned to the correct licenses, they're notified and wi
 
 ## If user has custom security roles, how does per user license validation work?
 
-When you use custom security roles, respective duties, and privileges that comprise these roles, this useage determines the licensing requirements. 
+When you use custom security roles, respective duties, and privileges that comprise these roles, this usage determines the licensing requirements. 
 
 ## How do I determine the right license from Power Platform admin center reporting?
 
