@@ -3,7 +3,7 @@ title: What's new or changed in Platform updates
 description: Access various resources and topics that describe the new and changed features in each Platform update for finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 07/30/2024
+ms.date: 04/25/2025
 ms.topic: whats-new
 ms.custom: 
   - bap-template
