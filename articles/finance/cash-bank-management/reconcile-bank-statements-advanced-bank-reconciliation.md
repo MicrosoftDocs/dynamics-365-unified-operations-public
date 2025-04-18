@@ -113,6 +113,10 @@ If the **Modern bank reconciliation** feature is turned on, the **Validate** and
 
 - **Validate** – Verify the bank statement data.
 - **Confirm** – Update the bank statement status to **Confirmed**.
+- 
+> [!NOTE]
+> To prevent the import of duplicate bank statements, combination of AccountNo, StatementID, FromDate, and ToDate are checked. If these elements match an existing bank statement, it is considered a duplicate and will not be imported. This ensures that each bank statement file is unique and avoids redundancy.
+
 
 ## Reconcile the bank statement
 After you've imported an electronic bank statement and validated the statement on the **Bank statements** page, you can reconcile the bank statement by using the **Bank reconciliation** and **Bank reconciliation worksheet** pages. 
