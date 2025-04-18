@@ -20,7 +20,7 @@ This article answers frequently asked questions about feature user license valid
 
 On March 28, 2025, Microsoft released a [blog post](https://www.microsoft.com/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) to introduce updates that help centralize user license management and provide clarity for administrators.
 
-As of **April 30, 2025**, administrators will have access to license usage reporting that shows available and assigned seats. In addition, users who don't have a license assigned to them will start to receive in-product notifications that instruct them to contact their administrator to request license assignment.
+As of **April 30, 2025**, administrators will have access to license usage reporting that shows available and assigned licenses. In addition, users who don't have a license assigned to them will start to receive in-product notifications that instruct them to contact their administrator to request license assignment.
 
 As of **August 30, 2025**, only users who have a license assigned to them will be able to access finance and operations apps. Microsoft is announcing this change now, so that customers have time to prepare tools and training to support any action that is required. For users who already have licenses assigned to them, there will be no disruption, and no administrator action will be required.
 
@@ -70,7 +70,7 @@ To ensure that all user license assignments meet the licensing requirements, com
 
 - Review per‑user license assignments in the [Microsoft 365 admin center](https://admin.microsoft.com/).
 - Confirm alignment with licensing entitlements by verifying each user's security roles and assignments in finance and operations apps.
-- Cross‑reference the results of the previous task with your User Security Governance reports to identify and remediate any discrepancies.
+- Cross-reference the results of the previous task with your User Security Governance reports, to identify and remediate any discrepancies.
 - Evaluate the user license–level report in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) or [Lifecycle Services](https://lcs.dynamics.com/).
 
 ## Are system administrators or other non-business-related roles excluded from user license validation?
@@ -99,7 +99,7 @@ For deeper, workload-specific insights, use the following resources:
 
 Yes. The [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) provides consolidated reporting about finance and operations apps license usage. It reveals licensing gaps, such as users who don't have all the required licenses for their security roles. As license assignments are updated in the [Microsoft 365 admin center](https://admin.microsoft.com/), [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) and [Lifecycle Services](https://lcs.dynamics.com/) reporting reflects the changes. Therefore, administrators can track requirements and proactively address any issues.
 
-## What is "User Security Governance," and when will it become generally available?
+## What is "User Security Governance," and when does it become generally available?
 
 [User Security Governance](security-gov-overview.md) is a feature that gives finance and operations apps administrators better visibility into user security and more control over it. It's currently in Public Preview in Dynamics 365 version 10.0.43. General availability is targeted for July 2025, in version 10.0.44. Learn about User Security Governance in [Security governance FAQ](security-governance-faq.md).
 
@@ -119,7 +119,7 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com/) is
 
 ## What should Microsoft 365 administrators do if the users who are listed in the Microsoft 365 admin center don't match the users who are listed in Power Platform admin center reporting?
 
-If the users who are listed in [Microsoft 365 admin center](https://admin.microsoft.com/) don't match the users who are listed in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend that the customer opens a Microsoft Support case, so that this discrepancy can be investigated. The discrepancy might be caused by synchronization issues, indirect-based licensing behavior, or back-end reporting delays. All these issues can be reviewed in a Support case.
+If the users who are listed in [Microsoft 365 admin center](https://admin.microsoft.com/) don't match the users who are listed in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend that the customer opens a Microsoft Support case. In this way, the discrepancy can be investigated further. It might be caused by synchronization issues, indirect-based licensing behavior, or back-end reporting delays. All these issues can be reviewed in a Support case.
 
 Customers can open a Support case by going to **Support** \> **New service request** in the [Microsoft 365 admin center](https://admin.microsoft.com/). Alternatively, they can open a Support case directly from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/support/requests).
 
@@ -129,7 +129,7 @@ In finance and operations apps, users are assigned to security roles based on th
 
 - **Base 1** – This label refers to users who have a core full user license assigned to them for one of the following apps: Commerce, Finance, or Supply Chain Management.
 - **Base 2** – This label refers to users who have a core full user license assigned to them for one of the following apps: Human Resources or Project Operations.
-- **Any Base** — Power Platform admin center reporting uses this label as a roll-up category. It indicates that a user needs at least one Base license within a specific Base group (either **Base 1** or **Base 2**).
+- **Any Base** – Power Platform admin center reporting uses this label as a roll-up category. It indicates that a user needs at least one Base license within a specific Base group (either **Base 1** or **Base 2**).
 
     - **Any Base** within **Base 1** – A user appears under **Any Base** if they have roles that require Commerce *or* Finance *or* Supply Chain Management. In other words, any one of those **Base 1** licenses satisfies the required license for that user.
     - **Any Base** within **Base 2** – A user appears under **Any Base** if they have roles that require Human Resources *or* Project Operations. In other words, any one of those **Base 2** licenses satisfies the required license for that user.
