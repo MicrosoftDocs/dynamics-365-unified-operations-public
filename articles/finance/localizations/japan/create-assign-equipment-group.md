@@ -4,7 +4,7 @@ description: Learn how to create and configure an equipment group for Japan in M
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 04/15/2025
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
