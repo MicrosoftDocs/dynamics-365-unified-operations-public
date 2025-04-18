@@ -21,6 +21,8 @@ This article addresses the most common questions about feature enforcement for u
 On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Starting April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. For users that have not yet been assigned a license, they will start to see an in-product notification asking them to contact their administrator to request license assignment.
 
 **Beginning August 30, 2025** users will require an assigned license to access the Dynamics 365 finance and operations applications. We are giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
+> [!IMPORTANT]
+> Enforcement is applicable to commercial cloud solutions. Government cloud and on-prem offerings are excluded from this initial stage.
 
 ## How can I learn more about the licensing model?
 
@@ -68,10 +70,6 @@ To ensure that all user license assignments adhere to the licensing requirements
 ## Are system admins or other nonbusiness related roles excluded from user license validation?
 
 Users with the Power Platform administrator or Dynamics 365 service administrator role don't require a user license. Users in the relevant Dynamics 365 Finance and Operations application with the System Administrator role assigned don't require a license to administer the application. Other business roles may require a license defined in the licensing guide. Learn more in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
-
-## Is Local Business Data (LBD) / on-premises licensing part of the scope for validation?
-
-No. Technical user license validation is currently applicable to cloud solutions only, but customers are expected to properly license on-premises solutions according to Microsoft Product Terms.
 
 ## How do I receive notifications about missing licenses or users without licenses?
 
