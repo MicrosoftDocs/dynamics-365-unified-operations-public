@@ -20,9 +20,9 @@ This article answers frequently asked questions about feature user license valid
 
 On March 28, 2025, Microsoft released a [blog post](https://www.microsoft.com/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) to introduce updates that help centralize user license management and provide clarity for administrators.
 
-As of **April 30, 2025**, administrators will have access to license usage reporting that shows available and assigned licenses. In addition, users who don't have a license assigned to them will start to receive in-product notifications that instruct them to contact their administrator to request license assignment.
+As of **April 30, 2025**, administrators have access to license usage reporting that shows available and assigned licenses. In addition, users who don't have a license assigned to them start to receive in-product notifications that instruct them to contact their administrator to request license assignment.
 
-As of **August 30, 2025**, only users who have a license assigned to them will be able to access finance and operations apps. Microsoft is announcing this change now, so that customers have time to prepare tools and training to support any action that is required. For users who already have licenses assigned to them, there will be no disruption, and no administrator action will be required.
+As of **August 30, 2025**, only users who have a license assigned to them can access finance and operations apps. Microsoft is announcing this change now, so that customers have time to prepare tools and training to support any action that is required. For users who already have licenses assigned to them, there is no disruption, and no administrator action is required.
 
 > [!IMPORTANT]
 > Currently, user license validation is applicable only to commercial cloud solutions.
@@ -41,7 +41,7 @@ Two key developments are scheduled for April 30, 2025:
 > [!IMPORTANT]
 > No user license validations actions, such as loss of user access, are planned for April 30, 2025.
 
-## When will user licenses start to be validated?
+## When do user licenses start to be validated?
 
 As of August 30, 2025, all finance and operations apps customers must assign the required user licenses directly through the [Microsoft 365 admin center](https://admin.microsoft.com/) for the following apps:
 
@@ -51,7 +51,7 @@ As of August 30, 2025, all finance and operations apps customers must assign the
 - [Dynamics 365 Project Operations](https://www.microsoft.com/dynamics-365/products/project-operations)
 - [Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)
 
-Users who lack the required licenses will lose access to the apps and will be instructed to request the required licenses from their administrator.
+On August 30, 2025, users who lack the required licenses lose access to the apps and are instructed to request the required licenses from their administrator.
 
 ## What are the recommended practices for Microsoft 365 administrators to assign licenses?
 
@@ -105,7 +105,7 @@ Yes. The [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 ## How do finance and operations apps administrators view license requirements in Lifecycle Services?
 
-[Lifecycle Services](https://lcs.dynamics.com/) dashboards show which users are correctly licensed. They also highlight any discrepancies for administrators. As of April 30, 2025, [Lifecycle Services](https://lcs.dynamics.com/) and [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) will have licensing reporting.
+[Lifecycle Services](https://lcs.dynamics.com/) dashboards show which users are correctly licensed. They also highlight any discrepancies for administrators. As of April 30, 2025, [Lifecycle Services](https://lcs.dynamics.com/) and [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) have licensing reporting.
 
 ## How can finance and operations apps administrators determine the correct level of license that is required?
 
