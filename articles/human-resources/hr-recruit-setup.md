@@ -121,6 +121,7 @@ To activate connections and flows for the Recruiting app, follow these steps.
 ### Recruiting flows
 
 |Name|	Description |
+|-----|--------|
 |Email notification flow 	|The primary process for dispatching email notifications utilizes predefined email templates. Used in different workflows based on the scenario.|
 |Job Ad Approval flow	|Notify approvers via Teams/Outlook for job ad approval.|
 |Job Ad in app approval flow	|Manages in-app approvals and automatically completes the Teams/Outlook workflows if they have already been initiated.|
