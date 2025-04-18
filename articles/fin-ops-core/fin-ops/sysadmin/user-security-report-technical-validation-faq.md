@@ -1,5 +1,5 @@
 ---
-title: Integrated license management FAQ
+title: User Security report and technical validation for Finance and Operations apps FAQ
 description: Answers to various frequently asked questions regarding integrated license management and respective requirements for Dynamics 365 Finance and Operations apps.
 author: ceian
 ms.author: ceian
@@ -12,7 +12,7 @@ ms.search.validFrom: 2025-04-18
 ms.dyn365.ops.version: 10.0.44
 ---
 
-# Integrated License Management for Finance and Operations apps FAQ
+# User Security report and technical validation for Finance and Operations apps FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
 
