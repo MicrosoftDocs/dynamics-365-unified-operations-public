@@ -68,7 +68,7 @@ To ensure that all user license assignments adhere to the licensing requirements
 - Cross‑reference these results with your User Security Governance reports to identify and remediate any discrepancies.
 - Evaluate the user license level reporting in [Lifecycle Services](https://lcs.dynamics.com/) or in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
-## Are system admins or other nonbusiness related roles excluded from user license validation?
+## Are system administrators or other nonbusiness related roles excluded from user license validation?
 
 Users with the Power Platform administrator or Dynamics 365 service administrator role don't require a user license. Users in the relevant finance and operations application with the System Administrator role assigned don't require a license to administer the application. Other business roles may require a license defined in the licensing guide. Learn more in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
@@ -109,11 +109,11 @@ The [User Security Governance License Usage Summary Report](security-gov-overvie
 
 **[Microsoft 365 admin center](https://admin.microsoft.com/)** is primarily focused on managing users, licenses, and organizational settings across services like Exchange, Teams, SharePoint, and Dynamics 365. Administrators may assign licenses, configure user accounts via Microsoft Entra ID, and handle tenant-wide security and compliance settings in this platform. 
 
-**[Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/)** is primarily focused on managing environments, storage capacity, analytics, licensing reporting and governance for Power Platform services like Power Apps, Power Automate, Dataverse, and finance and operations. Admins can monitor usage, manage environments, enforce data policies, and view role-to-license mappings. 
+**[Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/)** is primarily focused on managing environments, storage capacity, analytics, licensing reporting and governance for Power Platform services like Power Apps, Power Automate, Dataverse, and finance and operations. Administrators can monitor usage, manage environments, enforce data policies, and view role-to-license mappings. 
 
 ## How should Microsoft 365 administrators proceed if the users listed in the Microsoft 365 admin center don't match Power Platform admin center reporting?
 
-If the users listed in [Microsoft 365 admin center](https://admin.microsoft.com/) don't match those in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend opening a Microsoft Support case to investigate further. This discrepancy may be caused by sync issues, indirect-based licensing behavior, or backend reporting delays---all of which can be reviewed in a support case.
+If the users listed in [Microsoft 365 admin center](https://admin.microsoft.com/) don't match the users listed in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend opening a Microsoft Support case to investigate further. This discrepancy may be caused by sync issues, indirect-based licensing behavior, or backend reporting delays---all of which can be reviewed in a support case.
 
 Customers can open a support case through the [Microsoft 365 admin center](https://admin.microsoft.com/) under **Support > New service request**, or directly from [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests).
 
@@ -146,7 +146,7 @@ Yes. If the user isn't assigned to the correct licenses, they're notified and wi
 
 ## If user has custom security roles, how does per user license validation work?
 
-When you use custom security roles, respective duties and privileges that comprise these roles will determine the licensing requirements. 
+When you use custom security roles, respective duties, and privileges that comprise these roles, this useage determines the licensing requirements. 
 
 ## How do I determine the right license from Power Platform admin center reporting?
 
@@ -156,3 +156,4 @@ To determine whether a user _requires_ a license, customers should review the CS
 
 Review the licensing model [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233), create a support ticket in [Microsoft 365 admin center](https://admin.microsoft.com/) or [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/support/requests), or reach out to your Microsoft account team or Partner for support.
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
