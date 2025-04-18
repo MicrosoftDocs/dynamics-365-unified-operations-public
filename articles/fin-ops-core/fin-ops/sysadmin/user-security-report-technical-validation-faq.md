@@ -20,7 +20,7 @@ This article addresses the most common questions about feature user license vali
 
 On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Beginning April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. Users that haven't been assigned a license start to see an in-product notification asking them to contact their administrator to request license assignment.
 
-**Beginning August 30, 2025** users will require an assigned license to access finance and operations apps. We're giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
+**Beginning August 30, 2025** users will require an assigned license to access finance and operations apps. We're giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there is no disruption, and no action is needed from their administrator.
 
 > [!IMPORTANT]
 > At this time, user license validation is only applicable to commercial cloud solutions.
@@ -47,7 +47,7 @@ Starting August 30, 2025, all finance and operations apps customers must assign 
 - [Microsoft Dynamics 365 Project Operations](https://www.microsoft.com/dynamics-365/products/project-operations)
 - [Microsoft Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)
 
-Users without the required licenses will lose access to the application and are prompted to request the necessary licenses from their administrator.
+Users without the required licenses lose access to the application and are prompted to request the necessary licenses from their administrator.
 
 ## What are the recommended practices for Microsoft 365 administrators to assign licenses?
 
@@ -66,7 +66,7 @@ To ensure that all user license assignments adhere to the licensing requirements
 - Review per‑user license assignments in [Microsoft 365 admin center](https://admin.microsoft.com/). 
 - To confirm alignment with licensing entitlements, verify each user’s security roles and assignments within finance and operations apps.
 - Cross‑reference these results with your User Security Governance reports to identify and remediate any discrepancies.
-- Evaluate the user license level reporting in [Lifecycle Services](https://lcs.dynamics.com/) or in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
+- Evaluate the user license level report in [Lifecycle Services](https://lcs.dynamics.com/) or in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
 ## Are system administrators or other nonbusiness related roles excluded from user license validation?
 
@@ -118,7 +118,7 @@ If the users listed in [Microsoft 365 admin center](https://admin.microsoft.com/
 
 Customers can open a support case through the [Microsoft 365 admin center](https://admin.microsoft.com/) under **Support > New service request**, or directly from [Power Platform admin center](https://admin.powerplatform.microsoft.com/support/requests).
 
-## What is Base 1, Base 2, and Any Base labeling in Power Platform admin center user license level reporting? 
+## What is Base 1, Base 2, and Any Base labeling in the Power Platform admin center user license level report? 
 
 In finance and operations apps, users are assigned to security roles based on their responsibilities in the organization and their participation in business processes. The finance and operations apps administrator grants access to the duties that users in a role perform, not to the program elements that users must use. These roles, duties, and privileges are enabled by licenses which are labeled as **Base 1**, **Base 2**, and **Any Base** in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting. These terms appear in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting to help summarize finance and operations apps license requirements across different scenarios:
 
@@ -134,7 +134,7 @@ This **Any Base** categorization helps summarize where a Base license is needed 
 
 ## If a user is assigned with 'Operations – Activity' license and the actual security role requires a full user license (for example, Supply Chain Management, Finance, Commerce), are they restricted from accessing the necessary features?
 
-Yes, users with an **Operations - Activity** license will be restricted if their security role requires a full license. They need to be assigned in [Microsoft 365 admin center](https://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
+Yes, users with an **Operations - Activity** license are restricted if their security role requires a full license. They need to be assigned in [Microsoft 365 admin center](https://admin.microsoft.com/) the appropriate base user license to access the necessary functionalities. 
 
 ## What happens if a user has multiple security roles?
 
@@ -151,7 +151,7 @@ When you use custom security roles, respective duties, and privileges that compr
 
 ## How do I determine the right license from Power Platform admin center reporting?
 
-To determine whether a user _requires_ a license, customers should review the CSV export from the finance and operations apps user license level report in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations). Specifically, look at the **RequiredUserLicenseQuantity** column and corresponding result for each user. The report is designed to avoid double-counting when a user already holds a qualifying base license.
+To determine whether a user _requires_ a license, customers should review the CSV export from the user license level report in [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations). Specifically, look at the **RequiredUserLicenseQuantity** column and corresponding result for each user. The report is designed to avoid double-counting when a user already holds a qualifying base license.
 
 ## Who can I contact for more help?
 
