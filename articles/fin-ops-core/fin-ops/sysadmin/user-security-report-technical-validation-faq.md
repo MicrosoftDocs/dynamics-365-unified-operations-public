@@ -41,11 +41,11 @@ To learn more about the licensing model, visit the [Dynamics 365 Licensing Page]
 ## When will licenses start getting enforced?
 
 Starting August 30, 2025, all Dynamics 365 Finance and Operations customers must assign the required user licenses directly through the [Microsoft 365 admin center](https://admin.microsoft.com/) for the following applications:
-- [Microsoft Dynamics 365 Finance](/dynamics-365/products/finance)
-- [Microsoft Dynamics 365 Supply Chain Management](/dynamics-365/products/supply-chain-management)
-- [Microsoft Dynamics 365 Commerce](/dynamics-365/products/commerce)
-- [Microsoft Dynamics 365 Project Operations](/dynamics-365/products/project-operations)
-- [Microsoft Dynamics 365 Human Resources](/dynamics-365/products/human-resources)
+- [Microsoft Dynamics 365 Finance](https://www.microsoft.com/dynamics-365/products/finance)
+- [Microsoft Dynamics 365 Supply Chain Management](https://www.microsoft.com/dynamics-365/products/supply-chain-management)
+- [Microsoft Dynamics 365 Commerce](https://www.microsoft.com/dynamics-365/products/commerce)
+- [Microsoft Dynamics 365 Project Operations](https://www.microsoft.com/dynamics-365/products/project-operations)
+- [Microsoft Dynamics 365 Human Resources](https://www.microsoft.com/dynamics-365/products/human-resources)
 
 Users without the required licenses will lose access to the application and are prompted to request the necessary licenses from their administrator.
 
