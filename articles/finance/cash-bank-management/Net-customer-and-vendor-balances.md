@@ -94,6 +94,8 @@ You can see the cleared netting pairs during manual and automatic netting for se
 2. Select **Netting history**.
 3. Select the netting transaction, and then select **Print netting advice**.
 
+Users can view the **Netting history** inquiry, which displays all netted transactions between customer and vendor pairs, by navigating to **Cash and bank management** > **Inquiries and reports** > **Netting** > **Netting history**.
+
 ## Intercompany netting
 
 To create an intercompany netting agreement for customers and vendors in different legal entities, follow these steps.
