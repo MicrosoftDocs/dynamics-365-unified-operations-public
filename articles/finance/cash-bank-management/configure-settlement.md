@@ -1,10 +1,10 @@
 ---
 title: Configure settlement
 description: Learn about the parameters that are used for settlement for both Accounts payable and Accounts receivable, including an outline on fixed dimensions on accounts.
-author: twheeloc
-ms.author: twheeloc
+author: music727
+ms.author: mibeinar
 ms.topic: article
-ms.date: 05/24/2024
+ms.date: 04/24/2025
 ms.reviewer: twheeloc
 ms.custom: evergreen
 audience: Application User
