@@ -18,12 +18,12 @@ ms.dyn365.ops.version: 10.0.44
 
 This article addresses the most common questions about feature enforcement for user security role and focuses specifically on answering questions regarding respective licensing assignment and report for Dynamics 365 Finance and Operations apps.
 
-On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Starting April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. For users that have not yet been assigned a license, they will start to see an in-product notification asking them to contact their administrator to request license assignment.
+On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Starting April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. For users that haven't yet been assigned a license, they'll start to see an in-product notification asking them to contact their administrator to request license assignment.
 
-**Beginning August 30, 2025** users will require an assigned license to access finance and operations applications. We are giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
+**Beginning August 30, 2025** users will require an assigned license to access finance and operations applications. We're giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
 
 > [!IMPORTANT]
-> Enforcement is applicable to commercial cloud solutions. Government cloud and on-prem offerings are excluded from this initial stage.
+> Enforcement is applicable to commercial cloud solutions. Government cloud and on-premises offerings are excluded from this initial stage.
 
 ## How can I learn more about the licensing model?
 
@@ -53,7 +53,7 @@ Users without the required licenses will lose access to the application and are 
 
 For step-by-step instructions, see: [Assign licenses using the Licenses page](/microsoft-365/admin/manage/assign-licenses-to-users#assign-licenses-by-using-the-licenses-page).
 
-The recommended practice is to assign licenses in the [Microsoft 365 admin center](https://admin.microsoft.com/) at least 24 hours before the user needs access. This ensures that the license assignment has time to fully propagate across Microsoft systems, including **Dynamics 365**, **Power Platform**, and **Microsoft Entra ID**. Delays in assignment can lead to access or reporting issues. 
+The recommended practice is to assign licenses in the [Microsoft 365 admin center](https://admin.microsoft.com/) at least 24 hours before the user needs access. This practice ensures that the license assignment has time to fully propagate across Microsoft systems, including **Dynamics 365**, **Power Platform**, and **Microsoft Entra ID**. Delays in assignment can lead to access or reporting issues. 
 
 Another recommended practice is to:
 - Assign one Base license per user and assign Attach licenses for any other workload as needed.
@@ -64,7 +64,7 @@ Another recommended practice is to:
 To ensure that all user license assignments adhere to the licensing requirements: 
 
 - Review per‑user license assignments in [Microsoft 365 admin center](https://admin.microsoft.com/). 
-- Verify each user’s security roles and assignments within finance and operations to confirm alignment with licensing entitlements.
+- To confirm alignment with licensing entitlements, verify each user’s security roles and assignments within finance and operations apps.
 - Cross‑reference these results with your User Security Governance reports to identify and remediate any discrepancies.
 - Evaluate the user license level reporting in [Lifecycle Services](https://lcs.dynamics.com/) or in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
@@ -103,7 +103,7 @@ Yes. [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.
 [Lifecycle Services](https://lcs.dynamics.com/) dashboards display which users are correctly licensed and highlight any discrepancies for administrators. Starting April 30, 2025 [Lifecycle Services)](https://lcs.dynamics.com/) will have licensing reporting identical to [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations).
 
 ## How will finance and operations app administrators be able to check the right level of license required?
-The [User Security Governance License Usage Summary Report](security-gov-overview.md) is the in-product view that breaks down roles/duties/privileges based on the role information so admins can understand the factors that lead to certain licensing requirements. Navigate to this report: **System administration -> Security governance -> License usage summary**.  
+The [User Security Governance License Usage Summary Report](security-gov-overview.md) is the in-product view that breaks down roles, duties, and privileges based on the role information. Administrators can use this view to understand the factors that lead to certain licensing requirements. Navigate to this report: **System administration -> Security governance -> License usage summary**.  
 
 ## What is the difference between the Microsoft 365 admin center and the Power Platform admin center? 
 
@@ -111,7 +111,7 @@ The [User Security Governance License Usage Summary Report](security-gov-overvie
 
 **[Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/)** is primarily focused on managing environments, storage capacity, analytics, licensing reporting and governance for Power Platform services like Power Apps, Power Automate, Dataverse, and finance and operations. Admins can monitor usage, manage environments, enforce data policies, and view role-to-license mappings. 
 
-## How should Microsoft 365 administrators proceed if the users listed in the Microsoft 365 admin center don't match those in the Power Platform admin center reporting?
+## How should Microsoft 365 administrators proceed if the users listed in the Microsoft 365 admin center don't match Power Platform admin center reporting?
 
 If the users listed in [Microsoft 365 admin center](https://admin.microsoft.com/) don't match those in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/billing/licenses/financeandoperations) reporting, we recommend opening a Microsoft Support case to investigate further. This discrepancy may be caused by sync issues, indirect-based licensing behavior, or backend reporting delays---all of which can be reviewed in a support case.
 
@@ -141,7 +141,7 @@ The highest license requirement applies. In case security roles span multiple wo
 
 ## If a user is assigned a 'Operations – Activity' or 'Team Members' license but requires a Base License (Supply Chain Management, Finance, etc.), will they be restricted to access?
 
-Yes. If the user isn't assigned to the correct licenses, they are notified and will eventually lose access to specific functionalities on August 30, 2025.
+Yes. If the user isn't assigned to the correct licenses, they're notified and will eventually lose access to specific functionalities on August 30, 2025.
 
 
 ## If user has custom security roles, how does per user license validation work?
