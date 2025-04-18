@@ -34,13 +34,13 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 
 1. Under **Relying parties**, select **Add**, and then set the following fields:
 
-    1. **ClientID:** Enter the client ID of Microsoft Entra B2B application (for example, "8ff0a037-ea1e-4e04-8220-0a8dfcb4db50").
+    1. **ClientID:** Enter the client ID of Microsoft Entra B2B application (for example, "00001111-aaaa-2222-bbbb-3333cccc4444").
     1. **Type:** Select **Confidential**.
     1. **User Type:** Select **Worker**.
 
 1. Under **Server resource IDs**, select **Add**, and then set the following fields:
 
-    1. **Server Resource Id:** Enter `https://<APPLICATIONIDURI>`, where `<APPLICATIONIDURI>` is the ID of the Microsoft Entra B2B application (for example, "api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50".)
+    1. **Server Resource Id:** Enter `https://<APPLICATIONIDURI>`, where `<APPLICATIONIDURI>` is the ID of the Microsoft Entra B2B application (for example, "api://a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1".)
     1. **Name:** Leave this field blank.
   
 1. On the action pane, select **Save**.

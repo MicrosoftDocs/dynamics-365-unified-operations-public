@@ -52,7 +52,7 @@ To add your Microsoft Entra B2C tenant application information to Commerce, foll
     - **Tenant Name**: The name of your B2C tenant (for example, use "fabrikam" if the domain appears as "fabrikam.onmicrosoft.com" for the B2C tenant). 
     - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
     - **Signup Signin Policy ID**: The sign-up and sign-in user flow policy ID, for example "B2C_1_signup_signin".
-    - **Client GUID**: The B2C application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
+    - **Client GUID**: The B2C application ID, for example "00001111-aaaa-2222-bbbb-3333cccc4444".
     - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
