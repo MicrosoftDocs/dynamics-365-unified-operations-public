@@ -52,7 +52,7 @@ To create a job ad, fill in the following fields:
 
 ## Recruiting requests
 
-A *recruiting request* is a document that hiring managers in Dynamics 365 Finance use to create the requirement for job openings. A recruiting request can be published only if it's in an active status. After a recruiting request is published, it can't be updated. For more information, see [Recruit job candidates](hr-personnel-recruit.md). 
+A *recruiting request* is a document that hiring managers in Dynamics 365 Finance use to create the requirement for job openings. A recruiting request can be published only if it's in an active status. After a recruiting request is published, it can't be updated. For more information, see [Recruit job candidates](hr-personnel-recruit). 
 
 ## Job ad statuses
 
