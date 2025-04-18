@@ -148,7 +148,7 @@ The highest license requirement applies. In case security roles span multiple wo
 Yes. If the user isn't assigned to the correct licenses, they're notified and will eventually lose access to specific functionalities on August 30, 2025.
 
 
-## If user has custom security roles, how does per user license validation work?
+## If a user has custom security roles, how does per user license validation work?
 
 When you use custom security roles, respective duties, and privileges that comprise these roles, this usage determines the licensing requirements. 
 
