@@ -1,6 +1,6 @@
 ---
-title: Unified User security role enforcement FAQ
-description: Answers to various frequently asked questions regarding user security role assignement and respective requirements for Dynamics 365 Finance and Operations apps.
+title: Integrated license management FAQ
+description: Answers to various frequently asked questions regarding integrated license management and respective requirements for Dynamics 365 Finance and Operations apps.
 author: ceian
 ms.author: ceian
 ms.topic: article
@@ -12,7 +12,7 @@ ms.search.validFrom: 2025-04-18
 ms.dyn365.ops.version: 10.0.44
 ---
 
-# Microsoft Dynamics 365 ERP (finance and operations) User Security Role Validation and Improved Reporting FAQ
+# Integrated License Management for Finance and Operations apps FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
 
@@ -21,6 +21,7 @@ This article addresses the most common questions about feature enforcement for u
 On March 28, 2025, we released a [blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) introducing updates that will help centralize user license management and provide clarity for administrators. **Starting April 30, 2025**, administrators will have access to license usage reporting that shows the seats available, and the seats assigned. For users that have not yet been assigned a license, they will start to see an in-product notification asking them to contact their administrator to request license assignment.
 
 **Beginning August 30, 2025** users will require an assigned license to access the Dynamics 365 finance and operations applications. We are giving customers time to prepare with tools and training to support any action needed. For users that already have licenses assigned, there will be no disruption, and no action is needed from their administrator.
+
 > [!IMPORTANT]
 > Enforcement is applicable to commercial cloud solutions. Government cloud and on-prem offerings are excluded from this initial stage.
 
