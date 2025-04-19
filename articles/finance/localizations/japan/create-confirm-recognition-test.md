@@ -1,52 +1,43 @@
 ---
 title: Create and confirm recognition test
-description: For Japan, impairment is conducted in two main steps. Learn about creating and confirm recognition tests with a process using the JPMF demo data company.
+description: Learn how to create and confirm recognition tests for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_JP
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Create and confirm recognition test
 
 [!include [banner](../../includes/banner.md)]
 
-For Japan, impairment is conducted in two main steps. The first step is to test whether an impairment is needed. The second step is to calculate the impairment amount if needed. 
+This article explains how to create and confirm recognition tests for Japan in Microsoft Dynamics 365 Finance.
 
+In Japan, impairment of fixed assets is done using a two-step method in accordance with Japanese generally accepted accounting principles (GAAP). The first step (*Method I*) tests whether an impairment is needed, and the second step (*Method II*) calculates the impairment amount if needed.
 
+The following procedure walks you through how to run the two-step process in a recognition test and then get it ready for posting. This procedure was created using the demo data company JPMF.
 
-Use this task to learn how to run the two step process in a recognition test and get it ready for posting. 
+Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
 
+To create and confirm a recognition test, follow these steps.
 
-
-In order to complete this procedure, the Fixed Asset configuration key must be selected.
-
-
-
-This procedure was created using the demo data company JPMF.
-
-1. Go to Fixed assets > Periodic tasks > Impairment recognition (Method I: on a bigger group than CGU).
-    * For method 2, go to Fixed assets > Periodic tasks > Impairment recognition (Method II: Allocate carrying amount of shared asset / goodwill to CGUs).  
-2. Click New.
-3. In the CGU group field, type a value.
-4. In the Date field, enter a date.
-    * Enter the date on which to post the impairment transaction.  
-5. In the Description field, type a value.
-6. Click Save.
-7. Click Recognition test.
-8. Click Run test.
-    * The recognition test will compare the sum of the net book value with the undiscounted cash flow of each cash generating unit to determine if calculation of the impairment amount is needed.  
-9. Click Calculate.
-    * If the test result is 'Yes', then the recognition test will subtract the recoverable amount from the net book value to determine the impairment adjustment amount. The impairment adjustment amount is distributed to each of the fixed assets for posting.  
-10. Click Confirm.
-    * You only can post confirmed recognition tests.  
-11. Click Yes.
+1. In Dynamics 365 Finance, for Method I, go to **Fixed assets \> Periodic tasks \> Impairment recognition (Method I: on a bigger group than CGU)**. For Method II, go to **Fixed assets \> Periodic tasks \> Impairment recognition (Method II: Allocate carrying amount of shared asset/goodwill to CGUs)**.  
+1. Select **New**.
+1. In the **CGU group** field, enter a value.
+1. In the **Date** field, enter the date on which to post the impairment transaction.  
+1. In the **Description** field, enter a value.
+1. Select **Save**.
+1. Select **Recognition test**.
+1. Select **Run test**. The recognition test compares the sum of the net book value with the undiscounted cash flow of each cash generating unit to determine if calculation of the impairment amount is needed.  
+1. Select **Calculate**. If the test result is "Yes", the recognition test subtracts the recoverable amount from the net book value to determine the impairment adjustment amount. The impairment adjustment amount is distributed to each of the fixed assets for posting.  
+1. Select **Confirm**. You only can post confirmed recognition tests.  
+1. Select **Yes**.
 
 
 
