@@ -96,7 +96,7 @@ Follow these steps to check material availability for work orders.
     | Symbol | Description |
     | --- | --- |
     | :::image type="icon" source="media/material-check-available.png" border="false"::: | The required material is fully available. The **Requested quantity** field shows the quantity that's requested by the work order. For material in this status, the quantity in the **Requested quantity** field equals the quantity in the **On-hand settled** field. |
-    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. For material in this status, the quantity in the **Requested quantity** field isn't fully covered by the quantity in the **On-hand settled** field. Instead, it's covered by a combination of the quantities in the **On-hand settled**, **Planned order settled**, and/or **Order settled** fields.
+    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. For material in this status, the quantity in the **Requested quantity** field isn't fully covered by the quantity in the **On-hand settled** field. Instead, it's covered by a combination of the quantities in the **On-hand settled**, **Planned order settled**, and/or **Order settled** fields. |
 
     > [!TIP]
     > To get more information about how the demand for the requested quantity is covered, select **Inventory \> Explosion** on the toolbar in the **On-hand inventory** section.
@@ -125,24 +125,23 @@ After you've confirmed that all materials are available for a work order, you ca
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-The *aggregated material availability check* feature aggregates supply and demand per item, providing a comprehensive view of potential material shortages. You can use this feature to view inventory levels and the total material requirements summed across selected work orders. This consolidated view makes it easy to identify and assess any deficiencies in the inventory and helps provide a comprehensive understanding of your material needs so you can take proactive measures to address any shortages.
+The *aggregated material availability check* feature aggregates supply and demand per item to provide a comprehensive view of potential material shortages. You can use this feature to view inventory levels and the total material requirements across selected work orders. This consolidated view makes it easy to identify and assess any deficiencies in your inventory. It helps you gain a comprehensive understanding of your material needs, so that you can take proactive measures to address any shortages.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites for this feature
 
-To use the aggregated material availability check feature, your system must meet the following requirements:
+Before you can use the aggregated material availability check feature, your system must meet the following requirements:
 
-- Your system must meet the prerequisites listed at the start of this article.
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Aggregated material availability check* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Your system must meet the prerequisites that are listed at the beginning of this article.
+- You must be running Supply Chain Management version 10.0.44 or later.
+- The feature that is named *Aggregated material availability check* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### View aggregated material availability information
+### View information about aggregated material availability
 
-To gain an overview of the total material requirements by spare part and warehouse dimension across all selected work orders, follow these steps:
+To gain an overview of the total material requirements by spare part and warehouse dimension across all selected work orders, follow these steps.
 
-1. If the **Work order material availability check** page isn't already open, open it as described previously in this article.
-1. In the bottom section, open the **Aggregated on-hand inventory** tab.
-1. Review the information shown.
+1. If the **Work order material availability check** page isn't already open, open it as described earlier in this article.
+1. In the bottom section of the page, on the **Aggregated on-hand inventory** tab, review the information that is shown.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
