@@ -56,7 +56,7 @@ The *Receiving completed* periodic task automatically runs the *Receiving comple
 
 ## Example: Include only loads with fully completed work
 
-To set up the *Receiving completed* periodic task so that it includes only loads that have fully completed work, follow these steps.
+To set up the *Receiving completed* periodic task so that it includes only loads where work was fully completed, follow these steps.
 
 1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**.
 1. On the **Records to include** FastTab, select **Filter**.
@@ -80,7 +80,7 @@ To set up the *Receiving completed* periodic task so that it includes only loads
     - **Criteria** – Enter two double quotation marks ("") to denote an empty value.
 
     > [!TIP]
-    > Because of the **Criteria** setting on this line, the query finds only records that have an empty value in the **Load receiving completed date and time** field. Therefore, the task won't consider loads that were already received. If you omit this setting, the task becomes slower each time that it runs.
+    > Because of the **Criteria** setting on this line, the query finds only records that have an empty value in the **Load receiving completed date and time** field. As a result, the task doesn't consider loads that were already received. If you omit this setting, the task becomes slower each time that it runs.
 
 1. Select **OK**.
 1. Set other options for the task as described in the previous section.
