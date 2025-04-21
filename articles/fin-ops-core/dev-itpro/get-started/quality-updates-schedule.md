@@ -63,17 +63,17 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Completed |
 | 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| Completed |
 | 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| Completed |
-| 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| In-Progress |
+| 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| Completed |
 | 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Completed |
 | 10.0.41 PQU-2 | November 8, 2024 | November 11, 2024 to January 5, 2025| Canceled |
 | 10.0.41 PQU-3 | December 31, 2024 | January 6, 2025 to February 9, 2025| Completed |
 | 10.0.41 PQU-4 | January 29, 2025 | February 3, 2025 to March 9, 2025| Completed |
 | 10.0.41 PQU-5 | February 26, 2025 | March 3, 2025 to April 6, 2025| Completed |
 | 10.0.41 PQU-6 | March 26, 2025 | March 31, 2025 to May 4, 2025| In-Progress |
-| 10.0.41 PQU-7 | April 23, 2025 | April 28, 2025 to June 1, 2025| Not Started |
+| 10.0.41 PQU-7 | April 23, 2025 | April 28, 2025 to June 1, 2025| In-Progress |
 | 10.0.41 PQU-8 | May 23, 2025 | June 2, 2025 to July 6, 2025| Not Started |
 | 10.0.42 PQU-1 | February 12, 2025 | February 18, 2025 to March 23, 2025| Completed |
-| 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| In-Progress |
+| 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| Completed |
 | 10.0.42 PQU-3 | April 9, 2025 | April 14, 2025 to May 18, 2025| In-Progress |
 | 10.0.42 PQU-4 | May 7, 2025 | May 12, 2025 to June 15, 2025| Not Started |
 | 10.0.42 PQU-5 | June 4, 2025 | June 9, 2025 to July 13, 2025| Not Started |
@@ -111,24 +111,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.40 Release-9 train schedule
-
-**App version: 10.0.1935.220**
-
-**Platform version: 7.0.7279.204**
-
-**Unified Environment Provisioning Application Version: 10.0.40.11**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | March 10 to March 13, 2025 | NA |
-| Station 2 | March 17 to March 20, 2025 | March 29 to March 30, 2025 |
-| Station 3 | March 18 to March 21, 2025 | March 29 to March 30, 2025 |
-| Station 4 | March 24 to March 27, 2024 | April 5 to April 6, 2025 |
-| Station 5 | March 31 to April 3, 2025 | April 12 to April 13, 2025 |
-| Station 6 | April 1 to April 4, 2025 | April 12 to April 13, 2025 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-6 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.41 Release-6 train schedule
 
 **App version: 10.0.2015.213**
 
@@ -145,22 +128,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | April 21 to April 24, 2025 | May 3 to May 4, 2025 |
 | Station 6 | April 22 to April 25, 2025 | May 3 to May 4, 2025 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.42 Release-2 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.41 Release-7 train schedule
 
-**App version: 10.0.2095.129**
+**App version: 10.0.2015.225**
 
-**Platform version: 7.0.7452.105**
+**Platform version: 7.0.7367.174**
 
-**Unified Environment Provisioning Application Version: 10.0.42.5**
+**Unified Environment Provisioning Application Version: 10.0.41.10**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | March 17 to March 20, 2025 | NA |
-| Station 2 | March 24 to March 27, 2025 | April 5 to April 6, 2025 |
-| Station 3 | March 25 to March 28, 2025 | April 5 to April 6, 2025 |
-| Station 4 | March 31 to April 3, 2025 | April 12 to April 13, 2025 |
-| Station 5 | April 7 to April 10, 2025 | April 19 to April 20, 2025 |
-| Station 6 | April 8 to April 11, 2025 | April 19 to April 20, 2025 |
+| Station 1 | April 28 to May 1, 2025 | NA |
+| Station 2 | May 5 to May 8, 2025 | May 17 to May 18, 2025 |
+| Station 3 | May 6 to May 9, 2025 | May 17 to May 18, 2025 |
+| Station 4 | May 12 to May 15, 2025 | May 24 to May 25, 2025 |
+| Station 5 | May 19 to May 22, 2025 | May 31 to June 1, 2025 |
+| Station 6 | May 20 to May 23, 2025 | May 31 to June 1, 2025 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.42 Release-3 train schedule
 
