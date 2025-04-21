@@ -143,7 +143,12 @@ In versions earlier than Dynamics 365 Finance version 10.0.43, the PDF conversio
 - the PDF conversion option is available for cloud deployments and on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
 - the PDF document that is produced is limited to a maximum length of 300 pages.
 
-In Dynamics 365 Finance version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
+In Dynamics 365 Finance version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. 
+
+> [!NOTE]
+> The **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is available in Finance version 10.0.43 and the 10.0.2095.**124** build and later of the 10.0.42 version.
+
+This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
 
 The advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled are:
 
