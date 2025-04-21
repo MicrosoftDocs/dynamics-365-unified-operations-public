@@ -39,8 +39,12 @@ This section contains a table that lists the features that are included in this 
 | Cash and bank management | **Bank transactions** page performance improvement | This feature introduces performance enhancements on the **Bank transactions** page. The introduced changes allow users to optionally set default filters to show only transactions meeting the criteria. By enabling this feature, users are able to access the bank documents form directly from the **Bank account** page. | Feature management | 
 | Cash and bank management | Enable process automation for bank foreign currency revaluation | By enabling this feature, users are able to run bank foreign currency revaluation using process automation. | Feature management |  
 | Cash and bank management | Accounts payable enable settle with priority | This feature enhances the Accounts payable module by introducing settlement priority. It allows users to assign a predetermined order to transactions, which can be applied during both manual and automatic settlements. | Feature management | 
- 
-
+| Credit and collections	| Collection process automation to include project invoices and general journals| 	Collection process automation previously didn't include project invoices and general journals, with this feature enabled, users can include them.	| Feature management| 
+| Credit and collections| 	Include general journals in the interest calculation process| When creating interest notes, users can include general journals so interest is calculated on them.	| Feature Management| 
+| Accounts receivable	| Prepayment customer invoice feature	| The **Prepayment customer invoice** feature allows users to create and manage invoices for customer prepayments. This feature streamlines the invoicing process and enhances customer relationships by offering flexible payment options.| 	Feature management| 
+| Subscription billing	| Performance issue creating billing detail lines for daily usage billing schedule line| Improved performance by replacing the line-based logic to set based processing Subscription billing consumption entry. In addition to performance improvements, pricing control logic is updated to ensure consistency and prevent pricing discrepancies.| | 
+| Subscription billing	| The deferral schedule is being updated with the wrong adjustment amount following termination, in cases where the subscription is created with Project and where the contract currency differs from the accounting currency | 	Termination adjustments is now calculated using the exchange rate on the termination date, posts currency fluctuation differences to the Profit and loss account, and maintains a clear audit trail in the deferral schedule. | | 
+| Accounts receivable| 	Clean up Free text invoice temp tables used in Free text invoice report. | 	Data update automatically schedules maintenance jobs to clean up temporary data for Free text and Sales invoice reports, eliminating the need for manual scheduling by users.| | 
 
 
 ## Feature enhancements included in this release
@@ -51,6 +55,10 @@ This section contains a table that lists the enhancements that are included in t
 |---|---|---|---|
 | Cash and bank management | Modern bank reconciliation | To prevent the import of duplicate bank statements, we check for a combination of AccountNo, StatementID, FromDate, and ToDate. If these elements match an existing bank statement, it is considered a duplicate and isn't imported. This ensures that each bank statement file is unique and avoids redundancy. | Default |
 | Cash and bank management | Customer and vendor netting | The **Netting history** feature provides a comprehensive overview of all netted transactions between customer and vendor pairs, ensuring transparency and ease of tracking. | Feature management |
+| Credit and collections	| CustCollectionsBIMeasurementV3	| CustCollectionsBIMeasurementV3 is a new entity and the CustCollectionsBIMeasurement entity is deprecated.| 	Default| 
+| Credit and collections	| Exclude intercompany sales orders from credit management| Moved the **Exclude from credit management for intercompany sales orders** feature to a parameter.	| Parameter| 
+| Accounts receivable| 	Prepayment customer invoice feature	| Microsoft Dynamics 365 finance and operations introduced a significant enhancement with the **Customer prepayment invoice** feature. This feature is  aimed at improving control and transparency over customer prepayment processes. |Feature management | 
+
 
 
 ## Features turned on by default in this release
@@ -69,8 +77,7 @@ The following table lists the features that were removed from Feature management
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
-
-
+|Exclude intercompany sales orders from credit management|	The **Exclude from credit management for intercompany sales orders** feature moved to a parameter.	|Credit and collections |
 
 ## More information
 
@@ -92,7 +99,6 @@ Services and view the planned regulatory updates using the issue search tool. Is
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2024 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that
-you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2024 release wave 1 plan](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 
