@@ -14,12 +14,11 @@ ms.dyn365.ops.version: 10.0.25
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
-# Subscription billing overview
+# Correction of deferral schedule and unbilled revenue calculation during subscription termination
 
 [!include [banner](../includes/banner.md)]
 
-In version 10.0.44 of Dynamics 365 Finance, Microsoft has addressed a critical issue where deferral schedules and unbilled revenue audit entries were calculated incorrectly when subscription billing contracts were 
-terminated with refunds. This issue previously prevented accurate credit note generation and led to inconsistent financial reporting.
+In version 10.0.44 of Dynamics 365 Finance, Microsoft has addressed a critical issue where deferral schedules and unbilled revenue audit entries were calculated incorrectly when subscription billing contracts were terminated with refunds. This issue previously prevented accurate credit note generation and led to inconsistent financial reporting.
 
 When a subscription contract is fully terminated and a refund is issued, the system is expected to reverse the relevant amounts in both the deferral schedule and unbilled revenue audit entries. However, prior to 
 this fix, the system incorrectly calculated these values, particularly when currency exchange rate differences were involved.
