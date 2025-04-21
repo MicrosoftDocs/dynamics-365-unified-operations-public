@@ -291,7 +291,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="odd">
 <td>Cluster picking</td>
-<td>The worker groups work into clusters. Clusters lets workers pick items from a single location for multiple work orders at the same time.</td>
+<td>The worker groups work into clusters. Clusters let workers pick items from a single location for multiple work orders at the same time.</td>
 </tr>
 <tr class="even">
 <td>Cycle count grouping</td>
@@ -440,13 +440,14 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Display tracking dimension control for last on-hand</td>
-<td>Select an option to determine how the <em>tracking dimension below location control</em> is displayed for the last on-hand item, including <em>batch below number</em> and <em>serial below number</em>. It has no impact on tracking dimension above location, such as <em>batch above number</em> or <em>serial above number</em> display. Select one of the following options:
+<td><p>Select one of the following options to specify how the <em>tracking dimension below location</em> control, including <em>batch below number</em> and <em>serial below number</em>, is shown for the last on-hand item. The setting of this field has no impact on the display of <em>tracking dimension above location</em>, such as <em>batch above number</em> or <em>serial above number</em>.</p>
 <ul>
 <li><em>Default from warehouse management parameters</em> – The menu item follows the configuration on the <strong>Warehouse management parameters</strong> page. Learn more in <a href="mobile-device-parameters.md">Global mobile device parameters</a>.</li>
-<li><em>Display tracking dimension control</em> – The current menu item always displays the tracking dimension below location control (batch below number or serial below number), regardless of the warehouse management parameters setting.</li>
-<li><em>Hide tracking dimension control</em> – The current menu item always hides the tracking dimension below location control (batch below number or serial below number), regardless of the warehouse management parameters setting.</li>
+<li><em>Display tracking dimension control</em> – The current menu item always shows the tracking dimension below location control (batch below number or serial below number), regardless of the settings of warehouse management parameters.</li>
+<li><em>Hide tracking dimension control</em> – The current menu item always hides the tracking dimension below location control (batch below number or serial below number), regardless of the setting of warehouse management parameters.</li>
 </ul>
-<strong>Note:</strong> This setting only affects menu items that process a supported work order type (currently only sales orders). Other work order types (such as transfer order, purchase order) aren't supported.</td>
+<p><strong>Note:</strong> This setting affects only menu items that process a supported work order type (currently only sales orders). Unsupported work order types (such as transfer orders and purchase orders) aren't affected.</p>
+</td>
 </tr>
 </tbody>
 </table>

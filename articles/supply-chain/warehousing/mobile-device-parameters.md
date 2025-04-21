@@ -37,31 +37,33 @@ The global mobile device settings are found on the **Mobile device** FastTab on 
 
 ## Inventory dimension display options
 
-On the **Mobile device menu item display inventory dimensions** FastTab, you can configure how *tracking dimension below location* is displayed in the mobile app, including *batch below number* and *serial below number*. It has no impact on tracking dimension above location, such as *batch above number* or *serial above number* display.
+On the **Mobile device menu item display inventory dimensions** FastTab, you can use the **Display tracking dimension control for last on-hand** field to specify how the mobile app shows the *tracking dimension below location* control, including *batch below number* and *serial below number*. The setting has no impact on the display of *tracking dimension above location*, such as *batch above number* or *serial above number*.
 
-The **Display tracking dimension control for last on-hand** setting applies to the entire work order type, which means that it affects all mobile device menu items if they're used to process this work order type. Currently, this feature is supported only for sales orders; other work order types (such as transfer orders and purchase orders) aren't supported. The setting has two options:
+The setting of the **Display tracking dimension control for last on-hand** field applies to the entire work order type. Therefore, it affects all mobile device menu items that are used to process the work order type. Currently, this feature is supported only for sales orders. No other work order types (such as transfer orders and purchase orders) are supported.
 
-- *Display tracking dimension control* – The mobile app always displays the tracking dimension below location control (batch below number or serial below number) when processing this work order type.
-- *Hide tracking dimension control* – The mobile app always hides the tracking dimension below location control (batch below number or serial below number) when processing this work order type.
+Two options are available for this field:
+
+- *Display tracking dimension control* – The mobile app always shows the tracking dimension below location control (batch below number or serial below number) when the work order type is processed.
+- *Hide tracking dimension control* – The mobile app always hides the tracking dimension below location control (batch below number or serial below number) when the work order type is processed.
 
 Consider the following scenario:
 
-- You have a batch below item called *whsbb*.
-- A sales order is placed for *whsbb* with a quantity of *two pieces*.
-- The available on-hand inventory for *whsbb* is two pieces (the last batch in stock).
+- You have a batch below item that is named *whsbb*.
+- A sales order is placed for a quantity of two pieces of item *whsbb*.
+- The available on-hand inventory for item *whsbb* is two pieces (the last batch in stock).
 
-If the setting is configured to *Hide tracking dimension control* (default configuration):
+If the **Display tracking dimension control for last on-hand** field is set to *Hide tracking dimension control* (the default value), the following behavior occurs:
 
-- The system automatically assigns the batch number behind the scene and proceeds.
-- The mobile app doesn't display batch number control.
+- The system automatically assigns the batch number behind the scenes and then proceeds.
+- The mobile app doesn't show batch number control.
 - The worker can't confirm or edit the batch number in the mobile app, even if batch number confirmation is enabled.
 
-If the setting is configured to *Display tracking dimension control*:
+If the field is set to *Display tracking dimension control*, the following behavior occurs:
 
-- The mobile app displays an *empty* batch number control.
+- The mobile app shows an *empty* batch number control.
 - The user must manually enter the batch number.
 
-You can overwrite this default setting for any individual mobile device menu item that supports it by going to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**. Learn more in [Additional menu item options](configure-mobile-devices-warehouse.md#additional-menu-item-options).
+You can override the default setting for any individual mobile device menu item that supports it by going to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**. Learn more in [Additional menu item options](configure-mobile-devices-warehouse.md#additional-menu-item-options).
 
 > [!NOTE]
-> This setting only affects menu items that process a supported work order type (currently only sales orders). Other work order types (such as transfer order, purchase order) aren't supported.
+> This setting affects only menu items that process a supported work order type (currently only sales orders). Unsupported work order types (such as transfer orders and purchase orders) aren't affected.
