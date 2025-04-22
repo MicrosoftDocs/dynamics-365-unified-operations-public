@@ -77,4 +77,4 @@ The portal shows all collected feedback. Admins can filter, review details, and 
 
 ## Related information
 
-Enhanced user feedback for Copilot and related experiences uses the same [in-product feedback system as Microsoft 365 apps](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide). For information about what feedback data is collected about Copilot and how it's used, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/en-us/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+Enhanced user feedback for Copilot and related experiences uses the same [in-product feedback system as Microsoft 365 apps](/microsoft-365/admin/misc/feedback-user-control). For information about what feedback data is collected about Copilot and how it's used, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/providing-feedback-about-microsoft-copilot-with-microsoft-365-apps-c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
