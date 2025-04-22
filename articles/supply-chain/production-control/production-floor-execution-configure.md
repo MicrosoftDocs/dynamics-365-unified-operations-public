@@ -42,7 +42,7 @@ To use this functionality, turn on one or both of the following features in [Fea
 
 - *Register material consumption on the production floor execution interface (non-WMS)* (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.43, it's mandatory and can't be turned off.)
 - *Register material consumption as complete and edit dimensions on the production floor execution interface* (This feature adds support for WMS-enabled items. It requires Supply Chain Management version 10.0.42 or later.)
-- *Add lines to the adjust materials dialog* (Allows workers to add and delete material lines in the **Adjust Materials** dialog on the Production Floor Execution interface. It requires Supply Chain Management version 10.0.44 or later.)
+- *Add lines to the adjust materials dialog* (Allows workers to add and delete material lines in the **Adjust Materials** dialog on the production floor execution interface. It requires Supply Chain Management version 10.0.44 or later.)
 
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
