@@ -106,7 +106,7 @@ The **Filter settings** page includes the following fields:
 - **Display option** – The following options are available:
 
     - **Single value** – This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. It allows only a single value to be selected for refiners on product list pages, such as category browsing and product search results pages.
-    - **Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. It enables multiple values to be selected for the attribute in the client, for refinement.
+    - **Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. 
 
 - **Display control** – The following options are available:
 
@@ -272,7 +272,7 @@ To override the attribute values of all products in a catalog, follow the steps 
 
 ### Override the attribute values of all products in a channel
 
-To override the attribute values of all products in a channel, follow the steps in this example procedure.
+To override the attribute values of all products in a channel, follow the steps in this example procedure. Please note that mutiple values separated with pipe symbol can be defined for an attribute only when the attribute type does not have a fixed list of values.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
