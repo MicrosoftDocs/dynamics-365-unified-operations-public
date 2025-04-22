@@ -4,7 +4,7 @@ description: Learn about the health check view for offline readiness feature in 
 author: anush6121
 ms.author: anvenkat 
 ms.topic: overview 
-ms.date: 03/31/2025
+ms.date: 04/25/2025
 ms.reviewer: v-chrgriffin
 ms.custom: 
   - bap-template
