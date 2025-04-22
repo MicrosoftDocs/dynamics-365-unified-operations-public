@@ -36,6 +36,12 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information |
 |---|---|---|
+|Compensation management |Linking variable pay to position|	<ul><li> Variable pay enrollment - Compensation managers can link employee positions to variable compensation enrollment through a designated path. A new section for positions is added to allow multiple positions to be linked to variable pay plans, with a new grid created to maintain these relationships. </li><li> Variable compensation awards - A new **Position** field is added to the **Variable compensation awards** section. This field enables managers to specify positions when assigning awards, with dropdown lists populated by active positions for each employee. </li><li> Data entity modifications - Data entities are modified ensuring that position details are included in exported data for both enrollment and awards. This includes adding new columns for positions, which is essential for proper data management and reporting.</li></ul> 
+|Benefits management |Clean up benefits eligibility process results|	A batch job has been implemented to delete process results older than a specified timeframe, ensuring regular cleanup and improved system performance. This is available when Benefits management is enabled.|
+|Benefits |Employee start date filters for benefits eligibility processing batch job	|A new filter on **Employee start date** has been added to the **Benefits eligibility processing** batch job to restrict processing based on employees' start dates.|
+
+
+
 
 ## Features turned on by default in this release
 
