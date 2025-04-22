@@ -33,7 +33,7 @@ The health check view for offline readiness feature provides the following key f
 
 ### Database information
 
-- **SQL instance name**: Retrieves the SQL instance name from the connection string.
+- **SQL Server instance name**: Retrieves the SQL Server instance name from the connection string.
 - **Database size**: Provides the current size of the database.
 - **Maximum database size**: Displays the maximum allowable size of the database.
 - **Database index compression**: Verifies that database index compression is enabled.
@@ -55,7 +55,7 @@ When the health check operation is initiated, it performs the following checks:
 
 - **Database connection status**: Ensures that the connection string is correct, and that the server is reachable.
 - **Download session status**: Confirms data synchronization and successful downloads.
-- **Database information**: Retrieves the SQL instance name, database size, and maximum database size, and verifies index compression.
+- **Database information**: Retrieves the SQL Server instance name, database size, and maximum database size, and verifies index compression.
 - **Disk space**: Displays the total and available disk space.
 - **Device/user verification**: Checks for the existence of the activated device and signed-in employee in the offline database.
 
