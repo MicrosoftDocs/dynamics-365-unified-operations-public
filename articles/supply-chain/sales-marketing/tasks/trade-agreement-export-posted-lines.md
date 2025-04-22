@@ -7,25 +7,21 @@ This article provides step-by-step instructions on how to convert posted trade a
 
 Follow these steps to convert posted trade agreement lines into unposted lines and export them:
 1. **Access active trade agreement lines:**
-
-    Open your browser and navigate to the following URL, replacing <your-url> and <your_cmp_name> with your environment and company name values:
-
-    https://<your-url>/?cmp=<your_cmp_name>&amp;mi=PriceDiscTable_PricePurchAction</your_cmp_name></your-url>
-
-    This will open the page displaying all active sales or purchase prices.
-2. **Select and edit the lines:**
+    Navigate Accounts Payable -> Vendors -> All vendors
+    Select Procurement -> Agreements -> Trade agreements 
+3. **Select and edit the lines:**
     - Select all the lines or a subset of lines you want to export.
     - Click on the **Edit selected lines** button in the ribbon.
     ![image](https://github.com/user-attachments/assets/5845e27f-4654-4f43-8be5-9164ee168320)
 
-3. **Assign to a journal:**
+4. **Assign to a journal:**
     - In the slider dialog that appears, select a journal name.
     - Click **OK**.
 
     This action converts the active price trade agreement lines into open trade agreement lines, which are now exportable.
 ![image](https://github.com/user-attachments/assets/aefa21fe-071f-47bc-81ce-6c3ac8d38078)
 
-4. **Export the open trade agreement lines:**
+5. **Export the open trade agreement lines:**
 
     Once the lines have been converted to open trade agreements, you can proceed to export them.
 
