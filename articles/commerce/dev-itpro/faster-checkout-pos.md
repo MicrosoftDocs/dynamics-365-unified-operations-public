@@ -1,5 +1,5 @@
 ---
-title: Check out faster with optimized payment flows
+title: Check out faster with optimized payment flows (preview)
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 04/25/2025
@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ---
 
-# Check out faster with optimized payment flows 
+# Check out faster with optimized payment flows (preview) 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
