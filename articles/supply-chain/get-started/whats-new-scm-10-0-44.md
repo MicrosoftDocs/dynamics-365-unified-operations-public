@@ -51,7 +51,6 @@ Some of these features aren't visible on your system until you turn them on in [
 | **Module:** Production control<br><br>**Feature management name:** *Add lines to the adjust materials dialog* | Lets you add and delete material lines in the **Adjust materials** dialog on the production floor execution interface. |
 | **Module:** Production control<br><br>**Feature management name:** *Enhanced user experienced for tracked components management* | Enhances the production floor execution interface to provide a more efficient and user-friendly experience for registering tracked component information. Workers can now use the scan option instead of toggle buttons to register serial or batch numbers for finished goods. You can now choose between multiple scan modes (*product* or *component*), which allows for greater flexibility and accuracy. The interface for editing product and component associations has been improved, making it easier to manage and update these associations. |
 | **Module:** Production control<br><br>**Feature management name:** *List view for reporting job scrap from the production floor execution interface* | Workers reporting job scrap from the production floor execution interface can now choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available. |
-| **Module:** Production control<br><br>**Feature management name:** ** |  |
 
 ## Features becoming mandatory in this release
 
