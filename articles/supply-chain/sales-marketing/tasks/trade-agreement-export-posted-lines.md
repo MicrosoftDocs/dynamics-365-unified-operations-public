@@ -1,3 +1,15 @@
+---
+title: How to export Posted Trade Agreement Lines
+description: Learn step-by-step instructions on how to export posted tradeagreement lines.
+author: Sumit Gaur
+ms.author: sugaur
+ms.reviewer: kamaybac
+ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
+ms.topic: how-to
+ms.date: 04/22/2025
+ms.custom: 
+  - bap-template
+---
 # How to export Posted Trade Agreement Lines
 
 This article provides step-by-step instructions on how to export posted tradeagreement lines. Microsoft Dynamics 365 standard data entities do not support the direct export of posted trade agreement lines. By following these steps, you can convert the posted lines to unposted ones, making them exportable.
@@ -50,7 +62,7 @@ Follow these steps to convert posted trade agreement lines into unposted lines a
    1. On the Action Pane, open the **Export options** tab and select **Export now**.
    1. The **Execution summary** page opens. Here you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the *Open purchase price journal lines V2* or *Open sales price journal lines V2* entity in the list, and then select **Download file** to download the data that was exported from that entity.
    
-   For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md)
+   For more information about how to use data management to export data, see [Data import and export jobs overview](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md)
    
 
 
