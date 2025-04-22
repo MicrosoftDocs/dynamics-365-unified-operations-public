@@ -24,7 +24,7 @@ Generative help and guidance is currently available in the United States in the 
 
 If the Copilot icon isn't visible in the upper-right corner of Business performance planning, an administrator should review the following settings:
 
-1. In the Power Platform admin center, confirm that consent was given to the terms of use for agents and generative AI features. Learn more in [Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features](power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
+1. In the Power Platform admin center, confirm that consent was given to the terms of use for agents and generative AI features. Learn more in [Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
 1. In the Power Platform admin center, confirm that the **Move data across regions** checkbox is selected in addition to the **Bing search** checkbox.
 
     > [!NOTE]
