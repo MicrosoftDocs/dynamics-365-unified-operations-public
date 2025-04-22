@@ -1,4 +1,4 @@
-# How to Convert and Export Posted Trade Agreement Lines
+# How to export Posted Trade Agreement Lines
 
 This article provides step-by-step instructions on how to convert posted trade agreement lines into unposted lines and export them. Microsoft Dynamics 365 standard data entities do not support the direct export of posted trade agreement lines. By following these steps, you can convert the posted lines to unposted ones, making them exportable.
 
@@ -7,8 +7,14 @@ This article provides step-by-step instructions on how to convert posted trade a
 
 Follow these steps to convert posted trade agreement lines into unposted lines and export them:
 1. **Access active trade agreement lines:**
-    Navigate Accounts Payable -> Vendors -> All vendors
-    Select Procurement -> Agreements -> Trade agreements 
+   
+   For Purchase trade agreements
+    1. Navigate Accounts Payable -> Vendors -> All vendors
+    2. Select Procurement -> Agreements -> Trade agreements
+   
+   For Sales trade agreements
+    1. Account receivable -> Customers -> All customers 
+    2. Sell -> Trade agreements -> Agreement 
 3. **Select and edit the lines:**
     - Select all the lines or a subset of lines you want to export.
     - Click on the **Edit selected lines** button in the ribbon.
