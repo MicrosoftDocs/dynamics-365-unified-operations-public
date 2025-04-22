@@ -30,14 +30,14 @@ Follow these steps to convert posted trade agreement lines into unposted lines a
 3. **Select and edit the lines:**
     - Select all the lines or a subset of lines you want to export.
     - Click on the **Edit selected lines** button in the ribbon.
-    ![image](https://github.com/user-attachments/assets/5845e27f-4654-4f43-8be5-9164ee168320)
+    ![image1](https://github.com/user-attachments/assets/5845e27f-4654-4f43-8be5-9164ee168320)
 
 4. **Assign to a journal:**
     - In the slider dialog that appears, select a journal name.
     - Click **OK**.
 
     This action converts the active price trade agreement lines into open trade agreement lines, which are now exportable.
-![image](https://github.com/user-attachments/assets/aefa21fe-071f-47bc-81ce-6c3ac8d38078)
+![image2](https://github.com/user-attachments/assets/aefa21fe-071f-47bc-81ce-6c3ac8d38078)
 
 5. **Export the open trade agreement lines:**
       
@@ -51,7 +51,7 @@ Follow these steps to convert posted trade agreement lines into unposted lines a
    
        - **Entity name** – Select *Open purchase price journal lines V2* or *Open sales price journal lines V2*
        - **Target data format** – Select the format to export data to.
-   ![image](https://github.com/user-attachments/assets/c703927f-a80a-4331-b960-73cb5efa8958)
+   ![image3](https://github.com/user-attachments/assets/c703927f-a80a-4331-b960-73cb5efa8958)
    1. Select **Add** to add the new row, and then select **Close** to close the dialog box.
    1. Usually, you'll export one report at a time. To export a single report, select the button in the **Filter** column for the row that you just added to **Selected entities** FastTab. Then use the query designer to set up the following filter:
        - **Table** – Select *Open purchase price journal lines V2* or *Open sales price journal lines V2*
