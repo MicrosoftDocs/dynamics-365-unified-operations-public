@@ -32,7 +32,7 @@ If the Copilot icon isn't visible, an administrator should review the following 
 - In the Power Platform admin center, confirm that consent was given to the terms of use for agents and generative AI features.
 - In the Power Platform admin center, confirm that the **Move data across regions** checkbox is selected in addition to the **Bing search** checkbox.
 - In the Power Platform admin center, confirm that the **Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps** field is set to either **Default** or **On** for your environment.
-- In the maker portal, confirm that the **Copilot control** field is set to either **Default** or **On** for the Business performance app.
+- In the Power Apps maker portal, confirm that the **Copilot control** field is set to either **Default** or **On** for the Business performance app.
 
 ## How can users interact with Copilot?
 
