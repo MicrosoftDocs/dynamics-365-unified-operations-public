@@ -1,6 +1,6 @@
 # How to export Posted Trade Agreement Lines
 
-This article provides step-by-step instructions on how to convert posted trade agreement lines into unposted lines and export them. Microsoft Dynamics 365 standard data entities do not support the direct export of posted trade agreement lines. By following these steps, you can convert the posted lines to unposted ones, making them exportable.
+This article provides step-by-step instructions on how to export posted tradeagreement lines. Microsoft Dynamics 365 standard data entities do not support the direct export of posted trade agreement lines. By following these steps, you can convert the posted lines to unposted ones, making them exportable.
 
 
 ## Convert and export posted trade agreement lines
