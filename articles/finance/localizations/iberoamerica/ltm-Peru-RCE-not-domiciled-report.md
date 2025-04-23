@@ -15,8 +15,6 @@ ms.author: v-federicohe
 
 This article explains how to configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru in Microsoft Dynamics 365 Finance.
 
-This article provides a guide on how to set up and generate the various annexes (reports) for the **Electronic Purchase Register (RCE)** for purchases not domiciled in Peru.
-
 The RCE enables taxpayers to manage their electronic purchase records. The Peruvian fiscal authority Superintendencia Nacional de Aduanas y de Administración Tributaria (SUNAT) generates a monthly proposal designed to serve as a comparative tool, helping taxpayers identify discrepancies in their records.
 
 The RCE for purchases not domiciled in Peru includes annexes 9, 12.8.5 and 13.5.2. The Excel output version of the 13.5.2 annex is also included.
