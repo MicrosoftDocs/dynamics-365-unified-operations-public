@@ -18,47 +18,47 @@ ms.collection:
 
 [!include [banner](../includes/banner.md)]
 
-This articles describes the purpose and use cases for the default dashboard, its content such as app tiles and workspaces and how to personalize it.
+This article describes the purpose and use cases for the default dashboard, its content (such as app tiles and workspaces), and how to personalize it.
 
 :::image type="content" source="media/default-dashboard.png" alt-text="The default dashboard as it appears to an administrator." lightbox="media/default-dashboard.png":::
 
-The default dashboard is a [dashboard](../../dev-itpro/user-interface/page-navigation.md#dashboard) kind of page in finance and operations apps that is by default set at the [initial page](set-users-initial-page.md). It comes pre-configured with a set uf useful components that help users to navigate within the application, such as  workspaces, in a simple visual experience. Components, such as workspaces and apps, will only be shown if the user has given respective permissions.
+The default dashboard is a [dashboard](../../dev-itpro/user-interface/page-navigation.md#dashboard) page that is set as each user's [initial page](set-users-initial-page.md) by default. It comes pre-configured with a set of useful components that help you navigate to workspaces and other useful pages in the application. You'll only see components, such as workspaces and apps, that you have permission to access.
 
-The default dashboard can be customized to show additional information or hide components and Users can [personalize it for their own preferences](../../dev-itpro/get-started/personalize-user-experience.md).
+The default dashboard can be customized to show additional information or hide components. You can also [personalize it to match your own preferences](../../dev-itpro/get-started/personalize-user-experience.md).
 
 ## Out-of-the-box components in the default dashboard
 
 The components that are included by default on the default dashboard are:
 
 - Page header representing the current legal company
-- Quick access area for related **Apps**
-- Quick access area for **Workspaces**
-- People search field
-- Selector for current Session date
-- List of workflow work items assigned to the user
+- An **Apps** area that provides quick access to apps
+- A **Workspaces** area that provides quick access to workspaces
+- A search field for finding people
+- A calender where you can set the current session date
+- A list of workflow work items assigned to you
 
-## Page Header
+## Page header
 
-The page heder presents by default the name of the current legal entity and the default dashboard image. You can change the dashboard image in the legal entity to a [different banner or a logo](../get-started/tasks/change-banner-or-logo.md).
+The page header presents, by default, the name of the current legal entity and the default dashboard image. You can change the dashboard image to a [different banner or a logo](../get-started/tasks/change-banner-or-logo.md).
 
 ## Related apps
 
-The related Apps area shows tiles for Dynamics 365 apps available to the user top quickly launch these, or respective help documentation how to setup the application. Available apps are for example Business performance analytics, Business performance planning, Demand planning and more.  
+The **Apps** area shows tiles for finance and operations apps available to you so you can launch them quickly. It can also show links to documentation about how to set up the application.
 
 ## Workspaces
 
-The workspaces component shows one tile for each workspace. Workspace tiles will highlight the information that have been pinned to the dashboard. To pin information to the dashboard open the Workspace and right click on a blue tile in the workspace, select **Personalize:...** and the **Pin to dashboard**.
+The **Workspaces** area shows one tile for each workspace that's available to you. Workspace tiles can also highlight information that you have pinned to the dashboard. To pin information to the dashboard open the relevant workspace, right-click on a tile in the workspace, select **Personalize: <tile name>** and then select the **Pin to dashboard** check box (clear this check box to remove the information from your Immersive Home).
 
 ## People search
 
-People Search component is a tool available to HR workers to quickly find and access details about Personal in the People Hub of the [Dynamics 365 Human Resources](../../../human-resources/welcome.md) module.
+The **Search people** field helps human resource workers quickly find and access details about personal in the **People** workspace of the [Dynamics 365 Human Resources](../../../human-resources/welcome.md) app.
 
 ## Session date picker
 
-The session date picker allows you to quickly change the current session date which is relevant for many financial transaction functions in finance and operations apps. The picker component is a quick alternative to using the [Session data and time module](../../fin-ops/organization-administration/tasks/change-date-session.md).
+The session date picker lets you quickly change the current session date, which is relevant for many financial transaction functions. The picker component is a quick alternative to using the [Session date and time module](../../fin-ops/organization-administration/tasks/change-date-session.md).
 
 ## Assigned workflow items
 
-The assigned workflow items presents a view of all work items that have been generated and assigned to the user from a workflow. The list provides an overview and navigates to the detail view of all assigned work items from where the user can take action.
+The **Work items assigned to me** area presents a view of all work items that were generated and assigned to you from a workflow. The list provides an overview and links to the relevant pages where you can take action.
 
-Learn more about the [Workflow system](../../fin-ops/organization-administration/overview-workflow-system.md)
+Learn more in the [Workflow system overview](../organization-administration/overview-workflow-system.md).
