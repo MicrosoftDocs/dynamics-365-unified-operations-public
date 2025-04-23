@@ -87,7 +87,7 @@ To ensure that position details are exported to payroll systems, the following d
 - **Payroll integration variable compensation enrollment position** (PayIntV1HcmVariableCompensationEnrollmentPositionEntity)
 - **Variable compensation enroll position details** (HcmVariableCompensationEnrollmentPositionEntity)
 
-Learn more about detailed changes related to [payroll entities](hr-admin-integration-payroll-api-introduction).
+Learn more about detailed changes related to [payroll entities](hr-admin-integration-payroll-api-introduction.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
