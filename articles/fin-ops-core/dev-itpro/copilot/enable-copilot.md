@@ -4,7 +4,7 @@ description: Learn how administrators can enable basic Copilot capabilities in f
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 02/13/2025
+ms.date: 04/25/2025
 ms.custom:
  - bap-template
 ms.reviewer: johnmichalak

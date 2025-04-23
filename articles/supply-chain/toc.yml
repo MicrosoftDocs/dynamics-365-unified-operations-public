@@ -120,6 +120,10 @@
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/user-interface/default-dashboard.md?context=/dynamics365/context/supply-chain
+        - name: Immersive Home (preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/supply-chain
         - name: Feature management overview

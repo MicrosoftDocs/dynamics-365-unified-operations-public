@@ -4,7 +4,7 @@ description: Learn about the primary navigation concepts including the dashboard
 author: jasongre, cabeln
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 03/17/2025
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -34,7 +34,7 @@ The dashboard page, navigation pane, and workspaces complement each other to imp
 
 ## Dashboard
 
-A dashboard page is typically used as landing page or navigation hub. These pages can reflect business domains or landing pages for users.
+A dashboard page is typically used as a landing page or navigation hub. These pages can reflect business domains or landing pages for users.
 
 Finance and operations apps contain several out-of-the box dashboards. Some of these qualify to be set as the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) for a user. By default this is the [default dashboard](../../fin-ops//user-interface/default-dashboard.md). The default dashboard contains tiles that show important details from the system. You can return to the dashboard at any time by selecting the **Home** icon in the left-side navigation bar.
 
@@ -42,11 +42,11 @@ The dashboard primarily consists of a large section of workspace tiles. There mi
 
 ## Navigation pane
 
-The left-side expandable navigation pane provides access to the home page, workspaces, modules, recently opened forms, and user-defined favorites. The user can expand the navigation pane by selecting any of the icons in the collapsed navigation pane.
+The left-side expandable navigation pane provides access to the home page, workspaces, modules, recently opened pages, and user-defined favorites. The user can expand the navigation pane by selecting any of the icons in the collapsed navigation pane.
 
-The **Initial Page** is the page that opens by default when the user open the finance and operations app. It typically is the *Default dashboard* or the [*Immersive Home*](../../fin-ops/copilot/immersive-home.md). Users can customize the **Initial Page** setting on the **User options** page (available from the **Settings** (gear icon) menu in the upper-right corner of each page).
+The *initial page* is the page that opens by default when the user open the finance and operations app. It typically is the *Default dashboard* or the [*Immersive Home*](../../fin-ops/copilot/immersive-home.md). Users can customize the **Initial Page** setting on the **User options** page (available from the **Settings** (gear icon) menu in the upper-right corner of each page).
 
-The navigation pane consists of four collapsible sections. The **Favorites** section provides quick access to the list of forms the user has explicitly marked as a favorite. Marking a form as a favorite is accomplished by clicking the star icon next to the form in the navigation pane. The **Recent** section lists the forms the user has most recently visited. The set of workspaces a user has access to is conveniently shown in the **Workspaces** section. Finally, the **Modules** section provides the full list of modules. Clicking on a module will open the right side of the navigation pane, where the user can navigate to the desired page in that module.  
+The navigation pane consists of four collapsible sections. The **Favorites** section provides quick access to the list of pages the user has explicitly marked as a favorite. Marking a page as a favorite is accomplished by clicking the star icon next to the page in the navigation pane. The **Recent** section lists the pages the user has most recently visited. The set of workspaces a user has access to is conveniently shown in the **Workspaces** section. Finally, the **Modules** section provides the full list of modules. Clicking on a module will open the right side of the navigation pane, where the user can navigate to the desired page in that module.  
 
 Like the workspace tiles on the dashboard, the elements that are listed in the navigation pane are generated at runtime, based on a menu structure. The same root menu (*NavPaneMenu*) that defines the set of workspaces on the dashboard also defines the navigation pane. Here's an example of the logical structure for the navigation pane:
 
