@@ -35,26 +35,26 @@ From the Feature Management workspace, enable “Retail Loyalty Upsell Prompt.�
 - Select one of the Tier rules with Reward points of type “Amount” (e.g., Total Spent, Date Interval: PrevMonth, Min Tier qualifying points – 500).
 - Define the threshold for the Loyalty Upsell Prompt to show up (e.g., Threshold of 100 for the Tier rule for Reward point “Total Spent” with Date interval as PrevMonth).
 
-#### Example for Loyalty upsell prompt 
-
-
-| Customer   | Current loyalty tier | Tier qualifying points | Loyalty upsell prompt for next tier                                      |
-|------------|----------------------|------------------------|--------------------------------------------------------------------------|
-| Customer A | Silver               | 420 points             | 80 points away from Gold tier.                                           |
-| Customer B | Silver               | 380 points             | No loyalty upsell prompt as they are more than 100 points away from Gold tier. |
-
+![Loyalty upsell prompt configuration in HQ](./media/HQ_Setup_Loyalty_Threshold.png)
 
 ### Loyalty upsell prompt via Transaction Screen on POS
 If more than one loyalty card is associated with a customer, store associates are prompted to choose a “Loyalty Card.” Upon choosing a loyalty card:
 - For selected card with only one loyalty program: Directly view loyalty card details and see a new bell icon next to the Loyalty program tier information if the customer’s tier qualifying points are within the threshold of the Loyalty Upsell Prompt.
 - For selected card with multiple loyalty programs: If the Loyalty Upsell Prompt tier rule is chosen with defined thresholds, and if the user’s tier qualifying points are within those thresholds, then you will see a new bell icon for each program separately.
+![Loyalty upsell prompt from Transaction page](./media/Multiple_LoyaltyPrograms_TransactionScreen_LoyaltyUpsellPromptFeature.png) 
+
+| Customer   | Current loyalty tier | Tier qualifying points | Loyalty upsell prompt for next tier                                      |
+|------------|----------------------|------------------------|--------------------------------------------------------------------------|
+| Customer A | Silver               | 420 points             | 80 points away from Gold tier.                                           |
+| Customer B | Silver               | 380 points             | No loyalty upsell prompt as they are more than 100 points away from Gold tier. |
 > [!Note]
 > If Tier qualifying points are beyond the threshold: No bell icon will be shown for members with TQP being beyond the configured threshold.
+#### Example for Loyalty upsell prompt 
 
 ### Loyalty upsell prompt via Customer Details Page
 To view Loyalty card details via Customer details page, same new Fluent UI controls as the transaction screen, except that the user chooses a “Loyalty card” before the new slider loads.
 e.g., Loyalty card details from CDP with at least one or more loyalty program tier within the threshold of the next loyalty tier.
-
+![Loyalty upsell prompt from Customer details page](./media/Multiple_LoyaltyPrograms_CustomerScreen_LoyaltyUpsellPromptFeature.png) 
 
 > [!Note] 
 > ## Requirement
