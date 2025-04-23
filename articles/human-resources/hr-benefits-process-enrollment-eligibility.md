@@ -3,8 +3,8 @@
 
 title: Process enrollment eligibility
 description: This article explains how to run the enrollment eligibility process.
-author: twheeloc
-ms.date: 07/02/2024
+author: ramagadu 
+ms.date: 04/25/2025
 ms.topic: article
 # optional metadata
 
@@ -69,10 +69,11 @@ This article explains how to view eligibility process results.
    | **Result status** | This will be **Eligible** or **Ineligible**. The result status will be Ineligible if the worker didn’t meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there is information missing on the benefit plan that prevents workers from being enrolled. |
    | **Result message** | Indicates why a worker is ineligible for a benefit plan or if the eligibility rule passed. |
 
-## Clean up benefits eligibility process results
+## Clean up benefits eligibility process results (preview)
 
 >[!NOTE]  
-This feature is currently in **preview**. The functionality and behavior described may change before general availability (GA).
+>This feature is currently in preview. The functionality and behavior described may change before general availability (GA).
+>[This is prerelease documentation and is subject to change.].
 
 In Dynamics 365 Human Resources, you can now clean up old benefits eligibility process results to help maintain system performance.
 
@@ -80,9 +81,7 @@ Over time, the benefits of eligibility process result table can grow large and c
 
 To use this feature, the **Benefits management** feature must be enabled.
 
-**How it works:**
-
-You can access the **Clean up benefits eligibility process results** from:
+To access the **Clean up benefits eligibility process results**, follow these steps:
 
 - **Human Resources > Benefits management > Processing > Clean up benefits eligibility process results**
 - **Benefits management > Processing > Clean up benefits eligibility process results**
@@ -91,9 +90,9 @@ You can access the **Clean up benefits eligibility process results** from:
 When running the cleanup:
 
 - Enter the **Maximum age** (in days).
-- Records older than the maximum age will be deleted.
+- Records older than the maximum age are deleted.
 - You can run the clean-up immediately or schedule it as a batch job.
 
-The clean-up is **legal entity specific**.
+The clean-up is specific to the legal entity.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
