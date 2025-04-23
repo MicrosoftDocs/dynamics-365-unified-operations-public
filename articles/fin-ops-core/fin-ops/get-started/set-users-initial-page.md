@@ -17,7 +17,7 @@ ms.custom:
 
 This article explains how to set the initial page shown to a user when they open the application. The initial page can be different for each user and can be set by an admin or by each individual user themselves. 
 
-By default the initial page is set to the [default dashboard](../../user-interface/default-dashboard.md).
+By default the initial page is set to the [default dashboard](default-dashboard.md).
 
 To set the initial page for another user (as system administrator), follow these steps.
 

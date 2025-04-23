@@ -36,7 +36,7 @@ The dashboard page, navigation pane, and workspaces complement each other to imp
 
 A dashboard page is typically used as a landing page or navigation hub. These pages can reflect business domains or landing pages for users.
 
-Finance and operations apps contain several out-of-the box dashboards. Some of these qualify to be set as the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) for a user. By default this is the [default dashboard](../../fin-ops//user-interface/default-dashboard.md). The default dashboard contains tiles that show important details from the system. You can return to the dashboard at any time by selecting the **Home** icon in the left-side navigation bar.
+Finance and operations apps contain several out-of-the box dashboards. Some of these qualify to be set as the [initial page](../../fin-ops/get-started/set-users-initial-page.md) for a user. By default this is the [default dashboard](../../fin-ops/get-started/default-dashboard.md). The default dashboard contains tiles that show important details from the system. You can return to the dashboard at any time by selecting the **Home** icon in the left-side navigation bar.
 
 The dashboard primarily consists of a large section of workspace tiles. There might also be a getting-started tool or introduction of new experience concepts. The dashboard's workspace tile section is built from a menu structure that has its root in the *NavPaneMenu* menu. The menu is modified by a set of menu extensions, and those extensions contain one or more tile references that correspond to the tiles that users see in that section.
 
