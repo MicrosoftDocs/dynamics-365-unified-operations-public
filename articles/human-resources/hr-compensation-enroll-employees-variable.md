@@ -3,8 +3,8 @@
  
 title: Enroll an employee in a variable compensation plan
 description: The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. 
-author: twheeloc
-ms.date: 08/25/2021
+author: ramagadu 
+ms.date: 04/25/2025
 ms.topic: how-to 
  
 # optional metadata 
@@ -44,40 +44,41 @@ The Compensation and Benefits manager can enroll employees in variable compensat
 8. Toggle the expansion of the **Organizational overrides** section.
     * If the employee's performance should take into consideration, the performance of different departments, or a department other than the one assigned on the employee's position, the department can be overridden. The **Percent** column should total 100.  
 
-## Link Variable plan awards and enrollments to Positions
+## Link Variable plan awards and enrollments to positions (preview)
 
 >[!NOTE]  
->This feature is currently in **preview**. The functionality and behavior described may change before general availability (GA).
+>This feature is currently in preview. The functionality and behavior described may change before general availability (GA).
+>[This is prerelease documentation and is subject to change.]
 
-In Dynamics 365 Human Resources, you can now associate **variable compensation plans**, including **awards** and **enrollments** directly with an employee's **position**.  
+In Dynamics 365 Human Resources, you can now associate **Variable compensation plans**, including awards and enrollments directly with an employee's **position**.  
 This enhancement provides greater flexibility for organizations to manage variable compensation aligned with job roles, ensuring a more accurate and scalable compensation strategy.
 
-Previously, variable compensation plans were linked only to the employee level. Now, by associating plans with positions, HR managers can streamline compensation planning, particularly in organizations with position-based structures.
+Previously, variable compensation plans were linked to the employee level. Now, by associating plans with positions, HR managers can streamline compensation planning, particularly in organizations with position-based structures.
 
 >[!IMPORTANT]  
->To start using this functionality, you must enable the feature **Ability to link variable pay to position** in **Feature management**.
+>To start using this functionality, enable the **Ability to link variable pay to position** feature in **Feature management**.
 
 ### Link variable plan awards to positions
 
-To link a variable plan award to a position:
+To link a variable plan award to a position, follow these steps:
 
 1. Go to **Human Resources > Workers** and select a worker.
-2. On the **Action Pane**, select **Compensation > Variable plan awards**.
-3. In the **Employee variable compensation awards** form, select the **Position** from the dropdown list.
+2. On the **Action pane**, select **Compensation > Variable plan awards**.
+3. On the **Employee variable compensation awards** page, select the **Position** from the dropdown list.
 4. Save your changes.
 
 ### Link variable plan enrollments to positions
 
-To link a variable plan enrollment to a position:
+To link a variable plan enrollment to a position, follow these steps:
 
 1. Go to **Human Resources > Workers** and select a worker.
-2. On the **Action Pane**, select **Compensation > Variable plan enrollment**.
-3. In the **Employee variable compensation enrollment** form, a new grid has been added to associate multiple positions with a plan.
+2. On the **Action pane**, select **Compensation > Variable plan enrollment**.
+3. On the **Employee variable compensation enrollment** page, a new grid is added to associate multiple positions with a plan.
 4. Go to the **Positions** tab and select **Add**.
 5. Select the **Position** from the dropdown list.
 6. Save your changes.
 
-### Data Entity updates
+### Data entity updates
 
 To ensure that position details are exported to payroll systems, the following data entities have been updated:
 
@@ -86,7 +87,7 @@ To ensure that position details are exported to payroll systems, the following d
 - **Payroll integration variable compensation enrollment position** (PayIntV1HcmVariableCompensationEnrollmentPositionEntity)
 - **Variable compensation enroll position details** (HcmVariableCompensationEnrollmentPositionEntity)
 
-**You can check the detailed changes related to payroll entities** [**here**](../human-resources/hr-admin-integration-payroll-api-introduction)**.**
+Learn more about detailed changes related to [payroll entities](hr-admin-integration-payroll-api-introduction).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
