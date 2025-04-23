@@ -52,4 +52,32 @@ After the employee has selected their plans, the status of the benefits is shown
 
 Employees aren't required to select benefits by using **Employee self service**. Benefits can be selected on behalf of an employee on the **Worker benefits plan** or **Worker benefit plans bulk update** page. The employee won't be enrolled in those benefits until the benefits administrator confirms them.
 
+## My benefit plans
+
+In Dynamics 365 Human Resources, employees can now view their **elected benefits** through the new **My Benefit Plans** tile, available in **Employee Self-Service**.
+
+This experience provides employees with a consolidated view of their active benefit elections, including details about **dependents** and **beneficiaries** associated with each plan. Employees can also view their **previous year’s enrollment** information.
+
+**Key features**
+
+- **New tile** available on the Employee Self-Service workspace.
+- View all current benefit elections in one place.
+- See **dependent** and **beneficiary** details for each benefit plan.
+- View a **summary across all plans** with combined coverage information.
+- Access **previous year enrollment** details for historical reference.
+
+The **My Benefit Plans** tile makes it easier for employees to stay informed about their benefits without needing HR assistance, improving transparency and self-service.
+
+>[!IMPORTANT]  
+>The **Benefits management** feature must be enabled in Feature management to use **My benefit plans**.
+
+**How to access**
+
+To view your benefits:
+
+1. Go to **Employee Self-Service** (ESS).
+2. Select the **My Benefit Plans** tile.
+3. Select the **benefit period** you want to review.
+4. View your elected benefits along with dependent and beneficiary details.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
