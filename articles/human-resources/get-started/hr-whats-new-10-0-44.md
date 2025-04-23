@@ -28,7 +28,7 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+|Recruiting |Recruiting enhancements (preview)| This feature allows you to create recruiting request directly through positions.| Default|
 
 ## Feature enhancements included in this release
 
