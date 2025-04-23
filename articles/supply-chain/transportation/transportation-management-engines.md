@@ -89,6 +89,9 @@ The transportation management engine requires identification of the origin addre
 | 4        | Destination end postal code   | Assignment | String    | Postal Code    | Selected  |
 | 5        | Destination country           | Assignment | String    | Country/region |           |
 
+> [!NOTE]
+> The transportation management engines that are delivered with Supply Chain Management rely on the postal codes, and they do not support longitude and latitude data. If your system requires the use of longitude and latitude data, then a custom engine must be developed. General explanation on how custom engines are developed is explained in here: [Create a new transportation management engine](https://learn.microsoft.com/en-us/dynamics365/supply-chain/supply-chain-dev/create-new-transportation-management-engine).
+
 ## White paper
 
 For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
