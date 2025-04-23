@@ -23,7 +23,7 @@ The simplified version of the RCE includes the 13.5.3 annex. The Excel output ve
 Before you can generate and print the reports, the following prerequisites must be met:
 - The legal entity's address must be in Peru.
 - You must enable both the general LATAM feature and the country/region-specific LATAM feature for Peru.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
 - You must configure the electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 The simplified annex for RCE is composed of the following formats that you must import:
@@ -41,7 +41,7 @@ The simplified annex for RCE is composed of the following formats that you must 
     1. On the FastTab for the desired transaction, select **LATAM \> Source Documents**.
     1. Select **New**.
     1. Add the required record.
-- Set up the tax application code of the **Tax ID types** used with the SUNAT Table 1 codes. Learn more in [Tax ID types for Latin America](https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type).
+- Set up the tax application code of the **Tax ID types** used with the SUNAT Table 1 codes. Learn more in [Tax ID types for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-id-type).
 - When you create a person type vendor, the **Phonetic last name** field allows you to add a second last name if required.
 - Go to **General ledger \> Currencies \> Currencies** and complete the currency tax application code with the appropriate three-letter code from SUNAT Table 2: Currency Type.
 
