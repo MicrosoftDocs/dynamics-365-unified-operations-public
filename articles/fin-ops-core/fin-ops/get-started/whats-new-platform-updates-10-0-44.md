@@ -35,7 +35,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Regression suite automation tool (RSAT) | Regression suite automation tool version 2.8 was released. This release includes several new features and some stability improvements throughout. However, the main contribution in this release is the availability of new, more secure Entra based certificate-based authentication mechanisms. The release is a drop-in replacement for RSAT version 2.7. Moving to this new version doesn't require changes to your tests. Learn more about RSAT in [Regression suite automation tool (RSAT)](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md). | [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57357) | 
+| Regression suite automation tool (RSAT) | Regression suite automation tool version 2.8 was released. This release includes several new features and some stability improvements throughout. However, the main contribution in this release is the availability of new, more secure Entra based certificate-based authentication mechanisms. The release is a drop-in replacement for RSAT version 2.7. Moving to this new version doesn't require changes to your tests. Learn more about RSAT in [Regression suite automation tool (RSAT)](../../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md). | [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57357) | 
 
 ### Bug fixes
 
