@@ -64,7 +64,7 @@ To configure application-specific parameters for purchases not domiciled in Peru
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **Yes**.
 1. In the **Document classification Id (VoucherClassId)** field, select all document classes required for vendor transactions.
-1. To ensure that the report shows the transactions that meet the configured conditions, complete all the **Lookup result** fields with **No**, and with **Blank** and **Non-blank** conditions.
+1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields to **No**, with **Blank** and **Non-blank** conditions.
 1. On the **Lookups** tab, select **TaxType**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **RIGV**.
@@ -73,7 +73,7 @@ To configure application-specific parameters for purchases not domiciled in Peru
 1. In the **Tax code** field, select the tax code configured for other concepts.
 1. On the **Conditions** FastTab, select **Add**, and in the **Lookup result** field, select **VA**.
 1. In the **Tax code** field, select the tax code configured for taxed and/or non-taxed acquisitions.
-1. To ensure that the report shows the transactions that meet the configured conditions, complete all the **Lookup result** fields with **N/A**, and with **Blank** and **Non-blank** conditions.
+1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields to **N/A**, with **Blank** and **Non-blank** conditions.
 
 ## Generate a RCE annex report
 
