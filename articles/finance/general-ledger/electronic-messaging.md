@@ -45,7 +45,7 @@ The EM functionality supports the following scenarios:
 - Collect and process information from a data source as message items. The data source is a Finance table.
 - Store additional information, and evaluate various values by calling specifically defined executable classes in relation to messages or message items.
 - Aggregate information that is collected in message items, split that information by message, and generate reports that are in associated exporting ER formats.
-- Transmit the reports that are generated to a web service by using security information that is stored in the Azure key vault.
+- Transmit the reports that are generated to a web service by using security information that is stored in the Azure Key Vault.
 - Receive a response from a web service, interpret the response, and update data in Finance as appropriate.
 - Store and review all the reports that are generated.
 - Store and review all the log information that is related to actions that are run for a message or message item.

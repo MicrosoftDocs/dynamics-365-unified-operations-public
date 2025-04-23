@@ -24,6 +24,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.44 release
+
+### Rename item number (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The item number field is a primary key that is used across multiple systems. The *(Preview) Rename item number* feature allowed users to edit the item number field, but we found that the feature could cause data inconsistencies in multi-system and apps-integration scenarios, leading to data integrity and data corruption issues. The feature was previously in preview and was never made generally available for use in production environments. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Supply Chain Management – Product information management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The *(Preview) Rename item number* feature was removed from the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace in Dynamics 365 Supply Chain Management version 10.0.44 and is no longer available. The capability is completely removed for all customers. If you need to rename an item number, we recommend that you use alternate methods, such as deleting and creating a new item, renaming attributes, or renaming search names, product names, and other item-related fields. |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.43 release
 
 ### The "Work creation number" number sequence has been removed

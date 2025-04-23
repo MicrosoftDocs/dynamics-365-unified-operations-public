@@ -1,49 +1,48 @@
 ---
 title: Customer payment refunds
-description: Learn about customer payment refunds, including step-by-step processes for validating tax details and validating financial entries.
+description: Learn how to create and configure a customer advance payment journal for customer refunds and validate tax details and financial entries in Microsoft Dynamics 365 Finance.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
-ms.date: 06/03/2019
-ms.custom:
+ms.topic: how-to
+ms.date: 04/10/2025
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form:
-ms.dyn365.ops.version: 10.0.4
 ---
 
 # Customer payment refunds
 
 [!include [banner](../../includes/banner.md)]
 
-1. Go to **Accounts receivable \> Payments \> Payment journal**.
-2. Create a record.
-3. In the **Name** field, select a value.
-4. On the **Setup** tab, select the **Amounts include sales tax** check box.
-5. Select **Lines**.
-6. Create a customer advance payment journal, and save the record.
-7. Select **Tax information**.
-8. On the **GST** tab, in the **HSN code** field, select a value.
-9. Select the **Customer tax information** tab.
-10. Select **OK**.
+This article explains how to create and configure a customer advance payment journal for customer refunds and validate tax details and financial entries in Microsoft Dynamics 365 Finance.
 
-### Validate the tax details
+To create and configure a customer advance payment journal, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Payment journal**.
+1. Create a record.
+1. In the **Name** field, select a value.
+1. On the **Setup** tab, select the **Amounts include sales tax** checkbox.
+1. Select **Lines**.
+1. Create a customer advance payment journal, and save the record.
+1. Select **Tax information**.
+1. On the **GST** tab, in the **HSN code** field, select a value.
+1. Select the **Customer tax information** tab.
+1. Select **OK**.
+
+## Validate the tax details
+
+To validate the tax details, follow these steps.
 
 1. Select **Tax document**.
+1. Select **Close**.
+1. Select **Post \> Post**.
+1. Close the message that you receive.
 
-    **Example**
+## Validate the financial entries
 
-    **IGST:** 20 percent
-
-2. Select **Close**.
-3. Select **Post \> Post**.
-4. Close the message that you receive.
-
-### Validate the financial entries
-
-To validate the financial entries, select **Inquiries \> Voucher**. Here is an example.
+To validate the financial entries, select **Inquiries \> Voucher**. The following example image shows some voucher financial entries.
 
 ![Example of financial entries.](../media/Annotation-2019-05-21-132929.png)
 

@@ -64,11 +64,11 @@ Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app
 
 You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
 
-## White papers
+## Articles
 
-The following white papers explore various aspects of warehouse management in Dynamics 365 Supply Chain Management:
+The following article explore various aspects of warehouse management in Dynamics 365 Supply Chain Management:
 
-- [Reservations in Warehouse management](https://www.microsoft.com/download/details.aspx?id=43284)
+- [Reservations in Warehouse management](reservations-in-warehouse-management.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

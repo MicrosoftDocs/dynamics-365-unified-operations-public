@@ -581,8 +581,16 @@ items:
               href: hr-recruit-prospect.md 
             - name: Applicants in HR recruiting app 
               href: hr-recruit-applicant.md 
-            - name: Set up panel members in the HR Recruiting app
+            - name: Set up panel members in the HR Recruiting app            
               href: hr-recruit-panel.md
+          - name: Schedule interviews
+            items:
+            - name: Set up interview schedules
+              href: hr-interview-schedule.md
+          - name: Upload resumes
+            items:
+            - name: Bulk upload resumes
+              href: bulk-resume-upload.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
@@ -1183,8 +1191,12 @@ items:
       href: transpar-note-hr.md
     - name: Employee self service leave summary FAQ
       href: ess-transp-faq.md
+    - name: Human Resources recruiting with Bulk resume upload FAQ
+      href: hr-recruit-bulk-resume-faq.md
     - name: Employee self service workspace summary
       href: ess-workspace-summary.md
+    - name: Human Resources recruiting with bulk resume upload FAQ
+      href: hr-recruit-bulk-resume-faq.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

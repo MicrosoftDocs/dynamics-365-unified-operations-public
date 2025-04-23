@@ -4,7 +4,7 @@
 title: Administration overview
 description: This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/05/2023
+ms.date: 04/07/2025
 ms.topic: overview
 # optional metadata
 

@@ -1,43 +1,41 @@
 --- 
 title: Set up method of payment for ISO20022 credit transfer
-description: Learn how to set up the vendor method of payment for ISO20022 credit transfer or any other payment type using electronic reporting to generate a file. 
+description: Learn how to set up a vendor method of payment for a ISO20022 credit transfer or any other payment type using electronic reporting to generate a file in Microsoft Dynamics 365 Finance.
 author: kailiang
 ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/29/2018
+ms.date: 03/27/2025
 ms.reviewer: johnmichalak    
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendPaymMode
-ms.dyn365.ops.version: Version 7.0.0 
 ---
 
 # Set up method of payment for ISO20022 credit transfer
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to set up the vendor method of payment for ISO20022 credit transfer or any other payment type using electronic reporting to generate a file. 
+The following procedure explains how to set up a vendor method of payment for a ISO20022 credit transfer or any other payment type using electronic reporting to generate a file in Microsoft Dynamics 365 Finance.
 
-Before you complete this task, you must export format configurations and set up payment accounts.
+Before you complete the procedure, you must first export format configurations and set up payment accounts.
 
-This task was created using the DEMF demo data company.
+The procedure was created using the DEMF demo data company.
 
-This is the third procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
+To set up a vendor method of payment for a ISO20022 credit transfer, follow these steps.
 
-1. Go to Accounts payable > Payment setup > Methods of payment.
-2. Use the Quick Filter to find records. For example, filter on the Method of payment field with a value of 'SEPA CT'.
-3. Click Edit.
-4. In the Period field, select 'Total'.
-5. In the Payment type field, select 'Electronic payment'.
-6. Expand the File formats section.
-7. Select Yes in the Generic electronic reporting field.
-8. In the Export format configuration field, enter or select a value.
-    * In the list, select the value ISO20022 Credit transfer (DE). If the list is empty, the vendor payment export format configuration is not imported and active.  
-9. In the Account type field, select 'Bank'.
-10. In the Payment account field, specify the values 'DEMF OPER'.
-11. Click Save.
+1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Methods of payment**.
+1. Use the Quick Filter to find records. For example, filter on the **Method of payment** field with a value of "SEPA CT".
+1. Select **Edit**.
+1. In the **Period field**, select **Total**.
+1. In the **Payment type** field, select **Electronic payment**.
+1. Expand the **File formats** section.
+1. In the **Generic electronic reporting** field, select **Yes**.
+1. In the **Export format configuration** field, select **ISO20022 Credit transfer (DE)**. If the list is empty, the vendor payment export format configuration isn't imported and active.  
+9. In the **Account type** field, select **Bank**.
+1. In the **Payment account** field, enter "DEMF OPER".
+1. Select **Save**.
 
 
 

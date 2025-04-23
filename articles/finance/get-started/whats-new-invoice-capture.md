@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 02/21/2025
+ms.date: 04/21/2025
 ms.reviewer: twheeloc
 ms.custom: 
   - bap-template
@@ -23,6 +23,15 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 [!include [banner](../includes/banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
+
+## April 2025
+
+The April release of the Invoice capture solution version 1.9.3.10 contains the following features and bug fixes.
+
+| Feature | Description |
+| --- |--- |
+| Bug fix | Fixed cache issues with custom field mapping. While processing invoices using a custom model with custom fields mapped to the invoice header, users received **Can't find field ‘xxx_xxxx’ with field level '{fieldLevel}'** error. This issue was caused by an outdated internal cache. |
+| Bug fix | Performance issue - Staging invoice derivation uses ecoresreleaseddistinctproductcdsentity. Fixed an issue where captured invoices are stuck in an **In processing** state prior to being available for review. |
 
 ## February 2025
 

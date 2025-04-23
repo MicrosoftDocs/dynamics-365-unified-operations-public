@@ -240,14 +240,16 @@
           href: dev-itpro/retail-in-store-topology.md
         - name: Commerce Data Exchange
           items:
-          - name: Commerce Data Exchange best practices
-            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange and commerce channel communications
             href: dev-itpro/define-retail-channel-communications-cdx.md
+          - name: Commerce Data Exchange best practices
+            href: dev-itpro/CDX-Best-Practices.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
           - name: Sort Commerce Data Exchange packages by primary index
             href: dev-itpro/CDX-package-sort.md
+          - name: Download sessions overview
+            href: dev-itpro/download-sessions.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
@@ -452,7 +454,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows (preview)
+            - name: Check out faster with optimized payment flows
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
@@ -660,6 +662,8 @@
             href: configure-emailed-receipt-formats.md
           - name: Add a QR code or bar code to transactional and receipt emails
             href: add-qr-code-barcode-email.md
+        - name: Manage Azure Maps for your organization
+          href: dev-itpro/manage-azure-maps.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup

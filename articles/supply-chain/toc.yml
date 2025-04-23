@@ -629,6 +629,8 @@
         href: ../finance/cost-accounting/terms-cost-accounting.md?context=/dynamics365/context/supply-chain
       - name: Fiscal calendars, fiscal years, and periods
         href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?context=/dynamics365/context/supply-chain
+      - name: Ledger and subledger accounting overview
+        href: ../finance/general-ledger/ledger-subledger.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions
         href: ../finance/general-ledger/financial-dimensions.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions and posting
@@ -2007,7 +2009,7 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
-          - name: Continue to use deprecated master planning for some companies
+          - name: Continue to use deprecated master planning with existing companies
             href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
@@ -2047,6 +2049,8 @@
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
+        - name: Convert a Demand planning environment from sandbox to production
+          href: demand-planning/convert-demand-planning-environment-from-sandbox-to-production.md
       - name: Import data
         items:
         - name: View and customize tables for holding imported data
@@ -3091,6 +3095,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Copy lines between sales orders
+          href: sales-marketing/copy-lines-between-sales-orders.md
         - name: Calculate sales totals when prices include sales tax
           href: sales-marketing/sales-tax-calculation.md
         - name: Manage order holds
@@ -3567,10 +3573,6 @@
             href: transportation/tasks/register-driver-check-check-out-appointment.md
       - name: Reconcile freight
         items:
-        - name: Set up automatic freight reconciliation
-          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-        - name: Reconcile freight manually
-          href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
         - name: Vendor invoice journal creation when discarding freight bills
@@ -3647,6 +3649,8 @@
         href: warehousing/warehouse-management-overview.md
       - name: Get started with setting up the Warehouse management module
         href: warehousing/get-started-with-setting-up-module.md
+      - name: Reservations in Warehouse management
+        href: warehousing/reservations-in-warehouse-management.md
       - name: Inbound warehouse operations
         items:
         - name: Warehouse handling of inbound loads for purchase orders

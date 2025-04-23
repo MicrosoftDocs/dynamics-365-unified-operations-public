@@ -1,8 +1,8 @@
 ---
 title: Set up a warehouse by using a warehouse configuration template
 description: Learn how to set up a warehouse by using a warehouse configuration template, including scenarios where configuration templates can be helpful.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 ms.topic: how-to

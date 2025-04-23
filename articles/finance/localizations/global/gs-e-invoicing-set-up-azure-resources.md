@@ -1,6 +1,6 @@
 ---
 title: Configure Azure resources for Electronic invoicing
-description: Learn about the process for setting up Microsoft Azure resources for Electronic invoicing, including an overview on creating an Azure key vault.
+description: Learn about the process for setting up Microsoft Azure resources for Electronic invoicing, including an overview on creating an Azure Key Vault.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: overview
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-The process for setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, "Create an Azure key vault in the Azure portal" and "Create an Azure storage account in the Azure portal," are mandatory. The third step, "Configure a SharePoint connection," is optional. These steps can be completed by using any of the following methods:
+The process for setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, "Create an Azure Key Vault in the Azure portal" and "Create an Azure storage account in the Azure portal," are mandatory. The third step, "Configure a SharePoint connection," is optional. These steps can be completed by using any of the following methods:
 
 - Use the Azure portal user interface (UI).
 - Run an Azure PowerShell script.
@@ -26,11 +26,11 @@ The process for setting up Microsoft Azure resources for Electronic invoicing ha
 
 If you prefer to use the Azure portal UI, continue with this article. If you prefer to use the PowerShell script or an ARM template, see [Create Azure resources using Azure PowerShell or ARM templates](gs-e-invoicing-set-up-azure-resources.md).
 
-## Create an Azure key vault in the Azure portal
+## Create an Azure Key Vault in the Azure portal
 
 Create a key vault in your Azure subscription. We recommend that you create a separate key vault for Electronic invoicing, and that you don't combine secrets with other applications. Create as many secrets and certificates as you require for your scenarios for electronic documents. You must create at least one secret to store the shared access signature (SAS) token of the Azure storage account that you create in the next step.
 
-For information about how to complete this step, see [Create an Azure key vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
+For information about how to complete this step, see [Create an Azure Key Vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
 
 ## Create an Azure storage account in the Azure portal
 

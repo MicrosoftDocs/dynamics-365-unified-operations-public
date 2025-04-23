@@ -1,8 +1,8 @@
 ---
 title: Consolidate inventory transactions
 description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.topic: article
 ms.date: 04/11/2024
 ms.custom:
