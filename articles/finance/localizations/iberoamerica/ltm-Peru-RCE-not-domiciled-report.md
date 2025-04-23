@@ -65,10 +65,10 @@ To configure application-specific parameters for purchases not domiciled in Peru
 1. In the **Lookup result** field, select **Yes**.
 1. In the **Document classification Id (VoucherClassId)** field, select all document classes required for vendor transactions.
 1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields to **No**, with **Blank** and **Non-blank** conditions.
-1. On the **Lookups** tab, select **TaxType**.
+1. On the **Lookups** FastTab, select **TaxType**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **RIGV**.
-1. In **Tax code** field, select the tax code configured for IGV withholdings.
+1. In the **Tax code** field, select the tax code configured for IGV withholdings.
 1. On the **Conditions** FastTab, select **Add**, and in the **Lookup result** field, select **OC**.
 1. In the **Tax code** field, select the tax code configured for other concepts.
 1. On the **Conditions** FastTab, select **Add**, and in the **Lookup result** field, select **VA**.
