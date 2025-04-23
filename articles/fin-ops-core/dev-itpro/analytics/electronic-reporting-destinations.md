@@ -1,12 +1,13 @@
 ---
 title: Electronic reporting (ER) destinations
 description: Learn about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
-author: liza
-ms.author: filatovm
-ms.topic: article
-ms.date: 02/05/2025
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 04/23/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.search.form: DocuType, ERSolutionTable
@@ -146,9 +147,9 @@ In versions earlier than Dynamics 365 Finance version 10.0.43, the PDF conversio
 In Dynamics 365 Finance version 10.0.43 and later, you can enable the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature in **Feature management** to facilitate the seamless conversion of configurable business documents from Word or Excel formats to PDF. 
 
 > [!NOTE]
-> The **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is available in Finance version 10.0.43 and the 10.0.2095.**124** build and later of the 10.0.42 version.
+> The **In-App PDF conversion for Configurable Business Documents \(CBD\) \(preview\)** feature is available in Finance version 10.0.43 and the 10.0.2095.**124** build and later of the 10.0.42 version.
 
-This feature utilizes AOS (Application Object Server) resources, eliminating the need for external conversion services. By leveraging in-app capabilities, it ensures efficient and secure document processing, reducing dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios, providing users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
+This feature utilizes Application Object Server (AOS) resources to eliminate the need for external conversion services. Leveraging in-app capabilities ensures efficient and secure document processing and reduces dependency on tools outside of Finance while maintaining high performance and reliability. This enhancement supports a wide range of business scenarios to provide users with the flexibility to generate and distribute professional-grade PDF documents directly within the application.
 
 The advantages of in-app PDF conversion when the **\(Preview\) In-App PDF conversion for Configurable Business Documents \(CBD\)** feature is enabled are:
 
