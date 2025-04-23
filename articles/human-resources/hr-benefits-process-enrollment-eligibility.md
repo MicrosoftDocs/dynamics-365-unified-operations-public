@@ -69,6 +69,31 @@ This article explains how to view eligibility process results.
    | **Result status** | This will be **Eligible** or **Ineligible**. The result status will be Ineligible if the worker didn’t meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there is information missing on the benefit plan that prevents workers from being enrolled. |
    | **Result message** | Indicates why a worker is ineligible for a benefit plan or if the eligibility rule passed. |
 
+## Clean up benefits eligibility process results
 
+>[!NOTE]  
+This feature is currently in **preview**. The functionality and behavior described may change before general availability (GA).
+
+In Dynamics 365 Human Resources, you can now clean up old benefits eligibility process results to help maintain system performance.
+
+Over time, the benefits of eligibility process result table can grow large and cause database timeouts. This new feature allows HR administrators to delete old records based on a specified retention period.
+
+To use this feature, the **Benefits management** feature must be enabled.
+
+**How it works:**
+
+You can access the **Clean up benefits eligibility process results** from:
+
+- **Human Resources > Benefits management > Processing > Clean up benefits eligibility process results**
+- **Benefits management > Processing > Clean up benefits eligibility process results**
+- **Workspaces > Benefits management > Links > Processing**
+
+When running the cleanup:
+
+- Enter the **Maximum age** (in days).
+- Records older than the maximum age will be deleted.
+- You can run the clean-up immediately or schedule it as a batch job.
+
+The clean-up is **legal entity specific**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
