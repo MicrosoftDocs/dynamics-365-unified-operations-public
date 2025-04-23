@@ -2,8 +2,8 @@
 # required metadata
 title: Employees select plans by using Employee self service (optional)
 description: This article describes how employees can select or update their benefits.
-author: twheeloc
-ms.date: 07/02/2024
+author: ramagadu 
+ms.date: 04/25/2025
 ms.topic: article
 # optional metadata
 
@@ -54,30 +54,26 @@ Employees aren't required to select benefits by using **Employee self service**.
 
 ## My benefit plans
 
-In Dynamics 365 Human Resources, employees can now view their **elected benefits** through the new **My Benefit Plans** tile, available in **Employee Self-Service**.
+In Dynamics 365 Human Resources, employees can view **Elected benefits** through the new **My benefit plans** tile, available in **Employee self service**.
 
-This experience provides employees with a consolidated view of their active benefit elections, including details about **dependents** and **beneficiaries** associated with each plan. Employees can also view their **previous year’s enrollment** information.
+This experience provides employees with a consolidated view of their active benefit elections, including details about dependents and beneficiaries associated with each plan. Employees can also view their previous year’s enrollment information.
 
-**Key features**
+### My benefit plans features
 
-- **New tile** available on the Employee Self-Service workspace.
+- **My benefit plans** tile available on the **Employee self service** workspace.
 - View all current benefit elections in one place.
-- See **dependent** and **beneficiary** details for each benefit plan.
-- View a **summary across all plans** with combined coverage information.
-- Access **previous year enrollment** details for historical reference.
-
-The **My Benefit Plans** tile makes it easier for employees to stay informed about their benefits without needing HR assistance, improving transparency and self-service.
+- View dependent and beneficiary details for each benefit plan.
+- View a summary across all plans with combined coverage information.
+- Access previous year enrollment details for historical reference.
 
 >[!IMPORTANT]  
 >The **Benefits management** feature must be enabled in Feature management to use **My benefit plans**.
 
-**How to access**
+To view your benefits, follow these steps:
 
-To view your benefits:
-
-1. Go to **Employee Self-Service** (ESS).
-2. Select the **My Benefit Plans** tile.
-3. Select the **benefit period** you want to review.
+1. Go to **Employee self service**.
+2. Select the **My benefit plans** tile.
+3. Select the **Benefit period** to review.
 4. View your elected benefits along with dependent and beneficiary details.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
