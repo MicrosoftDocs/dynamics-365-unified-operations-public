@@ -38,6 +38,8 @@ This article explains how to run the enrollment eligibility process.
    | **Legal entity** | The legal entity to process enrollment eligibility for. |
    | **Worker** | The worker to process enrollment eligibility for. If you leave this field blank, enrollment eligibility will be processed for all workers. |
    | **Benefit plan** | The benefit plan to process enrollment eligibility for.
+   | **From** | The date from which records will be included in the processing is based on the employee's start date.
+   | **To** | The date up to which records will be included in the processing is based on the employee's start date.
 
 3. If you want to run the process in the background, select **Run in the background** and do the following tasks:
 
