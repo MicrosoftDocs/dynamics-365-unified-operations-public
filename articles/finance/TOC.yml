@@ -240,6 +240,8 @@
                   href: accounts-payable/invoice-capture-config-group.md
                 - name: Invoice capture mapping rules
                   href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Invoice capture financial dimensions
+                  href: accounts-payable/invoice-capture-dim.md
                 - name: Invoice capture workspace
                   href: accounts-payable/invoice-capture-workspace.md
                 - name: Invoice capture dashboard
