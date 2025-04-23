@@ -22,12 +22,16 @@ This articles describes the Immersive Home, how it helps you work hand in hand w
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The **Immersive Home** is aiming to become the  modern, AI-first landing page that adapts to user’s most important work, aids the decision making, and reduces the need to navigate elsewhere to complete common tasks. It is a modern option for the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md) in finance and operations apps, which gives access to enabling, monitoring, teaching and interacting with AI agents.
+The **Immersive Home** is aiming to become the  modern, AI-first landing page that adapts to user’s most important work, aids the decision making, and reduces the need to navigate elsewhere to complete common tasks. It is a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps, which gives access to enabling, monitoring, teaching and interacting with AI agents.
 
-[![Screenshot of the Immersive Home experience.](./media/immersive-home.png)](./media/immersive-home.png)
+:::image type="content" source="media/immersive-home.png" alt-text="Screenshot of the Immersive Home experience." lightbox="media/immersive-home.png":::
 
-> [!NOTE]
-> The Immersive Home is being added in the **10.0.45 release in public preview**. To enable Immersive Home navigate to the Feature Management workspace, and enable the feature **'Immersive Home'**.  
+## Prerequisites
+
+To use the Immersive Home, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *(Preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
 
 ## The components of Immersive Home
 

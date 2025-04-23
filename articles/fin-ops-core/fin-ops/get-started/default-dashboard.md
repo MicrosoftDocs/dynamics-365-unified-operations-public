@@ -1,6 +1,6 @@
 ---
-title: Overview of the Default Dashboard in finance and operations apps
-description: Learn about Default Dashboard in finance and operations apps which can be used as the basic navigation hub and how you can personalize it.
+title: Overview of the default dashboard in finance and operations apps
+description: Learn about default dashboard in finance and operations apps which can be used as the basic navigation hub and how you can personalize it.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -20,17 +20,17 @@ ms.collection:
 
 This articles describes the purpose and use cases for the default dashboard, its content such as app tiles and workspaces and how to personalize it.
 
-[![Default Dashboard as it appears to an administrator.](./media/default-dashboard.png)](./media/default-dashboard.png)
+:::image type="content" source="media/default-dashboard.png" alt-text="The default dashboard as it appears to an administrator." lightbox="media/default-dashboard.png":::
 
-The Default Dashboard is a [dashboard](../../dev-itpro/user-interface/page-navigation.md#dashboard) kind of page in finance and operations apps that is by default set at the [initial page](../../fin-ops/organization-administration/tasks/set-users-initial-page.md). It comes pre-configured with a set uf useful components that help users to navigate within the application, such as  workspaces, in a simple visual experience. Components, such as workspaces and apps, will only be shown if the user has given respective permissions.
+The default dashboard is a [dashboard](../../dev-itpro/user-interface/page-navigation.md#dashboard) kind of page in finance and operations apps that is by default set at the [initial page](set-users-initial-page.md). It comes pre-configured with a set uf useful components that help users to navigate within the application, such as  workspaces, in a simple visual experience. Components, such as workspaces and apps, will only be shown if the user has given respective permissions.
 
-The Default Dashboard can be customized to show additional information or hide components and Users can [personalize it for their own preferences](../../dev-itpro/get-started/personalize-user-experience.md).
+The default dashboard can be customized to show additional information or hide components and Users can [personalize it for their own preferences](../../dev-itpro/get-started/personalize-user-experience.md).
 
-## Out-of-the-box components in the Default Dashboard
+## Out-of-the-box components in the default dashboard
 
-The components that are included by default on the Default Dashboard are:
+The components that are included by default on the default dashboard are:
 
-- Page header representing the current legal company.
+- Page header representing the current legal company
 - Quick access area for related **Apps**
 - Quick access area for **Workspaces**
 - People search field

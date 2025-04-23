@@ -1,7 +1,7 @@
 ---
 title: Navigation concepts
 description: Learn about the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
-author: jasongre, cabeln
+author: jasongre
 ms.author: jasongre
 ms.topic: how-to
 ms.date: 04/25/2025

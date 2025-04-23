@@ -13,7 +13,7 @@ ms.custom:
 
 # Set the preferred initial page for each user
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to set the initial page shown to a user when they open the application. The initial page can be different for each user and can be set by an admin or by each individual user themselves. 
 
