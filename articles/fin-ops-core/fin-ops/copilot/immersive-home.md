@@ -87,7 +87,7 @@ At the bottom of the **Agent activity** area, you can navigate to agent life cyc
 
 The **Workspaces** area shows a list of ranked tiles for each workspace. The ranking considers how recently you last used a workspace. Favorite workspaces rank at the top.  
 
-Workspace tiles highlight information that you have pinned to the dashboard. To pin information to the dashboard, open the relevant workspace, right-click on a tile in the workspace, select **Personalize: <tile name>** and then select the **Pin to dashboard** check box (clear this check box to remove the information from your Immersive Home).
+Workspace tiles highlight information that you have pinned to the dashboard. To pin information to the dashboard, open the relevant workspace, right-click on a tile in the workspace, select **Personalize: &lt;tile name&gt;** and then select the **Pin to dashboard** check box (clear this check box to remove the information from your Immersive Home).
 
 ## Related information
 

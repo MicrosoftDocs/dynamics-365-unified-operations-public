@@ -47,7 +47,7 @@ The **Apps** area shows tiles for finance and operations apps available to you s
 
 ## Workspaces
 
-The **Workspaces** area shows one tile for each workspace that's available to you. Workspace tiles can also highlight information that you have pinned to the dashboard. To pin information to the dashboard open the relevant workspace, right-click on a tile in the workspace, select **Personalize: <tile name>** and then select the **Pin to dashboard** check box (clear this check box to remove the information from your Immersive Home).
+The **Workspaces** area shows one tile for each workspace that's available to you. Workspace tiles can also highlight information that you have pinned to the dashboard. To pin information to the dashboard open the relevant workspace, right-click on a tile in the workspace, select **Personalize: &lt;tile name&gt;** and then select the **Pin to dashboard** check box (clear this check box to remove the information from your Immersive Home).
 
 ## People search
 
