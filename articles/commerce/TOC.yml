@@ -1082,8 +1082,8 @@
           href: tasks/define-loyalty-cards.md
         - name: Process adjustments of loyalty reward points
           href: tasks/process-loyalty-reward-point-adjustments.md
-        - name: Loyalty upsell prompt on POS
-          href: loyalty-upsell-prompt-on-pos.md
+        - name: Loyalty upsell prompt (preview)
+          href: loyalty-upsell-prompt.md
     - name: Manage your financials
       items:
       - name: Statements overview
