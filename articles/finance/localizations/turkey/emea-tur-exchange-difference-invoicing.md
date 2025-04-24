@@ -63,8 +63,7 @@ Here are the details for each field in the **Number sequence** tab:
 | **Exchange difference invoice voucher** |  Define the unique key for voucher of exchange difference invoice. |
 
 When you want to create an exchange difference invoice, there must be defined the **Realized gain** and **Realized loss** accounts in **Currency revaluation posting profile** page for **Accounts payable** and **Accounts receivable**. 
-Learn more about how to define a currency revaluation posting profile in [Currency revaluation posting profile](../general-ledger/currency-revalue-posting-profile.md).
-
+Learn more about how to define a currency revaluation posting profile in [Currency revaluation posting profile](../../general-ledger/currency-revalue-posting-profile.md). 
 
 ### Set up exchange difference invoice formats
 
@@ -75,7 +74,7 @@ You must import the latest versions of the following ER configurations:
 - **Exchange adjustment statement (TR) (Excel):** Provides an excel report to get an exchange difference reconciliation report. This report includes information about the exchange difference invoice and the invoice and payment transactions that generate the exchange difference amount.
 - **Model mapping (TR):** Sets the structure and data mapping for exchange difference invoice data mapping, ensuring data is correctly formatted for Electronic reporting.
 
-Fore more information about how to import the electronic reporting formats, see [Import Electronic reporting (ER) configurations from Dataverse](../localizations/global/workspace/gsw-import-er-config-dataverse.md).
+Fore more information about how to import the electronic reporting formats, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 To generate the reports, the relevant formats must be selected in the **Exchange difference invoice** and the **Exchange difference invoice voucher** parameters in **General** Tab on **Accounts payable** or **Accounts receivable > Setup > Exchange difference invoicing > Exchange difference invoicing parameters** page. 
 
@@ -207,7 +206,7 @@ To create a new exchange difference invoice; 
 5. In the **Default invoice prefix** parameter;
 
     - If it is set as **Yes**, the serial prefix will be automatically selected in the **Invoice serial** field based on the **Default prefix** marked in **Preprinted serial numbers** page. .
-    - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](../localizations/turkiye/emea-tur-serial-numbering.md).
+    - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](../../localizations/turkiye/emea-tur-serial-numbering.md).
 
 6. Select or change the other filtering parameters.
 7. Click **OK**.
