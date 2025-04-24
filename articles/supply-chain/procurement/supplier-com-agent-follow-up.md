@@ -16,106 +16,93 @@ ms.custom:
 
 # Follow up on purchase orders using the Supplier Communications Agent (production ready preview)
 
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps you identify and follow up on purchase orders that vendors have not confirmed yet or for which delivery is late. For each order it finds, it automatically generates a draft email addressed the relevant vendor.
+The Supplier Communications Agent helps you identify and follow up on purchase orders that vendors haven't confirmed yet or for which delivery is late. For each order it finds, the agent automatically generates a draft email addressed the relevant vendor.
 
-To supplier communications agent lets you do the following actions.
+The Supplier Communications Agent lets you do the following actions.
 
-- Create queries to find the purchase orders to follow up on. Queries are unique for each user, so you create and adjust them to best your own business needs. By default, you'll have two queries (one for following up on unconfirmed purchase orders and one for following up on late deliveries). These queries can be deleted, modified or new ones can be created fitting business needs.
+- Create queries to find purchase orders to follow up on. Queries are unique for each user, so you create and adjust them to best match your own business needs. Two queries are provided by default (one for following up on unconfirmed purchase orders and one for following up on late deliveries). You can create, delete, or modify these queries as needed to fit your business needs.
 - Configure how emails are authored for each of your queries.
-- Review the draft emails created by the agent. After reviewing each message, you can choose to modify it, copy it to email client, and/or send. Data used to compose the email comes from the purchase order lines and/or related tables.
+- Review the draft emails created by the agent. After reviewing each message, you can choose to modify it, copy it to your email client, and/or send it. Data used to compose the email comes from the purchase order lines and/or related tables.
 
-By default, the system provides the following two premade queries for finding purchase orders that require action.
+By default, the system provides the following two pre-made queries for finding purchase orders that require action.
 
-- **Unconfirmed purchase orders** – Finds purchase orders assigned to you that have a delivery date in the next 60 days that haven't yet been confirmed by the vendor (confirmed delivery date is blank). The specific criteria are:
+- *Unconfirmed purchase orders* – Finds purchase orders assigned to you that have a delivery date in the next 60 days that haven't yet been confirmed by the vendor (confirmed delivery date is blank). The specific criteria are:
     - Confirmed delivery date is blank
     - Owner = (your user account)
     - Delivery reminder is not 0
 
-- **Delayed purchase orders** – Finds purchase orders assigned to you that are delayed (where the confirmed delivery date has passed by 1 or more days). The specific criteria are:
+- *Delayed purchase orders* – Finds purchase orders assigned to you that are delayed (where the confirmed delivery date has passed by one or more days). The specific criteria are:
     - Confirmed delivery date is prior to today
     - Owner = (your user account)
     - Delivery remainder is not 0
 
 ## Configure query criteria and email settings
 
-This section describes how to set up queries to find purchase orders that require follow-up. It also describes how to configure the way Copilot generates vendor email content for each query.
+The following procedure shows how to set up queries to find purchase orders that require follow-up. It also describes how to configure the way Copilot generates vendor email content for each query.
 
 1. Go to the **(Preview) Follow-up emails** page by doing one of the following steps.
+    - Go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**
+    - Go to the **Purchase order receipt and follow-up** workspace. A tile called **(Preview) Follow-up emails** indicates the number of emails that require review. Select the tile to open the **(Preview) Follow-up emails** page.
 
-    - Looking for it on the menu item, under Procurement and **Sourcing &gt; (Preview) Supplier Communications Agent &gt; (Preview) Follow-up emails**
-
-    - Go to the **Purchase order receipt and follow-up** workspace, where you will find a tile that it **(Preview) Follow-up emails** indicating the number of emails
-
-2. Do one of the following steps.
-
+1. Do one of the following steps.
     - To edit an existing query, select it in the list and then select **Edit**.
-
-    - To delete an existing query, select it in the list and then select **Delete.**
-
+    - To delete an existing query, select it in the list and then select **Delete**.
     - To create a new query, select **Configure agents**. Under **Library**, select **Send follow-up emails with Supplier Communications Agent**
 
-3. Change the name of the query if desired by editing the default **Draft follow-up emails for purchase orders**
+1. Edit the name of the query, if desired (the default name is *Draft follow-up emails for purchase orders*).
+1. Select whether to find *Unconfirmed purchase orders* or *Delayed purchase orders*.
+1. Modify the criteria to set which purchase orders need follow-up. Examples could be orders for the next two months that haven't been confirmed, orders that were created more than three days ago, orders sent but not confirmed, and so on.
 
-4. Select whether to find **Unconfirmed purchase orders** or **Delayed purchase orders.**
-
-5. Modify the criteria to set which purchase orders need follow up. Examples could be orders that have not been confirmed for the next 2 months; or that have been created 3 days ago, sent and not confirmed etc.
-
-    - When **delayed purchase order** is chosen the criteria is:
+    - If you chose to find *Delayed purchase orders*, the criteria are:
         - Deliver remainder (line) is not 0
         - Confirmed receipt (line) is between 60 days before today and 1 day before today
         - Orderer (header) is you (current user)
 
-    - When **unconfirmed purchase order** is chosen, the criteria is:
+    - If you chose to find *Unconfirmed purchase orders*, the criteria are:
         - Deliver remainder (line) is not 0
         - Confirmed receipt date (line) is blank ("")
         - Orderer (header) is you (current user)
         - Document status (header) is not None
 
-6. Select the fields that should be included in the email, such as the delivery dates, or the address.
+1. Select the fields that should be included in the email, such as the delivery dates or the address.
+1. Add a signature if desired by selecting **Signature** and entering the desired text. You can optionally add an email footer with the text *This email was written with the help of AI*. If your system is set to send emails automatically, this email footer becomes mandatory.
+1. Select the tone of the emails (*Casual* or *Formal*, *Urgent* or *Non-urgent*).
 
-7. Add a signature if desired by just selecting signature and entering the desired text. Note that *This email was written with the help of AI* email footer can be optionally added. If emails are automatically sent, this email footer becomes mandatory.
+Here are some examples of other queries that you might set up:
 
-8. Select the tone of the emails: Casual or Formal, Urgent or Non-urgent.
+- To generate emails for orders that were created less than three days ago and aren't confirmed, the criteria could be:
+    - Deliver remainder (line) is not 0
+    - Confirmed receipt (line) is blank
+    - Created date is between today-3 and today
+    - Orderer (header) is you (current user)
 
-![A screenshot of a email AI generated content may be incorrect ](media/image8.png)
+- To generate emails for orders that were created less than three days ago and aren't confirmed, but only for vendor group A, the criteria could be:
+    - Deliver remainder (line) is not 0
+    - Confirmed receipt (line) is blank
+    - Created date is between today-3 and today
+    - Orderer (header) is you (current user)
+    - Vendor (group) is A
 
-Examples of other queries may be:
+## Configure the address that emails are sent from
 
-For creating emails where the order was created less than 3 days ago and is not confirmed:
+To learn how to view and set the address from which the emails are sent, go to [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
 
-- Deliver remainder (line) is not 0
-- Confirmed receipt (line) is blank
-- Created date is between today-3 and today
-- Orderer (header) is you (current user)
-
-Or the same case also only for a certain vendor group A when they are unconfirmed:
-
-- Deliver remainder (line) is not 0
-- Confirmed receipt (line) is blank
-- Created date is between today-3 and today
-- Orderer (header) is you (current user)
-- Vendor (group) is A
-
-Configure the email address the emails will be sent from
-
-Check the email address that the emails will be sent from on the settings indicated on [Configure and send email - Finance & Operations \| Dynamics 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-email)
-
-You can always change the email address it is being sent from on the specific email.
+You can always change the sending email address for any or all individual email messages before you send them.
 
 ## Review and send drafted emails
 
-Go to the page **(Preview) Follow-up emails** to see the emails already created for the different configurations. On the left you will find the configurations and on the right the different emails for the selected configuration.
+Go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails** to see the emails that were already created for the various configurations. Configurations are shown on the left and emails for each configuration are shown on the right.
 
-Edit as needed, and select **Send** to be able to send it to the vendor.
+Edit each message needed and select **Send** to send it to the vendor.
 
-## Automatically send emails
+## Automatically send follow-up emails
 
-Note that for automatically sending emails, the optional feature below must be turned on.
+To automatically send emails without user review, an administrator must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
 
-(Preview) Supplier Communications Agent – automatically sending emails
+When this feature is turned on, the system uses the email address of the administrator who set up the agent as the sender for each automatically delivered email.
 
-If that has been the case, the emails will be automatically sent from the email address of the administrator that setup the agent.
-
-Look into the following for details: [Configure and send email - Finance & Operations \| Dynamics 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-email)
+For more information, see [Configure and send email](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md).
