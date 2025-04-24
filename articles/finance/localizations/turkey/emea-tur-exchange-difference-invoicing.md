@@ -4,7 +4,7 @@ description: Access links to documentation resources for Türkiye, including lin
 author: v-omerorhan 
 ms.author: v-omerorhan
 ms.topic: overview
-ms.date: 04/11/2024
+ms.date: 04/24/2024
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Türkiye
@@ -17,6 +17,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 # Exchange difference invoicing
 
 \[!include [banner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/main/articles/finance/includes/banner.md)\]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information on how to create and process exchange difference invoices in Türkiye due to the floating exchange rate system. 
 
@@ -27,7 +28,7 @@ According to the legislations, the tax rate applied to the exchange rate differe
 
 ## Configuring exchange difference invoicing
 
-This article explains how to configure to create exchange difference invoices. 
+This section explains how to configure to create exchange difference invoices. 
 
 Exchange difference invoicing can be configured according to the parameters in **Accounts payable** or **Accounts receivable > Setup > Exchange difference invoicing > Exchange difference invoicing parameters** page. 
 
@@ -62,27 +63,26 @@ Here are the details for each field in the **Number sequence** tab:
 | **Exchange difference invoice voucher** |  Define the unique key for voucher of exchange difference invoice. |
 
 When you want to create an exchange difference invoice, there must be defined the **Realized gain** and **Realized loss** accounts in **Currency revaluation posting profile** page for **Accounts payable** and **Accounts receivable**. 
-Learn more about how to define a currency revaluation posting profile in [Currency revaluation posting profile](currency-revalue-posting-profile.md).
+Learn more about how to define a currency revaluation posting profile in [Currency revaluation posting profile](../general-ledger/currency-revalue-posting-profile.md).
 
 
 ### Set up exchange difference invoice formats
 
-This article provides an explanation of the Excel reports created with electronic reporting for the exchange difference invoicing process.
-
-The following documents must be imported to get reports on the system:
+This section explains how to configure Excel reports for the exchange difference invoicing process. The reports are implemented as Electronic Reporting (ER) configurations. 
+You must import the latest versions of the following ER configurations:
 
 - **Exchange difference invoice (TR) (Excel):** Provides an excel report to get an exchange difference invoicing printout using Electronic reporting.
 - **Exchange adjustment statement (TR) (Excel):** Provides an excel report to get an exchange difference reconciliation report. This report includes information about the exchange difference invoice and the invoice and payment transactions that generate the exchange difference amount.
 - **Model mapping (TR):** Sets the structure and data mapping for exchange difference invoice data mapping, ensuring data is correctly formatted for Electronic reporting.
 
-Fore more information about how to import the electronic reporting formats, see [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
+Fore more information about how to import the electronic reporting formats, see [Import Electronic reporting (ER) configurations from Dataverse](../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 To generate the reports, the relevant formats must be selected in the **Exchange difference invoice** and the **Exchange difference invoice voucher** parameters in **General** Tab on **Accounts payable** or **Accounts receivable > Setup > Exchange difference invoicing > Exchange difference invoicing parameters** page. 
 
 
 ## Processing exchange difference invoicing
 
-This article provides general information of the fields and functions for **Exchange difference invoicing** page. 
+This section provides general information of the fields and functions for **Exchange difference invoicing** page. 
 
 Exchange difference invoicing feature retrieves settled invoice and payment transactions for customers and vendors specified in the process. 
 When you click the **New** in ActionPane to create exchange difference invoice records, there are two options:  
@@ -197,6 +197,7 @@ Here are the details for each field in the **Settled transactions** section:
 
 ## Creating an exchange difference invoice
 
+This section explains how to create an exchange difference invoice. 
 To create a new exchange difference invoice; 
 
 1. Navigate to **Accounts payable > Periodic tasks > Exchange difference invoicing** or **Accounts receivable > Periodic tasks > Exchange difference invoicing**.
@@ -206,7 +207,7 @@ To create a new exchange difference invoice; 
 5. In the **Default invoice prefix** parameter;
 
     - If it is set as **Yes**, the serial prefix will be automatically selected in the **Invoice serial** field based on the **Default prefix** marked in **Preprinted serial numbers** page. .
-    - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](emea-tur-serial-numbering.md)
+    - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](../localizations/turkiye/emea-tur-serial-numbering.md).
 
 6. Select or change the other filtering parameters.
 7. Click **OK**.
@@ -243,7 +244,7 @@ When the **Exchange difference amount** is a credit balance, the document number
 
 >[!NOTE]
 >- If the **Default invoice prefix** parameter is set as **No**, the **Invoice serial** field will be mandatory and a serial prefix must be chosen manually.
->- If the **Default invoice prefix** parameter is set as **Yes**, the **Invoice serial** value will be selected automatically depending on the **Default prefix** field selected in the **Preprinted serial numbers** page. For more information, see [Serial numbering](emea-tur-serial-numbering.md)
+>- If the **Default invoice prefix** parameter is set as **Yes**, the **Invoice serial** value will be selected automatically depending on the **Default prefix** field selected in the **Preprinted serial numbers** page. For more information, see [Serial numbering](../localizations/turkiye/emea-tur-serial-numbering.md).
 
 When you generate the **Exchange adjustment statement** report from the **Document** group in the **Invoice** tab, the **Reconciliation statement sent** field in the **Exchange difference invoice** section will be marked. Then, the relevant exchange difference invoice can be approved using **Approve**. If needed, approval can be reset using **Reset Approval**. 
 
@@ -258,7 +259,7 @@ When reconciling invoices, payments and collections with customers and vendors, 
 
 ## How to print the exchange difference invoicing documents
 
-This article explains how to print the excel reports in exchange difference invoicing page. 
+This section explains how to print the excel reports in exchange difference invoicing page. 
 
 - **Exchange rate adjustment**: The report will be able to print after the exchange difference invoice is posted. The report can be access as below:
 
