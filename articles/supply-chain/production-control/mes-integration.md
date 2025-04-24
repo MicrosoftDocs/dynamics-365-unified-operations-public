@@ -103,7 +103,7 @@ For the *report as finished* message, the `_messageType` value is `ProdProductio
 |---|---|---|
 | `ProductionOrderNumber` | Mandatory | String |
 | `ReportFinishedLines` | Mandatory | A list of lines (at least one), each of which contains the payload that is described in the next table |
-| `PrintLabel` | Optional | Enum (Yes \| No) |
+| `PrintLabel` | Optional (Supported from Supply Chain Management version 10.0.45) | Enum (Yes \| No) |
 
 The following table shows the fields that each line in the `ReportFinishedLines` section of the `ProdProductionOrderReportFinished` message supports.
 
@@ -142,7 +142,7 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ProductVersionId` | Optional | String |
 | `ItemBatchNumber` | Optional | String |
 | `ProductSerialNumber` | Optional | String |
-| `GenerateLicensePlate` | Optional | Enum (Yes \| No) |
+| `GenerateLicensePlate` | Optional (Supported from Supply Chain Management version 10.0.45) | Enum (Yes \| No) |
 | `LicensePlateNumber` | Optional | String |
 | `InventoryStatusId` | Optional | String |
 | `ProductionWarehouseId` | Optional | String |
