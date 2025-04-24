@@ -6,9 +6,8 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 04/24/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.13
