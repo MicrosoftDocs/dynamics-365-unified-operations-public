@@ -12,6 +12,9 @@ ms.search.form: SysMessageQueueSetup, DiagnosticsValidationRule, ProcessSchedule
 ---
 
 ## Cleanup functionality 
+To use the **Cleanup job for the message processor** functionality that is described later in this article, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45 or later.
 
 ### Optimization Advisor
 
