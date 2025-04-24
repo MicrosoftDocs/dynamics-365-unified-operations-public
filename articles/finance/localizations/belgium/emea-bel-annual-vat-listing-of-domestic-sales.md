@@ -46,7 +46,7 @@ Import the latest version of the following Electronic reporting (ER) configurati
   - Invoice turnover report model
   - Invoice turnover report (BE)
 
-For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../global/workspace/gsw-import-er-config-dataverse.md).
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Create registration types for company codes
 
