@@ -112,6 +112,7 @@ For more information, see [Registration category](../europe/emea-registration-id
     | From date                             | Select the start date of the report.                                                                                  |
     | To date                               | Select the end date of the report.                                                                                    |
     | Amount                                | The minimum amount to include on the report. This amount is the total invoiced amount by the customer, excluding VAT. |
+    | Registration number                   | This parameter is available starting with version 10.0.44 of Finance when [Multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) is enabled in your legal entity and there is a valid Registration ID set up for an address in Belgium. Select the Belgium Registration ID for which you want to generate the **Invoice turnover** report.  |
     | Generate file                         | Set this option to **Yes** to generate an .xml file.                                                                  |
     | File name                             | Enter a name for the reporting file.                                                                                  |
     | Generate report                       | Set this option to **Yes** to generate an .xlsx file.                                                                 |
@@ -119,6 +120,8 @@ For more information, see [Registration category](../europe/emea-registration-id
     | Official declaration                  | Set this option to **Yes** to indicate that this report is final.                                                     |
     | Replaced Invoice turnover declaration | If you must replace a report, enter the number of the replaced declaration.                                           |
     | Format mapping                        | Select **Invoice turnover report (BE)** to generate the **Invoice turnover** report.                                  |
+
+3. Click **OK** button to generate the report.
 
 ## Example
 
