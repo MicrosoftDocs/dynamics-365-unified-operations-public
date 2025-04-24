@@ -39,7 +39,7 @@ The RCE for nondomiciled purchases in Peru is composed of the following formats 
 ## Additional configurations required for RCE
 
 - You must create a SUNAT tax application code to use on the report. Learn more in [Tax application for Latin America](../ltm-core-tax-application.md).
-- When configuring document classes for purchase invoices, debit notes, credit notes, and DUA-DSI declaration (customs legal requirements), the tax application code must be set according to  SUNAT Table 3: Types of Payment Receipts or Documents.
+- When configuring document classes for purchase invoices, debit notes, credit notes, and DUA-DSI declaration (customs legal requirements), the tax application code must be set according to SUNAT Table 3: Types of Payment Receipts or Documents.
 - If the DAM-DSI (customs legal requirements) emission year is required for a transaction, you must enable the **Concept 1** field from the document class.
 - If the DAM-DSI (customs legal requirements) code from  SUNAT Table 4 is required for the transaction, use the **Concept 2** field from the document class.
 - It's possible to associate invoices and DUA-DSI declaration through the source document if needed.
