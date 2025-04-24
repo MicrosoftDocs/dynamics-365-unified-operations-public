@@ -19,7 +19,7 @@ ms.custom:
 
 This article explains how the loyalty upsell prompt feature helps inform customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce.
 
-The loyalty upsell prompt feature is designed to assist store associates in informing customers about their loyalty program status and tier qualifying points. This feature aims to enhance customer engagement and satisfaction, resulting in increased loyalty, repeat purchases, and overall sales.
+The loyalty upsell prompt feature is designed to enable store associates to inform customers about their loyalty program status and tier qualifying points. This feature aims to enhance customer engagement and satisfaction, resulting in increased loyalty, repeat purchases, and overall sales.
 
 Retailers are striving to win more customers and convert their user base into loyalty members. However, effectively promoting loyalty programs and ensuring customers are aware of the benefits pose significant challenges that often lead to lower engagement and missed opportunities for customer retention. For example, frequent shoppers might not realize they're close to reaching the next tier in a loyalty program and may be missing significant discounts or rewards.
 
@@ -34,7 +34,7 @@ To enable the loyalty upsell prompt feature, follow these steps.
 
 1. In headquarters, go to **Systems administration \> Workspaces \> Feature management**.
 1. Search for the **Retail Loyalty Upsell Prompt** feature, and then select it.
-1. In the right pane, select Enable now.
+1. In the right pane, select **Enable now**.
 
 ## Configure the loyalty upsell prompt
 
@@ -43,28 +43,30 @@ To configure the loyalty upsell prompt feature, follow these steps.
 1. In Commerce headquarters, go to **Retail and Commerce \> Customers \> Loyalty \> Loyalty programs**.
 1. In the left pane, select your loyalty program. For example, select **Fabrikam Rewards**.
 1. On the **Program tiers** FastTab, select your loyalty tier. For example, select **Gold**.
-1. On the **Tier rules** FastTab, select one of the tier rules with reward points of type **Amount**. For example, **Reward point** = "Total Spent", **Evaluation Date Interval** = "PrevMonth", **Minimum issued points** = "500".
+1. On the **Tier rules** FastTab, select one of the tier rules set to use reward points of the amount type (instead of, for example, the transaction type). For example, a workable tier rule could have **Reward point** = "Total Spent", **Evaluation Date Interval** = "PrevMonth", and **Minimum issued points** = "500".
 1. In the **Threshold** column, define the threshold for when the loyalty upsell prompt appears. For example, **Threshold** = "100".
 
-![Loyalty upsell prompt configuration in HQ](./media/HQ_Setup_Loyalty_Threshold.png)
+<!-- ![Loyalty upsell prompt configuration in headquarters](./media/HQ_Setup_Loyalty_Threshold.png) -->
+:::image type="content" source="./media/HQ_Setup_Loyalty_Threshold.png" alt-text="Loyalty upsell prompt configuration in headquarters":::
 
 > [!NOTE] 
-> - Only loyalty reward points of type "Amount" are allowed for the loyalty upsell prompt experience. If you attempt to select a tier rule with loyalty reward points of type "Total transactions", the following warning in a yellow band appears at the top of the screen: "Only reward points of type "Amount" are considered for the Loyalty Upsell Prompt."
+> Only loyalty reward points of the amount type are allowed for the loyalty upsell prompt experience. If you attempt to select a tier rule with loyalty reward points of type "Total transactions", the following warning in a yellow band appears at the top of the screen: "Only reward points of type "Amount" are considered for the Loyalty Upsell Prompt."
 
 ## Loyalty upsell prompts on the POS transaction screen
 
 If more than one loyalty card is associated with a customer, store associates on the point of sale (POS) transaction screen are prompted to choose a loyalty card.
-- For a selected card with only one loyalty program: If the customer's tier qualifying points are within the threshold of the configured loyalty upsell prompt feature, a bell symbol appears next to the loyalty program tier information.
-- For a selected card with multiple loyalty programs: For each loyalty program, if the loyalty upsell prompt tier rule is configured with defined thresholds, and if the user's tier qualifying points are within those thresholds, a bell symbol appears next to the loyalty program tier information.
+- **For a selected card with only one loyalty program**: If the customer's tier qualifying points are within the threshold of the configured loyalty upsell prompt feature, a bell symbol appears next to the loyalty program tier information.
+- **For a selected card with multiple loyalty programs**: For each loyalty program, if the loyalty upsell prompt tier rule is configured with defined thresholds, and if the user's tier qualifying points are within those thresholds, a bell symbol appears next to the loyalty program tier information.
 
 > [!NOTE]
 > If a customer's tier qualifying points are beyond the configured threshold, no bell symbol appears next to the loyalty program tier information in headquarters.
 
-![Loyalty upsell prompt from Transaction page](./media/Multiple_LoyaltyPrograms_TransactionScreen_LoyaltyUpsellPromptFeature.png) 
+<!-- ![Loyalty upsell prompt from POS transaction screen](./media/Multiple_LoyaltyPrograms_TransactionScreen_LoyaltyUpsellPromptFeature.png) -->
+:::image type="content" source="./media/Multiple_LoyaltyPrograms_TransactionScreen_LoyaltyUpsellPromptFeature.png" alt-text="Loyalty upsell prompt from POS transaction screen":::
 
 ### Examples of loyalty upsell prompts 
 
-The following table shows examples of loyalty upsell prompts where the threshold is set to "100" and the Gold tier is 500 points.
+The following table shows examples of loyalty upsell prompts where the threshold is set to "100".
 
 | Customer   | Current loyalty tier | Tier qualifying points | Loyalty upsell prompt for next tier                                      |
 |------------|----------------------|------------------------|--------------------------------------------------------------------------|
@@ -73,17 +75,18 @@ The following table shows examples of loyalty upsell prompts where the threshold
 
 ## Loyalty upsell prompt via the customer details page
 
-When store associates view loyalty card details via the POS customer details page, they see the same controls as on the transaction screen but they must first select a loyalty card before the new slider loads.
+When store associates view loyalty card details via the POS customer details page, they see the same controls as on the transaction screen but they must first select a loyalty card before the slider loads.
 
 The following example image shows loyalty card details on the POS customer details page with prompts that two loyalty programs are within the threshold of the next loyalty tier.
 
-![Loyalty upsell prompt from Customer details page](./media/Multiple_LoyaltyPrograms_CustomerScreen_LoyaltyUpsellPromptFeature.png) 
+<!-- ![Loyalty upsell prompt from the customer details page](./media/Multiple_LoyaltyPrograms_CustomerScreen_LoyaltyUpsellPromptFeature.png) -->
+:::image type="content" source="./media/Multiple_LoyaltyPrograms_CustomerScreen_LoyaltyUpsellPromptFeature.png" alt-text="Loyalty upsell prompt from the customer details page":::
 
 ## Constraints
 
 ### Immediate effect of tier rule switching
 
-When you switch the tier rule for loyalty prompt sell consideration, if no Commerce Data Exchange (CDX) jobs are expected to be run the tier rule switch is effective immediately. For example, when you switch between permitted tier rules that have reward points of type "Amount", a notification appears asking you to confirm the switch. After you confirm the switch, the newly selected tier rule becomes effective immediately.
+When you switch the tier rule for loyalty prompt sell consideration, if no Commerce Data Exchange (CDX) jobs are expected to be run the tier rule switch is effective immediately. For example, when you switch between permitted tier rules that have reward points of the amount type, a notification appears asking you to confirm the switch. After you confirm the switch, the newly selected tier rule becomes effective immediately.
  
 ### Loyalty upsell prompt threshold value
 
