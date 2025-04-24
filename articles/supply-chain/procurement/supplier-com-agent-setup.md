@@ -27,7 +27,7 @@ This article explains how system administrators can set up and configure the Sup
 To use the Supplier Communications Agent, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [feature management](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). Select **Check for updates** if the features aren't shown on your system.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
     - *(Preview) Immersive Home*
     - *(Production ready preview) Agent management*
     - *(Production ready preview) Supplier Communications Agent*
