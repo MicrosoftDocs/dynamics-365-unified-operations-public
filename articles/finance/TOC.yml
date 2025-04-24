@@ -4176,6 +4176,10 @@
                       href: localizations/thailand/apac-tha-sales-vat-report.md
                     - name: Withholding tax
                       href: localizations/thailand/apac-tha-withholding-tax.md
+                - name: Türkiye
+                  items:
+                    - name: Exchange difference invoicing 
+                      href: localizations/turkey/emea-tur-exchange-difference-invoicing.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
