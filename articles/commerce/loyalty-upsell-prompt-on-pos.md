@@ -1,6 +1,6 @@
 ---
 title: Loyalty upsell prompt feature (preview)
-description: Learn how the loyalty upsell prompt feature assists store associates in informing customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce.
+description: Learn how the loyalty upsell prompt feature helps inform customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 04/25/2025
 ms.topic: how-to
@@ -17,18 +17,18 @@ ms.custom:
 [!INCLUDE [banner](includes/banner.md)]
 [!INCLUDE [banner](includes/preview-banner.md)]
 
-This article explains how the loyalty upsell prompt feature assists store associates in informing customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce.
+This article explains how the loyalty upsell prompt feature helps inform customers about their loyalty program status and tier qualifying points in Microsoft Dynamics 365 Commerce.
 
 The loyalty upsell prompt feature is designed to assist store associates in informing customers about their loyalty program status and tier qualifying points. This feature aims to enhance customer engagement and satisfaction, resulting in increased loyalty, repeat purchases, and overall sales.
 
-Retailers are striving to win more customers and convert their user base into loyalty members. However, effectively promoting loyalty programs and ensuring customers are aware of the benefits pose significant challenges that often lead to lower engagement and missed opportunities for customer retention. For example, frequent shoppers might not realize they are close to reaching the next tier in a loyalty program, thereby missing out on significant discounts or rewards.
+Retailers are striving to win more customers and convert their user base into loyalty members. However, effectively promoting loyalty programs and ensuring customers are aware of the benefits pose significant challenges that often lead to lower engagement and missed opportunities for customer retention. For example, frequent shoppers might not realize they're close to reaching the next tier in a loyalty program and may be missing significant discounts or rewards.
 
-The loyalty upsell prompt feature enables store associates to provide customers with information about their tier qualifying points and loyalty program status. By showing customers how close they are to reaching the next tier, retailers can motivate them to continue engaging with the brand to unlock new benefits, which can result in additional purchases and increased Average Order Value (AOV). The loyalty upsell prompt feature enhances customer engagement and satisfaction, leading to increased loyalty and repeat purchases and ultimately boosting sales and customer retention.
+The loyalty upsell prompt feature enables store associates to provide customers with information about their tier qualifying points and loyalty program status. By showing customers how close they are to reaching the next tier, retailers can motivate them to continue engaging with the brand to unlock new benefits. These prompts can result in additional purchases and increased average order value (AOV). The loyalty upsell prompt feature enhances customer engagement and satisfaction, leading to increased loyalty and repeat purchases and ultimately boosting sales and customer retention.
 
 ## Enable the loyalty upsell prompt feature
 
 > [!NOTE]
-> Tthe loyalty upsell prompt feature is available starting with Commerce version 10.0.44 and won't be backported.
+> The loyalty upsell prompt feature is available starting with Commerce version 10.0.44 and won't be backported.
 
 To enable the loyalty upsell prompt feature, follow these steps.
 
@@ -49,13 +49,13 @@ To configure the loyalty upsell prompt feature, follow these steps.
 ![Loyalty upsell prompt configuration in HQ](./media/HQ_Setup_Loyalty_Threshold.png)
 
 > [!NOTE] 
-> - Only reward point types of "Amount" are allowed for the loyalty upsell prompt experience.
+> - Only reward point of type "Amount" are allowed for the loyalty upsell prompt experience.
 > - If you attempt to select a tier rule with loyalty reward points as “Total transactions,” the following warning in a yellow band appears at the top of the screen: "Only reward points of type "Amount" are considered for the Loyalty Upsell Prompt."
 
-## Loyalty upsell prompt via transaction screen on POS
+## Loyalty upsell prompts on the POS transaction screen
 
-If more than one loyalty card is associated with a customer, store associates are prompted to choose a loyalty card. Upon choosing a loyalty card:
-- For a selected card with only one loyalty program: If the customer's tier qualifying points are within the threshold of the configured loyalty upsell prompt feature, a bell symbol appears next to the loyalty program tier information .
+If more than one loyalty card is associated with a customer, store associates on the point of sale (POS) transaction screen are prompted to choose a loyalty card.
+- For a selected card with only one loyalty program: If the customer's tier qualifying points are within the threshold of the configured loyalty upsell prompt feature, a bell symbol appears next to the loyalty program tier information.
 - For a selected card with multiple loyalty programs: For each loyalty program, if the loyalty upsell prompt tier rule is selected with defined thresholds, and if the user's tier qualifying points are within those thresholds, a bell symbol appears next to the loyalty program tier information.
 
 > [!NOTE]
@@ -74,8 +74,9 @@ The following table shows examples of loyalty upsell prompts where the threshold
 
 ## Loyalty upsell prompt via the customer details page
 
-To view Loyalty card details via Customer details page, same new Fluent UI controls as the transaction screen, except that the user chooses a “Loyalty card” before the new slider loads.
-e.g., Loyalty card details from CDP with at least one or more loyalty program tier within the threshold of the next loyalty tier.
+When store associates view loyalty card details via the POS customer details page, they see the same controls as on the transaction screen but they must first select a loyalty card before the new slider loads.
+
+The following example image shows loyalty card details on the POS customer details page with prompts that two loyalty programs are within the threshold of the next loyalty tier.
 
 ![Loyalty upsell prompt from Customer details page](./media/Multiple_LoyaltyPrograms_CustomerScreen_LoyaltyUpsellPromptFeature.png) 
 
