@@ -62,11 +62,15 @@ You must create two registration types for company codes: one for the VAT ID and
 8. In the **Country/region** field, select **BEL**.
 9. Select **Create**.
 
+For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation).
+
 ### Match the registration types with registration categories
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.  
 2. For the registration type for the VAT ID, select the **VAT ID** registration category.
 3. For the registration type for the enterprise number, select the **Enterprise ID (COID)** registration category.
+
+For more information, see [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
 
 ### Set up a VAT ID and enterprise number for your company
 
@@ -118,7 +122,7 @@ You must create two registration types for company codes: one for the VAT ID and
 
 ## Example
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest version of the following ER configurations:
+1. [Import](../../localizations/global/workspace/gsw-import-er-config-dataverse.md) the latest version of the following Electronic reporting (ER) configurations from Dataverse:
 
     - Invoice turnover report model
     - Invoice turnover report (BE)
