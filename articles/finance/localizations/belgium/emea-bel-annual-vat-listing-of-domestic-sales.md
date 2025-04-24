@@ -35,6 +35,8 @@ The following fields are shown on the **Invoice turnover** report:
 - Customer's turnover
 - Customer's VAT amount
 
+Starting with version 10.0.44 of Dynamics 365 Finance, the **Invoice turnover** report supports reporting for [Multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
+
 ## Setup
 
 ### Preliminary steps
@@ -44,7 +46,7 @@ Import the latest version of the following Electronic reporting (ER) configurati
   - Invoice turnover report model
   - Invoice turnover report (BE)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Create registration types for company codes
 
