@@ -206,7 +206,7 @@ To create a new exchange difference invoice; 
 5. In the **Default invoice prefix** parameter;
 
     - If it is set as **Yes**, the serial prefix will be automatically selected in the **Invoice serial** field based on the **Default prefix** marked in **Preprinted serial numbers** page. .
-    - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](../../localizations/turkiye/emea-tur-serial-numbering.md).
+    - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](emea-tur-serial-numbering.md).
 
 6. Select or change the other filtering parameters.
 7. Click **OK**.
@@ -243,7 +243,7 @@ When the **Exchange difference amount** is a credit balance, the document number
 
 >[!NOTE]
 >- If the **Default invoice prefix** parameter is set as **No**, the **Invoice serial** field will be mandatory and a serial prefix must be chosen manually.
->- If the **Default invoice prefix** parameter is set as **Yes**, the **Invoice serial** value will be selected automatically depending on the **Default prefix** field selected in the **Preprinted serial numbers** page. For more information, see [Serial numbering](../localizations/turkiye/emea-tur-serial-numbering.md).
+>- If the **Default invoice prefix** parameter is set as **Yes**, the **Invoice serial** value will be selected automatically depending on the **Default prefix** field selected in the **Preprinted serial numbers** page. For more information, see [Serial numbering](emea-tur-serial-numbering.md).
 
 When you generate the **Exchange adjustment statement** report from the **Document** group in the **Invoice** tab, the **Reconciliation statement sent** field in the **Exchange difference invoice** section will be marked. Then, the relevant exchange difference invoice can be approved using **Approve**. If needed, approval can be reset using **Reset Approval**. 
 
