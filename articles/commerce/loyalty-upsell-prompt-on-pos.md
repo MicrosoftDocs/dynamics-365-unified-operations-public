@@ -23,12 +23,12 @@ The loyalty upsell prompt feature is designed to assist store associates in info
 
 Retailers are striving to win more customers and convert their user base into loyalty members. However, effectively promoting loyalty programs and ensuring customers are aware of the benefits pose significant challenges that often lead to lower engagement and missed opportunities for customer retention. For example, frequent shoppers might not realize they're close to reaching the next tier in a loyalty program and may be missing significant discounts or rewards.
 
-The loyalty upsell prompt feature enables store associates to provide customers with information about their tier qualifying points and loyalty program status. By showing customers how close they are to reaching the next tier, retailers can motivate them to continue engaging with the brand to unlock new benefits. These prompts can result in additional purchases and increased average order value (AOV). The loyalty upsell prompt feature enhances customer engagement and satisfaction, leading to increased loyalty and repeat purchases and ultimately boosting sales and customer retention.
+The loyalty upsell prompt feature enables store associates to provide customers with information about their tier qualifying points and loyalty program status. By showing customers how close they are to reaching the next tier, retailers can motivate them to continue engaging with the brand to unlock new benefits. These prompts can result in additional purchases and increased average order value (AOV). The loyalty upsell prompt feature enhances customer engagement and satisfaction, leading to increased loyalty that may boost sales and customer retention.
 
 ## Enable the loyalty upsell prompt feature
 
 > [!NOTE]
-> The loyalty upsell prompt feature is available starting with Commerce version 10.0.44 and won't be backported.
+> The loyalty upsell prompt feature is available starting with Commerce version 10.0.44. The feature isn't backported to previous releases.
 
 To enable the loyalty upsell prompt feature, follow these steps.
 
@@ -49,14 +49,13 @@ To configure the loyalty upsell prompt feature, follow these steps.
 ![Loyalty upsell prompt configuration in HQ](./media/HQ_Setup_Loyalty_Threshold.png)
 
 > [!NOTE] 
-> - Only reward point of type "Amount" are allowed for the loyalty upsell prompt experience.
-> - If you attempt to select a tier rule with loyalty reward points as “Total transactions,” the following warning in a yellow band appears at the top of the screen: "Only reward points of type "Amount" are considered for the Loyalty Upsell Prompt."
+> - Only loyalty reward points of type "Amount" are allowed for the loyalty upsell prompt experience. If you attempt to select a tier rule with loyalty reward points of type "Total transactions", the following warning in a yellow band appears at the top of the screen: "Only reward points of type "Amount" are considered for the Loyalty Upsell Prompt."
 
 ## Loyalty upsell prompts on the POS transaction screen
 
 If more than one loyalty card is associated with a customer, store associates on the point of sale (POS) transaction screen are prompted to choose a loyalty card.
 - For a selected card with only one loyalty program: If the customer's tier qualifying points are within the threshold of the configured loyalty upsell prompt feature, a bell symbol appears next to the loyalty program tier information.
-- For a selected card with multiple loyalty programs: For each loyalty program, if the loyalty upsell prompt tier rule is selected with defined thresholds, and if the user's tier qualifying points are within those thresholds, a bell symbol appears next to the loyalty program tier information.
+- For a selected card with multiple loyalty programs: For each loyalty program, if the loyalty upsell prompt tier rule is configured with defined thresholds, and if the user's tier qualifying points are within those thresholds, a bell symbol appears next to the loyalty program tier information.
 
 > [!NOTE]
 > If a customer's tier qualifying points are beyond the configured threshold, no bell symbol appears next to the loyalty program tier information in headquarters.
@@ -92,4 +91,4 @@ The threshold value for the loyalty upsell prompt can't be more than the minimum
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
