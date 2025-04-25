@@ -3,8 +3,8 @@ title: What's new or changed in Dynamics 365 Finance 10.0.44 (June 2025)
 description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.44 preview release.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: faq
-ms.date: 04/26/2025
+ms.topic: whats-new
+ms.date: 04/25/2025
 ms.custom:   
   - bap-template
   - evergreen
@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.44. This version has a build number of 10.0.xxxx and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.44. This version has a build number of 10.0.2263 and is available on the following schedule:
 
 - **Preview of release:** April 2025
 - **General availability of release (self-update):** May 2025
@@ -57,13 +57,6 @@ This section contains a table that lists the enhancements that are included in t
 | Credit and collections | CustCollectionsBIMeasurementV3 | CustCollectionsBIMeasurementV3 is a new entity, and the CustCollectionsBIMeasurement entity is deprecated.| Default |
 | Credit and collections | Exclude intercompany sales orders from credit management | The **Exclude from credit management for intercompany sales orders** feature is moved to a parameter. | Parameter |
 | Accounts receivable | Prepayment customer invoice feature | The **Customer prepayment invoice** feature represents a significant enhancement in Dynamics 365 finance and operations apps. The purpose of this feature is to give more control over customer prepayment processes and improve the transparency of those processes. | Feature management |
-
-## Features turned on by default in this release
-
-The following table lists the features that are turned on by default in version 10.0.44. Most features that were turned on automatically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that were turned on automatically might be removed from Feature management and become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features are never automatically enabled in less than one year, unless they're determined to be essential.
-
-| Feature name | Feature state | Module |
-|--------------|---------------|--------|
 
 ## Features removed from Feature management
 
