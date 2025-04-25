@@ -3756,6 +3756,28 @@
                       href: localizations/iberoamerica/ltm-create-customer-vendor-paraguay.md
                     - name: Set up a legal entity and tax information for Paraguay
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
+                - name: Peru
+                  items:
+                    - name: Configure sales and purchase invoices for Peru
+                      href: localizations/iberoamerica/ltm-Configure-invoices-Peru.md
+                    - name: Create customer and vendor records with an address in Peru
+                      href: localizations/iberoamerica/ltm-create-customer-and-vendor-Peru.md
+                    - name: Set up a legal entity and tax information for Peru
+                      name: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Peru.md
+                    - name: Set up and generate an electronic accounting plan for Peru
+                      href: localizations/iberoamerica/ltm-Peru-accounting-plan.md
+                    - name: Set up and generate an electronic general ledger report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-electronic-general-ledger.md
+                    - name: Set up and generate an electronic ledger posting report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-electronic-ledger-posting.md
+                    - name: Set up and generate a printed ledger posting report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-printed-ledger-posting-report.md
+                    - name: Set up and generate a printed general ledger report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-printed-general-ledger.md
+                    - name: Set up and generate the Annual DAOT purchases report for Peru
+                      href: articles/finance/localizations/iberoamerica/ltm-Peru-daot-purchase-report.md
+                    - name: Set up and generate the Annual DAOT with Third Parties sales report for Peru
+                      href: localizations/iberoamerica/ltm-Peru-daot-sales-report.md
                 - name: Poland
                   items:
                     - name: Poland overview
