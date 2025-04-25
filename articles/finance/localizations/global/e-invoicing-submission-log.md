@@ -24,11 +24,12 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, you 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** to open the log.
 2. In the **Document type** field, select a value to filter the type of invoices that the log shows.
 
-There are three possible submission statuses:
+There are possible submission statuses:
 
 - **Scheduled** – Electronic invoicing received the submission from Finance or Supply Chain Management, and is currently processing the electronic invoicing feature.
 - **Completed** – Electronic invoicing successfully processed the electronic invoicing feature in the way that it was configured to process it.
 - **Failed** – Electronic invoicing encountered an error or was stopped by an exception while it was processing the electronic invoicing feature.
+- **Canceled** – The submission has been explicitly cancelled by a user from Finance or Supply Chain Management using the **Cancel submissions** functionality. For more information, refer to .
 
 > [!IMPORTANT]
 > The submission status refers to the processing status of the electronic invoicing feature by Electronic invoicing. It doesn't refer to the final status of the electronic invoice itself. For example, if an electronic invoice must be submitted to an external web service for approval, the submission status might be **Completed**, but the status of the electronic invoice might be **Rejected**. In this case, Electronic invoicing was able to successfully process the electronic invoicing feature as it was configured to process that feature. However, the electronic invoice was rejected because it didn't meet the criteria that the web service established for invoice approval.
