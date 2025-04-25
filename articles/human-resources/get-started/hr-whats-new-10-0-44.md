@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.date: 04/25/2025
-ms.topic: conceptual
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
