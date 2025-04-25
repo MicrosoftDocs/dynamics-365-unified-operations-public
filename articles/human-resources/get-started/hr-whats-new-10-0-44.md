@@ -16,7 +16,7 @@ ms.search.region: Global
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.44. This version has a build number of 10.0.xxxx and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.44. This version has a build number of 10.0.2263 and is available on the following schedule:
 
 - **Preview of release:** April 2025
 - **General availability of release (self-update):** May 2025
@@ -40,12 +40,6 @@ This section contains a table that lists the enhancements that are included in t
 | Benefits management | Clean up benefits eligibility process results | A batch job is implemented to delete process results that are older than a specified time frame. This feature helps ensure regular cleanup and improved system performance. It's available when Benefits management is enabled. |
 | Benefits | Employee start date filters for benefits eligibility processing batch job | A new filter on the **Employee start date** field is added to the **Benefits eligibility processing** batch job. Therefore, processing can be limited based on employee start dates. |
 
-## Features turned on by default in this release
-
-The following table lists the features that are turned on by default in version 10.0.44. Most features that have been turned on can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-| Feature name | Feature state | Module |
-|--------------|---------------|--------|
 
 ## Additional resources
 
