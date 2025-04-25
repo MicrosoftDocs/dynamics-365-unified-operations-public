@@ -136,7 +136,7 @@ Before you can use the aggregated material availability check feature, your syst
 
 - Your system must meet the prerequisites that are listed at the beginning of this article.
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Aggregated material availability check* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Aggregated material availability check* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### View information about aggregated material availability
 
