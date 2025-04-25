@@ -6,13 +6,9 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom:
-ms.search.form: 
-ms.dyn365.ops.version: 
+
 ---
 
 # Work with Electronic document submission log
