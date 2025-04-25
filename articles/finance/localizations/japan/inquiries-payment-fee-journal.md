@@ -4,7 +4,7 @@ description: Learn how to view payment fee summaries for a journal for Japan in 
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
