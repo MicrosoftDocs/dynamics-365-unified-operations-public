@@ -4,7 +4,7 @@ description: Learn how to dispose of a fixed asset with reduction entry for Japa
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 04/25/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
