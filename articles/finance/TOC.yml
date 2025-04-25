@@ -778,9 +778,9 @@
                       href: cash-bank-management/clear-reverse-bank-stmt-trx.md
                     - name: Clear reversal company transactions
                       href: cash-bank-management/clear-reverse-comp-trans.md
-                    - name: Generate vouchers in the reconcilation worksheet
+                    - name: Generate vouchers in the reconciliation worksheet
                       href: cash-bank-management/vouchers-adv-bank-rec.md
-                    - name: Apply cash in the reconcilation worksheet
+                    - name: Apply cash in the reconciliation worksheet
                       href: cash-bank-management/apply-cash-adv-bank-rec.md
                     - name: Clear bridging payments using advanced bank reconciliation
                       href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
@@ -1178,7 +1178,7 @@
                       href: general-ledger/pstg-prfles-ovrvw.md
                     - name: Recommended practices for posting profiles
                       href: general-ledger/recommended-practices-pstg-prfles.md
-                    - name: Accounts for automatic transations
+                    - name: Accounts for automatic transactions
                       href: general-ledger/accounts-for-auto-transactions.md
                     - name: Accounts payable posting
                       href: general-ledger/accts-payble-posting.md
@@ -1228,7 +1228,7 @@
                       href: general-ledger/tasks/post-periodic-journals.md
                     - name: Create and validate journals
                       href: general-ledger/tasks/create-validate-journals.md
-                    - name: Default financial dimensions on finanical journals
+                    - name: Default financial dimensions on financial journals
                       href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
@@ -1840,7 +1840,7 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Empty tax feature list in Tax calculation parameters
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
-                        - name: Tax code cannot be determined
+                        - name: Tax code can't be determined
                           href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
                         - name: No matching result could be found
                           href: localizations/tcs-troubleshooting-no-matching-result.md
@@ -2464,11 +2464,11 @@
                     href: localizations/iberoamerica/ltm-Configure-Dom-PurchaseForm606.md
                   - name: Configure printing for Goods and Services sales Submission Form 607
                     href: localizations/iberoamerica/ltm-Configure-Dom-SalesForm607.md
-                  - name: Configure printing for Cancelled Tax Receipts Submission Form 608
+                  - name: Configure printing for Canceled Tax Receipts Submission Form 608
                     href: localizations/iberoamerica/ltm-Configure-Dom-CancelledTaxReceiptsForm606.md
                   - name: Create customer and vendor records with an address in Dominican Republic
                     href: localizations/iberoamerica/ltm-create-customer-and-vendor-dominican-republic.md
-                  - name: Setup a legal entity and tax information for Dominican Republic
+                  - name: Set up a legal entity and tax information for Dominican Republic
                     href: localizations/iberoamerica/ltm-set-up-legal-entity-and-tax-dominican-republic.md
                 - name: Ecuador
                   items:
@@ -2966,7 +2966,7 @@
                                       href: localizations/india/apac-ind-GST-sell-registered-customer.md
                                     - name: Free text invoices
                                       href: localizations/india/apac-ind-GST-free-text-invoices.md
-                                    - name: Sales of taxable goods where there is a reverse charge
+                                    - name: Sales of taxable goods where there's a reverse charge
                                       href: localizations/india/apac-ind-GST-sell-taxable-goods-reverse-charge.md
                                     - name: Sales of exempted items
                                       href: localizations/india/apac-ind-GST-sales-exempted-item.md
@@ -3478,7 +3478,7 @@
                   items:
                     - name: Latin America overview
                       href: localizations/iberoamerica/latam-overview.md
-                    - name: Latin America Get started
+                    - name: Latin America get started
                       items:
                       - name: Latin America parameters
                         href: localizations/iberoamerica/ltm-core-latam-parameters.md
@@ -3763,7 +3763,7 @@
                     - name: Create customer and vendor records with an address in Peru
                       href: localizations/iberoamerica/ltm-create-customer-and-vendor-Peru.md
                     - name: Set up a legal entity and tax information for Peru
-                      name: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Peru.md
+                      href: localizations/iberoamerica/ltm-Set-up-legal-entity-and-tax-Peru.md
                     - name: Set up and generate an electronic accounting plan for Peru
                       href: localizations/iberoamerica/ltm-Peru-accounting-plan.md
                     - name: Set up and generate an electronic general ledger report for Peru
@@ -4589,7 +4589,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
                     - name: Upgrade your format by adopting a new base version of that format
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance
-            - name: Supported data souce types for ER components
+            - name: Supported data source types for ER components
               href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
             - name: Formula designers in ER
               items:
