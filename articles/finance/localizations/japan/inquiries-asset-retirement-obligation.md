@@ -27,7 +27,7 @@ Before you complete the procedures, you must first select the **Fixed Asset** co
 
 ## View ARO transactions
 
-To view ARO transactions, In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Asset retirement obligation transaction inquiry**. ARO-related transactions are categorized into types for summarization.  
+To view ARO transactions, in Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Asset retirement obligation transaction inquiry**. ARO-related transactions are categorized into types for summarization.  
 
 ## Explore ARO
 
