@@ -42,6 +42,8 @@ The global mobile device settings are found on the **Mobile device** FastTab on 
 
 On the **Mobile device menu item display inventory dimensions** FastTab, you can use the **Display tracking dimension control for last on-hand** field to specify how the mobile app shows the *tracking dimension below location* control, including *batch below number* and *serial below number*. The setting has no impact on the display of *tracking dimension above location*, such as *batch above number* or *serial above number*.
 
+This feature requires Supply Chain Management version 10.0.44 or later.
+
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The setting of the **Display tracking dimension control for last on-hand** field applies to the entire work order type. Therefore, it affects all mobile device menu items that are used to process the work order type. Currently, this feature is supported only for sales orders. No other work order types (such as transfer orders and purchase orders) are supported.

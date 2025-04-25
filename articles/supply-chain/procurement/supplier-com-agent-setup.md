@@ -35,6 +35,8 @@ To use the Supplier Communications Agent, your system must meet the following re
 - Optionally, you can also use feature management to turn on the following feature if you'd like to automatically send emails. We recommend that turn it off for sandbox environments where data such as purchase orders might not be up to date or vendor emails could be missing.
     - *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*
 
+To learn more about the *Immersive Home* feature, go to [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).
+
 ## Synchronize mailboxes with Dataverse
 
 To enable email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes to be synchronized with Microsoft Dataverse at the server level.

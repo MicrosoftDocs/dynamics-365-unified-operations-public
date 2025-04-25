@@ -124,6 +124,7 @@ After you've confirmed that all materials are available for a work order, you ca
 ## Aggregated material availability check (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.44 GA -->
 
 The *aggregated material availability check* feature aggregates supply and demand per item to provide a comprehensive view of potential material shortages. You can use this feature to view inventory levels and the total material requirements across selected work orders. This consolidated view makes it easy to identify and assess any deficiencies in your inventory. It helps you gain a comprehensive understanding of your material needs, so that you can take proactive measures to address any shortages.
 

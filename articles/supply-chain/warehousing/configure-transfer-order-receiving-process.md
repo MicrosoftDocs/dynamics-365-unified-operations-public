@@ -11,15 +11,19 @@ ms.custom:
   - bap-template
 ---
 
-# Configure the transfer order receiving process
+# Configure the transfer order receiving process (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.44 GA -->
 
 This article explains how to configure the receiving process for a warehouse. It includes information about the parameters that are available for warehouse receiving and how to configure them.
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Prerequisites
 
-Two fields are used to configure the receiving process. The **Transfer order receiving process** field is a standard part of all current versions of Microsoft Dynamics 365 Supply Chain Management. However, the **Transfer order receiving ASN cleanup** field is available only as of version 10.0.44. Therefore, you must be running Supply Chain Management version 10.0.44 or later.
+Two fields are used to configure the receiving process. The **Transfer order receiving process** field is a standard part of all current versions of Microsoft Dynamics 365 Supply Chain Management. However, the **Transfer order receiving ASN cleanup** field requires Supply Chain Management version 10.0.44 or later.
 
 ## Configure the receiving process for a warehouse
 
