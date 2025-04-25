@@ -2342,6 +2342,10 @@
                       href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
                     - name: Create customer and vendor records with an address in Colombia
                       href: localizations/iberoamerica/ltm-create-customer-vendor-colombia.md
+                    - name: Configure Colombian sales VAT book printing
+                      href: localizations/iberoamerica/ltm-Colombia-sales-vat-book.md
+                    - name: Configure Colombian purchase VAT book printing
+                      href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
                     - name: Format 1001 file for Colombia issue configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1001.md
                     - name: Format 1003 file for Colombia configuration
@@ -3746,6 +3750,8 @@
                       href: localizations/iberoamerica/paraguay.md
                     - name: Configure sales and purchase invoices for Paraguay
                       href: localizations/iberoamerica/ltm-configure-invoices-paraguay.md
+                    - name: Configure electronic invoice parameters for Paraguay
+                      href: localizations/iberoamerica/ltm-paraguay-conf-electronic-invoice.md
                     - name: Create customer and vendor records with an address in Paraguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-paraguay.md
                     - name: Set up a legal entity and tax information for Paraguay
