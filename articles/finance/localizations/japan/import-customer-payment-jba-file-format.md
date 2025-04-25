@@ -3,14 +3,14 @@ title: Import customer payment with JBA file format
 description: Learn how to import EFT files with a JBA file format for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
-ms.date: 08/29/2018
+ms.date: 04/25/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Import customer payment with JBA file format
