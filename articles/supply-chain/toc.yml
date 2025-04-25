@@ -1585,6 +1585,8 @@
       items:
       - name: Inventory management overview
         href: inventory/inventory-home-page.md
+      - name: Advanced quality management overview (preview)
+        href: inventory/advanced-quality-management-overview.md
       - name: Arrival
         items:
         - name: Arrival overview
@@ -1621,14 +1623,26 @@
             href: inventory/quality-quarantine-zones.md
           - name: Nonconformance diagnostic types
             href: inventory/quality-diagnostic-types.md
+          - name: Nonconformance root cause codes (preview)
+            href: inventory/quality-root-cause-codes.md
+          - name: Nonconformance work groups (preview)
+            href: inventory/quality-nonconformance-workgroup.md
           - name: Nonconformance operations
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Test instrument calibration (preview)
+          href: inventory/quality-instrument-calibration.md
+        - name: Flexible sampling plans (preview)
+          href: inventory/quality-flexible-sampling-plans.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
+        - name: Customer specific certificate of analysis (COA) (preview)
+          href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
-          href: inventory/tasks/inspect-quality-goods.md  
+          href: inventory/tasks/inspect-quality-goods.md
+        - name: Enter quality test results quickly (preview)
+          href: inventory/quality-quick-results-entry.md
         - name: Create and process a nonconformance
           href: inventory/tasks/create-process-non-conformance.md
         - name: Work with quarantine orders
@@ -1637,6 +1651,16 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
+      - name: Corrective and preventive action (CAPA) management (preview)
+        items:
+        - name: CAPA management overview
+          href: inventory/capa-overview.md
+        - name: CAPA management administration
+          href: inventory/capa-admin.md
+        - name: Set up CAPA case components
+          href: inventory/capa-set-up-case-components.md
+        - name: Manage CAPA cases
+          href: inventory/capa-manage-cases.md
       - name: Inventory operations
         items:
         - name: Inventory journals
@@ -2981,6 +3005,10 @@
             href: production-control/production-feedback.md
           - name: Time and attendance registration
             href: production-control/time-attendance-registrations.md
+          - name: Electronic batch records (EBR) (preview)
+            href: production-control/quality-electronic-batch-record.md
+          - name: Production dispensing (preview)
+            href: production-control/quality-production-dispensing.md
         - name: Manage financials in production
           items:
           - name: Allocate time to jobs in a job bundle
@@ -3243,6 +3271,8 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
+      - name: Approved customer lists (preview)
+        href: sales-marketing/approved-customer-lists.md
       - name: Credit limits for customers
         href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
