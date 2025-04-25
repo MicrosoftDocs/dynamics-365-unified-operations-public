@@ -87,7 +87,7 @@ Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD),
 **Resolution:**
 - Wait a few minutes and retry the installation. Repeat until it succeeds.
 
-**Symptom 2: Duplicate Key Error During Upgrade:**
+**Symptom 2: Duplicate Key Error During Upgrade**
 - **Error message:** `Cannot insert duplicate key exception when executing non-query`
 - **Resolution:**
   1. Go to the **Maker portal > Solutions**.
