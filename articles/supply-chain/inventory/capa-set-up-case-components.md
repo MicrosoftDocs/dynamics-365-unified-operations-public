@@ -4,7 +4,7 @@ description: Learn how to set up the components needed to categorize and process
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: QMSCAPAWorkerGroup, QMSCAPACategory, Hierarchy, HierarchyDetail, QMSCAPASourceCode, QMSCAPAResolution, QMSCAPAType, QMSCAPAClassificationCode, QMSCAPARootCause
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 
@@ -129,17 +129,17 @@ To see all CAPA cases that use a selected CAPA process, follow these steps.
 1. Select or open the CAPA process you want to look for.
 1. On the Action Pane, open the **Process** tab and select **All cases** or **All CAPA cases**.
 
-## Set up CAPA resolutions
+## Set up CAPA resolution types
 
-CAPA resolutions let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolutions to identify and categorize typical reasons CAPA cases can be resolved.
+CAPA resolution types let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolution types to identify and categorize typical reasons CAPA cases can be resolved.
 
-To set up your CAPA resolutions, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolutions**. Then use the buttons in the Action Pane to create and delete resolutions as needed. For each resolution, enter a name and description.
+To set up your CAPA resolution types, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolution types**. Then use the buttons in the Action Pane to create and delete resolutions as needed. For each resolution, enter a name and description.
 
-## Set up CAPA source codes
+## Set up CAPA sources
 
-CAPA source codes let users select a source for each CAPA case. You can use source codes to track the source of each case, such as *Internal audit*, *External audit*, *Ad-hoc testing*, and so on.
+CAPA sources let users select a source for each CAPA case. You can use CAPA sources to track the source of each case, such as *Internal audit*, *External audit*, *Ad-hoc testing*, and so on.
 
-To set up your CAPA source codes, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA source codes**. Then use the buttons in the Action Pane to create and delete source codes as needed. For each source code, enter a name and description.
+To set up your CAPA sources, go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA sources**. Then use the buttons in the Action Pane to create and delete sources as needed. For each source, enter a name and description.
 
 ## Set up CAPA types
 

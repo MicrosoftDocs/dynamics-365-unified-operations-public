@@ -3,10 +3,12 @@ title: Global mobile device parameters
 description: Learn how to set up mobile device settings on the Warehouse management parameters page with an outline on opening the Warehouse management parameters page.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
-ms.date: 08/13/2021
 ms.reviewer: kamaybac
 ms.search.form: WHS
+ms.topic: how-to
+ms.date: 04/25/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Global mobile device parameters

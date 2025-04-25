@@ -4,7 +4,7 @@ description: CAPA cases let you record, update, track, follow up on, and close i
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: QMSInventCAPAWorkspace, QMSCAPACaseDetail, QMSCAPAAnalytics
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 

@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.44. This version has a build number of 10.0.XX <!-- KFM: Get new build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.44. This version <!-- KFM: Get new build number ... has a build number of 10.0.XX  and--> is available on the following schedule:
 
 - **Preview of release:** April 2025
 - **General availability of release (self-update):** June 2025
@@ -77,9 +77,11 @@ The following table lists features that were removed from Feature management in 
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.44 includes platform updates. Learn more in [Platform updates for version 10.0.44 of Finance and Operations apps (June 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-44.md). <!-- KFM: Confirm link -->
 
+<!-- KFM: Get new KB link
+
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.44, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=#). <!-- KFM: Get new KB link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.44, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=#).  -->
 
 ### Dynamics 365: 2025 release wave 1 plan
 

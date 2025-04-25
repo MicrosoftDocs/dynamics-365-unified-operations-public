@@ -2419,7 +2419,7 @@
           href: procurement/tasks/create-repeat-purchase-order.md
         - name: Create a requisition for consumption
           href: procurement/tasks/create-requisition-consumption.md
-      - name: The Supplier Communications Agent (production ready preview)
+      - name: Supplier Communications Agent (production ready preview)
         items:
         - name: Supplier Communications Agent overview
           href: procurement/supplier-com-agent-overview.md

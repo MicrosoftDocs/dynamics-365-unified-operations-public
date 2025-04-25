@@ -4,7 +4,7 @@ description: Learn how to set up corrective and preventive action (CAPA) managem
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: InventParameters, SIGProcSetup
 ms.topic: how-to
 ms.date: 04/25/2025
 ms.custom: 
