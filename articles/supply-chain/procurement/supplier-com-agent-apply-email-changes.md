@@ -72,7 +72,7 @@ You might see, at the top of the Copilot summary, that the agent shows **Review 
 
 To resolve the ambiguous information, select **Review column mappings** and clarify the mapping. You can then choose to save the mapping for all vendors, for this vendor, or not at all.
 
-If you decide to save a mapping for all vendors or for this vendor, you can always go to **Taught items** to see everything that has been taught, where you can delete entires if needed.
+If you decide to save a mapping for all vendors or for this vendor, you can always go to **Taught items** to see everything that has been taught, and where you can delete entries if needed.
 
 ### Teach the agent about value equivalences
 
