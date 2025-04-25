@@ -61,9 +61,9 @@ To create a fixed asset location and assign registration number, follow these st
 1. Select **OK**.
 1. Select **Save**.
 
-## Define location to the Fixed asset group
+## Define location to a fixed asset group
 
-To define location to the Fixed asset group, follow these steps.
+To define location to a fixed asset group, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset groups**.
 1. In the list, find and select the desired record. For example, select **VEHI-A**.  
