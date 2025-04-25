@@ -26,9 +26,9 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, you 
 
 There are possible submission statuses:
 
-- **Scheduled** – Electronic invoicing received the submission from Finance or Supply Chain Management, and is currently processing the electronic invoicing feature.
-- **Executing** – .
-- **Pending** – .
+- **Scheduled** – Electronic invoicing received the submission from Finance or Supply Chain Management, and scheduled it for further processing by the related electronic invoicing feature.
+- **Executing** – Electronic invoicing started processing according to the applicable electronic invoicing feature's pipeline.
+- **Pending** – Electronic invoicing is waiting for the response from external web-services involved into the related pipeline action's processing.
 - **Completed** – Electronic invoicing successfully processed the electronic invoicing feature in the way that it was configured to process it.
 - **Failed** – Electronic invoicing encountered an error or was stopped by an exception while it was processing the electronic invoicing feature.
 - **Canceled** – The submission has been explicitly cancelled by a user from Finance or Supply Chain Management using the **Cancel submissions** functionality. For more information, refer to [Cancel submissions](#Cancel).
