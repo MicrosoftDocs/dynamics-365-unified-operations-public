@@ -70,7 +70,7 @@ To resolve this issue, follow one of the following solutions:
 1. Redeploy the reports where the error occurred. Go to **System Administration** \> **Setup** \> **Deploy Power BI files**.
    - This action overwrites the current report and any customizations not in Microsoft Dynamics Lifecycle Services as PBIX are lost. If there are customizations in PowerBI.com, export the report as a PBIX file and upload it to Microsoft Dynamics Lifecycle Services for redeployment.
 
-2. Deploy a [sample report](https://download.microsoft.com/download/4990e70d-1c68-45ab-9d23-2475a2b99596/Sample.pbix) Go to **System Administration** \> **Setup** \> **Deploy Power BI files**. This fixes the above errors for any Entity store based reports in PowerBI.com
+2. Deploy a [sample report](4990e70d-1c68-45ab-9d23-2475a2b99596/Sample-report-to-fix-Power-BI.pbix) Go to **System Administration** \> **Setup** \> **Deploy Power BI files**. This fixes the above errors for any Entity store based reports in PowerBI.com
    - Users encountering this issue need to perform this action individually.
      
 
