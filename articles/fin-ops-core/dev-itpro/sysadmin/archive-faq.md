@@ -62,25 +62,9 @@ You can also view the archived data from within the finance and operations Histo
 Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD), and data preservation in BYOD isn't guaranteed.
 
 ## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
-==============
-Please ensure that all the prerequisite setup steps are completed, as incorrect setup can lead to installation failure.
-
-Please also ensure that you have logged into your finance and operations application in the last 30 days, as installation can fail if the organization has been tagged as dormant. If you are logging in for the first time after 30 days, it may take up to 4 hours for your organization to be flagged as active. 
-
-If you encounter the following error messages during the install attempt, then wait for a few minutes and retry till it succeeds:
- - Status code 503 (Service unavailable)
- - Status code 500 (Solution operation failed due to another import blocking the operation)
- - Solution import progress has been stuck
-
-If you encounter a **Cannot insert duplicate key exception when executing non-query** error when trying to upgrade the app, then please delete the solutions named **ArchiveServicePermissions_PROD** and **ArchiveService Anchor Solution** from the maker portal solutions page and then refresh and reattempt the install.
-
-If you encounter the error **'MCR call center config key needs to be enabled under License Configuration in order to enable change tracking for MCRSalesTableBiEntity'**, then in Dynamics 365 Finance and Operations, go to **System administration \> License configuration** and confirm that the following checkboxes and sub-checkboxes are enabled before reattempting installation:
- - **Retail channels** - Call center
-============================
-
 ---
 
-## 🔧 Prerequisites Before Installation
+## Prerequisites Before Installation
 
 - **Complete All prerequisite Setup Steps**  
   Ensure that all prerequisite setup steps are completed. Incorrect setup can lead to installation failure.
@@ -110,7 +94,7 @@ If you encounter the error **'MCR call center config key needs to be enabled und
   2. Delete the solutions:
      - `ArchiveServicePermissions_PROD`
      - `ArchiveService Anchor Solution`
-  3. Refresh and reattempt the installation.
+  3. Refresh and repeat the installation.
 
 ---
 
@@ -132,7 +116,7 @@ If you encounter the error **'MCR call center config key needs to be enabled und
 `Failed to validate if retention is enabled for fno ve : generaljournalentrybientity... entity is not eligible for archival`
 
 **Resolution:**
-1. Go to **Maker > Tables > Available Finance and Operations Entity**.
+1. Go to **Maker portal > Tables > Available Finance and Operations Entity**.
 2. Ensure the **Refresh** column is visible.
 3. Refresh the mentioned entity.
 > **Note:** If **custom fields** were added to the backing table of the entity (e.g., `GeneralJournalEntry`), ensure that all custom fields are added to the entity **before** refreshing it.
@@ -149,7 +133,7 @@ If you encounter the error **'MCR call center config key needs to be enabled und
 The user performing the installation on **PPAC** either does **not exist** or is **not an administrator** in Dynamics 365 FnO.
 
 **Resolution:**
-- Ensure the installation user exist in FnO or has administrator role granted.
+- Ensure the installation user exist in FnO and has administrator role granted.
 
 ---
 
