@@ -29,13 +29,13 @@ To dispose of a fixed asset with reduction entry, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
-1. In the **Name** field, type a value.
+1. In the **Name** field, enter a value.
 1. Select **Lines**.
 1. Select **Proposals**.
 1. Select **Disposal - scrap**.
-1. Enter the date of disposal transaction
+1. Enter the date of disposal transaction.
 1. Select **Filter**.
-1. In the **Criteria** field, type a value.
+1. In the **Criteria** field, enter a value.
 1. Select **OK**.
 1. Select **OK**.
 1. Enter the main accounts to which the fixed asset disposal expenses will be posted. You can also choose to enter the disposal expenses later in a journal. The fixed asset main account, accumulated depreciation main account, and other fixed asset related accounts are automatically determined by the configuration in the fixed asset posting profile.  
