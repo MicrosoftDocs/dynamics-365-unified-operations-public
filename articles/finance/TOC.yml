@@ -3775,7 +3775,7 @@
                     - name: Set up and generate a printed general ledger report for Peru
                       href: localizations/iberoamerica/ltm-Peru-printed-general-ledger.md
                     - name: Set up and generate the Annual DAOT purchases report for Peru
-                      href: articles/finance/localizations/iberoamerica/ltm-Peru-daot-purchase-report.md
+                      href: localizations/iberoamerica/ltm-Peru-daot-purchase-report.md
                     - name: Set up and generate the Annual DAOT with Third Parties sales report for Peru
                       href: localizations/iberoamerica/ltm-Peru-daot-sales-report.md
                 - name: Poland
