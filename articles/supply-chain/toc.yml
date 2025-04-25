@@ -2413,6 +2413,16 @@
           href: procurement/tasks/create-repeat-purchase-order.md
         - name: Create a requisition for consumption
           href: procurement/tasks/create-requisition-consumption.md
+      - name: The Supplier Communications Agent (production ready preview)
+        items:
+        - name: Supplier Communications Agent overview
+          href: procurement/supplier-com-agent-overview.md
+        - name: Set up and configure the Supplier Communications Agent
+          href: procurement/supplier-com-agent-setup.md
+        - name: Follow up on purchase orders using the Supplier Communications Agent
+          href: procurement/supplier-com-agent-follow-up.md
+        - name: Review and apply purchase order changes received in vendor emails
+          href: procurement/supplier-com-agent-apply-email-changes.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements
@@ -4183,6 +4193,8 @@
         href: faq-inventory-query.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
+      - name: Responsible AI for Supplier Communications Agent (production ready preview)
+        href: faq-supplier-communications-agent.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

@@ -120,6 +120,7 @@ As was previously mentioned, most Copilot features in finance and operations app
 | Dynamics 365 Supply Chain Management | [Inquire into inventory with Copilot](../../../supply-chain/inventory/inventory-visibility-copilot-api.md) | This feature is installed and enabled by default in Inventory Visibility version 1.2.2.127 and later. |
 | Dynamics 365 Supply Chain Management | Review and accept changes to confirmed purchase orders | [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md). |
 | Dynamics 365 Supply Chain Management | Workload insights with Copilot in the Warehouse Management mobile app | [Enable Workload insights with Copilot](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md) |
+| Dynamics 365 Supply Chain Management | Supplier Communications Agent | [Turn on Supplier Communications Agent features and synchronize mailboxes with Dataverse](../../../supply-chain/procurement/supplier-com-agent-setup.md) |
 
 ## Responsible AI FAQs
 
