@@ -36,6 +36,14 @@ The following table lists the features that are included in this release. We mig
 |Point of sale | Support for android hardware station extensibility | With android hardware station extensibility, you can build extensions to support HW station requirements to support fiscal integration with fiscal printers with android devices.| Admin |
 
 
+## Feature state changes in this release
+
+The following table lists features that became mandatory or on by default in version 10.0.41. All these features will automatically be turned on for your system as soon as you update to version 10.0.41. Mandatory features can't be turned off, but features that are on by default can still be turned off by using Feature Management workspace. 
+
+
+| Module | Feature name | New feature state |
+| --- | --- | --- |
+| Commerce |  Enable new transaction id to avoid duplicate transaction ids (https://learn.microsoft.com/en-us/dynamics365/commerce/channel-setup-retail#ensure-unique-transaction-ids) | On by default |
 
 
 ## Resources
