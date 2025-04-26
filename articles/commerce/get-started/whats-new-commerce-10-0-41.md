@@ -43,7 +43,7 @@ The following table lists features that became mandatory or on by default in ver
 
 | Module | Feature name | New feature state |
 | --- | --- | --- |
-| Commerce |  Enable new transaction id to avoid duplicate transaction ids (https://learn.microsoft.com/en-us/dynamics365/commerce/channel-setup-retail#ensure-unique-transaction-ids) | On by default |
+| Commerce |  Enable new transaction id to avoid duplicate transaction ids (https://learn.microsoft.com/en-us/dynamics365/commerce/channel-setup-retail#ensure-unique-transaction-ids) | Mandatory |
 
 
 ## Resources
