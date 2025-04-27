@@ -478,6 +478,8 @@
               items:
                 - name: Subscription billing overview
                   href: accounts-receivable/subscription-billing-summary.md
+                - name: Performance improvements for subscription billing
+                  href: accounts-receivable/sub-bill-perf-improve.md
                 - name: Recurring contract billing
                   items:
                     - name: Set up recurring contract billing
@@ -526,6 +528,8 @@
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Deferral default transactions
                       href: accounts-receivable/sb-deferral-transactions.md
+                    - name: Calculate deferral schedule and unbilled revenue
+                      href: accounts-receivable/correct-def-schedule.md
                 - name: Multi-element revenue allocation
                   items:
                     - name: Set up multiple element revenue allocation
@@ -642,6 +646,8 @@
               href: accounts-receivable/chrono-numbers.md
             - name: Archive printed customer invoices with hash numbers
               href: accounts-receivable/archive-printed-invoices.md
+            - name: Clean temporary data
+              href: accounts-receivable/data-main-job.md
         - name: Budgeting
           items:
             - name: Budgeting home page
