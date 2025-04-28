@@ -3778,6 +3778,12 @@
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
                 - name: Peru
                   items:
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-domiciled-report.md
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-not-domiciled-report.md
+                    - name: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-simplified-report.md
                     - name: Configure sales and purchase invoices for Peru
                       href: localizations/iberoamerica/ltm-Configure-invoices-Peru.md
                     - name: Create customer and vendor records with an address in Peru
