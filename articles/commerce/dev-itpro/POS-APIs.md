@@ -136,6 +136,37 @@ currentCart = getCurrentCartClientResponse.data.result;
  });
 ```
 
+**Trigger toast notification**
+```typescript
+import {
+    TriggerToastNotificationClientRequest,
+    TriggerToastNotificationClientResponse
+} from "PosApi/Consume/Device";
+import { ClientEntities } from "PosApi/Entities";
+........
+
+const contentProps: ClientEntities.IToastNotificationComponentContent = {
+    notificationTitle: "title",
+    notificationBody: "body",
+    primaryFooterButton: {
+        label: "primary_label",
+        action: () => doSomethingPrimary()
+    },
+    secondaryFooterButton: {
+        label: "secondary_label",
+        action: () => doSomethingSecondary()
+    },
+    notificationMessageType: ClientEntities.ToastMessageType.WARNING
+};
+
+const triggerToastNotificationClientRequest: TriggerToastNotificationClientRequest<TriggerToastNotificationClientResponse> =
+    new TriggerToastNotificationClientRequest<TriggerToastNotificationClientResponse>("correlationId", contentProps);
+
+this.context.runtime.executeAsync(triggerToastNotificationClientRequest)
+    .then((triggerToastNotificationClientResponse: ClientEntities.ICancelableDataResult<TriggerToastNotificationClientResponse>) => {
+        doSomething(triggerToastNotificationClientResponse);
+    });
+```
 ### Cart
 
 The following table lists APIs exposed to perform cart-related functionality.
@@ -300,7 +331,6 @@ The following table lists APIs exposed to perform device-related functionality.
 | GetActiveHardwareStationClientRequest |
 | GetApplicationVersionClientRequest    |
 | GetChannelConfigurationClientRequest  |
-| TriggerToastNotificationClientRequest |
 | TriggerToastNotificationClientRequest |
 
 ### Diagnostics 
