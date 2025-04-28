@@ -17,6 +17,10 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+> Beginning **April 2, 2025**, all environments for finance and operations apps are required to have the Power Platform Integration enabled. Prior to this date, environment administrators should enable the Power Platform Integration by following the steps in this article, selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that are not linked to a Power Platform environment through the Power Platform Integration after this date will have the Power Platform Integration automatically enabled for the environment. During automated enablement, the environment will either be linked to a newly-provisioned Power Platform environment, or linked to an existing Power Platform envrionment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
+> See [Enabling the Power Platform integration](./enable-power-platform-integration.md) for more information on enabling and configuring the integration.
+
 Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, finance and operations apps are not managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in LCS.
 
 ## Getting started
