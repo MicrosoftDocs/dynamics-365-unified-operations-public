@@ -40,3 +40,18 @@ Store employees receive a notification when the point of sale (POS) switches to 
 Store employees receive a notification when network connectivity is missing or weak. The notification prompts employees to switch to offline mode. The notification also includes a direct link to network connectivity insights, so that employees can learn more about the issue. Learn more about network connectivity insights in [Network health checks](../../pos-healthcheck.md#network-health-checks).
 
 :::image type="content" source="../../media/network-connectivity-notification.jpg" alt-text="Screenshot that shows an example of a notification about a missing network connection.":::
+
+## Toast notification for data sync failures
+
+Store employees receive a notification when there are issues related to data sync. The notification includes a link to detailed error information. That information can be copied and sent to an administrator for corrective action.
+This notification can be individually disabled in feature flag settings under this name **StoreCommerce.DisableDataSyncProactiveNotifications**.
+
+## Toast notification for unsuccessful offline installs during app upgrades
+
+Store employees receive a notification when the offline installs are unsuccessful after app upgrades. The notificaion includes a link to more detailed error information. The information can be copied and sent to administrator for corrective action.
+
+## Toast notifications extensibility
+
+Customers can now leverage the APIs to create their toast notifications for their unique business scenarios using the built in extensibility. More information on this along with sample code is available in https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-apis#device
+
+Additionally Toast notificaions are auto dismissed after 5 seconds and can be snoozed per user and app session. 
