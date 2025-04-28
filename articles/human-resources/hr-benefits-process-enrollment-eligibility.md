@@ -36,7 +36,7 @@ This article explains how to run the enrollment eligibility process.
    | --- | --- |
    | **Enrollment period** | The enrollment period to process enrollment eligibility for. |
    | **Legal entity** | The legal entity to process enrollment eligibility for. |
-   | **Worker** | The worker to process enrollment eligibility for. If you leave this field blank, enrollment eligibility will be processed for all workers. |
+   | **Worker** | The worker to process enrollment eligibility for. If you leave this field blank, enrollment eligibility is processed for all workers. |
    | **Benefit plan** | The benefit plan to process enrollment eligibility for. |
    | **From** | The date from which records are included in the processing. This date is based on the employee's start date. |
    | **To** | The date until which records are included in the processing. This date is based on the employee's start date. |
@@ -46,7 +46,7 @@ This article explains how to run the enrollment eligibility process.
    1. Enter information for the process.
    2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.
    3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
-   4. Select **OK**. The process will run with the parameters you set.
+   4. Select **OK**. The process runs with the parameters you set.
 
 4. Select **OK**.
 
@@ -60,13 +60,13 @@ This article explains how to view eligibility process results.
    | Field | Description |
    | --- | --- |
    | **Process ID** | The unique ID for the combination of Worker, Legal entity, and process run. |
-   | **Process type** | This identifies the process that was run. For example: Enrollment. |
+   | **Process type** | This field identifies the process that was run. For example: Enrollment. |
    | **Time stamp** | The time that the eligibility process was run. |
    | **Legal entity** | The legal entity specified during the enrollment process. |
    | **Worker** | The worker who was processed. |
    | **Plan** | The Benefit plan that enrollment was attempted for. |
-   | **Eligibility rule** | The eligibility rule that was processed. If an error was encountered before eligibility was run, this will be blank. For example: If compensation hasn't been defined for a worker, the eligibility process won't run, and this field will be left blank. |
-   | **Result status** | This will be **Eligible** or **Ineligible**. The result status will be Ineligible if the worker didn't meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there is information missing on the benefit plan that prevents workers from being enrolled. |
+   | **Eligibility rule** | The eligibility rule that was processed. If an error was encountered before eligibility was run, this field is blank. For example: If compensation wasn't defined for a worker, the eligibility process doesn't run, and this field remains blank. |
+   | **Result status** | The possible values are **Eligible** and **Ineligible**. The result status is **Ineligible** if the worker didn't meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there is information missing on the benefit plan that prevents workers from being enrolled. |
    | **Result message** | Indicates why a worker is ineligible for a benefit plan or if the eligibility rule passed. |
 
 ## Clean up benefits eligibility process results (preview)
@@ -78,7 +78,7 @@ This article explains how to view eligibility process results.
 
 In Dynamics 365 Human Resources, you can now clean up old benefits eligibility process results to help maintain system performance.
 
-Over time, the benefits eligibility process result table can become large and cause database timeouts. HR administrators can use this new feature to delete old records, based on a specified retention period.
+Over time, the benefits eligibility process result table can become large and cause database time-outs. HR administrators can use this new feature to delete old records, based on a specified retention period.
 
 Before you can use this feature, the **Benefits management** feature must be enabled.
 

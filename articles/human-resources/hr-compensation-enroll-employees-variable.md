@@ -26,12 +26,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. This procedure assumes that a variable compensation plan has been created with the **Enable enrollment** field set to **Yes**, and that eligibility rules have been created for that variable compensation plan. The demo data company used to create this procedure is USMF. To begin this procedure, go to **Human resources** \> **Workers** \> **Employees** \> **Compensation** \> **Variable plan enrollment**.
+The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. This procedure assumes that a variable compensation plan was created with the **Enable enrollment** field set to **Yes**, and that eligibility rules were created for that variable compensation plan. The demo data company used to create this procedure is USMF. To begin this procedure, go to **Human resources** \> **Workers** \> **Employees** \> **Compensation** \> **Variable plan enrollment**.
 
 1. Select **New**.
 2. In the **Plan** field, select the dropdown button to open the lookup.
 
-    The plan lookup will be filtered to only show the variable compensation plans that the employee is eligible for based on the eligibility rules.
+    The plan lookup is filtered to only show the variable compensation plans that the employee is eligible for based on the eligibility rules.
 
 3. In the list, select the link in the selected row.
 4. Toggle the expansion of the **General** section.
@@ -45,7 +45,7 @@ The Compensation and Benefits manager can enroll employees in variable compensat
 
 8. Toggle the expansion of the **Organizational overrides** section.
 
-    If the employee's performance should take into consideration, the performance of different departments, or a department other than the one assigned on the employee's position, the department can be overridden. The **Percent** column should total 100.
+    If the employee's performance should consider the performance of different departments, or a department other than the one assigned on the employee's position, the department can be overridden. The **Percent** column should total 100.
 
 ## Link variable plan awards and enrollments to positions (preview)
 
