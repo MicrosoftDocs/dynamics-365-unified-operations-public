@@ -1,6 +1,6 @@
 ---
-title: POS modernization and usability improvements
-description: This article describes POS modernization and usability improvements in Microsoft Dynamics 365 Commerce Store Commerce.
+title: Modern Workflows in POS
+description: This article describes modern workflows in POS that improve usability, extensibility and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
@@ -14,16 +14,18 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes point of sale (POS) modernization and usability improvements in Microsoft Dynamics 365 Commerce Store Commerce.
+This article describes modern workflows in POS that improve usability, extensibility and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 
-To improve POS usability and adapt to modern, intuitive workflows, numerous workflow improvements have been introduced.
+The Dynamics 365 Commerce team is modernizing the POS by transitioning to the React framework and Fluent Design. The React framework enables mobile-optimized modern workflows, simplifies extensibility, and is accessibility compliant across browsers and all Store Commerce applications. Fluent Design complements this by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
+With the transaction page being the most used page on the POS, this is the first page to be fully moved to React and Fluent Design along with introducing new modern workflows.
 
-## Modern transaction grid in POS transaction view
+## Prerequisites
 
-The **Enable Modern Transaction Grid in POS Transaction View** feature is available starting with the Commerce 10.0.42 release and includes refreshed transaction, numpad, customer card, and button grids. It also enables retailers to display product images in the cart view.
+To transition to the modern workflows on POS, the following prerequisites must be met:
+1. You must be running Commerce version **10.0.40 or later**. For React-based controls on transaction page, **10.0.44 or later** is required.
+1. You must enable the **Enable Modern Transaction Grid in POS Transaction View**  feature in the Commerce headquarters.
 
 To enable this feature in Commerce headquarters, follow these steps.
-
 1. Go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
 1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.
 1. In the right pane, select **Enable now**.
@@ -31,8 +33,64 @@ To enable this feature in Commerce headquarters, follow these steps.
 1. For each visual profile, set the **Modern transaction grid** option to **Yes**. This setting allows you to roll out changes to specific registers as needed.
 1. Run the **Registers (1090)** job to implement the change in POS.
 
-## Streamlined workflow for adding items to a transaction from the product page
 
+## Feature availability
+The Commerce **10.0.40** release includes:
+1. Streamlined workflow for adding items to cart
+1. Configuring display of search results
+1. Reset of button grids at the end of a transaction
+1. Reprint receipts from a journal
+1. Payment workflows improvements
+
+The Commerce **10.0.42** release includes:
+1. Fluent Design on transaction, numpad, customer card, and button grids
+1. Product images in the cart view.
+
+The Commerce **10.0.43** release includes:
+1. Toast notification framework
+
+The Commerce **10.0.44** release includes:
+1. React-based controls on transaction page
+1. Inline actions on transaction grid
+1. Inline quantity update on transaction grid.
+
+## Inline actions on transaction grid
+Inline actions on transaction grid is available for common line actions such as void product, return item, line discounts, price override, coupons, line comment and change unit of measure. The order of display of the inline actions is by frequency of use for each register and is automatically ordered based on usage.
+
+To launch the inline actions list, hover over a line on the transaction grid and click on the 3 dots (…) that appears. On mobile and touch devices, inline actions can be accessed by simply long-pressing the line on transaction grid providing a more intuitive mobile-optimized experience.
+
+There is an option for a more extensive list of line actions. To access these additional line actions, you must enable the **Enable Advanced Line Inline Actions** feature in the Commerce headquarters **Feature management workspace (System administration > Workspaces > Feature management).**
+
+Inline actions remove the need for nested buttons to access line operations. This allows for a cluster-free transaction page with less buttons.
+
+This feature is available starting with the Commerce 10.0.44 release. Extensibility and customization of the line actions that can be included will be delivered in future releases.
+
+## Inline quantity update on transaction grid
+Click or tap the quantity directly within the transaction grid to change item quantity. This reduces the number of clicks and removes the need to navigate nested buttons providing a quick and intuitive workflow. 
+
+This feature is available starting with the Commerce 10.0.44 release.
+
+## Payment capture improvements
+To enable intuitive payment workflows in the POS application, the workflows for all payment methods have been updated to provide a consistent and enhanced user experience. For more information about the payment capture improvements, see [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
+
+## Toast notification framework
+The new toast notification framework brings flexible, real-time alerts to Store Commerce, helping retailers modernize the POS experience. With full extensibility support, this framework can be extended to build your own store notifications that meet your unique business needs. Use it to quickly share policy updates with store associates, flag low-stock items for restocking, alert staff when customers request assistance from in-store kiosks and more.
+For more information about the toast notification framework, see [Offline reliability toast notifications in the Store Commerce app - Commerce](dev-itpro/retail-sdk/offline-reliability-toast-notifications.md).
+
+This feature is available starting with the Commerce 10.0.43 release.
+
+## Loyalty Upsell
+A new loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they are to reaching their next loyalty tier. This can nudge continued customer engagement to unlock new benefits leading to increased average order value through strategic upselling.
+This feature is available starting with the Commerce 10.0.44 release.
+
+## Product images on transaction grid
+Product images can now be displayed on the transaction grid. This needs to be configured for each device.
+
+Make sure to correctly setup and manage images for Store Commerce for this feature to work, see [Set up and manage images for Store Commerce](set-up-manage-images-retail-mpos.md). 
+
+This feature is available starting with the Commerce 10.0.43 release.
+
+## Streamlined workflow for adding items to a transaction from the product page
 Two new workflows are introduced in the Commerce 10.0.40 release to handle situations where you add an item to the cart from the product description or search results page.
 
 The first workflow shows a confirmation dialog box that clearly indicates that the item was successfully added to the cart. You can then continue to browse for products. This workflow is suited to assisted-selling scenarios where store associates browse and add many items to the cart.
@@ -47,7 +105,6 @@ To bypass the confirmation dialog box and always go to transaction page after yo
 > After every configuration change made in headquarters, you must run the **Registers (1090)** job to realize the change in POS.
 
 ## Configure the display of search results
-
 In the POS visual profile in headquarters, you can configure the phone view port default view for the display of search results for products, customers, and categories. Previously, the list view was the default view. Starting with the Commerce 10.0.40 release, search results in the phone view port can be shown in a card view by default to allow for easy product browsing. This update will be made available for other view ports in future releases.
 
 To set your preference for the default search view, in headquarters, go to **POS visual profiles**. In the **General** section, in the **Search view** subsection, set the **Default view** field to **List view** or **Card view**.
@@ -56,30 +113,18 @@ To set your preference for the default search view, in headquarters, go to **POS
 > After every configuration change made in headquarters, you must run the **Registers (1090)** job to realize the change in POS.
 
 ## Reset button grids at the end of a transaction
-
 With this feature, the default button grid that is assigned to the first tab is restored when a transaction is completed, suspended, or voided. This feature helps reduce confusion and the number of clicks that are required when a store associate handles multiple transactions. This feature is enabled by default for all users and is available starting with the Commerce 10.0.40 release.
 
 ## Reprint receipts from a journal
-
 To reduce the number of clicks that are required to reprint receipts, the **Print receipt** button is available at the bottom of the **Show journal** screen. To reprint receipts, select the journal and **Print receipt** in a single click. This feature is available starting with the Commerce 10.0.40 release.
 
 ## Enhanced date picker
-
 To enable intuitive interactions, the date picker in the Store Commerce app is updated to a React control. This feature is available starting with the Commerce 10.0.39 release.
 
 ## Persist the zoom level
+Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse, available from Commerce 10.0.39 release.
 
-Store associates can persist their zoom settings, so that they don't have to readjust their display every time they open the application. This feature is especially useful for users who run the devices in kiosk mode without a keyboard and mouse. This feature is available starting with the Commerce 10.0.39 release.
-
-## Payment capture improvements
-
-To enable intuitive payment workflows in the POS application, the flows for payment by credit card, cash, and check are updated to provide a consistent and enhanced user experience. The remaining payment method flows will be refreshed in a future release. For more information about the payment capture improvements, see [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
-
-## Fluent design
-
-To improve performance, allow for extensibility, and remove legacy patterns, the number pad in the Store Commerce app is updated to use a React control in the payment workflows. This change prepares for a future larger React upgrade that extends to the transaction page and lets customers create their own custom views in React.
-
-Also, minor updates that follow fluent design constructs were made to the user experience, such as rounded corners on tiles and buttons in the transaction grid, drop shadows and rollover elevation on product and category cards, and a refreshed sign-out experience. These updates are available by default starting with the Commerce 10.0.36 release.
-
+## Extensibility
+The modernization and move to React-based controls on the transaction page keeps full parity with existing extensibility capabilities. Custom columns, fields, and controls continue to work as expected, making it easier to adopt the new experience without additional development effort.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
