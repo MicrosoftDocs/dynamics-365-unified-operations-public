@@ -39,7 +39,7 @@ Depending on the plan type, one or more benefits can be selected for enrollment.
 
 After the employee has decided which plan to enroll in, they might be required to select dependents. If the employee has selected a coverage option that is **Employee +1**, **Employee + children**, or **Family**, dependents must be selected. For more information about coverage options, see [Create coverage options](/dynamics365/human-resources/hr-benefits-setup-coverage-options).
 
-To select a benefit plan, the employee selects either the ellipsis button (**...**) or **Add to cart**. After the employee has finished adding all the benefit selections to the cart, they select **View cart**. The employee is then taken to the **Plans** page, where they can view their selected and waived benefit plans.
+To select a benefit plan, the employee selects either the ellipsis button (**…**) or **Add to cart**. After the employee has finished adding all the benefit selections to the cart, they select **View cart**. The employee is then taken to the **Plans** page, where they can view their selected and waived benefit plans.
 
 The employee must select the **I agree** option before they can select the **Checkout** button. The statement that appears to the right of the **I agree** option can be customized on the **Benefits Management** tab of the **Human Resources Shared Parameters** page.
 
@@ -54,26 +54,26 @@ Employees aren't required to select benefits by using **Employee self service**.
 
 ## My benefit plans
 
-In Dynamics 365 Human Resources, employees can view **Elected benefits** through the new **My benefit plans** tile, available in **Employee self service**.
+In Dynamics 365 Human Resources, employees can view selected benefits through the new **My benefit plans** tile in **Employee self service**.
 
-This experience provides employees with a consolidated view of their active benefit elections, including details about dependents and beneficiaries associated with each plan. Employees can also view their previous year’s enrollment information.
+This experience gives employees a consolidated view of their active benefit selections, including details about the dependents and beneficiaries that are associated with each plan. Employees can also view information about their previous year's enrollment.
 
 ### My benefit plans features
 
-- **My benefit plans** tile available on the **Employee self service** workspace.
-- View all current benefit elections in one place.
+- The **My benefit plans** tile is available in the **Employee self service** workspace.
+- View all current benefit selections in one place.
 - View dependent and beneficiary details for each benefit plan.
-- View a summary across all plans with combined coverage information.
-- Access previous year enrollment details for historical reference.
+- View a summary that provides combined coverage information across all plans.
+- Access details about the previous year's enrollment for historical reference.
 
->[!IMPORTANT]  
->The **Benefits management** feature must be enabled in Feature management to use **My benefit plans**.
+> [!IMPORTANT]
+> Before you can use the **My benefit plans** tile, the **Benefits management** feature must be enabled in Feature management.
 
-To view your benefits, follow these steps:
+To view your benefits, follow these steps.
 
 1. Go to **Employee self service**.
-2. Select the **My benefit plans** tile.
-3. Select the **Benefit period** to review.
-4. View your elected benefits along with dependent and beneficiary details.
+1. Select the **My benefit plans** tile.
+1. Select the benefit period to review.
+1. View your selected benefits together with dependent and beneficiary details.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
