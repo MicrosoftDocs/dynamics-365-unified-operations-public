@@ -33,6 +33,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Point of Sale | Loyalty upsell prompt | The loyalty upsell prompt feature is designed to prompt store associates to inform customers about their loyalty program status and tier qualifying points. This feature aims to enhance customer engagement and satisfaction, resulting in increased loyalty, repeat purchases, and overall sales. To enable this feature in Commerce headquarters, go to the feature management workspace and enable **Retail Loyalty Upsell Prompt**.  | Admins |
 | Payments | Optimized payment flow now available for loyalty payments  |  Like other payment methods, the loyalty payment method now supports the optimized and unified payment user interface (UI). Additional capabilities have been added such as the ability to initiate customer search and view all loyalty cards associated with the customer. This functionality helps cashiers easily find the required information to complete the transaction. | Admins  |
+| Point of Sale | Healthcheck view for offline readiness | This feature performs various checks to verify the status and readiness of the offline database, ensuring a smooth switching experience by creating awareness of any issues. This feature is enabled by default. | Admins |
 
 ## Resources
 
