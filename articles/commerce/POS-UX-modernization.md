@@ -47,6 +47,9 @@ The Commerce **10.0.42** release includes:
 1. Fluent Design on transaction, numpad, customer card, and button grids
 1. Product images in the cart view.
 
+The Commerce **10.0.43** release includes:
+1.	Toast notification framework
+
 The Commerce **10.0.44** release includes:
 1. React-based controls on transaction page
 1. Inline actions on transaction grid
@@ -72,6 +75,13 @@ This feature is available starting with the Commerce 10.0.44 release.
 
 ## Payment capture improvements
 Payment workflows in the POS application have been redesigned for all payment methods providing a consistent and enhanced user experience. For more information about the payment capture improvements, see [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
+
+## Toast notification framework
+The new toast notification framework brings flexible, real-time alerts to Store Commerce. With full extensibility support, this framework can be extended to build your own store notifications that meet your unique business needs. Use it to quickly share policy updates with store associates, flag low-stock items for restocking, alert staff when customers request assistance from in-store kiosks and more.
+
+For more information about the toast notification framework, see [Offline reliability toast notifications in the Store Commerce app - Commerce](dev-itpro/retail-sdk/offline-reliability-toast-notifications.md).
+
+This feature is available starting with the Commerce 10.0.43 release.
 
 ## Product images on transaction grid
 Product images can now be displayed on the transaction grid.
