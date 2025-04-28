@@ -207,6 +207,12 @@ items:
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?toc=/dynamics365/human-resources/toc.json
+        - name: Immersive Home (preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?toc=/dynamics365/human-resources/toc.json
+        - name: Set the preferred initial page for each user
+          href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?toc=/dynamics365/human-resources/toc.json
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
         - name: Feature management overview
