@@ -43,7 +43,7 @@ To approve or reject a nonconformance, follow these steps.
 
 ## Add operations and other details to nonconformances
 
-After you've created a nonconformance, you can start to add related operations and specify additional information about those operations. You can add related operations only to nonconformances that are approved.
+After you've approved a nonconformance, you can start to add related operations and specify additional information about those operations. You can add related operations only to nonconformances that are approved.
 
 Besides the basic information, you can add the following details to an operation:
 
@@ -64,7 +64,11 @@ To create an operation for a nonconformance, follow these steps.
     > You can add or update operations only for nonconformances that are approved.
 
 1. On the Action Pane, select **Related operations**.
-1. On the **Related operations** page, on the Action pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+1. On the **Related operations** page, add rows to the grid in one or both of the following ways:
+    - To add a single row to the grid, select **New** on the Action pane.
+    - To add all the operations from a [predefined operations group](../quality-operations.md), select **Add operations from a group** on the Action Pane.
+
+1. Set the following fields for each row:
 
     - **Operation** – Select the code of the operation that will be performed for the nonconformance.
     - **Reason** – Enter a detailed description that explains why the operation is required.
@@ -162,7 +166,11 @@ To add a correction to a nonconformance, follow these steps.
     > You can add a correction only to nonconformances that are approved.
 
 1. On the Action Pane, select **Corrections**.
-1. On the **Corrections** page, on the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+1. On the **Corrections** page add rows to the grid in one or both of the following ways:
+    - To add a single row to the grid, select **New** on the Action pane.
+    - To add a correction for each diagnostic from a [predefined diagnostic group](../quality-diagnostic-types.md), select **Apply diagnostic group** on the Action pane.
+
+1. Set the following fields for each row:
 
     - **Diagnostic** – Select the diagnostic type that identifies the type of correction that you're creating.
     - **Worker** – Select the person who is responsible for the correction.
@@ -170,6 +178,7 @@ To add a correction to a nonconformance, follow these steps.
     - **Requested date** – Enter the date when the corrective action was requested.
     - **Planned date** – Enter the date when the correction is expected to be completed.
     - **Short term solution** – Select this check box if the corrective action corrects the nonconformance only for a short time.
+    - **Root cause code** – Select the [root cause code](../quality-root-cause-codes.md) that identifies the root cause of the issue that required this correction.
 
 1. Close the pages.
 
