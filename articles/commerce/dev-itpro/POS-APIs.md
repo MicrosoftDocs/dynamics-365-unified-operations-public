@@ -300,6 +300,8 @@ The following table lists APIs exposed to perform device-related functionality.
 | GetActiveHardwareStationClientRequest |
 | GetApplicationVersionClientRequest    |
 | GetChannelConfigurationClientRequest  |
+| TriggerToastNotificationClientRequest |
+| TriggerToastNotificationClientRequest |
 
 ### Diagnostics 
 
