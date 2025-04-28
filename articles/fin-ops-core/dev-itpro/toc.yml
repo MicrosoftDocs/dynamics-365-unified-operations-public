@@ -2329,8 +2329,10 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
+      - name: Agent management (preview)
+        href: ../fin-ops/copilot/agent-mgmt.md
       - name: Immersive Home (preview)
-        href: ../fin-ops/copilot/immersive-home.md
+        href: ../fin-ops/copilot/immersive-home.mdn
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
