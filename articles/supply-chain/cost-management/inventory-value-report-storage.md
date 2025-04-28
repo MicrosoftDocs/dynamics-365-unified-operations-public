@@ -263,4 +263,63 @@ Typically, you'll use an inventory value report to view the inventory value and 
 
 For example, you have an item that has the item number *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not for financial inventory. You then use a report configuration where site, warehouse, and batch number are all selected. When you view the report, you see a value only for the site. The columns for the warehouse and batch number are blank. As this example shows, inventory value reports can show only inventory dimensions that are enabled for financial inventory.
 
+## Large volume historical inventory value report generation 
+
+### Requirements
+
+To use this feature, ensure the following:
+
+•	Supply Chain Management version 10.0.44 or later: The feature is enabled by default and cannot be turned off.
+
+•	For earlier versions: Admins can enable the feature in the Feature management workspace by searching for "**Large Volume Historical Inventory Value Report Generation.**"
+
+### Feature description
+
+The feature resolves performance issues during inventory value report storage by dividing large datasets into manageable bundles. Each bundle is processed sequentially, allowing the report generation to continue without time-out errors. Additionally, users can pause and resume the process to support incremental report generation.
+
+### _Configuration_
+
+To configure the feature:
+
+1.	Navigate to **Cost management > Inventory accounting policies setup > Parameters.**
+2.	Under the **Inventory value report storage** section, define the number of items to process in one bundle by setting the **Number of items per bundle** field.
+    - Example: For a dataset of 800,000 items, you might set the bundle size to 30,000 for optimal performance.
+
+### _Execution_
+
+To generate a large volume historical inventory value report:
+
+1.	Go to **Cost management > Inquiries and reports > Inventory value report storage.**
+2.	On the Action Pane, select **New.**
+3.	In the **Inventory value** dialog box, on the Parameters FastTab:
+    - Set **Large item volume** to **Yes.**
+    - Configure additional parameters as required.
+4.	Click **OK** to start the batch job.
+Once the batch job is completed, the report will appear on the Inventory value report storage page. Refresh the page if needed to view the newly generated report.
+
+### _Pause and resume functionality_
+To pause and resume report generation:
+
+1.	Navigate to **Cost management > Inquiries and reports > Inventory value report storage.**
+2.	Select the report in progress from the list. The page displays the report configuration details.
+3.	On the Action Pane:
+    - Select **Pause** to temporarily halt the report generation.
+    - Select **Resume** to continue the process. The system will pick up from where it left off.
+
+### Considerations
+
+- The feature is specifically designed for large data volumes and may result in decreased performance compared to normal report generation for smaller datasets. Use it only when necessary.
+- Proper configuration of the bundle size is crucial for balancing performance and reliability.
+
+### Limitations
+
+- This feature is mandatory and cannot be disabled in Supply Chain Management version 10.0.44 or later. User can choose to use it or not during [Execution](#execution)
+- Performance may decrease if the feature is used for datasets that do not require large volume processing.
+  
+
+By leveraging this feature, users can efficiently handle extensive datasets while maintaining control over the report generation process, ensuring smooth and uninterrupted operations.
+
+
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
