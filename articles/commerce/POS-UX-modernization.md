@@ -13,6 +13,7 @@ ms.custom:
 # POS modernization and usability improvements
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](includes/preview-banner.md)]
 
 This article describes modern workflows in POS that improve usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 
@@ -54,6 +55,7 @@ The Commerce **10.0.44** release includes:
 1. React-based controls on transaction page
 1. Inline actions on transaction grid
 1. Inline quantity update on transaction grid.
+1. Loyalty upsell prompt
 
 The following sections describe the capabilities in more details and additional configuration that may be needed.
 
@@ -82,6 +84,11 @@ The new toast notification framework brings flexible, real-time alerts to Store 
 For more information about the toast notification framework, see [Offline reliability toast notifications in the Store Commerce app - Commerce](dev-itpro/retail-sdk/offline-reliability-toast-notifications.md).
 
 This feature is available starting with the Commerce 10.0.43 release.
+
+## Loyalty upsell prompt
+The loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they are to reaching their next loyalty tier. This can nudge continued customer engagement to unlock new benefits leading to increased average order value through strategic upselling.
+
+This feature is available starting with the Commerce 10.0.44 release. For more information on how to enable this feature, see [Loyalty Upsell Prompt](loyalty-upsell-prompt.md).
 
 ## Product images on transaction grid
 Product images can now be displayed on the transaction grid.
