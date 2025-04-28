@@ -23,7 +23,7 @@ The transaction page is the most used page on the POS, and is the first page to 
 ## Prerequisites
 
 To transition to the modern workflows on POS, the following prerequisites must be met:
-1. You must be running Commerce version **10.0.40 or later**. For React-based controls on transaction page, **10.0.44 or later** is required.
+1. You must be running Commerce version **10.0.40 or later**. For React-based controls on transaction grid, **10.0.44 or later** is required.
 1. You must enable the **Enable Modern Transaction Grid in POS Transaction View**  feature in the Commerce headquarters.
 
 To enable this feature in Commerce headquarters, follow these steps.
@@ -47,13 +47,12 @@ The Commerce **10.0.42** release includes:
 1. Fluent Design on transaction, numpad, customer card, and button grids
 1. Product images in the cart view.
 
-The Commerce **10.0.43** release includes:
-1. Toast notification framework
-
 The Commerce **10.0.44** release includes:
 1. React-based controls on transaction page
 1. Inline actions on transaction grid
 1. Inline quantity update on transaction grid.
+
+The following sections describe the capabilities in more details and additional configuration that may be needed.
 
 ## Inline actions on transaction grid
 Inline actions on transaction grid are available for common line actions such as void product, return item, line discounts, price override, coupons, line comment and change unit of measure. The order of display of the inline actions is by frequency of use for each register and is automatically ordered based on usage.
@@ -74,24 +73,12 @@ This feature is available starting with the Commerce 10.0.44 release.
 ## Payment capture improvements
 Payment workflows in the POS application have been redesigned for all payment methods providing a consistent and enhanced user experience. For more information about the payment capture improvements, see [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
 
-## Toast notification framework
-The new toast notification framework brings flexible, real-time alerts to Store Commerce. With full extensibility support, this framework can be extended to build your own store notifications that meet your unique business needs. Use it to quickly share policy updates with store associates, flag low-stock items for restocking, alert staff when customers request assistance from in-store kiosks and more.
-
-For more information about the toast notification framework, see [Offline reliability toast notifications in the Store Commerce app - Commerce](dev-itpro/retail-sdk/offline-reliability-toast-notifications.md).
-
-This feature is available starting with the Commerce 10.0.43 release.
-
-## Loyalty Upsell
-A new loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they are to reaching their next loyalty tier. This can nudge continued customer engagement to unlock new benefits leading to increased average order value through strategic upselling.
-
-This feature is available starting with the Commerce 10.0.44 release.
-
 ## Product images on transaction grid
 Product images can now be displayed on the transaction grid.
 
 Make sure to correctly set up and manage images for Store Commerce for this feature to work, see [Set up and manage images for Store Commerce](set-up-manage-images-retail-mpos.md).
 
-This feature is available starting with the Commerce 10.0.43 release. Reach out to customer support to enable this feature in your environment.
+This feature is available starting with the Commerce 10.0.42 release. Reach out to customer support to enable this feature in your environment.
 
 ## Streamlined workflow for adding items to a transaction from the product page
 Two new workflows are introduced in the Commerce 10.0.40 release to handle situations where you add an item to the cart from the product description or search results page.
