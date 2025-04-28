@@ -4,10 +4,9 @@ description: Learn about the types of support that are involved in the project l
 author: PedroTubal
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/12/2021
+ms.date: 03/28/2025
 ms.custom: NotInTOC
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31
 ms.search.form:
@@ -130,7 +129,7 @@ The **Overview** section is common to most environment types. It provides a filt
 
 The **Activity** tab lets you query raw logs. It provides predefined queries for the most common events and metrics to help you monitor your environment. Here are some examples of the predefined queries that are available:
 
-- Slow queries
+- Long queries
 - Deadlocks
 - Crashes
 - Financial reporting issues

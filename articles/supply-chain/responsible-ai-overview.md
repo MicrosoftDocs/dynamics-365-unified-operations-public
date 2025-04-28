@@ -23,6 +23,7 @@ ms.collection:
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
 - [Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)
 - [Responsible AI FAQ for Workload insights with Copilot](faq-wma-copilot.md)
+- [Responsible AI for Supplier Communications Agent (production ready preview)](faq-supplier-communications-agent.md)
 
 ## Related information
 

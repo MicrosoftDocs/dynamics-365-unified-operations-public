@@ -1,10 +1,9 @@
 ---
 title: Set up DOM
-description: This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
+description: Learn how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 01/27/2025
+ms.date: 04/01/2025
 ms.topic: how-to
-audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: ritakimani
@@ -21,7 +20,7 @@ This article describes how to set up distributed order management (DOM) function
 
 > [!IMPORTANT]
 > - Bing Maps for Enterprise is deprecated and will be retired. Customers with an enterprise license can continue to use Bing Maps for Enterprise until **June 30th, 2028**, and customers on the free and basic license for Bing Maps for Enterprise can continue to use Bing Maps for Enterprise until **June 30th, 2025**.
-> - Starting with the Dynamics 365 Commerce 10.0.43 release you can use Azure Maps as an alternative to Bing Maps. For more information, see [Manage Azure Maps for your organization](dev-itpro/manage-bing-maps.md).
+> - Starting with the Dynamics 365 Commerce 10.0.43 release, you can use Azure Maps as an alternative to Bing Maps. For more information, see [Manage Azure Maps for your organization](dev-itpro/manage-azure-maps.md).
 
 ## Enable the DOM configuration key
 
@@ -39,7 +38,7 @@ To enable Azure Maps, follow these steps.
 3. Set the **Enable Azure Maps** option to **Yes**.
 4. Enter a valid **Azure Maps key** value, and then select **Save**.
 
-For information on how to obtain a key and privacy notice, see [Manage Azure Maps for your organization](dev-itpro/manage-bing-maps.md).
+For information on how to obtain a key and privacy notice, see [Manage Azure Maps for your organization](dev-itpro/manage-azure-maps.md).
 
  > [!NOTE]
  > If you're using Bing Maps, in the left navigation pane, select **Bing Maps**. Set the **Enable Bings Maps** option to **Yes**, and then under **Bing Maps key**, enter a valid key. [Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)

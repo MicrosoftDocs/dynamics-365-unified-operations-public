@@ -1,8 +1,8 @@
 ---
 title: Count inventory in a warehouse
 description: Learn about the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 ms.topic: how-to

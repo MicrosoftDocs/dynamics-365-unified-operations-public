@@ -1,63 +1,58 @@
 ---
 title: Adjustment of the asset retirement obligation estimate
-description: For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted, including a process for adjusting the ARO estimate.
+description: Learn how to adjust the asset retirement obligation (ARO) estimate in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/10/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Adjustment of the asset retirement obligation estimate
 
 [!include [banner](../../includes/banner.md)]
 
-For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted. 
+This article explains how to adjust the asset retirement obligation (ARO) estimate in Japan with Microsoft Dynamics 365 Finance.
 
+The following procedures walk you through how to adjust and post the ARO amount. The procedure was created using the demo data company JPMF.
 
-
-Use this procedure to learn how to adjust the ARO amount.
-
-
-
-To complete this procedure, the Fixed Assets configuration key must be selected.
-
-
-
-This task was created using the demo data company JPMF.
-
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
 ## Adjust the ARO estimate
-1. Go to Fixed assets > Asset retirement obligations > Fixed assets.
-2. In the list, find and select the desired record.
-3. On the Action Pane, click Fixed asset.
-4. Click Asset retirement obligation.
-5. Click Upward to open the drop dialog.
-    * You can also click Downward for minus adjustment.  
-6. In the Transaction date field, enter the date on which to post the adjustment amount.
-7. In the Upward field, enter the amount of adjustment.
-8. Click OK.
+
+To adjust the ARO estimate, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Fixed assets**.
+1. In the list, find and select the desired record.
+1. On the Action Pane, select **Fixed asset**.
+1. Select **Asset retirement obligation**.
+1. Select **Upward** to open the drop dialog. You can also select **Downward** for minus adjustment.  
+1. In the **Transaction date** field, enter the date on which to post the adjustment amount.
+1. In the **Upward** field, enter the amount of adjustment.
+1. Select **OK**.
 
 ## Post the adjustment
-1. Go to Fixed assets > Asset retirement obligations > Fixed assets journal.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Save.
-5. Click Lines.
-6. Click Proposals.
-7. Click Capitalized asset retirement obligation.
-8. In the To date field, enter a date.
-9. Click Filter.
-10. In the Criteria field, type a value.
-11. Click OK.
-12. Click OK.
-    * Confirm the adjustment is proposed. The amount proposed is discounted to the present value.  
-13. Click Post.
+
+To post the adjustment, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a name.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Capitalized asset retirement obligation**.
+1. In the **To date** field, enter a date.
+1. Select **Filter**.
+1. In the **Criteria field**, enter a value.
+1. Select **OK**.
+1. Select **OK**. Confirm the adjustment is proposed. The amount proposed is discounted to the present value.  
+1. Select **Post**.
 
 
 

@@ -17,6 +17,7 @@ ms.assetid:
 # Translate user interface files
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 This article provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
 
