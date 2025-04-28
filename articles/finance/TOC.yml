@@ -3778,6 +3778,12 @@
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
                 - name: Peru
                   items:
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases domiciled in Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-domiciled-report.md
+                    - name: Configure printing for the Electronic Purchase Register (RCE) for purchases not domiciled in Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-not-domiciled-report.md
+                    - name: Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
+                      href: localizations/iberoamerica/ltm-Peru-RCE-simplified-report.md
                     - name: Configure sales and purchase invoices for Peru
                       href: localizations/iberoamerica/ltm-Configure-invoices-Peru.md
                     - name: Create customer and vendor records with an address in Peru
@@ -4248,6 +4254,10 @@
                       href: localizations/thailand/apac-tha-sales-vat-report.md
                     - name: Withholding tax
                       href: localizations/thailand/apac-tha-withholding-tax.md
+                - name: Türkiye
+                  items:
+                    - name: Continuous serial numbering of packing slips and invoices 
+                      href: localizations/turkiye/emea-tur-serial-numbering.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
@@ -4531,6 +4541,8 @@
               href: business-performance-planning/install-excel-add.md
             - name: Security
               href: business-performance-planning/bpp-security.md
+            - name: Generative help and guidance in Business performance planning
+              href: business-performance-planning/bpp-help-rai.md            
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions
@@ -5537,6 +5549,8 @@
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
         - name: Generative help and guidance in Business performance analytics FAQ
           href: business-performance-analytics/responsible-ai-faq.md  
+        - name: Generative help and guidance in Business performance planning FAQ
+          href: business-performance-planning/resp-ai-faq-bpp.md
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
