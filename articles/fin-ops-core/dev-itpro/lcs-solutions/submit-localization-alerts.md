@@ -21,7 +21,7 @@ This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to
 
 A regulatory alert is a notification for Microsoft about an **upcoming** (that is, not yet enforced) change in country- or region-specific laws or regulations that may affect business processes supported in Dynamics 365 finance and operations apps. Microsoft processes such alerts and decides whether any changes in Dynamics 365 finance and operations apps are required to support the regulatory changes. Microsoft then releases corresponding [regulatory updates](../../../finance/localizations/global/regulatory-updates.md).
 
-> [!Note]
+> [!IMPORTANT]
 > The Dynamics regulatory alert submission service should not be used to communicate the information about issues in exisiting regulatory features, missing regulatory features, or not supported existing regulatory requirements. In such cases, please contact Microsoft support for further guidance.
 
 ## Accessing the regulatory alert submission service
