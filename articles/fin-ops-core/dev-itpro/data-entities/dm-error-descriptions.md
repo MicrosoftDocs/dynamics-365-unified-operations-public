@@ -81,6 +81,13 @@ Steps to publish the entity to BYOD: Navigate to FnO > Data Management > Data En
 
 When obtaining a writable URL by calling the GetAzureWriteUrl() API, ensure that a unique file name is provided. A unique file name is used to track blob IDs. Including a globally unique identifier (GUID) in the file name can help guarantee uniqueness. If a unique file name is not provided, issues related to duplicate imports of the same file may occur.
 
+### 15. The mapping is incorrect for entity Withholding tax registration
+
+The TaxWithholdingTaxRegistrationNumberEntity is set for IN countryRegionCodes, indicating it is only valid for India-based legal entities. If you attempt to import/export this entity to a non-India-based legal entity, you will encounter a mapping error. You can either create a new India-based legal entity or temporarily add an India address to the legal entity you are trying to export/import.
+Go to Organization administration > Legal entities > select your legal entity.
+Under the Addresses section, add or modify the primary address.
+Set Country/Region = IND.
+
 ## Error codes
 
 | Error code | Possible cause | Possible resolution |
