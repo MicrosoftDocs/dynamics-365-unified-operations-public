@@ -3,20 +3,20 @@ title: Finance and operations apps archive with Dataverse long term retention FA
 description: Access answers to frequently asked questions about archiving data in finance and operations apps with Dataverse.
 author: pnghub
 ms.author: brijeshjoshi
-ms.topic: conceptual
-ms.date: 02/12/2025
+ms.topic: faq
+ms.date: 04/29/2025
 ms.custom: 
   - bap-template
-ms.reviewer: twheeloc
+ms.reviewer: johnmichalak
 ---
 
 # Finance and operations apps archive with Dataverse long term retention FAQ
 
 ## Does testing archiving with Dataverse long-term retention require a sandbox environment?
 
-Yes, it requires use of a Tier-2 or greater Sandbox instance. It won't work on Tier CHE. 
+Yes, it requires use of a Tier-2 or greater Sandbox instance. It doesn't work on Tier CHE. 
 
-## How long will my archival job take to complete?
+## How long does my archival job take to complete?
 
 Data archival jobs are assigned a lower priority by the application. The duration of an archival job is dependent upon the data volumes. A job can take around 7-14 days based on data volume.
 
@@ -80,9 +80,9 @@ Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD),
 ### Case 1: Status error code or Duplicate Key error
 
 **Symptom 1: status error code**
-   - `Status code 503: Service unavailable`
+  - `Status code 503: Service unavailable`
   - `Status code 500: Solution operation failed due to another import blocking the operation`
-  -  Solution import progress has been stuck
+  -  Solution import progress is stuck
 
 **Resolution:**
 - Wait a few minutes and retry the installation. Repeat until it succeeds.
@@ -91,10 +91,10 @@ Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD),
 - **Error message:** `Cannot insert duplicate key exception when executing non-query`
 - **Resolution:**
   1. Go to the **Maker portal > Solutions**.
-  2. Delete the solutions:
+  1. Delete the solutions:
      - `ArchiveServicePermissions_PROD`
      - `ArchiveService Anchor Solution`
-  3. Refresh and repeat the installation.
+  1. Refresh and repeat the installation.
 
 ---
 
@@ -105,21 +105,22 @@ Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD),
 
 **Resolution:**
 1. In **Dynamics 365 Finance and Operations**, navigate to:  `System administration > License configuration`
-2. Enable the following checkboxes and sub-checkboxes:
+1. Enable the following checkboxes and subcheckboxes:
   - `Retail channels - Call center`
 
 ---
 
-### Case 3: Virtual entity is not eligible for archival
+### Case 3: Virtual entity isn't eligible for archival
 
 **Error Message:**  
-`Failed to validate if retention is enabled for fno ve : generaljournalentrybientity... entity is not eligible for archival`
+`Failed to validate if retention is enabled for finance and operations apps ve : generaljournalentrybientity... entity isn't eligible for archival`
 
 **Resolution:**
 1. Go to **Maker portal > Tables > Available Finance and Operations Entity**.
-2. Ensure the **Refresh** column is visible.
-3. Refresh the mentioned entity.
-> **Note:** If **custom fields** were added to the backing table of the entity (e.g., `GeneralJournalEntry`), ensure that all custom fields are added to the entity **before** refreshing it.
+1. Ensure the **Refresh** column is visible.
+1. Refresh the mentioned entity.
+   > [!NOTE]
+   > If **custom fields** were added to the backing table of the entity (e.g., `GeneralJournalEntry`), ensure that all custom fields are added to the entity **before** refreshing it.
 
 
 ---
@@ -130,10 +131,10 @@ Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD),
 `"Unable to establish connection using data source: 'Finance and Operations Virtual Data Source Configuration'. Failed to sync entity metadata."`
 
 **Cause:**  
-The user performing the installation on **PPAC** either does **not exist** or is **not an administrator** in Dynamics 365 FnO.
+The user performing the installation on **PPAC** either does **not exist** or is **not an administrator** in finance and operations apps.
 
 **Resolution:**
-- Ensure the installation user exist in FnO and has administrator role granted.
+- Ensure the installation user exists in finance and operations apps and has administrator role granted.
 
 ---
 
