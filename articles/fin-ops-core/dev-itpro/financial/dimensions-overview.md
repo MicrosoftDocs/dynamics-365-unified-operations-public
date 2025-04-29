@@ -54,7 +54,12 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
     ```sql
     select * from DIMENSIONCOMBINATIONENTITY 
     ```
-
+5. To view the new dimension fields in the excel templates, the design must be updated as such.
+    1. Open the desired Excel template and click **Design**.
+    2. Click the **pencil** next to the journal lines table to view the newly added fields.
+    3. Select the newly added dimension field from the list of available fields and press the **Add** button above the selected fields list.
+    4. Once all fields have been selected, press the **update** button to update the template.
+    5. Press the **refresh** button to view the new dimension fields and related data. 
 
 ## Additional resources
 
