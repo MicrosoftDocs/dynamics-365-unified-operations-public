@@ -25,6 +25,10 @@ Communication between procurement departments and vendors is commonly unstructur
 
 The Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management helps purchasers be more productive by automating many of these communications so they can focus on more value-adding tasks.
 
+To get a quick overview of the Supplier Communications Agent and see how it works, watch this video.
+
+ > [!VIDEO 8cedd3cd-01e9-4076-97da-6450c8a55487]
+
 ## Follow up on purchase orders
 
 The agent can automatically compose emails that remind vendors to confirm a purchase order or ask why a delivery is late. This saves the time otherwise needed to find the orders that require attention and then author specific emails for them. The agent can either send the emails automatically, right away, or generate draft for human review before sending. Learn more in [Follow up on purchase orders using the Supplier Communications Agent](supplier-com-agent-follow-up.md)

@@ -163,7 +163,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | Google Pay | ✔ | ✔ |
 | Apple Pay | ✔ | ✔ |
 | Afterpay | No | No |
-| Klarna | No | No |
+| Klarna | ✔ | No |
 | Affirm | ✔ | No |
 | Alipay | ✔ | No |
 | WeChat Pay | ✔ | No |
