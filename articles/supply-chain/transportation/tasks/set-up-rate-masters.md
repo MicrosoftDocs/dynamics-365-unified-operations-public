@@ -19,34 +19,22 @@ This article explains how to set up rates that are returned when using the rate 
 
 Because of the relationships between each of these rating elements, they must be configured in the following order:
 
-1. Set up rating metadata.
+1. Set up rating metadata. See here for more information about rating metadata: ([How is metadata used in transportation management engines?](https://review.learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/transportation-management-engines?branch=main#how-is-metadata-used-in-transportation-management-engines)).
 1. Set up a break master.
 1. Set up a rate master and associate it to one rating metadata ID. For this rate master:
         Set up one or multiple rate bases, each based on one break master.
         Set up one or multiple rate base assignments.
 1. Set up a rating profile, which can be associated with only one rate master.
 
-<!-- KFM: 
-
-The above order of operations doesn't quite work because we need the rate master before we can create a rate base, and we need a rate base before we can set up the base/master association. We're also missing a couple of elements in the documentation. Here is what I think the order should be:
-
-1. Set up rating metadata. (Description and new section needed)
-2. Set up a break master. (Existing section)
-3. Set up a rate master. (Split from existing section)
-4. Add one or more rate bases to a rate master. (Existing section)
-5. Set up rate base assignments for a break master. (Split from existing section)
-6. Set up a rating profile (New section that briefly describe what this is for and link to [Rating profiles](setup-a-rating-profile.md), I think.)
-
-LS: You're right there was something off about the order. I initially had also thought it was rate master first and then rate base, but then I saw a tech talk describing the other way. But now testing I see indeed you need a rate master to create a rate base.
- -->
-
-The following illustration shows the relationships between the different elements of the rating engine. <!-- KFM: This is my guess. Please expand on this to explain more about this diagram and what we are showing here. -->
+The following illustration shows the relationships between the different elements of the rating engine.
 
 :::image type="content" source="../media/rate-master-diagram.svg" alt-text="Diagram of relationships between the different elements of the rating engine." lightbox="../media/rate-master-diagram.svg":::
 
+Standard engines note -
+
 ## Set up a break master
 
-Break masters define a pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions. If the shipping carrier charges a certain rate per unit of distance or weight, for example, the break master can reflect this in the rate base.
+Break masters define a pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on the break unit used by the engine. If the shipping carrier charges a certain rate per unit of distance or weight, for example, the break master can reflect this in the rate base.
 
 1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Break master**.
 1. On the Action Pane, select **New**.
@@ -54,11 +42,13 @@ Break masters define a pricing structure and its breakpoints. The pricing struct
     - **Break master** – Enter a unique identifier for break master.
     - **Name** – Enter a descriptive name for the break master.
 1. Enter the following values on the **General** FastTab.
-    - **Data type** – Select the data type used to define the breakpoints.
-    - **Comparison** – Enter the operator to use when evaluating the breakpoints (typically *\<*, for *less than*). <!-- KFM: we should explicitly list the valid values and what they mean. -->
-    - **Break unit** – Enter the unit or measure used to define the breakpoints.
+    - **Data type** – Select the data type used to define the breakpoints: *string*, *integer* or *real*.
+    - **Comparison** – Enter the operator that reflects what the engine uses when evaluating the breakpoints (typically *\<*, for *less than*, but you can input anything in this field). 
+    - **Break unit** – Enter the unit or measure used to define the breakpoints (for example kgs/lbs or kms/miles). Ideally, the break unit should match the unit of the engine. 
 1. On the **Details** FastTab, create as many breaks as are needed for your pricing structure. For each row, enter a **Value** using the **Data type** and **Break unit** you specified on the General FastTab.
 1. Select **Save**.
+
+Note that both the **Comparison** and **Break unit** fields do not impact the standard engine behavior and are only used for visual purposes.
 
 ## Set up a rate master
 
@@ -70,11 +60,11 @@ Rate masters represent carrier rates. Each rate master can be associated with on
     - **Rate master** – Enter a unique identifier for rate master.
     - **Name** – Enter a descriptive name for the rate master.
 1. Select the following setting on the **Overview** FastTab.
-    - **Rating metadata ID** – Select the rating metadata ID record that applies for this rate master. The rating metadata ID determines the data needed for the rate master. It defines the metadata expected by the transportation management engine using this rate master. <!-- KFM: We don't describe anywhere how to set up these **Rating metadata ID** records. We should probably have a topic or section about this. -->
+    - **Rating metadata ID** – Select the rating metadata ID record that applies for this rate master. The rating metadata ID determines the data needed for the rate master. It defines the metadata expected by the transportation management engine using this rate master. For more information, see [Configure metadata for a transportation management engine](dynamics365/supply-chain/transportation/transportation-management-engines?branch=main#how-do-i-configure-metadata-for-a-transportation-management-engine))
 
 ### Set up a rate base
 
-The rate base defines the prices charged by the carrier at each breakpoint defined in an associated break master. You can set up one or multiple rate bases for each rate master to reflect carrier pricing structure by factors such as mileage and/or weight.  <!-- KFM: Explain that we might have several of these for each break master and what that means. -->
+The rate base defines the prices charged by the carrier at each breakpoint defined in an associated break master. You can set up one or multiple rate bases for each rate master to reflect carrier pricing structure by factors such as mileage and/or weight.
 
 1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
 1. Select the rate master that you want to add a rate base to.
@@ -86,32 +76,33 @@ The rate base defines the prices charged by the carrier at each breakpoint defin
 1. Make the following settings on the **General** FastTab.
     - **Rate master** – Shows the rate master record that you selected previously. This is the master you are creating a rate base for. You can change this value to move a selected rate base to another rate master if needed.
     - **Break master** – Select the break master that defines the pricing structure and breakpoints for this rate base.
-    - **Minimum charge** – This field is used to specify the lowest amount that can be charged for a shipment, regardless of the calculated rate based on other criteria such as distance, weight, or volume. This ensures that the carrier receives a minimum payment for their services, even if the calculated rate would otherwise be lower. For example, if the calculated rate for a shipment based on distance and weight is $50, but the minimum charge is set to $75, the system will apply the minimum charge of $75 instead of the calculated rate <!-- KFM: Explain what this setting does and what to enter here. How do these settings in this FastTab interact with the settings of the same name in the Details FastTab? -->
-    - **Maximum charge** – This field is used to set an upper limit on the amount that can be charged for a shipment for the rate base. This ensures that the cost for shipping does not exceed a specified threshold, regardless of the calculated rate based on other criteria such as distance, weight, or volume. For example, if the calculated rate for a shipment based on distance and weight is $500, but the maximum charge is set to $400, the system will apply the maximum charge of $400 instead of the calculated rate<!-- KFM: Explain what this setting does and what to enter here -->
-    - **Currency** – Select the currency used to specify the **Minimum charge** and **Maximum charge**.
-1. On the **Details** FastTab toolbar, you can specify a pricing structure for the price break points defined in the break master. For example, if the break master has been set to mileage, you can set up one rate for less than 100 miles, and another for less than 200 and so on. Select **New** to add a new row to the grid. 
-Then enter values for the following settings for the new row. <!-- KFM: here we should introduce the purpose of this FastTab. I think we are defining the price that applies at each breakpoint and the conditions under which each row applies. --> <!-- KFM: Your draft listed the following fields here, but I didn't see them. I think they vary based on what Break Master is selected, so we shouldn't list them here: **Drop-off Postal Code From**, **Drop-off Postal Code To**, **Drop-off Country Region**. The following seem to be the standard fields that aren't part of the Break master. -->
-    - **Class** – Select the LTL class.
-    - **Minimum charge** – This field is used to set an upper limit on the amount that can be charged for a shipment for the specific rate base line <!-- KFM: Description needed. LS: check difference here between minimum and maximum on general and details tabs-->
-    - **Maximum charge** – <!-- KFM: Description needed -->
-    - **Effective start date and time** – Specify if the rate is to only be applicable from a specified time and date onwards. <!-- KFM: Description needed -->
-    - **Effective end date and time** – Specify if the rate is to only be applicable up to a specified time and date. <!-- KFM: Description needed -->
-1. Fill out the remaining fields in the new row to define the rate that applies at each break point. The available columns vary based on what you selected in the **Break master** field. For example, if the break master is weight, the unit is pounds, and the break master has been set up at 5 pound intervals, then you're provided columns where you can define the rate for loads under 5 pounds, 10 pounds, 15 pounds, and so on.  
-1. The **Search** FastTab is populated with what is entered in the **Details** FastTab. <!-- KFM: Describe what this does and what to do here, or mention that we shouldn't do anything here. LS: Check what selecting these does-->
+    - **Minimum charge** – This field is used to specify the lowest amount that can be charged for a shipment, regardless of the calculated rate based on other criteria such as distance, weight, or volume. This ensures that the carrier receives a minimum payment for their services, even if the calculated rate would otherwise be lower. The minimum charge defined here in the **General** Fasttab applies if a minimum charge has not been set on the **Details** FastTab for the given line.
+    - **Maximum charge** – This field is used to set an upper limit on the amount that can be charged for a shipment for the rate base. This ensures that the cost for shipping does not exceed a specified threshold, regardless of the calculated rate based on other criteria such as distance, weight, or volume. The maximum charge defined here in the **General** Fasttab applies if a maximum charge has not been set on the **Details** FastTab for the given line.
+    - **Currency** – Define here if a currency different from the accounting currency is to be used for the rate base. 
+1. On the **Details** FastTab toolbar, you can specify a pricing structure for the price break points defined in the break master. The columns here will depend on how the breakmaster and rating metadata for the rate base have been configured. For example, if the break master has been set to mileage, you can set up one rate for less than 100 miles, and another for less than 200 and so on. Select **New** to add a new row to the grid. Then enter values for the following settings for the new row to define the price that applies at each breakpoint. The following are standard columns available in all rate bases, irrespective of the breakmaster and rating metadata configuration:
+    - **Minimum charge** – This field is used to speficy the lowest amount that can be charged for a shipment for the specific rate base line. If a minimum charge is defined here in the **Details** Fasttab, it is applied even if a different minimum charge is defined on the **General** Fasttab.
+    - **Maximum charge** – This field is used to set an upper limit on the amount that can be charged for a shipment for the rate base. If a maximum charge is defined here in the **Details** Fasttab, it is applied even if a different maximum charge is defined on the **General** Fasttab.
+    - **Effective start date and time** – Specify if the rate is to only be applicable from a specified time and date onwards.
+    - **Effective end date and time** – Specify if the rate is to only be applicable up to a specified time and date.
+        > [!NOTE]
+        > Avoid setting up multiple rate bases with overlapping effective dates and times for unique detail lines.
+1. Fill out the remaining fields in the new row to define the rate that applies at each break point.   
+1. The **Search** FastTab is populated with what is entered in the **Details** FastTab. Selecting a different line in the Search table will populate different values in the Details FastTab.
 1. On the Action Pane, select **Save**.
 
 ### Set up rate base assignments
 
-Rate base assignments allow you to create several different price points for each carrier depending on destinations, services, or different rate bases. You set them up under each rate master through the **Rate base assignments** Fasttab.
+Rate base assignments allow you to create several different price points for each carrier depending on destinations, services, or different rate bases. Rate base assignments define which rate base to apply. You set them up under each rate master through the **Rate base assignments** Fasttab.
 
 1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate master**.
-1. On the **Rate base assignments** FastTab toolbar, select **New** to add a new row to the grid. Then enter values for the following settings for the new row. <!-- KFM: here we should introduce the purpose of this FastTab. I think it's the conditions for selecting a rate base, but I'm not sure. -->
-    - **Name** – This field is used to specify a unique identifier for the rate base assignment. <!-- KFM: Description needed -->
-    - **Rate base** – The rate base field is used to define the basis on which the rates are calculated. <!-- KFM: Description needed. This is also a required field! So we have a chicken/egg problem when it comes to defining rate masters and rate bases. We need to resolve this somehow. -->
-    - **Service** – This field specifies the type of service associated with the rate base assignment. It could refer to different levels of service such as standard, expedited, or overnight delivery<!-- KFM: Description needed -->
-    - **Effective start date and time** – This field indicates the date and time when the rate base assignment becomes active. It ensures that the rates are applied correctly from the specified start time. <!-- KFM: Description needed -->
-    - **Effective end date and time** – This field specifies the date and time when the rate base assignment expires. It helps in managing the validity period of the rates and ensures that outdated rates are not applied. <!-- KFM: Description needed -->
-1. Fill out the remaining fields in the new row to define <!-- KFM: ... whatever we are doing here... -->. The available columns vary based on what you selected in the **Rating metadata ID** field.
+1. On the **Rate base assignments** FastTab toolbar, select **New** to add a new row to the grid. Then enter values for the following settings for the new row. The columns here depend on the set-up of the rate base assignment metadata based on what you selected in the **Rating metadata ID** field. The following are standard columns that are always applicable.
+    - **Name** – This field is used to specify a unique identifier for the rate base assignment. 
+    - **Rate base** – The rate base field is used to define the basis on which the rates are calculated. 
+    - **Service** – This field specifies the type of service associated with the rate base assignment. It could refer to different levels of service such as standard, expedited, or overnight delivery. This list of available services depends on the configuration of the [shipping carrier services](set-up-shipping-carriers?branch=main#create-the-necessary-services-for-the-shipping-carrier).
+    - **Effective start date and time** – This field indicates the date and time when the rate base assignment becomes active. It ensures that the rates are applied correctly from the specified start time.
+    - **Effective end date and time** – This field specifies the date and time when the rate base assignment expires. It helps in managing the validity period of the rates and ensures that outdated rates are not applied.
+        > [!NOTE]
+        > Avoid setting up multiple rate bases with overlapping effective dates and times for unique detail lines.
 1. On the Action Pane, select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
