@@ -4208,6 +4208,10 @@
                       href: localizations/thailand/apac-tha-sales-vat-report.md
                     - name: Withholding tax
                       href: localizations/thailand/apac-tha-withholding-tax.md
+                - name: Turkiye
+                  items:
+                    - name: Currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
