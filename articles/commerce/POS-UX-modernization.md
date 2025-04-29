@@ -10,7 +10,7 @@ ms.custom:
   - bap-template
 ---
 
-# POS modernization and usability improvements
+# POS modernization and usability improvements (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [banner](includes/preview-banner.md)]
@@ -81,7 +81,9 @@ This feature is available starting with the Commerce 10.0.44 release.
 
 ## Payment capture improvements
 
-Payment workflows in the POS application are redesigned for all payment methods, providing a consistent and enhanced user experience. Learn  more about the payment capture improvements in [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
+Payment workflows in the POS application are redesigned for all payment methods, providing a consistent and enhanced user experience. Learn  more about the payment capture improvements in [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). 
+
+This feature is available starting with the Commerce 10.0.40 release.
 
 ## Toast notification framework
 
@@ -95,7 +97,7 @@ This feature is available starting with the Commerce 10.0.43 release.
 
 The loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they are to reaching their next loyalty tier. This prompt can drive continued customer engagement to unlock new benefits, leading to increased average order value through strategic upselling.
 
-This feature is available starting with the Commerce 10.0.44 release. Learn how to enable this feature in [Loyalty Upsell Prompt](loyalty-upsell-prompt.md).
+This feature is available starting with the Commerce 10.0.44 release. Learn how to enable this feature in [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md).
 
 ## Product images on transaction grid
 
@@ -143,7 +145,9 @@ To enable intuitive interactions, the date picker in the Store Commerce app is u
 
 ## Persist the zoom level
 
-Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse, and is available from Commerce 10.0.39 release.
+Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse.
+
+This feature is available starting with the Commerce 10.0.39 release.
 
 ## Extensibility
 
