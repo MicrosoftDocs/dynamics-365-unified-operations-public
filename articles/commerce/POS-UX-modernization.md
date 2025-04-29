@@ -1,6 +1,6 @@
 ---
-title: Modern Workflows in POS
-description: This article describes modern workflows in POS that improve usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
+title: Modern workflows in POS (preview)
+description: Learn how modern workflows in POS improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
@@ -15,19 +15,20 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [banner](includes/preview-banner.md)]
 
-This article describes modern workflows in POS that improve usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
+This article describes modern workflows in POS that improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
 
-The Dynamics 365 Commerce team is modernizing the POS by transitioning to the React framework and Fluent Design. The React framework enables mobile-optimized modern workflows, simplifies extensibility, and is accessibility compliant across browsers and all Store Commerce applications. Fluent Design complements the React framework by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
+The Dynamics 365 Commerce team is modernizing the POS by transitioning to the React framework and Fluent Design. The React framework enables mobile-optimized modern workflows, simplifies extensibility, and complies with accessibility requirements across browsers and all Store Commerce applications. Fluent Design complements the React framework by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
 
-The transaction page is the most used page on the POS, and is the first page to be fully moved to React and Fluent Design along with introducing new modern workflows for faster checkout.
+The transaction page is the most used page on the POS, and is the first page to be fully moved to the React framework and Fluent Design to implement modern workflows for faster checkout.
 
 ## Prerequisites
 
 To transition to the modern workflows on POS, the following prerequisites must be met:
-1. You must be running Commerce version **10.0.40 or later**. For React-based controls on transaction grid, **10.0.44 or later** is required.
-1. You must enable the **Enable Modern Transaction Grid in POS Transaction View**  feature in the Commerce headquarters.
+- You must be running Commerce version 10.0.40 or later. For React-based controls on the transaction grid, version 10.0.44 or later is required.
+- You must enable the **Enable Modern Transaction Grid in POS Transaction View** feature in Commerce headquarters.
 
-To enable this feature in Commerce headquarters, follow these steps.
+To enable the **Enable Modern Transaction Grid in POS Transaction View** feature in Commerce headquarters, follow these steps.
+
 1. Go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
 1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.
 1. In the right pane, select **Enable now**.
@@ -37,29 +38,31 @@ To enable this feature in Commerce headquarters, follow these steps.
 
 
 ## Feature availability
-The Commerce **10.0.40** release includes:
-1. Streamlined workflow for adding items to cart
-1. Configure display of search results
-1. Reset of button grids at the end of a transaction
-1. Reprint receipts from a journal
-1. Payment workflows improvements
 
-The Commerce **10.0.42** release includes:
-1. Fluent Design on transaction, numpad, customer card, and button grids
-1. Product images in the cart view.
+The Commerce 10.0.44 release includes:
+- React-based controls on the transaction page.
+- Inline actions on the transaction grid.
+- Inline quantity update on the transaction grid.
+- Loyalty upsell prompt.
 
-The Commerce **10.0.43** release includes:
-1.	Toast notification framework
+The Commerce 10.0.43 release includes:
+- Toast notification framework.
 
-The Commerce **10.0.44** release includes:
-1. React-based controls on transaction page
-1. Inline actions on transaction grid
-1. Inline quantity update on transaction grid.
-1. Loyalty upsell prompt
+The Commerce 10.0.42 release includes:
+- Fluent Design on transaction, numpad, customer card, and button grids.
+- Product images in the cart view.
 
-The following sections describe the capabilities in more details and additional configuration that may be needed.
+The Commerce 10.0.40 release includes:
+- Streamlined workflow for adding items to cart.
+- Ability to configure the display of search results.
+- Reset of button grids at the end of a transaction.
+- Reprint receipts from a journal.
+- Payment workflow improvements.
+
+The following sections describe the capabilities in more detail and the additional configuration that may be needed.
 
 ## Inline actions on transaction grid
+
 Inline actions on transaction grid are available for common line actions such as void product, return item, line discounts, price override, coupons, line comment and change unit of measure. The order of display of the inline actions is by frequency of use for each register and is automatically ordered based on usage.
 
 To launch the inline actions list, hover over a line on the transaction grid and click on the 3 dots (…) that appears. On mobile and touch devices, inline actions can be accessed by long-pressing the line on transaction grid providing a more intuitive mobile-optimized experience.
