@@ -3,8 +3,10 @@ title: Enable Power Platform Integration
 description: Learn about how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services for finance and operations apps and Dataverse.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
-ms.date: 04/29/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 04/29/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -16,8 +18,8 @@ ms.dyn365.ops.version: 10.0.0
 [!include[banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Beginning **May 1, 2025**, all environments for finance and operations apps are required to have the Power Platform Integration enabled. Before this date, environment administrators should enable the Power Platform Integration by following the steps in this article, selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that aren't linked to a Power Platform environment through the Power Platform Integration after this date will have the Power Platform Integration automatically enabled for the environment. During automated enablement, the environment will either be linked to a newly-provisioned Power Platform environment, or linked to an existing Power Platform environment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
-> See [Microsoft Power Platform integration with finance and operations apps](./overview#tools-and-services-unlocked-with-microsoft-power-platform-integration) for more information, including which features are enabled by the Power Platform integration.
+> Beginning **May 1, 2025**, all environments for finance and operations apps are required to have the Power Platform Integration enabled. Before this date, environment administrators should enable Power Platform Integration by following the steps in this article, and selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that aren't linked to a Power Platform environment through the Power Platform Integration after this date will have the Power Platform Integration automatically enabled for the environment. During automated enablement, the environment will either be linked to a newly provisioned Power Platform environment, or linked to an existing Power Platform environment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
+> See [Microsoft Power Platform integration with finance and operations apps](overview#tools-and-services-unlocked-with-microsoft-power-platform-integration) for more information, including which features are enabled by the Power Platform integration.
 
 As part of the One Dynamics, One Platform effort, a growing number of customers get value out of integrating their finance and operations apps with Microsoft Dataverse and the Microsoft Power Platform ecosystem. Whether it's used to build low-code applications, or to fully integrate front-office and back-office processes and applications, the integration of these two systems is a common requirement for many customers.
 
