@@ -30,7 +30,7 @@ The over-pick feature can help workers save time and effort when they pick and s
 - Measure the picked quantity after picking (for example, through lorry weighting).
 
 > [!IMPORTANT]
-> The over-pick feature applies only to sales order and transfer order picking and processing. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow users to over-pick.
+> The over-pick feature applies only to sales order and transfer order picking and processing, as well for production or batch order raw material picking and processing. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow users to over-pick.
 
 This scenario in this article shows how to set up and use the over-pick feature.
 
