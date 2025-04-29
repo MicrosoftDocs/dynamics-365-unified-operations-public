@@ -25,7 +25,7 @@ Communication between procurement departments and vendors is commonly unstructur
 
 The Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management helps purchasers be more productive by automating many of these communications so they can focus on more value-adding tasks.
 
-To get a quick overview of the Supplier Communications Agent and see how it works, watch the following video.
+To get a quick overview of the Supplier Communications Agent and see how it works, watch this video.
 
  > [!VIDEO 8cedd3cd-01e9-4076-97da-6450c8a55487]
 
