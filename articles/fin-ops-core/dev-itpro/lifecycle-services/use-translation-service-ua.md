@@ -17,6 +17,7 @@ ms.assetid:
 # Translate documentation files
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 This article explains how to translate a documentation file for Microsoft Dynamics products and solutions.
 

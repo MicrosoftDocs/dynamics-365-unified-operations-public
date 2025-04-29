@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-All electronic files that the Electronic Invoicing service generates or that go to the service during processing are stored in containers in your Microsoft Azure storage account. To ensure that Electronic invoicing can access those containers, you must provide the shared access signature (SAS) token of the storage account to the Electronic Invoicing service. Additionally, to ensure that the token is securely stored, don't provide the SAS token directly. Instead, store it in an Azure key vault, and provide a Key Vault secret.
+All electronic files that the Electronic Invoicing service generates or that go to the service during processing are stored in containers in your Microsoft Azure storage account. To ensure that Electronic invoicing can access those containers, you must provide the shared access signature (SAS) token of the storage account to the Electronic Invoicing service. Additionally, to ensure that the token is securely stored, don't provide the SAS token directly. Instead, store it in an Azure Key Vault, and provide a Key Vault secret.
 
 1. Open the storage account that you plan to use with the Electronic Invoicing service.
 1. Go to **Settings** \> **Configuration**, and make sure that the **Allow Blob public access** parameter is set to **Enabled**.

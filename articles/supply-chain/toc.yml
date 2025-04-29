@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.44 (June 2025)
+          href: get-started/whats-new-scm-10-0-44.md         
         - name: Supply Chain Management 10.0.43 (March 2025)
           href: get-started/whats-new-scm-10-0-43.md         
         - name: Supply Chain Management 10.0.42 (December 2024)
           href: get-started/whats-new-scm-10-0-42.md
         - name: Supply Chain Management 10.0.41 (September 2024)
           href: get-started/whats-new-scm-10-0-41.md
-        - name: Supply Chain Management 10.0.40 (June 2024)
-          href: get-started/whats-new-scm-10-0-40.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -120,6 +120,12 @@
         items:
         - name: User interface elements
           href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/supply-chain
+        - name: Default dashboard
+          href: ../fin-ops-core/fin-ops/get-started/default-dashboard.md?context=/dynamics365/context/supply-chain
+        - name: Immersive Home (preview)
+          href: ../fin-ops-core/fin-ops/copilot/immersive-home.md?context=/dynamics365/context/supply-chain
+        - name: Set the preferred initial page for each user
+          href: ../fin-ops-core/fin-ops/get-started/set-users-initial-page.md?context=/dynamics365/context/supply-chain
         - name: Accessibility features
           href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/supply-chain
         - name: Feature management overview
@@ -623,6 +629,8 @@
         href: ../finance/cost-accounting/terms-cost-accounting.md?context=/dynamics365/context/supply-chain
       - name: Fiscal calendars, fiscal years, and periods
         href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?context=/dynamics365/context/supply-chain
+      - name: Ledger and subledger accounting overview
+        href: ../finance/general-ledger/ledger-subledger.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions
         href: ../finance/general-ledger/financial-dimensions.md?context=/dynamics365/context/supply-chain
       - name: Financial dimensions and posting
@@ -1583,6 +1591,8 @@
       items:
       - name: Inventory management overview
         href: inventory/inventory-home-page.md
+      - name: Advanced quality management overview (preview)
+        href: inventory/advanced-quality-management-overview.md
       - name: Arrival
         items:
         - name: Arrival overview
@@ -1619,14 +1629,26 @@
             href: inventory/quality-quarantine-zones.md
           - name: Nonconformance diagnostic types
             href: inventory/quality-diagnostic-types.md
+          - name: Nonconformance root cause codes (preview)
+            href: inventory/quality-root-cause-codes.md
+          - name: Nonconformance work groups (preview)
+            href: inventory/quality-nonconformance-workgroup.md
           - name: Nonconformance operations
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Test instrument calibration (preview)
+          href: inventory/quality-instrument-calibration.md
+        - name: Flexible sampling plans (preview)
+          href: inventory/quality-flexible-sampling-plans.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
+        - name: Customer specific certificate of analysis (COA) (preview)
+          href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
-          href: inventory/tasks/inspect-quality-goods.md  
+          href: inventory/tasks/inspect-quality-goods.md
+        - name: Enter quality test results quickly (preview)
+          href: inventory/quality-quick-results-entry.md
         - name: Create and process a nonconformance
           href: inventory/tasks/create-process-non-conformance.md
         - name: Work with quarantine orders
@@ -1635,6 +1657,16 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
+      - name: Corrective and preventive action (CAPA) management (preview)
+        items:
+        - name: CAPA management overview
+          href: inventory/capa-overview.md
+        - name: CAPA management administration
+          href: inventory/capa-admin.md
+        - name: Set up CAPA case components
+          href: inventory/capa-set-up-case-components.md
+        - name: Manage CAPA cases
+          href: inventory/capa-manage-cases.md
       - name: Inventory operations
         items:
         - name: Inventory journals
@@ -2001,7 +2033,7 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
-          - name: Continue to use deprecated master planning for some companies
+          - name: Continue to use deprecated master planning with existing companies
             href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
@@ -2041,6 +2073,8 @@
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
+        - name: Convert a Demand planning environment from sandbox to production
+          href: demand-planning/convert-demand-planning-environment-from-sandbox-to-production.md
       - name: Import data
         items:
         - name: View and customize tables for holding imported data
@@ -2385,6 +2419,16 @@
           href: procurement/tasks/create-repeat-purchase-order.md
         - name: Create a requisition for consumption
           href: procurement/tasks/create-requisition-consumption.md
+      - name: Supplier Communications Agent (production ready preview)
+        items:
+        - name: Supplier Communications Agent overview
+          href: procurement/supplier-com-agent-overview.md
+        - name: Set up and configure the Supplier Communications Agent
+          href: procurement/supplier-com-agent-setup.md
+        - name: Follow up on purchase orders using the Supplier Communications Agent
+          href: procurement/supplier-com-agent-follow-up.md
+        - name: Review and apply purchase order changes received in vendor emails
+          href: procurement/supplier-com-agent-apply-email-changes.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements
@@ -2977,6 +3021,10 @@
             href: production-control/production-feedback.md
           - name: Time and attendance registration
             href: production-control/time-attendance-registrations.md
+          - name: Electronic batch records (EBR) (preview)
+            href: production-control/quality-electronic-batch-record.md
+          - name: Production dispensing (preview)
+            href: production-control/quality-production-dispensing.md
         - name: Manage financials in production
           items:
           - name: Allocate time to jobs in a job bundle
@@ -3085,6 +3133,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Copy lines between sales orders
+          href: sales-marketing/copy-lines-between-sales-orders.md
         - name: Calculate sales totals when prices include sales tax
           href: sales-marketing/sales-tax-calculation.md
         - name: Manage order holds
@@ -3237,6 +3287,8 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
+      - name: Approved customer lists (preview)
+        href: sales-marketing/approved-customer-lists.md
       - name: Credit limits for customers
         href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
@@ -3561,10 +3613,6 @@
             href: transportation/tasks/register-driver-check-check-out-appointment.md
       - name: Reconcile freight
         items:
-        - name: Set up automatic freight reconciliation
-          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-        - name: Reconcile freight manually
-          href: transportation/tasks/reconcile-freight-manually.md
         - name: Reconcile freight
           href: transportation/reconcile-freight-transportation-management.md
         - name: Vendor invoice journal creation when discarding freight bills
@@ -3641,10 +3689,14 @@
         href: warehousing/warehouse-management-overview.md
       - name: Get started with setting up the Warehouse management module
         href: warehousing/get-started-with-setting-up-module.md
+      - name: Reservations in Warehouse management
+        href: warehousing/reservations-in-warehouse-management.md
       - name: Inbound warehouse operations
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
+        - name: Mark loads as completely received
+          href: warehousing/load-receive-complete.md
         - name: Create or modify an inbound load
           href: warehousing/create-or-modify-an-inbound-load.md
         - name: Register items enabled for warehouse management processes using an item arrival journal
@@ -3959,6 +4011,8 @@
           href: warehousing/location-directive-acceptance-tests.md
         - name: Configure product filters for warehouse transactions
           href: warehousing/filters-and-filter-codes.md
+        - name: Configure the transfer order receiving process (preview)
+          href: warehousing/configure-transfer-order-receiving-process.md
         - name: Location stocking limits
           href: warehousing/location-stocking-limits.md
         - name: Wave generation and processing
@@ -4147,6 +4201,8 @@
         href: faq-inventory-query.md
       - name: Responsible AI FAQ for Workload insights with Copilot
         href: faq-wma-copilot.md
+      - name: Responsible AI for Supplier Communications Agent (production ready preview)
+        href: faq-supplier-communications-agent.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

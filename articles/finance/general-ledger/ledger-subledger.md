@@ -1,5 +1,5 @@
 ---
-title: Ledger and subledger accounting entries overview
+title: Ledger, subledger, and subledger journal accounting entries overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
 author: prasungoel
 ms.author: prasungoel
@@ -35,8 +35,6 @@ A ledger has the following main components:
 - **Calendar** – Defines the fiscal year and periods of the ledger.
 - **Currency** – Defines the accounting currency, or home currency, of the ledger. The reporting currency is considered a second accounting currency and is optional. The exchange rate types determine which exchange rate tables are used for transaction entry.
 
-When you set up a ledger, review the components before you define them. The chart of accounts and the currencies can't be changed later. However, the fiscal calendar and account structure can be changed.
-
 Learn more about how to configure a ledger in [Configure ledgers](configure-ledger.md).
 
 ## What is a subledger?
@@ -53,7 +51,7 @@ To set up posting profiles in finance and operations apps, follow these steps.
 
 - **Accounts payable:** Go to **Accounts payable** > **Setup** > **Vendor posting profile**.
 - **Accounts receivable:** Go to **Accounts receivable** \> **Setup** \> **Customer posting profile**.
-- **Inventory:** Go to **Inventory management** \> **Posting** \> **Posting**.
+- **Inventory:** Go to **Inventory management** >  **Setup** \> **Posting** \> **Posting**.
 - **Production groups:** Go to **Production control** > **Setup** \> **Production** \> **Production groups**.
 
 Additional posting profiles exist for other modules.

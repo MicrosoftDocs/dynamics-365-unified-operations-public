@@ -1,44 +1,47 @@
 ---
 title: MX-00007 Customer registration IDs and other information
-description: Learn about creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico.
+description: Learn how to create a customer with fiscal and other related information used in electronic invoices and legal reports for Mexico in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 04/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
 ms.search.form: 
   - CustTable, DirPartyQuickCreateForm
   - DefaultDashboard
-ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # MX-00007 Customer registration IDs and other information
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico. This procedure was created using the demo data company MXMF.
+This article explains how to create a customer with fiscal and other related information used in electronic invoices and legal reports for Mexico in Microsoft Dynamics 365 Finance.
 
-1. Go to Accounts receivable > Customers > All customers.
-2. Click New.
-3. In the Name field, type a value.
-4. In the Customer group field, type a value.
-5. Click Save.
-6. In the list, click the link in the selected row.
-    * Select the customer that was created previously.  
-7. Expand or collapse the Miscellaneous details section.
-8. In the Company type field, select an option.
-9. In the RFC number field, enter the 12 or 13-character RFC number of the customer..
-    * The Federal Registration for Taxpayers (RFC) number is the tax identification number assigned by tax authorities to a person or a corporation. The tax registration IDs are validated according to the format specified by tax authorities in Mexico.  
-10. In the CURP number field, enter the 18-character CURP number of the customer..
-    * If the Company type for this customer is Legal Person, this field is required.  
-11. In the State inscription field, type a value.
-12. In the Tax registration ID field, type a value.
-    * If the Company type for this customer is Foreign, this filed is required.  
-13. Click Save.
+The following procedure was created using the demo data company MXMF.
+
+To create a customer with fiscal and other related information, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. In the **Customer group** field, enter a value.
+1. Select **Save**.
+1. In the list, select the customer you created.  
+1. Expand or collapse the **Miscellaneous details** section.
+1. In the **Company type** field, select an option.
+1. In the **RFC number** field, enter the 12 or 13-character Federal Registration for Taxpayers (RFC) number of the customer.  
+
+    > [!NOTE]
+    > The RFC number is the tax identification number assigned by tax authorities to a person or a corporation. The tax registration IDs are validated according to the format specified by tax authorities in Mexico.
+
+1. In the **CURP number** field, enter the 18-character Clave Única de Registro de Población (CURP) number of the customer. If the company type for this customer is **Legal Person**, this field is required.  
+1. In the **State inscription** field, enter a value.
+1. In the **Tax registration ID** field, enter a value. If the company type for this customer is **Foreign**, this field is required.  
+1. Select **Save**.
 
 
 
