@@ -4,7 +4,7 @@ description: Learn about the configuration that's required to issue the format 1
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: article
-ms.date: 11/20/2023 
+ms.date: 04/29/2025 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -24,7 +24,7 @@ Before you print the report, the following prerequisites must be met:
     - LTM Tax Report
     - Format 1005 file
 
-    For more information, see [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
+    For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 - The Electronic reporting (ER) parameters must be configured. For more information, see [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
