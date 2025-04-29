@@ -25,7 +25,7 @@ Because of the relationships between each of these rating elements, they must be
         Set up one or multiple rate bases, each based on one break master.
         Set up one or multiple rate base assignments.
 
-After this, you can set up a rating profile, which is unique to a shipping carrier and is associated with one rate master. See ([Rating profiles](https://review.learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/tasks/setup-a-rating-profile?branch=main))
+After this, you must set up a rating profile, which is unique to a shipping carrier and is associated with one rate master. See ([Rating profiles](https://review.learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/tasks/setup-a-rating-profile?branch=main))
 
 The following illustration shows the relationship between and the hierarchy of elements that make up rating in transportation management. You need to configure rating from the bottom up.
 
