@@ -19,7 +19,7 @@ This article describes modern workflows in POS that improve the usability, exten
 
 The Dynamics 365 Commerce team is modernizing the POS by transitioning to the React framework and Fluent Design. The React framework enables mobile-optimized modern workflows, simplifies extensibility, and complies with accessibility requirements across browsers and all Store Commerce applications. Fluent Design complements the React framework by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
 
-The transaction page is the most used page on the POS, and is the first page to be fully moved to the React framework and Fluent Design to implement modern workflows for faster checkout.
+The transaction page is the most used page on the POS, and is the first page to be moved to the React framework and Fluent Design to implement modern workflows for faster checkout.
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ The Commerce 10.0.40 release includes:
 - Streamlined workflow for adding items to cart.
 - Ability to configure the display of search results.
 - Reset of button grids at the end of a transaction.
-- Reprint receipts from a journal.
+- Ability to reprint receipts from a journal.
 - Payment workflow improvements.
 
 The following sections describe the capabilities in more detail and the additional configuration that may be needed.
@@ -81,7 +81,7 @@ This feature is available starting with the Commerce 10.0.44 release.
 
 ## Payment capture improvements
 
-Payment workflows in the POS application have been redesigned for all payment methods, providing a consistent and enhanced user experience. Learn  more about the payment capture improvements in [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
+Payment workflows in the POS application are redesigned for all payment methods, providing a consistent and enhanced user experience. Learn  more about the payment capture improvements in [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
 
 ## Toast notification framework
 
