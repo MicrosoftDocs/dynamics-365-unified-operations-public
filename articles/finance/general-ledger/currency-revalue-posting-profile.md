@@ -31,7 +31,7 @@ To create a currency revaluation posting profile, follow these steps.
 2. In the **Currency code** field, select **All** for all currencies or **Table** for a specific currency.
 3. In the **Account code** field, you can select **All**, **Group**, or **Table** to specify an account or main account, depending on the module-specific tab that's selected.
 
-    The **Main account** field is a mandatory field where you select the currency revaluation posting account that will be used during the currency revaluation adjustment.
+    The **Main account** field is a mandatory field where you select the currency revaluation posting account used during the currency revaluation adjustment.
 
 ### General ledger
 
@@ -86,7 +86,7 @@ For example, on the **Currency revaluation posting profile** page, the unrealize
 
 The setting of the **Lowest level of defaulting** field determines which account has priority:
 
-- **Currency** – Priority is given to the currency. In this example, the currency revaluation adjustment will be posted to account 801605.
-- **Account** – Priority is given to the account. In this example, the currency revaluation adjustment will be posted to account 801603.
+- **Currency** – Priority is given to the currency. In this example, the currency revaluation adjustment posts to account 801605.
+- **Account** – Priority is given to the account. In this example, the currency revaluation adjustment posts to account 801603.
 
 [![Posting example.](./media/Lowestlevel2.png)](./media/Lowestlevel2.png)
