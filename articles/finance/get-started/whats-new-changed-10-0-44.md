@@ -20,8 +20,8 @@ ms.search.region: Global
 This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.44. This version has a build number of 10.0.2263 and is available on the following schedule:
 
 - **Preview of release:** April 2025
-- **General availability of release (self-update):** May 2025
-- **General availability of release (auto-update):** June 2025
+- **General availability of release (self-update):** June 2025
+- **General availability of release (auto-update):** July 2025
 
 ## Features included in this release
 
