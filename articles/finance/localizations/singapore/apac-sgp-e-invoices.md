@@ -97,7 +97,7 @@ Some of the parameters from the **Singaporean electronic invoice (SG)** electron
 To review and update the **Singaporean electronic invoice (SG)** electronic invoicing feature configuration, follow these steps.
 
 1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then  Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the previously imported **Belgian electronic invoice (BE)** Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the previously imported **Singaporean electronic invoice (SG)** Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with **Edicom** services.
 
