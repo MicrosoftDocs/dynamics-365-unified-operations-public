@@ -16,7 +16,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 # Exchange difference invoicing (preview)
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information on how to create and process exchange difference invoices in Türkiye due to the floating exchange rate system. 
