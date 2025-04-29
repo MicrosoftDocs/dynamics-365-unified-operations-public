@@ -4,7 +4,7 @@ description: Learn how to set up records for customers and vendors in Panama, in
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: article
-ms.date: 10/11/2023
+ms.date: 04-29/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
