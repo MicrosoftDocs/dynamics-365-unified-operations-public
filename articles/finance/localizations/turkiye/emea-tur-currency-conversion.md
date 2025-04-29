@@ -21,7 +21,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 This article explains how to use the currency conversion feature for Türkiye in Microsoft Dynamics 365 Finance.
 
 In Türkiye, an order that is issued in Turkish Lira can be invoiced in a different currency. However, in accordance with local legislation, the invoice must also include the Turkish Lira equivalent, calculated using the Central Bank of the Republic of Türkiye (CBRT) exchange rate.
-The tax amount must always be calculated, displayed, and reported in Turkish Lira.
+The tax amount must always be calculated, displayed, and reported in Turkish Lira. To ensure that tax amounts are calculated in Turkish Lira (TRY), **Sales tax currency** field must be set to **TRY** for all sales tax codes.
 
 In Microsoft Dynamics 365 Finance, you can manually adjust the exchange rate for free text invoices and purchase orders. This functionality ensures that the total amount and tax amounts on the invoice and the purchase order are aligned in Turkish Lira.
 
@@ -53,7 +53,7 @@ When free text invoice is posted to ledger you can see the updated amounts in vo
 
 This section explains how to use currency conversion in purchase orders.
 
-To manually the exchange rate in a **Purchase order**, follow the steps below; 
+To manually update the exchange rate in a **Purchase order**, follow the steps below; 
 
 1. Go to **Accounts payable** \> **Purchase order** \> **All purchase orders**.
 1. Select a purchase order that you want to change exchange rate.
@@ -73,18 +73,10 @@ After posting, the vendor invoice totals and voucher transaction totals are reca
 If the purchase order with an updated exchange rate includes any charges, the exchange rate change will also affect the charge amounts in both the vendor invoice and the accounting voucher transactions.
 
 
-
 > [!NOTE]
 > Negative values are not allowed in the **Exchange rate** and **Reporting exchange rate** fields in free text invoice and purchase order, and a warning message is displayed as below.
 >
 > _Field 'Exchange rate'(= -x) can only contain positive numbers._
-
-
-
-
-
-
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
