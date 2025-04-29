@@ -1,5 +1,5 @@
 ---
-title: Exchange difference invoicing
+title: Exchange difference invoicing (preview)
 description: Access links to documentation resources for Türkiye, including links to resources about exchange difference invoicing.
 author: v-omerorhan 
 ms.author: v-omerorhan
@@ -14,9 +14,9 @@ ms.dyn365.ops.version: 10.0.9
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
-# Exchange difference invoicing
+# Exchange difference invoicing (preview)
 
-\[!include [banner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/main/articles/finance/includes/banner.md)\]
+[!INCLUDE[banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information on how to create and process exchange difference invoices in Türkiye due to the floating exchange rate system. 
@@ -51,7 +51,7 @@ Here are the details for each field in the **Invoice** tab:
 | **Group by dimension** | Specify whether invoices should be grouped by dimension.|
 | **Group by tax group** | Specify whether invoices should be grouped by tax group.|
 | **Group by profit and loss** | Specify whether invoices should be grouped by profit and loss.|
-| **Default invoice prefix** | Specify whether the default serial prefix for the invoice number will be automatically assigned to exchange difference invoices.|
+| **Default invoice prefix** | Specify whether the default serial prefix for the invoice number is automatically assigned to exchange difference invoices.|
 | **Copy description to voucher transaction** | Specify whether the description should be copied to the voucher transaction.|
 | **Copy description to journal line** | Specify whether the description should be copied to the journal line.|
 
@@ -91,14 +91,14 @@ When you click the **New** in ActionPane to create exchange difference invoice r
 
 The **Date** field determines which settled transactions are considered for customer and vendors, ensuring that no exchange differences are created from payment transactions dated after the specified invoice date. 
 
->[!NOTE]
->In **Exchange difference parameters > Invoice** tab, you can configure various parameters permanently, such as: 
->- Generating a separate exchange difference invoice for each invoice, 
->- Grouping based on financial dimensions, 
->- Grouping by tax group, 
->- Grouping by profit and loss 
+> [!NOTE]
+> In **Exchange difference parameters > Invoice** tab, you can configure various parameters permanently, such as: 
+> - Generating a separate exchange difference invoice for each invoice, 
+> - Grouping based on financial dimensions, 
+> - Grouping by tax group, 
+> - Grouping by profit and loss 
 
-After exchange difference invoices are created, you will see the functions for exchange difference invoices. Various functions are available for exchange difference invoices created on the exchange difference invoicing page. General information about these functions is provided below.
+After exchange difference invoices are created, you see the functions for exchange difference invoices. Various functions are available for exchange difference invoices created on the exchange difference invoicing page. General information about these functions is provided below.
 Here are the details of functions in the **Invoice** tab in ActionPane:
 
 | **Field** | **Description** |
@@ -109,8 +109,8 @@ Here are the details of functions in the **Invoice** tab in ActionPane:
 | **Exchange rate adjustment** | Provides the exchange difference invoicing print. |
 | **Exchange adjustment statement** | Provides an electronic report model to get statement report. |
 
->[!NOTE]
->Since vendor or customer exchange difference invoice is created, the settled transactions of customer or vendor cannot be reversed. 
+> [!NOTE]
+> Because the vendor or customer exchange difference invoice is created, the settled transactions of customer or vendor cannot be reversed. 
 
 The **Exchange difference invoice** section provides general information about the generated exchange difference invoices.
 
@@ -145,7 +145,7 @@ Here are the details for each field in the **Exchange difference invoice** sec
 | **Approved** | Specifies whether the transaction has been approved. |
 | **Approved date** | Specifies the date when the transaction was approved.|
 
-The **Exchange difference invoice line transactions** section contains information about the invoices related to the exchange difference invoice. If there are multiple invoice transactions, the grid will populate accordingly. Payments or collections made for multiple invoices may be invoiced as part of an exchange difference invoicing.
+The **Exchange difference invoice line transactions** section contains information about the invoices related to the exchange difference invoice. If there are multiple invoice transactions, the grid populates accordingly. Payments or collections made for multiple invoices may be invoiced as part of an exchange difference invoicing.
 
 Here are the details for each field in the **Exchange difference invoice line transactions** section:
 
@@ -205,7 +205,7 @@ To create a new exchange difference invoice; 
 4. In the **Date** field, select a date.
 5. In the **Default invoice prefix** parameter;
 
-    - If it is set as **Yes**, the serial prefix will be automatically selected in the **Invoice serial** field based on the **Default prefix** marked in **Preprinted serial numbers** page. .
+    - If it is set as **Yes**, the serial prefix is automatically selected in the **Invoice serial** field based on the **Default prefix** marked in **Preprinted serial numbers** page. .
     - If it is set as **No**, the serial prefix must be manually selected in the **Invoice serial** field. For more information, see [Serial numbering](emea-tur-serial-numbering.md).
 
 6. Select or change the other filtering parameters.
@@ -227,27 +227,27 @@ The details of each type are as below;
 
 - **Pending invoice -** This option delays invoicing to the following months, performing normal revaluation and generating vouchers and vendor transactions for the next day. Corrections are made at the end of the period.
 - **Exchange difference invoice -** This option creates an invoice transaction which can be invoiced immediately or later. Vendor and customer are reconciled with the invoice based on these records. When the customer or vendor invoices or advance payments are transferred to other period, the transferring date of exchange rate should be as invoice date. Then, the **Foreign currency revaluation** in standard should be executed at the date of transfer.
-- **Revaluate and close -** If it is selected, no invoice is issued if not accepted by the other party or if we do not want to invoice. Settlement is done using standard currency revaluation function. When **Revaluate and close** is selected in **Exchange difference invoice type** field, these penny differences are closed again by posting again. The amount remaining when the settled transactions are listed for the customer or the vendor will not come for exchange difference invoicing.
+- **Revaluate and close -** If it is selected, no invoice is issued if not accepted by the other party or if we do not want to invoice. Settlement is done using standard currency revaluation function. When **Revaluate and close** is selected in **Exchange difference invoice type** field, these penny differences are closed again by posting again. The amount remaining when the settled transactions are listed for the customer or the vendor doesn't come for exchange difference invoicing.
 
 You can change the exchange difference invoice posting date in **Date** field manually. To calculate tax amount for exchange difference invoice, **Sales tax group** and **Item sales tax** **group** must be selected.
 
-The **Delete** button permits the removal of the selected record in the **Exchange difference invoice** section. When an exchange difference invoice is deleted, the invoice and payment transactions that led to its creation are also deleted. If a deleted exchange difference invoice needs to be recreated, click the **New** button on the **Exchange difference invoicing** page, select the relevant option for customer or vendor transactions and the relevant exchange difference invoice will be listed again based on the selected parameters.
+The **Delete** button permits the removal of the selected record in the **Exchange difference invoice** section. When an exchange difference invoice is deleted, the invoice and payment transactions that led to its creation are also deleted. If a deleted exchange difference invoice needs to be recreated, click the **New** button on the **Exchange difference invoicing** page, select the relevant option for customer or vendor transactions and the relevant exchange difference invoice is listed again based on the selected parameters.
 
 In some cases, the generated exchange difference invoice may need to be excluded before being posted to the ledger. If you want to exclude any exchange difference invoice, you can click the **Exclude** to exclude any record and information about the excluded records can be accessed from the **Excluded records** tab. If you want to include any record again, it can be done by clicking **Include**. 
 
->[!NOTE]
->- To delete an excluded exchange difference invoice in the **Excluded records** tab, first include the record by **Include**, then delete it.
+> [!NOTE]
+> To delete an excluded exchange difference invoice in the **Excluded records** tab, first include the record by **Include**, then delete it.
 
-According to legal requirements, when the **Exchange difference amount** is debit balance, an exchange difference invoice must be created for the relevant customer or vendor. In this case, the **Invoice serial** field will be mandatory and a serial prefix must be selected in the **Invoice serial** field. 
+According to legal requirements, when the **Exchange difference amount** is debit balance, an exchange difference invoice must be created for the relevant customer or vendor. In this case, the **Invoice serial** field is mandatory and a serial prefix must be selected in the **Invoice serial** field. 
 When the **Exchange difference amount** is a credit balance, the document number of the exchange difference invoice received from the relevant customer or vendor must be entered in this field.
 
->[!NOTE]
->- If the **Default invoice prefix** parameter is set as **No**, the **Invoice serial** field will be mandatory and a serial prefix must be chosen manually.
->- If the **Default invoice prefix** parameter is set as **Yes**, the **Invoice serial** value will be selected automatically depending on the **Default prefix** field selected in the **Preprinted serial numbers** page. For more information, see [Serial numbering](emea-tur-serial-numbering.md).
+> [!NOTE]
+> - If the **Default invoice prefix** parameter is set as **No**, the **Invoice serial** field is mandatory and a serial prefix must be chosen manually.
+> - If the **Default invoice prefix** parameter is set as **Yes**, the **Invoice serial** value is selected automatically depending on the **Default prefix** field selected in the **Preprinted serial numbers** page. For more information, see [Serial numbering](emea-tur-serial-numbering.md).
 
-When you generate the **Exchange adjustment statement** report from the **Document** group in the **Invoice** tab, the **Reconciliation statement sent** field in the **Exchange difference invoice** section will be marked. Then, the relevant exchange difference invoice can be approved using **Approve**. If needed, approval can be reset using **Reset Approval**. 
+When you generate the **Exchange adjustment statement** report from the **Document** group in the **Invoice** tab, the **Reconciliation statement sent** field in the **Exchange difference invoice** section is marked. Then, the relevant exchange difference invoice can be approved using **Approve**. If needed, approval can be reset using **Reset Approval**. 
 
-If the **Require invoice approval** parameter is set to **Yes** in the **General** tab on the **Exchange difference invoicing parameters** page, the **Post** button will be activated after the exchange difference invoice is approved, allowing it to be posted to the ledger. If the parameter is set to **No**, the exchange difference invoice can be posted to the ledger without requiring approval.
+If the **Require invoice approval** parameter is set to **Yes** in the **General** tab on the **Exchange difference invoicing parameters** page, the **Post** button activates after the exchange difference invoice is approved, allowing it to be posted to the ledger. If the parameter is set to **No**, the exchange difference invoice can be posted to the ledger without requiring approval.
 
 Exchange difference invoices are specified by the **Foreign currency revaluation** transaction type in **General** tab in customer or vendor transactions after posted.
 
@@ -260,7 +260,7 @@ When reconciling invoices, payments and collections with customers and vendors, 
 
 This section explains how to print the excel reports in exchange difference invoicing page. 
 
-- **Exchange rate adjustment**: The report will be able to print after the exchange difference invoice is posted. The report can be access as below:
+- **Exchange rate adjustment**: The report can print after the exchange difference invoice is posted. The report can be access as below:
 
 1. Navigate to **Accounts payable** or **Accounts receivable > Periodic tasks > Exchange difference invoicing**.
 2. Select an exchange difference invoice which is **Posted**.
@@ -272,12 +272,12 @@ This section explains how to print the excel reports in exchange difference invo
 2. Select an exchange difference invoice which is **Not posted** .
 3. Click **Exchange adjustment statement** in the **Document** group in the **Invoice** tab.
 
-When the **Exchange adjustment statement** is printed, the **Reconciliation statement sent** field is marked and **Approve** will be active in the **Exchange difference invoice** section. If you click **Approve**, the **Approved** and the **Approved date** fields will be filled. 
+When the **Exchange adjustment statement** is printed, the **Reconciliation statement sent** field is marked and **Approve** actives in the **Exchange difference invoice** section. If you click **Approve**, the **Approved** and the **Approved date** fields is filled. 
 
->[!NOTE]
->If the **Require invoice approval** parameter is set to **Yes** in the **Exchange difference invoicing parameters** page:
->- You must click the **Approve** for the exchange difference invoice in the **Exchange difference invoice** section before posting. Then, the exchange difference invoice will be able to post.
->- You can click the **Reset approval** to rollback the exchange difference invoice. 
+> [!NOTE]
+> If the **Require invoice approval** parameter is set to **Yes** in the **Exchange difference invoicing parameters** page:
+> - You must click the **Approve** for the exchange difference invoice in the **Exchange difference invoice** section before posting. Then, the exchange difference invoice can post.
+> - You can click the **Reset approval** to rollback the exchange difference invoice. 
 
 
-\[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/main/articles/includes/footer-banner.md)\]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
