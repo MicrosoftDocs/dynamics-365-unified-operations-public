@@ -37,7 +37,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature state changes in this release
 
-The following table lists features that are mandatory or turned on by default in version 10.0.41. All these features are automatically enabled for your system as soon as you update to version 10.0.41. Mandatory features can't be turned off, but features that are on by default can still be turned off by using the **Feature Management** workspace in Commerce headquarters. 
+The following table lists features that are mandatory or turned on by default in Commerce version 10.0.41. All of these features are automatically enabled for your system as soon as you update to version 10.0.41. Mandatory features can't be turned off, but features that are enabled by default can still be turned off via the **Feature Management** workspace in Commerce headquarters. 
 
 
 | Module | Feature name | New feature state |
