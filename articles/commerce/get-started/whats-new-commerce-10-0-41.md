@@ -2,9 +2,8 @@
 title: Preview features in Dynamics 365 Commerce 10.0.41 (September 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.41. 
 author: johnmichalak
-ms.date: 07/30/2024
-ms.topic: article
-audience: Application User
+ms.date: 04/29/2025
+ms.topic: release-notes
 ms.custom: 
   - bap-template
   - evergreen
@@ -38,12 +37,12 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature state changes in this release
 
-The following table lists features that became mandatory or on by default in version 10.0.41. All these features will automatically be turned on for your system as soon as you update to version 10.0.41. Mandatory features can't be turned off, but features that are on by default can still be turned off by using Feature Management workspace. 
+The following table lists features that are mandatory or turned on by default in version 10.0.41. All these features are automatically enabled for your system as soon as you update to version 10.0.41. Mandatory features can't be turned off, but features that are on by default can still be turned off by using the **Feature Management** workspace in Commerce headquarters. 
 
 
 | Module | Feature name | New feature state |
 | --- | --- | --- |
-| Commerce |  Enable new transaction id to avoid duplicate transaction ids (https://learn.microsoft.com/en-us/dynamics365/commerce/channel-setup-retail#ensure-unique-transaction-ids) | Mandatory |
+| Commerce |  [Enable new transaction ID to avoid duplicate transaction IDs](../channel-setup-retail.md#ensure-unique-transaction-ids) | Mandatory |
 
 
 ## Resources
