@@ -2,17 +2,14 @@
 title: Point of sale (POS) APIs
 description: This article contains a list of available POS APIs and how to access them.
 author: josaw1
-ms.date: 11/03/2020
+ms.date: 04/30/2025
 ms.topic: article
-audience: Developer
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-29
-ms.dyn365.ops.version: AX 8.0, AX 8.1
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+  - bap-template
 ---
 # Point of sale (POS) APIs
 [!include [banner](../includes/banner.md)]
