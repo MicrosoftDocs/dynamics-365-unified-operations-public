@@ -4,7 +4,7 @@ description: Learn about the various toast notifications that are available in t
 author: anush6121
 ms.author: anvenkat 
 ms.topic: conceptual 
-ms.date: 01/21/2025
+ms.date: 04/30/2025
 ms.custom: 
   - bap-template
 ms.reviewer: v-chrgriffin
@@ -43,15 +43,14 @@ Store employees receive a notification when network connectivity is missing or w
 
 ## Toast notification for data sync failures
 
-Store employees receive a notification when there are issues related to data sync. The notification includes a link to detailed error information. That information can be copied and sent to an administrator for corrective action.
-This notification can be individually disabled in feature flag settings under this name **StoreCommerce.DisableDataSyncProactiveNotifications**.
+Store employees receive a notification when there are issues related to data synchronization. The notification includes a link to detailed error information which can be copied and sent to an administrator for corrective action. You can disable the **StoreCommerce.DisableDataSyncProactiveNotifications** notification feature in the headquarters **Feature management workspace**.
 
 ## Toast notification for unsuccessful offline installs during app upgrades
 
-Store employees receive a notification when the offline installs are unsuccessful after app upgrades. The notificaion includes a link to more detailed error information. The information can be copied and sent to administrator for corrective action.
+Store employees receive a notification when offline installs are unsuccessful after app upgrades. The notification includes a link to more detailed error information which can be copied and sent to an administrator for corrective action.
 
 ## Toast notifications extensibility
 
-Customers can now leverage the APIs to create their toast notifications for their unique business scenarios using the built in extensibility. More information on this along with sample code is available in https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-apis#device
+Customers can use APIs to create custom toast notifications for their unique business scenarios using the built-in extensibility. Learn more and find sample code in [Point of sale (POS) APIs](/dynamics365/commerce/dev-itpro/pos-apis#device).
 
-Additionally Toast notificaions are auto dismissed after 5 seconds and can be snoozed per user and app session. 
+Toast notifications are automatically dismissed after five seconds and can be snoozed per user and app session. 
