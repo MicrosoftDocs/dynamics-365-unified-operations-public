@@ -1,12 +1,11 @@
 ---
 title: Submit alerts about country/region-specific regulatory features
-description: Learn about how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Regulatory alert submission service.
-author: kfend
-ms.author: filatovm
+description: Learn about how to use Microsoft Dynamics Lifecycle Services to submit alerts through the Regulatory alert submission service.
+author: filatovm
+ms.author: evgenypopov
 ms.topic: article
-ms.date: 02/06/2025
+ms.date: 04/29/2025
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -17,16 +16,16 @@ ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Dynamics regulatory alert submission service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
+This article describes how to use Microsoft Dynamics 365 Lifecycle Services to submit alerts through the Dynamics 365 regulatory alert submission service. This article also explains how to track planned and released regulatory features through Lifecycle Services Issue search. 
 
 A regulatory alert is a notification for Microsoft about an **upcoming** (that is, not yet enforced) change in country- or region-specific laws or regulations that may affect business processes supported in Dynamics 365 finance and operations apps. Microsoft processes such alerts and decides whether any changes in Dynamics 365 finance and operations apps are required to support the regulatory changes. Microsoft then releases corresponding [regulatory updates](../../../finance/localizations/global/regulatory-updates.md).
 
 > [!IMPORTANT]
-> The Dynamics regulatory alert submission service should not be used to communicate the information about issues in exisiting regulatory features, missing regulatory features, or not supported existing regulatory requirements. In such cases, please contact Microsoft support for further guidance.
+> The Dynamics regulatory alert submission service shouldn't be used to communicate the information about issues in existing regulatory features, missing regulatory features, or not supported existing regulatory requirements. In such cases, contact Microsoft support for further guidance.
 
 ## Accessing the regulatory alert submission service
 
-To access the regulatory alert submission service, in your project or a project you are invited to in Dynamics Lifecycle Services (LCS), do one of the following:
+To access the regulatory alert submission service, in your project or a project you are invited to in Dynamics Lifecycle Services, do one of the following:
 - From the menu, select **Alert service**.
 - Scroll to the right side of the page, and under **More tools**, select **Alert service**. 
 
@@ -186,7 +185,7 @@ If you don't have all of the required information, or if you're not yet ready to
 -   If you save the alert before you submit it, an alert ID is generated, and you receive confirmation that the alert has been saved.
 
 ## Track the status of regulatory features in Issue search
-You can use Issue search in LCS to find planned and released regulatory features, and any associated localization documentation, certifications, and reports. To narrow your search to regulatory features, use the following filters:
+You can use Issue search in Lifecycle Services to find planned and released regulatory features, and any associated localization documentation, certifications, and reports. To narrow your search to regulatory features, use the following filters:
 
 -   **Category** - Select **Regulatory feature** only.
 -   **Country/region** - Click **&gt;** to select the country/region that you're interested in.
