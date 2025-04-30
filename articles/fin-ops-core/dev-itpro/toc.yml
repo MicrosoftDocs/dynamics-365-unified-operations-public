@@ -2332,7 +2332,7 @@ items:
       - name: Agent management (preview)
         href: ../fin-ops/copilot/agent-mgmt.md
       - name: Immersive Home (preview)
-        href: ../fin-ops/copilot/immersive-home.mdn
+        href: ../fin-ops/copilot/immersive-home.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
