@@ -496,7 +496,7 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
-            - name: Offline reliability toast notifications in Store Commerce
+            - name: Offline reliability toast notifications in Store Commerce (preview)
               href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
@@ -2840,7 +2840,7 @@
           items:
           - name: View POS extension package information
             href: dev-itpro/view-pos-extension-package-details.md
-          - name: POS APIs
+          - name: POS APIs (preview)
             href: dev-itpro/pos-apis.md
           - name: Use POS controls in extensions
             href: dev-itpro/pos-extension/controls-pos-extension.md
