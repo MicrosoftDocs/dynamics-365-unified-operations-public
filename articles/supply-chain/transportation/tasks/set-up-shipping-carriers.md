@@ -34,7 +34,7 @@ This article shows how to set up a shipping carrier and define details such as s
 5. Check or uncheck the **Activate carrier rating** checkbox.
 
 > [!NOTE]
-> It's possible to confirm shipment of the load without having the rating applied, for example, when no rate is assigned to it.
+> It's possible to confirm shipment of the load without having the rating applied, for example, if no rate is assigned to it.
 
 ## Create the necessary services for the shipping carrier
 
