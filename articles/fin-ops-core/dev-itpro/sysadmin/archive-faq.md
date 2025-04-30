@@ -3,20 +3,20 @@ title: Finance and operations apps archive with Dataverse long term retention FA
 description: Access answers to frequently asked questions about archiving data in finance and operations apps with Dataverse.
 author: pnghub
 ms.author: brijeshjoshi
-ms.topic: conceptual
-ms.date: 02/12/2025
+ms.topic: faq
+ms.date: 04/29/2025
 ms.custom: 
   - bap-template
-ms.reviewer: twheeloc
+ms.reviewer: johnmichalak
 ---
 
 # Finance and operations apps archive with Dataverse long term retention FAQ
 
 ## Does testing archiving with Dataverse long-term retention require a sandbox environment?
 
-Yes, it requires use of a Tier-2 or greater Sandbox instance. It won't work on Tier CHE. 
+Yes, it requires use of a Tier-2 or greater Sandbox instance. It doesn't work on Tier CHE.
 
-## How long will my archival job take to complete?
+## How long does my archival job take to complete?
 
 Data archival jobs are assigned a lower priority by the application. The duration of an archival job is dependent upon the data volumes. A job can take around 7-14 days based on data volume.
 
@@ -30,7 +30,7 @@ Yes, an application-specific inquiry page is available so that you can view arch
 
 ## Can I restore data from Dataverse long term retention back to live tables?
 
-No, data restore from Dataverse long term retention to live tables isn't supported. 
+No, data restore from Dataverse long term retention to live tables isn't supported.
 
 ## Do I save the maximum database capacity if I purge data from history tables?
 
@@ -59,23 +59,93 @@ You can [view archived data](archive-view.md) in Dataverse long term retention w
 You can also view the archived data from within the finance and operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
 
 ## I export finance and operations application data to my own data lake. If I archive data from my live finance and operations application tables, will the archived data be removed from my own data lake?
+
 Dataverse long-term retention isn't supported on Bring Your Own Database (BYOD), and data preservation in BYOD isn't guaranteed.
 
 ## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
 
-Please ensure that all the prerequisite setup steps are completed, as incorrect setup can lead to installation failure.
+### Prerequisites before installation
 
-Please also ensure that you have logged into your finance and operations application in the last 30 days, as installation can fail if the organization has been tagged as dormant. If you are logging in for the first time after 30 days, it may take up to 4 hours for your organization to be flagged as active. 
+- **Complete all prerequisite setup steps.**
 
-If you encounter the following error messages during the install attempt, then wait for a few minutes and retry till it succeeds:
- - Status code 503 (Service unavailable)
- - Status code 500 (Solution operation failed due to another import blocking the operation)
- - Solution import progress has been stuck
+    Ensure that all prerequisite setup steps are completed. Incorrect setup can lead to installation failure.
 
-If you encounter a **Cannot insert duplicate key exception when executing non-query** error when trying to upgrade the app, then please delete the solutions named **ArchiveServicePermissions_PROD** and **ArchiveService Anchor Solution** from the maker portal solutions page and then refresh and reattempt the install.
+- **Check application activity.**
 
-If you encounter the error **'MCR call center config key needs to be enabled under License Configuration in order to enable change tracking for MCRSalesTableBiEntity'**, then in Dynamics 365 Finance and Operations, go to **System administration \> License configuration** and confirm that the following checkboxes and sub-checkboxes are enabled before reattempting installation:
- - **Retail channels** - Call center
+    You must have signed in to your finance and operations app within the last 30 days. If your organization is marked as dormant, installation might fail.
 
+    If you're signing in after more than 30 days, your organization might take **up to 4 hours** to be marked as active.
 
+### Common installation failure cases and resolutions
 
+#### Case 1: Status error code or duplicate key error
+
+##### Symptom 1: Status error code
+
+**Error messages and behavior**
+
+> Status code 503: Service unavailable
+
+> Status code 500: Solution operation failed due to another import blocking the operation
+
+Solution import progress is stuck.
+
+**Resolution**
+
+Wait a few minutes, and then try the installation again. Repeat this process until installation is successful.
+
+##### Symptom 2: Duplicate key error during upgrade
+
+**Error message**
+
+> Cannot insert duplicate key exception when executing non-query
+
+**Resolution**
+
+1. In the maker portal, go to **Solutions**.
+1. Delete the following solutions:
+
+    - ArchiveServicePermissions_PROD
+    - ArchiveService Anchor Solution
+
+1. Refresh, and then repeat the installation.
+
+#### Case 2: Missing license configuration key
+
+**Error message**
+
+> MCR call center config key needs to be enabled under License Configuration in order to enable change tracking for MCRSalesTableBiEntity.
+
+**Resolution**
+
+1. In Dynamics 365 finance and operations apps, go to **System administration** \> **License configuration**.
+1. Select the following checkboxes and sub-checkboxes: **Retail channels** \> **Call center**.
+
+#### Case 3: Virtual entity that isn't eligible for archival
+
+**Error message**
+
+> Failed to validate if retention is enabled for finance and operations apps ve : generaljournalentrybientity... entity isn't eligible for archival
+
+**Resolution**
+
+1. In the maker portal, go to **Tables** \> **Available Finance and Operations Entity**.
+1. Ensure that the **Refresh** column is visible.
+1. Refresh the previously mentioned entity.
+
+    > [!NOTE]
+    > If custom fields were added to the backing table of the entity (for example, `GeneralJournalEntry`), ensure that all custom fields are added to the entity **before** you refresh it.
+
+#### Case 4: Data source configuration issue
+
+**Error message**
+
+> Unable to establish connection using data source: 'Finance and Operations Virtual Data Source Configuration'. Failed to sync entity metadata.
+
+**Cause**
+
+The user who is performing the installation in the Power Platform admin center either **doesn't exist** or **isn't an administrator** in finance and operations apps.
+
+**Resolution**
+
+Ensure that the installation user exists in finance and operations apps and has the administrator role.
