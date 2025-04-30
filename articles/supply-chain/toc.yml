@@ -287,11 +287,11 @@
               - name: Work with Electronic invoicing
                 items:
                 - name: Submit electronic documents
-                  href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+                  href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents submission log
-                  href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+                  href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
                 - name: Receive electronic documents
-                  href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
+                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
