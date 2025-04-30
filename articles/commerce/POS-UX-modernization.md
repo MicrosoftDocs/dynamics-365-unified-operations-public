@@ -4,7 +4,7 @@ description: Learn how modern workflows in POS improve the usability, extensibil
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
-ms.date: 10/31/2024
+ms.date: 04/30/2025
 ms.reviewer: v-chrgriffin
 ms.custom: 
   - bap-template
