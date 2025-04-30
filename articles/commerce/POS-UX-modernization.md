@@ -10,7 +10,7 @@ ms.custom:
   - bap-template
 ---
 
-# POS modernization and usability improvements (preview)
+# Modern workflows in POS (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [banner](includes/preview-banner.md)]
