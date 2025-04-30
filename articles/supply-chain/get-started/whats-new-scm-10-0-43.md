@@ -26,7 +26,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| System administration | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences (preview)](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md) | Feature management:<br>*(Preview) Enable user feedback for Copilot and related experiences* |
+| System administration | Enhanced user feedback for Copilot and related experiences | [Enable enhanced user feedback for Copilot and related experiences](../../fin-ops-core/dev-itpro/copilot/enable-copilot-feedback.md) | Feature management:<br>*Enable user feedback for Copilot and related experiences* |
 | Inventory and logistics | [Enhance vendor rebate management](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/enhance-vendor-rebate-management-reconciliation-resubmission-workflows) | [Process, review, and post rebates](../rebate-management/process-review-post.md)<br><br>[Rebate management posting setup](../rebate-management/rebate-management-posting.md)<br><br>[Rebate management deal workflows](../rebate-management/rebate-management-workflows.md) | Feature management:<ul><li>*Consolidate vendor invoices for the same vendor in vendor rebate deals*</li><li>*Enable posting of vendor rebate outputs to purchase order vendors*</li><li>*Enable resubmission of workflows for vendor rebate deals*</li></ul> |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
@@ -191,7 +191,7 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.43 includes platform updates. Learn more in [Platform updates for version 10.0.43 of Finance and Operations apps (March 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-43.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.43 includes platform updates. Learn more in [Platform updates for version 10.0.43 of Finance and Operations apps (March 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-43.md).
 
 ### Bug fixes
 
