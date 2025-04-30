@@ -212,64 +212,42 @@
         items:
         - name: Globalization services overview
           href: ../finance/localizations/global/globalization-services-overview.md?context=/dynamics365/context/supply-chain
-        - name: Regulatory configuration service (RCS)
+        - name: Globalization Studio workspace
           items:
-          - name: Regulatory configuration service (RCS) overview
-            href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/supply-chain
-          - name: Regulatory configuration service (RCS) - Globalization features
-            href: ../finance/localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/supply-chain
-          - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-            href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
-          - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-            href: ../finance/localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/supply-chain
-          - name: Download ER configurations to Supply Chain Management
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/supply-chain
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/supply-chain
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Upload configurations to GR
-              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
-            - name: Share configurations in GR  
-              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
+          - name: Regulatory Configuration Service merge to Globalization Studio workspace
+            href: ../finance/localizations/global/workspace/merge-rcs-to-gsw.md?context=/dynamics365/context/supply-chain
+          - name: Globalization Studio workspace features
+            href: ../finance/localizations/global/workspace/gsw-features.md?context=/dynamics365/context/supply-chain
+          - name: Import Electronic reporting (ER) configurations from Dataverse
+            href: ../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md?context=/dynamics365/context/supply-chain
+          - name: Upload ER configurations and Globalization features as a Dataverse solution
+            href: ../finance/localizations/global/workspace/gsw-upload-er-config.md?context=/dynamics365/context/supply-chain
+          - name: Create a Dataverse solution using upload into repository
+            href: ../finance/localizations/global/workspace/gsw-upload-into-repository.md?context=/dynamics365/context/supply-chain
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
-            href: ../finance/localizations/global/e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
           - name: Electronic Invoicing administration and integration components
-            href: ../finance/localizations/global/e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
           - name: Set up Electronic Invoicing
             items: 
             - name: Setting up Electronic Invoicing
-              href: ../finance/localizations/global/e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
-            - name: Sign up and install Electronic Invoicing
-              items: 
-              - name: Electronic Invoicing sign up and installation overview
-                href: ../finance/localizations/global/e-invoicing-sign-up-install.md?context=/dynamics365/context/supply-chain
-              - name: Install the add-in for microservices in Lifecycle Services
-                href: ../finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/supply-chain
-              - name: Set up Regulatory configuration services (RCS)
-                href: ../finance/localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
-                href: ../finance/localizations/global/e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
-              - name: Create an Azure Key Vault in the Azure portal
-                href: ../finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
-              - name: Create an Azure storage account in the Azure portal
-                href: ../finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
-              - name: Configure a SharePoint connection
-                href: ../finance/localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
+                              href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
+                            - name: Create an Azure Key Vault in the Azure portal
+                              href: ../finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/supply-chain
+                            - name: Create an Azure storage account in the Azure portal
+                              href: ../finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+                            - name: Create Azure file share in the Azure portal
+                              href: ../finance/localizations/global/gs-e-invoicing-create-azure-file-share.md?context=/dynamics365/context/supply-chain
+                            - name: Configure a SharePoint connection
+                              href: ../finance/localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
+                            - name: Create Azure resources using Azure PowerShell or ARM templates
+                              href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
             - name: Set up environments
               items:
               - name: Configure service environments and connected applications
