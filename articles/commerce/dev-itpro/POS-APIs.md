@@ -1,5 +1,5 @@
 ---
-title: Point of sale (POS) APIs
+title: Point of sale (POS) APIs (preview)
 description: This article contains a list of available POS APIs and how to access them.
 author: josaw1
 ms.date: 04/30/2025
@@ -11,8 +11,10 @@ ms.search.validFrom: 2018-10-29
 ms.custom: 
   - bap-template
 ---
-# Point of sale (POS) APIs
+# Point of sale (POS) APIs (preview)
+
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you're extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. You can consume APIs that do the work for you by calling the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
