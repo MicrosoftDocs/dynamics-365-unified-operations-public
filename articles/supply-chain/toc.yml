@@ -237,27 +237,17 @@
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
-                              href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
-                            - name: Create an Azure Key Vault in the Azure portal
-                              href: ../finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/supply-chain
-                            - name: Create an Azure storage account in the Azure portal
-                              href: ../finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
-                            - name: Create Azure file share in the Azure portal
-                              href: ../finance/localizations/global/gs-e-invoicing-create-azure-file-share.md?context=/dynamics365/context/supply-chain
-                            - name: Configure a SharePoint connection
-                              href: ../finance/localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
-                            - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
-            - name: Set up environments
-              items:
-              - name: Configure service environments and connected applications
-                href: ../finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md?context=/dynamics365/context/supply-chain
-              - name: Service environments
-                href: ../finance/localizations/global/e-invoicing-service-environments.md?context=/dynamics365/context/supply-chain
-              - name: Customer certificates and secrets
-                href: ../finance/localizations/global/e-invoicing-customer-certificates-secrets.md?context=/dynamics365/context/supply-chain
-              - name: Connected applications
-                href: ../finance/localizations/global/e-invoicing-connected-applications.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
+              - name: Create an Azure Key Vault in the Azure portal
+                href: ../finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/supply-chain
+              - name: Create an Azure storage account in the Azure portal
+                href: ../finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+              - name: Create Azure file share in the Azure portal
+                href: ../finance/localizations/global/gs-e-invoicing-create-azure-file-share.md?context=/dynamics365/context/supply-chain
+              - name: Configure a SharePoint connection
+                href: ../finance/localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
@@ -272,30 +262,36 @@
               href: ../finance/localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
             - name: Complete, publish, and deploy a Globalization feature
               href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
-            - name: Share with other organizations
-              href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
+            - name: Usage management dashboard
+              href: ../finance/localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
-              items: 
+              items:
               - name: Processing incoming electronic documents
                 href: ../finance/localizations/global/e-invoicing-process-incoming-electronic-documents.md?context=/dynamics365/context/supply-chain
               - name: Configure an email channel
                 href: ../finance/localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/supply-chain
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: ../finance/localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/supply-chain
               - name: Configure a SharePoint channel
                 href: ../finance/localizations/global/e-invoicing-configure-sharepoint-channel.md?context=/dynamics365/context/supply-chain
+              - name: Use the electronic invoicing service to import vendor invoices
+                href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: ../finance/localizations/global/e-invoicing-isv-connector.md?context=/dynamics365/context/supply-chain
             - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
               items: 
               - name: Activate and set up integration with Electronic Invoicing
                 href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
               - name: Set up Electronic Invoicing parameters
                 href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
-              - name: Work with Electronic Invoicing
+              - name: Work with Electronic invoicing
                 items:
-                - name: Submit electronic documents to Electronic Invoicing
-                  href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
+                - name: Submit electronic documents
+                  href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
                 - name: Work with the Electronic documents submission log
-                  href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
-                - name: Work with the Electronic documents receiving log
-                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
+                  href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+                - name: Receive electronic documents
+                  href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
