@@ -21,15 +21,16 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 This article explains how to use the currency conversion feature for Türkiye in Microsoft Dynamics 365 Finance.
 
 In Türkiye, an order that is issued in Turkish Lira can be invoiced in a different currency. However, in accordance with local legislation, the invoice must also include the Turkish Lira equivalent, calculated using the Central Bank of the Republic of Türkiye (CBRT) exchange rate.
+
 The tax amount must always be calculated, displayed, and reported in Turkish Lira. To ensure that tax amounts are calculated in Turkish Lira (TRY), **Sales tax currency** field must be set to **TRY** for all sales tax codes.
 
-In Microsoft Dynamics 365 Finance, you can manually adjust the exchange rate for free text invoices and purchase orders. This functionality ensures that the total amount and tax amounts on the invoice and the purchase order are aligned in Turkish Lira.
+In Finance, you can manually adjust the exchange rate for free text invoices and purchase orders. This functionality ensures that the total amount and tax amounts on the invoice and the purchase order are aligned in Turkish Lira.
 
 ## Currency conversion in free text invoice
 
 This section explains how to use currency conversion in free text invoices.
 
-To manually update the exchange rate in a **Free text invoice**, follow the steps below: 
+To manually update the exchange rate in a **Free text invoice**, follow these steps. 
 
 1. Go to **Accounts payable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice that you want to change exchange rate.
@@ -39,9 +40,9 @@ To manually update the exchange rate in a **Free text invoice**, follow the step
     1. Enter the exchange rate manually in the **Exchange rate** field.
     1. Enter the exchange rate manually in the **Reporting exchange rate** field.
 
-1. On the Dialog page, click **OK** to recalculate the free text invoice line amounts.
-1. Click **Save**.
-1. Click **Post**.
+1. On the Dialog page, select **OK** to recalculate the free text invoice line amounts.
+1. Select **Save**.
+1. Select **Post**.
 
 After you enter the exchange rates in the **Exchange rate** and **Reporting exchange rate** fields on the **Payment** FastTab, the **Exchange rate** field in the **Invoice** group under the **General** FastTab, and the **Reporting exchange rate** field in the **Reporting currency** group, will be automatically updated.
 Similarly, when the invoice is posted, the invoice amount and tax amount will be updated based on the exchange rates entered on the invoice.
@@ -53,7 +54,7 @@ When free text invoice is posted to ledger you can see the updated amounts in vo
 
 This section explains how to use currency conversion in purchase orders.
 
-To manually update the exchange rate in a **Purchase order**, follow the steps below; 
+To manually update the exchange rate in a **Purchase order**, follow these steps. 
 
 1. Go to **Accounts payable** \> **Purchase order** \> **All purchase orders**.
 1. Select a purchase order that you want to change exchange rate.
@@ -63,9 +64,9 @@ To manually update the exchange rate in a **Purchase order**, follow the steps b
     1. Enter the exchange rate manually in the **Exchange rate** field in the **Fixed exchange rate** group.
     1. Enter the exchange rate manually in the **Reporting exchange rate** field in the **Fixed exchange rate** group.
 
-1. Click **Save**.
-1. On the Dialog page, select a suitable option and click **OK** to recalculate the purchase order line amounts.
-2. Click **Save**.
+1. Select **Save**.
+1. On the Dialog page, select a suitable option and select **OK** to recalculate the purchase order line amounts.
+1. Select **Save**.
 
 The currency update on the purchase order affects the **Exchange rate** and **Reporting currency fixed exchange rate** fields in the **Currency** group under the **Setup** FastTab on the **Header** TabPage of the vendor invoice page.  
 After posting, the vendor invoice totals and voucher transaction totals are recalculated and displayed based on the updated exchange rates.
