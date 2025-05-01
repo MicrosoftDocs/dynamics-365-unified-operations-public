@@ -116,9 +116,11 @@ In the label layout in the preceding example, only the license plate ID (`$Licen
     - **Label layout data source ID** – Enter a name for the data source (for example, *LPPlusPurchOrder*).
     - **Description** – Enter a short description of the data source (for example, *License plate + Purchase order*).
     - **Label layout type** – Select *License plate label*.
-    - **Join type** - Select the type of join for the data source. Options are:
-       - **Inner**: Converts the joins to inner joins. This is the default behavior.
-       - **Outer**: Converts the joins to outer joins, which helps to avoid the need for multiple label layout data sources. For example, a license plate label with a join to batch requires two label layout data sources: one for items that are batch enabled and one for those that are not.
+    - **Join type** – Select the type of joins to use in the data source. Choose one of the following options:
+       - *Inner* – Use inner joins, which only return rows where there's a match in both tables. This creates more specialized joined tables, which might be what you're looking for. This is the default behavior.
+       - *Outer* – Use outer joins, which return all rows from the left table and the matched rows from the right table. This creates larger joined tables that contain more information.
+
+    Using outer joins can sometimes help reduce the number of label layout data sources that you need to set up. For example, a license plate label with an inner join to batch requires two label layout data sources: one for items that are batch enabled and one for items that aren't. However, an outer join to batch requires only one label layout data source because it returns all items, regardless of whether they're batch enabled. If you instead only want to print labels for non-batch items, then you could use an inner join.
 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Edit query**.
