@@ -296,40 +296,40 @@
                 href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
               - name: Australia and New Zealand
                 href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/supply-chain
-             - name: Belgium
-               href: localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/supply-chain
-             - name: Chile
-               items:
-                 - name: Get started with Electronic invoicing for Chile
-                   href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/supply-chain
-                 - name: Vendor electronic invoice import in Chile
-                   href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
-                 - name: Costa Rica
-                   href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
-                 - name: Denmark
-                   href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
-                 - name: Egypt
-                   href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
-                 - name: France
-                   href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain                        
-                 - name: Indonesia
-                   href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/supply-chain
-                 - name: Italy
-                   href: localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
-                 - name: Malaysia
-                   href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/supply-chain
-                 - name: Panama
-                   href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                           
-                 - name: Poland (preview)
-                   href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/supply-chain
-                 - name: Saudi Arabia
-                   items:
-                     - name: Get started with Electronic invoicing for Saudi Arabia
-                       href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
-                     - name: Onboarding for Electronic invoicing in Saudi Arabia
-                       href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/supply-chain
-                     - name: Simplified electronic invoices in Commerce for Saudi Arabia
-                       href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+              - name: Belgium
+                href: localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Chile
+                items:
+                  - name: Get started with Electronic invoicing for Chile
+                    href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/supply-chain
+                  - name: Vendor electronic invoice import in Chile
+                    href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
+                  - name: Costa Rica
+                    href: localizations//iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
+                  - name: Denmark
+                    href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: Egypt
+                    href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: France
+                    href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain                        
+                  - name: Indonesia
+                    href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: Italy
+                    href: localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: Malaysia
+                    href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/supply-chain
+                  - name: Panama
+                    href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                           
+                  - name: Poland (preview)
+                    href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: Saudi Arabia
+                    items:
+                      - name: Get started with Electronic invoicing for Saudi Arabia
+                        href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+                      - name: Onboarding for Electronic invoicing in Saudi Arabia
+                        href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/supply-chain
+                      - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                        href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
            - name: Electronic Invoicing FAQ
              href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
