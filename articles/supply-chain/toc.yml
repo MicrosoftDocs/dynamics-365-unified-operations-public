@@ -234,6 +234,8 @@
             items: 
             - name: Setting up Electronic Invoicing
               href: ../finance/localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
+            - name: Set up Electronic Invoicing parameters
+              href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -260,7 +262,7 @@
               href: ../finance/localizations/global/gs-e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
               href: ../finance/localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
-            - name: Complete, publish, and deploy a Globalization feature
+            - name: Complete and deploy a Globalization feature
               href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Usage management dashboard
               href: ../finance/localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/supply-chain
@@ -278,46 +280,58 @@
                 href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Electronic Invoicing service ISV last-mile connector
               href: ../finance/localizations/global/e-invoicing-isv-connector.md?context=/dynamics365/context/supply-chain
-            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-              items: 
-              - name: Activate and set up integration with Electronic Invoicing
-                href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
-              - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
-              - name: Work with Electronic invoicing
-                items:
+            - name: Work with Electronic invoicing
+              items:
                 - name: Submit electronic documents
                   href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents submission log
                   href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
                 - name: Receive electronic documents
-                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
+                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain                
           - name: Country/region-specific scenarios
             items:
-            - name: Availability of Electronic Invoicing features
-              href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing service administration
-              href: ../finance/localizations/e-invoicing-get-started-service-administration.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing
-              href: ../finance/localizations/e-invoicing-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Create a new Electronic invoicing feature
-              href: ../finance/localizations/e-invoicing-create-new-e-invoicing-feature.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing for Brazil
-              href: ../finance/localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing for Egypt
-              href: ../finance/localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing for France
-              href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with the Electronic Invoicing for Mexico
-              href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic invoicing for Saudi Arabia
-              href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Setup direct integration of Italian FatturaPA with SDI
-              href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Use the electronic invoicing service to import vendor invoices
-              href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
-            - name: Set up Electronic Invoicing
-              href: ../finance/localizations/e-invoicing-setup.md?context=/dynamics365/context/supply-chain
+              - name: Electronic invoicing coverage
+                href: ../finance/localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/supply-chain
+              - name: Availability of Electronic Invoicing features
+                href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
+              - name: Australia and New Zealand
+                href: ../finance/localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Belgium
+                href: ../finance/localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Chile
+                items:
+                  - name: Get started with Electronic invoicing for Chile
+                    href: ../finance/localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/supply-chain
+                  - name: Vendor electronic invoice import in Chile
+                    href: ../finance/localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
+              - name: Costa Rica
+                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
+              - name: Denmark
+                href: ../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Egypt
+                href: ../finance/localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+              - name: France
+                href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain                        
+              - name: Indonesia
+                href: ../finance/localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Italy
+                href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Malaysia
+                href: ../finance/localizations/malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Panama
+                href: ../finance/localizations/iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                           
+              - name: Poland (preview)
+                href: ../finance/localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Saudi Arabia
+                items:
+                  - name: Get started with Electronic invoicing for Saudi Arabia
+                    href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: Onboarding for Electronic invoicing in Saudi Arabia
+                    href: ../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/supply-chain
+                  - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                    href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+          - name: Electronic Invoicing FAQ
+            href: ../finance/localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
