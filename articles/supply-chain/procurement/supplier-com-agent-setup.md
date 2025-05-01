@@ -80,7 +80,7 @@ If you're using a shared mailbox, then create a queue to allow all users working
     > [!TIP]
     > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed to send outgoing mail, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
 
-1. Make sure that no other mailboxes with the same email address are set up and active. To check this, navigate to **All Mailboxes** and make sure that there's only one mailbox with the same shared mailbox email address. If there are multiple, deactivate all the other ones.
+1. Make sure that no other mailboxes with the same email address are set up and active. To check this, head back to Power Platform Admin Center and navigate to **Settings** > **Email** > **Mailboxes**. Then, select **All Mailboxes** from the dropdown on the top, make sure that there's only one mailbox with the same shared mailbox email address. If there are multiple, deactivate all the other ones.
 
 For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
