@@ -235,7 +235,7 @@
             - name: Setting up Electronic Invoicing
               href: ../finance/localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing parameters
-              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
