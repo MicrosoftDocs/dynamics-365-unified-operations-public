@@ -45,7 +45,7 @@ This section contains a table that lists the features that are included in this 
 | Subscription billing | Performance issue creating billing detail lines for daily usage billing schedule line | This feature helps improve performance by replacing the line-based logic with set-based processing for Subscription billing consumption entry. In addition, this feature updates pricing control logic to help ensure consistency and prevent pricing discrepancies. | Feature management |
 | Subscription billing | Performance improvement for consumption quantity update | Termination adjustments are now calculated by using the exchange rate on the termination date. In addition, currency fluctuation differences are posted to the Profit and loss account, and a clear audit trail is maintained in the deferral schedule. | Feature management |
 | Accounts receivable | Clean up Free text invoice temp tables used in Free text invoice report. | Data update automatically schedules maintenance jobs to clean up temporary data for free text and sales invoice reports. Therefore, users don't have to manually schedule those jobs. | Default |
-|General ledger	|(Production ready preview) Account reconciliation agent|	This feature enables the Account reconciliation agent for exceptions shown on the Account reconciliation workspace and provides recommended actions for exceptions.|	Feature management|
+| General ledger | (Production ready preview) Account Reconciliation Agent | This feature enables the Account Reconciliation Agent for exceptions that are shown in the **Account reconciliation** workspace and provides recommended actions for exceptions. | Feature management |
 
 ## Feature enhancements included in this release
 
