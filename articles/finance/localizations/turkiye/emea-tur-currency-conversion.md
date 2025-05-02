@@ -1,6 +1,6 @@
 ---
 title: Currency conversion (preview)
-description: Learn how to use currency conversion in free text invoice and purchase order in the Republic of Türkiye. 
+description: Learn how to use currency conversion on free text invoices and purchase orders in the Republic of Türkiye. 
 author: v-omerorhan 
 ms.author: v-omerorhan 
 ms.topic: overview 
@@ -18,66 +18,70 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to use the currency conversion feature for Türkiye in Microsoft Dynamics 365 Finance.
+This article explains how to use the currency conversion feature for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 
-In Türkiye, an order that is issued in Turkish Lira can be invoiced in a different currency. However, in accordance with local legislation, the invoice must also include the Turkish Lira equivalent, calculated using the Central Bank of the Republic of Türkiye (CBRT) exchange rate.
+In Türkiye, an order that is issued in Turkish lira can be invoiced in a different currency. However, according to local legislation, the invoice must also include the equivalent amount in Turkish lira. This amount must be calculated by using the exchange rate of the Central Bank of the Republic of Türkiye (CBRT).
 
-The tax amount must always be calculated, displayed, and reported in Turkish Lira. To ensure that tax amounts are calculated in Turkish Lira (TRY), **Sales tax currency** field must be set to **TRY** for all sales tax codes.
+The tax amount must always be calculated, shown, and reported in Turkish lira. To ensure that tax amounts are calculated in Turkish lira, the **Sales tax currency** field must be set to **TRY** for all sales tax codes.
 
-In Finance, you can manually adjust the exchange rate for free text invoices and purchase orders. This functionality ensures that the total amount and tax amounts on the invoice and the purchase order are aligned in Turkish Lira.
+In Finance, you can manually adjust the exchange rate on free text invoices and purchase orders. This functionality ensures that the total amount and tax amounts on the invoice and the purchase order are aligned in Turkish lira.
 
-## Currency conversion in free text invoice
+## Currency conversion on free text invoices
 
-This section explains how to use currency conversion in free text invoices.
+This section explains how to use currency conversion on free text invoices.
 
-To manually update the exchange rate in a **Free text invoice**, follow these steps. 
+To manually update the exchange rate on a free text invoice, follow these steps.
 
 1. Go to **Accounts payable** \> **Invoices** \> **All free text invoices**.
-1. Select the free text invoice that you want to change exchange rate.
-1. Change the currency in the **Currency** field if it is needed.
-1. On the **Header** TabPage, in the **Payment** FastTab, in the **Fixed exchange rate** group;
+1. Select the free text invoice that you want to change the exchange rate for.
+1. In the **Currency** field, change the currency as required.
+1. On the **Header** tab, on the **Payment** FastTab, in the **Fixed exchange rate** section, set the following fields:
 
-    1. Enter the exchange rate manually in the **Exchange rate** field.
-    1. Enter the exchange rate manually in the **Reporting exchange rate** field.
+    - **Exchange rate** – Manually enter the exchange rate.
+    - **Reporting exchange rate** – Manually enter the exchange rate.
 
-1. On the Dialog page, select **OK** to recalculate the free text invoice line amounts.
+1. In the dialog that appears, select **OK** to recalculate the line amounts on the free text invoice.
 1. Select **Save**.
 1. Select **Post**.
 
-After you enter the exchange rates in the **Exchange rate** and **Reporting exchange rate** fields on the **Payment** FastTab, the **Exchange rate** field in the **Invoice** group under the **General** FastTab, and the **Reporting exchange rate** field in the **Reporting currency** group, will be automatically updated.
-Similarly, when the invoice is posted, the invoice amount and tax amount will be updated based on the exchange rates entered on the invoice.
+After you enter the exchange rates in the **Exchange rate** and **Reporting exchange rate** fields on the **Payment** FastTab, the following fields on the **General** FastTab are automatically updated:
 
-If the currency of the free text invoice is the same as the reporting currency, or if the free text invoice has already been posted, changes to the **Exchange rate** and **Reporting exchange rate** fields in the **Payment** FastTab will not be allowed.
-When free text invoice is posted to ledger you can see the updated amounts in voucher transaction. 
+- **Exchange rate** (in the **Invoice** section)
+- **Reporting exchange rate** (in the **Reporting currency** section)
 
-## Currency conversion in purchase order
+When the invoice is posted, the invoice amount and tax amount are updated based on the exchange rates that you entered on the invoice.
 
-This section explains how to use currency conversion in purchase orders.
+If the currency of the free text invoice is the same as the reporting currency, or if the free text invoice was already posted, you can't change the value of the **Exchange rate** and **Reporting exchange rate** fields on the **Payment** FastTab.
 
-To manually update the exchange rate in a **Purchase order**, follow these steps. 
+When the free text invoice is posted to the ledger, you can view the updated amounts in the voucher transactions.
 
-1. Go to **Accounts payable** \> **Purchase order** \> **All purchase orders**.
-1. Select a purchase order that you want to change exchange rate.
-1. On the **Header** TabPage, in the **Price and discount** FastTab;
+## Currency conversion on purchase orders
 
-    1. Change the currency in the **Currency** field in the **Currency** group if it is needed.
-    1. Enter the exchange rate manually in the **Exchange rate** field in the **Fixed exchange rate** group.
-    1. Enter the exchange rate manually in the **Reporting exchange rate** field in the **Fixed exchange rate** group.
+This section explains how to use currency conversion on purchase orders.
+
+To manually update the exchange rate on a purchase order, follow these steps.
+
+1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Select the purchase order that you want to change the exchange rate for.
+1. On the **Header** tab, on the **Price and discount** FastTab, in the **Currency** section, in the **Currency** field, change the currency as required.
+1. In the **Fixed exchange rate** section, set the following fields:
+
+    - **Exchange rate** – Manually enter the exchange rate.
+    - **Reporting exchange rate** – Manually enter the exchange rate.
 
 1. Select **Save**.
-1. On the Dialog page, select a suitable option and select **OK** to recalculate the purchase order line amounts.
+1. In the dialog that appears, select a suitable option, and then select **OK** to recalculate the line amounts on the purchase order.
 1. Select **Save**.
 
-The currency update on the purchase order affects the **Exchange rate** and **Reporting currency fixed exchange rate** fields in the **Currency** group under the **Setup** FastTab on the **Header** TabPage of the vendor invoice page.  
-After posting, the vendor invoice totals and voucher transaction totals are recalculated and displayed based on the updated exchange rates.
+The currency update on the purchase order affects the **Exchange rate** and **Reporting currency fixed exchange rate** fields in the **Currency** section on the **Setup** FastTab on the **Header** tab of the vendor invoice page.  
 
-If the purchase order with an updated exchange rate includes any charges, the exchange rate change will also affect the charge amounts in both the vendor invoice and the accounting voucher transactions.
+After posting, the vendor invoice totals and voucher transaction totals are recalculated based on the updated exchange rates.
 
+If the purchase order that has an updated exchange rate includes any charges, the exchange rate change also affects the charge amounts on the vendor invoice and in the accounting voucher transactions.
 
 > [!NOTE]
-> Negative values are not allowed in the **Exchange rate** and **Reporting exchange rate** fields in free text invoice and purchase order, and a warning message is displayed as below.
+> Negative values aren't allowed in the **Exchange rate** and **Reporting exchange rate** fields for free text invoices and purchase orders. If you enter negative values in these fields, you receive the following warning message:
 >
-> _Field 'Exchange rate'(= -x) can only contain positive numbers._
-
+> > Field 'Exchange rate'(= -x) can only contain positive numbers.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
