@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: conceptual
-ms.date: 01/07/2025
+ms.date: 01/27/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -23,6 +23,50 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Supply Chain Management 10.0.44 release
+
+### Rename item number (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The item number field is a primary key that is used across multiple systems. The *(Preview) Rename item number* feature allowed users to edit the item number field, but we found that the feature could cause data inconsistencies in multi-system and apps-integration scenarios, leading to data integrity and data corruption issues. The feature was previously in preview and was never made generally available for use in production environments. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Supply Chain Management – Product information management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The *(Preview) Rename item number* feature was removed from the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace in Dynamics 365 Supply Chain Management version 10.0.44 and is no longer available. The capability is completely removed for all customers. If you need to rename an item number, we recommend that you use alternate methods, such as deleting and creating a new item, renaming attributes, or renaming search names, product names, and other item-related fields. |
+
+## Features removed or deprecated in the Supply Chain Management 10.0.43 release
+
+### The "Work creation number" number sequence has been removed
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The *Work creation number* number sequence could sometimes create problems when the same prefixes were used for other number sequences. |
+| **Replaced by another feature?** | Yes, the *Work creation number* number sequence and been replaced by the *Work creation ID* number sequence. The *Work creation ID* number sequence is designed to avoid conflicts with other number sequences. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Previously, there were two number sequences that were used to generate values for the **Work creation number** field for work records (*Work creation ID* and *Work creation number*). The newer *Work creation ID* number sequence has been available as a replacement for *Work creation number* for some time. For all currently available versions of Supply Chain Management (not just version 10.0.43 and later), you should always use the *Work creation ID* number sequence to generate work creation identification numbers. Although the *Work creation number* sequence is still present in the demo data, it's no longer used by the system and production data doesn't include the *Work creation number* number sequence. You can set up the *Work creation ID* number sequence on the **Warehouse management parameters** page. |
+
+### "Adjustment out" mobile device menu items must now use process guide
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Adjustment out* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Adjustment out* work creation process. The ability to turn off this option is being removed from the product. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Adjustment out* work creation process will be made mandatory in Supply Chain Management version 10.0.45. Approximately one year after the release of version 10.0.45, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile device menu items for adjustment in and adjustment out](../warehousing/reason-codes-for-counting-journals.md#setup-adjustment-in-out). |
+
+### "Spot cycle counting" mobile device menu items must now use process guide
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework.md) offers enhanced extensibility support and allows for easier changes in the feature behavior. The framework will now be required for all mobile device menu items that use the *Spot cycle counting* work creation process. |
+| **Replaced by another feature?**  | No. The process guide framework will be required for all mobile device menu items that use the *Spot cycle counting* work creation process. The ability to turn off this option is being removed from the product. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Spot cycle counting* work creation process will be enabled by default in Supply Chain Management version 10.0.45, and it will be made mandatory in version 10.0.47. Approximately one year after the release of version 10.0.47, the non-process guide implementation will no longer be supported and may eventually be removed from the product. Learn more in [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md). |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.42 release
 

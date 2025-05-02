@@ -4,7 +4,7 @@ description: Get answers to frequently asked questions about the AI technology t
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 08/01/2024
+ms.date: 01/29/2025
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

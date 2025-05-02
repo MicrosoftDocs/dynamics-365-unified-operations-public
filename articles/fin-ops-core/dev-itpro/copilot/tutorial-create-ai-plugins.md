@@ -24,7 +24,8 @@ You're creating an AI plugin that calculates the balance of a customer account i
 Here's an overview of the steps in this tutorial:
 
 1. In your unified developer environment, create a class in X++ to define the plugin operation. Add security privileges for the new class.
-1. In your finance and operations environment, run the process to generate the AI plugin and related plugin operations in Dataverse.
+1. In Dataverse, create a custom API to invoke the X++ class.
+1. In Dataverse, create the AI plugin and related plugin operations.
 1. Add the AI plugin as an action in your custom copilot.
 
 ## Prerequisites
@@ -136,43 +137,89 @@ In your unified developer environment, you must create a class in X++ that is ca
     - **Name:** CustomAPICalculateCustomerBalance
     - **Object Type:** MenuItemAction
     - **Object Name:** CustomAPICalculateCustomerBalance
+    - **Access Level:** Create
 
 1. Create a **Security Role** item that is named **SalesTeamCopilotRole**.
 1. Add a privilege to the new role. Set the properties for it so that they reference the **CopilotCalculateCustomerBalancePrivilege** privilege that you created.
 1. Save, build, and deploy the code to your finance and operations environment.
 
-## Step 2: Generate the AI plugin in Dataverse
-
-1. In finance and operations apps, open the **Synchronize Dataverse Custom APIs** page (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). If the menu navigation isn't available in your environment, you can go directly to the menu item by adding the `&mi=CustomApiTable` parameter to the environment URL. Here's an example:
-
-    `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=CustomApiTable`
-
-1. On the list page, ensure that the **CustomAPICalculateCustomerBalance** class is listed.
-1. Select the **Synchronize** action.
-
-You can now confirm that the custom API and AI plugins were created in your Dataverse environment.
+## Step 2: Create the Dataverse custom API
 
 1. Open [Power Apps](https://make.powerapps.com).
-1. Open the **Dynamics 365 ERP Virtual Entities** solution, and confirm the following details:
+1. Create a new solution where the **Display name** field is set to **Demo Sales Copilot**. In the **Publisher** field, select the publisher for the copilot. Make a note of the **Prefix** value for the selected publisher. For example, if you select **CDS Default Publisher**, the prefix is **cr689**.
 
-    - The **mserp_xppapi_SalesTeamCopilotRole** record was created in the **AIPlugin** list.
-    - The **Calculate customer balance** record was created in the **AIPluginOperation** list.
-    - The **Calculate customer balance** record was created in the **Custom API list**, together with related **Custom API Request Parameter** and **Custom API Response Property** records.
+    > [!IMPORTANT]
+    > In later steps in this article, where you create the objects in your solution, some of the values that you're instructed to enter use the prefix **cr689** as an example. You must replace this example prefix with the prefix of the publisher that you selected for your solution.
 
-## Step 3: Add the plugin as an action in your copilot
+1. On the toolbar in the solution, select **New** \> **More** \> **Other** \> **Custom API**.
+1. Enter the following details, and then save the new custom API:
+
+    - **Unique Name:** cr689_CustomAPICalculateCustomerBalance
+    - **Name:** Calculate customer balance
+    - **Display Name:** Calculate customer balance
+    - **Description:** Calculates the current balance for a customer in the local currency defined for the customer
+    - **Binding Type:** Global
+    - **Plugin Type:** Microsoft.Dynamics.Fno.Copilot.Plugins.InvokeFnoCustomAPI
+
+1. On the toolbar in the solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
+1. Enter the following details, and then save the new custom API request parameter:
+
+    - **Custom API:** Calculate customer balance
+    - **Unique Name:** cr689_CustomAPICalculateCustomerBalance_accountNumber
+    - **Name:** accountNumber
+    - **Display Name:** accountNumber
+    - **Description:** The customer account number
+    - **Type:** String
+    - **Is Optional:** No
+
+1. On the toolbar in the solution, select **New** \> **More** \> **Other** \> **Custom API Response Property**.
+1. Enter the following details, and then save the new custom API response property:
+
+    - **Custom API:** Calculate customer balance
+    - **Unique Name:** cr689_CustomAPICalculateCustomerBalance_balance
+    - **Name:** balance
+    - **Display Name:** balance
+    - **Description:** The current customer account balance
+    - **Type:** Decimal
+
+1. Repeat steps 7 and 8 to create the custom API response property for each of the two remaining output parameters, `currencyCode` and `customerFound`. Use the names, descriptions, and data types from the X++ class earlier in this article.
+
+## Step 3: Create the AI plugin in Dataverse
+
+1. On the toolbar in your solution, select **New** \> **More** \> **Other** \> **AI Plugin**.
+1. Enter the following details, and then save the new AI plugin record:
+
+    - **Name:** cr689_SalesTeamCopilotRole
+    - **PluginType:** Dataverse
+    - **HumanName:** Sales Team Copilot
+    - **HumanDescription:** This plugin provides actions for the sales team
+    - **ModelName:** Sales Team Copilot
+    - **ModelDescription:** This plugin provides actions for the sales team
+
+1. On the toolbar in your solution, select **New** \> **More** \> **Other** \> **AI Plugin Operation**.
+1. Enter the following details, and then save the new AI plugin operation record:
+
+    - **Name:** cr689_CustomAPICalculateCustomerBalance
+    - **AIPlugin:** cr689_SalesTeamCopilotRole
+    - **OperationId:** cr689_CustomAPICalculateCustomerBalance
+    - **AI Plugin Operation Export Key:** aiplugin.name=cr689_SalesTeamCopilotRole,operationid=cr689_CustomAPICalculateCustomerBalance
+    - **Custom API:** Calculate customer balance
+    - **Description:** Calculates the current balance for a customer in the local currency defined for the customer.
+
+## Step 4: Add the plugin as an action in your copilot
 
 1. Open [Copilot Studio](https://web.powerva.microsoft.com), and select your environment.
 1. Select an existing custom copilot, or create a new custom copilot.
 1. In the copilot, on the **Actions** menu, select **Add an action**.
 1. On the **Choose an action** page, search for and select the **Calculate customer balance** plugin operation.
 1. On the **Review and Finish** page, in the **Review inputs and outputs** section, select **Edit**.
-1. Under **Additional inputs**, select **Add**, and then select the **mserp_CustomAPICalculateCustomerBalance_accountNumber** input.
+1. Under **Additional inputs**, select **Add**, and then select the **cr689_CustomAPICalculateCustomerBalance_accountNumber** input.
 1. Select **Save** and then **Finish**.
 
 > [!NOTE]
 > This tutorial assumes that you enabled generative mode in your copilot for plugin orchestration. If you use the default classic mode in your copilot, you must complete the extra step of creating a topic in the copilot to invoke the action. For more information, see [Configure the copilot to invoke the action](copilot-ai-plugins.md#configure-the-copilot-to-invoke-the-action).
 
-## Step 4: Test the new plugin action
+## Step 5: Test the new plugin action
 
 To test the plugin, you can use the **Test your copilot** pane in Copilot Studio. Alternatively, you can publish the copilot to a channel, such as Teams. In the chat pane, enter prompts to ask about customer balances from your finance and operations environment. For example, ask, "What is the current balance for customer account US-001?"
 

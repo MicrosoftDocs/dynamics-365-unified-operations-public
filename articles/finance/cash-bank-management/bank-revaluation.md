@@ -63,6 +63,9 @@ Set the **Preview before posting** option to **Yes** if you want to review the r
 
 Select **OK** to process the foreign currency revaluation. A record is created to track the history of each run. A separate record is created for each legal entity and posting layer.
 
+>[!NOTE]
+> If the **Enable process automation for bank foreign currency revaluation** feature is enabled, process automations for bank foreign currency revaluations are available. For more information, see [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md).
+
 ## Calculate unrealized gain/loss
 
 In Cash and bank management, the bank currency is considered to be the base currency and it is not revalued. The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the **Exchange rate date**. The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the **Exchange rate date**.

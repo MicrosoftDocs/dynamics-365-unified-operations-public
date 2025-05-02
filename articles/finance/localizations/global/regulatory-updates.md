@@ -33,6 +33,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Poland | November 2024 | 10.0.40HF, 10.0.41HF, 10.0.42HF, 10.0.43 | [SAF Accounting Books Income Tax - JPK_KR_PD](../poland/emea-pol-standard-audit-file-saf-pd.md) |
 | Japan | September 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | Japan consumption Tax return report layout change - 2024 for periods after October 1, 5th year of Reiwa. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
 | Norway | August 2024 | 10.0.39HF, 10.0.40HF, 10.0.41HF, 10.0.42 | [Standard Audit File for Tax (SAF-T) for Norway](../norway/emea-nor-satndard-audit-file-for-tax.md) version 1.30 required from January 1, 2025. |
 | France | March 2024 | 10.0.40 | [VAT declaration](../france/emea-fra-VAT-declaration-preview-France.md) - 2024 |

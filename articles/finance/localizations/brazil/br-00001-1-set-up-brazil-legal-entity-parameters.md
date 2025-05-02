@@ -1,74 +1,74 @@
 ---
 title: Set up legal entity parameters (Brazil)
-description: Learn how to set up Brazilian legal entity parameters, including a step-by-step process that uses the BRMF demo company.
+description: This article describes how to set up Brazilian legal entity parameters in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.custom: 
-  - bap-template
-ms.date: 06/26/2024
+ms.date: 03/13/2025
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Set up legal entity parameters (Brazil)
 
 [!include [banner](../../includes/banner.md)]
 
-Set up Brazilian legal entity parameters. This task uses the BRMF demo company.
+This article describes how to set up Brazilian legal entity parameters in Microsoft Dynamics 365 Finance.
 
-1. Go to Organization administration > Setup > Brazilian parameters.
-2. Select Yes in the Enable CFPS code field.
-3. Select the financial dimension that will be used for the cost center during the absorption cost calculation.
-4. Select the financial dimension that will be used for fiscal establishment during the absorption cost calculation.
-5. Click the Fiscal document tab.
-6. In the Text ID field, enter or select a value.
-7. In the Text ID field, enter or select a value.
-8. In the Product type field, enter or select a value.
-9. In the Volume type field, type a value.
-10. In the Volume quantity field, enter a number.
-11. Select Yes if all fiscal documents must be issued with a fixed date.
-12. Select No in the Enable fix issue date field.
-13. In the Item field, enter or select a value.
-14. In the Service field, enter or select a value.
-15. In the Document type field, enter or select a value.
-16. In the Document type field, type a value.
-17. Close the page.
-18. Select the standard document type that will be used for text on fiscal documents.
-19. In the Item field, enter or select a value.
-20. In the Sales tax code for PIS field, enter or select a value.
-21. In the Sales tax code for COFINS field, enter or select a value.
-22. In the Fiscal document source text field, enter or select a value.
-23. In the Text ID field, enter or select a value.
-24. In the Sales tax code for COFINS field, enter or select a value.
-25. In the Sales tax code for PIS field, enter or select a value.
-26. In the Unit field, type a value.
-27. In the Basic tax value for PIS in cumulative regimen field, enter a number.
-28. In the Basic tax value for PIS in non cumulative regimen field, enter a number.
-29. In the Basic tax value for COFINS in cumulative regimen field, enter a number.
-30. In the Basic tax value for COFINS in non cumulative regimen field, enter a number.
-31. In the Source field, type a value.
-32. In the Text ID field, enter or select a value.
-33. In the Text ID field, enter or select a value.
-34. Click the Taxation code tab.
-35. In the list, mark the selected row.
-36. Select the Mandatory check box.
-37. Open the advanced row selection dialog
-38. Click Select by index.
-39. Select the Mandatory check box.
-40. In the list, mark the selected row.
-41. Select the Mandatory check box.
-42. Open the advanced row selection dialog
-43. Apply the following filters: Enter a filter value of "COFINS" on the "Tax type" field using the "is exactly" filter operator
-44. Select the Mandatory check box.
-45. In the list, mark the selected row.
-46. Open the advanced row selection dialog
-47. Apply the following filters: Enter a filter value of "IPI" on the "Tax type" field using the "is exactly" filter operator
-48. Select the Mandatory check box.
-49. Click Save.
-50. Close the page.
+The following procedure walks you through how to set up Brazilian legal entity parameters. This procedure uses the BRMF demo company.
+
+To set up Brazilian legal entity parameters, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration \> Setup \> Brazilian parameters**.
+1. In the **Enable CFPS code** field, select **Yes**.
+1. Select the financial dimension to use for the cost center during the absorption cost calculation.
+1. Select the financial dimension to use for fiscal establishment during the absorption cost calculation.
+1. Select the **Fiscal document** tab.
+1. In the **Text ID** field, enter or select a value.
+1. In the **Product type** field, enter or select a value.
+1. In the **Volume type** field, enter a value.
+1. In the **Volume quantity** field, enter a number.
+1. If all fiscal documents must be issued with a fixed date, select **Yes**.
+1. In the **Enable fix issue date** field, select **No**.
+1. In the **Item** field, enter or select a value.
+1. In the **Service** field, enter or select a value.
+1. In the **Document type** field, enter or select a value.
+1. Close the page.
+1. Select the standard document type to use for text on fiscal documents.
+1. In the **Item** field, enter or select a value.
+1. In the **Sales tax code for PIS** field, enter or select a value.
+1. In the **Sales tax code for COFINS** field, enter or select a value.
+1. In the **Fiscal document source text** field, enter or select a value.
+1. In the **Text ID** field, enter or select a value.
+1. In the **Sales tax code for COFINS** field, enter or select a value.
+1. In the **Sales tax code for PIS** field, enter or select a value.
+1. In the **Unit** field, enter a value.
+1. In the **Basic tax value for PIS in cumulative regimen** field, enter a number.
+1. In the **Basic tax value for PIS in noncumulative regimen** field, enter a number.
+1. In the **Basic tax value for COFINS in cumulative regimen** field, enter a number.
+1. In the **Basic tax value for COFINS in noncumulative regimen** field, enter a number.
+1. In the **Source** field, enter a value.
+1. In the **Text ID** field, enter or select a value.
+1. Select the **Taxation code** tab.
+1. In the list, mark the selected row.
+1. Select the **Mandatory** checkbox.
+1. Open the **Advanced row selection** dialog.
+1. Select **Select by index**.
+1. Select the **Mandatory** checkbox.
+1. In the list, mark the selected row.
+1. Select the Mandatory checkbox.
+1. Open the **Advanced row selection** dialog.
+1. In the **Tax type** field, enter a filter value of "COFINS" using the "is exactly" filter operator.
+1. Select the **Mandatory** checkbox.
+1. In the list, mark the selected row.
+1. Open the **Advanced row selection** dialog.
+1. In the **Tax type** field, enter a filter value of "IPI" using the "is exactly" filter operator.
+1. Select the **Mandatory** checkbox.
+1. Select **Save**.
+1. Close the page.
 
 
 

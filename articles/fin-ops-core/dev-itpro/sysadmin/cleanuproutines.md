@@ -4,7 +4,7 @@ description: Learn about cleanup routines in Microsoft Dynamics 365 Finance and 
 author: dvliegen
 ms.author: dvliegen
 ms.topic: article
-ms.date: 07/10/2024
+ms.date: 03/14/2025
 ms.custom: 
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -85,6 +85,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Warehouse management \> Periodic tasks \> Clean up \> Wave labels cleanup | This cleanup routine is used to clean up the wave label records from the WHSWaveLabel table. |
 | Warehouse management \> Periodic tasks \> Clean up \> Work line history log cleanup | This cleanup routine is used to delete the temporary work history records from the WHSTmpWorkLineHistory table. In the dialog box, you specify the number of days to keep the history. |
 | Warehouse management \> Periodic tasks \> Clean up \> Clean up License plate registration history | This cleanup routine is used to delete the license plate receiving history records from the WHSLicensePlateReceivingHistory. In the dialog box, you specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Clean up work exceptions log | This cleanup routine is used to delete work exceptions log records from the WHSWorkExceptionLog table. In the dialog box, you specify the number of days to keep in the history, the status of the entries to be deleted (that is, *Open* or *Closed*) and the maximum number of records that this operation can delete. Learn more in [View and manage the work exceptions log](../../../supply-chain/warehousing/work-exceptions-log.md). |
 
 ## Inventory management
 
@@ -129,5 +130,11 @@ The following table describes the cleanup jobs that are available for the Invent
 | Path | Description |
 |------|-------------|
 | Master planning \> Master planning \> Maintain plans \> Plan version cleanup | Usually, this cleanup is done automatically. However, automatic cleanup sometimes malfunctions, and orphan data remains in the system. This orphan data slows down queries and causes the database size to grow. We recommend that you do a preventive run one time per month, when master resource planning (MRP) isn't running. |
+
+## Project management and accounting
+
+| Path | Description |
+|------|-------------|
+| Project management and accounting \> Periodic \> Delete project journals | <p>This cleanup routine deletes project hour fee, and beginning balance journals that have been posted. When you delete a posted ledger journal, all information that is related to the original transaction is removed.</p><p>**Note:** You should delete this information only if you're sure that you won't have to reverse the ledger journal transactions.</p> |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

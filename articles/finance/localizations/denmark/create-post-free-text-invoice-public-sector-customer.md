@@ -1,59 +1,58 @@
 --- 
 title: Create and post a free text invoice for a public sector customer
-description: Learn about creating and posting a free text invoice for a customer using OIOUBL electronic invoicing, including an overview on generating electronic invoices.
+description: This article describes how to create and post free text invoices for customers using OIOUBL electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.date: 03/11/2025
 ms.reviewer: johnmichalak   
-audience: Application User 
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustFreeInvoice, CustTableLookup, ContactPersonLookup, CustPostInvoiceJob 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # Create and post a free text invoice for a public sector customer
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating and posting a free text invoice for a customer using OIOUBL electronic invoicing. 
+This article describes how to create and post free text invoices for customers using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 
+The following procedures walk you through how to create and post free text invoices for customers using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing. They were created using the demo data company USMF with a legal entity primary address in Denmark.
 
+## Prerequisites
 
-It was created using the demo data company USMF with a legal entity primary address in Denmark.
+Before you can execute these procedures, you must complete the following procedures.
+- Import OIOUBL electronic invoicing electronic reporting configurations
+- Set up OIOUBL electronic invoicing
+- Set up a customer account for OIOUBL electronic invoicing
 
+To create and post a free text invoice for a public sector customer, follow these steps.
 
-
-This is the fourth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country/region specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
-
-
-
-Before you can complete this procedure, you must complete the following procedures: 'Import OIOUBL electronic invoicing electronic reporting configurations', 'Set up OIOUBL electronic invoicing' and 'Set up a customer account for OIOUBL electronic invoicing'.
-
-1. Go to Accounts receivable > Invoices > All free text invoices.
-2. Click New.
-3. In the Customer account field, enter or select a value.
-    * A customer selected for the free text invoice must be enabled for electronic invoicing.  
-4. Select a free text invoice header view.
-5. Expand the Customer section.
-6. In the Customer requisition field, type a value.
-7. In the Customer reference field, type a value.
-8. In the Contact field, enter or select a value.
-9. Select a free text invoice lines view.
-10. In the list, mark the selected row.
-11. In the Description field, type a value.
-12. In the Main account field, specify the desired values.
-13. In the Unit price field, enter a number.
-14. Click Post.
-15. Click OK.
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value. A customer selected for the free text invoice must be enabled for electronic invoicing.  
+1. Select a free text invoice header view.
+1. Expand the **Customer** section.
+1. In the **Customer requisition** field, enter a value.
+1. In the **Customer reference** field, enter a value.
+1. In the **Contact** field, enter or select a value.
+1. Select a free text invoice lines view.
+1. In the list, mark the selected row.
+1. In the **Description** field, enter a value.
+1. In the **Main account** field, enter a value.
+1. In the **Unit price** field, enter a number.
+1. Select **Post**.
+1. Select **OK**.
 
 ## Generate an OIOUBL electronic invoice
-1. Click Send.
-2. Click Original.
-    * You can verify the status of the job and download the actual file on the Electronic reporting jobs page.  
 
+To generate an OIOUBL electronic invoice, follow these steps.
+
+1. Select **Send**.
+1. Select **Original**.  
+1. To verify the status of the job and download the file, go to the **Electronic reporting jobs** page.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,70 +1,65 @@
 ---
 title: Depreciate and accrue the interest expense for asset retirement obligations
-description: For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset. Learn how to depreciate fixed assets.
+description: Learn how to depreciate and accrue the interest expense for asset retirement obligations for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 04/18/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Depreciate and accrue the interest expense for asset retirement obligations
 
 [!include [banner](../../includes/banner.md)]
 
-For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset. In addition, interest expenses need to be accrued to recognize the full amount of the ARO.
+This article explains how to depreciate and accrue the interest expense for asset retirement obligations (ARO) for Japan in Microsoft Dynamics 365 Finance.
 
+For Japan, the depreciation of ARO is processed along with the fixed asset. Interest expenses need to be accrued to recognize the full amount of the ARO.
 
+The following procedures were completed using the JPMF demo company data.
 
-Use this task to depreciate the ARO and accrue the interest expense. 
-
-
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
-
-
-This task was completed using the JPMF demo company data.
-
+Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
 ## Depreciate a fixed asset with asset retirement obligation
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
-2. Click New.
-3. In the Name field, select a value.
-4. Click Save.
-5. Click Lines.
-6. Click Proposals.
-7. Click Depreciation proposal.
-8. In the To date field, enter a date.
-9. Click Filter.
-10. In the Criteria field, type a value.
-11. Click OK.
-12. Click OK.
-    * The depreciation of asset retirement obligation is indicated by Document type field.  
-13. Click Post.
+
+To depreciate a fixed asset with asset retirement obligation, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, select a value.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Depreciation proposal**.
+1. In the **To date** field, enter a date.
+1. Select **Filter**.
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**. The depreciation of asset retirement obligation is indicated by **Document type** field value.  
+1. Select **Post**.
 
 ## Accrue the interest expense
-1. Close the page.
-2. Go to Fixed assets > Journal entries > Fixed assets journal.
-3. Click New.
-4. In the Name field, select a value.
-5. Click Save.
-6. Click Lines.
-7. Click Proposals.
-8. Click Asset retirement obligation - accretion expense.
-9. In the To date field, enter a date.
-10. Click Filter.
-11. In the Criteria field, type a value.
-12. Click OK.
-13. Click OK.
-    * Confirm that the records for interest expenses are proposed.  
-    * The interest expenses are indicated by Transaction type  
-14. Click Post.
+
+To accrue the interest expense, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Save**.
+1. Select **Lines**.
+1. Select **Proposals**.
+1. Select **Asset retirement obligation - accretion expense**.
+1. In the **To date** field, enter a date.
+1. Select **Filter**.
+1. In the **Criteria** field, enter a value.
+1. Select **OK**.
+1. Select **OK**. Confirm that the records for interest expenses are proposed. The interest expenses are indicated by the transaction type.  
+1. Select **Post**.
 
 
 

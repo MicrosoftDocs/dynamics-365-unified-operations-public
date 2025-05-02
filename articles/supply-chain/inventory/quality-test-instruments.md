@@ -14,13 +14,27 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create test instruments that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to create test instruments or instrument types that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
 
-You use the **Test instruments** page to define and view details about the devices that are used to perform tests on quality orders. Test instruments are optional. However, they can help quality workers know which device or tool they should use to perform a specific test.
+You use the **Test instruments** page to define and view details about the instruments or instrument types that are used to perform tests on quality orders. Test instruments are optional. However, they can help quality workers know which device or tool they should use to perform a specific test.
 
 ## Test instrument example
 
-You're performing various tests on electrical components. Some tests are for the voltage output of the components, one test is for their temperature, and one test is for their weight. Different tools, devices, or equipment is used to perform each test. For example, a voltage meter is used to measure voltage, a thermometer is used to measure temperature, and a scale is used to measure weight. You can configure each of these devices as a test instrument and indicate the unit of measure that the test results should be recorded in. For example, results from the voltage meter are recorded in volts, results from the thermometer are recorded in degrees Fahrenheit or degrees Celsius, and results from the scale are recorded in pounds or kilograms.
+You're performing various tests on electrical components. Some tests are for the voltage output of the components, one test is for their temperature, and one test is for their weight. Different tools, devices, or equipment are used to perform each test. For example, a voltage meter is used to measure voltage, a thermometer is used to measure temperature, and a scale is used to measure weight. You can configure each of these device types as a test instrument and indicate the unit of measure that the test results should be recorded in. For example, results from a voltage meter are recorded in volts, results from a thermometer are recorded in degrees Fahrenheit or degrees Celsius, and results from a scale are recorded in pounds or kilograms.
+
+## Prerequisites for calibration-related settings (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+Most of the features described in this article are available as a standard part of all current versions of Supply Chain Management. However, the calibration-related settings (**Tag number required**, **Used for calibration**, and **Calibration label layout** fields) add the following requirements
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+Learn more in [Test instrument calibration (preview)](quality-instrument-calibration.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Create a test instrument
 
@@ -30,6 +44,9 @@ You're performing various tests on electrical components. Some tests are for the
     - **Test instrument** – Enter a unique ID or name for the test instrument.
     - **Description** – Enter a detailed description of the test instrument.
     - **Unit** – Select the unit that the instrument measures results in. The **Precision** field is automatically set, based on the unit that you select.
+    - **Tag number required** – Select this check box for test instrument types where a test instrument tag number must also be specified (in addition to the instrument type) on quantity orders to identify the specific physical instrument to be used in the test. This triggers additional functionality around tracking and calibrating test instruments. To view, create, and edit the available test instrument tags, select **Test instrument tags** on the Action Pane.
+    - **Used for calibration** – Select this check box for test instrument types that are used to calibrate other instruments and equipment.
+    - **Calibration label layout** – For test instrument types that have **Tag number required** set to *Yes*, select the layout to use for printing calibration labels.
 
 1. Close the page.
 
@@ -37,5 +54,6 @@ You're performing various tests on electrical components. Some tests are for the
 
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)
+- [Test instrument calibration (preview)](quality-instrument-calibration.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

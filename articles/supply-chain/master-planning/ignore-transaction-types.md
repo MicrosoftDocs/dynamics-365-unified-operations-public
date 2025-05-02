@@ -24,7 +24,7 @@ Before you can use the features that are described in this article, your system 
 - Depending on the functionality that you require, one or both of the following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
     - *Ignore specific transaction types using Planning Optimization* – This feature lets you select which transaction types should be excluded from master planning calculations.
-    - *Exclude specific sales orders or sales order lines in Planning Optimization* – This feature lets you choose not to create supply for a specific sales order or sales order line when you use Planning Optimization. In this way, you can keep an order unplanned. This capability can be useful for orders that require a review or approval process.
+    - *Exclude specific sales orders or sales order lines in Planning Optimization* – This feature lets you choose not to create supply for a specific sales order or sales order line when you use Planning Optimization. In this way, you can keep an order unplanned. This capability can be useful for orders that require a review or approval process. As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ## Set a master plan to ignore specific transaction types
 
