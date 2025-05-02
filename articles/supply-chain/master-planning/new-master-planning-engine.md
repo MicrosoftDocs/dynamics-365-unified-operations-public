@@ -14,13 +14,13 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-The built-in master planning engine is obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This article provides information about the impact on new and existing deployments. It includes information about required actions.
+The built-in master planning engine is now obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This article provides information about the impact on new and existing deployments. It includes information about required actions.
 
 Planning Optimization enables master planning calculations to occur outside Supply Chain Management and its Azure SQL database. The benefits that are associated with Planning Optimization include improved performance and minimized impact on the SQL database during master planning runs. Because quick planning runs can be done even during office hours, planners can immediately react to demand or parameter changes.
 
 For more information about Planning Optimization, see [Master planning system architecture](master-planning-architecture.md).
 
-## Obsolescence of the existing master planning engine
+## Obsolescence of the deprecated master planning engine
 
 Microsoft has deprecated the built-in master planning engine in favor of Planning Optimization. This change affects all cloud environments. On-premises installations aren't affected.
 
@@ -29,10 +29,10 @@ For more information about the deprecated master planning engine, see the announ
 A deprecated feature is a feature that's no longer in active development and might be removed in a future release. For the deprecated master planning engine, there will be no new features, and support will be provided only for blocking issues (where master planning doesn't create any planned orders and/or continuously fails) and for regressions in the functionality. In March 2023, Microsoft adopted a strict policy against providing support for the deprecated master planning engine, except for blocking issues or regressions. These conditions apply to all customers, including the following types:
 
 - Customers whose needs aren't yet fully supported by Planning Optimization.
-- Customers who have received an exception so that they can continue to use the deprecated built-in planning engine.
+- Customers who have received an exception so that they can continue to use the deprecated planning engine.
 - All on-premises customers.
 
-There's currently no timeline for full removal of the deprecated built-in planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we'll announce those plans 12 months before the removal date.
+There's currently no timeline for full removal of the deprecated planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we'll announce those plans 12 months before the removal date.
 
 ## New deployments
 
