@@ -1,10 +1,9 @@
 ---
 title: Set up a development environment
-description: This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
+description: Learn how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/25/2024
+ms.date: 04/10/2025
 ms.topic: how-to
-audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -22,7 +21,7 @@ To set up a development environment for Dynamics 365 Commerce online extensibili
 
 ## Install Visual Studio Code
 
-We recommend that you use a source code editor such as Visual Studio Code. Visual Studio Code is a lightweight source code editor that runs on your Microsoft Windows desktop. It has built-in support for JavaScript, TypeScript, and Node.js.
+Microsoft recommends that you use a source code editor such as Visual Studio Code. Visual Studio Code is a lightweight source code editor that runs on your Microsoft Windows desktop. It has built-in support for JavaScript, TypeScript, and Node.js.
 
 Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is automatically opened and should resemble the following screenshot.
 
@@ -34,7 +33,7 @@ Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine]
 
 Version 16.x is the current supported version for online SDK bootloader package 1.27 and later. If you're using online SDK bootloader package 1.26 or earlier, you need to install Node 12.x. You can find the installer on the [Node.js website](https://nodejs.org).
 
-If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
+If you rely on other versions of Node.js for other projects, Microsoft recommends that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
 ## Install Yarn
 
@@ -53,11 +52,11 @@ git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 ```
 
 > [!NOTE]
-> The whole SDK and module library won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this article.
+> The entire SDK and module library isn't downloaded and installed until you run the **yarn** command. For more information, see [Download SDK dependencies](#download-sdk-dependencies).
 
-If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You can use Yarn to pull down updated dependencies.
+If you cloned the repo, you can remove the .git folder (the hidden directory under the root). Use Yarn to pull down updated dependencies.
 
-We recommend that you use a source code repository to manage your configuration changes. Many options are available, such as [Git](https://git-scm.com/downloads).
+Microsoft recommends that you use a source code repository to manage your configuration changes. Many options are available, such as [Git](https://git-scm.com/downloads).
 
 ## Download SDK dependencies
 
@@ -67,7 +66,7 @@ To download the SDK dependency packages, follow these steps.
 2. To get all the latest dependency packages that are required, run the **yarn** command.
 
     > [!IMPORTANT]
-    > This step should be done after you've completed any update to the package.json file.
+    > This step should be done after you complete any updates to the package.json file.
 
     ```Console
     c:\repos\Msdyn365.Commerce.Online>yarn
@@ -85,7 +84,7 @@ To run your Node app, follow these steps.
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
-    This command can take up to a minute to run. When completed, you see output that indicates that the server has started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
+    This command can take up to a minute to run. When completed, the output indicates that the server is started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
 
 2. To test that your Node app is running correctly, open the following URLs in a web browser:
 
@@ -118,7 +117,7 @@ c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 clone content-block super-conten
 You can find the new module under \\src\\modules\\super-content-block.
 
 > [!NOTE]
-> After a module is cloned, you might have to fix up references in the code. You can run **yarn start** to highlight any errors that must be fixed.
+> After a module is cloned, you might have to fix up references in the code. You can run the **yarn start** command to highlight any errors that must be fixed.
 
 ## Preview modules
 
@@ -142,7 +141,7 @@ To preview a specific module (for example, product-feature) in a local web brows
 The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment that works against localhost. You can find these files inside the **.ssl** folder under the root SDK folder.  
 
 > [!NOTE]
-> The *yarn start* command must be run at least once for these files to be generated.
+> The **yarn start** command must be run at least once for these files to be generated.
 
 To install a new certificate on a developer environment, replace the public key (cert.pem) and private key (key.pem) files with your own.
 

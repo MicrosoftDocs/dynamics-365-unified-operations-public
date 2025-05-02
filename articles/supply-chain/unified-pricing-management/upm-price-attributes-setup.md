@@ -1,5 +1,5 @@
 ---
-title: Price attributes for products, customers, and orders (preview)
+title: Price attributes for products, customers, and orders
 description: Learn how to set up the configurable price attributes and link them to the products, customers, and orders, including step-by-step processes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,11 +10,9 @@ ms.reviewer: kamaybac
 ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ---
 
-# Price attributes for products, customers, and orders (preview)
+# Price attributes for products, customers, and orders
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.34 GA -->
 
 Unified pricing management provides a set of prefilled price attributes from fields in related tables that are associated with products, customers, orders, and order lines. It also lets you create custom price attributes and associate them with orders, customers, and items. You can use those price attributes when you create pricing rules and conditions. Then, when an order is placed, the pricing engine will then use the associations to determine the appropriate price.
 

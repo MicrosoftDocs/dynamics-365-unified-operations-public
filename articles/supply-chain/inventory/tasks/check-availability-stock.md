@@ -1,8 +1,8 @@
 --- 
 title: Check the availability of stock
 description: Learn how to check on-hand and physical on-hand inventory for a specific item number, including a step-by-step process for checking on-hand inventory items.
-author: Weijiesa
-ms.author: weijiesa
+author: banluo-ms
+ms.author: banluo
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 

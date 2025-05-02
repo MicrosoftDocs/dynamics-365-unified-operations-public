@@ -3,11 +3,12 @@ title: Safety stock fulfillment for items
 description: Learn about safety stock fulfillment and how to set up safety stock quantity for items with a process for setting the safety stock level for an item. 
 author: t-benebo
 ms.author: benebotg
-ms.topic: how-to
-ms.date: 04/19/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
+ms.topic: how-to
+ms.date: 01/31/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Safety stock fulfillment for items
@@ -144,7 +145,7 @@ Fulfilling the safety stock requirement transaction is deprioritized if the syst
 
 During the coverage phase of master planning, safety stock replenishment is no longer deprioritized. On-hand inventory can be used before any other demand types. During the delay calculation, new logic will be added to go over the delayed sales lines, BOM line requirements, and all the other demand types, to determine whether they could be delivered on time, provided that the safety stock is used. If the system identifies that it can minimize delays by using safety stock, then the sales lines or BOM lines will replace their initial coverage with the safety stock, and the system will trigger the replenishment for the safety stock instead.
 
-If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there is a reserve of on-hand and other available inventory before other demand types.
+If the plan or the item isn't set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there's a reserve of on-hand and other available inventory before other demand types.
 
 ## Related information
 

@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Chile in Mic
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: article
-ms.date: 01/10/2025
+ms.date: 02/10/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -36,7 +36,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 1. You must enable the following features in Feature management:
 
     - Electronic invoicing integration
-    - E-Invoicing service workspace designer
+	- Electronic invoicing integration resubmit document from failed action
     - Execute update actions for submitted documents
 
 1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
@@ -86,7 +86,7 @@ For Chile, there are at least three interactions with Edicom in the pipeline: fi
 
     ![Screenshot that shows the information on the Configurations tab for the Globalization feature for Chile.](ltm-chl-e-invoice-glob-feature-imported2.png)
 
-1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, confirm that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API:
 
@@ -104,7 +104,7 @@ For Chile, there are at least three interactions with Edicom in the pipeline: fi
 
     ![Screenshot that shows the configured Feature parameters tab for the Globalization feature for Chile.](ltm-chl-e-invoice-glob-feature-parameters.png)
 
-1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Outbound flow pipeline
 
@@ -158,7 +158,7 @@ After you import the **Electronic invoicing for Chile** feature that includes th
 
 ## Configure electronic document parameters
 
-1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.

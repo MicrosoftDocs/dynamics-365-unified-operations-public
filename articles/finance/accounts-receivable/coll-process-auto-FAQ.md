@@ -94,3 +94,7 @@ A customer invoice is due on January 15. In the collections process setup, two a
 - If the collections status of the invoice has changed to **Disputed** or **Promised to pay**, collections process automation skips that invoice during processing. If the collections status has changed to **Resolved** or **Promise to pay broken**, and the invoice is overdue, collections process automation picks up the invoice. On January 24 (when the invoice is nine days past due), the status is updated, and collections process automation runs the step that is closest to that date. That step is the **Second notice** step.
 - If the collections status is updated on February 2 (when the invoice 17 days past due), the closest step is **Create activity**. In this case, only an activity is created.
 - If you want collections process automation to start with the first step that's relevant, select the **Track step in collections process automation** option on the **Collections process automation** page. In this example, the relevant first step is **First notice**. Therefore, the first collection letter is sent on February 2. Collections process automation then continues to run. It creates the remaining collection letters and the activity, based on the February 2 date.
+
+### Why is the **Use track step** checkbox greyed out when I am setting up the process details? 
+
+While setting up the collection process, you can select the **Use track step** checkbox at the hierarchy level. If you reach the process details step and want to enable the track step, redo the process hierarchy. 

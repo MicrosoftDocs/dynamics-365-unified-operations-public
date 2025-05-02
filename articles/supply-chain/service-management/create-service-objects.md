@@ -3,11 +3,12 @@ title: Create service objects
 description: Access a procedure that shows how to create service objects, including a step-by-step process for creating service objects.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 02/21/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceObjectTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Create service objects  

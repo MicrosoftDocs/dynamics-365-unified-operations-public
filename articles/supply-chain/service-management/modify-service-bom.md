@@ -3,11 +3,12 @@ title: Modify a Service BOM
 description: Learn how to modify service BOMs, including step-by-step processes for updating service BOM elements and deleting service BOM lines.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 05/03/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAAgreementTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 
@@ -15,7 +16,7 @@ ms.search.form: SMAAgreementTable
 
 [!include [banner](../includes/banner.md)]
 
-You can record the history of an element in a service BOM. Every time that you update a BOM line, a history line is created in the **History** pane. The history line shows the current state of the BOM line.
+You can record the history of an element in a service bill of materials (BOM). Every time that you update a BOM line, a history line is created in the **History** pane. The history line shows the current state of the BOM line.
 
 ## Update a service BOM element
 

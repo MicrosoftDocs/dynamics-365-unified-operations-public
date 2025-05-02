@@ -3,11 +3,12 @@ title: Service order stages
 description: Learn how you can control the flow of a service order through the tasks that various people perform in the service organization.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 04/30/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable, SMAStageTable
+ms.topic: conceptual
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Service order stages
@@ -20,7 +21,7 @@ You can also define the actions that are permitted at each stage. For example, i
 
 ## Branching in service order stages
 
-When you set up a service stage, you can create multiple options, or branches, to select from for the next service stage. All the branches that you create are available to select from when the initial stage is completed. For example, you set up **Planning** as an initial stage. You create two stages named **In process** and **Cancel**, and then select **Planning** as the parent for them. You assign the **Planning** stage to sales order. When the planning stage for the sales order is completed, you can select the **In process** stage if the sales order is ready to work on, or you can select the **Cancel** stage if the sales order is canceled.
+When you set up a service stage, you can create multiple options, or branches, to select from for the next service stage. All the branches that you create are available to select from when the initial stage is completed. For example, you set up *Planning* as an initial stage. You create two stages named *In process* and *Cancel*, and then select *Planning* as the parent for them. You assign the *Planning* stage to sales order. When the planning stage for the sales order is completed, you can select the *In process* stage if the sales order is ready to work on, or you can select the *Cancel* stage if the sales order is canceled.
 
 ## Related information
 

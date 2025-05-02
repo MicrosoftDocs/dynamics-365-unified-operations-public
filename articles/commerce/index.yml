@@ -9,8 +9,8 @@ metadata:
   description: Use Commerce to deliver unified, personalized, and seamless buying experiences for customers and partners.  
   ms.topic: hub-page
   author: v-chgri
-  ms.author: josaw
-  ms.date: 08/17/2023 
+  ms.author: v-chrgriffin
+  ms.date: 02/11/2025 
   ms.custom: bap-template
   hide_bc: true
 
@@ -40,19 +40,20 @@ highlightedContent:
 additionalContent: 
   sections:
   - title: Implement
-# Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
-# Each card should have at least three and no more than five links. Do not include a "See also" link.
+# Guidance is the first card under Implement. On this card, include links for Security and compliance, Implementation guide, Implementation tools and samples, and migration guide (if relevant). 
+# Each card should have at least three and no more than five links.
+# If your docset has more appropriate articles to link to that the template has, then replace the links.
     items:
     - title: Guidance 
-      links: 
-      - url: /dynamics365/guidance/
-        text: Dynamics 365 implementation guidance
+      links:
+      - url: /dynamics365/get-started/security      
+        text: Security, compliance, and privacy      
+      - url: /dynamics365/guidance/implementation-guide/overview
+        text: Implementation guide
+      - url: /dynamics365/guidance/resources/
+        text: Implementation tools and samples
       - url: /dynamics365/guidance/implementation-guide/process-focused-solution-implementation-lifecycle
-        text: Implementation lifecycle management
-      - url: /dynamics365/adoption/adoption-guide
-        text: Adoption frameworks
-      - url: /dynamics365/guidance/implementation-guide/security
-        text: Security
+        text: Implementation lifecycle management  
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Fcommerce
