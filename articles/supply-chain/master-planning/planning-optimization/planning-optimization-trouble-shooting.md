@@ -258,9 +258,9 @@ Planning Optimization differs from the deprecated master planning engine design 
 
 ## Can't disable Planning Optimization
 
-The **Use Planning Optimization** option is enabled and greyed out, preventing deactivation.
+The **Use Planning Optimization** option is set to *Yes* and greyed out, preventing it from being turned off.
 
-**Fix**: The described behaviors are by design. As of version 10.0.41, the deprecated planning engine is blocked and cannot be manually enabled. Customers who were not actively using the old planning engine prior to its deprecation can only access the new Planning Optimization engine.
+This behavior is by design. Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
 ## Error message is shown during CTP
 

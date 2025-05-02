@@ -99,7 +99,7 @@ To configure your system to use the Planning Optimization Add-in for master plan
     | Disabling connection | A request to turn off the connection to the Planning Optimization service is currently in progress. | No |
     | Getting status | The system is waiting for status information from the Planning Optimization service. | No |
 
-1. If the **Connection stats** is *Connected*, the **Use Planning Optimization** option should be set to **Yes** and greyed out.Planning Optimization is used for master planning for all companies (unless allowed exception and overridden for one or more specific companies; learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
+1. If the **Connection stats** is *Connected*, the **Use Planning Optimization** option is read-only and set to *Yes*. In most cases, Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
 > [!IMPORTANT]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.
