@@ -26,6 +26,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.44 release
 
+### Use of SHA1 hashing in InventDim table
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | SHA1 is an outdated cryptographic algorithm, while the hashing use in this case is for search and control of uniqueness |
+| **Replaced by another feature?** | Yes. By Spooky hash. |
+| **Product areas affected** | Supply Chain Management – Inventory |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The change is designed and implemented to be unnoticeable to the users. The application can temporarily work with both SHA1 and Spooky hashes. Upon upgrade to 10.0.44, a batch job is automatically scheduled to convert SHA1 hashes to Spooky hashes. We will remove any SHA1 related code in the next release. |
+
+
 ### Rename item number (preview)
 
 | &nbsp;  | &nbsp;  |
