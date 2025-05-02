@@ -256,11 +256,11 @@ Planning Optimization differs from the deprecated master planning engine design 
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. Learn more in [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
-## Can't enable Planning Optimization
+## Can't disable Planning Optimization
 
-The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. Learn more in [Get started with Planning Optimization](get-started.md).
+The **Use Planning Optimization** option is enabled and greyed out, preventing deactivation.
 
-**Fix**: Make sure that the Planning Optimization Add-in was installed successfully.
+**Fix**: The described behaviors are by design. As of version 10.0.41, the deprecated planning engine is blocked and cannot be manually enabled. Customers who were not actively using the old planning engine prior to its deprecation can only access the new Planning Optimization engine.
 
 ## Error message is shown during CTP
 
