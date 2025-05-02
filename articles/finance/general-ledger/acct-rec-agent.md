@@ -24,7 +24,7 @@ The Account Reconciliation Agent represents a transformative step toward a conti
 
 Here are some of the benefits:
 
-- **Enhanced efficiency** — Customers can maintain a reconciled state more consistently. Therefore, less time and effort are required for manual reconciliation.
+- **Enhanced efficiency** – Customers can maintain a reconciled state more consistently. Therefore, less time and effort are required for manual reconciliation.
 - **Proactive management** – The intelligent agent proactively identifies and suggests mitigations for exceptions. In this way, it helps minimize the risk of errors and ensure financial accuracy.
 - **Improved transparency** – Every exception is logged to capture the history of actions that were taken by users, automation, or agents. As a result, transparency and accountability are enhanced.
 - **Regular reconciliation** – The ability to reconcile on a more regular basis ensures that customer financial records are always up to date. As a result, decision-making and financial planning improve.
