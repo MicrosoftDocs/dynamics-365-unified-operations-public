@@ -2,7 +2,7 @@
 title: Printing configuration for the ISLR withholding certificate for Venezuela
 description: Learn how to set up and generate an ISLR withholding certificate for Venezuela.
 author: Fhernandez0088
-ms.date: 04/30/2025
+ms.date: 05/06/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -13,8 +13,7 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and generate the ISLR withholding certificate for Venezuela in Microsoft Dynamics 365 Finance.
-This document holds information about the withholdings generated from vendor invoices, debit notes, and credit notes.
+This article explains how to set up and generate the ISLR withholding certificate for Venezuela in Microsoft Dynamics 365 Finance. This document contains information about the withholdings that are generated from vendor invoices, debit notes, and credit notes.
 
 ## Prerequisites
 
@@ -29,12 +28,11 @@ Before you can generate the report, the following prerequisites must be met:
     - LTM Tax Report mapping
     - VEN Withholding certificate ISLR
    
-
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Additional configuration required for the ISLR withholding certificate
 
-- You must create a *tax application code* to use on this report. Learn more in [Tax application for Latin America]( https://learn.microsoft.com/dynamics365/finance/localizations/iberoamerica/ltm-core-tax-application).
+- You must create a *tax application code* to use on this report. Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 - Enter the withholding tax fiscal code according to the fiscal authority in the **Tax income** field from the **Tax application** form of the sales tax codes used as ISLR withholding taxes.
 
 ## Configure application-specific parameters for the ISLR withholding certificate
