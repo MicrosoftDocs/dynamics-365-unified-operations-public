@@ -1,48 +1,46 @@
 ---
 title: Set up a customer and sales order to be target of consolidated invoice
-description: Learn about setting up customers and sales order to be targets of consolidated invoices, including a step-by-step process using the JPMF demo data company.
+description: Learn how to set up customers and sales orders to be targets of consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/02/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustTable, SalesTableListPage, SalesTable
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Set up a customer and sales order to be target of consolidated invoice
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to set up customers and sales orders to be targets of consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
+
 In Japan, the customers usually use consolidated invoices for all transactions. 
 
+The following procedure use the JPMF demo company data.
 
+## Set up a customer to be a the target of a consolidated invoice
 
-Use this task to learn how to set up a customer and a sales order to use consolidated invoices. 
+To set up a customer to be a target of consolidated invoice, follow these steps.
 
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+2. In the list, select the link in the selected row.
+3. Expand the **Payment defaults** section.
+1. Verify that the terms of payment uses the cutoff day method. If the method isn't "Cutoff day", unlock the task guide and then select **Edit** to update this field.  
+1. Specify a consolidation day for the customer.  
 
+## Set up a sales order to be the target of a consolidated invoice
 
-This task uses the JPMF demo company data.
+To set up a sales order to be the target of a consolidated invoice, follow these steps.
 
-
-## Set up a customer to be a target of consolidated invoice
-1. Go to Accounts receivable > Customers > All customers.
-2. In the list, click the link in the selected row.
-3. Expand the Payment defaults section.
-    * Verify that the Terms of payment uses the Cutoff day method.  
-    * If the method is not "Cutoff day", unlock the task guide and then click Edit to update this field.  
-    * Specify a consolidation day for the customer.  
-    * You might need to click Edit before you can update this field.  
-
-## Set a sales order to be target of consolidated invoice
-1. Go to Accounts receivable > Orders > All sales orders.
-2. In the list, click the link in the selected row.
-3. Click Header.
-    * Verify that the Target of consolidation slider is set to 'Yes'.  
-    * If the slider is set to "No", unlock the task guide and then click Edit to update the field.  
+1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
+2. In the list, select the link in the selected row.
+3. Select **Header**.
+1. Verify that the **Target of consolidation** slider is set to **Yes**. If the slider is set to **No**, unlock the task guide and then select **Edit** to update the field.  
 
 
 
