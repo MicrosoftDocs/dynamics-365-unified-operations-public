@@ -4,7 +4,7 @@ description: Access troubleshooting guidance for upgrades of Microsoft Dynamics 
 author: ttreen
 ms.author: ttreen
 ms.topic: article
-ms.date: 04/26/2022
+ms.date: 05/05/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -215,7 +215,7 @@ select * from CLASSIDTABLE where ID in (select distinct classnumber from batch w
 
 ## Scenario 13: After the snapshot is pushed, replication fails with Length of LOB data to be replicated exceeds configured maximum 65536.
 
-After the publication is created, and the snapshot is pushed, the log reader reports an excetion on some specific tables.
+After the publication is created, and the snapshot is pushed, the log reader reports an exception on some specific tables.
 
 **Exception**
 
@@ -253,8 +253,8 @@ RECONFIGURE;
 GO
 ```
 
-Restart the Log Reader Agent and Distribution Agent (if not using immediate updating):
- - You can do this via SQL Server Agent or Replication Monitor.
+Restart the Log reader agent and Distribution agent (if not using immediate updating):
+ - You can do this via SQL Server Agent or Replication monitor.
  - Or using T-SQL (example for a push subscription):
 
 ```sql
@@ -262,4 +262,4 @@ Restart the Log Reader Agent and Distribution Agent (if not using immediate upda
 exec sp_restart_job @job_name = 'AX_PUB_PkTable_x';
 ```
 
-For more details see: [Server configuration: max text repl size](/sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option.md)
+For more information, see [Server configuration: max text repl size](../../sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option.md)
