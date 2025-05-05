@@ -4256,6 +4256,8 @@
                       href: localizations/thailand/apac-tha-withholding-tax.md
                 - name: Türkiye
                   items:
+                    - name: Currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
                     - name: Continuous serial numbering of packing slips and invoices 
                       href: localizations/turkiye/emea-tur-serial-numbering.md
                 - name: United Arab Emirates (UAE)
