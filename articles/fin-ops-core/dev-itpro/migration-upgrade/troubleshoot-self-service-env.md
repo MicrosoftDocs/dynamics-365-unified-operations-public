@@ -262,4 +262,4 @@ Restart the Log reader agent and Distribution agent (if not using immediate upda
 exec sp_restart_job @job_name = 'AX_PUB_PkTable_x';
 ```
 
-For more information, see [Server configuration: max text repl size](../../sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option)
+For more information, see [Server configuration: max text repl size](../../../sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option)
