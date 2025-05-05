@@ -271,6 +271,8 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 ### Feature description
 
+By leveraging this feature, users can efficiently handle extensive datasets while maintaining control over the report generation process, ensuring smooth and uninterrupted operations.
+
 The feature resolves performance issues during inventory value report storage by dividing large datasets into manageable bundles. Each bundle is processed sequentially, allowing the report generation to continue without time-out errors. Additionally, users can pause and resume the process to support incremental report generation.
 
 ### _Configuration_
@@ -309,12 +311,6 @@ To pause and resume report generation:
 
 ### Limitations
 
-- Performance may decrease if the feature is used for datasets that do not require large volume processing.
-  
-
-By leveraging this feature, users can efficiently handle extensive datasets while maintaining control over the report generation process, ensuring smooth and uninterrupted operations.
-
-
-
+- Performance may degrade when the feature is applied to datasets that do not demand high-volume processing
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
