@@ -267,11 +267,7 @@ For example, you have an item that has the item number *A0001*. In the storage d
 
 ### Requirements
 
-To use this feature, ensure the following:
-
-•	Supply Chain Management version 10.0.44 or later: The feature is enabled by default and cannot be turned off.
-
-•	For earlier versions: Admins can enable the feature in the Feature management workspace by searching for "**Large Volume Historical Inventory Value Report Generation.**"
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.44, the feature is available(optional) and admins can turn this functionality on or off by searching for "**Large Volume Historical Inventory Value Report Generation.**" feature in the Feature management workspace.
 
 ### Feature description
 
@@ -313,7 +309,6 @@ To pause and resume report generation:
 
 ### Limitations
 
-- This feature is mandatory and cannot be disabled in Supply Chain Management version 10.0.44 or later. User can choose to use it or not during [Execution](#execution)
 - Performance may decrease if the feature is used for datasets that do not require large volume processing.
   
 
