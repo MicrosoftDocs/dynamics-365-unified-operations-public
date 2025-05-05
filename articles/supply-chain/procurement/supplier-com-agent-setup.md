@@ -71,6 +71,7 @@ If you're using a shared mailbox, then create a queue to allow all users working
 1. Select **Create team** at the top.
 1. Fill out a name, business unit, and administrator as needed and set the **Team type** to *Owner*.  
 1. On the next page, add all the members that should have access to the shared mailbox. This allows the selected users to access email contents from the Supplier Communications Agent incoming email workspace in Supply Chain Management.
+1. On the role assignment page, select **Finance and Operations Basic User** and click **Save**. 
 1. Go back to the **Settings** page, expand the **Business** heading, and select **Queues**.
 1. Select the **New** button on top to create a new **Queue** entity record.
 1. Enter a **Name**, set **Incoming email** to the email address of the shared mailbox, and assign the **Owner** as the team that was created earlier. Then select **Save**.  
