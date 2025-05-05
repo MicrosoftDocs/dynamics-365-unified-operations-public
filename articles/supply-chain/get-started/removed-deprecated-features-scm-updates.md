@@ -26,7 +26,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.44 release
 
-### Use of SHA1 hashing in InventDim table
+### SHA1 hashing in the InventDim table
 
 | &nbsp;  | &nbsp;  |
 |---|---|
@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?** | Yes. SHA1 hashing is being replaced by SpookyHash. |
 | **Product areas affected** | Supply Chain Management – Inventory |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | As of Supply Chain Management version 10.0.44, the system uses SpookyHash instead of SHA1 to hash data in the `InventDim` table. When you upgrade to version 10.0.44, the system automatically schedules a batch job that converts all `InventDim` data hashed using SHA1 to instead use SpookyHash. Version 10.0.44 is able to work with both SHA1 and SpookyHash data, but the ability to use SHA1 will be removed in Supply Chain Management version 10.0.45. If you have any custom code that uses SHA1 hashing, you must update it to use SpookyHash instead before updating to Supply Chain Management 10.0.45 or later. |
+| **Status** | As of Supply Chain Management version 10.0.44, the system uses SpookyHash instead of SHA1 to hash data in the `InventDim` table. When you upgrade to version 10.0.44, the system automatically schedules a batch job that converts all `InventDim` data hashed using SHA1 to instead use SpookyHash. Version 10.0.44 can work with both SHA1 and SpookyHash data, but the ability to use SHA1 will be removed in Supply Chain Management version 10.0.45. Extensibility was never supported for this part of the application, but if you have external code that uses SHA1 when creating, updating, or searching data in the `InventDim` table, you must stop using that code before upgrading to Supply Chain Management 10.0.44 because it will corrupt your data. |
 
 ### Rename item number (preview)
 
