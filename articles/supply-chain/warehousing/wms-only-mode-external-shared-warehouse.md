@@ -58,7 +58,7 @@ The following illustration highlights the elements of the outbound process when 
 
 :::image type="content" source="media/wms-only-shared-warehouse-outbound-process.svg" alt-text="Diagram that shows the outbound process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-outbound-process.svg":::
 
-Here's a high-level description of the inbound process. Steps that start with *LE1* are done by a sales subsidiary. Steps that start with *WOM* are done by the warehousing entity.
+Here's a high-level description of the outbound process. Steps that start with *LE1* are done by a sales subsidiary. Steps that start with *WOM* are done by the warehousing entity.
 
 1. *LE1:* Sales orders are created and released to the warehouse. The system then creates *external warehouse outbound shipment order requests*. As a result, outbound shipment order messages are delivered to the *WOM* legal entity.
 1. *WOM:* The *Outbound shipment order messages* are processed. As a result of this processing, *outbound shipment orders* are created.
@@ -66,8 +66,8 @@ Here's a high-level description of the inbound process. Steps that start with *L
 1. *WOM:* The orders are released for further warehouse processing, either manually or automatically. If you use outbound load planning processes, you can create loads by using the Outbound load planning workbench before you release the orders.
 1. *WOM:* Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
 1. *WOM:* Outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
-1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse inbound shipment order updates are generated for *LE1*.
-1. *LE1:* During the processing of the external warehouse inbound shipment order updates, outbound shipment data and the related sales order line transactions are updated. The transactions become *Picked*. This update enables further processing of the packing slip and invoice. You can enable automatic [message processing](../supply-chain-dev/message-processor.md) for the *External warehouse shipment order updates* message queue.
+1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse outbound shipment order updates are generated for *LE1*.
+1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related sales order line transactions are updated. The transactions become *Picked*. This update enables further processing of the packing slip and invoice. You can enable automatic [message processing](../supply-chain-dev/message-processor.md) for the *External warehouse shipment order updates* message queue.
 1. *WOM:* The warehousing entity finalizes the outbound shipment order line transactions by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
