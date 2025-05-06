@@ -3,7 +3,7 @@ title: Configure Lifecycle Services connectivity for Finance + Operations (on-pr
 description: Learn how to configure your tenant to allow your local agent to authenticate with Microsoft Dynamics Lifecycle Services.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 02/21/2025

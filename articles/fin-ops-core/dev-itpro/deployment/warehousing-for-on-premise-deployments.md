@@ -3,7 +3,7 @@ title: Configure the Warehousing app for on-premises deployments
 description: Learn about the prerequisites for the warehousing app for on-premises deployments, including an overview of certification.
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024
