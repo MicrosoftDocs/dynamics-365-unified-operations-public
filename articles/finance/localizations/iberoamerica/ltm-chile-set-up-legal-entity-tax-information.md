@@ -3,7 +3,7 @@ title: Set up legal entity and tax information for Chile
 description: Learn how to set up legal entity and tax information for a Chilean company, including outlines for creating legal entities and setting up tax information.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/10/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

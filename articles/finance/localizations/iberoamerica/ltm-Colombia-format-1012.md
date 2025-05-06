@@ -3,7 +3,7 @@ title: Format 1012 file for Colombia configuration
 description: Learn how to set up and issue a format 1012 file for Colombia, including an outline on configuring application-specific parameters.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/26/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
