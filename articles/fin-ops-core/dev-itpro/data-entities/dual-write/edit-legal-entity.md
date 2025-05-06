@@ -3,7 +3,7 @@ title: Edit a legal entity after dual-write setup
 description: Learn about how to add or remove a company or legal entity after dual-write has been set up, including a step-by-step overview.
 author: nhelgren
 ms.author: nhelgren
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 07/21/2020
 ms.reviewer: johnmichalak
 audience: Developer
