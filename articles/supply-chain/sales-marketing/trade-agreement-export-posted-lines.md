@@ -38,7 +38,7 @@ After you've converted the relevant lines to open trade agreements, you'll be ab
 1. On the **Export** page, enter a **Group name** for the job.
 1. On the **Selected entities** FastTab toolbar, select **Add entity**.
 1. In the **Add entity** drop-down dialog, set the following fields:
-    - **Entity name** – Select *Open purchase price journal lines V2* or *Open sales price journal lines V2*
+    - **Entity name** – Select *Open purchase price journal lines V2* or *Open sales price journal lines V2*.
     - **Target data format** – Select the format to export data to.
 
 1. Select **Add** to add the new row, and then select **Close** to close the dialog box.
