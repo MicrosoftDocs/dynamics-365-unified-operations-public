@@ -19,9 +19,13 @@ This feature is available as of Microsoft Dynamics 365 Finance version 10.0.44. 
 
 ## Account reconciliation workspace page
 
-To access the Account reconciliation workspace navigate to Workspaces – Account reconciliation.  This page will display any open exceptions for the current period, as well as any addressed exceptions and any automatically reconciled transactions in the summary cards near the top of the page.  Use the filter options at the top of the page to adjust the data you wish to view on the workspace, such as changing from the current fiscal period to the prior fiscal period.  
+To access the **Account reconciliation workspace** navigate to Workspaces – Account reconciliation.  This page will display any open exceptions for the current period, as well as any addressed exceptions and any automatically reconciled transactions in the summary cards near the top of the page.  Use the filter options at the top of the page to adjust the data you wish to view on the workspace, such as changing from the current fiscal period to the prior fiscal period.  
 
-In the bottom section of the workspace page you will find details per each module and each company in that module that has transactional data for the period selected. 
+In the bottom section of the workspace page you will find details per each module and each company in that module that has transactional data for the period selected. The status column has a button that will display the number of exceptions to deal with or will indicate "Fully reconciled" status when all exceptions are dealt with. 
+
+## CoPilot agent for account reconcilation
+
+To enable the copilot agent for the account reconciliation, navigate to ... 
 
 ## Dealing with exceptions
 
@@ -31,11 +35,11 @@ If there are exceptions to address, click the mitigate exceptions button found i
 
 ## Snapshots
 
-The last column of the main grid in the lower portion of the workspace page is to view a snapshot of data for the selected period, module and company combination.  The snapshot provides a final summary of all data for the given period including the automatically reconciled transactions and any addressed exceptions you might have dealt with for the period. 
+The last column of the main grid in the lower portion of the workspace page is to view a snapshot of data for the selected period, module and company combination.  The snapshot provides a final summary of all data for the given period including the automatically reconciled transactions and any addressed exceptions you might have dealt with for the period.  The snapshot will only be available for a ledger calendar fical period that is marked as on-hold or permanently closed and is fully reconciled.  The generation of the snapshot will happen with the same background process and schedule 
 
 ## Configuration
 
-Using the gear icon on the top right of the workspace page you can view the settings and configuaration for the account reconciliation feature. 
+Using the gear icon on the top right of the workspace page you can view the settings and configuaration for the account reconciliation feature.  On the **Account reconciliation configuration** page you can enable or disable the reconciliation processing for each module.  Secondly you can view adn add/remove accounts used for each module for each legal entity.  The list of accounts listed are pre-populated from the existing posting profile setup, bank and tax account setup in each legal entity. 
 
 ## Frequently asked questions
 
