@@ -265,7 +265,7 @@ For example, you have an item that has the item number *A0001*. In the storage d
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.44 GA -->
 
-This feature lets you handle extensive datasets while maintaining control over the report generation process, ensuring smooth and uninterrupted operations. It improves performance when generating the **Inventory value report storage** report by dividing large datasets into manageable bundles. The system processes each bundle sequentially, which prevents timeout errors. You can also pause and resume the process to support incremental report generation.
+This feature lets you handle extensive datasets while maintaining control over the process of generating **Inventory value report storage** reports, ensuring smooth and uninterrupted operation. It improves performance when by dividing large datasets into manageable bundles. The system processes each bundle sequentially, which prevents timeout errors. You can also pause and resume the process to support incremental report generation.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -282,6 +282,9 @@ To configure this feature, follow these steps.
 
 1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Parameters**.
 1. In the **Inventory value report storage** field group, set the **Number of items per bundle** field to the number of items that you want to process in one bundle when generating large-volume reports. For example, if you often deal with reports that cover 800,000 items, a bundle size of 30,000 might be appropriate.
+
+> [!IMPORTANT]
+> Proper configuration of the bundle size is crucial for balancing performance and reliability. If the bundle size is too small, the system will take longer to process the report. If the bundle size is too large, the system might time out before it can finish processing the report. We recommend that you start with a bundle size of 30,000 items and adjust it as needed based on your experience.
 
 ### Use the large-volume option when generating a report
 
