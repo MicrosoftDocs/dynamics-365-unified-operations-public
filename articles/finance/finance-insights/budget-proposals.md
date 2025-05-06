@@ -3,7 +3,7 @@ title: Budget proposals
 description: Learn about the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/11/2023
 ms.custom:
 ms.reviewer: twheeloc
