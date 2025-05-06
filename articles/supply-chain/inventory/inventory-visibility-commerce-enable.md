@@ -81,10 +81,12 @@ To create a key vault to hold the client secret for Inventory Visibility, follow
     - **Upload options** – Select *Manual*.
     - **Name** – Enter a name for the secret (for example, *commerce-iv-01-secret*). Copy the value, paste it into your temporary text file, and label it.
     - **Secret value** – Enter the client secret value that you used when you installed the Inventory Visibility add-in (as mentioned in the [Prerequisites](#prerequisites) section).
-    - **Content type** – This is an optional field. The suggested value is *application/vnd.bag-3rdPartyHostedSecretNoRotation*.
+    - **Content type** – This is an optional field. The suggested value is *application/vnd.ms-StorageConnectionString*.
     - **Set activation date** – Select this checkbox, and then enter the first date when this secret should be valid.
     - **Set expiration date** – Select this checkbox, and then enter the last date when this secret should be valid.
     - **Enabled** – Set this option to *Yes*.
+    > [!IMPORTANT]
+    > If the client secret value that you used when you installed the Inventory Visibility add-in (as mentioned in the [Prerequisites](#prerequisites) section) becomes expired, **Secret value** in this step also becomes invalid. You need to create a new client secret value for IV application registration and update the **Secret value** in this step accordlingly.
 
 1. Select **Create** to create and save the secret.
 
@@ -110,6 +112,19 @@ To register a Microsoft Entra application to enable Supply Chain Management and 
 
     - **Application (client) ID**
     - **Directory (tenant) ID**
+
+After the application is registered, create an access policy to enable this application to access the key vault.
+
+1. Open the key vault you created in [Create a key vault to hold the client secret for Inventory Visibility](#key-vault).
+1. On the navigation pane, select **Access policies**.
+1. On the toolbar, select **Create** to open the **Create an access policy** page.
+1. On the **Permissions** tab, enable **Secret permissions \> Secret Management Operations \> Get** permission. A template is not required.
+1. Select **Next**.
+1. On the **Principal** tab, select the application you just registered in this section.
+1. Select **Next**.
+1. **Application** tab is optional.
+1. Select **Next**.
+1. On the **Review + create** tab, review and create the access policy.
 
 ## <a name="scm-vault-setup"></a>Set up Supply Chain Management to access the new key vault
 
