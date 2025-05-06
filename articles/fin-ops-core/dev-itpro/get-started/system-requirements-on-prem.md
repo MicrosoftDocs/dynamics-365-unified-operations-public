@@ -3,7 +3,7 @@ title: System requirements for on-premises deployments
 description: Learn about the system requirements for on-premises deployments, including network requirements and domain requirements.
 author: PeterRFriis
 ms.author: peterfriis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 01/29/2025
