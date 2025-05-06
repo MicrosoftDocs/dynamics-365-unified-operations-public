@@ -3,7 +3,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management
 description: Access resources that describe the new and changed features in each release of Dynamics 365 Supply Chain Management, including versions and build numbers.
 author: kamaybac
 ms.author: kamaybac
-ms.topic: article
+ms.topic: whats-new
 ms.date: 01/07/2025
 ms.reviewer: kamaybac
 ms.collection: get-started 
