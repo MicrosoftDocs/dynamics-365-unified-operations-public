@@ -3,7 +3,7 @@ title: Customer page summary
 description: This article describes how the customer page summary feature shows AI-generated text on the customer page.
 author: EricWang
 ms.author: wangchen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/31/2025
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
