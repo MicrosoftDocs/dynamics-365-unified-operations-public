@@ -3,7 +3,7 @@ title: Update the Visual Studio development tools
 description: Learn about how to update Visual Studio development tools to new versions, including how to uninstall your existing Visual Studio development tools.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/18/2017
 ms.reviewer: johnmichalak
 audience: Developer

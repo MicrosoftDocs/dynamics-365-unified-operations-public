@@ -3,7 +3,7 @@ title: Create and configure extended warranties
 description: This article covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/02/2023
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
