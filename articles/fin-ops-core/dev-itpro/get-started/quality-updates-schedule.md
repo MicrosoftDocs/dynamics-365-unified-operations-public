@@ -3,7 +3,7 @@ title: Release schedule for proactive quality updates
 description: Learn about the release schedule for proactive quality updates (PQUs), including an outline on station-to-region mapping. 
 author: rashmansur
 ms.author: rashmim
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/05/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
