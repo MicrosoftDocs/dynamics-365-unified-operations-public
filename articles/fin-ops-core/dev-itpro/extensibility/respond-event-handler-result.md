@@ -3,7 +3,7 @@ title: Respond by using EventHandlerResult
 description: Learn about how to subscribe to events that has a parameter of any type that implements the IEventHandlerResult interface.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
 audience: Developer
