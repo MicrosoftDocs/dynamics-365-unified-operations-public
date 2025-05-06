@@ -26,7 +26,7 @@ The deprecation is compatible with both binaries and design time. The referencin
 
 After a period of at least 12 months, Microsoft might delete obsolete methods and metadata elements.
 
-However, if telemetry shows that any obsolete methods or metadata elements are still used, Microsoft **wont** delete them, to reduce the risk that consumers will be broken.
+However, if telemetry shows that any obsolete methods or metadata elements are still used, Microsoft **won't** delete them, to reduce the risk that consumers will be broken.
 
 ## Minimize your risk of being affected
 
