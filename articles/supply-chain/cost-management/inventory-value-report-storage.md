@@ -313,15 +313,4 @@ To pause and resume report generation:
     - **Pause** – Temporarily stops generating the report.
     - **Resume** – Resumes a paused process. The system picks up from where it left off.
 
-### Considerations
-
-Keep the following considerations in mind when using the large-volume report generation feature:
-
-- The feature is specifically designed for large data volumes and may result in decreased performance compared to normal report generation for smaller datasets. Use it only when necessary.
-- Proper configuration of the bundle size is crucial for balancing performance and reliability.
-
-### Limitations
-
-Performance may degrade when the feature is applied to datasets that don't require high-volume processing
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
