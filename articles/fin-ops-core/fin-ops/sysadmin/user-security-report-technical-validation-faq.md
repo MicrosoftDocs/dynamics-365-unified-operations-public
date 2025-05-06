@@ -3,7 +3,7 @@ title: User security role reporting and technical validation for finance and ope
 description: Get answers to frequently asked questions about integrated license management and the requirements for finance and operations apps.
 author: ceian
 ms.author: ceian
-ms.topic: article
+ms.topic: faq
 ms.date: 04/22/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
