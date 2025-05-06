@@ -3,7 +3,7 @@ title: Withholding tax in purchase transactions
 description: For vendors who are liable to withholding tax, you can assign the default withholding tax group on the all vendors page.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/12/2021
 ms.reviewer: kfend
 audience: Application User

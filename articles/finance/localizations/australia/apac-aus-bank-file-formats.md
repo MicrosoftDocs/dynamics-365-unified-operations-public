@@ -3,7 +3,7 @@ title: Bank file formats for Australian banks
 description: Learn about Australian banks and the file formats that they accept for electronic payments, including a table that provides the interface for bank names.
 author: kailiang
 ms.author: kailiang
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 08/14/2023
