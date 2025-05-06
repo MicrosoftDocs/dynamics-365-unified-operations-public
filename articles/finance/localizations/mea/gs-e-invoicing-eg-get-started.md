@@ -9,7 +9,7 @@ ms.custom:
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Egypt
-ms.search.validFrom: 09/19/204
+ms.search.validFrom: 09/19/2024
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
@@ -29,7 +29,6 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
 - Complete the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
-- Import the **Egyptian electronic invoice (EG)** electronic invoicing feature, version **20** or later, from the repository. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 - Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
 
 > [!NOTE]
@@ -54,9 +53,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 1. Select **Key Vault parameters**.
 1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each secret that is described in the previous section.
 
-    - <a id="Tok"></a>The **token** element of the **Secret** type.
     - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
-    - <a id="PK"></a>The **Public key** element of the **Secret** type.
+    - <a id="PK"></a>The **Client secret** element of the **Secret** type.
 
     > [!NOTE]
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
@@ -64,6 +62,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 ## Import the electronic invoicing feature
 
+Import the **Egyptian electronic invoice (EG)** electronic invoicing feature, version **20** or later, from the repository. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
 ## Configure the electronic invoicing feature
 
