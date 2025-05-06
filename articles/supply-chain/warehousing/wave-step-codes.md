@@ -3,7 +3,7 @@ title: Wave step codes
 description: Access an overview of wave step codes and how they are used, including outlines on a setup demo and an example scenario.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/06/2019
 ms.custom:
 ms.reviewer: kamaybac
