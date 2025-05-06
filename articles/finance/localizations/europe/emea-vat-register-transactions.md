@@ -3,7 +3,7 @@ title: VAT register transactions for Eastern Europe
 description: Learn about VAT register transactions for legal entities with a primary address Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/01/2024
