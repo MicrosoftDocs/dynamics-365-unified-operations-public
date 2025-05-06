@@ -3,7 +3,7 @@ title: VAT declaration (Czech Republic)
 description: Learn about the value-added tax (VAT) declaration for the Czech Republic, including overviews on taxable transactions, VAT deductions, and and tax calculations.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/17/2024
