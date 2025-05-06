@@ -3,7 +3,7 @@ title: Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service e
 description: Access troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) self-service environments.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 05/05/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
