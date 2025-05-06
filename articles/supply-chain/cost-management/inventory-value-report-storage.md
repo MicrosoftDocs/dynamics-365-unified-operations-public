@@ -46,10 +46,6 @@ The **Inventory value report storage** report is helpful when the output contain
 > [!NOTE]
 > The **Inventory value report storage** report doesn't include subtotals that are defined in the report layout. It also doesn't include general ledger balances, even if those balances are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances. However, the standard **Inventory value** report does include these subtotals and balances.
 
-## Turn the Inventory value report storage feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## <a name="report-configuration"></a>Define inventory value report configurations
 
 Use the **Inventory value reports** page to set up the content that is included in the different types of inventory value report. You can define any number of report types. Each time that you generate either type of inventory value report, you'll select a report type.
@@ -127,7 +123,7 @@ Use the **Inventory value reports** page to set up the content that is included 
 
     - **Include beginning balance** – Set this option to *Yes* to show the beginning balance. This option is available only when the **Detail level** field is set to *Transactions*.
 
-## Generate an Inventory value report storage report
+## <a name="generate-storage"></a>Generate an Inventory value report storage report
 
 Follow these steps to generate and store an **Inventory value report storage** report.
 
@@ -136,6 +132,7 @@ Follow these steps to generate and store an **Inventory value report storage** r
 1. In the **Inventory value** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - **Name** – Enter a unique name for the report.
+    - **Large item volume** – To use the large-volume report generation feature, set this option to *Yes*. You should only enable this option when generating reports for a significantly large number of items (for example, 50,000 or more) because this option takes longer to run than the standard-volume option. Learn more in [Generate an inventory value report storage report for a large number of items](#large-volume).
     - **ID** – Select the [inventory value report configuration](#report-configuration) to use for the report. The configuration establishes options for the columns and rows that will be included on your report.
     - **Date interval** – Use the fields in this section to define which records are included on the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields.
 
@@ -263,54 +260,65 @@ Typically, you'll use an inventory value report to view the inventory value and 
 
 For example, you have an item that has the item number *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not for financial inventory. You then use a report configuration where site, warehouse, and batch number are all selected. When you view the report, you see a value only for the site. The columns for the warehouse and batch number are blank. As this example shows, inventory value reports can show only inventory dimensions that are enabled for financial inventory.
 
-## Large volume historical inventory value report generation 
+## <a name="large-volume"></a>Generate an inventory value report storage report for a large number of items (preview)
 
-### Requirements
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.44 GA -->
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.44, the feature is available(optional) and admins can turn this functionality on or off by searching for "**Large Volume Historical Inventory Value Report Generation.**" feature in the Feature management workspace.
+This feature lets you handle extensive datasets while maintaining control over the report generation process, ensuring smooth and uninterrupted operations. It improves performance when generating the **Inventory value report storage** report by dividing large datasets into manageable bundles. The system processes each bundle sequentially, which prevents timeout errors. You can also pause and resume the process to support incremental report generation.
 
-### Feature description
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-By leveraging this feature, users can efficiently handle extensive datasets while maintaining control over the report generation process, ensuring smooth and uninterrupted operations.
+### Prerequisites
 
-The feature resolves performance issues during inventory value report storage by dividing large datasets into manageable bundles. Each bundle is processed sequentially, allowing the report generation to continue without time-out errors. Additionally, users can pause and resume the process to support incremental report generation.
+To use this feature, your system must meet the following requirements:
 
-### _Configuration_
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
+- The feature that is named *Large Volume Historical Inventory Value Report Generation* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-To configure the feature:
+### Configure the large-volume option
 
-1.	Navigate to **Cost management > Inventory accounting policies setup > Parameters.**
-2.	Under the **Inventory value report storage** section, define the number of items to process in one bundle by setting the **Number of items per bundle** field.
-    - Example: For a dataset of 800,000 items, you might set the bundle size to 30,000 for optimal performance.
+To configure this feature, follow these steps.
 
-### _Execution_
+1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Parameters**.
+1. In the **Inventory value report storage** field group, set the **Number of items per bundle** field to the number of items that you want to process in one bundle when generating large-volume reports. For example, if you often deal with reports that cover 800,000 items, a bundle size of 30,000 might be appropriate.
 
-To generate a large volume historical inventory value report:
+### Use the large-volume option when generating a report
 
-1.	Go to **Cost management > Inquiries and reports > Inventory value report storage.**
-2.	On the Action Pane, select **New.**
-3.	In the **Inventory value** dialog box, on the Parameters FastTab:
-    - Set **Large item volume** to **Yes.**
-    - Configure additional parameters as required.
-4.	Click **OK** to start the batch job.
-Once the batch job is completed, the report will appear on the Inventory value report storage page. Refresh the page if needed to view the newly generated report.
+When you generate a report, you can choose whether to use standard-volume processing or large-volume processing.
 
-### _Pause and resume functionality_
+> [!IMPORTANT]
+> You should only use the large-volume option when generating reports for a significantly large number of items (for example, 50,000 or more) because it takes longer to run than the standard-volume option.
+
+To generate a large-volume historical inventory value report, follow these steps.
+
+1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory value report storage**.
+1. On the Action Pane, select **New**.
+1. In the **Inventory value** dialog, expand the **Parameters** FastTab and set **Large item volume** to *Yes*.
+1. Fill out the rest of the dialog as described in [Generate an Inventory value report storage report](#generate-storage).
+1. Select **OK** to start the batch job.
+
+When the batch job is finished, the report appears on the **Inventory value report storage** page. Refresh the page if needed to view the newly generated report.
+
+### Pause and resume functionality
+
 To pause and resume report generation:
 
-1.	Navigate to **Cost management > Inquiries and reports > Inventory value report storage.**
-2.	Select the report in progress from the list. The page displays the report configuration details.
-3.	On the Action Pane:
-    - Select **Pause** to temporarily halt the report generation.
-    - Select **Resume** to continue the process. The system will pick up from where it left off.
+1. Go to **Cost management > Inquiries and reports > Inventory value report storage**.
+1. Select the report in progress from the list. The page displays the report configuration details.
+1. Select one of the following buttons on the Action Pane:
+    - **Pause** – Temporarily stops generating the report.
+    - **Resume** – Resumes a paused process. The system picks up from where it left off.
 
 ### Considerations
+
+Keep the following considerations in mind when using the large-volume report generation feature:
 
 - The feature is specifically designed for large data volumes and may result in decreased performance compared to normal report generation for smaller datasets. Use it only when necessary.
 - Proper configuration of the bundle size is crucial for balancing performance and reliability.
 
 ### Limitations
 
-- Performance may degrade when the feature is applied to datasets that do not demand high-volume processing
+Performance may degrade when the feature is applied to datasets that don't require high-volume processing
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
