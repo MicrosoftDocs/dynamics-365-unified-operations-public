@@ -3,7 +3,7 @@ title: Operations scheduling
 description: Learn about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/22/2024
 ms.custom:
   - bap-template
