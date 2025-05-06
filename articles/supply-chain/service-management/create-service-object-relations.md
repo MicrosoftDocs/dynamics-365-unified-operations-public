@@ -3,7 +3,7 @@ title: Create service object relations
 description: Learn how to create service object relations for a service agreement and a service order, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
