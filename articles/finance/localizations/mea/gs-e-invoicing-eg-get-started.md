@@ -35,6 +35,36 @@ Before you begin the procedures in this article, complete the following prerequi
 > [!NOTE]
 > Egyptian authorities provide the certificate for digital signing with the required key. They provide this certificate only as a hardware token device that can't be added to an Azure Key Vault. However, Dynamics 365 Finance enables files to be written to and read from an Azure file share, and that file share can be configured to enable external signing of electronic documents. To learn more, go to the Egyptian tax authority's website by using the link that is provided in [Egyptian eInvoicing & eReceipt SDK - Frequently asked questions](https://sdk.invoicing.eta.gov.eg/faq/).
 
+## Azure Key Vault configuration
+
+Create an Azure Key Vault to store the required secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+
+Add the following required elements in the key vault:
+
+- The secret for the **client ID**, which must ...
+- The secret for the obtained **client secret**...
+
+## Configure electronic invoicing Key Vault parameters
+
+To configure electronic invoicing Key Vault parameters, follow these steps.
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section of this article.
+1. In the **SAS token secret** field, select the name of the storage account secret URL that must be used to authenticate access to the storage account.
+1. Select **Key Vault parameters**.
+1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each secret that is described in the previous section.
+
+    - <a id="Tok"></a>The **token** element of the **Secret** type.
+    - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
+    - <a id="PK"></a>The **Public key** element of the **Secret** type.
+
+    > [!NOTE]
+    > The values in the **Name** column should match the names of the secrets that are described in the previous section.
+
+
+## Import the electronic invoicing feature
+
+
 ## Configure the electronic invoicing feature
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature, review the default values, and update them as required, so that they better reflect your business operation.
