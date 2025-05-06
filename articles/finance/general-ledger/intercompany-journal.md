@@ -3,7 +3,7 @@ title: Intercompany journals and dimension values on multi-line vs single line j
 description: Access answers to some commonly asked questions regarding intercompany journals and dimension values, including outlines of various scenarios.
 author: kweekley
 ms.author: kweekley
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/05/2023
 ms.custom: 
 ms.reviewer: twheeloc

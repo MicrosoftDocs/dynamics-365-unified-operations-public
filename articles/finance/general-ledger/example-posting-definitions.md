@@ -3,7 +3,7 @@ title: Posting definition examples
 description: Access examples that show how posting definitions are used for purchase order encumbrances and budget appropriations for various account structures and dimensions.
 author: kweekley
 ms.author: kweekley
-ms.topic: article
+ms.topic: concept-article
 ms.date: 06/20/2017
 ms.reviewer: kfend
 audience: Application User
