@@ -3,7 +3,7 @@ title: Net customer and vendor balances
 description: Learn about customer and vendor balance netting in Microsoft Dynamics 365 Finance, including processes for setting up journal names and netting agreements. 
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/18/2025
 ms.custom:
 ms.search.form: 
