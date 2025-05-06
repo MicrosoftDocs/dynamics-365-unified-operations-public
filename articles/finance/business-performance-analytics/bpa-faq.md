@@ -30,8 +30,8 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
-### I am having trouble opening Business performance analytics. What can I do? 
-If you are accessing Business performance analytics from the maker portal, click **Play** in the top right corner to avoid viewing the app in editor mode.
+### I'm having trouble opening Business performance analytics. What can I do? 
+If you're accessing Business performance analytics from the maker portal, click **Play** in the top right corner to avoid viewing the app in editor mode.
 
 ### Why isn't my data showing up in Business performance analytics?
 
@@ -76,7 +76,7 @@ Two options are available for uninstalling Business performance analytics: code-
 2. Select the environment where you want to uninstall Business performance analytics.
 3. Select the environment URL that's provided in the details. You're redirected to the sign-in page for the Dataverse environment.
 4. Open your browser's developer tools by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> or going to **More tools** \> **Developer tools**. Then select the **Console** tab to open the developer console.
-5. Copy the following JavaScript code, and paste it into the developer console to start the uninstallation process.
+5. To start the uninstallation process, copy the following JavaScript code, and paste it into the developer console.
 
     The approximate time to delete all the solutions is 20 minutes. If the operation is successful, you receive the following message: "Business performance analytics solutions removed successfully."
 
@@ -230,7 +230,7 @@ When a new release of Business performance analytics is available, you can updat
 ### Why does Data Lake storage consumption grow steadily while using Business performance analytics, and what solutions are being implemented to address this issue?
 Some customers may observe that Data Lake storage consumption grows steadily more often than others due to operating on significant amounts of data, while others may never experience this issue. This happens because older Business performance analytics releases rely on staging-table references that block file deletion, causing multiple transform output files to accumulate over time. The Business performance analytics engineering team proactively checks for potential capacity concerns every two weeks and intervenes to remove old temporary files if usage approaches critical thresholds. Customers must open a support incident upon noticing storage constraints for more frequent manual cleanup by Microsoft engineers.
 
-In the Business performance analytics January 2025 update, a routine is introduced which removes staging file dependencies and implements a 3-day retention policy to regularly clear older files. After upgrading to Business performance analytics version 2.0.29241185 or later, Microsoft enables the auto-cleanup flight in each environment, drastically reducing reliance on manual cleanup processes. 
+In the Business performance analytics January 2025 update, a routine is introduced which removes staging file dependencies and implements a 3-day retention policy to regularly clear older files. After upgrading to Business performance analytics version 2.0.29241185 or later, Microsoft enables the autocleanup flight in each environment, drastically reducing reliance on manual cleanup processes. 
 
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
@@ -245,7 +245,7 @@ Business performance analytics’s semantic model includes a flexible date dimen
 
 #### Recommendations:
 - Use the dropdown or list slicers for fiscal periods, years, or weeks.
-- Leverage the `CalendarType` filter to dynamically adjust time context in reports.
+- Use the `CalendarType` filter to dynamically adjust time context in reports.
 - Design visuals and DAX measures to respond to the selected calendar configuration.
 
 This approach ensures Business performance analytics remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
