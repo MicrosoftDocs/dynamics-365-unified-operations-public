@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 02/03/2025
+ms.date: 05/06/2025
 ---
 
 # Business performance analytics FAQ
@@ -235,19 +235,20 @@ In the Business performance analytics January 2025 update, a routine is introduc
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
 
-### Can BPA support multiple calendar configurations?
-Yes, Business Performance Analytics (BPA) supports multiple calendar configurations, including fiscal calendars such as 4-4-5, 4-5-4, and other custom non-Gregorian structures.
+### Can Business performance analytics support multiple calendar configurations?
+Yes, Business performance analytics supports multiple calendar configurations, including fiscal calendars such as 4-4-5, 4-5-4, and other custom non-Gregorian structures.
 
-BPA’s semantic model includes a flexible date dimension (`Dim - Date (Accounting)`) with a `CalendarType` attribute that allows data to be analyzed according to a customer's preferred calendar setup. This design supports consistent financial and operational reporting across varying fiscal calendars.
+Business performance analytics’s semantic model includes a flexible date dimension (`Dim - Date (Accounting)`) with a `CalendarType` attribute that allows data to be analyzed according to a customer's preferred calendar setup. This design supports consistent financial and operational reporting across varying fiscal calendars.
 
-> **Note:** Some native Power BI visuals—like slicers with the *"Between"* style—only work with continuous Gregorian `DateTime` columns and may not reflect fiscal calendar logic. This is a limitation of the visual, not the data model.
+>[!Note]
+>Some native Power BI visuals—like slicers with the *"Between"* style—only work with continuous Gregorian `DateTime` columns and may not reflect fiscal calendar logic. This is a limitation of the visual, not the data model.
 
 #### Recommendations:
-- Use **dropdown or list slicers** for fiscal periods, years, or weeks.
+- Use the dropdown or list slicers for fiscal periods, years, or weeks.
 - Leverage the `CalendarType` filter to dynamically adjust time context in reports.
 - Design visuals and DAX measures to respond to the selected calendar configuration.
 
-This approach ensures BPA remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
+This approach ensures Business performance analytics remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
 
 
 ### How do I receive the latest news about Business performance analytics?
