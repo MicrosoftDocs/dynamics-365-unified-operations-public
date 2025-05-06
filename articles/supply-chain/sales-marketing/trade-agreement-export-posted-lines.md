@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: VendTable, CustTable, PriceDiscAdm, DMFExecutionHistoryList, DMFQuickImportExportEnhanced, DataManagementWorkspace
 ms.topic: how-to
-ms.date: 05/05/2025
+ms.date: 05/06/2025
 ms.custom: 
   - bap-template
 ---
@@ -26,7 +26,7 @@ To convert posted trade agreement lines into unposted lines, follow these steps.
 
 1. Select the lines you want to convert for eventual export.
 1. On the Action Pane, select **Edit selected lines**.
-1. In the dialog, set the **Name** field to the name of the journal name to assign to your selected lines.
+1. In the dialog, set the **Name** field to the name of the journal that you want to assign to your selected lines.
 1. Select **OK**. This action converts the active price trade agreement lines into open trade agreement lines, which are now exportable.
 
 ## Export the open trade agreement lines
@@ -42,11 +42,6 @@ After you've converted the relevant lines to open trade agreements, you'll be ab
     - **Target data format** – Select the format to export data to.
 
 1. Select **Add** to add the new row, and then select **Close** to close the dialog box.
-1. Usually, you'll export one report at a time. To export a single report, select the button in the **Filter** column for the row that you just added to **Selected entities** FastTab. Then use the query designer to set up the following filter: <!-- KFM: I think this step should be removed (copy/paste error?) -->
-    - **Table** – Select *Open purchase price journal lines V2* or *Open sales price journal lines V2*
-    - **Field** – Select *Execution name*.
-    - **Criteria** – Enter the name of the report that you want to export.
-
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, open the **Export options** tab and select **Export now**.
 1. The **Execution summary** page opens. Here you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the *Open purchase price journal lines V2* or *Open sales price journal lines V2* entity in the list, and then select **Download file** to download the data that was exported from that entity.
