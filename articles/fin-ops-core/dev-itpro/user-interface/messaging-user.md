@@ -3,7 +3,7 @@ title: Messaging system for finance and operations apps
 description: Learn about the messaging system in finance and operations apps, including overviews on where messages surface and examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/17/2024
 ms.reviewer: twheeloc
 audience: Developer
