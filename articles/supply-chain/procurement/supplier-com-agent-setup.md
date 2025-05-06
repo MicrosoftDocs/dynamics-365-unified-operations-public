@@ -53,6 +53,9 @@ To set up a private mailbox, follow these steps:
 1. Select the check box for each of the mailboxes that you want to use with the supplier communication agent.
 1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
 
+Now, the system administrator needs to assign necessary roles to the user so that they are able to configure the agent.
+1. Head back to the **Settings** page, and expand **Users**. Find the user that owns the private mailbox and select it. Click on **Manage security roles** on the top commandbar and select **Finance and Operations Agent Configuration Manager** role. Note that, you might also need to assign **Basic User** role to the user so that they can modify personalization settings. 
+
 After the private mailbox is set up, the user who owns the mailbox must update personalization settings to track all the emails. The owner of the mailbox must follow these steps:
 
 1. Go to your environment URL.
@@ -82,6 +85,8 @@ If you're using a shared mailbox, then create a queue to allow all users working
     > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed to send outgoing mail, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
 
 1. Make sure that no other mailboxes with the same email address are set up and active. To check this, go back to the **Settings** page for your environment in the Power Platform Admin Center. Expand the **Email** heading and select **Mailboxes**. Then, select *All Mailboxes* from the drop-down list at the top. Make sure that there's only one mailbox with the same shared mailbox email address. If more than one exists, deactivate all the others.
+
+Note: The user that will configure the agent from the Agents page in Finance and Operations should have **Finance and Operations Configuration Manager** role assigned. To assign this, head back to the **Settings** page, and expand **Users**. Find the user and select it. Click on **Manage security roles** on the top commandbar and select **Finance and Operations Agent Configuration Manager** role.
 
 For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
