@@ -3,7 +3,7 @@ title: Business performance planning custom visuals overview
 description: Access an overview of the custom visuals in the Business performance planning application, including outlines on matrix planning, reporting, and variance.
 author: ShielaSogge
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/14/2023
 ms.reviewer: twheeloc
 audience: Application User
