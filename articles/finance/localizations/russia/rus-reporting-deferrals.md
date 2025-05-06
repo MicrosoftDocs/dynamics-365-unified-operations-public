@@ -3,7 +3,7 @@ title: Reporting for deferrals (Russia)
 description: Learn about the various reports that are available for deferrals, including a step-by-step process and a table that defines various fields.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/20/2024
