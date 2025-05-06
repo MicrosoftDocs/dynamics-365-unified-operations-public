@@ -5,7 +5,7 @@ title: Configure integration with Dayforce
 description: This article describes the required configuration steps needed for the integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
 author: twheeloc
 ms.date: 09/19/2023
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 ms.custom: evergreen
 ms.search.form: PersonnelIntegrationConfiguration

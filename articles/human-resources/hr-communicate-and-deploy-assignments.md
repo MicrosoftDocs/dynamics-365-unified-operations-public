@@ -4,7 +4,7 @@ description: Learn how to send messages to workers during registration and assig
 author: twheeloc
 ms.author: twheeloc
 ms.date: 01/24/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 f1_keywords:
 - absence
 - plan

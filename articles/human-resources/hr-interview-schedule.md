@@ -5,7 +5,7 @@ title: Set up the Interview schedule feature in the Dynamics 365 Human Resources
 description: Learn about the Interview schedule feature in the Microsoft Dynamics 365 Human Resources Recruiting add-on.
 author: twheeloc
 ms.date: 04/14/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: 

@@ -5,7 +5,7 @@ title: Troubleshoot analytic reports
 description: This article explains how to troubleshoot and diagnose issues if a customer's data changes don't appear in any of the customer's workspaces.
 author: twheeloc
 ms.date: 01/31/2023
-ms.topic: article
+ms.topic: troubleshooting-general
 # optional metadata
 
 # ms.search.form: HcmPersonnelManagementWorkspace, LeaveAbsenceWorkspace, HcmTalentBenefitWorkspace, HcmCompensationWorkspace, HcmEmployeeDevelopmentWorkspace, HcmLearningWorkspace
