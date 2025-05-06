@@ -66,12 +66,12 @@ If you're using a shared mailbox, then create a queue to allow all users working
 
 1. Sign in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as user with a system administrator security role.
 1. Select the environment you want to set up.
-1. On the command bar, select **Settings.**
+1. On the command bar, select **Settings**.
 1. On the **Settings** page, expand the **Users + permissions** heading and select **Teams**.
 1. Select **Create team** at the top.
-1. Fill out a name, business unit, and administrator as needed and set the **Team type** to *Owner*.  
+1. Fill out a name, business unit, and administrator as needed and set the **Team type** to *Owner*. Then select **Next**.
 1. On the next page, add all the members that should have access to the shared mailbox. This allows the selected users to access email contents from the Supplier Communications Agent incoming email workspace in Supply Chain Management.
-1. On the role assignment page, select **Finance and Operations Basic User** and click **Save**. 
+1. On the **Manage security roles** page, select *Finance and Operations Basic User* and then select **Save**.
 1. Go back to the **Settings** page, expand the **Business** heading, and select **Queues**.
 1. Select the **New** button on top to create a new **Queue** entity record.
 1. Enter a **Name**, set **Incoming email** to the email address of the shared mailbox, and assign the **Owner** as the team that was created earlier. Then select **Save**.  
@@ -81,7 +81,7 @@ If you're using a shared mailbox, then create a queue to allow all users working
     > [!TIP]
     > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed to send outgoing mail, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
 
-1. Make sure that no other mailboxes with the same email address are set up and active. To check this, head back to Power Platform Admin Center and navigate to **Settings** > **Email** > **Mailboxes**. Then, select **All Mailboxes** from the dropdown on the top, make sure that there's only one mailbox with the same shared mailbox email address. If there are multiple, deactivate all the other ones.
+1. Make sure that no other mailboxes with the same email address are set up and active. To check this, go back to the **Settings** page for your environment in Power Platform Admin Center. Expand the **Email** heading and select **Mailboxes**. Then, select *All Mailboxes* from the drop-down list at the top. Make sure that there's only one mailbox with the same shared mailbox email address. If more than one exists, deactivate all the others.
 
 For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
