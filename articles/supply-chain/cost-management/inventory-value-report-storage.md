@@ -265,7 +265,7 @@ For example, you have an item that has the item number *A0001*. In the storage d
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.44 GA -->
 
-This feature lets you handle extensive datasets while maintaining control over the process of generating **Inventory value report storage** reports, ensuring smooth and uninterrupted operation. It improves performance when by dividing large datasets into manageable bundles. The system processes each bundle sequentially, which prevents timeout errors. You can also pause and resume the process to support incremental report generation.
+This feature lets you handle extensive datasets while maintaining control over the process of generating **Inventory value report storage** reports, ensuring smooth and uninterrupted operation. It improves performance by dividing large datasets into manageable bundles. The system processes each bundle sequentially, which prevents timeout errors. You can also pause and resume the process to support incremental report generation.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -307,10 +307,10 @@ When the batch job is finished, the report appears on the **Inventory value repo
 
 To pause and resume report generation:
 
-1. Go to **Cost management > Inquiries and reports > Inventory value report storage**.
+1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory value report storage**.
 1. Select the report in progress from the list. The page displays the report configuration details.
 1. Select one of the following buttons on the Action Pane:
-    - **Pause** – Temporarily stops generating the report.
-    - **Resume** – Resumes a paused process. The system picks up from where it left off.
+    - **Pause** – Temporarily stop generating a running report.
+    - **Resume** – Resume a paused process. The system picks up from where it left off.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
