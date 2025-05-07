@@ -21,8 +21,8 @@ The simplified RVIE report in Peru is a record of sales and income. These report
 Before you can generate and print simplified RVIE reports, the following prerequisites must be met:
 - The legal entity's address must be in Peru.
 - You must enable both the general LATAM feature and the country/region-specific LATAM feature for Peru.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
-- You must configure the electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
+- You must configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 RVIE is composed by the following formats that you must import:
 - Last twelve months (LTM) Tax Report mapping
