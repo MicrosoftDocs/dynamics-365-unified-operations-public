@@ -3,7 +3,7 @@ title: SPLIT ER function
 description: Learn about how the SPLIT Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/01/2021
 ms.reviewer: johnmichalak
 audience: IT Pro

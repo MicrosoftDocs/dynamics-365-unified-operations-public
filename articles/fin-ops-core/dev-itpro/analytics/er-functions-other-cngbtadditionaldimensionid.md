@@ -3,7 +3,7 @@ title: CN_GBT_ADDITIONALDIMENSIONID ER function
 description: Learn about how the CN_GBT_ADDITIONALDIMENSIONID Electronic reporting (ER) function is used, including syntax strings, arguments, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: reference
 ms.date: 12/17/2019
 ms.reviewer: johnmichalak
 audience: IT Pro
