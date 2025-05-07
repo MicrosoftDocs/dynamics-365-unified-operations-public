@@ -3,7 +3,7 @@ title: Support for multiple VAT registration numbers in Immediate Supply of Info
 description: Learn about the scope of the Immediate Supply of Information on VAT feature of Spain to support multiple VAT registration numbers.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024
