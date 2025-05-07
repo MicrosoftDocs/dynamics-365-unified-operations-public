@@ -4,7 +4,7 @@ description: Learn how to set up, generate, and use inventory value reports. The
 author: prasungoel
 ms.author: prasungoel
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 05/07/2025
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
