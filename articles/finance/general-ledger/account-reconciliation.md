@@ -23,7 +23,7 @@ To access the **Account reconciliation workspace** navigate to Workspaces – Ac
 
 In the bottom section of the workspace page you will find details per each module and each company in that module that has transactional data for the period selected. The status column has a button that will display the number of exceptions to deal with or will indicate "Fully reconciled" status when all exceptions are dealt with. 
 
-## CoPilot agent for account reconcilation
+## CoPilot agent for account reconciliation
 
 To enable the copilot agent for the account reconciliation, navigate to ... 
 
@@ -31,7 +31,7 @@ To enable the copilot agent for the account reconciliation, navigate to ...
 
 If there are exceptions to address, click the mitigate exceptions button found in the open exceptions card to view all exceptions for all modules across all legal entities.  You can also navigate to the mitigate exceptions page by clicking on the red status button for a given module and a specific legal entity. 
 
-The **Open exceptions** page allows you to view the details of each exception and take proper action to reoncile each exception. 
+The **Open exceptions** page allows you to view the details of each exception and take proper action to reconcile each exception. 
 When the exception is “In Subledger not in ledger.” the following actions are available:
 - Create journal entry: User will be taken to the General journal where an adjusting entry can be created to address the exception.
 - Link transactions: User will be taken to the Link transactions form where they can link transactions that are In subledger not ledger and In ledger not subledger.
@@ -53,18 +53,18 @@ When the exception is “Amount mismatch” the following actions are available:
 
 ## Snapshots
 
-The last column of the main grid in the lower portion of the workspace page is to view a snapshot of data for the selected period, module and company combination.  The snapshot provides a final summary of all data for the given period including the automatically reconciled transactions and any addressed exceptions you might have dealt with for the period.  The snapshot will only be available for a ledger calendar fical period that is marked as on-hold or permanently closed and is fully reconciled.  The generation of the snapshot will happen with the same background process and schedule 
+The last column of the main grid in the lower portion of the workspace page is to view a snapshot of data for the selected period, module and company combination.  The snapshot provides a final summary of all data for the given period including the automatically reconciled transactions and any addressed exceptions you might have dealt with for the period.  The snapshot will only be available for a ledger calendar fiscal period that is marked as on-hold or permanently closed and is fully reconciled.  The generation of the snapshot will happen with the same background process and schedule 
 
 ## Configuration
 
-Using the gear icon on the top right of the workspace page you can view the settings and configuaration for the account reconciliation feature.  On the **Account reconciliation configuration** page you can enable or disable the reconciliation processing for each module.  Secondly you can view adn add/remove accounts used for each module for each legal entity.  The list of accounts listed are pre-populated from the existing posting profile setup, bank and tax account setup in each legal entity. 
+Using the gear icon on the top right of the workspace page you can view the settings and configuration for the account reconciliation feature.  On the **Account reconciliation configuration** page you can enable or disable the reconciliation processing for each module.  Secondly you can view and add/remove accounts used for each module for each legal entity.  The list of accounts listed are pre-populated from the existing posting profile setup, bank and tax account setup in each legal entity. 
 
 ## Frequently asked questions
 
 Q) The workspace does not show any data, what can I do?
 - Verify the last time and next runtime at the top right portion of the workspace.  There will be an indication similar to: "Data last updated 30 minutes ago, next update in 1 hour".
 - For testing purposes - you can adjust the frequency and next runtime in the process automation - background processes for the process named 'Automatic account reconciliation process'.  For production use, consider the impact of when and how frequently you want the process to execute and set the appropriate schedule.  
-- Check the system batch job is waiting and not withold status in the batch jobs page. Look for the job named 'Process automation polling system job'.
+- Check the system batch job is waiting and not withhold status in the batch jobs page. Look for the job named 'Process automation polling system job'.
 
 Q) Question2
  
