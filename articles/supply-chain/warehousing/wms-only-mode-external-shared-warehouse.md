@@ -82,10 +82,10 @@ For a more detailed description of this process and the related processes, see [
 
 Transfer orders with external shared warehousing mean that either the source, destination, or both warehouses in a transfer order are external.
 Most aspects of the transfer order processing work in the same way, regardless of whether you use external shared warehouses.
-
+                                                                       
 ### Prerequisites
 
-Before you can use the features described in this article, your system must meet the following requirements:
+Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
 - In the warehouse configuration of the externally managed warehouse, apart from a *default location*, you also need to setup a *default license plate location*. This location will be used as a temporary location when processing a transfer order. When shipping from an external warehouse, an update about what has been shipped from it is received and it contains a license plate. Inventory is then moved from a *default location* to a *default license plate location* and the transfer order is processed against that location.
@@ -100,14 +100,14 @@ Here's a high-level description of the process. Steps that start with LE1 are do
 
 1. *LE1:* Transfer order is created and released to the warehouse. The system then creates *external warehouse outbound shipment order requests*. As a result, outbound shipment order messages are delivered to the *WOM* legal entity.
 1. *WOM:* The *Outbound shipment order messages* are processed. As a result of this processing, *outbound shipment orders* are created.
-1. *WOM:* The orders are released for further warehouse processing, either manually or automatically. More details are in [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md#outbound-example-process).
+1. *WOM:* The orders are released for further warehouse processing, either manually or automatically. The rest of the processing is done the same like in [Outbound example process (shared warehouse)](wms-only-mode-external-shared-warehouse.md#outbound-example-process).
 1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse outbound shipment order updates are generated for *LE1*.
-1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related transfer order transactions are updated. The transactions become *Picked* and transfer order becomes *Shipped* if everything from the order is shipped. This update enables further processing of the transfer order, which is receiving it in the destination warehouse.
+1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related transfer order transactions are updated. The transfer order becomes *Shipped* if everything from the order is shipped. This update enables further processing of the transfer order, which is receiving it in the destination warehouse.
 
 > [!NOTE]
-> When outbound shipment order update is processed in *LE1*, inbound advance shipment notices (ASN) are created for every license plate that has been shipped from the external warehouse. This allows for license plate receiving in the destination warehouse in the transfer order.
+> When outbound shipment order update is processed in *LE1*, an inbound advance shipment notice (ASN) is created for every license plate that has been shipped from the external warehouse. This allows for license plate receiving in the destination warehouse.
 
-### Transfer order with receiving in an external warehouse
+### Transfer order with receiving to an external warehouse
 
 The following illustration highlights the elements of the transfer order process when receiving in an external warehouse.
 
@@ -117,14 +117,13 @@ Here's a high-level description of the process. Steps that start with LE1 are do
 
 1. *LE1:* Transfer order is created and released to the warehouse. The transfer order is shipped and *transfer order shipping journal* gets created. The system then creates *external warehouse inbound shipment order requests* from the shipping journal. As a result, inbound shipment order messages are delivered to the *WOM* legal entity.
 1. *WOM:* The warehousing entity processes the inbound shipment order messages. As a result of this processing, *inbound shipment orders* are created.
-1. *WOM:* Inbound loads are created manually, automatically, or through import (depending on your configuration).
-1. *WOM:* The warehousing entity processes [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) operations for the related loads. These operations update the load status to *Received* and generate *external warehouse inbound shipment order updates* for *LE1*. More details are in [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md#inbound-example-process).
-1. *LE1:* During the processing of the external warehouse inbound shipment order updates, inbound loads and shipments are created, and the related transfer order line transactions are updated to *Registered*. If everything from the transfer order is received, transfer order will move to the *Received* status.
+1. *WOM:* Inbound loads are created manually, automatically, or through import (depending on your configuration). The rest of the processing in *WOM* entity is done in the same way like in [Inbound example process (shared warehouse)](wms-only-mode-external-shared-warehouse.md#inbound-example-process).
+1. *WOM:* The warehousing entity processes [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) operations for the related loads. These operations update the load status to *Received* and generate *external warehouse inbound shipment order updates* for *LE1*.
+1. *LE1:* During the processing of the external warehouse inbound shipment order updates, inbound loads and shipments are created, and the related transfer order line transactions are updated. If everything from the transfer order is received, transfer order will move to the *Received* status.
 
+### Transfer order with shipping from and receiving to an external warehouse
 
-### Transfer order with shipping from and receiving in an external warehouse
-
-It is possible to have both source and destination warehouses set as external. This scenario works the same as above two combined.
+It is possible to have both source and destination warehouses set as external. This scenario works the same as the above two combined.
 
 
 ## On-hand adjustments
