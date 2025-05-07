@@ -38,27 +38,27 @@ Before you can generate and print the report, the following prerequisites must b
     1. In the **Report/Service type** field, select an ER configuration.
     1. In the **Model mapping name** field, select Ledger Accounting LTM.
     1. In the **Data model definition** field, select GeneralLedger.
-    1. In the **Format mapping** field, select Cash and Bank Ledger F1.2 or Cash and Bank Ledger F1.1.
+    1. In the **Format mapping** field, select **Cash and Bank Ledger F1.2** or **Cash and Bank Ledger F1.1**.
     1. In the list of report/service types, enable **Taxes report and General ledger**.
-    1. In the list of parameters, add **TaxApplicationId** to the **Name** column, and add the tax application code in the **Value** column. Learn more in [SSRS Reports/Services references configuration for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-ssrsreport-services)
+    1. In the list of parameters, add **TaxApplicationId** to the **Name** column, and add the tax application code in the **Value** column. Learn more in [SSRS Reports/Services references configuration for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-ssrsreport-services).
 
-## Additional configurations required for Cash And Banks Ledger Format 1.2
+## Additional configuration required for Cash And Banks Ledger Format 1.2
 
 - You must create a tax application to use with this format. Learn more in [Tax application for Latin America](../ltm-core-tax-application.md).
-- Enter the payment method codes in the tax application section of the document classes used. Learn more in [Document classes for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class).
+- Enter the payment method codes in the tax application section of the document classes that you use. Learn more in [Document classes for Latin America](/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class).
 
 ## Configure application-specific parameters for both formats
 
 To configure application-specific parameters for both the Cash and Bank Ledger F1.1 and Cash and Bank Ledger F1.2 formats, follow these steps.
 
 1. Go to **Organization administration** > **Workspace** > and select **Reporting configurations**.
-2. On the left section select the format to be configured.
-2. Go to the **Configurations** tab, in the **Application specific parameters** group select **Setup**.
-3. On the **Application specific parameters** page, on the **Lookups** tab, select **IsApplicable**.
-4. In the **Conditions** FastTab, select **Add**.
-5. In the **Lookup result** field, select **Yes**
-6. In Document classification Id (VoucherClassId) field select all document classes that represent bank transactions and should appear in the **Cash and Bank Ledger F 1.2** report or select all document classes that represent cash movements and should appear in the **Cash and Bank Ledger F 1.1** report.
-1. To ensure that the report shows the transactions that meet the configured conditions, complete the **Lookup result** fields as **Not Applicable** or **No** with **blank** and **non-blank** conditions.
+1. In the left section, select the format to configure.
+1. On the **Configurations** FastTab, in the **Application specific parameters** group, select **Setup**.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **IsApplicable**.
+1. On the **Conditions** FastTab, select **Add**.
+1. In the **Lookup result** field, select **Yes**
+1. In **Document classification ID (VoucherClassId)** field, select all document classes that represent bank transactions and should appear in the **Cash and Bank Ledger F 1.2** report, or select all document classes that represent cash movements and should appear in the **Cash and Bank Ledger F 1.1** report.
+1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields as **Not Applicable** or **No**, and specify **Blank** and **Non-blank** conditions.
 
 ## Generate reports for both formats
 
