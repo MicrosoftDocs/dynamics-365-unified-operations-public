@@ -42,7 +42,7 @@ Use the following procedure to set up promoted fields.
     > - For a given step, you should only promote fields that are displayed by default in the mobile app for that step. If you promote a field that isn't shown in the app, that setting has no effect.
     > - If you've promoted one or more fields, then only those fields will be shown on the main page of the app. However, workers can still view the remaining fields by opening the details page.
     > - If the promoted field has a null value, it won't be displayed.
-    > - The fields that are not promoted will not be removed from the warehouse mobile app page, but just from the main card. They can still be accessed from the main card by clicking on it.
+    > - The fields that are not promoted will not be removed from the warehouse mobile app page, but just from the main card. They can still be accessed from the main card by clicking on it. This can also be a way to hide the fields from the user if they are not relevant. However, if the field is required for the given warehouse mobile device flow, it will still be shown to the user at the relevant point.
 
 1. Select **OK** to apply your settings. Your selected fields are now listed on the **Select promoted fields** FastTab.
 
