@@ -3,7 +3,7 @@ title: Posting definitions in the public sector
 description: Access examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria.
 author: velofog
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User
