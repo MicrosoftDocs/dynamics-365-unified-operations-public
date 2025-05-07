@@ -86,7 +86,7 @@ If you're using a shared mailbox, then create a queue to allow all users working
 
 1. Make sure that no other mailboxes with the same email address are set up and active. To check this, go back to the **Settings** page for your environment in the Power Platform Admin Center. Expand the **Email** heading and select **Mailboxes**. Then, select *All Mailboxes* from the drop-down list at the top. Make sure that there's only one mailbox with the same shared mailbox email address. If more than one exists, deactivate all the others.
 
-Note: The user that will configure the agent from the Agents page in Finance and Operations should have **Finance and Operations Configuration Manager** role assigned. To assign this, head back to the **Settings** page, and expand **Users**. Find the user and select it. Click on **Manage security roles** on the top commandbar and select **Finance and Operations Agent Configuration Manager** role.
+Note: The user that will configure the agent from the Agents page in Finance and Operations should have **Finance and Operations Configuration Manager** role assigned. To assign this, head back to the **Settings** page, and expand **Users**. Find the user and select it. Click on **Manage security roles** on the top commandbar and select **Finance and Operations Agent Configuration Manager** role and finally save it.
 
 For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
