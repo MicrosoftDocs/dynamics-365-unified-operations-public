@@ -3,7 +3,7 @@ title: Purchase order year-end close
 description: Learn about the required steps for running the purchase order year-end process.
 author: music727
 ms.author: mibeinar
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/1/2025
 ms.reviewer: twheeloc
 audience: Application User
