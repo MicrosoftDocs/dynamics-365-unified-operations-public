@@ -3,7 +3,7 @@ title: Engineering change management parameters
 description: Learn how to configure engineering change management features for Microsoft Dynamics 365 Supply Chain Management with an outline on the release control tab.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: concept-article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
