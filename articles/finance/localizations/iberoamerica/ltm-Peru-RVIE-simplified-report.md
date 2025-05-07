@@ -71,7 +71,7 @@ To configure application-specific parameters in a simplified RVIE report, follow
 1. In the **Tax code** field, select the tax code configured for "Tax on consumption of plastic bottles".
 1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields to **NotApplicable**, and specify **Blank** and **Non-blank** conditions.
 
-## Run RVIE report
+## Generate a RVIE report
 
 To generate any RVIE annex report, follow these steps.
 
