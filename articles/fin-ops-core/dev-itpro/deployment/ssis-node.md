@@ -4,7 +4,7 @@ title: Add an SSIS node to an existing environment
 description: Learn how to add a Microsoft SQL Server Integration Services (SSIS) node in an on-premises environment, including installation steps.
 author: ttreen
 ms.author: ttreen
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/04/2025
 ms.custom:
 ms.reviewer: 
