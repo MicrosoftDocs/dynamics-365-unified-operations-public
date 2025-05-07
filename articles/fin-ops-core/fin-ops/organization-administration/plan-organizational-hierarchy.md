@@ -218,6 +218,10 @@ You must manually change companies to enter transactions and perform inquiries i
 
 You do not need to change companies to access data from multiple operating units. Consolidated inquiry and reporting and individual regional inquiry is easier and faster.
 
+## Introducing Multi-Company Processing for Hierarchical Legal-Entity Selection
+
+To enable users with access to multiple companies to execute transactions, generate reports, or inquire transactions, assign the “Multi-company processing” purpose to one or more Organization hierarchies. Introduced in version **10.0.44** under **Feature Management** as **Multi-Company purpose,** this setting activates a hierarchical parent-child control for legal-entity selection. In **10.0.44**, that new multi-company control replaces the existing flat multi-selection list in Fixed asset depreciation proposals, Asset leasing batch journal creation, and Asset leasing reports.
+
 ## Best practices for modeling organizations and hierarchies
 
 Consider the following best practices when you implement an organization hierarchy:
