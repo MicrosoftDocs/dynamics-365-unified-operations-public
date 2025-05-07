@@ -24,13 +24,13 @@ Before you can generate and print simplified RVIE reports, the following prerequ
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
 - You must configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-RVIE is composed by the following formats that you must import:
+RVIE is composed of the following formats that you must import:
 - Last twelve months (LTM) Tax Report mapping
 - LTM Tax Report
 - REG Vtas E Ing Simplicado (txt)
 - PE Simplified Sales Register (Excel)
 
-## Additional configurations required for RVIE
+## Additional configuration required for RVIE
 
 - You must create a SUNAT tax application code to use on the report. Learn more in [Tax application for Latin America](../ltm-core-tax-application.md).
 - When you configure document classes for purchase invoices, debit notes, and credit notes, the tax application code must be set according to SUNAT table 3, "Types of Payment Receipts or Documents."
@@ -54,12 +54,12 @@ To configure application-specific parameters in a simplified RVIE report, follow
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **CustomerInvoiceIsApplicable**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **Yes**
-1. In **Document classification Id (VoucherClassId)** field, select all document classes required for customer transactions.
+1. In **Document classification ID (VoucherClassId)** field, select all document classes required for customer transactions.
 1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields as **No**, and specify **Blank** and **Non-blank** conditions.
 1. On to **Lookups** FastTab, select **TaxType**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **IGV / IPM**.
-1. In **Tax code** field, select **General Sales Tax or Municipal Promotion Tax**.
+1. In the **Tax code** field, select **General Sales Tax or Municipal Promotion Tax**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **BIA**.
 1. In the **Tax code** field, select the tax code configured for "Taxable base".
