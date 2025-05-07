@@ -62,8 +62,8 @@ To configure application-specific parameters in a simplified RVIE report, follow
 1. In **Tax code** field, select **General Sales Tax or Municipal Promotion Tax**.
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **BIA**.
-1. In **Tax code** field select the tax code configured for "Taxable base"
-1. In the **Conditions** FastTab, select **Add**.
+1. In the **Tax code** field, select the tax code configured for "Taxable base".
+1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **OT**.
 1. In the **Tax code** field, select the tax code configured for "Other taxes".
 1. On the **Conditions** FastTab, select **Add**.
