@@ -80,10 +80,10 @@ To configure application-specific parameters in a RVIE report, follow these step
 1. In the **Tax code** field, select the tax code configured for "Tax on sales of polished rice".
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **ISC**.
-1. In **Tax code** field, select the tax code configured for "Selective Consumption Tax".
+1. In the **Tax code** field, select the tax code configured for "Selective Consumption Tax".
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **ICPB**.
-1. In **Tax code** field select the tax code configured for "Tax on consumption of plastic bottles".
+1. In the **Tax code** field, select the tax code configured for "Tax on consumption of plastic bottles".
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select **VFE**.
 1. In the **Tax code** field, select the tax code configured for "Invoiced export value".
