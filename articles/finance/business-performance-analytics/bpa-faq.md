@@ -44,11 +44,11 @@ If you're accessing Business performance analytics from the maker portal, click 
 
 To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
-Some customers may reach the storage capacity limits of their Power BI Embedded SKU—by default, Business Performance Analytics uses the A3 tier—and when that happens, the underlying dataset cannot be refreshed or updated; this is exacerbated by our current Direct Lake Import mode, but we plan to transition to Direct Lake Query by year-end to offload storage requirements and ensure uninterrupted dataset updates.
+Some customers may reach the storage capacity limits of their Power BI Embedded SKU—by default, Business performance analytics uses the A3 tier—and when that happens, the underlying dataset can't be refreshed or updated. This is exacerbated by our current Direct Lake import mode, we plan to transition to Direct Lake query by year-end to offload storage requirements and ensure uninterrupted dataset updates.
 
 ### How many years of data are available on reports?
 
-Business performance analytics has data for the most recent 8 quarters. This is limited only until we transition to Direct Lake mode at year end.
+Business performance analytics has data for the most recent eight quarters. This is limited until the transition to Direct Lake mode at year end.
 
 ## Data refresh
 ### After Business performance analytics is set up, how often is the data refreshed?
@@ -56,9 +56,9 @@ Business performance analytics has data for the most recent 8 quarters. This is 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
 ## 5. Storage and capacity
-### Why does Business Performance Analytics’ managed data lake storage keep growing, and how is it cleaned up?
+### Why does Business performance analytics’ managed data lake storage keep growing, and how is it cleaned up?
 
-Each time BPA refreshes, it transforms your source data into files in the Dataverse managed data lake without immediately deleting prior files—older files are purged automatically after 30 days or sooner if usage hits 50 percent. In earlier releases, staging-table references sometimes blocked file deletion, so transform outputs accumulated until Microsoft engineers manually cleaned up every two weeks. As of the January 2025 update (v2.0.29241185+), we’ve removed those dependencies and added a 3-day retention policy via the autocleanup flight flag, which regularly clears out old files and dramatically reduces manual intervention.
+Each time Business performance analytics refreshes, your source data are transformed into files in the Dataverse managed data lake without immediately deleting prior files. Older files are purged automatically after 30 days or earlier if usage hits 50 percent. In earlier releases, staging-table references sometimes blocked file deletion, so transform outputs accumulated until Microsoft engineers manually cleaned up every two weeks. As of the January 2025 update (v2.0.29241185+), those dependencies are removed and added a three day retention policy via the autocleanup flight flag, which regularly clears out old files and dramatically reduces manual intervention.
 
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
