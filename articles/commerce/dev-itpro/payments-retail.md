@@ -3,7 +3,7 @@ title: Payments FAQ
 description: This article answers frequently ask questions about payment options in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/18/2023
-ms.topic: article
+ms.topic: faq
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

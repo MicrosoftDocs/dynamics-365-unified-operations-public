@@ -3,7 +3,7 @@ title: Create a Cloud POS extension package
 description: This article explains how to create a Cloud POS extension package.
 author: josaw1
 ms.date: 04/13/2021
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
