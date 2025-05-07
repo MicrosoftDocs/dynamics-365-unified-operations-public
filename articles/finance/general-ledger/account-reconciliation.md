@@ -31,7 +31,25 @@ To enable the copilot agent for the account reconciliation, navigate to ...
 
 If there are exceptions to address, click the mitigate exceptions button found in the open exceptions card to view all exceptions for all modules across all legal entities.  You can also navigate to the mitigate exceptions page by clicking on the red status button for a given module and a specific legal entity. 
 
-*Undo - 
+The **Open exceptions** page allows you to view the details of each exception and take proper action to reoncile each exception. 
+When the exception is “In Subledger not in ledger.” the following actions are available:
+- Create journal entry: User will be taken to the General journal where an adjusting entry can be created to address the exception.
+- Link transactions: User will be taken to the Link transactions form where they can link transactions that are In subledger not ledger and In ledger not subledger.
+- Accept without change: Exception will be cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
+- View exception history: User can view the history of the exception.
+
+When the exception is “In Ledger not in subledger” the following actions are available:
+- Reverse GL voucher: Create a reversing entry for the ledger voucher.
+- Link transactions: User will be taken to the Link transactions form where they can link transactions.
+- Accept without change: Exception will be cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
+- Create adjusting journal entry: User will be taken to the General journal where an adjusting entry can be created to address the exception.
+
+When the exception is “Amount mismatch” the following actions are available:
+- Accept without change: Exception will be cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
+- Create adjusting journal entry: User will be taken to the General journal where an adjusting entry can be created to address the exception.
+
+
+**Undo** - 
 
 ## Snapshots
 
