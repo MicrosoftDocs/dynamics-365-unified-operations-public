@@ -15,8 +15,6 @@ ms.author: v-federicohe
 
 This article explains how to configure printing for an Impuesto general a las ventas (IGV) withholdings tax report for Peru in Microsoft Dynamics 365 Finance.
 
-This article explains how to set up and generate IGV withholding tax report (Form 626) in txt format for Peru.
-
 The withholding agent must declare the total amount of withholdings made during the month and make the respective payment using Form 626. If you can't use Form 626, you must generate a text format of Form 626 using this report.
 
 ## Prerequisites
@@ -32,7 +30,7 @@ Before you can complete the steps in this article to generate the report, the fo
     - Withholdings (PER) (text)
     - Withholdings (PER) (Excel)
 
-## Additional configurations required for the IGV withholding tax report
+## Additional configuration required for the IGV withholding tax report
 
 - You must create a tax application ID for these reports to indicate different codes of document classes thar represent invoices, credit and debit notes and others. Learn more in [Tax application for Latin America](../ltm-core-tax-application.md).
 - You must configure LATAM withholding tax codes and use the LATAM feature for tax withholdings.
@@ -47,11 +45,11 @@ To configure application-specific parameters, follow these steps.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **VendorInvoiceIsApplicable**.
 1. On the **Conditions** FastTab, select **Add**.
-1. In the **Lookup result** field, select **Yes**
+1. In the **Lookup result** field, select **Yes**.
 1. In the **Document classification Id (VoucherClassId)** field, select all document classes that should appear in the report.
 1. On the **Lookups** FastTab, select **Withholdings**.
 1. On the **Conditions** FastTab, select **Add**.
-1. In the **Lookup result** field, select **Withholding** 
+1. In the **Lookup result** field, select **Withholding**. 
 1. In the **Document classification Id (VoucherClassId)** field, select the document classes representing VAT withholdings taxes that should appear in the report. 
 To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields as **Not Applicable** or **No**, and specify **Blank** and **Non-blank** conditions.
 
