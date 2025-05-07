@@ -3,7 +3,7 @@ title: Associate fixed assets with leases
 description: Learn about how to associate an existing fixed asset with a new lease, including a step-by-step process that outlines how to create a record for fixed assets. 
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: twheeloc
 audience: Application User
