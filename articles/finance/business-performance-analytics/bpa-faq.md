@@ -31,9 +31,9 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
-### What's the estimated time that's required to set up Business performance analytics?
+### What's the estimated time required to set up Business performance analytics?
 
-The setup of the Business performance analytics app takes up to 60 minutes. However it may take up to 24 hours before your data will be available in BPA after installation is completed. 
+The setup of the Business performance analytics app takes up to 60 minutes. However it may take up to 24 hours before your data will be available in Business performance analytics after installation is completed. 
 
 ## Accessing the App
 ### I'm having trouble opening Business performance analytics. What can I do? 
@@ -44,7 +44,7 @@ If you're accessing Business performance analytics from the maker portal, click 
 
 To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
-Some customers may reach the storage capacity limits of their Power BI Embedded SKU—by default, Business performance analytics uses the A3 tier—and when that happens, the underlying dataset can't be refreshed or updated. This is exacerbated by our current Direct Lake import mode, we plan to transition to Direct Lake query by year-end to offload storage requirements and ensure uninterrupted dataset updates.
+Some customers may reach the storage capacity limits of their Power BI Embedded SKU by default, Business performance analytics uses the A3 tier—and when that happens, the underlying dataset can't be refreshed or updated. This is exacerbated by our current Direct Lake import mode. We plan to transition to Direct Lake query by year-end to offload storage requirements and ensure uninterrupted dataset updates.
 
 ### How many years of data are available on reports?
 
@@ -225,7 +225,7 @@ When a new release of Business performance analytics is available, you can updat
    
 ### Is there any cost to install and use Business performance analytics during public preview?
 
-No. Business performance analytics is included in the cost of your D365 F&O License but is currently limited to the preview 8 quarters and a twice a day refresh. 
+No. Business performance analytics is included in the cost of your Dynamics 365 finance and operations license but is currently limited to the previous eight quarters and twice a day refresh. 
 
 ## Calendar configurations
 ### Can Business performance analytics support multiple calendar configurations?
