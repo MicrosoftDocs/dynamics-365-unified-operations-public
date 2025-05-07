@@ -3,7 +3,7 @@ title: Enable RSAT in Finance + Operations (on-premises) environments
 description: Learn the steps that are required to configure and enable your environment so that it can be used with the Regression suite automation tool (RSAT).
 author: faix
 ms.author: osfaixat
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024
