@@ -3,7 +3,7 @@ title: Set up on-premises projects in Lifecycle Services (LCS)
 description: Learn about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS), including environment limits. 
 author: PeterRFriis
 ms.author: peterfriis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

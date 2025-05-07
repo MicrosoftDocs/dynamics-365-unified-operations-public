@@ -3,7 +3,7 @@ title: Create Dynamics Lifecycle Services connection in Azure Pipelines
 description: This article explains how to set up a connection to Microsoft Dynamics Lifecycle Services from Azure DevOps, including prerequisites.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/05/2020
 ms.reviewer: johnmichalak
 audience: Developer

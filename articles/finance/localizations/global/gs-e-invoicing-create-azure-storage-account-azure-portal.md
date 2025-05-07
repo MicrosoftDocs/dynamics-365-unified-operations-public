@@ -3,7 +3,7 @@ title: Configure an Azure storage account in the Azure portal
 description: Learn how to create a Microsoft Azure storage account for Electronic invoicing, including a step-by-step process for storing the key vault.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 09/13/2024

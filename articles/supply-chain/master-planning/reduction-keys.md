@@ -4,7 +4,7 @@ description: Learn how to set up a reduction key, including key settings and the
 author: t-benebo
 ms.author: benebotg
 ms.date: 04/15/2020
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2

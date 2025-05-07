@@ -3,7 +3,7 @@ title: Action search
 description: Learn about the action search functionality. Action search will help you find and run actions on a page. Access an overview about action search versus navigation search.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/09/2024
 ms.reviewer: twheeloc
 audience: Application User

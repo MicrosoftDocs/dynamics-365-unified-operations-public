@@ -3,7 +3,7 @@ title: Tax engine import configuration
 description: Learn about import tax engine configuration, including a step-by-step process for creating a Lifecycle Services configuration repository.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/15/2018
 ms.reviewer: kfend
 audience: IT Pro 

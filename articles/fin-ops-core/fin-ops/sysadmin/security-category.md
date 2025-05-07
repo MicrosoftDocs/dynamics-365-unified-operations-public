@@ -3,7 +3,7 @@ title: Set up security categories
 description: Learn how to set up security categories that are used to create the process hierarchy and security configuration.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/25/2025
 ms.custom: 
 ms.reviewer: twheeloc

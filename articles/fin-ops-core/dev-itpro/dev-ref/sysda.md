@@ -3,7 +3,7 @@ title: Access data by using the SysDa classes
 description: Learn how to create extensible queries and data access statements by using the SysDa application programming interface (API).
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/20/2021
 ms.reviewer: johnmichalak
 audience: Developer

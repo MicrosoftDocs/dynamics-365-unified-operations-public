@@ -3,7 +3,7 @@ title: Earnings and earnings generation FAQ
 description: Access answers some frequently asked questions about earnings and generating earnings, including questions about earning lines and recurring earnings.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: faq
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User

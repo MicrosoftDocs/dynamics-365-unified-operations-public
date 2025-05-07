@@ -3,7 +3,7 @@ title: Upgrade budget planning
 description: Learn about what must be reconfigured and also describes new features that should be considered after the upgrade is completed.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 04/10/2017
 ms.reviewer: johnmichalak
 audience: Application User

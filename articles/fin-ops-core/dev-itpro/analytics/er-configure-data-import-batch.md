@@ -3,7 +3,7 @@ title: Import data from manually selected files in batch mode
 description: Learn about how to import data from manually selected files in batch mode, included learning about prerequisites and configurations.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/07/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

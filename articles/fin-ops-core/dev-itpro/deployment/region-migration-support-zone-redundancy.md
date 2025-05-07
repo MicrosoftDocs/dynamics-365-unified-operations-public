@@ -3,7 +3,7 @@ title: Region migration to support zone redundancy FAQ
 description: Access frequently asked questions about the migration process and the considerations for supporting zone redundancy.
 author: rashmim
 ms.author: rashmim
-ms.topic: conceptual 
+ms.topic: faq
 ms.date: 07/03/2024
 ms.custom: 
   - bap-template

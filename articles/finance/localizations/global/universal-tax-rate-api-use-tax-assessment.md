@@ -3,7 +3,7 @@ title: Use tax assessment
 description: Learn about the use tax assessment functionality, including overviews on the Accrue use tax option and the Adjust sales tax option.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/22/2024
 ms.custom: 
   - bap-template

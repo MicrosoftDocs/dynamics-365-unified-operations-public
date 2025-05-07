@@ -3,7 +3,7 @@ title: Revenue recognition reallocation
 description: Learn about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/22/2023
 ms.custom: 
 ms.reviewer: twheeloc

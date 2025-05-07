@@ -3,7 +3,7 @@ title: Implementation details of JPK_KR_PD reporting
 description: Learn about implementation details for the JPK_KR_PD report in legal entities in Poland.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 03/07/2025

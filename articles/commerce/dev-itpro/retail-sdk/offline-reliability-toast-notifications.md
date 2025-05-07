@@ -3,7 +3,7 @@ title: Offline reliability toast notifications in the Store Commerce app (previe
 description: Learn about the various toast notifications that are available in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: anush6121
 ms.author: anvenkat 
-ms.topic: conceptual 
+ms.topic: article
 ms.date: 04/30/2025
 ms.custom: 
   - bap-template

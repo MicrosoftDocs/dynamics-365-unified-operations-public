@@ -3,7 +3,7 @@ title: Over-picking for sales orders and transfer orders
 description: Learn how to enable over-picking for sales orders and transfer orders, including an outline and step-by-step process for scenario setup.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/06/2021
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem

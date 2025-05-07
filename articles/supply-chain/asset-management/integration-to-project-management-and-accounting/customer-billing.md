@@ -3,7 +3,7 @@ title: Bill for maintenance on customer-owned assets
 description: Learn how to create, process, and bill maintenance work that is done on assets that your customers own, including an outline on the work order billing feature.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/28/2021
 ms.custom:
 ms.reviewer: kamaybac 

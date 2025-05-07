@@ -3,7 +3,7 @@ title: Sales order base price determination rules
 description: Learn about the price determination rules for calculating an item's base price with a table that defines usage for various terms.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac

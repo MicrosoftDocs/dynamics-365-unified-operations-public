@@ -3,7 +3,7 @@ title: User security governance overview
 description: Learn about user security governance in Microsoft Dynamics 365.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/25/2025
 ms.custom: 
 ms.reviewer: twheeloc

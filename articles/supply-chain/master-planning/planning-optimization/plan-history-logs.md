@@ -3,7 +3,7 @@ title: View plan history and planning logs
 description: Learn how to view the history of planning jobs, including a step-by-step process for viewing auto-firming errors and other warnings or errors.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/01/2020
 ms.custom: 
 ms.reviewer: kamaybac

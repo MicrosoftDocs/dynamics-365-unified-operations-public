@@ -3,7 +3,7 @@ title: Configure promoted fields for steps in the Warehouse Management mobile ap
 description: Learn how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields

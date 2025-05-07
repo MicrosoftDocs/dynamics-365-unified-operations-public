@@ -3,7 +3,7 @@ title: Open URL in POS
 description: This article provides an overview of improvements made to product and customer search functionality in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/23/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application user
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
