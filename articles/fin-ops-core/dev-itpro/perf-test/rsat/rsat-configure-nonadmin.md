@@ -3,7 +3,7 @@ title: Configure non-administrator users to use the Regression suite automation 
 description: Learn about how to grant privileged resources to users in RSAT version 2.2 and later, including an overview on enabling non-administrator RSAT use.
 author: FrankDahl
 ms.author: fdahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/09/2021
 ms.custom:
 ms.reviewer: johnmichalak
