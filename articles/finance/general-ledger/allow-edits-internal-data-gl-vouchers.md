@@ -3,7 +3,7 @@ title: Allow edits to internal data on general ledger vouchers
 description: Learn about how to edit internal data on general ledger vouchers, including an outline on auditing trails of voucher edits.
 author: kweekley
 ms.author: kweekley
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/01/2022
 ms.custom:
 ms.reviewer: kfend
