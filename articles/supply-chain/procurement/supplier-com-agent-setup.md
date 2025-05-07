@@ -84,7 +84,7 @@ If you're using a shared mailbox, then create a queue to allow all users working
 1. On the top command bar, select **Test & enable mailboxes**.  
 
     > [!TIP]
-    > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed to send outgoing mail, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
+    > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
 
 1. Make sure that no other mailboxes with the same email address are set up and active. To check this, go back to the **Settings** page for your environment in the Power Platform Admin Center. Expand the **Email** section and select **Mailboxes**. Then, select *All Mailboxes* from the drop-down list at the top. Make sure that there's only one mailbox with the same shared mailbox email address. If more than one exists, deactivate all the others.
 1. Now you must assign the required security role to the user who will configure the agent from the **Agents** page in Supply Chain Management. Go back to the **Settings** page, expand the **Users + permissions** section, and select **Users**.
