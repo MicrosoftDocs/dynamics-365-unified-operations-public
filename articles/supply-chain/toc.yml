@@ -3281,8 +3281,12 @@
         href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
         href: sales-marketing/trade-allowance.md
-      - name: Create a new trade agreement
-        href: sales-marketing/tasks/create-new-trade-agreement.md
+      - name: Trade agreements
+        items: 
+        - name: Create a new trade agreement
+          href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: Export posted trade agreement lines
+          href: sales-marketing/trade-agreement-export-posted-lines.md
       - name: Recalculate line net amounts on import
         href: sales-marketing/calc-line-net-amounts-import.md
       - name: Schedule sales history data cleanup
