@@ -3,7 +3,7 @@ title: Tax plafond
 description: Learn how to set up and work with tax plafond, which is a tax exemption process, including prerequisites and an outline on setting up parameters.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/04/2021
 ms.reviewer: johnmichalak
 audience: Application User
