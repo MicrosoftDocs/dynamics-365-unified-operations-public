@@ -6,7 +6,7 @@ ms.collection:
   - bap-ai-copilot
 ms.custom:
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
