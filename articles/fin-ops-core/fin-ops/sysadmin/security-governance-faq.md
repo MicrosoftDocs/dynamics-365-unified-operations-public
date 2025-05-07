@@ -3,7 +3,7 @@ title: Security governance FAQ
 description: Get answers to frequently asked questions about security governance.
 author: saurabhgupta
 ms.author: saurabhgupta
-ms.topic: article
+ms.topic: faq
 ms.date: 02/13/2025
 ms.custom: 
 ms.reviewer: twheeloc
