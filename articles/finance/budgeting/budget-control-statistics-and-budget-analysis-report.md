@@ -3,7 +3,7 @@ title: Budget control statistics report vs. Budget analysis report
 description: Learn about the Budget control statistics and Budget analysis reports that are available in the Budgeting module.
 author: music727
 ms.author: mibeinar
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/03/2025
 ms.reviewer: twheeloc
 audience: Application User

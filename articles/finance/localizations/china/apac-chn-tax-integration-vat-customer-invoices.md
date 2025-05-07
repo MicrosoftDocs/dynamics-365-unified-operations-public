@@ -3,7 +3,7 @@ title: Chinese tax integration modification for VAT customer invoices FAQ
 description: You can generate value-added tax (VAT) customer invoices, and then export them as text files, then import reference numbers for the VAT customer invoices.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: faq
 ms.date: 05/23/2017
 ms.reviewer: johnmichalak
 audience: Application User

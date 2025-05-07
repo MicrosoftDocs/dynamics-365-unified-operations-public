@@ -3,7 +3,7 @@ title: Improve the performance of ER solutions by adding parameterized CALCULATE
 description: Learn about how you can help improve the performance of Electronic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/23/2021
 ms.custom:
 ms.reviewer: johnmichalak

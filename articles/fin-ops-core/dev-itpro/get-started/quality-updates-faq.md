@@ -3,7 +3,7 @@ title: Proactive quality updates FAQ
 description: Access answers to frequently asked questions about proactive quality updates (PQUs), including questions about how to know what's included in a PQU.
 author: rashmansur
 ms.author: rashmim
-ms.topic: article
+ms.topic: faq
 ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak

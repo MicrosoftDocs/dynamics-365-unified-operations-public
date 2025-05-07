@@ -3,7 +3,7 @@ title: Pricing extensions
 description: This article describes how to extend pricing and discount functionality in Microsoft Dynamics 365 Commerce.
 author: zhizhen
 ms.date: 01/11/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

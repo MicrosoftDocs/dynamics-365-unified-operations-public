@@ -5,7 +5,7 @@ author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdParmRelease
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/02/2021
 ms.custom: 
   - bap-template

@@ -3,7 +3,7 @@ title: Use lease approval workflows
 description: Learn about how to use workflows to approve asset leases, and how to track the status and history of the workflows, including a detailed step-by-step process.
 author: moaamer
 ms.author: moaamer
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/12/2021
 ms.reviewer: kfend
 audience: Application User

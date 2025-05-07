@@ -5,7 +5,7 @@ title: Rating level
 description: This article describes the Rating level entity for Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: concept-article
 # optional metadata
 
 # ms.search.form: 

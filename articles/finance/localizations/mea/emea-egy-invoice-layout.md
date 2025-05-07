@@ -3,7 +3,7 @@ title: Configure invoice layout for Egypt
 description: Learn how to configure the invoice layout for Egypt, including prerequisites and outlines on turning on features and importing configurations.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/01/2021
 ms.reviewer: johnmichalak
 audience: Application User

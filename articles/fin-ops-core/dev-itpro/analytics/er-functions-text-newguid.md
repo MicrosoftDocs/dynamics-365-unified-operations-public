@@ -3,7 +3,7 @@ title: NEWGUID ER function
 description: Learn about how the NEWGUID Electronic reporting (ER) function is used, including syntax strings, return values, and examples.
 author: kfend
 ms.author: filatovm
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/09/2021
 ms.custom: 
 ms.reviewer: johnmichalak

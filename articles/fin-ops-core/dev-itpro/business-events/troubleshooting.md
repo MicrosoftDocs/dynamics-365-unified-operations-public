@@ -3,7 +3,7 @@ title: Troubleshoot business events
 description: Learn about troubleshooting business events, including a table that outlines possible resolutions for various issues.
 author: Sunil-Garg
 ms.author: sunilg
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 10/31/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

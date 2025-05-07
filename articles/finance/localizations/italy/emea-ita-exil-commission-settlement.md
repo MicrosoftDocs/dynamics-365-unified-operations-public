@@ -3,7 +3,7 @@ title: Commission settlement on payments
 description: Learn about commission settlement on payments, including prerequisites and a process for setting up the default commission settlement method.
 author: mrolecki
 ms.author: mrolecki
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/17/2020
 ms.reviewer: johnmichalak
 audience: Application User

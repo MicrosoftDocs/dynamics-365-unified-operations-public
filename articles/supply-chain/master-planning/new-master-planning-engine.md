@@ -3,7 +3,7 @@ title: Migration to Planning Optimization for master planning
 description: Learn about the new master planning engine, Planning Optimization, and about migration from the existing engine with an outline on new deployments. 
 author: t-benebo
 ms.author: benebotg
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/04/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac

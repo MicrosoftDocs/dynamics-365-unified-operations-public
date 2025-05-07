@@ -8,7 +8,7 @@ ms.custom:
   - responsible-ai-faqs
 ms.collection:
   - bap-ai-copilot
-ms.topic: article
+ms.topic: faq
 author: ashishmsft
 ms.author: asharchw
 ms.reviewer: v-chrgriffin

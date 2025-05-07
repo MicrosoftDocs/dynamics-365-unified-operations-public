@@ -3,7 +3,7 @@ title: Finance and operations virtual entities FAQ
 description: Access a list of frequently asked questions about finance and operations virtual entities, including answers to questions relating to versions of environments.
 author: Sunil-Garg
 ms.author: sunilg
-ms.topic: article
+ms.topic: faq
 ms.date: 08/03/2022
 ms.custom: NotInToc
 ms.reviewer: johnmichalak

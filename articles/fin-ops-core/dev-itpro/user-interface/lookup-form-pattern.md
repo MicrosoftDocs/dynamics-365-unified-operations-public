@@ -3,7 +3,7 @@ title: Lookup form pattern
 description: Learn about the Lookup form pattern, including overviews on usage, wireframes, models, UX guidelines, and examples.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen

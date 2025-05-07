@@ -3,7 +3,7 @@ title: Post TDS/TCS on non-filers at a higher rate of tax
 description: Learn how to post Tax Deducted at Source (TDS)/Tax Collected at Source (TCS) on non-filers at a higher rate of tax, including outlines on setting up filers.
 author: kfend
 ms.author: kfend
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/07/2021
 ms.custom:
 ms.reviewer: johnmichalak 

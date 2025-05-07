@@ -3,7 +3,7 @@ title: Cloud operations and servicing
 description: Learn about cloud operations and servicing, including an overview on monitoring and troubleshooting the health of your environment.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/27/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

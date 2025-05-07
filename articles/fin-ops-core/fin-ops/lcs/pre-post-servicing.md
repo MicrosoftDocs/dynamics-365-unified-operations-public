@@ -3,7 +3,7 @@ title: Pre-servicing and post-servicing
 description: Learn about new changes that have been introduced for the servicing process, including outlines on preservicing, post-servicing, and best practices.
 author: matapg007
 ms.author: matgupta
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/19/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

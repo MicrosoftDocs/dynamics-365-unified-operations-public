@@ -3,7 +3,7 @@ title: Canadian Harmonized sales tax
 description: Learn about the functionality to support Harmonized sales tax for the public sector, including a step-by-step process on enabling the HST feature.
 author: velofog
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/2/2020
 ms.custom:
 ms.reviewer: twheeloc 

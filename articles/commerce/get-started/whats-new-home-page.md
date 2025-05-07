@@ -3,7 +3,7 @@ title: What's new or changed in Dynamics 365 Commerce
 description: This article points to articles that describe the new and changed features in each release of Dynamics 365 Commerce.
 author: johnmichalak
 ms.date: 04/25/2025
-ms.topic: conceptual
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - - evergreen

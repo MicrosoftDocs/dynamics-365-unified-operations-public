@@ -3,7 +3,7 @@ title: Apply a payment schedule to the invoice journal
 description: Learn about how to add and apply a payment to the vendor invoice journal, including an overview on limitations.
 author: sunfzam
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/10/2024
 ms.reviewer: twheeloc
 ms.collection: get-started

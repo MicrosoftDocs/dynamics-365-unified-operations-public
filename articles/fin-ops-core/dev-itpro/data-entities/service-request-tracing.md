@@ -3,7 +3,7 @@ title: Service request tracing
 description: Learn about the client request identifier that you should include in headers to enable requests to be traced through the finance and operations service.
 author: jaredha
 ms.author: sumadhey
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

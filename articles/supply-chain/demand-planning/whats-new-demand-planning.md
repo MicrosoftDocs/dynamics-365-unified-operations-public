@@ -5,7 +5,7 @@ author: AndersEvenGirke
 ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 05/06/2025
 ms.custom: 
   - bap-template

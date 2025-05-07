@@ -3,7 +3,7 @@ title: Troubleshoot environments deployed through self-service deployment
 description: Learn how to troubleshoot and diagnose issues in an environment that was deployed using the self-service deployment experience.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 12/18/2018
 ms.custom: 
 ms.reviewer: johnmichalak

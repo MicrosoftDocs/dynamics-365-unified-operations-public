@@ -3,7 +3,7 @@ title: Dynamics 365 Finance and Supply Chain Management in US Government Communi
 description: Learn about Microsoft Dynamics 365 US Government products that are available to qualified government and private entities.
 author: hasaid
 ms.author: epegors
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 01/22/2025

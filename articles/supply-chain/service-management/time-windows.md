@@ -5,7 +5,7 @@ author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SMATimeAgreement
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/30/2025
 ms.custom: 
   - bap-template

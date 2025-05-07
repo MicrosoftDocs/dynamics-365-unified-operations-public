@@ -3,7 +3,7 @@ title: Enable self-checkout in the Store Commerce app
 description: This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: anush6121
 ms.author: anvenkat 
-ms.topic: article 
+ms.topic: how-to
 ms.date: 06/05/2024
 ms.custom: 
   - bap-template

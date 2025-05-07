@@ -3,7 +3,7 @@ title: Development and continuous delivery FAQ
 description: Access answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: faq
 ms.date: 01/21/2020
 ms.reviewer: johnmichalak
 audience: Developer

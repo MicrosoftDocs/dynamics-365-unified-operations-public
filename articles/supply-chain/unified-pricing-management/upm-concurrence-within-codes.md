@@ -3,7 +3,7 @@ title: Resolve concurrency within price component codes
 description: Concurrency within price component rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line.
 author: sherry-zheng
 ms.author: chuzheng
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac

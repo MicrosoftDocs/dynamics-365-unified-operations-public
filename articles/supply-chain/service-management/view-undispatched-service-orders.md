@@ -3,7 +3,7 @@ title: View undispatched service orders
 description: Learn how to view activities in a service order that don’t have a worker assigned to them from a dispatch team, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac

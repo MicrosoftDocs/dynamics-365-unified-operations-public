@@ -3,7 +3,7 @@ title: Structure of Dynamics 365 Finance data sources for the FEC
 description: Learn about the structure of Microsoft Dynamics 365 Finance data sources for the Fichier des écritures comptables (FEC).
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

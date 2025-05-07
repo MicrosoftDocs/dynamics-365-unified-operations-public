@@ -6,7 +6,7 @@ description: This topic describes how to set the number of decimal places that a
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 5/23/2023
 ms.custom:
 
