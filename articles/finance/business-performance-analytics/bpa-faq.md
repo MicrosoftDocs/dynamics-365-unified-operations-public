@@ -14,7 +14,7 @@ ms.date: 05/06/2025
 
 This article answers frequently asked questions about Business performance analytics.
 
-## 1. Installation & Initial Setup
+## Installation and initial setup
 ### I received an error during the installation of Business performance analytics. How do I fix it?
 
 The following errors are likely to occur if another operation is in progress during the installation of Business performance analytics. If these errors persist, retry the installation.
@@ -35,11 +35,11 @@ The following errors are likely to occur if another operation is in progress dur
 
 The setup of the Business performance analytics app takes up to 60 minutes. However it may take up to 24 hours before your data will be available in BPA after installation is completed. 
 
-## 2. Accessing the App
+## Accessing the App
 ### I'm having trouble opening Business performance analytics. What can I do? 
 If you're accessing Business performance analytics from the maker portal, click **Play** in the top right corner to avoid viewing the app in editor mode.
 
-## 3. Data Visibility and History
+## Data visibility and history
 ### Why isn't my data showing up in Business performance analytics?
 
 To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
@@ -50,12 +50,12 @@ Some customers may reach the storage capacity limits of their Power BI Embedded 
 
 Business performance analytics has data for the most recent 8 quarters. This is limited only until we transition to Direct Lake mode at year end.
 
-## 4. Data Refresh
+## Data refresh
 ### After Business performance analytics is set up, how often is the data refreshed?
 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
-## 5. Storage & Capacity
+## 5. Storage and capacity
 ### Why does Business Performance Analytics’ managed data lake storage keep growing, and how is it cleaned up?
 
 Each time BPA refreshes, it transforms your source data into files in the Dataverse managed data lake without immediately deleting prior files—older files are purged automatically after 30 days or sooner if usage hits 50 percent. In earlier releases, staging-table references sometimes blocked file deletion, so transform outputs accumulated until Microsoft engineers manually cleaned up every two weeks. As of the January 2025 update (v2.0.29241185+), we’ve removed those dependencies and added a 3-day retention policy via the autocleanup flight flag, which regularly clears out old files and dramatically reduces manual intervention.
@@ -63,7 +63,7 @@ Each time BPA refreshes, it transforms your source data into files in the Datave
 > [!IMPORTANT]
 > Customers affected by storage capacity growth after updating to Business performance analytics version 2.0.29241185 or later should contact support and request to enable the temporary files cleanup routine for their environment.
 
-## 6. Uninstallation
+## Uninstall
 ### How do I uninstall Business performance analytics?
 
 Two options are available for uninstalling Business performance analytics: code-based uninstallation and manual uninstallation. If you must reinstall Business performance analytics after you uninstall it, wait four hours before reinstallation.
@@ -207,10 +207,9 @@ To delete each of the preceding solutions, follow these steps.
 
     The approximate time to delete all the solutions is 20 minutes.
 
-## 7. Updates & Releases
+## Updates and releases
 ### How often will updates for Business performance analytics be released?
-
-- **New features and Bugs ** – Every 8 weeks  
+New features and bugs are released every eight weeks.  
 
 ### How do I know when a new release of Business performance analytics is available?
 
@@ -226,9 +225,9 @@ When a new release of Business performance analytics is available, you can updat
    
 ### Is there any cost to install and use Business performance analytics during public preview?
 
-No. BPA is included in the cost of your D365 F&O License but is currently limited to the preview 8 quarters and a twice a day refresh. 
+No. Business performance analytics is included in the cost of your D365 F&O License but is currently limited to the preview 8 quarters and a twice a day refresh. 
 
-## 8. Calendar Configurations
+## Calendar configurations
 ### Can Business performance analytics support multiple calendar configurations?
 Yes, Business performance analytics supports multiple calendar configurations, including fiscal calendars such as 4-4-5, 4-5-4, and other custom non-Gregorian structures.
 
@@ -244,8 +243,8 @@ Business performance analytics’s semantic model includes a flexible date dimen
 
 This approach ensures Business performance analytics remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
 
-## 9. Support & News
+## Support and news
 ### How do I receive the latest news about Business performance analytics?
 
 To receive the latest updates about Business performance analytics, join the Business performance analytics Viva Engage group.
-1. Join the [Business performance analytics Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed).
+Join the [Business performance analytics Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed).
