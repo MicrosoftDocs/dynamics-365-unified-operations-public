@@ -3,7 +3,7 @@ title: Configure parallel activities in a workflow
 description: Learn about how to configure a parallel activity, complete the following procedures in the workflow editor, including an overview on naming a parallel activity.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User
