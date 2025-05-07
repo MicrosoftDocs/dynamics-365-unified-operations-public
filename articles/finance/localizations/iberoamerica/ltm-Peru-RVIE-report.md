@@ -25,7 +25,7 @@ Before you can generate and print RVIE reports, the following prerequisites must
 - You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
 - You must configure the electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-RVIE is composed by the following formats that you must imported:
+RVIE is composed by the following formats that you must import:
 - Last twelve months (LTM) Tax Report mapping
 - LTM Tax Report
 - RVIE-ANEXO 2
@@ -52,7 +52,7 @@ RVIE is composed by the following formats that you must imported:
 
 To configure application-specific parameters in a RVIE report, follow these steps.
 
-1. In Dynamics 365 Finance, go to **Organization administration** > **Workspaces** > and select **Reporting configurations**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Workspaces** and select **Reporting configurations**.
 1. In the **LTM Tax report** group, for each format that is listed in the [Prerequisites](#prerequisites) section, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **CustomerInvoiceIsApplicable**.
 1. On the **Conditions** FastTab, select **Add**.
@@ -89,7 +89,7 @@ To configure application-specific parameters in a RVIE report, follow these step
 1. In the **Tax code** field, select the tax code configured for "Invoiced export value".
 1. To ensure that the report shows the transactions that meet the configured conditions, set all the **Lookup result** fields to **NotApplicable**, and specify **Blank** and **Non-blank** conditions.
 
-## Run a RVIE annex report
+## Generate a RVIE annex report
 
 To generate any RVIE annex report, follow these steps.
 
