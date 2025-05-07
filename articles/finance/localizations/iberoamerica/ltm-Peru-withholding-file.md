@@ -24,7 +24,7 @@ The withholding agent must declare the total amount of withholdings made during 
 Before you can complete the steps in this article to generate the report, the following prerequisites must be met:
 - The legal entity's address must be in Peru.
 - You must enable both the general LATAM feature and the country/region-specific LATAM feature for Peru.
-- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse). 
+- You must download the specific report configuration from the Dataverse configuration repository. Learn more in [Import electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse). 
 - You must configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must download the following formats:
     - Last twelve months (LTM) Tax Report mapping
