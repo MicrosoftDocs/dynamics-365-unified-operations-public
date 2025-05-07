@@ -1,6 +1,6 @@
 ---
 title: Configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru
-description: Learn how to configure printing for the Electronic Sales and Income Registry (RVIE) report in Peru in Microsoft Dynamics 365 Finance.
+description: Learn how to configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance.
 author: Fhernandez0088
 ms.date: 05/07/2025
 ms.topic: how-to
@@ -12,7 +12,7 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure printing for the Electronic Sales and Income Registry (RVIE) report in Peru in Microsoft Dynamics 365 Finance.
+This article explains how to configure printing for the Electronic Sales and Income Registry (RVIE) report for Peru in Microsoft Dynamics 365 Finance.
 
 The RVIE report in Peru is a record of sales and income. These reports are used to modify proposed reports by the National Superintendency of Customs and Tax Administration (SUNAT).
 The RVIE includes annexes 2, 3, and 5. The Excel output version of the 5th annex is also included.
