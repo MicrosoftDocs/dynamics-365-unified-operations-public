@@ -3,7 +3,7 @@ title: Report statistics of vendor payment periods
 description: Learn how to set up and generate the statistics of vendor payment periods that are required in Sweden with an outline on calculating vendor payment statistics.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/20/2023
 ms.reviewer: johnmichalak
 audience: Application User
