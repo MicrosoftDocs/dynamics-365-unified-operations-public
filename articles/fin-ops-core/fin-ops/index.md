@@ -3,7 +3,7 @@ title: Finance and operations application documentation
 description: Documentation for finance and operations apps.
 author: twheeloc
 ms.date: 06/13/2024
-ms.topic: conceptual
+ms.topic: article
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

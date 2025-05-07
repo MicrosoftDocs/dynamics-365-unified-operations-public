@@ -4,7 +4,7 @@ description: Learn how to set up calculation and approval groups for time and at
 author: twheeloc
 ms.author: twheeloc
 ms.date: 01/24/2024
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - group
 - approval

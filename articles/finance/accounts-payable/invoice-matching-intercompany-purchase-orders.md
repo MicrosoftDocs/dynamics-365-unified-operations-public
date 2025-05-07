@@ -3,7 +3,7 @@ title: Invoice matching and intercompany purchase orders
 description: Learn about how the purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching.
 author: twheeloc
 ms.author: shpandey
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/11/2022
 ms.reviewer: twheeloc
 audience: Application User

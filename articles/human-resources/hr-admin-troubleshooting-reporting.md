@@ -5,7 +5,7 @@ title: Reporting options
 description: This article explains how to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
 author: twheeloc
 ms.date: 07/02/2024
-ms.topic: article
+ms.topic: concept-article
 # optional metadata
 
 # ms.search.form: HcmPersonnelManagementWorkspace, LeaveAbsenceWorkspace, HcmTalentBenefitWorkspace, HcmCompensationWorkspace, HcmEmployeeDevelopmentWorkspace, HcmLearningWorkspace

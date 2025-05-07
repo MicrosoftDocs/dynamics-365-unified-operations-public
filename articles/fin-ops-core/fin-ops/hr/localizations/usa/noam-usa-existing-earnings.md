@@ -3,7 +3,7 @@ title: Process existing earnings
 description: Learn about tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: twheeloc
 audience: Application User
