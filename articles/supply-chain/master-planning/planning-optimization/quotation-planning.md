@@ -3,7 +3,7 @@ title: Plans based on quotations and RFQs
 description: Learn how to set up master planning to consider quotations and requests for quotation (RFQs) when it generates planned orders.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/20/2022
 ms.reviewer: kamaybac
 ms.search.form: SalesQuotationListPage, ReqPlanSched, SalesQuotationTable, smmOpportunityTable
