@@ -27,7 +27,7 @@ To collect the required application information, follow these steps.
 
 1. In the Azure portal, go to **Home \> Microsoft Entra ID B2C - App registrations**.
 1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
-1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. You will enter this ID later as the **Client GUID** in site builder.
+1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. You'll enter this ID later as the **Client GUID** in site builder.
 1. Select **Redirect URIs** and collect the reply URL shown for your site (the reply URL entered at setup).
 1. Go to **Home \> Microsoft Entra B2C – User flows**, and then collect the full names of each user flow policy.
 
@@ -63,8 +63,8 @@ The optional **Login custom domain** field should only be used if you're setting
 ### Associate the B2C application to your site and channel
 
 > [!WARNING]
-> - If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. 
-> - Only update the B2C application if you're setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
+> - If your site is already associated with a B2C application, changing to a different B2C application removes the current references established for users already signed up in this environment. If changed, any credentials associated with the currently assigned B2C application won't be available to users. 
+> - Only update the B2C application if you're setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel isn't associated to a B2C application in the following steps, users signing into that channel for your site are entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
 To associate the B2C application to your site and channel, follow these steps.
 
