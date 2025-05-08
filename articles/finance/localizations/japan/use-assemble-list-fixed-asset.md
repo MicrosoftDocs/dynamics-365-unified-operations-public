@@ -31,7 +31,7 @@ To assign component in an assembly list, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. In the list, mark the selected row.
-1. Select the fixed asset that you want to assign the assembly list to.  
+1. Select the fixed asset to which you want to assign the assembly list.  
 1. On the Action Pane, select **Fixed asset**.
 1. Select **Components**.
 1. Select **Add**.
