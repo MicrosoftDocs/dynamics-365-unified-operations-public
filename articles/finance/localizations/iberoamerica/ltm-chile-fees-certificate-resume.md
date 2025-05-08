@@ -3,7 +3,7 @@ title: Generate and print the Fees certificate report - Chile
 description: Learn how to generate and print the Fees certificate report for Chile, including prerequisites and an outline on configuring application-specific parameters.
 author: Cpicon85
 ms.author: v-cpicon 
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/20/2023 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
