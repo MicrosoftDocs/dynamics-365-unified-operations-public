@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Setup vendor master and purchase order to be target of consolidated invoice
+# Set up vendor master and purchase order to be target of consolidated invoice
 
 [!include [banner](../../includes/banner.md)]
 
