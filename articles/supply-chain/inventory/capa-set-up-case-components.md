@@ -47,7 +47,7 @@ To set up CAPA worker groups, follow these steps.
 
 1. On the **Worker assignments** FastTab, add or remove workers in the group.
 
-    - Too add a worker, use the **New** button on the **Overview** tab. Alternatively, on the **Assign** tab, use the right arrow button to move workers into the **Selected workers** list.
+    - To add a worker, use the **New** button on the **Overview** tab. Alternatively, on the **Assign** tab, use the right arrow button to move workers into the **Selected workers** list.
     - To remove a worker, use the **Delete** button on the **Overview** tab. Alternatively, on the **Assign** tab, use the left arrow button to move workers out of the **Selected workers** list.
 
 1. On the **Overview** tab of the **Worker assignments** FastTab, set the following fields for each worker in the group:

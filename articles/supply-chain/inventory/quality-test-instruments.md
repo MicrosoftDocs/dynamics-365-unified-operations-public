@@ -44,7 +44,7 @@ Learn more in [Test instrument calibration (preview)](quality-instrument-calibra
     - **Test instrument** – Enter a unique ID or name for the test instrument.
     - **Description** – Enter a detailed description of the test instrument.
     - **Unit** – Select the unit that the instrument measures results in. The **Precision** field is automatically set based on the unit that you select.
-    - **Tag number required** – Select this checkbox if a test instrument tag number (in addition to an instrument type) must be specified for the test instrument on quantity orders. The test instrument tag identifies the specific physical instrument that is used in the test. Selection of this checkbox triggers additional functionality that is related to tracking and calibration of test instruments. To view, create, and edit the available test instrument tags, select **Test instrument tags** on the Action Pane.
+    - **Tag number required** – Select this checkbox if a test instrument tag number (in addition to an instrument type) must be specified for the test instrument on quantity orders. The test instrument tag identifies the specific physical instrument that is used in the test. Selection of this checkbox triggers other functionality that is related to tracking and calibration of test instruments. To view, create, and edit the available test instrument tags, select **Test instrument tags** on the Action Pane.
     - **Used for calibration** – Select this checkbox for test instrument types that are used to calibrate other instruments and equipment.
     - **Calibration label layout** – For test instrument types where the **Tag number required** checkbox is selected, select the layout that is used to print calibration labels.
 

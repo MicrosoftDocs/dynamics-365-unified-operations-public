@@ -180,7 +180,7 @@ Each physical test instrument is represented in Supply Chain Management by a tes
 
     - **Tag number** – Enter a unique name, number, or code for the instrument.
     - **Test instrument type** – Select the type or category of test instrument that the test instrument tag is associated with. Examples include *Scale*, *Thermometer*, and *Oximeter*. The test instrument type defines options such as whether the instrument is used for calibration, whether a test instrument tag is required to identify the specific physical instrument that must be used, and what layout should be used when calibration labels are printed. Learn more in the [Set up test instrument types](#instrument-types) section.
-    - **Instrument usage status** — The current usage status of the test instrument. Although the field is read-only, you can manually change the status to *Out of service* or *Available* by using the buttons on the **Update usage status** tab of the Action Pane. The following status values are used:
+    - **Instrument usage status** – The current usage status of the test instrument. Although the field is read-only, you can manually change the status to *Out of service* or *Available* by using the buttons on the **Update usage status** tab of the Action Pane. The following status values are used:
 
         - *Available* – The test instrument is ready to be assigned to a new quality order.
         - *Calibration* – The test instrument is currently being calibrated. This status is automatically set when an open (in-progress) calibration record exists for this test instrument tag.
@@ -237,11 +237,11 @@ Each physical test instrument is represented in Supply Chain Management by a tes
 
     - **Date calibration certificate printed** – The date when the instrument calibration certificate was last printed.
 
-1. Enter information on the following FastTabs as required. The fields on these FastTab are for information only. They aren't used in any calculations or processes.
+1. Enter information on the following FastTabs as required. The fields on these FastTabs are for information only. They aren't used in any calculations or processes.
 
     - **Manufacturer data** – Enter information that is specific to the test instrument and its manufacturer.
-    - **Test procedures** – Add additional test procedures to support the calibration procedures.
-    - **Specifications** – Add additional specifications.
+    - **Test procedures** – Add more test procedures to support the calibration procedures.
+    - **Specifications** – Add more specifications.
     - **Notes** – Add notes and other comments.
 
 ## Create calibration records
@@ -318,7 +318,7 @@ To perform a calibration, follow these steps.
 
 1. If you want to record details about the specific instruments that are required or used to calibrate the test instrument, on the Action Pane, on the **Calibrate instruments** tab, select **Assign calibration tools**. Then use the **Calibration tools used** page to record each instrument. For each instrument that you add, set the following fields:
 
-    - **Calibration tool** – Select the test instrument type for the instrument that is used. This field list only test instrument types where the **Use for calibration** option is set to *Yes*. Learn more in [Quality management test instruments](quality-test-instruments.md).
+    - **Calibration tool** – Select the test instrument type for the instrument that is used. This field lists only test instrument types where the **Use for calibration** option is set to *Yes*. Learn more in [Quality management test instruments](quality-test-instruments.md).
     - **Calibration tool tag number** – To identify a specific physical test instrument, select its test instrument tag number. This field is required if the **Requires test instrument tag** option is set to *Yes* for test instrument type that is selected in the **Calibration tool** field.
 
 1. To start the calibration, on the Action Pane, on the **Calibrate instruments** tab, select **Start calibration**. Then select **OK** in the dialog. The **Started by** and **Started date** fields on the calibration record are updated.
