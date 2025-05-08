@@ -38,16 +38,20 @@ Before you begin the procedures in this article, complete the following prerequi
 
 Complete the common part of Azure resources configuration as described in [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
-### Azure Key Vault configuration
-
-Add the following required elements in the key vault:
-
-- The secret for the **client ID**, which must ...
-- The secret for the obtained **client secret**...
-
 ### Configure an Azure file share
 
 - Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
+- Add...
+  - **EgyptianETASendToFileShareDirectory** – Enter the name of the Azure file share directory that invoices for digital signing should be written to.
+  - **EgyptianETAGetFromAzureFileShare** – Enter the name of the Azure file share directory that digitally signed invoices should be read from.
+
+### Azure Key Vault configuration
+
+Add the following required elements in the Azure Key Vault:
+
+- The secret for the **Client ID**, provided by the regulatory authority.
+- The secret for the obtained **Client secret** obtained from the regulatory authority.
+- The secret for the **Connection string** to the Azure file share that you configured in the previous section.
 
 ## Configure electronic invoicing Key Vault parameters
 
@@ -86,7 +90,7 @@ To configure the electronic invoicing feature, follow these steps.
 
     - **EgyptianETAClientID** – Enter the client ID that the regulatory authority provided.
     - **EgyptianETAClientSecret** – Enter the secret that the regulatory authority provided.
-    - **EgyptianETAConnectionString** – Enter the connection string for the Azure file share that you provisioned as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
+    - **EgyptianETAConnectionString** – Enter the secret for the connection string to the Azure file share that you provisioned previously.
     - **EgyptianETASendToFileShareDirectory** – Enter the name of the Azure file share directory that invoices for digital signing should be written to.
     - **EgyptianETAGetFromAzureFileShare** – Enter the name of the Azure file share directory that digitally signed invoices should be read from.
     - **EgyptianETALoginserviceURL** – Enter the URL of the Egyptian tax authority's login service. The feature that Microsoft released points to the pre-production endpoint.
