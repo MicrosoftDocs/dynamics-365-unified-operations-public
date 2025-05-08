@@ -3,7 +3,7 @@ title: Enable advanced awareness options parameter before year-end close using t
 description: Learn how to use the Enable advanced awareness options parameter by using the new inquiry page before the General ledger year-end close is run.
 author: moaamer
 ms.author: kweekley
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2024
 ms.custom:
 ms.reviewer: twheeloc

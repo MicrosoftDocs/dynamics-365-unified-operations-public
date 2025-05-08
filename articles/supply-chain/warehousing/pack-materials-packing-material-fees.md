@@ -3,7 +3,7 @@ title: Packing materials and fees
 description: Learn about packing material fees that are paid to recycling companies at specific intervals with a process for setting up packing material allocation.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/19/2020
 ms.reviewer: kamaybac
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit

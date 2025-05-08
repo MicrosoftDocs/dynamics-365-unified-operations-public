@@ -4,7 +4,7 @@ description: Learn how to use the Reporting visual in the Business performance p
 author: ShielaSogge
 ms.author: twheeloc
 ms.date: 12/08/2023
-ms.topic: article
+ms.topic: concept-article
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

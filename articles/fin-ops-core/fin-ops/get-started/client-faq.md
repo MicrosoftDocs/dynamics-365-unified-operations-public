@@ -3,7 +3,7 @@ title: Client FAQ
 description: Access answers to frequently asked questions about the finance and operations client, including questions about symbols, the ribbon, and shortcuts.
 author: jasongre
 ms.author: jasongre
-ms.topic: article
+ms.topic: faq
 ms.date: 12/31/2024
 ms.reviewer: twheeloc
 ms.search.region: Global

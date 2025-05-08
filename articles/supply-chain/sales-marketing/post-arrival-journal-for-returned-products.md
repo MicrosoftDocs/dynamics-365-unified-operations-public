@@ -3,7 +3,7 @@ title: Post arrival journal for returned products
 description: Learn how to post arrival journal for returned products, including a step-by-step process for posting the item arrival journal for return orders.
 author: AditiPattanaik
 ms.author: adpattanaik
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac

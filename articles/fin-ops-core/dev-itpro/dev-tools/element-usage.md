@@ -1,6 +1,6 @@
 ---
 title: Commands for determining how elements are used
-description: Learn about the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application.
+description: Learn about the commands that have been added to the Microsoft Visual Studio Tools to help you determine how elements are used in an application.
 author: josaw1
 ms.author: josaw
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
 
 [!include [banner](../includes/banner.md)]
 
-This article reviews the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application. 
+This article reviews the commands that have been added to the Microsoft Visual Studio Tools to help you determine how elements are used in an application. 
 
 Because of the large number of elements in a typical application, commands have been added to the Microsoft Visual Studio Tools to make it easier to determine how an element is used.
 

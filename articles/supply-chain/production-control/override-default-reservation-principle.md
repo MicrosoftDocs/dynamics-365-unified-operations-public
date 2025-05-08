@@ -3,7 +3,7 @@ title: Override the default reservation principle for materials in production
 description: Learn how to set a default reservation principle for each item model group, so that different reservation principles can automatically be applied.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/05/2022
 ms.custom:
 ms.reviewer: kamaybac

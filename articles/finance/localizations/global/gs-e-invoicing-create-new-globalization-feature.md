@@ -3,7 +3,7 @@ title: Create Globalization features
 description: Learn how to create a Globalization feature, including outlines on creating a feature based on an existing feature and creating a feature from scratch.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: 
 ms.reviewer: johnmichalak

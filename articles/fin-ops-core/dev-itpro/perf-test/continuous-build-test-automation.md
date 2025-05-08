@@ -3,7 +3,7 @@ title: Deploy and use a continuous build and test automation environment
 description: Learn about how to deploy a developer topology that supports continuous build and test automation, including prerequisites and an overview of the workflow.
 author: josaw1
 ms.author: shailesn
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 01/21/2020
 ms.reviewer: johnmichalak
 audience: Developer

@@ -3,7 +3,7 @@ title: Fixed asset depreciation for Japan FAQ
 description: Access answers some frequently asked questions about fixed asset depreciation for Japan, including answers about special depreciation.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: faq
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
 audience: Application User 

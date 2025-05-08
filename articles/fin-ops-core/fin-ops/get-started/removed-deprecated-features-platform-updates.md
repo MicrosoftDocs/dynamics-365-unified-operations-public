@@ -3,7 +3,7 @@ title: Removed or deprecated platform features
 description: Learn about features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual  
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 04/11/2025
@@ -70,7 +70,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**        | This change has an impact on the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Use the public API instead of reading directly from the configuration. The [OdbcConnection](/dotnet/api/dynamics.ax.application.odbcconnection) is no longer supported, Please migrate to the supported connection types: [Connection](/dotnet/api/dynamics.ax.application.connection) or [UserConnection](/dotnet/api/dynamics.ax.application.userconnection).<br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | End of support in production environments is April 30, 2024 (Phased rollout from May 1, 2025 to June 15, 2025) starting with 10.0.39 (PU63) and greater releases. |
+| **Status**                         | End of support in production environments is April 30, 2025 (Phased rollout from May 1, 2025 to June 15, 2025) starting with 10.0.39 (PU63) and greater releases. |
 
 ## Feature deprecation effective January 2025
 

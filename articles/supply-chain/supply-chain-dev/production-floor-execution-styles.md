@@ -3,7 +3,7 @@ title: Style the production floor execution interface
 description: Learn how to configure form controls so that the default production floor execution styles are applied to them with an outline on forms and dialogs.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2021
 ms.reviewer: kamaybac
 ms.search.form:

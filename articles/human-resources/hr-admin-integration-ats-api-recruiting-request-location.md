@@ -5,7 +5,7 @@ title: Recruiting request location
 description: This article describes the Recruiting request location entity for Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
-ms.topic: article
+ms.topic: concept-article
 # optional metadata
 
 # ms.search.form: 

@@ -3,7 +3,7 @@ title: Revenue recognition setup
 description: Learn about the setup options for Revenue recognition, and their implications, including an overview on revenue recognition journals.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 08/16/2023
 ms.custom:
 ms.reviewer: twheeloc

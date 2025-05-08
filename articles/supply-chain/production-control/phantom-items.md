@@ -5,7 +5,7 @@ author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: SysOperationTemplateForm
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/28/2024
 ms.custom: 
   - bap-template

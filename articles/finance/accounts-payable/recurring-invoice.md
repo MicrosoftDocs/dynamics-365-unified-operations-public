@@ -3,7 +3,7 @@ title: Recurring vendor invoices
 description: Learn about how to set up, process, generate, and assign recurring vendor invoices in Microsoft Dynamics 365 Finance.
 author: sunfzam
 ms.author: shpandey
-ms.topic: article
+ms.topic: concept-article
 ms.date: 2/1/2024
 ms.reviewer: twheeloc
 ms.collection: get-started

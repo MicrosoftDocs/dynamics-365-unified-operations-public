@@ -3,7 +3,7 @@ title: Accessibility features
 description: Learn about the functionality that is designed to help users who have various disabilities, including overviews on Windows Narrator and shortcuts.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen

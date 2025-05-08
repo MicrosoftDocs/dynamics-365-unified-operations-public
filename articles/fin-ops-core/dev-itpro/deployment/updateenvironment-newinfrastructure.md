@@ -3,7 +3,7 @@ title: Update an environment
 description: Learn how to update an environment that was deployed by using the self-service deployment experience, including an overview of servicing changes.
 author: laneswenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/29/2022
 ms.custom:
 ms.reviewer: johnmichalak

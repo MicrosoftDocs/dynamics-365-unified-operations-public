@@ -5,7 +5,7 @@ title: Organize your workforce by using departments, jobs, and positions
 description: This article describes conceptual information about departments, jobs, and positions, which are organizational elements that are maintained within Human resources. 
 author: twheeloc
 ms.date: 05/08/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace

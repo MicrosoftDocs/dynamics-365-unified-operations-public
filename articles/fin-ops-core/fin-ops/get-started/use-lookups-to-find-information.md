@@ -3,7 +3,7 @@ title: Find information by using lookups
 description: Learn about lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.
 author: jasongre
 ms.author: jasongre
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen

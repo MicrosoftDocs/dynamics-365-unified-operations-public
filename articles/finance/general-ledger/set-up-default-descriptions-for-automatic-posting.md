@@ -3,7 +3,7 @@ title: Set up default descriptions for automatic posting
 description: Learn how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger.
 author: jchrist
 ms.author: jchrist
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/10/2024
 ms.reviewer: twheeloc
 audience: Application User

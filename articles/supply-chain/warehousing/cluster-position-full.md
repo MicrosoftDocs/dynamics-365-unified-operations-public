@@ -3,7 +3,7 @@ title: Cluster position full
 description: Learn about the Cluster position full feature, which offers an alternative to more rigid enforcement of work break rules when cluster picking is used.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/25/2020
 ms.custom:
 ms.reviewer: kamaybac

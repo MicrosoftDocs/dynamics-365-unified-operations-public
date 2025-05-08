@@ -3,7 +3,7 @@ title: Generate the GSTR report data for tax returns
 description: Learn how to generate the GSTR report data for tax returns, including step-by-step processes for generating GSTR1 and GSTR2 report data.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/05/2019
 ms.custom:
 ms.reviewer: johnmichalak 

@@ -3,7 +3,7 @@ title: Navigation concepts for test data
 description: Learn about how to use navigation to simplify the discoverability of test data generation methods, including code examples and advantages.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.topic: article
+ms.topic: concept-article
 ms.date: 03/27/2019
 ms.custom: 
 ms.reviewer: johnmichalak

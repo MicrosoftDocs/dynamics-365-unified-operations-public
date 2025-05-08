@@ -3,7 +3,7 @@ title: Configure action-dependent ER destinations
 description: Learn about how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/05/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

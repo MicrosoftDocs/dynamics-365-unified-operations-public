@@ -3,7 +3,7 @@ title: Calculation of tax asset and tax liability registers
 description: Learn about the two methods that tax registers use to calculate tax differences, including outlines on the constant and temporary tax types.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/27/2024

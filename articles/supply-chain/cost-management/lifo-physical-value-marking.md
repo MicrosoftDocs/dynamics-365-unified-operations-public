@@ -5,7 +5,7 @@ author: prasungoel
 ms.author: prasungoel
 ms.reviewer: kamaybac
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/11/2025
 ms.custom: 
   - bap-template

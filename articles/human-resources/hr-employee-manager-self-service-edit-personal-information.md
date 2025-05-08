@@ -5,7 +5,7 @@ title: Edit personal information
 description: This article describes how to edit personal information in Employee and Manager self service.
 author: twheeloc
 ms.date: 06/25/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace

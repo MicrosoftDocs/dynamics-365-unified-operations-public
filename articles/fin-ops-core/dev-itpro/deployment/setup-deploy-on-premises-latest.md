@@ -3,7 +3,7 @@ title: Set up and deploy on-premises environments (Application 10.0.32 and later
 description: Learn how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.custom: 
   - bap-template
 ms.date: 11/08/2024
