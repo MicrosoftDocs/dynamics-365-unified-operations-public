@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 Fixed asset depreciation can be run across legal entities in a single step. This procedure shows you to how set up and run the process for multiple legal entities. It uses the accountant role and demo data for the USMF legal entity.
-
+In version **10.0.44**, after you enable the **Multi-company purpose** under **Feature Management**, any organization hierarchy with that purpose assigned will appear in the new multi-company control—replacing the flat multi-selection list in Fixed asset depreciation proposals. This control displays your legal entities in a hierarchical parent-child view with search and sort capabilities while still offering a redesigned flat list option. To ensure each company appears in the hierarchy control, define a depreciation journal name for every company under **Fixed assets parameters**; any company missing a journal definition won’t be populated.
 
 ## Set up cross company depreciation run journals
 1. Go to **Fixed assets > Setup > Fixed assets parameters**.
