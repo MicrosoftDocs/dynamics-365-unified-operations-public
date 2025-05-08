@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
+This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. Alongside the depreciation performance improvements introduced as preview features in version 10.0.44. This task uses the USMF demo company and the accountant role.
 
 
 ## Create a depreciation proposal
@@ -41,5 +41,27 @@ This article describes how depreciation batch proposals work and explains how to
 
 > [!NOTE]
 > In Microsoft Dynamics Finance 365 version 10.0.42, the automatic splitting of large financial journals feature doesn't include fixed asset journals. Additionally, an option has been added to the fixed asset journal header to enable transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 and later versions through the appropriate update installation.
+
+## (Preview) Depreciation performance improvements 
+
+Those preview features that are introduced in version 10.0.44 significantly enhances the efficiency and reliability of the depreciation proposal process by optimizing the way asset transactions are handled in memory (cached). By improving both performance and data management, it leads to faster processing times and greater system stability. Here's a detailed breakdown of how it achieves these improvements: 
+
+**Improved Batch Job/Task Creation Performance:** By optimizing how batch jobs and tasks for depreciation proposals are created, the feature speeds up the process, especially when dealing with large volumes of data. This improvement helps reduce the system load, allowing faster execution of these tasks. The batch job’s task description will be “Depreciation Task Number” and  "Journal number".
+
+**Support for Fixed Assets with Diverse ID Formats:** In many organizations, fixed assets may be recorded using different ID formats, such as alphanumeric or numeric-only identifiers. This feature ensures that all fixed assets, regardless of their ID format, are correctly included in the depreciation proposal. This prevents any fixed assets from being overlooked due to inconsistencies in ID formatting. 
+
+**Prevention of empty journal generation:** Sometimes, a depreciation proposal task can lead to creation of empty journals—documents that don’t contain any actual depreciation entries. This feature eliminates the most common scenario, ensuring that only valid, populated journals are generated. This reduces the need for manual intervention and clean-up of unnecessary journals. 
+
+**Elimination of Journal Duplication Due to Transient Errors:** In some cases, temporary or transient system errors could cause multiple journals to be created for the same depreciation proposal, leading to duplication. This feature prevents such duplicates, ensuring that the system handles errors gracefully without creating redundant records. This makes the process more robust and reduces the likelihood of discrepancies in financial reporting. 
+
+**Enhanced Transaction Caching:** The Enhanced Asset Transactions Cache improves the system's ability to store asset transaction data in memory, allowing for quicker access during the depreciation process. By reducing the need for repeated database queries, the system can handle larger volumes of asset data more efficiently, significantly speeding up depreciation calculations, especially when dealing with complex asset histories. In addition, the reduced reliance on database calls lowers the overall system load, freeing up resources for other tasks. This enhancement improves the system’s responsiveness, particularly in environments with high number of users. 
+
+**Better Multi-Entity proposal support:** The feature introduces safety checks and retry capabilities to ensure the proposal can be run for multi-legal entities at the same time. 
+
+**Emphasis on Batch mode:** this feature is designed to run in batch mode. With a series of best practices recommended for performance gains during the batch distribution phase, in addition to added validations and stability to the process. 
+ 
+**Improved Depreciation Proposal Performance:** The primary benefit of this caching enhancement is the noticeable improvement in the speed and performance of generating depreciation proposals. Organizations with substantial fixed asset portfolios can now process depreciation more efficiently, leading to quicker month-end or year-end closing activities. 
+
+In conclusion, these features work together to optimize the depreciation proposal process by improving both the performance and accuracy of asset depreciation tasks. The enhanced caching of asset transactions significantly reduces processing times, while the improved handling of fixed assets, prevention of empty journals, and elimination of duplication ensure a more reliable and depreciation. By implementing these improvements, organizations can streamline their depreciation processes, minimize manual intervention, and achieve more efficient operations. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
