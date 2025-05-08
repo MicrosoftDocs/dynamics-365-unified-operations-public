@@ -33,6 +33,8 @@ Before you begin the procedures in this article, complete the following prerequi
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
 - Complete the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 - The primary addresses of the legal entities must be in Egypt.
+- Your company must be a registered taxpayer in Egypt and must have the required registration numbers.
+- Obtain **Client ID** and **Client secret** values in the Egyptian regulatory authorities. These values serve as credentials that are used to establish a secure connection to the authorities portal.
 
 ## Azure resources configuration
 
@@ -52,6 +54,8 @@ Add the following required elements in the Azure Key Vault:
 - The secret for the **Client ID**, provided by the regulatory authority.
 - The secret for the obtained **Client secret** obtained from the regulatory authority.
 - The secret for the **Connection string** to the Azure file share that you configured in the previous section.
+  > [!IMPORTANT]
+  > Don't confuse the **Connection string** value with the **Storage shared access signature (SAS)** token.
 
 ## Configure electronic invoicing Key Vault parameters
 
