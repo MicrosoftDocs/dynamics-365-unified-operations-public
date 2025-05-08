@@ -34,14 +34,20 @@ Before you begin the procedures in this article, complete the following prerequi
 - Complete the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 - The primary addresses of the legal entities must be in Egypt.
 
-## Azure Key Vault configuration
+## Azure resources configuration
 
-Create an Azure Key Vault to store the required secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+Complete the common part of Azure resources configuration as described in [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+
+### Azure Key Vault configuration
 
 Add the following required elements in the key vault:
 
 - The secret for the **client ID**, which must ...
 - The secret for the obtained **client secret**...
+
+### Configure an Azure file share
+
+- Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
 
 ## Configure electronic invoicing Key Vault parameters
 
@@ -58,11 +64,6 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
     > [!NOTE]
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
-
-
-## Configure an Azure file share
-
-- Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
 
 
 ## Import the electronic invoicing feature
