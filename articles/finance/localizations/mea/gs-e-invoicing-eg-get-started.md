@@ -23,16 +23,16 @@ After you configure Electronic invoicing, you can generate JavaScript Object Not
 
 ![Diagram of the electronic invoicing workflow in Egypt.](mea-eg-e-invoice-workflow.jpg)
 
+> [!NOTE]
+> Egyptian authorities provide the certificate for digital signing with the required key. They provide this certificate only as a hardware token device that can't be added to an Azure Key Vault. However, Dynamics 365 Finance enables files to be written to and read from an Azure file share, and that file share can be configured to enable external signing of electronic documents. To learn more, go to the Egyptian tax authority's website by using the link that is provided in [Egyptian eInvoicing & eReceipt SDK - Frequently asked questions](https://sdk.invoicing.eta.gov.eg/faq/).
+
 ## Prerequisites
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
 - Complete the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
-- Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
-
-> [!NOTE]
-> Egyptian authorities provide the certificate for digital signing with the required key. They provide this certificate only as a hardware token device that can't be added to an Azure Key Vault. However, Dynamics 365 Finance enables files to be written to and read from an Azure file share, and that file share can be configured to enable external signing of electronic documents. To learn more, go to the Egyptian tax authority's website by using the link that is provided in [Egyptian eInvoicing & eReceipt SDK - Frequently asked questions](https://sdk.invoicing.eta.gov.eg/faq/).
+- The primary addresses of the legal entities must be in Egypt.
 
 ## Azure Key Vault configuration
 
@@ -60,6 +60,11 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
 
+## Configure an Azure file share
+
+- Configure an Azure file share as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
+
+
 ## Import the electronic invoicing feature
 
 Import the **Egyptian electronic invoice (EG)** electronic invoicing feature, version **20** or later, from the repository. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
@@ -67,6 +72,9 @@ Import the **Egyptian electronic invoice (EG)** electronic invoicing feature, ve
 ## Configure the electronic invoicing feature
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature, review the default values, and update them as required, so that they better reflect your business operation.
+
+> [!NOTE]
+> ... only what is described below... the rest is on your iwn risk...
 
 To configure the electronic invoicing feature, follow these steps.
 
