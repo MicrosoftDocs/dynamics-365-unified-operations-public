@@ -18,24 +18,24 @@ ms.collection:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article describes the Immersive Home, how it helps you work hand-in-hand with AI agents, and how it helps you stay focused on the most important work items assigned to you.
+This article describes Immersive Home, how it helps you work hand-in-hand with AI agents and focus on the most important work items assigned to you.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The Immersive Home is a modern, AI-first landing page that adapts to your most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks. It's a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps and links to tools for enabling, monitoring, teaching, and interacting with AI agents.
+Immersive Home is a modern, AI-first landing page that adapts to your most important work, aids decision making, and reduces the need to navigate elsewhere to complete common tasks. It's a modern option for the [initial page](../get-started/set-users-initial-page.md) in finance and operations apps and links to tools for enabling, monitoring, teaching, and interacting with AI agents.
 
 :::image type="content" source="media/immersive-home.png" alt-text="Screenshot of the Immersive Home experience." lightbox="media/immersive-home.png":::
 
 ## Prerequisites
 
-To use the Immersive Home, your system must meet the following requirements:
+To use Immersive Home, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
 - The feature that is named *(Preview) Immersive Home* must be turned on in [feature management](../get-started/feature-management/feature-management-overview.md).
 
 ## The components of Immersive Home
 
-The Immersive Home is composed using a new library of controls for adaptive experiences in Microsoft business applications following the Fluent design patterns. Adaptive experiences aim not only to modernize user experiences but also to bring dynamic approaches that move away from static forms towards experiences that bring relevant work directly to your attention.
+Immersive Home consists of a new library of controls for adaptive experiences in Microsoft business applications following the Fluent design patterns. Adaptive experiences aim not only to modernize user experiences but also to bring dynamic approaches that move away from static forms toward experiences that bring relevant work directly to your attention.
 
 Immersive Home features a greeting and work summary, suggestions related to AI agents, and a central focus on work items. It also includes agent activity overviews and a ranked view of spaces, including the classic workspaces in finance and operations apps.
 
@@ -44,6 +44,9 @@ Immersive Home features a greeting and work summary, suggestions related to AI a
 The greeting at the top of the page welcomes you by name and provides a concise summary of relevant work items and suggestions for what to address. This provides a quick overview of the immediate tasks at hand.  
 
 ## Suggestions area
+
+
+
 
 The suggestion area presents relevant callouts, such as to suggest that you enroll an agent skill into service for a specific task or provide additional instructions to make an agent's service in a task more beneficial.
 
