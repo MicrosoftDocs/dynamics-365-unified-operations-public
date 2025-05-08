@@ -23,6 +23,8 @@ This article explains how to create journal entries in a batch to help increase 
 
 To set up a batch job, or to process payment invoices, depreciation, or interest for multiple leases, go to **Asset leasing \> Periodic \> Batch journal creation**. In the dialog box that appears, you can select the schedule that the journal entries should be created from. You can also specify whether the batch process should be run for specific entities, lease groups, or lease books.
 
+In version **10.0.44**, after you enable the **Multi-company purpose** under **Feature Management**, any organization hierarchy with that purpose assigned will appear in the new multi-company control—replacing the flat multi-selection list in **Batch journal creation**. This control displays your legal entities in a hierarchical parent-child view with search and sort capabilities while still offering a redesigned flat list option. 
+
 > [!NOTE]
 > Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.
 >
