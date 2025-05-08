@@ -4,13 +4,13 @@ description: Learn about the architecture of Copilot in finance and operations a
 author: jaredha
 ms.author: jaredha
 ms.topic: article
-ms.date: 11/25/2024
+ms.date: 05/08/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
 ms.search.region: Global
-ms.search.form:
+
 ---
 
 # Architecture of Copilot in finance and operations apps
