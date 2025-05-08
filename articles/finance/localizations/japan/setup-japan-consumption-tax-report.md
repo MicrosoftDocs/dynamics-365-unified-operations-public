@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Setup Japan consumption tax report
+# Set up Japan consumption tax report
 
 [!include [banner](../../includes/banner.md)]
 
