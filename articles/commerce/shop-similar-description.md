@@ -3,7 +3,7 @@ title: Enable ""shop similar description"" recommendations
 description: This article describes how to enable ""shop similar description"" product recommendations in Microsoft Dynamics 365 Commerce.
 author: bebeale
 ms.date: 01/13/2021
-ms.topic: article
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

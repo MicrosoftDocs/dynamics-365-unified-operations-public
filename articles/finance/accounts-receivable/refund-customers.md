@@ -3,7 +3,7 @@ title: Refund payment processing in the customer payment journal
 description: Learn how to provide a refund to clients from the customer payment journal using the ISO20022 credit transfer format.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/08/2023
 ms.reviewer: kfend
 audience: Application User

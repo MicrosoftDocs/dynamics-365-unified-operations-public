@@ -3,7 +3,7 @@ title: Create maintenance budgets
 description: Learn how to create a maintenance budget in Asset Management, including a step-by-step process for creating maintenance budgets.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/13/2019
 ms.custom:
 ms.reviewer: kamaybac 

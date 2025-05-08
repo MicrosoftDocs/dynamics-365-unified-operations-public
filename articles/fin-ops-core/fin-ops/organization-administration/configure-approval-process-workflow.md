@@ -3,7 +3,7 @@ title: Configure approval processes in a workflow
 description: Learn how to configure the approval processes in a workflow, including outlines on naming the approval process and specifying when notifications are sent.
 author: ChrisGarty
 ms.author: cgarty
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/08/2024
 ms.reviewer: twheeloc 
 audience: Application User

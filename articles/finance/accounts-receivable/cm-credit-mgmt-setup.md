@@ -3,8 +3,8 @@ title: Credit management parameters setup
 description: Learn about the options that you can use to configure Credit management to meet your business's requirements, including an outline on credit parameters.
 author: JodiChristiansen
 ms.author: twheeloc
-ms.topic: article
-ms.date: 05/02/2025
+ms.topic: install-set-up-deploy
+ms.date: 05/07/2024
 ms.custom:  
 ms.reviewer: twheeloc 
 audience: Application User

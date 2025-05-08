@@ -3,7 +3,7 @@ title: Turn on Sensor Data Intelligence for your system (preview)
 description: Learn how to turn on Sensor Data Intelligence for your system, including video instructions and a step-by-step procedure for using Sensor Data Intelligence.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.form:

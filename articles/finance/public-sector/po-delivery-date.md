@@ -3,7 +3,7 @@ title: Calculate the delivery date for a line, based on the lead time
 description: Learn how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar.
 author: velofog
 ms.author: twheeloc
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/03/2019
 ms.reviewer: twheeloc
 audience: Application User

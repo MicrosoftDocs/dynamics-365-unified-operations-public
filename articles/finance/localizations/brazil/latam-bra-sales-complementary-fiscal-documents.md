@@ -3,7 +3,7 @@ title: Sales complementary fiscal documents for Brazil
 description: Learn about sales complementary invoice for the Brazilian localization, including prerequisites, examples, and an outline on sales complementary fiscal documents.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024

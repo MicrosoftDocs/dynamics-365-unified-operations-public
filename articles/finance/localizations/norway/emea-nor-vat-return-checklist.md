@@ -3,7 +3,7 @@ title: Checklist for Electronic messages setup for VAT returns with direct submi
 description: Access a checklist for setting up Electronic messages functionality for VAT returns of Norway, including an outline on web applications.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: checklist
 ms.date: 02/09/2024
 ms.reviewer: johnmichalak
 audience: Application User

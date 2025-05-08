@@ -4,7 +4,7 @@ description: Learn about how to compress tables in Microsoft Dynamics AX 2012 en
 author: ttreen
 ms.author: ttreen
 ms.date: 05/23/2022
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

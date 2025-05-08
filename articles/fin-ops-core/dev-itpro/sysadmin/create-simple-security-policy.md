@@ -3,7 +3,7 @@ title: Create a security policy
 description: Learn about how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 author: Peakerbl
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/14/2020
 ms.custom: NotInToc
 ms.reviewer: johnmichalak

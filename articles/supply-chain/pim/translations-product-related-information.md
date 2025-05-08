@@ -3,7 +3,7 @@ title: Product-related translations FAQ
 description: Learn how to manage translations for products, product dimension values, and product attributes with outlines on translating data and information. 
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: faq
 ms.date: 08/06/2020
 ms.reviewer: kamaybac
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory

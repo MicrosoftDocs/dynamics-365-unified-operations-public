@@ -3,7 +3,7 @@ title: Design a new ER solution to print ZPL labels
 description: Learn about how to design a new Electronic reporting (ER) solution to print Zebra Programming Language (ZPL) labels.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/28/2022
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

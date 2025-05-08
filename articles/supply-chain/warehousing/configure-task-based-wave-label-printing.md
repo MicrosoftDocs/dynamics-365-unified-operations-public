@@ -3,7 +3,7 @@ title: Schedule wave label printing during wave
 description: Learn how to set up and use the functionality for task-based wave label printing with a process for manually enabling the new wave step method.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/02/2022
 ms.reviewer: kamaybac
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder

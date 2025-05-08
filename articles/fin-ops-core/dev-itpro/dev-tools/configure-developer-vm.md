@@ -3,7 +3,7 @@ title: Configure one-box development environments
 description: Learn about the recommended configurations of your one-box developer environment, including overviews for setup and debugging environments.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
 audience: Developer

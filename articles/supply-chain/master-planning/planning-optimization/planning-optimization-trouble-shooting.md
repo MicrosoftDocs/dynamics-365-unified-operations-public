@@ -3,7 +3,7 @@ title: Troubleshoot Planning Optimization
 description: Learn how to fix issues that you might encounter while working with Planning Optimization with an outline on possible errors when installing the add-in.
 author: t-benebo
 ms.author: benebotg
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 05/01/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -256,11 +256,11 @@ Planning Optimization differs from the deprecated master planning engine design 
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. Learn more in [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
-## Can't enable Planning Optimization
+## Can't disable Planning Optimization
 
-The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. Learn more in [Get started with Planning Optimization](get-started.md).
+The **Use Planning Optimization** option is set to *Yes* and greyed out, preventing it from being turned off.
 
-**Fix**: Make sure that the Planning Optimization Add-in was installed successfully.
+This behavior is by design. Planning Optimization is now the only planning engine available for Supply Chain Management, so you can't turn it off. However, in some rare cases, Microsoft Support might make the deprecated planning available for one or more specific companies (learn more in [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
 ## Error message is shown during CTP
 

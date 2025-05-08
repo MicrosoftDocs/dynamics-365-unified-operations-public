@@ -3,7 +3,7 @@ title: Set the session inactivity timeout
 description: Learn about how to set the session inactivity timeout, including an overview on alerting users before sessions end due to inactivity.
 author: paulliew
 ms.author: paulliew
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/19/2020
 ms.reviewer: johnmichalak
 audience: IT Pro

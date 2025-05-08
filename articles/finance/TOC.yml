@@ -1346,6 +1346,8 @@
                   href: general-ledger/ledger-allocation-rules.md
                 - name: Journalize posted journal entries
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Account reconciliation agent (Preview)
+                  href: general-ledger/acct-rec-agent.md
             - name: Consolidations and eliminations
               items:
                 - name: Consolidation and elimination overview
@@ -4256,6 +4258,8 @@
                       href: localizations/thailand/apac-tha-withholding-tax.md
                 - name: Türkiye
                   items:
+                    - name: Currency conversion
+                      href: localizations/turkiye/emea-tur-currency-conversion.md
                     - name: Continuous serial numbering of packing slips and invoices 
                       href: localizations/turkiye/emea-tur-serial-numbering.md
                 - name: United Arab Emirates (UAE)

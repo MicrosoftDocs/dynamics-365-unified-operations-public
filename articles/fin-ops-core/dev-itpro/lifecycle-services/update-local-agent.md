@@ -3,7 +3,7 @@ title: Update the local agent
 description: Learn about how to update the local agent, including a table that outlines capabilities for various local agent versions.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/04/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

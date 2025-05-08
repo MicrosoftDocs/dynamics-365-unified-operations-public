@@ -3,7 +3,7 @@ title: Address setup
 description: Learn about how to set up address formats for the global address book, including overviews on defining address parameters and setting up address formats.
 author: jaredha
 ms.author: twheeloc
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 09/23/2021
 ms.reviewer: twheeloc
 audience: IT Pro

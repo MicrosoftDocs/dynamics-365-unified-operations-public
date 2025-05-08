@@ -3,7 +3,7 @@ title: Select data
 description: Learn about how select statements fetch or manipulate data from databases with examples in the X++ language for the AccountNum column.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/27/2021
 ms.reviewer: johnmichalak
 audience: Developer

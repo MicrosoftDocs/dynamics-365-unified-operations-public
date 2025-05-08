@@ -3,7 +3,7 @@ title: Troubleshooting guide for testing with the Performance SDK
 description: Learn about how to troubleshoot for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.date: 05/28/2020
 ms.reviewer: johnmichalak
 audience: Developer

@@ -3,7 +3,7 @@ title: Point of sale (POS) APIs (preview)
 description: This article contains a list of available POS APIs and how to access them.
 author: josaw1
 ms.date: 04/30/2025
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

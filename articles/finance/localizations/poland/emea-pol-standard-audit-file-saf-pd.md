@@ -3,7 +3,7 @@ title: SAF Accounting Books Income Tax - JPK_KR_PD
 description: Learn how users in legal entities in Poland can generate a SAF Accounting Books Income Tax - JPK_KR_PD in XML format and preview in Excel.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: 
   - bap-template
 ms.date: 03/07/2025

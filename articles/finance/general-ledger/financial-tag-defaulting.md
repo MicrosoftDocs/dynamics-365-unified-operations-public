@@ -33,6 +33,8 @@ Currently, the following journals are supported for financial tag rules:
 - Vendor payment journal
 - Customer payment journal
 - Fixed asset journal
+- Free text invoice
+- Sales order
 
 ## Setup
 

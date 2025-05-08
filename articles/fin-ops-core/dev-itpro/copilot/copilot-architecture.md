@@ -3,7 +3,7 @@ title: Architecture of Copilot in finance and operations apps
 description: Learn about the architecture of Copilot in finance and operations apps, including overviews of the Copilot interface and plugins.
 author: jaredha
 ms.author: jaredha
-ms.topic: conceptual
+ms.topic: article
 ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak

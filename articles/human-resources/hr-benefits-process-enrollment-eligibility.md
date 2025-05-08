@@ -5,7 +5,7 @@ title: Process enrollment eligibility
 description: This article explains how to run the enrollment eligibility process.
 author: ramagadu 
 ms.date: 04/25/2025
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

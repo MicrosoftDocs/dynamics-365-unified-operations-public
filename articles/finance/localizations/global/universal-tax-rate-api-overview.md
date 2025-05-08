@@ -3,7 +3,7 @@ title: Connect to an external tax solution provider via the Universal Tax Rate A
 description: Learn about the overall scope of the Universal Tax Rate API feature for Tax calculation, including outlines on availability and versions.
 author: Kai-Cloud
 ms.author: kailiang
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/27/2024
 ms.custom: 
   - bap-template
