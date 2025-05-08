@@ -31,7 +31,7 @@ To set up a posting profile for endorsing bills of exchange, follow these steps.
 1. Select **New**.
 1. In the **Posting profile** field, enter a value. For example, enter "New BoE".  
 1. Select **Add**.
-1. In the **Account code** field, select an option. For example, select "All".  
+1. In the **Account code** field, select an option. For example, select **All**.  
 1. In the **Endorse account** field, enter a value.
 1. Select **Save**.
 
