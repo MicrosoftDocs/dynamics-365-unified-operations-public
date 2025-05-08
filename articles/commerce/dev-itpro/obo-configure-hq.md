@@ -112,3 +112,8 @@ To complete the synchronization of sales representatives in headquarters, follow
 [Configure a worker](../tasks/worker.md)
 
 [Enter worker information](../../human-resources/hr-personnel-enter-worker-information.md)
+
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
