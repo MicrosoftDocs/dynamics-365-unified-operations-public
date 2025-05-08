@@ -1,56 +1,51 @@
 ---
-title: Settle vendor consolidated invoices by using a payment journal
-description: In Japan, payments can be made and settled against vendor consolidated invoices. Learn about settling vendor consolidated invoices with a step-by-step process.
+title: Settle vendor consolidated invoices using a payment journal
+description: Learn how to settle vendor consolidated invoices for Japan using a payment journal in Microsoft Dynamics 365 Finance.
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendConsInvoice_JP, LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymProposalEdit
-ms.dyn365.ops.version: Version 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Settle vendor consolidated invoices by using a payment journal
 
 [!include [banner](../../includes/banner.md)]
 
+This article explains how to settle vendor consolidated invoices for Japan using a payment journal in Microsoft Dynamics 365 Finance.
+
 In Japan, payments are made and settled against consolidated invoices.
 
+The following procedure walks you through how to settle a consolidated invoice using a payment journal and the payment proposal feature. 
 
+Before you complete the procedure, ensure that you have a consolidated invoice created and confirmed. 
 
-This procedure walks you through settling a consolidated invoice using a payment journal and payment proposal feature. 
+The procedure uses the demo data company JPMF.
 
+To settle vendor consolidated invoices using a payment journal, follow these steps.
 
-
-Before you complete this procedure, be sure that you have a consolidated invoice created and confirmed. 
-
-
-
-This procedure was created using the demo data company JPMF.
-
-1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
-2. Note the value in the Consolidation ID field to reference later
-    * You can use JPMF-000002 from the demo data company JPMF.  
-3. Go to Accounts payable > Payments > Payment journal.
-4. Click New.
-5. In the Name field, click the drop-down button to open the lookup.
-6. In the list, click the link in the selected row.
-7. Click Lines.
-8. Click Payment proposal.
-9. Click Create payment proposal.
-10. Expand or collapse the Advanced parameters section.
-11. In the Consolidation ID field, type a value.
-    * You can use the value noted previously on the Consolidated invoice page.  
-12. Click OK.
-13. Click Create payments.
-    * Confirm that the payment line was generated based on the proposal and then provide a date for posting.  
-    * When there are multiple invoices tied on one consolidated invoice, multiple lines might be generated on the payment journal.  
-14. Click Post.
-15. Go to Accounts payable > Periodic tasks > Consolidated invoice.
-    * Confirm that the status of the consolidated invoice has been updated to be Settled.  
+1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
+1. In the **Consolidation ID** field, copy the value to reference later. You can use "JPMF-000002" from the demo data company JPMF.  
+1. Go to **Accounts payable \> Payments \> Payment journal**.
+1. Select **New**.
+1. In the **Name** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the selected row.
+1. Select **Lines**.
+1. Select **Payment proposal**.
+1. Select **Create payment proposal**.
+1. Expand or collapse the **Advanced parameters** section.
+1. In the **Consolidation ID** field, enter a value. You can use the value you copied from the **Consolidated ID** field.  
+1. Select **OK**.
+1. Select **Create payments**.
+1. Confirm that the payment line was generated based on the proposal and then provide a date for posting. When there are multiple invoices tied on one consolidated invoice, multiple lines might be generated on the payment journal.  
+1. Select **Post**.
+1. Go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
+1. Confirm that the status of the consolidated invoice has been updated to be **Settled**.  
 
 
 
