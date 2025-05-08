@@ -45,7 +45,7 @@ Create the **Item inquiry** menu item by following these steps.
 
 1. On the **General** FastTab, configure:
 
-    - **Activity code:** *Data inquiry*
+    - **Activity code:** *Item inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
 
 Once configured, this menu item can be added to mobile device menus for warehouse users, enabling direct access from the Warehouse Management mobile app.
