@@ -94,7 +94,7 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 ```json
 {
     "Url": "https://contoso.operations.dynamics.com",
-    "TenantId": "72ad15fq-3m88-4e15-be25-8751c9bd0764",
+    "TenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "Id": "b2106f5c-e218-4aac-841a-a59da4738eb4"
 }
 ```
