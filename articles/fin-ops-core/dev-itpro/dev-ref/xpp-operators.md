@@ -88,7 +88,7 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 |------------|------------------|
 | `<<`       | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.              |
 | `>>`       | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                  |
-| `\*`       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
+| `*`       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
 | `/`        | The **divide** operator divides *expression1* by *expression2*.                                                    |
 | `DIV`      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                  |
 | `MOD`      | The **integer remainder** operator returns the remainder of an integer division of *expression1* by *expression2*. |
