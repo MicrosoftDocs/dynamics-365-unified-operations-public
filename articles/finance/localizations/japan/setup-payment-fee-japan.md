@@ -15,7 +15,7 @@ ms.custom:
   - bap-template
 ---
 
-# Setup payment fee for Japan
+# Set up payment fee for Japan
 
 [!include [banner](../../includes/banner.md)]
 
@@ -86,9 +86,9 @@ To create a payment fee, follow these steps.
 1. In the **Fee ID** field, enter a value.
 1. In the **Name** field, enter a value.
 1. In the **Fee description** field, enter a value.
-1. In the **Charge** field, select 'Ledger'.
-1. In the **Ledger account** field, specify the desired values.
-1. In the **Payment fee account** field, specify the desired values.
+1. In the **Charge** field, select **Ledger**.
+1. In the **Ledger account** field, enter a value.
+1. In the **Payment fee account** field, enter a value.
 1. In the **Journal type** field, select an option. For example, select **Vendor disbursement**.  
 1. Select **Save**.
 1. Select **Payment fee setup**.
@@ -101,11 +101,11 @@ To create a payment fee, follow these steps.
 1. In the list, select the link in the selected row. For example, select **Bank**.  
 1. In the **Bank rule ID for payment fee** field, enter a value. For example, enter **DiffBank**.  
 1. Select the **General** tab.
-1. In the **Payment currency** field, enter a value. For example, enter **JPY**.  
+1. In the **Payment currency** field, enter a value. For example, enter "JPY".  
 1. In the **Minimum** field, enter a number. 
 1. In the **Percentage/Amount** field, select an option. For example, select **Amount**.  
 1. In the **Fee amount** field, enter a number.
-1. In the **Fee currency** field, enter a value. For example, enter **JPY**.  
+1. In the **Fee currency** field, enter a value. For example, enter "JPY".  
 1. In the **Sales tax group** field, select the drop-down button to open the lookup.
 1. In the list, select the link in the selected row.
 1. In the **Item sales tax group** field, select the drop-down button to open the lookup.
