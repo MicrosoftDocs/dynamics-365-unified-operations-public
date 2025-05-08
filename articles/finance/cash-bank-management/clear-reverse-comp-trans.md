@@ -3,7 +3,7 @@ title: Clear reversal company transactions in advanced bank reconciliation
 description: Learn about how to clear transactions in advanced bank reconciliation, including prerequisites and various step-by-step processes.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/22/2024
 ms.custom:
 ms.reviewer: twheeloc

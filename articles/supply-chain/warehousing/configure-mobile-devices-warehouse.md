@@ -242,7 +242,9 @@ You can set up a menu item that creates work for another worker after an initial
 </table>
 
 > [!NOTE]
-> You can set up mobile device menu items (such as [*Mixed license plate receiving (and putaway)*](mixed-license-plate-receiving.md)) to embed some of the flows from the previous table in the process.
+>
+> - You can set up mobile device menu items (such as [*Mixed license plate receiving (and putaway)*](mixed-license-plate-receiving.md)) to embed some of the flows from the previous table in the process.
+> - To prevent accidental selection, the **Cancel** button isn't shown during *cycle counting* mobile workflows.
 
 ## Configure menu items to process existing work
 
