@@ -31,7 +31,7 @@ The Copilot interface for the chat experience in finance and operations apps use
 
 Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio. This chatbot is named **Copilot for finance and operations apps**. The chatbot is deployed as part of the Copilot in the finance and operations solution (msdyn\_FnoCopilot). For guidance about how to install the solution and chatbot in your environment, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
-> [NOTE]
+> [!NOTE]
 > [Generative orchestration] is not yet supported for the **Copilot for finance and operations apps** agent.
 
 ## Plugins
