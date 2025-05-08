@@ -3,7 +3,7 @@ title: Cash application in advanced bank reconciliation
 description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and step-by-step processes.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 2/18/2025
 ms.custom:
 ms.reviewer: twheeloc
