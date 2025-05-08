@@ -4,7 +4,7 @@ description: Learn how to create fixed asset rules with required master data for
 author: kfend
 ms.author: kfend
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 05/09/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
