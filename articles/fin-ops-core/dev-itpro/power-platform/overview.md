@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
+> [!IMPORTANT]
 > Beginning **May 1, 2025**, all environments for finance and operations apps are required to have the Power Platform Integration enabled. Before this date, environment administrators should enable the Power Platform Integration by following the steps in this article, selecting the Power Platform environment to which the environment for your finance and operations apps should be linked. Any finance and operations apps environments that aren't linked to a Power Platform environment through the Power Platform Integration after this date will have the Power Platform Integration automatically enabled for the environment. During automated enablement, the environment will either be linked to a newly provisioned Power Platform environment, or linked to an existing Power Platform envrionment if either [dual-write](../data-entities/dual-write/dual-write-home-page.md) or [virtual entities for finance and operations apps](../power-platform/virtual-entities-overview.md) has already been enabled for the environment.
 > Learn more about enabling and configuring the integration in [Enabling the Power Platform integration](./enable-power-platform-integration.md).
 
