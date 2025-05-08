@@ -4,7 +4,8 @@ description: Learn about the operators supported in X++, including an overview o
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 12/02/2019
+ms.date: 05/02/2025
+ms.custom: evergreen
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
