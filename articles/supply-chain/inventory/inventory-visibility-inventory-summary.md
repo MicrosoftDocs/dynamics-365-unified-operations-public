@@ -16,7 +16,7 @@ ms.search.form:
 
 The **Inventory summary** page is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Inventory summary data is periodically synced from Inventory Visibility.
 
-The **Inventory summary** feature is not compatible with [WMS items](inventory-visibility-whs-support.md).
+The **Inventory summary** feature isn't compatible with [items enabled for enabled for warehouse management processes (WMS)](inventory-visibility-whs-support.md).
 
 > [!NOTE]
 > The inventory summary feature tracks only on-hand inventory changes that occur after you turn on the feature. Data for products that haven't changed since you turned on the feature isn't synced from the Inventory Visibility cache to the Microsoft Dataverse environment.
