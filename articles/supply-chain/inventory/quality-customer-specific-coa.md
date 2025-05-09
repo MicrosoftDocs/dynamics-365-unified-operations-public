@@ -1,6 +1,6 @@
 ﻿---
-title: Customer specific certificate of analysis (COA) (preview)
-description: Learn how to customize the content of a COA to meet specific customer requirements and automatically print the COA when generating a sales order packing slip
+title: Customer-specific certificate of analysis (COA) (preview)
+description: Learn how to customize the content of a certificate of analysis (COA) to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -11,84 +11,88 @@ ms.custom:
   - bap-template
 ---
 
-# Customer specific certificate of analysis (COA) (preview)
+# Customer-specific certificate of analysis (COA) (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Supply Chain Management provides the ability to create a basic certificate of analysis (COA) from the quality order or from the menu directly after selecting a quality order. Learn more about how to use the basic COA in [Quality orders](quality-orders.md). This article explains how to customize the content of a COA to meet specific customer requirements and automatically print the COA when generating a sales order packing slip.
+Microsoft Dynamics 365 Supply Chain Management lets you create a basic certificate of analysis (COA) either from the quality order or from the menu directly after you select a quality order. Learn more about how to use the basic COA in [Quality orders](quality-orders.md). This article explains how to customize the content of a COA to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
-To use the features described in this article, your system must meet the following requirements:
+Before you can use the features that are described in this article, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- You must be running Supply Chain Management version 10.0.44 or later.
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up a COA customer group
 
-To manage COA for different customers, you can group customers by assigning them to COA customer groups. To create and add customers to a COA customer group, follow these steps.
+To manage COAs for different customers, you can group customers into COA customer groups. To create a COA customer group and add customers to it, follow these steps.
 
-1. Go to: **Inventory management** \> **Setup** \> **Certificate of analysis** \> **Certificate of analysis customer groups**.
-1. Use buttons in the action pane to add, edit, or delete a COA customer group.
-1. Make the following selections for your new or selected COA customer group.
-    - **COA customer group** - Identification of the COA customer group.
-    - **Description** - Description of the COA customer group.
+1. Go to **Inventory management** \> **Setup** \> **Certificate of analysis** \> **Certificate of analysis customer groups**.
+1. Use the buttons on the Action Pane to add a new COA customer group or edit an existing one. (You can also delete existing groups.)
+1. For the new or selected COA customer group, set the following fields:
 
-## Set up and maintaining customer COA requirements on test groups
+    - **COA customer group** – Enter the identifier of the COA customer group.
+    - **Description** – Enter a description for the COA customer group.
 
-To set up customer-specific COA requirements on test groups follow these steps:
+## Set up and maintain customer-specific COA requirements on test groups
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**
+To set up customer-specific COA requirements on test groups, follow these steps.
+
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. In the lower section of the page, select a test.
-1. In the tool bar, select customer COA requirements to open the customer COA requirements page.
-1. Use the buttons in the action pane to add, edit, or delete a customer COA requirement.
-1. When making a new customer COA requirement the fields test and test group will be automatically filled our. The **Attribute** field is filled out if the test is associated a Batch attribute.
-1. Fill out the fields in the grid to complete the creation of the requirement.
-    - **Customer code** - Choose *All* to make the requirement applicable for all customers, *Group* for a group of customers, and *Table* for a specific customer.
-    - **Customer relation** - Dependent on your selection in **Customer code** select a *COA customer group* or a specific *Customer account*.
-    - **Exclude** - Indicates if the test should appear on customer-specific COA. All tests are assumed to be included except those specifically marked as excluded.
-    - **Use customer specific ranges** - Indicates whether the customer specific batch attribute range should be used for the customer-specific COA. If no customer specific batch attribute range if found, then the standard range will print.
-    - **Suppress Min/Max values** - Indicates if the minimum and maximum values of the Test should be suppressed on the customer-specific COA. For example, for a given test, let's assume that the minimum is 1 and the Maximum is 10 and the Result is 1. For certain customers, it might be desirable that the range doesn't display at all, not to draw attention to the fact that the result just passed the quality test.
-    - **Replace pass results** - When populated, the verbiage will replace the test results on the customer-specific COA if the test is passed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as *Within specifications* for a pass.
-    - **Replace fail results** - When populated, the verbiage will replace the test results on the customer's COA if the test is failed. Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as *Outside acceptable range* for a failure.
+1. On the toolbar, select **Customer COA requirements** to open the **Customer COA requirements** page.
+1. Use the buttons on the Action Pane to add a new customer COA requirement or edit an existing one. (You can also delete existing requirements.)
 
-## Set up and maintain customer COA requirements from a quality order
+    If you add a new customer COA requirement, the **Test** and **Test group** fields are automatically set. If the test is associated with a batch attribute, the **Attribute** field is also set.
 
-To set up and maintain customer COA requirements from a quality order, follow these steps.
+1. For the new or selected customer COA requirement, set the following fields in the grid:
 
-1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders**
-1. Select a quality order
-1. Select a line on the selected quality order
-1. From the action pane, select customer COA requirements
-1. Follow the same steps for adding, deleting, or editing customer COA requirements as described in previous section about test groups.
+    - **Customer code** – Select *All* to make the requirement applicable to all customers, *Group* to make it applicable to a group of customers, or *Table* to make it applicable to a specific customer.
+    - **Customer relation** – If you selected *Group* in the **Customer code** field, select a COA customer group. If you selected *Table*, select a specific customer account. (If you selected *All*, this field is unavailable.)
+    - **Exclude** – Select whether the test should appear on the customer-specific COA. The assumption is that the customer-specific COA includes all tests except tests are explicitly marked as excluded.
+    - **Use customer specific ranges** – Specify whether the customer-specific batch attribute range should be used for the customer-specific COA. If no customer -specific batch attribute range if found, the standard range is printed.
+    - **Suppress Min/Max values** – Specify whether the minimum and maximum values of the test should be suppressed on the customer-specific COA. For example, the minimum value for a test is *1*, the maximum value is *10*, and the result is *1*. In this case, you might not want the range to be shown at all for some customers, to avoid drawing attention to the fact that the result barely passed the quality test.
+    - **Replace pass results** – Enter text that should replace the test results on the customer-specific COA if the test is passed. In this situation, some businesses prefer to show standard text, such as "Within specification," instead of the actual test results.
+    - **Replace fail results** – Enter text that should replace the test results on the customer-specific COA if the test is failed. In this situation, some businesses prefer to show standard text, such as "Outside acceptable range," instead of the actual test results.
 
-## Include product- and customer-specific batch attributes in COA
+## Set up and maintain customer-specific COA requirements from a quality order
 
-You can mark product and customer specific batch attributes to be included into the COA, even if they aren't included in testing through a quality order.
+To set up and maintain customer-specific COA requirements from a quality order, follow these steps.
+
+1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders**.
+1. Select a quality order.
+1. Select a line on the selected quality order.
+1. On the Action Pane, select **Customer COA requirements**.
+1. Follow steps 4 and 5 of the previous procedure to add, edit, or delete customer-specific COA requirements.
+
+## Include product-specific and customer-specific batch attributes on a COA
+
+You can mark product-specific and customer-specific batch attributes for inclusion on a COA, even if they aren't included in testing through a quality order.
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
-1. In the **All released products** list page, find and select or open the batch-enabled product you want to set up.
-1. On the Action Pane, open the **Manage inventory** tab and, from the **Batch attributes** group, select either **Product specific** or **Customer specific**.
-1. Select an existing attribute from the list pane or create a new one.
-1. To include your new or selected attribute in COA, set **Include in COA independent of quality order** to *Yes*.
-1. Repeat the previous steps for each attribute you want to include in the COA.
+1. On the **All released products** list page, find and select or open the batch-enabled product that you want to set up.
+1. On the Action Pane, on the **Manage inventory** tab, in the **Batch attributes** group, select either **Product specific** or **Customer specific**.
+1. Select an existing attribute in the list pane, or create a new one.
+1. To include the new or selected attribute on a COA, set the **Include in COA independent of quality order** option to *Yes*.
+1. Repeat the previous steps for every other attribute that you want to include on the COA.
 
-Once the customer COA requirements are set for a test group, they'll automatically apply to all quality orders using that test group. However, these requirements can be adjusted directly on the quality order if needed.
+After the customer-specific COA requirements are set for a test group, they automatically apply to all quality orders that use that test group. However, they can be adjusted on individual quality orders as required.
 
 ## Access customer-specific COAs
 
-Customer-specific COAs can be accessed from the menu paths listed in the following table.
+The following table describes the different ways to access customer-specific COAs.
 
-| Access Method | Navigation Path | Details |
-|--|--|--|
-| From the menu directly | **Inventory management** \> **Inquiries** \> **Quality management** \> **Certificate of analysis** | You can print both the standard COA and customer-specific COA (triggered by selecting a specific customer account). You must select a quality order in both cases. |
-| From a quality order | **Inventory management** \> **Periodic** \> **Quality management** \> **Quality order** \> **Ribbon: Inquiries** \> **Certificate of analysis** | You can print both the standard COA and customer-specific COA (triggered by selecting a specific customer account). Since access is from a quality order, the Quality order is assumed in both cases. |
-| From an inventory batch | **Inventory management** \> **Inquiries** \> **Dimensions** \> **Batches** \> **Ribbon: Inquiries** \> **Certificate of analysis** | You can print both the standard COA and the customer-specific COA (triggered by selecting a specific customer account). Since access is from an inventory batch, the Certificate of analysis Quality order (found on the General tab) on the Inventory Batch is used in both cases to generate the COA. If the Certificate of analysis quality order needs to be updated, the ribbon action **Reset COA Quality order** can be used to change the quality order that drives the details of the COA. |
-| As part of processing the Sales order packing slip | **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders** \> **Ribbon: Pick and pack** \> **Generate** \> **Packing slip** or **Sales and marketing** \> **Periodic** \> **Sales update** \> **Packing slip** | Only customer-specific COAs are printed from this process. Based on the customer placing the order, the system prints a customer-specific COA for every item/batch combination on the order that has a Certificate of analysis Quality order specified on the Batch. No COA is printed for items not batch-controlled or for items where the batch doesn't have a Quality order specified. |
+| Access method | Navigation path | Details |
+|---|---|---|
+| Directly from the menu | Go to **Inventory management** \> **Inquiries** \> **Quality management** \> **Certificate of analysis**. | You can print either the standard COA or a customer-specific COA. (You trigger printing of a customer-specific COA by selecting a specific customer account.) In both cases, you must select a quality order. |
+| From a quality order | Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quality order**, and then, on the Action Pane, select **Inquiries** \> **Certificate of analysis**. | You can print either the standard COA or a customer-specific COA. (You trigger printing of a customer-specific COA by selecting a specific customer account.) Because access is from a quality order, that quality order is assumed in both cases. |
+| From an inventory batch | Go to **Inventory management** \> **Inquiries** \> **Dimensions** \> **Batches**, and then, on the Action Pane, select **Inquiries** \> **Certificate of analysis**. | You can print either the standard COA or a customer-specific COA. (You trigger printing of a customer-specific COA by selecting a specific customer account.) Because access is from an inventory batch, the COA quality order that is specified on the **General** tab of the inventory batch is used to generate the COA in both cases. If the COA quality order must be updated, you can use the **Reset COA Quality order** button on the Action Pane to change the quality order that drives the details of the COA. |
+| As part of processing the sales order packing slip | Go to **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders**, and then, on the Action Pane, on the **Pick and pack** tab, select **Generate** \> **Packing slip**. Alternatively, go to **Sales and marketing** \> **Periodic** \> **Sales update** \> **Packing slip**. | Only customer-specific COAs are printed from this process. Depending on the customer who placed the order, a customer-specific COA is printed for every item/batch combination on the order that has a COA quality order specified for it in the batch. A COA is printed only for items that are batch controlled and items where the batch specifies a quality order. |
 
 > [!NOTE]
-> The option to print customer-specific COA is initially defaulted from the Accounts Receivable parameters from the Updates tab. This parameter defaults to new customers. The checkbox on the Packing slip process form defaults from the customer if processing for a single order. If processing for multiple orders, you must select this checkbox to print customer-specific COAs.
+> The setting of the option to print customer-specific COAs initially comes from the **Updates** tab of the **Accounts receivable parameters** page. By default, this setting is used for new customers. If you process the packing slip for a single order, the setting of the checkbox on the packing slip processing page comes from the customer. If you process packing slips for multiple orders, you must select the checkbox to print customer-specific COAs.
