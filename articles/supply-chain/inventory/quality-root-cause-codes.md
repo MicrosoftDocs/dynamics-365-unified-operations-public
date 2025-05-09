@@ -1,6 +1,6 @@
 ---
-title: Correction root cause codes (preview)
-description: Use nonconformance root cause codes to establish standard codes for root causes associated with corrections for nonconformance issues that are often applied at your company.
+title: Nonconformance root cause codes (preview)
+description: Learn how to manage nonconformance root cause codes for root causes that are associated with corrections for nonconformance issues that are often encountered at your company.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -17,22 +17,23 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Use *nonconformance root cause codes* to establish standard codes for root causes associated with corrections for nonconformance issues that are often applied at your company. For example, you might create codes for wind damage, water damage, training issues, or other common issues that you encounter. By using root cause codes, you'll have a consistent way of identifying causes that you can apply to the relevant corrective actions.
+Use *nonconformance root cause codes* to establish standard codes for root causes that are associated with corrections for nonconformance issues that are often encountered at your company. For example, you might create codes for wind damage, water damage, training issues, or other common issues that you encounter. Root cause code give you a consistent way to identify causes that you can apply to the relevant corrective actions.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
-To use the features described in this article, your system must meet the following requirements:
+Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Advanced quality management* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *(Preview) Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Manage root cause codes
 
-1. Go to **Inventory management \> Setup \> Quality management \> Correction root cause codes**.
-1. Use the buttons on the Action Pane to create, delete, or edit root cause codes in the grid.
-1. Make the following settings for each row:
+1. Go to **Inventory management** \> **Setup** \> **Quality management** \> **Correction root cause codes**.
+1. Use the buttons on the Action Pane to add new root cause codes or edit existing ones. (You can also delete existing codes.)
+1. Set the following fields for each row:
+
     - **Root cause code** – Enter a unique ID or name for the root cause code.
     - **Description** – Enter a short description of the root cause code.
 
