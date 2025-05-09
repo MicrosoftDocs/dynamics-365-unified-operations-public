@@ -94,7 +94,6 @@ You can create CAPA cases from many different pages in the system, including pag
     - **CAPA category** – Select a category for the CAPA case. The category is used to analyze trends for reporting purposes.
     - **CAPA subcategory** – If subcategories are defined for the category that you selected, select one. The subcategory is used to analyze trends for reporting purposes.
     - **Description** – Enter a brief description of the CAPA case.
-    - **Priority** – Select the priority of the CAPA case.
     - **CAPA process** – Select the CAPA process that should be followed to resolve this case. The CAPA process guides workers who are assigned to the case through the steps that are required to resolve it. It defines a series of stages. These stages must be completed in order. Within each stage, the CAPA process defines activities that should be completed before the process is moved to the next stage.
 
 1. If you want to add a log entry to the case, on the **Case log** tab, enter the details of the log entry. You can view and add log entries from the details page for a CAPA case.

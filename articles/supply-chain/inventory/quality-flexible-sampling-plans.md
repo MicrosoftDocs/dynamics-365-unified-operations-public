@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-A *flexible sampling plan* defines the criteria for inspecting randomly selected units of items from a lot. The results from the inspected sample determine whether the whole lot passes or fails testing. Typically, the number of units that are selected for inspection is proportional to the total size of the lot, based on a rational criterion. The quality association that is defined for a plan identifies the activity for the inspection. For example, the activity might be a quality order to inspect a product before it's released to a customer on a sales order. Alternatively, it might be a quality order to inspect a manufactured product after production is completed.
+A *flexible sampling plan* defines the criteria for inspecting randomly selected units of items from a lot. The results from the inspected sample determine whether the whole lot passes or fails testing. Typically, the number of units that are selected for inspection is proportional to the total size of the lot. The quality association that is defined for a plan identifies the activity for the inspection. For example, the activity might be a quality order to inspect a product before it's released to a customer on a sales order. Alternatively, it might be a quality order to inspect a manufactured product after production is completed.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
