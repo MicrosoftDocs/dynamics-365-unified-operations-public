@@ -47,9 +47,9 @@ Security categories offer options for both backing up as XML and restoring from 
 1. In the **Type** field, select a value.
 1. If you selected **User security governance** in the **Type** field, in the **Security related action** field, select one of the following values:
 
-    - **Create** – Restore and publish the XML of the security category.
-    - **Clear** – Restore the XML of the security category.
-    - **None** – Restore the XML of the security category.
+    - **Create** – this option automatically creates/ pushes all Duties and Roles that should be created from security setup into the publish staging table. In Security configuration, you should see all Security objects developed with security setup that are ready for publishing.
+    - **Clear** – this option will clear all the security references between user security governance and Finance & operations security configuration. This means that each task line that was imported will be blank and you’ll need to create Roles/duties again for all lines. This might be helpful when you want to clear off or renew the project.
+    - **None** – this will move all user security governance security objects as they were not created within the system. So in case that security objects are non-existent, this might cause complications.
 
 ## Bulk-create a process hierarchy
 
@@ -57,3 +57,22 @@ System administrators can use the **Restore from XML** feature to create an enti
 
 > [!TIP] 
 > Create one category through the user interface (UI), and use the **Backup as XML** feature to download the initial file. Then modify the category in this file to create the new category that has the desired hierarchy.
+
+## Detailed walk-through of the security category export and import process
+
+1. Generally, data export and import scenarios appear when customer is migrating data between legacy tool and User security governance or copying data between multiple data areas. This function is only available to system administrator role.
+2. The first step in this process is to export the data.
+3. Select desired security categories or all security categories on the security category form and click **Backup as XML** button.
+4. This will bring up a dialog where you will have few options to select.
+5. **All categories** - In case you did not select all categories earlier but now you want to do it, you can select this toggle button.
+6. **Type** - There are 3 choices under this lookup and each of them are explained in detail above. Based on your requirement, select the option. This lookup allows single selection only.
+7. After making all selections, press the button **OK**. This should start downloading a file in XML format. Please save the file in your local storage.
+8. If you want, you can also verify this file by opening it any XML editor and you should see appropriate user security governance objects or core security configuration objects in the file, based on select made during the export.
+9. Next step would be to import this file into the new data area you are targeting as destination.
+10. Switch to the environment or new data area where you would like to import security categories exported earlier. Navigate to **System administration** \> **Security governance** \> **Security category**.
+11. Click **Restore from XML** button on the top menu. This will open up a dialog where you will get the option to select the file and other configurations.
+12. In the dialog, browse to the XML file which you exported earlier.
+13. Depending on the **Type** you selected earlier during **export**, select the **same** **Type** value during import. Even if you end up selecting wrong Type value, the tool will later generate an info message, giving you more information on why the import process might not work.
+14. Under **OPTIONS** group, you will have to select the appropriate **Security relation action** value.
+15. Now, based on whether your want to just create only user security governance objects or want to clear the existing references between F&O security objects and user security governance objects or to create all objects, you can pick one of the actions from **None, Clear or Create**. These options are explained in detail above.
+16. Click OK to start the data import and you should see an appropriate info message after this action.
