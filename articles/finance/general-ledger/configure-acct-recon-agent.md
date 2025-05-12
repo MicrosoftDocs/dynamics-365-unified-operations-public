@@ -73,7 +73,7 @@ To set up the connectors, follow these steps:
 10. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 11. You return to the **Connection**s list. The new connector is displayed at the bottom of the list and is named after the agent identity you signed in with when creating it. 
 
-Now, you must update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article. 
+Now, you must update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the sample PowerShell script provided at the bottom of this article. 
 
 ### Sample script to update connection references and enable triggering flows 
 
@@ -81,7 +81,7 @@ This sample PowerShell script finishes [setting up the agent identity](#set-up
  - `environmentId` - Your Dataverse environment ID. You can find it in the Power Platform admin center.
  - `dataverseUrl` - Your Dataverse environment URL. You can find it in Power Platform admin center.
  - `DVConnectionName` - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when creating it. You can find it on the **Connections** page of the Power Apps Maker portal.
- - `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-idntity). You can find it on the **Connections** page of the Power Apps Maker portal. 
+ - `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity). You can find it on the **Connections** page of the Power Apps Maker portal. 
 
 Copy the following script and save it as a `.ps1` file. Enter the parameter values at the top, customize it if needed, and run it from any PowerShell console. When you run the script, sign in as an environment 
 administrator when prompted. 
