@@ -20,13 +20,13 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how system administrators can set up and configure the Account Reconciliation Agent. 
+This article explains how system administrators can set up and configure the Account reconciliation agent. 
 
 ## Prerequisites 
 
 To use the Account reconciliation agent, your system must meet the following requirements: 
  - You must be running Microsoft Dynamics 365 Finance version 10.0.44 or later.
- - The following features must be turned on in feature management. Select **Check for updates** if the features aren't shown on your system.
+ - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
      - (Preview) Immersive Home
      - (Production ready preview) Agent management
      - (Production ready preview) Account reconciliation agent 
@@ -35,7 +35,7 @@ You must be running the following packages in the Power Platform admin center:
  - Copilot for finance and operations apps version 1.0.3048.2 or later
  - Copilot in Microsoft Dynamics 365 Finance version 1.0.3049.1 or later 
 
-Learn more in [Immersive home](/fin-ops-core/fin-ops/copilot/immersive-home.md).  
+Learn more in [Immersive home](../../fin-ops-core/fin-ops/copilot/immersive-home.md).  
 
 ### Set up agent identity 
 
@@ -58,10 +58,10 @@ Required Dynamics 365 Supply Chain Management user roles:
 
 ### Create required connections and activate the triggering flows 
 
-The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to perform its work. 
+The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to perform its work. You must set them up before you can use the agent. 
 
 To set up the connectors, follow these steps:  
-1. Open the Power Apps Maker portal and sign in as an environment administrator user.
+1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
 2. In the left navigator, select **Connections**.
 3. At the top of the page, select **New connection**.
 4. In the **Search** field, search for the **Microsoft Dataverse** connection.
@@ -73,21 +73,17 @@ To set up the connectors, follow these steps:
 10. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 11. You return to the **Connection**s list. The new connector is displayed at the bottom of the list and is named after the agent identity you signed in with when creating it. 
 
-Update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the sample PowerShell script 
-provided at the bottom of this article. 
+Now, you must update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article. 
 
 ### Sample script to update connection references and enable triggering flows 
 
-This sample PowerShell script finishes setting up the agent identity by updating the connection references for the agent and activating the triggering Power Automate flows. You must set the following parameters 
-before running the script: 
- - environmentId - Your Dataverse environment ID. You can find it in the Power Platform admin center.
- - dataverseUrl - Your Dataverse environment URL. You can find it in Power Platform admin center.
- - DVConnectionName - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when creating it. You can find it on the **Connections** page of the Power Apps
-   Maker portal.
- - MCSConnectionName - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when creating it. You can find it on the **Connections** page of
-   the Power Apps Maker portal. 
+This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows. You must set the following parameters before running the script: 
+ - `environmentId` - Your Dataverse environment ID. You can find it in the Power Platform admin center.
+ - `dataverseUrl` - Your Dataverse environment URL. You can find it in Power Platform admin center.
+ - `DVConnectionName` - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when creating it. You can find it on the **Connections** page of the Power Apps Maker portal.
+ - `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-idntity). You can find it on the **Connections** page of the Power Apps Maker portal. 
 
-Copy the following script and save it as a .ps1 file. Enter the parameter values at the top, customize it if needed, and run it from any PowerShell console. When you run the script, sign in as an environment 
+Copy the following script and save it as a `.ps1` file. Enter the parameter values at the top, customize it if needed, and run it from any PowerShell console. When you run the script, sign in as an environment 
 administrator when prompted. 
 
 ```powershell
