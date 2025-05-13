@@ -85,7 +85,7 @@ Import the **Egyptian electronic invoice (EG)** electronic invoicing feature, ve
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature, review the default values, and update them as required, so that they better reflect your business operation.
 
 > [!NOTE]
-> ... only what is described below... the rest is on your iwn risk...
+> Only the parameters mentioned in this chapter require modification. Other parameters can be also reconfigured if necessary. In this case you take the responsibility for the proper feature functioning.
 
 To configure the electronic invoicing feature, follow these steps.
 
@@ -112,7 +112,7 @@ To configure the electronic invoicing feature, follow these steps.
 
     ![Screenshot that shows the retry parameters for the Globalization feature for Egypt.](mea-eg-e-invoice-retry.jpg)
 
-1. Complete the **Egyptian electronic invoice (EG)** feature, and deploy it to the service. Learn more in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. Complete your version of the **Egyptian electronic invoice (EG)** feature, and deploy it to the service. Learn more in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
 
