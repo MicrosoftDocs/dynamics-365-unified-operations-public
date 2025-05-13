@@ -57,7 +57,7 @@ Add the following required elements in the Azure Key Vault:
 - The secret for the obtained **Client secret** obtained from the regulatory authority.
 - The secret for the **Connection string** to the [Azure file share](#ConnectionString) that you configured in the previous section.
   > [!IMPORTANT]
-  > Don't confuse the **Connection string** value with the **Storage shared access signature (SAS)** token.
+  > Don't confuse the **Connection string** value with the **Storage shared access signature (SAS)** token which is the parameters in the next section.
 
 ## Configure electronic invoicing Key Vault parameters
 
@@ -70,8 +70,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each secret that is described in the previous section.
 
     - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
-    - <a id="PK"></a>The **Client secret** element of the **Secret** type.
-
+    - <a id="ClSec"></a>The **Client secret** element of the **Secret** type.
+    - <a id="ConStr"></a>The **Connection string** element of the **Secret** type.
     > [!NOTE]
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
@@ -94,9 +94,9 @@ To configure the electronic invoicing feature, follow these steps.
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Egyptian tax authority's services.
 
-    - **EgyptianETAClientID** – Enter the client ID that the regulatory authority provided.
-    - **EgyptianETAClientSecret** – Enter the secret that the regulatory authority provided.
-    - **EgyptianETAConnectionString** – Enter the secret for the connection string to the Azure file share that you provisioned previously.
+    - **EgyptianETAClientID** – Select the secret for the [Client ID](#ClID) previously configured in the parameters.
+    - **EgyptianETAClientSecret** – Select the [Client secret](#ClSec) previously configured in the parameters.
+    - **EgyptianETAConnectionString** – Select the secret for the [Connection string](#ConStr) to the Azure file share that you previously provisioned and configured in the parameters.
     - **EgyptianETASendToFileShareDirectory** – Enter the name of the Azure file share directory that invoices for digital signing should be written to.
     - **EgyptianETAGetFromAzureFileShare** – Enter the name of the Azure file share directory that digitally signed invoices should be read from.
     - **EgyptianETALoginserviceURL** – Enter the URL of the Egyptian tax authority's login service. The feature that Microsoft released points to the pre-production endpoint.
