@@ -1,4 +1,4 @@
-﻿---
+---
 title: Review and apply purchase order changes received in vendor emails (production ready preview)
 description: Discover how Copilot automates vendor email analysis, identifies purchase order changes, and helps you apply updates.
 author: t-benebo
