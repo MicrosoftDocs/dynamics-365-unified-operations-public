@@ -41,6 +41,64 @@ To use the Supplier Communications Agent, your system must meet the following re
 
 To learn more about the *Immersive Home* feature, go to [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).
 
+## Set up agent identity
+
+The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to perform its work. You must select an identity used for these interactions and create the required connections.
+
+> [!TIP]
+> For reasons of security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
+
+### Set up agent identity users and assign security roles
+
+Create agent identity user accounts in both Dataverse and Dynamics 365 Supply Chain Management. Assign them the security roles shown in the following lists.
+
+- Required Dataverse user roles:
+    - *Finance and Operation Basic User*
+    - *Supplier Communications Agent*
+    - *Environment Maker*
+
+- Required Dynamics 365 Supply Chain Management user roles:
+    - *(Preview) Supplier Communications Agent*
+    - *System user*
+
+### Create required connections and activate the triggering flows
+
+1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
+1. In the left navigator, select **Connections**.
+1. At the top of the page, select **New connection**.
+1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
+1. At the top of the page, select **New connection**.
+1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
+1. Update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
+
+## Assign permissions to users working with the agent
+All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
+
+Additionally, they need following roles assigned.
+
+### Permissions for users managing agent configuration
+
+- Required Dataverse user roles:
+    - *Basic User*
+    - *Finance and Operations Agent Configuration Manager*
+    - *Finance and Operations Basic User*
+
+- Required Dynamics 365 Supply Chain Management user roles:
+    - *System user*
+    - *Purchasing manager* and/or *Purchasing agent*
+ 
+### Permissions for users reviewing agent results
+
+- Required Dataverse user roles:
+    - *Basic User*
+    - *Finance and Operations Basic User*
+ 
+- Required Dynamics 365 Supply Chain Management user roles:
+    - *System user*
+    - *Purchasing agent*
+
 ## Synchronize mailboxes with Dataverse
 
 To enable email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes to be synchronized with Microsoft Dataverse at the server level.
@@ -103,46 +161,9 @@ For detailed instructions, go to [Set up server-side synchronization of email](/
 
 To learn how to solve common issues related to server-side synchronization, go to [Troubleshooting and monitoring](/power-platform/admin/troubleshooting-monitoring-server-side-synchronization).
 
-## Set up agent identity
-
-> [!TIP]
-> For reasons of security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
-
-### Set up agent identity users and assign security roles
-
-Create agent identity user accounts in both Dataverse and Dynamics 365 Supply Chain Management. Assign them the security roles shown in the following lists.
-
-- Required Dataverse user roles:
-    - *Finance and Operation Basic User*
-    - *Supplier Communications Agent*
-    - *Environment Maker*
-
-- Required Dynamics 365 Supply Chain Management user roles:
-    - *(Preview) Supplier Communications Agent*
-    - *System user*
-
-### Create required connections and activate the triggering flows
-
-The Supplier Communications Agent uses connectors to Dataverse and Microsoft Copilot Studio to perform its work. You must set them up before you can use the agent.
-
-1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
-1. In the left navigator, select **Connections**.
-1. At the top of the page, select **New connection**.
-1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
-1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
-1. At the top of the page, select **New connection**.
-1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
-1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
-
-Now, you must update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
-
 ## Refresh data
 
 After you enable the supplier communication agent on a sandbox environment, we recommend that you do a data refresh, which will let you test in the sandbox environment with the same data that you would have on your production environment. To learn how to do a database refresh, go to [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh)
-
-## Users for both Dataverse and Supply Chain Management
-
-Existing Dynamics 365 Supply Chain Management users that should be able to read the agent emails and summaries must also be created as Dataverse users (if the aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
 ## <a name="sample-script"></a>Sample script to update connection references and enable triggering flows
 
