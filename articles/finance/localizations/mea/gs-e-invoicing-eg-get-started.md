@@ -99,12 +99,10 @@ To configure the electronic invoicing feature, follow these steps.
     - **EgyptianETAConnectionString** – Select the secret for the [Connection string](#ConStr) to the Azure file share that you previously provisioned and configured in the parameters.
     - **EgyptianETASendToFileShareDirectory** – Enter the name of the Azure file share directory that invoices for digital signing should be written to.
     - **EgyptianETAGetFromAzureFileShare** – Enter the name of the Azure file share directory that digitally signed invoices should be read from.
-    - **EgyptianETALoginserviceURL** – Enter the URL of the Egyptian tax authority's login service. The feature that Microsoft released points to the pre-production endpoint.
-    - **EgyptianETAWebserviceURL** – Enter the URL of the Egyptian tax authority's web service. The feature that Microsoft released points to the pre-production endpoint.
+    - **EgyptianETALoginserviceURL** – Enter the URL of the Egyptian tax authority's login service. The feature that Microsoft released points to the **pre-production** endpoint.
+    - **EgyptianETAWebserviceURL** – Enter the URL of the Egyptian tax authority's web service. The feature that Microsoft released points to the **pre-production** endpoint.
 
-    The following illustration shows an example of a feature parameter setup that includes the URL for the Egyptian tax authority's pre-production endpoint.
-
-    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Egypt.](../media/eg-e-invoice-glob-feature-parameters.png)
+       ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Egypt.](../media/eg-e-invoice-glob-feature-parameters.png)
 
     > [!NOTE]
     > Because external signing is involved, features that Microsoft publishes repeatedly check the availability of signed invoices until a maximum limit is reached. You can reconfigure the retry parameters as you require by following the next two steps.
