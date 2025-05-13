@@ -19,15 +19,15 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Agent management feature in Dynamics 365 Finance and Operations enables autonomous agents to perform predefined tasks within your business ecosystem. Here, users can discover, configure, and manage AI-powered
+The Agent management feature in Dynamics 365 finance and operations enables autonomous agents to perform predefined tasks within your business ecosystem. Users can discover, configure, and manage AI-powered
 agents that can automate routine operational tasks. 
 
 ## Prerequisites 
 
 Before using Agent management, a Power Platform admin center administrator must ensure the following prerequisites are met: 
  - The environment must have a Dataverse instance linked.
- - The environment must have the "Copilot for Finance and Operations apps" solution (logical name: msdyn_fnocopilot) installed. Minimum accepted version is 1.0.03006.1.
- - The **Copilot feature** flag must be turned on in Power Platform admin center. Go to Power Platform admin center, select **Environments**. Select your environment, click **Settings**. On this page, select **Product** and click **Features**. Find the **Copilot feature** flag and ensure it is turned on.  
+ - The environment must have the **Copilot for Finance and Operations apps** solution (logical name: msdyn_fnocopilot) installed. Minimum accepted version is 1.0.03006.1.
+ - The **Copilot feature** flag must be turned on in Power Platform admin center. Go to Power Platform admin center, select **Environments**. Select your environment, click **Settings**. On this page, select **Product** and click **Features**. Find the **Copilot feature** flag and ensure it's turned on.  
 
 A Dynamics 365 finance and operations administrator must ensure the following additional prerequisites are met: 
 In the **Feature Management** workspace in your Dynamics 365 finance and operations environment, enable the following features:
