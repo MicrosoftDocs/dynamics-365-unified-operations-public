@@ -32,9 +32,9 @@ Microsoft made some improvements to how extensions are handled during an upgrade
 
 For more information, see [Pre-extended columns in the channel database](extended-columns.md).
 
-## Ext schema
+## EXT schema
 
-In Finance and Commerce, there's an external schema called the *EXT schema* that supports extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you can't change the CRT, AX, or DBO schemas. All changes must be made in the EXT schema. If you modify anything in the CRT or AX schemas, then deployment in Microsoft Dynamics Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions don't have permission to read the CRT, AX, and DBO schema definition during deployment, don't include any queries in the extension script to read the CRT, AX, and DBO schema definition.
+In Finance and Commerce, there's an external schema called the *EXT schema* that supports extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you can't change the CRT, AX, or DBO schemas. All changes must be made in the EXT schema. If you modify anything in the CRT or AX schemas, then deployment in Microsoft Dynamics Lifecycle Services (LCS) fails. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions don't have permission to read the CRT, AX, and DBO schema definition during deployment, don't include any queries in the extension script to read the CRT, AX, and DBO schema definition.
 
 > [!NOTE]
 > If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the extended data types (EDT) length or decimal precision. Changes aren't automatically pushed to the channel DB, and extensions don't have permissions to change or modify anything in the channel DB - CRT, AX, or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS fails.
@@ -44,7 +44,7 @@ In Finance and Commerce, there's an external schema called the *EXT schema* that
 - Don’t modify anything in the CRT, AX, or DBO schemas. Use the EXT schema for all extension scenarios.
 - If available, Microsoft recommends getting data through Commerce Runtime data services, as opposed to accessing channel database artifacts directly from CRT, AX, or DBO objects.
 - Avoid accessing tables directly in the EXT schema. You can instead use *views* to read records, and *stored procedures* to insert, update, or delete records.
-- Editing the values of any fields of tables in AX or CRT schemas from an extension is unsupported by Microsoft and will eventually break the schemas when stricter enforcement improvements are introduced. Microsoft doesn't support any issues that arise from editing schema values via extensions.
+- Editing the values of any fields of tables in AX or CRT schemas from an extension is unsupported by Microsoft and may eventually break the schemas when stricter enforcement improvements are introduced. Microsoft doesn't support any issues that arise from editing schema values via extensions.
 
 ### Example SQL script of what to avoid
 
@@ -85,12 +85,12 @@ IF @i_Error <> 0
 END;
 ```
 
-### Don't do this
+### Scenarios to avoid
 
 - Don't create any new extension tables, views, or stored procedures in CRT, AX, or DBO schemas. All extension artifacts must be done in the EXT schema.
 - Don't use any of the CRT, AX, or DBO schema data types in the EXT schema. You must create custom data types in the EXT schema and use those data types instead.
 - Don't modify any views, procedures, functions, or database artifacts.
-- If possible, avoid accessing or calling database artifacts from your extensions. Instead, use the CRT data service to get data. The benefit of using the data service is that it's supported until the end of the Service Level Agreement (SLA), even if future breaking changes are made to the database schema. However, there are instances in which the CRT data service doesn't expose the data that you need. In these cases, it's still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+- If possible, avoid accessing or calling database artifacts from your extensions. Instead, use the CRT data service to get data. The benefit of using the data service is that it's supported until the end of the Service Level Agreement (SLA), even if breaking changes are later made to the database schema. However, there are instances in which the CRT data service doesn't expose the data that you need. In these cases, it's still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
 - Don't access any dbo.objects from extension scripts because DBO schema objects aren't available in Commerce Scale Unit deployments.
 
 ```sql
@@ -163,7 +163,7 @@ The attribute framework iss extended to support attributes in cash and carry tra
 
 This scenario explains how to create a new table and add it to the channel DB. All extension code has access to the EXT schema.
 
-- Create a new table in the channel database in the EXT schema either using SQL Server Management Studio Designer or SQL scripts. The following is an example SQL script.
+- Create a new table in the channel database in the EXT schema either using SQL Server Management Studio Designer or SQL scripts. The following script is an example of a SQL script.
 
     ```sql
     -- Create the extension table to store the custom fields.
@@ -227,7 +227,7 @@ The deployment process determines if there are any modification to the database 
 
 ## Deployment timeout
 
-SQL Server will time out if the deployment script runs for more than 30 minutes. To avoid timeout and deployment failure, split the long running script into multiple smaller scripts, which run in less than 30 minutes.
+SQL Server times out if the deployment script runs for more than 30 minutes. To avoid timeout and deployment failure, split the long running script into multiple smaller scripts that run in less than 30 minutes.
 
 ## Extension scripts and deployment
 
@@ -235,7 +235,7 @@ Channel database extensions are provided by authoring one or more T-SQL script f
 
 Extension script files must be written using [T-SQL](/sql/t-sql/language-reference) and compatible with [Azure SQL Database](/azure/sql-database/sql-database-features).
 
-The script files must end with the *.sql* file extension, any other files are ignored or may induce a packaging or deployment failure. If you intend to deploy your channel DB extensions as part of Commerce Scale Unit or Store Commerce app offline, the scripts must also be compatible with the version of SQL Express and/or SQL Server that is used for those components.
+The script files must end with the *.sql* file extension. Any other files are ignored or may induce a packaging or deployment failure. If you intend to deploy your channel DB extensions as part of Commerce Scale Unit or Store Commerce app offline, the scripts must also be compatible with the version of SQL Express and/or SQL Server that is used for those components.
 
 During deployment and installation, the extension scripts are executed in alphabetical order based on the script file name. Each script is run to completion and then a metadata record is added to the channel database's CRT.RETAILUPGRADEHISTORY table to track the completion of that extension script.
 
@@ -259,7 +259,7 @@ If one script depends on another script executing successfully, you must name th
 
 If you release a deployable package or installer extension that contains channel database extension scripts, don't alter those scripts. Extension scripts are run only once per channel database instance.
 
-If you alter a published script that may have already been run against a channel database, the modifications to the already executed script aren't applied to the database.
+If you alter a published script that has already been run against a channel database, the modifications to the already executed script aren't applied to the database.
 
 Instead, provide the modifications in a new script file. Consider using a naming convention that determines the correct script execution order to ensure that the script runs after its dependencies.
 
@@ -267,8 +267,7 @@ Instead, provide the modifications in a new script file. Consider using a naming
 
 Your deployable package or installer extension must represent a cumulative update for your database extensions. There should be no dependencies on previous versions of an extension package or installer. A customer should be able to apply your extension package or installer without depending on a previous version of your package or extension.
 
-If your extension scripts were published as part of a deployable package or installer extension, don't remove them from subsequent updates in your package or installer. To account for disaster recovery, upgrade and scale out scenarios, extension packages may be
-used to bring a new instance of the channel database to the same version of the last deployed extension package.
+If your extension scripts were published as part of a deployable package or installer extension, don't remove them from subsequent updates in your package or installer. To account for disaster recovery, upgrade, and scale out scenarios, you can use extension packages to upgrade a new instance of the channel database to use the same version of the last deployed extension package.
 
 ### Extension scripts must be idempotent and reentrant
 
@@ -282,7 +281,7 @@ through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to t
 
 ### Do write backward compatible channel database extensions
 
-The channel database is expected to be backward compatible, which means that updating only the channel database without updating Commerce Scale Unit or POS must not prevent existing Commerce Scale Unit or POS operations from functioning correctly. During deployment flows, the different components of your Commerce Scale Unit and Store Commerce app are updated in the inverse order of dependency, which means that the channel database is the first component to be updated, and Commerce Scale Unit or POS are updated next. If Commerce Scale Unit or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the channel database isn't rolled back to prevent data loss. If your extensions aren't backward compatible, they may fail to work properly until a successful deployment is performed.
+The channel database is expected to be backward compatible, which means that updating only the channel database without updating Commerce Scale Unit or POS must not prevent existing Commerce Scale Unit or POS operations from functioning correctly. During deployment flows, the different components of your Commerce Scale Unit and Store Commerce app are updated in the inverse order of dependency, which means that the channel database is the first component updated, and Commerce Scale Unit or POS are updated next. If Commerce Scale Unit or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the channel database isn't rolled back to prevent data loss. If your extensions aren't backward compatible, they may fail to work properly until a successful deployment is performed.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
