@@ -46,6 +46,8 @@ Complete the common part of Azure resources configuration as described in [Confi
 - Create the following Azure file share directories:
   - The directory where generated electronic invoices for digital signing should be written to.
   - The directory where digitally signed electronic invoices should be read from.
+    > [!NOTE]
+    > The recommendation is not to create a hierarchical structure of subfolders but create required folders at the same level separating them by names, for example *SalesInvoices_BeforeSigning* and *SalesInvoices_Signed*.
 
 ### Azure Key Vault configuration
 
