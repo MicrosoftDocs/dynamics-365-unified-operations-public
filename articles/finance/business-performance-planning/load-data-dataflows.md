@@ -68,10 +68,12 @@ To create the cube in Business performance planning dimensions, follow these ste
 
 >[!Important]
 > To create a dataflow in Business performance planning, a user must have either the Business performance planning admin or Business performance planning Power User role. The **Create dataflow** button is only visible to users with these roles.
+>
 > Additionally, while users don't need the Dataflow maker role to create and configure a dataflow, they must have this role to successfully publish and load data into any Business performance planning or a standard Dataverse entity tables.
+>
 > If a user attempts to publish a dataflow without having the necessary role (such as Dataflow Maker), the system returns an error similar to the following:
 > User with id <user_id> doesn't have CreateAccess right(s) for record with id <record_id> of entity <Display_Name_Entity>. Consider assigning a role with the required access level to the user or team.
-> Users with the Business performance planning contributor role won't see the **Create dataflow** button and can't initiate dataflow creation.
+
 
 
 2. Select dataflows. For more information about dataflows, see [Create and use dataflows in Power Apps](/power-apps/maker/data-platform/create-and-use-dataflows).
