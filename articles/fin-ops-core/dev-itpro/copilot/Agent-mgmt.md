@@ -24,12 +24,10 @@ agents that can automate routine operational tasks.
 
 ## Prerequisites 
 
-Before using Agent management, a Power Platform Admin Center (PPAC) administrator must ensure the following prerequisites are met: 
+Before using Agent management, a Power Platform admin center administrator must ensure the following prerequisites are met: 
  - The environment must have a Dataverse instance linked.
  - The environment must have the "Copilot for Finance and Operations apps" solution (logical name: msdyn_fnocopilot) installed. Minimum accepted version is 1.0.03006.1.
- - The **Copilot feature** flag must be turned on in PPAC. Go to PPAC. **Environments** and select your environment, click **Settings**. On this page, select **Product** and click **Features**. Find the **Copilot feature** flag and ensure it is turned on.  
-
-Billing must be enabled. In PPAC, head to “Billing”, then “Licenses”, select “Copilot Studio” and create a new billing plan if necessary. Then, assign credits to the relevant environment. Find more details here. 
+ - The **Copilot feature** flag must be turned on in Power Platform admin center. Go to Power Platform admin center, select **Environments**. Select your environment, click **Settings**. On this page, select **Product** and click **Features**. Find the **Copilot feature** flag and ensure it is turned on.  
 
 A Dynamics 365 finance and operations administrator must ensure the following additional prerequisites are met: 
 In the **Feature Management** workspace in your Dynamics 365 finance and operations environment, enable the following features:
@@ -38,7 +36,7 @@ In the **Feature Management** workspace in your Dynamics 365 finance and operati
 Each user who needs to view agent activity or configure agents must be assigned the Dataverse security role **Finance and operations agent configuration manager**.
 
 To assign this role: 
-1. Go to the Power Platform Admin Center.
+1. Go to the Power Platform admin center.
 2. Select **Users**.
 3. Select the user and click the three dots (ellipsis) menu.
 4. Choose **Manage security roles**.
@@ -53,7 +51,7 @@ To access agent related page, users can go to:
  - Search bar provides quick access by searching for **Agents** or **Agent activity**. 
 
 
-### Configuring Agents 
+### Configuring agents 
 To discover and activate new agents, follow these steps:
  - Go to the **Library** tab to:
      - Browse available agent templates
@@ -65,11 +63,11 @@ To discover and activate new agents, follow these steps:
      - Activate or deactivate individual agent tasks 
 
 >[!Note]
-> Administrators can turn off relevant agent features using feature management for organization wide control that affects all users, effectively turning off autonomous agents across the entire organization. 
+> Administrators can turn off relevant agent features using feature management for organization wide control that affects all users across the entire organization. 
 
 ### Set up an agent the first time  
 
-When setting up an agent for the first time, users are automatically guided through a configuration wizard. This wizard helps you set agent parameters and define task-specific preferences. 
+When setting up an agent for the first time, users are automatically guided through a configuration wizard. This wizard helps you set agent parameters and define task specific preferences. 
 
 ### Agent activity tracking 
 
@@ -81,10 +79,10 @@ The **Agent activity** page provides a comprehensive log of actions performed by
 ### Customizing activity retention 
 
 Administrators can modify the activity history retention period by adjusting the **Delete Copilot for finance and operations agent activity records older than 90 days** Dataverse system job. Environment
-administrators can see all system jobs by using the Power Platform Environment Settings app. 
+administrators can see all system jobs by using the Power Platform environment settings app. 
 
 >[!Note]
-> The system job is created once any records exist in your environment within the msdyn_erpagentactivity Dataverse entity. The system job isn't created until there's data to clean up. 
+> The system job is created after records are created in your environment in the msdyn_erpagentactivity Dataverse entity.  
 
 ### Important considerations 
 
@@ -97,7 +95,7 @@ Limitations in current preview
 
 To create a batch job to delete agent activities for all users and cancel individual agent actions, follow these steps:   
 1. Go to **Batch jobs**
-2. In the **Job description**, search by the **Agent name** or the “Created By” section to search by individual usernames.
+2. In the **Job description**, search by the **Agent name** or the **Created by** section to search by individual usernames.
 3. Administrators can choose to delete batch jobs associated with an Agent or user to cancel Agent actions. 
 
 ### Support and feedback 
