@@ -76,10 +76,6 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
 
 
-## Import the electronic invoicing feature
-
-Import the **Egyptian electronic invoice (EG)** electronic invoicing feature, version **20** or later, from the repository. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-
 ## Configure the electronic invoicing feature
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature, review the default values, and update them as required, so that they better reflect your business operation.
@@ -89,7 +85,7 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
 
 To configure the electronic invoicing feature, follow these steps.
 
-1. Make sure that the latest version of the **Egyptian electronic invoice (EG)** Globalization feature is imported as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Make sure that the latest version, **20** or later, of the **Egyptian electronic invoice (EG)** Globalization feature is imported as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Egyptian tax authority's services.
@@ -148,6 +144,9 @@ Follow the configuration steps in [Customer electronic invoices in Egypt](emea-e
 ## Issue electronic invoices
 
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more about how to generate electronic invoices in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+
+> [!NOTE]
+> The submission process involves manual steps for digital signing of the generated electronic invoices files stored in the dedicated Azure file share folder and moving of the signed files to another Azure file share folder to resume automatic submission process. 
 
 You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
