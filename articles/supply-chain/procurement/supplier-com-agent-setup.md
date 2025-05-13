@@ -1,4 +1,4 @@
-﻿---
+---
 title: Set up and configure the Supplier Communications Agent (production ready preview)
 description: Learn how to set up and configure the Supplier Communications Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
 author: t-benebo
