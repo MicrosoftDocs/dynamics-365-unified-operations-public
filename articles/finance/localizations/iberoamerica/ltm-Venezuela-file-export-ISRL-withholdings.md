@@ -17,7 +17,7 @@ Before you can generate and print the report, the following prerequisites must b
 * The legal entity's address must be in Venezuela.
 * In Feature management workspace, verify that the LATAM globalization expansion and LATAM globalization expansion – Venezuela features are enabled.
 * You must download the specific report configuration from the Dataverse configuration repository. 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse]( gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
 * You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).
 
 The following formats constitute the ISRL Withholding report:
