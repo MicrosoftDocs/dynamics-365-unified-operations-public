@@ -24,6 +24,17 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. Learn more in [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).
 
+## May 2025
+
+The May release of the invoice capture solution version 1.9.5.1 contains the following features and bug fixes.
+
+| Feature | Description |
+| --- |--- |
+|Item number doesn't appear in the side-by-side viewer in Invoice capture.| Resolved the issue where the invoice number isn't populated in the header when using the standard model.|
+|Manually selecting a purchase order overrides the invoice information with the purchase order information. | When selecting the purchase order line for an invoice item, the invoice quantity is updated with the purchase order quantity. Updated the logic to retain the details from the invoice line when selecting the purchase order line, unless the unit price, quantity, and unit of measure are all zero or empty.|
+|Improvements to invoice capture installation. | The virtual entity solution installation was timing out and causing the installation to fail. Addressed this item in the April release. In the May release, the following were added: additional retries for solution conflicts, virtual entity refresh and company data, and added exception handling for various operations.|
+
+
 ## April 2025
 
 The April release of the Invoice capture solution version 1.9.3.10 contains the following features and bug fixes.

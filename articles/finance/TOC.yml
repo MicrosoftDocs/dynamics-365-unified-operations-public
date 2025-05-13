@@ -4266,10 +4266,12 @@
                       href: localizations/thailand/apac-tha-withholding-tax.md
                 - name: Türkiye
                   items:
-                    - name: Currency conversion
-                      href: localizations/turkiye/emea-tur-currency-conversion.md
-                    - name: Continuous serial numbering of packing slips and invoices 
-                      href: localizations/turkiye/emea-tur-serial-numbering.md
+                  - name: Currency conversion
+                    href: localizations/turkiye/emea-tur-currency-conversion.md
+                  - name: Continuous serial numbering of packing slips and invoices (preview)
+                    href: localizations/turkiye/emea-tur-serial-numbering.md
+                  - name: Use Exchange difference invoicing (preview)
+                    href: localizations/turkiye/emea-tur-exchange-difference-invoicing.md
                 - name: United Arab Emirates (UAE)
                   items:
                     - name: United Arab Emirates (UAE) overview
