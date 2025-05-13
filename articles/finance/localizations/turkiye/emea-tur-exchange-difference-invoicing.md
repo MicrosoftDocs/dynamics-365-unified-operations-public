@@ -22,7 +22,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 This article explains how you must create and process exchange difference invoices in the Republic of Türkiye because of the behavior of the floating exchange rate system.
 
-Exchange difference invoices must reflect the difference between the exchange rate at the time of invoicing and the exchange rate at the time of payment. In Türkiye, the requirement to create an exchange rate invoice comes from the behavior of the floating exchange rate system. In that system, the exchange rate at the time of invoicing might differ from the exchange rate at the time of payment. As a result, the amount in Turkish lira differs, even if the foreign exchange amount remains the same.
+Exchange difference invoices must reflect the difference between the exchange rate at the time of invoicing and the exchange rate at the time of payment. In Türkiye, the requirement to create an exchange difference invoice comes from the behavior of the floating exchange rate system. In that system, the exchange rate at the time of invoicing might differ from the exchange rate at the time of payment. As a result, the amount in Turkish lira differs, even if the foreign exchange amount remains the same.
 
 Companies must issue invoices for exchange rate differences. Those invoices must reflect the equivalent amount in Turkish lira, based on the foreign exchange buying rate of the Central Bank of the Republic of Türkiye.
 
@@ -98,7 +98,7 @@ The exchange difference invoicing feature retrieves settled invoice and payment 
 The **Date** field determines which settled transactions are considered for customers and vendors. It's used to ensure that no exchange differences are created from payment transactions that are dated after the specified invoice date.
 
 > [!NOTE]
-> On the **Invoice** tab of the **Exchange difference invoicing parameters** page, you can permanently configure various parameters. Here are some examples:
+> The values set on the **Invoice** tab of the **Exchange difference invoicing parameters** page are used as default values when a new exchange difference invoice is created.
 >
 > - Separate exchange difference invoice for each invoice
 > - Group by dimension
@@ -141,8 +141,8 @@ The **Exchange difference invoice** section provides general information about t
 | Posted | A value that specifies whether the transaction was posted. |
 | Exchange difference invoice voucher | The voucher number that is associated with the exchange difference invoice. |
 | Description | A brief description of the exchange difference invoice voucher. |
-| Reference voucher | The voucher number of the waiting invoice type to the following day after the posting or the reverse voucher number. |
-| Reference voucher date | The date of the waiting invoice type to the following day after the posting or the reverse voucher date. |
+| Reference voucher | The voucher of the new exchange difference invoice generated after revaluation to the next day in the **Pending invoice** type. It also displays the voucher of the reversed exchange difference invoice.|
+| Reference voucher date | The date of the new exchange difference invoice generated after revaluation to the next day in the **Pending invoice** type. It also displays the revere date of the reversed exchange difference invoice.|
 | Posting profile | The posting profile that is used to post the exchange difference invoice. |
 | Exchange difference account | The account that is used to post the realized gain or realized loss exchange difference amount. |
 | Reconciliation statement sent | A value that specifies whether the **Exchange adjustment statement** report was generated. |
@@ -227,6 +227,10 @@ To create a new exchange difference invoice, follow these steps.
 1. In the **Description** field, enter a description as required.
 1. Select **Post**.
 1. Select **OK**.
+
+## Edit an exchange difference invoice
+
+This section explains how to edit an exchange difference invoice.
 
 You can use the **Date** field to manually change the posting date of exchange difference invoices. To calculate the tax amount for the exchange difference invoice, you must select a sales tax group and an item sales tax group.
 
