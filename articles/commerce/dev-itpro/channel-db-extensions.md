@@ -19,7 +19,7 @@ ms.custom:
 
 This article explains how to extend the channel database in Microsoft Dynamics 365 Commerce.
 
-The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from headquarters to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
+The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from headquarters to the channel database using the Commerce Data Exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
 In this article we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 Finance and Commerce.
 
@@ -36,47 +36,49 @@ For more information, see [Pre-extended columns in the channel database](extende
 
 ## Ext schema
 
-In Finance and Commerce there's a now schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you can't change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions won't have permission to read the CRT, AX, and DBO schema definition during deployment, do not include any queries in the extension script to read the CRT, AX, and DBO schema definition.
+In Finance and Commerce there's a now schema called the **EXT schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you can't change the CRT, AX, or DBO schemas. All changes must be made in the **EXT schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions won't have permission to read the CRT, AX, and DBO schema definition during deployment, do not include any queries in the extension script to read the CRT, AX, and DBO schema definition.
 
 > [!NOTE]
 > If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Changes won't be automatically pushed to the channel DB, and extensions won't have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
 
 ## Best practices for channel DB extensions
 
-- Don’t modify anything in the CRT, AX, or DBO schemas. Use the **ext schema** for all extension scenarios.
+- Don’t modify anything in the CRT, AX, or DBO schemas. Use the **EXT schema** for all extension scenarios.
 - If available, we recommend getting data through commerce runtime data services, as opposed to accessing channel DB artifacts directly from CRT, AX, or DBO objects.
+- Avoid accessing tables directly in the **EXT schema**. Instead use *views* to read records, and *stored procedures* to insert, update or delete records.
+- Editing the values of any fields of tables in AX or CRT schemas from an extension is against the design of the system, is unsupported (any issues that arise from this will not have support from Microsoft) and will eventually break as we introduce stricter enforcement improvements.
 
 ### Don't do this
 
 The following is an example of what you shouldn't do. Instead, you should use the CRT data service to get the primary key value and then use the primary key to insert into your extension table.
 
 ```sql
-MERGE INTO [ax].RETAILCUSTPREFERENCE   --DONT access ax schema object
+MERGE INTO [ax].RETAILCUSTPREFERENCE   --Don't access AX schema object
 USING (SELECT DISTINCT
-tp.PARENTRECID, tp.PROPERTYVALUE as [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
-FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
-JOIN [ax].CUSTTABLE ct on ct.RECID = tp.PARENTRECID  --DONT access ax schema object
-WHERE tp.PARENTRECID <> 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
-ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID
-and [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --DONT access ax schema object
-and [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
+    tp.PARENTRECID, tp.PROPERTYVALUE AS [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
+  FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
+  JOIN [ax].CUSTTABLE ct ON ct.RECID = tp.PARENTRECID  --Don't access AX schema object
+  WHERE tp.PARENTRECID <> 0 AND tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
+  ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID
+    AND [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --Don't access AX schema object
+    AND [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
 WHEN MATCHED THEN
-UPDATE SET [EMAILOPTIN] = source.[EMAILOPTIN]
+  UPDATE SET [EMAILOPTIN] = source.[EMAILOPTIN]
 WHEN NOT MATCHED THEN
-INSERT
-(
-    RECID
-    ,DATAAREAID
-    ,EMAILOPTIN
-    ,ACCOUNTNUM
-)
-VALUES
-(
-    SOURCE.PARENTRECID
-    ,SOURCE.DATAAREAID
-    ,SOURCE.EMAILOPTIN
-    ,SOURCE.ACCOUNTNUM
-);
+  INSERT
+  (
+      RECID
+      ,DATAAREAID
+      ,EMAILOPTIN
+      ,ACCOUNTNUM
+  )
+  VALUES
+  (
+      SOURCE.PARENTRECID
+      ,SOURCE.DATAAREAID
+      ,SOURCE.EMAILOPTIN
+      ,SOURCE.ACCOUNTNUM
+  );
 SELECT @i_Error = @@ERROR;
 IF @i_Error <> 0
     BEGIN
@@ -87,9 +89,9 @@ END;
 
 ### Don't do this
 
-- Don't create any new extension tables, views, or procs in crt, ax, or dbo schema. All extension artifacts must be done in ext schema.
-- Don't use any of the crt, ax or dbo schema data types in ext schema. Create custom types in ext schema and use it.
-- Don’t modify any views, procedures, functions, or any of the database artifacts.
+- Don't create any new extension tables, views, or stored procedures in CRT, AX, or DBO schemas. All extension artifacts must be done in EXT schema.
+- Don't use any of the CRT, AX or DBO schema data types in EXT schema. Create custom types in EXT schema and use it.
+- Don't modify any views, procedures, functions, or any of the database artifacts.
 - Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service doesn't expose the data that you need. In these cases, it's still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
 - Don't access any dbo.objects from extension scripts because dbo schema objects won't be available in Commerce scale unit deployments.
 
@@ -103,21 +105,22 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     sdht.RECID,
     rst.STORENUMBER
     FROM [ext].[CONTOSORETAILSTOREHOURSTABLE] sdht
-    INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE
+    INNER JOIN [ax].RETAILSTORETABLE rst --Don't access AX schema object
+       ON rst.RECID = sdht.RETAILSTORETABLE 
 )
 ```
 
 ## Adding extensions
 
-1. If you're creating an extended table and want to sync the data back to headquarters, then the table must have the same primary key and clustered index as the headquarters table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to headquarters, then the **REPLICATIONCOUNTERFROMORIGIN** identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,`) is required in the extension table. The **REPLICATIONCOUNTERFROMORIGIN** field can't be the sole unique field.
-
-2. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
-
-3. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
+1. If you're creating an extended upload table and want to sync the data back to headquarters, then the table must have the same primary key and clustered index as the headquarters table in the extended table. If not, the CDX sync will fail. 
+2. If you need to pull the data from the extension table to headquarters, then the **REPLICATIONCOUNTERFROMORIGIN** identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,`) is required in the extension table.
+3. The **REPLICATIONCOUNTERFROMORIGIN** field can't be the sole unique field.
+4. For better performance, create an index on **REPLICATIONCOUNTERFROMORIGIN** field.
+5. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
+6. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
     --Tables:
-
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [UsersRole]
     GO
 
@@ -125,7 +128,6 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
 
     --Stored procedures:
-
     GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [UsersRole];
     GO
 
@@ -136,18 +138,18 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
     ```
 
-4. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from headquarters.
+8. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from headquarters.
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
-5. Always prefix your table, for example **ContosoRetailTransactionTable**, so that you can avoid conflicts with other customizations.
+9.  Always prefix your table, for example **ContosoRetailTransactionTable**, so that you can avoid conflicts with other customizations.
 
 ## Attributes
 
-We extended the attribute framework in headquarters to support attributes for Customers, Customer orders, cash and carry transactions and call center orders.
+We extended the attribute framework in headquarters to support attributes for customers, customer orders, cash and carry transactions, and call center orders.
 
 ### Customer attributes
 
@@ -161,7 +163,7 @@ The attribute framework was extended to support attributes in cash and carry tra
 
 In this scenario we'll explain how to create a new table and add it to the channel DB. All extension code has access to the **ext schema**.
 
-- Create a new table in the channel database in the **ext schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
+- Create a new table in the channel database in the **EXT schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
 
     ```sql
     -- Create the extension table to store the custom fields.
@@ -188,7 +190,7 @@ In this scenario we'll explain how to create a new table and add it to the chann
     GO
 
 > [!NOTE]
-> If the new extension table data needs to be pulled into Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL`). The **REPLICATIONCOUNTERFROMORIGIN** field can't be the only unique field and is required if the table data is per company. This is also required for a CDX pull job. **REPLICATIONCOUNTERFROMORIGIN** isn't required if the data is pushed from Retail headquarters to the channel database, and is only needed if the data is pulled from channel database to Retail headquarters.
+> If the new extension table data needs to be pulled into Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL`) (if non-shared). The **REPLICATIONCOUNTERFROMORIGIN** field can't be the only unique field and is required if the table data is per company. This is also required for a CDX pull job. **REPLICATIONCOUNTERFROMORIGIN** isn't required if the data is pushed from Retail headquarters to the channel database, and is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
