@@ -496,7 +496,7 @@
               href: pos-operations.md
             - name: Commerce database index compression
               href: dev-itpro/index-compression.md
-            - name: Offline reliability toast notifications in Store Commerce
+            - name: Offline reliability toast notifications in Store Commerce (preview)
               href: dev-itpro/retail-sdk/offline-reliability-toast-notifications.md
           - name: Authentication
             items:
@@ -518,10 +518,8 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-          - name: POS modernization
-            items:
-            - name: POS modernization and usability improvements
-              href: POS-UX-modernization.md  
+        - name: Modern workflows in POS (preview)
+          href: POS-UX-modernization.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
@@ -2842,7 +2840,7 @@
           items:
           - name: View POS extension package information
             href: dev-itpro/view-pos-extension-package-details.md
-          - name: POS APIs
+          - name: POS APIs (preview)
             href: dev-itpro/pos-apis.md
           - name: Use POS controls in extensions
             href: dev-itpro/pos-extension/controls-pos-extension.md

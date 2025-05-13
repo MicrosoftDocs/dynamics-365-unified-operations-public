@@ -3,7 +3,7 @@ title: X++ in Git
 description: Learn about the concept of X++ code management in Git and outlines key considerations for teams that want to use Git tools for X++ development.
 author: ianjensenisme
 ms.author: ianjensen
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024

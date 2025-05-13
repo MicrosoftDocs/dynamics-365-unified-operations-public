@@ -3,7 +3,7 @@ title: Add custom fields to the point of sale (POS) Totals panel
 description: This article explains how to add a new custom field to the Totals panel on the POS transaction screen by using the screen layout designer.
 author: josaw1
 ms.date: 05/23/2018
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -3,7 +3,7 @@ title: Define HSN codes and Service Accounting Codes
 description: Learn how to define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs), including a process for defining HSN codes.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/04/2019
 ms.custom:
 ms.reviewer: johnmichalak  

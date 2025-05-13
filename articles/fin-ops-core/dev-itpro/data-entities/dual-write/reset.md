@@ -3,7 +3,7 @@ title: Reset dual-write connections
 description: Learn about the reset button functionality of dual-write, including prerequisites and various reset scenarios.
 author: jaredha
 ms.author: jaredha
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/01/2023
 ms.reviewer: johnmichalak
 audience: IT Pro

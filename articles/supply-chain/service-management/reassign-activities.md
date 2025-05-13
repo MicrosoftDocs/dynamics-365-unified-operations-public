@@ -3,7 +3,7 @@ title: Reassign activities
 description: Learn how to reassign service activities from one worker to another worker, including a step-by-step process for reassigning activities.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac

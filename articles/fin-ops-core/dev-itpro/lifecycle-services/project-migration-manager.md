@@ -3,7 +3,7 @@ title: Project migration manager
 description: Learn about how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/10/2023
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer

@@ -3,7 +3,7 @@ title: Extend POS views to add custom columns and app bar buttons
 description: This article explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: josaw1
 ms.date: 02/01/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

@@ -3,7 +3,7 @@ title: Generate a voucher in advanced bank reconciliation
 description: Learn how to generate vouchers in advanced bank reconciliation, including prerequisites and an outline on on generating a voucher on the reonciliation worksheet.
 author: music727
 ms.author: mibeinar
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/24/2025
 ms.custom:
 ms.reviewer: twheeloc

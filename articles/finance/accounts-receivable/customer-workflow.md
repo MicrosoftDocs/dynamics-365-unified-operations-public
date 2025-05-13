@@ -3,7 +3,7 @@ title: Customer workflow
 description: Learn about the customer workflow. You change specific fields for a customer, then send them for approval by using the workflow before they are added to the customer.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: article
 ms.date: 08/24/2018
 ms.custom: 
 ms.reviewer: twheeloc

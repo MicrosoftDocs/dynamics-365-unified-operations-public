@@ -3,7 +3,7 @@ title: Go-live for implementation projects FAQ
 description: Access frequently asked questions about how to go live with an implementation project and how to configure and request production environments.
 author: alejandra-cabrales
 ms.author: alcabral
-ms.topic: article
+ms.topic: faq
 ms.date: 06/22/2022
 ms.custom:
 ms.reviewer: johnmichalak   

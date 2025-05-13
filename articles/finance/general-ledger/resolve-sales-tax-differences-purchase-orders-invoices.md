@@ -3,7 +3,7 @@ title: Resolve sales tax differences
 description: Learn how to resolve sales tax differences between purchase orders and invoices, which you must verify are correct for vendor invoices.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/16/2022
 ms.custom:
 ms.reviewer: kfend 

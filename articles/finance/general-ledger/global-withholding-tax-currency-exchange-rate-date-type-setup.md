@@ -3,7 +3,7 @@ title: Enable the global withholding tax currency exchange rate type and date ty
 description: Learn how to enable the global setup of the withholding tax currency exchange rate type and date type, including a step-by-step process.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 08/02/2021
 ms.reviewer: kfend
 audience: Application User

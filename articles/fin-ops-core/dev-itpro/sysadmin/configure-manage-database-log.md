@@ -3,7 +3,7 @@ title: Configure database logging
 description: Learn about how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: Peakerbl
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/11/2023
 ms.reviewer: johnmichalak
 audience: IT Pro

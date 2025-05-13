@@ -3,7 +3,7 @@ title: Update the structure of a business document template
 description: Learn about how to update the structure of a business document template by using the Business document management feature.
 author: kfend
 ms.author: filatovm
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/19/2020
 ms.custom:
 ms.reviewer: johnmichalak

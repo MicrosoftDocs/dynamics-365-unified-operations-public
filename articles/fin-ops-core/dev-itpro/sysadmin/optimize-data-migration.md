@@ -3,7 +3,7 @@ title: Optimize data migration for finance and operations apps
 description: Learn about steps and actions that you can use to optimize data migration for finance and operations apps, including an outline on disabling change tracking.
 author: skaue-ms
 ms.author: toskaue
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/20/2021
 ms.custom:
 ms.reviewer: johnmichalak 

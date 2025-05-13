@@ -3,7 +3,7 @@ title: Bank account lifecycle management
 description: Learn how to enable an approval workflow for bank accounts in the Cash and bank management module, including prerequisites and a step-by-step process.
 author: EricWangChen
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/11/2024
 ms.custom:
 ms.reviewer: twheeloc

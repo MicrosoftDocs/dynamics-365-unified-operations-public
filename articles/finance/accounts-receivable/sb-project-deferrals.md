@@ -3,7 +3,7 @@ title: Project deferrals
 description: Learn about project deferrals, which let you set up deferrals for project transactions for hours, expenses, fees, and sales orders.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/06/2023
 ms.reviewer: twheeloc
 audience: Application User

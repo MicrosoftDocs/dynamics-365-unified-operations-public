@@ -4,7 +4,7 @@ description: Learn about subscription billing in Microsoft Dynamics 365 Finance,
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 03/13/2024
+ms.date: 05/12/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

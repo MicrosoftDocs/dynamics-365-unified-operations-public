@@ -5,7 +5,7 @@ title: Configure skills
 description: You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job.
 author: twheeloc
 ms.date: 07/01/2024
-ms.topic: article
+ms.topic: how-to
 # optional metadata
 
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace

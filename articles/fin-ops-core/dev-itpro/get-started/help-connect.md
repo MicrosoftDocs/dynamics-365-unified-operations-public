@@ -3,7 +3,7 @@ title: Configure the Help experience for finance and operations apps
 description: Learn about the components of the Help system for finance and operations apps, including an overview of help architecture.
 author: edupont04
 ms.author: edupont
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/11/2021
 ms.reviewer: edupont
 audience: Developer, IT Pro

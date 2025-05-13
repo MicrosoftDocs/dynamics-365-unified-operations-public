@@ -4,7 +4,7 @@ title: Deprecation of US payroll tax updates FAQ
 description: This article describes the deprecation of tax updates for US payroll and answers some frequently asked questions.
 author: aolson
 ms.date: 08/28/2024
-ms.topic: article 
+ms.topic: faq
 # optional metadata
 
 # ms.search.form: 

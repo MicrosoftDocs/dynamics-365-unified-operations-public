@@ -212,74 +212,44 @@
         items:
         - name: Globalization services overview
           href: ../finance/localizations/global/globalization-services-overview.md?context=/dynamics365/context/supply-chain
-        - name: Regulatory configuration service (RCS)
+        - name: Globalization Studio workspace
           items:
-          - name: Regulatory configuration service (RCS) overview
-            href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/supply-chain
-          - name: Regulatory configuration service (RCS) - Globalization features
-            href: ../finance/localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/supply-chain
-          - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-            href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
-          - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-            href: ../finance/localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/supply-chain
-          - name: Download ER configurations to Supply Chain Management
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/supply-chain
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/supply-chain
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
-            - name: Upload configurations to GR
-              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
-            - name: Share configurations in GR  
-              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
+          - name: Regulatory Configuration Service merge to Globalization Studio workspace
+            href: ../finance/localizations/global/workspace/merge-rcs-to-gsw.md?context=/dynamics365/context/supply-chain
+          - name: Globalization Studio workspace features
+            href: ../finance/localizations/global/workspace/gsw-features.md?context=/dynamics365/context/supply-chain
+          - name: Import Electronic reporting (ER) configurations from Dataverse
+            href: ../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md?context=/dynamics365/context/supply-chain
+          - name: Upload ER configurations and Globalization features as a Dataverse solution
+            href: ../finance/localizations/global/workspace/gsw-upload-er-config.md?context=/dynamics365/context/supply-chain
+          - name: Create a Dataverse solution using upload into repository
+            href: ../finance/localizations/global/workspace/gsw-upload-into-repository.md?context=/dynamics365/context/supply-chain
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
-            href: ../finance/localizations/global/e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
           - name: Electronic Invoicing administration and integration components
-            href: ../finance/localizations/global/e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
           - name: Set up Electronic Invoicing
             items: 
             - name: Setting up Electronic Invoicing
-              href: ../finance/localizations/global/e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
-            - name: Sign up and install Electronic Invoicing
-              items: 
-              - name: Electronic Invoicing sign up and installation overview
-                href: ../finance/localizations/global/e-invoicing-sign-up-install.md?context=/dynamics365/context/supply-chain
-              - name: Install the add-in for microservices in Lifecycle Services
-                href: ../finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/supply-chain
-              - name: Set up Regulatory configuration services (RCS)
-                href: ../finance/localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
+            - name: Set up Electronic Invoicing parameters
+              href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
-                href: ../finance/localizations/global/e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
               - name: Create an Azure Key Vault in the Azure portal
-                href: ../finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/supply-chain
               - name: Create an Azure storage account in the Azure portal
-                href: ../finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+              - name: Create Azure file share in the Azure portal
+                href: ../finance/localizations/global/gs-e-invoicing-create-azure-file-share.md?context=/dynamics365/context/supply-chain
               - name: Configure a SharePoint connection
-                href: ../finance/localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
-            - name: Set up environments
-              items:
-              - name: Configure service environments and connected applications
-                href: ../finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md?context=/dynamics365/context/supply-chain
-              - name: Service environments
-                href: ../finance/localizations/global/e-invoicing-service-environments.md?context=/dynamics365/context/supply-chain
-              - name: Customer certificates and secrets
-                href: ../finance/localizations/global/e-invoicing-customer-certificates-secrets.md?context=/dynamics365/context/supply-chain
-              - name: Connected applications
-                href: ../finance/localizations/global/e-invoicing-connected-applications.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: ../finance/localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
@@ -292,58 +262,76 @@
               href: ../finance/localizations/global/gs-e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
               href: ../finance/localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
-            - name: Complete, publish, and deploy a Globalization feature
+            - name: Complete and deploy a Globalization feature
               href: ../finance/localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
-            - name: Share with other organizations
-              href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
+            - name: Usage management dashboard
+              href: ../finance/localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
-              items: 
+              items:
               - name: Processing incoming electronic documents
                 href: ../finance/localizations/global/e-invoicing-process-incoming-electronic-documents.md?context=/dynamics365/context/supply-chain
               - name: Configure an email channel
                 href: ../finance/localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/supply-chain
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: ../finance/localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/supply-chain
               - name: Configure a SharePoint channel
                 href: ../finance/localizations/global/e-invoicing-configure-sharepoint-channel.md?context=/dynamics365/context/supply-chain
-            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-              items: 
-              - name: Activate and set up integration with Electronic Invoicing
-                href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
-              - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
-              - name: Work with Electronic Invoicing
-                items:
-                - name: Submit electronic documents to Electronic Invoicing
+              - name: Use the electronic invoicing service to import vendor invoices
+                href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: ../finance/localizations/global/e-invoicing-isv-connector.md?context=/dynamics365/context/supply-chain
+            - name: Work with Electronic invoicing
+              items:
+                - name: Submit electronic documents
                   href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents submission log
                   href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
-                - name: Work with the Electronic documents receiving log
-                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
+                - name: Receive electronic documents
+                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain                
           - name: Country/region-specific scenarios
             items:
-            - name: Availability of Electronic Invoicing features
-              href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing service administration
-              href: ../finance/localizations/e-invoicing-get-started-service-administration.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing
-              href: ../finance/localizations/e-invoicing-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Create a new Electronic invoicing feature
-              href: ../finance/localizations/e-invoicing-create-new-e-invoicing-feature.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing for Brazil
-              href: ../finance/localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing for Egypt
-              href: ../finance/localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic Invoicing for France
-              href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with the Electronic Invoicing for Mexico
-              href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Get started with Electronic invoicing for Saudi Arabia
-              href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Setup direct integration of Italian FatturaPA with SDI
-              href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
-            - name: Use the electronic invoicing service to import vendor invoices
-              href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
-            - name: Set up Electronic Invoicing
-              href: ../finance/localizations/e-invoicing-setup.md?context=/dynamics365/context/supply-chain
+              - name: Electronic invoicing coverage
+                href: ../finance/localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/supply-chain
+              - name: Availability of Electronic Invoicing features
+                href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
+              - name: Australia and New Zealand
+                href: ../finance/localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Belgium
+                href: ../finance/localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Chile
+                items:
+                  - name: Get started with Electronic invoicing for Chile
+                    href: ../finance/localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/supply-chain
+                  - name: Vendor electronic invoice import in Chile
+                    href: ../finance/localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
+              - name: Costa Rica
+                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
+              - name: Denmark
+                href: ../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Egypt
+                href: ../finance/localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+              - name: France
+                href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain                        
+              - name: Indonesia
+                href: ../finance/localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Italy
+                href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Malaysia
+                href: ../finance/localizations/malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/supply-chain
+              - name: Panama
+                href: ../finance/localizations/iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                           
+              - name: Poland (preview)
+                href: ../finance/localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Saudi Arabia
+                items:
+                  - name: Get started with Electronic invoicing for Saudi Arabia
+                    href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+                  - name: Onboarding for Electronic invoicing in Saudi Arabia
+                    href: ../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/supply-chain
+                  - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                    href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+          - name: Electronic Invoicing FAQ
+            href: ../finance/localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
@@ -3293,8 +3281,12 @@
         href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
         href: sales-marketing/trade-allowance.md
-      - name: Create a new trade agreement
-        href: sales-marketing/tasks/create-new-trade-agreement.md
+      - name: Trade agreements
+        items: 
+        - name: Create a new trade agreement
+          href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: Export posted trade agreement lines
+          href: sales-marketing/trade-agreement-export-posted-lines.md
       - name: Recalculate line net amounts on import
         href: sales-marketing/calc-line-net-amounts-import.md
       - name: Schedule sales history data cleanup

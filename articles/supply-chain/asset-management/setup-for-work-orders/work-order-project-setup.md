@@ -3,7 +3,7 @@ title: Work order project setup
 description: Learn about work order project setup in Asset Management, including outlines on project setup for work order jobs and setting up work order projects.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 08/13/2019
 ms.custom:
 ms.reviewer: kamaybac 

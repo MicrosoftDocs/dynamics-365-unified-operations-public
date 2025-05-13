@@ -3,7 +3,7 @@ title: Format 1001 file for Colombia issue configuration
 description: Learn about the required configuration for issuing the format 1001 file for Colombia, including an outline on configuring application-specific parameters.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/10/2023 
 ms.custom: bap-template
 ms.reviewer: johnmichalak

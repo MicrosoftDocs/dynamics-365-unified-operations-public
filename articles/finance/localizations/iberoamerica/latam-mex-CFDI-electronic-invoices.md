@@ -3,7 +3,7 @@ title: Electronic invoices (CFDI)
 description: Learn about the currently approved method for submitting electronic invoices (CFDI), the requirements for using them, and the information that they include.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

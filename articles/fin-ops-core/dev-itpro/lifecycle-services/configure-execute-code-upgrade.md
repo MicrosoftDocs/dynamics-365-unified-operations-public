@@ -3,7 +3,7 @@ title: Configure the code upgrade service in Lifecycle Services (LCS)
 description: Learn about how to configure the Code upgrade tile to migrate your solution to the latest version of the finance and operations apps.
 author: LaneSwenka
 ms.author: laswenka
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 08/01/2017
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

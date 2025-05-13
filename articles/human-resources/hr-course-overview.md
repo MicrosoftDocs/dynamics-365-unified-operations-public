@@ -6,7 +6,7 @@ description: This article explains how Human Resources administrators and manage
 author: twheeloc
 ms.date: 01/08/2025
 
-ms.topic: article
+ms.topic: concept-article
 # optional metadata
 
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace

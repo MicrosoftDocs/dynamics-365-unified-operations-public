@@ -3,7 +3,7 @@ title: Cancel a job that was created using the deprecated master planning engine
 description: Learn how to cancel an active planning job that uses the deprecated master planning engine with an outline on preferred cancel options.
 author: t-benebo
 ms.author: benebotg
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/14/2020
 ms.custom: 
 ms.reviewer: kamaybac
