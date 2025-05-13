@@ -127,9 +127,6 @@ To configure electronic document parameters, follow these steps.
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-
-    ![Screenshot of the electronic document parameter configuration for Egypt.](mea-eg-e-invoice-documents.jpg)
-
 1. For each table name, select **Response types**, and then follow these steps:
 
     1. On the **Response types** page, select **Add** to create a response type.
@@ -140,6 +137,8 @@ To configure electronic document parameters, follow these steps.
     1. In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
     1. Select **Save**, and then close the **Response types** page.
  
+    ![Screenshot of the electronic document parameter configuration for Egypt.](mea-eg-e-invoice-documents.jpg)
+
 1. Select **Save**, and then close the **Electronic document parameters** page.
 
 ## Finance business data configuration
