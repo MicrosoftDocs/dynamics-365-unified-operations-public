@@ -57,7 +57,7 @@ Add the following required elements in the Azure Key Vault:
 - The secret for the obtained **Client secret** obtained from the regulatory authority.
 - The secret for the **Connection string** to the [Azure file share](#ConnectionString) that you configured in the previous section.
   > [!IMPORTANT]
-  > Don't confuse the **Connection string** value with the **Storage shared access signature (SAS)** token which is the parameters in the next section.
+  > Don't confuse the **Connection string** value with the **Storage shared access signature (SAS)** token which is used in the parameters in the next section.
 
 ## Configure electronic invoicing Key Vault parameters
 
