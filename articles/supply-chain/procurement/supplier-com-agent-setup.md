@@ -43,7 +43,7 @@ To learn more about the *Immersive Home* feature, go to [Immersive Home overview
 
 ## Set up agent identity
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to perform its work. You must select an identity used for these interactions and create the required connections.
+The Supplier communications agent interacts with Dataverse and Microsoft Copilot Studio to perform its work. You must select an identity used for these interactions and create the required connections.
 
 > [!TIP]
 > For reasons of security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
@@ -66,10 +66,10 @@ Create agent identity user accounts in both Dataverse and Dynamics 365 Supply Ch
 1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
 1. In the left navigator, select **Connections**.
 1. At the top of the page, select **New connection**.
-1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 1. At the top of the page, select **New connection**.
-1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 1. Update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
 
@@ -106,7 +106,7 @@ To enable email analysis and delivery features of the Supplier Communications Ag
 ### Private mailbox
 
 > [!IMPORTANT]
-> Only the owner of the private mailbox will be able to create agent configuration and review agent results related to this mailbox. For this reason they need permissions to [manage agent configuration](./supplier-com-agent-setup.md#permissions-for-users-managing-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-reviewing-agent-results).
+> Only the owner of the private mailbox can create agent configuration and review agent results related to this mailbox. The owner needs permissions to [manage agent configuration](./supplier-com-agent-setup.md#permissions-for-users-managing-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-reviewing-agent-results).
 
 To set up a private mailbox, follow these steps:
 
@@ -138,7 +138,7 @@ If you're using a shared mailbox, then create a queue to allow all users working
 1. On the next page, add all the members that should have access to the shared mailbox.
 
     > [!IMPORTANT]
-    > All users that will create agent configuration and review agent results related to this mailbox need to be added to the team.
+    > All users that create agent configuration and review agent results related to this mailbox need to be added to the team.
 
 1. On the **Manage security roles** page, select *Finance and Operations Basic User* and *Basic User* and then select **Save**.
 1. Go back to the **Settings** page, expand the **Business** section, and select **Queues**.
