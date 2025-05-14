@@ -33,7 +33,7 @@ This article shows how to set up a shipping carrier and define details such as s
 4. In the **Transportation tender type** field, select an option. Select **Manual** to use the Transportation Tender page, or select **EDI** to update the tender by using Electronic Data Interchange (EDI).  
 5. Check or uncheck the **Activate carrier rating** checkbox.
 
-## Create the necessary services for the shipping carrier
+## <a name="create-carrier-services"></a>Create the necessary services for the shipping carrier
 
 1. Toggle the expansion of the **Services** section.
 2. Select **New**.

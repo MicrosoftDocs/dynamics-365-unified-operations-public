@@ -52,7 +52,7 @@ In most cases, you can select the **Parameters** button in the transportation ma
 | `MileageEngineCode` | Mileage engine code that identifies the mileage engine record in the database. |
 | `ApportionmentEngine` | Generic engine code that identifies the apportionment engine in the database. |
 
-## How is metadata used in transportation management engines?
+## <a name="use-metadata"></a>How is metadata used in transportation management engines?
 
 Transportation management engines that rely on data that is defined in Supply Chain Management can use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures aren't required in Operations.
 
@@ -67,7 +67,7 @@ No, transportation management engines that are used to retrieve the data that is
 > [!NOTE]
 > The transportation management engines that are delivered with Supply Chain Management rely on data that is retrieved from the application. Engines that connect to external systems are not included with Operations. However, the engine-based extensibility model lets you build extensions using Visual Studio Tools.
 
-## How do I configure metadata for a transportation management engine?
+## <a name="config-metadata"></a>How do I configure metadata for a transportation management engine?
 
 Metadata for transportation management engines is configured differently for the different types of engines.
 
