@@ -144,9 +144,6 @@ If you're using a shared mailbox, then create a queue to allow all users working
 1. Go back to the **Settings** page, expand the **Business** section, and select **Queues**.
 1. Select the **New** button on top to create a new **Queue** entity record.
 1. Enter a **Name**, set **Incoming email** to the email address of the shared mailbox, and assign the **Owner** as the team that was created earlier. Then select **Save**.
-   > [!IMPORTANT]
-   > Email addresses must not contain uppercase letters; only lowercase characters are allowed. Although email addresses are generally case-insensitive, our system currently only supports lowercase formatting.
-
 1. A new mailbox should now be created under **Email settings**. Select the mailbox name.
 1. On the top command bar, select **Test & enable mailboxes**.  
 
