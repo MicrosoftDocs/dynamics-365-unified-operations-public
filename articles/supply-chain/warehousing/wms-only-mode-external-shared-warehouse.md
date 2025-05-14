@@ -4,7 +4,7 @@ description: Learn how to run Warehouse management only mode with external share
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: overview
-ms.date: 04/27/2024
+ms.date: 05/14/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment, WHSEWInboundShipmentOrderUpdate
@@ -82,53 +82,52 @@ For a more detailed description of this process and the related processes, see [
 
 Transfer orders with external shared warehousing mean that either the source, destination, or both warehouses in a transfer order are external.
 Most aspects of the transfer order processing work in the same way, regardless of whether you use external shared warehouses.
-                                                                       
+
 ### Prerequisites
 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- In the warehouse configuration of the externally managed warehouse, apart from a *default location*, you also need to setup a *default license plate location*. This location will be used as a temporary location when processing a transfer order. When shipping from an external warehouse, an update about what has been shipped from it is received and it contains a license plate. Inventory is then moved from a *default location* to a *default license plate location* and the transfer order is processed against that location.
+- In the warehouse configuration of the externally managed warehouse, you must set both a *default location* and a *default license plate location*. This location is used as a temporary location when processing a transfer order. When shipping from an external warehouse, the system sends an update to communicate what was shipped and what license plate was used. Inventory is then moved from a *default location* to a *default license plate location* and the transfer order is processed against that location.
 
-### Transfer order with shipping from an external warehouse
+### Transfer order shipped from an external warehouse
 
 The following illustration highlights the elements of the transfer order process when shipping from an external warehouse.
 
-:::image type="content" source="media/wms-only-shared-warehouse-transfer-order-from.svg" alt-text="Diagram that shows the transfer order shipping from an external warehouse." lightbox="media/wms-only-shared-warehouse-transfer-order-from.svg":::
+:::image type="content" source="media/wms-only-shared-warehouse-transfer-order-from.svg" alt-text="Diagram showing transfer order shipping from an external warehouse." lightbox="media/wms-only-shared-warehouse-transfer-order-from.svg":::
 
-Here's a high-level description of the process. Steps that start with LE1 are done by a sales subsidiary. Steps that start with WOM are done by the warehousing entity.
+Here's a high-level description of the process. Steps that start with *LE1* are done by a sales subsidiary. Steps that start with *WOM* are done by the warehousing entity.
 
-1. *LE1:* Transfer order is created and released to the warehouse. The system then creates *external warehouse outbound shipment order requests*. As a result, outbound shipment order messages are delivered to the *WOM* legal entity.
+1. *LE1:* The transfer order is created and released to the warehouse. The system then creates *external warehouse outbound shipment order requests*. As a result, outbound shipment order messages are delivered to the *WOM* legal entity.
 1. *WOM:* The *Outbound shipment order messages* are processed. As a result of this processing, *outbound shipment orders* are created.
-1. *WOM:* The orders are released for further warehouse processing, either manually or automatically. The rest of the processing is done the same like in [Outbound example process (shared warehouse)](wms-only-mode-external-shared-warehouse.md#outbound-example-process).
+1. *WOM:* The orders are released for further warehouse processing, either manually or automatically. The rest of the process proceeds as described in [Outbound example process (shared warehouse)](#outbound-example-process).
 1. *WOM:* The loads are outbound ship confirmed. As a result, external warehouse outbound shipment order updates are generated for *LE1*.
-1. *LE1:* During the processing of the external warehouse outbound shipment order updates, outbound shipment data and the related transfer order transactions are updated. The transfer order becomes *Shipped* if everything from the order is shipped. This update enables further processing of the transfer order, which is receiving it in the destination warehouse.
+1. *LE1:* As the external warehouse outbound shipment order updates are processed, the system updates outbound shipment data and the related transfer order transactions. The transfer order becomes *Shipped* if everything from the order is shipped. This update enables further processing of the transfer order when it's received at the destination warehouse.
 
 > [!NOTE]
-> When outbound shipment order update is processed in *LE1*, an inbound advance shipment notice (ASN) is created for every license plate that has been shipped from the external warehouse. This allows for license plate receiving in the destination warehouse.
+> When the outbound shipment order update is processed in *LE1*, an inbound advance shipment notice (ASN) is created for every license plate that was shipped from the external warehouse. This allows for license plate receiving in the destination warehouse.
 
-### Transfer order with receiving to an external warehouse
+### Transfer order received at an external warehouse
 
-The following illustration highlights the elements of the transfer order process when receiving in an external warehouse.
+The following illustration highlights the elements of the transfer order process when receiving at an external warehouse.
 
-:::image type="content" source="media/wms-only-shared-warehouse-transfer-order-to.svg" alt-text="Diagram that shows the transfer order receiving to an external warehouse." lightbox="media/wms-only-shared-warehouse-transfer-order-to.svg":::
+:::image type="content" source="media/wms-only-shared-warehouse-transfer-order-to.svg" alt-text="Diagram showing transfer order receiving to an external warehouse." lightbox="media/wms-only-shared-warehouse-transfer-order-to.svg":::
 
-Here's a high-level description of the process. Steps that start with LE1 are done by a sales subsidiary. Steps that start with WOM are done by the warehousing entity.
+Here's a high-level description of the process. Steps that start with *LE1* are done by a sales subsidiary. Steps that start with *WOM* are done by the warehousing entity.
 
-1. *LE1:* Transfer order is created and released to the warehouse. The transfer order is shipped and *transfer order shipping journal* gets created. The system then creates *external warehouse inbound shipment order requests* from the shipping journal. As a result, inbound shipment order messages are delivered to the *WOM* legal entity.
+1. *LE1:* The transfer order is created and released to the warehouse. The transfer order is shipped and the system creates a *transfer order shipping journal*. The system then creates *external warehouse inbound shipment order requests* from the shipping journal. As a result, inbound shipment order messages are delivered to the *WOM* legal entity.
 1. *WOM:* The warehousing entity processes the inbound shipment order messages. As a result of this processing, *inbound shipment orders* are created.
-1. *WOM:* Inbound loads are created manually, automatically, or through import (depending on your configuration). The rest of the processing in *WOM* entity is done in the same way like in [Inbound example process (shared warehouse)](wms-only-mode-external-shared-warehouse.md#inbound-example-process).
+1. *WOM:* Inbound loads are created manually, automatically, or through import (depending on your configuration). The rest of the processing in the *WOM* proceeds as described in [Inbound example process (shared warehouse)](wms-only-mode-external-shared-warehouse.md#inbound-example-process).
 1. *WOM:* The warehousing entity processes [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) operations for the related loads. These operations update the load status to *Received* and generate *external warehouse inbound shipment order updates* for *LE1*.
-1. *LE1:* During the processing of the external warehouse inbound shipment order updates, inbound loads and shipments are created, and the related transfer order line transactions are updated. If everything from the transfer order is received, transfer order will move to the *Received* status.
+1. *LE1:* As the external warehouse inbound shipment order updates are processed, the system creates inbound loads and shipments, and updates the related transfer order line transactions. If everything from the transfer order is received, the transfer order moves to the *Received* status.
 
 ### Transfer order with shipping from and receiving to an external warehouse
 
-It is possible to have both source and destination warehouses set as external. This scenario works the same as the above two combined.
-
+It's possible to have both source and destination warehouses set as external. This scenario works the same as the previous two scenarios combined.
 
 ## On-hand adjustments
 
-The following illustration shows how on-hand inventory adjustments are handled when Warehouse management only mode is run. 
+The following illustration shows how on-hand inventory adjustments are handled when Warehouse management only mode is run.
 
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Diagram of the inventory process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
 
@@ -143,7 +142,7 @@ To automatically post the inventory adjustment journals, go to **Warehouse manag
 The Warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**) collects all the inventory transaction updates that lead to on-hand updates that are of interest for the related legal entities. For example, you might want to handle information about inventory status changes.
 
 > [!TIP]
->For example, if you want to adjust the inventory in the warehouse only mode legal entity without affecting the order legal entity or causing duplicate adjustments through the warehouse inventory log update process, you can use an Inventory journal name with the *Exclude from warehouse inventory update logs* setting turned on. This will prevent the journal posting from being logged.
+>For example, if you want to adjust the inventory in the warehouse only mode legal entity without affecting the order legal entity or causing duplicate adjustments through the warehouse inventory log update process, you can use an Inventory journal name with the *Exclude from warehouse inventory update logs* setting turned on. This prevents the journal posting from being logged.
 
 > [!IMPORTANT]
 > For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, keep the **Enable warehouse inventory update logs** option turned off for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory in the sales subsidiary legal entities.
@@ -160,7 +159,7 @@ In the *WOM* legal entity, you must create a [source system](wms-only-mode-setup
 
 In the *LE1* legal entity, you must set up an external warehouse management system of the *Legal entity* type and link it to the *SS-LE1* [source system](wms-only-mode-setup.md#source-systems) in the *WOM* legal entity. You can complete this setup by going to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **External warehouse management systems**.
 
-In the *LE1* legal entity, you can now go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouses** and select the warehouses that you want to handle externally. Specify the external warehouse management system and the external warehouse name from the *WOM* legal entity. You should select a default location that doesn't use license plates. This location will be used for all inventory changes from the external warehouses in the *LE1* legal entity.
+In the *LE1* legal entity, you can now go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Warehouses** and select the warehouses that you want to handle externally. Specify the external warehouse management system and the external warehouse name from the *WOM* legal entity. You should select a default location that doesn't use license plates. This location is used for all inventory changes from the external warehouses in the *LE1* legal entity.
 
 > [!NOTE]
 > The **Use warehouse management processes** option must be turned on for the warehouses in both legal entities.
