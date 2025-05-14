@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: achansoriya
 ms.author: achansoriya
 ms.topic: how-to
-ms.date: 09/30/2024
+ms.date: 05/15/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -81,7 +81,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature, review the default values, and update them as required, so that they better reflect your business operation.
 
 > [!NOTE]
-> Only the parameters mentioned in this chapter require modification. Other parameters can be also reconfigured if necessary. In this case you take the responsibility for the proper feature functioning.
+> Only the parameters mentioned in this chapter require modification. Other parameters can be also reconfigured if necessary. In this case you take responsibility for the proper feature functioning.
 
 To configure the electronic invoicing feature, follow these steps.
 
