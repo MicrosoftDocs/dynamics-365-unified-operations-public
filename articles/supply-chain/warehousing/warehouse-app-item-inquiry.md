@@ -1,51 +1,53 @@
 ---
-title: Warehouse mobile app item inquiry
-description: Warehouse mobile app item inquiry
-author: alkorote
-ms.author: alkorote
+title: Query item data on a mobile device
+description: Learn how to create a mobile device menu item that lets warehouse workers view key inventory details for specific items, including location, available quantity, and reserved quantity.
+author: Mirzaab
+ms.author: mirzaab
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: how-to
-ms.date: 05/01/2025
+ms.date: 05/14/2025
+ms.custom: 
+  - bap-template
 ---
-# Query item data using Warehouse Management mobile app: Item Inquiry
 
-The Item Inquiry capability in the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management enables warehouse workers to quickly view key inventory details — such as location, available quantity, and reserved quantity — for specific items. This feature improves visibility into warehouse stock and supports efficient decision - making during daily operations.
+# Query item data on a mobile device
+
+*Item inquiry* mobile device menu items enable warehouse workers to view key inventory details for specific items, including location, available quantity, and reserved quantity. This feature improves visibility into warehouse stock and supports efficient decision-making during daily operations.
 
 > [!NOTE]
-> This functionality does not display batch numbers or serial IDs.  
-> If the item is a product variant, information will be shown for the captured product dimensions (such as color or size).
+> This functionality doesn't display batch numbers or serial IDs. If an item is a product variant, information is shown for the captured product dimensions (such as color or size).
 
-## Key capabilities
-- Fast access to inventory details – workers can view where an item is stored and see how much stock is available or reserved.
-- Support for product variants – if an item uses product dimensions (for example, color or size), the app will show data for the relevant variant based on the scanned or entered information.
+## Key capabilities of the item inquiry feature
+
+*Item inquiry* mobile device menu items provide the following key capabilities:
+
+- **Fast access to inventory details** – Workers can view where an item is stored and see how much stock is available or reserved.
+- **Support for product variants** – If an item uses product dimensions (such as color or size), the app shows data for the relevant variant based on the scanned or entered information.
 
 ## Example scenario
-A warehouse worker wants to verify stock levels of a particular item before picking. Using the Item Inquiry menu item on the mobile app, the worker scans the item barcode. The app displays:
-- The warehouse location(s) where the item is stored
-- The available and reserved quantities
-- Details based on the product variant (e.g., Red, Size L)
 
-This allows the worker to confirm inventory without interrupting active picking or receiving workflows.
+A warehouse worker wants to verify stock levels of a particular item before picking. The worker selects the **Item Inquiry** menu item on the mobile app and then scans the item barcode. In response, the app displays the following information:
+
+- Warehouse locations where the item is stored
+- Available and reserved quantities
+- Details based on the product variant (such as color or size values)
+
+This information allows the worker to confirm inventory without interrupting active picking or receiving workflows.
 
 ## Set up the mobile device menu item
-To enable this functionality, you must configure the mobile device menu item in the system.
 
-### Prerequisites
+To enable this functionality, you must configure the mobile device menu item in the system. Create the **Item inquiry** menu item by following these steps.
 
-To work through the example scenarios that are described in this article, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the *USMF* legal entity (company) before you begin.
-
-### Configure the menu item
-Create the **Item inquiry** menu item by following these steps.
-
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
-    - **Menu item name:** *Item inquiry*
-    - **Title:** *Item Inquiry*
-    - **Mode:** *Indirect*
+    - **Menu item name** – Enter an internal name for the menu item (for example, *Item inquiry*).
+    - **Title:** – Enter the title of the menu item as workers should set it (for example, *Item inquiry*).
+    - **Mode** – Select *Indirect*.
 
-1. On the **General** FastTab, configure:
+1. On the **General** FastTab, set the following values:
+    - **Activity code** – Select *Item inquiry*.
+    - **Use process guide:** – This setting is automatically set to *Yes* and can't be changed.
 
-    - **Activity code:** *Item inquiry*
-    - **Use process guide:** *Yes* (This value is automatically selected.)
-
-Once configured, this menu item can be added to mobile device menus for warehouse users, enabling direct access from the Warehouse Management mobile app.
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device menu** and add the new menu item to each menu where it should be available to workers. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
