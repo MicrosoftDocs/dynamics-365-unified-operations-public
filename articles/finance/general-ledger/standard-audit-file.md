@@ -47,5 +47,6 @@ The following table provides information about country/region-specific regulator
 | Lithuania                | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/emea-ltu-saf-t.md) |
 | Norway                   | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/emea-nor-satndard-audit-file-for-tax.md) |
 | Singapore                | [IRAS Audit File (IAF) for Singapore](../localizations/apac-sgp-iras-audit-file.md) |
+| Poland                   | [Standard audit file, SAF (Jednolity Plik Kontrolny, JPK) for Poland overview](../localizations/poland/emea-pol-standard-audit-file-saf.md) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
