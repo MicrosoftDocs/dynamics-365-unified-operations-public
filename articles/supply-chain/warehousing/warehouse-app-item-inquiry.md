@@ -43,7 +43,7 @@ To enable this functionality, you must configure the mobile device menu item in 
 1. On the Action Pane, **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
     - **Menu item name** – Enter an internal name for the menu item (for example, *Item inquiry*).
-    - **Title:** – Enter the title of the menu item as workers should set it (for example, *Item inquiry*).
+    - **Title** – Enter the title for the menu item as workers should see it (for example, *Item inquiry*).
     - **Mode** – Select *Indirect*.
 
 1. On the **General** FastTab, set the following values:
