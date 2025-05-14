@@ -6,7 +6,7 @@ ms.date: 05/15/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-ms.author: v-Cpicon85
+ms.author: v-cpicon
 ---
 
 # Configure printing for the Printed General Ledger for Venezuela
@@ -28,7 +28,7 @@ Before you complete the steps in this article to generate and print the report, 
   * Ledger Accounting LATAM
   * General Ledger LATAM 
 
-Learn more in [Import Electronic reporting (ER) configurations from Dataverse]( gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md).
 
 * You must create a new SSRS Reports/Services reference and configure it in the following way:
   * In the Report/Service Id field, enter PrintGL.
