@@ -1,4 +1,4 @@
-﻿---
+---
 title: Set up and configure the Supplier Communications Agent (production ready preview)
 description: Learn how to set up and configure the Supplier Communications Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
 author: t-benebo
@@ -41,69 +41,9 @@ To use the Supplier Communications Agent, your system must meet the following re
 
 To learn more about the *Immersive Home* feature, go to [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).
 
-## Synchronize mailboxes with Dataverse
-
-To enable email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes to be synchronized with Microsoft Dataverse at the server level.
-
-### Private mailbox
-
-To set up a private mailbox, follow these steps:
-
-1. Sign in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user with a system administrator security role. (Users without an administrator role can enable synchronization on their own mailboxes, but this might still require administrator approval.)
-1. Select the environment you want to set up.
-1. On the command bar, select **Settings.**
-1. On the **Settings** page, expand the **Email** section and select **Mailboxes**.
-1. Open the **Select a view** drop-down list in the heading of the page and select *Active Mailboxes*.
-1. Select the check box for each of the mailboxes that you want to use with the supplier communication agent.
-1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
-1. Now you must assign security roles to enable the user who owns the mailbox to configure the agent. Go back to the **Settings** page, expand the **Users + permissions** section, and select **Users**.
-1. Find and select the user that owns the private mailbox.
-1. On the command bar, select **Manage security roles**.
-1. In the **Manage security roles** dialog, select the *Finance and Operations Agent Configuration Manager* and *Basic User* roles.
-1. Select **Save**.
-
-After the private mailbox is set up, the user who owns the mailbox must update personalization settings to track all the emails. The owner of the mailbox must follow these steps:
-
-1. Go to your environment URL.
-1. Select the gear button on the top right and select **Personalization settings**.
-1. Open the **Email** tab and set **Track** to *All email messages*.
-1. Select **OK**.
-
-### Shared mailbox
-
-If you're using a shared mailbox, then create a queue to allow all users working on the shared mailbox to access email contents.
-
-1. Sign in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as user with a system administrator security role.
-1. Select the environment you want to set up.
-1. On the command bar, select **Settings**.
-1. On the **Settings** page, expand the **Users + permissions** section and select **Teams**.
-1. Select **Create team** at the top.
-1. Fill out a name, business unit, and administrator as needed and set the **Team type** to *Owner*. Then select **Next**.
-1. On the next page, add all the members that should have access to the shared mailbox. This allows the selected users to access email contents from the Supplier Communications Agent incoming email workspace in Supply Chain Management.
-1. On the **Manage security roles** page, select *Finance and Operations Basic User* and *Basic User* and then select **Save**.
-1. Go back to the **Settings** page, expand the **Business** section, and select **Queues**.
-1. Select the **New** button on top to create a new **Queue** entity record.
-1. Enter a **Name**, set **Incoming email** to the email address of the shared mailbox, and assign the **Owner** as the team that was created earlier. Then select **Save**.  
-1. A new mailbox should now be created under **Email settings**. Select the mailbox name.
-1. On the top command bar, select **Test & enable mailboxes**.  
-
-    > [!TIP]
-    > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
-
-1. Make sure that no other mailboxes with the same email address are set up and active. To check this, go back to the **Settings** page for your environment in the Power Platform Admin Center. Expand the **Email** section and select **Mailboxes**. Then, select *All Mailboxes* from the drop-down list at the top. Make sure that there's only one mailbox with the same shared mailbox email address. If more than one exists, deactivate all the others.
-1. Now you must assign the required security role to the user who will configure the agent from the **Agents** page in Supply Chain Management. Go back to the **Settings** page, expand the **Users + permissions** section, and select **Users**.
-1. Find and select the user responsible for configuring the agent.
-1. On the command bar, select **Manage security roles**.
-1. In the **Manage security roles** dialog, select the *Finance and Operations Agent Configuration Manager* role.
-1. Select **Save**.
-
-For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
-
-### Troubleshoot server-side synchronization
-
-To learn how to solve common issues related to server-side synchronization, go to [Troubleshooting and monitoring](/power-platform/admin/troubleshooting-monitoring-server-side-synchronization).
-
 ## Set up agent identity
+
+The Supplier communications agent interacts with Dataverse and Microsoft Copilot Studio to perform its work. You must select an identity used for these interactions and create the required connections.
 
 > [!TIP]
 > For reasons of security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
@@ -123,26 +63,104 @@ Create agent identity user accounts in both Dataverse and Dynamics 365 Supply Ch
 
 ### Create required connections and activate the triggering flows
 
-The Supplier Communications Agent uses connectors to Dataverse and Microsoft Copilot Studio to perform its work. You must set them up before you can use the agent.
-
 1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
 1. In the left navigator, select **Connections**.
 1. At the top of the page, select **New connection**.
-1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. Use the **Search** field at the top-right of the page to find the connection with a **Name** of *Microsoft Dataverse*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 1. At the top of the page, select **New connection**.
-1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select the **Create** button for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
+1. Update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
 
-Now, you must update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the [sample PowerShell script](#sample-script) provided at the bottom of this article.
+## Assign permissions to users working with the agent
+All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
-## Refresh data
+Additionally, they need following roles assigned.
+
+### Permissions for users managing agent configuration
+
+- Required Dataverse user roles:
+    - *Basic User*
+    - *Finance and Operations Agent Configuration Manager*
+    - *Finance and Operations Basic User*
+
+- Required Dynamics 365 Supply Chain Management user roles:
+    - *System user*
+    - *Purchasing manager* and/or *Purchasing agent*
+ 
+### Permissions for users reviewing agent results
+
+- Required Dataverse user roles:
+    - *Basic User*
+    - *Finance and Operations Basic User*
+ 
+- Required Dynamics 365 Supply Chain Management user roles:
+    - *System user*
+    - *Purchasing agent*
+
+## Synchronize mailboxes with Dataverse
+
+To enable email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes to be synchronized with Microsoft Dataverse at the server level.
+
+### Private mailbox
+
+> [!IMPORTANT]
+> Only the owner of the private mailbox can create agent configuration and review agent results related to this mailbox. The owner needs permissions to [manage agent configuration](./supplier-com-agent-setup.md#permissions-for-users-managing-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-reviewing-agent-results).
+
+To set up a private mailbox, follow these steps:
+
+1. Sign in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user with a system administrator security role. (Users without an administrator role can enable synchronization on their own mailboxes, but this might still require administrator approval.)
+1. Select the environment you want to set up.
+1. On the command bar, select **Settings.**
+1. On the **Settings** page, expand the **Email** section and select **Mailboxes**.
+1. Open the **Select a view** drop-down list in the heading of the page and select *Active Mailboxes*.
+1. Select the check box for each of the mailboxes that you want to use with the supplier communication agent.
+1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
+
+After the private mailbox is set up, the user who owns the mailbox must update personalization settings to track all the emails. The owner of the mailbox must follow these steps:
+
+1. Go to your environment URL.
+1. Select the gear button on the top right and select **Personalization settings**.
+1. Open the **Email** tab and set **Track** to *All email messages*.
+1. Select **OK**.
+
+### Shared mailbox
+
+If you're using a shared mailbox, then create a queue to allow all users working on the shared mailbox to access email contents.
+
+1. Sign in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as user with a system administrator security role.
+1. Select the environment you want to set up.
+1. On the command bar, select **Settings**.
+1. On the **Settings** page, expand the **Users + permissions** section and select **Teams**.
+1. Select **Create team** at the top.
+1. Fill out a name, business unit, and administrator as needed and set the **Team type** to *Owner*. Then select **Next**.
+1. On the next page, add all the members that should have access to the shared mailbox.
+
+    > [!IMPORTANT]
+    > All users that create agent configuration and review agent results related to this mailbox need to be added to the team.
+
+1. On the **Manage security roles** page, select *Finance and Operations Basic User* and *Basic User* and then select **Save**.
+1. Go back to the **Settings** page, expand the **Business** section, and select **Queues**.
+1. Select the **New** button on top to create a new **Queue** entity record.
+1. Enter a **Name**, set **Incoming email** to the email address of the shared mailbox, and assign the **Owner** as the team that was created earlier. Then select **Save**.
+1. A new mailbox should now be created under **Email settings**. Select the mailbox name.
+1. On the top command bar, select **Test & enable mailboxes**.  
+
+    > [!TIP]
+    > If this operation fails, check the **Alerts** section for the mailbox. If you see an error message that says approval is needed, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).  
+
+1. Make sure that no other mailboxes with the same email address are set up and active. To check this, go back to the **Settings** page for your environment in the Power Platform Admin Center. Expand the **Email** section and select **Mailboxes**. Then, select *All Mailboxes* from the drop-down list at the top. Make sure that there's only one mailbox with the same shared mailbox email address. If more than one exists, deactivate all the others.
+
+For detailed instructions, go to [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
+
+### Troubleshoot server-side synchronization
+
+To learn how to solve common issues related to server-side synchronization, go to [Troubleshooting and monitoring](/power-platform/admin/troubleshooting-monitoring-server-side-synchronization).
+
+## Refresh data (optional)
 
 After you enable the supplier communication agent on a sandbox environment, we recommend that you do a data refresh, which will let you test in the sandbox environment with the same data that you would have on your production environment. To learn how to do a database refresh, go to [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh)
-
-## Users for both Dataverse and Supply Chain Management
-
-Existing Dynamics 365 Supply Chain Management users that should be able to read the agent emails and summaries must also be created as Dataverse users (if the aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
 ## <a name="sample-script"></a>Sample script to update connection references and enable triggering flows
 
