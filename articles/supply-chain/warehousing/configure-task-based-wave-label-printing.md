@@ -52,7 +52,7 @@ You can now update an existing wave template so that it uses the *Wave label pri
 
 The first time that a wave process runs by using any task-based processing, the system creates default wave task processing threshold data. This data is used to control whether wave processing will run asynchronously and be task-based, so that it can process and create wave labels in parallel.
 
-The default data initially uses a threshold value of *1* for the minimum number of work IDs (`MinimumWorkThresholdForLabelPrinting`). Therefore, when the system processes a wave that has more than one work ID, it will use task-based processing of wave labels in a separate transaction. You can manually insert or update this data in the `WHSWaveTaskProcessingThresholdParameters` table in your test environments. To change the setting in a production environment, you must contact Microsoft Support to request the update.
+The default data initially uses a threshold value of *1* for the minimum number of work IDs (`MinimumWorkThresholdForLabelPrinting`). Therefore, when the system processes a wave that has more than one work ID, it will use task-based processing of wave labels in a separate transaction. You can manually insert or update this data in the `WHSWaveTaskProcessingThresholdParameters` table in your test environments. Please do that via running [custom X++ script](../../fin-ops-core/dev-itpro/deployment/run-custom-scripts.md)
 
 ## Changes to the wave processing logic when task-based wave label printing is used
 
