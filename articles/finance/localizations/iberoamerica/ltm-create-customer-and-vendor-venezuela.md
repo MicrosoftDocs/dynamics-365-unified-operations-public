@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Venezuela
 description: Learn how to create customer and vendor records that have an address in Venezuela.
 author: Fhernandez0088
-ms.date: 05/02/2025
+ms.date: 05/15/2025
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
