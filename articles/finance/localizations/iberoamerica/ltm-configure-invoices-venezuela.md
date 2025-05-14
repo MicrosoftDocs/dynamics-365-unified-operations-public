@@ -35,7 +35,7 @@ To complete the sales invoice configuration, follow these steps.
 1. Enable the **Require CA number** option.
 1. Set the **document mask** with the required number of characters for the sales point prefix **XXXX** and the document number **XXXXXXXX**. Set the entry to **Automatic**, **Assignment before post**, and **Mandatory** for both the prefix and the document number. Learn more in [Document classes for Latin America](ltm-core-document-class.md).
 1. In every document class that belongs to the company, create a **document class sales point**. On the **Document class point** page, select a sales point. The length of the sales point prefix must match the length of the document mask prefix. For **Secuencial**, create a number sequence as an alphanumeric format of eight characters (XXXX-**XXXXXXXX**). The length of this number sequence must match the length of the document mask. Learn more in [Document class sales point for Latin America](ltm-core-document-class-sales-point.md).
-1. Configure the **Sales CA** option in the document class sales point. Learn more in [Sales authorization code for Latin America](iberoamerica/ltm-core-sales-ca.md).
+1. Configure the **Sales CA** option in the document class sales point. Learn more in [Sales authorization code for Latin America](ltm-core-sales-ca.md).
 1. Create a **customer set**, and add the document classes that you created in the previous steps. The customer set contains the document classes that can be used in a customer transaction when it's assigned to its LATAM configuration. Learn more in [Customer sets for Latin America](ltm-core-customers-set.md).
 
 ## Configure a vendor invoice
