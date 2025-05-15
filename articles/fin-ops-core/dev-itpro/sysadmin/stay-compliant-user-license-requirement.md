@@ -34,7 +34,7 @@ A licensing requirement is assigned to every securable object or resource that's
 
 The rest of this article describes the different tools that you can use to ensure that the actual licensing complies with the expected licensing requirements. The first thing to verify is that the user roles have the expected licensing requirements and are assigned to the appropriate users. 
 
-To understand proper security role to duty and privilege mapping that aligns to Microsoft’s licensing policy and to understand the licenses you need, see [Role-based security](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview).
+To understand proper security role to duty and privilege mapping that aligns to Microsoft’s licensing policy and to understand the licenses you need, see [User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview).
 
 ## Available and assigned licenses
 
