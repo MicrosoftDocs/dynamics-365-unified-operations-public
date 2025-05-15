@@ -1,5 +1,5 @@
 ---
-title: República Dominicana overview
+title: Dominican Republic overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for República Dominicana , including links that direct to resources about electronic invoicing. 
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
@@ -13,7 +13,7 @@ ms.search.form:
 ms.dyn365.ops.version: App 10.0.44
 ---
 
-# República Dominicana overview
+# Dominican Republic overview
 
 [!include [banner](../../includes/banner.md)]
 
