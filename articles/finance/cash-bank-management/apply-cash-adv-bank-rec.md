@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: EricWangChen
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 2/18/2025
+ms.date: 5/15/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -152,7 +152,7 @@ To enter default descriptions for bank reconciliation postings, follow these ste
 
 > [!NOTE]
 > The current system design intentionally handles descriptions differently between automatic and manual flows:
-> - For automatic bank reconciliation that uses defined matching rules, the system is designed to use configured default descriptions the feature **Enable default descriptions for advanced bank reconciliation**  is enabled.
+> - For automatic bank reconciliation that uses defined matching rules, the system is designed to use configured default descriptions the **Enable default descriptions for advanced bank reconciliation** feature is enabled.
 > - For manual voucher generation, the system is designed to use the bank statement line's **Entry Reference** field as the description, bypassing configured default descriptions.
 
 ![Default descriptions](./media/defaultdescriptions.PNG)
