@@ -30,7 +30,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Microsoft has chosen not to continue development on this preview feature. |
+| **Reason for deprecation/removal** | Microsoft has decided not to continue development on this preview feature. |
 | **Replaced by another feature?** | No |
 | **Product areas affected** | Supply Chain Management – Inventory management |
 | **Deployment option** | Cloud and on-premises |
