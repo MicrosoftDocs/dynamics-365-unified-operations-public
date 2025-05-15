@@ -1,5 +1,5 @@
 ---
-title: General ledger and Financial reporting overview
+title: General ledger overview
 description: Use General ledger to define and manage the legal entity’s financial records. Learn more about sales tax and access additional resources.
 author: twheeloc
 ms.author: twheeloc
