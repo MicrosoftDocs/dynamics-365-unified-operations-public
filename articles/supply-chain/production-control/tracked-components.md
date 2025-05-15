@@ -27,6 +27,35 @@ Before you can use the features that are described in this article, your system 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
 - The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
+## Enable registration of tracked component information
+
+To enable registering tracked component information in production processes, follow these steps.
+
+1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. Select tab **Bills of materials**
+1. Set field **Enable tracked components** to *Yes*
+
+## Enable registration of tracked components on products
+
+There are following prerequisites for using the tracked components functionality for a a product or its components.
+
+- The product needs to be defined as serial or batch-controlled.
+- The product must be associated a tracked components policy.
+
+To create a tracked components policy, follow these steps.
+
+1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**
+1. 
+
+
+You need to enable the products that you want to track using the tracked components capabilities. There are following prerequisites for 
+
+Prerequisites
+
+registering tracked component information. Follow t
+
+
+
 ## Register tracked components for finished items
 
 To register tracked components for the finished items for any production order, follow these steps.
