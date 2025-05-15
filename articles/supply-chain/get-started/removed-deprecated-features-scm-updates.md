@@ -26,6 +26,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.44 release
 
+### Inquire into inventory with Copilot (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Microsoft has chosen not to continue development on this preview feature. |
+| **Replaced by another feature?** | No |
+| **Product areas affected** | Supply Chain Management – Inventory management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Removed. This preview feature was never made generally available and has now been completely removed from the [Inventory Visibility service](../inventory/inventory-visibility.md). |
+
 ### SHA1 hashing in the InventDim table
 
 | &nbsp;  | &nbsp;  |
