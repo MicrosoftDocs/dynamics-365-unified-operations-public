@@ -2478,6 +2478,8 @@
                       href: localizations/denmark/emea-dnk-accounting-basis.md
                 - name: Dominican Republic
                   items: 
+                  - name: Dominican Republic overview
+                    href: localizations/iberoamerica/ltm-Dominican_Republic_Overview.md
                   - name: Configure sales and purchase invoices for Dominican Republic
                     href: localizations/iberoamerica/ltm-configure-invoices-dominican-republic.md
                   - name: Configure printing for Goods and Services Purchases Submission Form 606
