@@ -4,7 +4,7 @@ description: Use General ledger to define and manage the legal entity’s financ
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 03/14/2024
+ms.date: 05/14/2025
 ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started
