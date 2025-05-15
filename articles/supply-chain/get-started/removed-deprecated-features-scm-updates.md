@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?** | No |
 | **Product areas affected** | Supply Chain Management – Inventory management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Removed. This preview feature was never made generally available and has now been completely removed from the [Inventory Visibility service](../inventory/inventory-visibility.md). |
+| **Status** | Removed. This preview feature was never made generally available and is now completely removed from the [Inventory Visibility service](../inventory/inventory-visibility.md). |
 
 ### SHA1 hashing in the InventDim table
 
