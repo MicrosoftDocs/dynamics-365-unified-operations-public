@@ -26,7 +26,7 @@ The licensing requirements for users are determined by the security roles that a
 - Privileges
 - Directly referenced securable objects
 
-For more information see [Role-based security](./role-based-security.md).
+For more information, see [Role-based security](./role-based-security.md).
 
 The licensing requirements for users are determined at the organization or tenant level. This article is focused on the requirements for a single environment. If you have multiple environments, the requirements must be analyzed across all of them.
 
