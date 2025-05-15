@@ -77,7 +77,7 @@ The following table shows the schema for asset import and export operations.
 | MediaAction                          | Action that should be applied to the asset during manifest import. Allowed field values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
 | MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. Allowed field values are *UseExisting* or *Overwrite*. |
 | MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. Allowed field values are *UseExisting* or *Overwrite*. |
-| MediaImportPath                      | Either the HTTP source URL or the file name. Media assets are imported from this location, either via local file upload or the system fetching the media asset binary from a publicly accessible external web location). |
+| MediaImportPath                      | Either the HTTP source URL or the file name. Media assets are imported from this location, either via local file upload or the system fetching the media asset binary from a publicly accessible external web location. *Note* : The value must include the relative path starting from the root of the uploaded folder. For example, if the file is located at `c:/uploadfiles/images/image1.png` and the folder `images` is being uploaded, the correct `MediaImportPath` is `/images/image1.png`. |
 | ImageAltText                         | Alt text for an image asset. |
 | MediaSearchTags                      | Keywords that describe the asset (comma separated). |
 | MediaCaption                         | The caption for a video asset. |
@@ -183,6 +183,10 @@ To bulk import an asset manifest into site builder, follow these steps.
 1. Select **Next**. 
 1. If you selected the **Import using local files from my device** checkbox earlier, under **Select a media directory**, select **Browse**, and then select the media directory on your local machine. If you aren't importing media assets, skip ahead to step 11.
 1. After you select the media directory to upload, a confirmation message box might appear, depending on your browser. Review the message, and then select **Upload**, **OK**, or **Yes** (depending on your browser). The **Select a media directory** dialog box is then updated and shows the folder that you selected for upload.
+
+    > [!NOTE]
+    > All folder and file names in uploaded content must use lowercase letters only; any uppercase characters must be converted to lowercase before upload.
+
 1. Select **Next**.
 1. In the **Review and finish** dialog box, review the job settings, and then select **Begin import**.
 
