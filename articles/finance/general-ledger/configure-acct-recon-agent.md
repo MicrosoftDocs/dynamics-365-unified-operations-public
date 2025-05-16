@@ -1,6 +1,6 @@
 ---
-title: Set up and configure the Account reconciliation agent (production ready preview)
-description: Learn how to set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
+title: Set up and configure the Account Reconciliation Agent (production ready preview)
+description: Learn how to set up and configure the Account Reconciliation Agent in Microsoft Dynamics 365 Finance.
 author: twheeloc
 ms.author: bking
 ms.topic: overview
@@ -15,87 +15,102 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ---
 
-# Set up and configure the Account reconciliation agent (production ready preview)
+# Set up and configure the Account Reconciliation Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how system administrators can set up and configure the Account reconciliation agent. 
+This article explains how system administrators can set up and configure the Account Reconciliation Agent in Microsoft Dynamics 365 Finance.
 
-## Prerequisites 
+## Prerequisites
 
-To use the Account reconciliation agent, your system must meet the following requirements: 
- - You must be running Microsoft Dynamics 365 Finance version 10.0.44 or later.
- - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
-     - (Preview) Immersive Home
-     - (Production ready preview) Agent management
-     - (Production ready preview) Account reconciliation agent 
+Before you can use the Account Reconciliation Agent, your system must meet the following requirements:
 
-You must be running the following packages in the Power Platform admin center: 
- - Copilot for finance and operations apps version 1.0.3048.2 or later
- - Copilot in Microsoft Dynamics 365 Finance version 1.0.3049.1 or later 
+- You must be running Dynamics 365 Finance version 10.0.44 or later.
+- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features aren't shown in your system, select **Check for updates**.
 
-Learn more in [Immersive home](../../fin-ops-core/fin-ops/copilot/immersive-home.md).  
+    - (Preview) Immersive Home
+    - (Production ready preview) Agent management
+    - (Production ready preview) Account reconciliation agent
 
-### Set up agent identity 
+- You must be running the following packages in the Power Platform admin center:
 
->[!Tip]
-> For reasons of security and ease of maintenance, we recommend that you use a dedicated identity for the agent. 
+    - **Copilot for finance and operations apps**, version 1.0.3048.2 or later
+    - **Copilot in Microsoft Dynamics 365 Finance**, version 1.0.3049.1 or later
 
-#### Set up agent identity users and assign security roles 
+Learn more in [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).  
 
-Create agent identity user accounts in both Dataverse and Dynamics 365 Finance. 
+## Set up agent identity
 
-The user accounts needs the following security roles: 
-Required Dataverse user roles: 
- - Finance and Operations basic user
- - Account reconciliation agent role
- - Environment maker 
+> [!TIP]
+> For security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
 
-Required Dynamics 365 Supply Chain Management user roles: 
- - Account reconciliation agent
- - System user 
+### Set up agent identity users and assign security roles
 
-### Create required connections and activate the triggering flows 
+Create agent identity user accounts in both Dataverse and Finance.
 
-The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to perform its work. You must set them up before you can use the agent. 
+The user accounts must have the following security roles:
 
-To set up the connectors, follow these steps:  
-1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
-2. In the left navigator, select **Connections**.
-3. At the top of the page, select **New connection**.
-4. In the **Search** field, search for the **Microsoft Dataverse** connection.
-5. Click **Create** for that row and follow the instructions.
-6. Sign in as the intended agent identity when prompted.
-7. You return to the **Connections** list. The new connector is displayed on the bottom of the list and is named after the agent identity you signed in with when creating it.
-8. At the top of the page, select **New connection**.
-9. Find the **Microsoft Copilot Studio (preview)** connection.
-10. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
-11. You return to the **Connection**s list. The new connector is displayed at the bottom of the list and is named after the agent identity you signed in with when creating it. 
+- Required Dataverse user roles:
 
-Now, you must update the agent's connection references to point to the connections that you created. You must also activate the triggering flows. You can accomplish these tasks using the sample PowerShell script provided at the bottom of this article. 
+    - Finance and Operations basic user
+    - Account reconciliation agent role
+    - Environment maker
 
-### Sample script to update connection references and enable triggering flows 
+- Required Finance user roles:
 
-This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows. You must set the following parameters before running the script: 
- - `environmentId` - Your Dataverse environment ID. You can find it in the Power Platform admin center.
- - `dataverseUrl` - Your Dataverse environment URL. You can find it in Power Platform admin center.
- - `DVConnectionName` - The name of the Dataverse connector to use. The connector is named after the agent identity you signed in with when creating it. You can find it on the **Connections** page of the Power Apps Maker portal.
- - `MCSConnectionName` - The name of the Microsoft Copilot Studio connector to use. The connector is named after the agent identity you signed in with when [creating](#set-up-agent-identity). You can find it on the **Connections** page of the Power Apps Maker portal. 
+    - Account reconciliation agent
+    - System user
 
-Copy the following script and save it as a `.ps1` file. Enter the parameter values at the top, customize it if needed, and run it from any PowerShell console. When you run the script, sign in as an environment 
-administrator when prompted. 
+### Create the required connections
+
+The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent.
+
+To set up the connectors, follow these steps.
+
+1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
+1. In the left pane, select **Connections**.
+1. At the top of the page, select **New connection**.
+1. In the **Search** field, enter **Microsoft Dataverse**.
+1. In the search results, find the **Microsoft Dataverse** connection, select **Create** for it, and follow the on-screen instructions to create the connector.
+1. When you're prompted to sign in, sign in as the intended agent identity.
+
+    You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
+
+1. At the top of the page, select **New connection**.
+1. Search for the **Microsoft Copilot Studio (preview)** connection, select **Create** for it, and follow the on-screen instructions to create the connector. When you're prompted to sign in, sign in as the intended agent identity.
+
+    You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
+
+### Update connection references and activate the triggering flows
+
+To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. This section provides a sample PowerShell script that you can use to complete both tasks.
+
+To use the sample PowerShell script, follow these steps.
+
+1. Copy the script, and save it as a .ps1 file.
+1. Before you run the script, set the following four parameters at the top:
+
+    - `environmentId` — Specify the ID of your Dataverse environment. You can find this ID in the Power Platform admin center.
+    - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find this URL in the Power Platform admin center.
+    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created it](#create-the-required-connections). You can find the name on the **Connections** page in Power Apps.
+    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created it](#create-the-required-connections). You can find the name on the **Connections** page in Power Apps.
+
+ 1. Customize the script as you require. 
+ 1. Run the script from any PowerShell console. When you're prompted to sign in, sign in as an environment administrator.
+
+#### Sample script to update connection references and enable triggering flows
 
 ```powershell
 Param(
-   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment id")]
-   [string]$environmentId = "", 
-   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment URL")]
-   [string]$dataverseUrl = "",
-   [Parameter(Mandatory=$true, HelpMessage="Microsoft Dataverse connection name")]
-   [string]$DVConnectionName = "",
-   [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
-   [string]$MCSConnectionName = ""
+    [Parameter(Mandatory=$true, HelpMessage="Dataverse environment id")]
+    [string]$environmentId = "", 
+    [Parameter(Mandatory=$true, HelpMessage="Dataverse environment URL")]
+    [string]$dataverseUrl = "",
+    [Parameter(Mandatory=$true, HelpMessage="Microsoft Dataverse connection name")]
+    [string]$DVConnectionName = "",
+    [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
+    [string]$MCSConnectionName = ""
 )
 # Check PS version
 if ($PSVersionTable.PSVersion.Major -lt 7) {
@@ -287,7 +302,7 @@ Enable-TriggerFlow -flowId '9726ee57-f604-f011-bae1-6045bd0139fb' -accessToken $
 Enable-TriggerFlow -flowId 'e645e143-f804-f011-bae1-0022480b9145' -accessToken $accessToken # Account reconciliation - Evaluate subledger not in ledger exception record
 Enable-TriggerFlow -flowId '782ddc43-cd97-ef11-a72d-000d3a36041c' -accessToken $accessToken # Account reconciliation - Get Voucher Summary Record
 Enable-TriggerFlow -flowId '79284164-5a9c-ef11-a72d-000d3a5a293d' -accessToken $accessToken # Account reconciliation - Identify missing accounting
-Enable-TriggerFlow -flowId 'fe418c1d-5b9c-ef11-a72d-000d3a5a293d' -accessToken $accessToken # Account reconciliation -  Identify pending transfers
+Enable-TriggerFlow -flowId 'fe418c1d-5b9c-ef11-a72d-000d3a5a293d' -accessToken $accessToken # Account reconciliation - Identify pending transfers
 Enable-TriggerFlow -flowId '64fd40b7-d197-ef11-a72d-000d3a36041c' -accessToken $accessToken # Account reconciliation - Log recommended action"
 Enable-TriggerFlow -flowId 'f8a02f0e-d097-ef11-a72d-000d3a36041c' -accessToken $accessToken # Account reconciliation - Mark reconciliation trigger complete
 Enable-TriggerFlow -flowId '96e55129-0798-ef11-a72c-000d3a36041c' -accessToken $accessToken # Account reconciliation - Trigger reconciliation for individual exceptions
@@ -297,4 +312,3 @@ Enable-TriggerFlow -flowId 'c2ad4a0d-228f-ef11-96d2-002248047a14' -accessToken $
 Write-Host
 Write-Host 'Account reconciliation agents are ready for use' -ForegroundColor Green
 ```
-
