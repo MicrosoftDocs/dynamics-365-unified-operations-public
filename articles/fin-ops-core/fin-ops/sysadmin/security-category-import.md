@@ -47,33 +47,38 @@ Security categories offer options for both backing up as XML and restoring from 
 1. In the **Type** field, select a value.
 1. If you selected **User security governance** in the **Type** field, in the **Security related action** field, select one of the following options:
 
-    - **Create** – automatically creates or pushes all duties and roles to be created from security setup into the publish staging table. In Security configuration, you should see all Security objects developed with security setup that are ready for publishing.
-    - **Clear** – Select this option to clear all the security references between user security governance and Dynamics 365 finance and operations security configuration. Each task line that was imported will be blank and you’ll need to create roles and duties again for all lines. This might be helpful when you want to clear off or renew the project.
-    - **None** – Select this option to move all user security governance security objects not created within the system. If the security objects are non-existent, this might cause complications.
+    - **Create** – Automatically create or push all duties and roles that must be created from the security setup into the publish staging table. The security configuration should show all security objects that were developed by using the security setup and that are ready for publishing.
+    - **Clear** – Clear all the security references between user security governance and the Dynamics 365 finance and operations apps security configuration. Every task line that was imported is blank, and you must re-create roles and duties for each line. This option might be helpful when you want to clear off or renew the project.
+    - **None** – Move all user security governance security objects that weren't created within the system. If the security objects don't exist, this option might cause complications.
 
 ## Bulk-create a process hierarchy
 
 System administrators can use the **Restore from XML** feature to create an entire hierarchy under a security category. For this approach, generate the XML file in the correct format, with the desired hierarchy under a category. The hierarchy can optionally include multiple processes in a hierarchy tree and security tasks under each process. Although generation of the XML is a manual process, this approach to creating a hierarchy can still be faster if an accurate template of the XML is followed. Template creation mostly involves copying and pasting with the correct metadata. Make sure that each category has a unique name.
 
-> [!TIP] 
+> [!TIP]
 > Create one category through the user interface (UI), and use the **Backup as XML** feature to download the initial file. Then modify the category in this file to create the new category that has the desired hierarchy.
 
 ## Security category export and import process
 
-Generally, data export and import scenarios appear when customer is migrating data between legacy tool and User security governance or copying data between multiple data areas. This function is only available to system administrator role.
-1. The first step in this process is to export the data.
-2. Select desired security categories or all security categories on the **Security category** page. Click **Backup as XML**.
-3. Select from the following options:
- - **All categories** - To select all categories, select this toggle button.
- - **Type** - There are three choices under this lookup and each of them are explained in detail above. Based on your requirement, select the option. This lookup allows single selection only.
-4. After making all selections, click **OK**. This will download a file in XML format. Save the file in your local storage.
-Verify the file by opening it any XML editor and see appropriate user security governance objects or core security configuration objects in the file, based on select made during the export.
+In general, data export and import scenarios apply when a customer migrates data between the legacy tool and user security governance, or when a customer copies data between multiple data areas. This function is available only to the system administrator role.
 
-Next step is to import this file into the new data area you are targeting as destination.
-1. Switch to the environment or new data area where to import security categories exported earlier. Go to **System administration** \> **Security governance** \> **Security category**.
-2. Click **Restore from XML**. This opens a dialog to select the file and other configurations.
-3. In the dialog, browse to the XML file which you exported earlier.
-4. Depending on the **Type** selected earlier during **Export**, select the same **Type** value during import. If you select the incorrect **Type** value, the tool generates an info message, giving you more information on why the import process might not work.
-5. Under **Options** group, select the **Security relation action** value.
-Based on if you want to just create only user security governance objects or want to clear the existing references between Dynamics 365 finance and operations security objects and user security governance objects or create all objects, pick one of the actions: **None**, **Clear**, or **Create**. 
-6. Click **OK** to start the data import and an appropriate information message will be displayed after this action.
+The first step in the process is to export the data.
+
+1. On the **Security category** page, select the desired security categories or all security categories. Select **Backup as XML**.
+1. Select between the following options:
+
+    - **All categories** – To select all categories, turn on this option.
+    - **Type** – Select an option, based on your requirements. The three available options are explained in detail in the [Back up as XML](#back-up-as-xml) section of this article. You can select only one option in this lookup.
+
+1. Select **OK**. A file in XML format is downloaded. Save the file in your local storage.
+1. Open the file in any XML editor, and confirm that it includes the appropriate user security governance objects or core security configuration objects, based on your selections during the export.
+
+The next step is to import the file into the new data area that you're targeting as the destination.
+
+1. Switch to the environment or the new data area where you want to import the security categories that you exported.
+1. Go to **System administration** \> **Security governance** \> **Security category**.
+1. Select **Restore from XML**.
+1. In the dialog that appears, browse to the XML file that you exported.
+1. In the **Type** field, select the same value that you selected in the **Type** field during export. If you select an incorrect **Type** value, you receive an informational message that explains why the import process might not work.
+1. In the **Options** section, in the **Security relation action** field, select **None**, **Clear**, or **Create**, based on whether you want to create user security governance objects, clear the existing references between finance and operations security objects and user security governance objects, or create all objects.
+1. Select **OK** to start the data import. When the action is completed, you receive an appropriate informational message.
