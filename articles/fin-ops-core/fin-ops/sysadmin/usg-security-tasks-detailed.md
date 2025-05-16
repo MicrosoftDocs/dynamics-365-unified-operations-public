@@ -39,7 +39,7 @@ Convert the entry points from existing user accounts or roles into security task
 
 ## Load from existing task
 
-Use existing tasks as a starting point to create new tasks.
+Use existing tasks as a starting point for creating new tasks.
 
 ## Entry points subtraction
 
