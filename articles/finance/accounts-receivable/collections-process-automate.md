@@ -4,7 +4,7 @@ description: Learn about the process of setting up collections process strategie
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 05/12/2024
+ms.date: 05/02/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -36,12 +36,16 @@ To exclude customers from the process automation if the customer aging balance o
 
 Mark **Use prediction** to create collections activities using Customer payment predictions. The activities created will use the Activity template from **Payment predictions** on the **Accounts receivable parameters** page, **Collections process automation** tab. 
 
+Mark **Use track step** to ensure that invoices go through all steps of the automation. Set this to **Yes** if you want invoices to start at the first step in the process. For example, if the **Collections status** field was set to **Disputed**, but later set to **Resolved**, collections process automation starts at the first step on the **Process details** tab of the collections process setup. Select **No**, to start invoices with the activity that most closely matches the date. This checkbox is available when the **Collections process automation track step enhancement** feature is enabled in Dynamics 365 Finance release 10.0.43 and later. 
+
+This checkbox can't be disabled. After this feature is enabled, each open invoice is assigned the last step that was run according to the process automation history. If the process automation history has been removed, any open invoice starts with the first step in the process automation setup details. 
+
 ### Process details
 Click **New** to add a new process detail to the hierarchy. The **Description** is used to identify the purpose or name of the step in the hierarchy. Select the **Action type** to define the step that will create an activity, send an email, or create a collection letter. 
 
 - The **Business document** defines the template used to create the action type. This document can be an activity template, an email template, or a collection letter sent to each customer. Collections process automation only creates collection letters per customer, regardless of how other collections parameters are set.
 - **When** defines the process step that will occur before or after the leading (oldest) invoice due date, and is used together with the number displayed in the **Days in relation to the invoice due date** column. 
-- Mark the **Pre-dunning** option to create an action for every invoice in one step in a process hierarchy. Pre-dunning actions are typically an early notice related to outstanding invoices so a customer can be notified when an invoice is about to become due. Pre-dunning can only be marked for one activity per hierarchy. When you select an email action type, the recipient will be used to define whether the email message is sent to a customer, sales group, or collections agent contact. 
+- Mark the **Pre-dunning** option to create an action for every invoice in one step in a process hierarchy. Pre-dunning actions are typically an early notice related to outstanding invoices so a customer can be notified when an invoice is about to become due. Pre-dunning can only be marked for one activity per hierarchy. Only one step in a hierarchy can be designated for pre-dunning actions, and this step must be either an activity or an email. When you select an email action type, the recipient will be used to define whether the email message is sent to a customer, sales group, or collections agent contact. 
 - The value in the **Business purpose contact** field will then determine which contact from that customer's account will receive the communication.
 
 ### Business document details
@@ -57,5 +61,11 @@ Use the **Collections process history** button to view the recent history for th
 Click the **Collections process assignment** action to view customers assigned to a collections process. Use **Preview customer assignment** to view the hierarchy that a specific customer is assigned. Use **Preview process assignment** to preview the customers that will be assigned to a hierarchy when it is run. Click **Manual assignment** to view customers that have been manually assigned to a process or select customers to be assigned a process.
 
 Click the **Process simulation** action to preview the actions that will be created if the selected process automation is run at this time. 
+
+Beginning in Dynamics 365 Financel version 10.0.44, **Include project and General journal invoices in Collections process automation** feature is introduced.  
+
+When this feature is enabled, you have access to new parameters in the strategy grid. Select the checkboxes based on the type of invoices you want to be part of the automation process. 
+
+A new **Voucher** column is introduced on the **Collections process history** page to enhance the tracking and management of financial transactions. This column allows users to view associated voucher details for each entry, providing greater transparency and ease of identification. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

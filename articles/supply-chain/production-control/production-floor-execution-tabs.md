@@ -3,7 +3,7 @@ title: Design the production floor execution interface
 description: Learn how to design the content of the user interface for each configuration, including an outline and step-by-step process on designing a tab.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/01/2020
 ms.custom:
 ms.reviewer: kamaybac

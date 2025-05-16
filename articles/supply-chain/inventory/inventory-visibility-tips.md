@@ -4,7 +4,7 @@ description: Access a few tips that you should consider when you set up and use 
 author: yufei-huang
 ms.author: yufeihuang
 ms.search.form: 
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/24/2024
 ms.custom: 
   - bap-template

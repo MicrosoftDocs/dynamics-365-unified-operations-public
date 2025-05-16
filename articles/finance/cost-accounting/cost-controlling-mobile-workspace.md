@@ -3,7 +3,7 @@ title: Cost controlling mobile workspace
 description: Learn about the Cost controlling mobile workspace, which lets cost center managers view information about cost center performance anytime and anywhere.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/24/2022
 ms.reviewer: twheeloc
 audience: Application User

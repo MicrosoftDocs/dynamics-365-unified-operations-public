@@ -26,6 +26,9 @@ This article describes availability and explains how to enable generative help a
 
 After you complete the steps in this article, the Copilot icon appears at the top of all finance and operations apps. Users can then select the Copilot icon to access generative help and guidance.
 
+> [!TIP]
+> Users can provide feedback to Copilot by selecting the thumbs-up or thumbs-down buttons in the sidecar. You can add support for written feedback by turning on [enhanced user feedback for Copilot](../../dev-itpro/copilot/enable-copilot-feedback.md). This feedback helps improve the quality of the help and guidance that Copilot generates.
+
 ## Enable the feature
 
 In most cases, generative help and guidance with Copilot is available by default if [Power Platform Integration](../power-platform/enable-power-platform-integration.md) is enabled for your environment.

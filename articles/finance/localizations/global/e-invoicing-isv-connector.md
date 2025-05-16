@@ -4,7 +4,7 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/10/2025
+ms.date: 02/10/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -39,7 +39,7 @@ To enable the integration of the Electronic Invoicing service with the ISV last-
 - **Group** – The group code is used for internal routing within the Edicom infrastructure.
 - **Token** – The token is used to grant authorization to access the Edicom services.
 
-The token that you obtain must be uploaded to the secret that you created in the Azure key vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
+The token that you obtain must be uploaded to the secret that you created in the Azure Key Vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
 
 > [!NOTE]
 > With this integration, you are able to submit generated e-invoices' files either in the **OIOUBL** format to the Danish electronic invoicing infrastructure, **NemHandel**, or in the **PEPPOL** format to the PEPPOL Delivery Network. The format of a submitted file will be dynamically analyzed by Edicom and routed correspondingly.
@@ -144,13 +144,17 @@ For more information about electronic invoicing in Chile, see:
 [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md),
 [Vendor electronic invoice import in Chile](../iberoamerica/ltm-chl-vend-e-invoice.md).
 
+### Electronic invoicing in Costa Rica
+
+For more information about electronic invoicing in Costa Rica, see [Get started with Electronic invoicing for Costa Rica](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md).
+
 ### Electronic invoicing in Denmark
 
-For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
+For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/gs-e-invoicing-dk-get-started.md).
 
 ### Electronic invoicing in Panama
 
-For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
+For more information about electronic invoicing in Panama, see [Get started with Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md).
 
 ## Additional resources
 

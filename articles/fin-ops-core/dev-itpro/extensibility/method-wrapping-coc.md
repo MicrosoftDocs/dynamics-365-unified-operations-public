@@ -3,7 +3,7 @@ title: Class extension - Method wrapping and Chain of Command
 description: Learn about how to extend the business logic of public and protected methods by using method wrapping, with code examples for models.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/18/2018
 ms.reviewer: johnmichalak
 audience: Developer

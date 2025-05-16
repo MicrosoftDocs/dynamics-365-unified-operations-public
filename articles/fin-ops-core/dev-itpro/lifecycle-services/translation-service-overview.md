@@ -4,7 +4,7 @@ description: Learn about the Microsoft Dynamics 365 Translation Service (DTS), i
 author: sericks007
 ms.author: sericks
 ms.topic: overview
-ms.date: 06/14/2024
+ms.date: 02/12/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -20,6 +20,7 @@ ms.assetid: ejchoGIT
 # Dynamics 365 Translation Service overview
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[dts-deprecation](../../fin-ops/includes/dts-deprecation.md)]
 
 The Microsoft Dynamics 365 Translation Service (DTS) is hosted in Microsoft Dynamics Lifecycle Services (LCS). It's designed to enhance the experience for partners and independent software vendors (ISVs) when they translate their solutions or add a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).
 
@@ -30,6 +31,9 @@ DTS uses product-specific machine translation (MT) models that are custom-traine
 The following illustration shows, at a high level, how the service works.
 
 ![How DTS works.](./media/dts-overview.png "How DTS works")
+
+> [!NOTE]
+> Using this feature requires a for finance and operations apps, Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Project Operations.
 
 ## Recycling existing translations
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).

@@ -3,7 +3,7 @@ title: Invoice subscription transactions
 description: Learn how you can invoice subscription transactions, including a step-by-step process for invoicing subscription transactions.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 05/03/2018
 ms.custom:
 ms.reviewer: kamaybac

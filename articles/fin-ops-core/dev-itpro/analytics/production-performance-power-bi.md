@@ -3,14 +3,13 @@ title: Production performance Power BI content
 description: Learn about what is included in the Production performance Power BI content, including a table that outlines metrics that are included in the Power BI content.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: article
-ms.date: 12/19/2017
 ms.reviewer: kamaybac
-audience: IT Pro
-ms.search.region: Global
-ms.search.validFrom: 2016-11-30
 ms.search.form: ProductionPerformancePowerBI
-ms.dyn365.ops.version: Version 1611
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Production performance Power BI content
@@ -32,7 +31,8 @@ This Power BI content also lets you analyze production variances. Production var
 The **Production performance** Power BI content includes data that originates from production orders and batch orders. The reports don't include data that is related to kanban productions.
 
 ## Accessing the Power BI content
-The **Production performance** Power BI content is shown on the **Production performance** page (**Production control** \> **Inquiries and reports** \> **Production performance analysis** \> **Production performance**). 
+
+The **Production performance** Power BI content is shown on the **Production performance** page (**Production control** \> **Inquiries and reports** \> **Production performance analysis** \> **Production performance**).
 
 ## Metrics that are included in the Power BI content
 
@@ -48,7 +48,6 @@ The following table provides an overview of the visualizations that are included
 | Defects by resource                        | <ul><li>Defect rate (ppm) by date</li><li>Defect rate (ppm) by resource and Site</li><li>Defect rate (ppm) by operation</li><li>Top 10 resources by defect rate</li></ul> | Defective quantity |
 | Defects trend by resource                  | Defect rate (ppm) by quantity processed | |
 | Production variances for job order costing | <ul><li>Production variance by date and cost group type</li><li>Production variance by site and cost group type</li><li>Top 10 products with unfavorable production variance</li><li>Top 10 unfavorable production variance by resource</li></ul> | <ul><li>Realized cost</li><li>Production variance</li><li>Production variance %</li></ul> |
-
 
 ## Understanding the data model and entities
 
@@ -116,9 +115,8 @@ The following table shows the key dimensions that are used as filters to slice t
 | Requirement date          | Requirement date month offset and Requirement date            |
 | Route transaction date    | Route transaction month offset and Date                       |
 | Sites                     | Sites ID, Site name, State, and City                          |
-| Entities                  | Id and Name                                                   |
+| Entities                  | ID and Name                                                   |
 | Resources                 | Resource ID, Resource name, Resource type, and Resource group |
 | Products                  | Product number, Product name, Item ID, and Item group         |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

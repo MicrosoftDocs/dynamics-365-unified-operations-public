@@ -3,7 +3,7 @@ title: Configure sales and purchase invoices
 description: Learn how to configure sales and purchase invoices for a Chilean company, including an outline and step-by-step process of sales invoice configurations.
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/21/2023
 ms.custom: bap-template
 ms.reviewer: johnmichalak

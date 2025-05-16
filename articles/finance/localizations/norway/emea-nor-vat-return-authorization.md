@@ -3,7 +3,7 @@ title: Authorize interoperation with ID-porten and Altinn web services
 description: Learn how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/12/2024
 ms.reviewer: johnmichalak
 audience: Application User
@@ -50,7 +50,7 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
     > [!NOTE]
     > You must complete this step immediately after you obtain the authorization code. Otherwise, you might receive the following error message:
     >
-    > Web service returned error code 400 ({"error":"invalid_grant","error_description":"invalid_grant (correlation id: 08ede4e5-4720-5edb-8fd2-a4f6a1902b74)"}).
+    > Web service returned error code 400 ({"error":"invalid_grant","error_description":"invalid_grant (correlation id: aaaa0000-bb11-2222-33cc-444444dddddd)"}).
     >
     > If you receive this error message, go back to step 4. This time, select **Obtain access token** immediately after you obtain the authorization code.
 

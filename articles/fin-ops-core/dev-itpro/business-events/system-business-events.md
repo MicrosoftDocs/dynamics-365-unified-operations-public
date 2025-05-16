@@ -2,12 +2,11 @@
 title: Batch business events
 description: Learn about batch business events and how to use them, including a table that outlines the modules for various business events.
 author: matapg007
-ms.author: matgupta
-ms.topic: article
-ms.date: 02/25/2021
+ms.author: snagamalla
+ms.topic: how-to
+ms.date: 02/25/2025
 # ms.custom: NotInTOC
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31
 # ms.search.form:
@@ -59,5 +58,8 @@ The events have the following payload.
 | EventTime | Business event instance ID |
 | MajorVersion | Major version |
 | MinorVersion | Minor version |
+
+> [!NOTE]
+> Batch job business events should be activated for all legal entities because a batch job tasks can be configured to run in different legal entities.
 
 To get the current catalog and schema of business events, go to **System administration \> Setup \> Business events**.

@@ -5,7 +5,7 @@ author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/24/2025
 ms.custom: 
   - bap-template

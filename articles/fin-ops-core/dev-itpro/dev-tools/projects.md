@@ -3,7 +3,7 @@ title: Finance and operations project type in Visual Studio
 description: The finance and operations project type is part of the development tools. Learn about creating new projects and elements to a project.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/12/2018
 ms.reviewer: johnmichalak
 audience: Developer

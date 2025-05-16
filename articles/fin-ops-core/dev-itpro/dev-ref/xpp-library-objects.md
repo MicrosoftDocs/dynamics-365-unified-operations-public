@@ -3,7 +3,7 @@ title: X++ class library
 description: Learn about the library of classes in X++, including an outline on application classes and system classes, with additional information on structures for classes.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 06/18/2019
 ms.reviewer: johnmichalak
 audience: Developer

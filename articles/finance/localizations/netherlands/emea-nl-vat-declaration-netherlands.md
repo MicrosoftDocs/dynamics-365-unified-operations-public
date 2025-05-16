@@ -3,7 +3,7 @@ title: VAT declaration (Netherlands)
 description: Learn about VAT declaration for Netherlands, including outlines on setting up VAT declaration for Netherlands and previewing VAT declarations in Excel.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

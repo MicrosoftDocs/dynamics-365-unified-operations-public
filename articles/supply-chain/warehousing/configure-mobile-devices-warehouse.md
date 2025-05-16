@@ -37,7 +37,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | None | This default value doesn't enable an activity or inquiry. |
 | About | View information about the system, such as the version number, the warehouse ID, and the worker who is currently logged on. |
 | Change warehouse | Change the warehouse that a worker is logged on to. |
-| Location inquiry | View information about all items and quantities for a location. |
+| Location inquiry | View information about all items and quantities for a location. For license plate controlled locations, data is sorted by license plate number in descending order. The items are usually sorted by physical quantity (for both license plate controlled and non-license plate controlled locations) but the sort order might change depending on what SQL Server finds most optimal. |
 | License plate inquiry | View the quantity of items on a license plate and the location of the license plate. |
 | Start production order | Start a production order. |
 | Production scrap | Enter the quantity of scrap that was created during production for each bill of materials (BOM) line. |
@@ -242,7 +242,9 @@ You can set up a menu item that creates work for another worker after an initial
 </table>
 
 > [!NOTE]
-> You can set up mobile device menu items (such as [*Mixed license plate receiving (and putaway)*](mixed-license-plate-receiving.md)) to embed some of the flows from the previous table in the process.
+>
+> - You can set up mobile device menu items (such as [*Mixed license plate receiving (and putaway)*](mixed-license-plate-receiving.md)) to embed some of the flows from the previous table in the process.
+> - To prevent accidental selection, the **Cancel** button isn't shown during *cycle counting* mobile workflows.
 
 ## Configure menu items to process existing work
 
@@ -291,7 +293,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="odd">
 <td>Cluster picking</td>
-<td>The worker groups work into clusters. Clusters lets workers pick items from a single location for multiple work orders at the same time.</td>
+<td>The worker groups work into clusters. Clusters let workers pick items from a single location for multiple work orders at the same time.</td>
 </tr>
 <tr class="even">
 <td>Cycle count grouping</td>
@@ -437,6 +439,17 @@ The following table describes these options.
 <tr class="even">
 <td>Show work line list</td>
 <td>Select an option for how workers will be able to view and interact with the lines for the currently selected picking work. For more information about this option, see <a href="pick-line-overview.md">Set up a mobile device menu item to provide a pick line overview</a>.</td>
+</tr>
+<tr class="odd">
+<td>Display tracking dimension control for last on-hand</td>
+<td><p>Select one of the following options to specify how the <em>tracking dimension below location</em> control, including <em>batch below number</em> and <em>serial below number</em>, is shown for the last on-hand item. The setting of this field has no impact on the display of <em>tracking dimension above location</em>, such as <em>batch above number</em> or <em>serial above number</em>.</p>
+<ul>
+<li><em>Default from warehouse management parameters</em> – The menu item follows the configuration on the <strong>Warehouse management parameters</strong> page. Learn more in <a href="mobile-device-parameters.md">Global mobile device parameters</a>.</li>
+<li><em>Display tracking dimension control</em> – The current menu item always shows the tracking dimension below location control (batch below number or serial below number), regardless of the settings of warehouse management parameters.</li>
+<li><em>Hide tracking dimension control</em> – The current menu item always hides the tracking dimension below location control (batch below number or serial below number), regardless of the setting of warehouse management parameters.</li>
+</ul>
+<p><strong>Note:</strong> This setting affects only menu items that process a supported work order type (currently only sales orders). Unsupported work order types (such as transfer orders and purchase orders) aren't affected.</p>
+</td>
 </tr>
 </tbody>
 </table>

@@ -5,7 +5,7 @@ author: rachel-profitt
 ms.author: raprofit
 ms.reviewer: kamaybac
 ms.search.form: 
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 06/07/2024
 ms.custom: 
   - bap-template

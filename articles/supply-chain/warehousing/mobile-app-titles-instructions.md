@@ -3,7 +3,7 @@ title: Customize step titles and instructions for the Warehouse Management mobil
 description: Learn how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage

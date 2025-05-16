@@ -3,7 +3,7 @@ title: Create a service template group
 description: Learn how you can use service template groups to sort and filter service templates, including a step-by-step process for creating service template groups.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/20/2018
 ms.custom:
 ms.reviewer: kamaybac

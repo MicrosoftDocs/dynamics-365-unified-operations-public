@@ -3,7 +3,7 @@ title: Dual-write FAQ
 description: Read answers to frequently asked questions about dual-write including questions about dual-write setup, administration, management, and mapping concepts between apps.
 author: sericks007
 ms.author: ramasri
-ms.topic: article
+ms.topic: faq
 ms.date: 05/20/2022
 ms.reviewer: johnmichalak
 audience: Developer

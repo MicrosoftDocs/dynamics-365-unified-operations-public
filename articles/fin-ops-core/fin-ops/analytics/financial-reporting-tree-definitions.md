@@ -3,7 +3,7 @@ title: Reporting tree definitions in financial reports
 description: Learn about reporting tree definitions. A reporting tree definition is a report component that defines the structure of an organization. 
 author: jinniew
 ms.author: jiwo
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/01/2021
 ms.reviewer: johnmichalak
 audience: Application User

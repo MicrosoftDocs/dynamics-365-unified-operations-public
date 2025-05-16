@@ -3,7 +3,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.20 (Au
 description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.20 with an outline on included features. 
 author: kamaybac
 ms.author: kamaybac
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 05/28/2024
 ms.custom:
   - bap-template

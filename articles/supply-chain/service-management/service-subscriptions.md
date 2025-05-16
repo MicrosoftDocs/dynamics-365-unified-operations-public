@@ -3,11 +3,12 @@ title: Service subscriptions
 description: Learn how you can create subscriptions from a project, from the Service subscriptions page, or by using a service subscription group.
 author: Henrikan
 ms.author: henrikan
-ms.topic: article
-ms.date: 02/19/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMASubscriptionTable
+ms.topic: how-to
+ms.date: 01/30/2025
+ms.custom: 
+  - bap-template
 ---
 
 # Service subscriptions

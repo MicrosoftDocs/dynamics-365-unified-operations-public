@@ -3,14 +3,14 @@ title: Architecture of Copilot in finance and operations apps
 description: Learn about the architecture of Copilot in finance and operations apps, including overviews of the Copilot interface and plugins.
 author: jaredha
 ms.author: jaredha
-ms.topic: conceptual
-ms.date: 11/25/2024
+ms.topic: article
+ms.date: 05/08/2025
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
 ms.search.region: Global
-ms.search.form:
+
 ---
 
 # Architecture of Copilot in finance and operations apps
@@ -29,11 +29,14 @@ The Copilot interface for the chat experience in finance and operations apps use
 
 [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) provides the central AI orchestration of the Copilot capabilities in finance and operations apps. When a prompt is entered in the Copilot chat panel, it's sent to Copilot Studio. Copilot Studio determines what the intent of the prompt is, and which topics or plugins should be invoked to provide a response. Copilot Studio then runs plugins, gets the required data, and provides output in natural language. This output is returned to the user in the Copilot interface. For more information about the architecture and execution of plugins in Copilot Studio, see [Microsoft Copilot Studio plugin architecture](/microsoft-copilot-studio/copilot-plugins-architecture).
 
-Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio. This chatbot is named **Copilot in Finance and Operation**. The chatbot is deployed as part of the Copilot in the finance and operations solution (msdyn\_FnoCopilot). For guidance about how to install the solution and chatbot in your environment, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
+Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio. This chatbot is named **Copilot for finance and operations apps**. The chatbot is deployed as part of the Copilot in the finance and operations solution (msdyn\_FnoCopilot). For guidance about how to install the solution and chatbot in your environment, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
+
+> [!NOTE]
+> [Generative orchestration](/microsoft-copilot-studio/advanced-generative-actions) isn't yet supported for the **Copilot for finance and operations apps** agent.
 
 ## Plugins
 
-Capabilities are added to Copilot in finance and operations apps by adding *plugins* to the **Copilot in Finance and Operation** chatbot. A plugin is a reusable piece of code that can perform a specific task or provide specific functionality for Copilot. The plugin provides the definition of the capability. For example, it specifies the data to retrieve, the queries to run, the workflows to run, and the external systems to connect to. It also specifies any other instructions that are needed to construct the response to the prompt that invoked the plugin. 
+Capabilities are added to Copilot in finance and operations apps by adding *plugins* to the **Copilot for finance and operations apps** chatbot. A plugin is a reusable piece of code that can perform a specific task or provide specific functionality for Copilot. The plugin provides the definition of the capability. For example, it specifies the data to retrieve, the queries to run, the workflows to run, and the external systems to connect to. It also specifies any other instructions that are needed to construct the response to the prompt that invoked the plugin. 
 
 Conceptually, a plugin is something that Copilot knows how to do. For example, you want Copilot to be able to get customer balances. In this case, create a plugin that describes the capability, and that knows which API to call to get the information that must be returned to the user.
 

@@ -3,7 +3,7 @@ title: Accounting distributions
 description: Learn about accounting distributions and describes available processing options, including an overview on distribute amounts.
 author: sunfzam
 ms.author: twheeloc
-ms.topic: article
+ms.topic: concept-article
 ms.date: 06/13/2023
 ms.reviewer: twheeloc
 audience: Application User

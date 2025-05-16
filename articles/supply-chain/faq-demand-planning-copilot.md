@@ -3,7 +3,7 @@ title: Responsible AI FAQ for Analyze demand plans with Copilot
 description: Access answers to frequently asked questions about the AI technology that's used in the "Analyze demand plans with Copilot" feature for Demand planning.
 author: AndersEvenGirke
 ms.author: aevengir
-ms.topic: article
+ms.topic: faq
 ms.date: 11/15/2024
 ms.custom:
   - responsible-ai-faqs
@@ -59,6 +59,8 @@ As of January 2025, AI-generated results are available in all languages supporte
 
 AI-generated content should not be used without manual review or supervision.
 
+Summaries and terminology provided by Copilot in languages other than English may be less accurate than their English language versions.
+
 ## What operational factors and settings allow for effective and responsible use of Analyze demand plans with Copilot?
 
 When you use this feature, follow these recommendations:
@@ -66,7 +68,7 @@ When you use this feature, follow these recommendations:
 - Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Before you make decisions about modifications to the demand plan, always review and study the generated response, and compare it with actual demand plan data.
 
-### Related information
+## Related information
 
 - [Analyze demand plans with Copilot](demand-planning/demand-planning-copilot.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

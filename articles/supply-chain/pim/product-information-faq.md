@@ -3,7 +3,7 @@ title: Product information management FAQ
 description: Access answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: faq
 ms.date: 06/03/2021
 ms.reviewer: kamaybac
 ms.search.form:

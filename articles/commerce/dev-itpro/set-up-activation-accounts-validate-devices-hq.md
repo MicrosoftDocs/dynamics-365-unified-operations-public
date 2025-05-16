@@ -3,7 +3,7 @@ title: Manage activation accounts and validate devices
 description: This article explains how an IT Pro can set up Commerce activation accounts for workers to activate Store Commerce devices.
 author: josaw1
 ms.date: 02/03/2023
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

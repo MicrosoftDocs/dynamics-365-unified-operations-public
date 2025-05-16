@@ -3,7 +3,7 @@ title: Tax jurisdiction parameters for cash discount calculation setup
 description: Learn about the setup of cash discount calculation options, including a table that outlines setup for various parameters.
 author: epodkolzina
 ms.author: epodkolzina
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.custom: 
   - bap-template
 ms.date: 07/01/2024

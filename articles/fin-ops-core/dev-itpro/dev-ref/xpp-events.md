@@ -3,7 +3,7 @@ title: Events and delegates
 description: Learn aboutevent terminology and keywords in X++, including a table that outlines descriptions for various terms used to describe event metaphors.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: language-reference
 ms.date: 08/27/2021
 ms.reviewer: johnmichalak
 audience: Developer

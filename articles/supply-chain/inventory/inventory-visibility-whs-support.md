@@ -3,7 +3,7 @@ title: Inventory Visibility support for WMS items
 description: Learn about Inventory Visibility support for items that are enabled for warehouse management processes (WMS items) with an outline on the scope of the feature.
 author: yufei-huang
 ms.author: yufeihuang
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/04/2022
 ms.reviewer: kamaybac
 ms.search.form:
@@ -108,7 +108,7 @@ The results from queries for WMS items are essentially the same as the results f
 
 All other physical measures are calculated just as they are when the WMS feature for Inventory Visibility is disabled.
 
-For detailed information about how on-hand calculations for WMS items work, see the [Reservations in Warehouse management](https://www.microsoft.com/download/details.aspx?id=43284) white paper.
+You can find detailed information about how on-hand calculations for WMS items work in [Reservations in Warehouse management](../warehousing/reservations-in-warehouse-management.md).
 
 ## On-hand list view and data entity for WMS items
 

@@ -3,7 +3,7 @@ title: Set up hazardous materials
 description: Learn how to set up the data that is required to classify items as hazardous materials, including an outline on hazardous material regulations.
 author: sgmsft
 ms.author: shwgarg
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/10/2020
 ms.custom:
 ms.reviewer: kamaybac

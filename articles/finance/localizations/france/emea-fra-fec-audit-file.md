@@ -3,7 +3,7 @@ title: Audit file for France (Fichier des écritures comptables, FEC)
 description: Learn about the Fichier des écritures comptables (FEC) audit file, and links to topics that explain how to set up an FEC in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.topic: conceptual
+ms.topic: article
 ms.custom: 
   - bap-template
 ms.date: 07/11/2024

@@ -3,7 +3,7 @@ title: Finance and operations storage account security updates
 description: This article describes the latest security enhancements in the finance and operations storage account.
 author: mansijainms
 ms.author: mansijain 
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 01/15/2025

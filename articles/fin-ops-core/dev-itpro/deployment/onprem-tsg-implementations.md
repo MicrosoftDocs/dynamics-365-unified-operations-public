@@ -3,7 +3,7 @@ title: Scripts for resolving issues in on-premises environments
 description: Learn scripts that you can use to resolve issues in on-premises environments, including PowerShell scripts for script execution preparation.
 author: faix
 ms.author: osfaixat
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 12/02/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak

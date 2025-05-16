@@ -3,7 +3,7 @@ title: Install assets on functional locations
 description: Learn how to install assets on functional locations in Asset Management, including an outline and process for installing asset structures on functional locations.
 author: jodahlMSFT
 ms.author: jodahl
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 06/25/2019
 ms.reviewer: kamaybac
 ms.search.form: EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
