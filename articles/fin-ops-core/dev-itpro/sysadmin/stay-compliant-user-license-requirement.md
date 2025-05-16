@@ -1,10 +1,10 @@
 ---
 title: Stay compliant with user licensing requirements
 description: Learn about how you can stay compliant with the user licensing requirements for finance and operations apps per role.
-author: VolkerDeuss
-ms.author: ceian-msft
+author: ianceicys-msft
+ms.author: ceian
 ms.topic: how-to
-ms.date: 12/26/2024
+ms.date: 05/16/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -34,7 +34,7 @@ A licensing requirement is assigned to every securable object or resource that's
 
 The rest of this article describes the different tools that you can use to ensure that the actual licensing complies with the expected licensing requirements. The first thing to verify is that the user roles have the expected licensing requirements and are assigned to the appropriate users. 
 
-To understand proper security role to duty and privilege mapping that aligns to Microsoft’s licensing policy and to understand the licenses you need, see [User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview).
+For more information about security role to duty and privilege mapping that aligns to Microsoft’s licensing policy and to understand the licenses you need, see [User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview).
 
 ## Available and assigned licenses
 
