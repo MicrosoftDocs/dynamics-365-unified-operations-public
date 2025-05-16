@@ -2,7 +2,7 @@
 title: Check out faster with optimized payment flows (preview)
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/25/2025
+ms.date: 05/16/2025
 ms.topic: overview
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -27,7 +27,7 @@ Before you can transition to the upgraded payment flow experience, the following
 
 - You must be running Commerce version 10.0.40 or later.
 - You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**).
-- By default, the new payment experiences are enabled for all the stores, but to enable the admins to try the new payment experience in pilot stores, starting **10.0.44**, the admins can turn ON a new configuration named **"Disable the unified payments experience"** from the **POS functionality profiles**. Thus,  new payment experience will only be used for those stores for which this configuration is turned OFF. Once the admins are satisfied with the new payment experiences, then they can turn this configuration OFF for all the stores and hence enable the new payment experiences for all the stores.
+- The new payment experiences are enabled by default for all stores. To enable administrators to try the new payment experience only in pilot stores, starting in Commerce version 10.0.44 administrators can turn on the **Disable the unified payments experience** setting from **POS functionality profiles**. When the **Disable the unified payments experience** setting is turned on, the new payment experience is only enabled for stores that have this setting turned off. Once administrators are satisfied with the new payment experiences, they can turn this configuration off for all the stores to enable the new payment experiences for all stores.
 
 ## Feature availability
 
