@@ -26,7 +26,8 @@ The Dynamics 365 Commerce team is modernizing the POS user interface (UI) by tra
 Before you can transition to the upgraded payment flow experience, the following prerequisites must be met:
 
 - You must be running Commerce version 10.0.40 or later.
-- You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**). 
+- You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**).
+- By default, the new payment experiences are enabled for all the stores, but to enable the admins to try the new payment experience in pilot stores, starting **10.0.44**, the admins can turn ON a new configuration named **"Disable the unified payments experience"** from the **POS functionality profiles**. Thus,  new payment experience will only be used for those stores for which this configuration is turned OFF. Once the admins are satisfied with the new payment experiences, then they can turn this configuration OFF for all the stores and hence enable the new payment experiences for all the stores.
 
 ## Feature availability
 
