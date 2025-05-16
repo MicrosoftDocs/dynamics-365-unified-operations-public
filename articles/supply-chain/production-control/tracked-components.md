@@ -45,16 +45,15 @@ There are following prerequisites for using the tracked components functionality
 To create a tracked components policy, follow these steps.
 
 1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**
-1. 
+1. Use the buttons in the Action Pan to add a new policy or edit an existing one.
+1. For the new or selected policy, set the following fields.
 
-
-You need to enable the products that you want to track using the tracked components capabilities. There are following prerequisites for 
-
-Prerequisites
-
-registering tracked component information. Follow t
-
-
+    - **Name**
+    - **Description**
+    - **Use tracked components** - Set this option to *Yes* to enable registering tracked information for products associated this policy.
+    - **Check pre-allocation for product** - Set this option to *Yes* to enable validation of registered serial or batch numbers for finished goods during the registration of tracked component information.
+    - **Check for pre-allocation for components** - Set this option to *Yes* to enable validation of registered serial or batch numbers for components during the registration of tracked component information.
+    - **Serial number matching limit** - Set this option to *Yes* to ensure that the number of component serial numbers matched to a product serial number does not exceed the planned quantity on the production order bill of material line. If the number of matched components surpasses the planned amount, the system will block the match to prevent over allocation.
 
 ## Register tracked components for finished items
 
