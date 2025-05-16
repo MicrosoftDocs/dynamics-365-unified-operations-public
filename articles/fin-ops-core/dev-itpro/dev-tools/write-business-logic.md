@@ -6,7 +6,7 @@ ms.author: pvillads
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/13/2024
+ms.date: 05/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The primary goal of this tutorial is to illustrate the interoperability between C# and X++. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 
-In this tutorial, you’ll write business logic in C\# source code and in X++ source code. You'll get experience with the following:
+You get experience with the following:
 
 -   New tools in Visual Studio.
 -   The handling of events in C\#.
@@ -29,23 +29,23 @@ In this tutorial, you’ll write business logic in C\# source code and in X++ so
 This tutorial requires that you access the environment using Remote Desktop, and be provisioned as an administrator on the instance. 
 
 > [!NOTE]
-> Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** check box is selected. If this option is selected, it must be changed prior to running the lab. If not, the debugger will be unable to debug the C# code. In Visual Studio, click **Extensions** &gt; **Options** &gt; **Dynamics 365...** &gt; **Options** &gt **Debugging**, and clear the **Load symbols only for items in the solution** check box.
+> Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** checkbox is selected. If this option is selected, it must be changed before running the lab. If not, the debugger isn't able to debug the C# code. In Visual Studio, click **Extensions** &gt; **Options** &gt; **Dynamics 365...** &gt; **Options** &gt **Debugging**, and clear the **Load symbols only for items in the solution** checkbox.
 
 ## Scenario
-Management at the the Fleet Management rental company has noticed that too many cars have been rented to drivers who have a history of unsafe driving habits. Therefore, the company needs to check driving records from external sources prior to completing a rental. Upper management has decided to subscribe to a service that is hosted by the Department of Transportation (DOT), which is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easier. The obvious choice would be to leverage Visual Studio to write the code. However, in this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we will provide a mock implementation. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++, not to provide a real-world solution.
+Management at the the Fleet Management rental company has noticed that too many cars have been rented to drivers who have a history of unsafe driving habits. Therefore, the company needs to check driving records from external sources before completing a rental. Upper management decided to subscribe to a service that is hosted by the Department of Transportation (DOT). This is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easier. In this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we provide a mock implementation. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++, not to provide a real-world solution.
 
 ## Create a C\# class library
-You can create a reference from a project to the C\# class library, or to any other type of C\# project that generates an assembly. Such references affect the build order. The C\# project is built before the project that references and depends on it. The infrastructure understands the references, and will make sure that the C\# assemblies are deployed correctly to the cloud before execution. Follow these steps to create a C\# class library in the Fleet Management solution:
+You can create a reference from a project to the C\# class library, or to any other type of C\# project that generates an assembly. Such references affect the build order. The C\# project is built before the project that references and depends on it. The infrastructure understands the references, and makes sure that the C\# assemblies are deployed correctly to the cloud before execution. Follow these steps to create a C\# class library in the Fleet Management solution:
 
 1.  In Visual Studio, click **File** &gt; **Open project/solution**.
 2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter**: *C:\\users\\public\\desktop\\FleetManagement*.
-3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
+3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file isn't on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 
     [![OpenProject\_LinqC.](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
 
-4.  Right-click the **FleetManagement** solution, and then click **Add** &gt; **New Project**. The **Add New Project** dialog is displayed.
+4.  Right-click the **FleetManagement** solution, and click **Add** &gt; **New Project**. The **Add New Project** dialog is displayed.
 5.  In the left pane, click **Visual C\#**, and then in the middle pane, click **Class Library**.
-6.  At the bottom in the **Name** text box, type the name **DriversLicenseEvaluator**.
+6.  At the bottom, in the **Name** text box, type the name **DriversLicenseEvaluator**.
 7.  In the **Location** text box, type the following directory path: *C:\\users\\public\\desktop\\FleetManagement*.
 8.  Verify that your project is set to “.NET Framework 4.5” in the drop-down list at the top.
 9.  Click **OK** to create the project. 
