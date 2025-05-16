@@ -96,7 +96,7 @@ The Project migration manager performs several validations:
 - Migration can be done for cloud implementation projects, and partner projects. 
 - A migration can be deleted or canceled only if it hasn't yet begun.
 - Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
-- Migration will not be possible if there is e-Commerce deployed. 
+- Migration is not possible if you have e-commerce deployed in a geography that is different from the target. To address this, you can re-create e-commerce in the target geography and move the content. Alternatively, if your business requires e-commerce to remain in a geography different from the target, you can back-up and temporarily remove e-commerce. After the project migration, you can restore e-commerce in the same geography as before. 
 
 ### Before the migration begins
 
