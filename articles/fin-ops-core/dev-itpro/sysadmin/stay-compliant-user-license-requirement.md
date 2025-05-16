@@ -2,7 +2,7 @@
 title: Stay compliant with user licensing requirements
 description: Learn about how you can stay compliant with the user licensing requirements for finance and operations apps per role.
 author: VolkerDeuss
-ms.author: gned
+ms.author: ceian-msft
 ms.topic: how-to
 ms.date: 12/26/2024
 ms.custom: 
