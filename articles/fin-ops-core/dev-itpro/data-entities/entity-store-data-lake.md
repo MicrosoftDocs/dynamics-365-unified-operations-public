@@ -84,7 +84,7 @@ The following sections describe each task in more detail.
 
 3. In the **Advanced options** dialog box, you see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by finance and operations apps with services such as Power BI data flows. 
 4. Select **Review and create**. When the deployment is completed, the new resource are shown in the Azure portal.
-5. Select the resource, and then select **Settings** \> **Access keys**.
+5. Select the resource, and then select **Security + networking** \> **Access keys**.
 6. Make a note of the connection string value, because you have to provide it later.
 
 ### Create a Key Vault and a secret
