@@ -1,10 +1,10 @@
 ---
-title: Agent management (preview)
+title: Set up Agent management (preview)
 description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
 ms.topic: conceptual
-ms.date: 04/14/2025
+ms.date: 05/19/2025
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -12,9 +12,10 @@ ms.collection:
  - bap-ai-copilot
 ---
 
-# Agent management (preview)
+# Set up Agent management (preview)
 
 [!include [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes the **Agent management** feature in Microsoft Dynamics 365 finance and operations apps.
 
