@@ -18,7 +18,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
+This article describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 
 ## Navigation concept overview
 
@@ -36,7 +36,7 @@ The dashboard page, navigation pane, and workspaces complement each other to imp
 
 A dashboard page is typically used as a landing page or navigation hub. These pages can reflect business domains or landing pages for users.
 
-Finance and operations apps contain several out-of-the box dashboards. Some of these qualify to be set as the [initial page](../../fin-ops/get-started/set-users-initial-page.md) for a user. By default this is the [default dashboard](../../fin-ops/get-started/default-dashboard.md). The default dashboard contains tiles that show important details from the system. You can return to the dashboard at any time by selecting the **Home** icon in the left-side navigation bar.
+Finance and operations apps contain several out-of-the-box dashboards. Some of these qualify to be set as the [initial page](../../fin-ops/get-started/set-users-initial-page.md) for a user. By default this is the [default dashboard](../../fin-ops/get-started/default-dashboard.md). The default dashboard contains tiles that show important details from the system. You can return to the dashboard at any time by selecting the **Home** icon in the left-side navigation bar.
 
 The dashboard primarily consists of a large section of workspace tiles. There might also be a getting-started tool or introduction of new experience concepts. The dashboard's workspace tile section is built from a menu structure that has its root in the *NavPaneMenu* menu. The menu is modified by a set of menu extensions, and those extensions contain one or more tile references that correspond to the tiles that users see in that section.
 
@@ -44,7 +44,7 @@ The dashboard primarily consists of a large section of workspace tiles. There mi
 
 The left-side expandable navigation pane provides access to the home page, workspaces, modules, recently opened pages, and user-defined favorites. The user can expand the navigation pane by selecting any of the icons in the collapsed navigation pane.
 
-The *initial page* is the page that opens by default when the user open the finance and operations app. It typically is the *Default dashboard* or the [*Immersive Home*](../../fin-ops/copilot/immersive-home.md). Users can customize the **Initial Page** setting on the **User options** page (available from the **Settings** (gear icon) menu in the upper-right corner of each page).
+The *initial page* is the page that opens by default when the user opens the finance and operations app. It typically is the *Default dashboard* or the [*Immersive Home*](../../fin-ops/copilot/immersive-home.md). Users can customize the **Initial Page** setting on the **User options** page (available from the **Settings** (gear icon) menu in the upper-right corner of each page).
 
 The navigation pane consists of four collapsible sections. The **Favorites** section provides quick access to the list of pages the user has explicitly marked as a favorite. Marking a page as a favorite is accomplished by clicking the star icon next to the page in the navigation pane. The **Recent** section lists the pages the user has most recently visited. The set of workspaces a user has access to is conveniently shown in the **Workspaces** section. Finally, the **Modules** section provides the full list of modules. Clicking on a module will open the right side of the navigation pane, where the user can navigate to the desired page in that module.  
 
