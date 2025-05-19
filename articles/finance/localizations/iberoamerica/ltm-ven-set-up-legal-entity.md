@@ -13,7 +13,7 @@ ms.author: v-federicohe
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article explains how to set up a legal entity and tax information for a company that is in Venezuela by using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the LATAM configuration.
+This article explains how to set up a legal entity and tax information for a company in Venezuela by using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company. It contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 
 ## Prerequisites
 
@@ -42,10 +42,11 @@ To set up tax information, follow these steps.
 1. In the **Format** field, enter **X-XXXXXXXX-X** for RIF. Learn more in [Tax ID types for Latin America](ltm-core-tax-id-type.md).
 1. Go to **Organization administration** \> **Global address book** \> **Addresses**, select the country or region where the company is set up, and then select **LATAM** to add the RIF-J tax ID type. Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**, and select **New** to create a record that represents organizations.
-1. In the **Type** field, enter **PJD** for organizations located in Venezuela. Then add the tax ID type and the document class letter that you created. Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, in the **LATAM** section, configure the following tax and legal information for the legal entity:
+1. In the **Type** field, enter **PJD** for organizations that are located in Venezuela. Then add the tax ID type and the document class letter that you created. Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md).
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In the **LATAM** section, configure the following tax and legal information for the legal entity:
 
-    - In the **Taxpayer type field**, select **PJD** to represent an organization.
+    - In the **Taxpayer type** field, select **PJD** to represent an organization.
     - In the **Based in country/region** field, select **Venezuela**.
     - In the **Country document type** field, select **RIF-J**.
     - Complete the country document number, including the tax ID number of the company.
