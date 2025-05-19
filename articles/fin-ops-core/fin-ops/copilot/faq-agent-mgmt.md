@@ -18,7 +18,7 @@ ms.reviewer: kamaybac
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-An AI system includes not only the technology but also the people who use it, the people who are affected by it, and the environment where it's deployed. This responsible AI FAQ is intended to help you understand how the Agent management feature's AI technology works, how system owners and users can influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment.
+An AI system includes not only the technology but also the people who use it, the people who are affected by it, and the environment where it's deployed. This responsible AI FAQ is intended to help you understand how the Agent management feature's AI technology works, and how system owners and users can influence system performance and behavior. In addition, it helps you understand the importance of thinking about the whole system, including the technology, the people, and the environment.
 
 ## What is Agent management?
 
