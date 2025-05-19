@@ -1,10 +1,10 @@
 ---
 title: X++ date runtime functions
 description: Learn about the date run-time functions, including the dyName, dayOfMth, dayOfWk, and dayOfYr functions, with parameters, return values, and examples.
-author: josaw1
-ms.author: josaw
+author: pvillads
+ms.author: pvillads
 ms.topic: language-reference
-ms.date: 11/03/2017
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
