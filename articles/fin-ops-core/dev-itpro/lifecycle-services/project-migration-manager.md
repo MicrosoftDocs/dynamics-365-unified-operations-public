@@ -55,7 +55,7 @@ The following table shows the data that can be transferred between instances and
 | Manual | Asset library | You'll be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
 | Manual | Shared asset library | The shared asset library is different in each geo. For a package to be globally available, it has to be uploaded to each geo's shared asset library. |
 | Manual | Self-service environments | Sandbox and production environments remain in their current deployed region and aren't affected by the Project migration manager. They'll have the same environment IDs but are in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
-| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project is locked but you are still allowed to delete cloud-hosted environments from the source to clean up the older project. |
+| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project is locked but you're still allowed to delete cloud-hosted environments from the source to clean up the older project. |
 | Manual | Project users | Remaining users must be added manually by project owners. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics are generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated. Upgrade analysis data can't be exported. |
@@ -116,11 +116,11 @@ The Lifecycle Services project and other information must be updated in the Sand
 
 ### After the migration
 
-After the migration is completed, you'll receive an email stating the success of the migration, or the reason for the failure. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. Make sure to update the release pipeline to newly created Lifecycle Services project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
+After the migration is completed, you receive an email stating the success of the migration, or the reason for the failure. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. Make sure to update the release pipeline to newly created Lifecycle Services project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
 You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
 
-The source project is then locked after successful migration, and data is in read-only mode. If you still have cloud-hosted environments deployed on the source project, you are still allowed to deallocate and delete them despite the source project being locked. This is to allow for cleaning up any resources as required on the source project.
+The source project is then locked after successful migration, and data is in read-only mode. If you still have cloud-hosted environments deployed on the source project, you're still allowed to deallocate and delete them despite the source project being locked. This is to allow for cleaning up any resources as required on the source project.
 
 Microsoft stored the source project for up to one year until it's automatically deleted. You can delete the source project sooner to remove the data from the source geography.
 
@@ -142,7 +142,7 @@ The software doesn't support this option. You have to open a support ticket so t
 
 ### What happens if my migration is canceled or rolled back?
 
-Your source project is unlocked, and you'll receive an email notification that the migration wasn't successfully completed. Open a support ticket, and we'll help you.
+Your source project is unlocked, and you receive an email notification that the migration wasn't successfully completed. Open a support ticket, and we'll help you.
 
 ### I'm currently a First Release customer. Am I still a First Release customer after migration?
 
