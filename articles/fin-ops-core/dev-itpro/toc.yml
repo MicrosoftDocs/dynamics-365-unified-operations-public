@@ -2353,7 +2353,7 @@ items:
           href: copilot/extend-copilot.md
         - name: Architecture of Copilot for finance and operations
           href: copilot/copilot-architecture.md
-        - name: Model Context Protocol for finance and operations
+        - name: Use Model Context Protocol for finance and operations
           href: copilot/copilot-mcp.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
