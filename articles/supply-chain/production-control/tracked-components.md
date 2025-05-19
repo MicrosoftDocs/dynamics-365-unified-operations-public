@@ -32,28 +32,28 @@ Before you can use the features that are described in this article, your system 
 To enable registering tracked component information in production processes, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
-1. Select tab **Bills of materials**
-1. Set field **Enable tracked components** to *Yes*
+1. Open the **Bills of materials** tab.
+1. Set **Enable tracked components** to *Yes*.
 
 ## Enable registration of tracked components on products
 
-There are following prerequisites for using the tracked components functionality for a a product or its components.
+To use tracked components functionality for a product or its components, the following conditions must be met:
 
-- The product needs to be defined as serial or batch-controlled.
-- The product must be associated a tracked components policy.
+- The product must be defined as serial or batch-controlled.
+- The product must be associated with a tracked components policy.
 
 To create a tracked components policy, follow these steps.
 
 1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**
-1. Use the buttons in the Action Pan to add a new policy or edit an existing one.
+1. Use the buttons on the Action Pane to add a new policy or edit an existing one.
 1. For the new or selected policy, set the following fields.
 
-    - **Name**
-    - **Description**
-    - **Use tracked components** - Set this option to *Yes* to enable registering tracked information for products associated this policy.
-    - **Check pre-allocation for product** - Set this option to *Yes* to enable validation of registered serial or batch numbers for finished goods during the registration of tracked component information.
-    - **Check for pre-allocation for components** - Set this option to *Yes* to enable validation of registered serial or batch numbers for components during the registration of tracked component information.
-    - **Serial number matching limit** - Set this option to *Yes* to ensure that the number of component serial numbers matched to a product serial number does not exceed the planned quantity on the production order bill of material line. If the number of matched components surpasses the planned amount, the system will block the match to prevent over allocation.
+    - **Name** – Enter a name for the policy.
+    - **Description** – Enter a description for the policy.
+    - **Use tracked components** - Set to *Yes* to register tracked information for products associated with this policy.
+    - **Check pre-allocation for product** - Set this option to *Yes* to validate serial or batch numbers for finished goods when registering tracked component information.
+    - **Check for pre-allocation for components** - Set to *Yes* to validate serial or batch numbers for components when registering tracked component information.
+    - **Serial number matching limit** - Set to *Yes* to ensure that the number of component serial numbers matched to a product serial number doesn't exceed the planned quantity on the production order bill of material line. If the number of matched components surpasses the planned amount, the system blocks the match to prevent over allocation.
 
 ## Register tracked components for finished items
 
