@@ -1,8 +1,8 @@
 ---
 title: X++ syntax
 description: Learn about the syntax reference for X++, including a table that outlines descriptions for various reserved keywords.
-author: pvilladas
-ms.author: pvilladas
+author: pvillads
+ms.author: pvillads
 ms.topic: language-reference
 ms.date: 05/19/2025
 ms.reviewer: johnmichalak
