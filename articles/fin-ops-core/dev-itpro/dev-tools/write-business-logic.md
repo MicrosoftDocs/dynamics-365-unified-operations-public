@@ -1,6 +1,6 @@
 ---
 title: Write business logic by using C# and X++ source code
-description: This tutorial illustrates the interoperability between C# and X++. In this tutorial, you’ll write business logic in C# source code and in X++ source code.
+description: This tutorial illustrates the interoperability between C# and X++. In this tutorial, you write business logic in C# source code and in X++ source code.
 author: pvillads
 ms.author: pvillads
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The primary goal of this tutorial is to illustrate the interoperability between C# and X++. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
+The primary goal of this tutorial is to illustrate the interoperability between C# and X++. In this tutorial, you write business logic in C# source code and in X++ source code. 
 
 You get experience with the following:
 
@@ -29,17 +29,17 @@ You get experience with the following:
 This tutorial requires that you access the environment using Remote Desktop, and be provisioned as an administrator on the instance. 
 
 > [!NOTE]
-> Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** checkbox is selected. If this option is selected, it must be changed before running the lab. If not, the debugger isn't able to debug the C# code. In Visual Studio, click **Extensions** &gt; **Options** &gt; **Dynamics 365...** &gt; **Options** &gt **Debugging**, and clear the **Load symbols only for items in the solution** checkbox.
+> Debugging support for the C\# project doesn't work if the **Load symbols only for items in the solution** checkbox is selected. If this option is selected, it must be changed before running the lab. If not, the debugger isn't able to debug the C# code. In Visual Studio, click **Extensions** &gt; **Options** &gt; **Dynamics 365...** &gt; **Options** &gt **Debugging**, and clear the **Load symbols only for items in the solution** checkbox.
 
 ## Scenario
-Management at the the Fleet Management rental company has noticed that too many cars have been rented to drivers who have a history of unsafe driving habits. Therefore, the company needs to check driving records from external sources before completing a rental. Upper management decided to subscribe to a service that is hosted by the Department of Transportation (DOT). This is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easier. In this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we provide a mock implementation. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++, not to provide a real-world solution.
+Management at the Fleet Management rental company has noticed that too many cars have been rented to drivers who have a history of unsafe driving habits. Therefore, the company needs to check driving records from external sources before completing a rental. Upper management decided to subscribe to a service that is hosted by the Department of Transportation (DOT). This is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easier. In this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we provide a mock implementation. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++, not to provide a real-world solution.
 
 ## Create a C\# class library
 You can create a reference from a project to the C\# class library, or to any other type of C\# project that generates an assembly. Such references affect the build order. The C\# project is built before the project that references and depends on it. The infrastructure understands the references, and makes sure that the C\# assemblies are deployed correctly to the cloud before execution. Follow these steps to create a C\# class library in the Fleet Management solution:
 
 1.  In Visual Studio, click **File** &gt; **Open project/solution**.
 2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter**: *C:\\users\\public\\desktop\\FleetManagement*.
-3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file isn't on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
+3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file isn't on your computer, to create the file see [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 
     [![OpenProject\_LinqC.](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
 
@@ -60,7 +60,7 @@ You can create a reference from a project to the C\# class library, or to any ot
 ## Write a C\# method named CheckDriversLicense
 In this section, you add C\# code for a method named CheckDriversLicense to validate the driver’s license. To do this, the method must retrieve the driver’s license number, which is stored in the customer table. The method is given the RecId value for the customer record that contains the information required by the method. Your C\# code uses the LINQ provider to look up the customer record from the customer table. 
 
-1.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Add these assemblies from the bin folder under the PackagesLocalDirectory folder for you application version:
+1.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Add these assemblies from the bin folder under the PackagesLocalDirectory folder for your application version:
     -   Microsoft.Dynamics.AX.Xpp.Support.dll
     -   Microsoft.Dynamics.AX.Data.Core.dll
 
@@ -143,14 +143,15 @@ In this section, you add C\# code for a method named CheckDriversLicense to vali
 
 ### Understand the LINQ code
 
-Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](developer-home-page.md), so only the basics are described below.
+Before proceeding with more C\# code, verify that you understand the LINQ code you just added. For more details about LINQ, see [Technical Concepts Guide](developer-home-page.md). 
+The basics are described below.
 
 -   First, a *provider* is created. It provides access to all the tables.
 -   Next, a *collection* of all customers is created. The customer of interest is retrieved from this collection.
 -   Then, a *query* is created with a where clause that designates the requested customer by its **RecId**.
 -   The call to the FirstOrDefault method forces execution of the query.
 -   The method assigns the single matching customer to the customer variable. (Null is assigned if there is no record in the customer database with the provided RecId value.)
--   Finally, the customer data is tested to see if the associated driver's license is valid. (The toy example checks if the license contain "89", whereas real-world solutions would call an external service.)
+-   Finally, the customer data is tested to see if the associated driver's license is valid. (The toy example checks if the license contains "89", whereas real-world solutions would call an external service.)
 
 ## Handle the event when a record is added
 The following subsections provide the following:
@@ -161,7 +162,7 @@ The following subsections provide the following:
 
 ### Preparatory overview
 
-When an attempt is made to add a record to a table, the OnValidateWrite event is raised before the record is persisted in the database. You want your CheckDriversLicense method to be called each time on the OnValidateWrite event is raised for the FMRental table so that it can pass judgement on the customer's license number. To do this, you now need to write a C\# method that is invoked by the event, and which calls your checkDriversLicense method. In other words, you need to write an event handler that calls your CheckDriversLicense method. The event handler method receives a parameter of type *DataEventArgs*. The event handler can set a value in the DataEventArgs structure to accept or reject the record. After you write your event handler method, you connect it to the event by assigning, or adding it to the OnValidatedWrite delegate that is a member of the FMRental table. You write this assignment in the init method of the data source of the FMRental form. 
+When an attempt is made to add a record to a table, the OnValidateWrite event is raised before the record is persisted in the database. You want your CheckDriversLicense method to be called each time on the OnValidateWrite event is raised for the FMRental table so that it can pass judgement on the customer's license number. To do this, you need to write a C\# method that is invoked by the event, and which calls your checkDriversLicense method. In other words, you need to write an event handler that calls your CheckDriversLicense method. The event handler method receives a parameter of type *DataEventArgs*. The event handler can set a value in the DataEventArgs structure to accept or reject the record. After you write your event handler method, you connect it to the event by assigning, or adding it to the OnValidatedWrite delegate that is a member of the FMRental table. You write this assignment in the init method of the data source of the FMRental form. 
 
 This assignment to a delegate might seem odd. After all, we're modifying existing code (FMRental) to add handlers, which contradicts the main value proposition of loose coupling that eventing is supposed to offer. If this were done in X++, we would use the SubscribesTo attribute to wire up the event handler to the event, as shown in the following example:
 
@@ -212,13 +213,13 @@ Create a reference from the X++ project named **FleetManagement Migrated** to th
 
     ![AddReference\_LinqC.](./media/addreference_linqc1.png)
 
-2.  Under the FleetManagement Migrated project, expand the **References** node, and there you see new reference to the **DriversLicenseEvaluator** project.
+2.  Under the FleetManagement migrated project, expand the **References** node, and there you see new reference to the **DriversLicenseEvaluator** project.
 
     ![SolutionExplorerReferences\_LinqC.](./media/solutionexplorerreferences_linqc2.png)
 
 #### Build sequence
 
-Your C\# DriversLicenseEvaluator project will be built before the FleetManagement Migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
+Your C\# DriversLicenseEvaluator project is built before the FleetManagement migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
 
 ![ProjectDependencies1\_LinqC.](./media/projectdependencies1_linqc2.png)
 
@@ -238,7 +239,7 @@ Your C\# DriversLicenseEvaluator project will be built before the FleetManagemen
         (DriversLicenseEvaluator.DriversLicenseChecker::OnValidatedWriteHandler);
     ```
 
-7.  Click to save, and then build the entire solution.
+7.  Click **Save**, and then build the entire solution.
 
 ## Final test
 In this section, you set breakpoints and run the Fleet application under the Visual Studio debugger. This enables you to prove the following:
@@ -256,7 +257,7 @@ In this section, you set breakpoints and run the Fleet application under the Vis
     var result = CheckDriversLicense(rentalTable.Customer);
     ```
     
-4.  Set a breakpoint on that line of code. You do this by clicking in the left margin at that line. A red dot displays when the breakpoint is set.
+4.  Set a breakpoint on that line of code. Click in the left margin at that line. A red dot displays when the breakpoint is set.
 5.  In the CheckDriversLicense method, set another breakpoint at the following line.
 
     ```csharp
@@ -264,7 +265,7 @@ In this section, you set breakpoints and run the Fleet application under the Vis
     ```
 ### Run the test
 
-For this test, we'll be debugging the C\# code that we've written. To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C\# code. Go to **Dynamics 365 &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** check box is not selected. 
+For this test, we are debugging the C\# code that we've written. To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C\# code. Go to **Dynamics 365 &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** checkbox isn't selected. 
 
 ![Options\_LinqC.](./media/options_linqc2.png)
 
