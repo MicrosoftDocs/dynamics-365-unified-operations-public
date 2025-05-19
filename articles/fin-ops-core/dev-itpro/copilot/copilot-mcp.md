@@ -1,6 +1,6 @@
 ---
 title: Use Model Context Protocol for finance and operations apps
-description: Leanr about how to use a Model Context Protocol server to create and extend agents for Dynamics 365 finance and operations apps
+description: Learn about how to use a Model Context Protocol server to create and extend agents for Dynamics 365 finance and operations apps
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
