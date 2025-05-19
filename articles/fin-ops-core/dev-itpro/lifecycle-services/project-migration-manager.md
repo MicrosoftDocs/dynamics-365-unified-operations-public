@@ -4,12 +4,10 @@ description: Learn about how to use the Project migration manager to move your p
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 05/10/2023
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
-audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-09-30
-ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ---
@@ -96,7 +94,7 @@ The Project migration manager performs several validations:
 - Migration can be done for cloud implementation projects, and partner projects. 
 - A migration can be deleted or canceled only if it hasn't yet begun.
 - Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
-- Migration is not possible if you have e-commerce deployed in a geography that is different from the target. To address this, you can re-create e-commerce in the target geography and move the content. Alternatively, if your business requires e-commerce to remain in a geography different from the target, you can back-up and temporarily remove e-commerce. After the project migration, you can restore e-commerce in the same geography as before. 
+- Migration isn't possible if you have e-commerce deployed in a geography that is different from the target. To address this, you can re-create e-commerce in the target geography and move the content. Alternatively, if your business requires e-commerce to remain in a geography different from the target, you can back up and temporarily remove e-commerce. After the project migration, you can restore e-commerce in the same geography as before. 
 
 ### Before the migration begins
 
