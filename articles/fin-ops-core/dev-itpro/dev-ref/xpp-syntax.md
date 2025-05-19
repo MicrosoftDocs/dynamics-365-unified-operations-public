@@ -1,10 +1,10 @@
 ---
 title: X++ syntax
 description: Learn about the syntax reference for X++, including a table that outlines descriptions for various reserved keywords.
-author: johnmichalak
-ms.author: johnmichalak
+author: pvilladas
+ms.author: pvilladas
 ms.topic: language-reference
-ms.date: 10/03/2024
+ms.date: 05/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -147,7 +147,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>@</strong></td>
-<td>Escape of keywords. For example, <span class="code">var @str = 1<xref href="abstract" data-throw-if-not-resolved="False" data-raw-source="@abstract"></xref>;</span> would fail to compile without the <strong>@</strong> character that causes any string following it to be regarded as an identifier. It also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
+<td>Escape of keywords. For example, <span class="code">var @str = 1<xref href="abstract" data-throw-if-not-resolved="False" data-raw-source="@abstract"></xref>;</span> fails to compile without the <strong>@</strong> character that causes any string following it to be regarded as an identifier. It also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -162,7 +162,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>;</strong></td>
-<td>Terminates statements. Used in <code>for</code> loops or as a separator of initializer,  update and value check parts.</td>
+<td>Terminates statements. Used in <code>for</code> loops or as a separator of initializer, update, and value check parts.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -202,7 +202,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>&gt;&gt;</strong></td>
-<td>Bitwise Right Shift. This operator shifts bits in the left hand side by the amount on the right hand side. - Each shift effectively divides the number by 2^n, where n is the number of positions shifted.
+<td>Bitwise Right Shift. This operator shifts bits in the left hand side by the amount on the right hand side. Each shift effectively divides the number by 2^n, where n is the number of positions shifted.
 </td>
 <td>Arithmetic Operators</td>
 </tr>
@@ -223,7 +223,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>{</strong></td>
-<td>Starts a compound statements that may in turn contain zero or more statements. The compound statement ends with the closest matching &quot;<strong>}</strong>&quot;.</td>
+<td>Starts a compound statement that may in turn contain zero or more statements. The compound statement ends with the closest matching &quot;<strong>}</strong>&quot;.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -233,7 +233,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>abstract</strong></td>
-<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword - Only the classes derived from it can. An <strong>abstract</strong> method can't be called - Only methods that override it can. A table can also be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
+<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword - Only the classes derived from it can. An <strong>abstract</strong> method can't be called, only methods that override it can. A table can be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
 <td>Method Modifiers Table Inheritance Overview</td>
 </tr>
 <tr class="odd">
@@ -243,7 +243,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>as</strong></td>
-<td>Needed when you assign a base class variable to a derived class variable. For example, given a <code>Derived</code> class that <strong>extends</strong> a <code>Base</code> class, the statement <code>myDerived = myBase as Derived;</code> avoids a compiler error by using the <strong>as</strong> keyword. This keyword also applies when you assign a base table variable to a derived table variable. If the value (myBase) is not of the designated type (Derived) the expression returns null.</td>
+<td>Needed when you assign a base class variable to a derived class variable. For example, given a <code>Derived</code> class that <strong>extends</strong> a <code>Base</code> class, the statement <code>myDerived = myBase as Derived;</code> avoids a compiler error by using the <strong>as</strong> keyword. This keyword also applies when you assign a base table variable to a derived table variable. If the value (myBase) isn't of the designated type (Derived) the expression returns null.</td>
 <td>Expression Operators: Is and As for Inheritance</td>
 </tr>
 <tr class="odd">
@@ -253,7 +253,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>at</strong></td>
-<td>Specifies the position of a print window as part of a <code>print</code> statement. The print statement should not be used.</td>
+<td>Specifies the position of a print window as part of a <code>print</code> statement. The print statement shouldn't be used.</td>
 <td>Print Statements</td>
 </tr>
 <tr class="odd">
@@ -303,7 +303,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>client</strong></td>
-<td>Method modifier. These modifiers are not used anymore. All methods are executed on the server tier.</td>
+<td>Method modifier. These modifiers aren't used anymore. All methods are executed on the server tier.</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="odd">
@@ -358,7 +358,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>display</strong></td>
-<td>Method modifier. A <code>display</display> method is used to show calculated values in a form control. Unlike regular fields, these values are not stored in the database but are computed dynamically.
+<td>Method modifier. A <code>display</display> method is used to show calculated values in a form control. Unlike regular fields, these values aren't stored in the database but are computed dynamically.
 </td>
 <td>Method Modifiers</td>
 </tr>
@@ -405,7 +405,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>final</strong></td>
-<td>Class and method modifier. Specifies that this method cannot be overridden.</td>
+<td>Class and method modifier. Specifies that this method can't be overridden.</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="even">
@@ -435,7 +435,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>flush</strong></td>
-<td>Clears the entire table cache. This can be particularly useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations.</td>
+<td>Clears the entire table cache. This can be useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations.</td>
 <td>Set-based Caching</td>
 </tr>
 <tr class="even">
@@ -515,7 +515,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="odd">
 <td><strong>join</strong></td>
-<td>Tables are joined on columns common to both tables. You can generate a single result set based on multiple tables through the use of joins.</td>
+<td>Tables are joined on columns common to both tables. You can generate a single result set based on multiple tables by using joins.</td>
 <td>Select Statement Syntax</td>
 </tr>
 <tr class="even">
@@ -550,7 +550,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>noFetch</strong></td>
-<td>Indicates that no records are to be fetched at present.</td>
+<td>Indicates that no records are to be fetched now.</td>
 <td>Select Statement Syntax</td>
 </tr>
 <tr class="odd">
@@ -580,7 +580,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>pause</strong></td>
-<td>Halts the execution of a job. The user is asked to state whether execution should continue. You should not use this statement in production code.</td>
+<td>Halts the execution of a job. The user is asked to state whether execution should continue. You shouldn't use this statement in production code.</td>
 <td>Select Statements</td>
 </tr>
 <tr class="odd">
@@ -590,7 +590,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>print</strong></td>
-<td>Allows you to display output on the screen. You should not use this statement in production code.</td>
+<td>Allows you to display output on the screen. You shouldn't use this statement in production code.</td>
 <td>Print Statements</td>
 </tr>
 <tr class="odd">
@@ -640,7 +640,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>server</strong></td>
-<td>Method modifier. This modifier is ignored and should no longer be used, since all methods are executed on the server side.</td>
+<td>Method modifier. This modifier is ignored and shouldn't be used, since all methods are executed on the server side.</td>
 <td>Method Modifiers</td>
 </tr>
 <tr class="odd">
@@ -739,7 +739,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>window</strong></td>
-<td>Allows you to alter the size of the output window. Used with <code>print</print> statements that are not recommended in production code.</td>
+<td>Allows you to alter the size of the output window. Used with <code>print</print> statements that aren't recommended in production code.</td>
 <td>Print Statements</td>
 </tr>
 </tbody>
@@ -787,11 +787,11 @@ Semantic restrictions apply on the preceding syntax. You can't call any method u
 Extended Backus Naur Form (EBNF) is a metalanguage and is used in this guide to describe the language syntax. An EBNF definition consists of production rules, nonterminals, and terminals. The key terms are shown in the following table.
 
 
-|    Key terms     |       Example        |                                                                                                          Description                                                                                                          |
-|------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Terminals     |      Work\_Team      |                                                                           A terminal is one character or a string of characters that never change.                                                                            |
+|    Key terms     |       Example        |              Description                                                                                                          |
+|------------------|----------------------|----------------------------------------------------------------------------------------------------------------|
+|    Terminals     |      Work\_Team      |     A terminal is one character or a string of characters that never change.                                                                            |
 |   Nonterminals   |      `Employee`      | A nonterminal is a description of part of a valid sentence in the language that is defined either by a production rule or a textual description. A nonterminal symbol can always be expanded to one or more terminal symbols. |
-| Production rules | Employee = Developer |                                                                                                            Tester                                                                                                             |
+| Production rules | Employee = Developer |           Tester                                                                                                             |
 
 ### Example
 
@@ -811,7 +811,7 @@ For example, if the accessories you buy for your bicycle consist of a saddle, wa
 ## X++ Grammar
 This article shows the formal grammar of the X++ language.
 
-### How to Interpret the Formal BNF Grammar
+### How to interpret the Formal BNF grammar
 
 This section describes the grammar of X++ in Backus Naur Form (BNF). A small example of BNF is described here.
 
@@ -825,7 +825,7 @@ BB ::= JJ_SYM
 
 In the BNF for X++ grammar, most of the terminals have \_SYM as the suffix of their name.
 
-### The Formal X++ Grammar in BNF
+### Formal X++ grammar in BNF
 
 This section contains the BNF that defines the grammar of X++.
 
