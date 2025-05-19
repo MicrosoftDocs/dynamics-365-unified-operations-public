@@ -54,8 +54,8 @@ Before you create financial tags rules, note the following points:
 
 To create a financial tag rule, follow these steps.
 
-1. Go to **General ledger** \> **Chart of accounts** \> **Financial tags** \> **Financial tags**.
-1. Select **New** to create a financial tag.
+1. Go to **General ledger** \> **Chart of accounts** \> **Financial tags** \> **Financial tag rules**.
+1. Select **New** to create a financial tag rule.
 
    The dialog box that appears has several fields that you can set, including the following three required fields:
 
