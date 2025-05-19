@@ -23,9 +23,10 @@ To access the **Account reconciliation workspace** navigate to Workspaces – Ac
 
 In the bottom section of the workspace page you will find details per each module and each company in that module that has transactional data for the period selected. The status column has a button that will display the number of exceptions to deal with or will indicate "Fully reconciled" status when all exceptions are dealt with. 
 
-## CoPilot agent for account reconciliation
+## Copilot agent for account reconciliation
 
-To enable the copilot agent for the account reconciliation, navigate to ... 
+To setup and configure the copilot powered agent for the Account Reconciliation Agent, find the details in [Account Reconciliation Agent](configure-acct-recon-agent.md)
+
 
 ## Dealing with exceptions
 
