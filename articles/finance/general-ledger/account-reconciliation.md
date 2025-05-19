@@ -15,18 +15,17 @@ ms.dyn365.ops.version: 10.0.42
 
 # Account reconciliation
 
-This feature is available as of Microsoft Dynamics 365 Finance version 10.0.44. The feature can be used instead of the old reactive SSRS reports used for reconciling your general ledger with the subledgers of Accounts Payable, Accounts Receivable, Tax and Bank. The feature provides a workspace for viewing the reconciled data as well as automation that does the data analysis on a schedule you can define, allowing the processing to happen in the background and in off hours only if desired.  The exceptions shown on the workspace allow you to take action directly and when the Microsoft CoPilot powered agent is enabled it will provide suggestions to the most likely action to take, saving you time in the account reconciliation process each period end. 
+This feature is available as of Microsoft Dynamics 365 Finance version 10.0.44. The feature can be used instead of the old reactive SSRS reports used for reconciling your general ledger with the subledgers of Accounts Payable, Accounts Receivable, Tax and Bank. It a workspace for viewing the reconciled data as well as automation that does the data analysis on a schedule you can define, allowing the processing to happen in the background and in off hours only if desired.  The exceptions shown on the workspace allow you to take action directly and when the Microsoft CoPilot powered agent is enabled it will provide suggestions to the most likely action to take, saving you time in the account reconciliation process each period end. 
 
 ## Account reconciliation workspace page
 
-To access the **Account reconciliation workspace** navigate to Workspaces – Account reconciliation.  This page will display any open exceptions for the current period, as well as any addressed exceptions and any automatically reconciled transactions in the summary cards near the top of the page.  Use the filter options at the top of the page to adjust the data you wish to view on the workspace, such as changing from the current fiscal period to the prior fiscal period.  
+To access the **Account reconciliation workspace** navigate to Workspaces – Account reconciliation.  This page will display any open exceptions for the current period, as well as any agent recommended actions, addressed exceptions, and any automatically reconciled transactions in the summary cards near the top of the page.  Use the filter options at the top of the page to adjust the data you wish to view on the workspace, such as changing from the current fiscal period to the prior fiscal period.  
 
 In the bottom section of the workspace page you will find details per each module and each company in that module that has transactional data for the period selected. The status column has a button that will display the number of exceptions to deal with or will indicate "Fully reconciled" status when all exceptions are dealt with. 
 
 ## Copilot agent for account reconciliation
 
 To setup and configure the copilot powered agent for the Account Reconciliation Agent, find the details in [Account Reconciliation Agent](configure-acct-recon-agent.md)
-
 
 ## Dealing with exceptions
 
@@ -49,8 +48,7 @@ When the exception is “Amount mismatch” the following actions are available:
 - Accept without change: Exception will be cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
 - Create adjusting journal entry: User will be taken to the General journal where an adjusting entry can be created to address the exception.
 
-
-**Undo** - 
+**Undo** - When to use and where to find this now?? 
 
 ## Snapshots
 
@@ -67,6 +65,7 @@ Q) The workspace does not show any data, what can I do?
 - For testing purposes - you can adjust the frequency and next runtime in the process automation - background processes for the process named 'Automatic account reconciliation process'.  For production use, consider the impact of when and how frequently you want the process to execute and set the appropriate schedule.  
 - Check the system batch job is waiting and not withhold status in the batch jobs page. Look for the job named 'Process automation polling system job'.
 
-Q) Question2
+Q) I have chosen the action to create a journal, but I didn't actually create or post the journal and the voucher has been moved to the addressed exception page, what can I do? 
+- You can view the addressed exceptions and click the Undo button to move the exception back to the open exceptions list to be re-processed accordingly. 
  
  
