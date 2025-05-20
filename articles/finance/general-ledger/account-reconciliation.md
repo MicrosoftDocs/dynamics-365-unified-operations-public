@@ -23,6 +23,8 @@ To access the **Account reconciliation workspace** navigate to Workspaces – Ac
 
 In the bottom section of the workspace page you will find details per each module and each company in that module that has transactional data for the period selected. The status column has a button that will display the number of exceptions to deal with or will indicate "Fully reconciled" status when all exceptions are dealt with. 
 
+[![Account Reconciliation workspace](./media/AccountReconciliationWorkspace.png)](./media/AccountReconciliationWorkspace.png)
+
 ## Copilot agent for account reconciliation
 
 To setup and configure the copilot powered agent for the Account Reconciliation Agent, find the details in [Account Reconciliation Agent](configure-acct-recon-agent.md)
@@ -48,7 +50,8 @@ When the exception is “Amount mismatch” the following actions are available:
 - Accept without change: Exception will be cleared and accepted as is. Commonly used when the difference is a small amount or rounding difference.
 - Create adjusting journal entry: User will be taken to the General journal where an adjusting entry can be created to address the exception.
 
-**Undo** - When to use and where to find this now?? 
+ ### Undo an action
+ If you have marked an exception as addressed and would like to change the way the exception was addressed, you may chose to undo the last action.  When you "Undo" an addressed exception, it will move back to the list of the open exceptions for you to take proper action once again. Pressing the Undo button will prompt you for a reason to be entered, and press OK to proceed. 
 
 ## Snapshots
 
