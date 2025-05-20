@@ -70,7 +70,7 @@ Before you can complete the tasks in this article, you must complete the followi
 
     ![Electronic reporting configurations.](media/GER-Configurations.png "Screenshot of the Configurations page in Electronic reporting")
 
-3. Select the **GBSI** demo data company, which has a country/region context in Great Britain.
+3. Select the **GBSI** demo data company, which has a country/region context in the United Kingdom.
 4. Configure Accounts payable parameters:
 
     1. Go to **Accounts payable \> Payment setup \> Methods of payment**.
