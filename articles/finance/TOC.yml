@@ -4350,6 +4350,12 @@
                   items:
                   - name: Configure printing for the Printed General Ledger for Venezuela
                     href: localizations/iberoamerica/ltm-venezuela-printed-general-ledger.md
+                  - name: Configure sales and purchase invoices for Venezuela
+                    href: localizations/iberoamerica/ltm-configure-invoices-venezuela.md
+                  - name: Create customer and vendor records with an address in Venezuela
+                    href: localizations/iberoamerica/ltm-create-customer-and-vendor-venezuela.md
+                  - name: Set up a legal entity and tax information for Venezuela
+                    href: localizations/iberoamerica/ltm-ven-set-up-legal-entity.md
         - name: Reporting and Power BI integrations
           items:
             - name: Reporting and analytics with Power BI
