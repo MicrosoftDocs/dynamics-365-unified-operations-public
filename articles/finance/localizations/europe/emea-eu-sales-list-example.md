@@ -1,6 +1,10 @@
 ---
 title: Example for generic European Union (EU) sales list
+<<<<<<< HEAD
+description: Learn on how to set up and transfer a European Union (EU) sales list, including outlines on setting up country/region parameters and company information.
+=======
 description: This article describes how to set up and transfer a European Union (EU) sales list with Microsoft Dynamics 365 Finance.
+>>>>>>> f881052ededa0e745a6b50ea2014c02f30edf2c4
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
@@ -15,9 +19,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and transfer a European Union (EU) sales list, including outlines on setting up country parameters and company information. 
-
-The following procedure uses the DEMF legal entity. It also uses Germany as a country of the **Domestic** country/region type, and Spain and Sweden as countries of the **EU** country/region type.
+This article explains how to set up and transfer a European Union (EU) sales list. The example uses the **DEMF** legal entity. It also uses Germany as a country/region of the **Domestic** country/region type, and Spain and Sweden as countries/regions of the **EU** country/region type.
 
 ## Setup
 
