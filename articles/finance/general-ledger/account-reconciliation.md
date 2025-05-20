@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.42
 
 # Account reconciliation
 
-Starting in Microsoft Dynamics 365 Finance version 10.0.44, the Account reconciliation feature is available. The feature is used instead of the old reactive SSRS reports used for reconciling your general ledger with the subledgers of accounts payable, accounts receivable, tax and bank. It's a workspace to view reconciled data as well as automated data analysis on a defined schedule, allowing the processing to happen in the background and in off hours only if desired.  The exceptions shown on the workspace allow you to take action directly and when the Microsoft CoPilot powered agent is enabled it provides suggestions to the most likely action to take, saving time in the account reconciliation process each period end. 
+Starting in Microsoft Dynamics 365 Finance version 10.0.44, the Account reconciliation feature is available. The feature is used instead of the old reactive SSRS reports to reconcile your general ledger with the accounts payable, accounts receivable, tax, and bank subledgers. Users can view reconciled data and automated data analysis on a defined schedule, allowing the processing to happen in the background and in off hours only if desired. The exceptions displayed allow users to take action directly and when the Microsoft CoPilot powered agent is enabled and provides suggestions to the most likely action to take, saving time in the account reconciliation process each period end. 
 
 ## Account reconciliation workspace page
 
@@ -27,7 +27,7 @@ In the bottom section of the workspace page you find details per each module and
 
 ## Copilot agent for account reconciliation
 
-To setup and configure the copilot powered agent for the Account reconciliation agent, see [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md)
+For more information about setting up and configuring the Account reconciliation agent, see [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md)
 
 ## Dealing with exceptions
 
