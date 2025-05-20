@@ -1346,10 +1346,14 @@
                   href: general-ledger/ledger-allocation-rules.md
                 - name: Journalize posted journal entries
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Set up and configure the Account reconciliation agent
-                  href: general-ledger/configure-acct-recon-agent.md
-                - name: Account reconciliation agent (Preview)
-                  href: general-ledger/acct-rec-agent.md
+                - name: Account reconcilication agent (Preview)
+                  items:
+                    - name: Account reconciliation agent overview
+                      href: general-ledger/acct-rec-agent.md
+                    - name: Set up and configure the Account reconciliation agent 
+                      href: general-ledger/configure-acct-recon-agent.md
+                    - name: Account reconciliation workspace
+                      href: general-ledger/account-reconciliation.md
             - name: Consolidations and eliminations
               items:
                 - name: Consolidation and elimination overview
