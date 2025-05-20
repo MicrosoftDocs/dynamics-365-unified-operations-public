@@ -27,7 +27,7 @@ In the bottom section of the workspace page you will find details per each modul
 
 ## Copilot agent for account reconciliation
 
-To setup and configure the copilot powered agent for the Account Reconciliation Agent, find the details in [Account Reconciliation Agent](acct-rec-agent.md)
+To setup and configure the copilot powered agent for the Account Reconciliation Agent, find the details in [Set up and configure the Account Reconciliation Agent](acct-rec-agent.md)
 
 ## Dealing with exceptions
 
