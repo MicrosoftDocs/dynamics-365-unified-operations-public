@@ -1,10 +1,6 @@
 ---
 title: Example for generic European Union (EU) sales list
-<<<<<<< HEAD
 description: Learn on how to set up and transfer a European Union (EU) sales list, including outlines on setting up country/region parameters and company information.
-=======
-description: This article describes how to set up and transfer a European Union (EU) sales list with Microsoft Dynamics 365 Finance.
->>>>>>> f881052ededa0e745a6b50ea2014c02f30edf2c4
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
