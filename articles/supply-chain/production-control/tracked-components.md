@@ -29,31 +29,30 @@ Before you can use the features that are described in this article, your system 
 
 ## Enable registration of tracked component information
 
-To enable registering tracked component information in production processes, follow these steps.
+To enable registration of tracked component information in production processes, follow these steps.
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
-1. Open the **Bills of materials** tab.
-1. Set **Enable tracked components** to *Yes*.
+1. On the **Bills of materials** tab, set the **Enable tracked components** option to *Yes*.
 
 ## Enable registration of tracked components on products
 
-To use tracked components functionality for a product or its components, the following conditions must be met:
+Before you can use tracked components functionality for a product or its components, the following conditions must be met:
 
-- The product must be defined as serial or batch-controlled.
+- The product must be defined as serial controlled or batch controlled.
 - The product must be associated with a tracked components policy.
 
 To create a tracked components policy, follow these steps.
 
-1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**
+1. Go to **Production** \> **Setup** \> **Production** \> **Tracked components policy**.
 1. Use the buttons on the Action Pane to add a new policy or edit an existing one.
-1. For the new or selected policy, set the following fields.
+1. For the new or selected policy, set the following fields:
 
     - **Name** – Enter a name for the policy.
-    - **Description** – Enter a description for the policy.
-    - **Use tracked components** - Set to *Yes* to register tracked information for products associated with this policy.
-    - **Check pre-allocation for product** - Set this option to *Yes* to validate serial or batch numbers for finished goods when registering tracked component information.
-    - **Check for pre-allocation for components** - Set to *Yes* to validate serial or batch numbers for components when registering tracked component information.
-    - **Serial number matching limit** - Set to *Yes* to ensure that the number of component serial numbers matched to a product serial number doesn't exceed the planned quantity on the production order bill of material line. If the number of matched components surpasses the planned amount, the system blocks the match to prevent over allocation.
+    - **Description** – Enter a description of the policy.
+    - **Use tracked components** – Set this option to *Yes* to register tracked information for products that are associated with the policy.
+    - **Check pre-allocation for product** – Set this option to *Yes* to validate serial or batch numbers for finished goods when tracked component information is registered.
+    - **Check for pre-allocation for components** – Set this option to *Yes* to validate serial or batch numbers for components when tracked component information is registered.
+    - **Serial number matching limit** – Set this option to *Yes* to ensure that the number of component serial numbers that are matched to a product serial number doesn't exceed the planned quantity on the production order bill of materials (BOM) line. If the number of matched components exceeds the planned quantity, the system blocks the match to prevent over-allocation.
 
 ## Register tracked components for finished items
 
@@ -67,8 +66,8 @@ To register tracked components for the finished items for any production order, 
     - **Job card** journal line
     - **Report as finished** journal line
     - **Current operations**
-    - Production order **Start** dialog box
-    - Production order **Report as finished** dialog box
+    - Production order **Start** dialog
+    - Production order **Report as finished** dialog
 
 1. Select the production order that you want to register batch or serial numbers for.
 1. On the Action Pane, find the tab that includes the **Track components** button, and select that button.
