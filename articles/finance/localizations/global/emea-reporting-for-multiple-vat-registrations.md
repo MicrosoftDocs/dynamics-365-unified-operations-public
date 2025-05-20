@@ -84,7 +84,7 @@ Before you begin, the following prerequisites must be configured:
     - Documents are transferred to Intrastat.
 
 > [!NOTE]
-> If the country/region of the legal entity's primary address is an EU member state, it must be set as an **EU** (not **Domestic**) country type on the **Country/region properties** tab. 
+> If the country/region of the legal entity's primary address is an EU member state, it must be set as an **EU** (not **Domestic**) country/region type on the **Country/region properties** tab. 
 
 ## <a name="intrastat-reporting"></a>Intrastat reporting for multiple VAT registrations
 
@@ -216,7 +216,7 @@ All tax registrations have the same settings for EU sales list parameters.
 
     The following table shows the earliest ER format versions that you can select the format for.
 
-    | Release | Country | ER format |
+    | Release | Country/region | ER format |
     |---------|---------|-----------|
     | 10.0.19 | All | EU Sales list model.version.9 |
     | 10.0.19 | Netherlands | EU Sales list (NL).version.1.10 |

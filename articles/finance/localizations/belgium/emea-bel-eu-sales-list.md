@@ -82,7 +82,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 5. On the **Country/region properties** tab, select **New**, and specify the following information:
     - In the **Country/region** column, select **BEL**.
     - In the **Country/region type** column, select **Domestic**.
-6. List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
+6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
 7. On the **Number sequences** FastTab, for **EU sales list ID** reference, verify that the **Number sequence code** field is set (that is, it isn't blank).
 
 ## Work with the EU sales list
